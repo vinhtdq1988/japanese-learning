@@ -1,0 +1,124 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N5",
+  "tier": "foundation",
+  "topic": "desu-wa",
+  "title": { "vi": "Câu “A là B” với は và です", "en": "“A is B” with は and です" },
+  "goalTags": ["daily_conversation", "work", "jlpt"],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 10,
+  "isTrial": true,
+  "items": [
+    {
+      "japanese": "AはBです",
+      "meaning": { "vi": "A là B", "en": "A is B" },
+      "explanation": {
+        "vi": "Dùng để nói “A là B”. 「は」là trợ từ chỉ chủ đề (chữ viết là は nhưng đọc là “wa”), 「です」là cách nói “là” lịch sự đặt ở cuối câu.",
+        "en": "Used to say “A is B”. 「は」 is the topic particle (written は but pronounced “wa”), and 「です」 is the polite “is/am/are” placed at the end of the sentence."
+      },
+      "examples": [
+        {
+          "ja": "私は学生です。",
+          "reading": "わたしはがくせいです。",
+          "translation": { "vi": "Tôi là sinh viên.", "en": "I am a student." }
+        },
+        {
+          "ja": "田中さんは会社員です。",
+          "reading": "たなかさんはかいしゃいんです。",
+          "translation": {
+            "vi": "Anh/chị Tanaka là nhân viên công ty.",
+            "en": "Mr./Ms. Tanaka is a company employee."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "AはBじゃありません",
+      "meaning": { "vi": "A không phải là B", "en": "A is not B" },
+      "explanation": {
+        "vi": "Dạng phủ định lịch sự của 「です」. Trong văn viết hoặc trang trọng dùng 「ではありません」, trong hội thoại thường dùng 「じゃありません」.",
+        "en": "The polite negative of 「です」. 「ではありません」 is used in writing or formal speech, while 「じゃありません」 is common in conversation."
+      },
+      "examples": [
+        {
+          "ja": "私は先生じゃありません。",
+          "reading": "わたしはせんせいじゃありません。",
+          "translation": { "vi": "Tôi không phải là giáo viên.", "en": "I am not a teacher." }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "AはBです",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng nghĩa “Tôi là nhân viên công ty”.",
+        "en": "Choose the correct sentence for “I am a company employee”."
+      },
+      "payload": {
+        "choices": ["私は会社員です。", "私は会社員ます。", "私が会社員をです。", "私に会社員です。"],
+        "correct_index": 0
+      },
+      "feedbackCorrect": { "vi": "Chính xác! AはBです.", "en": "Exactly! AはBです." },
+      "feedbackIncorrect": {
+        "vi": "Mẫu câu đúng là 「AはBです」: 私は会社員です。",
+        "en": "The correct pattern is 「AはBです」: 私は会社員です。"
+      }
+    },
+    {
+      "item": "AはBです",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Trong 「私は学生です」, trợ từ 「は」đọc là gì?",
+        "en": "In 「私は学生です」, how is the particle 「は」 pronounced?"
+      },
+      "payload": { "choices": ["ha", "wa", "ba", "pa"], "correct_index": 1 },
+      "feedbackCorrect": { "vi": "Đúng! Khi là trợ từ, は đọc là “wa”.", "en": "Correct! As a particle, は is read “wa”." },
+      "feedbackIncorrect": { "vi": "Khi là trợ từ chủ đề, は đọc là “wa”.", "en": "As the topic particle, は is read “wa”." }
+    },
+    {
+      "item": "AはBです",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền trợ từ chủ đề: 「私___学生です。」",
+        "en": "Fill in the topic particle: 「私___学生です。」"
+      },
+      "payload": { "accepted_answers": ["は"] },
+      "feedbackCorrect": { "vi": "Đúng! 私は学生です。", "en": "Correct! 私は学生です。" },
+      "feedbackIncorrect": { "vi": "Đáp án là 「は」.", "en": "The answer is 「は」." }
+    },
+    {
+      "item": "AはBじゃありません",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền vào chỗ trống (dạng phủ định lịch sự): 「私は先生___。」(Tôi không phải giáo viên)",
+        "en": "Fill in the blank (polite negative): 「私は先生___。」 (I am not a teacher)"
+      },
+      "payload": { "accepted_answers": ["じゃありません", "ではありません"] },
+      "feedbackCorrect": { "vi": "Chính xác!", "en": "Exactly!" },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「じゃありません」 (hoặc 「ではありません」).",
+        "en": "The answer is 「じゃありません」 (or 「ではありません」)."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép câu tiếng Nhật với nghĩa.", "en": "Match each Japanese sentence with its meaning." },
+      "payload": {
+        "pairs": [
+          ["私は学生です。", { "vi": "Tôi là sinh viên.", "en": "I am a student." }],
+          ["田中さんは会社員です。", { "vi": "Anh/chị Tanaka là nhân viên công ty.", "en": "Mr./Ms. Tanaka is a company employee." }],
+          ["私は先生じゃありません。", { "vi": "Tôi không phải giáo viên.", "en": "I am not a teacher." }]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả ba cặp!", "en": "All three pairs are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại các ví dụ.",
+        "en": "Some pairs are wrong, review the examples."
+      }
+    }
+  ]
+}

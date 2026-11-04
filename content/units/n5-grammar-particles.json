@@ -1,0 +1,111 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N5",
+  "tier": "core",
+  "topic": "particles",
+  "title": { "vi": "Trợ từ を・で・に", "en": "Particles を, で and に" },
+  "goalTags": ["daily_conversation", "work", "jlpt"],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "を",
+      "meaning": { "vi": "Đối tượng của hành động", "en": "Object of an action" },
+      "explanation": {
+        "vi": "「を」đứng sau danh từ là đối tượng chịu tác động của hành động (ăn gì, uống gì, đọc gì…). Chữ を chỉ dùng làm trợ từ.",
+        "en": "「を」 follows the noun that receives the action (what you eat, drink, read…). The character を is only used as a particle."
+      },
+      "examples": [
+        {
+          "ja": "パンを食べます。",
+          "reading": "パンをたべます。",
+          "translation": { "vi": "Tôi ăn bánh mì.", "en": "I eat bread." }
+        }
+      ]
+    },
+    {
+      "japanese": "で",
+      "meaning": { "vi": "Nơi diễn ra hành động", "en": "Place where an action happens" },
+      "explanation": {
+        "vi": "「で」đứng sau danh từ chỉ nơi chốn để nói hành động diễn ra ở đâu. 「で」cũng chỉ phương tiện hay cách thức (ví dụ 電車で: bằng tàu điện).",
+        "en": "「で」 follows a place noun to say where an action happens. It also marks means or method (e.g. 電車で: by train)."
+      },
+      "examples": [
+        {
+          "ja": "図書館で勉強します。",
+          "reading": "としょかんでべんきょうします。",
+          "translation": { "vi": "Tôi học ở thư viện.", "en": "I study at the library." }
+        }
+      ]
+    },
+    {
+      "japanese": "に",
+      "meaning": { "vi": "Thời điểm cụ thể; đích đến", "en": "Specific time; destination" },
+      "explanation": {
+        "vi": "「に」đứng sau mốc thời gian cụ thể (giờ, ngày) hoặc nơi đến của động từ di chuyển (行きます, 来ます, 帰ります).",
+        "en": "「に」 follows a specific point in time (hour, day) or the destination of a movement verb (行きます, 来ます, 帰ります)."
+      },
+      "examples": [
+        {
+          "ja": "七時に起きます。",
+          "reading": "しちじにおきます。",
+          "translation": { "vi": "Tôi dậy lúc 7 giờ.", "en": "I get up at 7 o'clock." }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "を",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền trợ từ: 「パン___食べます。」(Tôi ăn bánh mì)",
+        "en": "Fill in the particle: 「パン___食べます。」 (I eat bread)"
+      },
+      "payload": { "accepted_answers": ["を"] },
+      "feedbackCorrect": { "vi": "Đúng! パンを食べます。", "en": "Correct! パンを食べます。" },
+      "feedbackIncorrect": { "vi": "Đối tượng của hành động ăn dùng 「を」.", "en": "The object of the verb “eat” takes 「を」." }
+    },
+    {
+      "item": "で",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền trợ từ: 「図書館___勉強します。」(Tôi học ở thư viện)",
+        "en": "Fill in the particle: 「図書館___勉強します。」 (I study at the library)"
+      },
+      "payload": { "accepted_answers": ["で"] },
+      "feedbackCorrect": { "vi": "Chính xác! Nơi diễn ra hành động dùng 「で」.", "en": "Exactly! The place of an action takes 「で」." },
+      "feedbackIncorrect": { "vi": "Nơi diễn ra hành động học dùng 「で」.", "en": "The place where you study takes 「で」." }
+    },
+    {
+      "item": "に",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn trợ từ đúng: 「七時___起きます。」(Tôi dậy lúc 7 giờ)",
+        "en": "Choose the correct particle: 「七時___起きます。」 (I get up at 7 o'clock)"
+      },
+      "payload": { "choices": ["に", "で", "を", "が"], "correct_index": 0 },
+      "feedbackCorrect": { "vi": "Đúng! Mốc giờ cụ thể dùng 「に」.", "en": "Correct! A specific time takes 「に」." },
+      "feedbackIncorrect": { "vi": "Mốc giờ cụ thể dùng 「に」: 七時に起きます。", "en": "A specific time takes 「に」: 七時に起きます。" }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép trợ từ với chức năng.", "en": "Match each particle with its function." },
+      "payload": {
+        "pairs": [
+          ["を", { "vi": "Đối tượng của hành động", "en": "Object of an action" }],
+          ["で", { "vi": "Nơi diễn ra hành động", "en": "Place where an action happens" }],
+          ["に", { "vi": "Thời điểm cụ thể; đích đến", "en": "Specific time; destination" }]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả ba trợ từ!", "en": "All three particles are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích từng trợ từ.",
+        "en": "Some pairs are wrong, review the explanation of each particle."
+      }
+    }
+  ]
+}

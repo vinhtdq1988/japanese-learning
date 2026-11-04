@@ -126,7 +126,7 @@ Tài liệu này chốt các quyết định kỹ thuật còn bỏ ngỏ trong 
 
 ## R17. Hiệu năng (SC-010)
 
-- **Quyết định**: Chỉ mục trên `(user_id, due_date)`, `(user_id, local_date)`, `(unit_id)`; kế hoạch ngày được lưu sau lần tính đầu tiên; thứ tự đơn vị của lộ trình tính động trong bộ nhớ từ bộ đệm nội dung (cỡ vài trăm đơn vị N5–N3, chi phí nhỏ); nội dung đã bản địa hóa lấy từ bộ đệm bộ nhớ TTL ngắn; phản hồi chấm bài trả ngay trong yêu cầu ghi câu trả lời (một giao dịch ngắn). Mục tiêu p95 < 500 ms phía server để dành ngân sách cho mạng và render (< 1 s đầu cuối). "Tải bình thường" = 1.000 người học đồng thời (SC-010); thời gian đầu-cuối được đo ở client bằng `integration_test` trên Chrome trong lúc chạy tải k6, không chỉ dựa vào số liệu phía server.
+- **Quyết định**: Chỉ mục trên `(user_id, due_date)`, `(user_id, local_date)`, `(unit_id)`; kế hoạch ngày được lưu sau lần tính đầu tiên; thứ tự đơn vị của lộ trình tính động trong bộ nhớ từ bộ đệm nội dung (cỡ vài trăm đơn vị N5–N3, chi phí nhỏ); nội dung đã bản địa hóa lấy từ bộ đệm bộ nhớ TTL ngắn; phản hồi chấm bài trả ngay trong yêu cầu ghi câu trả lời (một giao dịch ngắn). Việc đo và kiểm chứng hiệu năng dưới tải (k6, `integration_test` đầu-cuối, mục tiêu p95) đã chuyển sang spec `002-performance` (trước đây là SC-010, T115, T115a, K11).
 
 ## R18. Triển khai
 

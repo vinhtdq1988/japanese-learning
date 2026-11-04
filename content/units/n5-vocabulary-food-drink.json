@@ -1,0 +1,120 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N5",
+  "tier": "core",
+  "topic": "food-drink",
+  "title": { "vi": "Đồ ăn thức uống thường gặp", "en": "Everyday food and drink" },
+  "goalTags": ["daily_conversation", "jlpt"],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 30,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "水",
+      "reading": "みず",
+      "meaning": { "vi": "nước", "en": "water" },
+      "examples": [
+        {
+          "ja": "水をください。",
+          "reading": "みずをください。",
+          "translation": { "vi": "Cho tôi xin nước.", "en": "Water, please." }
+        }
+      ]
+    },
+    {
+      "japanese": "お茶",
+      "reading": "おちゃ",
+      "meaning": { "vi": "trà", "en": "tea" },
+      "examples": [
+        {
+          "ja": "毎朝、お茶を飲みます。",
+          "reading": "まいあさ、おちゃをのみます。",
+          "translation": { "vi": "Mỗi sáng tôi uống trà.", "en": "I drink tea every morning." }
+        }
+      ]
+    },
+    {
+      "japanese": "ごはん",
+      "reading": "ごはん",
+      "meaning": { "vi": "cơm; bữa ăn", "en": "cooked rice; meal" },
+      "examples": [
+        {
+          "ja": "晩ごはんは何にしますか。",
+          "reading": "ばんごはんはなににしますか。",
+          "translation": { "vi": "Bữa tối bạn định ăn gì?", "en": "What will you have for dinner?" }
+        }
+      ]
+    },
+    {
+      "japanese": "パン",
+      "reading": "パン",
+      "meaning": { "vi": "bánh mì", "en": "bread" },
+      "examples": [
+        {
+          "ja": "朝はパンを食べます。",
+          "reading": "あさはパンをたべます。",
+          "translation": { "vi": "Buổi sáng tôi ăn bánh mì.", "en": "I eat bread in the morning." }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "水",
+      "type": "multiple_choice",
+      "prompt": { "vi": "「水」nghĩa là gì?", "en": "What does 「水」 mean?" },
+      "payload": {
+        "choices": [
+          { "vi": "Nước", "en": "Water" },
+          { "vi": "Trà", "en": "Tea" },
+          { "vi": "Cơm", "en": "Rice" },
+          { "vi": "Bánh mì", "en": "Bread" }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": { "vi": "Đúng! 水 là nước.", "en": "Correct! 水 is water." },
+      "feedbackIncorrect": { "vi": "水 (みず) nghĩa là “nước”.", "en": "水 (みず) means “water”." }
+    },
+    {
+      "item": "お茶",
+      "type": "multiple_choice",
+      "prompt": { "vi": "Từ nào có nghĩa là “trà”?", "en": "Which word means “tea”?" },
+      "payload": { "choices": ["水", "お茶", "パン", "ごはん"], "correct_index": 1 },
+      "feedbackCorrect": { "vi": "Chính xác, お茶 là trà.", "en": "Right, お茶 is tea." },
+      "feedbackIncorrect": { "vi": "“Trà” là お茶 (おちゃ).", "en": "“Tea” is お茶 (おちゃ)." }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép từ với nghĩa của nó.", "en": "Match each word with its meaning." },
+      "payload": {
+        "pairs": [
+          ["水", { "vi": "nước", "en": "water" }],
+          ["お茶", { "vi": "trà", "en": "tea" }],
+          ["ごはん", { "vi": "cơm; bữa ăn", "en": "cooked rice; meal" }],
+          ["パン", { "vi": "bánh mì", "en": "bread" }]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả bốn cặp!", "en": "All four pairs are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại nghĩa từng từ.",
+        "en": "Some pairs are wrong, review the meaning of each word."
+      }
+    },
+    {
+      "item": "パン",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ cách viết katakana của “bánh mì”.",
+        "en": "Type the katakana spelling of “bread”."
+      },
+      "payload": { "accepted_answers": ["パン"] },
+      "feedbackCorrect": { "vi": "Đúng! パン", "en": "Correct! パン" },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「パン」 (katakana).",
+        "en": "The answer is 「パン」 (katakana)."
+      }
+    }
+  ]
+}

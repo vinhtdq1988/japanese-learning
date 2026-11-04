@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://japanese-learning.local/schema/topics/1.0.0",
+  "title": "Mảng nội dung (topics)",
+  "description": "Danh sách mảng dùng cho đơn vị học, câu hỏi placement, thống kê điểm yếu và điều chỉnh độ khó.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["topics"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "skill", "level", "name"],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Khóa ổn định, các file đơn vị và placement tham chiếu tới."
+          },
+          "skill": { "enum": ["vocabulary", "grammar"] },
+          "level": { "enum": ["N5", "N4", "N3"] },
+          "name": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["vi", "en"],
+            "properties": {
+              "vi": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

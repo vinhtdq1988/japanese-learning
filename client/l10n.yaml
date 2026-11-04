@@ -2,3 +2,7 @@
 arb-dir: lib/l10n
 template-arb-file: app_vi.arb
 output-localization-file: app_localizations.dart
+# Mã sinh nằm cạnh file ARB (đã được .gitignore và analysis_options loại trừ)
+output-dir: lib/l10n
+# `AppLocalizations.of(context)` trả về giá trị không null
+nullable-getter: false

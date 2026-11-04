@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://japanese-learning.local/schema/unit/1.0.0",
+  "title": "Đơn vị học (Learning Unit)",
+  "description": "Một file = một đơn vị học (từ vựng hoặc ngữ pháp) kèm mục nội dung và bài tập. Cấu trúc được JSON Schema kiểm tra; quy tắc nghiệp vụ (đủ bản dịch, đơn vị 5 phút cho mỗi level × kind, v.v.) do backend/src/domain/content-validation.ts kiểm tra khi seed và khi kích hoạt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kind",
+    "level",
+    "topic",
+    "title",
+    "difficulty",
+    "estMinutes",
+    "items",
+    "exercises"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "kind": { "enum": ["vocabulary", "grammar"] },
+    "level": { "enum": ["N5", "N4", "N3"] },
+    "tier": {
+      "enum": ["foundation", "core"],
+      "default": "core",
+      "description": "`foundation` = nền tảng người mới, chỉ hợp lệ với level N5."
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Khóa mảng nội dung trong content/topics.json."
+    },
+    "title": { "$ref": "#/definitions/i18nText" },
+    "goalTags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["jlpt", "daily_conversation", "work"] }
+    },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "estMinutes": { "enum": [5, 10, 15] },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "isTrial": {
+      "type": "boolean",
+      "default": false,
+      "description": "Thuộc tập dùng thử không cần đăng ký (FR-037)."
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/item" }
+    },
+    "exercises": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/exercise" }
+    }
+  },
+  "definitions": {
+    "i18nText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vi", "en"],
+      "properties": {
+        "vi": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "localizable": {
+      "description": "Chuỗi dùng chung (ví dụ chữ Nhật) hoặc văn bản dịch vi + en.",
+      "oneOf": [{ "type": "string", "minLength": 1 }, { "$ref": "#/definitions/i18nText" }]
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja", "translation"],
+      "properties": {
+        "ja": { "type": "string", "minLength": 1 },
+        "reading": { "type": "string" },
+        "translation": { "$ref": "#/definitions/i18nText" }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["japanese", "meaning"],
+      "properties": {
+        "japanese": { "type": "string", "minLength": 1 },
+        "reading": { "type": "string", "description": "Bắt buộc với từ vựng." },
+        "meaning": { "$ref": "#/definitions/i18nText" },
+        "explanation": {
+          "$ref": "#/definitions/i18nText",
+          "description": "Bắt buộc với ngữ pháp."
+        },
+        "examples": { "type": "array", "items": { "$ref": "#/definitions/example" } }
+      }
+    },
+    "exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "prompt", "payload", "feedbackCorrect", "feedbackIncorrect"],
+      "properties": {
+        "item": {
+          "type": "string",
+          "description": "Trường `japanese` của mục mà bài tập kiểm tra (đầu vào cho lịch ôn)."
+        },
+        "type": { "enum": ["multiple_choice", "matching", "fill_blank"] },
+        "prompt": { "$ref": "#/definitions/i18nText" },
+        "payload": { "type": "object" },
+        "feedbackCorrect": { "$ref": "#/definitions/i18nText" },
+        "feedbackIncorrect": { "$ref": "#/definitions/i18nText" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "multiple_choice" } } },
+          "then": {
+            "properties": {
+              "payload": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["choices", "correct_index"],
+                "properties": {
+                  "choices": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": { "$ref": "#/definitions/localizable" }
+                  },
+                  "correct_index": { "type": "integer", "minimum": 0 }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "matching" } } },
+          "then": {
+            "properties": {
+              "payload": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["pairs"],
+                "properties": {
+                  "pairs": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": { "$ref": "#/definitions/localizable" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "fill_blank" } } },
+          "then": {
+            "properties": {
+              "payload": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["accepted_answers"],
+                "properties": {
+                  "accepted_answers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "hint": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

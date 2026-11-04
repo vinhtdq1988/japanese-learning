@@ -1,0 +1,34 @@
+{
+  "id": "five-minute-backlog",
+  "description": "Quỹ 5 phút/ngày nhưng có rất nhiều bài ôn tồn đọng; kế hoạch vẫn ≤ 5 phút và luân phiên chỉ-ôn/chỉ-bài-mới (R7, SC-002).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 5,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-04",
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [
+    { "count": 80, "daysOverdue": 2, "isHard": false },
+    { "count": 12, "daysOverdue": 6, "isHard": true }
+  ],
+  "expected": {
+    "dailyPlan": {
+      "budgetMinutes": 5,
+      "maxTotalMinutes": 5,
+      "maxItemMinutes": 5,
+      "alternation": "after-review-only-day-prefer-new-unit",
+      "unscheduledKeepDueDate": true
+    }
+  }
+}

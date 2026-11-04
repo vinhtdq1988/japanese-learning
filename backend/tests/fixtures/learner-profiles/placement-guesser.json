@@ -1,0 +1,50 @@
+{
+  "id": "placement-guesser",
+  "description": "Làm placement nhưng đoán mò (5/20 = 25%, xấp xỉ ngẫu nhiên với 4 lựa chọn) → trình độ 'none', lộ trình an toàn cho người mới (R8).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "N4",
+    "goalType": "jlpt",
+    "targetLevel": "N4",
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": {
+    "note": "correctByPosition theo bộ placement-v1: vị trí 1–8 là N5, 9–14 là N4, 15–20 là N3.",
+    "correctByPosition": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {
+    "placement": { "score": 5, "estimatedLevel": "none", "guessSuspected": true },
+    "path": { "startLevel": "N5", "firstUnitsTier": "foundation", "scopeNotice": null }
+  }
+}

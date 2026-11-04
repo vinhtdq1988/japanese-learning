@@ -95,7 +95,7 @@ Mỗi kịch bản ánh xạ tới câu chuyện người dùng/tiêu chí thàn
 2. **Mong đợi**: chỉ một câu trả lời được tính (cửa sổ thứ hai nhận kết quả cũ), lịch ôn của mục chỉ cập nhật một lần, thời gian học không bị nhân đôi (kiểm thử tích hợp tự động T060 bao phủ cả trường hợp trùng và khác `clientEventId`).
 
 ### K11 – Hiệu năng (SC-010)
-- Chạy bộ kiểm thử tải (k6) với 1.000 người dùng đồng thời ("tải bình thường" theo SC-010) gọi `/today`, `/sessions`, `/sessions/{id}/answers`, `/progress`; trong lúc tải đang chạy, chạy `flutter test integration_test/perf_lesson_test.dart -d chrome` để đo thời gian từ thao tác đến khi hiển thị màn hình bài học và phản hồi câu trả lời. **Mong đợi**: p95 phía server < 500 ms; p95 đầu-cuối phía client < 1 giây.
+> **Đã chuyển sang spec `002-performance`** cùng T115/T115a; không thực hiện và không kiểm chứng ở spec này.
 
 ## 5. Dọn dẹp
 

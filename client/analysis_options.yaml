@@ -5,6 +5,8 @@ analyzer:
     # Mã sinh tự động (l10n, API client) không phải lint
     - "lib/l10n/app_localizations*.dart"
     - "lib/data/api/generated/**"
+    - build/**
+    - web/**
 
 linter:
   rules:

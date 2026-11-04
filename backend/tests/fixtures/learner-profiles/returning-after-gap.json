@@ -1,0 +1,38 @@
+{
+  "id": "returning-after-gap",
+  "description": "Quay lại sau 5 ngày vắng (không tạm dừng), nhiều bài ôn quá hạn; không được hiện 'nợ' (FR-015, K6).",
+  "asOf": "2026-01-10",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "work",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-05",
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [
+    { "count": 30, "daysOverdue": 5, "isHard": false },
+    { "count": 20, "daysOverdue": 3, "isHard": false },
+    { "count": 6, "daysOverdue": 4, "isHard": true }
+  ],
+  "expected": {
+    "gap": {
+      "absentDays": 5,
+      "notice": "replanned_after_gap",
+      "hasDebtField": false
+    },
+    "dailyPlan": {
+      "budgetMinutes": 15,
+      "maxReviewMinutes": 9,
+      "keepsOriginalDueDateForUnscheduled": true
+    }
+  }
+}

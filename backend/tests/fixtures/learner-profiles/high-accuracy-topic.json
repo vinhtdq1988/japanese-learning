@@ -1,0 +1,46 @@
+{
+  "id": "high-accuracy-topic",
+  "description": "Liên tục trên 90% ở mảng 'greetings' qua 2 phiên liên tiếp → difficulty_bias +1, đơn vị kế tiếp khó hơn.",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-04",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-03",
+      "topic": "greetings",
+      "context": "lesson",
+      "results": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    },
+    {
+      "date": "2026-01-04",
+      "topic": "greetings",
+      "context": "lesson",
+      "results": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    }
+  ],
+  "reviewBacklog": [],
+  "expected": {
+    "difficulty": {
+      "topic": "greetings",
+      "sessionAccuracies": [1, 1],
+      "consecutiveHigh": 2,
+      "difficultyBias": 1,
+      "recentAccuracy": 1,
+      "isWeak": false,
+      "nextUnitDifficulty": "harder"
+    }
+  }
+}

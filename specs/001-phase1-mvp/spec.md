@@ -298,7 +298,7 @@ Một khách chưa có tài khoản có thể trải nghiệm thử ứng dụng
 - **SC-007**: Người học xem được tiến độ hiện tại và trạng thái mục tiêu trong vòng 2 lần nhấp từ màn hình hằng ngày, và các số liệu khớp với hoạt động đã ghi.
 - **SC-008**: Quản trị viên có thể thêm một bài học mới và bài học có sẵn cho người học mà không cần phát hành ứng dụng: trong vòng 5 phút, bài học xuất hiện trong lộ trình của người học phù hợp và chọn được qua "học thêm"; nó được đưa vào kế hoạch hằng ngày từ kế hoạch được sinh kế tiếp. Nội dung đã sửa hiển thị cho các phiên học mới trong vòng 5 phút.
 - **SC-009**: Ít nhất 40% người học hoàn tất onboarding quay lại vào ngày thứ hai, và ít nhất 25% hoàn thành bài học trong 3 ngày trở lên trong hai tuần đầu.
-- **SC-010**: Ứng dụng vẫn phản hồi tốt khi dùng thông thường: màn hình bài học và phản hồi câu trả lời xuất hiện trong vòng 1 giây (tính từ thao tác của người học đến khi hiển thị trên trình duyệt) cho 95% tương tác ở tải bình thường. "Tải bình thường" là tối đa 1.000 người học đồng thời đang học (mức trên của quy mô giai đoạn đầu ở mục Giả định).
+- **SC-010**: *(Đã chuyển sang spec `002-performance` thành SC-001; không kiểm chứng ở spec này. Giữ lại mã để các tham chiếu không bị hỏng.)*
 - **SC-011**: Khách chưa đăng ký bắt đầu được bài học mẫu trong vòng 3 lần nhấp từ trang đầu mà không phải nhập thông tin nào, và ít nhất 20% khách hoàn thành bài mẫu chuyển sang đăng ký, đo bằng tỷ lệ giữa số tài khoản đăng ký kèm cờ `fromTrial` (đăng ký ngay sau khi dùng thử trên cùng trình duyệt) và bộ đếm ẩn danh số lượt hoàn thành bài mẫu (FR-038).
 - **SC-012**: Trong kiểm thử dùng cùng một tài khoản ở hai cửa sổ trình duyệt đồng thời, 100% câu trả lời và thời gian học chỉ được tính một lần và không có dữ liệu bị hỏng.
 

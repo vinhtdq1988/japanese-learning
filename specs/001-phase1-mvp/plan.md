@@ -24,13 +24,13 @@ Xây dựng ứng dụng web học tiếng Nhật cá nhân hóa cho người đ
 
 **Lưu trữ**: PostgreSQL 16 (tài khoản, hồ sơ, nội dung, tiến độ, hàng đợi pg-boss). Trình duyệt: bộ nhớ cục bộ cho phiên dùng thử và token qua abstraction `LocalStore`/`TokenStore`.
 
-**Kiểm thử**: Backend: Vitest (đơn vị engine với hồ sơ đại diện, hợp đồng so với OpenAPI, tích hợp với PostgreSQL qua Testcontainers). Client: `flutter test` + `integration_test` trên Chrome. Tải: k6.
+**Kiểm thử**: Backend: Vitest (đơn vị engine với hồ sơ đại diện, hợp đồng so với OpenAPI, tích hợp với PostgreSQL qua Testcontainers). Client: `flutter test` + `integration_test` trên Chrome. (Kiểm thử tải k6 thuộc spec `002-performance`.)
 
 **Nền tảng đích**: Trình duyệt desktop hiện đại (Chrome, Edge, Firefox, Safari); server Linux (Docker). Mobile ngoài phạm vi giai đoạn này nhưng kiến trúc không chặn.
 
 **Loại dự án**: Ứng dụng web (frontend Flutter + backend REST API) với thư mục nội dung riêng.
 
-**Mục tiêu hiệu năng**: Màn hình bài học và phản hồi trả lời xuất hiện < 1 giây đầu-cuối cho 95% tương tác ở tải bình thường = 1.000 người học đồng thời (SC-010), đo phía client bằng `integration_test` trên Chrome trong lúc chạy tải k6; p95 phía server < 500 ms; dùng thử và placement công khai chịu giới hạn tần suất.
+**Mục tiêu hiệu năng**: Các mục tiêu đo (p95 phía server < 500 ms, đầu-cuối < 1 giây ở 1.000 người học đồng thời) và kiểm thử tải đã chuyển sang spec `002-performance`; ở spec này chỉ giữ các biện pháp thiết kế (chỉ mục, bộ đệm) và giới hạn tần suất cho dùng thử và placement công khai.
 
 **Ràng buộc**: Kế hoạch ngày không vượt quỹ thời gian khai báo (FR-012); mỗi bài học 5–15 phút (FR-017); không lưu dữ liệu định danh khách dùng thử (FR-038); ghi sự kiện idempotent (FR-041); nội dung thay đổi hiển thị với người học ≤ 5 phút mà không phát hành client (SC-008).
 
@@ -98,7 +98,7 @@ backend/
     ├── unit/                # Engine, quy tắc nội dung
     ├── contract/            # So khớp với contracts/openapi.yaml
     ├── integration/         # PostgreSQL thật; kịch bản đồng thời, xóa tài khoản
-    ├── load/                # Kịch bản tải k6 (SC-010)
+    ├── load/                # Kịch bản tải k6 (thuộc spec 002-performance; thư mục để trống ở spec này)
     └── fixtures/
         └── learner-profiles/  # Hồ sơ người học đại diện dùng chung (FR-035)
 

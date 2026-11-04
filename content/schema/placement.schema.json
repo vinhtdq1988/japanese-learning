@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://japanese-learning.local/schema/placement/1.0.0",
+  "title": "Bộ câu hỏi kiểm tra trình độ (placement)",
+  "description": "Bộ cố định đúng 20 câu: 8 N5, 6 N4, 6 N3 (FR-007). Ràng buộc số lượng theo trình độ và vị trí do seed kiểm tra thêm; schema này kiểm tra cấu trúc.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "timeLimitSeconds", "questions"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string", "minLength": 1 },
+    "timeLimitSeconds": { "type": "integer", "minimum": 60, "maximum": 600 },
+    "questions": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": { "$ref": "#/definitions/question" }
+    }
+  },
+  "definitions": {
+    "i18nText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vi", "en"],
+      "properties": {
+        "vi": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position", "level", "skill", "topic", "prompt", "choices", "correctChoice"],
+      "properties": {
+        "position": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "level": { "enum": ["N5", "N4", "N3"] },
+        "skill": { "enum": ["vocabulary", "grammar"] },
+        "topic": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Khóa mảng nội dung trong content/topics.json (nhận diện điểm yếu)."
+        },
+        "prompt": { "type": "string", "minLength": 1, "description": "Câu hỏi tiếng Nhật." },
+        "hint": {
+          "$ref": "#/definitions/i18nText",
+          "description": "Gợi ý hướng dẫn song ngữ (tùy chọn); API Giai đoạn 1 chưa trả trường này."
+        },
+        "choices": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "correctChoice": { "type": "integer", "minimum": 0, "maximum": 3 }
+      }
+    }
+  }
+}

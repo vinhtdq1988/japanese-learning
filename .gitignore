@@ -16,6 +16,9 @@ client/build/
 client/pubspec.lock
 # Mã l10n sinh tự động từ ARB
 client/lib/l10n/app_localizations*.dart
+# Mã json_serializable của API client sinh từ OpenAPI (chạy build_runner trong thư mục generated)
+client/lib/data/api/generated/**/*.g.dart
+client/lib/data/api/generated/pubspec.lock
 
 # k6 / báo cáo đo tải cục bộ
 *.k6.json

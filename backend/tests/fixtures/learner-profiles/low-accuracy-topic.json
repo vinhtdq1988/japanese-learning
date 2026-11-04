@@ -1,0 +1,46 @@
+{
+  "id": "low-accuracy-topic",
+  "description": "Liên tục dưới 60% ở mảng 'particles' qua 2 phiên liên tiếp → difficulty_bias −1, cờ điểm yếu (FR-013, FR-029).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-04",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-03",
+      "topic": "particles",
+      "context": "lesson",
+      "results": [1, 0, 0, 1, 0, 1, 0, 0, 1, 0]
+    },
+    {
+      "date": "2026-01-04",
+      "topic": "particles",
+      "context": "lesson",
+      "results": [0, 1, 0, 0, 1, 0, 0, 1, 0, 1]
+    }
+  ],
+  "reviewBacklog": [],
+  "expected": {
+    "difficulty": {
+      "topic": "particles",
+      "sessionAccuracies": [0.4, 0.4],
+      "consecutiveLow": 2,
+      "difficultyBias": -1,
+      "recentAccuracy": 0.4,
+      "isWeak": true,
+      "nextUnitDifficulty": "easier"
+    }
+  }
+}

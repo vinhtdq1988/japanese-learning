@@ -1,0 +1,141 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N5",
+  "tier": "core",
+  "topic": "verbs-masu",
+  "title": { "vi": "Động từ thể ます: khẳng định, phủ định, quá khứ", "en": "ます-form verbs: affirmative, negative, past" },
+  "goalTags": ["daily_conversation", "work", "jlpt"],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 30,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ます",
+      "meaning": { "vi": "Khẳng định lịch sự (hiện tại/tương lai)", "en": "Polite affirmative (present/future)" },
+      "explanation": {
+        "vi": "Thêm 「ます」vào gốc động từ để nói lịch sự về thói quen hoặc việc sắp làm. Ví dụ: 食べる → 食べます.",
+        "en": "Attach 「ます」 to the verb stem for polite statements about habits or upcoming actions. Example: 食べる → 食べます."
+      },
+      "examples": [
+        {
+          "ja": "毎日、日本語を勉強します。",
+          "reading": "まいにち、にほんごをべんきょうします。",
+          "translation": { "vi": "Mỗi ngày tôi học tiếng Nhật.", "en": "I study Japanese every day." }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ません",
+      "meaning": { "vi": "Phủ định lịch sự", "en": "Polite negative" },
+      "explanation": {
+        "vi": "Đổi 「ます」thành 「ません」để phủ định. Ví dụ: 食べます → 食べません.",
+        "en": "Change 「ます」 to 「ません」 to make it negative. Example: 食べます → 食べません."
+      },
+      "examples": [
+        {
+          "ja": "朝はコーヒーを飲みません。",
+          "reading": "あさはコーヒーをのみません。",
+          "translation": { "vi": "Buổi sáng tôi không uống cà phê.", "en": "I don't drink coffee in the morning." }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ました",
+      "meaning": { "vi": "Quá khứ khẳng định lịch sự", "en": "Polite past affirmative" },
+      "explanation": {
+        "vi": "Đổi 「ます」thành 「ました」để nói việc đã xảy ra. Ví dụ: 食べます → 食べました.",
+        "en": "Change 「ます」 to 「ました」 for something that already happened. Example: 食べます → 食べました."
+      },
+      "examples": [
+        {
+          "ja": "昨日、映画を見ました。",
+          "reading": "きのう、えいがをみました。",
+          "translation": { "vi": "Hôm qua tôi đã xem phim.", "en": "I watched a movie yesterday." }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ませんでした",
+      "meaning": { "vi": "Quá khứ phủ định lịch sự", "en": "Polite past negative" },
+      "explanation": {
+        "vi": "Đổi 「ます」thành 「ませんでした」để nói việc đã không xảy ra. Ví dụ: 食べます → 食べませんでした.",
+        "en": "Change 「ます」 to 「ませんでした」 for something that did not happen. Example: 食べます → 食べませんでした."
+      },
+      "examples": [
+        {
+          "ja": "昨日は何も食べませんでした。",
+          "reading": "きのうはなにもたべませんでした。",
+          "translation": { "vi": "Hôm qua tôi đã không ăn gì cả.", "en": "I didn't eat anything yesterday." }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ます",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn dạng ます của động từ 「飲む」(uống).",
+        "en": "Choose the ます-form of the verb 「飲む」 (to drink)."
+      },
+      "payload": { "choices": ["飲みます", "飲むます", "飲りました", "飲みません"], "correct_index": 0 },
+      "feedbackCorrect": { "vi": "Đúng! 飲む → 飲みます.", "en": "Correct! 飲む → 飲みます." },
+      "feedbackIncorrect": { "vi": "Dạng ます của 飲む là 「飲みます」.", "en": "The ます-form of 飲む is 「飲みます」." }
+    },
+    {
+      "item": "〜ません",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền phủ định lịch sự: 「コーヒーを飲み___。」(Tôi không uống cà phê)",
+        "en": "Fill in the polite negative: 「コーヒーを飲み___。」 (I don't drink coffee)"
+      },
+      "payload": { "accepted_answers": ["ません"] },
+      "feedbackCorrect": { "vi": "Chính xác! 飲みません.", "en": "Exactly! 飲みません." },
+      "feedbackIncorrect": { "vi": "Phủ định lịch sự là 「ません」.", "en": "The polite negative is 「ません」." }
+    },
+    {
+      "item": "〜ました",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền quá khứ lịch sự: 「昨日、映画を見___。」(Hôm qua tôi đã xem phim)",
+        "en": "Fill in the polite past: 「昨日、映画を見___。」 (I watched a movie yesterday)"
+      },
+      "payload": { "accepted_answers": ["ました"] },
+      "feedbackCorrect": { "vi": "Đúng! 見ました.", "en": "Correct! 見ました." },
+      "feedbackIncorrect": { "vi": "Quá khứ lịch sự là 「ました」.", "en": "The polite past is 「ました」." }
+    },
+    {
+      "item": "〜ませんでした",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Câu nào có nghĩa “Hôm qua tôi đã không đi”?",
+        "en": "Which sentence means “I did not go yesterday”?"
+      },
+      "payload": {
+        "choices": ["昨日は行きます。", "昨日は行きません。", "昨日は行きました。", "昨日は行きませんでした。"],
+        "correct_index": 3
+      },
+      "feedbackCorrect": { "vi": "Chính xác! Quá khứ phủ định là 「ませんでした」.", "en": "Exactly! The past negative is 「ませんでした」." },
+      "feedbackIncorrect": { "vi": "Quá khứ phủ định dùng 「ませんでした」: 行きませんでした.", "en": "The past negative uses 「ませんでした」: 行きませんでした." }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép đuôi động từ với ý nghĩa.", "en": "Match each verb ending with its meaning." },
+      "payload": {
+        "pairs": [
+          ["〜ます", { "vi": "Khẳng định lịch sự", "en": "Polite affirmative" }],
+          ["〜ません", { "vi": "Phủ định lịch sự", "en": "Polite negative" }],
+          ["〜ました", { "vi": "Quá khứ khẳng định", "en": "Past affirmative" }],
+          ["〜ませんでした", { "vi": "Quá khứ phủ định", "en": "Past negative" }]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả bốn đuôi!", "en": "All four endings are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại cách chia từng đuôi.",
+        "en": "Some pairs are wrong, review how each ending works."
+      }
+    }
+  ]
+}

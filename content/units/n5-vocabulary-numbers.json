@@ -1,0 +1,121 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N5",
+  "tier": "foundation",
+  "topic": "numbers",
+  "title": { "vi": "Số đếm từ 1 đến 5", "en": "Numbers 1 to 5" },
+  "goalTags": ["daily_conversation", "work", "jlpt"],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "一",
+      "reading": "いち",
+      "meaning": { "vi": "một (1)", "en": "one (1)" },
+      "examples": [
+        {
+          "ja": "りんごを一つください。",
+          "reading": "りんごをひとつください。",
+          "translation": { "vi": "Cho tôi một quả táo.", "en": "One apple, please." }
+        }
+      ]
+    },
+    {
+      "japanese": "二",
+      "reading": "に",
+      "meaning": { "vi": "hai (2)", "en": "two (2)" },
+      "examples": [
+        {
+          "ja": "二人で行きます。",
+          "reading": "ふたりでいきます。",
+          "translation": { "vi": "Hai người cùng đi.", "en": "The two of us will go." }
+        }
+      ]
+    },
+    {
+      "japanese": "三",
+      "reading": "さん",
+      "meaning": { "vi": "ba (3)", "en": "three (3)" },
+      "examples": [
+        {
+          "ja": "三時に会いましょう。",
+          "reading": "さんじにあいましょう。",
+          "translation": { "vi": "Gặp nhau lúc 3 giờ nhé.", "en": "Let's meet at 3 o'clock." }
+        }
+      ]
+    },
+    {
+      "japanese": "四",
+      "reading": "よん",
+      "meaning": { "vi": "bốn (4) — cũng đọc là し", "en": "four (4) — also read し" },
+      "examples": [
+        {
+          "ja": "四月に日本へ行きます。",
+          "reading": "しがつににほんへいきます。",
+          "translation": { "vi": "Tháng 4 tôi đi Nhật.", "en": "I will go to Japan in April." }
+        }
+      ]
+    },
+    {
+      "japanese": "五",
+      "reading": "ご",
+      "meaning": { "vi": "năm (5)", "en": "five (5)" },
+      "examples": [
+        {
+          "ja": "五分待ってください。",
+          "reading": "ごふんまってください。",
+          "translation": { "vi": "Xin hãy đợi 5 phút.", "en": "Please wait five minutes." }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "三",
+      "type": "multiple_choice",
+      "prompt": { "vi": "「三」đọc là gì?", "en": "How do you read 「三」?" },
+      "payload": { "choices": ["いち", "に", "さん", "ご"], "correct_index": 2 },
+      "feedbackCorrect": { "vi": "Đúng! 三 đọc là さん.", "en": "Correct! 三 is read さん." },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 三 đọc là さん (số 3).",
+        "en": "Not quite. 三 is read さん (the number 3)."
+      }
+    },
+    {
+      "item": "五",
+      "type": "multiple_choice",
+      "prompt": { "vi": "Số 5 trong tiếng Nhật là chữ nào?", "en": "Which character is the number 5 in Japanese?" },
+      "payload": { "choices": ["二", "四", "三", "五"], "correct_index": 3 },
+      "feedbackCorrect": { "vi": "Chính xác, 五 là số 5.", "en": "Right, 五 is the number 5." },
+      "feedbackIncorrect": { "vi": "Số 5 là 五 (ご).", "en": "The number 5 is 五 (ご)." }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép chữ số với cách đọc.", "en": "Match each numeral with its reading." },
+      "payload": {
+        "pairs": [
+          ["一", "いち"],
+          ["二", "に"],
+          ["四", "よん"],
+          ["五", "ご"]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả bốn cặp!", "en": "All four pairs are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại cách đọc từng số.",
+        "en": "Some pairs are wrong, review the reading of each number."
+      }
+    },
+    {
+      "item": "二",
+      "type": "fill_blank",
+      "prompt": { "vi": "Gõ cách đọc của 「二」bằng hiragana.", "en": "Type the reading of 「二」 in hiragana." },
+      "payload": { "accepted_answers": ["に"] },
+      "feedbackCorrect": { "vi": "Đúng! 二 đọc là に.", "en": "Correct! 二 is read に." },
+      "feedbackIncorrect": { "vi": "Đáp án là 「に」.", "en": "The answer is 「に」." }
+    }
+  ]
+}

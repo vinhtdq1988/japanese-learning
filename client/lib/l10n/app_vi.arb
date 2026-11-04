@@ -1,0 +1,1460 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Học tiếng Nhật",
+  "@appTitle": {
+    "description": "Tên ứng dụng, hiển thị trên thanh tiêu đề trình duyệt và khung trang"
+  },
+  "actionContinue": "Tiếp tục",
+  "@actionContinue": {
+    "description": "Nút chuyển sang bước kế tiếp"
+  },
+  "actionBack": "Quay lại",
+  "@actionBack": {
+    "description": "Nút quay lại bước/màn hình trước"
+  },
+  "actionCancel": "Hủy",
+  "@actionCancel": {
+    "description": "Nút hủy thao tác đang làm"
+  },
+  "actionConfirm": "Xác nhận",
+  "@actionConfirm": {
+    "description": "Nút xác nhận trong hộp thoại"
+  },
+  "actionSave": "Lưu",
+  "@actionSave": {
+    "description": "Nút lưu thay đổi"
+  },
+  "actionClose": "Đóng",
+  "@actionClose": {
+    "description": "Nút đóng hộp thoại hoặc thông báo"
+  },
+  "actionRetry": "Thử lại",
+  "@actionRetry": {
+    "description": "Nút thử lại sau khi lỗi"
+  },
+  "actionSignIn": "Đăng nhập",
+  "@actionSignIn": {
+    "description": "Nút/liên kết đăng nhập"
+  },
+  "actionRegister": "Đăng ký",
+  "@actionRegister": {
+    "description": "Nút/liên kết đăng ký tài khoản"
+  },
+  "actionSignOut": "Đăng xuất",
+  "@actionSignOut": {
+    "description": "Nút đăng xuất"
+  },
+  "stateLoading": "Đang tải…",
+  "@stateLoading": {
+    "description": "Thông báo khi đang tải dữ liệu"
+  },
+  "stateEmptyTitle": "Chưa có gì ở đây",
+  "@stateEmptyTitle": {
+    "description": "Tiêu đề mặc định của trạng thái trống"
+  },
+  "stateErrorTitle": "Đã xảy ra lỗi",
+  "@stateErrorTitle": {
+    "description": "Tiêu đề mặc định của trạng thái lỗi"
+  },
+  "errorGeneric": "Có lỗi xảy ra. Vui lòng thử lại.",
+  "@errorGeneric": {
+    "description": "Thông báo lỗi chung khi không rõ nguyên nhân"
+  },
+  "errorNetwork": "Không kết nối được máy chủ. Hãy kiểm tra mạng rồi thử lại.",
+  "@errorNetwork": {
+    "description": "Lỗi mất kết nối mạng hoặc máy chủ không phản hồi"
+  },
+  "errorSessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.",
+  "@errorSessionExpired": {
+    "description": "Lỗi 401 sau khi làm mới token thất bại"
+  },
+  "errorForbidden": "Bạn không có quyền thực hiện thao tác này.",
+  "@errorForbidden": {
+    "description": "Lỗi 403"
+  },
+  "errorNotFound": "Không tìm thấy nội dung được yêu cầu.",
+  "@errorNotFound": {
+    "description": "Lỗi 404"
+  },
+  "errorValidation": "Dữ liệu chưa hợp lệ. Vui lòng kiểm tra lại các trường.",
+  "@errorValidation": {
+    "description": "Lỗi 422 khi không có thông báo cụ thể theo trường"
+  },
+  "errorRateLimited": "Bạn thao tác quá nhanh. Vui lòng thử lại sau {seconds} giây.",
+  "@errorRateLimited": {
+    "description": "Lỗi 429 khi vượt giới hạn tần suất",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "errorAccountDisabled": "Tài khoản của bạn đã bị vô hiệu hóa. Vui lòng liên hệ quản trị viên.",
+  "@errorAccountDisabled": {
+    "description": "Mã lỗi ACCOUNT_DISABLED"
+  },
+  "errorAccountPendingDeletion": "Tài khoản đang chờ xóa. Bạn có thể khôi phục trong vòng 30 ngày.",
+  "@errorAccountPendingDeletion": {
+    "description": "Mã lỗi ACCOUNT_PENDING_DELETION"
+  },
+  "navToday": "Hôm nay",
+  "@navToday": {
+    "description": "Mục điều hướng: kế hoạch học hôm nay"
+  },
+  "navPath": "Lộ trình",
+  "@navPath": {
+    "description": "Mục điều hướng: lộ trình học"
+  },
+  "navProgress": "Tiến độ",
+  "@navProgress": {
+    "description": "Mục điều hướng: tiến độ học"
+  },
+  "navProfile": "Hồ sơ",
+  "@navProfile": {
+    "description": "Mục điều hướng: hồ sơ và tài khoản"
+  },
+  "navAdmin": "Quản trị",
+  "@navAdmin": {
+    "description": "Mục điều hướng: khu vực quản trị (chỉ admin)"
+  },
+  "languageLabel": "Ngôn ngữ",
+  "@languageLabel": {
+    "description": "Nhãn của lựa chọn ngôn ngữ giao diện"
+  },
+  "languageVietnamese": "Tiếng Việt",
+  "@languageVietnamese": {
+    "description": "Tên ngôn ngữ tiếng Việt"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Tên ngôn ngữ tiếng Anh (giữ nguyên bằng tiếng Anh)"
+  },
+  "screenUnderConstruction": "Màn hình này sẽ có ở các bước triển khai tiếp theo.",
+  "@screenUnderConstruction": {
+    "description": "Nội dung tạm của màn hình chưa hiện thực"
+  },
+  "minutesShort": "{minutes} phút",
+  "@minutesShort": {
+    "description": "Thời lượng ngắn, tính bằng phút",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "statusPending": "Chưa học",
+  "@statusPending": {
+    "description": "Trạng thái: chưa bắt đầu"
+  },
+  "statusInProgress": "Đang học",
+  "@statusInProgress": {
+    "description": "Trạng thái: đang học dở"
+  },
+  "statusCompleted": "Đã xong",
+  "@statusCompleted": {
+    "description": "Trạng thái: đã hoàn thành"
+  },
+  "statusMastered": "Đã thành thạo",
+  "@statusMastered": {
+    "description": "Trạng thái: người học đánh dấu đã thành thạo"
+  },
+  "skillVocabulary": "Từ vựng",
+  "@skillVocabulary": {
+    "description": "Tên kỹ năng từ vựng"
+  },
+  "skillGrammar": "Ngữ pháp",
+  "@skillGrammar": {
+    "description": "Tên kỹ năng ngữ pháp"
+  },
+  "scopeNoticeContentCeiling": "Nội dung hiện có chỉ đến trình độ N3. Lộ trình của bạn sẽ dùng N3 làm mức cao nhất; tiến độ mục tiêu được tính trên phần nội dung này.",
+  "@scopeNoticeContentCeiling": {
+    "description": "Thông báo khi trình độ hoặc mục tiêu JLPT là N2/N1, vượt phạm vi nội dung"
+  },
+  "landingHeadline": "Học tiếng Nhật 5–15 phút mỗi ngày",
+  "@landingHeadline": {
+    "description": "Tiêu đề trang đầu"
+  },
+  "landingSubtitle": "Lộ trình riêng cho bạn, bài học ngắn vừa quỹ thời gian, ôn tập đúng lúc sắp quên.",
+  "@landingSubtitle": {
+    "description": "Mô tả ngắn trang đầu"
+  },
+  "authEmailLabel": "Email",
+  "@authEmailLabel": {
+    "description": "Nhãn ô nhập email"
+  },
+  "authPasswordLabel": "Mật khẩu",
+  "@authPasswordLabel": {
+    "description": "Nhãn ô nhập mật khẩu"
+  },
+  "authNewPasswordLabel": "Mật khẩu mới",
+  "@authNewPasswordLabel": {
+    "description": "Nhãn ô nhập mật khẩu mới"
+  },
+  "authDisplayNameLabel": "Tên hiển thị",
+  "@authDisplayNameLabel": {
+    "description": "Nhãn ô nhập tên hiển thị"
+  },
+  "authEmailRequired": "Vui lòng nhập email.",
+  "@authEmailRequired": {
+    "description": "Lỗi: thiếu email"
+  },
+  "authEmailInvalid": "Email không đúng định dạng.",
+  "@authEmailInvalid": {
+    "description": "Lỗi: email sai định dạng"
+  },
+  "authPasswordRequired": "Vui lòng nhập mật khẩu.",
+  "@authPasswordRequired": {
+    "description": "Lỗi: thiếu mật khẩu"
+  },
+  "authPasswordTooShort": "Mật khẩu phải có ít nhất {min} ký tự.",
+  "@authPasswordTooShort": {
+    "description": "Lỗi: mật khẩu quá ngắn",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "authPasswordHelper": "Ít nhất {min} ký tự, không dùng mật khẩu phổ biến.",
+  "@authPasswordHelper": {
+    "description": "Gợi ý dưới ô mật khẩu",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "authDisplayNameRequired": "Vui lòng nhập tên hiển thị.",
+  "@authDisplayNameRequired": {
+    "description": "Lỗi: thiếu tên hiển thị"
+  },
+  "authDisplayNameTooLong": "Tên hiển thị tối đa {max} ký tự.",
+  "@authDisplayNameTooLong": {
+    "description": "Lỗi: tên hiển thị quá dài",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "authLoginTitle": "Đăng nhập",
+  "@authLoginTitle": {
+    "description": "Tiêu đề thẻ đăng nhập"
+  },
+  "authRegisterTitle": "Tạo tài khoản",
+  "@authRegisterTitle": {
+    "description": "Tiêu đề thẻ đăng ký"
+  },
+  "authRegisterSubtitle": "Chỉ cần email và mật khẩu, không cần xác minh email.",
+  "@authRegisterSubtitle": {
+    "description": "Mô tả dưới tiêu đề đăng ký"
+  },
+  "authForgotPasswordLink": "Quên mật khẩu?",
+  "@authForgotPasswordLink": {
+    "description": "Liên kết sang màn hình quên mật khẩu"
+  },
+  "authNoAccountRegister": "Chưa có tài khoản? Đăng ký",
+  "@authNoAccountRegister": {
+    "description": "Liên kết sang đăng ký"
+  },
+  "authHaveAccountSignIn": "Đã có tài khoản? Đăng nhập",
+  "@authHaveAccountSignIn": {
+    "description": "Liên kết sang đăng nhập"
+  },
+  "authBackToSignIn": "Quay lại đăng nhập",
+  "@authBackToSignIn": {
+    "description": "Liên kết quay về đăng nhập"
+  },
+  "authErrorInvalidCredentials": "Email hoặc mật khẩu không đúng.",
+  "@authErrorInvalidCredentials": {
+    "description": "Lỗi đăng nhập sai thông tin"
+  },
+  "authErrorEmailTaken": "Email này đã được sử dụng.",
+  "@authErrorEmailTaken": {
+    "description": "Lỗi: email trùng"
+  },
+  "authErrorEmailPendingDeletion": "Email này thuộc một tài khoản đang chờ xóa.",
+  "@authErrorEmailPendingDeletion": {
+    "description": "Lỗi: email thuộc tài khoản chờ xóa"
+  },
+  "authPendingDeletionHint": "Bạn có thể đăng nhập để khôi phục tài khoản đó trong vòng 30 ngày kể từ khi yêu cầu xóa.",
+  "@authPendingDeletionHint": {
+    "description": "Gợi ý khôi phục khi email thuộc tài khoản chờ xóa"
+  },
+  "authSignInToRestore": "Đăng nhập để khôi phục",
+  "@authSignInToRestore": {
+    "description": "Nút chuyển sang đăng nhập để khôi phục tài khoản"
+  },
+  "authErrorResetTokenInvalid": "Liên kết đặt lại mật khẩu đã hết hạn hoặc đã được sử dụng. Hãy yêu cầu liên kết mới.",
+  "@authErrorResetTokenInvalid": {
+    "description": "Lỗi: token đặt lại không hợp lệ"
+  },
+  "authForgotPasswordTitle": "Quên mật khẩu",
+  "@authForgotPasswordTitle": {
+    "description": "Tiêu đề màn hình quên mật khẩu"
+  },
+  "authForgotPasswordSubtitle": "Nhập email, chúng tôi sẽ gửi liên kết đặt lại mật khẩu (hết hạn sau 1 giờ).",
+  "@authForgotPasswordSubtitle": {
+    "description": "Mô tả màn hình quên mật khẩu"
+  },
+  "authSendResetLink": "Gửi liên kết đặt lại",
+  "@authSendResetLink": {
+    "description": "Nút gửi liên kết đặt lại mật khẩu"
+  },
+  "authResetEmailSent": "Nếu email này có tài khoản, chúng tôi đã gửi liên kết đặt lại mật khẩu. Hãy kiểm tra hộp thư (kể cả thư rác).",
+  "@authResetEmailSent": {
+    "description": "Thông báo sau khi yêu cầu đặt lại; giống nhau dù email có tồn tại"
+  },
+  "authResetTitle": "Đặt lại mật khẩu",
+  "@authResetTitle": {
+    "description": "Tiêu đề màn hình đặt lại mật khẩu"
+  },
+  "authResetSubtitle": "Chọn mật khẩu mới cho tài khoản của bạn.",
+  "@authResetSubtitle": {
+    "description": "Mô tả màn hình đặt lại mật khẩu"
+  },
+  "authResetSubmit": "Đặt mật khẩu mới",
+  "@authResetSubmit": {
+    "description": "Nút xác nhận đặt lại mật khẩu"
+  },
+  "authResetDoneTitle": "Đã đổi mật khẩu",
+  "@authResetDoneTitle": {
+    "description": "Tiêu đề sau khi đặt lại thành công"
+  },
+  "authResetDoneMessage": "Mật khẩu của bạn đã được đổi. Mọi phiên đăng nhập cũ đã bị đăng xuất; hãy đăng nhập lại.",
+  "@authResetDoneMessage": {
+    "description": "Thông báo sau khi đặt lại thành công"
+  },
+  "authRequestNewLink": "Yêu cầu liên kết mới",
+  "@authRequestNewLink": {
+    "description": "Nút yêu cầu liên kết đặt lại mới"
+  },
+  "onboardingTitle": "Thiết lập lộ trình",
+  "@onboardingTitle": {
+    "description": "Tiêu đề trang onboarding"
+  },
+  "onboardingStepProgress": "Bước {current}/{total}",
+  "@onboardingStepProgress": {
+    "description": "Tiến độ các bước onboarding",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingRestart": "Làm lại từ đầu",
+  "@onboardingRestart": {
+    "description": "Nút xóa nháp và làm lại onboarding"
+  },
+  "onboardingFinish": "Bắt đầu học",
+  "@onboardingFinish": {
+    "description": "Nút hoàn tất onboarding"
+  },
+  "onboardingLevelQuestion": "Trình độ tiếng Nhật hiện tại của bạn?",
+  "@onboardingLevelQuestion": {
+    "description": "Câu hỏi bước trình độ"
+  },
+  "onboardingLevelNone": "Chưa biết gì",
+  "@onboardingLevelNone": {
+    "description": "Lựa chọn trình độ: chưa biết gì"
+  },
+  "onboardingLevelN5": "N5 – Sơ cấp",
+  "@onboardingLevelN5": {
+    "description": "Lựa chọn trình độ N5"
+  },
+  "onboardingLevelN4": "N4 – Sơ trung cấp",
+  "@onboardingLevelN4": {
+    "description": "Lựa chọn trình độ N4"
+  },
+  "onboardingLevelN3": "N3 – Trung cấp",
+  "@onboardingLevelN3": {
+    "description": "Lựa chọn trình độ N3"
+  },
+  "onboardingLevelN2": "N2 – Trung cao cấp",
+  "@onboardingLevelN2": {
+    "description": "Lựa chọn trình độ N2"
+  },
+  "onboardingLevelN1": "N1 – Cao cấp",
+  "@onboardingLevelN1": {
+    "description": "Lựa chọn trình độ N1"
+  },
+  "onboardingGoalQuestion": "Mục tiêu học của bạn?",
+  "@onboardingGoalQuestion": {
+    "description": "Câu hỏi bước mục tiêu"
+  },
+  "onboardingGoalDailyConversation": "Giao tiếp hằng ngày",
+  "@onboardingGoalDailyConversation": {
+    "description": "Lựa chọn mục tiêu giao tiếp"
+  },
+  "onboardingGoalWork": "Sử dụng trong công việc",
+  "@onboardingGoalWork": {
+    "description": "Lựa chọn mục tiêu công việc"
+  },
+  "onboardingGoalJlpt": "Thi JLPT",
+  "@onboardingGoalJlpt": {
+    "description": "Lựa chọn mục tiêu JLPT"
+  },
+  "onboardingTargetLevelQuestion": "Bạn muốn đạt cấp độ JLPT nào?",
+  "@onboardingTargetLevelQuestion": {
+    "description": "Câu hỏi cấp độ JLPT mục tiêu"
+  },
+  "onboardingTimeQuestion": "Mỗi ngày bạn dành được bao nhiêu thời gian?",
+  "@onboardingTimeQuestion": {
+    "description": "Câu hỏi quỹ thời gian mỗi ngày"
+  },
+  "onboardingTimeHint": "Kế hoạch mỗi ngày sẽ không vượt quá thời gian này.",
+  "@onboardingTimeHint": {
+    "description": "Gợi ý dưới câu hỏi thời gian"
+  },
+  "onboardingMinutesOption": "{minutes} phút mỗi ngày",
+  "@onboardingMinutesOption": {
+    "description": "Lựa chọn thời gian mỗi ngày",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingDeadlineQuestion": "Bạn muốn đạt mục tiêu vào lúc nào?",
+  "@onboardingDeadlineQuestion": {
+    "description": "Câu hỏi mốc thời gian"
+  },
+  "onboardingDeadlineHint": "Không bắt buộc. Có mốc thời gian giúp chúng tôi đánh giá bạn có đúng tiến độ không.",
+  "@onboardingDeadlineHint": {
+    "description": "Gợi ý bước mốc thời gian"
+  },
+  "onboardingDeadlinePick": "Chọn ngày",
+  "@onboardingDeadlinePick": {
+    "description": "Nút chọn ngày mốc"
+  },
+  "onboardingDeadlineSelected": "Mốc: {date}",
+  "@onboardingDeadlineSelected": {
+    "description": "Nút hiển thị ngày mốc đã chọn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingDeadlineNone": "Không đặt mốc",
+  "@onboardingDeadlineNone": {
+    "description": "Nút bỏ mốc thời gian"
+  },
+  "onboardingSkillsQuestion": "Bạn muốn cải thiện kỹ năng nào?",
+  "@onboardingSkillsQuestion": {
+    "description": "Câu hỏi kỹ năng"
+  },
+  "onboardingSkillVocabulary": "Từ vựng",
+  "@onboardingSkillVocabulary": {
+    "description": "Kỹ năng từ vựng"
+  },
+  "onboardingSkillGrammar": "Ngữ pháp",
+  "@onboardingSkillGrammar": {
+    "description": "Kỹ năng ngữ pháp"
+  },
+  "onboardingSkillListening": "Nghe",
+  "@onboardingSkillListening": {
+    "description": "Kỹ năng nghe (bị khóa)"
+  },
+  "onboardingSkillReading": "Đọc",
+  "@onboardingSkillReading": {
+    "description": "Kỹ năng đọc (bị khóa)"
+  },
+  "onboardingSkillKanji": "Kanji",
+  "@onboardingSkillKanji": {
+    "description": "Kỹ năng Kanji (bị khóa)"
+  },
+  "onboardingSkillLocked": "Chưa có trong phiên bản này",
+  "@onboardingSkillLocked": {
+    "description": "Ghi chú kỹ năng bị khóa"
+  },
+  "onboardingPlacementTitle": "Kiểm tra trình độ (tùy chọn)",
+  "@onboardingPlacementTitle": {
+    "description": "Tiêu đề bước kiểm tra trình độ"
+  },
+  "onboardingPlacementIntro": "Bài kiểm tra 20 câu giúp chọn điểm xuất phát chính xác hơn. Bạn có thể bỏ qua, lộ trình vẫn được tạo từ thông tin bạn đã khai báo.",
+  "@onboardingPlacementIntro": {
+    "description": "Giới thiệu bước kiểm tra trình độ"
+  },
+  "onboardingPlacementCarriedTitle": "Kết quả kiểm tra trình độ của bạn",
+  "@onboardingPlacementCarriedTitle": {
+    "description": "Tiêu đề khối kết quả kiểm tra có sẵn"
+  },
+  "onboardingPlacementDiscard": "Bỏ kết quả này",
+  "@onboardingPlacementDiscard": {
+    "description": "Nút bỏ kết quả kiểm tra có sẵn"
+  },
+  "onboardingPlacementDiscarded": "Đã bỏ kết quả. Lộ trình sẽ không dùng kết quả này.",
+  "@onboardingPlacementDiscarded": {
+    "description": "Thông báo đã bỏ kết quả"
+  },
+  "onboardingPlacementUseResult": "Dùng lại kết quả này",
+  "@onboardingPlacementUseResult": {
+    "description": "Nút dùng lại kết quả đã bỏ"
+  },
+  "onboardingPlacementTake": "Làm bài kiểm tra trình độ",
+  "@onboardingPlacementTake": {
+    "description": "Nút làm bài kiểm tra"
+  },
+  "onboardingPlacementRetake": "Làm lại bài kiểm tra",
+  "@onboardingPlacementRetake": {
+    "description": "Nút làm lại bài kiểm tra"
+  },
+  "onboardingPlacementUsingHint": "Lộ trình sẽ dùng kết quả kiểm tra ở trên.",
+  "@onboardingPlacementUsingHint": {
+    "description": "Gợi ý khi dùng kết quả có sẵn"
+  },
+  "onboardingPlacementSkipHint": "Bỏ qua cũng được: nhấn \"Bắt đầu học\" để tạo lộ trình từ thông tin đã khai báo.",
+  "@onboardingPlacementSkipHint": {
+    "description": "Gợi ý khi bỏ qua kiểm tra"
+  },
+  "placementTitle": "Kiểm tra trình độ",
+  "@placementTitle": {
+    "description": "Tiêu đề màn hình kiểm tra trình độ"
+  },
+  "placementIntroTitle": "Sẵn sàng kiểm tra?",
+  "@placementIntroTitle": {
+    "description": "Tiêu đề phần giới thiệu bài kiểm tra"
+  },
+  "placementIntroBody": "Gồm {count} câu từ vựng và ngữ pháp, tối đa {minutes} phút. Bạn có thể bỏ qua bất cứ lúc nào.",
+  "@placementIntroBody": {
+    "description": "Mô tả bài kiểm tra",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "placementStart": "Bắt đầu",
+  "@placementStart": {
+    "description": "Nút bắt đầu bài kiểm tra"
+  },
+  "placementSkip": "Bỏ qua",
+  "@placementSkip": {
+    "description": "Nút bỏ qua bài kiểm tra"
+  },
+  "placementQuestionProgress": "Câu {current}/{total}",
+  "@placementQuestionProgress": {
+    "description": "Tiến độ câu hỏi",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementTimeLeft": "Thời gian còn lại",
+  "@placementTimeLeft": {
+    "description": "Nhãn trợ năng của đồng hồ đếm ngược"
+  },
+  "placementSubmit": "Nộp bài ({answered}/{total} câu)",
+  "@placementSubmit": {
+    "description": "Nút nộp bài kèm số câu đã trả lời",
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementSubmitting": "Đang chấm bài…",
+  "@placementSubmitting": {
+    "description": "Thông báo đang chấm bài"
+  },
+  "placementResultTitle": "Kết quả kiểm tra",
+  "@placementResultTitle": {
+    "description": "Tiêu đề kết quả"
+  },
+  "placementLevelBeginner": "Bạn bắt đầu từ nền tảng cho người mới",
+  "@placementLevelBeginner": {
+    "description": "Kết quả: trình độ người mới"
+  },
+  "placementLevelEstimated": "Trình độ ước tính: {level}",
+  "@placementLevelEstimated": {
+    "description": "Kết quả: trình độ ước tính",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "placementScore": "Điểm: {score}/{total}",
+  "@placementScore": {
+    "description": "Điểm số bài kiểm tra",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementGuessNote": "Nhiều câu có vẻ được chọn ngẫu nhiên nên kết quả được tính ở mức an toàn cho người mới.",
+  "@placementGuessNote": {
+    "description": "Ghi chú khi nghi đoán mò"
+  },
+  "placementStrongTopics": "Mảng mạnh",
+  "@placementStrongTopics": {
+    "description": "Tiêu đề danh sách mảng mạnh"
+  },
+  "placementWeakTopics": "Mảng cần củng cố",
+  "@placementWeakTopics": {
+    "description": "Tiêu đề danh sách mảng yếu"
+  },
+  "placementNoTopics": "Chưa đủ dữ liệu",
+  "@placementNoTopics": {
+    "description": "Khi không có mảng nào"
+  },
+  "placementRetakeChoice": "Bạn muốn làm gì với kết quả mới?",
+  "@placementRetakeChoice": {
+    "description": "Tiêu đề lựa chọn sau khi làm lại"
+  },
+  "placementRetakeChoiceHint": "Lịch sử học và lịch ôn tập của bạn được giữ nguyên trong cả hai trường hợp.",
+  "@placementRetakeChoiceHint": {
+    "description": "Giải thích lựa chọn sau khi làm lại"
+  },
+  "placementRebuildPath": "Xây dựng lại lộ trình theo kết quả này",
+  "@placementRebuildPath": {
+    "description": "Nút xây dựng lại lộ trình"
+  },
+  "placementKeepPath": "Giữ lộ trình hiện tại",
+  "@placementKeepPath": {
+    "description": "Nút giữ lộ trình"
+  },
+  "placementRebuildConfirmTitle": "Xây dựng lại lộ trình?",
+  "@placementRebuildConfirmTitle": {
+    "description": "Tiêu đề hộp thoại xác nhận xây dựng lại"
+  },
+  "placementRebuildConfirmMessage": "Lộ trình mới sẽ thay thế lộ trình hiện tại. Lịch sử học và lịch ôn tập không bị ảnh hưởng.",
+  "@placementRebuildConfirmMessage": {
+    "description": "Nội dung hộp thoại xác nhận xây dựng lại"
+  },
+  "pathHeading": "Lộ trình của bạn",
+  "@pathHeading": {
+    "description": "Tiêu đề màn hình lộ trình"
+  },
+  "pathStartBeginner": "Điểm xuất phát: nền tảng cho người mới",
+  "@pathStartBeginner": {
+    "description": "Điểm xuất phát của người mới"
+  },
+  "pathStartLevel": "Điểm xuất phát: {level}",
+  "@pathStartLevel": {
+    "description": "Điểm xuất phát theo trình độ",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pathReasonOnboarding": "Tạo từ thông tin bạn khai báo ban đầu",
+  "@pathReasonOnboarding": {
+    "description": "Lý do lộ trình: onboarding"
+  },
+  "pathReasonRebuild": "Được xây dựng lại theo yêu cầu của bạn",
+  "@pathReasonRebuild": {
+    "description": "Lý do lộ trình: xây dựng lại"
+  },
+  "pathReasonGoalChange": "Được cập nhật khi bạn đổi mục tiêu",
+  "@pathReasonGoalChange": {
+    "description": "Lý do lộ trình: đổi mục tiêu"
+  },
+  "pathReasonLevelChange": "Được cập nhật khi bạn đổi trình độ",
+  "@pathReasonLevelChange": {
+    "description": "Lý do lộ trình: đổi trình độ"
+  },
+  "pathReasonPlacementRetake": "Được cập nhật theo kết quả kiểm tra trình độ mới",
+  "@pathReasonPlacementRetake": {
+    "description": "Lý do lộ trình: làm lại kiểm tra"
+  },
+  "pathProgress": "Đã xong {completed}/{total} đơn vị",
+  "@pathProgress": {
+    "description": "Tiến độ lộ trình",
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pathEmptyTitle": "Chưa có đơn vị phù hợp",
+  "@pathEmptyTitle": {
+    "description": "Tiêu đề khi lộ trình chưa có đơn vị"
+  },
+  "pathEmptyMessage": "Hiện chưa có nội dung phù hợp với trình độ và kỹ năng của bạn. Nội dung mới sẽ xuất hiện khi được bổ sung.",
+  "@pathEmptyMessage": {
+    "description": "Nội dung khi lộ trình chưa có đơn vị"
+  },
+  "pathRetakePlacement": "Làm lại bài kiểm tra trình độ",
+  "@pathRetakePlacement": {
+    "description": "Nút làm lại bài kiểm tra từ lộ trình"
+  },
+  "todayHeading": "Kế hoạch hôm nay",
+  "@todayHeading": {
+    "description": "Tiêu đề màn hình Hôm nay"
+  },
+  "todayTimeSummary": "Ước tính {estimated}/{budget} phút",
+  "@todayTimeSummary": {
+    "description": "Tổng thời lượng ước tính so với quỹ thời gian",
+    "placeholders": {
+      "estimated": {
+        "type": "int"
+      },
+      "budget": {
+        "type": "int"
+      }
+    }
+  },
+  "todayTypeNew": "Bài mới",
+  "@todayTypeNew": {
+    "description": "Loại mục kế hoạch: bài mới"
+  },
+  "todayTypeReview": "Ôn tập",
+  "@todayTypeReview": {
+    "description": "Loại mục kế hoạch: ôn tập"
+  },
+  "todayReviewItemCount": "{count} mục ôn",
+  "@todayReviewItemCount": {
+    "description": "Số mục trong gói ôn",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayViewPath": "Xem lộ trình",
+  "@todayViewPath": {
+    "description": "Nút sang màn hình lộ trình"
+  },
+  "todayEmptyTitle": "Hôm nay chưa có bài nào",
+  "@todayEmptyTitle": {
+    "description": "Tiêu đề khi kế hoạch rỗng"
+  },
+  "todayEmptyMessage": "Bạn không có bài nào trong kế hoạch hôm nay.",
+  "@todayEmptyMessage": {
+    "description": "Nội dung khi kế hoạch rỗng"
+  },
+  "todayNoticeContentExhausted": "Bạn đã học hết nội dung phù hợp hiện có và không có bài ôn đến hạn. Nội dung mới sẽ xuất hiện khi được bổ sung.",
+  "@todayNoticeContentExhausted": {
+    "description": "Thông báo hết nội dung"
+  },
+  "todayNoticeNoFittingUnit": "Các bài còn lại dài hơn quỹ thời gian hôm nay. Hãy tăng thời gian mỗi ngày trong cài đặt nếu muốn học tiếp.",
+  "@todayNoticeNoFittingUnit": {
+    "description": "Thông báo không có bài vừa quỹ thời gian"
+  },
+  "todayNoticeReplanned": "Kế hoạch đã được điều chỉnh sau những ngày nghỉ, ở mức bạn xử lý được.",
+  "@todayNoticeReplanned": {
+    "description": "Thông báo lập lại kế hoạch sau khoảng nghỉ"
+  },
+  "todayPausedTitle": "Lộ trình đang tạm dừng",
+  "@todayPausedTitle": {
+    "description": "Tiêu đề khi lộ trình tạm dừng"
+  },
+  "todayPausedMessage": "Khi bạn tiếp tục lộ trình, kế hoạch hằng ngày sẽ quay lại. Các ngày tạm dừng không bị tính là bỏ lỡ.",
+  "@todayPausedMessage": {
+    "description": "Nội dung khi lộ trình tạm dừng"
+  },
+  "lessonIntroHeading": "Nội dung bài học",
+  "@lessonIntroHeading": {
+    "description": "Tiêu đề phần giải thích đầu bài học"
+  },
+  "lessonStartExercises": "Bắt đầu làm bài tập",
+  "@lessonStartExercises": {
+    "description": "Nút chuyển từ phần giải thích sang bài tập"
+  },
+  "lessonReading": "Cách đọc: {reading}",
+  "@lessonReading": {
+    "description": "Cách đọc của từ",
+    "placeholders": {
+      "reading": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonExplanationLabel": "Giải thích",
+  "@lessonExplanationLabel": {
+    "description": "Nhãn phần giải thích ngữ pháp"
+  },
+  "lessonExamplesLabel": "Ví dụ",
+  "@lessonExamplesLabel": {
+    "description": "Nhãn danh sách câu ví dụ"
+  },
+  "lessonProgress": "Câu {current}/{total}",
+  "@lessonProgress": {
+    "description": "Tiến độ trong phiên",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonRetryHeading": "Làm lại các câu sai",
+  "@lessonRetryHeading": {
+    "description": "Tiêu đề phần hỏi lại cuối phiên"
+  },
+  "lessonRetryIntro": "Thử lại những câu bạn làm sai. Lần này không tính vào điểm của bài.",
+  "@lessonRetryIntro": {
+    "description": "Giải thích phần hỏi lại cuối phiên"
+  },
+  "lessonCheck": "Kiểm tra",
+  "@lessonCheck": {
+    "description": "Nút kiểm tra đáp án"
+  },
+  "lessonContinue": "Tiếp tục",
+  "@lessonContinue": {
+    "description": "Nút sang câu kế tiếp"
+  },
+  "lessonFinish": "Hoàn thành bài học",
+  "@lessonFinish": {
+    "description": "Nút hoàn thành phiên"
+  },
+  "lessonCorrect": "Chính xác!",
+  "@lessonCorrect": {
+    "description": "Phản hồi khi trả lời đúng"
+  },
+  "lessonIncorrect": "Chưa đúng",
+  "@lessonIncorrect": {
+    "description": "Phản hồi khi trả lời sai"
+  },
+  "lessonCorrectAnswer": "Đáp án đúng: {answer}",
+  "@lessonCorrectAnswer": {
+    "description": "Hiển thị đáp án đúng khi trả lời sai",
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonFillBlankLabel": "Câu trả lời của bạn",
+  "@lessonFillBlankLabel": {
+    "description": "Nhãn ô điền từ"
+  },
+  "lessonMatchingInstruction": "Chọn một mục bên trái, rồi chọn mục tương ứng bên phải.",
+  "@lessonMatchingInstruction": {
+    "description": "Hướng dẫn bài ghép cặp"
+  },
+  "lessonMatchingReset": "Chọn lại",
+  "@lessonMatchingReset": {
+    "description": "Nút xóa các cặp đã ghép"
+  },
+  "lessonOfflineTitle": "Chưa gửi được câu trả lời",
+  "@lessonOfflineTitle": {
+    "description": "Tiêu đề khi mất kết nối lúc gửi câu trả lời"
+  },
+  "lessonOfflineMessage": "Mất kết nối. Câu trả lời đã được lưu trên máy và sẽ không bị mất; hãy thử gửi lại.",
+  "@lessonOfflineMessage": {
+    "description": "Thông báo khi mất kết nối lúc gửi câu trả lời"
+  },
+  "lessonRetrySend": "Gửi lại",
+  "@lessonRetrySend": {
+    "description": "Nút gửi lại câu trả lời"
+  },
+  "lessonCompleteOffline": "Chưa lưu được kết quả nên chưa thể hoàn thành bài. Hãy kiểm tra kết nối rồi thử lại.",
+  "@lessonCompleteOffline": {
+    "description": "Thông báo khi chưa hoàn thành được vì mất kết nối"
+  },
+  "lessonSummaryHeading": "Hoàn thành bài học!",
+  "@lessonSummaryHeading": {
+    "description": "Tiêu đề tóm tắt sau bài học"
+  },
+  "lessonSummaryScore": "Bạn trả lời đúng {correct}/{total} câu",
+  "@lessonSummaryScore": {
+    "description": "Tóm tắt điểm",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonSummaryTime": "Thời gian học: {minutes} phút",
+  "@lessonSummaryTime": {
+    "description": "Tóm tắt thời gian",
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonSummaryDayDone": "Bạn đã hoàn thành kế hoạch hôm nay. Làm tốt lắm!",
+  "@lessonSummaryDayDone": {
+    "description": "Thông báo hoàn thành ngày"
+  },
+  "lessonBackToToday": "Về trang Hôm nay",
+  "@lessonBackToToday": {
+    "description": "Nút quay về màn hình Hôm nay"
+  },
+  "lessonUnavailable": "Bài học này hiện không còn khả dụng.",
+  "@lessonUnavailable": {
+    "description": "Thông báo khi đơn vị học bị gỡ"
+  },
+  "lessonEmpty": "Bài học này chưa có bài tập.",
+  "@lessonEmpty": {
+    "description": "Trạng thái bài học không có bài tập"
+  },
+  "todayStart": "Bắt đầu",
+  "@todayStart": {
+    "description": "Nút bắt đầu mục kế hoạch"
+  },
+  "todayContinue": "Tiếp tục",
+  "@todayContinue": {
+    "description": "Nút tiếp tục mục kế hoạch đang dở"
+  },
+  "todayDayCompletedTitle": "Bạn đã hoàn thành kế hoạch hôm nay",
+  "@todayDayCompletedTitle": {
+    "description": "Tiêu đề khi hoàn thành ngày"
+  },
+  "todayDayCompletedSummary": "Đúng {correct}/{total} câu · {minutes} phút",
+  "@todayDayCompletedSummary": {
+    "description": "Tóm tắt kết quả ngày",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "todayStudyMore": "Học thêm",
+  "@todayStudyMore": {
+    "description": "Nút học thêm sau khi xong kế hoạch"
+  },
+  "todayExtraRaiseLevel": "Bạn đã học hết nội dung ở trình độ hiện tại. Hãy nâng trình độ hoặc làm lại bài kiểm tra trình độ để học tiếp.",
+  "@todayExtraRaiseLevel": {
+    "description": "Gợi ý khi hết nội dung học thêm: nâng trình độ"
+  },
+  "todayExtraAddSkill": "Bạn đã học hết nội dung của các kỹ năng đã chọn. Hãy thêm kỹ năng khác để học tiếp.",
+  "@todayExtraAddSkill": {
+    "description": "Gợi ý khi hết nội dung học thêm: thêm kỹ năng"
+  },
+  "todayExtraExhausted": "Bạn đã học hết nội dung hiện có trong phiên bản này. Nội dung mới sẽ xuất hiện khi được bổ sung.",
+  "@todayExtraExhausted": {
+    "description": "Thông báo khi hết toàn bộ nội dung học thêm"
+  },
+  "reviewNextDate": "Ôn lại vào {date}",
+  "@reviewNextDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryHeading": "Ôn tập hoàn tất!",
+  "reviewSummaryScore": "Bạn nhớ đúng {correct}/{total} mục",
+  "@reviewSummaryScore": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryHint": "Mục nhớ tốt sẽ được hẹn ôn lại sau lâu hơn; mục chưa nhớ sẽ quay lại sớm hơn.",
+  "reviewEmpty": "Các mục ôn này hiện không còn khả dụng.",
+  "reviewFinish": "Đóng mục ôn tập",
+  "progressHeading": "Tiến độ của bạn",
+  "@progressHeading": {
+    "description": "Tiêu đề màn hình tiến độ"
+  },
+  "progressEmptyTitle": "Bạn chưa có tiến độ nào",
+  "@progressEmptyTitle": {
+    "description": "Tiêu đề trạng thái trống của tiến độ"
+  },
+  "progressEmptyMessage": "Hoàn thành bài đầu tiên ở màn hình Hôm nay, số liệu học tập sẽ xuất hiện tại đây.",
+  "@progressEmptyMessage": {
+    "description": "Nội dung trạng thái trống của tiến độ"
+  },
+  "progressEmptyAction": "Đến Hôm nay",
+  "@progressEmptyAction": {
+    "description": "Nút từ trạng thái trống sang màn hình Hôm nay"
+  },
+  "progressStudyTime": "Thời gian đã học",
+  "@progressStudyTime": {
+    "description": "Nhãn chỉ số tổng thời gian học"
+  },
+  "progressMinutesValue": "{minutes} phút",
+  "@progressMinutesValue": {
+    "description": "Giá trị thời gian học theo phút",
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "progressLessons": "Bài đã hoàn thành",
+  "@progressLessons": {
+    "description": "Nhãn chỉ số số bài đã hoàn thành"
+  },
+  "progressReviewAccuracy": "Độ chính xác khi ôn",
+  "@progressReviewAccuracy": {
+    "description": "Nhãn chỉ số độ chính xác ôn tập"
+  },
+  "progressReviewAccuracyNone": "Chưa ôn lần nào",
+  "@progressReviewAccuracyNone": {
+    "description": "Giá trị khi chưa có bài ôn nào"
+  },
+  "progressStreak": "Chuỗi ngày học",
+  "@progressStreak": {
+    "description": "Nhãn chỉ số chuỗi ngày học liên tiếp"
+  },
+  "progressStreakDays": "{count} ngày",
+  "@progressStreakDays": {
+    "description": "Giá trị chuỗi ngày học",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "progressStreakHint": "Ngày tạm dừng lộ trình không làm đứt chuỗi.",
+  "@progressStreakHint": {
+    "description": "Ghi chú dưới chuỗi ngày học"
+  },
+  "progressGoalHeading": "Tiến độ mục tiêu",
+  "@progressGoalHeading": {
+    "description": "Tiêu đề phần tiến độ mục tiêu"
+  },
+  "progressGoalCompletion": "Đã hoàn thành {percent}% nội dung mục tiêu",
+  "@progressGoalCompletion": {
+    "description": "Tỷ lệ nội dung mục tiêu đã xong",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "progressGoalOnTrack": "Bạn đang đúng tiến độ so với mốc thời gian.",
+  "@progressGoalOnTrack": {
+    "description": "Trạng thái đúng tiến độ"
+  },
+  "progressGoalBehind": "Bạn đang chậm tiến độ so với mốc thời gian. Hãy tăng thời gian mỗi ngày hoặc dời mốc.",
+  "@progressGoalBehind": {
+    "description": "Trạng thái chậm tiến độ"
+  },
+  "progressGoalNoDeadline": "Bạn chưa đặt mốc thời gian. Thêm mốc ở phần điều chỉnh kế hoạch để biết mình có đúng tiến độ không.",
+  "@progressGoalNoDeadline": {
+    "description": "Gợi ý khi chưa có mốc thời gian"
+  },
+  "progressGoalTargetDate": "Mốc: {date}",
+  "@progressGoalTargetDate": {
+    "description": "Mốc thời gian mục tiêu",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "progressWeakHeading": "Mảng cần luyện thêm",
+  "@progressWeakHeading": {
+    "description": "Tiêu đề danh sách điểm yếu"
+  },
+  "progressWeakNone": "Hiện chưa có mảng nào làm kém. Cứ tiếp tục nhé!",
+  "@progressWeakNone": {
+    "description": "Khi không có điểm yếu"
+  },
+  "progressWeakAccuracy": "Đúng {percent}% gần đây",
+  "@progressWeakAccuracy": {
+    "description": "Độ chính xác gần đây của một mảng yếu",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "progressAdjustPlan": "Điều chỉnh kế hoạch",
+  "@progressAdjustPlan": {
+    "description": "Nút sang màn hình điều chỉnh kế hoạch"
+  },
+  "todayViewProgress": "Xem tiến độ",
+  "@todayViewProgress": {
+    "description": "Nút từ màn hình Hôm nay sang tiến độ"
+  },
+  "todayResumePath": "Tiếp tục lộ trình",
+  "@todayResumePath": {
+    "description": "Nút tiếp tục lộ trình khi đang tạm dừng"
+  },
+  "pathAdjustPlan": "Điều chỉnh kế hoạch",
+  "@pathAdjustPlan": {
+    "description": "Nút sang màn hình điều chỉnh kế hoạch"
+  },
+  "pathMarkMastered": "Đã thành thạo",
+  "@pathMarkMastered": {
+    "description": "Nút đánh dấu đơn vị đã thành thạo"
+  },
+  "pathUnmarkMastered": "Bỏ đánh dấu",
+  "@pathUnmarkMastered": {
+    "description": "Nút bỏ đánh dấu thành thạo"
+  },
+  "pathMasteredSnack": "Đã đánh dấu \"{title}\" là đã thành thạo",
+  "@pathMasteredSnack": {
+    "description": "Thông báo sau khi đánh dấu thành thạo",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "pathUnmasteredSnack": "Đã bỏ đánh dấu thành thạo cho \"{title}\"",
+  "@pathUnmasteredSnack": {
+    "description": "Thông báo sau khi bỏ đánh dấu thành thạo",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "pathMasterLastTitle": "Đánh dấu đơn vị cuối cùng?",
+  "@pathMasterLastTitle": {
+    "description": "Tiêu đề xác nhận khi đánh dấu đơn vị cuối cùng"
+  },
+  "pathMasterLastMessage": "Đây là đơn vị cuối cùng còn lại. Sau khi đánh dấu, bạn sẽ không còn bài mới để học ở lộ trình này.",
+  "@pathMasterLastMessage": {
+    "description": "Nội dung xác nhận khi đánh dấu đơn vị cuối cùng"
+  },
+  "pathSuggestionRaiseTitle": "Bạn đã hết bài mới ở trình độ hiện tại",
+  "@pathSuggestionRaiseTitle": {
+    "description": "Tiêu đề gợi ý nâng trình độ"
+  },
+  "pathSuggestionRaiseMessage": "Vẫn còn nội dung ở trình độ cao hơn. Bạn có thể nâng trình độ hoặc làm lại bài kiểm tra trình độ.",
+  "@pathSuggestionRaiseMessage": {
+    "description": "Nội dung gợi ý nâng trình độ"
+  },
+  "pathSuggestionRaiseAction": "Nâng lên {level}",
+  "@pathSuggestionRaiseAction": {
+    "description": "Nút nâng trình độ",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pathSuggestionExhaustedTitle": "Bạn đã học hết nội dung hiện có",
+  "@pathSuggestionExhaustedTitle": {
+    "description": "Tiêu đề thông báo hết nội dung"
+  },
+  "pathSuggestionExhaustedMessage": "Phiên bản này chỉ có nội dung đến N3. Nội dung mới sẽ xuất hiện khi được thêm vào; trong lúc đó bạn vẫn có thể ôn tập.",
+  "@pathSuggestionExhaustedMessage": {
+    "description": "Nội dung thông báo hết nội dung"
+  },
+  "planAdjustTitle": "Điều chỉnh kế hoạch",
+  "@planAdjustTitle": {
+    "description": "Tiêu đề màn hình điều chỉnh kế hoạch"
+  },
+  "planAdjustIntro": "Mọi thay đổi có hiệu lực từ kế hoạch được tạo kế tiếp. Lịch sử học và lịch ôn của bạn luôn được giữ nguyên.",
+  "@planAdjustIntro": {
+    "description": "Giới thiệu màn hình điều chỉnh kế hoạch"
+  },
+  "planAdjustGoalHeading": "Mục tiêu",
+  "@planAdjustGoalHeading": {
+    "description": "Tiêu đề phần mục tiêu"
+  },
+  "planAdjustTargetLevel": "Cấp độ JLPT muốn đạt",
+  "@planAdjustTargetLevel": {
+    "description": "Nhãn chọn cấp độ mục tiêu"
+  },
+  "planAdjustDeadline": "Mốc thời gian",
+  "@planAdjustDeadline": {
+    "description": "Nhãn mốc thời gian"
+  },
+  "planAdjustDeadlineClear": "Bỏ mốc",
+  "@planAdjustDeadlineClear": {
+    "description": "Nút bỏ mốc thời gian"
+  },
+  "planAdjustApplyGoal": "Áp dụng mục tiêu",
+  "@planAdjustApplyGoal": {
+    "description": "Nút lưu thay đổi mục tiêu"
+  },
+  "planAdjustGoalSaved": "Đã cập nhật mục tiêu. Lộ trình mới được tạo, lịch sử học được giữ nguyên.",
+  "@planAdjustGoalSaved": {
+    "description": "Thông báo sau khi đổi mục tiêu"
+  },
+  "planAdjustTimeHeading": "Thời gian mỗi ngày",
+  "@planAdjustTimeHeading": {
+    "description": "Tiêu đề phần thời gian mỗi ngày"
+  },
+  "planAdjustTimeSaved": "Đã đổi thời gian mỗi ngày. Áp dụng từ kế hoạch kế tiếp.",
+  "@planAdjustTimeSaved": {
+    "description": "Thông báo sau khi đổi thời gian mỗi ngày"
+  },
+  "planAdjustSkillHeading": "Kỹ năng ưu tiên",
+  "@planAdjustSkillHeading": {
+    "description": "Tiêu đề phần kỹ năng ưu tiên"
+  },
+  "planAdjustSkillHint": "Kỹ năng được ưu tiên sẽ xuất hiện sớm hơn trong các bài mới.",
+  "@planAdjustSkillHint": {
+    "description": "Giải thích kỹ năng ưu tiên"
+  },
+  "planAdjustSkillNone": "Không ưu tiên",
+  "@planAdjustSkillNone": {
+    "description": "Lựa chọn không ưu tiên kỹ năng nào"
+  },
+  "planAdjustSkillSaved": "Đã cập nhật kỹ năng ưu tiên. Áp dụng từ kế hoạch kế tiếp.",
+  "@planAdjustSkillSaved": {
+    "description": "Thông báo sau khi đổi kỹ năng ưu tiên"
+  },
+  "planAdjustPauseHeading": "Tạm dừng",
+  "@planAdjustPauseHeading": {
+    "description": "Tiêu đề phần tạm dừng"
+  },
+  "planAdjustPauseMessage": "Khi tạm dừng, hệ thống không tạo kế hoạch mới và không tính ngày bỏ lỡ. Bạn có thể tiếp tục bất cứ lúc nào.",
+  "@planAdjustPauseMessage": {
+    "description": "Giải thích tạm dừng"
+  },
+  "planAdjustPauseButton": "Tạm dừng lộ trình",
+  "@planAdjustPauseButton": {
+    "description": "Nút tạm dừng lộ trình"
+  },
+  "planAdjustPausedStatus": "Lộ trình đang tạm dừng",
+  "@planAdjustPausedStatus": {
+    "description": "Trạng thái đang tạm dừng"
+  },
+  "planAdjustResumeButton": "Tiếp tục lộ trình",
+  "@planAdjustResumeButton": {
+    "description": "Nút tiếp tục lộ trình"
+  },
+  "planAdjustPaused": "Đã tạm dừng lộ trình.",
+  "@planAdjustPaused": {
+    "description": "Thông báo sau khi tạm dừng"
+  },
+  "planAdjustResumed": "Đã tiếp tục lộ trình.",
+  "@planAdjustResumed": {
+    "description": "Thông báo sau khi tiếp tục"
+  },
+  "planAdjustMasteredHeading": "Nội dung đã biết",
+  "@planAdjustMasteredHeading": {
+    "description": "Tiêu đề phần đánh dấu thành thạo"
+  },
+  "planAdjustMasteredHint": "Muốn bỏ qua đơn vị đã biết? Đánh dấu \"đã thành thạo\" ngay trên từng đơn vị ở màn hình Lộ trình.",
+  "@planAdjustMasteredHint": {
+    "description": "Hướng dẫn đánh dấu thành thạo"
+  },
+  "planAdjustRebuildHeading": "Xây dựng lại",
+  "@planAdjustRebuildHeading": {
+    "description": "Tiêu đề phần xây dựng lại lộ trình"
+  },
+  "planAdjustRebuildMessage": "Tạo lại toàn bộ lộ trình theo hồ sơ hiện tại. Lịch sử học và lịch ôn không bị ảnh hưởng.",
+  "@planAdjustRebuildMessage": {
+    "description": "Giải thích xây dựng lại"
+  },
+  "planAdjustRebuildButton": "Xây dựng lại lộ trình",
+  "@planAdjustRebuildButton": {
+    "description": "Nút xây dựng lại lộ trình"
+  },
+  "planAdjustRebuildConfirmTitle": "Xây dựng lại lộ trình?",
+  "@planAdjustRebuildConfirmTitle": {
+    "description": "Tiêu đề xác nhận xây dựng lại"
+  },
+  "planAdjustRebuildConfirmMessage": "Lộ trình mới sẽ thay thế lộ trình hiện tại. Lịch sử học và lịch ôn của bạn không bị ảnh hưởng.",
+  "@planAdjustRebuildConfirmMessage": {
+    "description": "Nội dung xác nhận xây dựng lại"
+  },
+  "planAdjustRebuilt": "Đã xây dựng lại lộ trình.",
+  "@planAdjustRebuilt": {
+    "description": "Thông báo sau khi xây dựng lại"
+  },
+  "landingTrial": "Dùng thử không cần đăng ký",
+  "@landingTrial": {
+    "description": "Nút dùng thử ở trang đầu"
+  },
+  "trialTitle": "Dùng thử",
+  "@trialTitle": {
+    "description": "Tiêu đề các màn hình dùng thử"
+  },
+  "trialHomeHeadline": "Dùng thử miễn phí, không cần đăng ký",
+  "@trialHomeHeadline": {
+    "description": "Tiêu đề trang dùng thử"
+  },
+  "trialHomeIntro": "Học thử một bài mẫu ngắn (khoảng {minutes} phút) và làm bài kiểm tra trình độ. Chúng tôi không lưu thông tin nhận dạng nào về bạn.",
+  "@trialHomeIntro": {
+    "description": "Giới thiệu trang dùng thử",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "trialStartLesson": "Bắt đầu bài mẫu",
+  "@trialStartLesson": {
+    "description": "Nút bắt đầu bài mẫu"
+  },
+  "trialContinueLesson": "Tiếp tục bài mẫu",
+  "@trialContinueLesson": {
+    "description": "Nút tiếp tục bài mẫu dở dang"
+  },
+  "trialLessonDoneAction": "Xem kết quả bài mẫu",
+  "@trialLessonDoneAction": {
+    "description": "Nút xem kết quả khi đã học xong bài mẫu"
+  },
+  "trialPlacementCardTitle": "Kiểm tra trình độ",
+  "@trialPlacementCardTitle": {
+    "description": "Tiêu đề khối kiểm tra trình độ"
+  },
+  "trialPlacementCardBody": "20 câu, tối đa 10 phút. Kết quả được mang sang khi bạn đăng ký trên cùng trình duyệt này.",
+  "@trialPlacementCardBody": {
+    "description": "Mô tả khối kiểm tra trình độ"
+  },
+  "trialPlacementTake": "Làm kiểm tra trình độ",
+  "@trialPlacementTake": {
+    "description": "Nút làm kiểm tra trình độ"
+  },
+  "trialPlacementViewResult": "Xem kết quả kiểm tra",
+  "@trialPlacementViewResult": {
+    "description": "Nút xem lại kết quả kiểm tra đã làm"
+  },
+  "trialLockedHeading": "Có sẵn khi bạn đăng ký",
+  "@trialLockedHeading": {
+    "description": "Tiêu đề danh sách tính năng cần tài khoản"
+  },
+  "trialLockedPath": "Lộ trình cá nhân",
+  "@trialLockedPath": {
+    "description": "Tên tính năng lộ trình"
+  },
+  "trialLockedToday": "Kế hoạch hằng ngày",
+  "@trialLockedToday": {
+    "description": "Tên tính năng kế hoạch hằng ngày"
+  },
+  "trialLockedReview": "Ôn tập đúng lúc sắp quên",
+  "@trialLockedReview": {
+    "description": "Tên tính năng ôn tập"
+  },
+  "trialLockedProgress": "Theo dõi tiến độ",
+  "@trialLockedProgress": {
+    "description": "Tên tính năng tiến độ"
+  },
+  "trialRegisterCta": "Đăng ký miễn phí",
+  "@trialRegisterCta": {
+    "description": "Nút đăng ký trong luồng dùng thử"
+  },
+  "trialRestart": "Dùng thử lại từ đầu",
+  "@trialRestart": {
+    "description": "Nút dùng thử lại từ đầu"
+  },
+  "trialRestartConfirmTitle": "Dùng thử lại từ đầu?",
+  "@trialRestartConfirmTitle": {
+    "description": "Tiêu đề hộp thoại xác nhận dùng thử lại"
+  },
+  "trialRestartConfirmMessage": "Kết quả bài mẫu và bài kiểm tra trình độ dùng thử trên trình duyệt này sẽ bị xóa.",
+  "@trialRestartConfirmMessage": {
+    "description": "Nội dung hộp thoại xác nhận dùng thử lại"
+  },
+  "trialAccountRequiredTitle": "Cần có tài khoản",
+  "@trialAccountRequiredTitle": {
+    "description": "Tiêu đề màn hình giải thích cần tài khoản"
+  },
+  "trialAccountRequiredBody": "{feature} cần tài khoản để lưu lộ trình và tiến độ học của bạn. Đăng ký miễn phí chỉ mất vài giây; kết quả dùng thử trên trình duyệt này sẽ được mang sang.",
+  "@trialAccountRequiredBody": {
+    "description": "Giải thích vì sao tính năng cần tài khoản",
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "trialBackToTrial": "Quay lại dùng thử",
+  "@trialBackToTrial": {
+    "description": "Nút quay lại trang dùng thử"
+  },
+  "trialNoContent": "Chưa có nội dung dùng thử.",
+  "@trialNoContent": {
+    "description": "Thông báo khi không có đơn vị dùng thử"
+  },
+  "trialUnitProgress": "Bài {current}/{total}: {title}",
+  "@trialUnitProgress": {
+    "description": "Tiêu đề đơn vị bài mẫu đang học",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trialUnitDoneHeading": "Hoàn thành: {title}",
+  "@trialUnitDoneHeading": {
+    "description": "Tiêu đề khi xong một đơn vị",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trialUnitDoneScore": "Đúng {correct}/{total} câu",
+  "@trialUnitDoneScore": {
+    "description": "Số câu đúng của đơn vị",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trialNextUnit": "Sang bài tiếp theo",
+  "@trialNextUnit": {
+    "description": "Nút sang đơn vị tiếp theo"
+  },
+  "trialFinishedHeading": "Bạn đã học hết nội dung dùng thử!",
+  "@trialFinishedHeading": {
+    "description": "Tiêu đề màn hình hết nội dung dùng thử"
+  },
+  "trialFinishedBody": "Đăng ký để nhận lộ trình riêng, bài học hằng ngày vừa quỹ thời gian và ôn tập đúng lúc sắp quên.",
+  "@trialFinishedBody": {
+    "description": "Lời mời đăng ký khi hết nội dung dùng thử"
+  },
+  "trialFinishedScore": "Tổng kết: đúng {correct}/{total} câu",
+  "@trialFinishedScore": {
+    "description": "Tổng số câu đúng của bài mẫu",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trialPlacementNote": "Kết quả này chỉ lưu trên trình duyệt này. Khi đăng ký, bài làm của bạn được chấm lại để gợi ý lộ trình.",
+  "@trialPlacementNote": {
+    "description": "Ghi chú dưới kết quả kiểm tra dùng thử"
+  },
+  "trialPlacementRegister": "Đăng ký để nhận lộ trình theo trình độ này",
+  "@trialPlacementRegister": {
+    "description": "Nút đăng ký sau khi có kết quả kiểm tra dùng thử"
+  },
+  "trialPlacementDiscard": "Bỏ kết quả và làm lại",
+  "@trialPlacementDiscard": {
+    "description": "Nút bỏ kết quả kiểm tra dùng thử để làm lại"
+  },
+  "trialPlacementBack": "Quay lại trang dùng thử",
+  "@trialPlacementBack": {
+    "description": "Nút quay lại trang dùng thử từ kết quả kiểm tra"
+  }
+}

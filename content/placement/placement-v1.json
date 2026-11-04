@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/placement.schema.json",
+  "version": "placement-v1",
+  "timeLimitSeconds": 600,
+  "questions": [
+    { "position": 1, "level": "N5", "skill": "vocabulary", "topic": "numbers", "prompt": "「三」はどう読みますか。", "choices": ["よん", "ご", "さん", "ろく"], "correctChoice": 2 },
+    { "position": 2, "level": "N5", "skill": "vocabulary", "topic": "food-drink", "prompt": "「水」はどう読みますか。", "choices": ["かわ", "みず", "ひ", "やま"], "correctChoice": 1 },
+    { "position": 3, "level": "N5", "skill": "vocabulary", "topic": "greetings", "prompt": "朝、会ったときの挨拶はどれですか。", "choices": ["こんばんは", "おやすみなさい", "さようなら", "おはようございます"], "correctChoice": 3 },
+    { "position": 4, "level": "N5", "skill": "vocabulary", "topic": "food-drink", "prompt": "「お茶」はどう読みますか。", "choices": ["おちゃ", "おみず", "おさけ", "おかし"], "correctChoice": 0 },
+    { "position": 5, "level": "N5", "skill": "grammar", "topic": "desu-wa", "prompt": "私＿＿学生です。", "choices": ["を", "は", "で", "に"], "correctChoice": 1 },
+    { "position": 6, "level": "N5", "skill": "grammar", "topic": "particles", "prompt": "パン＿＿食べます。", "choices": ["を", "で", "に", "へ"], "correctChoice": 0 },
+    { "position": 7, "level": "N5", "skill": "grammar", "topic": "particles", "prompt": "七時＿＿起きます。", "choices": ["で", "を", "が", "に"], "correctChoice": 3 },
+    { "position": 8, "level": "N5", "skill": "grammar", "topic": "verbs-masu", "prompt": "昨日、映画を＿＿。", "choices": ["見ます", "見ません", "見ました", "見る"], "correctChoice": 2 },
+
+    { "position": 9, "level": "N4", "skill": "vocabulary", "topic": "transport-places", "prompt": "「駅」はどう読みますか。", "choices": ["えき", "えい", "いき", "えん"], "correctChoice": 0 },
+    { "position": 10, "level": "N4", "skill": "vocabulary", "topic": "health-body", "prompt": "「病院」はどう読みますか。", "choices": ["ひょういん", "びょうえん", "びょういん", "ひょうえん"], "correctChoice": 2 },
+    { "position": 11, "level": "N4", "skill": "grammar", "topic": "te-form", "prompt": "本を読ん＿＿、寝ました。", "choices": ["て", "で", "だ", "た"], "correctChoice": 1 },
+    { "position": 12, "level": "N4", "skill": "grammar", "topic": "te-form", "prompt": "ちょっと待っ＿＿ください。", "choices": ["で", "て", "った", "ない"], "correctChoice": 1 },
+    { "position": 13, "level": "N4", "skill": "grammar", "topic": "comparison", "prompt": "犬＿＿猫のほうが好きです。", "choices": ["から", "まで", "だけ", "より"], "correctChoice": 3 },
+    { "position": 14, "level": "N4", "skill": "grammar", "topic": "comparison", "prompt": "クラスで＿＿背が高いです。", "choices": ["もっと", "ずっと", "いちばん", "だいたい"], "correctChoice": 2 },
+
+    { "position": 15, "level": "N3", "skill": "vocabulary", "topic": "work-office", "prompt": "「会議」はどう読みますか。", "choices": ["かいぎ", "かいき", "えぎ", "かいぎょう"], "correctChoice": 0 },
+    { "position": 16, "level": "N3", "skill": "vocabulary", "topic": "society-news", "prompt": "「経済」はどう読みますか。", "choices": ["きょうざい", "けいざい", "けいさい", "けいぜい"], "correctChoice": 1 },
+    { "position": 17, "level": "N3", "skill": "grammar", "topic": "passive-causative", "prompt": "子どもの頃、よく母に叱＿＿。", "choices": ["させました", "れました", "られました", "せました"], "correctChoice": 2 },
+    { "position": 18, "level": "N3", "skill": "grammar", "topic": "passive-causative", "prompt": "上司は部下に報告書を書か＿＿。（部下に書くように命じた）", "choices": ["れました", "ました", "せました", "なかった"], "correctChoice": 2 },
+    { "position": 19, "level": "N3", "skill": "grammar", "topic": "conditionals-reason", "prompt": "雨が降っ＿＿、試合は中止になります。", "choices": ["たら", "ても", "ながら", "ので"], "correctChoice": 0 },
+    { "position": 20, "level": "N3", "skill": "grammar", "topic": "conditionals-reason", "prompt": "薬を飲んだ＿＿、熱が下がりました。", "choices": ["せいで", "おかげで", "くせに", "ばかりに"], "correctChoice": 1 }
+  ]
+}

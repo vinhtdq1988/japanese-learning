@@ -1,0 +1,162 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N5",
+  "tier": "foundation",
+  "topic": "greetings",
+  "title": { "vi": "Chào hỏi cơ bản", "en": "Basic greetings" },
+  "goalTags": ["daily_conversation", "work", "jlpt"],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 10,
+  "isTrial": true,
+  "items": [
+    {
+      "japanese": "おはようございます",
+      "reading": "おはようございます",
+      "meaning": { "vi": "Chào buổi sáng", "en": "Good morning" },
+      "examples": [
+        {
+          "ja": "おはようございます。今日もよろしくお願いします。",
+          "reading": "おはようございます。きょうもよろしくおねがいします。",
+          "translation": {
+            "vi": "Chào buổi sáng. Hôm nay cũng xin nhờ anh/chị giúp đỡ.",
+            "en": "Good morning. I look forward to working with you today."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "こんにちは",
+      "reading": "こんにちは",
+      "meaning": { "vi": "Xin chào (ban ngày)", "en": "Hello (daytime)" },
+      "examples": [
+        {
+          "ja": "こんにちは、田中さん。",
+          "reading": "こんにちは、たなかさん。",
+          "translation": { "vi": "Xin chào anh/chị Tanaka.", "en": "Hello, Mr./Ms. Tanaka." }
+        }
+      ]
+    },
+    {
+      "japanese": "ありがとうございます",
+      "reading": "ありがとうございます",
+      "meaning": { "vi": "Cảm ơn (lịch sự)", "en": "Thank you (polite)" },
+      "examples": [
+        {
+          "ja": "手伝ってくれて、ありがとうございます。",
+          "reading": "てつだってくれて、ありがとうございます。",
+          "translation": { "vi": "Cảm ơn bạn đã giúp đỡ.", "en": "Thank you for helping me." }
+        }
+      ]
+    },
+    {
+      "japanese": "すみません",
+      "reading": "すみません",
+      "meaning": { "vi": "Xin lỗi; xin phép cho hỏi", "en": "Excuse me; sorry" },
+      "examples": [
+        {
+          "ja": "すみません、駅はどこですか。",
+          "reading": "すみません、えきはどこですか。",
+          "translation": { "vi": "Xin lỗi, nhà ga ở đâu ạ?", "en": "Excuse me, where is the station?" }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "おはようございます",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「おはようございます」dùng vào lúc nào?",
+        "en": "When do you use 「おはようございます」?"
+      },
+      "payload": {
+        "choices": [
+          { "vi": "Buổi sáng", "en": "In the morning" },
+          { "vi": "Buổi tối trước khi đi ngủ", "en": "At night before going to bed" },
+          { "vi": "Khi cảm ơn", "en": "When thanking someone" },
+          { "vi": "Khi tạm biệt", "en": "When saying goodbye" }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おはようございます」là lời chào buổi sáng.",
+        "en": "Correct! 「おはようございます」 is the morning greeting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おはようございます」là lời chào buổi sáng.",
+        "en": "Not quite. 「おはようございます」 is the morning greeting."
+      }
+    },
+    {
+      "item": "ありがとうございます",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「ありがとうございます」nghĩa là gì?",
+        "en": "What does 「ありがとうございます」 mean?"
+      },
+      "payload": {
+        "choices": [
+          { "vi": "Cảm ơn", "en": "Thank you" },
+          { "vi": "Xin lỗi", "en": "I'm sorry" },
+          { "vi": "Xin chào", "en": "Hello" },
+          { "vi": "Tạm biệt", "en": "Goodbye" }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng rồi, đây là cách nói cảm ơn lịch sự.",
+        "en": "Right, this is the polite way to say thank you."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ありがとうございます」nghĩa là “Cảm ơn”.",
+        "en": "Not quite. 「ありがとうございます」 means “Thank you”."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": { "vi": "Ghép từ với nghĩa của nó.", "en": "Match each word with its meaning." },
+      "payload": {
+        "pairs": [
+          ["こんにちは", { "vi": "Xin chào (ban ngày)", "en": "Hello (daytime)" }],
+          ["すみません", { "vi": "Xin lỗi; xin phép", "en": "Excuse me; sorry" }],
+          ["ありがとうございます", { "vi": "Cảm ơn", "en": "Thank you" }]
+        ]
+      },
+      "feedbackCorrect": { "vi": "Ghép đúng cả ba cặp!", "en": "All three pairs are correct!" },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "すみません",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền vào chỗ trống bằng hiragana: 「___、駅はどこですか。」(Xin lỗi, nhà ga ở đâu ạ?)",
+        "en": "Fill in the blank in hiragana: 「___、駅はどこですか。」 (Excuse me, where is the station?)"
+      },
+      "payload": { "accepted_answers": ["すみません", "すいません"] },
+      "feedbackCorrect": { "vi": "Đúng! 「すみません」", "en": "Correct! 「すみません」" },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「すみません」(nói nhanh cũng có thể là 「すいません」).",
+        "en": "The answer is 「すみません」 (「すいません」 is also heard in casual speech)."
+      }
+    },
+    {
+      "item": "こんにちは",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ lời chào ban ngày bằng hiragana.",
+        "en": "Type the daytime greeting in hiragana."
+      },
+      "payload": { "accepted_answers": ["こんにちは"] },
+      "feedbackCorrect": { "vi": "Chính xác!", "en": "Exactly!" },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「こんにちは」(chữ cuối là は, đọc là わ).",
+        "en": "The answer is 「こんにちは」 (the last character is は, read as wa)."
+      }
+    }
+  ]
+}

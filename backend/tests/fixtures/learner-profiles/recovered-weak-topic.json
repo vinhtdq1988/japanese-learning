@@ -1,0 +1,51 @@
+{
+  "id": "recovered-weak-topic",
+  "description": "Mảng 'verbs-masu' từng yếu (độ chính xác < 60% với ≥ 8 câu) rồi hồi phục ≥ 70% → tự bỏ cờ yếu (FR-029).",
+  "asOf": "2026-01-08",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "work",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-07",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-02",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [0, 1, 0, 0, 1, 0, 0, 1, 0, 0]
+    },
+    {
+      "date": "2026-01-05",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [1, 0, 1, 1, 0, 1, 1, 1, 0, 1]
+    },
+    {
+      "date": "2026-01-07",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [1, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    }
+  ],
+  "reviewBacklog": [],
+  "expected": {
+    "difficulty": {
+      "topic": "verbs-masu",
+      "checkpoints": [
+        { "afterSession": 1, "recentAccuracy": 0.3, "isWeak": true },
+        { "afterSession": 2, "recentAccuracy": 0.5, "isWeak": true },
+        { "afterSession": 3, "recentAccuracy": 0.8, "isWeak": false }
+      ]
+    }
+  }
+}

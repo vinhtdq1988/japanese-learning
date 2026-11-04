@@ -4,8 +4,10 @@ publish_to: "none"
 version: 0.1.0+1
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  # >=3.8.0 phải khớp cận dưới SDK của gói API client sinh tự động (lib/data/api/generated, nằm trong lib/
+  # của gói này): hai gói khác language version thì trình biên dịch báo lỗi ở các file `part`.
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
 
 dependencies:
   flutter:
@@ -16,6 +18,11 @@ dependencies:
   go_router: ^14.2.0
   dio: ^5.5.0
   intl: any
+  # Truy cập API trình duyệt (localStorage, mở liên kết) qua lớp platform/web
+  web: ^1.0.0
+  # API client sinh từ contracts/openapi.yaml (xem lib/data/api/README.md)
+  japanese_api:
+    path: lib/data/api/generated
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +30,8 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  # Chạy `dart run build_runner build` để sinh mã json_serializable cho API client
+  build_runner: ^2.4.0
 
 flutter:
   uses-material-design: true

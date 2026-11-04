@@ -1,0 +1,717 @@
+{
+  "@@locale": "en",
+  "appTitle": "Learn Japanese",
+  "actionContinue": "Continue",
+  "actionBack": "Back",
+  "actionCancel": "Cancel",
+  "actionConfirm": "Confirm",
+  "actionSave": "Save",
+  "actionClose": "Close",
+  "actionRetry": "Try again",
+  "actionSignIn": "Sign in",
+  "actionRegister": "Sign up",
+  "actionSignOut": "Sign out",
+  "stateLoading": "Loading…",
+  "stateEmptyTitle": "Nothing here yet",
+  "stateErrorTitle": "Something went wrong",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorNetwork": "Can't reach the server. Check your connection and try again.",
+  "errorSessionExpired": "Your session has expired. Please sign in again.",
+  "errorForbidden": "You don't have permission to do this.",
+  "errorNotFound": "The requested content could not be found.",
+  "errorValidation": "Some information isn't valid. Please check the fields.",
+  "errorRateLimited": "You're going too fast. Please try again in {seconds} seconds.",
+  "errorAccountDisabled": "Your account has been disabled. Please contact an administrator.",
+  "errorAccountPendingDeletion": "Your account is scheduled for deletion. You can restore it within 30 days.",
+  "navToday": "Today",
+  "navPath": "Path",
+  "navProgress": "Progress",
+  "navProfile": "Profile",
+  "navAdmin": "Admin",
+  "languageLabel": "Language",
+  "languageVietnamese": "Tiếng Việt",
+  "languageEnglish": "English",
+  "screenUnderConstruction": "This screen will arrive in the next implementation steps.",
+  "minutesShort": "{minutes} min",
+  "@minutesShort": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "statusPending": "Not started",
+  "statusInProgress": "In progress",
+  "statusCompleted": "Done",
+  "statusMastered": "Mastered",
+  "skillVocabulary": "Vocabulary",
+  "skillGrammar": "Grammar",
+  "scopeNoticeContentCeiling": "Current content only goes up to N3. Your path will use N3 as the highest level, and goal progress is measured on this content.",
+  "landingHeadline": "Learn Japanese in 5–15 minutes a day",
+  "landingSubtitle": "A path made for you, short lessons that fit your time, and reviews right before you forget.",
+  "authEmailLabel": "Email",
+  "authPasswordLabel": "Password",
+  "authNewPasswordLabel": "New password",
+  "authDisplayNameLabel": "Display name",
+  "authEmailRequired": "Please enter your email.",
+  "authEmailInvalid": "That email address is not valid.",
+  "authPasswordRequired": "Please enter your password.",
+  "authPasswordTooShort": "Your password must be at least {min} characters.",
+  "@authPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "authPasswordHelper": "At least {min} characters; avoid common passwords.",
+  "@authPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "authDisplayNameRequired": "Please enter a display name.",
+  "authDisplayNameTooLong": "Display name can be at most {max} characters.",
+  "@authDisplayNameTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "authLoginTitle": "Sign in",
+  "authRegisterTitle": "Create an account",
+  "authRegisterSubtitle": "Just an email and a password — no email verification needed.",
+  "authForgotPasswordLink": "Forgot your password?",
+  "authNoAccountRegister": "No account yet? Register",
+  "authHaveAccountSignIn": "Already have an account? Sign in",
+  "authBackToSignIn": "Back to sign in",
+  "authErrorInvalidCredentials": "Incorrect email or password.",
+  "authErrorEmailTaken": "This email is already in use.",
+  "authErrorEmailPendingDeletion": "This email belongs to an account that is pending deletion.",
+  "authPendingDeletionHint": "You can sign in to restore that account within 30 days of requesting deletion.",
+  "authSignInToRestore": "Sign in to restore",
+  "authErrorResetTokenInvalid": "This password reset link has expired or was already used. Please request a new one.",
+  "authForgotPasswordTitle": "Forgot password",
+  "authForgotPasswordSubtitle": "Enter your email and we will send you a password reset link (valid for 1 hour).",
+  "authSendResetLink": "Send reset link",
+  "authResetEmailSent": "If an account exists for this email, we have sent a reset link. Please check your inbox (and spam folder).",
+  "authResetTitle": "Reset password",
+  "authResetSubtitle": "Choose a new password for your account.",
+  "authResetSubmit": "Set new password",
+  "authResetDoneTitle": "Password changed",
+  "authResetDoneMessage": "Your password has been changed. All previous sessions were signed out; please sign in again.",
+  "authRequestNewLink": "Request a new link",
+  "onboardingTitle": "Set up your path",
+  "onboardingStepProgress": "Step {current} of {total}",
+  "@onboardingStepProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingRestart": "Start over",
+  "onboardingFinish": "Start learning",
+  "onboardingLevelQuestion": "What is your current Japanese level?",
+  "onboardingLevelNone": "Complete beginner",
+  "onboardingLevelN5": "N5 – Beginner",
+  "onboardingLevelN4": "N4 – Upper beginner",
+  "onboardingLevelN3": "N3 – Intermediate",
+  "onboardingLevelN2": "N2 – Upper intermediate",
+  "onboardingLevelN1": "N1 – Advanced",
+  "onboardingGoalQuestion": "What is your learning goal?",
+  "onboardingGoalDailyConversation": "Everyday conversation",
+  "onboardingGoalWork": "Use at work",
+  "onboardingGoalJlpt": "Pass the JLPT",
+  "onboardingTargetLevelQuestion": "Which JLPT level do you want to reach?",
+  "onboardingTimeQuestion": "How much time can you study each day?",
+  "onboardingTimeHint": "Your daily plan will never exceed this time.",
+  "onboardingMinutesOption": "{minutes} minutes a day",
+  "@onboardingMinutesOption": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingDeadlineQuestion": "When do you want to reach your goal?",
+  "onboardingDeadlineHint": "Optional. A deadline helps us tell whether you are on track.",
+  "onboardingDeadlinePick": "Pick a date",
+  "onboardingDeadlineSelected": "Deadline: {date}",
+  "@onboardingDeadlineSelected": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingDeadlineNone": "No deadline",
+  "onboardingSkillsQuestion": "Which skills do you want to improve?",
+  "onboardingSkillVocabulary": "Vocabulary",
+  "onboardingSkillGrammar": "Grammar",
+  "onboardingSkillListening": "Listening",
+  "onboardingSkillReading": "Reading",
+  "onboardingSkillKanji": "Kanji",
+  "onboardingSkillLocked": "Not available in this version yet",
+  "onboardingPlacementTitle": "Level check (optional)",
+  "onboardingPlacementIntro": "A 20-question check helps pick a more accurate starting point. You can skip it; your path will still be built from what you told us.",
+  "onboardingPlacementCarriedTitle": "Your level check result",
+  "onboardingPlacementDiscard": "Discard this result",
+  "onboardingPlacementDiscarded": "Result discarded. Your path will not use it.",
+  "onboardingPlacementUseResult": "Use this result again",
+  "onboardingPlacementTake": "Take the level check",
+  "onboardingPlacementRetake": "Retake the level check",
+  "onboardingPlacementUsingHint": "Your path will use the result above.",
+  "onboardingPlacementSkipHint": "Skipping is fine: press \"Start learning\" to build your path from what you told us.",
+  "placementTitle": "Level check",
+  "placementIntroTitle": "Ready for the check?",
+  "placementIntroBody": "{count} vocabulary and grammar questions, up to {minutes} minutes. You can skip at any time.",
+  "@placementIntroBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "placementStart": "Start",
+  "placementSkip": "Skip",
+  "placementQuestionProgress": "Question {current} of {total}",
+  "@placementQuestionProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementTimeLeft": "Time left",
+  "placementSubmit": "Submit ({answered}/{total} answered)",
+  "@placementSubmit": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementSubmitting": "Grading…",
+  "placementResultTitle": "Your result",
+  "placementLevelBeginner": "You will start with the beginner foundations",
+  "placementLevelEstimated": "Estimated level: {level}",
+  "@placementLevelEstimated": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "placementScore": "Score: {score}/{total}",
+  "@placementScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "placementGuessNote": "Many answers look random, so the result is treated as a safe beginner start.",
+  "placementStrongTopics": "Strong areas",
+  "placementWeakTopics": "Areas to work on",
+  "placementNoTopics": "Not enough data",
+  "placementRetakeChoice": "What would you like to do with the new result?",
+  "placementRetakeChoiceHint": "Your study history and review schedule are kept either way.",
+  "placementRebuildPath": "Rebuild my path from this result",
+  "placementKeepPath": "Keep my current path",
+  "placementRebuildConfirmTitle": "Rebuild your path?",
+  "placementRebuildConfirmMessage": "The new path will replace your current one. Your history and review schedule are not affected.",
+  "pathHeading": "Your path",
+  "pathStartBeginner": "Starting point: beginner foundations",
+  "pathStartLevel": "Starting point: {level}",
+  "@pathStartLevel": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pathReasonOnboarding": "Built from what you told us at the start",
+  "pathReasonRebuild": "Rebuilt at your request",
+  "pathReasonGoalChange": "Updated after you changed your goal",
+  "pathReasonLevelChange": "Updated after you changed your level",
+  "pathReasonPlacementRetake": "Updated from your new level check",
+  "pathProgress": "{completed} of {total} units done",
+  "@pathProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pathEmptyTitle": "No matching units yet",
+  "pathEmptyMessage": "There is no content matching your level and skills yet. New content will appear here as it is added.",
+  "pathRetakePlacement": "Retake the level check",
+  "todayHeading": "Today's plan",
+  "todayTimeSummary": "About {estimated} of {budget} minutes",
+  "@todayTimeSummary": {
+    "placeholders": {
+      "estimated": {
+        "type": "int"
+      },
+      "budget": {
+        "type": "int"
+      }
+    }
+  },
+  "todayTypeNew": "New lesson",
+  "todayTypeReview": "Review",
+  "todayReviewItemCount": "{count} items to review",
+  "@todayReviewItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayViewPath": "View your path",
+  "todayEmptyTitle": "Nothing planned for today",
+  "todayEmptyMessage": "You have no lessons in today's plan.",
+  "todayNoticeContentExhausted": "You have finished all matching content and have no reviews due. New content will appear as it is added.",
+  "todayNoticeNoFittingUnit": "The remaining lessons are longer than your time for today. Increase your daily time in settings to continue.",
+  "todayNoticeReplanned": "Your plan was adjusted after some days away, to a manageable amount.",
+  "todayPausedTitle": "Your path is paused",
+  "todayPausedMessage": "Your daily plan returns when you resume. Paused days are not counted as missed.",
+  "lessonIntroHeading": "What you will learn",
+  "lessonStartExercises": "Start exercises",
+  "lessonReading": "Reading: {reading}",
+  "@lessonReading": {
+    "placeholders": {
+      "reading": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonExplanationLabel": "Explanation",
+  "lessonExamplesLabel": "Examples",
+  "lessonProgress": "Question {current} of {total}",
+  "@lessonProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonRetryHeading": "Try the missed ones again",
+  "lessonRetryIntro": "Try the questions you missed again. This round does not count toward your score.",
+  "lessonCheck": "Check",
+  "lessonContinue": "Continue",
+  "lessonFinish": "Finish lesson",
+  "lessonCorrect": "Correct!",
+  "lessonIncorrect": "Not quite",
+  "lessonCorrectAnswer": "Correct answer: {answer}",
+  "@lessonCorrectAnswer": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonFillBlankLabel": "Your answer",
+  "lessonMatchingInstruction": "Pick an item on the left, then its match on the right.",
+  "lessonMatchingReset": "Reset",
+  "lessonOfflineTitle": "Your answer has not been sent",
+  "lessonOfflineMessage": "You are offline. Your answer is saved on this device and will not be lost; try sending it again.",
+  "lessonRetrySend": "Send again",
+  "lessonCompleteOffline": "Your results could not be saved yet, so the lesson is not complete. Check your connection and try again.",
+  "lessonSummaryHeading": "Lesson complete!",
+  "lessonSummaryScore": "You answered {correct} of {total} correctly",
+  "@lessonSummaryScore": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonSummaryTime": "Study time: {minutes} min",
+  "@lessonSummaryTime": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonSummaryDayDone": "You have finished today's plan. Well done!",
+  "lessonBackToToday": "Back to Today",
+  "lessonUnavailable": "This lesson is no longer available.",
+  "lessonEmpty": "This lesson has no exercises yet.",
+  "todayStart": "Start",
+  "todayContinue": "Continue",
+  "todayDayCompletedTitle": "You have finished today's plan",
+  "todayDayCompletedSummary": "{correct} of {total} correct · {minutes} min",
+  "@todayDayCompletedSummary": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "todayStudyMore": "Study more",
+  "todayExtraRaiseLevel": "You have finished the content at your current level. Raise your level or retake the placement test to keep going.",
+  "todayExtraAddSkill": "You have finished the content for your chosen skills. Add another skill to keep going.",
+  "todayExtraExhausted": "You have finished all the content available in this version. New content will appear as it is added.",
+  "reviewNextDate": "Next review: {date}",
+  "@reviewNextDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryHeading": "Review complete!",
+  "reviewSummaryScore": "You remembered {correct} of {total} items",
+  "@reviewSummaryScore": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryHint": "Items you remember well come back after a longer gap; items you missed return sooner.",
+  "reviewEmpty": "These review items are no longer available.",
+  "reviewFinish": "Close review",
+  "progressHeading": "Your progress",
+  "progressEmptyTitle": "No progress yet",
+  "progressEmptyMessage": "Finish your first lesson on Today and your study numbers will show up here.",
+  "progressEmptyAction": "Go to Today",
+  "progressStudyTime": "Time studied",
+  "progressMinutesValue": "{minutes} min",
+  "@progressMinutesValue": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "progressLessons": "Lessons completed",
+  "progressReviewAccuracy": "Review accuracy",
+  "progressReviewAccuracyNone": "No reviews yet",
+  "progressStreak": "Study streak",
+  "progressStreakDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@progressStreakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "progressStreakHint": "Days when your path is paused do not break the streak.",
+  "progressGoalHeading": "Progress toward your goal",
+  "progressGoalCompletion": "{percent}% of your goal content is done",
+  "@progressGoalCompletion": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "progressGoalOnTrack": "You are on track for your deadline.",
+  "progressGoalBehind": "You are behind schedule for your deadline. Try studying longer each day or moving the deadline.",
+  "progressGoalNoDeadline": "You have not set a deadline. Add one in plan settings to see whether you are on track.",
+  "progressGoalTargetDate": "Deadline: {date}",
+  "@progressGoalTargetDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "progressWeakHeading": "Areas to practice",
+  "progressWeakNone": "No weak areas right now. Keep going!",
+  "progressWeakAccuracy": "{percent}% correct recently",
+  "@progressWeakAccuracy": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "progressAdjustPlan": "Adjust your plan",
+  "todayViewProgress": "View your progress",
+  "todayResumePath": "Resume your path",
+  "pathAdjustPlan": "Adjust your plan",
+  "pathMarkMastered": "I know this",
+  "pathUnmarkMastered": "Unmark",
+  "pathMasteredSnack": "Marked \"{title}\" as mastered",
+  "@pathMasteredSnack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "pathUnmasteredSnack": "Removed the mastered mark from \"{title}\"",
+  "@pathUnmasteredSnack": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "pathMasterLastTitle": "Mark the last remaining unit?",
+  "pathMasterLastMessage": "This is the last unit left. Once you mark it, your path will have no new lessons.",
+  "pathSuggestionRaiseTitle": "You have run out of new lessons at your level",
+  "pathSuggestionRaiseMessage": "There is more content at a higher level. You can raise your level or retake the level check.",
+  "pathSuggestionRaiseAction": "Move up to {level}",
+  "@pathSuggestionRaiseAction": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pathSuggestionExhaustedTitle": "You have finished all current content",
+  "pathSuggestionExhaustedMessage": "This version only has content up to N3. New content will appear as it is added; meanwhile you can keep reviewing.",
+  "planAdjustTitle": "Adjust your plan",
+  "planAdjustIntro": "Changes take effect from the next plan we create. Your study history and review schedule are always kept.",
+  "planAdjustGoalHeading": "Goal",
+  "planAdjustTargetLevel": "JLPT level to reach",
+  "planAdjustDeadline": "Deadline",
+  "planAdjustDeadlineClear": "Remove deadline",
+  "planAdjustApplyGoal": "Apply goal",
+  "planAdjustGoalSaved": "Goal updated. A new path was created and your history was kept.",
+  "planAdjustTimeHeading": "Time per day",
+  "planAdjustTimeSaved": "Daily time updated. It applies from the next plan.",
+  "planAdjustSkillHeading": "Priority skill",
+  "planAdjustSkillHint": "A priority skill shows up earlier in your new lessons.",
+  "planAdjustSkillNone": "No priority",
+  "planAdjustSkillSaved": "Priority skill updated. It applies from the next plan.",
+  "planAdjustPauseHeading": "Pause",
+  "planAdjustPauseMessage": "While paused, no new plans are created and no days count as missed. You can resume any time.",
+  "planAdjustPauseButton": "Pause my path",
+  "planAdjustPausedStatus": "Your path is paused",
+  "planAdjustResumeButton": "Resume my path",
+  "planAdjustPaused": "Your path is paused.",
+  "planAdjustResumed": "Your path is back on.",
+  "planAdjustMasteredHeading": "Content you already know",
+  "planAdjustMasteredHint": "Want to skip a unit you already know? Mark it as mastered right on the Path screen.",
+  "planAdjustRebuildHeading": "Rebuild",
+  "planAdjustRebuildMessage": "Create a fresh path from your current profile. Your history and review schedule are not affected.",
+  "planAdjustRebuildButton": "Rebuild my path",
+  "planAdjustRebuildConfirmTitle": "Rebuild your path?",
+  "planAdjustRebuildConfirmMessage": "The new path will replace your current one. Your history and review schedule are not affected.",
+  "planAdjustRebuilt": "Your path was rebuilt.",
+  "landingTrial": "Try it without signing up",
+  "@landingTrial": {
+    "description": "Nút dùng thử ở trang đầu"
+  },
+  "trialTitle": "Free trial",
+  "@trialTitle": {
+    "description": "Tiêu đề các màn hình dùng thử"
+  },
+  "trialHomeHeadline": "Try it free, no sign-up needed",
+  "@trialHomeHeadline": {
+    "description": "Tiêu đề trang dùng thử"
+  },
+  "trialHomeIntro": "Take a short sample lesson (about {minutes} minutes) and a placement test. We do not store any identifying information about you.",
+  "@trialHomeIntro": {
+    "description": "Giới thiệu trang dùng thử",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "trialStartLesson": "Start the sample lesson",
+  "@trialStartLesson": {
+    "description": "Nút bắt đầu bài mẫu"
+  },
+  "trialContinueLesson": "Continue the sample lesson",
+  "@trialContinueLesson": {
+    "description": "Nút tiếp tục bài mẫu dở dang"
+  },
+  "trialLessonDoneAction": "See sample lesson results",
+  "@trialLessonDoneAction": {
+    "description": "Nút xem kết quả khi đã học xong bài mẫu"
+  },
+  "trialPlacementCardTitle": "Placement test",
+  "@trialPlacementCardTitle": {
+    "description": "Tiêu đề khối kiểm tra trình độ"
+  },
+  "trialPlacementCardBody": "20 questions, up to 10 minutes. Your answers carry over when you sign up in this same browser.",
+  "@trialPlacementCardBody": {
+    "description": "Mô tả khối kiểm tra trình độ"
+  },
+  "trialPlacementTake": "Take the placement test",
+  "@trialPlacementTake": {
+    "description": "Nút làm kiểm tra trình độ"
+  },
+  "trialPlacementViewResult": "View placement result",
+  "@trialPlacementViewResult": {
+    "description": "Nút xem lại kết quả kiểm tra đã làm"
+  },
+  "trialLockedHeading": "Available when you sign up",
+  "@trialLockedHeading": {
+    "description": "Tiêu đề danh sách tính năng cần tài khoản"
+  },
+  "trialLockedPath": "Personal learning path",
+  "@trialLockedPath": {
+    "description": "Tên tính năng lộ trình"
+  },
+  "trialLockedToday": "Daily plan",
+  "@trialLockedToday": {
+    "description": "Tên tính năng kế hoạch hằng ngày"
+  },
+  "trialLockedReview": "Spaced review",
+  "@trialLockedReview": {
+    "description": "Tên tính năng ôn tập"
+  },
+  "trialLockedProgress": "Progress tracking",
+  "@trialLockedProgress": {
+    "description": "Tên tính năng tiến độ"
+  },
+  "trialRegisterCta": "Sign up for free",
+  "@trialRegisterCta": {
+    "description": "Nút đăng ký trong luồng dùng thử"
+  },
+  "trialRestart": "Start the trial over",
+  "@trialRestart": {
+    "description": "Nút dùng thử lại từ đầu"
+  },
+  "trialRestartConfirmTitle": "Start the trial over?",
+  "@trialRestartConfirmTitle": {
+    "description": "Tiêu đề hộp thoại xác nhận dùng thử lại"
+  },
+  "trialRestartConfirmMessage": "The sample lesson and placement test results saved in this browser will be cleared.",
+  "@trialRestartConfirmMessage": {
+    "description": "Nội dung hộp thoại xác nhận dùng thử lại"
+  },
+  "trialAccountRequiredTitle": "An account is required",
+  "@trialAccountRequiredTitle": {
+    "description": "Tiêu đề màn hình giải thích cần tài khoản"
+  },
+  "trialAccountRequiredBody": "{feature} needs an account to save your path and progress. Signing up is free and takes seconds; your trial results in this browser carry over.",
+  "@trialAccountRequiredBody": {
+    "description": "Giải thích vì sao tính năng cần tài khoản",
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "trialBackToTrial": "Back to the trial",
+  "@trialBackToTrial": {
+    "description": "Nút quay lại trang dùng thử"
+  },
+  "trialNoContent": "There is no trial content yet.",
+  "@trialNoContent": {
+    "description": "Thông báo khi không có đơn vị dùng thử"
+  },
+  "trialUnitProgress": "Lesson {current}/{total}: {title}",
+  "@trialUnitProgress": {
+    "description": "Tiêu đề đơn vị bài mẫu đang học",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trialUnitDoneHeading": "Done: {title}",
+  "@trialUnitDoneHeading": {
+    "description": "Tiêu đề khi xong một đơn vị",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trialUnitDoneScore": "{correct}/{total} correct",
+  "@trialUnitDoneScore": {
+    "description": "Số câu đúng của đơn vị",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trialNextUnit": "Next lesson",
+  "@trialNextUnit": {
+    "description": "Nút sang đơn vị tiếp theo"
+  },
+  "trialFinishedHeading": "You have finished the trial content!",
+  "@trialFinishedHeading": {
+    "description": "Tiêu đề màn hình hết nội dung dùng thử"
+  },
+  "trialFinishedBody": "Sign up for a personal path, daily lessons that fit your time, and reviews right before you forget.",
+  "@trialFinishedBody": {
+    "description": "Lời mời đăng ký khi hết nội dung dùng thử"
+  },
+  "trialFinishedScore": "Overall: {correct}/{total} correct",
+  "@trialFinishedScore": {
+    "description": "Tổng số câu đúng của bài mẫu",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trialPlacementNote": "This result is only kept in this browser. When you sign up, your answers are re-graded to suggest a path.",
+  "@trialPlacementNote": {
+    "description": "Ghi chú dưới kết quả kiểm tra dùng thử"
+  },
+  "trialPlacementRegister": "Sign up to get a path for this level",
+  "@trialPlacementRegister": {
+    "description": "Nút đăng ký sau khi có kết quả kiểm tra dùng thử"
+  },
+  "trialPlacementDiscard": "Discard result and retake",
+  "@trialPlacementDiscard": {
+    "description": "Nút bỏ kết quả kiểm tra dùng thử để làm lại"
+  },
+  "trialPlacementBack": "Back to the trial page",
+  "@trialPlacementBack": {
+    "description": "Nút quay lại trang dùng thử từ kết quả kiểm tra"
+  }
+}
