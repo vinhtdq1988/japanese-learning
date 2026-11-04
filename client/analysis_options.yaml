@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    # Mã sinh tự động (l10n, API client) không phải lint
+    - "lib/l10n/app_localizations*.dart"
+    - "lib/data/api/generated/**"
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    always_declare_return_types: true

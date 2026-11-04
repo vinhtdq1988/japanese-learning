@@ -1,0 +1,29 @@
+# Node.js / TypeScript (backend)
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+
+# Dart / Flutter (client)
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+client/build/
+client/pubspec.lock
+# Mã l10n sinh tự động từ ARB
+client/lib/l10n/app_localizations*.dart
+
+# k6 / báo cáo đo tải cục bộ
+*.k6.json
+
+# Hệ điều hành / trình soạn thảo
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+.vscode/

@@ -33,12 +33,12 @@ description: "Danh sách task triển khai Giai đoạn 1 – MVP (Ứng dụng 
 
 **Mục đích**: Khởi tạo dự án và cấu trúc thư mục
 
-- [ ] T001 Tạo cấu trúc thư mục theo plan.md: `backend/src/{api,engine,domain,db,services,jobs,reports,seed}`, `backend/tests/{unit,contract,integration,load,fixtures/learner-profiles}`, `client/lib/{domain,data,platform/web,presentation,l10n}`, `content/{schema,units,placement}` (file `content/topics.json` do T027 tạo)
-- [ ] T002 Khởi tạo dự án backend Node.js 22 + TypeScript 5 với pnpm trong `backend/package.json`, `backend/tsconfig.json` (strict); thêm phụ thuộc: fastify, zod, drizzle-orm, pg, pg-boss, argon2, jose, nodemailer, @fastify/rate-limit, vitest, testcontainers
-- [ ] T003 [P] Khởi tạo dự án Flutter web trong `client/pubspec.yaml` với phụ thuộc: flutter_riverpod, go_router, dio, intl, flutter_localizations; bật `generate: true` cho l10n
-- [ ] T004 [P] Cấu hình ESLint + Prettier cho backend trong `backend/eslint.config.js`, `backend/.prettierrc`, và `flutter_lints` trong `client/analysis_options.yaml`
-- [ ] T005 [P] Tạo `docker-compose.yml` ở thư mục gốc với dịch vụ `db` (PostgreSQL 16), `mailpit` (chỉ dev, giao diện cổng 8025), `api`
-- [ ] T006 [P] Tạo `backend/.env.example` với các biến `DATABASE_URL`, `JWT_SECRET`, `SMTP_URL`, `APP_BASE_URL` và cấu hình ngưỡng (rate-limit, 60%/90% độ khó, `REVIEW_SECONDS_PER_ITEM` mặc định 30) kèm comment tiếng Việt
+- [X] T001 Tạo cấu trúc thư mục theo plan.md: `backend/src/{api,engine,domain,db,services,jobs,reports,seed}`, `backend/tests/{unit,contract,integration,load,fixtures/learner-profiles}`, `client/lib/{domain,data,platform/web,presentation,l10n}`, `content/{schema,units,placement}` (file `content/topics.json` do T027 tạo)
+- [X] T002 Khởi tạo dự án backend Node.js 22 + TypeScript 5 với pnpm trong `backend/package.json`, `backend/tsconfig.json` (strict); thêm phụ thuộc: fastify, zod, drizzle-orm, pg, pg-boss, argon2, jose, nodemailer, @fastify/rate-limit, vitest, testcontainers
+- [X] T003 [P] Khởi tạo dự án Flutter web trong `client/pubspec.yaml` với phụ thuộc: flutter_riverpod, go_router, dio, intl, flutter_localizations; bật `generate: true` cho l10n
+- [X] T004 [P] Cấu hình ESLint + Prettier cho backend trong `backend/eslint.config.js`, `backend/.prettierrc`, và `flutter_lints` trong `client/analysis_options.yaml`
+- [X] T005 [P] Tạo `docker-compose.yml` ở thư mục gốc với dịch vụ `db` (PostgreSQL 16), `mailpit` (chỉ dev, giao diện cổng 8025), `api`
+- [X] T006 [P] Tạo `backend/.env.example` với các biến `DATABASE_URL`, `JWT_SECRET`, `SMTP_URL`, `APP_BASE_URL` và cấu hình ngưỡng (rate-limit, 60%/90% độ khó, `REVIEW_SECONDS_PER_ITEM` mặc định 30) kèm comment tiếng Việt
 
 ---
 

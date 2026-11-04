@@ -1,0 +1,47 @@
+# Hạ tầng dev/triển khai cho ứng dụng học tiếng Nhật.
+# Dev: `docker compose up -d db mailpit`, chạy backend bằng `pnpm dev` ở máy chủ.
+# Đầy đủ: `docker compose --profile app up -d` (thêm dịch vụ `api`, cần backend/Dockerfile – T118).
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: japanese
+      POSTGRES_PASSWORD: japanese
+      POSTGRES_DB: japanese_learning
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U japanese -d japanese_learning"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Hộp thư thử nghiệm – CHỈ dùng cho dev (nhận email đặt lại mật khẩu), giao diện tại http://localhost:8025
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "1025:1025" # SMTP
+      - "8025:8025" # Giao diện web
+
+  api:
+    profiles: ["app"]
+    build:
+      context: ./backend
+    environment:
+      DATABASE_URL: postgres://japanese:japanese@db:5432/japanese_learning
+      # Giá trị mặc định CHỈ cho dev; production PHẢI đặt JWT_SECRET ngẫu nhiên qua kho bí mật
+      JWT_SECRET: ${JWT_SECRET:-dev-only-jwt-secret-doi-khi-trien-khai-that}
+      SMTP_URL: smtp://mailpit:1025
+      APP_BASE_URL: ${APP_BASE_URL:-http://localhost:8080}
+      PORT: "3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+
+volumes:
+  db_data:

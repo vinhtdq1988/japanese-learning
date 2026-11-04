@@ -1,0 +1,30 @@
+name: japanese_learning_client
+description: Ứng dụng web học tiếng Nhật cá nhân hóa (Flutter, web desktop trước) – Giai đoạn 1 MVP.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  go_router: ^14.2.0
+  dio: ^5.5.0
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # Bật sinh mã l10n từ các file ARB trong lib/l10n (xem l10n.yaml)
+  generate: true
