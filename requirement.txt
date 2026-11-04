@@ -1,0 +1,144 @@
+# ĐẶC TẢ TỔNG QUAN – HỆ THỐNG HỌC TIẾNG NHẬT
+
+## 1. Mục tiêu hệ thống
+
+Xây dựng một nền tảng học tiếng Nhật trực tuyến dành cho người đi làm, đặc biệt là nhân viên văn phòng có quỹ thời gian học tập hạn chế.
+
+Hệ thống tập trung vào:
+
+- Học tập linh hoạt, có thể hoàn thành các bài học ngắn trong khoảng 5–15 phút mỗi ngày.
+- Cá nhân hóa lộ trình học dựa trên trình độ, mục tiêu, năng lực và thời gian rảnh của từng người.
+- Theo dõi tiến độ và tự động điều chỉnh nội dung học để tối ưu hiệu quả.
+- Hỗ trợ học liên tục trên nhiều thiết bị trong tương lai.
+
+## 2. Nền tảng công nghệ
+
+| Hạng mục       | Đặc tả                                                                                         |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| Framework      | Flutter                                                                                        |
+| Giai đoạn 1    | Phát triển Web Application, ưu tiên triển khai và tối ưu trải nghiệm trên trình duyệt máy tính |
+| Giai đoạn 2    | Mở rộng Mobile App (Android/iOS) từ codebase Flutter hiện có                                   |
+| Backend        | REST API hoặc tương đương                                                                      |
+| Database       | Lưu trữ tài khoản, hồ sơ học tập, nội dung và tiến độ                                          |
+| Authentication | Đăng ký, đăng nhập, quản lý tài khoản                                                          |
+| Kiến trúc      | Tách biệt Frontend, Backend và Learning Content để dễ mở rộng                                  |
+
+Nguyên tắc: Thiết kế ngay từ đầu theo hướng Cross-platform, nhưng ưu tiên UX/UI cho Web ở giai đoạn đầu. Mobile chưa nằm trong phạm vi triển khai ban đầu.
+
+## 3. Đối tượng và phương pháp học
+
+Đối tượng: Nhân viên văn phòng, người đi làm, người có ít thời gian học cố định mỗi ngày.
+
+Phương pháp học:
+
+- Micro-learning: Chia nội dung thành các bài học ngắn 5–15 phút.
+- Spaced Repetition: Ôn tập từ vựng theo chu kỳ ghi nhớ.
+- Learning by Doing: Kết hợp đọc, nghe, viết và luyện tập.
+- Adaptive Learning: Điều chỉnh nội dung và độ khó theo kết quả học tập.
+- Daily Learning: Khuyến khích duy trì thói quen học mỗi ngày.
+
+## 4. Các chức năng chính
+
+| Module                | Chức năng            | Mô tả                                             |
+| --------------------- | -------------------- | ------------------------------------------------- |
+| User Management       | Quản lý tài khoản    | Đăng ký, đăng nhập, hồ sơ cá nhân                 |
+| Learning Assessment   | Đánh giá đầu vào     | Kiểm tra trình độ tiếng Nhật hiện tại             |
+| Learning Goal         | Thiết lập mục tiêu   | Chọn mục tiêu JLPT, giao tiếp, công việc...       |
+| Personalized Learning | Cá nhân hóa lộ trình | Tạo lộ trình riêng theo năng lực và thời gian học |
+| Learning Content      | Quản lý nội dung     | Từ vựng, Kanji, ngữ pháp, nghe, đọc               |
+| Daily Learning        | Học hàng ngày        | Bài học ngắn theo kế hoạch từng ngày              |
+| Review System         | Ôn tập               | Tự động đề xuất nội dung cần ôn                   |
+| Progress Tracking     | Theo dõi tiến độ     | Thống kê thời gian, kết quả, mức độ hoàn thành    |
+| Notification          | Nhắc nhở học tập     | Nhắc lịch học và ôn tập                           |
+| Admin Management      | Quản trị hệ thống    | Quản lý người dùng, bài học và nội dung           |
+
+## 5. Chức năng trọng tâm: Cá nhân hóa lộ trình học
+
+Đây là chức năng cốt lõi tạo nên sự khác biệt của hệ thống.
+
+### 5.1. Thông tin đầu vào
+
+Khi bắt đầu sử dụng, hệ thống thu thập:
+
+- Trình độ hiện tại: Chưa biết tiếng Nhật, N5, N4, N3, N2, N1...
+- Mục tiêu: Thi JLPT, giao tiếp, sử dụng tiếng Nhật trong công việc.
+- Thời gian có thể học mỗi ngày: 5, 10, 15, 30 phút...
+- Thời gian dự kiến đạt mục tiêu.
+- Kỹ năng mong muốn cải thiện: Từ vựng, Kanji, ngữ pháp, nghe, đọc.
+- Kết quả kiểm tra năng lực đầu vào.
+
+### 5.2. Cơ chế customize lộ trình
+
+Hệ thống tự động xây dựng lộ trình dựa trên các yếu tố:
+
+| Yếu tố              | Cách xử lý                              |
+| ------------------- | --------------------------------------- |
+| Trình độ            | Xác định nội dung phù hợp               |
+| Mục tiêu            | Ưu tiên nội dung liên quan đến mục tiêu |
+| Thời gian rảnh      | Phân bổ khối lượng học mỗi ngày         |
+| Kết quả học tập     | Tăng hoặc giảm độ khó                   |
+| Nội dung chưa nhớ   | Tăng tần suất ôn tập                    |
+| Thời gian gián đoạn | Điều chỉnh lại kế hoạch học             |
+
+### 5.3. Khả năng customize
+
+Người dùng có thể chủ động:
+
+- Thay đổi mục tiêu học tập.
+- Điều chỉnh thời gian học mỗi ngày.
+- Tạm dừng hoặc tiếp tục lộ trình.
+- Ưu tiên một kỹ năng cụ thể.
+- Bỏ qua nội dung đã thành thạo.
+- Yêu cầu hệ thống xây dựng lại lộ trình.
+
+## 6. Luồng sử dụng cơ bản
+
+Đăng ký / Đăng nhập
+
+Thiết lập hồ sơ và mục tiêu học tập
+
+Kiểm tra trình độ đầu vào(người dùng có thể tùy chọn bỏ qua)
+
+AI / Learning Engine tạo lộ trình cá nhân
+
+Học tập hàng ngày (5–15 phút)
+
+Đánh giá kết quả và cập nhật lộ trình
+
+Lặp lại liên tục
+
+## 7. Phạm vi triển khai theo giai đoạn
+
+| Giai đoạn     | Phạm vi                                                                                                                                 |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Phase 1 – MVP | Web App, tài khoản, đánh giá đầu vào, thiết lập mục tiêu, lộ trình cá nhân, bài học ngắn, từ vựng, ngữ pháp, ôn tập và theo dõi tiến độ |
+| Phase 2       | AI cá nhân hóa nâng cao, luyện nghe, luyện đọc, phân tích điểm yếu, đề xuất điều chỉnh lộ trình                                         |
+| Phase 3       | Mobile App Android/iOS, đồng bộ dữ liệu đa thiết bị, thông báo học tập                                                                  |
+| Phase 4       | AI Tutor, luyện hội thoại, nhận diện và đánh giá phát âm, luyện giao tiếp theo tình huống công việc                                     |
+
+## 8. Tiêu chí thành công
+
+- Người dùng có thể bắt đầu học ngay mà không cần tự xây dựng kế hoạch.
+- Mỗi ngày có thể hoàn thành bài học trong 5–15 phút.
+- Lộ trình phù hợp với trình độ và mục tiêu riêng.
+- Hệ thống nhận biết điểm yếu và đề xuất nội dung cải thiện.
+- Có thể theo dõi tiến độ và mức độ đạt mục tiêu.
+- Kiến trúc cho phép mở rộng Web sang Mobile mà không phải xây dựng lại toàn bộ hệ thống.
+
+## 9. Định hướng sản phẩm đề xuất
+
+Tôi đề xuất định vị sản phẩm theo hướng:
+
+"Personalized Japanese Learning – Learn Japanese in 10 Minutes a Day"
+
+Điểm khác biệt không nên chỉ là một ứng dụng cung cấp bài học tiếng Nhật, mà là một Personal Learning Assistant:
+
+1. Biết người học đang ở trình độ nào.
+2. Biết người học muốn đạt mục tiêu gì.
+3. Biết mỗi ngày người học có bao nhiêu thời gian.
+4. Biết người học đang yếu ở đâu.
+5. Tự động quyết định hôm nay nên học gì, ôn gì và học trong bao lâu.
+
+Một điểm quan trọng về thiết kế: Không nên xây dựng lộ trình cố định kiểu N5 → N4 → N3 cho tất cả người dùng. Nên xây dựng một Learning Engine có khả năng chia nhỏ nội dung thành các learning units và phân bổ động theo hồ sơ, tiến độ và kết quả thực tế của từng người.
+
+Đây sẽ là nền tảng để phát triển AI Tutor và cá nhân hóa sâu hơn ở các giai đoạn tiếp theo.

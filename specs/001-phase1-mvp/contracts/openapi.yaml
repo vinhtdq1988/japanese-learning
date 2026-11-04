@@ -1,0 +1,1129 @@
+openapi: 3.0.3
+info:
+  title: Japanese Learning API
+  version: 1.4.0
+  description: |
+    Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
+    - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
+    - Mọi bản ghi do client tạo mang `clientEventId` (UUID) để đảm bảo idempotent (FR-041).
+    - Thay đổi phá vỡ tương thích PHẢI tăng phiên bản chính và được ghi trong tài liệu (Hiến pháp).
+    - Nhật ký thay đổi: 1.1.0 (2026-11-04, trước khi hiện thực, chưa có client nào dùng 1.0.0) – thêm `PUT /admin/placement-questions/{questionId}` và `PUT /admin/placement-questions/active-set`; `isActive` của câu placement thành chỉ đọc; thêm `isRetry` khi ghi câu trả lời; thêm `scopeNotice` và `reason` cho lộ trình, `scopeNotice` cho tiến độ, `tier` cho đơn vị admin, `currentLevel` trong `ProfileUpdate`; `targetLevel` nhận N5–N1; bỏ trạng thái `skipped` của đơn vị trong lộ trình; `/auth/refresh` trả 403 `ACCOUNT_DISABLED`.
+      1.2.0 (2026-11-04, trước khi hiện thực, chưa có client nào dùng) – `PUT /path/units/{unitId}/master` trả 200 `MasterResult` thay cho 204; `PlanItem.estMinutes` giới hạn 1–15 (gói ôn chia theo R7).
+      1.3.0 (2026-11-04, trước khi hiện thực, chưa có client nào dùng) – mục và bài tập trong `AdminUnitWrite` có `id` (tùy chọn) và `status`; mục/bài tập vắng mặt trong payload sửa bị chuyển `inactive` thay vì xóa cứng; `POST /path/rebuild` với `usePlacementResultId` lưu `reason='placement_retake'`; `ProfileUpdate.currentPassword` bắt buộc khi đổi `email`, 409 trả `EMAIL_TAKEN`/`EMAIL_PENDING_DELETION`; `PUT /me/password` thu hồi các phiên khác. Thay đổi bổ sung, không phá vỡ tương thích.
+      1.3.1 (2026-11-04) – sửa lỗi cú pháp, không đổi ngữ nghĩa: đặt các `description` chứa dấu phẩy trong dấu nháy (YAML tách sai thành thuộc tính thừa); thêm `type` cho các trường `nullable` dùng `allOf` theo OpenAPI 3.0.3.
+      1.4.0 (2026-11-04, trước khi hiện thực, chưa có client nào dùng) – thêm `operationId` (camelCase, duy nhất) cho mọi operation; đây là tên hàm của API client sinh ra (T030), nên đổi `operationId` về sau phải ghi vào nhật ký như một thay đổi hợp đồng. Không đổi đường dẫn, request hay response.
+servers:
+  - url: /api/v1
+tags:
+  - { name: auth, description: 'Đăng ký, đăng nhập, đặt lại mật khẩu' }
+  - { name: account, description: 'Hồ sơ, xóa/khôi phục tài khoản' }
+  - { name: trial, description: 'Dùng thử không đăng ký (công khai, giới hạn tần suất)' }
+  - { name: onboarding, description: Onboarding và đánh giá trình độ }
+  - { name: path, description: Lộ trình và điều chỉnh }
+  - { name: daily, description: Kế hoạch hằng ngày và phiên học }
+  - { name: progress, description: Tiến độ }
+  - { name: admin, description: Quản trị (vai trò admin) }
+
+paths:
+  /auth/register:
+    post:
+      operationId: register
+      tags: [auth]
+      summary: Đăng ký (FR-001) – không yêu cầu xác minh email
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/RegisterRequest' }
+      responses:
+        '201':
+          description: Đã tạo tài khoản và đăng nhập
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthTokens' }
+        '409':
+          description: Email đã dùng, hoặc email đang chờ xóa (`EMAIL_PENDING_DELETION`)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /auth/login:
+    post:
+      operationId: login
+      tags: [auth]
+      summary: Đăng nhập
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginRequest' }
+      responses:
+        '200':
+          description: Thành công. `accountStatus=pending_deletion` nghĩa là chỉ được khôi phục tài khoản.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/AuthTokens'
+                  - type: object
+                    properties:
+                      accountStatus: { $ref: '#/components/schemas/AccountStatus' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403':
+          description: Tài khoản bị vô hiệu hóa bởi quản trị viên (`ACCOUNT_DISABLED`)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /auth/refresh:
+    post:
+      operationId: refreshToken
+      tags: [auth]
+      summary: Làm mới access token (xoay vòng refresh token)
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [refreshToken]
+              properties:
+                refreshToken: { type: string }
+      responses:
+        '200':
+          description: Token mới
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AuthTokens' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403':
+          description: Tài khoản bị vô hiệu hóa bởi quản trị viên (`ACCOUNT_DISABLED`); refresh token đã bị thu hồi
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+  /auth/logout:
+    post:
+      operationId: logout
+      tags: [auth]
+      summary: Đăng xuất (thu hồi phiên hiện tại)
+      responses:
+        '204': { description: Đã đăng xuất }
+  /auth/password-reset/request:
+    post:
+      operationId: requestPasswordReset
+      tags: [auth]
+      summary: Yêu cầu liên kết đặt lại mật khẩu (FR-001)
+      description: Luôn trả 202 dù email có tồn tại hay không (chống dò tài khoản).
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email]
+              properties:
+                email: { type: string, format: email }
+      responses:
+        '202': { description: 'Nếu email tồn tại, liên kết đã được gửi (hết hạn sau 1 giờ)' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /auth/password-reset/confirm:
+    post:
+      operationId: confirmPasswordReset
+      tags: [auth]
+      summary: Đặt mật khẩu mới bằng token một lần
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token, newPassword]
+              properties:
+                token: { type: string }
+                newPassword: { type: string, minLength: 8 }
+      responses:
+        '204': { description: Đã đổi mật khẩu; mọi phiên cũ bị thu hồi }
+        '400':
+          description: Token hết hạn hoặc đã dùng (`RESET_TOKEN_INVALID`) – gợi ý yêu cầu liên kết mới
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Error' }
+
+  /me:
+    get:
+      operationId: getMe
+      tags: [account]
+      summary: Thông tin tài khoản + hồ sơ học tập
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Me' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    patch:
+      operationId: updateMe
+      tags: [account]
+      summary: Sửa hồ sơ (FR-002)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ProfileUpdate' }
+      responses:
+        '200':
+          description: Hồ sơ đã cập nhật
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Me' }
+        '401': { description: '`currentPassword` thiếu hoặc sai khi đổi email', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '409': { description: 'Email đã được dùng (`EMAIL_TAKEN`) hoặc thuộc tài khoản đang chờ xóa (`EMAIL_PENDING_DELETION`)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /me/password:
+    put:
+      operationId: changePassword
+      tags: [account]
+      summary: Đổi mật khẩu
+      description: Yêu cầu `currentPassword` đúng. Đổi thành công thu hồi mọi `auth_sessions` khác của người dùng, chỉ giữ phiên hiện tại.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [currentPassword, newPassword]
+              properties:
+                currentPassword: { type: string }
+                newPassword: { type: string, minLength: 8 }
+      responses:
+        '204': { description: Đã đổi }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+  /account/delete:
+    post:
+      operationId: deleteAccount
+      tags: [account]
+      summary: Xóa tài khoản – vô hiệu hóa ngay, xóa vĩnh viễn sau 30 ngày (FR-003)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [password]
+              properties:
+                password: { type: string }
+      responses:
+        '200':
+          description: Tài khoản chuyển sang `pending_deletion`
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  permanentDeletionAt: { type: string, format: date-time }
+  /account/restore:
+    post:
+      operationId: restoreAccount
+      tags: [account]
+      summary: Khôi phục tài khoản trong 30 ngày chờ xóa
+      responses:
+        '200':
+          description: Đã khôi phục cùng toàn bộ dữ liệu học tập
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Me' }
+        '410': { description: 'Quá 30 ngày, dữ liệu đã bị xóa', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+
+  /trial/content:
+    get:
+      operationId: getTrialContent
+      tags: [trial]
+      summary: Nội dung dùng thử cố định (công khai) – FR-036/037
+      description: |
+        Trả tập đơn vị học đánh dấu `is_trial`. Bài tập trong payload có kèm đáp án để client chấm cục bộ
+        (nội dung công khai). Không tạo bản ghi định danh nào trên máy chủ; chỉ tăng bộ đếm tổng hợp ẩn danh theo ngày (FR-038). Giới hạn tần suất (FR-040).
+      security: []
+      parameters:
+        - $ref: '#/components/parameters/Lang'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/TrialContent' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /placement/questions:
+    get:
+      operationId: listPlacementQuestions
+      tags: [trial, onboarding]
+      summary: Bộ câu hỏi kiểm tra trình độ (công khai, KHÔNG kèm đáp án)
+      security: []
+      parameters:
+        - $ref: '#/components/parameters/Lang'
+      responses:
+        '200':
+          description: Bộ 20 câu (8 N5, 6 N4, 6 N3), tối đa 10 phút
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PlacementQuestionSet' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /trial/placement/grade:
+    post:
+      operationId: gradeTrialPlacement
+      tags: [trial]
+      summary: Chấm bài kiểm tra trình độ cho khách – không lưu gì
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PlacementAnswers' }
+      responses:
+        '200':
+          description: Kết quả ước tính
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PlacementResult' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+
+  /trial/events:
+    post:
+      operationId: recordTrialEvent
+      tags: [trial]
+      summary: Ghi nhận sự kiện dùng thử ẩn danh (chỉ tăng bộ đếm tổng hợp theo ngày, FR-038)
+      description: |
+        Không nhận và không lưu bất kỳ dữ liệu nào khác ngoài tên sự kiện; không gắn với IP hay trình duyệt.
+        Giới hạn tần suất (FR-040).
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [event]
+              additionalProperties: false
+              properties:
+                event: { type: string, enum: [lesson_completed] }
+      responses:
+        '204': { description: Đã ghi nhận }
+        '422': { $ref: '#/components/responses/ValidationError' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+
+  /onboarding:
+    get:
+      operationId: getOnboarding
+      tags: [onboarding]
+      summary: Trạng thái và bản nháp onboarding (tiếp tục khi bỏ dở)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/OnboardingState' }
+    put:
+      operationId: saveOnboarding
+      tags: [onboarding]
+      summary: Lưu nháp các bước đã nhập (FR-005)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/OnboardingDraft' }
+      responses:
+        '200': { description: Đã lưu, content: { application/json: { schema: { $ref: '#/components/schemas/OnboardingState' } } } }
+  /onboarding/complete:
+    post:
+      operationId: completeOnboarding
+      tags: [onboarding]
+      summary: Hoàn tất onboarding – sinh lộ trình và bài học hôm nay (FR-008, FR-010)
+      description: Có thể không kèm kết quả kiểm tra (bỏ qua) – lộ trình sinh từ hồ sơ khai báo.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/OnboardingDraft' }
+      responses:
+        '200':
+          description: Lộ trình và kế hoạch hôm nay
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  path: { $ref: '#/components/schemas/PathSummary' }
+                  today: { $ref: '#/components/schemas/DailyPlan' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /placement/submit:
+    post:
+      operationId: submitPlacement
+      tags: [onboarding]
+      summary: Nộp bài kiểm tra trình độ (cũng dùng để mang kết quả dùng thử sang – FR-039; làm lại – FR-009)
+      description: Server chấm lại từ các câu trả lời và lưu `placement_results`.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PlacementAnswers' }
+      responses:
+        '200':
+          description: Kết quả
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PlacementResult' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  /path:
+    get:
+      operationId: getPath
+      tags: [path]
+      summary: Lộ trình hiện tại
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/PathDetail' } } } }
+        '404': { description: Chưa có lộ trình (chưa onboarding), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /path/rebuild:
+    post:
+      operationId: rebuildPath
+      tags: [path]
+      summary: Xây dựng lại lộ trình (FR-016) – giữ lịch sử và lịch ôn
+      description: 'Có `usePlacementResultId` (làm lại placement rồi chọn xây dựng lại, US1.6) → lộ trình mới lưu `reason=''placement_retake''`; bỏ trống → `reason=''rebuild_request''`.'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                usePlacementResultId:
+                  type: string
+                  format: uuid
+                  description: Dùng kết quả kiểm tra mới; bỏ trống = theo hồ sơ hiện tại
+      responses:
+        '200': { description: Lộ trình mới, content: { application/json: { schema: { $ref: '#/components/schemas/PathSummary' } } } }
+  /path/pause:
+    post:
+      operationId: pausePath
+      tags: [path]
+      summary: Tạm dừng lộ trình
+      responses:
+        '204': { description: Đã tạm dừng }
+  /path/resume:
+    post:
+      operationId: resumePath
+      tags: [path]
+      summary: Tiếp tục lộ trình
+      responses:
+        '204': { description: Đã tiếp tục }
+  /path/units/{unitId}/master:
+    put:
+      operationId: setUnitMastered
+      tags: [path]
+      summary: Đánh dấu / bỏ đánh dấu đã thành thạo
+      parameters:
+        - { name: unitId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [mastered]
+              properties:
+                mastered: { type: boolean }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/MasterResult' } } } }
+
+  /today:
+    get:
+      operationId: getToday
+      tags: [daily]
+      summary: Kế hoạch hôm nay (sinh một lần theo ngày địa phương)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/DailyPlan' } } } }
+        '409': { description: Lộ trình đang tạm dừng (`PATH_PAUSED`), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /today/extra:
+    post:
+      operationId: getExtraUnit
+      tags: [daily]
+      summary: Học thêm sau khi xong kế hoạch (US2.5) – không đổi kế hoạch mặc định
+      responses:
+        '200': { description: Đơn vị bổ sung, content: { application/json: { schema: { $ref: '#/components/schemas/PlanItem' } } } }
+        '404': { description: 'Hết nội dung phù hợp, kèm gợi ý', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /sessions:
+    post:
+      operationId: startSession
+      tags: [daily]
+      summary: Bắt đầu hoặc tiếp tục một phiên học cho mục kế hoạch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [planItemId]
+              properties:
+                planItemId: { type: string, format: uuid }
+      responses:
+        '200': { description: Phiên (ảnh chụp bài tập + câu đã trả lời), content: { application/json: { schema: { $ref: '#/components/schemas/LessonSession' } } } }
+  /sessions/{sessionId}/answers:
+    post:
+      operationId: submitAnswer
+      tags: [daily]
+      summary: Ghi câu trả lời – chấm tự động, idempotent (FR-025, FR-041)
+      parameters:
+        - { name: sessionId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AnswerSubmission' }
+      responses:
+        '200':
+          description: Kết quả chấm; trùng `clientEventId` trả lại kết quả đã có
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AnswerResult' }
+  /sessions/{sessionId}/intervals:
+    post:
+      operationId: recordStudyInterval
+      tags: [daily]
+      summary: Ghi khoảng thời gian học (idempotent)
+      parameters:
+        - { name: sessionId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [clientEventId, startedAt, durationSeconds]
+              properties:
+                clientEventId: { type: string, format: uuid }
+                startedAt: { type: string, format: date-time }
+                durationSeconds: { type: integer, minimum: 1, maximum: 1800 }
+      responses:
+        '204': { description: Đã ghi (hoặc đã có) }
+  /sessions/{sessionId}/complete:
+    post:
+      operationId: completeSession
+      tags: [daily]
+      summary: Hoàn thành phiên – cập nhật trạng thái mục kế hoạch/ngày và trả tóm tắt
+      parameters:
+        - { name: sessionId, in: path, required: true, schema: { type: string, format: uuid } }
+      responses:
+        '200':
+          description: Tóm tắt; nếu mục cuối cùng thì kế hoạch ngày `completed`
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SessionSummary' }
+        '409': { description: Còn câu chưa trả lời (`SESSION_INCOMPLETE`), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+
+  /progress:
+    get:
+      operationId: getProgress
+      tags: [progress]
+      summary: Tóm tắt tiến độ (FR-026 → FR-029)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/ProgressSummary' } } } }
+
+  /admin/units:
+    get:
+      operationId: adminListUnits
+      tags: [admin]
+      summary: Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại)
+      parameters:
+        - { name: status, in: query, schema: { type: string, enum: [draft, active, inactive] } }
+        - { name: level, in: query, schema: { type: string, enum: [N5, N4, N3] } }
+        - { name: kind, in: query, schema: { type: string, enum: [vocabulary, grammar] } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminUnit' } } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+    post:
+      operationId: adminCreateUnit
+      tags: [admin]
+      summary: Tạo đơn vị học (kèm mục nội dung và bài tập) – FR-030
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AdminUnitWrite' }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/units/{unitId}:
+    parameters:
+      - { name: unitId, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: adminGetUnit
+      tags: [admin]
+      summary: Chi tiết đơn vị học
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+    put:
+      operationId: adminUpdateUnit
+      tags: [admin]
+      summary: Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AdminUnitWrite' }
+      responses:
+        '200': { description: Đã sửa, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/units/{unitId}/status:
+    put:
+      operationId: adminSetUnitStatus
+      tags: [admin]
+      summary: Kích hoạt / vô hiệu hóa; đánh dấu thuộc tập dùng thử (FR-037)
+      parameters:
+        - { name: unitId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status: { type: string, enum: [draft, active, inactive] }
+                isTrial: { type: boolean }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { description: Không đạt kiểm tra nội dung khi kích hoạt, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /admin/placement-questions:
+    get:
+      operationId: adminListPlacementQuestions
+      tags: [admin]
+      summary: Danh sách câu hỏi kiểm tra trình độ
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminPlacementQuestion' } } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+    post:
+      operationId: adminCreatePlacementQuestion
+      tags: [admin]
+      summary: Tạo câu hỏi kiểm tra trình độ
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AdminPlacementQuestion' }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/AdminPlacementQuestion' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+  /admin/placement-questions/{questionId}:
+    put:
+      operationId: adminUpdatePlacementQuestion
+      tags: [admin]
+      summary: Sửa câu hỏi kiểm tra trình độ (nội dung, lựa chọn, đáp án, position) – ghi nhật ký quản trị (FR-030, FR-032)
+      parameters:
+        - { name: questionId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AdminPlacementQuestion' }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/AdminPlacementQuestion' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /admin/placement-questions/active-set:
+    put:
+      operationId: adminSetActivePlacementSet
+      tags: [admin]
+      summary: Kích hoạt nguyên tử một bộ câu hỏi (thay thế bộ hiện hành) – PHẢI đúng 20 câu (8 N5, 6 N4, 6 N3) (FR-007, FR-030)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [questionIds]
+              properties:
+                questionIds: { type: array, minItems: 20, maxItems: 20, items: { type: string, format: uuid }, description: Thứ tự mảng = position }
+      responses:
+        '204': { description: Đã kích hoạt (ghi nhật ký quản trị) }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { description: 'Bộ không hợp lệ (`PLACEMENT_SET_INVALID`: sai số lượng theo trình độ, câu không tồn tại); bộ hiện hành không đổi', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  /admin/users:
+    get:
+      operationId: adminListUsers
+      tags: [admin]
+      summary: Tìm tài khoản người học (FR-031)
+      parameters:
+        - { name: q, in: query, schema: { type: string }, description: Tìm theo email/tên }
+        - { name: cursor, in: query, schema: { type: string } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUserPage' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+  /admin/users/{userId}/status:
+    put:
+      operationId: adminSetUserStatus
+      tags: [admin]
+      summary: Vô hiệu hóa / kích hoạt lại tài khoản
+      parameters:
+        - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [status]
+              properties:
+                status: { type: string, enum: [active, disabled] }
+      responses:
+        '204': { description: Đã cập nhật (ghi vào nhật ký quản trị). Vô hiệu hóa thu hồi mọi refresh token; access token đã cấp còn hiệu lực tối đa 15 phút }
+        '403': { $ref: '#/components/responses/Forbidden' }
+  /admin/action-logs:
+    get:
+      operationId: adminListActionLogs
+      tags: [admin]
+      summary: Nhật ký hành động quản trị (FR-032)
+      parameters:
+        - { name: cursor, in: query, schema: { type: string } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminActionLog' } } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  parameters:
+    Lang:
+      name: lang
+      in: query
+      schema: { type: string, enum: [vi, en], default: vi }
+  responses:
+    Unauthorized:
+      description: Chưa xác thực hoặc token không hợp lệ
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+    Forbidden:
+      description: Không có quyền quản trị (FR-004)
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+    NotFound:
+      description: Không tìm thấy tài nguyên
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+    ValidationError:
+      description: Dữ liệu không hợp lệ (thông báo cụ thể theo trường)
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+    TooManyRequests:
+      description: Vượt giới hạn tần suất (FR-040)
+      headers:
+        Retry-After: { schema: { type: integer } }
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+  schemas:
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string, description: 'Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, PLACEMENT_SET_INVALID' }
+        message: { type: string }
+        fields:
+          type: object
+          additionalProperties: { type: string }
+    Level: { type: string, enum: [none, N5, N4, N3, N2, N1] }
+    ContentLevel: { type: string, enum: [N5, N4, N3] }
+    TargetLevel: { type: string, enum: [N5, N4, N3, N2, N1], description: 'Mục tiêu JLPT; N2/N1 được chấp nhận nhưng nội dung Giai đoạn 1 chỉ đến N3 (`scopeNotice`)' }
+    ScopeNotice: { type: string, enum: [content_ceiling_n3], nullable: true, description: 'Trình độ hoặc mục tiêu vượt phạm vi nội dung hiện có (N5–N3); lộ trình dùng N3 làm trần' }
+    Skill: { type: string, enum: [vocabulary, grammar] }
+    Lang: { type: string, enum: [vi, en] }
+    GoalType: { type: string, enum: [jlpt, daily_conversation, work] }
+    AccountStatus: { type: string, enum: [active, disabled, pending_deletion] }
+    RegisterRequest:
+      type: object
+      required: [email, password, displayName]
+      properties:
+        email: { type: string, format: email }
+        password: { type: string, minLength: 8 }
+        displayName: { type: string, minLength: 1, maxLength: 60 }
+        language: { $ref: '#/components/schemas/Lang' }
+        timezone: { type: string, example: Asia/Ho_Chi_Minh }
+        fromTrial: { type: boolean, default: false, description: Đăng ký ngay sau khi dùng thử trên cùng trình duyệt (đo SC-011) }
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email: { type: string, format: email }
+        password: { type: string }
+    AuthTokens:
+      type: object
+      required: [accessToken, refreshToken, expiresIn]
+      properties:
+        accessToken: { type: string }
+        refreshToken: { type: string }
+        expiresIn: { type: integer, description: Số giây hiệu lực của access token }
+    Profile:
+      type: object
+      properties:
+        displayName: { type: string }
+        currentLevel: { $ref: '#/components/schemas/Level' }
+        goalType: { $ref: '#/components/schemas/GoalType' }
+        targetLevel: { $ref: '#/components/schemas/TargetLevel' }
+        dailyMinutes: { type: integer, enum: [5, 10, 15, 30] }
+        targetDate: { type: string, format: date, nullable: true }
+        skills: { type: array, items: { $ref: '#/components/schemas/Skill' } }
+        prioritizedSkill: { type: string, allOf: [{ $ref: '#/components/schemas/Skill' }], nullable: true }
+        language: { $ref: '#/components/schemas/Lang' }
+        timezone: { type: string }
+        paused: { type: boolean }
+        onboardingState: { type: string, enum: [not_started, in_progress, completed] }
+    Me:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        email: { type: string, format: email }
+        role: { type: string, enum: [learner, admin] }
+        status: { $ref: '#/components/schemas/AccountStatus' }
+        profile: { $ref: '#/components/schemas/Profile' }
+    ProfileUpdate:
+      type: object
+      description: Mọi trường tùy chọn; các thay đổi liên quan lộ trình/kế hoạch có hiệu lực ở kế hoạch tiếp theo (SC-006). Đổi `goalType`/`targetLevel`/`targetDate` sinh lại lộ trình (`reason='goal_change'`); đổi `currentLevel` sinh lại lộ trình (`reason='level_change'`); đổi `dailyMinutes`/`prioritizedSkill` không sinh lộ trình mới mà áp dụng trực tiếp cho kế hoạch kế tiếp. Đổi `email` bắt buộc kèm `currentPassword`.
+      properties:
+        displayName: { type: string }
+        email: { type: string, format: email }
+        currentPassword: { type: string, writeOnly: true, description: Bắt buộc khi có `email` }
+        currentLevel: { $ref: '#/components/schemas/Level' }
+        dailyMinutes: { type: integer, enum: [5, 10, 15, 30] }
+        goalType: { $ref: '#/components/schemas/GoalType' }
+        targetLevel: { $ref: '#/components/schemas/TargetLevel' }
+        targetDate: { type: string, format: date, nullable: true }
+        prioritizedSkill: { type: string, allOf: [{ $ref: '#/components/schemas/Skill' }], nullable: true }
+        language: { $ref: '#/components/schemas/Lang' }
+        timezone: { type: string }
+    LocalizedText:
+      type: string
+      description: Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+    Exercise:
+      type: object
+      required: [id, type, prompt, payload]
+      properties:
+        id: { type: string, format: uuid }
+        type: { type: string, enum: [multiple_choice, matching, fill_blank] }
+        prompt: { $ref: '#/components/schemas/LocalizedText' }
+        payload:
+          type: object
+          description: 'Dạng theo `type`: `choices[]`; `pairs[]` (đã xáo); hoặc `hint`. KHÔNG chứa đáp án trong luồng người học.'
+    ContentItem:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        kind: { $ref: '#/components/schemas/Skill' }
+        japanese: { type: string }
+        reading: { type: string, nullable: true }
+        meaning: { $ref: '#/components/schemas/LocalizedText' }
+        explanation: { type: string, allOf: [{ $ref: '#/components/schemas/LocalizedText' }], nullable: true }
+        examples:
+          type: array
+          items:
+            type: object
+            properties:
+              ja: { type: string }
+              reading: { type: string, nullable: true }
+              translation: { $ref: '#/components/schemas/LocalizedText' }
+    TrialContent:
+      type: object
+      properties:
+        units:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string, format: uuid }
+              kind: { $ref: '#/components/schemas/Skill' }
+              title: { $ref: '#/components/schemas/LocalizedText' }
+              estMinutes: { type: integer }
+              items: { type: array, items: { $ref: '#/components/schemas/ContentItem' } }
+              exercises:
+                type: array
+                items:
+                  allOf:
+                    - $ref: '#/components/schemas/Exercise'
+                    - type: object
+                      properties:
+                        answerKey: { type: object, description: Đáp án để client chấm cục bộ (chỉ cho nội dung dùng thử công khai) }
+                        feedbackCorrect: { $ref: '#/components/schemas/LocalizedText' }
+                        feedbackIncorrect: { $ref: '#/components/schemas/LocalizedText' }
+    PlacementQuestionSet:
+      type: object
+      properties:
+        timeLimitSeconds: { type: integer, example: 600 }
+        questions:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string, format: uuid }
+              skill: { $ref: '#/components/schemas/Skill' }
+              prompt: { type: string }
+              choices: { type: array, items: { type: string } }
+    PlacementAnswers:
+      type: object
+      required: [answers]
+      properties:
+        durationSeconds: { type: integer }
+        answers:
+          type: array
+          items:
+            type: object
+            required: [questionId, choice]
+            properties:
+              questionId: { type: string, format: uuid }
+              choice: { type: integer, nullable: true, description: 'null = bỏ trống' }
+    PlacementResult:
+      type: object
+      properties:
+        id: { type: string, format: uuid, nullable: true, description: 'null cho khách (không lưu)' }
+        estimatedLevel: { $ref: '#/components/schemas/Level' }
+        score: { type: integer }
+        total: { type: integer }
+        strongTopics: { type: array, items: { type: string } }
+        weakTopics: { type: array, items: { type: string } }
+        guessSuspected: { type: boolean }
+    OnboardingDraft:
+      type: object
+      properties:
+        currentLevel: { $ref: '#/components/schemas/Level' }
+        goalType: { $ref: '#/components/schemas/GoalType' }
+        targetLevel: { $ref: '#/components/schemas/TargetLevel' }
+        dailyMinutes: { type: integer, enum: [5, 10, 15, 30] }
+        targetDate: { type: string, format: date, nullable: true }
+        skills: { type: array, items: { $ref: '#/components/schemas/Skill' } }
+        placementResultId: { type: string, format: uuid, nullable: true }
+        timezone: { type: string }
+    OnboardingState:
+      type: object
+      properties:
+        state: { type: string, enum: [not_started, in_progress, completed] }
+        draft: { $ref: '#/components/schemas/OnboardingDraft' }
+        carriedPlacement: { type: object, allOf: [{ $ref: '#/components/schemas/PlacementResult' }], nullable: true }
+    PathSummary:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        totalUnits: { type: integer }
+        completedUnits: { type: integer }
+        startLevel: { $ref: '#/components/schemas/Level' }
+        reason: { type: string, enum: [onboarding, rebuild_request, goal_change, level_change, placement_retake] }
+        scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+        message: { type: string, nullable: true, description: 'Ví dụ: kỹ năng chưa hỗ trợ trong phiên bản này' }
+    PathDetail:
+      allOf:
+        - $ref: '#/components/schemas/PathSummary'
+        - type: object
+          properties:
+            items:
+              type: array
+              description: Thứ tự đơn vị được tính động tại thời điểm gọi từ tham số lộ trình, nội dung `active` hiện hành và trạng thái học (không lưu sẵn; đơn vị mới kích hoạt xuất hiện ở lần gọi kế tiếp, SC-008)
+              items:
+                type: object
+                properties:
+                  unitId: { type: string, format: uuid }
+                  title: { $ref: '#/components/schemas/LocalizedText' }
+                  kind: { $ref: '#/components/schemas/Skill' }
+                  level: { $ref: '#/components/schemas/ContentLevel' }
+                  estMinutes: { type: integer }
+                  status: { type: string, enum: [pending, in_progress, completed, mastered] }
+    PlanItem:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        type: { type: string, enum: [new_unit, review_batch] }
+        title: { $ref: '#/components/schemas/LocalizedText' }
+        estMinutes: { type: integer, minimum: 1, maximum: 15, description: 'Ước lượng; review_batch = ceil(itemCount × REVIEW_SECONDS_PER_ITEM / 60)' }
+        status: { type: string, enum: [pending, in_progress, completed] }
+        itemCount: { type: integer, nullable: true }
+    MasterResult:
+      type: object
+      required: [remainingUnits]
+      properties:
+        remainingUnits: { type: integer, description: Số đơn vị chưa thành thạo còn lại trong khoảng trình độ của lộ trình hiện tại }
+        suggestion:
+          type: string
+          nullable: true
+          enum: [raise_level, content_exhausted]
+          description: 'Chỉ có khi remainingUnits = 0. raise_level: còn nội dung ở trình độ cao hơn (≤ N3) – client mời nâng trình độ (PATCH /me currentLevel → level_change) hoặc làm lại placement; content_exhausted: đã ở trần N3 – dùng chung mã với thông báo hết nội dung'
+    DailyPlan:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        localDate: { type: string, format: date }
+        budgetMinutes: { type: integer }
+        estimatedMinutes: { type: integer, description: Luôn ≤ budgetMinutes }
+        status: { type: string, enum: [open, completed] }
+        items: { type: array, items: { $ref: '#/components/schemas/PlanItem' } }
+        notice:
+          type: string
+          nullable: true
+          description: 'Thông báo (đã học hết nội dung phù hợp, kế hoạch đã điều chỉnh sau khoảng nghỉ…)'
+        summary:
+          type: object
+          allOf: [{ $ref: '#/components/schemas/SessionSummary' }]
+          nullable: true
+    LessonSession:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        status: { type: string, enum: [in_progress, completed] }
+        items: { type: array, items: { $ref: '#/components/schemas/ContentItem' } }
+        exercises: { type: array, items: { $ref: '#/components/schemas/Exercise' } }
+        answered:
+          type: array
+          items:
+            type: object
+            properties:
+              exerciseId: { type: string, format: uuid }
+              isCorrect: { type: boolean }
+    AnswerSubmission:
+      type: object
+      required: [clientEventId, exerciseId, answer]
+      properties:
+        clientEventId: { type: string, format: uuid }
+        exerciseId: { type: string, format: uuid }
+        answer: { description: 'Chỉ số lựa chọn, danh sách cặp, hoặc chuỗi điền từ' }
+        answeredAt: { type: string, format: date-time }
+        isRetry: { type: boolean, default: false, description: 'Câu hỏi lại cuối phiên (R6): có phản hồi nhưng không cập nhật lịch ôn, thống kê mảng hay độ chính xác' }
+    AnswerResult:
+      type: object
+      properties:
+        isCorrect: { type: boolean }
+        feedback: { $ref: '#/components/schemas/LocalizedText' }
+        correctAnswer: { description: Đáp án đúng khi trả lời sai }
+        nextReviewDate: { type: string, format: date, nullable: true }
+        duplicate: { type: boolean, description: 'true nếu clientEventId đã được ghi, hoặc bài tập này đã có câu trả lời lượt chính trong phiên (FR-041); khi đó trả lại kết quả đã có' }
+    SessionSummary:
+      type: object
+      properties:
+        correct: { type: integer }
+        total: { type: integer }
+        minutesSpent: { type: number }
+        dayCompleted: { type: boolean }
+    ProgressSummary:
+      type: object
+      properties:
+        isEmpty: { type: boolean, description: true khi chưa có lịch sử (trạng thái trống thân thiện) }
+        totalMinutes: { type: number }
+        lessonsCompleted: { type: integer }
+        reviewAccuracy: { type: number, nullable: true, minimum: 0, maximum: 1 }
+        currentStreakDays: { type: integer }
+        goal:
+          type: object
+          properties:
+            completionRatio: { type: number, minimum: 0, maximum: 1 }
+            onTrack: { type: boolean, nullable: true }
+            targetDate: { type: string, format: date, nullable: true }
+            scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+        weakTopics:
+          type: array
+          items:
+            type: object
+            properties:
+              topicId: { type: string, format: uuid }
+              name: { $ref: '#/components/schemas/LocalizedText' }
+              accuracy: { type: number }
+    I18nText:
+      type: object
+      required: [vi, en]
+      properties:
+        vi: { type: string }
+        en: { type: string }
+    AdminUnitWrite:
+      type: object
+      required: [kind, title, level, topicId, estMinutes, difficulty]
+      properties:
+        kind: { $ref: '#/components/schemas/Skill' }
+        title: { $ref: '#/components/schemas/I18nText' }
+        level: { $ref: '#/components/schemas/ContentLevel' }
+        goalTags: { type: array, items: { $ref: '#/components/schemas/GoalType' } }
+        topicId: { type: string, format: uuid }
+        difficulty: { type: integer, minimum: 1, maximum: 5 }
+        tier: { type: string, enum: [foundation, core], default: core, description: '`foundation` = nền tảng người mới, chỉ hợp lệ với level N5' }
+        estMinutes: { type: integer, enum: [5, 10, 15] }
+        sequence: { type: integer }
+        items:
+          type: array
+          description: 'Khi sửa: phần tử có `id` được cập nhật, phần tử không có `id` được tạo mới; mục hiện có vắng mặt trong payload bị chuyển `inactive`, KHÔNG xóa cứng (giữ `study_records`/`review_schedules` – data-model §2.9).'
+          items:
+            type: object
+            required: [japanese, meaning]
+            properties:
+              id: { type: string, format: uuid, description: Có khi sửa mục đã tồn tại }
+              status: { type: string, enum: [active, inactive], default: active }
+              japanese: { type: string }
+              reading: { type: string, nullable: true }
+              meaning: { $ref: '#/components/schemas/I18nText' }
+              explanation: { type: object, allOf: [{ $ref: '#/components/schemas/I18nText' }], nullable: true }
+              examples: { type: array, items: { type: object } }
+        exercises:
+          type: array
+          description: Cùng quy tắc với `items` – bài tập vắng mặt trong payload sửa bị chuyển `inactive`, không xóa cứng.
+          items:
+            type: object
+            required: [type, prompt, payload, feedbackCorrect, feedbackIncorrect]
+            properties:
+              id: { type: string, format: uuid, description: Có khi sửa bài tập đã tồn tại }
+              status: { type: string, enum: [active, inactive], default: active }
+              type: { type: string, enum: [multiple_choice, matching, fill_blank] }
+              prompt: { $ref: '#/components/schemas/I18nText' }
+              payload: { type: object, description: Gồm đáp án cố định (xem data-model.md §2.10) }
+              feedbackCorrect: { $ref: '#/components/schemas/I18nText' }
+              feedbackIncorrect: { $ref: '#/components/schemas/I18nText' }
+    AdminUnit:
+      allOf:
+        - $ref: '#/components/schemas/AdminUnitWrite'
+        - type: object
+          properties:
+            id: { type: string, format: uuid }
+            status: { type: string, enum: [draft, active, inactive] }
+            isTrial: { type: boolean }
+            updatedAt: { type: string, format: date-time }
+    AdminPlacementQuestion:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        level: { $ref: '#/components/schemas/ContentLevel' }
+        skill: { $ref: '#/components/schemas/Skill' }
+        topicId: { type: string, format: uuid }
+        prompt: { type: string }
+        choices: { type: array, items: { type: string } }
+        correctChoice: { type: integer }
+        position: { type: integer }
+        isActive: { type: boolean, readOnly: true, description: Chỉ đổi qua PUT /admin/placement-questions/active-set }
+    AdminUserPage:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              id: { type: string, format: uuid }
+              email: { type: string }
+              displayName: { type: string }
+              status: { $ref: '#/components/schemas/AccountStatus' }
+              createdAt: { type: string, format: date-time }
+        nextCursor: { type: string, nullable: true }
+    AdminActionLog:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        actorId: { type: string, format: uuid, nullable: true }
+        action: { type: string }
+        targetType: { type: string }
+        targetId: { type: string, format: uuid }
+        occurredAt: { type: string, format: date-time }
+
+security:
+  - bearerAuth: []
