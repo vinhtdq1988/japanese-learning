@@ -226,12 +226,14 @@ AdminUnitWrite:
     "items": "bài Kanji phải có từ 3 đến 5 chữ đang hoạt động",
     "items[1].kanjiDetails": "cần ít nhất một cách đọc (âm On hoặc âm Kun)",
     "items[2].topicId": "chữ Kanji phải có thẻ chủ đề Kanji",
+    "items[3].japanese": "chữ 「日」 đã có ở bài 「n5-kanji-time」 đang hoạt động",
     "items[0].meaning": "bản dịch vi + en phải đầy đủ",
     "exercises": "chữ 「月」 chưa có bài tập cho khía cạnh reading"
   }
 }
 ```
 
+- Khóa `exercises` còn dùng cho lỗi thời lượng, ví dụ `"exercises": "số bài tập (12) vượt quỹ 10 câu cho bài 5 phút"` (một khóa có thể gộp nhiều thông điệp, phân cách bằng `; `).
 - `GET /admin/units`: thêm tham số lọc tùy chọn `kind` (`Skill`).
 - `GET /admin/topics`: thêm tham số lọc tùy chọn `skill` (`Skill`); không đổi phản hồi.
 - Nhật ký (`AdminActionLog`): không đổi cấu trúc.

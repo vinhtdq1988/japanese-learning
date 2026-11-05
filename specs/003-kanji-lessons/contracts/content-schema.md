@@ -115,6 +115,7 @@ Ví dụ rút gọn (bài 5 phút, 3 chữ):
       "then": {
         "properties": {
           "tier": { "const": "core" },
+          "goalTags": { "minItems": 1 },
           "items": {
             "minItems": 3, "maxItems": 5,
             "items": { "required": ["japanese", "meaning", "topic", "kanjiDetails", "examples"] }
@@ -125,6 +126,8 @@ Ví dụ rút gọn (bài 5 phút, 3 chữ):
   ]
 }
 ```
+
+Với `kind = kanji`, `goalTags` PHẢI có ít nhất một phần tử (khác từ vựng/ngữ pháp, nơi mảng rỗng vẫn hợp lệ).
 
 JSON Schema chỉ kiểm tra hình dạng; quy tắc xuyên trường (một ký tự Kanji, có glyph, mỗi chữ đủ ba khía cạnh bài tập, từ ví dụ chứa chữ, `kanjiReading` thuộc tập cách đọc, chủ đề có `skill='kanji'`, mỗi trình độ có bài 5 phút) do `domain/content-validation.ts` kiểm tra ở seed, ở kiểm thử `tests/unit/content-files.test.ts` và khi admin kích hoạt.
 

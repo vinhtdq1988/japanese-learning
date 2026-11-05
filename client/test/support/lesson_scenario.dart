@@ -36,6 +36,12 @@ class LessonScenario {
     'item-2': 'pending',
   };
 
+  /// Mã mục kế hoạch được gắn `kind = kanji` (nhãn bài Kanji ở "Hôm nay").
+  final Set<String> kanjiItems = <String>{};
+
+  /// `DailyPlan.kanjiNotice` server giả trả; null = không có thông báo.
+  Map<String, Object?>? kanjiNotice;
+
   /// Thêm một gói ôn (`review_batch`, 3 mục) vào kế hoạch hôm nay (US3).
   void addReviewBatch() => itemStatus['item-review'] = 'pending';
 
@@ -157,13 +163,16 @@ class LessonScenario {
           'estMinutes': 2,
           'status': itemStatus['item-review'],
           'itemCount': 3,
+          'kind': null,
         },
       for (final item in (base.todayPlan['items']! as List<Object?>))
         <String, Object?>{
           ...(item! as Map<String, Object?>),
           'status': itemStatus[(item as Map<String, Object?>)['id']],
+          'kind': kanjiItems.contains(item['id']) ? 'kanji' : 'vocabulary',
         },
     ],
+    if (kanjiNotice != null) 'kanjiNotice': kanjiNotice,
     if (dayCompleted)
       'summary': <String, Object?>{
         'correct': 5,

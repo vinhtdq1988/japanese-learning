@@ -1,0 +1,428 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-work",
+  "title": {
+    "vi": "Kanji công việc (職 給 務)",
+    "en": "Work kanji (職 給 務)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 100,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "職",
+      "topic": "kanji-n3-work",
+      "meaning": {
+        "vi": "nghề nghiệp; chức vụ",
+        "en": "occupation; post"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 18,
+        "components": {
+          "vi": "Bộ nhĩ 耳 (tai) + 戠",
+          "en": "Ear radical 耳 + 戠"
+        }
+      },
+      "examples": [
+        {
+          "ja": "職業",
+          "reading": "しょくぎょう",
+          "kanjiReading": "ショク",
+          "translation": {
+            "vi": "nghề nghiệp",
+            "en": "occupation"
+          }
+        },
+        {
+          "ja": "就職",
+          "reading": "しゅうしょく",
+          "kanjiReading": "ショク",
+          "translation": {
+            "vi": "xin được việc làm",
+            "en": "finding employment"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "給",
+      "topic": "kanji-n3-work",
+      "meaning": {
+        "vi": "cấp phát; tiền lương",
+        "en": "supply; pay"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12,
+        "components": {
+          "vi": "Bộ mịch 糸 (sợi chỉ) + 合",
+          "en": "Thread radical 糸 + 合"
+        }
+      },
+      "examples": [
+        {
+          "ja": "給料",
+          "reading": "きゅうりょう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "tiền lương",
+            "en": "salary"
+          }
+        },
+        {
+          "ja": "月給",
+          "reading": "げっきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "lương tháng",
+            "en": "monthly salary"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "務",
+      "topic": "kanji-n3-work",
+      "meaning": {
+        "vi": "nhiệm vụ; công việc",
+        "en": "duty; task"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ム"
+        ],
+        "kunReadings": [
+          "つと.める"
+        ],
+        "strokeCount": 11,
+        "components": {
+          "vi": "矛 + 攵 + 力",
+          "en": "矛 + 攵 + 力"
+        }
+      },
+      "examples": [
+        {
+          "ja": "事務",
+          "reading": "じむ",
+          "kanjiReading": "ム",
+          "translation": {
+            "vi": "công việc văn phòng",
+            "en": "office work"
+          }
+        },
+        {
+          "ja": "務める",
+          "reading": "つとめる",
+          "kanjiReading": "つと",
+          "translation": {
+            "vi": "đảm nhiệm",
+            "en": "to serve (in a role)"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "職",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「職」nghĩa là gì?",
+        "en": "What does 「職」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nghề nghiệp; chức vụ",
+            "en": "occupation; post"
+          },
+          {
+            "vi": "cấp phát; tiền lương",
+            "en": "supply; pay"
+          },
+          {
+            "vi": "nhiệm vụ; công việc",
+            "en": "duty; task"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 職 nghĩa là nghề nghiệp; chức vụ.",
+        "en": "Correct! 職 means occupation; post."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 職 nghĩa là nghề nghiệp; chức vụ.",
+        "en": "Not quite. 職 means occupation; post."
+      }
+    },
+    {
+      "item": "職",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「職」 trong 「職業」 (\"nghề nghiệp\").",
+        "en": "Type the reading of 「職」 in 「職業」 (\"occupation\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょく",
+          "ショク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 職業, 職 đọc là しょく.",
+        "en": "Correct! In 職業, 職 is read しょく."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 職業, 職 đọc là しょく.",
+        "en": "In 職業, 職 is read しょく."
+      }
+    },
+    {
+      "item": "職",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「就職」(xin được việc làm) đọc là gì?",
+        "en": "How is 「就職」 (finding employment) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅうそく",
+          "しゅうしょく",
+          "じゅうしょく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 就職 = しゅうしょく (xin được việc làm).",
+        "en": "Correct! 就職 = しゅうしょく (finding employment)."
+      },
+      "feedbackIncorrect": {
+        "vi": "就職 đọc là しゅうしょく (xin được việc làm).",
+        "en": "就職 is read しゅうしょく (finding employment)."
+      }
+    },
+    {
+      "item": "給",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「給」nghĩa là gì?",
+        "en": "What does 「給」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhiệm vụ; công việc",
+            "en": "duty; task"
+          },
+          {
+            "vi": "cấp phát; tiền lương",
+            "en": "supply; pay"
+          },
+          {
+            "vi": "nghề nghiệp; chức vụ",
+            "en": "occupation; post"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 給 nghĩa là cấp phát; tiền lương.",
+        "en": "Correct! 給 means supply; pay."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 給 nghĩa là cấp phát; tiền lương.",
+        "en": "Not quite. 給 means supply; pay."
+      }
+    },
+    {
+      "item": "給",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「給」 trong 「給料」 (\"tiền lương\").",
+        "en": "Type the reading of 「給」 in 「給料」 (\"salary\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 給料, 給 đọc là きゅう.",
+        "en": "Correct! In 給料, 給 is read きゅう."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 給料, 給 đọc là きゅう.",
+        "en": "In 給料, 給 is read きゅう."
+      }
+    },
+    {
+      "item": "給",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「月給」(lương tháng) đọc là gì?",
+        "en": "How is 「月給」 (monthly salary) read?"
+      },
+      "payload": {
+        "choices": [
+          "がっきゅう",
+          "げつきゅう",
+          "げっきゅう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 月給 = げっきゅう (lương tháng).",
+        "en": "Correct! 月給 = げっきゅう (monthly salary)."
+      },
+      "feedbackIncorrect": {
+        "vi": "月給 đọc là げっきゅう (lương tháng).",
+        "en": "月給 is read げっきゅう (monthly salary)."
+      }
+    },
+    {
+      "item": "務",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「務」nghĩa là gì?",
+        "en": "What does 「務」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nghề nghiệp; chức vụ",
+            "en": "occupation; post"
+          },
+          {
+            "vi": "cấp phát; tiền lương",
+            "en": "supply; pay"
+          },
+          {
+            "vi": "nhiệm vụ; công việc",
+            "en": "duty; task"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 務 nghĩa là nhiệm vụ; công việc.",
+        "en": "Correct! 務 means duty; task."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 務 nghĩa là nhiệm vụ; công việc.",
+        "en": "Not quite. 務 means duty; task."
+      }
+    },
+    {
+      "item": "務",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「務」 trong 「事務」 (\"công việc văn phòng\").",
+        "en": "Type the reading of 「務」 in 「事務」 (\"office work\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "む",
+          "ム"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 事務, 務 đọc là む.",
+        "en": "Correct! In 事務, 務 is read む."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 事務, 務 đọc là む.",
+        "en": "In 事務, 務 is read む."
+      }
+    },
+    {
+      "item": "務",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「業務」(nghiệp vụ, công việc) đọc là gì?",
+        "en": "How is 「業務」 (business duties) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎょうむ",
+          "ごうむ",
+          "ぎょうぶ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 業務 = ぎょうむ (nghiệp vụ, công việc).",
+        "en": "Correct! 業務 = ぎょうむ (business duties)."
+      },
+      "feedbackIncorrect": {
+        "vi": "業務 đọc là ぎょうむ (nghiệp vụ, công việc).",
+        "en": "業務 is read ぎょうむ (business duties)."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "職",
+            {
+              "vi": "nghề nghiệp; chức vụ",
+              "en": "occupation; post"
+            }
+          ],
+          [
+            "給",
+            {
+              "vi": "cấp phát; tiền lương",
+              "en": "supply; pay"
+            }
+          ],
+          [
+            "務",
+            {
+              "vi": "nhiệm vụ; công việc",
+              "en": "duty; task"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

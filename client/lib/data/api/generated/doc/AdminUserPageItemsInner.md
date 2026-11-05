@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **id** | **String** |  | [optional] 
 **email** | **String** |  | [optional] 
 **displayName** | **String** |  | [optional] 
+**role** | **String** |  | [optional] 
 **status** | [**AccountStatus**](AccountStatus.md) |  | [optional] 
 **createdAt** | [**DateTime**](DateTime.md) |  | [optional] 
 

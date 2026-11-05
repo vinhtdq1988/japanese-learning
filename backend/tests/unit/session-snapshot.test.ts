@@ -162,3 +162,121 @@ describe('shuffleStable', () => {
     expect(shuffleStable([], 'x')).toEqual([]);
   });
 });
+
+// --- Snapshot cho đơn vị Kanji (spec 003, T020) ---
+
+describe('snapshot Kanji', () => {
+  const kanjiItem = (): ItemSource => ({
+    id: 'k1',
+    kind: 'kanji',
+    japanese: '三',
+    reading: null,
+    meaning: t('ba', 'three'),
+    explanation: null,
+    examples: [
+      {
+        ja: '三月',
+        reading: 'さんがつ',
+        kanjiReading: 'サン',
+        translation: t('tháng Ba', 'March'),
+      },
+    ],
+    topicId: 'topic-kanji',
+    kanjiDetails: {
+      onReadings: ['サン'],
+      kunReadings: ['み', 'み.つ'],
+      strokeCount: 3,
+      components: t('Ba nét ngang', 'Three horizontal strokes'),
+    },
+    position: 1,
+    status: 'active',
+  });
+
+  const base = {
+    title: t('Kanji số đếm', 'Number kanji'),
+    unitId: 'unit-k',
+    items: [kanjiItem()],
+    exercises: [
+      exercise('m', 1, { itemId: 'k1', facet: 'meaning' }),
+      exercise('r', 2, {
+        itemId: 'k1',
+        facet: 'reading',
+        type: 'fill_blank',
+        payload: { accepted_answers: ['さん', 'サン'] },
+      }),
+      exercise('match', 3),
+    ],
+  };
+
+  it('điền items[].kanji (components đã bản địa hóa), topicId và kanjiReading của ví dụ', () => {
+    const vi = buildSnapshot({ ...base, language: 'vi' });
+    const en = buildSnapshot({ ...base, language: 'en' });
+    expect(vi.items[0]!.kanji).toEqual({
+      onReadings: ['サン'],
+      kunReadings: ['み', 'み.つ'],
+      strokeCount: 3,
+      components: 'Ba nét ngang',
+    });
+    expect(en.items[0]!.kanji!.components).toBe('Three horizontal strokes');
+    expect(vi.items[0]!.topicId).toBe('topic-kanji');
+    expect(vi.items[0]!.reading).toBeNull();
+    expect(vi.items[0]!.examples[0]!.kanjiReading).toBe('サン');
+  });
+
+  it('bỏ components khi chữ không có thành phần; mục từ vựng không có kanji/topicId', () => {
+    const noComponents = {
+      ...kanjiItem(),
+      kanjiDetails: { onReadings: ['サン'], kunReadings: [], strokeCount: 3 },
+    };
+    const snap = buildSnapshot({ ...base, items: [noComponents, item('v', 2)], language: 'vi' });
+    expect(snap.items[0]!.kanji).toEqual({ onReadings: ['サン'], kunReadings: [], strokeCount: 3 });
+    expect(snap.items[0]!.kanji).not.toHaveProperty('components');
+    const vocab = snap.items.find((i) => i.id === 'v')!;
+    expect(vocab).not.toHaveProperty('kanji');
+    expect(vocab).not.toHaveProperty('topicId');
+    expect(snap.items[0]!.examples[0]).toHaveProperty('kanjiReading');
+    expect(vocab.examples[0]).not.toHaveProperty('kanjiReading');
+  });
+
+  it('exercises[].facet được giữ; bài tập không khai báo facet là item; topicId theo chủ đề của chữ', () => {
+    const snap = buildSnapshot({ ...base, language: 'vi' });
+    expect(snap.exercises.map((e) => e.facet)).toEqual(['meaning', 'reading', 'item']);
+    expect(snap.exercises[0]!.topicId).toBe('topic-kanji'); // chủ đề của chữ
+    expect(snap.exercises[2]!.topicId).toBe('topic-1'); // không gắn chữ: chủ đề của đơn vị
+  });
+
+  it('publicExercise gửi facet nhưng không lộ đáp án', () => {
+    const snap = buildSnapshot({ ...base, language: 'vi' });
+    const pub = snap.exercises.map((e) => publicExercise(e, 'vi'));
+    expect(pub.map((p) => p.facet)).toEqual(['meaning', 'reading', 'item']);
+    expect(JSON.stringify(pub)).not.toContain('accepted_answers');
+    expect(JSON.stringify(pub)).not.toContain('correct_index');
+  });
+
+  it('snapshot cũ không có facet vẫn parse và chấm được (research K13)', () => {
+    const legacy = {
+      version: 1,
+      language: 'vi',
+      title: 'Cũ',
+      unitId: 'u',
+      items: [],
+      exercises: [
+        {
+          id: 'e1',
+          itemId: null,
+          topicId: 't',
+          type: 'multiple_choice',
+          prompt: 'q',
+          payload: { choices: ['a', 'b'], correct_index: 1 },
+          feedbackCorrect: 'ok',
+          feedbackIncorrect: 'no',
+        },
+      ],
+    };
+    const parsed = parseSnapshot(JSON.parse(JSON.stringify(legacy)));
+    expect(parsed.exercises[0]!.facet).toBe('item');
+    expect(publicExercise(parsed.exercises[0]!, 'vi').facet).toBe('item');
+    const graded = gradeExercise('multiple_choice', parsed.exercises[0]!.payload, 1, 'vi');
+    expect(graded.isCorrect).toBe(true);
+  });
+});

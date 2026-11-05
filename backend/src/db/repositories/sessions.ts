@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, inArray, ne, sql } from 'drizzle-orm';
+import { and, asc, desc, eq, inArray, isNotNull, ne, sql } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import {
   contentItems,
@@ -180,6 +180,8 @@ export async function loadActiveUnitContent(
       meaning: r.meaning,
       explanation: r.explanation,
       examples: r.examples,
+      topicId: r.topicId,
+      kanjiDetails: r.kanjiDetails,
       position: r.position,
       status: r.status,
     })),
@@ -187,6 +189,7 @@ export async function loadActiveUnitContent(
       id: r.id,
       itemId: r.itemId,
       topicId: unit.topicId,
+      facet: r.facet,
       type: r.type,
       prompt: r.prompt,
       payload: r.payload,
@@ -331,6 +334,22 @@ export async function listPlanSessionIds(db: DbExecutor, planId: string): Promis
     .innerJoin(dailyPlanItems, eq(lessonSessions.planItemId, dailyPlanItems.id))
     .where(eq(dailyPlanItems.planId, planId));
   return rows.map((r) => r.id);
+}
+
+/** Id các mục có ít nhất một câu lượt chính trả lời sai trong phiên (không tính câu hỏi lại cuối phiên). */
+export async function listIncorrectItemIds(db: DbExecutor, sessionId: string): Promise<string[]> {
+  const rows = await db
+    .selectDistinct({ itemId: studyRecords.itemId })
+    .from(studyRecords)
+    .where(
+      and(
+        eq(studyRecords.sessionId, sessionId),
+        eq(studyRecords.isRetry, false),
+        eq(studyRecords.isCorrect, false),
+        isNotNull(studyRecords.itemId),
+      ),
+    );
+  return rows.flatMap((r) => (r.itemId ? [r.itemId] : []));
 }
 
 /** Số câu đúng / tổng số câu lượt chính của các phiên (không tính câu hỏi lại cuối phiên). */

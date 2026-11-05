@@ -3,6 +3,7 @@ import {
   CONTENT_LEVELS,
   EXERCISE_TYPES,
   GOAL_TYPES,
+  PLACEMENT_SKILLS,
   SKILLS,
   UNIT_EST_MINUTES,
   UNIT_STATUSES,
@@ -170,7 +171,10 @@ export const adminUnitStatusSchema = z
 export const adminPlacementQuestionSchema = z
   .object({
     level: z.enum(CONTENT_LEVELS, { error: `level phải thuộc ${CONTENT_LEVELS.join(', ')}` }),
-    skill: z.enum(SKILLS, { error: `skill phải thuộc ${SKILLS.join(', ')}` }),
+    // Placement không có Kanji (research K12): gửi `kanji` → 422.
+    skill: z.enum(PLACEMENT_SKILLS, {
+      error: `skill phải thuộc ${PLACEMENT_SKILLS.join(', ')}`,
+    }),
     topicId: z.uuid('topicId không hợp lệ'),
     prompt: z
       .string({ error: 'Thiếu nội dung câu hỏi' })

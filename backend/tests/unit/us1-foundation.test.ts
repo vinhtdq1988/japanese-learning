@@ -78,9 +78,9 @@ describe('validation onboarding', () => {
     }
   });
 
-  it('kỹ năng chỉ nhận từ vựng + ngữ pháp, không rỗng, bỏ trùng lặp', () => {
+  it('kỹ năng nhận từ vựng + ngữ pháp + Kanji, không rỗng, bỏ trùng lặp', () => {
     expect(onboardingCompleteSchema.safeParse({ ...complete, skills: [] }).success).toBe(false);
-    for (const unsupported of ['listening', 'reading', 'kanji']) {
+    for (const unsupported of ['listening', 'reading']) {
       expect(
         onboardingCompleteSchema.safeParse({ ...complete, skills: ['vocabulary', unsupported] })
           .success,
@@ -91,6 +91,9 @@ describe('validation onboarding', () => {
       skills: ['grammar', 'grammar', 'vocabulary'],
     });
     expect(parsed.skills).toEqual(['grammar', 'vocabulary']);
+    expect(
+      onboardingCompleteSchema.parse({ ...complete, skills: ['vocabulary', 'kanji'] }).skills,
+    ).toEqual(['vocabulary', 'kanji']);
   });
 
   it('mục tiêu JLPT bắt buộc targetLevel; N2/N1 được chấp nhận', () => {

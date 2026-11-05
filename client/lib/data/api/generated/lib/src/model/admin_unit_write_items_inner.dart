@@ -4,6 +4,7 @@
 
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/i18n_text.dart';
+import 'package:japanese_api/src/model/kanji_details_write.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -30,6 +31,10 @@ class AdminUnitWriteItemsInner {
     required this.meaning,
 
     this.explanation,
+
+    this.topicId,
+
+    this.kanjiDetails,
 
     this.examples,
   });
@@ -58,6 +63,15 @@ class AdminUnitWriteItemsInner {
   @JsonKey(name: r'explanation', required: false, includeIfNull: false)
   final I18nText? explanation;
 
+  /// Bắt buộc khi kind=kanji lúc kích hoạt (chủ đề skill=kanji); bỏ qua với kind khác. Lưu nháp không bắt buộc
+  @JsonKey(name: r'topicId', required: false, includeIfNull: false)
+  final String? topicId;
+
+  /// Bắt buộc đầy đủ khi kích hoạt kind=kanji (lưu nháp chấp nhận null); `reading` khi đó để null
+  @JsonKey(name: r'kanjiDetails', required: false, includeIfNull: false)
+  final KanjiDetailsWrite? kanjiDetails;
+
+  /// `[{ja, reading, translation: I18nText, kanjiReading?}]`
   @JsonKey(name: r'examples', required: false, includeIfNull: false)
   final List<Object>? examples;
 
@@ -71,6 +85,8 @@ class AdminUnitWriteItemsInner {
           other.reading == reading &&
           other.meaning == meaning &&
           other.explanation == explanation &&
+          other.topicId == topicId &&
+          other.kanjiDetails == kanjiDetails &&
           other.examples == examples;
 
   @override
@@ -81,6 +97,8 @@ class AdminUnitWriteItemsInner {
       (reading == null ? 0 : reading.hashCode) +
       meaning.hashCode +
       (explanation == null ? 0 : explanation.hashCode) +
+      (topicId == null ? 0 : topicId.hashCode) +
+      (kanjiDetails == null ? 0 : kanjiDetails.hashCode) +
       examples.hashCode;
 
   factory AdminUnitWriteItemsInner.fromJson(Map<String, dynamic> json) =>

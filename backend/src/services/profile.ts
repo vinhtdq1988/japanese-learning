@@ -66,6 +66,7 @@ const PATH_FIELDS = [
   'targetLevel',
   'targetDate',
   'prioritizedSkill',
+  'skills',
 ] as const;
 
 function validationFailed(fields: Record<string, string>): AppError {
@@ -85,6 +86,7 @@ function resolvePathFields(
   deps: Pick<ServiceDeps, 'clock'>,
   profile: ProfileRow,
   input: ProfileUpdateInput,
+  skillsAfter: readonly string[],
 ): ResolvedPathFields {
   const goalType = input.goalType ?? profile.goalType;
   const targetDate = input.targetDate !== undefined ? input.targetDate : profile.targetDate;
@@ -102,7 +104,7 @@ function resolvePathFields(
       errors.targetDate = 'Mốc thời gian phải từ hôm nay trở đi';
     }
   }
-  if (input.prioritizedSkill && !profile.skills.includes(input.prioritizedSkill)) {
+  if (input.prioritizedSkill && !skillsAfter.includes(input.prioritizedSkill)) {
     errors.prioritizedSkill = 'Kỹ năng ưu tiên phải nằm trong các kỹ năng đã chọn';
   }
   if (Object.keys(errors).length > 0) throw validationFailed(errors);
@@ -126,6 +128,10 @@ function resolvePathFields(
  *   `EMAIL_PENDING_DELETION`); lưu cùng giao dịch với phần còn lại.
  * - `dailyMinutes`, `prioritizedSkill`: lưu và áp dụng trực tiếp cho kế hoạch được sinh kế tiếp, KHÔNG
  *   sinh lộ trình mới (`rankUnits` đọc `prioritized_skill` từ hồ sơ).
+ * - `skills` (spec 003, FR-007, FR-010): như `dailyMinutes`, KHÔNG sinh lộ trình mới và không đụng
+ *   `unit_progress`/`study_records`/`review_schedules`/`topic_stats`; có hiệu lực ở kế hoạch sinh kế tiếp
+ *   (kế hoạch đã sinh hôm nay không đổi). `prioritizedSkill` hiện tại không còn thuộc `skills` mới thì được
+ *   đặt `null` trong cùng giao dịch; `kanji_selected_at` đặt `now()` khi Kanji được thêm, giữ khi bỏ chọn.
  * - `goalType`/`targetLevel`/`targetDate` đổi giá trị → lộ trình mới `reason='goal_change'`;
  *   `currentLevel` đổi giá trị → lộ trình mới `reason='level_change'` (kết quả placement cũ không còn
  *   quyết định điểm xuất phát vì người học đã tự khai báo lại trình độ). Cả hai đổi → `goal_change`.
@@ -154,13 +160,26 @@ export async function updateMe(
     );
   }
 
-  const next = resolvePathFields(deps, profile, input);
+  const skillsAfter = input.skills ?? profile.skills;
+  const next = resolvePathFields(deps, profile, input, skillsAfter);
+  const now = deps.clock.now();
+  // Bỏ kỹ năng đang ưu tiên khỏi `skills` thì ưu tiên tự về null (trừ khi request đặt ưu tiên mới hợp lệ).
+  const prioritizedAfter =
+    input.prioritizedSkill !== undefined ? input.prioritizedSkill : profile.prioritizedSkill;
+  const clearPriority =
+    input.prioritizedSkill === undefined &&
+    prioritizedAfter !== null &&
+    !skillsAfter.includes(prioritizedAfter);
+  const kanjiAdded = skillsAfter.includes('kanji') && !profile.skills.includes('kanji');
   const patch: ProfilePatch = {
     ...(input.displayName !== undefined ? { displayName: input.displayName } : {}),
     ...(input.language !== undefined ? { language: input.language } : {}),
     ...(input.timezone !== undefined ? { timezone: input.timezone } : {}),
     ...(input.dailyMinutes !== undefined ? { dailyMinutes: input.dailyMinutes } : {}),
+    ...(input.skills !== undefined ? { skills: input.skills } : {}),
     ...(input.prioritizedSkill !== undefined ? { prioritizedSkill: input.prioritizedSkill } : {}),
+    ...(clearPriority ? { prioritizedSkill: null } : {}),
+    ...(kanjiAdded ? { kanjiSelectedAt: now } : {}),
     ...(input.currentLevel !== undefined ? { currentLevel: input.currentLevel } : {}),
     ...(input.goalType !== undefined || input.targetLevel !== undefined
       ? { goalType: next.goalType, targetLevel: next.targetLevel }
@@ -175,7 +194,6 @@ export async function updateMe(
       : null;
 
   await deps.db.transaction(async (tx) => {
-    const now = deps.clock.now();
     if (emailChange) await applyEmailChange(tx, userId, emailChange, now);
     const updated = await updateProfile(tx, userId, patch, now);
     if (!reason) return;

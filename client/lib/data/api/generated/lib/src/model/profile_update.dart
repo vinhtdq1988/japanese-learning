@@ -41,6 +41,8 @@ class ProfileUpdate {
 
     this.prioritizedSkill,
 
+    this.skills,
+
     this.language,
 
     this.timezone,
@@ -74,6 +76,10 @@ class ProfileUpdate {
   @JsonKey(name: r'prioritizedSkill', required: false, includeIfNull: false)
   final Skill? prioritizedSkill;
 
+  /// Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.
+  @JsonKey(name: r'skills', required: false, includeIfNull: false)
+  final Set<Skill>? skills;
+
   @JsonKey(name: r'language', required: false, includeIfNull: false)
   final Lang? language;
 
@@ -93,6 +99,7 @@ class ProfileUpdate {
           other.targetLevel == targetLevel &&
           other.targetDate == targetDate &&
           other.prioritizedSkill == prioritizedSkill &&
+          other.skills == skills &&
           other.language == language &&
           other.timezone == timezone;
 
@@ -107,6 +114,7 @@ class ProfileUpdate {
       targetLevel.hashCode +
       (targetDate == null ? 0 : targetDate.hashCode) +
       (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
+      skills.hashCode +
       language.hashCode +
       timezone.hashCode;
 

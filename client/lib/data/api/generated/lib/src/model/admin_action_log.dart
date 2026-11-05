@@ -28,6 +28,8 @@ class AdminActionLog {
 
     this.targetId,
 
+    this.diff,
+
     this.occurredAt,
   });
 
@@ -46,6 +48,10 @@ class AdminActionLog {
   @JsonKey(name: r'targetId', required: false, includeIfNull: false)
   final String? targetId;
 
+  /// Thay đổi trước/sau, đã loại thông tin nhạy cảm (mật khẩu, token, email)
+  @JsonKey(name: r'diff', required: false, includeIfNull: false)
+  final Map<String, Object>? diff;
+
   @JsonKey(name: r'occurredAt', required: false, includeIfNull: false)
   final DateTime? occurredAt;
 
@@ -58,6 +64,7 @@ class AdminActionLog {
           other.action == action &&
           other.targetType == targetType &&
           other.targetId == targetId &&
+          other.diff == diff &&
           other.occurredAt == occurredAt;
 
   @override
@@ -66,7 +73,8 @@ class AdminActionLog {
       (actorId == null ? 0 : actorId.hashCode) +
       action.hashCode +
       targetType.hashCode +
-      targetId.hashCode +
+      (targetId == null ? 0 : targetId.hashCode) +
+      (diff == null ? 0 : diff.hashCode) +
       occurredAt.hashCode;
 
   factory AdminActionLog.fromJson(Map<String, dynamic> json) =>

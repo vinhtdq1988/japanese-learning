@@ -28,6 +28,7 @@ import {
   insertSession,
   insertStudyInterval,
   insertStudyRecord,
+  listIncorrectItemIds,
   listPlanItemStatuses,
   listPrimaryRecords,
   listSessionIntervals,
@@ -93,6 +94,8 @@ export interface SessionSummaryDto {
   total: number;
   minutesSpent: number;
   dayCompleted: boolean;
+  /** Chữ Kanji có câu lượt chính sai trong phiên (US1.4); vắng mặt với phiên không có Kanji. */
+  attentionItems?: { itemId: string; japanese: string }[];
 }
 
 /** Số phút (làm tròn 0,1) từ số giây. */
@@ -312,38 +315,46 @@ function occurredAtOf(answeredAt: string | undefined, session: SessionRow, now: 
 }
 
 /**
- * Cập nhật lịch ôn của mục sau một câu trả lời vừa chèn thành công (T077, R6, R10); trả ngày ôn kế tiếp.
- * Bỏ qua (chỉ trả ngày đến hạn hiện có) khi: câu hỏi lại cuối phiên (`is_retry`), bài tập không gắn mục,
- * hoặc mục đã được cập nhật trong ngày địa phương này (hai cửa sổ/hai phiên cùng ôn một mục). Khóa mục
- * trước khi đọc nên hai giao dịch đồng thời được xếp hàng và chỉ một giao dịch cập nhật.
+ * Cập nhật lịch ôn của cặp (mục, khía cạnh) sau một câu trả lời vừa chèn thành công (T077, R6, R10); trả
+ * ngày ôn kế tiếp. Khía cạnh lấy từ bản ghi (`item` với từ vựng/ngữ pháp; Kanji dùng meaning/reading/word,
+ * mỗi cặp có lịch riêng – research K3). Bỏ qua (chỉ trả ngày đến hạn hiện có) khi: câu hỏi lại cuối phiên
+ * (`is_retry`), bài tập không gắn mục, hoặc cặp đã được cập nhật trong ngày địa phương này (hai cửa sổ/hai
+ * phiên cùng ôn một cặp). Khóa cặp trước khi đọc nên hai giao dịch đồng thời được xếp hàng và chỉ một
+ * giao dịch cập nhật.
  */
 async function updateReviewSchedule(
   tx: DbExecutor,
   userId: string,
   record: StudyRecordRow,
 ): Promise<LocalDate | null> {
-  const { itemId } = record;
+  const { itemId, facet } = record;
   if (!itemId) return null;
-  if (record.isRetry) return getDueDate(tx, userId, itemId);
+  if (record.isRetry) return getDueDate(tx, userId, itemId, facet);
 
-  const existing = await lockSchedule(tx, userId, itemId);
+  const existing = await lockSchedule(tx, userId, itemId, facet);
   const reviewedOn = existing?.lastReviewedLocalDate;
   if (existing && reviewedOn && reviewedOn >= record.localDate) return existing.dueDate;
 
-  const recent = await recentItemResults(tx, userId, itemId, RECENT_ACCURACY_WINDOW);
+  const recent = await recentItemResults(tx, userId, itemId, RECENT_ACCURACY_WINDOW, facet);
   const next = nextSrsState(
     existing ? toSrsState(existing) : null,
     record.isCorrect,
     accuracyOf(recent),
   );
   const dueDate = dueDateAfter(record.localDate, next.intervalDays);
-  await upsertSchedule(tx, userId, itemId, {
-    ...next,
-    dueDate,
-    lastResult: record.isCorrect,
-    lastReviewedAt: record.occurredAt,
-    lastReviewedLocalDate: record.localDate,
-  });
+  await upsertSchedule(
+    tx,
+    userId,
+    itemId,
+    {
+      ...next,
+      dueDate,
+      lastResult: record.isCorrect,
+      lastReviewedAt: record.occurredAt,
+      lastReviewedLocalDate: record.localDate,
+    },
+    facet,
+  );
   return dueDate;
 }
 
@@ -412,7 +423,9 @@ export async function submitAnswer(
       });
     }
     const target = snapshot.exercises.find((e) => e.id === record.exerciseId) ?? exercise;
-    const nextReviewDate = record.itemId ? await getDueDate(db, userId, record.itemId) : null;
+    const nextReviewDate = record.itemId
+      ? await getDueDate(db, userId, record.itemId, record.facet)
+      : null;
     return { ...resultFromRecord(record, target, snapshot, true), nextReviewDate };
   };
 
@@ -434,6 +447,8 @@ export async function submitAnswer(
       sessionId: session.id,
       exerciseId: exercise.id,
       itemId: exercise.itemId,
+      // Khía cạnh vắng mặt (snapshot cũ) hiểu là `item`; `topicId` của bài tập đã là chủ đề của chữ (research K4).
+      facet: exercise.facet ?? 'item',
       topicId: exercise.topicId,
       isCorrect: graded.isCorrect,
       submittedAnswer: input.answer,
@@ -507,11 +522,22 @@ async function summarizeSession(
 ): Promise<SessionSummaryDto> {
   const { correct, total } = await countPrimaryResults(db, [session.id]);
   const intervals = await listSessionIntervals(db, [session.id]);
+  const kanjiItems = parseSnapshot(session.snapshot).items.filter((i) => i.kind === 'kanji');
+  const incorrect =
+    kanjiItems.length > 0 ? new Set(await listIncorrectItemIds(db, session.id)) : null;
   return {
     correct,
     total,
     minutesSpent: secondsToMinutes(unionDurationSeconds(intervals)),
     dayCompleted: await dayCompletedFor(db, deps, userId, session),
+    // Theo thứ tự xuất hiện của chữ trong bài; chỉ phiên có mục Kanji mới có trường này.
+    ...(incorrect
+      ? {
+          attentionItems: kanjiItems
+            .filter((i) => incorrect.has(i.id))
+            .map((i) => ({ itemId: i.id, japanese: i.japanese })),
+        }
+      : {}),
   };
 }
 

@@ -4,6 +4,7 @@
 
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/i18n_text.dart';
+import 'package:japanese_api/src/model/review_facet.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -22,6 +23,10 @@ class AdminUnitWriteExercisesInner {
     this.id,
 
     this.status = AdminUnitWriteExercisesInnerStatusEnum.active,
+
+    this.itemIndex,
+
+    this.facet = ReviewFacet.item,
 
     required this.type,
 
@@ -46,6 +51,20 @@ class AdminUnitWriteExercisesInner {
   )
   final AdminUnitWriteExercisesInnerStatusEnum? status;
 
+  /// Chỉ số (từ 0) của mục trong `items` cùng payload mà bài tập kiểm tra; null/vắng = không gắn mục (không vào lịch ôn tập). Khi đọc, tính theo thứ tự `items` trả về
+  // minimum: 0
+  @JsonKey(name: r'itemIndex', required: false, includeIfNull: false)
+  final int? itemIndex;
+
+  /// Bài tập gắn chữ Kanji (`itemIndex` khác null trong đơn vị Kanji) PHẢI có meaning | reading | word; bài tập khác PHẢI là item
+  @JsonKey(
+    defaultValue: ReviewFacet.item,
+    name: r'facet',
+    required: false,
+    includeIfNull: false,
+  )
+  final ReviewFacet? facet;
+
   @JsonKey(name: r'type', required: true, includeIfNull: false)
   final AdminUnitWriteExercisesInnerTypeEnum type;
 
@@ -68,6 +87,8 @@ class AdminUnitWriteExercisesInner {
       other is AdminUnitWriteExercisesInner &&
           other.id == id &&
           other.status == status &&
+          other.itemIndex == itemIndex &&
+          other.facet == facet &&
           other.type == type &&
           other.prompt == prompt &&
           other.payload == payload &&
@@ -78,6 +99,8 @@ class AdminUnitWriteExercisesInner {
   int get hashCode =>
       id.hashCode +
       status.hashCode +
+      (itemIndex == null ? 0 : itemIndex.hashCode) +
+      facet.hashCode +
       type.hashCode +
       prompt.hashCode +
       payload.hashCode +

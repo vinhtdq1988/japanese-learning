@@ -1,7 +1,7 @@
 import { and, asc, desc, eq, inArray, lt } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import { dailyPlanItems, dailyPlans, learningUnits } from '../schema.js';
-import type { I18nText, LocalDate } from '../../domain/types.js';
+import type { I18nText, LocalDate, Skill } from '../../domain/types.js';
 import type { PlanDayKind } from '../../engine/daily-plan.js';
 
 // Repository kế hoạch hằng ngày. Kế hoạch sinh một lần mỗi (user_id, local_date) và lưu lại, nên
@@ -77,6 +77,51 @@ export async function previousPlanKind(
   const hasNew = items.some((i) => i.type === 'new_unit');
   if (hasReview && hasNew) return 'mixed';
   return hasReview ? 'review_only' : 'new_only';
+}
+
+/**
+ * Kỹ năng (`kind`) của các đơn vị trong kế hoạch gần nhất TRƯỚC `before` có ít nhất một mục `new_unit`
+ * (research K5: dùng quyết định có đưa bài Kanji lên đầu hôm nay không). Null nếu chưa có kế hoạch nào
+ * như vậy (ví dụ ngày đầu sau khi chọn Kanji).
+ */
+export async function lastNewUnitPlanKinds(
+  db: DbExecutor,
+  userId: string,
+  before: LocalDate,
+): Promise<Skill[] | null> {
+  const [latest] = await db
+    .select({ planId: dailyPlanItems.planId })
+    .from(dailyPlanItems)
+    .innerJoin(dailyPlans, eq(dailyPlans.id, dailyPlanItems.planId))
+    .where(
+      and(
+        eq(dailyPlans.userId, userId),
+        lt(dailyPlans.localDate, before),
+        eq(dailyPlanItems.type, 'new_unit'),
+      ),
+    )
+    .orderBy(desc(dailyPlans.localDate))
+    .limit(1);
+  if (!latest) return null;
+  const rows = await db
+    .select({ kind: learningUnits.kind })
+    .from(dailyPlanItems)
+    .innerJoin(learningUnits, eq(learningUnits.id, dailyPlanItems.unitId))
+    .where(and(eq(dailyPlanItems.planId, latest.planId), eq(dailyPlanItems.type, 'new_unit')));
+  return rows.map((r) => r.kind);
+}
+
+/** Tiêu đề (i18n) và kỹ năng của các đơn vị theo id – đọc thẳng CSDL, không phụ thuộc bộ đệm. */
+export async function getUnitInfo(
+  db: DbExecutor,
+  unitIds: readonly string[],
+): Promise<Map<string, { title: I18nText; kind: Skill }>> {
+  if (unitIds.length === 0) return new Map();
+  const rows = await db
+    .select({ id: learningUnits.id, title: learningUnits.title, kind: learningUnits.kind })
+    .from(learningUnits)
+    .where(inArray(learningUnits.id, [...unitIds]));
+  return new Map(rows.map((r) => [r.id, { title: r.title, kind: r.kind }]));
 }
 
 /** Tiêu đề (i18n) của các đơn vị theo id – đọc thẳng CSDL để kế hoạch đã lưu không phụ thuộc bộ đệm. */

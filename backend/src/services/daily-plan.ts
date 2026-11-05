@@ -1,9 +1,10 @@
 import { getActivePath } from '../db/repositories/paths.js';
 import {
   findPlan,
-  getUnitTitles,
+  getUnitInfo,
   insertPlanIfAbsent,
   insertPlanItems,
+  lastNewUnitPlanKinds,
   listPlanItems,
   previousPlanKind,
   type DailyPlanRow,
@@ -18,10 +19,11 @@ import {
 } from '../db/repositories/sessions.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
 import { localize } from '../domain/i18n.js';
-import { AppError, type Language } from '../domain/types.js';
+import { AppError, type Language, type Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
 import {
   GAP_NOTICE,
+  applyKanjiSlot,
   hasLearningGap,
   packReviewBatches,
   planDailyPlan,
@@ -49,6 +51,8 @@ export const PLAN_NOTICES = {
 export interface PlanItemDto {
   id: string;
   type: 'new_unit' | 'review_batch';
+  /** Kỹ năng của đơn vị với `new_unit` (client hiển thị nhãn Kanji); null với `review_batch`. */
+  kind: Skill | null;
   title: string;
   estMinutes: number;
   status: 'pending' | 'in_progress' | 'completed';
@@ -63,6 +67,11 @@ export interface DailyPlanDto {
   status: 'open' | 'completed';
   items: PlanItemDto[];
   notice: string | null;
+  /**
+   * Chỉ có khi người học đã chọn Kanji và đã học hết bài Kanji phù hợp trình độ (FR-013); tách khỏi `notice`
+   * để không đè thông báo khoảng nghỉ/hết nội dung chung. Kế hoạch vẫn có bài kỹ năng khác và ôn tập.
+   */
+  kanjiNotice?: KanjiNoticeDto;
   /** Chỉ có khi ngày đã hoàn thành: kết quả tổng hợp của mọi phiên trong kế hoạch (US2.3). */
   summary?: SessionSummaryDto;
 }
@@ -85,15 +94,39 @@ async function planSummary(
   };
 }
 
+export interface KanjiNoticeDto {
+  code: 'kanji_exhausted';
+  suggestion: 'raise_level' | 'content_exhausted';
+}
+
+/**
+ * Thông báo hết bài Kanji (FR-013): người học đã chọn Kanji nhưng không còn bài Kanji sắp tới trong khoảng
+ * trình độ của lộ trình. Gợi ý `raise_level` khi còn bài Kanji `active` ở trình độ cao hơn (≤ N3), ngược lại
+ * `content_exhausted`. Hàm thuần để kiểm thử.
+ */
+export function computeKanjiNotice(
+  params: Pick<PathParams, 'levelRange'>,
+  skills: readonly string[],
+  upcoming: readonly Pick<CatalogUnit, 'kind'>[],
+  catalog: readonly Pick<CatalogUnit, 'kind' | 'level'>[],
+): KanjiNoticeDto | null {
+  if (!skills.includes('kanji')) return null;
+  if (upcoming.some((u) => u.kind === 'kanji')) return null;
+  const ceiling = levelIndex(params.levelRange[1]);
+  const higher = catalog.some((u) => u.kind === 'kanji' && levelIndex(u.level) > ceiling);
+  return { code: 'kanji_exhausted', suggestion: higher ? 'raise_level' : 'content_exhausted' };
+}
+
 const REVIEW_TITLE: Record<Language, string> = { vi: 'Ôn tập', en: 'Review' };
 
 async function toDto(
   deps: Pick<ServiceDeps, 'db'>,
   plan: DailyPlanRow,
   language: Language,
+  kanjiNotice: KanjiNoticeDto | null = null,
 ): Promise<DailyPlanDto> {
   const items = await listPlanItems(deps.db, plan.id);
-  const titles = await getUnitTitles(
+  const units = await getUnitInfo(
     deps.db,
     items.flatMap((i) => (i.unitId ? [i.unitId] : [])),
   );
@@ -104,14 +137,16 @@ async function toDto(
     estimatedMinutes: plan.estimatedMinutes,
     status: plan.status,
     notice: plan.notice,
+    ...(kanjiNotice ? { kanjiNotice } : {}),
     ...(plan.status === 'completed' ? { summary: await planSummary(deps, plan) } : {}),
     items: items.map((i) => ({
       id: i.id,
       type: i.type,
+      kind: i.type === 'new_unit' && i.unitId ? (units.get(i.unitId)?.kind ?? null) : null,
       title:
         i.type === 'review_batch'
           ? REVIEW_TITLE[language]
-          : localize(i.unitId ? titles.get(i.unitId) : undefined, language),
+          : localize(i.unitId ? units.get(i.unitId)?.title : undefined, language),
       estMinutes: i.estMinutes,
       status: i.status,
       itemCount: i.type === 'review_batch' ? (i.reviewItemIds?.length ?? 0) : null,
@@ -129,15 +164,28 @@ async function generatePlan(
   const ranked = await rankForUser(deps, userId, profile, params);
   const upcoming = upcomingUnits(ranked);
   const previousKind = await previousPlanKind(deps.db, userId, localDate);
+  const budgetMinutes = profile.dailyMinutes ?? 0;
+  // Suất Kanji (research K5): bảo đảm bài Kanji có mặt từ ngày đầu và tối thiểu cách một ngày có bài mới;
+  // no-op khi người học không chọn Kanji nên kế hoạch cũ giống hệt (FR-009, SC-006).
+  const lastKinds = await lastNewUnitPlanKinds(deps.db, userId, localDate);
+  const candidates = applyKanjiSlot(
+    upcoming.map((u) => ({ unitId: u.id, estMinutes: u.estMinutes, kind: u.kind })),
+    {
+      skills: profile.skills,
+      prioritizedSkill: profile.prioritizedSkill,
+      lastNewUnitPlanHadKanji: lastKinds === null ? null : lastKinds.includes('kanji'),
+      budgetMinutes,
+    },
+  );
   // Mục ôn đến hạn xếp theo ưu tiên (mục khó, quá hạn lâu nhất); mục không vừa quỹ hôm nay không bị
   // sửa `due_date` nên tiếp tục được ưu tiên ở ngày sau (T078, R7).
   const rankedDue = rankDueItems(await listDueReviewItems(deps.db, userId, localDate), localDate);
   const rankedIds = rankedDue.map((i) => i.itemId);
 
   const result = planDailyPlan({
-    budgetMinutes: profile.dailyMinutes ?? 0,
+    budgetMinutes,
     paused: profile.paused,
-    newUnits: upcoming.map((u) => ({ unitId: u.id, estMinutes: u.estMinutes })),
+    newUnits: candidates,
     packReview: (minutes) =>
       packReviewBatches(rankedIds, minutes, deps.config.REVIEW_SECONDS_PER_ITEM),
     previousKind,
@@ -205,7 +253,25 @@ export async function getTodayPlan(deps: ServiceDeps, userId: string): Promise<D
     await generatePlan(deps, userId, profile, paramsOfPath(path), localDate);
     plan = await findPlan(deps.db, userId, localDate);
   }
-  return toDto(deps, plan!, profile.language);
+  const kanjiNotice = await kanjiNoticeFor(deps, userId, profile, paramsOfPath(path));
+  return toDto(deps, plan!, profile.language, kanjiNotice);
+}
+
+/** Tính `kanjiNotice` hiện tại (null nếu không chọn Kanji hoặc vẫn còn bài Kanji sắp tới). */
+async function kanjiNoticeFor(
+  deps: ServiceDeps,
+  userId: string,
+  profile: ProfileRow,
+  params: PathParams,
+): Promise<KanjiNoticeDto | null> {
+  if (!profile.skills.includes('kanji')) return null;
+  const ranked = await rankForUser(deps, userId, profile, params);
+  return computeKanjiNotice(
+    params,
+    profile.skills,
+    upcomingUnits(ranked),
+    await deps.contentCache.activeUnits(),
+  );
 }
 
 // --- Học thêm (T065, US2.5) ---
@@ -273,6 +339,7 @@ export async function getExtraUnit(deps: ServiceDeps, userId: string): Promise<P
   return {
     id: next.unit.id,
     type: 'new_unit',
+    kind: next.unit.kind,
     title: localize(next.unit.title, profile.language),
     estMinutes: next.unit.estMinutes,
     status: next.status === 'in_progress' ? 'in_progress' : 'pending',

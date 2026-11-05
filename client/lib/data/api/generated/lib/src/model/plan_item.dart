@@ -3,6 +3,7 @@
 //
 
 // ignore_for_file: unused_element
+import 'package:japanese_api/src/model/skill.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -29,6 +30,8 @@ class PlanItem {
     this.status,
 
     this.itemCount,
+
+    this.kind,
   });
 
   @JsonKey(name: r'id', required: false, includeIfNull: false)
@@ -53,6 +56,10 @@ class PlanItem {
   @JsonKey(name: r'itemCount', required: false, includeIfNull: false)
   final int? itemCount;
 
+  /// Kỹ năng của đơn vị với `new_unit` (client hiển thị nhãn Kanji); null với `review_batch`
+  @JsonKey(name: r'kind', required: false, includeIfNull: false)
+  final Skill? kind;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -62,7 +69,8 @@ class PlanItem {
           other.title == title &&
           other.estMinutes == estMinutes &&
           other.status == status &&
-          other.itemCount == itemCount;
+          other.itemCount == itemCount &&
+          other.kind == kind;
 
   @override
   int get hashCode =>
@@ -71,7 +79,8 @@ class PlanItem {
       title.hashCode +
       estMinutes.hashCode +
       status.hashCode +
-      (itemCount == null ? 0 : itemCount.hashCode);
+      (itemCount == null ? 0 : itemCount.hashCode) +
+      (kind == null ? 0 : kind.hashCode);
 
   factory PlanItem.fromJson(Map<String, dynamic> json) =>
       _$PlanItemFromJson(json);

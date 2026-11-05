@@ -3,6 +3,7 @@
 //
 
 // ignore_for_file: unused_element
+import 'package:japanese_api/src/model/review_facet.dart';
 import 'package:japanese_api/src/model/trial_content_units_inner_exercises_inner_all_of_answer_key.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
@@ -23,6 +24,8 @@ class TrialContentUnitsInnerExercisesInner {
 
     required this.type,
 
+    this.facet,
+
     required this.prompt,
 
     required this.payload,
@@ -39,6 +42,9 @@ class TrialContentUnitsInnerExercisesInner {
 
   @JsonKey(name: r'type', required: true, includeIfNull: false)
   final TrialContentUnitsInnerExercisesInnerTypeEnum type;
+
+  @JsonKey(name: r'facet', required: false, includeIfNull: false)
+  final ReviewFacet? facet;
 
   /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
   @JsonKey(name: r'prompt', required: true, includeIfNull: false)
@@ -65,6 +71,7 @@ class TrialContentUnitsInnerExercisesInner {
       other is TrialContentUnitsInnerExercisesInner &&
           other.id == id &&
           other.type == type &&
+          other.facet == facet &&
           other.prompt == prompt &&
           other.payload == payload &&
           other.answerKey == answerKey &&
@@ -75,6 +82,7 @@ class TrialContentUnitsInnerExercisesInner {
   int get hashCode =>
       id.hashCode +
       type.hashCode +
+      facet.hashCode +
       prompt.hashCode +
       payload.hashCode +
       answerKey.hashCode +

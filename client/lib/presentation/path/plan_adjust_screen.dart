@@ -20,8 +20,15 @@ const List<String> _goalTypes = <String>['daily_conversation', 'work', 'jlpt'];
 const List<String> _targetLevels = <String>['N5', 'N4', 'N3', 'N2', 'N1'];
 const List<int> _dailyMinutes = <int>[5, 10, 15, 30];
 
-/// Kỹ năng chưa có trong Giai đoạn 1: hiển thị là tùy chọn bị khóa (giống onboarding, T053).
-const List<String> _lockedSkills = <String>['listening', 'reading', 'kanji'];
+/// Kỹ năng chưa có trong phiên bản này: hiển thị là tùy chọn bị khóa (giống onboarding).
+const List<String> _lockedSkills = <String>['listening', 'reading'];
+
+/// Kỹ năng bật/tắt được trong kế hoạch (Kanji từ spec 003).
+const List<String> _selectableSkills = <String>[
+  'vocabulary',
+  'grammar',
+  'kanji',
+];
 
 /// Làm mới mọi màn hình phụ thuộc lộ trình/kế hoạch sau khi người học ghi đè.
 void invalidatePlanViews(WidgetRef ref) {
@@ -158,6 +165,24 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
     );
   }
 
+  /// Bật/tắt một kỹ năng (US2.4): chỉ đổi phạm vi kế hoạch kế tiếp, không mất tiến độ hay lịch ôn. Server tự
+  /// bỏ ưu tiên nếu kỹ năng đó đang được ưu tiên; UI hiển thị ưu tiên theo kỹ năng còn chọn.
+  Future<void> _toggleSkill(String skill, {required bool enabled}) {
+    final l10n = AppLocalizations.of(context);
+    final repo = ref.read(planAdjustmentRepositoryProvider);
+    final next = <String>[
+      for (final s in _selectableSkills)
+        if (s == skill ? enabled : _selectedSkills.contains(s)) s,
+    ];
+    return _run(
+      () => repo.update(ProfileChange(skills: next)),
+      l10n.planAdjustSkillsSaved,
+    );
+  }
+
+  List<String> get _selectedSkills =>
+      (_profile.skills ?? const <Skill>[]).map((s) => s.value).toList();
+
   Future<void> _setPriority(String? skill) {
     final l10n = AppLocalizations.of(context);
     final repo = ref.read(planAdjustmentRepositoryProvider);
@@ -219,7 +244,10 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
     final theme = Theme.of(context);
     final locale = Localizations.localeOf(context).toString();
     final paused = _profile.paused ?? false;
-    final priority = _profile.prioritizedSkill?.value;
+    final selectedSkills = _selectedSkills;
+    // Ưu tiên chỉ hợp lệ với kỹ năng còn được chọn (bỏ Kanji khi đang ưu tiên Kanji thì xóa lựa chọn ưu tiên).
+    final rawPriority = _profile.prioritizedSkill?.value;
+    final priority = selectedSkills.contains(rawPriority) ? rawPriority : null;
 
     return SingleChildScrollView(
       child: Column(
@@ -347,6 +375,37 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
             ],
           ),
           _Section(
+            title: l10n.planAdjustSkillsHeading,
+            children: <Widget>[
+              Text(l10n.planAdjustSkillsHint),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: <Widget>[
+                  for (final skill in _selectableSkills)
+                    FilterChip(
+                      key: Key('skill-toggle-$skill'),
+                      label: Text(skillLabel(l10n, skill)),
+                      selected: selectedSkills.contains(skill),
+                      // Luôn giữ ít nhất một kỹ năng được chọn.
+                      onSelected:
+                          _busy ||
+                              (selectedSkills.contains(skill) &&
+                                  selectedSkills.length == 1)
+                          ? null
+                          : (bool value) => _toggleSkill(skill, enabled: value),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                l10n.planAdjustSkillsKeepOne,
+                style: theme.textTheme.bodySmall,
+              ),
+            ],
+          ),
+          _Section(
             title: l10n.planAdjustSkillHeading,
             children: <Widget>[
               Text(l10n.planAdjustSkillHint),
@@ -363,7 +422,9 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
                         ? null
                         : (_) => _setPriority(null),
                   ),
-                  for (final skill in const <String>['vocabulary', 'grammar'])
+                  for (final skill in _selectableSkills.where(
+                    selectedSkills.contains,
+                  ))
                     ChoiceChip(
                       key: Key('priority-$skill'),
                       label: Text(skillLabel(l10n, skill)),

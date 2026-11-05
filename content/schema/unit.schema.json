@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://japanese-learning.local/schema/unit/1.0.0",
+  "$id": "https://japanese-learning.local/schema/unit/1.1.0",
   "title": "Đơn vị học (Learning Unit)",
-  "description": "Một file = một đơn vị học (từ vựng hoặc ngữ pháp) kèm mục nội dung và bài tập. Cấu trúc được JSON Schema kiểm tra; quy tắc nghiệp vụ (đủ bản dịch, đơn vị 5 phút cho mỗi level × kind, v.v.) do backend/src/domain/content-validation.ts kiểm tra khi seed và khi kích hoạt.",
+  "description": "Một file = một đơn vị học (từ vựng, ngữ pháp hoặc Kanji) kèm mục nội dung và bài tập. Cấu trúc được JSON Schema kiểm tra; quy tắc nghiệp vụ (đủ bản dịch, đơn vị 5 phút cho mỗi level × kind, v.v.) do backend/src/domain/content-validation.ts kiểm tra khi seed và khi kích hoạt.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,7 +17,7 @@
   ],
   "properties": {
     "$schema": { "type": "string" },
-    "kind": { "enum": ["vocabulary", "grammar"] },
+    "kind": { "enum": ["vocabulary", "grammar", "kanji"] },
     "level": { "enum": ["N5", "N4", "N3"] },
     "tier": {
       "enum": ["foundation", "core"],
@@ -54,6 +54,25 @@
       "items": { "$ref": "#/definitions/exercise" }
     }
   },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "kanji" } }, "required": ["kind"] },
+      "then": {
+        "properties": {
+          "tier": { "const": "core" },
+          "goalTags": { "minItems": 1 },
+          "items": {
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "required": ["japanese", "meaning", "topic", "kanjiDetails", "examples"]
+            }
+          }
+        },
+        "required": ["goalTags"]
+      }
+    }
+  ],
   "definitions": {
     "i18nText": {
       "type": "object",
@@ -68,6 +87,26 @@
       "description": "Chuỗi dùng chung (ví dụ chữ Nhật) hoặc văn bản dịch vi + en.",
       "oneOf": [{ "type": "string", "minLength": 1 }, { "$ref": "#/definitions/i18nText" }]
     },
+    "kanjiDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["onReadings", "kunReadings", "strokeCount"],
+      "description": "Thông tin riêng của chữ Kanji (chỉ hiển thị, không phải bài luyện viết).",
+      "properties": {
+        "onReadings": {
+          "type": "array",
+          "description": "Âm On, viết bằng katakana.",
+          "items": { "type": "string", "pattern": "^[\u30A0-\u30FF]+$" }
+        },
+        "kunReadings": {
+          "type": "array",
+          "description": "Âm Kun, viết bằng hiragana; dấu `.` phân cách okurigana (ví dụ `た.べる`).",
+          "items": { "type": "string", "pattern": "^[\u3040-\u309F.]+$" }
+        },
+        "strokeCount": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "components": { "$ref": "#/definitions/i18nText" }
+      }
+    },
     "example": {
       "type": "object",
       "additionalProperties": false,
@@ -75,6 +114,10 @@
       "properties": {
         "ja": { "type": "string", "minLength": 1 },
         "reading": { "type": "string" },
+        "kanjiReading": {
+          "type": "string",
+          "description": "Cách đọc của chính chữ Kanji trong từ ví dụ (chỉ với mục Kanji)."
+        },
         "translation": { "$ref": "#/definitions/i18nText" }
       }
     },
@@ -84,8 +127,14 @@
       "required": ["japanese", "meaning"],
       "properties": {
         "japanese": { "type": "string", "minLength": 1 },
-        "reading": { "type": "string", "description": "Bắt buộc với từ vựng." },
+        "reading": { "type": "string", "description": "Bắt buộc với từ vựng; không dùng với Kanji." },
         "meaning": { "$ref": "#/definitions/i18nText" },
+        "topic": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Khóa chủ đề của chữ trong content/topics.json; bắt buộc với kind=kanji."
+        },
+        "kanjiDetails": { "$ref": "#/definitions/kanjiDetails" },
         "explanation": {
           "$ref": "#/definitions/i18nText",
           "description": "Bắt buộc với ngữ pháp."
@@ -101,6 +150,11 @@
         "item": {
           "type": "string",
           "description": "Trường `japanese` của mục mà bài tập kiểm tra (đầu vào cho lịch ôn)."
+        },
+        "facet": {
+          "enum": ["item", "meaning", "reading", "word"],
+          "default": "item",
+          "description": "Khía cạnh được kiểm tra: `item` cho từ vựng/ngữ pháp; `meaning`/`reading`/`word` cho chữ Kanji."
         },
         "type": { "enum": ["multiple_choice", "matching", "fill_blank"] },
         "prompt": { "$ref": "#/definitions/i18nText" },

@@ -25,15 +25,11 @@ abstract final class OnboardingOptions {
   ];
   static const List<int> dailyMinutes = <int>[5, 10, 15, 30];
 
-  /// Kỹ năng có trong phiên bản này.
-  static const List<String> skills = <String>['vocabulary', 'grammar'];
+  /// Kỹ năng có trong phiên bản này (Kanji chọn được từ spec 003).
+  static const List<String> skills = <String>['vocabulary', 'grammar', 'kanji'];
 
   /// Kỹ năng hiển thị nhưng bị khóa kèm ghi chú "chưa có trong phiên bản này".
-  static const List<String> lockedSkills = <String>[
-    'listening',
-    'reading',
-    'kanji',
-  ];
+  static const List<String> lockedSkills = <String>['listening', 'reading'];
 }
 
 /// Các bước của trình hướng dẫn onboarding, theo thứ tự.

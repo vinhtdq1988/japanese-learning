@@ -3,7 +3,13 @@
 .claude
 .specify
 specs
-client
+# Client không vào image API, trừ phông Noto Sans JP: backend đọc bảng cmap để chặn nội dung Kanji thiếu glyph.
+client/*
+!client/assets
+client/assets/*
+!client/assets/fonts
+client/assets/fonts/*
+!client/assets/fonts/NotoSansJP.ttf
 **/node_modules
 **/dist
 **/coverage

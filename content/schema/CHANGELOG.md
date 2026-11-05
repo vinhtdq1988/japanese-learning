@@ -8,3 +8,6 @@ Mọi thay đổi JSON Schema trong thư mục này PHẢI tăng phiên bản tr
 | `unit.schema.json` | 1.0.0 | 2026-11-04 | Phiên bản đầu: đơn vị học (gồm `tier`, `isTrial`), mục nội dung, bài tập `multiple_choice` / `matching` / `fill_blank`; lựa chọn và vế ghép nhận chuỗi dùng chung hoặc văn bản dịch vi + en. |
 | `placement.schema.json` | 1.0.0 | 2026-11-04 | Phiên bản đầu: bộ cố định 20 câu (8 N5, 6 N4, 6 N3), mỗi câu 4 lựa chọn. |
 | `topics.schema.json` | 1.0.0 | 2026-11-04 | Phiên bản đầu: danh sách mảng nội dung có khóa ổn định, song ngữ vi/en. |
+| `unit.schema.json` | 1.1.0 | 2026-11-05 | Bài học Kanji (003): `kind` nhận `kanji`; mục thêm `topic`, `kanjiDetails` (`onReadings` katakana, `kunReadings` hiragana + `.`, `strokeCount` 1–30, `components`); ví dụ thêm `kanjiReading`; bài tập thêm `facet` (`item`/`meaning`/`reading`/`word`, mặc định `item`); với `kind=kanji`: `tier=core`, `goalTags` không rỗng, 3–5 mục có đủ `topic`/`kanjiDetails`/`examples`. Bổ sung, file đơn vị cũ vẫn hợp lệ. |
+| `topics.schema.json` | 1.1.0 | 2026-11-05 | Bài học Kanji (003): `skill` nhận thêm `kanji`. |
+| `placement.schema.json` | 1.0.0 | 2026-11-05 | Không đổi: `skill` vẫn chỉ `vocabulary`, `grammar` (placement không có Kanji). |

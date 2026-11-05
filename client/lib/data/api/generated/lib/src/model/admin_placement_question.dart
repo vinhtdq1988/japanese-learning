@@ -3,8 +3,8 @@
 //
 
 // ignore_for_file: unused_element
-import 'package:japanese_api/src/model/skill.dart';
 import 'package:japanese_api/src/model/content_level.dart';
+import 'package:japanese_api/src/model/i18n_text.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -22,17 +22,19 @@ class AdminPlacementQuestion {
   AdminPlacementQuestion({
     this.id,
 
-    this.level,
+    required this.level,
 
-    this.skill,
+    required this.skill,
 
-    this.topicId,
+    required this.topicId,
 
-    this.prompt,
+    required this.prompt,
 
-    this.choices,
+    this.hint,
 
-    this.correctChoice,
+    required this.choices,
+
+    required this.correctChoice,
 
     this.position,
 
@@ -42,23 +44,31 @@ class AdminPlacementQuestion {
   @JsonKey(name: r'id', required: false, includeIfNull: false)
   final String? id;
 
-  @JsonKey(name: r'level', required: false, includeIfNull: false)
-  final ContentLevel? level;
+  @JsonKey(name: r'level', required: true, includeIfNull: false)
+  final ContentLevel level;
 
-  @JsonKey(name: r'skill', required: false, includeIfNull: false)
-  final Skill? skill;
+  /// Placement không có Kanji (422 nếu gửi kanji)
+  @JsonKey(name: r'skill', required: true, includeIfNull: false)
+  final AdminPlacementQuestionSkillEnum skill;
 
-  @JsonKey(name: r'topicId', required: false, includeIfNull: false)
-  final String? topicId;
+  @JsonKey(name: r'topicId', required: true, includeIfNull: false)
+  final String topicId;
 
-  @JsonKey(name: r'prompt', required: false, includeIfNull: false)
-  final String? prompt;
+  /// Câu hỏi bằng tiếng Nhật
+  @JsonKey(name: r'prompt', required: true, includeIfNull: false)
+  final String prompt;
 
-  @JsonKey(name: r'choices', required: false, includeIfNull: false)
-  final List<String>? choices;
+  /// Gợi ý song ngữ nối sau câu hỏi (tùy chọn)
+  @JsonKey(name: r'hint', required: false, includeIfNull: false)
+  final I18nText? hint;
 
-  @JsonKey(name: r'correctChoice', required: false, includeIfNull: false)
-  final int? correctChoice;
+  @JsonKey(name: r'choices', required: true, includeIfNull: false)
+  final List<String> choices;
+
+  /// Chỉ số đáp án đúng trong `choices`
+  // minimum: 0
+  @JsonKey(name: r'correctChoice', required: true, includeIfNull: false)
+  final int correctChoice;
 
   @JsonKey(name: r'position', required: false, includeIfNull: false)
   final int? position;
@@ -76,6 +86,7 @@ class AdminPlacementQuestion {
           other.skill == skill &&
           other.topicId == topicId &&
           other.prompt == prompt &&
+          other.hint == hint &&
           other.choices == choices &&
           other.correctChoice == correctChoice &&
           other.position == position &&
@@ -88,6 +99,7 @@ class AdminPlacementQuestion {
       skill.hashCode +
       topicId.hashCode +
       prompt.hashCode +
+      (hint == null ? 0 : hint.hashCode) +
       choices.hashCode +
       correctChoice.hashCode +
       position.hashCode +
@@ -102,4 +114,19 @@ class AdminPlacementQuestion {
   String toString() {
     return toJson().toString();
   }
+}
+
+/// Placement không có Kanji (422 nếu gửi kanji)
+enum AdminPlacementQuestionSkillEnum {
+  @JsonValue(r'vocabulary')
+  vocabulary(r'vocabulary'),
+  @JsonValue(r'grammar')
+  grammar(r'grammar');
+
+  const AdminPlacementQuestionSkillEnum(this.value);
+
+  final String value;
+
+  @override
+  String toString() => value;
 }

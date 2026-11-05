@@ -1,5 +1,12 @@
 import { localize, resolveText, type Localizable } from './i18n.js';
-import type { ExerciseType, I18nText, Language, Skill } from './types.js';
+import type {
+  ExerciseType,
+  I18nText,
+  KanjiDetails,
+  Language,
+  ReviewFacet,
+  Skill,
+} from './types.js';
 
 // Ảnh chụp (snapshot) nội dung của một phiên học (R12). Chụp một lần lúc bắt đầu phiên, đã bản địa
 // hóa theo ngôn ngữ của người học, nên admin sửa nội dung giữa chừng không đổi bài tập của phiên đang
@@ -15,13 +22,33 @@ export interface SnapshotItem {
   meaning: string;
   /** Vắng mặt khi mục không có giải thích (schema `ContentItem.explanation` không nhận null). */
   explanation?: string;
-  examples: { ja: string; reading: string | null; translation: string }[];
+  examples: {
+    ja: string;
+    reading: string | null;
+    /** Kanji: cách đọc của chính chữ trong từ ví dụ này. */
+    kanjiReading?: string;
+    translation: string;
+  }[];
+  /** Chủ đề riêng của chữ (chỉ Kanji). */
+  topicId?: string;
+  /** Chi tiết chữ Kanji (`components` đã bản địa hóa); chỉ có với mục Kanji. */
+  kanji?: SnapshotKanji;
+}
+
+/** Chi tiết chữ Kanji trong snapshot (đã bản địa hóa `components`). */
+export interface SnapshotKanji {
+  onReadings: string[];
+  kunReadings: string[];
+  strokeCount: number;
+  components?: string;
 }
 
 export interface SnapshotExercise {
   id: string;
   itemId: string | null;
   topicId: string;
+  /** Khía cạnh được kiểm tra; vắng mặt (snapshot cũ) hiểu là `item` (research K13). */
+  facet?: ReviewFacet;
   type: ExerciseType;
   prompt: string;
   /** Payload gốc kèm đáp án (`correct_index`, `pairs`, `accepted_answers`); chỉ dùng phía server. */
@@ -49,7 +76,16 @@ export interface ItemSource {
   reading: string | null;
   meaning: I18nText;
   explanation: I18nText | null;
-  examples: { ja: string; reading?: string | null; translation: I18nText }[];
+  examples: {
+    ja: string;
+    reading?: string | null;
+    kanjiReading?: string | null;
+    translation: I18nText;
+  }[];
+  /** Chủ đề riêng của chữ (chỉ Kanji). */
+  topicId?: string | null;
+  /** Chi tiết chữ Kanji (chỉ Kanji). */
+  kanjiDetails?: KanjiDetails | null;
   position: number;
   status: 'active' | 'inactive';
 }
@@ -59,6 +95,8 @@ export interface ExerciseSource {
   itemId: string | null;
   /** Mảng nội dung của bài tập (mảng của đơn vị chứa nó). */
   topicId: string;
+  /** Khía cạnh kiểm tra; vắng mặt = `item`. */
+  facet?: ReviewFacet;
   type: ExerciseType;
   prompt: I18nText;
   payload: Record<string, unknown>;
@@ -72,6 +110,16 @@ const byPositionThenId = (
   a: { position: number; id: string },
   b: { position: number; id: string },
 ) => a.position - b.position || a.id.localeCompare(b.id);
+
+/** Chi tiết chữ Kanji đã bản địa hóa `components` theo ngôn ngữ phiên. */
+function localizeKanji(details: KanjiDetails, language: Language): SnapshotKanji {
+  return {
+    onReadings: [...details.onReadings],
+    kunReadings: [...details.kunReadings],
+    strokeCount: details.strokeCount,
+    ...(details.components ? { components: localize(details.components, language) } : {}),
+  };
+}
 
 /**
  * Dựng snapshot từ nội dung hiện hành. Chỉ lấy mục và bài tập `active` (data-model §2.10); bài tập gắn
@@ -87,6 +135,9 @@ export function buildSnapshot(input: {
   const { language } = input;
   const items = input.items.filter((i) => i.status === 'active').sort(byPositionThenId);
   const activeItemIds = new Set(items.map((i) => i.id));
+  const topicOfItem = new Map(
+    items.flatMap((i) => (i.topicId ? [[i.id, i.topicId] as const] : [])),
+  );
 
   return {
     version: SNAPSHOT_VERSION,
@@ -103,8 +154,11 @@ export function buildSnapshot(input: {
       examples: i.examples.map((e) => ({
         ja: e.ja,
         reading: e.reading ?? null,
+        ...(e.kanjiReading ? { kanjiReading: e.kanjiReading } : {}),
         translation: localize(e.translation, language),
       })),
+      ...(i.topicId ? { topicId: i.topicId } : {}),
+      ...(i.kanjiDetails ? { kanji: localizeKanji(i.kanjiDetails, language) } : {}),
     })),
     exercises: input.exercises
       .filter((e) => e.status === 'active' && (e.itemId === null || activeItemIds.has(e.itemId)))
@@ -112,7 +166,9 @@ export function buildSnapshot(input: {
       .map((e) => ({
         id: e.id,
         itemId: e.itemId,
-        topicId: e.topicId,
+        // Thống kê mảng theo chủ đề của chữ Kanji được kiểm tra, ngược lại theo chủ đề của đơn vị (research K4).
+        topicId: (e.itemId ? topicOfItem.get(e.itemId) : undefined) ?? e.topicId,
+        facet: e.facet ?? 'item',
         type: e.type,
         prompt: localize(e.prompt, language),
         payload: e.payload,
@@ -170,6 +226,8 @@ export function buildReviewSnapshot(input: {
 export interface PublicExercise {
   id: string;
   type: ExerciseType;
+  /** Khía cạnh kiểm tra (không phải đáp án): `item` hoặc meaning | reading | word với Kanji. */
+  facet: ReviewFacet;
   prompt: string;
   payload: Record<string, unknown>;
 }
@@ -217,7 +275,12 @@ export function shuffleStable<T>(values: readonly T[], seedText: string): T[] {
  * - fill_blank: `{ hint? }`
  */
 export function publicExercise(exercise: SnapshotExercise, language: Language): PublicExercise {
-  const base = { id: exercise.id, type: exercise.type, prompt: exercise.prompt };
+  const base = {
+    id: exercise.id,
+    type: exercise.type,
+    facet: exercise.facet ?? ('item' as const),
+    prompt: exercise.prompt,
+  };
   switch (exercise.type) {
     case 'multiple_choice': {
       const choices = (exercise.payload.choices as Localizable[]).map((c) =>
@@ -247,5 +310,9 @@ export function parseSnapshot(raw: unknown): SessionSnapshot {
   if (!snap || snap.version !== SNAPSHOT_VERSION || !Array.isArray(snap.exercises)) {
     throw new Error('Snapshot phiên học không hợp lệ hoặc thuộc phiên bản không hỗ trợ');
   }
-  return snap as SessionSnapshot;
+  // Snapshot tạo trước spec 003 không có `facet`: hiểu là `item` để phiên dở dang vẫn tiếp tục/chấm được.
+  return {
+    ...snap,
+    exercises: snap.exercises.map((e) => ({ ...e, facet: e.facet ?? 'item' })),
+  } as SessionSnapshot;
 }

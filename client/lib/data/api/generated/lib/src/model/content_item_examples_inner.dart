@@ -17,13 +17,25 @@ part 'content_item_examples_inner.g.dart';
 )
 class ContentItemExamplesInner {
   /// Returns a new [ContentItemExamplesInner] instance.
-  ContentItemExamplesInner({this.ja, this.reading, this.translation});
+  ContentItemExamplesInner({
+    this.ja,
+
+    this.reading,
+
+    this.kanjiReading,
+
+    this.translation,
+  });
 
   @JsonKey(name: r'ja', required: false, includeIfNull: false)
   final String? ja;
 
   @JsonKey(name: r'reading', required: false, includeIfNull: false)
   final String? reading;
+
+  /// Kanji: cách đọc của chữ trong từ ví dụ này
+  @JsonKey(name: r'kanjiReading', required: false, includeIfNull: false)
+  final String? kanjiReading;
 
   /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
   @JsonKey(name: r'translation', required: false, includeIfNull: false)
@@ -35,12 +47,14 @@ class ContentItemExamplesInner {
       other is ContentItemExamplesInner &&
           other.ja == ja &&
           other.reading == reading &&
+          other.kanjiReading == kanjiReading &&
           other.translation == translation;
 
   @override
   int get hashCode =>
       ja.hashCode +
       (reading == null ? 0 : reading.hashCode) +
+      (kanjiReading == null ? 0 : kanjiReading.hashCode) +
       translation.hashCode;
 
   factory ContentItemExamplesInner.fromJson(Map<String, dynamic> json) =>

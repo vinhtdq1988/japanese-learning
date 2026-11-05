@@ -1,4 +1,9 @@
 import { randomUUID } from 'node:crypto';
+import { copyFileSync, mkdtempSync, readdirSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import pg from 'pg';
 import { is } from 'drizzle-orm';
 import { PgTable, getTableConfig } from 'drizzle-orm/pg-core';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
@@ -7,7 +12,8 @@ import { runMigrations } from '../../src/db/migrate.js';
 import * as schema from '../../src/db/schema.js';
 import { openTestDb, requireDatabaseUrl, resetDatabase } from './helpers.js';
 
-// Kiểm tra migration `0001_init.sql` (T008) và schema Drizzle (T009) trên PostgreSQL thật.
+// Kiểm tra migration `0001_init.sql` (T008) và schema Drizzle (T009) trên PostgreSQL thật; nâng cấp
+// 0002/0003 (Kanji) trên dữ liệu 001 có sẵn (spec 003, T008).
 
 let handle: DbHandle;
 
@@ -423,7 +429,7 @@ describe('ràng buộc ghi bản ghi học tập idempotent (FR-041)', () => {
     const itemId = item.rows[0].id as string;
     const review = (ease: number) =>
       failureCode(
-        `INSERT INTO review_schedules (user_id, item_id, interval_days, ease, due_date) VALUES ($1,$2,1,$3,'2026-01-06') ON CONFLICT (user_id, item_id) DO UPDATE SET ease = EXCLUDED.ease`,
+        `INSERT INTO review_schedules (user_id, item_id, interval_days, ease, due_date) VALUES ($1,$2,1,$3,'2026-01-06') ON CONFLICT (user_id, item_id, facet) DO UPDATE SET ease = EXCLUDED.ease`,
         [f.userId, itemId, ease],
       );
     expect(await review(1.29)).toBe(CHECK);
@@ -480,5 +486,216 @@ describe('xóa vĩnh viễn tài khoản (FR-003)', () => {
     expect(logs.rows).toEqual([{ actor_id: null }]);
     // Nội dung dùng chung không bị xóa theo người học.
     expect((await q(`SELECT count(*)::int AS n FROM exercises`)).rows[0].n).toBe(1);
+  });
+});
+
+// --- Nâng cấp 0002/0003 trên dữ liệu 001 (spec 003, data-model §5) ---
+
+const MIGRATIONS_DIR = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  '../../src/db/migrations',
+);
+
+/** URL tới CSDL khác trên cùng máy chủ (đổi tên CSDL ở cuối chuỗi kết nối). */
+function urlForDatabase(baseUrl: string, name: string): string {
+  const url = new URL(baseUrl);
+  url.pathname = `/${name}`;
+  return url.toString();
+}
+
+describe('nâng cấp migration Kanji (0002, 0003) trên dữ liệu 001', () => {
+  const dbName = `jl_upgrade_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
+  let admin: pg.Client;
+  let upgraded: pg.Pool;
+  let onlyInit: string;
+
+  beforeAll(async () => {
+    const base = requireDatabaseUrl();
+    admin = new pg.Client({ connectionString: urlForDatabase(base, 'postgres') });
+    await admin.connect();
+    await admin.query(
+      `CREATE DATABASE ${dbName} TEMPLATE template0 ENCODING 'UTF8' LC_COLLATE 'C' LC_CTYPE 'C'`,
+    );
+    // Thư mục chỉ chứa 0001 để dựng CSDL ở trạng thái của hệ thống 001.
+    onlyInit = mkdtempSync(path.join(tmpdir(), 'mig-0001-'));
+    for (const f of readdirSync(MIGRATIONS_DIR).filter((n) => n.startsWith('0001_'))) {
+      copyFileSync(path.join(MIGRATIONS_DIR, f), path.join(onlyInit, f));
+    }
+    await runMigrations(urlForDatabase(base, dbName), onlyInit);
+    upgraded = new pg.Pool({ connectionString: urlForDatabase(base, dbName) });
+  });
+
+  afterAll(async () => {
+    await upgraded?.end();
+    await admin?.query(`DROP DATABASE IF EXISTS ${dbName} WITH (FORCE)`);
+    await admin?.end();
+    if (onlyInit) rmSync(onlyInit, { recursive: true, force: true });
+  });
+
+  const uq = (text: string, params: unknown[] = []) => upgraded.query(text, params);
+  const upgradeCode = async (text: string, params: unknown[] = []) => {
+    try {
+      await uq(text, params);
+      return undefined;
+    } catch (err) {
+      return (err as { code?: string }).code;
+    }
+  };
+
+  it('dữ liệu 001 giữ nguyên với facet = item sau khi chạy 0002, 0003', async () => {
+    // Dữ liệu 001: người học có lịch ôn, bài tập, bản ghi học, kế hoạch có gói ôn.
+    const user = (
+      await uq(
+        `INSERT INTO users (email, password_hash) VALUES ('up@example.com', 'h') RETURNING id`,
+      )
+    ).rows[0].id as string;
+    await uq(
+      `INSERT INTO learning_profiles (user_id, display_name, skills) VALUES ($1, 'Up', ARRAY['vocabulary','grammar']::skill[])`,
+      [user],
+    );
+    const topic = (
+      await uq(
+        `INSERT INTO topics (skill, name, level) VALUES ('vocabulary', '{"vi":"a","en":"a"}', 'N5') RETURNING id`,
+      )
+    ).rows[0].id as string;
+    const unit = (
+      await uq(
+        `INSERT INTO learning_units (kind, title, level, topic_id, difficulty, est_minutes)
+         VALUES ('vocabulary', '{"vi":"t","en":"t"}', 'N5', $1, 1, 5) RETURNING id`,
+        [topic],
+      )
+    ).rows[0].id as string;
+    const item = (
+      await uq(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning) VALUES ($1, 'vocabulary', '水', '{}') RETURNING id`,
+        [unit],
+      )
+    ).rows[0].id as string;
+    const exercise = (
+      await uq(
+        `INSERT INTO exercises (unit_id, item_id, type, prompt, payload, feedback_correct, feedback_incorrect)
+         VALUES ($1, $2, 'multiple_choice', '{}', '{}', '{}', '{}') RETURNING id`,
+        [unit, item],
+      )
+    ).rows[0].id as string;
+    const session = (
+      await uq(
+        `INSERT INTO lesson_sessions (user_id, kind, unit_id, snapshot) VALUES ($1, 'new_unit', $2, '{}') RETURNING id`,
+        [user, unit],
+      )
+    ).rows[0].id as string;
+    await uq(
+      `INSERT INTO study_records (user_id, client_event_id, session_id, exercise_id, item_id, topic_id, is_correct, submitted_answer, context, local_date)
+       VALUES ($1, $2, $3, $4, $5, $6, true, '0', 'lesson', '2026-01-05')`,
+      [user, randomUUID(), session, exercise, item, topic],
+    );
+    await uq(
+      `INSERT INTO review_schedules (user_id, item_id, interval_days, ease, due_date) VALUES ($1, $2, 1, 2.50, '2026-01-06')`,
+      [user, item],
+    );
+    const plan = (
+      await uq(
+        `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes) VALUES ($1, '2026-01-05', 10, 5) RETURNING id`,
+        [user],
+      )
+    ).rows[0].id as string;
+    await uq(
+      `INSERT INTO daily_plan_items (plan_id, type, review_item_ids, est_minutes) VALUES ($1, 'review_batch', ARRAY[$2]::uuid[], 5)`,
+      [plan, item],
+    );
+
+    const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
+    expect(result.applied).toEqual(['0002_kanji_skill.sql', '0003_kanji.sql']);
+
+    expect((await uq(`SELECT facet FROM review_schedules`)).rows).toEqual([{ facet: 'item' }]);
+    expect((await uq(`SELECT facet FROM exercises`)).rows).toEqual([{ facet: 'item' }]);
+    expect((await uq(`SELECT facet FROM study_records`)).rows).toEqual([{ facet: 'item' }]);
+    expect((await uq(`SELECT review_facets FROM daily_plan_items`)).rows).toEqual([
+      { review_facets: null },
+    ]);
+    expect(
+      (await uq(`SELECT skills::text[] AS skills, kanji_selected_at FROM learning_profiles`)).rows,
+    ).toEqual([{ skills: ['vocabulary', 'grammar'], kanji_selected_at: null }]);
+    expect((await uq(`SELECT topic_id, kanji_details FROM content_items`)).rows).toEqual([
+      { topic_id: null, kanji_details: null },
+    ]);
+    // Khóa chính mới (user, item, facet): cho phép thêm khía cạnh khác của cùng mục, chặn trùng cặp.
+    const insertReading = () =>
+      upgradeCode(
+        `INSERT INTO review_schedules (user_id, item_id, facet, interval_days, ease, due_date)
+         VALUES ($1, $2, 'reading', 1, 2.50, '2026-01-06')`,
+        [user, item],
+      );
+    expect(await insertReading()).toBeUndefined();
+    expect(await insertReading()).toBe(UNIQUE);
+  });
+
+  it('CHECK placement không nhận Kanji; CHECK mục Kanji một chiều cho phép bản nháp', async () => {
+    const topic = (await uq(`SELECT id FROM topics WHERE skill = 'vocabulary' LIMIT 1`)).rows[0]
+      .id as string;
+    expect(
+      await upgradeCode(
+        `INSERT INTO placement_questions (level, skill, topic_id, prompt, choices, correct_choice)
+         VALUES ('N5', 'kanji', $1, '{"ja":"q"}', '["a","b"]', 0)`,
+        [topic],
+      ),
+    ).toBe(CHECK);
+
+    const kanjiTopic = (
+      await uq(
+        `INSERT INTO topics (skill, name, level) VALUES ('kanji', '{"vi":"s","en":"n"}', 'N5') RETURNING id`,
+      )
+    ).rows[0].id as string;
+    const unit = (await uq(`SELECT id FROM learning_units LIMIT 1`)).rows[0].id as string;
+    const details = JSON.stringify({ onReadings: ['サン'], kunReadings: [], strokeCount: 3 });
+    // Từ vựng có kanji_details hoặc topic_id → bị CHECK từ chối.
+    expect(
+      await upgradeCode(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning, kanji_details)
+         VALUES ($1, 'vocabulary', '山', '{}', $2)`,
+        [unit, details],
+      ),
+    ).toBe(CHECK);
+    expect(
+      await upgradeCode(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning, topic_id)
+         VALUES ($1, 'vocabulary', '山', '{}', $2)`,
+        [unit, kanjiTopic],
+      ),
+    ).toBe(CHECK);
+    // Kanji thiếu kanji_details/topic_id (bản nháp) PHẢI được chấp nhận.
+    expect(
+      await upgradeCode(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning) VALUES ($1, 'kanji', '三', '{}')`,
+        [unit],
+      ),
+    ).toBeUndefined();
+    expect(
+      await upgradeCode(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning, kanji_details, topic_id)
+         VALUES ($1, 'kanji', '二', '{}', $2, $3)`,
+        [unit, details, kanjiTopic],
+      ),
+    ).toBeUndefined();
+  });
+
+  it('review_facets phải cùng độ dài review_item_ids', async () => {
+    const user = (await uq(`SELECT id FROM users LIMIT 1`)).rows[0].id as string;
+    const plan = (
+      await uq(
+        `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes) VALUES ($1, '2026-01-09', 10, 5) RETURNING id`,
+        [user],
+      )
+    ).rows[0].id as string;
+    const ids = `{${randomUUID()},${randomUUID()}}`;
+    const insert = (facets: string | null) =>
+      upgradeCode(
+        `INSERT INTO daily_plan_items (plan_id, type, review_item_ids, review_facets, est_minutes)
+         VALUES ($1, 'review_batch', $2::uuid[], $3::review_facet[], 5)`,
+        [plan, ids, facets],
+      );
+    expect(await insert('{meaning}')).toBe(CHECK);
+    expect(await insert('{meaning,reading}')).toBeUndefined();
+    expect(await insert(null)).toBeUndefined();
   });
 });

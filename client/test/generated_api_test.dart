@@ -11,7 +11,27 @@ import 'package:japanese_learning_client/platform/platform.dart';
 
 /// Adapter giả ghi lại yêu cầu và trả JSON cố định.
 class _FakeAdapter implements HttpClientAdapter {
+  _FakeAdapter([Map<String, Object?>? body]) : _body = body ?? _defaultPlan;
+
+  final Map<String, Object?> _body;
   final List<RequestOptions> requests = <RequestOptions>[];
+
+  static final Map<String, Object?> _defaultPlan = <String, Object?>{
+    'id': 'plan-1',
+    'localDate': '2026-11-04',
+    'budgetMinutes': 10,
+    'estimatedMinutes': 5,
+    'status': 'open',
+    'items': <Object?>[
+      <String, Object?>{
+        'id': 'item-1',
+        'type': 'new_unit',
+        'title': 'あいさつ',
+        'estMinutes': 5,
+        'status': 'pending',
+      },
+    ],
+  };
 
   @override
   Future<ResponseBody> fetch(
@@ -21,22 +41,7 @@ class _FakeAdapter implements HttpClientAdapter {
   ) async {
     requests.add(options);
     return ResponseBody.fromString(
-      jsonEncode(<String, Object?>{
-        'id': 'plan-1',
-        'localDate': '2026-11-04',
-        'budgetMinutes': 10,
-        'estimatedMinutes': 5,
-        'status': 'open',
-        'items': <Object?>[
-          <String, Object?>{
-            'id': 'item-1',
-            'type': 'new_unit',
-            'title': 'あいさつ',
-            'estMinutes': 5,
-            'status': 'pending',
-          },
-        ],
-      }),
+      jsonEncode(_body),
       200,
       headers: <String, List<String>>{
         Headers.contentTypeHeader: <String>['application/json'],
@@ -80,6 +85,58 @@ void main() {
       expect(plan.status, DailyPlanStatusEnum.open);
       expect(plan.items!.single.type, PlanItemTypeEnum.newUnit);
       expect(plan.items!.single.title, 'あいさつ');
+    },
+  );
+
+  test(
+    'API client giải mã được Skill.kanji, PlanItem.kind, kanjiNotice và ReviewFacet',
+    () async {
+      final adapter = _FakeAdapter(<String, Object?>{
+        'id': 'plan-2',
+        'localDate': '2026-11-05',
+        'budgetMinutes': 10,
+        'estimatedMinutes': 5,
+        'status': 'open',
+        'items': <Object?>[
+          <String, Object?>{
+            'id': 'item-k',
+            'type': 'new_unit',
+            'kind': 'kanji',
+            'title': 'Kanji số đếm',
+            'estMinutes': 5,
+            'status': 'pending',
+          },
+        ],
+        'kanjiNotice': <String, Object?>{
+          'code': 'kanji_exhausted',
+          'suggestion': 'raise_level',
+        },
+      });
+      final dio = createDio(
+        tokenStore: MemoryTokenStore(
+          const StoredTokens(accessToken: 'a', refreshToken: 'r'),
+        ),
+        onSessionExpired: () {},
+        baseUrl: 'http://api.test/api/v1',
+        httpClientAdapter: adapter,
+      );
+      final api = JapaneseApi(dio: dio, interceptors: const <Interceptor>[]);
+
+      final plan = (await api.getDailyApi().getToday()).data!;
+
+      expect(plan.items!.single.kind, Skill.kanji);
+      expect(
+        plan.kanjiNotice!.code,
+        DailyPlanKanjiNoticeCodeEnum.kanjiExhausted,
+      );
+      expect(
+        plan.kanjiNotice!.suggestion,
+        DailyPlanKanjiNoticeSuggestionEnum.raiseLevel,
+      );
+      expect(
+        ReviewFacet.values.map((f) => f.name),
+        containsAll(<String>['item', 'meaning', 'reading', 'word']),
+      );
     },
   );
 }

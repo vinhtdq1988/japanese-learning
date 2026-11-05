@@ -2158,5 +2158,80 @@
   "restoreExpired": "Đã quá 30 ngày nên dữ liệu của tài khoản này đã bị xóa. Hãy đăng xuất rồi đăng ký tài khoản mới.",
   "@restoreExpired": {
     "description": "Thông báo quá hạn khôi phục"
+  },
+  "kanjiOnLabel": "Âm On",
+  "@kanjiOnLabel": {
+    "description": "Nhãn nhóm âm On (đọc kiểu Hán) của chữ Kanji"
+  },
+  "kanjiKunLabel": "Âm Kun",
+  "@kanjiKunLabel": {
+    "description": "Nhãn nhóm âm Kun (đọc kiểu Nhật) của chữ Kanji"
+  },
+  "kanjiStrokeCount": "Số nét: {count}",
+  "@kanjiStrokeCount": {
+    "description": "Số nét của chữ Kanji (chỉ hiển thị)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "kanjiComponents": "Thành phần: {text}",
+  "@kanjiComponents": {
+    "description": "Bộ thủ/thành phần cấu tạo chữ",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "kanjiExamplesLabel": "Từ ví dụ",
+  "@kanjiExamplesLabel": {
+    "description": "Nhãn danh sách từ ví dụ chứa chữ Kanji"
+  },
+  "kanjiReadingInWord": "Trong từ này đọc là: {reading}",
+  "@kanjiReadingInWord": {
+    "description": "Cách đọc của chữ Kanji trong từ ví dụ",
+    "placeholders": {
+      "reading": {
+        "type": "String"
+      }
+    }
+  },
+  "kanjiAttentionHeading": "Chữ cần chú ý",
+  "@kanjiAttentionHeading": {
+    "description": "Tiêu đề danh sách chữ Kanji trả lời sai trong tóm tắt bài"
+  },
+  "kanjiAttentionHint": "Những chữ bạn trả lời sai trong bài này. Chúng sẽ được ôn lại sớm.",
+  "@kanjiAttentionHint": {
+    "description": "Giải thích danh sách chữ cần chú ý"
+  },
+  "planAdjustSkillsHeading": "Kỹ năng đang học",
+  "@planAdjustSkillsHeading": {
+    "description": "Tiêu đề phần bật/tắt kỹ năng trong điều chỉnh kế hoạch"
+  },
+  "planAdjustSkillsHint": "Chọn các kỹ năng muốn có trong kế hoạch. Đổi kỹ năng không làm mất tiến độ hay lịch ôn; áp dụng cho các ngày sau.",
+  "@planAdjustSkillsHint": {
+    "description": "Giải thích phần bật/tắt kỹ năng"
+  },
+  "planAdjustSkillsKeepOne": "Cần giữ ít nhất một kỹ năng.",
+  "@planAdjustSkillsKeepOne": {
+    "description": "Ghi chú không thể bỏ hết kỹ năng"
+  },
+  "planAdjustSkillsSaved": "Đã lưu kỹ năng. Có hiệu lực từ kế hoạch kế tiếp.",
+  "@planAdjustSkillsSaved": {
+    "description": "Thông báo sau khi đổi kỹ năng"
+  },
+  "todayTypeKanji": "Bài Kanji",
+  "@todayTypeKanji": {
+    "description": "Nhãn mục kế hoạch là bài Kanji"
+  },
+  "todayKanjiExhaustedRaiseLevel": "Bạn đã học hết bài Kanji ở trình độ hiện tại. Hãy nâng trình độ trong phần điều chỉnh kế hoạch để học thêm Kanji.",
+  "@todayKanjiExhaustedRaiseLevel": {
+    "description": "Thông báo hết bài Kanji, gợi ý nâng trình độ"
+  },
+  "todayKanjiExhaustedContent": "Bạn đã học hết nội dung Kanji hiện có. Kanji mới sẽ xuất hiện khi được bổ sung.",
+  "@todayKanjiExhaustedContent": {
+    "description": "Thông báo hết toàn bộ nội dung Kanji"
   }
 }

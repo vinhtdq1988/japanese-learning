@@ -3,6 +3,7 @@ import 'package:japanese_api/src/model/admin_placement_question.dart';
 import 'package:japanese_api/src/model/admin_set_active_placement_set_request.dart';
 import 'package:japanese_api/src/model/admin_set_unit_status_request.dart';
 import 'package:japanese_api/src/model/admin_set_user_status_request.dart';
+import 'package:japanese_api/src/model/admin_topic.dart';
 import 'package:japanese_api/src/model/admin_unit.dart';
 import 'package:japanese_api/src/model/admin_unit_write.dart';
 import 'package:japanese_api/src/model/admin_unit_write_exercises_inner.dart';
@@ -18,11 +19,14 @@ import 'package:japanese_api/src/model/confirm_password_reset_request.dart';
 import 'package:japanese_api/src/model/content_item.dart';
 import 'package:japanese_api/src/model/content_item_examples_inner.dart';
 import 'package:japanese_api/src/model/daily_plan.dart';
+import 'package:japanese_api/src/model/daily_plan_kanji_notice.dart';
 import 'package:japanese_api/src/model/delete_account200_response.dart';
 import 'package:japanese_api/src/model/delete_account_request.dart';
 import 'package:japanese_api/src/model/error.dart';
 import 'package:japanese_api/src/model/exercise.dart';
 import 'package:japanese_api/src/model/i18n_text.dart';
+import 'package:japanese_api/src/model/kanji_details.dart';
+import 'package:japanese_api/src/model/kanji_details_write.dart';
 import 'package:japanese_api/src/model/lesson_session.dart';
 import 'package:japanese_api/src/model/lesson_session_answered_inner.dart';
 import 'package:japanese_api/src/model/login200_response.dart';
@@ -44,6 +48,7 @@ import 'package:japanese_api/src/model/profile.dart';
 import 'package:japanese_api/src/model/profile_update.dart';
 import 'package:japanese_api/src/model/progress_summary.dart';
 import 'package:japanese_api/src/model/progress_summary_goal.dart';
+import 'package:japanese_api/src/model/progress_summary_kanji.dart';
 import 'package:japanese_api/src/model/progress_summary_weak_topics_inner.dart';
 import 'package:japanese_api/src/model/rebuild_path_request.dart';
 import 'package:japanese_api/src/model/record_study_interval_request.dart';
@@ -52,6 +57,8 @@ import 'package:japanese_api/src/model/refresh_token_request.dart';
 import 'package:japanese_api/src/model/register_request.dart';
 import 'package:japanese_api/src/model/request_password_reset_request.dart';
 import 'package:japanese_api/src/model/session_summary.dart';
+import 'package:japanese_api/src/model/session_summary_attention_items_inner.dart';
+import 'package:japanese_api/src/model/set_item_mastered200_response.dart';
 import 'package:japanese_api/src/model/set_unit_mastered_request.dart';
 import 'package:japanese_api/src/model/start_session_request.dart';
 import 'package:japanese_api/src/model/trial_content.dart';
@@ -99,6 +106,8 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'AdminSetUserStatusRequest':
       return AdminSetUserStatusRequest.fromJson(value as Map<String, dynamic>)
           as ReturnType;
+    case 'AdminTopic':
+      return AdminTopic.fromJson(value as Map<String, dynamic>) as ReturnType;
     case 'AdminUnit':
       return AdminUnit.fromJson(value as Map<String, dynamic>) as ReturnType;
     case 'AdminUnitWrite':
@@ -144,6 +153,9 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'ContentLevel':
     case 'DailyPlan':
       return DailyPlan.fromJson(value as Map<String, dynamic>) as ReturnType;
+    case 'DailyPlanKanjiNotice':
+      return DailyPlanKanjiNotice.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
     case 'DeleteAccount200Response':
       return DeleteAccount200Response.fromJson(value as Map<String, dynamic>)
           as ReturnType;
@@ -157,6 +169,11 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'GoalType':
     case 'I18nText':
       return I18nText.fromJson(value as Map<String, dynamic>) as ReturnType;
+    case 'KanjiDetails':
+      return KanjiDetails.fromJson(value as Map<String, dynamic>) as ReturnType;
+    case 'KanjiDetailsWrite':
+      return KanjiDetailsWrite.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
     case 'Lang':
     case 'LessonSession':
       return LessonSession.fromJson(value as Map<String, dynamic>)
@@ -219,6 +236,9 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'ProgressSummaryGoal':
       return ProgressSummaryGoal.fromJson(value as Map<String, dynamic>)
           as ReturnType;
+    case 'ProgressSummaryKanji':
+      return ProgressSummaryKanji.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
     case 'ProgressSummaryWeakTopicsInner':
       return ProgressSummaryWeakTopicsInner.fromJson(
             value as Map<String, dynamic>,
@@ -242,9 +262,18 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'RequestPasswordResetRequest':
       return RequestPasswordResetRequest.fromJson(value as Map<String, dynamic>)
           as ReturnType;
+    case 'ReviewFacet':
     case 'ScopeNotice':
     case 'SessionSummary':
       return SessionSummary.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
+    case 'SessionSummaryAttentionItemsInner':
+      return SessionSummaryAttentionItemsInner.fromJson(
+            value as Map<String, dynamic>,
+          )
+          as ReturnType;
+    case 'SetItemMastered200Response':
+      return SetItemMastered200Response.fromJson(value as Map<String, dynamic>)
           as ReturnType;
     case 'SetUnitMasteredRequest':
       return SetUnitMasteredRequest.fromJson(value as Map<String, dynamic>)

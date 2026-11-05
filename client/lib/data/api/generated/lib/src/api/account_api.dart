@@ -247,7 +247,7 @@ class AccountApi {
   }
 
   /// Khôi phục tài khoản trong 30 ngày chờ xóa
-  ///
+  /// Gọi bằng token cấp khi đăng nhập tài khoản &#x60;pending_deletion&#x60; (&#x60;accountStatus&#x60; của đăng nhập). Token đó mang trạng thái &#x60;pending_deletion&#x60; nên sau khi khôi phục client PHẢI gọi &#x60;POST /auth/refresh&#x60; để lấy access token &#x60;active&#x60;.
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation

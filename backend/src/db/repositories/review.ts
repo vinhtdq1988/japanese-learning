@@ -8,7 +8,7 @@ import {
   studyRecords,
 } from '../schema.js';
 import type { ExerciseSource, ItemSource } from '../../domain/session-snapshot.js';
-import type { LocalDate } from '../../domain/types.js';
+import type { LocalDate, ReviewFacet } from '../../domain/types.js';
 import type { DueReviewItem } from '../../engine/daily-plan.js';
 import type { SrsState } from '../../engine/srs.js';
 
@@ -28,21 +28,28 @@ export function toSrsState(row: ReviewScheduleRow): SrsState {
 }
 
 /**
- * Khóa lịch ôn của một mục trong giao dịch hiện tại rồi đọc dòng (nếu có). Khóa tư vấn bao cả trường hợp
- * chưa có dòng (hai phiên cùng ôn mục mới), `FOR UPDATE` giữ dòng đã có đến hết giao dịch (R10).
+ * Khóa lịch ôn của một cặp (mục, khía cạnh) trong giao dịch hiện tại rồi đọc dòng (nếu có). Khóa tư vấn
+ * bao cả trường hợp chưa có dòng (hai phiên cùng ôn cặp mới), `FOR UPDATE` giữ dòng đã có đến hết giao
+ * dịch (R10). Khóa của facet `item` giữ nguyên dạng cũ (`srs:user:item`) để hành vi 001 không đổi.
  */
 export async function lockSchedule(
   tx: DbExecutor,
   userId: string,
   itemId: string,
+  facet: ReviewFacet = 'item',
 ): Promise<ReviewScheduleRow | undefined> {
-  await tx.execute(
-    sql`select pg_advisory_xact_lock(hashtextextended(${`srs:${userId}:${itemId}`}, 0))`,
-  );
+  const lockKey = facet === 'item' ? `srs:${userId}:${itemId}` : `srs:${userId}:${itemId}:${facet}`;
+  await tx.execute(sql`select pg_advisory_xact_lock(hashtextextended(${lockKey}, 0))`);
   const [row] = await tx
     .select()
     .from(reviewSchedules)
-    .where(and(eq(reviewSchedules.userId, userId), eq(reviewSchedules.itemId, itemId)))
+    .where(
+      and(
+        eq(reviewSchedules.userId, userId),
+        eq(reviewSchedules.itemId, itemId),
+        eq(reviewSchedules.facet, facet),
+      ),
+    )
     .limit(1)
     .for('update');
   return row;
@@ -55,12 +62,13 @@ export interface ScheduleWrite extends SrsState {
   lastReviewedLocalDate: LocalDate;
 }
 
-/** Ghi (chèn hoặc cập nhật) lịch ôn; gọi sau `lockSchedule` nên không có đua ghi. */
+/** Ghi (chèn hoặc cập nhật) lịch ôn của cặp (mục, khía cạnh); gọi sau `lockSchedule` nên không có đua ghi. */
 export async function upsertSchedule(
   tx: DbExecutor,
   userId: string,
   itemId: string,
   write: ScheduleWrite,
+  facet: ReviewFacet = 'item',
 ): Promise<void> {
   const values = {
     intervalDays: write.intervalDays,
@@ -75,30 +83,41 @@ export async function upsertSchedule(
   };
   await tx
     .insert(reviewSchedules)
-    .values({ userId, itemId, ...values })
-    .onConflictDoUpdate({ target: [reviewSchedules.userId, reviewSchedules.itemId], set: values });
+    .values({ userId, itemId, facet, ...values })
+    .onConflictDoUpdate({
+      target: [reviewSchedules.userId, reviewSchedules.itemId, reviewSchedules.facet],
+      set: values,
+    });
 }
 
-/** Ngày đến hạn hiện tại của một mục (null nếu mục chưa có lịch). */
+/** Ngày đến hạn hiện tại của một cặp (mục, khía cạnh); null nếu chưa có lịch. */
 export async function getDueDate(
   db: DbExecutor,
   userId: string,
   itemId: string,
+  facet: ReviewFacet = 'item',
 ): Promise<LocalDate | null> {
   const [row] = await db
     .select({ dueDate: reviewSchedules.dueDate })
     .from(reviewSchedules)
-    .where(and(eq(reviewSchedules.userId, userId), eq(reviewSchedules.itemId, itemId)))
+    .where(
+      and(
+        eq(reviewSchedules.userId, userId),
+        eq(reviewSchedules.itemId, itemId),
+        eq(reviewSchedules.facet, facet),
+      ),
+    )
     .limit(1);
   return row?.dueDate ?? null;
 }
 
-/** Kết quả (true = đúng) của các câu lượt chính gần nhất của một mục, mới nhất trước. */
+/** Kết quả (true = đúng) của các câu lượt chính gần nhất của một cặp (mục, khía cạnh), mới nhất trước. */
 export async function recentItemResults(
   db: DbExecutor,
   userId: string,
   itemId: string,
   limit: number,
+  facet: ReviewFacet = 'item',
 ): Promise<boolean[]> {
   const rows = await db
     .select({ isCorrect: studyRecords.isCorrect })
@@ -107,6 +126,7 @@ export async function recentItemResults(
       and(
         eq(studyRecords.userId, userId),
         eq(studyRecords.itemId, itemId),
+        eq(studyRecords.facet, facet),
         eq(studyRecords.isRetry, false),
       ),
     )
@@ -141,6 +161,9 @@ export async function listDueReviewItems(
       and(
         eq(reviewSchedules.userId, userId),
         lte(reviewSchedules.dueDate, today),
+        // TẠM THỜI – gỡ ở T061 (US3): cặp Kanji (facet ≠ item) chưa vào gói ôn cho tới khi US3 hoàn thành,
+        // tránh `review_item_ids` trùng chữ và lẫn khía cạnh (research K6 "an toàn trung gian").
+        eq(reviewSchedules.facet, 'item'),
         eq(contentItems.status, 'active'),
         eq(learningUnits.status, 'active'),
         exists(
@@ -204,6 +227,8 @@ export async function loadReviewContent(
       meaning: r.meaning,
       explanation: r.explanation,
       examples: r.examples,
+      topicId: r.topicId,
+      kanjiDetails: r.kanjiDetails,
       position: r.position,
       status: r.status,
     })),
@@ -211,6 +236,7 @@ export async function loadReviewContent(
       id: r.id,
       itemId: r.itemId,
       topicId,
+      facet: r.facet,
       type: r.type,
       prompt: r.prompt,
       payload: r.payload,

@@ -4,6 +4,8 @@
 
 Tài liệu này chỉ mô tả **phần thay đổi** so với [data-model 001](../001-phase1-mvp/data-model.md); mọi bảng, quy tắc không nhắc tới ở đây giữ nguyên. Số mục `§2.x` tham chiếu tài liệu 001.
 
+**Thuật ngữ thống nhất**: *khía cạnh* = `facet` (nghĩa / cách đọc / từ chứa chữ = `meaning` / `reading` / `word`); *cặp* = (chữ, khía cạnh); *mảng yếu* = chủ đề có cờ yếu, trả về ở API là `weakTopics`; *Học thêm* = luồng `POST /today/extra`; *bài Kanji* = đơn vị học `kind='kanji'`.
+
 ## 1. Tổng quan thay đổi
 
 ```text
@@ -74,9 +76,12 @@ Không đổi cột. Ràng buộc bổ sung khi kích hoạt (research K10):
 |---|---|
 | Số chữ | 3–5 mục `kind='kanji'`, `status='active'` |
 | Tầng | `tier='core'` (không có Kanji `foundation`) |
+| Thẻ mục tiêu | `goal_tags` không rỗng (FR-011; từ vựng/ngữ pháp vẫn cho phép rỗng như 001) |
 | Chủ đề đơn vị | `topic_id` trỏ tới chủ đề `skill='kanji'` |
 | Bao phủ bài tập | với mỗi chữ `active` và mỗi khía cạnh ∈ `KANJI_FACETS`: ≥ 1 bài tập `active` có `item_id` = chữ đó, `facet` = khía cạnh đó |
 | Trộn loại | mọi mục `active` của đơn vị Kanji có `kind='kanji'`; đơn vị từ vựng/ngữ pháp không chứa mục Kanji |
+| Thời lượng | số bài tập `active` × `REVIEW_SECONDS_PER_ITEM` (cấu hình, mặc định 30 giây) ≤ `est_minutes` × 60 (Hiến pháp I); vượt → lỗi `exercises` |
+| Chữ duy nhất | mỗi `japanese` chỉ có ở một mục Kanji `active` trong toàn danh mục (không trùng lịch ôn); trùng → lỗi `items[i].japanese` |
 | Danh mục | mỗi trình độ N5, N4, N3 có ≥ 1 đơn vị Kanji `active` với `est_minutes=5` (SC-004); quy tắc "N5 foundation 5 phút" không áp dụng cho `kanji` |
 
 ### 3.4 `content_items` (§2.9) – mục `kind='kanji'` (Chữ Kanji)
@@ -88,8 +93,8 @@ Không đổi cột. Ràng buộc bổ sung khi kích hoạt (research K10):
 | meaning | i18n_text | nghĩa vi + en |
 | explanation | i18n_text null | tùy chọn (ghi chú dùng chữ, mẹo nhớ) |
 | examples | jsonb | Kanji: các **từ ví dụ** `[{ja, reading, translation, kanjiReading?}]`; ≥ 1 bắt buộc, NÊN ≥ 2 |
-| topic_id | uuid null FK → topics | **Mới**. Bắt buộc khi `kind='kanji'` (thẻ chủ đề – FR-018), NULL với kind khác |
-| kanji_details | jsonb null | **Mới**. Bắt buộc khi `kind='kanji'`, NULL với kind khác. Dạng ở dưới |
+| topic_id | uuid null FK → topics | **Mới**. Bắt buộc khi `kind='kanji'` lúc kích hoạt (thẻ chủ đề – FR-018; có thể NULL ở bản nháp), NULL với kind khác |
+| kanji_details | jsonb null | **Mới**. Bắt buộc khi `kind='kanji'` lúc kích hoạt (có thể NULL ở bản nháp), NULL với kind khác. Dạng ở dưới |
 
 `kanji_details`:
 
@@ -119,9 +124,9 @@ Từ ví dụ (`examples[]` của mục Kanji):
 | translation | i18n_text vi + en |
 | kanjiReading | tùy chọn: cách đọc của chữ trong từ này (bỏ okurigana); NÊN thuộc tập cách đọc của chữ – khác thì chỉ cảnh báo (biến âm). Bài học hiển thị để nêu rõ cách đọc nào dùng trong từ nào |
 
-**CHECK DB** (`0003_kanji.sql`):
-- `(kind = 'kanji') = (kanji_details IS NOT NULL)`
-- `(kind = 'kanji') = (topic_id IS NOT NULL)`
+**CHECK DB** (`0003_kanji.sql`), một chiều để vẫn lưu được bản nháp chữ chưa đủ thông tin (việc đủ dữ liệu được kiểm khi kích hoạt – research K10):
+- `kind = 'kanji' OR kanji_details IS NULL`
+- `kind = 'kanji' OR topic_id IS NULL`
 
 Từ ví dụ là dữ liệu riêng của mục Kanji – không khóa ngoại tới mục `vocabulary` (Làm rõ 2026-11-05).
 
@@ -157,8 +162,9 @@ Chỉ mục mới: `study_records(user_id, item_id, facet, occurred_at DESC) WHE
 
 **Quy tắc**:
 - Cập nhật theo SM-2 biến thể (R6) cho đúng cặp `(item_id, facet)` của bài tập vừa trả lời; các khía cạnh khác của chữ không đổi (US3.3). Mỗi cặp cập nhật tối đa một lần mỗi ngày địa phương.
-- Chọn mục đến hạn (`listDueReviewItems`): `due_date ≤ hôm nay` AND `mastered_at IS NULL` AND mục `active` AND đơn vị `active` AND tồn tại bài tập `active` có cùng `item_id` **và** `facet`.
-- Chữ "đến hạn" = có ≥ 1 cặp thỏa điều kiện trên; "đã học" = có ≥ 1 dòng bất kể `mastered_at`.
+- Chọn mục đến hạn (`listDueReviewItems`): `due_date ≤ hôm nay` AND `mastered_at IS NULL` AND mục `active` AND đơn vị `active` AND tồn tại bài tập `active` có cùng `item_id` **và** `facet` AND (mục không phải Kanji OR người học có `unit_progress.status='completed'` cho đơn vị chứa chữ).
+- Dòng lịch có thể được ghi theo từng câu trả lời trong bài dở dang (như 001); với Kanji, bài dở dang chưa làm chữ "đến hạn" hay "đã học".
+- Chữ "đến hạn" = có ≥ 1 cặp thỏa điều kiện trên; "đã học" (Kanji) = có ≥ 1 dòng lịch bất kể `mastered_at` **và** đơn vị chứa chữ đã `completed` với người học.
 - Chỉ mục `(user_id, due_date)` giữ nguyên.
 
 **Chuyển trạng thái thành thạo của chữ** (chỉ mục Kanji, research K7):
@@ -191,7 +197,7 @@ Không đổi. Thao tác trên bài Kanji ghi `unit.create` / `unit.update` / `u
 
 | Trường | Nguồn |
 |---|---|
-| `kanji.charactersLearned` | `COUNT(DISTINCT rs.item_id)` từ `review_schedules rs JOIN content_items ci` với `ci.kind='kanji'` |
+| `kanji.charactersLearned` | `COUNT(DISTINCT rs.item_id)` từ `review_schedules rs JOIN content_items ci` với `ci.kind='kanji'`, nối `unit_progress up` (cùng `user_id`, `up.unit_id = ci.unit_id`) với `up.status='completed'` |
 | `kanji.lessonsCompleted` | `unit_progress.status='completed'` của đơn vị `kind='kanji'` |
 | `kanji.minutes` | hợp khoảng `study_intervals` của phiên có `unit.kind='kanji'` + phần phân bổ của phiên ôn hỗn hợp theo tỷ lệ câu lượt chính Kanji (research K8) |
 | `kanji.reviewAccuracy` | câu lượt chính, `context='review'`, mục `kind='kanji'`: đúng / tổng; null nếu chưa ôn Kanji |
@@ -230,6 +236,6 @@ Cả hai chỉ thêm cột có DEFAULT hoặc NULL → dữ liệu 001 hợp l�
 - `review_schedules` PK `(user_id, item_id, facet)`.
 - `study_records(user_id, item_id, facet, occurred_at DESC) WHERE is_retry = false`.
 - `content_items(topic_id) WHERE topic_id IS NOT NULL`.
-- CHECK `content_items`: `(kind='kanji') = (kanji_details IS NOT NULL)`, `(kind='kanji') = (topic_id IS NOT NULL)`.
+- CHECK `content_items` (một chiều): `kind = 'kanji' OR kanji_details IS NULL`, `kind = 'kanji' OR topic_id IS NULL`.
 - CHECK `daily_plan_items`: độ dài `review_facets` = `review_item_ids` khi khác NULL.
 - CHECK `placement_questions.skill <> 'kanji'`.

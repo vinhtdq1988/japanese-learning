@@ -1,7 +1,7 @@
 // Engine kế hoạch ngày thuần hàm (research R7, FR-012, Nguyên tắc I). Nhận quỹ thời gian `B` và danh
 // sách ứng viên đã được dịch vụ chuẩn bị; không phụ thuộc HTTP/CSDL/đồng hồ.
 
-import type { LocalDate } from '../domain/types.js';
+import type { LocalDate, Skill } from '../domain/types.js';
 import { addDays, diffDays } from './clock.js';
 
 /** Tỷ lệ tối đa của quỹ thời gian dành cho ôn tập. */
@@ -109,6 +109,8 @@ export interface NewUnitCandidate {
   unitId: string;
   /** ∈ {5, 10, 15}. */
   estMinutes: number;
+  /** Kỹ năng của đơn vị; chỉ `applyKanjiSlot` dùng, `planDailyPlan` bỏ qua. */
+  kind?: Skill;
 }
 
 /** Loại kế hoạch của một ngày, dùng để luân phiên ngày kế tiếp. */
@@ -265,4 +267,50 @@ export function hasLearningGap(
   pausePeriods: readonly PausePeriod[],
 ): boolean {
   return absentDays(lastActive, today, pausePeriods) >= GAP_THRESHOLD_DAYS;
+}
+
+// --- Suất Kanji trong kế hoạch ngày (spec 003, research K5) ---
+
+export interface KanjiSlotInput {
+  /** Kỹ năng người học đã chọn; không có `kanji` thì hàm là no-op (FR-009, SC-006). */
+  skills: readonly Skill[];
+  prioritizedSkill: Skill | null;
+  /**
+   * Kế hoạch gần nhất CÓ bài mới (trước hôm nay) có chứa bài Kanji không. `null` = chưa có kế hoạch nào
+   * có bài mới (ngày đầu sau khi chọn Kanji) → coi như chưa có Kanji để Kanji được đứng đầu ngay.
+   */
+  lastNewUnitPlanHadKanji: boolean | null;
+  /**
+   * Quỹ thời gian ngày (phút). Nếu có, chỉ ứng viên Kanji vừa quỹ mới được đưa lên đầu, tránh bài Kanji
+   * quá dài che khuất bài Kanji ngắn hơn phía sau; không truyền thì lấy ứng viên Kanji đầu tiên.
+   */
+  budgetMinutes?: number;
+}
+
+/**
+ * Áp "suất Kanji" lên danh sách ứng viên bài mới đã xếp hạng, TRƯỚC `planDailyPlan` (hàm thuần).
+ *
+ * - `'kanji' ∉ skills` hoặc không có ứng viên Kanji (vừa quỹ) → giữ nguyên danh sách.
+ * - `prioritizedSkill = 'kanji'` HOẶC kế hoạch gần nhất có bài mới không chứa bài Kanji → đưa ứng viên
+ *   Kanji đầu tiên lên vị trí 0, phần còn lại giữ thứ tự → Kanji có ngày đầu và tối thiểu cách một ngày có
+ *   bài mới, nhưng không chiếm hết khi không ưu tiên.
+ * - Còn lại → giữ nguyên.
+ *
+ * Không đổi quỹ thời gian, giới hạn 60% ôn tập hay quy tắc luân phiên của `planDailyPlan` (R7).
+ */
+export function applyKanjiSlot<U extends NewUnitCandidate>(
+  candidates: readonly U[],
+  input: KanjiSlotInput,
+): U[] {
+  const unchanged = [...candidates];
+  if (!input.skills.includes('kanji')) return unchanged;
+  const first = candidates.findIndex(
+    (c) =>
+      c.kind === 'kanji' &&
+      (input.budgetMinutes === undefined || c.estMinutes <= input.budgetMinutes),
+  );
+  if (first < 0) return unchanged;
+  const promote = input.prioritizedSkill === 'kanji' || input.lastNewUnitPlanHadKanji !== true;
+  if (!promote || first === 0) return unchanged;
+  return [candidates[first]!, ...candidates.filter((_, i) => i !== first)];
 }

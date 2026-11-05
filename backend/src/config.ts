@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { DEFAULT_FONT_PATH } from './domain/font-coverage.js';
 
 // Cấu hình môi trường: đọc và kiểm tra một lần khi khởi động (xem `.env.example`).
 
@@ -19,6 +20,9 @@ const envSchema = z.object({
   DIFFICULTY_LOW_THRESHOLD_PCT: z.coerce.number().min(0).max(100).default(60),
   DIFFICULTY_HIGH_THRESHOLD_PCT: z.coerce.number().min(0).max(100).default(90),
   REVIEW_SECONDS_PER_ITEM: z.coerce.number().int().positive().default(30),
+
+  // Phông đóng gói cho client, dùng kiểm tra phủ glyph của nội dung Kanji (research K9, FR-006)
+  FONT_PATH: z.string().min(1).default(DEFAULT_FONT_PATH),
 });
 
 export type Config = z.infer<typeof envSchema> & {

@@ -17,10 +17,10 @@ part 'delete_account200_response.g.dart';
 )
 class DeleteAccount200Response {
   /// Returns a new [DeleteAccount200Response] instance.
-  DeleteAccount200Response({this.permanentDeletionAt});
+  DeleteAccount200Response({required this.permanentDeletionAt});
 
-  @JsonKey(name: r'permanentDeletionAt', required: false, includeIfNull: false)
-  final DateTime? permanentDeletionAt;
+  @JsonKey(name: r'permanentDeletionAt', required: true, includeIfNull: false)
+  final DateTime permanentDeletionAt;
 
   @override
   bool operator ==(Object other) =>

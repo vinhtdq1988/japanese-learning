@@ -3,6 +3,7 @@
 //
 
 // ignore_for_file: unused_element
+import 'package:japanese_api/src/model/session_summary_attention_items_inner.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -25,6 +26,8 @@ class SessionSummary {
     this.minutesSpent,
 
     this.dayCompleted,
+
+    this.attentionItems,
   });
 
   @JsonKey(name: r'correct', required: false, includeIfNull: false)
@@ -39,6 +42,10 @@ class SessionSummary {
   @JsonKey(name: r'dayCompleted', required: false, includeIfNull: false)
   final bool? dayCompleted;
 
+  /// Chữ Kanji có ít nhất một câu lượt chính sai trong phiên (US1.4); vắng mặt với phiên không có Kanji
+  @JsonKey(name: r'attentionItems', required: false, includeIfNull: false)
+  final List<SessionSummaryAttentionItemsInner>? attentionItems;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -46,14 +53,16 @@ class SessionSummary {
           other.correct == correct &&
           other.total == total &&
           other.minutesSpent == minutesSpent &&
-          other.dayCompleted == dayCompleted;
+          other.dayCompleted == dayCompleted &&
+          other.attentionItems == attentionItems;
 
   @override
   int get hashCode =>
       correct.hashCode +
       total.hashCode +
       minutesSpent.hashCode +
-      dayCompleted.hashCode;
+      dayCompleted.hashCode +
+      attentionItems.hashCode;
 
   factory SessionSummary.fromJson(Map<String, dynamic> json) =>
       _$SessionSummaryFromJson(json);

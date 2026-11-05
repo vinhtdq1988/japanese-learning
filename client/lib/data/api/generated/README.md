@@ -12,11 +12,14 @@ Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
   1.6.0 (2026-11-04, trong lúc hiện thực US2, chưa có client nào phụ thuộc) – (1) `LessonSession` thêm `kind` và `title` (client cần tiêu đề phiên và biết phiên \"học thêm\"); (2) học thêm: `POST /today/extra` trả `PlanItem` có `id` là id đơn vị, client bắt đầu bằng `POST /sessions` với `planItemId` = id đó (phiên `kind='extra'`, không gắn mục kế hoạch), khai báo thêm 409 `PATH_PAUSED` và 404 mang mã `CONTENT_EXHAUSTED` kèm gợi ý `fields.suggestion` ∈ {raise_level, add_skill, content_exhausted}; (3) payload bài tập `matching` cho người học là `left[]` và `right[]` (vế phải đã xáo) thay cho `pairs[]`; (4) khai báo các mã lỗi 404/409/422 còn thiếu của `/sessions/_*` (409 `SESSION_COMPLETED` khi ghi câu trả lời vào phiên đã hoàn thành) và 422 của `PUT /onboarding` (đã có từ US1 nhưng chưa khai báo). Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; cần sinh lại API client vì `LessonSession` thêm trường.
   1.7.0 (2026-11-04, trong lúc hiện thực US4/US5, chưa có client nào phụ thuộc) – khai báo các mã lỗi còn thiếu của `POST /path/rebuild` (404 chưa onboarding, 422), `POST /path/pause`, `POST /path/resume` (404 chưa onboarding) và `PUT /path/units/{unitId}/master` (404 không tìm thấy đơn vị, 422 thân yêu cầu sai); làm rõ `MasterResult.remainingUnits` là số đơn vị còn có thể học (chưa học hoặc đang học dở, chưa thành thạo) và `suggestion` chỉ có mặt khi `remainingUnits = 0`; làm rõ `PATCH /me` khi chưa hoàn tất onboarding (422 cho các trường lộ trình). Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; API client sinh ra không đổi.
   1.8.0 (2026-11-04, trong lúc hiện thực US8, chưa có client nào phụ thuộc) – (1) `POST /trial/events` làm rõ 422 khi tên sự kiện ngoài danh sách hoặc thân có trường ngoài `event`; (2) `TrialContent` mô tả cụ thể `answerKey` theo loại bài tập (`correctIndex` | `pairs` | `acceptedAnswers`) để client chấm cục bộ; (3) `GET /trial/content` và `POST /trial/placement/grade` làm rõ chỉ tăng bộ đếm ẩn danh; (4) sửa lỗi cú pháp YAML của `MasterResult.remainingUnits.description` (đặt trong dấu nháy; trình sinh mã từ chối spec) – không đổi ngữ nghĩa. Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; cần sinh lại API client vì `answerKey` có thuộc tính.
+  1.9.0 (2026-11-05, trong lúc hiện thực US6, chưa có client nào phụ thuộc) – bổ sung cho `/admin/_*`: (0) thêm `GET /admin/topics` (`adminListTopics`, schema `AdminTopic`) để admin chọn `topicId` khi soạn đơn vị và câu hỏi; (1) bài tập trong `AdminUnitWrite` thêm `itemIndex` (chỉ số 0 của mục trong `items` cùng payload mà bài tập kiểm tra; cần để bài tập do admin tạo vào được lịch ôn tập, `exercises.item_id`); (2) `AdminPlacementQuestion` thêm `hint` (gợi ý song ngữ, tùy chọn) và khai báo trường bắt buộc khi ghi; (3) `AdminUserPage.items[]` thêm `role`; (4) `AdminActionLog` thêm `diff` (đã loại thông tin nhạy cảm) và `targetId` có thể null (thao tác trên cả bộ câu hỏi); (5) `GET /admin/action-logs` trả con trỏ trang kế tiếp ở header `X-Next-Cursor`; `GET /admin/units` không kèm `items`/`exercises` (xem chi tiết bằng `GET /admin/units/{unitId}`); (6) khai báo các mã 404/422 còn thiếu của `/admin/_*`. Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; API client sinh ra không bị ảnh hưởng vì các trường mới đều tùy chọn.
+  1.10.0 (2026-11-05, trong lúc hiện thực US7, chưa có client nào phụ thuộc) – làm rõ và khai báo đủ mã lỗi cho tài khoản: (1) `PUT /me/password` thêm 422 (mật khẩu mới không hợp lệ hoặc trùng email); (2) `POST /account/delete` thêm 401 (mật khẩu sai) và 422 (thiếu mật khẩu), `permanentDeletionAt` bắt buộc; phản hồi 200 yêu cầu client xóa token ngay vì mọi phiên của tài khoản đã bị thu hồi; (3) `POST /account/restore` thêm 401 và mã lỗi `ACCOUNT_DELETED` cho 410; sau khi khôi phục client PHẢI gọi `POST /auth/refresh` vì access token hiện tại còn mang trạng thái `pending_deletion`; (4) `PATCH /me` thêm 401 `UNAUTHORIZED` cho thiếu/sai `currentPassword` khi đổi email (đã khai báo từ 1.3.0). Thay đổi bổ sung và làm rõ, không phá vỡ tương thích.
+  1.11.0 (2026-11-05, spec 003-kanji-lessons) – bổ sung Kanji: (1) `Skill` thêm `kanji` (placement và dùng thử vẫn chỉ vocabulary/grammar); (2) `ProfileUpdate` thêm `skills` – đổi kỹ năng không sinh lộ trình mới, có hiệu lực ở kế hoạch kế tiếp; bỏ kỹ năng đang ưu tiên thì `prioritizedSkill` về null; (3) thêm `PUT /path/items/{itemId}/master` (chỉ mục Kanji); (4) `ContentItem` thêm `kanji`, `topicId`, `examples[].kanjiReading`; `Exercise` thêm `facet`; (5) `DailyPlan` thêm `kanjiNotice`; `PlanItem` thêm `kind`; (6) `SessionSummary` thêm `attentionItems`; (7) `ProgressSummary` thêm `kanji` và `weakTopics[].skill`; (8) `AdminUnitWrite` nhận `kind=kanji`, mục thêm `topicId`/`kanjiDetails`, bài tập thêm `facet`; `GET /admin/units` lọc `kind=kanji`, `GET /admin/topics` thêm tham số lọc `skill`. Thay đổi bổ sung; client sinh mã cũ có thể không giải mã được `Skill=kanji` nên client và backend PHẢI phát hành cùng lúc.
 
 
 This Dart package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: 1.8.0
+- API version: 1.11.0
 - Generator version: 7.27.0
 - Build package: org.openapitools.codegen.languages.DartDioClientCodegen
 
@@ -83,18 +86,19 @@ Class | Method | HTTP request | Description
 [*AccountApi*](doc/AccountApi.md) | [**getMe**](doc/AccountApi.md#getme) | **GET** /me | Thông tin tài khoản + hồ sơ học tập
 [*AccountApi*](doc/AccountApi.md) | [**restoreAccount**](doc/AccountApi.md#restoreaccount) | **POST** /account/restore | Khôi phục tài khoản trong 30 ngày chờ xóa
 [*AccountApi*](doc/AccountApi.md) | [**updateMe**](doc/AccountApi.md#updateme) | **PATCH** /me | Sửa hồ sơ (FR-002)
-[*AdminApi*](doc/AdminApi.md) | [**adminCreatePlacementQuestion**](doc/AdminApi.md#admincreateplacementquestion) | **POST** /admin/placement-questions | Tạo câu hỏi kiểm tra trình độ
+[*AdminApi*](doc/AdminApi.md) | [**adminCreatePlacementQuestion**](doc/AdminApi.md#admincreateplacementquestion) | **POST** /admin/placement-questions | Tạo câu hỏi kiểm tra trình độ (luôn ở trạng thái chưa kích hoạt; đưa vào bộ hiện hành bằng &#x60;PUT /admin/placement-questions/active-set&#x60;)
 [*AdminApi*](doc/AdminApi.md) | [**adminCreateUnit**](doc/AdminApi.md#admincreateunit) | **POST** /admin/units | Tạo đơn vị học (kèm mục nội dung và bài tập) – FR-030
-[*AdminApi*](doc/AdminApi.md) | [**adminGetUnit**](doc/AdminApi.md#admingetunit) | **GET** /admin/units/{unitId} | Chi tiết đơn vị học
-[*AdminApi*](doc/AdminApi.md) | [**adminListActionLogs**](doc/AdminApi.md#adminlistactionlogs) | **GET** /admin/action-logs | Nhật ký hành động quản trị (FR-032)
+[*AdminApi*](doc/AdminApi.md) | [**adminGetUnit**](doc/AdminApi.md#admingetunit) | **GET** /admin/units/{unitId} | Chi tiết đơn vị học (kèm mọi mục và bài tập, cả &#x60;inactive&#x60;)
+[*AdminApi*](doc/AdminApi.md) | [**adminListActionLogs**](doc/AdminApi.md#adminlistactionlogs) | **GET** /admin/action-logs | Nhật ký hành động quản trị (FR-032), mới nhất trước
 [*AdminApi*](doc/AdminApi.md) | [**adminListPlacementQuestions**](doc/AdminApi.md#adminlistplacementquestions) | **GET** /admin/placement-questions | Danh sách câu hỏi kiểm tra trình độ
-[*AdminApi*](doc/AdminApi.md) | [**adminListUnits**](doc/AdminApi.md#adminlistunits) | **GET** /admin/units | Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại)
-[*AdminApi*](doc/AdminApi.md) | [**adminListUsers**](doc/AdminApi.md#adminlistusers) | **GET** /admin/users | Tìm tài khoản người học (FR-031)
+[*AdminApi*](doc/AdminApi.md) | [**adminListTopics**](doc/AdminApi.md#adminlisttopics) | **GET** /admin/topics | Danh sách mảng nội dung (để chọn &#x60;topicId&#x60; khi soạn đơn vị học và câu hỏi kiểm tra trình độ)
+[*AdminApi*](doc/AdminApi.md) | [**adminListUnits**](doc/AdminApi.md#adminlistunits) | **GET** /admin/units | Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại); không kèm &#x60;items&#x60;/&#x60;exercises&#x60;
+[*AdminApi*](doc/AdminApi.md) | [**adminListUsers**](doc/AdminApi.md#adminlistusers) | **GET** /admin/users | Tìm tài khoản người học (FR-031), mới nhất trước
 [*AdminApi*](doc/AdminApi.md) | [**adminSetActivePlacementSet**](doc/AdminApi.md#adminsetactiveplacementset) | **PUT** /admin/placement-questions/active-set | Kích hoạt nguyên tử một bộ câu hỏi (thay thế bộ hiện hành) – PHẢI đúng 20 câu (8 N5, 6 N4, 6 N3) (FR-007, FR-030)
 [*AdminApi*](doc/AdminApi.md) | [**adminSetUnitStatus**](doc/AdminApi.md#adminsetunitstatus) | **PUT** /admin/units/{unitId}/status | Kích hoạt / vô hiệu hóa; đánh dấu thuộc tập dùng thử (FR-037)
 [*AdminApi*](doc/AdminApi.md) | [**adminSetUserStatus**](doc/AdminApi.md#adminsetuserstatus) | **PUT** /admin/users/{userId}/status | Vô hiệu hóa / kích hoạt lại tài khoản
 [*AdminApi*](doc/AdminApi.md) | [**adminUpdatePlacementQuestion**](doc/AdminApi.md#adminupdateplacementquestion) | **PUT** /admin/placement-questions/{questionId} | Sửa câu hỏi kiểm tra trình độ (nội dung, lựa chọn, đáp án, position) – ghi nhật ký quản trị (FR-030, FR-032)
-[*AdminApi*](doc/AdminApi.md) | [**adminUpdateUnit**](doc/AdminApi.md#adminupdateunit) | **PUT** /admin/units/{unitId} | Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp)
+[*AdminApi*](doc/AdminApi.md) | [**adminUpdateUnit**](doc/AdminApi.md#adminupdateunit) | **PUT** /admin/units/{unitId} | Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp). Đơn vị đang &#x60;active&#x60; PHẢI vẫn đạt kiểm tra nội dung sau khi sửa.
 [*AuthApi*](doc/AuthApi.md) | [**confirmPasswordReset**](doc/AuthApi.md#confirmpasswordreset) | **POST** /auth/password-reset/confirm | Đặt mật khẩu mới bằng token một lần
 [*AuthApi*](doc/AuthApi.md) | [**login**](doc/AuthApi.md#login) | **POST** /auth/login | Đăng nhập
 [*AuthApi*](doc/AuthApi.md) | [**logout**](doc/AuthApi.md#logout) | **POST** /auth/logout | Đăng xuất (thu hồi phiên hiện tại)
@@ -116,6 +120,7 @@ Class | Method | HTTP request | Description
 [*PathApi*](doc/PathApi.md) | [**pausePath**](doc/PathApi.md#pausepath) | **POST** /path/pause | Tạm dừng lộ trình
 [*PathApi*](doc/PathApi.md) | [**rebuildPath**](doc/PathApi.md#rebuildpath) | **POST** /path/rebuild | Xây dựng lại lộ trình (FR-016) – giữ lịch sử và lịch ôn
 [*PathApi*](doc/PathApi.md) | [**resumePath**](doc/PathApi.md#resumepath) | **POST** /path/resume | Tiếp tục lộ trình
+[*PathApi*](doc/PathApi.md) | [**setItemMastered**](doc/PathApi.md#setitemmastered) | **PUT** /path/items/{itemId}/master | Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh)
 [*PathApi*](doc/PathApi.md) | [**setUnitMastered**](doc/PathApi.md#setunitmastered) | **PUT** /path/units/{unitId}/master | Đánh dấu / bỏ đánh dấu đã thành thạo
 [*ProgressApi*](doc/ProgressApi.md) | [**getProgress**](doc/ProgressApi.md#getprogress) | **GET** /progress | Tóm tắt tiến độ (FR-026 → FR-029)
 [*TrialApi*](doc/TrialApi.md) | [**getTrialContent**](doc/TrialApi.md#gettrialcontent) | **GET** /trial/content | Nội dung dùng thử cố định (công khai) – FR-036/037
@@ -132,6 +137,7 @@ Class | Method | HTTP request | Description
  - [AdminSetActivePlacementSetRequest](doc/AdminSetActivePlacementSetRequest.md)
  - [AdminSetUnitStatusRequest](doc/AdminSetUnitStatusRequest.md)
  - [AdminSetUserStatusRequest](doc/AdminSetUserStatusRequest.md)
+ - [AdminTopic](doc/AdminTopic.md)
  - [AdminUnit](doc/AdminUnit.md)
  - [AdminUnitWrite](doc/AdminUnitWrite.md)
  - [AdminUnitWriteExercisesInner](doc/AdminUnitWriteExercisesInner.md)
@@ -148,12 +154,15 @@ Class | Method | HTTP request | Description
  - [ContentItemExamplesInner](doc/ContentItemExamplesInner.md)
  - [ContentLevel](doc/ContentLevel.md)
  - [DailyPlan](doc/DailyPlan.md)
+ - [DailyPlanKanjiNotice](doc/DailyPlanKanjiNotice.md)
  - [DeleteAccount200Response](doc/DeleteAccount200Response.md)
  - [DeleteAccountRequest](doc/DeleteAccountRequest.md)
  - [Error](doc/Error.md)
  - [Exercise](doc/Exercise.md)
  - [GoalType](doc/GoalType.md)
  - [I18nText](doc/I18nText.md)
+ - [KanjiDetails](doc/KanjiDetails.md)
+ - [KanjiDetailsWrite](doc/KanjiDetailsWrite.md)
  - [Lang](doc/Lang.md)
  - [LessonSession](doc/LessonSession.md)
  - [LessonSessionAnsweredInner](doc/LessonSessionAnsweredInner.md)
@@ -177,6 +186,7 @@ Class | Method | HTTP request | Description
  - [ProfileUpdate](doc/ProfileUpdate.md)
  - [ProgressSummary](doc/ProgressSummary.md)
  - [ProgressSummaryGoal](doc/ProgressSummaryGoal.md)
+ - [ProgressSummaryKanji](doc/ProgressSummaryKanji.md)
  - [ProgressSummaryWeakTopicsInner](doc/ProgressSummaryWeakTopicsInner.md)
  - [RebuildPathRequest](doc/RebuildPathRequest.md)
  - [RecordStudyIntervalRequest](doc/RecordStudyIntervalRequest.md)
@@ -184,8 +194,11 @@ Class | Method | HTTP request | Description
  - [RefreshTokenRequest](doc/RefreshTokenRequest.md)
  - [RegisterRequest](doc/RegisterRequest.md)
  - [RequestPasswordResetRequest](doc/RequestPasswordResetRequest.md)
+ - [ReviewFacet](doc/ReviewFacet.md)
  - [ScopeNotice](doc/ScopeNotice.md)
  - [SessionSummary](doc/SessionSummary.md)
+ - [SessionSummaryAttentionItemsInner](doc/SessionSummaryAttentionItemsInner.md)
+ - [SetItemMastered200Response](doc/SetItemMastered200Response.md)
  - [SetUnitMasteredRequest](doc/SetUnitMasteredRequest.md)
  - [Skill](doc/Skill.md)
  - [StartSessionRequest](doc/StartSessionRequest.md)

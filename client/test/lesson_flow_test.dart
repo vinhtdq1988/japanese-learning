@@ -84,6 +84,43 @@ Future<_Harness> _open(
 
 void main() {
   testWidgets(
+    '"Hôm nay": mục bài mới Kanji có nhãn Kanji, bắt đầu bằng một lần nhấp',
+    (tester) async {
+      final h = await _open(tester, setup: (s) => s.kanjiItems.add('item-2'));
+      expect(find.textContaining('Bài Kanji'), findsOneWidget);
+      expect(h.has('kanji-notice'), isFalse);
+      expect(h.has('start-item-2'), isTrue);
+    },
+  );
+
+  testWidgets(
+    '"Hôm nay": banner hết bài Kanji kèm gợi ý nâng trình độ hoặc hết nội dung',
+    (tester) async {
+      final raise = await _open(
+        tester,
+        setup: (s) => s.kanjiNotice = <String, Object?>{
+          'code': 'kanji_exhausted',
+          'suggestion': 'raise_level',
+        },
+      );
+      expect(raise.has('kanji-notice'), isTrue);
+      expect(find.textContaining('nâng trình độ'), findsWidgets);
+    },
+  );
+
+  testWidgets('"Hôm nay": banner hết toàn bộ nội dung Kanji', (tester) async {
+    final h = await _open(
+      tester,
+      setup: (s) => s.kanjiNotice = <String, Object?>{
+        'code': 'kanji_exhausted',
+        'suggestion': 'content_exhausted',
+      },
+    );
+    expect(h.has('kanji-notice'), isTrue);
+    expect(find.textContaining('hết nội dung Kanji hiện có'), findsOneWidget);
+  });
+
+  testWidgets(
     'học trọn một đơn vị: giải thích, phản hồi tức thì, hỏi lại câu sai, tóm tắt',
     (tester) async {
       final h = await _open(tester);

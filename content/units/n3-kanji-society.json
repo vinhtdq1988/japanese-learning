@@ -1,0 +1,579 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society",
+  "title": {
+    "vi": "Kanji xã hội (政 経 済 民)",
+    "en": "Society kanji (政 経 済 民)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "政",
+      "topic": "kanji-n3-society",
+      "meaning": {
+        "vi": "chính trị; quản lý",
+        "en": "politics; government"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunReadings": [
+          "まつりごと"
+        ],
+        "strokeCount": 9,
+        "components": {
+          "vi": "正 + 攵 (bộ phốc)",
+          "en": "正 + 攵 (rap radical)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "政治",
+          "reading": "せいじ",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "chính trị",
+            "en": "politics"
+          }
+        },
+        {
+          "ja": "政府",
+          "reading": "せいふ",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "chính phủ",
+            "en": "government"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "経",
+      "topic": "kanji-n3-society",
+      "meaning": {
+        "vi": "trải qua; kinh tế",
+        "en": "pass through; economics"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ",
+          "キョウ"
+        ],
+        "kunReadings": [
+          "へ.る",
+          "た.つ"
+        ],
+        "strokeCount": 11,
+        "components": {
+          "vi": "Bộ mịch 糸 (sợi chỉ) + 圣",
+          "en": "Thread radical 糸 + 圣"
+        }
+      },
+      "examples": [
+        {
+          "ja": "経済",
+          "reading": "けいざい",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "kinh tế",
+            "en": "economy"
+          }
+        },
+        {
+          "ja": "経つ",
+          "reading": "たつ",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "(thời gian) trôi qua",
+            "en": "(time) to pass"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "済",
+      "topic": "kanji-n3-society",
+      "meaning": {
+        "vi": "xong; giải quyết",
+        "en": "finish; settle"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ"
+        ],
+        "kunReadings": [
+          "す.む",
+          "す.ます"
+        ],
+        "strokeCount": 11,
+        "components": {
+          "vi": "Bộ thủy 氵 (nước) + 斉",
+          "en": "Water radical 氵 + 斉"
+        }
+      },
+      "examples": [
+        {
+          "ja": "済む",
+          "reading": "すむ",
+          "kanjiReading": "す",
+          "translation": {
+            "vi": "xong, kết thúc",
+            "en": "to be finished"
+          }
+        },
+        {
+          "ja": "返済",
+          "reading": "へんさい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "hoàn trả",
+            "en": "repayment"
+          }
+        },
+        {
+          "ja": "経済",
+          "reading": "けいざい",
+          "translation": {
+            "vi": "kinh tế",
+            "en": "economy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "民",
+      "topic": "kanji-n3-society",
+      "meaning": {
+        "vi": "dân; người dân",
+        "en": "people; citizens"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ミン"
+        ],
+        "kunReadings": [
+          "たみ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "国民",
+          "reading": "こくみん",
+          "kanjiReading": "ミン",
+          "translation": {
+            "vi": "quốc dân, người dân",
+            "en": "citizens"
+          }
+        },
+        {
+          "ja": "民族",
+          "reading": "みんぞく",
+          "kanjiReading": "ミン",
+          "translation": {
+            "vi": "dân tộc",
+            "en": "ethnic group"
+          }
+        },
+        {
+          "ja": "民",
+          "reading": "たみ",
+          "kanjiReading": "たみ",
+          "translation": {
+            "vi": "dân chúng",
+            "en": "the people"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "政",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「政」nghĩa là gì?",
+        "en": "What does 「政」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chính trị; quản lý",
+            "en": "politics; government"
+          },
+          {
+            "vi": "trải qua; kinh tế",
+            "en": "pass through; economics"
+          },
+          {
+            "vi": "xong; giải quyết",
+            "en": "finish; settle"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 政 nghĩa là chính trị; quản lý.",
+        "en": "Correct! 政 means politics; government."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 政 nghĩa là chính trị; quản lý.",
+        "en": "Not quite. 政 means politics; government."
+      }
+    },
+    {
+      "item": "政",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「政」 trong 「政治」 (\"chính trị\").",
+        "en": "Type the reading of 「政」 in 「政治」 (\"politics\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 政治, 政 đọc là せい.",
+        "en": "Correct! In 政治, 政 is read せい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 政治, 政 đọc là せい.",
+        "en": "In 政治, 政 is read せい."
+      }
+    },
+    {
+      "item": "政",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「政府」(chính phủ) đọc là gì?",
+        "en": "How is 「政府」 (government) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうふ",
+          "せいふ",
+          "せいぶ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 政府 = せいふ (chính phủ).",
+        "en": "Correct! 政府 = せいふ (government)."
+      },
+      "feedbackIncorrect": {
+        "vi": "政府 đọc là せいふ (chính phủ).",
+        "en": "政府 is read せいふ (government)."
+      }
+    },
+    {
+      "item": "経",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「経」nghĩa là gì?",
+        "en": "What does 「経」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xong; giải quyết",
+            "en": "finish; settle"
+          },
+          {
+            "vi": "trải qua; kinh tế",
+            "en": "pass through; economics"
+          },
+          {
+            "vi": "dân; người dân",
+            "en": "people; citizens"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 経 nghĩa là trải qua; kinh tế.",
+        "en": "Correct! 経 means pass through; economics."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 経 nghĩa là trải qua; kinh tế.",
+        "en": "Not quite. 経 means pass through; economics."
+      }
+    },
+    {
+      "item": "経",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「経」 trong 「経済」 (\"kinh tế\").",
+        "en": "Type the reading of 「経」 in 「経済」 (\"economy\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 経済, 経 đọc là けい.",
+        "en": "Correct! In 経済, 経 is read けい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 経済, 経 đọc là けい.",
+        "en": "In 経済, 経 is read けい."
+      }
+    },
+    {
+      "item": "経",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「経つ」((thời gian) trôi qua) đọc là gì?",
+        "en": "How is 「経つ」 ((time) to pass) read?"
+      },
+      "payload": {
+        "choices": [
+          "へつ",
+          "けいつ",
+          "たつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 経つ = たつ ((thời gian) trôi qua).",
+        "en": "Correct! 経つ = たつ ((time) to pass)."
+      },
+      "feedbackIncorrect": {
+        "vi": "経つ đọc là たつ ((thời gian) trôi qua).",
+        "en": "経つ is read たつ ((time) to pass)."
+      }
+    },
+    {
+      "item": "済",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「済」nghĩa là gì?",
+        "en": "What does 「済」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dân; người dân",
+            "en": "people; citizens"
+          },
+          {
+            "vi": "chính trị; quản lý",
+            "en": "politics; government"
+          },
+          {
+            "vi": "xong; giải quyết",
+            "en": "finish; settle"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 済 nghĩa là xong; giải quyết.",
+        "en": "Correct! 済 means finish; settle."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 済 nghĩa là xong; giải quyết.",
+        "en": "Not quite. 済 means finish; settle."
+      }
+    },
+    {
+      "item": "済",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「済」 trong 「返済」 (\"hoàn trả\").",
+        "en": "Type the reading of 「済」 in 「返済」 (\"repayment\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 返済, 済 đọc là さい.",
+        "en": "Correct! In 返済, 済 is read さい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 返済, 済 đọc là さい.",
+        "en": "In 返済, 済 is read さい."
+      }
+    },
+    {
+      "item": "済",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「済む」(xong, kết thúc) đọc là gì?",
+        "en": "How is 「済む」 (to be finished) read?"
+      },
+      "payload": {
+        "choices": [
+          "すむ",
+          "さいむ",
+          "ずむ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 済む = すむ (xong, kết thúc).",
+        "en": "Correct! 済む = すむ (to be finished)."
+      },
+      "feedbackIncorrect": {
+        "vi": "済む đọc là すむ (xong, kết thúc).",
+        "en": "済む is read すむ (to be finished)."
+      }
+    },
+    {
+      "item": "民",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「民」nghĩa là gì?",
+        "en": "What does 「民」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dân; người dân",
+            "en": "people; citizens"
+          },
+          {
+            "vi": "chính trị; quản lý",
+            "en": "politics; government"
+          },
+          {
+            "vi": "trải qua; kinh tế",
+            "en": "pass through; economics"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 民 nghĩa là dân; người dân.",
+        "en": "Correct! 民 means people; citizens."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 民 nghĩa là dân; người dân.",
+        "en": "Not quite. 民 means people; citizens."
+      }
+    },
+    {
+      "item": "民",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「民」 trong 「国民」 (\"quốc dân\").",
+        "en": "Type the reading of 「民」 in 「国民」 (\"citizens\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "みん",
+          "ミン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 国民, 民 đọc là みん.",
+        "en": "Correct! In 国民, 民 is read みん."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 国民, 民 đọc là みん.",
+        "en": "In 国民, 民 is read みん."
+      }
+    },
+    {
+      "item": "民",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「民族」(dân tộc) đọc là gì?",
+        "en": "How is 「民族」 (ethnic group) read?"
+      },
+      "payload": {
+        "choices": [
+          "たみぞく",
+          "みんぞく",
+          "みんそく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 民族 = みんぞく (dân tộc).",
+        "en": "Correct! 民族 = みんぞく (ethnic group)."
+      },
+      "feedbackIncorrect": {
+        "vi": "民族 đọc là みんぞく (dân tộc).",
+        "en": "民族 is read みんぞく (ethnic group)."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "政",
+            {
+              "vi": "chính trị; quản lý",
+              "en": "politics; government"
+            }
+          ],
+          [
+            "経",
+            {
+              "vi": "trải qua; kinh tế",
+              "en": "pass through; economics"
+            }
+          ],
+          [
+            "済",
+            {
+              "vi": "xong; giải quyết",
+              "en": "finish; settle"
+            }
+          ],
+          [
+            "民",
+            {
+              "vi": "dân; người dân",
+              "en": "people; citizens"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

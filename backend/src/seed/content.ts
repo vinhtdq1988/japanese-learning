@@ -14,6 +14,8 @@ import {
   type ContentLevel,
   type GoalType,
   type I18nText,
+  type KanjiDetails,
+  type ReviewFacet,
   type Skill,
   type UnitTier,
 } from '../domain/types.js';
@@ -38,12 +40,18 @@ export interface UnitFileItem {
   reading?: string;
   meaning: I18nText;
   explanation?: I18nText;
-  examples?: { ja: string; reading?: string; translation: I18nText }[];
+  examples?: { ja: string; reading?: string; kanjiReading?: string; translation: I18nText }[];
+  /** Kanji: khóa chủ đề của chữ trong topics.json. */
+  topic?: string;
+  /** Kanji: âm On/Kun, số nét, thành phần. */
+  kanjiDetails?: KanjiDetails;
 }
 
 export interface UnitFileExercise {
   /** `japanese` của mục mà bài tập kiểm tra. */
   item?: string;
+  /** Khía cạnh kiểm tra; vắng mặt = `item`. */
+  facet?: ReviewFacet;
   type: 'multiple_choice' | 'matching' | 'fill_blank';
   prompt: I18nText;
   payload: Record<string, unknown>;
@@ -210,7 +218,9 @@ export async function validateContent(
   const titles = new Set<string>();
   for (const u of content.units) {
     const where = (p: string): string => (p ? `${u.file}.${p}` : u.file);
-    for (const issue of validateUnit(u as UnitDraft)) {
+    for (const issue of validateUnit(u as UnitDraft, {
+      topicSkillOf: (key) => topics.get(key)?.skill,
+    })) {
       issues.push({ path: where(issue.path), message: issue.message });
     }
     const topic = topics.get(u.topic);
@@ -250,10 +260,21 @@ export async function validateContent(
     });
   }
 
-  issues.push(...validateCatalog(content.units, requiredLevels(content.units)));
+  issues.push(
+    ...validateCatalog(
+      content.units.map((u) => ({ ...u, name: u.file })),
+      requiredLevels(content.units),
+    ),
+  );
 
   // Tập dùng thử mặc định (R9): 1 từ vựng + 1 ngữ pháp, tổng ≤ 10 phút.
   const trial = content.units.filter((u) => u.isTrial);
+  for (const u of trial.filter((t) => t.kind === 'kanji')) {
+    issues.push({
+      path: u.file,
+      message: 'đơn vị Kanji không được thuộc tập dùng thử (ngoài phạm vi)',
+    });
+  }
   const trialKinds = new Set(trial.map((u) => u.kind));
   const trialMinutes = trial.reduce((sum, u) => sum + u.estMinutes, 0);
   if (!trialKinds.has('vocabulary') || !trialKinds.has('grammar')) {

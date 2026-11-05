@@ -13,7 +13,7 @@ import {
   type SnapshotExercise,
   type SnapshotItem,
 } from '../domain/session-snapshot.js';
-import type { Language, Skill } from '../domain/types.js';
+import { TRIAL_SKILLS, type Language, type Skill } from '../domain/types.js';
 import type { CatalogUnit } from './content-cache.js';
 import type { ServiceDeps } from './deps.js';
 import { gradeWithoutStoring, type PlacementResultDto } from './placement.js';
@@ -68,7 +68,8 @@ export function pickTrialUnits(units: readonly CatalogUnit[]): CatalogUnit[] {
   const trial = units.filter((u) => u.isTrial);
   const picked: CatalogUnit[] = [];
   let minutes = 0;
-  for (const kind of ['vocabulary', 'grammar'] as const) {
+  // Kanji ngoài phạm vi dùng thử (research K12): chỉ duyệt TRIAL_SKILLS.
+  for (const kind of TRIAL_SKILLS) {
     const best = trial
       .filter((u) => u.kind === kind)
       .sort((a, b) => a.estMinutes - b.estMinutes || a.sequence - b.sequence)[0];

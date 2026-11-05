@@ -9,7 +9,9 @@ enum Skill {
   @JsonValue(r'vocabulary')
   vocabulary(r'vocabulary'),
   @JsonValue(r'grammar')
-  grammar(r'grammar');
+  grammar(r'grammar'),
+  @JsonValue(r'kanji')
+  kanji(r'kanji');
 
   const Skill(this.value);
 

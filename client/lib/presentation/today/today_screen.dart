@@ -162,6 +162,10 @@ class _TodayContentState extends ConsumerState<_TodayContent> {
             _DayCompletedCard(summary: plan.summary),
             const SizedBox(height: 12),
           ],
+          if (plan.kanjiNotice != null) ...<Widget>[
+            _KanjiNoticeBanner(notice: plan.kanjiNotice!),
+            const SizedBox(height: 12),
+          ],
           if (items.isEmpty)
             EmptyView(
               key: const Key('today-empty'),
@@ -291,6 +295,7 @@ class _PlanItemCard extends StatelessWidget {
     final isReview = item.type == PlanItemTypeEnum.reviewBatch;
     final done = item.status == PlanItemStatusEnum.completed;
     final started = item.status == PlanItemStatusEnum.inProgress;
+    final isKanji = item.kind == Skill.kanji;
     final detail = <String>[
       l10n.minutesShort(item.estMinutes ?? 0),
       if (isReview && item.itemCount != null)
@@ -300,10 +305,14 @@ class _PlanItemCard extends StatelessWidget {
     return Card(
       child: ListTile(
         key: Key('plan-item-${item.id}'),
-        leading: Icon(isReview ? Icons.replay : Icons.menu_book_outlined),
+        leading: Icon(
+          isReview
+              ? Icons.replay
+              : (isKanji ? Icons.translate : Icons.menu_book_outlined),
+        ),
         title: Text(item.title ?? ''),
         subtitle: Text(
-          '${isReview ? l10n.todayTypeReview : l10n.todayTypeNew} · $detail',
+          '${isReview ? l10n.todayTypeReview : (isKanji ? l10n.todayTypeKanji : l10n.todayTypeNew)} · $detail',
         ),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
@@ -338,5 +347,48 @@ class _StatusChip extends StatelessWidget {
       _ => l10n.statusPending,
     };
     return Chip(label: Text(text));
+  }
+}
+
+/// Thông báo hết bài Kanji (FR-013): kèm gợi ý nâng trình độ hoặc đã hết nội dung Kanji hiện có.
+class _KanjiNoticeBanner extends StatelessWidget {
+  const _KanjiNoticeBanner({required this.notice});
+
+  final DailyPlanKanjiNotice notice;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    final message = switch (notice.suggestion) {
+      DailyPlanKanjiNoticeSuggestionEnum.raiseLevel =>
+        l10n.todayKanjiExhaustedRaiseLevel,
+      DailyPlanKanjiNoticeSuggestionEnum.contentExhausted =>
+        l10n.todayKanjiExhaustedContent,
+    };
+    return Semantics(
+      liveRegion: true,
+      child: Container(
+        key: const Key('kanji-notice'),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: scheme.secondaryContainer,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Icon(Icons.translate, color: scheme.onSecondaryContainer, size: 20),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                message,
+                style: TextStyle(color: scheme.onSecondaryContainer),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**pausePath**](PathApi.md#pausepath) | **POST** /path/pause | Tạm dừng lộ trình
 [**rebuildPath**](PathApi.md#rebuildpath) | **POST** /path/rebuild | Xây dựng lại lộ trình (FR-016) – giữ lịch sử và lịch ôn
 [**resumePath**](PathApi.md#resumepath) | **POST** /path/resume | Tiếp tục lộ trình
+[**setItemMastered**](PathApi.md#setitemmastered) | **PUT** /path/items/{itemId}/master | Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh)
 [**setUnitMastered**](PathApi.md#setunitmastered) | **PUT** /path/units/{unitId}/master | Đánh dấu / bỏ đánh dấu đã thành thạo
 
 
@@ -168,6 +169,51 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **setItemMastered**
+> SetItemMastered200Response setItemMastered(itemId, setUnitMasteredRequest)
+
+Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh)
+
+Idempotent – gửi lại cùng giá trị trả 200 không đổi dữ liệu. Đánh dấu cả bài Kanji dùng `PUT /path/units/{unitId}/master`.
+
+### Example
+```dart
+import 'package:japanese_api/api.dart';
+
+final api = JapaneseApi().getPathApi();
+final String itemId = 38400000-8cf0-11bd-b23e-10b96e4ef00d; // String | 
+final SetUnitMasteredRequest setUnitMasteredRequest = ; // SetUnitMasteredRequest | 
+
+try {
+    final response = api.setItemMastered(itemId, setUnitMasteredRequest);
+    print(response);
+} on DioException catch (e) {
+    print('Exception when calling PathApi->setItemMastered: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **String**|  | 
+ **setUnitMasteredRequest** | [**SetUnitMasteredRequest**](SetUnitMasteredRequest.md)|  | 
+
+### Return type
+
+[**SetItemMastered200Response**](SetItemMastered200Response.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -25,17 +25,17 @@ const count = async (table: string, where = 'true'): Promise<number> =>
   (await handle.pool.query(`SELECT count(*)::int AS n FROM ${table} WHERE ${where}`)).rows[0].n;
 
 describe('seedContent', () => {
-  it('nạp mảng, đơn vị N5–N3, bài tập và bộ placement 20 câu đang kích hoạt', async () => {
+  it('nạp mảng, đơn vị N5–N3 (kể cả Kanji), bài tập và bộ placement 20 câu đang kích hoạt', async () => {
     const summary = await seedContent(handle.db);
     expect(summary).toMatchObject({
-      topicsInserted: 14,
-      unitsInserted: 14,
+      topicsInserted: 20,
+      unitsInserted: 21,
       unitsSkipped: 0,
       placementInserted: 20,
       placementActivated: true,
     });
-    expect(await count('topics')).toBe(14);
-    expect(await count('learning_units', "status = 'active'")).toBe(14);
+    expect(await count('topics')).toBe(20);
+    expect(await count('learning_units', "status = 'active'")).toBe(21);
     expect(await count('content_items')).toBeGreaterThanOrEqual(14 * 3);
     expect(await count('exercises')).toBeGreaterThanOrEqual(14 * 4);
     expect(await count('placement_questions', 'is_active')).toBe(20);
@@ -71,6 +71,57 @@ describe('seedContent', () => {
     expect(trial.rows.reduce((s, r) => s + r.est_minutes, 0)).toBeLessThanOrEqual(10);
   });
 
+  it('nạp 7 bài Kanji (27 chữ) và 6 chủ đề Kanji với chi tiết, chủ đề riêng và khía cạnh (spec 003)', async () => {
+    await seedContent(handle.db);
+    expect(await count('topics', "skill = 'kanji'")).toBe(6);
+    expect(await count('learning_units', "kind = 'kanji' AND status = 'active'")).toBe(7);
+    expect(await count('content_items', "kind = 'kanji'")).toBe(27);
+    // Mọi chữ Kanji có chủ đề thuộc kỹ năng Kanji, chi tiết đầy đủ và reading NULL.
+    expect(
+      await count(
+        'content_items i JOIN topics t ON t.id = i.topic_id',
+        "i.kind = 'kanji' AND t.skill = 'kanji' AND i.kanji_details IS NOT NULL AND i.reading IS NULL",
+      ),
+    ).toBe(27);
+    // Mục khác Kanji không có kanji_details/topic_id.
+    expect(
+      await count(
+        'content_items',
+        "kind <> 'kanji' AND (kanji_details IS NOT NULL OR topic_id IS NOT NULL)",
+      ),
+    ).toBe(0);
+    // Mỗi chữ có đủ bài tập cho ba khía cạnh; bài tập khác Kanji có facet item.
+    const covered = await handle.pool.query(
+      `SELECT i.id, count(DISTINCT e.facet)::int AS n
+         FROM content_items i JOIN exercises e ON e.item_id = i.id
+        WHERE i.kind = 'kanji' AND e.facet IN ('meaning','reading','word') GROUP BY i.id`,
+    );
+    expect(covered.rows).toHaveLength(27);
+    expect(covered.rows.every((r) => r.n === 3)).toBe(true);
+    expect(
+      await count(
+        'exercises e JOIN learning_units u ON u.id = e.unit_id',
+        "u.kind <> 'kanji' AND e.facet <> 'item'",
+      ),
+    ).toBe(0);
+    // Từ ví dụ có kanjiReading; mỗi bài Kanji có goal_tags không rỗng và nằm ngoài tập dùng thử.
+    const withReading = await handle.pool.query(
+      `SELECT count(*)::int AS n FROM content_items i, jsonb_array_elements(i.examples) ex
+        WHERE i.kind = 'kanji' AND ex ? 'kanjiReading'`,
+    );
+    expect(withReading.rows[0].n).toBeGreaterThanOrEqual(27);
+    expect(await count('learning_units', "kind = 'kanji' AND cardinality(goal_tags) = 0")).toBe(0);
+    expect(await count('learning_units', "kind = 'kanji' AND is_trial")).toBe(0);
+  });
+
+  it('seed lại hai lần không nhân bản bài Kanji (idempotent)', async () => {
+    await seedContent(handle.db);
+    const again = await seedContent(handle.db);
+    expect(again).toMatchObject({ topicsInserted: 0, unitsInserted: 0, unitsSkipped: 21 });
+    expect(await count('learning_units', "kind = 'kanji'")).toBe(7);
+    expect(await count('content_items', "kind = 'kanji'")).toBe(27);
+  });
+
   it('bài tập gắn đúng mục (item_id) khi khai báo, và đáp án nằm trong payload', async () => {
     await seedContent(handle.db);
     const { rows } = await handle.pool.query(
@@ -93,11 +144,11 @@ describe('seedContent', () => {
     expect(again).toMatchObject({
       topicsInserted: 0,
       unitsInserted: 0,
-      unitsSkipped: 14,
+      unitsSkipped: 21,
       placementInserted: 0,
       placementActivated: false,
     });
-    expect(await count('learning_units')).toBe(14);
+    expect(await count('learning_units')).toBe(21);
     expect(await count('placement_questions')).toBe(20);
     expect(await count('learning_units', `title->>'vi' = 'Tiêu đề do admin sửa'`)).toBe(1);
   });

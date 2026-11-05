@@ -1,0 +1,48 @@
+{
+  "id": "kanji-added-later",
+  "description": "Người dùng cũ đã học từ vựng/ngữ pháp rồi mới thêm Kanji (US2.4): có tiến độ và lịch ôn, kế hoạch vẫn ≤ quỹ.",
+  "asOf": "2026-01-05",
+  "profile": {
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false,
+    "targetDate": null,
+    "currentLevel": "N5",
+    "goalType": "jlpt",
+    "targetLevel": "N4",
+    "dailyMinutes": 10,
+    "skills": ["vocabulary", "grammar", "kanji"],
+    "prioritizedSkill": null
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-04",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-03",
+      "topic": "greetings",
+      "context": "lesson",
+      "results": [1, 1, 0, 1, 1]
+    },
+    {
+      "date": "2026-01-04",
+      "topic": "numbers",
+      "context": "lesson",
+      "results": [1, 1, 1, 1]
+    }
+  ],
+  "reviewBacklog": [
+    {
+      "count": 8,
+      "daysOverdue": 2,
+      "isHard": false
+    }
+  ],
+  "completedUnitSlugs": ["n5-vocabulary-greetings", "n5-vocabulary-numbers", "n5-grammar-desu-wa"],
+  "expected": {
+    "kanjiPlan": {
+      "budgetMinutes": 10,
+      "keepsReviewBacklog": true
+    }
+  }
+}

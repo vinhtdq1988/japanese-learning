@@ -165,3 +165,31 @@ export async function studyPlanItem(
   if (done.status !== 200) throw new Error(`Hoàn thành phiên lỗi: ${JSON.stringify(done.body)}`);
   return { session, results, summary: done.body };
 }
+
+// --- Bài học Kanji (spec 003) ---
+
+/** Kỹ năng của người học có chọn Kanji. */
+export const KANJI_SKILLS = ['vocabulary', 'grammar', 'kanji'];
+
+/**
+ * Đăng ký + onboarding với Kanji (đặt qua tham số `skills` của onboarding). `overrides` ghi đè bản nháp
+ * onboarding (ví dụ `currentLevel`, `dailyMinutes`).
+ */
+export async function kanjiLearner(
+  api: ContractClient,
+  ctx: TestApp,
+  overrides: Record<string, unknown> = {},
+): Promise<Learner> {
+  return onboardedLearner(api, ctx, { skills: KANJI_SKILLS, ...overrides });
+}
+
+/** Id đơn vị Kanji theo tiêu đề tiếng Anh (ví dụ `Number kanji 1 (一 二 三)`). */
+export async function kanjiUnitId(ctx: TestApp, titleEn: string): Promise<string> {
+  const rows = await query<{ id: string }>(
+    ctx,
+    `SELECT id FROM learning_units WHERE kind = 'kanji' AND title->>'en' = $1`,
+    [titleEn],
+  );
+  if (rows.length !== 1) throw new Error(`Không có đúng một bài Kanji "${titleEn}"`);
+  return rows[0]!.id;
+}

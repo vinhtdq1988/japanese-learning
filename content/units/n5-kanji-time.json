@@ -1,0 +1,562 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N5",
+  "tier": "core",
+  "topic": "kanji-n5-time",
+  "title": {
+    "vi": "Kanji thời gian (日 月 年 時)",
+    "en": "Time kanji (日 月 年 時)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "日",
+      "topic": "kanji-n5-time",
+      "meaning": {
+        "vi": "ngày; mặt trời",
+        "en": "day; sun"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ニチ",
+          "ジツ"
+        ],
+        "kunReadings": [
+          "ひ",
+          "か"
+        ],
+        "strokeCount": 4,
+        "components": {
+          "vi": "Hình mặt trời (bộ Nhật 日)",
+          "en": "Sun radical 日"
+        }
+      },
+      "examples": [
+        {
+          "ja": "日曜日",
+          "reading": "にちようび",
+          "kanjiReading": "ニチ",
+          "translation": {
+            "vi": "Chủ nhật",
+            "en": "Sunday"
+          }
+        },
+        {
+          "ja": "三日",
+          "reading": "みっか",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "ngày mùng 3",
+            "en": "the 3rd of the month"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "月",
+      "topic": "kanji-n5-time",
+      "meaning": {
+        "vi": "tháng; mặt trăng",
+        "en": "month; moon"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲツ",
+          "ガツ"
+        ],
+        "kunReadings": [
+          "つき"
+        ],
+        "strokeCount": 4,
+        "components": {
+          "vi": "Hình mặt trăng (bộ Nguyệt 月)",
+          "en": "Moon radical 月"
+        }
+      },
+      "examples": [
+        {
+          "ja": "月曜日",
+          "reading": "げつようび",
+          "kanjiReading": "ゲツ",
+          "translation": {
+            "vi": "thứ Hai",
+            "en": "Monday"
+          }
+        },
+        {
+          "ja": "お月見",
+          "reading": "おつきみ",
+          "kanjiReading": "つき",
+          "translation": {
+            "vi": "ngắm trăng",
+            "en": "moon viewing"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "年",
+      "topic": "kanji-n5-time",
+      "meaning": {
+        "vi": "năm (thời gian)",
+        "en": "year"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ネン"
+        ],
+        "kunReadings": [
+          "とし"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "来年",
+          "reading": "らいねん",
+          "kanjiReading": "ネン",
+          "translation": {
+            "vi": "năm sau",
+            "en": "next year"
+          }
+        },
+        {
+          "ja": "年上",
+          "reading": "としうえ",
+          "kanjiReading": "とし",
+          "translation": {
+            "vi": "hơn tuổi",
+            "en": "older (in age)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "時",
+      "topic": "kanji-n5-time",
+      "meaning": {
+        "vi": "giờ; thời gian",
+        "en": "hour; time"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ"
+        ],
+        "kunReadings": [
+          "とき"
+        ],
+        "strokeCount": 10,
+        "components": {
+          "vi": "Bộ Nhật 日 + 寺 (chùa)",
+          "en": "Sun radical 日 + 寺 (temple)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "三時",
+          "reading": "さんじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "3 giờ",
+            "en": "3 o'clock"
+          }
+        },
+        {
+          "ja": "時々",
+          "reading": "ときどき",
+          "kanjiReading": "とき",
+          "translation": {
+            "vi": "thỉnh thoảng",
+            "en": "sometimes"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "日",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「日」nghĩa là gì?",
+        "en": "What does 「日」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngày; mặt trời",
+            "en": "day; sun"
+          },
+          {
+            "vi": "tháng; mặt trăng",
+            "en": "month; moon"
+          },
+          {
+            "vi": "năm (thời gian)",
+            "en": "year"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 日 nghĩa là ngày; mặt trời.",
+        "en": "Correct! 日 means day; sun."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 日 nghĩa là ngày; mặt trời.",
+        "en": "Not quite. 日 means day; sun."
+      }
+    },
+    {
+      "item": "日",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「日」 trong 「日曜日」 (chữ 「日」 đầu tiên trong \"Chủ nhật\").",
+        "en": "Type the reading of 「日」 in 「日曜日」 (the first 「日」 in \"Sunday\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "にち",
+          "ニチ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 日曜日, 日 đọc là にち.",
+        "en": "Correct! In 日曜日, 日 is read にち."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 日曜日, 日 đọc là にち.",
+        "en": "In 日曜日, 日 is read にち."
+      }
+    },
+    {
+      "item": "日",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「三日」(ngày mùng 3) đọc là gì?",
+        "en": "How is 「三日」 (the 3rd of the month) read?"
+      },
+      "payload": {
+        "choices": [
+          "さんにち",
+          "みっか",
+          "みにち"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 三日 = みっか (ngày mùng 3).",
+        "en": "Correct! 三日 = みっか (the 3rd of the month)."
+      },
+      "feedbackIncorrect": {
+        "vi": "三日 đọc là みっか (ngày mùng 3).",
+        "en": "三日 is read みっか (the 3rd of the month)."
+      }
+    },
+    {
+      "item": "月",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「月」nghĩa là gì?",
+        "en": "What does 「月」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "năm (thời gian)",
+            "en": "year"
+          },
+          {
+            "vi": "tháng; mặt trăng",
+            "en": "month; moon"
+          },
+          {
+            "vi": "giờ; thời gian",
+            "en": "hour; time"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 月 nghĩa là tháng; mặt trăng.",
+        "en": "Correct! 月 means month; moon."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 月 nghĩa là tháng; mặt trăng.",
+        "en": "Not quite. 月 means month; moon."
+      }
+    },
+    {
+      "item": "月",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「月」 trong 「月曜日」 (\"thứ Hai\").",
+        "en": "Type the reading of 「月」 in 「月曜日」 (\"Monday\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げつ",
+          "ゲツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 月曜日, 月 đọc là げつ.",
+        "en": "Correct! In 月曜日, 月 is read げつ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 月曜日, 月 đọc là げつ.",
+        "en": "In 月曜日, 月 is read げつ."
+      }
+    },
+    {
+      "item": "月",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「お月見」(ngắm trăng) đọc là gì?",
+        "en": "How is 「お月見」 (moon viewing) read?"
+      },
+      "payload": {
+        "choices": [
+          "おげつみ",
+          "おがつみ",
+          "おつきみ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! お月見 = おつきみ (ngắm trăng).",
+        "en": "Correct! お月見 = おつきみ (moon viewing)."
+      },
+      "feedbackIncorrect": {
+        "vi": "お月見 đọc là おつきみ (ngắm trăng).",
+        "en": "お月見 is read おつきみ (moon viewing)."
+      }
+    },
+    {
+      "item": "年",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「年」nghĩa là gì?",
+        "en": "What does 「年」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giờ; thời gian",
+            "en": "hour; time"
+          },
+          {
+            "vi": "ngày; mặt trời",
+            "en": "day; sun"
+          },
+          {
+            "vi": "năm (thời gian)",
+            "en": "year"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 年 nghĩa là năm (thời gian).",
+        "en": "Correct! 年 means year."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 年 nghĩa là năm (thời gian).",
+        "en": "Not quite. 年 means year."
+      }
+    },
+    {
+      "item": "年",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「年」 trong 「来年」 (\"năm sau\").",
+        "en": "Type the reading of 「年」 in 「来年」 (\"next year\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ねん",
+          "ネン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 来年, 年 đọc là ねん.",
+        "en": "Correct! In 来年, 年 is read ねん."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 来年, 年 đọc là ねん.",
+        "en": "In 来年, 年 is read ねん."
+      }
+    },
+    {
+      "item": "年",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「年上」(hơn tuổi) đọc là gì?",
+        "en": "How is 「年上」 (older (in age)) read?"
+      },
+      "payload": {
+        "choices": [
+          "としうえ",
+          "ねんうえ",
+          "ねんじょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 年上 = としうえ (hơn tuổi).",
+        "en": "Correct! 年上 = としうえ (older (in age))."
+      },
+      "feedbackIncorrect": {
+        "vi": "年上 đọc là としうえ (hơn tuổi).",
+        "en": "年上 is read としうえ (older (in age))."
+      }
+    },
+    {
+      "item": "時",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「時」nghĩa là gì?",
+        "en": "What does 「時」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giờ; thời gian",
+            "en": "hour; time"
+          },
+          {
+            "vi": "ngày; mặt trời",
+            "en": "day; sun"
+          },
+          {
+            "vi": "tháng; mặt trăng",
+            "en": "month; moon"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 時 nghĩa là giờ; thời gian.",
+        "en": "Correct! 時 means hour; time."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 時 nghĩa là giờ; thời gian.",
+        "en": "Not quite. 時 means hour; time."
+      }
+    },
+    {
+      "item": "時",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「時」 trong 「三時」 (\"3 giờ\").",
+        "en": "Type the reading of 「時」 in 「三時」 (\"3 o'clock\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 三時, 時 đọc là じ.",
+        "en": "Correct! In 三時, 時 is read じ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 三時, 時 đọc là じ.",
+        "en": "In 三時, 時 is read じ."
+      }
+    },
+    {
+      "item": "時",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「時々」(thỉnh thoảng) đọc là gì?",
+        "en": "How is 「時々」 (sometimes) read?"
+      },
+      "payload": {
+        "choices": [
+          "じじ",
+          "ときどき",
+          "ときとき"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 時々 = ときどき (thỉnh thoảng).",
+        "en": "Correct! 時々 = ときどき (sometimes)."
+      },
+      "feedbackIncorrect": {
+        "vi": "時々 đọc là ときどき (thỉnh thoảng).",
+        "en": "時々 is read ときどき (sometimes)."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "日",
+            {
+              "vi": "ngày; mặt trời",
+              "en": "day; sun"
+            }
+          ],
+          [
+            "月",
+            {
+              "vi": "tháng; mặt trăng",
+              "en": "month; moon"
+            }
+          ],
+          [
+            "年",
+            {
+              "vi": "năm (thời gian)",
+              "en": "year"
+            }
+          ],
+          [
+            "時",
+            {
+              "vi": "giờ; thời gian",
+              "en": "hour; time"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

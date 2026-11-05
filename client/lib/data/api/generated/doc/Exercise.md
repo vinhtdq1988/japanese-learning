@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | 
 **type** | **String** |  | 
+**facet** | [**ReviewFacet**](ReviewFacet.md) |  | [optional] 
 **prompt** | **String** | Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu | 
 **payload** | **Object** | Dạng theo `type`: `multiple_choice` → `choices[]`; `matching` → `left[]` và `right[]` (vế phải đã xáo; trả lời là danh sách cặp [vế trái, vế phải]); `fill_blank` → `hint` (tùy chọn). KHÔNG chứa đáp án trong luồng người học. | 
 

@@ -25,6 +25,8 @@ class AdminUserPageItemsInner {
 
     this.displayName,
 
+    this.role,
+
     this.status,
 
     this.createdAt,
@@ -39,6 +41,9 @@ class AdminUserPageItemsInner {
   @JsonKey(name: r'displayName', required: false, includeIfNull: false)
   final String? displayName;
 
+  @JsonKey(name: r'role', required: false, includeIfNull: false)
+  final AdminUserPageItemsInnerRoleEnum? role;
+
   @JsonKey(name: r'status', required: false, includeIfNull: false)
   final AccountStatus? status;
 
@@ -52,6 +57,7 @@ class AdminUserPageItemsInner {
           other.id == id &&
           other.email == email &&
           other.displayName == displayName &&
+          other.role == role &&
           other.status == status &&
           other.createdAt == createdAt;
 
@@ -60,6 +66,7 @@ class AdminUserPageItemsInner {
       id.hashCode +
       email.hashCode +
       displayName.hashCode +
+      role.hashCode +
       status.hashCode +
       createdAt.hashCode;
 
@@ -72,4 +79,18 @@ class AdminUserPageItemsInner {
   String toString() {
     return toJson().toString();
   }
+}
+
+enum AdminUserPageItemsInnerRoleEnum {
+  @JsonValue(r'learner')
+  learner(r'learner'),
+  @JsonValue(r'admin')
+  admin(r'admin');
+
+  const AdminUserPageItemsInnerRoleEnum(this.value);
+
+  final String value;
+
+  @override
+  String toString() => value;
 }

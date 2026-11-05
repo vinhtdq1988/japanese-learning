@@ -5,6 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/progress_summary_goal.dart';
 import 'package:japanese_api/src/model/progress_summary_weak_topics_inner.dart';
+import 'package:japanese_api/src/model/progress_summary_kanji.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -32,6 +33,8 @@ class ProgressSummary {
 
     this.goal,
 
+    this.kanji,
+
     this.weakTopics,
   });
 
@@ -56,6 +59,9 @@ class ProgressSummary {
   @JsonKey(name: r'goal', required: false, includeIfNull: false)
   final ProgressSummaryGoal? goal;
 
+  @JsonKey(name: r'kanji', required: false, includeIfNull: false)
+  final ProgressSummaryKanji? kanji;
+
   @JsonKey(name: r'weakTopics', required: false, includeIfNull: false)
   final List<ProgressSummaryWeakTopicsInner>? weakTopics;
 
@@ -69,6 +75,7 @@ class ProgressSummary {
           other.reviewAccuracy == reviewAccuracy &&
           other.currentStreakDays == currentStreakDays &&
           other.goal == goal &&
+          other.kanji == kanji &&
           other.weakTopics == weakTopics;
 
   @override
@@ -79,6 +86,7 @@ class ProgressSummary {
       (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode) +
       currentStreakDays.hashCode +
       goal.hashCode +
+      (kanji == null ? 0 : kanji.hashCode) +
       weakTopics.hashCode;
 
   factory ProgressSummary.fromJson(Map<String, dynamic> json) =>

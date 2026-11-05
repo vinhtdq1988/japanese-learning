@@ -114,7 +114,7 @@ Future<void> _choose(
 void main() {
   group('màn hình điều chỉnh kế hoạch', () {
     testWidgets(
-      'hiển thị lựa chọn hiện tại; nghe, đọc, Kanji bị khóa kèm ghi chú',
+      'hiển thị lựa chọn hiện tại; nghe, đọc bị khóa kèm ghi chú, Kanji bật/tắt được',
       (tester) async {
         await _open(tester);
         expect(_selected(tester, 'minutes-10'), isTrue);
@@ -123,7 +123,9 @@ void main() {
         expect(_has('pause-path'), isTrue);
         expect(_has('resume-path'), isFalse);
 
-        for (final skill in <String>['listening', 'reading', 'kanji']) {
+        expect(_has('skill-locked-kanji'), isFalse);
+        expect(_has('skill-toggle-kanji'), isTrue);
+        for (final skill in <String>['listening', 'reading']) {
           expect(_has('skill-locked-$skill'), isTrue);
           final chip = tester.widget<FilterChip>(
             find.byKey(Key('skill-locked-$skill')),
@@ -165,6 +167,55 @@ void main() {
       });
       expect(t.adjust.patches.last.containsKey('prioritizedSkill'), isTrue);
       expect(_selected(tester, 'priority-none'), isTrue);
+    });
+
+    testWidgets(
+      'bật Kanji gửi skills mới; ưu tiên Kanji gửi prioritizedSkill',
+      (tester) async {
+        final t = await _open(tester);
+        expect(_has('priority-kanji'), isFalse, reason: 'chưa chọn Kanji');
+        await _tap(tester, 'skill-toggle-kanji');
+        expect(t.adjust.patches.last, <String, Object?>{
+          'skills': <String>['vocabulary', 'grammar', 'kanji'],
+        });
+        expect(find.textContaining('kế hoạch kế tiếp'), findsWidgets);
+        expect(_has('priority-kanji'), isTrue);
+
+        await _tap(tester, 'priority-kanji');
+        expect(t.adjust.patches.last, <String, Object?>{
+          'prioritizedSkill': 'kanji',
+        });
+        expect(_selected(tester, 'priority-kanji'), isTrue);
+      },
+    );
+
+    testWidgets(
+      'bỏ Kanji khi đang ưu tiên Kanji thì xóa lựa chọn ưu tiên trên UI',
+      (tester) async {
+        final t = await _open(tester);
+        await _tap(tester, 'skill-toggle-kanji');
+        await _tap(tester, 'priority-kanji');
+        expect(_selected(tester, 'priority-kanji'), isTrue);
+
+        await _tap(tester, 'skill-toggle-kanji');
+        expect(t.adjust.patches.last, <String, Object?>{
+          'skills': <String>['vocabulary', 'grammar'],
+        });
+        expect(_has('priority-kanji'), isFalse);
+        expect(_selected(tester, 'priority-none'), isTrue);
+      },
+    );
+
+    testWidgets('không bỏ được kỹ năng cuối cùng còn chọn', (tester) async {
+      final t = await _open(tester);
+      await _tap(tester, 'skill-toggle-grammar');
+      expect(t.adjust.patches.last, <String, Object?>{
+        'skills': <String>['vocabulary'],
+      });
+      final chip = tester.widget<FilterChip>(
+        find.byKey(const Key('skill-toggle-vocabulary')),
+      );
+      expect(chip.onSelected, isNull);
     });
 
     testWidgets(

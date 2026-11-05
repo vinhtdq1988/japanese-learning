@@ -1,4 +1,4 @@
-// Schema Drizzle – khớp migration `migrations/0001_init.sql` (nguồn sự thật của lược đồ là file SQL).
+// Schema Drizzle – khớp migration `migrations/0001_init.sql`, `0002_kanji_skill.sql`, `0003_kanji.sql` (nguồn sự thật của lược đồ là file SQL).
 // Drizzle chỉ dùng để truy vấn có kiểu; KHÔNG sinh migration từ file này.
 import { sql } from 'drizzle-orm';
 import {
@@ -20,7 +20,7 @@ import {
   uniqueIndex,
   uuid,
 } from 'drizzle-orm/pg-core';
-import type { I18nText } from '../domain/types.js';
+import type { I18nText, KanjiDetails } from '../domain/types.js';
 
 const citext = customType<{ data: string }>({
   dataType: () => 'citext',
@@ -31,7 +31,8 @@ const timestamptz = (name: string) => timestamp(name, { withTimezone: true, mode
 // --- Kiểu liệt kê (tên khớp CREATE TYPE trong migration) ---
 export const userRole = pgEnum('user_role', ['learner', 'admin']);
 export const accountStatus = pgEnum('account_status', ['active', 'disabled', 'pending_deletion']);
-export const skill = pgEnum('skill', ['vocabulary', 'grammar']);
+export const skill = pgEnum('skill', ['vocabulary', 'grammar', 'kanji']);
+export const reviewFacet = pgEnum('review_facet', ['item', 'meaning', 'reading', 'word']);
 export const language = pgEnum('language', ['vi', 'en']);
 export const selfLevel = pgEnum('self_level', ['none', 'N5', 'N4', 'N3', 'N2', 'N1']);
 export const targetLevel = pgEnum('target_level', ['N5', 'N4', 'N3', 'N2', 'N1']);
@@ -131,6 +132,8 @@ export const learningProfiles = pgTable('learning_profiles', {
   onboardingState: onboardingState('onboarding_state').notNull().default('not_started'),
   onboardingDraft: jsonb('onboarding_draft').$type<Record<string, unknown>>(),
   paused: boolean('paused').notNull().default(false),
+  // Thời điểm người học chọn Kanji (đo SC-001/SC-008); giữ khi bỏ chọn, đặt lại khi chọn lại.
+  kanjiSelectedAt: timestamptz('kanji_selected_at'),
   updatedAt: timestamptz('updated_at').notNull().defaultNow(),
 });
 
@@ -190,6 +193,8 @@ export const learningUnits = pgTable(
 export interface ExampleSentence {
   ja: string;
   reading?: string | null;
+  /** Kanji: cách đọc của chính chữ trong từ ví dụ này. */
+  kanjiReading?: string | null;
   translation: I18nText;
 }
 
@@ -209,6 +214,9 @@ export const contentItems = pgTable(
       .$type<ExampleSentence[]>()
       .notNull()
       .default(sql`'[]'`),
+    // Chủ đề và chi tiết riêng của chữ Kanji (NULL với mục khác; có thể NULL ở bản nháp Kanji).
+    topicId: uuid('topic_id').references(() => topics.id),
+    kanjiDetails: jsonb('kanji_details').$type<KanjiDetails>(),
     position: smallint('position').notNull().default(0),
     status: elementStatus('status').notNull().default('active'),
     createdAt: timestamptz('created_at').notNull().defaultNow(),
@@ -229,6 +237,7 @@ export const exercises = pgTable(
     payload: jsonb('payload').$type<Record<string, unknown>>().notNull(),
     feedbackCorrect: jsonb('feedback_correct').$type<I18nText>().notNull(),
     feedbackIncorrect: jsonb('feedback_incorrect').$type<I18nText>().notNull(),
+    facet: reviewFacet('facet').notNull().default('item'),
     position: smallint('position').notNull().default(0),
     status: elementStatus('status').notNull().default('active'),
     createdAt: timestamptz('created_at').notNull().defaultNow(),
@@ -356,6 +365,8 @@ export const dailyPlanItems = pgTable(
     type: planItemType('type').notNull(),
     unitId: uuid('unit_id').references(() => learningUnits.id),
     reviewItemIds: uuid('review_item_ids').array(),
+    // Song song với reviewItemIds; NULL = mọi phần tử là `item`.
+    reviewFacets: reviewFacet('review_facets').array(),
     estMinutes: smallint('est_minutes').notNull(),
     position: smallint('position').notNull().default(0),
     status: planItemStatus('status').notNull().default('pending'),
@@ -400,6 +411,7 @@ export const studyRecords = pgTable(
       .notNull()
       .references(() => exercises.id),
     itemId: uuid('item_id').references(() => contentItems.id),
+    facet: reviewFacet('facet').notNull().default('item'),
     topicId: uuid('topic_id')
       .notNull()
       .references(() => topics.id),
@@ -416,6 +428,9 @@ export const studyRecords = pgTable(
       .on(t.sessionId, t.exerciseId)
       .where(sql`${t.isRetry} = false`),
     index('study_records_user_date_idx').on(t.userId, t.localDate),
+    index('study_records_item_facet_idx')
+      .on(t.userId, t.itemId, t.facet, sql`${t.occurredAt} DESC`)
+      .where(sql`${t.isRetry} = false`),
   ],
 );
 
@@ -449,6 +464,7 @@ export const reviewSchedules = pgTable(
     itemId: uuid('item_id')
       .notNull()
       .references(() => contentItems.id),
+    facet: reviewFacet('facet').notNull().default('item'),
     intervalDays: integer('interval_days').notNull(),
     // numeric(3,2) → Drizzle trả chuỗi; engine SRS chuyển sang số khi dùng.
     ease: numeric('ease', { precision: 3, scale: 2 }).notNull(),
@@ -459,9 +475,11 @@ export const reviewSchedules = pgTable(
     lastReviewedAt: timestamptz('last_reviewed_at'),
     lastReviewedLocalDate: date('last_reviewed_local_date', { mode: 'string' }),
     isHard: boolean('is_hard').notNull().default(false),
+    // Chữ Kanji đã đánh dấu thành thạo (áp mọi khía cạnh): không vào gói ôn; NULL = đang ôn.
+    masteredAt: timestamptz('mastered_at'),
   },
   (t) => [
-    primaryKey({ columns: [t.userId, t.itemId] }),
+    primaryKey({ columns: [t.userId, t.itemId, t.facet] }),
     index('review_schedules_due_idx').on(t.userId, t.dueDate),
   ],
 );

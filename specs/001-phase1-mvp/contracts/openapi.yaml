@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Japanese Learning API
-  version: 1.10.0
+  version: 1.11.0
   description: |
     Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
     - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
@@ -18,6 +18,7 @@ info:
       1.8.0 (2026-11-04, trong lúc hiện thực US8, chưa có client nào phụ thuộc) – (1) `POST /trial/events` làm rõ 422 khi tên sự kiện ngoài danh sách hoặc thân có trường ngoài `event`; (2) `TrialContent` mô tả cụ thể `answerKey` theo loại bài tập (`correctIndex` | `pairs` | `acceptedAnswers`) để client chấm cục bộ; (3) `GET /trial/content` và `POST /trial/placement/grade` làm rõ chỉ tăng bộ đếm ẩn danh; (4) sửa lỗi cú pháp YAML của `MasterResult.remainingUnits.description` (đặt trong dấu nháy; trình sinh mã từ chối spec) – không đổi ngữ nghĩa. Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; cần sinh lại API client vì `answerKey` có thuộc tính.
       1.9.0 (2026-11-05, trong lúc hiện thực US6, chưa có client nào phụ thuộc) – bổ sung cho `/admin/*`: (0) thêm `GET /admin/topics` (`adminListTopics`, schema `AdminTopic`) để admin chọn `topicId` khi soạn đơn vị và câu hỏi; (1) bài tập trong `AdminUnitWrite` thêm `itemIndex` (chỉ số 0 của mục trong `items` cùng payload mà bài tập kiểm tra; cần để bài tập do admin tạo vào được lịch ôn tập, `exercises.item_id`); (2) `AdminPlacementQuestion` thêm `hint` (gợi ý song ngữ, tùy chọn) và khai báo trường bắt buộc khi ghi; (3) `AdminUserPage.items[]` thêm `role`; (4) `AdminActionLog` thêm `diff` (đã loại thông tin nhạy cảm) và `targetId` có thể null (thao tác trên cả bộ câu hỏi); (5) `GET /admin/action-logs` trả con trỏ trang kế tiếp ở header `X-Next-Cursor`; `GET /admin/units` không kèm `items`/`exercises` (xem chi tiết bằng `GET /admin/units/{unitId}`); (6) khai báo các mã 404/422 còn thiếu của `/admin/*`. Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; API client sinh ra không bị ảnh hưởng vì các trường mới đều tùy chọn.
       1.10.0 (2026-11-05, trong lúc hiện thực US7, chưa có client nào phụ thuộc) – làm rõ và khai báo đủ mã lỗi cho tài khoản: (1) `PUT /me/password` thêm 422 (mật khẩu mới không hợp lệ hoặc trùng email); (2) `POST /account/delete` thêm 401 (mật khẩu sai) và 422 (thiếu mật khẩu), `permanentDeletionAt` bắt buộc; phản hồi 200 yêu cầu client xóa token ngay vì mọi phiên của tài khoản đã bị thu hồi; (3) `POST /account/restore` thêm 401 và mã lỗi `ACCOUNT_DELETED` cho 410; sau khi khôi phục client PHẢI gọi `POST /auth/refresh` vì access token hiện tại còn mang trạng thái `pending_deletion`; (4) `PATCH /me` thêm 401 `UNAUTHORIZED` cho thiếu/sai `currentPassword` khi đổi email (đã khai báo từ 1.3.0). Thay đổi bổ sung và làm rõ, không phá vỡ tương thích.
+      1.11.0 (2026-11-05, spec 003-kanji-lessons) – bổ sung Kanji: (1) `Skill` thêm `kanji` (placement và dùng thử vẫn chỉ vocabulary/grammar); (2) `ProfileUpdate` thêm `skills` – đổi kỹ năng không sinh lộ trình mới, có hiệu lực ở kế hoạch kế tiếp; bỏ kỹ năng đang ưu tiên thì `prioritizedSkill` về null; (3) thêm `PUT /path/items/{itemId}/master` (chỉ mục Kanji); (4) `ContentItem` thêm `kanji`, `topicId`, `examples[].kanjiReading`; `Exercise` thêm `facet`; (5) `DailyPlan` thêm `kanjiNotice`; `PlanItem` thêm `kind`; (6) `SessionSummary` thêm `attentionItems`; (7) `ProgressSummary` thêm `kanji` và `weakTopics[].skill`; (8) `AdminUnitWrite` nhận `kind=kanji`, mục thêm `topicId`/`kanjiDetails`, bài tập thêm `facet`; `GET /admin/units` lọc `kind=kanji`, `GET /admin/topics` thêm tham số lọc `skill`. Thay đổi bổ sung; client sinh mã cũ có thể không giải mã được `Skill=kanji` nên client và backend PHẢI phát hành cùng lúc.
 servers:
   - url: /api/v1
 tags:
@@ -460,6 +461,36 @@ paths:
         '404': { description: 'Chưa hoàn tất onboarding, hoặc không tìm thấy đơn vị học đang hoạt động', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
 
+  /path/items/{itemId}/master:
+    put:
+      operationId: setItemMastered
+      tags: [path]
+      summary: Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh)
+      description: Idempotent – gửi lại cùng giá trị trả 200 không đổi dữ liệu. Đánh dấu cả bài Kanji dùng `PUT /path/units/{unitId}/master`.
+      parameters:
+        - { name: itemId, in: path, required: true, schema: { type: string, format: uuid } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [mastered]
+              properties:
+                mastered: { type: boolean }
+      responses:
+        '200':
+          description: Đã cập nhật
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [itemId, mastered]
+                properties:
+                  itemId: { type: string, format: uuid }
+                  mastered: { type: boolean }
+        '404': { description: 'Chưa hoàn tất onboarding, hoặc người học chưa học chữ này (không có lịch ôn)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '422': { description: 'Mục không phải Kanji, hoặc thân yêu cầu sai', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /today:
     get:
       operationId: getToday
@@ -571,6 +602,8 @@ paths:
       operationId: adminListTopics
       tags: [admin]
       summary: Danh sách mảng nội dung (để chọn `topicId` khi soạn đơn vị học và câu hỏi kiểm tra trình độ)
+      parameters:
+        - { name: skill, in: query, required: false, schema: { $ref: '#/components/schemas/Skill' } }
       responses:
         '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminTopic' } } } } }
         '403': { $ref: '#/components/responses/Forbidden' }
@@ -582,7 +615,7 @@ paths:
       parameters:
         - { name: status, in: query, schema: { type: string, enum: [draft, active, inactive] } }
         - { name: level, in: query, schema: { type: string, enum: [N5, N4, N3] } }
-        - { name: kind, in: query, schema: { type: string, enum: [vocabulary, grammar] } }
+        - { name: kind, in: query, schema: { $ref: '#/components/schemas/Skill' } }
       responses:
         '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminUnit' } } } } }
         '403': { $ref: '#/components/responses/Forbidden' }
@@ -794,7 +827,29 @@ components:
     ContentLevel: { type: string, enum: [N5, N4, N3] }
     TargetLevel: { type: string, enum: [N5, N4, N3, N2, N1], description: 'Mục tiêu JLPT; N2/N1 được chấp nhận nhưng nội dung Giai đoạn 1 chỉ đến N3 (`scopeNotice`)' }
     ScopeNotice: { type: string, enum: [content_ceiling_n3], nullable: true, description: 'Trình độ hoặc mục tiêu vượt phạm vi nội dung hiện có (N5–N3); lộ trình dùng N3 làm trần' }
-    Skill: { type: string, enum: [vocabulary, grammar] }
+    Skill: { type: string, enum: [vocabulary, grammar, kanji] }
+    ReviewFacet:
+      type: string
+      enum: [item, meaning, reading, word]
+      description: '`item` cho từ vựng/ngữ pháp và bài tập không gắn chữ; Kanji dùng meaning | reading | word (lịch ôn theo cặp chữ–khía cạnh)'
+    KanjiDetails:
+      type: object
+      description: Thông tin chữ Kanji gửi cho người học (đã bản địa hóa)
+      required: [onReadings, kunReadings, strokeCount]
+      properties:
+        onReadings: { type: array, items: { type: string }, description: 'Âm On (katakana); có thể rỗng' }
+        kunReadings: { type: array, items: { type: string }, description: 'Âm Kun (hiragana, `.` phân cách okurigana); có thể rỗng. onReadings ∪ kunReadings không rỗng' }
+        strokeCount: { type: integer, minimum: 1, maximum: 30 }
+        components: { type: string, allOf: [{ $ref: '#/components/schemas/LocalizedText' }], nullable: true }
+    KanjiDetailsWrite:
+      type: object
+      description: Thông tin chữ Kanji admin ghi (song ngữ)
+      required: [onReadings, kunReadings, strokeCount]
+      properties:
+        onReadings: { type: array, items: { type: string } }
+        kunReadings: { type: array, items: { type: string } }
+        strokeCount: { type: integer, minimum: 1, maximum: 30 }
+        components: { type: object, allOf: [{ $ref: '#/components/schemas/I18nText' }], nullable: true }
     Lang: { type: string, enum: [vi, en] }
     GoalType: { type: string, enum: [jlpt, daily_conversation, work] }
     AccountStatus: { type: string, enum: [active, disabled, pending_deletion] }
@@ -857,6 +912,12 @@ components:
         targetLevel: { $ref: '#/components/schemas/TargetLevel' }
         targetDate: { type: string, format: date, nullable: true }
         prioritizedSkill: { type: string, allOf: [{ $ref: '#/components/schemas/Skill' }], nullable: true }
+        skills:
+          type: array
+          minItems: 1
+          uniqueItems: true
+          items: { $ref: '#/components/schemas/Skill' }
+          description: 'Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.'
         language: { $ref: '#/components/schemas/Lang' }
         timezone: { type: string }
     LocalizedText:
@@ -868,6 +929,7 @@ components:
       properties:
         id: { type: string, format: uuid }
         type: { type: string, enum: [multiple_choice, matching, fill_blank] }
+        facet: { $ref: '#/components/schemas/ReviewFacet' }
         prompt: { $ref: '#/components/schemas/LocalizedText' }
         payload:
           type: object
@@ -881,6 +943,12 @@ components:
         reading: { type: string, nullable: true }
         meaning: { $ref: '#/components/schemas/LocalizedText' }
         explanation: { type: string, allOf: [{ $ref: '#/components/schemas/LocalizedText' }], nullable: true }
+        topicId: { type: string, format: uuid, nullable: true, description: 'Chủ đề của chữ (chỉ Kanji)' }
+        kanji:
+          type: object
+          allOf: [{ $ref: '#/components/schemas/KanjiDetails' }]
+          nullable: true
+          description: 'Chỉ có khi `kind=kanji`; `reading` khi đó là null'
         examples:
           type: array
           items:
@@ -888,6 +956,7 @@ components:
             properties:
               ja: { type: string }
               reading: { type: string, nullable: true }
+              kanjiReading: { type: string, nullable: true, description: 'Kanji: cách đọc của chữ trong từ ví dụ này' }
               translation: { $ref: '#/components/schemas/LocalizedText' }
     TrialContent:
       type: object
@@ -1007,6 +1076,11 @@ components:
         estMinutes: { type: integer, minimum: 1, maximum: 15, description: 'Ước lượng; review_batch = ceil(itemCount × REVIEW_SECONDS_PER_ITEM / 60)' }
         status: { type: string, enum: [pending, in_progress, completed] }
         itemCount: { type: integer, nullable: true }
+        kind:
+          type: string
+          allOf: [{ $ref: '#/components/schemas/Skill' }]
+          nullable: true
+          description: 'Kỹ năng của đơn vị với `new_unit` (client hiển thị nhãn Kanji); null với `review_batch`'
     MasterResult:
       type: object
       required: [remainingUnits]
@@ -1030,6 +1104,14 @@ components:
           type: string
           nullable: true
           description: 'Thông báo (đã học hết nội dung phù hợp, kế hoạch đã điều chỉnh sau khoảng nghỉ…)'
+        kanjiNotice:
+          type: object
+          nullable: true
+          description: 'Chỉ có khi người học đã chọn Kanji và đã học hết bài Kanji phù hợp trình độ (FR-013). Kế hoạch vẫn có bài của kỹ năng khác và ôn tập'
+          required: [code, suggestion]
+          properties:
+            code: { type: string, enum: [kanji_exhausted] }
+            suggestion: { type: string, enum: [raise_level, content_exhausted] }
         summary:
           type: object
           allOf: [{ $ref: '#/components/schemas/SessionSummary' }]
@@ -1074,6 +1156,15 @@ components:
         total: { type: integer }
         minutesSpent: { type: number }
         dayCompleted: { type: boolean }
+        attentionItems:
+          type: array
+          description: 'Chữ Kanji có ít nhất một câu lượt chính sai trong phiên (US1.4); vắng mặt với phiên không có Kanji'
+          items:
+            type: object
+            required: [itemId, japanese]
+            properties:
+              itemId: { type: string, format: uuid }
+              japanese: { type: string }
     ProgressSummary:
       type: object
       properties:
@@ -1089,12 +1180,23 @@ components:
             onTrack: { type: boolean, nullable: true }
             targetDate: { type: string, format: date, nullable: true }
             scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+        kanji:
+          type: object
+          nullable: true
+          description: 'null khi người học không chọn Kanji và chưa có dữ liệu Kanji. Các trường tổng (totalMinutes, lessonsCompleted, reviewAccuracy, currentStreakDays) đã bao gồm Kanji'
+          required: [charactersLearned, lessonsCompleted, minutes]
+          properties:
+            charactersLearned: { type: integer, description: 'Số chữ có ít nhất một khía cạnh đã lên lịch ôn' }
+            lessonsCompleted: { type: integer }
+            minutes: { type: number, description: 'Thời gian học Kanji (phút); phiên ôn hỗn hợp được phân bổ theo tỷ lệ câu trả lời Kanji' }
+            reviewAccuracy: { type: number, nullable: true, minimum: 0, maximum: 1 }
         weakTopics:
           type: array
           items:
             type: object
             properties:
               topicId: { type: string, format: uuid }
+              skill: { $ref: '#/components/schemas/Skill' }
               name: { $ref: '#/components/schemas/LocalizedText' }
               accuracy: { type: number }
     I18nText:
@@ -1137,7 +1239,13 @@ components:
               reading: { type: string, nullable: true }
               meaning: { $ref: '#/components/schemas/I18nText' }
               explanation: { type: object, allOf: [{ $ref: '#/components/schemas/I18nText' }], nullable: true }
-              examples: { type: array, items: { type: object } }
+              topicId: { type: string, format: uuid, nullable: true, description: 'Bắt buộc khi kind=kanji lúc kích hoạt (chủ đề skill=kanji); bỏ qua với kind khác. Lưu nháp không bắt buộc' }
+              kanjiDetails:
+                type: object
+                allOf: [{ $ref: '#/components/schemas/KanjiDetailsWrite' }]
+                nullable: true
+                description: 'Bắt buộc đầy đủ khi kích hoạt kind=kanji (lưu nháp chấp nhận null); `reading` khi đó để null'
+              examples: { type: array, items: { type: object }, description: '`[{ja, reading, translation: I18nText, kanjiReading?}]`' }
         exercises:
           type: array
           description: Cùng quy tắc với `items` – bài tập vắng mặt trong payload sửa bị chuyển `inactive`, không xóa cứng.
@@ -1148,6 +1256,10 @@ components:
               id: { type: string, format: uuid, description: Có khi sửa bài tập đã tồn tại }
               status: { type: string, enum: [active, inactive], default: active }
               itemIndex: { type: integer, minimum: 0, nullable: true, description: 'Chỉ số (từ 0) của mục trong `items` cùng payload mà bài tập kiểm tra; null/vắng = không gắn mục (không vào lịch ôn tập). Khi đọc, tính theo thứ tự `items` trả về' }
+              facet:
+                allOf: [{ $ref: '#/components/schemas/ReviewFacet' }]
+                default: item
+                description: 'Bài tập gắn chữ Kanji (`itemIndex` khác null trong đơn vị Kanji) PHẢI có meaning | reading | word; bài tập khác PHẢI là item'
               type: { type: string, enum: [multiple_choice, matching, fill_blank] }
               prompt: { $ref: '#/components/schemas/I18nText' }
               payload: { type: object, description: Gồm đáp án cố định (xem data-model.md §2.10) }
@@ -1168,7 +1280,7 @@ components:
       properties:
         id: { type: string, format: uuid }
         level: { $ref: '#/components/schemas/ContentLevel' }
-        skill: { $ref: '#/components/schemas/Skill' }
+        skill: { type: string, enum: [vocabulary, grammar], description: 'Placement không có Kanji (422 nếu gửi kanji)' }
         topicId: { type: string, format: uuid }
         prompt: { type: string, description: Câu hỏi bằng tiếng Nhật }
         hint: { type: object, allOf: [{ $ref: '#/components/schemas/I18nText' }], nullable: true, description: Gợi ý song ngữ nối sau câu hỏi (tùy chọn) }

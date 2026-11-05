@@ -3,6 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { afterAll, describe, expect, it } from 'vitest';
 import { formatIssues } from '../../src/domain/content-validation.js';
+import { findMissingGlyphs } from '../../src/domain/font-coverage.js';
 import {
   DEFAULT_CONTENT_DIR,
   loadContent,
@@ -138,5 +139,153 @@ describe('validateContent phát hiện nội dung sai', () => {
     const messages = formatIssues(await validateContent(content, dir));
     expect(messages).toContain('không có mảng "khong-ton-tai"');
     expect(messages).toContain('không có mục "không có mục này"');
+  });
+});
+
+// --- Thư viện Kanji (spec 003: T019, FR-006, FR-011, SC-004) ---
+
+describe('thư viện Kanji trong content/', () => {
+  const SECONDS_PER_EXERCISE = 30;
+  const kanjiUnits = async () =>
+    (await loadContent()).units.filter((u) => u.file.includes('-kanji-'));
+
+  it('mọi file *-kanji-*.json là đơn vị kind=kanji hợp lệ theo schema 1.1.0 và quy tắc nội dung', async () => {
+    const content = await loadContent();
+    const units = content.units.filter((u) => u.file.includes('-kanji-'));
+    expect(units).toHaveLength(7);
+    for (const u of units) expect(u.kind, u.file).toBe('kanji');
+    expect(formatIssues(await validateContent(content))).toBe('');
+  });
+
+  it('mọi ký tự của japanese và examples[].ja có glyph trong phông (FR-006)', async () => {
+    for (const u of await kanjiUnits()) {
+      for (const item of u.items) {
+        expect(findMissingGlyphs(item.japanese), `${u.file}: ${item.japanese}`).toEqual([]);
+        for (const ex of item.examples ?? []) {
+          expect(findMissingGlyphs(ex.ja), `${u.file}: ${ex.ja}`).toEqual([]);
+        }
+      }
+    }
+  });
+
+  it('mỗi trình độ N5, N4, N3 có ≥ 1 bài Kanji 5 phút (SC-004)', async () => {
+    const units = await kanjiUnits();
+    for (const level of ['N5', 'N4', 'N3'] as const) {
+      expect(
+        units.some((u) => u.level === level && u.estMinutes === 5),
+        level,
+      ).toBe(true);
+    }
+  });
+
+  it('mỗi bài Kanji có goalTags không rỗng, tier core, 3–5 chữ (FR-011)', async () => {
+    for (const u of await kanjiUnits()) {
+      expect(u.goalTags?.length ?? 0, u.file).toBeGreaterThan(0);
+      expect(u.tier ?? 'core', u.file).toBe('core');
+      expect(u.items.length, u.file).toBeGreaterThanOrEqual(3);
+      expect(u.items.length, u.file).toBeLessThanOrEqual(5);
+    }
+  });
+
+  it('không chữ Kanji nào xuất hiện ở hai bài (research K10 "chữ duy nhất")', async () => {
+    const seen = new Map<string, string>();
+    for (const u of await kanjiUnits()) {
+      for (const item of u.items) {
+        expect(seen.get(item.japanese), `${item.japanese} ở ${u.file}`).toBeUndefined();
+        seen.set(item.japanese, u.file);
+      }
+    }
+    expect(seen.size).toBe(27);
+  });
+
+  it('số bài tập mỗi bài nằm trong quỹ thời lượng estMinutes (30 giây/câu)', async () => {
+    for (const u of await kanjiUnits()) {
+      expect(u.exercises.length * SECONDS_PER_EXERCISE, u.file).toBeLessThanOrEqual(
+        u.estMinutes * 60,
+      );
+    }
+  });
+
+  it('mỗi chữ có đủ bài tập cho ba khía cạnh nghĩa, cách đọc, từ chứa chữ', async () => {
+    for (const u of await kanjiUnits()) {
+      for (const item of u.items) {
+        for (const facet of ['meaning', 'reading', 'word']) {
+          expect(
+            u.exercises.some((e) => e.item === item.japanese && e.facet === facet),
+            `${u.file}: ${item.japanese} × ${facet}`,
+          ).toBe(true);
+        }
+      }
+    }
+  });
+
+  it('không có nội dung luyện viết tay/thứ tự nét (ngoài phạm vi Giai đoạn 1)', async () => {
+    for (const u of await kanjiUnits()) {
+      const text = JSON.stringify(u.exercises).toLowerCase();
+      expect(text, u.file).not.toMatch(/thứ tự nét|viết tay|stroke order|handwriting/);
+    }
+  });
+
+  it('mọi file đơn vị cũ (từ vựng, ngữ pháp) vẫn hợp lệ với schema 1.1.0', async () => {
+    const content = await loadContent();
+    const old = { ...content, units: content.units.filter((u) => !u.file.includes('-kanji-')) };
+    expect(formatIssues(await validateContent(old))).not.toContain('schema');
+    for (const u of old.units) expect(['vocabulary', 'grammar']).toContain(u.kind);
+  });
+
+  async function validateMutated(mutate: (unitsDir: string) => Promise<void>): Promise<string> {
+    const dir = await mkdtemp(path.join(os.tmpdir(), 'content-kanji-'));
+    tempDirs.push(dir);
+    await cp(DEFAULT_CONTENT_DIR, dir, { recursive: true });
+    await mutate(path.join(dir, 'units'));
+    return formatIssues(await validateContent(await loadContent(dir), dir));
+  }
+
+  it('báo lỗi khi một chữ thiếu bài tập cho một khía cạnh', async () => {
+    const messages = await validateMutated(async (units) => {
+      const file = path.join(units, 'n5-kanji-numbers-1.json');
+      const doc = JSON.parse(await readFile(file, 'utf8'));
+      doc.exercises = doc.exercises.filter(
+        (e: { item?: string; facet?: string }) => !(e.item === '二' && e.facet === 'reading'),
+      );
+      await writeFile(file, JSON.stringify(doc));
+    });
+    expect(messages).toContain('n5-kanji-numbers-1.json.exercises');
+    expect(messages).toContain('二');
+    expect(messages).toContain('reading');
+  });
+
+  it('báo lỗi khi cùng một chữ nằm ở hai bài', async () => {
+    const messages = await validateMutated(async (units) => {
+      const file = path.join(units, 'n5-kanji-numbers-2.json');
+      const doc = JSON.parse(await readFile(file, 'utf8'));
+      // Đổi 四 thành 三 (đã có ở bài số đếm 1) trong mục và bài tập.
+      doc.items[0].japanese = '三';
+      for (const e of doc.exercises) if (e.item === '四') e.item = '三';
+      await writeFile(file, JSON.stringify(doc));
+    });
+    expect(messages).toContain('三');
+    expect(messages).toMatch(/hai đơn vị|đã có ở bài/);
+  });
+
+  it('báo lỗi khi bài Kanji thiếu goalTags', async () => {
+    const messages = await validateMutated(async (units) => {
+      const file = path.join(units, 'n4-kanji-people-body.json');
+      const doc = JSON.parse(await readFile(file, 'utf8'));
+      doc.goalTags = [];
+      await writeFile(file, JSON.stringify(doc));
+    });
+    expect(messages).toContain('n4-kanji-people-body.json');
+    expect(messages).toContain('goalTags');
+  });
+
+  it('báo lỗi khi chữ Kanji nằm ngoài phông', async () => {
+    const messages = await validateMutated(async (units) => {
+      const file = path.join(units, 'n3-kanji-work.json');
+      const doc = JSON.parse(await readFile(file, 'utf8'));
+      doc.items[0].examples[0].ja = `${doc.items[0].japanese}\u{20000}`;
+      await writeFile(file, JSON.stringify(doc));
+    });
+    expect(messages).toContain('glyph');
   });
 });

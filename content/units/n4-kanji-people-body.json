@@ -1,0 +1,433 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-people",
+  "title": {
+    "vi": "Kanji con người và cơ thể (体 首 顔)",
+    "en": "People and body kanji (体 首 顔)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 100,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "体",
+      "topic": "kanji-n4-people",
+      "meaning": {
+        "vi": "cơ thể",
+        "en": "body"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タイ",
+          "テイ"
+        ],
+        "kunReadings": [
+          "からだ"
+        ],
+        "strokeCount": 7,
+        "components": {
+          "vi": "Bộ nhân 亻 (người) + 本 (gốc)",
+          "en": "Person radical 亻 + 本 (origin)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "体力",
+          "reading": "たいりょく",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "thể lực",
+            "en": "physical strength"
+          }
+        },
+        {
+          "ja": "体",
+          "reading": "からだ",
+          "kanjiReading": "からだ",
+          "translation": {
+            "vi": "cơ thể",
+            "en": "body"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "首",
+      "topic": "kanji-n4-people",
+      "meaning": {
+        "vi": "cổ; đầu",
+        "en": "neck; head"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュ"
+        ],
+        "kunReadings": [
+          "くび"
+        ],
+        "strokeCount": 9,
+        "components": {
+          "vi": "Bộ thủ 首 (cái đầu)",
+          "en": "Head radical 首"
+        }
+      },
+      "examples": [
+        {
+          "ja": "首都",
+          "reading": "しゅと",
+          "kanjiReading": "シュ",
+          "translation": {
+            "vi": "thủ đô",
+            "en": "capital city"
+          }
+        },
+        {
+          "ja": "首",
+          "reading": "くび",
+          "kanjiReading": "くび",
+          "translation": {
+            "vi": "cái cổ",
+            "en": "neck"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "顔",
+      "topic": "kanji-n4-people",
+      "meaning": {
+        "vi": "khuôn mặt",
+        "en": "face"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガン"
+        ],
+        "kunReadings": [
+          "かお"
+        ],
+        "strokeCount": 18,
+        "components": {
+          "vi": "彦 + 頁 (bộ hiệt: đầu)",
+          "en": "彦 + 頁 (page/head radical)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "顔",
+          "reading": "かお",
+          "kanjiReading": "かお",
+          "translation": {
+            "vi": "khuôn mặt",
+            "en": "face"
+          }
+        },
+        {
+          "ja": "顔色",
+          "reading": "かおいろ",
+          "kanjiReading": "かお",
+          "translation": {
+            "vi": "sắc mặt",
+            "en": "complexion"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "体",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「体」nghĩa là gì?",
+        "en": "What does 「体」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cơ thể",
+            "en": "body"
+          },
+          {
+            "vi": "cổ; đầu",
+            "en": "neck; head"
+          },
+          {
+            "vi": "khuôn mặt",
+            "en": "face"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 体 nghĩa là cơ thể.",
+        "en": "Correct! 体 means body."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 体 nghĩa là cơ thể.",
+        "en": "Not quite. 体 means body."
+      }
+    },
+    {
+      "item": "体",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「体」 trong 「体力」 (\"thể lực\").",
+        "en": "Type the reading of 「体」 in 「体力」 (\"physical strength\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たい",
+          "タイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 体力, 体 đọc là たい.",
+        "en": "Correct! In 体力, 体 is read たい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 体力, 体 đọc là たい.",
+        "en": "In 体力, 体 is read たい."
+      }
+    },
+    {
+      "item": "体",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「体」(cơ thể (đứng một mình)) đọc là gì?",
+        "en": "How is 「体」 (body (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "たい",
+          "からだ",
+          "てい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 体 = からだ (cơ thể (đứng một mình)).",
+        "en": "Correct! 体 = からだ (body (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "体 đọc là からだ (cơ thể (đứng một mình)).",
+        "en": "体 is read からだ (body (standing alone))."
+      }
+    },
+    {
+      "item": "首",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「首」nghĩa là gì?",
+        "en": "What does 「首」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khuôn mặt",
+            "en": "face"
+          },
+          {
+            "vi": "cổ; đầu",
+            "en": "neck; head"
+          },
+          {
+            "vi": "cơ thể",
+            "en": "body"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 首 nghĩa là cổ; đầu.",
+        "en": "Correct! 首 means neck; head."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 首 nghĩa là cổ; đầu.",
+        "en": "Not quite. 首 means neck; head."
+      }
+    },
+    {
+      "item": "首",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「首」 trong 「首都」 (\"thủ đô\").",
+        "en": "Type the reading of 「首」 in 「首都」 (\"capital city\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅ",
+          "シュ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 首都, 首 đọc là しゅ.",
+        "en": "Correct! In 首都, 首 is read しゅ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 首都, 首 đọc là しゅ.",
+        "en": "In 首都, 首 is read しゅ."
+      }
+    },
+    {
+      "item": "首",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「首」(cái cổ (đứng một mình)) đọc là gì?",
+        "en": "How is 「首」 (neck (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅ",
+          "かみ",
+          "くび"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 首 = くび (cái cổ (đứng một mình)).",
+        "en": "Correct! 首 = くび (neck (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "首 đọc là くび (cái cổ (đứng một mình)).",
+        "en": "首 is read くび (neck (standing alone))."
+      }
+    },
+    {
+      "item": "顔",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「顔」nghĩa là gì?",
+        "en": "What does 「顔」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cơ thể",
+            "en": "body"
+          },
+          {
+            "vi": "cổ; đầu",
+            "en": "neck; head"
+          },
+          {
+            "vi": "khuôn mặt",
+            "en": "face"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 顔 nghĩa là khuôn mặt.",
+        "en": "Correct! 顔 means face."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 顔 nghĩa là khuôn mặt.",
+        "en": "Not quite. 顔 means face."
+      }
+    },
+    {
+      "item": "顔",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「顔」 trong 「顔色」 (\"sắc mặt\").",
+        "en": "Type the reading of 「顔」 in 「顔色」 (\"complexion\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かお",
+          "カオ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 顔色, 顔 đọc là かお.",
+        "en": "Correct! In 顔色, 顔 is read かお."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 顔色, 顔 đọc là かお.",
+        "en": "In 顔色, 顔 is read かお."
+      }
+    },
+    {
+      "item": "顔",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「顔」(khuôn mặt (đứng một mình)) đọc là gì?",
+        "en": "How is 「顔」 (face (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "かお",
+          "がん",
+          "あたま"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 顔 = かお (khuôn mặt (đứng một mình)).",
+        "en": "Correct! 顔 = かお (face (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "顔 đọc là かお (khuôn mặt (đứng một mình)).",
+        "en": "顔 is read かお (face (standing alone))."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "体",
+            {
+              "vi": "cơ thể",
+              "en": "body"
+            }
+          ],
+          [
+            "首",
+            {
+              "vi": "cổ; đầu",
+              "en": "neck; head"
+            }
+          ],
+          [
+            "顔",
+            {
+              "vi": "khuôn mặt",
+              "en": "face"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

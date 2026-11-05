@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **action** | **String** |  | [optional] 
 **targetType** | **String** |  | [optional] 
 **targetId** | **String** |  | [optional] 
+**diff** | **Map&lt;String, Object&gt;** | Thay đổi trước/sau, đã loại thông tin nhạy cảm (mật khẩu, token, email) | [optional] 
 **occurredAt** | [**DateTime**](DateTime.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 **items** | [**List&lt;PlanItem&gt;**](PlanItem.md) |  | [optional] 
 **notice** | **String** | Thông báo (đã học hết nội dung phù hợp, kế hoạch đã điều chỉnh sau khoảng nghỉ…) | [optional] 
+**kanjiNotice** | [**DailyPlanKanjiNotice**](DailyPlanKanjiNotice.md) |  | [optional] 
 **summary** | [**SessionSummary**](SessionSummary.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

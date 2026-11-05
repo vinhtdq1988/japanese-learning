@@ -14,17 +14,19 @@ import 'package:japanese_api/src/model/admin_placement_question.dart';
 import 'package:japanese_api/src/model/admin_set_active_placement_set_request.dart';
 import 'package:japanese_api/src/model/admin_set_unit_status_request.dart';
 import 'package:japanese_api/src/model/admin_set_user_status_request.dart';
+import 'package:japanese_api/src/model/admin_topic.dart';
 import 'package:japanese_api/src/model/admin_unit.dart';
 import 'package:japanese_api/src/model/admin_unit_write.dart';
 import 'package:japanese_api/src/model/admin_user_page.dart';
 import 'package:japanese_api/src/model/error.dart';
+import 'package:japanese_api/src/model/skill.dart';
 
 class AdminApi {
   final Dio _dio;
 
   const AdminApi(this._dio);
 
-  /// Tạo câu hỏi kiểm tra trình độ
+  /// Tạo câu hỏi kiểm tra trình độ (luôn ở trạng thái chưa kích hoạt; đưa vào bộ hiện hành bằng &#x60;PUT /admin/placement-questions/active-set&#x60;)
   ///
   ///
   /// Parameters:
@@ -208,7 +210,7 @@ class AdminApi {
     );
   }
 
-  /// Chi tiết đơn vị học
+  /// Chi tiết đơn vị học (kèm mọi mục và bài tập, cả &#x60;inactive&#x60;)
   ///
   ///
   /// Parameters:
@@ -290,11 +292,11 @@ class AdminApi {
     );
   }
 
-  /// Nhật ký hành động quản trị (FR-032)
+  /// Nhật ký hành động quản trị (FR-032), mới nhất trước
   ///
   ///
   /// Parameters:
-  /// * [cursor]
+  /// * [cursor] - Giá trị header `X-Next-Cursor` của trang trước
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -447,7 +449,89 @@ class AdminApi {
     );
   }
 
-  /// Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại)
+  /// Danh sách mảng nội dung (để chọn &#x60;topicId&#x60; khi soạn đơn vị học và câu hỏi kiểm tra trình độ)
+  ///
+  ///
+  /// Parameters:
+  /// * [skill]
+  /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
+  /// * [headers] - Can be used to add additional headers to the request
+  /// * [extras] - Can be used to add flags to the request
+  /// * [validateStatus] - A [ValidateStatus] callback that can be used to determine request success based on the HTTP status of the response
+  /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
+  /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
+  ///
+  /// Returns a [Future] containing a [Response] with a [List<AdminTopic>] as data
+  /// Throws [DioException] if API call or serialization fails
+  Future<Response<List<AdminTopic>>> adminListTopics({
+    Skill? skill,
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
+  }) async {
+    final _path = r'/admin/topics';
+    final _options = Options(
+      method: r'GET',
+      headers: <String, dynamic>{...?headers},
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[
+          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+        ],
+        ...?extra,
+      },
+      validateStatus: validateStatus,
+    );
+
+    final _queryParameters = <String, dynamic>{
+      if (skill != null) r'skill': skill,
+    };
+
+    final _response = await _dio.request<Object>(
+      _path,
+      options: _options,
+      queryParameters: _queryParameters,
+      cancelToken: cancelToken,
+      onSendProgress: onSendProgress,
+      onReceiveProgress: onReceiveProgress,
+    );
+
+    List<AdminTopic>? _responseData;
+
+    try {
+      final rawData = _response.data;
+      _responseData = rawData == null
+          ? null
+          : deserialize<List<AdminTopic>, AdminTopic>(
+              rawData,
+              'List<AdminTopic>',
+              growable: true,
+            );
+    } catch (error, stackTrace) {
+      throw DioException(
+        requestOptions: _response.requestOptions,
+        response: _response,
+        type: DioExceptionType.unknown,
+        error: error,
+        stackTrace: stackTrace,
+      );
+    }
+
+    return Response<List<AdminTopic>>(
+      data: _responseData,
+      headers: _response.headers,
+      isRedirect: _response.isRedirect,
+      requestOptions: _response.requestOptions,
+      redirects: _response.redirects,
+      statusCode: _response.statusCode,
+      statusMessage: _response.statusMessage,
+      extra: _response.extra,
+    );
+  }
+
+  /// Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại); không kèm &#x60;items&#x60;/&#x60;exercises&#x60;
   ///
   ///
   /// Parameters:
@@ -466,7 +550,7 @@ class AdminApi {
   Future<Response<List<AdminUnit>>> adminListUnits({
     String? status,
     String? level,
-    String? kind,
+    Skill? kind,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -535,12 +619,12 @@ class AdminApi {
     );
   }
 
-  /// Tìm tài khoản người học (FR-031)
+  /// Tìm tài khoản người học (FR-031), mới nhất trước
   ///
   ///
   /// Parameters:
   /// * [q] - Tìm theo email/tên
-  /// * [cursor]
+  /// * [cursor] - `nextCursor` của trang trước
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -950,7 +1034,7 @@ class AdminApi {
     );
   }
 
-  /// Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp)
+  /// Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp). Đơn vị đang &#x60;active&#x60; PHẢI vẫn đạt kiểm tra nội dung sau khi sửa.
   ///
   ///
   /// Parameters:

@@ -8,6 +8,7 @@ import {
   SKILLS,
   TARGET_LEVELS,
   type DailyMinutes,
+  type Skill,
 } from './types.js';
 
 // Quy tắc kiểm tra dữ liệu người dùng nhập (đăng ký, hồ sơ, onboarding). Thông báo lỗi cụ thể theo
@@ -70,13 +71,18 @@ export const dailyMinutesSchema = z
 
 export const targetDateSchema = z.iso.date('Mốc thời gian phải có dạng YYYY-MM-DD');
 
-/** Giai đoạn 1 chỉ hỗ trợ từ vựng và ngữ pháp; nghe, đọc, Kanji bị từ chối (data-model §2.4). */
+/**
+ * Kỹ năng hỗ trợ: từ vựng, ngữ pháp và Kanji (spec 003); nghe, đọc bị từ chối với thông điệp
+ * "chưa có trong phiên bản này". Phải là tập con không rỗng, không trùng.
+ */
 export const skillsSchema = z
-  .array(z.enum(SKILLS, { error: 'Kỹ năng này chưa có trong phiên bản hiện tại' }), {
-    error: 'Kỹ năng phải là danh sách',
-  })
+  .array(z.string({ error: 'Kỹ năng không hợp lệ' }), { error: 'Kỹ năng phải là danh sách' })
   .min(1, 'Chọn ít nhất một kỹ năng')
-  .transform((skills) => [...new Set(skills)]);
+  // Lỗi đặt ở chính mảng (khóa `skills`), không theo từng phần tử (`skills.1`) để client hiển thị một chỗ.
+  .refine((skills) => skills.every((s) => (SKILLS as readonly string[]).includes(s)), {
+    error: 'Kỹ năng này chưa có trong phiên bản hiện tại',
+  })
+  .transform((skills) => [...new Set(skills)] as Skill[]);
 
 // --- Đăng ký / đăng nhập ---
 
@@ -152,6 +158,8 @@ export const profileUpdateSchema = z.object({
   targetLevel: targetLevelSchema.optional(),
   targetDate: targetDateSchema.nullable().optional(),
   prioritizedSkill: z.enum(SKILLS, { error: 'Kỹ năng không hợp lệ' }).nullable().optional(),
+  // Đổi kỹ năng KHÔNG sinh lộ trình mới; `prioritizedSkill` phải thuộc `skills` (kiểm ở dịch vụ hồ sơ).
+  skills: skillsSchema.optional(),
   language: languageSchema.optional(),
   timezone: timezoneSchema.optional(),
 });

@@ -12,8 +12,27 @@ export type ContentLevel = (typeof CONTENT_LEVELS)[number];
 export const TARGET_LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'] as const;
 export type TargetLevel = (typeof TARGET_LEVELS)[number];
 
-export const SKILLS = ['vocabulary', 'grammar'] as const;
+export const SKILLS = ['vocabulary', 'grammar', 'kanji'] as const;
 export type Skill = (typeof SKILLS)[number];
+
+/** Kỹ năng có trong bài kiểm tra trình độ (Kanji ngoài phạm vi – research K12). */
+export const PLACEMENT_SKILLS = ['vocabulary', 'grammar'] as const;
+export type PlacementSkill = (typeof PLACEMENT_SKILLS)[number];
+
+/** Kỹ năng có trong nội dung dùng thử không cần đăng ký (Kanji ngoài phạm vi). */
+export const TRIAL_SKILLS = ['vocabulary', 'grammar'] as const;
+export type TrialSkill = (typeof TRIAL_SKILLS)[number];
+
+/**
+ * Khía cạnh ôn tập (research K3): `item` cho từ vựng/ngữ pháp và bài tập không gắn chữ; Kanji dùng
+ * meaning | reading | word – mỗi cặp (chữ, khía cạnh) có lịch ôn riêng.
+ */
+export const REVIEW_FACETS = ['item', 'meaning', 'reading', 'word'] as const;
+export type ReviewFacet = (typeof REVIEW_FACETS)[number];
+
+/** Ba khía cạnh nhận diện của chữ Kanji (nghĩa, cách đọc, từ chứa chữ). */
+export const KANJI_FACETS = ['meaning', 'reading', 'word'] as const;
+export type KanjiFacet = (typeof KANJI_FACETS)[number];
 
 export const GOAL_TYPES = ['jlpt', 'daily_conversation', 'work'] as const;
 export type GoalType = (typeof GOAL_TYPES)[number];
@@ -47,6 +66,16 @@ export type DailyMinutes = (typeof DAILY_MINUTES)[number];
 
 /** Văn bản dịch (`i18n_text`): chứa đủ vi + en. */
 export type I18nText = Record<Language, string>;
+
+/** Chi tiết riêng của chữ Kanji (`content_items.kanji_details`, data-model §3.4). */
+export interface KanjiDetails {
+  /** Âm On (katakana); có thể rỗng. */
+  onReadings: string[];
+  /** Âm Kun (hiragana, `.` phân cách okurigana); có thể rỗng. */
+  kunReadings: string[];
+  strokeCount: number;
+  components?: I18nText | null;
+}
 
 /** Ngày địa phương dạng `YYYY-MM-DD` (không kèm múi giờ). */
 export type LocalDate = string;

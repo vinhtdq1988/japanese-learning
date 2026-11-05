@@ -5,6 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/skill.dart';
 import 'package:japanese_api/src/model/content_item_examples_inner.dart';
+import 'package:japanese_api/src/model/kanji_details.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -32,6 +33,10 @@ class ContentItem {
 
     this.explanation,
 
+    this.topicId,
+
+    this.kanji,
+
     this.examples,
   });
 
@@ -55,6 +60,14 @@ class ContentItem {
   @JsonKey(name: r'explanation', required: false, includeIfNull: false)
   final String? explanation;
 
+  /// Chủ đề của chữ (chỉ Kanji)
+  @JsonKey(name: r'topicId', required: false, includeIfNull: false)
+  final String? topicId;
+
+  /// Chỉ có khi `kind=kanji`; `reading` khi đó là null
+  @JsonKey(name: r'kanji', required: false, includeIfNull: false)
+  final KanjiDetails? kanji;
+
   @JsonKey(name: r'examples', required: false, includeIfNull: false)
   final List<ContentItemExamplesInner>? examples;
 
@@ -68,6 +81,8 @@ class ContentItem {
           other.reading == reading &&
           other.meaning == meaning &&
           other.explanation == explanation &&
+          other.topicId == topicId &&
+          other.kanji == kanji &&
           other.examples == examples;
 
   @override
@@ -78,6 +93,8 @@ class ContentItem {
       (reading == null ? 0 : reading.hashCode) +
       meaning.hashCode +
       (explanation == null ? 0 : explanation.hashCode) +
+      (topicId == null ? 0 : topicId.hashCode) +
+      (kanji == null ? 0 : kanji.hashCode) +
       examples.hashCode;
 
   factory ContentItem.fromJson(Map<String, dynamic> json) =>

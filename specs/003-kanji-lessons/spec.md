@@ -22,6 +22,18 @@
 - Q: Người học hoàn toàn mới phải học xong bao nhiêu nội dung nền tảng thì bài Kanji đầu tiên mới được đưa vào kế hoạch? → A: Không cần điều kiện tiên quyết; bài Kanji đủ điều kiện ngay từ ngày đầu nếu người học đã chọn Kanji.
 - Q: Từ ví dụ trong bài Kanji là dữ liệu riêng của Kanji hay liên kết tới từ vựng đã có? → A: Dữ liệu riêng của Kanji (chữ, cách đọc kana, nghĩa vi/en), không liên kết với thư viện từ vựng; việc ôn khía cạnh "từ chứa chữ" chỉ ghi vào lịch ôn Kanji.
 
+### Phiên 2026-11-05 (sau phân tích chéo `/speckit-analyze`)
+
+- Q: Cùng một chữ Kanji xuất hiện ở nhiều bài (ví dụ gặp lại ở trình độ cao hơn với cách đọc mới) thì mô hình hóa thế nào để không trùng lịch ôn? → A: Mỗi chữ chỉ có MỘT mục Kanji `active` trong toàn danh mục; kích hoạt bài chứa chữ đã có ở bài `active` khác bị từ chối. Cách đọc mới được bổ sung vào mục hiện có thay vì tạo mục mới.
+- Q: Thời gian học Kanji của phiên ôn hỗn hợp (Kanji + từ vựng + ngữ pháp) được ghi nhận thế nào? → A: Phân bổ ước lượng theo tỷ lệ số câu lượt chính Kanji / tổng câu của phiên; số liệu "thời gian Kanji" là ước lượng, các số liệu đếm (số chữ, số bài, độ chính xác) là chính xác.
+- Q: "Mảng yếu" của Kanji xác định theo ngưỡng nào? → A: Dùng ngưỡng chung của hệ thống (FR-029 của spec 001): chủ đề có độ chính xác < 60% trên ≥ 8 câu lượt chính (cả trong bài học lẫn ôn tập), bỏ cờ khi đạt ≥ 70%.
+
+### Phiên 2026-11-05 (sau phân tích chéo `/speckit-analyze` lần 2)
+
+- Q: Chữ Kanji của một bài học dở dang (đã trả lời một số câu nhưng chưa hoàn thành bài) có được tính là "đã học" và vào gói ôn không? → A: Không. Lịch ôn vẫn có thể được ghi theo từng câu trả lời, nhưng chữ Kanji chỉ được tính vào "số chữ đã học" và chỉ vào gói ôn khi bài chứa chữ đã hoàn thành. Từ vựng và ngữ pháp giữ hành vi cũ.
+- Q: Bài Kanji bắt buộc có thẻ mục tiêu (`goalTags`) khi kích hoạt không? → A: Có, PHẢI có ít nhất một thẻ mục tiêu để lộ trình chọn lọc được (FR-011).
+- Q: Mức 30 giây/câu dùng để giới hạn số bài tập của bài có cố định không? → A: Không. Đó là giá trị mặc định của cấu hình thời lượng mỗi câu của hệ thống (cùng giá trị dùng cho chia gói ôn) và có thể hiệu chỉnh sau khi đo thời lượng thực tế.
+
 ## Kịch bản người dùng và kiểm thử *(bắt buộc)*
 
 ### Câu chuyện người dùng 1 - Học một bài Kanji ngắn (Ưu tiên: P1)
@@ -90,7 +102,7 @@ Người học thấy tiến độ Kanji của mình: đã học bao nhiêu ch�
 **Kịch bản chấp nhận**:
 
 1. **Với** người học đã học Kanji, **Khi** xem tiến độ, **Thì** họ thấy số chữ Kanji đã học, số bài Kanji đã hoàn thành, thời gian học Kanji và độ chính xác khi ôn Kanji, tách riêng khỏi từ vựng và ngữ pháp, đồng thời vẫn nằm trong tổng thời gian học và chuỗi ngày học chung.
-2. **Với** người học thường xuyên sai ở các chữ cùng thẻ chủ đề (ví dụ chủ đề thời gian), **Khi** xem tiến độ, **Thì** chủ đề đó được chỉ báo là mảng yếu.
+2. **Với** người học có độ chính xác ở các chữ cùng thẻ chủ đề (ví dụ chủ đề thời gian) thấp hơn ngưỡng mảng yếu chung của hệ thống (< 60% trên ≥ 8 câu lượt chính, xem Làm rõ), **Khi** xem tiến độ, **Thì** chủ đề đó được chỉ báo là mảng yếu.
 3. **Với** người học đã chọn Kanji, **Khi** hệ thống tính tiến độ hướng tới mục tiêu và mốc thời gian, **Thì** các bài Kanji thuộc phạm vi mục tiêu được tính vào tiến độ; người học không chọn Kanji thì tiến độ mục tiêu không bị ảnh hưởng.
 
 ---
@@ -123,7 +135,7 @@ Quản trị viên tạo, sửa, kích hoạt/vô hiệu hóa và sắp xếp c�
 - Trình duyệt người dùng thiếu phông chữ hiển thị một chữ Kanji ít gặp → chữ vẫn phải đọc được (dùng phông chữ dự phòng) và không hiện ô vuông trống.
 - Mất kết nối giữa chừng bài Kanji → các câu trả lời đã ghi được giữ; người học thử lại và không bị báo hoàn thành khi chưa lưu.
 - Người học đã chọn Kanji rồi bỏ chọn → các bài Kanji đã học vẫn nằm trong lịch sử và tiến độ; lịch ôn các chữ đã học vẫn đến hạn như cũ cho đến khi họ chủ động đánh dấu đã thành thạo; bài Kanji mới không còn được đưa vào kế hoạch.
-- Cùng một chữ Kanji xuất hiện ở nhiều bài (ví dụ gặp lại ở trình độ cao hơn với cách đọc mới) → lịch ôn theo dõi từng cặp (chữ, khía cạnh) độc lập với bài, không tạo trùng lặp lịch ôn cho cùng một cặp.
+- Cùng một chữ Kanji muốn xuất hiện ở nhiều bài (ví dụ gặp lại ở trình độ cao hơn với cách đọc mới) → mỗi chữ chỉ có một mục Kanji `active` trong toàn danh mục; hệ thống từ chối kích hoạt bài chứa chữ đã có ở bài `active` khác và nêu rõ bài đang chứa chữ đó. Cách đọc hoặc từ ví dụ mới được bổ sung vào mục hiện có. Nhờ vậy lịch ôn theo dõi từng cặp (chữ, khía cạnh) không bao giờ bị trùng lặp.
 - Cùng một tài khoản học Kanji ở hai cửa sổ trình duyệt đồng thời → mỗi câu trả lời và khoảng thời gian học chỉ được ghi một lần, như quy định chung của hệ thống.
 
 ## Yêu cầu *(bắt buộc)*
@@ -151,20 +163,20 @@ Quản trị viên tạo, sửa, kích hoạt/vô hiệu hóa và sắp xếp c�
 
 **Ôn tập**
 
-- **FR-014**: Hệ thống PHẢI lên lịch ôn từng cặp (chữ Kanji, khía cạnh) đã học bằng lặp lại ngắt quãng dựa trên kết quả ghi nhớ đã ghi, với ba khía cạnh: nghĩa, cách đọc, từ chứa chữ; trả lời sai PHẢI làm cặp đó quay lại sớm hơn trả lời đúng. Cấp chữ là bản tổng hợp: một chữ được coi là đến hạn khi có ít nhất một cặp đến hạn; số chữ đã học và độ chính xác được tính theo chữ.
+- **FR-014**: Hệ thống PHẢI lên lịch ôn từng cặp (chữ Kanji, khía cạnh) đã học bằng lặp lại ngắt quãng dựa trên kết quả ghi nhớ đã ghi, với ba khía cạnh: nghĩa, cách đọc, từ chứa chữ; trả lời sai PHẢI làm cặp đó quay lại sớm hơn trả lời đúng. Cấp chữ là bản tổng hợp: một chữ được coi là đến hạn khi có ít nhất một cặp đến hạn; số chữ đã học và độ chính xác được tính theo chữ. Một chữ Kanji chỉ được coi là "đã học" và chỉ vào gói ôn khi bài chứa chữ đã hoàn thành.
 - **FR-015**: Bài ôn Kanji đến hạn PHẢI được đưa vào kế hoạch hằng ngày cùng cơ chế ưu tiên theo mức quá hạn và quỹ thời gian dành cho ôn tập như từ vựng và ngữ pháp; gói ôn chỉ hỏi các khía cạnh đã đến hạn của chữ.
 - **FR-016**: Câu ôn Kanji PHẢI nhắm đúng khía cạnh (nghĩa, cách đọc, từ chứa chữ) đang đến hạn của chữ và chỉ dùng bài tập khách quan tự động chấm.
 
 **Theo dõi tiến độ**
 
-- **FR-017**: Hệ thống PHẢI ghi lại thời gian học, mức hoàn thành và kết quả bài tập/ôn tập Kanji, và PHẢI hiển thị cho người học số chữ Kanji đã học, số bài đã hoàn thành, thời gian và độ chính xác riêng cho Kanji, bên cạnh các số liệu chung (tổng thời gian, chuỗi ngày học).
-- **FR-018**: Hệ thống PHẢI nhận diện và hiển thị các chủ đề Kanji người học làm kém, tính theo độ chính xác ôn tập của các chữ cùng thẻ chủ đề (chỉ báo điểm yếu cơ bản như với từ vựng và ngữ pháp).
+- **FR-017**: Hệ thống PHẢI ghi lại thời gian học, mức hoàn thành và kết quả bài tập/ôn tập Kanji, và PHẢI hiển thị cho người học số chữ Kanji đã học, số bài đã hoàn thành, thời gian và độ chính xác riêng cho Kanji, bên cạnh các số liệu chung (tổng thời gian, chuỗi ngày học). Thời gian Kanji của phiên ôn hỗn hợp là số liệu ước lượng phân bổ theo tỷ lệ số câu Kanji; thời gian của phiên bài học Kanji và các số liệu đếm/độ chính xác là chính xác.
+- **FR-018**: Hệ thống PHẢI nhận diện và hiển thị các chủ đề Kanji người học làm kém, tính theo độ chính xác của các câu lượt chính (trong bài học và ôn tập) ở các chữ cùng thẻ chủ đề, dùng đúng ngưỡng chung với từ vựng và ngữ pháp (< 60% trên ≥ 8 câu; bỏ cờ khi ≥ 70%).
 - **FR-019**: Tiến độ hướng tới mục tiêu và mốc thời gian PHẢI tính cả các bài Kanji thuộc phạm vi mục tiêu của người học khi họ đã chọn Kanji, và PHẢI không đổi với người không chọn Kanji.
 
 **Quản trị nội dung**
 
 - **FR-020**: Quản trị viên PHẢI có thể tạo, sửa, kích hoạt/vô hiệu hóa và sắp xếp bài Kanji, các chữ, từ ví dụ và bài tập của chúng bằng công cụ quản trị nội dung hiện có; nội dung Kanji PHẢI được quản lý như dữ liệu độc lập với bản phát hành ứng dụng.
-- **FR-021**: Hệ thống PHẢI từ chối kích hoạt bài Kanji thiếu thông tin bắt buộc (từ 3 đến 5 chữ Kanji, nghĩa vi và en, cách đọc, số nét, thẻ chủ đề, ít nhất một từ ví dụ cho mỗi chữ, ít nhất một bài tập, đáp án hợp lệ) và PHẢI nêu rõ phần thiếu.
+- **FR-021**: Hệ thống PHẢI từ chối kích hoạt bài Kanji thiếu thông tin bắt buộc (từ 3 đến 5 chữ Kanji, nghĩa vi và en, cách đọc, số nét, thẻ chủ đề, ít nhất một từ ví dụ cho mỗi chữ, ít nhất một thẻ mục tiêu cho bài, ít nhất một bài tập, đáp án hợp lệ; số bài tập không vượt quỹ thời lượng ước tính của bài theo thời lượng mỗi câu của hệ thống, mặc định 30 giây/câu; không chứa chữ đã có ở bài Kanji `active` khác) và PHẢI nêu rõ phần thiếu. Lưu nháp KHÔNG bị chặn bởi các quy tắc này.
 - **FR-022**: Sửa hoặc ngừng nội dung Kanji KHÔNG ĐƯỢC làm hỏng lịch sử học hay lịch ôn đã lưu; mục đã ngừng KHÔNG ĐƯỢC vào bài học hay gói ôn mới và KHÔNG ĐƯỢC tính vào tiến độ mục tiêu, còn lịch sử của chúng vẫn được tính vào độ chính xác và thời gian học đã ghi.
 - **FR-023**: Mọi thay đổi nội dung Kanji của quản trị viên PHẢI được ghi lại kèm ai thực hiện và khi nào.
 
@@ -192,9 +204,9 @@ Quản trị viên tạo, sửa, kích hoạt/vô hiệu hóa và sắp xếp c�
 - **SC-002**: 100% kế hoạch hằng ngày mặc định của người học có chọn Kanji (kiểm thử trên các hồ sơ ở mức 5/10/15/30 phút) có tổng thời lượng ước tính không vượt thời gian mỗi ngày đã khai báo, và không bài Kanji hay gói ôn nào được ước tính quá 15 phút.
 - **SC-003**: 100% bài Kanji đã kích hoạt có đầy đủ nghĩa tiếng Việt và tiếng Anh, cách đọc, số nét, ít nhất một từ ví dụ cho mỗi chữ và ít nhất một bài tập hợp lệ (kiểm chứng bằng kiểm tra nội dung tự động).
 - **SC-004**: Thư viện Kanji ban đầu có ít nhất một bài Kanji 5 phút cho mỗi trình độ N5, N4 và N3, đủ để người học ở mỗi trình độ có bài Kanji trong kế hoạch.
-- **SC-005**: Các chữ Kanji trả lời sai được đưa lại vào ôn tập trung bình sớm hơn các chữ trả lời đúng, được xác minh trên các hồ sơ kiểm thử đại diện.
+- **SC-005**: Từ lần ôn thứ hai của một cặp (chữ, khía cạnh), khoảng cách đến hạn trung bình của các cặp trả lời sai ngắn hơn ít nhất 50% so với các cặp trả lời đúng, được xác minh trên các hồ sơ kiểm thử đại diện.
 - **SC-006**: 100% kế hoạch mặc định của hồ sơ người học không chọn Kanji (gồm bộ hồ sơ đại diện hiện có) không chứa bài Kanji và giống kết quả trước khi có tính năng này.
-- **SC-007**: Người học xem được số liệu tiến độ Kanji trong vòng 2 lần nhấp từ màn hình hằng ngày, và các số liệu khớp với hoạt động đã ghi.
+- **SC-007**: Người học xem được số liệu tiến độ Kanji trong vòng 2 lần nhấp từ màn hình hằng ngày, và các số liệu đếm, độ chính xác khớp với hoạt động đã ghi (thời gian Kanji của phiên ôn hỗn hợp là ước lượng, xem FR-017).
 - **SC-008**: Ít nhất 80% người học đã chọn Kanji hoàn thành ít nhất một bài Kanji trong 3 ngày sau khi chọn (đo từ dữ liệu học tập đã ghi).
 - **SC-009**: Quản trị viên thêm một bài Kanji mới và kích hoạt thì trong vòng 5 phút bài xuất hiện cho người học phù hợp mà không cần phát hành ứng dụng; nội dung đã sửa hiển thị cho các phiên học mới mà không làm hỏng dữ liệu học đã lưu.
 

@@ -30,11 +30,11 @@ Bổ sung bài học Kanji (3–5 chữ mới mỗi bài, 5–15 phút) vào h�
 
 **Loại dự án**: Ứng dụng web (frontend Flutter + backend REST) với thư mục nội dung `content/` – mở rộng dự án hiện có.
 
-**Mục tiêu hiệu năng**: Không thêm mục tiêu mới; giữ biện pháp của 001 (bộ đệm danh mục nội dung, chỉ mục). Thêm chỉ mục `study_records(user_id, item_id, facet, occurred_at DESC)` cho độ chính xác gần đây theo cặp. Số dòng `review_schedules` của người học Kanji tăng ×3 mỗi chữ (≤ 28 chữ × 3 cặp ở thư viện đầu) – không đáng kể.
+**Mục tiêu hiệu năng**: Không thêm mục tiêu mới; giữ biện pháp của 001 (bộ đệm danh mục nội dung, chỉ mục). Thêm chỉ mục `study_records(user_id, item_id, facet, occurred_at DESC)` cho độ chính xác gần đây theo cặp. Số dòng `review_schedules` của người học Kanji tăng ×3 mỗi chữ (≤ 27 chữ × 3 cặp ở thư viện đầu) – không đáng kể.
 
 **Ràng buộc**: Kế hoạch ngày không vượt quỹ, mỗi mục ≤ 15 phút (FR-008); kế hoạch của người không chọn Kanji không đổi (FR-009, SC-006); nội dung là dữ liệu, kích hoạt ≤ 5 phút không phát hành client (SC-009); không làm hỏng dữ liệu học đã lưu khi migration hoặc khi sửa nội dung (FR-022, Hiến pháp).
 
-**Quy mô/Phạm vi**: Thư viện ban đầu 7 bài / 28 chữ N5–N3 (research K14); ~4 màn hình client thay đổi (onboarding, điều chỉnh kế hoạch, bài học, tiến độ) + 1 màn hình admin; 2 ngôn ngữ giao diện.
+**Quy mô/Phạm vi**: Thư viện ban đầu 7 bài / 27 chữ N5–N3 (research K14); ~4 màn hình client thay đổi (onboarding, điều chỉnh kế hoạch, bài học, tiến độ) + 1 màn hình admin; 2 ngôn ngữ giao diện.
 
 Không còn mục NEEDS CLARIFICATION (đã giải quyết trong [research.md](research.md)).
 
@@ -121,8 +121,8 @@ backend/
 └── tests/
     ├── unit/                     # daily-plan-kanji, srs-kanji-facets, content-validation-kanji,
     │                             #   kanji-regression-golden, font-coverage, review-key
-    ├── contract/kanji.test.ts
-    ├── integration/kanji-*.test.ts, migration.test.ts (0002/0003 trên dữ liệu 001)
+    ├── contract/kanji-us1.test.ts … kanji-us5.test.ts   # tách theo câu chuyện
+    ├── integration/kanji-*.test.ts (gồm kanji-review-guard), migration.test.ts (0002/0003 trên dữ liệu 001)
     └── fixtures/
         ├── learner-profiles/kanji-*.json
         └── golden/plans-pre-kanji.json   # ảnh chụp kế hoạch hồ sơ cũ, sinh TRƯỚC khi đổi engine
@@ -152,7 +152,7 @@ content/
 ## Thứ tự triển khai đề xuất
 
 1. **Ảnh chụp golden trước khi sửa engine**: sinh `tests/fixtures/golden/plans-pre-kanji.json` từ mã hiện tại (bảo đảm SC-006 có chuẩn so sánh thật).
-2. Migration + schema Drizzle + hằng `types.ts` + khóa ghép (nền tảng, chặn mọi câu chuyện).
+2. Migration (CHECK một chiều cho `topic_id`/`kanji_details` để lưu nháp được) + schema Drizzle + hằng `types.ts` + khóa ghép + bộ lọc tạm gói ôn `facet='item'` (T090, gỡ ở US3) (nền tảng, chặn mọi câu chuyện).
 3. US1 (P1): quy tắc nội dung, seed + thư viện ban đầu, snapshot/hiển thị bài Kanji, tóm tắt phiên.
 4. US2 (P1): `skills` trong `PATCH /me`, onboarding/điều chỉnh kế hoạch, `applyKanjiSlot`, `kanjiNotice`.
 5. US3 (P2): ôn theo cặp, `review_facets`, đánh dấu chữ thành thạo.
@@ -172,8 +172,10 @@ content/
 
 ## Rủi ro và điểm cần theo dõi
 
-- **Biên soạn nội dung Kanji song ngữ** (28 chữ, mỗi chữ ≥ 3 bài tập + từ ví dụ) nằm trên đường găng của SC-003/SC-004; ưu tiên ba bài 5 phút (mỗi trình độ một bài) trước.
-- **Mật độ bài tập**: quy tắc "mỗi chữ đủ ba khía cạnh" làm bài 5 phút có ≈ 9 câu; cần đo thời lượng thực tế với người dùng và chỉnh hướng dẫn (3 chữ/bài 5 phút) nếu vượt.
+- **Biên soạn nội dung Kanji song ngữ** (27 chữ, mỗi chữ ≥ 3 bài tập + từ ví dụ) nằm trên đường găng của SC-003/SC-004; ưu tiên ba bài 5 phút (mỗi trình độ một bài) trước.
+- **Mật độ bài tập**: quy tắc "mỗi chữ đủ ba khía cạnh" làm bài 5 phút có ≈ 9 câu; quy tắc kích hoạt (K10) chặn số bài tập vượt quỹ `REVIEW_SECONDS_PER_ITEM` (mặc định 30 giây/câu) so với `est_minutes`, nhưng 30 giây/câu vẫn là ước lượng — quy tắc nhận giá trị này qua cấu hình (không cứng hóa) và T088 ghi nhận thời lượng thực đo được; nếu vượt thì chỉnh cấu hình hoặc hướng dẫn (3 chữ/bài 5 phút).
+- **Bản phát hành MVP chưa ôn Kanji tự động**: nếu phát hành US1+US2 trước US3, chữ Kanji đã học chưa vào gói ôn (bộ lọc tạm T090). Nên phát hành US3 ngay sau MVP.
+- **Chữ Kanji duy nhất trong danh mục**: quy tắc K10 "chữ duy nhất" buộc người biên soạn gộp cách đọc mới vào mục hiện có thay vì lặp chữ ở bài trình độ cao hơn; cần ghi vào checklist duyệt nội dung (T030).
 - **Client sinh mã cũ** không giải mã `Skill=kanji` → client và backend phát hành cùng lúc; trình duyệt giữ bản client cũ trong bộ đệm có thể lỗi ở tài khoản đã chọn Kanji từ bản mới (giảm thiểu bằng cache-busting của Flutter build).
 - **Câu đọc mơ hồ** (chữ nhiều cách đọc) không kiểm được hoàn toàn tự động; dựa vào hướng dẫn biên soạn + checklist duyệt nội dung.
 - **Trọng số `applyKanjiSlot`** (cách một ngày) là quy tắc khởi đầu; theo dõi chỉ số SC-001/SC-008 để hiệu chỉnh.

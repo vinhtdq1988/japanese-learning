@@ -9,6 +9,7 @@ import 'package:japanese_api/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **topicId** | **String** |  | [optional] 
+**skill** | [**Skill**](Skill.md) |  | [optional] 
 **name** | **String** | Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu | [optional] 
 **accuracy** | **num** |  | [optional] 
 

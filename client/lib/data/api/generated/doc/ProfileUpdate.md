@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **targetLevel** | [**TargetLevel**](TargetLevel.md) |  | [optional] 
 **targetDate** | [**DateTime**](DateTime.md) |  | [optional] 
 **prioritizedSkill** | [**Skill**](Skill.md) |  | [optional] 
+**skills** | [**Set&lt;Skill&gt;**](Skill.md) | Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null. | [optional] 
 **language** | [**Lang**](Lang.md) |  | [optional] 
 **timezone** | **String** |  | [optional] 
 

@@ -20,6 +20,7 @@ class ProfileChange {
     this.currentLevel,
     this.prioritizedSkill,
     this.clearPrioritizedSkill = false,
+    this.skills,
   });
 
   final int? dailyMinutes;
@@ -30,6 +31,9 @@ class ProfileChange {
   final String? currentLevel;
   final String? prioritizedSkill;
   final bool clearPrioritizedSkill;
+
+  /// Kỹ năng muốn học (tập con không rỗng); đổi kỹ năng không sinh lộ trình mới.
+  final List<String>? skills;
 
   static final DateFormat _date = DateFormat('yyyy-MM-dd');
 
@@ -47,6 +51,7 @@ class ProfileChange {
       json['targetDate'] = _date.format(targetDate!);
     }
     if (currentLevel != null) json['currentLevel'] = currentLevel;
+    if (skills != null) json['skills'] = skills;
     if (clearPrioritizedSkill) {
       json['prioritizedSkill'] = null;
     } else if (prioritizedSkill != null) {

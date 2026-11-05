@@ -12,6 +12,7 @@ import '../shared/page_frame.dart';
 import '../review/review_view.dart';
 import '../shared/state_views.dart';
 import 'exercises/exercise_view.dart';
+import 'kanji/kanji_card.dart';
 import 'lesson_controller.dart';
 
 /// Màn hình bài học (T069): giải thích từ vựng/ngữ pháp → bài tập có phản hồi tức thì → hỏi lại câu sai
@@ -151,6 +152,10 @@ class LessonItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Chữ Kanji có thẻ riêng: chữ lớn, âm On/Kun, số nét, từ ví dụ (US1).
+    if (item.kind == Skill.kanji || item.kanji != null) {
+      return KanjiCard(item: item);
+    }
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final examples = item.examples ?? const <ContentItemExamplesInner>[];
@@ -510,6 +515,8 @@ class _Summary extends StatelessWidget {
             textAlign: TextAlign.center,
             key: const Key('summary-time'),
           ),
+          if (summary.attentionItems?.isNotEmpty ?? false)
+            _AttentionKanji(items: summary.attentionItems!),
           if (summary.dayCompleted ?? false) ...<Widget>[
             const SizedBox(height: 12),
             Text(
@@ -520,6 +527,49 @@ class _Summary extends StatelessWidget {
           ],
           const SizedBox(height: 20),
           const Center(child: BackToTodayButton()),
+        ],
+      ),
+    );
+  }
+}
+
+/// Mục "Chữ cần chú ý" của tóm tắt bài Kanji (US1.4): các chữ có câu trả lời sai trong phiên.
+class _AttentionKanji extends StatelessWidget {
+  const _AttentionKanji({required this.items});
+
+  final List<SessionSummaryAttentionItemsInner> items;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Column(
+        key: const Key('attention-kanji'),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(l10n.kanjiAttentionHeading, style: theme.textTheme.titleMedium),
+          const SizedBox(height: 4),
+          Text(l10n.kanjiAttentionHint, style: theme.textTheme.bodySmall),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: <Widget>[
+              for (final item in items)
+                Chip(
+                  key: Key('attention-${item.itemId}'),
+                  label: Text(
+                    item.japanese,
+                    style: const TextStyle(
+                      fontFamily: kanjiFontFamily,
+                      fontSize: 28,
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ],
       ),
     );

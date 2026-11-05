@@ -190,9 +190,10 @@ describe('validateUnit – bài tập', () => {
   });
 });
 
+// Kanji cũng cần đơn vị 5 phút ở mỗi trình độ (SC-004) nhưng không có tầng foundation (spec 003).
 describe('validateCatalog – quy tắc xuyên đơn vị', () => {
   const full = (level: 'N5' | 'N4' | 'N3') =>
-    (['vocabulary', 'grammar'] as const).map((kind) => ({
+    (['vocabulary', 'grammar', 'kanji'] as const).map((kind) => ({
       kind,
       level,
       tier: 'core' as const,

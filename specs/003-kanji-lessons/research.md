@@ -19,7 +19,7 @@ Bối cảnh: hệ thống 001 đã hoàn tất (Fastify + PostgreSQL 16 + Drizz
 
 **Phương án đã cân nhắc**:
 - *Bảng riêng `kanji_characters`, `kanji_lessons`, `kanji_exercises`*: tách bạch nhưng phải nhân đôi lịch ôn, snapshot, chấm điểm, admin, bộ đệm, tiến độ → bác bỏ (Hiến pháp: độ phức tạp phải biện minh).
-- *Cột riêng `on_readings text[]`, `kun_readings text[]`, `stroke_count smallint`*: kiểm tra kiểu ở DB tốt hơn nhưng thêm cột null cho mọi mục từ vựng/ngữ pháp; chọn JSONB + CHECK `(kind='kanji') = (kanji_details IS NOT NULL)` + kiểm tra ứng dụng (K10).
+- *Cột riêng `on_readings text[]`, `kun_readings text[]`, `stroke_count smallint`*: kiểm tra kiểu ở DB tốt hơn nhưng thêm cột null cho mọi mục từ vựng/ngữ pháp; chọn JSONB + CHECK một chiều (`kind <> 'kanji'` thì `kanji_details` và `topic_id` PHẢI NULL) + kiểm tra ứng dụng khi kích hoạt (K10). CHECK hai chiều (`kind='kanji'` ⇒ NOT NULL) bị bác bỏ vì chặn lưu nháp chữ chưa đủ thông tin, trái cơ chế "lưu nháp không chặn" của Admin API.
 
 ## K2. Thêm `kanji` vào enum `skill` và cách chạy migration
 
@@ -52,7 +52,7 @@ Bối cảnh: hệ thống 001 đã hoàn tất (Fastify + PostgreSQL 16 + Drizz
 
 ## K4. Thẻ chủ đề theo chữ và chỉ báo mảng yếu
 
-**Quyết định**: Thêm `content_items.topic_id uuid NULL → topics`; BẮT BUỘC với mục Kanji (CHECK), NULL với mục khác. Chủ đề Kanji là dòng `topics` có `skill='kanji'` (ví dụ "Số đếm", "Thời gian", "Con người", "Thiên nhiên"). Khi dựng snapshot, `topicId` của bài tập = chủ đề của mục được kiểm tra nếu có, ngược lại chủ đề của đơn vị (như cũ). Từ đó `study_records.topic_id` và `topic_stats` (R6/FR-029 của 001) tự động gom theo chủ đề của chữ; chỉ báo yếu dùng đúng ngưỡng hiện có (accuracy < 60% với ≥ 8 câu, bỏ cờ khi ≥ 70%).
+**Quyết định**: Thêm `content_items.topic_id uuid NULL → topics`; BẮT BUỘC với mục Kanji khi kích hoạt (kiểm tra ứng dụng K10; DB chỉ cấm giá trị khác NULL ở mục không phải Kanji để cho phép lưu nháp), NULL với mục khác. Chủ đề Kanji là dòng `topics` có `skill='kanji'` (ví dụ "Số đếm", "Thời gian", "Con người", "Thiên nhiên"). Khi dựng snapshot, `topicId` của bài tập = chủ đề của mục được kiểm tra nếu có, ngược lại chủ đề của đơn vị (như cũ). Từ đó `study_records.topic_id` và `topic_stats` (R6/FR-029 của 001) tự động gom theo chủ đề của chữ; chỉ báo yếu dùng đúng ngưỡng hiện có (accuracy < 60% với ≥ 8 câu, bỏ cờ khi ≥ 70%).
 
 **Lý do**: Làm rõ chốt thẻ chủ đề do admin khai báo trên từng chữ; một bài Kanji có thể chứa chữ thuộc chủ đề khác nhau dù cùng "nhóm" bài. Tái dùng `topic_stats` giữ nhất quán "như với từ vựng và ngữ pháp" (FR-018).
 
@@ -90,11 +90,12 @@ ngược lại → giữ nguyên
 
 **Quyết định**:
 - SM-2 biến thể (`engine/srs.ts`, R6) dùng nguyên vẹn cho từng cặp; `recentItemResults` lọc thêm theo `facet`.
-- Lần đầu lên lịch: như 001, mỗi câu trả lời lượt chính có `item_id` tạo/cập nhật lịch của cặp `(item_id, facet)` của bài tập. Vì quy tắc nội dung (K10) bắt buộc mỗi chữ có ≥ 1 bài tập cho mỗi khía cạnh, hoàn thành bài Kanji đồng nghĩa mọi cặp của chữ đã có lịch (US3.1).
+- Lần đầu lên lịch: như 001, mỗi câu trả lời lượt chính có `item_id` tạo/cập nhật lịch của cặp `(item_id, facet)` của bài tập. Vì quy tắc nội dung (K10) bắt buộc mỗi chữ có ≥ 1 bài tập cho mỗi khía cạnh, hoàn thành bài Kanji đồng nghĩa mọi cặp của chữ đã có lịch (US3.1). Dòng lịch của bài **dở dang** có thể đã tồn tại (ghi theo từng câu), nên chữ Kanji chỉ được coi là "đã học" và chỉ vào gói ôn khi đơn vị chứa chữ có `unit_progress.status='completed'` của người học (Làm rõ 2026-11-05 lần 2); điều kiện này chỉ áp cho `kind='kanji'`, từ vựng/ngữ pháp giữ hành vi 001 (SC-006).
 - Gói ôn: `listDueReviewItems` trả thêm `facet` và `kind`; khóa ghép K3 đi qua `rankDueItems` + `packReviewBatches` không đổi, cùng `REVIEW_SECONDS_PER_ITEM` (30 giây/câu) và quỹ ôn chung với từ vựng/ngữ pháp (FR-015).
 - Snapshot ôn (`buildReviewSnapshot`): với mỗi cặp chọn một bài tập `active` có cùng `item_id` **và** `facet` (xoay vòng tất định theo ngày như R12); cặp không còn bài tập phù hợp bị bỏ qua, lịch giữ nguyên (FR-022).
 - Bài tập `matching` gộp nhiều chữ (`item_id` NULL) chỉ dùng trong bài học, không vào ôn – như 001.
 - Chữ đã thành thạo (K7) bị loại khỏi gói ôn.
+- **Thứ tự triển khai (an toàn trung gian)**: lịch ôn theo cặp được ghi từ Phase 2, nhưng gói ôn Kanji chỉ đầy đủ ở US3. Để bản phát hành US1+US2 không sinh gói ôn trùng/sai khía cạnh, Phase 2 thêm bộ lọc tạm `facet = 'item'` trong `listDueReviewItems` (T090) — cặp Kanji chưa vào gói ôn cho tới khi US3 (T061) gỡ bộ lọc. Hệ quả chấp nhận: ở bản chỉ có US1+US2, chữ Kanji đã học chưa được ôn tự động.
 
 **Lý do**: Giữ một cơ chế ôn duy nhất cho mọi loại nội dung, đúng FR-015/FR-016, và các bài kiểm thử SRS hiện có vẫn áp dụng.
 
@@ -112,7 +113,7 @@ ngược lại → giữ nguyên
 
 | Trường | Cách tính |
 |---|---|
-| `charactersLearned` | số `item_id` Kanji (mục `active` hay không) có ≥ 1 dòng `review_schedules` |
+| `charactersLearned` | số `item_id` Kanji (mục `active` hay không) có ≥ 1 dòng `review_schedules` **và** đơn vị chứa chữ có `unit_progress.status='completed'` (chữ trong bài dở dang chưa tính) |
 | `lessonsCompleted` | số `unit_progress.status='completed'` của đơn vị `kind='kanji'` |
 | `minutes` | thời gian các phiên của đơn vị Kanji (`new_unit`/`extra`) + phần Kanji của phiên ôn hỗn hợp, phân bổ theo tỷ lệ câu lượt chính Kanji / tổng câu lượt chính của phiên |
 | `reviewAccuracy` | đúng/tổng câu lượt chính ngữ cảnh `review` của mục Kanji (gộp các khía cạnh, "tính theo chữ") |
@@ -122,6 +123,8 @@ Các trường tổng (`totalMinutes`, `lessonsCompleted`, `reviewAccuracy`, `cu
 **Tiến độ mục tiêu** (FR-019): `rankForUser(..., includeMastered: true)` lọc theo `skills` của hồ sơ → bài Kanji `active` trong khoảng trình độ tự động vào `completionRatio`/`onTrack` khi đã chọn Kanji, và không ảnh hưởng người không chọn. Bài/chữ bị ngừng tự động rời khỏi tiến độ mục tiêu (chỉ đơn vị `active`), lịch sử vẫn tính vào thời gian/độ chính xác (FR-022).
 
 **Tóm tắt phiên** (US1.4): `SessionSummary` thêm `attentionItems` (tùy chọn) – danh sách chữ có ít nhất một câu lượt chính sai trong phiên (`{itemId, japanese}`), chỉ có với phiên chứa mục Kanji.
+
+**Độ chính xác của số liệu**: số chữ, số bài, độ chính xác là số đếm chính xác; riêng phút Kanji của phiên ôn hỗn hợp là **ước lượng** theo tỷ lệ (spec FR-017/SC-007 đã ghi rõ). Kiểm thử T069 so sánh phút ước lượng với công thức phân bổ, không với đồng hồ thực.
 
 **Phương án đã cân nhắc** cho thời gian: tách gói ôn Kanji riêng để quy thời gian chính xác → chia gói theo kỹ năng có thể làm tổng phút làm tròn vượt quỹ (R7) và đổi kế hoạch đã kiểm thử; bác bỏ, chọn phân bổ theo tỷ lệ (sai số chấp nhận được với số liệu hiển thị).
 
@@ -139,8 +142,11 @@ Hiển thị: chữ chính cỡ 96 px logic (tối thiểu 72 px ở cửa sổ 
 
 Mức đơn vị `kind='kanji'`:
 - 3–5 mục Kanji `active` (Làm rõ: 3–5 chữ mới mỗi bài); `tier` PHẢI là `core`.
+- `goalTags` PHẢI không rỗng (FR-011: bài Kanji phải có mức liên quan đến mục tiêu để lộ trình chọn lọc được; khác từ vựng/ngữ pháp của 001 vốn cho phép rỗng).
 - Có ≥ 1 bài tập `active` cho **mỗi khía cạnh** `meaning`, `reading`, `word` của **mỗi** chữ `active` (bao phủ FR-004 và bảo đảm mọi cặp ôn được).
 - Bài tập gắn mục Kanji PHẢI có `facet ≠ item`; bài tập không gắn mục (`itemIndex` null) có `facet='item'` (chỉ dùng trong bài).
+- **Thời lượng**: số bài tập `active` × `REVIEW_SECONDS_PER_ITEM` ≤ `est_minutes` × 60 giây; vượt → lỗi `exercises` (Hiến pháp I: bài học vừa trong thời lượng khai báo). `REVIEW_SECONDS_PER_ITEM` là cấu hình có sẵn của 001 (`backend/src/config.ts`, mặc định 30 giây) — hàm kiểm tra thuần nhận giá trị này qua tham số `secondsPerExercise` chứ không cứng hóa 30, để hiệu chỉnh được sau khi đo thời lượng thực (xem plan "Rủi ro"). Ví dụ với mặc định 30 giây: bài 5 phút tối đa 10 bài tập.
+- **Chữ duy nhất**: mỗi giá trị `japanese` chỉ xuất hiện ở MỘT mục Kanji `active` trong toàn danh mục; kích hoạt bài chứa chữ đã có ở bài `active` khác → lỗi `items[i].japanese` nêu bài đang chứa. Quy tắc cần ngữ cảnh toàn danh mục nên hàm kiểm tra nhận thêm tập `existingKanjiChars` (chữ → đơn vị) do dịch vụ truyền vào; `validateCatalog` kiểm toàn cục cho thư viện seed. Lý do: mục thuộc đúng một đơn vị nên cùng chữ ở hai bài là hai `item_id` và hai lịch ôn trùng nhau (trường hợp biên "cùng một chữ ở nhiều bài"). Cách đọc mới ở trình độ cao hơn được bổ sung vào mục hiện có.
 
 Mức mục `kind='kanji'`:
 - `japanese` đúng **một** ký tự Kanji (khối CJK Unified Ideographs, có glyph trong phông – K9).
@@ -174,7 +180,7 @@ Snapshot phiên học: thêm trường tùy chọn (`items[].kanji`, `items[].to
 
 ## K14. Thư viện Kanji ban đầu
 
-**Quyết định**: 7 bài, 28 chữ, đặt trong `content/units/` cùng định dạng file đơn vị; chủ đề Kanji thêm vào `content/topics.json`.
+**Quyết định**: 7 bài, 27 chữ (3+5+4+3+5+3+4), đặt trong `content/units/` cùng định dạng file đơn vị; chủ đề Kanji thêm vào `content/topics.json`.
 
 | Trình độ | Bài (est_minutes) | Chữ (ví dụ) | Chủ đề |
 |---|---|---|---|
@@ -200,7 +206,7 @@ Thỏa SC-004 (mỗi trình độ có ≥ 1 bài 5 phút). Danh sách chữ cụ
 - Hồ sơ đại diện mới trong `backend/tests/fixtures/learner-profiles/`: `kanji-newcomer-5min`, `kanji-newcomer-10min`, `kanji-n4-15min`, `kanji-prioritized-30min`, `kanji-added-later` (người dùng cũ thêm Kanji), `kanji-removed` (bỏ chọn còn lịch ôn), `kanji-exhausted-n5`.
 - **Hồi quy SC-006**: kiểm thử "golden" chạy mọi hồ sơ hiện có (không Kanji) qua `rankUnits` + `applyKanjiSlot` + `planDailyPlan` trong 14 ngày mô phỏng, so với ảnh chụp kết quả sinh từ mã trước thay đổi (lưu `tests/fixtures/golden/plans-pre-kanji.json`); bất kỳ khác biệt nào là lỗi.
 - **SC-002**: mọi hồ sơ Kanji × {5, 10, 15, 30} phút × 14 ngày: tổng ≤ quỹ, mỗi mục ≤ 15 phút, có bài Kanji ngày đầu có bài mới.
-- **SC-005**: mô phỏng đúng/sai trên cặp (chữ, khía cạnh), khẳng định cặp sai đến hạn sớm hơn và các khía cạnh khác không đổi lịch.
+- **SC-005**: mô phỏng đúng/sai trên cặp (chữ, khía cạnh), khẳng định từ lần ôn thứ hai khoảng cách đến hạn trung bình của cặp sai ngắn hơn ≥ 50% so với cặp đúng (SM-2: sai → 1 ngày; đúng lần 2 → 3 ngày) và các khía cạnh khác không đổi lịch.
 - Hợp đồng (OpenAPI 1.11.0), tích hợp PostgreSQL (migration 0002/0003 trên dữ liệu 001 có sẵn, admin kích hoạt bài thiếu thông tin bị 422), kiểm tra nội dung + phủ glyph (K9), widget test Flutter cho màn hình bài Kanji (chỉ hiện phần đọc có, không giá trị giả).
 
 ---

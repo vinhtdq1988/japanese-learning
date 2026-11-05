@@ -133,6 +133,8 @@ export async function completeOnboarding(
         dailyMinutes: input.dailyMinutes,
         targetDate: input.targetDate ?? null,
         skills: input.skills,
+        // Đo SC-001/SC-008: thời điểm người học chọn Kanji (spec 003).
+        ...(input.skills.includes('kanji') ? { kanjiSelectedAt: deps.clock.now() } : {}),
         timezone,
         onboardingState: 'completed',
         onboardingDraft: null,

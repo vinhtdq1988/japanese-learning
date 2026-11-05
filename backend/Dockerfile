@@ -31,6 +31,8 @@ COPY --from=build /srv/backend/dist/src ./dist/src
 COPY backend/package.json ./
 # Nội dung gốc cho `node dist/src/seed/index.js` (đường dẫn tương đối ../../../content so với dist/src/seed).
 COPY content ./content
+# Phông Noto Sans JP đóng gói cho client: backend đọc bảng cmap để chặn nội dung Kanji thiếu glyph (FONT_PATH mặc định).
+COPY client/assets/fonts/NotoSansJP.ttf ./client/assets/fonts/NotoSansJP.ttf
 USER node
 EXPOSE 3000
 HEALTHCHECK --interval=15s --timeout=3s --start-period=20s --retries=5 \

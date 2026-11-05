@@ -141,6 +141,8 @@ This endpoint does not need any parameter.
 
 Khôi phục tài khoản trong 30 ngày chờ xóa
 
+Gọi bằng token cấp khi đăng nhập tài khoản `pending_deletion` (`accountStatus` của đăng nhập). Token đó mang trạng thái `pending_deletion` nên sau khi khôi phục client PHẢI gọi `POST /auth/refresh` để lấy access token `active`.
+
 ### Example
 ```dart
 import 'package:japanese_api/api.dart';

@@ -1,0 +1,696 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-nature",
+  "title": {
+    "vi": "Kanji thiên nhiên (空 海 林 森 風)",
+    "en": "Nature kanji (空 海 林 森 風)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "空",
+      "topic": "kanji-n4-nature",
+      "meaning": {
+        "vi": "bầu trời; trống rỗng",
+        "en": "sky; empty"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "クウ"
+        ],
+        "kunReadings": [
+          "そら",
+          "あ.く",
+          "から"
+        ],
+        "strokeCount": 8,
+        "components": {
+          "vi": "Bộ huyệt 穴 (hang) + 工",
+          "en": "Cave radical 穴 + 工"
+        }
+      },
+      "examples": [
+        {
+          "ja": "空気",
+          "reading": "くうき",
+          "kanjiReading": "クウ",
+          "translation": {
+            "vi": "không khí",
+            "en": "air"
+          }
+        },
+        {
+          "ja": "空",
+          "reading": "そら",
+          "kanjiReading": "そら",
+          "translation": {
+            "vi": "bầu trời",
+            "en": "sky"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "海",
+      "topic": "kanji-n4-nature",
+      "meaning": {
+        "vi": "biển",
+        "en": "sea"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ"
+        ],
+        "kunReadings": [
+          "うみ"
+        ],
+        "strokeCount": 9,
+        "components": {
+          "vi": "Bộ thủy 氵 (nước) + 毎",
+          "en": "Water radical 氵 + 毎"
+        }
+      },
+      "examples": [
+        {
+          "ja": "海外",
+          "reading": "かいがい",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "nước ngoài",
+            "en": "overseas"
+          }
+        },
+        {
+          "ja": "海",
+          "reading": "うみ",
+          "kanjiReading": "うみ",
+          "translation": {
+            "vi": "biển",
+            "en": "sea"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "林",
+      "topic": "kanji-n4-nature",
+      "meaning": {
+        "vi": "rừng thưa",
+        "en": "woods"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リン"
+        ],
+        "kunReadings": [
+          "はやし"
+        ],
+        "strokeCount": 8,
+        "components": {
+          "vi": "木 + 木 (hai cái cây)",
+          "en": "木 + 木 (two trees)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "森林",
+          "reading": "しんりん",
+          "kanjiReading": "リン",
+          "translation": {
+            "vi": "rừng",
+            "en": "forest"
+          }
+        },
+        {
+          "ja": "林",
+          "reading": "はやし",
+          "kanjiReading": "はやし",
+          "translation": {
+            "vi": "rừng thưa",
+            "en": "woods"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "森",
+      "topic": "kanji-n4-nature",
+      "meaning": {
+        "vi": "rừng rậm",
+        "en": "forest"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "もり"
+        ],
+        "strokeCount": 12,
+        "components": {
+          "vi": "木 × 3 (ba cái cây)",
+          "en": "木 × 3 (three trees)"
+        }
+      },
+      "examples": [
+        {
+          "ja": "森林",
+          "reading": "しんりん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "rừng",
+            "en": "forest"
+          }
+        },
+        {
+          "ja": "森",
+          "reading": "もり",
+          "kanjiReading": "もり",
+          "translation": {
+            "vi": "rừng rậm",
+            "en": "forest"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "風",
+      "topic": "kanji-n4-nature",
+      "meaning": {
+        "vi": "gió",
+        "en": "wind"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フウ",
+          "フ"
+        ],
+        "kunReadings": [
+          "かぜ",
+          "かざ"
+        ],
+        "strokeCount": 9,
+        "components": {
+          "vi": "Bộ phong 風 (gió)",
+          "en": "Wind radical 風"
+        }
+      },
+      "examples": [
+        {
+          "ja": "台風",
+          "reading": "たいふう",
+          "kanjiReading": "フウ",
+          "translation": {
+            "vi": "bão",
+            "en": "typhoon"
+          }
+        },
+        {
+          "ja": "風",
+          "reading": "かぜ",
+          "kanjiReading": "かぜ",
+          "translation": {
+            "vi": "gió",
+            "en": "wind"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "空",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「空」nghĩa là gì?",
+        "en": "What does 「空」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bầu trời; trống rỗng",
+            "en": "sky; empty"
+          },
+          {
+            "vi": "biển",
+            "en": "sea"
+          },
+          {
+            "vi": "rừng thưa",
+            "en": "woods"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 空 nghĩa là bầu trời; trống rỗng.",
+        "en": "Correct! 空 means sky; empty."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 空 nghĩa là bầu trời; trống rỗng.",
+        "en": "Not quite. 空 means sky; empty."
+      }
+    },
+    {
+      "item": "空",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「空」 trong 「空気」 (\"không khí\").",
+        "en": "Type the reading of 「空」 in 「空気」 (\"air\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "くう",
+          "クウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 空気, 空 đọc là くう.",
+        "en": "Correct! In 空気, 空 is read くう."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 空気, 空 đọc là くう.",
+        "en": "In 空気, 空 is read くう."
+      }
+    },
+    {
+      "item": "空",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「空」(bầu trời (đứng một mình)) đọc là gì?",
+        "en": "How is 「空」 (sky (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "くう",
+          "そら",
+          "あめ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 空 = そら (bầu trời (đứng một mình)).",
+        "en": "Correct! 空 = そら (sky (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "空 đọc là そら (bầu trời (đứng một mình)).",
+        "en": "空 is read そら (sky (standing alone))."
+      }
+    },
+    {
+      "item": "海",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「海」nghĩa là gì?",
+        "en": "What does 「海」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rừng thưa",
+            "en": "woods"
+          },
+          {
+            "vi": "biển",
+            "en": "sea"
+          },
+          {
+            "vi": "rừng rậm",
+            "en": "forest"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 海 nghĩa là biển.",
+        "en": "Correct! 海 means sea."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 海 nghĩa là biển.",
+        "en": "Not quite. 海 means sea."
+      }
+    },
+    {
+      "item": "海",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「海」 trong 「海外」 (\"nước ngoài\").",
+        "en": "Type the reading of 「海」 in 「海外」 (\"overseas\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 海外, 海 đọc là かい.",
+        "en": "Correct! In 海外, 海 is read かい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 海外, 海 đọc là かい.",
+        "en": "In 海外, 海 is read かい."
+      }
+    },
+    {
+      "item": "海",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「海」(biển (đứng một mình)) đọc là gì?",
+        "en": "How is 「海」 (sea (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "かい",
+          "みず",
+          "うみ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 海 = うみ (biển (đứng một mình)).",
+        "en": "Correct! 海 = うみ (sea (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "海 đọc là うみ (biển (đứng một mình)).",
+        "en": "海 is read うみ (sea (standing alone))."
+      }
+    },
+    {
+      "item": "林",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「林」nghĩa là gì?",
+        "en": "What does 「林」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rừng rậm",
+            "en": "forest"
+          },
+          {
+            "vi": "gió",
+            "en": "wind"
+          },
+          {
+            "vi": "rừng thưa",
+            "en": "woods"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 林 nghĩa là rừng thưa.",
+        "en": "Correct! 林 means woods."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 林 nghĩa là rừng thưa.",
+        "en": "Not quite. 林 means woods."
+      }
+    },
+    {
+      "item": "林",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「林」 trong 「森林」 (chữ 「林」 trong \"rừng\").",
+        "en": "Type the reading of 「林」 in 「森林」 (the 「林」 in \"forest\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りん",
+          "リン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 森林, 林 đọc là りん.",
+        "en": "Correct! In 森林, 林 is read りん."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 森林, 林 đọc là りん.",
+        "en": "In 森林, 林 is read りん."
+      }
+    },
+    {
+      "item": "林",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「林」(rừng thưa (đứng một mình)) đọc là gì?",
+        "en": "How is 「林」 (woods (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "はやし",
+          "りん",
+          "もり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 林 = はやし (rừng thưa (đứng một mình)).",
+        "en": "Correct! 林 = はやし (woods (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "林 đọc là はやし (rừng thưa (đứng một mình)).",
+        "en": "林 is read はやし (woods (standing alone))."
+      }
+    },
+    {
+      "item": "森",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「森」nghĩa là gì?",
+        "en": "What does 「森」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rừng rậm",
+            "en": "forest"
+          },
+          {
+            "vi": "gió",
+            "en": "wind"
+          },
+          {
+            "vi": "bầu trời; trống rỗng",
+            "en": "sky; empty"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 森 nghĩa là rừng rậm.",
+        "en": "Correct! 森 means forest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 森 nghĩa là rừng rậm.",
+        "en": "Not quite. 森 means forest."
+      }
+    },
+    {
+      "item": "森",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「森」 trong 「森林」 (chữ 「森」 trong \"rừng\").",
+        "en": "Type the reading of 「森」 in 「森林」 (the 「森」 in \"forest\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 森林, 森 đọc là しん.",
+        "en": "Correct! In 森林, 森 is read しん."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 森林, 森 đọc là しん.",
+        "en": "In 森林, 森 is read しん."
+      }
+    },
+    {
+      "item": "森",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「森」(rừng rậm (đứng một mình)) đọc là gì?",
+        "en": "How is 「森」 (forest (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "しん",
+          "もり",
+          "はやし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 森 = もり (rừng rậm (đứng một mình)).",
+        "en": "Correct! 森 = もり (forest (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "森 đọc là もり (rừng rậm (đứng một mình)).",
+        "en": "森 is read もり (forest (standing alone))."
+      }
+    },
+    {
+      "item": "風",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「風」nghĩa là gì?",
+        "en": "What does 「風」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bầu trời; trống rỗng",
+            "en": "sky; empty"
+          },
+          {
+            "vi": "gió",
+            "en": "wind"
+          },
+          {
+            "vi": "biển",
+            "en": "sea"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 風 nghĩa là gió.",
+        "en": "Correct! 風 means wind."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 風 nghĩa là gió.",
+        "en": "Not quite. 風 means wind."
+      }
+    },
+    {
+      "item": "風",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「風」 trong 「台風」 (\"bão\").",
+        "en": "Type the reading of 「風」 in 「台風」 (\"typhoon\")."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふう",
+          "フウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 台風, 風 đọc là ふう.",
+        "en": "Correct! In 台風, 風 is read ふう."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 台風, 風 đọc là ふう.",
+        "en": "In 台風, 風 is read ふう."
+      }
+    },
+    {
+      "item": "風",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「風」(gió (đứng một mình)) đọc là gì?",
+        "en": "How is 「風」 (wind (standing alone)) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふう",
+          "かみ",
+          "かぜ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 風 = かぜ (gió (đứng một mình)).",
+        "en": "Correct! 風 = かぜ (wind (standing alone))."
+      },
+      "feedbackIncorrect": {
+        "vi": "風 đọc là かぜ (gió (đứng một mình)).",
+        "en": "風 is read かぜ (wind (standing alone))."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "空",
+            {
+              "vi": "bầu trời; trống rỗng",
+              "en": "sky; empty"
+            }
+          ],
+          [
+            "海",
+            {
+              "vi": "biển",
+              "en": "sea"
+            }
+          ],
+          [
+            "林",
+            {
+              "vi": "rừng thưa",
+              "en": "woods"
+            }
+          ],
+          [
+            "森",
+            {
+              "vi": "rừng rậm",
+              "en": "forest"
+            }
+          ],
+          [
+            "風",
+            {
+              "vi": "gió",
+              "en": "wind"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

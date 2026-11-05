@@ -1299,5 +1299,41 @@
   "restoreTitle": "Your account is scheduled for deletion",
   "restoreMessage": "Deletion was requested for this account. You can restore it within 30 days of the request; all your learning data is kept.",
   "restoreAction": "Restore account",
-  "restoreExpired": "More than 30 days have passed, so this account data has been deleted. Sign out and create a new account."
+  "restoreExpired": "More than 30 days have passed, so this account data has been deleted. Sign out and create a new account.",
+  "kanjiOnLabel": "On reading",
+  "kanjiKunLabel": "Kun reading",
+  "kanjiStrokeCount": "Strokes: {count}",
+  "@kanjiStrokeCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "kanjiComponents": "Components: {text}",
+  "@kanjiComponents": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "kanjiExamplesLabel": "Example words",
+  "kanjiReadingInWord": "Read in this word as: {reading}",
+  "@kanjiReadingInWord": {
+    "placeholders": {
+      "reading": {
+        "type": "String"
+      }
+    }
+  },
+  "kanjiAttentionHeading": "Kanji to review",
+  "kanjiAttentionHint": "Kanji you got wrong in this lesson. They will come back for review soon.",
+  "planAdjustSkillsHeading": "Skills you are learning",
+  "planAdjustSkillsHint": "Choose the skills to include in your plan. Changing skills never removes progress or review schedules; it applies to the days that follow.",
+  "planAdjustSkillsKeepOne": "Keep at least one skill selected.",
+  "planAdjustSkillsSaved": "Skills saved. They apply from the next plan.",
+  "todayTypeKanji": "Kanji lesson",
+  "todayKanjiExhaustedRaiseLevel": "You have finished the kanji lessons for your current level. Raise your level in plan settings to learn more kanji.",
+  "todayKanjiExhaustedContent": "You have finished all available kanji lessons. New kanji will appear as they are added."
 }

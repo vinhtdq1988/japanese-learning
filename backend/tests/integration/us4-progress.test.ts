@@ -225,10 +225,18 @@ describe('chuỗi ngày học (R11)', () => {
 });
 
 describe('tiến độ mục tiêu (FR-028)', () => {
-  /** Số đơn vị `active` trong khoảng trình độ của người mới (N5–N3: toàn bộ nội dung đã seed). */
+  /**
+   * Số đơn vị `active` trong khoảng trình độ của người mới không chọn Kanji (N5–N3: toàn bộ nội dung
+   * từ vựng + ngữ pháp đã seed). Bài Kanji không tính với người không chọn Kanji (FR-009, FR-019).
+   */
   const activeUnits = async (): Promise<number> =>
-    (await query(ctx, `SELECT count(*)::int AS n FROM learning_units WHERE status = 'active'`))[0]
-      .n;
+    (
+      await query(
+        ctx,
+        `SELECT count(*)::int AS n FROM learning_units
+          WHERE status = 'active' AND kind IN ('vocabulary', 'grammar')`,
+      )
+    )[0].n;
 
   it('tỷ lệ hoàn thành theo đơn vị `active` trong khoảng trình độ; đúng/chậm tiến độ theo mốc', async () => {
     // Mốc 54 ngày: đủ cho toàn bộ nội dung N5–N3 ở quỹ 10 phút/ngày (40% dành cho bài mới).

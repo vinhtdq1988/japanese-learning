@@ -1,0 +1,438 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N5",
+  "tier": "core",
+  "topic": "kanji-n5-numbers",
+  "title": {
+    "vi": "Kanji số đếm 1 (一 二 三)",
+    "en": "Number kanji 1 (一 二 三)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 100,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "一",
+      "topic": "kanji-n5-numbers",
+      "meaning": {
+        "vi": "một",
+        "en": "one"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イチ",
+          "イツ"
+        ],
+        "kunReadings": [
+          "ひと",
+          "ひと.つ"
+        ],
+        "strokeCount": 1,
+        "components": {
+          "vi": "Một nét ngang",
+          "en": "A single horizontal stroke"
+        }
+      },
+      "examples": [
+        {
+          "ja": "一月",
+          "reading": "いちがつ",
+          "kanjiReading": "イチ",
+          "translation": {
+            "vi": "tháng Một",
+            "en": "January"
+          }
+        },
+        {
+          "ja": "一つ",
+          "reading": "ひとつ",
+          "kanjiReading": "ひと",
+          "translation": {
+            "vi": "một cái",
+            "en": "one (thing)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "二",
+      "topic": "kanji-n5-numbers",
+      "meaning": {
+        "vi": "hai",
+        "en": "two"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ニ",
+          "ジ"
+        ],
+        "kunReadings": [
+          "ふた",
+          "ふた.つ"
+        ],
+        "strokeCount": 2,
+        "components": {
+          "vi": "Hai nét ngang",
+          "en": "Two horizontal strokes"
+        }
+      },
+      "examples": [
+        {
+          "ja": "二月",
+          "reading": "にがつ",
+          "kanjiReading": "ニ",
+          "translation": {
+            "vi": "tháng Hai",
+            "en": "February"
+          }
+        },
+        {
+          "ja": "二人",
+          "reading": "ふたり",
+          "kanjiReading": "ふた",
+          "translation": {
+            "vi": "hai người",
+            "en": "two people"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "三",
+      "topic": "kanji-n5-numbers",
+      "meaning": {
+        "vi": "ba",
+        "en": "three"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サン"
+        ],
+        "kunReadings": [
+          "み",
+          "み.つ"
+        ],
+        "strokeCount": 3,
+        "components": {
+          "vi": "Ba nét ngang",
+          "en": "Three horizontal strokes"
+        }
+      },
+      "examples": [
+        {
+          "ja": "三月",
+          "reading": "さんがつ",
+          "kanjiReading": "サン",
+          "translation": {
+            "vi": "tháng Ba",
+            "en": "March"
+          }
+        },
+        {
+          "ja": "三つ",
+          "reading": "みっつ",
+          "kanjiReading": "み",
+          "translation": {
+            "vi": "ba cái",
+            "en": "three (things)"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "一",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「一」nghĩa là gì?",
+        "en": "What does 「一」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "một",
+            "en": "one"
+          },
+          {
+            "vi": "hai",
+            "en": "two"
+          },
+          {
+            "vi": "ba",
+            "en": "three"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 一 nghĩa là một.",
+        "en": "Correct! 一 means one."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 一 nghĩa là một.",
+        "en": "Not quite. 一 means one."
+      }
+    },
+    {
+      "item": "一",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「一」 trong 「一月」 (tháng Một).",
+        "en": "Type the reading of 「一」 in 「一月」 (January)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いち",
+          "イチ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 一月, 一 đọc là いち.",
+        "en": "Correct! In 一月, 一 is read いち."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 一月, 一 đọc là いち.",
+        "en": "In 一月, 一 is read いち."
+      }
+    },
+    {
+      "item": "一",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「一つ」(một cái) đọc là gì?",
+        "en": "How is 「一つ」 (one (thing)) read?"
+      },
+      "payload": {
+        "choices": [
+          "いちつ",
+          "ひとつ",
+          "いっつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 一つ = ひとつ (một cái).",
+        "en": "Correct! 一つ = ひとつ (one (thing))."
+      },
+      "feedbackIncorrect": {
+        "vi": "一つ đọc là ひとつ (một cái).",
+        "en": "一つ is read ひとつ (one (thing))."
+      }
+    },
+    {
+      "item": "二",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「二」nghĩa là gì?",
+        "en": "What does 「二」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ba",
+            "en": "three"
+          },
+          {
+            "vi": "hai",
+            "en": "two"
+          },
+          {
+            "vi": "một",
+            "en": "one"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 二 nghĩa là hai.",
+        "en": "Correct! 二 means two."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 二 nghĩa là hai.",
+        "en": "Not quite. 二 means two."
+      }
+    },
+    {
+      "item": "二",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「二」 trong 「二月」 (tháng Hai).",
+        "en": "Type the reading of 「二」 in 「二月」 (February)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "に",
+          "ニ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 二月, 二 đọc là に.",
+        "en": "Correct! In 二月, 二 is read に."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 二月, 二 đọc là に.",
+        "en": "In 二月, 二 is read に."
+      }
+    },
+    {
+      "item": "二",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「二人」(hai người) đọc là gì?",
+        "en": "How is 「二人」 (two people) read?"
+      },
+      "payload": {
+        "choices": [
+          "ににん",
+          "ふたびと",
+          "ふたり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 二人 = ふたり (hai người).",
+        "en": "Correct! 二人 = ふたり (two people)."
+      },
+      "feedbackIncorrect": {
+        "vi": "二人 đọc là ふたり (hai người).",
+        "en": "二人 is read ふたり (two people)."
+      }
+    },
+    {
+      "item": "三",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「三」nghĩa là gì?",
+        "en": "What does 「三」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "một",
+            "en": "one"
+          },
+          {
+            "vi": "hai",
+            "en": "two"
+          },
+          {
+            "vi": "ba",
+            "en": "three"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 三 nghĩa là ba.",
+        "en": "Correct! 三 means three."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 三 nghĩa là ba.",
+        "en": "Not quite. 三 means three."
+      }
+    },
+    {
+      "item": "三",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「三」 trong 「三月」 (tháng Ba).",
+        "en": "Type the reading of 「三」 in 「三月」 (March)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さん",
+          "サン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 三月, 三 đọc là さん.",
+        "en": "Correct! In 三月, 三 is read さん."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 三月, 三 đọc là さん.",
+        "en": "In 三月, 三 is read さん."
+      }
+    },
+    {
+      "item": "三",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「三つ」(ba cái) đọc là gì?",
+        "en": "How is 「三つ」 (three (things)) read?"
+      },
+      "payload": {
+        "choices": [
+          "みっつ",
+          "さんつ",
+          "みつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 三つ = みっつ (ba cái).",
+        "en": "Correct! 三つ = みっつ (three (things))."
+      },
+      "feedbackIncorrect": {
+        "vi": "三つ đọc là みっつ (ba cái).",
+        "en": "三つ is read みっつ (three (things))."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "一",
+            {
+              "vi": "một",
+              "en": "one"
+            }
+          ],
+          [
+            "二",
+            {
+              "vi": "hai",
+              "en": "two"
+            }
+          ],
+          [
+            "三",
+            {
+              "vi": "ba",
+              "en": "three"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

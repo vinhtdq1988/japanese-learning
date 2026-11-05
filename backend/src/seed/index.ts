@@ -108,6 +108,9 @@ async function seedUnits(
             meaning: item.meaning,
             explanation: item.explanation ?? null,
             examples: item.examples ?? [],
+            // Chữ Kanji: chủ đề riêng và chi tiết (NULL với mục khác); reading để NULL.
+            topicId: item.topic ? topicIds.get(item.topic)! : null,
+            kanjiDetails: item.kanjiDetails ?? null,
             position,
           })
           .returning({ id: contentItems.id });
@@ -118,6 +121,7 @@ async function seedUnits(
         await tx.insert(exercises).values({
           unitId,
           itemId: ex.item ? itemIds.get(ex.item)! : null,
+          facet: ex.facet ?? 'item',
           type: ex.type,
           prompt: ex.prompt,
           payload: ex.payload,
