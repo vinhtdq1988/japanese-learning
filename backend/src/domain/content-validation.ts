@@ -226,7 +226,7 @@ export function validateUnit(unit: UnitDraft): ContentIssue[] {
 /**
  * Kiểm tra danh mục đơn vị `active` (quy tắc xuyên đơn vị, R7/R13): mỗi (level × kind) trong
  * `requiredLevels` có ≥ 1 đơn vị 5 phút; mỗi kind có ≥ 1 đơn vị N5 `foundation` 5 phút.
- * `requiredLevels` mặc định là mọi trình độ; seed N5 truyền `['N5']` cho tới khi có N4/N3 (T114).
+ * `requiredLevels` mặc định là mọi trình độ; seed chỉ yêu cầu N5 và các trình độ đã có nội dung (xem `seed/content.ts`).
  */
 export function validateCatalog(
   units: Pick<UnitDraft, 'kind' | 'level' | 'tier' | 'estMinutes'>[],

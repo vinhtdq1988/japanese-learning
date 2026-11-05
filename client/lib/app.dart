@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'data/language_sync.dart';
 import 'data/locale_provider.dart';
 import 'l10n/app_localizations.dart';
 import 'presentation/shared/theme.dart';
@@ -13,6 +14,8 @@ class JapaneseLearningApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Giữ ngôn ngữ giao diện khớp ngôn ngữ đã lưu trong hồ sơ khi đăng nhập/mở lại ứng dụng.
+    ref.watch(languageSyncProvider);
     return MaterialApp.router(
       onGenerateTitle: (BuildContext context) =>
           AppLocalizations.of(context).appTitle,

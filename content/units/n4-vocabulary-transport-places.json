@@ -1,0 +1,231 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "transport-places",
+  "title": {
+    "vi": "Di chuyển trong thành phố",
+    "en": "Getting around the city"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "jlpt"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 10,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "空港",
+      "reading": "くうこう",
+      "meaning": {
+        "vi": "Sân bay",
+        "en": "Airport"
+      },
+      "examples": [
+        {
+          "ja": "空港までバスで行きます。",
+          "reading": "くうこうまでバスでいきます。",
+          "translation": {
+            "vi": "Tôi đi đến sân bay bằng xe buýt.",
+            "en": "I go to the airport by bus."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "乗り換える",
+      "reading": "のりかえる",
+      "meaning": {
+        "vi": "Đổi tàu, đổi xe",
+        "en": "To transfer (trains, buses)"
+      },
+      "examples": [
+        {
+          "ja": "新宿で電車を乗り換えます。",
+          "reading": "しんじゅくででんしゃをのりかえます。",
+          "translation": {
+            "vi": "Tôi đổi tàu ở Shinjuku.",
+            "en": "I change trains at Shinjuku."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "交差点",
+      "reading": "こうさてん",
+      "meaning": {
+        "vi": "Ngã tư",
+        "en": "Intersection"
+      },
+      "examples": [
+        {
+          "ja": "次の交差点を右に曲がってください。",
+          "reading": "つぎのこうさてんをみぎにまがってください。",
+          "translation": {
+            "vi": "Hãy rẽ phải ở ngã tư tiếp theo.",
+            "en": "Please turn right at the next intersection."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "遅れる",
+      "reading": "おくれる",
+      "meaning": {
+        "vi": "Trễ, chậm",
+        "en": "To be late, to be delayed"
+      },
+      "examples": [
+        {
+          "ja": "電車が遅れました。",
+          "reading": "でんしゃがおくれました。",
+          "translation": {
+            "vi": "Tàu đã bị trễ.",
+            "en": "The train was delayed."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "空港",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「空港」nghĩa là gì?",
+        "en": "What does 「空港」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Sân bay",
+            "en": "Airport"
+          },
+          {
+            "vi": "Nhà ga",
+            "en": "Train station"
+          },
+          {
+            "vi": "Bến xe buýt",
+            "en": "Bus stop"
+          },
+          {
+            "vi": "Bến cảng",
+            "en": "Harbor"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「空港」là sân bay.",
+        "en": "Correct! 「空港」 is an airport."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「空港」là sân bay (くうこう).",
+        "en": "Not quite. 「空港」 (くうこう) is an airport."
+      }
+    },
+    {
+      "item": "乗り換える",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Bạn cần làm gì khi đi tàu từ A đến C nhưng phải qua B? Từ nào phù hợp?",
+        "en": "You travel from A to C via B. Which word describes what you do at B?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "乗り換える (đổi tàu)",
+            "en": "乗り換える (transfer)"
+          },
+          {
+            "vi": "遅れる (trễ)",
+            "en": "遅れる (be late)"
+          },
+          {
+            "vi": "曲がる (rẽ)",
+            "en": "曲がる (turn)"
+          },
+          {
+            "vi": "降りる (xuống xe, không đi tiếp)",
+            "en": "降りる (get off, not continuing)"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng, tại B bạn 乗り換える.",
+        "en": "Right, at B you 乗り換える."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chuyển sang tàu khác là 乗り換える.",
+        "en": "Not quite. Switching to another train is 乗り換える."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép từ với nghĩa của nó.",
+        "en": "Match each word with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "空港",
+            {
+              "vi": "Sân bay",
+              "en": "Airport"
+            }
+          ],
+          [
+            "交差点",
+            {
+              "vi": "Ngã tư",
+              "en": "Intersection"
+            }
+          ],
+          [
+            "遅れる",
+            {
+              "vi": "Trễ, chậm",
+              "en": "To be late"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "交差点",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền bằng hiragana: 「次の___を右に曲がってください。」(Hãy rẽ phải ở ngã tư tiếp theo)",
+        "en": "Fill in with hiragana: 「次の___を右に曲がってください。」 (Please turn right at the next intersection)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こうさてん",
+          "交差点"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「交差点」(こうさてん)",
+        "en": "Correct! 「交差点」 (こうさてん)"
+      },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「こうさてん」.",
+        "en": "The answer is 「こうさてん」."
+      }
+    }
+  ]
+}

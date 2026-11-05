@@ -39,6 +39,27 @@ describe('nội dung N5 và bộ placement trong content/', () => {
     }
   });
 
+  it('mỗi trình độ N5/N4/N3 × kind có ≥ 1 đơn vị 5 phút (T114, FR-017)', async () => {
+    const { units } = await loadContent();
+    for (const level of ['N5', 'N4', 'N3'] as const) {
+      for (const kind of ['vocabulary', 'grammar'] as const) {
+        expect(
+          units.some((u) => u.level === level && u.kind === kind && u.estMinutes === 5),
+          `${level} × ${kind}`,
+        ).toBe(true);
+      }
+    }
+  });
+
+  it('mỗi mảng N4 và N3 có ít nhất một đơn vị và đơn vị N4/N3 là tier core', async () => {
+    const { topics, units } = await loadContent();
+    const used = new Set(units.map((u) => u.topic));
+    for (const t of topics.filter((x) => x.level !== 'N5')) {
+      expect(used.has(t.key), `mảng ${t.key}`).toBe(true);
+    }
+    for (const u of units.filter((x) => x.level !== 'N5')) expect(u.tier).toBe('core');
+  });
+
   it('tập dùng thử gồm 1 từ vựng + 1 ngữ pháp, tổng ≤ 10 phút (FR-037)', async () => {
     const { units } = await loadContent();
     const trial = units.filter((u) => u.isTrial);

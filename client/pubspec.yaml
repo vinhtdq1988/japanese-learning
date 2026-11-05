@@ -37,3 +37,9 @@ flutter:
   uses-material-design: true
   # Bật sinh mã l10n từ các file ARB trong lib/l10n (xem l10n.yaml)
   generate: true
+  # Phông chữ Nhật đóng gói sẵn (SIL OFL, xem assets/fonts/OFL.txt): CanvasKit không dùng phông hệ thống,
+  # còn việc tải phông dự phòng từ gstatic bị CSP (`connect-src 'self'`) chặn nên chữ Nhật sẽ thành ô vuông.
+  fonts:
+    - family: Noto Sans JP
+      fonts:
+        - asset: assets/fonts/NotoSansJP.ttf

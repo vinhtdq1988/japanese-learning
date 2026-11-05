@@ -101,7 +101,12 @@ export function matchOperation(method: string, url: string): MatchedOperation {
   const { spec } = load();
   const pathname = (url.split('?')[0] ?? '').replace(/^\/api\/v1/, '');
   const m = method.toLowerCase();
-  for (const [template, item] of Object.entries(spec.paths as Record<string, Json>)) {
+  // Mẫu có ít tham số hơn được thử trước để đường dẫn tĩnh thắng đường dẫn có tham số
+  // (ví dụ `/admin/placement-questions/active-set` không bị coi là `/{questionId}`), như bộ định tuyến thật.
+  const byStaticFirst = Object.entries(spec.paths as Record<string, Json>).sort(
+    ([a], [b]) => a.split('{').length - b.split('{').length,
+  );
+  for (const [template, item] of byStaticFirst) {
     const { re, names } = templateToRegex(template);
     const hit = re.exec(pathname);
     const operation = item[m] as Operation | undefined;

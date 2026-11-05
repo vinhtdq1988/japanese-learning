@@ -1,5 +1,6 @@
 import type { FastifyInstance } from 'fastify';
 import { registerAccountRoutes } from './account.js';
+import { registerAdminRoutes } from './admin/index.js';
 import { registerAuthRoutes } from './auth.js';
 import { registerDailyRoutes } from './daily.js';
 import { registerOnboardingRoutes } from './onboarding.js';
@@ -20,4 +21,5 @@ export async function registerApiRoutes(api: FastifyInstance): Promise<void> {
   registerDailyRoutes(api);
   registerSessionRoutes(api);
   registerProgressRoutes(api);
+  registerAdminRoutes(api);
 }

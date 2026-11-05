@@ -12,7 +12,9 @@ ThemeData buildAppTheme({Brightness brightness = Brightness.light}) {
     useMaterial3: true,
     colorScheme: scheme,
     visualDensity: VisualDensity.standard,
-    // Chữ Nhật cần phông có glyph CJK; thứ tự dự phòng ưu tiên phông hệ thống phổ biến.
+    // Chữ Nhật cần phông có glyph CJK. Flutter web (CanvasKit) không dùng phông hệ thống nên
+    // 'Noto Sans JP' là phông đóng gói trong assets/fonts (khai báo ở pubspec.yaml); các phông còn lại
+    // chỉ có tác dụng ở nền tảng gốc/trình kết xuất khác.
     fontFamilyFallback: const <String>[
       'Noto Sans JP',
       'Hiragino Sans',

@@ -25,19 +25,19 @@ const count = async (table: string, where = 'true'): Promise<number> =>
   (await handle.pool.query(`SELECT count(*)::int AS n FROM ${table} WHERE ${where}`)).rows[0].n;
 
 describe('seedContent', () => {
-  it('nạp mảng, đơn vị N5, bài tập và bộ placement 20 câu đang kích hoạt', async () => {
+  it('nạp mảng, đơn vị N5–N3, bài tập và bộ placement 20 câu đang kích hoạt', async () => {
     const summary = await seedContent(handle.db);
     expect(summary).toMatchObject({
       topicsInserted: 14,
-      unitsInserted: 6,
+      unitsInserted: 14,
       unitsSkipped: 0,
       placementInserted: 20,
       placementActivated: true,
     });
     expect(await count('topics')).toBe(14);
-    expect(await count('learning_units', "status = 'active'")).toBe(6);
-    expect(await count('content_items')).toBeGreaterThanOrEqual(6 * 3);
-    expect(await count('exercises')).toBeGreaterThanOrEqual(6 * 4);
+    expect(await count('learning_units', "status = 'active'")).toBe(14);
+    expect(await count('content_items')).toBeGreaterThanOrEqual(14 * 3);
+    expect(await count('exercises')).toBeGreaterThanOrEqual(14 * 4);
     expect(await count('placement_questions', 'is_active')).toBe(20);
     // 8 N5, 6 N4, 6 N3
     const byLevel = await handle.pool.query(
@@ -93,11 +93,11 @@ describe('seedContent', () => {
     expect(again).toMatchObject({
       topicsInserted: 0,
       unitsInserted: 0,
-      unitsSkipped: 6,
+      unitsSkipped: 14,
       placementInserted: 0,
       placementActivated: false,
     });
-    expect(await count('learning_units')).toBe(6);
+    expect(await count('learning_units')).toBe(14);
     expect(await count('placement_questions')).toBe(20);
     expect(await count('learning_units', `title->>'vi' = 'Tiêu đề do admin sửa'`)).toBe(1);
   });

@@ -14,10 +14,17 @@ import 'package:japanese_learning_client/platform/platform_providers.dart';
 
 /// Phản hồi giả của một route.
 class FakeResponse {
-  const FakeResponse(this.status, [this.body]);
+  const FakeResponse(
+    this.status, [
+    this.body,
+    this.headers = const <String, String>{},
+  ]);
 
   final int status;
   final Object? body;
+
+  /// Header phản hồi bổ sung (ví dụ `x-next-cursor` của nhật ký quản trị).
+  final Map<String, String> headers;
 }
 
 typedef FakeHandler = FutureOr<FakeResponse> Function(RequestOptions request);
@@ -58,6 +65,8 @@ class FakeBackend implements HttpClientAdapter {
       response.status,
       headers: <String, List<String>>{
         Headers.contentTypeHeader: <String>[Headers.jsonContentType],
+        for (final entry in response.headers.entries)
+          entry.key.toLowerCase(): <String>[entry.value],
       },
     );
   }

@@ -713,5 +713,591 @@
   "trialPlacementBack": "Back to the trial page",
   "@trialPlacementBack": {
     "description": "Nút quay lại trang dùng thử từ kết quả kiểm tra"
-  }
+  },
+  "adminNavUnits": "Learning units",
+  "@adminNavUnits": {
+    "description": "Mục điều hướng quản trị: danh sách đơn vị học"
+  },
+  "adminNavPlacement": "Placement test",
+  "@adminNavPlacement": {
+    "description": "Mục điều hướng quản trị: câu hỏi kiểm tra trình độ"
+  },
+  "adminNavUsers": "Users",
+  "@adminNavUsers": {
+    "description": "Mục điều hướng quản trị: người dùng"
+  },
+  "adminNavLogs": "Action log",
+  "@adminNavLogs": {
+    "description": "Mục điều hướng quản trị: nhật ký hành động"
+  },
+  "adminFilterStatus": "Status",
+  "@adminFilterStatus": {
+    "description": "Nhãn bộ lọc trạng thái đơn vị"
+  },
+  "adminFilterLevel": "Level",
+  "@adminFilterLevel": {
+    "description": "Nhãn bộ lọc trình độ"
+  },
+  "adminFilterKind": "Type",
+  "@adminFilterKind": {
+    "description": "Nhãn bộ lọc loại đơn vị"
+  },
+  "adminFilterAll": "All",
+  "@adminFilterAll": {
+    "description": "Giá trị bỏ lọc"
+  },
+  "adminStatusDraft": "Draft",
+  "@adminStatusDraft": {
+    "description": "Trạng thái đơn vị: nháp"
+  },
+  "adminStatusActive": "Active",
+  "@adminStatusActive": {
+    "description": "Trạng thái đơn vị: đang hiển thị với người học"
+  },
+  "adminStatusInactive": "Inactive",
+  "@adminStatusInactive": {
+    "description": "Trạng thái đơn vị: đã ẩn"
+  },
+  "adminStatusActiveUser": "Active",
+  "@adminStatusActiveUser": {
+    "description": "Trạng thái tài khoản: bình thường"
+  },
+  "adminStatusDisabled": "Disabled",
+  "@adminStatusDisabled": {
+    "description": "Trạng thái tài khoản: bị admin vô hiệu hóa"
+  },
+  "adminStatusPendingDeletion": "Pending deletion",
+  "@adminStatusPendingDeletion": {
+    "description": "Trạng thái tài khoản: chờ xóa"
+  },
+  "adminKindVocabulary": "Vocabulary",
+  "@adminKindVocabulary": {
+    "description": "Loại đơn vị: từ vựng"
+  },
+  "adminKindGrammar": "Grammar",
+  "@adminKindGrammar": {
+    "description": "Loại đơn vị: ngữ pháp"
+  },
+  "adminTierFoundation": "Foundation",
+  "@adminTierFoundation": {
+    "description": "Cấp đơn vị: nền tảng cho người mới"
+  },
+  "adminTierCore": "Core",
+  "@adminTierCore": {
+    "description": "Cấp đơn vị: nội dung chính"
+  },
+  "adminGoalDailyConversation": "Daily conversation",
+  "@adminGoalDailyConversation": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminGoalWork": "Work",
+  "@adminGoalWork": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminGoalJlpt": "JLPT",
+  "@adminGoalJlpt": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminUnitMinutes": "{minutes} min",
+  "@adminUnitMinutes": {
+    "description": "Thời lượng ước tính",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "adminUnitTrial": "Trial",
+  "@adminUnitTrial": {
+    "description": "Đơn vị thuộc tập dùng thử"
+  },
+  "adminUnitEdit": "Edit",
+  "@adminUnitEdit": {
+    "description": "Nút mở trình soạn đơn vị"
+  },
+  "adminUnitActivate": "Activate",
+  "@adminUnitActivate": {
+    "description": "Nút kích hoạt đơn vị"
+  },
+  "adminUnitDeactivate": "Deactivate",
+  "@adminUnitDeactivate": {
+    "description": "Nút vô hiệu hóa đơn vị"
+  },
+  "adminUnitsCreate": "New learning unit",
+  "@adminUnitsCreate": {
+    "description": "Nút tạo đơn vị học"
+  },
+  "adminUnitsEmpty": "No learning units match the filters.",
+  "@adminUnitsEmpty": {
+    "description": "Danh sách đơn vị trống"
+  },
+  "adminStatusChanged": "Status updated.",
+  "@adminStatusChanged": {
+    "description": "Thông báo đổi trạng thái thành công"
+  },
+  "adminSaved": "Saved.",
+  "@adminSaved": {
+    "description": "Thông báo lưu thành công"
+  },
+  "adminActionFailedTitle": "Could not complete the action",
+  "@adminActionFailedTitle": {
+    "description": "Tiêu đề hộp thoại lỗi thao tác quản trị"
+  },
+  "adminValidationDetails": "Problems to fix:",
+  "@adminValidationDetails": {
+    "description": "Tiêu đề danh sách lỗi theo trường"
+  },
+  "adminLoadMore": "Load more",
+  "@adminLoadMore": {
+    "description": "Nút tải trang kế tiếp"
+  },
+  "adminEditorNewTitle": "New learning unit",
+  "@adminEditorNewTitle": {
+    "description": "Tiêu đề trình soạn khi tạo mới"
+  },
+  "adminEditorEditTitle": "Edit learning unit",
+  "@adminEditorEditTitle": {
+    "description": "Tiêu đề trình soạn khi sửa"
+  },
+  "adminUnitInfoHeading": "Unit details",
+  "@adminUnitInfoHeading": {
+    "description": "Tiêu đề phần thông tin chung"
+  },
+  "adminFieldKind": "Type",
+  "@adminFieldKind": {
+    "description": "Ô chọn loại đơn vị"
+  },
+  "adminFieldLevel": "Level",
+  "@adminFieldLevel": {
+    "description": "Ô chọn trình độ"
+  },
+  "adminFieldTier": "Tier",
+  "@adminFieldTier": {
+    "description": "Ô chọn cấp đơn vị"
+  },
+  "adminFieldMinutes": "Duration",
+  "@adminFieldMinutes": {
+    "description": "Ô chọn thời lượng"
+  },
+  "adminFieldDifficulty": "Difficulty (1–5)",
+  "@adminFieldDifficulty": {
+    "description": "Ô chọn độ khó"
+  },
+  "adminFieldSequence": "Order",
+  "@adminFieldSequence": {
+    "description": "Ô nhập thứ tự (sequence)"
+  },
+  "adminFieldTopic": "Topic",
+  "@adminFieldTopic": {
+    "description": "Ô chọn mảng nội dung"
+  },
+  "adminFieldGoalTags": "Relevant goals",
+  "@adminFieldGoalTags": {
+    "description": "Nhãn nhóm thẻ mục tiêu"
+  },
+  "adminFieldTitleVi": "Title (Vietnamese)",
+  "@adminFieldTitleVi": {
+    "description": "Ô tiêu đề tiếng Việt"
+  },
+  "adminFieldTitleEn": "Title (English)",
+  "@adminFieldTitleEn": {
+    "description": "Ô tiêu đề tiếng Anh"
+  },
+  "adminSaveBeforeActivate": "Save your changes before activating.",
+  "@adminSaveBeforeActivate": {
+    "description": "Gợi ý bên cạnh nút kích hoạt"
+  },
+  "adminItemsHeading": "Content items",
+  "@adminItemsHeading": {
+    "description": "Tiêu đề phần mục nội dung"
+  },
+  "adminItemAdd": "Add item",
+  "@adminItemAdd": {
+    "description": "Nút thêm mục"
+  },
+  "adminItemTitle": "Item {n}",
+  "@adminItemTitle": {
+    "description": "Tiêu đề thẻ mục",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminItemJapanese": "Japanese",
+  "@adminItemJapanese": {
+    "description": "Ô chữ Nhật"
+  },
+  "adminItemReading": "Reading",
+  "@adminItemReading": {
+    "description": "Ô cách đọc"
+  },
+  "adminItemMeaningVi": "Meaning (Vietnamese)",
+  "@adminItemMeaningVi": {
+    "description": "Ô nghĩa tiếng Việt"
+  },
+  "adminItemMeaningEn": "Meaning (English)",
+  "@adminItemMeaningEn": {
+    "description": "Ô nghĩa tiếng Anh"
+  },
+  "adminItemExplanationVi": "Explanation (Vietnamese)",
+  "@adminItemExplanationVi": {
+    "description": "Ô giải thích tiếng Việt"
+  },
+  "adminItemExplanationEn": "Explanation (English)",
+  "@adminItemExplanationEn": {
+    "description": "Ô giải thích tiếng Anh"
+  },
+  "adminExamplesHeading": "Examples",
+  "@adminExamplesHeading": {
+    "description": "Tiêu đề phần ví dụ"
+  },
+  "adminExampleAdd": "Add example",
+  "@adminExampleAdd": {
+    "description": "Nút thêm ví dụ"
+  },
+  "adminExampleJa": "Example (Japanese)",
+  "@adminExampleJa": {
+    "description": "Ô câu ví dụ"
+  },
+  "adminExampleReading": "Example reading",
+  "@adminExampleReading": {
+    "description": "Ô cách đọc câu ví dụ"
+  },
+  "adminExampleTranslationVi": "Translation (Vietnamese)",
+  "@adminExampleTranslationVi": {
+    "description": "Ô dịch tiếng Việt"
+  },
+  "adminExampleTranslationEn": "Translation (English)",
+  "@adminExampleTranslationEn": {
+    "description": "Ô dịch tiếng Anh"
+  },
+  "adminElementActive": "Visible to learners",
+  "@adminElementActive": {
+    "description": "Công tắc hiển thị của mục/bài tập đã có"
+  },
+  "adminRemoveNew": "Remove",
+  "@adminRemoveNew": {
+    "description": "Nút bỏ phần tử mới hoặc dòng"
+  },
+  "adminExercisesHeading": "Exercises",
+  "@adminExercisesHeading": {
+    "description": "Tiêu đề phần bài tập"
+  },
+  "adminExerciseAdd": "Add exercise",
+  "@adminExerciseAdd": {
+    "description": "Nút thêm bài tập"
+  },
+  "adminExerciseTitle": "Exercise {n}",
+  "@adminExerciseTitle": {
+    "description": "Tiêu đề thẻ bài tập",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminExerciseType": "Exercise type",
+  "@adminExerciseType": {
+    "description": "Ô chọn loại bài tập"
+  },
+  "adminExerciseTypeMultipleChoice": "Multiple choice",
+  "@adminExerciseTypeMultipleChoice": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseTypeMatching": "Matching",
+  "@adminExerciseTypeMatching": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseTypeFill": "Fill in the blank",
+  "@adminExerciseTypeFill": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseItem": "Tests item",
+  "@adminExerciseItem": {
+    "description": "Ô chọn mục mà bài tập kiểm tra"
+  },
+  "adminExerciseNoItem": "(no item – not scheduled for review)",
+  "@adminExerciseNoItem": {
+    "description": "Lựa chọn không gắn mục"
+  },
+  "adminExercisePromptVi": "Prompt (Vietnamese)",
+  "@adminExercisePromptVi": {
+    "description": "Ô câu hỏi tiếng Việt"
+  },
+  "adminExercisePromptEn": "Prompt (English)",
+  "@adminExercisePromptEn": {
+    "description": "Ô câu hỏi tiếng Anh"
+  },
+  "adminChoiceLabel": "Choice {n}",
+  "@adminChoiceLabel": {
+    "description": "Nhãn ô lựa chọn",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminChoiceAdd": "Add choice",
+  "@adminChoiceAdd": {
+    "description": "Nút thêm lựa chọn"
+  },
+  "adminChoiceCorrect": "Correct answer",
+  "@adminChoiceCorrect": {
+    "description": "Nút đánh dấu đáp án đúng"
+  },
+  "adminPairLeft": "Left",
+  "@adminPairLeft": {
+    "description": "Ô vế trái của cặp ghép"
+  },
+  "adminPairRight": "Right",
+  "@adminPairRight": {
+    "description": "Ô vế phải của cặp ghép"
+  },
+  "adminPairAdd": "Add pair",
+  "@adminPairAdd": {
+    "description": "Nút thêm cặp ghép"
+  },
+  "adminAnswerLabel": "Accepted answer",
+  "@adminAnswerLabel": {
+    "description": "Ô đáp án của bài điền chỗ trống"
+  },
+  "adminAnswerAdd": "Add answer",
+  "@adminAnswerAdd": {
+    "description": "Nút thêm đáp án chấp nhận"
+  },
+  "adminFeedbackCorrectVi": "Correct feedback (Vietnamese)",
+  "@adminFeedbackCorrectVi": {
+    "description": "Ô phản hồi đúng"
+  },
+  "adminFeedbackCorrectEn": "Correct feedback (English)",
+  "@adminFeedbackCorrectEn": {
+    "description": "Ô phản hồi đúng"
+  },
+  "adminFeedbackIncorrectVi": "Incorrect feedback (Vietnamese)",
+  "@adminFeedbackIncorrectVi": {
+    "description": "Ô phản hồi sai"
+  },
+  "adminFeedbackIncorrectEn": "Incorrect feedback (English)",
+  "@adminFeedbackIncorrectEn": {
+    "description": "Ô phản hồi sai"
+  },
+  "adminPayloadRawNote": "The answer data uses an advanced format, so it is edited as JSON.",
+  "@adminPayloadRawNote": {
+    "description": "Ghi chú khi dùng JSON thô"
+  },
+  "adminPayloadRawLabel": "Answer data (JSON)",
+  "@adminPayloadRawLabel": {
+    "description": "Nhãn ô JSON thô"
+  },
+  "adminPayloadInvalidJson": "The answer JSON is not valid.",
+  "@adminPayloadInvalidJson": {
+    "description": "Thông báo JSON sai"
+  },
+  "adminSave": "Save unit",
+  "@adminSave": {
+    "description": "Nút lưu đơn vị"
+  },
+  "adminLocalErrors": "Choose a topic and enter a title and the Japanese text of every item before saving.",
+  "@adminLocalErrors": {
+    "description": "Thông báo thiếu dữ liệu bắt buộc"
+  },
+  "adminPlacementCreate": "Add question",
+  "@adminPlacementCreate": {
+    "description": "Nút thêm câu hỏi kiểm tra trình độ"
+  },
+  "adminPlacementEdit": "Edit question",
+  "@adminPlacementEdit": {
+    "description": "Nút/tiêu đề sửa câu hỏi"
+  },
+  "adminPlacementEmpty": "No questions yet.",
+  "@adminPlacementEmpty": {
+    "description": "Danh sách câu hỏi trống"
+  },
+  "adminPlacementCounts": "Selected: N5 {n5}/8 · N4 {n4}/6 · N3 {n3}/6",
+  "@adminPlacementCounts": {
+    "description": "Số câu đã chọn theo trình độ",
+    "placeholders": {
+      "n5": {
+        "type": "int"
+      },
+      "n4": {
+        "type": "int"
+      },
+      "n3": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPlacementActivate": "Activate selected set",
+  "@adminPlacementActivate": {
+    "description": "Nút kích hoạt bộ câu hỏi"
+  },
+  "adminPlacementActivateTitle": "Activate this 20-question set?",
+  "@adminPlacementActivateTitle": {
+    "description": "Tiêu đề xác nhận kích hoạt bộ"
+  },
+  "adminPlacementActivateMessage": "This set replaces the current one for future attempts. Results already graded do not change.",
+  "@adminPlacementActivateMessage": {
+    "description": "Nội dung xác nhận kích hoạt bộ"
+  },
+  "adminPlacementActivated": "The question set is now active.",
+  "@adminPlacementActivated": {
+    "description": "Thông báo kích hoạt bộ thành công"
+  },
+  "adminPlacementCurrent": "Current set #{position}",
+  "@adminPlacementCurrent": {
+    "description": "Nhãn câu thuộc bộ hiện hành",
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPlacementCorrect": "Correct answer: {choice}",
+  "@adminPlacementCorrect": {
+    "description": "Đáp án đúng của câu hỏi",
+    "placeholders": {
+      "choice": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPlacementPrompt": "Question (Japanese)",
+  "@adminPlacementPrompt": {
+    "description": "Ô nội dung câu hỏi"
+  },
+  "adminPlacementHintVi": "Hint (Vietnamese)",
+  "@adminPlacementHintVi": {
+    "description": "Ô gợi ý tiếng Việt"
+  },
+  "adminPlacementHintEn": "Hint (English)",
+  "@adminPlacementHintEn": {
+    "description": "Ô gợi ý tiếng Anh"
+  },
+  "adminPlacementIncomplete": "Choose a topic and fill in the question and every choice before saving.",
+  "@adminPlacementIncomplete": {
+    "description": "Thông báo thiếu dữ liệu câu hỏi"
+  },
+  "adminUsersSearchHint": "Search by email or name",
+  "@adminUsersSearchHint": {
+    "description": "Ô tìm người dùng"
+  },
+  "adminUsersSearch": "Search",
+  "@adminUsersSearch": {
+    "description": "Nút tìm người dùng"
+  },
+  "adminUsersEmpty": "No matching accounts.",
+  "@adminUsersEmpty": {
+    "description": "Danh sách người dùng trống"
+  },
+  "adminUserDisable": "Disable",
+  "@adminUserDisable": {
+    "description": "Nút vô hiệu hóa tài khoản"
+  },
+  "adminUserEnable": "Re-enable",
+  "@adminUserEnable": {
+    "description": "Nút kích hoạt lại tài khoản"
+  },
+  "adminUserDisableTitle": "Disable this account?",
+  "@adminUserDisableTitle": {
+    "description": "Tiêu đề xác nhận vô hiệu hóa"
+  },
+  "adminUserDisableMessage": "{email} will no longer be able to sign in; open sessions expire within 15 minutes.",
+  "@adminUserDisableMessage": {
+    "description": "Nội dung xác nhận vô hiệu hóa",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminUserEnableTitle": "Re-enable this account?",
+  "@adminUserEnableTitle": {
+    "description": "Tiêu đề xác nhận kích hoạt lại"
+  },
+  "adminUserEnableMessage": "{email} will be able to sign in again.",
+  "@adminUserEnableMessage": {
+    "description": "Nội dung xác nhận kích hoạt lại",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminRoleAdmin": "Admin",
+  "@adminRoleAdmin": {
+    "description": "Vai trò admin"
+  },
+  "adminRoleLearner": "Learner",
+  "@adminRoleLearner": {
+    "description": "Vai trò người học"
+  },
+  "adminUserCreated": "Created {date}",
+  "@adminUserCreated": {
+    "description": "Thời điểm tạo tài khoản",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminLogsEmpty": "No actions recorded yet.",
+  "@adminLogsEmpty": {
+    "description": "Nhật ký trống"
+  },
+  "adminLogsSystem": "System",
+  "@adminLogsSystem": {
+    "description": "Người thực hiện là hệ thống (lệnh vận hành)"
+  },
+  "adminLogsBy": "by {actor}",
+  "@adminLogsBy": {
+    "description": "Người thực hiện hành động",
+    "placeholders": {
+      "actor": {
+        "type": "String"
+      }
+    }
+  },
+  "adminLogsDiffNone": "No change details.",
+  "@adminLogsDiffNone": {
+    "description": "Nhật ký không có diff"
+  },
+  "profileSectionInfo": "Personal information",
+  "profileEmailCurrent": "Current email: {email}",
+  "profileDisplayNameLabel": "Display name",
+  "profileSaved": "Changes saved.",
+  "profileSectionLanguage": "Language",
+  "profileLanguageHelp": "Applies right away to the interface and the explanations. Japanese text, readings and example sentences stay the same.",
+  "profileLanguageVi": "Tiếng Việt",
+  "profileLanguageEn": "English",
+  "profileLanguageSaved": "Language changed.",
+  "profileSectionPlan": "Goal and study time",
+  "profilePlanHelp": "Change your goal, daily study time and priority skill.",
+  "profilePlanAction": "Adjust my plan",
+  "profileSectionEmail": "Change email",
+  "profileNewEmailLabel": "New email",
+  "profileCurrentPasswordLabel": "Current password",
+  "profileCurrentPasswordRequired": "Please enter your current password.",
+  "profileEmailHelp": "Enter your current password to confirm.",
+  "profileEmailAction": "Change email",
+  "profileEmailChanged": "Email changed.",
+  "profileSectionPassword": "Change password",
+  "profileNewPasswordLabel": "New password",
+  "profileConfirmPasswordLabel": "Repeat the new password",
+  "profilePasswordMismatch": "The passwords don't match.",
+  "profilePasswordHelp": "Your other sessions will be signed out; this one stays signed in.",
+  "profilePasswordAction": "Change password",
+  "profilePasswordChanged": "Password changed. Your other sessions were signed out.",
+  "profileErrorWrongPassword": "The current password is incorrect.",
+  "profileSectionDelete": "Delete account",
+  "profileDeleteHelp": "Your account is disabled right away and your learning data is permanently deleted after 30 days. Until then you can sign in again to restore it.",
+  "profileDeleteAction": "Delete account",
+  "profileDeleteConfirmTitle": "Delete your account?",
+  "profileDeleteConfirmMessage": "You will be signed out right away. Your account and all learning data will be permanently deleted after 30 days; sign in again before then to restore it.",
+  "profileDeleteDone": "Account deletion requested. Sign in again within 30 days to restore it.",
+  "restoreTitle": "Your account is scheduled for deletion",
+  "restoreMessage": "Deletion was requested for this account. You can restore it within 30 days of the request; all your learning data is kept.",
+  "restoreAction": "Restore account",
+  "restoreExpired": "More than 30 days have passed, so this account data has been deleted. Sign out and create a new account."
 }

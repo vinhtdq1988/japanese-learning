@@ -362,7 +362,7 @@ describe('/path và /today', () => {
     });
     const path = await api.get('/path', { token: user.accessToken });
     expect(path.status).toBe(200);
-    expect(path.body.totalUnits).toBe(6);
+    expect(path.body.totalUnits).toBe(14); // toàn bộ nội dung N5–N3 đã seed (người mới)
     expect(path.body.completedUnits).toBe(0);
     // Người mới: các đơn vị đầu là nền tảng (đủ tiêu đề đã bản địa hóa).
     expect(path.body.items[0].title).toBeTruthy();

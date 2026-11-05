@@ -1,0 +1,281 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "passive-causative",
+  "title": {
+    "vi": "Thể bị động, sai khiến và sai khiến bị động",
+    "en": "Passive, causative and causative-passive"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 10,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "受身 〜(ら)れる",
+      "meaning": {
+        "vi": "Bị / được làm gì (bị động)",
+        "en": "To be done ~ (passive)"
+      },
+      "explanation": {
+        "vi": "Người chịu tác động làm chủ ngữ, người gây ra hành động đi với 「に」. Nhóm 1: đổi âm cuối sang hàng あ + れる (書く → 書かれる); nhóm 2: bỏ る + られる (ほめる → ほめられる).",
+        "en": "The recipient becomes the subject and the doer takes 「に」. Group 1: あ-row + れる (書く → 書かれる); group 2: drop る + られる (ほめる → ほめられる)."
+      },
+      "examples": [
+        {
+          "ja": "先生にほめられました。",
+          "reading": "せんせいにほめられました。",
+          "translation": {
+            "vi": "Tôi được thầy khen.",
+            "en": "I was praised by my teacher."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "使役 〜(さ)せる",
+      "meaning": {
+        "vi": "Bắt / cho ai làm gì (sai khiến)",
+        "en": "To make or let someone do ~ (causative)"
+      },
+      "explanation": {
+        "vi": "Nhóm 1: あ-row + せる; nhóm 2: gốc + させる. Người được sai khiến đi với 「に」hoặc 「を」tùy ngữ cảnh.",
+        "en": "Group 1: あ-row + せる; group 2: stem + させる. The person made to act takes 「に」 or 「を」 depending on context."
+      },
+      "examples": [
+        {
+          "ja": "部長は部下に残業させました。",
+          "reading": "ぶちょうはぶかにざんぎょうさせました。",
+          "translation": {
+            "vi": "Trưởng phòng bắt cấp dưới làm thêm giờ.",
+            "en": "The manager made his subordinate work overtime."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "使役受身 〜(さ)せられる",
+      "meaning": {
+        "vi": "Bị bắt phải làm gì",
+        "en": "To be made to do ~"
+      },
+      "explanation": {
+        "vi": "Ghép sai khiến + bị động: người nói bị ép làm điều không muốn. Hình thức rút gọn nhóm 1: 〜される (読ませられる → 読まされる).",
+        "en": "Combines causative and passive: the speaker is forced to do something unwanted. Short form for group 1: 〜される (読ませられる → 読まされる)."
+      },
+      "examples": [
+        {
+          "ja": "私は毎日、母に勉強させられました。",
+          "reading": "わたしはまいにち、ははにべんきょうさせられました。",
+          "translation": {
+            "vi": "Hồi đó mỗi ngày tôi bị mẹ bắt học.",
+            "en": "I was made to study every day by my mother."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜(さ)せてください",
+      "meaning": {
+        "vi": "Xin cho phép tôi làm ~",
+        "en": "Please let me do ~"
+      },
+      "explanation": {
+        "vi": "Dạng sai khiến + 「てください」dùng để xin phép làm điều gì một cách khiêm nhường.",
+        "en": "Causative + 「てください」 humbly asks permission to do something."
+      },
+      "examples": [
+        {
+          "ja": "この仕事をやらせてください。",
+          "reading": "このしごとをやらせてください。",
+          "translation": {
+            "vi": "Xin hãy để tôi làm công việc này.",
+            "en": "Please let me do this job."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "受身 〜(ら)れる",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền dạng bị động của ほめる: 「先生に___ました。」(Tôi được thầy khen)",
+        "en": "Fill in the passive of ほめる: 「先生に___ました。」 (I was praised by my teacher)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほめられ",
+          "褒められ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! ほめる → ほめられる.",
+        "en": "Correct! ほめる → ほめられる."
+      },
+      "feedbackIncorrect": {
+        "vi": "ほめる thuộc nhóm 2: bỏ る, thêm られる.",
+        "en": "ほめる is a group 2 verb: drop る and add られる."
+      }
+    },
+    {
+      "item": "使役 〜(さ)せる",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「部長は部下を早く帰らせた」nghĩa là gì?",
+        "en": "What does 「部長は部下を早く帰らせた」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trưởng phòng cho cấp dưới về sớm",
+            "en": "The manager let his subordinates go home early"
+          },
+          {
+            "vi": "Trưởng phòng bị cấp dưới bắt về sớm",
+            "en": "The manager was made to go home early by his subordinates"
+          },
+          {
+            "vi": "Cấp dưới được trưởng phòng khen",
+            "en": "The subordinate was praised by the manager"
+          },
+          {
+            "vi": "Trưởng phòng muốn về sớm",
+            "en": "The manager wants to go home early"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 帰らせる là cho/bắt ai đó về.",
+        "en": "Correct! 帰らせる means to let or make someone go home."
+      },
+      "feedbackIncorrect": {
+        "vi": "帰らせる là dạng sai khiến: chủ ngữ (trưởng phòng) tác động lên cấp dưới.",
+        "en": "帰らせる is causative: the subject (the manager) acts on the subordinate."
+      }
+    },
+    {
+      "item": "使役受身 〜(さ)せられる",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「母に野菜を食べさせられた」người nói cảm thấy thế nào?",
+        "en": "In 「母に野菜を食べさせられた」, what is the speaker’s situation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Bị mẹ bắt ăn rau",
+            "en": "Was made to eat vegetables by mother"
+          },
+          {
+            "vi": "Mẹ được mình cho ăn rau",
+            "en": "Let mother eat vegetables"
+          },
+          {
+            "vi": "Được mẹ khen vì ăn rau",
+            "en": "Was praised by mother for eating vegetables"
+          },
+          {
+            "vi": "Tự nguyện ăn rau",
+            "en": "Ate vegetables willingly"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 〜させられる là bị ép làm điều mình không muốn.",
+        "en": "Right! 〜させられる means being forced to do something."
+      },
+      "feedbackIncorrect": {
+        "vi": "〜させられる mang nghĩa bị bắt phải làm.",
+        "en": "〜させられる means being made to do something."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép dạng động từ với ý nghĩa.",
+        "en": "Match each verb form with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "食べられる(受身)",
+            {
+              "vi": "Bị / được ăn (bị động)",
+              "en": "Be eaten (passive)"
+            }
+          ],
+          [
+            "食べさせる",
+            {
+              "vi": "Cho / bắt ai ăn",
+              "en": "Make or let someone eat"
+            }
+          ],
+          [
+            "食べさせられる",
+            {
+              "vi": "Bị bắt phải ăn",
+              "en": "Be made to eat"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "〜(さ)せてください",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「この仕事をやらせてください」là câu nói để làm gì?",
+        "en": "What is 「この仕事をやらせてください」 used for?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Xin được làm công việc này",
+            "en": "Asking permission to do this job"
+          },
+          {
+            "vi": "Nhờ người khác làm giúp",
+            "en": "Asking someone else to do it for you"
+          },
+          {
+            "vi": "Từ chối công việc",
+            "en": "Refusing the job"
+          },
+          {
+            "vi": "Cảm ơn vì được giao việc",
+            "en": "Thanking someone for the job"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 〜(さ)せてください là xin phép làm.",
+        "en": "Right! 〜(さ)せてください asks permission to do."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu này là xin phép để mình được làm.",
+        "en": "Not quite. This pattern asks permission to do it yourself."
+      }
+    }
+  ]
+}

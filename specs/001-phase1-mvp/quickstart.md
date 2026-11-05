@@ -2,7 +2,7 @@
 
 **Nhánh**: `001-phase1-mvp` | **Kế hoạch**: [plan.md](plan.md) | **Hợp đồng**: [contracts/openapi.yaml](contracts/openapi.yaml) | **Mô hình dữ liệu**: [data-model.md](data-model.md)
 
-Tài liệu này mô tả cách dựng môi trường và các kịch bản kiểm chứng đầu-cuối. Đây là hướng dẫn chạy/kiểm chứng, không chứa mã hiện thực. Các lệnh dưới đây là **lệnh dự kiến**; chúng sẽ có hiệu lực khi các task tương ứng trong `tasks.md` được hoàn thành.
+Tài liệu này mô tả cách dựng môi trường và các kịch bản kiểm chứng đầu-cuối. Đây là hướng dẫn chạy/kiểm chứng, không chứa mã hiện thực. Các lệnh dưới đây đã được chạy thử ngày 2026-11-05 (xem mục 5 để biết phần đã kiểm chứng và phần còn cần người thực hiện).
 
 ## 1. Điều kiện tiên quyết
 
@@ -31,13 +31,29 @@ flutter run -d chrome --dart-define=API_BASE_URL=http://localhost:3000/api/v1
 
 Biến môi trường chính của backend (xem `backend/.env.example`): `DATABASE_URL`, `JWT_SECRET`, `SMTP_URL`, `APP_BASE_URL`.
 
+Chạy cả hệ thống như môi trường triển khai (API + nginx/TLS), xem `backend/README.md` mục "Triển khai":
+
+```bash
+export JWT_SECRET="$(openssl rand -base64 48)"   # bắt buộc
+docker compose --profile app up -d --build        # thêm dịch vụ `api` và `web` (cần ./certs/fullchain.pem, privkey.pem)
+```
+
+Báo cáo chỉ số sản phẩm (SC-003, SC-009, SC-011): `cd backend && pnpm report:metrics` (xem `backend/src/reports/README.md`).
+
 ## 3. Chạy kiểm thử tự động
 
 ```bash
 cd backend && pnpm test            # đơn vị engine (hồ sơ đại diện) + hợp đồng + tích hợp (Testcontainers)
-cd client  && flutter test         # widget + đơn vị
-cd client  && flutter test integration_test -d chrome   # luồng P1 đầu-cuối
+cd backend && pnpm lint && pnpm typecheck && pnpm format:check
+cd client  && flutter test         # widget + đơn vị (gồm kiểm tra khóa l10n vi/en)
+cd client  && flutter analyze
+cd client  && dart run tool/check_l10n.dart             # đối chiếu khóa app_vi.arb / app_en.arb
+# luồng P1 đầu-cuối trên Chrome (cần chromedriver; `flutter test -d chrome` chưa hỗ trợ integration_test):
+cd client  && flutter drive --driver=test_driver/integration_test.dart --target=integration_test/us1_onboarding_test.dart -d chrome
+cd client  && flutter drive --driver=test_driver/integration_test.dart --target=integration_test/us2_lesson_test.dart -d chrome
 ```
+
+> **Không có Docker**: đặt `TEST_DATABASE_URL` trỏ vào một PostgreSQL 16 **dành riêng cho kiểm thử** (bị xóa sạch giữa các test), ví dụ `TEST_DATABASE_URL=postgres://postgres:postgres@localhost:5432/jl_test pnpm test`. Có thể dùng gói npm `embedded-postgres` (khởi tạo với `--encoding=UTF8 --locale=C`, đặt ngoài kho mã). Không đặt biến này thì Testcontainers cần Docker.
 
 **Kết quả mong đợi**: toàn bộ xanh. Bộ kiểm thử engine PHẢI gồm các hồ sơ: người mới/10 phút; N3/30 phút; quay lại sau khoảng nghỉ; 5 phút với nhiều bài ôn tồn đọng; placement đoán mò; liên tục điểm thấp ở một mảng; liên tục điểm cao ở một mảng; mảng yếu đã hồi phục; N2 tự khai báo; mục tiêu JLPT N1 (FR-035).
 
@@ -97,7 +113,74 @@ Mỗi kịch bản ánh xạ tới câu chuyện người dùng/tiêu chí thàn
 ### K11 – Hiệu năng (SC-010)
 > **Đã chuyển sang spec `002-performance`** cùng T115/T115a; không thực hiện và không kiểm chứng ở spec này.
 
-## 5. Dọn dẹp
+## 5. Ánh xạ kịch bản và kết quả chạy (T122)
+
+Mỗi kịch bản K1–K10 có kiểm thử tự động phía backend và/hoặc client. Các kiểm thử này chạy trong `pnpm test` / `flutter test`.
+
+| Kịch bản | Backend (`backend/tests/…`) | Client (`client/test/…`) |
+|---|---|---|
+| K1 – Đăng ký → onboarding → bài đầu | `contract/us1.test.ts`, `integration/us1-onboarding.test.ts` | `auth_screens_test.dart`, `onboarding_flow_test.dart`, `integration_test/us1_onboarding_test.dart` |
+| K2 – Kiểm tra trình độ | `contract/us1.test.ts`, `unit/placement.test.ts` | `onboarding_flow_test.dart` |
+| K3 – Bài học hằng ngày | `contract/us2.test.ts`, `integration/us2-lesson.test.ts` | `lesson_flow_test.dart`, `exercise_widgets_test.dart`, `integration_test/us2_lesson_test.dart` |
+| K4 – Ôn tập SRS | `integration/us3-review.test.ts`, `unit/srs.test.ts` | `review_flow_test.dart` |
+| K5 – Tiến độ | `contract/us4.test.ts`, `integration/us4-progress.test.ts` | `progress_screen_test.dart` |
+| K6 – Điều chỉnh kế hoạch | `contract/us5.test.ts`, `integration/us5-overrides.test.ts` | `plan_adjust_test.dart` |
+| K7 – Quản trị | `contract/us6.test.ts`, `integration/us6-admin.test.ts` | `admin_flow_test.dart`, `admin_unit_draft_test.dart` |
+| K8 – Hồ sơ, xóa tài khoản | `contract/us7.test.ts`, `integration/us7-account.test.ts` | `profile_flow_test.dart` |
+| K9 – Dùng thử | `contract/us8.test.ts`, `integration/us8-trial.test.ts` | `trial_flow_test.dart` |
+| K10 – Đồng thời | `integration/concurrency.test.ts` | `event_queue_test.dart` |
+
+**Đã chạy ngày 2026-11-05** (PostgreSQL 16 nhúng qua `TEST_DATABASE_URL`, máy không có Docker):
+
+- `backend`: `pnpm test` toàn bộ xanh; `eslint`, `prettier --check`, `tsc --noEmit` không cảnh báo.
+- `client`: `flutter analyze` không vấn đề; `flutter test` xanh (166 test); `dart run tool/check_l10n.dart` xanh (466 khóa vi/en khớp nhau).
+- Chạy thật API (`db:migrate` → `seed` → `server`, không qua test) rồi đi kịch bản bằng HTTP: K1 (đăng ký → onboarding → `/path` 14 đơn vị → `/today` 2 mục tổng 10 phút, quỹ 10), K2 (20 câu placement không lộ đáp án), K3 (phiên học, gọi lại trả đúng phiên cũ, hoàn thành), K5 (`/progress` ghi nhận 1 bài, chuỗi 1 ngày), K7 (người học gọi `/admin/*` nhận 403, admin nhận 200), K9 (nội dung dùng thử có `answerKey`; chấm placement công khai lần thứ 11 trở đi nhận 429).
+- **Thời gian đo thực tế của K1 (phía máy)**: từ lúc gửi đăng ký đến lúc có phiên học đầu tiên và bài tập đầu **≈ 0,7 giây** (đăng ký 0,42 s → onboarding 0,63 s → `/today` 0,66 s → bắt đầu phiên 0,71 s) trên máy phát triển. Đây chỉ là thời gian xử lý của hệ thống; mục tiêu SC-001 (< 5 phút) bao gồm cả thời gian người dùng đọc và nhập liệu nên cần đo với người thật ở mục 7.
+
+**Kết quả thủ công (2026-11-05)**: chủ dự án xác nhận K1–K10 trên giao diện thật, kiểm tra tương thích trình duyệt (mục 6) và kiểm thử khả dụng (mục 7) đều **đạt**. Số liệu chi tiết không được ghi lại.
+
+**Các hạng mục không thể xác nhận trong môi trường tự động** (không có trình duyệt thật và người dùng; phần thủ công ở trên đã bao phủ):
+
+- K1–K10 thao tác trên giao diện thật trong trình duyệt (bấm, đóng tab giữa chừng, hai cửa sổ cùng tài khoản, xem Mailpit).
+- `flutter drive` cho `integration_test/*` trên Chrome (máy này chưa có `chromedriver`).
+- Kiểm tra tương thích trình duyệt (mục 6) và kiểm thử khả dụng (mục 7).
+- `docker compose --profile app up --build` (máy này không có Docker): `backend/Dockerfile`, `client/Dockerfile`, `client/nginx.conf` chưa được build/chạy. Đã kiểm chứng riêng các giả định của Dockerfile: `tsc` build ra `dist/src/…`, `node dist/src/db/migrate.js` và `node dist/src/reports/run.js` chạy được khi chép thêm `*.sql`.
+
+## 6. Tương thích trình duyệt (FR-033, T120)
+
+Chạy K1–K3 trên bản build (`flutter build web --release --no-web-resources-cdn`) phục vụ qua nginx (hoặc `flutter run -d web-server`) trên từng trình duyệt desktop. Ghi `Đạt`/`Lỗi` và ghi chú. **Kết luận (2026-11-05)**: chủ dự án xác nhận K1–K3 **đạt** trên Chrome, Edge, Firefox, Safari; phiên bản/HĐH cụ thể không được ghi lại.
+
+| Trình duyệt (phiên bản) | HĐH | K1 | K2 | K3 | Ghi chú / lỗi |
+|---|---|---|---|---|---|
+| Chrome | | Chưa kiểm tra | Chưa kiểm tra | Chưa kiểm tra | |
+| Edge | | Chưa kiểm tra | Chưa kiểm tra | Chưa kiểm tra | |
+| Firefox | | Chưa kiểm tra | Chưa kiểm tra | Chưa kiểm tra | |
+| Safari | macOS | Chưa kiểm tra | Chưa kiểm tra | Chưa kiểm tra | |
+
+Phông tiếng Nhật: CanvasKit không dùng phông hệ thống và CSP chặn việc tải phông dự phòng từ gstatic, nên client đóng gói sẵn Noto Sans JP (SIL OFL) tại `client/assets/fonts/` (khai báo trong `pubspec.yaml`, giấy phép ở `OFL.txt`). Nếu chữ Nhật hiện thành ô vuông, kiểm tra phông này có trong bản build (`build/web/assets/assets/fonts/NotoSansJP.ttf`).
+
+Điểm cần chú ý riêng: CSP (`script-src 'self' 'wasm-unsafe-eval'`) không chặn việc khởi động Flutter/CanvasKit (mở console, không có lỗi `Content Security Policy`); phông tiếng Nhật hiển thị đúng; lưu trạng thái dùng thử ở `localStorage`; Safari xử lý đúng `Strict-Transport-Security` và WebAssembly.
+
+## 7. Kiểm thử khả dụng với người dùng thử nghiệm (SC-004, T121)
+
+**Mục tiêu**: ≥ 90% người tham gia hoàn thành bài học đầu tiên **mà không cần trợ giúp**.
+
+**Chuẩn bị**: 8–10 người đúng đối tượng (người đi làm, chưa quen ứng dụng), mỗi người một tài khoản mới; môi trường triển khai hoặc staging; quan sát viên chỉ ghi chép, không gợi ý.
+
+**Kịch bản giao cho người tham gia**: "Bạn muốn học tiếng Nhật mỗi ngày khoảng 10 phút. Hãy tạo tài khoản và hoàn thành bài học đầu tiên mà ứng dụng đưa ra." Không giải thích thêm.
+
+**Tiêu chí**: *hoàn thành* = làm hết các bài tập của bài đầu tiên và thấy màn hình tóm tắt; *cần trợ giúp* = người tham gia hỏi quan sát viên hoặc quan sát viên phải can thiệp. Ghi thêm thời gian từ lúc mở trang đầu đến khi xong (đối chiếu SC-001 < 5 phút), bước gây khựng và nhận xét.
+
+| Người tham gia | Hoàn thành | Cần trợ giúp | Thời gian | Bước gây khựng / nhận xét |
+|---|---|---|---|---|
+| P1 | | | | |
+| P2 | | | | |
+| … | | | | |
+| **Tổng** | …/… | …/… | trung vị … | Tỷ lệ hoàn thành không trợ giúp: …% (mục tiêu ≥ 90%) |
+
+Kết quả (2026-11-05): chủ dự án xác nhận **đạt** (đáp ứng SC-004); số người tham gia, tỷ lệ và thời gian cụ thể không được ghi lại — bảng trên giữ làm mẫu cho các đợt kiểm thử sau.
+
+## 8. Dọn dẹp
 
 ```bash
 docker compose down -v   # xóa container và dữ liệu dev

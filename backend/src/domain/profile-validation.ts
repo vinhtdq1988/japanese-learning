@@ -157,6 +157,20 @@ export const profileUpdateSchema = z.object({
 });
 export type ProfileUpdateInput = z.infer<typeof profileUpdateSchema>;
 
+// --- Mật khẩu, xóa tài khoản ---
+
+export const passwordChangeSchema = z.object({
+  currentPassword: z
+    .string({ error: 'Mật khẩu hiện tại là bắt buộc' })
+    .min(1, 'Mật khẩu hiện tại là bắt buộc'),
+  newPassword: passwordSchema,
+});
+export type PasswordChangeInput = z.infer<typeof passwordChangeSchema>;
+
+export const accountDeleteSchema = z.object({
+  password: z.string({ error: 'Mật khẩu là bắt buộc' }).min(1, 'Mật khẩu là bắt buộc'),
+});
+
 // --- Placement ---
 
 export const placementAnswersSchema = z.object({

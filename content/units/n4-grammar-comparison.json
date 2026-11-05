@@ -1,0 +1,265 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "comparison",
+  "title": {
+    "vi": "So sánh hơn và nhất",
+    "en": "Comparatives and superlatives"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "AはBより〜",
+      "meaning": {
+        "vi": "A ~ hơn B",
+        "en": "A is more ~ than B"
+      },
+      "explanation": {
+        "vi": "「より」đứng sau vật được so sánh (B). Cấu trúc: A は B より + tính từ.",
+        "en": "「より」 follows the thing compared against (B). Pattern: A は B より + adjective."
+      },
+      "examples": [
+        {
+          "ja": "電車はバスより速いです。",
+          "reading": "でんしゃはバスよりはやいです。",
+          "translation": {
+            "vi": "Tàu điện nhanh hơn xe buýt.",
+            "en": "Trains are faster than buses."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "AよりBのほうが〜",
+      "meaning": {
+        "vi": "B ~ hơn A (nhấn mạnh B)",
+        "en": "B is more ~ than A (B emphasized)"
+      },
+      "explanation": {
+        "vi": "Đảo trật tự để nhấn mạnh vật thắng thế (B): 「AよりBのほうが〜」.",
+        "en": "Reverse the order to stress the winner (B): 「AよりBのほうが〜」."
+      },
+      "examples": [
+        {
+          "ja": "私は犬より猫のほうが好きです。",
+          "reading": "わたしはいぬよりねこのほうがすきです。",
+          "translation": {
+            "vi": "Tôi thích mèo hơn chó.",
+            "en": "I like cats more than dogs."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "AとBとどちらが〜",
+      "meaning": {
+        "vi": "A và B, cái nào ~ hơn?",
+        "en": "Which is more ~, A or B?"
+      },
+      "explanation": {
+        "vi": "Dùng 「どちら」để hỏi chọn một trong hai. Trả lời: 「Bのほうが〜です」.",
+        "en": "Use 「どちら」 to ask which of two. Answer: 「Bのほうが〜です」."
+      },
+      "examples": [
+        {
+          "ja": "コーヒーと紅茶とどちらが好きですか。",
+          "reading": "コーヒーとこうちゃとどちらがすきですか。",
+          "translation": {
+            "vi": "Cà phê và trà đen, bạn thích cái nào hơn?",
+            "en": "Which do you like better, coffee or black tea?"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜の中で〜が一番〜",
+      "meaning": {
+        "vi": "Nhất trong ~",
+        "en": "The most ~ among ~"
+      },
+      "explanation": {
+        "vi": "Từ 3 đối tượng trở lên dùng 「〜の中で…が一番〜」; hỏi bằng 「何/どれ/だれ」.",
+        "en": "For three or more, use 「〜の中で…が一番〜」; ask with 「何/どれ/だれ」."
+      },
+      "examples": [
+        {
+          "ja": "果物の中でりんごが一番好きです。",
+          "reading": "くだもののなかでりんごがいちばんすきです。",
+          "translation": {
+            "vi": "Trong các loại trái cây, tôi thích táo nhất.",
+            "en": "Among fruits, I like apples the best."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "AはBより〜",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền trợ từ: 「電車はバス___速いです。」(Tàu điện nhanh hơn xe buýt)",
+        "en": "Fill in the particle: 「電車はバス___速いです。」 (Trains are faster than buses)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "より"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Vật so sánh đi với 「より」.",
+        "en": "Correct! The compared item takes 「より」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Vật được so sánh đi với 「より」.",
+        "en": "The compared item takes 「より」."
+      }
+    },
+    {
+      "item": "AとBとどちらが〜",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Câu nào là câu trả lời tự nhiên cho 「コーヒーと紅茶とどちらが好きですか」?",
+        "en": "Which is a natural answer to 「コーヒーと紅茶とどちらが好きですか」?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "紅茶のほうが好きです。",
+            "en": "紅茶のほうが好きです。"
+          },
+          {
+            "vi": "紅茶が一番です。",
+            "en": "紅茶が一番です。"
+          },
+          {
+            "vi": "紅茶より好きです。",
+            "en": "紅茶より好きです。"
+          },
+          {
+            "vi": "紅茶の中で好きです。",
+            "en": "紅茶の中で好きです。"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trả lời câu hỏi chọn một trong hai bằng 「〜のほうが」.",
+        "en": "Right! Answer a two-way question with 「〜のほうが」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Hỏi chọn một trong hai thì trả lời bằng 「〜のほうが好きです」.",
+        "en": "A two-way question is answered with 「〜のほうが好きです」."
+      }
+    },
+    {
+      "item": "〜の中で〜が一番〜",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền từ: 「果物の中で何が___好きですか。」(Trong các loại trái cây, bạn thích gì nhất?)",
+        "en": "Fill in the word: 「果物の中で何が___好きですか。」 (Among fruits, which do you like best?)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いちばん",
+          "一番"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「一番」(いちばん) nghĩa là nhất.",
+        "en": "Correct! 「一番」 (いちばん) means \"most\"."
+      },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「一番」(いちばん).",
+        "en": "The answer is 「一番」 (いちばん)."
+      }
+    },
+    {
+      "item": "AよりBのほうが〜",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「私は犬より猫のほうが好きです」thích con nào hơn?",
+        "en": "In 「私は犬より猫のほうが好きです」, which animal does the speaker prefer?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mèo",
+            "en": "Cats"
+          },
+          {
+            "vi": "Chó",
+            "en": "Dogs"
+          },
+          {
+            "vi": "Thích cả hai như nhau",
+            "en": "Likes both equally"
+          },
+          {
+            "vi": "Không thích con nào",
+            "en": "Likes neither"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vật đứng trước 「のほうが」là vật được chọn.",
+        "en": "Correct! The noun before 「のほうが」 is the one preferred."
+      },
+      "feedbackIncorrect": {
+        "vi": "Vật đứng trước 「のほうが」(猫) là vật được thích hơn.",
+        "en": "The noun before 「のほうが」 (猫) is the one preferred."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép mẫu câu với ý nghĩa.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "AはBより〜",
+            {
+              "vi": "A ~ hơn B",
+              "en": "A is more ~ than B"
+            }
+          ],
+          [
+            "AとBとどちらが〜",
+            {
+              "vi": "Hỏi chọn 1 trong 2",
+              "en": "Ask which of two"
+            }
+          ],
+          [
+            "〜の中で〜が一番〜",
+            {
+              "vi": "Nhất trong nhóm",
+              "en": "The most among a group"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    }
+  ]
+}

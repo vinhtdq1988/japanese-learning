@@ -1456,5 +1456,707 @@
   "trialPlacementBack": "Quay lại trang dùng thử",
   "@trialPlacementBack": {
     "description": "Nút quay lại trang dùng thử từ kết quả kiểm tra"
+  },
+  "adminNavUnits": "Đơn vị học",
+  "@adminNavUnits": {
+    "description": "Mục điều hướng quản trị: danh sách đơn vị học"
+  },
+  "adminNavPlacement": "Kiểm tra trình độ",
+  "@adminNavPlacement": {
+    "description": "Mục điều hướng quản trị: câu hỏi kiểm tra trình độ"
+  },
+  "adminNavUsers": "Người dùng",
+  "@adminNavUsers": {
+    "description": "Mục điều hướng quản trị: người dùng"
+  },
+  "adminNavLogs": "Nhật ký",
+  "@adminNavLogs": {
+    "description": "Mục điều hướng quản trị: nhật ký hành động"
+  },
+  "adminFilterStatus": "Trạng thái",
+  "@adminFilterStatus": {
+    "description": "Nhãn bộ lọc trạng thái đơn vị"
+  },
+  "adminFilterLevel": "Trình độ",
+  "@adminFilterLevel": {
+    "description": "Nhãn bộ lọc trình độ"
+  },
+  "adminFilterKind": "Loại",
+  "@adminFilterKind": {
+    "description": "Nhãn bộ lọc loại đơn vị"
+  },
+  "adminFilterAll": "Tất cả",
+  "@adminFilterAll": {
+    "description": "Giá trị bỏ lọc"
+  },
+  "adminStatusDraft": "Bản nháp",
+  "@adminStatusDraft": {
+    "description": "Trạng thái đơn vị: nháp"
+  },
+  "adminStatusActive": "Đang hoạt động",
+  "@adminStatusActive": {
+    "description": "Trạng thái đơn vị: đang hiển thị với người học"
+  },
+  "adminStatusInactive": "Đã vô hiệu hóa",
+  "@adminStatusInactive": {
+    "description": "Trạng thái đơn vị: đã ẩn"
+  },
+  "adminStatusActiveUser": "Hoạt động",
+  "@adminStatusActiveUser": {
+    "description": "Trạng thái tài khoản: bình thường"
+  },
+  "adminStatusDisabled": "Bị vô hiệu hóa",
+  "@adminStatusDisabled": {
+    "description": "Trạng thái tài khoản: bị admin vô hiệu hóa"
+  },
+  "adminStatusPendingDeletion": "Chờ xóa",
+  "@adminStatusPendingDeletion": {
+    "description": "Trạng thái tài khoản: chờ xóa"
+  },
+  "adminKindVocabulary": "Từ vựng",
+  "@adminKindVocabulary": {
+    "description": "Loại đơn vị: từ vựng"
+  },
+  "adminKindGrammar": "Ngữ pháp",
+  "@adminKindGrammar": {
+    "description": "Loại đơn vị: ngữ pháp"
+  },
+  "adminTierFoundation": "Nền tảng",
+  "@adminTierFoundation": {
+    "description": "Cấp đơn vị: nền tảng cho người mới"
+  },
+  "adminTierCore": "Chính",
+  "@adminTierCore": {
+    "description": "Cấp đơn vị: nội dung chính"
+  },
+  "adminGoalDailyConversation": "Giao tiếp hằng ngày",
+  "@adminGoalDailyConversation": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminGoalWork": "Công việc",
+  "@adminGoalWork": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminGoalJlpt": "JLPT",
+  "@adminGoalJlpt": {
+    "description": "Thẻ mục tiêu của đơn vị"
+  },
+  "adminUnitMinutes": "{minutes} phút",
+  "@adminUnitMinutes": {
+    "description": "Thời lượng ước tính",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "adminUnitTrial": "Dùng thử",
+  "@adminUnitTrial": {
+    "description": "Đơn vị thuộc tập dùng thử"
+  },
+  "adminUnitEdit": "Sửa",
+  "@adminUnitEdit": {
+    "description": "Nút mở trình soạn đơn vị"
+  },
+  "adminUnitActivate": "Kích hoạt",
+  "@adminUnitActivate": {
+    "description": "Nút kích hoạt đơn vị"
+  },
+  "adminUnitDeactivate": "Vô hiệu hóa",
+  "@adminUnitDeactivate": {
+    "description": "Nút vô hiệu hóa đơn vị"
+  },
+  "adminUnitsCreate": "Tạo đơn vị học",
+  "@adminUnitsCreate": {
+    "description": "Nút tạo đơn vị học"
+  },
+  "adminUnitsEmpty": "Không có đơn vị học nào khớp bộ lọc.",
+  "@adminUnitsEmpty": {
+    "description": "Danh sách đơn vị trống"
+  },
+  "adminStatusChanged": "Đã cập nhật trạng thái.",
+  "@adminStatusChanged": {
+    "description": "Thông báo đổi trạng thái thành công"
+  },
+  "adminSaved": "Đã lưu.",
+  "@adminSaved": {
+    "description": "Thông báo lưu thành công"
+  },
+  "adminActionFailedTitle": "Không thực hiện được",
+  "@adminActionFailedTitle": {
+    "description": "Tiêu đề hộp thoại lỗi thao tác quản trị"
+  },
+  "adminValidationDetails": "Các lỗi cần sửa:",
+  "@adminValidationDetails": {
+    "description": "Tiêu đề danh sách lỗi theo trường"
+  },
+  "adminLoadMore": "Tải thêm",
+  "@adminLoadMore": {
+    "description": "Nút tải trang kế tiếp"
+  },
+  "adminEditorNewTitle": "Đơn vị học mới",
+  "@adminEditorNewTitle": {
+    "description": "Tiêu đề trình soạn khi tạo mới"
+  },
+  "adminEditorEditTitle": "Sửa đơn vị học",
+  "@adminEditorEditTitle": {
+    "description": "Tiêu đề trình soạn khi sửa"
+  },
+  "adminUnitInfoHeading": "Thông tin đơn vị",
+  "@adminUnitInfoHeading": {
+    "description": "Tiêu đề phần thông tin chung"
+  },
+  "adminFieldKind": "Loại",
+  "@adminFieldKind": {
+    "description": "Ô chọn loại đơn vị"
+  },
+  "adminFieldLevel": "Trình độ",
+  "@adminFieldLevel": {
+    "description": "Ô chọn trình độ"
+  },
+  "adminFieldTier": "Cấp",
+  "@adminFieldTier": {
+    "description": "Ô chọn cấp đơn vị"
+  },
+  "adminFieldMinutes": "Thời lượng",
+  "@adminFieldMinutes": {
+    "description": "Ô chọn thời lượng"
+  },
+  "adminFieldDifficulty": "Độ khó (1–5)",
+  "@adminFieldDifficulty": {
+    "description": "Ô chọn độ khó"
+  },
+  "adminFieldSequence": "Thứ tự",
+  "@adminFieldSequence": {
+    "description": "Ô nhập thứ tự (sequence)"
+  },
+  "adminFieldTopic": "Mảng nội dung",
+  "@adminFieldTopic": {
+    "description": "Ô chọn mảng nội dung"
+  },
+  "adminFieldGoalTags": "Liên quan mục tiêu",
+  "@adminFieldGoalTags": {
+    "description": "Nhãn nhóm thẻ mục tiêu"
+  },
+  "adminFieldTitleVi": "Tiêu đề (tiếng Việt)",
+  "@adminFieldTitleVi": {
+    "description": "Ô tiêu đề tiếng Việt"
+  },
+  "adminFieldTitleEn": "Tiêu đề (English)",
+  "@adminFieldTitleEn": {
+    "description": "Ô tiêu đề tiếng Anh"
+  },
+  "adminSaveBeforeActivate": "Lưu thay đổi trước khi kích hoạt.",
+  "@adminSaveBeforeActivate": {
+    "description": "Gợi ý bên cạnh nút kích hoạt"
+  },
+  "adminItemsHeading": "Mục nội dung",
+  "@adminItemsHeading": {
+    "description": "Tiêu đề phần mục nội dung"
+  },
+  "adminItemAdd": "Thêm mục",
+  "@adminItemAdd": {
+    "description": "Nút thêm mục"
+  },
+  "adminItemTitle": "Mục {n}",
+  "@adminItemTitle": {
+    "description": "Tiêu đề thẻ mục",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminItemJapanese": "Tiếng Nhật",
+  "@adminItemJapanese": {
+    "description": "Ô chữ Nhật"
+  },
+  "adminItemReading": "Cách đọc",
+  "@adminItemReading": {
+    "description": "Ô cách đọc"
+  },
+  "adminItemMeaningVi": "Nghĩa (tiếng Việt)",
+  "@adminItemMeaningVi": {
+    "description": "Ô nghĩa tiếng Việt"
+  },
+  "adminItemMeaningEn": "Nghĩa (English)",
+  "@adminItemMeaningEn": {
+    "description": "Ô nghĩa tiếng Anh"
+  },
+  "adminItemExplanationVi": "Giải thích (tiếng Việt)",
+  "@adminItemExplanationVi": {
+    "description": "Ô giải thích tiếng Việt"
+  },
+  "adminItemExplanationEn": "Giải thích (English)",
+  "@adminItemExplanationEn": {
+    "description": "Ô giải thích tiếng Anh"
+  },
+  "adminExamplesHeading": "Ví dụ",
+  "@adminExamplesHeading": {
+    "description": "Tiêu đề phần ví dụ"
+  },
+  "adminExampleAdd": "Thêm ví dụ",
+  "@adminExampleAdd": {
+    "description": "Nút thêm ví dụ"
+  },
+  "adminExampleJa": "Câu ví dụ (tiếng Nhật)",
+  "@adminExampleJa": {
+    "description": "Ô câu ví dụ"
+  },
+  "adminExampleReading": "Cách đọc câu ví dụ",
+  "@adminExampleReading": {
+    "description": "Ô cách đọc câu ví dụ"
+  },
+  "adminExampleTranslationVi": "Dịch (tiếng Việt)",
+  "@adminExampleTranslationVi": {
+    "description": "Ô dịch tiếng Việt"
+  },
+  "adminExampleTranslationEn": "Dịch (English)",
+  "@adminExampleTranslationEn": {
+    "description": "Ô dịch tiếng Anh"
+  },
+  "adminElementActive": "Hiển thị với người học",
+  "@adminElementActive": {
+    "description": "Công tắc hiển thị của mục/bài tập đã có"
+  },
+  "adminRemoveNew": "Bỏ",
+  "@adminRemoveNew": {
+    "description": "Nút bỏ phần tử mới hoặc dòng"
+  },
+  "adminExercisesHeading": "Bài tập",
+  "@adminExercisesHeading": {
+    "description": "Tiêu đề phần bài tập"
+  },
+  "adminExerciseAdd": "Thêm bài tập",
+  "@adminExerciseAdd": {
+    "description": "Nút thêm bài tập"
+  },
+  "adminExerciseTitle": "Bài tập {n}",
+  "@adminExerciseTitle": {
+    "description": "Tiêu đề thẻ bài tập",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminExerciseType": "Loại bài tập",
+  "@adminExerciseType": {
+    "description": "Ô chọn loại bài tập"
+  },
+  "adminExerciseTypeMultipleChoice": "Trắc nghiệm",
+  "@adminExerciseTypeMultipleChoice": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseTypeMatching": "Ghép cặp",
+  "@adminExerciseTypeMatching": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseTypeFill": "Điền chỗ trống",
+  "@adminExerciseTypeFill": {
+    "description": "Loại bài tập"
+  },
+  "adminExerciseItem": "Kiểm tra mục",
+  "@adminExerciseItem": {
+    "description": "Ô chọn mục mà bài tập kiểm tra"
+  },
+  "adminExerciseNoItem": "(không gắn mục – không vào lịch ôn)",
+  "@adminExerciseNoItem": {
+    "description": "Lựa chọn không gắn mục"
+  },
+  "adminExercisePromptVi": "Câu hỏi (tiếng Việt)",
+  "@adminExercisePromptVi": {
+    "description": "Ô câu hỏi tiếng Việt"
+  },
+  "adminExercisePromptEn": "Câu hỏi (English)",
+  "@adminExercisePromptEn": {
+    "description": "Ô câu hỏi tiếng Anh"
+  },
+  "adminChoiceLabel": "Lựa chọn {n}",
+  "@adminChoiceLabel": {
+    "description": "Nhãn ô lựa chọn",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "adminChoiceAdd": "Thêm lựa chọn",
+  "@adminChoiceAdd": {
+    "description": "Nút thêm lựa chọn"
+  },
+  "adminChoiceCorrect": "Đáp án đúng",
+  "@adminChoiceCorrect": {
+    "description": "Nút đánh dấu đáp án đúng"
+  },
+  "adminPairLeft": "Vế trái",
+  "@adminPairLeft": {
+    "description": "Ô vế trái của cặp ghép"
+  },
+  "adminPairRight": "Vế phải",
+  "@adminPairRight": {
+    "description": "Ô vế phải của cặp ghép"
+  },
+  "adminPairAdd": "Thêm cặp",
+  "@adminPairAdd": {
+    "description": "Nút thêm cặp ghép"
+  },
+  "adminAnswerLabel": "Đáp án chấp nhận",
+  "@adminAnswerLabel": {
+    "description": "Ô đáp án của bài điền chỗ trống"
+  },
+  "adminAnswerAdd": "Thêm đáp án",
+  "@adminAnswerAdd": {
+    "description": "Nút thêm đáp án chấp nhận"
+  },
+  "adminFeedbackCorrectVi": "Phản hồi khi đúng (tiếng Việt)",
+  "@adminFeedbackCorrectVi": {
+    "description": "Ô phản hồi đúng"
+  },
+  "adminFeedbackCorrectEn": "Phản hồi khi đúng (English)",
+  "@adminFeedbackCorrectEn": {
+    "description": "Ô phản hồi đúng"
+  },
+  "adminFeedbackIncorrectVi": "Phản hồi khi sai (tiếng Việt)",
+  "@adminFeedbackIncorrectVi": {
+    "description": "Ô phản hồi sai"
+  },
+  "adminFeedbackIncorrectEn": "Phản hồi khi sai (English)",
+  "@adminFeedbackIncorrectEn": {
+    "description": "Ô phản hồi sai"
+  },
+  "adminPayloadRawNote": "Dữ liệu đáp án có dạng nâng cao nên được sửa dưới dạng JSON.",
+  "@adminPayloadRawNote": {
+    "description": "Ghi chú khi dùng JSON thô"
+  },
+  "adminPayloadRawLabel": "Đáp án (JSON)",
+  "@adminPayloadRawLabel": {
+    "description": "Nhãn ô JSON thô"
+  },
+  "adminPayloadInvalidJson": "JSON của đáp án không hợp lệ.",
+  "@adminPayloadInvalidJson": {
+    "description": "Thông báo JSON sai"
+  },
+  "adminSave": "Lưu đơn vị",
+  "@adminSave": {
+    "description": "Nút lưu đơn vị"
+  },
+  "adminLocalErrors": "Chọn mảng nội dung, nhập tiêu đề và chữ Nhật của mọi mục trước khi lưu.",
+  "@adminLocalErrors": {
+    "description": "Thông báo thiếu dữ liệu bắt buộc"
+  },
+  "adminPlacementCreate": "Thêm câu hỏi",
+  "@adminPlacementCreate": {
+    "description": "Nút thêm câu hỏi kiểm tra trình độ"
+  },
+  "adminPlacementEdit": "Sửa câu hỏi",
+  "@adminPlacementEdit": {
+    "description": "Nút/tiêu đề sửa câu hỏi"
+  },
+  "adminPlacementEmpty": "Chưa có câu hỏi nào.",
+  "@adminPlacementEmpty": {
+    "description": "Danh sách câu hỏi trống"
+  },
+  "adminPlacementCounts": "Đã chọn: N5 {n5}/8 · N4 {n4}/6 · N3 {n3}/6",
+  "@adminPlacementCounts": {
+    "description": "Số câu đã chọn theo trình độ",
+    "placeholders": {
+      "n5": {
+        "type": "int"
+      },
+      "n4": {
+        "type": "int"
+      },
+      "n3": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPlacementActivate": "Kích hoạt bộ đã chọn",
+  "@adminPlacementActivate": {
+    "description": "Nút kích hoạt bộ câu hỏi"
+  },
+  "adminPlacementActivateTitle": "Kích hoạt bộ 20 câu?",
+  "@adminPlacementActivateTitle": {
+    "description": "Tiêu đề xác nhận kích hoạt bộ"
+  },
+  "adminPlacementActivateMessage": "Bộ này sẽ thay thế bộ hiện hành cho các lần làm bài sau. Kết quả đã chấm trước đó không đổi.",
+  "@adminPlacementActivateMessage": {
+    "description": "Nội dung xác nhận kích hoạt bộ"
+  },
+  "adminPlacementActivated": "Đã kích hoạt bộ câu hỏi.",
+  "@adminPlacementActivated": {
+    "description": "Thông báo kích hoạt bộ thành công"
+  },
+  "adminPlacementCurrent": "Bộ hiện hành #{position}",
+  "@adminPlacementCurrent": {
+    "description": "Nhãn câu thuộc bộ hiện hành",
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPlacementCorrect": "Đáp án đúng: {choice}",
+  "@adminPlacementCorrect": {
+    "description": "Đáp án đúng của câu hỏi",
+    "placeholders": {
+      "choice": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPlacementPrompt": "Câu hỏi (tiếng Nhật)",
+  "@adminPlacementPrompt": {
+    "description": "Ô nội dung câu hỏi"
+  },
+  "adminPlacementHintVi": "Gợi ý (tiếng Việt)",
+  "@adminPlacementHintVi": {
+    "description": "Ô gợi ý tiếng Việt"
+  },
+  "adminPlacementHintEn": "Gợi ý (English)",
+  "@adminPlacementHintEn": {
+    "description": "Ô gợi ý tiếng Anh"
+  },
+  "adminPlacementIncomplete": "Chọn mảng nội dung, nhập câu hỏi và mọi lựa chọn trước khi lưu.",
+  "@adminPlacementIncomplete": {
+    "description": "Thông báo thiếu dữ liệu câu hỏi"
+  },
+  "adminUsersSearchHint": "Tìm theo email hoặc tên",
+  "@adminUsersSearchHint": {
+    "description": "Ô tìm người dùng"
+  },
+  "adminUsersSearch": "Tìm",
+  "@adminUsersSearch": {
+    "description": "Nút tìm người dùng"
+  },
+  "adminUsersEmpty": "Không có tài khoản nào khớp.",
+  "@adminUsersEmpty": {
+    "description": "Danh sách người dùng trống"
+  },
+  "adminUserDisable": "Vô hiệu hóa",
+  "@adminUserDisable": {
+    "description": "Nút vô hiệu hóa tài khoản"
+  },
+  "adminUserEnable": "Kích hoạt lại",
+  "@adminUserEnable": {
+    "description": "Nút kích hoạt lại tài khoản"
+  },
+  "adminUserDisableTitle": "Vô hiệu hóa tài khoản?",
+  "@adminUserDisableTitle": {
+    "description": "Tiêu đề xác nhận vô hiệu hóa"
+  },
+  "adminUserDisableMessage": "{email} sẽ không đăng nhập được nữa; phiên đang mở hết hạn trong tối đa 15 phút.",
+  "@adminUserDisableMessage": {
+    "description": "Nội dung xác nhận vô hiệu hóa",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminUserEnableTitle": "Kích hoạt lại tài khoản?",
+  "@adminUserEnableTitle": {
+    "description": "Tiêu đề xác nhận kích hoạt lại"
+  },
+  "adminUserEnableMessage": "{email} sẽ đăng nhập lại được.",
+  "@adminUserEnableMessage": {
+    "description": "Nội dung xác nhận kích hoạt lại",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminRoleAdmin": "Quản trị",
+  "@adminRoleAdmin": {
+    "description": "Vai trò admin"
+  },
+  "adminRoleLearner": "Người học",
+  "@adminRoleLearner": {
+    "description": "Vai trò người học"
+  },
+  "adminUserCreated": "Tạo lúc {date}",
+  "@adminUserCreated": {
+    "description": "Thời điểm tạo tài khoản",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminLogsEmpty": "Chưa có hành động nào được ghi.",
+  "@adminLogsEmpty": {
+    "description": "Nhật ký trống"
+  },
+  "adminLogsSystem": "Hệ thống",
+  "@adminLogsSystem": {
+    "description": "Người thực hiện là hệ thống (lệnh vận hành)"
+  },
+  "adminLogsBy": "bởi {actor}",
+  "@adminLogsBy": {
+    "description": "Người thực hiện hành động",
+    "placeholders": {
+      "actor": {
+        "type": "String"
+      }
+    }
+  },
+  "adminLogsDiffNone": "Không có chi tiết thay đổi.",
+  "@adminLogsDiffNone": {
+    "description": "Nhật ký không có diff"
+  },
+  "profileSectionInfo": "Thông tin cá nhân",
+  "@profileSectionInfo": {
+    "description": "Mục thông tin cá nhân trong Hồ sơ"
+  },
+  "profileEmailCurrent": "Email hiện tại: {email}",
+  "@profileEmailCurrent": {
+    "description": "Hiển thị email hiện tại",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "profileDisplayNameLabel": "Tên hiển thị",
+  "@profileDisplayNameLabel": {
+    "description": "Nhãn ô tên hiển thị"
+  },
+  "profileSaved": "Đã lưu thay đổi.",
+  "@profileSaved": {
+    "description": "Thông báo lưu hồ sơ thành công"
+  },
+  "profileSectionLanguage": "Ngôn ngữ",
+  "@profileSectionLanguage": {
+    "description": "Mục chọn ngôn ngữ"
+  },
+  "profileLanguageHelp": "Áp dụng ngay cho giao diện và nội dung giải thích. Chữ Nhật, cách đọc và câu ví dụ giữ nguyên.",
+  "@profileLanguageHelp": {
+    "description": "Giải thích việc đổi ngôn ngữ"
+  },
+  "profileLanguageVi": "Tiếng Việt",
+  "@profileLanguageVi": {
+    "description": "Tên ngôn ngữ tiếng Việt (giữ nguyên ở mọi giao diện)"
+  },
+  "profileLanguageEn": "English",
+  "@profileLanguageEn": {
+    "description": "Tên ngôn ngữ tiếng Anh (giữ nguyên ở mọi giao diện)"
+  },
+  "profileLanguageSaved": "Đã đổi ngôn ngữ.",
+  "@profileLanguageSaved": {
+    "description": "Thông báo đổi ngôn ngữ thành công"
+  },
+  "profileSectionPlan": "Mục tiêu và thời gian học",
+  "@profileSectionPlan": {
+    "description": "Mục dẫn tới điều chỉnh kế hoạch"
+  },
+  "profilePlanHelp": "Đổi mục tiêu, thời gian mỗi ngày và kỹ năng ưu tiên.",
+  "@profilePlanHelp": {
+    "description": "Giải thích mục điều chỉnh kế hoạch"
+  },
+  "profilePlanAction": "Điều chỉnh kế hoạch",
+  "@profilePlanAction": {
+    "description": "Nút mở màn hình điều chỉnh kế hoạch"
+  },
+  "profileSectionEmail": "Đổi email",
+  "@profileSectionEmail": {
+    "description": "Mục đổi email"
+  },
+  "profileNewEmailLabel": "Email mới",
+  "@profileNewEmailLabel": {
+    "description": "Nhãn ô email mới"
+  },
+  "profileCurrentPasswordLabel": "Mật khẩu hiện tại",
+  "@profileCurrentPasswordLabel": {
+    "description": "Nhãn ô mật khẩu hiện tại"
+  },
+  "profileCurrentPasswordRequired": "Vui lòng nhập mật khẩu hiện tại.",
+  "@profileCurrentPasswordRequired": {
+    "description": "Lỗi thiếu mật khẩu hiện tại"
+  },
+  "profileEmailHelp": "Cần nhập mật khẩu hiện tại để xác nhận.",
+  "@profileEmailHelp": {
+    "description": "Giải thích đổi email"
+  },
+  "profileEmailAction": "Đổi email",
+  "@profileEmailAction": {
+    "description": "Nút đổi email"
+  },
+  "profileEmailChanged": "Đã đổi email.",
+  "@profileEmailChanged": {
+    "description": "Thông báo đổi email thành công"
+  },
+  "profileSectionPassword": "Đổi mật khẩu",
+  "@profileSectionPassword": {
+    "description": "Mục đổi mật khẩu"
+  },
+  "profileNewPasswordLabel": "Mật khẩu mới",
+  "@profileNewPasswordLabel": {
+    "description": "Nhãn ô mật khẩu mới"
+  },
+  "profileConfirmPasswordLabel": "Nhập lại mật khẩu mới",
+  "@profileConfirmPasswordLabel": {
+    "description": "Nhãn ô nhập lại mật khẩu mới"
+  },
+  "profilePasswordMismatch": "Mật khẩu nhập lại không khớp.",
+  "@profilePasswordMismatch": {
+    "description": "Lỗi mật khẩu nhập lại không khớp"
+  },
+  "profilePasswordHelp": "Các phiên đăng nhập khác sẽ bị đăng xuất; phiên này vẫn được giữ.",
+  "@profilePasswordHelp": {
+    "description": "Giải thích đổi mật khẩu"
+  },
+  "profilePasswordAction": "Đổi mật khẩu",
+  "@profilePasswordAction": {
+    "description": "Nút đổi mật khẩu"
+  },
+  "profilePasswordChanged": "Đã đổi mật khẩu. Các phiên đăng nhập khác đã bị đăng xuất.",
+  "@profilePasswordChanged": {
+    "description": "Thông báo đổi mật khẩu thành công"
+  },
+  "profileErrorWrongPassword": "Mật khẩu hiện tại không đúng.",
+  "@profileErrorWrongPassword": {
+    "description": "Lỗi mật khẩu hiện tại sai"
+  },
+  "profileSectionDelete": "Xóa tài khoản",
+  "@profileSectionDelete": {
+    "description": "Mục xóa tài khoản"
+  },
+  "profileDeleteHelp": "Tài khoản bị vô hiệu hóa ngay và dữ liệu học tập bị xóa vĩnh viễn sau 30 ngày. Trong thời gian này bạn có thể đăng nhập lại để khôi phục.",
+  "@profileDeleteHelp": {
+    "description": "Giải thích xóa tài khoản"
+  },
+  "profileDeleteAction": "Xóa tài khoản",
+  "@profileDeleteAction": {
+    "description": "Nút xóa tài khoản"
+  },
+  "profileDeleteConfirmTitle": "Xóa tài khoản?",
+  "@profileDeleteConfirmTitle": {
+    "description": "Tiêu đề hộp thoại xác nhận xóa"
+  },
+  "profileDeleteConfirmMessage": "Bạn sẽ bị đăng xuất ngay. Tài khoản và toàn bộ dữ liệu học tập sẽ bị xóa vĩnh viễn sau 30 ngày; đăng nhập lại trước thời hạn để khôi phục.",
+  "@profileDeleteConfirmMessage": {
+    "description": "Nội dung hộp thoại xác nhận xóa"
+  },
+  "profileDeleteDone": "Đã yêu cầu xóa tài khoản. Đăng nhập lại trong 30 ngày để khôi phục.",
+  "@profileDeleteDone": {
+    "description": "Thông báo sau khi yêu cầu xóa"
+  },
+  "restoreTitle": "Tài khoản đang chờ xóa",
+  "@restoreTitle": {
+    "description": "Tiêu đề màn hình khôi phục"
+  },
+  "restoreMessage": "Tài khoản này đã được yêu cầu xóa. Bạn có thể khôi phục trong vòng 30 ngày kể từ lúc yêu cầu; toàn bộ dữ liệu học tập vẫn được giữ nguyên.",
+  "@restoreMessage": {
+    "description": "Lời mời khôi phục tài khoản"
+  },
+  "restoreAction": "Khôi phục tài khoản",
+  "@restoreAction": {
+    "description": "Nút khôi phục tài khoản"
+  },
+  "restoreExpired": "Đã quá 30 ngày nên dữ liệu của tài khoản này đã bị xóa. Hãy đăng xuất rồi đăng ký tài khoản mới.",
+  "@restoreExpired": {
+    "description": "Thông báo quá hạn khôi phục"
   }
 }

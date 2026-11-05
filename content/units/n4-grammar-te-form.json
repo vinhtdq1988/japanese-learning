@@ -1,0 +1,229 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "te-form",
+  "title": {
+    "vi": "Mẫu câu với thể て",
+    "en": "Sentence patterns with the て form"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 10,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜てください",
+      "meaning": {
+        "vi": "Hãy làm ~ (nhờ vả lịch sự)",
+        "en": "Please do ~"
+      },
+      "explanation": {
+        "vi": "Gắn 「ください」sau thể て của động từ để nhờ hoặc yêu cầu người khác một cách lịch sự.",
+        "en": "Attach 「ください」 to the て form of a verb to politely ask or instruct someone."
+      },
+      "examples": [
+        {
+          "ja": "ここに名前を書いてください。",
+          "reading": "ここになまえをかいてください。",
+          "translation": {
+            "vi": "Xin hãy viết tên vào đây.",
+            "en": "Please write your name here."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ています",
+      "meaning": {
+        "vi": "Đang ~; trạng thái kéo dài",
+        "en": "Be doing ~; ongoing state"
+      },
+      "explanation": {
+        "vi": "「〜ています」diễn tả hành động đang diễn ra hoặc trạng thái kéo dài (ví dụ 結婚しています: đã kết hôn).",
+        "en": "「〜ています」 expresses an action in progress or a continuing state (e.g. 結婚しています: be married)."
+      },
+      "examples": [
+        {
+          "ja": "今、電話をしています。",
+          "reading": "いま、でんわをしています。",
+          "translation": {
+            "vi": "Bây giờ tôi đang gọi điện thoại.",
+            "en": "I am on the phone right now."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜てもいいです",
+      "meaning": {
+        "vi": "Được phép làm ~",
+        "en": "It is OK to do ~"
+      },
+      "explanation": {
+        "vi": "「〜てもいいですか」dùng để xin phép, câu trả lời đồng ý là 「はい、いいです」.",
+        "en": "「〜てもいいですか」 asks for permission; agree with 「はい、いいです」."
+      },
+      "examples": [
+        {
+          "ja": "ここで写真を撮ってもいいですか。",
+          "reading": "ここでしゃしんをとってもいいですか。",
+          "translation": {
+            "vi": "Tôi chụp ảnh ở đây được không?",
+            "en": "May I take photos here?"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜てはいけません",
+      "meaning": {
+        "vi": "Không được làm ~ (cấm)",
+        "en": "Must not do ~ (prohibition)"
+      },
+      "explanation": {
+        "vi": "「〜てはいけません」diễn tả điều bị cấm theo quy định hay phép tắc.",
+        "en": "「〜てはいけません」 expresses something forbidden by rules or manners."
+      },
+      "examples": [
+        {
+          "ja": "ここでたばこを吸ってはいけません。",
+          "reading": "ここでたばこをすってはいけません。",
+          "translation": {
+            "vi": "Không được hút thuốc ở đây.",
+            "en": "You must not smoke here."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜てはいけません",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「ここで走ってはいけません」có nghĩa là gì?",
+        "en": "What does 「ここで走ってはいけません」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Không được chạy ở đây",
+            "en": "You must not run here"
+          },
+          {
+            "vi": "Được chạy ở đây",
+            "en": "You may run here"
+          },
+          {
+            "vi": "Hãy chạy ở đây",
+            "en": "Please run here"
+          },
+          {
+            "vi": "Tôi đang chạy ở đây",
+            "en": "I am running here"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 〜てはいけません là cấm đoán.",
+        "en": "Correct! 〜てはいけません is a prohibition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 〜てはいけません nghĩa là \"không được\".",
+        "en": "Not quite. 〜てはいけません means \"must not\"."
+      }
+    },
+    {
+      "item": "〜てください",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền thể て của 書く: 「ここに名前を___ください。」",
+        "en": "Fill in the て form of 書く: 「ここに名前を___ください。」"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かいて",
+          "書いて"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 書く → 書いて.",
+        "en": "Correct! 書く → 書いて."
+      },
+      "feedbackIncorrect": {
+        "vi": "Động từ 書く (nhóm く) chuyển thành 書いて.",
+        "en": "The verb 書く (く-ending) becomes 書いて."
+      }
+    },
+    {
+      "item": "〜てもいいです",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền vào chỗ trống: 「ここで写真を撮っても___ですか。」(Tôi chụp ảnh ở đây được không?)",
+        "en": "Fill in the blank: 「ここで写真を撮っても___ですか。」 (May I take photos here?)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いい",
+          "良い"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 〜てもいいですか dùng để xin phép.",
+        "en": "Correct! 〜てもいいですか asks for permission."
+      },
+      "feedbackIncorrect": {
+        "vi": "Mẫu xin phép là 「〜てもいいですか」.",
+        "en": "The permission pattern is 「〜てもいいですか」."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép mẫu câu với ý nghĩa.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜てください",
+            {
+              "vi": "Hãy làm ~",
+              "en": "Please do ~"
+            }
+          ],
+          [
+            "〜てもいいです",
+            {
+              "vi": "Được phép làm ~",
+              "en": "It is OK to do ~"
+            }
+          ],
+          [
+            "〜てはいけません",
+            {
+              "vi": "Không được làm ~",
+              "en": "Must not do ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    }
+  ]
+}

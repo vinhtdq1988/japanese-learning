@@ -37,6 +37,13 @@ abstract final class AppRoutes {
 
   // Quản trị (chỉ admin; bảo vệ thực sự ở server)
   static const String admin = '/admin';
+  static const String adminUnits = '/admin/units';
+
+  /// Soạn đơn vị mới: `/admin/units/new`; sửa: `/admin/units/<id>`.
+  static const String adminUnitNew = '/admin/units/new';
+  static const String adminPlacement = '/admin/placement';
+  static const String adminUsers = '/admin/users';
+  static const String adminLogs = '/admin/logs';
 
   /// Route công khai chính xác; mọi đường dẫn dưới [trial] cũng công khai.
   static const Set<String> publicExact = <String>{

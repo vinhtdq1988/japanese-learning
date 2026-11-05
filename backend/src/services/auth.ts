@@ -93,7 +93,7 @@ async function openSession(
   };
 }
 
-function emailConflict(existing: UserRow): AppError {
+export function emailConflict(existing: UserRow): AppError {
   return existing.status === 'pending_deletion'
     ? new AppError(
         409,
@@ -182,14 +182,17 @@ export async function refresh(deps: ServiceDeps, refreshToken: string): Promise<
   const now = deps.clock.now();
   const oldHash = sha256Hex(refreshToken);
   const session = await findAuthSessionByHash(deps.db, oldHash);
-  if (!session || session.revokedAt || session.expiresAt <= now) throw INVALID_CREDENTIALS();
+  if (!session) throw INVALID_CREDENTIALS();
 
   const user = await findUserById(deps.db, session.userId);
   if (!user) throw INVALID_CREDENTIALS();
+  // Kiểm tra trước khi xét phiên đã thu hồi: admin vô hiệu hóa tài khoản đã thu hồi mọi phiên, nhưng
+  // người giữ refresh token vẫn phải nhận 403 `ACCOUNT_DISABLED` (hợp đồng) chứ không phải 401 chung chung.
   if (user.status === 'disabled') {
     await revokeUserSessions(deps.db, user.id, now);
     throw new AppError(403, 'ACCOUNT_DISABLED', 'Tài khoản đã bị vô hiệu hóa');
   }
+  if (session.revokedAt || session.expiresAt <= now) throw INVALID_CREDENTIALS();
   if (isDeletionGraceOver(user, now)) throw INVALID_CREDENTIALS();
 
   const nextToken = generateOpaqueToken();

@@ -11,11 +11,12 @@ import { findUserById } from '../db/repositories/users.js';
 import type { ProfileUpdateInput } from '../domain/profile-validation.js';
 import { AppError, type AccountStatus, type Role } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
+import { applyEmailChange, prepareEmailChange } from './account.js';
 import type { ServiceDeps } from './deps.js';
 import { createPath, paramsFor, paramsOfPath, type PathReason } from './path.js';
 
 // Dịch vụ hồ sơ (T047, T093): đọc `GET /me` và sửa hồ sơ qua `PATCH /me`, kể cả hệ quả lên lộ trình
-// (đổi mục tiêu/trình độ sinh lộ trình mới). Đổi email do T111 bổ sung.
+// (đổi mục tiêu/trình độ sinh lộ trình mới) và đổi email (T111, cần mật khẩu hiện tại).
 
 export interface MeDto {
   id: string;
@@ -57,9 +58,6 @@ export async function getMe(deps: Pick<ServiceDeps, 'db'>, userId: string): Prom
     profile: profileToDto(profile),
   };
 }
-
-/** Trường của `PATCH /me` chưa được hiện thực (đang chờ T111). */
-const DEFERRED_FIELDS = ['email', 'currentPassword'] as const;
 
 /** Trường chỉ sửa được sau khi hoàn tất onboarding vì có hệ quả lên lộ trình/kế hoạch. */
 const PATH_FIELDS = [
@@ -124,6 +122,8 @@ function resolvePathFields(
 /**
  * `PATCH /me`: sửa hồ sơ (FR-002, FR-016, SC-006).
  * - `displayName`, `language`, `timezone`: chỉ lưu.
+ * - `email`: bắt buộc `currentPassword` đúng (401), từ chối email trùng (409 `EMAIL_TAKEN` /
+ *   `EMAIL_PENDING_DELETION`); lưu cùng giao dịch với phần còn lại.
  * - `dailyMinutes`, `prioritizedSkill`: lưu và áp dụng trực tiếp cho kế hoạch được sinh kế tiếp, KHÔNG
  *   sinh lộ trình mới (`rankUnits` đọc `prioritized_skill` từ hồ sơ).
  * - `goalType`/`targetLevel`/`targetDate` đổi giá trị → lộ trình mới `reason='goal_change'`;
@@ -137,12 +137,10 @@ export async function updateMe(
   userId: string,
   input: ProfileUpdateInput,
 ): Promise<MeDto> {
-  const unsupported = DEFERRED_FIELDS.filter((field) => input[field] !== undefined);
-  if (unsupported.length > 0) {
-    throw validationFailed(
-      Object.fromEntries(unsupported.map((f) => [f, 'Chưa hỗ trợ sửa trường này'])),
-    );
-  }
+  const emailChange =
+    input.email !== undefined
+      ? await prepareEmailChange(deps.db, userId, input.email, input.currentPassword)
+      : null;
 
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy tài khoản');
@@ -177,7 +175,9 @@ export async function updateMe(
       : null;
 
   await deps.db.transaction(async (tx) => {
-    const updated = await updateProfile(tx, userId, patch, deps.clock.now());
+    const now = deps.clock.now();
+    if (emailChange) await applyEmailChange(tx, userId, emailChange, now);
+    const updated = await updateProfile(tx, userId, patch, now);
     if (!reason) return;
     // Đổi mục tiêu giữ kết quả placement lộ trình cũ đang dùng; đổi trình độ tự khai báo thì bỏ nó.
     let placement: PlacementResultRow | null = null;

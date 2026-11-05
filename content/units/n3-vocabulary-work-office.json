@@ -1,0 +1,231 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "work-office",
+  "title": {
+    "vi": "Từ vựng công sở thường gặp",
+    "en": "Everyday workplace vocabulary"
+  },
+  "goalTags": [
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 10,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "会議",
+      "reading": "かいぎ",
+      "meaning": {
+        "vi": "Cuộc họp",
+        "en": "Meeting"
+      },
+      "examples": [
+        {
+          "ja": "午後二時から会議があります。",
+          "reading": "ごごにじからかいぎがあります。",
+          "translation": {
+            "vi": "Từ 2 giờ chiều có cuộc họp.",
+            "en": "There is a meeting from 2 p.m."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "締め切り",
+      "reading": "しめきり",
+      "meaning": {
+        "vi": "Hạn chót",
+        "en": "Deadline"
+      },
+      "examples": [
+        {
+          "ja": "報告書の締め切りは金曜日です。",
+          "reading": "ほうこくしょのしめきりはきんようびです。",
+          "translation": {
+            "vi": "Hạn nộp báo cáo là thứ Sáu.",
+            "en": "The deadline for the report is Friday."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "取引先",
+      "reading": "とりひきさき",
+      "meaning": {
+        "vi": "Đối tác, khách hàng giao dịch",
+        "en": "Business partner, client"
+      },
+      "examples": [
+        {
+          "ja": "取引先に電話します。",
+          "reading": "とりひきさきにでんわします。",
+          "translation": {
+            "vi": "Tôi gọi điện cho đối tác.",
+            "en": "I call a business partner."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "残業",
+      "reading": "ざんぎょう",
+      "meaning": {
+        "vi": "Làm thêm giờ",
+        "en": "Overtime work"
+      },
+      "examples": [
+        {
+          "ja": "今日は残業しなければなりません。",
+          "reading": "きょうはざんぎょうしなければなりません。",
+          "translation": {
+            "vi": "Hôm nay tôi phải làm thêm giờ.",
+            "en": "I have to work overtime today."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "締め切り",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「締め切り」nghĩa là gì?",
+        "en": "What does 「締め切り」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hạn chót",
+            "en": "Deadline"
+          },
+          {
+            "vi": "Cuộc họp",
+            "en": "Meeting"
+          },
+          {
+            "vi": "Tiền lương",
+            "en": "Salary"
+          },
+          {
+            "vi": "Kỳ nghỉ",
+            "en": "Vacation"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「締め切り」là hạn chót.",
+        "en": "Correct! 「締め切り」 is a deadline."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「締め切り」(しめきり) là hạn chót.",
+        "en": "Not quite. 「締め切り」 (しめきり) is a deadline."
+      }
+    },
+    {
+      "item": "残業",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「今日は残業です」người nói sẽ làm gì?",
+        "en": "In 「今日は残業です」, what will the speaker do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Làm việc quá giờ quy định",
+            "en": "Work beyond regular hours"
+          },
+          {
+            "vi": "Nghỉ làm cả ngày",
+            "en": "Take the day off"
+          },
+          {
+            "vi": "Đi công tác",
+            "en": "Go on a business trip"
+          },
+          {
+            "vi": "Đến muộn",
+            "en": "Arrive late"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 残業 là làm thêm giờ.",
+        "en": "Right! 残業 is overtime work."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 残業 là làm việc ngoài giờ.",
+        "en": "Not quite. 残業 is working outside regular hours."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép từ với nghĩa của nó.",
+        "en": "Match each word with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "会議",
+            {
+              "vi": "Cuộc họp",
+              "en": "Meeting"
+            }
+          ],
+          [
+            "取引先",
+            {
+              "vi": "Đối tác, khách hàng",
+              "en": "Business partner"
+            }
+          ],
+          [
+            "残業",
+            {
+              "vi": "Làm thêm giờ",
+              "en": "Overtime"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "会議",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền bằng hiragana: 「午後二時から___があります。」(Từ 2 giờ chiều có cuộc họp)",
+        "en": "Fill in with hiragana: 「午後二時から___があります。」 (There is a meeting from 2 p.m.)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かいぎ",
+          "会議"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「会議」(かいぎ)",
+        "en": "Correct! 「会議」 (かいぎ)"
+      },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「かいぎ」.",
+        "en": "The answer is 「かいぎ」."
+      }
+    }
+  ]
+}

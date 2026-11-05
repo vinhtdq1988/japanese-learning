@@ -1,0 +1,232 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "health-body",
+  "title": {
+    "vi": "Khi không khỏe",
+    "en": "When you feel unwell"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "熱",
+      "reading": "ねつ",
+      "meaning": {
+        "vi": "Sốt; nhiệt độ",
+        "en": "Fever; heat"
+      },
+      "examples": [
+        {
+          "ja": "熱があるので、今日は休みます。",
+          "reading": "ねつがあるので、きょうはやすみます。",
+          "translation": {
+            "vi": "Vì bị sốt nên hôm nay tôi nghỉ.",
+            "en": "I have a fever, so I will take today off."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "薬",
+      "reading": "くすり",
+      "meaning": {
+        "vi": "Thuốc",
+        "en": "Medicine"
+      },
+      "examples": [
+        {
+          "ja": "食事のあとで薬を飲みます。",
+          "reading": "しょくじのあとでくすりをのみます。",
+          "translation": {
+            "vi": "Sau bữa ăn tôi uống thuốc.",
+            "en": "I take medicine after meals."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "怪我",
+      "reading": "けが",
+      "meaning": {
+        "vi": "Vết thương, chấn thương",
+        "en": "Injury"
+      },
+      "examples": [
+        {
+          "ja": "転んで怪我をしました。",
+          "reading": "ころんでけがをしました。",
+          "translation": {
+            "vi": "Tôi bị ngã và bị thương.",
+            "en": "I fell and got hurt."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "風邪",
+      "reading": "かぜ",
+      "meaning": {
+        "vi": "Cảm lạnh",
+        "en": "Cold (illness)"
+      },
+      "examples": [
+        {
+          "ja": "風邪をひいて、頭が痛いです。",
+          "reading": "かぜをひいて、あたまがいたいです。",
+          "translation": {
+            "vi": "Tôi bị cảm và đau đầu.",
+            "en": "I caught a cold and have a headache."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "風邪",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「風邪をひきました」nghĩa là gì?",
+        "en": "What does 「風邪をひきました」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tôi bị cảm",
+            "en": "I caught a cold"
+          },
+          {
+            "vi": "Tôi bị gãy tay",
+            "en": "I broke my arm"
+          },
+          {
+            "vi": "Tôi đi bác sĩ",
+            "en": "I went to the doctor"
+          },
+          {
+            "vi": "Tôi hết sốt",
+            "en": "My fever is gone"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 風邪をひく là bị cảm.",
+        "en": "Correct! 風邪をひく means to catch a cold."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「風邪をひく」là bị cảm.",
+        "en": "Not quite. 「風邪をひく」 means to catch a cold."
+      }
+    },
+    {
+      "item": "薬",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「食事のあとで___を飲みます」điền từ nào cho hợp nghĩa?",
+        "en": "Which word fits 「食事のあとで___を飲みます」?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "薬 (thuốc)",
+            "en": "薬 (medicine)"
+          },
+          {
+            "vi": "怪我 (vết thương)",
+            "en": "怪我 (injury)"
+          },
+          {
+            "vi": "熱 (sốt)",
+            "en": "熱 (fever)"
+          },
+          {
+            "vi": "空港 (sân bay)",
+            "en": "空港 (airport)"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng, người ta 薬を飲みます (uống thuốc).",
+        "en": "Right, you 薬を飲みます (take medicine)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thứ ta uống sau bữa ăn là 薬.",
+        "en": "Not quite. What you take after meals is 薬."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép từ với nghĩa của nó.",
+        "en": "Match each word with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "熱",
+            {
+              "vi": "Sốt",
+              "en": "Fever"
+            }
+          ],
+          [
+            "怪我",
+            {
+              "vi": "Vết thương",
+              "en": "Injury"
+            }
+          ],
+          [
+            "薬",
+            {
+              "vi": "Thuốc",
+              "en": "Medicine"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "風邪",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền bằng hiragana: 「___をひきました。」(Tôi bị cảm)",
+        "en": "Fill in with hiragana: 「___をひきました。」 (I caught a cold)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かぜ",
+          "風邪"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「風邪」(かぜ)",
+        "en": "Correct! 「風邪」 (かぜ)"
+      },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「かぜ」.",
+        "en": "The answer is 「かぜ」."
+      }
+    }
+  ]
+}

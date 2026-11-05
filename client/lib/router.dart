@@ -3,7 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import 'data/session_controller.dart';
-import 'l10n/app_localizations.dart';
+import 'presentation/admin/admin_logs_screen.dart';
+import 'presentation/admin/admin_placement_screen.dart';
+import 'presentation/admin/admin_unit_editor_screen.dart';
+import 'presentation/admin/admin_units_screen.dart';
+import 'presentation/admin/admin_users_screen.dart';
 import 'presentation/auth/forgot_password_screen.dart';
 import 'presentation/auth/login_screen.dart';
 import 'presentation/auth/register_screen.dart';
@@ -14,8 +18,9 @@ import 'presentation/onboarding/onboarding_screen.dart';
 import 'presentation/path/path_screen.dart';
 import 'presentation/path/plan_adjust_screen.dart';
 import 'presentation/placement/placement_screen.dart';
+import 'presentation/profile/profile_screen.dart';
+import 'presentation/profile/restore_account_screen.dart';
 import 'presentation/progress/progress_screen.dart';
-import 'presentation/shared/page_frame.dart';
 import 'presentation/shared/state_views.dart';
 import 'presentation/today/today_screen.dart';
 import 'presentation/trial/trial_account_required_screen.dart';
@@ -137,10 +142,9 @@ final routerProvider = Provider<GoRouter>((ref) {
           ),
         ],
       ),
-      // Các màn hình còn lại dưới đây là khung tạm; mỗi câu chuyện thay bằng màn hình thật ở task tương ứng.
       GoRoute(
         path: AppRoutes.restoreAccount,
-        builder: (_, __) => const _Placeholder(titleOf: _appTitle),
+        builder: (_, __) => const RestoreAccountScreen(),
       ),
       GoRoute(
         path: AppRoutes.onboarding,
@@ -178,42 +182,40 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.profile,
-        builder: (_, __) => const _Placeholder(titleOf: _profile),
+        builder: (_, __) => const ProfileScreen(),
       ),
+      // Quản trị (T108): chỉ admin (guard ở `resolveRedirect`; bảo vệ thực sự ở server).
       GoRoute(
         path: AppRoutes.admin,
-        builder: (_, __) => const _Placeholder(titleOf: _admin),
+        redirect: (_, GoRouterState state) =>
+            state.uri.path == AppRoutes.admin ? AppRoutes.adminUnits : null,
+        builder: (_, __) => const AdminUnitsScreen(),
         routes: <RouteBase>[
           GoRoute(
-            path: ':section',
-            builder: (_, __) => const _Placeholder(titleOf: _admin),
+            path: 'units',
+            builder: (_, __) => const AdminUnitsScreen(),
+            routes: <RouteBase>[
+              // `new` đặt trước `:unitId` để không bị coi là một id.
+              GoRoute(
+                path: 'new',
+                builder: (_, __) => const AdminUnitEditorScreen(),
+              ),
+              GoRoute(
+                path: ':unitId',
+                builder: (_, GoRouterState state) => AdminUnitEditorScreen(
+                  unitId: state.pathParameters['unitId'],
+                ),
+              ),
+            ],
           ),
+          GoRoute(
+            path: 'placement',
+            builder: (_, __) => const AdminPlacementScreen(),
+          ),
+          GoRoute(path: 'users', builder: (_, __) => const AdminUsersScreen()),
+          GoRoute(path: 'logs', builder: (_, __) => const AdminLogsScreen()),
         ],
       ),
     ],
   );
 });
-
-String _appTitle(AppLocalizations l) => l.appTitle;
-String _profile(AppLocalizations l) => l.navProfile;
-String _admin(AppLocalizations l) => l.navAdmin;
-
-/// Màn hình tạm cho route chưa được hiện thực.
-class _Placeholder extends StatelessWidget {
-  const _Placeholder({required this.titleOf});
-
-  final String Function(AppLocalizations) titleOf;
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    return PageFrame(
-      title: titleOf(l10n),
-      child: EmptyView(
-        icon: Icons.construction_outlined,
-        title: titleOf(l10n),
-        message: l10n.screenUnderConstruction,
-      ),
-    );
-  }
-}

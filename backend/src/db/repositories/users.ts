@@ -1,4 +1,4 @@
-import { and, eq, gt, isNull, ne } from 'drizzle-orm';
+import { and, eq, gt, isNull, lte, ne } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import { authSessions, learningProfiles, passwordResetTokens, users } from '../schema.js';
 import type { Language } from '../../domain/types.js';
@@ -66,6 +66,55 @@ export async function setPasswordHash(
   now: Date,
 ): Promise<void> {
   await db.update(users).set({ passwordHash, updatedAt: now }).where(eq(users.id, userId));
+}
+
+export async function setEmail(
+  db: DbExecutor,
+  userId: string,
+  email: string,
+  now: Date,
+): Promise<void> {
+  await db.update(users).set({ email, updatedAt: now }).where(eq(users.id, userId));
+}
+
+// --- Xóa / khôi phục tài khoản (FR-003) ---
+
+/** Đặt tài khoản `active` sang `pending_deletion`; trả false nếu tài khoản không còn ở trạng thái `active`. */
+export async function markPendingDeletion(
+  db: DbExecutor,
+  userId: string,
+  now: Date,
+): Promise<boolean> {
+  const rows = await db
+    .update(users)
+    .set({ status: 'pending_deletion', deletionRequestedAt: now, updatedAt: now })
+    .where(and(eq(users.id, userId), eq(users.status, 'active')))
+    .returning({ id: users.id });
+  return rows.length > 0;
+}
+
+/** Đưa tài khoản `pending_deletion` về `active`, xóa mốc yêu cầu xóa. */
+export async function restoreFromPendingDeletion(
+  db: DbExecutor,
+  userId: string,
+  now: Date,
+): Promise<void> {
+  await db
+    .update(users)
+    .set({ status: 'active', deletionRequestedAt: null, updatedAt: now })
+    .where(and(eq(users.id, userId), eq(users.status, 'pending_deletion')));
+}
+
+/**
+ * Xóa cứng mọi tài khoản `pending_deletion` có `deletion_requested_at <= cutoff`. Mọi bảng dữ liệu cá
+ * nhân tham chiếu `users` bằng `ON DELETE CASCADE` nên bị xóa theo (data-model §4). Trả số tài khoản đã xóa.
+ */
+export async function deleteExpiredPendingUsers(db: DbExecutor, cutoff: Date): Promise<number> {
+  const rows = await db
+    .delete(users)
+    .where(and(eq(users.status, 'pending_deletion'), lte(users.deletionRequestedAt, cutoff)))
+    .returning({ id: users.id });
+  return rows.length;
 }
 
 // --- Phiên đăng nhập ---

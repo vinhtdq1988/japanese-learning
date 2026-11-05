@@ -225,19 +225,25 @@ describe('chuỗi ngày học (R11)', () => {
 });
 
 describe('tiến độ mục tiêu (FR-028)', () => {
+  /** Số đơn vị `active` trong khoảng trình độ của người mới (N5–N3: toàn bộ nội dung đã seed). */
+  const activeUnits = async (): Promise<number> =>
+    (await query(ctx, `SELECT count(*)::int AS n FROM learning_units WHERE status = 'active'`))[0]
+      .n;
+
   it('tỷ lệ hoàn thành theo đơn vị `active` trong khoảng trình độ; đúng/chậm tiến độ theo mốc', async () => {
-    const learner = await onboardedLearner(api, ctx, { targetDate: '2026-01-25' });
+    // Mốc 54 ngày: đủ cho toàn bộ nội dung N5–N3 ở quỹ 10 phút/ngày (40% dành cho bài mới).
+    const learner = await onboardedLearner(api, ctx, { targetDate: '2026-02-28' });
+    const total = await activeUnits();
     const start = await progressOf(learner);
     expect(start.goal).toMatchObject({
       completionRatio: 0,
       onTrack: true,
-      targetDate: '2026-01-25',
+      targetDate: '2026-02-28',
     });
 
     await studyFirstItem(learner);
     const after = await progressOf(learner);
-    // Seed N5 có đúng 6 đơn vị đang hoạt động.
-    expect(after.goal.completionRatio).toBeCloseTo(1 / 6, 3);
+    expect(after.goal.completionRatio).toBeCloseTo(1 / total, 3);
     expect(after.goal.onTrack).toBe(true);
 
     // Mốc gần (4 ngày) không đủ cho phần còn lại → chậm tiến độ; số liệu đã học không đổi.
@@ -248,7 +254,7 @@ describe('tiến độ mục tiêu (FR-028)', () => {
     expect(tight.status).toBe(200);
     const late = await progressOf(learner);
     expect(late.goal).toMatchObject({ onTrack: false, targetDate: '2026-01-09' });
-    expect(late.goal.completionRatio).toBeCloseTo(1 / 6, 3);
+    expect(late.goal.completionRatio).toBeCloseTo(1 / total, 3);
     expect(late.lessonsCompleted).toBe(1);
 
     // Bỏ mốc → không đánh giá đúng/chậm tiến độ.
@@ -265,7 +271,10 @@ describe('tiến độ mục tiêu (FR-028)', () => {
       body: { mastered: true },
     });
     expect(marked.status).toBe(200);
-    expect((await progressOf(learner)).goal.completionRatio).toBeCloseTo(1 / 6, 3);
+    expect((await progressOf(learner)).goal.completionRatio).toBeCloseTo(
+      1 / (await activeUnits()),
+      3,
+    );
   });
 
   it('đơn vị bị admin vô hiệu hóa không tính vào tiến độ mục tiêu', async () => {
@@ -278,7 +287,8 @@ describe('tiến độ mục tiêu (FR-028)', () => {
     ctx.app.deps.contentCache.invalidate();
     try {
       await studyFirstItem(learner);
-      const total = 5; // 6 đơn vị seed trừ 1 đơn vị đã vô hiệu hóa
+      const total = await activeUnits(); // đã trừ đơn vị vừa vô hiệu hóa
+      expect(total).toBeGreaterThanOrEqual(5);
       expect((await progressOf(learner)).goal.completionRatio).toBeCloseTo(1 / total, 3);
     } finally {
       await query(ctx, `UPDATE learning_units SET status = 'active' WHERE id = $1`, [unit.id]);

@@ -1,0 +1,227 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "conditionals-reason",
+  "title": {
+    "vi": "Điều kiện và lý do",
+    "en": "Conditions and reasons"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "work",
+    "jlpt"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ば",
+      "meaning": {
+        "vi": "Nếu ~ (điều kiện)",
+        "en": "If ~ (condition)"
+      },
+      "explanation": {
+        "vi": "Tính từ い: bỏ い + ければ; động từ nhóm 1: đổi sang hàng え + ば (行く → 行けば). Vế sau thường là kết quả hoặc lời khuyên.",
+        "en": "い-adjectives: drop い + ければ; group 1 verbs: え-row + ば (行く → 行けば). The main clause is usually a result or advice."
+      },
+      "examples": [
+        {
+          "ja": "安ければ、買います。",
+          "reading": "やすければ、かいます。",
+          "translation": {
+            "vi": "Nếu rẻ thì tôi sẽ mua.",
+            "en": "If it is cheap, I will buy it."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜たら",
+      "meaning": {
+        "vi": "Nếu / sau khi ~",
+        "en": "If / when / after ~"
+      },
+      "explanation": {
+        "vi": "Dạng た + ら. Dùng cho giả định lẫn \"sau khi xong thì…\"; ít bị hạn chế về vế sau hơn 〜ば.",
+        "en": "た-form + ら. Used for both hypotheticals and \"once ~ is done\"; fewer restrictions on the main clause than 〜ば."
+      },
+      "examples": [
+        {
+          "ja": "雨が降ったら、行きません。",
+          "reading": "あめがふったら、いきません。",
+          "translation": {
+            "vi": "Nếu trời mưa thì tôi sẽ không đi.",
+            "en": "If it rains, I will not go."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ので",
+      "meaning": {
+        "vi": "Vì ~ (lý do khách quan)",
+        "en": "Because ~ (objective reason)"
+      },
+      "explanation": {
+        "vi": "「ので」nêu lý do một cách mềm mỏng, thường dùng khi xin phép, xin lỗi.",
+        "en": "「ので」 gives a reason in a softer, more objective tone, common in requests and apologies."
+      },
+      "examples": [
+        {
+          "ja": "忙しいので、行けません。",
+          "reading": "いそがしいので、いけません。",
+          "translation": {
+            "vi": "Vì bận nên tôi không đi được.",
+            "en": "I am busy, so I cannot go."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "〜ために",
+      "meaning": {
+        "vi": "Vì / để ~",
+        "en": "For / in order to ~"
+      },
+      "explanation": {
+        "vi": "Chỉ mục đích (động từ nguyên dạng + ために) hoặc nguyên nhân/lợi ích (danh từ + のために).",
+        "en": "Shows purpose (dictionary-form verb + ために) or benefit/cause (noun + のために)."
+      },
+      "examples": [
+        {
+          "ja": "健康のために、毎日歩きます。",
+          "reading": "けんこうのために、まいにちあるきます。",
+          "translation": {
+            "vi": "Vì sức khỏe, mỗi ngày tôi đi bộ.",
+            "en": "For my health, I walk every day."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜たら",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền phần còn thiếu: 「雨が降___、試合は中止です。」(Nếu trời mưa thì trận đấu bị hủy)",
+        "en": "Fill in the blank: 「雨が降___、試合は中止です。」 (If it rains, the match is cancelled)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ったら"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 降る → 降ったら.",
+        "en": "Correct! 降る → 降ったら."
+      },
+      "feedbackIncorrect": {
+        "vi": "降る → た形 降った + ら = 降ったら.",
+        "en": "降る → た-form 降った + ら = 降ったら."
+      }
+    },
+    {
+      "item": "〜ば",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền phần còn thiếu: 「安け___、買います。」(Nếu rẻ thì tôi mua)",
+        "en": "Fill in the blank: 「安け___、買います。」 (If it is cheap, I will buy it)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "れば"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 安い → 安ければ.",
+        "en": "Correct! 安い → 安ければ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Tính từ い: bỏ い, thêm ければ → 安ければ.",
+        "en": "い-adjective: drop い and add ければ → 安ければ."
+      }
+    },
+    {
+      "item": "〜ので",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Câu nào dùng 「ので」đúng để nêu lý do xin nghỉ?",
+        "en": "Which sentence correctly uses 「ので」 to give a reason for taking leave?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "熱があるので、休みます。",
+            "en": "熱があるので、休みます。"
+          },
+          {
+            "vi": "熱があるのに、休みます。",
+            "en": "熱があるのに、休みます。"
+          },
+          {
+            "vi": "熱があっても、休みます。",
+            "en": "熱があっても、休みます。"
+          },
+          {
+            "vi": "熱があるなら、休みます。",
+            "en": "熱があるなら、休みます。"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「ので」nêu lý do: vì bị sốt nên nghỉ.",
+        "en": "Right! 「ので」 gives the reason: I have a fever, so I rest."
+      },
+      "feedbackIncorrect": {
+        "vi": "「のに」là \"mặc dù\", 「ても」là \"dù cho\"; lý do dùng 「ので」.",
+        "en": "「のに」 means \"although\" and 「ても」 \"even if\"; use 「ので」 for a reason."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép mẫu câu với ý nghĩa.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ば",
+            {
+              "vi": "Nếu ~",
+              "en": "If ~"
+            }
+          ],
+          [
+            "〜ので",
+            {
+              "vi": "Vì ~ (lý do)",
+              "en": "Because ~"
+            }
+          ],
+          [
+            "〜ために",
+            {
+              "vi": "Vì / để ~",
+              "en": "For / in order to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    }
+  ]
+}

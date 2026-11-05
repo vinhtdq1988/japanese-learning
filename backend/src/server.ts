@@ -2,7 +2,9 @@ import { buildApp } from './app.js';
 import { registerApiRoutes } from './api/routes.js';
 import { loadConfig, loadDotEnv } from './config.js';
 import { createDb } from './db/client.js';
+import { systemClock } from './engine/clock.js';
 import { JobRunner } from './jobs/boss.js';
+import { createPurgeDeletedAccountsJob } from './jobs/purge-deleted-accounts.js';
 import { createSendEmailJob } from './jobs/send-email.js';
 import { SmtpEmailSender } from './services/email.js';
 
@@ -14,8 +16,10 @@ const config = loadConfig();
 const { db, close: closeDb } = createDb(config.DATABASE_URL);
 const jobs = new JobRunner(config.DATABASE_URL);
 const emailSender = new SmtpEmailSender(config.SMTP_URL);
-// Job xóa tài khoản quá hạn (T112) sẽ đăng ký thêm tại đây khi được hiện thực.
-await jobs.start([createSendEmailJob({ config, emailSender })]);
+await jobs.start([
+  createSendEmailJob({ config, emailSender }),
+  createPurgeDeletedAccountsJob({ db, clock: systemClock }),
+]);
 
 const app = await buildApp(
   { config, db, emailSender, jobQueue: jobs },

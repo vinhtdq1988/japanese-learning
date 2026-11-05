@@ -17,7 +17,12 @@ export const TRIAL_METRICS = [
 
 export type TrialMetric = (typeof TRIAL_METRICS)[number];
 
-const ALLOWED = new Set<string>(TRIAL_METRICS);
+/** Metric của vòng đời tài khoản: số tài khoản bị xóa cứng sau 30 ngày chờ (T112, FR-003). */
+export const ACCOUNT_METRICS = ['accounts_purged'] as const;
+
+export type AccountMetric = (typeof ACCOUNT_METRICS)[number];
+
+const ALLOWED = new Set<string>([...TRIAL_METRICS, ...ACCOUNT_METRICS]);
 
 /** Metric của kết quả placement dùng thử theo mức ước tính (`none` hoặc một mức nội dung). */
 export function placementLevelMetric(level: 'none' | (typeof CONTENT_LEVELS)[number]): TrialMetric {

@@ -1,0 +1,14 @@
+# Ngữ cảnh build của backend/Dockerfile là thư mục gốc kho mã: loại bỏ những gì image không cần.
+.git
+.claude
+.specify
+specs
+client
+**/node_modules
+**/dist
+**/coverage
+**/*.log
+**/.env
+**/.env.*
+!**/.env.example
+certs

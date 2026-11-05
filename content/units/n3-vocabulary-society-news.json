@@ -1,0 +1,231 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "society-news",
+  "title": {
+    "vi": "Từ vựng đọc tin tức",
+    "en": "Vocabulary for reading the news"
+  },
+  "goalTags": [
+    "daily_conversation",
+    "jlpt"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 20,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "事故",
+      "reading": "じこ",
+      "meaning": {
+        "vi": "Tai nạn",
+        "en": "Accident"
+      },
+      "examples": [
+        {
+          "ja": "高速道路で事故がありました。",
+          "reading": "こうそくどうろでじこがありました。",
+          "translation": {
+            "vi": "Đã có tai nạn trên đường cao tốc.",
+            "en": "There was an accident on the expressway."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "景気",
+      "reading": "けいき",
+      "meaning": {
+        "vi": "Tình hình kinh tế",
+        "en": "State of the economy"
+      },
+      "examples": [
+        {
+          "ja": "景気が良くなっています。",
+          "reading": "けいきがよくなっています。",
+          "translation": {
+            "vi": "Kinh tế đang tốt lên.",
+            "en": "The economy is getting better."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "政府",
+      "reading": "せいふ",
+      "meaning": {
+        "vi": "Chính phủ",
+        "en": "Government"
+      },
+      "examples": [
+        {
+          "ja": "政府は新しい政策を発表しました。",
+          "reading": "せいふはあたらしいせいさくをはっぴょうしました。",
+          "translation": {
+            "vi": "Chính phủ đã công bố chính sách mới.",
+            "en": "The government announced a new policy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "調査",
+      "reading": "ちょうさ",
+      "meaning": {
+        "vi": "Khảo sát, điều tra",
+        "en": "Survey, investigation"
+      },
+      "examples": [
+        {
+          "ja": "調査の結果が発表されました。",
+          "reading": "ちょうさのけっかがはっぴょうされました。",
+          "translation": {
+            "vi": "Kết quả khảo sát đã được công bố.",
+            "en": "The survey results were announced."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "景気",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「景気がいい」nói về điều gì?",
+        "en": "What is 「景気がいい」 talking about?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tình hình kinh tế tốt",
+            "en": "The economy is good"
+          },
+          {
+            "vi": "Thời tiết đẹp",
+            "en": "The weather is nice"
+          },
+          {
+            "vi": "Sức khỏe tốt",
+            "en": "Good health"
+          },
+          {
+            "vi": "Giao thông thông thoáng",
+            "en": "Traffic is smooth"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 景気 là tình hình kinh tế.",
+        "en": "Correct! 景気 is the state of the economy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 景気 (けいき) là tình hình kinh tế.",
+        "en": "Not quite. 景気 (けいき) is the state of the economy."
+      }
+    },
+    {
+      "item": "政府",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「政府」là gì?",
+        "en": "What is 「政府」?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chính phủ",
+            "en": "Government"
+          },
+          {
+            "vi": "Công ty",
+            "en": "Company"
+          },
+          {
+            "vi": "Trường học",
+            "en": "School"
+          },
+          {
+            "vi": "Bệnh viện",
+            "en": "Hospital"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「政府」là chính phủ.",
+        "en": "Right! 「政府」 is the government."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「政府」(せいふ) là chính phủ.",
+        "en": "Not quite. 「政府」 (せいふ) is the government."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép từ với nghĩa của nó.",
+        "en": "Match each word with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "事故",
+            {
+              "vi": "Tai nạn",
+              "en": "Accident"
+            }
+          ],
+          [
+            "調査",
+            {
+              "vi": "Khảo sát, điều tra",
+              "en": "Survey, investigation"
+            }
+          ],
+          [
+            "景気",
+            {
+              "vi": "Tình hình kinh tế",
+              "en": "State of the economy"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Ghép đúng cả ba cặp!",
+        "en": "All three pairs are correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Có cặp chưa đúng, hãy xem lại phần giải thích.",
+        "en": "Some pairs are wrong, review the explanations."
+      }
+    },
+    {
+      "item": "事故",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền bằng hiragana: 「高速道路で___がありました。」(Đã có tai nạn trên đường cao tốc)",
+        "en": "Fill in with hiragana: 「高速道路で___がありました。」 (There was an accident on the expressway)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "じこ",
+          "事故"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「事故」(じこ)",
+        "en": "Correct! 「事故」 (じこ)"
+      },
+      "feedbackIncorrect": {
+        "vi": "Đáp án là 「じこ」.",
+        "en": "The answer is 「じこ」."
+      }
+    }
+  ]
+}

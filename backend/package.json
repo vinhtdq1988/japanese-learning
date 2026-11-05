@@ -20,7 +20,9 @@
     "format:check": "prettier --check .",
     "db:migrate": "tsx src/db/migrate.ts",
     "seed": "tsx src/seed/index.ts",
-    "admin:create": "tsx src/seed/create-admin.ts"
+    "admin:create": "tsx src/seed/create-admin.ts",
+    "job:purge": "tsx src/jobs/purge-deleted-accounts.ts",
+    "report:metrics": "tsx src/reports/run.ts"
   },
   "dependencies": {
     "@fastify/rate-limit": "^11.2.2",
