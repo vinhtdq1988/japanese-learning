@@ -65,3 +65,19 @@ export function isOnTrack(input: OnTrackInput): boolean | null {
   if (newContentMinutesPerDay <= 0) return false;
   return Math.ceil(remainingMinutes / newContentMinutesPerDay) <= daysLeft;
 }
+
+/**
+ * Phân bổ thời gian một phiên ôn hỗn hợp cho Kanji (research K8, FR-017): phiên ôn gồm cả từ vựng/ngữ pháp
+ * lẫn Kanji nên phần Kanji được ước lượng theo tỷ lệ số câu lượt chính Kanji / tổng số câu lượt chính của
+ * phiên. Phiên không có câu nào (`totalPrimary = 0`) → 0 giây; phiên toàn Kanji → toàn bộ thời gian.
+ * Đây là ước lượng (không phải đồng hồ thực), spec FR-017/SC-007 đã ghi rõ.
+ */
+export function allocateKanjiSeconds(
+  sessionSeconds: number,
+  kanjiPrimary: number,
+  totalPrimary: number,
+): number {
+  if (totalPrimary <= 0 || kanjiPrimary <= 0 || sessionSeconds <= 0) return 0;
+  const ratio = Math.min(1, kanjiPrimary / totalPrimary);
+  return sessionSeconds * ratio;
+}

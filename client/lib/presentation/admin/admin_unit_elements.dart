@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../domain/admin_models.dart';
 import '../../domain/admin_unit_draft.dart';
 import '../../l10n/app_localizations.dart';
 import 'admin_support.dart';
@@ -107,6 +108,7 @@ class ItemEditorCard extends StatelessWidget {
     required this.kind,
     required this.onStructureChanged,
     required this.onRemove,
+    this.kanjiTopics = const <AdminTopic>[],
   });
 
   final ItemDraft item;
@@ -115,10 +117,14 @@ class ItemEditorCard extends StatelessWidget {
   final VoidCallback onStructureChanged;
   final VoidCallback onRemove;
 
+  /// Chủ đề Kanji cùng trình độ với đơn vị, để chọn chủ đề của chữ (chỉ dùng khi [kind] là Kanji).
+  final List<AdminTopic> kanjiTopics;
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final isGrammar = kind == 'grammar';
+    final isKanji = kind == 'kanji';
     return Card(
       key: Key('item-$index'),
       child: Padding(
@@ -154,15 +160,18 @@ class ItemEditorCard extends StatelessWidget {
                     },
                   ),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: DraftTextField(
-                    key: ValueKey<Object>((item, 'reading')),
-                    label: l10n.adminItemReading,
-                    value: item.reading,
-                    onChanged: (v) => item.reading = v,
+                // Chữ Kanji không có cách đọc đơn lẻ: âm On/Kun nằm ở nhóm trường Kanji bên dưới.
+                if (!isKanji) ...<Widget>[
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: DraftTextField(
+                      key: ValueKey<Object>((item, 'reading')),
+                      label: l10n.adminItemReading,
+                      value: item.reading,
+                      onChanged: (v) => item.reading = v,
+                    ),
                   ),
-                ),
+                ],
               ],
             ),
             const SizedBox(height: 8),
@@ -173,6 +182,15 @@ class ItemEditorCard extends StatelessWidget {
               labelVi: l10n.adminItemMeaningVi,
               labelEn: l10n.adminItemMeaningEn,
             ),
+            if (isKanji) ...<Widget>[
+              const SizedBox(height: 12),
+              _KanjiFields(
+                item: item,
+                index: index,
+                topics: kanjiTopics,
+                onStructureChanged: onStructureChanged,
+              ),
+            ],
             if (isGrammar) ...<Widget>[
               const SizedBox(height: 8),
               I18nFields(
@@ -193,6 +211,7 @@ class ItemEditorCard extends StatelessWidget {
               _ExampleEditor(
                 key: ObjectKey(item.examples[e]),
                 example: item.examples[e],
+                isKanji: isKanji,
                 onRemove: () {
                   item.examples.removeAt(e);
                   onStructureChanged();
@@ -217,15 +236,135 @@ class ItemEditorCard extends StatelessWidget {
   }
 }
 
+/// Nhóm trường riêng của chữ Kanji: chủ đề, âm On/Kun (danh sách), số nét và thành phần vi/en.
+class _KanjiFields extends StatelessWidget {
+  const _KanjiFields({
+    required this.item,
+    required this.index,
+    required this.topics,
+    required this.onStructureChanged,
+  });
+
+  final ItemDraft item;
+  final int index;
+  final List<AdminTopic> topics;
+  final VoidCallback onStructureChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final details = item.kanjiDetails;
+    final selected = topics.any((t) => t.id == item.topicId)
+        ? item.topicId
+        : null;
+    final strokeInvalid = details.isTouched && !details.hasValidStrokeCount;
+    return Container(
+      key: Key('item-kanji-$index'),
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        border: Border.all(color: Theme.of(context).dividerColor),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            l10n.adminKanjiHeading,
+            style: Theme.of(context).textTheme.labelLarge,
+          ),
+          const SizedBox(height: 8),
+          DropdownButtonFormField<String?>(
+            key: ValueKey<Object>((item, 'topic', topics.length, selected)),
+            initialValue: selected,
+            isExpanded: true,
+            isDense: true,
+            decoration: InputDecoration(
+              labelText: l10n.adminKanjiTopic,
+              hintText: l10n.adminKanjiTopicHint,
+              isDense: true,
+            ),
+            items: <DropdownMenuItem<String?>>[
+              for (final t in topics)
+                DropdownMenuItem<String?>(
+                  value: t.id,
+                  child: Text(pickText(context, t.name)),
+                ),
+            ],
+            onChanged: (v) => item.topicId = v,
+          ),
+          const SizedBox(height: 8),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Expanded(
+                child: KeyedSubtree(
+                  key: Key('kanji-on-$index'),
+                  child: DraftTextField(
+                    key: ValueKey<Object>((item, 'on')),
+                    label: l10n.adminKanjiOn,
+                    value: details.onReadings.join(', '),
+                    onChanged: (v) =>
+                        details.onReadings = KanjiDetailsDraft.parseReadings(v),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: KeyedSubtree(
+                  key: Key('kanji-kun-$index'),
+                  child: DraftTextField(
+                    key: ValueKey<Object>((item, 'kun')),
+                    label: l10n.adminKanjiKun,
+                    value: details.kunReadings.join(', '),
+                    onChanged: (v) => details.kunReadings =
+                        KanjiDetailsDraft.parseReadings(v),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              SizedBox(
+                width: 140,
+                child: KeyedSubtree(
+                  key: Key('kanji-strokes-$index'),
+                  child: DraftTextField(
+                    key: ValueKey<Object>((item, 'strokes')),
+                    label: l10n.adminKanjiStrokes,
+                    value: details.strokeCount?.toString() ?? '',
+                    errorText: strokeInvalid ? l10n.adminKanjiStrokes : null,
+                    onChanged: (v) =>
+                        details.strokeCount = int.tryParse(v.trim()),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          I18nFields(
+            owner: item,
+            slot: 'components',
+            value: details.components,
+            labelVi: l10n.adminKanjiComponentsVi,
+            labelEn: l10n.adminKanjiComponentsEn,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _ExampleEditor extends StatelessWidget {
   const _ExampleEditor({
     super.key,
     required this.example,
     required this.onRemove,
+    this.isKanji = false,
   });
 
   final ExampleDraft example;
   final VoidCallback onRemove;
+
+  /// Ví dụ của chữ Kanji: thêm ô "chữ đọc là gì trong từ này" (`kanjiReading`).
+  final bool isKanji;
 
   @override
   Widget build(BuildContext context) {
@@ -259,6 +398,15 @@ class _ExampleEditor extends StatelessWidget {
                     ),
                   ],
                 ),
+                if (isKanji) ...<Widget>[
+                  const SizedBox(height: 8),
+                  DraftTextField(
+                    key: ValueKey<Object>((example, 'kanjiReading')),
+                    label: l10n.adminExampleKanjiReading,
+                    value: example.kanjiReading,
+                    onChanged: (v) => example.kanjiReading = v,
+                  ),
+                ],
                 const SizedBox(height: 8),
                 I18nFields(
                   owner: example,
@@ -290,6 +438,7 @@ class ExerciseEditorCard extends StatelessWidget {
     required this.items,
     required this.onStructureChanged,
     required this.onRemove,
+    this.kind = 'vocabulary',
   });
 
   final ExerciseDraft exercise;
@@ -297,6 +446,9 @@ class ExerciseEditorCard extends StatelessWidget {
   final List<ItemDraft> items;
   final VoidCallback onStructureChanged;
   final VoidCallback onRemove;
+
+  /// Loại đơn vị; với Kanji, bài tập gắn chữ chọn thêm khía cạnh ôn tập.
+  final String kind;
 
   @override
   Widget build(BuildContext context) {
@@ -374,11 +526,39 @@ class ExerciseEditorCard extends StatelessWidget {
                           ),
                         ),
                     ],
-                    onChanged: (v) => ex.item = v,
+                    onChanged: (v) {
+                      ex.item = v;
+                      // Khía cạnh chỉ hiện khi bài tập gắn chữ Kanji nên cần dựng lại.
+                      if (kind == 'kanji') onStructureChanged();
+                    },
                   ),
                 ),
               ],
             ),
+            if (kind == 'kanji' && ex.item != null && items.contains(ex.item))
+              Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: DropdownButtonFormField<String>(
+                  key: ValueKey<Object>((ex, 'facet', ex.facet)),
+                  initialValue: ex.effectiveFacet(hasItem: true),
+                  isDense: true,
+                  isExpanded: true,
+                  decoration: InputDecoration(
+                    labelText: l10n.adminExerciseFacet,
+                    isDense: true,
+                  ),
+                  items: <DropdownMenuItem<String>>[
+                    for (final f in kKanjiFacets)
+                      DropdownMenuItem<String>(
+                        value: f,
+                        child: Text(facetLabel(l10n, f)),
+                      ),
+                  ],
+                  onChanged: (v) {
+                    if (v != null) ex.facet = v;
+                  },
+                ),
+              ),
             const SizedBox(height: 8),
             I18nFields(
               owner: ex,

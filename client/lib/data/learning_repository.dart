@@ -19,6 +19,18 @@ class LearningRepository {
     return guardApi(() async => (await _api.getPathApi().getPath()).data!);
   }
 
+  /// Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh của chữ).
+  /// Trả trạng thái `mastered` server đã lưu.
+  Future<bool> setItemMastered(String itemId, {required bool mastered}) {
+    return guardApi(() async {
+      final response = await _api.getPathApi().setItemMastered(
+        itemId: itemId,
+        setUnitMasteredRequest: SetUnitMasteredRequest(mastered: mastered),
+      );
+      return response.data!.mastered;
+    });
+  }
+
   /// Xây dựng lại lộ trình theo kết quả kiểm tra trình độ mới (lịch sử học và lịch ôn giữ nguyên).
   Future<PathSummary> rebuildWithPlacement(String placementResultId) {
     return guardApi(() async {

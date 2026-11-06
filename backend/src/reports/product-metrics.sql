@@ -1,4 +1,4 @@
--- Truy vấn báo cáo chỉ số sản phẩm (T119): SC-003, SC-009, SC-011.
+-- Truy vấn báo cáo chỉ số sản phẩm (T119, T084): SC-003, SC-009, SC-011 và Kanji (spec 003: SC-001, SC-008).
 -- Chạy bằng `pnpm report:metrics` (in từng bảng) hoặc dán từng khối vào psql. Mỗi khối bắt đầu bằng
 -- dòng `-- name: <tên>` và là MỘT câu SELECT độc lập, chỉ đọc. Giải thích số liệu: README.md cùng thư mục.
 --
@@ -151,3 +151,68 @@ SELECT replace(metric, 'trial_placement_level_', '') AS muc_uoc_tinh,
  WHERE metric LIKE 'trial\_placement\_level\_%'
  GROUP BY metric
  ORDER BY muc_uoc_tinh;
+
+-- name: kanji_first_plan_has_kanji_ratio
+-- Kanji SC-001 (kiểm tra vận hành, research K15): trong số người học đã chọn Kanji, tỷ lệ có KẾ HOẠCH ĐẦU TIÊN
+-- sinh sau `kanji_selected_at` chứa mục `new_unit` là bài Kanji. Mẫu số chỉ gồm các kế hoạch đầu tiên đó có
+-- phần bài mới (kế hoạch toàn ôn tập không thể có bài Kanji nên không tính). Kỳ vọng 100%: kế hoạch ngày
+-- đưa bài Kanji lên đầu khi kế hoạch bài mới gần nhất chưa có Kanji (FR-012). `>=` vì onboarding đặt
+-- `kanji_selected_at` và kế hoạch cùng trong một ngày/giao dịch có thể trùng thời điểm.
+WITH selected AS (
+  SELECT p.user_id, p.kanji_selected_at
+    FROM learning_profiles p
+    JOIN users u ON u.id = p.user_id AND u.role = 'learner'
+   WHERE p.kanji_selected_at IS NOT NULL
+),
+first_plan AS (
+  SELECT DISTINCT ON (s.user_id) s.user_id, dp.id AS plan_id
+    FROM selected s
+    JOIN daily_plans dp ON dp.user_id = s.user_id AND dp.created_at >= s.kanji_selected_at
+   ORDER BY s.user_id, dp.created_at, dp.id
+),
+judged AS (
+  SELECT fp.user_id,
+         EXISTS (SELECT 1 FROM daily_plan_items i
+                  WHERE i.plan_id = fp.plan_id AND i.type = 'new_unit') AS has_new,
+         EXISTS (SELECT 1 FROM daily_plan_items i
+                   JOIN learning_units lu ON lu.id = i.unit_id
+                  WHERE i.plan_id = fp.plan_id AND i.type = 'new_unit' AND lu.kind = 'kanji') AS has_kanji
+    FROM first_plan fp
+)
+SELECT count(*)                                                      AS so_nguoi_hoc,
+       count(*) FILTER (WHERE has_kanji)                             AS co_bai_kanji,
+       round(100.0 * count(*) FILTER (WHERE has_kanji) / NULLIF(count(*), 0), 1) AS ty_le_pct,
+       100 AS ky_vong_pct,
+       100.0 * count(*) FILTER (WHERE has_kanji) / NULLIF(count(*), 0) >= 100 AS dat_ky_vong
+  FROM judged
+ WHERE has_new;
+
+-- name: kanji_completed_within_3_days_ratio
+-- Kanji SC-008 (research K15): trong số người học có `kanji_selected_at` cách đây >= 3 ngày, tỷ lệ đã hoàn thành
+-- (`unit_progress.status = 'completed'`) ít nhất một bài Kanji trong 3 ngày kể từ lúc chọn; mục tiêu >= 80%.
+-- Chỉ tính hoàn thành SAU thời điểm chọn (`updated_at >= kanji_selected_at`): người bỏ rồi chọn lại Kanji có
+-- `kanji_selected_at` mới, bài đã học ở lần trước không được tính cho lần chọn này.
+WITH selected AS (
+  SELECT p.user_id, p.kanji_selected_at
+    FROM learning_profiles p
+    JOIN users u ON u.id = p.user_id AND u.role = 'learner'
+   WHERE p.kanji_selected_at IS NOT NULL
+     AND p.kanji_selected_at <= now() - interval '3 days'
+),
+judged AS (
+  SELECT s.user_id,
+         EXISTS (SELECT 1
+                   FROM unit_progress up
+                   JOIN learning_units lu ON lu.id = up.unit_id AND lu.kind = 'kanji'
+                  WHERE up.user_id = s.user_id
+                    AND up.status = 'completed'
+                    AND up.updated_at >= s.kanji_selected_at
+                    AND up.updated_at <= s.kanji_selected_at + interval '3 days') AS ok
+    FROM selected s
+)
+SELECT count(*)                                                      AS so_nguoi_hoc,
+       count(*) FILTER (WHERE ok)                                    AS hoan_thanh_trong_3_ngay,
+       round(100.0 * count(*) FILTER (WHERE ok) / NULLIF(count(*), 0), 1) AS ty_le_pct,
+       80 AS muc_tieu_pct,
+       100.0 * count(*) FILTER (WHERE ok) / NULLIF(count(*), 0) >= 80 AS dat_muc_tieu
+  FROM judged;

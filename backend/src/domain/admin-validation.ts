@@ -4,6 +4,7 @@ import {
   EXERCISE_TYPES,
   GOAL_TYPES,
   PLACEMENT_SKILLS,
+  REVIEW_FACETS,
   SKILLS,
   UNIT_EST_MINUTES,
   UNIT_STATUSES,
@@ -29,7 +30,26 @@ const i18nDraft = (max: number) =>
 const exampleSchema = z.object({
   ja: z.string({ error: 'Thiếu câu ví dụ tiếng Nhật' }).max(MAX_TEXT, `Tối đa ${MAX_TEXT} ký tự`),
   reading: z.string().max(MAX_TEXT).nullable().optional(),
+  /** Kanji: cách đọc của chính chữ trong từ ví dụ này. */
+  kanjiReading: z.string().max(MAX_TEXT).nullable().optional(),
   translation: i18nDraft(MAX_TEXT),
+});
+
+/**
+ * Chi tiết chữ Kanji (bản nháp): chỉ kiểm tra KIỂU. Bản nháp được phép thiếu hoặc `null`; việc đủ cách đọc,
+ * đúng katakana/hiragana… kiểm khi kích hoạt (`content-validation.ts`, research K10).
+ */
+const kanjiDetailsSchema = z.object({
+  onReadings: z.array(z.string().max(50), { error: 'onReadings phải là danh sách chuỗi' }).max(20),
+  kunReadings: z
+    .array(z.string().max(50), { error: 'kunReadings phải là danh sách chuỗi' })
+    .max(20),
+  strokeCount: z
+    .number({ error: 'strokeCount phải là số' })
+    .int('strokeCount phải là số nguyên')
+    .min(1, 'strokeCount từ 1 đến 30')
+    .max(30, 'strokeCount từ 1 đến 30'),
+  components: i18nDraft(MAX_TEXT).nullable().optional(),
 });
 
 const elementStatusSchema = z.enum(['active', 'inactive'], {
@@ -47,6 +67,9 @@ const itemSchema = z.object({
   reading: z.string().max(500, 'Tối đa 500 ký tự').nullable().optional(),
   meaning: i18nDraft(MAX_TEXT),
   explanation: i18nDraft(MAX_TEXT).nullable().optional(),
+  // Chỉ có nghĩa với đơn vị Kanji (kind khác bỏ qua); bản nháp không bắt buộc.
+  topicId: z.uuid('topicId của mục không hợp lệ').nullable().optional(),
+  kanjiDetails: kanjiDetailsSchema.nullable().optional(),
   examples: z.array(exampleSchema, { error: 'examples phải là danh sách' }).max(20).optional(),
 });
 
@@ -64,6 +87,10 @@ const exerciseSchema = z.object({
   }),
   prompt: i18nDraft(MAX_TEXT),
   payload: z.record(z.string(), z.unknown(), { error: 'payload phải là đối tượng JSON' }),
+  // Khía cạnh ôn tập (Kanji: meaning | reading | word); vắng mặt = `item`. Quy tắc ghép với `itemIndex` kiểm khi kích hoạt.
+  facet: z
+    .enum(REVIEW_FACETS, { error: `facet phải thuộc ${REVIEW_FACETS.join(', ')}` })
+    .optional(),
   feedbackCorrect: i18nDraft(MAX_TEXT),
   feedbackIncorrect: i18nDraft(MAX_TEXT),
 });
@@ -152,6 +179,10 @@ export const adminUnitListQuerySchema = z.object({
     .enum(CONTENT_LEVELS, { error: `level phải thuộc ${CONTENT_LEVELS.join(', ')}` })
     .optional(),
   kind: z.enum(SKILLS, { error: `kind phải thuộc ${SKILLS.join(', ')}` }).optional(),
+});
+
+export const adminTopicListQuerySchema = z.object({
+  skill: z.enum(SKILLS, { error: `skill phải thuộc ${SKILLS.join(', ')}` }).optional(),
 });
 
 export const adminUnitStatusSchema = z

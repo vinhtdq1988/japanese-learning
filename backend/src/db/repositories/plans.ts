@@ -1,7 +1,8 @@
 import { and, asc, desc, eq, inArray, lt } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import { dailyPlanItems, dailyPlans, learningUnits } from '../schema.js';
-import type { I18nText, LocalDate, Skill } from '../../domain/types.js';
+import type { ReviewPair } from '../../domain/review-key.js';
+import type { I18nText, LocalDate, ReviewFacet, Skill } from '../../domain/types.js';
 import type { PlanDayKind } from '../../engine/daily-plan.js';
 
 // Repository kế hoạch hằng ngày. Kế hoạch sinh một lần mỗi (user_id, local_date) và lưu lại, nên
@@ -45,6 +46,22 @@ export async function insertPlanIfAbsent(
     .onConflictDoNothing({ target: [dailyPlans.userId, dailyPlans.localDate] })
     .returning();
   return row ?? null;
+}
+
+/**
+ * Mảng `review_facets` ghi cùng `review_item_ids`: NULL khi mọi phần tử là `item` (mọi gói không có Kanji),
+ * nên dòng của người học không có Kanji giống hệt trước spec 003.
+ */
+export function reviewFacetsColumn(pairs: readonly ReviewPair[]): ReviewFacet[] | null {
+  return pairs.some((p) => p.facet !== 'item') ? pairs.map((p) => p.facet) : null;
+}
+
+/** Các cặp (mục, khía cạnh) của một mục kế hoạch ôn, theo thứ tự ưu tiên; NULL `review_facets` = mọi phần tử `item`. */
+export function reviewPairsOf(
+  item: Pick<DailyPlanItemRow, 'reviewItemIds' | 'reviewFacets'>,
+): ReviewPair[] {
+  const ids = item.reviewItemIds ?? [];
+  return ids.map((itemId, i) => ({ itemId, facet: item.reviewFacets?.[i] ?? 'item' }));
 }
 
 export async function insertPlanItems(

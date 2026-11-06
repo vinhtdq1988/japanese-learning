@@ -104,6 +104,10 @@ class _ProgressContent extends StatelessWidget {
               ),
             ],
           ),
+          if (summary.kanji != null) ...<Widget>[
+            const SizedBox(height: 24),
+            _KanjiSection(kanji: summary.kanji!, locale: locale),
+          ],
           const SizedBox(height: 24),
           _GoalSection(goal: summary.goal, locale: locale),
           const SizedBox(height: 24),
@@ -128,6 +132,65 @@ class _ProgressContent extends StatelessWidget {
 String formatMinutes(num minutes, String locale) {
   final format = NumberFormat('#0.#', locale);
   return format.format(minutes);
+}
+
+/// Khối tiến độ Kanji (US4, FR-017): số chữ đã học, số bài Kanji, thời gian học Kanji và độ chính xác ôn
+/// Kanji. Chỉ hiện khi server trả `kanji` (người học đã chọn Kanji hoặc đã có dữ liệu Kanji).
+class _KanjiSection extends StatelessWidget {
+  const _KanjiSection({required this.kanji, required this.locale});
+
+  final ProgressSummaryKanji kanji;
+  final String locale;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    final accuracy = kanji.reviewAccuracy;
+    return Column(
+      key: const Key('kanji-progress'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Text(l10n.progressKanjiHeading, style: theme.textTheme.titleMedium),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 12,
+          runSpacing: 12,
+          children: <Widget>[
+            _MetricCard(
+              key: const Key('kanji-characters'),
+              icon: Icons.translate,
+              label: l10n.progressKanjiCharacters,
+              value: '${kanji.charactersLearned}',
+            ),
+            _MetricCard(
+              key: const Key('kanji-lessons'),
+              icon: Icons.menu_book_outlined,
+              label: l10n.progressKanjiLessons,
+              value: '${kanji.lessonsCompleted}',
+            ),
+            _MetricCard(
+              key: const Key('kanji-time'),
+              icon: Icons.timer_outlined,
+              label: l10n.progressKanjiTime,
+              value: l10n.progressMinutesValue(
+                formatMinutes(kanji.minutes, locale),
+              ),
+              note: l10n.progressKanjiTimeNote,
+            ),
+            _MetricCard(
+              key: const Key('kanji-accuracy'),
+              icon: Icons.replay,
+              label: l10n.progressKanjiAccuracy,
+              value: accuracy == null
+                  ? l10n.progressReviewAccuracyNone
+                  : '${(accuracy * 100).round()}%',
+            ),
+          ],
+        ),
+      ],
+    );
+  }
 }
 
 class _MetricCard extends StatelessWidget {
@@ -275,6 +338,17 @@ class _WeakTopicsSection extends StatelessWidget {
                     ((topic.accuracy ?? 0) * 100).round(),
                   ),
                 ),
+                // Nhãn kỹ năng của mảng yếu: phân biệt chủ đề Kanji với từ vựng/ngữ pháp (US4.3).
+                trailing: topic.skill == null
+                    ? null
+                    : Chip(
+                        key: Key('weak-skill-${topic.topicId}'),
+                        label: Text(switch (topic.skill!) {
+                          Skill.vocabulary => l10n.progressWeakSkillVocabulary,
+                          Skill.grammar => l10n.progressWeakSkillGrammar,
+                          Skill.kanji => l10n.progressWeakSkillKanji,
+                        }),
+                      ),
               ),
             ),
       ],

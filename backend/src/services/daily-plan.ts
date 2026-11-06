@@ -7,6 +7,7 @@ import {
   lastNewUnitPlanKinds,
   listPlanItems,
   previousPlanKind,
+  reviewFacetsColumn,
   type DailyPlanRow,
 } from '../db/repositories/plans.js';
 import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
@@ -18,6 +19,7 @@ import {
   listSessionIntervals,
 } from '../db/repositories/sessions.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
+import { decodeReviewKey, encodeReviewKey } from '../domain/review-key.js';
 import { localize } from '../domain/i18n.js';
 import { AppError, type Language, type Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
@@ -179,7 +181,16 @@ async function generatePlan(
   );
   // Mục ôn đến hạn xếp theo ưu tiên (mục khó, quá hạn lâu nhất); mục không vừa quỹ hôm nay không bị
   // sửa `due_date` nên tiếp tục được ưu tiên ở ngày sau (T078, R7).
-  const rankedDue = rankDueItems(await listDueReviewItems(deps.db, userId, localDate), localDate);
+  // Khóa ghép `itemId[:facet]` (research K3) đi qua engine không đổi chữ ký; facet `item` giữ nguyên `itemId`.
+  const dueRows = await listDueReviewItems(deps.db, userId, localDate);
+  const rankedDue = rankDueItems(
+    dueRows.map((r) => ({
+      itemId: encodeReviewKey(r.itemId, r.facet),
+      dueDate: r.dueDate,
+      isHard: r.isHard,
+    })),
+    localDate,
+  );
   const rankedIds = rankedDue.map((i) => i.itemId);
 
   const result = planDailyPlan({
@@ -222,15 +233,19 @@ async function generatePlan(
     if (!inserted) return;
     await insertPlanItems(
       tx,
-      result.items.map((item, position) => ({
-        planId: inserted.id,
-        type: item.type,
-        unitId: item.type === 'new_unit' ? item.unitId : null,
-        reviewItemIds: item.type === 'review_batch' ? item.itemIds : null,
-        estMinutes: item.estMinutes,
-        position,
-        status: 'pending' as const,
-      })),
+      result.items.map((item, position) => {
+        const pairs = item.type === 'review_batch' ? item.itemIds.map(decodeReviewKey) : null;
+        return {
+          planId: inserted.id,
+          type: item.type,
+          unitId: item.type === 'new_unit' ? item.unitId : null,
+          reviewItemIds: pairs ? pairs.map((p) => p.itemId) : null,
+          reviewFacets: pairs ? reviewFacetsColumn(pairs) : null,
+          estMinutes: item.estMinutes,
+          position,
+          status: 'pending' as const,
+        };
+      }),
     );
   });
 }

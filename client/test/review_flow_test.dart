@@ -119,6 +119,92 @@ void main() {
     },
   );
 
+  Future<void> finishReview(WidgetTester tester) async {
+    await _tap(tester, 'choice-1');
+    await _tap(tester, 'continue');
+    await tester.enterText(find.byKey(const Key('fill-blank-input')), 'は');
+    await tester.pump();
+    await _tap(tester, 'submit-answer');
+    await _tap(tester, 'continue');
+    await _answerMatchingCorrect(tester);
+    await _tap(tester, 'continue');
+  }
+
+  testWidgets('câu ôn Kanji hiển thị chữ bằng phông Noto Sans JP theo khía cạnh', (
+    tester,
+  ) async {
+    final scenario = await _open(tester);
+    scenario.kanjiReview = true;
+    await _tap(tester, 'start-item-review');
+
+    // Câu 1 mang facet `meaning`: chữ Hán PHẢI có phông Nhật đóng gói làm phông dự phòng.
+    final kanjiPrompt = tester.widget<Text>(
+      find.byKey(const Key('exercise-prompt')),
+    );
+    expect(kanjiPrompt.data, contains('日'));
+    expect(kanjiPrompt.style?.fontFamilyFallback, contains('Noto Sans JP'));
+
+    // Theme đã đặt phông Nhật đóng gói làm phông dự phòng cho mọi chữ (FR-006): câu ôn Kanji không cần phông riêng.
+    expect(kanjiPrompt.style?.fontFamilyFallback?.first, 'Noto Sans JP');
+    await _leave(tester);
+  });
+
+  testWidgets(
+    'tóm tắt phiên ôn Kanji: nút đánh dấu thành thạo gọi setItemMastered và cập nhật trạng thái',
+    (tester) async {
+      final scenario = await _open(tester);
+      scenario.kanjiReview = true;
+      await _tap(tester, 'start-item-review');
+      await finishReview(tester);
+
+      expect(_has('review-summary-heading'), isTrue);
+      expect(_has('review-kanji'), isTrue);
+      expect(find.text('日'), findsOneWidget);
+      expect(find.text('Đánh dấu đã thành thạo'), findsOneWidget);
+      expect(_has('master-note-it-k1'), isFalse);
+
+      await _tap(tester, 'master-toggle-it-k1');
+      expect(scenario.mastered['it-k1'], isTrue);
+      expect(find.text('Bỏ đánh dấu'), findsOneWidget);
+      expect(_has('master-note-it-k1'), isTrue);
+
+      await _tap(tester, 'master-toggle-it-k1');
+      expect(scenario.mastered['it-k1'], isFalse);
+      expect(find.text('Đánh dấu đã thành thạo'), findsOneWidget);
+      expect(_has('master-note-it-k1'), isFalse);
+      await _leave(tester);
+    },
+  );
+
+  testWidgets(
+    'lỗi khi đánh dấu thành thạo: báo lỗi, trạng thái nút giữ nguyên',
+    (tester) async {
+      final scenario = await _open(tester);
+      scenario
+        ..kanjiReview = true
+        ..masterFails = true;
+      await _tap(tester, 'start-item-review');
+      await finishReview(tester);
+
+      await _tap(tester, 'master-toggle-it-k1');
+      expect(_has('master-error-it-k1'), isTrue);
+      expect(find.text('Đánh dấu đã thành thạo'), findsOneWidget);
+      expect(scenario.mastered, isEmpty);
+      await _leave(tester);
+    },
+  );
+
+  testWidgets('phiên ôn không có Kanji không hiện danh sách chữ để đánh dấu', (
+    tester,
+  ) async {
+    await _open(tester);
+    await _tap(tester, 'start-item-review');
+    await finishReview(tester);
+    expect(_has('review-summary-heading'), isTrue);
+    expect(_has('review-kanji'), isFalse);
+    await _leave(tester);
+  });
+
   testWidgets('mất kết nối lúc hoàn thành phiên ôn: không báo hoàn thành', (
     tester,
   ) async {

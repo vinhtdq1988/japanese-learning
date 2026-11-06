@@ -1,4 +1,5 @@
 import { localize, resolveText, type Localizable } from './i18n.js';
+import { encodeReviewKey, type ReviewPair } from './review-key.js';
 import type {
   ExerciseType,
   I18nText,
@@ -179,30 +180,34 @@ export function buildSnapshot(input: {
 }
 
 /**
- * Dựng snapshot cho phiên ôn tập (`kind='review'`, T079): mỗi mục trong `itemIds` được hỏi bằng đúng một
- * bài tập `active` của nó (để thời lượng gói ôn khớp `REVIEW_SECONDS_PER_ITEM`). Bài tập được chọn tất
- * định theo `seed` (ví dụ ngày địa phương) nên các ngày ôn khác nhau xoay vòng giữa các bài tập của mục,
- * còn tiếp tục phiên dở dang thì dùng lại snapshot đã lưu. Mục không còn bài tập `active` bị bỏ qua.
- * Thứ tự câu hỏi theo thứ tự ưu tiên của `itemIds`.
+ * Dựng snapshot cho phiên ôn tập (`kind='review'`, T079): mỗi cặp (mục, khía cạnh) trong `pairs` được hỏi
+ * bằng đúng một bài tập `active` có cùng `item_id` VÀ `facet` (để thời lượng gói ôn khớp
+ * `REVIEW_SECONDS_PER_ITEM`). Bài tập được chọn tất định theo `seed` (ví dụ ngày địa phương) nên các ngày ôn
+ * khác nhau xoay vòng giữa các bài tập của cặp, còn tiếp tục phiên dở dang thì dùng lại snapshot đã lưu. Cặp
+ * không còn bài tập `active` phù hợp bị bỏ qua (lịch giữ nguyên – FR-022); bài tập `matching` không gắn mục
+ * không vào ôn. Thứ tự câu hỏi theo thứ tự ưu tiên của `pairs`; một chữ Kanji có thể xuất hiện nhiều lần với
+ * các khía cạnh khác nhau.
  */
 export function buildReviewSnapshot(input: {
   title: I18nText;
-  itemIds: readonly string[];
+  pairs: readonly ReviewPair[];
   items: readonly ItemSource[];
   exercises: readonly ExerciseSource[];
   language: Language;
   seed: string;
 }): SessionSnapshot {
-  const byItem = new Map<string, ExerciseSource[]>();
+  const byPair = new Map<string, ExerciseSource[]>();
   for (const e of input.exercises) {
     if (e.status !== 'active' || e.itemId === null) continue;
-    byItem.set(e.itemId, [...(byItem.get(e.itemId) ?? []), e]);
+    const key = encodeReviewKey(e.itemId, e.facet ?? 'item');
+    byPair.set(key, [...(byPair.get(key) ?? []), e]);
   }
   const chosen: ExerciseSource[] = [];
-  for (const itemId of input.itemIds) {
-    const options = (byItem.get(itemId) ?? []).sort(byPositionThenId);
+  for (const pair of input.pairs) {
+    const key = encodeReviewKey(pair.itemId, pair.facet);
+    const options = (byPair.get(key) ?? []).sort(byPositionThenId);
     if (options.length === 0) continue;
-    chosen.push(options[seedOf(`${input.seed}:${itemId}`) % options.length]!);
+    chosen.push(options[seedOf(`${input.seed}:${key}`) % options.length]!);
   }
 
   const snapshot = buildSnapshot({
@@ -212,12 +217,19 @@ export function buildReviewSnapshot(input: {
     exercises: chosen,
     language: input.language,
   });
-  const order = new Map(input.itemIds.map((id, i) => [id, i]));
-  const rank = (itemId: string | null): number => (itemId ? (order.get(itemId) ?? 0) : 0);
+  // Mỗi cặp có đúng một bài tập được chọn nên thứ tự bài tập = thứ tự cặp; mục xếp theo lần xuất hiện đầu.
+  const exerciseOrder = new Map(chosen.map((e, i) => [e.id, i]));
+  const itemOrder = new Map<string, number>();
+  for (const e of chosen)
+    if (e.itemId && !itemOrder.has(e.itemId)) itemOrder.set(e.itemId, itemOrder.size);
   return {
     ...snapshot,
-    items: [...snapshot.items].sort((a, b) => rank(a.id) - rank(b.id)),
-    exercises: [...snapshot.exercises].sort((a, b) => rank(a.itemId) - rank(b.itemId)),
+    items: [...snapshot.items].sort(
+      (a, b) => (itemOrder.get(a.id) ?? 0) - (itemOrder.get(b.id) ?? 0),
+    ),
+    exercises: [...snapshot.exercises].sort(
+      (a, b) => (exerciseOrder.get(a.id) ?? 0) - (exerciseOrder.get(b.id) ?? 0),
+    ),
   };
 }
 

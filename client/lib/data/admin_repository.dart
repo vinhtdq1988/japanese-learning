@@ -31,8 +31,11 @@ class AdminRepository {
 
   // --- Mảng nội dung ---
 
-  Future<List<AdminTopic>> topics() => _call(() async {
-    final response = await _dio.get<Object?>('/admin/topics');
+  Future<List<AdminTopic>> topics({String? skill}) => _call(() async {
+    final response = await _dio.get<Object?>(
+      '/admin/topics',
+      queryParameters: <String, Object?>{if (skill != null) 'skill': skill},
+    );
     return _list(response.data).map(AdminTopic.fromJson).toList();
   });
 

@@ -1,14 +1,15 @@
-import { and, desc, eq, exists, inArray, lte, sql } from 'drizzle-orm';
+import { and, desc, eq, exists, inArray, isNull, lte, ne, or, sql } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import {
   contentItems,
   exercises,
   learningUnits,
+  lessonSessions,
   reviewSchedules,
   studyRecords,
 } from '../schema.js';
 import type { ExerciseSource, ItemSource } from '../../domain/session-snapshot.js';
-import type { LocalDate, ReviewFacet } from '../../domain/types.js';
+import type { LocalDate, ReviewFacet, Skill } from '../../domain/types.js';
 import type { DueReviewItem } from '../../engine/daily-plan.js';
 import type { SrsState } from '../../engine/srs.js';
 
@@ -138,19 +139,32 @@ export async function recentItemResults(
 /** Số dòng lịch ôn tối đa đọc cho một lần chọn gói ôn (đủ cho mọi quỹ thời gian). */
 const DUE_FETCH_LIMIT = 2000;
 
+/** Cặp (mục, khía cạnh) đến hạn ôn; `kind` là loại nội dung của mục. */
+export interface DueReviewPair extends DueReviewItem {
+  facet: ReviewFacet;
+  kind: Skill;
+}
+
 /**
- * Mục đến hạn (`due_date ≤ today`) có thể ôn: mục `active`, thuộc đơn vị `active`, còn ít nhất một bài tập
- * `active` gắn với nó (data-model §2.16). Dòng `review_schedules` của mục bị loại vẫn được giữ nguyên.
- * Thứ tự ưu tiên do `rankDueItems` quyết định; ở đây chỉ cắt số lượng theo độ quá hạn để chặn truy vấn lớn.
+ * Cặp (mục, khía cạnh) đến hạn (`due_date ≤ today`) có thể ôn (data-model §3.7): chưa được đánh dấu thành
+ * thạo (`mastered_at IS NULL`), mục `active` thuộc đơn vị `active`, còn ít nhất một bài tập `active` có cùng
+ * `item_id` VÀ `facet`. Riêng chữ Kanji chỉ vào gói ôn khi người học đã hoàn thành bài chứa chữ đó: dòng lịch
+ * của bài dở dang có thể đã tồn tại (ghi theo từng câu) nhưng chữ chưa được coi là "đã học" (research K6).
+ * Bài đã hoàn thành rồi đánh dấu thành thạo (`unit_progress.status='mastered'`) vẫn tính là hoàn thành nên
+ * lịch ôn các chữ của bài không bị loại; từ vựng/ngữ pháp giữ hành vi 001. Dòng `review_schedules` của cặp bị
+ * loại luôn được giữ nguyên. Thứ tự ưu tiên do `rankDueItems` quyết định; ở đây chỉ cắt số lượng theo độ quá
+ * hạn để chặn truy vấn lớn.
  */
 export async function listDueReviewItems(
   db: DbExecutor,
   userId: string,
   today: LocalDate,
-): Promise<DueReviewItem[]> {
+): Promise<DueReviewPair[]> {
   const rows = await db
     .select({
       itemId: reviewSchedules.itemId,
+      facet: reviewSchedules.facet,
+      kind: contentItems.kind,
       dueDate: reviewSchedules.dueDate,
       isHard: reviewSchedules.isHard,
     })
@@ -161,22 +175,74 @@ export async function listDueReviewItems(
       and(
         eq(reviewSchedules.userId, userId),
         lte(reviewSchedules.dueDate, today),
-        // TẠM THỜI – gỡ ở T061 (US3): cặp Kanji (facet ≠ item) chưa vào gói ôn cho tới khi US3 hoàn thành,
-        // tránh `review_item_ids` trùng chữ và lẫn khía cạnh (research K6 "an toàn trung gian").
-        eq(reviewSchedules.facet, 'item'),
+        isNull(reviewSchedules.masteredAt),
         eq(contentItems.status, 'active'),
         eq(learningUnits.status, 'active'),
         exists(
           db
             .select({ one: sql`1` })
             .from(exercises)
-            .where(and(eq(exercises.itemId, contentItems.id), eq(exercises.status, 'active'))),
+            .where(
+              and(
+                eq(exercises.itemId, contentItems.id),
+                eq(exercises.facet, reviewSchedules.facet),
+                eq(exercises.status, 'active'),
+              ),
+            ),
+        ),
+        or(
+          ne(contentItems.kind, 'kanji'),
+          exists(
+            db
+              .select({ one: sql`1` })
+              .from(lessonSessions)
+              .where(
+                and(
+                  eq(lessonSessions.userId, userId),
+                  eq(lessonSessions.unitId, contentItems.unitId),
+                  eq(lessonSessions.status, 'completed'),
+                ),
+              ),
+          ),
         ),
       ),
     )
     .orderBy(desc(reviewSchedules.isHard), reviewSchedules.dueDate, reviewSchedules.itemId)
     .limit(DUE_FETCH_LIMIT);
   return rows;
+}
+
+/**
+ * Đặt / xóa `mastered_at` cho mọi cặp của chữ (research K7). Trả số dòng lịch ôn của chữ (0 = người học chưa
+ * học chữ này). Đánh dấu lại khi đã đánh dấu giữ nguyên mốc thời gian cũ (idempotent); bỏ đánh dấu để lịch tiếp
+ * tục từ `due_date` đã lưu.
+ */
+export async function setItemMastered(
+  db: DbExecutor,
+  userId: string,
+  itemId: string,
+  mastered: boolean,
+  now: Date,
+): Promise<number> {
+  const where = and(eq(reviewSchedules.userId, userId), eq(reviewSchedules.itemId, itemId));
+  const rows = await db
+    .update(reviewSchedules)
+    .set({
+      masteredAt: mastered ? sql`coalesce(${reviewSchedules.masteredAt}, ${now})` : null,
+    })
+    .where(where)
+    .returning({ facet: reviewSchedules.facet });
+  return rows.length;
+}
+
+/** Loại nội dung của một mục (null nếu không tồn tại). */
+export async function getItemKind(db: DbExecutor, itemId: string): Promise<Skill | null> {
+  const [row] = await db
+    .select({ kind: contentItems.kind })
+    .from(contentItems)
+    .where(eq(contentItems.id, itemId))
+    .limit(1);
+  return row?.kind ?? null;
 }
 
 export interface ReviewContentRows {

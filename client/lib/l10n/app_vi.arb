@@ -2233,5 +2233,125 @@
   "todayKanjiExhaustedContent": "Bạn đã học hết nội dung Kanji hiện có. Kanji mới sẽ xuất hiện khi được bổ sung.",
   "@todayKanjiExhaustedContent": {
     "description": "Thông báo hết toàn bộ nội dung Kanji"
+  },
+  "kanjiMasterAction": "Đánh dấu đã thành thạo",
+  "@kanjiMasterAction": {
+    "description": "Nút đánh dấu một chữ Kanji đã thành thạo (dừng ôn chữ đó)"
+  },
+  "kanjiUnmasterAction": "Bỏ đánh dấu",
+  "@kanjiUnmasterAction": {
+    "description": "Nút bỏ đánh dấu thành thạo để chữ Kanji được ôn lại"
+  },
+  "kanjiMasteredNote": "Đã thành thạo – chữ này sẽ không xuất hiện trong ôn tập.",
+  "@kanjiMasteredNote": {
+    "description": "Ghi chú cạnh chữ Kanji đã được đánh dấu thành thạo"
+  },
+  "kanjiMasterFailed": "Không lưu được. Hãy thử lại.",
+  "@kanjiMasterFailed": {
+    "description": "Lỗi khi đánh dấu/bỏ đánh dấu chữ Kanji thành thạo"
+  },
+  "reviewKanjiHeading": "Chữ Kanji vừa ôn",
+  "@reviewKanjiHeading": {
+    "description": "Tiêu đề danh sách chữ Kanji trong tóm tắt phiên ôn"
+  },
+  "reviewKanjiHint": "Nếu đã thuộc hẳn một chữ, bạn có thể đánh dấu đã thành thạo để dừng ôn chữ đó.",
+  "@reviewKanjiHint": {
+    "description": "Giải thích danh sách chữ Kanji trong tóm tắt phiên ôn"
+  },
+  "progressKanjiHeading": "Kanji",
+  "@progressKanjiHeading": {
+    "description": "Tiêu đề khối tiến độ Kanji"
+  },
+  "progressKanjiCharacters": "Chữ đã học",
+  "@progressKanjiCharacters": {
+    "description": "Số chữ Kanji đã học"
+  },
+  "progressKanjiLessons": "Bài Kanji",
+  "@progressKanjiLessons": {
+    "description": "Số bài Kanji đã hoàn thành"
+  },
+  "progressKanjiTime": "Thời gian học Kanji",
+  "@progressKanjiTime": {
+    "description": "Thời gian học Kanji"
+  },
+  "progressKanjiAccuracy": "Độ chính xác ôn Kanji",
+  "@progressKanjiAccuracy": {
+    "description": "Độ chính xác khi ôn Kanji"
+  },
+  "progressKanjiTimeNote": "Phần ôn xen lẫn được ước lượng theo số câu Kanji.",
+  "@progressKanjiTimeNote": {
+    "description": "Ghi chú: thời gian Kanji của phiên ôn hỗn hợp là ước lượng"
+  },
+  "progressWeakSkillVocabulary": "Từ vựng",
+  "@progressWeakSkillVocabulary": {
+    "description": "Nhãn kỹ năng từ vựng của một mảng yếu"
+  },
+  "progressWeakSkillGrammar": "Ngữ pháp",
+  "@progressWeakSkillGrammar": {
+    "description": "Nhãn kỹ năng ngữ pháp của một mảng yếu"
+  },
+  "progressWeakSkillKanji": "Kanji",
+  "@progressWeakSkillKanji": {
+    "description": "Nhãn kỹ năng Kanji của một mảng yếu"
+  },
+  "adminKindKanji": "Kanji",
+  "@adminKindKanji": {
+    "description": "Nhãn loại đơn vị Kanji trong khu vực quản trị"
+  },
+  "adminKanjiHeading": "Thông tin chữ Kanji",
+  "@adminKanjiHeading": {
+    "description": "Tiêu đề nhóm trường riêng của chữ Kanji trong trình soạn"
+  },
+  "adminKanjiTopic": "Chủ đề của chữ",
+  "@adminKanjiTopic": {
+    "description": "Nhãn chọn chủ đề Kanji của một chữ"
+  },
+  "adminKanjiTopicHint": "Chọn chủ đề Kanji cùng trình độ",
+  "@adminKanjiTopicHint": {
+    "description": "Gợi ý khi chưa chọn chủ đề của chữ"
+  },
+  "adminKanjiOn": "Âm On (katakana, cách nhau bằng dấu phẩy)",
+  "@adminKanjiOn": {
+    "description": "Nhãn ô nhập âm On"
+  },
+  "adminKanjiKun": "Âm Kun (hiragana, dùng \".\" tách okurigana, cách nhau bằng dấu phẩy)",
+  "@adminKanjiKun": {
+    "description": "Nhãn ô nhập âm Kun"
+  },
+  "adminKanjiStrokes": "Số nét (1–30)",
+  "@adminKanjiStrokes": {
+    "description": "Nhãn ô nhập số nét"
+  },
+  "adminKanjiComponentsVi": "Thành phần (vi)",
+  "@adminKanjiComponentsVi": {
+    "description": "Nhãn thành phần chữ, tiếng Việt"
+  },
+  "adminKanjiComponentsEn": "Thành phần (en)",
+  "@adminKanjiComponentsEn": {
+    "description": "Nhãn thành phần chữ, tiếng Anh"
+  },
+  "adminExampleKanjiReading": "Chữ đọc là gì trong từ này",
+  "@adminExampleKanjiReading": {
+    "description": "Nhãn ô cách đọc của chữ Kanji trong từ ví dụ"
+  },
+  "adminExerciseFacet": "Khía cạnh ôn tập",
+  "@adminExerciseFacet": {
+    "description": "Nhãn chọn khía cạnh của bài tập gắn chữ Kanji"
+  },
+  "adminFacetMeaning": "Nghĩa",
+  "@adminFacetMeaning": {
+    "description": "Khía cạnh ôn tập: nghĩa của chữ"
+  },
+  "adminFacetReading": "Cách đọc",
+  "@adminFacetReading": {
+    "description": "Khía cạnh ôn tập: cách đọc của chữ"
+  },
+  "adminFacetWord": "Từ chứa chữ",
+  "@adminFacetWord": {
+    "description": "Khía cạnh ôn tập: từ chứa chữ"
+  },
+  "adminKanjiGoalTagsHint": "Bài Kanji cần ít nhất một thẻ mục tiêu để kích hoạt.",
+  "@adminKanjiGoalTagsHint": {
+    "description": "Gợi ý dưới nhóm thẻ mục tiêu khi soạn bài Kanji"
   }
 }

@@ -4,9 +4,9 @@ import { loadReportQueries } from '../../src/reports/run.js';
 import { seedContent } from '../../src/seed/index.js';
 import { ContractClient } from '../contract/client.js';
 import { createTestApp, type TestApp } from './helpers.js';
-import { onboardedLearner, query, type Learner } from './lesson-helpers.js';
+import { kanjiUnitId, onboardedLearner, query, type Learner } from './lesson-helpers.js';
 
-// Truy vấn báo cáo chỉ số sản phẩm (T119): SC-003, SC-009, SC-011 trên dữ liệu dựng sẵn.
+// Truy vấn báo cáo chỉ số sản phẩm (T119, T084): SC-003, SC-009, SC-011 và Kanji SC-001, SC-008 trên dữ liệu dựng sẵn.
 // Thời điểm lộ trình/phiên học được "già hóa" bằng UPDATE để nhóm đủ chín mà không cần chờ.
 
 let ctx: TestApp;
@@ -70,6 +70,8 @@ describe('bộ truy vấn báo cáo', () => {
       'sc011_daily',
       'sc011_summary',
       'trial_placement_levels',
+      'kanji_first_plan_has_kanji_ratio',
+      'kanji_completed_within_3_days_ratio',
     ]);
     for (const name of queries.keys()) await expect(run(name)).resolves.toBeDefined();
   });
@@ -183,5 +185,121 @@ describe('SC-011: chuyển đổi từ dùng thử', () => {
       { muc_uoc_tinh: 'N5', so_luot: 4, ty_le_pct: '80.0' },
       { muc_uoc_tinh: 'none', so_luot: 1, ty_le_pct: '20.0' },
     ]);
+  });
+});
+
+/** Đặt `kanji_selected_at` cách đây `days` ngày (người học đã chọn Kanji). */
+async function selectKanji(learner: Learner, days: number): Promise<void> {
+  await query(
+    ctx,
+    `UPDATE learning_profiles SET kanji_selected_at = now() - make_interval(days => $2)
+      WHERE user_id = $1`,
+    [learner.userId, days],
+  );
+}
+
+/** Ghi một kế hoạch ngày tạo cách đây `daysAgo` ngày; `unitIds` là các mục `new_unit`, rỗng = chỉ có gói ôn. */
+async function addPlan(learner: Learner, daysAgo: number, unitIds: string[]): Promise<void> {
+  const [plan] = await query<{ id: string }>(
+    ctx,
+    `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes, created_at)
+     VALUES ($1, (now() - make_interval(days => $2))::date, 10, 10, now() - make_interval(days => $2))
+     RETURNING id`,
+    [learner.userId, daysAgo],
+  );
+  for (const [position, unitId] of unitIds.entries()) {
+    await query(
+      ctx,
+      `INSERT INTO daily_plan_items (plan_id, type, unit_id, est_minutes, position)
+       VALUES ($1, 'new_unit', $2, 5, $3)`,
+      [plan!.id, unitId, position],
+    );
+  }
+  if (unitIds.length === 0) {
+    await query(
+      ctx,
+      `INSERT INTO daily_plan_items (plan_id, type, review_item_ids, est_minutes)
+       VALUES ($1, 'review_batch', ARRAY[]::uuid[], 5)`,
+      [plan!.id],
+    );
+  }
+}
+
+describe('Kanji SC-001: kế hoạch đầu tiên sau khi chọn Kanji có bài Kanji', () => {
+  it('chỉ xét kế hoạch đầu tiên từ lúc chọn, chỉ tính kế hoạch có phần bài mới', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const kanjiUnit = await kanjiUnitId(ctx, 'Number kanji 1 (一 二 三)');
+    const [vocab] = await query<{ id: string }>(
+      ctx,
+      `SELECT id FROM learning_units WHERE kind = 'vocabulary' ORDER BY created_at LIMIT 1`,
+    );
+
+    // Kế hoạch đầu tiên SAU khi chọn có Kanji (kế hoạch trước khi chọn bị bỏ qua dù không có Kanji).
+    const hit = await onboardedLearner(api, ctx);
+    await selectKanji(hit, 5);
+    await addPlan(hit, 6, [vocab!.id]);
+    await addPlan(hit, 4, [kanjiUnit]);
+    // Kế hoạch đầu tiên sau khi chọn chỉ có từ vựng (kế hoạch Kanji đến sau không cứu được).
+    const miss = await onboardedLearner(api, ctx);
+    await selectKanji(miss, 5);
+    await addPlan(miss, 4, [vocab!.id]);
+    await addPlan(miss, 3, [kanjiUnit]);
+    // Kế hoạch đầu tiên toàn ôn tập: không có phần bài mới nên không vào mẫu số.
+    const reviewOnly = await onboardedLearner(api, ctx);
+    await selectKanji(reviewOnly, 5);
+    await addPlan(reviewOnly, 4, []);
+    // Không chọn Kanji: không thuộc báo cáo dù có kế hoạch.
+    const noKanji = await onboardedLearner(api, ctx);
+    await addPlan(noKanji, 4, [vocab!.id]);
+
+    const [row] = await run('kanji_first_plan_has_kanji_ratio');
+    expect(row).toMatchObject({
+      so_nguoi_hoc: 2,
+      co_bai_kanji: 1,
+      ty_le_pct: '50.0',
+      ky_vong_pct: 100,
+      dat_ky_vong: false,
+    });
+  });
+});
+
+describe('Kanji SC-008: hoàn thành bài Kanji trong 3 ngày sau khi chọn', () => {
+  /** Ghi tiến độ `status` của bài Kanji, `updated_at` = `kanji_selected_at` + `afterDays` ngày. */
+  async function completeKanji(learner: Learner, afterDays: number, status = 'completed') {
+    const unitId = await kanjiUnitId(ctx, 'Number kanji 1 (一 二 三)');
+    await query(
+      ctx,
+      `INSERT INTO unit_progress (user_id, unit_id, status, updated_at)
+       SELECT user_id, $2, $3::unit_progress_status, kanji_selected_at + make_interval(days => $4)
+         FROM learning_profiles WHERE user_id = $1`,
+      [learner.userId, unitId, status, afterDays],
+    );
+  }
+
+  it('đếm người có bài Kanji completed trong cửa sổ 3 ngày; loại nhóm chưa đủ 3 ngày và hoàn thành ngoài cửa sổ', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const inWindow = await onboardedLearner(api, ctx);
+    const tooLate = await onboardedLearner(api, ctx);
+    const beforeSelection = await onboardedLearner(api, ctx);
+    const notDone = await onboardedLearner(api, ctx);
+    const tooFresh = await onboardedLearner(api, ctx);
+    await onboardedLearner(api, ctx); // không chọn Kanji → không thuộc báo cáo
+    for (const l of [inWindow, tooLate, beforeSelection, notDone]) await selectKanji(l, 10);
+    await selectKanji(tooFresh, 1); // chưa qua 3 ngày → chưa vào nhóm
+
+    await completeKanji(inWindow, 2);
+    await completeKanji(tooLate, 5); // quá 3 ngày → không tính
+    await completeKanji(beforeSelection, -2); // hoàn thành trước lần chọn hiện tại → không tính
+    await completeKanji(notDone, 1, 'in_progress'); // mới học dở → không tính
+    await completeKanji(tooFresh, 0);
+
+    const [row] = await run('kanji_completed_within_3_days_ratio');
+    expect(row).toMatchObject({
+      so_nguoi_hoc: 4,
+      hoan_thanh_trong_3_ngay: 1,
+      ty_le_pct: '25.0',
+      muc_tieu_pct: 80,
+      dat_muc_tieu: false,
+    });
   });
 });

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:japanese_api/japanese_api.dart';
 
 import '../../l10n/app_localizations.dart';
+import '../lesson/kanji/kanji_card.dart' show kanjiFontFamily;
+import '../lesson/kanji/kanji_master_toggle.dart';
 import '../lesson/lesson_controller.dart';
 import '../lesson/lesson_screen.dart';
 
@@ -32,7 +34,14 @@ class ReviewBody extends StatelessWidget {
                 onRetry: controller.finish,
                 busy: state.completing,
               )
-            : ReviewSummary(summary: state.summary!),
+            : ReviewSummary(
+                summary: state.summary!,
+                kanjiItems: <ContentItem>[
+                  for (final item
+                      in state.session.items ?? const <ContentItem>[])
+                    if (item.kind == Skill.kanji) item,
+                ],
+              ),
     };
   }
 }
@@ -63,9 +72,16 @@ class EmptyReview extends StatelessWidget {
 
 /// Tóm tắt phiên ôn: số câu nhớ đúng, thời gian, nhắc rằng lịch ôn đã được cập nhật theo kết quả.
 class ReviewSummary extends StatelessWidget {
-  const ReviewSummary({super.key, required this.summary});
+  const ReviewSummary({
+    super.key,
+    required this.summary,
+    this.kanjiItems = const <ContentItem>[],
+  });
 
   final SessionSummary summary;
+
+  /// Các chữ Kanji vừa ôn: cho phép đánh dấu đã thành thạo để dừng ôn chữ đó (US3, research K7).
+  final List<ContentItem> kanjiItems;
 
   @override
   Widget build(BuildContext context) {
@@ -107,6 +123,7 @@ class ReviewSummary extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.bodySmall,
           ),
+          if (kanjiItems.isNotEmpty) _ReviewedKanji(items: kanjiItems),
           if (summary.dayCompleted ?? false) ...<Widget>[
             const SizedBox(height: 12),
             Text(
@@ -117,6 +134,61 @@ class ReviewSummary extends StatelessWidget {
           ],
           const SizedBox(height: 20),
           const Center(child: BackToTodayButton()),
+        ],
+      ),
+    );
+  }
+}
+
+/// Danh sách chữ Kanji vừa ôn kèm nút đánh dấu thành thạo (chữ hiển thị bằng phông Nhật đóng gói).
+class _ReviewedKanji extends StatelessWidget {
+  const _ReviewedKanji({required this.items});
+
+  final List<ContentItem> items;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Column(
+        key: const Key('review-kanji'),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(l10n.reviewKanjiHeading, style: theme.textTheme.titleMedium),
+          const SizedBox(height: 4),
+          Text(l10n.reviewKanjiHint, style: theme.textTheme.bodySmall),
+          const SizedBox(height: 8),
+          for (final item in items.where((i) => i.id != null))
+            Card(
+              key: Key('review-kanji-${item.id}'),
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      item.japanese ?? '',
+                      style: const TextStyle(
+                        fontFamily: kanjiFontFamily,
+                        fontSize: 36,
+                      ),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(item.meaning ?? ''),
+                          KanjiMasterToggle(itemId: item.id!),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
         ],
       ),
     );

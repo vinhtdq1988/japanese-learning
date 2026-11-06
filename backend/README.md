@@ -23,7 +23,7 @@ pnpm dev                             # http://localhost:3000
 | `pnpm lint` / `pnpm format:check` / `pnpm typecheck` | ESLint, Prettier, TypeScript.                                                                                                                                                              |
 | `pnpm admin:create --email <email>`                  | Tạo hoặc nâng quyền admin (xem bên dưới).                                                                                                                                                  |
 | `pnpm job:purge`                                     | Chạy tay job xóa cứng tài khoản quá 30 ngày chờ.                                                                                                                                           |
-| `pnpm report:metrics`                                | Báo cáo SC-003/SC-009/SC-011, xem [`src/reports/README.md`](src/reports/README.md).                                                                                                        |
+| `pnpm report:metrics`                                | Báo cáo SC-003/SC-009/SC-011 và Kanji SC-001/SC-008, xem [`src/reports/README.md`](src/reports/README.md).                                                                                 |
 
 ## Triển khai
 

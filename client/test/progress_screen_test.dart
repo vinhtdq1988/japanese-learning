@@ -15,6 +15,7 @@ Map<String, Object?> _summary({
   Object? scopeNotice,
   List<Map<String, Object?>> weakTopics = const <Map<String, Object?>>[],
   Object? reviewAccuracy = 0.75,
+  Map<String, Object?>? kanji,
 }) => <String, Object?>{
   'isEmpty': isEmpty,
   'totalMinutes': isEmpty ? 0 : 16.5,
@@ -27,6 +28,7 @@ Map<String, Object?> _summary({
     'targetDate': isEmpty ? null : targetDate,
     'scopeNotice': scopeNotice,
   },
+  'kanji': kanji,
   'weakTopics': weakTopics,
 };
 
@@ -154,6 +156,118 @@ void main() {
     expect(find.text('Trợ từ'), findsOneWidget);
     expect(find.text('Đúng 40% gần đây'), findsOneWidget);
     expect(_has('weak-none'), isFalse);
+  });
+
+  testWidgets('khối Kanji hiển thị bốn số liệu khi server trả kanji (US4)', (
+    tester,
+  ) async {
+    await _open(
+      tester,
+      summary: _summary(
+        kanji: <String, Object?>{
+          'charactersLearned': 9,
+          'lessonsCompleted': 2,
+          'minutes': 12.5,
+          'reviewAccuracy': 0.8,
+        },
+      ),
+    );
+    expect(_has('kanji-progress'), isTrue);
+    for (final (key, text) in <(String, String)>[
+      ('kanji-characters', '9'),
+      ('kanji-lessons', '2'),
+      ('kanji-time', '12,5 phút'),
+      ('kanji-accuracy', '80%'),
+    ]) {
+      expect(
+        find.descendant(of: find.byKey(Key(key)), matching: find.text(text)),
+        findsOneWidget,
+        reason: key,
+      );
+    }
+  });
+
+  testWidgets(
+    'khối Kanji: chưa ôn Kanji thì độ chính xác là "Chưa ôn lần nào"',
+    (tester) async {
+      await _open(
+        tester,
+        summary: _summary(
+          kanji: <String, Object?>{
+            'charactersLearned': 3,
+            'lessonsCompleted': 1,
+            'minutes': 5,
+            'reviewAccuracy': null,
+          },
+        ),
+      );
+      expect(
+        find.descendant(
+          of: find.byKey(const Key('kanji-accuracy')),
+          matching: find.text('Chưa ôn lần nào'),
+        ),
+        findsOneWidget,
+      );
+    },
+  );
+
+  testWidgets('khối Kanji ẩn khi kanji = null (người không chọn Kanji)', (
+    tester,
+  ) async {
+    await _open(tester, summary: _summary());
+    expect(_has('kanji-progress'), isFalse);
+    expect(_has('kanji-characters'), isFalse);
+  });
+
+  testWidgets('mảng yếu có nhãn kỹ năng (Kanji, từ vựng, ngữ pháp)', (
+    tester,
+  ) async {
+    await _open(
+      tester,
+      summary: _summary(
+        weakTopics: <Map<String, Object?>>[
+          <String, Object?>{
+            'topicId': 'tk',
+            'name': 'Thời gian',
+            'skill': 'kanji',
+            'accuracy': 0.3,
+          },
+          <String, Object?>{
+            'topicId': 'tv',
+            'name': 'Đồ ăn',
+            'skill': 'vocabulary',
+            'accuracy': 0.5,
+          },
+          <String, Object?>{
+            'topicId': 'tg',
+            'name': 'Trợ từ',
+            'skill': 'grammar',
+            'accuracy': 0.55,
+          },
+        ],
+      ),
+    );
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('weak-skill-tk')),
+        matching: find.text('Kanji'),
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('weak-skill-tv')),
+        matching: find.text('Từ vựng'),
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('weak-skill-tg')),
+        matching: find.text('Ngữ pháp'),
+      ),
+      findsOneWidget,
+    );
   });
 
   testWidgets('không có điểm yếu: lời nhắn khích lệ', (tester) async {

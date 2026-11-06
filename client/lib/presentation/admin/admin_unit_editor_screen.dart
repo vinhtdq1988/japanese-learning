@@ -139,6 +139,10 @@ class _UnitFormState extends ConsumerState<_UnitForm> {
     final l10n = AppLocalizations.of(context);
     final draft = _draft;
     final topics = ref.watch(adminTopicsProvider);
+    // Chủ đề Kanji cùng trình độ để chọn chủ đề của từng chữ (chỉ dùng với bài Kanji).
+    final kanjiTopics = (topics.asData?.value ?? const <AdminTopic>[])
+        .where((t) => t.skill == 'kanji' && t.level == draft.level)
+        .toList();
     return ListView(
       children: <Widget>[
         if (!draft.isNew)
@@ -167,6 +171,7 @@ class _UnitFormState extends ConsumerState<_UnitForm> {
             item: draft.items[i],
             index: i,
             kind: draft.kind,
+            kanjiTopics: kanjiTopics,
             onStructureChanged: _refresh,
             onRemove: () {
               final removed = draft.items.removeAt(i);
@@ -191,6 +196,7 @@ class _UnitFormState extends ConsumerState<_UnitForm> {
             key: ObjectKey(draft.exercises[i]),
             exercise: draft.exercises[i],
             index: i,
+            kind: draft.kind,
             items: draft.items,
             onStructureChanged: _refresh,
             onRemove: () {
@@ -371,6 +377,8 @@ class _BasicFields extends StatelessWidget {
               onChanged: (v) {
                 draft.kind = v;
                 draft.topicId = null;
+                // Bài Kanji không có tầng nền tảng.
+                if (v == 'kanji') draft.tier = 'core';
                 onChanged();
               },
             ),
@@ -386,7 +394,7 @@ class _BasicFields extends StatelessWidget {
                 onChanged();
               },
             ),
-            if (draft.level == 'N5')
+            if (draft.level == 'N5' && !draft.isKanji)
               _Select<String>(
                 fieldKey: const Key('field-tier'),
                 label: l10n.adminFieldTier,
@@ -501,6 +509,15 @@ class _BasicFields extends StatelessWidget {
               ),
           ],
         ),
+        if (draft.isKanji)
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              l10n.adminKanjiGoalTagsHint,
+              key: const Key('kanji-goal-hint'),
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+          ),
         const SizedBox(height: 12),
         I18nFields(
           owner: draft,

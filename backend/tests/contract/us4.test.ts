@@ -57,6 +57,7 @@ describe('GET /progress', () => {
       expect(t).toEqual({
         topicId: expect.any(String),
         name: expect.any(String),
+        skill: expect.stringMatching(/^(vocabulary|grammar|kanji)$/),
         accuracy: expect.any(Number),
       });
     }

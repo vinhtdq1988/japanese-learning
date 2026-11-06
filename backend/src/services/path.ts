@@ -16,6 +16,7 @@ import {
   type PlacementResultRow,
 } from '../db/repositories/placement.js';
 import { getProfile, updateProfile, type ProfileRow } from '../db/repositories/profiles.js';
+import { getItemKind, setItemMastered as setScheduleMastered } from '../db/repositories/review.js';
 import {
   closePausePeriod,
   hasCompletedUnitSession,
@@ -318,4 +319,34 @@ export async function setUnitMastered(
         ? 'raise_level'
         : 'content_exhausted',
   };
+}
+
+export interface ItemMasterResultDto {
+  itemId: string;
+  mastered: boolean;
+}
+
+/**
+ * `PUT /path/items/{itemId}/master` (research K7, FR-010): đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo.
+ * Đặt `mastered_at` cho mọi cặp (chữ, khía cạnh) nên chữ rời khỏi gói ôn; bỏ đánh dấu thì lịch tiếp tục từ
+ * `due_date` đã lưu. Idempotent. 404 khi chưa onboarding hoặc người học chưa học chữ (không có lịch ôn);
+ * 422 khi mục không phải Kanji (từ vựng/ngữ pháp giữ nguyên hành vi 001).
+ */
+export async function setItemMastered(
+  deps: ServiceDeps,
+  userId: string,
+  itemId: string,
+  mastered: boolean,
+): Promise<ItemMasterResultDto> {
+  await requireOnboardedProfile(deps.db, userId);
+  const kind = await getItemKind(deps.db, itemId);
+  if (kind === null) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy chữ này');
+  if (kind !== 'kanji') {
+    throw new AppError(422, 'VALIDATION_FAILED', 'Chỉ đánh dấu thành thạo được với chữ Kanji', {
+      itemId: 'mục không phải chữ Kanji',
+    });
+  }
+  const touched = await setScheduleMastered(deps.db, userId, itemId, mastered, deps.clock.now());
+  if (touched === 0) throw new AppError(404, 'NOT_FOUND', 'Bạn chưa học chữ này');
+  return { itemId, mastered };
 }

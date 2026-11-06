@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm';
 import type { DbExecutor } from '../db/client.js';
 import { getActivePath } from '../db/repositories/paths.js';
-import { findPlan, type DailyPlanItemRow } from '../db/repositories/plans.js';
+import { findPlan, reviewPairsOf, type DailyPlanItemRow } from '../db/repositories/plans.js';
 import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
 import {
   getDueDate,
@@ -206,9 +206,9 @@ async function startPlanItemSession(
 const REVIEW_TITLE: I18nText = { vi: 'Ôn tập', en: 'Review' };
 
 /**
- * Phiên ôn tập (`kind='review'`, T079): snapshot bài tập `active` của các mục trong gói ôn
- * (`review_item_ids`), mỗi mục một bài. Mục bị admin gỡ sau khi kế hoạch được sinh bị bỏ qua; không còn
- * mục nào để ôn thì 404 `NOT_FOUND` (lịch của các mục đó vẫn giữ nguyên).
+ * Phiên ôn tập (`kind='review'`, T079): snapshot bài tập `active` của các cặp trong gói ôn
+ * (`review_item_ids` + `review_facets`), mỗi cặp (mục, khía cạnh) một bài. Cặp bị admin gỡ sau khi kế hoạch
+ * được sinh bị bỏ qua; không còn cặp nào để ôn thì 404 `NOT_FOUND` (lịch của các cặp đó vẫn giữ nguyên).
  */
 async function startReviewSession(
   tx: DbExecutor,
@@ -218,11 +218,11 @@ async function startReviewSession(
   item: DailyPlanItemRow,
   planLocalDate: LocalDate,
 ): Promise<LessonSessionDto> {
-  const itemIds = item.reviewItemIds ?? [];
-  const content = await loadReviewContent(tx, itemIds);
+  const pairs = reviewPairsOf(item);
+  const content = await loadReviewContent(tx, [...new Set(pairs.map((p) => p.itemId))]);
   const snapshot = buildReviewSnapshot({
     title: REVIEW_TITLE,
-    itemIds,
+    pairs,
     items: content.items,
     exercises: content.exercises,
     language: profile.language,

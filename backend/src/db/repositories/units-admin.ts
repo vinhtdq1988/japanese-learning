@@ -1,4 +1,4 @@
-import { and, asc, eq } from 'drizzle-orm';
+import { and, asc, eq, ne } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import { contentItems, exercises, learningUnits, topics } from '../schema.js';
 
@@ -50,17 +50,63 @@ export async function lockUnit(db: DbExecutor, id: string): Promise<UnitRow | un
   return row;
 }
 
-/** Mọi mảng nội dung, theo trình độ rồi kỹ năng. */
-export async function listTopics(db: DbExecutor): Promise<TopicRow[]> {
+/** Mọi mảng nội dung (tùy chọn lọc theo kỹ năng), theo trình độ rồi kỹ năng. */
+export async function listTopics(
+  db: DbExecutor,
+  filters: { skill?: TopicRow['skill'] } = {},
+): Promise<TopicRow[]> {
   return db
     .select()
     .from(topics)
+    .where(filters.skill ? eq(topics.skill, filters.skill) : undefined)
     .orderBy(asc(topics.level), asc(topics.skill), asc(topics.createdAt), asc(topics.id));
 }
 
 export async function getTopic(db: DbExecutor, id: string): Promise<TopicRow | undefined> {
   const [row] = await db.select().from(topics).where(eq(topics.id, id)).limit(1);
   return row;
+}
+
+/** Đơn vị `active` đang chứa một chữ Kanji (cho quy tắc "chữ duy nhất", research K10). */
+export interface KanjiHolder {
+  unitId: string;
+  /** Định danh dễ đọc của đơn vị trong thông báo lỗi (tiêu đề tiếng Anh; DB không có slug). */
+  unitSlug: string;
+}
+
+/**
+ * Chữ Kanji đang nằm trong mục `active` của đơn vị Kanji `active`, kèm đơn vị chứa. `excludeUnitId` loại
+ * đơn vị đang kiểm tra để chữ của chính nó không bị tính là trùng.
+ */
+export async function listActiveKanjiCharacters(
+  db: DbExecutor,
+  excludeUnitId?: string,
+): Promise<Map<string, KanjiHolder>> {
+  const rows = await db
+    .select({
+      japanese: contentItems.japanese,
+      unitId: learningUnits.id,
+      title: learningUnits.title,
+    })
+    .from(contentItems)
+    .innerJoin(learningUnits, eq(contentItems.unitId, learningUnits.id))
+    .where(
+      and(
+        eq(learningUnits.kind, 'kanji'),
+        eq(learningUnits.status, 'active'),
+        eq(contentItems.kind, 'kanji'),
+        eq(contentItems.status, 'active'),
+        excludeUnitId ? ne(learningUnits.id, excludeUnitId) : undefined,
+      ),
+    )
+    .orderBy(asc(learningUnits.createdAt), asc(learningUnits.id));
+  const holders = new Map<string, KanjiHolder>();
+  for (const r of rows) {
+    if (!holders.has(r.japanese)) {
+      holders.set(r.japanese, { unitId: r.unitId, unitSlug: r.title.en || r.unitId });
+    }
+  }
+  return holders;
 }
 
 /** Mọi mục của đơn vị (cả `inactive`), theo `position`. */

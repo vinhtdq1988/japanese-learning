@@ -213,6 +213,10 @@ export const unitIdParamsSchema = z.object({
   unitId: z.uuid('unitId phải là UUID'),
 });
 
+export const itemIdParamsSchema = z.object({
+  itemId: z.uuid('itemId phải là UUID'),
+});
+
 export const setMasteredSchema = z.object({
   mastered: z.boolean({ error: 'mastered phải là true hoặc false' }),
 });

@@ -494,6 +494,368 @@ void main() {
     });
   });
 
+  group('bài Kanji', () {
+    final topics = <Map<String, Object?>>[
+      <String, Object?>{
+        'id': 't-vocab',
+        'skill': 'vocabulary',
+        'level': 'N5',
+        'name': <String, String>{'vi': 'Chào hỏi', 'en': 'Greetings'},
+      },
+      <String, Object?>{
+        'id': 't-kanji-n5',
+        'skill': 'kanji',
+        'level': 'N5',
+        'name': <String, String>{'vi': 'Số đếm', 'en': 'Numbers'},
+      },
+      <String, Object?>{
+        'id': 't-kanji-n4',
+        'skill': 'kanji',
+        'level': 'N4',
+        'name': <String, String>{'vi': 'Con người', 'en': 'People'},
+      },
+    ];
+
+    const onLabel = 'Âm On (katakana, cách nhau bằng dấu phẩy)';
+    const kunLabel =
+        'Âm Kun (hiragana, dùng "." tách okurigana, cách nhau bằng dấu phẩy)';
+    const strokesLabel = 'Số nét (1–30)';
+
+    Map<String, Object?> kanjiUnit() => <String, Object?>{
+      ..._unit('k1', 'draft', kind: 'kanji'),
+      'topicId': 't-kanji-n5',
+      'goalTags': <String>['jlpt'],
+      'items': <Object?>[
+        <String, Object?>{
+          'id': 'ki-1',
+          'status': 'active',
+          'japanese': '一',
+          'reading': null,
+          'topicId': 't-kanji-n5',
+          'meaning': <String, String>{'vi': 'một', 'en': 'one'},
+          'kanjiDetails': <String, Object?>{
+            'onReadings': <String>['イチ'],
+            'kunReadings': <String>['ひと.つ'],
+            'strokeCount': 1,
+            'components': null,
+          },
+          'examples': <Object?>[
+            <String, Object?>{
+              'ja': '一月',
+              'reading': 'いちがつ',
+              'kanjiReading': 'イチ',
+              'translation': <String, String>{
+                'vi': 'tháng Một',
+                'en': 'January',
+              },
+            },
+          ],
+        },
+      ],
+      'exercises': <Object?>[
+        <String, Object?>{
+          'id': 'ke-1',
+          'status': 'active',
+          'itemIndex': 0,
+          'facet': 'reading',
+          'type': 'fill_blank',
+          'prompt': <String, String>{'vi': 'Đọc', 'en': 'Read'},
+          'payload': <String, Object?>{
+            'accepted_answers': <String>['いち'],
+          },
+          'feedbackCorrect': <String, String>{'vi': 'Đúng', 'en': 'Correct'},
+          'feedbackIncorrect': <String, String>{'vi': 'Sai', 'en': 'Wrong'},
+        },
+      ],
+    };
+
+    Future<void> tapVisible(WidgetTester tester, Finder finder) async {
+      await tester.scrollUntilVisible(
+        finder,
+        200,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await tester.ensureVisible(finder);
+      await tester.pumpAndSettle();
+      await tester.tap(finder);
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets(
+      'chọn loại Kanji hiện nhóm trường Kanji; payload gửi đúng AdminUnitWrite',
+      (tester) async {
+        final env = await _open(
+          tester,
+          '/admin/units/new',
+          setup: (b) {
+            b.on('GET /admin/topics', (_) => FakeResponse(200, topics));
+            b.on(
+              'POST /admin/units',
+              (req) => FakeResponse(201, <String, Object?>{
+                ...requestJson(req),
+                'id': 'new-k',
+                'status': 'draft',
+                'isTrial': false,
+                'items': <Object?>[],
+                'exercises': <Object?>[],
+              }),
+            );
+            b.on(
+              'GET /admin/units/new-k',
+              (_) => FakeResponse(200, <String, Object?>{
+                ..._unit('new-k', 'draft', kind: 'kanji'),
+                'items': <Object?>[],
+                'exercises': <Object?>[],
+              }),
+            );
+          },
+        );
+
+        // Mặc định là từ vựng: chưa có gợi ý thẻ mục tiêu của Kanji.
+        expect(find.byKey(const Key('kanji-goal-hint')), findsNothing);
+        await tester.tap(find.byKey(const Key('field-kind')));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text('Kanji').last);
+        await tester.pumpAndSettle();
+        expect(find.byKey(const Key('kanji-goal-hint')), findsOneWidget);
+        // Bài Kanji không có tầng nền tảng.
+        expect(find.byKey(const Key('field-tier')), findsNothing);
+
+        // Chỉ chủ đề Kanji cùng trình độ N5 được chọn ở cấp đơn vị.
+        await tester.tap(find.byType(DropdownButtonFormField<String?>).first);
+        await tester.pumpAndSettle();
+        expect(find.text('Con người'), findsNothing);
+        await tester.tap(find.text('Số đếm').last);
+        await tester.pumpAndSettle();
+        await tapVisible(tester, find.byKey(const Key('goal-jlpt')));
+        await _type(tester, 'Tiêu đề (tiếng Việt)', 'Kanji số đếm');
+        await _type(tester, 'Tiêu đề (English)', 'Number kanji');
+
+        await _tapKey(tester, 'item-add');
+        expect(find.byKey(const Key('item-kanji-0')), findsOneWidget);
+        // Chữ Kanji không có ô "Cách đọc" đơn lẻ (âm On/Kun nằm ở nhóm Kanji).
+        expect(find.widgetWithText(TextFormField, 'Cách đọc'), findsNothing);
+        await _type(tester, 'Tiếng Nhật', '一');
+        await _type(tester, 'Nghĩa (tiếng Việt)', 'một');
+        await _type(tester, 'Nghĩa (English)', 'one');
+        await tapVisible(
+          tester,
+          find.descendant(
+            of: find.byKey(const Key('item-kanji-0')),
+            matching: find.byType(DropdownButtonFormField<String?>),
+          ),
+        );
+        await tester.tap(find.text('Số đếm').last);
+        await tester.pumpAndSettle();
+        await _type(tester, onLabel, 'イチ, イツ');
+        await _type(tester, kunLabel, 'ひと, ひと.つ');
+        await _type(tester, strokesLabel, '1');
+        await _type(tester, 'Thành phần (vi)', 'Một nét ngang');
+        await _type(tester, 'Thành phần (en)', 'One horizontal stroke');
+
+        await _tapKey(tester, 'example-add-0');
+        await _type(tester, 'Câu ví dụ (tiếng Nhật)', '一月');
+        await _type(tester, 'Cách đọc câu ví dụ', 'いちがつ');
+        await _type(tester, 'Chữ đọc là gì trong từ này', 'イチ');
+        await _type(tester, 'Dịch (tiếng Việt)', 'tháng Một');
+        await _type(tester, 'Dịch (English)', 'January');
+
+        await _tapKey(tester, 'exercise-add');
+        // Chưa gắn chữ thì chưa có ô khía cạnh.
+        expect(
+          find.widgetWithText(
+            DropdownButtonFormField<String>,
+            'Khía cạnh ôn tập',
+          ),
+          findsNothing,
+        );
+        await _type(tester, 'Câu hỏi (tiếng Việt)', '「一」đọc là gì?');
+        await _type(tester, 'Câu hỏi (English)', 'How is 「一」 read?');
+        await _type(tester, 'Lựa chọn 1', 'いち');
+        await _type(tester, 'Lựa chọn 2', 'に');
+
+        await tapVisible(
+          tester,
+          find.byType(DropdownButtonFormField<ItemDraft?>),
+        );
+        await tester.tap(find.text('1. 一').last);
+        await tester.pumpAndSettle();
+        final facetPicker = find.widgetWithText(
+          DropdownButtonFormField<String>,
+          'Khía cạnh ôn tập',
+        );
+        expect(facetPicker, findsOneWidget);
+        await tapVisible(tester, facetPicker);
+        await tester.tap(find.text('Cách đọc').last);
+        await tester.pumpAndSettle();
+
+        await _tapKey(tester, 'unit-save');
+
+        final body = requestJson(env.backend.sent('POST /admin/units').single);
+        expect(body['kind'], 'kanji');
+        expect(body['tier'], 'core');
+        expect(body['topicId'], 't-kanji-n5');
+        expect(body['goalTags'], <String>['jlpt']);
+        final item = (body['items']! as List<Object?>).single! as Map;
+        expect(item['japanese'], '一');
+        expect(item.containsKey('reading'), isFalse);
+        expect(item['topicId'], 't-kanji-n5');
+        expect(item['kanjiDetails'], <String, Object?>{
+          'onReadings': <String>['イチ', 'イツ'],
+          'kunReadings': <String>['ひと', 'ひと.つ'],
+          'strokeCount': 1,
+          'components': <String, Object?>{
+            'vi': 'Một nét ngang',
+            'en': 'One horizontal stroke',
+          },
+        });
+        expect(
+          ((item['examples']! as List<Object?>).single! as Map)['kanjiReading'],
+          'イチ',
+        );
+        final exercise = (body['exercises']! as List<Object?>).single! as Map;
+        expect(exercise['itemIndex'], 0);
+        expect(exercise['facet'], 'reading');
+        expect(env.backend.sent('GET /admin/units/new-k'), isNotEmpty);
+      },
+    );
+
+    testWidgets(
+      'sửa bài Kanji: nạp lại chi tiết và facet, số nét sai chặn lưu, lỗi 422 hiện theo đường dẫn',
+      (tester) async {
+        var puts = 0;
+        final unit = kanjiUnit();
+        final env = await _open(
+          tester,
+          '/admin/units/k1',
+          setup: (b) {
+            b.on('GET /admin/topics', (_) => FakeResponse(200, topics));
+            b.on('GET /admin/units/k1', (_) => FakeResponse(200, unit));
+            b.on('PUT /admin/units/k1', (_) {
+              puts += 1;
+              if (puts == 1) {
+                return const FakeResponse(422, <String, Object?>{
+                  'code': 'VALIDATION_FAILED',
+                  'message': 'Đơn vị chưa đủ điều kiện kích hoạt',
+                  'fields': <String, String>{
+                    'items[1].topicId': 'chữ Kanji phải có thẻ chủ đề Kanji',
+                    'goalTags': 'bài Kanji phải có ít nhất một thẻ mục tiêu',
+                  },
+                });
+              }
+              return FakeResponse(200, unit);
+            });
+          },
+        );
+
+        // Giá trị từ server được nạp vào form.
+        expect(
+          find.descendant(
+            of: find.byKey(const Key('kanji-on-0')),
+            matching: find.text('イチ'),
+          ),
+          findsOneWidget,
+        );
+        expect(
+          find.descendant(
+            of: find.byKey(const Key('kanji-strokes-0')),
+            matching: find.text('1'),
+          ),
+          findsOneWidget,
+        );
+        // Danh sách dựng lười: cuộn tới thẻ bài tập rồi mới kiểm tra ô khía cạnh.
+        await tester.scrollUntilVisible(
+          find.byKey(const Key('exercise-0')),
+          200,
+          scrollable: find.byType(Scrollable).first,
+        );
+        expect(
+          find.descendant(
+            of: find.widgetWithText(
+              DropdownButtonFormField<String>,
+              'Khía cạnh ôn tập',
+            ),
+            matching: find.text('Cách đọc'),
+          ),
+          findsOneWidget,
+        );
+
+        // Số nét ngoài 1–30 bị chặn ngay ở client.
+        await _type(tester, strokesLabel, '99');
+        await _tapKey(tester, 'unit-save');
+        expect(find.textContaining('trước khi lưu'), findsOneWidget);
+        expect(env.backend.sent('PUT /admin/units/k1'), isEmpty);
+        await _type(tester, strokesLabel, '3');
+
+        await _tapKey(tester, 'unit-save');
+        expect(find.byKey(const Key('admin-error-dialog')), findsOneWidget);
+        expect(
+          find.textContaining(
+            'items[1].topicId: chữ Kanji phải có thẻ chủ đề Kanji',
+          ),
+          findsOneWidget,
+        );
+        expect(
+          find.textContaining('goalTags: bài Kanji phải có ít nhất một thẻ'),
+          findsOneWidget,
+        );
+        await tester.tap(find.text('Đóng'));
+        await tester.pumpAndSettle();
+
+        await _tapKey(tester, 'unit-save');
+        final body = requestJson(env.backend.sent('PUT /admin/units/k1').last);
+        final item = (body['items']! as List<Object?>).single! as Map;
+        expect(item['id'], 'ki-1');
+        expect((item['kanjiDetails']! as Map)['strokeCount'], 3);
+        final exercise = (body['exercises']! as List<Object?>).single! as Map;
+        expect(exercise['id'], 'ke-1');
+        expect(exercise['facet'], 'reading');
+        // Hai lần gọi: lần đầu bị 422, lần sau thành công (thông báo "Đã lưu." xếp hàng sau snackbar lỗi cục bộ).
+        expect(puts, 2);
+      },
+    );
+
+    testWidgets('lọc danh sách theo loại Kanji gửi kind=kanji', (tester) async {
+      final env = await _open(
+        tester,
+        '/admin/units',
+        setup: (b) => b.on('GET /admin/units', (req) {
+          final kind = req.queryParameters['kind'];
+          final all = <Map<String, Object?>>[
+            _unit('v1', 'active'),
+            _unit('k1', 'draft', kind: 'kanji'),
+          ];
+          return FakeResponse(
+            200,
+            all.where((u) => kind == null || u['kind'] == kind).toList(),
+          );
+        }),
+      );
+      expect(find.byKey(const Key('unit-v1')), findsOneWidget);
+      expect(find.byKey(const Key('unit-k1')), findsOneWidget);
+      // Thẻ bài Kanji hiện đúng nhãn loại.
+      expect(
+        find.descendant(
+          of: find.byKey(const Key('unit-k1')),
+          matching: find.textContaining('Kanji'),
+        ),
+        findsWidgets,
+      );
+
+      await tester.tap(find.byKey(const Key('filter-kind')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Kanji').last);
+      await tester.pumpAndSettle();
+
+      expect(
+        env.backend.sent('GET /admin/units').last.queryParameters,
+        <String, dynamic>{'kind': 'kanji'},
+      );
+      expect(find.byKey(const Key('unit-v1')), findsNothing);
+      expect(find.byKey(const Key('unit-k1')), findsOneWidget);
+    });
+  });
+
   group('câu hỏi kiểm tra trình độ', () {
     List<Map<String, Object?>> questions() {
       var position = 0;
@@ -625,6 +987,31 @@ void main() {
         );
       },
     );
+
+    testWidgets('chọn kỹ năng của câu hỏi không có Kanji (research K12)', (
+      tester,
+    ) async {
+      await _open(
+        tester,
+        '/admin/placement',
+        setup: (b) {
+          b.on(
+            'GET /admin/placement-questions',
+            (_) => FakeResponse(200, questions()),
+          );
+          b.on(
+            'GET /admin/topics',
+            (_) => const FakeResponse(200, <Object?>[]),
+          );
+        },
+      );
+      await tester.tap(find.byKey(const Key('pq-create')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('pq-skill')));
+      await tester.pumpAndSettle();
+      expect(find.text('Ngữ pháp'), findsWidgets);
+      expect(find.text('Kanji'), findsNothing);
+    });
 
     testWidgets('thêm câu hỏi mới gửi đủ lựa chọn và đáp án đúng', (
       tester,

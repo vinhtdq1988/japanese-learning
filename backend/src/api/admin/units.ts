@@ -1,5 +1,6 @@
 import type { FastifyInstance } from 'fastify';
 import {
+  adminTopicListQuerySchema,
   adminUnitIdParamsSchema,
   adminUnitListQuerySchema,
   adminUnitStatusSchema,
@@ -22,7 +23,9 @@ import type { AdminGuard } from './guard.js';
 export function registerAdminUnitRoutes(api: FastifyInstance, guard: AdminGuard): void {
   const deps = api.deps;
 
-  api.get('/admin/topics', guard, async () => listAdminTopics(deps));
+  api.get('/admin/topics', guard, async (request) =>
+    listAdminTopics(deps, parseInput(adminTopicListQuerySchema, request.query)),
+  );
 
   api.get('/admin/units', guard, async (request) =>
     listAdminUnits(deps, parseInput(adminUnitListQuerySchema, request.query)),

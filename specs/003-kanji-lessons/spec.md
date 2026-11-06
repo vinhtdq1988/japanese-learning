@@ -4,7 +4,7 @@
 
 **Ngày tạo**: 2026-11-05
 
-**Trạng thái**: Đã lập kế hoạch ([plan.md](plan.md))
+**Trạng thái**: Đã triển khai ([plan.md](plan.md), [tasks.md](tasks.md)); còn kiểm chứng thủ công theo [quickstart.md](quickstart.md) (T088)
 
 **Giai đoạn**: Giai đoạn 1 – MVP (mô-đun Learning Content – Kanji N5–N3, nhận diện nghĩa/cách đọc, không luyện viết, theo hiến pháp v1.1.0). Spec `001-phase1-mvp` đã hoãn Kanji ra ngoài phạm vi của nó; spec này đảm nhận phần Kanji của Giai đoạn 1.
 

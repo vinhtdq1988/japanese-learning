@@ -42,6 +42,15 @@ class LessonScenario {
   /// `DailyPlan.kanjiNotice` server giả trả; null = không có thông báo.
   Map<String, Object?>? kanjiNotice;
 
+  /// `true` → phiên ôn là phiên ôn Kanji: câu 1 mang `facet = meaning` và danh sách mục có chữ Kanji `it-k1`.
+  bool kanjiReview = false;
+
+  /// Trạng thái thành thạo mà server giả đã lưu cho từng chữ Kanji (id mục → đã đánh dấu).
+  final Map<String, bool> mastered = <String, bool>{};
+
+  /// `true` → `PUT /path/items/{id}/master` trả lỗi 500 (mô phỏng lỗi lưu).
+  bool masterFails = false;
+
   /// Thêm một gói ôn (`review_batch`, 3 mục) vào kế hoạch hôm nay (US3).
   void addReviewBatch() => itemStatus['item-review'] = 'pending';
 
@@ -74,7 +83,8 @@ class LessonScenario {
     <String, Object?>{
       'id': 'ex-1',
       'type': 'multiple_choice',
-      'prompt': '「水」nghĩa là gì?',
+      if (kanjiReview) 'facet': 'meaning',
+      'prompt': kanjiReview ? '「日」nghĩa là gì?' : '「水」nghĩa là gì?',
       'payload': <String, Object?>{
         'choices': <String>['Trà', 'Nước', 'Cơm'],
       },
@@ -120,6 +130,20 @@ class LessonScenario {
             },
           ],
         },
+        if (kanjiReview && kind == 'review')
+          <String, Object?>{
+            'id': 'it-k1',
+            'kind': 'kanji',
+            'japanese': '日',
+            'reading': null,
+            'meaning': 'ngày, mặt trời',
+            'kanji': <String, Object?>{
+              'onReadings': <String>['ニチ', 'ジツ'],
+              'kunReadings': <String>['ひ'],
+              'strokeCount': 4,
+            },
+            'examples': <Map<String, Object?>>[],
+          },
       ],
       'exercises': _exercises,
       'answered': <Map<String, Object?>>[
@@ -291,6 +315,21 @@ class LessonScenario {
         });
       });
     }
+
+    backend.on('PUT /path/items/it-k1/master', (r) {
+      if (masterFails) {
+        return const FakeResponse(500, <String, Object?>{
+          'code': 'INTERNAL_ERROR',
+          'message': 'Lỗi hệ thống',
+        });
+      }
+      final value = requestJson(r)['mastered']! as bool;
+      mastered['it-k1'] = value;
+      return FakeResponse(200, <String, Object?>{
+        'itemId': 'it-k1',
+        'mastered': value,
+      });
+    });
 
     backend.on('POST /today/extra', (_) {
       if (extraUnits.isEmpty) {

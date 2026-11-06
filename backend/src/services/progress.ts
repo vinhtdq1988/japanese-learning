@@ -2,18 +2,26 @@ import { getActivePath } from '../db/repositories/paths.js';
 import { getProfile } from '../db/repositories/profiles.js';
 import {
   countCompletedUnits,
+  countKanjiCharactersLearned,
+  countKanjiLessonsCompleted,
+  countKanjiReviewResults,
   countReviewResults,
   getTopicNames,
+  getTopicSkills,
   hasAnyStudyData,
+  hasKanjiStudyData,
   listActiveDays,
+  listKanjiLessonIntervals,
   listPausePeriods,
+  listReviewSessionKanjiShares,
   listUserIntervals,
 } from '../db/repositories/progress.js';
 import { listWeakTopicStats } from '../db/repositories/topic-stats.js';
 import { localize } from '../domain/i18n.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
+import type { Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
-import { currentStreakDays, isOnTrack } from '../engine/progress.js';
+import { allocateKanjiSeconds, currentStreakDays, isOnTrack } from '../engine/progress.js';
 import { upcomingUnits, type ScopeNotice } from '../engine/path.js';
 import type { ServiceDeps } from './deps.js';
 import { secondsToMinutes } from './lesson-session.js';
@@ -39,7 +47,22 @@ export interface ProgressDto {
     targetDate: string | null;
     scopeNotice: ScopeNotice | null;
   };
-  weakTopics: { topicId: string; name: string; accuracy: number }[];
+  /**
+   * Khối Kanji (research K8); null khi người học không chọn Kanji và chưa có dữ liệu học Kanji. Các trường tổng
+   * ở trên đã bao gồm Kanji.
+   */
+  kanji: KanjiProgressDto | null;
+  weakTopics: { topicId: string; name: string; skill: Skill; accuracy: number }[];
+}
+
+export interface KanjiProgressDto {
+  /** Số chữ có ít nhất một khía cạnh đã lên lịch ôn (và bài chứa chữ đã hoàn thành). */
+  charactersLearned: number;
+  lessonsCompleted: number;
+  /** Phút học Kanji; phần của phiên ôn hỗn hợp là ước lượng theo tỷ lệ câu Kanji (FR-017). */
+  minutes: number;
+  /** Đúng/tổng câu ôn Kanji (gộp các khía cạnh); null khi chưa ôn Kanji. */
+  reviewAccuracy: number | null;
 }
 
 const round3 = (value: number): number => Math.round(value * 1000) / 1000;
@@ -52,6 +75,7 @@ function emptySummary(): ProgressDto {
     reviewAccuracy: null,
     currentStreakDays: 0,
     goal: { completionRatio: 0, onTrack: null, targetDate: null, scopeNotice: null },
+    kanji: null,
     weakTopics: [],
   };
 }
@@ -83,10 +107,12 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
   const remaining = upcomingUnits(ranked);
   const remainingMinutes = remaining.reduce((sum, u) => sum + u.estMinutes, 0);
 
-  const names = await getTopicNames(
-    deps.db,
-    weak.map((w) => w.topicId),
-  );
+  const weakIds = weak.map((w) => w.topicId);
+  const [names, topicSkills, kanji] = await Promise.all([
+    getTopicNames(deps.db, weakIds),
+    getTopicSkills(deps.db, weakIds),
+    kanjiProgress(deps, userId, profile.skills.includes('kanji')),
+  ]);
 
   return {
     isEmpty: !hasData,
@@ -105,10 +131,46 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
       targetDate: profile.targetDate,
       scopeNotice: params.scopeNotice,
     },
+    kanji,
     weakTopics: weak.map((w) => ({
       topicId: w.topicId,
       name: localize(names.get(w.topicId), profile.language),
+      skill: topicSkills.get(w.topicId) ?? 'vocabulary',
       accuracy: round3(w.accuracy ?? 0),
     })),
+  };
+}
+
+/**
+ * Khối Kanji của tiến độ (research K8): số chữ, số bài, phút và độ chính xác ôn. Null khi người học không chọn
+ * Kanji và chưa có dữ liệu Kanji nào (người học không chọn Kanji thấy tiến độ như cũ).
+ */
+async function kanjiProgress(
+  deps: ServiceDeps,
+  userId: string,
+  selected: boolean,
+): Promise<KanjiProgressDto | null> {
+  if (!selected && !(await hasKanjiStudyData(deps.db, userId))) return null;
+  const [characters, lessons, lessonIntervals, shares, review] = await Promise.all([
+    countKanjiCharactersLearned(deps.db, userId),
+    countKanjiLessonsCompleted(deps.db, userId),
+    listKanjiLessonIntervals(deps.db, userId),
+    listReviewSessionKanjiShares(deps.db, userId),
+    countKanjiReviewResults(deps.db, userId),
+  ]);
+  // Phiên bài Kanji: hợp khoảng thời gian; phiên ôn hỗn hợp: phân bổ theo tỷ lệ câu Kanji (ước lượng).
+  const seconds =
+    unionDurationSeconds(lessonIntervals) +
+    shares.reduce(
+      (sum, s) =>
+        sum +
+        allocateKanjiSeconds(unionDurationSeconds(s.intervals), s.kanjiPrimary, s.totalPrimary),
+      0,
+    );
+  return {
+    charactersLearned: characters,
+    lessonsCompleted: lessons,
+    minutes: secondsToMinutes(seconds),
+    reviewAccuracy: review.total > 0 ? round3(review.correct / review.total) : null,
   };
 }

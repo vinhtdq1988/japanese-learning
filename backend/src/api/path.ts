@@ -1,5 +1,6 @@
 import type { FastifyInstance } from 'fastify';
 import {
+  itemIdParamsSchema,
   rebuildPathSchema,
   setMasteredSchema,
   unitIdParamsSchema,
@@ -9,6 +10,7 @@ import {
   pausePath,
   rebuildPath,
   resumePath,
+  setItemMastered,
   setUnitMastered,
 } from '../services/path.js';
 import { parseInput } from './errors.js';
@@ -46,5 +48,12 @@ export function registerPathRoutes(api: FastifyInstance): void {
     const { unitId } = parseInput(unitIdParamsSchema, request.params);
     const { mastered } = parseInput(setMasteredSchema, request.body);
     return setUnitMastered(deps, currentUserId(request), unitId, mastered);
+  });
+
+  // Chỉ chữ Kanji (research K7): dừng / tiếp tục ôn mọi khía cạnh của chữ.
+  api.put('/path/items/:itemId/master', secured, async (request) => {
+    const { itemId } = parseInput(itemIdParamsSchema, request.params);
+    const { mastered } = parseInput(setMasteredSchema, request.body);
+    return setItemMastered(deps, currentUserId(request), itemId, mastered);
   });
 }

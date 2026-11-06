@@ -80,8 +80,18 @@ String pickText(BuildContext context, I18nDraft text) {
   return primary.trim().isNotEmpty ? primary : (vi ? text.en : text.vi);
 }
 
-String unitKindLabel(AppLocalizations l10n, String kind) =>
-    kind == 'grammar' ? l10n.adminKindGrammar : l10n.adminKindVocabulary;
+String unitKindLabel(AppLocalizations l10n, String kind) => switch (kind) {
+  'grammar' => l10n.adminKindGrammar,
+  'kanji' => l10n.adminKindKanji,
+  _ => l10n.adminKindVocabulary,
+};
+
+/// Nhãn khía cạnh ôn tập của bài tập gắn chữ Kanji.
+String facetLabel(AppLocalizations l10n, String facet) => switch (facet) {
+  'reading' => l10n.adminFacetReading,
+  'word' => l10n.adminFacetWord,
+  _ => l10n.adminFacetMeaning,
+};
 
 String tierLabel(AppLocalizations l10n, String tier) =>
     tier == 'foundation' ? l10n.adminTierFoundation : l10n.adminTierCore;

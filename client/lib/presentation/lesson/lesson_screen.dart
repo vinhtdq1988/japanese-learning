@@ -13,6 +13,7 @@ import '../review/review_view.dart';
 import '../shared/state_views.dart';
 import 'exercises/exercise_view.dart';
 import 'kanji/kanji_card.dart';
+import 'kanji/kanji_master_toggle.dart';
 import 'lesson_controller.dart';
 
 /// Màn hình bài học (T069): giải thích từ vựng/ngữ pháp → bài tập có phản hồi tức thì → hỏi lại câu sai
@@ -558,15 +559,23 @@ class _AttentionKanji extends StatelessWidget {
             runSpacing: 8,
             children: <Widget>[
               for (final item in items)
-                Chip(
-                  key: Key('attention-${item.itemId}'),
-                  label: Text(
-                    item.japanese,
-                    style: const TextStyle(
-                      fontFamily: kanjiFontFamily,
-                      fontSize: 28,
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Chip(
+                      key: Key('attention-${item.itemId}'),
+                      label: Text(
+                        item.japanese,
+                        style: const TextStyle(
+                          fontFamily: kanjiFontFamily,
+                          fontSize: 28,
+                        ),
+                      ),
                     ),
-                  ),
+                    // Chữ đã thuộc hẳn có thể đánh dấu thành thạo để dừng ôn (US3, research K7).
+                    KanjiMasterToggle(itemId: item.itemId),
+                  ],
                 ),
             ],
           ),

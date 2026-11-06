@@ -373,7 +373,7 @@ class _QuestionDialogState extends ConsumerState<_QuestionDialog> {
                         isDense: true,
                       ),
                       items: <DropdownMenuItem<String>>[
-                        for (final k in kUnitKinds)
+                        for (final k in kPlacementSkills)
                           DropdownMenuItem<String>(
                             value: k,
                             child: Text(unitKindLabel(l10n, k)),
