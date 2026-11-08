@@ -22,6 +22,9 @@ class MemoryTokenStore implements TokenStore {
 class MemoryLocalStore implements LocalStore {
   final Map<String, String> _values = <String, String>{};
 
+  /// Bản chụp mọi khóa đang lưu, để kiểm thử khẳng định một tính năng KHÔNG ghi gì vào bộ nhớ cục bộ.
+  Map<String, String> get snapshot => Map<String, String>.unmodifiable(_values);
+
   @override
   Future<String?> getString(String key) async => _values[key];
 
@@ -75,4 +78,33 @@ class MemoryFileTransfer implements FileTransfer {
   @override
   Future<void> saveCsv(String filename, List<int> bytes) async =>
       saved.add((filename: filename, bytes: List<int>.unmodifiable(bytes)));
+}
+
+/// `SoundPlayer` trong bộ nhớ cho kiểm thử: ghi lại cue đã phát thay vì phát thật.
+class MemorySoundPlayer implements SoundPlayer {
+  MemorySoundPlayer({this.throwOnPlay = false});
+
+  /// Các cue đã phát theo thứ tự.
+  final List<SoundCue> played = <SoundCue>[];
+
+  /// Số lần gọi `stopAll` (kể cả do `play` thay cue trước, chỉ được controller gọi tường minh).
+  int stopAllCount = 0;
+
+  /// Số lần gọi `prime` (mở khóa âm thanh trong thao tác người học).
+  int primeCount = 0;
+
+  /// Bật để mô phỏng lỗi nền tảng: `play` ném lỗi, controller PHẢI nuốt êm (FR-024).
+  bool throwOnPlay;
+
+  @override
+  Future<void> prime() async => primeCount++;
+
+  @override
+  Future<void> play(SoundCue cue) async {
+    if (throwOnPlay) throw StateError('MemorySoundPlayer: lỗi phát giả lập');
+    played.add(cue);
+  }
+
+  @override
+  Future<void> stopAll() async => stopAllCount++;
 }

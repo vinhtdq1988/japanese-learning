@@ -1,0 +1,48 @@
+{
+  "id": "reward-newcomer",
+  "description": "Người mới hoàn thành bài học đầu tiên (không hoàn hảo): chỉ nhận first_lesson (spec 005, US2.1).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {},
+  "reward": {
+    "setup": {
+      "streakDaysBeforeToday": 0,
+      "itemsLearnedBefore": 0,
+      "completedLessonsBefore": 0
+    },
+    "input": {
+      "earned": [],
+      "isNewLesson": true,
+      "streakBefore": 0,
+      "streakAfter": 1,
+      "itemsBefore": 0,
+      "itemsAfter": 8,
+      "goalDone": 1,
+      "goalTotal": 40,
+      "delta": 1,
+      "hasEarlierLesson": false,
+      "isPerfect": false,
+      "hadEarlierPerfect": false
+    },
+    "expected": {
+      "celebrate": ["first_lesson"],
+      "silent": []
+    }
+  }
+}

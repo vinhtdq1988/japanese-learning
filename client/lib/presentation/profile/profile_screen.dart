@@ -10,6 +10,7 @@ import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../auth/auth_support.dart' show AuthValidators;
 import '../classroom/locked_control.dart';
+import '../effects/effects_settings_section.dart';
 import '../path/plan_adjust_screen.dart' show invalidatePlanViews;
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
@@ -62,6 +63,8 @@ class _ProfileBodyState extends State<_ProfileBody> {
             onChanged: (me) => setState(() => _me = me),
           ),
           const _PlanSection(),
+          // Tùy chọn hiệu ứng không bị khóa khi học viên thuộc lớp (spec 005, US3) nên không dùng `LockedControl`.
+          const EffectsSettingsSection(),
           ChangeEmailSection(onChanged: (me) => setState(() => _me = me)),
           const ChangePasswordSection(),
           const _SignOutSection(),

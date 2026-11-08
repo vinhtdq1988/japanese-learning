@@ -15,6 +15,7 @@ void main() {
         timezoneProvider.overrideWithValue(WebTimezone()),
         linksProvider.overrideWithValue(WebLinks()),
         fileTransferProvider.overrideWithValue(WebFileTransfer()),
+        soundPlayerProvider.overrideWithValue(WebSoundPlayer()),
       ],
       child: const JapaneseLearningApp(),
     ),

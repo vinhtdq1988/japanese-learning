@@ -66,11 +66,18 @@ export async function listPlanItemStatuses(
   return rows.map((r) => r.status);
 }
 
-export async function markPlanCompleted(db: DbExecutor, planId: string, now: Date): Promise<void> {
-  await db
+/** Đánh dấu kế hoạch ngày hoàn thành; trả true nếu lời gọi này vừa chuyển nó sang `completed`. */
+export async function markPlanCompleted(
+  db: DbExecutor,
+  planId: string,
+  now: Date,
+): Promise<boolean> {
+  const rows = await db
     .update(dailyPlans)
     .set({ status: 'completed', completedAt: now })
-    .where(and(eq(dailyPlans.id, planId), ne(dailyPlans.status, 'completed')));
+    .where(and(eq(dailyPlans.id, planId), ne(dailyPlans.status, 'completed')))
+    .returning({ id: dailyPlans.id });
+  return rows.length > 0;
 }
 
 // --- Phiên học ---
@@ -217,6 +224,20 @@ export async function ensureUnitInProgress(
     .insert(unitProgress)
     .values({ userId, unitId, status: 'in_progress', updatedAt: now })
     .onConflictDoNothing({ target: [unitProgress.userId, unitProgress.unitId] });
+}
+
+/** Trạng thái tiến độ hiện tại của đơn vị (undefined nếu người học chưa có dòng tiến độ). */
+export async function getUnitProgressStatus(
+  db: DbExecutor,
+  userId: string,
+  unitId: string,
+): Promise<'in_progress' | 'completed' | 'mastered' | undefined> {
+  const [row] = await db
+    .select({ status: unitProgress.status })
+    .from(unitProgress)
+    .where(and(eq(unitProgress.userId, userId), eq(unitProgress.unitId, unitId)))
+    .limit(1);
+  return row?.status;
 }
 
 /** Đặt `completed`; đơn vị người học đã đánh dấu `mastered` giữ nguyên. */

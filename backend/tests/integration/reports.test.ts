@@ -15,7 +15,8 @@ import {
 } from './org-helpers.js';
 import { addDays } from '../../src/engine/clock.js';
 
-// Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129): SC-003, SC-009, SC-011, Kanji SC-001, SC-008 và lớp học SC-010
+// Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129, T076): SC-003, SC-009, SC-011, Kanji SC-001, SC-008, lớp học SC-010
+// và hiệu ứng thưởng SC-006, SC-007 (spec 005)
 // trên dữ liệu dựng sẵn.
 // Thời điểm lộ trình/phiên học được "già hóa" bằng UPDATE để nhóm đủ chín mà không cần chờ.
 
@@ -83,6 +84,8 @@ describe('bộ truy vấn báo cáo', () => {
       'kanji_first_plan_has_kanji_ratio',
       'kanji_completed_within_3_days_ratio',
       'sc010_class_week4_active_days',
+      'sc006_effects_disabled_ratio',
+      'sc007_next_day_return_after_plan_completion',
     ]);
     for (const name of queries.keys()) await expect(run(name)).resolves.toBeDefined();
   });
@@ -379,5 +382,115 @@ describe('Lớp SC-010: học >= 3 ngày trong tuần thứ 4 kể từ khi vào
       dat_muc_tieu: false,
     });
     expect(rows[1]).toMatchObject({ lop: 'TONG', so_hoc_vien: 3, hoc_3_ngay_tuan_4: 1 });
+  });
+});
+
+/** Ngày địa phương (Asia/Ho_Chi_Minh) của đồng hồ CSDL — các truy vấn báo cáo dùng `now()` thật, không dùng đồng hồ giả. */
+async function dbToday(): Promise<string> {
+  const rows = await query<{ d: string }>(
+    ctx,
+    `SELECT (now() AT TIME ZONE 'Asia/Ho_Chi_Minh')::date::text AS d`,
+  );
+  return rows[0]!.d;
+}
+
+describe('Spec 005 SC-006: tỷ lệ tắt cả hai hiệu ứng', () => {
+  it('chỉ tính người học đã hoạt động >= 14 ngày và chỉ coi là tắt khi CẢ HAI tùy chọn đều false', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const today = await dbToday();
+    const [topic] = await distinctTopicExercises(ctx, 1);
+    const bothOff = await onboardedLearner(api, ctx);
+    const soundOnly = await onboardedLearner(api, ctx);
+    const defaults = await onboardedLearner(api, ctx);
+    const freshBothOff = await onboardedLearner(api, ctx);
+    for (const l of [bothOff, soundOnly, defaults]) {
+      await seedAnswers(ctx, l.userId, answersFor(topic!, addDays(today, -20), 1, 1));
+    }
+    await seedAnswers(ctx, freshBothOff.userId, answersFor(topic!, addDays(today, -5), 1, 1));
+    await query(
+      ctx,
+      `UPDATE learning_profiles SET sound_enabled = false, visual_effects_enabled = false WHERE user_id = ANY($1::uuid[])`,
+      [[bothOff.userId, freshBothOff.userId]],
+    );
+    await query(ctx, `UPDATE learning_profiles SET sound_enabled = false WHERE user_id = $1`, [
+      soundOnly.userId,
+    ]);
+
+    const [row] = await run('sc006_effects_disabled_ratio');
+    // `freshBothOff` mới hoạt động 5 ngày nên chưa thuộc nhóm; còn lại 1/3 tắt cả hai ⇒ 33,3% (không đạt < 20%).
+    expect(row).toMatchObject({
+      so_nguoi_hoc: 3,
+      tat_ca_hai: 1,
+      ty_le_pct: '33.3',
+      gioi_han_pct: 20,
+      dat_muc_tieu: false,
+    });
+  });
+
+  it('chưa có người học đủ 14 ngày thì tỷ lệ rỗng, không lỗi chia cho 0', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const [row] = await run('sc006_effects_disabled_ratio');
+    expect(row).toMatchObject({ so_nguoi_hoc: 0, tat_ca_hai: 0, ty_le_pct: null, dat_muc_tieu: null });
+  });
+});
+
+describe('Spec 005 SC-007: quay lại ngày kế tiếp sau ngày hoàn thành kế hoạch', () => {
+  it('chưa có dòng thành tựu (chưa ra mắt) thì mọi cột tỷ lệ là NULL', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const [row] = await run('sc007_next_day_return_after_plan_completion');
+    expect(row).toMatchObject({
+      ngay_ra_mat: null,
+      truoc_ty_le_pct: null,
+      sau_ty_le_pct: null,
+      chenh_lech_diem: null,
+    });
+  });
+
+  it('so 28 ngày trước ngày ra mắt với giai đoạn từ ngày ra mắt; bỏ ngày chưa trôi qua, kế hoạch mở và ngoài cửa sổ', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const today = await dbToday();
+    const day = (offset: number) => addDays(today, offset);
+    const [topic] = await distinctTopicExercises(ctx, 1);
+    const learner = await onboardedLearner(api, ctx);
+
+    // Ngày ra mắt = ngày có dòng thành tựu sớm nhất (10 ngày trước).
+    await query(
+      ctx,
+      `INSERT INTO earned_achievements (user_id, achievement_code, earned_at, source)
+       VALUES ($1, 'first_lesson', $2::timestamptz, 'earned')`,
+      [learner.userId, `${day(-10)}T05:00:00Z`],
+    );
+    const plan = (offset: number, status: 'completed' | 'open' = 'completed') =>
+      query(
+        ctx,
+        `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes, status, completed_at)
+         VALUES ($1, $2::date, 15, 15, $3::plan_status, $4::timestamptz)`,
+        [learner.userId, day(offset), status, status === 'completed' ? new Date() : null],
+      );
+    // Trước ra mắt (cửa sổ 28 ngày: từ -38 đến -11): -15 không quay lại, -14 quay lại ⇒ 1/2 = 50%.
+    await plan(-15);
+    await plan(-14);
+    await plan(-60); // ngoài cửa sổ trước ⇒ bị bỏ dù ngày sau có học
+    await plan(-12, 'open'); // kế hoạch chưa hoàn thành ⇒ bị bỏ
+    // Từ ngày ra mắt: -5 (quay lại, có học ngày -4), -3 (quay lại, có học ngày -2), -2 (không học ngày -1) ⇒ 2/3.
+    await plan(-5);
+    await plan(-3);
+    await plan(-2);
+    await plan(0); // hôm nay: ngày kế tiếp chưa trôi qua ⇒ bị bỏ
+    for (const offset of [-59, -14, -4, -2]) {
+      await seedAnswers(ctx, learner.userId, answersFor(topic!, day(offset), 1, 1));
+    }
+    // -14 vừa là ngày quay lại của kế hoạch -15 vừa là ngày kế hoạch -14 (ngày sau -13 không học ⇒ không quay lại).
+
+    const [row] = await run('sc007_next_day_return_after_plan_completion');
+    expect(row).toMatchObject({
+      ngay_ra_mat: expect.anything(),
+      truoc_so_ngay_hoan_thanh: 2,
+      truoc_ty_le_pct: '50.0',
+      sau_so_ngay_hoan_thanh: 3,
+      sau_ty_le_pct: '66.7',
+      chenh_lech_diem: '16.7',
+      muc_tieu_diem: 5,
+    });
   });
 });

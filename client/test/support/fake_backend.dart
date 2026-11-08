@@ -120,6 +120,9 @@ class TestEnv {
   final MemoryTokenStore tokenStore;
   final MemoryLocalStore localStore;
   final FixedTimezone timezone;
+
+  /// Trình phát âm thanh trong bộ nhớ: kiểm thử đọc `played` thay vì nghe thật (spec 005).
+  final MemorySoundPlayer soundPlayer = MemorySoundPlayer();
   late final Dio dio;
 
   List<Override> get overrides => <Override>[
@@ -127,6 +130,7 @@ class TestEnv {
     localStoreProvider.overrideWithValue(localStore),
     timezoneProvider.overrideWithValue(timezone),
     linksProvider.overrideWithValue(RecordingLinks()),
+    soundPlayerProvider.overrideWithValue(soundPlayer),
     dioProvider.overrideWithValue(dio),
   ];
 

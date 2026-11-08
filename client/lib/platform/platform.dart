@@ -2,6 +2,8 @@
 // dưới đây. Giai đoạn 1 chỉ có triển khai web (`web/`); Android/iOS thêm sau bằng cách viết triển khai
 // mới cho cùng giao diện (ví dụ lưu token vào secure storage) mà không đụng vào domain/data/presentation.
 
+export 'sound_player.dart';
+
 /// Cặp token đăng nhập được lưu giữa các lần mở ứng dụng.
 class StoredTokens {
   const StoredTokens({required this.accessToken, required this.refreshToken});

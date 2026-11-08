@@ -4,6 +4,8 @@ import 'package:japanese_api/japanese_api.dart';
 import '../../data/api/api_error.dart';
 import '../../data/event_queue.dart';
 import '../../data/lesson_repository.dart';
+import '../effects/correct_streak.dart';
+import '../effects/effects_controller.dart';
 
 /// Giai đoạn của một phiên học: giải thích → bài tập → hỏi lại câu sai một lần (R6) → tóm tắt.
 enum LessonPhase { intro, exercises, retry, summary }
@@ -46,6 +48,7 @@ class LessonState {
     this.completeOffline = false,
     this.errorCode,
     this.summary,
+    this.correctStreak = 0,
   });
 
   final LessonSession session;
@@ -70,6 +73,10 @@ class LessonState {
   final String? errorCode;
   final SessionSummary? summary;
 
+  /// Số câu đúng liên tiếp (chỉ lượt chính) trong phiên này (spec 005, US4). Chỉ nằm trong bộ nhớ: mất khi
+  /// controller bị hủy, không lưu, không gọi mạng.
+  final int correctStreak;
+
   Exercise? get exercise => index < queue.length ? queue[index] : null;
   bool get isLastQuestion => index >= queue.length - 1;
 
@@ -89,6 +96,7 @@ class LessonState {
     String? errorCode,
     bool clearError = false,
     SessionSummary? summary,
+    int? correctStreak,
   }) {
     return LessonState(
       session: session,
@@ -104,6 +112,7 @@ class LessonState {
       completeOffline: completeOffline ?? this.completeOffline,
       errorCode: clearError ? null : (errorCode ?? this.errorCode),
       summary: summary ?? this.summary,
+      correctStreak: correctStreak ?? this.correctStreak,
     );
   }
 }
@@ -247,9 +256,17 @@ class LessonController
       final s = _s;
       final wrong = Set<String>.of(s.wrongIds);
       final answered = Set<String>.of(s.answeredIds);
+      var streak = CorrectStreak(s.correctStreak);
+      int? milestone;
       if (!p.isRetry) {
         answered.add(p.exercise.id);
         if (result.isCorrect == false) wrong.add(p.exercise.id);
+        // Kết quả trùng không phải câu mới (nhất quán với hiệu ứng): không đổi bộ đếm.
+        if (result.duplicate != true) {
+          final step = streak.record(correct: result.isCorrect ?? false);
+          streak = step.next;
+          milestone = step.milestone;
+        }
       }
       state = AsyncData(
         s.copyWith(
@@ -258,8 +275,10 @@ class LessonController
           submitting: false,
           answeredIds: answered,
           wrongIds: wrong,
+          correctStreak: streak.count,
         ),
       );
+      _notifyAnswered(result, streakMilestone: milestone);
       await _recordInterval(s.session.id!);
     } on ApiError catch (e) {
       state = AsyncData(
@@ -271,6 +290,36 @@ class LessonController
                 errorCode: e.code,
               ),
       );
+    }
+  }
+
+  /// Phát hiệu ứng phản hồi cho kết quả MỚI của server (FR-001/002). Kết quả trùng (`duplicate == true`, gửi lại
+  /// một câu đã ghi) không phát lại; khôi phục phiên dở và xả hàng đợi ngoại tuyến không đi qua đây. Hiệu ứng
+  /// chỉ phụ thêm: mọi lỗi bị nuốt để không làm hỏng luồng học, và không đọc tốc độ trả lời (FR-009).
+  void _notifyAnswered(AnswerResult result, {int? streakMilestone}) {
+    if (result.duplicate == true) return;
+    try {
+      ref
+          .read(effectsControllerProvider.notifier)
+          .onAnswer(
+            correct: result.isCorrect ?? false,
+            streakMilestone: streakMilestone,
+          );
+    } on Object {
+      // Bỏ qua: xem ghi chú ở trên.
+    }
+  }
+
+  /// Chúc mừng thành tựu/hoàn thành ngày của lần hoàn thành MỚI (spec 005, US2): server chỉ trả `celebrations`
+  /// ở lần `complete` thực sự hoàn thành phiên và vắng khi gọi lại, nên client không tự tính mốc nào. Hiệu ứng
+  /// chỉ phụ thêm: mọi lỗi bị nuốt để không làm hỏng việc hiện tóm tắt bài.
+  void _notifyCelebrations(SessionSummary summary) {
+    final celebrations = summary.celebrations;
+    if (celebrations == null) return;
+    try {
+      ref.read(effectsControllerProvider.notifier).onCelebrations(celebrations);
+    } on Object {
+      // Bỏ qua: xem ghi chú ở trên.
     }
   }
 
@@ -310,6 +359,7 @@ class LessonController
           clearCurrent: true,
         ),
       );
+      _notifyCelebrations(summary);
     } on ApiError catch (e) {
       state = AsyncData(
         e.isNetwork

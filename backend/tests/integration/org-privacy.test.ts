@@ -55,6 +55,13 @@ const FORBIDDEN_KEYS = new Set([
   'currentLevel',
   'targetDate',
   'prioritizedSkill',
+  // Spec 005 (T078): thành tựu và tùy chọn hiệu ứng là chuyện riêng của người học, không lộ cho giáo viên/tổ chức.
+  'celebrations',
+  'achievements',
+  'earnedAchievements',
+  'dayCompleted',
+  'soundEnabled',
+  'visualEffectsEnabled',
 ]);
 
 /** Khóa chỉ dành cho dữ liệu học của học viên: quản trị viên hệ thống KHÔNG được thấy ở bất kỳ route nào (FR-002). */
@@ -221,6 +228,16 @@ beforeAll(async () => {
   await seedAnswers(ctx, lrn, answersFor(topic!, '2000-01-01', 40, 0)); // rất lâu trước khi vào lớp
   await seedAnswers(ctx, lrn, answersFor(topic!, new Date().toISOString().slice(0, 10), 4, 3));
   await api.raw('POST', `/classes/${world.classC}/placement-requests`, { token: world.tokens.OWN });
+  // Spec 005: học viên của lớp có thành tựu và tắt hiệu ứng — mọi DTO lớp/tổ chức vẫn không được lộ chúng.
+  await ctx.handle.pool.query(
+    `INSERT INTO earned_achievements (user_id, achievement_code, earned_at, source)
+     VALUES ($1, 'first_lesson', now(), 'earned'), ($1, 'streak_3', now(), 'earned')`,
+    [lrn],
+  );
+  await ctx.handle.pool.query(
+    `UPDATE learning_profiles SET sound_enabled = false, visual_effects_enabled = false WHERE user_id = $1`,
+    [lrn],
+  );
 });
 afterAll(async () => {
   await ctx.close();

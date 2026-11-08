@@ -7,6 +7,10 @@ import '../../data/locale_provider.dart';
 import '../../data/trial_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
+import '../effects/answer_effect.dart';
+import '../effects/correct_streak.dart';
+import '../effects/effects_controller.dart';
+import '../effects/effects_quick_control.dart';
 import '../lesson/exercises/exercise_view.dart';
 import '../lesson/lesson_screen.dart';
 import '../shared/page_frame.dart';
@@ -36,6 +40,18 @@ class _TrialLessonScreenState extends ConsumerState<TrialLessonScreen> {
   /// Đơn vị vừa học xong, đang hiển thị màn hình tổng kết trước khi sang đơn vị kế.
   TrialUnitData? _doneUnit;
   bool _finishing = false;
+
+  /// Đúng liên tiếp của lần dùng thử này (spec 005, US4): chỉ trong bộ nhớ của màn hình, giữ qua các đơn vị,
+  /// KHÔNG nằm trong `TrialState` vì trạng thái đó được lưu vào `LocalStore`.
+  final ValueNotifier<CorrectStreak> _streak = ValueNotifier<CorrectStreak>(
+    const CorrectStreak(),
+  );
+
+  @override
+  void dispose() {
+    _streak.dispose();
+    super.dispose();
+  }
 
   Future<void> _onUnitFinished(TrialUnitData unit) async {
     // Đặt trước khi lưu: lưu xong sẽ đổi trạng thái và dựng lại, không được nhảy sang đơn vị kế.
@@ -88,6 +104,8 @@ class _TrialLessonScreenState extends ConsumerState<TrialLessonScreen> {
       title: l10n.trialTitle,
       showNavigation: false,
       actions: <Widget>[
+        // Khách không có trang Hồ sơ: cả hai tùy chọn nằm ngay trong bài, chỉ lưu trong bộ nhớ (spec 005, US3).
+        const EffectsQuickControl(showVisualToggle: true),
         TextButton(
           key: const Key('trial-back'),
           onPressed: () => context.go(AppRoutes.trial),
@@ -140,6 +158,7 @@ class _TrialLessonScreenState extends ConsumerState<TrialLessonScreen> {
       position: pendingIndex + 1,
       total: units.length,
       answers: trial.answers,
+      streak: _streak,
       onFinished: () => _onUnitFinished(unit),
     );
   }
@@ -153,6 +172,7 @@ class _UnitFlow extends ConsumerStatefulWidget {
     required this.position,
     required this.total,
     required this.answers,
+    required this.streak,
     required this.onFinished,
   });
 
@@ -162,6 +182,9 @@ class _UnitFlow extends ConsumerStatefulWidget {
 
   /// Câu trả lời đã lưu tại thời điểm vào đơn vị (chỉ dùng để khôi phục vị trí).
   final Map<String, bool> answers;
+
+  /// Bộ đếm đúng liên tiếp dùng chung giữa các đơn vị của lần dùng thử.
+  final ValueNotifier<CorrectStreak> streak;
   final VoidCallback onFinished;
 
   @override
@@ -207,6 +230,13 @@ class _UnitFlowState extends ConsumerState<_UnitFlow> {
     final data = _exercises[_index];
     final result = data.grade(answer);
     setState(() => _result = result);
+    // Phản hồi âm thanh/hình ảnh ngay sau chấm cục bộ. Khách không có thành tựu nên KHÔNG gọi onCelebrations (FR-018).
+    final correct = result.isCorrect ?? false;
+    final step = widget.streak.value.record(correct: correct);
+    widget.streak.value = step.next;
+    final effects = ref.read(effectsControllerProvider.notifier);
+    effects.prime();
+    effects.onAnswer(correct: correct, streakMilestone: step.milestone);
     ref
         .read(trialStateProvider.notifier)
         .recordAnswer(data.exercise.id, correct: result.isCorrect ?? false);
@@ -261,37 +291,39 @@ class _UnitFlowState extends ConsumerState<_UnitFlow> {
     if (_index >= _exercises.length) return const LoadingView();
     final data = _exercises[_index];
     final total = _exercises.length;
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          header,
-          const SizedBox(height: 8),
-          LinearProgressIndicator(value: (_index + 1) / total),
-          const SizedBox(height: 4),
-          Text(
-            l10n.lessonProgress(_index + 1, total),
-            key: const Key('lesson-progress'),
-            style: theme.textTheme.bodySmall,
-          ),
-          const SizedBox(height: 16),
-          ExerciseView(
-            exercise: data.exercise,
-            enabled: _result == null,
-            result: _result,
-            onSubmit: _submit,
-          ),
-          const SizedBox(height: 16),
-          if (_result != null)
-            LessonFeedback(
-              exercise: data.exercise,
-              result: _result!,
-              showNextReview: false,
-              isLast: _index == total - 1,
-              busy: false,
-              onContinue: _next,
+    return AnswerEffect(
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            header,
+            const SizedBox(height: 8),
+            LinearProgressIndicator(value: (_index + 1) / total),
+            const SizedBox(height: 4),
+            Text(
+              l10n.lessonProgress(_index + 1, total),
+              key: const Key('lesson-progress'),
+              style: theme.textTheme.bodySmall,
             ),
-        ],
+            const SizedBox(height: 16),
+            ExerciseView(
+              exercise: data.exercise,
+              enabled: _result == null,
+              result: _result,
+              onSubmit: _submit,
+            ),
+            const SizedBox(height: 16),
+            if (_result != null)
+              LessonFeedback(
+                exercise: data.exercise,
+                result: _result!,
+                showNextReview: false,
+                isLast: _index == total - 1,
+                busy: false,
+                onContinue: _next,
+              ),
+          ],
+        ),
       ),
     );
   }

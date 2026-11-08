@@ -137,7 +137,9 @@ describe('hoàn thành ngày (US2.3)', () => {
     const plan = await getToday(api, learner);
     const { session, summary } = await finishPlanItem(api, ctx, learner, plan.items[0].id);
     const again = await api.post(`/sessions/${session.id}/complete`, { token: learner.token });
-    expect(again.body).toEqual(summary);
+    // `celebrations` (spec 005) chỉ có ở lần hoàn thành thật sự; gọi lại trả đúng phần còn lại và không có nó.
+    expect(again.body).toEqual({ ...summary, celebrations: undefined });
+    expect(again.body).not.toHaveProperty('celebrations');
   });
 });
 

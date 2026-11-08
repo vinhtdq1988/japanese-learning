@@ -46,6 +46,10 @@ class ProfileUpdate {
     this.language,
 
     this.timezone,
+
+    this.soundEnabled,
+
+    this.visualEffectsEnabled,
   });
 
   @JsonKey(name: r'displayName', required: false, includeIfNull: false)
@@ -86,6 +90,13 @@ class ProfileUpdate {
   @JsonKey(name: r'timezone', required: false, includeIfNull: false)
   final String? timezone;
 
+  /// Chỉ hai trường hiệu ứng: không sinh lại lộ trình, không đụng kế hoạch, không cần `currentPassword`, học viên thuộc lớp vẫn sửa được (spec 005).
+  @JsonKey(name: r'soundEnabled', required: false, includeIfNull: false)
+  final bool? soundEnabled;
+
+  @JsonKey(name: r'visualEffectsEnabled', required: false, includeIfNull: false)
+  final bool? visualEffectsEnabled;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -101,7 +112,9 @@ class ProfileUpdate {
           other.prioritizedSkill == prioritizedSkill &&
           other.skills == skills &&
           other.language == language &&
-          other.timezone == timezone;
+          other.timezone == timezone &&
+          other.soundEnabled == soundEnabled &&
+          other.visualEffectsEnabled == visualEffectsEnabled;
 
   @override
   int get hashCode =>
@@ -116,7 +129,9 @@ class ProfileUpdate {
       (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
       skills.hashCode +
       language.hashCode +
-      timezone.hashCode;
+      timezone.hashCode +
+      soundEnabled.hashCode +
+      visualEffectsEnabled.hashCode;
 
   factory ProfileUpdate.fromJson(Map<String, dynamic> json) =>
       _$ProfileUpdateFromJson(json);

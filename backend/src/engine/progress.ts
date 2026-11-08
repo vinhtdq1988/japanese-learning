@@ -1,6 +1,7 @@
 import { addDays, diffDays } from './clock.js';
 import { isPausedOn, MAX_REVIEW_SHARE, type PausePeriod } from './daily-plan.js';
 import type { LocalDate } from '../domain/types.js';
+import type { RankedStatus } from './path.js';
 
 // Tính toán tiến độ thuần hàm (research R7, R11; FR-027, FR-028): chuỗi ngày học, ngày vắng và đánh giá
 // "đúng tiến độ" so với mốc thời gian mục tiêu. Không phụ thuộc HTTP/CSDL/đồng hồ.
@@ -37,6 +38,25 @@ export function currentStreakDays(
     cursor = addDays(cursor, -1);
   }
   return streak;
+}
+
+const round3 = (value: number): number => Math.round(value * 1000) / 1000;
+
+/**
+ * Tiến độ mục tiêu từ danh sách đơn vị đã xếp hạng (gồm `mastered`): `done` = số đơn vị đã hoàn thành hoặc thành
+ * thạo, `total` = số đơn vị trong phạm vi. MỘT nguồn duy nhất cho `GET /progress` và thành tựu `goal_*` (spec 005).
+ */
+export function goalRatio(ranked: readonly { status: RankedStatus }[]): {
+  done: number;
+  total: number;
+  ratio: number;
+} {
+  const done = ranked.filter((r) => r.status === 'completed' || r.status === 'mastered').length;
+  return {
+    done,
+    total: ranked.length,
+    ratio: ranked.length > 0 ? round3(done / ranked.length) : 0,
+  };
 }
 
 export interface OnTrackInput {

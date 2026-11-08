@@ -49,6 +49,7 @@ class SharedDataDisclosure {
   @JsonKey(name: r'canLeaveAnytime', required: true, includeIfNull: false)
   final bool canLeaveAnytime;
 
+  /// Luôn false: trung tâm KHÔNG tự chuyển học viên sang lớp khác; chỉ mời và học viên phải đồng ý lại
   @JsonKey(
     name: r'mayBeMovedWithinOrganization',
     required: true,

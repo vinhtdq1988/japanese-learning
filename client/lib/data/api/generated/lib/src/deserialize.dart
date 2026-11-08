@@ -1,3 +1,4 @@
+import 'package:japanese_api/src/model/achievement_earned.dart';
 import 'package:japanese_api/src/model/admin_action_log.dart';
 import 'package:japanese_api/src/model/admin_organization_create.dart';
 import 'package:japanese_api/src/model/admin_organization_detail.dart';
@@ -22,6 +23,7 @@ import 'package:japanese_api/src/model/answer_result.dart';
 import 'package:japanese_api/src/model/answer_submission.dart';
 import 'package:japanese_api/src/model/archive_class200_response.dart';
 import 'package:japanese_api/src/model/auth_tokens.dart';
+import 'package:japanese_api/src/model/celebrations.dart';
 import 'package:japanese_api/src/model/change_password_request.dart';
 import 'package:japanese_api/src/model/class_assignment.dart';
 import 'package:japanese_api/src/model/class_brief.dart';
@@ -167,6 +169,10 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'double':
       return (value is double ? value : double.parse('$value')) as ReturnType;
     case 'AccountStatus':
+    case 'AchievementEarned':
+      return AchievementEarned.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
+    case 'AchievementKind':
     case 'AdminActionLog':
       return AdminActionLog.fromJson(value as Map<String, dynamic>)
           as ReturnType;
@@ -245,6 +251,8 @@ ReturnType deserialize<ReturnType, BaseType>(
           as ReturnType;
     case 'AuthTokens':
       return AuthTokens.fromJson(value as Map<String, dynamic>) as ReturnType;
+    case 'Celebrations':
+      return Celebrations.fromJson(value as Map<String, dynamic>) as ReturnType;
     case 'ChangePasswordRequest':
       return ChangePasswordRequest.fromJson(value as Map<String, dynamic>)
           as ReturnType;

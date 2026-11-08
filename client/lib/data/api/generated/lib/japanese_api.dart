@@ -21,6 +21,8 @@ export 'package:japanese_api/src/api/progress_api.dart';
 export 'package:japanese_api/src/api/trial_api.dart';
 
 export 'package:japanese_api/src/model/account_status.dart';
+export 'package:japanese_api/src/model/achievement_earned.dart';
+export 'package:japanese_api/src/model/achievement_kind.dart';
 export 'package:japanese_api/src/model/admin_action_log.dart';
 export 'package:japanese_api/src/model/admin_organization_create.dart';
 export 'package:japanese_api/src/model/admin_organization_detail.dart';
@@ -45,6 +47,7 @@ export 'package:japanese_api/src/model/answer_result.dart';
 export 'package:japanese_api/src/model/answer_submission.dart';
 export 'package:japanese_api/src/model/archive_class200_response.dart';
 export 'package:japanese_api/src/model/auth_tokens.dart';
+export 'package:japanese_api/src/model/celebrations.dart';
 export 'package:japanese_api/src/model/change_password_request.dart';
 export 'package:japanese_api/src/model/class_alert.dart';
 export 'package:japanese_api/src/model/class_assignment.dart';

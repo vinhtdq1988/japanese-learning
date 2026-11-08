@@ -1,0 +1,57 @@
+{
+  "id": "reward-veteran",
+  "description": "Người học cũ chuỗi 20 ngày, 120 mục, chưa có dòng thành tựu nào: mọi mốc đã vượt ghi âm thầm, không chúc mừng dồn dập (FR-017).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {},
+  "reward": {
+    "setup": {
+      "streakDaysBeforeToday": 20,
+      "itemsLearnedBefore": 120,
+      "completedLessonsBefore": 15
+    },
+    "input": {
+      "earned": [],
+      "isNewLesson": true,
+      "streakBefore": 20,
+      "streakAfter": 21,
+      "itemsBefore": 120,
+      "itemsAfter": 125,
+      "goalDone": 12,
+      "goalTotal": 40,
+      "delta": 1,
+      "hasEarlierLesson": true,
+      "isPerfect": false,
+      "hadEarlierPerfect": true
+    },
+    "expected": {
+      "celebrate": [],
+      "silent": [
+        "first_lesson",
+        "perfect_lesson",
+        "streak_3",
+        "streak_7",
+        "streak_14",
+        "items_50",
+        "items_100",
+        "goal_25"
+      ]
+    }
+  }
+}

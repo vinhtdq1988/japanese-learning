@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **notVisible** | **List&lt;String&gt;** | mật khẩu/phiên, hoạt động trước ngày vào lớp, từng câu trả lời, dữ liệu hồ sơ ngoài danh sách | 
 **lockedControls** | **List&lt;String&gt;** | các quyền bị khóa khi thuộc lớp | 
 **canLeaveAnytime** | **bool** |  | 
-**mayBeMovedWithinOrganization** | **bool** |  | 
+**mayBeMovedWithinOrganization** | **bool** | Luôn false: trung tâm KHÔNG tự chuyển học viên sang lớp khác; chỉ mời và học viên phải đồng ý lại | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

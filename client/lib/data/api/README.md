@@ -55,7 +55,15 @@ final today = await api.getDailyApi().getToday();          // tên hàm = operat
 
 Chạy lại lệnh trên mỗi khi `openapi.yaml` đổi `info.version`.
 
-## Phiên bản hợp đồng hiện tại: OpenAPI 1.12.0 (spec 004)
+## Phiên bản hợp đồng hiện tại: OpenAPI 1.13.0 (spec 005)
+
+Client sinh từ **OpenAPI 1.13.0** (chỉ bổ sung, không route mới, không mã lỗi mới): `SessionSummary.celebrations` (tùy chọn,
+`Celebrations` gồm `dayCompleted` + `achievements[]` kiểu `AchievementEarned`/`AchievementKind`) và `Profile`/`ProfileUpdate`
+thêm `soundEnabled`, `visualEffectsEnabled` (mặc định `true`). Sau khi sinh, chạy `dart format lib doc` trong `generated/`
+để diff gọn như các lần trước, và xóa các tệp `generated/test/*_test.dart` mà generator tự tạo (kho mã không giữ chúng).
+Các thay đổi 1.12.0 bên dưới vẫn giữ nguyên.
+
+### Ghi chú 1.12.0 (spec 004)
 
 Client sinh từ **OpenAPI 1.12.0** (bổ sung, không phá hợp đồng 1.11.0): nhóm `classes`, `classroom`, `org` và các
 route `/admin/organizations*`, `/org*`, `/classes*`, `/invitations/{token}*`, `/me/class*`; `Me` thêm `learningSource`,

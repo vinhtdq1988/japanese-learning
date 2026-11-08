@@ -65,6 +65,12 @@ const KANJI_PREFIX = 'kanji-';
  */
 export const CLASS_PREFIX = 'class-';
 
+/**
+ * Tiền tố file của nhóm hồ sơ thưởng/thành tựu (spec 005, FR-035 của hiến pháp). Loader riêng
+ * (`loadRewardProfiles`) và KHÔNG lẫn vào `loadLearnerProfiles()` để golden `plans-pre-org.json` không lệch.
+ */
+export const REWARD_PREFIX = 'reward-';
+
 function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[] {
   return readdirSync(DIR)
     .filter((f) => f.endsWith('.json') && accept(f))
@@ -74,7 +80,10 @@ function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[
 
 /** Đọc mọi hồ sơ đại diện CŨ (không chọn Kanji, không thuộc lớp), sắp theo `id`. */
 export function loadLearnerProfiles(): LearnerProfileFixture[] {
-  return readProfiles((f) => !f.startsWith(KANJI_PREFIX) && !f.startsWith(CLASS_PREFIX));
+  return readProfiles(
+    (f) =>
+      !f.startsWith(KANJI_PREFIX) && !f.startsWith(CLASS_PREFIX) && !f.startsWith(REWARD_PREFIX),
+  );
 }
 
 /** Đọc các file hồ sơ có tên bắt đầu bằng `prefix`, sắp theo `id` (dùng cho loader nhóm hồ sơ riêng). */
@@ -92,6 +101,38 @@ export function loadKanjiProfile(id: string): LearnerProfileFixture {
   const found = loadKanjiProfiles().find((p) => p.id === id);
   if (!found) throw new Error(`Không có hồ sơ Kanji "${id}"`);
   return found;
+}
+
+/** Đầu vào của `evaluate` ở dạng JSON (tập `earned` là mảng) và kết quả mong đợi. */
+export interface RewardFixture extends LearnerProfileFixture {
+  reward: {
+    /** Dữ liệu dựng cho kiểm thử tích hợp (số ngày học liên tiếp trước hôm nay, số mục đã học…). */
+    setup: {
+      streakDaysBeforeToday: number;
+      itemsLearnedBefore: number;
+      completedLessonsBefore: number;
+    };
+    input: {
+      earned: string[];
+      isNewLesson: boolean;
+      streakBefore: number;
+      streakAfter: number;
+      itemsBefore: number;
+      itemsAfter: number;
+      goalDone: number;
+      goalTotal: number;
+      delta: number;
+      hasEarlierLesson: boolean;
+      isPerfect: boolean;
+      hadEarlierPerfect: boolean;
+    };
+    expected: { celebrate: string[]; silent: string[] };
+  };
+}
+
+/** Đọc nhóm hồ sơ thưởng (spec 005), sắp theo `id`. */
+export function loadRewardProfiles(): RewardFixture[] {
+  return readProfilesWithPrefix<RewardFixture>(REWARD_PREFIX);
 }
 
 export function loadLearnerProfile(id: string): LearnerProfileFixture {

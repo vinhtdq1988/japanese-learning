@@ -1,0 +1,48 @@
+{
+  "id": "reward-goal-jump",
+  "description": "Đổi mục tiêu làm tỷ lệ nhảy qua mốc 25% và 50%: ghi âm thầm; chỉ mốc 75% do chính bài vừa học được chúc mừng (FR-017a).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {},
+  "reward": {
+    "setup": {
+      "streakDaysBeforeToday": 0,
+      "itemsLearnedBefore": 10,
+      "completedLessonsBefore": 3
+    },
+    "input": {
+      "earned": ["first_lesson"],
+      "isNewLesson": true,
+      "streakBefore": 1,
+      "streakAfter": 2,
+      "itemsBefore": 10,
+      "itemsAfter": 14,
+      "goalDone": 8,
+      "goalTotal": 10,
+      "delta": 1,
+      "hasEarlierLesson": true,
+      "isPerfect": false,
+      "hadEarlierPerfect": false
+    },
+    "expected": {
+      "celebrate": ["goal_75"],
+      "silent": ["goal_25", "goal_50"]
+    }
+  }
+}

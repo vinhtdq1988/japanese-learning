@@ -62,6 +62,12 @@ import {
 } from '../engine/difficulty.js';
 import { upcomingUnits } from '../engine/path.js';
 import { accuracyOf, dueDateAfter, nextSrsState, RECENT_ACCURACY_WINDOW } from '../engine/srs.js';
+import {
+  evaluateOnSessionCompletion,
+  prepareAchievementContext,
+  snapshotBeforeCompletion,
+  type CelebrationsDto,
+} from './achievements.js';
 import type { ServiceDeps } from './deps.js';
 import { rankForContext, resolveLearningContext } from './learning-context.js';
 import { notOnboarded } from './path.js';
@@ -97,6 +103,11 @@ export interface SessionSummaryDto {
   dayCompleted: boolean;
   /** Chữ Kanji có câu lượt chính sai trong phiên (US1.4); vắng mặt với phiên không có Kanji. */
   attentionItems?: { itemId: string; japanese: string }[];
+  /**
+   * Thành tựu/hoàn thành ngày vừa đạt (spec 005): CHỈ có ở phản hồi của lần `complete` thực sự hoàn thành
+   * phiên và khi có gì để chúc mừng; gọi lại trên phiên đã xong không bao giờ trả trường này.
+   */
+  celebrations?: CelebrationsDto;
 }
 
 /** Số phút (làm tròn 0,1) từ số giây. */
@@ -549,13 +560,17 @@ async function summarizeSession(
 /**
  * `POST /sessions/{sessionId}/complete`: chỉ hoàn thành khi mọi bài tập đã có câu trả lời lượt chính
  * được server ghi nhận (409 `SESSION_INCOMPLETE` nếu còn thiếu). Cập nhật mục kế hoạch, kế hoạch ngày
- * và `unit_progress` trong cùng giao dịch; gọi lại trên phiên đã xong chỉ trả lại tóm tắt.
+ * và `unit_progress` trong cùng giao dịch; gọi lại trên phiên đã xong chỉ trả lại tóm tắt. Cũng trong giao dịch
+ * này, đánh giá thành tựu/hoàn thành ngày (spec 005) và trả kết quả MỘT LẦN ở `celebrations`.
  */
 export async function completeSession(
   deps: ServiceDeps,
   userId: string,
   sessionId: string,
 ): Promise<SessionSummaryDto> {
+  // Ngữ cảnh học dùng kết nối thường nên nạp trước giao dịch (chỉ khi còn mốc cần đến nó).
+  const achievementContext = await prepareAchievementContext(deps, userId);
+
   return deps.db.transaction(async (tx) => {
     const session = await requireSession(tx, userId, sessionId, { forUpdate: true });
     if (session.status === 'completed') return summarizeSession(tx, deps, userId, session);
@@ -567,15 +582,21 @@ export async function completeSession(
     }
 
     const now = deps.clock.now();
+    // Trạng thái "trước" của thành tựu phải chụp trước khi đánh dấu phiên/đơn vị hoàn thành.
+    const before = await snapshotBeforeCompletion(tx, userId, session);
     await markSessionCompleted(tx, session.id, now);
 
+    let dayJustCompleted = false;
+    let planLocalDate: LocalDate | null = null;
     if (session.planItemId) {
       await setPlanItemStatus(tx, session.planItemId, 'completed');
       const found = await getPlanItemForUser(tx, userId, session.planItemId);
       if (found) {
         const statuses = await listPlanItemStatuses(tx, found.plan.id);
-        if (statuses.every((s) => s === 'completed'))
-          await markPlanCompleted(tx, found.plan.id, now);
+        if (statuses.every((s) => s === 'completed')) {
+          dayJustCompleted = await markPlanCompleted(tx, found.plan.id, now);
+          planLocalDate = found.plan.localDate;
+        }
       }
     }
     if (session.unitId && session.kind !== 'review') {
@@ -583,6 +604,16 @@ export async function completeSession(
     }
     await updateDifficultyAfterSession(tx, userId, session.id);
 
-    return summarizeSession(tx, deps, userId, session);
+    const celebrations = await evaluateOnSessionCompletion(tx, deps, {
+      userId,
+      session,
+      before,
+      context: achievementContext,
+      dayJustCompleted,
+      planLocalDate,
+      now,
+    });
+    const summary = await summarizeSession(tx, deps, userId, session);
+    return celebrations ? { ...summary, celebrations } : summary;
   });
 }

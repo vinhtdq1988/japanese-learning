@@ -2003,8 +2003,8 @@ class ClassesApi {
     );
   }
 
-  /// Chuyển học viên sang lớp khác trong cùng tổ chức (giữ seat, tiến độ, lịch ôn)
-  ///
+  /// Mời học viên chuyển sang lớp khác trong cùng tổ chức (học viên PHẢI đồng ý lại; khi đồng ý giữ seat, tiến độ, lịch ôn)
+  /// Không chuyển ngay (Hiến pháp III): tạo lời mời &#x60;student&#x60; tới lớp đích gửi cho học viên; chỉ khi học viên chấp nhận qua &#x60;POST /invitations/{token}/respond&#x60; (&#x60;join_class&#x60; + &#x60;confirmed&#x60;) mới đóng thành viên lớp cũ (&#x60;moved&#x60;) và mở thành viên lớp đích, giữ nguyên seat. Người gọi phải là chủ tổ chức hoặc giáo viên phụ trách cả hai lớp; lớp đích ngoài phạm vi ⇒ 404 chung. 409 &#x60;CLASS_FULL&#x60;/&#x60;CLASS_NOT_READY&#x60;/&#x60;CLASS_ARCHIVED&#x60;.
   ///
   /// Parameters:
   /// * [id]

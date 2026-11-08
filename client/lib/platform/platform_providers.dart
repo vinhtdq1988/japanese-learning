@@ -23,3 +23,6 @@ final linksProvider = Provider<Links>((ref) => throw _missing('Links'));
 final fileTransferProvider = Provider<FileTransfer>(
   (ref) => throw _missing('FileTransfer'),
 );
+final soundPlayerProvider = Provider<SoundPlayer>(
+  (ref) => throw _missing('SoundPlayer'),
+);

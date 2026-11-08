@@ -162,6 +162,11 @@ export const profileUpdateSchema = z.object({
   skills: skillsSchema.optional(),
   language: languageSchema.optional(),
   timezone: timezoneSchema.optional(),
+  // Tùy chọn hiệu ứng (spec 005): độc lập nhau, chỉ lưu, không thuộc nhóm trường bị khóa của lớp.
+  soundEnabled: z.boolean({ error: 'Âm thanh phải là true hoặc false' }).optional(),
+  visualEffectsEnabled: z
+    .boolean({ error: 'Hiệu ứng hình ảnh phải là true hoặc false' })
+    .optional(),
 });
 export type ProfileUpdateInput = z.infer<typeof profileUpdateSchema>;
 

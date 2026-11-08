@@ -1,0 +1,48 @@
+{
+  "id": "reward-perfect",
+  "description": "Bài học thứ hai hoàn hảo (mọi câu lượt chính đúng): nhận perfect_lesson (US2.1).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {},
+  "reward": {
+    "setup": {
+      "streakDaysBeforeToday": 1,
+      "itemsLearnedBefore": 8,
+      "completedLessonsBefore": 1
+    },
+    "input": {
+      "earned": ["first_lesson"],
+      "isNewLesson": true,
+      "streakBefore": 1,
+      "streakAfter": 2,
+      "itemsBefore": 8,
+      "itemsAfter": 16,
+      "goalDone": 2,
+      "goalTotal": 40,
+      "delta": 1,
+      "hasEarlierLesson": true,
+      "isPerfect": true,
+      "hadEarlierPerfect": false
+    },
+    "expected": {
+      "celebrate": ["perfect_lesson"],
+      "silent": []
+    }
+  }
+}

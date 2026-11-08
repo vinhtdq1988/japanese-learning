@@ -3,6 +3,7 @@
 //
 
 // ignore_for_file: unused_element
+import 'package:japanese_api/src/model/celebrations.dart';
 import 'package:japanese_api/src/model/session_summary_attention_items_inner.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
@@ -28,6 +29,8 @@ class SessionSummary {
     this.dayCompleted,
 
     this.attentionItems,
+
+    this.celebrations,
   });
 
   @JsonKey(name: r'correct', required: false, includeIfNull: false)
@@ -46,6 +49,10 @@ class SessionSummary {
   @JsonKey(name: r'attentionItems', required: false, includeIfNull: false)
   final List<SessionSummaryAttentionItemsInner>? attentionItems;
 
+  /// Có mặt khi và chỉ khi phản hồi này đến từ lần `complete` thực sự hoàn thành phiên VÀ có ít nhất một thứ để chúc mừng (`dayCompleted = true` hoặc `achievements` không rỗng). Vắng khi: không có gì để chúc mừng; gọi lại (idempotent) trên phiên đã hoàn thành. Nếu client không nhận được phản hồi (đóng tab, mất kết nối), thành tựu vẫn được ghi nhận nhưng KHÔNG được chúc mừng bù ở lần sau. `dayCompleted` ở mức `SessionSummary` giữ nguyên ngữ nghĩa cũ; chỉ `celebrations.dayCompleted` là tín hiệu \"chúc mừng một lần\" (spec 005).
+  @JsonKey(name: r'celebrations', required: false, includeIfNull: false)
+  final Celebrations? celebrations;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -54,7 +61,8 @@ class SessionSummary {
           other.total == total &&
           other.minutesSpent == minutesSpent &&
           other.dayCompleted == dayCompleted &&
-          other.attentionItems == attentionItems;
+          other.attentionItems == attentionItems &&
+          other.celebrations == celebrations;
 
   @override
   int get hashCode =>
@@ -62,7 +70,8 @@ class SessionSummary {
       total.hashCode +
       minutesSpent.hashCode +
       dayCompleted.hashCode +
-      attentionItems.hashCode;
+      attentionItems.hashCode +
+      celebrations.hashCode;
 
   factory SessionSummary.fromJson(Map<String, dynamic> json) =>
       _$SessionSummaryFromJson(json);

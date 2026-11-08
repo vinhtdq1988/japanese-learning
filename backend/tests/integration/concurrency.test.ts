@@ -166,7 +166,12 @@ describe('(b) cùng phiên, cùng bài tập, client_event_id khác → một l�
       ),
     );
     expect(results.every((r) => r.status === 200)).toBe(true);
-    expect(new Set(results.map((r) => JSON.stringify(r.body))).size).toBe(1);
+    // `celebrations` (spec 005) chỉ nằm ở MỘT phản hồi (lần hoàn thành thật sự); phần còn lại giống hệt nhau.
+    expect(results.filter((r) => r.body.celebrations)).toHaveLength(1);
+    const rest = results.map(({ body: { celebrations: _once, ...others } }) =>
+      JSON.stringify(others),
+    );
+    expect(new Set(rest).size).toBe(1);
   });
 });
 

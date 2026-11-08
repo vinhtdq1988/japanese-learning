@@ -18,6 +18,10 @@ class LessonScenario {
   /// `true` → mọi yêu cầu liên quan phiên học lỗi mạng (không có phản hồi).
   bool offline = false;
 
+  /// `SessionSummary.celebrations` mà server giả trả ở lần `complete` ĐẦU TIÊN của mỗi phiên (spec 005); gọi
+  /// lại trên phiên đã xong không trả trường này. `null` → không có gì để chúc mừng.
+  Map<String, Object?>? celebrations;
+
   /// Các đơn vị còn lại cho "học thêm"; rỗng → 404 `CONTENT_EXHAUSTED`.
   List<Map<String, Object?>> extraUnits = <Map<String, Object?>>[
     <String, Object?>{
@@ -303,7 +307,7 @@ class LessonScenario {
               'message': 'Còn câu chưa trả lời',
             });
           }
-          completedSessions.add(sessionId);
+          final firstTime = completedSessions.add(sessionId);
           final itemId = sessionId.replaceFirst('session-', '');
           if (itemStatus.containsKey(itemId)) itemStatus[itemId] = 'completed';
           return FakeResponse(200, <String, Object?>{
@@ -311,6 +315,7 @@ class LessonScenario {
             'total': done.length,
             'minutesSpent': 1.5,
             'dayCompleted': dayCompleted,
+            if (firstTime && celebrations != null) 'celebrations': celebrations,
           });
         });
       });

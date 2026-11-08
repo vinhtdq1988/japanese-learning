@@ -328,6 +328,31 @@
   "lessonFinish": "Finish lesson",
   "lessonCorrect": "Correct!",
   "lessonIncorrect": "Not quite",
+  "effectsFeedbackCorrectLabel": "Correct",
+  "effectsFeedbackIncorrectLabel": "Not quite",
+  "celebrationDayTitle": "Day complete!",
+  "celebrationDayDescription": "You finished today's whole plan. See you tomorrow!",
+  "celebrationAchievementEyebrow": "New achievement",
+  "celebrationAchievementNotice": "New achievement: {name}",
+  "@celebrationAchievementNotice": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationCardSemantics": "{title}. {description}",
+  "@celebrationCardSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationCloseLabel": "Close celebration",
   "lessonCorrectAnswer": "Correct answer: {answer}",
   "@lessonCorrectAnswer": {
     "placeholders": {
@@ -3417,5 +3442,59 @@
   "classChoiceTransferStayed": "You stay in your current class.",
   "@classChoiceTransferStayed": {
     "description": "Thông báo đã từ chối chuyển lớp"
+  },
+  "effectsSettingsTitle": "Effects",
+  "@effectsSettingsTitle": {
+    "description": "Tiêu đề mục tùy chọn hiệu ứng ở Hồ sơ (spec 005)"
+  },
+  "effectsSettingsHelp": "Choose sound and visual effects for answers and achievements. Results are always shown with text and icons.",
+  "@effectsSettingsHelp": {
+    "description": "Mô tả mục tùy chọn hiệu ứng ở Hồ sơ"
+  },
+  "effectsSoundLabel": "Sound",
+  "@effectsSoundLabel": {
+    "description": "Nhãn công tắc âm thanh"
+  },
+  "effectsSoundHelp": "Play short sounds on answers and achievements.",
+  "@effectsSoundHelp": {
+    "description": "Mô tả công tắc âm thanh"
+  },
+  "effectsVisualLabel": "Visual effects",
+  "@effectsVisualLabel": {
+    "description": "Nhãn công tắc hiệu ứng hình ảnh"
+  },
+  "effectsVisualHelp": "Light animations on answers and achievements. When off, only a static notice remains.",
+  "@effectsVisualHelp": {
+    "description": "Mô tả công tắc hiệu ứng hình ảnh"
+  },
+  "effectsSaveFailed": "Could not save the effects setting. Please try again.",
+  "@effectsSaveFailed": {
+    "description": "Thông báo khi lưu tùy chọn hiệu ứng thất bại (đã hoàn lại giá trị cũ)"
+  },
+  "effectsQuickSoundMute": "Turn sound off",
+  "@effectsQuickSoundMute": {
+    "description": "Tooltip/nhãn nút tắt âm thanh nhanh trong bài (đang bật âm thanh)"
+  },
+  "effectsQuickSoundUnmute": "Turn sound on",
+  "@effectsQuickSoundUnmute": {
+    "description": "Tooltip/nhãn nút bật âm thanh nhanh trong bài (đang tắt âm thanh)"
+  },
+  "effectsQuickVisualDisable": "Turn visual effects off",
+  "@effectsQuickVisualDisable": {
+    "description": "Tooltip/nhãn nút tắt hiệu ứng hình ảnh của khách (đang bật)"
+  },
+  "effectsQuickVisualEnable": "Turn visual effects on",
+  "@effectsQuickVisualEnable": {
+    "description": "Tooltip/nhãn nút bật hiệu ứng hình ảnh của khách (đang tắt)"
+  },
+  "effectsStreakBadge": "{count} in a row",
+  "@effectsStreakBadge": {
+    "description": "Huy hiệu thoáng qua khi trả lời đúng liên tiếp chạm ngưỡng 3/5/10 trong một bài (spec 005, US4)",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
   }
 }

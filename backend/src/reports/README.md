@@ -2,7 +2,7 @@
 
 Các truy vấn trong [`product-metrics.sql`](product-metrics.sql) trích xuất số liệu cho các tiêu chí thành công
 **SC-003**, **SC-009**, **SC-011**, hai chỉ số Kanji **SC-001**, **SC-008** (spec `003-kanji-lessons`) và chỉ số lớp học
-**SC-010** (spec `004-org-classes`) trực tiếp từ dữ liệu đã ghi (không cần bảng phân tích riêng).
+**SC-010** (spec `004-org-classes`) và hai chỉ số hiệu ứng thưởng **SC-006**, **SC-007** (spec `005-reward-feedback-effects`) trực tiếp từ dữ liệu đã ghi (không cần bảng phân tích riêng).
 
 ```bash
 cd backend
@@ -26,6 +26,8 @@ cũng chạy độc lập được trong `psql`. Trong image Docker của API, l
 | `kanji_first_plan_has_kanji_ratio`    | Kanji SC-001    | kỳ vọng 100% (kiểm tra vận hành) | Trong số người học có `learning_profiles.kanji_selected_at`, tỷ lệ có **kế hoạch đầu tiên** sinh từ lúc chọn Kanji (`daily_plans.created_at ≥ kanji_selected_at`) chứa mục `new_unit` là bài Kanji. Mẫu số chỉ gồm các kế hoạch đầu tiên đó có phần bài mới (kế hoạch toàn ôn tập không tính).                                                                                                 |
 | `kanji_completed_within_3_days_ratio` | Kanji SC-008    | ≥ 80%                            | Trong số người học có `kanji_selected_at` cách đây ≥ 3 ngày, tỷ lệ có `unit_progress.status = 'completed'` cho một đơn vị Kanji với `updated_at` nằm trong khoảng `[kanji_selected_at, kanji_selected_at + 3 ngày]`. Người bỏ rồi chọn lại Kanji được tính từ `kanji_selected_at` mới (bài đã học ở lần chọn trước không tính).                                                                |
 | `sc010_class_week4_active_days`       | Lớp SC-010      | ≥ 70%                            | Spec 004. Mỗi thành viên lớp `class_memberships` là một quan sát (đã vào lớp ≥ 28 ngày): đạt khi có bản ghi trả lời `study_records` trong **≥ 3 ngày địa phương** thuộc tuần thứ 4 (ngày 21–27 tính từ ngày địa phương của `joined_at`, múi giờ học viên). Người rời lớp trước tuần 4 vẫn nằm trong mẫu số; học viên được chuyển lớp có hai quan sát. Một dòng mỗi lớp + dòng `TONG`.          |
+| `sc006_effects_disabled_ratio`        | Hiệu ứng SC-006 | < 20% tắt cả hai                 | Spec 005. Trong số người học đã hoạt động ≥ 14 ngày (bản ghi trả lời đầu tiên cách hôm nay ≥ 14 ngày, múi giờ học viên), tỷ lệ có `sound_enabled = false` **và** `visual_effects_enabled = false`. Phần "≥ 70% thấy thú vị hơn" là khảo sát ngoài hệ thống, không đo ở đây. |
+| `sc007_next_day_return_after_plan_completion` | Hiệu ứng SC-007 | tăng ≥ 5 điểm % | Spec 005. Tỷ lệ ngày hoàn thành kế hoạch (`daily_plans.status = 'completed'`) mà người học có bản ghi trả lời vào ngày kế tiếp: giai đoạn `sau` (từ ngày ra mắt) so với `truoc` (28 ngày ngay trước). Ngày ra mắt = ngày của dòng `earned_achievements` sớm nhất (xấp xỉ); chưa có dòng nào thì các cột tỷ lệ là NULL. Chỉ tính ngày kế hoạch mà ngày kế tiếp đã trôi qua. Cột `chenh_lech_diem` là hiệu `sau − truoc` (điểm phần trăm). |
 
 ## Lưu ý khi diễn giải
 

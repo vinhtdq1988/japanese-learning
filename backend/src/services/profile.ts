@@ -71,6 +71,8 @@ export function profileToDto(profile: ProfileRow): Record<string, unknown> {
     timezone: profile.timezone,
     paused: profile.paused,
     onboardingState: profile.onboardingState,
+    soundEnabled: profile.soundEnabled,
+    visualEffectsEnabled: profile.visualEffectsEnabled,
   });
 }
 
@@ -191,6 +193,9 @@ function resolvePathFields(
 /**
  * `PATCH /me`: sửa hồ sơ (FR-002, FR-016, SC-006).
  * - `displayName`, `language`, `timezone`: chỉ lưu.
+ * - `soundEnabled`, `visualEffectsEnabled` (spec 005): chỉ lưu; không sinh lại lộ trình, không đụng kế hoạch,
+ *   không cần `currentPassword` và KHÔNG bị khóa khi người học thuộc lớp (không nằm trong
+ *   `CLASS_LOCKED_PROFILE_FIELDS`).
  * - `email`: bắt buộc `currentPassword` đúng (401), từ chối email trùng (409 `EMAIL_TAKEN` /
  *   `EMAIL_PENDING_DELETION`); lưu cùng giao dịch với phần còn lại.
  * - `dailyMinutes`, `prioritizedSkill`: lưu và áp dụng trực tiếp cho kế hoạch được sinh kế tiếp, KHÔNG
@@ -246,6 +251,10 @@ export async function updateMe(
     ...(input.displayName !== undefined ? { displayName: input.displayName } : {}),
     ...(input.language !== undefined ? { language: input.language } : {}),
     ...(input.timezone !== undefined ? { timezone: input.timezone } : {}),
+    ...(input.soundEnabled !== undefined ? { soundEnabled: input.soundEnabled } : {}),
+    ...(input.visualEffectsEnabled !== undefined
+      ? { visualEffectsEnabled: input.visualEffectsEnabled }
+      : {}),
     ...(input.dailyMinutes !== undefined ? { dailyMinutes: input.dailyMinutes } : {}),
     ...(input.skills !== undefined ? { skills: input.skills } : {}),
     ...(input.prioritizedSkill !== undefined ? { prioritizedSkill: input.prioritizedSkill } : {}),

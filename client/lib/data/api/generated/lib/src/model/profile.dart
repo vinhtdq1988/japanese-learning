@@ -46,6 +46,10 @@ class Profile {
     this.paused,
 
     this.onboardingState,
+
+    this.soundEnabled = true,
+
+    this.visualEffectsEnabled = true,
   });
 
   @JsonKey(name: r'displayName', required: false, includeIfNull: false)
@@ -84,6 +88,24 @@ class Profile {
   @JsonKey(name: r'onboardingState', required: false, includeIfNull: false)
   final ProfileOnboardingStateEnum? onboardingState;
 
+  /// Bật/tắt âm thanh phản hồi và chúc mừng (spec 005). Mặc định true.
+  @JsonKey(
+    defaultValue: true,
+    name: r'soundEnabled',
+    required: false,
+    includeIfNull: false,
+  )
+  final bool? soundEnabled;
+
+  /// Bật/tắt hiệu ứng hình ảnh (hoạt ảnh, màn chúc mừng động). Khi tắt, kết quả đúng/sai và thành tựu vẫn được thể hiện bằng dạng tĩnh. Mặc định true.
+  @JsonKey(
+    defaultValue: true,
+    name: r'visualEffectsEnabled',
+    required: false,
+    includeIfNull: false,
+  )
+  final bool? visualEffectsEnabled;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -99,7 +121,9 @@ class Profile {
           other.language == language &&
           other.timezone == timezone &&
           other.paused == paused &&
-          other.onboardingState == onboardingState;
+          other.onboardingState == onboardingState &&
+          other.soundEnabled == soundEnabled &&
+          other.visualEffectsEnabled == visualEffectsEnabled;
 
   @override
   int get hashCode =>
@@ -114,7 +138,9 @@ class Profile {
       language.hashCode +
       timezone.hashCode +
       paused.hashCode +
-      onboardingState.hashCode;
+      onboardingState.hashCode +
+      soundEnabled.hashCode +
+      visualEffectsEnabled.hashCode;
 
   factory Profile.fromJson(Map<String, dynamic> json) =>
       _$ProfileFromJson(json);

@@ -14,7 +14,8 @@ import { openTestDb, requireDatabaseUrl, resetDatabase } from './helpers.js';
 
 // Kiểm tra migration `0001_init.sql` (T008) và schema Drizzle (T009) trên PostgreSQL thật; nâng cấp
 // 0002/0003 (Kanji) trên dữ liệu 001 có sẵn (spec 003, T008); nâng cấp 0004 (tổ chức/lớp học) trên dữ liệu
-// 001 + 003 và các ràng buộc của nó (spec 004, T011).
+// 001 + 003 và các ràng buộc của nó (spec 004, T011); nâng cấp 0005 (hiệu ứng thưởng/thành tựu) trên dữ liệu
+// 001–004 (spec 005, T005).
 
 let handle: DbHandle;
 
@@ -611,6 +612,7 @@ describe('nâng cấp migration Kanji (0002, 0003) trên dữ liệu 001', () =>
       '0002_kanji_skill.sql',
       '0003_kanji.sql',
       '0004_org_classes.sql',
+      '0005_reward_effects.sql',
     ]);
 
     expect((await uq(`SELECT facet FROM review_schedules`)).rows).toEqual([{ facet: 'item' }]);
@@ -827,7 +829,8 @@ describe('nâng cấp migration tổ chức/lớp học (0004) trên dữ liệu
     }
 
     const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
-    expect(result.applied).toEqual(['0004_org_classes.sql']);
+    // 0005 (hiệu ứng thưởng) cũng được áp dụng vì thư mục migration mặc định chứa đủ; nâng cấp riêng 0005 có bộ test bên dưới.
+    expect(result.applied).toEqual(['0004_org_classes.sql', '0005_reward_effects.sql']);
 
     for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
       expect((await uq(sql)).rows, `${name} không đổi sau 0004`).toEqual(before[name]);
@@ -1158,5 +1161,163 @@ describe('nâng cấp migration tổ chức/lớp học (0004) trên dữ liệu
     expect((await uq(`SELECT created_by FROM classes WHERE id = $1`, [cls])).rows).toEqual([
       { created_by: null },
     ]);
+  });
+});
+
+// --- Nâng cấp 0005 (hiệu ứng thưởng, thành tựu) trên dữ liệu 001–004 (spec 005, T005, data-model §2) ---
+
+const FOREIGN_KEY = '23503';
+const INVALID_ENUM = '22P02';
+
+describe('nâng cấp migration hiệu ứng thưởng (0005) trên dữ liệu 001–004', () => {
+  const dbName = `jl_reward_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
+  let admin: pg.Client;
+  let upgraded: pg.Pool;
+  let upToOrg: string;
+  const learners: string[] = [];
+  const before: Record<string, unknown[]> = {};
+
+  beforeAll(async () => {
+    const base = requireDatabaseUrl();
+    admin = new pg.Client({ connectionString: urlForDatabase(base, 'postgres') });
+    await admin.connect();
+    await admin.query(
+      `CREATE DATABASE ${dbName} TEMPLATE template0 ENCODING 'UTF8' LC_COLLATE 'C' LC_CTYPE 'C'`,
+    );
+    // Thư mục chỉ chứa 0001–0004 để dựng CSDL ở trạng thái của hệ thống 001–004.
+    upToOrg = mkdtempSync(path.join(tmpdir(), 'mig-0004-'));
+    for (const f of readdirSync(MIGRATIONS_DIR).filter((n) => /^000[1-4]_/.test(n))) {
+      copyFileSync(path.join(MIGRATIONS_DIR, f), path.join(upToOrg, f));
+    }
+    await runMigrations(urlForDatabase(base, dbName), upToOrg);
+    upgraded = new pg.Pool({ connectionString: urlForDatabase(base, dbName) });
+  });
+
+  afterAll(async () => {
+    await upgraded?.end();
+    await admin?.query(`DROP DATABASE IF EXISTS ${dbName} WITH (FORCE)`);
+    await admin?.end();
+    if (upToOrg) rmSync(upToOrg, { recursive: true, force: true });
+  });
+
+  const uq = (text: string, params: unknown[] = []) => upgraded.query(text, params);
+  const upgradeCode = async (text: string, params: unknown[] = []) => {
+    try {
+      await uq(text, params);
+      return undefined;
+    } catch (err) {
+      return (err as { code?: string }).code;
+    }
+  };
+  const newUser = async () =>
+    (
+      await uq(`INSERT INTO users (email, password_hash) VALUES ($1, 'h') RETURNING id`, [
+        `r-${randomUUID()}@example.com`,
+      ])
+    ).rows[0].id as string;
+
+  const SNAPSHOT_QUERIES: Record<string, string> = {
+    users: `SELECT id, email, role, status FROM users ORDER BY id`,
+    learning_profiles: `SELECT user_id, display_name, skills::text[] AS skills, language, paused FROM learning_profiles ORDER BY user_id`,
+    learning_paths: `SELECT id, user_id, status, reason FROM learning_paths ORDER BY id`,
+    daily_plans: `SELECT id, user_id, local_date::text AS local_date, budget_minutes FROM daily_plans ORDER BY id`,
+    placement_results: `SELECT id, user_id, estimated_level, is_current FROM placement_results ORDER BY id`,
+  };
+
+  it('hai bảng mới có mặt và rỗng; hồ sơ cũ mặc định bật cả hai; dữ liệu cũ không đổi', async () => {
+    // Hai người học cũ (một có lộ trình, kế hoạch, kết quả placement) trước khi có 0005.
+    for (const name of ['Cũ A', 'Cũ B']) {
+      const id = await newUser();
+      learners.push(id);
+      await uq(`INSERT INTO learning_profiles (user_id, display_name) VALUES ($1, $2)`, [id, name]);
+    }
+    await uq(
+      `INSERT INTO learning_paths (user_id, reason, generated_from) VALUES ($1, 'onboarding', '{}')`,
+      [learners[0]],
+    );
+    await uq(
+      `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes) VALUES ($1, '2026-01-05', 10, 5)`,
+      [learners[0]],
+    );
+    await uq(
+      `INSERT INTO placement_results (user_id, answers, estimated_level, score) VALUES ($1, '[]', 'N5', 12)`,
+      [learners[0]],
+    );
+    for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
+      before[name] = (await uq(sql)).rows;
+      expect(before[name]!.length, name).toBeGreaterThan(0);
+    }
+
+    const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
+    expect(result.applied).toEqual(['0005_reward_effects.sql']);
+
+    // Số dòng và nội dung các bảng cũ không đổi.
+    for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
+      expect((await uq(sql)).rows, `${name} không đổi sau 0005`).toEqual(before[name]);
+    }
+    // Mọi hồ sơ cũ tự nhận mặc định bật cả hai tùy chọn.
+    expect(
+      (
+        await uq(
+          `SELECT sound_enabled, visual_effects_enabled FROM learning_profiles ORDER BY display_name`,
+        )
+      ).rows,
+    ).toEqual([
+      { sound_enabled: true, visual_effects_enabled: true },
+      { sound_enabled: true, visual_effects_enabled: true },
+    ]);
+    // Hai bảng mới có mặt và rỗng.
+    for (const table of ['earned_achievements', 'daily_completion_celebrations']) {
+      expect((await uq(`SELECT count(*)::int AS n FROM ${table}`)).rows[0].n, table).toBe(0);
+    }
+  });
+
+  it('earned_achievements: mã dài 1–40 ký tự, trùng (user, mã) bị khóa chính từ chối, FK người dùng', async () => {
+    const user = await newUser();
+    const insert = (userId: string, code: string, source = 'earned') =>
+      upgradeCode(
+        `INSERT INTO earned_achievements (user_id, achievement_code, earned_at, source) VALUES ($1, $2, now(), $3)`,
+        [userId, code, source],
+      );
+    expect(await insert(user, 'streak_7')).toBeUndefined();
+    expect(await insert(user, 'streak_7', 'silent')).toBe(UNIQUE); // trùng khóa chính
+    expect(await insert(await newUser(), 'streak_7')).toBeUndefined(); // người học khác cùng mã
+    expect(await insert(user, '')).toBe(CHECK);
+    expect(await insert(user, 'x'.repeat(41))).toBe(CHECK);
+    expect(await insert(user, 'x'.repeat(40))).toBeUndefined();
+    expect(await insert(user, 'goal_50', 'khac')).toBe(INVALID_ENUM); // giá trị ngoài enum
+    expect(await insert(randomUUID(), 'goal_50')).toBe(FOREIGN_KEY);
+  });
+
+  it('daily_completion_celebrations: một lần mỗi (user, ngày); ngày khác hoặc người khác thì được', async () => {
+    const user = await newUser();
+    const insert = (userId: string, day: string) =>
+      upgradeCode(
+        `INSERT INTO daily_completion_celebrations (user_id, local_date, celebrated_at) VALUES ($1, $2, now())`,
+        [userId, day],
+      );
+    expect(await insert(user, '2026-01-05')).toBeUndefined();
+    expect(await insert(user, '2026-01-05')).toBe(UNIQUE);
+    expect(await insert(user, '2026-01-06')).toBeUndefined();
+    expect(await insert(await newUser(), '2026-01-05')).toBeUndefined();
+  });
+
+  it('xóa tài khoản cascade xóa thành tựu và đánh dấu chúc mừng ngày', async () => {
+    const user = await newUser();
+    await uq(
+      `INSERT INTO earned_achievements (user_id, achievement_code, earned_at, source) VALUES ($1, 'first_lesson', now(), 'earned')`,
+      [user],
+    );
+    await uq(
+      `INSERT INTO daily_completion_celebrations (user_id, local_date, celebrated_at) VALUES ($1, '2026-01-05', now())`,
+      [user],
+    );
+    await uq(`DELETE FROM users WHERE id = $1`, [user]);
+    for (const table of ['earned_achievements', 'daily_completion_celebrations']) {
+      const { rows } = await uq(`SELECT count(*)::int AS n FROM ${table} WHERE user_id = $1`, [
+        user,
+      ]);
+      expect(rows[0].n, table).toBe(0);
+    }
   });
 });

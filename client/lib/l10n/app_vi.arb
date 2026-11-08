@@ -831,6 +831,52 @@
   "@lessonIncorrect": {
     "description": "Phản hồi khi trả lời sai"
   },
+  "effectsFeedbackCorrectLabel": "Đúng",
+  "@effectsFeedbackCorrectLabel": {
+    "description": "Nhãn trợ năng của thẻ phản hồi khi trả lời đúng (trình đọc màn hình đọc to)"
+  },
+  "effectsFeedbackIncorrectLabel": "Chưa đúng",
+  "@effectsFeedbackIncorrectLabel": {
+    "description": "Nhãn trợ năng của thẻ phản hồi khi trả lời sai (trình đọc màn hình đọc to)"
+  },
+  "celebrationDayTitle": "Hoàn thành ngày học!",
+  "@celebrationDayTitle": {
+    "description": "Tiêu đề thẻ chúc mừng khi hoàn thành toàn bộ kế hoạch học của ngày (spec 005)"
+  },
+  "celebrationDayDescription": "Bạn đã hoàn thành toàn bộ kế hoạch hôm nay. Hẹn gặp lại ngày mai!",
+  "@celebrationDayDescription": {
+    "description": "Mô tả thẻ chúc mừng hoàn thành ngày học"
+  },
+  "celebrationAchievementEyebrow": "Thành tựu mới",
+  "@celebrationAchievementEyebrow": {
+    "description": "Nhãn nhỏ phía trên tên thành tựu trên thẻ chúc mừng"
+  },
+  "celebrationAchievementNotice": "Thành tựu mới: {name}",
+  "@celebrationAchievementNotice": {
+    "description": "Thông báo tĩnh một dòng khi tắt hiệu ứng hình ảnh và đạt thành tựu",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Chuỗi 7 ngày"
+      }
+    }
+  },
+  "celebrationCardSemantics": "{title}. {description}",
+  "@celebrationCardSemantics": {
+    "description": "Nhãn trợ năng đọc to của thẻ chúc mừng (tiêu đề rồi mô tả)",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationCloseLabel": "Đóng lời chúc mừng",
+  "@celebrationCloseLabel": {
+    "description": "Nhãn trợ năng của nút ✕ đóng màn chúc mừng"
+  },
   "lessonCorrectAnswer": "Đáp án đúng: {answer}",
   "@lessonCorrectAnswer": {
     "description": "Hiển thị đáp án đúng khi trả lời sai",
@@ -4436,5 +4482,59 @@
   "classChoiceTransferStayed": "Bạn ở lại lớp hiện tại.",
   "@classChoiceTransferStayed": {
     "description": "Thông báo đã từ chối chuyển lớp"
+  },
+  "effectsSettingsTitle": "Hiệu ứng",
+  "@effectsSettingsTitle": {
+    "description": "Tiêu đề mục tùy chọn hiệu ứng ở Hồ sơ (spec 005)"
+  },
+  "effectsSettingsHelp": "Chọn âm thanh và hiệu ứng hình ảnh khi trả lời và đạt thành tựu. Kết quả luôn hiện bằng chữ và biểu tượng.",
+  "@effectsSettingsHelp": {
+    "description": "Mô tả mục tùy chọn hiệu ứng ở Hồ sơ"
+  },
+  "effectsSoundLabel": "Âm thanh",
+  "@effectsSoundLabel": {
+    "description": "Nhãn công tắc âm thanh"
+  },
+  "effectsSoundHelp": "Phát tiếng ngắn khi trả lời và đạt thành tựu.",
+  "@effectsSoundHelp": {
+    "description": "Mô tả công tắc âm thanh"
+  },
+  "effectsVisualLabel": "Hiệu ứng hình ảnh",
+  "@effectsVisualLabel": {
+    "description": "Nhãn công tắc hiệu ứng hình ảnh"
+  },
+  "effectsVisualHelp": "Hoạt ảnh nhẹ khi trả lời và đạt thành tựu. Tắt thì chỉ còn thông báo tĩnh.",
+  "@effectsVisualHelp": {
+    "description": "Mô tả công tắc hiệu ứng hình ảnh"
+  },
+  "effectsSaveFailed": "Không lưu được tùy chọn hiệu ứng. Vui lòng thử lại.",
+  "@effectsSaveFailed": {
+    "description": "Thông báo khi lưu tùy chọn hiệu ứng thất bại (đã hoàn lại giá trị cũ)"
+  },
+  "effectsQuickSoundMute": "Tắt âm thanh",
+  "@effectsQuickSoundMute": {
+    "description": "Tooltip/nhãn nút tắt âm thanh nhanh trong bài (đang bật âm thanh)"
+  },
+  "effectsQuickSoundUnmute": "Bật âm thanh",
+  "@effectsQuickSoundUnmute": {
+    "description": "Tooltip/nhãn nút bật âm thanh nhanh trong bài (đang tắt âm thanh)"
+  },
+  "effectsQuickVisualDisable": "Tắt hiệu ứng hình ảnh",
+  "@effectsQuickVisualDisable": {
+    "description": "Tooltip/nhãn nút tắt hiệu ứng hình ảnh của khách (đang bật)"
+  },
+  "effectsQuickVisualEnable": "Bật hiệu ứng hình ảnh",
+  "@effectsQuickVisualEnable": {
+    "description": "Tooltip/nhãn nút bật hiệu ứng hình ảnh của khách (đang tắt)"
+  },
+  "effectsStreakBadge": "{count} liên tiếp",
+  "@effectsStreakBadge": {
+    "description": "Huy hiệu thoáng qua khi trả lời đúng liên tiếp chạm ngưỡng 3/5/10 trong một bài (spec 005, US4)",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
   }
 }

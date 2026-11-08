@@ -35,11 +35,16 @@ class AccountRepository {
     String? displayName,
     String? language,
     String? timezone,
+    bool? soundEnabled,
+    bool? visualEffectsEnabled,
   }) {
     return _patch(<String, Object?>{
       'displayName': ?displayName,
       'language': ?language,
       'timezone': ?timezone,
+      // Tùy chọn hiệu ứng (spec 005): chỉ lưu, không đụng lộ trình/kế hoạch, học viên thuộc lớp vẫn sửa được.
+      'soundEnabled': ?soundEnabled,
+      'visualEffectsEnabled': ?visualEffectsEnabled,
     });
   }
 

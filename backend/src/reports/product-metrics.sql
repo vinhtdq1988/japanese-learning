@@ -1,5 +1,5 @@
 -- Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129): SC-003, SC-009, SC-011, Kanji (spec 003: SC-001, SC-008)
--- và lớp học (spec 004: SC-010).
+-- lớp học (spec 004: SC-010) và hiệu ứng thưởng (spec 005: SC-006, SC-007).
 -- Chạy bằng `pnpm report:metrics` (in từng bảng) hoặc dán từng khối vào psql. Mỗi khối bắt đầu bằng
 -- dòng `-- name: <tên>` và là MỘT câu SELECT độc lập, chỉ đọc. Giải thích số liệu: README.md cùng thư mục.
 --
@@ -251,3 +251,64 @@ SELECT COALESCE(c.name, 'TONG')                                           AS lop
   JOIN classes c ON c.id = j.class_id
  GROUP BY ROLLUP ((j.class_id, c.name))
  ORDER BY (c.name IS NULL), c.name;
+
+-- name: sc006_effects_disabled_ratio
+-- Spec 005 SC-006 (phần đo được trong hệ thống): trong số người học đã hoạt động >= 14 ngày (ngày có bản ghi trả lời
+-- đầu tiên cách hôm nay, theo múi giờ học viên, >= 14 ngày), tỷ lệ tắt CẢ HAI loại hiệu ứng
+-- (`sound_enabled = false AND visual_effects_enabled = false`); mục tiêu < 20%. Phần "khảo sát thấy thú vị hơn >= 70%"
+-- là khảo sát ngoài hệ thống, không đo ở đây. Hồ sơ cũ có hai cột mặc định `true` nên không bị tính là đã tắt.
+WITH first_activity AS (
+  SELECT sr.user_id, min(sr.local_date) AS first_day
+    FROM study_records sr
+    JOIN users u ON u.id = sr.user_id AND u.role = 'learner'
+   GROUP BY sr.user_id
+),
+judged AS (
+  SELECT (NOT p.sound_enabled AND NOT p.visual_effects_enabled) AS both_off
+    FROM first_activity f
+    JOIN learning_profiles p ON p.user_id = f.user_id
+   WHERE f.first_day <= (now() AT TIME ZONE COALESCE(p.timezone, 'Asia/Ho_Chi_Minh'))::date - 14
+)
+SELECT count(*)                                                          AS so_nguoi_hoc,
+       count(*) FILTER (WHERE both_off)                                  AS tat_ca_hai,
+       round(100.0 * count(*) FILTER (WHERE both_off) / NULLIF(count(*), 0), 1) AS ty_le_pct,
+       20                                                                AS gioi_han_pct,
+       100.0 * count(*) FILTER (WHERE both_off) / NULLIF(count(*), 0) < 20 AS dat_muc_tieu
+  FROM judged;
+
+-- name: sc007_next_day_return_after_plan_completion
+-- Spec 005 SC-007: tỷ lệ người học quay lại học vào NGÀY KẾ TIẾP sau một ngày hoàn thành kế hoạch
+-- (`daily_plans.status = 'completed'`), so giai đoạn từ ngày ra mắt trở đi (`sau`) với 28 ngày ngay trước đó (`truoc`);
+-- mục tiêu: tăng >= 5 điểm phần trăm. Ngày ra mắt = ngày của dòng `earned_achievements` sớm nhất (xấp xỉ ngày ra mắt
+-- thực tế; `run.ts` chỉ chạy khối không tham số). "Quay lại" = có bản ghi trả lời trong `study_records` vào ngày địa
+-- phương kế tiếp. Chỉ tính ngày kế hoạch mà ngày kế tiếp đã trôi qua (theo múi giờ học viên). Chưa có dòng thành tựu
+-- nào (chưa ra mắt) thì mọi cột tỷ lệ là NULL.
+WITH launch AS (
+  SELECT min(earned_at)::date AS day FROM earned_achievements
+),
+plan_days AS (
+  SELECT dp.user_id,
+         dp.local_date,
+         EXISTS (SELECT 1 FROM study_records sr
+                  WHERE sr.user_id = dp.user_id AND sr.local_date = dp.local_date + 1) AS returned
+    FROM daily_plans dp
+    JOIN users u ON u.id = dp.user_id AND u.role = 'learner'
+    LEFT JOIN learning_profiles p ON p.user_id = dp.user_id
+   WHERE dp.status = 'completed'
+     AND dp.local_date + 1 <= (now() AT TIME ZONE COALESCE(p.timezone, 'Asia/Ho_Chi_Minh'))::date
+)
+SELECT l.day                                                                     AS ngay_ra_mat,
+       count(*) FILTER (WHERE d.local_date >= l.day - 28 AND d.local_date < l.day) AS truoc_so_ngay_hoan_thanh,
+       round(100.0 * count(*) FILTER (WHERE d.returned AND d.local_date >= l.day - 28 AND d.local_date < l.day)
+             / NULLIF(count(*) FILTER (WHERE d.local_date >= l.day - 28 AND d.local_date < l.day), 0), 1) AS truoc_ty_le_pct,
+       count(*) FILTER (WHERE d.local_date >= l.day)                             AS sau_so_ngay_hoan_thanh,
+       round(100.0 * count(*) FILTER (WHERE d.returned AND d.local_date >= l.day)
+             / NULLIF(count(*) FILTER (WHERE d.local_date >= l.day), 0), 1)      AS sau_ty_le_pct,
+       round(100.0 * count(*) FILTER (WHERE d.returned AND d.local_date >= l.day)
+             / NULLIF(count(*) FILTER (WHERE d.local_date >= l.day), 0)
+           - 100.0 * count(*) FILTER (WHERE d.returned AND d.local_date >= l.day - 28 AND d.local_date < l.day)
+             / NULLIF(count(*) FILTER (WHERE d.local_date >= l.day - 28 AND d.local_date < l.day), 0), 1) AS chenh_lech_diem,
+       5                                                                         AS muc_tieu_diem
+  FROM launch l
+  LEFT JOIN plan_days d ON true
+ GROUP BY l.day;

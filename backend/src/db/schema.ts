@@ -1,4 +1,4 @@
-// Schema Drizzle – khớp migration `migrations/0001_init.sql`, `0002_kanji_skill.sql`, `0003_kanji.sql`, `0004_org_classes.sql` (nguồn sự thật của lược đồ là file SQL).
+// Schema Drizzle – khớp migration `migrations/0001_init.sql`, `0002_kanji_skill.sql`, `0003_kanji.sql`, `0004_org_classes.sql`, `0005_reward_effects.sql` (nguồn sự thật của lược đồ là file SQL).
 // Drizzle chỉ dùng để truy vấn có kiểu; KHÔNG sinh migration từ file này.
 import { sql } from 'drizzle-orm';
 import {
@@ -135,6 +135,9 @@ export const learningProfiles = pgTable('learning_profiles', {
   paused: boolean('paused').notNull().default(false),
   // Thời điểm người học chọn Kanji (đo SC-001/SC-008); giữ khi bỏ chọn, đặt lại khi chọn lại.
   kanjiSelectedAt: timestamptz('kanji_selected_at'),
+  // Tùy chọn hiệu ứng (spec 005): độc lập nhau, mặc định bật, không nằm trong nhóm trường bị khóa của lớp.
+  soundEnabled: boolean('sound_enabled').notNull().default(true),
+  visualEffectsEnabled: boolean('visual_effects_enabled').notNull().default(true),
   updatedAt: timestamptz('updated_at').notNull().defaultNow(),
 });
 
@@ -878,3 +881,39 @@ export const joinCodeAttempts = pgTable('join_code_attempts', {
   windowStartedAt: timestamptz('window_started_at').notNull(),
   lockedUntil: timestamptz('locked_until'),
 });
+
+// --- Hiệu ứng thưởng và thành tựu (spec 005, migration 0005_reward_effects.sql) ---
+
+// `earned`: đạt khi học và đã chúc mừng; `silent`: ghi âm thầm (vượt mốc trước khi ra mắt hoặc do đổi cấu hình).
+export const achievementSource = pgEnum('achievement_source', ['earned', 'silent']);
+
+export const earnedAchievements = pgTable(
+  'earned_achievements',
+  {
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    achievementCode: text('achievement_code').notNull(),
+    earnedAt: timestamptz('earned_at').notNull(),
+    source: achievementSource('source').notNull(),
+  },
+  (t) => [
+    primaryKey({ columns: [t.userId, t.achievementCode] }),
+    check(
+      'earned_achievements_code_length',
+      sql`char_length(${t.achievementCode}) BETWEEN 1 AND 40`,
+    ),
+  ],
+);
+
+export const dailyCompletionCelebrations = pgTable(
+  'daily_completion_celebrations',
+  {
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    localDate: date('local_date', { mode: 'string' }).notNull(),
+    celebratedAt: timestamptz('celebrated_at').notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.localDate] })],
+);

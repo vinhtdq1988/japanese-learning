@@ -32,7 +32,7 @@ Method | HTTP request | Description
 [**inviteClassLearners**](ClassesApi.md#inviteclasslearners) | **POST** /classes/{id}/invitations | Mời học viên bằng email (≤ 50 mỗi lần) - mỗi lời mời giữ chỗ một seat
 [**listClassPauses**](ClassesApi.md#listclasspauses) | **GET** /classes/{id}/pauses | Các khoảng tạm dừng (cả lớp và từng học viên)
 [**listClasses**](ClassesApi.md#listclasses) | **GET** /classes | Danh sách lớp (giáo viên - lớp mình phụ trách; chủ tổ chức - mọi lớp)
-[**moveClassMember**](ClassesApi.md#moveclassmember) | **POST** /classes/{id}/members/{userId}/move | Chuyển học viên sang lớp khác trong cùng tổ chức (giữ seat, tiến độ, lịch ôn)
+[**moveClassMember**](ClassesApi.md#moveclassmember) | **POST** /classes/{id}/members/{userId}/move | Mời học viên chuyển sang lớp khác trong cùng tổ chức (học viên PHẢI đồng ý lại; khi đồng ý giữ seat, tiến độ, lịch ôn)
 [**putClassPath**](ClassesApi.md#putclasspath) | **PUT** /classes/{id}/path | Tạo/sửa lộ trình lớp theo mẫu (không có thao tác xóa)
 [**putClassPathUnits**](ClassesApi.md#putclasspathunits) | **PUT** /classes/{id}/path/units | Chọn bài, thứ tự và ngày mở (&#x60;units&#x60; rỗng quay lại chế độ mẫu)
 [**putLearnerOverride**](ClassesApi.md#putlearneroverride) | **PUT** /classes/{id}/members/{userId}/override | Ghi đè riêng một học viên (phút mỗi ngày, dời mốc)
@@ -1015,7 +1015,9 @@ This endpoint does not need any parameter.
 # **moveClassMember**
 > moveClassMember(id, userId, moveClassMemberRequest)
 
-Chuyển học viên sang lớp khác trong cùng tổ chức (giữ seat, tiến độ, lịch ôn)
+Mời học viên chuyển sang lớp khác trong cùng tổ chức (học viên PHẢI đồng ý lại; khi đồng ý giữ seat, tiến độ, lịch ôn)
+
+Không chuyển ngay (Hiến pháp III): tạo lời mời `student` tới lớp đích gửi cho học viên; chỉ khi học viên chấp nhận qua `POST /invitations/{token}/respond` (`join_class` + `confirmed`) mới đóng thành viên lớp cũ (`moved`) và mở thành viên lớp đích, giữ nguyên seat. Người gọi phải là chủ tổ chức hoặc giáo viên phụ trách cả hai lớp; lớp đích ngoài phạm vi ⇒ 404 chung. 409 `CLASS_FULL`/`CLASS_NOT_READY`/`CLASS_ARCHIVED`.
 
 ### Example
 ```dart

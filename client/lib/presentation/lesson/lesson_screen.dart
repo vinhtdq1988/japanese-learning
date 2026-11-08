@@ -8,6 +8,9 @@ import '../../data/api/api_error.dart';
 import '../../data/learning_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
+import '../effects/answer_effect.dart';
+import '../effects/effects_controller.dart';
+import '../effects/effects_quick_control.dart';
 import '../shared/page_frame.dart';
 import '../review/review_view.dart';
 import '../shared/state_views.dart';
@@ -34,6 +37,8 @@ class LessonScreen extends ConsumerWidget {
 
     return PageFrame(
       title: title,
+      // Tắt/bật âm thanh bằng một thao tác mà không rời bài (spec 005, FR-020).
+      actions: const <Widget>[EffectsQuickControl()],
       child: lesson.when(
         loading: () => const LoadingView(),
         error: (Object error, StackTrace _) => _buildLoadError(
@@ -211,7 +216,7 @@ class LessonItemCard extends StatelessWidget {
 
 /// Phần làm bài tập và hỏi lại câu sai, dùng chung cho bài học và phiên ôn tập.
 /// [showNextReview] hiển thị ngày ôn kế tiếp trong phản hồi (phiên ôn tập, US3).
-class LessonPractice extends StatelessWidget {
+class LessonPractice extends ConsumerWidget {
   const LessonPractice({
     super.key,
     required this.state,
@@ -224,7 +229,7 @@ class LessonPractice extends StatelessWidget {
   final bool showNextReview;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final exercise = state.exercise;
@@ -232,66 +237,73 @@ class LessonPractice extends StatelessWidget {
     final isRetry = state.phase == LessonPhase.retry;
     final total = state.queue.length;
 
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          if (isRetry) ...<Widget>[
-            Text(
-              l10n.lessonRetryHeading,
-              key: const Key('retry-heading'),
-              style: theme.textTheme.headlineSmall,
-            ),
-            Text(l10n.lessonRetryIntro),
-            const SizedBox(height: 12),
-          ],
-          LinearProgressIndicator(
-            value: total == 0 ? 0 : (state.index + 1) / total,
-          ),
-          const SizedBox(height: 4),
-          Text(
-            l10n.lessonProgress(state.index + 1, total),
-            key: const Key('lesson-progress'),
-            style: theme.textTheme.bodySmall,
-          ),
-          const SizedBox(height: 16),
-          ExerciseView(
-            exercise: exercise,
-            enabled: !state.submitting && state.pending == null,
-            result: state.current,
-            onSubmit: (answer) => controller.submit(answer),
-          ),
-          const SizedBox(height: 16),
-          if (state.pending != null)
-            _OfflineBanner(
-              busy: state.submitting,
-              onRetry: controller.retryPending,
-            ),
-          if (state.errorCode != null)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: Text(
-                l10n.errorGeneric,
-                key: const Key('lesson-error'),
-                style: TextStyle(color: theme.colorScheme.error),
+    // Hiệu ứng đúng/sai phủ lên khu vực làm bài, không chặn thao tác và không đổi bố cục (FR-004, FR-026).
+    return AnswerEffect(
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            if (isRetry) ...<Widget>[
+              Text(
+                l10n.lessonRetryHeading,
+                key: const Key('retry-heading'),
+                style: theme.textTheme.headlineSmall,
               ),
+              Text(l10n.lessonRetryIntro),
+              const SizedBox(height: 12),
+            ],
+            LinearProgressIndicator(
+              value: total == 0 ? 0 : (state.index + 1) / total,
             ),
-          if (state.current != null)
-            LessonFeedback(
+            const SizedBox(height: 4),
+            Text(
+              l10n.lessonProgress(state.index + 1, total),
+              key: const Key('lesson-progress'),
+              style: theme.textTheme.bodySmall,
+            ),
+            const SizedBox(height: 16),
+            ExerciseView(
               exercise: exercise,
-              result: state.current!,
-              showNextReview: showNextReview,
-              isLast: state.isLastQuestion && !_hasRetry(state),
-              busy: state.completing,
-              onContinue: controller.next,
+              enabled: !state.submitting && state.pending == null,
+              result: state.current,
+              onSubmit: (answer) {
+                // Mở khóa âm thanh ngay trong thao tác người học (FR-025).
+                ref.read(effectsControllerProvider.notifier).prime();
+                controller.submit(answer);
+              },
             ),
-          if (state.completeOffline)
-            LessonCompleteOffline(
-              message: l10n.lessonCompleteOffline,
-              onRetry: controller.finish,
-              busy: state.completing,
-            ),
-        ],
+            const SizedBox(height: 16),
+            if (state.pending != null)
+              _OfflineBanner(
+                busy: state.submitting,
+                onRetry: controller.retryPending,
+              ),
+            if (state.errorCode != null)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: Text(
+                  l10n.errorGeneric,
+                  key: const Key('lesson-error'),
+                  style: TextStyle(color: theme.colorScheme.error),
+                ),
+              ),
+            if (state.current != null)
+              LessonFeedback(
+                exercise: exercise,
+                result: state.current!,
+                showNextReview: showNextReview,
+                isLast: state.isLastQuestion && !_hasRetry(state),
+                busy: state.completing,
+                onContinue: controller.next,
+              ),
+            if (state.completeOffline)
+              LessonCompleteOffline(
+                message: l10n.lessonCompleteOffline,
+                onRetry: controller.finish,
+                busy: state.completing,
+              ),
+          ],
+        ),
       ),
     );
   }
@@ -325,57 +337,67 @@ class LessonFeedback extends StatelessWidget {
     final theme = Theme.of(context);
     final correct = result.isCorrect ?? false;
     final answerText = correct ? null : formatCorrectAnswer(exercise, result);
-    return Card(
-      key: const Key('feedback'),
-      color: resultColor(context, correct: correct),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Icon(correct ? Icons.check_circle : Icons.cancel_outlined),
-                const SizedBox(width: 8),
-                Text(
-                  correct ? l10n.lessonCorrect : l10n.lessonIncorrect,
-                  key: Key(correct ? 'feedback-correct' : 'feedback-incorrect'),
-                  style: theme.textTheme.titleMedium,
-                ),
-              ],
-            ),
-            if (result.feedback != null && result.feedback!.isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Text(result.feedback!),
-              ),
-            if (answerText != null && answerText.isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(top: 4),
-                child: Text(
-                  l10n.lessonCorrectAnswer(answerText),
-                  key: const Key('correct-answer'),
-                ),
-              ),
-            if (showNextReview && result.nextReviewDate != null)
-              Padding(
-                padding: const EdgeInsets.only(top: 4),
-                child: Text(
-                  l10n.reviewNextDate(
-                    DateFormat.yMMMd(
-                      Localizations.localeOf(context).toString(),
-                    ).format(result.nextReviewDate!),
+    // Vùng thông báo trực tiếp: trình đọc màn hình đọc kết quả ngay khi thẻ xuất hiện (FR-008).
+    return Semantics(
+      liveRegion: true,
+      container: true,
+      label: correct
+          ? l10n.effectsFeedbackCorrectLabel
+          : l10n.effectsFeedbackIncorrectLabel,
+      child: Card(
+        key: const Key('feedback'),
+        color: resultColor(context, correct: correct),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Icon(correct ? Icons.check_circle : Icons.cancel_outlined),
+                  const SizedBox(width: 8),
+                  Text(
+                    correct ? l10n.lessonCorrect : l10n.lessonIncorrect,
+                    key: Key(
+                      correct ? 'feedback-correct' : 'feedback-incorrect',
+                    ),
+                    style: theme.textTheme.titleMedium,
                   ),
-                  key: const Key('next-review-date'),
-                ),
+                ],
               ),
-            const SizedBox(height: 12),
-            FilledButton(
-              key: const Key('continue'),
-              onPressed: busy ? null : onContinue,
-              child: Text(isLast ? l10n.lessonFinish : l10n.lessonContinue),
-            ),
-          ],
+              if (result.feedback != null && result.feedback!.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Text(result.feedback!),
+                ),
+              if (answerText != null && answerText.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    l10n.lessonCorrectAnswer(answerText),
+                    key: const Key('correct-answer'),
+                  ),
+                ),
+              if (showNextReview && result.nextReviewDate != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    l10n.reviewNextDate(
+                      DateFormat.yMMMd(
+                        Localizations.localeOf(context).toString(),
+                      ).format(result.nextReviewDate!),
+                    ),
+                    key: const Key('next-review-date'),
+                  ),
+                ),
+              const SizedBox(height: 12),
+              FilledButton(
+                key: const Key('continue'),
+                onPressed: busy ? null : onContinue,
+                child: Text(isLast ? l10n.lessonFinish : l10n.lessonContinue),
+              ),
+            ],
+          ),
         ),
       ),
     );

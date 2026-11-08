@@ -19,7 +19,12 @@ import { localize } from '../domain/i18n.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
 import type { Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
-import { allocateKanjiSeconds, currentStreakDays, isOnTrack } from '../engine/progress.js';
+import {
+  allocateKanjiSeconds,
+  currentStreakDays,
+  goalRatio,
+  isOnTrack,
+} from '../engine/progress.js';
 import { upcomingUnits, type ScopeNotice } from '../engine/path.js';
 import type { ServiceDeps } from './deps.js';
 import { secondsToMinutes } from './lesson-session.js';
@@ -99,7 +104,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
       rankForContext(deps, userId, ctx, { includeMastered: true }),
     ]);
 
-  const done = ranked.filter((r) => r.status === 'completed' || r.status === 'mastered').length;
+  const goal = goalRatio(ranked);
   const remaining = upcomingUnits(ranked);
   const remainingMinutes = remaining.reduce((sum, u) => sum + u.estMinutes, 0);
 
@@ -117,7 +122,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
     reviewAccuracy: review.total > 0 ? round3(review.correct / review.total) : null,
     currentStreakDays: currentStreakDays(activeDays, today, pauses),
     goal: {
-      completionRatio: ranked.length > 0 ? round3(done / ranked.length) : 0,
+      completionRatio: goal.ratio,
       onTrack: isOnTrack({
         remainingMinutes,
         dailyMinutes: profile.dailyMinutes ?? 0,

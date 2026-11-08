@@ -1,4 +1,4 @@
-import { and, eq, exists, inArray, isNull, sql } from 'drizzle-orm';
+import { and, eq, exists, inArray, isNull, ne, notExists, sql } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import {
   contentItems,
@@ -158,6 +158,95 @@ export async function countKanjiCharactersLearned(db: DbExecutor, userId: string
       ),
     );
   return row?.n ?? 0;
+}
+
+// --- Số liệu thành tựu (spec 005, research E4, data-model §3.1) ---
+
+/**
+ * Tổng số mục đã học (mọi loại nội dung): số `item_id` khác nhau có ≥ 1 dòng `review_schedules` VÀ đơn vị chứa
+ * mục đã được người học hoàn thành (tổng quát hóa quy tắc K8 của `countKanjiCharactersLearned`).
+ */
+export async function countItemsLearned(db: DbExecutor, userId: string): Promise<number> {
+  const [row] = await db
+    .select({ n: sql<number>`count(distinct ${reviewSchedules.itemId})`.mapWith(Number) })
+    .from(reviewSchedules)
+    .innerJoin(contentItems, eq(contentItems.id, reviewSchedules.itemId))
+    .where(
+      and(
+        eq(reviewSchedules.userId, userId),
+        exists(
+          db
+            .select({ one: sql`1` })
+            .from(lessonSessions)
+            .where(
+              and(
+                eq(lessonSessions.userId, userId),
+                eq(lessonSessions.unitId, contentItems.unitId),
+                eq(lessonSessions.status, 'completed'),
+              ),
+            ),
+        ),
+      ),
+    );
+  return row?.n ?? 0;
+}
+
+/** Có phiên bài học mới (`kind <> 'review'`) nào KHÁC phiên `excludeSessionId` đã hoàn thành không. */
+export async function hasEarlierCompletedLesson(
+  db: DbExecutor,
+  userId: string,
+  excludeSessionId: string,
+): Promise<boolean> {
+  const [row] = await db
+    .select({ id: lessonSessions.id })
+    .from(lessonSessions)
+    .where(
+      and(
+        eq(lessonSessions.userId, userId),
+        eq(lessonSessions.status, 'completed'),
+        ne(lessonSessions.kind, 'review'),
+        ne(lessonSessions.id, excludeSessionId),
+      ),
+    )
+    .limit(1);
+  return row !== undefined;
+}
+
+/**
+ * Có phiên bài học mới nào KHÁC đã hoàn thành mà mọi câu lượt chính (`is_retry = false`) đều đúng không
+ * (phiên phải có ít nhất một câu lượt chính).
+ */
+export async function hasEarlierPerfectLesson(
+  db: DbExecutor,
+  userId: string,
+  excludeSessionId: string,
+): Promise<boolean> {
+  const primary = (extra?: ReturnType<typeof eq>) =>
+    db
+      .select({ one: sql`1` })
+      .from(studyRecords)
+      .where(
+        and(
+          eq(studyRecords.sessionId, lessonSessions.id),
+          eq(studyRecords.isRetry, false),
+          ...(extra ? [extra] : []),
+        ),
+      );
+  const [row] = await db
+    .select({ id: lessonSessions.id })
+    .from(lessonSessions)
+    .where(
+      and(
+        eq(lessonSessions.userId, userId),
+        eq(lessonSessions.status, 'completed'),
+        ne(lessonSessions.kind, 'review'),
+        ne(lessonSessions.id, excludeSessionId),
+        exists(primary()),
+        notExists(primary(eq(studyRecords.isCorrect, false))),
+      ),
+    )
+    .limit(1);
+  return row !== undefined;
 }
 
 /** Số bài Kanji đã hoàn thành (`unit_progress.status = 'completed'` của đơn vị `kind = 'kanji'`). */

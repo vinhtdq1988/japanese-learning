@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **timezone** | **String** |  | [optional] 
 **paused** | **bool** |  | [optional] 
 **onboardingState** | **String** |  | [optional] 
+**soundEnabled** | **bool** | Bật/tắt âm thanh phản hồi và chúc mừng (spec 005). Mặc định true. | [optional] [default to true]
+**visualEffectsEnabled** | **bool** | Bật/tắt hiệu ứng hình ảnh (hoạt ảnh, màn chúc mừng động). Khi tắt, kết quả đúng/sai và thành tựu vẫn được thể hiện bằng dạng tĩnh. Mặc định true. | [optional] [default to true]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

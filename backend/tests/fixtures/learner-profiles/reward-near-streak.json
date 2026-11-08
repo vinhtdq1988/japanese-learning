@@ -1,0 +1,48 @@
+{
+  "id": "reward-near-streak",
+  "description": "6 ngày học liên tiếp đã được chúc mừng streak_3; lần hoàn thành hôm nay đưa chuỗi qua 7 (US2.2).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {},
+  "reward": {
+    "setup": {
+      "streakDaysBeforeToday": 6,
+      "itemsLearnedBefore": 20,
+      "completedLessonsBefore": 6
+    },
+    "input": {
+      "earned": ["first_lesson", "streak_3"],
+      "isNewLesson": true,
+      "streakBefore": 6,
+      "streakAfter": 7,
+      "itemsBefore": 20,
+      "itemsAfter": 28,
+      "goalDone": 7,
+      "goalTotal": 40,
+      "delta": 1,
+      "hasEarlierLesson": true,
+      "isPerfect": false,
+      "hadEarlierPerfect": false
+    },
+    "expected": {
+      "celebrate": ["streak_7"],
+      "silent": []
+    }
+  }
+}
