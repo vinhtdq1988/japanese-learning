@@ -3,6 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:japanese_api/japanese_api.dart';
 
 import 'api/api_error.dart';
+import 'class_repository.dart';
+import 'classroom_repository.dart';
+import 'org_repository.dart';
 import 'session_controller.dart';
 
 /// API client sinh từ OpenAPI, dùng chung [Dio] của ứng dụng (token do `createDio` quản lý nên không
@@ -22,3 +25,24 @@ Future<T> guardApi<T>(Future<T> Function() call) async {
     throw ApiError.fromDio(e);
   }
 }
+
+/// Tổ chức, giấy phép, seat và lời mời giáo viên/chủ tổ chức (spec 004, US1).
+final orgRepositoryProvider = Provider<OrgRepository>((ref) {
+  return OrgRepository(ref.watch(japaneseApiProvider), ref.watch(dioProvider));
+});
+
+/// Lớp học cho giáo viên và chủ tổ chức (spec 004, US2).
+final classRepositoryProvider = Provider<ClassRepository>((ref) {
+  return ClassRepository(
+    ref.watch(japaneseApiProvider),
+    ref.watch(dioProvider),
+  );
+});
+
+/// Phía học viên của lớp: lời mời, nhập mã, "Lớp của tôi" (spec 004, US2).
+final classroomRepositoryProvider = Provider<ClassroomRepository>((ref) {
+  return ClassroomRepository(
+    ref.watch(japaneseApiProvider),
+    ref.watch(dioProvider),
+  );
+});

@@ -98,6 +98,17 @@ export const ERROR_CODES = [
   'SESSION_COMPLETED',
   'CONTENT_EXHAUSTED',
   'TOO_MANY_REQUESTS',
+  // Tổ chức, lớp học và seat (spec 004)
+  'CLASS_MANAGED',
+  'SEAT_UNAVAILABLE',
+  'SEAT_REASSIGN_LIMIT',
+  'SEAT_BELOW_USAGE',
+  'CLASS_NOT_READY',
+  'CLASS_FULL',
+  'CLASS_ARCHIVED',
+  'LAST_TEACHER',
+  'ALREADY_IN_CLASS',
+  'INVITEE_UNAVAILABLE',
   'INTERNAL_ERROR',
 ] as const;
 export type ErrorCode = (typeof ERROR_CODES)[number];
@@ -109,6 +120,8 @@ export class AppError extends Error {
     public readonly code: ErrorCode,
     message: string,
     public readonly fields?: Record<string, string>,
+    /** Header phản hồi đi kèm (ví dụ `Retry-After` của 429 nhập mã tham gia). */
+    public readonly headers?: Record<string, string>,
   ) {
     super(message);
     this.name = 'AppError';

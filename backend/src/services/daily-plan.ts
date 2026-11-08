@@ -1,4 +1,3 @@
-import { getActivePath } from '../db/repositories/paths.js';
 import {
   findPlan,
   getUnitInfo,
@@ -10,7 +9,6 @@ import {
   reviewFacetsColumn,
   type DailyPlanRow,
 } from '../db/repositories/plans.js';
-import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
 import { latestActiveDay, listPausePeriods } from '../db/repositories/progress.js';
 import { listDueReviewItems } from '../db/repositories/review.js';
 import {
@@ -35,7 +33,12 @@ import { levelIndex, upcomingUnits, type PathParams } from '../engine/path.js';
 import type { CatalogUnit } from './content-cache.js';
 import type { ServiceDeps } from './deps.js';
 import type { SessionSummaryDto } from './lesson-session.js';
-import { notOnboarded, paramsOfPath, rankForUser } from './path.js';
+import {
+  rankForContext,
+  resolveLearningContext,
+  type LearningContext,
+} from './learning-context.js';
+import { notOnboarded } from './path.js';
 
 // Dịch vụ kế hoạch ngày (T050, R7, FR-012): sinh lười khi mở lần đầu trong ngày địa phương, lưu lại
 // nên idempotent theo `(user_id, local_date)` và không đổi khi nội dung đổi trong ngày.
@@ -159,11 +162,12 @@ async function toDto(
 async function generatePlan(
   deps: ServiceDeps,
   userId: string,
-  profile: ProfileRow,
-  params: PathParams,
+  ctx: LearningContext,
   localDate: string,
 ): Promise<void> {
-  const ranked = await rankForUser(deps, userId, profile, params);
+  // Nguồn học (cá nhân hay lớp) quyết định hồ sơ hiệu lực: phút/ngày, kỹ năng, tạm dừng (spec 004, O6).
+  const profile = ctx.profile;
+  const ranked = await rankForContext(deps, userId, ctx);
   const upcoming = upcomingUnits(ranked);
   const previousKind = await previousPlanKind(deps.db, userId, localDate);
   const budgetMinutes = profile.dailyMinutes ?? 0;
@@ -205,9 +209,10 @@ async function generatePlan(
 
   // Khoảng nghỉ (T092, FR-015): kế hoạch đã bị chặn bởi 60% quỹ cho ôn nên luôn xử lý được; mục quá hạn
   // dư giữ nguyên `due_date` gốc nên tự được ưu tiên ở các ngày sau. Chỉ báo cho người học, không có "nợ".
+  // Trong lớp chỉ khoảng tạm dừng của lớp áp dụng (pause_periods cá nhân bị bỏ qua, research O9).
   const [lastActive, pauses] = await Promise.all([
     latestActiveDay(deps.db, userId),
-    listPausePeriods(deps.db, userId),
+    ctx.source === 'class' ? Promise.resolve(ctx.pauses) : listPausePeriods(deps.db, userId),
   ]);
   const afterGap = hasLearningGap(lastActive, localDate, pauses);
 
@@ -255,20 +260,18 @@ async function generatePlan(
  * 409 `PATH_PAUSED` khi lộ trình đang tạm dừng (không có kế hoạch, không có ngày bỏ lỡ).
  */
 export async function getTodayPlan(deps: ServiceDeps, userId: string): Promise<DailyPlanDto> {
-  const [profile, path] = await Promise.all([
-    getProfile(deps.db, userId),
-    getActivePath(deps.db, userId),
-  ]);
-  if (!profile || !path || profile.onboardingState !== 'completed') throw notOnboarded();
+  const ctx = await resolveLearningContext(deps, userId);
+  if (!ctx) throw notOnboarded();
+  const profile = ctx.profile;
   if (profile.paused) throw new AppError(409, 'PATH_PAUSED', 'Lộ trình đang tạm dừng');
 
   const localDate = localToday(deps.clock, profile.timezone);
   let plan = await findPlan(deps.db, userId, localDate);
   if (!plan) {
-    await generatePlan(deps, userId, profile, paramsOfPath(path), localDate);
+    await generatePlan(deps, userId, ctx, localDate);
     plan = await findPlan(deps.db, userId, localDate);
   }
-  const kanjiNotice = await kanjiNoticeFor(deps, userId, profile, paramsOfPath(path));
+  const kanjiNotice = await kanjiNoticeFor(deps, userId, ctx);
   return toDto(deps, plan!, profile.language, kanjiNotice);
 }
 
@@ -276,14 +279,13 @@ export async function getTodayPlan(deps: ServiceDeps, userId: string): Promise<D
 async function kanjiNoticeFor(
   deps: ServiceDeps,
   userId: string,
-  profile: ProfileRow,
-  params: PathParams,
+  ctx: LearningContext,
 ): Promise<KanjiNoticeDto | null> {
-  if (!profile.skills.includes('kanji')) return null;
-  const ranked = await rankForUser(deps, userId, profile, params);
+  if (!ctx.profile.skills.includes('kanji')) return null;
+  const ranked = await rankForContext(deps, userId, ctx);
   return computeKanjiNotice(
-    params,
-    profile.skills,
+    ctx.params,
+    ctx.profile.skills,
     upcomingUnits(ranked),
     await deps.contentCache.activeUnits(),
   );
@@ -324,15 +326,13 @@ const EXHAUSTED_MESSAGES: Record<ExhaustionSuggestion, string> = {
  * Hết nội dung phù hợp → 404 `CONTENT_EXHAUSTED` kèm gợi ý trong `fields.suggestion`.
  */
 export async function getExtraUnit(deps: ServiceDeps, userId: string): Promise<PlanItemDto> {
-  const [profile, path] = await Promise.all([
-    getProfile(deps.db, userId),
-    getActivePath(deps.db, userId),
-  ]);
-  if (!profile || !path || profile.onboardingState !== 'completed') throw notOnboarded();
+  const ctx = await resolveLearningContext(deps, userId);
+  if (!ctx) throw notOnboarded();
+  const profile = ctx.profile;
   if (profile.paused) throw new AppError(409, 'PATH_PAUSED', 'Lộ trình đang tạm dừng');
 
-  const params = paramsOfPath(path);
-  const ranked = await rankForUser(deps, userId, profile, params);
+  const params = ctx.params;
+  const ranked = await rankForContext(deps, userId, ctx);
   const plan = await findPlan(deps.db, userId, localToday(deps.clock, profile.timezone));
   const planned = new Set(
     plan

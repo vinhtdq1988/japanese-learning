@@ -59,7 +59,15 @@ class FakeBackend implements HttpClientAdapter {
                 'Không có route giả cho ${options.method} ${options.path}',
           })
         : await handler(options);
-    final body = response.body == null ? '' : jsonEncode(response.body);
+    // Thân là chuỗi kèm `Content-Type` riêng (ví dụ `text/csv`) thì gửi nguyên văn, không mã hóa JSON.
+    final rawBody =
+        response.body is String &&
+        response.headers.keys.any((k) => k.toLowerCase() == 'content-type');
+    final body = response.body == null
+        ? ''
+        : rawBody
+        ? response.body! as String
+        : jsonEncode(response.body);
     return ResponseBody.fromString(
       body,
       response.status,

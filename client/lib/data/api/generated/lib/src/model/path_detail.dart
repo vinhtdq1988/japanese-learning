@@ -35,6 +35,8 @@ class PathDetail {
 
     this.message,
 
+    this.source_,
+
     this.items,
   });
 
@@ -60,6 +62,10 @@ class PathDetail {
   @JsonKey(name: r'message', required: false, includeIfNull: false)
   final String? message;
 
+  /// Spec 004: nguồn của lộ trình; `class` khi học viên thuộc lớp
+  @JsonKey(name: r'source', required: false, includeIfNull: false)
+  final PathDetailSource_Enum? source_;
+
   /// Thứ tự đơn vị được tính động tại thời điểm gọi từ tham số lộ trình, nội dung `active` hiện hành và trạng thái học (không lưu sẵn; đơn vị mới kích hoạt xuất hiện ở lần gọi kế tiếp, SC-008)
   @JsonKey(name: r'items', required: false, includeIfNull: false)
   final List<PathDetailAllOfItems>? items;
@@ -75,6 +81,7 @@ class PathDetail {
           other.reason == reason &&
           other.scopeNotice == scopeNotice &&
           other.message == message &&
+          other.source_ == source_ &&
           other.items == items;
 
   @override
@@ -86,6 +93,7 @@ class PathDetail {
       reason.hashCode +
       (scopeNotice == null ? 0 : scopeNotice.hashCode) +
       (message == null ? 0 : message.hashCode) +
+      source_.hashCode +
       items.hashCode;
 
   factory PathDetail.fromJson(Map<String, dynamic> json) =>
@@ -112,6 +120,21 @@ enum PathDetailReasonEnum {
   placementRetake(r'placement_retake');
 
   const PathDetailReasonEnum(this.value);
+
+  final String value;
+
+  @override
+  String toString() => value;
+}
+
+/// Spec 004: nguồn của lộ trình; `class` khi học viên thuộc lớp
+enum PathDetailSource_Enum {
+  @JsonValue(r'personal')
+  personal(r'personal'),
+  @JsonValue(r'class')
+  class_(r'class');
+
+  const PathDetailSource_Enum(this.value);
 
   final String value;
 

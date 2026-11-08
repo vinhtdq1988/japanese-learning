@@ -31,10 +31,15 @@ class AccountRepository {
 
   /// Sửa phần hồ sơ không ảnh hưởng lộ trình. Gửi JSON thủ công để chỉ gửi đúng các trường được đặt
   /// (mô hình sinh ra từ OpenAPI mã hóa enum `language` theo kiểu riêng, xem `ProfileChange`).
-  Future<Me> updateProfile({String? displayName, String? language}) {
+  Future<Me> updateProfile({
+    String? displayName,
+    String? language,
+    String? timezone,
+  }) {
     return _patch(<String, Object?>{
       'displayName': ?displayName,
       'language': ?language,
+      'timezone': ?timezone,
     });
   }
 
@@ -119,4 +124,36 @@ final accountRepositoryProvider = Provider<AccountRepository>((ref) {
 /// Tài khoản + hồ sơ hiện tại; tự hủy khi rời màn hình.
 final meProvider = FutureProvider.autoDispose<Me>((ref) {
   return ref.watch(accountRepositoryProvider).me();
+});
+
+/// Vai trò quyết định các mục điều hướng tổ chức/lớp (spec 004): chủ tổ chức thấy "Tổ chức" và "Lớp học",
+/// giáo viên thấy "Lớp học", học viên thuộc lớp thấy "Lớp của tôi".
+class NavRoles {
+  const NavRoles({
+    this.isOwner = false,
+    this.isTeacher = false,
+    this.inClass = false,
+  });
+
+  final bool isOwner;
+  final bool isTeacher;
+  final bool inClass;
+
+  bool get managesClasses => isOwner || isTeacher;
+}
+
+/// Vai trò điều hướng của tài khoản, từ MỘT lần gọi `GET /me`. Lỗi bất kỳ (mất mạng, 401…) coi là không có
+/// vai trò: bảo vệ thực sự ở server nên ẩn nhầm chỉ làm mất lối tắt.
+final navRolesProvider = FutureProvider.autoDispose<NavRoles>((ref) async {
+  try {
+    final me = await ref.watch(accountRepositoryProvider).me();
+    final roles = me.organization?.roles ?? const <MeOrganizationRolesEnum>[];
+    return NavRoles(
+      isOwner: roles.contains(MeOrganizationRolesEnum.owner),
+      isTeacher: roles.contains(MeOrganizationRolesEnum.teacher),
+      inClass: me.learningSource == MeLearningSourceEnum.class_,
+    );
+  } on Object {
+    return const NavRoles();
+  }
 });

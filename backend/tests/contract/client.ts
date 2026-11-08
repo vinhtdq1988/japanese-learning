@@ -21,8 +21,40 @@ export interface CallResult<T = any> {
   headers: Record<string, unknown>;
 }
 
+/** Kết quả gọi thô: thân giữ nguyên dạng chuỗi, không đối chiếu hợp đồng (CSV, so sánh từng byte). */
+export interface RawResult {
+  status: number;
+  /** Thân phản hồi nguyên văn (chưa phân tích JSON). */
+  text: string;
+  headers: Record<string, unknown>;
+}
+
+export interface RawCallOptions {
+  token?: string;
+  headers?: Record<string, string>;
+  /** Thân gửi đi: đối tượng được gửi dạng JSON, chuỗi được gửi nguyên văn (kèm `content-type` nếu cần). */
+  body?: unknown;
+}
+
 export class ContractClient {
   constructor(private readonly app: FastifyInstance) {}
+
+  /**
+   * Gọi API và trả thân nguyên văn, KHÔNG phân tích JSON và KHÔNG đối chiếu hợp đồng. Dùng cho phản hồi
+   * CSV, nhập CSV (`text/csv`) và khẳng định 404 của "tổ chức khác" trùng từng byte với "không tồn tại"
+   * (spec 004, SC-004). `token` đặt bearer của đúng vai trò đang thử.
+   */
+  async raw(method: string, url: string, options: RawCallOptions = {}): Promise<RawResult> {
+    const headers: Record<string, string> = { ...options.headers };
+    if (options.token) headers.authorization = `Bearer ${options.token}`;
+    const response = await this.app.inject({
+      method: method.toUpperCase() as 'GET',
+      url: `/api/v1${url}`,
+      headers,
+      ...(options.body !== undefined ? { payload: options.body as object | string } : {}),
+    });
+    return { status: response.statusCode, text: response.body, headers: response.headers };
+  }
 
   async call<T = any>(
     method: string,
@@ -59,6 +91,9 @@ export class ContractClient {
   }
   patch<T = any>(url: string, options?: CallOptions) {
     return this.call<T>('patch', url, options);
+  }
+  delete<T = any>(url: string, options?: CallOptions) {
+    return this.call<T>('delete', url, options);
   }
 }
 

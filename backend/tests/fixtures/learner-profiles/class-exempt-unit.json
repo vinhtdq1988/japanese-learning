@@ -1,0 +1,47 @@
+{
+  "id": "class-exempt-unit",
+  "description": "Giáo viên miễn một bài cho học viên: bài đó không vào kế hoạch cũng không tính vào mẫu số tiến độ (US5, FR-026).",
+  "asOf": "2026-01-08",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "class": {
+    "mode": "template",
+    "startLevel": "N5",
+    "targetLevel": "N4",
+    "skills": ["vocabulary", "grammar"],
+    "startsOn": "2026-01-05",
+    "endsOn": "2026-03-31",
+    "dailyMinutes": 10,
+    "joinedOn": "2026-01-05",
+    "absenceThresholdDays": 3,
+    "explicitUnits": [],
+    "assignments": [],
+    "overrides": null,
+    "exemptions": ["n5-grammar-particles"],
+    "classPauses": []
+  },
+  "expected": {
+    "dailyPlan": {
+      "budgetMinutes": 10,
+      "neverContains": ["n5-grammar-particles"]
+    },
+    "progress": {
+      "requiredExcludes": ["n5-grammar-particles"]
+    }
+  }
+}

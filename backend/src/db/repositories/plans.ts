@@ -153,3 +153,21 @@ export async function getUnitTitles(
     .where(inArray(learningUnits.id, [...unitIds]));
   return new Map(rows.map((r) => [r.id, r.title]));
 }
+
+/**
+ * Xóa kế hoạch của `(user_id, local_date)` NẾU mọi mục còn `pending` (mục xóa theo cascade; không mất dữ liệu
+ * học). Có mục `in_progress/completed` ⇒ giữ nguyên. Dùng khi nguồn học đổi giữa ngày (vào/rời lớp) để học
+ * viên thấy ngay kế hoạch đúng nguồn (spec 004, research O6). Trả `true` nếu đã xóa.
+ */
+export async function deletePlanIfAllPending(
+  db: DbExecutor,
+  userId: string,
+  localDate: LocalDate,
+): Promise<boolean> {
+  const plan = await findPlan(db, userId, localDate);
+  if (!plan) return false;
+  const items = await listPlanItems(db, plan.id);
+  if (items.some((i) => i.status !== 'pending')) return false;
+  await db.delete(dailyPlans).where(eq(dailyPlans.id, plan.id));
+  return true;
+}

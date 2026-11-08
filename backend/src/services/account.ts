@@ -15,9 +15,10 @@ import type { PasswordChangeInput } from '../domain/profile-validation.js';
 import { AppError } from '../domain/types.js';
 import type { ServiceDeps } from './deps.js';
 import { DELETION_GRACE_DAYS, emailConflict, isDeletionGraceOver, normalizeEmail } from './auth.js';
+import { endOrgParticipationOnAccountDeletion } from './org-members.js';
 import { hashPassword, verifyPassword } from './password.js';
 
-// Dịch vụ tài khoản (T111, FR-002, FR-003): đổi email, đổi mật khẩu, xóa và khôi phục tài khoản.
+// Dịch vụ tài khoản (T111, FR-002, FR-003, FR-039): đổi email, đổi mật khẩu, xóa và khôi phục tài khoản.
 // Sửa phần hồ sơ còn lại (tên, ngôn ngữ, múi giờ, mục tiêu…) do `profile.ts` (`PATCH /me`) đảm nhận.
 
 const DAY_MS = 86_400_000;
@@ -117,7 +118,8 @@ export function permanentDeletionAt(requestedAt: Date): Date {
 /**
  * `POST /account/delete`: cần mật khẩu; chuyển `pending_deletion` ngay và thu hồi MỌI phiên (kể cả phiên
  * hiện tại, client phải xóa token cục bộ). Access token đã cấp cho cửa sổ khác còn hiệu lực tới khi hết
- * hạn (tối đa 15 phút, FR-003). Dữ liệu chỉ bị xóa cứng sau 30 ngày bởi job nền (T112).
+ * hạn (tối đa 15 phút, FR-003). Dữ liệu chỉ bị xóa cứng sau 30 ngày bởi job nền (T112). Tư cách thành viên
+ * lớp kết thúc ngay (`account_deleted`) và KHÔNG được khôi phục cùng tài khoản.
  */
 export async function deleteAccount(
   deps: Pick<ServiceDeps, 'db' | 'clock'>,
@@ -139,6 +141,8 @@ export async function deleteAccount(
   await deps.db.transaction(async (tx) => {
     await markPendingDeletion(tx, userId, now);
     await revokeUserSessions(tx, userId, now);
+    // Học viên thuộc lớp: tổ chức mất quyền xem ngay; giáo viên/chủ: nhả seat và lớp (FR-039, O15).
+    await endOrgParticipationOnAccountDeletion(tx, deps, userId);
   });
   return { permanentDeletionAt: permanentDeletionAt(now).toISOString() };
 }

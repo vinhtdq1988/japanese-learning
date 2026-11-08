@@ -81,6 +81,54 @@ void main() {
       expect(_redirect(_learner, '/trial'), isNull);
     });
 
+    test(
+      'đã đăng nhập vào trang khách có ?from hợp lệ → về đúng đích (lời mời tổ chức)',
+      () {
+        expect(
+          _redirect(_learner, '/login?from=%2Finvite%2Ftok-1'),
+          '/invite/tok-1',
+        );
+        expect(
+          _redirect(_learner, '/register?from=%2Fprogress'),
+          AppRoutes.progress,
+        );
+        // Đích không an toàn hoặc vòng chuyển hướng → rơi về "Hôm nay".
+        for (final from in <String>[
+          'https%3A%2F%2Fevil.example',
+          '%2F%2Fevil.example',
+          '%2Flogin',
+          '%2Fsplash',
+          '',
+        ]) {
+          expect(
+            _redirect(_learner, '/login?from=$from'),
+            AppRoutes.today,
+            reason: from,
+          );
+        }
+      },
+    );
+
+    test(
+      'liên kết lời mời: khách bị đưa tới đăng nhập kèm đích, người đã đăng nhập vào thẳng',
+      () {
+        expect(
+          _redirect(_signedOut, '/invite/tok-1'),
+          '/login?from=%2Finvite%2Ftok-1',
+        );
+        expect(_redirect(_learner, '/invite/tok-1'), isNull);
+        expect(_redirect(_learner, AppRoutes.org), isNull);
+      },
+    );
+
+    test('/admin/organizations chỉ dành cho admin', () {
+      expect(
+        _redirect(_learner, AppRoutes.adminOrganizations),
+        AppRoutes.today,
+      );
+      expect(_redirect(_admin, AppRoutes.adminOrganizations), isNull);
+    });
+
     test('người học thường bị chặn khỏi /admin, admin thì vào được', () {
       expect(_redirect(_learner, '/admin'), AppRoutes.today);
       expect(_redirect(_learner, '/admin/units'), AppRoutes.today);

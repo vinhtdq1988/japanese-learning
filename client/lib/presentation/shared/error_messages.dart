@@ -23,6 +23,29 @@ String describeError(BuildContext context, Object? error) {
       return l10n.errorAccountPendingDeletion;
     case 'VALIDATION_FAILED':
       return l10n.errorValidation;
+    // Tổ chức, seat và lời mời (spec 004).
+    case 'SEAT_UNAVAILABLE':
+      return l10n.errorSeatUnavailable;
+    case 'SEAT_REASSIGN_LIMIT':
+      return l10n.errorSeatReassignLimit;
+    case 'SEAT_BELOW_USAGE':
+      return l10n.errorSeatBelowUsage;
+    case 'INVITEE_UNAVAILABLE':
+      return l10n.errorInviteeUnavailable;
+    // Thao tác bị khóa khi thuộc lớp (spec 004, US3, FR-018).
+    case 'CLASS_MANAGED':
+      return l10n.errorClassManaged;
+    // Lớp học (spec 004, US2).
+    case 'CLASS_NOT_READY':
+      return l10n.errorClassNotReady;
+    case 'CLASS_FULL':
+      return l10n.errorClassFull;
+    case 'CLASS_ARCHIVED':
+      return l10n.errorClassArchived;
+    case 'ALREADY_IN_CLASS':
+      return l10n.errorAlreadyInClass;
+    case 'LAST_TEACHER':
+      return l10n.errorLastTeacher;
   }
   return switch (api.statusCode) {
     401 => l10n.errorSessionExpired,

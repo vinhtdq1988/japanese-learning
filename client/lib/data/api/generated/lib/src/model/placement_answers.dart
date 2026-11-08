@@ -18,7 +18,17 @@ part 'placement_answers.g.dart';
 )
 class PlacementAnswers {
   /// Returns a new [PlacementAnswers] instance.
-  PlacementAnswers({this.durationSeconds, required this.answers});
+  PlacementAnswers({
+    this.classRequestId,
+
+    this.durationSeconds,
+
+    required this.answers,
+  });
+
+  /// Spec 004: nộp bài cho yêu cầu kiểm tra trình độ của lớp; kết quả lưu `is_current=false`, không đổi lộ trình hay kết quả hiện hành
+  @JsonKey(name: r'classRequestId', required: false, includeIfNull: false)
+  final String? classRequestId;
 
   @JsonKey(name: r'durationSeconds', required: false, includeIfNull: false)
   final int? durationSeconds;
@@ -30,11 +40,13 @@ class PlacementAnswers {
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is PlacementAnswers &&
+          other.classRequestId == classRequestId &&
           other.durationSeconds == durationSeconds &&
           other.answers == answers;
 
   @override
-  int get hashCode => durationSeconds.hashCode + answers.hashCode;
+  int get hashCode =>
+      classRequestId.hashCode + durationSeconds.hashCode + answers.hashCode;
 
   factory PlacementAnswers.fromJson(Map<String, dynamic> json) =>
       _$PlacementAnswersFromJson(json);

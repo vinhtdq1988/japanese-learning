@@ -113,7 +113,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               ),
               TextButton(
                 key: const Key('register-link'),
-                onPressed: () => context.go(AppRoutes.register),
+                // Giữ đích quay lại (ví dụ liên kết lời mời) khi người học chuyển sang đăng ký.
+                onPressed: () => context.go(
+                  AppRoutes.withFrom(
+                    AppRoutes.register,
+                    GoRouterState.of(context).uri.queryParameters['from'],
+                  ),
+                ),
                 child: Text(l10n.authNoAccountRegister),
               ),
             ],

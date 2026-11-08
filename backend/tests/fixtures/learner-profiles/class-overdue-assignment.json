@@ -1,0 +1,58 @@
+{
+  "id": "class-overdue-assignment",
+  "description": "Bài giao đã quá hạn nhưng chưa xong: vẫn lên đầu kế hoạch cho tới khi hoàn thành, trạng thái 'overdue', học viên bị 'chậm' (FR-024, O12).",
+  "asOf": "2026-01-15",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-14",
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "class": {
+    "mode": "template",
+    "startLevel": "N5",
+    "targetLevel": "N4",
+    "skills": ["vocabulary", "grammar"],
+    "startsOn": "2026-01-05",
+    "endsOn": "2026-03-31",
+    "dailyMinutes": 15,
+    "joinedOn": "2026-01-05",
+    "absenceThresholdDays": 3,
+    "explicitUnits": [],
+    "assignments": [
+      {
+        "unit": "n5-grammar-verbs-masu",
+        "dueOn": "2026-01-10"
+      }
+    ],
+    "overrides": null,
+    "exemptions": [],
+    "classPauses": []
+  },
+  "expected": {
+    "dailyPlan": {
+      "budgetMinutes": 15,
+      "firstNewUnit": "n5-grammar-verbs-masu"
+    },
+    "assignments": {
+      "n5-grammar-verbs-masu": "overdue"
+    },
+    "alerts": {
+      "contains": ["overdue_assignment"]
+    },
+    "progress": {
+      "status": "behind"
+    }
+  }
+}

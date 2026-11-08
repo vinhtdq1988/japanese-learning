@@ -1,5 +1,6 @@
 import { omitNulls } from '../api/http.js';
 import { getActivePath } from '../db/repositories/paths.js';
+import { assertNotClassManaged } from './class-lock.js';
 import {
   clearCurrentPlacement,
   markPlacementCurrent,
@@ -55,6 +56,7 @@ export async function saveOnboardingDraft(
   userId: string,
   draft: OnboardingDraftInput,
 ): Promise<OnboardingStateDto> {
+  await assertNotClassManaged(deps.db, userId);
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy hồ sơ');
   await updateProfile(
@@ -87,6 +89,7 @@ export async function completeOnboarding(
   userId: string,
   input: OnboardingCompleteInput,
 ): Promise<OnboardingResultDto> {
+  await assertNotClassManaged(deps.db, userId);
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy hồ sơ');
 

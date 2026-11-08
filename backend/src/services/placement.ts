@@ -10,6 +10,14 @@ import {
 } from '../db/repositories/placement.js';
 import type { DbExecutor } from '../db/client.js';
 import { getProfile } from '../db/repositories/profiles.js';
+import { findActiveMembershipByUser } from '../db/repositories/class-memberships.js';
+import {
+  getOpenRequestOfClass,
+  hasSubmittedForRequest,
+} from '../db/repositories/class-placement.js';
+import { isUniqueViolation } from '../db/repositories/users.js';
+import { notFoundGeneric, orgError } from '../api/errors.js';
+import { assertNotClassManaged } from './class-lock.js';
 import type { PlacementAnswersInput } from '../domain/profile-validation.js';
 import { localize } from '../domain/i18n.js';
 import { AppError, DEFAULT_LANGUAGE, type Language } from '../domain/types.js';
@@ -189,6 +197,10 @@ export async function submitPlacement(
   userId: string,
   input: PlacementAnswersInput,
 ): Promise<PlacementResultDto> {
+  // Làm lại placement đổi điểm xuất phát lộ trình cá nhân nên bị khóa khi thuộc lớp; kết quả do lớp yêu cầu
+  // (`classRequestId`, US8) đi nhánh riêng không đổi kết quả hiện hành (spec 004, O14).
+  if (input.classRequestId) return submitClassPlacement(deps, userId, input, input.classRequestId);
+  await assertNotClassManaged(deps.db, userId, ['placement']);
   const profile = await getProfile(deps.db, userId);
   const language = profile?.language ?? DEFAULT_LANGUAGE;
   const { answers, outcome } = await gradeAnswers(deps.db, input);
@@ -208,6 +220,53 @@ export async function submitPlacement(
     });
   });
   return placementRowToDto(deps.db, row, language);
+}
+
+const invalidClassRequest = () =>
+  orgError('CLASS_MANAGED', 'Không có yêu cầu kiểm tra trình độ hợp lệ của lớp', {
+    classRequestId: 'Yêu cầu không còn mở, không thuộc lớp của bạn hoặc bạn đã nộp bài',
+  });
+
+/**
+ * Nộp bài cho yêu cầu kiểm tra trình độ của lớp (spec 004, T125, US8, api-changes §5.5): dùng lại bộ câu hỏi và
+ * `gradeAnswers`, lưu `is_current = false` kèm `class_placement_request_id`, KHÔNG xóa cờ hiện hành và KHÔNG
+ * tạo lại lộ trình (FR-034). Không thuộc lớp ⇒ 404 chung; thuộc lớp nhưng yêu cầu không mở/không phải của lớp
+ * mình/đã nộp ⇒ 409 `CLASS_MANAGED`.
+ */
+async function submitClassPlacement(
+  deps: ServiceDeps,
+  userId: string,
+  input: PlacementAnswersInput,
+  requestId: string,
+): Promise<PlacementResultDto> {
+  const membership = await findActiveMembershipByUser(deps.db, userId);
+  if (!membership) throw notFoundGeneric();
+  const open = await getOpenRequestOfClass(deps.db, membership.classId);
+  if (!open || open.id !== requestId) throw invalidClassRequest();
+  if (await hasSubmittedForRequest(deps.db, userId, requestId)) throw invalidClassRequest();
+
+  const profile = await getProfile(deps.db, userId);
+  const language = profile?.language ?? DEFAULT_LANGUAGE;
+  const { answers, outcome } = await gradeAnswers(deps.db, input);
+  try {
+    const row = await insertPlacementResult(deps.db, {
+      userId,
+      answers,
+      estimatedLevel: outcome.estimatedLevel,
+      strongTopics: outcome.strongTopics,
+      weakTopics: outcome.weakTopics,
+      score: outcome.score,
+      durationSeconds: input.durationSeconds ?? null,
+      takenAt: deps.clock.now(),
+      isCurrent: false,
+      classPlacementRequestId: requestId,
+    });
+    return await placementRowToDto(deps.db, row, language);
+  } catch (err) {
+    // Hai lần nộp đồng thời: chỉ mục duy nhất `(user_id, class_placement_request_id)` chặn lần thứ hai.
+    if (isUniqueViolation(err)) throw invalidClassRequest();
+    throw err;
+  }
 }
 
 /** Kết quả hiện hành của người học (null nếu chưa làm). */

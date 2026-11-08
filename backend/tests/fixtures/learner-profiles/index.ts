@@ -59,6 +59,12 @@ const DIR = path.dirname(fileURLToPath(import.meta.url));
 /** Tiền tố file của nhóm hồ sơ Kanji (spec 003): tách khỏi nhóm hồ sơ cũ để golden hồi quy chỉ duyệt hồ sơ cũ. */
 const KANJI_PREFIX = 'kanji-';
 
+/**
+ * Tiền tố file của nhóm hồ sơ lớp học (spec 004). Nhóm này có loader riêng (`class-index.ts`) và KHÔNG được
+ * lẫn vào `loadLearnerProfiles()` để không làm lệch golden `plans-pre-org.json` (T001, SC-012).
+ */
+export const CLASS_PREFIX = 'class-';
+
 function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[] {
   return readdirSync(DIR)
     .filter((f) => f.endsWith('.json') && accept(f))
@@ -66,9 +72,14 @@ function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
-/** Đọc mọi hồ sơ đại diện CŨ (không chọn Kanji), sắp theo `id`. */
+/** Đọc mọi hồ sơ đại diện CŨ (không chọn Kanji, không thuộc lớp), sắp theo `id`. */
 export function loadLearnerProfiles(): LearnerProfileFixture[] {
-  return readProfiles((f) => !f.startsWith(KANJI_PREFIX));
+  return readProfiles((f) => !f.startsWith(KANJI_PREFIX) && !f.startsWith(CLASS_PREFIX));
+}
+
+/** Đọc các file hồ sơ có tên bắt đầu bằng `prefix`, sắp theo `id` (dùng cho loader nhóm hồ sơ riêng). */
+export function readProfilesWithPrefix<T extends LearnerProfileFixture>(prefix: string): T[] {
+  return readProfiles((f) => f.startsWith(prefix)) as T[];
 }
 
 /** Đọc nhóm hồ sơ Kanji (FR-024, research K16), sắp theo `id`. */

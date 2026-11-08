@@ -278,4 +278,6 @@ export const adminUserListQuerySchema = z.object({
 
 export const adminLogListQuerySchema = z.object({
   cursor: z.uuid('cursor không hợp lệ').optional(),
+  /** Lọc nhật ký theo tổ chức (spec 004, FR-008). */
+  organizationId: z.uuid('organizationId không hợp lệ').optional(),
 });

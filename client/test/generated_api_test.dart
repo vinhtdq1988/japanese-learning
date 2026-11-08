@@ -139,4 +139,114 @@ void main() {
       );
     },
   );
+
+  test(
+    'API client giải mã Me.learningSource, classSummary và SharedDataDisclosure (spec 004)',
+    () async {
+      final adapter = _FakeAdapter(<String, Object?>{
+        'id': 'u-1',
+        'email': 'hocvien@example.com',
+        'role': 'learner',
+        'status': 'active',
+        'learningSource': 'class',
+        'classSummary': <String, Object?>{
+          'classId': 'c-1',
+          'className': 'N5 buổi tối',
+          'organizationName': 'Trung tâm Sakura',
+          'lockedFields': <Object?>['dailyMinutes', 'skills'],
+        },
+        'organization': <String, Object?>{
+          'id': 'o-1',
+          'name': 'Trung tâm Sakura',
+          'roles': <Object?>['teacher'],
+          'dataAccess': true,
+          'license': <String, Object?>{
+            'state': 'in_grace',
+            'endsOn': '2026-12-31',
+            'graceEndsOn': '2027-01-07',
+          },
+        },
+      });
+      final dio = createDio(
+        tokenStore: MemoryTokenStore(
+          const StoredTokens(accessToken: 'a', refreshToken: 'r'),
+        ),
+        onSessionExpired: () {},
+        baseUrl: 'http://api.test/api/v1',
+        httpClientAdapter: adapter,
+      );
+      final api = JapaneseApi(dio: dio, interceptors: const <Interceptor>[]);
+
+      final me = (await api.getAccountApi().getMe()).data!;
+
+      expect(me.learningSource, MeLearningSourceEnum.class_);
+      expect(me.classSummary!.lockedFields, <String>['dailyMinutes', 'skills']);
+      expect(me.organization!.roles.single, MeOrganizationRolesEnum.teacher);
+      expect(me.organization!.license!.state, LicenseState.inGrace);
+
+      final disclosure = SharedDataDisclosure.fromJson(<String, Object?>{
+        'version': 1,
+        'visible': <Object?>[
+          <String, Object?>{'code': 'progress', 'label': 'Tiến độ'},
+        ],
+        'notVisible': <Object?>['từng câu trả lời'],
+        'lockedControls': <Object?>['dailyMinutes'],
+        'canLeaveAnytime': true,
+        'mayBeMovedWithinOrganization': false,
+      });
+      expect(disclosure.visible.single.code, SharedDataItemCodeEnum.progress);
+      expect(disclosure.canLeaveAnytime, isTrue);
+    },
+  );
+
+  test('API client giải mã ClassDashboard của bảng điều khiển lớp', () async {
+    final adapter = _FakeAdapter(<String, Object?>{
+      'classId': 'c-1',
+      'learners': <Object?>[
+        <String, Object?>{
+          'userId': 'u-1',
+          'displayName': 'An',
+          'email': 'an@example.com',
+          'hasStarted': true,
+          'pathCompleted': false,
+          'completionRatio': 0.4,
+          'progressStatus': 'behind',
+          'alerts': <Object?>['absent', 'overdue_assignment'],
+        },
+      ],
+      'summary': <String, Object?>{
+        'learnerCount': 1,
+        'onTrack': 0,
+        'behind': 1,
+        'ahead': 0,
+        'paused': 0,
+        'needAttention': 1,
+      },
+      'contentNotices': <Object?>[],
+    });
+    final dio = createDio(
+      tokenStore: MemoryTokenStore(
+        const StoredTokens(accessToken: 'a', refreshToken: 'r'),
+      ),
+      onSessionExpired: () {},
+      baseUrl: 'http://api.test/api/v1',
+      httpClientAdapter: adapter,
+    );
+    final api = JapaneseApi(dio: dio, interceptors: const <Interceptor>[]);
+
+    final dashboard = (await api.getClassesApi().getClassDashboard(
+      id: 'c-1',
+      filter: 'behind',
+    )).data!;
+
+    expect(adapter.requests.single.path, '/classes/c-1/dashboard');
+    expect(adapter.requests.single.queryParameters['filter'], 'behind');
+    final row = dashboard.learners.single;
+    expect(row.progressStatus, ClassProgressStatus.behind);
+    expect(row.alerts, <ClassAlert>[
+      ClassAlert.absent,
+      ClassAlert.overdueAssignment,
+    ]);
+    expect(dashboard.summary.needAttention, 1);
+  });
 }

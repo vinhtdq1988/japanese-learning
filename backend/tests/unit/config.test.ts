@@ -23,6 +23,36 @@ describe('loadConfig', () => {
     expect(c.PASSWORD_RESET_TTL_SECONDS).toBe(3600);
   });
 
+  it('áp dụng cấu hình mặc định của tổ chức và lớp học (research O16)', () => {
+    const c = loadConfig(validEnv);
+    expect(c.INVITATION_TTL_DAYS).toBe(14);
+    expect(c.SEAT_GRACE_DAYS).toBe(7);
+    expect(c.SEAT_MAX_REASSIGNMENTS).toBe(2);
+    expect(c.SEAT_EXPIRY_WARNING_DAYS).toBe(14);
+    expect(c.CLASS_MAX_MEMBERS).toBe(100);
+    expect(c.CSV_IMPORT_MAX_ROWS).toBe(200);
+    expect(c.CSV_IMPORT_MAX_BYTES).toBe(262144);
+    expect(c.JOIN_CODE_MAX_FAILURES).toBe(5);
+    expect(c.JOIN_CODE_LOCK_MINUTES).toBe(15);
+    expect(c.CLASS_ABSENCE_DEFAULT_DAYS).toBe(3);
+    expect(c.CLASS_PROGRESS_MARGIN_PCT).toBe(10);
+    expect(c.CLASS_WEAK_ACCURACY_PCT).toBe(60);
+    expect(c.CLASS_WEAK_MIN_ANSWERS).toBe(30);
+    expect(c.ORG_TIMEZONE).toBe('Asia/Ho_Chi_Minh');
+  });
+
+  it('chuyển biến cấu hình tổ chức từ chuỗi và từ chối giá trị ngoài khoảng', () => {
+    const c = loadConfig({ ...validEnv, CLASS_MAX_MEMBERS: '50', SEAT_GRACE_DAYS: '0' });
+    expect(c.CLASS_MAX_MEMBERS).toBe(50);
+    expect(c.SEAT_GRACE_DAYS).toBe(0);
+    expect(() => loadConfig({ ...validEnv, SEAT_GRACE_DAYS: '61' })).toThrowError(
+      /SEAT_GRACE_DAYS/,
+    );
+    expect(() => loadConfig({ ...validEnv, CLASS_ABSENCE_DEFAULT_DAYS: '15' })).toThrowError(
+      /CLASS_ABSENCE_DEFAULT_DAYS/,
+    );
+  });
+
   it('chuyển biến số từ chuỗi', () => {
     const c = loadConfig({ ...validEnv, PORT: '8081', REVIEW_SECONDS_PER_ITEM: '45' });
     expect(c.PORT).toBe(8081);

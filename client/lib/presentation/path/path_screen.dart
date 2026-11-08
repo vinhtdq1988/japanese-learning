@@ -12,6 +12,7 @@ import '../shared/confirm_dialog.dart';
 import '../shared/error_messages.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
+import '../classroom/locked_control.dart';
 import 'plan_adjust_screen.dart';
 import 'scope_notice_banner.dart';
 
@@ -220,10 +221,13 @@ class _PathContentState extends ConsumerState<_PathContent> {
     final completed = path.completedUnits ?? 0;
     final start = path.startLevel;
 
+    // Học viên thuộc lớp: nhãn nguồn lớp và điều khiển "thành thạo" bị khóa (spec 004, US3, FR-018).
+    final inClass = path.source_ == PathDetailSource_Enum.class_;
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          const ClassSourceBanner(),
           Text(l10n.pathHeading, style: theme.textTheme.headlineSmall),
           const SizedBox(height: 4),
           if (start != null)
@@ -274,6 +278,7 @@ class _PathContentState extends ConsumerState<_PathContent> {
               _UnitTile(
                 item: item,
                 busy: _busy,
+                locked: inClass,
                 onToggleMastered: () => _setMastered(
                   item,
                   mastered:
@@ -323,10 +328,14 @@ class _UnitTile extends StatelessWidget {
     required this.item,
     required this.busy,
     required this.onToggleMastered,
+    this.locked = false,
   });
 
   final PathDetailAllOfItems item;
   final bool busy;
+
+  /// Thuộc lớp: không đánh dấu thành thạo được (do lớp quyết định).
+  final bool locked;
   final VoidCallback onToggleMastered;
 
   @override
@@ -364,13 +373,23 @@ class _UnitTile extends StatelessWidget {
           children: <Widget>[
             Text(status),
             const SizedBox(width: 8),
-            TextButton(
-              key: Key('master-${item.unitId}'),
-              onPressed: busy ? null : onToggleMastered,
-              child: Text(
-                mastered ? l10n.pathUnmarkMastered : l10n.pathMarkMastered,
+            if (locked)
+              Tooltip(
+                message:
+                    '${l10n.lockedByClassReason}. ${l10n.lockedByClassHint}',
+                child: Icon(
+                  Icons.lock_outline,
+                  key: Key('master-locked-${item.unitId}'),
+                ),
+              )
+            else
+              TextButton(
+                key: Key('master-${item.unitId}'),
+                onPressed: busy ? null : onToggleMastered,
+                child: Text(
+                  mastered ? l10n.pathUnmarkMastered : l10n.pathMarkMastered,
+                ),
               ),
-            ),
           ],
         ),
       ),

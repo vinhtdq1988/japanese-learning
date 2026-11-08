@@ -1,9 +1,10 @@
-// Schema Drizzle – khớp migration `migrations/0001_init.sql`, `0002_kanji_skill.sql`, `0003_kanji.sql` (nguồn sự thật của lược đồ là file SQL).
+// Schema Drizzle – khớp migration `migrations/0001_init.sql`, `0002_kanji_skill.sql`, `0003_kanji.sql`, `0004_org_classes.sql` (nguồn sự thật của lược đồ là file SQL).
 // Drizzle chỉ dùng để truy vấn có kiểu; KHÔNG sinh migration từ file này.
 import { sql } from 'drizzle-orm';
 import {
   bigint,
   boolean,
+  check,
   customType,
   date,
   index,
@@ -293,11 +294,23 @@ export const placementResults = pgTable(
     takenAt: timestamptz('taken_at').notNull().defaultNow(),
     isCurrent: boolean('is_current').notNull().default(true),
     createdAt: timestamptz('created_at').notNull().defaultNow(),
+    // Spec 004: kết quả do lớp yêu cầu có `is_current = false`; dòng cũ NULL.
+    classPlacementRequestId: uuid('class_placement_request_id').references(
+      () => classPlacementRequests.id,
+      { onDelete: 'set null' },
+    ),
   },
   (t) => [
     uniqueIndex('placement_results_current_idx')
       .on(t.userId)
       .where(sql`${t.isCurrent}`),
+    uniqueIndex('placement_results_class_request_idx')
+      .on(t.userId, t.classPlacementRequestId)
+      .where(sql`${t.classPlacementRequestId} IS NOT NULL`),
+    check(
+      'placement_results_class_request_not_current_check',
+      sql`${t.classPlacementRequestId} IS NULL OR NOT ${t.isCurrent}`,
+    ),
   ],
 );
 
@@ -517,8 +530,17 @@ export const adminActionLogs = pgTable(
     targetId: uuid('target_id'),
     diff: jsonb('diff').$type<Record<string, unknown>>(),
     occurredAt: timestamptz('occurred_at').notNull().defaultNow(),
+    // Spec 004: hành động của chủ tổ chức/giáo viên mang tổ chức để lọc theo tổ chức (FR-008).
+    organizationId: uuid('organization_id').references(() => organizations.id, {
+      onDelete: 'set null',
+    }),
   },
-  (t) => [index('admin_action_logs_time_idx').on(t.occurredAt.desc())],
+  (t) => [
+    index('admin_action_logs_time_idx').on(t.occurredAt.desc()),
+    index('admin_action_logs_org_idx')
+      .on(t.organizationId, t.occurredAt.desc())
+      .where(sql`${t.organizationId} IS NOT NULL`),
+  ],
 );
 
 export const aggregateDailyStats = pgTable(
@@ -530,3 +552,329 @@ export const aggregateDailyStats = pgTable(
   },
   (t) => [primaryKey({ columns: [t.day, t.metric] })],
 );
+
+// --- Tổ chức, lớp học và lộ trình lớp (spec 004, migration 0004_org_classes.sql) ---
+export const orgStatus = pgEnum('org_status', ['active', 'disabled']);
+export const invitationKind = pgEnum('invitation_kind', ['owner', 'teacher', 'student']);
+export const invitationStatus = pgEnum('invitation_status', [
+  'pending',
+  'accepted',
+  'declined',
+  'revoked',
+  'expired',
+]);
+export const classStatus = pgEnum('class_status', ['active', 'archived']);
+export const membershipEndReason = pgEnum('membership_end_reason', [
+  'switched_personal',
+  'removed',
+  'moved',
+  'seat_revoked',
+  'seat_expired',
+  'org_disabled',
+  'class_archived',
+  'account_deleted',
+]);
+
+export const organizations = pgTable('organizations', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  name: text('name').notNull(),
+  status: orgStatus('status').notNull().default('active'),
+  disabledAt: timestamptz('disabled_at'),
+  createdBy: uuid('created_by').references(() => users.id, { onDelete: 'set null' }),
+  createdAt: timestamptz('created_at').notNull().defaultNow(),
+  updatedAt: timestamptz('updated_at').notNull().defaultNow(),
+});
+
+// Khóa chính `user_id`: một tài khoản tối đa một tổ chức (FR-002).
+export const organizationMembers = pgTable(
+  'organization_members',
+  {
+    userId: uuid('user_id')
+      .primaryKey()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    organizationId: uuid('organization_id')
+      .notNull()
+      .references(() => organizations.id),
+    isOwner: boolean('is_owner').notNull().default(false),
+    isTeacher: boolean('is_teacher').notNull().default(false),
+    joinedAt: timestamptz('joined_at').notNull(),
+  },
+  (t) => [index('organization_members_org_idx').on(t.organizationId)],
+);
+
+// Ràng buộc loại trừ chồng ngày (`seat_licenses_no_overlap`) chỉ có trong file SQL.
+export const seatLicenses = pgTable(
+  'seat_licenses',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    organizationId: uuid('organization_id')
+      .notNull()
+      .references(() => organizations.id),
+    startsOn: date('starts_on', { mode: 'string' }).notNull(),
+    endsOn: date('ends_on', { mode: 'string' }).notNull(),
+    graceDays: smallint('grace_days').notNull().default(7),
+    maxReassignments: smallint('max_reassignments').notNull().default(2),
+    lapseProcessedAt: timestamptz('lapse_processed_at'),
+    revokedAt: timestamptz('revoked_at'),
+    createdBy: uuid('created_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+  },
+  (t) => [index('seat_licenses_org_idx').on(t.organizationId, t.endsOn.desc())],
+);
+
+export const seats = pgTable(
+  'seats',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    licenseId: uuid('license_id')
+      .notNull()
+      .references(() => seatLicenses.id, { onDelete: 'cascade' }),
+    holderUserId: uuid('holder_user_id').references(() => users.id, { onDelete: 'set null' }),
+    lastHolderUserId: uuid('last_holder_user_id').references(() => users.id, {
+      onDelete: 'set null',
+    }),
+    reassignmentCount: smallint('reassignment_count').notNull().default(0),
+    assignedAt: timestamptz('assigned_at'),
+  },
+  (t) => [
+    uniqueIndex('seats_holder_idx')
+      .on(t.holderUserId)
+      .where(sql`${t.holderUserId} IS NOT NULL`),
+    index('seats_free_idx')
+      .on(t.licenseId)
+      .where(sql`${t.holderUserId} IS NULL`),
+  ],
+);
+
+export const classes = pgTable(
+  'classes',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    organizationId: uuid('organization_id')
+      .notNull()
+      .references(() => organizations.id),
+    name: text('name').notNull(),
+    description: text('description'),
+    status: classStatus('status').notNull().default('active'),
+    archivedAt: timestamptz('archived_at'),
+    joinCode: text('join_code').unique(),
+    joinCodeEnabled: boolean('join_code_enabled').notNull().default(false),
+    joinCodeExpiresAt: timestamptz('join_code_expires_at'),
+    absenceThresholdDays: smallint('absence_threshold_days').notNull().default(3),
+    createdBy: uuid('created_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+    updatedAt: timestamptz('updated_at').notNull().defaultNow(),
+  },
+  (t) => [index('classes_org_status_idx').on(t.organizationId, t.status)],
+);
+
+export const invitations = pgTable(
+  'invitations',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    organizationId: uuid('organization_id')
+      .notNull()
+      .references(() => organizations.id),
+    classId: uuid('class_id').references(() => classes.id),
+    kind: invitationKind('kind').notNull(),
+    email: citext('email').notNull(),
+    displayNameHint: text('display_name_hint'),
+    tokenHash: text('token_hash').notNull().unique(),
+    status: invitationStatus('status').notNull().default('pending'),
+    expiresAt: timestamptz('expires_at').notNull(),
+    invitedBy: uuid('invited_by').references(() => users.id, { onDelete: 'set null' }),
+    respondedAt: timestamptz('responded_at'),
+    acceptedBy: uuid('accepted_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex('invitations_one_pending_idx')
+      .on(t.organizationId, t.email)
+      .where(sql`${t.status} = 'pending'`),
+    index('invitations_class_status_idx').on(t.classId, t.status),
+    index('invitations_org_status_idx').on(t.organizationId, t.status, t.expiresAt),
+  ],
+);
+
+export const classTeachers = pgTable(
+  'class_teachers',
+  {
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id, { onDelete: 'cascade' }),
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    addedAt: timestamptz('added_at').notNull().defaultNow(),
+  },
+  (t) => [
+    primaryKey({ columns: [t.classId, t.userId] }),
+    index('class_teachers_user_idx').on(t.userId),
+  ],
+);
+
+export const classPaths = pgTable('class_paths', {
+  classId: uuid('class_id')
+    .primaryKey()
+    .references(() => classes.id, { onDelete: 'cascade' }),
+  startLevel: selfLevel('start_level').notNull(),
+  targetLevel: targetLevel('target_level').notNull(),
+  skills: skill('skills').array().notNull(),
+  startsOn: date('starts_on', { mode: 'string' }).notNull(),
+  endsOn: date('ends_on', { mode: 'string' }).notNull(),
+  dailyMinutes: smallint('daily_minutes').notNull(),
+  updatedBy: uuid('updated_by').references(() => users.id, { onDelete: 'set null' }),
+  createdAt: timestamptz('created_at').notNull().defaultNow(),
+  updatedAt: timestamptz('updated_at').notNull().defaultNow(),
+});
+
+export const classPathUnits = pgTable(
+  'class_path_units',
+  {
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id, { onDelete: 'cascade' }),
+    unitId: uuid('unit_id')
+      .notNull()
+      .references(() => learningUnits.id),
+    position: integer('position').notNull(),
+    opensOn: date('opens_on', { mode: 'string' }),
+  },
+  // Ràng buộc UNIQUE (class_id, position) DEFERRABLE chỉ có trong file SQL.
+  (t) => [primaryKey({ columns: [t.classId, t.unitId] })],
+);
+
+export const classAssignments = pgTable(
+  'class_assignments',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id, { onDelete: 'cascade' }),
+    batchId: uuid('batch_id').notNull(),
+    unitId: uuid('unit_id')
+      .notNull()
+      .references(() => learningUnits.id),
+    dueOn: date('due_on', { mode: 'string' }).notNull(),
+    assignedBy: uuid('assigned_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+    cancelledAt: timestamptz('cancelled_at'),
+  },
+  (t) => [
+    uniqueIndex('class_assignments_active_idx')
+      .on(t.classId, t.unitId)
+      .where(sql`${t.cancelledAt} IS NULL`),
+  ],
+);
+
+export const classMemberships = pgTable(
+  'class_memberships',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id),
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+    organizationId: uuid('organization_id')
+      .notNull()
+      .references(() => organizations.id),
+    joinedAt: timestamptz('joined_at').notNull(),
+    consentAt: timestamptz('consent_at').notNull(),
+    consentVersion: smallint('consent_version').notNull().default(1),
+    seatId: uuid('seat_id').references(() => seats.id, { onDelete: 'set null' }),
+    leftAt: timestamptz('left_at'),
+    endReason: membershipEndReason('end_reason'),
+    exitDisplayName: text('exit_display_name'),
+  },
+  (t) => [
+    uniqueIndex('class_memberships_one_active_idx')
+      .on(t.userId)
+      .where(sql`${t.leftAt} IS NULL`),
+    index('class_memberships_class_active_idx')
+      .on(t.classId)
+      .where(sql`${t.leftAt} IS NULL`),
+    index('class_memberships_class_left_idx').on(t.classId, t.leftAt),
+    index('class_memberships_user_idx').on(t.userId, t.joinedAt.desc()),
+    check('class_memberships_end_check', sql`(${t.leftAt} IS NULL) = (${t.endReason} IS NULL)`),
+  ],
+);
+
+export const classLearnerOverrides = pgTable('class_learner_overrides', {
+  membershipId: uuid('membership_id')
+    .primaryKey()
+    .references(() => classMemberships.id, { onDelete: 'cascade' }),
+  dailyMinutes: smallint('daily_minutes'),
+  shiftDays: smallint('shift_days').notNull().default(0),
+  updatedBy: uuid('updated_by').references(() => users.id, { onDelete: 'set null' }),
+  updatedAt: timestamptz('updated_at').notNull().defaultNow(),
+});
+
+export const classLearnerExemptions = pgTable(
+  'class_learner_exemptions',
+  {
+    membershipId: uuid('membership_id')
+      .notNull()
+      .references(() => classMemberships.id, { onDelete: 'cascade' }),
+    unitId: uuid('unit_id')
+      .notNull()
+      .references(() => learningUnits.id),
+    createdBy: uuid('created_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.membershipId, t.unitId] })],
+);
+
+export const classPausePeriods = pgTable(
+  'class_pause_periods',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id, { onDelete: 'cascade' }),
+    // NULL = cả lớp.
+    membershipId: uuid('membership_id').references(() => classMemberships.id, {
+      onDelete: 'cascade',
+    }),
+    startedOn: date('started_on', { mode: 'string' }).notNull(),
+    endedOn: date('ended_on', { mode: 'string' }),
+    createdBy: uuid('created_by').references(() => users.id, { onDelete: 'set null' }),
+    createdAt: timestamptz('created_at').notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex('class_pause_periods_class_open_idx')
+      .on(t.classId)
+      .where(sql`${t.membershipId} IS NULL AND ${t.endedOn} IS NULL`),
+    uniqueIndex('class_pause_periods_member_open_idx')
+      .on(t.membershipId)
+      .where(sql`${t.membershipId} IS NOT NULL AND ${t.endedOn} IS NULL`),
+  ],
+);
+
+export const classPlacementRequests = pgTable(
+  'class_placement_requests',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    classId: uuid('class_id')
+      .notNull()
+      .references(() => classes.id, { onDelete: 'cascade' }),
+    requestedBy: uuid('requested_by').references(() => users.id, { onDelete: 'set null' }),
+    requestedAt: timestamptz('requested_at').notNull().defaultNow(),
+    closedAt: timestamptz('closed_at'),
+  },
+  (t) => [
+    uniqueIndex('class_placement_requests_open_idx')
+      .on(t.classId)
+      .where(sql`${t.closedAt} IS NULL`),
+  ],
+);
+
+export const joinCodeAttempts = pgTable('join_code_attempts', {
+  userId: uuid('user_id')
+    .primaryKey()
+    .references(() => users.id, { onDelete: 'cascade' }),
+  failures: smallint('failures').notNull().default(0),
+  windowStartedAt: timestamptz('window_started_at').notNull(),
+  lockedUntil: timestamptz('locked_until'),
+});

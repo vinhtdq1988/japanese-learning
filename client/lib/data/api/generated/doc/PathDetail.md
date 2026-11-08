@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **reason** | **String** |  | [optional] 
 **scopeNotice** | [**ScopeNotice**](ScopeNotice.md) |  | [optional] 
 **message** | **String** | Ví dụ: kỹ năng chưa hỗ trợ trong phiên bản này | [optional] 
+**source_** | **String** | Spec 004: nguồn của lộ trình; `class` khi học viên thuộc lớp | [optional] 
 **items** | [**List&lt;PathDetailAllOfItems&gt;**](PathDetailAllOfItems.md) | Thứ tự đơn vị được tính động tại thời điểm gọi từ tham số lộ trình, nội dung `active` hiện hành và trạng thái học (không lưu sẵn; đơn vị mới kích hoạt xuất hiện ở lần gọi kế tiếp, SC-008) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -1,3 +1,4 @@
+import 'file_transfer.dart';
 import 'platform.dart';
 
 // Triển khai trong bộ nhớ của các giao diện nền tảng: dùng cho kiểm thử và làm giá trị dự phòng
@@ -47,4 +48,31 @@ class RecordingLinks implements Links {
 
   @override
   Future<void> open(Uri uri) async => opened.add(uri);
+}
+
+/// `FileTransfer` trong bộ nhớ cho kiểm thử: trả nội dung CSV định sẵn khi chọn tệp và ghi lại tệp được lưu.
+class MemoryFileTransfer implements FileTransfer {
+  MemoryFileTransfer({String? pickResult}) : _pickResult = pickResult;
+
+  String? _pickResult;
+
+  /// Các tệp đã lưu theo thứ tự: tên và byte nguyên vẹn.
+  final List<({String filename, List<int> bytes})> saved =
+      <({String filename, List<int> bytes})>[];
+
+  /// Số lần mở hộp thoại chọn tệp.
+  int pickCalls = 0;
+
+  /// Đặt nội dung trả về cho lần chọn tiếp theo; `null` mô phỏng người dùng hủy.
+  void setPickResult(String? content) => _pickResult = content;
+
+  @override
+  Future<String?> pickCsv() async {
+    pickCalls++;
+    return _pickResult;
+  }
+
+  @override
+  Future<void> saveCsv(String filename, List<int> bytes) async =>
+      saved.add((filename: filename, bytes: List<int>.unmodifiable(bytes)));
 }

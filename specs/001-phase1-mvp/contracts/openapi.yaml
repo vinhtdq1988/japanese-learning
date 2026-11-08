@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Japanese Learning API
-  version: 1.11.0
+  version: 1.12.0
   description: |
     Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
     - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
@@ -19,6 +19,7 @@ info:
       1.9.0 (2026-11-05, trong lúc hiện thực US6, chưa có client nào phụ thuộc) – bổ sung cho `/admin/*`: (0) thêm `GET /admin/topics` (`adminListTopics`, schema `AdminTopic`) để admin chọn `topicId` khi soạn đơn vị và câu hỏi; (1) bài tập trong `AdminUnitWrite` thêm `itemIndex` (chỉ số 0 của mục trong `items` cùng payload mà bài tập kiểm tra; cần để bài tập do admin tạo vào được lịch ôn tập, `exercises.item_id`); (2) `AdminPlacementQuestion` thêm `hint` (gợi ý song ngữ, tùy chọn) và khai báo trường bắt buộc khi ghi; (3) `AdminUserPage.items[]` thêm `role`; (4) `AdminActionLog` thêm `diff` (đã loại thông tin nhạy cảm) và `targetId` có thể null (thao tác trên cả bộ câu hỏi); (5) `GET /admin/action-logs` trả con trỏ trang kế tiếp ở header `X-Next-Cursor`; `GET /admin/units` không kèm `items`/`exercises` (xem chi tiết bằng `GET /admin/units/{unitId}`); (6) khai báo các mã 404/422 còn thiếu của `/admin/*`. Thay đổi bổ sung và làm rõ, không phá vỡ tương thích; API client sinh ra không bị ảnh hưởng vì các trường mới đều tùy chọn.
       1.10.0 (2026-11-05, trong lúc hiện thực US7, chưa có client nào phụ thuộc) – làm rõ và khai báo đủ mã lỗi cho tài khoản: (1) `PUT /me/password` thêm 422 (mật khẩu mới không hợp lệ hoặc trùng email); (2) `POST /account/delete` thêm 401 (mật khẩu sai) và 422 (thiếu mật khẩu), `permanentDeletionAt` bắt buộc; phản hồi 200 yêu cầu client xóa token ngay vì mọi phiên của tài khoản đã bị thu hồi; (3) `POST /account/restore` thêm 401 và mã lỗi `ACCOUNT_DELETED` cho 410; sau khi khôi phục client PHẢI gọi `POST /auth/refresh` vì access token hiện tại còn mang trạng thái `pending_deletion`; (4) `PATCH /me` thêm 401 `UNAUTHORIZED` cho thiếu/sai `currentPassword` khi đổi email (đã khai báo từ 1.3.0). Thay đổi bổ sung và làm rõ, không phá vỡ tương thích.
       1.11.0 (2026-11-05, spec 003-kanji-lessons) – bổ sung Kanji: (1) `Skill` thêm `kanji` (placement và dùng thử vẫn chỉ vocabulary/grammar); (2) `ProfileUpdate` thêm `skills` – đổi kỹ năng không sinh lộ trình mới, có hiệu lực ở kế hoạch kế tiếp; bỏ kỹ năng đang ưu tiên thì `prioritizedSkill` về null; (3) thêm `PUT /path/items/{itemId}/master` (chỉ mục Kanji); (4) `ContentItem` thêm `kanji`, `topicId`, `examples[].kanjiReading`; `Exercise` thêm `facet`; (5) `DailyPlan` thêm `kanjiNotice`; `PlanItem` thêm `kind`; (6) `SessionSummary` thêm `attentionItems`; (7) `ProgressSummary` thêm `kanji` và `weakTopics[].skill`; (8) `AdminUnitWrite` nhận `kind=kanji`, mục thêm `topicId`/`kanjiDetails`, bài tập thêm `facet`; `GET /admin/units` lọc `kind=kanji`, `GET /admin/topics` thêm tham số lọc `skill`. Thay đổi bổ sung; client sinh mã cũ có thể không giải mã được `Skill=kanji` nên client và backend PHẢI phát hành cùng lúc.
+      1.12.0 (2026-11-07, spec 004-org-classes) – bổ sung tổ chức, lớp học, lộ trình lớp (B2B theo seat): (1) nhóm `/admin/organizations*` cho quản trị viên hệ thống (tổ chức, giấy phép, seat; KHÔNG có dữ liệu học); (2) nhóm `/org*` cho chủ tổ chức; (3) nhóm `/classes*` cho giáo viên phụ trách và chủ tổ chức (lớp, thành viên, lời mời, mã tham gia, nhập CSV, lộ trình lớp, bài giao, ghi đè cá nhân, tạm dừng, bảng điều khiển, điểm yếu, xuất CSV, yêu cầu kiểm tra trình độ); (4) `/invitations/{token}*`, `/me/class*` cho người học (xem trước + hai lựa chọn, nhập mã, "Lớp của tôi", chuyển sang lộ trình cá nhân); (5) `Me` thêm `learningSource`, `classSummary`, `organization`; `GET /path` thêm `source`; (6) `PlacementAnswers` thêm `classRequestId`; (7) mã lỗi mới `CLASS_MANAGED` (409) và các mã seat/lớp (`SEAT_UNAVAILABLE`, `SEAT_REASSIGN_LIMIT`, `SEAT_BELOW_USAGE`, `CLASS_NOT_READY`, `CLASS_FULL`, `CLASS_ARCHIVED`, `LAST_TEACHER`, `ALREADY_IN_CLASS`, `INVITEE_UNAVAILABLE`); (8) `GET /admin/action-logs` thêm tham số `organizationId`. Người học không thuộc lớp: mọi phản hồi cũ không đổi (chỉ thêm trường tùy chọn `learningSource: personal`). Vai trò tổ chức KHÔNG nằm trong access token; quyền được tra CSDL mỗi yêu cầu nên mất quyền có hiệu lực ngay. `DELETE /invitations/{token}` nhận id lời mời (uuid) ở cùng vị trí đường dẫn. Thay đổi bổ sung, không phá vỡ tương thích; client và backend PHẢI phát hành cùng lúc để hiển thị khóa lớp.
 servers:
   - url: /api/v1
 tags:
@@ -30,6 +31,9 @@ tags:
   - { name: daily, description: Kế hoạch hằng ngày và phiên học }
   - { name: progress, description: Tiến độ }
   - { name: admin, description: Quản trị (vai trò admin) }
+  - { name: org, description: 'Chủ tổ chức: seat, giáo viên, lời mời' }
+  - { name: classes, description: 'Lớp học, lộ trình lớp, theo dõi lớp (giáo viên phụ trách, chủ tổ chức)' }
+  - { name: classroom, description: 'Học viên: lời mời, mã tham gia, Lớp của tôi' }
 
 paths:
   /auth/register:
@@ -190,7 +194,7 @@ paths:
             application/json:
               schema: { $ref: '#/components/schemas/Me' }
         '401': { description: '`currentPassword` thiếu hoặc sai khi đổi email', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
-        '409': { description: 'Email đã được dùng (`EMAIL_TAKEN`) hoặc thuộc tài khoản đang chờ xóa (`EMAIL_PENDING_DELETION`)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '409': { description: 'Email đã được dùng (`EMAIL_TAKEN`) hoặc thuộc tài khoản đang chờ xóa (`EMAIL_PENDING_DELETION`); hoặc học viên thuộc lớp đổi trường do lớp quyết định (`CLASS_MANAGED`)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { description: 'Dữ liệu không hợp lệ (thông báo cụ thể theo trường), gồm: các trường lộ trình (`currentLevel`, `goalType`, `targetLevel`, `targetDate`, `prioritizedSkill`) khi chưa hoàn tất onboarding; `targetLevel` bắt buộc khi `goalType=jlpt`; `targetDate` trước hôm nay; `prioritizedSkill` ngoài các kỹ năng đã chọn', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /me/password:
     put:
@@ -351,6 +355,7 @@ paths:
           application/json:
             schema: { $ref: '#/components/schemas/OnboardingDraft' }
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200': { description: Đã lưu, content: { application/json: { schema: { $ref: '#/components/schemas/OnboardingState' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
   /onboarding/complete:
@@ -365,6 +370,7 @@ paths:
           application/json:
             schema: { $ref: '#/components/schemas/OnboardingDraft' }
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200':
           description: Lộ trình và kế hoạch hôm nay
           content:
@@ -387,6 +393,7 @@ paths:
           application/json:
             schema: { $ref: '#/components/schemas/PlacementAnswers' }
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200':
           description: Kết quả
           content:
@@ -419,6 +426,7 @@ paths:
                   format: uuid
                   description: Dùng kết quả kiểm tra mới; bỏ trống = theo hồ sơ hiện tại
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200': { description: Lộ trình mới, content: { application/json: { schema: { $ref: '#/components/schemas/PathSummary' } } } }
         '404': { description: 'Chưa hoàn tất onboarding, hoặc không tìm thấy kết quả kiểm tra `usePlacementResultId`', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
@@ -429,6 +437,7 @@ paths:
       summary: Tạm dừng lộ trình
       description: Mở giai đoạn tạm dừng; khi đang tạm dừng không sinh kế hoạch ngày và không có ngày bỏ lỡ. Gọi lại khi đang tạm dừng không làm gì.
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '204': { description: Đã tạm dừng }
         '404': { description: Chưa hoàn tất onboarding, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /path/resume:
@@ -438,6 +447,7 @@ paths:
       summary: Tiếp tục lộ trình
       description: Đóng giai đoạn tạm dừng; các ngày tạm dừng không tính vào khoảng nghỉ hay chuỗi ngày học. Gọi lại khi không tạm dừng không làm gì.
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '204': { description: Đã tiếp tục }
         '404': { description: Chưa hoàn tất onboarding, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /path/units/{unitId}/master:
@@ -457,6 +467,7 @@ paths:
               properties:
                 mastered: { type: boolean }
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/MasterResult' } } } }
         '404': { description: 'Chưa hoàn tất onboarding, hoặc không tìm thấy đơn vị học đang hoạt động', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
@@ -479,6 +490,7 @@ paths:
               properties:
                 mastered: { type: boolean }
       responses:
+        '409': { description: 'Học viên thuộc lớp: thao tác do lớp quyết định (`CLASS_MANAGED`, `fields` liệt kê trường bị khóa)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '200':
           description: Đã cập nhật
           content:
@@ -775,6 +787,7 @@ paths:
       summary: Nhật ký hành động quản trị (FR-032), mới nhất trước
       parameters:
         - { name: cursor, in: query, schema: { type: string }, description: 'Giá trị header `X-Next-Cursor` của trang trước' }
+        - { name: organizationId, in: query, schema: { type: string, format: uuid }, description: 'Chỉ lấy nhật ký của một tổ chức (spec 004, FR-008)' }
       responses:
         '200':
           description: OK; header `X-Next-Cursor` có mặt khi còn trang kế tiếp
@@ -783,6 +796,744 @@ paths:
           content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/AdminActionLog' } } } }
         '403': { $ref: '#/components/responses/Forbidden' }
         '422': { $ref: '#/components/responses/ValidationError' }
+
+  # ---------------------------------------------------------------- spec 004: học viên (1.12.0)
+  /invitations/{token}:
+    parameters:
+      - { name: token, in: path, required: true, schema: { type: string }, description: 'GET: token trong email. DELETE: id (uuid) của lời mời cần thu hồi (cùng vị trí đường dẫn).' }
+    get:
+      operationId: getInvitation
+      tags: [classroom]
+      summary: Xem trước lời mời (kèm danh sách dữ liệu chia sẻ khi mời học viên)
+      description: Người gọi PHẢI có email trùng email lời mời. Token sai/hết hạn/đã dùng/email không khớp → 404 chung (không lộ lời mời).
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/InvitationPreview' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    delete:
+      operationId: revokeInvitation
+      tags: [org]
+      summary: Thu hồi lời mời (OWN - mọi lời mời của tổ chức; TCH - lời mời học viên của lớp mình)
+      responses:
+        '204': { description: Đã thu hồi (trả lại chỗ giữ) }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /invitations/{token}/respond:
+    parameters:
+      - { name: token, in: path, required: true, schema: { type: string } }
+    post:
+      operationId: respondInvitation
+      tags: [classroom]
+      summary: Trả lời lời mời (học viên - hai lựa chọn ngang nhau; giáo viên/chủ tổ chức - chấp nhận/từ chối)
+      description: 'Học viên `join_class` PHẢI kèm `confirmed:true`; `stay_personal` đóng lời mời, không tốn seat, không đổi hồ sơ. Mất seat khi chấp nhận: 409 `SEAT_UNAVAILABLE`/422 `SEAT_REASSIGN_LIMIT`, lời mời giữ `pending`.'
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/InvitationRespond' } } }
+      responses:
+        '200': { description: Kết quả, content: { application/json: { schema: { $ref: '#/components/schemas/InvitationRespondResult' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /me/class/join:
+    post:
+      operationId: joinClassByCode
+      tags: [classroom]
+      summary: Nhập mã tham gia lớp (hai bước không trạng thái - xem trước rồi xác nhận)
+      description: 'Không `decision` → 200 xem trước `{class, disclosure}`. `decision=join_class` + `confirmed:true` → tham gia. `decision=stay_personal` → 204, không đổi gì. Sai mã/đã tắt/hết hạn/lớp lưu trữ/lớp chưa lộ trình → cùng một 404 chung; sai liên tiếp → 429 (khóa theo tài khoản).'
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/JoinByCode' } } }
+      responses:
+        '200': { description: Xem trước hoặc đã tham gia, content: { application/json: { schema: { $ref: '#/components/schemas/JoinByCodeResult' } } } }
+        '204': { description: Học viên chọn ở lại lộ trình cá nhân }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+  /me/class:
+    get:
+      operationId: getMyClass
+      tags: [classroom]
+      summary: Lớp của tôi (lộ trình lớp, bài giao, tiến độ trong lớp, dữ liệu chia sẻ)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/MyClass' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /me/class/leave:
+    post:
+      operationId: leaveMyClass
+      tags: [classroom]
+      summary: Chuyển sang lộ trình cá nhân (rời lớp bất cứ lúc nào)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [confirm], properties: { confirm: { type: boolean, enum: [true] } } } } }
+      responses:
+        '204': { description: 'Đã rời lớp; tổ chức mất quyền xem ngay, lịch sử học giữ nguyên' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  # ---------------------------------------------------------------- spec 004: quản trị viên hệ thống
+  /admin/organizations:
+    get:
+      operationId: adminListOrganizations
+      tags: [admin]
+      summary: Danh sách tổ chức (không có dữ liệu học viên)
+      parameters:
+        - { name: q, in: query, schema: { type: string } }
+        - { name: status, in: query, schema: { $ref: '#/components/schemas/OrgStatus' } }
+        - { name: page, in: query, schema: { type: integer, minimum: 1, default: 1 } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AdminOrganizationPage' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+    post:
+      operationId: adminCreateOrganization
+      tags: [admin]
+      summary: Tạo tổ chức, mời chủ tổ chức, cấp giấy phép/seat tùy chọn
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/AdminOrganizationCreate' } } }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/AdminOrganizationDetail' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/organizations/{orgId}:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: adminGetOrganization
+      tags: [admin]
+      summary: Chi tiết tổ chức - giấy phép, người giữ seat, chủ tổ chức
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AdminOrganizationDetail' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      operationId: adminUpdateOrganization
+      tags: [admin]
+      summary: Đổi tên hoặc vô hiệu hóa/kích hoạt lại tổ chức
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, properties: { name: { type: string, minLength: 1, maxLength: 120 }, status: { $ref: '#/components/schemas/OrgStatus' } } } } }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/AdminOrganizationDetail' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/organizations/{orgId}/owners/invitations:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: adminInviteOwner
+      tags: [admin]
+      summary: Mời thêm/thay chủ tổ chức (không chiếm seat)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [email], properties: { email: { type: string, format: email } } } } }
+      responses:
+        '201': { description: Đã gửi lời mời, content: { application/json: { schema: { $ref: '#/components/schemas/InvitationRow' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/organizations/{orgId}/licenses:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: adminCreateLicense
+      tags: [admin]
+      summary: Cấp giấy phép (kỳ hạn + số seat)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/LicenseWrite' } } }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/OrgLicense' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/organizations/{orgId}/licenses/{licenseId}:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: licenseId, in: path, required: true, schema: { type: string, format: uuid } }
+    patch:
+      operationId: adminUpdateLicense
+      tags: [admin]
+      summary: Chỉnh giấy phép (số seat, hạn, ân hạn, giới hạn đổi người giữ)
+      description: Giảm `seats` dưới (đang dùng + giữ chỗ) → 422 `SEAT_BELOW_USAGE`.
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/LicenseUpdate' } } }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/OrgLicense' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /admin/organizations/{orgId}/licenses/{licenseId}/revoke:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: licenseId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: adminRevokeLicense
+      tags: [admin]
+      summary: Thu hồi giấy phép - xử lý như hết hạn
+      responses:
+        '204': { description: Đã thu hồi }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /admin/organizations/{orgId}/seats/{userId}:
+    parameters:
+      - { name: orgId, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    delete:
+      operationId: adminRevokeSeat
+      tags: [admin]
+      summary: Thu hồi seat của một người (học viên - đóng thành viên; giáo viên - giữ vai trò, mất quyền dữ liệu)
+      responses:
+        '204': { description: Đã thu hồi }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  # ---------------------------------------------------------------- spec 004: chủ tổ chức
+  /org:
+    get:
+      operationId: getOrg
+      tags: [org]
+      summary: Tổng quan tổ chức - seat, giấy phép, giáo viên, lớp, lời mời chờ
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/OrgOverview' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+  /org/teachers/invitations:
+    post:
+      operationId: inviteTeacher
+      tags: [org]
+      summary: Mời giáo viên (giữ chỗ một seat)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [email], properties: { email: { type: string, format: email } } } } }
+      responses:
+        '201': { description: Đã gửi lời mời, content: { application/json: { schema: { $ref: '#/components/schemas/InvitationRow' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /org/teachers/{userId}:
+    parameters:
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    delete:
+      operationId: removeTeacher
+      tags: [org]
+      summary: Gỡ vai trò giáo viên - mất quyền ngay, giải phóng seat
+      responses:
+        '204': { description: Đã gỡ }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /org/seats/{userId}/grant:
+    parameters:
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: grantSeat
+      tags: [org]
+      summary: Cấp lại seat cho giáo viên đang mất seat
+      responses:
+        '204': { description: Đã cấp }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /org/seats/{userId}/revoke:
+    parameters:
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: revokeOrgSeat
+      tags: [org]
+      summary: Thu hồi seat của giáo viên/học viên trong tổ chức mình
+      responses:
+        '204': { description: Đã thu hồi }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  # ---------------------------------------------------------------- spec 004: lớp học
+  /classes:
+    get:
+      operationId: listClasses
+      tags: [classes]
+      summary: Danh sách lớp (giáo viên - lớp mình phụ trách; chủ tổ chức - mọi lớp)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/ClassRow' } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+    post:
+      operationId: createClass
+      tags: [classes]
+      summary: Tạo lớp (giáo viên tự là phụ trách; `teacherIds` chỉ chủ tổ chức)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [name], properties: { name: { type: string, minLength: 1, maxLength: 120 }, description: { type: string, nullable: true }, teacherIds: { type: array, items: { type: string, format: uuid } } } } } }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/ClassDetail' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClass
+      tags: [classes]
+      summary: Chi tiết cấu trúc lớp (không có dữ liệu học); lớp lưu trữ vẫn xem được
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/ClassDetail' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      operationId: updateClass
+      tags: [classes]
+      summary: Sửa tên, mô tả, ngưỡng vắng mặt
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, properties: { name: { type: string, minLength: 1, maxLength: 120 }, description: { type: string, nullable: true }, absenceThresholdDays: { type: integer, minimum: 1, maximum: 14 } } } } }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/ClassDetail' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/archive:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: archiveClass
+      tags: [classes]
+      summary: Lưu trữ lớp (một chiều) - đóng mọi thành viên, vô hiệu mã và lời mời chờ
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [confirm], properties: { confirm: { type: boolean, enum: [true] } } } } }
+      responses:
+        '200': { description: Đã lưu trữ, content: { application/json: { schema: { type: object, required: [learnersMoved], properties: { learnersMoved: { type: integer } } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/teachers:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    put:
+      operationId: setClassTeachers
+      tags: [classes]
+      summary: Đặt danh sách giáo viên phụ trách (chủ tổ chức; luôn ≥ 1)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [userIds], properties: { userIds: { type: array, items: { type: string, format: uuid } } } } } }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/ClassDetail' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/roster:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassRoster
+      tags: [classes]
+      summary: Danh sách học viên theo trạng thái (đã vào, chờ, từ chối, tự chuyển cá nhân, bị gỡ)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/RosterRow' } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/members/{userId}:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    delete:
+      operationId: removeClassMember
+      tags: [classes]
+      summary: Gỡ học viên khỏi lớp, giải phóng seat
+      responses:
+        '204': { description: Đã gỡ }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /classes/{id}/members/{userId}/move:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: moveClassMember
+      tags: [classes]
+      summary: Mời học viên chuyển sang lớp khác trong cùng tổ chức (học viên PHẢI đồng ý lại; khi đồng ý giữ seat, tiến độ, lịch ôn)
+      description: 'Không chuyển ngay (Hiến pháp III): tạo lời mời `student` tới lớp đích gửi cho học viên; chỉ khi học viên chấp nhận qua `POST /invitations/{token}/respond` (`join_class` + `confirmed`) mới đóng thành viên lớp cũ (`moved`) và mở thành viên lớp đích, giữ nguyên seat. Người gọi phải là chủ tổ chức hoặc giáo viên phụ trách cả hai lớp; lớp đích ngoài phạm vi ⇒ 404 chung. 409 `CLASS_FULL`/`CLASS_NOT_READY`/`CLASS_ARCHIVED`.'
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [toClassId], properties: { toClassId: { type: string, format: uuid } } } } }
+      responses:
+        '202': { description: Đã gửi lời mời chuyển lớp (chờ học viên đồng ý) }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/invitations:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: inviteClassLearners
+      tags: [classes]
+      summary: Mời học viên bằng email (≤ 50 mỗi lần) - mỗi lời mời giữ chỗ một seat
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [invitees], properties: { invitees: { type: array, minItems: 1, maxItems: 50, items: { type: object, required: [email], properties: { email: { type: string }, displayName: { type: string } } } } } } } }
+      responses:
+        '200': { description: Kết quả từng email, content: { application/json: { schema: { $ref: '#/components/schemas/ImportResults' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/invitations/import:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: importClassLearnersCsv
+      tags: [classes]
+      summary: Nhập danh sách học viên từ CSV - đúng một kết quả cho mỗi dòng dữ liệu
+      description: 'Thân là nội dung file CSV (`text/csv; charset=utf-8`), ≤ `CSV_IMPORT_MAX_ROWS` dòng và `CSV_IMPORT_MAX_BYTES` byte; sai định dạng/quá cỡ → 422 toàn file. Định dạng: `contracts/csv-formats.md` của spec 004.'
+      requestBody:
+        required: true
+        content: { text/csv: { schema: { type: string } } }
+      responses:
+        '200': { description: Kết quả từng dòng, content: { application/json: { schema: { $ref: '#/components/schemas/ImportResults' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/join-code:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getJoinCode
+      tags: [classes]
+      summary: Xem mã tham gia (chỉ người quản lý lớp)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/JoinCode' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    put:
+      operationId: setJoinCode
+      tags: [classes]
+      summary: Bật/tắt mã tham gia (bật lần đầu sinh mã), đặt hạn tùy chọn
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [enabled], properties: { enabled: { type: boolean }, expiresAt: { type: string, format: date-time, nullable: true } } } } }
+      responses:
+        '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/JoinCode' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/join-code/rotate:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: rotateJoinCode
+      tags: [classes]
+      summary: Đổi mã tham gia (mã cũ vô hiệu ngay)
+      responses:
+        '200': { description: Mã mới, content: { application/json: { schema: { $ref: '#/components/schemas/JoinCode' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+
+  # ---------------------------------------------------------------- spec 004: lộ trình lớp
+  /classes/{id}/path:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassPath
+      tags: [classes]
+      summary: Lộ trình lớp (`path` là null khi chưa đặt)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: object, required: [path], properties: { path: { allOf: [{ $ref: '#/components/schemas/ClassPath' }], nullable: true } } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    put:
+      operationId: putClassPath
+      tags: [classes]
+      summary: Tạo/sửa lộ trình lớp theo mẫu (không có thao tác xóa)
+      description: Có hiệu lực từ kế hoạch được sinh kế tiếp; tiến độ và lịch ôn giữ nguyên. Lưu trọn vẹn hoặc không đổi; cảnh báo khả thi không chặn lưu.
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/ClassPathTemplate' } } }
+      responses:
+        '200': { description: Đã lưu, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPath' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/path/units:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    put:
+      operationId: putClassPathUnits
+      tags: [classes]
+      summary: Chọn bài, thứ tự và ngày mở (`units` rỗng quay lại chế độ mẫu)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [units], properties: { units: { type: array, items: { type: object, required: [unitId], properties: { unitId: { type: string, format: uuid }, opensOn: { type: string, format: date, nullable: true } } } } } } } }
+      responses:
+        '200': { description: Đã lưu, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPath' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/assignments:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: createClassAssignments
+      tags: [classes]
+      summary: Giao bài (1-20 đơn vị, một hạn)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [unitIds, dueOn], properties: { unitIds: { type: array, minItems: 1, maxItems: 20, items: { type: string, format: uuid } }, dueOn: { type: string, format: date } } } } }
+      responses:
+        '201': { description: Đã giao, content: { application/json: { schema: { type: object, required: [batchId, assignments], properties: { batchId: { type: string, format: uuid }, assignments: { type: array, items: { $ref: '#/components/schemas/ClassAssignment' } }, warnings: { type: array, items: { $ref: '#/components/schemas/PathWarning' } } } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/assignments/{assignmentId}:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: assignmentId, in: path, required: true, schema: { type: string, format: uuid } }
+    delete:
+      operationId: cancelClassAssignment
+      tags: [classes]
+      summary: Hủy bài giao
+      responses:
+        '204': { description: Đã hủy }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /classes/{id}/members/{userId}/override:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    put:
+      operationId: putLearnerOverride
+      tags: [classes]
+      summary: Ghi đè riêng một học viên (phút mỗi ngày, dời mốc)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [shiftDays], properties: { dailyMinutes: { type: integer, enum: [5, 10, 15, 30], nullable: true }, shiftDays: { type: integer, minimum: -60, maximum: 60 } } } } }
+      responses:
+        '200': { description: Đã lưu, content: { application/json: { schema: { $ref: '#/components/schemas/LearnerOverride' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/members/{userId}/exemptions/{unitId}:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: unitId, in: path, required: true, schema: { type: string, format: uuid } }
+    put:
+      operationId: exemptLearnerUnit
+      tags: [classes]
+      summary: Miễn một đơn vị cho học viên
+      responses:
+        '204': { description: Đã miễn }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+    delete:
+      operationId: unexemptLearnerUnit
+      tags: [classes]
+      summary: Bỏ miễn đơn vị cho học viên
+      responses:
+        '204': { description: Đã bỏ miễn }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /classes/{id}/pauses:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: listClassPauses
+      tags: [classes]
+      summary: Các khoảng tạm dừng (cả lớp và từng học viên)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/ClassPause' } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+    post:
+      operationId: createClassPause
+      tags: [classes]
+      summary: Tạm dừng cả lớp (vắng `userId`) hoặc một học viên
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [startedOn], properties: { userId: { type: string, format: uuid }, startedOn: { type: string, format: date }, endedOn: { type: string, format: date, nullable: true } } } } }
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPause' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/pauses/{pauseId}/end:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: pauseId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: endClassPause
+      tags: [classes]
+      summary: Kết thúc khoảng tạm dừng (mặc định hôm nay)
+      requestBody:
+        required: false
+        content: { application/json: { schema: { type: object, properties: { endedOn: { type: string, format: date } } } } }
+      responses:
+        '200': { description: Đã kết thúc, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPause' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+
+  # ---------------------------------------------------------------- spec 004: theo dõi lớp
+  /classes/{id}/dashboard:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassDashboard
+      tags: [classes]
+      summary: Bảng điều khiển lớp (số liệu kể từ ngày vào lớp của từng học viên)
+      parameters:
+        - { name: sort, in: query, schema: { type: string, enum: [name, completion, streak, minutes7, accuracy, lastActive, status] } }
+        - { name: order, in: query, schema: { type: string, enum: [asc, desc] } }
+        - { name: filter, in: query, schema: { type: string, enum: [behind, absent, needs_attention, paused, not_started] } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/ClassDashboard' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /classes/{id}/members/{userId}/detail:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassLearnerDetail
+      tags: [classes]
+      summary: Chi tiết một học viên - KHÔNG có từng câu trả lời
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/ClassLearnerDetail' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/weak-topics:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassWeakTopics
+      tags: [classes]
+      summary: Điểm yếu chung của lớp (mức yếu giảm dần)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/ClassWeakTopic' } } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/export.csv:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: exportClassCsv
+      tags: [classes]
+      summary: Xuất báo cáo lớp (CSV có BOM, chống công thức; ghi nhật ký `class.export`)
+      responses:
+        '200': { description: CSV, content: { text/csv: { schema: { type: string } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/members/{userId}/export.csv:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+      - { name: userId, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: exportClassLearnerCsv
+      tags: [classes]
+      summary: Xuất CSV chi tiết một học viên
+      responses:
+        '200': { description: CSV, content: { text/csv: { schema: { type: string } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/placement-requests:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: createClassPlacementRequest
+      tags: [classes]
+      summary: Yêu cầu cả lớp làm bài kiểm tra trình độ
+      responses:
+        '201': { description: Đã tạo, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPlacementRequest' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /classes/{id}/placement-requests/current:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    get:
+      operationId: getClassPlacementRequest
+      tags: [classes]
+      summary: Kết quả kiểm tra trình độ của lớp (không tự đổi lộ trình lớp)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/ClassPlacementResults' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /classes/{id}/placement-requests/current/close:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      operationId: closeClassPlacementRequest
+      tags: [classes]
+      summary: Đóng yêu cầu kiểm tra trình độ
+      responses:
+        '204': { description: Đã đóng }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
 
 components:
   securitySchemes:
@@ -808,6 +1559,9 @@ components:
     ValidationError:
       description: Dữ liệu không hợp lệ (thông báo cụ thể theo trường)
       content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+    Conflict:
+      description: 'Xung đột trạng thái nghiệp vụ; `code` cho biết lý do (CLASS_MANAGED, SEAT_UNAVAILABLE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE, ...)'
+      content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
     TooManyRequests:
       description: Vượt giới hạn tần suất (FR-040)
       headers:
@@ -818,7 +1572,7 @@ components:
       type: object
       required: [code, message]
       properties:
-        code: { type: string, description: 'Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED' }
+        code: { type: string, description: 'Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED, CLASS_MANAGED, SEAT_UNAVAILABLE, SEAT_REASSIGN_LIMIT, SEAT_BELOW_USAGE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE' }
         message: { type: string }
         fields:
           type: object
@@ -899,6 +1653,34 @@ components:
         role: { type: string, enum: [learner, admin] }
         status: { $ref: '#/components/schemas/AccountStatus' }
         profile: { $ref: '#/components/schemas/Profile' }
+        learningSource: { type: string, enum: [personal, class], description: 'Nguồn học hiện tại (spec 004); `class` - lộ trình do lớp quyết định' }
+        classSummary:
+          type: object
+          description: 'Chỉ có khi `learningSource = class`'
+          required: [classId, className, organizationName, lockedFields]
+          properties:
+            classId: { type: string, format: uuid }
+            className: { type: string }
+            organizationName: { type: string }
+            lockedFields: { type: array, items: { type: string }, description: 'Trường hồ sơ/điều khiển bị khóa - client hiển thị khóa kèm lý do (FR-018)' }
+        organization:
+          type: object
+          description: 'Có khi tài khoản là chủ tổ chức hoặc giáo viên'
+          required: [id, name, roles, dataAccess]
+          properties:
+            id: { type: string, format: uuid }
+            name: { type: string }
+            roles: { type: array, items: { type: string, enum: [owner, teacher] } }
+            dataAccess: { type: boolean, description: 'false nếu mất seat/hết hạn: chỉ xem cấu trúc' }
+            license:
+              type: object
+              nullable: true
+              description: 'Để giáo viên (không gọi được GET /org) cũng thấy cảnh báo hết hạn (FR-006); null khi tổ chức chưa có giấy phép'
+              required: [state, endsOn, graceEndsOn]
+              properties:
+                state: { $ref: '#/components/schemas/LicenseState' }
+                endsOn: { type: string, format: date }
+                graceEndsOn: { type: string, format: date }
     ProfileUpdate:
       type: object
       description: Mọi trường tùy chọn; các thay đổi liên quan lộ trình/kế hoạch có hiệu lực ở kế hoạch tiếp theo (SC-006). Đổi `goalType`/`targetLevel`/`targetDate` sinh lại lộ trình (`reason='goal_change'`); đổi `currentLevel` sinh lại lộ trình (`reason='level_change'`); đổi `dailyMinutes`/`prioritizedSkill` không sinh lộ trình mới mà áp dụng trực tiếp cho kế hoạch kế tiếp. Đổi `email` bắt buộc kèm `currentPassword`.
@@ -1004,6 +1786,7 @@ components:
       type: object
       required: [answers]
       properties:
+        classRequestId: { type: string, format: uuid, description: 'Spec 004: nộp bài cho yêu cầu kiểm tra trình độ của lớp; kết quả lưu `is_current=false`, không đổi lộ trình hay kết quả hiện hành' }
         durationSeconds: { type: integer }
         answers:
           type: array
@@ -1055,6 +1838,7 @@ components:
         - $ref: '#/components/schemas/PathSummary'
         - type: object
           properties:
+            source: { type: string, enum: [personal, class], description: 'Spec 004: nguồn của lộ trình; `class` khi học viên thuộc lớp' }
             items:
               type: array
               description: Thứ tự đơn vị được tính động tại thời điểm gọi từ tham số lộ trình, nội dung `active` hiện hành và trạng thái học (không lưu sẵn; đơn vị mới kích hoạt xuất hiện ở lần gọi kế tiếp, SC-008)
@@ -1313,6 +2097,407 @@ components:
         targetId: { type: string, format: uuid, nullable: true }
         diff: { type: object, nullable: true, additionalProperties: true, description: 'Thay đổi trước/sau, đã loại thông tin nhạy cảm (mật khẩu, token, email)' }
         occurredAt: { type: string, format: date-time }
+
+    # ---------------------------------------------------------------- spec 004 (1.12.0): tổ chức, lớp học, lộ trình lớp
+    OrgStatus: { type: string, enum: [active, disabled] }
+    LicenseState: { type: string, enum: [ok, expiring, in_grace, lapsed], description: 'ok - còn hiệu lực; expiring - còn ≤ SEAT_EXPIRY_WARNING_DAYS đến hạn; in_grace - quá hạn nhưng trong ân hạn; lapsed - hết ân hạn/bị thu hồi' }
+    SeatSummary:
+      type: object
+      required: [total, used, reserved]
+      properties:
+        total: { type: integer, minimum: 0 }
+        used: { type: integer, minimum: 0 }
+        reserved: { type: integer, minimum: 0, description: 'Số lời mời giáo viên/học viên đang chờ (giữ chỗ theo đếm)' }
+        available: { type: integer, minimum: 0, description: 'Số chỗ còn có thể mời; không âm' }
+    OrgLicense:
+      type: object
+      required: [id, startsOn, endsOn, graceEndsOn, graceDays, maxReassignments, seats, state]
+      properties:
+        id: { type: string, format: uuid }
+        startsOn: { type: string, format: date }
+        endsOn: { type: string, format: date }
+        graceEndsOn: { type: string, format: date }
+        graceDays: { type: integer, minimum: 0, maximum: 60 }
+        maxReassignments: { type: integer, minimum: 0 }
+        revokedAt: { type: string, format: date-time, nullable: true }
+        seats: { $ref: '#/components/schemas/SeatSummary' }
+        state: { $ref: '#/components/schemas/LicenseState' }
+    LicenseWrite:
+      type: object
+      required: [seats, startsOn, endsOn]
+      properties:
+        seats: { type: integer, minimum: 1 }
+        startsOn: { type: string, format: date }
+        endsOn: { type: string, format: date }
+        graceDays: { type: integer, minimum: 0, maximum: 60 }
+        maxReassignments: { type: integer, minimum: 0 }
+    LicenseUpdate:
+      type: object
+      properties:
+        seats: { type: integer, minimum: 0 }
+        endsOn: { type: string, format: date }
+        graceDays: { type: integer, minimum: 0, maximum: 60 }
+        maxReassignments: { type: integer, minimum: 0 }
+    InvitationRow:
+      type: object
+      required: [id, kind, email, status, expiresAt]
+      properties:
+        id: { type: string, format: uuid }
+        kind: { type: string, enum: [owner, teacher, student] }
+        email: { type: string }
+        displayNameHint: { type: string, nullable: true }
+        classId: { type: string, format: uuid, nullable: true }
+        status: { type: string, enum: [pending, accepted, declined, revoked, expired] }
+        expiresAt: { type: string, format: date-time }
+        createdAt: { type: string, format: date-time }
+    AdminOrganizationRow:
+      type: object
+      required: [id, name, status, seats]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        status: { $ref: '#/components/schemas/OrgStatus' }
+        owners: { type: array, items: { type: object, required: [email, status], properties: { email: { type: string }, status: { type: string, enum: [pending, active] } } } }
+        seats: { $ref: '#/components/schemas/SeatSummary' }
+        license: { type: object, nullable: true, properties: { endsOn: { type: string, format: date }, graceEndsOn: { type: string, format: date }, state: { $ref: '#/components/schemas/LicenseState' } } }
+        warnings: { type: array, items: { type: string, enum: [noOwner, expiring, inGrace, lapsed] } }
+    AdminOrganizationPage:
+      type: object
+      required: [items, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/AdminOrganizationRow' } }
+        total: { type: integer }
+        page: { type: integer }
+    AdminOrganizationCreate:
+      type: object
+      required: [name, ownerEmail]
+      properties:
+        name: { type: string, minLength: 1, maxLength: 120 }
+        ownerEmail: { type: string, format: email }
+        license: { $ref: '#/components/schemas/LicenseWrite' }
+    AdminOrganizationDetail:
+      allOf:
+        - $ref: '#/components/schemas/AdminOrganizationRow'
+        - type: object
+          properties:
+            licenses: { type: array, items: { $ref: '#/components/schemas/OrgLicense' } }
+            seatHolders: { type: array, items: { type: object, required: [userId, email, roles], properties: { userId: { type: string, format: uuid }, email: { type: string }, roles: { type: array, items: { type: string, enum: [teacher, learner] } }, assignedAt: { type: string, format: date-time, nullable: true } } } }
+            classCount: { type: integer }
+            pendingInvitations: { type: array, items: { $ref: '#/components/schemas/InvitationRow' } }
+    OrgOverview:
+      type: object
+      required: [id, name, status, seats, teachers, classes, pendingInvitations]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        status: { $ref: '#/components/schemas/OrgStatus' }
+        seats: { $ref: '#/components/schemas/SeatSummary' }
+        license: { type: object, nullable: true, properties: { startsOn: { type: string, format: date }, endsOn: { type: string, format: date }, graceEndsOn: { type: string, format: date }, state: { $ref: '#/components/schemas/LicenseState' } } }
+        teachers: { type: array, items: { type: object, required: [userId, email, hasSeat], properties: { userId: { type: string, format: uuid }, email: { type: string }, displayName: { type: string }, hasSeat: { type: boolean }, classIds: { type: array, items: { type: string, format: uuid } } } } }
+        classes: { type: array, items: { $ref: '#/components/schemas/ClassRow' } }
+        pendingInvitations: { type: array, items: { $ref: '#/components/schemas/InvitationRow' } }
+    SharedDataItem:
+      type: object
+      required: [code, label]
+      properties:
+        code: { type: string, enum: [display_name, email, progress, study_time, review_accuracy, weak_topics, streak, assignments, placement_result] }
+        label: { type: string, description: đã bản địa hóa }
+    SharedDataDisclosure:
+      type: object
+      required: [version, visible, notVisible, lockedControls, canLeaveAnytime, mayBeMovedWithinOrganization]
+      properties:
+        version: { type: integer, example: 1 }
+        visible: { type: array, items: { $ref: '#/components/schemas/SharedDataItem' } }
+        notVisible: { type: array, items: { type: string }, description: 'mật khẩu/phiên, hoạt động trước ngày vào lớp, từng câu trả lời, dữ liệu hồ sơ ngoài danh sách' }
+        lockedControls: { type: array, items: { type: string }, description: các quyền bị khóa khi thuộc lớp }
+        canLeaveAnytime: { type: boolean, enum: [true] }
+        mayBeMovedWithinOrganization: { type: boolean, enum: [false], description: 'Luôn false: trung tâm KHÔNG tự chuyển học viên sang lớp khác; chỉ mời và học viên phải đồng ý lại' }
+    ClassBrief:
+      type: object
+      required: [id, name, organizationName, teachers]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        organizationName: { type: string }
+        teachers: { type: array, items: { type: object, required: [displayName], properties: { displayName: { type: string } } } }
+    InvitationPreview:
+      type: object
+      required: [kind, organizationName, expiresAt]
+      properties:
+        kind: { type: string, enum: [owner, teacher, student] }
+        organizationName: { type: string }
+        class: { allOf: [{ $ref: '#/components/schemas/ClassBrief' }], nullable: true }
+        invitedBy: { type: string, nullable: true }
+        expiresAt: { type: string, format: date-time }
+        disclosure: { allOf: [{ $ref: '#/components/schemas/SharedDataDisclosure' }], nullable: true, description: 'Có khi `kind=student`' }
+    InvitationRespond:
+      type: object
+      required: [decision]
+      properties:
+        decision: { type: string, enum: [join_class, stay_personal, accept, decline], description: 'student - join_class/stay_personal; teacher/owner - accept/decline' }
+        confirmed: { type: boolean, description: 'Bắt buộc true với `join_class`' }
+    InvitationRespondResult:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string, enum: [joined, stayed_personal, accepted, declined] }
+        class: { allOf: [{ $ref: '#/components/schemas/ClassBrief' }], nullable: true }
+        joinedAt: { type: string, format: date-time, nullable: true }
+    JoinByCode:
+      type: object
+      required: [code]
+      properties:
+        code: { type: string, minLength: 1, maxLength: 32 }
+        decision: { type: string, enum: [join_class, stay_personal] }
+        confirmed: { type: boolean }
+    JoinByCodeResult:
+      type: object
+      properties:
+        status: { type: string, enum: [preview, joined] }
+        class: { $ref: '#/components/schemas/ClassBrief' }
+        disclosure: { $ref: '#/components/schemas/SharedDataDisclosure' }
+        joinedAt: { type: string, format: date-time }
+    ClassRow:
+      type: object
+      required: [id, name, status, memberCount, hasPath, teachers, teacherless]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        status: { type: string, enum: [active, archived] }
+        memberCount: { type: integer }
+        hasPath: { type: boolean }
+        teachers: { type: array, items: { type: object, required: [userId, displayName], properties: { userId: { type: string, format: uuid }, displayName: { type: string } } } }
+        needAttentionCount: { type: integer, description: 'Chỉ có khi người gọi có quyền xem dữ liệu học viên' }
+        teacherless: { type: boolean }
+    ClassDetail:
+      allOf:
+        - $ref: '#/components/schemas/ClassRow'
+        - type: object
+          properties:
+            description: { type: string, nullable: true }
+            absenceThresholdDays: { type: integer, minimum: 1, maximum: 14 }
+            archivedAt: { type: string, format: date-time, nullable: true }
+            createdAt: { type: string, format: date-time }
+    RosterRow:
+      type: object
+      required: [displayName, status, at]
+      properties:
+        userId: { type: string, format: uuid, nullable: true }
+        displayName: { type: string }
+        email: { type: string, nullable: true }
+        status: { type: string, enum: [joined, invited, declined, switched_personal, removed, other_ended] }
+        at: { type: string, format: date-time }
+        invitationId: { type: string, format: uuid, nullable: true }
+    ImportResults:
+      type: object
+      required: [summary, results]
+      properties:
+        summary: { type: object, additionalProperties: { type: integer }, description: 'Đếm theo `outcome`, kèm `total`' }
+        results:
+          type: array
+          items:
+            type: object
+            required: [email, outcome]
+            properties:
+              row: { type: integer, minimum: 1 }
+              email: { type: string }
+              outcome: { type: string, enum: [invited, invalid_email, duplicate_in_file, already_in_class, already_in_other_class, already_invited, no_seat, unavailable] }
+    JoinCode:
+      type: object
+      required: [enabled]
+      properties:
+        code: { type: string, nullable: true }
+        enabled: { type: boolean }
+        expiresAt: { type: string, format: date-time, nullable: true }
+    ClassPathTemplate:
+      type: object
+      required: [startLevel, targetLevel, skills, startsOn, endsOn, dailyMinutes]
+      properties:
+        startLevel: { $ref: '#/components/schemas/Level' }
+        targetLevel: { $ref: '#/components/schemas/TargetLevel' }
+        skills: { type: array, minItems: 1, uniqueItems: true, items: { $ref: '#/components/schemas/Skill' } }
+        startsOn: { type: string, format: date }
+        endsOn: { type: string, format: date, description: '> startsOn' }
+        dailyMinutes: { type: integer, enum: [5, 10, 15, 30] }
+    ClassPath:
+      allOf:
+        - $ref: '#/components/schemas/ClassPathTemplate'
+        - type: object
+          required: [mode, units, assignments, warnings, contentNotices, updatedAt]
+          properties:
+            mode: { type: string, enum: [template, explicit] }
+            scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+            units: { type: array, items: { $ref: '#/components/schemas/ClassPathUnit' }, description: 'explicit - đúng danh sách và thứ tự giáo viên chọn; template - thứ tự tham khảo tính động' }
+            assignments: { type: array, items: { $ref: '#/components/schemas/ClassAssignment' } }
+            warnings: { type: array, items: { $ref: '#/components/schemas/PathWarning' } }
+            contentNotices: { type: array, items: { $ref: '#/components/schemas/ContentNotice' } }
+            updatedAt: { type: string, format: date-time }
+    ClassPathUnit:
+      type: object
+      required: [unitId, title, kind, level, estMinutes, position]
+      properties:
+        unitId: { type: string, format: uuid }
+        title: { type: string }
+        kind: { $ref: '#/components/schemas/Skill' }
+        level: { type: string }
+        estMinutes: { type: integer }
+        position: { type: integer }
+        opensOn: { type: string, format: date, nullable: true }
+        isOpen: { type: boolean }
+    PathWarning:
+      type: object
+      description: 'Cảnh báo khả thi (FR-025) - không chặn lưu'
+      required: [code, requiredMinutes, capacityMinutes]
+      properties:
+        code: { type: string, enum: [over_capacity] }
+        requiredMinutes: { type: integer }
+        capacityMinutes: { type: integer }
+        assignmentId: { type: string, format: uuid, nullable: true }
+    ContentNotice:
+      type: object
+      description: 'Đơn vị đã bị vô hiệu hóa còn nằm trong lộ trình/bài giao (FR-020)'
+      required: [unitId, title, source]
+      properties:
+        unitId: { type: string, format: uuid }
+        title: { type: string }
+        source: { type: string, enum: [path, assignment] }
+    ClassAssignment:
+      type: object
+      required: [id, batchId, unitId, title, dueOn]
+      properties:
+        id: { type: string, format: uuid }
+        batchId: { type: string, format: uuid }
+        unitId: { type: string, format: uuid }
+        title: { type: string }
+        dueOn: { type: string, format: date }
+    ClassPause:
+      type: object
+      required: [id, startedOn]
+      properties:
+        id: { type: string, format: uuid }
+        userId: { type: string, format: uuid, nullable: true, description: 'null - cả lớp' }
+        displayName: { type: string, nullable: true }
+        startedOn: { type: string, format: date }
+        endedOn: { type: string, format: date, nullable: true }
+    ClassProgressStatus: { type: string, enum: [on_track, behind, ahead, paused] }
+    ClassAlert: { type: string, enum: [absent, behind, overdue_assignment] }
+    LearnerOverride:
+      type: object
+      properties:
+        dailyMinutes: { type: integer, enum: [5, 10, 15, 30], nullable: true }
+        shiftDays: { type: integer, minimum: -60, maximum: 60 }
+        exemptUnitIds: { type: array, items: { type: string, format: uuid } }
+    ClassLearnerRow:
+      type: object
+      description: 'Danh sách trắng theo FR-035 - KHÔNG thêm trường ngoài danh sách này nếu chưa đổi spec'
+      required: [userId, displayName, email, hasStarted, pathCompleted, progressStatus, alerts]
+      properties:
+        userId: { type: string, format: uuid }
+        displayName: { type: string }
+        email: { type: string, format: email }
+        joinedAt: { type: string, format: date-time }
+        hasStarted: { type: boolean, description: 'false - giao diện hiện "chưa bắt đầu" thay vì số 0' }
+        pathCompleted: { type: boolean }
+        completionRatio: { type: number, minimum: 0, maximum: 1, nullable: true }
+        expectedRatio: { type: number, minimum: 0, maximum: 1 }
+        streakDays: { type: integer }
+        minutesLast7Days: { type: number }
+        minutesTotal: { type: number, description: từ khi vào lớp }
+        reviewAccuracy: { type: number, nullable: true }
+        lastActiveOn: { type: string, format: date, nullable: true }
+        progressStatus: { $ref: '#/components/schemas/ClassProgressStatus' }
+        alerts: { type: array, items: { $ref: '#/components/schemas/ClassAlert' } }
+        absentDays: { type: integer }
+        overrides: { $ref: '#/components/schemas/LearnerOverride' }
+    ClassDashboard:
+      type: object
+      required: [classId, learners, summary, contentNotices]
+      properties:
+        classId: { type: string, format: uuid }
+        learners: { type: array, items: { $ref: '#/components/schemas/ClassLearnerRow' } }
+        summary:
+          type: object
+          required: [learnerCount, onTrack, behind, ahead, paused, needAttention]
+          properties:
+            learnerCount: { type: integer }
+            onTrack: { type: integer }
+            behind: { type: integer }
+            ahead: { type: integer }
+            paused: { type: integer }
+            needAttention: { type: integer }
+            avgCompletionRatio: { type: number, nullable: true }
+            avgReviewAccuracy: { type: number, nullable: true }
+        contentNotices: { type: array, items: { $ref: '#/components/schemas/ContentNotice' } }
+        teacherlessWarning: { type: boolean }
+    ClassLearnerDetail:
+      type: object
+      required: [userId, displayName, row, units, dailyMinutes30, weakTopics, assignmentStates]
+      properties:
+        userId: { type: string, format: uuid }
+        displayName: { type: string }
+        row: { $ref: '#/components/schemas/ClassLearnerRow' }
+        units: { type: array, items: { type: object, required: [unitId, title, status], properties: { unitId: { type: string, format: uuid }, title: { type: string }, status: { type: string, enum: [pending, in_progress, completed, mastered, exempt] }, dueOn: { type: string, format: date, nullable: true } } } }
+        dailyMinutes30: { type: array, items: { type: object, required: [date, minutes], properties: { date: { type: string, format: date }, minutes: { type: number } } } }
+        reviewAccuracy: { type: number, nullable: true }
+        weakTopics: { type: array, items: { type: object, required: [topicId, name], properties: { topicId: { type: string }, name: { type: string }, accuracy: { type: number }, answers: { type: integer } } } }
+        placement: { type: object, nullable: true, properties: { estimatedLevel: { $ref: '#/components/schemas/Level' }, score: { type: integer }, total: { type: integer }, takenAt: { type: string, format: date-time } } }
+        assignmentStates: { type: array, items: { type: object, required: [assignmentId, state], properties: { assignmentId: { type: string, format: uuid }, state: { type: string, enum: [pending, on_time, late, overdue] } } } }
+    ClassWeakTopic:
+      type: object
+      required: [topicId, name, skill, accuracy, answers, flaggedLearners]
+      properties:
+        topicId: { type: string }
+        name: { type: string }
+        skill: { $ref: '#/components/schemas/Skill' }
+        accuracy: { type: number }
+        answers: { type: integer }
+        flaggedLearners: { type: array, items: { type: object, required: [userId, displayName], properties: { userId: { type: string, format: uuid }, displayName: { type: string } } } }
+    ClassPlacementRequest:
+      type: object
+      required: [id, requestedAt]
+      properties:
+        id: { type: string, format: uuid }
+        requestedAt: { type: string, format: date-time }
+        closedAt: { type: string, format: date-time, nullable: true }
+    ClassPlacementResults:
+      type: object
+      required: [request, results, distribution]
+      properties:
+        request: { $ref: '#/components/schemas/ClassPlacementRequest' }
+        results: { type: array, items: { type: object, required: [userId, displayName, status], properties: { userId: { type: string, format: uuid }, displayName: { type: string }, status: { type: string, enum: [done, pending] }, estimatedLevel: { $ref: '#/components/schemas/Level' }, score: { type: integer }, total: { type: integer }, takenAt: { type: string, format: date-time } } } }
+        distribution: { type: object, additionalProperties: { type: integer }, description: 'Số học viên theo `estimatedLevel` (none, N5, N4, N3)' }
+    MyClass:
+      type: object
+      required: [class, path, assignments, disclosure, progress, joinedAt]
+      properties:
+        class: { $ref: '#/components/schemas/ClassBrief' }
+        joinedAt: { type: string, format: date-time }
+        path: { $ref: '#/components/schemas/ClassPathTemplate' }
+        assignments:
+          type: array
+          items:
+            allOf:
+              - $ref: '#/components/schemas/ClassAssignment'
+              - type: object
+                required: [state]
+                properties: { state: { type: string, enum: [pending, on_time, late, overdue] } }
+        teacherAdjustments: { $ref: '#/components/schemas/LearnerOverride' }
+        pausedToday: { type: boolean }
+        movedNotice: { type: object, nullable: true, description: 'Không còn dùng (luôn null): chuyển lớp cần học viên đồng ý lại nên không có thông báo "bị chuyển"', properties: { fromClassName: { type: string }, at: { type: string, format: date-time } } }
+        disclosure: { $ref: '#/components/schemas/SharedDataDisclosure' }
+        progress:
+          type: object
+          description: 'CÙNG nguồn repository với bảng điều khiển, cùng cửa sổ từ joinedAt (research O11)'
+          required: [hasStarted, minutesTotal, minutesLast7Days, streakDays]
+          properties:
+            hasStarted: { type: boolean }
+            completionRatio: { type: number, nullable: true }
+            minutesTotal: { type: number }
+            minutesLast7Days: { type: number }
+            reviewAccuracy: { type: number, nullable: true }
+            streakDays: { type: integer }
+            lastActiveOn: { type: string, format: date, nullable: true }
+        placementRequest: { type: object, nullable: true, properties: { id: { type: string, format: uuid }, requestedAt: { type: string, format: date-time } } }
 
 security:
   - bearerAuth: []

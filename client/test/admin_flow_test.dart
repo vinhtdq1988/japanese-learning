@@ -416,10 +416,21 @@ void main() {
           },
         );
 
-        // Mục đã bị ẩn hiển thị công tắc tắt; mục đang hoạt động có công tắc bật.
+        // Mục đã bị ẩn hiển thị công tắc tắt; mục đang hoạt động có công tắc bật. Danh sách dựng lười nên
+        // cuộn tới công tắc trước khi đọc (không phụ thuộc chiều cao khung điều hướng phía trên).
+        await tester.scrollUntilVisible(
+          find.byKey(const Key('item-active-0')),
+          200,
+          scrollable: find.byType(Scrollable).first,
+        );
         expect(
           tester.widget<Switch>(find.byKey(const Key('item-active-0'))).value,
           isTrue,
+        );
+        await tester.scrollUntilVisible(
+          find.byKey(const Key('item-active-1')),
+          200,
+          scrollable: find.byType(Scrollable).first,
         );
         expect(
           tester.widget<Switch>(find.byKey(const Key('item-active-1'))).value,

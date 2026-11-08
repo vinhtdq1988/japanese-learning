@@ -116,11 +116,12 @@ export async function setAdminUserStatus(
 /** Trang nhật ký hành động quản trị, mới nhất trước. */
 export async function listAdminActionLogs(
   deps: Pick<AdminUsersDeps, 'db'>,
-  query: { cursor?: string | undefined },
+  query: { cursor?: string | undefined; organizationId?: string | undefined },
 ): Promise<{ items: AdminActionLogDto[]; nextCursor: string | null }> {
   if (query.cursor && !(await adminLogExists(deps.db, query.cursor))) throw invalidCursor();
   const rows = await listAdminLogs(deps.db, {
     ...(query.cursor ? { afterId: query.cursor } : {}),
+    ...(query.organizationId ? { organizationId: query.organizationId } : {}),
     limit: ADMIN_LOG_PAGE_SIZE + 1,
   });
   const page = rows.slice(0, ADMIN_LOG_PAGE_SIZE);

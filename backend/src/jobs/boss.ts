@@ -3,10 +3,11 @@ import { PgBoss, type Job } from 'pg-boss';
 // Khung hàng đợi pg-boss (R3): khởi động/dừng, đăng ký handler. Hàng đợi nằm trên PostgreSQL nên
 // không cần thêm dịch vụ nào. Các job cụ thể (gửi email, xóa tài khoản) đăng ký qua `JobDefinition`.
 
-/** Tên các hàng đợi; handler nằm ở `send-email.ts` (T045) và `purge-deleted-accounts.ts` (T112). */
+/** Tên các hàng đợi; handler nằm ở `send-email.ts` (T045), `purge-deleted-accounts.ts` (T112) và `org-lifecycle.ts` (spec 004). */
 export const QUEUES = {
   sendEmail: 'send-email',
   purgeDeletedAccounts: 'purge-deleted-accounts',
+  orgLifecycle: 'org-lifecycle',
 } as const;
 
 export type QueueName = (typeof QUEUES)[keyof typeof QUEUES];

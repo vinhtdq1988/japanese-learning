@@ -45,6 +45,24 @@ abstract final class AppRoutes {
   static const String adminUsers = '/admin/users';
   static const String adminLogs = '/admin/logs';
 
+  /// Tổ chức, giấy phép và seat (quản trị viên hệ thống, spec 004).
+  static const String adminOrganizations = '/admin/organizations';
+
+  // Tổ chức (spec 004): chủ tổ chức và người nhận lời mời. Bảo vệ thực sự ở server (vai trò tra CSDL).
+  static const String org = '/org';
+
+  /// Lớp học của giáo viên/chủ tổ chức (spec 004, US2): danh sách `/classes`, chi tiết `/classes/<id>`,
+  /// lộ trình lớp `/classes/<id>/path` (US3), bảng điều khiển `/classes/<id>/dashboard` và chi tiết học viên
+  /// `/classes/<id>/learners/<userId>` (US4). Quyền thật do server kiểm (404 chung cho lớp ngoài phạm vi).
+  static const String classes = '/classes';
+
+  /// "Lớp của tôi" của học viên thuộc lớp, và nhập mã tham gia lớp.
+  static const String myClass = '/my-class';
+  static const String join = '/join';
+
+  /// Nhận lời mời: `/invite/<token>`. Phải vào được ngay sau đăng nhập/đăng ký, không đi qua onboarding cá nhân.
+  static const String invite = '/invite';
+
   /// Route công khai chính xác; mọi đường dẫn dưới [trial] cũng công khai.
   static const Set<String> publicExact = <String>{
     landing,
@@ -63,6 +81,24 @@ abstract final class AppRoutes {
 
   static bool isPublic(String path) =>
       publicExact.contains(path) || path == trial || path.startsWith('$trial/');
+
+  /// Đích quay lại sau đăng nhập/đăng ký (`?from=`): chỉ nhận đường dẫn nội bộ tuyệt đối, loại `//host`,
+  /// đường dẫn có lược đồ và các route dành cho khách/khởi động để không tạo vòng chuyển hướng.
+  static String? safeReturnPath(String? from) {
+    if (from == null || from.isEmpty) return null;
+    if (!from.startsWith('/') || from.startsWith('//') || from.contains(r'\')) {
+      return null;
+    }
+    final path = Uri.tryParse(from)?.path;
+    if (path == null || guestOnly.contains(path) || path == splash) return null;
+    return from;
+  }
+
+  /// Giữ đích quay lại khi chuyển giữa đăng nhập và đăng ký: `/register?from=…`.
+  static String withFrom(String route, String? from) =>
+      safeReturnPath(from) == null
+      ? route
+      : '$route?from=${Uri.encodeComponent(from!)}';
 
   static bool isAdmin(String path) =>
       path == admin || path.startsWith('$admin/');

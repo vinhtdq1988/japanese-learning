@@ -10,8 +10,11 @@ import 'package:japanese_api/src/auth/oauth.dart';
 import 'package:japanese_api/src/api/account_api.dart';
 import 'package:japanese_api/src/api/admin_api.dart';
 import 'package:japanese_api/src/api/auth_api.dart';
+import 'package:japanese_api/src/api/classes_api.dart';
+import 'package:japanese_api/src/api/classroom_api.dart';
 import 'package:japanese_api/src/api/daily_api.dart';
 import 'package:japanese_api/src/api/onboarding_api.dart';
+import 'package:japanese_api/src/api/org_api.dart';
 import 'package:japanese_api/src/api/path_api.dart';
 import 'package:japanese_api/src/api/progress_api.dart';
 import 'package:japanese_api/src/api/trial_api.dart';
@@ -157,6 +160,18 @@ class JapaneseApi {
     return AuthApi(dio);
   }
 
+  /// Get ClassesApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  ClassesApi getClassesApi() {
+    return ClassesApi(dio);
+  }
+
+  /// Get ClassroomApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  ClassroomApi getClassroomApi() {
+    return ClassroomApi(dio);
+  }
+
   /// Get DailyApi instance, base route and serializer can be overridden by a given but be careful,
   /// by doing that all interceptors will not be executed
   DailyApi getDailyApi() {
@@ -167,6 +182,12 @@ class JapaneseApi {
   /// by doing that all interceptors will not be executed
   OnboardingApi getOnboardingApi() {
     return OnboardingApi(dio);
+  }
+
+  /// Get OrgApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  OrgApi getOrgApi() {
+    return OrgApi(dio);
   }
 
   /// Get PathApi instance, base route and serializer can be overridden by a given but be careful,

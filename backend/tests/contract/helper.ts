@@ -51,6 +51,9 @@ function allowNullInNullableEnums(node: unknown): void {
   if (obj.nullable === true && Array.isArray(obj.allOf)) {
     obj.anyOf = [{ type: 'null' }, { allOf: obj.allOf }];
     delete obj.allOf;
+    // Ajv từ chối `nullable` không đi kèm `type`; khi không có `type`, null đã được biểu diễn bằng nhánh
+    // `anyOf`. Nếu có `type`, giữ `nullable` để `type` vẫn chấp nhận null.
+    if (obj.type === undefined) delete obj.nullable;
   }
   Object.values(obj).forEach(allowNullInNullableEnums);
 }

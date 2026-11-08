@@ -4,12 +4,14 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:japanese_api/japanese_api.dart';
 
+import '../../data/account_repository.dart';
 import '../../data/api/api_error.dart';
 import '../../data/learning_repository.dart';
 import '../../data/lesson_repository.dart';
 import '../../data/plan_adjustment_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
+import '../classroom/locked_control.dart';
 import '../path/plan_adjust_screen.dart';
 import '../path/scope_notice_banner.dart';
 import '../shared/error_messages.dart';
@@ -30,11 +32,22 @@ class TodayScreen extends ConsumerWidget {
 
     return PageFrame(
       title: l10n.navToday,
-      child: plan.when(
-        loading: () => const LoadingView(),
-        error: (Object error, StackTrace _) => _buildError(context, ref, error),
-        data: (DailyPlan data) =>
-            _TodayContent(plan: data, scopeNotice: scopeNotice),
+      child: Column(
+        children: <Widget>[
+          // Học viên thuộc lớp thấy nhãn nguồn lớp (spec 004, US3, FR-021).
+          const ClassSourceBanner(),
+          // Vừa mất tư cách thành viên (bị gỡ/hết seat/tổ chức hết hiệu lực): nói rõ, tiếp tục lộ trình cá nhân.
+          const ClassEndedBanner(),
+          Expanded(
+            child: plan.when(
+              loading: () => const LoadingView(),
+              error: (Object error, StackTrace _) =>
+                  _buildError(context, ref, error),
+              data: (DailyPlan data) =>
+                  _TodayContent(plan: data, scopeNotice: scopeNotice),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -63,16 +76,22 @@ class TodayScreen extends ConsumerWidget {
         return const LoadingView();
       }
       if (error.code == 'PATH_PAUSED') {
+        // Tạm dừng do lớp đặt: người học không tự tiếp tục được (CLASS_MANAGED), chỉ nêu lý do.
+        final inClass = ref.watch(meProvider).valueOrNull?.classSummary != null;
         return EmptyView(
           key: const Key('today-paused'),
           icon: Icons.pause_circle_outline,
           title: l10n.todayPausedTitle,
-          message: l10n.todayPausedMessage,
-          action: FilledButton(
-            key: const Key('resume-path'),
-            onPressed: () => _resume(context, ref),
-            child: Text(l10n.todayResumePath),
-          ),
+          message: inClass
+              ? '${l10n.todayPausedMessage}\n${l10n.lockedByClassReason}'
+              : l10n.todayPausedMessage,
+          action: inClass
+              ? null
+              : FilledButton(
+                  key: const Key('resume-path'),
+                  onPressed: () => _resume(context, ref),
+                  child: Text(l10n.todayResumePath),
+                ),
         );
       }
     }
@@ -284,14 +303,19 @@ class _DayCompletedCard extends StatelessWidget {
   }
 }
 
-class _PlanItemCard extends StatelessWidget {
+class _PlanItemCard extends ConsumerWidget {
   const _PlanItemCard({required this.item});
 
   final PlanItem item;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
+    // Bài giao của lớp chưa xong được gắn nhãn kèm hạn (US5, FR-024).
+    final assigned = ref.watch(assignedUnitLabelsProvider).valueOrNull;
+    final DateTime? dueOn = item.type == PlanItemTypeEnum.newUnit
+        ? (assigned == null ? null : assigned[item.title])
+        : null;
     final isReview = item.type == PlanItemTypeEnum.reviewBatch;
     final done = item.status == PlanItemStatusEnum.completed;
     final started = item.status == PlanItemStatusEnum.inProgress;
@@ -311,8 +335,22 @@ class _PlanItemCard extends StatelessWidget {
               : (isKanji ? Icons.translate : Icons.menu_book_outlined),
         ),
         title: Text(item.title ?? ''),
-        subtitle: Text(
-          '${isReview ? l10n.todayTypeReview : (isKanji ? l10n.todayTypeKanji : l10n.todayTypeNew)} · $detail',
+        subtitle: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              '${isReview ? l10n.todayTypeReview : (isKanji ? l10n.todayTypeKanji : l10n.todayTypeNew)} · $detail',
+            ),
+            if (dueOn != null)
+              Text(
+                l10n.todayAssignedLabel(DateFormat('yyyy-MM-dd').format(dueOn)),
+                key: Key('assigned-${item.id}'),
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.primary,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+          ],
         ),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,

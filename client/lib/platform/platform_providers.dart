@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'file_transfer.dart';
 import 'platform.dart';
 
 // Provider cho các giao diện nền tảng. Không có triển khai mặc định: `main.dart` ghi đè bằng
@@ -19,3 +20,6 @@ final timezoneProvider = Provider<Timezone>(
   (ref) => throw _missing('Timezone'),
 );
 final linksProvider = Provider<Links>((ref) => throw _missing('Links'));
+final fileTransferProvider = Provider<FileTransfer>(
+  (ref) => throw _missing('FileTransfer'),
+);

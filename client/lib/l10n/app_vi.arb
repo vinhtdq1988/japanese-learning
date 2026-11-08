@@ -2353,5 +2353,2088 @@
   "adminKanjiGoalTagsHint": "Bài Kanji cần ít nhất một thẻ mục tiêu để kích hoạt.",
   "@adminKanjiGoalTagsHint": {
     "description": "Gợi ý dưới nhóm thẻ mục tiêu khi soạn bài Kanji"
+  },
+  "adminNavOrgs": "Tổ chức",
+  "@adminNavOrgs": {
+    "description": "Mục điều hướng quản trị: tổ chức/giấy phép/seat"
+  },
+  "navOrg": "Tổ chức",
+  "@navOrg": {
+    "description": "Mục điều hướng của chủ tổ chức"
+  },
+  "adminOrgsSearchHint": "Tìm theo tên tổ chức",
+  "@adminOrgsSearchHint": {
+    "description": "Ô tìm tổ chức"
+  },
+  "adminOrgsEmpty": "Chưa có tổ chức nào",
+  "@adminOrgsEmpty": {
+    "description": "Danh sách tổ chức rỗng"
+  },
+  "adminOrgsSelectHint": "Chọn một tổ chức để xem chi tiết",
+  "@adminOrgsSelectHint": {
+    "description": "Gợi ý khi chưa chọn tổ chức"
+  },
+  "adminOrgCreate": "Tạo tổ chức",
+  "@adminOrgCreate": {
+    "description": "Nút tạo tổ chức"
+  },
+  "adminOrgName": "Tên tổ chức",
+  "@adminOrgName": {
+    "description": "Nhãn tên tổ chức"
+  },
+  "adminOrgOwnerEmail": "Email chủ tổ chức",
+  "@adminOrgOwnerEmail": {
+    "description": "Nhãn email chủ tổ chức"
+  },
+  "adminOrgLicenseOptional": "Giấy phép (tùy chọn, để trống nếu chưa cấp)",
+  "@adminOrgLicenseOptional": {
+    "description": "Tiêu đề phần giấy phép khi tạo tổ chức"
+  },
+  "adminOrgSeats": "Số seat",
+  "@adminOrgSeats": {
+    "description": "Nhãn số seat"
+  },
+  "adminOrgStartsOn": "Bắt đầu (YYYY-MM-DD)",
+  "@adminOrgStartsOn": {
+    "description": "Nhãn ngày bắt đầu giấy phép"
+  },
+  "adminOrgEndsOn": "Hết hạn (YYYY-MM-DD)",
+  "@adminOrgEndsOn": {
+    "description": "Nhãn ngày hết hạn giấy phép"
+  },
+  "adminOrgGraceDays": "Số ngày ân hạn",
+  "@adminOrgGraceDays": {
+    "description": "Nhãn số ngày ân hạn"
+  },
+  "adminOrgMaxReassignments": "Giới hạn đổi người giữ seat",
+  "@adminOrgMaxReassignments": {
+    "description": "Nhãn giới hạn đổi người giữ seat"
+  },
+  "adminOrgSeatsSummary": "Seat: {used}/{total} đang dùng · {reserved} giữ chỗ",
+  "@adminOrgSeatsSummary": {
+    "description": "Tóm tắt seat của tổ chức",
+    "placeholders": {
+      "used": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      },
+      "reserved": {
+        "type": "String"
+      }
+    }
+  },
+  "adminOrgWarningNoOwner": "Chưa có chủ tổ chức",
+  "@adminOrgWarningNoOwner": {
+    "description": "Cảnh báo tổ chức chưa có chủ"
+  },
+  "adminOrgWarningExpiring": "Sắp hết hạn",
+  "@adminOrgWarningExpiring": {
+    "description": "Cảnh báo giấy phép sắp hết hạn"
+  },
+  "adminOrgWarningInGrace": "Đang trong ân hạn",
+  "@adminOrgWarningInGrace": {
+    "description": "Cảnh báo giấy phép quá hạn trong ân hạn"
+  },
+  "adminOrgWarningLapsed": "Đã hết hạn",
+  "@adminOrgWarningLapsed": {
+    "description": "Cảnh báo giấy phép hết hạn hẳn"
+  },
+  "orgStatusActive": "Đang hoạt động",
+  "@orgStatusActive": {
+    "description": "Trạng thái tổ chức hoạt động"
+  },
+  "orgStatusDisabled": "Đã vô hiệu hóa",
+  "@orgStatusDisabled": {
+    "description": "Trạng thái tổ chức bị vô hiệu hóa"
+  },
+  "adminOrgDisable": "Vô hiệu hóa",
+  "@adminOrgDisable": {
+    "description": "Nút vô hiệu hóa tổ chức"
+  },
+  "adminOrgEnable": "Kích hoạt lại",
+  "@adminOrgEnable": {
+    "description": "Nút kích hoạt lại tổ chức"
+  },
+  "adminOrgDisableMessage": "Mọi seat của \"{name}\" sẽ được giải phóng ngay, học viên trong lớp bị chuyển về lộ trình cá nhân và lời mời đang chờ bị hủy.",
+  "@adminOrgDisableMessage": {
+    "description": "Nội dung xác nhận vô hiệu hóa tổ chức",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "adminOrgEnableMessage": "Kích hoạt lại \"{name}\"? Học viên đã bị chuyển khỏi lớp không tự được mời lại.",
+  "@adminOrgEnableMessage": {
+    "description": "Nội dung xác nhận kích hoạt lại",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "adminOrgOwners": "Chủ tổ chức",
+  "@adminOrgOwners": {
+    "description": "Tiêu đề danh sách chủ tổ chức"
+  },
+  "adminOrgOwnerPending": "đang chờ chấp nhận",
+  "@adminOrgOwnerPending": {
+    "description": "Chủ tổ chức chưa chấp nhận lời mời"
+  },
+  "adminOrgInviteOwner": "Mời chủ tổ chức",
+  "@adminOrgInviteOwner": {
+    "description": "Nút mời thêm chủ tổ chức"
+  },
+  "adminOrgInviteSent": "Đã gửi lời mời",
+  "@adminOrgInviteSent": {
+    "description": "Thông báo đã gửi lời mời"
+  },
+  "adminOrgLicenses": "Giấy phép",
+  "@adminOrgLicenses": {
+    "description": "Tiêu đề danh sách giấy phép"
+  },
+  "adminOrgAddLicense": "Cấp giấy phép",
+  "@adminOrgAddLicense": {
+    "description": "Nút cấp giấy phép"
+  },
+  "adminOrgEditLicense": "Chỉnh giấy phép",
+  "@adminOrgEditLicense": {
+    "description": "Nút chỉnh giấy phép"
+  },
+  "adminOrgLicenseLine": "{startsOn} → {endsOn} (ân hạn đến {graceEndsOn}) · {used}/{total} seat",
+  "@adminOrgLicenseLine": {
+    "description": "Một dòng giấy phép",
+    "placeholders": {
+      "startsOn": {
+        "type": "String"
+      },
+      "endsOn": {
+        "type": "String"
+      },
+      "graceEndsOn": {
+        "type": "String"
+      },
+      "used": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "adminOrgRevokeLicense": "Thu hồi giấy phép",
+  "@adminOrgRevokeLicense": {
+    "description": "Nút thu hồi giấy phép"
+  },
+  "adminOrgRevokeLicenseMessage": "Thu hồi giấy phép được xử lý như hết hạn: mọi seat được giải phóng ngay. Tiếp tục?",
+  "@adminOrgRevokeLicenseMessage": {
+    "description": "Xác nhận thu hồi giấy phép"
+  },
+  "adminOrgSeatHolders": "Người giữ seat",
+  "@adminOrgSeatHolders": {
+    "description": "Tiêu đề danh sách người giữ seat"
+  },
+  "adminOrgNoSeatHolders": "Chưa có ai giữ seat",
+  "@adminOrgNoSeatHolders": {
+    "description": "Danh sách người giữ seat rỗng"
+  },
+  "adminOrgRoleTeacher": "Giáo viên",
+  "@adminOrgRoleTeacher": {
+    "description": "Vai trò giáo viên"
+  },
+  "adminOrgRoleLearner": "Học viên",
+  "@adminOrgRoleLearner": {
+    "description": "Vai trò học viên"
+  },
+  "adminOrgRevokeSeat": "Thu hồi seat",
+  "@adminOrgRevokeSeat": {
+    "description": "Nút thu hồi seat"
+  },
+  "adminOrgRevokeSeatMessage": "Thu hồi seat của {email}? Học viên đang trong lớp sẽ bị chuyển về lộ trình cá nhân; giáo viên giữ vai trò nhưng mất quyền xem dữ liệu học viên.",
+  "@adminOrgRevokeSeatMessage": {
+    "description": "Xác nhận thu hồi seat",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminOrgPendingInvitations": "Lời mời đang chờ",
+  "@adminOrgPendingInvitations": {
+    "description": "Tiêu đề lời mời đang chờ"
+  },
+  "adminOrgClassCount": "{count} lớp",
+  "@adminOrgClassCount": {
+    "description": "Số lớp của tổ chức",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "orgNoAccess": "Bạn không phải chủ tổ chức nên không xem được trang này.",
+  "@orgNoAccess": {
+    "description": "Thông báo khi không có quyền chủ tổ chức"
+  },
+  "orgSeatsSummary": "Seat: {used}/{total} đang dùng · {reserved} giữ chỗ · {available} còn trống",
+  "@orgSeatsSummary": {
+    "description": "Tóm tắt seat trong tổng quan chủ tổ chức",
+    "placeholders": {
+      "used": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      },
+      "reserved": {
+        "type": "String"
+      },
+      "available": {
+        "type": "String"
+      }
+    }
+  },
+  "orgLicenseLine": "Giấy phép: {startsOn} → {endsOn} (ân hạn đến {graceEndsOn})",
+  "@orgLicenseLine": {
+    "description": "Dòng giấy phép trong tổng quan",
+    "placeholders": {
+      "startsOn": {
+        "type": "String"
+      },
+      "endsOn": {
+        "type": "String"
+      },
+      "graceEndsOn": {
+        "type": "String"
+      }
+    }
+  },
+  "orgNoLicense": "Tổ chức chưa có giấy phép. Hãy liên hệ quản trị viên để được cấp seat.",
+  "@orgNoLicense": {
+    "description": "Chưa có giấy phép"
+  },
+  "orgLicenseExpiring": "Giấy phép sắp hết hạn vào {date}. Hãy liên hệ quản trị viên để gia hạn.",
+  "@orgLicenseExpiring": {
+    "description": "Cảnh báo giấy phép sắp hết hạn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orgLicenseInGrace": "Giấy phép đã hết hạn; vẫn dùng được đến hết ân hạn ngày {date}. Gia hạn ngay để không mất seat.",
+  "@orgLicenseInGrace": {
+    "description": "Cảnh báo giấy phép trong ân hạn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orgLicenseLapsed": "Giấy phép đã hết hạn: seat đã được giải phóng và học viên đã chuyển về lộ trình cá nhân.",
+  "@orgLicenseLapsed": {
+    "description": "Cảnh báo giấy phép hết hạn hẳn"
+  },
+  "orgTeachers": "Giáo viên",
+  "@orgTeachers": {
+    "description": "Tiêu đề danh sách giáo viên"
+  },
+  "orgTeachersEmpty": "Chưa có giáo viên nào",
+  "@orgTeachersEmpty": {
+    "description": "Danh sách giáo viên rỗng"
+  },
+  "orgTeacherNoSeat": "Chưa có seat — chỉ xem được cấu trúc",
+  "@orgTeacherNoSeat": {
+    "description": "Giáo viên mất seat"
+  },
+  "orgGrantSeat": "Cấp seat",
+  "@orgGrantSeat": {
+    "description": "Nút cấp seat"
+  },
+  "orgRevokeSeat": "Thu hồi seat",
+  "@orgRevokeSeat": {
+    "description": "Nút thu hồi seat"
+  },
+  "orgRemoveTeacher": "Gỡ giáo viên",
+  "@orgRemoveTeacher": {
+    "description": "Nút gỡ giáo viên"
+  },
+  "orgRemoveTeacherMessage": "Gỡ vai trò giáo viên của {email}? Họ mất quyền ngay và seat được giải phóng.",
+  "@orgRemoveTeacherMessage": {
+    "description": "Xác nhận gỡ giáo viên",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "orgInviteTeacher": "Mời giáo viên",
+  "@orgInviteTeacher": {
+    "description": "Nút mời giáo viên"
+  },
+  "orgInviteEmail": "Email giáo viên",
+  "@orgInviteEmail": {
+    "description": "Nhãn email giáo viên"
+  },
+  "orgInviteSent": "Đã gửi lời mời tới {email}",
+  "@orgInviteSent": {
+    "description": "Thông báo đã gửi lời mời giáo viên",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "orgClasses": "Lớp học",
+  "@orgClasses": {
+    "description": "Tiêu đề danh sách lớp"
+  },
+  "orgClassesEmpty": "Chưa có lớp nào",
+  "@orgClassesEmpty": {
+    "description": "Danh sách lớp rỗng"
+  },
+  "orgClassMembers": "{count} học viên",
+  "@orgClassMembers": {
+    "description": "Số học viên của lớp",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "orgClassTeacherless": "Chưa có giáo viên phụ trách",
+  "@orgClassTeacherless": {
+    "description": "Lớp không còn giáo viên"
+  },
+  "orgClassNoPath": "Chưa có lộ trình",
+  "@orgClassNoPath": {
+    "description": "Lớp chưa có lộ trình"
+  },
+  "orgPendingInvitations": "Lời mời đang chờ",
+  "@orgPendingInvitations": {
+    "description": "Tiêu đề lời mời đang chờ"
+  },
+  "orgInvitationExpires": "hết hạn {date}",
+  "@orgInvitationExpires": {
+    "description": "Hạn của lời mời",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orgRevokeInvitation": "Thu hồi",
+  "@orgRevokeInvitation": {
+    "description": "Nút thu hồi lời mời"
+  },
+  "orgKindOwner": "Chủ tổ chức",
+  "@orgKindOwner": {
+    "description": "Loại lời mời chủ tổ chức"
+  },
+  "orgKindTeacher": "Giáo viên",
+  "@orgKindTeacher": {
+    "description": "Loại lời mời giáo viên"
+  },
+  "inviteTitle": "Lời mời",
+  "@inviteTitle": {
+    "description": "Tiêu đề màn hình nhận lời mời"
+  },
+  "inviteOwnerBody": "{inviter} mời bạn làm chủ tổ chức \"{org}\". Chủ tổ chức không chiếm seat.",
+  "@inviteOwnerBody": {
+    "description": "Nội dung lời mời chủ tổ chức",
+    "placeholders": {
+      "inviter": {
+        "type": "String"
+      },
+      "org": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteTeacherBody": "{inviter} mời bạn làm giáo viên của \"{org}\". Vai trò giáo viên chiếm một seat của tổ chức.",
+  "@inviteTeacherBody": {
+    "description": "Nội dung lời mời giáo viên",
+    "placeholders": {
+      "inviter": {
+        "type": "String"
+      },
+      "org": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteUnknownInviter": "Quản trị viên",
+  "@inviteUnknownInviter": {
+    "description": "Người mời không rõ tên"
+  },
+  "inviteExpires": "Lời mời hết hạn vào {date}.",
+  "@inviteExpires": {
+    "description": "Hạn của lời mời",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteAccept": "Chấp nhận",
+  "@inviteAccept": {
+    "description": "Nút chấp nhận lời mời"
+  },
+  "inviteDecline": "Từ chối",
+  "@inviteDecline": {
+    "description": "Nút từ chối lời mời"
+  },
+  "inviteAccepted": "Đã chấp nhận lời mời.",
+  "@inviteAccepted": {
+    "description": "Thông báo đã chấp nhận"
+  },
+  "inviteDeclined": "Đã từ chối lời mời.",
+  "@inviteDeclined": {
+    "description": "Thông báo đã từ chối"
+  },
+  "inviteInvalid": "Lời mời không hợp lệ, đã hết hạn hoặc không dành cho tài khoản này. Hãy đăng nhập bằng đúng email được mời.",
+  "@inviteInvalid": {
+    "description": "Lời mời không dùng được"
+  },
+  "errorSeatUnavailable": "Không còn seat trống.",
+  "@errorSeatUnavailable": {
+    "description": "Lỗi hết seat"
+  },
+  "errorSeatReassignLimit": "Các seat trống đã dùng hết số lần đổi người giữ; hãy nhờ quản trị viên nâng giới hạn.",
+  "@errorSeatReassignLimit": {
+    "description": "Lỗi vượt giới hạn đổi người giữ seat"
+  },
+  "errorSeatBelowUsage": "Không thể giảm số seat dưới số đang dùng và đang giữ chỗ.",
+  "@errorSeatBelowUsage": {
+    "description": "Lỗi giảm seat dưới mức sử dụng"
+  },
+  "errorInviteeUnavailable": "Email này không thể nhận lời mời vào tổ chức.",
+  "@errorInviteeUnavailable": {
+    "description": "Lỗi email thuộc tổ chức khác"
+  },
+  "fieldRequired": "Trường này là bắt buộc.",
+  "@fieldRequired": {
+    "description": "Báo lỗi ô nhập bắt buộc để trống (hộp thoại biểu mẫu chung)"
+  },
+  "navClasses": "Lớp học",
+  "@navClasses": {
+    "description": "Mục điều hướng của giáo viên/chủ tổ chức"
+  },
+  "navMyClass": "Lớp của tôi",
+  "@navMyClass": {
+    "description": "Mục điều hướng của học viên thuộc lớp"
+  },
+  "classChoiceIntroInvite": "{inviter} mời bạn vào lớp \"{className}\" của \"{org}\".",
+  "@classChoiceIntroInvite": {
+    "description": "Giới thiệu lời mời vào lớp",
+    "placeholders": {
+      "inviter": {
+        "type": "String"
+      },
+      "className": {
+        "type": "String"
+      },
+      "org": {
+        "type": "String"
+      }
+    }
+  },
+  "classChoiceIntroCode": "Bạn sắp vào lớp \"{className}\" của \"{org}\".",
+  "@classChoiceIntroCode": {
+    "description": "Giới thiệu lớp khi nhập mã",
+    "placeholders": {
+      "className": {
+        "type": "String"
+      },
+      "org": {
+        "type": "String"
+      }
+    }
+  },
+  "classChoiceTeachers": "Giáo viên: {names}",
+  "@classChoiceTeachers": {
+    "description": "Danh sách giáo viên phụ trách",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "classChoiceVisibleTitle": "Giáo viên và chủ tổ chức sẽ xem được",
+  "@classChoiceVisibleTitle": {
+    "description": "Tiêu đề danh sách dữ liệu chia sẻ"
+  },
+  "classChoiceNotVisibleTitle": "Họ KHÔNG xem được",
+  "@classChoiceNotVisibleTitle": {
+    "description": "Tiêu đề danh sách dữ liệu không chia sẻ"
+  },
+  "classChoiceLockedTitle": "Khi theo lộ trình lớp, các mục sau do lớp quyết định",
+  "@classChoiceLockedTitle": {
+    "description": "Tiêu đề danh sách điều khiển bị khóa"
+  },
+  "classChoiceLeaveNote": "Bạn có thể chuyển sang lộ trình cá nhân (rời lớp) bất cứ lúc nào; lịch sử học của bạn được giữ nguyên.",
+  "@classChoiceLeaveNote": {
+    "description": "Ghi chú quyền rời lớp"
+  },
+  "classChoiceMoveNote": "Trung tâm KHÔNG tự chuyển bạn sang lớp khác. Nếu muốn, giáo viên chỉ có thể mời bạn chuyển lớp và bạn chỉ chuyển khi bạn đồng ý.",
+  "@classChoiceMoveNote": {
+    "description": "Ghi chú chuyển lớp trong tổ chức"
+  },
+  "classChoiceJoin": "Vào lớp và theo lộ trình lớp",
+  "@classChoiceJoin": {
+    "description": "Lựa chọn vào lớp"
+  },
+  "classChoiceStay": "Tiếp tục theo lộ trình cá nhân",
+  "@classChoiceStay": {
+    "description": "Lựa chọn ở lại lộ trình cá nhân"
+  },
+  "classChoiceStayHint": "Không tốn gì và không đổi hồ sơ của bạn.",
+  "@classChoiceStayHint": {
+    "description": "Giải thích lựa chọn ở lại cá nhân"
+  },
+  "classChoiceConfirmTitle": "Xác nhận vào lớp",
+  "@classChoiceConfirmTitle": {
+    "description": "Tiêu đề xác nhận vào lớp"
+  },
+  "classChoiceConfirmMessage": "Bạn đồng ý để giáo viên và chủ tổ chức xem các dữ liệu nêu trên kể từ hôm nay, và một số điều khiển của lộ trình cá nhân sẽ bị khóa cho tới khi bạn rời lớp.",
+  "@classChoiceConfirmMessage": {
+    "description": "Nội dung xác nhận vào lớp"
+  },
+  "classChoiceConfirmJoin": "Đồng ý và vào lớp",
+  "@classChoiceConfirmJoin": {
+    "description": "Nút xác nhận vào lớp"
+  },
+  "classChoiceJoined": "Bạn đã vào lớp \"{className}\".",
+  "@classChoiceJoined": {
+    "description": "Thông báo đã vào lớp",
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "classChoiceStayed": "Bạn tiếp tục học theo lộ trình cá nhân.",
+  "@classChoiceStayed": {
+    "description": "Thông báo đã chọn ở lại cá nhân"
+  },
+  "classChoiceJoinFailedKeep": "Chưa vào được lớp. Lời mời vẫn còn hiệu lực; bạn tiếp tục học cá nhân trong lúc chờ.",
+  "@classChoiceJoinFailedKeep": {
+    "description": "Thông báo khi chấp nhận lời mời thất bại nhưng lời mời còn hiệu lực"
+  },
+  "joinTitle": "Tham gia lớp bằng mã",
+  "@joinTitle": {
+    "description": "Tiêu đề màn hình nhập mã"
+  },
+  "joinIntro": "Nhập mã giáo viên cung cấp. Bạn sẽ xem điều kiện trước khi quyết định.",
+  "@joinIntro": {
+    "description": "Hướng dẫn nhập mã"
+  },
+  "joinCodeLabel": "Mã tham gia",
+  "@joinCodeLabel": {
+    "description": "Nhãn ô nhập mã"
+  },
+  "joinCodeContinue": "Tiếp tục",
+  "@joinCodeContinue": {
+    "description": "Nút xem trước lớp theo mã"
+  },
+  "joinCodeInvalid": "Mã không hợp lệ hoặc đã hết hiệu lực.",
+  "@joinCodeInvalid": {
+    "description": "Báo mã sai"
+  },
+  "joinCodeOpen": "Tham gia lớp bằng mã",
+  "@joinCodeOpen": {
+    "description": "Lối tắt tới màn hình nhập mã ở hồ sơ"
+  },
+  "myClassTitle": "Lớp của tôi",
+  "@myClassTitle": {
+    "description": "Tiêu đề màn hình Lớp của tôi"
+  },
+  "myClassNone": "Bạn chưa thuộc lớp nào.",
+  "@myClassNone": {
+    "description": "Chưa thuộc lớp"
+  },
+  "myClassOrg": "Tổ chức: {org}",
+  "@myClassOrg": {
+    "description": "Tên tổ chức",
+    "placeholders": {
+      "org": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassJoinedOn": "Vào lớp ngày {date}",
+  "@myClassJoinedOn": {
+    "description": "Ngày vào lớp",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassPathTitle": "Lộ trình lớp",
+  "@myClassPathTitle": {
+    "description": "Tiêu đề lộ trình lớp"
+  },
+  "myClassPathSummary": "{start} → {target} · {minutes} phút/ngày · {from} – {to}",
+  "@myClassPathSummary": {
+    "description": "Tóm tắt lộ trình lớp",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassSharedTitle": "Dữ liệu giáo viên xem được",
+  "@myClassSharedTitle": {
+    "description": "Tiêu đề thông báo dữ liệu chia sẻ"
+  },
+  "myClassLeave": "Chuyển sang lộ trình cá nhân (rời lớp)",
+  "@myClassLeave": {
+    "description": "Nút rời lớp"
+  },
+  "myClassLeaveTitle": "Rời lớp?",
+  "@myClassLeaveTitle": {
+    "description": "Tiêu đề xác nhận rời lớp"
+  },
+  "myClassLeaveMessage": "Bạn sẽ rời lớp và quay lại lộ trình cá nhân. Tổ chức mất quyền xem dữ liệu của bạn ngay; lịch sử học của bạn được giữ nguyên.",
+  "@myClassLeaveMessage": {
+    "description": "Nội dung xác nhận rời lớp"
+  },
+  "myClassLeft": "Bạn đã chuyển sang lộ trình cá nhân.",
+  "@myClassLeft": {
+    "description": "Thông báo đã rời lớp"
+  },
+  "classesTitle": "Lớp học",
+  "@classesTitle": {
+    "description": "Tiêu đề danh sách lớp"
+  },
+  "classesEmpty": "Chưa có lớp nào.",
+  "@classesEmpty": {
+    "description": "Danh sách lớp trống"
+  },
+  "classesCreate": "Tạo lớp",
+  "@classesCreate": {
+    "description": "Nút tạo lớp"
+  },
+  "classCreateName": "Tên lớp",
+  "@classCreateName": {
+    "description": "Nhãn tên lớp"
+  },
+  "classCreateDescription": "Mô tả (tùy chọn)",
+  "@classCreateDescription": {
+    "description": "Nhãn mô tả lớp"
+  },
+  "classMemberCount": "{count} học viên",
+  "@classMemberCount": {
+    "description": "Số học viên của lớp",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classArchivedChip": "Đã lưu trữ",
+  "@classArchivedChip": {
+    "description": "Nhãn lớp đã lưu trữ"
+  },
+  "classTeacherless": "Chưa có giáo viên",
+  "@classTeacherless": {
+    "description": "Cảnh báo lớp không có giáo viên"
+  },
+  "classNoPathTitle": "Lớp chưa có lộ trình",
+  "@classNoPathTitle": {
+    "description": "Tiêu đề nhắc đặt lộ trình"
+  },
+  "classNoPathMessage": "Hãy đặt lộ trình cho lớp trước khi mời học viên hoặc bật mã tham gia.",
+  "@classNoPathMessage": {
+    "description": "Nhắc đặt lộ trình trước khi mời"
+  },
+  "classSetPath": "Đặt lộ trình",
+  "@classSetPath": {
+    "description": "Nút đặt lộ trình lớp"
+  },
+  "classEditPath": "Sửa lộ trình",
+  "@classEditPath": {
+    "description": "Nút sửa lộ trình lớp"
+  },
+  "classArchivedBanner": "Lớp đã lưu trữ: chỉ xem được cấu trúc và danh sách thành viên.",
+  "@classArchivedBanner": {
+    "description": "Biểu ngữ lớp đã lưu trữ"
+  },
+  "classMembersTitle": "Học viên",
+  "@classMembersTitle": {
+    "description": "Tiêu đề danh sách học viên"
+  },
+  "classRosterEmpty": "Chưa có học viên nào.",
+  "@classRosterEmpty": {
+    "description": "Danh sách học viên trống"
+  },
+  "rosterJoined": "Đã vào lớp",
+  "@rosterJoined": {
+    "description": "Trạng thái học viên đã vào lớp"
+  },
+  "rosterInvited": "Đã mời, chờ trả lời",
+  "@rosterInvited": {
+    "description": "Trạng thái lời mời đang chờ"
+  },
+  "rosterDeclined": "Từ chối, ở lại lộ trình cá nhân",
+  "@rosterDeclined": {
+    "description": "Trạng thái học viên từ chối"
+  },
+  "rosterSwitchedPersonal": "Đã chuyển sang lộ trình cá nhân",
+  "@rosterSwitchedPersonal": {
+    "description": "Trạng thái học viên tự chuyển sang cá nhân"
+  },
+  "rosterRemoved": "Đã bị gỡ khỏi lớp",
+  "@rosterRemoved": {
+    "description": "Trạng thái học viên bị gỡ"
+  },
+  "rosterOtherEnded": "Đã rời lớp",
+  "@rosterOtherEnded": {
+    "description": "Trạng thái học viên kết thúc vì lý do khác"
+  },
+  "classRemoveMember": "Gỡ khỏi lớp",
+  "@classRemoveMember": {
+    "description": "Nút gỡ học viên"
+  },
+  "classRemoveMemberMessage": "Gỡ {name} khỏi lớp? Seat được giải phóng; lịch sử học của họ được giữ nguyên.",
+  "@classRemoveMemberMessage": {
+    "description": "Nội dung xác nhận gỡ học viên",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classRevokeInvitation": "Thu hồi lời mời",
+  "@classRevokeInvitation": {
+    "description": "Nút thu hồi lời mời học viên"
+  },
+  "classInviteByEmail": "Mời bằng email",
+  "@classInviteByEmail": {
+    "description": "Nút mời học viên bằng email"
+  },
+  "classInviteEmailsLabel": "Email (phân tách bằng dấu phẩy hoặc xuống dòng, tối đa 50)",
+  "@classInviteEmailsLabel": {
+    "description": "Nhãn ô nhập nhiều email"
+  },
+  "classInviteResultTitle": "Kết quả mời",
+  "@classInviteResultTitle": {
+    "description": "Tiêu đề kết quả mời/nhập"
+  },
+  "classImportCsv": "Nhập từ CSV",
+  "@classImportCsv": {
+    "description": "Nút nhập danh sách học viên từ CSV"
+  },
+  "classImportSummary": "Đã xử lý {total} dòng, gửi {invited} lời mời.",
+  "@classImportSummary": {
+    "description": "Tóm tắt kết quả nhập",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "invited": {
+        "type": "int"
+      }
+    }
+  },
+  "classImportEmpty": "Không đọc được tệp CSV.",
+  "@classImportEmpty": {
+    "description": "Báo không đọc được tệp"
+  },
+  "outcomeInvited": "Đã gửi lời mời",
+  "@outcomeInvited": {
+    "description": "Kết quả dòng: đã mời"
+  },
+  "outcomeInvalidEmail": "Email không hợp lệ",
+  "@outcomeInvalidEmail": {
+    "description": "Kết quả dòng: email sai"
+  },
+  "outcomeDuplicateInFile": "Trùng trong danh sách",
+  "@outcomeDuplicateInFile": {
+    "description": "Kết quả dòng: trùng"
+  },
+  "outcomeAlreadyInClass": "Đã ở trong lớp này",
+  "@outcomeAlreadyInClass": {
+    "description": "Kết quả dòng: đã trong lớp"
+  },
+  "outcomeAlreadyInOtherClass": "Đã ở lớp khác",
+  "@outcomeAlreadyInOtherClass": {
+    "description": "Kết quả dòng: lớp khác"
+  },
+  "outcomeAlreadyInvited": "Đã có lời mời đang chờ",
+  "@outcomeAlreadyInvited": {
+    "description": "Kết quả dòng: đã mời"
+  },
+  "outcomeNoSeat": "Hết seat",
+  "@outcomeNoSeat": {
+    "description": "Kết quả dòng: hết seat"
+  },
+  "outcomeUnavailable": "Không thể mời email này",
+  "@outcomeUnavailable": {
+    "description": "Kết quả dòng: không thể mời"
+  },
+  "classJoinCodeTitle": "Mã tham gia",
+  "@classJoinCodeTitle": {
+    "description": "Tiêu đề khối mã tham gia"
+  },
+  "classJoinCodeOff": "Mã đang tắt",
+  "@classJoinCodeOff": {
+    "description": "Mã tham gia đang tắt"
+  },
+  "classJoinCodeEnable": "Bật mã",
+  "@classJoinCodeEnable": {
+    "description": "Nút bật mã"
+  },
+  "classJoinCodeDisable": "Tắt mã",
+  "@classJoinCodeDisable": {
+    "description": "Nút tắt mã"
+  },
+  "classJoinCodeRotate": "Đổi mã",
+  "@classJoinCodeRotate": {
+    "description": "Nút đổi mã"
+  },
+  "classJoinCodeSetExpiry": "Đặt hạn dùng",
+  "@classJoinCodeSetExpiry": {
+    "description": "Nút đặt hạn mã"
+  },
+  "classJoinCodeExpiryLabel": "Hạn dùng (yyyy-MM-dd, để trống = không giới hạn)",
+  "@classJoinCodeExpiryLabel": {
+    "description": "Nhãn ô nhập hạn mã"
+  },
+  "classJoinCodeExpiresOn": "Hết hạn ngày {date}",
+  "@classJoinCodeExpiresOn": {
+    "description": "Hạn của mã",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classJoinCodeNoExpiry": "Không giới hạn thời gian",
+  "@classJoinCodeNoExpiry": {
+    "description": "Mã không có hạn"
+  },
+  "classArchive": "Lưu trữ lớp",
+  "@classArchive": {
+    "description": "Nút lưu trữ lớp"
+  },
+  "classArchiveMessage": "Lưu trữ lớp là một chiều: {count} học viên đang học sẽ chuyển sang lộ trình cá nhân, seat được giải phóng, mã tham gia và lời mời đang chờ bị vô hiệu. Lớp không thể khôi phục.",
+  "@classArchiveMessage": {
+    "description": "Nội dung xác nhận lưu trữ lớp",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classArchived": "Đã lưu trữ lớp.",
+  "@classArchived": {
+    "description": "Thông báo đã lưu trữ"
+  },
+  "errorClassNotReady": "Lớp chưa có lộ trình. Hãy đặt lộ trình trước.",
+  "@errorClassNotReady": {
+    "description": "Lỗi lớp chưa có lộ trình"
+  },
+  "errorClassFull": "Lớp đã đủ số học viên tối đa.",
+  "@errorClassFull": {
+    "description": "Lỗi lớp đầy"
+  },
+  "errorClassArchived": "Lớp đã được lưu trữ, không thể thay đổi.",
+  "@errorClassArchived": {
+    "description": "Lỗi lớp đã lưu trữ"
+  },
+  "errorAlreadyInClass": "Bạn đã thuộc một lớp học.",
+  "@errorAlreadyInClass": {
+    "description": "Lỗi đã thuộc lớp"
+  },
+  "errorLastTeacher": "Lớp phải có ít nhất một giáo viên phụ trách.",
+  "@errorLastTeacher": {
+    "description": "Lỗi gỡ giáo viên cuối cùng"
+  },
+  "lockedByClassReason": "Do lớp quyết định",
+  "@lockedByClassReason": {
+    "description": "Lý do điều khiển bị khóa"
+  },
+  "lockedByClassHint": "Muốn tự điều chỉnh, hãy chuyển sang lộ trình cá nhân (rời lớp).",
+  "@lockedByClassHint": {
+    "description": "Hướng dẫn khi điều khiển bị khóa"
+  },
+  "lockedByClassOpen": "Mở Lớp của tôi",
+  "@lockedByClassOpen": {
+    "description": "Nút mở trang Lớp của tôi từ điều khiển bị khóa"
+  },
+  "lockedGoal": "Mục tiêu và mốc thời gian",
+  "@lockedGoal": {
+    "description": "Điều khiển mục tiêu bị khóa"
+  },
+  "lockedMinutes": "Thời gian học mỗi ngày",
+  "@lockedMinutes": {
+    "description": "Điều khiển thời gian bị khóa"
+  },
+  "lockedSkills": "Kỹ năng muốn học",
+  "@lockedSkills": {
+    "description": "Điều khiển kỹ năng bị khóa"
+  },
+  "lockedPriority": "Kỹ năng ưu tiên",
+  "@lockedPriority": {
+    "description": "Điều khiển ưu tiên kỹ năng bị khóa"
+  },
+  "lockedPause": "Tạm dừng / tiếp tục lộ trình",
+  "@lockedPause": {
+    "description": "Điều khiển tạm dừng bị khóa"
+  },
+  "lockedMastered": "Đánh dấu đã thành thạo",
+  "@lockedMastered": {
+    "description": "Điều khiển thành thạo bị khóa"
+  },
+  "lockedRebuild": "Dựng lại lộ trình",
+  "@lockedRebuild": {
+    "description": "Điều khiển dựng lại lộ trình bị khóa"
+  },
+  "planAdjustClassIntro": "Bạn đang học theo lộ trình lớp \"{className}\" nên các mục dưới đây do lớp quyết định.",
+  "@planAdjustClassIntro": {
+    "description": "Giới thiệu màn hình điều chỉnh kế hoạch khi thuộc lớp",
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceBanner": "Đang học theo lộ trình lớp \"{className}\"",
+  "@classSourceBanner": {
+    "description": "Nhãn nguồn lớp ở Hôm nay/Lộ trình",
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "classSourceOpen": "Lớp của tôi",
+  "@classSourceOpen": {
+    "description": "Liên kết tới Lớp của tôi từ nhãn nguồn lớp"
+  },
+  "errorClassManaged": "Thao tác này do lớp quyết định. Hãy chuyển sang lộ trình cá nhân (rời lớp) để tự điều chỉnh.",
+  "@errorClassManaged": {
+    "description": "Lỗi thao tác bị khóa khi thuộc lớp"
+  },
+  "classOnboardingTitle": "Thiết lập tài khoản",
+  "@classOnboardingTitle": {
+    "description": "Tiêu đề onboarding rút gọn trong lớp"
+  },
+  "classOnboardingIntro": "Lộ trình do lớp quyết định nên bạn chỉ cần tên hiển thị, ngôn ngữ và múi giờ.",
+  "@classOnboardingIntro": {
+    "description": "Giới thiệu onboarding rút gọn"
+  },
+  "classOnboardingName": "Tên hiển thị",
+  "@classOnboardingName": {
+    "description": "Nhãn tên hiển thị"
+  },
+  "classOnboardingLanguage": "Ngôn ngữ",
+  "@classOnboardingLanguage": {
+    "description": "Nhãn ngôn ngữ"
+  },
+  "classOnboardingTimezone": "Múi giờ (ví dụ Asia/Ho_Chi_Minh)",
+  "@classOnboardingTimezone": {
+    "description": "Nhãn múi giờ"
+  },
+  "classOnboardingSave": "Lưu và về Lớp của tôi",
+  "@classOnboardingSave": {
+    "description": "Nút lưu onboarding rút gọn"
+  },
+  "myClassSetup": "Thiết lập tên, ngôn ngữ, múi giờ",
+  "@myClassSetup": {
+    "description": "Nút mở onboarding rút gọn từ Lớp của tôi"
+  },
+  "tableEmpty": "Không có dòng nào.",
+  "@tableEmpty": {
+    "description": "Bảng trống"
+  },
+  "tableFilterAll": "Tất cả",
+  "@tableFilterAll": {
+    "description": "Bộ lọc: tất cả"
+  },
+  "tableSortAscending": "Sắp xếp tăng dần theo {column}",
+  "@tableSortAscending": {
+    "description": "Chú giải sắp xếp tăng",
+    "placeholders": {
+      "column": {
+        "type": "String"
+      }
+    }
+  },
+  "tableSortDescending": "Sắp xếp giảm dần theo {column}",
+  "@tableSortDescending": {
+    "description": "Chú giải sắp xếp giảm",
+    "placeholders": {
+      "column": {
+        "type": "String"
+      }
+    }
+  },
+  "classPathTitle": "Lộ trình lớp",
+  "@classPathTitle": {
+    "description": "Tiêu đề màn hình lộ trình lớp"
+  },
+  "classPathIntro": "Đặt mẫu lộ trình cho cả lớp. Mỗi học viên vẫn nhận kế hoạch hằng ngày riêng trong quỹ thời gian của lớp.",
+  "@classPathIntro": {
+    "description": "Giới thiệu màn hình lộ trình lớp"
+  },
+  "classPathStartLevel": "Trình độ xuất phát",
+  "@classPathStartLevel": {
+    "description": "Nhãn trình độ xuất phát"
+  },
+  "classPathTargetLevel": "Trình độ mục tiêu",
+  "@classPathTargetLevel": {
+    "description": "Nhãn trình độ mục tiêu"
+  },
+  "classPathLevelNone": "Chưa biết gì (bắt đầu từ N5, nền tảng trước)",
+  "@classPathLevelNone": {
+    "description": "Lựa chọn người mới hoàn toàn"
+  },
+  "classPathSkills": "Kỹ năng",
+  "@classPathSkills": {
+    "description": "Nhãn kỹ năng của lớp"
+  },
+  "classPathStartsOn": "Ngày bắt đầu",
+  "@classPathStartsOn": {
+    "description": "Nhãn ngày bắt đầu"
+  },
+  "classPathEndsOn": "Ngày kết thúc",
+  "@classPathEndsOn": {
+    "description": "Nhãn ngày kết thúc"
+  },
+  "classPathMinutes": "Thời gian mỗi ngày",
+  "@classPathMinutes": {
+    "description": "Nhãn thời gian mỗi ngày của lớp"
+  },
+  "classPathMinutesValue": "{minutes} phút",
+  "@classPathMinutesValue": {
+    "description": "Giá trị phút mỗi ngày",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "classPathSave": "Lưu lộ trình",
+  "@classPathSave": {
+    "description": "Nút lưu lộ trình lớp"
+  },
+  "classPathSaved": "Đã lưu. Thay đổi có hiệu lực từ kế hoạch được sinh kế tiếp; tiến độ và lịch ôn của học viên giữ nguyên.",
+  "@classPathSaved": {
+    "description": "Thông báo sau khi lưu lộ trình lớp"
+  },
+  "classPathOverCapacity": "Khối lượng ước tính {required} phút vượt sức chứa {capacity} phút (số ngày còn lại × phút mỗi ngày). Vẫn lưu được.",
+  "@classPathOverCapacity": {
+    "description": "Cảnh báo vượt sức chứa",
+    "placeholders": {
+      "required": {
+        "type": "int"
+      },
+      "capacity": {
+        "type": "int"
+      }
+    }
+  },
+  "classPathPreviewTitle": "Thứ tự tham khảo ({count} bài)",
+  "@classPathPreviewTitle": {
+    "description": "Tiêu đề danh sách bài tham khảo",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classPathEndsBeforeStarts": "Ngày kết thúc phải sau ngày bắt đầu.",
+  "@classPathEndsBeforeStarts": {
+    "description": "Lỗi ngày kết thúc"
+  },
+  "classPathSkillsRequired": "Hãy chọn ít nhất một kỹ năng.",
+  "@classPathSkillsRequired": {
+    "description": "Lỗi chưa chọn kỹ năng"
+  },
+  "classPathBack": "Về lớp",
+  "@classPathBack": {
+    "description": "Nút quay lại chi tiết lớp"
+  },
+  "classDashboardOpen": "Bảng điều khiển",
+  "@classDashboardOpen": {
+    "description": "Nút mở bảng điều khiển lớp từ chi tiết lớp"
+  },
+  "classDashboardTitle": "Bảng điều khiển lớp",
+  "@classDashboardTitle": {
+    "description": "Tiêu đề bảng điều khiển lớp"
+  },
+  "classDashboardBack": "Về lớp",
+  "@classDashboardBack": {
+    "description": "Nút quay lại chi tiết lớp"
+  },
+  "classDashboardIntro": "Số liệu chỉ tính từ lúc mỗi học viên vào lớp và chỉ gồm những gì học viên đã đồng ý chia sẻ.",
+  "@classDashboardIntro": {
+    "description": "Chú thích bảng điều khiển lớp"
+  },
+  "classDashboardColLearner": "Học viên",
+  "@classDashboardColLearner": {
+    "description": "Cột học viên"
+  },
+  "classDashboardColCompletion": "Hoàn thành",
+  "@classDashboardColCompletion": {
+    "description": "Cột tỷ lệ hoàn thành"
+  },
+  "classDashboardColExpected": "Mong đợi",
+  "@classDashboardColExpected": {
+    "description": "Cột tỷ lệ mong đợi"
+  },
+  "classDashboardColStreak": "Chuỗi ngày",
+  "@classDashboardColStreak": {
+    "description": "Cột chuỗi ngày học"
+  },
+  "classDashboardColMinutes7": "Phút 7 ngày",
+  "@classDashboardColMinutes7": {
+    "description": "Cột số phút học 7 ngày gần nhất"
+  },
+  "classDashboardColMinutesTotal": "Tổng phút",
+  "@classDashboardColMinutesTotal": {
+    "description": "Cột tổng số phút từ khi vào lớp"
+  },
+  "classDashboardColAccuracy": "Chính xác ôn",
+  "@classDashboardColAccuracy": {
+    "description": "Cột độ chính xác ôn tập"
+  },
+  "classDashboardColLastActive": "Học gần nhất",
+  "@classDashboardColLastActive": {
+    "description": "Cột ngày học gần nhất"
+  },
+  "classDashboardColStatus": "Trạng thái",
+  "@classDashboardColStatus": {
+    "description": "Cột trạng thái tiến độ"
+  },
+  "classDashboardNotStarted": "Chưa bắt đầu",
+  "@classDashboardNotStarted": {
+    "description": "Hiển thị thay cho số 0 khi học viên chưa học gì kể từ lúc vào lớp"
+  },
+  "classProgressOnTrack": "Đúng tiến độ",
+  "@classProgressOnTrack": {
+    "description": "Trạng thái tiến độ: đúng"
+  },
+  "classProgressBehind": "Chậm tiến độ",
+  "@classProgressBehind": {
+    "description": "Trạng thái tiến độ: chậm"
+  },
+  "classProgressAhead": "Vượt tiến độ",
+  "@classProgressAhead": {
+    "description": "Trạng thái tiến độ: vượt"
+  },
+  "classProgressPaused": "Tạm dừng",
+  "@classProgressPaused": {
+    "description": "Trạng thái tiến độ: tạm dừng"
+  },
+  "classPathCompletedBadge": "Hoàn thành lộ trình",
+  "@classPathCompletedBadge": {
+    "description": "Nhãn học viên đã hoàn thành toàn bộ lộ trình lớp"
+  },
+  "classDashboardSummaryLine": "{count} học viên · {onTrack} đúng tiến độ · {behind} chậm · {ahead} vượt · {paused} tạm dừng",
+  "@classDashboardSummaryLine": {
+    "description": "Dòng tổng hợp bảng điều khiển",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "onTrack": {
+        "type": "int"
+      },
+      "behind": {
+        "type": "int"
+      },
+      "ahead": {
+        "type": "int"
+      },
+      "paused": {
+        "type": "int"
+      }
+    }
+  },
+  "classDashboardAverages": "Hoàn thành trung bình {completion} · Chính xác ôn trung bình {accuracy}",
+  "@classDashboardAverages": {
+    "description": "Dòng trung bình của lớp",
+    "placeholders": {
+      "completion": {
+        "type": "String"
+      },
+      "accuracy": {
+        "type": "String"
+      }
+    }
+  },
+  "classDashboardTeacherless": "Lớp chưa có giáo viên phụ trách.",
+  "@classDashboardTeacherless": {
+    "description": "Cảnh báo lớp không có giáo viên"
+  },
+  "classDashboardContentNotice": "Bài “{title}” không còn khả dụng và đã bị bỏ khỏi lộ trình.",
+  "@classDashboardContentNotice": {
+    "description": "Thông báo đơn vị bị vô hiệu hóa",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "classDashboardFilterBehind": "Chậm tiến độ",
+  "@classDashboardFilterBehind": {
+    "description": "Bộ lọc chậm tiến độ"
+  },
+  "classDashboardFilterPaused": "Tạm dừng",
+  "@classDashboardFilterPaused": {
+    "description": "Bộ lọc tạm dừng"
+  },
+  "classDashboardFilterNotStarted": "Chưa bắt đầu",
+  "@classDashboardFilterNotStarted": {
+    "description": "Bộ lọc chưa bắt đầu"
+  },
+  "learnerDetailTitle": "Chi tiết học viên",
+  "@learnerDetailTitle": {
+    "description": "Tiêu đề chi tiết học viên"
+  },
+  "learnerDetailBack": "Về bảng điều khiển",
+  "@learnerDetailBack": {
+    "description": "Nút quay lại bảng điều khiển"
+  },
+  "learnerDetailJoined": "Vào lớp: {date}",
+  "@learnerDetailJoined": {
+    "description": "Ngày vào lớp",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "learnerDetailUnits": "Tiến độ từng đơn vị",
+  "@learnerDetailUnits": {
+    "description": "Tiêu đề danh sách đơn vị"
+  },
+  "learnerDetailMinutes30": "Phút học 30 ngày gần nhất",
+  "@learnerDetailMinutes30": {
+    "description": "Tiêu đề biểu đồ phút học"
+  },
+  "learnerDetailAccuracy": "Độ chính xác ôn tập",
+  "@learnerDetailAccuracy": {
+    "description": "Nhãn độ chính xác ôn"
+  },
+  "learnerDetailWeak": "Mảng yếu",
+  "@learnerDetailWeak": {
+    "description": "Tiêu đề mảng yếu"
+  },
+  "learnerDetailNoWeak": "Chưa có mảng yếu.",
+  "@learnerDetailNoWeak": {
+    "description": "Trạng thái trống mảng yếu"
+  },
+  "learnerDetailWeakItem": "{name} · {accuracy} ({answers} câu)",
+  "@learnerDetailWeakItem": {
+    "description": "Một mảng yếu",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "accuracy": {
+        "type": "String"
+      },
+      "answers": {
+        "type": "int"
+      }
+    }
+  },
+  "learnerDetailAssignments": "Bài giao",
+  "@learnerDetailAssignments": {
+    "description": "Tiêu đề bài giao"
+  },
+  "learnerDetailNoAssignments": "Lớp chưa giao bài nào.",
+  "@learnerDetailNoAssignments": {
+    "description": "Trạng thái trống bài giao"
+  },
+  "learnerDetailPlacement": "Kết quả kiểm tra trình độ",
+  "@learnerDetailPlacement": {
+    "description": "Tiêu đề kết quả kiểm tra"
+  },
+  "learnerDetailPlacementValue": "Trình độ ước lượng {level} · {score}/{total}",
+  "@learnerDetailPlacementValue": {
+    "description": "Kết quả kiểm tra",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      },
+      "score": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnerDetailNoPlacement": "Chưa có kết quả kiểm tra.",
+  "@learnerDetailNoPlacement": {
+    "description": "Trạng thái trống kiểm tra"
+  },
+  "learnerUnitPending": "Chưa học",
+  "@learnerUnitPending": {
+    "description": "Trạng thái đơn vị"
+  },
+  "learnerUnitInProgress": "Đang học",
+  "@learnerUnitInProgress": {
+    "description": "Trạng thái đơn vị"
+  },
+  "learnerUnitCompleted": "Hoàn thành",
+  "@learnerUnitCompleted": {
+    "description": "Trạng thái đơn vị"
+  },
+  "learnerUnitMastered": "Thành thạo",
+  "@learnerUnitMastered": {
+    "description": "Trạng thái đơn vị"
+  },
+  "learnerUnitExempt": "Được miễn",
+  "@learnerUnitExempt": {
+    "description": "Trạng thái đơn vị"
+  },
+  "learnerAssignmentPending": "Chưa tới hạn",
+  "@learnerAssignmentPending": {
+    "description": "Trạng thái bài giao"
+  },
+  "learnerAssignmentOnTime": "Đúng hạn",
+  "@learnerAssignmentOnTime": {
+    "description": "Trạng thái bài giao"
+  },
+  "learnerAssignmentLate": "Trễ hạn",
+  "@learnerAssignmentLate": {
+    "description": "Trạng thái bài giao"
+  },
+  "learnerAssignmentOverdue": "Quá hạn",
+  "@learnerAssignmentOverdue": {
+    "description": "Trạng thái bài giao"
+  },
+  "myClassProgressTitle": "Tiến độ của bạn trong lớp",
+  "@myClassProgressTitle": {
+    "description": "Tiêu đề khối tiến độ trong lớp (US4)"
+  },
+  "myClassProgressNotStarted": "Bạn chưa bắt đầu học trong lớp này.",
+  "@myClassProgressNotStarted": {
+    "description": "Học viên chưa có hoạt động nào kể từ lúc vào lớp"
+  },
+  "myClassProgressCompletion": "Đã hoàn thành {percent}% lộ trình lớp",
+  "@myClassProgressCompletion": {
+    "description": "Tỷ lệ hoàn thành lộ trình lớp",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassProgressMinutes": "Tổng {total} phút · {last7} phút trong 7 ngày qua",
+  "@myClassProgressMinutes": {
+    "description": "Thời gian học kể từ khi vào lớp",
+    "placeholders": {
+      "total": {
+        "type": "String"
+      },
+      "last7": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassProgressStreak": "Chuỗi {days} ngày",
+  "@myClassProgressStreak": {
+    "description": "Chuỗi ngày học liên tiếp",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassProgressAccuracy": "Độ chính xác ôn tập: {percent}%",
+  "@myClassProgressAccuracy": {
+    "description": "Độ chính xác ôn tập kể từ khi vào lớp",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassProgressLastActive": "Học gần nhất: {date}",
+  "@myClassProgressLastActive": {
+    "description": "Ngày học gần nhất",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classUnitsTitle": "Chọn bài trong lộ trình",
+  "@classUnitsTitle": {
+    "description": "Tiêu đề phần chọn bài (US5)"
+  },
+  "classUnitsIntro": "Mặc định lộ trình dùng mẫu ở trên. Chọn bài, sắp xếp thứ tự và đặt ngày mở để thay mẫu bằng danh sách riêng của lớp.",
+  "@classUnitsIntro": {
+    "description": "Giải thích chọn bài"
+  },
+  "classUnitsModeTemplate": "Đang dùng chế độ mẫu.",
+  "@classUnitsModeTemplate": {
+    "description": "Chế độ mẫu"
+  },
+  "classUnitsModeExplicit": "Đang dùng danh sách chọn ({count} bài).",
+  "@classUnitsModeExplicit": {
+    "description": "Chế độ liệt kê",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classUnitsAdd": "Thêm bài…",
+  "@classUnitsAdd": {
+    "description": "Thêm đơn vị vào danh sách"
+  },
+  "classUnitsEmpty": "Chưa chọn bài nào.",
+  "@classUnitsEmpty": {
+    "description": "Danh sách chọn rỗng"
+  },
+  "classUnitsSave": "Lưu danh sách",
+  "@classUnitsSave": {
+    "description": "Lưu danh sách bài"
+  },
+  "classUnitsReset": "Quay lại chế độ mẫu",
+  "@classUnitsReset": {
+    "description": "Xóa danh sách chọn"
+  },
+  "classUnitsSaved": "Đã lưu danh sách bài. Có hiệu lực từ kế hoạch sinh kế tiếp.",
+  "@classUnitsSaved": {
+    "description": "Sau khi lưu danh sách"
+  },
+  "classUnitsOpensOn": "Mở: {date}",
+  "@classUnitsOpensOn": {
+    "description": "Ngày mở của đơn vị",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classUnitsOpensNow": "Mở ngay",
+  "@classUnitsOpensNow": {
+    "description": "Đơn vị mở ngay"
+  },
+  "classUnitsUp": "Lên",
+  "@classUnitsUp": {
+    "description": "Đưa đơn vị lên"
+  },
+  "classUnitsDown": "Xuống",
+  "@classUnitsDown": {
+    "description": "Đưa đơn vị xuống"
+  },
+  "classUnitsRemove": "Gỡ bài",
+  "@classUnitsRemove": {
+    "description": "Gỡ đơn vị khỏi danh sách"
+  },
+  "classAssignTitle": "Giao bài",
+  "@classAssignTitle": {
+    "description": "Tiêu đề phần bài giao (US5)"
+  },
+  "classAssignIntro": "Chọn tối đa 20 bài và đặt hạn. Bài giao chưa xong được đưa lên đầu kế hoạch của học viên.",
+  "@classAssignIntro": {
+    "description": "Giải thích bài giao"
+  },
+  "classAssignDue": "Hạn: {date}",
+  "@classAssignDue": {
+    "description": "Hạn của bài giao",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classAssignSubmit": "Giao bài",
+  "@classAssignSubmit": {
+    "description": "Nút giao bài"
+  },
+  "classAssignDone": "Đã giao {count} bài.",
+  "@classAssignDone": {
+    "description": "Sau khi giao bài",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classAssignCancel": "Hủy bài giao",
+  "@classAssignCancel": {
+    "description": "Hủy một bài giao"
+  },
+  "classAssignNone": "Chưa có bài giao.",
+  "@classAssignNone": {
+    "description": "Không có bài giao"
+  },
+  "classAssignItem": "{title} · hạn {date}",
+  "@classAssignItem": {
+    "description": "Một bài giao",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classAssignWarning": "Khối lượng cần xong đến hạn ({required} phút) vượt quỹ thời gian ({capacity} phút). Bài vẫn được giao.",
+  "@classAssignWarning": {
+    "description": "Cảnh báo bài giao vượt quỹ (không chặn)",
+    "placeholders": {
+      "required": {
+        "type": "int"
+      },
+      "capacity": {
+        "type": "int"
+      }
+    }
+  },
+  "classAssignPickFirst": "Chọn ít nhất một bài để giao.",
+  "@classAssignPickFirst": {
+    "description": "Chưa chọn bài giao"
+  },
+  "classAssignTooMany": "Chỉ giao tối đa 20 bài mỗi lần.",
+  "@classAssignTooMany": {
+    "description": "Quá 20 bài"
+  },
+  "classContentNoticePath": "Bài \"{title}\" đã bị ngừng nhưng còn trong danh sách chọn. Hãy gỡ bài khỏi lộ trình.",
+  "@classContentNoticePath": {
+    "description": "Đơn vị bị vô hiệu hóa còn trong lộ trình",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "classContentNoticeAssignment": "Bài \"{title}\" đã bị ngừng nhưng còn bài giao. Hãy hủy bài giao.",
+  "@classContentNoticeAssignment": {
+    "description": "Đơn vị bị vô hiệu hóa còn bài giao",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "learnerAdjustOpen": "Điều chỉnh riêng",
+  "@learnerAdjustOpen": {
+    "description": "Mở bảng điều chỉnh riêng"
+  },
+  "learnerAdjustTitle": "Điều chỉnh riêng cho học viên",
+  "@learnerAdjustTitle": {
+    "description": "Tiêu đề bảng điều chỉnh"
+  },
+  "learnerAdjustMinutes": "Phút mỗi ngày",
+  "@learnerAdjustMinutes": {
+    "description": "Ghi đè phút mỗi ngày"
+  },
+  "learnerAdjustMinutesClass": "Theo lớp",
+  "@learnerAdjustMinutesClass": {
+    "description": "Dùng phút của lớp"
+  },
+  "learnerAdjustShift": "Dời mốc: {days} ngày",
+  "@learnerAdjustShift": {
+    "description": "Dời mốc riêng",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "learnerAdjustShiftHelp": "Dương = muộn hơn, âm = sớm hơn (từ −60 đến 60 ngày).",
+  "@learnerAdjustShiftHelp": {
+    "description": "Giải thích dời mốc"
+  },
+  "learnerAdjustShiftMore": "Muộn hơn 1 ngày",
+  "@learnerAdjustShiftMore": {
+    "description": "Tăng dời mốc"
+  },
+  "learnerAdjustShiftLess": "Sớm hơn 1 ngày",
+  "@learnerAdjustShiftLess": {
+    "description": "Giảm dời mốc"
+  },
+  "learnerAdjustExempt": "Miễn bài (không tính vào tiến độ)",
+  "@learnerAdjustExempt": {
+    "description": "Danh sách miễn bài"
+  },
+  "learnerAdjustSave": "Lưu điều chỉnh",
+  "@learnerAdjustSave": {
+    "description": "Lưu điều chỉnh riêng"
+  },
+  "learnerAdjustSaved": "Đã lưu điều chỉnh.",
+  "@learnerAdjustSaved": {
+    "description": "Sau khi lưu điều chỉnh"
+  },
+  "classPausesOpen": "Tạm dừng",
+  "@classPausesOpen": {
+    "description": "Nút mở màn hình tạm dừng lớp"
+  },
+  "classPausesTitle": "Tạm dừng lớp",
+  "@classPausesTitle": {
+    "description": "Tiêu đề màn hình tạm dừng"
+  },
+  "classPausesBack": "Về lớp",
+  "@classPausesBack": {
+    "description": "Quay lại lớp"
+  },
+  "classPausesIntro": "Ngày tạm dừng không bị tính là bỏ lỡ và không sinh cảnh báo vắng mặt.",
+  "@classPausesIntro": {
+    "description": "Giải thích tạm dừng"
+  },
+  "classPausesScope": "Phạm vi",
+  "@classPausesScope": {
+    "description": "Phạm vi tạm dừng"
+  },
+  "classPausesScopeClass": "Cả lớp",
+  "@classPausesScopeClass": {
+    "description": "Tạm dừng cả lớp"
+  },
+  "classPausesStart": "Từ ngày: {date}",
+  "@classPausesStart": {
+    "description": "Ngày bắt đầu tạm dừng",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classPausesEnd": "Đến ngày: {date}",
+  "@classPausesEnd": {
+    "description": "Ngày kết thúc tạm dừng",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "classPausesEndNone": "Đến ngày: chưa đặt (đang mở)",
+  "@classPausesEndNone": {
+    "description": "Khoảng tạm dừng mở"
+  },
+  "classPausesCreate": "Tạm dừng",
+  "@classPausesCreate": {
+    "description": "Nút tạo khoảng tạm dừng"
+  },
+  "classPausesEndAction": "Kết thúc hôm nay",
+  "@classPausesEndAction": {
+    "description": "Kết thúc khoảng tạm dừng"
+  },
+  "classPausesNone": "Chưa có khoảng tạm dừng.",
+  "@classPausesNone": {
+    "description": "Không có khoảng tạm dừng"
+  },
+  "classPausesItem": "{who}: {from} → {to}",
+  "@classPausesItem": {
+    "description": "Một khoảng tạm dừng",
+    "placeholders": {
+      "who": {
+        "type": "String"
+      },
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "classPausesOpenEnded": "chưa kết thúc",
+  "@classPausesOpenEnded": {
+    "description": "Khoảng tạm dừng còn mở"
+  },
+  "classPausesShiftHint": "Muốn dời mốc cả lớp sau kỳ nghỉ, chỉnh ngày bắt đầu/kết thúc trong lộ trình lớp.",
+  "@classPausesShiftHint": {
+    "description": "Gợi ý dời mốc lớp"
+  },
+  "classPausesOpenPath": "Mở lộ trình lớp",
+  "@classPausesOpenPath": {
+    "description": "Mở lộ trình lớp"
+  },
+  "myClassAssignmentsTitle": "Bài giao",
+  "@myClassAssignmentsTitle": {
+    "description": "Bài giao của lớp (học viên)"
+  },
+  "myClassAssignmentsNone": "Chưa có bài giao.",
+  "@myClassAssignmentsNone": {
+    "description": "Không có bài giao"
+  },
+  "myClassAssignmentItem": "{title} · hạn {date}",
+  "@myClassAssignmentItem": {
+    "description": "Một bài giao của học viên",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassAdjustTitle": "Giáo viên đã điều chỉnh cho bạn",
+  "@myClassAdjustTitle": {
+    "description": "Điều chỉnh của giáo viên"
+  },
+  "myClassAdjustMinutes": "Thời gian học: {minutes} phút mỗi ngày",
+  "@myClassAdjustMinutes": {
+    "description": "Phút riêng",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassAdjustShift": "Mốc của bạn được dời {days} ngày",
+  "@myClassAdjustShift": {
+    "description": "Dời mốc riêng",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassAdjustExempt": "Bạn được miễn {count} bài",
+  "@myClassAdjustExempt": {
+    "description": "Miễn bài",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "myClassPausedToday": "Hôm nay lớp tạm dừng — bạn không bị tính là bỏ lỡ.",
+  "@myClassPausedToday": {
+    "description": "Hôm nay đang tạm dừng"
+  },
+  "todayAssignedLabel": "Bài giao · hạn {date}",
+  "@todayAssignedLabel": {
+    "description": "Nhãn bài giao trên Hôm nay",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orgDataAccessOff": "Tổ chức hiện không còn quyền xem dữ liệu học: bạn chỉ xem được cấu trúc lớp và danh sách thành viên, không xem được dữ liệu của học viên.",
+  "@orgDataAccessOff": {
+    "description": "Dải thông báo cho giáo viên/chủ tổ chức khi mất quyền xem dữ liệu học viên (hết hạn, mất seat, tổ chức bị vô hiệu hóa)"
+  },
+  "myClassMovedNotice": "Trung tâm đã chuyển bạn từ lớp {fromClass} sang lớp này. Bạn vẫn có thể chuyển sang lộ trình cá nhân bất cứ lúc nào.",
+  "@myClassMovedNotice": {
+    "description": "Thông báo cho học viên sau khi bị chuyển lớp (có tên lớp cũ)",
+    "placeholders": {
+      "fromClass": {
+        "type": "String"
+      }
+    }
+  },
+  "myClassMovedNoticeGeneric": "Trung tâm đã chuyển bạn sang lớp này. Bạn vẫn có thể chuyển sang lộ trình cá nhân bất cứ lúc nào.",
+  "@myClassMovedNoticeGeneric": {
+    "description": "Thông báo cho học viên sau khi bị chuyển lớp (không rõ lớp cũ)"
+  },
+  "myClassNoneRemoved": "Nếu bạn vừa bị gỡ khỏi lớp, hết seat hoặc tổ chức hết hiệu lực, bạn vẫn học bình thường theo lộ trình cá nhân. Muốn vào lại lớp, hãy nhập mã lớp hoặc nhờ giáo viên mời lại.",
+  "@myClassNoneRemoved": {
+    "description": "Giải thích dưới 'Bạn chưa thuộc lớp nào' để người vừa mất tư cách thành viên biết điều gì xảy ra"
+  },
+  "classEndedNotice": "Bạn không còn thuộc lớp {className}. Bạn tiếp tục học theo lộ trình cá nhân; lịch sử học của bạn được giữ nguyên và tổ chức không còn xem được dữ liệu của bạn. Muốn vào lại lớp, hãy nhờ giáo viên mời lại.",
+  "@classEndedNotice": {
+    "description": "Thông báo ở Hôm nay khi học viên bị gỡ/hết seat/tổ chức hết hiệu lực",
+    "placeholders": {
+      "className": {
+        "type": "String"
+      }
+    }
+  },
+  "classEndedDismiss": "Đã hiểu",
+  "@classEndedDismiss": {
+    "description": "Nút đóng thông báo không còn thuộc lớp"
+  },
+  "profileDeleteClassNotice": "Bạn đang thuộc một lớp: khi xóa tài khoản bạn rời lớp ngay và tổ chức mất quyền xem dữ liệu của bạn. Nếu khôi phục tài khoản trong 30 ngày, bạn KHÔNG tự quay lại lớp — giáo viên phải mời lại và bạn xác nhận lại.",
+  "@profileDeleteClassNotice": {
+    "description": "Cảnh báo xóa tài khoản của người đang thuộc lớp"
+  },
+  "classAlertAbsent": "Vắng {days} ngày",
+  "@classAlertAbsent": {
+    "description": "Cảnh báo học viên vắng liên tiếp",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "classAlertBehind": "Chậm tiến độ",
+  "@classAlertBehind": {
+    "description": "Cảnh báo chậm tiến độ"
+  },
+  "classAlertOverdue": "Bài giao quá hạn",
+  "@classAlertOverdue": {
+    "description": "Cảnh báo có bài giao quá hạn"
+  },
+  "classDashboardColAlerts": "Cảnh báo",
+  "@classDashboardColAlerts": {
+    "description": "Cột cảnh báo trên bảng điều khiển lớp"
+  },
+  "classDashboardFilterNeedsAttention": "Cần chú ý",
+  "@classDashboardFilterNeedsAttention": {
+    "description": "Bộ lọc học viên có ít nhất một cảnh báo"
+  },
+  "classDashboardFilterAbsent": "Vắng mặt",
+  "@classDashboardFilterAbsent": {
+    "description": "Bộ lọc học viên vắng mặt"
+  },
+  "classDashboardNeedAttention": "{count} học viên cần chú ý",
+  "@classDashboardNeedAttention": {
+    "description": "Số học viên có cảnh báo trong dòng tổng hợp",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classExportCsv": "Xuất CSV",
+  "@classExportCsv": {
+    "description": "Nút xuất báo cáo lớp ra CSV"
+  },
+  "classExportLearnerCsv": "Xuất CSV học viên",
+  "@classExportLearnerCsv": {
+    "description": "Nút xuất báo cáo một học viên ra CSV"
+  },
+  "classExportDone": "Đã xuất {filename}",
+  "@classExportDone": {
+    "description": "Thông báo đã tải tệp CSV",
+    "placeholders": {
+      "filename": {
+        "type": "String"
+      }
+    }
+  },
+  "classWeakTopicsOpen": "Chủ đề yếu của lớp",
+  "@classWeakTopicsOpen": {
+    "description": "Nút mở màn hình chủ đề yếu của lớp"
+  },
+  "classWeakTopicsTitle": "Chủ đề yếu của lớp",
+  "@classWeakTopicsTitle": {
+    "description": "Tiêu đề màn hình chủ đề yếu của lớp"
+  },
+  "classWeakTopicsBack": "Quay lại lớp",
+  "@classWeakTopicsBack": {
+    "description": "Nút quay lại chi tiết lớp"
+  },
+  "classWeakTopicsIntro": "Các chủ đề mà độ chính xác chung của cả lớp thấp, chỉ tính các lượt trả lời chính kể từ khi từng học viên vào lớp.",
+  "@classWeakTopicsIntro": {
+    "description": "Giới thiệu màn hình chủ đề yếu"
+  },
+  "classWeakTopicsEmpty": "Chưa có chủ đề nào đủ dữ liệu để coi là yếu.",
+  "@classWeakTopicsEmpty": {
+    "description": "Trạng thái rỗng của chủ đề yếu"
+  },
+  "classWeakTopicsAccuracy": "Độ chính xác {percent} trên {answers} câu",
+  "@classWeakTopicsAccuracy": {
+    "description": "Độ chính xác gộp của một chủ đề yếu",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "answers": {
+        "type": "int"
+      }
+    }
+  },
+  "classWeakTopicsFlagged": "{count} học viên bị gắn cờ yếu",
+  "@classWeakTopicsFlagged": {
+    "description": "Số học viên bị gắn cờ ở chủ đề",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classAbsenceThreshold": "Ngưỡng vắng mặt: {days} ngày",
+  "@classAbsenceThreshold": {
+    "description": "Ngưỡng ngày vắng để cảnh báo trong chi tiết lớp",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "classAbsenceThresholdEdit": "Đổi ngưỡng vắng",
+  "@classAbsenceThresholdEdit": {
+    "description": "Nút đổi ngưỡng vắng mặt"
+  },
+  "classAbsenceThresholdLabel": "Số ngày vắng (1–14)",
+  "@classAbsenceThresholdLabel": {
+    "description": "Nhãn ô nhập ngưỡng vắng mặt"
+  },
+  "classAbsenceThresholdInvalid": "Nhập số nguyên từ 1 đến 14",
+  "@classAbsenceThresholdInvalid": {
+    "description": "Lỗi ngưỡng vắng mặt ngoài 1–14"
+  },
+  "classPlacementOpen": "Kiểm tra trình độ",
+  "@classPlacementOpen": {
+    "description": "Nút mở màn hình kiểm tra trình độ cả lớp"
+  },
+  "classPlacementTitle": "Kiểm tra trình độ cả lớp",
+  "@classPlacementTitle": {
+    "description": "Tiêu đề màn hình kiểm tra trình độ cả lớp"
+  },
+  "classPlacementBack": "Quay lại lớp",
+  "@classPlacementBack": {
+    "description": "Nút quay lại chi tiết lớp"
+  },
+  "classPlacementIntro": "Yêu cầu cả lớp làm bài kiểm tra trình độ đầu vào hiện có và xem kết quả từng học viên. Kết quả chỉ để tham khảo, KHÔNG tự đổi lộ trình lớp hay lộ trình cá nhân của học viên.",
+  "@classPlacementIntro": {
+    "description": "Giới thiệu màn hình kiểm tra trình độ cả lớp"
+  },
+  "classPlacementNoRequest": "Chưa có yêu cầu kiểm tra nào đang mở.",
+  "@classPlacementNoRequest": {
+    "description": "Trạng thái chưa có yêu cầu kiểm tra"
+  },
+  "classPlacementCreate": "Yêu cầu cả lớp làm bài",
+  "@classPlacementCreate": {
+    "description": "Nút tạo yêu cầu kiểm tra trình độ"
+  },
+  "classPlacementCreated": "Đã gửi yêu cầu; học viên sẽ thấy trong Lớp của tôi.",
+  "@classPlacementCreated": {
+    "description": "Thông báo đã tạo yêu cầu kiểm tra"
+  },
+  "classPlacementClose": "Đóng yêu cầu",
+  "@classPlacementClose": {
+    "description": "Nút đóng yêu cầu kiểm tra"
+  },
+  "classPlacementCloseConfirm": "Học viên chưa làm sẽ không thể nộp bài cho yêu cầu này nữa. Kết quả đã nộp vẫn được giữ.",
+  "@classPlacementCloseConfirm": {
+    "description": "Xác nhận đóng yêu cầu kiểm tra"
+  },
+  "classPlacementClosed": "Đã đóng yêu cầu.",
+  "@classPlacementClosed": {
+    "description": "Thông báo đã đóng yêu cầu"
+  },
+  "classPlacementDistribution": "Phân bố trình độ ước tính",
+  "@classPlacementDistribution": {
+    "description": "Tiêu đề phân bố trình độ của lớp"
+  },
+  "classPlacementLevelNone": "Chưa đạt N5",
+  "@classPlacementLevelNone": {
+    "description": "Nhãn trình độ none"
+  },
+  "classPlacementLearners": "Kết quả từng học viên",
+  "@classPlacementLearners": {
+    "description": "Tiêu đề danh sách kết quả"
+  },
+  "classPlacementDone": "Đã làm",
+  "@classPlacementDone": {
+    "description": "Học viên đã làm bài kiểm tra"
+  },
+  "classPlacementPending": "Chưa làm",
+  "@classPlacementPending": {
+    "description": "Học viên chưa làm bài kiểm tra"
+  },
+  "classPlacementScore": "{score}/{total} điểm",
+  "@classPlacementScore": {
+    "description": "Điểm bài kiểm tra",
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "classPlacementMoveTitle": "Mời chuyển lớp",
+  "@classPlacementMoveTitle": {
+    "description": "Tiêu đề hộp thoại mời chuyển lớp"
+  },
+  "classPlacementMoveButton": "Mời sang lớp khác",
+  "@classPlacementMoveButton": {
+    "description": "Nút mời học viên chuyển sang lớp khác"
+  },
+  "classPlacementMoveHint": "Học viên chỉ chuyển lớp khi họ đồng ý; nếu từ chối họ ở lại lớp hiện tại. Seat, tiến độ và lịch ôn được giữ.",
+  "@classPlacementMoveHint": {
+    "description": "Giải thích mời chuyển lớp"
+  },
+  "classPlacementMoveTarget": "Chọn lớp đích",
+  "@classPlacementMoveTarget": {
+    "description": "Nhãn chọn lớp đích"
+  },
+  "classPlacementMoveNoOther": "Không có lớp nào khác trong phạm vi của bạn để chuyển sang.",
+  "@classPlacementMoveNoOther": {
+    "description": "Không có lớp đích"
+  },
+  "classPlacementMoveSent": "Đã gửi lời mời chuyển lớp; học viên đồng ý thì mới chuyển.",
+  "@classPlacementMoveSent": {
+    "description": "Thông báo đã mời chuyển lớp"
+  },
+  "myClassPlacementTitle": "Giáo viên yêu cầu bạn làm bài kiểm tra trình độ",
+  "@myClassPlacementTitle": {
+    "description": "Tiêu đề thẻ yêu cầu kiểm tra trong Lớp của tôi"
+  },
+  "myClassPlacementBody": "Kết quả chỉ gửi cho giáo viên của lớp; lộ trình lớp và lộ trình cá nhân của bạn không thay đổi.",
+  "@myClassPlacementBody": {
+    "description": "Nội dung thẻ yêu cầu kiểm tra trong Lớp của tôi"
+  },
+  "myClassPlacementStart": "Làm bài kiểm tra",
+  "@myClassPlacementStart": {
+    "description": "Nút làm bài kiểm tra do lớp yêu cầu"
+  },
+  "placementClassResultNote": "Kết quả đã gửi cho giáo viên của lớp. Lộ trình lớp và lộ trình cá nhân của bạn không thay đổi.",
+  "@placementClassResultNote": {
+    "description": "Ghi chú sau khi nộp bài kiểm tra do lớp yêu cầu"
+  },
+  "placementClassBack": "Về Lớp của tôi",
+  "@placementClassBack": {
+    "description": "Nút về Lớp của tôi sau bài kiểm tra do lớp yêu cầu"
+  },
+  "classChoiceTransferNote": "Bạn đang học ở lớp \"{currentClass}\". Nếu đồng ý, bạn chuyển sang lớp này; seat, tiến độ và lịch ôn của bạn được giữ nguyên. Nếu từ chối, bạn ở lại lớp hiện tại.",
+  "@classChoiceTransferNote": {
+    "description": "Ghi chú khi lời mời là chuyển lớp",
+    "placeholders": {
+      "currentClass": {
+        "type": "String"
+      }
+    }
+  },
+  "classChoiceTransferJoin": "Chuyển sang lớp này",
+  "@classChoiceTransferJoin": {
+    "description": "Lựa chọn đồng ý chuyển lớp"
+  },
+  "classChoiceTransferStay": "Ở lại lớp hiện tại",
+  "@classChoiceTransferStay": {
+    "description": "Lựa chọn từ chối chuyển lớp"
+  },
+  "classChoiceTransferStayHint": "Bạn không bị chuyển và lớp hiện tại giữ nguyên.",
+  "@classChoiceTransferStayHint": {
+    "description": "Gợi ý dưới lựa chọn ở lại lớp hiện tại"
+  },
+  "classChoiceTransferConfirmTitle": "Xác nhận chuyển lớp",
+  "@classChoiceTransferConfirmTitle": {
+    "description": "Tiêu đề xác nhận chuyển lớp"
+  },
+  "classChoiceTransferConfirmMessage": "Bạn đồng ý chuyển sang lớp này. Giáo viên của lớp mới sẽ xem các dữ liệu nêu trên kể từ hôm nay, và bạn bắt đầu theo lộ trình của lớp mới. Bạn vẫn có thể chuyển sang lộ trình cá nhân bất cứ lúc nào.",
+  "@classChoiceTransferConfirmMessage": {
+    "description": "Nội dung xác nhận chuyển lớp"
+  },
+  "classChoiceTransferStayed": "Bạn ở lại lớp hiện tại.",
+  "@classChoiceTransferStayed": {
+    "description": "Thông báo đã từ chối chuyển lớp"
   }
 }

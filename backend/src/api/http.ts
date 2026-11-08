@@ -1,5 +1,7 @@
 import type { FastifyRequest } from 'fastify';
+import { isUuid } from '../db/repositories/classes.js';
 import { DEFAULT_LANGUAGE, LANGUAGES, type Language } from '../domain/types.js';
+import { notFoundGeneric } from './errors.js';
 
 // Tiện ích dùng chung cho các route.
 
@@ -31,4 +33,13 @@ export function languageFromRequest(request: FastifyRequest): Language {
     }
   }
   return DEFAULT_LANGUAGE;
+}
+
+/**
+ * Tham số đường dẫn là id đối tượng tổ chức/lớp: id sai dạng bị coi như "không tồn tại" (404 chung, cùng thân
+ * với đối tượng ngoài phạm vi – FR-007) thay vì 422 hay lỗi 22P02 của CSDL.
+ */
+export function uuidParam(value: string | undefined): string {
+  if (!value || !isUuid(value)) throw notFoundGeneric();
+  return value;
 }

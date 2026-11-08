@@ -13,7 +13,8 @@ import * as schema from '../../src/db/schema.js';
 import { openTestDb, requireDatabaseUrl, resetDatabase } from './helpers.js';
 
 // Kiểm tra migration `0001_init.sql` (T008) và schema Drizzle (T009) trên PostgreSQL thật; nâng cấp
-// 0002/0003 (Kanji) trên dữ liệu 001 có sẵn (spec 003, T008).
+// 0002/0003 (Kanji) trên dữ liệu 001 có sẵn (spec 003, T008); nâng cấp 0004 (tổ chức/lớp học) trên dữ liệu
+// 001 + 003 và các ràng buộc của nó (spec 004, T011).
 
 let handle: DbHandle;
 
@@ -605,7 +606,12 @@ describe('nâng cấp migration Kanji (0002, 0003) trên dữ liệu 001', () =>
     );
 
     const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
-    expect(result.applied).toEqual(['0002_kanji_skill.sql', '0003_kanji.sql']);
+    // 0004 (tổ chức/lớp học) cũng được áp dụng vì thư mục migration mặc định chứa đủ; nâng cấp riêng 0004 có bộ test bên dưới.
+    expect(result.applied).toEqual([
+      '0002_kanji_skill.sql',
+      '0003_kanji.sql',
+      '0004_org_classes.sql',
+    ]);
 
     expect((await uq(`SELECT facet FROM review_schedules`)).rows).toEqual([{ facet: 'item' }]);
     expect((await uq(`SELECT facet FROM exercises`)).rows).toEqual([{ facet: 'item' }]);
@@ -697,5 +703,460 @@ describe('nâng cấp migration Kanji (0002, 0003) trên dữ liệu 001', () =>
     expect(await insert('{meaning}')).toBe(CHECK);
     expect(await insert('{meaning,reading}')).toBeUndefined();
     expect(await insert(null)).toBeUndefined();
+  });
+});
+
+// --- Nâng cấp 0004 (tổ chức, lớp học) trên dữ liệu 001 + 003 (spec 004, T011, data-model §9) ---
+
+const EXCLUSION = '23P01';
+
+describe('nâng cấp migration tổ chức/lớp học (0004) trên dữ liệu 001 + 003', () => {
+  const dbName = `jl_org_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
+  let admin: pg.Client;
+  let upgraded: pg.Pool;
+  let upToKanji: string;
+  let learner: string;
+  const before: Record<string, unknown[]> = {};
+
+  beforeAll(async () => {
+    const base = requireDatabaseUrl();
+    admin = new pg.Client({ connectionString: urlForDatabase(base, 'postgres') });
+    await admin.connect();
+    await admin.query(
+      `CREATE DATABASE ${dbName} TEMPLATE template0 ENCODING 'UTF8' LC_COLLATE 'C' LC_CTYPE 'C'`,
+    );
+    // Thư mục chỉ chứa 0001–0003 để dựng CSDL ở trạng thái của hệ thống 001 + 003.
+    upToKanji = mkdtempSync(path.join(tmpdir(), 'mig-0003-'));
+    for (const f of readdirSync(MIGRATIONS_DIR).filter((n) => /^000[1-3]_/.test(n))) {
+      copyFileSync(path.join(MIGRATIONS_DIR, f), path.join(upToKanji, f));
+    }
+    await runMigrations(urlForDatabase(base, dbName), upToKanji);
+    upgraded = new pg.Pool({ connectionString: urlForDatabase(base, dbName) });
+  });
+
+  afterAll(async () => {
+    await upgraded?.end();
+    await admin?.query(`DROP DATABASE IF EXISTS ${dbName} WITH (FORCE)`);
+    await admin?.end();
+    if (upToKanji) rmSync(upToKanji, { recursive: true, force: true });
+  });
+
+  const uq = (text: string, params: unknown[] = []) => upgraded.query(text, params);
+  const upgradeCode = async (text: string, params: unknown[] = []) => {
+    try {
+      await uq(text, params);
+      return undefined;
+    } catch (err) {
+      return (err as { code?: string }).code;
+    }
+  };
+  const newUser = async () =>
+    (
+      await uq(`INSERT INTO users (email, password_hash) VALUES ($1, 'h') RETURNING id`, [
+        `m-${randomUUID()}@example.com`,
+      ])
+    ).rows[0].id as string;
+  const newOrg = async () =>
+    (await uq(`INSERT INTO organizations (name) VALUES ('Trung tâm') RETURNING id`)).rows[0]
+      .id as string;
+  const newClass = async (orgId: string) =>
+    (
+      await uq(`INSERT INTO classes (organization_id, name) VALUES ($1, 'Lớp') RETURNING id`, [
+        orgId,
+      ])
+    ).rows[0].id as string;
+
+  const SNAPSHOT_QUERIES: Record<string, string> = {
+    users: `SELECT id, email, role, status FROM users ORDER BY id`,
+    learning_profiles: `SELECT user_id, display_name, skills::text[] AS skills, daily_minutes FROM learning_profiles ORDER BY user_id`,
+    learning_paths: `SELECT id, user_id, status, reason FROM learning_paths ORDER BY id`,
+    daily_plans: `SELECT id, user_id, local_date::text AS local_date, budget_minutes FROM daily_plans ORDER BY id`,
+    review_schedules: `SELECT user_id, item_id, facet, due_date::text AS due_date FROM review_schedules ORDER BY user_id, item_id, facet`,
+    placement_results: `SELECT id, user_id, estimated_level, is_current FROM placement_results ORDER BY id`,
+    admin_action_logs: `SELECT id, action, target_type FROM admin_action_logs ORDER BY id`,
+  };
+
+  it('dữ liệu 001/003 giữ nguyên sau 0004; cột liên kết mới của dòng cũ là NULL', async () => {
+    // Người học cũ có lộ trình, kế hoạch, lịch ôn, kết quả placement và nhật ký admin.
+    learner = await newUser();
+    await uq(
+      `INSERT INTO learning_profiles (user_id, display_name, skills) VALUES ($1, 'Cũ', ARRAY['vocabulary','kanji']::skill[])`,
+      [learner],
+    );
+    await uq(
+      `INSERT INTO learning_paths (user_id, reason, generated_from) VALUES ($1, 'onboarding', '{}')`,
+      [learner],
+    );
+    const topic = (
+      await uq(
+        `INSERT INTO topics (skill, name, level) VALUES ('vocabulary', '{"vi":"a","en":"a"}', 'N5') RETURNING id`,
+      )
+    ).rows[0].id as string;
+    const unit = (
+      await uq(
+        `INSERT INTO learning_units (kind, title, level, topic_id, difficulty, est_minutes)
+         VALUES ('vocabulary', '{"vi":"t","en":"t"}', 'N5', $1, 1, 5) RETURNING id`,
+        [topic],
+      )
+    ).rows[0].id as string;
+    const item = (
+      await uq(
+        `INSERT INTO content_items (unit_id, kind, japanese, meaning) VALUES ($1, 'vocabulary', '水', '{}') RETURNING id`,
+        [unit],
+      )
+    ).rows[0].id as string;
+    await uq(
+      `INSERT INTO review_schedules (user_id, item_id, interval_days, ease, due_date) VALUES ($1, $2, 1, 2.50, '2026-01-06')`,
+      [learner, item],
+    );
+    await uq(
+      `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes) VALUES ($1, '2026-01-05', 10, 5)`,
+      [learner],
+    );
+    await uq(
+      `INSERT INTO placement_results (user_id, answers, estimated_level, score) VALUES ($1, '[]', 'N5', 12)`,
+      [learner],
+    );
+    await uq(
+      `INSERT INTO admin_action_logs (actor_id, action, target_type) VALUES ($1, 'unit.update', 'unit')`,
+      [learner],
+    );
+    for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
+      before[name] = (await uq(sql)).rows;
+      expect(before[name]!.length, name).toBeGreaterThan(0);
+    }
+
+    const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
+    expect(result.applied).toEqual(['0004_org_classes.sql']);
+
+    for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
+      expect((await uq(sql)).rows, `${name} không đổi sau 0004`).toEqual(before[name]);
+    }
+    expect((await uq(`SELECT class_placement_request_id FROM placement_results`)).rows).toEqual([
+      { class_placement_request_id: null },
+    ]);
+    expect((await uq(`SELECT organization_id FROM admin_action_logs`)).rows).toEqual([
+      { organization_id: null },
+    ]);
+    // Người học cũ không bị gắn vào tổ chức nào.
+    expect((await uq(`SELECT count(*)::int AS n FROM organization_members`)).rows[0].n).toBe(0);
+  });
+
+  it('giấy phép chồng ngày bị từ chối (exclusion), cho phép khi đã thu hồi hoặc không chồng', async () => {
+    const org = await newOrg();
+    const other = await newOrg();
+    const insert = (orgId: string, from: string, to: string, revoked = false) =>
+      upgradeCode(
+        `INSERT INTO seat_licenses (organization_id, starts_on, ends_on, revoked_at)
+         VALUES ($1, $2, $3, ${revoked ? 'now()' : 'NULL'})`,
+        [orgId, from, to],
+      );
+    expect(await insert(org, '2026-01-01', '2026-06-30')).toBeUndefined();
+    expect(await insert(org, '2026-06-30', '2026-12-31')).toBe(EXCLUSION); // trùng ngày biên
+    expect(await insert(org, '2026-03-01', '2026-04-01')).toBe(EXCLUSION);
+    expect(await insert(org, '2026-07-01', '2026-12-31')).toBeUndefined(); // liền kề, không chồng
+    expect(await insert(other, '2026-03-01', '2026-04-01')).toBeUndefined(); // tổ chức khác
+    // Giấy phép đã thu hồi không tham gia ràng buộc.
+    expect(await insert(org, '2026-03-01', '2026-04-01', true)).toBeUndefined();
+    // CHECK ends_on >= starts_on, grace_days 0–60, max_reassignments >= 0.
+    expect(await insert(org, '2027-02-01', '2027-01-01')).toBe(CHECK);
+    expect(
+      await upgradeCode(
+        `INSERT INTO seat_licenses (organization_id, starts_on, ends_on, grace_days)
+         VALUES ($1, '2030-01-01', '2030-02-01', 61)`,
+        [org],
+      ),
+    ).toBe(CHECK);
+    expect(
+      await upgradeCode(
+        `INSERT INTO seat_licenses (organization_id, starts_on, ends_on, max_reassignments)
+         VALUES ($1, '2031-01-01', '2031-02-01', -1)`,
+        [org],
+      ),
+    ).toBe(CHECK);
+  });
+
+  it('một tài khoản một seat; một tài khoản một tổ chức', async () => {
+    const org = await newOrg();
+    const license = (
+      await uq(
+        `INSERT INTO seat_licenses (organization_id, starts_on, ends_on) VALUES ($1, '2026-01-01', '2026-12-31') RETURNING id`,
+        [org],
+      )
+    ).rows[0].id as string;
+    const user = await newUser();
+    const seat = () =>
+      upgradeCode(`INSERT INTO seats (license_id, holder_user_id) VALUES ($1, $2)`, [
+        license,
+        user,
+      ]);
+    expect(await seat()).toBeUndefined();
+    expect(await seat()).toBe(UNIQUE);
+    // Seat trống không giới hạn số lượng.
+    expect(
+      await upgradeCode(`INSERT INTO seats (license_id) VALUES ($1)`, [license]),
+    ).toBeUndefined();
+    expect(
+      await upgradeCode(`INSERT INTO seats (license_id) VALUES ($1)`, [license]),
+    ).toBeUndefined();
+
+    const orgB = await newOrg();
+    const member = (orgId: string) =>
+      upgradeCode(
+        `INSERT INTO organization_members (user_id, organization_id, is_teacher, joined_at) VALUES ($1, $2, true, now())`,
+        [user, orgId],
+      );
+    expect(await member(org)).toBeUndefined();
+    expect(await member(orgB)).toBe(UNIQUE);
+    // Dòng của học viên (cờ vai trò đều false) không bị chặn ở mức CSDL; việc dòng chỉ tồn tại khi còn
+    // thành viên lớp đang hoạt động hoặc còn vai trò do `endMembership` bảo đảm (kiểm ở T053).
+    const learnerRow = await newUser();
+    expect(
+      await upgradeCode(
+        `INSERT INTO organization_members (user_id, organization_id, joined_at) VALUES ($1, $2, now())`,
+        [learnerRow, org],
+      ),
+    ).toBeUndefined();
+  });
+
+  it('thành viên lớp: một lớp đang hoạt động, CHECK left_at ⇔ end_reason, nhiều giai đoạn đã đóng', async () => {
+    const org = await newOrg();
+    const classA = await newClass(org);
+    const classB = await newClass(org);
+    const user = await newUser();
+    const open = (classId: string) =>
+      upgradeCode(
+        `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at)
+         VALUES ($1, $2, $3, now(), now())`,
+        [classId, user, org],
+      );
+    const closed = (classId: string) =>
+      upgradeCode(
+        `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at, left_at, end_reason)
+         VALUES ($1, $2, $3, now(), now(), now(), 'removed')`,
+        [classId, user, org],
+      );
+    expect(await open(classA)).toBeUndefined();
+    expect(await open(classB)).toBe(UNIQUE);
+    expect(await closed(classA)).toBeUndefined();
+    expect(await closed(classB)).toBeUndefined();
+    // left_at và end_reason phải cùng NULL hoặc cùng có giá trị.
+    expect(
+      await upgradeCode(
+        `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at, left_at)
+         VALUES ($1, $2, $3, now(), now(), now())`,
+        [classA, await newUser(), org],
+      ),
+    ).toBe(CHECK);
+    expect(
+      await upgradeCode(
+        `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at, end_reason)
+         VALUES ($1, $2, $3, now(), now(), 'removed')`,
+        [classA, await newUser(), org],
+      ),
+    ).toBe(CHECK);
+  });
+
+  it('kết quả placement của lớp không được là kết quả hiện hành (CHECK) và mỗi yêu cầu một kết quả/người', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const request = (
+      await uq(`INSERT INTO class_placement_requests (class_id) VALUES ($1) RETURNING id`, [cls])
+    ).rows[0].id as string;
+    // Chỉ một yêu cầu mở mỗi lớp.
+    expect(
+      await upgradeCode(`INSERT INTO class_placement_requests (class_id) VALUES ($1)`, [cls]),
+    ).toBe(UNIQUE);
+    const user = await newUser();
+    const result = (isCurrent: boolean) =>
+      upgradeCode(
+        `INSERT INTO placement_results (user_id, answers, estimated_level, score, is_current, class_placement_request_id)
+         VALUES ($1, '[]', 'N4', 10, $2, $3)`,
+        [user, isCurrent, request],
+      );
+    expect(await result(true)).toBe(CHECK);
+    expect(await result(false)).toBeUndefined();
+    expect(await result(false)).toBe(UNIQUE);
+  });
+
+  it('lời mời: một lời mời chờ mỗi (tổ chức, email) không phân biệt hoa thường; học viên cần lớp', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const invite = (email: string, status = 'pending', kind = 'teacher', classId?: string) =>
+      upgradeCode(
+        `INSERT INTO invitations (organization_id, class_id, kind, email, token_hash, status, expires_at)
+         VALUES ($1, $2, $3, $4, $5, $6, now() + interval '14 days')`,
+        [org, classId ?? null, kind, email, randomUUID(), status],
+      );
+    expect(await invite('An@Example.com')).toBeUndefined();
+    expect(await invite('an@example.com')).toBe(UNIQUE);
+    expect(await invite('an@example.com', 'revoked')).toBeUndefined();
+    expect(await invite('an@example.com', 'expired')).toBeUndefined();
+    // kind = student ⇔ class_id NOT NULL.
+    expect(await invite('hs@example.com', 'pending', 'student')).toBe(CHECK);
+    expect(await invite('hs@example.com', 'pending', 'student', cls)).toBeUndefined();
+    expect(await invite('gv@example.com', 'pending', 'teacher', cls)).toBe(CHECK);
+  });
+
+  it('quỹ thời gian chỉ 5/10/15/30 phút ở lộ trình lớp và ghi đè cá nhân; mốc ngày hợp lệ', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const path = (minutes: number, endsOn = '2026-06-30', skills = '{vocabulary}') =>
+      upgradeCode(
+        `INSERT INTO class_paths (class_id, start_level, target_level, skills, starts_on, ends_on, daily_minutes)
+         VALUES ($1, 'N5', 'N4', $2::skill[], '2026-01-01', $3, $4)
+         ON CONFLICT (class_id) DO UPDATE SET daily_minutes = EXCLUDED.daily_minutes`,
+        [cls, skills, endsOn, minutes],
+      );
+    expect(await path(7)).toBe(CHECK);
+    expect(await path(20)).toBe(CHECK);
+    expect(await path(10, '2026-01-01')).toBe(CHECK); // ends_on phải sau starts_on
+    expect(await path(10, '2026-06-30', '{}')).toBe(CHECK); // ít nhất một kỹ năng
+    for (const m of [5, 10, 15, 30]) expect(await path(m), String(m)).toBeUndefined();
+
+    const user = await newUser();
+    const membership = (
+      await uq(
+        `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at)
+         VALUES ($1, $2, $3, now(), now()) RETURNING id`,
+        [cls, user, org],
+      )
+    ).rows[0].id as string;
+    const override = (minutes: number | null, shift = 0) =>
+      upgradeCode(
+        `INSERT INTO class_learner_overrides (membership_id, daily_minutes, shift_days) VALUES ($1, $2, $3)
+         ON CONFLICT (membership_id) DO UPDATE SET daily_minutes = EXCLUDED.daily_minutes, shift_days = EXCLUDED.shift_days`,
+        [membership, minutes, shift],
+      );
+    expect(await override(12)).toBe(CHECK);
+    expect(await override(10, 61)).toBe(CHECK);
+    expect(await override(null, -60)).toBeUndefined();
+    expect(await override(15, 60)).toBeUndefined();
+  });
+
+  it('tạm dừng lớp: tối đa một khoảng mở mỗi phạm vi; khoảng kết thúc phải sau ngày bắt đầu', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const pause = (startedOn: string, endedOn: string | null) =>
+      upgradeCode(
+        `INSERT INTO class_pause_periods (class_id, started_on, ended_on) VALUES ($1, $2, $3)`,
+        [cls, startedOn, endedOn],
+      );
+    expect(await pause('2026-02-01', '2026-02-01')).toBe(CHECK);
+    expect(await pause('2026-02-01', '2026-02-08')).toBeUndefined();
+    expect(await pause('2026-03-01', null)).toBeUndefined();
+    expect(await pause('2026-04-01', null)).toBe(UNIQUE);
+  });
+
+  it('mã tham gia: duy nhất; bật mã phải có mã; số ngày vắng 1–14', async () => {
+    const org = await newOrg();
+    const a = await newClass(org);
+    const b = await newClass(org);
+    expect(
+      await upgradeCode(
+        `UPDATE classes SET join_code = 'ABCD2345', join_code_enabled = true WHERE id = $1`,
+        [a],
+      ),
+    ).toBeUndefined();
+    expect(await upgradeCode(`UPDATE classes SET join_code = 'ABCD2345' WHERE id = $1`, [b])).toBe(
+      UNIQUE,
+    );
+    expect(
+      await upgradeCode(`UPDATE classes SET join_code_enabled = true WHERE id = $1`, [b]),
+    ).toBe(CHECK);
+    expect(
+      await upgradeCode(`UPDATE classes SET absence_threshold_days = 0 WHERE id = $1`, [b]),
+    ).toBe(CHECK);
+    expect(
+      await upgradeCode(`UPDATE classes SET absence_threshold_days = 15 WHERE id = $1`, [b]),
+    ).toBe(CHECK);
+  });
+
+  it('thứ tự đơn vị trong lộ trình lớp hoán đổi được trong một câu lệnh (UNIQUE hoãn)', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const topic = (await uq(`SELECT id FROM topics LIMIT 1`)).rows[0].id as string;
+    const mkUnit = async () =>
+      (
+        await uq(
+          `INSERT INTO learning_units (kind, title, level, topic_id, difficulty, est_minutes)
+           VALUES ('vocabulary', '{"vi":"t","en":"t"}', 'N5', $1, 1, 5) RETURNING id`,
+          [topic],
+        )
+      ).rows[0].id as string;
+    const u1 = await mkUnit();
+    const u2 = await mkUnit();
+    await uq(
+      `INSERT INTO class_path_units (class_id, unit_id, position) VALUES ($1, $2, 1), ($1, $3, 2)`,
+      [cls, u1, u2],
+    );
+    // Hoán đổi vị trí trong một câu UPDATE không vi phạm UNIQUE (class_id, position).
+    await uq(`UPDATE class_path_units SET position = 3 - position WHERE class_id = $1`, [cls]);
+    const { rows } = await uq(
+      `SELECT unit_id, position FROM class_path_units WHERE class_id = $1 ORDER BY position`,
+      [cls],
+    );
+    expect(rows).toEqual([
+      { unit_id: u2, position: 1 },
+      { unit_id: u1, position: 2 },
+    ]);
+    // Trùng vị trí thật sự bị từ chối khi kết thúc câu lệnh.
+    expect(
+      await upgradeCode(`UPDATE class_path_units SET position = 1 WHERE class_id = $1`, [cls]),
+    ).toBe(UNIQUE);
+  });
+
+  it('bài giao: mỗi đơn vị một bài giao còn hiệu lực, giao lại được sau khi hủy', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const unit = (await uq(`SELECT id FROM learning_units LIMIT 1`)).rows[0].id as string;
+    const assign = (cancelled: boolean) =>
+      upgradeCode(
+        `INSERT INTO class_assignments (class_id, batch_id, unit_id, due_on, cancelled_at)
+         VALUES ($1, $2, $3, '2026-02-01', ${cancelled ? 'now()' : 'NULL'})`,
+        [cls, randomUUID(), unit],
+      );
+    expect(await assign(false)).toBeUndefined();
+    expect(await assign(false)).toBe(UNIQUE);
+    expect(await assign(true)).toBeUndefined();
+  });
+
+  it('xóa tài khoản: cascade dữ liệu thuộc chính người đó, đặt NULL các tham chiếu "ai làm"', async () => {
+    const org = await newOrg();
+    const cls = await newClass(org);
+    const teacher = await newUser();
+    const student = await newUser();
+    await uq(
+      `INSERT INTO organization_members (user_id, organization_id, is_teacher, joined_at) VALUES ($1, $2, true, now())`,
+      [teacher, org],
+    );
+    await uq(`INSERT INTO class_teachers (class_id, user_id) VALUES ($1, $2)`, [cls, teacher]);
+    await uq(`UPDATE classes SET created_by = $2 WHERE id = $1`, [cls, teacher]);
+    await uq(
+      `INSERT INTO class_memberships (class_id, user_id, organization_id, joined_at, consent_at)
+       VALUES ($1, $2, $3, now(), now())`,
+      [cls, student, org],
+    );
+    await uq(
+      `INSERT INTO join_code_attempts (user_id, failures, window_started_at) VALUES ($1, 2, now())`,
+      [student],
+    );
+
+    await uq(`DELETE FROM users WHERE id = $1`, [teacher]);
+    await uq(`DELETE FROM users WHERE id = $1`, [student]);
+
+    for (const [table, clause] of [
+      ['organization_members', `user_id = '${teacher}'`],
+      ['class_teachers', `user_id = '${teacher}'`],
+      ['class_memberships', `user_id = '${student}'`],
+      ['join_code_attempts', `user_id = '${student}'`],
+    ] as const) {
+      const { rows } = await uq(`SELECT count(*)::int AS n FROM ${table} WHERE ${clause}`);
+      expect(rows[0].n, table).toBe(0);
+    }
+    // Dữ liệu tổ chức không bị xóa theo người dùng; tham chiếu "ai làm" về NULL.
+    expect((await uq(`SELECT created_by FROM classes WHERE id = $1`, [cls])).rows).toEqual([
+      { created_by: null },
+    ]);
   });
 });

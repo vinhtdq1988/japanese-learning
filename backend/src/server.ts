@@ -4,6 +4,7 @@ import { loadConfig, loadDotEnv } from './config.js';
 import { createDb } from './db/client.js';
 import { systemClock } from './engine/clock.js';
 import { JobRunner } from './jobs/boss.js';
+import { createOrgLifecycleJob } from './jobs/org-lifecycle.js';
 import { createPurgeDeletedAccountsJob } from './jobs/purge-deleted-accounts.js';
 import { createSendEmailJob } from './jobs/send-email.js';
 import { SmtpEmailSender } from './services/email.js';
@@ -19,6 +20,7 @@ const emailSender = new SmtpEmailSender(config.SMTP_URL);
 await jobs.start([
   createSendEmailJob({ config, emailSender }),
   createPurgeDeletedAccountsJob({ db, clock: systemClock }),
+  createOrgLifecycleJob({ config, db, clock: systemClock }),
 ]);
 
 const app = await buildApp(

@@ -2,8 +2,14 @@ import type { FastifyInstance } from 'fastify';
 import { registerAccountRoutes } from './account.js';
 import { registerAdminRoutes } from './admin/index.js';
 import { registerAuthRoutes } from './auth.js';
+import { registerClassPathRoutes } from './class-path.js';
+import { registerClassReportRoutes } from './class-reports.js';
+import { registerClassRoutes } from './classes.js';
 import { registerDailyRoutes } from './daily.js';
+import { registerInvitationRoutes } from './invitations.js';
+import { registerMyClassRoutes } from './my-class.js';
 import { registerOnboardingRoutes } from './onboarding.js';
+import { registerOrgRoutes } from './org.js';
 import { registerPathRoutes } from './path.js';
 import { registerPlacementRoutes } from './placement.js';
 import { registerProgressRoutes } from './progress.js';
@@ -22,4 +28,10 @@ export async function registerApiRoutes(api: FastifyInstance): Promise<void> {
   registerSessionRoutes(api);
   registerProgressRoutes(api);
   registerAdminRoutes(api);
+  registerOrgRoutes(api);
+  registerInvitationRoutes(api);
+  registerClassRoutes(api);
+  registerClassPathRoutes(api);
+  registerClassReportRoutes(api);
+  registerMyClassRoutes(api);
 }

@@ -1,4 +1,4 @@
-// Chạy báo cáo chỉ số sản phẩm: `pnpm report:metrics [tên_truy_vấn…]` (T119; thêm chỉ số Kanji ở T084).
+// Chạy báo cáo chỉ số sản phẩm: `pnpm report:metrics [tên_truy_vấn…]` (T119; thêm chỉ số Kanji ở T084, chỉ số lớp học SC-010 ở T129).
 // Đọc `product-metrics.sql`, chạy từng khối `-- name:` trên CSDL của DATABASE_URL và in kết quả dạng bảng.
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';

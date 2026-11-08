@@ -1,6 +1,7 @@
 import type { FastifyInstance } from 'fastify';
 import { requireRole } from '../middleware/auth.js';
 import type { AdminGuard } from './guard.js';
+import { registerAdminOrganizationRoutes } from './organizations.js';
 import { registerAdminPlacementRoutes } from './placement.js';
 import { registerAdminUnitRoutes } from './units.js';
 import { registerAdminUserRoutes } from './users.js';
@@ -11,4 +12,5 @@ export function registerAdminRoutes(api: FastifyInstance): void {
   registerAdminUnitRoutes(api, guard);
   registerAdminPlacementRoutes(api, guard);
   registerAdminUserRoutes(api, guard);
+  registerAdminOrganizationRoutes(api, guard);
 }

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:japanese_api/japanese_api.dart';
 
+import '../../data/account_repository.dart';
 import '../../data/learning_repository.dart';
 import '../../data/onboarding_repository.dart';
 import '../../data/placement_repository.dart';
@@ -10,6 +11,7 @@ import '../../domain/onboarding_form.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../auth/auth_support.dart';
+import 'class_onboarding_screen.dart';
 import '../placement/placement_result_card.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
@@ -19,14 +21,31 @@ import 'onboarding_labels.dart';
 /// Trình hướng dẫn onboarding nhiều bước (T053, FR-005): trình độ → mục tiêu → thời gian mỗi ngày →
 /// mốc thời gian → kỹ năng → kiểm tra trình độ (tùy chọn). Tự lưu nháp sau mỗi bước để bỏ dở rồi tiếp
 /// tục được; người học bỏ qua kiểm tra vẫn nhận lộ trình (FR-008).
-class OnboardingScreen extends ConsumerStatefulWidget {
+///
+/// Học viên thuộc lớp (spec 004, US3, FR-021) nhận bản RÚT GỌN ([ClassOnboardingScreen]): chỉ tên, ngôn ngữ, múi
+/// giờ vì mục tiêu/trình độ/thời gian/kỹ năng do lớp quyết định.
+class OnboardingScreen extends ConsumerWidget {
   const OnboardingScreen({super.key});
 
   @override
-  ConsumerState<OnboardingScreen> createState() => _OnboardingScreenState();
+  Widget build(BuildContext context, WidgetRef ref) {
+    final me = ref.watch(meProvider);
+    if (me.isLoading) return const Scaffold(body: LoadingView());
+    final value = me.valueOrNull;
+    if (value?.classSummary != null) return ClassOnboardingScreen(me: value!);
+    return const _PersonalOnboardingScreen();
+  }
 }
 
-class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
+class _PersonalOnboardingScreen extends ConsumerStatefulWidget {
+  const _PersonalOnboardingScreen();
+
+  @override
+  ConsumerState<_PersonalOnboardingScreen> createState() =>
+      _OnboardingScreenState();
+}
+
+class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
   OnboardingForm _form = OnboardingForm.empty;
   PlacementResult? _carried;
 

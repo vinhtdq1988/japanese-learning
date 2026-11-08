@@ -72,6 +72,9 @@ export async function buildApp(
   app.decorate('deps', resolved);
   app.decorate('authenticate', createAuthenticate({ config, now: () => resolved.clock.now() }));
   app.decorateRequest('auth', null);
+  // Ngữ cảnh tổ chức/lớp do `createOrgGuards` điền (spec 004, research O2).
+  app.decorateRequest('orgCtx', null);
+  app.decorateRequest('classCtx', null);
 
   registerErrorHandlers(app);
   registerSecurityHeaders(app, { hsts: config.NODE_ENV === 'production' });

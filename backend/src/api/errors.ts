@@ -11,6 +11,47 @@ export interface ErrorBody {
   fields?: Record<string, string>;
 }
 
+/** Thông điệp chung cho mọi đối tượng ngoài phạm vi người gọi; khớp `setNotFoundHandler` (FR-007). */
+export const NOT_FOUND_MESSAGE = 'Không tìm thấy tài nguyên';
+
+/**
+ * Lỗi 404 dùng chung cho "không tồn tại" và "ngoài phạm vi tổ chức của người gọi": thân phản hồi PHẢI
+ * giống hệt nhau từng byte để không lộ sự tồn tại của đối tượng thuộc tổ chức khác (FR-007, SC-004).
+ */
+export function notFoundGeneric(): AppError {
+  return new AppError(404, 'NOT_FOUND', NOT_FOUND_MESSAGE);
+}
+
+/** Mã lỗi tổ chức/lớp học (spec 004) và mã HTTP của từng mã, khớp `Error.code` trong openapi.yaml 1.12.0. */
+export const ORG_ERROR_STATUS = {
+  CLASS_MANAGED: 409,
+  SEAT_UNAVAILABLE: 409,
+  SEAT_REASSIGN_LIMIT: 422,
+  SEAT_BELOW_USAGE: 422,
+  CLASS_NOT_READY: 409,
+  CLASS_FULL: 409,
+  CLASS_ARCHIVED: 409,
+  LAST_TEACHER: 409,
+  ALREADY_IN_CLASS: 409,
+  // Thông điệp chung, KHÔNG nêu tên tổ chức khác (FR-002).
+  INVITEE_UNAVAILABLE: 409,
+} as const satisfies Partial<Record<ErrorCode, number>>;
+
+export type OrgErrorCode = keyof typeof ORG_ERROR_STATUS;
+
+/** Tạo `AppError` cho mã lỗi tổ chức với mã HTTP đúng hợp đồng; `fields` dùng cho `CLASS_MANAGED`. */
+export function orgError(
+  code: OrgErrorCode,
+  message: string,
+  fields?: Record<string, string>,
+): AppError {
+  return new AppError(ORG_ERROR_STATUS[code], code, message, fields);
+}
+
+/** Thông điệp chung khi email/tài khoản thuộc tổ chức khác: KHÔNG nêu tên tổ chức (FR-002). */
+export const inviteeUnavailable = (): AppError =>
+  orgError('INVITEE_UNAVAILABLE', 'Email này không thể nhận lời mời vào tổ chức');
+
 /** Chuyển lỗi Zod thành lỗi 422 `VALIDATION_FAILED` với thông báo cụ thể theo trường. */
 export function zodToAppError(err: ZodError): AppError {
   const fields: Record<string, string> = {};
@@ -69,10 +110,11 @@ export function registerErrorHandlers(app: FastifyInstance): void {
   app.setErrorHandler((err: unknown, request: FastifyRequest, reply: FastifyReply) => {
     const { status, body } = toErrorResponse(err);
     if (status >= 500) request.log.error({ err }, 'Lỗi không xử lý được');
+    if (err instanceof AppError && err.headers) void reply.headers(err.headers);
     return reply.status(status).send(body);
   });
 
   app.setNotFoundHandler((_request, reply) =>
-    reply.status(404).send({ code: 'NOT_FOUND', message: 'Không tìm thấy tài nguyên' }),
+    reply.status(404).send({ code: 'NOT_FOUND', message: NOT_FOUND_MESSAGE }),
   );
 }

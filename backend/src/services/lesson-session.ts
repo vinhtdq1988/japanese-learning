@@ -1,6 +1,6 @@
 import { sql } from 'drizzle-orm';
 import type { DbExecutor } from '../db/client.js';
-import { getActivePath } from '../db/repositories/paths.js';
+import { findActiveMembershipByUser } from '../db/repositories/class-memberships.js';
 import { findPlan, reviewPairsOf, type DailyPlanItemRow } from '../db/repositories/plans.js';
 import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
 import {
@@ -63,7 +63,8 @@ import {
 import { upcomingUnits } from '../engine/path.js';
 import { accuracyOf, dueDateAfter, nextSrsState, RECENT_ACCURACY_WINDOW } from '../engine/srs.js';
 import type { ServiceDeps } from './deps.js';
-import { notOnboarded, paramsOfPath, rankForUser } from './path.js';
+import { rankForContext, resolveLearningContext } from './learning-context.js';
+import { notOnboarded } from './path.js';
 
 // Dịch vụ phiên học (T061–T064, R10, R12, FR-018, FR-020, FR-025, FR-041).
 // - Bắt đầu phiên chụp snapshot nội dung đã bản địa hóa; tiếp tục phiên dở dang trả lại đúng snapshot đó.
@@ -105,8 +106,11 @@ export function secondsToMinutes(seconds: number): number {
 
 async function requireProfile(deps: Pick<ServiceDeps, 'db'>, userId: string): Promise<ProfileRow> {
   const profile = await getProfile(deps.db, userId);
-  if (!profile || profile.onboardingState !== 'completed') throw notOnboarded();
-  return profile;
+  if (!profile) throw notOnboarded();
+  if (profile.onboardingState === 'completed') return profile;
+  // Học viên thuộc lớp coi như đã onboarding (spec 004, US3): múi giờ/ngôn ngữ vẫn lấy từ hồ sơ cá nhân.
+  if (await findActiveMembershipByUser(deps.db, userId)) return profile;
+  throw notOnboarded();
 }
 
 async function requireSession(
@@ -250,12 +254,13 @@ async function startExtraSession(
   profile: ProfileRow,
   unitId: string,
 ): Promise<LessonSessionDto> {
-  const path = await getActivePath(deps.db, userId);
-  if (!path) throw notOnboarded();
-  if (profile.paused) throw new AppError(409, 'PATH_PAUSED', 'Lộ trình đang tạm dừng');
+  // Nguồn học (cá nhân hay lớp) quyết định tạm dừng và tập "bài sắp tới" (spec 004, O6).
+  const ctx = await resolveLearningContext(deps, userId);
+  if (!ctx) throw notOnboarded();
+  if (ctx.profile.paused) throw new AppError(409, 'PATH_PAUSED', 'Lộ trình đang tạm dừng');
 
   // Chỉ nhận đơn vị thật sự là bài sắp tới của người học (không cho mở đơn vị tùy ý).
-  const ranked = await rankForUser(deps, userId, profile, paramsOfPath(path));
+  const ranked = await rankForContext(deps, userId, ctx);
   if (!upcomingUnits(ranked).some((u) => u.id === unitId)) {
     throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy mục kế hoạch hoặc đơn vị học này');
   }

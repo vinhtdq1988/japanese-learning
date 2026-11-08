@@ -1,6 +1,7 @@
-import { desc, eq, sql } from 'drizzle-orm';
+import { and, desc, eq, sql, type SQL } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
 import { adminActionLogs } from '../schema.js';
+import type { OrgLogAction, OrgLogTargetType } from '../../domain/org-types.js';
 
 // Repository nhật ký hành động quản trị (FR-032, data-model §2.18).
 
@@ -14,11 +15,31 @@ export interface NewAdminActionLog {
   targetId: string | null;
   /** Thay đổi trước/sau, ĐÃ loại thông tin nhạy cảm (mật khẩu, token, email). */
   diff: Record<string, unknown> | null;
+  /** Tổ chức liên quan (spec 004, FR-008); vắng mặt cho hành động quản trị nội dung/người dùng. */
+  organizationId?: string | null;
 }
 
 /** Ghi một dòng nhật ký; gọi trong cùng giao dịch với thay đổi được ghi lại. */
 export async function insertAdminLog(db: DbExecutor, entry: NewAdminActionLog): Promise<void> {
   await db.insert(adminActionLogs).values(entry);
+}
+
+export interface NewOrgActionLog {
+  actorId: string | null;
+  organizationId: string;
+  action: OrgLogAction;
+  targetType: OrgLogTargetType;
+  targetId: string | null;
+  /** Thay đổi trước/sau, ĐÃ loại thông tin nhạy cảm (mật khẩu, token; email chỉ khi thật cần). */
+  diff: Record<string, unknown> | null;
+}
+
+/**
+ * Ghi nhật ký một hành động của quản trị viên/chủ tổ chức/giáo viên trên tổ chức, lớp hay seat
+ * (FR-008, data-model §4). Gọi trong cùng giao dịch với thay đổi được ghi lại.
+ */
+export async function logOrgAction(db: DbExecutor, entry: NewOrgActionLog): Promise<void> {
+  await insertAdminLog(db, entry);
 }
 
 export async function adminLogExists(db: DbExecutor, id: string): Promise<boolean> {
@@ -36,16 +57,22 @@ export async function adminLogExists(db: DbExecutor, id: string): Promise<boolea
  */
 export async function listAdminLogs(
   db: DbExecutor,
-  options: { afterId?: string; limit: number },
+  options: { afterId?: string; limit: number; organizationId?: string },
 ): Promise<AdminActionLogRow[]> {
-  const query = db.select().from(adminActionLogs);
-  const filtered = options.afterId
-    ? query.where(
-        sql`(${adminActionLogs.occurredAt}, ${adminActionLogs.id}) < (
+  const conditions: SQL[] = [];
+  if (options.organizationId) {
+    conditions.push(eq(adminActionLogs.organizationId, options.organizationId));
+  }
+  if (options.afterId) {
+    conditions.push(
+      sql`(${adminActionLogs.occurredAt}, ${adminActionLogs.id}) < (
           SELECT occurred_at, id FROM admin_action_logs WHERE id = ${options.afterId})`,
-      )
-    : query;
-  return filtered
+    );
+  }
+  return db
+    .select()
+    .from(adminActionLogs)
+    .where(conditions.length > 0 ? and(...conditions) : undefined)
     .orderBy(desc(adminActionLogs.occurredAt), desc(adminActionLogs.id))
     .limit(options.limit);
 }

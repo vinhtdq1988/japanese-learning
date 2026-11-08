@@ -76,6 +76,37 @@ viễn sau 30 ngày) **không thay thế** các yêu cầu hạ tầng sau; ngư
    một lớp proxy/CDN phía trước, cấu hình lại để IP thật của người dùng vẫn đến được `api`.
 7. **Sao lưu và khôi phục**: kiểm tra định kỳ việc khôi phục từ bản sao lưu; job `purge-deleted-accounts` (03:17 UTC
    hằng ngày) chạy trong tiến trình `api`, cần giữ `api` luôn chạy.
+8. **Vòng đời giấy phép tổ chức** (spec 004): hết hạn/ân hạn/vô hiệu hóa được xử lý ngay khi có người truy cập (xử
+   lý lười trong `loadOrgContext`) và bởi job `org-lifecycle` (phút 07 mỗi giờ, cũng chạy trong tiến trình `api`) để
+   dọn seat, thành viên lớp và lời mời của tổ chức không ai dùng. **Gia hạn nên bằng cách kéo dài `ends_on`** của
+   giấy phép hiện có (`PATCH /admin/organizations/{orgId}/licenses/{licenseId}`): giữ nguyên người giữ seat. Giấy phép
+   liền kề mới không tự chuyển seat từ giấy phép cũ; chỉ giáo viên chưa có seat mới được cấp lại theo thứ tự vào
+   tổ chức khi giấy phép mới đã hiệu lực lúc tạo.
+
+### Cấu hình tổ chức, lớp học và seat (spec 004)
+
+Các biến môi trường sau có mặc định hợp lý (xem `.env.example`, research O16); chỉ đặt khi cần hiệu chỉnh:
+
+| Biến                                                 | Mặc định           | Ý nghĩa                                                                          |
+| ---------------------------------------------------- | ------------------ | -------------------------------------------------------------------------------- |
+| `INVITATION_TTL_DAYS`                                | 14                 | Số ngày lời mời còn hiệu lực                                                     |
+| `SEAT_GRACE_DAYS`                                    | 7                  | Ân hạn mặc định sau khi hết hạn giấy phép (0–60; chỉnh được theo từng giấy phép) |
+| `SEAT_MAX_REASSIGNMENTS`                             | 2                  | Số lần đổi người giữ tối đa của mỗi seat (mặc định cho giấy phép mới)            |
+| `SEAT_EXPIRY_WARNING_DAYS`                           | 14                 | Cảnh báo "sắp hết hạn" khi còn ≤ số ngày này                                     |
+| `CLASS_MAX_MEMBERS`                                  | 100                | Số thành viên đang hoạt động tối đa của một lớp                                  |
+| `CSV_IMPORT_MAX_ROWS` / `CSV_IMPORT_MAX_BYTES`       | 200 / 262144       | Giới hạn file CSV nhập học viên                                                  |
+| `JOIN_CODE_MAX_FAILURES` / `JOIN_CODE_LOCK_MINUTES`  | 5 / 15             | Chống dò mã tham gia (theo tài khoản)                                            |
+| `CLASS_ABSENCE_DEFAULT_DAYS`                         | 3                  | Ngưỡng vắng mặc định của lớp mới (1–14)                                          |
+| `CLASS_PROGRESS_MARGIN_PCT`                          | 10                 | Biên (%) chậm/vượt tiến độ so với mốc                                            |
+| `CLASS_WEAK_ACCURACY_PCT` / `CLASS_WEAK_MIN_ANSWERS` | 60 / 30            | Ngưỡng điểm yếu chung của lớp                                                    |
+| `ORG_TIMEZONE`                                       | `Asia/Ho_Chi_Minh` | Múi giờ tính ngày giấy phép (ngày học vẫn theo múi giờ từng học viên)            |
+
+Migration `0004_org_classes.sql` cần extension PostgreSQL `btree_gist` (đi kèm bản phân phối chuẩn, "trusted" từ PG 13).
+
+**Ghi chú phát hành (OpenAPI 1.12.0)**: backend và client web PHẢI được phát hành cùng lúc — client 1.11.0 không hiển
+thị khóa điều khiển cho học viên thuộc lớp (máy chủ vẫn từ chối bằng `409 CLASS_MANAGED`). Chuyển lớp chỉ là **lời mời**
+(`POST /classes/{id}/members/{userId}/move` → 202); học viên phải đồng ý lại thì mới chuyển. Chỉ số lớp thử nghiệm SC-010
+chạy bằng `pnpm report:metrics sc010_class_week4_active_days` (xem `src/reports/README.md`).
 
 ## Cấu trúc
 

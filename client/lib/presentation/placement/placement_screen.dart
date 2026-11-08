@@ -22,19 +22,31 @@ import 'placement_result_card.dart';
 enum PlacementOrigin {
   onboarding,
   retake,
-  trial;
+  trial,
 
-  static PlacementOrigin fromQuery(String? value) => value == 'onboarding'
-      ? PlacementOrigin.onboarding
-      : PlacementOrigin.retake;
+  /// Bài kiểm tra do LỚP yêu cầu (US8): nộp kèm `classRequestId`, không đổi kết quả/lộ trình cá nhân.
+  classRequest;
+
+  static PlacementOrigin fromQuery(String? value) => switch (value) {
+    'onboarding' => PlacementOrigin.onboarding,
+    'class' => PlacementOrigin.classRequest,
+    _ => PlacementOrigin.retake,
+  };
 }
 
 /// Bài kiểm tra trình độ (T054, FR-007, FR-009): 20 câu, đồng hồ 10 phút, bỏ qua bất cứ lúc nào. Server
 /// chấm và lưu kết quả; khi làm lại người học chọn xây dựng lại hay giữ lộ trình (US1.6).
 class PlacementScreen extends ConsumerStatefulWidget {
-  const PlacementScreen({super.key, this.origin = PlacementOrigin.retake});
+  const PlacementScreen({
+    super.key,
+    this.origin = PlacementOrigin.retake,
+    this.classRequestId,
+  });
 
   final PlacementOrigin origin;
+
+  /// Chỉ với [PlacementOrigin.classRequest]: id yêu cầu kiểm tra của lớp.
+  final String? classRequestId;
 
   @override
   ConsumerState<PlacementScreen> createState() => _PlacementScreenState();
@@ -152,7 +164,13 @@ class _PlacementScreenState extends ConsumerState<PlacementScreen> {
       } else {
         result = await ref
             .read(placementRepositoryProvider)
-            .submit(choices: choices, durationSeconds: duration);
+            .submit(
+              choices: choices,
+              durationSeconds: duration,
+              classRequestId: widget.origin == PlacementOrigin.classRequest
+                  ? widget.classRequestId
+                  : null,
+            );
       }
       if (mounted) setState(() => _result = result);
     } catch (e) {
@@ -168,6 +186,7 @@ class _PlacementScreenState extends ConsumerState<PlacementScreen> {
       PlacementOrigin.onboarding => AppRoutes.onboarding,
       PlacementOrigin.retake => AppRoutes.path,
       PlacementOrigin.trial => AppRoutes.trial,
+      PlacementOrigin.classRequest => AppRoutes.myClass,
     });
   }
 
@@ -230,7 +249,9 @@ class _PlacementScreenState extends ConsumerState<PlacementScreen> {
     }
     return PageFrame(
       title: l10n.placementTitle,
-      showNavigation: widget.origin == PlacementOrigin.retake,
+      showNavigation:
+          widget.origin == PlacementOrigin.retake ||
+          widget.origin == PlacementOrigin.classRequest,
       child: body,
     );
   }
@@ -404,6 +425,17 @@ class _PlacementScreenState extends ConsumerState<PlacementScreen> {
                   child: Text(l10n.trialPlacementBack),
                 ),
               ],
+            ),
+          ] else if (widget.origin == PlacementOrigin.classRequest) ...<Widget>[
+            Text(
+              l10n.placementClassResultNote,
+              key: const Key('placement-class-note'),
+            ),
+            const SizedBox(height: 16),
+            FilledButton(
+              key: const Key('placement-class-back'),
+              onPressed: _exit,
+              child: Text(l10n.placementClassBack),
             ),
           ] else if (onboarding)
             FilledButton(

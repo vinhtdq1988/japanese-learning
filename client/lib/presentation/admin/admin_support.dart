@@ -14,6 +14,7 @@ enum AdminSection {
   units(AppRoutes.adminUnits),
   placement(AppRoutes.adminPlacement),
   users(AppRoutes.adminUsers),
+  orgs(AppRoutes.adminOrganizations),
   logs(AppRoutes.adminLogs);
 
   const AdminSection(this.route);
@@ -24,11 +25,12 @@ enum AdminSection {
     AdminSection.units => l10n.adminNavUnits,
     AdminSection.placement => l10n.adminNavPlacement,
     AdminSection.users => l10n.adminNavUsers,
+    AdminSection.orgs => l10n.adminNavOrgs,
     AdminSection.logs => l10n.adminNavLogs,
   };
 }
 
-/// Khung các màn hình quản trị: thanh điều hướng giữa bốn mục rồi tới nội dung. Việc ẩn UI theo vai trò chỉ
+/// Khung các màn hình quản trị: thanh điều hướng giữa các mục rồi tới nội dung. Việc ẩn UI theo vai trò chỉ
 /// là tiện lợi – quyền thật được server kiểm tra ở mọi `/admin/*` (FR-004).
 class AdminFrame extends StatelessWidget {
   const AdminFrame({
@@ -52,8 +54,10 @@ class AdminFrame extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          // Chip gọn để năm mục vẫn nằm trên một hàng: thêm mục điều hướng không được làm đổi chiều cao khung
+          // nội dung. KHÔNG dùng khung cuộn ngang (các màn hình con cuộn nội dung theo `Scrollable` đầu tiên).
           Wrap(
-            spacing: 8,
+            spacing: 6,
             runSpacing: 8,
             children: <Widget>[
               for (final s in AdminSection.values)
@@ -61,6 +65,8 @@ class AdminFrame extends StatelessWidget {
                   key: Key('admin-nav-${s.name}'),
                   label: Text(s.label(l10n)),
                   selected: s == section,
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   onSelected: (_) => context.go(s.route),
                 ),
             ],

@@ -1,0 +1,1615 @@
+{
+  "$comment": "Ma trận phân quyền vai trò × route (spec 004, contracts/permissions-matrix.md §2, SC-004). Mỗi route đăng ký dưới /admin/organizations, /org, /classes, /invitations, /me/class PHẢI có một dòng trong 'routes' (kiểm thử org-authz-matrix.test.ts thất bại nếu thiếu). Các dòng được thêm cùng từng câu chuyện (US1: tổ chức/seat; US2–US3: lớp, lời mời, lộ trình; US4+: dữ liệu học viên). Trường: id (duy nhất), method, path (kiểu OpenAPI {id}), params (tên tham số → khóa trong 'thế giới' của org-helpers.ts: orgA, orgB, classC, classD, classE, membershipL, licenseA, invitationA, user<ROLE> hoặc missing), body (đối tượng JSON, hoặc chuỗi cho text/csv), contentType, mutating (true = dựng lại thế giới cho từng vai trò vì thao tác đổi trạng thái), expect (vai trò → '2xx' hoặc mã chính xác như '403'), note.",
+  "roles": ["ANON", "USR", "LRN", "TCH", "TCH0", "TCHx", "OWN", "ADM", "OWNb", "TCHb"],
+  "prefixes": ["/admin/organizations", "/org", "/classes", "/invitations", "/me/class"],
+  "routes": [
+    {
+      "id": "us1-admin-list",
+      "method": "GET",
+      "path": "/admin/organizations",
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      },
+      "note": "permissions-matrix §2 dòng 1"
+    },
+    {
+      "id": "us1-admin-create",
+      "method": "POST",
+      "path": "/admin/organizations",
+      "body": {
+        "name": "Tổ chức mới",
+        "ownerEmail": "new-owner@example.com"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-get",
+      "method": "GET",
+      "path": "/admin/organizations/{orgId}",
+      "params": {
+        "orgId": "orgA"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-patch",
+      "method": "PATCH",
+      "path": "/admin/organizations/{orgId}",
+      "params": {
+        "orgId": "orgA"
+      },
+      "body": {
+        "name": "Tên mới"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-owner-invite",
+      "method": "POST",
+      "path": "/admin/organizations/{orgId}/owners/invitations",
+      "params": {
+        "orgId": "orgA"
+      },
+      "body": {
+        "email": "owner2@example.com"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-license-create",
+      "method": "POST",
+      "path": "/admin/organizations/{orgId}/licenses",
+      "params": {
+        "orgId": "orgA"
+      },
+      "body": {
+        "seats": 3,
+        "startsOn": "2027-01-01",
+        "endsOn": "2027-12-31"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      },
+      "note": "kỳ hạn không chồng giấy phép 2026 của thế giới thử nghiệm"
+    },
+    {
+      "id": "us1-admin-license-patch",
+      "method": "PATCH",
+      "path": "/admin/organizations/{orgId}/licenses/{licenseId}",
+      "params": {
+        "orgId": "orgA",
+        "licenseId": "licenseA"
+      },
+      "body": {
+        "graceDays": 10
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-license-revoke",
+      "method": "POST",
+      "path": "/admin/organizations/{orgId}/licenses/{licenseId}/revoke",
+      "params": {
+        "orgId": "orgA",
+        "licenseId": "licenseA"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-admin-seat-revoke",
+      "method": "DELETE",
+      "path": "/admin/organizations/{orgId}/seats/{userId}",
+      "params": {
+        "orgId": "orgA",
+        "userId": "userTCH"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "403",
+        "ADM": "2xx",
+        "OWNb": "403",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-org-get",
+      "method": "GET",
+      "path": "/org",
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "2xx",
+        "TCHb": "403"
+      },
+      "note": "permissions-matrix §2 dòng 2: OWNb chỉ thấy tổ chức mình"
+    },
+    {
+      "id": "us1-org-teacher-invite",
+      "method": "POST",
+      "path": "/org/teachers/invitations",
+      "body": {
+        "email": "teacher-new@example.com"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "2xx",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-org-teacher-remove",
+      "method": "DELETE",
+      "path": "/org/teachers/{userId}",
+      "params": {
+        "userId": "userTCHx"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "403"
+      },
+      "note": "OWNb: giáo viên của tổ chức A là đối tượng ngoài phạm vi"
+    },
+    {
+      "id": "us1-org-seat-grant",
+      "method": "POST",
+      "path": "/org/seats/{userId}/grant",
+      "params": {
+        "userId": "userTCH0"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "403"
+      },
+      "note": "cấp lại seat cho giáo viên mất seat"
+    },
+    {
+      "id": "us1-org-seat-revoke",
+      "method": "POST",
+      "path": "/org/seats/{userId}/revoke",
+      "params": {
+        "userId": "userTCH"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "403"
+      }
+    },
+    {
+      "id": "us1-invitation-get",
+      "method": "GET",
+      "path": "/invitations/{token}",
+      "params": {
+        "token": "missing"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "404",
+        "LRN": "404",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "404",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "§2 dòng 11: 2xx chỉ khi email khớp (kiểm ở org-us1.test.ts); token không tồn tại → 404 chung"
+    },
+    {
+      "id": "us1-invitation-respond",
+      "method": "POST",
+      "path": "/invitations/{token}/respond",
+      "params": {
+        "token": "missing"
+      },
+      "body": {
+        "decision": "accept"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "404",
+        "LRN": "404",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "404",
+        "OWNb": "404",
+        "TCHb": "404"
+      }
+    },
+    {
+      "id": "us1-invitation-revoke",
+      "method": "DELETE",
+      "path": "/invitations/{token}",
+      "params": {
+        "token": "invitationA"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "tham số mang id (uuid) của lời mời; giáo viên chỉ thu hồi lời mời học viên của lớp mình (US2)"
+    },
+    {
+      "id": "us2-class-list",
+      "method": "GET",
+      "path": "/classes",
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "permissions-matrix §2 dòng 3: giáo viên chỉ thấy lớp mình, chủ tổ chức thấy mọi lớp của tổ chức mình"
+    },
+    {
+      "id": "us2-class-create",
+      "method": "POST",
+      "path": "/classes",
+      "body": {
+        "name": "Lớp mới"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "dòng 4; chủ tổ chức không chọn giáo viên ⇒ lớp tạm chưa có giáo viên"
+    },
+    {
+      "id": "us2-class-get",
+      "method": "GET",
+      "path": "/classes/{id}",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 5"
+    },
+    {
+      "id": "us2-class-roster",
+      "method": "GET",
+      "path": "/classes/{id}/roster",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 5"
+    },
+    {
+      "id": "us2-class-joincode-get",
+      "method": "GET",
+      "path": "/classes/{id}/join-code",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 5: mã chỉ hiện cho người quản lý lớp"
+    },
+    {
+      "id": "us2-class-patch",
+      "method": "PATCH",
+      "path": "/classes/{id}",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "name": "Tên mới"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6"
+    },
+    {
+      "id": "us2-class-archive",
+      "method": "POST",
+      "path": "/classes/{id}/archive",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "confirm": true
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6"
+    },
+    {
+      "id": "us2-class-invite",
+      "method": "POST",
+      "path": "/classes/{id}/invitations",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "invitees": [
+          {
+            "email": "matrix-invite@example.com"
+          }
+        ]
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: mời mới cần seat trống của tổ chức, không cần seat của chính người mời (TCH0)"
+    },
+    {
+      "id": "us2-class-import",
+      "method": "POST",
+      "path": "/classes/{id}/invitations/import",
+      "params": {
+        "id": "classC"
+      },
+      "body": "email\r\nmatrix-csv@example.com\r\n",
+      "contentType": "text/csv; charset=utf-8",
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6"
+    },
+    {
+      "id": "us2-class-joincode-put",
+      "method": "PUT",
+      "path": "/classes/{id}/join-code",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "enabled": true
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6"
+    },
+    {
+      "id": "us2-class-joincode-rotate",
+      "method": "POST",
+      "path": "/classes/{id}/join-code/rotate",
+      "params": {
+        "id": "classC"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6"
+    },
+    {
+      "id": "us2-class-member-remove",
+      "method": "DELETE",
+      "path": "/classes/{id}/members/{userId}",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: gỡ học viên"
+    },
+    {
+      "id": "us2-class-teachers",
+      "method": "PUT",
+      "path": "/classes/{id}/teachers",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "userIds": ["$userTCH"]
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "403",
+        "TCH0": "403",
+        "TCHx": "403",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "403"
+      },
+      "note": "dòng 7: chỉ chủ tổ chức; OWNb qua guard chủ tổ chức nhưng lớp thuộc tổ chức khác ⇒ 404 chung"
+    },
+    {
+      "id": "us2-me-join",
+      "method": "POST",
+      "path": "/me/class/join",
+      "body": {
+        "code": "$joinCodeC",
+        "decision": "join_class",
+        "confirmed": true
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "409",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "409",
+        "TCHb": "409"
+      },
+      "note": "dòng 9–10: LRN ALREADY_IN_CLASS; TCH/TCH0 INVITEE_UNAVAILABLE (phụ trách lớp C); TCHx vào lớp khác C dùng lại seat đang giữ; OWNb/TCHb INVITEE_UNAVAILABLE (mã của tổ chức khác)"
+    },
+    {
+      "id": "us2-me-class-get",
+      "method": "GET",
+      "path": "/me/class",
+      "expect": {
+        "ANON": "401",
+        "USR": "404",
+        "LRN": "2xx",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "404",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 10"
+    },
+    {
+      "id": "us2-me-class-leave",
+      "method": "POST",
+      "path": "/me/class/leave",
+      "body": {
+        "confirm": true
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "404",
+        "LRN": "2xx",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "404",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 10"
+    },
+    {
+      "id": "us2-archived-patch",
+      "method": "PATCH",
+      "path": "/classes/{id}",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý",
+      "body": {
+        "name": "X"
+      }
+    },
+    {
+      "id": "us2-archived-invite",
+      "method": "POST",
+      "path": "/classes/{id}/invitations",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý",
+      "body": {
+        "invitees": [
+          {
+            "email": "matrix-archived@example.com"
+          }
+        ]
+      }
+    },
+    {
+      "id": "us2-archived-import",
+      "method": "POST",
+      "path": "/classes/{id}/invitations/import",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý",
+      "body": "email\r\nmatrix-archived@example.com\r\n",
+      "contentType": "text/csv; charset=utf-8"
+    },
+    {
+      "id": "us2-archived-joincode-put",
+      "method": "PUT",
+      "path": "/classes/{id}/join-code",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý",
+      "body": {
+        "enabled": true
+      }
+    },
+    {
+      "id": "us2-archived-joincode-rotate",
+      "method": "POST",
+      "path": "/classes/{id}/join-code/rotate",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý"
+    },
+    {
+      "id": "us2-archived-archive",
+      "method": "POST",
+      "path": "/classes/{id}/archive",
+      "params": {
+        "id": "classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ': 409 CLASS_ARCHIVED cho người quản lý",
+      "body": {
+        "confirm": true
+      }
+    },
+    {
+      "id": "us2-archived-member-remove",
+      "method": "DELETE",
+      "path": "/classes/{id}/members/{userId}",
+      "params": {
+        "id": "classArchived",
+        "userId": "userLRN"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "lớp lưu trữ: không gỡ được thành viên"
+    },
+    {
+      "id": "us3-class-path-get",
+      "method": "GET",
+      "path": "/classes/{id}/path",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "permissions-matrix §2 dòng 5: lộ trình lớp (cấu trúc)"
+    },
+    {
+      "id": "us3-class-path-put",
+      "method": "PUT",
+      "path": "/classes/{id}/path",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "startLevel": "N5",
+        "targetLevel": "N4",
+        "skills": ["vocabulary", "grammar"],
+        "startsOn": "2026-01-05",
+        "endsOn": "2026-06-30",
+        "dailyMinutes": 10
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: ghi cấu trúc lớp"
+    },
+    {
+      "id": "us3-archived-path-put",
+      "method": "PUT",
+      "path": "/classes/{id}/path",
+      "params": {
+        "id": "classArchived"
+      },
+      "body": {
+        "startLevel": "N5",
+        "targetLevel": "N4",
+        "skills": ["vocabulary", "grammar"],
+        "startsOn": "2026-01-05",
+        "endsOn": "2026-06-30",
+        "dailyMinutes": 10
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 'mọi route lớp khi C lưu trữ'"
+    },
+    {
+      "id": "us4-class-dashboard",
+      "method": "GET",
+      "path": "/classes/{id}/dashboard",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "permissions-matrix §2 dòng 8: dữ liệu học viên; TCH0 mất seat ⇒ 403 (FR-038), ADM không xem được (FR-002)"
+    },
+    {
+      "id": "us4-learner-detail",
+      "method": "GET",
+      "path": "/classes/{id}/members/{userId}/detail",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 8: chi tiết học viên đang là thành viên hiện tại của lớp"
+    },
+    {
+      "id": "us4-learner-detail-not-member",
+      "method": "GET",
+      "path": "/classes/{id}/members/{userId}/detail",
+      "params": {
+        "id": "classC",
+        "userId": "userUSR"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 9: người không phải thành viên lớp ⇒ 404 chung, trùng từng byte với id không tồn tại"
+    },
+    {
+      "id": "us7-weak-topics",
+      "method": "GET",
+      "path": "/classes/{id}/weak-topics",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "permissions-matrix §2 dòng 8: dữ liệu học viên tổng hợp; TCH0 mất seat ⇒ 403, ADM ⇒ 403 (FR-002)"
+    },
+    {
+      "id": "us7-class-export",
+      "method": "GET",
+      "path": "/classes/{id}/export.csv",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 8: xuất CSV cả lớp (ghi nhật ký class.export)"
+    },
+    {
+      "id": "us7-learner-export",
+      "method": "GET",
+      "path": "/classes/{id}/members/{userId}/export.csv",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 8: xuất CSV chi tiết một học viên đang là thành viên"
+    },
+    {
+      "id": "us7-learner-export-not-member",
+      "method": "GET",
+      "path": "/classes/{id}/members/{userId}/export.csv",
+      "params": {
+        "id": "classC",
+        "userId": "userUSR"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 9: người không phải thành viên ⇒ 404 chung"
+    },
+    {
+      "id": "us8-placement-create",
+      "method": "POST",
+      "path": "/classes/{id}/placement-requests",
+      "params": {
+        "id": "classC"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "permissions-matrix §2 dòng 8: yêu cầu kiểm tra trình độ cả lớp (dữ liệu học viên)"
+    },
+    {
+      "id": "us8-placement-current",
+      "method": "GET",
+      "path": "/classes/{id}/placement-requests/current",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 8: thế giới chưa có yêu cầu mở ⇒ người có quyền nhận 404 chung"
+    },
+    {
+      "id": "us8-placement-close",
+      "method": "POST",
+      "path": "/classes/{id}/placement-requests/current/close",
+      "params": {
+        "id": "classC"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 8: thế giới chưa có yêu cầu mở ⇒ người có quyền nhận 404 chung"
+    },
+    {
+      "id": "us8-move-owner-only",
+      "method": "POST",
+      "path": "/classes/{id}/members/{userId}/move",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "body": {
+        "toClassId": "$classD"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "permissions-matrix §2 dòng 6/move*: MỜI chuyển lớp (202); chỉ chủ tổ chức có quyền ở cả C và D; giáo viên thiếu quyền lớp đích ⇒ 404 chung"
+    },
+    {
+      "id": "us8-move-target-archived",
+      "method": "POST",
+      "path": "/classes/{id}/members/{userId}/move",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "body": {
+        "toClassId": "$classArchived"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "409",
+        "TCH0": "409",
+        "TCHx": "404",
+        "OWN": "409",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6/move*: giáo viên phụ trách cả hai lớp nhưng lớp đích đã lưu trữ ⇒ 409 CLASS_ARCHIVED"
+    },
+    {
+      "id": "us5-path-units-put",
+      "method": "PUT",
+      "path": "/classes/{id}/path/units",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "units": []
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: ghi cấu trúc lớp C (chọn bài, thứ tự, ngày mở); giáo viên mất seat vẫn sửa được cấu trúc (FR-038)"
+    },
+    {
+      "id": "us5-assignments-post",
+      "method": "POST",
+      "path": "/classes/{id}/assignments",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "unitIds": ["00000000-0000-4000-8000-000000000001"],
+        "dueOn": "2099-01-01"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "422",
+        "TCH0": "422",
+        "TCHx": "404",
+        "OWN": "422",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: ghi cấu trúc lớp C; vai trò hợp lệ qua cửa phân quyền rồi gặp 422 vì đơn vị không tồn tại (ma trận chỉ khẳng định phân quyền)"
+    },
+    {
+      "id": "us5-assignments-delete",
+      "method": "DELETE",
+      "path": "/classes/{id}/assignments/{assignmentId}",
+      "params": {
+        "id": "classC",
+        "assignmentId": "missing"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 6: bài giao không tồn tại ⇒ 404 chung (trùng từng byte với lớp ngoài phạm vi)"
+    },
+    {
+      "id": "us5-learner-override-put",
+      "method": "PUT",
+      "path": "/classes/{id}/members/{userId}/override",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN"
+      },
+      "body": {
+        "dailyMinutes": 10,
+        "shiftDays": 0
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: điều chỉnh riêng một học viên cần quyền dữ liệu (TCH0 mất seat ⇒ 403)"
+    },
+    {
+      "id": "us5-learner-exemption-put",
+      "method": "PUT",
+      "path": "/classes/{id}/members/{userId}/exemptions/{unitId}",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN",
+        "unitId": "missing"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "422",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "422",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: miễn bài; vai trò hợp lệ gặp 422 vì đơn vị không tồn tại"
+    },
+    {
+      "id": "us5-learner-exemption-delete",
+      "method": "DELETE",
+      "path": "/classes/{id}/members/{userId}/exemptions/{unitId}",
+      "params": {
+        "id": "classC",
+        "userId": "userLRN",
+        "unitId": "missing"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: bỏ miễn là thao tác lũy đẳng (204 kể cả khi chưa miễn)"
+    },
+    {
+      "id": "us5-pauses-get",
+      "method": "GET",
+      "path": "/classes/{id}/pauses",
+      "params": {
+        "id": "classC"
+      },
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: danh sách khoảng tạm dừng có tên học viên ⇒ cần quyền dữ liệu"
+    },
+    {
+      "id": "us5-pauses-post",
+      "method": "POST",
+      "path": "/classes/{id}/pauses",
+      "params": {
+        "id": "classC"
+      },
+      "body": {
+        "startedOn": "2026-01-20"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "2xx",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "2xx",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: tạm dừng cả lớp/một học viên cần quyền dữ liệu"
+    },
+    {
+      "id": "us5-pauses-end",
+      "method": "POST",
+      "path": "/classes/{id}/pauses/{pauseId}/end",
+      "params": {
+        "id": "classC",
+        "pauseId": "missing"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "403",
+        "LRN": "403",
+        "TCH": "404",
+        "TCH0": "403",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "403",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "dòng 7: khoảng tạm dừng không tồn tại ⇒ 404 chung"
+    }
+  ],
+  "lockedOperations": [
+    {
+      "id": "us3-locked-patch-minutes",
+      "method": "PATCH",
+      "path": "/me",
+      "body": {
+        "dailyMinutes": 15
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "409",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "PATCH /me trường lộ trình: LRN 409 CLASS_MANAGED, mọi vai trò khác 2xx"
+    },
+    {
+      "id": "us3-locked-onboarding-draft",
+      "method": "PUT",
+      "path": "/onboarding",
+      "body": {
+        "dailyMinutes": 15
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "409",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "PUT /onboarding"
+    },
+    {
+      "id": "us3-locked-onboarding-complete",
+      "method": "POST",
+      "path": "/onboarding/complete",
+      "body": {
+        "currentLevel": "none",
+        "goalType": "daily_conversation",
+        "dailyMinutes": 10,
+        "skills": ["vocabulary", "grammar"]
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "409",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "POST /onboarding/complete"
+    },
+    {
+      "id": "us3-allowed-patch-name",
+      "method": "PATCH",
+      "path": "/me",
+      "body": {
+        "displayName": "Tên mới"
+      },
+      "mutating": true,
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "2xx",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "PATCH /me displayName: được phép khi thuộc lớp"
+    },
+    {
+      "id": "us3-allowed-progress",
+      "method": "GET",
+      "path": "/progress",
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "2xx",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "GET /progress: được phép khi thuộc lớp"
+    },
+    {
+      "id": "us3-allowed-today",
+      "method": "GET",
+      "path": "/today",
+      "expect": {
+        "ANON": "401",
+        "USR": "404",
+        "LRN": "2xx",
+        "TCH": "404",
+        "TCH0": "404",
+        "TCHx": "404",
+        "OWN": "404",
+        "ADM": "404",
+        "OWNb": "404",
+        "TCHb": "404"
+      },
+      "note": "GET /today: LRN có kế hoạch theo lớp (2xx); người chưa onboarding và không thuộc lớp 404"
+    }
+  ]
+}

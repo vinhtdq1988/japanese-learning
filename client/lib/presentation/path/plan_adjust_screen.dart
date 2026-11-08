@@ -4,12 +4,15 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:japanese_api/japanese_api.dart';
 
+import '../../data/account_repository.dart';
 import '../../data/api/api_error.dart';
+import '../../data/api_providers.dart';
 import '../../data/learning_repository.dart';
 import '../../data/plan_adjustment_repository.dart';
 import '../../data/progress_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
+import '../classroom/locked_control.dart';
 import '../onboarding/onboarding_labels.dart';
 import '../shared/confirm_dialog.dart';
 import '../shared/error_messages.dart';
@@ -48,6 +51,14 @@ class PlanAdjustScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final profile = ref.watch(profileProvider);
+    // Học viên thuộc lớp: mọi điều khiển lộ trình do lớp quyết định → hiện dạng khóa kèm lý do (FR-018).
+    final classSummary = ref.watch(meProvider).valueOrNull?.classSummary;
+    if (classSummary != null) {
+      return PageFrame(
+        title: l10n.planAdjustTitle,
+        child: _ClassManagedAdjust(className: classSummary.className),
+      );
+    }
     return PageFrame(
       title: l10n.planAdjustTitle,
       child: profile.when(
@@ -61,6 +72,64 @@ class PlanAdjustScreen extends ConsumerWidget {
     );
   }
 }
+
+/// Màn hình điều chỉnh kế hoạch khi thuộc lớp: các điều khiển ở dạng [LockedControl] (spec 004, US3, FR-018).
+/// Giá trị hiện tại do lớp đặt lấy từ `GET /me/class`; máy chủ vẫn từ chối bằng `CLASS_MANAGED`.
+class _ClassManagedAdjust extends ConsumerWidget {
+  const _ClassManagedAdjust({required this.className});
+
+  final String className;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final mine = ref.watch(_myClassForLockProvider).value;
+    final path = mine?.path;
+    final minutes = path?.dailyMinutes.value;
+    final skills = path?.skills.map((s) => s.value).join(', ');
+    return ListView(
+      key: const Key('plan-adjust-class-managed'),
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Text(l10n.planAdjustClassIntro(className)),
+        ),
+        LockedControl(
+          label: l10n.lockedGoal,
+          value: path == null
+              ? null
+              : '${path.startLevel.value} → ${path.targetLevel.value} · '
+                    '${_ymd(path.startsOn)} – ${_ymd(path.endsOn)}',
+          showOpenClass: true,
+        ),
+        LockedControl(
+          label: l10n.lockedMinutes,
+          value: minutes == null
+              ? null
+              : l10n.classPathMinutesValue(int.parse(minutes)),
+        ),
+        LockedControl(label: l10n.lockedSkills, value: skills),
+        LockedControl(label: l10n.lockedPriority),
+        LockedControl(label: l10n.lockedPause),
+        LockedControl(label: l10n.lockedMastered),
+        LockedControl(label: l10n.lockedRebuild),
+      ],
+    );
+  }
+
+  static String _ymd(DateTime d) => DateFormat('yyyy-MM-dd').format(d);
+}
+
+/// Lớp của tôi, chỉ để hiện giá trị lớp đặt trên các điều khiển bị khóa (lỗi/đang tải ⇒ không hiện giá trị).
+final _myClassForLockProvider = FutureProvider.autoDispose<MyClass?>((
+  ref,
+) async {
+  try {
+    return await ref.watch(classroomRepositoryProvider).myClass();
+  } on Object {
+    return null;
+  }
+});
 
 class _AdjustForm extends ConsumerStatefulWidget {
   const _AdjustForm({required this.profile});

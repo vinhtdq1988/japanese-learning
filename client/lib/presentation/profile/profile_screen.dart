@@ -9,6 +9,7 @@ import '../../data/locale_provider.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../auth/auth_support.dart' show AuthValidators;
+import '../classroom/locked_control.dart';
 import '../path/plan_adjust_screen.dart' show invalidatePlanViews;
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
@@ -244,22 +245,50 @@ class _LanguageSectionState extends ConsumerState<_LanguageSection> {
 }
 
 /// Lối tắt tới màn hình điều chỉnh kế hoạch (mục tiêu, thời gian mỗi ngày, kỹ năng ưu tiên).
-class _PlanSection extends StatelessWidget {
+class _PlanSection extends ConsumerWidget {
   const _PlanSection();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
+    // Thuộc lớp: kế hoạch học do lớp quyết định → điều khiển khóa kèm lý do, không có lối tắt điều chỉnh (FR-018).
+    final classSummary = ref.watch(meProvider).valueOrNull?.classSummary;
+    if (classSummary != null) {
+      return ProfileSection(
+        title: l10n.profileSectionPlan,
+        help: l10n.profilePlanHelp,
+        children: <Widget>[
+          LockedControl(
+            key: const Key('profile-plan-locked'),
+            label: l10n.profilePlanAction,
+            value: classSummary.className,
+            showOpenClass: true,
+          ),
+        ],
+      );
+    }
     return ProfileSection(
       title: l10n.profileSectionPlan,
       help: l10n.profilePlanHelp,
       children: <Widget>[
         Align(
           alignment: Alignment.centerLeft,
-          child: OutlinedButton(
-            key: const Key('profile-open-plan'),
-            onPressed: () => context.go(AppRoutes.pathAdjust),
-            child: Text(l10n.profilePlanAction),
+          child: Wrap(
+            spacing: 12,
+            runSpacing: 8,
+            children: <Widget>[
+              OutlinedButton(
+                key: const Key('profile-open-plan'),
+                onPressed: () => context.go(AppRoutes.pathAdjust),
+                child: Text(l10n.profilePlanAction),
+              ),
+              // Vào lớp của trung tâm bằng mã giáo viên cung cấp (spec 004, FR-012).
+              OutlinedButton(
+                key: const Key('profile-open-join'),
+                onPressed: () => context.go(AppRoutes.join),
+                child: Text(l10n.joinCodeOpen),
+              ),
+            ],
           ),
         ),
       ],

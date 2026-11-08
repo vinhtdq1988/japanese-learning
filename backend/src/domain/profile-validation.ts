@@ -182,6 +182,8 @@ export const accountDeleteSchema = z.object({
 // --- Placement ---
 
 export const placementAnswersSchema = z.object({
+  /** Nộp cho yêu cầu kiểm tra trình độ của lớp (spec 004, US8): không đổi kết quả/lộ trình cá nhân. */
+  classRequestId: z.uuid('classRequestId không hợp lệ').optional(),
   durationSeconds: z
     .number({ error: 'durationSeconds phải là số giây' })
     .int('durationSeconds phải là số nguyên')

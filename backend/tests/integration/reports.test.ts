@@ -4,9 +4,19 @@ import { loadReportQueries } from '../../src/reports/run.js';
 import { seedContent } from '../../src/seed/index.js';
 import { ContractClient } from '../contract/client.js';
 import { createTestApp, type TestApp } from './helpers.js';
+import { answersFor, distinctTopicExercises, seedAnswers } from './class-activity-helpers.js';
 import { kanjiUnitId, onboardedLearner, query, type Learner } from './lesson-helpers.js';
+import {
+  addOrgRole,
+  createTestClass,
+  createTestOrg,
+  createTestUser,
+  enrollLearner,
+} from './org-helpers.js';
+import { addDays } from '../../src/engine/clock.js';
 
-// Truy vấn báo cáo chỉ số sản phẩm (T119, T084): SC-003, SC-009, SC-011 và Kanji SC-001, SC-008 trên dữ liệu dựng sẵn.
+// Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129): SC-003, SC-009, SC-011, Kanji SC-001, SC-008 và lớp học SC-010
+// trên dữ liệu dựng sẵn.
 // Thời điểm lộ trình/phiên học được "già hóa" bằng UPDATE để nhóm đủ chín mà không cần chờ.
 
 let ctx: TestApp;
@@ -72,6 +82,7 @@ describe('bộ truy vấn báo cáo', () => {
       'trial_placement_levels',
       'kanji_first_plan_has_kanji_ratio',
       'kanji_completed_within_3_days_ratio',
+      'sc010_class_week4_active_days',
     ]);
     for (const name of queries.keys()) await expect(run(name)).resolves.toBeDefined();
   });
@@ -301,5 +312,72 @@ describe('Kanji SC-008: hoàn thành bài Kanji trong 3 ngày sau khi chọn', (
       muc_tieu_pct: 80,
       dat_muc_tieu: false,
     });
+  });
+});
+
+describe('Lớp SC-010: học >= 3 ngày trong tuần thứ 4 kể từ khi vào lớp', () => {
+  it('chỉ tính thành viên đã vào lớp >= 28 ngày; đếm ngày địa phương trong cửa sổ ngày 21–27', async () => {
+    await query(ctx, 'DELETE FROM users');
+    await query(ctx, 'DELETE FROM organizations');
+    const org = await createTestOrg(ctx, {
+      seats: 10,
+      startsOn: '2020-01-01',
+      endsOn: '2099-12-31',
+    });
+    const teacher = await createTestUser(ctx);
+    await addOrgRole(ctx, org.orgId, teacher.userId, { teacher: true });
+    const { classId } = await createTestClass(ctx, org.orgId, {
+      name: 'Lớp thử nghiệm',
+      teacherIds: [teacher.userId],
+    });
+    const [topic] = await distinctTopicExercises(ctx, 1);
+
+    const names = ['dat', 'hai_ngay', 'tuan_3', 'moi_vao'] as const;
+    const users = new Map<(typeof names)[number], string>();
+    for (const name of names) {
+      const user = await createTestUser(ctx, { displayName: name });
+      await enrollLearner(ctx, org.orgId, classId, user.userId);
+      users.set(name, user.userId);
+    }
+    // Ba người vào lớp cách đây 30 ngày; `moi_vao` mới 10 ngày ⇒ chưa vào nhóm.
+    for (const [name, userId] of users) {
+      await query(
+        ctx,
+        `UPDATE class_memberships SET joined_at = now() - make_interval(days => $2) WHERE user_id = $1`,
+        [userId, name === 'moi_vao' ? 10 : 30],
+      );
+    }
+    const day0 = async (userId: string): Promise<string> =>
+      (
+        await query<{ d: string }>(
+          ctx,
+          `SELECT (joined_at AT TIME ZONE 'Asia/Ho_Chi_Minh')::date::text AS d
+             FROM class_memberships WHERE user_id = $1`,
+          [userId],
+        )
+      )[0]!.d;
+    const learnOn = async (name: (typeof names)[number], offsets: number[]) => {
+      const userId = users.get(name)!;
+      const start = await day0(userId);
+      for (const offset of offsets) {
+        await seedAnswers(ctx, userId, answersFor(topic!, addDays(start, offset), 2, 1));
+      }
+    };
+    await learnOn('dat', [21, 24, 27]); // đúng 3 ngày trong tuần 4 ⇒ đạt (cả hai biên 21 và 27)
+    await learnOn('hai_ngay', [21, 27]); // chỉ 2 ngày ⇒ không đạt
+    await learnOn('tuan_3', [14, 18, 20, 28]); // ngoài cửa sổ (tuần 3 và ngày 28) ⇒ không đạt
+    await learnOn('moi_vao', [1, 2, 3]); // chưa đủ 28 ngày ⇒ bị loại
+
+    const rows = await run('sc010_class_week4_active_days');
+    expect(rows).toHaveLength(2);
+    expect(rows[0]).toMatchObject({
+      lop: 'Lớp thử nghiệm',
+      so_hoc_vien: 3,
+      hoc_3_ngay_tuan_4: 1,
+      ty_le_pct: '33.3',
+      muc_tieu_pct: 70,
+      dat_muc_tieu: false,
+    });
+    expect(rows[1]).toMatchObject({ lop: 'TONG', so_hoc_vien: 3, hoc_3_ngay_tuan_4: 1 });
   });
 });

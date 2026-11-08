@@ -1,21 +1,20 @@
 <!--
 Báo cáo tác động đồng bộ (tạm thời; xóa trước khi commit)
-- Thay đổi phiên bản: 1.0.0 → 1.1.0 (MINOR – mở rộng phạm vi Giai đoạn 1)
+- Thay đổi phiên bản: 1.1.0 → 1.2.0 (MINOR – thêm mô-đun và giai đoạn mới, mở rộng đáng kể
+  hướng dẫn của Nguyên tắc III; không loại bỏ hay định nghĩa lại nguyên tắc nào)
 - Nguyên tắc được sửa:
-  - IV. Phương pháp học dựa trên bằng chứng: lặp lại ngắt quãng áp dụng cho cả Kanji
-    (trước đây chỉ nêu từ vựng).
+  - III. Người học nắm quyền kiểm soát: bổ sung làm rõ rằng học viên tự chọn tham gia lớp của
+    một tổ chức thì các lựa chọn cá nhân được tạm khóa cho đến khi họ rời lớp; giáo viên nắm
+    quyền kiểm soát trong lớp; học viên PHẢI được từ chối lời mời và rời lớp bất cứ lúc nào.
 - Mục được sửa:
-  - Ràng buộc công nghệ & phạm vi: Giai đoạn 1 (MVP) bổ sung "Kanji (N5–N3, nhận diện
-    nghĩa/cách đọc, không luyện viết)"; luyện viết tay Kanji ghi rõ là ngoài phạm vi Giai đoạn 1.
+  - Ràng buộc công nghệ & phạm vi: thêm mô-đun "Organization & Class Management" vào danh
+    sách mô-đun; thêm Giai đoạn 1.5 (thương mại hóa B2B); dòng "Giai đoạn 1 (MVP)" giữ nguyên.
 - Mục thêm mới: không. Mục bị xóa: không.
-- Thay đổi không mang tính ngữ nghĩa: toàn bộ văn bản dịch sang tiếng Việt theo CLAUDE.md
-  (tên nguyên tắc dịch, nội dung quy tắc giữ nguyên).
 - Ghi chú di trú:
-  - `specs/001-phase1-mvp`: giữ nguyên (đã hoãn Kanji); không trở thành vi phạm vì Kanji
-    được giao cho spec `003-kanji-lessons`.
-  - `specs/003-kanji-lessons/plan.md`: sai lệch "Phạm vi theo giai đoạn" không còn cần biện
-    minh; NÊN cập nhật Constitution Check sang v1.1.0 và đánh dấu đề xuất sửa hiến pháp là đã
-    áp dụng; `spec.md` (dòng Giai đoạn, mục Giả định) NÊN cập nhật tương ứng.
+  - `specs/004-org-classes/spec.md`: điều kiện hiến pháp đã được đáp ứng; NÊN cập nhật dòng
+    Trạng thái, dòng Giai đoạn (→ Giai đoạn 1.5, hiến pháp v1.2.0), mục "Điều kiện về hiến
+    pháp" và mục Giả định sang v1.2.0 trước khi chạy `/speckit-plan`.
+  - `specs/001-phase1-mvp`, `002-performance`, `003-kanji-lessons`: không bị ảnh hưởng.
 - TODO hoãn lại: không.
 -->
 # Hiến pháp Nền tảng Học tiếng Nhật
@@ -46,6 +45,11 @@ Người học PHẢI bắt đầu học được ngay mà không cần tự xâ
 mỗi ngày, tạm dừng và tiếp tục lộ trình, ưu tiên một kỹ năng, bỏ qua nội dung đã thành thạo,
 bỏ qua bài đánh giá xếp lớp và yêu cầu dựng lại toàn bộ lộ trình. Tự động hóa KHÔNG ĐƯỢC loại
 bỏ các lựa chọn này.
+Làm rõ về lớp học của tổ chức: khi người học tự chọn tham gia lớp của một tổ chức, các lựa chọn
+cá nhân nêu trên được phép tạm khóa trong thời gian họ thuộc lớp, và quyền điều chỉnh lộ trình
+lớp chuyển sang giáo viên. Điều kiện đi kèm: người học PHẢI thấy rõ các điều kiện trước khi
+đồng ý, PHẢI có quyền từ chối lời mời, và PHẢI rời lớp được bất cứ lúc nào để nhận lại toàn bộ
+quyền kiểm soát trên lộ trình cá nhân. Không ai được ép người học vào lớp.
 Lý do: tự động hóa thích ứng chỉ được tin tưởng khi người dùng luôn có thể sửa nó.
 
 ### IV. Phương pháp học dựa trên bằng chứng (Evidence-Based Learning Methods)
@@ -82,12 +86,18 @@ năng AI nâng cao.
 - **Xác thực**: bắt buộc có đăng ký, đăng nhập và quản lý tài khoản.
 - **Các mô-đun trong phạm vi**: User Management, Learning Assessment, Learning Goal,
   Personalized Learning, Learning Content (từ vựng, Kanji, ngữ pháp, nghe, đọc), Daily
-  Learning, Review System, Progress Tracking, Notification, Admin Management.
+  Learning, Review System, Progress Tracking, Notification, Admin Management, Organization &
+  Class Management (tổ chức, lớp học, giáo viên, seat).
 - **Phân giai đoạn**: công việc PHẢI được giới hạn trong giai đoạn đang thực hiện.
   - Giai đoạn 1 (MVP): ứng dụng Web, tài khoản, đánh giá xếp lớp, đặt mục tiêu, lộ trình cá
     nhân hóa, bài học ngắn, từ vựng, ngữ pháp, Kanji (N5–N3, nhận diện nghĩa/cách đọc, không
     luyện viết), ôn tập, theo dõi tiến độ. Luyện viết tay Kanji (thứ tự nét, nhận dạng chữ
     viết) nằm ngoài phạm vi Giai đoạn 1.
+  - Giai đoạn 1.5 (thương mại hóa B2B): quản lý tổ chức và lớp học cho trung tâm tiếng Nhật,
+    gồm tổ chức, seat do quản trị viên cấp thủ công (chưa có thanh toán tự động), lớp học,
+    lộ trình lớp, theo dõi tiến độ lớp cho giáo viên. PHẢI tái sử dụng nội dung và Learning
+    Engine của Giai đoạn 1; kế hoạch hằng ngày của từng học viên vẫn do Learning Engine sinh
+    (Nguyên tắc I và II). Quản lý nhân sự cấp công ty nằm ngoài phạm vi giai đoạn này.
   - Giai đoạn 2: cá nhân hóa AI nâng cao, luyện nghe và đọc, phân tích điểm yếu, gợi ý điều
     chỉnh lộ trình.
   - Giai đoạn 3: ứng dụng Android/iOS, đồng bộ đa thiết bị, thông báo nhắc học.
@@ -132,4 +142,4 @@ Vi phạm PHẢI được sửa hoặc được biện minh rõ ràng trong mụ
 vi phạm không được biện minh sẽ chặn việc phê duyệt. Bản tổng quan gốc trong `requirement.txt`
 là tài liệu tham chiếu cho ý định sản phẩm.
 
-**Phiên bản**: 1.1.0 | **Phê chuẩn**: 2026-11-04 | **Sửa đổi lần cuối**: 2026-11-05
+**Phiên bản**: 1.2.0 | **Phê chuẩn**: 2026-11-04 | **Sửa đổi lần cuối**: 2026-11-07

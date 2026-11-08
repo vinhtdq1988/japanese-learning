@@ -1,4 +1,5 @@
--- Truy vấn báo cáo chỉ số sản phẩm (T119, T084): SC-003, SC-009, SC-011 và Kanji (spec 003: SC-001, SC-008).
+-- Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129): SC-003, SC-009, SC-011, Kanji (spec 003: SC-001, SC-008)
+-- và lớp học (spec 004: SC-010).
 -- Chạy bằng `pnpm report:metrics` (in từng bảng) hoặc dán từng khối vào psql. Mỗi khối bắt đầu bằng
 -- dòng `-- name: <tên>` và là MỘT câu SELECT độc lập, chỉ đọc. Giải thích số liệu: README.md cùng thư mục.
 --
@@ -216,3 +217,37 @@ SELECT count(*)                                                      AS so_nguoi
        80 AS muc_tieu_pct,
        100.0 * count(*) FILTER (WHERE ok) / NULLIF(count(*), 0) >= 80 AS dat_muc_tieu
   FROM judged;
+
+-- name: sc010_class_week4_active_days
+-- Spec 004 SC-010 (lớp thử nghiệm): tỷ lệ học viên học >= 3 ngày trong TUẦN THỨ 4 kể từ khi vào lớp; mục tiêu >= 70%.
+-- Mỗi thành viên lớp (`class_memberships`) là một quan sát; ngày 0 = ngày địa phương (múi giờ học viên) của
+-- `joined_at`, tuần thứ 4 = ngày 21..27. "Học một ngày" = có ít nhất một bản ghi trả lời trong `study_records` vào
+-- ngày địa phương đó (đo từ dữ liệu học đã ghi, kể cả sau khi rời lớp). Chỉ tính thành viên đã vào lớp >= 28 ngày
+-- (tuần 4 đã trọn vẹn). Thành viên đã rời lớp trước tuần 4 vẫn nằm trong mẫu số (không học ngày nào trong cửa sổ ⇒ không
+-- đạt); học viên được chuyển lớp có hai quan sát (mỗi lần vào lớp một cửa sổ riêng). Một dòng mỗi lớp + dòng `TONG`.
+WITH m AS (
+  SELECT cm.class_id,
+         cm.user_id,
+         (cm.joined_at AT TIME ZONE COALESCE(p.timezone, 'Asia/Ho_Chi_Minh'))::date AS day0
+    FROM class_memberships cm
+    LEFT JOIN learning_profiles p ON p.user_id = cm.user_id
+   WHERE cm.joined_at <= now() - interval '28 days'
+),
+judged AS (
+  SELECT m.class_id,
+         (SELECT count(DISTINCT sr.local_date)
+            FROM study_records sr
+           WHERE sr.user_id = m.user_id
+             AND sr.local_date BETWEEN m.day0 + 21 AND m.day0 + 27) >= 3 AS ok
+    FROM m
+)
+SELECT COALESCE(c.name, 'TONG')                                           AS lop,
+       count(*)                                                           AS so_hoc_vien,
+       count(*) FILTER (WHERE j.ok)                                       AS hoc_3_ngay_tuan_4,
+       round(100.0 * count(*) FILTER (WHERE j.ok) / NULLIF(count(*), 0), 1) AS ty_le_pct,
+       70                                                                 AS muc_tieu_pct,
+       100.0 * count(*) FILTER (WHERE j.ok) / NULLIF(count(*), 0) >= 70   AS dat_muc_tieu
+  FROM judged j
+  JOIN classes c ON c.id = j.class_id
+ GROUP BY ROLLUP ((j.class_id, c.name))
+ ORDER BY (c.name IS NULL), c.name;

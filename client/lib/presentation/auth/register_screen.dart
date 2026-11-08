@@ -172,7 +172,12 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
             alignment: Alignment.centerLeft,
             child: TextButton(
               key: const Key('login-link'),
-              onPressed: () => context.go(AppRoutes.login),
+              onPressed: () => context.go(
+                AppRoutes.withFrom(
+                  AppRoutes.login,
+                  GoRouterState.of(context).uri.queryParameters['from'],
+                ),
+              ),
               child: Text(l10n.authHaveAccountSignIn),
             ),
           ),

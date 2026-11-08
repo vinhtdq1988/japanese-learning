@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import 'data/session_controller.dart';
 import 'presentation/admin/admin_logs_screen.dart';
+import 'presentation/admin/admin_orgs_screen.dart';
 import 'presentation/admin/admin_placement_screen.dart';
 import 'presentation/admin/admin_unit_editor_screen.dart';
 import 'presentation/admin/admin_units_screen.dart';
@@ -12,9 +13,13 @@ import 'presentation/auth/forgot_password_screen.dart';
 import 'presentation/auth/login_screen.dart';
 import 'presentation/auth/register_screen.dart';
 import 'presentation/auth/reset_password_screen.dart';
+import 'presentation/classroom/enter_code_screen.dart';
+import 'presentation/classroom/my_class_screen.dart';
 import 'presentation/landing/landing_screen.dart';
 import 'presentation/lesson/lesson_screen.dart';
 import 'presentation/onboarding/onboarding_screen.dart';
+import 'presentation/org/invite_accept_screen.dart';
+import 'presentation/org/org_overview_screen.dart';
 import 'presentation/path/path_screen.dart';
 import 'presentation/path/plan_adjust_screen.dart';
 import 'presentation/placement/placement_screen.dart';
@@ -22,6 +27,14 @@ import 'presentation/profile/profile_screen.dart';
 import 'presentation/profile/restore_account_screen.dart';
 import 'presentation/progress/progress_screen.dart';
 import 'presentation/shared/state_views.dart';
+import 'presentation/teacher/class_detail_screen.dart';
+import 'presentation/teacher/class_list_screen.dart';
+import 'presentation/teacher/class_dashboard_screen.dart';
+import 'presentation/teacher/class_placement_screen.dart';
+import 'presentation/teacher/class_weak_topics_screen.dart';
+import 'presentation/teacher/class_path_screen.dart';
+import 'presentation/teacher/class_pauses_screen.dart';
+import 'presentation/teacher/learner_detail_screen.dart';
 import 'presentation/today/today_screen.dart';
 import 'presentation/trial/trial_account_required_screen.dart';
 import 'presentation/trial/trial_finished_screen.dart';
@@ -36,7 +49,8 @@ export 'router_paths.dart';
 /// - Đang đọc token đã lưu → màn hình khởi động.
 /// - Chưa đăng nhập → chỉ vào được route công khai, còn lại về đăng nhập (nhớ nơi định đến).
 /// - Tài khoản chờ xóa → chỉ vào được màn hình khôi phục.
-/// - Đã đăng nhập mà vào trang dành cho khách → về "Hôm nay".
+/// - Đã đăng nhập mà vào trang dành cho khách → về đích `?from=` hợp lệ (ví dụ liên kết lời mời `/invite/<token>`
+///   phải vào được ngay sau đăng nhập/đăng ký, không bị đưa qua "Hôm nay"/onboarding cá nhân), mặc định "Hôm nay".
 /// - Người học thường vào `/admin/*` → về "Hôm nay" (ẩn UI; bảo vệ thực sự ở server, FR-004).
 ///
 /// Trả `null` nếu không cần chuyển hướng.
@@ -69,8 +83,10 @@ String? resolveRedirect({
   if (current.isPendingDeletion) {
     return path == AppRoutes.restoreAccount ? null : AppRoutes.restoreAccount;
   }
-  if (path == AppRoutes.restoreAccount || AppRoutes.guestOnly.contains(path)) {
-    return AppRoutes.today;
+  if (path == AppRoutes.restoreAccount) return AppRoutes.today;
+  if (AppRoutes.guestOnly.contains(path)) {
+    final from = Uri.parse(location).queryParameters['from'];
+    return AppRoutes.safeReturnPath(from) ?? AppRoutes.today;
   }
   if (AppRoutes.isAdmin(path) && !current.isAdmin) return AppRoutes.today;
   return null;
@@ -156,6 +172,7 @@ final routerProvider = Provider<GoRouter>((ref) {
           origin: PlacementOrigin.fromQuery(
             state.uri.queryParameters['context'],
           ),
+          classRequestId: state.uri.queryParameters['request'],
         ),
       ),
       GoRoute(path: AppRoutes.today, builder: (_, __) => const TodayScreen()),
@@ -183,6 +200,75 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoutes.profile,
         builder: (_, __) => const ProfileScreen(),
+      ),
+      // Tổ chức (spec 004): trang chủ tổ chức và nhận lời mời. Quyền thật do server kiểm (404/403).
+      GoRoute(
+        path: AppRoutes.org,
+        builder: (_, __) => const OrgOverviewScreen(),
+      ),
+      // Lớp học (spec 004, US2): quản lý lớp của giáo viên/chủ tổ chức và phía học viên.
+      GoRoute(
+        path: AppRoutes.classes,
+        builder: (_, __) => const ClassListScreen(),
+        routes: <RouteBase>[
+          GoRoute(
+            path: ':id',
+            builder: (_, GoRouterState state) =>
+                ClassDetailScreen(classId: state.pathParameters['id']!),
+            routes: <RouteBase>[
+              // Lộ trình lớp theo mẫu (spec 004, US3).
+              GoRoute(
+                path: 'path',
+                builder: (_, GoRouterState state) =>
+                    ClassPathScreen(classId: state.pathParameters['id']!),
+              ),
+              // Bảng điều khiển lớp và chi tiết học viên (spec 004, US4).
+              GoRoute(
+                path: 'dashboard',
+                builder: (_, GoRouterState state) =>
+                    ClassDashboardScreen(classId: state.pathParameters['id']!),
+              ),
+              // Kiểm tra trình độ cả lớp + mời chuyển lớp (spec 004, US8).
+              GoRoute(
+                path: 'placement',
+                builder: (_, GoRouterState state) =>
+                    ClassPlacementScreen(classId: state.pathParameters['id']!),
+              ),
+              // Chủ đề yếu của cả lớp (spec 004, US7).
+              GoRoute(
+                path: 'weak-topics',
+                builder: (_, GoRouterState state) =>
+                    ClassWeakTopicsScreen(classId: state.pathParameters['id']!),
+              ),
+              // Tạm dừng cả lớp/một học viên (spec 004, US5).
+              GoRoute(
+                path: 'pauses',
+                builder: (_, GoRouterState state) =>
+                    ClassPausesScreen(classId: state.pathParameters['id']!),
+              ),
+              GoRoute(
+                path: 'learners/:userId',
+                builder: (_, GoRouterState state) => LearnerDetailScreen(
+                  classId: state.pathParameters['id']!,
+                  userId: state.pathParameters['userId']!,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+      GoRoute(
+        path: AppRoutes.myClass,
+        builder: (_, __) => const MyClassScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.join,
+        builder: (_, __) => const EnterCodeScreen(),
+      ),
+      GoRoute(
+        path: '${AppRoutes.invite}/:token',
+        builder: (_, GoRouterState state) =>
+            InviteAcceptScreen(token: state.pathParameters['token']!),
       ),
       // Quản trị (T108): chỉ admin (guard ở `resolveRedirect`; bảo vệ thực sự ở server).
       GoRoute(
@@ -213,6 +299,10 @@ final routerProvider = Provider<GoRouter>((ref) {
             builder: (_, __) => const AdminPlacementScreen(),
           ),
           GoRoute(path: 'users', builder: (_, __) => const AdminUsersScreen()),
+          GoRoute(
+            path: 'organizations',
+            builder: (_, __) => const AdminOrgsScreen(),
+          ),
           GoRoute(path: 'logs', builder: (_, __) => const AdminLogsScreen()),
         ],
       ),

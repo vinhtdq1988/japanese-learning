@@ -14,6 +14,7 @@ void main() {
         localStoreProvider.overrideWithValue(WebLocalStore()),
         timezoneProvider.overrideWithValue(WebTimezone()),
         linksProvider.overrideWithValue(WebLinks()),
+        fileTransferProvider.overrideWithValue(WebFileTransfer()),
       ],
       child: const JapaneseLearningApp(),
     ),

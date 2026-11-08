@@ -263,6 +263,12 @@ class _DeleteAccountSectionState extends ConsumerState<DeleteAccountSection> {
   bool _busy = false;
   AccountFormError? _error;
 
+  /// Đang thuộc lớp: xóa tài khoản kết thúc tư cách thành viên ngay và KHÔNG được khôi phục cùng tài khoản
+  /// (phải được mời lại và xác nhận lại — spec 004, FR-039), nên nói rõ trước khi người dùng xác nhận.
+  bool get _inClass =>
+      ref.read(meProvider).valueOrNull?.learningSource ==
+      MeLearningSourceEnum.class_;
+
   @override
   void dispose() {
     _password.dispose();
@@ -276,7 +282,9 @@ class _DeleteAccountSectionState extends ConsumerState<DeleteAccountSection> {
     final confirmed = await showConfirmDialog(
       context,
       title: l10n.profileDeleteConfirmTitle,
-      message: l10n.profileDeleteConfirmMessage,
+      message: _inClass
+          ? '${l10n.profileDeleteConfirmMessage}\n\n${l10n.profileDeleteClassNotice}'
+          : l10n.profileDeleteConfirmMessage,
       confirmLabel: l10n.profileDeleteAction,
       destructive: true,
     );
@@ -306,6 +314,16 @@ class _DeleteAccountSectionState extends ConsumerState<DeleteAccountSection> {
       help: l10n.profileDeleteHelp,
       destructive: true,
       children: <Widget>[
+        if (ref.watch(meProvider).valueOrNull?.learningSource ==
+            MeLearningSourceEnum.class_)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: Text(
+              l10n.profileDeleteClassNotice,
+              key: const Key('profile-delete-class-notice'),
+              style: TextStyle(color: scheme.error),
+            ),
+          ),
         Form(
           key: _formKey,
           child: Column(

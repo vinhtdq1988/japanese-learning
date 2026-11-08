@@ -39,8 +39,10 @@ import {
   type RankedUnit,
   type ScopeNotice,
 } from '../engine/path.js';
+import { assertNotClassManaged } from './class-lock.js';
 import type { CatalogUnit, ContentCache } from './content-cache.js';
 import type { ServiceDeps } from './deps.js';
+import { rankForContext, resolveLearningContext } from './learning-context.js';
 
 // Dịch vụ lộ trình (T049, T051, R7). Lộ trình chỉ lưu tham số sinh (`learning_paths.generated_from`);
 // thứ tự đơn vị luôn được `rankUnits` tính động từ nội dung `active` hiện hành (SC-008).
@@ -74,6 +76,8 @@ export interface PathItemDto {
 }
 
 export interface PathDetailDto extends PathSummaryDto {
+  /** Nguồn của lộ trình: `class` khi người học thuộc lớp (spec 004). */
+  source: 'personal' | 'class';
   items: PathItemDto[];
 }
 
@@ -175,17 +179,36 @@ export async function summarizePath(
   return summarize(path, params, ranked);
 }
 
-/** `GET /path`: lộ trình hiện tại kèm thứ tự đơn vị tính động tại thời điểm gọi. */
-export async function getPathDetail(deps: ReadDeps, userId: string): Promise<PathDetailDto> {
-  const profile = await getProfile(deps.db, userId);
-  const path = await getActivePath(deps.db, userId);
-  if (!profile || !path) throw notOnboarded();
+/**
+ * `GET /path`: lộ trình hiện tại kèm thứ tự đơn vị tính động tại thời điểm gọi. Học viên thuộc lớp nhận
+ * LỘ TRÌNH LỚP (`source: 'class'`, `id` là id lớp vì lớp không có dòng `learning_paths`); người học cá nhân nhận
+ * đúng như cũ.
+ */
+export async function getPathDetail(
+  deps: Pick<ServiceDeps, 'config' | 'db' | 'clock' | 'contentCache'>,
+  userId: string,
+): Promise<PathDetailDto> {
+  const ctx = await resolveLearningContext(deps, userId);
+  if (!ctx) throw notOnboarded();
 
-  const params = paramsOfPath(path);
-  const ranked = await rankForUser(deps, userId, profile, params, { includeMastered: true });
-  const language: Language = profile.language;
+  const ranked = await rankForContext(deps, userId, ctx, { includeMastered: true });
+  const language: Language = ctx.profile.language;
+  const summary: PathSummaryDto =
+    ctx.source === 'personal'
+      ? summarize(ctx.path, ctx.params, ranked)
+      : {
+          id: ctx.classInfo.id,
+          totalUnits: ranked.length,
+          completedUnits: ranked.filter((r) => r.status === 'completed' || r.status === 'mastered')
+            .length,
+          startLevel: ctx.params.startLevel,
+          reason: 'onboarding',
+          scopeNotice: ctx.params.scopeNotice,
+          message: null,
+        };
   return {
-    ...summarize(path, params, ranked),
+    ...summary,
+    source: ctx.source,
     items: ranked.map((r) => ({
       unitId: r.unit.id,
       title: localize(r.unit.title, language),
@@ -207,6 +230,7 @@ export async function rebuildPath(
   userId: string,
   options: { placementResultId?: string } = {},
 ): Promise<PathSummaryDto> {
+  await assertNotClassManaged(deps.db, userId, ['path']);
   const profile = await getProfile(deps.db, userId);
   if (!profile || profile.onboardingState !== 'completed') throw notOnboarded();
 
@@ -248,6 +272,7 @@ async function requireOnboardedProfile(db: DbExecutor, userId: string): Promise<
  * không có "ngày bỏ lỡ" (R7).
  */
 export async function pausePath(deps: ServiceDeps, userId: string): Promise<void> {
+  await assertNotClassManaged(deps.db, userId, ['paused']);
   const profile = await requireOnboardedProfile(deps.db, userId);
   if (profile.paused) return;
   const today = localToday(deps.clock, profile.timezone);
@@ -259,6 +284,7 @@ export async function pausePath(deps: ServiceDeps, userId: string): Promise<void
 
 /** `POST /path/resume`: tiếp tục lộ trình – đóng giai đoạn tạm dừng và đặt `paused=false` (cùng giao dịch). */
 export async function resumePath(deps: ServiceDeps, userId: string): Promise<void> {
+  await assertNotClassManaged(deps.db, userId, ['paused']);
   const profile = await requireOnboardedProfile(deps.db, userId);
   if (!profile.paused) return;
   const today = localToday(deps.clock, profile.timezone);
@@ -287,6 +313,7 @@ export async function setUnitMastered(
   unitId: string,
   mastered: boolean,
 ): Promise<MasterResultDto> {
+  await assertNotClassManaged(deps.db, userId, ['mastered']);
   const profile = await requireOnboardedProfile(deps.db, userId);
   const path = await getActivePath(deps.db, userId);
   if (!path) throw notOnboarded();
@@ -338,6 +365,7 @@ export async function setItemMastered(
   itemId: string,
   mastered: boolean,
 ): Promise<ItemMasterResultDto> {
+  await assertNotClassManaged(deps.db, userId, ['mastered']);
   await requireOnboardedProfile(deps.db, userId);
   const kind = await getItemKind(deps.db, itemId);
   if (kind === null) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy chữ này');

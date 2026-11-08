@@ -54,3 +54,18 @@ final today = await api.getDailyApi().getToday();          // tên hàm = operat
 ```
 
 Chạy lại lệnh trên mỗi khi `openapi.yaml` đổi `info.version`.
+
+## Phiên bản hợp đồng hiện tại: OpenAPI 1.12.0 (spec 004)
+
+Client sinh từ **OpenAPI 1.12.0** (bổ sung, không phá hợp đồng 1.11.0): nhóm `classes`, `classroom`, `org` và các
+route `/admin/organizations*`, `/org*`, `/classes*`, `/invitations/{token}*`, `/me/class*`; `Me` thêm `learningSource`,
+`classSummary`, `organization`; `PlacementAnswers.classRequestId`; `GET /path` thêm `source`; mã lỗi mới `CLASS_MANAGED`,
+`SEAT_*`, `CLASS_*`, `LAST_TEACHER`, `ALREADY_IN_CLASS`, `INVITEE_UNAVAILABLE`. Nhật ký thay đổi đầy đủ nằm trong
+`info.description` của `openapi.yaml`.
+
+**Ghi chú phát hành — client và backend PHẢI phát hành CÙNG LÚC**: client cũ (1.11.0) không hiển thị khóa điều khiển
+của học viên thuộc lớp; trình duyệt giữ bản cũ trong bộ đệm có thể cho học viên thuộc lớp thấy điều khiển cá nhân
+(máy chủ vẫn từ chối bằng `409 CLASS_MANAGED`). Hãy ép tải lại bản web mới khi triển khai backend 1.12.0.
+
+Lưu ý khi sinh lại: `POST /classes/{id}/members/{userId}/move` trả **202** (chỉ mời chuyển lớp, học viên phải đồng ý
+lại) và `SharedDataDisclosure.mayBeMovedWithinOrganization` luôn là `false`.

@@ -1,5 +1,6 @@
 import { omitNulls } from '../api/http.js';
 import { getActivePath } from '../db/repositories/paths.js';
+import { getDisplayLicense } from '../db/repositories/organizations.js';
 import { getPlacementById, type PlacementResultRow } from '../db/repositories/placement.js';
 import {
   getProfile,
@@ -9,14 +10,38 @@ import {
 } from '../db/repositories/profiles.js';
 import { findUserById } from '../db/repositories/users.js';
 import type { ProfileUpdateInput } from '../domain/profile-validation.js';
+import { CLASS_LOCKED_PROFILE_FIELDS } from '../domain/org-types.js';
 import { AppError, type AccountStatus, type Role } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
 import { applyEmailChange, prepareEmailChange } from './account.js';
+import { assertNotClassManaged } from './class-lock.js';
 import type { ServiceDeps } from './deps.js';
+import { resolveLearningContext } from './learning-context.js';
+import { loadOrgContext } from './org-access.js';
+import { licenseView, type LicenseViewDto } from './org-dto.js';
 import { createPath, paramsFor, paramsOfPath, type PathReason } from './path.js';
 
 // Dịch vụ hồ sơ (T047, T093): đọc `GET /me` và sửa hồ sơ qua `PATCH /me`, kể cả hệ quả lên lộ trình
 // (đổi mục tiêu/trình độ sinh lộ trình mới) và đổi email (T111, cần mật khẩu hiện tại).
+
+/** Vai trò tổ chức của chủ tổ chức/giáo viên, để giao diện hiện đúng khu vực và cảnh báo hết hạn (FR-006). */
+export interface MeOrganizationDto {
+  id: string;
+  name: string;
+  roles: ('owner' | 'teacher')[];
+  /** `false` khi mất seat/hết hạn/tổ chức bị vô hiệu hóa: chỉ xem cấu trúc (FR-038). */
+  dataAccess: boolean;
+  /** `null` khi tổ chức chưa có giấy phép nào. */
+  license: LicenseViewDto | null;
+}
+
+/** Tóm tắt lớp của học viên thuộc lớp; `lockedFields` để client hiện khóa kèm lý do (FR-018). */
+export interface MeClassSummaryDto {
+  classId: string;
+  className: string;
+  organizationName: string;
+  lockedFields: string[];
+}
 
 export interface MeDto {
   id: string;
@@ -24,6 +49,11 @@ export interface MeDto {
   role: Role;
   status: AccountStatus;
   profile: Record<string, unknown>;
+  /** Nguồn học hiện tại; `class` khi người học thuộc lớp (US3). */
+  learningSource: 'personal' | 'class';
+  /** Chỉ khi `learningSource = 'class'`. */
+  classSummary?: MeClassSummaryDto;
+  organization?: MeOrganizationDto;
 }
 
 /** Hồ sơ theo schema `Profile`: trường chưa có giá trị bị bỏ khỏi phản hồi (không phải `null`). */
@@ -44,19 +74,56 @@ export function profileToDto(profile: ProfileRow): Record<string, unknown> {
   });
 }
 
-export async function getMe(deps: Pick<ServiceDeps, 'db'>, userId: string): Promise<MeDto> {
+export async function getMe(
+  deps: Pick<ServiceDeps, 'config' | 'db' | 'clock'>,
+  userId: string,
+): Promise<MeDto> {
   const [user, profile] = await Promise.all([
     findUserById(deps.db, userId),
     getProfile(deps.db, userId),
   ]);
   if (!user || !profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy tài khoản');
-  return {
+  const me: MeDto = {
     id: user.id,
     email: user.email,
     role: user.role,
     status: user.status,
     profile: profileToDto(profile),
+    learningSource: 'personal',
   };
+  // Học viên thuộc lớp: nguồn học là lớp và các điều khiển lộ trình cá nhân bị khóa (US3).
+  const learning = await resolveLearningContext(deps, userId);
+  if (learning?.source === 'class') {
+    me.learningSource = 'class';
+    me.classSummary = {
+      classId: learning.classInfo.id,
+      className: learning.classInfo.name,
+      organizationName: learning.classInfo.organizationName,
+      lockedFields: [...CLASS_LOCKED_PROFILE_FIELDS],
+    };
+  }
+  // Vai trò tổ chức tra CSDL mỗi lần (không vào JWT) nên gỡ vai trò có hiệu lực ngay (research O2).
+  const org = await loadOrgContext(deps, userId);
+  if (org && (org.isOwner || org.isTeacher)) {
+    const license = await getDisplayLicense(
+      deps.db,
+      org.organizationId,
+      localToday(deps.clock, deps.config.ORG_TIMEZONE),
+    );
+    me.organization = {
+      id: org.organizationId,
+      name: org.organizationName,
+      roles: [
+        ...(org.isOwner ? (['owner'] as const) : []),
+        ...(org.isTeacher ? (['teacher'] as const) : []),
+      ],
+      dataAccess: org.dataAccess,
+      license: license
+        ? licenseView(license, localToday(deps.clock, deps.config.ORG_TIMEZONE), deps.config)
+        : null,
+    };
+  }
+  return me;
 }
 
 /** Trường chỉ sửa được sau khi hoàn tất onboarding vì có hệ quả lên lộ trình/kế hoạch. */
@@ -139,7 +206,7 @@ function resolvePathFields(
  * giữ nguyên (data-model §2.11). Hồ sơ và lộ trình mới được lưu trong cùng một giao dịch.
  */
 export async function updateMe(
-  deps: Pick<ServiceDeps, 'db' | 'clock'>,
+  deps: Pick<ServiceDeps, 'config' | 'db' | 'clock'>,
   userId: string,
   input: ProfileUpdateInput,
 ): Promise<MeDto> {
@@ -150,6 +217,10 @@ export async function updateMe(
 
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy tài khoản');
+
+  // Trường lộ trình/mục tiêu/thời gian do lớp quyết định (displayName, language, timezone, email vẫn được sửa).
+  const lockedTouched = CLASS_LOCKED_PROFILE_FIELDS.filter((field) => input[field] !== undefined);
+  if (lockedTouched.length > 0) await assertNotClassManaged(deps.db, userId, lockedTouched);
 
   const touched = PATH_FIELDS.filter((field) => input[field] !== undefined);
   if (touched.length > 0 && profile.onboardingState !== 'completed') {

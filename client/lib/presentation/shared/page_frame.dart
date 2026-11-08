@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/account_repository.dart';
 import '../../data/session_controller.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
@@ -34,12 +35,20 @@ class PageFrame extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final session = ref.watch(sessionProvider).session;
     final location = GoRouterState.of(context).uri.path;
+    // Mục "Tổ chức"/"Lớp học"/"Lớp của tôi" theo vai trò tra từ `GET /me` (bảo vệ thật ở server).
+    final roles = session != null && showNavigation
+        ? (ref.watch(navRolesProvider).value ?? const NavRoles())
+        : const NavRoles();
 
     final destinations = <_NavDestination>[
       _NavDestination(AppRoutes.today, l10n.navToday),
       _NavDestination(AppRoutes.path, l10n.navPath),
       _NavDestination(AppRoutes.progress, l10n.navProgress),
+      if (roles.inClass) _NavDestination(AppRoutes.myClass, l10n.navMyClass),
       _NavDestination(AppRoutes.profile, l10n.navProfile),
+      if (roles.managesClasses)
+        _NavDestination(AppRoutes.classes, l10n.navClasses),
+      if (roles.isOwner) _NavDestination(AppRoutes.org, l10n.navOrg),
       if (session?.isAdmin ?? false)
         _NavDestination(AppRoutes.admin, l10n.navAdmin),
     ];
@@ -52,12 +61,15 @@ class PageFrame extends ConsumerWidget {
             for (final d in destinations)
               TextButton(
                 onPressed: () => context.go(d.route),
+                // Cả hai kiểu đều đặt `textStyle` (cùng `inherit`) để đổi tab giữa lúc hoạt ảnh không lỗi nội suy.
                 style: location.startsWith(d.route)
                     ? TextButton.styleFrom(
                         foregroundColor: Theme.of(context).colorScheme.primary,
                         textStyle: const TextStyle(fontWeight: FontWeight.w700),
                       )
-                    : null,
+                    : TextButton.styleFrom(
+                        textStyle: const TextStyle(fontWeight: FontWeight.w500),
+                      ),
                 child: Text(d.label),
               ),
           ...actions,

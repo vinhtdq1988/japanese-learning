@@ -1,5 +1,3 @@
-import { getActivePath } from '../db/repositories/paths.js';
-import { getProfile } from '../db/repositories/profiles.js';
 import {
   countCompletedUnits,
   countKanjiCharactersLearned,
@@ -25,7 +23,7 @@ import { allocateKanjiSeconds, currentStreakDays, isOnTrack } from '../engine/pr
 import { upcomingUnits, type ScopeNotice } from '../engine/path.js';
 import type { ServiceDeps } from './deps.js';
 import { secondsToMinutes } from './lesson-session.js';
-import { paramsOfPath, rankForUser } from './path.js';
+import { rankForContext, resolveLearningContext } from './learning-context.js';
 
 // Dịch vụ tóm tắt tiến độ (T085, FR-026 → FR-029): chế độ xem TÍNH TOÁN từ dữ liệu đã ghi, không lưu.
 
@@ -82,25 +80,23 @@ function emptySummary(): ProgressDto {
 
 /** `GET /progress`: tóm tắt tiến độ của người học (FR-027 → FR-029). */
 export async function getProgress(deps: ServiceDeps, userId: string): Promise<ProgressDto> {
-  const [profile, path] = await Promise.all([
-    getProfile(deps.db, userId),
-    getActivePath(deps.db, userId),
-  ]);
+  const ctx = await resolveLearningContext(deps, userId);
   // Chưa hoàn tất onboarding thì chưa có lộ trình lẫn lịch sử học: trả trạng thái trống.
-  if (!profile || !path || profile.onboardingState !== 'completed') return emptySummary();
+  if (!ctx) return emptySummary();
+  const { profile, params } = ctx;
 
   const today = localToday(deps.clock, profile.timezone);
-  const params = paramsOfPath(path);
   const [intervals, review, activeDays, pauses, lessonsCompleted, hasData, weak, ranked] =
     await Promise.all([
       listUserIntervals(deps.db, userId),
       countReviewResults(deps.db, userId),
       listActiveDays(deps.db, userId),
-      listPausePeriods(deps.db, userId),
+      // Trong lớp chỉ khoảng tạm dừng của lớp áp dụng (research O9).
+      ctx.source === 'class' ? Promise.resolve(ctx.pauses) : listPausePeriods(deps.db, userId),
       countCompletedUnits(deps.db, userId),
       hasAnyStudyData(deps.db, userId),
       listWeakTopicStats(deps.db, userId),
-      rankForUser(deps, userId, profile, params, { includeMastered: true }),
+      rankForContext(deps, userId, ctx, { includeMastered: true }),
     ]);
 
   const done = ranked.filter((r) => r.status === 'completed' || r.status === 'mastered').length;

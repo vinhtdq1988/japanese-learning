@@ -19,14 +19,17 @@ class PlacementRepository {
     });
   }
 
-  /// Nộp câu trả lời (`choice == null` là bỏ trống). Server chấm lại và lưu kết quả hiện hành.
+  /// Nộp câu trả lời (`choice == null` là bỏ trống). Server chấm lại và lưu kết quả hiện hành; có
+  /// [classRequestId] thì nộp cho yêu cầu kiểm tra của lớp: kết quả KHÔNG thành kết quả hiện hành (US8).
   Future<PlacementResult> submit({
     required Map<String, int?> choices,
     required int durationSeconds,
+    String? classRequestId,
   }) {
     return guardApi(() async {
       final response = await _api.getOnboardingApi().submitPlacement(
         placementAnswers: PlacementAnswers(
+          classRequestId: classRequestId,
           durationSeconds: durationSeconds,
           answers: <PlacementAnswersAnswersInner>[
             for (final entry in choices.entries)

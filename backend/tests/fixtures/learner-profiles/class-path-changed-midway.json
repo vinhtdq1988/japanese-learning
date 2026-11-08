@@ -1,0 +1,54 @@
+{
+  "id": "class-path-changed-midway",
+  "description": "Giáo viên đổi lộ trình lớp giữa chừng (thêm kỹ năng, đổi phút): kế hoạch đã sinh không bị xóa, thay đổi áp từ kế hoạch kế tiếp, tiến độ và lịch ôn giữ nguyên (US3.7).",
+  "asOf": "2026-01-20",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-19",
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "completedUnitSlugs": ["n5-vocabulary-greetings", "n5-vocabulary-food-drink"],
+  "class": {
+    "mode": "template",
+    "startLevel": "N5",
+    "targetLevel": "N4",
+    "skills": ["vocabulary", "grammar"],
+    "startsOn": "2026-01-05",
+    "endsOn": "2026-03-31",
+    "dailyMinutes": 10,
+    "joinedOn": "2026-01-05",
+    "absenceThresholdDays": 3,
+    "explicitUnits": [],
+    "assignments": [],
+    "overrides": null,
+    "exemptions": [],
+    "classPauses": [],
+    "pathChange": {
+      "on": "2026-01-21",
+      "skills": ["vocabulary", "grammar", "kanji"],
+      "dailyMinutes": 15
+    }
+  },
+  "expected": {
+    "dailyPlan": {
+      "budgetMinutes": 10,
+      "afterChangeBudgetMinutes": 15,
+      "keepsProgress": true
+    },
+    "progress": {
+      "completedUnitsUnchanged": true
+    }
+  }
+}

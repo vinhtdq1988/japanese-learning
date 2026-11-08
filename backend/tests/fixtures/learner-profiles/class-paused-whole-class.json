@@ -1,0 +1,55 @@
+{
+  "id": "class-paused-whole-class",
+  "description": "Cả lớp tạm dừng (nghỉ lễ) trong khoảng ngày: không có kế hoạch, không bị coi là vắng, chuỗi ngày không đứt, sau nghỉ cân đối lại (FR-022, O9).",
+  "asOf": "2026-02-09",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 10,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-02-06",
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "class": {
+    "mode": "template",
+    "startLevel": "N5",
+    "targetLevel": "N4",
+    "skills": ["vocabulary", "grammar"],
+    "startsOn": "2026-01-05",
+    "endsOn": "2026-03-31",
+    "dailyMinutes": 10,
+    "joinedOn": "2026-01-05",
+    "absenceThresholdDays": 3,
+    "explicitUnits": [],
+    "assignments": [],
+    "overrides": null,
+    "exemptions": [],
+    "classPauses": [
+      {
+        "startedOn": "2026-02-07",
+        "endedOn": "2026-02-14"
+      }
+    ]
+  },
+  "expected": {
+    "dailyPlan": {
+      "plansDuringPause": false,
+      "plansAfterPause": true
+    },
+    "progress": {
+      "status": "paused"
+    },
+    "alerts": {
+      "equals": []
+    }
+  }
+}
