@@ -224,6 +224,19 @@ describe('xử lý lỗi theo schema Error (T016)', () => {
     expect(res.json().code).toBe('VALIDATION_FAILED');
   });
 
+  it('POST không body nhưng có Content-Type JSON (client Dio) vẫn được xử lý, không 422', async () => {
+    const { app } = await makeApp();
+    for (const payload of [undefined, '', '  ']) {
+      const res = await app.inject({
+        method: 'POST',
+        url: '/api/v1/account/restore',
+        headers: { ...(await bearer()), 'content-type': 'application/json' },
+        payload,
+      });
+      expect(res.statusCode).toBe(200);
+    }
+  });
+
   it('lỗi hệ thống → 500 INTERNAL_ERROR, không lộ chi tiết nội bộ', async () => {
     const { app } = await makeApp();
     const res = await app.inject({ method: 'POST', url: '/api/v1/boom' });

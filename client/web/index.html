@@ -10,13 +10,14 @@
   <meta name="description" content="Học tiếng Nhật cá nhân hóa, mỗi ngày 5–15 phút.">
 
   <!--
-    CSP chặt chẽ (FR-034, R16): token lưu ở trình duyệt nên phải chặn XSS. Mọi tài nguyên cùng nguồn;
-    API đi qua proxy `/api` cùng origin. Cần build với `--no-web-resources-cdn` để CanvasKit và phông
-    được phục vụ từ chính origin (không tải từ gstatic). `'wasm-unsafe-eval'` cần cho WebAssembly của
-    Flutter; `style-src 'unsafe-inline'` vì Flutter chèn thẻ style khi khởi động.
-    `frame-ancestors` không đặt được qua thẻ meta nên nằm ở header của nginx (client/nginx.conf).
+    Trang này KHÔNG khai báo CSP (không có thẻ meta Content-Security-Policy). Mẫu này dùng chung cho
+    `flutter run` (local) và `flutter build web` (release): dev server chèn script nội tuyến (hot reload,
+    debug) không thể băm hay gắn nonce, và trình duyệt áp dụng GIAO của mọi chính sách nên một meta chặt
+    sẽ làm trang trắng ở local.
+    CSP của triển khai thật là header trong client/nginx.conf (nguồn DUY NHẤT, kèm `frame-ancestors 'none'`).
+    Bản release phải build với `--no-web-resources-cdn` để CanvasKit và phông phục vụ từ chính origin.
+    KHÔNG thêm lại thẻ meta CSP ở đây: backend/tests/unit/web-csp.test.ts sẽ báo lỗi.
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="no-referrer">
 
   <title>Học tiếng Nhật</title>

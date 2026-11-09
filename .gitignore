@@ -6,6 +6,7 @@ coverage/
 .env
 .env.*
 !.env.example
+!.env.*.example
 
 # Dart / Flutter (client)
 .dart_tool/
@@ -30,6 +31,9 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+
+# Dữ liệu dev cục bộ (PostgreSQL nhúng của scripts/dev-db)
+.dev-data/
 
 # Chứng chỉ TLS/khóa riêng cho nginx (không bao giờ commit)
 certs/

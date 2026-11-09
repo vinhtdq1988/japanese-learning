@@ -76,6 +76,17 @@ export async function buildApp(
   app.decorateRequest('orgCtx', null);
   app.decorateRequest('classCtx', null);
 
+  // Client gửi `Content-Type: application/json` cả với POST không body (vd. `/sessions/:id/complete`);
+  // Fastify mặc định từ chối body rỗng bằng 400 (bị đổi thành 422). Coi body rỗng là không có body.
+  const defaultJsonParser = app.getDefaultJsonParser('error', 'error');
+  app.addContentTypeParser('application/json', { parseAs: 'string' }, (request, body, done) => {
+    if (typeof body === 'string' && body.trim() === '') {
+      done(null, undefined);
+      return;
+    }
+    defaultJsonParser(request, body as string, done);
+  });
+
   registerErrorHandlers(app);
   registerSecurityHeaders(app, { hsts: config.NODE_ENV === 'production' });
   await registerRateLimit(app, config);

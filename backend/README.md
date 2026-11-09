@@ -16,6 +16,24 @@ pnpm seed                            # nạp nội dung từ ../content, tạo a
 pnpm dev                             # http://localhost:3000
 ```
 
+### Script chạy theo môi trường (Windows PowerShell)
+
+Các script ở [`../scripts/`](../scripts) làm trọn các bước trên cho từng môi trường; cấu hình nằm ở file env riêng
+(tự tạo từ mẫu ở lần chạy đầu, đều bị `.gitignore`; biến đã đặt sẵn trong shell được ưu tiên hơn giá trị trong file):
+
+| Môi trường | File cấu hình                                                  | Cách chạy                                                        |
+| ---------- | -------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `local`    | `backend/.env.local` (mẫu `.env.example`), `client/.env.local` | `.\scripts\start-all.ps1` (hoặc `start-backend.ps1`/`start-client.ps1`) |
+| `prod`     | `backend/.env.prod` (mẫu `.env.prod.example`), `client/.env.prod` | `.\scripts\start-all.ps1 -Env prod [-Seed]`                      |
+
+- `local`: tự dựng CSDL (đã chạy sẵn → Docker → PostgreSQL nhúng), migrate, seed, `pnpm dev` và
+  `flutter run --no-web-resources-cdn` (không có CSP, CanvasKit phục vụ cùng nguồn nên không cần Internet).
+- `prod`: KHÔNG dựng CSDL; từ chối chạy khi còn giá trị mẫu `CHANGE_ME` (`JWT_SECRET` được sinh ngẫu nhiên khi tạo
+  file lần đầu, cần tự điền `DATABASE_URL`, `SMTP_URL`, `APP_BASE_URL`). Backend được build (`tsc`), migrate rồi chạy
+  `node dist/src/server.js` với `NODE_ENV=production` từ bố cục tạm `.dev-data/prod`; client được build
+  `flutter build web --release --no-web-resources-cdn` ra `client/build/web` (triển khai thật vẫn qua nginx/Docker như mục "Triển khai").
+  `-Seed` nạp nội dung lần đầu (không tạo admin dev; dùng `pnpm admin:create`).
+
 | Lệnh                                                 | Tác dụng                                                                                                                                                                                   |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `pnpm test`                                          | Toàn bộ kiểm thử (đơn vị + hợp đồng + tích hợp). Dự án `db` cần Docker (Testcontainers) hoặc `TEST_DATABASE_URL` trỏ vào một CSDL **dành riêng** cho kiểm thử (bị xóa sạch giữa các test). |
@@ -51,8 +69,47 @@ docker compose exec api node dist/src/seed/create-admin.js --email admin@example
 #   Mật khẩu: đặt qua biến ADMIN_PASSWORD, hoặc bỏ trống để sinh ngẫu nhiên (in một lần duy nhất).
 ```
 
-Container `web` tải bản build với CSP chặt (`default-src 'self'`), HSTS và các header phòng thủ; `api` cũng gửi
-CSP/`nosniff`/`no-store` cho mọi phản hồi và bật HSTS khi `NODE_ENV=production` (mặc định trong image).
+Container `web` gửi CSP chặt (`default-src 'self'`) bằng header HTTP của nginx (nguồn duy nhất; `index.html` không có
+meta CSP), HSTS và các header phòng thủ; `api` cũng gửi CSP/`nosniff`/`no-store` cho mọi phản hồi và bật HSTS khi
+`NODE_ENV=production` (mặc định trong image).
+
+### Chính sách bảo mật theo môi trường
+
+Client web chạy ở hai chế độ có chính sách bảo mật (CSP) khác nhau, và sự khác nhau này là chủ ý:
+
+| Chế độ  | Cách chạy                                                                                       | Nguồn phục vụ trang                                      | CanvasKit                                     | CSP áp dụng                                              |
+| ------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------- |
+| `local` | `.\scripts\start-client.ps1` (`flutter run --no-web-resources-cdn`; Chrome, Edge hoặc `web-server`) | Dev server của Flutter (chèn script nội tuyến cho hot reload/debug) | Cùng nguồn (`localhost`), không cần Internet | Không có (`index.html` không có meta, dev server không gửi header) |
+| `prod`  | `flutter build web --release --no-web-resources-cdn` rồi nginx (`client/Dockerfile`, `client/nginx.conf`) | nginx, cùng origin với `/api`                            | Đóng gói sẵn trong `build/web`                | Header của nginx (chặt), nguồn duy nhất                  |
+
+**Vì sao khác nhau.** Dev server của Flutter chèn script nội tuyến có nội dung thay đổi theo phiên nên không thể băm
+hay gắn nonce, còn trình duyệt áp dụng **giao** của mọi chính sách (header và meta). Vì vậy một thẻ meta CSP chặt trong
+`client/web/index.html` (mẫu dùng chung cho `flutter run` và `flutter build web`) làm trang trắng ở local. CSP của bản
+thật chỉ khai báo ở header nginx, nơi có thêm `frame-ancestors 'none'` (meta không hỗ trợ).
+
+**Cách xác nhận từng chế độ**
+
+- Cấu hình (cả hai chế độ): `pnpm test:unit -- web-csp` (`backend/tests/unit/web-csp.test.ts`).
+- `local`: chạy `.\scripts\start-client.ps1`, mở DevTools. Tab Console không có lỗi "Content Security Policy"; tab
+  Network không có yêu cầu tới `www.gstatic.com` (CanvasKit tải từ `localhost`).
+- `prod`: `curl.exe -skI https://localhost/` phải có `Content-Security-Policy` (kèm `frame-ancestors 'none'`, không nguồn
+  ngoài) và `Strict-Transport-Security`; mở `https://localhost/` thấy ứng dụng hiển thị, Console không có lỗi chặn.
+
+**Khôi phục khi trình duyệt còn bộ nhớ đệm hoặc service worker lỗi** (trang vẫn trắng sau khi đã sửa cấu hình): tải lại
+cứng bằng `Ctrl+Shift+R`; nếu chưa hết, mở DevTools > Application > Storage > Clear site data, và Application >
+Service Workers > Unregister, rồi tải lại.
+
+**Quy tắc khi thay đổi**
+
+- KHÔNG ĐƯỢC nới `client/nginx.conf` (thêm `https://www.gstatic.com`, `'unsafe-inline'`, ...) để chữa lỗi hiển thị ở
+  local: token đăng nhập lưu ở trình duyệt nên CSP chặt là phòng tuyến chính chống XSS (FR-034).
+- KHÔNG ĐƯỢC thêm lại thẻ meta CSP vào `client/web/index.html`; test `web-csp.test.ts` sẽ báo lỗi.
+- Muốn đổi chính sách của bản thật, PHẢI sửa `client/nginx.conf` **và** `backend/tests/unit/web-csp.test.ts` trong cùng
+  một thay đổi, kèm lý do ghi vào mục này.
+- Nginx là cấu hình chuẩn duy nhất mang CSP: nếu phục vụ `build/web` bằng một host tĩnh khác (không nginx) thì bản
+  phục vụ đó KHÔNG có CSP trừ khi host đó tự cấu hình header tương đương.
+- Bản build release PHẢI dùng `--no-web-resources-cdn` (đã có ở `client/Dockerfile` và `scripts/start-client.ps1`);
+  thiếu cờ này CanvasKit tải từ gstatic và bị CSP của nginx chặn.
 
 ### Yêu cầu vận hành cho FR-034 (bảo mật và quyền riêng tư dữ liệu)
 
