@@ -1,0 +1,671 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (努 性 格 優 疑)",
+    "en": "Body and feelings kanji (努 性 格 優 疑)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "努",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "nỗ lực",
+        "en": "strive"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ド"
+        ],
+        "kunReadings": [
+          "つと.める"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "努力",
+          "reading": "どりょく",
+          "kanjiReading": "ド",
+          "translation": {
+            "vi": "nỗ lực",
+            "en": "effort"
+          }
+        },
+        {
+          "ja": "努める",
+          "reading": "つとめる",
+          "kanjiReading": "つと",
+          "translation": {
+            "vi": "cố gắng",
+            "en": "to strive"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "性",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "tính; giới tính",
+        "en": "nature; sex"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "性格",
+          "reading": "せいかく",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "tính cách",
+            "en": "personality"
+          }
+        },
+        {
+          "ja": "性分",
+          "reading": "しょうぶん",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "bản tính",
+            "en": "disposition"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "格",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "cách; tư cách; phẩm cách",
+        "en": "status; standard"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カク",
+          "コウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "合格",
+          "reading": "ごうかく",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "đỗ; đạt",
+            "en": "passing"
+          }
+        },
+        {
+          "ja": "格好",
+          "reading": "かっこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "dáng vẻ",
+            "en": "appearance"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "優",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "dịu dàng; ưu tú",
+        "en": "gentle; superior"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ユウ"
+        ],
+        "kunReadings": [
+          "やさ.しい",
+          "すぐ.れる"
+        ],
+        "strokeCount": 17
+      },
+      "examples": [
+        {
+          "ja": "優秀",
+          "reading": "ゆうしゅう",
+          "kanjiReading": "ユウ",
+          "translation": {
+            "vi": "ưu tú",
+            "en": "excellent"
+          }
+        },
+        {
+          "ja": "優しい",
+          "reading": "やさしい",
+          "kanjiReading": "やさ",
+          "translation": {
+            "vi": "hiền; tốt bụng",
+            "en": "kind"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "疑",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "nghi ngờ",
+        "en": "doubt"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギ"
+        ],
+        "kunReadings": [
+          "うたが.う"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "疑問",
+          "reading": "ぎもん",
+          "kanjiReading": "ギ",
+          "translation": {
+            "vi": "nghi vấn",
+            "en": "question"
+          }
+        },
+        {
+          "ja": "疑う",
+          "reading": "うたがう",
+          "kanjiReading": "うたが",
+          "translation": {
+            "vi": "nghi ngờ",
+            "en": "to doubt"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "努",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「努」nghĩa là gì?",
+        "en": "What does 「努」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nỗ lực",
+            "en": "strive"
+          },
+          {
+            "vi": "tính; giới tính",
+            "en": "nature; sex"
+          },
+          {
+            "vi": "cách; tư cách; phẩm cách",
+            "en": "status; standard"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 努 nghĩa là nỗ lực.",
+        "en": "Correct! 努 means strive."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 努 nghĩa là nỗ lực, như trong 「努力」 (nỗ lực).",
+        "en": "Not quite. 努 means strive, as in 「努力」 (effort)."
+      }
+    },
+    {
+      "item": "努",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「努」 trong 「努力」 (“nỗ lực”).",
+        "en": "Type the reading of 「努」 in 「努力」 (“effort”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ど",
+          "ド"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 努力, 努 đọc là ど (âm On).",
+        "en": "Correct! In 努力, 努 is read ど (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 努力 (nỗ lực), 努 đọc là ど (âm On).",
+        "en": "In 努力 (effort), 努 is read ど (on'yomi)."
+      }
+    },
+    {
+      "item": "努",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「努める」(cố gắng) đọc là gì?",
+        "en": "How is 「努める」 (to strive) read?"
+      },
+      "payload": {
+        "choices": [
+          "どめる",
+          "つとめる",
+          "せいかく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 努める = つとめる (cố gắng); 努 đọc là つと (âm Kun).",
+        "en": "Correct! 努める = つとめる (to strive); 努 is read つと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "努める đọc là つとめる (cố gắng): 努 mang âm Kun つと.",
+        "en": "努める is read つとめる (to strive): 努 takes the kun'yomi つと."
+      }
+    },
+    {
+      "item": "性",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「性」nghĩa là gì?",
+        "en": "What does 「性」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cách; tư cách; phẩm cách",
+            "en": "status; standard"
+          },
+          {
+            "vi": "tính; giới tính",
+            "en": "nature; sex"
+          },
+          {
+            "vi": "dịu dàng; ưu tú",
+            "en": "gentle; superior"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 性 nghĩa là tính; giới tính.",
+        "en": "Correct! 性 means nature; sex."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 性 nghĩa là tính; giới tính, như trong 「性格」 (tính cách).",
+        "en": "Not quite. 性 means nature; sex, as in 「性格」 (personality)."
+      }
+    },
+    {
+      "item": "性",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「性」 trong 「性格」 (“tính cách”).",
+        "en": "Type the reading of 「性」 in 「性格」 (“personality”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 性格, 性 đọc là せい (âm On).",
+        "en": "Correct! In 性格, 性 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 性格 (tính cách), 性 đọc là せい (âm On).",
+        "en": "In 性格 (personality), 性 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "性",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「性分」(bản tính) đọc là gì?",
+        "en": "How is 「性分」 (disposition) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいぶん",
+          "じょうぶん",
+          "しょうぶん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 性分 = しょうぶん (bản tính); 性 đọc là しょう (âm On).",
+        "en": "Correct! 性分 = しょうぶん (disposition); 性 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "性分 đọc là しょうぶん (bản tính): 性 mang âm On しょう.",
+        "en": "性分 is read しょうぶん (disposition): 性 takes the on'yomi しょう."
+      }
+    },
+    {
+      "item": "格",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「格」nghĩa là gì?",
+        "en": "What does 「格」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dịu dàng; ưu tú",
+            "en": "gentle; superior"
+          },
+          {
+            "vi": "nghi ngờ",
+            "en": "doubt"
+          },
+          {
+            "vi": "cách; tư cách; phẩm cách",
+            "en": "status; standard"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 格 nghĩa là cách; tư cách; phẩm cách.",
+        "en": "Correct! 格 means status; standard."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 格 nghĩa là cách; tư cách; phẩm cách, như trong 「合格」 (đỗ; đạt).",
+        "en": "Not quite. 格 means status; standard, as in 「合格」 (passing)."
+      }
+    },
+    {
+      "item": "格",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「格」 trong 「合格」 (“đỗ; đạt”).",
+        "en": "Type the reading of 「格」 in 「合格」 (“passing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かく",
+          "カク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 合格, 格 đọc là かく (âm On).",
+        "en": "Correct! In 合格, 格 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 合格 (đỗ; đạt), 格 đọc là かく (âm On).",
+        "en": "In 合格 (passing), 格 is read かく (on'yomi)."
+      }
+    },
+    {
+      "item": "格",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「格好」(dáng vẻ) đọc là gì?",
+        "en": "How is 「格好」 (appearance) read?"
+      },
+      "payload": {
+        "choices": [
+          "かっこう",
+          "かっかく",
+          "かっごう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 格好 = かっこう (dáng vẻ); 格 đọc là こう (âm On).",
+        "en": "Correct! 格好 = かっこう (appearance); 格 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "格好 đọc là かっこう (dáng vẻ): 格 mang âm On こう.",
+        "en": "格好 is read かっこう (appearance): 格 takes the on'yomi こう."
+      }
+    },
+    {
+      "item": "優",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「優」nghĩa là gì?",
+        "en": "What does 「優」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dịu dàng; ưu tú",
+            "en": "gentle; superior"
+          },
+          {
+            "vi": "nghi ngờ",
+            "en": "doubt"
+          },
+          {
+            "vi": "nỗ lực",
+            "en": "strive"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 優 nghĩa là dịu dàng; ưu tú.",
+        "en": "Correct! 優 means gentle; superior."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 優 nghĩa là dịu dàng; ưu tú, như trong 「優秀」 (ưu tú).",
+        "en": "Not quite. 優 means gentle; superior, as in 「優秀」 (excellent)."
+      }
+    },
+    {
+      "item": "優",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「優」 trong 「優秀」 (“ưu tú”).",
+        "en": "Type the reading of 「優」 in 「優秀」 (“excellent”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゆう",
+          "ユウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 優秀, 優 đọc là ゆう (âm On).",
+        "en": "Correct! In 優秀, 優 is read ゆう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 優秀 (ưu tú), 優 đọc là ゆう (âm On).",
+        "en": "In 優秀 (excellent), 優 is read ゆう (on'yomi)."
+      }
+    },
+    {
+      "item": "優",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「優しい」(hiền; tốt bụng) đọc là gì?",
+        "en": "How is 「優しい」 (kind) read?"
+      },
+      "payload": {
+        "choices": [
+          "ゆうしい",
+          "やさしい",
+          "うたがう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 優しい = やさしい (hiền; tốt bụng); 優 đọc là やさ (âm Kun).",
+        "en": "Correct! 優しい = やさしい (kind); 優 is read やさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "優しい đọc là やさしい (hiền; tốt bụng): 優 mang âm Kun やさ.",
+        "en": "優しい is read やさしい (kind): 優 takes the kun'yomi やさ."
+      }
+    },
+    {
+      "item": "疑",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「疑」nghĩa là gì?",
+        "en": "What does 「疑」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nỗ lực",
+            "en": "strive"
+          },
+          {
+            "vi": "nghi ngờ",
+            "en": "doubt"
+          },
+          {
+            "vi": "tính; giới tính",
+            "en": "nature; sex"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 疑 nghĩa là nghi ngờ.",
+        "en": "Correct! 疑 means doubt."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 疑 nghĩa là nghi ngờ, như trong 「疑問」 (nghi vấn).",
+        "en": "Not quite. 疑 means doubt, as in 「疑問」 (question)."
+      }
+    },
+    {
+      "item": "疑",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「疑」 trong 「疑問」 (“nghi vấn”).",
+        "en": "Type the reading of 「疑」 in 「疑問」 (“question”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎ",
+          "ギ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 疑問, 疑 đọc là ぎ (âm On).",
+        "en": "Correct! In 疑問, 疑 is read ぎ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 疑問 (nghi vấn), 疑 đọc là ぎ (âm On).",
+        "en": "In 疑問 (question), 疑 is read ぎ (on'yomi)."
+      }
+    },
+    {
+      "item": "疑",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「疑う」(nghi ngờ) đọc là gì?",
+        "en": "How is 「疑う」 (to doubt) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎう",
+          "かっこう",
+          "うたがう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 疑う = うたがう (nghi ngờ); 疑 đọc là うたが (âm Kun).",
+        "en": "Correct! 疑う = うたがう (to doubt); 疑 is read うたが (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "疑う đọc là うたがう (nghi ngờ): 疑 mang âm Kun うたが.",
+        "en": "疑う is read うたがう (to doubt): 疑 takes the kun'yomi うたが."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "努",
+            {
+              "vi": "nỗ lực",
+              "en": "strive"
+            }
+          ],
+          [
+            "性",
+            {
+              "vi": "tính; giới tính",
+              "en": "nature; sex"
+            }
+          ],
+          [
+            "格",
+            {
+              "vi": "cách; tư cách; phẩm cách",
+              "en": "status; standard"
+            }
+          ],
+          [
+            "優",
+            {
+              "vi": "dịu dàng; ưu tú",
+              "en": "gentle; superior"
+            }
+          ],
+          [
+            "疑",
+            {
+              "vi": "nghi ngờ",
+              "en": "doubt"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

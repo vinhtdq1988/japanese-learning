@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-education-research",
+  "title": {
+    "vi": "Thi cử và các cấp học",
+    "en": "Exams and schooling"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "入試",
+      "reading": "にゅうし",
+      "meaning": {
+        "vi": "Kỳ thi tuyển sinh",
+        "en": "Entrance exam"
+      },
+      "examples": [
+        {
+          "ja": "来月は、大学の入試があります。",
+          "reading": "らいげつは、だいがくのにゅうしがあります。",
+          "translation": {
+            "vi": "Tháng sau có kỳ thi tuyển sinh đại học.",
+            "en": "Next month there are university entrance exams."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "出題",
+      "reading": "しゅつだい",
+      "meaning": {
+        "vi": "Ra đề",
+        "en": "Setting exam questions"
+      },
+      "examples": [
+        {
+          "ja": "試験に出題される範囲を、確認しました。",
+          "reading": "しけんにしゅつだいされるはんいを、かくにんしました。",
+          "translation": {
+            "vi": "Tôi đã xác nhận phạm vi sẽ ra đề trong kỳ thi.",
+            "en": "I confirmed the range that will appear in the exam."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "採点",
+      "reading": "さいてん",
+      "meaning": {
+        "vi": "Chấm điểm",
+        "en": "Marking; grading"
+      },
+      "examples": [
+        {
+          "ja": "先生は、夜遅くまでテストを採点していました。",
+          "reading": "せんせいは、よるおそくまでテストをさいてんしていました。",
+          "translation": {
+            "vi": "Thầy chấm bài thi đến tận khuya.",
+            "en": "The teacher was grading tests until late at night."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "奨学金",
+      "reading": "しょうがくきん",
+      "meaning": {
+        "vi": "Học bổng",
+        "en": "Scholarship"
+      },
+      "examples": [
+        {
+          "ja": "奨学金をもらって、大学に通っています。",
+          "reading": "しょうがくきんをもらって、だいがくにかよっています。",
+          "translation": {
+            "vi": "Tôi nhận học bổng và đang học đại học.",
+            "en": "I receive a scholarship and attend university."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "塾",
+      "reading": "じゅく",
+      "meaning": {
+        "vi": "Lớp học thêm",
+        "en": "Cram school"
+      },
+      "examples": [
+        {
+          "ja": "週に三回、塾に通っています。",
+          "reading": "しゅうにさんかい、じゅくにかよっています。",
+          "translation": {
+            "vi": "Mỗi tuần tôi đi học thêm ba buổi.",
+            "en": "I go to cram school three times a week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "幼稚園",
+      "reading": "ようちえん",
+      "meaning": {
+        "vi": "Trường mẫu giáo",
+        "en": "Kindergarten"
+      },
+      "examples": [
+        {
+          "ja": "弟は、四月から幼稚園に行きます。",
+          "reading": "おとうとは、しがつからようちえんにいきます。",
+          "translation": {
+            "vi": "Em trai tôi sẽ đi mẫu giáo từ tháng Tư.",
+            "en": "My younger brother will go to kindergarten from April."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "入試",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来月は、大学の（　）があります。 — Nghĩa của câu: “Tháng sau có kỳ thi tuyển sinh đại học.”",
+        "en": "Choose the word that fits the blank: 来月は、大学の（　）があります。 — Meaning of the sentence: “Next month there are university entrance exams.”"
+      },
+      "payload": {
+        "choices": [
+          "採点",
+          "出題",
+          "塾",
+          "入試"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入試」(Kỳ thi tuyển sinh) hợp nghĩa câu này: “Tháng sau có kỳ thi tuyển sinh đại học.”",
+        "en": "Correct! 「入試」(Entrance exam) fits this sentence: “Next month there are university entrance exams.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng sau có kỳ thi tuyển sinh đại học.”, nên cần 「入試」(Kỳ thi tuyển sinh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Next month there are university entrance exams.”, so it needs 「入試」(Entrance exam); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出題",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試験に（　）される範囲を、確認しました。 — Nghĩa của câu: “Tôi đã xác nhận phạm vi sẽ ra đề trong kỳ thi.”",
+        "en": "Choose the word that fits the blank: 試験に（　）される範囲を、確認しました。 — Meaning of the sentence: “I confirmed the range that will appear in the exam.”"
+      },
+      "payload": {
+        "choices": [
+          "出題",
+          "幼稚園",
+          "入試",
+          "採点"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出題」(Ra đề) hợp nghĩa câu này: “Tôi đã xác nhận phạm vi sẽ ra đề trong kỳ thi.”",
+        "en": "Correct! 「出題」(Setting exam questions) fits this sentence: “I confirmed the range that will appear in the exam.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã xác nhận phạm vi sẽ ra đề trong kỳ thi.”, nên cần 「出題」(Ra đề); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I confirmed the range that will appear in the exam.”, so it needs 「出題」(Setting exam questions); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "採点",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生は、夜遅くまでテストを（　）していました。 — Nghĩa của câu: “Thầy chấm bài thi đến tận khuya.”",
+        "en": "Choose the word that fits the blank: 先生は、夜遅くまでテストを（　）していました。 — Meaning of the sentence: “The teacher was grading tests until late at night.”"
+      },
+      "payload": {
+        "choices": [
+          "塾",
+          "採点",
+          "入試",
+          "出題"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「採点」(Chấm điểm) hợp nghĩa câu này: “Thầy chấm bài thi đến tận khuya.”",
+        "en": "Correct! 「採点」(Marking; grading) fits this sentence: “The teacher was grading tests until late at night.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thầy chấm bài thi đến tận khuya.”, nên cần 「採点」(Chấm điểm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The teacher was grading tests until late at night.”, so it needs 「採点」(Marking; grading); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "奨学金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）をもらって、大学に通っています。 — Nghĩa của câu: “Tôi nhận học bổng và đang học đại học.”",
+        "en": "Choose the word that fits the blank: （　）をもらって、大学に通っています。 — Meaning of the sentence: “I receive a scholarship and attend university.”"
+      },
+      "payload": {
+        "choices": [
+          "入試",
+          "出題",
+          "奨学金",
+          "幼稚園"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「奨学金」(Học bổng) hợp nghĩa câu này: “Tôi nhận học bổng và đang học đại học.”",
+        "en": "Correct! 「奨学金」(Scholarship) fits this sentence: “I receive a scholarship and attend university.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nhận học bổng và đang học đại học.”, nên cần 「奨学金」(Học bổng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I receive a scholarship and attend university.”, so it needs 「奨学金」(Scholarship); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "塾",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 週に三回、（　）に通っています。 — Nghĩa của câu: “Mỗi tuần tôi đi học thêm ba buổi.”",
+        "en": "Choose the word that fits the blank: 週に三回、（　）に通っています。 — Meaning of the sentence: “I go to cram school three times a week.”"
+      },
+      "payload": {
+        "choices": [
+          "幼稚園",
+          "入試",
+          "奨学金",
+          "塾"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「塾」(Lớp học thêm) hợp nghĩa câu này: “Mỗi tuần tôi đi học thêm ba buổi.”",
+        "en": "Correct! 「塾」(Cram school) fits this sentence: “I go to cram school three times a week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi tuần tôi đi học thêm ba buổi.”, nên cần 「塾」(Lớp học thêm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I go to cram school three times a week.”, so it needs 「塾」(Cram school); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "幼稚園",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 弟は、四月から（　）に行きます。 — Nghĩa của câu: “Em trai tôi sẽ đi mẫu giáo từ tháng Tư.”",
+        "en": "Choose the word that fits the blank: 弟は、四月から（　）に行きます。 — Meaning of the sentence: “My younger brother will go to kindergarten from April.”"
+      },
+      "payload": {
+        "choices": [
+          "幼稚園",
+          "出題",
+          "入試",
+          "塾"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「幼稚園」(Trường mẫu giáo) hợp nghĩa câu này: “Em trai tôi sẽ đi mẫu giáo từ tháng Tư.”",
+        "en": "Correct! 「幼稚園」(Kindergarten) fits this sentence: “My younger brother will go to kindergarten from April.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Em trai tôi sẽ đi mẫu giáo từ tháng Tư.”, nên cần 「幼稚園」(Trường mẫu giáo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My younger brother will go to kindergarten from April.”, so it needs 「幼稚園」(Kindergarten); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "入試",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 来月は、大学の「入試」があります。",
+        "en": "Choose the correct reading of the word in 「」: 来月は、大学の「入試」があります。"
+      },
+      "payload": {
+        "choices": [
+          "にゅうし",
+          "しょうがくきん",
+          "しゅつだい",
+          "じゅく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入試」 đọc là 「にゅうし」, nghĩa là Kỳ thi tuyển sinh.",
+        "en": "Correct! 「入試」 is read 「にゅうし」 and means Entrance exam."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「入試」 đọc là 「にゅうし」 (Kỳ thi tuyển sinh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「入試」 is read 「にゅうし」 (Entrance exam); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "奨学金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「奨学金」をもらって、大学に通っています。",
+        "en": "Choose the correct reading of the word in 「」: 「奨学金」をもらって、大学に通っています。"
+      },
+      "payload": {
+        "choices": [
+          "ようちえん",
+          "しょうがくきん",
+          "にゅうし",
+          "しゅつだい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「奨学金」 đọc là 「しょうがくきん」, nghĩa là Học bổng.",
+        "en": "Correct! 「奨学金」 is read 「しょうがくきん」 and means Scholarship."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「奨学金」 đọc là 「しょうがくきん」 (Học bổng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「奨学金」 is read 「しょうがくきん」 (Scholarship); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "採点",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 先生は、夜遅くまでテストを「さいてん」していました。",
+        "en": "Choose the correct way to write the word in 「」: 先生は、夜遅くまでテストを「さいてん」していました。"
+      },
+      "payload": {
+        "choices": [
+          "幼稚園",
+          "採点",
+          "入試",
+          "塾"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「さいてん」 viết là 「採点」, nghĩa là Chấm điểm.",
+        "en": "Correct! 「さいてん」 is written 「採点」 and means Marking; grading."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「さいてん」 viết là 「採点」 (Chấm điểm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「さいてん」 is written 「採点」 (Marking; grading); the other words are read differently."
+      }
+    }
+  ]
+}

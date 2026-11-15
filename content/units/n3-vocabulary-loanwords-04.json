@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-loanwords",
+  "title": {
+    "vi": "Luyện tập và nhịp điệu",
+    "en": "Training and rhythm"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3350,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "トレーニング",
+      "reading": "トレーニング",
+      "meaning": {
+        "vi": "Tập luyện",
+        "en": "Training"
+      },
+      "examples": [
+        {
+          "ja": "毎日、ジムでトレーニングをしています。",
+          "reading": "まいにち、ジムでトレーニングをしています。",
+          "translation": {
+            "vi": "Mỗi ngày tôi tập luyện ở phòng gym.",
+            "en": "I train at the gym every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "バランス",
+      "reading": "バランス",
+      "meaning": {
+        "vi": "Cân bằng",
+        "en": "Balance"
+      },
+      "examples": [
+        {
+          "ja": "食事は、バランスが大切です。",
+          "reading": "しょくじは、バランスがたいせつです。",
+          "translation": {
+            "vi": "Với bữa ăn, sự cân bằng rất quan trọng.",
+            "en": "Balance is important in a diet."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "スピード",
+      "reading": "スピード",
+      "meaning": {
+        "vi": "Tốc độ",
+        "en": "Speed"
+      },
+      "examples": [
+        {
+          "ja": "車のスピードを、落としてください。",
+          "reading": "くるまのスピードを、おとしてください。",
+          "translation": {
+            "vi": "Hãy giảm tốc độ xe.",
+            "en": "Please slow down the car."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "リズム",
+      "reading": "リズム",
+      "meaning": {
+        "vi": "Nhịp điệu",
+        "en": "Rhythm"
+      },
+      "examples": [
+        {
+          "ja": "音楽のリズムに合わせて、踊りました。",
+          "reading": "おんがくのリズムにあわせて、おどりました。",
+          "translation": {
+            "vi": "Tôi nhảy theo nhịp điệu âm nhạc.",
+            "en": "I danced to the rhythm of the music."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ユーモア",
+      "reading": "ユーモア",
+      "meaning": {
+        "vi": "Khiếu hài hước",
+        "en": "Humor"
+      },
+      "examples": [
+        {
+          "ja": "彼は、ユーモアがある人です。",
+          "reading": "かれは、ユーモアがあるひとです。",
+          "translation": {
+            "vi": "Anh ấy là người có khiếu hài hước.",
+            "en": "He is a person with a sense of humor."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "プロ",
+      "reading": "プロ",
+      "meaning": {
+        "vi": "Chuyên nghiệp",
+        "en": "Professional"
+      },
+      "examples": [
+        {
+          "ja": "兄は、プロの選手になりました。",
+          "reading": "あには、プロのせんしゅになりました。",
+          "translation": {
+            "vi": "Anh trai tôi đã trở thành vận động viên chuyên nghiệp.",
+            "en": "My older brother became a professional athlete."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "トレーニング",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎日、ジムで（　）をしています。 — Nghĩa của câu: “Mỗi ngày tôi tập luyện ở phòng gym.”",
+        "en": "Choose the word that fits the blank: 毎日、ジムで（　）をしています。 — Meaning of the sentence: “I train at the gym every day.”"
+      },
+      "payload": {
+        "choices": [
+          "スピード",
+          "バランス",
+          "トレーニング",
+          "プロ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「トレーニング」(Tập luyện) hợp nghĩa câu này: “Mỗi ngày tôi tập luyện ở phòng gym.”",
+        "en": "Correct! 「トレーニング」(Training) fits this sentence: “I train at the gym every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi ngày tôi tập luyện ở phòng gym.”, nên cần 「トレーニング」(Tập luyện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I train at the gym every day.”, so it needs 「トレーニング」(Training); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "バランス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 食事は、（　）が大切です。 — Nghĩa của câu: “Với bữa ăn, sự cân bằng rất quan trọng.”",
+        "en": "Choose the word that fits the blank: 食事は、（　）が大切です。 — Meaning of the sentence: “Balance is important in a diet.”"
+      },
+      "payload": {
+        "choices": [
+          "スピード",
+          "トレーニング",
+          "プロ",
+          "バランス"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「バランス」(Cân bằng) hợp nghĩa câu này: “Với bữa ăn, sự cân bằng rất quan trọng.”",
+        "en": "Correct! 「バランス」(Balance) fits this sentence: “Balance is important in a diet.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Với bữa ăn, sự cân bằng rất quan trọng.”, nên cần 「バランス」(Cân bằng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Balance is important in a diet.”, so it needs 「バランス」(Balance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "スピード",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 車の（　）を、落としてください。 — Nghĩa của câu: “Hãy giảm tốc độ xe.”",
+        "en": "Choose the word that fits the blank: 車の（　）を、落としてください。 — Meaning of the sentence: “Please slow down the car.”"
+      },
+      "payload": {
+        "choices": [
+          "スピード",
+          "プロ",
+          "トレーニング",
+          "リズム"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「スピード」(Tốc độ) hợp nghĩa câu này: “Hãy giảm tốc độ xe.”",
+        "en": "Correct! 「スピード」(Speed) fits this sentence: “Please slow down the car.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy giảm tốc độ xe.”, nên cần 「スピード」(Tốc độ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please slow down the car.”, so it needs 「スピード」(Speed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "リズム",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 音楽の（　）に合わせて、踊りました。 — Nghĩa của câu: “Tôi nhảy theo nhịp điệu âm nhạc.”",
+        "en": "Choose the word that fits the blank: 音楽の（　）に合わせて、踊りました。 — Meaning of the sentence: “I danced to the rhythm of the music.”"
+      },
+      "payload": {
+        "choices": [
+          "トレーニング",
+          "リズム",
+          "バランス",
+          "ユーモア"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「リズム」(Nhịp điệu) hợp nghĩa câu này: “Tôi nhảy theo nhịp điệu âm nhạc.”",
+        "en": "Correct! 「リズム」(Rhythm) fits this sentence: “I danced to the rhythm of the music.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nhảy theo nhịp điệu âm nhạc.”, nên cần 「リズム」(Nhịp điệu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I danced to the rhythm of the music.”, so it needs 「リズム」(Rhythm); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ユーモア",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）がある人です。 — Nghĩa của câu: “Anh ấy là người có khiếu hài hước.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）がある人です。 — Meaning of the sentence: “He is a person with a sense of humor.”"
+      },
+      "payload": {
+        "choices": [
+          "トレーニング",
+          "バランス",
+          "ユーモア",
+          "リズム"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ユーモア」(Khiếu hài hước) hợp nghĩa câu này: “Anh ấy là người có khiếu hài hước.”",
+        "en": "Correct! 「ユーモア」(Humor) fits this sentence: “He is a person with a sense of humor.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy là người có khiếu hài hước.”, nên cần 「ユーモア」(Khiếu hài hước); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is a person with a sense of humor.”, so it needs 「ユーモア」(Humor); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "プロ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は、（　）の選手になりました。 — Nghĩa của câu: “Anh trai tôi đã trở thành vận động viên chuyên nghiệp.”",
+        "en": "Choose the word that fits the blank: 兄は、（　）の選手になりました。 — Meaning of the sentence: “My older brother became a professional athlete.”"
+      },
+      "payload": {
+        "choices": [
+          "リズム",
+          "トレーニング",
+          "スピード",
+          "プロ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プロ」(Chuyên nghiệp) hợp nghĩa câu này: “Anh trai tôi đã trở thành vận động viên chuyên nghiệp.”",
+        "en": "Correct! 「プロ」(Professional) fits this sentence: “My older brother became a professional athlete.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh trai tôi đã trở thành vận động viên chuyên nghiệp.”, nên cần 「プロ」(Chuyên nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother became a professional athlete.”, so it needs 「プロ」(Professional); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "トレーニング",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: 毎日、ジムで「とれーにんぐ」をしています。",
+        "en": "Choose the correct katakana spelling of the word in 「」: 毎日、ジムで「とれーにんぐ」をしています。"
+      },
+      "payload": {
+        "choices": [
+          "トレーニング",
+          "トーレーニング",
+          "トレーニンーグ",
+          "ドレーニング"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とれーにんぐ」 viết là 「トレーニング」, nghĩa là Tập luyện.",
+        "en": "Correct! 「とれーにんぐ」 is written 「トレーニング」 and means Training."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「トレーニング」 (Tập luyện); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「トレーニング」 (Training); the other spellings are incorrect."
+      }
+    },
+    {
+      "item": "リズム",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: 音楽の「りずむ」に合わせて、踊りました。",
+        "en": "Choose the correct katakana spelling of the word in 「」: 音楽の「りずむ」に合わせて、踊りました。"
+      },
+      "payload": {
+        "choices": [
+          "リスム",
+          "リズム",
+          "リーズム",
+          "リズーム"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「りずむ」 viết là 「リズム」, nghĩa là Nhịp điệu.",
+        "en": "Correct! 「りずむ」 is written 「リズム」 and means Rhythm."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「リズム」 (Nhịp điệu); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「リズム」 (Rhythm); the other spellings are incorrect."
+      }
+    }
+  ]
+}

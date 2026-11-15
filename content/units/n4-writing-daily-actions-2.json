@@ -1,0 +1,206 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-daily-actions",
+  "title": {
+    "vi": "Viết: Hành động thường ngày (2)",
+    "en": "Writing: Daily actions (2)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 330,
+  "items": [
+    {
+      "japanese": "朝ごはんを食べます",
+      "reading": "あさごはんをたべます",
+      "meaning": {
+        "vi": "Tôi ăn sáng (dạng lịch sự)",
+        "en": "I eat breakfast (polite form)"
+      }
+    },
+    {
+      "japanese": "毎日運動します",
+      "reading": "まいにちうんどうします",
+      "meaning": {
+        "vi": "Tôi tập thể dục mỗi ngày (dạng lịch sự)",
+        "en": "I exercise every day (polite form)"
+      }
+    },
+    {
+      "japanese": "買い物",
+      "reading": "かいもの",
+      "meaning": {
+        "vi": "Việc mua sắm",
+        "en": "Shopping"
+      }
+    },
+    {
+      "japanese": "掃除する",
+      "reading": "そうじする",
+      "meaning": {
+        "vi": "Dọn dẹp",
+        "en": "To clean (a room)"
+      }
+    },
+    {
+      "japanese": "手紙を書きます",
+      "reading": "てがみをかきます",
+      "meaning": {
+        "vi": "Tôi viết thư (dạng lịch sự)",
+        "en": "I write a letter (polite form)"
+      }
+    },
+    {
+      "japanese": "友達に会います",
+      "reading": "ともだちにあいます",
+      "meaning": {
+        "vi": "Tôi gặp bạn (dạng lịch sự)",
+        "en": "I meet a friend (polite form)"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi ăn sáng (dạng lịch sự)”",
+        "en": "Type in Japanese: “I eat breakfast (polite form)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "朝ごはんを食べます",
+          "朝ご飯を食べます",
+          "あさごはんをたべます"
+        ],
+        "hint": "よみ: あさごはんをたべます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 朝ごはんを食べます (đọc là あさごはんをたべます).",
+        "en": "Not quite. Reference answer: 朝ごはんを食べます (read as あさごはんをたべます)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi tập thể dục mỗi ngày (dạng lịch sự)”",
+        "en": "Type in Japanese: “I exercise every day (polite form)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "毎日運動します",
+          "まいにちうんどうします"
+        ],
+        "hint": "よみ: まいにちうんどうします"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 毎日運動します (đọc là まいにちうんどうします).",
+        "en": "Not quite. Reference answer: 毎日運動します (read as まいにちうんどうします)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Việc mua sắm”",
+        "en": "Type in Japanese: “Shopping”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "買い物",
+          "買物",
+          "かいもの"
+        ],
+        "hint": "よみ: かいもの"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 買い物 (đọc là かいもの).",
+        "en": "Not quite. Reference answer: 買い物 (read as かいもの)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Dọn dẹp”",
+        "en": "Type in Japanese: “To clean (a room)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "掃除する",
+          "そうじする"
+        ],
+        "hint": "よみ: そうじする"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 掃除する (đọc là そうじする).",
+        "en": "Not quite. Reference answer: 掃除する (read as そうじする)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi viết thư (dạng lịch sự)”",
+        "en": "Type in Japanese: “I write a letter (polite form)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "手紙を書きます",
+          "てがみをかきます"
+        ],
+        "hint": "よみ: てがみをかきます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 手紙を書きます (đọc là てがみをかきます).",
+        "en": "Not quite. Reference answer: 手紙を書きます (read as てがみをかきます)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi gặp bạn (dạng lịch sự)”",
+        "en": "Type in Japanese: “I meet a friend (polite form)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "友達に会います",
+          "友だちに会います",
+          "ともだちにあいます"
+        ],
+        "hint": "よみ: ともだちにあいます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 友達に会います (đọc là ともだちにあいます).",
+        "en": "Not quite. Reference answer: 友達に会います (read as ともだちにあいます)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-purpose-reason",
+  "title": {
+    "vi": "Mục đích: 〜ように và 〜ないように",
+    "en": "Purpose: 〜ように and 〜ないように"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ように（目的）",
+      "meaning": {
+        "vi": "Để mà ~",
+        "en": "So that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể từ điển / thể khả năng / thể ない + ように. Nêu mục đích là trạng thái mong muốn, thường là việc người nói không trực tiếp điều khiển (khả năng, sự thay đổi). Khác 〜ために: ために đi với hành động có chủ ý và cùng chủ ngữ (留学するために貯金する).",
+        "en": "Usage: dictionary / potential / ない-form + ように. States a purpose as a desired state, usually something the speaker does not directly control (ability, change). Unlike 〜ために, which pairs with a volitional action and the same subject (留学するために貯金する)."
+      },
+      "examples": [
+        {
+          "ja": "日本語が話せるように、毎日練習しています。",
+          "reading": "にほんごがはなせるように、まいにちれんしゅうしています。",
+          "translation": {
+            "vi": "Tôi luyện tập mỗi ngày để có thể nói tiếng Nhật.",
+            "en": "I practice every day so that I can speak Japanese."
+          }
+        },
+        {
+          "ja": "先生の話がよく聞こえるように、前の席にすわりました。",
+          "reading": "せんせいのはなしがよくきこえるように、まえのせきにすわりました。",
+          "translation": {
+            "vi": "Tôi đã ngồi ở hàng ghế trước để nghe rõ lời thầy nói.",
+            "en": "I sat in a front seat so that I could hear the teacher well."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-046"
+    },
+    {
+      "japanese": "〜ないように",
+      "meaning": {
+        "vi": "Để không ~, đừng để ~",
+        "en": "So as not to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ない + ように. Nêu mục đích tránh một điều không mong muốn; cũng dùng khi dặn dò (忘れないように). Vế sau là hành động có chủ ý.",
+        "en": "Usage: ない-form + ように. States a purpose of avoiding something undesirable; also used in reminders (忘れないように). The main clause is a deliberate action."
+      },
+      "examples": [
+        {
+          "ja": "かぜをひかないように、あたたかい服を着ます。",
+          "reading": "かぜをひかないように、あたたかいふくをきます。",
+          "translation": {
+            "vi": "Tôi mặc quần áo ấm để không bị cảm.",
+            "en": "I wear warm clothes so as not to catch a cold."
+          }
+        },
+        {
+          "ja": "遅れないように、早く家を出ました。",
+          "reading": "おくれないように、はやくいえをでました。",
+          "translation": {
+            "vi": "Tôi ra khỏi nhà sớm để không bị trễ.",
+            "en": "I left home early so as not to be late."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-047"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ように（目的）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本語が話せる（　）、毎日練習しています。",
+        "en": "Choose the correct option for the blank:\n日本語が話せる（　）、毎日練習しています。"
+      },
+      "payload": {
+        "choices": [
+          "ために",
+          "ので",
+          "のに",
+          "ように"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mục đích là trạng thái \"có thể nói\" (thể khả năng) nên dùng 「〜ように」.",
+        "en": "Correct! The purpose is the state of \"being able to speak\" (potential form), so 「〜ように」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mục đích là trạng thái \"có thể nói\" (thể khả năng) nên dùng 「〜ように」.",
+        "en": "Not quite. The purpose is the state of \"being able to speak\" (potential form), so 「〜ように」 is used."
+      }
+    },
+    {
+      "item": "〜ように（目的）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n日本へ留学する（　）、お金をためています。",
+        "en": "Choose the pattern that best fits the context:\n日本へ留学する（　）、お金をためています。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ので",
+          "ために",
+          "ながら"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế trước là hành động có chủ ý và cùng chủ ngữ (私が留学する) nên dùng 「ために」, không dùng 「ように」.",
+        "en": "Correct! The first clause is a volitional action with the same subject (I study abroad), so 「ために」 is used, not 「ように」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế trước là hành động có chủ ý và cùng chủ ngữ (私が留学する) nên dùng 「ために」, không dùng 「ように」.",
+        "en": "Not quite. The first clause is a volitional action with the same subject (I study abroad), so 「ために」 is used, not 「ように」."
+      }
+    },
+    {
+      "item": "〜ように（目的）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n道が見える___、ライトをつけました。",
+        "en": "Choose the correct option for the blank:\n道が見える___、ライトをつけました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ように"
+        ],
+        "hint": "〜ように"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mục đích là trạng thái \"nhìn thấy được\" nên dùng 「ように」.",
+        "en": "Correct! The purpose is the state of \"being visible\", so 「ように」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mục đích là trạng thái \"nhìn thấy được\" nên dùng 「ように」.",
+        "en": "Not quite. The purpose is the state of \"being visible\", so 「ように」 is used."
+      }
+    },
+    {
+      "item": "〜ように（目的）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "道が見えるにように、ライトをつけました。",
+          "道が見えるように、ライトをつけました。",
+          "道が見るように、ライトをつけました。",
+          "道が見えるようで、ライトをつけました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見える」 ở thể từ điển + 「ように」; không chèn thêm 「に」 và không đổi sang 「見る」.",
+        "en": "Correct! 「見える」 in dictionary form + 「ように」; do not insert 「に」 or change it to 「見る」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見える」 ở thể từ điển + 「ように」; không chèn thêm 「に」 và không đổi sang 「見る」.",
+        "en": "Not quite. 「見える」 in dictionary form + 「ように」; do not insert 「に」 or change it to 「見る」."
+      }
+    },
+    {
+      "item": "〜ないように",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nかぜをひか（　）、あたたかい服を着ます。",
+        "en": "Choose the correct option for the blank:\nかぜをひか（　）、あたたかい服を着ます。"
+      },
+      "payload": {
+        "choices": [
+          "ないように",
+          "なかったように",
+          "ないよう",
+          "なくように"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mục đích tránh một điều không mong muốn: 「〜ないように」.",
+        "en": "Correct! A purpose of avoiding something undesirable: 「〜ないように」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mục đích tránh một điều không mong muốn: 「〜ないように」.",
+        "en": "Not quite. A purpose of avoiding something undesirable: 「〜ないように」."
+      }
+    },
+    {
+      "item": "〜ないように",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n試験に落ち___、がんばって勉強しています。",
+        "en": "Choose the correct option for the blank:\n試験に落ち___、がんばって勉強しています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ないように"
+        ],
+        "hint": "〜ないように"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Để không trượt: 「落ちないように」.",
+        "en": "Correct! So as not to fail: 「落ちないように」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Để không trượt: 「落ちないように」.",
+        "en": "Not quite. So as not to fail: 「落ちないように」."
+      }
+    },
+    {
+      "item": "〜ないように",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n風邪が（　）ように、手を洗います。",
+        "en": "Choose the correct option for the blank:\n風邪が（　）ように、手を洗います。"
+      },
+      "payload": {
+        "choices": [
+          "うつる",
+          "うつった",
+          "うつって",
+          "うつらない"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「ように」 dùng thể ない khi mục đích là tránh điều gì: 「うつらないように」.",
+        "en": "Correct! Before 「ように」 the ない-form is used when the purpose is to avoid something: 「うつらないように」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「ように」 dùng thể ない khi mục đích là tránh điều gì: 「うつらないように」.",
+        "en": "Not quite. Before 「ように」 the ない-form is used when the purpose is to avoid something: 「うつらないように」."
+      }
+    },
+    {
+      "item": "〜ないように",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "忘れ物をしないようにに、気をつけます。",
+          "忘れ物をしないよう、気をつけますに。",
+          "忘れ物をしないように、気をつけます。",
+          "忘れ物をしないようで、気をつけます。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜ないように」 đứng trước vế chính; không thêm 「に」 thừa hay 「で」.",
+        "en": "Correct! 「〜ないように」 comes before the main clause; no extra 「に」 or 「で」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜ないように」 đứng trước vế chính; không thêm 「に」 thừa hay 「で」.",
+        "en": "Not quite. 「〜ないように」 comes before the main clause; no extra 「に」 or 「で」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ように（目的）",
+            {
+              "vi": "Để mà ~",
+              "en": "So that ~"
+            }
+          ],
+          [
+            "〜ないように",
+            {
+              "vi": "Để không ~, đừng để ~",
+              "en": "So as not to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-finance-banking",
+  "title": {
+    "vi": "Tiền tệ và đầu tư",
+    "en": "Currency and investment"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "円安",
+      "reading": "えんやす",
+      "meaning": {
+        "vi": "Đồng yên giảm giá",
+        "en": "Weak yen"
+      },
+      "examples": [
+        {
+          "ja": "円安になって、輸入品が高くなりました。",
+          "reading": "えんやすになって、ゆにゅうひんがたかくなりました。",
+          "translation": {
+            "vi": "Yên giảm giá nên hàng nhập khẩu trở nên đắt hơn.",
+            "en": "The yen weakened, so imported goods became more expensive."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "硬貨",
+      "reading": "こうか",
+      "meaning": {
+        "vi": "Tiền xu",
+        "en": "Coin"
+      },
+      "examples": [
+        {
+          "ja": "自動販売機は、硬貨しか使えません。",
+          "reading": "じどうはんばいきは、こうかしかつかえません。",
+          "translation": {
+            "vi": "Máy bán hàng tự động chỉ dùng được tiền xu.",
+            "en": "The vending machine only accepts coins."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "紙幣",
+      "reading": "しへい",
+      "meaning": {
+        "vi": "Tiền giấy",
+        "en": "Banknote"
+      },
+      "examples": [
+        {
+          "ja": "新しい紙幣が発行されることになりました。",
+          "reading": "あたらしいしへいがはっこうされることになりました。",
+          "translation": {
+            "vi": "Đã quyết định phát hành tiền giấy mới.",
+            "en": "It has been decided that new banknotes will be issued."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "株",
+      "reading": "かぶ",
+      "meaning": {
+        "vi": "Cổ phiếu",
+        "en": "Stock; share"
+      },
+      "examples": [
+        {
+          "ja": "祖父は、有名な会社の株を持っています。",
+          "reading": "そふは、ゆうめいなかいしゃのかぶをもっています。",
+          "translation": {
+            "vi": "Ông tôi có cổ phiếu của một công ty nổi tiếng.",
+            "en": "My grandfather holds shares in a famous company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "株式",
+      "reading": "かぶしき",
+      "meaning": {
+        "vi": "Cổ phần; chứng khoán",
+        "en": "Stock (shares); shares"
+      },
+      "examples": [
+        {
+          "ja": "この会社は、株式を市場に公開しました。",
+          "reading": "このかいしゃは、かぶしきをしじょうにこうかいしました。",
+          "translation": {
+            "vi": "Công ty này đã niêm yết cổ phần ra thị trường.",
+            "en": "This company listed its shares on the market."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "投資",
+      "reading": "とうし",
+      "meaning": {
+        "vi": "Đầu tư",
+        "en": "Investment"
+      },
+      "examples": [
+        {
+          "ja": "将来のために、少しずつ投資を始めました。",
+          "reading": "しょうらいのために、すこしずつとうしをはじめました。",
+          "translation": {
+            "vi": "Vì tương lai, tôi đã bắt đầu đầu tư dần dần.",
+            "en": "I started investing little by little for the future."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "円安",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）になって、輸入品が高くなりました。 — Nghĩa của câu: “Yên giảm giá nên hàng nhập khẩu trở nên đắt hơn.”",
+        "en": "Choose the word that fits the blank: （　）になって、輸入品が高くなりました。 — Meaning of the sentence: “The yen weakened, so imported goods became more expensive.”"
+      },
+      "payload": {
+        "choices": [
+          "株式",
+          "円安",
+          "硬貨",
+          "株"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「円安」(Đồng yên giảm giá) hợp nghĩa câu này: “Yên giảm giá nên hàng nhập khẩu trở nên đắt hơn.”",
+        "en": "Correct! 「円安」(Weak yen) fits this sentence: “The yen weakened, so imported goods became more expensive.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Yên giảm giá nên hàng nhập khẩu trở nên đắt hơn.”, nên cần 「円安」(Đồng yên giảm giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The yen weakened, so imported goods became more expensive.”, so it needs 「円安」(Weak yen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "硬貨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 自動販売機は、（　）しか使えません。 — Nghĩa của câu: “Máy bán hàng tự động chỉ dùng được tiền xu.”",
+        "en": "Choose the word that fits the blank: 自動販売機は、（　）しか使えません。 — Meaning of the sentence: “The vending machine only accepts coins.”"
+      },
+      "payload": {
+        "choices": [
+          "紙幣",
+          "円安",
+          "硬貨",
+          "株"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「硬貨」(Tiền xu) hợp nghĩa câu này: “Máy bán hàng tự động chỉ dùng được tiền xu.”",
+        "en": "Correct! 「硬貨」(Coin) fits this sentence: “The vending machine only accepts coins.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy bán hàng tự động chỉ dùng được tiền xu.”, nên cần 「硬貨」(Tiền xu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The vending machine only accepts coins.”, so it needs 「硬貨」(Coin); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "紙幣",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）が発行されることになりました。 — Nghĩa của câu: “Đã quyết định phát hành tiền giấy mới.”",
+        "en": "Choose the word that fits the blank: 新しい（　）が発行されることになりました。 — Meaning of the sentence: “It has been decided that new banknotes will be issued.”"
+      },
+      "payload": {
+        "choices": [
+          "円安",
+          "硬貨",
+          "株",
+          "紙幣"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「紙幣」(Tiền giấy) hợp nghĩa câu này: “Đã quyết định phát hành tiền giấy mới.”",
+        "en": "Correct! 「紙幣」(Banknote) fits this sentence: “It has been decided that new banknotes will be issued.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đã quyết định phát hành tiền giấy mới.”, nên cần 「紙幣」(Tiền giấy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It has been decided that new banknotes will be issued.”, so it needs 「紙幣」(Banknote); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "株",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖父は、有名な会社の（　）を持っています。 — Nghĩa của câu: “Ông tôi có cổ phiếu của một công ty nổi tiếng.”",
+        "en": "Choose the word that fits the blank: 祖父は、有名な会社の（　）を持っています。 — Meaning of the sentence: “My grandfather holds shares in a famous company.”"
+      },
+      "payload": {
+        "choices": [
+          "株",
+          "紙幣",
+          "円安",
+          "硬貨"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「株」(Cổ phiếu) hợp nghĩa câu này: “Ông tôi có cổ phiếu của một công ty nổi tiếng.”",
+        "en": "Correct! 「株」(Stock; share) fits this sentence: “My grandfather holds shares in a famous company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ông tôi có cổ phiếu của một công ty nổi tiếng.”, nên cần 「株」(Cổ phiếu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandfather holds shares in a famous company.”, so it needs 「株」(Stock; share); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "株式",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社は、（　）を市場に公開しました。 — Nghĩa của câu: “Công ty này đã niêm yết cổ phần ra thị trường.”",
+        "en": "Choose the word that fits the blank: この会社は、（　）を市場に公開しました。 — Meaning of the sentence: “This company listed its shares on the market.”"
+      },
+      "payload": {
+        "choices": [
+          "円安",
+          "株式",
+          "紙幣",
+          "硬貨"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「株式」(Cổ phần; chứng khoán) hợp nghĩa câu này: “Công ty này đã niêm yết cổ phần ra thị trường.”",
+        "en": "Correct! 「株式」(Stock (shares); shares) fits this sentence: “This company listed its shares on the market.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty này đã niêm yết cổ phần ra thị trường.”, nên cần 「株式」(Cổ phần; chứng khoán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company listed its shares on the market.”, so it needs 「株式」(Stock (shares); shares); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "投資",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 将来のために、少しずつ（　）を始めました。 — Nghĩa của câu: “Vì tương lai, tôi đã bắt đầu đầu tư dần dần.”",
+        "en": "Choose the word that fits the blank: 将来のために、少しずつ（　）を始めました。 — Meaning of the sentence: “I started investing little by little for the future.”"
+      },
+      "payload": {
+        "choices": [
+          "株",
+          "円安",
+          "投資",
+          "紙幣"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「投資」(Đầu tư) hợp nghĩa câu này: “Vì tương lai, tôi đã bắt đầu đầu tư dần dần.”",
+        "en": "Correct! 「投資」(Investment) fits this sentence: “I started investing little by little for the future.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì tương lai, tôi đã bắt đầu đầu tư dần dần.”, nên cần 「投資」(Đầu tư); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I started investing little by little for the future.”, so it needs 「投資」(Investment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "円安",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「円安」になって、輸入品が高くなりました。",
+        "en": "Choose the correct reading of the word in 「」: 「円安」になって、輸入品が高くなりました。"
+      },
+      "payload": {
+        "choices": [
+          "とうし",
+          "こうか",
+          "えんやす",
+          "かぶ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「円安」 đọc là 「えんやす」, nghĩa là Đồng yên giảm giá.",
+        "en": "Correct! 「円安」 is read 「えんやす」 and means Weak yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「円安」 đọc là 「えんやす」 (Đồng yên giảm giá); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「円安」 is read 「えんやす」 (Weak yen); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "株",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 祖父は、有名な会社の「株」を持っています。",
+        "en": "Choose the correct reading of the word in 「」: 祖父は、有名な会社の「株」を持っています。"
+      },
+      "payload": {
+        "choices": [
+          "とうし",
+          "えんやす",
+          "かぶしき",
+          "かぶ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「株」 đọc là 「かぶ」, nghĩa là Cổ phiếu.",
+        "en": "Correct! 「株」 is read 「かぶ」 and means Stock; share."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「株」 đọc là 「かぶ」 (Cổ phiếu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「株」 is read 「かぶ」 (Stock; share); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "紙幣",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しい「しへい」が発行されることになりました。",
+        "en": "Choose the correct way to write the word in 「」: 新しい「しへい」が発行されることになりました。"
+      },
+      "payload": {
+        "choices": [
+          "硬貨",
+          "円安",
+          "株式",
+          "紙幣"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しへい」 viết là 「紙幣」, nghĩa là Tiền giấy.",
+        "en": "Correct! 「しへい」 is written 「紙幣」 and means Banknote."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しへい」 viết là 「紙幣」 (Tiền giấy); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しへい」 is written 「紙幣」 (Banknote); the other words are read differently."
+      }
+    }
+  ]
+}

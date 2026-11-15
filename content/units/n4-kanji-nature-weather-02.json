@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-nature-weather",
+  "title": {
+    "vi": "Kanji thiên nhiên – mùa – động vật (春 夏 秋 冬)",
+    "en": "Nature, seasons and animals kanji (春 夏 秋 冬)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "春",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "mùa xuân",
+        "en": "spring"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュン"
+        ],
+        "kunReadings": [
+          "はる"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "青春",
+          "reading": "せいしゅん",
+          "kanjiReading": "シュン",
+          "translation": {
+            "vi": "tuổi thanh xuân",
+            "en": "youth"
+          }
+        },
+        {
+          "ja": "春",
+          "reading": "はる",
+          "kanjiReading": "はる",
+          "translation": {
+            "vi": "mùa xuân",
+            "en": "spring"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夏",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "mùa hè",
+        "en": "summer"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ",
+          "ゲ"
+        ],
+        "kunReadings": [
+          "なつ"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "初夏",
+          "reading": "しょか",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "đầu hè",
+            "en": "early summer"
+          }
+        },
+        {
+          "ja": "夏",
+          "reading": "なつ",
+          "kanjiReading": "なつ",
+          "translation": {
+            "vi": "mùa hè",
+            "en": "summer"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "秋",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "mùa thu",
+        "en": "autumn"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "あき"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "秋分",
+          "reading": "しゅうぶん",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "thu phân",
+            "en": "autumn equinox"
+          }
+        },
+        {
+          "ja": "秋",
+          "reading": "あき",
+          "kanjiReading": "あき",
+          "translation": {
+            "vi": "mùa thu",
+            "en": "autumn"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "冬",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "mùa đông",
+        "en": "winter"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "ふゆ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "冬至",
+          "reading": "とうじ",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "đông chí",
+            "en": "winter solstice"
+          }
+        },
+        {
+          "ja": "冬",
+          "reading": "ふゆ",
+          "kanjiReading": "ふゆ",
+          "translation": {
+            "vi": "mùa đông",
+            "en": "winter"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "春",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「春」nghĩa là gì?",
+        "en": "What does 「春」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mùa xuân",
+            "en": "spring"
+          },
+          {
+            "vi": "mùa hè",
+            "en": "summer"
+          },
+          {
+            "vi": "mùa thu",
+            "en": "autumn"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 春 nghĩa là mùa xuân.",
+        "en": "Correct! 春 means spring."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 春 nghĩa là mùa xuân, như trong 「青春」 (tuổi thanh xuân).",
+        "en": "Not quite. 春 means spring, as in 「青春」 (youth)."
+      }
+    },
+    {
+      "item": "春",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「春」 trong 「青春」 (“tuổi thanh xuân”).",
+        "en": "Type the reading of 「春」 in 「青春」 (“youth”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅん",
+          "シュン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 青春, 春 đọc là しゅん (âm On).",
+        "en": "Correct! In 青春, 春 is read しゅん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 青春 (tuổi thanh xuân), 春 đọc là しゅん (âm On).",
+        "en": "In 青春 (youth), 春 is read しゅん (on'yomi)."
+      }
+    },
+    {
+      "item": "春",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「春」(mùa xuân; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「春」 (spring; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅん",
+          "はる",
+          "なつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 春 = はる (mùa xuân); 春 đọc là はる (âm Kun).",
+        "en": "Correct! 春 = はる (spring); 春 is read はる (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "春 đọc là はる (mùa xuân): 春 mang âm Kun はる.",
+        "en": "春 is read はる (spring): 春 takes the kun'yomi はる."
+      }
+    },
+    {
+      "item": "夏",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夏」nghĩa là gì?",
+        "en": "What does 「夏」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mùa thu",
+            "en": "autumn"
+          },
+          {
+            "vi": "mùa hè",
+            "en": "summer"
+          },
+          {
+            "vi": "mùa đông",
+            "en": "winter"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夏 nghĩa là mùa hè.",
+        "en": "Correct! 夏 means summer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 夏 nghĩa là mùa hè, như trong 「初夏」 (đầu hè).",
+        "en": "Not quite. 夏 means summer, as in 「初夏」 (early summer)."
+      }
+    },
+    {
+      "item": "夏",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「夏」 trong 「初夏」 (“đầu hè”).",
+        "en": "Type the reading of 「夏」 in 「初夏」 (“early summer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 初夏, 夏 đọc là か (âm On).",
+        "en": "Correct! In 初夏, 夏 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 初夏 (đầu hè), 夏 đọc là か (âm On).",
+        "en": "In 初夏 (early summer), 夏 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "夏",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夏」(mùa hè; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「夏」 (summer; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "か",
+          "あき",
+          "なつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夏 = なつ (mùa hè); 夏 đọc là なつ (âm Kun).",
+        "en": "Correct! 夏 = なつ (summer); 夏 is read なつ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "夏 đọc là なつ (mùa hè): 夏 mang âm Kun なつ.",
+        "en": "夏 is read なつ (summer): 夏 takes the kun'yomi なつ."
+      }
+    },
+    {
+      "item": "秋",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「秋」nghĩa là gì?",
+        "en": "What does 「秋」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mùa đông",
+            "en": "winter"
+          },
+          {
+            "vi": "mùa xuân",
+            "en": "spring"
+          },
+          {
+            "vi": "mùa thu",
+            "en": "autumn"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 秋 nghĩa là mùa thu.",
+        "en": "Correct! 秋 means autumn."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 秋 nghĩa là mùa thu, như trong 「秋分」 (thu phân).",
+        "en": "Not quite. 秋 means autumn, as in 「秋分」 (autumn equinox)."
+      }
+    },
+    {
+      "item": "秋",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「秋」 trong 「秋分」 (“thu phân”).",
+        "en": "Type the reading of 「秋」 in 「秋分」 (“autumn equinox”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 秋分, 秋 đọc là しゅう (âm On).",
+        "en": "Correct! In 秋分, 秋 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 秋分 (thu phân), 秋 đọc là しゅう (âm On).",
+        "en": "In 秋分 (autumn equinox), 秋 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "秋",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「秋」(mùa thu; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「秋」 (autumn; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "あき",
+          "しゅう",
+          "ふゆ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 秋 = あき (mùa thu); 秋 đọc là あき (âm Kun).",
+        "en": "Correct! 秋 = あき (autumn); 秋 is read あき (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "秋 đọc là あき (mùa thu): 秋 mang âm Kun あき.",
+        "en": "秋 is read あき (autumn): 秋 takes the kun'yomi あき."
+      }
+    },
+    {
+      "item": "冬",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「冬」nghĩa là gì?",
+        "en": "What does 「冬」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mùa đông",
+            "en": "winter"
+          },
+          {
+            "vi": "mùa xuân",
+            "en": "spring"
+          },
+          {
+            "vi": "mùa hè",
+            "en": "summer"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 冬 nghĩa là mùa đông.",
+        "en": "Correct! 冬 means winter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 冬 nghĩa là mùa đông, như trong 「冬至」 (đông chí).",
+        "en": "Not quite. 冬 means winter, as in 「冬至」 (winter solstice)."
+      }
+    },
+    {
+      "item": "冬",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「冬」 trong 「冬至」 (“đông chí”).",
+        "en": "Type the reading of 「冬」 in 「冬至」 (“winter solstice”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 冬至, 冬 đọc là とう (âm On).",
+        "en": "Correct! In 冬至, 冬 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 冬至 (đông chí), 冬 đọc là とう (âm On).",
+        "en": "In 冬至 (winter solstice), 冬 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "冬",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「冬」(mùa đông; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「冬」 (winter; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "とう",
+          "ふゆ",
+          "はる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 冬 = ふゆ (mùa đông); 冬 đọc là ふゆ (âm Kun).",
+        "en": "Correct! 冬 = ふゆ (winter); 冬 is read ふゆ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "冬 đọc là ふゆ (mùa đông): 冬 mang âm Kun ふゆ.",
+        "en": "冬 is read ふゆ (winter): 冬 takes the kun'yomi ふゆ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "春",
+            {
+              "vi": "mùa xuân",
+              "en": "spring"
+            }
+          ],
+          [
+            "夏",
+            {
+              "vi": "mùa hè",
+              "en": "summer"
+            }
+          ],
+          [
+            "秋",
+            {
+              "vi": "mùa thu",
+              "en": "autumn"
+            }
+          ],
+          [
+            "冬",
+            {
+              "vi": "mùa đông",
+              "en": "winter"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

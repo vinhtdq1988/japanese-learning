@@ -1,0 +1,495 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conjecture-judgment",
+  "title": {
+    "vi": "Phán đoán (2): 〜に決まっている, 〜はずがない, 〜わけがない, 〜わけではない",
+    "en": "Judgment (2): 〜に決まっている, 〜はずがない, 〜わけがない, 〜わけではない"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜に決まっている",
+      "meaning": {
+        "vi": "Nhất định là ~",
+        "en": "Is definitely ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な, danh từ bỏ だ) + に決まっている (きまっている). Khẳng định chắc chắn, thậm chí là điều hiển nhiên; mạnh hơn に違いない, khẩu ngữ nhiều hơn. Thường dùng để bác bỏ ý kiến khác.",
+        "en": "Usage: plain form (drop だ for な-adjectives and nouns) + に決まっている (きまっている). A definite assertion, even something obvious; stronger than に違いない and more colloquial. Often used to dismiss another view."
+      },
+      "examples": [
+        {
+          "ja": "あんなに勉強したんだから、合格するに決まっている。",
+          "reading": "あんなにべんきょうしたんだから、ごうかくするにきまっている。",
+          "translation": {
+            "vi": "Học nhiều như thế thì nhất định sẽ đỗ.",
+            "en": "After studying that much, he is bound to pass."
+          }
+        },
+        {
+          "ja": "そんなうまい話は、うそに決まっています。",
+          "reading": "そんなうまいはなしは、うそにきまっています。",
+          "translation": {
+            "vi": "Chuyện tốt đẹp như thế chắc chắn là nói dối.",
+            "en": "A deal that good is definitely a lie."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-042"
+    },
+    {
+      "japanese": "〜はずがない",
+      "meaning": {
+        "vi": "Không thể nào ~",
+        "en": "Cannot possibly be ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な: な; danh từ: の) + はずがない / はずはない. Phủ định mạnh mẽ dựa trên căn cứ hợp lý (theo lẽ thường thì không thể). Gần 〜わけがない nhưng nhấn vào cơ sở suy luận; cặp với 〜はずだ (N4).",
+        "en": "Usage: plain form (な-adjective: な; noun: の) + はずがない / はずはない. A strong negation based on sound reasoning (by common sense it cannot be). Close to 〜わけがない but stresses the basis of inference; the negative counterpart of 〜はずだ (N4)."
+      },
+      "examples": [
+        {
+          "ja": "彼が来るはずがありません。",
+          "reading": "かれがくるはずがありません。",
+          "translation": {
+            "vi": "Không thể nào anh ấy đến được.",
+            "en": "There is no way he will come."
+          }
+        },
+        {
+          "ja": "こんなに簡単なはずがない。",
+          "reading": "こんなにかんたんなはずがない。",
+          "translation": {
+            "vi": "Không thể nào đơn giản như thế này.",
+            "en": "It cannot possibly be this easy."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-043"
+    },
+    {
+      "japanese": "〜わけがない",
+      "meaning": {
+        "vi": "Làm gì có chuyện ~",
+        "en": "There is no way that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な: な; danh từ: の) + わけがない / わけはない. Phủ định mạnh mẽ, thường thể hiện sự bác bỏ, bực dọc hoặc ngạc nhiên. Khẩu ngữ nhiều hơn はずがない.",
+        "en": "Usage: plain form (な-adjective: な; noun: の) + わけがない / わけはない. A strong denial, often rebutting, annoyed or surprised. More colloquial than はずがない."
+      },
+      "examples": [
+        {
+          "ja": "私が知っているわけがありません。",
+          "reading": "わたしがしっているわけがありません。",
+          "translation": {
+            "vi": "Làm gì có chuyện tôi biết.",
+            "en": "There is no way I would know."
+          }
+        },
+        {
+          "ja": "あの人が犯人なわけがない。",
+          "reading": "あのひとがはんにんなわけがない。",
+          "translation": {
+            "vi": "Làm gì có chuyện người đó là thủ phạm.",
+            "en": "There is no way that person is the culprit."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-044"
+    },
+    {
+      "japanese": "〜わけではない",
+      "meaning": {
+        "vi": "Không hẳn là ~",
+        "en": "It does not mean that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な: な; danh từ: という/の) + わけではない. Phủ định một phần, phủ nhận cách hiểu thông thường (không phải là…hoàn toàn). Thường đi sau mệnh đề lý do. Khác 〜わけがない (phủ nhận mạnh).",
+        "en": "Usage: plain form (な-adjective: な; noun: という/の) + わけではない. A partial negation that denies a common assumption (\"it is not that…\"). Often follows a reason clause. Unlike 〜わけがない (a strong denial)."
+      },
+      "examples": [
+        {
+          "ja": "嫌いなわけではありませんが、あまり食べません。",
+          "reading": "きらいなわけではありませんが、あまりたべません。",
+          "translation": {
+            "vi": "Không hẳn là tôi ghét, nhưng tôi ít ăn.",
+            "en": "It is not that I dislike it, but I do not eat it much."
+          }
+        },
+        {
+          "ja": "高いものがいいというわけではない。",
+          "reading": "たかいものがいいというわけではない。",
+          "translation": {
+            "vi": "Không hẳn cứ đắt là tốt.",
+            "en": "It does not mean that expensive things are better."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-045"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜に決まっている",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあんなに勉強したんだから、合格する（　）。",
+        "en": "Choose the correct option for the blank:\nあんなに勉強したんだから、合格する（　）。"
+      },
+      "payload": {
+        "choices": [
+          "かもしれない",
+          "に決まっている",
+          "わけではない",
+          "ようだ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khẳng định chắc chắn, hiển nhiên: 「合格するに決まっている」.",
+        "en": "Correct! A definite, obvious assertion: 「合格するに決まっている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khẳng định chắc chắn, hiển nhiên: 「合格するに決まっている」.",
+        "en": "Not quite. A definite, obvious assertion: 「合格するに決まっている」."
+      }
+    },
+    {
+      "item": "〜に決まっている",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nそんなうまい話は、うそ___います。",
+        "en": "Choose the correct option for the blank:\nそんなうまい話は、うそ___います。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "に決まって",
+          "にきまって"
+        ],
+        "hint": "にきまって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chắc chắn là nói dối: 「うそに決まっています」.",
+        "en": "Correct! It is surely a lie: 「うそに決まっています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chắc chắn là nói dối: 「うそに決まっています」.",
+        "en": "Not quite. It is surely a lie: 「うそに決まっています」."
+      }
+    },
+    {
+      "item": "〜はずがない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼が来る（　）ありません。",
+        "en": "Choose the correct option for the blank:\n彼が来る（　）ありません。"
+      },
+      "payload": {
+        "choices": [
+          "はずが",
+          "ことが",
+          "ものが",
+          "ばかりが"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ định mạnh theo lẽ thường: 「来るはずがありません」.",
+        "en": "Correct! A strong negation by common sense: 「来るはずがありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ định mạnh theo lẽ thường: 「来るはずがありません」.",
+        "en": "Not quite. A strong negation by common sense: 「来るはずがありません」."
+      }
+    },
+    {
+      "item": "〜はずがない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこんなに簡単な___がない。",
+        "en": "Choose the correct option for the blank:\nこんなに簡単な___がない。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "はず"
+        ],
+        "hint": "はず"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể nào đơn giản thế: 「簡単なはずがない」.",
+        "en": "Correct! It cannot be this simple: 「簡単なはずがない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể nào đơn giản thế: 「簡単なはずがない」.",
+        "en": "Not quite. It cannot be this simple: 「簡単なはずがない」."
+      }
+    },
+    {
+      "item": "〜はずがない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "今日は日曜日だから、会社が開いているはずがある。",
+          "今日は日曜日だから、会社が開いているはずをない。",
+          "今日は日曜日だから、会社が開いているのはずがない。",
+          "今日は日曜日だから、会社が開いているはずがない。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu cố định 「はずがない」 (có 「が」 và 「ない」).",
+        "en": "Correct! The fixed pattern 「はずがない」 (with 「が」 and 「ない」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu cố định 「はずがない」 (có 「が」 và 「ない」).",
+        "en": "Not quite. The fixed pattern 「はずがない」 (with 「が」 and 「ない」)."
+      }
+    },
+    {
+      "item": "〜わけがない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私が知っている（　）ありません。",
+        "en": "Choose the correct option for the blank:\n私が知っている（　）ありません。"
+      },
+      "payload": {
+        "choices": [
+          "ことが",
+          "ものが",
+          "わけが",
+          "ばかりが"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bác bỏ mạnh: 「知っているわけがありません」.",
+        "en": "Correct! A strong rebuttal: 「知っているわけがありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bác bỏ mạnh: 「知っているわけがありません」.",
+        "en": "Not quite. A strong rebuttal: 「知っているわけがありません」."
+      }
+    },
+    {
+      "item": "〜わけがない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあの人が犯人な___がない。",
+        "en": "Choose the correct option for the blank:\nあの人が犯人な___がない。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "わけ"
+        ],
+        "hint": "わけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm gì có chuyện là thủ phạm: 「犯人なわけがない」.",
+        "en": "Correct! There is no way he is the culprit: 「犯人なわけがない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm gì có chuyện là thủ phạm: 「犯人なわけがない」.",
+        "en": "Not quite. There is no way he is the culprit: 「犯人なわけがない」."
+      }
+    },
+    {
+      "item": "〜わけではない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n嫌いな（　）ではありませんが、あまり食べません。",
+        "en": "Choose the correct option for the blank:\n嫌いな（　）ではありませんが、あまり食べません。"
+      },
+      "payload": {
+        "choices": [
+          "はず",
+          "わけ",
+          "もの",
+          "ばかり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ nhận một phần: 「嫌いなわけではありません」.",
+        "en": "Correct! A partial denial: 「嫌いなわけではありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ nhận một phần: 「嫌いなわけではありません」.",
+        "en": "Not quite. A partial denial: 「嫌いなわけではありません」."
+      }
+    },
+    {
+      "item": "〜わけではない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n高いものがいい（　）ではない。",
+        "en": "Choose the pattern that best fits the context:\n高いものがいい（　）ではない。"
+      },
+      "payload": {
+        "choices": [
+          "というわけ",
+          "というはず",
+          "というもの",
+          "というこそ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ nhận cách hiểu thông thường: 「いいというわけではない」.",
+        "en": "Correct! Denying a common assumption: 「いいというわけではない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ nhận cách hiểu thông thường: 「いいというわけではない」.",
+        "en": "Not quite. Denying a common assumption: 「いいというわけではない」."
+      }
+    },
+    {
+      "item": "〜わけではない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nいつも家にいる（　）ありません。（không hẳn lúc nào cũng ở nhà）",
+        "en": "Choose the pattern that best fits the context:\nいつも家にいる（　）ありません。（không hẳn lúc nào cũng ở nhà）"
+      },
+      "payload": {
+        "choices": [
+          "わけが",
+          "はずが",
+          "に決まって",
+          "わけでは"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ nhận một phần (không phải lúc nào cũng vậy): 「わけではありません」.",
+        "en": "Correct! A partial negation (not always so): 「わけではありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ nhận một phần (không phải lúc nào cũng vậy): 「わけではありません」.",
+        "en": "Not quite. A partial negation (not always so): 「わけではありません」."
+      }
+    },
+    {
+      "item": "〜はずがない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n一度も会ったことがない人の名前を、私が知っている（　）。",
+        "en": "Choose the pattern that best fits the context:\n一度も会ったことがない人の名前を、私が知っている（　）。"
+      },
+      "payload": {
+        "choices": [
+          "わけではない",
+          "に違いない",
+          "はずがない",
+          "かもしれない"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Theo lẽ thường thì không thể biết: 「知っているはずがない」.",
+        "en": "Correct! By common sense it is impossible to know: 「知っているはずがない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Theo lẽ thường thì không thể biết: 「知っているはずがない」.",
+        "en": "Not quite. By common sense it is impossible to know: 「知っているはずがない」."
+      }
+    },
+    {
+      "item": "〜に決まっている",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nそんなうまい話は、＿　＿　★　＿　。\n（うそ／に／決まって／います）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nそんなうまい話は、＿　＿　★　＿　。\n（うそ／に／決まって／います）"
+      },
+      "payload": {
+        "choices": [
+          "うそ",
+          "決まって",
+          "に",
+          "います"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「そんなうまい話は、うそに決まっています。」; ô ★ (thứ ba) là 「決まって」.",
+        "en": "Correct! The correct sentence is 「そんなうまい話は、うそに決まっています。」; the ★ (third) slot is 「決まって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「そんなうまい話は、うそに決まっています。」; ô ★ (thứ ba) là 「決まって」.",
+        "en": "Not quite. The correct sentence is 「そんなうまい話は、うそに決まっています。」; the ★ (third) slot is 「決まって」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜に決まっている",
+            {
+              "vi": "Nhất định là ~",
+              "en": "Is definitely ~"
+            }
+          ],
+          [
+            "〜はずがない",
+            {
+              "vi": "Không thể nào ~",
+              "en": "Cannot possibly be ~"
+            }
+          ],
+          [
+            "〜わけがない",
+            {
+              "vi": "Làm gì có chuyện ~",
+              "en": "There is no way that ~"
+            }
+          ],
+          [
+            "〜わけではない",
+            {
+              "vi": "Không hẳn là ~",
+              "en": "It does not mean that ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

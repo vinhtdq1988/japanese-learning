@@ -1,0 +1,122 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N5",
+  "tier": "core",
+  "topic": "reading-n5-daily-life",
+  "title": {
+    "vi": "Đọc: Một ngày của Tanaka",
+    "en": "Reading: Tanaka's day"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 200,
+  "items": [
+    {
+      "japanese": "田中さんは毎朝七時に起きます。八時に会社へ行きます。昼ごはんは会社の食堂で食べます。夜は家で本を読みます。",
+      "meaning": {
+        "vi": "Anh Tanaka mỗi sáng thức dậy lúc 7 giờ. Lúc 8 giờ anh đi đến công ty. Bữa trưa anh ăn ở nhà ăn của công ty. Buổi tối anh đọc sách ở nhà.",
+        "en": "Mr. Tanaka gets up at seven every morning. He goes to the office at eight. He eats lunch at the company canteen. In the evening he reads a book at home."
+      },
+      "reading": "たなかさんはまいあさしちじにおきます。はちじにかいしゃへいきます。ひるごはんはかいしゃのしょくどうでたべます。よるはいえでほんをよみます。",
+      "explanation": {
+        "vi": "「～に」đứng sau giờ giấc (七時に, 八時に); 「～で」chỉ nơi diễn ra hành động (食堂で, 家で).",
+        "en": "「～に」 follows a time (七時に, 八時に); 「～で」 marks where an action happens (食堂で, 家で)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Anh Tanaka đi làm lúc mấy giờ?",
+        "en": "What time does Mr. Tanaka go to work?"
+      },
+      "payload": {
+        "choices": [
+          "7:00",
+          "8:00",
+          "9:00"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn nói 八時に会社へ行きます.",
+        "en": "Correct! The text says 八時に会社へ行きます."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 7 giờ là lúc anh thức dậy (七時に起きます); anh đi làm lúc 8 giờ (八時).",
+        "en": "Not quite. Seven is when he gets up (七時に起きます); he goes to work at eight (八時)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Anh Tanaka ăn trưa ở đâu?",
+        "en": "Where does Mr. Tanaka eat lunch?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ở nhà",
+            "en": "At home"
+          },
+          {
+            "vi": "Ở nhà hàng gần ga",
+            "en": "At a restaurant near the station"
+          },
+          {
+            "vi": "Ở nhà ăn của công ty",
+            "en": "At the company canteen"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 昼ごはんは会社の食堂で食べます.",
+        "en": "Correct! 昼ごはんは会社の食堂で食べます."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đoạn văn nói bữa trưa ăn ở 会社の食堂 (nhà ăn của công ty).",
+        "en": "Not quite. The text says lunch is at 会社の食堂 (the company canteen)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Buổi tối anh Tanaka làm gì?",
+        "en": "What does Mr. Tanaka do in the evening?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đọc sách ở nhà",
+            "en": "Reads a book at home"
+          },
+          {
+            "vi": "Xem phim ở rạp",
+            "en": "Watches a movie at the cinema"
+          },
+          {
+            "vi": "Đi mua sắm",
+            "en": "Goes shopping"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夜は家で本を読みます.",
+        "en": "Correct! 夜は家で本を読みます."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu cuối nói 夜は家で本を読みます: buổi tối anh đọc sách ở nhà.",
+        "en": "Not quite. The last sentence says 夜は家で本を読みます: he reads a book at home in the evening."
+      }
+    }
+  ]
+}

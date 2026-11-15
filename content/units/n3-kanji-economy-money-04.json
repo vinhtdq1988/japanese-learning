@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (銭 損 貯 納)",
+    "en": "Economy and money kanji (銭 損 貯 納)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "銭",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "tiền xu; tiền",
+        "en": "coin; money"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セン"
+        ],
+        "kunReadings": [
+          "ぜに"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "金銭",
+          "reading": "きんせん",
+          "kanjiReading": "セン",
+          "translation": {
+            "vi": "tiền bạc",
+            "en": "money"
+          }
+        },
+        {
+          "ja": "銭湯",
+          "reading": "せんとう",
+          "kanjiReading": "セン",
+          "translation": {
+            "vi": "nhà tắm công cộng",
+            "en": "public bath"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "損",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "thiệt; mất",
+        "en": "loss; damage"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソン"
+        ],
+        "kunReadings": [
+          "そこ.なう",
+          "そこ.ねる"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "損害",
+          "reading": "そんがい",
+          "kanjiReading": "ソン",
+          "translation": {
+            "vi": "thiệt hại",
+            "en": "damage"
+          }
+        },
+        {
+          "ja": "損なう",
+          "reading": "そこなう",
+          "kanjiReading": "そこ",
+          "translation": {
+            "vi": "làm hỏng",
+            "en": "to harm"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貯",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "tích trữ; để dành",
+        "en": "store; save"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "貯金",
+          "reading": "ちょきん",
+          "kanjiReading": "チョ",
+          "translation": {
+            "vi": "tiền tiết kiệm",
+            "en": "savings"
+          }
+        },
+        {
+          "ja": "貯蔵",
+          "reading": "ちょぞう",
+          "kanjiReading": "チョ",
+          "translation": {
+            "vi": "lưu trữ",
+            "en": "storage"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "納",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "nộp; thu nhận",
+        "en": "pay; accept"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ノウ",
+          "ナッ",
+          "ナ",
+          "トウ"
+        ],
+        "kunReadings": [
+          "おさ.める",
+          "おさ.まる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "納税",
+          "reading": "のうぜい",
+          "kanjiReading": "ノウ",
+          "translation": {
+            "vi": "nộp thuế",
+            "en": "tax payment"
+          }
+        },
+        {
+          "ja": "納める",
+          "reading": "おさめる",
+          "kanjiReading": "おさ",
+          "translation": {
+            "vi": "nộp; cất",
+            "en": "to pay; to store"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "銭",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銭」nghĩa là gì?",
+        "en": "What does 「銭」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tiền xu; tiền",
+            "en": "coin; money"
+          },
+          {
+            "vi": "thiệt; mất",
+            "en": "loss; damage"
+          },
+          {
+            "vi": "tích trữ; để dành",
+            "en": "store; save"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銭 nghĩa là tiền xu; tiền.",
+        "en": "Correct! 銭 means coin; money."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 銭 nghĩa là tiền xu; tiền, như trong 「金銭」 (tiền bạc).",
+        "en": "Not quite. 銭 means coin; money, as in 「金銭」 (money)."
+      }
+    },
+    {
+      "item": "銭",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「銭」 trong 「金銭」 (“tiền bạc”).",
+        "en": "Type the reading of 「銭」 in 「金銭」 (“money”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せん",
+          "セン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 金銭, 銭 đọc là せん (âm On).",
+        "en": "Correct! In 金銭, 銭 is read せん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 金銭 (tiền bạc), 銭 đọc là せん (âm On).",
+        "en": "In 金銭 (money), 銭 is read せん (on'yomi)."
+      }
+    },
+    {
+      "item": "銭",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銭湯」(nhà tắm công cộng) đọc là gì?",
+        "en": "How is 「銭湯」 (public bath) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜにとう",
+          "せんとう",
+          "ぜんとう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銭湯 = せんとう (nhà tắm công cộng); 銭 đọc là せん (âm On).",
+        "en": "Correct! 銭湯 = せんとう (public bath); 銭 is read せん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "銭湯 đọc là せんとう (nhà tắm công cộng): 銭 mang âm On せん.",
+        "en": "銭湯 is read せんとう (public bath): 銭 takes the on'yomi せん."
+      }
+    },
+    {
+      "item": "損",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「損」nghĩa là gì?",
+        "en": "What does 「損」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tích trữ; để dành",
+            "en": "store; save"
+          },
+          {
+            "vi": "thiệt; mất",
+            "en": "loss; damage"
+          },
+          {
+            "vi": "nộp; thu nhận",
+            "en": "pay; accept"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 損 nghĩa là thiệt; mất.",
+        "en": "Correct! 損 means loss; damage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 損 nghĩa là thiệt; mất, như trong 「損害」 (thiệt hại).",
+        "en": "Not quite. 損 means loss; damage, as in 「損害」 (damage)."
+      }
+    },
+    {
+      "item": "損",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「損」 trong 「損害」 (“thiệt hại”).",
+        "en": "Type the reading of 「損」 in 「損害」 (“damage”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そん",
+          "ソン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 損害, 損 đọc là そん (âm On).",
+        "en": "Correct! In 損害, 損 is read そん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 損害 (thiệt hại), 損 đọc là そん (âm On).",
+        "en": "In 損害 (damage), 損 is read そん (on'yomi)."
+      }
+    },
+    {
+      "item": "損",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「損なう」(làm hỏng) đọc là gì?",
+        "en": "How is 「損なう」 (to harm) read?"
+      },
+      "payload": {
+        "choices": [
+          "そんなう",
+          "ちょぞう",
+          "そこなう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 損なう = そこなう (làm hỏng); 損 đọc là そこ (âm Kun).",
+        "en": "Correct! 損なう = そこなう (to harm); 損 is read そこ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "損なう đọc là そこなう (làm hỏng): 損 mang âm Kun そこ.",
+        "en": "損なう is read そこなう (to harm): 損 takes the kun'yomi そこ."
+      }
+    },
+    {
+      "item": "貯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貯」nghĩa là gì?",
+        "en": "What does 「貯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nộp; thu nhận",
+            "en": "pay; accept"
+          },
+          {
+            "vi": "tiền xu; tiền",
+            "en": "coin; money"
+          },
+          {
+            "vi": "tích trữ; để dành",
+            "en": "store; save"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貯 nghĩa là tích trữ; để dành.",
+        "en": "Correct! 貯 means store; save."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 貯 nghĩa là tích trữ; để dành, như trong 「貯金」 (tiền tiết kiệm).",
+        "en": "Not quite. 貯 means store; save, as in 「貯金」 (savings)."
+      }
+    },
+    {
+      "item": "貯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「貯」 trong 「貯金」 (“tiền tiết kiệm”).",
+        "en": "Type the reading of 「貯」 in 「貯金」 (“savings”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょ",
+          "チョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 貯金, 貯 đọc là ちょ (âm On).",
+        "en": "Correct! In 貯金, 貯 is read ちょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 貯金 (tiền tiết kiệm), 貯 đọc là ちょ (âm On).",
+        "en": "In 貯金 (savings), 貯 is read ちょ (on'yomi)."
+      }
+    },
+    {
+      "item": "貯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貯蔵」(lưu trữ) đọc là gì?",
+        "en": "How is 「貯蔵」 (storage) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちょぞう",
+          "ちょそう",
+          "おさぞう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貯蔵 = ちょぞう (lưu trữ); 貯 đọc là ちょ (âm On).",
+        "en": "Correct! 貯蔵 = ちょぞう (storage); 貯 is read ちょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "貯蔵 đọc là ちょぞう (lưu trữ): 貯 mang âm On ちょ.",
+        "en": "貯蔵 is read ちょぞう (storage): 貯 takes the on'yomi ちょ."
+      }
+    },
+    {
+      "item": "納",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「納」nghĩa là gì?",
+        "en": "What does 「納」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nộp; thu nhận",
+            "en": "pay; accept"
+          },
+          {
+            "vi": "tiền xu; tiền",
+            "en": "coin; money"
+          },
+          {
+            "vi": "thiệt; mất",
+            "en": "loss; damage"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 納 nghĩa là nộp; thu nhận.",
+        "en": "Correct! 納 means pay; accept."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 納 nghĩa là nộp; thu nhận, như trong 「納税」 (nộp thuế).",
+        "en": "Not quite. 納 means pay; accept, as in 「納税」 (tax payment)."
+      }
+    },
+    {
+      "item": "納",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「納」 trong 「納税」 (“nộp thuế”).",
+        "en": "Type the reading of 「納」 in 「納税」 (“tax payment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "のう",
+          "ノウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 納税, 納 đọc là のう (âm On).",
+        "en": "Correct! In 納税, 納 is read のう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 納税 (nộp thuế), 納 đọc là のう (âm On).",
+        "en": "In 納税 (tax payment), 納 is read のう (on'yomi)."
+      }
+    },
+    {
+      "item": "納",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「納める」(nộp; cất) đọc là gì?",
+        "en": "How is 「納める」 (to pay; to store) read?"
+      },
+      "payload": {
+        "choices": [
+          "のうめる",
+          "おさめる",
+          "きんせん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 納める = おさめる (nộp; cất); 納 đọc là おさ (âm Kun).",
+        "en": "Correct! 納める = おさめる (to pay; to store); 納 is read おさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "納める đọc là おさめる (nộp; cất): 納 mang âm Kun おさ.",
+        "en": "納める is read おさめる (to pay; to store): 納 takes the kun'yomi おさ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "銭",
+            {
+              "vi": "tiền xu; tiền",
+              "en": "coin; money"
+            }
+          ],
+          [
+            "損",
+            {
+              "vi": "thiệt; mất",
+              "en": "loss; damage"
+            }
+          ],
+          [
+            "貯",
+            {
+              "vi": "tích trữ; để dành",
+              "en": "store; save"
+            }
+          ],
+          [
+            "納",
+            {
+              "vi": "nộp; thu nhận",
+              "en": "pay; accept"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

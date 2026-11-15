@@ -1,0 +1,674 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (画 図 写 映 紙)",
+    "en": "School and learning kanji (画 図 写 映 紙)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "画",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "tranh; kế hoạch",
+        "en": "picture; plan"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガ",
+          "カク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "映画",
+          "reading": "えいが",
+          "kanjiReading": "ガ",
+          "translation": {
+            "vi": "phim",
+            "en": "movie"
+          }
+        },
+        {
+          "ja": "計画",
+          "reading": "けいかく",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "kế hoạch",
+            "en": "plan"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "図",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "bản vẽ; sơ đồ",
+        "en": "diagram; map"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ズ",
+          "ト"
+        ],
+        "kunReadings": [
+          "はか.る"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "地図",
+          "reading": "ちず",
+          "kanjiReading": "ズ",
+          "translation": {
+            "vi": "bản đồ",
+            "en": "map"
+          }
+        },
+        {
+          "ja": "図書館",
+          "reading": "としょかん",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "thư viện",
+            "en": "library"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "写",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "chép; chụp",
+        "en": "copy; photograph"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シャ"
+        ],
+        "kunReadings": [
+          "うつ.す",
+          "うつ.る"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "写真",
+          "reading": "しゃしん",
+          "kanjiReading": "シャ",
+          "translation": {
+            "vi": "bức ảnh",
+            "en": "photograph"
+          }
+        },
+        {
+          "ja": "写す",
+          "reading": "うつす",
+          "kanjiReading": "うつ",
+          "translation": {
+            "vi": "chụp; chép",
+            "en": "to copy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "映",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "chiếu; phản chiếu",
+        "en": "reflect; project"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エイ"
+        ],
+        "kunReadings": [
+          "うつ.る",
+          "は.える"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "映画",
+          "reading": "えいが",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "phim",
+            "en": "movie"
+          }
+        },
+        {
+          "ja": "映る",
+          "reading": "うつる",
+          "kanjiReading": "うつ",
+          "translation": {
+            "vi": "được chiếu; hiện lên",
+            "en": "to be reflected"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "紙",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "giấy",
+        "en": "paper"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "かみ"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "表紙",
+          "reading": "ひょうし",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "bìa sách",
+            "en": "cover"
+          }
+        },
+        {
+          "ja": "紙",
+          "reading": "かみ",
+          "kanjiReading": "かみ",
+          "translation": {
+            "vi": "giấy",
+            "en": "paper"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "画",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「画」nghĩa là gì?",
+        "en": "What does 「画」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tranh; kế hoạch",
+            "en": "picture; plan"
+          },
+          {
+            "vi": "bản vẽ; sơ đồ",
+            "en": "diagram; map"
+          },
+          {
+            "vi": "chép; chụp",
+            "en": "copy; photograph"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 画 nghĩa là tranh; kế hoạch.",
+        "en": "Correct! 画 means picture; plan."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 画 nghĩa là tranh; kế hoạch, như trong 「映画」 (phim).",
+        "en": "Not quite. 画 means picture; plan, as in 「映画」 (movie)."
+      }
+    },
+    {
+      "item": "画",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「画」 trong 「映画」 (“phim”).",
+        "en": "Type the reading of 「画」 in 「映画」 (“movie”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "が",
+          "ガ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 映画, 画 đọc là が (âm On).",
+        "en": "Correct! In 映画, 画 is read が (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 映画 (phim), 画 đọc là が (âm On).",
+        "en": "In 映画 (movie), 画 is read が (on'yomi)."
+      }
+    },
+    {
+      "item": "画",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「計画」(kế hoạch) đọc là gì?",
+        "en": "How is 「計画」 (plan) read?"
+      },
+      "payload": {
+        "choices": [
+          "けいが",
+          "けいかく",
+          "けいがく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 計画 = けいかく (kế hoạch); 画 đọc là かく (âm On).",
+        "en": "Correct! 計画 = けいかく (plan); 画 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "計画 đọc là けいかく (kế hoạch): 画 mang âm On かく.",
+        "en": "計画 is read けいかく (plan): 画 takes the on'yomi かく."
+      }
+    },
+    {
+      "item": "図",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「図」nghĩa là gì?",
+        "en": "What does 「図」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chép; chụp",
+            "en": "copy; photograph"
+          },
+          {
+            "vi": "bản vẽ; sơ đồ",
+            "en": "diagram; map"
+          },
+          {
+            "vi": "chiếu; phản chiếu",
+            "en": "reflect; project"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 図 nghĩa là bản vẽ; sơ đồ.",
+        "en": "Correct! 図 means diagram; map."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 図 nghĩa là bản vẽ; sơ đồ, như trong 「地図」 (bản đồ).",
+        "en": "Not quite. 図 means diagram; map, as in 「地図」 (map)."
+      }
+    },
+    {
+      "item": "図",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「図」 trong 「地図」 (“bản đồ”).",
+        "en": "Type the reading of 「図」 in 「地図」 (“map”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ず",
+          "ズ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 地図, 図 đọc là ず (âm On).",
+        "en": "Correct! In 地図, 図 is read ず (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 地図 (bản đồ), 図 đọc là ず (âm On).",
+        "en": "In 地図 (map), 図 is read ず (on'yomi)."
+      }
+    },
+    {
+      "item": "図",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「図書館」(thư viện) đọc là gì?",
+        "en": "How is 「図書館」 (library) read?"
+      },
+      "payload": {
+        "choices": [
+          "はかしょかん",
+          "どしょかん",
+          "としょかん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 図書館 = としょかん (thư viện); 図 đọc là と (âm On).",
+        "en": "Correct! 図書館 = としょかん (library); 図 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "図書館 đọc là としょかん (thư viện): 図 mang âm On と.",
+        "en": "図書館 is read としょかん (library): 図 takes the on'yomi と."
+      }
+    },
+    {
+      "item": "写",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「写」nghĩa là gì?",
+        "en": "What does 「写」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chiếu; phản chiếu",
+            "en": "reflect; project"
+          },
+          {
+            "vi": "giấy",
+            "en": "paper"
+          },
+          {
+            "vi": "chép; chụp",
+            "en": "copy; photograph"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 写 nghĩa là chép; chụp.",
+        "en": "Correct! 写 means copy; photograph."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 写 nghĩa là chép; chụp, như trong 「写真」 (bức ảnh).",
+        "en": "Not quite. 写 means copy; photograph, as in 「写真」 (photograph)."
+      }
+    },
+    {
+      "item": "写",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「写」 trong 「写真」 (“bức ảnh”).",
+        "en": "Type the reading of 「写」 in 「写真」 (“photograph”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゃ",
+          "シャ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 写真, 写 đọc là しゃ (âm On).",
+        "en": "Correct! In 写真, 写 is read しゃ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 写真 (bức ảnh), 写 đọc là しゃ (âm On).",
+        "en": "In 写真 (photograph), 写 is read しゃ (on'yomi)."
+      }
+    },
+    {
+      "item": "写",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「写す」(chụp; chép) đọc là gì?",
+        "en": "How is 「写す」 (to copy) read?"
+      },
+      "payload": {
+        "choices": [
+          "うつす",
+          "しゃす",
+          "えいが"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 写す = うつす (chụp; chép); 写 đọc là うつ (âm Kun).",
+        "en": "Correct! 写す = うつす (to copy); 写 is read うつ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "写す đọc là うつす (chụp; chép): 写 mang âm Kun うつ.",
+        "en": "写す is read うつす (to copy): 写 takes the kun'yomi うつ."
+      }
+    },
+    {
+      "item": "映",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「映」nghĩa là gì?",
+        "en": "What does 「映」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chiếu; phản chiếu",
+            "en": "reflect; project"
+          },
+          {
+            "vi": "giấy",
+            "en": "paper"
+          },
+          {
+            "vi": "tranh; kế hoạch",
+            "en": "picture; plan"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 映 nghĩa là chiếu; phản chiếu.",
+        "en": "Correct! 映 means reflect; project."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 映 nghĩa là chiếu; phản chiếu, như trong 「映画」 (phim).",
+        "en": "Not quite. 映 means reflect; project, as in 「映画」 (movie)."
+      }
+    },
+    {
+      "item": "映",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「映」 trong 「映画」 (“phim”).",
+        "en": "Type the reading of 「映」 in 「映画」 (“movie”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えい",
+          "エイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 映画, 映 đọc là えい (âm On).",
+        "en": "Correct! In 映画, 映 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 映画 (phim), 映 đọc là えい (âm On).",
+        "en": "In 映画 (movie), 映 is read えい (on'yomi)."
+      }
+    },
+    {
+      "item": "映",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「映る」(được chiếu; hiện lên) đọc là gì?",
+        "en": "How is 「映る」 (to be reflected) read?"
+      },
+      "payload": {
+        "choices": [
+          "えいる",
+          "うつる",
+          "うずる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 映る = うつる (được chiếu; hiện lên); 映 đọc là うつ (âm Kun).",
+        "en": "Correct! 映る = うつる (to be reflected); 映 is read うつ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "映る đọc là うつる (được chiếu; hiện lên): 映 mang âm Kun うつ.",
+        "en": "映る is read うつる (to be reflected): 映 takes the kun'yomi うつ."
+      }
+    },
+    {
+      "item": "紙",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「紙」nghĩa là gì?",
+        "en": "What does 「紙」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tranh; kế hoạch",
+            "en": "picture; plan"
+          },
+          {
+            "vi": "giấy",
+            "en": "paper"
+          },
+          {
+            "vi": "bản vẽ; sơ đồ",
+            "en": "diagram; map"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 紙 nghĩa là giấy.",
+        "en": "Correct! 紙 means paper."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 紙 nghĩa là giấy, như trong 「表紙」 (bìa sách).",
+        "en": "Not quite. 紙 means paper, as in 「表紙」 (cover)."
+      }
+    },
+    {
+      "item": "紙",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「紙」 trong 「表紙」 (“bìa sách”).",
+        "en": "Type the reading of 「紙」 in 「表紙」 (“cover”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 表紙, 紙 đọc là し (âm On).",
+        "en": "Correct! In 表紙, 紙 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 表紙 (bìa sách), 紙 đọc là し (âm On).",
+        "en": "In 表紙 (cover), 紙 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "紙",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「紙」(giấy; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「紙」 (paper; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "し",
+          "ちず",
+          "かみ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 紙 = かみ (giấy); 紙 đọc là かみ (âm Kun).",
+        "en": "Correct! 紙 = かみ (paper); 紙 is read かみ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "紙 đọc là かみ (giấy): 紙 mang âm Kun かみ.",
+        "en": "紙 is read かみ (paper): 紙 takes the kun'yomi かみ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "画",
+            {
+              "vi": "tranh; kế hoạch",
+              "en": "picture; plan"
+            }
+          ],
+          [
+            "図",
+            {
+              "vi": "bản vẽ; sơ đồ",
+              "en": "diagram; map"
+            }
+          ],
+          [
+            "写",
+            {
+              "vi": "chép; chụp",
+              "en": "copy; photograph"
+            }
+          ],
+          [
+            "映",
+            {
+              "vi": "chiếu; phản chiếu",
+              "en": "reflect; project"
+            }
+          ],
+          [
+            "紙",
+            {
+              "vi": "giấy",
+              "en": "paper"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

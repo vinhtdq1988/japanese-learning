@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-time-calendar",
+  "title": {
+    "vi": "Kanji thời gian – lịch (早 始 終)",
+    "en": "Time and calendar kanji (早 始 終)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "早",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "sớm; nhanh",
+        "en": "early; fast"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ",
+          "サッ"
+        ],
+        "kunReadings": [
+          "はや.い",
+          "はや.まる"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "早朝",
+          "reading": "そうちょう",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "sáng sớm",
+            "en": "early morning"
+          }
+        },
+        {
+          "ja": "早い",
+          "reading": "はやい",
+          "kanjiReading": "はや",
+          "translation": {
+            "vi": "sớm; nhanh",
+            "en": "early; fast"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "始",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "bắt đầu",
+        "en": "begin"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "はじ.める",
+          "はじ.まる"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "開始",
+          "reading": "かいし",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "bắt đầu",
+            "en": "start"
+          }
+        },
+        {
+          "ja": "始める",
+          "reading": "はじめる",
+          "kanjiReading": "はじ",
+          "translation": {
+            "vi": "bắt đầu",
+            "en": "to begin"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "終",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "kết thúc",
+        "en": "end"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "お.わる",
+          "お.える"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "終電",
+          "reading": "しゅうでん",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "chuyến tàu cuối",
+            "en": "last train"
+          }
+        },
+        {
+          "ja": "終わり",
+          "reading": "おわり",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "sự kết thúc",
+            "en": "the end"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "早",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「早」nghĩa là gì?",
+        "en": "What does 「早」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sớm; nhanh",
+            "en": "early; fast"
+          },
+          {
+            "vi": "bắt đầu",
+            "en": "begin"
+          },
+          {
+            "vi": "kết thúc",
+            "en": "end"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 早 nghĩa là sớm; nhanh.",
+        "en": "Correct! 早 means early; fast."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 早 nghĩa là sớm; nhanh, như trong 「早朝」 (sáng sớm).",
+        "en": "Not quite. 早 means early; fast, as in 「早朝」 (early morning)."
+      }
+    },
+    {
+      "item": "早",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「早」 trong 「早朝」 (“sáng sớm”).",
+        "en": "Type the reading of 「早」 in 「早朝」 (“early morning”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 早朝, 早 đọc là そう (âm On).",
+        "en": "Correct! In 早朝, 早 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 早朝 (sáng sớm), 早 đọc là そう (âm On).",
+        "en": "In 早朝 (early morning), 早 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "早",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「早い」(sớm; nhanh) đọc là gì?",
+        "en": "How is 「早い」 (early; fast) read?"
+      },
+      "payload": {
+        "choices": [
+          "そうい",
+          "はやい",
+          "かいし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 早い = はやい (sớm; nhanh); 早 đọc là はや (âm Kun).",
+        "en": "Correct! 早い = はやい (early; fast); 早 is read はや (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "早い đọc là はやい (sớm; nhanh): 早 mang âm Kun はや.",
+        "en": "早い is read はやい (early; fast): 早 takes the kun'yomi はや."
+      }
+    },
+    {
+      "item": "始",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「始」nghĩa là gì?",
+        "en": "What does 「始」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kết thúc",
+            "en": "end"
+          },
+          {
+            "vi": "bắt đầu",
+            "en": "begin"
+          },
+          {
+            "vi": "sớm; nhanh",
+            "en": "early; fast"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 始 nghĩa là bắt đầu.",
+        "en": "Correct! 始 means begin."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 始 nghĩa là bắt đầu, như trong 「開始」 (bắt đầu).",
+        "en": "Not quite. 始 means begin, as in 「開始」 (start)."
+      }
+    },
+    {
+      "item": "始",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「始」 trong 「開始」 (“bắt đầu”).",
+        "en": "Type the reading of 「始」 in 「開始」 (“start”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 開始, 始 đọc là し (âm On).",
+        "en": "Correct! In 開始, 始 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 開始 (bắt đầu), 始 đọc là し (âm On).",
+        "en": "In 開始 (start), 始 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "始",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「始める」(bắt đầu) đọc là gì?",
+        "en": "How is 「始める」 (to begin) read?"
+      },
+      "payload": {
+        "choices": [
+          "しめる",
+          "しゅうでん",
+          "はじめる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 始める = はじめる (bắt đầu); 始 đọc là はじ (âm Kun).",
+        "en": "Correct! 始める = はじめる (to begin); 始 is read はじ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "始める đọc là はじめる (bắt đầu): 始 mang âm Kun はじ.",
+        "en": "始める is read はじめる (to begin): 始 takes the kun'yomi はじ."
+      }
+    },
+    {
+      "item": "終",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「終」nghĩa là gì?",
+        "en": "What does 「終」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sớm; nhanh",
+            "en": "early; fast"
+          },
+          {
+            "vi": "bắt đầu",
+            "en": "begin"
+          },
+          {
+            "vi": "kết thúc",
+            "en": "end"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 終 nghĩa là kết thúc.",
+        "en": "Correct! 終 means end."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 終 nghĩa là kết thúc, như trong 「終電」 (chuyến tàu cuối).",
+        "en": "Not quite. 終 means end, as in 「終電」 (last train)."
+      }
+    },
+    {
+      "item": "終",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「終」 trong 「終電」 (“chuyến tàu cuối”).",
+        "en": "Type the reading of 「終」 in 「終電」 (“last train”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 終電, 終 đọc là しゅう (âm On).",
+        "en": "Correct! In 終電, 終 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 終電 (chuyến tàu cuối), 終 đọc là しゅう (âm On).",
+        "en": "In 終電 (last train), 終 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "終",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「終わり」(sự kết thúc) đọc là gì?",
+        "en": "How is 「終わり」 (the end) read?"
+      },
+      "payload": {
+        "choices": [
+          "おわり",
+          "しゅうわり",
+          "はやい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 終わり = おわり (sự kết thúc); 終 đọc là お (âm Kun).",
+        "en": "Correct! 終わり = おわり (the end); 終 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "終わり đọc là おわり (sự kết thúc): 終 mang âm Kun お.",
+        "en": "終わり is read おわり (the end): 終 takes the kun'yomi お."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "早",
+            {
+              "vi": "sớm; nhanh",
+              "en": "early; fast"
+            }
+          ],
+          [
+            "始",
+            {
+              "vi": "bắt đầu",
+              "en": "begin"
+            }
+          ],
+          [
+            "終",
+            {
+              "vi": "kết thúc",
+              "en": "end"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

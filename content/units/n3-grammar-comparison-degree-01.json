@@ -1,0 +1,519 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-comparison-degree",
+  "title": {
+    "vi": "So sánh và mức độ (1): 〜に比べて, 〜わりに, 〜ほど, 〜にしては",
+    "en": "Comparison and degree (1): 〜に比べて, 〜わりに, 〜ほど, 〜にしては"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜に比べて",
+      "meaning": {
+        "vi": "So với ~",
+        "en": "Compared to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ / động từ thể thường + の + に比べて(くらべて) / に比べると. So sánh hai đối tượng; vế sau nêu sự khác biệt. Cách nói trang trọng: 〜と比べて.",
+        "en": "Usage: noun / plain form + の + に比べて(くらべて) / に比べると. Compares two things; the second clause states the difference. A formal variant is 〜と比べて."
+      },
+      "examples": [
+        {
+          "ja": "去年に比べて、今年は雪が少ないです。",
+          "reading": "きょねんにくらべて、ことしはゆきがすくないです。",
+          "translation": {
+            "vi": "So với năm ngoái, năm nay tuyết ít hơn.",
+            "en": "Compared to last year, there is less snow this year."
+          }
+        },
+        {
+          "ja": "都会に比べると、田舎は家賃が安いです。",
+          "reading": "とかいにくらべると、いなかはやちんがやすいです。",
+          "translation": {
+            "vi": "So với thành phố, nông thôn có tiền thuê nhà rẻ hơn.",
+            "en": "Compared to the city, rent is cheaper in the countryside."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-062"
+    },
+    {
+      "japanese": "〜わりに（は）",
+      "meaning": {
+        "vi": "So với ~ thì khá ~",
+        "en": "Considering ~ (rather ~)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な; danh từ: の) + わりに(は). Kết quả trái với mức mà thông thường nghĩ tới (\"xét ra thì hơi ngược dự đoán\"). Có thể là tốt hoặc xấu. Khác 〜のに: わりに là mức độ lệch nhẹ, 〜のに là trái ngược rõ.",
+        "en": "Usage: plain form (な: な; noun: の) + わりに(は). The result differs from what is normally expected (\"rather ~ for ~\"), good or bad. Unlike 〜のに, which marks a sharp contradiction, わりに signals a mild deviation."
+      },
+      "examples": [
+        {
+          "ja": "この店は、安いわりに、おいしいです。",
+          "reading": "このみせは、やすいわりに、おいしいです。",
+          "translation": {
+            "vi": "Quán này tuy rẻ nhưng khá ngon.",
+            "en": "This restaurant is quite tasty considering how cheap it is."
+          }
+        },
+        {
+          "ja": "彼は、年のわりに若く見えます。",
+          "reading": "かれは、としのわりにわかくみえます。",
+          "translation": {
+            "vi": "Anh ấy trông trẻ so với tuổi.",
+            "en": "He looks young for his age."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-063"
+    },
+    {
+      "japanese": "〜ほど（程度）",
+      "meaning": {
+        "vi": "Đến mức ~",
+        "en": "To the extent that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない, tính từ, danh từ + ほど. Chỉ mức độ ví dụ để nhấn mạnh (涙が出るほど笑った). Khác 〜くらい: ほど thường dùng cho mức độ mạnh, hay đi trước vế mô tả; có thể dùng 〜ば〜ほど.",
+        "en": "Usage: verb dictionary/ない-form, adjective, noun + ほど. Gives a degree by example for emphasis (涙が出るほど笑った). Unlike 〜くらい, ほど often signals a strong degree and precedes the description; it also appears in 〜ば〜ほど."
+      },
+      "examples": [
+        {
+          "ja": "涙が出るほど、笑いました。",
+          "reading": "なみだがでるほど、わらいました。",
+          "translation": {
+            "vi": "Tôi đã cười đến mức chảy nước mắt.",
+            "en": "I laughed so hard that tears came out."
+          }
+        },
+        {
+          "ja": "驚くほど、料金が安かったです。",
+          "reading": "おどろくほど、りょうきんがやすかったです。",
+          "translation": {
+            "vi": "Giá rẻ đến mức đáng ngạc nhiên.",
+            "en": "The fare was surprisingly cheap."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-064"
+    },
+    {
+      "japanese": "〜にしては",
+      "meaning": {
+        "vi": "Xét là ~ thì (trái dự đoán)",
+        "en": "For ~, (unexpectedly) ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (danh từ, tính từ な bỏ だ) + にしては. Từ một sự thật đã biết, lẽ ra phải như X nhưng thực tế lại khác (\"tuy là ~ nhưng\"). Thường mang ý khen hoặc ngạc nhiên.",
+        "en": "Usage: plain form (drop だ for nouns and な-adjectives) + にしては. Given a known fact one would expect X, but reality differs (\"for a ~, it is ~\"). Often praising or surprised."
+      },
+      "examples": [
+        {
+          "ja": "初めてにしては、よくできました。",
+          "reading": "はじめてにしては、よくできました。",
+          "translation": {
+            "vi": "Xét là lần đầu thì làm tốt lắm.",
+            "en": "You did well for a first time."
+          }
+        },
+        {
+          "ja": "小学生にしては、背が高いですね。",
+          "reading": "しょうがくせいにしては、せがたかいですね。",
+          "translation": {
+            "vi": "Xét là học sinh tiểu học thì cao thật.",
+            "en": "You are tall for an elementary school student."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-069"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜に比べて",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n去年（　）、今年は雪が少ないです。",
+        "en": "Choose the correct option for the blank:\n去年（　）、今年は雪が少ないです。"
+      },
+      "payload": {
+        "choices": [
+          "に比べて",
+          "にとって",
+          "について",
+          "において"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! So sánh hai năm: 「去年に比べて」.",
+        "en": "Correct! Comparing two years: 「去年に比べて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. So sánh hai năm: 「去年に比べて」.",
+        "en": "Not quite. Comparing two years: 「去年に比べて」."
+      }
+    },
+    {
+      "item": "〜に比べて",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n都会___と、田舎は家賃が安いです。",
+        "en": "Choose the correct option for the blank:\n都会___と、田舎は家賃が安いです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "に比べる",
+          "にくらべる",
+          "に比べ"
+        ],
+        "hint": "〜に比べる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dạng điều kiện của so sánh: 「都会に比べると」 (chỗ trống là 「に比べる」).",
+        "en": "Correct! The conditional form of comparison: 「都会に比べると」 (the blank is 「に比べる」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dạng điều kiện của so sánh: 「都会に比べると」 (chỗ trống là 「に比べる」).",
+        "en": "Not quite. The conditional form of comparison: 「都会に比べると」 (the blank is 「に比べる」)."
+      }
+    },
+    {
+      "item": "〜に比べて",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "兄に比べて、弟は背が高いませんでした。",
+          "兄に比べるて、弟は背が高いです。",
+          "兄に比べて、弟は背が高くです。",
+          "兄に比べて、弟は背が高いです。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「AはBに比べて〜」 và vế sau là câu bình thường.",
+        "en": "Correct! The pattern 「AはBに比べて〜」 with a normal clause after it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「AはBに比べて〜」 và vế sau là câu bình thường.",
+        "en": "Not quite. The pattern 「AはBに比べて〜」 with a normal clause after it."
+      }
+    },
+    {
+      "item": "〜わりに（は）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの店は、安い（　）、おいしいです。",
+        "en": "Choose the correct option for the blank:\nこの店は、安い（　）、おいしいです。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ものの",
+          "わりに",
+          "ばかりに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quán rẻ mà vẫn khá ngon (lệch dự đoán nhẹ): 「安いわりに」.",
+        "en": "Correct! Cheap yet quite tasty (a mild deviation): 「安いわりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quán rẻ mà vẫn khá ngon (lệch dự đoán nhẹ): 「安いわりに」.",
+        "en": "Not quite. Cheap yet quite tasty (a mild deviation): 「安いわりに」."
+      }
+    },
+    {
+      "item": "〜わりに（は）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、年の___若く見えます。",
+        "en": "Choose the correct option for the blank:\n彼は、年の___若く見えます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "わりに"
+        ],
+        "hint": "〜わりに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + の + わりに: 「年のわりに」.",
+        "en": "Correct! Noun + の + わりに: 「年のわりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + の + わりに: 「年のわりに」.",
+        "en": "Not quite. Noun + の + わりに: 「年のわりに」."
+      }
+    },
+    {
+      "item": "〜わりに（は）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n勉強しなかった（　）、いい点が取れました。",
+        "en": "Choose the pattern that best fits the context:\n勉強しなかった（　）、いい点が取れました。"
+      },
+      "payload": {
+        "choices": [
+          "おかげで",
+          "わりに",
+          "せいで",
+          "ばかりに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không học mà điểm vẫn tốt, ngược dự đoán: 「わりに」.",
+        "en": "Correct! Did not study yet got a good score, contrary to expectation: 「わりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không học mà điểm vẫn tốt, ngược dự đoán: 「わりに」.",
+        "en": "Not quite. Did not study yet got a good score, contrary to expectation: 「わりに」."
+      }
+    },
+    {
+      "item": "〜ほど（程度）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n涙が出る（　）、笑いました。",
+        "en": "Choose the correct option for the blank:\n涙が出る（　）、笑いました。"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "ばかり",
+          "だけ",
+          "まで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mức độ nhấn mạnh (đến mức chảy nước mắt): 「出るほど」.",
+        "en": "Correct! A degree for emphasis (to the point of tears): 「出るほど」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mức độ nhấn mạnh (đến mức chảy nước mắt): 「出るほど」.",
+        "en": "Not quite. A degree for emphasis (to the point of tears): 「出るほど」."
+      }
+    },
+    {
+      "item": "〜ほど（程度）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n驚く___、料金が安かったです。",
+        "en": "Choose the correct option for the blank:\n驚く___、料金が安かったです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほど"
+        ],
+        "hint": "〜ほど"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Rẻ đến mức đáng kinh ngạc: 「驚くほど」.",
+        "en": "Correct! So cheap it is astonishing: 「驚くほど」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Rẻ đến mức đáng kinh ngạc: 「驚くほど」.",
+        "en": "Not quite. So cheap it is astonishing: 「驚くほど」."
+      }
+    },
+    {
+      "item": "〜ほど（程度）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "歩けないほどを、疲れました。",
+          "歩けないほどが、疲れました。",
+          "歩けないほどに疲れましたほど。",
+          "歩けないほど、疲れました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mức độ đứng trước vế mô tả: 「歩けないほど、疲れました」.",
+        "en": "Correct! The degree comes before the description: 「歩けないほど、疲れました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mức độ đứng trước vế mô tả: 「歩けないほど、疲れました」.",
+        "en": "Not quite. The degree comes before the description: 「歩けないほど、疲れました」."
+      }
+    },
+    {
+      "item": "〜にしては",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n初めて（　）、よくできました。",
+        "en": "Choose the correct option for the blank:\n初めて（　）、よくできました。"
+      },
+      "payload": {
+        "choices": [
+          "にとって",
+          "において",
+          "にしては",
+          "に対して"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xét là lần đầu mà làm tốt: 「初めてにしては」.",
+        "en": "Correct! Doing well for a first time: 「初めてにしては」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xét là lần đầu mà làm tốt: 「初めてにしては」.",
+        "en": "Not quite. Doing well for a first time: 「初めてにしては」."
+      }
+    },
+    {
+      "item": "〜にしては",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n小学生___、背が高いですね。",
+        "en": "Choose the correct option for the blank:\n小学生___、背が高いですね。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にしては"
+        ],
+        "hint": "〜にしては"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xét là học sinh tiểu học mà cao: 「小学生にしては」.",
+        "en": "Correct! Tall for an elementary school student: 「小学生にしては」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xét là học sinh tiểu học mà cao: 「小学生にしては」.",
+        "en": "Not quite. Tall for an elementary school student: 「小学生にしては」."
+      }
+    },
+    {
+      "item": "〜にしては",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n彼は外国人（　）、敬語がとても上手です。",
+        "en": "Choose the pattern that best fits the context:\n彼は外国人（　）、敬語がとても上手です。"
+      },
+      "payload": {
+        "choices": [
+          "にとって",
+          "にしては",
+          "として",
+          "に比べて"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xét là người nước ngoài mà giỏi kính ngữ (trái dự đoán): 「にしては」.",
+        "en": "Correct! Good at honorifics for a foreigner (contrary to expectation): 「にしては」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xét là người nước ngoài mà giỏi kính ngữ (trái dự đoán): 「にしては」.",
+        "en": "Not quite. Good at honorifics for a foreigner (contrary to expectation): 「にしては」."
+      }
+    },
+    {
+      "item": "〜にしては",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n彼は　＿　＿　★　＿　。\n（外国人／にしては／敬語が／上手です）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n彼は　＿　＿　★　＿　。\n（外国人／にしては／敬語が／上手です）"
+      },
+      "payload": {
+        "choices": [
+          "敬語が",
+          "外国人",
+          "にしては",
+          "上手です"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「彼は外国人にしては敬語が上手です。」; ô ★ (thứ ba) là 「敬語が」 — thứ tự: 外国人 → にしては → 敬語が → 上手です.",
+        "en": "Correct! The correct sentence is 「彼は外国人にしては敬語が上手です。」; the ★ (third) slot is 「敬語が」 in the order 外国人 → にしては → 敬語が → 上手です."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「彼は外国人にしては敬語が上手です。」; ô ★ (thứ ba) là 「敬語が」 — thứ tự: 外国人 → にしては → 敬語が → 上手です.",
+        "en": "Not quite. The correct sentence is 「彼は外国人にしては敬語が上手です。」; the ★ (third) slot is 「敬語が」 in the order 外国人 → にしては → 敬語が → 上手です."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜に比べて",
+            {
+              "vi": "So với ~",
+              "en": "Compared to ~"
+            }
+          ],
+          [
+            "〜わりに（は）",
+            {
+              "vi": "So với ~ thì khá ~",
+              "en": "Considering ~ (rather ~)"
+            }
+          ],
+          [
+            "〜ほど（程度）",
+            {
+              "vi": "Đến mức ~",
+              "en": "To the extent that ~"
+            }
+          ],
+          [
+            "〜にしては",
+            {
+              "vi": "Xét là ~ thì (trái dự đoán)",
+              "en": "For ~, (unexpectedly) ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

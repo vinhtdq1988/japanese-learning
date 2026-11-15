@@ -1,0 +1,543 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-food-shopping",
+  "title": {
+    "vi": "Kanji ăn uống – mua sắm (飲 肉 飯 茶)",
+    "en": "Food and shopping kanji (飲 肉 飯 茶)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "飲",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "uống",
+        "en": "drink"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イン"
+        ],
+        "kunReadings": [
+          "の.む"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "飲食",
+          "reading": "いんしょく",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "ăn uống",
+            "en": "eating and drinking"
+          }
+        },
+        {
+          "ja": "飲む",
+          "reading": "のむ",
+          "kanjiReading": "の",
+          "translation": {
+            "vi": "uống",
+            "en": "to drink"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "肉",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "thịt",
+        "en": "meat"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ニク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "牛肉",
+          "reading": "ぎゅうにく",
+          "kanjiReading": "ニク",
+          "translation": {
+            "vi": "thịt bò",
+            "en": "beef"
+          }
+        },
+        {
+          "ja": "焼肉",
+          "reading": "やきにく",
+          "kanjiReading": "ニク",
+          "translation": {
+            "vi": "thịt nướng",
+            "en": "grilled meat"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "飯",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "cơm; bữa ăn",
+        "en": "meal; cooked rice"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン"
+        ],
+        "kunReadings": [
+          "めし"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "昼ご飯",
+          "reading": "ひるごはん",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "bữa trưa",
+            "en": "lunch"
+          }
+        },
+        {
+          "ja": "飯",
+          "reading": "めし",
+          "kanjiReading": "めし",
+          "translation": {
+            "vi": "cơm (cách nói thô)",
+            "en": "meal; rice"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "茶",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "trà",
+        "en": "tea"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チャ",
+          "サ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "喫茶店",
+          "reading": "きっさてん",
+          "kanjiReading": "サ",
+          "translation": {
+            "vi": "quán cà phê",
+            "en": "coffee shop"
+          }
+        },
+        {
+          "ja": "紅茶",
+          "reading": "こうちゃ",
+          "kanjiReading": "チャ",
+          "translation": {
+            "vi": "trà đen",
+            "en": "black tea"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "飲",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飲」nghĩa là gì?",
+        "en": "What does 「飲」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "uống",
+            "en": "drink"
+          },
+          {
+            "vi": "thịt",
+            "en": "meat"
+          },
+          {
+            "vi": "cơm; bữa ăn",
+            "en": "meal; cooked rice"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飲 nghĩa là uống.",
+        "en": "Correct! 飲 means drink."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 飲 nghĩa là uống, như trong 「飲食」 (ăn uống).",
+        "en": "Not quite. 飲 means drink, as in 「飲食」 (eating and drinking)."
+      }
+    },
+    {
+      "item": "飲",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「飲」 trong 「飲食」 (“ăn uống”).",
+        "en": "Type the reading of 「飲」 in 「飲食」 (“eating and drinking”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いん",
+          "イン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 飲食, 飲 đọc là いん (âm On).",
+        "en": "Correct! In 飲食, 飲 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 飲食 (ăn uống), 飲 đọc là いん (âm On).",
+        "en": "In 飲食 (eating and drinking), 飲 is read いん (on'yomi)."
+      }
+    },
+    {
+      "item": "飲",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飲む」(uống) đọc là gì?",
+        "en": "How is 「飲む」 (to drink) read?"
+      },
+      "payload": {
+        "choices": [
+          "いんむ",
+          "のむ",
+          "めし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飲む = のむ (uống); 飲 đọc là の (âm Kun).",
+        "en": "Correct! 飲む = のむ (to drink); 飲 is read の (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "飲む đọc là のむ (uống): 飲 mang âm Kun の.",
+        "en": "飲む is read のむ (to drink): 飲 takes the kun'yomi の."
+      }
+    },
+    {
+      "item": "肉",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「肉」nghĩa là gì?",
+        "en": "What does 「肉」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cơm; bữa ăn",
+            "en": "meal; cooked rice"
+          },
+          {
+            "vi": "thịt",
+            "en": "meat"
+          },
+          {
+            "vi": "trà",
+            "en": "tea"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 肉 nghĩa là thịt.",
+        "en": "Correct! 肉 means meat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 肉 nghĩa là thịt, như trong 「牛肉」 (thịt bò).",
+        "en": "Not quite. 肉 means meat, as in 「牛肉」 (beef)."
+      }
+    },
+    {
+      "item": "肉",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「肉」 trong 「牛肉」 (“thịt bò”).",
+        "en": "Type the reading of 「肉」 in 「牛肉」 (“beef”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "にく",
+          "ニク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 牛肉, 肉 đọc là にく (âm On).",
+        "en": "Correct! In 牛肉, 肉 is read にく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 牛肉 (thịt bò), 肉 đọc là にく (âm On).",
+        "en": "In 牛肉 (beef), 肉 is read にく (on'yomi)."
+      }
+    },
+    {
+      "item": "肉",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「焼肉」(thịt nướng) đọc là gì?",
+        "en": "How is 「焼肉」 (grilled meat) read?"
+      },
+      "payload": {
+        "choices": [
+          "やきめし",
+          "やきはん",
+          "やきにく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 焼肉 = やきにく (thịt nướng); 肉 đọc là にく (âm On).",
+        "en": "Correct! 焼肉 = やきにく (grilled meat); 肉 is read にく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "焼肉 đọc là やきにく (thịt nướng): 肉 mang âm On にく.",
+        "en": "焼肉 is read やきにく (grilled meat): 肉 takes the on'yomi にく."
+      }
+    },
+    {
+      "item": "飯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飯」nghĩa là gì?",
+        "en": "What does 「飯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trà",
+            "en": "tea"
+          },
+          {
+            "vi": "uống",
+            "en": "drink"
+          },
+          {
+            "vi": "cơm; bữa ăn",
+            "en": "meal; cooked rice"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飯 nghĩa là cơm; bữa ăn.",
+        "en": "Correct! 飯 means meal; cooked rice."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 飯 nghĩa là cơm; bữa ăn, như trong 「昼ご飯」 (bữa trưa).",
+        "en": "Not quite. 飯 means meal; cooked rice, as in 「昼ご飯」 (lunch)."
+      }
+    },
+    {
+      "item": "飯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「飯」 trong 「昼ご飯」 (“bữa trưa”).",
+        "en": "Type the reading of 「飯」 in 「昼ご飯」 (“lunch”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はん",
+          "ハン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 昼ご飯, 飯 đọc là はん (âm On).",
+        "en": "Correct! In 昼ご飯, 飯 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 昼ご飯 (bữa trưa), 飯 đọc là はん (âm On).",
+        "en": "In 昼ご飯 (lunch), 飯 is read はん (on'yomi)."
+      }
+    },
+    {
+      "item": "飯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飯」(cơm (cách nói thô); đứng riêng một mình) đọc là gì?",
+        "en": "How is 「飯」 (meal; rice; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "めし",
+          "はん",
+          "のむ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飯 = めし (cơm (cách nói thô)); 飯 đọc là めし (âm Kun).",
+        "en": "Correct! 飯 = めし (meal; rice); 飯 is read めし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "飯 đọc là めし (cơm (cách nói thô)): 飯 mang âm Kun めし.",
+        "en": "飯 is read めし (meal; rice): 飯 takes the kun'yomi めし."
+      }
+    },
+    {
+      "item": "茶",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「茶」nghĩa là gì?",
+        "en": "What does 「茶」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trà",
+            "en": "tea"
+          },
+          {
+            "vi": "uống",
+            "en": "drink"
+          },
+          {
+            "vi": "thịt",
+            "en": "meat"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 茶 nghĩa là trà.",
+        "en": "Correct! 茶 means tea."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 茶 nghĩa là trà, như trong 「喫茶店」 (quán cà phê).",
+        "en": "Not quite. 茶 means tea, as in 「喫茶店」 (coffee shop)."
+      }
+    },
+    {
+      "item": "茶",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「茶」 trong 「喫茶店」 (“quán cà phê”).",
+        "en": "Type the reading of 「茶」 in 「喫茶店」 (“coffee shop”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さ",
+          "サ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 喫茶店, 茶 đọc là さ (âm On).",
+        "en": "Correct! In 喫茶店, 茶 is read さ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 喫茶店 (quán cà phê), 茶 đọc là さ (âm On).",
+        "en": "In 喫茶店 (coffee shop), 茶 is read さ (on'yomi)."
+      }
+    },
+    {
+      "item": "茶",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「紅茶」(trà đen) đọc là gì?",
+        "en": "How is 「紅茶」 (black tea) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうさ",
+          "こうちゃ",
+          "こうの"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 紅茶 = こうちゃ (trà đen); 茶 đọc là ちゃ (âm On).",
+        "en": "Correct! 紅茶 = こうちゃ (black tea); 茶 is read ちゃ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "紅茶 đọc là こうちゃ (trà đen): 茶 mang âm On ちゃ.",
+        "en": "紅茶 is read こうちゃ (black tea): 茶 takes the on'yomi ちゃ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "飲",
+            {
+              "vi": "uống",
+              "en": "drink"
+            }
+          ],
+          [
+            "肉",
+            {
+              "vi": "thịt",
+              "en": "meat"
+            }
+          ],
+          [
+            "飯",
+            {
+              "vi": "cơm; bữa ăn",
+              "en": "meal; cooked rice"
+            }
+          ],
+          [
+            "茶",
+            {
+              "vi": "trà",
+              "en": "tea"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

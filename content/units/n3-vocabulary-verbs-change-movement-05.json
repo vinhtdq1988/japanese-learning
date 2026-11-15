@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-verbs-change-movement",
+  "title": {
+    "vi": "Di chuyển, ấn và kéo",
+    "en": "Moving, pushing and pulling"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "移動",
+      "reading": "いどう",
+      "meaning": {
+        "vi": "Di chuyển",
+        "en": "Movement; transfer"
+      },
+      "examples": [
+        {
+          "ja": "会議室への移動に、五分かかります。",
+          "reading": "かいぎしつへのいどうに、ごふんかかります。",
+          "translation": {
+            "vi": "Di chuyển đến phòng họp mất năm phút.",
+            "en": "Moving to the meeting room takes five minutes."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "引っ張る",
+      "reading": "ひっぱる",
+      "meaning": {
+        "vi": "Kéo",
+        "en": "To pull"
+      },
+      "examples": [
+        {
+          "ja": "ロープを、強く引っ張ることにしました。",
+          "reading": "ロープを、つよくひっぱることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định kéo mạnh sợi dây thừng.",
+            "en": "I decided to pull hard on the rope."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "押す",
+      "reading": "おす",
+      "meaning": {
+        "vi": "Ấn; đẩy",
+        "en": "To push; to press"
+      },
+      "examples": [
+        {
+          "ja": "ドアを、ゆっくり押すことにしました。",
+          "reading": "ドアを、ゆっくりおすことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định đẩy cánh cửa từ từ.",
+            "en": "I decided to push the door slowly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "押さえる",
+      "reading": "おさえる",
+      "meaning": {
+        "vi": "Giữ chặt; ấn giữ",
+        "en": "To hold down; to press"
+      },
+      "examples": [
+        {
+          "ja": "紙が飛ばないように、手で押さえることにしました。",
+          "reading": "かみがとばないように、てでおさえることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định dùng tay giữ giấy để khỏi bay.",
+            "en": "I decided to hold the paper down by hand so it would not blow away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "抱える",
+      "reading": "かかえる",
+      "meaning": {
+        "vi": "Ôm; gánh (vấn đề)",
+        "en": "To hold in one's arms; to have (a problem)"
+      },
+      "examples": [
+        {
+          "ja": "問題を、一人で抱えることはやめましょう。",
+          "reading": "もんだいを、ひとりでかかえることはやめましょう。",
+          "translation": {
+            "vi": "Đừng một mình gánh vấn đề nữa.",
+            "en": "Let's stop carrying problems alone."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "持ち上げる",
+      "reading": "もちあげる",
+      "meaning": {
+        "vi": "Nhấc lên",
+        "en": "To lift"
+      },
+      "examples": [
+        {
+          "ja": "重い箱を、持ち上げることができません。",
+          "reading": "おもいはこを、もちあげることができません。",
+          "translation": {
+            "vi": "Tôi không thể nhấc nổi cái hộp nặng.",
+            "en": "I cannot lift the heavy box."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "移動",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会議室への（　）に、五分かかります。 — Nghĩa của câu: “Di chuyển đến phòng họp mất năm phút.”",
+        "en": "Choose the word that fits the blank: 会議室への（　）に、五分かかります。 — Meaning of the sentence: “Moving to the meeting room takes five minutes.”"
+      },
+      "payload": {
+        "choices": [
+          "引っ張る",
+          "移動",
+          "押す",
+          "持ち上げる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「移動」(Di chuyển) hợp nghĩa câu này: “Di chuyển đến phòng họp mất năm phút.”",
+        "en": "Correct! 「移動」(Movement; transfer) fits this sentence: “Moving to the meeting room takes five minutes.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Di chuyển đến phòng họp mất năm phút.”, nên cần 「移動」(Di chuyển); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Moving to the meeting room takes five minutes.”, so it needs 「移動」(Movement; transfer); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "引っ張る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ロープを、強く（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định kéo mạnh sợi dây thừng.”",
+        "en": "Choose the word that fits the blank: ロープを、強く（　）ことにしました。 — Meaning of the sentence: “I decided to pull hard on the rope.”"
+      },
+      "payload": {
+        "choices": [
+          "押す",
+          "持ち上げる",
+          "引っ張る",
+          "押さえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「引っ張る」(Kéo) hợp nghĩa câu này: “Tôi quyết định kéo mạnh sợi dây thừng.”",
+        "en": "Correct! 「引っ張る」(To pull) fits this sentence: “I decided to pull hard on the rope.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định kéo mạnh sợi dây thừng.”, nên cần 「引っ張る」(Kéo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to pull hard on the rope.”, so it needs 「引っ張る」(To pull); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "押す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ドアを、ゆっくり（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định đẩy cánh cửa từ từ.”",
+        "en": "Choose the word that fits the blank: ドアを、ゆっくり（　）ことにしました。 — Meaning of the sentence: “I decided to push the door slowly.”"
+      },
+      "payload": {
+        "choices": [
+          "引っ張る",
+          "押さえる",
+          "抱える",
+          "押す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「押す」(Ấn; đẩy) hợp nghĩa câu này: “Tôi quyết định đẩy cánh cửa từ từ.”",
+        "en": "Correct! 「押す」(To push; to press) fits this sentence: “I decided to push the door slowly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định đẩy cánh cửa từ từ.”, nên cần 「押す」(Ấn; đẩy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to push the door slowly.”, so it needs 「押す」(To push; to press); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "押さえる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 紙が飛ばないように、手で（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định dùng tay giữ giấy để khỏi bay.”",
+        "en": "Choose the word that fits the blank: 紙が飛ばないように、手で（　）ことにしました。 — Meaning of the sentence: “I decided to hold the paper down by hand so it would not blow away.”"
+      },
+      "payload": {
+        "choices": [
+          "押さえる",
+          "引っ張る",
+          "抱える",
+          "押す"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「押さえる」(Giữ chặt; ấn giữ) hợp nghĩa câu này: “Tôi quyết định dùng tay giữ giấy để khỏi bay.”",
+        "en": "Correct! 「押さえる」(To hold down; to press) fits this sentence: “I decided to hold the paper down by hand so it would not blow away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định dùng tay giữ giấy để khỏi bay.”, nên cần 「押さえる」(Giữ chặt; ấn giữ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to hold the paper down by hand so it would not blow away.”, so it needs 「押さえる」(To hold down; to press); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "抱える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 問題を、一人で（　）ことはやめましょう。 — Nghĩa của câu: “Đừng một mình gánh vấn đề nữa.”",
+        "en": "Choose the word that fits the blank: 問題を、一人で（　）ことはやめましょう。 — Meaning of the sentence: “Let's stop carrying problems alone.”"
+      },
+      "payload": {
+        "choices": [
+          "引っ張る",
+          "抱える",
+          "押す",
+          "押さえる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「抱える」(Ôm; gánh (vấn đề)) hợp nghĩa câu này: “Đừng một mình gánh vấn đề nữa.”",
+        "en": "Correct! 「抱える」(To hold in one's arms; to have (a problem)) fits this sentence: “Let's stop carrying problems alone.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đừng một mình gánh vấn đề nữa.”, nên cần 「抱える」(Ôm; gánh (vấn đề)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's stop carrying problems alone.”, so it needs 「抱える」(To hold in one's arms; to have (a problem)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "持ち上げる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 重い箱を、（　）ことができません。 — Nghĩa của câu: “Tôi không thể nhấc nổi cái hộp nặng.”",
+        "en": "Choose the word that fits the blank: 重い箱を、（　）ことができません。 — Meaning of the sentence: “I cannot lift the heavy box.”"
+      },
+      "payload": {
+        "choices": [
+          "引っ張る",
+          "押す",
+          "持ち上げる",
+          "押さえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「持ち上げる」(Nhấc lên) hợp nghĩa câu này: “Tôi không thể nhấc nổi cái hộp nặng.”",
+        "en": "Correct! 「持ち上げる」(To lift) fits this sentence: “I cannot lift the heavy box.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi không thể nhấc nổi cái hộp nặng.”, nên cần 「持ち上げる」(Nhấc lên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cannot lift the heavy box.”, so it needs 「持ち上げる」(To lift); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "移動",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 会議室への「移動」に、五分かかります。",
+        "en": "Choose the correct reading of the word in 「」: 会議室への「移動」に、五分かかります。"
+      },
+      "payload": {
+        "choices": [
+          "おす",
+          "ひっぱる",
+          "いどう",
+          "かかえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「移動」 đọc là 「いどう」, nghĩa là Di chuyển.",
+        "en": "Correct! 「移動」 is read 「いどう」 and means Movement; transfer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「移動」 đọc là 「いどう」 (Di chuyển); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「移動」 is read 「いどう」 (Movement; transfer); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "押さえる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 紙が飛ばないように、手で「押さえる」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: 紙が飛ばないように、手で「押さえる」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "かかえる",
+          "いどう",
+          "ひっぱる",
+          "おさえる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「押さえる」 đọc là 「おさえる」, nghĩa là Giữ chặt; ấn giữ.",
+        "en": "Correct! 「押さえる」 is read 「おさえる」 and means To hold down; to press."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「押さえる」 đọc là 「おさえる」 (Giữ chặt; ấn giữ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「押さえる」 is read 「おさえる」 (To hold down; to press); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "押す",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: ドアを、ゆっくり「おす」ことにしました。",
+        "en": "Choose the correct way to write the word in 「」: ドアを、ゆっくり「おす」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "持ち上げる",
+          "移動",
+          "引っ張る",
+          "押す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おす」 viết là 「押す」, nghĩa là Ấn; đẩy.",
+        "en": "Correct! 「おす」 is written 「押す」 and means To push; to press."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おす」 viết là 「押す」 (Ấn; đẩy); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「おす」 is written 「押す」 (To push; to press); the other words are read differently."
+      }
+    }
+  ]
+}

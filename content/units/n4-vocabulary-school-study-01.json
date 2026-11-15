@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-school-study",
+  "title": {
+    "vi": "Đời sống ở trường học",
+    "en": "School life basics"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "授業",
+      "reading": "じゅぎょう",
+      "meaning": {
+        "vi": "Giờ học; buổi giảng",
+        "en": "Class; lesson"
+      },
+      "examples": [
+        {
+          "ja": "午前は、英語の授業があります。",
+          "reading": "ごぜんは、えいごのじゅぎょうがあります。",
+          "translation": {
+            "vi": "Buổi sáng có tiết tiếng Anh.",
+            "en": "In the morning there is an English class."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "教室",
+      "reading": "きょうしつ",
+      "meaning": {
+        "vi": "Phòng học",
+        "en": "Classroom"
+      },
+      "examples": [
+        {
+          "ja": "授業のあとで、教室をそうじします。",
+          "reading": "じゅぎょうのあとで、きょうしつをそうじします。",
+          "translation": {
+            "vi": "Sau giờ học, chúng tôi dọn dẹp phòng học.",
+            "en": "After class, we clean the classroom."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "図書館",
+      "reading": "としょかん",
+      "meaning": {
+        "vi": "Thư viện",
+        "en": "Library"
+      },
+      "examples": [
+        {
+          "ja": "図書館で、本を借りました。",
+          "reading": "としょかんで、ほんをかりました。",
+          "translation": {
+            "vi": "Tôi đã mượn sách ở thư viện.",
+            "en": "I borrowed a book at the library."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "辞書",
+      "reading": "じしょ",
+      "meaning": {
+        "vi": "Từ điển",
+        "en": "Dictionary"
+      },
+      "examples": [
+        {
+          "ja": "わからない言葉は、辞書で調べます。",
+          "reading": "わからないことばは、じしょでしらべます。",
+          "translation": {
+            "vi": "Từ nào không biết thì tôi tra từ điển.",
+            "en": "I look up words I do not know in a dictionary."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "質問",
+      "reading": "しつもん",
+      "meaning": {
+        "vi": "Câu hỏi; việc đặt câu hỏi",
+        "en": "Question; to ask"
+      },
+      "examples": [
+        {
+          "ja": "先生に、質問してもいいですか。",
+          "reading": "せんせいに、しつもんしてもいいですか。",
+          "translation": {
+            "vi": "Em hỏi thầy một câu được không ạ?",
+            "en": "May I ask the teacher a question?"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "問題",
+      "reading": "もんだい",
+      "meaning": {
+        "vi": "Bài tập; vấn đề",
+        "en": "Problem; question (on a test)"
+      },
+      "examples": [
+        {
+          "ja": "このテストは、問題が十個あります。",
+          "reading": "このテストは、もんだいがじっこあります。",
+          "translation": {
+            "vi": "Bài kiểm tra này có mười câu.",
+            "en": "This test has ten questions."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "授業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 午前は、英語の（　）があります。 — Nghĩa của câu: “Buổi sáng có tiết tiếng Anh.”",
+        "en": "Choose the word that fits the blank: 午前は、英語の（　）があります。 — Meaning of the sentence: “In the morning there is an English class.”"
+      },
+      "payload": {
+        "choices": [
+          "授業",
+          "教室",
+          "質問",
+          "問題"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「授業」(Giờ học; buổi giảng) hợp nghĩa câu này: “Buổi sáng có tiết tiếng Anh.”",
+        "en": "Correct! 「授業」(Class; lesson) fits this sentence: “In the morning there is an English class.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Buổi sáng có tiết tiếng Anh.”, nên cần 「授業」(Giờ học; buổi giảng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the morning there is an English class.”, so it needs 「授業」(Class; lesson); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "教室",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 授業のあとで、（　）をそうじします。 — Nghĩa của câu: “Sau giờ học, chúng tôi dọn dẹp phòng học.”",
+        "en": "Choose the word that fits the blank: 授業のあとで、（　）をそうじします。 — Meaning of the sentence: “After class, we clean the classroom.”"
+      },
+      "payload": {
+        "choices": [
+          "図書館",
+          "教室",
+          "辞書",
+          "問題"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「教室」(Phòng học) hợp nghĩa câu này: “Sau giờ học, chúng tôi dọn dẹp phòng học.”",
+        "en": "Correct! 「教室」(Classroom) fits this sentence: “After class, we clean the classroom.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sau giờ học, chúng tôi dọn dẹp phòng học.”, nên cần 「教室」(Phòng học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After class, we clean the classroom.”, so it needs 「教室」(Classroom); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "図書館",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）で、本を借りました。 — Nghĩa của câu: “Tôi đã mượn sách ở thư viện.”",
+        "en": "Choose the word that fits the blank: （　）で、本を借りました。 — Meaning of the sentence: “I borrowed a book at the library.”"
+      },
+      "payload": {
+        "choices": [
+          "教室",
+          "辞書",
+          "図書館",
+          "授業"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「図書館」(Thư viện) hợp nghĩa câu này: “Tôi đã mượn sách ở thư viện.”",
+        "en": "Correct! 「図書館」(Library) fits this sentence: “I borrowed a book at the library.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã mượn sách ở thư viện.”, nên cần 「図書館」(Thư viện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I borrowed a book at the library.”, so it needs 「図書館」(Library); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "辞書",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: わからない言葉は、（　）で調べます。",
+        "en": "Choose the word that fits the blank: わからない言葉は、（　）で調べます。"
+      },
+      "payload": {
+        "choices": [
+          "問題",
+          "質問",
+          "授業",
+          "辞書"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「辞書」(Từ điển) hợp nghĩa câu này: “Từ nào không biết thì tôi tra từ điển.”",
+        "en": "Correct! 「辞書」(Dictionary) fits this sentence: “I look up words I do not know in a dictionary.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ nào không biết thì tôi tra từ điển.”, nên cần 「辞書」(Từ điển); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I look up words I do not know in a dictionary.”, so it needs 「辞書」(Dictionary); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "質問",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生に、（　）してもいいですか。",
+        "en": "Choose the word that fits the blank: 先生に、（　）してもいいですか。"
+      },
+      "payload": {
+        "choices": [
+          "質問",
+          "問題",
+          "辞書",
+          "教室"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「質問」(Câu hỏi; việc đặt câu hỏi) hợp nghĩa câu này: “Em hỏi thầy một câu được không ạ?”",
+        "en": "Correct! 「質問」(Question; to ask) fits this sentence: “May I ask the teacher a question?”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Em hỏi thầy một câu được không ạ?”, nên cần 「質問」(Câu hỏi; việc đặt câu hỏi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “May I ask the teacher a question?”, so it needs 「質問」(Question; to ask); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "問題",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このテストは、（　）が十個あります。 — Nghĩa của câu: “Bài kiểm tra này có mười câu.”",
+        "en": "Choose the word that fits the blank: このテストは、（　）が十個あります。 — Meaning of the sentence: “This test has ten questions.”"
+      },
+      "payload": {
+        "choices": [
+          "質問",
+          "問題",
+          "辞書",
+          "授業"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「問題」(Bài tập; vấn đề) hợp nghĩa câu này: “Bài kiểm tra này có mười câu.”",
+        "en": "Correct! 「問題」(Problem; question (on a test)) fits this sentence: “This test has ten questions.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bài kiểm tra này có mười câu.”, nên cần 「問題」(Bài tập; vấn đề); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This test has ten questions.”, so it needs 「問題」(Problem; question (on a test)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "授業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 午前は、英語の「授業」があります。",
+        "en": "Choose the correct reading of the word in 「」: 午前は、英語の「授業」があります。"
+      },
+      "payload": {
+        "choices": [
+          "きょうしつ",
+          "じゅぎょう",
+          "としょかん",
+          "じしょ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「授業」 đọc là 「じゅぎょう」, nghĩa là Giờ học; buổi giảng.",
+        "en": "Correct! 「授業」 is read 「じゅぎょう」 and means Class; lesson."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「授業」 đọc là 「じゅぎょう」 (Giờ học; buổi giảng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「授業」 is read 「じゅぎょう」 (Class; lesson); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "辞書",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: わからない言葉は、「辞書」で調べます。",
+        "en": "Choose the correct reading of the word in 「」: わからない言葉は、「辞書」で調べます。"
+      },
+      "payload": {
+        "choices": [
+          "じゅぎょう",
+          "きょうしつ",
+          "じしょ",
+          "としょかん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「辞書」 đọc là 「じしょ」, nghĩa là Từ điển.",
+        "en": "Correct! 「辞書」 is read 「じしょ」 and means Dictionary."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「辞書」 đọc là 「じしょ」 (Từ điển); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「辞書」 is read 「じしょ」 (Dictionary); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "教室",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 授業のあとで、「きょうしつ」をそうじします。",
+        "en": "Choose the correct way to write the word in 「」: 授業のあとで、「きょうしつ」をそうじします。"
+      },
+      "payload": {
+        "choices": [
+          "授業",
+          "図書館",
+          "教室",
+          "辞書"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きょうしつ」 viết là 「教室」, nghĩa là Phòng học.",
+        "en": "Correct! 「きょうしつ」 is written 「教室」 and means Classroom."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きょうしつ」 viết là 「教室」 (Phòng học); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きょうしつ」 is written 「教室」 (Classroom); the other words are read differently."
+      }
+    }
+  ]
+}

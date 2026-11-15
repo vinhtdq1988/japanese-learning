@@ -413,4 +413,103 @@ void main() {
       },
     );
   });
+
+  group('luyện đọc/viết (spec 007, T056)', () {
+    ItemDraft passage() => ItemDraft(japanese: '田中さんは毎朝七時に起きます。八時に会社へ行きます。');
+    ExerciseDraft question() => ExerciseDraft(
+      type: 'multiple_choice',
+      choices: <String>['7:00', '8:00', '9:00'],
+    );
+    ItemDraft word(String ja) => ItemDraft(japanese: ja);
+    ExerciseDraft typing(String answer) =>
+        ExerciseDraft(type: 'fill_blank', acceptedAnswers: <String>[answer]);
+
+    UnitDraft reading({int items = 1, int questions = 3}) => UnitDraft(
+      kind: 'reading',
+      topicId: 't',
+      items: <ItemDraft>[for (var i = 0; i < items; i++) passage()],
+      exercises: <ExerciseDraft>[
+        for (var i = 0; i < questions; i++) question(),
+      ],
+    );
+
+    UnitDraft writing({int words = 3}) {
+      final items = <ItemDraft>[for (var i = 0; i < words; i++) word('語$i')];
+      return UnitDraft(
+        kind: 'writing',
+        topicId: 't',
+        items: items,
+        exercises: <ExerciseDraft>[for (final w in items) typing(w.japanese)],
+      );
+    }
+
+    test('kUnitKinds gồm reading và writing', () {
+      expect(kUnitKinds, containsAll(<String>['reading', 'writing']));
+    });
+
+    test(
+      'reading: đúng 1 mục và 2–5 bài multiple_choice không gắn mục là hợp lệ',
+      () {
+        for (final n in <int>[2, 5]) {
+          expect(reading(questions: n).validate(), isEmpty, reason: '$n câu');
+        }
+      },
+    );
+
+    test('reading: 0 hoặc 2 mục → lỗi items; 1 hoặc 6 câu → lỗi exercises', () {
+      expect(reading(items: 0).validate().keys, contains('items'));
+      expect(reading(items: 2).validate().keys, contains('items'));
+      expect(reading(questions: 1).validate().keys, contains('exercises'));
+      expect(reading(questions: 6).validate().keys, contains('exercises'));
+    });
+
+    test(
+      'reading: bài không phải multiple_choice hoặc gắn mục → lỗi theo vị trí',
+      () {
+        final wrongType = reading()..exercises[1].type = 'fill_blank';
+        expect(wrongType.validate().keys, contains('exercises[1].type'));
+
+        final linked = reading()..exercises[0].item = ItemDraft(japanese: 'x');
+        linked.items.add(linked.exercises[0].item!);
+        expect(linked.validate().keys, contains('exercises[0].item'));
+      },
+    );
+
+    test(
+      'writing: 3–6 mục, mỗi mục đúng 1 bài fill_blank có accepted_answers',
+      () {
+        for (final n in <int>[3, 6]) {
+          expect(writing(words: n).validate(), isEmpty, reason: '$n mục');
+        }
+        expect(writing(words: 2).validate().keys, contains('items'));
+        expect(writing(words: 7).validate().keys, contains('items'));
+      },
+    );
+
+    test('writing: thiếu bài hoặc accepted_answers rỗng → lỗi', () {
+      final missing = writing(words: 4)..exercises.removeLast();
+      expect(missing.validate().keys, contains('exercises'));
+
+      final empty = writing()..exercises[2].acceptedAnswers = <String>[' '];
+      expect(
+        empty.validate().keys,
+        contains('exercises[2].payload.accepted_answers'),
+      );
+    });
+
+    test(
+      'toJson: bài tập không gắn mục không gửi item; kind luyện không gửi facet Kanji',
+      () {
+        final json = writing().toJson();
+        expect(json['kind'], 'writing');
+        for (final e in json['exercises']! as List<Object?>) {
+          final map = e! as Map<String, Object?>;
+          expect(map.containsKey('itemIndex'), isFalse);
+          expect(map.containsKey('item'), isFalse);
+          expect(map.containsKey('facet'), isFalse);
+        }
+        expect((json['items']! as List<Object?>).length, 3);
+      },
+    );
+  });
 }

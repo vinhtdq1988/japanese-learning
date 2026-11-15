@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-politics-public",
+  "title": {
+    "vi": "Tranh luận và phản đối",
+    "en": "Debate and protest"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1360,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "主張",
+      "reading": "しゅちょう",
+      "meaning": {
+        "vi": "Chủ trương; khẳng định",
+        "en": "Claim; assertion"
+      },
+      "examples": [
+        {
+          "ja": "彼は、自分は悪くないと主張しています。",
+          "reading": "かれは、じぶんはわるくないとしゅちょうしています。",
+          "translation": {
+            "vi": "Anh ấy khẳng định mình không có lỗi.",
+            "en": "He insists that he is not at fault."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "議論",
+      "reading": "ぎろん",
+      "meaning": {
+        "vi": "Tranh luận; bàn luận",
+        "en": "Discussion; argument"
+      },
+      "examples": [
+        {
+          "ja": "その問題について、長い議論になりました。",
+          "reading": "そのもんだいについて、ながいぎろんになりました。",
+          "translation": {
+            "vi": "Về vấn đề đó đã có cuộc tranh luận kéo dài.",
+            "en": "There was a long discussion about that problem."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "討論",
+      "reading": "とうろん",
+      "meaning": {
+        "vi": "Thảo luận; tranh luận (chính thức)",
+        "en": "Debate"
+      },
+      "examples": [
+        {
+          "ja": "テレビで、政治家の討論が放送されました。",
+          "reading": "テレビで、せいじかのとうろんがほうそうされました。",
+          "translation": {
+            "vi": "Trên tivi đã phát cuộc tranh luận của các chính trị gia.",
+            "en": "A debate among politicians was broadcast on TV."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "演説",
+      "reading": "えんぜつ",
+      "meaning": {
+        "vi": "Diễn thuyết",
+        "en": "Speech (public)"
+      },
+      "examples": [
+        {
+          "ja": "市長の演説を、広場で聞きました。",
+          "reading": "しちょうのえんぜつを、ひろばできききました。",
+          "translation": {
+            "vi": "Tôi đã nghe diễn thuyết của thị trưởng ở quảng trường.",
+            "en": "I listened to the mayor's speech in the square."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発言",
+      "reading": "はつげん",
+      "meaning": {
+        "vi": "Phát biểu; lời nói",
+        "en": "Remark; statement"
+      },
+      "examples": [
+        {
+          "ja": "会議では、誰でも自由に発言できます。",
+          "reading": "かいぎでは、だれでもじゆうにはつげんできます。",
+          "translation": {
+            "vi": "Trong cuộc họp, ai cũng có thể phát biểu tự do.",
+            "en": "At the meeting, anyone can speak freely."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "抗議",
+      "reading": "こうぎ",
+      "meaning": {
+        "vi": "Phản đối; kháng nghị",
+        "en": "Protest"
+      },
+      "examples": [
+        {
+          "ja": "住民は、工事に抗議しました。",
+          "reading": "じゅうみんは、こうじにこうぎしました。",
+          "translation": {
+            "vi": "Người dân đã phản đối công trình.",
+            "en": "The residents protested against the construction."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "主張",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、自分は悪くないと（　）しています。 — Nghĩa của câu: “Anh ấy khẳng định mình không có lỗi.”",
+        "en": "Choose the word that fits the blank: 彼は、自分は悪くないと（　）しています。 — Meaning of the sentence: “He insists that he is not at fault.”"
+      },
+      "payload": {
+        "choices": [
+          "演説",
+          "議論",
+          "討論",
+          "主張"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「主張」(Chủ trương; khẳng định) hợp nghĩa câu này: “Anh ấy khẳng định mình không có lỗi.”",
+        "en": "Correct! 「主張」(Claim; assertion) fits this sentence: “He insists that he is not at fault.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy khẳng định mình không có lỗi.”, nên cần 「主張」(Chủ trương; khẳng định); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He insists that he is not at fault.”, so it needs 「主張」(Claim; assertion); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "議論",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: その問題について、長い（　）になりました。 — Nghĩa của câu: “Về vấn đề đó đã có cuộc tranh luận kéo dài.”",
+        "en": "Choose the word that fits the blank: その問題について、長い（　）になりました。 — Meaning of the sentence: “There was a long discussion about that problem.”"
+      },
+      "payload": {
+        "choices": [
+          "議論",
+          "主張",
+          "討論",
+          "演説"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「議論」(Tranh luận; bàn luận) hợp nghĩa câu này: “Về vấn đề đó đã có cuộc tranh luận kéo dài.”",
+        "en": "Correct! 「議論」(Discussion; argument) fits this sentence: “There was a long discussion about that problem.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Về vấn đề đó đã có cuộc tranh luận kéo dài.”, nên cần 「議論」(Tranh luận; bàn luận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was a long discussion about that problem.”, so it needs 「議論」(Discussion; argument); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "討論",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: テレビで、政治家の（　）が放送されました。 — Nghĩa của câu: “Trên tivi đã phát cuộc tranh luận của các chính trị gia.”",
+        "en": "Choose the word that fits the blank: テレビで、政治家の（　）が放送されました。 — Meaning of the sentence: “A debate among politicians was broadcast on TV.”"
+      },
+      "payload": {
+        "choices": [
+          "主張",
+          "討論",
+          "議論",
+          "発言"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「討論」(Thảo luận; tranh luận (chính thức)) hợp nghĩa câu này: “Trên tivi đã phát cuộc tranh luận của các chính trị gia.”",
+        "en": "Correct! 「討論」(Debate) fits this sentence: “A debate among politicians was broadcast on TV.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trên tivi đã phát cuộc tranh luận của các chính trị gia.”, nên cần 「討論」(Thảo luận; tranh luận (chính thức)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A debate among politicians was broadcast on TV.”, so it needs 「討論」(Debate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "演説",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 市長の（　）を、広場で聞きました。 — Nghĩa của câu: “Tôi đã nghe diễn thuyết của thị trưởng ở quảng trường.”",
+        "en": "Choose the word that fits the blank: 市長の（　）を、広場で聞きました。 — Meaning of the sentence: “I listened to the mayor's speech in the square.”"
+      },
+      "payload": {
+        "choices": [
+          "発言",
+          "主張",
+          "演説",
+          "議論"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「演説」(Diễn thuyết) hợp nghĩa câu này: “Tôi đã nghe diễn thuyết của thị trưởng ở quảng trường.”",
+        "en": "Correct! 「演説」(Speech (public)) fits this sentence: “I listened to the mayor's speech in the square.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nghe diễn thuyết của thị trưởng ở quảng trường.”, nên cần 「演説」(Diễn thuyết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I listened to the mayor's speech in the square.”, so it needs 「演説」(Speech (public)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発言",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会議では、誰でも自由に（　）できます。 — Nghĩa của câu: “Trong cuộc họp, ai cũng có thể phát biểu tự do.”",
+        "en": "Choose the word that fits the blank: 会議では、誰でも自由に（　）できます。 — Meaning of the sentence: “At the meeting, anyone can speak freely.”"
+      },
+      "payload": {
+        "choices": [
+          "討論",
+          "主張",
+          "演説",
+          "発言"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発言」(Phát biểu; lời nói) hợp nghĩa câu này: “Trong cuộc họp, ai cũng có thể phát biểu tự do.”",
+        "en": "Correct! 「発言」(Remark; statement) fits this sentence: “At the meeting, anyone can speak freely.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong cuộc họp, ai cũng có thể phát biểu tự do.”, nên cần 「発言」(Phát biểu; lời nói); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the meeting, anyone can speak freely.”, so it needs 「発言」(Remark; statement); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "抗議",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 住民は、工事に（　）しました。 — Nghĩa của câu: “Người dân đã phản đối công trình.”",
+        "en": "Choose the word that fits the blank: 住民は、工事に（　）しました。 — Meaning of the sentence: “The residents protested against the construction.”"
+      },
+      "payload": {
+        "choices": [
+          "抗議",
+          "主張",
+          "議論",
+          "討論"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「抗議」(Phản đối; kháng nghị) hợp nghĩa câu này: “Người dân đã phản đối công trình.”",
+        "en": "Correct! 「抗議」(Protest) fits this sentence: “The residents protested against the construction.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người dân đã phản đối công trình.”, nên cần 「抗議」(Phản đối; kháng nghị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The residents protested against the construction.”, so it needs 「抗議」(Protest); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "主張",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、自分は悪くないと「主張」しています。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、自分は悪くないと「主張」しています。"
+      },
+      "payload": {
+        "choices": [
+          "しゅちょう",
+          "はつげん",
+          "ぎろん",
+          "えんぜつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「主張」 đọc là 「しゅちょう」, nghĩa là Chủ trương; khẳng định.",
+        "en": "Correct! 「主張」 is read 「しゅちょう」 and means Claim; assertion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「主張」 đọc là 「しゅちょう」 (Chủ trương; khẳng định); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「主張」 is read 「しゅちょう」 (Claim; assertion); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "演説",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 市長の「演説」を、広場で聞きました。",
+        "en": "Choose the correct reading of the word in 「」: 市長の「演説」を、広場で聞きました。"
+      },
+      "payload": {
+        "choices": [
+          "こうぎ",
+          "えんぜつ",
+          "しゅちょう",
+          "とうろん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「演説」 đọc là 「えんぜつ」, nghĩa là Diễn thuyết.",
+        "en": "Correct! 「演説」 is read 「えんぜつ」 and means Speech (public)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「演説」 đọc là 「えんぜつ」 (Diễn thuyết); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「演説」 is read 「えんぜつ」 (Speech (public)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "討論",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: テレビで、政治家の「とうろん」が放送されました。",
+        "en": "Choose the correct way to write the word in 「」: テレビで、政治家の「とうろん」が放送されました。"
+      },
+      "payload": {
+        "choices": [
+          "主張",
+          "討論",
+          "議論",
+          "演説"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とうろん」 viết là 「討論」, nghĩa là Thảo luận; tranh luận (chính thức).",
+        "en": "Correct! 「とうろん」 is written 「討論」 and means Debate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「とうろん」 viết là 「討論」 (Thảo luận; tranh luận (chính thức)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「とうろん」 is written 「討論」 (Debate); the other words are read differently."
+      }
+    }
+  ]
+}

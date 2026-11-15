@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-economy-industry",
+  "title": {
+    "vi": "Nông nghiệp, ngư nghiệp và đặc sản",
+    "en": "Farming, fishing and local products"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "農業",
+      "reading": "のうぎょう",
+      "meaning": {
+        "vi": "Nông nghiệp",
+        "en": "Agriculture"
+      },
+      "examples": [
+        {
+          "ja": "農業は、天気に大きな影響を受けます。",
+          "reading": "のうぎょうは、てんきにおおきなえいきょうをうけます。",
+          "translation": {
+            "vi": "Nông nghiệp chịu ảnh hưởng lớn của thời tiết.",
+            "en": "Agriculture is greatly affected by the weather."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "漁業",
+      "reading": "ぎょぎょう",
+      "meaning": {
+        "vi": "Ngư nghiệp",
+        "en": "Fishing industry"
+      },
+      "examples": [
+        {
+          "ja": "海に近い町では、漁業で生活する人が多いです。",
+          "reading": "うみにちかいまちでは、ぎょぎょうでせいかつするひとがおおいです。",
+          "translation": {
+            "vi": "Ở các thị trấn gần biển có nhiều người sống bằng nghề đánh cá.",
+            "en": "In towns near the sea, many people make a living from fishing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "工業",
+      "reading": "こうぎょう",
+      "meaning": {
+        "vi": "Công nghiệp",
+        "en": "Manufacturing industry"
+      },
+      "examples": [
+        {
+          "ja": "この町は、工場が多い工業の町です。",
+          "reading": "このまちは、こうじょうがおおいこうぎょうのまちです。",
+          "translation": {
+            "vi": "Thị trấn này là một thị trấn công nghiệp có nhiều nhà máy.",
+            "en": "This is an industrial town with many factories."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "商業",
+      "reading": "しょうぎょう",
+      "meaning": {
+        "vi": "Thương nghiệp",
+        "en": "Commerce"
+      },
+      "examples": [
+        {
+          "ja": "駅の周りには、商業ビルが集まっています。",
+          "reading": "えきのまわりには、しょうぎょうビルがあつまっています。",
+          "translation": {
+            "vi": "Quanh nhà ga có nhiều tòa nhà thương mại tập trung.",
+            "en": "Commercial buildings are clustered around the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "農家",
+      "reading": "のうか",
+      "meaning": {
+        "vi": "Nhà nông; hộ nông dân",
+        "en": "Farmer; farm household"
+      },
+      "examples": [
+        {
+          "ja": "祖父の家は、代々、農家です。",
+          "reading": "そふのいえは、だいだい、のうかです。",
+          "translation": {
+            "vi": "Nhà ông tôi làm nông qua nhiều đời.",
+            "en": "My grandfather's family has been farmers for generations."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "農作物",
+      "reading": "のうさくぶつ",
+      "meaning": {
+        "vi": "Nông sản (cây trồng)",
+        "en": "Crops"
+      },
+      "examples": [
+        {
+          "ja": "台風で、農作物に大きな被害が出ました。",
+          "reading": "たいふうで、のうさくぶつにおおきなひがいがでました。",
+          "translation": {
+            "vi": "Bão đã gây thiệt hại lớn cho cây trồng.",
+            "en": "The typhoon caused major damage to crops."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "収穫",
+      "reading": "しゅうかく",
+      "meaning": {
+        "vi": "Thu hoạch",
+        "en": "Harvest"
+      },
+      "examples": [
+        {
+          "ja": "秋になると、米の収穫が始まります。",
+          "reading": "あきになると、こめのしゅうかくがはじまります。",
+          "translation": {
+            "vi": "Vào mùa thu, việc thu hoạch lúa gạo bắt đầu.",
+            "en": "In autumn the rice harvest begins."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "畜産",
+      "reading": "ちくさん",
+      "meaning": {
+        "vi": "Chăn nuôi",
+        "en": "Livestock farming"
+      },
+      "examples": [
+        {
+          "ja": "畜産の農家は、毎朝、牛や豚の世話をします。",
+          "reading": "ちくさんののうかは、まいあさ、うしやぶたのせわをします。",
+          "translation": {
+            "vi": "Hộ chăn nuôi sáng nào cũng chăm sóc bò và lợn.",
+            "en": "Livestock farmers look after cows and pigs every morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "水産",
+      "reading": "すいさん",
+      "meaning": {
+        "vi": "Thủy sản",
+        "en": "Marine products"
+      },
+      "examples": [
+        {
+          "ja": "この町は、水産の加工が主な産業です。",
+          "reading": "このまちは、すいさんのかこうがおもなさんぎょうです。",
+          "translation": {
+            "vi": "Chế biến thủy sản là ngành chính của thị trấn này.",
+            "en": "Processing marine products is the main industry of this town."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "農産物",
+      "reading": "のうさんぶつ",
+      "meaning": {
+        "vi": "Nông sản",
+        "en": "Agricultural products"
+      },
+      "examples": [
+        {
+          "ja": "地元の農産物は、駅の市場で売られています。",
+          "reading": "じもとののうさんぶつは、えきのいちばでうられています。",
+          "translation": {
+            "vi": "Nông sản địa phương được bán ở chợ trước nhà ga.",
+            "en": "Local agricultural products are sold at the market by the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "産地",
+      "reading": "さんち",
+      "meaning": {
+        "vi": "Nơi sản xuất",
+        "en": "Place of production"
+      },
+      "examples": [
+        {
+          "ja": "このお茶は、静岡が有名な産地です。",
+          "reading": "このおちゃは、しずおかがゆうめいなさんちです。",
+          "translation": {
+            "vi": "Trà này có Shizuoka là nơi sản xuất nổi tiếng.",
+            "en": "Shizuoka is a famous place of production for this tea."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "特産",
+      "reading": "とくさん",
+      "meaning": {
+        "vi": "Đặc sản",
+        "en": "Local specialty"
+      },
+      "examples": [
+        {
+          "ja": "この島の特産は、おいしい魚です。",
+          "reading": "このしまのとくさんは、おいしいさかなです。",
+          "translation": {
+            "vi": "Đặc sản của hòn đảo này là các loại cá ngon.",
+            "en": "This island's specialty is delicious fish."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "農業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、天気に大きな影響を受けます。 — Nghĩa của câu: “Nông nghiệp chịu ảnh hưởng lớn của thời tiết.”",
+        "en": "Choose the word that fits the blank: （　）は、天気に大きな影響を受けます。 — Meaning of the sentence: “Agriculture is greatly affected by the weather.”"
+      },
+      "payload": {
+        "choices": [
+          "農業",
+          "収穫",
+          "水産",
+          "産地"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農業」(Nông nghiệp) hợp nghĩa câu này: “Nông nghiệp chịu ảnh hưởng lớn của thời tiết.”",
+        "en": "Correct! 「農業」(Agriculture) fits this sentence: “Agriculture is greatly affected by the weather.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nông nghiệp chịu ảnh hưởng lớn của thời tiết.”, nên cần 「農業」(Nông nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Agriculture is greatly affected by the weather.”, so it needs 「農業」(Agriculture); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "漁業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海に近い町では、（　）で生活する人が多いです。 — Nghĩa của câu: “Ở các thị trấn gần biển có nhiều người sống bằng nghề đánh cá.”",
+        "en": "Choose the word that fits the blank: 海に近い町では、（　）で生活する人が多いです。 — Meaning of the sentence: “In towns near the sea, many people make a living from fishing.”"
+      },
+      "payload": {
+        "choices": [
+          "畜産",
+          "漁業",
+          "水産",
+          "工業"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「漁業」(Ngư nghiệp) hợp nghĩa câu này: “Ở các thị trấn gần biển có nhiều người sống bằng nghề đánh cá.”",
+        "en": "Correct! 「漁業」(Fishing industry) fits this sentence: “In towns near the sea, many people make a living from fishing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở các thị trấn gần biển có nhiều người sống bằng nghề đánh cá.”, nên cần 「漁業」(Ngư nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In towns near the sea, many people make a living from fishing.”, so it needs 「漁業」(Fishing industry); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "工業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町は、工場が多い（　）の町です。 — Nghĩa của câu: “Thị trấn này là một thị trấn công nghiệp có nhiều nhà máy.”",
+        "en": "Choose the word that fits the blank: この町は、工場が多い（　）の町です。 — Meaning of the sentence: “This is an industrial town with many factories.”"
+      },
+      "payload": {
+        "choices": [
+          "水産",
+          "農作物",
+          "工業",
+          "産地"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「工業」(Công nghiệp) hợp nghĩa câu này: “Thị trấn này là một thị trấn công nghiệp có nhiều nhà máy.”",
+        "en": "Correct! 「工業」(Manufacturing industry) fits this sentence: “This is an industrial town with many factories.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn này là một thị trấn công nghiệp có nhiều nhà máy.”, nên cần 「工業」(Công nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This is an industrial town with many factories.”, so it needs 「工業」(Manufacturing industry); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "商業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅の周りには、（　）ビルが集まっています。 — Nghĩa của câu: “Quanh nhà ga có nhiều tòa nhà thương mại tập trung.”",
+        "en": "Choose the word that fits the blank: 駅の周りには、（　）ビルが集まっています。 — Meaning of the sentence: “Commercial buildings are clustered around the station.”"
+      },
+      "payload": {
+        "choices": [
+          "収穫",
+          "産地",
+          "農家",
+          "商業"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「商業」(Thương nghiệp) hợp nghĩa câu này: “Quanh nhà ga có nhiều tòa nhà thương mại tập trung.”",
+        "en": "Correct! 「商業」(Commerce) fits this sentence: “Commercial buildings are clustered around the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quanh nhà ga có nhiều tòa nhà thương mại tập trung.”, nên cần 「商業」(Thương nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Commercial buildings are clustered around the station.”, so it needs 「商業」(Commerce); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "農家",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖父の家は、代々、（　）です。 — Nghĩa của câu: “Nhà ông tôi làm nông qua nhiều đời.”",
+        "en": "Choose the word that fits the blank: 祖父の家は、代々、（　）です。 — Meaning of the sentence: “My grandfather's family has been farmers for generations.”"
+      },
+      "payload": {
+        "choices": [
+          "農家",
+          "特産",
+          "工業",
+          "水産"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農家」(Nhà nông; hộ nông dân) hợp nghĩa câu này: “Nhà ông tôi làm nông qua nhiều đời.”",
+        "en": "Correct! 「農家」(Farmer; farm household) fits this sentence: “My grandfather's family has been farmers for generations.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà ông tôi làm nông qua nhiều đời.”, nên cần 「農家」(Nhà nông; hộ nông dân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandfather's family has been farmers for generations.”, so it needs 「農家」(Farmer; farm household); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "農作物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風で、（　）に大きな被害が出ました。 — Nghĩa của câu: “Bão đã gây thiệt hại lớn cho cây trồng.”",
+        "en": "Choose the word that fits the blank: 台風で、（　）に大きな被害が出ました。 — Meaning of the sentence: “The typhoon caused major damage to crops.”"
+      },
+      "payload": {
+        "choices": [
+          "農業",
+          "農作物",
+          "商業",
+          "特産"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農作物」(Nông sản (cây trồng)) hợp nghĩa câu này: “Bão đã gây thiệt hại lớn cho cây trồng.”",
+        "en": "Correct! 「農作物」(Crops) fits this sentence: “The typhoon caused major damage to crops.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bão đã gây thiệt hại lớn cho cây trồng.”, nên cần 「農作物」(Nông sản (cây trồng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The typhoon caused major damage to crops.”, so it needs 「農作物」(Crops); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "収穫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 秋になると、米の（　）が始まります。 — Nghĩa của câu: “Vào mùa thu, việc thu hoạch lúa gạo bắt đầu.”",
+        "en": "Choose the word that fits the blank: 秋になると、米の（　）が始まります。 — Meaning of the sentence: “In autumn the rice harvest begins.”"
+      },
+      "payload": {
+        "choices": [
+          "産地",
+          "農家",
+          "収穫",
+          "商業"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「収穫」(Thu hoạch) hợp nghĩa câu này: “Vào mùa thu, việc thu hoạch lúa gạo bắt đầu.”",
+        "en": "Correct! 「収穫」(Harvest) fits this sentence: “In autumn the rice harvest begins.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào mùa thu, việc thu hoạch lúa gạo bắt đầu.”, nên cần 「収穫」(Thu hoạch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In autumn the rice harvest begins.”, so it needs 「収穫」(Harvest); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "畜産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の農家は、毎朝、牛や豚の世話をします。 — Nghĩa của câu: “Hộ chăn nuôi sáng nào cũng chăm sóc bò và lợn.”",
+        "en": "Choose the word that fits the blank: （　）の農家は、毎朝、牛や豚の世話をします。 — Meaning of the sentence: “Livestock farmers look after cows and pigs every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "水産",
+          "商業",
+          "農業",
+          "畜産"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「畜産」(Chăn nuôi) hợp nghĩa câu này: “Hộ chăn nuôi sáng nào cũng chăm sóc bò và lợn.”",
+        "en": "Correct! 「畜産」(Livestock farming) fits this sentence: “Livestock farmers look after cows and pigs every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hộ chăn nuôi sáng nào cũng chăm sóc bò và lợn.”, nên cần 「畜産」(Chăn nuôi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Livestock farmers look after cows and pigs every morning.”, so it needs 「畜産」(Livestock farming); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "水産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町は、（　）の加工が主な産業です。 — Nghĩa của câu: “Chế biến thủy sản là ngành chính của thị trấn này.”",
+        "en": "Choose the word that fits the blank: この町は、（　）の加工が主な産業です。 — Meaning of the sentence: “Processing marine products is the main industry of this town.”"
+      },
+      "payload": {
+        "choices": [
+          "水産",
+          "農業",
+          "漁業",
+          "特産"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「水産」(Thủy sản) hợp nghĩa câu này: “Chế biến thủy sản là ngành chính của thị trấn này.”",
+        "en": "Correct! 「水産」(Marine products) fits this sentence: “Processing marine products is the main industry of this town.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chế biến thủy sản là ngành chính của thị trấn này.”, nên cần 「水産」(Thủy sản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Processing marine products is the main industry of this town.”, so it needs 「水産」(Marine products); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "農産物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地元の（　）は、駅の市場で売られています。 — Nghĩa của câu: “Nông sản địa phương được bán ở chợ trước nhà ga.”",
+        "en": "Choose the word that fits the blank: 地元の（　）は、駅の市場で売られています。 — Meaning of the sentence: “Local agricultural products are sold at the market by the station.”"
+      },
+      "payload": {
+        "choices": [
+          "工業",
+          "農産物",
+          "農業",
+          "特産"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農産物」(Nông sản) hợp nghĩa câu này: “Nông sản địa phương được bán ở chợ trước nhà ga.”",
+        "en": "Correct! 「農産物」(Agricultural products) fits this sentence: “Local agricultural products are sold at the market by the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nông sản địa phương được bán ở chợ trước nhà ga.”, nên cần 「農産物」(Nông sản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Local agricultural products are sold at the market by the station.”, so it needs 「農産物」(Agricultural products); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "産地",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお茶は、静岡が有名な（　）です。 — Nghĩa của câu: “Trà này có Shizuoka là nơi sản xuất nổi tiếng.”",
+        "en": "Choose the word that fits the blank: このお茶は、静岡が有名な（　）です。 — Meaning of the sentence: “Shizuoka is a famous place of production for this tea.”"
+      },
+      "payload": {
+        "choices": [
+          "商業",
+          "農業",
+          "産地",
+          "農家"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「産地」(Nơi sản xuất) hợp nghĩa câu này: “Trà này có Shizuoka là nơi sản xuất nổi tiếng.”",
+        "en": "Correct! 「産地」(Place of production) fits this sentence: “Shizuoka is a famous place of production for this tea.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trà này có Shizuoka là nơi sản xuất nổi tiếng.”, nên cần 「産地」(Nơi sản xuất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Shizuoka is a famous place of production for this tea.”, so it needs 「産地」(Place of production); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "特産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この島の（　）は、おいしい魚です。 — Nghĩa của câu: “Đặc sản của hòn đảo này là các loại cá ngon.”",
+        "en": "Choose the word that fits the blank: この島の（　）は、おいしい魚です。 — Meaning of the sentence: “This island's specialty is delicious fish.”"
+      },
+      "payload": {
+        "choices": [
+          "漁業",
+          "農作物",
+          "産地",
+          "特産"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特産」(Đặc sản) hợp nghĩa câu này: “Đặc sản của hòn đảo này là các loại cá ngon.”",
+        "en": "Correct! 「特産」(Local specialty) fits this sentence: “This island's specialty is delicious fish.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đặc sản của hòn đảo này là các loại cá ngon.”, nên cần 「特産」(Đặc sản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This island's specialty is delicious fish.”, so it needs 「特産」(Local specialty); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "農業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「農業」は、天気に大きな影響を受けます。",
+        "en": "Choose the correct reading of the word in 「」: 「農業」は、天気に大きな影響を受けます。"
+      },
+      "payload": {
+        "choices": [
+          "のうか",
+          "のうぎょう",
+          "ぎょぎょう",
+          "とくさん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農業」 đọc là 「のうぎょう」, nghĩa là Nông nghiệp.",
+        "en": "Correct! 「農業」 is read 「のうぎょう」 and means Agriculture."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「農業」 đọc là 「のうぎょう」 (Nông nghiệp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「農業」 is read 「のうぎょう」 (Agriculture); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "商業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 駅の周りには、「商業」ビルが集まっています。",
+        "en": "Choose the correct reading of the word in 「」: 駅の周りには、「商業」ビルが集まっています。"
+      },
+      "payload": {
+        "choices": [
+          "のうぎょう",
+          "ぎょぎょう",
+          "しょうぎょう",
+          "とくさん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「商業」 đọc là 「しょうぎょう」, nghĩa là Thương nghiệp.",
+        "en": "Correct! 「商業」 is read 「しょうぎょう」 and means Commerce."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「商業」 đọc là 「しょうぎょう」 (Thương nghiệp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「商業」 is read 「しょうぎょう」 (Commerce); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "収穫",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 秋になると、米の「収穫」が始まります。",
+        "en": "Choose the correct reading of the word in 「」: 秋になると、米の「収穫」が始まります。"
+      },
+      "payload": {
+        "choices": [
+          "のうか",
+          "のうさくぶつ",
+          "しょうぎょう",
+          "しゅうかく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「収穫」 đọc là 「しゅうかく」, nghĩa là Thu hoạch.",
+        "en": "Correct! 「収穫」 is read 「しゅうかく」 and means Harvest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「収穫」 đọc là 「しゅうかく」 (Thu hoạch); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「収穫」 is read 「しゅうかく」 (Harvest); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "農産物",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 地元の「農産物」は、駅の市場で売られています。",
+        "en": "Choose the correct reading of the word in 「」: 地元の「農産物」は、駅の市場で売られています。"
+      },
+      "payload": {
+        "choices": [
+          "のうさんぶつ",
+          "のうさくぶつ",
+          "のうぎょう",
+          "とくさん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「農産物」 đọc là 「のうさんぶつ」, nghĩa là Nông sản.",
+        "en": "Correct! 「農産物」 is read 「のうさんぶつ」 and means Agricultural products."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「農産物」 đọc là 「のうさんぶつ」 (Nông sản); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「農産物」 is read 「のうさんぶつ」 (Agricultural products); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "工業",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この町は、工場が多い「こうぎょう」の町です。",
+        "en": "Choose the correct way to write the word in 「」: この町は、工場が多い「こうぎょう」の町です。"
+      },
+      "payload": {
+        "choices": [
+          "水産",
+          "商業",
+          "工業",
+          "農作物"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こうぎょう」 viết là 「工業」, nghĩa là Công nghiệp.",
+        "en": "Correct! 「こうぎょう」 is written 「工業」 and means Manufacturing industry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こうぎょう」 viết là 「工業」 (Công nghiệp); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こうぎょう」 is written 「工業」 (Manufacturing industry); the other words are read differently."
+      }
+    },
+    {
+      "item": "水産",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この町は、「すいさん」の加工が主な産業です。",
+        "en": "Choose the correct way to write the word in 「」: この町は、「すいさん」の加工が主な産業です。"
+      },
+      "payload": {
+        "choices": [
+          "産地",
+          "農家",
+          "特産",
+          "水産"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「すいさん」 viết là 「水産」, nghĩa là Thủy sản.",
+        "en": "Correct! 「すいさん」 is written 「水産」 and means Marine products."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「すいさん」 viết là 「水産」 (Thủy sản); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「すいさん」 is written 「水産」 (Marine products); the other words are read differently."
+      }
+    }
+  ]
+}

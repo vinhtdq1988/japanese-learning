@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import { copyFileSync, mkdtempSync, readdirSync, rmSync } from 'node:fs';
+import { copyFileSync, mkdtempSync, readdirSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -15,7 +15,7 @@ import { openTestDb, requireDatabaseUrl, resetDatabase } from './helpers.js';
 // Kiểm tra migration `0001_init.sql` (T008) và schema Drizzle (T009) trên PostgreSQL thật; nâng cấp
 // 0002/0003 (Kanji) trên dữ liệu 001 có sẵn (spec 003, T008); nâng cấp 0004 (tổ chức/lớp học) trên dữ liệu
 // 001 + 003 và các ràng buộc của nó (spec 004, T011); nâng cấp 0005 (hiệu ứng thưởng/thành tựu) trên dữ liệu
-// 001–004 (spec 005, T005).
+// 001–004 (spec 005, T005); nâng cấp 0006 (enum `skill` thêm reading/writing) trên dữ liệu 001–005 (spec 007, T013).
 
 let handle: DbHandle;
 
@@ -613,6 +613,7 @@ describe('nâng cấp migration Kanji (0002, 0003) trên dữ liệu 001', () =>
       '0003_kanji.sql',
       '0004_org_classes.sql',
       '0005_reward_effects.sql',
+      '0006_practice_skills.sql',
     ]);
 
     expect((await uq(`SELECT facet FROM review_schedules`)).rows).toEqual([{ facet: 'item' }]);
@@ -830,7 +831,11 @@ describe('nâng cấp migration tổ chức/lớp học (0004) trên dữ liệu
 
     const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
     // 0005 (hiệu ứng thưởng) cũng được áp dụng vì thư mục migration mặc định chứa đủ; nâng cấp riêng 0005 có bộ test bên dưới.
-    expect(result.applied).toEqual(['0004_org_classes.sql', '0005_reward_effects.sql']);
+    expect(result.applied).toEqual([
+      '0004_org_classes.sql',
+      '0005_reward_effects.sql',
+      '0006_practice_skills.sql',
+    ]);
 
     for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
       expect((await uq(sql)).rows, `${name} không đổi sau 0004`).toEqual(before[name]);
@@ -1249,7 +1254,7 @@ describe('nâng cấp migration hiệu ứng thưởng (0005) trên dữ liệu 
     }
 
     const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
-    expect(result.applied).toEqual(['0005_reward_effects.sql']);
+    expect(result.applied).toEqual(['0005_reward_effects.sql', '0006_practice_skills.sql']);
 
     // Số dòng và nội dung các bảng cũ không đổi.
     for (const [name, sql] of Object.entries(SNAPSHOT_QUERIES)) {
@@ -1319,5 +1324,139 @@ describe('nâng cấp migration hiệu ứng thưởng (0005) trên dữ liệu 
       ]);
       expect(rows[0].n, table).toBe(0);
     }
+  });
+});
+
+// --- Nâng cấp 0006 (enum `skill` thêm reading/writing) trên dữ liệu 001–005 (spec 007, T013, data-model §1) ---
+
+describe('nâng cấp migration kỹ năng luyện đọc/viết (0006) trên dữ liệu 001–005', () => {
+  const dbName = `jl_practice_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
+  let admin: pg.Client;
+  let upgraded: pg.Pool;
+  let upToReward: string;
+
+  beforeAll(async () => {
+    const base = requireDatabaseUrl();
+    admin = new pg.Client({ connectionString: urlForDatabase(base, 'postgres') });
+    await admin.connect();
+    await admin.query(
+      `CREATE DATABASE ${dbName} TEMPLATE template0 ENCODING 'UTF8' LC_COLLATE 'C' LC_CTYPE 'C'`,
+    );
+    // Thư mục chỉ chứa 0001–0005 để dựng CSDL ở trạng thái của hệ thống 001–005.
+    upToReward = mkdtempSync(path.join(tmpdir(), 'mig-0005-'));
+    for (const f of readdirSync(MIGRATIONS_DIR).filter((n) => /^000[1-5]_/.test(n))) {
+      copyFileSync(path.join(MIGRATIONS_DIR, f), path.join(upToReward, f));
+    }
+    await runMigrations(urlForDatabase(base, dbName), upToReward);
+    upgraded = new pg.Pool({ connectionString: urlForDatabase(base, dbName) });
+  });
+
+  afterAll(async () => {
+    await upgraded?.end();
+    await admin?.query(`DROP DATABASE IF EXISTS ${dbName} WITH (FORCE)`);
+    await admin?.end();
+    if (upToReward) rmSync(upToReward, { recursive: true, force: true });
+  });
+
+  const uq = (text: string, params: unknown[] = []) => upgraded.query(text, params);
+  const enumValues = async () =>
+    (await uq(`SELECT unnest(enum_range(NULL::skill))::text AS v`)).rows.map((r) => r.v as string);
+  /** Số dòng của mọi bảng trong schema public (trừ bảng ghi nhận migration). */
+  const rowCounts = async (): Promise<Record<string, number>> => {
+    const { rows } = await uq(
+      `SELECT table_name FROM information_schema.tables
+       WHERE table_schema = 'public' AND table_type = 'BASE TABLE' AND table_name <> 'schema_migrations'
+       ORDER BY table_name`,
+    );
+    const counts: Record<string, number> = {};
+    for (const r of rows) {
+      const { rows: c } = await uq(`SELECT count(*)::int AS n FROM "${r.table_name}"`);
+      counts[r.table_name as string] = c[0].n as number;
+    }
+    return counts;
+  };
+
+  it('enum skill có thêm reading, writing; số dòng mọi bảng cũ và skills của hồ sơ không đổi', async () => {
+    // Dữ liệu cũ: hồ sơ với các tổ hợp skills khác nhau, chủ đề, đơn vị, lộ trình, kế hoạch.
+    const profiles = [
+      ['A', "ARRAY['vocabulary','grammar']::skill[]"],
+      ['B', "ARRAY['vocabulary','kanji']::skill[]"],
+      ['C', "ARRAY['vocabulary','grammar','kanji']::skill[]"],
+    ] as const;
+    const userIds: string[] = [];
+    for (const [name, skills] of profiles) {
+      const id = (
+        await uq(`INSERT INTO users (email, password_hash) VALUES ($1, 'h') RETURNING id`, [
+          `p-${randomUUID()}@example.com`,
+        ])
+      ).rows[0].id as string;
+      userIds.push(id);
+      await uq(
+        `INSERT INTO learning_profiles (user_id, display_name, skills) VALUES ($1, $2, ${skills})`,
+        [id, name],
+      );
+    }
+    await uq(
+      `INSERT INTO learning_paths (user_id, reason, generated_from) VALUES ($1, 'onboarding', '{}')`,
+      [userIds[0]],
+    );
+    await uq(
+      `INSERT INTO daily_plans (user_id, local_date, budget_minutes, estimated_minutes) VALUES ($1, '2026-01-05', 10, 5)`,
+      [userIds[0]],
+    );
+    const topic = (
+      await uq(
+        `INSERT INTO topics (skill, name, level) VALUES ('vocabulary', '{"vi":"a","en":"a"}', 'N5') RETURNING id`,
+      )
+    ).rows[0].id as string;
+    await uq(
+      `INSERT INTO learning_units (kind, title, level, topic_id, difficulty, est_minutes)
+       VALUES ('vocabulary', '{"vi":"t","en":"t"}', 'N5', $1, 1, 5)`,
+      [topic],
+    );
+
+    const countsBefore = await rowCounts();
+    const skillsBefore = (
+      await uq(`SELECT user_id, skills::text[] AS skills FROM learning_profiles ORDER BY user_id`)
+    ).rows;
+    expect(await enumValues()).toEqual(['vocabulary', 'grammar', 'kanji']);
+    expect(Object.values(countsBefore).some((n) => n > 0)).toBe(true);
+
+    const result = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
+    expect(result.applied).toEqual(['0006_practice_skills.sql']);
+
+    expect(await enumValues()).toEqual(['vocabulary', 'grammar', 'kanji', 'reading', 'writing']);
+    expect(await rowCounts(), 'số dòng các bảng không đổi').toEqual(countsBefore);
+    expect(
+      (await uq(`SELECT user_id, skills::text[] AS skills FROM learning_profiles ORDER BY user_id`))
+        .rows,
+      'skills của hồ sơ có sẵn không đổi',
+    ).toEqual(skillsBefore);
+
+    // Giá trị mới dùng được ở mọi cột kiểu skill sau khi migration commit.
+    await uq(
+      `INSERT INTO topics (skill, name, level) VALUES ('reading', '{"vi":"đ","en":"r"}', 'N5'), ('writing', '{"vi":"v","en":"w"}', 'N5')`,
+    );
+    await uq(
+      `UPDATE learning_profiles SET skills = ARRAY['vocabulary','reading','writing']::skill[] WHERE user_id = $1`,
+      [userIds[0]],
+    );
+    expect(
+      (
+        await uq(`SELECT skills::text[] AS skills FROM learning_profiles WHERE user_id = $1`, [
+          userIds[0],
+        ])
+      ).rows[0].skills,
+    ).toEqual(['vocabulary', 'reading', 'writing']);
+  });
+
+  it('chạy lại idempotent: runner bỏ qua 0006 và bản thân SQL (IF NOT EXISTS) không lỗi khi chạy lại', async () => {
+    const again = await runMigrations(urlForDatabase(requireDatabaseUrl(), dbName));
+    expect(again.applied).toEqual([]);
+    expect(again.skipped).toContain('0006_practice_skills.sql');
+
+    const sql = readFileSync(path.join(MIGRATIONS_DIR, '0006_practice_skills.sql'), 'utf8');
+    await expect(uq(sql)).resolves.toBeTruthy();
+    expect(await enumValues()).toEqual(['vocabulary', 'grammar', 'kanji', 'reading', 'writing']);
   });
 });

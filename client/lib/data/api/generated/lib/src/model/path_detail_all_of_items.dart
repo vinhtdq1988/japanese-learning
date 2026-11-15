@@ -5,6 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/skill.dart';
 import 'package:japanese_api/src/model/content_level.dart';
+import 'package:japanese_api/src/model/competency_level.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -31,6 +32,8 @@ class PathDetailAllOfItems {
     this.estMinutes,
 
     this.status,
+
+    this.competency,
   });
 
   @JsonKey(name: r'unitId', required: false, includeIfNull: false)
@@ -52,6 +55,10 @@ class PathDetailAllOfItems {
   @JsonKey(name: r'status', required: false, includeIfNull: false)
   final PathDetailAllOfItemsStatusEnum? status;
 
+  /// Mức năng lực của CHỦ ĐỀ của đơn vị (đơn vị chưa có dữ liệu chủ đề → insufficient)
+  @JsonKey(name: r'competency', required: false, includeIfNull: false)
+  final CompetencyLevel? competency;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -61,7 +68,8 @@ class PathDetailAllOfItems {
           other.kind == kind &&
           other.level == level &&
           other.estMinutes == estMinutes &&
-          other.status == status;
+          other.status == status &&
+          other.competency == competency;
 
   @override
   int get hashCode =>
@@ -70,7 +78,8 @@ class PathDetailAllOfItems {
       kind.hashCode +
       level.hashCode +
       estMinutes.hashCode +
-      status.hashCode;
+      status.hashCode +
+      competency.hashCode;
 
   factory PathDetailAllOfItems.fromJson(Map<String, dynamic> json) =>
       _$PathDetailAllOfItemsFromJson(json);

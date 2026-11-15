@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Japanese Learning API
-  version: 1.13.0
+  version: 1.14.0
   description: |
     Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
     - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
@@ -21,6 +21,7 @@ info:
       1.11.0 (2026-11-05, spec 003-kanji-lessons) – bổ sung Kanji: (1) `Skill` thêm `kanji` (placement và dùng thử vẫn chỉ vocabulary/grammar); (2) `ProfileUpdate` thêm `skills` – đổi kỹ năng không sinh lộ trình mới, có hiệu lực ở kế hoạch kế tiếp; bỏ kỹ năng đang ưu tiên thì `prioritizedSkill` về null; (3) thêm `PUT /path/items/{itemId}/master` (chỉ mục Kanji); (4) `ContentItem` thêm `kanji`, `topicId`, `examples[].kanjiReading`; `Exercise` thêm `facet`; (5) `DailyPlan` thêm `kanjiNotice`; `PlanItem` thêm `kind`; (6) `SessionSummary` thêm `attentionItems`; (7) `ProgressSummary` thêm `kanji` và `weakTopics[].skill`; (8) `AdminUnitWrite` nhận `kind=kanji`, mục thêm `topicId`/`kanjiDetails`, bài tập thêm `facet`; `GET /admin/units` lọc `kind=kanji`, `GET /admin/topics` thêm tham số lọc `skill`. Thay đổi bổ sung; client sinh mã cũ có thể không giải mã được `Skill=kanji` nên client và backend PHẢI phát hành cùng lúc.
       1.12.0 (2026-11-07, spec 004-org-classes) – bổ sung tổ chức, lớp học, lộ trình lớp (B2B theo seat): (1) nhóm `/admin/organizations*` cho quản trị viên hệ thống (tổ chức, giấy phép, seat; KHÔNG có dữ liệu học); (2) nhóm `/org*` cho chủ tổ chức; (3) nhóm `/classes*` cho giáo viên phụ trách và chủ tổ chức (lớp, thành viên, lời mời, mã tham gia, nhập CSV, lộ trình lớp, bài giao, ghi đè cá nhân, tạm dừng, bảng điều khiển, điểm yếu, xuất CSV, yêu cầu kiểm tra trình độ); (4) `/invitations/{token}*`, `/me/class*` cho người học (xem trước + hai lựa chọn, nhập mã, "Lớp của tôi", chuyển sang lộ trình cá nhân); (5) `Me` thêm `learningSource`, `classSummary`, `organization`; `GET /path` thêm `source`; (6) `PlacementAnswers` thêm `classRequestId`; (7) mã lỗi mới `CLASS_MANAGED` (409) và các mã seat/lớp (`SEAT_UNAVAILABLE`, `SEAT_REASSIGN_LIMIT`, `SEAT_BELOW_USAGE`, `CLASS_NOT_READY`, `CLASS_FULL`, `CLASS_ARCHIVED`, `LAST_TEACHER`, `ALREADY_IN_CLASS`, `INVITEE_UNAVAILABLE`); (8) `GET /admin/action-logs` thêm tham số `organizationId`. Người học không thuộc lớp: mọi phản hồi cũ không đổi (chỉ thêm trường tùy chọn `learningSource: personal`). Vai trò tổ chức KHÔNG nằm trong access token; quyền được tra CSDL mỗi yêu cầu nên mất quyền có hiệu lực ngay. `DELETE /invitations/{token}` nhận id lời mời (uuid) ở cùng vị trí đường dẫn. Thay đổi bổ sung, không phá vỡ tương thích; client và backend PHẢI phát hành cùng lúc để hiển thị khóa lớp.
       1.13.0 (2026-11-08, spec 005-reward-feedback-effects) – bổ sung hiệu ứng thưởng: (1) `SessionSummary.celebrations` (tùy chọn) trả MỘT LẦN, trong phản hồi của lần `POST /sessions/{id}/complete` thực sự hoàn thành phiên: lời chúc mừng hoàn thành ngày (`dayCompleted`) và danh sách thành tựu vừa đạt (`achievements`, đã bản địa hóa theo ngôn ngữ hồ sơ); gọi lại trên phiên đã hoàn thành KHÔNG trả trường này và không ghi thêm gì; (2) `Profile` và `ProfileUpdate` thêm `soundEnabled`, `visualEffectsEnabled` (mặc định true; KHÔNG thuộc nhóm trường bị khóa khi người học thuộc lớp). Thành tựu không có endpoint đọc lại và không xuất hiện trong các DTO của giáo viên/tổ chức. Thay đổi bổ sung; client 1.12.0 bỏ qua các trường mới.
+      1.14.0 (spec 007-fix-comments) – hoàn thiện trải nghiệm học: (1) enum `Skill` thêm `reading` (luyện đọc) và `writing` (luyện viết, gõ bàn phím); hai kỹ năng này chỉ có hiệu lực với học viên có quỹ thời gian đang áp dụng ≥ 30 phút/ngày (kiểm ở máy chủ); thêm mã lỗi `PRACTICE_LOCKED` (403); thêm `GET /study-defaults` (bảng gợi ý kỹ năng theo quỹ thời gian); (2) `DailyPlan.encouragement` (lời khích lệ theo tiến độ, đã bản địa hóa) và `PlanItem.competency`; `ProgressSummary.competency`; mục `items` của `PathDetail` thêm `competency` (mức năng lực: good | needs_improvement | insufficient); (3) `Profile.skills` vẫn trả giá trị ĐÃ LƯU (kể cả `reading/writing` đang bị khóa do quỹ thời gian < 30 phút); `PATCH /me` và `PUT /onboarding*` từ chối THÊM `reading/writing` khi quỹ thời gian sau cập nhật < 30 phút (422). Thay đổi bổ sung; client PHẢI phát hành cùng backend (enum `Skill` mở rộng).
 servers:
   - url: /api/v1
 tags:
@@ -382,6 +383,21 @@ paths:
                   path: { $ref: '#/components/schemas/PathSummary' }
                   today: { $ref: '#/components/schemas/DailyPlan' }
         '422': { $ref: '#/components/responses/ValidationError' }
+  /study-defaults:
+    get:
+      operationId: getStudyDefaults
+      tags: [onboarding]
+      summary: Bảng gợi ý kỹ năng mặc định theo quỹ thời gian mỗi ngày (spec 007, FR-021…023)
+      description: >-
+        Chỉ đọc, giống nhau cho mọi người học, có thể cache theo phiên đăng nhập. Đây là GỢI Ý: người học
+        luôn đổi/bỏ được từng lựa chọn; máy chủ không tự áp dụng vào hồ sơ.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/StudyDefaults' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
   /placement/submit:
     post:
       operationId: submitPlacement
@@ -540,6 +556,7 @@ paths:
                 planItemId: { type: string, format: uuid }
       responses:
         '200': { description: Phiên (ảnh chụp bài tập + câu đã trả lời), content: { application/json: { schema: { $ref: '#/components/schemas/LessonSession' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
         '409': { description: Lộ trình đang tạm dừng (`PATH_PAUSED`), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
@@ -561,6 +578,7 @@ paths:
           content:
             application/json:
               schema: { $ref: '#/components/schemas/AnswerResult' }
+        '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
         '409': { description: 'Phiên đã hoàn thành (`SESSION_COMPLETED`); gửi lại `clientEventId` đã ghi vẫn trả 200', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
         '422': { $ref: '#/components/responses/ValidationError' }
@@ -584,6 +602,7 @@ paths:
                 durationSeconds: { type: integer, minimum: 1, maximum: 1800 }
       responses:
         '204': { description: Đã ghi (hoặc đã có) }
+        '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
         '422': { $ref: '#/components/responses/ValidationError' }
   /sessions/{sessionId}/complete:
@@ -599,6 +618,7 @@ paths:
           content:
             application/json:
               schema: { $ref: '#/components/schemas/SessionSummary' }
+        '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
         '409': { description: Còn câu chưa trả lời (`SESSION_INCOMPLETE`), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
 
@@ -1552,7 +1572,7 @@ components:
       description: Chưa xác thực hoặc token không hợp lệ
       content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
     Forbidden:
-      description: Không có quyền quản trị (FR-004)
+      description: 'Không có quyền quản trị (FR-004); hoặc `PRACTICE_LOCKED`: luyện đọc/viết chỉ dành cho học viên có quỹ thời gian từ 30 phút mỗi ngày, `fields.minimumDailyMinutes` = "30" (spec 007)'
       content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
     NotFound:
       description: Không tìm thấy tài nguyên
@@ -1573,7 +1593,7 @@ components:
       type: object
       required: [code, message]
       properties:
-        code: { type: string, description: 'Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED, CLASS_MANAGED, SEAT_UNAVAILABLE, SEAT_REASSIGN_LIMIT, SEAT_BELOW_USAGE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE' }
+        code: { type: string, description: 'Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED, PRACTICE_LOCKED, CLASS_MANAGED, SEAT_UNAVAILABLE, SEAT_REASSIGN_LIMIT, SEAT_BELOW_USAGE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE' }
         message: { type: string }
         fields:
           type: object
@@ -1582,7 +1602,7 @@ components:
     ContentLevel: { type: string, enum: [N5, N4, N3] }
     TargetLevel: { type: string, enum: [N5, N4, N3, N2, N1], description: 'Mục tiêu JLPT; N2/N1 được chấp nhận nhưng nội dung Giai đoạn 1 chỉ đến N3 (`scopeNotice`)' }
     ScopeNotice: { type: string, enum: [content_ceiling_n3], nullable: true, description: 'Trình độ hoặc mục tiêu vượt phạm vi nội dung hiện có (N5–N3); lộ trình dùng N3 làm trần' }
-    Skill: { type: string, enum: [vocabulary, grammar, kanji] }
+    Skill: { type: string, enum: [vocabulary, grammar, kanji, reading, writing], description: '`reading`/`writing` (luyện đọc/viết, spec 007) chỉ có hiệu lực với học viên có quỹ thời gian đang áp dụng từ 30 phút mỗi ngày; không xuất hiện trong placement và dùng thử' }
     ReviewFacet:
       type: string
       enum: [item, meaning, reading, word]
@@ -1747,6 +1767,7 @@ components:
               translation: { $ref: '#/components/schemas/LocalizedText' }
     TrialContent:
       type: object
+      description: 'Chỉ có vocabulary/grammar – không có `reading/writing` (spec 007)'
       properties:
         units:
           type: array
@@ -1776,6 +1797,7 @@ components:
                         feedbackIncorrect: { $ref: '#/components/schemas/LocalizedText' }
     PlacementQuestionSet:
       type: object
+      description: 'Chỉ có vocabulary/grammar – không có `reading/writing` (spec 007)'
       properties:
         timeLimitSeconds: { type: integer, example: 600 }
         questions:
@@ -1828,6 +1850,30 @@ components:
         state: { type: string, enum: [not_started, in_progress, completed] }
         draft: { $ref: '#/components/schemas/OnboardingDraft' }
         carriedPlacement: { type: object, allOf: [{ $ref: '#/components/schemas/PlacementResult' }], nullable: true }
+    StudyDefaults:
+      type: object
+      required: [items, practiceMinDailyMinutes]
+      properties:
+        practiceMinDailyMinutes:
+          type: integer
+          example: 30
+          description: 'Quỹ thời gian tối thiểu (phút/ngày) để dùng luyện đọc/viết'
+        items:
+          type: array
+          description: 'Một dòng cho mỗi mức 5, 10, 15, 30 theo thứ tự tăng dần'
+          items:
+            type: object
+            required: [dailyMinutes, skills]
+            properties:
+              dailyMinutes: { type: integer, enum: [5, 10, 15, 30] }
+              skills:
+                type: array
+                description: 'Kỹ năng gợi ý bật; tập của mức nhỏ hơn là tập con của mức lớn hơn; `reading`, `writing` chỉ ở mức 30'
+                items: { $ref: '#/components/schemas/Skill' }
+    CompetencyLevel:
+      type: string
+      enum: [good, needs_improvement, insufficient]
+      description: 'Xanh lục / vàng nhạt / chưa đủ dữ liệu (trung tính). Quy tắc: specs/007-fix-comments/contracts/competency-rules.md'
     PathSummary:
       type: object
       properties:
@@ -1856,6 +1902,9 @@ components:
                   level: { $ref: '#/components/schemas/ContentLevel' }
                   estMinutes: { type: integer }
                   status: { type: string, enum: [pending, in_progress, completed, mastered] }
+                  competency:
+                    allOf: [{ $ref: '#/components/schemas/CompetencyLevel' }]
+                    description: 'Mức năng lực của CHỦ ĐỀ của đơn vị (đơn vị chưa có dữ liệu chủ đề → insufficient)'
     PlanItem:
       type: object
       properties:
@@ -1870,6 +1919,11 @@ components:
           allOf: [{ $ref: '#/components/schemas/Skill' }]
           nullable: true
           description: 'Kỹ năng của đơn vị với `new_unit` (client hiển thị nhãn Kanji); null với `review_batch`'
+        competency:
+          type: string
+          nullable: true
+          allOf: [{ $ref: '#/components/schemas/CompetencyLevel' }]
+          description: 'Mức năng lực của KỸ NĂNG của đơn vị với `new_unit`; null với `review_batch` (không thuộc một kỹ năng)'
     MasterResult:
       type: object
       required: [remainingUnits]
@@ -1901,6 +1955,16 @@ components:
           properties:
             code: { type: string, enum: [kanji_exhausted] }
             suggestion: { type: string, enum: [raise_level, content_exhausted] }
+        encouragement:
+          type: object
+          nullable: true
+          description: 'Lời khích lệ theo tiến độ hiện tại, đã bản địa hóa theo ngôn ngữ hồ sơ. Luôn tích cực (encouragement-catalog.md). Ổn định trong cùng ngày địa phương và cùng trạng thái'
+          required: [state, message]
+          properties:
+            state:
+              type: string
+              enum: [not_started, in_progress, day_completed, streak, welcome_back, behind_target]
+            message: { type: string, description: 'Câu hiển thị; đã thay `{n}` bằng số ngày của chuỗi nếu có' }
         summary:
           type: object
           allOf: [{ $ref: '#/components/schemas/SessionSummary' }]
@@ -2022,6 +2086,33 @@ components:
               skill: { $ref: '#/components/schemas/Skill' }
               name: { $ref: '#/components/schemas/LocalizedText' }
               accuracy: { type: number }
+        competency:
+          type: object
+          required: [skills, topics]
+          properties:
+            skills:
+              type: array
+              description: 'Mỗi kỹ năng hiệu lực của người học (và kỹ năng đã có dữ liệu), theo thứ tự vocabulary, grammar, kanji, reading, writing'
+              items:
+                type: object
+                required: [skill, level, answered]
+                properties:
+                  skill: { $ref: '#/components/schemas/Skill' }
+                  level: { $ref: '#/components/schemas/CompetencyLevel' }
+                  answered: { type: integer, minimum: 0, description: 'Số câu lượt chính trong cửa sổ gần nhất (tối đa 20 mỗi chủ đề, cộng theo chủ đề)' }
+                  accuracy: { type: number, nullable: true, minimum: 0, maximum: 1 }
+            topics:
+              type: array
+              description: 'Mọi chủ đề có dữ liệu; luôn gồm các chủ đề trong `weakTopics`'
+              items:
+                type: object
+                required: [topicId, skill, level, answered]
+                properties:
+                  topicId: { type: string, format: uuid }
+                  skill: { $ref: '#/components/schemas/Skill' }
+                  level: { $ref: '#/components/schemas/CompetencyLevel' }
+                  answered: { type: integer, minimum: 0 }
+                  accuracy: { type: number, nullable: true, minimum: 0, maximum: 1 }
     I18nText:
       type: object
       required: [vi, en]

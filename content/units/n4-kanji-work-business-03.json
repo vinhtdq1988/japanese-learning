@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-work-business",
+  "title": {
+    "vi": "Kanji công việc (作 用 計)",
+    "en": "Work and business kanji (作 用 計)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "作",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "làm; tạo",
+        "en": "make; create"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サク",
+          "サ"
+        ],
+        "kunReadings": [
+          "つく.る"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "作文",
+          "reading": "さくぶん",
+          "kanjiReading": "サク",
+          "translation": {
+            "vi": "bài văn",
+            "en": "composition"
+          }
+        },
+        {
+          "ja": "作る",
+          "reading": "つくる",
+          "kanjiReading": "つく",
+          "translation": {
+            "vi": "làm; chế tạo",
+            "en": "to make"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "用",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "dùng; việc",
+        "en": "use; business"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [
+          "もち.いる"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "用事",
+          "reading": "ようじ",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "việc bận",
+            "en": "errand"
+          }
+        },
+        {
+          "ja": "利用",
+          "reading": "りよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "sử dụng",
+            "en": "use"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "計",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "đo; tính; kế hoạch",
+        "en": "measure; plan"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ"
+        ],
+        "kunReadings": [
+          "はか.る",
+          "はか.らう"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "時計",
+          "reading": "とけい",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "đồng hồ",
+            "en": "clock; watch"
+          }
+        },
+        {
+          "ja": "計画",
+          "reading": "けいかく",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "kế hoạch",
+            "en": "plan"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "作",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「作」nghĩa là gì?",
+        "en": "What does 「作」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "làm; tạo",
+            "en": "make; create"
+          },
+          {
+            "vi": "dùng; việc",
+            "en": "use; business"
+          },
+          {
+            "vi": "đo; tính; kế hoạch",
+            "en": "measure; plan"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 作 nghĩa là làm; tạo.",
+        "en": "Correct! 作 means make; create."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 作 nghĩa là làm; tạo, như trong 「作文」 (bài văn).",
+        "en": "Not quite. 作 means make; create, as in 「作文」 (composition)."
+      }
+    },
+    {
+      "item": "作",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「作」 trong 「作文」 (“bài văn”).",
+        "en": "Type the reading of 「作」 in 「作文」 (“composition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さく",
+          "サク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 作文, 作 đọc là さく (âm On).",
+        "en": "Correct! In 作文, 作 is read さく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 作文 (bài văn), 作 đọc là さく (âm On).",
+        "en": "In 作文 (composition), 作 is read さく (on'yomi)."
+      }
+    },
+    {
+      "item": "作",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「作る」(làm; chế tạo) đọc là gì?",
+        "en": "How is 「作る」 (to make) read?"
+      },
+      "payload": {
+        "choices": [
+          "さくる",
+          "つくる",
+          "ようじ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 作る = つくる (làm; chế tạo); 作 đọc là つく (âm Kun).",
+        "en": "Correct! 作る = つくる (to make); 作 is read つく (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "作る đọc là つくる (làm; chế tạo): 作 mang âm Kun つく.",
+        "en": "作る is read つくる (to make): 作 takes the kun'yomi つく."
+      }
+    },
+    {
+      "item": "用",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「用」nghĩa là gì?",
+        "en": "What does 「用」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đo; tính; kế hoạch",
+            "en": "measure; plan"
+          },
+          {
+            "vi": "dùng; việc",
+            "en": "use; business"
+          },
+          {
+            "vi": "làm; tạo",
+            "en": "make; create"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 用 nghĩa là dùng; việc.",
+        "en": "Correct! 用 means use; business."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 用 nghĩa là dùng; việc, như trong 「用事」 (việc bận).",
+        "en": "Not quite. 用 means use; business, as in 「用事」 (errand)."
+      }
+    },
+    {
+      "item": "用",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「用」 trong 「用事」 (“việc bận”).",
+        "en": "Type the reading of 「用」 in 「用事」 (“errand”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 用事, 用 đọc là よう (âm On).",
+        "en": "Correct! In 用事, 用 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 用事 (việc bận), 用 đọc là よう (âm On).",
+        "en": "In 用事 (errand), 用 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "用",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「利用」(sử dụng) đọc là gì?",
+        "en": "How is 「利用」 (use) read?"
+      },
+      "payload": {
+        "choices": [
+          "りもち",
+          "りよ",
+          "りよう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 利用 = りよう (sử dụng); 用 đọc là よう (âm On).",
+        "en": "Correct! 利用 = りよう (use); 用 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "利用 đọc là りよう (sử dụng): 用 mang âm On よう.",
+        "en": "利用 is read りよう (use): 用 takes the on'yomi よう."
+      }
+    },
+    {
+      "item": "計",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「計」nghĩa là gì?",
+        "en": "What does 「計」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "làm; tạo",
+            "en": "make; create"
+          },
+          {
+            "vi": "dùng; việc",
+            "en": "use; business"
+          },
+          {
+            "vi": "đo; tính; kế hoạch",
+            "en": "measure; plan"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 計 nghĩa là đo; tính; kế hoạch.",
+        "en": "Correct! 計 means measure; plan."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 計 nghĩa là đo; tính; kế hoạch, như trong 「時計」 (đồng hồ).",
+        "en": "Not quite. 計 means measure; plan, as in 「時計」 (clock; watch)."
+      }
+    },
+    {
+      "item": "計",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「計」 trong 「時計」 (“đồng hồ”).",
+        "en": "Type the reading of 「計」 in 「時計」 (“clock; watch”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 時計, 計 đọc là けい (âm On).",
+        "en": "Correct! In 時計, 計 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 時計 (đồng hồ), 計 đọc là けい (âm On).",
+        "en": "In 時計 (clock; watch), 計 is read けい (on'yomi)."
+      }
+    },
+    {
+      "item": "計",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「計画」(kế hoạch) đọc là gì?",
+        "en": "How is 「計画」 (plan) read?"
+      },
+      "payload": {
+        "choices": [
+          "けいかく",
+          "はかかく",
+          "げいかく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 計画 = けいかく (kế hoạch); 計 đọc là けい (âm On).",
+        "en": "Correct! 計画 = けいかく (plan); 計 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "計画 đọc là けいかく (kế hoạch): 計 mang âm On けい.",
+        "en": "計画 is read けいかく (plan): 計 takes the on'yomi けい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "作",
+            {
+              "vi": "làm; tạo",
+              "en": "make; create"
+            }
+          ],
+          [
+            "用",
+            {
+              "vi": "dùng; việc",
+              "en": "use; business"
+            }
+          ],
+          [
+            "計",
+            {
+              "vi": "đo; tính; kế hoạch",
+              "en": "measure; plan"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

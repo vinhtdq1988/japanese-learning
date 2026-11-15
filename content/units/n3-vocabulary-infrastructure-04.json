@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-infrastructure",
+  "title": {
+    "vi": "Công trình và tiện ích",
+    "en": "Buildings and utilities"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "建築",
+      "reading": "けんちく",
+      "meaning": {
+        "vi": "Kiến trúc; xây dựng",
+        "en": "Architecture; building"
+      },
+      "examples": [
+        {
+          "ja": "兄は、大学で建築を勉強しています。",
+          "reading": "あには、だいがくでけんちくをべんきょうしています。",
+          "translation": {
+            "vi": "Anh trai tôi đang học kiến trúc ở đại học.",
+            "en": "My older brother studies architecture at university."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "建物",
+      "reading": "たてもの",
+      "meaning": {
+        "vi": "Tòa nhà",
+        "en": "Building"
+      },
+      "examples": [
+        {
+          "ja": "駅の前に、高い建物が建ちました。",
+          "reading": "えきのまえに、たかいたてものがたちました。",
+          "translation": {
+            "vi": "Một tòa nhà cao đã được xây trước nhà ga.",
+            "en": "A tall building went up in front of the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "水道",
+      "reading": "すいどう",
+      "meaning": {
+        "vi": "Nước máy; đường ống nước",
+        "en": "Water supply"
+      },
+      "examples": [
+        {
+          "ja": "引っ越したら、水道の手続きをします。",
+          "reading": "ひっこしたら、すいどうのてつづきをします。",
+          "translation": {
+            "vi": "Chuyển nhà xong thì tôi làm thủ tục nước máy.",
+            "en": "After moving, I will do the water supply procedures."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ガス",
+      "reading": "ガス",
+      "meaning": {
+        "vi": "Khí đốt; ga",
+        "en": "Gas"
+      },
+      "examples": [
+        {
+          "ja": "ガスの火を消すのを、忘れないでください。",
+          "reading": "ガスのひをけすのを、わすれないでください。",
+          "translation": {
+            "vi": "Xin đừng quên tắt lửa bếp ga.",
+            "en": "Please do not forget to turn off the gas flame."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "道のり",
+      "reading": "みちのり",
+      "meaning": {
+        "vi": "Quãng đường",
+        "en": "Distance; journey"
+      },
+      "examples": [
+        {
+          "ja": "駅から家までは、歩いて十分の道のりです。",
+          "reading": "えきからいえまでは、あるいてじゅっぷんのみちのりです。",
+          "translation": {
+            "vi": "Từ ga về nhà là quãng đường đi bộ mười phút.",
+            "en": "From the station to my house is a ten-minute walk."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "利便",
+      "reading": "りべん",
+      "meaning": {
+        "vi": "Tiện lợi; tiện ích",
+        "en": "Convenience"
+      },
+      "examples": [
+        {
+          "ja": "このマンションは、交通の利便がいいです。",
+          "reading": "このマンションは、こうつうのりべんがいいです。",
+          "translation": {
+            "vi": "Chung cư này giao thông rất thuận tiện.",
+            "en": "This apartment has good transport convenience."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "建築",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は、大学で（　）を勉強しています。 — Nghĩa của câu: “Anh trai tôi đang học kiến trúc ở đại học.”",
+        "en": "Choose the word that fits the blank: 兄は、大学で（　）を勉強しています。 — Meaning of the sentence: “My older brother studies architecture at university.”"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "建物",
+          "水道",
+          "道のり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「建築」(Kiến trúc; xây dựng) hợp nghĩa câu này: “Anh trai tôi đang học kiến trúc ở đại học.”",
+        "en": "Correct! 「建築」(Architecture; building) fits this sentence: “My older brother studies architecture at university.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh trai tôi đang học kiến trúc ở đại học.”, nên cần 「建築」(Kiến trúc; xây dựng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother studies architecture at university.”, so it needs 「建築」(Architecture; building); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "建物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅の前に、高い（　）が建ちました。 — Nghĩa của câu: “Một tòa nhà cao đã được xây trước nhà ga.”",
+        "en": "Choose the word that fits the blank: 駅の前に、高い（　）が建ちました。 — Meaning of the sentence: “A tall building went up in front of the station.”"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "建物",
+          "水道",
+          "道のり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「建物」(Tòa nhà) hợp nghĩa câu này: “Một tòa nhà cao đã được xây trước nhà ga.”",
+        "en": "Correct! 「建物」(Building) fits this sentence: “A tall building went up in front of the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Một tòa nhà cao đã được xây trước nhà ga.”, nên cần 「建物」(Tòa nhà); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A tall building went up in front of the station.”, so it needs 「建物」(Building); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "水道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 引っ越したら、（　）の手続きをします。 — Nghĩa của câu: “Chuyển nhà xong thì tôi làm thủ tục nước máy.”",
+        "en": "Choose the word that fits the blank: 引っ越したら、（　）の手続きをします。 — Meaning of the sentence: “After moving, I will do the water supply procedures.”"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "利便",
+          "水道",
+          "建物"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「水道」(Nước máy; đường ống nước) hợp nghĩa câu này: “Chuyển nhà xong thì tôi làm thủ tục nước máy.”",
+        "en": "Correct! 「水道」(Water supply) fits this sentence: “After moving, I will do the water supply procedures.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chuyển nhà xong thì tôi làm thủ tục nước máy.”, nên cần 「水道」(Nước máy; đường ống nước); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After moving, I will do the water supply procedures.”, so it needs 「水道」(Water supply); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ガス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の火を消すのを、忘れないでください。 — Nghĩa của câu: “Xin đừng quên tắt lửa bếp ga.”",
+        "en": "Choose the word that fits the blank: （　）の火を消すのを、忘れないでください。 — Meaning of the sentence: “Please do not forget to turn off the gas flame.”"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "建物",
+          "水道",
+          "ガス"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ガス」(Khí đốt; ga) hợp nghĩa câu này: “Xin đừng quên tắt lửa bếp ga.”",
+        "en": "Correct! 「ガス」(Gas) fits this sentence: “Please do not forget to turn off the gas flame.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin đừng quên tắt lửa bếp ga.”, nên cần 「ガス」(Khí đốt; ga); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please do not forget to turn off the gas flame.”, so it needs 「ガス」(Gas); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "道のり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅から家までは、歩いて十分の（　）です。 — Nghĩa của câu: “Từ ga về nhà là quãng đường đi bộ mười phút.”",
+        "en": "Choose the word that fits the blank: 駅から家までは、歩いて十分の（　）です。 — Meaning of the sentence: “From the station to my house is a ten-minute walk.”"
+      },
+      "payload": {
+        "choices": [
+          "道のり",
+          "建築",
+          "水道",
+          "建物"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「道のり」(Quãng đường) hợp nghĩa câu này: “Từ ga về nhà là quãng đường đi bộ mười phút.”",
+        "en": "Correct! 「道のり」(Distance; journey) fits this sentence: “From the station to my house is a ten-minute walk.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ ga về nhà là quãng đường đi bộ mười phút.”, nên cần 「道のり」(Quãng đường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “From the station to my house is a ten-minute walk.”, so it needs 「道のり」(Distance; journey); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "利便",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このマンションは、交通の（　）がいいです。 — Nghĩa của câu: “Chung cư này giao thông rất thuận tiện.”",
+        "en": "Choose the word that fits the blank: このマンションは、交通の（　）がいいです。 — Meaning of the sentence: “This apartment has good transport convenience.”"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "利便",
+          "建物",
+          "水道"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利便」(Tiện lợi; tiện ích) hợp nghĩa câu này: “Chung cư này giao thông rất thuận tiện.”",
+        "en": "Correct! 「利便」(Convenience) fits this sentence: “This apartment has good transport convenience.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chung cư này giao thông rất thuận tiện.”, nên cần 「利便」(Tiện lợi; tiện ích); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This apartment has good transport convenience.”, so it needs 「利便」(Convenience); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "建築",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 兄は、大学で「建築」を勉強しています。",
+        "en": "Choose the correct reading of the word in 「」: 兄は、大学で「建築」を勉強しています。"
+      },
+      "payload": {
+        "choices": [
+          "りべん",
+          "けんちく",
+          "たてもの",
+          "ガス"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「建築」 đọc là 「けんちく」, nghĩa là Kiến trúc; xây dựng.",
+        "en": "Correct! 「建築」 is read 「けんちく」 and means Architecture; building."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「建築」 đọc là 「けんちく」 (Kiến trúc; xây dựng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「建築」 is read 「けんちく」 (Architecture; building); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "水道",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 引っ越したら、「水道」の手続きをします。",
+        "en": "Choose the correct reading of the word in 「」: 引っ越したら、「水道」の手続きをします。"
+      },
+      "payload": {
+        "choices": [
+          "たてもの",
+          "けんちく",
+          "すいどう",
+          "りべん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「水道」 đọc là 「すいどう」, nghĩa là Nước máy; đường ống nước.",
+        "en": "Correct! 「水道」 is read 「すいどう」 and means Water supply."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「水道」 đọc là 「すいどう」 (Nước máy; đường ống nước); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「水道」 is read 「すいどう」 (Water supply); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "道のり",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 駅から家までは、歩いて十分の「みちのり」です。",
+        "en": "Choose the correct way to write the word in 「」: 駅から家までは、歩いて十分の「みちのり」です。"
+      },
+      "payload": {
+        "choices": [
+          "建築",
+          "水道",
+          "道のり",
+          "建物"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「みちのり」 viết là 「道のり」, nghĩa là Quãng đường.",
+        "en": "Correct! 「みちのり」 is written 「道のり」 and means Distance; journey."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「みちのり」 viết là 「道のり」 (Quãng đường); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「みちのり」 is written 「道のり」 (Distance; journey); the other words are read differently."
+      }
+    }
+  ]
+}

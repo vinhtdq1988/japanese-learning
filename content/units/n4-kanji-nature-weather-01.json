@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-nature-weather",
+  "title": {
+    "vi": "Kanji thiên nhiên – mùa – động vật (野 田 花)",
+    "en": "Nature, seasons and animals kanji (野 田 花)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "野",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "cánh đồng; hoang dã",
+        "en": "field; wild"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヤ"
+        ],
+        "kunReadings": [
+          "の"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "野菜",
+          "reading": "やさい",
+          "kanjiReading": "ヤ",
+          "translation": {
+            "vi": "rau củ",
+            "en": "vegetables"
+          }
+        },
+        {
+          "ja": "野原",
+          "reading": "のはら",
+          "kanjiReading": "の",
+          "translation": {
+            "vi": "cánh đồng cỏ",
+            "en": "meadow"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "田",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "ruộng lúa",
+        "en": "rice field"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "デン"
+        ],
+        "kunReadings": [
+          "た"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "水田",
+          "reading": "すいでん",
+          "kanjiReading": "デン",
+          "translation": {
+            "vi": "ruộng nước",
+            "en": "paddy field"
+          }
+        },
+        {
+          "ja": "田んぼ",
+          "reading": "たんぼ",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "ruộng lúa",
+            "en": "rice paddy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "花",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "hoa",
+        "en": "flower"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [
+          "はな"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "花瓶",
+          "reading": "かびん",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "bình hoa",
+            "en": "vase"
+          }
+        },
+        {
+          "ja": "花",
+          "reading": "はな",
+          "kanjiReading": "はな",
+          "translation": {
+            "vi": "bông hoa",
+            "en": "flower"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "野",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「野」nghĩa là gì?",
+        "en": "What does 「野」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cánh đồng; hoang dã",
+            "en": "field; wild"
+          },
+          {
+            "vi": "ruộng lúa",
+            "en": "rice field"
+          },
+          {
+            "vi": "hoa",
+            "en": "flower"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 野 nghĩa là cánh đồng; hoang dã.",
+        "en": "Correct! 野 means field; wild."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 野 nghĩa là cánh đồng; hoang dã, như trong 「野菜」 (rau củ).",
+        "en": "Not quite. 野 means field; wild, as in 「野菜」 (vegetables)."
+      }
+    },
+    {
+      "item": "野",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「野」 trong 「野菜」 (“rau củ”).",
+        "en": "Type the reading of 「野」 in 「野菜」 (“vegetables”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "や",
+          "ヤ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 野菜, 野 đọc là や (âm On).",
+        "en": "Correct! In 野菜, 野 is read や (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 野菜 (rau củ), 野 đọc là や (âm On).",
+        "en": "In 野菜 (vegetables), 野 is read や (on'yomi)."
+      }
+    },
+    {
+      "item": "野",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「野原」(cánh đồng cỏ) đọc là gì?",
+        "en": "How is 「野原」 (meadow) read?"
+      },
+      "payload": {
+        "choices": [
+          "やはら",
+          "のはら",
+          "のばら"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 野原 = のはら (cánh đồng cỏ); 野 đọc là の (âm Kun).",
+        "en": "Correct! 野原 = のはら (meadow); 野 is read の (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "野原 đọc là のはら (cánh đồng cỏ): 野 mang âm Kun の.",
+        "en": "野原 is read のはら (meadow): 野 takes the kun'yomi の."
+      }
+    },
+    {
+      "item": "田",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「田」nghĩa là gì?",
+        "en": "What does 「田」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hoa",
+            "en": "flower"
+          },
+          {
+            "vi": "ruộng lúa",
+            "en": "rice field"
+          },
+          {
+            "vi": "cánh đồng; hoang dã",
+            "en": "field; wild"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 田 nghĩa là ruộng lúa.",
+        "en": "Correct! 田 means rice field."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 田 nghĩa là ruộng lúa, như trong 「水田」 (ruộng nước).",
+        "en": "Not quite. 田 means rice field, as in 「水田」 (paddy field)."
+      }
+    },
+    {
+      "item": "田",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「田」 trong 「水田」 (“ruộng nước”).",
+        "en": "Type the reading of 「田」 in 「水田」 (“paddy field”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "でん",
+          "デン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 水田, 田 đọc là でん (âm On).",
+        "en": "Correct! In 水田, 田 is read でん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 水田 (ruộng nước), 田 đọc là でん (âm On).",
+        "en": "In 水田 (paddy field), 田 is read でん (on'yomi)."
+      }
+    },
+    {
+      "item": "田",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「田んぼ」(ruộng lúa) đọc là gì?",
+        "en": "How is 「田んぼ」 (rice paddy) read?"
+      },
+      "payload": {
+        "choices": [
+          "かびん",
+          "やさい",
+          "たんぼ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 田んぼ = たんぼ (ruộng lúa); 田 đọc là た (âm Kun).",
+        "en": "Correct! 田んぼ = たんぼ (rice paddy); 田 is read た (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "田んぼ đọc là たんぼ (ruộng lúa): 田 mang âm Kun た.",
+        "en": "田んぼ is read たんぼ (rice paddy): 田 takes the kun'yomi た."
+      }
+    },
+    {
+      "item": "花",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「花」nghĩa là gì?",
+        "en": "What does 「花」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cánh đồng; hoang dã",
+            "en": "field; wild"
+          },
+          {
+            "vi": "ruộng lúa",
+            "en": "rice field"
+          },
+          {
+            "vi": "hoa",
+            "en": "flower"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 花 nghĩa là hoa.",
+        "en": "Correct! 花 means flower."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 花 nghĩa là hoa, như trong 「花瓶」 (bình hoa).",
+        "en": "Not quite. 花 means flower, as in 「花瓶」 (vase)."
+      }
+    },
+    {
+      "item": "花",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「花」 trong 「花瓶」 (“bình hoa”).",
+        "en": "Type the reading of 「花」 in 「花瓶」 (“vase”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 花瓶, 花 đọc là か (âm On).",
+        "en": "Correct! In 花瓶, 花 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 花瓶 (bình hoa), 花 đọc là か (âm On).",
+        "en": "In 花瓶 (vase), 花 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "花",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「花」(bông hoa; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「花」 (flower; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "はな",
+          "か",
+          "やさい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 花 = はな (bông hoa); 花 đọc là はな (âm Kun).",
+        "en": "Correct! 花 = はな (flower); 花 is read はな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "花 đọc là はな (bông hoa): 花 mang âm Kun はな.",
+        "en": "花 is read はな (flower): 花 takes the kun'yomi はな."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "野",
+            {
+              "vi": "cánh đồng; hoang dã",
+              "en": "field; wild"
+            }
+          ],
+          [
+            "田",
+            {
+              "vi": "ruộng lúa",
+              "en": "rice field"
+            }
+          ],
+          [
+            "花",
+            {
+              "vi": "hoa",
+              "en": "flower"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

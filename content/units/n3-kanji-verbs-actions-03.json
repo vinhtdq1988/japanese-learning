@@ -1,0 +1,677 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (乗 残 助 落 負)",
+    "en": "Verbs and actions kanji (乗 残 助 落 負)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "乗",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "lên (xe); cưỡi",
+        "en": "ride; board"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ"
+        ],
+        "kunReadings": [
+          "の.る",
+          "の.せる"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "乗車",
+          "reading": "じょうしゃ",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "lên xe",
+            "en": "boarding"
+          }
+        },
+        {
+          "ja": "乗る",
+          "reading": "のる",
+          "kanjiReading": "の",
+          "translation": {
+            "vi": "lên (xe)",
+            "en": "to ride"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "残",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "còn lại; để lại",
+        "en": "remain; leave"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザン"
+        ],
+        "kunReadings": [
+          "のこ.る",
+          "のこ.す"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "残念",
+          "reading": "ざんねん",
+          "kanjiReading": "ザン",
+          "translation": {
+            "vi": "đáng tiếc",
+            "en": "regrettable"
+          }
+        },
+        {
+          "ja": "残る",
+          "reading": "のこる",
+          "kanjiReading": "のこ",
+          "translation": {
+            "vi": "còn lại",
+            "en": "to remain"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "助",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "giúp",
+        "en": "help"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョ"
+        ],
+        "kunReadings": [
+          "たす.ける",
+          "たす.かる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "助手",
+          "reading": "じょしゅ",
+          "kanjiReading": "ジョ",
+          "translation": {
+            "vi": "trợ lý",
+            "en": "assistant"
+          }
+        },
+        {
+          "ja": "助ける",
+          "reading": "たすける",
+          "kanjiReading": "たす",
+          "translation": {
+            "vi": "giúp đỡ",
+            "en": "to help"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "落",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "rơi; rụng",
+        "en": "fall; drop"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ラク"
+        ],
+        "kunReadings": [
+          "お.ちる",
+          "お.とす"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "落語",
+          "reading": "らくご",
+          "kanjiReading": "ラク",
+          "translation": {
+            "vi": "rakugo (nghệ thuật kể chuyện)",
+            "en": "rakugo"
+          }
+        },
+        {
+          "ja": "落ちる",
+          "reading": "おちる",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "rơi",
+            "en": "to fall"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "負",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "thua; gánh; vác",
+        "en": "lose; bear"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ"
+        ],
+        "kunReadings": [
+          "ま.ける",
+          "お.う"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "負担",
+          "reading": "ふたん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "gánh nặng",
+            "en": "burden"
+          }
+        },
+        {
+          "ja": "負ける",
+          "reading": "まける",
+          "kanjiReading": "ま",
+          "translation": {
+            "vi": "thua",
+            "en": "to lose"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "乗",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「乗」nghĩa là gì?",
+        "en": "What does 「乗」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lên (xe); cưỡi",
+            "en": "ride; board"
+          },
+          {
+            "vi": "còn lại; để lại",
+            "en": "remain; leave"
+          },
+          {
+            "vi": "giúp",
+            "en": "help"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 乗 nghĩa là lên (xe); cưỡi.",
+        "en": "Correct! 乗 means ride; board."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 乗 nghĩa là lên (xe); cưỡi, như trong 「乗車」 (lên xe).",
+        "en": "Not quite. 乗 means ride; board, as in 「乗車」 (boarding)."
+      }
+    },
+    {
+      "item": "乗",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「乗」 trong 「乗車」 (“lên xe”).",
+        "en": "Type the reading of 「乗」 in 「乗車」 (“boarding”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 乗車, 乗 đọc là じょう (âm On).",
+        "en": "Correct! In 乗車, 乗 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 乗車 (lên xe), 乗 đọc là じょう (âm On).",
+        "en": "In 乗車 (boarding), 乗 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "乗",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「乗る」(lên (xe)) đọc là gì?",
+        "en": "How is 「乗る」 (to ride) read?"
+      },
+      "payload": {
+        "choices": [
+          "じょうる",
+          "のる",
+          "のこる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 乗る = のる (lên (xe)); 乗 đọc là の (âm Kun).",
+        "en": "Correct! 乗る = のる (to ride); 乗 is read の (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "乗る đọc là のる (lên (xe)): 乗 mang âm Kun の.",
+        "en": "乗る is read のる (to ride): 乗 takes the kun'yomi の."
+      }
+    },
+    {
+      "item": "残",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「残」nghĩa là gì?",
+        "en": "What does 「残」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giúp",
+            "en": "help"
+          },
+          {
+            "vi": "còn lại; để lại",
+            "en": "remain; leave"
+          },
+          {
+            "vi": "rơi; rụng",
+            "en": "fall; drop"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 残 nghĩa là còn lại; để lại.",
+        "en": "Correct! 残 means remain; leave."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 残 nghĩa là còn lại; để lại, như trong 「残念」 (đáng tiếc).",
+        "en": "Not quite. 残 means remain; leave, as in 「残念」 (regrettable)."
+      }
+    },
+    {
+      "item": "残",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「残」 trong 「残念」 (“đáng tiếc”).",
+        "en": "Type the reading of 「残」 in 「残念」 (“regrettable”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざん",
+          "ザン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 残念, 残 đọc là ざん (âm On).",
+        "en": "Correct! In 残念, 残 is read ざん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 残念 (đáng tiếc), 残 đọc là ざん (âm On).",
+        "en": "In 残念 (regrettable), 残 is read ざん (on'yomi)."
+      }
+    },
+    {
+      "item": "残",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「残る」(còn lại) đọc là gì?",
+        "en": "How is 「残る」 (to remain) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざんる",
+          "おちる",
+          "のこる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 残る = のこる (còn lại); 残 đọc là のこ (âm Kun).",
+        "en": "Correct! 残る = のこる (to remain); 残 is read のこ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "残る đọc là のこる (còn lại): 残 mang âm Kun のこ.",
+        "en": "残る is read のこる (to remain): 残 takes the kun'yomi のこ."
+      }
+    },
+    {
+      "item": "助",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「助」nghĩa là gì?",
+        "en": "What does 「助」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rơi; rụng",
+            "en": "fall; drop"
+          },
+          {
+            "vi": "thua; gánh; vác",
+            "en": "lose; bear"
+          },
+          {
+            "vi": "giúp",
+            "en": "help"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 助 nghĩa là giúp.",
+        "en": "Correct! 助 means help."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 助 nghĩa là giúp, như trong 「助手」 (trợ lý).",
+        "en": "Not quite. 助 means help, as in 「助手」 (assistant)."
+      }
+    },
+    {
+      "item": "助",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「助」 trong 「助手」 (“trợ lý”).",
+        "en": "Type the reading of 「助」 in 「助手」 (“assistant”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょ",
+          "ジョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 助手, 助 đọc là じょ (âm On).",
+        "en": "Correct! In 助手, 助 is read じょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 助手 (trợ lý), 助 đọc là じょ (âm On).",
+        "en": "In 助手 (assistant), 助 is read じょ (on'yomi)."
+      }
+    },
+    {
+      "item": "助",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「助ける」(giúp đỡ) đọc là gì?",
+        "en": "How is 「助ける」 (to help) read?"
+      },
+      "payload": {
+        "choices": [
+          "たすける",
+          "じょける",
+          "ざんねん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 助ける = たすける (giúp đỡ); 助 đọc là たす (âm Kun).",
+        "en": "Correct! 助ける = たすける (to help); 助 is read たす (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "助ける đọc là たすける (giúp đỡ): 助 mang âm Kun たす.",
+        "en": "助ける is read たすける (to help): 助 takes the kun'yomi たす."
+      }
+    },
+    {
+      "item": "落",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「落」nghĩa là gì?",
+        "en": "What does 「落」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rơi; rụng",
+            "en": "fall; drop"
+          },
+          {
+            "vi": "thua; gánh; vác",
+            "en": "lose; bear"
+          },
+          {
+            "vi": "lên (xe); cưỡi",
+            "en": "ride; board"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 落 nghĩa là rơi; rụng.",
+        "en": "Correct! 落 means fall; drop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 落 nghĩa là rơi; rụng, như trong 「落語」 (rakugo (nghệ thuật kể chuyện)).",
+        "en": "Not quite. 落 means fall; drop, as in 「落語」 (rakugo)."
+      }
+    },
+    {
+      "item": "落",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「落」 trong 「落語」 (“rakugo (nghệ thuật kể chuyện)”).",
+        "en": "Type the reading of 「落」 in 「落語」 (“rakugo”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "らく",
+          "ラク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 落語, 落 đọc là らく (âm On).",
+        "en": "Correct! In 落語, 落 is read らく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 落語 (rakugo (nghệ thuật kể chuyện)), 落 đọc là らく (âm On).",
+        "en": "In 落語 (rakugo), 落 is read らく (on'yomi)."
+      }
+    },
+    {
+      "item": "落",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「落ちる」(rơi) đọc là gì?",
+        "en": "How is 「落ちる」 (to fall) read?"
+      },
+      "payload": {
+        "choices": [
+          "らくちる",
+          "おちる",
+          "まける"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 落ちる = おちる (rơi); 落 đọc là お (âm Kun).",
+        "en": "Correct! 落ちる = おちる (to fall); 落 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "落ちる đọc là おちる (rơi): 落 mang âm Kun お.",
+        "en": "落ちる is read おちる (to fall): 落 takes the kun'yomi お."
+      }
+    },
+    {
+      "item": "負",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「負」nghĩa là gì?",
+        "en": "What does 「負」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lên (xe); cưỡi",
+            "en": "ride; board"
+          },
+          {
+            "vi": "thua; gánh; vác",
+            "en": "lose; bear"
+          },
+          {
+            "vi": "còn lại; để lại",
+            "en": "remain; leave"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 負 nghĩa là thua; gánh; vác.",
+        "en": "Correct! 負 means lose; bear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 負 nghĩa là thua; gánh; vác, như trong 「負担」 (gánh nặng).",
+        "en": "Not quite. 負 means lose; bear, as in 「負担」 (burden)."
+      }
+    },
+    {
+      "item": "負",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「負」 trong 「負担」 (“gánh nặng”).",
+        "en": "Type the reading of 「負」 in 「負担」 (“burden”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふ",
+          "フ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 負担, 負 đọc là ふ (âm On).",
+        "en": "Correct! In 負担, 負 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 負担 (gánh nặng), 負 đọc là ふ (âm On).",
+        "en": "In 負担 (burden), 負 is read ふ (on'yomi)."
+      }
+    },
+    {
+      "item": "負",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「負ける」(thua) đọc là gì?",
+        "en": "How is 「負ける」 (to lose) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふける",
+          "のこる",
+          "まける"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 負ける = まける (thua); 負 đọc là ま (âm Kun).",
+        "en": "Correct! 負ける = まける (to lose); 負 is read ま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "負ける đọc là まける (thua): 負 mang âm Kun ま.",
+        "en": "負ける is read まける (to lose): 負 takes the kun'yomi ま."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "乗",
+            {
+              "vi": "lên (xe); cưỡi",
+              "en": "ride; board"
+            }
+          ],
+          [
+            "残",
+            {
+              "vi": "còn lại; để lại",
+              "en": "remain; leave"
+            }
+          ],
+          [
+            "助",
+            {
+              "vi": "giúp",
+              "en": "help"
+            }
+          ],
+          [
+            "落",
+            {
+              "vi": "rơi; rụng",
+              "en": "fall; drop"
+            }
+          ],
+          [
+            "負",
+            {
+              "vi": "thua; gánh; vác",
+              "en": "lose; bear"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (再 常 回 全 各)",
+    "en": "Adjectives and quantity kanji (再 常 回 全 各)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "再",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "lại; lần nữa",
+        "en": "again"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ",
+          "サ"
+        ],
+        "kunReadings": [
+          "ふたた.び"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "再会",
+          "reading": "さいかい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "hội ngộ",
+            "en": "reunion"
+          }
+        },
+        {
+          "ja": "再来週",
+          "reading": "さらいしゅう",
+          "kanjiReading": "サ",
+          "translation": {
+            "vi": "tuần sau nữa",
+            "en": "the week after next"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "常",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "thường; luôn",
+        "en": "usual; always"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ"
+        ],
+        "kunReadings": [
+          "つね",
+          "とこ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "日常",
+          "reading": "にちじょう",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "thường ngày",
+            "en": "everyday"
+          }
+        },
+        {
+          "ja": "常に",
+          "reading": "つねに",
+          "kanjiReading": "つね",
+          "translation": {
+            "vi": "luôn luôn",
+            "en": "always"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "回",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "lần; vòng; quay",
+        "en": "times; turn; rotate"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ",
+          "エ"
+        ],
+        "kunReadings": [
+          "まわ.る",
+          "まわ.す"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "回数",
+          "reading": "かいすう",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "số lần",
+            "en": "number of times"
+          }
+        },
+        {
+          "ja": "回る",
+          "reading": "まわる",
+          "kanjiReading": "まわ",
+          "translation": {
+            "vi": "quay; đi vòng",
+            "en": "to turn around"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "全",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "toàn; tất cả",
+        "en": "all; whole"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゼン"
+        ],
+        "kunReadings": [
+          "まった.く",
+          "すべ.て"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "全体",
+          "reading": "ぜんたい",
+          "kanjiReading": "ゼン",
+          "translation": {
+            "vi": "toàn thể",
+            "en": "whole"
+          }
+        },
+        {
+          "ja": "全く",
+          "reading": "まったく",
+          "kanjiReading": "まった",
+          "translation": {
+            "vi": "hoàn toàn",
+            "en": "entirely"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "各",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "mỗi; các",
+        "en": "each; every"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カク"
+        ],
+        "kunReadings": [
+          "おのおの"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "各地",
+          "reading": "かくち",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "các nơi",
+            "en": "various places"
+          }
+        },
+        {
+          "ja": "各自",
+          "reading": "かくじ",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "từng người",
+            "en": "each person"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "再",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「再」nghĩa là gì?",
+        "en": "What does 「再」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lại; lần nữa",
+            "en": "again"
+          },
+          {
+            "vi": "thường; luôn",
+            "en": "usual; always"
+          },
+          {
+            "vi": "lần; vòng; quay",
+            "en": "times; turn; rotate"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 再 nghĩa là lại; lần nữa.",
+        "en": "Correct! 再 means again."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 再 nghĩa là lại; lần nữa, như trong 「再会」 (hội ngộ).",
+        "en": "Not quite. 再 means again, as in 「再会」 (reunion)."
+      }
+    },
+    {
+      "item": "再",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「再」 trong 「再会」 (“hội ngộ”).",
+        "en": "Type the reading of 「再」 in 「再会」 (“reunion”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 再会, 再 đọc là さい (âm On).",
+        "en": "Correct! In 再会, 再 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 再会 (hội ngộ), 再 đọc là さい (âm On).",
+        "en": "In 再会 (reunion), 再 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "再",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「再来週」(tuần sau nữa) đọc là gì?",
+        "en": "How is 「再来週」 (the week after next) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふたたらいしゅう",
+          "さらいしゅう",
+          "ざらいしゅう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 再来週 = さらいしゅう (tuần sau nữa); 再 đọc là さ (âm On).",
+        "en": "Correct! 再来週 = さらいしゅう (the week after next); 再 is read さ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "再来週 đọc là さらいしゅう (tuần sau nữa): 再 mang âm On さ.",
+        "en": "再来週 is read さらいしゅう (the week after next): 再 takes the on'yomi さ."
+      }
+    },
+    {
+      "item": "常",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「常」nghĩa là gì?",
+        "en": "What does 「常」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lần; vòng; quay",
+            "en": "times; turn; rotate"
+          },
+          {
+            "vi": "thường; luôn",
+            "en": "usual; always"
+          },
+          {
+            "vi": "toàn; tất cả",
+            "en": "all; whole"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 常 nghĩa là thường; luôn.",
+        "en": "Correct! 常 means usual; always."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 常 nghĩa là thường; luôn, như trong 「日常」 (thường ngày).",
+        "en": "Not quite. 常 means usual; always, as in 「日常」 (everyday)."
+      }
+    },
+    {
+      "item": "常",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「常」 trong 「日常」 (“thường ngày”).",
+        "en": "Type the reading of 「常」 in 「日常」 (“everyday”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 日常, 常 đọc là じょう (âm On).",
+        "en": "Correct! In 日常, 常 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 日常 (thường ngày), 常 đọc là じょう (âm On).",
+        "en": "In 日常 (everyday), 常 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "常",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「常に」(luôn luôn) đọc là gì?",
+        "en": "How is 「常に」 (always) read?"
+      },
+      "payload": {
+        "choices": [
+          "じょうに",
+          "まわる",
+          "つねに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 常に = つねに (luôn luôn); 常 đọc là つね (âm Kun).",
+        "en": "Correct! 常に = つねに (always); 常 is read つね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "常に đọc là つねに (luôn luôn): 常 mang âm Kun つね.",
+        "en": "常に is read つねに (always): 常 takes the kun'yomi つね."
+      }
+    },
+    {
+      "item": "回",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「回」nghĩa là gì?",
+        "en": "What does 「回」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "toàn; tất cả",
+            "en": "all; whole"
+          },
+          {
+            "vi": "mỗi; các",
+            "en": "each; every"
+          },
+          {
+            "vi": "lần; vòng; quay",
+            "en": "times; turn; rotate"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 回 nghĩa là lần; vòng; quay.",
+        "en": "Correct! 回 means times; turn; rotate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 回 nghĩa là lần; vòng; quay, như trong 「回数」 (số lần).",
+        "en": "Not quite. 回 means times; turn; rotate, as in 「回数」 (number of times)."
+      }
+    },
+    {
+      "item": "回",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「回」 trong 「回数」 (“số lần”).",
+        "en": "Type the reading of 「回」 in 「回数」 (“number of times”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 回数, 回 đọc là かい (âm On).",
+        "en": "Correct! In 回数, 回 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 回数 (số lần), 回 đọc là かい (âm On).",
+        "en": "In 回数 (number of times), 回 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "回",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「回る」(quay; đi vòng) đọc là gì?",
+        "en": "How is 「回る」 (to turn around) read?"
+      },
+      "payload": {
+        "choices": [
+          "まわる",
+          "かいる",
+          "かくち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 回る = まわる (quay; đi vòng); 回 đọc là まわ (âm Kun).",
+        "en": "Correct! 回る = まわる (to turn around); 回 is read まわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "回る đọc là まわる (quay; đi vòng): 回 mang âm Kun まわ.",
+        "en": "回る is read まわる (to turn around): 回 takes the kun'yomi まわ."
+      }
+    },
+    {
+      "item": "全",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「全」nghĩa là gì?",
+        "en": "What does 「全」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "toàn; tất cả",
+            "en": "all; whole"
+          },
+          {
+            "vi": "mỗi; các",
+            "en": "each; every"
+          },
+          {
+            "vi": "lại; lần nữa",
+            "en": "again"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 全 nghĩa là toàn; tất cả.",
+        "en": "Correct! 全 means all; whole."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 全 nghĩa là toàn; tất cả, như trong 「全体」 (toàn thể).",
+        "en": "Not quite. 全 means all; whole, as in 「全体」 (whole)."
+      }
+    },
+    {
+      "item": "全",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「全」 trong 「全体」 (“toàn thể”).",
+        "en": "Type the reading of 「全」 in 「全体」 (“whole”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぜん",
+          "ゼン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 全体, 全 đọc là ぜん (âm On).",
+        "en": "Correct! In 全体, 全 is read ぜん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 全体 (toàn thể), 全 đọc là ぜん (âm On).",
+        "en": "In 全体 (whole), 全 is read ぜん (on'yomi)."
+      }
+    },
+    {
+      "item": "全",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「全く」(hoàn toàn) đọc là gì?",
+        "en": "How is 「全く」 (entirely) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜんく",
+          "まったく",
+          "さいかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 全く = まったく (hoàn toàn); 全 đọc là まった (âm Kun).",
+        "en": "Correct! 全く = まったく (entirely); 全 is read まった (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "全く đọc là まったく (hoàn toàn): 全 mang âm Kun まった.",
+        "en": "全く is read まったく (entirely): 全 takes the kun'yomi まった."
+      }
+    },
+    {
+      "item": "各",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「各」nghĩa là gì?",
+        "en": "What does 「各」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lại; lần nữa",
+            "en": "again"
+          },
+          {
+            "vi": "mỗi; các",
+            "en": "each; every"
+          },
+          {
+            "vi": "thường; luôn",
+            "en": "usual; always"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 各 nghĩa là mỗi; các.",
+        "en": "Correct! 各 means each; every."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 各 nghĩa là mỗi; các, như trong 「各地」 (các nơi).",
+        "en": "Not quite. 各 means each; every, as in 「各地」 (various places)."
+      }
+    },
+    {
+      "item": "各",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「各」 trong 「各地」 (“các nơi”).",
+        "en": "Type the reading of 「各」 in 「各地」 (“various places”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かく",
+          "カク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 各地, 各 đọc là かく (âm On).",
+        "en": "Correct! In 各地, 各 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 各地 (các nơi), 各 đọc là かく (âm On).",
+        "en": "In 各地 (various places), 各 is read かく (on'yomi)."
+      }
+    },
+    {
+      "item": "各",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「各自」(từng người) đọc là gì?",
+        "en": "How is 「各自」 (each person) read?"
+      },
+      "payload": {
+        "choices": [
+          "おのおのじ",
+          "がくじ",
+          "かくじ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 各自 = かくじ (từng người); 各 đọc là かく (âm On).",
+        "en": "Correct! 各自 = かくじ (each person); 各 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "各自 đọc là かくじ (từng người): 各 mang âm On かく.",
+        "en": "各自 is read かくじ (each person): 各 takes the on'yomi かく."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "再",
+            {
+              "vi": "lại; lần nữa",
+              "en": "again"
+            }
+          ],
+          [
+            "常",
+            {
+              "vi": "thường; luôn",
+              "en": "usual; always"
+            }
+          ],
+          [
+            "回",
+            {
+              "vi": "lần; vòng; quay",
+              "en": "times; turn; rotate"
+            }
+          ],
+          [
+            "全",
+            {
+              "vi": "toàn; tất cả",
+              "en": "all; whole"
+            }
+          ],
+          [
+            "各",
+            {
+              "vi": "mỗi; các",
+              "en": "each; every"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

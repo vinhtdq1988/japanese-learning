@@ -44,6 +44,8 @@ String skillLabel(AppLocalizations l10n, String skill) {
       return l10n.onboardingSkillReading;
     case 'kanji':
       return l10n.onboardingSkillKanji;
+    case 'writing':
+      return l10n.onboardingSkillWriting;
   }
   return skill;
 }

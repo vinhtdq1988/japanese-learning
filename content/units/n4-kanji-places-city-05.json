@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-places-city",
+  "title": {
+    "vi": "Kanji địa điểm – thành phố (公 世 界 方)",
+    "en": "Places and the city kanji (公 世 界 方)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "公",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "công; chung",
+        "en": "public"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "おおやけ"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "公園",
+          "reading": "こうえん",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "công viên",
+            "en": "park"
+          }
+        },
+        {
+          "ja": "公共",
+          "reading": "こうきょう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "công cộng",
+            "en": "public"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "世",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "đời; thế giới",
+        "en": "world; generation"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "セ"
+        ],
+        "kunReadings": [
+          "よ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "世界",
+          "reading": "せかい",
+          "kanjiReading": "セ",
+          "translation": {
+            "vi": "thế giới",
+            "en": "world"
+          }
+        },
+        {
+          "ja": "世の中",
+          "reading": "よのなか",
+          "kanjiReading": "よ",
+          "translation": {
+            "vi": "xã hội; cuộc đời",
+            "en": "society; the world"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "界",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "giới; ranh giới",
+        "en": "world; boundary"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "業界",
+          "reading": "ぎょうかい",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "giới (ngành nghề)",
+            "en": "industry circles"
+          }
+        },
+        {
+          "ja": "限界",
+          "reading": "げんかい",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "giới hạn",
+            "en": "limit"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "方",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "phía; cách; người",
+        "en": "direction; way; person"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホウ"
+        ],
+        "kunReadings": [
+          "かた"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "方法",
+          "reading": "ほうほう",
+          "kanjiReading": "ホウ",
+          "translation": {
+            "vi": "phương pháp",
+            "en": "method"
+          }
+        },
+        {
+          "ja": "読み方",
+          "reading": "よみかた",
+          "kanjiReading": "かた",
+          "translation": {
+            "vi": "cách đọc",
+            "en": "how to read"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "公",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「公」nghĩa là gì?",
+        "en": "What does 「公」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "công; chung",
+            "en": "public"
+          },
+          {
+            "vi": "đời; thế giới",
+            "en": "world; generation"
+          },
+          {
+            "vi": "giới; ranh giới",
+            "en": "world; boundary"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 公 nghĩa là công; chung.",
+        "en": "Correct! 公 means public."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 公 nghĩa là công; chung, như trong 「公園」 (công viên).",
+        "en": "Not quite. 公 means public, as in 「公園」 (park)."
+      }
+    },
+    {
+      "item": "公",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「公」 trong 「公園」 (“công viên”).",
+        "en": "Type the reading of 「公」 in 「公園」 (“park”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 公園, 公 đọc là こう (âm On).",
+        "en": "Correct! In 公園, 公 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 公園 (công viên), 公 đọc là こう (âm On).",
+        "en": "In 公園 (park), 公 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "公",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「公共」(công cộng) đọc là gì?",
+        "en": "How is 「公共」 (public) read?"
+      },
+      "payload": {
+        "choices": [
+          "おおやけきょう",
+          "こうきょう",
+          "ごうきょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 公共 = こうきょう (công cộng); 公 đọc là こう (âm On).",
+        "en": "Correct! 公共 = こうきょう (public); 公 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "公共 đọc là こうきょう (công cộng): 公 mang âm On こう.",
+        "en": "公共 is read こうきょう (public): 公 takes the on'yomi こう."
+      }
+    },
+    {
+      "item": "世",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「世」nghĩa là gì?",
+        "en": "What does 「世」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giới; ranh giới",
+            "en": "world; boundary"
+          },
+          {
+            "vi": "đời; thế giới",
+            "en": "world; generation"
+          },
+          {
+            "vi": "phía; cách; người",
+            "en": "direction; way; person"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 世 nghĩa là đời; thế giới.",
+        "en": "Correct! 世 means world; generation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 世 nghĩa là đời; thế giới, như trong 「世界」 (thế giới).",
+        "en": "Not quite. 世 means world; generation, as in 「世界」 (world)."
+      }
+    },
+    {
+      "item": "世",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「世」 trong 「世界」 (“thế giới”).",
+        "en": "Type the reading of 「世」 in 「世界」 (“world”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せ",
+          "セ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 世界, 世 đọc là せ (âm On).",
+        "en": "Correct! In 世界, 世 is read せ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 世界 (thế giới), 世 đọc là せ (âm On).",
+        "en": "In 世界 (world), 世 is read せ (on'yomi)."
+      }
+    },
+    {
+      "item": "世",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「世の中」(xã hội; cuộc đời) đọc là gì?",
+        "en": "How is 「世の中」 (society; the world) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいのなか",
+          "せのなか",
+          "よのなか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 世の中 = よのなか (xã hội; cuộc đời); 世 đọc là よ (âm Kun).",
+        "en": "Correct! 世の中 = よのなか (society; the world); 世 is read よ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "世の中 đọc là よのなか (xã hội; cuộc đời): 世 mang âm Kun よ.",
+        "en": "世の中 is read よのなか (society; the world): 世 takes the kun'yomi よ."
+      }
+    },
+    {
+      "item": "界",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「界」nghĩa là gì?",
+        "en": "What does 「界」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phía; cách; người",
+            "en": "direction; way; person"
+          },
+          {
+            "vi": "công; chung",
+            "en": "public"
+          },
+          {
+            "vi": "giới; ranh giới",
+            "en": "world; boundary"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 界 nghĩa là giới; ranh giới.",
+        "en": "Correct! 界 means world; boundary."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 界 nghĩa là giới; ranh giới, như trong 「業界」 (giới (ngành nghề)).",
+        "en": "Not quite. 界 means world; boundary, as in 「業界」 (industry circles)."
+      }
+    },
+    {
+      "item": "界",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「界」 trong 「業界」 (“giới (ngành nghề)”).",
+        "en": "Type the reading of 「界」 in 「業界」 (“industry circles”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 業界, 界 đọc là かい (âm On).",
+        "en": "Correct! In 業界, 界 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 業界 (giới (ngành nghề)), 界 đọc là かい (âm On).",
+        "en": "In 業界 (industry circles), 界 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "界",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「限界」(giới hạn) đọc là gì?",
+        "en": "How is 「限界」 (limit) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんかい",
+          "げんがい",
+          "げんかた"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 限界 = げんかい (giới hạn); 界 đọc là かい (âm On).",
+        "en": "Correct! 限界 = げんかい (limit); 界 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "限界 đọc là げんかい (giới hạn): 界 mang âm On かい.",
+        "en": "限界 is read げんかい (limit): 界 takes the on'yomi かい."
+      }
+    },
+    {
+      "item": "方",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「方」nghĩa là gì?",
+        "en": "What does 「方」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phía; cách; người",
+            "en": "direction; way; person"
+          },
+          {
+            "vi": "công; chung",
+            "en": "public"
+          },
+          {
+            "vi": "đời; thế giới",
+            "en": "world; generation"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 方 nghĩa là phía; cách; người.",
+        "en": "Correct! 方 means direction; way; person."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 方 nghĩa là phía; cách; người, như trong 「方法」 (phương pháp).",
+        "en": "Not quite. 方 means direction; way; person, as in 「方法」 (method)."
+      }
+    },
+    {
+      "item": "方",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「方」 trong 「方法」 (“phương pháp”).",
+        "en": "Type the reading of 「方」 in 「方法」 (“method”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほう",
+          "ホウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 方法, 方 đọc là ほう (âm On).",
+        "en": "Correct! In 方法, 方 is read ほう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 方法 (phương pháp), 方 đọc là ほう (âm On).",
+        "en": "In 方法 (method), 方 is read ほう (on'yomi)."
+      }
+    },
+    {
+      "item": "方",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「読み方」(cách đọc) đọc là gì?",
+        "en": "How is 「読み方」 (how to read) read?"
+      },
+      "payload": {
+        "choices": [
+          "よみほう",
+          "よみかた",
+          "よみがた"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 読み方 = よみかた (cách đọc); 方 đọc là かた (âm Kun).",
+        "en": "Correct! 読み方 = よみかた (how to read); 方 is read かた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "読み方 đọc là よみかた (cách đọc): 方 mang âm Kun かた.",
+        "en": "読み方 is read よみかた (how to read): 方 takes the kun'yomi かた."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "公",
+            {
+              "vi": "công; chung",
+              "en": "public"
+            }
+          ],
+          [
+            "世",
+            {
+              "vi": "đời; thế giới",
+              "en": "world; generation"
+            }
+          ],
+          [
+            "界",
+            {
+              "vi": "giới; ranh giới",
+              "en": "world; boundary"
+            }
+          ],
+          [
+            "方",
+            {
+              "vi": "phía; cách; người",
+              "en": "direction; way; person"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

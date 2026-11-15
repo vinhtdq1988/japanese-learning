@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (供 費 収)",
+    "en": "Economy and money kanji (供 費 収)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "供",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "cung cấp; cúng",
+        "en": "offer; provide"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ",
+          "ク"
+        ],
+        "kunReadings": [
+          "とも",
+          "そな.える"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "提供",
+          "reading": "ていきょう",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "cung cấp",
+            "en": "provision"
+          }
+        },
+        {
+          "ja": "供える",
+          "reading": "そなえる",
+          "kanjiReading": "そな",
+          "translation": {
+            "vi": "dâng; cúng",
+            "en": "to offer"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "費",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "phí; tiêu",
+        "en": "expense; spend"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "つい.やす",
+          "つい.える"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "費用",
+          "reading": "ひよう",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "chi phí",
+            "en": "cost"
+          }
+        },
+        {
+          "ja": "費やす",
+          "reading": "ついやす",
+          "kanjiReading": "つい",
+          "translation": {
+            "vi": "tiêu tốn",
+            "en": "to spend"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "収",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "thu; nhận vào",
+        "en": "receive; collect"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "おさ.める",
+          "おさ.まる"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "収入",
+          "reading": "しゅうにゅう",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "thu nhập",
+            "en": "income"
+          }
+        },
+        {
+          "ja": "収める",
+          "reading": "おさめる",
+          "kanjiReading": "おさ",
+          "translation": {
+            "vi": "thu về; cất",
+            "en": "to collect"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "供",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「供」nghĩa là gì?",
+        "en": "What does 「供」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cung cấp; cúng",
+            "en": "offer; provide"
+          },
+          {
+            "vi": "phí; tiêu",
+            "en": "expense; spend"
+          },
+          {
+            "vi": "thu; nhận vào",
+            "en": "receive; collect"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 供 nghĩa là cung cấp; cúng.",
+        "en": "Correct! 供 means offer; provide."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 供 nghĩa là cung cấp; cúng, như trong 「提供」 (cung cấp).",
+        "en": "Not quite. 供 means offer; provide, as in 「提供」 (provision)."
+      }
+    },
+    {
+      "item": "供",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「供」 trong 「提供」 (“cung cấp”).",
+        "en": "Type the reading of 「供」 in 「提供」 (“provision”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 提供, 供 đọc là きょう (âm On).",
+        "en": "Correct! In 提供, 供 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 提供 (cung cấp), 供 đọc là きょう (âm On).",
+        "en": "In 提供 (provision), 供 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "供",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「供える」(dâng; cúng) đọc là gì?",
+        "en": "How is 「供える」 (to offer) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょうえる",
+          "そなえる",
+          "おさめる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 供える = そなえる (dâng; cúng); 供 đọc là そな (âm Kun).",
+        "en": "Correct! 供える = そなえる (to offer); 供 is read そな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "供える đọc là そなえる (dâng; cúng): 供 mang âm Kun そな.",
+        "en": "供える is read そなえる (to offer): 供 takes the kun'yomi そな."
+      }
+    },
+    {
+      "item": "費",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「費」nghĩa là gì?",
+        "en": "What does 「費」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thu; nhận vào",
+            "en": "receive; collect"
+          },
+          {
+            "vi": "phí; tiêu",
+            "en": "expense; spend"
+          },
+          {
+            "vi": "cung cấp; cúng",
+            "en": "offer; provide"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 費 nghĩa là phí; tiêu.",
+        "en": "Correct! 費 means expense; spend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 費 nghĩa là phí; tiêu, như trong 「費用」 (chi phí).",
+        "en": "Not quite. 費 means expense; spend, as in 「費用」 (cost)."
+      }
+    },
+    {
+      "item": "費",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「費」 trong 「費用」 (“chi phí”).",
+        "en": "Type the reading of 「費」 in 「費用」 (“cost”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 費用, 費 đọc là ひ (âm On).",
+        "en": "Correct! In 費用, 費 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 費用 (chi phí), 費 đọc là ひ (âm On).",
+        "en": "In 費用 (cost), 費 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "費",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「費やす」(tiêu tốn) đọc là gì?",
+        "en": "How is 「費やす」 (to spend) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひやす",
+          "おさめる",
+          "ついやす"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 費やす = ついやす (tiêu tốn); 費 đọc là つい (âm Kun).",
+        "en": "Correct! 費やす = ついやす (to spend); 費 is read つい (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "費やす đọc là ついやす (tiêu tốn): 費 mang âm Kun つい.",
+        "en": "費やす is read ついやす (to spend): 費 takes the kun'yomi つい."
+      }
+    },
+    {
+      "item": "収",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「収」nghĩa là gì?",
+        "en": "What does 「収」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cung cấp; cúng",
+            "en": "offer; provide"
+          },
+          {
+            "vi": "phí; tiêu",
+            "en": "expense; spend"
+          },
+          {
+            "vi": "thu; nhận vào",
+            "en": "receive; collect"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 収 nghĩa là thu; nhận vào.",
+        "en": "Correct! 収 means receive; collect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 収 nghĩa là thu; nhận vào, như trong 「収入」 (thu nhập).",
+        "en": "Not quite. 収 means receive; collect, as in 「収入」 (income)."
+      }
+    },
+    {
+      "item": "収",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「収」 trong 「収入」 (“thu nhập”).",
+        "en": "Type the reading of 「収」 in 「収入」 (“income”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 収入, 収 đọc là しゅう (âm On).",
+        "en": "Correct! In 収入, 収 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 収入 (thu nhập), 収 đọc là しゅう (âm On).",
+        "en": "In 収入 (income), 収 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "収",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「収める」(thu về; cất) đọc là gì?",
+        "en": "How is 「収める」 (to collect) read?"
+      },
+      "payload": {
+        "choices": [
+          "おさめる",
+          "しゅうめる",
+          "そなえる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 収める = おさめる (thu về; cất); 収 đọc là おさ (âm Kun).",
+        "en": "Correct! 収める = おさめる (to collect); 収 is read おさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "収める đọc là おさめる (thu về; cất): 収 mang âm Kun おさ.",
+        "en": "収める is read おさめる (to collect): 収 takes the kun'yomi おさ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "供",
+            {
+              "vi": "cung cấp; cúng",
+              "en": "offer; provide"
+            }
+          ],
+          [
+            "費",
+            {
+              "vi": "phí; tiêu",
+              "en": "expense; spend"
+            }
+          ],
+          [
+            "収",
+            {
+              "vi": "thu; nhận vào",
+              "en": "receive; collect"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

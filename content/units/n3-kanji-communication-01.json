@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-communication",
+  "title": {
+    "vi": "Kanji giao tiếp – diễn đạt (相 談 告 呼)",
+    "en": "Communication and expression kanji (相 談 告 呼)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "相",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "tương; lẫn nhau; hình dạng",
+        "en": "mutual; aspect"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ",
+          "ショウ"
+        ],
+        "kunReadings": [
+          "あい"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "相談",
+          "reading": "そうだん",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "bàn bạc",
+            "en": "consultation"
+          }
+        },
+        {
+          "ja": "首相",
+          "reading": "しゅしょう",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "thủ tướng",
+            "en": "prime minister"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "談",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "nói chuyện; bàn",
+        "en": "talk; discuss"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "会談",
+          "reading": "かいだん",
+          "kanjiReading": "ダン",
+          "translation": {
+            "vi": "hội đàm",
+            "en": "talks"
+          }
+        },
+        {
+          "ja": "冗談",
+          "reading": "じょうだん",
+          "kanjiReading": "ダン",
+          "translation": {
+            "vi": "lời nói đùa",
+            "en": "joke"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "告",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "báo; cáo",
+        "en": "tell; announce"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コク"
+        ],
+        "kunReadings": [
+          "つ.げる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "報告",
+          "reading": "ほうこく",
+          "kanjiReading": "コク",
+          "translation": {
+            "vi": "báo cáo",
+            "en": "report"
+          }
+        },
+        {
+          "ja": "告げる",
+          "reading": "つげる",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "báo; thông báo",
+            "en": "to tell"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "呼",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "gọi; hô",
+        "en": "call; breathe out"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コ"
+        ],
+        "kunReadings": [
+          "よ.ぶ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "呼吸",
+          "reading": "こきゅう",
+          "kanjiReading": "コ",
+          "translation": {
+            "vi": "hô hấp",
+            "en": "breathing"
+          }
+        },
+        {
+          "ja": "呼ぶ",
+          "reading": "よぶ",
+          "kanjiReading": "よ",
+          "translation": {
+            "vi": "gọi",
+            "en": "to call"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "相",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「相」nghĩa là gì?",
+        "en": "What does 「相」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tương; lẫn nhau; hình dạng",
+            "en": "mutual; aspect"
+          },
+          {
+            "vi": "nói chuyện; bàn",
+            "en": "talk; discuss"
+          },
+          {
+            "vi": "báo; cáo",
+            "en": "tell; announce"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 相 nghĩa là tương; lẫn nhau; hình dạng.",
+        "en": "Correct! 相 means mutual; aspect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 相 nghĩa là tương; lẫn nhau; hình dạng, như trong 「相談」 (bàn bạc).",
+        "en": "Not quite. 相 means mutual; aspect, as in 「相談」 (consultation)."
+      }
+    },
+    {
+      "item": "相",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「相」 trong 「相談」 (“bàn bạc”).",
+        "en": "Type the reading of 「相」 in 「相談」 (“consultation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 相談, 相 đọc là そう (âm On).",
+        "en": "Correct! In 相談, 相 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 相談 (bàn bạc), 相 đọc là そう (âm On).",
+        "en": "In 相談 (consultation), 相 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "相",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「首相」(thủ tướng) đọc là gì?",
+        "en": "How is 「首相」 (prime minister) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅあい",
+          "しゅしょう",
+          "しゅじょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 首相 = しゅしょう (thủ tướng); 相 đọc là しょう (âm On).",
+        "en": "Correct! 首相 = しゅしょう (prime minister); 相 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "首相 đọc là しゅしょう (thủ tướng): 相 mang âm On しょう.",
+        "en": "首相 is read しゅしょう (prime minister): 相 takes the on'yomi しょう."
+      }
+    },
+    {
+      "item": "談",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「談」nghĩa là gì?",
+        "en": "What does 「談」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "báo; cáo",
+            "en": "tell; announce"
+          },
+          {
+            "vi": "nói chuyện; bàn",
+            "en": "talk; discuss"
+          },
+          {
+            "vi": "gọi; hô",
+            "en": "call; breathe out"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 談 nghĩa là nói chuyện; bàn.",
+        "en": "Correct! 談 means talk; discuss."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 談 nghĩa là nói chuyện; bàn, như trong 「会談」 (hội đàm).",
+        "en": "Not quite. 談 means talk; discuss, as in 「会談」 (talks)."
+      }
+    },
+    {
+      "item": "談",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「談」 trong 「会談」 (“hội đàm”).",
+        "en": "Type the reading of 「談」 in 「会談」 (“talks”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だん",
+          "ダン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 会談, 談 đọc là だん (âm On).",
+        "en": "Correct! In 会談, 談 is read だん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 会談 (hội đàm), 談 đọc là だん (âm On).",
+        "en": "In 会談 (talks), 談 is read だん (on'yomi)."
+      }
+    },
+    {
+      "item": "談",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「冗談」(lời nói đùa) đọc là gì?",
+        "en": "How is 「冗談」 (joke) read?"
+      },
+      "payload": {
+        "choices": [
+          "じょうたん",
+          "じょうつ",
+          "じょうだん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 冗談 = じょうだん (lời nói đùa); 談 đọc là だん (âm On).",
+        "en": "Correct! 冗談 = じょうだん (joke); 談 is read だん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "冗談 đọc là じょうだん (lời nói đùa): 談 mang âm On だん.",
+        "en": "冗談 is read じょうだん (joke): 談 takes the on'yomi だん."
+      }
+    },
+    {
+      "item": "告",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「告」nghĩa là gì?",
+        "en": "What does 「告」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gọi; hô",
+            "en": "call; breathe out"
+          },
+          {
+            "vi": "tương; lẫn nhau; hình dạng",
+            "en": "mutual; aspect"
+          },
+          {
+            "vi": "báo; cáo",
+            "en": "tell; announce"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 告 nghĩa là báo; cáo.",
+        "en": "Correct! 告 means tell; announce."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 告 nghĩa là báo; cáo, như trong 「報告」 (báo cáo).",
+        "en": "Not quite. 告 means tell; announce, as in 「報告」 (report)."
+      }
+    },
+    {
+      "item": "告",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「告」 trong 「報告」 (“báo cáo”).",
+        "en": "Type the reading of 「告」 in 「報告」 (“report”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こく",
+          "コク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 報告, 告 đọc là こく (âm On).",
+        "en": "Correct! In 報告, 告 is read こく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 報告 (báo cáo), 告 đọc là こく (âm On).",
+        "en": "In 報告 (report), 告 is read こく (on'yomi)."
+      }
+    },
+    {
+      "item": "告",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「告げる」(báo; thông báo) đọc là gì?",
+        "en": "How is 「告げる」 (to tell) read?"
+      },
+      "payload": {
+        "choices": [
+          "つげる",
+          "こくげる",
+          "こきゅう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 告げる = つげる (báo; thông báo); 告 đọc là つ (âm Kun).",
+        "en": "Correct! 告げる = つげる (to tell); 告 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "告げる đọc là つげる (báo; thông báo): 告 mang âm Kun つ.",
+        "en": "告げる is read つげる (to tell): 告 takes the kun'yomi つ."
+      }
+    },
+    {
+      "item": "呼",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「呼」nghĩa là gì?",
+        "en": "What does 「呼」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gọi; hô",
+            "en": "call; breathe out"
+          },
+          {
+            "vi": "tương; lẫn nhau; hình dạng",
+            "en": "mutual; aspect"
+          },
+          {
+            "vi": "nói chuyện; bàn",
+            "en": "talk; discuss"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 呼 nghĩa là gọi; hô.",
+        "en": "Correct! 呼 means call; breathe out."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 呼 nghĩa là gọi; hô, như trong 「呼吸」 (hô hấp).",
+        "en": "Not quite. 呼 means call; breathe out, as in 「呼吸」 (breathing)."
+      }
+    },
+    {
+      "item": "呼",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「呼」 trong 「呼吸」 (“hô hấp”).",
+        "en": "Type the reading of 「呼」 in 「呼吸」 (“breathing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こ",
+          "コ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 呼吸, 呼 đọc là こ (âm On).",
+        "en": "Correct! In 呼吸, 呼 is read こ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 呼吸 (hô hấp), 呼 đọc là こ (âm On).",
+        "en": "In 呼吸 (breathing), 呼 is read こ (on'yomi)."
+      }
+    },
+    {
+      "item": "呼",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「呼ぶ」(gọi) đọc là gì?",
+        "en": "How is 「呼ぶ」 (to call) read?"
+      },
+      "payload": {
+        "choices": [
+          "こぶ",
+          "よぶ",
+          "つげる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 呼ぶ = よぶ (gọi); 呼 đọc là よ (âm Kun).",
+        "en": "Correct! 呼ぶ = よぶ (to call); 呼 is read よ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "呼ぶ đọc là よぶ (gọi): 呼 mang âm Kun よ.",
+        "en": "呼ぶ is read よぶ (to call): 呼 takes the kun'yomi よ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "相",
+            {
+              "vi": "tương; lẫn nhau; hình dạng",
+              "en": "mutual; aspect"
+            }
+          ],
+          [
+            "談",
+            {
+              "vi": "nói chuyện; bàn",
+              "en": "talk; discuss"
+            }
+          ],
+          [
+            "告",
+            {
+              "vi": "báo; cáo",
+              "en": "tell; announce"
+            }
+          ],
+          [
+            "呼",
+            {
+              "vi": "gọi; hô",
+              "en": "call; breathe out"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

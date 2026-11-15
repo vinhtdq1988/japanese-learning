@@ -1,0 +1,672 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (歳 能 非 逆 周)",
+    "en": "Adjectives and quantity kanji (歳 能 非 逆 周)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "歳",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "tuổi; năm",
+        "en": "age; year"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ",
+          "セイ"
+        ],
+        "kunReadings": [
+          "とし"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "十歳",
+          "reading": "じゅっさい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "mười tuổi",
+            "en": "ten years old"
+          }
+        },
+        {
+          "ja": "お歳暮",
+          "reading": "おせいぼ",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "quà cuối năm",
+            "en": "year-end gift"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "能",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "năng lực; khả năng",
+        "en": "ability; skill"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ノウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "能力",
+          "reading": "のうりょく",
+          "kanjiReading": "ノウ",
+          "translation": {
+            "vi": "năng lực",
+            "en": "ability"
+          }
+        },
+        {
+          "ja": "可能",
+          "reading": "かのう",
+          "kanjiReading": "ノウ",
+          "translation": {
+            "vi": "khả năng",
+            "en": "possible"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "非",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "phi; không",
+        "en": "non-; wrong"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "あら.ず"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "非常",
+          "reading": "ひじょう",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "vô cùng; khẩn cấp",
+            "en": "extremely; emergency"
+          }
+        },
+        {
+          "ja": "是非",
+          "reading": "ぜひ",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "nhất định",
+            "en": "by all means"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "逆",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "ngược; nghịch",
+        "en": "reverse; opposite"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギャク"
+        ],
+        "kunReadings": [
+          "さか",
+          "さか.らう"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "逆転",
+          "reading": "ぎゃくてん",
+          "kanjiReading": "ギャク",
+          "translation": {
+            "vi": "đảo ngược tình thế",
+            "en": "reversal"
+          }
+        },
+        {
+          "ja": "逆さ",
+          "reading": "さかさ",
+          "kanjiReading": "さか",
+          "translation": {
+            "vi": "ngược; lộn ngược",
+            "en": "upside down"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "周",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "vòng; xung quanh",
+        "en": "circumference; around"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "まわ.り"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "周囲",
+          "reading": "しゅうい",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "xung quanh",
+            "en": "surroundings"
+          }
+        },
+        {
+          "ja": "周り",
+          "reading": "まわり",
+          "kanjiReading": "まわ",
+          "translation": {
+            "vi": "xung quanh",
+            "en": "surroundings"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "歳",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歳」nghĩa là gì?",
+        "en": "What does 「歳」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tuổi; năm",
+            "en": "age; year"
+          },
+          {
+            "vi": "năng lực; khả năng",
+            "en": "ability; skill"
+          },
+          {
+            "vi": "phi; không",
+            "en": "non-; wrong"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歳 nghĩa là tuổi; năm.",
+        "en": "Correct! 歳 means age; year."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 歳 nghĩa là tuổi; năm, như trong 「十歳」 (mười tuổi).",
+        "en": "Not quite. 歳 means age; year, as in 「十歳」 (ten years old)."
+      }
+    },
+    {
+      "item": "歳",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「歳」 trong 「十歳」 (“mười tuổi”).",
+        "en": "Type the reading of 「歳」 in 「十歳」 (“ten years old”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 十歳, 歳 đọc là さい (âm On).",
+        "en": "Correct! In 十歳, 歳 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 十歳 (mười tuổi), 歳 đọc là さい (âm On).",
+        "en": "In 十歳 (ten years old), 歳 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "歳",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「お歳暮」(quà cuối năm) đọc là gì?",
+        "en": "How is 「お歳暮」 (year-end gift) read?"
+      },
+      "payload": {
+        "choices": [
+          "おとしぼ",
+          "おせいぼ",
+          "おぜいぼ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! お歳暮 = おせいぼ (quà cuối năm); 歳 đọc là せい (âm On).",
+        "en": "Correct! お歳暮 = おせいぼ (year-end gift); 歳 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "お歳暮 đọc là おせいぼ (quà cuối năm): 歳 mang âm On せい.",
+        "en": "お歳暮 is read おせいぼ (year-end gift): 歳 takes the on'yomi せい."
+      }
+    },
+    {
+      "item": "能",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「能」nghĩa là gì?",
+        "en": "What does 「能」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phi; không",
+            "en": "non-; wrong"
+          },
+          {
+            "vi": "năng lực; khả năng",
+            "en": "ability; skill"
+          },
+          {
+            "vi": "ngược; nghịch",
+            "en": "reverse; opposite"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 能 nghĩa là năng lực; khả năng.",
+        "en": "Correct! 能 means ability; skill."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 能 nghĩa là năng lực; khả năng, như trong 「能力」 (năng lực).",
+        "en": "Not quite. 能 means ability; skill, as in 「能力」 (ability)."
+      }
+    },
+    {
+      "item": "能",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「能」 trong 「能力」 (“năng lực”).",
+        "en": "Type the reading of 「能」 in 「能力」 (“ability”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "のう",
+          "ノウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 能力, 能 đọc là のう (âm On).",
+        "en": "Correct! In 能力, 能 is read のう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 能力 (năng lực), 能 đọc là のう (âm On).",
+        "en": "In 能力 (ability), 能 is read のう (on'yomi)."
+      }
+    },
+    {
+      "item": "能",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「可能」(khả năng) đọc là gì?",
+        "en": "How is 「可能」 (possible) read?"
+      },
+      "payload": {
+        "choices": [
+          "かの",
+          "かあら",
+          "かのう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 可能 = かのう (khả năng); 能 đọc là のう (âm On).",
+        "en": "Correct! 可能 = かのう (possible); 能 is read のう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "可能 đọc là かのう (khả năng): 能 mang âm On のう.",
+        "en": "可能 is read かのう (possible): 能 takes the on'yomi のう."
+      }
+    },
+    {
+      "item": "非",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「非」nghĩa là gì?",
+        "en": "What does 「非」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngược; nghịch",
+            "en": "reverse; opposite"
+          },
+          {
+            "vi": "vòng; xung quanh",
+            "en": "circumference; around"
+          },
+          {
+            "vi": "phi; không",
+            "en": "non-; wrong"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 非 nghĩa là phi; không.",
+        "en": "Correct! 非 means non-; wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 非 nghĩa là phi; không, như trong 「非常」 (vô cùng; khẩn cấp).",
+        "en": "Not quite. 非 means non-; wrong, as in 「非常」 (extremely; emergency)."
+      }
+    },
+    {
+      "item": "非",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「非」 trong 「非常」 (“vô cùng; khẩn cấp”).",
+        "en": "Type the reading of 「非」 in 「非常」 (“extremely; emergency”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 非常, 非 đọc là ひ (âm On).",
+        "en": "Correct! In 非常, 非 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 非常 (vô cùng; khẩn cấp), 非 đọc là ひ (âm On).",
+        "en": "In 非常 (extremely; emergency), 非 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "非",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「是非」(nhất định) đọc là gì?",
+        "en": "How is 「是非」 (by all means) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜひ",
+          "ぜあら",
+          "ぜび"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 是非 = ぜひ (nhất định); 非 đọc là ひ (âm On).",
+        "en": "Correct! 是非 = ぜひ (by all means); 非 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "是非 đọc là ぜひ (nhất định): 非 mang âm On ひ.",
+        "en": "是非 is read ぜひ (by all means): 非 takes the on'yomi ひ."
+      }
+    },
+    {
+      "item": "逆",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「逆」nghĩa là gì?",
+        "en": "What does 「逆」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngược; nghịch",
+            "en": "reverse; opposite"
+          },
+          {
+            "vi": "vòng; xung quanh",
+            "en": "circumference; around"
+          },
+          {
+            "vi": "tuổi; năm",
+            "en": "age; year"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 逆 nghĩa là ngược; nghịch.",
+        "en": "Correct! 逆 means reverse; opposite."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 逆 nghĩa là ngược; nghịch, như trong 「逆転」 (đảo ngược tình thế).",
+        "en": "Not quite. 逆 means reverse; opposite, as in 「逆転」 (reversal)."
+      }
+    },
+    {
+      "item": "逆",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「逆」 trong 「逆転」 (“đảo ngược tình thế”).",
+        "en": "Type the reading of 「逆」 in 「逆転」 (“reversal”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎゃく",
+          "ギャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 逆転, 逆 đọc là ぎゃく (âm On).",
+        "en": "Correct! In 逆転, 逆 is read ぎゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 逆転 (đảo ngược tình thế), 逆 đọc là ぎゃく (âm On).",
+        "en": "In 逆転 (reversal), 逆 is read ぎゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "逆",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「逆さ」(ngược; lộn ngược) đọc là gì?",
+        "en": "How is 「逆さ」 (upside down) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎゃくさ",
+          "さかさ",
+          "まわり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 逆さ = さかさ (ngược; lộn ngược); 逆 đọc là さか (âm Kun).",
+        "en": "Correct! 逆さ = さかさ (upside down); 逆 is read さか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "逆さ đọc là さかさ (ngược; lộn ngược): 逆 mang âm Kun さか.",
+        "en": "逆さ is read さかさ (upside down): 逆 takes the kun'yomi さか."
+      }
+    },
+    {
+      "item": "周",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「周」nghĩa là gì?",
+        "en": "What does 「周」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tuổi; năm",
+            "en": "age; year"
+          },
+          {
+            "vi": "vòng; xung quanh",
+            "en": "circumference; around"
+          },
+          {
+            "vi": "năng lực; khả năng",
+            "en": "ability; skill"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 周 nghĩa là vòng; xung quanh.",
+        "en": "Correct! 周 means circumference; around."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 周 nghĩa là vòng; xung quanh, như trong 「周囲」 (xung quanh).",
+        "en": "Not quite. 周 means circumference; around, as in 「周囲」 (surroundings)."
+      }
+    },
+    {
+      "item": "周",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「周」 trong 「周囲」 (“xung quanh”).",
+        "en": "Type the reading of 「周」 in 「周囲」 (“surroundings”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 周囲, 周 đọc là しゅう (âm On).",
+        "en": "Correct! In 周囲, 周 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 周囲 (xung quanh), 周 đọc là しゅう (âm On).",
+        "en": "In 周囲 (surroundings), 周 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "周",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「周り」(xung quanh) đọc là gì?",
+        "en": "How is 「周り」 (surroundings) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅうり",
+          "かのう",
+          "まわり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 周り = まわり (xung quanh); 周 đọc là まわ (âm Kun).",
+        "en": "Correct! 周り = まわり (surroundings); 周 is read まわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "周り đọc là まわり (xung quanh): 周 mang âm Kun まわ.",
+        "en": "周り is read まわり (surroundings): 周 takes the kun'yomi まわ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "歳",
+            {
+              "vi": "tuổi; năm",
+              "en": "age; year"
+            }
+          ],
+          [
+            "能",
+            {
+              "vi": "năng lực; khả năng",
+              "en": "ability; skill"
+            }
+          ],
+          [
+            "非",
+            {
+              "vi": "phi; không",
+              "en": "non-; wrong"
+            }
+          ],
+          [
+            "逆",
+            {
+              "vi": "ngược; nghịch",
+              "en": "reverse; opposite"
+            }
+          ],
+          [
+            "周",
+            {
+              "vi": "vòng; xung quanh",
+              "en": "circumference; around"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

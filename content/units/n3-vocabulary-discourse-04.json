@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-discourse",
+  "title": {
+    "vi": "Văn viết và điều kiện",
+    "en": "Formal links and conditions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "及び",
+      "reading": "および",
+      "meaning": {
+        "vi": "Và; cùng với (văn bản)",
+        "en": "And (formal)"
+      },
+      "examples": [
+        {
+          "ja": "氏名及び住所を、記入してください。",
+          "reading": "しめいおよびじゅうしょを、きにゅうしてください。",
+          "translation": {
+            "vi": "Hãy điền họ tên và địa chỉ.",
+            "en": "Please fill in your name and address."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "即ち",
+      "reading": "すなわち",
+      "meaning": {
+        "vi": "Tức là; chính là",
+        "en": "That is; namely"
+      },
+      "examples": [
+        {
+          "ja": "日本の首都、即ち東京は、人口が多いです。",
+          "reading": "にほんのしゅと、すなわちとうきょうは、じんこうがおおいです。",
+          "translation": {
+            "vi": "Thủ đô của Nhật Bản, tức Tokyo, có dân số đông.",
+            "en": "Japan's capital, that is Tokyo, has a large population."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "故に",
+      "reading": "ゆえに",
+      "meaning": {
+        "vi": "Cho nên (văn viết)",
+        "en": "Therefore (literary)"
+      },
+      "examples": [
+        {
+          "ja": "彼は正直だ。故に、人に信頼される。",
+          "reading": "かれはしょうじきだ。ゆえに、ひとにしんらいされる。",
+          "translation": {
+            "vi": "Anh ấy trung thực. Cho nên được mọi người tin cậy.",
+            "en": "He is honest. Therefore he is trusted by people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "とはいえ",
+      "reading": "とはいえ",
+      "meaning": {
+        "vi": "Tuy nói vậy; dù vậy",
+        "en": "That said; even so"
+      },
+      "examples": [
+        {
+          "ja": "疲れた。とはいえ、仕事は続けなければならない。",
+          "reading": "つかれた。とはいえ、しごとはつづけなければならない。",
+          "translation": {
+            "vi": "Tôi mệt. Tuy nói vậy vẫn phải tiếp tục công việc.",
+            "en": "I am tired. That said, I must continue working."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一方で",
+      "reading": "いっぽうで",
+      "meaning": {
+        "vi": "Mặt khác; đồng thời",
+        "en": "On the other hand; while"
+      },
+      "examples": [
+        {
+          "ja": "働く一方で、勉強も続けています。",
+          "reading": "はたらくいっぽうで、べんきょうもつづけています。",
+          "translation": {
+            "vi": "Một mặt đi làm, mặt khác tôi vẫn tiếp tục học.",
+            "en": "While working, I also keep studying."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "場合によっては",
+      "reading": "ばあいによっては",
+      "meaning": {
+        "vi": "Tùy trường hợp",
+        "en": "Depending on the case"
+      },
+      "examples": [
+        {
+          "ja": "場合によっては、予定を変更します。",
+          "reading": "ばあいによっては、よていをへんこうします。",
+          "translation": {
+            "vi": "Tùy trường hợp, chúng tôi sẽ thay đổi kế hoạch.",
+            "en": "Depending on the case, we will change the schedule."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "及び",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 氏名（　）住所を、記入してください。 — Nghĩa của câu: “Hãy điền họ tên và địa chỉ.”",
+        "en": "Choose the word that fits the blank: 氏名（　）住所を、記入してください。 — Meaning of the sentence: “Please fill in your name and address.”"
+      },
+      "payload": {
+        "choices": [
+          "とはいえ",
+          "即ち",
+          "及び",
+          "場合によっては"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「及び」(Và; cùng với (văn bản)) hợp nghĩa câu này: “Hãy điền họ tên và địa chỉ.”",
+        "en": "Correct! 「及び」(And (formal)) fits this sentence: “Please fill in your name and address.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy điền họ tên và địa chỉ.”, nên cần 「及び」(Và; cùng với (văn bản)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please fill in your name and address.”, so it needs 「及び」(And (formal)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "即ち",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本の首都、（　）東京は、人口が多いです。 — Nghĩa của câu: “Thủ đô của Nhật Bản, tức Tokyo, có dân số đông.”",
+        "en": "Choose the word that fits the blank: 日本の首都、（　）東京は、人口が多いです。 — Meaning of the sentence: “Japan's capital, that is Tokyo, has a large population.”"
+      },
+      "payload": {
+        "choices": [
+          "及び",
+          "故に",
+          "一方で",
+          "即ち"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「即ち」(Tức là; chính là) hợp nghĩa câu này: “Thủ đô của Nhật Bản, tức Tokyo, có dân số đông.”",
+        "en": "Correct! 「即ち」(That is; namely) fits this sentence: “Japan's capital, that is Tokyo, has a large population.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thủ đô của Nhật Bản, tức Tokyo, có dân số đông.”, nên cần 「即ち」(Tức là; chính là); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Japan's capital, that is Tokyo, has a large population.”, so it needs 「即ち」(That is; namely); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "故に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は正直だ。（　）、人に信頼される。 — Nghĩa của câu: “Anh ấy trung thực. Cho nên được mọi người tin cậy.”",
+        "en": "Choose the word that fits the blank: 彼は正直だ。（　）、人に信頼される。 — Meaning of the sentence: “He is honest. Therefore he is trusted by people.”"
+      },
+      "payload": {
+        "choices": [
+          "故に",
+          "場合によっては",
+          "及び",
+          "即ち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「故に」(Cho nên (văn viết)) hợp nghĩa câu này: “Anh ấy trung thực. Cho nên được mọi người tin cậy.”",
+        "en": "Correct! 「故に」(Therefore (literary)) fits this sentence: “He is honest. Therefore he is trusted by people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy trung thực. Cho nên được mọi người tin cậy.”, nên cần 「故に」(Cho nên (văn viết)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is honest. Therefore he is trusted by people.”, so it needs 「故に」(Therefore (literary)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "とはいえ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 疲れた。（　）、仕事は続けなければならない。 — Nghĩa của câu: “Tôi mệt. Tuy nói vậy vẫn phải tiếp tục công việc.”",
+        "en": "Choose the word that fits the blank: 疲れた。（　）、仕事は続けなければならない。 — Meaning of the sentence: “I am tired. That said, I must continue working.”"
+      },
+      "payload": {
+        "choices": [
+          "故に",
+          "とはいえ",
+          "及び",
+          "即ち"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とはいえ」(Tuy nói vậy; dù vậy) hợp nghĩa câu này: “Tôi mệt. Tuy nói vậy vẫn phải tiếp tục công việc.”",
+        "en": "Correct! 「とはいえ」(That said; even so) fits this sentence: “I am tired. That said, I must continue working.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi mệt. Tuy nói vậy vẫn phải tiếp tục công việc.”, nên cần 「とはいえ」(Tuy nói vậy; dù vậy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am tired. That said, I must continue working.”, so it needs 「とはいえ」(That said; even so); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一方で",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 働く（　）、勉強も続けています。 — Nghĩa của câu: “Một mặt đi làm, mặt khác tôi vẫn tiếp tục học.”",
+        "en": "Choose the word that fits the blank: 働く（　）、勉強も続けています。 — Meaning of the sentence: “While working, I also keep studying.”"
+      },
+      "payload": {
+        "choices": [
+          "及び",
+          "即ち",
+          "一方で",
+          "故に"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一方で」(Mặt khác; đồng thời) hợp nghĩa câu này: “Một mặt đi làm, mặt khác tôi vẫn tiếp tục học.”",
+        "en": "Correct! 「一方で」(On the other hand; while) fits this sentence: “While working, I also keep studying.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Một mặt đi làm, mặt khác tôi vẫn tiếp tục học.”, nên cần 「一方で」(Mặt khác; đồng thời); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “While working, I also keep studying.”, so it needs 「一方で」(On the other hand; while); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "場合によっては",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、予定を変更します。 — Nghĩa của câu: “Tùy trường hợp, chúng tôi sẽ thay đổi kế hoạch.”",
+        "en": "Choose the word that fits the blank: （　）、予定を変更します。 — Meaning of the sentence: “Depending on the case, we will change the schedule.”"
+      },
+      "payload": {
+        "choices": [
+          "とはいえ",
+          "及び",
+          "故に",
+          "場合によっては"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「場合によっては」(Tùy trường hợp) hợp nghĩa câu này: “Tùy trường hợp, chúng tôi sẽ thay đổi kế hoạch.”",
+        "en": "Correct! 「場合によっては」(Depending on the case) fits this sentence: “Depending on the case, we will change the schedule.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tùy trường hợp, chúng tôi sẽ thay đổi kế hoạch.”, nên cần 「場合によっては」(Tùy trường hợp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Depending on the case, we will change the schedule.”, so it needs 「場合によっては」(Depending on the case); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "及び",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 氏名「及び」住所を、記入してください。",
+        "en": "Choose the correct reading of the word in 「」: 氏名「及び」住所を、記入してください。"
+      },
+      "payload": {
+        "choices": [
+          "とはいえ",
+          "すなわち",
+          "ゆえに",
+          "および"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「及び」 đọc là 「および」, nghĩa là Và; cùng với (văn bản).",
+        "en": "Correct! 「及び」 is read 「および」 and means And (formal)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「及び」 đọc là 「および」 (Và; cùng với (văn bản)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「及び」 is read 「および」 (And (formal)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "故に",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は正直だ。「故に」、人に信頼される。",
+        "en": "Choose the correct reading of the word in 「」: 彼は正直だ。「故に」、人に信頼される。"
+      },
+      "payload": {
+        "choices": [
+          "ゆえに",
+          "とはいえ",
+          "および",
+          "いっぽうで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「故に」 đọc là 「ゆえに」, nghĩa là Cho nên (văn viết).",
+        "en": "Correct! 「故に」 is read 「ゆえに」 and means Therefore (literary)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「故に」 đọc là 「ゆえに」 (Cho nên (văn viết)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「故に」 is read 「ゆえに」 (Therefore (literary)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一方で",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 働く「いっぽうで」、勉強も続けています。",
+        "en": "Choose the correct way to write the word in 「」: 働く「いっぽうで」、勉強も続けています。"
+      },
+      "payload": {
+        "choices": [
+          "一方で",
+          "及び",
+          "即ち",
+          "故に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いっぽうで」 viết là 「一方で」, nghĩa là Mặt khác; đồng thời.",
+        "en": "Correct! 「いっぽうで」 is written 「一方で」 and means On the other hand; while."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いっぽうで」 viết là 「一方で」 (Mặt khác; đồng thời); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いっぽうで」 is written 「一方で」 (On the other hand; while); the other words are read differently."
+      }
+    }
+  ]
+}

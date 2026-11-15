@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-places-city",
+  "title": {
+    "vi": "Kanji địa điểm – thành phố (家 住 室)",
+    "en": "Places and the city kanji (家 住 室)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "家",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "nhà; gia đình",
+        "en": "house; family"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ",
+          "ケ"
+        ],
+        "kunReadings": [
+          "いえ",
+          "や",
+          "うち"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "家族",
+          "reading": "かぞく",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "gia đình",
+            "en": "family"
+          }
+        },
+        {
+          "ja": "家賃",
+          "reading": "やちん",
+          "kanjiReading": "や",
+          "translation": {
+            "vi": "tiền thuê nhà",
+            "en": "rent"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "住",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "sống; cư trú",
+        "en": "live; reside"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジュウ"
+        ],
+        "kunReadings": [
+          "す.む"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "住所",
+          "reading": "じゅうしょ",
+          "kanjiReading": "ジュウ",
+          "translation": {
+            "vi": "địa chỉ",
+            "en": "address"
+          }
+        },
+        {
+          "ja": "住む",
+          "reading": "すむ",
+          "kanjiReading": "す",
+          "translation": {
+            "vi": "sống",
+            "en": "to live"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "室",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "phòng",
+        "en": "room"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シツ"
+        ],
+        "kunReadings": [
+          "むろ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "教室",
+          "reading": "きょうしつ",
+          "kanjiReading": "シツ",
+          "translation": {
+            "vi": "lớp học",
+            "en": "classroom"
+          }
+        },
+        {
+          "ja": "和室",
+          "reading": "わしつ",
+          "kanjiReading": "シツ",
+          "translation": {
+            "vi": "phòng kiểu Nhật",
+            "en": "Japanese-style room"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "家",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「家」nghĩa là gì?",
+        "en": "What does 「家」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhà; gia đình",
+            "en": "house; family"
+          },
+          {
+            "vi": "sống; cư trú",
+            "en": "live; reside"
+          },
+          {
+            "vi": "phòng",
+            "en": "room"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 家 nghĩa là nhà; gia đình.",
+        "en": "Correct! 家 means house; family."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 家 nghĩa là nhà; gia đình, như trong 「家族」 (gia đình).",
+        "en": "Not quite. 家 means house; family, as in 「家族」 (family)."
+      }
+    },
+    {
+      "item": "家",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「家」 trong 「家族」 (“gia đình”).",
+        "en": "Type the reading of 「家」 in 「家族」 (“family”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 家族, 家 đọc là か (âm On).",
+        "en": "Correct! In 家族, 家 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 家族 (gia đình), 家 đọc là か (âm On).",
+        "en": "In 家族 (family), 家 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "家",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「家賃」(tiền thuê nhà) đọc là gì?",
+        "en": "How is 「家賃」 (rent) read?"
+      },
+      "payload": {
+        "choices": [
+          "かちん",
+          "やちん",
+          "けちん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 家賃 = やちん (tiền thuê nhà); 家 đọc là や (âm Kun).",
+        "en": "Correct! 家賃 = やちん (rent); 家 is read や (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "家賃 đọc là やちん (tiền thuê nhà): 家 mang âm Kun や.",
+        "en": "家賃 is read やちん (rent): 家 takes the kun'yomi や."
+      }
+    },
+    {
+      "item": "住",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「住」nghĩa là gì?",
+        "en": "What does 「住」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phòng",
+            "en": "room"
+          },
+          {
+            "vi": "sống; cư trú",
+            "en": "live; reside"
+          },
+          {
+            "vi": "nhà; gia đình",
+            "en": "house; family"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 住 nghĩa là sống; cư trú.",
+        "en": "Correct! 住 means live; reside."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 住 nghĩa là sống; cư trú, như trong 「住所」 (địa chỉ).",
+        "en": "Not quite. 住 means live; reside, as in 「住所」 (address)."
+      }
+    },
+    {
+      "item": "住",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「住」 trong 「住所」 (“địa chỉ”).",
+        "en": "Type the reading of 「住」 in 「住所」 (“address”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じゅう",
+          "ジュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 住所, 住 đọc là じゅう (âm On).",
+        "en": "Correct! In 住所, 住 is read じゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 住所 (địa chỉ), 住 đọc là じゅう (âm On).",
+        "en": "In 住所 (address), 住 is read じゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "住",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「住む」(sống) đọc là gì?",
+        "en": "How is 「住む」 (to live) read?"
+      },
+      "payload": {
+        "choices": [
+          "じゅうむ",
+          "わしつ",
+          "すむ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 住む = すむ (sống); 住 đọc là す (âm Kun).",
+        "en": "Correct! 住む = すむ (to live); 住 is read す (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "住む đọc là すむ (sống): 住 mang âm Kun す.",
+        "en": "住む is read すむ (to live): 住 takes the kun'yomi す."
+      }
+    },
+    {
+      "item": "室",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「室」nghĩa là gì?",
+        "en": "What does 「室」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhà; gia đình",
+            "en": "house; family"
+          },
+          {
+            "vi": "sống; cư trú",
+            "en": "live; reside"
+          },
+          {
+            "vi": "phòng",
+            "en": "room"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 室 nghĩa là phòng.",
+        "en": "Correct! 室 means room."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 室 nghĩa là phòng, như trong 「教室」 (lớp học).",
+        "en": "Not quite. 室 means room, as in 「教室」 (classroom)."
+      }
+    },
+    {
+      "item": "室",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「室」 trong 「教室」 (“lớp học”).",
+        "en": "Type the reading of 「室」 in 「教室」 (“classroom”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しつ",
+          "シツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 教室, 室 đọc là しつ (âm On).",
+        "en": "Correct! In 教室, 室 is read しつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 教室 (lớp học), 室 đọc là しつ (âm On).",
+        "en": "In 教室 (classroom), 室 is read しつ (on'yomi)."
+      }
+    },
+    {
+      "item": "室",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「和室」(phòng kiểu Nhật) đọc là gì?",
+        "en": "How is 「和室」 (Japanese-style room) read?"
+      },
+      "payload": {
+        "choices": [
+          "わしつ",
+          "わむろ",
+          "わじつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 和室 = わしつ (phòng kiểu Nhật); 室 đọc là しつ (âm On).",
+        "en": "Correct! 和室 = わしつ (Japanese-style room); 室 is read しつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "和室 đọc là わしつ (phòng kiểu Nhật): 室 mang âm On しつ.",
+        "en": "和室 is read わしつ (Japanese-style room): 室 takes the on'yomi しつ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "家",
+            {
+              "vi": "nhà; gia đình",
+              "en": "house; family"
+            }
+          ],
+          [
+            "住",
+            {
+              "vi": "sống; cư trú",
+              "en": "live; reside"
+            }
+          ],
+          [
+            "室",
+            {
+              "vi": "phòng",
+              "en": "room"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

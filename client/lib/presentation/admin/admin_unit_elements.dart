@@ -56,6 +56,9 @@ class I18nFields extends StatelessWidget {
 
 /// Khối tiêu đề của một phần tử: tên, công tắc "hiển thị với người học" (phần tử đã có – KHÔNG xóa cứng,
 /// chỉ chuyển `inactive`) hoặc nút bỏ (phần tử mới chưa lưu).
+/// Số ký tự tối đa của đoạn văn luyện đọc (bài 5 phút giới hạn 200; xem `contracts/practice-content.md`).
+const int _passageMaxChars = 400;
+
 class _ElementHeader extends StatelessWidget {
   const _ElementHeader({
     required this.title,
@@ -125,6 +128,7 @@ class ItemEditorCard extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final isGrammar = kind == 'grammar';
     final isKanji = kind == 'kanji';
+    final isReading = kind == 'reading';
     return Card(
       key: Key('item-$index'),
       child: Padding(
@@ -149,15 +153,31 @@ class ItemEditorCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Expanded(
-                  child: DraftTextField(
-                    key: ValueKey<Object>((item, 'japanese')),
-                    label: l10n.adminItemJapanese,
-                    value: item.japanese,
-                    onChanged: (v) {
-                      // Nhãn trong danh sách chọn mục của bài tập phụ thuộc chữ Nhật.
-                      item.japanese = v;
-                      onStructureChanged();
-                    },
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      DraftTextField(
+                        key: ValueKey<Object>((item, 'japanese')),
+                        label: l10n.adminItemJapanese,
+                        value: item.japanese,
+                        // Luyện đọc: đoạn văn nhiều dòng (≤ 400 ký tự, ≤ 200 với bài 5 phút) kèm bộ đếm.
+                        maxLines: isReading ? 6 : 1,
+                        onChanged: (v) {
+                          // Nhãn trong danh sách chọn mục của bài tập phụ thuộc chữ Nhật.
+                          item.japanese = v;
+                          onStructureChanged();
+                        },
+                      ),
+                      if (isReading)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 4),
+                          child: Text(
+                            '${item.japanese.runes.length}/$_passageMaxChars',
+                            key: Key('passage-counter-$index'),
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
+                        ),
+                    ],
                   ),
                 ),
                 // Chữ Kanji không có cách đọc đơn lẻ: âm On/Kun nằm ở nhóm trường Kanji bên dưới.
@@ -454,6 +474,8 @@ class ExerciseEditorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final ex = exercise;
+    final isPractice = kind == 'reading' || kind == 'writing';
+    if (isPractice) ex.item = null;
     return Card(
       key: Key('exercise-$index'),
       child: Padding(
@@ -502,37 +524,55 @@ class ExerciseEditorCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 12),
-                Expanded(
-                  child: DropdownButtonFormField<ItemDraft?>(
-                    key: ValueKey<Object>((ex, 'item', items.length, ex.item)),
-                    initialValue: items.contains(ex.item) ? ex.item : null,
-                    isDense: true,
-                    isExpanded: true,
-                    decoration: InputDecoration(
-                      labelText: l10n.adminExerciseItem,
-                      isDense: true,
-                    ),
-                    items: <DropdownMenuItem<ItemDraft?>>[
-                      DropdownMenuItem<ItemDraft?>(
-                        value: null,
-                        child: Text(l10n.adminExerciseNoItem),
+                if (isPractice)
+                  // Luyện đọc/viết: bài tập không gắn mục (không vào lịch ôn), nên không có ô chọn mục.
+                  Expanded(
+                    child: InputDecorator(
+                      key: Key('exercise-no-item-$index'),
+                      decoration: InputDecoration(
+                        labelText: l10n.adminExerciseItem,
+                        isDense: true,
                       ),
-                      for (var i = 0; i < items.length; i++)
+                      child: Text(l10n.adminExerciseNoItem),
+                    ),
+                  )
+                else
+                  Expanded(
+                    child: DropdownButtonFormField<ItemDraft?>(
+                      key: ValueKey<Object>((
+                        ex,
+                        'item',
+                        items.length,
+                        ex.item,
+                      )),
+                      initialValue: items.contains(ex.item) ? ex.item : null,
+                      isDense: true,
+                      isExpanded: true,
+                      decoration: InputDecoration(
+                        labelText: l10n.adminExerciseItem,
+                        isDense: true,
+                      ),
+                      items: <DropdownMenuItem<ItemDraft?>>[
                         DropdownMenuItem<ItemDraft?>(
-                          value: items[i],
-                          child: Text(
-                            '${i + 1}. ${items[i].japanese}',
-                            overflow: TextOverflow.ellipsis,
-                          ),
+                          value: null,
+                          child: Text(l10n.adminExerciseNoItem),
                         ),
-                    ],
-                    onChanged: (v) {
-                      ex.item = v;
-                      // Khía cạnh chỉ hiện khi bài tập gắn chữ Kanji nên cần dựng lại.
-                      if (kind == 'kanji') onStructureChanged();
-                    },
+                        for (var i = 0; i < items.length; i++)
+                          DropdownMenuItem<ItemDraft?>(
+                            value: items[i],
+                            child: Text(
+                              '${i + 1}. ${items[i].japanese}',
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                      ],
+                      onChanged: (v) {
+                        ex.item = v;
+                        // Khía cạnh chỉ hiện khi bài tập gắn chữ Kanji nên cần dựng lại.
+                        if (kind == 'kanji') onStructureChanged();
+                      },
+                    ),
                   ),
-                ),
               ],
             ),
             if (kind == 'kanji' && ex.item != null && items.contains(ex.item))

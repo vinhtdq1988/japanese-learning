@@ -78,14 +78,19 @@ describe('validation onboarding', () => {
     }
   });
 
-  it('kỹ năng nhận từ vựng + ngữ pháp + Kanji, không rỗng, bỏ trùng lặp', () => {
+  it('kỹ năng nhận từ vựng + ngữ pháp + Kanji + luyện đọc/viết, không rỗng, bỏ trùng lặp', () => {
     expect(onboardingCompleteSchema.safeParse({ ...complete, skills: [] }).success).toBe(false);
-    for (const unsupported of ['listening', 'reading']) {
-      expect(
-        onboardingCompleteSchema.safeParse({ ...complete, skills: ['vocabulary', unsupported] })
-          .success,
-      ).toBe(false);
-    }
+    const unsupported = onboardingCompleteSchema.safeParse({
+      ...complete,
+      skills: ['vocabulary', 'listening'],
+    });
+    expect(unsupported.success).toBe(false);
+    expect(unsupported.error!.issues[0]!.message).toContain('luyện đọc, luyện viết');
+    // Số phút không kiểm ở schema (T084/T085 kiểm ở dịch vụ).
+    expect(
+      onboardingCompleteSchema.parse({ ...complete, skills: ['vocabulary', 'reading', 'writing'] })
+        .skills,
+    ).toEqual(['vocabulary', 'reading', 'writing']);
     const parsed = onboardingCompleteSchema.parse({
       ...complete,
       skills: ['grammar', 'grammar', 'vocabulary'],

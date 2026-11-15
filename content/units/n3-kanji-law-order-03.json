@@ -1,0 +1,668 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (件 官 警 察 捕)",
+    "en": "Law and order kanji (件 官 警 察 捕)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "vụ; việc",
+        "en": "matter; case"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [
+          "くだん"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "事件",
+          "reading": "じけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "vụ việc",
+            "en": "incident"
+          }
+        },
+        {
+          "ja": "用件",
+          "reading": "ようけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "việc cần làm",
+            "en": "business at hand"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "官",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "quan; công chức",
+        "en": "official"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "警官",
+          "reading": "けいかん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "cảnh sát",
+            "en": "police officer"
+          }
+        },
+        {
+          "ja": "官庁",
+          "reading": "かんちょう",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "cơ quan nhà nước",
+            "en": "government office"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "警",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "cảnh báo; cảnh sát",
+        "en": "warn; police"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 19
+      },
+      "examples": [
+        {
+          "ja": "警察",
+          "reading": "けいさつ",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "cảnh sát",
+            "en": "police"
+          }
+        },
+        {
+          "ja": "警告",
+          "reading": "けいこく",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "cảnh báo",
+            "en": "warning"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "察",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "xét; hiểu; đoán",
+        "en": "inspect; guess"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サツ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "警察",
+          "reading": "けいさつ",
+          "kanjiReading": "サツ",
+          "translation": {
+            "vi": "cảnh sát",
+            "en": "police"
+          }
+        },
+        {
+          "ja": "観察",
+          "reading": "かんさつ",
+          "kanjiReading": "サツ",
+          "translation": {
+            "vi": "quan sát",
+            "en": "observation"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "捕",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "bắt",
+        "en": "catch; arrest"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホ"
+        ],
+        "kunReadings": [
+          "と.らえる",
+          "つか.まえる",
+          "つか.まる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "逮捕",
+          "reading": "たいほ",
+          "kanjiReading": "ホ",
+          "translation": {
+            "vi": "bắt giữ",
+            "en": "arrest"
+          }
+        },
+        {
+          "ja": "捕まえる",
+          "reading": "つかまえる",
+          "kanjiReading": "つか",
+          "translation": {
+            "vi": "bắt",
+            "en": "to catch"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "件",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「件」nghĩa là gì?",
+        "en": "What does 「件」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vụ; việc",
+            "en": "matter; case"
+          },
+          {
+            "vi": "quan; công chức",
+            "en": "official"
+          },
+          {
+            "vi": "cảnh báo; cảnh sát",
+            "en": "warn; police"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 件 nghĩa là vụ; việc.",
+        "en": "Correct! 件 means matter; case."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 件 nghĩa là vụ; việc, như trong 「事件」 (vụ việc).",
+        "en": "Not quite. 件 means matter; case, as in 「事件」 (incident)."
+      }
+    },
+    {
+      "item": "件",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「件」 trong 「事件」 (“vụ việc”).",
+        "en": "Type the reading of 「件」 in 「事件」 (“incident”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 事件, 件 đọc là けん (âm On).",
+        "en": "Correct! In 事件, 件 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 事件 (vụ việc), 件 đọc là けん (âm On).",
+        "en": "In 事件 (incident), 件 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "件",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「用件」(việc cần làm) đọc là gì?",
+        "en": "How is 「用件」 (business at hand) read?"
+      },
+      "payload": {
+        "choices": [
+          "ようくだん",
+          "ようけん",
+          "ようげん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 用件 = ようけん (việc cần làm); 件 đọc là けん (âm On).",
+        "en": "Correct! 用件 = ようけん (business at hand); 件 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "用件 đọc là ようけん (việc cần làm): 件 mang âm On けん.",
+        "en": "用件 is read ようけん (business at hand): 件 takes the on'yomi けん."
+      }
+    },
+    {
+      "item": "官",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「官」nghĩa là gì?",
+        "en": "What does 「官」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cảnh báo; cảnh sát",
+            "en": "warn; police"
+          },
+          {
+            "vi": "quan; công chức",
+            "en": "official"
+          },
+          {
+            "vi": "xét; hiểu; đoán",
+            "en": "inspect; guess"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 官 nghĩa là quan; công chức.",
+        "en": "Correct! 官 means official."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 官 nghĩa là quan; công chức, như trong 「警官」 (cảnh sát).",
+        "en": "Not quite. 官 means official, as in 「警官」 (police officer)."
+      }
+    },
+    {
+      "item": "官",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「官」 trong 「警官」 (“cảnh sát”).",
+        "en": "Type the reading of 「官」 in 「警官」 (“police officer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 警官, 官 đọc là かん (âm On).",
+        "en": "Correct! In 警官, 官 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 警官 (cảnh sát), 官 đọc là かん (âm On).",
+        "en": "In 警官 (police officer), 官 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "官",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「官庁」(cơ quan nhà nước) đọc là gì?",
+        "en": "How is 「官庁」 (government office) read?"
+      },
+      "payload": {
+        "choices": [
+          "がんちょう",
+          "けいちょう",
+          "かんちょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 官庁 = かんちょう (cơ quan nhà nước); 官 đọc là かん (âm On).",
+        "en": "Correct! 官庁 = かんちょう (government office); 官 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "官庁 đọc là かんちょう (cơ quan nhà nước): 官 mang âm On かん.",
+        "en": "官庁 is read かんちょう (government office): 官 takes the on'yomi かん."
+      }
+    },
+    {
+      "item": "警",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「警」nghĩa là gì?",
+        "en": "What does 「警」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xét; hiểu; đoán",
+            "en": "inspect; guess"
+          },
+          {
+            "vi": "bắt",
+            "en": "catch; arrest"
+          },
+          {
+            "vi": "cảnh báo; cảnh sát",
+            "en": "warn; police"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 警 nghĩa là cảnh báo; cảnh sát.",
+        "en": "Correct! 警 means warn; police."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 警 nghĩa là cảnh báo; cảnh sát, như trong 「警察」 (cảnh sát).",
+        "en": "Not quite. 警 means warn; police, as in 「警察」 (police)."
+      }
+    },
+    {
+      "item": "警",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「警」 trong 「警察」 (“cảnh sát”).",
+        "en": "Type the reading of 「警」 in 「警察」 (“police”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 警察, 警 đọc là けい (âm On).",
+        "en": "Correct! In 警察, 警 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 警察 (cảnh sát), 警 đọc là けい (âm On).",
+        "en": "In 警察 (police), 警 is read けい (on'yomi)."
+      }
+    },
+    {
+      "item": "警",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「警告」(cảnh báo) đọc là gì?",
+        "en": "How is 「警告」 (warning) read?"
+      },
+      "payload": {
+        "choices": [
+          "けいこく",
+          "げいこく",
+          "けいごく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 警告 = けいこく (cảnh báo); 警 đọc là けい (âm On).",
+        "en": "Correct! 警告 = けいこく (warning); 警 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "警告 đọc là けいこく (cảnh báo): 警 mang âm On けい.",
+        "en": "警告 is read けいこく (warning): 警 takes the on'yomi けい."
+      }
+    },
+    {
+      "item": "察",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「察」nghĩa là gì?",
+        "en": "What does 「察」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xét; hiểu; đoán",
+            "en": "inspect; guess"
+          },
+          {
+            "vi": "bắt",
+            "en": "catch; arrest"
+          },
+          {
+            "vi": "vụ; việc",
+            "en": "matter; case"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 察 nghĩa là xét; hiểu; đoán.",
+        "en": "Correct! 察 means inspect; guess."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 察 nghĩa là xét; hiểu; đoán, như trong 「警察」 (cảnh sát).",
+        "en": "Not quite. 察 means inspect; guess, as in 「警察」 (police)."
+      }
+    },
+    {
+      "item": "察",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「察」 trong 「警察」 (“cảnh sát”).",
+        "en": "Type the reading of 「察」 in 「警察」 (“police”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さつ",
+          "サツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 警察, 察 đọc là さつ (âm On).",
+        "en": "Correct! In 警察, 察 is read さつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 警察 (cảnh sát), 察 đọc là さつ (âm On).",
+        "en": "In 警察 (police), 察 is read さつ (on'yomi)."
+      }
+    },
+    {
+      "item": "察",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「観察」(quan sát) đọc là gì?",
+        "en": "How is 「観察」 (observation) read?"
+      },
+      "payload": {
+        "choices": [
+          "かんざつ",
+          "かんさつ",
+          "かんと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 観察 = かんさつ (quan sát); 察 đọc là さつ (âm On).",
+        "en": "Correct! 観察 = かんさつ (observation); 察 is read さつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "観察 đọc là かんさつ (quan sát): 察 mang âm On さつ.",
+        "en": "観察 is read かんさつ (observation): 察 takes the on'yomi さつ."
+      }
+    },
+    {
+      "item": "捕",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「捕」nghĩa là gì?",
+        "en": "What does 「捕」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vụ; việc",
+            "en": "matter; case"
+          },
+          {
+            "vi": "bắt",
+            "en": "catch; arrest"
+          },
+          {
+            "vi": "quan; công chức",
+            "en": "official"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 捕 nghĩa là bắt.",
+        "en": "Correct! 捕 means catch; arrest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 捕 nghĩa là bắt, như trong 「逮捕」 (bắt giữ).",
+        "en": "Not quite. 捕 means catch; arrest, as in 「逮捕」 (arrest)."
+      }
+    },
+    {
+      "item": "捕",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「捕」 trong 「逮捕」 (“bắt giữ”).",
+        "en": "Type the reading of 「捕」 in 「逮捕」 (“arrest”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほ",
+          "ホ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 逮捕, 捕 đọc là ほ (âm On).",
+        "en": "Correct! In 逮捕, 捕 is read ほ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 逮捕 (bắt giữ), 捕 đọc là ほ (âm On).",
+        "en": "In 逮捕 (arrest), 捕 is read ほ (on'yomi)."
+      }
+    },
+    {
+      "item": "捕",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「捕まえる」(bắt) đọc là gì?",
+        "en": "How is 「捕まえる」 (to catch) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほまえる",
+          "かんちょう",
+          "つかまえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 捕まえる = つかまえる (bắt); 捕 đọc là つか (âm Kun).",
+        "en": "Correct! 捕まえる = つかまえる (to catch); 捕 is read つか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "捕まえる đọc là つかまえる (bắt): 捕 mang âm Kun つか.",
+        "en": "捕まえる is read つかまえる (to catch): 捕 takes the kun'yomi つか."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "件",
+            {
+              "vi": "vụ; việc",
+              "en": "matter; case"
+            }
+          ],
+          [
+            "官",
+            {
+              "vi": "quan; công chức",
+              "en": "official"
+            }
+          ],
+          [
+            "警",
+            {
+              "vi": "cảnh báo; cảnh sát",
+              "en": "warn; police"
+            }
+          ],
+          [
+            "察",
+            {
+              "vi": "xét; hiểu; đoán",
+              "en": "inspect; guess"
+            }
+          ],
+          [
+            "捕",
+            {
+              "vi": "bắt",
+              "en": "catch; arrest"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

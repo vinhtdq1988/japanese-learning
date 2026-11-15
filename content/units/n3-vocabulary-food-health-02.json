@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-food-health",
+  "title": {
+    "vi": "Vị giác và dinh dưỡng",
+    "en": "Taste and nutrients"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2370,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "甘い",
+      "reading": "あまい",
+      "meaning": {
+        "vi": "Ngọt",
+        "en": "Sweet"
+      },
+      "examples": [
+        {
+          "ja": "このケーキは、甘いものが好きな人に人気です。",
+          "reading": "このケーキは、あまいものがすきなひとににんきです。",
+          "translation": {
+            "vi": "Bánh này được người thích đồ ngọt ưa chuộng.",
+            "en": "This cake is popular with people who like sweet things."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "辛い",
+      "reading": "からい",
+      "meaning": {
+        "vi": "Cay",
+        "en": "Spicy"
+      },
+      "examples": [
+        {
+          "ja": "このカレーは、とても辛いです。",
+          "reading": "このカレーは、とてもからいです。",
+          "translation": {
+            "vi": "Món cà ri này rất cay.",
+            "en": "This curry is very spicy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "苦い",
+      "reading": "にがい",
+      "meaning": {
+        "vi": "Đắng",
+        "en": "Bitter"
+      },
+      "examples": [
+        {
+          "ja": "この薬は、とても苦いです。",
+          "reading": "このくすりは、とてもにがいです。",
+          "translation": {
+            "vi": "Thuốc này rất đắng.",
+            "en": "This medicine is very bitter."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "酸っぱい",
+      "reading": "すっぱい",
+      "meaning": {
+        "vi": "Chua",
+        "en": "Sour"
+      },
+      "examples": [
+        {
+          "ja": "この梅干しは、とても酸っぱいです。",
+          "reading": "このうめぼしは、とてもすっぱいです。",
+          "translation": {
+            "vi": "Quả mơ muối này rất chua.",
+            "en": "This pickled plum is very sour."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "脂",
+      "reading": "あぶら",
+      "meaning": {
+        "vi": "Mỡ; chất béo (động vật)",
+        "en": "Fat; grease"
+      },
+      "examples": [
+        {
+          "ja": "肉の脂を、きれいに取りました。",
+          "reading": "にくのあぶらを、きれいにとりました。",
+          "translation": {
+            "vi": "Tôi đã lọc sạch mỡ ở miếng thịt.",
+            "en": "I trimmed off the fat from the meat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "脂肪",
+      "reading": "しぼう",
+      "meaning": {
+        "vi": "Mỡ (trong cơ thể); chất béo",
+        "en": "Body fat; fat"
+      },
+      "examples": [
+        {
+          "ja": "運動して、体の脂肪を減らしたいです。",
+          "reading": "うんどうして、からだのしぼうをへらしたいです。",
+          "translation": {
+            "vi": "Tôi muốn tập luyện để giảm mỡ trong cơ thể.",
+            "en": "I want to exercise and reduce body fat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "カロリー",
+      "reading": "カロリー",
+      "meaning": {
+        "vi": "Calo",
+        "en": "Calories"
+      },
+      "examples": [
+        {
+          "ja": "このお菓子は、カロリーが高いです。",
+          "reading": "このおかしは、カロリーがたかいです。",
+          "translation": {
+            "vi": "Loại bánh này có nhiều calo.",
+            "en": "These sweets are high in calories."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "たんぱく質",
+      "reading": "たんぱくしつ",
+      "meaning": {
+        "vi": "Chất đạm (protein)",
+        "en": "Protein"
+      },
+      "examples": [
+        {
+          "ja": "肉や魚には、たんぱく質が多く含まれています。",
+          "reading": "にくやさかなには、たんぱくしつがおおくふくまれています。",
+          "translation": {
+            "vi": "Thịt và cá chứa nhiều chất đạm.",
+            "en": "Meat and fish contain a lot of protein."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "炭水化物",
+      "reading": "たんすいかぶつ",
+      "meaning": {
+        "vi": "Tinh bột; carbohydrate",
+        "en": "Carbohydrate"
+      },
+      "examples": [
+        {
+          "ja": "ご飯やパンは、炭水化物です。",
+          "reading": "ごはんやパンは、たんすいかぶつです。",
+          "translation": {
+            "vi": "Cơm và bánh mì là tinh bột.",
+            "en": "Rice and bread are carbohydrates."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ビタミン",
+      "reading": "ビタミン",
+      "meaning": {
+        "vi": "Vitamin",
+        "en": "Vitamin"
+      },
+      "examples": [
+        {
+          "ja": "野菜には、ビタミンがたくさんあります。",
+          "reading": "やさいには、ビタミンがたくさんあります。",
+          "translation": {
+            "vi": "Rau có nhiều vitamin.",
+            "en": "Vegetables have plenty of vitamins."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発酵",
+      "reading": "はっこう",
+      "meaning": {
+        "vi": "Lên men",
+        "en": "Fermentation"
+      },
+      "examples": [
+        {
+          "ja": "納豆は、豆を発酵させて作ります。",
+          "reading": "なっとうは、まめをはっこうさせてつくります。",
+          "translation": {
+            "vi": "Natto được làm bằng cách lên men đậu.",
+            "en": "Natto is made by fermenting beans."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "添加物",
+      "reading": "てんかぶつ",
+      "meaning": {
+        "vi": "Chất phụ gia",
+        "en": "Additive"
+      },
+      "examples": [
+        {
+          "ja": "添加物の入っていない食品を選んでいます。",
+          "reading": "てんかぶつのはいっていないしょくひんをえらんでいます。",
+          "translation": {
+            "vi": "Tôi chọn thực phẩm không chứa phụ gia.",
+            "en": "I choose foods without additives."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "甘い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このケーキは、（　）ものが好きな人に人気です。 — Nghĩa của câu: “Bánh này được người thích đồ ngọt ưa chuộng.”",
+        "en": "Choose the word that fits the blank: このケーキは、（　）ものが好きな人に人気です。 — Meaning of the sentence: “This cake is popular with people who like sweet things.”"
+      },
+      "payload": {
+        "choices": [
+          "辛い",
+          "苦い",
+          "甘い",
+          "酸っぱい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「甘い」(Ngọt) hợp nghĩa câu này: “Bánh này được người thích đồ ngọt ưa chuộng.”",
+        "en": "Correct! 「甘い」(Sweet) fits this sentence: “This cake is popular with people who like sweet things.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bánh này được người thích đồ ngọt ưa chuộng.”, nên cần 「甘い」(Ngọt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This cake is popular with people who like sweet things.”, so it needs 「甘い」(Sweet); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "辛い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このカレーは、とても（　）です。 — Nghĩa của câu: “Món cà ri này rất cay.”",
+        "en": "Choose the word that fits the blank: このカレーは、とても（　）です。 — Meaning of the sentence: “This curry is very spicy.”"
+      },
+      "payload": {
+        "choices": [
+          "甘い",
+          "苦い",
+          "酸っぱい",
+          "辛い"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「辛い」(Cay) hợp nghĩa câu này: “Món cà ri này rất cay.”",
+        "en": "Correct! 「辛い」(Spicy) fits this sentence: “This curry is very spicy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món cà ri này rất cay.”, nên cần 「辛い」(Cay); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This curry is very spicy.”, so it needs 「辛い」(Spicy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "苦い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この薬は、とても（　）です。 — Nghĩa của câu: “Thuốc này rất đắng.”",
+        "en": "Choose the word that fits the blank: この薬は、とても（　）です。 — Meaning of the sentence: “This medicine is very bitter.”"
+      },
+      "payload": {
+        "choices": [
+          "苦い",
+          "甘い",
+          "辛い",
+          "酸っぱい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「苦い」(Đắng) hợp nghĩa câu này: “Thuốc này rất đắng.”",
+        "en": "Correct! 「苦い」(Bitter) fits this sentence: “This medicine is very bitter.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thuốc này rất đắng.”, nên cần 「苦い」(Đắng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This medicine is very bitter.”, so it needs 「苦い」(Bitter); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "酸っぱい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この梅干しは、とても（　）です。 — Nghĩa của câu: “Quả mơ muối này rất chua.”",
+        "en": "Choose the word that fits the blank: この梅干しは、とても（　）です。 — Meaning of the sentence: “This pickled plum is very sour.”"
+      },
+      "payload": {
+        "choices": [
+          "甘い",
+          "酸っぱい",
+          "辛い",
+          "苦い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「酸っぱい」(Chua) hợp nghĩa câu này: “Quả mơ muối này rất chua.”",
+        "en": "Correct! 「酸っぱい」(Sour) fits this sentence: “This pickled plum is very sour.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quả mơ muối này rất chua.”, nên cần 「酸っぱい」(Chua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This pickled plum is very sour.”, so it needs 「酸っぱい」(Sour); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "脂",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 肉の（　）を、きれいに取りました。 — Nghĩa của câu: “Tôi đã lọc sạch mỡ ở miếng thịt.”",
+        "en": "Choose the word that fits the blank: 肉の（　）を、きれいに取りました。 — Meaning of the sentence: “I trimmed off the fat from the meat.”"
+      },
+      "payload": {
+        "choices": [
+          "炭水化物",
+          "脂肪",
+          "脂",
+          "発酵"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「脂」(Mỡ; chất béo (động vật)) hợp nghĩa câu này: “Tôi đã lọc sạch mỡ ở miếng thịt.”",
+        "en": "Correct! 「脂」(Fat; grease) fits this sentence: “I trimmed off the fat from the meat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã lọc sạch mỡ ở miếng thịt.”, nên cần 「脂」(Mỡ; chất béo (động vật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I trimmed off the fat from the meat.”, so it needs 「脂」(Fat; grease); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "脂肪",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 運動して、体の（　）を減らしたいです。 — Nghĩa của câu: “Tôi muốn tập luyện để giảm mỡ trong cơ thể.”",
+        "en": "Choose the word that fits the blank: 運動して、体の（　）を減らしたいです。 — Meaning of the sentence: “I want to exercise and reduce body fat.”"
+      },
+      "payload": {
+        "choices": [
+          "たんぱく質",
+          "添加物",
+          "炭水化物",
+          "脂肪"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「脂肪」(Mỡ (trong cơ thể); chất béo) hợp nghĩa câu này: “Tôi muốn tập luyện để giảm mỡ trong cơ thể.”",
+        "en": "Correct! 「脂肪」(Body fat; fat) fits this sentence: “I want to exercise and reduce body fat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi muốn tập luyện để giảm mỡ trong cơ thể.”, nên cần 「脂肪」(Mỡ (trong cơ thể); chất béo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I want to exercise and reduce body fat.”, so it needs 「脂肪」(Body fat; fat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "カロリー",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお菓子は、（　）が高いです。 — Nghĩa của câu: “Loại bánh này có nhiều calo.”",
+        "en": "Choose the word that fits the blank: このお菓子は、（　）が高いです。 — Meaning of the sentence: “These sweets are high in calories.”"
+      },
+      "payload": {
+        "choices": [
+          "カロリー",
+          "ビタミン",
+          "たんぱく質",
+          "発酵"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「カロリー」(Calo) hợp nghĩa câu này: “Loại bánh này có nhiều calo.”",
+        "en": "Correct! 「カロリー」(Calories) fits this sentence: “These sweets are high in calories.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Loại bánh này có nhiều calo.”, nên cần 「カロリー」(Calo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “These sweets are high in calories.”, so it needs 「カロリー」(Calories); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "たんぱく質",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 肉や魚には、（　）が多く含まれています。 — Nghĩa của câu: “Thịt và cá chứa nhiều chất đạm.”",
+        "en": "Choose the word that fits the blank: 肉や魚には、（　）が多く含まれています。 — Meaning of the sentence: “Meat and fish contain a lot of protein.”"
+      },
+      "payload": {
+        "choices": [
+          "炭水化物",
+          "たんぱく質",
+          "脂",
+          "添加物"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たんぱく質」(Chất đạm (protein)) hợp nghĩa câu này: “Thịt và cá chứa nhiều chất đạm.”",
+        "en": "Correct! 「たんぱく質」(Protein) fits this sentence: “Meat and fish contain a lot of protein.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thịt và cá chứa nhiều chất đạm.”, nên cần 「たんぱく質」(Chất đạm (protein)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Meat and fish contain a lot of protein.”, so it needs 「たんぱく質」(Protein); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "炭水化物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ご飯やパンは、（　）です。 — Nghĩa của câu: “Cơm và bánh mì là tinh bột.”",
+        "en": "Choose the word that fits the blank: ご飯やパンは、（　）です。 — Meaning of the sentence: “Rice and bread are carbohydrates.”"
+      },
+      "payload": {
+        "choices": [
+          "脂",
+          "脂肪",
+          "炭水化物",
+          "たんぱく質"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「炭水化物」(Tinh bột; carbohydrate) hợp nghĩa câu này: “Cơm và bánh mì là tinh bột.”",
+        "en": "Correct! 「炭水化物」(Carbohydrate) fits this sentence: “Rice and bread are carbohydrates.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cơm và bánh mì là tinh bột.”, nên cần 「炭水化物」(Tinh bột; carbohydrate); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Rice and bread are carbohydrates.”, so it needs 「炭水化物」(Carbohydrate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ビタミン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 野菜には、（　）がたくさんあります。 — Nghĩa của câu: “Rau có nhiều vitamin.”",
+        "en": "Choose the word that fits the blank: 野菜には、（　）がたくさんあります。 — Meaning of the sentence: “Vegetables have plenty of vitamins.”"
+      },
+      "payload": {
+        "choices": [
+          "カロリー",
+          "苦い",
+          "添加物",
+          "ビタミン"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ビタミン」(Vitamin) hợp nghĩa câu này: “Rau có nhiều vitamin.”",
+        "en": "Correct! 「ビタミン」(Vitamin) fits this sentence: “Vegetables have plenty of vitamins.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Rau có nhiều vitamin.”, nên cần 「ビタミン」(Vitamin); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Vegetables have plenty of vitamins.”, so it needs 「ビタミン」(Vitamin); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発酵",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 納豆は、豆を（　）させて作ります。 — Nghĩa của câu: “Natto được làm bằng cách lên men đậu.”",
+        "en": "Choose the word that fits the blank: 納豆は、豆を（　）させて作ります。 — Meaning of the sentence: “Natto is made by fermenting beans.”"
+      },
+      "payload": {
+        "choices": [
+          "発酵",
+          "たんぱく質",
+          "脂",
+          "添加物"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発酵」(Lên men) hợp nghĩa câu này: “Natto được làm bằng cách lên men đậu.”",
+        "en": "Correct! 「発酵」(Fermentation) fits this sentence: “Natto is made by fermenting beans.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Natto được làm bằng cách lên men đậu.”, nên cần 「発酵」(Lên men); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Natto is made by fermenting beans.”, so it needs 「発酵」(Fermentation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "添加物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の入っていない食品を選んでいます。 — Nghĩa của câu: “Tôi chọn thực phẩm không chứa phụ gia.”",
+        "en": "Choose the word that fits the blank: （　）の入っていない食品を選んでいます。 — Meaning of the sentence: “I choose foods without additives.”"
+      },
+      "payload": {
+        "choices": [
+          "脂",
+          "添加物",
+          "脂肪",
+          "炭水化物"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「添加物」(Chất phụ gia) hợp nghĩa câu này: “Tôi chọn thực phẩm không chứa phụ gia.”",
+        "en": "Correct! 「添加物」(Additive) fits this sentence: “I choose foods without additives.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi chọn thực phẩm không chứa phụ gia.”, nên cần 「添加物」(Chất phụ gia); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I choose foods without additives.”, so it needs 「添加物」(Additive); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "甘い",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: このケーキは、「甘い」ものが好きな人に人気です。",
+        "en": "Choose the correct reading of the word in 「」: このケーキは、「甘い」ものが好きな人に人気です。"
+      },
+      "payload": {
+        "choices": [
+          "たんぱくしつ",
+          "すっぱい",
+          "にがい",
+          "あまい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「甘い」 đọc là 「あまい」, nghĩa là Ngọt.",
+        "en": "Correct! 「甘い」 is read 「あまい」 and means Sweet."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「甘い」 đọc là 「あまい」 (Ngọt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「甘い」 is read 「あまい」 (Sweet); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "苦い",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この薬は、とても「苦い」です。",
+        "en": "Choose the correct reading of the word in 「」: この薬は、とても「苦い」です。"
+      },
+      "payload": {
+        "choices": [
+          "にがい",
+          "たんぱくしつ",
+          "すっぱい",
+          "あぶら"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「苦い」 đọc là 「にがい」, nghĩa là Đắng.",
+        "en": "Correct! 「苦い」 is read 「にがい」 and means Bitter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「苦い」 đọc là 「にがい」 (Đắng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「苦い」 is read 「にがい」 (Bitter); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "脂肪",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 運動して、体の「脂肪」を減らしたいです。",
+        "en": "Choose the correct reading of the word in 「」: 運動して、体の「脂肪」を減らしたいです。"
+      },
+      "payload": {
+        "choices": [
+          "はっこう",
+          "しぼう",
+          "あまい",
+          "にがい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「脂肪」 đọc là 「しぼう」, nghĩa là Mỡ (trong cơ thể); chất béo.",
+        "en": "Correct! 「脂肪」 is read 「しぼう」 and means Body fat; fat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「脂肪」 đọc là 「しぼう」 (Mỡ (trong cơ thể); chất béo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「脂肪」 is read 「しぼう」 (Body fat; fat); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "炭水化物",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ご飯やパンは、「炭水化物」です。",
+        "en": "Choose the correct reading of the word in 「」: ご飯やパンは、「炭水化物」です。"
+      },
+      "payload": {
+        "choices": [
+          "はっこう",
+          "あぶら",
+          "たんすいかぶつ",
+          "ビタミン"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「炭水化物」 đọc là 「たんすいかぶつ」, nghĩa là Tinh bột; carbohydrate.",
+        "en": "Correct! 「炭水化物」 is read 「たんすいかぶつ」 and means Carbohydrate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「炭水化物」 đọc là 「たんすいかぶつ」 (Tinh bột; carbohydrate); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「炭水化物」 is read 「たんすいかぶつ」 (Carbohydrate); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "酸っぱい",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この梅干しは、とても「すっぱい」です。",
+        "en": "Choose the correct way to write the word in 「」: この梅干しは、とても「すっぱい」です。"
+      },
+      "payload": {
+        "choices": [
+          "酸っぱい",
+          "炭水化物",
+          "甘い",
+          "発酵"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「すっぱい」 viết là 「酸っぱい」, nghĩa là Chua.",
+        "en": "Correct! 「すっぱい」 is written 「酸っぱい」 and means Sour."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「すっぱい」 viết là 「酸っぱい」 (Chua); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「すっぱい」 is written 「酸っぱい」 (Sour); the other words are read differently."
+      }
+    },
+    {
+      "item": "発酵",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 納豆は、豆を「はっこう」させて作ります。",
+        "en": "Choose the correct way to write the word in 「」: 納豆は、豆を「はっこう」させて作ります。"
+      },
+      "payload": {
+        "choices": [
+          "辛い",
+          "発酵",
+          "甘い",
+          "添加物"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はっこう」 viết là 「発酵」, nghĩa là Lên men.",
+        "en": "Correct! 「はっこう」 is written 「発酵」 and means Fermentation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はっこう」 viết là 「発酵」 (Lên men); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はっこう」 is written 「発酵」 (Fermentation); the other words are read differently."
+      }
+    }
+  ]
+}

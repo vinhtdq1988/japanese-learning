@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-news-incidents",
+  "title": {
+    "vi": "Tai nạn và thương vong",
+    "en": "Accidents and casualties"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1240,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "被害",
+      "reading": "ひがい",
+      "meaning": {
+        "vi": "Thiệt hại; nạn nhân (bị hại)",
+        "en": "Damage; harm"
+      },
+      "examples": [
+        {
+          "ja": "台風で、農家は大きな被害を受けました。",
+          "reading": "たいふうで、のうかはおおきなひがいをうけました。",
+          "translation": {
+            "vi": "Các hộ nông dân chịu thiệt hại lớn vì bão.",
+            "en": "Farmers suffered great damage from the typhoon."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "衝突",
+      "reading": "しょうとつ",
+      "meaning": {
+        "vi": "Va chạm; xung đột",
+        "en": "Collision; clash"
+      },
+      "examples": [
+        {
+          "ja": "交差点で、車と自転車が衝突しました。",
+          "reading": "こうさてんで、くるまとじてんしゃがしょうとつしました。",
+          "translation": {
+            "vi": "Ở ngã tư, ô tô và xe đạp đã va chạm nhau.",
+            "en": "A car and a bicycle collided at the intersection."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "爆発",
+      "reading": "ばくはつ",
+      "meaning": {
+        "vi": "Nổ",
+        "en": "Explosion"
+      },
+      "examples": [
+        {
+          "ja": "工場で、大きな爆発がありました。",
+          "reading": "こうじょうで、おおきなばくはつがありました。",
+          "translation": {
+            "vi": "Đã có một vụ nổ lớn ở nhà máy.",
+            "en": "There was a big explosion at the factory."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "火災",
+      "reading": "かさい",
+      "meaning": {
+        "vi": "Hỏa hoạn",
+        "en": "Fire (disaster)"
+      },
+      "examples": [
+        {
+          "ja": "夜中に火災が起きて、近所の人は避難しました。",
+          "reading": "よなかにかさいがおきて、きんじょのひとはひなんしました。",
+          "translation": {
+            "vi": "Nửa đêm xảy ra hỏa hoạn nên người xung quanh đã đi lánh nạn.",
+            "en": "A fire broke out at night and the neighbors evacuated."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "死亡",
+      "reading": "しぼう",
+      "meaning": {
+        "vi": "Tử vong",
+        "en": "Death (fatality)"
+      },
+      "examples": [
+        {
+          "ja": "この事故で、三人が死亡しました。",
+          "reading": "このじこで、さんにんがしぼうしました。",
+          "translation": {
+            "vi": "Trong vụ tai nạn này có ba người tử vong.",
+            "en": "Three people died in this accident."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "死ぬ",
+      "reading": "しぬ",
+      "meaning": {
+        "vi": "Chết",
+        "en": "To die"
+      },
+      "examples": [
+        {
+          "ja": "死ぬほど疲れて、すぐ眠りました。",
+          "reading": "しぬほどつかれて、すぐねむりました。",
+          "translation": {
+            "vi": "Mệt chết đi được nên tôi ngủ ngay.",
+            "en": "I was dead tired and fell asleep right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "亡くなる",
+      "reading": "なくなる",
+      "meaning": {
+        "vi": "Qua đời (cách nói lịch sự)",
+        "en": "To pass away"
+      },
+      "examples": [
+        {
+          "ja": "祖父が亡くなる前に、会いに行きました。",
+          "reading": "そふがなくなるまえに、あいにいきました。",
+          "translation": {
+            "vi": "Tôi đã đến thăm ông trước khi ông qua đời.",
+            "en": "I went to see my grandfather before he passed away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "負傷",
+      "reading": "ふしょう",
+      "meaning": {
+        "vi": "Bị thương",
+        "en": "Injury (being wounded)"
+      },
+      "examples": [
+        {
+          "ja": "事故で、運転手が負傷しました。",
+          "reading": "じこで、うんてんしゅがふしょうしました。",
+          "translation": {
+            "vi": "Tài xế bị thương trong vụ tai nạn.",
+            "en": "The driver was injured in the accident."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "重傷",
+      "reading": "じゅうしょう",
+      "meaning": {
+        "vi": "Trọng thương",
+        "en": "Serious injury"
+      },
+      "examples": [
+        {
+          "ja": "彼は、重傷を負って入院しています。",
+          "reading": "かれは、じゅうしょうをおってにゅういんしています。",
+          "translation": {
+            "vi": "Anh ấy bị thương nặng và đang nằm viện.",
+            "en": "He was seriously injured and is in the hospital."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "軽傷",
+      "reading": "けいしょう",
+      "meaning": {
+        "vi": "Vết thương nhẹ",
+        "en": "Minor injury"
+      },
+      "examples": [
+        {
+          "ja": "幸い、軽傷ですみました。",
+          "reading": "さいわい、けいしょうですみました。",
+          "translation": {
+            "vi": "May mắn là chỉ bị thương nhẹ.",
+            "en": "Fortunately, I got off with a minor injury."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "行方不明",
+      "reading": "ゆくえふめい",
+      "meaning": {
+        "vi": "Mất tích",
+        "en": "Missing; whereabouts unknown"
+      },
+      "examples": [
+        {
+          "ja": "山で、登山者が行方不明になりました。",
+          "reading": "やまで、とざんしゃがゆくえふめいになりました。",
+          "translation": {
+            "vi": "Một người leo núi đã mất tích trên núi.",
+            "en": "A climber went missing in the mountains."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "被害者",
+      "reading": "ひがいしゃ",
+      "meaning": {
+        "vi": "Nạn nhân",
+        "en": "Victim"
+      },
+      "examples": [
+        {
+          "ja": "警察は、被害者から話を聞きました。",
+          "reading": "けいさつは、ひがいしゃからはなしをききました。",
+          "translation": {
+            "vi": "Cảnh sát đã nghe nạn nhân kể lại.",
+            "en": "The police heard the victim's account."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "被害",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風で、農家は大きな（　）を受けました。 — Nghĩa của câu: “Các hộ nông dân chịu thiệt hại lớn vì bão.”",
+        "en": "Choose the word that fits the blank: 台風で、農家は大きな（　）を受けました。 — Meaning of the sentence: “Farmers suffered great damage from the typhoon.”"
+      },
+      "payload": {
+        "choices": [
+          "死亡",
+          "衝突",
+          "被害",
+          "行方不明"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「被害」(Thiệt hại; nạn nhân (bị hại)) hợp nghĩa câu này: “Các hộ nông dân chịu thiệt hại lớn vì bão.”",
+        "en": "Correct! 「被害」(Damage; harm) fits this sentence: “Farmers suffered great damage from the typhoon.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các hộ nông dân chịu thiệt hại lớn vì bão.”, nên cần 「被害」(Thiệt hại; nạn nhân (bị hại)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Farmers suffered great damage from the typhoon.”, so it needs 「被害」(Damage; harm); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "衝突",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 交差点で、車と自転車が（　）しました。 — Nghĩa của câu: “Ở ngã tư, ô tô và xe đạp đã va chạm nhau.”",
+        "en": "Choose the word that fits the blank: 交差点で、車と自転車が（　）しました。 — Meaning of the sentence: “A car and a bicycle collided at the intersection.”"
+      },
+      "payload": {
+        "choices": [
+          "被害",
+          "爆発",
+          "行方不明",
+          "衝突"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「衝突」(Va chạm; xung đột) hợp nghĩa câu này: “Ở ngã tư, ô tô và xe đạp đã va chạm nhau.”",
+        "en": "Correct! 「衝突」(Collision; clash) fits this sentence: “A car and a bicycle collided at the intersection.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở ngã tư, ô tô và xe đạp đã va chạm nhau.”, nên cần 「衝突」(Va chạm; xung đột); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A car and a bicycle collided at the intersection.”, so it needs 「衝突」(Collision; clash); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "爆発",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工場で、大きな（　）がありました。 — Nghĩa của câu: “Đã có một vụ nổ lớn ở nhà máy.”",
+        "en": "Choose the word that fits the blank: 工場で、大きな（　）がありました。 — Meaning of the sentence: “There was a big explosion at the factory.”"
+      },
+      "payload": {
+        "choices": [
+          "爆発",
+          "行方不明",
+          "被害",
+          "火災"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「爆発」(Nổ) hợp nghĩa câu này: “Đã có một vụ nổ lớn ở nhà máy.”",
+        "en": "Correct! 「爆発」(Explosion) fits this sentence: “There was a big explosion at the factory.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đã có một vụ nổ lớn ở nhà máy.”, nên cần 「爆発」(Nổ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was a big explosion at the factory.”, so it needs 「爆発」(Explosion); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "火災",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夜中に（　）が起きて、近所の人は避難しました。 — Nghĩa của câu: “Nửa đêm xảy ra hỏa hoạn nên người xung quanh đã đi lánh nạn.”",
+        "en": "Choose the word that fits the blank: 夜中に（　）が起きて、近所の人は避難しました。 — Meaning of the sentence: “A fire broke out at night and the neighbors evacuated.”"
+      },
+      "payload": {
+        "choices": [
+          "被害",
+          "火災",
+          "衝突",
+          "重傷"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「火災」(Hỏa hoạn) hợp nghĩa câu này: “Nửa đêm xảy ra hỏa hoạn nên người xung quanh đã đi lánh nạn.”",
+        "en": "Correct! 「火災」(Fire (disaster)) fits this sentence: “A fire broke out at night and the neighbors evacuated.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nửa đêm xảy ra hỏa hoạn nên người xung quanh đã đi lánh nạn.”, nên cần 「火災」(Hỏa hoạn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A fire broke out at night and the neighbors evacuated.”, so it needs 「火災」(Fire (disaster)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "死亡",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この事故で、三人が（　）しました。 — Nghĩa của câu: “Trong vụ tai nạn này có ba người tử vong.”",
+        "en": "Choose the word that fits the blank: この事故で、三人が（　）しました。 — Meaning of the sentence: “Three people died in this accident.”"
+      },
+      "payload": {
+        "choices": [
+          "軽傷",
+          "被害",
+          "死亡",
+          "行方不明"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「死亡」(Tử vong) hợp nghĩa câu này: “Trong vụ tai nạn này có ba người tử vong.”",
+        "en": "Correct! 「死亡」(Death (fatality)) fits this sentence: “Three people died in this accident.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong vụ tai nạn này có ba người tử vong.”, nên cần 「死亡」(Tử vong); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Three people died in this accident.”, so it needs 「死亡」(Death (fatality)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "死ぬ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）ほど疲れて、すぐ眠りました。 — Nghĩa của câu: “Mệt chết đi được nên tôi ngủ ngay.”",
+        "en": "Choose the word that fits the blank: （　）ほど疲れて、すぐ眠りました。 — Meaning of the sentence: “I was dead tired and fell asleep right away.”"
+      },
+      "payload": {
+        "choices": [
+          "亡くなる",
+          "行方不明",
+          "火災",
+          "死ぬ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「死ぬ」(Chết) hợp nghĩa câu này: “Mệt chết đi được nên tôi ngủ ngay.”",
+        "en": "Correct! 「死ぬ」(To die) fits this sentence: “I was dead tired and fell asleep right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mệt chết đi được nên tôi ngủ ngay.”, nên cần 「死ぬ」(Chết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was dead tired and fell asleep right away.”, so it needs 「死ぬ」(To die); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "亡くなる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖父が（　）前に、会いに行きました。 — Nghĩa của câu: “Tôi đã đến thăm ông trước khi ông qua đời.”",
+        "en": "Choose the word that fits the blank: 祖父が（　）前に、会いに行きました。 — Meaning of the sentence: “I went to see my grandfather before he passed away.”"
+      },
+      "payload": {
+        "choices": [
+          "亡くなる",
+          "死ぬ",
+          "死亡",
+          "軽傷"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「亡くなる」(Qua đời (cách nói lịch sự)) hợp nghĩa câu này: “Tôi đã đến thăm ông trước khi ông qua đời.”",
+        "en": "Correct! 「亡くなる」(To pass away) fits this sentence: “I went to see my grandfather before he passed away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã đến thăm ông trước khi ông qua đời.”, nên cần 「亡くなる」(Qua đời (cách nói lịch sự)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I went to see my grandfather before he passed away.”, so it needs 「亡くなる」(To pass away); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "負傷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事故で、運転手が（　）しました。 — Nghĩa của câu: “Tài xế bị thương trong vụ tai nạn.”",
+        "en": "Choose the word that fits the blank: 事故で、運転手が（　）しました。 — Meaning of the sentence: “The driver was injured in the accident.”"
+      },
+      "payload": {
+        "choices": [
+          "被害者",
+          "負傷",
+          "被害",
+          "衝突"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「負傷」(Bị thương) hợp nghĩa câu này: “Tài xế bị thương trong vụ tai nạn.”",
+        "en": "Correct! 「負傷」(Injury (being wounded)) fits this sentence: “The driver was injured in the accident.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tài xế bị thương trong vụ tai nạn.”, nên cần 「負傷」(Bị thương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The driver was injured in the accident.”, so it needs 「負傷」(Injury (being wounded)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "重傷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）を負って入院しています。 — Nghĩa của câu: “Anh ấy bị thương nặng và đang nằm viện.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）を負って入院しています。 — Meaning of the sentence: “He was seriously injured and is in the hospital.”"
+      },
+      "payload": {
+        "choices": [
+          "衝突",
+          "被害",
+          "重傷",
+          "被害者"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「重傷」(Trọng thương) hợp nghĩa câu này: “Anh ấy bị thương nặng và đang nằm viện.”",
+        "en": "Correct! 「重傷」(Serious injury) fits this sentence: “He was seriously injured and is in the hospital.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy bị thương nặng và đang nằm viện.”, nên cần 「重傷」(Trọng thương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He was seriously injured and is in the hospital.”, so it needs 「重傷」(Serious injury); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "軽傷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 幸い、（　）ですみました。 — Nghĩa của câu: “May mắn là chỉ bị thương nhẹ.”",
+        "en": "Choose the word that fits the blank: 幸い、（　）ですみました。 — Meaning of the sentence: “Fortunately, I got off with a minor injury.”"
+      },
+      "payload": {
+        "choices": [
+          "行方不明",
+          "被害",
+          "負傷",
+          "軽傷"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「軽傷」(Vết thương nhẹ) hợp nghĩa câu này: “May mắn là chỉ bị thương nhẹ.”",
+        "en": "Correct! 「軽傷」(Minor injury) fits this sentence: “Fortunately, I got off with a minor injury.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “May mắn là chỉ bị thương nhẹ.”, nên cần 「軽傷」(Vết thương nhẹ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Fortunately, I got off with a minor injury.”, so it needs 「軽傷」(Minor injury); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "行方不明",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 山で、登山者が（　）になりました。 — Nghĩa của câu: “Một người leo núi đã mất tích trên núi.”",
+        "en": "Choose the word that fits the blank: 山で、登山者が（　）になりました。 — Meaning of the sentence: “A climber went missing in the mountains.”"
+      },
+      "payload": {
+        "choices": [
+          "行方不明",
+          "負傷",
+          "被害",
+          "重傷"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「行方不明」(Mất tích) hợp nghĩa câu này: “Một người leo núi đã mất tích trên núi.”",
+        "en": "Correct! 「行方不明」(Missing; whereabouts unknown) fits this sentence: “A climber went missing in the mountains.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Một người leo núi đã mất tích trên núi.”, nên cần 「行方不明」(Mất tích); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A climber went missing in the mountains.”, so it needs 「行方不明」(Missing; whereabouts unknown); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "被害者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 警察は、（　）から話を聞きました。 — Nghĩa của câu: “Cảnh sát đã nghe nạn nhân kể lại.”",
+        "en": "Choose the word that fits the blank: 警察は、（　）から話を聞きました。 — Meaning of the sentence: “The police heard the victim's account.”"
+      },
+      "payload": {
+        "choices": [
+          "衝突",
+          "被害者",
+          "死亡",
+          "負傷"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「被害者」(Nạn nhân) hợp nghĩa câu này: “Cảnh sát đã nghe nạn nhân kể lại.”",
+        "en": "Correct! 「被害者」(Victim) fits this sentence: “The police heard the victim's account.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cảnh sát đã nghe nạn nhân kể lại.”, nên cần 「被害者」(Nạn nhân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The police heard the victim's account.”, so it needs 「被害者」(Victim); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "被害",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 台風で、農家は大きな「被害」を受けました。",
+        "en": "Choose the correct reading of the word in 「」: 台風で、農家は大きな「被害」を受けました。"
+      },
+      "payload": {
+        "choices": [
+          "しょうとつ",
+          "じゅうしょう",
+          "かさい",
+          "ひがい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「被害」 đọc là 「ひがい」, nghĩa là Thiệt hại; nạn nhân (bị hại).",
+        "en": "Correct! 「被害」 is read 「ひがい」 and means Damage; harm."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「被害」 đọc là 「ひがい」 (Thiệt hại; nạn nhân (bị hại)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「被害」 is read 「ひがい」 (Damage; harm); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "火災",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 夜中に「火災」が起きて、近所の人は避難しました。",
+        "en": "Choose the correct reading of the word in 「」: 夜中に「火災」が起きて、近所の人は避難しました。"
+      },
+      "payload": {
+        "choices": [
+          "かさい",
+          "しょうとつ",
+          "ひがい",
+          "ばくはつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「火災」 đọc là 「かさい」, nghĩa là Hỏa hoạn.",
+        "en": "Correct! 「火災」 is read 「かさい」 and means Fire (disaster)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「火災」 đọc là 「かさい」 (Hỏa hoạn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「火災」 is read 「かさい」 (Fire (disaster)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "亡くなる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 祖父が「亡くなる」前に、会いに行きました。",
+        "en": "Choose the correct reading of the word in 「」: 祖父が「亡くなる」前に、会いに行きました。"
+      },
+      "payload": {
+        "choices": [
+          "しぬ",
+          "なくなる",
+          "ばくはつ",
+          "しょうとつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「亡くなる」 đọc là 「なくなる」, nghĩa là Qua đời (cách nói lịch sự).",
+        "en": "Correct! 「亡くなる」 is read 「なくなる」 and means To pass away."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「亡くなる」 đọc là 「なくなる」 (Qua đời (cách nói lịch sự)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「亡くなる」 is read 「なくなる」 (To pass away); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "軽傷",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 幸い、「軽傷」ですみました。",
+        "en": "Choose the correct reading of the word in 「」: 幸い、「軽傷」ですみました。"
+      },
+      "payload": {
+        "choices": [
+          "ゆくえふめい",
+          "じゅうしょう",
+          "けいしょう",
+          "かさい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「軽傷」 đọc là 「けいしょう」, nghĩa là Vết thương nhẹ.",
+        "en": "Correct! 「軽傷」 is read 「けいしょう」 and means Minor injury."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「軽傷」 đọc là 「けいしょう」 (Vết thương nhẹ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「軽傷」 is read 「けいしょう」 (Minor injury); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "爆発",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 工場で、大きな「ばくはつ」がありました。",
+        "en": "Choose the correct way to write the word in 「」: 工場で、大きな「ばくはつ」がありました。"
+      },
+      "payload": {
+        "choices": [
+          "爆発",
+          "軽傷",
+          "死ぬ",
+          "衝突"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ばくはつ」 viết là 「爆発」, nghĩa là Nổ.",
+        "en": "Correct! 「ばくはつ」 is written 「爆発」 and means Explosion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ばくはつ」 viết là 「爆発」 (Nổ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ばくはつ」 is written 「爆発」 (Explosion); the other words are read differently."
+      }
+    },
+    {
+      "item": "重傷",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 彼は、「じゅうしょう」を負って入院しています。",
+        "en": "Choose the correct way to write the word in 「」: 彼は、「じゅうしょう」を負って入院しています。"
+      },
+      "payload": {
+        "choices": [
+          "被害者",
+          "重傷",
+          "爆発",
+          "火災"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「じゅうしょう」 viết là 「重傷」, nghĩa là Trọng thương.",
+        "en": "Correct! 「じゅうしょう」 is written 「重傷」 and means Serious injury."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「じゅうしょう」 viết là 「重傷」 (Trọng thương); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「じゅうしょう」 is written 「重傷」 (Serious injury); the other words are read differently."
+      }
+    }
+  ]
+}

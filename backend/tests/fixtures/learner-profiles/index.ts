@@ -71,6 +71,24 @@ export const CLASS_PREFIX = 'class-';
  */
 export const REWARD_PREFIX = 'reward-';
 
+/**
+ * Tiền tố file của nhóm hồ sơ luyện đọc/viết (spec 007). Loader riêng (`loadPracticeProfiles`) và KHÔNG lẫn vào
+ * `loadLearnerProfiles()` để golden `plans-pre-practice.json` không lệch.
+ */
+export const PRACTICE_PREFIX = 'practice-';
+
+/**
+ * Tiền tố file của nhóm hồ sơ màu năng lực (spec 007). Loader riêng (`loadCompetencyProfiles`) và KHÔNG lẫn vào
+ * `loadLearnerProfiles()` để các golden hồi quy không lệch.
+ */
+export const COMPETENCY_PREFIX = 'competency-';
+
+/**
+ * Tiền tố file của nhóm hồ sơ lời khích lệ (spec 007). Loader riêng (`loadEncouragementProfiles`) và KHÔNG lẫn vào
+ * `loadLearnerProfiles()` để các golden hồi quy không lệch.
+ */
+export const ENCOURAGEMENT_PREFIX = 'encouragement-';
+
 function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[] {
   return readdirSync(DIR)
     .filter((f) => f.endsWith('.json') && accept(f))
@@ -82,7 +100,12 @@ function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[
 export function loadLearnerProfiles(): LearnerProfileFixture[] {
   return readProfiles(
     (f) =>
-      !f.startsWith(KANJI_PREFIX) && !f.startsWith(CLASS_PREFIX) && !f.startsWith(REWARD_PREFIX),
+      !f.startsWith(KANJI_PREFIX) &&
+      !f.startsWith(CLASS_PREFIX) &&
+      !f.startsWith(REWARD_PREFIX) &&
+      !f.startsWith(PRACTICE_PREFIX) &&
+      !f.startsWith(COMPETENCY_PREFIX) &&
+      !f.startsWith(ENCOURAGEMENT_PREFIX),
   );
 }
 
@@ -135,8 +158,29 @@ export function loadRewardProfiles(): RewardFixture[] {
   return readProfilesWithPrefix<RewardFixture>(REWARD_PREFIX);
 }
 
+/** Đọc nhóm hồ sơ luyện đọc/viết (spec 007), sắp theo `id`. */
+export function loadPracticeProfiles(): LearnerProfileFixture[] {
+  return readProfilesWithPrefix(PRACTICE_PREFIX);
+}
+
+/** Đọc nhóm hồ sơ màu năng lực (spec 007), sắp theo `id`. */
+export function loadCompetencyProfiles(): LearnerProfileFixture[] {
+  return readProfilesWithPrefix(COMPETENCY_PREFIX);
+}
+
+/** Đọc nhóm hồ sơ lời khích lệ (spec 007), sắp theo `id`. */
+export function loadEncouragementProfiles(): LearnerProfileFixture[] {
+  return readProfilesWithPrefix(ENCOURAGEMENT_PREFIX);
+}
+
 export function loadLearnerProfile(id: string): LearnerProfileFixture {
-  const found = [...loadLearnerProfiles(), ...loadKanjiProfiles()].find((p) => p.id === id);
+  const found = [
+    ...loadLearnerProfiles(),
+    ...loadKanjiProfiles(),
+    ...loadPracticeProfiles(),
+    ...loadCompetencyProfiles(),
+    ...loadEncouragementProfiles(),
+  ].find((p) => p.id === id);
   if (!found) throw new Error(`Không có hồ sơ đại diện "${id}"`);
   return found;
 }

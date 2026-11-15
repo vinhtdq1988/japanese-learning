@@ -7,6 +7,8 @@ import 'package:japanese_api/japanese_api.dart';
 import '../../data/progress_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
+import '../competency/competency_chip.dart';
+import '../competency/competency_legend.dart';
 import '../path/scope_notice_banner.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
@@ -110,6 +112,14 @@ class _ProgressContent extends StatelessWidget {
           ],
           const SizedBox(height: 24),
           _GoalSection(goal: summary.goal, locale: locale),
+          // Năng lực theo kỹ năng/chủ đề: máy chủ cũ không trả `competency` ⇒ bỏ qua cả khối.
+          if (summary.competency != null) ...<Widget>[
+            const SizedBox(height: 24),
+            _CompetencySection(
+              competency: summary.competency!,
+              weakTopics: summary.weakTopics ?? const [],
+            ),
+          ],
           const SizedBox(height: 24),
           _WeakTopicsSection(topics: summary.weakTopics ?? const []),
           const SizedBox(height: 24),
@@ -310,6 +320,85 @@ class _GoalSection extends StatelessWidget {
   }
 }
 
+/// Dải "Năng lực theo kỹ năng" (tối đa 5 chip), danh sách chủ đề có dữ liệu (gồm mảng yếu) và chú giải
+/// (spec 007, FR-016…FR-020). Mức do máy chủ tính; client chỉ hiển thị.
+class _CompetencySection extends StatelessWidget {
+  const _CompetencySection({
+    required this.competency,
+    required this.weakTopics,
+  });
+
+  final ProgressSummaryCompetency competency;
+  final List<ProgressSummaryWeakTopicsInner> weakTopics;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    // Tên chủ đề chỉ có ở danh sách mảng yếu; chủ đề khác hiển thị theo tên kỹ năng.
+    final names = <String, String>{
+      for (final w in weakTopics)
+        if (w.topicId != null && w.name != null) w.topicId!: w.name!,
+    };
+    return Column(
+      key: const Key('progress-competency'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Text(l10n.progressCompetencyTitle, style: theme.textTheme.titleMedium),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: <Widget>[
+            for (final s in competency.skills)
+              Row(
+                key: Key('competency-skill-${s.skill.value}'),
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text(competencySkillLabel(l10n, s.skill)),
+                  const SizedBox(width: 6),
+                  CompetencyChip(
+                    level: s.level,
+                    label: competencySkillLabel(l10n, s.skill),
+                  ),
+                ],
+              ),
+          ],
+        ),
+        if (competency.topics.isNotEmpty) ...<Widget>[
+          const SizedBox(height: 16),
+          Text(
+            l10n.progressCompetencyTopics,
+            style: theme.textTheme.titleMedium,
+          ),
+          const SizedBox(height: 8),
+          for (final t in competency.topics)
+            Card(
+              child: ListTile(
+                key: Key('competency-topic-${t.topicId}'),
+                title: Text(
+                  names[t.topicId] ?? competencySkillLabel(l10n, t.skill),
+                ),
+                subtitle: t.accuracy == null
+                    ? null
+                    : Text(
+                        l10n.progressWeakAccuracy((t.accuracy! * 100).round()),
+                      ),
+                trailing: CompetencyChip(
+                  level: t.level,
+                  label:
+                      names[t.topicId] ?? competencySkillLabel(l10n, t.skill),
+                ),
+              ),
+            ),
+        ],
+        const SizedBox(height: 12),
+        const CompetencyLegend(),
+      ],
+    );
+  }
+}
+
 class _WeakTopicsSection extends StatelessWidget {
   const _WeakTopicsSection({required this.topics});
 
@@ -347,6 +436,8 @@ class _WeakTopicsSection extends StatelessWidget {
                           Skill.vocabulary => l10n.progressWeakSkillVocabulary,
                           Skill.grammar => l10n.progressWeakSkillGrammar,
                           Skill.kanji => l10n.progressWeakSkillKanji,
+                          Skill.reading => l10n.progressWeakSkillReading,
+                          Skill.writing => l10n.progressWeakSkillWriting,
                         }),
                       ),
               ),

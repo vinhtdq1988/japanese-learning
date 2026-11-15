@@ -1,0 +1,417 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-work-business",
+  "title": {
+    "vi": "Kanji công việc – kinh doanh (部 課 係)",
+    "en": "Work and business kanji (部 課 係)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "部",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "bộ phận; phần",
+        "en": "part; department"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ブ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "部長",
+          "reading": "ぶちょう",
+          "kanjiReading": "ブ",
+          "translation": {
+            "vi": "trưởng phòng",
+            "en": "department head"
+          }
+        },
+        {
+          "ja": "全部",
+          "reading": "ぜんぶ",
+          "kanjiReading": "ブ",
+          "translation": {
+            "vi": "toàn bộ",
+            "en": "all"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "課",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "phòng; bài; nhiệm vụ",
+        "en": "section; lesson"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "課長",
+          "reading": "かちょう",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "trưởng phòng ban",
+            "en": "section chief"
+          }
+        },
+        {
+          "ja": "課題",
+          "reading": "かだい",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "nhiệm vụ; đề tài",
+            "en": "assignment"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "係",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "liên quan; phụ trách",
+        "en": "relation; person in charge"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ"
+        ],
+        "kunReadings": [
+          "かか.る",
+          "かかり"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "関係",
+          "reading": "かんけい",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "quan hệ",
+            "en": "relationship"
+          }
+        },
+        {
+          "ja": "係",
+          "reading": "かかり",
+          "kanjiReading": "かかり",
+          "translation": {
+            "vi": "người phụ trách",
+            "en": "person in charge"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "部",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「部」nghĩa là gì?",
+        "en": "What does 「部」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bộ phận; phần",
+            "en": "part; department"
+          },
+          {
+            "vi": "phòng; bài; nhiệm vụ",
+            "en": "section; lesson"
+          },
+          {
+            "vi": "liên quan; phụ trách",
+            "en": "relation; person in charge"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 部 nghĩa là bộ phận; phần.",
+        "en": "Correct! 部 means part; department."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 部 nghĩa là bộ phận; phần, như trong 「部長」 (trưởng phòng).",
+        "en": "Not quite. 部 means part; department, as in 「部長」 (department head)."
+      }
+    },
+    {
+      "item": "部",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「部」 trong 「部長」 (“trưởng phòng”).",
+        "en": "Type the reading of 「部」 in 「部長」 (“department head”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぶ",
+          "ブ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 部長, 部 đọc là ぶ (âm On).",
+        "en": "Correct! In 部長, 部 is read ぶ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 部長 (trưởng phòng), 部 đọc là ぶ (âm On).",
+        "en": "In 部長 (department head), 部 is read ぶ (on'yomi)."
+      }
+    },
+    {
+      "item": "部",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「全部」(toàn bộ) đọc là gì?",
+        "en": "How is 「全部」 (all) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜんふ",
+          "ぜんぶ",
+          "ぜんか"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 全部 = ぜんぶ (toàn bộ); 部 đọc là ぶ (âm On).",
+        "en": "Correct! 全部 = ぜんぶ (all); 部 is read ぶ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "全部 đọc là ぜんぶ (toàn bộ): 部 mang âm On ぶ.",
+        "en": "全部 is read ぜんぶ (all): 部 takes the on'yomi ぶ."
+      }
+    },
+    {
+      "item": "課",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「課」nghĩa là gì?",
+        "en": "What does 「課」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "liên quan; phụ trách",
+            "en": "relation; person in charge"
+          },
+          {
+            "vi": "phòng; bài; nhiệm vụ",
+            "en": "section; lesson"
+          },
+          {
+            "vi": "bộ phận; phần",
+            "en": "part; department"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 課 nghĩa là phòng; bài; nhiệm vụ.",
+        "en": "Correct! 課 means section; lesson."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 課 nghĩa là phòng; bài; nhiệm vụ, như trong 「課長」 (trưởng phòng ban).",
+        "en": "Not quite. 課 means section; lesson, as in 「課長」 (section chief)."
+      }
+    },
+    {
+      "item": "課",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「課」 trong 「課長」 (“trưởng phòng ban”).",
+        "en": "Type the reading of 「課」 in 「課長」 (“section chief”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 課長, 課 đọc là か (âm On).",
+        "en": "Correct! In 課長, 課 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 課長 (trưởng phòng ban), 課 đọc là か (âm On).",
+        "en": "In 課長 (section chief), 課 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "課",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「課題」(nhiệm vụ; đề tài) đọc là gì?",
+        "en": "How is 「課題」 (assignment) read?"
+      },
+      "payload": {
+        "choices": [
+          "がだい",
+          "かたい",
+          "かだい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 課題 = かだい (nhiệm vụ; đề tài); 課 đọc là か (âm On).",
+        "en": "Correct! 課題 = かだい (assignment); 課 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "課題 đọc là かだい (nhiệm vụ; đề tài): 課 mang âm On か.",
+        "en": "課題 is read かだい (assignment): 課 takes the on'yomi か."
+      }
+    },
+    {
+      "item": "係",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「係」nghĩa là gì?",
+        "en": "What does 「係」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bộ phận; phần",
+            "en": "part; department"
+          },
+          {
+            "vi": "phòng; bài; nhiệm vụ",
+            "en": "section; lesson"
+          },
+          {
+            "vi": "liên quan; phụ trách",
+            "en": "relation; person in charge"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 係 nghĩa là liên quan; phụ trách.",
+        "en": "Correct! 係 means relation; person in charge."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 係 nghĩa là liên quan; phụ trách, như trong 「関係」 (quan hệ).",
+        "en": "Not quite. 係 means relation; person in charge, as in 「関係」 (relationship)."
+      }
+    },
+    {
+      "item": "係",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「係」 trong 「関係」 (“quan hệ”).",
+        "en": "Type the reading of 「係」 in 「関係」 (“relationship”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 関係, 係 đọc là けい (âm On).",
+        "en": "Correct! In 関係, 係 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 関係 (quan hệ), 係 đọc là けい (âm On).",
+        "en": "In 関係 (relationship), 係 is read けい (on'yomi)."
+      }
+    },
+    {
+      "item": "係",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「係」(người phụ trách; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「係」 (person in charge; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "かかり",
+          "けい",
+          "ぜんぶ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 係 = かかり (người phụ trách); 係 đọc là かかり (âm Kun).",
+        "en": "Correct! 係 = かかり (person in charge); 係 is read かかり (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "係 đọc là かかり (người phụ trách): 係 mang âm Kun かかり.",
+        "en": "係 is read かかり (person in charge): 係 takes the kun'yomi かかり."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "部",
+            {
+              "vi": "bộ phận; phần",
+              "en": "part; department"
+            }
+          ],
+          [
+            "課",
+            {
+              "vi": "phòng; bài; nhiệm vụ",
+              "en": "section; lesson"
+            }
+          ],
+          [
+            "係",
+            {
+              "vi": "liên quan; phụ trách",
+              "en": "relation; person in charge"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

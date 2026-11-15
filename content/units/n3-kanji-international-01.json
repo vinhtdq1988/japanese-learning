@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-international",
+  "title": {
+    "vi": "Kanji quốc tế (際 連 交 輸)",
+    "en": "International affairs kanji (際 連 交 輸)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "際",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "dịp; biên giới; quốc tế",
+        "en": "occasion; inter-"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ"
+        ],
+        "kunReadings": [
+          "きわ"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "国際",
+          "reading": "こくさい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "quốc tế",
+            "en": "international"
+          }
+        },
+        {
+          "ja": "実際",
+          "reading": "じっさい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "thực tế",
+            "en": "actually"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "連",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "nối liền; dẫn theo",
+        "en": "link; take along"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "レン"
+        ],
+        "kunReadings": [
+          "つ.れる",
+          "つ.らなる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "連絡",
+          "reading": "れんらく",
+          "kanjiReading": "レン",
+          "translation": {
+            "vi": "liên lạc",
+            "en": "contact"
+          }
+        },
+        {
+          "ja": "連れる",
+          "reading": "つれる",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "dẫn theo",
+            "en": "to take along"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "交",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "giao; trao đổi",
+        "en": "mix; exchange"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "まじ.わる",
+          "か.う",
+          "ま.じる"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "交通",
+          "reading": "こうつう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "giao thông",
+            "en": "traffic"
+          }
+        },
+        {
+          "ja": "交わる",
+          "reading": "まじわる",
+          "kanjiReading": "まじ",
+          "translation": {
+            "vi": "giao nhau; kết giao",
+            "en": "to intersect"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "輸",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "vận chuyển; xuất nhập",
+        "en": "transport; ship"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ユ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "輸入",
+          "reading": "ゆにゅう",
+          "kanjiReading": "ユ",
+          "translation": {
+            "vi": "nhập khẩu",
+            "en": "import"
+          }
+        },
+        {
+          "ja": "輸出",
+          "reading": "ゆしゅつ",
+          "kanjiReading": "ユ",
+          "translation": {
+            "vi": "xuất khẩu",
+            "en": "export"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "際",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「際」nghĩa là gì?",
+        "en": "What does 「際」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dịp; biên giới; quốc tế",
+            "en": "occasion; inter-"
+          },
+          {
+            "vi": "nối liền; dẫn theo",
+            "en": "link; take along"
+          },
+          {
+            "vi": "giao; trao đổi",
+            "en": "mix; exchange"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 際 nghĩa là dịp; biên giới; quốc tế.",
+        "en": "Correct! 際 means occasion; inter-."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 際 nghĩa là dịp; biên giới; quốc tế, như trong 「国際」 (quốc tế).",
+        "en": "Not quite. 際 means occasion; inter-, as in 「国際」 (international)."
+      }
+    },
+    {
+      "item": "際",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「際」 trong 「国際」 (“quốc tế”).",
+        "en": "Type the reading of 「際」 in 「国際」 (“international”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 国際, 際 đọc là さい (âm On).",
+        "en": "Correct! In 国際, 際 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 国際 (quốc tế), 際 đọc là さい (âm On).",
+        "en": "In 国際 (international), 際 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "際",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「実際」(thực tế) đọc là gì?",
+        "en": "How is 「実際」 (actually) read?"
+      },
+      "payload": {
+        "choices": [
+          "じっきわ",
+          "じっさい",
+          "じっざい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 実際 = じっさい (thực tế); 際 đọc là さい (âm On).",
+        "en": "Correct! 実際 = じっさい (actually); 際 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "実際 đọc là じっさい (thực tế): 際 mang âm On さい.",
+        "en": "実際 is read じっさい (actually): 際 takes the on'yomi さい."
+      }
+    },
+    {
+      "item": "連",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「連」nghĩa là gì?",
+        "en": "What does 「連」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giao; trao đổi",
+            "en": "mix; exchange"
+          },
+          {
+            "vi": "nối liền; dẫn theo",
+            "en": "link; take along"
+          },
+          {
+            "vi": "vận chuyển; xuất nhập",
+            "en": "transport; ship"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 連 nghĩa là nối liền; dẫn theo.",
+        "en": "Correct! 連 means link; take along."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 連 nghĩa là nối liền; dẫn theo, như trong 「連絡」 (liên lạc).",
+        "en": "Not quite. 連 means link; take along, as in 「連絡」 (contact)."
+      }
+    },
+    {
+      "item": "連",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「連」 trong 「連絡」 (“liên lạc”).",
+        "en": "Type the reading of 「連」 in 「連絡」 (“contact”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "れん",
+          "レン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 連絡, 連 đọc là れん (âm On).",
+        "en": "Correct! In 連絡, 連 is read れん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 連絡 (liên lạc), 連 đọc là れん (âm On).",
+        "en": "In 連絡 (contact), 連 is read れん (on'yomi)."
+      }
+    },
+    {
+      "item": "連",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「連れる」(dẫn theo) đọc là gì?",
+        "en": "How is 「連れる」 (to take along) read?"
+      },
+      "payload": {
+        "choices": [
+          "れんれる",
+          "まじわる",
+          "つれる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 連れる = つれる (dẫn theo); 連 đọc là つ (âm Kun).",
+        "en": "Correct! 連れる = つれる (to take along); 連 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "連れる đọc là つれる (dẫn theo): 連 mang âm Kun つ.",
+        "en": "連れる is read つれる (to take along): 連 takes the kun'yomi つ."
+      }
+    },
+    {
+      "item": "交",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「交」nghĩa là gì?",
+        "en": "What does 「交」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vận chuyển; xuất nhập",
+            "en": "transport; ship"
+          },
+          {
+            "vi": "dịp; biên giới; quốc tế",
+            "en": "occasion; inter-"
+          },
+          {
+            "vi": "giao; trao đổi",
+            "en": "mix; exchange"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 交 nghĩa là giao; trao đổi.",
+        "en": "Correct! 交 means mix; exchange."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 交 nghĩa là giao; trao đổi, như trong 「交通」 (giao thông).",
+        "en": "Not quite. 交 means mix; exchange, as in 「交通」 (traffic)."
+      }
+    },
+    {
+      "item": "交",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「交」 trong 「交通」 (“giao thông”).",
+        "en": "Type the reading of 「交」 in 「交通」 (“traffic”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 交通, 交 đọc là こう (âm On).",
+        "en": "Correct! In 交通, 交 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 交通 (giao thông), 交 đọc là こう (âm On).",
+        "en": "In 交通 (traffic), 交 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "交",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「交わる」(giao nhau; kết giao) đọc là gì?",
+        "en": "How is 「交わる」 (to intersect) read?"
+      },
+      "payload": {
+        "choices": [
+          "まじわる",
+          "こうわる",
+          "ゆにゅう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 交わる = まじわる (giao nhau; kết giao); 交 đọc là まじ (âm Kun).",
+        "en": "Correct! 交わる = まじわる (to intersect); 交 is read まじ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "交わる đọc là まじわる (giao nhau; kết giao): 交 mang âm Kun まじ.",
+        "en": "交わる is read まじわる (to intersect): 交 takes the kun'yomi まじ."
+      }
+    },
+    {
+      "item": "輸",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「輸」nghĩa là gì?",
+        "en": "What does 「輸」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vận chuyển; xuất nhập",
+            "en": "transport; ship"
+          },
+          {
+            "vi": "dịp; biên giới; quốc tế",
+            "en": "occasion; inter-"
+          },
+          {
+            "vi": "nối liền; dẫn theo",
+            "en": "link; take along"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 輸 nghĩa là vận chuyển; xuất nhập.",
+        "en": "Correct! 輸 means transport; ship."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 輸 nghĩa là vận chuyển; xuất nhập, như trong 「輸入」 (nhập khẩu).",
+        "en": "Not quite. 輸 means transport; ship, as in 「輸入」 (import)."
+      }
+    },
+    {
+      "item": "輸",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「輸」 trong 「輸入」 (“nhập khẩu”).",
+        "en": "Type the reading of 「輸」 in 「輸入」 (“import”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゆ",
+          "ユ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 輸入, 輸 đọc là ゆ (âm On).",
+        "en": "Correct! In 輸入, 輸 is read ゆ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 輸入 (nhập khẩu), 輸 đọc là ゆ (âm On).",
+        "en": "In 輸入 (import), 輸 is read ゆ (on'yomi)."
+      }
+    },
+    {
+      "item": "輸",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「輸出」(xuất khẩu) đọc là gì?",
+        "en": "How is 「輸出」 (export) read?"
+      },
+      "payload": {
+        "choices": [
+          "ゆじゅつ",
+          "ゆしゅつ",
+          "きわしゅつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 輸出 = ゆしゅつ (xuất khẩu); 輸 đọc là ゆ (âm On).",
+        "en": "Correct! 輸出 = ゆしゅつ (export); 輸 is read ゆ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "輸出 đọc là ゆしゅつ (xuất khẩu): 輸 mang âm On ゆ.",
+        "en": "輸出 is read ゆしゅつ (export): 輸 takes the on'yomi ゆ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "際",
+            {
+              "vi": "dịp; biên giới; quốc tế",
+              "en": "occasion; inter-"
+            }
+          ],
+          [
+            "連",
+            {
+              "vi": "nối liền; dẫn theo",
+              "en": "link; take along"
+            }
+          ],
+          [
+            "交",
+            {
+              "vi": "giao; trao đổi",
+              "en": "mix; exchange"
+            }
+          ],
+          [
+            "輸",
+            {
+              "vi": "vận chuyển; xuất nhập",
+              "en": "transport; ship"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

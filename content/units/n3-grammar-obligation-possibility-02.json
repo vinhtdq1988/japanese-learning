@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-obligation-possibility",
+  "title": {
+    "vi": "Nghĩa vụ (2): 〜ないわけにはいかない và 〜わけにはいかない",
+    "en": "Obligation (2): 〜ないわけにはいかない and 〜わけにはいかない"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ないわけにはいかない",
+      "meaning": {
+        "vi": "Không thể không ~",
+        "en": "Cannot help but ~; must ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể ない + わけにはいかない. Vì lý do xã hội, đạo lý, hoàn cảnh nên bắt buộc phải làm (phủ định kép). Ý nghĩa gần 〜なければならない nhưng nhấn mạnh hoàn cảnh không cho phép làm khác.",
+        "en": "Usage: verb ない-form + わけにはいかない. For social, moral or situational reasons one must do it (a double negative). Close to 〜なければならない but stresses that circumstances allow no alternative."
+      },
+      "examples": [
+        {
+          "ja": "明日は試験なので、勉強しないわけにはいきません。",
+          "reading": "あしたはしけんなので、べんきょうしないわけにはいきません。",
+          "translation": {
+            "vi": "Ngày mai thi nên không thể không học.",
+            "en": "The exam is tomorrow, so I cannot avoid studying."
+          }
+        },
+        {
+          "ja": "お世話になった人に、お礼を言わないわけにはいかない。",
+          "reading": "おせわになったひとに、おれいをいわないわけにはいかない。",
+          "translation": {
+            "vi": "Với người đã giúp đỡ mình thì không thể không cảm ơn.",
+            "en": "I cannot not thank the person who helped me."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-081"
+    },
+    {
+      "japanese": "〜わけにはいかない",
+      "meaning": {
+        "vi": "Không thể ~ (vì lý do xã hội)",
+        "en": "Cannot ~ (for social/moral reasons)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + わけにはいかない. Không thể làm vì đạo lý, trách nhiệm hay hoàn cảnh dù có thể làm về mặt khả năng. Khác 〜できない (không có khả năng) và 〜てはいけない (cấm).",
+        "en": "Usage: verb dictionary form + わけにはいかない. One cannot do it because of morality, responsibility or circumstances, even if physically able. Unlike 〜できない (no ability) and 〜てはいけない (prohibition)."
+      },
+      "examples": [
+        {
+          "ja": "大切な会議があるので、休むわけにはいきません。",
+          "reading": "たいせつなかいぎがあるので、やすむわけにはいきません。",
+          "translation": {
+            "vi": "Vì có cuộc họp quan trọng nên tôi không thể nghỉ.",
+            "en": "There is an important meeting, so I cannot take a day off."
+          }
+        },
+        {
+          "ja": "車で来たので、お酒を飲むわけにはいきません。",
+          "reading": "くるまできたので、おさけをのむわけにはいきません。",
+          "translation": {
+            "vi": "Vì đi xe đến nên tôi không thể uống rượu.",
+            "en": "I came by car, so I cannot drink alcohol."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-082"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ないわけにはいかない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日は試験なので、勉強し（　）わけにはいきません。",
+        "en": "Choose the correct option for the blank:\n明日は試験なので、勉強し（　）わけにはいきません。"
+      },
+      "payload": {
+        "choices": [
+          "なかった",
+          "なくて",
+          "ない",
+          "ず"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜ないわけにはいかない」 dùng thể ない: 「勉強しないわけには」.",
+        "en": "Correct! 「〜ないわけにはいかない」 takes the ない-form: 「勉強しないわけには」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜ないわけにはいかない」 dùng thể ない: 「勉強しないわけには」.",
+        "en": "Not quite. 「〜ないわけにはいかない」 takes the ない-form: 「勉強しないわけには」."
+      }
+    },
+    {
+      "item": "〜ないわけにはいかない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお礼を言わ___わけにはいかない。",
+        "en": "Choose the correct option for the blank:\nお礼を言わ___わけにはいかない。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ない"
+        ],
+        "hint": "〜ない"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể không cảm ơn: 「言わないわけにはいかない」.",
+        "en": "Correct! Cannot not say thanks: 「言わないわけにはいかない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể không cảm ơn: 「言わないわけにはいかない」.",
+        "en": "Not quite. Cannot not say thanks: 「言わないわけにはいかない」."
+      }
+    },
+    {
+      "item": "〜ないわけにはいかない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n上司に誘われたので、パーティーに行か（　）。",
+        "en": "Choose the pattern that best fits the context:\n上司に誘われたので、パーティーに行か（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ざるをえない",
+          "ないわけにはいかない",
+          "わけにはいかない",
+          "ようがない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể từ chối (bắt buộc phải đi vì xã giao): 「行かないわけにはいかない」.",
+        "en": "Correct! Cannot refuse (must go for social reasons): 「行かないわけにはいかない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể từ chối (bắt buộc phải đi vì xã giao): 「行かないわけにはいかない」.",
+        "en": "Not quite. Cannot refuse (must go for social reasons): 「行かないわけにはいかない」."
+      }
+    },
+    {
+      "item": "〜ないわけにはいかない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "約束した以上、行かないわけにはいきません。",
+          "約束した以上、行かないでわけにはいきません。",
+          "約束した以上、行かなわけにはいきません。",
+          "約束した以上、行かなくわけにはいきません。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dạng thể ない đầy đủ: 「行かないわけにはいかない」.",
+        "en": "Correct! The full ない-form: 「行かないわけにはいかない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dạng thể ない đầy đủ: 「行かないわけにはいかない」.",
+        "en": "Not quite. The full ない-form: 「行かないわけにはいかない」."
+      }
+    },
+    {
+      "item": "〜わけにはいかない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n大切な会議があるので、休む（　）にはいきません。",
+        "en": "Choose the correct option for the blank:\n大切な会議があるので、休む（　）にはいきません。"
+      },
+      "payload": {
+        "choices": [
+          "こと",
+          "もの",
+          "ため",
+          "わけ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể nghỉ vì lý do hoàn cảnh: 「休むわけにはいきません」.",
+        "en": "Correct! Cannot take a day off for situational reasons: 「休むわけにはいきません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể nghỉ vì lý do hoàn cảnh: 「休むわけにはいきません」.",
+        "en": "Not quite. Cannot take a day off for situational reasons: 「休むわけにはいきません」."
+      }
+    },
+    {
+      "item": "〜わけにはいかない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n車で来たので、お酒を飲む___にはいきません。",
+        "en": "Choose the correct option for the blank:\n車で来たので、お酒を飲む___にはいきません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "わけ"
+        ],
+        "hint": "〜わけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể uống vì lái xe: 「飲むわけにはいきません」.",
+        "en": "Correct! Cannot drink because of driving: 「飲むわけにはいきません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể uống vì lái xe: 「飲むわけにはいきません」.",
+        "en": "Not quite. Cannot drink because of driving: 「飲むわけにはいきません」."
+      }
+    },
+    {
+      "item": "〜わけにはいかない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n財布を落としたが、この状況では探しに行く（　）。",
+        "en": "Choose the pattern that best fits the context:\n財布を落としたが、この状況では探しに行く（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ことはない",
+          "ずにはいられない",
+          "わけにはいかない",
+          "しかない"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể đi tìm vì hoàn cảnh không cho phép: 「行くわけにはいかない」.",
+        "en": "Correct! Cannot go looking because circumstances do not allow it: 「行くわけにはいかない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể đi tìm vì hoàn cảnh không cho phép: 「行くわけにはいかない」.",
+        "en": "Not quite. Cannot go looking because circumstances do not allow it: 「行くわけにはいかない」."
+      }
+    },
+    {
+      "item": "〜わけにはいかない",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n大切な会議が　＿　＿　★　＿　。\n（あるので／休む／わけには／いきません）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n大切な会議が　＿　＿　★　＿　。\n（あるので／休む／わけには／いきません）"
+      },
+      "payload": {
+        "choices": [
+          "あるので",
+          "わけには",
+          "休む",
+          "いきません"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「大切な会議があるので休むわけにはいきません。」; ô ★ (thứ ba) là 「わけには」.",
+        "en": "Correct! The correct sentence is 「大切な会議があるので休むわけにはいきません。」; the ★ (third) slot is 「わけには」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「大切な会議があるので休むわけにはいきません。」; ô ★ (thứ ba) là 「わけには」.",
+        "en": "Not quite. The correct sentence is 「大切な会議があるので休むわけにはいきません。」; the ★ (third) slot is 「わけには」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ないわけにはいかない",
+            {
+              "vi": "Không thể không ~",
+              "en": "Cannot help but ~; must ~"
+            }
+          ],
+          [
+            "〜わけにはいかない",
+            {
+              "vi": "Không thể ~ (vì lý do xã hội)",
+              "en": "Cannot ~ (for social/moral reasons)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (新 古 広 近)",
+    "en": "Adjectives and states kanji (新 古 広 近)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "新",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "mới",
+        "en": "new"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "あたら.しい",
+          "あら.た",
+          "にい"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "新聞",
+          "reading": "しんぶん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "báo",
+            "en": "newspaper"
+          }
+        },
+        {
+          "ja": "新しい",
+          "reading": "あたらしい",
+          "kanjiReading": "あたら",
+          "translation": {
+            "vi": "mới",
+            "en": "new"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "古",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "cũ",
+        "en": "old"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コ"
+        ],
+        "kunReadings": [
+          "ふる.い"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "中古",
+          "reading": "ちゅうこ",
+          "kanjiReading": "コ",
+          "translation": {
+            "vi": "đồ cũ",
+            "en": "secondhand"
+          }
+        },
+        {
+          "ja": "古い",
+          "reading": "ふるい",
+          "kanjiReading": "ふる",
+          "translation": {
+            "vi": "cũ",
+            "en": "old"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "広",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "rộng",
+        "en": "wide"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "ひろ.い",
+          "ひろ.がる"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "広告",
+          "reading": "こうこく",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "quảng cáo",
+            "en": "advertisement"
+          }
+        },
+        {
+          "ja": "広い",
+          "reading": "ひろい",
+          "kanjiReading": "ひろ",
+          "translation": {
+            "vi": "rộng",
+            "en": "wide"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "近",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "gần",
+        "en": "near"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キン"
+        ],
+        "kunReadings": [
+          "ちか.い"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "近所",
+          "reading": "きんじょ",
+          "kanjiReading": "キン",
+          "translation": {
+            "vi": "hàng xóm; vùng lân cận",
+            "en": "neighborhood"
+          }
+        },
+        {
+          "ja": "近い",
+          "reading": "ちかい",
+          "kanjiReading": "ちか",
+          "translation": {
+            "vi": "gần",
+            "en": "near"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "新",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「新」nghĩa là gì?",
+        "en": "What does 「新」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mới",
+            "en": "new"
+          },
+          {
+            "vi": "cũ",
+            "en": "old"
+          },
+          {
+            "vi": "rộng",
+            "en": "wide"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 新 nghĩa là mới.",
+        "en": "Correct! 新 means new."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 新 nghĩa là mới, như trong 「新聞」 (báo).",
+        "en": "Not quite. 新 means new, as in 「新聞」 (newspaper)."
+      }
+    },
+    {
+      "item": "新",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「新」 trong 「新聞」 (“báo”).",
+        "en": "Type the reading of 「新」 in 「新聞」 (“newspaper”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 新聞, 新 đọc là しん (âm On).",
+        "en": "Correct! In 新聞, 新 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 新聞 (báo), 新 đọc là しん (âm On).",
+        "en": "In 新聞 (newspaper), 新 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "新",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「新しい」(mới) đọc là gì?",
+        "en": "How is 「新しい」 (new) read?"
+      },
+      "payload": {
+        "choices": [
+          "しんしい",
+          "あたらしい",
+          "ちゅうこ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 新しい = あたらしい (mới); 新 đọc là あたら (âm Kun).",
+        "en": "Correct! 新しい = あたらしい (new); 新 is read あたら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "新しい đọc là あたらしい (mới): 新 mang âm Kun あたら.",
+        "en": "新しい is read あたらしい (new): 新 takes the kun'yomi あたら."
+      }
+    },
+    {
+      "item": "古",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「古」nghĩa là gì?",
+        "en": "What does 「古」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rộng",
+            "en": "wide"
+          },
+          {
+            "vi": "cũ",
+            "en": "old"
+          },
+          {
+            "vi": "gần",
+            "en": "near"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 古 nghĩa là cũ.",
+        "en": "Correct! 古 means old."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 古 nghĩa là cũ, như trong 「中古」 (đồ cũ).",
+        "en": "Not quite. 古 means old, as in 「中古」 (secondhand)."
+      }
+    },
+    {
+      "item": "古",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「古」 trong 「中古」 (“đồ cũ”).",
+        "en": "Type the reading of 「古」 in 「中古」 (“secondhand”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こ",
+          "コ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 中古, 古 đọc là こ (âm On).",
+        "en": "Correct! In 中古, 古 is read こ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 中古 (đồ cũ), 古 đọc là こ (âm On).",
+        "en": "In 中古 (secondhand), 古 is read こ (on'yomi)."
+      }
+    },
+    {
+      "item": "古",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「古い」(cũ) đọc là gì?",
+        "en": "How is 「古い」 (old) read?"
+      },
+      "payload": {
+        "choices": [
+          "こい",
+          "ひろい",
+          "ふるい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 古い = ふるい (cũ); 古 đọc là ふる (âm Kun).",
+        "en": "Correct! 古い = ふるい (old); 古 is read ふる (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "古い đọc là ふるい (cũ): 古 mang âm Kun ふる.",
+        "en": "古い is read ふるい (old): 古 takes the kun'yomi ふる."
+      }
+    },
+    {
+      "item": "広",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「広」nghĩa là gì?",
+        "en": "What does 「広」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gần",
+            "en": "near"
+          },
+          {
+            "vi": "mới",
+            "en": "new"
+          },
+          {
+            "vi": "rộng",
+            "en": "wide"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 広 nghĩa là rộng.",
+        "en": "Correct! 広 means wide."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 広 nghĩa là rộng, như trong 「広告」 (quảng cáo).",
+        "en": "Not quite. 広 means wide, as in 「広告」 (advertisement)."
+      }
+    },
+    {
+      "item": "広",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「広」 trong 「広告」 (“quảng cáo”).",
+        "en": "Type the reading of 「広」 in 「広告」 (“advertisement”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 広告, 広 đọc là こう (âm On).",
+        "en": "Correct! In 広告, 広 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 広告 (quảng cáo), 広 đọc là こう (âm On).",
+        "en": "In 広告 (advertisement), 広 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "広",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「広い」(rộng) đọc là gì?",
+        "en": "How is 「広い」 (wide) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひろい",
+          "こうい",
+          "ちかい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 広い = ひろい (rộng); 広 đọc là ひろ (âm Kun).",
+        "en": "Correct! 広い = ひろい (wide); 広 is read ひろ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "広い đọc là ひろい (rộng): 広 mang âm Kun ひろ.",
+        "en": "広い is read ひろい (wide): 広 takes the kun'yomi ひろ."
+      }
+    },
+    {
+      "item": "近",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「近」nghĩa là gì?",
+        "en": "What does 「近」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gần",
+            "en": "near"
+          },
+          {
+            "vi": "mới",
+            "en": "new"
+          },
+          {
+            "vi": "cũ",
+            "en": "old"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 近 nghĩa là gần.",
+        "en": "Correct! 近 means near."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 近 nghĩa là gần, như trong 「近所」 (hàng xóm; vùng lân cận).",
+        "en": "Not quite. 近 means near, as in 「近所」 (neighborhood)."
+      }
+    },
+    {
+      "item": "近",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「近」 trong 「近所」 (“hàng xóm; vùng lân cận”).",
+        "en": "Type the reading of 「近」 in 「近所」 (“neighborhood”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きん",
+          "キン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 近所, 近 đọc là きん (âm On).",
+        "en": "Correct! In 近所, 近 is read きん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 近所 (hàng xóm; vùng lân cận), 近 đọc là きん (âm On).",
+        "en": "In 近所 (neighborhood), 近 is read きん (on'yomi)."
+      }
+    },
+    {
+      "item": "近",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「近い」(gần) đọc là gì?",
+        "en": "How is 「近い」 (near) read?"
+      },
+      "payload": {
+        "choices": [
+          "きんい",
+          "ちかい",
+          "ふるい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 近い = ちかい (gần); 近 đọc là ちか (âm Kun).",
+        "en": "Correct! 近い = ちかい (near); 近 is read ちか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "近い đọc là ちかい (gần): 近 mang âm Kun ちか.",
+        "en": "近い is read ちかい (near): 近 takes the kun'yomi ちか."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "新",
+            {
+              "vi": "mới",
+              "en": "new"
+            }
+          ],
+          [
+            "古",
+            {
+              "vi": "cũ",
+              "en": "old"
+            }
+          ],
+          [
+            "広",
+            {
+              "vi": "rộng",
+              "en": "wide"
+            }
+          ],
+          [
+            "近",
+            {
+              "vi": "gần",
+              "en": "near"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

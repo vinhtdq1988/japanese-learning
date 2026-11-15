@@ -11,6 +11,11 @@ import {
 import { findUserById } from '../db/repositories/users.js';
 import type { ProfileUpdateInput } from '../domain/profile-validation.js';
 import { CLASS_LOCKED_PROFILE_FIELDS } from '../domain/org-types.js';
+import {
+  isPracticeEligible,
+  newlyAddedPractice,
+  PRACTICE_LOCKED_MESSAGE,
+} from '../domain/practice.js';
 import { AppError, type AccountStatus, type Role } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
 import { applyEmailChange, prepareEmailChange } from './account.js';
@@ -237,6 +242,15 @@ export async function updateMe(
   }
 
   const skillsAfter = input.skills ?? profile.skills;
+  // Luyện đọc/viết (spec 007, data-model §3.1): chỉ THÊM MỚI khi phút sau cập nhật ≥ 30. Giá trị đã lưu giữ
+  // nguyên khi hạ phút (không xóa, chỉ bị lọc khi lập kế hoạch) và `GET /me` trả đúng giá trị đã lưu (I4, I10).
+  const minutesAfter = input.dailyMinutes ?? profile.dailyMinutes;
+  if (
+    newlyAddedPractice(skillsAfter, profile.skills).length > 0 &&
+    !isPracticeEligible(minutesAfter)
+  ) {
+    throw validationFailed({ skills: PRACTICE_LOCKED_MESSAGE });
+  }
   const next = resolvePathFields(deps, profile, input, skillsAfter);
   const now = deps.clock.now();
   // Bỏ kỹ năng đang ưu tiên khỏi `skills` thì ưu tiên tự về null (trừ khi request đặt ưu tiên mới hợp lệ).

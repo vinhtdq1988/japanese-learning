@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-hobbies-sports",
+  "title": {
+    "vi": "Cuộc thi, âm nhạc và văn hóa",
+    "en": "Contests, music and culture"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "大会",
+      "reading": "たいかい",
+      "meaning": {
+        "vi": "Đại hội; cuộc thi (quy mô lớn)",
+        "en": "Tournament; competition"
+      },
+      "examples": [
+        {
+          "ja": "来月、市の水泳大会があります。",
+          "reading": "らいげつ、しのすいえいたいかいがあります。",
+          "translation": {
+            "vi": "Tháng sau có đại hội bơi lội của thành phố.",
+            "en": "Next month there is a swimming tournament in the city."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "楽しむ",
+      "reading": "たのしむ",
+      "meaning": {
+        "vi": "Tận hưởng; vui thú",
+        "en": "To enjoy"
+      },
+      "examples": [
+        {
+          "ja": "旅行では、おいしい物を食べて、景色を楽しむつもりです。",
+          "reading": "りょこうでは、おいしいものをたべて、けしきをたのしむつもりです。",
+          "translation": {
+            "vi": "Trong chuyến du lịch, tôi định ăn đồ ngon và thưởng thức phong cảnh.",
+            "en": "On the trip, I intend to eat good food and enjoy the scenery."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "遊園地",
+      "reading": "ゆうえんち",
+      "meaning": {
+        "vi": "Công viên giải trí",
+        "en": "Amusement park"
+      },
+      "examples": [
+        {
+          "ja": "日曜日に、子どもを連れて遊園地へ行きます。",
+          "reading": "にちようびに、こどもをつれてゆうえんちへいきます。",
+          "translation": {
+            "vi": "Chủ nhật tôi dẫn con đến công viên giải trí.",
+            "en": "On Sunday I take my children to the amusement park."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ピアノ",
+      "reading": "ピアノ",
+      "meaning": {
+        "vi": "Đàn piano",
+        "en": "Piano"
+      },
+      "examples": [
+        {
+          "ja": "姉は、子どものころからピアノを習っています。",
+          "reading": "あねは、こどものころからピアノをならっています。",
+          "translation": {
+            "vi": "Chị gái tôi học piano từ nhỏ.",
+            "en": "My older sister has been learning the piano since she was a child."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "文化",
+      "reading": "ぶんか",
+      "meaning": {
+        "vi": "Văn hóa",
+        "en": "Culture"
+      },
+      "examples": [
+        {
+          "ja": "外国に住むと、その国の文化がよくわかります。",
+          "reading": "がいこくにすむと、そのくにのぶんかがよくわかります。",
+          "translation": {
+            "vi": "Sống ở nước ngoài thì hiểu rõ văn hóa của nước đó.",
+            "en": "If you live abroad, you come to understand that country's culture well."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "文学",
+      "reading": "ぶんがく",
+      "meaning": {
+        "vi": "Văn học",
+        "en": "Literature"
+      },
+      "examples": [
+        {
+          "ja": "この作品は、日本の文学の中でも有名です。",
+          "reading": "このさくひんは、にほんのぶんがくのなかでもゆうめいです。",
+          "translation": {
+            "vi": "Tác phẩm này nổi tiếng ngay cả trong nền văn học Nhật Bản.",
+            "en": "This work is famous even among Japanese literature."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "大会",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来月、市の水泳（　）があります。 — Nghĩa của câu: “Tháng sau có đại hội bơi lội của thành phố.”",
+        "en": "Choose the word that fits the blank: 来月、市の水泳（　）があります。 — Meaning of the sentence: “Next month there is a swimming tournament in the city.”"
+      },
+      "payload": {
+        "choices": [
+          "大会",
+          "遊園地",
+          "ピアノ",
+          "文化"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大会」(Đại hội; cuộc thi (quy mô lớn)) hợp nghĩa câu này: “Tháng sau có đại hội bơi lội của thành phố.”",
+        "en": "Correct! 「大会」(Tournament; competition) fits this sentence: “Next month there is a swimming tournament in the city.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng sau có đại hội bơi lội của thành phố.”, nên cần 「大会」(Đại hội; cuộc thi (quy mô lớn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Next month there is a swimming tournament in the city.”, so it needs 「大会」(Tournament; competition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "楽しむ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行では、おいしい物を食べて、景色を（　）つもりです。 — Nghĩa của câu: “Trong chuyến du lịch, tôi định ăn đồ ngon và thưởng thức phong cảnh.”",
+        "en": "Choose the word that fits the blank: 旅行では、おいしい物を食べて、景色を（　）つもりです。 — Meaning of the sentence: “On the trip, I intend to eat good food and enjoy the scenery.”"
+      },
+      "payload": {
+        "choices": [
+          "大会",
+          "楽しむ",
+          "文学",
+          "ピアノ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「楽しむ」(Tận hưởng; vui thú) hợp nghĩa câu này: “Trong chuyến du lịch, tôi định ăn đồ ngon và thưởng thức phong cảnh.”",
+        "en": "Correct! 「楽しむ」(To enjoy) fits this sentence: “On the trip, I intend to eat good food and enjoy the scenery.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong chuyến du lịch, tôi định ăn đồ ngon và thưởng thức phong cảnh.”, nên cần 「楽しむ」(Tận hưởng; vui thú); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On the trip, I intend to eat good food and enjoy the scenery.”, so it needs 「楽しむ」(To enjoy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "遊園地",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日曜日に、子どもを連れて（　）へ行きます。 — Nghĩa của câu: “Chủ nhật tôi dẫn con đến công viên giải trí.”",
+        "en": "Choose the word that fits the blank: 日曜日に、子どもを連れて（　）へ行きます。 — Meaning of the sentence: “On Sunday I take my children to the amusement park.”"
+      },
+      "payload": {
+        "choices": [
+          "大会",
+          "文化",
+          "遊園地",
+          "文学"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「遊園地」(Công viên giải trí) hợp nghĩa câu này: “Chủ nhật tôi dẫn con đến công viên giải trí.”",
+        "en": "Correct! 「遊園地」(Amusement park) fits this sentence: “On Sunday I take my children to the amusement park.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chủ nhật tôi dẫn con đến công viên giải trí.”, nên cần 「遊園地」(Công viên giải trí); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On Sunday I take my children to the amusement park.”, so it needs 「遊園地」(Amusement park); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ピアノ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 姉は、子どものころから（　）を習っています。 — Nghĩa của câu: “Chị gái tôi học piano từ nhỏ.”",
+        "en": "Choose the word that fits the blank: 姉は、子どものころから（　）を習っています。 — Meaning of the sentence: “My older sister has been learning the piano since she was a child.”"
+      },
+      "payload": {
+        "choices": [
+          "遊園地",
+          "大会",
+          "文化",
+          "ピアノ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ピアノ」(Đàn piano) hợp nghĩa câu này: “Chị gái tôi học piano từ nhỏ.”",
+        "en": "Correct! 「ピアノ」(Piano) fits this sentence: “My older sister has been learning the piano since she was a child.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chị gái tôi học piano từ nhỏ.”, nên cần 「ピアノ」(Đàn piano); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older sister has been learning the piano since she was a child.”, so it needs 「ピアノ」(Piano); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "文化",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 外国に住むと、その国の（　）がよくわかります。 — Nghĩa của câu: “Sống ở nước ngoài thì hiểu rõ văn hóa của nước đó.”",
+        "en": "Choose the word that fits the blank: 外国に住むと、その国の（　）がよくわかります。 — Meaning of the sentence: “If you live abroad, you come to understand that country's culture well.”"
+      },
+      "payload": {
+        "choices": [
+          "文化",
+          "楽しむ",
+          "ピアノ",
+          "遊園地"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文化」(Văn hóa) hợp nghĩa câu này: “Sống ở nước ngoài thì hiểu rõ văn hóa của nước đó.”",
+        "en": "Correct! 「文化」(Culture) fits this sentence: “If you live abroad, you come to understand that country's culture well.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sống ở nước ngoài thì hiểu rõ văn hóa của nước đó.”, nên cần 「文化」(Văn hóa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you live abroad, you come to understand that country's culture well.”, so it needs 「文化」(Culture); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "文学",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この作品は、日本の（　）の中でも有名です。 — Nghĩa của câu: “Tác phẩm này nổi tiếng ngay cả trong nền văn học Nhật Bản.”",
+        "en": "Choose the word that fits the blank: この作品は、日本の（　）の中でも有名です。 — Meaning of the sentence: “This work is famous even among Japanese literature.”"
+      },
+      "payload": {
+        "choices": [
+          "大会",
+          "文学",
+          "楽しむ",
+          "ピアノ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文学」(Văn học) hợp nghĩa câu này: “Tác phẩm này nổi tiếng ngay cả trong nền văn học Nhật Bản.”",
+        "en": "Correct! 「文学」(Literature) fits this sentence: “This work is famous even among Japanese literature.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tác phẩm này nổi tiếng ngay cả trong nền văn học Nhật Bản.”, nên cần 「文学」(Văn học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This work is famous even among Japanese literature.”, so it needs 「文学」(Literature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大会",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 来月、市の水泳「大会」があります。",
+        "en": "Choose the correct reading of the word in 「」: 来月、市の水泳「大会」があります。"
+      },
+      "payload": {
+        "choices": [
+          "たのしむ",
+          "たいかい",
+          "ぶんがく",
+          "ゆうえんち"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大会」 đọc là 「たいかい」, nghĩa là Đại hội; cuộc thi (quy mô lớn).",
+        "en": "Correct! 「大会」 is read 「たいかい」 and means Tournament; competition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「大会」 đọc là 「たいかい」 (Đại hội; cuộc thi (quy mô lớn)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「大会」 is read 「たいかい」 (Tournament; competition); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "遊園地",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 日曜日に、子どもを連れて「遊園地」へ行きます。",
+        "en": "Choose the correct reading of the word in 「」: 日曜日に、子どもを連れて「遊園地」へ行きます。"
+      },
+      "payload": {
+        "choices": [
+          "ぶんか",
+          "たいかい",
+          "ゆうえんち",
+          "たのしむ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「遊園地」 đọc là 「ゆうえんち」, nghĩa là Công viên giải trí.",
+        "en": "Correct! 「遊園地」 is read 「ゆうえんち」 and means Amusement park."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「遊園地」 đọc là 「ゆうえんち」 (Công viên giải trí); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「遊園地」 is read 「ゆうえんち」 (Amusement park); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "文学",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この作品は、日本の「ぶんがく」の中でも有名です。",
+        "en": "Choose the correct way to write the word in 「」: この作品は、日本の「ぶんがく」の中でも有名です。"
+      },
+      "payload": {
+        "choices": [
+          "文化",
+          "楽しむ",
+          "文学",
+          "大会"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぶんがく」 viết là 「文学」, nghĩa là Văn học.",
+        "en": "Correct! 「ぶんがく」 is written 「文学」 and means Literature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ぶんがく」 viết là 「文学」 (Văn học); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ぶんがく」 is written 「文学」 (Literature); the other words are read differently."
+      }
+    }
+  ]
+}

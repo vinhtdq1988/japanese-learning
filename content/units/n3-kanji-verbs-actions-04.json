@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (渡 失 登 存)",
+    "en": "Verbs and actions kanji (渡 失 登 存)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2830,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "渡",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "qua; đưa; trao",
+        "en": "cross; hand over"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ト"
+        ],
+        "kunReadings": [
+          "わた.る",
+          "わた.す"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "渡航",
+          "reading": "とこう",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "đi nước ngoài",
+            "en": "overseas travel"
+          }
+        },
+        {
+          "ja": "渡す",
+          "reading": "わたす",
+          "kanjiReading": "わた",
+          "translation": {
+            "vi": "trao; đưa",
+            "en": "to hand over"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "失",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "mất; thất",
+        "en": "lose; fail"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シツ"
+        ],
+        "kunReadings": [
+          "うしな.う"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "失礼",
+          "reading": "しつれい",
+          "kanjiReading": "シツ",
+          "translation": {
+            "vi": "thất lễ; xin lỗi",
+            "en": "rudeness"
+          }
+        },
+        {
+          "ja": "失う",
+          "reading": "うしなう",
+          "kanjiReading": "うしな",
+          "translation": {
+            "vi": "đánh mất",
+            "en": "to lose"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "登",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "leo; đăng",
+        "en": "climb; register"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ",
+          "ト"
+        ],
+        "kunReadings": [
+          "のぼ.る"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "登録",
+          "reading": "とうろく",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "đăng ký",
+            "en": "registration"
+          }
+        },
+        {
+          "ja": "登山",
+          "reading": "とざん",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "leo núi",
+            "en": "mountain climbing"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "存",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "tồn tại; biết",
+        "en": "exist; know"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソン",
+          "ゾン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "存在",
+          "reading": "そんざい",
+          "kanjiReading": "ソン",
+          "translation": {
+            "vi": "sự tồn tại",
+            "en": "existence"
+          }
+        },
+        {
+          "ja": "保存",
+          "reading": "ほぞん",
+          "kanjiReading": "ゾン",
+          "translation": {
+            "vi": "lưu giữ",
+            "en": "preservation"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "渡",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「渡」nghĩa là gì?",
+        "en": "What does 「渡」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "qua; đưa; trao",
+            "en": "cross; hand over"
+          },
+          {
+            "vi": "mất; thất",
+            "en": "lose; fail"
+          },
+          {
+            "vi": "leo; đăng",
+            "en": "climb; register"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 渡 nghĩa là qua; đưa; trao.",
+        "en": "Correct! 渡 means cross; hand over."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 渡 nghĩa là qua; đưa; trao, như trong 「渡航」 (đi nước ngoài).",
+        "en": "Not quite. 渡 means cross; hand over, as in 「渡航」 (overseas travel)."
+      }
+    },
+    {
+      "item": "渡",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「渡」 trong 「渡航」 (“đi nước ngoài”).",
+        "en": "Type the reading of 「渡」 in 「渡航」 (“overseas travel”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "と",
+          "ト"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 渡航, 渡 đọc là と (âm On).",
+        "en": "Correct! In 渡航, 渡 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 渡航 (đi nước ngoài), 渡 đọc là と (âm On).",
+        "en": "In 渡航 (overseas travel), 渡 is read と (on'yomi)."
+      }
+    },
+    {
+      "item": "渡",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「渡す」(trao; đưa) đọc là gì?",
+        "en": "How is 「渡す」 (to hand over) read?"
+      },
+      "payload": {
+        "choices": [
+          "とす",
+          "わたす",
+          "とざん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 渡す = わたす (trao; đưa); 渡 đọc là わた (âm Kun).",
+        "en": "Correct! 渡す = わたす (to hand over); 渡 is read わた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "渡す đọc là わたす (trao; đưa): 渡 mang âm Kun わた.",
+        "en": "渡す is read わたす (to hand over): 渡 takes the kun'yomi わた."
+      }
+    },
+    {
+      "item": "失",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「失」nghĩa là gì?",
+        "en": "What does 「失」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "leo; đăng",
+            "en": "climb; register"
+          },
+          {
+            "vi": "mất; thất",
+            "en": "lose; fail"
+          },
+          {
+            "vi": "tồn tại; biết",
+            "en": "exist; know"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 失 nghĩa là mất; thất.",
+        "en": "Correct! 失 means lose; fail."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 失 nghĩa là mất; thất, như trong 「失礼」 (thất lễ; xin lỗi).",
+        "en": "Not quite. 失 means lose; fail, as in 「失礼」 (rudeness)."
+      }
+    },
+    {
+      "item": "失",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「失」 trong 「失礼」 (“thất lễ; xin lỗi”).",
+        "en": "Type the reading of 「失」 in 「失礼」 (“rudeness”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しつ",
+          "シツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 失礼, 失 đọc là しつ (âm On).",
+        "en": "Correct! In 失礼, 失 is read しつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 失礼 (thất lễ; xin lỗi), 失 đọc là しつ (âm On).",
+        "en": "In 失礼 (rudeness), 失 is read しつ (on'yomi)."
+      }
+    },
+    {
+      "item": "失",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「失う」(đánh mất) đọc là gì?",
+        "en": "How is 「失う」 (to lose) read?"
+      },
+      "payload": {
+        "choices": [
+          "しつう",
+          "とうろく",
+          "うしなう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 失う = うしなう (đánh mất); 失 đọc là うしな (âm Kun).",
+        "en": "Correct! 失う = うしなう (to lose); 失 is read うしな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "失う đọc là うしなう (đánh mất): 失 mang âm Kun うしな.",
+        "en": "失う is read うしなう (to lose): 失 takes the kun'yomi うしな."
+      }
+    },
+    {
+      "item": "登",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「登」nghĩa là gì?",
+        "en": "What does 「登」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tồn tại; biết",
+            "en": "exist; know"
+          },
+          {
+            "vi": "qua; đưa; trao",
+            "en": "cross; hand over"
+          },
+          {
+            "vi": "leo; đăng",
+            "en": "climb; register"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 登 nghĩa là leo; đăng.",
+        "en": "Correct! 登 means climb; register."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 登 nghĩa là leo; đăng, như trong 「登録」 (đăng ký).",
+        "en": "Not quite. 登 means climb; register, as in 「登録」 (registration)."
+      }
+    },
+    {
+      "item": "登",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「登」 trong 「登録」 (“đăng ký”).",
+        "en": "Type the reading of 「登」 in 「登録」 (“registration”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 登録, 登 đọc là とう (âm On).",
+        "en": "Correct! In 登録, 登 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 登録 (đăng ký), 登 đọc là とう (âm On).",
+        "en": "In 登録 (registration), 登 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "登",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「登山」(leo núi) đọc là gì?",
+        "en": "How is 「登山」 (mountain climbing) read?"
+      },
+      "payload": {
+        "choices": [
+          "とざん",
+          "のぼざん",
+          "どざん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 登山 = とざん (leo núi); 登 đọc là と (âm On).",
+        "en": "Correct! 登山 = とざん (mountain climbing); 登 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "登山 đọc là とざん (leo núi): 登 mang âm On と.",
+        "en": "登山 is read とざん (mountain climbing): 登 takes the on'yomi と."
+      }
+    },
+    {
+      "item": "存",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「存」nghĩa là gì?",
+        "en": "What does 「存」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tồn tại; biết",
+            "en": "exist; know"
+          },
+          {
+            "vi": "qua; đưa; trao",
+            "en": "cross; hand over"
+          },
+          {
+            "vi": "mất; thất",
+            "en": "lose; fail"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 存 nghĩa là tồn tại; biết.",
+        "en": "Correct! 存 means exist; know."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 存 nghĩa là tồn tại; biết, như trong 「存在」 (sự tồn tại).",
+        "en": "Not quite. 存 means exist; know, as in 「存在」 (existence)."
+      }
+    },
+    {
+      "item": "存",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「存」 trong 「存在」 (“sự tồn tại”).",
+        "en": "Type the reading of 「存」 in 「存在」 (“existence”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そん",
+          "ソン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 存在, 存 đọc là そん (âm On).",
+        "en": "Correct! In 存在, 存 is read そん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 存在 (sự tồn tại), 存 đọc là そん (âm On).",
+        "en": "In 存在 (existence), 存 is read そん (on'yomi)."
+      }
+    },
+    {
+      "item": "存",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保存」(lưu giữ) đọc là gì?",
+        "en": "How is 「保存」 (preservation) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほそん",
+          "ほぞん",
+          "ほわた"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保存 = ほぞん (lưu giữ); 存 đọc là ぞん (âm On).",
+        "en": "Correct! 保存 = ほぞん (preservation); 存 is read ぞん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "保存 đọc là ほぞん (lưu giữ): 存 mang âm On ぞん.",
+        "en": "保存 is read ほぞん (preservation): 存 takes the on'yomi ぞん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "渡",
+            {
+              "vi": "qua; đưa; trao",
+              "en": "cross; hand over"
+            }
+          ],
+          [
+            "失",
+            {
+              "vi": "mất; thất",
+              "en": "lose; fail"
+            }
+          ],
+          [
+            "登",
+            {
+              "vi": "leo; đăng",
+              "en": "climb; register"
+            }
+          ],
+          [
+            "存",
+            {
+              "vi": "tồn tại; biết",
+              "en": "exist; know"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import 'exercises/exercise_view.dart';
 import 'kanji/kanji_card.dart';
 import 'kanji/kanji_master_toggle.dart';
 import 'lesson_controller.dart';
+import 'passage_panel.dart';
 
 /// Màn hình bài học (T069): giải thích từ vựng/ngữ pháp → bài tập có phản hồi tức thì → hỏi lại câu sai
 /// một lần ở cuối phiên (R6) → tóm tắt. Mở lại cùng mục thì tiếp tục từ câu chưa trả lời (FR-020).
@@ -262,6 +263,12 @@ class LessonPractice extends ConsumerWidget {
               style: theme.textTheme.bodySmall,
             ),
             const SizedBox(height: 16),
+            // Bài luyện đọc: ghim đoạn văn phía trên câu hỏi (spec 007, research §P5).
+            if (_passageOf(state) case final passage?)
+              PassagePanel(
+                japanese: passage.japanese ?? '',
+                translation: passage.meaning ?? '',
+              ),
             ExerciseView(
               exercise: exercise,
               enabled: !state.submitting && state.pending == null,
@@ -306,6 +313,14 @@ class LessonPractice extends ConsumerWidget {
         ),
       ),
     );
+  }
+
+  /// Mục đoạn văn (`kind = reading`) của phiên luyện đọc; `null` với phiên khác (ôn tập, từ vựng, Kanji…).
+  static ContentItem? _passageOf(LessonState s) {
+    for (final item in s.session.items ?? const <ContentItem>[]) {
+      if (item.kind == Skill.reading) return item;
+    }
+    return null;
   }
 
   /// Sau câu cuối của giai đoạn bài tập còn câu sai để hỏi lại thì chưa phải bước hoàn thành.

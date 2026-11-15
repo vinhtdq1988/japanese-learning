@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-international",
+  "title": {
+    "vi": "Kanji quốc tế (易 港 在)",
+    "en": "International affairs kanji (易 港 在)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "易",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "dễ; mậu dịch",
+        "en": "easy; trade"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エキ",
+          "イ"
+        ],
+        "kunReadings": [
+          "やさ.しい"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "貿易",
+          "reading": "ぼうえき",
+          "kanjiReading": "エキ",
+          "translation": {
+            "vi": "thương mại quốc tế",
+            "en": "trade"
+          }
+        },
+        {
+          "ja": "容易",
+          "reading": "ようい",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "dễ dàng",
+            "en": "easy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "港",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "cảng",
+        "en": "port; harbor"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "みなと"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "空港",
+          "reading": "くうこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "sân bay",
+            "en": "airport"
+          }
+        },
+        {
+          "ja": "港",
+          "reading": "みなと",
+          "kanjiReading": "みなと",
+          "translation": {
+            "vi": "bến cảng",
+            "en": "port"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "在",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "ở; tồn tại",
+        "en": "exist; be located"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザイ"
+        ],
+        "kunReadings": [
+          "あ.る"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "在日",
+          "reading": "ざいにち",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "cư trú tại Nhật",
+            "en": "resident in Japan"
+          }
+        },
+        {
+          "ja": "存在",
+          "reading": "そんざい",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "sự tồn tại",
+            "en": "existence"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "易",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「易」nghĩa là gì?",
+        "en": "What does 「易」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dễ; mậu dịch",
+            "en": "easy; trade"
+          },
+          {
+            "vi": "cảng",
+            "en": "port; harbor"
+          },
+          {
+            "vi": "ở; tồn tại",
+            "en": "exist; be located"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 易 nghĩa là dễ; mậu dịch.",
+        "en": "Correct! 易 means easy; trade."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 易 nghĩa là dễ; mậu dịch, như trong 「貿易」 (thương mại quốc tế).",
+        "en": "Not quite. 易 means easy; trade, as in 「貿易」 (trade)."
+      }
+    },
+    {
+      "item": "易",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「易」 trong 「貿易」 (“thương mại quốc tế”).",
+        "en": "Type the reading of 「易」 in 「貿易」 (“trade”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えき",
+          "エキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 貿易, 易 đọc là えき (âm On).",
+        "en": "Correct! In 貿易, 易 is read えき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 貿易 (thương mại quốc tế), 易 đọc là えき (âm On).",
+        "en": "In 貿易 (trade), 易 is read えき (on'yomi)."
+      }
+    },
+    {
+      "item": "易",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「容易」(dễ dàng) đọc là gì?",
+        "en": "How is 「容易」 (easy) read?"
+      },
+      "payload": {
+        "choices": [
+          "ようやさ",
+          "ようい",
+          "ようえき"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 容易 = ようい (dễ dàng); 易 đọc là い (âm On).",
+        "en": "Correct! 容易 = ようい (easy); 易 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "容易 đọc là ようい (dễ dàng): 易 mang âm On い.",
+        "en": "容易 is read ようい (easy): 易 takes the on'yomi い."
+      }
+    },
+    {
+      "item": "港",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「港」nghĩa là gì?",
+        "en": "What does 「港」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ở; tồn tại",
+            "en": "exist; be located"
+          },
+          {
+            "vi": "cảng",
+            "en": "port; harbor"
+          },
+          {
+            "vi": "dễ; mậu dịch",
+            "en": "easy; trade"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 港 nghĩa là cảng.",
+        "en": "Correct! 港 means port; harbor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 港 nghĩa là cảng, như trong 「空港」 (sân bay).",
+        "en": "Not quite. 港 means port; harbor, as in 「空港」 (airport)."
+      }
+    },
+    {
+      "item": "港",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「港」 trong 「空港」 (“sân bay”).",
+        "en": "Type the reading of 「港」 in 「空港」 (“airport”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 空港, 港 đọc là こう (âm On).",
+        "en": "Correct! In 空港, 港 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 空港 (sân bay), 港 đọc là こう (âm On).",
+        "en": "In 空港 (airport), 港 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "港",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「港」(bến cảng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「港」 (port; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "こう",
+          "ようい",
+          "みなと"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 港 = みなと (bến cảng); 港 đọc là みなと (âm Kun).",
+        "en": "Correct! 港 = みなと (port); 港 is read みなと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "港 đọc là みなと (bến cảng): 港 mang âm Kun みなと.",
+        "en": "港 is read みなと (port): 港 takes the kun'yomi みなと."
+      }
+    },
+    {
+      "item": "在",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「在」nghĩa là gì?",
+        "en": "What does 「在」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dễ; mậu dịch",
+            "en": "easy; trade"
+          },
+          {
+            "vi": "cảng",
+            "en": "port; harbor"
+          },
+          {
+            "vi": "ở; tồn tại",
+            "en": "exist; be located"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 在 nghĩa là ở; tồn tại.",
+        "en": "Correct! 在 means exist; be located."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 在 nghĩa là ở; tồn tại, như trong 「在日」 (cư trú tại Nhật).",
+        "en": "Not quite. 在 means exist; be located, as in 「在日」 (resident in Japan)."
+      }
+    },
+    {
+      "item": "在",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「在」 trong 「在日」 (“cư trú tại Nhật”).",
+        "en": "Type the reading of 「在」 in 「在日」 (“resident in Japan”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざい",
+          "ザイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 在日, 在 đọc là ざい (âm On).",
+        "en": "Correct! In 在日, 在 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 在日 (cư trú tại Nhật), 在 đọc là ざい (âm On).",
+        "en": "In 在日 (resident in Japan), 在 is read ざい (on'yomi)."
+      }
+    },
+    {
+      "item": "在",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「存在」(sự tồn tại) đọc là gì?",
+        "en": "How is 「存在」 (existence) read?"
+      },
+      "payload": {
+        "choices": [
+          "そんざい",
+          "そんあ",
+          "そんさい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 存在 = そんざい (sự tồn tại); 在 đọc là ざい (âm On).",
+        "en": "Correct! 存在 = そんざい (existence); 在 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "存在 đọc là そんざい (sự tồn tại): 在 mang âm On ざい.",
+        "en": "存在 is read そんざい (existence): 在 takes the on'yomi ざい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "易",
+            {
+              "vi": "dễ; mậu dịch",
+              "en": "easy; trade"
+            }
+          ],
+          [
+            "港",
+            {
+              "vi": "cảng",
+              "en": "port; harbor"
+            }
+          ],
+          [
+            "在",
+            {
+              "vi": "ở; tồn tại",
+              "en": "exist; be located"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

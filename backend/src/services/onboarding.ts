@@ -11,6 +11,11 @@ import type {
   OnboardingCompleteInput,
   OnboardingDraftInput,
 } from '../domain/profile-validation.js';
+import {
+  isPracticeEligible,
+  hasPracticeSkill,
+  PRACTICE_LOCKED_MESSAGE,
+} from '../domain/practice.js';
 import { AppError } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
 import { getTodayPlan, type DailyPlanDto } from './daily-plan.js';
@@ -50,6 +55,20 @@ export async function getOnboardingState(
   };
 }
 
+/**
+ * Luyện đọc/viết cần quỹ thời gian ≥ 30 phút/ngày (spec 007, FR-005): nháp hoặc hồ sơ hoàn tất chứa hai kỹ năng này
+ * mà phút < 30 (hoặc chưa chọn phút) bị từ chối `422 VALIDATION_FAILED` với `fields.skills`.
+ */
+function assertPracticeSkillsAllowed(
+  skills: readonly string[] | undefined,
+  dailyMinutes: number | null | undefined,
+): void {
+  if (!skills || !hasPracticeSkill(skills) || isPracticeEligible(dailyMinutes)) return;
+  throw new AppError(422, 'VALIDATION_FAILED', 'Dữ liệu không hợp lệ', {
+    skills: PRACTICE_LOCKED_MESSAGE,
+  });
+}
+
 /** `PUT /onboarding`: lưu nháp các bước đã nhập (thay toàn bộ nháp cũ). */
 export async function saveOnboardingDraft(
   deps: ServiceDeps,
@@ -57,6 +76,7 @@ export async function saveOnboardingDraft(
   draft: OnboardingDraftInput,
 ): Promise<OnboardingStateDto> {
   await assertNotClassManaged(deps.db, userId);
+  assertPracticeSkillsAllowed(draft.skills, draft.dailyMinutes);
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy hồ sơ');
   await updateProfile(
@@ -90,6 +110,7 @@ export async function completeOnboarding(
   input: OnboardingCompleteInput,
 ): Promise<OnboardingResultDto> {
   await assertNotClassManaged(deps.db, userId);
+  assertPracticeSkillsAllowed(input.skills, input.dailyMinutes);
   const profile = await getProfile(deps.db, userId);
   if (!profile) throw new AppError(404, 'NOT_FOUND', 'Không tìm thấy hồ sơ');
 

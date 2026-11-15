@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-conditionals",
+  "title": {
+    "vi": "Điều kiện (1): 〜と (kết quả tất yếu và phát hiện)",
+    "en": "Conditionals (1): 〜と (natural result and discovery)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜と（自然な結果・習慣）",
+      "meaning": {
+        "vi": "Hễ ~ thì ~ (kết quả tất yếu)",
+        "en": "If/when ~ (natural result, habit)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển (hoặc thể ない) + と + kết quả. Diễn tả quy luật, thói quen, cách vận hành máy móc; kết quả xảy ra tự nhiên. Vế sau KHÔNG dùng ý chí, rủ rê, nhờ vả hay mệnh lệnh.",
+        "en": "Usage: verb dictionary form (or ない-form) + と + result. Expresses a rule, habit or how a machine works; the result follows naturally. The second clause CANNOT be volition, invitation, request or command."
+      },
+      "examples": [
+        {
+          "ja": "春になると、桜が咲きます。",
+          "reading": "はるになると、さくらがさきます。",
+          "translation": {
+            "vi": "Hễ đến mùa xuân là hoa anh đào nở.",
+            "en": "When spring comes, the cherry blossoms bloom."
+          }
+        },
+        {
+          "ja": "このボタンを押すと、お湯が出ます。",
+          "reading": "このボタンをおすと、おゆがでます。",
+          "translation": {
+            "vi": "Nhấn nút này thì nước nóng chảy ra.",
+            "en": "If you press this button, hot water comes out."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-029"
+    },
+    {
+      "japanese": "〜と（発見・きっかけ）",
+      "meaning": {
+        "vi": "Khi ~ thì (thấy/phát hiện) ~",
+        "en": "When ~, (I found) ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + と + vế sau ở thì quá khứ (phát hiện, sự việc bất ngờ). Chủ ngữ của hai vế khác nhau; vế sau là điều người nói nhìn thấy hay nhận ra sau hành động đó.",
+        "en": "Usage: verb dictionary form + と + a past-tense clause (a discovery or unexpected event). The two clauses have different subjects; the second is something the speaker sees or notices after the action."
+      },
+      "examples": [
+        {
+          "ja": "ドアを開けると、猫がいました。",
+          "reading": "ドアをあけると、ねこがいました。",
+          "translation": {
+            "vi": "Mở cửa ra thì thấy có con mèo.",
+            "en": "When I opened the door, there was a cat."
+          }
+        },
+        {
+          "ja": "家に帰ると、荷物が届いていました。",
+          "reading": "いえにかえると、にもつがとどいていました。",
+          "translation": {
+            "vi": "Về đến nhà thì thấy hành lý đã được giao tới.",
+            "en": "When I got home, a package had arrived."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-030"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜と（自然な結果・習慣）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのボタンを（　）と、お湯が出ます。",
+        "en": "Choose the correct option for the blank:\nこのボタンを（　）と、お湯が出ます。"
+      },
+      "payload": {
+        "choices": [
+          "押す",
+          "押した",
+          "押し",
+          "押せ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜と」 đi với thể từ điển của động từ: 「押すと」.",
+        "en": "Correct! 「〜と」 attaches to the dictionary form of the verb: 「押すと」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜と」 đi với thể từ điển của động từ: 「押すと」.",
+        "en": "Not quite. 「〜と」 attaches to the dictionary form of the verb: 「押すと」."
+      }
+    },
+    {
+      "item": "〜と（自然な結果・習慣）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n春になる___、桜が咲きます。",
+        "en": "Choose the correct option for the blank:\n春になる___、桜が咲きます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "と"
+        ],
+        "hint": "と"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy luật tự nhiên dùng 「〜と」: 「春になると」.",
+        "en": "Correct! A natural rule uses 「〜と」: 「春になると」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy luật tự nhiên dùng 「〜と」: 「春になると」.",
+        "en": "Not quite. A natural rule uses 「〜と」: 「春になると」."
+      }
+    },
+    {
+      "item": "〜と（自然な結果・習慣）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Vế sau là lời nhờ vả. Chọn cách nối điều kiện đúng:\n時間が（　）、手伝ってください。",
+        "en": "The second clause is a request. Choose the correct conditional:\n時間が（　）、手伝ってください。"
+      },
+      "payload": {
+        "choices": [
+          "あると",
+          "あるのに",
+          "あっても",
+          "あったら"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế sau là lời nhờ vả nên không dùng 「〜と」; dùng 「〜たら」: 「時間があったら」.",
+        "en": "Correct! The second clause is a request, so 「〜と」 cannot be used; use 「〜たら」: 「時間があったら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế sau là lời nhờ vả nên không dùng 「〜と」; dùng 「〜たら」: 「時間があったら」.",
+        "en": "Not quite. The second clause is a request, so 「〜と」 cannot be used; use 「〜たら」: 「時間があったら」."
+      }
+    },
+    {
+      "item": "〜と（自然な結果・習慣）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "春になると、花を見に行きましょう。",
+          "春になると、花を見に行ってください。",
+          "春になると、花が咲きます。",
+          "春になると、花を見に行こう。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「〜と」 không dùng rủ rê, nhờ vả hay ý chí; chỉ câu kể quy luật 「花が咲きます」 đúng.",
+        "en": "Correct! After 「〜と」 invitation, request or volition cannot follow; only the descriptive 「花が咲きます」 is correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「〜と」 không dùng rủ rê, nhờ vả hay ý chí; chỉ câu kể quy luật 「花が咲きます」 đúng.",
+        "en": "Not quite. After 「〜と」 invitation, request or volition cannot follow; only the descriptive 「花が咲きます」 is correct."
+      }
+    },
+    {
+      "item": "〜と（発見・きっかけ）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nドアを開ける（　）、猫がいました。",
+        "en": "Choose the correct option for the blank:\nドアを開ける（　）、猫がいました。"
+      },
+      "payload": {
+        "choices": [
+          "が",
+          "と",
+          "を",
+          "に"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hành động rồi phát hiện ra điều gì: 「開けると、〜がいました」.",
+        "en": "Correct! An action followed by a discovery: 「開けると、〜がいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hành động rồi phát hiện ra điều gì: 「開けると、〜がいました」.",
+        "en": "Not quite. An action followed by a discovery: 「開けると、〜がいました」."
+      }
+    },
+    {
+      "item": "〜と（発見・きっかけ）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n家に帰る___、荷物が届いていました。",
+        "en": "Choose the correct option for the blank:\n家に帰る___、荷物が届いていました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "と"
+        ],
+        "hint": "と"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Về nhà rồi thấy hành lý đã tới: 「帰ると」.",
+        "en": "Correct! Coming home and finding the package: 「帰ると」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Về nhà rồi thấy hành lý đã tới: 「帰ると」.",
+        "en": "Not quite. Coming home and finding the package: 「帰ると」."
+      }
+    },
+    {
+      "item": "〜と（発見・きっかけ）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部屋に入る（　）、だれもいませんでした。",
+        "en": "Choose the correct option for the blank:\n部屋に入る（　）、だれもいませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "と",
+          "ても",
+          "ながら",
+          "から"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vào phòng rồi phát hiện không có ai: 「入ると」.",
+        "en": "Correct! Entering the room and finding no one: 「入ると」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vào phòng rồi phát hiện không có ai: 「入ると」.",
+        "en": "Not quite. Entering the room and finding no one: 「入ると」."
+      }
+    },
+    {
+      "item": "〜と（発見・きっかけ）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "ドアを開けると、犬を立ってください。",
+          "ドアを開けると、犬が立ちましょう。",
+          "ドアを開けると、犬に立ちたいです。",
+          "ドアを開けると、犬が立っていました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế sau của 「〜と」 (phát hiện) là câu kể ở quá khứ: 「立っていました」.",
+        "en": "Correct! The clause after 「〜と」 (discovery) is a past statement: 「立っていました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế sau của 「〜と」 (phát hiện) là câu kể ở quá khứ: 「立っていました」.",
+        "en": "Not quite. The clause after 「〜と」 (discovery) is a past statement: 「立っていました」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜と（自然な結果・習慣）",
+            {
+              "vi": "Hễ ~ thì ~ (kết quả tất yếu)",
+              "en": "If/when ~ (natural result, habit)"
+            }
+          ],
+          [
+            "〜と（発見・きっかけ）",
+            {
+              "vi": "Khi ~ thì (thấy/phát hiện) ~",
+              "en": "When ~, (I found) ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

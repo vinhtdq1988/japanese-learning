@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-daily-actions",
+  "title": {
+    "vi": "Viết: Hành động thường ngày (1)",
+    "en": "Writing: Daily actions (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 320,
+  "items": [
+    {
+      "japanese": "起きる",
+      "reading": "おきる",
+      "meaning": {
+        "vi": "Thức dậy",
+        "en": "To get up; to wake up"
+      }
+    },
+    {
+      "japanese": "働く",
+      "reading": "はたらく",
+      "meaning": {
+        "vi": "Làm việc",
+        "en": "To work"
+      }
+    },
+    {
+      "japanese": "帰る",
+      "reading": "かえる",
+      "meaning": {
+        "vi": "Trở về (nhà)",
+        "en": "To return (home)"
+      }
+    },
+    {
+      "japanese": "勉強する",
+      "reading": "べんきょうする",
+      "meaning": {
+        "vi": "Học (bài)",
+        "en": "To study"
+      }
+    },
+    {
+      "japanese": "洗う",
+      "reading": "あらう",
+      "meaning": {
+        "vi": "Rửa; giặt",
+        "en": "To wash"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Thức dậy”",
+        "en": "Type in Japanese: “To get up; to wake up”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "起きる",
+          "おきる"
+        ],
+        "hint": "よみ: おきる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 起きる (đọc là おきる).",
+        "en": "Not quite. Reference answer: 起きる (read as おきる)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Làm việc”",
+        "en": "Type in Japanese: “To work”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "働く",
+          "はたらく"
+        ],
+        "hint": "よみ: はたらく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 働く (đọc là はたらく).",
+        "en": "Not quite. Reference answer: 働く (read as はたらく)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Trở về (nhà)”",
+        "en": "Type in Japanese: “To return (home)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "帰る",
+          "かえる"
+        ],
+        "hint": "よみ: かえる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 帰る (đọc là かえる).",
+        "en": "Not quite. Reference answer: 帰る (read as かえる)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Học (bài)”",
+        "en": "Type in Japanese: “To study”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "勉強する",
+          "べんきょうする"
+        ],
+        "hint": "よみ: べんきょうする"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 勉強する (đọc là べんきょうする).",
+        "en": "Not quite. Reference answer: 勉強する (read as べんきょうする)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Rửa; giặt”",
+        "en": "Type in Japanese: “To wash”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "洗う",
+          "あらう"
+        ],
+        "hint": "よみ: あらう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 洗う (đọc là あらう).",
+        "en": "Not quite. Reference answer: 洗う (read as あらう)."
+      }
+    }
+  ]
+}

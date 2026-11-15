@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-time-calendar",
+  "title": {
+    "vi": "Buổi trong ngày và ngày trong tuần",
+    "en": "Times of day and days of the week"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "昨夜",
+      "reading": "ゆうべ",
+      "meaning": {
+        "vi": "Tối hôm qua; đêm qua",
+        "en": "Last night"
+      },
+      "examples": [
+        {
+          "ja": "昨夜は暑くて、あまり眠れませんでした。",
+          "reading": "ゆうべはあつくて、あまりねむれませんでした。",
+          "translation": {
+            "vi": "Đêm qua nóng quá nên tôi ngủ không được mấy.",
+            "en": "It was hot last night, so I could not sleep much."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "今晩",
+      "reading": "こんばん",
+      "meaning": {
+        "vi": "Tối nay",
+        "en": "Tonight"
+      },
+      "examples": [
+        {
+          "ja": "今晩は、友達と食事に行きます。",
+          "reading": "こんばんは、ともだちとしょくじにいきます。",
+          "translation": {
+            "vi": "Tối nay tôi đi ăn cơm với bạn.",
+            "en": "Tonight I am going out to eat with a friend."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夕方",
+      "reading": "ゆうがた",
+      "meaning": {
+        "vi": "Chiều tối; lúc hoàng hôn",
+        "en": "Early evening; dusk"
+      },
+      "examples": [
+        {
+          "ja": "夕方になると、空が赤くなります。",
+          "reading": "ゆうがたになると、そらがあかくなります。",
+          "translation": {
+            "vi": "Đến chiều tối thì bầu trời chuyển sang màu đỏ.",
+            "en": "When evening comes, the sky turns red."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "週末",
+      "reading": "しゅうまつ",
+      "meaning": {
+        "vi": "Cuối tuần",
+        "en": "Weekend"
+      },
+      "examples": [
+        {
+          "ja": "週末は、家族と公園へ行きます。",
+          "reading": "しゅうまつは、かぞくとこうえんへいきます。",
+          "translation": {
+            "vi": "Cuối tuần tôi đi công viên với gia đình.",
+            "en": "On weekends I go to the park with my family."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "平日",
+      "reading": "へいじつ",
+      "meaning": {
+        "vi": "Ngày thường (không phải cuối tuần)",
+        "en": "Weekday"
+      },
+      "examples": [
+        {
+          "ja": "平日は、仕事で忙しいです。",
+          "reading": "へいじつは、しごとでいそがしいです。",
+          "translation": {
+            "vi": "Ngày thường tôi bận công việc.",
+            "en": "On weekdays I am busy with work."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": {
+        "vi": "Ngày lễ (nghỉ theo luật)",
+        "en": "National holiday"
+      },
+      "examples": [
+        {
+          "ja": "祝日は、会社が休みになります。",
+          "reading": "しゅくじつは、かいしゃがやすみになります。",
+          "translation": {
+            "vi": "Ngày lễ thì công ty nghỉ.",
+            "en": "The company is closed on national holidays."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "昨夜",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は暑くて、あまり眠れませんでした。 — Nghĩa của câu: “Đêm qua nóng quá nên tôi ngủ không được mấy.”",
+        "en": "Choose the word that fits the blank: （　）は暑くて、あまり眠れませんでした。 — Meaning of the sentence: “It was hot last night, so I could not sleep much.”"
+      },
+      "payload": {
+        "choices": [
+          "昨夜",
+          "今晩",
+          "夕方",
+          "週末"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「昨夜」(Tối hôm qua; đêm qua) hợp nghĩa câu này: “Đêm qua nóng quá nên tôi ngủ không được mấy.”",
+        "en": "Correct! 「昨夜」(Last night) fits this sentence: “It was hot last night, so I could not sleep much.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đêm qua nóng quá nên tôi ngủ không được mấy.”, nên cần 「昨夜」(Tối hôm qua; đêm qua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It was hot last night, so I could not sleep much.”, so it needs 「昨夜」(Last night); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "今晩",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、友達と食事に行きます。 — Nghĩa của câu: “Tối nay tôi đi ăn cơm với bạn.”",
+        "en": "Choose the word that fits the blank: （　）は、友達と食事に行きます。 — Meaning of the sentence: “Tonight I am going out to eat with a friend.”"
+      },
+      "payload": {
+        "choices": [
+          "昨夜",
+          "今晩",
+          "夕方",
+          "週末"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「今晩」(Tối nay) hợp nghĩa câu này: “Tối nay tôi đi ăn cơm với bạn.”",
+        "en": "Correct! 「今晩」(Tonight) fits this sentence: “Tonight I am going out to eat with a friend.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tối nay tôi đi ăn cơm với bạn.”, nên cần 「今晩」(Tối nay); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Tonight I am going out to eat with a friend.”, so it needs 「今晩」(Tonight); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "夕方",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）になると、空が赤くなります。",
+        "en": "Choose the word that fits the blank: （　）になると、空が赤くなります。"
+      },
+      "payload": {
+        "choices": [
+          "昨夜",
+          "今晩",
+          "夕方",
+          "週末"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「夕方」(Chiều tối; lúc hoàng hôn) hợp nghĩa câu này: “Đến chiều tối thì bầu trời chuyển sang màu đỏ.”",
+        "en": "Correct! 「夕方」(Early evening; dusk) fits this sentence: “When evening comes, the sky turns red.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đến chiều tối thì bầu trời chuyển sang màu đỏ.”, nên cần 「夕方」(Chiều tối; lúc hoàng hôn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When evening comes, the sky turns red.”, so it needs 「夕方」(Early evening; dusk); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "週末",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、家族と公園へ行きます。 — Nghĩa của câu: “Cuối tuần tôi đi công viên với gia đình.”",
+        "en": "Choose the word that fits the blank: （　）は、家族と公園へ行きます。 — Meaning of the sentence: “On weekends I go to the park with my family.”"
+      },
+      "payload": {
+        "choices": [
+          "平日",
+          "祝日",
+          "夕方",
+          "週末"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「週末」(Cuối tuần) hợp nghĩa câu này: “Cuối tuần tôi đi công viên với gia đình.”",
+        "en": "Correct! 「週末」(Weekend) fits this sentence: “On weekends I go to the park with my family.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối tuần tôi đi công viên với gia đình.”, nên cần 「週末」(Cuối tuần); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On weekends I go to the park with my family.”, so it needs 「週末」(Weekend); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "平日",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、仕事で忙しいです。 — Nghĩa của câu: “Ngày thường tôi bận công việc.”",
+        "en": "Choose the word that fits the blank: （　）は、仕事で忙しいです。 — Meaning of the sentence: “On weekdays I am busy with work.”"
+      },
+      "payload": {
+        "choices": [
+          "平日",
+          "週末",
+          "祝日",
+          "昨夜"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「平日」(Ngày thường (không phải cuối tuần)) hợp nghĩa câu này: “Ngày thường tôi bận công việc.”",
+        "en": "Correct! 「平日」(Weekday) fits this sentence: “On weekdays I am busy with work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày thường tôi bận công việc.”, nên cần 「平日」(Ngày thường (không phải cuối tuần)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On weekdays I am busy with work.”, so it needs 「平日」(Weekday); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "祝日",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、会社が休みになります。 — Nghĩa của câu: “Ngày lễ thì công ty nghỉ.”",
+        "en": "Choose the word that fits the blank: （　）は、会社が休みになります。 — Meaning of the sentence: “The company is closed on national holidays.”"
+      },
+      "payload": {
+        "choices": [
+          "週末",
+          "祝日",
+          "平日",
+          "夕方"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「祝日」(Ngày lễ (nghỉ theo luật)) hợp nghĩa câu này: “Ngày lễ thì công ty nghỉ.”",
+        "en": "Correct! 「祝日」(National holiday) fits this sentence: “The company is closed on national holidays.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày lễ thì công ty nghỉ.”, nên cần 「祝日」(Ngày lễ (nghỉ theo luật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company is closed on national holidays.”, so it needs 「祝日」(National holiday); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "昨夜",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「昨夜」は暑くて、あまり眠れませんでした。",
+        "en": "Choose the correct reading of the word in 「」: 「昨夜」は暑くて、あまり眠れませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "こんばん",
+          "ゆうべ",
+          "ゆうがた",
+          "しゅうまつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「昨夜」 đọc là 「ゆうべ」, nghĩa là Tối hôm qua; đêm qua.",
+        "en": "Correct! 「昨夜」 is read 「ゆうべ」 and means Last night."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「昨夜」 đọc là 「ゆうべ」 (Tối hôm qua; đêm qua); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「昨夜」 is read 「ゆうべ」 (Last night); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "週末",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「週末」は、家族と公園へ行きます。",
+        "en": "Choose the correct reading of the word in 「」: 「週末」は、家族と公園へ行きます。"
+      },
+      "payload": {
+        "choices": [
+          "ゆうべ",
+          "こんばん",
+          "しゅうまつ",
+          "ゆうがた"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「週末」 đọc là 「しゅうまつ」, nghĩa là Cuối tuần.",
+        "en": "Correct! 「週末」 is read 「しゅうまつ」 and means Weekend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「週末」 đọc là 「しゅうまつ」 (Cuối tuần); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「週末」 is read 「しゅうまつ」 (Weekend); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "今晩",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「こんばん」は、友達と食事に行きます。",
+        "en": "Choose the correct way to write the word in 「」: 「こんばん」は、友達と食事に行きます。"
+      },
+      "payload": {
+        "choices": [
+          "昨夜",
+          "夕方",
+          "今晩",
+          "週末"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こんばん」 viết là 「今晩」, nghĩa là Tối nay.",
+        "en": "Correct! 「こんばん」 is written 「今晩」 and means Tonight."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こんばん」 viết là 「今晩」 (Tối nay); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こんばん」 is written 「今晩」 (Tonight); the other words are read differently."
+      }
+    }
+  ]
+}

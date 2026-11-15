@@ -1,0 +1,521 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-purpose-reason",
+  "title": {
+    "vi": "Lý do và đối lập: 〜から, 〜のに, 〜し〜し",
+    "en": "Reasons and contrast: 〜から, 〜のに (two uses), 〜し〜し"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜から（理由）",
+      "meaning": {
+        "vi": "Vì ~ nên ~",
+        "en": "Because ~ (reason)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường hoặc thể lịch sự + から. Nêu lý do chủ quan của người nói; vế sau có thể là mệnh lệnh, nhờ vả, ý chí (危ないから、走らないでください). Khác 〜ので (baseline N3): ので khách quan và mềm hơn, ít đi với mệnh lệnh.",
+        "en": "Usage: plain or polite form + から. States the speaker's subjective reason; the clause after can be a command, request or volition (危ないから、走らないでください). Unlike 〜ので (N3 baseline), which is objective and softer and rarely goes with commands."
+      },
+      "examples": [
+        {
+          "ja": "雨が降っていますから、かさを持っていってください。",
+          "reading": "あめがふっていますから、かさをもっていってください。",
+          "translation": {
+            "vi": "Vì trời đang mưa nên hãy mang ô theo.",
+            "en": "It is raining, so please take an umbrella."
+          }
+        },
+        {
+          "ja": "危ないですから、走らないでください。",
+          "reading": "あぶないですから、はしらないでください。",
+          "translation": {
+            "vi": "Vì nguy hiểm nên xin đừng chạy.",
+            "en": "It is dangerous, so please do not run."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-048"
+    },
+    {
+      "japanese": "〜のに（逆接）",
+      "meaning": {
+        "vi": "Vậy mà ~, mặc dù ~",
+        "en": "Although ~ (contrary to expectation)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + のに (tính từ な và danh từ dùng 〜なのに). Diễn tả kết quả trái với dự đoán, thường kèm bất ngờ, tiếc nuối, bất mãn. Vế sau không dùng ý chí hay mệnh lệnh.",
+        "en": "Usage: plain form + のに (な-adjectives and nouns take 〜なのに). Expresses a result contrary to expectation, often with surprise, regret or dissatisfaction. The second clause cannot be a will or command."
+      },
+      "examples": [
+        {
+          "ja": "約束したのに、彼は来ませんでした。",
+          "reading": "やくそくしたのに、かれはきませんでした。",
+          "translation": {
+            "vi": "Đã hẹn vậy mà anh ấy không đến.",
+            "en": "Although we made a promise, he did not come."
+          }
+        },
+        {
+          "ja": "寒いのに、窓が開いています。",
+          "reading": "さむいのに、まどがあいています。",
+          "translation": {
+            "vi": "Lạnh vậy mà cửa sổ vẫn mở.",
+            "en": "Even though it is cold, the window is open."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-049"
+    },
+    {
+      "japanese": "〜のに（用途）",
+      "meaning": {
+        "vi": "Dùng để ~",
+        "en": "For doing ~ (use / cost)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + のに + 使う/便利/必要/かかる/いい… Nói công dụng hoặc điều cần/mất khi làm việc đó. Không phải nghĩa \"mặc dù\".",
+        "en": "Usage: dictionary form + のに + 使う/便利/必要/かかる/いい… Says what something is used for, or what is needed/takes when doing it. It does not mean \"although\"."
+      },
+      "examples": [
+        {
+          "ja": "このナイフは、肉を切るのに使います。",
+          "reading": "このナイフは、にくをきるのにつかいます。",
+          "translation": {
+            "vi": "Con dao này dùng để cắt thịt.",
+            "en": "This knife is used for cutting meat."
+          }
+        },
+        {
+          "ja": "駅まで行くのに、三十分かかります。",
+          "reading": "えきまでいくのに、さんじゅっぷんかかります。",
+          "translation": {
+            "vi": "Đi đến ga mất ba mươi phút.",
+            "en": "It takes thirty minutes to get to the station."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-050"
+    },
+    {
+      "japanese": "〜し〜し",
+      "meaning": {
+        "vi": "Vừa ~ vừa ~, hơn nữa ~",
+        "en": "And what is more ~ (listing reasons)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + し, thể thường + し. Liệt kê nhiều lý do hoặc đặc điểm cùng hướng; thường ngầm dẫn tới một kết luận ở cuối câu. Cũng dùng với một vế (天気もいいし、散歩に行きましょう).",
+        "en": "Usage: plain form + し, plain form + し. Lists several reasons or traits pointing in the same direction, often implying a conclusion at the end. A single clause also occurs (天気もいいし、散歩に行きましょう)."
+      },
+      "examples": [
+        {
+          "ja": "このレストランは安いし、おいしいし、よく行きます。",
+          "reading": "このレストランはやすいし、おいしいし、よくいきます。",
+          "translation": {
+            "vi": "Nhà hàng này vừa rẻ vừa ngon nên tôi hay đến.",
+            "en": "This restaurant is cheap and tasty, so I go often."
+          }
+        },
+        {
+          "ja": "天気もいいし、散歩に行きましょう。",
+          "reading": "てんきもいいし、さんぽにいきましょう。",
+          "translation": {
+            "vi": "Thời tiết đẹp nữa, mình đi dạo thôi.",
+            "en": "The weather is nice too, so let us go for a walk."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-053"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜から（理由）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n危ない（　）、走らないでください。",
+        "en": "Choose the correct option for the blank:\n危ない（　）、走らないでください。"
+      },
+      "payload": {
+        "choices": [
+          "のに",
+          "から",
+          "けれど",
+          "ても"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lý do của lời nhờ vả dùng 「から」: 「危ないから、走らないでください」.",
+        "en": "Correct! The reason for a request uses 「から」: 「危ないから、走らないでください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lý do của lời nhờ vả dùng 「から」: 「危ないから、走らないでください」.",
+        "en": "Not quite. The reason for a request uses 「から」: 「危ないから、走らないでください」."
+      }
+    },
+    {
+      "item": "〜から（理由）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nもう遅い（　）、早く寝なさい。",
+        "en": "Choose the pattern that best fits the context:\nもう遅い（　）、早く寝なさい。"
+      },
+      "payload": {
+        "choices": [
+          "のに",
+          "ために",
+          "から",
+          "ながら"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế sau là mệnh lệnh nên dùng 「から」 (lý do chủ quan); 「のに」 nêu điều trái dự đoán, 「ために」 và 「ながら」 không nối được với 「遅い」 theo nghĩa này.",
+        "en": "Correct! The second clause is a command, so 「から」 (a subjective reason) is used; 「のに」 states something contrary to expectation, and 「ために」 and 「ながら」 do not connect to 「遅い」 in this sense."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế sau là mệnh lệnh nên dùng 「から」 (lý do chủ quan); 「のに」 nêu điều trái dự đoán, 「ために」 và 「ながら」 không nối được với 「遅い」 theo nghĩa này.",
+        "en": "Not quite. The second clause is a command, so 「から」 (a subjective reason) is used; 「のに」 states something contrary to expectation, and 「ために」 and 「ながら」 do not connect to 「遅い」 in this sense."
+      }
+    },
+    {
+      "item": "〜から（理由）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨が降っている___、かさを持っていってください。",
+        "en": "Choose the correct option for the blank:\n雨が降っている___、かさを持っていってください。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "から",
+          "ので"
+        ],
+        "hint": "〜から"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nêu lý do rồi nhờ: 「降っているから」. 「降っているので」 cũng đúng nên được chấp nhận.",
+        "en": "Correct! Giving a reason before a request: 「降っているから」. 「降っているので」 is also correct, so it is accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nêu lý do rồi nhờ: 「降っているから」. 「降っているので」 cũng đúng nên được chấp nhận.",
+        "en": "Not quite. Giving a reason before a request: 「降っているから」. 「降っているので」 is also correct, so it is accepted."
+      }
+    },
+    {
+      "item": "〜のに（逆接）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n約束した（　）、彼は来ませんでした。",
+        "en": "Choose the correct option for the blank:\n約束した（　）、彼は来ませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "ので",
+          "から",
+          "ために",
+          "のに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kết quả trái với dự đoán (đã hẹn mà không đến) dùng 「のに」.",
+        "en": "Correct! A result contrary to expectation (promised but did not come) uses 「のに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kết quả trái với dự đoán (đã hẹn mà không đến) dùng 「のに」.",
+        "en": "Not quite. A result contrary to expectation (promised but did not come) uses 「のに」."
+      }
+    },
+    {
+      "item": "〜のに（逆接）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n天気がいい（　）、出かけません。\n（Trời đẹp nhưng lại không đi chơi.）",
+        "en": "Choose the pattern that best fits the context:\n天気がいい（　）、出かけません。\n(The weather is nice, yet I am not going out.)"
+      },
+      "payload": {
+        "choices": [
+          "ので",
+          "から",
+          "のに",
+          "し"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trời đẹp mà vẫn không ra ngoài là điều trái dự đoán nên dùng 「のに」.",
+        "en": "Correct! Not going out despite nice weather is contrary to expectation, so 「のに」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trời đẹp mà vẫn không ra ngoài là điều trái dự đoán nên dùng 「のに」.",
+        "en": "Not quite. Not going out despite nice weather is contrary to expectation, so 「のに」 is used."
+      }
+    },
+    {
+      "item": "〜のに（逆接）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "寒くのに、窓が開いています。",
+          "寒いのに、窓が開いています。",
+          "寒いなのに、窓が開いています。",
+          "寒いだのに、窓が開いています。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い + のに trực tiếp (寒いのに); không thêm 「な」 hay 「だ」.",
+        "en": "Correct! An い-adjective takes のに directly (寒いのに); no 「な」 or 「だ」 is added."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い + のに trực tiếp (寒いのに); không thêm 「な」 hay 「だ」.",
+        "en": "Not quite. An い-adjective takes のに directly (寒いのに); no 「な」 or 「だ」 is added."
+      }
+    },
+    {
+      "item": "〜のに（用途）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのナイフは、肉を切る（　）使います。",
+        "en": "Choose the correct option for the blank:\nこのナイフは、肉を切る（　）使います。"
+      },
+      "payload": {
+        "choices": [
+          "のに",
+          "のが",
+          "のを",
+          "のと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Công dụng: 「動詞(辞書形) + のに + 使う」: 「切るのに使います」.",
+        "en": "Correct! Usage: 「verb (dictionary form) + のに + 使う」: 「切るのに使います」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Công dụng: 「動詞(辞書形) + のに + 使う」: 「切るのに使います」.",
+        "en": "Not quite. Usage: 「verb (dictionary form) + のに + 使う」: 「切るのに使います」."
+      }
+    },
+    {
+      "item": "〜のに（用途）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n駅まで行く___、三十分かかります。",
+        "en": "Choose the correct option for the blank:\n駅まで行く___、三十分かかります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "のに"
+        ],
+        "hint": "〜のに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Điều cần/mất khi làm việc đó: 「行くのに、三十分かかります」.",
+        "en": "Correct! What is needed or taken for doing it: 「行くのに、三十分かかります」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Điều cần/mất khi làm việc đó: 「行くのに、三十分かかります」.",
+        "en": "Not quite. What is needed or taken for doing it: 「行くのに、三十分かかります」."
+      }
+    },
+    {
+      "item": "〜のに（逆接）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n寒い___、窓が開いています。",
+        "en": "Choose the correct option for the blank:\n寒い___、窓が開いています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "のに",
+          "けど",
+          "けれど",
+          "けれども",
+          "が"
+        ],
+        "hint": "〜のに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lạnh mà vẫn mở cửa là điều trái dự đoán: 「寒いのに」. Các từ nối tương phản 「けど」「けれど」「けれども」「が」 cũng đúng nên được chấp nhận.",
+        "en": "Correct! Leaving the window open despite the cold is contrary to expectation: 「寒いのに」. The contrast connectors 「けど」, 「けれど」, 「けれども」 and 「が」 are also correct, so they are accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lạnh mà vẫn mở cửa là điều trái dự đoán: 「寒いのに」. Các từ nối tương phản 「けど」「けれど」「けれども」「が」 cũng đúng nên được chấp nhận.",
+        "en": "Not quite. Leaving the window open despite the cold is contrary to expectation: 「寒いのに」. The contrast connectors 「けど」, 「けれど」, 「けれども」 and 「が」 are also correct, so they are accepted."
+      }
+    },
+    {
+      "item": "〜し〜し",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの店は安い（　）、おいしい（　）、よく行きます。",
+        "en": "Choose the correct option for the blank:\nこの店は安い（　）、おいしい（　）、よく行きます。"
+      },
+      "payload": {
+        "choices": [
+          "から／から",
+          "ので／ので",
+          "のに／のに",
+          "し／し"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Liệt kê lý do bằng 「〜し、〜し」.",
+        "en": "Correct! Listing reasons uses 「〜し、〜し」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Liệt kê lý do bằng 「〜し、〜し」.",
+        "en": "Not quite. Listing reasons uses 「〜し、〜し」."
+      }
+    },
+    {
+      "item": "〜し〜し",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n天気もいい___、散歩に行きましょう。",
+        "en": "Choose the correct option for the blank:\n天気もいい___、散歩に行きましょう。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "し"
+        ],
+        "hint": "〜し"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thêm một lý do nữa: 「天気もいいし」.",
+        "en": "Correct! Adding another reason: 「天気もいいし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thêm một lý do nữa: 「天気もいいし」.",
+        "en": "Not quite. Adding another reason: 「天気もいいし」."
+      }
+    },
+    {
+      "item": "〜し〜し",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "彼は親切くし、頭もいいし、人気があります。",
+          "彼は親切だのし、頭もいいし、人気があります。",
+          "彼は親切だし、頭もいいし、人気があります。",
+          "彼は親切しだし、頭もいいし、人気があります。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ な ở thể thường là 「親切だ」 nên thêm 「し」: 「親切だし」.",
+        "en": "Correct! The plain form of a な-adjective is 「親切だ」, so add 「し」: 「親切だし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ な ở thể thường là 「親切だ」 nên thêm 「し」: 「親切だし」.",
+        "en": "Not quite. The plain form of a な-adjective is 「親切だ」, so add 「し」: 「親切だし」."
+      }
+    },
+    {
+      "item": "〜し〜し",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nこの町は、静かだし、＿　★　＿　。\n（住みやすいです／空気も／きれいだし）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nこの町は、静かだし、＿　★　＿　。\n（住みやすいです／空気も／きれいだし）"
+      },
+      "payload": {
+        "choices": [
+          "空気も",
+          "きれいだし",
+          "住みやすいです"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「この町は、静かだし、空気もきれいだし、住みやすいです。」; ô ★ (thứ hai) là 「きれいだし」.",
+        "en": "Correct! The correct sentence is 「この町は、静かだし、空気もきれいだし、住みやすいです。」; the ★ (second) slot is 「きれいだし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「この町は、静かだし、空気もきれいだし、住みやすいです。」; ô ★ (thứ hai) là 「きれいだし」.",
+        "en": "Not quite. The correct sentence is 「この町は、静かだし、空気もきれいだし、住みやすいです。」; the ★ (second) slot is 「きれいだし」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜から（理由）",
+            {
+              "vi": "Vì ~ nên ~",
+              "en": "Because ~ (reason)"
+            }
+          ],
+          [
+            "〜のに（逆接）",
+            {
+              "vi": "Vậy mà ~, mặc dù ~",
+              "en": "Although ~ (contrary to expectation)"
+            }
+          ],
+          [
+            "〜のに（用途）",
+            {
+              "vi": "Dùng để ~",
+              "en": "For doing ~ (use / cost)"
+            }
+          ],
+          [
+            "〜し〜し",
+            {
+              "vi": "Vừa ~ vừa ~, hơn nữa ~",
+              "en": "And what is more ~ (listing reasons)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

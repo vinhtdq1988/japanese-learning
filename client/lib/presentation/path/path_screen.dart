@@ -13,6 +13,8 @@ import '../shared/error_messages.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
 import '../classroom/locked_control.dart';
+import '../competency/competency_chip.dart';
+import '../competency/competency_legend.dart';
 import 'plan_adjust_screen.dart';
 import 'scope_notice_banner.dart';
 
@@ -273,7 +275,7 @@ class _PathContentState extends ConsumerState<_PathContent> {
               title: l10n.pathEmptyTitle,
               message: l10n.pathEmptyMessage,
             )
-          else
+          else ...<Widget>[
             for (final item in items)
               _UnitTile(
                 item: item,
@@ -285,6 +287,12 @@ class _PathContentState extends ConsumerState<_PathContent> {
                       item.status != PathDetailAllOfItemsStatusEnum.mastered,
                 ),
               ),
+            // Chú giải màu năng lực (FR-020); chỉ khi máy chủ có trả mức.
+            if (items.any((i) => i.competency != null)) ...<Widget>[
+              const SizedBox(height: 8),
+              const CompetencyLegend(),
+            ],
+          ],
           const SizedBox(height: 16),
           Wrap(
             spacing: 12,
@@ -365,8 +373,23 @@ class _UnitTile extends StatelessWidget {
         key: Key('unit-${item.unitId}'),
         leading: Icon(icon),
         title: Text(item.title ?? ''),
-        subtitle: Text(
-          '$kind · ${item.level?.value ?? ''} · ${l10n.minutesShort(item.estMinutes ?? 0)}',
+        subtitle: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              '$kind · ${item.level?.value ?? ''} · ${l10n.minutesShort(item.estMinutes ?? 0)}',
+            ),
+            // Mức năng lực của CHỦ ĐỀ của đơn vị (chưa có dữ liệu ⇒ chip trung tính).
+            if (item.competency != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: CompetencyChip(
+                  key: Key('competency-${item.unitId}'),
+                  level: item.competency,
+                  label: item.title ?? '',
+                ),
+              ),
+          ],
         ),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,

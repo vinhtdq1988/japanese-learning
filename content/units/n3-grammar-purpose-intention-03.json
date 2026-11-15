@@ -1,0 +1,555 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-purpose-intention",
+  "title": {
+    "vi": "Ý định (3): 〜つもりはない, 〜ためには, 〜ようではないか, 〜ように言う, 〜はずだった",
+    "en": "Intention (3): 〜つもりはない, 〜ためには, 〜ようではないか, 〜ように言う, 〜はずだった"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜つもりはない",
+      "meaning": {
+        "vi": "Không có ý định ~",
+        "en": "Have no intention of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + つもりはない (つもりはありません). Phủ định mạnh hơn 〜ないつもりだ: nói rõ không hề có ý định. Hay dùng khi từ chối.",
+        "en": "Usage: verb dictionary form + つもりはない (つもりはありません). A stronger denial than 〜ないつもりだ: clearly no intention at all. Often used in refusals."
+      },
+      "examples": [
+        {
+          "ja": "彼と話すつもりはありません。",
+          "reading": "かれとはなすつもりはありません。",
+          "translation": {
+            "vi": "Tôi không có ý định nói chuyện với anh ta.",
+            "en": "I have no intention of talking to him."
+          }
+        },
+        {
+          "ja": "仕事をやめるつもりはありません。",
+          "reading": "しごとをやめるつもりはありません。",
+          "translation": {
+            "vi": "Tôi không có ý định nghỉ việc.",
+            "en": "I have no intention of quitting my job."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-074"
+    },
+    {
+      "japanese": "〜ためには",
+      "meaning": {
+        "vi": "Để ~ thì phải ~",
+        "en": "In order to ~ (it is necessary to ~)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ の + ためには + điều cần thiết. Nêu điều kiện cần để đạt mục đích. Vế sau thường là 〜なければならない, 〜必要がある, 〜たほうがいい. Là dạng nhấn mạnh của ために (mục đích, baseline).",
+        "en": "Usage: verb dictionary form / noun の + ためには + what is necessary. States a necessary condition for achieving a purpose. The second clause often uses 〜なければならない, 〜必要がある, 〜たほうがいい. An emphatic form of ために (purpose, baseline)."
+      },
+      "examples": [
+        {
+          "ja": "合格するためには、毎日勉強しなければなりません。",
+          "reading": "ごうかくするためには、まいにちべんきょうしなければなりません。",
+          "translation": {
+            "vi": "Để đỗ thì phải học mỗi ngày.",
+            "en": "To pass, you have to study every day."
+          }
+        },
+        {
+          "ja": "健康のためには、野菜を食べたほうがいいです。",
+          "reading": "けんこうのためには、やさいをたべたほうがいいです。",
+          "translation": {
+            "vi": "Để có sức khỏe thì nên ăn rau.",
+            "en": "For your health, you should eat vegetables."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-075"
+    },
+    {
+      "japanese": "〜(よ)うではないか",
+      "meaning": {
+        "vi": "Chúng ta hãy ~ (kêu gọi)",
+        "en": "Let us ~ (rallying)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ý chí + ではないか (thân mật: 〜(よ)うじゃないか). Lời kêu gọi mạnh mẽ cùng làm điều gì, trong diễn văn, cuộc họp. Phong cách trang trọng, hơi cứng; thường người nam hoặc người dẫn dắt dùng.",
+        "en": "Usage: volitional form + ではないか (casual: 〜(よ)うじゃないか). A strong call to do something together, used in speeches and meetings. Formal, somewhat stiff; typically by a leader or male speaker."
+      },
+      "examples": [
+        {
+          "ja": "みんなで力を合わせてがんばろうではないか。",
+          "reading": "みんなでちからをあわせてがんばろうではないか。",
+          "translation": {
+            "vi": "Tất cả chúng ta hãy cùng chung sức cố gắng nào.",
+            "en": "Let us all join forces and do our best."
+          }
+        },
+        {
+          "ja": "この問題について、もう一度考えてみようではないか。",
+          "reading": "このもんだいについて、もういちどかんがえてみようではないか。",
+          "translation": {
+            "vi": "Hãy cùng suy nghĩ lại một lần nữa về vấn đề này.",
+            "en": "Let us think about this problem once more."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-076"
+    },
+    {
+      "japanese": "〜ように言う／〜ように頼む",
+      "meaning": {
+        "vi": "Bảo/nhờ ai làm ~",
+        "en": "Tell/ask someone to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ように + 言う / 頼む / 注意する / 命令する. Truyền đạt gián tiếp lời yêu cầu, mệnh lệnh. Cấu trúc: 人に + V + ように言う. Dạng bị động: 〜ように言われる.",
+        "en": "Usage: verb dictionary/ない-form + ように + 言う / 頼む / 注意する / 命令する. Reports a request or command indirectly. Structure: 人に + V + ように言う. Passive: 〜ように言われる."
+      },
+      "examples": [
+        {
+          "ja": "先生は、学生に静かにするように言いました。",
+          "reading": "せんせいは、がくせいにしずかにするようにいいました。",
+          "translation": {
+            "vi": "Thầy giáo bảo học sinh giữ yên lặng.",
+            "en": "The teacher told the students to be quiet."
+          }
+        },
+        {
+          "ja": "母に、早く帰ってくるように言われました。",
+          "reading": "ははに、はやくかえってくるようにいわれました。",
+          "translation": {
+            "vi": "Tôi bị mẹ dặn phải về sớm.",
+            "en": "My mother told me to come home early."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-077"
+    },
+    {
+      "japanese": "〜はずだった",
+      "meaning": {
+        "vi": "Lẽ ra đã ~",
+        "en": "Was supposed to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ の + はずだった. Điều lẽ ra theo kế hoạch/dự đoán đã phải xảy ra nhưng thực tế khác. Thường kèm のに/が. Khác 〜つもりだった (ý định cá nhân), はずだった là dự kiến khách quan.",
+        "en": "Usage: verb dictionary form / noun の + はずだった. Something that should have happened as planned or expected but did not. Often with のに/が. Unlike 〜つもりだった (personal intention), はずだった is an objective expectation."
+      },
+      "examples": [
+        {
+          "ja": "今日は、友だちと会うはずでしたが、雨で中止になりました。",
+          "reading": "きょうは、ともだちとあうはずでしたが、あめでちゅうしになりました。",
+          "translation": {
+            "vi": "Hôm nay lẽ ra tôi gặp bạn nhưng vì mưa nên bị hủy.",
+            "en": "I was supposed to meet a friend today, but it was canceled because of the rain."
+          }
+        },
+        {
+          "ja": "会議は、十時に始まるはずだったのに、まだ始まりません。",
+          "reading": "かいぎは、じゅうじにはじまるはずだったのに、まだはじまりません。",
+          "translation": {
+            "vi": "Cuộc họp lẽ ra bắt đầu lúc mười giờ vậy mà vẫn chưa bắt đầu.",
+            "en": "The meeting was supposed to start at ten, yet it still has not."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-078"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜つもりはない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼と話す（　）はありません。",
+        "en": "Choose the correct option for the blank:\n彼と話す（　）はありません。"
+      },
+      "payload": {
+        "choices": [
+          "ため",
+          "はず",
+          "わけ",
+          "つもり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không hề có ý định: 「話すつもりはありません」.",
+        "en": "Correct! Having no intention at all: 「話すつもりはありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không hề có ý định: 「話すつもりはありません」.",
+        "en": "Not quite. Having no intention at all: 「話すつもりはありません」."
+      }
+    },
+    {
+      "item": "〜つもりはない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n仕事をやめる___はありません。",
+        "en": "Choose the correct option for the blank:\n仕事をやめる___はありません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "つもり"
+        ],
+        "hint": "つもり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không có ý định nghỉ việc: 「やめるつもりはありません」.",
+        "en": "Correct! No intention of quitting: 「やめるつもりはありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không có ý định nghỉ việc: 「やめるつもりはありません」.",
+        "en": "Not quite. No intention of quitting: 「やめるつもりはありません」."
+      }
+    },
+    {
+      "item": "〜ためには",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n合格する（　）、毎日勉強しなければなりません。",
+        "en": "Choose the correct option for the blank:\n合格する（　）、毎日勉強しなければなりません。"
+      },
+      "payload": {
+        "choices": [
+          "ようには",
+          "うちには",
+          "ためには",
+          "せいには"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Điều kiện cần để đạt mục đích: 「合格するためには」.",
+        "en": "Correct! A necessary condition for a purpose: 「合格するためには」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Điều kiện cần để đạt mục đích: 「合格するためには」.",
+        "en": "Not quite. A necessary condition for a purpose: 「合格するためには」."
+      }
+    },
+    {
+      "item": "〜ためには",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "健康のためには、野菜を食べました。",
+          "健康のためには、野菜を食べたほうがいいです。",
+          "健康のためには、野菜を食べるでしょう。",
+          "健康のためには、野菜を食べていました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「ためには」 là điều cần thiết/lời khuyên: 「食べたほうがいい」.",
+        "en": "Correct! After 「ためには」 comes what is necessary or advice: 「食べたほうがいい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「ためには」 là điều cần thiết/lời khuyên: 「食べたほうがいい」.",
+        "en": "Not quite. After 「ためには」 comes what is necessary or advice: 「食べたほうがいい」."
+      }
+    },
+    {
+      "item": "〜ためには",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本語が上手になる___、毎日練習する必要があります。",
+        "en": "Choose the correct option for the blank:\n日本語が上手になる___、毎日練習する必要があります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ためには"
+        ],
+        "hint": "〜ためには"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Để giỏi thì cần: 「上手になるためには」.",
+        "en": "Correct! To become good it is necessary to: 「上手になるためには」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Để giỏi thì cần: 「上手になるためには」.",
+        "en": "Not quite. To become good it is necessary to: 「上手になるためには」."
+      }
+    },
+    {
+      "item": "〜(よ)うではないか",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nみんなで力を合わせてがんばろ（　）ではないか。",
+        "en": "Choose the correct option for the blank:\nみんなで力を合わせてがんばろ（　）ではないか。"
+      },
+      "payload": {
+        "choices": [
+          "う",
+          "よう",
+          "り",
+          "れ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「がんばる」 thuộc nhóm 五段: ý chí 「がんばろう」 + 「ではないか」.",
+        "en": "Correct! 「がんばる」 is a 五段 verb: volitional 「がんばろう」 + 「ではないか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「がんばる」 thuộc nhóm 五段: ý chí 「がんばろう」 + 「ではないか」.",
+        "en": "Not quite. 「がんばる」 is a 五段 verb: volitional 「がんばろう」 + 「ではないか」."
+      }
+    },
+    {
+      "item": "〜(よ)うではないか",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nもう一度考えてみよう___。",
+        "en": "Choose the correct option for the blank:\nもう一度考えてみよう___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ではないか",
+          "じゃないか"
+        ],
+        "hint": "〜ではないか"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lời kêu gọi cùng làm: 「みようではないか」.",
+        "en": "Correct! A call to act together: 「みようではないか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lời kêu gọi cùng làm: 「みようではないか」.",
+        "en": "Not quite. A call to act together: 「みようではないか」."
+      }
+    },
+    {
+      "item": "〜ように言う／〜ように頼む",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生は、学生に静かにする（　）言いました。",
+        "en": "Choose the correct option for the blank:\n先生は、学生に静かにする（　）言いました。"
+      },
+      "payload": {
+        "choices": [
+          "ために",
+          "ことに",
+          "ところに",
+          "ように"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Truyền đạt gián tiếp lời yêu cầu: 「するように言いました」.",
+        "en": "Correct! Indirectly reporting a request: 「するように言いました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Truyền đạt gián tiếp lời yêu cầu: 「するように言いました」.",
+        "en": "Not quite. Indirectly reporting a request: 「するように言いました」."
+      }
+    },
+    {
+      "item": "〜ように言う／〜ように頼む",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n母に、早く帰ってくる（　）言われました。",
+        "en": "Choose the pattern that best fits the context:\n母に、早く帰ってくる（　）言われました。"
+      },
+      "payload": {
+        "choices": [
+          "ために",
+          "から",
+          "ように",
+          "のに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bị dặn phải về sớm: 「帰ってくるように言われました」.",
+        "en": "Correct! Told to come home early: 「帰ってくるように言われました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bị dặn phải về sớm: 「帰ってくるように言われました」.",
+        "en": "Not quite. Told to come home early: 「帰ってくるように言われました」."
+      }
+    },
+    {
+      "item": "〜ように言う／〜ように頼む",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n医者に、お酒を飲まない___注意されました。",
+        "en": "Choose the correct option for the blank:\n医者に、お酒を飲まない___注意されました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ように"
+        ],
+        "hint": "〜ように"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Được bác sĩ dặn đừng uống rượu: 「飲まないように注意された」.",
+        "en": "Correct! Warned by the doctor not to drink: 「飲まないように注意された」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Được bác sĩ dặn đừng uống rượu: 「飲まないように注意された」.",
+        "en": "Not quite. Warned by the doctor not to drink: 「飲まないように注意された」."
+      }
+    },
+    {
+      "item": "〜はずだった",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は、友だちと会う（　）でしたが、雨で中止になりました。",
+        "en": "Choose the correct option for the blank:\n今日は、友だちと会う（　）でしたが、雨で中止になりました。"
+      },
+      "payload": {
+        "choices": [
+          "つもり",
+          "はず",
+          "ため",
+          "ところ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dự kiến khách quan nhưng không xảy ra: 「会うはずでした」.",
+        "en": "Correct! An objective expectation that did not materialize: 「会うはずでした」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dự kiến khách quan nhưng không xảy ra: 「会うはずでした」.",
+        "en": "Not quite. An objective expectation that did not materialize: 「会うはずでした」."
+      }
+    },
+    {
+      "item": "〜はずだった",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n会議は、十時に始まる（　）のに、まだ始まりません。",
+        "en": "Choose the pattern that best fits the context:\n会議は、十時に始まる（　）のに、まだ始まりません。"
+      },
+      "payload": {
+        "choices": [
+          "はずだった",
+          "つもりだった",
+          "ことにした",
+          "ようにした"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lịch họp khách quan (không phải ý định của người nói): 「はずだったのに」.",
+        "en": "Correct! An objective meeting schedule (not the speaker's intention): 「はずだったのに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lịch họp khách quan (không phải ý định của người nói): 「はずだったのに」.",
+        "en": "Not quite. An objective meeting schedule (not the speaker's intention): 「はずだったのに」."
+      }
+    },
+    {
+      "item": "〜はずだった",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n今日は　＿　＿　★　＿　。\n（友だちと／会う／はずでしたが／中止になりました）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n今日は　＿　＿　★　＿　。\n（友だちと／会う／はずでしたが／中止になりました）"
+      },
+      "payload": {
+        "choices": [
+          "友だちと",
+          "会う",
+          "中止になりました",
+          "はずでしたが"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「今日は友だちと会うはずでしたが中止になりました。」; ô ★ (thứ ba) là 「はずでしたが」.",
+        "en": "Correct! The correct sentence is 「今日は友だちと会うはずでしたが中止になりました。」; the ★ (third) slot is 「はずでしたが」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「今日は友だちと会うはずでしたが中止になりました。」; ô ★ (thứ ba) là 「はずでしたが」.",
+        "en": "Not quite. The correct sentence is 「今日は友だちと会うはずでしたが中止になりました。」; the ★ (third) slot is 「はずでしたが」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜つもりはない",
+            {
+              "vi": "Không có ý định ~",
+              "en": "Have no intention of ~"
+            }
+          ],
+          [
+            "〜ためには",
+            {
+              "vi": "Để ~ thì phải ~",
+              "en": "In order to ~ (it is necessary to ~)"
+            }
+          ],
+          [
+            "〜(よ)うではないか",
+            {
+              "vi": "Chúng ta hãy ~ (kêu gọi)",
+              "en": "Let us ~ (rallying)"
+            }
+          ],
+          [
+            "〜ように言う／〜ように頼む",
+            {
+              "vi": "Bảo/nhờ ai làm ~",
+              "en": "Tell/ask someone to ~"
+            }
+          ],
+          [
+            "〜はずだった",
+            {
+              "vi": "Lẽ ra đã ~",
+              "en": "Was supposed to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

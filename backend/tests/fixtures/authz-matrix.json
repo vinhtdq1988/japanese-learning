@@ -1,7 +1,7 @@
 {
   "$comment": "Ma trận phân quyền vai trò × route (spec 004, contracts/permissions-matrix.md §2, SC-004). Mỗi route đăng ký dưới /admin/organizations, /org, /classes, /invitations, /me/class PHẢI có một dòng trong 'routes' (kiểm thử org-authz-matrix.test.ts thất bại nếu thiếu). Các dòng được thêm cùng từng câu chuyện (US1: tổ chức/seat; US2–US3: lớp, lời mời, lộ trình; US4+: dữ liệu học viên). Trường: id (duy nhất), method, path (kiểu OpenAPI {id}), params (tên tham số → khóa trong 'thế giới' của org-helpers.ts: orgA, orgB, classC, classD, classE, membershipL, licenseA, invitationA, user<ROLE> hoặc missing), body (đối tượng JSON, hoặc chuỗi cho text/csv), contentType, mutating (true = dựng lại thế giới cho từng vai trò vì thao tác đổi trạng thái), expect (vai trò → '2xx' hoặc mã chính xác như '403'), note.",
   "roles": ["ANON", "USR", "LRN", "TCH", "TCH0", "TCHx", "OWN", "ADM", "OWNb", "TCHb"],
-  "prefixes": ["/admin/organizations", "/org", "/classes", "/invitations", "/me/class"],
+  "prefixes": ["/admin/organizations", "/org", "/classes", "/invitations", "/me/class", "/study-defaults"],
   "routes": [
     {
       "id": "us1-admin-list",
@@ -1481,6 +1481,24 @@
         "TCHb": "404"
       },
       "note": "dòng 7: khoảng tạm dừng không tồn tại ⇒ 404 chung"
+    },
+    {
+      "id": "fix-us1-study-defaults",
+      "method": "GET",
+      "path": "/study-defaults",
+      "expect": {
+        "ANON": "401",
+        "USR": "2xx",
+        "LRN": "2xx",
+        "TCH": "2xx",
+        "TCH0": "2xx",
+        "TCHx": "2xx",
+        "OWN": "2xx",
+        "ADM": "2xx",
+        "OWNb": "2xx",
+        "TCHb": "2xx"
+      },
+      "note": "GET /study-defaults (spec 007): bảng gợi ý tĩnh, mọi người dùng đã đăng nhập đọc được kể cả học viên thuộc lớp; khách 401"
     }
   ],
   "lockedOperations": [

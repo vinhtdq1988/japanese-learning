@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-body-health",
+  "title": {
+    "vi": "Kanji cơ thể – sức khỏe (口 心 足)",
+    "en": "Body and health kanji (口 心 足)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "口",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "miệng; cửa",
+        "en": "mouth"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ",
+          "ク"
+        ],
+        "kunReadings": [
+          "くち"
+        ],
+        "strokeCount": 3
+      },
+      "examples": [
+        {
+          "ja": "人口",
+          "reading": "じんこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "dân số",
+            "en": "population"
+          }
+        },
+        {
+          "ja": "口",
+          "reading": "くち",
+          "kanjiReading": "くち",
+          "translation": {
+            "vi": "miệng",
+            "en": "mouth"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "心",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "tim; tấm lòng",
+        "en": "heart; mind"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "こころ"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "安心",
+          "reading": "あんしん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "yên tâm",
+            "en": "relief"
+          }
+        },
+        {
+          "ja": "心",
+          "reading": "こころ",
+          "kanjiReading": "こころ",
+          "translation": {
+            "vi": "tấm lòng",
+            "en": "heart"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "足",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "chân; đủ",
+        "en": "foot; enough"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソク"
+        ],
+        "kunReadings": [
+          "あし",
+          "た.りる",
+          "た.す"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "不足",
+          "reading": "ふそく",
+          "kanjiReading": "ソク",
+          "translation": {
+            "vi": "thiếu",
+            "en": "shortage"
+          }
+        },
+        {
+          "ja": "足",
+          "reading": "あし",
+          "kanjiReading": "あし",
+          "translation": {
+            "vi": "cái chân",
+            "en": "foot"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "口",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「口」nghĩa là gì?",
+        "en": "What does 「口」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "miệng; cửa",
+            "en": "mouth"
+          },
+          {
+            "vi": "tim; tấm lòng",
+            "en": "heart; mind"
+          },
+          {
+            "vi": "chân; đủ",
+            "en": "foot; enough"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 口 nghĩa là miệng; cửa.",
+        "en": "Correct! 口 means mouth."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 口 nghĩa là miệng; cửa, như trong 「人口」 (dân số).",
+        "en": "Not quite. 口 means mouth, as in 「人口」 (population)."
+      }
+    },
+    {
+      "item": "口",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「口」 trong 「人口」 (“dân số”).",
+        "en": "Type the reading of 「口」 in 「人口」 (“population”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 人口, 口 đọc là こう (âm On).",
+        "en": "Correct! In 人口, 口 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 人口 (dân số), 口 đọc là こう (âm On).",
+        "en": "In 人口 (population), 口 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "口",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「口」(miệng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「口」 (mouth; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "こう",
+          "くち",
+          "あし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 口 = くち (miệng); 口 đọc là くち (âm Kun).",
+        "en": "Correct! 口 = くち (mouth); 口 is read くち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "口 đọc là くち (miệng): 口 mang âm Kun くち.",
+        "en": "口 is read くち (mouth): 口 takes the kun'yomi くち."
+      }
+    },
+    {
+      "item": "心",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「心」nghĩa là gì?",
+        "en": "What does 「心」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chân; đủ",
+            "en": "foot; enough"
+          },
+          {
+            "vi": "tim; tấm lòng",
+            "en": "heart; mind"
+          },
+          {
+            "vi": "miệng; cửa",
+            "en": "mouth"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 心 nghĩa là tim; tấm lòng.",
+        "en": "Correct! 心 means heart; mind."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 心 nghĩa là tim; tấm lòng, như trong 「安心」 (yên tâm).",
+        "en": "Not quite. 心 means heart; mind, as in 「安心」 (relief)."
+      }
+    },
+    {
+      "item": "心",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「心」 trong 「安心」 (“yên tâm”).",
+        "en": "Type the reading of 「心」 in 「安心」 (“relief”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 安心, 心 đọc là しん (âm On).",
+        "en": "Correct! In 安心, 心 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 安心 (yên tâm), 心 đọc là しん (âm On).",
+        "en": "In 安心 (relief), 心 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "心",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「心」(tấm lòng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「心」 (heart; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しん",
+          "ふそく",
+          "こころ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 心 = こころ (tấm lòng); 心 đọc là こころ (âm Kun).",
+        "en": "Correct! 心 = こころ (heart); 心 is read こころ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "心 đọc là こころ (tấm lòng): 心 mang âm Kun こころ.",
+        "en": "心 is read こころ (heart): 心 takes the kun'yomi こころ."
+      }
+    },
+    {
+      "item": "足",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「足」nghĩa là gì?",
+        "en": "What does 「足」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "miệng; cửa",
+            "en": "mouth"
+          },
+          {
+            "vi": "tim; tấm lòng",
+            "en": "heart; mind"
+          },
+          {
+            "vi": "chân; đủ",
+            "en": "foot; enough"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 足 nghĩa là chân; đủ.",
+        "en": "Correct! 足 means foot; enough."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 足 nghĩa là chân; đủ, như trong 「不足」 (thiếu).",
+        "en": "Not quite. 足 means foot; enough, as in 「不足」 (shortage)."
+      }
+    },
+    {
+      "item": "足",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「足」 trong 「不足」 (“thiếu”).",
+        "en": "Type the reading of 「足」 in 「不足」 (“shortage”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そく",
+          "ソク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 不足, 足 đọc là そく (âm On).",
+        "en": "Correct! In 不足, 足 is read そく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 不足 (thiếu), 足 đọc là そく (âm On).",
+        "en": "In 不足 (shortage), 足 is read そく (on'yomi)."
+      }
+    },
+    {
+      "item": "足",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「足」(cái chân; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「足」 (foot; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "あし",
+          "そく",
+          "くち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 足 = あし (cái chân); 足 đọc là あし (âm Kun).",
+        "en": "Correct! 足 = あし (foot); 足 is read あし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "足 đọc là あし (cái chân): 足 mang âm Kun あし.",
+        "en": "足 is read あし (foot): 足 takes the kun'yomi あし."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "口",
+            {
+              "vi": "miệng; cửa",
+              "en": "mouth"
+            }
+          ],
+          [
+            "心",
+            {
+              "vi": "tim; tấm lòng",
+              "en": "heart; mind"
+            }
+          ],
+          [
+            "足",
+            {
+              "vi": "chân; đủ",
+              "en": "foot; enough"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

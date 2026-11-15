@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-work-trade",
+  "title": {
+    "vi": "Doanh thu, lãi lỗ và hóa đơn",
+    "en": "Sales, profit and invoices"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 440,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "売り上げ",
+      "reading": "うりあげ",
+      "meaning": {
+        "vi": "Doanh thu",
+        "en": "Sales (revenue)"
+      },
+      "examples": [
+        {
+          "ja": "今月の売り上げは、先月より二割増えました。",
+          "reading": "こんげつのうりあげは、せんげつよりにわりふえました。",
+          "translation": {
+            "vi": "Doanh thu tháng này tăng hai mươi phần trăm so với tháng trước.",
+            "en": "This month's sales rose by twenty percent from last month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "利益",
+      "reading": "りえき",
+      "meaning": {
+        "vi": "Lợi nhuận",
+        "en": "Profit"
+      },
+      "examples": [
+        {
+          "ja": "この商品は、利益が少ないので、やめることにしました。",
+          "reading": "このしょうひんは、りえきがすくないので、やめることにしました。",
+          "translation": {
+            "vi": "Sản phẩm này lợi nhuận ít nên chúng tôi quyết định ngừng.",
+            "en": "This product earns little profit, so we decided to stop it."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "赤字",
+      "reading": "あかじ",
+      "meaning": {
+        "vi": "Thua lỗ (số đỏ)",
+        "en": "Deficit; being in the red"
+      },
+      "examples": [
+        {
+          "ja": "店は、三年続けて赤字になっています。",
+          "reading": "みせは、さんねんつづけてあかじになっています。",
+          "translation": {
+            "vi": "Cửa hàng thua lỗ liên tiếp ba năm.",
+            "en": "The shop has been in the red for three years in a row."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "黒字",
+      "reading": "くろじ",
+      "meaning": {
+        "vi": "Có lãi (số đen)",
+        "en": "Surplus; being in the black"
+      },
+      "examples": [
+        {
+          "ja": "今年は、やっと黒字になりました。",
+          "reading": "ことしは、やっとくろじになりました。",
+          "translation": {
+            "vi": "Năm nay cuối cùng công ty đã có lãi.",
+            "en": "This year we finally got into the black."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見積もり",
+      "reading": "みつもり",
+      "meaning": {
+        "vi": "Bảng báo giá; sự ước tính",
+        "en": "Estimate; quotation"
+      },
+      "examples": [
+        {
+          "ja": "工事の見積もりを、来週までに出してください。",
+          "reading": "こうじのみつもりを、らいしゅうまでにだしてください。",
+          "translation": {
+            "vi": "Hãy gửi bảng báo giá công trình trước tuần sau.",
+            "en": "Please submit the estimate for the construction work by next week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "請求書",
+      "reading": "せいきゅうしょ",
+      "meaning": {
+        "vi": "Hóa đơn yêu cầu thanh toán",
+        "en": "Invoice; bill"
+      },
+      "examples": [
+        {
+          "ja": "月末に、取引先から請求書が届きます。",
+          "reading": "げつまつに、とりひきさきからせいきゅうしょがとどきます。",
+          "translation": {
+            "vi": "Cuối tháng, hóa đơn thanh toán sẽ được gửi đến từ đối tác.",
+            "en": "At the end of the month an invoice arrives from the client."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "請求",
+      "reading": "せいきゅう",
+      "meaning": {
+        "vi": "Yêu cầu thanh toán",
+        "en": "Billing; claim for payment"
+      },
+      "examples": [
+        {
+          "ja": "修理の代金は、後で請求いたします。",
+          "reading": "しゅうりのだいきんは、あとでせいきゅういたします。",
+          "translation": {
+            "vi": "Phí sửa chữa chúng tôi sẽ yêu cầu thanh toán sau.",
+            "en": "We will bill you for the repair cost later."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "資金",
+      "reading": "しきん",
+      "meaning": {
+        "vi": "Vốn; quỹ",
+        "en": "Funds; capital"
+      },
+      "examples": [
+        {
+          "ja": "新しい店を開くための資金を、銀行から借ります。",
+          "reading": "あたらしいみせをひらくためのしきんを、ぎんこうからかります。",
+          "translation": {
+            "vi": "Tôi vay vốn từ ngân hàng để mở cửa hàng mới.",
+            "en": "I will borrow funds from the bank to open a new shop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "購入",
+      "reading": "こうにゅう",
+      "meaning": {
+        "vi": "Mua (hàng hóa); mua vào",
+        "en": "Purchase"
+      },
+      "examples": [
+        {
+          "ja": "新しいパソコンは、インターネットでも購入できます。",
+          "reading": "あたらしいパソコンは、インターネットでもこうにゅうできます。",
+          "translation": {
+            "vi": "Máy tính mới cũng có thể mua qua mạng.",
+            "en": "You can also purchase the new computer online."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "損",
+      "reading": "そん",
+      "meaning": {
+        "vi": "Thiệt; lỗ; bất lợi",
+        "en": "Loss; disadvantage"
+      },
+      "examples": [
+        {
+          "ja": "今買うと、後で値段が下がって損をします。",
+          "reading": "いまかうと、あとでねだんがさがってそんをします。",
+          "translation": {
+            "vi": "Nếu mua bây giờ, sau này giá giảm thì sẽ bị thiệt.",
+            "en": "If you buy now, the price will drop later and you will lose out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "得",
+      "reading": "とく",
+      "meaning": {
+        "vi": "Lợi; có lợi",
+        "en": "Gain; advantage"
+      },
+      "examples": [
+        {
+          "ja": "まとめて買ったほうが、二割も得です。",
+          "reading": "まとめてかったほうが、にわりもとくです。",
+          "translation": {
+            "vi": "Mua gộp một lần thì lợi hơn tới hai mươi phần trăm.",
+            "en": "Buying in bulk is a full twenty percent better value."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "業績",
+      "reading": "ぎょうせき",
+      "meaning": {
+        "vi": "Thành tích kinh doanh; kết quả hoạt động",
+        "en": "Business results; performance"
+      },
+      "examples": [
+        {
+          "ja": "会社の業績が良くなって、ボーナスが増えました。",
+          "reading": "かいしゃのぎょうせきがよくなって、ボーナスがふえました。",
+          "translation": {
+            "vi": "Kết quả kinh doanh của công ty tốt lên nên tiền thưởng tăng.",
+            "en": "The company's results improved, so bonuses increased."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "売り上げ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今月の（　）は、先月より二割増えました。 — Nghĩa của câu: “Doanh thu tháng này tăng hai mươi phần trăm so với tháng trước.”",
+        "en": "Choose the word that fits the blank: 今月の（　）は、先月より二割増えました。 — Meaning of the sentence: “This month's sales rose by twenty percent from last month.”"
+      },
+      "payload": {
+        "choices": [
+          "損",
+          "資金",
+          "請求書",
+          "売り上げ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売り上げ」(Doanh thu) hợp nghĩa câu này: “Doanh thu tháng này tăng hai mươi phần trăm so với tháng trước.”",
+        "en": "Correct! 「売り上げ」(Sales (revenue)) fits this sentence: “This month's sales rose by twenty percent from last month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Doanh thu tháng này tăng hai mươi phần trăm so với tháng trước.”, nên cần 「売り上げ」(Doanh thu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This month's sales rose by twenty percent from last month.”, so it needs 「売り上げ」(Sales (revenue)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "利益",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この商品は、（　）が少ないので、やめることにしました。 — Nghĩa của câu: “Sản phẩm này lợi nhuận ít nên chúng tôi quyết định ngừng.”",
+        "en": "Choose the word that fits the blank: この商品は、（　）が少ないので、やめることにしました。 — Meaning of the sentence: “This product earns little profit, so we decided to stop it.”"
+      },
+      "payload": {
+        "choices": [
+          "利益",
+          "見積もり",
+          "売り上げ",
+          "黒字"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利益」(Lợi nhuận) hợp nghĩa câu này: “Sản phẩm này lợi nhuận ít nên chúng tôi quyết định ngừng.”",
+        "en": "Correct! 「利益」(Profit) fits this sentence: “This product earns little profit, so we decided to stop it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sản phẩm này lợi nhuận ít nên chúng tôi quyết định ngừng.”, nên cần 「利益」(Lợi nhuận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This product earns little profit, so we decided to stop it.”, so it needs 「利益」(Profit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "赤字",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 店は、三年続けて（　）になっています。 — Nghĩa của câu: “Cửa hàng thua lỗ liên tiếp ba năm.”",
+        "en": "Choose the word that fits the blank: 店は、三年続けて（　）になっています。 — Meaning of the sentence: “The shop has been in the red for three years in a row.”"
+      },
+      "payload": {
+        "choices": [
+          "請求書",
+          "赤字",
+          "得",
+          "売り上げ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「赤字」(Thua lỗ (số đỏ)) hợp nghĩa câu này: “Cửa hàng thua lỗ liên tiếp ba năm.”",
+        "en": "Correct! 「赤字」(Deficit; being in the red) fits this sentence: “The shop has been in the red for three years in a row.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng thua lỗ liên tiếp ba năm.”, nên cần 「赤字」(Thua lỗ (số đỏ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The shop has been in the red for three years in a row.”, so it needs 「赤字」(Deficit; being in the red); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "黒字",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今年は、やっと（　）になりました。 — Nghĩa của câu: “Năm nay cuối cùng công ty đã có lãi.”",
+        "en": "Choose the word that fits the blank: 今年は、やっと（　）になりました。 — Meaning of the sentence: “This year we finally got into the black.”"
+      },
+      "payload": {
+        "choices": [
+          "業績",
+          "赤字",
+          "黒字",
+          "売り上げ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「黒字」(Có lãi (số đen)) hợp nghĩa câu này: “Năm nay cuối cùng công ty đã có lãi.”",
+        "en": "Correct! 「黒字」(Surplus; being in the black) fits this sentence: “This year we finally got into the black.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Năm nay cuối cùng công ty đã có lãi.”, nên cần 「黒字」(Có lãi (số đen)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This year we finally got into the black.”, so it needs 「黒字」(Surplus; being in the black); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見積もり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工事の（　）を、来週までに出してください。 — Nghĩa của câu: “Hãy gửi bảng báo giá công trình trước tuần sau.”",
+        "en": "Choose the word that fits the blank: 工事の（　）を、来週までに出してください。 — Meaning of the sentence: “Please submit the estimate for the construction work by next week.”"
+      },
+      "payload": {
+        "choices": [
+          "売り上げ",
+          "利益",
+          "赤字",
+          "見積もり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見積もり」(Bảng báo giá; sự ước tính) hợp nghĩa câu này: “Hãy gửi bảng báo giá công trình trước tuần sau.”",
+        "en": "Correct! 「見積もり」(Estimate; quotation) fits this sentence: “Please submit the estimate for the construction work by next week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy gửi bảng báo giá công trình trước tuần sau.”, nên cần 「見積もり」(Bảng báo giá; sự ước tính); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please submit the estimate for the construction work by next week.”, so it needs 「見積もり」(Estimate; quotation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "請求書",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 月末に、取引先から（　）が届きます。 — Nghĩa của câu: “Cuối tháng, hóa đơn thanh toán sẽ được gửi đến từ đối tác.”",
+        "en": "Choose the word that fits the blank: 月末に、取引先から（　）が届きます。 — Meaning of the sentence: “At the end of the month an invoice arrives from the client.”"
+      },
+      "payload": {
+        "choices": [
+          "請求書",
+          "見積もり",
+          "購入",
+          "売り上げ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「請求書」(Hóa đơn yêu cầu thanh toán) hợp nghĩa câu này: “Cuối tháng, hóa đơn thanh toán sẽ được gửi đến từ đối tác.”",
+        "en": "Correct! 「請求書」(Invoice; bill) fits this sentence: “At the end of the month an invoice arrives from the client.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối tháng, hóa đơn thanh toán sẽ được gửi đến từ đối tác.”, nên cần 「請求書」(Hóa đơn yêu cầu thanh toán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the end of the month an invoice arrives from the client.”, so it needs 「請求書」(Invoice; bill); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "請求",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 修理の代金は、後で（　）いたします。 — Nghĩa của câu: “Phí sửa chữa chúng tôi sẽ yêu cầu thanh toán sau.”",
+        "en": "Choose the word that fits the blank: 修理の代金は、後で（　）いたします。 — Meaning of the sentence: “We will bill you for the repair cost later.”"
+      },
+      "payload": {
+        "choices": [
+          "売り上げ",
+          "請求",
+          "黒字",
+          "購入"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「請求」(Yêu cầu thanh toán) hợp nghĩa câu này: “Phí sửa chữa chúng tôi sẽ yêu cầu thanh toán sau.”",
+        "en": "Correct! 「請求」(Billing; claim for payment) fits this sentence: “We will bill you for the repair cost later.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Phí sửa chữa chúng tôi sẽ yêu cầu thanh toán sau.”, nên cần 「請求」(Yêu cầu thanh toán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We will bill you for the repair cost later.”, so it needs 「請求」(Billing; claim for payment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "資金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい店を開くための（　）を、銀行から借ります。 — Nghĩa của câu: “Tôi vay vốn từ ngân hàng để mở cửa hàng mới.”",
+        "en": "Choose the word that fits the blank: 新しい店を開くための（　）を、銀行から借ります。 — Meaning of the sentence: “I will borrow funds from the bank to open a new shop.”"
+      },
+      "payload": {
+        "choices": [
+          "請求",
+          "購入",
+          "資金",
+          "利益"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「資金」(Vốn; quỹ) hợp nghĩa câu này: “Tôi vay vốn từ ngân hàng để mở cửa hàng mới.”",
+        "en": "Correct! 「資金」(Funds; capital) fits this sentence: “I will borrow funds from the bank to open a new shop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi vay vốn từ ngân hàng để mở cửa hàng mới.”, nên cần 「資金」(Vốn; quỹ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will borrow funds from the bank to open a new shop.”, so it needs 「資金」(Funds; capital); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "購入",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しいパソコンは、インターネットでも（　）できます。 — Nghĩa của câu: “Máy tính mới cũng có thể mua qua mạng.”",
+        "en": "Choose the word that fits the blank: 新しいパソコンは、インターネットでも（　）できます。 — Meaning of the sentence: “You can also purchase the new computer online.”"
+      },
+      "payload": {
+        "choices": [
+          "資金",
+          "得",
+          "赤字",
+          "購入"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「購入」(Mua (hàng hóa); mua vào) hợp nghĩa câu này: “Máy tính mới cũng có thể mua qua mạng.”",
+        "en": "Correct! 「購入」(Purchase) fits this sentence: “You can also purchase the new computer online.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy tính mới cũng có thể mua qua mạng.”, nên cần 「購入」(Mua (hàng hóa); mua vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can also purchase the new computer online.”, so it needs 「購入」(Purchase); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "損",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今買うと、後で値段が下がって（　）をします。 — Nghĩa của câu: “Nếu mua bây giờ, sau này giá giảm thì sẽ bị thiệt.”",
+        "en": "Choose the word that fits the blank: 今買うと、後で値段が下がって（　）をします。 — Meaning of the sentence: “If you buy now, the price will drop later and you will lose out.”"
+      },
+      "payload": {
+        "choices": [
+          "損",
+          "赤字",
+          "得",
+          "利益"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「損」(Thiệt; lỗ; bất lợi) hợp nghĩa câu này: “Nếu mua bây giờ, sau này giá giảm thì sẽ bị thiệt.”",
+        "en": "Correct! 「損」(Loss; disadvantage) fits this sentence: “If you buy now, the price will drop later and you will lose out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu mua bây giờ, sau này giá giảm thì sẽ bị thiệt.”, nên cần 「損」(Thiệt; lỗ; bất lợi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you buy now, the price will drop later and you will lose out.”, so it needs 「損」(Loss; disadvantage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "得",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: まとめて買ったほうが、二割も（　）です。 — Nghĩa của câu: “Mua gộp một lần thì lợi hơn tới hai mươi phần trăm.”",
+        "en": "Choose the word that fits the blank: まとめて買ったほうが、二割も（　）です。 — Meaning of the sentence: “Buying in bulk is a full twenty percent better value.”"
+      },
+      "payload": {
+        "choices": [
+          "資金",
+          "得",
+          "売り上げ",
+          "赤字"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「得」(Lợi; có lợi) hợp nghĩa câu này: “Mua gộp một lần thì lợi hơn tới hai mươi phần trăm.”",
+        "en": "Correct! 「得」(Gain; advantage) fits this sentence: “Buying in bulk is a full twenty percent better value.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mua gộp một lần thì lợi hơn tới hai mươi phần trăm.”, nên cần 「得」(Lợi; có lợi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Buying in bulk is a full twenty percent better value.”, so it needs 「得」(Gain; advantage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "業績",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の（　）が良くなって、ボーナスが増えました。 — Nghĩa của câu: “Kết quả kinh doanh của công ty tốt lên nên tiền thưởng tăng.”",
+        "en": "Choose the word that fits the blank: 会社の（　）が良くなって、ボーナスが増えました。 — Meaning of the sentence: “The company's results improved, so bonuses increased.”"
+      },
+      "payload": {
+        "choices": [
+          "赤字",
+          "請求書",
+          "業績",
+          "損"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「業績」(Thành tích kinh doanh; kết quả hoạt động) hợp nghĩa câu này: “Kết quả kinh doanh của công ty tốt lên nên tiền thưởng tăng.”",
+        "en": "Correct! 「業績」(Business results; performance) fits this sentence: “The company's results improved, so bonuses increased.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kết quả kinh doanh của công ty tốt lên nên tiền thưởng tăng.”, nên cần 「業績」(Thành tích kinh doanh; kết quả hoạt động); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company's results improved, so bonuses increased.”, so it needs 「業績」(Business results; performance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "売り上げ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今月の「売り上げ」は、先月より二割増えました。",
+        "en": "Choose the correct reading of the word in 「」: 今月の「売り上げ」は、先月より二割増えました。"
+      },
+      "payload": {
+        "choices": [
+          "うりあげ",
+          "こうにゅう",
+          "しきん",
+          "くろじ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売り上げ」 đọc là 「うりあげ」, nghĩa là Doanh thu.",
+        "en": "Correct! 「売り上げ」 is read 「うりあげ」 and means Sales (revenue)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「売り上げ」 đọc là 「うりあげ」 (Doanh thu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「売り上げ」 is read 「うりあげ」 (Sales (revenue)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "黒字",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今年は、やっと「黒字」になりました。",
+        "en": "Choose the correct reading of the word in 「」: 今年は、やっと「黒字」になりました。"
+      },
+      "payload": {
+        "choices": [
+          "ぎょうせき",
+          "くろじ",
+          "うりあげ",
+          "とく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「黒字」 đọc là 「くろじ」, nghĩa là Có lãi (số đen).",
+        "en": "Correct! 「黒字」 is read 「くろじ」 and means Surplus; being in the black."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「黒字」 đọc là 「くろじ」 (Có lãi (số đen)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「黒字」 is read 「くろじ」 (Surplus; being in the black); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "請求",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 修理の代金は、後で「請求」いたします。",
+        "en": "Choose the correct reading of the word in 「」: 修理の代金は、後で「請求」いたします。"
+      },
+      "payload": {
+        "choices": [
+          "こうにゅう",
+          "うりあげ",
+          "せいきゅう",
+          "しきん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「請求」 đọc là 「せいきゅう」, nghĩa là Yêu cầu thanh toán.",
+        "en": "Correct! 「請求」 is read 「せいきゅう」 and means Billing; claim for payment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「請求」 đọc là 「せいきゅう」 (Yêu cầu thanh toán); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「請求」 is read 「せいきゅう」 (Billing; claim for payment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "損",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今買うと、後で値段が下がって「損」をします。",
+        "en": "Choose the correct reading of the word in 「」: 今買うと、後で値段が下がって「損」をします。"
+      },
+      "payload": {
+        "choices": [
+          "ぎょうせき",
+          "こうにゅう",
+          "みつもり",
+          "そん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「損」 đọc là 「そん」, nghĩa là Thiệt; lỗ; bất lợi.",
+        "en": "Correct! 「損」 is read 「そん」 and means Loss; disadvantage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「損」 đọc là 「そん」 (Thiệt; lỗ; bất lợi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「損」 is read 「そん」 (Loss; disadvantage); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "赤字",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 店は、三年続けて「あかじ」になっています。",
+        "en": "Choose the correct way to write the word in 「」: 店は、三年続けて「あかじ」になっています。"
+      },
+      "payload": {
+        "choices": [
+          "請求書",
+          "赤字",
+          "購入",
+          "利益"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「あかじ」 viết là 「赤字」, nghĩa là Thua lỗ (số đỏ).",
+        "en": "Correct! 「あかじ」 is written 「赤字」 and means Deficit; being in the red."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「あかじ」 viết là 「赤字」 (Thua lỗ (số đỏ)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「あかじ」 is written 「赤字」 (Deficit; being in the red); the other words are read differently."
+      }
+    },
+    {
+      "item": "購入",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しいパソコンは、インターネットでも「こうにゅう」できます。",
+        "en": "Choose the correct way to write the word in 「」: 新しいパソコンは、インターネットでも「こうにゅう」できます。"
+      },
+      "payload": {
+        "choices": [
+          "利益",
+          "請求書",
+          "購入",
+          "業績"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こうにゅう」 viết là 「購入」, nghĩa là Mua (hàng hóa); mua vào.",
+        "en": "Correct! 「こうにゅう」 is written 「購入」 and means Purchase."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こうにゅう」 viết là 「購入」 (Mua (hàng hóa); mua vào); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こうにゅう」 is written 「購入」 (Purchase); the other words are read differently."
+      }
+    }
+  ]
+}

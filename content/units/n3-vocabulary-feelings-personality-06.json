@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-feelings-personality",
+  "title": {
+    "vi": "Say mê và thư thái",
+    "en": "Absorption and ease"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "真剣",
+      "reading": "しんけん",
+      "meaning": {
+        "vi": "Nghiêm túc; nghiêm trang",
+        "en": "Serious; earnest"
+      },
+      "examples": [
+        {
+          "ja": "彼は、真剣な顔で話を聞いていました。",
+          "reading": "かれは、しんけんなかおではなしをきいていました。",
+          "translation": {
+            "vi": "Anh ấy lắng nghe với vẻ mặt nghiêm túc.",
+            "en": "He listened with a serious face."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夢中",
+      "reading": "むちゅう",
+      "meaning": {
+        "vi": "Mê mải; say mê",
+        "en": "Absorbed; engrossed"
+      },
+      "examples": [
+        {
+          "ja": "子どもたちは、ゲームに夢中になっています。",
+          "reading": "こどもたちは、ゲームにむちゅうになっています。",
+          "translation": {
+            "vi": "Bọn trẻ đang mê mải chơi trò chơi.",
+            "en": "The children are absorbed in the game."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "熱心",
+      "reading": "ねっしん",
+      "meaning": {
+        "vi": "Nhiệt tình; hăng hái",
+        "en": "Eager; enthusiastic"
+      },
+      "examples": [
+        {
+          "ja": "彼は、毎日、熱心に勉強しています。",
+          "reading": "かれは、まいにち、ねっしんにべんきょうしています。",
+          "translation": {
+            "vi": "Anh ấy học hành rất hăng hái mỗi ngày.",
+            "en": "He studies enthusiastically every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "熱中",
+      "reading": "ねっちゅう",
+      "meaning": {
+        "vi": "Say mê; chìm đắm vào",
+        "en": "Being engrossed"
+      },
+      "examples": [
+        {
+          "ja": "彼は、釣りに熱中して、時間を忘れました。",
+          "reading": "かれは、つりにねっちゅうして、じかんをわすれました。",
+          "translation": {
+            "vi": "Anh ấy mải mê câu cá đến quên cả thời gian.",
+            "en": "He got so engrossed in fishing that he lost track of time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "気楽",
+      "reading": "きらく",
+      "meaning": {
+        "vi": "Thoải mái; nhẹ nhõm",
+        "en": "Easygoing; carefree"
+      },
+      "examples": [
+        {
+          "ja": "一人暮らしは、気楽でいいです。",
+          "reading": "ひとりぐらしは、きらくでいいです。",
+          "translation": {
+            "vi": "Sống một mình thoải mái, dễ chịu.",
+            "en": "Living alone is carefree and nice."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "呑気",
+      "reading": "のんき",
+      "meaning": {
+        "vi": "Vô tư; thong thả",
+        "en": "Carefree; easygoing"
+      },
+      "examples": [
+        {
+          "ja": "試験の前なのに、彼は呑気に遊んでいます。",
+          "reading": "しけんのまえなのに、かれはのんきにあそんでいます。",
+          "translation": {
+            "vi": "Sắp thi mà anh ấy vẫn vô tư chơi.",
+            "en": "Even right before the exam he plays carelessly."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "真剣",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）な顔で話を聞いていました。 — Nghĩa của câu: “Anh ấy lắng nghe với vẻ mặt nghiêm túc.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）な顔で話を聞いていました。 — Meaning of the sentence: “He listened with a serious face.”"
+      },
+      "payload": {
+        "choices": [
+          "熱中",
+          "真剣",
+          "夢中",
+          "呑気"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「真剣」(Nghiêm túc; nghiêm trang) hợp nghĩa câu này: “Anh ấy lắng nghe với vẻ mặt nghiêm túc.”",
+        "en": "Correct! 「真剣」(Serious; earnest) fits this sentence: “He listened with a serious face.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy lắng nghe với vẻ mặt nghiêm túc.”, nên cần 「真剣」(Nghiêm túc; nghiêm trang); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He listened with a serious face.”, so it needs 「真剣」(Serious; earnest); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "夢中",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもたちは、ゲームに（　）になっています。 — Nghĩa của câu: “Bọn trẻ đang mê mải chơi trò chơi.”",
+        "en": "Choose the word that fits the blank: 子どもたちは、ゲームに（　）になっています。 — Meaning of the sentence: “The children are absorbed in the game.”"
+      },
+      "payload": {
+        "choices": [
+          "真剣",
+          "熱心",
+          "夢中",
+          "熱中"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「夢中」(Mê mải; say mê) hợp nghĩa câu này: “Bọn trẻ đang mê mải chơi trò chơi.”",
+        "en": "Correct! 「夢中」(Absorbed; engrossed) fits this sentence: “The children are absorbed in the game.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bọn trẻ đang mê mải chơi trò chơi.”, nên cần 「夢中」(Mê mải; say mê); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The children are absorbed in the game.”, so it needs 「夢中」(Absorbed; engrossed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "熱心",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、毎日、（　）に勉強しています。 — Nghĩa của câu: “Anh ấy học hành rất hăng hái mỗi ngày.”",
+        "en": "Choose the word that fits the blank: 彼は、毎日、（　）に勉強しています。 — Meaning of the sentence: “He studies enthusiastically every day.”"
+      },
+      "payload": {
+        "choices": [
+          "呑気",
+          "真剣",
+          "気楽",
+          "熱心"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「熱心」(Nhiệt tình; hăng hái) hợp nghĩa câu này: “Anh ấy học hành rất hăng hái mỗi ngày.”",
+        "en": "Correct! 「熱心」(Eager; enthusiastic) fits this sentence: “He studies enthusiastically every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy học hành rất hăng hái mỗi ngày.”, nên cần 「熱心」(Nhiệt tình; hăng hái); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He studies enthusiastically every day.”, so it needs 「熱心」(Eager; enthusiastic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "熱中",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、釣りに（　）して、時間を忘れました。 — Nghĩa của câu: “Anh ấy mải mê câu cá đến quên cả thời gian.”",
+        "en": "Choose the word that fits the blank: 彼は、釣りに（　）して、時間を忘れました。 — Meaning of the sentence: “He got so engrossed in fishing that he lost track of time.”"
+      },
+      "payload": {
+        "choices": [
+          "熱中",
+          "夢中",
+          "真剣",
+          "気楽"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「熱中」(Say mê; chìm đắm vào) hợp nghĩa câu này: “Anh ấy mải mê câu cá đến quên cả thời gian.”",
+        "en": "Correct! 「熱中」(Being engrossed) fits this sentence: “He got so engrossed in fishing that he lost track of time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy mải mê câu cá đến quên cả thời gian.”, nên cần 「熱中」(Say mê; chìm đắm vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He got so engrossed in fishing that he lost track of time.”, so it needs 「熱中」(Being engrossed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "気楽",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 一人暮らしは、（　）でいいです。 — Nghĩa của câu: “Sống một mình thoải mái, dễ chịu.”",
+        "en": "Choose the word that fits the blank: 一人暮らしは、（　）でいいです。 — Meaning of the sentence: “Living alone is carefree and nice.”"
+      },
+      "payload": {
+        "choices": [
+          "真剣",
+          "気楽",
+          "夢中",
+          "熱中"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「気楽」(Thoải mái; nhẹ nhõm) hợp nghĩa câu này: “Sống một mình thoải mái, dễ chịu.”",
+        "en": "Correct! 「気楽」(Easygoing; carefree) fits this sentence: “Living alone is carefree and nice.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sống một mình thoải mái, dễ chịu.”, nên cần 「気楽」(Thoải mái; nhẹ nhõm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Living alone is carefree and nice.”, so it needs 「気楽」(Easygoing; carefree); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "呑気",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試験の前なのに、彼は（　）に遊んでいます。 — Nghĩa của câu: “Sắp thi mà anh ấy vẫn vô tư chơi.”",
+        "en": "Choose the word that fits the blank: 試験の前なのに、彼は（　）に遊んでいます。 — Meaning of the sentence: “Even right before the exam he plays carelessly.”"
+      },
+      "payload": {
+        "choices": [
+          "熱心",
+          "真剣",
+          "呑気",
+          "夢中"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「呑気」(Vô tư; thong thả) hợp nghĩa câu này: “Sắp thi mà anh ấy vẫn vô tư chơi.”",
+        "en": "Correct! 「呑気」(Carefree; easygoing) fits this sentence: “Even right before the exam he plays carelessly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sắp thi mà anh ấy vẫn vô tư chơi.”, nên cần 「呑気」(Vô tư; thong thả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Even right before the exam he plays carelessly.”, so it needs 「呑気」(Carefree; easygoing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "真剣",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、「真剣」な顔で話を聞いていました。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、「真剣」な顔で話を聞いていました。"
+      },
+      "payload": {
+        "choices": [
+          "きらく",
+          "むちゅう",
+          "しんけん",
+          "ねっしん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「真剣」 đọc là 「しんけん」, nghĩa là Nghiêm túc; nghiêm trang.",
+        "en": "Correct! 「真剣」 is read 「しんけん」 and means Serious; earnest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「真剣」 đọc là 「しんけん」 (Nghiêm túc; nghiêm trang); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「真剣」 is read 「しんけん」 (Serious; earnest); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "熱中",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、釣りに「熱中」して、時間を忘れました。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、釣りに「熱中」して、時間を忘れました。"
+      },
+      "payload": {
+        "choices": [
+          "きらく",
+          "しんけん",
+          "むちゅう",
+          "ねっちゅう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「熱中」 đọc là 「ねっちゅう」, nghĩa là Say mê; chìm đắm vào.",
+        "en": "Correct! 「熱中」 is read 「ねっちゅう」 and means Being engrossed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「熱中」 đọc là 「ねっちゅう」 (Say mê; chìm đắm vào); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「熱中」 is read 「ねっちゅう」 (Being engrossed); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "熱心",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 彼は、毎日、「ねっしん」に勉強しています。",
+        "en": "Choose the correct way to write the word in 「」: 彼は、毎日、「ねっしん」に勉強しています。"
+      },
+      "payload": {
+        "choices": [
+          "真剣",
+          "夢中",
+          "熱中",
+          "熱心"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ねっしん」 viết là 「熱心」, nghĩa là Nhiệt tình; hăng hái.",
+        "en": "Correct! 「ねっしん」 is written 「熱心」 and means Eager; enthusiastic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ねっしん」 viết là 「熱心」 (Nhiệt tình; hăng hái); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ねっしん」 is written 「熱心」 (Eager; enthusiastic); the other words are read differently."
+      }
+    }
+  ]
+}

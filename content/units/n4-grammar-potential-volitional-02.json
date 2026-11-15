@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-potential-volitional",
+  "title": {
+    "vi": "Nhìn thấy – nghe thấy và ý chí: 見える/聞こえる, 意向形, 〜(よ)うと思う, 〜(よ)うか",
+    "en": "Perception and volition: 見える/聞こえる, volitional form, 〜(よ)うと思う, 〜(よ)うか"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "見える／聞こえる",
+      "meaning": {
+        "vi": "Nhìn thấy được / nghe thấy được",
+        "en": "Be visible / be audible"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: cảnh vật tự đập vào mắt hay âm thanh tự lọt vào tai, không phải do chủ ý. Chủ ngữ (vật nhìn/nghe thấy) đi với 「が」. Khác 見られる/聞ける (khả năng có chủ ý, hay vì có điều kiện cho phép).",
+        "en": "Meaning: a scene comes into view or a sound reaches the ears without intention. The thing seen/heard takes 「が」. Different from 見られる/聞ける, which express intentional ability or having the opportunity."
+      },
+      "examples": [
+        {
+          "ja": "ここから富士山が見えます。",
+          "reading": "ここからふじさんがみえます。",
+          "translation": {
+            "vi": "Từ đây có thể nhìn thấy núi Phú Sĩ.",
+            "en": "Mt. Fuji is visible from here."
+          }
+        },
+        {
+          "ja": "隣の部屋から音楽が聞こえます。",
+          "reading": "となりのへやからおんがくがきこえます。",
+          "translation": {
+            "vi": "Từ phòng bên cạnh nghe thấy tiếng nhạc.",
+            "en": "Music can be heard from the next room."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-021"
+    },
+    {
+      "japanese": "意向形 〜(よ)う",
+      "meaning": {
+        "vi": "Thể ý chí: …nhé, …thôi",
+        "en": "Volitional form"
+      },
+      "explanation": {
+        "vi": "Cách chia: 五段 đổi đuôi う→お + う (行く→行こう); 一段 bỏ る thêm よう (食べる→食べよう); する→しよう, くる→こよう. Nghĩa: rủ rê (…nhé/…thôi) hoặc tự quyết ý định. Dạng lịch sự là 〜ましょう.",
+        "en": "Conjugation: 五段 change the final sound to the お-row + う (行く→行こう); 一段 drop る and add よう (食べる→食べよう); する→しよう, くる→こよう. Meaning: inviting (\"let's…\") or stating one's resolve. The polite form is 〜ましょう."
+      },
+      "examples": [
+        {
+          "ja": "いっしょに昼ごはんを食べよう。",
+          "reading": "いっしょにひるごはんをたべよう。",
+          "translation": {
+            "vi": "Cùng ăn trưa nhé.",
+            "en": "Let's eat lunch together."
+          }
+        },
+        {
+          "ja": "そろそろ帰ろう。",
+          "reading": "そろそろかえろう。",
+          "translation": {
+            "vi": "Sắp đến lúc về rồi, về thôi.",
+            "en": "It is about time to go home."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-022"
+    },
+    {
+      "japanese": "〜(よ)うと思う",
+      "meaning": {
+        "vi": "Định ~, nghĩ sẽ ~",
+        "en": "Be thinking of doing ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ý chí + と思う / と思っている. Nói ý định của người nói ở thời điểm nói; 〜と思っています là ý định đã có từ trước. Chỉ dùng cho ý định của ngôi thứ nhất (với ngôi thứ ba dùng 〜と思っているようだ).",
+        "en": "Usage: volitional form + と思う / と思っている. States the speaker's intention at the time of speaking; 〜と思っています expresses an intention held for some time. It is for the first person's intention only."
+      },
+      "examples": [
+        {
+          "ja": "来年、日本へ留学しようと思っています。",
+          "reading": "らいねん、にほんへりゅうがくしようとおもっています。",
+          "translation": {
+            "vi": "Sang năm tôi định đi du học Nhật Bản.",
+            "en": "I am thinking of studying in Japan next year."
+          }
+        },
+        {
+          "ja": "今日は早く寝ようと思います。",
+          "reading": "きょうははやくねようとおもいます。",
+          "translation": {
+            "vi": "Hôm nay tôi định đi ngủ sớm.",
+            "en": "I think I will go to bed early today."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-023"
+    },
+    {
+      "japanese": "〜(よ)うか",
+      "meaning": {
+        "vi": "…nhé? (rủ/đề nghị)",
+        "en": "Shall we/I ~?"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ý chí + か (thân mật). Dùng để rủ (…nhé?) hoặc đề nghị giúp (手伝おうか). Lịch sự: 〜ましょうか. Khi nói một mình mang nghĩa tự hỏi, phân vân (どうしようか).",
+        "en": "Usage: volitional form + か (casual). Used to propose (\"shall we?\") or offer help (手伝おうか). Polite: 〜ましょうか. When said to oneself it means wondering what to do (どうしようか)."
+      },
+      "examples": [
+        {
+          "ja": "ちょっと休もうか。",
+          "reading": "ちょっとやすもうか。",
+          "translation": {
+            "vi": "Nghỉ một chút nhé?",
+            "en": "Shall we take a short break?"
+          }
+        },
+        {
+          "ja": "荷物が重そうですね。手伝おうか。",
+          "reading": "にもつがおもそうですね。てつだおうか。",
+          "translation": {
+            "vi": "Hành lý trông nặng nhỉ. Để tôi giúp nhé?",
+            "en": "That luggage looks heavy. Shall I help?"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-028"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "見える／聞こえる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの部屋から海が（　）。",
+        "en": "Choose the correct option for the blank:\nこの部屋から海が（　）。"
+      },
+      "payload": {
+        "choices": [
+          "見えます",
+          "見ます",
+          "見せます",
+          "見させます"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cảnh vật tự hiện ra trong tầm mắt dùng 「見えます」.",
+        "en": "Correct! A scene that naturally comes into view uses 「見えます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cảnh vật tự hiện ra trong tầm mắt dùng 「見えます」.",
+        "en": "Not quite. A scene that naturally comes into view uses 「見えます」."
+      }
+    },
+    {
+      "item": "見える／聞こえる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Âm thanh có đến tai hay không là chuyện tự nhiên, ngoài ý chí. Chọn đáp án đúng:\nテレビの音が小さくて、よく（　）。",
+        "en": "Whether the sound reaches the ear is a natural matter, not intentional. Choose the best option:\nテレビの音が小さくて、よく（　）。"
+      },
+      "payload": {
+        "choices": [
+          "聞きません",
+          "聞かせません",
+          "聞かれません",
+          "聞こえません"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Âm thanh tự đến (hoặc không đến) tai dùng 「聞こえる」: 「聞こえません」.",
+        "en": "Correct! A sound that does (or does not) naturally reach the ear uses 「聞こえる」: 「聞こえません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Âm thanh tự đến (hoặc không đến) tai dùng 「聞こえる」: 「聞こえません」.",
+        "en": "Not quite. A sound that does (or does not) naturally reach the ear uses 「聞こえる」: 「聞こえません」."
+      }
+    },
+    {
+      "item": "見える／聞こえる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n遠くに山が___ます。",
+        "en": "Choose the correct option for the blank:\n遠くに山が___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "見え",
+          "みえ"
+        ],
+        "hint": "みえる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dùng 「見える」: 「見えます」, chủ ngữ 「山が」 đi với 「が」.",
+        "en": "Correct! Use 「見える」: 「見えます」, with 「山が」 as the subject."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dùng 「見える」: 「見えます」, chủ ngữ 「山が」 đi với 「が」.",
+        "en": "Not quite. Use 「見える」: 「見えます」, with 「山が」 as the subject."
+      }
+    },
+    {
+      "item": "見える／聞こえる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "向こうに高いビルを見えます。",
+          "向こうに高いビルが見られています。",
+          "向こうに高いビルが見えます。",
+          "向こうに高いビルは見えるます。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見える」 đi với 「が」, không dùng 「を」; thể ます là 「見えます」.",
+        "en": "Correct! 「見える」 takes 「が」, not 「を」; its polite form is 「見えます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見える」 đi với 「が」, không dùng 「を」; thể ます là 「見えます」.",
+        "en": "Not quite. 「見える」 takes 「が」, not 「を」; its polite form is 「見えます」."
+      }
+    },
+    {
+      "item": "意向形 〜(よ)う",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nいっしょに帰（　）。\n（Rủ bạn thân cùng về, nói thân mật.）",
+        "en": "Choose the correct option for the blank:\nいっしょに帰（　）。\n(Inviting a close friend to go home together, in casual speech.)"
+      },
+      "payload": {
+        "choices": [
+          "ります",
+          "ろう",
+          "ろ",
+          "った"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「帰る」 thuộc nhóm 五段; thể ý chí đổi る→ろ + う: 「帰ろう」.",
+        "en": "Correct! 「帰る」 is a 五段 verb; its volitional form is 「帰ろう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「帰る」 thuộc nhóm 五段; thể ý chí đổi る→ろ + う: 「帰ろう」.",
+        "en": "Not quite. 「帰る」 is a 五段 verb; its volitional form is 「帰ろう」."
+      }
+    },
+    {
+      "item": "意向形 〜(よ)う",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n朝ごはんを食べ（　）。\n（Rủ bạn thân cùng ăn sáng, nói thân mật.）",
+        "en": "Choose the correct option for the blank:\n朝ごはんを食べ（　）。\n(Inviting a close friend to eat breakfast together, in casual speech.)"
+      },
+      "payload": {
+        "choices": [
+          "よう",
+          "ろう",
+          "ます",
+          "られる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食べる」 thuộc nhóm 一段 nên thể ý chí là 「食べよう」.",
+        "en": "Correct! 「食べる」 is an 一段 verb, so the volitional form is 「食べよう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「食べる」 thuộc nhóm 一段 nên thể ý chí là 「食べよう」.",
+        "en": "Not quite. 「食べる」 is an 一段 verb, so the volitional form is 「食べよう」."
+      }
+    },
+    {
+      "item": "意向形 〜(よ)う",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nそろそろ出かけ___。",
+        "en": "Choose the correct option for the blank:\nそろそろ出かけ___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう"
+        ],
+        "hint": "〜よう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出かける」 thuộc nhóm 一段, bỏ 「る」 thêm 「よう」: 「出かけよう」.",
+        "en": "Correct! 「出かける」 is an 一段 verb: drop 「る」 and add 「よう」: 「出かけよう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「出かける」 thuộc nhóm 一段, bỏ 「る」 thêm 「よう」: 「出かけよう」.",
+        "en": "Not quite. 「出かける」 is an 一段 verb: drop 「る」 and add 「よう」: 「出かけよう」."
+      }
+    },
+    {
+      "item": "意向形 〜(よ)う",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "今度の日曜日、いっしょに映画を見に行くよう。",
+          "今度の日曜日、いっしょに映画を見に行きよう。",
+          "今度の日曜日、いっしょに映画を見に行いこう。",
+          "今度の日曜日、いっしょに映画を見に行こう。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「行く」 thuộc nhóm 五段, thể ý chí là 「行こう」.",
+        "en": "Correct! 「行く」 is a 五段 verb and its volitional form is 「行こう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「行く」 thuộc nhóm 五段, thể ý chí là 「行こう」.",
+        "en": "Not quite. 「行く」 is a 五段 verb and its volitional form is 「行こう」."
+      }
+    },
+    {
+      "item": "〜(よ)うと思う",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n来年、日本へ留学しよう（　）思っています。",
+        "en": "Choose the correct option for the blank:\n来年、日本へ留学しよう（　）思っています。"
+      },
+      "payload": {
+        "choices": [
+          "に",
+          "を",
+          "と",
+          "が"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu là 「意向形 + と思う」: 「しようと思っています」.",
+        "en": "Correct! The pattern is 「volitional form + と思う」: 「しようと思っています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu là 「意向形 + と思う」: 「しようと思っています」.",
+        "en": "Not quite. The pattern is 「volitional form + と思う」: 「しようと思っています」."
+      }
+    },
+    {
+      "item": "〜(よ)うと思う",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n来月から運動をしよう___思っています。",
+        "en": "Choose the correct option for the blank:\n来月から運動をしよう___思っています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "と"
+        ],
+        "hint": "と"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ý định được trích bằng 「と」 trước 「思う」.",
+        "en": "Correct! The intention is quoted with 「と」 before 「思う」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ý định được trích bằng 「と」 trước 「思う」.",
+        "en": "Not quite. The intention is quoted with 「と」 before 「思う」."
+      }
+    },
+    {
+      "item": "〜(よ)うか",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n荷物が重そうですね。手伝（　）。",
+        "en": "Choose the correct option for the blank:\n荷物が重そうですね。手伝（　）。"
+      },
+      "payload": {
+        "choices": [
+          "うか",
+          "おうか",
+          "いうか",
+          "おうだ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「手伝う」 thuộc nhóm 五段, thể ý chí là 「手伝おう」, thêm 「か」 để đề nghị.",
+        "en": "Correct! 「手伝う」 is a 五段 verb with volitional form 「手伝おう」; add 「か」 to make an offer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「手伝う」 thuộc nhóm 五段, thể ý chí là 「手伝おう」, thêm 「か」 để đề nghị.",
+        "en": "Not quite. 「手伝う」 is a 五段 verb with volitional form 「手伝おう」; add 「か」 to make an offer."
+      }
+    },
+    {
+      "item": "〜(よ)うか",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Bạn muốn nhẹ nhàng hỏi ý bạn mình xem có nên nghỉ không (thân mật). Chọn đáp án đúng:\n疲れたね。ちょっと休（　）。",
+        "en": "You want to gently ask a friend whether to take a break (casual). Choose the best option:\n疲れたね。ちょっと休（　）。"
+      },
+      "payload": {
+        "choices": [
+          "もうか",
+          "みます",
+          "まない",
+          "んだ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hỏi ý người nghe, rủ nhẹ nhàng thì dùng 「〜(よ)うか」: 「休もうか」.",
+        "en": "Correct! Gently asking the listener's opinion uses 「〜(よ)うか」: 「休もうか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hỏi ý người nghe, rủ nhẹ nhàng thì dùng 「〜(よ)うか」: 「休もうか」.",
+        "en": "Not quite. Gently asking the listener's opinion uses 「〜(よ)うか」: 「休もうか」."
+      }
+    },
+    {
+      "item": "〜(よ)うと思う",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n来年、＿　★　＿　思っています。\n（日本へ／留学しよう／と）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n来年、＿　★　＿　思っています。\n（日本へ／留学しよう／と）"
+      },
+      "payload": {
+        "choices": [
+          "日本へ",
+          "留学しよう",
+          "と"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「来年、日本へ留学しようと思っています。」; ô ★ (thứ hai) là 「留学しよう」.",
+        "en": "Correct! The correct sentence is 「来年、日本へ留学しようと思っています。」; the ★ (second) slot is 「留学しよう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「来年、日本へ留学しようと思っています。」; ô ★ (thứ hai) là 「留学しよう」.",
+        "en": "Not quite. The correct sentence is 「来年、日本へ留学しようと思っています。」; the ★ (second) slot is 「留学しよう」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "見える／聞こえる",
+            {
+              "vi": "Nhìn thấy được / nghe thấy được",
+              "en": "Be visible / be audible"
+            }
+          ],
+          [
+            "意向形 〜(よ)う",
+            {
+              "vi": "Thể ý chí: …nhé, …thôi",
+              "en": "Volitional form"
+            }
+          ],
+          [
+            "〜(よ)うと思う",
+            {
+              "vi": "Định ~, nghĩ sẽ ~",
+              "en": "Be thinking of doing ~"
+            }
+          ],
+          [
+            "〜(よ)うか",
+            {
+              "vi": "…nhé? (rủ/đề nghị)",
+              "en": "Shall we/I ~?"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

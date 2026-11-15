@@ -7,6 +7,7 @@ import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../shared/page_frame.dart';
 import 'auth_support.dart';
+import 'password_field.dart';
 
 /// Đặt mật khẩu mới từ liên kết trong email (T052). Token một lần lấy từ query `?token=`; liên kết hết
 /// hạn hoặc đã dùng bị từ chối kèm gợi ý yêu cầu liên kết mới.
@@ -93,10 +94,9 @@ class _ResetPasswordScreenState extends ConsumerState<ResetPasswordScreen> {
         children: <Widget>[
           Form(
             key: _formKey,
-            child: TextFormField(
+            child: PasswordField(
               key: const Key('password'),
               controller: _password,
-              obscureText: true,
               autofillHints: const <String>[AutofillHints.newPassword],
               decoration: InputDecoration(
                 labelText: l10n.authNewPasswordLabel,

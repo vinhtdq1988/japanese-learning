@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-purpose-intention",
+  "title": {
+    "vi": "Ý định (2): 〜ことになっている và 〜つもりだった",
+    "en": "Intention (2): 〜ことになっている and 〜つもりだった"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ことになっている",
+      "meaning": {
+        "vi": "Theo quy định/dự kiến thì ~",
+        "en": "It is arranged/the rule is that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ことになっている. Nói quy tắc, quy định, thông lệ, hoặc lịch đã được sắp xếp; không phải ý của người nói. Khác 〜ことにしている (quy tắc cá nhân).",
+        "en": "Usage: verb dictionary/ない-form + ことになっている. States a rule, regulation, custom or arrangement not originating with the speaker. Unlike 〜ことにしている (a personal rule)."
+      },
+      "examples": [
+        {
+          "ja": "この寮では、夜十時以降は静かにすることになっています。",
+          "reading": "このりょうでは、よるじゅうじいこうはしずかにすることになっています。",
+          "translation": {
+            "vi": "Ở ký túc xá này có quy định sau mười giờ tối phải giữ yên lặng.",
+            "en": "In this dormitory, it is the rule to be quiet after ten at night."
+          }
+        },
+        {
+          "ja": "明日、社長に会うことになっています。",
+          "reading": "あした、しゃちょうにあうことになっています。",
+          "translation": {
+            "vi": "Ngày mai tôi đã được sắp xếp gặp giám đốc.",
+            "en": "I am scheduled to meet the president tomorrow."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-072"
+    },
+    {
+      "japanese": "〜つもりだった",
+      "meaning": {
+        "vi": "Đã định ~ (nhưng)",
+        "en": "Had intended to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + つもりだった (つもりでした). Ý định trong quá khứ mà thực tế không thực hiện được hoặc khác đi. Thường theo sau bởi けど/が/のに. Cũng dùng \"tưởng là\" với 〜たつもりだった.",
+        "en": "Usage: verb dictionary/ない-form + つもりだった (つもりでした). A past intention that was not carried out or turned out differently, often followed by けど/が/のに. Also \"thought I had ~\" with 〜たつもりだった."
+      },
+      "examples": [
+        {
+          "ja": "行くつもりでしたが、用事ができて行けませんでした。",
+          "reading": "いくつもりでしたが、ようじができていけませんでした。",
+          "translation": {
+            "vi": "Tôi đã định đi nhưng có việc bận nên không đi được.",
+            "en": "I had intended to go, but something came up and I could not."
+          }
+        },
+        {
+          "ja": "買うつもりだったが、高すぎてやめました。",
+          "reading": "かうつもりだったが、たかすぎてやめました。",
+          "translation": {
+            "vi": "Tôi đã định mua nhưng đắt quá nên thôi.",
+            "en": "I had meant to buy it, but it was too expensive."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-073"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ことになっている",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの寮では、夜十時以降は静かにする（　）なっています。",
+        "en": "Choose the correct option for the blank:\nこの寮では、夜十時以降は静かにする（　）なっています。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ことに",
+          "ために",
+          "ことが"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy định có sẵn: 「することになっている」.",
+        "en": "Correct! An established rule: 「することになっている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy định có sẵn: 「することになっている」.",
+        "en": "Not quite. An established rule: 「することになっている」."
+      }
+    },
+    {
+      "item": "〜ことになっている",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日、社長に会う___になっています。",
+        "en": "Choose the correct option for the blank:\n明日、社長に会う___になっています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こと"
+        ],
+        "hint": "こと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lịch đã sắp xếp: 「会うことになっています」.",
+        "en": "Correct! An arranged schedule: 「会うことになっています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lịch đã sắp xếp: 「会うことになっています」.",
+        "en": "Not quite. An arranged schedule: 「会うことになっています」."
+      }
+    },
+    {
+      "item": "〜ことになっている",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこの会社では、毎朝、掃除をする（　）。",
+        "en": "Choose the pattern that best fits the context:\nこの会社では、毎朝、掃除をする（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ことになっています",
+          "ことにしています",
+          "ことにしました",
+          "ようにしました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy định của công ty (không phải ý riêng của người nói): 「ことになっています」.",
+        "en": "Correct! A company rule (not the speaker's personal choice): 「ことになっています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy định của công ty (không phải ý riêng của người nói): 「ことになっています」.",
+        "en": "Not quite. A company rule (not the speaker's personal choice): 「ことになっています」."
+      }
+    },
+    {
+      "item": "〜ことになっている",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "日本では、車は左側を走るのことになっています。",
+          "日本では、車は左側を走ったことになっています。",
+          "日本では、車は左側を走ってことになっています。",
+          "日本では、車は左側を走ることになっています。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「ことになっている」 là thể từ điển: 「走ることになっている」.",
+        "en": "Correct! Before 「ことになっている」 comes the dictionary form: 「走ることになっている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「ことになっている」 là thể từ điển: 「走ることになっている」.",
+        "en": "Not quite. Before 「ことになっている」 comes the dictionary form: 「走ることになっている」."
+      }
+    },
+    {
+      "item": "〜つもりだった",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n行く（　）でしたが、用事ができて行けませんでした。",
+        "en": "Choose the correct option for the blank:\n行く（　）でしたが、用事ができて行けませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "ために",
+          "ように",
+          "つもり",
+          "わけ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ý định đã có nhưng không thực hiện được: 「行くつもりでした」.",
+        "en": "Correct! An intention that was not realized: 「行くつもりでした」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ý định đã có nhưng không thực hiện được: 「行くつもりでした」.",
+        "en": "Not quite. An intention that was not realized: 「行くつもりでした」."
+      }
+    },
+    {
+      "item": "〜つもりだった",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n買う___だったが、高すぎてやめました。",
+        "en": "Choose the correct option for the blank:\n買う___だったが、高すぎてやめました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "つもり"
+        ],
+        "hint": "つもり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đã định mua: 「買うつもりだった」.",
+        "en": "Correct! I had meant to buy: 「買うつもりだった」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đã định mua: 「買うつもりだった」.",
+        "en": "Not quite. I had meant to buy: 「買うつもりだった」."
+      }
+    },
+    {
+      "item": "〜つもりだった",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người nói tưởng là mình đã gọi điện nhưng thực ra đã quên. Chọn đáp án đúng:\n電話した（　）が、実は忘れていました。",
+        "en": "The speaker thought they had made the call but had actually forgotten. Choose the best option:\n電話した（　）が、実は忘れていました。"
+      },
+      "payload": {
+        "choices": [
+          "ことになった",
+          "つもりだった",
+          "はずだった",
+          "ようにした"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cứ tưởng là đã làm: 「〜たつもりだった」.",
+        "en": "Correct! Thinking one had done it: 「〜たつもりだった」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cứ tưởng là đã làm: 「〜たつもりだった」.",
+        "en": "Not quite. Thinking one had done it: 「〜たつもりだった」."
+      }
+    },
+    {
+      "item": "〜つもりだった",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "勉強するつもりでしたが、眠くなりました。",
+          "勉強するつもりでしたが、眠くなりましょう。",
+          "勉強するつもりでしたが、眠くなってください。",
+          "勉強するつもりでしたが、眠くなりたい。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「つもりでしたが」 là sự thật khác với ý định: 「眠くなりました」.",
+        "en": "Correct! After 「つもりでしたが」 comes the fact that differed from the intention: 「眠くなりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「つもりでしたが」 là sự thật khác với ý định: 「眠くなりました」.",
+        "en": "Not quite. After 「つもりでしたが」 comes the fact that differed from the intention: 「眠くなりました」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ことになっている",
+            {
+              "vi": "Theo quy định/dự kiến thì ~",
+              "en": "It is arranged/the rule is that ~"
+            }
+          ],
+          [
+            "〜つもりだった",
+            {
+              "vi": "Đã định ~ (nhưng)",
+              "en": "Had intended to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

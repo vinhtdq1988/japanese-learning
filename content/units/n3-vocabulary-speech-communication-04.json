@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-speech-communication",
+  "title": {
+    "vi": "Đáp lại và nói chuyện",
+    "en": "Responses and small talk"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "応答",
+      "reading": "おうとう",
+      "meaning": {
+        "vi": "Đáp lại; trả lời (phản hồi)",
+        "en": "Response (answering)"
+      },
+      "examples": [
+        {
+          "ja": "何度呼んでも、応答がありませんでした。",
+          "reading": "なんどよんでも、おうとうがありませんでした。",
+          "translation": {
+            "vi": "Gọi bao nhiêu lần cũng không có ai đáp lại.",
+            "en": "No matter how many times I called, there was no response."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "答弁",
+      "reading": "とうべん",
+      "meaning": {
+        "vi": "Trả lời chất vấn",
+        "en": "Reply (in a legislature)"
+      },
+      "examples": [
+        {
+          "ja": "大臣は、国会で質問に答弁しました。",
+          "reading": "だいじんは、こっかいでしつもんにとうべんしました。",
+          "translation": {
+            "vi": "Bộ trưởng đã trả lời chất vấn tại quốc hội.",
+            "en": "The minister answered questions in the Diet."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発する",
+      "reading": "はっする",
+      "meaning": {
+        "vi": "Phát ra; ban hành",
+        "en": "To emit; to utter"
+      },
+      "examples": [
+        {
+          "ja": "大きな声を発することは、禁止されています。",
+          "reading": "おおきなこえをはっすることは、きんしされています。",
+          "translation": {
+            "vi": "Việc cất tiếng lớn bị cấm.",
+            "en": "Raising your voice loudly is prohibited."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "囁く",
+      "reading": "ささやく",
+      "meaning": {
+        "vi": "Thì thầm",
+        "en": "To whisper"
+      },
+      "examples": [
+        {
+          "ja": "彼女は、耳元で、そっと囁くことにしました。",
+          "reading": "かのじょは、みみもとで、そっとささやくことにしました。",
+          "translation": {
+            "vi": "Cô ấy quyết định thì thầm khẽ bên tai.",
+            "en": "She decided to whisper softly in my ear."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "世間話",
+      "reading": "せけんばなし",
+      "meaning": {
+        "vi": "Chuyện thường ngày; tán gẫu",
+        "en": "Small talk"
+      },
+      "examples": [
+        {
+          "ja": "近所の人と、世間話をしました。",
+          "reading": "きんじょのひとと、せけんばなしをしました。",
+          "translation": {
+            "vi": "Tôi đã nói chuyện phiếm với người hàng xóm.",
+            "en": "I made small talk with a neighbor."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "言い訳",
+      "reading": "いいわけ",
+      "meaning": {
+        "vi": "Lý do biện hộ; viện cớ",
+        "en": "Excuse"
+      },
+      "examples": [
+        {
+          "ja": "言い訳をする前に、まず謝ってください。",
+          "reading": "いいわけをするまえに、まずあやまってください。",
+          "translation": {
+            "vi": "Trước khi viện cớ hãy xin lỗi trước đã.",
+            "en": "Before making excuses, please apologize first."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "応答",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 何度呼んでも、（　）がありませんでした。 — Nghĩa của câu: “Gọi bao nhiêu lần cũng không có ai đáp lại.”",
+        "en": "Choose the word that fits the blank: 何度呼んでも、（　）がありませんでした。 — Meaning of the sentence: “No matter how many times I called, there was no response.”"
+      },
+      "payload": {
+        "choices": [
+          "応答",
+          "答弁",
+          "世間話",
+          "言い訳"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「応答」(Đáp lại; trả lời (phản hồi)) hợp nghĩa câu này: “Gọi bao nhiêu lần cũng không có ai đáp lại.”",
+        "en": "Correct! 「応答」(Response (answering)) fits this sentence: “No matter how many times I called, there was no response.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gọi bao nhiêu lần cũng không có ai đáp lại.”, nên cần 「応答」(Đáp lại; trả lời (phản hồi)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “No matter how many times I called, there was no response.”, so it needs 「応答」(Response (answering)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "答弁",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大臣は、国会で質問に（　）しました。 — Nghĩa của câu: “Bộ trưởng đã trả lời chất vấn tại quốc hội.”",
+        "en": "Choose the word that fits the blank: 大臣は、国会で質問に（　）しました。 — Meaning of the sentence: “The minister answered questions in the Diet.”"
+      },
+      "payload": {
+        "choices": [
+          "世間話",
+          "答弁",
+          "応答",
+          "言い訳"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「答弁」(Trả lời chất vấn) hợp nghĩa câu này: “Bộ trưởng đã trả lời chất vấn tại quốc hội.”",
+        "en": "Correct! 「答弁」(Reply (in a legislature)) fits this sentence: “The minister answered questions in the Diet.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bộ trưởng đã trả lời chất vấn tại quốc hội.”, nên cần 「答弁」(Trả lời chất vấn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The minister answered questions in the Diet.”, so it needs 「答弁」(Reply (in a legislature)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発する",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きな声を（　）ことは、禁止されています。 — Nghĩa của câu: “Việc cất tiếng lớn bị cấm.”",
+        "en": "Choose the word that fits the blank: 大きな声を（　）ことは、禁止されています。 — Meaning of the sentence: “Raising your voice loudly is prohibited.”"
+      },
+      "payload": {
+        "choices": [
+          "囁く",
+          "応答",
+          "発する",
+          "答弁"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発する」(Phát ra; ban hành) hợp nghĩa câu này: “Việc cất tiếng lớn bị cấm.”",
+        "en": "Correct! 「発する」(To emit; to utter) fits this sentence: “Raising your voice loudly is prohibited.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc cất tiếng lớn bị cấm.”, nên cần 「発する」(Phát ra; ban hành); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Raising your voice loudly is prohibited.”, so it needs 「発する」(To emit; to utter); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "囁く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼女は、耳元で、そっと（　）ことにしました。 — Nghĩa của câu: “Cô ấy quyết định thì thầm khẽ bên tai.”",
+        "en": "Choose the word that fits the blank: 彼女は、耳元で、そっと（　）ことにしました。 — Meaning of the sentence: “She decided to whisper softly in my ear.”"
+      },
+      "payload": {
+        "choices": [
+          "発する",
+          "応答",
+          "世間話",
+          "囁く"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「囁く」(Thì thầm) hợp nghĩa câu này: “Cô ấy quyết định thì thầm khẽ bên tai.”",
+        "en": "Correct! 「囁く」(To whisper) fits this sentence: “She decided to whisper softly in my ear.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cô ấy quyết định thì thầm khẽ bên tai.”, nên cần 「囁く」(Thì thầm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “She decided to whisper softly in my ear.”, so it needs 「囁く」(To whisper); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "世間話",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 近所の人と、（　）をしました。 — Nghĩa của câu: “Tôi đã nói chuyện phiếm với người hàng xóm.”",
+        "en": "Choose the word that fits the blank: 近所の人と、（　）をしました。 — Meaning of the sentence: “I made small talk with a neighbor.”"
+      },
+      "payload": {
+        "choices": [
+          "世間話",
+          "応答",
+          "答弁",
+          "言い訳"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「世間話」(Chuyện thường ngày; tán gẫu) hợp nghĩa câu này: “Tôi đã nói chuyện phiếm với người hàng xóm.”",
+        "en": "Correct! 「世間話」(Small talk) fits this sentence: “I made small talk with a neighbor.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nói chuyện phiếm với người hàng xóm.”, nên cần 「世間話」(Chuyện thường ngày; tán gẫu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I made small talk with a neighbor.”, so it needs 「世間話」(Small talk); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "言い訳",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）をする前に、まず謝ってください。 — Nghĩa của câu: “Trước khi viện cớ hãy xin lỗi trước đã.”",
+        "en": "Choose the word that fits the blank: （　）をする前に、まず謝ってください。 — Meaning of the sentence: “Before making excuses, please apologize first.”"
+      },
+      "payload": {
+        "choices": [
+          "世間話",
+          "言い訳",
+          "応答",
+          "答弁"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「言い訳」(Lý do biện hộ; viện cớ) hợp nghĩa câu này: “Trước khi viện cớ hãy xin lỗi trước đã.”",
+        "en": "Correct! 「言い訳」(Excuse) fits this sentence: “Before making excuses, please apologize first.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi viện cớ hãy xin lỗi trước đã.”, nên cần 「言い訳」(Lý do biện hộ; viện cớ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before making excuses, please apologize first.”, so it needs 「言い訳」(Excuse); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "応答",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 何度呼んでも、「応答」がありませんでした。",
+        "en": "Choose the correct reading of the word in 「」: 何度呼んでも、「応答」がありませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "とうべん",
+          "おうとう",
+          "はっする",
+          "せけんばなし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「応答」 đọc là 「おうとう」, nghĩa là Đáp lại; trả lời (phản hồi).",
+        "en": "Correct! 「応答」 is read 「おうとう」 and means Response (answering)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「応答」 đọc là 「おうとう」 (Đáp lại; trả lời (phản hồi)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「応答」 is read 「おうとう」 (Response (answering)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "囁く",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼女は、耳元で、そっと「囁く」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: 彼女は、耳元で、そっと「囁く」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "はっする",
+          "おうとう",
+          "ささやく",
+          "とうべん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「囁く」 đọc là 「ささやく」, nghĩa là Thì thầm.",
+        "en": "Correct! 「囁く」 is read 「ささやく」 and means To whisper."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「囁く」 đọc là 「ささやく」 (Thì thầm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「囁く」 is read 「ささやく」 (To whisper); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "発する",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 大きな声を「はっする」ことは、禁止されています。",
+        "en": "Choose the correct way to write the word in 「」: 大きな声を「はっする」ことは、禁止されています。"
+      },
+      "payload": {
+        "choices": [
+          "言い訳",
+          "応答",
+          "発する",
+          "答弁"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はっする」 viết là 「発する」, nghĩa là Phát ra; ban hành.",
+        "en": "Correct! 「はっする」 is written 「発する」 and means To emit; to utter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はっする」 viết là 「発する」 (Phát ra; ban hành); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はっする」 is written 「発する」 (To emit; to utter); the other words are read differently."
+      }
+    }
+  ]
+}

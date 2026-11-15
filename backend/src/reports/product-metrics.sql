@@ -312,3 +312,24 @@ SELECT l.day                                                                    
   FROM launch l
   LEFT JOIN plan_days d ON true
  GROUP BY l.day;
+
+-- name: practice_opt_in_ratio
+-- Spec 007 SC-003/SC-004: theo dõi luyện đọc/viết. `du_dieu_kien` = học viên có quỹ thời gian đã lưu >= 30 phút
+-- (PRACTICE_MIN_DAILY_MINUTES); `bat_luyen` = `learning_profiles.skills` chứa `reading` hoặc `writing`.
+-- `bat_luyen_chua_du_dieu_kien` là lựa chọn đã lưu nhưng đang bị lọc ở hồ sơ hiệu lực (quỹ thời gian đã hạ xuống dưới 30,
+-- không xóa lựa chọn — spec 007 bất biến I4). Xấp xỉ theo hồ sơ đã lưu, không xét quỹ thời gian do lớp quy định.
+-- Chia cho 0 ⇒ tỷ lệ NULL.
+WITH learners AS (
+  SELECT COALESCE(p.daily_minutes, 0) >= 30                                  AS eligible,
+         p.skills && ARRAY['reading', 'writing']::skill[]                    AS opted_in
+    FROM learning_profiles p
+    JOIN users u ON u.id = p.user_id AND u.role = 'learner'
+)
+SELECT count(*)                                                              AS so_nguoi_hoc,
+       count(*) FILTER (WHERE eligible)                                      AS du_dieu_kien,
+       count(*) FILTER (WHERE opted_in)                                      AS bat_luyen,
+       count(*) FILTER (WHERE eligible AND opted_in)                         AS bat_luyen_du_dieu_kien,
+       count(*) FILTER (WHERE NOT eligible AND opted_in)                     AS bat_luyen_chua_du_dieu_kien,
+       round(100.0 * count(*) FILTER (WHERE eligible AND opted_in)
+             / NULLIF(count(*) FILTER (WHERE eligible), 0), 1)               AS ty_le_bat_luyen_pct
+  FROM learners;

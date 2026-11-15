@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society-politics",
+  "title": {
+    "vi": "Kanji xã hội – chính trị (承 認 都)",
+    "en": "Society and politics kanji (承 認 都)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "承",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "chấp nhận; tiếp nhận",
+        "en": "consent; receive"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "うけたまわ.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "承知",
+          "reading": "しょうち",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "đồng ý; biết",
+            "en": "consent"
+          }
+        },
+        {
+          "ja": "了承",
+          "reading": "りょうしょう",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "chấp thuận",
+            "en": "acknowledgment"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "認",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "công nhận; xác nhận",
+        "en": "acknowledge; confirm"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ニン"
+        ],
+        "kunReadings": [
+          "みと.める"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "確認",
+          "reading": "かくにん",
+          "kanjiReading": "ニン",
+          "translation": {
+            "vi": "xác nhận",
+            "en": "confirmation"
+          }
+        },
+        {
+          "ja": "認める",
+          "reading": "みとめる",
+          "kanjiReading": "みと",
+          "translation": {
+            "vi": "công nhận",
+            "en": "to recognize"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "都",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "đô thị; thủ đô",
+        "en": "metropolis; capital"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ト",
+          "ツ"
+        ],
+        "kunReadings": [
+          "みやこ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "都市",
+          "reading": "とし",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "đô thị",
+            "en": "city"
+          }
+        },
+        {
+          "ja": "都合",
+          "reading": "つごう",
+          "kanjiReading": "ツ",
+          "translation": {
+            "vi": "hoàn cảnh; sự thuận tiện",
+            "en": "convenience"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "承",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「承」nghĩa là gì?",
+        "en": "What does 「承」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chấp nhận; tiếp nhận",
+            "en": "consent; receive"
+          },
+          {
+            "vi": "công nhận; xác nhận",
+            "en": "acknowledge; confirm"
+          },
+          {
+            "vi": "đô thị; thủ đô",
+            "en": "metropolis; capital"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 承 nghĩa là chấp nhận; tiếp nhận.",
+        "en": "Correct! 承 means consent; receive."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 承 nghĩa là chấp nhận; tiếp nhận, như trong 「承知」 (đồng ý; biết).",
+        "en": "Not quite. 承 means consent; receive, as in 「承知」 (consent)."
+      }
+    },
+    {
+      "item": "承",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「承」 trong 「承知」 (“đồng ý; biết”).",
+        "en": "Type the reading of 「承」 in 「承知」 (“consent”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 承知, 承 đọc là しょう (âm On).",
+        "en": "Correct! In 承知, 承 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 承知 (đồng ý; biết), 承 đọc là しょう (âm On).",
+        "en": "In 承知 (consent), 承 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "承",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「了承」(chấp thuận) đọc là gì?",
+        "en": "How is 「了承」 (acknowledgment) read?"
+      },
+      "payload": {
+        "choices": [
+          "りょううけたまわ",
+          "りょうしょう",
+          "りょうじょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 了承 = りょうしょう (chấp thuận); 承 đọc là しょう (âm On).",
+        "en": "Correct! 了承 = りょうしょう (acknowledgment); 承 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "了承 đọc là りょうしょう (chấp thuận): 承 mang âm On しょう.",
+        "en": "了承 is read りょうしょう (acknowledgment): 承 takes the on'yomi しょう."
+      }
+    },
+    {
+      "item": "認",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「認」nghĩa là gì?",
+        "en": "What does 「認」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đô thị; thủ đô",
+            "en": "metropolis; capital"
+          },
+          {
+            "vi": "công nhận; xác nhận",
+            "en": "acknowledge; confirm"
+          },
+          {
+            "vi": "chấp nhận; tiếp nhận",
+            "en": "consent; receive"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 認 nghĩa là công nhận; xác nhận.",
+        "en": "Correct! 認 means acknowledge; confirm."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 認 nghĩa là công nhận; xác nhận, như trong 「確認」 (xác nhận).",
+        "en": "Not quite. 認 means acknowledge; confirm, as in 「確認」 (confirmation)."
+      }
+    },
+    {
+      "item": "認",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「認」 trong 「確認」 (“xác nhận”).",
+        "en": "Type the reading of 「認」 in 「確認」 (“confirmation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "にん",
+          "ニン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 確認, 認 đọc là にん (âm On).",
+        "en": "Correct! In 確認, 認 is read にん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 確認 (xác nhận), 認 đọc là にん (âm On).",
+        "en": "In 確認 (confirmation), 認 is read にん (on'yomi)."
+      }
+    },
+    {
+      "item": "認",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「認める」(công nhận) đọc là gì?",
+        "en": "How is 「認める」 (to recognize) read?"
+      },
+      "payload": {
+        "choices": [
+          "にんめる",
+          "しょうち",
+          "みとめる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 認める = みとめる (công nhận); 認 đọc là みと (âm Kun).",
+        "en": "Correct! 認める = みとめる (to recognize); 認 is read みと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "認める đọc là みとめる (công nhận): 認 mang âm Kun みと.",
+        "en": "認める is read みとめる (to recognize): 認 takes the kun'yomi みと."
+      }
+    },
+    {
+      "item": "都",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「都」nghĩa là gì?",
+        "en": "What does 「都」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chấp nhận; tiếp nhận",
+            "en": "consent; receive"
+          },
+          {
+            "vi": "công nhận; xác nhận",
+            "en": "acknowledge; confirm"
+          },
+          {
+            "vi": "đô thị; thủ đô",
+            "en": "metropolis; capital"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 都 nghĩa là đô thị; thủ đô.",
+        "en": "Correct! 都 means metropolis; capital."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 都 nghĩa là đô thị; thủ đô, như trong 「都市」 (đô thị).",
+        "en": "Not quite. 都 means metropolis; capital, as in 「都市」 (city)."
+      }
+    },
+    {
+      "item": "都",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「都」 trong 「都市」 (“đô thị”).",
+        "en": "Type the reading of 「都」 in 「都市」 (“city”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "と",
+          "ト"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 都市, 都 đọc là と (âm On).",
+        "en": "Correct! In 都市, 都 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 都市 (đô thị), 都 đọc là と (âm On).",
+        "en": "In 都市 (city), 都 is read と (on'yomi)."
+      }
+    },
+    {
+      "item": "都",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「都合」(hoàn cảnh; sự thuận tiện) đọc là gì?",
+        "en": "How is 「都合」 (convenience) read?"
+      },
+      "payload": {
+        "choices": [
+          "つごう",
+          "みやこごう",
+          "つこう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 都合 = つごう (hoàn cảnh; sự thuận tiện); 都 đọc là つ (âm On).",
+        "en": "Correct! 都合 = つごう (convenience); 都 is read つ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "都合 đọc là つごう (hoàn cảnh; sự thuận tiện): 都 mang âm On つ.",
+        "en": "都合 is read つごう (convenience): 都 takes the on'yomi つ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "承",
+            {
+              "vi": "chấp nhận; tiếp nhận",
+              "en": "consent; receive"
+            }
+          ],
+          [
+            "認",
+            {
+              "vi": "công nhận; xác nhận",
+              "en": "acknowledge; confirm"
+            }
+          ],
+          [
+            "都",
+            {
+              "vi": "đô thị; thủ đô",
+              "en": "metropolis; capital"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

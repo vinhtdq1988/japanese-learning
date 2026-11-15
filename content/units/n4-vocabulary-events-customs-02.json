@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-events-customs",
+  "title": {
+    "vi": "Lễ nhập học, thiệp chúc và tiệc tùng",
+    "en": "Entrance ceremonies, greeting cards and parties"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "入学式",
+      "reading": "にゅうがくしき",
+      "meaning": {
+        "vi": "Lễ nhập học",
+        "en": "Entrance ceremony"
+      },
+      "examples": [
+        {
+          "ja": "四月の入学式で、校長先生が新しい学生に話をしました。",
+          "reading": "しがつのにゅうがくしきで、こうちょうせんせいがあたらしいがくせいにはなしをしました。",
+          "translation": {
+            "vi": "Tại lễ nhập học tháng Tư, hiệu trưởng đã nói chuyện với các học sinh mới.",
+            "en": "At the April entrance ceremony, the principal spoke to the new students."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "年賀状",
+      "reading": "ねんがじょう",
+      "meaning": {
+        "vi": "Thiệp chúc mừng năm mới",
+        "en": "New Year's card"
+      },
+      "examples": [
+        {
+          "ja": "正月に、友達から年賀状が届きました。",
+          "reading": "しょうがつに、ともだちからねんがじょうがとどきました。",
+          "translation": {
+            "vi": "Vào dịp đầu năm mới (正月), tôi nhận được thiệp chúc mừng năm mới từ bạn.",
+            "en": "At New Year, a New Year's card arrived from my friend."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "お盆",
+      "reading": "おぼん",
+      "meaning": {
+        "vi": "Lễ Obon (lễ vu lan của Nhật)",
+        "en": "Obon (summer festival of the dead)"
+      },
+      "examples": [
+        {
+          "ja": "お盆には、多くの人が田舎の家に帰ります。",
+          "reading": "おぼんには、おおくのひとがいなかのいえにかえります。",
+          "translation": {
+            "vi": "Vào dịp lễ Obon, nhiều người về nhà ở quê.",
+            "en": "During Obon, many people return to their family homes in the countryside."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "乾杯",
+      "reading": "かんぱい",
+      "meaning": {
+        "vi": "Cạn ly; nâng ly chúc mừng",
+        "en": "Toast; cheers"
+      },
+      "examples": [
+        {
+          "ja": "みんなで、ビールを持って、乾杯しました。",
+          "reading": "みんなで、ビールをもって、かんぱいしました。",
+          "translation": {
+            "vi": "Mọi người cầm bia lên và cạn ly.",
+            "en": "We all held up our beers and made a toast."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "幹事",
+      "reading": "かんじ",
+      "meaning": {
+        "vi": "Người phụ trách tổ chức (buổi tiệc, họp mặt)",
+        "en": "Organizer (of a party or gathering)"
+      },
+      "examples": [
+        {
+          "ja": "来月の食事会の幹事は、私がやることになりました。",
+          "reading": "らいげつのしょくじかいのかんじは、わたしがやることになりました。",
+          "translation": {
+            "vi": "Tôi đã được giao làm người phụ trách tổ chức buổi ăn tháng sau.",
+            "en": "It has been decided that I will be the organizer of next month's dinner gathering."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歓迎",
+      "reading": "かんげい",
+      "meaning": {
+        "vi": "Chào đón; hoan nghênh",
+        "en": "Welcome"
+      },
+      "examples": [
+        {
+          "ja": "新しい社員を歓迎するパーティーを開きます。",
+          "reading": "あたらしいしゃいんをかんげいするパーティーをひらきます。",
+          "translation": {
+            "vi": "Chúng tôi sẽ tổ chức tiệc chào đón nhân viên mới.",
+            "en": "We will hold a party to welcome the new employees."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "入学式",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 四月の（　）で、校長先生が新しい学生に話をしました。 — Nghĩa của câu: “Tại lễ nhập học tháng Tư, hiệu trưởng đã nói chuyện với các học sinh mới.”",
+        "en": "Choose the word that fits the blank: 四月の（　）で、校長先生が新しい学生に話をしました。 — Meaning of the sentence: “At the April entrance ceremony, the principal spoke to the new students.”"
+      },
+      "payload": {
+        "choices": [
+          "年賀状",
+          "お盆",
+          "乾杯",
+          "入学式"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入学式」(Lễ nhập học) hợp nghĩa câu này: “Tại lễ nhập học tháng Tư, hiệu trưởng đã nói chuyện với các học sinh mới.”",
+        "en": "Correct! 「入学式」(Entrance ceremony) fits this sentence: “At the April entrance ceremony, the principal spoke to the new students.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tại lễ nhập học tháng Tư, hiệu trưởng đã nói chuyện với các học sinh mới.”, nên cần 「入学式」(Lễ nhập học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the April entrance ceremony, the principal spoke to the new students.”, so it needs 「入学式」(Entrance ceremony); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "年賀状",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 正月に、友達から（　）が届きました。 — Nghĩa của câu: “Vào dịp đầu năm mới (正月), tôi nhận được thiệp chúc mừng năm mới từ bạn.”",
+        "en": "Choose the word that fits the blank: 正月に、友達から（　）が届きました。 — Meaning of the sentence: “At New Year, a New Year's card arrived from my friend.”"
+      },
+      "payload": {
+        "choices": [
+          "年賀状",
+          "入学式",
+          "幹事",
+          "歓迎"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「年賀状」(Thiệp chúc mừng năm mới) hợp nghĩa câu này: “Vào dịp đầu năm mới (正月), tôi nhận được thiệp chúc mừng năm mới từ bạn.”",
+        "en": "Correct! 「年賀状」(New Year's card) fits this sentence: “At New Year, a New Year's card arrived from my friend.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào dịp đầu năm mới (正月), tôi nhận được thiệp chúc mừng năm mới từ bạn.”, nên cần 「年賀状」(Thiệp chúc mừng năm mới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At New Year, a New Year's card arrived from my friend.”, so it needs 「年賀状」(New Year's card); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "お盆",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）には、多くの人が田舎の家に帰ります。 — Nghĩa của câu: “Vào dịp lễ Obon, nhiều người về nhà ở quê.”",
+        "en": "Choose the word that fits the blank: （　）には、多くの人が田舎の家に帰ります。 — Meaning of the sentence: “During Obon, many people return to their family homes in the countryside.”"
+      },
+      "payload": {
+        "choices": [
+          "乾杯",
+          "お盆",
+          "幹事",
+          "歓迎"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「お盆」(Lễ Obon (lễ vu lan của Nhật)) hợp nghĩa câu này: “Vào dịp lễ Obon, nhiều người về nhà ở quê.”",
+        "en": "Correct! 「お盆」(Obon (summer festival of the dead)) fits this sentence: “During Obon, many people return to their family homes in the countryside.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào dịp lễ Obon, nhiều người về nhà ở quê.”, nên cần 「お盆」(Lễ Obon (lễ vu lan của Nhật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “During Obon, many people return to their family homes in the countryside.”, so it needs 「お盆」(Obon (summer festival of the dead)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "乾杯",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: みんなで、ビールを持って、（　）しました。 — Nghĩa của câu: “Mọi người cầm bia lên và cạn ly.”",
+        "en": "Choose the word that fits the blank: みんなで、ビールを持って、（　）しました。 — Meaning of the sentence: “We all held up our beers and made a toast.”"
+      },
+      "payload": {
+        "choices": [
+          "年賀状",
+          "入学式",
+          "乾杯",
+          "お盆"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乾杯」(Cạn ly; nâng ly chúc mừng) hợp nghĩa câu này: “Mọi người cầm bia lên và cạn ly.”",
+        "en": "Correct! 「乾杯」(Toast; cheers) fits this sentence: “We all held up our beers and made a toast.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mọi người cầm bia lên và cạn ly.”, nên cần 「乾杯」(Cạn ly; nâng ly chúc mừng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We all held up our beers and made a toast.”, so it needs 「乾杯」(Toast; cheers); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "幹事",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来月の食事会の（　）は、私がやることになりました。 — Nghĩa của câu: “Tôi đã được giao làm người phụ trách tổ chức buổi ăn tháng sau.”",
+        "en": "Choose the word that fits the blank: 来月の食事会の（　）は、私がやることになりました。 — Meaning of the sentence: “It has been decided that I will be the organizer of next month's dinner gathering.”"
+      },
+      "payload": {
+        "choices": [
+          "入学式",
+          "お盆",
+          "年賀状",
+          "幹事"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「幹事」(Người phụ trách tổ chức (buổi tiệc, họp mặt)) hợp nghĩa câu này: “Tôi đã được giao làm người phụ trách tổ chức buổi ăn tháng sau.”",
+        "en": "Correct! 「幹事」(Organizer (of a party or gathering)) fits this sentence: “It has been decided that I will be the organizer of next month's dinner gathering.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã được giao làm người phụ trách tổ chức buổi ăn tháng sau.”, nên cần 「幹事」(Người phụ trách tổ chức (buổi tiệc, họp mặt)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It has been decided that I will be the organizer of next month's dinner gathering.”, so it needs 「幹事」(Organizer (of a party or gathering)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "歓迎",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい社員を（　）するパーティーを開きます。 — Nghĩa của câu: “Chúng tôi sẽ tổ chức tiệc chào đón nhân viên mới.”",
+        "en": "Choose the word that fits the blank: 新しい社員を（　）するパーティーを開きます。 — Meaning of the sentence: “We will hold a party to welcome the new employees.”"
+      },
+      "payload": {
+        "choices": [
+          "歓迎",
+          "乾杯",
+          "幹事",
+          "年賀状"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歓迎」(Chào đón; hoan nghênh) hợp nghĩa câu này: “Chúng tôi sẽ tổ chức tiệc chào đón nhân viên mới.”",
+        "en": "Correct! 「歓迎」(Welcome) fits this sentence: “We will hold a party to welcome the new employees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi sẽ tổ chức tiệc chào đón nhân viên mới.”, nên cần 「歓迎」(Chào đón; hoan nghênh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We will hold a party to welcome the new employees.”, so it needs 「歓迎」(Welcome); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "入学式",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 四月の「入学式」で、校長先生が新しい学生に話をしました。",
+        "en": "Choose the correct reading of the word in 「」: 四月の「入学式」で、校長先生が新しい学生に話をしました。"
+      },
+      "payload": {
+        "choices": [
+          "にゅうがくしき",
+          "かんじ",
+          "おぼん",
+          "かんぱい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入学式」 đọc là 「にゅうがくしき」, nghĩa là Lễ nhập học.",
+        "en": "Correct! 「入学式」 is read 「にゅうがくしき」 and means Entrance ceremony."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「入学式」 đọc là 「にゅうがくしき」 (Lễ nhập học); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「入学式」 is read 「にゅうがくしき」 (Entrance ceremony); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "乾杯",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: みんなで、ビールを持って、「乾杯」しました。",
+        "en": "Choose the correct reading of the word in 「」: みんなで、ビールを持って、「乾杯」しました。"
+      },
+      "payload": {
+        "choices": [
+          "にゅうがくしき",
+          "かんぱい",
+          "おぼん",
+          "ねんがじょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乾杯」 đọc là 「かんぱい」, nghĩa là Cạn ly; nâng ly chúc mừng.",
+        "en": "Correct! 「乾杯」 is read 「かんぱい」 and means Toast; cheers."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「乾杯」 đọc là 「かんぱい」 (Cạn ly; nâng ly chúc mừng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「乾杯」 is read 「かんぱい」 (Toast; cheers); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "歓迎",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しい社員を「かんげい」するパーティーを開きます。",
+        "en": "Choose the correct way to write the word in 「」: 新しい社員を「かんげい」するパーティーを開きます。"
+      },
+      "payload": {
+        "choices": [
+          "幹事",
+          "歓迎",
+          "お盆",
+          "年賀状"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんげい」 viết là 「歓迎」, nghĩa là Chào đón; hoan nghênh.",
+        "en": "Correct! 「かんげい」 is written 「歓迎」 and means Welcome."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんげい」 viết là 「歓迎」 (Chào đón; hoan nghênh); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんげい」 is written 「歓迎」 (Welcome); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "te-form",
+  "title": {
+    "vi": "Thể て mở rộng (2): 〜てしまう, 〜てみる, 〜てくる, 〜ていく",
+    "en": "Extended te-form (2): 〜てしまう, 〜てみる, 〜てくる, 〜ていく"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜てしまう",
+      "meaning": {
+        "vi": "Lỡ ~; làm xong hết ~",
+        "en": "End up doing ~; finish doing ~"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: (1) làm xong hẳn một việc (宿題を書いてしまう); (2) lỡ làm điều ngoài ý muốn, kèm tiếc nuối (財布を忘れてしまった). Kết hợp: động từ thể て + しまう. Khẩu ngữ: 〜ちゃう / 〜じゃう (食べちゃった).",
+        "en": "Meaning: (1) to finish something completely (宿題を書いてしまう); (2) to do something regrettable by accident (財布を忘れてしまった). Form: verb て-form + しまう. Casual forms: 〜ちゃう / 〜じゃう (食べちゃった)."
+      },
+      "examples": [
+        {
+          "ja": "大切な書類を家に忘れてしまいました。",
+          "reading": "たいせつなしょるいをいえにわすれてしまいました。",
+          "translation": {
+            "vi": "Tôi lỡ để quên giấy tờ quan trọng ở nhà.",
+            "en": "I accidentally left the important documents at home."
+          }
+        },
+        {
+          "ja": "今日中にレポートを書いてしまいます。",
+          "reading": "きょうじゅうにレポートをかいてしまいます。",
+          "translation": {
+            "vi": "Tôi sẽ viết xong báo cáo trong hôm nay.",
+            "en": "I will finish writing the report today."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-011"
+    },
+    {
+      "japanese": "〜てみる",
+      "meaning": {
+        "vi": "Thử làm ~",
+        "en": "Try doing ~"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: làm thử để xem kết quả hoặc cảm giác. Kết hợp: động từ thể て + みる (〜てみます, 〜てみたい, 〜てみてください). 「みる」 thường viết bằng hiragana. Không dùng cho việc bắt buộc hoặc đã chắc chắn.",
+        "en": "Meaning: to try something to see the result or feeling. Form: verb て-form + みる (〜てみます, 〜てみたい, 〜てみてください). 「みる」 is usually written in hiragana. It is not used for obligatory or already certain actions."
+      },
+      "examples": [
+        {
+          "ja": "新しいレストランに行ってみたいです。",
+          "reading": "あたらしいレストランにいってみたいです。",
+          "translation": {
+            "vi": "Tôi muốn thử đến nhà hàng mới.",
+            "en": "I would like to try going to the new restaurant."
+          }
+        },
+        {
+          "ja": "この薬を飲んでみてください。",
+          "reading": "このくすりをのんでみてください。",
+          "translation": {
+            "vi": "Hãy thử uống thuốc này xem.",
+            "en": "Please try taking this medicine."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-012"
+    },
+    {
+      "japanese": "〜てくる",
+      "meaning": {
+        "vi": "~ rồi quay lại; bắt đầu ~",
+        "en": "Do ~ and come back; start to ~"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: (1) làm việc gì rồi quay lại (買ってくる); (2) chuyển động đến gần người nói (走ってくる); (3) sự thay đổi bắt đầu và kéo dài đến hiện tại (寒くなってきた). Kết hợp: động từ thể て + くる.",
+        "en": "Meaning: (1) do something and come back (買ってくる); (2) movement toward the speaker (走ってくる); (3) a change that began and has continued up to now (寒くなってきた). Form: verb て-form + くる."
+      },
+      "examples": [
+        {
+          "ja": "コンビニで飲み物を買ってきます。",
+          "reading": "コンビニでのみものをかってきます。",
+          "translation": {
+            "vi": "Tôi đi mua đồ uống ở cửa hàng tiện lợi rồi quay lại.",
+            "en": "I will buy a drink at the convenience store and come back."
+          }
+        },
+        {
+          "ja": "だんだん寒くなってきました。",
+          "reading": "だんだんさむくなってきました。",
+          "translation": {
+            "vi": "Trời dần dần trở lạnh rồi.",
+            "en": "It has gradually become cold."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-013"
+    },
+    {
+      "japanese": "〜ていく",
+      "meaning": {
+        "vi": "~ rồi đi; tiếp tục ~ về sau",
+        "en": "Do ~ and go; keep ~ing from now on"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: (1) làm việc gì rồi đi (持っていく); (2) chuyển động rời xa người nói (走っていく); (3) sự thay đổi tiếp tục về phía tương lai (増えていく). Kết hợp: động từ thể て + いく. Đối lập với 〜てくる: 〜てくる hướng về hiện tại/người nói, 〜ていく hướng về tương lai/xa người nói.",
+        "en": "Meaning: (1) do something and go (持っていく); (2) movement away from the speaker (走っていく); (3) a change that continues into the future (増えていく). Form: verb て-form + いく. It contrasts with 〜てくる: 〜てくる heads toward the present/speaker, 〜ていく toward the future/away from the speaker."
+      },
+      "examples": [
+        {
+          "ja": "傘を持っていったほうがいいですよ。",
+          "reading": "かさをもっていったほうがいいですよ。",
+          "translation": {
+            "vi": "Bạn nên mang ô đi thì hơn đấy.",
+            "en": "You should take an umbrella with you."
+          }
+        },
+        {
+          "ja": "これから、この町の人口は減っていくでしょう。",
+          "reading": "これから、このまちのじんこうはへっていくでしょう。",
+          "translation": {
+            "vi": "Từ nay về sau, dân số của thị trấn này có lẽ sẽ tiếp tục giảm.",
+            "en": "From now on, the population of this town will probably keep decreasing."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-014"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜てしまう",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n電車の中でかさを忘れて（　）。",
+        "en": "Choose the correct option for the blank:\n電車の中でかさを忘れて（　）。"
+      },
+      "payload": {
+        "choices": [
+          "おきました",
+          "ありました",
+          "しまいました",
+          "みました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Việc lỡ quên ngoài ý muốn, kèm tiếc nuối, dùng 〜てしまう: 「忘れてしまいました」.",
+        "en": "Correct! An unintended, regrettable lapse uses 〜てしまう: 「忘れてしまいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Việc lỡ quên ngoài ý muốn, kèm tiếc nuối, dùng 〜てしまう: 「忘れてしまいました」.",
+        "en": "Not quite. An unintended, regrettable lapse uses 〜てしまう: 「忘れてしまいました」."
+      }
+    },
+    {
+      "item": "〜てしまう",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n宿題は今日中にやって___つもりです。\n（Ý là làm xong hết trong hôm nay.）",
+        "en": "Choose the correct option for the blank:\n宿題は今日中にやって___つもりです。\n(The meaning is to get it all finished today.)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "しまう"
+        ],
+        "hint": "しまう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「やってしまう」 diễn tả làm xong hẳn; trước 「つもりです」 động từ ở dạng từ điển nên là 「しまう」.",
+        "en": "Correct! 「やってしまう」 means to get it completely done; before 「つもりです」 the verb is in dictionary form, hence 「しまう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「やってしまう」 diễn tả làm xong hẳn; trước 「つもりです」 động từ ở dạng từ điển nên là 「しまう」.",
+        "en": "Not quite. 「やってしまう」 means to get it completely done; before 「つもりです」 the verb is in dictionary form, hence 「しまう」."
+      }
+    },
+    {
+      "item": "〜てしまう",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "ケーキを全部食べてしまうました。",
+          "ケーキを全部食べてしまいました。",
+          "ケーキを全部食べしまいました。",
+          "ケーキを全部食べてしまっました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể quá khứ lịch sự của 「しまう」 là 「しまいました」, và động từ trước đó ở thể て (食べて).",
+        "en": "Correct! The polite past of 「しまう」 is 「しまいました」, and the verb before it is in the て-form (食べて)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể quá khứ lịch sự của 「しまう」 là 「しまいました」, và động từ trước đó ở thể て (食べて).",
+        "en": "Not quite. The polite past of 「しまう」 is 「しまいました」, and the verb before it is in the て-form (食べて)."
+      }
+    },
+    {
+      "item": "〜てみる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nおいしそうなので、このパンを食べて（　）たいです。",
+        "en": "Choose the correct option for the blank:\nおいしそうなので、このパンを食べて（　）たいです。"
+      },
+      "payload": {
+        "choices": [
+          "み",
+          "みる",
+          "みた",
+          "みて"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てみたい」 gồm 「みる」 bỏ 「る」 chuyển sang gốc ます 「み」 + たい.",
+        "en": "Correct! 「〜てみたい」 is the ます-stem 「み」 of 「みる」 + たい."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てみたい」 gồm 「みる」 bỏ 「る」 chuyển sang gốc ます 「み」 + たい.",
+        "en": "Not quite. 「〜てみたい」 is the ます-stem 「み」 of 「みる」 + たい."
+      }
+    },
+    {
+      "item": "〜てみる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの靴をはいて___てもいいですか。",
+        "en": "Choose the correct option for the blank:\nこの靴をはいて___てもいいですか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "み"
+        ],
+        "hint": "みる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はいてみてもいいですか」 là xin phép thử mang giày; chỗ trống là gốc ます 「み」.",
+        "en": "Correct! 「はいてみてもいいですか」 asks permission to try the shoes on; the blank is the stem 「み」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はいてみてもいいですか」 là xin phép thử mang giày; chỗ trống là gốc ます 「み」.",
+        "en": "Not quite. 「はいてみてもいいですか」 asks permission to try the shoes on; the blank is the stem 「み」."
+      }
+    },
+    {
+      "item": "〜てみる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この服を着てみるもいいですか。",
+          "この服を着てみてもいいます。",
+          "この服を着みてもいいですか。",
+          "この服を着てみてもいいですか。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てもいいですか」 xin phép; trước 「も」 phải là thể て (みて), và câu kết bằng 「いいですか」.",
+        "en": "Correct! 「〜てもいいですか」 asks permission; 「も」 follows the て-form (みて), and the sentence ends with 「いいですか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てもいいですか」 xin phép; trước 「も」 phải là thể て (みて), và câu kết bằng 「いいですか」.",
+        "en": "Not quite. 「〜てもいいですか」 asks permission; 「も」 follows the て-form (みて), and the sentence ends with 「いいですか」."
+      }
+    },
+    {
+      "item": "〜てくる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Khi muốn nói \"đi mua trà ở cửa hàng tiện lợi rồi quay lại đây\", chọn đáp án phù hợp:\nちょっとお茶を買って（　）。",
+        "en": "To say \"I will buy tea at the convenience store and come back here\", choose the best option:\nちょっとお茶を買って（　）。"
+      },
+      "payload": {
+        "choices": [
+          "いきます",
+          "おきます",
+          "きます",
+          "しまいます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「買ってきます」 nghĩa là đi mua rồi quay lại, còn 「買っていきます」 là mua rồi đi thẳng không quay lại.",
+        "en": "Correct! 「買ってきます」 means to buy it and come back, whereas 「買っていきます」 means to buy it and go on."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「買ってきます」 nghĩa là đi mua rồi quay lại, còn 「買っていきます」 là mua rồi đi thẳng không quay lại.",
+        "en": "Not quite. 「買ってきます」 means to buy it and come back, whereas 「買っていきます」 means to buy it and go on."
+      }
+    },
+    {
+      "item": "〜てくる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng khi nói về sự thay đổi bắt đầu từ trước và hiện đã đến đây:\n最近、だんだん暑く（　）。",
+        "en": "Choose the best option for a change that began earlier and has now reached the present:\n最近、だんだん暑く（　）。"
+      },
+      "payload": {
+        "choices": [
+          "なっていきます",
+          "なってきました",
+          "なっておきます",
+          "なってみます"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sự thay đổi bắt đầu từ trước và đến nay vẫn tiếp diễn thì dùng 〜てきた; 〜ていく nói về diễn biến sắp tới.",
+        "en": "Correct! A change that began earlier and has reached the present uses 〜てきた; 〜ていく looks ahead to what comes next."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sự thay đổi bắt đầu từ trước và đến nay vẫn tiếp diễn thì dùng 〜てきた; 〜ていく nói về diễn biến sắp tới.",
+        "en": "Not quite. A change that began earlier and has reached the present uses 〜てきた; 〜ていく looks ahead to what comes next."
+      }
+    },
+    {
+      "item": "〜ていく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người nói đang ở nhà, nói với người sắp ra ngoài. Chọn đáp án đúng điền vào chỗ trống:\n雨が降りそうですから、かさを持って（　）ほうがいいですよ。",
+        "en": "The speaker is at home talking to someone about to go out. Choose the correct option for the blank:\n雨が降りそうですから、かさを持って（　）ほうがいいですよ。"
+      },
+      "payload": {
+        "choices": [
+          "いった",
+          "きた",
+          "おいた",
+          "しまった"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mang ô đi ra ngoài (rời xa người nói) dùng 「持っていく」; 「いったほうがいい」 là nên mang đi.",
+        "en": "Correct! Taking an umbrella out with you (away from the speaker) uses 「持っていく」; 「いったほうがいい」 means you had better take it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mang ô đi ra ngoài (rời xa người nói) dùng 「持っていく」; 「いったほうがいい」 là nên mang đi.",
+        "en": "Not quite. Taking an umbrella out with you (away from the speaker) uses 「持っていく」; 「いったほうがいい」 means you had better take it."
+      }
+    },
+    {
+      "item": "〜ていく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本の人口は、これから減って___でしょう。",
+        "en": "Choose the correct option for the blank:\n日本の人口は、これから減って___でしょう。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いく",
+          "行く"
+        ],
+        "hint": "いく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sự thay đổi tiếp tục về phía tương lai dùng 〜ていく: 「減っていくでしょう」.",
+        "en": "Correct! A change continuing into the future uses 〜ていく: 「減っていくでしょう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sự thay đổi tiếp tục về phía tương lai dùng 〜ていく: 「減っていくでしょう」.",
+        "en": "Not quite. A change continuing into the future uses 〜ていく: 「減っていくでしょう」."
+      }
+    },
+    {
+      "item": "〜ていく",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n毎日、会社に　＿　★　＿　いきます。\n（持って／お弁当を／自分で作った）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n毎日、会社に　＿　★　＿　いきます。\n（持って／お弁当を／自分で作った）"
+      },
+      "payload": {
+        "choices": [
+          "自分で作った",
+          "お弁当を",
+          "持って"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「毎日、会社に自分で作ったお弁当を持っていきます。」; ô ★ (thứ hai) là 「お弁当を」.",
+        "en": "Correct! The correct sentence is 「毎日、会社に自分で作ったお弁当を持っていきます。」; the ★ (second) slot is 「お弁当を」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「毎日、会社に自分で作ったお弁当を持っていきます。」; ô ★ (thứ hai) là 「お弁当を」.",
+        "en": "Not quite. The correct sentence is 「毎日、会社に自分で作ったお弁当を持っていきます。」; the ★ (second) slot is 「お弁当を」."
+      }
+    },
+    {
+      "item": "〜てくる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Bạn nói qua điện thoại với bạn sắp đến nhà bạn. Chọn đáp án đúng:\nうちに来る前に、スーパーでジュースを買って（　）ね。",
+        "en": "You are on the phone with a friend who is about to come to your home. Choose the best option:\nうちに来る前に、スーパーでジュースを買って（　）ね。"
+      },
+      "payload": {
+        "choices": [
+          "いって",
+          "おいて",
+          "きて",
+          "しまって"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người nghe sẽ đến chỗ người nói, nên dùng hướng về phía người nói: 「買ってきてね」.",
+        "en": "Correct! The listener is coming to the speaker's place, so use the direction toward the speaker: 「買ってきてね」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người nghe sẽ đến chỗ người nói, nên dùng hướng về phía người nói: 「買ってきてね」.",
+        "en": "Not quite. The listener is coming to the speaker's place, so use the direction toward the speaker: 「買ってきてね」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜てしまう",
+            {
+              "vi": "Lỡ ~; làm xong hết ~",
+              "en": "End up doing ~; finish doing ~"
+            }
+          ],
+          [
+            "〜てみる",
+            {
+              "vi": "Thử làm ~",
+              "en": "Try doing ~"
+            }
+          ],
+          [
+            "〜てくる",
+            {
+              "vi": "~ rồi quay lại; bắt đầu ~",
+              "en": "Do ~ and come back; start to ~"
+            }
+          ],
+          [
+            "〜ていく",
+            {
+              "vi": "~ rồi đi; tiếp tục ~ về sau",
+              "en": "Do ~ and go; keep ~ing from now on"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

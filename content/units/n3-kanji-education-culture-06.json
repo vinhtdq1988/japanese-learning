@@ -1,0 +1,418 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (式 術 美)",
+    "en": "Education and culture kanji (式 術 美)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "式",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "nghi thức; kiểu; công thức",
+        "en": "ceremony; style"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "結婚式",
+          "reading": "けっこんしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "lễ cưới",
+            "en": "wedding ceremony"
+          }
+        },
+        {
+          "ja": "公式",
+          "reading": "こうしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "chính thức",
+            "en": "official"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "術",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "thuật; kỹ năng",
+        "en": "art; technique"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジュツ"
+        ],
+        "kunReadings": [
+          "すべ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "技術",
+          "reading": "ぎじゅつ",
+          "kanjiReading": "ジュツ",
+          "translation": {
+            "vi": "kỹ thuật",
+            "en": "technology"
+          }
+        },
+        {
+          "ja": "芸術",
+          "reading": "げいじゅつ",
+          "kanjiReading": "ジュツ",
+          "translation": {
+            "vi": "nghệ thuật",
+            "en": "art"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "美",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "đẹp",
+        "en": "beautiful"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ビ"
+        ],
+        "kunReadings": [
+          "うつく.しい"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "美術",
+          "reading": "びじゅつ",
+          "kanjiReading": "ビ",
+          "translation": {
+            "vi": "mỹ thuật",
+            "en": "fine arts"
+          }
+        },
+        {
+          "ja": "美しい",
+          "reading": "うつくしい",
+          "kanjiReading": "うつく",
+          "translation": {
+            "vi": "đẹp",
+            "en": "beautiful"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "式",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「式」nghĩa là gì?",
+        "en": "What does 「式」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nghi thức; kiểu; công thức",
+            "en": "ceremony; style"
+          },
+          {
+            "vi": "thuật; kỹ năng",
+            "en": "art; technique"
+          },
+          {
+            "vi": "đẹp",
+            "en": "beautiful"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 式 nghĩa là nghi thức; kiểu; công thức.",
+        "en": "Correct! 式 means ceremony; style."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 式 nghĩa là nghi thức; kiểu; công thức, như trong 「結婚式」 (lễ cưới).",
+        "en": "Not quite. 式 means ceremony; style, as in 「結婚式」 (wedding ceremony)."
+      }
+    },
+    {
+      "item": "式",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「式」 trong 「結婚式」 (“lễ cưới”).",
+        "en": "Type the reading of 「式」 in 「結婚式」 (“wedding ceremony”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しき",
+          "シキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 結婚式, 式 đọc là しき (âm On).",
+        "en": "Correct! In 結婚式, 式 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 結婚式 (lễ cưới), 式 đọc là しき (âm On).",
+        "en": "In 結婚式 (wedding ceremony), 式 is read しき (on'yomi)."
+      }
+    },
+    {
+      "item": "式",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「公式」(chính thức) đọc là gì?",
+        "en": "How is 「公式」 (official) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうじき",
+          "こうしき",
+          "こうすべ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 公式 = こうしき (chính thức); 式 đọc là しき (âm On).",
+        "en": "Correct! 公式 = こうしき (official); 式 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "公式 đọc là こうしき (chính thức): 式 mang âm On しき.",
+        "en": "公式 is read こうしき (official): 式 takes the on'yomi しき."
+      }
+    },
+    {
+      "item": "術",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「術」nghĩa là gì?",
+        "en": "What does 「術」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đẹp",
+            "en": "beautiful"
+          },
+          {
+            "vi": "thuật; kỹ năng",
+            "en": "art; technique"
+          },
+          {
+            "vi": "nghi thức; kiểu; công thức",
+            "en": "ceremony; style"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 術 nghĩa là thuật; kỹ năng.",
+        "en": "Correct! 術 means art; technique."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 術 nghĩa là thuật; kỹ năng, như trong 「技術」 (kỹ thuật).",
+        "en": "Not quite. 術 means art; technique, as in 「技術」 (technology)."
+      }
+    },
+    {
+      "item": "術",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「術」 trong 「技術」 (“kỹ thuật”).",
+        "en": "Type the reading of 「術」 in 「技術」 (“technology”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じゅつ",
+          "ジュツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 技術, 術 đọc là じゅつ (âm On).",
+        "en": "Correct! In 技術, 術 is read じゅつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 技術 (kỹ thuật), 術 đọc là じゅつ (âm On).",
+        "en": "In 技術 (technology), 術 is read じゅつ (on'yomi)."
+      }
+    },
+    {
+      "item": "術",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「芸術」(nghệ thuật) đọc là gì?",
+        "en": "How is 「芸術」 (art) read?"
+      },
+      "payload": {
+        "choices": [
+          "げいすべ",
+          "げいしゅつ",
+          "げいじゅつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 芸術 = げいじゅつ (nghệ thuật); 術 đọc là じゅつ (âm On).",
+        "en": "Correct! 芸術 = げいじゅつ (art); 術 is read じゅつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "芸術 đọc là げいじゅつ (nghệ thuật): 術 mang âm On じゅつ.",
+        "en": "芸術 is read げいじゅつ (art): 術 takes the on'yomi じゅつ."
+      }
+    },
+    {
+      "item": "美",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「美」nghĩa là gì?",
+        "en": "What does 「美」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nghi thức; kiểu; công thức",
+            "en": "ceremony; style"
+          },
+          {
+            "vi": "thuật; kỹ năng",
+            "en": "art; technique"
+          },
+          {
+            "vi": "đẹp",
+            "en": "beautiful"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 美 nghĩa là đẹp.",
+        "en": "Correct! 美 means beautiful."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 美 nghĩa là đẹp, như trong 「美術」 (mỹ thuật).",
+        "en": "Not quite. 美 means beautiful, as in 「美術」 (fine arts)."
+      }
+    },
+    {
+      "item": "美",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「美」 trong 「美術」 (“mỹ thuật”).",
+        "en": "Type the reading of 「美」 in 「美術」 (“fine arts”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "び",
+          "ビ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 美術, 美 đọc là び (âm On).",
+        "en": "Correct! In 美術, 美 is read び (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 美術 (mỹ thuật), 美 đọc là び (âm On).",
+        "en": "In 美術 (fine arts), 美 is read び (on'yomi)."
+      }
+    },
+    {
+      "item": "美",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「美しい」(đẹp) đọc là gì?",
+        "en": "How is 「美しい」 (beautiful) read?"
+      },
+      "payload": {
+        "choices": [
+          "うつくしい",
+          "びしい",
+          "げいじゅつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 美しい = うつくしい (đẹp); 美 đọc là うつく (âm Kun).",
+        "en": "Correct! 美しい = うつくしい (beautiful); 美 is read うつく (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "美しい đọc là うつくしい (đẹp): 美 mang âm Kun うつく.",
+        "en": "美しい is read うつくしい (beautiful): 美 takes the kun'yomi うつく."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "式",
+            {
+              "vi": "nghi thức; kiểu; công thức",
+              "en": "ceremony; style"
+            }
+          ],
+          [
+            "術",
+            {
+              "vi": "thuật; kỹ năng",
+              "en": "art; technique"
+            }
+          ],
+          [
+            "美",
+            {
+              "vi": "đẹp",
+              "en": "beautiful"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

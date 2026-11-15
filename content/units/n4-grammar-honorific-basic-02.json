@@ -1,0 +1,552 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-honorific-basic",
+  "title": {
+    "vi": "Kính ngữ cơ bản (2): tôn kính ngữ thể bị động, khiêm nhường ngữ và lịch sự cao",
+    "en": "Basic honorifics (2): the passive-form honorific, humble forms and the highly polite copula"
+  },
+  "goalTags": [
+    "jlpt",
+    "work",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜れる／〜られる（尊敬）",
+      "meaning": {
+        "vi": "Tôn kính ngữ bằng thể bị động",
+        "en": "Honorific via the passive form"
+      },
+      "explanation": {
+        "vi": "Cách chia: dùng thể bị động của động từ (読まれる, 来られる, される) để nâng người đối diện. Hình thức đơn giản, nhẹ hơn お〜になる. Dễ nhầm với bị động thật; ngữ cảnh (chủ ngữ là người cần tôn trọng, không có 「に」 tác nhân) giúp phân biệt.",
+        "en": "Conjugation: use the passive form of the verb (読まれる, 来られる, される) to elevate the listener. A simple, lighter form than お〜になる. It can be confused with a real passive; context (the subject is a respected person, no 「に」 agent) distinguishes them."
+      },
+      "examples": [
+        {
+          "ja": "部長は、新聞を読まれています。",
+          "reading": "ぶちょうは、しんぶんをよまれています。",
+          "translation": {
+            "vi": "Trưởng phòng đang đọc báo ạ.",
+            "en": "The department head is reading the newspaper."
+          }
+        },
+        {
+          "ja": "先生は、毎朝走られるそうです。",
+          "reading": "せんせいは、まいあさはしられるそうです。",
+          "translation": {
+            "vi": "Nghe nói thầy chạy bộ mỗi sáng.",
+            "en": "I hear that the teacher runs every morning."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-072"
+    },
+    {
+      "japanese": "謙譲語（特別な動詞）",
+      "meaning": {
+        "vi": "Khiêm nhường ngữ (động từ đặc biệt)",
+        "en": "Humble verbs (special forms)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: hạ mình để nâng đối phương bằng động từ riêng: 行く/来る→参る; 言う→申す; する→いたす; 見る→拝見する; 聞く/訪ねる→伺う; 食べる/もらう→いただく. Chỉ dùng cho hành động của mình hoặc người thuộc phía mình (khi nói với người ngoài).",
+        "en": "Usage: lowers oneself to elevate the other person with special verbs: 行く/来る→参る; 言う→申す; する→いたす; 見る→拝見する; 聞く/訪ねる→伺う; 食べる/もらう→いただく. Used only for one's own actions or those of one's own side (when speaking to outsiders)."
+      },
+      "examples": [
+        {
+          "ja": "明日、会社に参ります。",
+          "reading": "あした、かいしゃにまいります。",
+          "translation": {
+            "vi": "Ngày mai tôi sẽ đến công ty ạ.",
+            "en": "I will come to the company tomorrow."
+          }
+        },
+        {
+          "ja": "私は田中と申します。",
+          "reading": "わたしはたなかともうします。",
+          "translation": {
+            "vi": "Tôi là Tanaka.",
+            "en": "My name is Tanaka."
+          }
+        },
+        {
+          "ja": "資料を拝見しました。",
+          "reading": "しりょうをはいけんしました。",
+          "translation": {
+            "vi": "Tôi đã xem tài liệu rồi ạ.",
+            "en": "I have looked over the materials."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-073"
+    },
+    {
+      "japanese": "お〜する／ご〜する",
+      "meaning": {
+        "vi": "Khiêm nhường ngữ dạng お〜する",
+        "en": "Humble お〜する"
+      },
+      "explanation": {
+        "vi": "Cách chia: お + động từ gốc ます + する (お持ちする, お送りする); danh từ gốc Hán dùng ご + する-động từ + する (ご連絡する, ご案内する). Hành động hướng tới người cần tôn trọng và chủ ngữ là mình. Đối lập với お〜になる (người trên làm).",
+        "en": "Conjugation: お + verb ます-stem + する (お持ちする, お送りする); Sino-Japanese verbs use ご + stem + する (ご連絡する, ご案内する). An action directed toward the respected person, with oneself as the subject. The opposite of お〜になる (the superior acts)."
+      },
+      "examples": [
+        {
+          "ja": "私が荷物をお持ちします。",
+          "reading": "わたしがにもつをおもちします。",
+          "translation": {
+            "vi": "Để tôi mang hành lý giúp ngài.",
+            "en": "Let me carry your luggage."
+          }
+        },
+        {
+          "ja": "明日、ご連絡します。",
+          "reading": "あした、ごれんらくします。",
+          "translation": {
+            "vi": "Ngày mai tôi sẽ liên lạc với ngài.",
+            "en": "I will contact you tomorrow."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-074"
+    },
+    {
+      "japanese": "丁寧語（でございます）",
+      "meaning": {
+        "vi": "Lịch sự cao (でございます)",
+        "en": "Highly polite copula でございます"
+      },
+      "explanation": {
+        "vi": "Cách dùng: です → でございます; あります → ございます. Dùng khi phục vụ khách, thông báo, giao tiếp công việc trang trọng. Chỉ nâng cao mức lịch sự với người nghe, không nâng hay hạ chủ ngữ.",
+        "en": "Usage: です → でございます; あります → ございます. Used when serving customers, in announcements and formal business. It only raises politeness toward the listener and neither elevates nor lowers the subject."
+      },
+      "examples": [
+        {
+          "ja": "こちらが受付でございます。",
+          "reading": "こちらがうけつけでございます。",
+          "translation": {
+            "vi": "Đây là quầy tiếp tân ạ.",
+            "en": "This is the reception desk."
+          }
+        },
+        {
+          "ja": "お手洗いは、あちらにございます。",
+          "reading": "おてあらいは、あちらにございます。",
+          "translation": {
+            "vi": "Nhà vệ sinh ở phía kia ạ.",
+            "en": "The restroom is over there."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-077"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜れる／〜られる（尊敬）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部長は、新聞を（　）います。\n（Dùng tôn kính ngữ cho 部長.）",
+        "en": "Choose the correct option for the blank:\n部長は、新聞を（　）います。\n(Use honorific language for 部長.)"
+      },
+      "payload": {
+        "choices": [
+          "読ませて",
+          "読まれて",
+          "読んで",
+          "お読みして"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dùng thể bị động để tôn kính: 「読まれています」; 「お読みして」 là khiêm nhường nên sai.",
+        "en": "Correct! The passive is used as an honorific: 「読まれています」; 「お読みして」 is humble and wrong here."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dùng thể bị động để tôn kính: 「読まれています」; 「お読みして」 là khiêm nhường nên sai.",
+        "en": "Not quite. The passive is used as an honorific: 「読まれています」; 「お読みして」 is humble and wrong here."
+      }
+    },
+    {
+      "item": "〜れる／〜られる（尊敬）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生は、毎朝走___そうです。",
+        "en": "Choose the correct option for the blank:\n先生は、毎朝走___そうです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "られる"
+        ],
+        "hint": "〜られる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「走る」 → thể bị động 「走られる」 (tôn kính).",
+        "en": "Correct! 「走る」→ passive 「走られる」 (honorific)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「走る」 → thể bị động 「走られる」 (tôn kính).",
+        "en": "Not quite. 「走る」→ passive 「走られる」 (honorific)."
+      }
+    },
+    {
+      "item": "〜れる／〜られる（尊敬）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n先生は、もう帰（　）。",
+        "en": "Choose the pattern that best fits the context:\n先生は、もう帰（　）。"
+      },
+      "payload": {
+        "choices": [
+          "られました",
+          "らされました",
+          "せられました",
+          "いられました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tôn kính bằng thể bị động: 「帰られました」.",
+        "en": "Correct! The honorific via the passive: 「帰られました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tôn kính bằng thể bị động: 「帰られました」.",
+        "en": "Not quite. The honorific via the passive: 「帰られました」."
+      }
+    },
+    {
+      "item": "謙譲語（特別な動詞）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は田中と（　）。",
+        "en": "Choose the correct option for the blank:\n私は田中と（　）。"
+      },
+      "payload": {
+        "choices": [
+          "おっしゃいます",
+          "言われます",
+          "申されます",
+          "申します"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Giới thiệu tên mình dùng khiêm nhường 「申す」: 「申します」.",
+        "en": "Correct! Introducing oneself uses the humble 「申す」: 「申します」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Giới thiệu tên mình dùng khiêm nhường 「申す」: 「申します」.",
+        "en": "Not quite. Introducing oneself uses the humble 「申す」: 「申します」."
+      }
+    },
+    {
+      "item": "謙譲語（特別な動詞）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日、会社に（　）。\n（Tôi nói về việc của chính mình với khách hàng.）",
+        "en": "Choose the correct option for the blank:\n明日、会社に（　）。\n(I am talking about my own action to a customer.)"
+      },
+      "payload": {
+        "choices": [
+          "いらっしゃいます",
+          "行かれます",
+          "参ります",
+          "行きになります"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hành động của mình khi nói với khách: 「参ります」.",
+        "en": "Correct! One's own action when speaking to a customer: 「参ります」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hành động của mình khi nói với khách: 「参ります」.",
+        "en": "Not quite. One's own action when speaking to a customer: 「参ります」."
+      }
+    },
+    {
+      "item": "謙譲語（特別な動詞）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n資料を___しました。",
+        "en": "Choose the correct option for the blank:\n資料を___しました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "拝見",
+          "はいけん"
+        ],
+        "hint": "はいけん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khiêm nhường của 「見る」 là 「拝見する」.",
+        "en": "Correct! The humble form of 「見る」 is 「拝見する」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khiêm nhường của 「見る」 là 「拝見する」.",
+        "en": "Not quite. The humble form of 「見る」 is 「拝見する」."
+      }
+    },
+    {
+      "item": "謙譲語（特別な動詞）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n（私は）お客様の資料を（　）。",
+        "en": "Choose the pattern that best fits the context:\n（私は）お客様の資料を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ご覧になりました",
+          "拝見しました",
+          "見られました",
+          "お見になりました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người xem là mình nên dùng khiêm nhường 「拝見しました」; 「ご覧になる」 là tôn kính dành cho khách.",
+        "en": "Correct! I am the one looking, so the humble 「拝見しました」 is used; 「ご覧になる」 is the honorific for the customer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người xem là mình nên dùng khiêm nhường 「拝見しました」; 「ご覧になる」 là tôn kính dành cho khách.",
+        "en": "Not quite. I am the one looking, so the humble 「拝見しました」 is used; 「ご覧になる」 is the honorific for the customer."
+      }
+    },
+    {
+      "item": "お〜する／ご〜する",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私が荷物を（　）します。",
+        "en": "Choose the correct option for the blank:\n私が荷物を（　）します。"
+      },
+      "payload": {
+        "choices": [
+          "お持ち",
+          "持ち",
+          "お持ちに",
+          "ご持ち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khiêm nhường dạng 「お + gốc ます + する」: 「お持ちします」.",
+        "en": "Correct! The humble pattern 「お + ます-stem + する」: 「お持ちします」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khiêm nhường dạng 「お + gốc ます + する」: 「お持ちします」.",
+        "en": "Not quite. The humble pattern 「お + ます-stem + する」: 「お持ちします」."
+      }
+    },
+    {
+      "item": "お〜する／ご〜する",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日、___連絡します。",
+        "en": "Choose the correct option for the blank:\n明日、___連絡します。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ご"
+        ],
+        "hint": "ご"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ gốc Hán 「連絡」 dùng 「ご」: 「ご連絡します」.",
+        "en": "Correct! The Sino-Japanese word 「連絡」 takes 「ご」: 「ご連絡します」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ gốc Hán 「連絡」 dùng 「ご」: 「ご連絡します」.",
+        "en": "Not quite. The Sino-Japanese word 「連絡」 takes 「ご」: 「ご連絡します」."
+      }
+    },
+    {
+      "item": "お〜する／ご〜する",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n社長が資料を（　）。",
+        "en": "Choose the pattern that best fits the context:\n社長が資料を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "お読みしました",
+          "お読みいたしました",
+          "お読みになりしました",
+          "お読みになりました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người đọc là 社長 nên dùng tôn kính 「お読みになる」; 「お読みする」 là khiêm nhường cho hành động của mình.",
+        "en": "Correct! The reader is the president, so use the honorific 「お読みになる」; 「お読みする」 is humble for one's own action."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người đọc là 社長 nên dùng tôn kính 「お読みになる」; 「お読みする」 là khiêm nhường cho hành động của mình.",
+        "en": "Not quite. The reader is the president, so use the honorific 「お読みになる」; 「お読みする」 is humble for one's own action."
+      }
+    },
+    {
+      "item": "丁寧語（でございます）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこちらが受付（　）。",
+        "en": "Choose the correct option for the blank:\nこちらが受付（　）。"
+      },
+      "payload": {
+        "choices": [
+          "でいらっしゃいます",
+          "であります",
+          "でございます",
+          "でござります"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「です」 nâng lên mức lịch sự cao là 「でございます」.",
+        "en": "Correct! Raising 「です」 to a highly polite level gives 「でございます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「です」 nâng lên mức lịch sự cao là 「でございます」.",
+        "en": "Not quite. Raising 「です」 to a highly polite level gives 「でございます」."
+      }
+    },
+    {
+      "item": "丁寧語（でございます）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお手洗いは、あちらにござい___。",
+        "en": "Choose the correct option for the blank:\nお手洗いは、あちらにござい___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ます"
+        ],
+        "hint": "ます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「あります」 nâng lên là 「ございます」.",
+        "en": "Correct! Raising 「あります」 gives 「ございます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「あります」 nâng lên là 「ございます」.",
+        "en": "Not quite. Raising 「あります」 gives 「ございます」."
+      }
+    },
+    {
+      "item": "丁寧語（でございます）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "こちらが受付でございますです。",
+          "こちらが受付でございます。",
+          "こちらが受付でござりません。",
+          "こちらが受付がございます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「でございます」 đã là dạng lịch sự nên không thêm 「です」; danh từ + 「でございます」.",
+        "en": "Correct! 「でございます」 is already polite so 「です」 is not added; a noun + 「でございます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「でございます」 đã là dạng lịch sự nên không thêm 「です」; danh từ + 「でございます」.",
+        "en": "Not quite. 「でございます」 is already polite so 「です」 is not added; a noun + 「でございます」."
+      }
+    },
+    {
+      "item": "丁寧語（でございます）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nお手洗いは、＿　★　＿　。\n（あちらに／ござい／ます）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nお手洗いは、＿　★　＿　。\n（あちらに／ござい／ます）"
+      },
+      "payload": {
+        "choices": [
+          "あちらに",
+          "ござい",
+          "ます"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「お手洗いは、あちらにございます。」; ô ★ (thứ hai) là 「ござい」.",
+        "en": "Correct! The correct sentence is 「お手洗いは、あちらにございます。」; the ★ (second) slot is 「ござい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「お手洗いは、あちらにございます。」; ô ★ (thứ hai) là 「ござい」.",
+        "en": "Not quite. The correct sentence is 「お手洗いは、あちらにございます。」; the ★ (second) slot is 「ござい」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜れる／〜られる（尊敬）",
+            {
+              "vi": "Tôn kính ngữ bằng thể bị động",
+              "en": "Honorific via the passive form"
+            }
+          ],
+          [
+            "謙譲語（特別な動詞）",
+            {
+              "vi": "Khiêm nhường ngữ (động từ đặc biệt)",
+              "en": "Humble verbs (special forms)"
+            }
+          ],
+          [
+            "お〜する／ご〜する",
+            {
+              "vi": "Khiêm nhường ngữ dạng お〜する",
+              "en": "Humble お〜する"
+            }
+          ],
+          [
+            "丁寧語（でございます）",
+            {
+              "vi": "Lịch sự cao (でございます)",
+              "en": "Highly polite copula でございます"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

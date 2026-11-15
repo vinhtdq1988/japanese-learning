@@ -1,0 +1,416 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-time-calendar",
+  "title": {
+    "vi": "Kanji thời gian – lịch (夕 週 曜)",
+    "en": "Time and calendar kanji (夕 週 曜)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "夕",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "chiều tối",
+        "en": "evening"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ"
+        ],
+        "kunReadings": [
+          "ゆう"
+        ],
+        "strokeCount": 3
+      },
+      "examples": [
+        {
+          "ja": "夕方",
+          "reading": "ゆうがた",
+          "kanjiReading": "ゆう",
+          "translation": {
+            "vi": "chiều tối",
+            "en": "evening"
+          }
+        },
+        {
+          "ja": "夕食",
+          "reading": "ゆうしょく",
+          "kanjiReading": "ゆう",
+          "translation": {
+            "vi": "bữa tối",
+            "en": "dinner"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "週",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "tuần",
+        "en": "week"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "今週",
+          "reading": "こんしゅう",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "tuần này",
+            "en": "this week"
+          }
+        },
+        {
+          "ja": "毎週",
+          "reading": "まいしゅう",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "mỗi tuần",
+            "en": "every week"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "曜",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "thứ (trong tuần)",
+        "en": "day of the week"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 18
+      },
+      "examples": [
+        {
+          "ja": "日曜日",
+          "reading": "にちようび",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "Chủ nhật",
+            "en": "Sunday"
+          }
+        },
+        {
+          "ja": "土曜日",
+          "reading": "どようび",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "thứ Bảy",
+            "en": "Saturday"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "夕",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夕」nghĩa là gì?",
+        "en": "What does 「夕」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chiều tối",
+            "en": "evening"
+          },
+          {
+            "vi": "tuần",
+            "en": "week"
+          },
+          {
+            "vi": "thứ (trong tuần)",
+            "en": "day of the week"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夕 nghĩa là chiều tối.",
+        "en": "Correct! 夕 means evening."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 夕 nghĩa là chiều tối, như trong 「夕方」 (chiều tối).",
+        "en": "Not quite. 夕 means evening, as in 「夕方」 (evening)."
+      }
+    },
+    {
+      "item": "夕",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「夕」 trong 「夕方」 (“chiều tối”).",
+        "en": "Type the reading of 「夕」 in 「夕方」 (“evening”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゆう",
+          "ユウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 夕方, 夕 đọc là ゆう (âm Kun).",
+        "en": "Correct! In 夕方, 夕 is read ゆう (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 夕方 (chiều tối), 夕 đọc là ゆう (âm Kun).",
+        "en": "In 夕方 (evening), 夕 is read ゆう (kun'yomi)."
+      }
+    },
+    {
+      "item": "夕",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夕食」(bữa tối) đọc là gì?",
+        "en": "How is 「夕食」 (dinner) read?"
+      },
+      "payload": {
+        "choices": [
+          "せきしょく",
+          "ゆうしょく",
+          "ゆうじょく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夕食 = ゆうしょく (bữa tối); 夕 đọc là ゆう (âm Kun).",
+        "en": "Correct! 夕食 = ゆうしょく (dinner); 夕 is read ゆう (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "夕食 đọc là ゆうしょく (bữa tối): 夕 mang âm Kun ゆう.",
+        "en": "夕食 is read ゆうしょく (dinner): 夕 takes the kun'yomi ゆう."
+      }
+    },
+    {
+      "item": "週",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「週」nghĩa là gì?",
+        "en": "What does 「週」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thứ (trong tuần)",
+            "en": "day of the week"
+          },
+          {
+            "vi": "tuần",
+            "en": "week"
+          },
+          {
+            "vi": "chiều tối",
+            "en": "evening"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 週 nghĩa là tuần.",
+        "en": "Correct! 週 means week."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 週 nghĩa là tuần, như trong 「今週」 (tuần này).",
+        "en": "Not quite. 週 means week, as in 「今週」 (this week)."
+      }
+    },
+    {
+      "item": "週",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「週」 trong 「今週」 (“tuần này”).",
+        "en": "Type the reading of 「週」 in 「今週」 (“this week”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 今週, 週 đọc là しゅう (âm On).",
+        "en": "Correct! In 今週, 週 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 今週 (tuần này), 週 đọc là しゅう (âm On).",
+        "en": "In 今週 (this week), 週 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "週",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「毎週」(mỗi tuần) đọc là gì?",
+        "en": "How is 「毎週」 (every week) read?"
+      },
+      "payload": {
+        "choices": [
+          "まいしゅ",
+          "まいじゅう",
+          "まいしゅう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 毎週 = まいしゅう (mỗi tuần); 週 đọc là しゅう (âm On).",
+        "en": "Correct! 毎週 = まいしゅう (every week); 週 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "毎週 đọc là まいしゅう (mỗi tuần): 週 mang âm On しゅう.",
+        "en": "毎週 is read まいしゅう (every week): 週 takes the on'yomi しゅう."
+      }
+    },
+    {
+      "item": "曜",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「曜」nghĩa là gì?",
+        "en": "What does 「曜」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chiều tối",
+            "en": "evening"
+          },
+          {
+            "vi": "tuần",
+            "en": "week"
+          },
+          {
+            "vi": "thứ (trong tuần)",
+            "en": "day of the week"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 曜 nghĩa là thứ (trong tuần).",
+        "en": "Correct! 曜 means day of the week."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 曜 nghĩa là thứ (trong tuần), như trong 「日曜日」 (Chủ nhật).",
+        "en": "Not quite. 曜 means day of the week, as in 「日曜日」 (Sunday)."
+      }
+    },
+    {
+      "item": "曜",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「曜」 trong 「日曜日」 (“Chủ nhật”).",
+        "en": "Type the reading of 「曜」 in 「日曜日」 (“Sunday”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 日曜日, 曜 đọc là よう (âm On).",
+        "en": "Correct! In 日曜日, 曜 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 日曜日 (Chủ nhật), 曜 đọc là よう (âm On).",
+        "en": "In 日曜日 (Sunday), 曜 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "曜",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「土曜日」(thứ Bảy) đọc là gì?",
+        "en": "How is 「土曜日」 (Saturday) read?"
+      },
+      "payload": {
+        "choices": [
+          "どようび",
+          "どよび",
+          "どようひ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 土曜日 = どようび (thứ Bảy); 曜 đọc là よう (âm On).",
+        "en": "Correct! 土曜日 = どようび (Saturday); 曜 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "土曜日 đọc là どようび (thứ Bảy): 曜 mang âm On よう.",
+        "en": "土曜日 is read どようび (Saturday): 曜 takes the on'yomi よう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "夕",
+            {
+              "vi": "chiều tối",
+              "en": "evening"
+            }
+          ],
+          [
+            "週",
+            {
+              "vi": "tuần",
+              "en": "week"
+            }
+          ],
+          [
+            "曜",
+            {
+              "vi": "thứ (trong tuần)",
+              "en": "day of the week"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

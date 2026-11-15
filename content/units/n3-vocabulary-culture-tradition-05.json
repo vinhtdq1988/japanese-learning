@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-culture-tradition",
+  "title": {
+    "vi": "Danh thắng và truyền thống địa phương",
+    "en": "Famous places and local traditions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "名所",
+      "reading": "めいしょ",
+      "meaning": {
+        "vi": "Danh lam thắng cảnh",
+        "en": "Famous place"
+      },
+      "examples": [
+        {
+          "ja": "京都には、有名な名所がたくさんあります。",
+          "reading": "きょうとには、ゆうめいなめいしょがたくさんあります。",
+          "translation": {
+            "vi": "Kyoto có rất nhiều danh lam thắng cảnh nổi tiếng.",
+            "en": "Kyoto has many famous sights."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "名物",
+      "reading": "めいぶつ",
+      "meaning": {
+        "vi": "Đặc sản nổi tiếng",
+        "en": "Local specialty (famous product)"
+      },
+      "examples": [
+        {
+          "ja": "この町の名物は、手作りのお菓子です。",
+          "reading": "このまちのめいぶつは、てづくりのおかしです。",
+          "translation": {
+            "vi": "Đặc sản nổi tiếng của thị trấn này là bánh kẹo làm thủ công.",
+            "en": "This town's famous specialty is handmade sweets."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "老舗",
+      "reading": "しにせ",
+      "meaning": {
+        "vi": "Cửa hàng lâu đời",
+        "en": "Long-established shop"
+      },
+      "examples": [
+        {
+          "ja": "あの店は、百年続く老舗です。",
+          "reading": "あのみせは、ひゃくねんつづくしにせです。",
+          "translation": {
+            "vi": "Cửa hàng đó là tiệm lâu đời đã hoạt động trăm năm.",
+            "en": "That shop is a long-established store that has lasted a hundred years."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "由来",
+      "reading": "ゆらい",
+      "meaning": {
+        "vi": "Nguồn gốc; xuất xứ",
+        "en": "Origin; derivation"
+      },
+      "examples": [
+        {
+          "ja": "この祭りの由来を、調べてみました。",
+          "reading": "このまつりのゆらいを、しらべてみました。",
+          "translation": {
+            "vi": "Tôi đã thử tìm hiểu nguồn gốc của lễ hội này.",
+            "en": "I looked into the origin of this festival."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "伝承",
+      "reading": "でんしょう",
+      "meaning": {
+        "vi": "Truyền thuyết; truyền lại",
+        "en": "Folklore; tradition handed down"
+      },
+      "examples": [
+        {
+          "ja": "この島には、古い伝承が残っています。",
+          "reading": "このしまには、ふるいでんしょうがのこっています。",
+          "translation": {
+            "vi": "Hòn đảo này còn lưu truyền những truyền thuyết cổ.",
+            "en": "Old folklore remains on this island."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "継承",
+      "reading": "けいしょう",
+      "meaning": {
+        "vi": "Kế thừa; tiếp nối",
+        "en": "Succession; inheriting"
+      },
+      "examples": [
+        {
+          "ja": "伝統を継承する人が、少なくなっています。",
+          "reading": "でんとうをけいしょうするひとが、すくなくなっています。",
+          "translation": {
+            "vi": "Số người kế thừa truyền thống đang ít dần.",
+            "en": "The number of people who carry on the tradition is decreasing."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "名所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 京都には、有名な（　）がたくさんあります。 — Nghĩa của câu: “Kyoto có rất nhiều danh lam thắng cảnh nổi tiếng.”",
+        "en": "Choose the word that fits the blank: 京都には、有名な（　）がたくさんあります。 — Meaning of the sentence: “Kyoto has many famous sights.”"
+      },
+      "payload": {
+        "choices": [
+          "由来",
+          "名物",
+          "老舗",
+          "名所"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「名所」(Danh lam thắng cảnh) hợp nghĩa câu này: “Kyoto có rất nhiều danh lam thắng cảnh nổi tiếng.”",
+        "en": "Correct! 「名所」(Famous place) fits this sentence: “Kyoto has many famous sights.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kyoto có rất nhiều danh lam thắng cảnh nổi tiếng.”, nên cần 「名所」(Danh lam thắng cảnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Kyoto has many famous sights.”, so it needs 「名所」(Famous place); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "名物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町の（　）は、手作りのお菓子です。 — Nghĩa của câu: “Đặc sản nổi tiếng của thị trấn này là bánh kẹo làm thủ công.”",
+        "en": "Choose the word that fits the blank: この町の（　）は、手作りのお菓子です。 — Meaning of the sentence: “This town's famous specialty is handmade sweets.”"
+      },
+      "payload": {
+        "choices": [
+          "名物",
+          "老舗",
+          "名所",
+          "由来"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「名物」(Đặc sản nổi tiếng) hợp nghĩa câu này: “Đặc sản nổi tiếng của thị trấn này là bánh kẹo làm thủ công.”",
+        "en": "Correct! 「名物」(Local specialty (famous product)) fits this sentence: “This town's famous specialty is handmade sweets.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đặc sản nổi tiếng của thị trấn này là bánh kẹo làm thủ công.”, nên cần 「名物」(Đặc sản nổi tiếng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This town's famous specialty is handmade sweets.”, so it needs 「名物」(Local specialty (famous product)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "老舗",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あの店は、百年続く（　）です。 — Nghĩa của câu: “Cửa hàng đó là tiệm lâu đời đã hoạt động trăm năm.”",
+        "en": "Choose the word that fits the blank: あの店は、百年続く（　）です。 — Meaning of the sentence: “That shop is a long-established store that has lasted a hundred years.”"
+      },
+      "payload": {
+        "choices": [
+          "継承",
+          "老舗",
+          "名所",
+          "名物"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「老舗」(Cửa hàng lâu đời) hợp nghĩa câu này: “Cửa hàng đó là tiệm lâu đời đã hoạt động trăm năm.”",
+        "en": "Correct! 「老舗」(Long-established shop) fits this sentence: “That shop is a long-established store that has lasted a hundred years.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng đó là tiệm lâu đời đã hoạt động trăm năm.”, nên cần 「老舗」(Cửa hàng lâu đời); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That shop is a long-established store that has lasted a hundred years.”, so it needs 「老舗」(Long-established shop); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "由来",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この祭りの（　）を、調べてみました。 — Nghĩa của câu: “Tôi đã thử tìm hiểu nguồn gốc của lễ hội này.”",
+        "en": "Choose the word that fits the blank: この祭りの（　）を、調べてみました。 — Meaning of the sentence: “I looked into the origin of this festival.”"
+      },
+      "payload": {
+        "choices": [
+          "伝承",
+          "名所",
+          "由来",
+          "名物"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「由来」(Nguồn gốc; xuất xứ) hợp nghĩa câu này: “Tôi đã thử tìm hiểu nguồn gốc của lễ hội này.”",
+        "en": "Correct! 「由来」(Origin; derivation) fits this sentence: “I looked into the origin of this festival.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã thử tìm hiểu nguồn gốc của lễ hội này.”, nên cần 「由来」(Nguồn gốc; xuất xứ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I looked into the origin of this festival.”, so it needs 「由来」(Origin; derivation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "伝承",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この島には、古い（　）が残っています。 — Nghĩa của câu: “Hòn đảo này còn lưu truyền những truyền thuyết cổ.”",
+        "en": "Choose the word that fits the blank: この島には、古い（　）が残っています。 — Meaning of the sentence: “Old folklore remains on this island.”"
+      },
+      "payload": {
+        "choices": [
+          "名所",
+          "名物",
+          "継承",
+          "伝承"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「伝承」(Truyền thuyết; truyền lại) hợp nghĩa câu này: “Hòn đảo này còn lưu truyền những truyền thuyết cổ.”",
+        "en": "Correct! 「伝承」(Folklore; tradition handed down) fits this sentence: “Old folklore remains on this island.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hòn đảo này còn lưu truyền những truyền thuyết cổ.”, nên cần 「伝承」(Truyền thuyết; truyền lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Old folklore remains on this island.”, so it needs 「伝承」(Folklore; tradition handed down); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "継承",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 伝統を（　）する人が、少なくなっています。 — Nghĩa của câu: “Số người kế thừa truyền thống đang ít dần.”",
+        "en": "Choose the word that fits the blank: 伝統を（　）する人が、少なくなっています。 — Meaning of the sentence: “The number of people who carry on the tradition is decreasing.”"
+      },
+      "payload": {
+        "choices": [
+          "継承",
+          "伝承",
+          "名所",
+          "由来"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「継承」(Kế thừa; tiếp nối) hợp nghĩa câu này: “Số người kế thừa truyền thống đang ít dần.”",
+        "en": "Correct! 「継承」(Succession; inheriting) fits this sentence: “The number of people who carry on the tradition is decreasing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Số người kế thừa truyền thống đang ít dần.”, nên cần 「継承」(Kế thừa; tiếp nối); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The number of people who carry on the tradition is decreasing.”, so it needs 「継承」(Succession; inheriting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "名所",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 京都には、有名な「名所」がたくさんあります。",
+        "en": "Choose the correct reading of the word in 「」: 京都には、有名な「名所」がたくさんあります。"
+      },
+      "payload": {
+        "choices": [
+          "めいしょ",
+          "でんしょう",
+          "めいぶつ",
+          "ゆらい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「名所」 đọc là 「めいしょ」, nghĩa là Danh lam thắng cảnh.",
+        "en": "Correct! 「名所」 is read 「めいしょ」 and means Famous place."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「名所」 đọc là 「めいしょ」 (Danh lam thắng cảnh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「名所」 is read 「めいしょ」 (Famous place); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "由来",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この祭りの「由来」を、調べてみました。",
+        "en": "Choose the correct reading of the word in 「」: この祭りの「由来」を、調べてみました。"
+      },
+      "payload": {
+        "choices": [
+          "めいしょ",
+          "ゆらい",
+          "めいぶつ",
+          "しにせ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「由来」 đọc là 「ゆらい」, nghĩa là Nguồn gốc; xuất xứ.",
+        "en": "Correct! 「由来」 is read 「ゆらい」 and means Origin; derivation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「由来」 đọc là 「ゆらい」 (Nguồn gốc; xuất xứ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「由来」 is read 「ゆらい」 (Origin; derivation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "老舗",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: あの店は、百年続く「しにせ」です。",
+        "en": "Choose the correct way to write the word in 「」: あの店は、百年続く「しにせ」です。"
+      },
+      "payload": {
+        "choices": [
+          "名物",
+          "老舗",
+          "名所",
+          "継承"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しにせ」 viết là 「老舗」, nghĩa là Cửa hàng lâu đời.",
+        "en": "Correct! 「しにせ」 is written 「老舗」 and means Long-established shop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しにせ」 viết là 「老舗」 (Cửa hàng lâu đời); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しにせ」 is written 「老舗」 (Long-established shop); the other words are read differently."
+      }
+    }
+  ]
+}

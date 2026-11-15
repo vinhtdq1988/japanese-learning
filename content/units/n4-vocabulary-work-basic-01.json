@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-work-basic",
+  "title": {
+    "vi": "Nơi làm việc và chức danh",
+    "en": "Workplaces and job titles"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "事務所",
+      "reading": "じむしょ",
+      "meaning": {
+        "vi": "Văn phòng",
+        "en": "Office"
+      },
+      "examples": [
+        {
+          "ja": "会社の事務所は、駅の近くにあります。",
+          "reading": "かいしゃのじむしょは、えきのちかくにあります。",
+          "translation": {
+            "vi": "Văn phòng của công ty nằm gần nhà ga.",
+            "en": "The company office is near the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "工場",
+      "reading": "こうじょう",
+      "meaning": {
+        "vi": "Nhà máy; xưởng",
+        "en": "Factory"
+      },
+      "examples": [
+        {
+          "ja": "この工場では、おもちゃを作っています。",
+          "reading": "このこうじょうでは、おもちゃをつくっています。",
+          "translation": {
+            "vi": "Nhà máy này sản xuất đồ chơi.",
+            "en": "This factory makes toys."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "職場",
+      "reading": "しょくば",
+      "meaning": {
+        "vi": "Nơi làm việc",
+        "en": "Workplace"
+      },
+      "examples": [
+        {
+          "ja": "私の職場は、人が少なくて静かです。",
+          "reading": "わたしのしょくばは、ひとがすくなくてしずかです。",
+          "translation": {
+            "vi": "Nơi làm việc của tôi ít người nên yên tĩnh.",
+            "en": "My workplace is quiet because there are few people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "社員",
+      "reading": "しゃいん",
+      "meaning": {
+        "vi": "Nhân viên công ty",
+        "en": "Company employee"
+      },
+      "examples": [
+        {
+          "ja": "この会社には、社員が三百人います。",
+          "reading": "このかいしゃには、しゃいんがさんびゃくにんいます。",
+          "translation": {
+            "vi": "Công ty này có ba trăm nhân viên.",
+            "en": "This company has 300 employees."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "部長",
+      "reading": "ぶちょう",
+      "meaning": {
+        "vi": "Trưởng phòng (cấp bộ phận)",
+        "en": "Department head"
+      },
+      "examples": [
+        {
+          "ja": "部長は、今、会議に出ています。",
+          "reading": "ぶちょうは、いま、かいぎにでています。",
+          "translation": {
+            "vi": "Trưởng phòng hiện đang họp.",
+            "en": "The department head is in a meeting now."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "課長",
+      "reading": "かちょう",
+      "meaning": {
+        "vi": "Trưởng nhóm; trưởng ban (cấp dưới trưởng phòng)",
+        "en": "Section chief"
+      },
+      "examples": [
+        {
+          "ja": "課長に、仕事のことを相談しました。",
+          "reading": "かちょうに、しごとのことをそうだんしました。",
+          "translation": {
+            "vi": "Tôi đã trao đổi với trưởng nhóm về công việc.",
+            "en": "I consulted the section chief about my work."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "事務所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の（　）は、駅の近くにあります。 — Nghĩa của câu: “Văn phòng của công ty nằm gần nhà ga.”",
+        "en": "Choose the word that fits the blank: 会社の（　）は、駅の近くにあります。 — Meaning of the sentence: “The company office is near the station.”"
+      },
+      "payload": {
+        "choices": [
+          "事務所",
+          "工場",
+          "職場",
+          "社員"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事務所」(Văn phòng) hợp nghĩa câu này: “Văn phòng của công ty nằm gần nhà ga.”",
+        "en": "Correct! 「事務所」(Office) fits this sentence: “The company office is near the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Văn phòng của công ty nằm gần nhà ga.”, nên cần 「事務所」(Văn phòng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company office is near the station.”, so it needs 「事務所」(Office); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "工場",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）では、おもちゃを作っています。 — Nghĩa của câu: “Nhà máy này sản xuất đồ chơi.”",
+        "en": "Choose the word that fits the blank: この（　）では、おもちゃを作っています。 — Meaning of the sentence: “This factory makes toys.”"
+      },
+      "payload": {
+        "choices": [
+          "事務所",
+          "工場",
+          "職場",
+          "部長"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「工場」(Nhà máy; xưởng) hợp nghĩa câu này: “Nhà máy này sản xuất đồ chơi.”",
+        "en": "Correct! 「工場」(Factory) fits this sentence: “This factory makes toys.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà máy này sản xuất đồ chơi.”, nên cần 「工場」(Nhà máy; xưởng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This factory makes toys.”, so it needs 「工場」(Factory); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "職場",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の（　）は、人が少なくて静かです。 — Nghĩa của câu: “Nơi làm việc của tôi ít người nên yên tĩnh.”",
+        "en": "Choose the word that fits the blank: 私の（　）は、人が少なくて静かです。 — Meaning of the sentence: “My workplace is quiet because there are few people.”"
+      },
+      "payload": {
+        "choices": [
+          "事務所",
+          "工場",
+          "職場",
+          "課長"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「職場」(Nơi làm việc) hợp nghĩa câu này: “Nơi làm việc của tôi ít người nên yên tĩnh.”",
+        "en": "Correct! 「職場」(Workplace) fits this sentence: “My workplace is quiet because there are few people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nơi làm việc của tôi ít người nên yên tĩnh.”, nên cần 「職場」(Nơi làm việc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My workplace is quiet because there are few people.”, so it needs 「職場」(Workplace); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "社員",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社には、（　）が三百人います。",
+        "en": "Choose the word that fits the blank: この会社には、（　）が三百人います。"
+      },
+      "payload": {
+        "choices": [
+          "部長",
+          "課長",
+          "工場",
+          "社員"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「社員」(Nhân viên công ty) hợp nghĩa câu này: “Công ty này có ba trăm nhân viên.”",
+        "en": "Correct! 「社員」(Company employee) fits this sentence: “This company has 300 employees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty này có ba trăm nhân viên.”, nên cần 「社員」(Nhân viên công ty); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company has 300 employees.”, so it needs 「社員」(Company employee); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "部長",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、今、会議に出ています。 — Nghĩa của câu: “Trưởng phòng hiện đang họp.”",
+        "en": "Choose the word that fits the blank: （　）は、今、会議に出ています。 — Meaning of the sentence: “The department head is in a meeting now.”"
+      },
+      "payload": {
+        "choices": [
+          "部長",
+          "課長",
+          "社員",
+          "職場"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「部長」(Trưởng phòng (cấp bộ phận)) hợp nghĩa câu này: “Trưởng phòng hiện đang họp.”",
+        "en": "Correct! 「部長」(Department head) fits this sentence: “The department head is in a meeting now.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trưởng phòng hiện đang họp.”, nên cần 「部長」(Trưởng phòng (cấp bộ phận)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The department head is in a meeting now.”, so it needs 「部長」(Department head); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "課長",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）に、仕事のことを相談しました。 — Nghĩa của câu: “Tôi đã trao đổi với trưởng nhóm về công việc.”",
+        "en": "Choose the word that fits the blank: （　）に、仕事のことを相談しました。 — Meaning of the sentence: “I consulted the section chief about my work.”"
+      },
+      "payload": {
+        "choices": [
+          "部長",
+          "課長",
+          "社員",
+          "工場"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「課長」(Trưởng nhóm; trưởng ban (cấp dưới trưởng phòng)) hợp nghĩa câu này: “Tôi đã trao đổi với trưởng nhóm về công việc.”",
+        "en": "Correct! 「課長」(Section chief) fits this sentence: “I consulted the section chief about my work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã trao đổi với trưởng nhóm về công việc.”, nên cần 「課長」(Trưởng nhóm; trưởng ban (cấp dưới trưởng phòng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I consulted the section chief about my work.”, so it needs 「課長」(Section chief); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "事務所",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 会社の「事務所」は、駅の近くにあります。",
+        "en": "Choose the correct reading of the word in 「」: 会社の「事務所」は、駅の近くにあります。"
+      },
+      "payload": {
+        "choices": [
+          "こうじょう",
+          "じむしょ",
+          "しょくば",
+          "しゃいん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事務所」 đọc là 「じむしょ」, nghĩa là Văn phòng.",
+        "en": "Correct! 「事務所」 is read 「じむしょ」 and means Office."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「事務所」 đọc là 「じむしょ」 (Văn phòng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「事務所」 is read 「じむしょ」 (Office); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "社員",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この会社には、「社員」が三百人います。",
+        "en": "Choose the correct reading of the word in 「」: この会社には、「社員」が三百人います。"
+      },
+      "payload": {
+        "choices": [
+          "じむしょ",
+          "こうじょう",
+          "しゃいん",
+          "しょくば"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「社員」 đọc là 「しゃいん」, nghĩa là Nhân viên công ty.",
+        "en": "Correct! 「社員」 is read 「しゃいん」 and means Company employee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「社員」 đọc là 「しゃいん」 (Nhân viên công ty); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「社員」 is read 「しゃいん」 (Company employee); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "工場",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この「こうじょう」では、おもちゃを作っています。",
+        "en": "Choose the correct way to write the word in 「」: この「こうじょう」では、おもちゃを作っています。"
+      },
+      "payload": {
+        "choices": [
+          "事務所",
+          "職場",
+          "工場",
+          "社員"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こうじょう」 viết là 「工場」, nghĩa là Nhà máy; xưởng.",
+        "en": "Correct! 「こうじょう」 is written 「工場」 and means Factory."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こうじょう」 viết là 「工場」 (Nhà máy; xưởng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こうじょう」 is written 「工場」 (Factory); the other words are read differently."
+      }
+    }
+  ]
+}

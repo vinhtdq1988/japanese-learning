@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-food-shopping",
+  "title": {
+    "vi": "Kanji ăn uống – mua sắm (買 売 貸 借)",
+    "en": "Food and shopping kanji (買 売 貸 借)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "買",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "mua",
+        "en": "buy"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "バイ"
+        ],
+        "kunReadings": [
+          "か.う"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "売買",
+          "reading": "ばいばい",
+          "kanjiReading": "バイ",
+          "translation": {
+            "vi": "mua bán",
+            "en": "buying and selling"
+          }
+        },
+        {
+          "ja": "買う",
+          "reading": "かう",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "mua",
+            "en": "to buy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "売",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "bán",
+        "en": "sell"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "バイ"
+        ],
+        "kunReadings": [
+          "う.る",
+          "う.れる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "売店",
+          "reading": "ばいてん",
+          "kanjiReading": "バイ",
+          "translation": {
+            "vi": "quầy bán hàng",
+            "en": "stand; kiosk"
+          }
+        },
+        {
+          "ja": "売る",
+          "reading": "うる",
+          "kanjiReading": "う",
+          "translation": {
+            "vi": "bán",
+            "en": "to sell"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貸",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "cho mượn; cho thuê",
+        "en": "lend"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タイ"
+        ],
+        "kunReadings": [
+          "か.す"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "賃貸",
+          "reading": "ちんたい",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "cho thuê",
+            "en": "rental"
+          }
+        },
+        {
+          "ja": "貸す",
+          "reading": "かす",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "cho mượn",
+            "en": "to lend"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "借",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "mượn; vay",
+        "en": "borrow"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シャク"
+        ],
+        "kunReadings": [
+          "か.りる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "借家",
+          "reading": "しゃくや",
+          "kanjiReading": "シャク",
+          "translation": {
+            "vi": "nhà thuê",
+            "en": "rented house"
+          }
+        },
+        {
+          "ja": "借りる",
+          "reading": "かりる",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "mượn",
+            "en": "to borrow"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "買",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「買」nghĩa là gì?",
+        "en": "What does 「買」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mua",
+            "en": "buy"
+          },
+          {
+            "vi": "bán",
+            "en": "sell"
+          },
+          {
+            "vi": "cho mượn; cho thuê",
+            "en": "lend"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 買 nghĩa là mua.",
+        "en": "Correct! 買 means buy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 買 nghĩa là mua, như trong 「売買」 (mua bán).",
+        "en": "Not quite. 買 means buy, as in 「売買」 (buying and selling)."
+      }
+    },
+    {
+      "item": "買",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「買」 trong 「売買」 (“mua bán”).",
+        "en": "Type the reading of 「買」 in 「売買」 (“buying and selling”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばい",
+          "バイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 売買, 買 đọc là ばい (âm On).",
+        "en": "Correct! In 売買, 買 is read ばい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 売買 (mua bán), 買 đọc là ばい (âm On).",
+        "en": "In 売買 (buying and selling), 買 is read ばい (on'yomi)."
+      }
+    },
+    {
+      "item": "買",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「買う」(mua) đọc là gì?",
+        "en": "How is 「買う」 (to buy) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばいう",
+          "かう",
+          "うる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 買う = かう (mua); 買 đọc là か (âm Kun).",
+        "en": "Correct! 買う = かう (to buy); 買 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "買う đọc là かう (mua): 買 mang âm Kun か.",
+        "en": "買う is read かう (to buy): 買 takes the kun'yomi か."
+      }
+    },
+    {
+      "item": "売",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「売」nghĩa là gì?",
+        "en": "What does 「売」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cho mượn; cho thuê",
+            "en": "lend"
+          },
+          {
+            "vi": "bán",
+            "en": "sell"
+          },
+          {
+            "vi": "mượn; vay",
+            "en": "borrow"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 売 nghĩa là bán.",
+        "en": "Correct! 売 means sell."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 売 nghĩa là bán, như trong 「売店」 (quầy bán hàng).",
+        "en": "Not quite. 売 means sell, as in 「売店」 (stand; kiosk)."
+      }
+    },
+    {
+      "item": "売",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「売」 trong 「売店」 (“quầy bán hàng”).",
+        "en": "Type the reading of 「売」 in 「売店」 (“stand; kiosk”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばい",
+          "バイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 売店, 売 đọc là ばい (âm On).",
+        "en": "Correct! In 売店, 売 is read ばい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 売店 (quầy bán hàng), 売 đọc là ばい (âm On).",
+        "en": "In 売店 (stand; kiosk), 売 is read ばい (on'yomi)."
+      }
+    },
+    {
+      "item": "売",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「売る」(bán) đọc là gì?",
+        "en": "How is 「売る」 (to sell) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばいる",
+          "かす",
+          "うる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 売る = うる (bán); 売 đọc là う (âm Kun).",
+        "en": "Correct! 売る = うる (to sell); 売 is read う (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "売る đọc là うる (bán): 売 mang âm Kun う.",
+        "en": "売る is read うる (to sell): 売 takes the kun'yomi う."
+      }
+    },
+    {
+      "item": "貸",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貸」nghĩa là gì?",
+        "en": "What does 「貸」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mượn; vay",
+            "en": "borrow"
+          },
+          {
+            "vi": "mua",
+            "en": "buy"
+          },
+          {
+            "vi": "cho mượn; cho thuê",
+            "en": "lend"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貸 nghĩa là cho mượn; cho thuê.",
+        "en": "Correct! 貸 means lend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 貸 nghĩa là cho mượn; cho thuê, như trong 「賃貸」 (cho thuê).",
+        "en": "Not quite. 貸 means lend, as in 「賃貸」 (rental)."
+      }
+    },
+    {
+      "item": "貸",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「貸」 trong 「賃貸」 (“cho thuê”).",
+        "en": "Type the reading of 「貸」 in 「賃貸」 (“rental”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たい",
+          "タイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 賃貸, 貸 đọc là たい (âm On).",
+        "en": "Correct! In 賃貸, 貸 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 賃貸 (cho thuê), 貸 đọc là たい (âm On).",
+        "en": "In 賃貸 (rental), 貸 is read たい (on'yomi)."
+      }
+    },
+    {
+      "item": "貸",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貸す」(cho mượn) đọc là gì?",
+        "en": "How is 「貸す」 (to lend) read?"
+      },
+      "payload": {
+        "choices": [
+          "かす",
+          "たいす",
+          "かう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貸す = かす (cho mượn); 貸 đọc là か (âm Kun).",
+        "en": "Correct! 貸す = かす (to lend); 貸 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "貸す đọc là かす (cho mượn): 貸 mang âm Kun か.",
+        "en": "貸す is read かす (to lend): 貸 takes the kun'yomi か."
+      }
+    },
+    {
+      "item": "借",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「借」nghĩa là gì?",
+        "en": "What does 「借」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mượn; vay",
+            "en": "borrow"
+          },
+          {
+            "vi": "mua",
+            "en": "buy"
+          },
+          {
+            "vi": "bán",
+            "en": "sell"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 借 nghĩa là mượn; vay.",
+        "en": "Correct! 借 means borrow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 借 nghĩa là mượn; vay, như trong 「借家」 (nhà thuê).",
+        "en": "Not quite. 借 means borrow, as in 「借家」 (rented house)."
+      }
+    },
+    {
+      "item": "借",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「借」 trong 「借家」 (“nhà thuê”).",
+        "en": "Type the reading of 「借」 in 「借家」 (“rented house”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゃく",
+          "シャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 借家, 借 đọc là しゃく (âm On).",
+        "en": "Correct! In 借家, 借 is read しゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 借家 (nhà thuê), 借 đọc là しゃく (âm On).",
+        "en": "In 借家 (rented house), 借 is read しゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "借",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「借りる」(mượn) đọc là gì?",
+        "en": "How is 「借りる」 (to borrow) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゃくりる",
+          "かりる",
+          "うる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 借りる = かりる (mượn); 借 đọc là か (âm Kun).",
+        "en": "Correct! 借りる = かりる (to borrow); 借 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "借りる đọc là かりる (mượn): 借 mang âm Kun か.",
+        "en": "借りる is read かりる (to borrow): 借 takes the kun'yomi か."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "買",
+            {
+              "vi": "mua",
+              "en": "buy"
+            }
+          ],
+          [
+            "売",
+            {
+              "vi": "bán",
+              "en": "sell"
+            }
+          ],
+          [
+            "貸",
+            {
+              "vi": "cho mượn; cho thuê",
+              "en": "lend"
+            }
+          ],
+          [
+            "借",
+            {
+              "vi": "mượn; vay",
+              "en": "borrow"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

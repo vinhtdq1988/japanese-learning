@@ -1,0 +1,417 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (不 別 特)",
+    "en": "Adjectives and states kanji (不 別 特)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "不",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "không; bất",
+        "en": "not; un-"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ",
+          "ブ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "不便",
+          "reading": "ふべん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "bất tiện",
+            "en": "inconvenient"
+          }
+        },
+        {
+          "ja": "不安",
+          "reading": "ふあん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "bất an; lo lắng",
+            "en": "anxiety"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "別",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "riêng; khác",
+        "en": "separate; different"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ベツ"
+        ],
+        "kunReadings": [
+          "わか.れる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "特別",
+          "reading": "とくべつ",
+          "kanjiReading": "ベツ",
+          "translation": {
+            "vi": "đặc biệt",
+            "en": "special"
+          }
+        },
+        {
+          "ja": "別れる",
+          "reading": "わかれる",
+          "kanjiReading": "わか",
+          "translation": {
+            "vi": "chia tay",
+            "en": "to part"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "特",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "đặc biệt",
+        "en": "special"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "特別",
+          "reading": "とくべつ",
+          "kanjiReading": "トク",
+          "translation": {
+            "vi": "đặc biệt",
+            "en": "special"
+          }
+        },
+        {
+          "ja": "特に",
+          "reading": "とくに",
+          "kanjiReading": "トク",
+          "translation": {
+            "vi": "nhất là",
+            "en": "especially"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "不",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「不」nghĩa là gì?",
+        "en": "What does 「不」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "không; bất",
+            "en": "not; un-"
+          },
+          {
+            "vi": "riêng; khác",
+            "en": "separate; different"
+          },
+          {
+            "vi": "đặc biệt",
+            "en": "special"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 不 nghĩa là không; bất.",
+        "en": "Correct! 不 means not; un-."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 不 nghĩa là không; bất, như trong 「不便」 (bất tiện).",
+        "en": "Not quite. 不 means not; un-, as in 「不便」 (inconvenient)."
+      }
+    },
+    {
+      "item": "不",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「不」 trong 「不便」 (“bất tiện”).",
+        "en": "Type the reading of 「不」 in 「不便」 (“inconvenient”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふ",
+          "フ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 不便, 不 đọc là ふ (âm On).",
+        "en": "Correct! In 不便, 不 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 不便 (bất tiện), 不 đọc là ふ (âm On).",
+        "en": "In 不便 (inconvenient), 不 is read ふ (on'yomi)."
+      }
+    },
+    {
+      "item": "不",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「不安」(bất an; lo lắng) đọc là gì?",
+        "en": "How is 「不安」 (anxiety) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぶあん",
+          "ふあん",
+          "わかあん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 不安 = ふあん (bất an; lo lắng); 不 đọc là ふ (âm On).",
+        "en": "Correct! 不安 = ふあん (anxiety); 不 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "不安 đọc là ふあん (bất an; lo lắng): 不 mang âm On ふ.",
+        "en": "不安 is read ふあん (anxiety): 不 takes the on'yomi ふ."
+      }
+    },
+    {
+      "item": "別",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「別」nghĩa là gì?",
+        "en": "What does 「別」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đặc biệt",
+            "en": "special"
+          },
+          {
+            "vi": "riêng; khác",
+            "en": "separate; different"
+          },
+          {
+            "vi": "không; bất",
+            "en": "not; un-"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 別 nghĩa là riêng; khác.",
+        "en": "Correct! 別 means separate; different."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 別 nghĩa là riêng; khác, như trong 「特別」 (đặc biệt).",
+        "en": "Not quite. 別 means separate; different, as in 「特別」 (special)."
+      }
+    },
+    {
+      "item": "別",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「別」 trong 「特別」 (“đặc biệt”).",
+        "en": "Type the reading of 「別」 in 「特別」 (“special”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "べつ",
+          "ベツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 特別, 別 đọc là べつ (âm On).",
+        "en": "Correct! In 特別, 別 is read べつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 特別 (đặc biệt), 別 đọc là べつ (âm On).",
+        "en": "In 特別 (special), 別 is read べつ (on'yomi)."
+      }
+    },
+    {
+      "item": "別",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「別れる」(chia tay) đọc là gì?",
+        "en": "How is 「別れる」 (to part) read?"
+      },
+      "payload": {
+        "choices": [
+          "べつれる",
+          "とくべつ",
+          "わかれる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 別れる = わかれる (chia tay); 別 đọc là わか (âm Kun).",
+        "en": "Correct! 別れる = わかれる (to part); 別 is read わか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "別れる đọc là わかれる (chia tay): 別 mang âm Kun わか.",
+        "en": "別れる is read わかれる (to part): 別 takes the kun'yomi わか."
+      }
+    },
+    {
+      "item": "特",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「特」nghĩa là gì?",
+        "en": "What does 「特」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "không; bất",
+            "en": "not; un-"
+          },
+          {
+            "vi": "riêng; khác",
+            "en": "separate; different"
+          },
+          {
+            "vi": "đặc biệt",
+            "en": "special"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 特 nghĩa là đặc biệt.",
+        "en": "Correct! 特 means special."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 特 nghĩa là đặc biệt, như trong 「特別」 (đặc biệt).",
+        "en": "Not quite. 特 means special, as in 「特別」 (special)."
+      }
+    },
+    {
+      "item": "特",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「特」 trong 「特別」 (“đặc biệt”).",
+        "en": "Type the reading of 「特」 in 「特別」 (“special”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とく",
+          "トク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 特別, 特 đọc là とく (âm On).",
+        "en": "Correct! In 特別, 特 is read とく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 特別 (đặc biệt), 特 đọc là とく (âm On).",
+        "en": "In 特別 (special), 特 is read とく (on'yomi)."
+      }
+    },
+    {
+      "item": "特",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「特に」(nhất là) đọc là gì?",
+        "en": "How is 「特に」 (especially) read?"
+      },
+      "payload": {
+        "choices": [
+          "とくに",
+          "ふべん",
+          "ふあん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 特に = とくに (nhất là); 特 đọc là とく (âm On).",
+        "en": "Correct! 特に = とくに (especially); 特 is read とく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "特に đọc là とくに (nhất là): 特 mang âm On とく.",
+        "en": "特に is read とくに (especially): 特 takes the on'yomi とく."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "不",
+            {
+              "vi": "không; bất",
+              "en": "not; un-"
+            }
+          ],
+          [
+            "別",
+            {
+              "vi": "riêng; khác",
+              "en": "separate; different"
+            }
+          ],
+          [
+            "特",
+            {
+              "vi": "đặc biệt",
+              "en": "special"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

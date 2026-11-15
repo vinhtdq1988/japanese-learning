@@ -1,0 +1,673 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (絶 複 的 要 実)",
+    "en": "Adjectives and quantity kanji (絶 複 的 要 実)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3230,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "絶",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "tuyệt; đứt đoạn",
+        "en": "extinct; cut off"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゼツ"
+        ],
+        "kunReadings": [
+          "た.える",
+          "た.つ"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "絶望",
+          "reading": "ぜつぼう",
+          "kanjiReading": "ゼツ",
+          "translation": {
+            "vi": "tuyệt vọng",
+            "en": "despair"
+          }
+        },
+        {
+          "ja": "絶える",
+          "reading": "たえる",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "đứt đoạn; chấm dứt",
+            "en": "to cease"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "複",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "phức; gấp đôi",
+        "en": "compound; double"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "複数",
+          "reading": "ふくすう",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "số nhiều",
+            "en": "plural"
+          }
+        },
+        {
+          "ja": "複雑",
+          "reading": "ふくざつ",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "phức tạp",
+            "en": "complicated"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "的",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "đích; mang tính",
+        "en": "target; -ic"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テキ"
+        ],
+        "kunReadings": [
+          "まと"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "目的",
+          "reading": "もくてき",
+          "kanjiReading": "テキ",
+          "translation": {
+            "vi": "mục đích",
+            "en": "purpose"
+          }
+        },
+        {
+          "ja": "的",
+          "reading": "まと",
+          "kanjiReading": "まと",
+          "translation": {
+            "vi": "mục tiêu; bia",
+            "en": "target"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "要",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "cần; yếu; điểm chính",
+        "en": "need; essential"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [
+          "かなめ",
+          "い.る"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "重要",
+          "reading": "じゅうよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "quan trọng",
+            "en": "important"
+          }
+        },
+        {
+          "ja": "要る",
+          "reading": "いる",
+          "kanjiReading": "い",
+          "translation": {
+            "vi": "cần",
+            "en": "to need"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "実",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "thực; quả; thật",
+        "en": "real; fruit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジツ"
+        ],
+        "kunReadings": [
+          "み",
+          "みの.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "現実",
+          "reading": "げんじつ",
+          "kanjiReading": "ジツ",
+          "translation": {
+            "vi": "hiện thực",
+            "en": "reality"
+          }
+        },
+        {
+          "ja": "実る",
+          "reading": "みのる",
+          "kanjiReading": "みの",
+          "translation": {
+            "vi": "kết quả; chín",
+            "en": "to bear fruit"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "絶",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「絶」nghĩa là gì?",
+        "en": "What does 「絶」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tuyệt; đứt đoạn",
+            "en": "extinct; cut off"
+          },
+          {
+            "vi": "phức; gấp đôi",
+            "en": "compound; double"
+          },
+          {
+            "vi": "đích; mang tính",
+            "en": "target; -ic"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 絶 nghĩa là tuyệt; đứt đoạn.",
+        "en": "Correct! 絶 means extinct; cut off."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 絶 nghĩa là tuyệt; đứt đoạn, như trong 「絶望」 (tuyệt vọng).",
+        "en": "Not quite. 絶 means extinct; cut off, as in 「絶望」 (despair)."
+      }
+    },
+    {
+      "item": "絶",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「絶」 trong 「絶望」 (“tuyệt vọng”).",
+        "en": "Type the reading of 「絶」 in 「絶望」 (“despair”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぜつ",
+          "ゼツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 絶望, 絶 đọc là ぜつ (âm On).",
+        "en": "Correct! In 絶望, 絶 is read ぜつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 絶望 (tuyệt vọng), 絶 đọc là ぜつ (âm On).",
+        "en": "In 絶望 (despair), 絶 is read ぜつ (on'yomi)."
+      }
+    },
+    {
+      "item": "絶",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「絶える」(đứt đoạn; chấm dứt) đọc là gì?",
+        "en": "How is 「絶える」 (to cease) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜつえる",
+          "たえる",
+          "みのる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 絶える = たえる (đứt đoạn; chấm dứt); 絶 đọc là た (âm Kun).",
+        "en": "Correct! 絶える = たえる (to cease); 絶 is read た (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "絶える đọc là たえる (đứt đoạn; chấm dứt): 絶 mang âm Kun た.",
+        "en": "絶える is read たえる (to cease): 絶 takes the kun'yomi た."
+      }
+    },
+    {
+      "item": "複",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「複」nghĩa là gì?",
+        "en": "What does 「複」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đích; mang tính",
+            "en": "target; -ic"
+          },
+          {
+            "vi": "phức; gấp đôi",
+            "en": "compound; double"
+          },
+          {
+            "vi": "cần; yếu; điểm chính",
+            "en": "need; essential"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 複 nghĩa là phức; gấp đôi.",
+        "en": "Correct! 複 means compound; double."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 複 nghĩa là phức; gấp đôi, như trong 「複数」 (số nhiều).",
+        "en": "Not quite. 複 means compound; double, as in 「複数」 (plural)."
+      }
+    },
+    {
+      "item": "複",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「複」 trong 「複数」 (“số nhiều”).",
+        "en": "Type the reading of 「複」 in 「複数」 (“plural”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふく",
+          "フク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 複数, 複 đọc là ふく (âm On).",
+        "en": "Correct! In 複数, 複 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 複数 (số nhiều), 複 đọc là ふく (âm On).",
+        "en": "In 複数 (plural), 複 is read ふく (on'yomi)."
+      }
+    },
+    {
+      "item": "複",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「複雑」(phức tạp) đọc là gì?",
+        "en": "How is 「複雑」 (complicated) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぶくざつ",
+          "ふくさつ",
+          "ふくざつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 複雑 = ふくざつ (phức tạp); 複 đọc là ふく (âm On).",
+        "en": "Correct! 複雑 = ふくざつ (complicated); 複 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "複雑 đọc là ふくざつ (phức tạp): 複 mang âm On ふく.",
+        "en": "複雑 is read ふくざつ (complicated): 複 takes the on'yomi ふく."
+      }
+    },
+    {
+      "item": "的",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「的」nghĩa là gì?",
+        "en": "What does 「的」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cần; yếu; điểm chính",
+            "en": "need; essential"
+          },
+          {
+            "vi": "thực; quả; thật",
+            "en": "real; fruit"
+          },
+          {
+            "vi": "đích; mang tính",
+            "en": "target; -ic"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 的 nghĩa là đích; mang tính.",
+        "en": "Correct! 的 means target; -ic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 的 nghĩa là đích; mang tính, như trong 「目的」 (mục đích).",
+        "en": "Not quite. 的 means target; -ic, as in 「目的」 (purpose)."
+      }
+    },
+    {
+      "item": "的",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「的」 trong 「目的」 (“mục đích”).",
+        "en": "Type the reading of 「的」 in 「目的」 (“purpose”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てき",
+          "テキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 目的, 的 đọc là てき (âm On).",
+        "en": "Correct! In 目的, 的 is read てき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 目的 (mục đích), 的 đọc là てき (âm On).",
+        "en": "In 目的 (purpose), 的 is read てき (on'yomi)."
+      }
+    },
+    {
+      "item": "的",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「的」(mục tiêu; bia; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「的」 (target; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "まと",
+          "てき",
+          "いる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 的 = まと (mục tiêu; bia); 的 đọc là まと (âm Kun).",
+        "en": "Correct! 的 = まと (target); 的 is read まと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "的 đọc là まと (mục tiêu; bia): 的 mang âm Kun まと.",
+        "en": "的 is read まと (target): 的 takes the kun'yomi まと."
+      }
+    },
+    {
+      "item": "要",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「要」nghĩa là gì?",
+        "en": "What does 「要」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cần; yếu; điểm chính",
+            "en": "need; essential"
+          },
+          {
+            "vi": "thực; quả; thật",
+            "en": "real; fruit"
+          },
+          {
+            "vi": "tuyệt; đứt đoạn",
+            "en": "extinct; cut off"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 要 nghĩa là cần; yếu; điểm chính.",
+        "en": "Correct! 要 means need; essential."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 要 nghĩa là cần; yếu; điểm chính, như trong 「重要」 (quan trọng).",
+        "en": "Not quite. 要 means need; essential, as in 「重要」 (important)."
+      }
+    },
+    {
+      "item": "要",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「要」 trong 「重要」 (“quan trọng”).",
+        "en": "Type the reading of 「要」 in 「重要」 (“important”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 重要, 要 đọc là よう (âm On).",
+        "en": "Correct! In 重要, 要 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 重要 (quan trọng), 要 đọc là よう (âm On).",
+        "en": "In 重要 (important), 要 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "要",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「要る」(cần) đọc là gì?",
+        "en": "How is 「要る」 (to need) read?"
+      },
+      "payload": {
+        "choices": [
+          "ようる",
+          "いる",
+          "まと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 要る = いる (cần); 要 đọc là い (âm Kun).",
+        "en": "Correct! 要る = いる (to need); 要 is read い (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "要る đọc là いる (cần): 要 mang âm Kun い.",
+        "en": "要る is read いる (to need): 要 takes the kun'yomi い."
+      }
+    },
+    {
+      "item": "実",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「実」nghĩa là gì?",
+        "en": "What does 「実」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tuyệt; đứt đoạn",
+            "en": "extinct; cut off"
+          },
+          {
+            "vi": "thực; quả; thật",
+            "en": "real; fruit"
+          },
+          {
+            "vi": "phức; gấp đôi",
+            "en": "compound; double"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 実 nghĩa là thực; quả; thật.",
+        "en": "Correct! 実 means real; fruit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 実 nghĩa là thực; quả; thật, như trong 「現実」 (hiện thực).",
+        "en": "Not quite. 実 means real; fruit, as in 「現実」 (reality)."
+      }
+    },
+    {
+      "item": "実",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「実」 trong 「現実」 (“hiện thực”).",
+        "en": "Type the reading of 「実」 in 「現実」 (“reality”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じつ",
+          "ジツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 現実, 実 đọc là じつ (âm On).",
+        "en": "Correct! In 現実, 実 is read じつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 現実 (hiện thực), 実 đọc là じつ (âm On).",
+        "en": "In 現実 (reality), 実 is read じつ (on'yomi)."
+      }
+    },
+    {
+      "item": "実",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「実る」(kết quả; chín) đọc là gì?",
+        "en": "How is 「実る」 (to bear fruit) read?"
+      },
+      "payload": {
+        "choices": [
+          "じつる",
+          "たえる",
+          "みのる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 実る = みのる (kết quả; chín); 実 đọc là みの (âm Kun).",
+        "en": "Correct! 実る = みのる (to bear fruit); 実 is read みの (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "実る đọc là みのる (kết quả; chín): 実 mang âm Kun みの.",
+        "en": "実る is read みのる (to bear fruit): 実 takes the kun'yomi みの."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "絶",
+            {
+              "vi": "tuyệt; đứt đoạn",
+              "en": "extinct; cut off"
+            }
+          ],
+          [
+            "複",
+            {
+              "vi": "phức; gấp đôi",
+              "en": "compound; double"
+            }
+          ],
+          [
+            "的",
+            {
+              "vi": "đích; mang tính",
+              "en": "target; -ic"
+            }
+          ],
+          [
+            "要",
+            {
+              "vi": "cần; yếu; điểm chính",
+              "en": "need; essential"
+            }
+          ],
+          [
+            "実",
+            {
+              "vi": "thực; quả; thật",
+              "en": "real; fruit"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

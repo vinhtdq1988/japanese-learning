@@ -36,6 +36,11 @@ afterAll(async () => {
 const auth = () => ({ token: admin.token });
 
 async function createActiveUnit(overrides: Record<string, unknown> = {}) {
+  // Spec 008 (FR-007): mục chính phải duy nhất giữa các đơn vị active, mà mọi test ở đây dùng cùng một
+  // payload mẫu; vô hiệu hóa đơn vị mẫu của test trước để test này tạo lại được (tiến độ cũ vẫn còn).
+  await ctx.handle.pool.query(
+    `UPDATE learning_units SET status = 'inactive' WHERE title->>'en' = 'Admin test vocabulary'`,
+  );
   const created = await api.post('/admin/units', {
     ...auth(),
     body: vocabUnitPayload(vocabTopic, overrides),

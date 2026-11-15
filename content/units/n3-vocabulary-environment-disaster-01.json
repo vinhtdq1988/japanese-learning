@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-environment-disaster",
+  "title": {
+    "vi": "Môi trường và rác thải",
+    "en": "Environment and waste"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1370,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "環境",
+      "reading": "かんきょう",
+      "meaning": {
+        "vi": "Môi trường",
+        "en": "Environment"
+      },
+      "examples": [
+        {
+          "ja": "環境を守るために、ごみを減らしましょう。",
+          "reading": "かんきょうをまもるために、ごみをへらしましょう。",
+          "translation": {
+            "vi": "Để bảo vệ môi trường, hãy giảm rác thải.",
+            "en": "Let's reduce waste to protect the environment."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "汚染",
+      "reading": "おせん",
+      "meaning": {
+        "vi": "Ô nhiễm",
+        "en": "Pollution"
+      },
+      "examples": [
+        {
+          "ja": "工場から出る水で、川が汚染されました。",
+          "reading": "こうじょうからでるみずで、かわがおせんされました。",
+          "translation": {
+            "vi": "Nước thải từ nhà máy đã làm ô nhiễm con sông.",
+            "en": "The river was polluted by water from the factory."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "公害",
+      "reading": "こうがい",
+      "meaning": {
+        "vi": "Ô nhiễm công nghiệp; công hại",
+        "en": "Environmental pollution (industrial)"
+      },
+      "examples": [
+        {
+          "ja": "昔、この町では公害が大きな問題でした。",
+          "reading": "むかし、このまちではこうがいがおおきなもんだいでした。",
+          "translation": {
+            "vi": "Ngày xưa ở thị trấn này, ô nhiễm công nghiệp là vấn đề lớn.",
+            "en": "In the past, pollution was a major problem in this town."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "排出",
+      "reading": "はいしゅつ",
+      "meaning": {
+        "vi": "Thải ra",
+        "en": "Discharge; emission"
+      },
+      "examples": [
+        {
+          "ja": "車は、二酸化炭素を排出します。",
+          "reading": "くるまは、にさんかたんそをはいしゅつします。",
+          "translation": {
+            "vi": "Xe cộ thải ra khí cacbonic.",
+            "en": "Cars emit carbon dioxide."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "廃棄",
+      "reading": "はいき",
+      "meaning": {
+        "vi": "Vứt bỏ; hủy bỏ",
+        "en": "Disposal; discarding"
+      },
+      "examples": [
+        {
+          "ja": "古い機械は、決まりに従って廃棄します。",
+          "reading": "ふるいきかいは、きまりにしたがってはいきします。",
+          "translation": {
+            "vi": "Máy móc cũ được vứt bỏ theo quy định.",
+            "en": "Old machines are disposed of according to the rules."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ごみ",
+      "reading": "ごみ",
+      "meaning": {
+        "vi": "Rác",
+        "en": "Garbage"
+      },
+      "examples": [
+        {
+          "ja": "ごみは、決まった日に出してください。",
+          "reading": "ごみは、きまったひにだしてください。",
+          "translation": {
+            "vi": "Xin hãy bỏ rác vào đúng ngày quy định.",
+            "en": "Please put out the garbage on the designated day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "分別",
+      "reading": "ぶんべつ",
+      "meaning": {
+        "vi": "Phân loại (rác)",
+        "en": "Sorting (waste)"
+      },
+      "examples": [
+        {
+          "ja": "ごみの分別は、地域によって違います。",
+          "reading": "ごみのぶんべつは、ちいきによってちがいます。",
+          "translation": {
+            "vi": "Cách phân loại rác khác nhau tùy khu vực.",
+            "en": "Waste sorting differs from region to region."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "再利用",
+      "reading": "さいりよう",
+      "meaning": {
+        "vi": "Tái sử dụng",
+        "en": "Reuse"
+      },
+      "examples": [
+        {
+          "ja": "古い服を再利用して、かばんを作りました。",
+          "reading": "ふるいふくをさいりようして、かばんをつくりました。",
+          "translation": {
+            "vi": "Tôi đã tái sử dụng quần áo cũ để làm túi.",
+            "en": "I reused old clothes to make a bag."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "温暖化",
+      "reading": "おんだんか",
+      "meaning": {
+        "vi": "Nóng lên toàn cầu",
+        "en": "Global warming"
+      },
+      "examples": [
+        {
+          "ja": "地球の温暖化が、心配されています。",
+          "reading": "ちきゅうのおんだんかが、しんぱいされています。",
+          "translation": {
+            "vi": "Việc Trái Đất nóng lên đang gây lo ngại.",
+            "en": "Global warming is a cause for concern."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "気候",
+      "reading": "きこう",
+      "meaning": {
+        "vi": "Khí hậu",
+        "en": "Climate"
+      },
+      "examples": [
+        {
+          "ja": "この地方は、気候が穏やかで住みやすいです。",
+          "reading": "このちほうは、きこうがおだやかですみやすいです。",
+          "translation": {
+            "vi": "Vùng này khí hậu ôn hòa nên dễ sống.",
+            "en": "This region has a mild climate and is easy to live in."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "二酸化炭素",
+      "reading": "にさんかたんそ",
+      "meaning": {
+        "vi": "Khí cacbonic (CO₂)",
+        "en": "Carbon dioxide"
+      },
+      "examples": [
+        {
+          "ja": "木は、二酸化炭素を吸って成長します。",
+          "reading": "きは、にさんかたんそをすってせいちょうします。",
+          "translation": {
+            "vi": "Cây hút khí cacbonic để lớn lên.",
+            "en": "Trees grow by absorbing carbon dioxide."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "浄化",
+      "reading": "じょうか",
+      "meaning": {
+        "vi": "Thanh lọc; làm sạch",
+        "en": "Purification"
+      },
+      "examples": [
+        {
+          "ja": "この装置は、水を浄化することができます。",
+          "reading": "このそうちは、みずをじょうかすることができます。",
+          "translation": {
+            "vi": "Thiết bị này có thể làm sạch nước.",
+            "en": "This device can purify water."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "環境",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を守るために、ごみを減らしましょう。 — Nghĩa của câu: “Để bảo vệ môi trường, hãy giảm rác thải.”",
+        "en": "Choose the word that fits the blank: （　）を守るために、ごみを減らしましょう。 — Meaning of the sentence: “Let's reduce waste to protect the environment.”"
+      },
+      "payload": {
+        "choices": [
+          "分別",
+          "環境",
+          "汚染",
+          "公害"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「環境」(Môi trường) hợp nghĩa câu này: “Để bảo vệ môi trường, hãy giảm rác thải.”",
+        "en": "Correct! 「環境」(Environment) fits this sentence: “Let's reduce waste to protect the environment.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để bảo vệ môi trường, hãy giảm rác thải.”, nên cần 「環境」(Môi trường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's reduce waste to protect the environment.”, so it needs 「環境」(Environment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "汚染",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工場から出る水で、川が（　）されました。 — Nghĩa của câu: “Nước thải từ nhà máy đã làm ô nhiễm con sông.”",
+        "en": "Choose the word that fits the blank: 工場から出る水で、川が（　）されました。 — Meaning of the sentence: “The river was polluted by water from the factory.”"
+      },
+      "payload": {
+        "choices": [
+          "二酸化炭素",
+          "再利用",
+          "汚染",
+          "浄化"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「汚染」(Ô nhiễm) hợp nghĩa câu này: “Nước thải từ nhà máy đã làm ô nhiễm con sông.”",
+        "en": "Correct! 「汚染」(Pollution) fits this sentence: “The river was polluted by water from the factory.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nước thải từ nhà máy đã làm ô nhiễm con sông.”, nên cần 「汚染」(Ô nhiễm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The river was polluted by water from the factory.”, so it needs 「汚染」(Pollution); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "公害",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 昔、この町では（　）が大きな問題でした。 — Nghĩa của câu: “Ngày xưa ở thị trấn này, ô nhiễm công nghiệp là vấn đề lớn.”",
+        "en": "Choose the word that fits the blank: 昔、この町では（　）が大きな問題でした。 — Meaning of the sentence: “In the past, pollution was a major problem in this town.”"
+      },
+      "payload": {
+        "choices": [
+          "浄化",
+          "ごみ",
+          "気候",
+          "公害"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「公害」(Ô nhiễm công nghiệp; công hại) hợp nghĩa câu này: “Ngày xưa ở thị trấn này, ô nhiễm công nghiệp là vấn đề lớn.”",
+        "en": "Correct! 「公害」(Environmental pollution (industrial)) fits this sentence: “In the past, pollution was a major problem in this town.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày xưa ở thị trấn này, ô nhiễm công nghiệp là vấn đề lớn.”, nên cần 「公害」(Ô nhiễm công nghiệp; công hại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the past, pollution was a major problem in this town.”, so it needs 「公害」(Environmental pollution (industrial)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "排出",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 車は、二酸化炭素を（　）します。 — Nghĩa của câu: “Xe cộ thải ra khí cacbonic.”",
+        "en": "Choose the word that fits the blank: 車は、二酸化炭素を（　）します。 — Meaning of the sentence: “Cars emit carbon dioxide.”"
+      },
+      "payload": {
+        "choices": [
+          "排出",
+          "公害",
+          "再利用",
+          "環境"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「排出」(Thải ra) hợp nghĩa câu này: “Xe cộ thải ra khí cacbonic.”",
+        "en": "Correct! 「排出」(Discharge; emission) fits this sentence: “Cars emit carbon dioxide.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xe cộ thải ra khí cacbonic.”, nên cần 「排出」(Thải ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Cars emit carbon dioxide.”, so it needs 「排出」(Discharge; emission); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "廃棄",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古い機械は、決まりに従って（　）します。 — Nghĩa của câu: “Máy móc cũ được vứt bỏ theo quy định.”",
+        "en": "Choose the word that fits the blank: 古い機械は、決まりに従って（　）します。 — Meaning of the sentence: “Old machines are disposed of according to the rules.”"
+      },
+      "payload": {
+        "choices": [
+          "浄化",
+          "廃棄",
+          "再利用",
+          "気候"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「廃棄」(Vứt bỏ; hủy bỏ) hợp nghĩa câu này: “Máy móc cũ được vứt bỏ theo quy định.”",
+        "en": "Correct! 「廃棄」(Disposal; discarding) fits this sentence: “Old machines are disposed of according to the rules.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy móc cũ được vứt bỏ theo quy định.”, nên cần 「廃棄」(Vứt bỏ; hủy bỏ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Old machines are disposed of according to the rules.”, so it needs 「廃棄」(Disposal; discarding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ごみ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、決まった日に出してください。 — Nghĩa của câu: “Xin hãy bỏ rác vào đúng ngày quy định.”",
+        "en": "Choose the word that fits the blank: （　）は、決まった日に出してください。 — Meaning of the sentence: “Please put out the garbage on the designated day.”"
+      },
+      "payload": {
+        "choices": [
+          "分別",
+          "環境",
+          "ごみ",
+          "廃棄"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ごみ」(Rác) hợp nghĩa câu này: “Xin hãy bỏ rác vào đúng ngày quy định.”",
+        "en": "Correct! 「ごみ」(Garbage) fits this sentence: “Please put out the garbage on the designated day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin hãy bỏ rác vào đúng ngày quy định.”, nên cần 「ごみ」(Rác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please put out the garbage on the designated day.”, so it needs 「ごみ」(Garbage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "分別",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ごみの（　）は、地域によって違います。 — Nghĩa của câu: “Cách phân loại rác khác nhau tùy khu vực.”",
+        "en": "Choose the word that fits the blank: ごみの（　）は、地域によって違います。 — Meaning of the sentence: “Waste sorting differs from region to region.”"
+      },
+      "payload": {
+        "choices": [
+          "二酸化炭素",
+          "温暖化",
+          "環境",
+          "分別"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「分別」(Phân loại (rác)) hợp nghĩa câu này: “Cách phân loại rác khác nhau tùy khu vực.”",
+        "en": "Correct! 「分別」(Sorting (waste)) fits this sentence: “Waste sorting differs from region to region.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cách phân loại rác khác nhau tùy khu vực.”, nên cần 「分別」(Phân loại (rác)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Waste sorting differs from region to region.”, so it needs 「分別」(Sorting (waste)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "再利用",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古い服を（　）して、かばんを作りました。 — Nghĩa của câu: “Tôi đã tái sử dụng quần áo cũ để làm túi.”",
+        "en": "Choose the word that fits the blank: 古い服を（　）して、かばんを作りました。 — Meaning of the sentence: “I reused old clothes to make a bag.”"
+      },
+      "payload": {
+        "choices": [
+          "再利用",
+          "汚染",
+          "排出",
+          "浄化"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「再利用」(Tái sử dụng) hợp nghĩa câu này: “Tôi đã tái sử dụng quần áo cũ để làm túi.”",
+        "en": "Correct! 「再利用」(Reuse) fits this sentence: “I reused old clothes to make a bag.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã tái sử dụng quần áo cũ để làm túi.”, nên cần 「再利用」(Tái sử dụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I reused old clothes to make a bag.”, so it needs 「再利用」(Reuse); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "温暖化",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地球の（　）が、心配されています。 — Nghĩa của câu: “Việc Trái Đất nóng lên đang gây lo ngại.”",
+        "en": "Choose the word that fits the blank: 地球の（　）が、心配されています。 — Meaning of the sentence: “Global warming is a cause for concern.”"
+      },
+      "payload": {
+        "choices": [
+          "公害",
+          "温暖化",
+          "二酸化炭素",
+          "浄化"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「温暖化」(Nóng lên toàn cầu) hợp nghĩa câu này: “Việc Trái Đất nóng lên đang gây lo ngại.”",
+        "en": "Correct! 「温暖化」(Global warming) fits this sentence: “Global warming is a cause for concern.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc Trái Đất nóng lên đang gây lo ngại.”, nên cần 「温暖化」(Nóng lên toàn cầu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Global warming is a cause for concern.”, so it needs 「温暖化」(Global warming); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "気候",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この地方は、（　）が穏やかで住みやすいです。 — Nghĩa của câu: “Vùng này khí hậu ôn hòa nên dễ sống.”",
+        "en": "Choose the word that fits the blank: この地方は、（　）が穏やかで住みやすいです。 — Meaning of the sentence: “This region has a mild climate and is easy to live in.”"
+      },
+      "payload": {
+        "choices": [
+          "汚染",
+          "ごみ",
+          "気候",
+          "浄化"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「気候」(Khí hậu) hợp nghĩa câu này: “Vùng này khí hậu ôn hòa nên dễ sống.”",
+        "en": "Correct! 「気候」(Climate) fits this sentence: “This region has a mild climate and is easy to live in.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vùng này khí hậu ôn hòa nên dễ sống.”, nên cần 「気候」(Khí hậu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This region has a mild climate and is easy to live in.”, so it needs 「気候」(Climate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "二酸化炭素",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 木は、（　）を吸って成長します。 — Nghĩa của câu: “Cây hút khí cacbonic để lớn lên.”",
+        "en": "Choose the word that fits the blank: 木は、（　）を吸って成長します。 — Meaning of the sentence: “Trees grow by absorbing carbon dioxide.”"
+      },
+      "payload": {
+        "choices": [
+          "公害",
+          "再利用",
+          "浄化",
+          "二酸化炭素"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「二酸化炭素」(Khí cacbonic (CO₂)) hợp nghĩa câu này: “Cây hút khí cacbonic để lớn lên.”",
+        "en": "Correct! 「二酸化炭素」(Carbon dioxide) fits this sentence: “Trees grow by absorbing carbon dioxide.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cây hút khí cacbonic để lớn lên.”, nên cần 「二酸化炭素」(Khí cacbonic (CO₂)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Trees grow by absorbing carbon dioxide.”, so it needs 「二酸化炭素」(Carbon dioxide); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "浄化",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この装置は、水を（　）することができます。 — Nghĩa của câu: “Thiết bị này có thể làm sạch nước.”",
+        "en": "Choose the word that fits the blank: この装置は、水を（　）することができます。 — Meaning of the sentence: “This device can purify water.”"
+      },
+      "payload": {
+        "choices": [
+          "浄化",
+          "温暖化",
+          "環境",
+          "分別"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「浄化」(Thanh lọc; làm sạch) hợp nghĩa câu này: “Thiết bị này có thể làm sạch nước.”",
+        "en": "Correct! 「浄化」(Purification) fits this sentence: “This device can purify water.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thiết bị này có thể làm sạch nước.”, nên cần 「浄化」(Thanh lọc; làm sạch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This device can purify water.”, so it needs 「浄化」(Purification); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "環境",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「環境」を守るために、ごみを減らしましょう。",
+        "en": "Choose the correct reading of the word in 「」: 「環境」を守るために、ごみを減らしましょう。"
+      },
+      "payload": {
+        "choices": [
+          "はいしゅつ",
+          "にさんかたんそ",
+          "かんきょう",
+          "きこう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「環境」 đọc là 「かんきょう」, nghĩa là Môi trường.",
+        "en": "Correct! 「環境」 is read 「かんきょう」 and means Environment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「環境」 đọc là 「かんきょう」 (Môi trường); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「環境」 is read 「かんきょう」 (Environment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "公害",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 昔、この町では「公害」が大きな問題でした。",
+        "en": "Choose the correct reading of the word in 「」: 昔、この町では「公害」が大きな問題でした。"
+      },
+      "payload": {
+        "choices": [
+          "はいき",
+          "はいしゅつ",
+          "ごみ",
+          "こうがい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「公害」 đọc là 「こうがい」, nghĩa là Ô nhiễm công nghiệp; công hại.",
+        "en": "Correct! 「公害」 is read 「こうがい」 and means Environmental pollution (industrial)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「公害」 đọc là 「こうがい」 (Ô nhiễm công nghiệp; công hại); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「公害」 is read 「こうがい」 (Environmental pollution (industrial)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "分別",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ごみの「分別」は、地域によって違います。",
+        "en": "Choose the correct reading of the word in 「」: ごみの「分別」は、地域によって違います。"
+      },
+      "payload": {
+        "choices": [
+          "ぶんべつ",
+          "さいりよう",
+          "おんだんか",
+          "はいしゅつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「分別」 đọc là 「ぶんべつ」, nghĩa là Phân loại (rác).",
+        "en": "Correct! 「分別」 is read 「ぶんべつ」 and means Sorting (waste)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「分別」 đọc là 「ぶんべつ」 (Phân loại (rác)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「分別」 is read 「ぶんべつ」 (Sorting (waste)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "気候",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この地方は、「気候」が穏やかで住みやすいです。",
+        "en": "Choose the correct reading of the word in 「」: この地方は、「気候」が穏やかで住みやすいです。"
+      },
+      "payload": {
+        "choices": [
+          "にさんかたんそ",
+          "きこう",
+          "かんきょう",
+          "おせん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「気候」 đọc là 「きこう」, nghĩa là Khí hậu.",
+        "en": "Correct! 「気候」 is read 「きこう」 and means Climate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「気候」 đọc là 「きこう」 (Khí hậu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「気候」 is read 「きこう」 (Climate); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "排出",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 車は、二酸化炭素を「はいしゅつ」します。",
+        "en": "Choose the correct way to write the word in 「」: 車は、二酸化炭素を「はいしゅつ」します。"
+      },
+      "payload": {
+        "choices": [
+          "温暖化",
+          "分別",
+          "環境",
+          "排出"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はいしゅつ」 viết là 「排出」, nghĩa là Thải ra.",
+        "en": "Correct! 「はいしゅつ」 is written 「排出」 and means Discharge; emission."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はいしゅつ」 viết là 「排出」 (Thải ra); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はいしゅつ」 is written 「排出」 (Discharge; emission); the other words are read differently."
+      }
+    },
+    {
+      "item": "温暖化",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 地球の「おんだんか」が、心配されています。",
+        "en": "Choose the correct way to write the word in 「」: 地球の「おんだんか」が、心配されています。"
+      },
+      "payload": {
+        "choices": [
+          "温暖化",
+          "公害",
+          "二酸化炭素",
+          "環境"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おんだんか」 viết là 「温暖化」, nghĩa là Nóng lên toàn cầu.",
+        "en": "Correct! 「おんだんか」 is written 「温暖化」 and means Global warming."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おんだんか」 viết là 「温暖化」 (Nóng lên toàn cầu); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「おんだんか」 is written 「温暖化」 (Global warming); the other words are read differently."
+      }
+    }
+  ]
+}

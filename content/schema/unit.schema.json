@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://japanese-learning.local/schema/unit/1.1.0",
+  "$id": "https://japanese-learning.local/schema/unit/1.3.0",
   "title": "Đơn vị học (Learning Unit)",
-  "description": "Một file = một đơn vị học (từ vựng, ngữ pháp hoặc Kanji) kèm mục nội dung và bài tập. Cấu trúc được JSON Schema kiểm tra; quy tắc nghiệp vụ (đủ bản dịch, đơn vị 5 phút cho mỗi level × kind, v.v.) do backend/src/domain/content-validation.ts kiểm tra khi seed và khi kích hoạt.",
+  "description": "Một file = một đơn vị học (từ vựng, ngữ pháp, Kanji, luyện đọc hoặc luyện viết) kèm mục nội dung và bài tập. Cấu trúc được JSON Schema kiểm tra; quy tắc nghiệp vụ (đủ bản dịch, đơn vị 5 phút cho mỗi level × kind, v.v.) do backend/src/domain/content-validation.ts kiểm tra khi seed và khi kích hoạt.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,7 +17,10 @@
   ],
   "properties": {
     "$schema": { "type": "string" },
-    "kind": { "enum": ["vocabulary", "grammar", "kanji"] },
+    "kind": {
+      "enum": ["vocabulary", "grammar", "kanji", "reading", "writing"],
+      "description": "`reading`: đúng 1 mục là đoạn văn + 2–5 câu trắc nghiệm; `writing`: 3–6 mục + mỗi mục 1 bài điền từ. Bài tập của hai loại này không khai `item` (không vào lịch ôn); quy tắc chi tiết ở backend/src/domain/content-validation.ts."
+    },
     "level": { "enum": ["N5", "N4", "N3"] },
     "tier": {
       "enum": ["foundation", "core"],
@@ -42,6 +45,12 @@
       "type": "boolean",
       "default": false,
       "description": "Thuộc tập dùng thử không cần đăng ký (FR-037)."
+    },
+    "requires": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Siêu dữ liệu biên soạn (1.3.0, KHÔNG vào CSDL): tên file đơn vị (không đuôi) là kiến thức nền thật; lint AU10 kiểm tồn tại, trình độ ≤ và (trình độ, sequence) nhỏ hơn."
     },
     "items": {
       "type": "array",
@@ -139,7 +148,12 @@
           "$ref": "#/definitions/i18nText",
           "description": "Bắt buộc với ngữ pháp."
         },
-        "examples": { "type": "array", "items": { "$ref": "#/definitions/example" } }
+        "examples": { "type": "array", "items": { "$ref": "#/definitions/example" } },
+        "scopeRef": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Siêu dữ liệu biên soạn (1.3.0, KHÔNG vào CSDL): `id` dòng danh mục phạm vi (content/scope/*.json) mà mục này phủ."
+        }
       }
     },
     "exercise": {
@@ -155,6 +169,24 @@
           "enum": ["item", "meaning", "reading", "word"],
           "default": "item",
           "description": "Khía cạnh được kiểm tra: `item` cho từ vựng/ngữ pháp; `meaning`/`reading`/`word` cho chữ Kanji."
+        },
+        "format": {
+          "enum": [
+            "kanji_reading",
+            "orthography",
+            "context_fill",
+            "synonym",
+            "usage",
+            "form_fill",
+            "sentence_correct",
+            "sentence_order_star",
+            "text_grammar",
+            "contrast",
+            "comprehension_short",
+            "comprehension_mid",
+            "info_search"
+          ],
+          "description": "Siêu dữ liệu biên soạn (1.3.0, KHÔNG vào CSDL): dạng câu hỏi đề thi JLPT mà bài tập thể hiện (content-authoring.md §3); lint AU5/AU6 kiểm đúng nhóm theo loại."
         },
         "type": { "enum": ["multiple_choice", "matching", "fill_blank"] },
         "prompt": { "$ref": "#/definitions/i18nText" },

@@ -1,0 +1,548 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (候 降 雪 雲)",
+    "en": "Nature and environment kanji (候 降 雪 雲)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "候",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "thời tiết; mùa; hầu",
+        "en": "weather; season"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "そうろう"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "天候",
+          "reading": "てんこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "thời tiết",
+            "en": "weather"
+          }
+        },
+        {
+          "ja": "気候",
+          "reading": "きこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "khí hậu",
+            "en": "climate"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "降",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "rơi; xuống",
+        "en": "fall; descend"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "お.りる",
+          "お.ろす",
+          "ふ.る"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "降水",
+          "reading": "こうすい",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "lượng mưa",
+            "en": "precipitation"
+          }
+        },
+        {
+          "ja": "降る",
+          "reading": "ふる",
+          "kanjiReading": "ふ",
+          "translation": {
+            "vi": "rơi (mưa, tuyết)",
+            "en": "to fall (rain, snow)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "雪",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "tuyết",
+        "en": "snow"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セツ"
+        ],
+        "kunReadings": [
+          "ゆき"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "積雪",
+          "reading": "せきせつ",
+          "kanjiReading": "セツ",
+          "translation": {
+            "vi": "lớp tuyết phủ",
+            "en": "snow cover"
+          }
+        },
+        {
+          "ja": "雪",
+          "reading": "ゆき",
+          "kanjiReading": "ゆき",
+          "translation": {
+            "vi": "tuyết",
+            "en": "snow"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "雲",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "mây",
+        "en": "cloud"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ウン"
+        ],
+        "kunReadings": [
+          "くも"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "雲海",
+          "reading": "うんかい",
+          "kanjiReading": "ウン",
+          "translation": {
+            "vi": "biển mây",
+            "en": "sea of clouds"
+          }
+        },
+        {
+          "ja": "雲",
+          "reading": "くも",
+          "kanjiReading": "くも",
+          "translation": {
+            "vi": "đám mây",
+            "en": "cloud"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "候",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「候」nghĩa là gì?",
+        "en": "What does 「候」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thời tiết; mùa; hầu",
+            "en": "weather; season"
+          },
+          {
+            "vi": "rơi; xuống",
+            "en": "fall; descend"
+          },
+          {
+            "vi": "tuyết",
+            "en": "snow"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 候 nghĩa là thời tiết; mùa; hầu.",
+        "en": "Correct! 候 means weather; season."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 候 nghĩa là thời tiết; mùa; hầu, như trong 「天候」 (thời tiết).",
+        "en": "Not quite. 候 means weather; season, as in 「天候」 (weather)."
+      }
+    },
+    {
+      "item": "候",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「候」 trong 「天候」 (“thời tiết”).",
+        "en": "Type the reading of 「候」 in 「天候」 (“weather”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 天候, 候 đọc là こう (âm On).",
+        "en": "Correct! In 天候, 候 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 天候 (thời tiết), 候 đọc là こう (âm On).",
+        "en": "In 天候 (weather), 候 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "候",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「気候」(khí hậu) đọc là gì?",
+        "en": "How is 「気候」 (climate) read?"
+      },
+      "payload": {
+        "choices": [
+          "きそうろう",
+          "きこう",
+          "きごう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 気候 = きこう (khí hậu); 候 đọc là こう (âm On).",
+        "en": "Correct! 気候 = きこう (climate); 候 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "気候 đọc là きこう (khí hậu): 候 mang âm On こう.",
+        "en": "気候 is read きこう (climate): 候 takes the on'yomi こう."
+      }
+    },
+    {
+      "item": "降",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「降」nghĩa là gì?",
+        "en": "What does 「降」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tuyết",
+            "en": "snow"
+          },
+          {
+            "vi": "rơi; xuống",
+            "en": "fall; descend"
+          },
+          {
+            "vi": "mây",
+            "en": "cloud"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 降 nghĩa là rơi; xuống.",
+        "en": "Correct! 降 means fall; descend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 降 nghĩa là rơi; xuống, như trong 「降水」 (lượng mưa).",
+        "en": "Not quite. 降 means fall; descend, as in 「降水」 (precipitation)."
+      }
+    },
+    {
+      "item": "降",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「降」 trong 「降水」 (“lượng mưa”).",
+        "en": "Type the reading of 「降」 in 「降水」 (“precipitation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 降水, 降 đọc là こう (âm On).",
+        "en": "Correct! In 降水, 降 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 降水 (lượng mưa), 降 đọc là こう (âm On).",
+        "en": "In 降水 (precipitation), 降 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "降",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「降る」(rơi (mưa, tuyết)) đọc là gì?",
+        "en": "How is 「降る」 (to fall (rain, snow)) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうる",
+          "ゆき",
+          "ふる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 降る = ふる (rơi (mưa, tuyết)); 降 đọc là ふ (âm Kun).",
+        "en": "Correct! 降る = ふる (to fall (rain, snow)); 降 is read ふ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "降る đọc là ふる (rơi (mưa, tuyết)): 降 mang âm Kun ふ.",
+        "en": "降る is read ふる (to fall (rain, snow)): 降 takes the kun'yomi ふ."
+      }
+    },
+    {
+      "item": "雪",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雪」nghĩa là gì?",
+        "en": "What does 「雪」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mây",
+            "en": "cloud"
+          },
+          {
+            "vi": "thời tiết; mùa; hầu",
+            "en": "weather; season"
+          },
+          {
+            "vi": "tuyết",
+            "en": "snow"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雪 nghĩa là tuyết.",
+        "en": "Correct! 雪 means snow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 雪 nghĩa là tuyết, như trong 「積雪」 (lớp tuyết phủ).",
+        "en": "Not quite. 雪 means snow, as in 「積雪」 (snow cover)."
+      }
+    },
+    {
+      "item": "雪",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「雪」 trong 「積雪」 (“lớp tuyết phủ”).",
+        "en": "Type the reading of 「雪」 in 「積雪」 (“snow cover”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せつ",
+          "セツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 積雪, 雪 đọc là せつ (âm On).",
+        "en": "Correct! In 積雪, 雪 is read せつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 積雪 (lớp tuyết phủ), 雪 đọc là せつ (âm On).",
+        "en": "In 積雪 (snow cover), 雪 is read せつ (on'yomi)."
+      }
+    },
+    {
+      "item": "雪",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雪」(tuyết; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「雪」 (snow; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ゆき",
+          "せつ",
+          "くも"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雪 = ゆき (tuyết); 雪 đọc là ゆき (âm Kun).",
+        "en": "Correct! 雪 = ゆき (snow); 雪 is read ゆき (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "雪 đọc là ゆき (tuyết): 雪 mang âm Kun ゆき.",
+        "en": "雪 is read ゆき (snow): 雪 takes the kun'yomi ゆき."
+      }
+    },
+    {
+      "item": "雲",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雲」nghĩa là gì?",
+        "en": "What does 「雲」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mây",
+            "en": "cloud"
+          },
+          {
+            "vi": "thời tiết; mùa; hầu",
+            "en": "weather; season"
+          },
+          {
+            "vi": "rơi; xuống",
+            "en": "fall; descend"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雲 nghĩa là mây.",
+        "en": "Correct! 雲 means cloud."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 雲 nghĩa là mây, như trong 「雲海」 (biển mây).",
+        "en": "Not quite. 雲 means cloud, as in 「雲海」 (sea of clouds)."
+      }
+    },
+    {
+      "item": "雲",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「雲」 trong 「雲海」 (“biển mây”).",
+        "en": "Type the reading of 「雲」 in 「雲海」 (“sea of clouds”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "うん",
+          "ウン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 雲海, 雲 đọc là うん (âm On).",
+        "en": "Correct! In 雲海, 雲 is read うん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 雲海 (biển mây), 雲 đọc là うん (âm On).",
+        "en": "In 雲海 (sea of clouds), 雲 is read うん (on'yomi)."
+      }
+    },
+    {
+      "item": "雲",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雲」(đám mây; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「雲」 (cloud; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "うん",
+          "くも",
+          "ふる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雲 = くも (đám mây); 雲 đọc là くも (âm Kun).",
+        "en": "Correct! 雲 = くも (cloud); 雲 is read くも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "雲 đọc là くも (đám mây): 雲 mang âm Kun くも.",
+        "en": "雲 is read くも (cloud): 雲 takes the kun'yomi くも."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "候",
+            {
+              "vi": "thời tiết; mùa; hầu",
+              "en": "weather; season"
+            }
+          ],
+          [
+            "降",
+            {
+              "vi": "rơi; xuống",
+              "en": "fall; descend"
+            }
+          ],
+          [
+            "雪",
+            {
+              "vi": "tuyết",
+              "en": "snow"
+            }
+          ],
+          [
+            "雲",
+            {
+              "vi": "mây",
+              "en": "cloud"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

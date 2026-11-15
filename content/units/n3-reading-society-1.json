@@ -1,0 +1,129 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-society",
+  "title": {
+    "vi": "Đọc: Bản tin về tái chế",
+    "en": "Reading: A news item on recycling"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 240,
+  "items": [
+    {
+      "japanese": "最近、この町ではごみを減らすための取り組みが進んでいます。町は今月から、ペットボトルと缶を分けて出すことを住民に呼びかけています。きちんと分ければ、資源として再び利用することができます。町の担当者は「一人一人の協力が大切です」と話しています。",
+      "meaning": {
+        "vi": "Gần đây, thị trấn này đang đẩy mạnh các hoạt động nhằm giảm rác. Từ tháng này, thị trấn kêu gọi người dân tách chai nhựa và lon khi đem bỏ. Nếu phân loại đúng cách, chúng có thể được tái sử dụng làm tài nguyên. Người phụ trách của thị trấn cho biết: \"Sự hợp tác của từng người là rất quan trọng\".",
+        "en": "Recently, efforts to reduce waste have been advancing in this town. From this month, the town is calling on residents to separate PET bottles and cans when putting them out. If they are sorted properly, they can be reused as resources. A town official said, \"The cooperation of each and every person is important.\""
+      },
+      "explanation": {
+        "vi": "「～ための」= nhằm để (減らすための取り組み); 「分けて出す」= tách ra rồi đem bỏ; 「～ば」nêu điều kiện (分ければ).",
+        "en": "「～ための」 = for the purpose of (減らすための取り組み); 「分けて出す」 = sort and put out; 「～ば」 gives a condition (分ければ)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Thị trấn kêu gọi người dân làm gì?",
+        "en": "What is the town asking residents to do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mang rác đến trung tâm thị trấn",
+            "en": "Bring their waste to the town center"
+          },
+          {
+            "vi": "Tách chai nhựa và lon khi đem bỏ",
+            "en": "Separate PET bottles and cans when putting them out"
+          },
+          {
+            "vi": "Mua ít chai nhựa hơn",
+            "en": "Buy fewer PET bottles"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! ペットボトルと缶を分けて出すことを呼びかけています.",
+        "en": "Correct! ペットボトルと缶を分けて出すことを呼びかけています."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nội dung kêu gọi là ペットボトルと缶を分けて出すこと (tách chai nhựa và lon khi bỏ).",
+        "en": "Not quite. The appeal is ペットボトルと缶を分けて出すこと (sort PET bottles and cans when putting them out)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Nếu phân loại đúng cách thì điều gì xảy ra?",
+        "en": "What happens if the waste is sorted properly?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thị trấn thu được nhiều thuế hơn",
+            "en": "The town collects more taxes"
+          },
+          {
+            "vi": "Rác được đốt nhanh hơn",
+            "en": "The waste is burned faster"
+          },
+          {
+            "vi": "Có thể tái sử dụng như tài nguyên",
+            "en": "It can be reused as a resource"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! きちんと分ければ、資源として再び利用することができます.",
+        "en": "Correct! きちんと分ければ、資源として再び利用することができます."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu điều kiện 分ければ dẫn tới 資源として再び利用することができます (dùng lại như tài nguyên).",
+        "en": "Not quite. The condition 分ければ leads to 資源として再び利用することができます (it can be reused as a resource)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người phụ trách của thị trấn nhấn mạnh điều gì?",
+        "en": "What does the town official emphasise?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Sự hợp tác của từng người",
+            "en": "The cooperation of each person"
+          },
+          {
+            "vi": "Nghĩa vụ nộp phạt",
+            "en": "The obligation to pay fines"
+          },
+          {
+            "vi": "Công nghệ xử lý rác mới",
+            "en": "New waste-processing technology"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 「一人一人の協力が大切です」.",
+        "en": "Correct! 「一人一人の協力が大切です」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người phụ trách nói 一人一人の協力が大切です (sự hợp tác của từng người là quan trọng).",
+        "en": "Not quite. The official said 一人一人の協力が大切です (everyone's cooperation is important)."
+      }
+    }
+  ]
+}

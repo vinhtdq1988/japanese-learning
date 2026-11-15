@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conditionals-concession",
+  "title": {
+    "vi": "Điều kiện (1): 〜ば〜ほど và 〜さえ〜ば",
+    "en": "Conditionals (1): 〜ば〜ほど and 〜さえ〜ば"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ば〜ほど",
+      "meaning": {
+        "vi": "Càng ~ càng ~",
+        "en": "The more ~, the more ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ ば + động từ thể từ điển + ほど; tính từ い: ければ + tính từ い + ほど; tính từ な: なら + tính từ な + なほど. Hai vế thay đổi tỉ lệ thuận (勉強すればするほど, 安ければ安いほど). Là sự mở rộng của 〜ば baseline.",
+        "en": "Usage: verb ば + dictionary form + ほど; い-adjective: ければ + い-adjective + ほど; な-adjective: なら + な-adjective + なほど. The two parts change in proportion (勉強すればするほど, 安ければ安いほど). An extension of the baseline 〜ば."
+      },
+      "examples": [
+        {
+          "ja": "日本語は、勉強すればするほど、おもしろくなります。",
+          "reading": "にほんごは、べんきょうすればするほど、おもしろくなります。",
+          "translation": {
+            "vi": "Tiếng Nhật càng học càng thú vị.",
+            "en": "The more you study Japanese, the more interesting it gets."
+          }
+        },
+        {
+          "ja": "安ければ安いほど、うれしいです。",
+          "reading": "やすければやすいほど、うれしいです。",
+          "translation": {
+            "vi": "Càng rẻ càng vui.",
+            "en": "The cheaper, the better."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-009"
+    },
+    {
+      "japanese": "〜さえ〜ば",
+      "meaning": {
+        "vi": "Chỉ cần ~ là ~",
+        "en": "If only ~; as long as ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + さえ + động từ ば / tính từ ければ / なら. Chỉ cần một điều kiện tối thiểu là đủ để có kết quả (お金さえあれば). Thường đi với kết quả tích cực hoặc vế sau thể hiện đủ điều kiện.",
+        "en": "Usage: noun + さえ + verb ば / adjective ければ / なら. A single minimal condition is enough for the result (お金さえあれば). Typically paired with a positive result that follows once the condition is met."
+      },
+      "examples": [
+        {
+          "ja": "お金さえあれば、何でも買えます。",
+          "reading": "おかねさえあれば、なんでもかえます。",
+          "translation": {
+            "vi": "Chỉ cần có tiền thì mua được mọi thứ.",
+            "en": "If only I had money, I could buy anything."
+          }
+        },
+        {
+          "ja": "天気さえよければ、出発できます。",
+          "reading": "てんきさえよければ、しゅっぱつできます。",
+          "translation": {
+            "vi": "Chỉ cần thời tiết tốt là có thể xuất phát.",
+            "en": "As long as the weather is good, we can depart."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-013"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ば〜ほど",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本語は、勉強すれ（　）するほど、おもしろくなります。",
+        "en": "Choose the correct option for the blank:\n日本語は、勉強すれ（　）するほど、おもしろくなります。"
+      },
+      "payload": {
+        "choices": [
+          "と",
+          "ても",
+          "なら",
+          "ば"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「Vば + V + ほど」: 「勉強すればするほど」.",
+        "en": "Correct! The pattern 「Vば + V + ほど」: 「勉強すればするほど」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「Vば + V + ほど」: 「勉強すればするほど」.",
+        "en": "Not quite. The pattern 「Vば + V + ほど」: 「勉強すればするほど」."
+      }
+    },
+    {
+      "item": "〜ば〜ほど",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n安けれ___安いほど、うれしいです。",
+        "en": "Choose the correct option for the blank:\n安けれ___安いほど、うれしいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ば"
+        ],
+        "hint": "ば"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い: 「安ければ安いほど」.",
+        "en": "Correct! An い-adjective: 「安ければ安いほど」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い: 「安ければ安いほど」.",
+        "en": "Not quite. An い-adjective: 「安ければ安いほど」."
+      }
+    },
+    {
+      "item": "〜ば〜ほど",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "読めば読むと、意味がわかってきました。",
+          "読んだら読むほど、意味がわかってきました。",
+          "読めば読むほど、意味がわかってきました。",
+          "読むば読むほど、意味がわかってきました。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu cố định 「Vば + Vるほど」: 「読めば読むほど」.",
+        "en": "Correct! The fixed pattern 「Vば + Vるほど」: 「読めば読むほど」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu cố định 「Vば + Vるほど」: 「読めば読むほど」.",
+        "en": "Not quite. The fixed pattern 「Vば + Vるほど」: 「読めば読むほど」."
+      }
+    },
+    {
+      "item": "〜ば〜ほど",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng để hoàn thành 「練習すれば練習する（　）、上手になります」 (càng luyện tập càng giỏi):",
+        "en": "Choose the option that completes 「練習すれば練習する（　）、上手になります」 (the more you practice, the better you get):"
+      },
+      "payload": {
+        "choices": [
+          "ばかり",
+          "ほど",
+          "だけ",
+          "まで"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hai thay đổi tỉ lệ thuận: 「練習すればするほど」 (vế trước đã có 「すれば」).",
+        "en": "Correct! Two proportional changes: 「練習すればするほど」 (the first part already has 「すれば」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hai thay đổi tỉ lệ thuận: 「練習すればするほど」 (vế trước đã có 「すれば」).",
+        "en": "Not quite. Two proportional changes: 「練習すればするほど」 (the first part already has 「すれば」)."
+      }
+    },
+    {
+      "item": "〜さえ〜ば",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお金（　）あれば、何でも買えます。",
+        "en": "Choose the correct option for the blank:\nお金（　）あれば、何でも買えます。"
+      },
+      "payload": {
+        "choices": [
+          "さえ",
+          "ばかり",
+          "ほど",
+          "だけ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chỉ cần có tiền: 「お金さえあれば」.",
+        "en": "Correct! As long as there is money: 「お金さえあれば」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chỉ cần có tiền: 「お金さえあれば」.",
+        "en": "Not quite. As long as there is money: 「お金さえあれば」."
+      }
+    },
+    {
+      "item": "〜さえ〜ば",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n天気___よければ、出発できます。",
+        "en": "Choose the correct option for the blank:\n天気___よければ、出発できます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "さえ"
+        ],
+        "hint": "〜さえ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chỉ cần thời tiết tốt: 「天気さえよければ」.",
+        "en": "Correct! As long as the weather is good: 「天気さえよければ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chỉ cần thời tiết tốt: 「天気さえよければ」.",
+        "en": "Not quite. As long as the weather is good: 「天気さえよければ」."
+      }
+    },
+    {
+      "item": "〜さえ〜ば",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "時間さえあるば、行きたいです。",
+          "時間さえあったと、行きたいです。",
+          "時間さえあるのに、行きたいです。",
+          "時間さえあれば、行きたいです。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「N + さえ + Vば」: 「あれば」 (thể điều kiện ば của ある).",
+        "en": "Correct! The pattern 「N + さえ + Vば」: 「あれば」 (the ば-form of ある)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「N + さえ + Vば」: 「あれば」 (thể điều kiện ば của ある).",
+        "en": "Not quite. The pattern 「N + さえ + Vば」: 「あれば」 (the ば-form of ある)."
+      }
+    },
+    {
+      "item": "〜さえ〜ば",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n睡眠（　）取れば、元気になります。",
+        "en": "Choose the pattern that best fits the context:\n睡眠（　）取れば、元気になります。"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "ばかり",
+          "さえ",
+          "くらい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Điều kiện tối thiểu: 「睡眠さえ取れば」.",
+        "en": "Correct! A minimal condition: 「睡眠さえ取れば」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Điều kiện tối thiểu: 「睡眠さえ取れば」.",
+        "en": "Not quite. A minimal condition: 「睡眠さえ取れば」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ば〜ほど",
+            {
+              "vi": "Càng ~ càng ~",
+              "en": "The more ~, the more ~"
+            }
+          ],
+          [
+            "〜さえ〜ば",
+            {
+              "vi": "Chỉ cần ~ là ~",
+              "en": "If only ~; as long as ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

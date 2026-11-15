@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (速 低 超)",
+    "en": "Adjectives and quantity kanji (速 低 超)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "速",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "nhanh; tốc độ",
+        "en": "fast; speed"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソク"
+        ],
+        "kunReadings": [
+          "はや.い",
+          "はや.める",
+          "すみ.やか"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "速度",
+          "reading": "そくど",
+          "kanjiReading": "ソク",
+          "translation": {
+            "vi": "tốc độ",
+            "en": "speed"
+          }
+        },
+        {
+          "ja": "速い",
+          "reading": "はやい",
+          "kanjiReading": "はや",
+          "translation": {
+            "vi": "nhanh",
+            "en": "fast"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "低",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "thấp",
+        "en": "low"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テイ"
+        ],
+        "kunReadings": [
+          "ひく.い"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "最低",
+          "reading": "さいてい",
+          "kanjiReading": "テイ",
+          "translation": {
+            "vi": "thấp nhất; tệ nhất",
+            "en": "lowest"
+          }
+        },
+        {
+          "ja": "低い",
+          "reading": "ひくい",
+          "kanjiReading": "ひく",
+          "translation": {
+            "vi": "thấp",
+            "en": "low"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "超",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "siêu; vượt",
+        "en": "super; exceed"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョウ"
+        ],
+        "kunReadings": [
+          "こ.える",
+          "こ.す"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "超過",
+          "reading": "ちょうか",
+          "kanjiReading": "チョウ",
+          "translation": {
+            "vi": "vượt quá",
+            "en": "excess"
+          }
+        },
+        {
+          "ja": "超える",
+          "reading": "こえる",
+          "kanjiReading": "こ",
+          "translation": {
+            "vi": "vượt qua",
+            "en": "to exceed"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "速",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「速」nghĩa là gì?",
+        "en": "What does 「速」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhanh; tốc độ",
+            "en": "fast; speed"
+          },
+          {
+            "vi": "thấp",
+            "en": "low"
+          },
+          {
+            "vi": "siêu; vượt",
+            "en": "super; exceed"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 速 nghĩa là nhanh; tốc độ.",
+        "en": "Correct! 速 means fast; speed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 速 nghĩa là nhanh; tốc độ, như trong 「速度」 (tốc độ).",
+        "en": "Not quite. 速 means fast; speed, as in 「速度」 (speed)."
+      }
+    },
+    {
+      "item": "速",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「速」 trong 「速度」 (“tốc độ”).",
+        "en": "Type the reading of 「速」 in 「速度」 (“speed”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そく",
+          "ソク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 速度, 速 đọc là そく (âm On).",
+        "en": "Correct! In 速度, 速 is read そく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 速度 (tốc độ), 速 đọc là そく (âm On).",
+        "en": "In 速度 (speed), 速 is read そく (on'yomi)."
+      }
+    },
+    {
+      "item": "速",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「速い」(nhanh) đọc là gì?",
+        "en": "How is 「速い」 (fast) read?"
+      },
+      "payload": {
+        "choices": [
+          "そくい",
+          "はやい",
+          "ひくい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 速い = はやい (nhanh); 速 đọc là はや (âm Kun).",
+        "en": "Correct! 速い = はやい (fast); 速 is read はや (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "速い đọc là はやい (nhanh): 速 mang âm Kun はや.",
+        "en": "速い is read はやい (fast): 速 takes the kun'yomi はや."
+      }
+    },
+    {
+      "item": "低",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「低」nghĩa là gì?",
+        "en": "What does 「低」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "siêu; vượt",
+            "en": "super; exceed"
+          },
+          {
+            "vi": "thấp",
+            "en": "low"
+          },
+          {
+            "vi": "nhanh; tốc độ",
+            "en": "fast; speed"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 低 nghĩa là thấp.",
+        "en": "Correct! 低 means low."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 低 nghĩa là thấp, như trong 「最低」 (thấp nhất; tệ nhất).",
+        "en": "Not quite. 低 means low, as in 「最低」 (lowest)."
+      }
+    },
+    {
+      "item": "低",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「低」 trong 「最低」 (“thấp nhất; tệ nhất”).",
+        "en": "Type the reading of 「低」 in 「最低」 (“lowest”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てい",
+          "テイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 最低, 低 đọc là てい (âm On).",
+        "en": "Correct! In 最低, 低 is read てい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 最低 (thấp nhất; tệ nhất), 低 đọc là てい (âm On).",
+        "en": "In 最低 (lowest), 低 is read てい (on'yomi)."
+      }
+    },
+    {
+      "item": "低",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「低い」(thấp) đọc là gì?",
+        "en": "How is 「低い」 (low) read?"
+      },
+      "payload": {
+        "choices": [
+          "ていい",
+          "はやい",
+          "ひくい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 低い = ひくい (thấp); 低 đọc là ひく (âm Kun).",
+        "en": "Correct! 低い = ひくい (low); 低 is read ひく (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "低い đọc là ひくい (thấp): 低 mang âm Kun ひく.",
+        "en": "低い is read ひくい (low): 低 takes the kun'yomi ひく."
+      }
+    },
+    {
+      "item": "超",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「超」nghĩa là gì?",
+        "en": "What does 「超」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhanh; tốc độ",
+            "en": "fast; speed"
+          },
+          {
+            "vi": "thấp",
+            "en": "low"
+          },
+          {
+            "vi": "siêu; vượt",
+            "en": "super; exceed"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 超 nghĩa là siêu; vượt.",
+        "en": "Correct! 超 means super; exceed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 超 nghĩa là siêu; vượt, như trong 「超過」 (vượt quá).",
+        "en": "Not quite. 超 means super; exceed, as in 「超過」 (excess)."
+      }
+    },
+    {
+      "item": "超",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「超」 trong 「超過」 (“vượt quá”).",
+        "en": "Type the reading of 「超」 in 「超過」 (“excess”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょう",
+          "チョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 超過, 超 đọc là ちょう (âm On).",
+        "en": "Correct! In 超過, 超 is read ちょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 超過 (vượt quá), 超 đọc là ちょう (âm On).",
+        "en": "In 超過 (excess), 超 is read ちょう (on'yomi)."
+      }
+    },
+    {
+      "item": "超",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「超える」(vượt qua) đọc là gì?",
+        "en": "How is 「超える」 (to exceed) read?"
+      },
+      "payload": {
+        "choices": [
+          "こえる",
+          "ちょうえる",
+          "そくど"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 超える = こえる (vượt qua); 超 đọc là こ (âm Kun).",
+        "en": "Correct! 超える = こえる (to exceed); 超 is read こ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "超える đọc là こえる (vượt qua): 超 mang âm Kun こ.",
+        "en": "超える is read こえる (to exceed): 超 takes the kun'yomi こ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "速",
+            {
+              "vi": "nhanh; tốc độ",
+              "en": "fast; speed"
+            }
+          ],
+          [
+            "低",
+            {
+              "vi": "thấp",
+              "en": "low"
+            }
+          ],
+          [
+            "超",
+            {
+              "vi": "siêu; vượt",
+              "en": "super; exceed"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

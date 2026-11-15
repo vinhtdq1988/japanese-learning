@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-daily-household",
+  "title": {
+    "vi": "Bụi bẩn, mùi và bóng",
+    "en": "Dirt, odors and shadows"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2340,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "埃",
+      "reading": "ほこり",
+      "meaning": {
+        "vi": "Bụi",
+        "en": "Dust"
+      },
+      "examples": [
+        {
+          "ja": "棚の上に、埃がたまっています。",
+          "reading": "たなのうえに、ほこりがたまっています。",
+          "translation": {
+            "vi": "Bụi đã tích tụ trên giá.",
+            "en": "Dust has collected on the shelf."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "染み",
+      "reading": "しみ",
+      "meaning": {
+        "vi": "Vết ố; vết bẩn",
+        "en": "Stain"
+      },
+      "examples": [
+        {
+          "ja": "シャツに、コーヒーの染みがつきました。",
+          "reading": "シャツに、コーヒーのしみがつきました。",
+          "translation": {
+            "vi": "Chiếc áo sơ mi dính vết cà phê.",
+            "en": "A coffee stain got on the shirt."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "臭い",
+      "reading": "くさい",
+      "meaning": {
+        "vi": "Hôi; thối",
+        "en": "Smelly"
+      },
+      "examples": [
+        {
+          "ja": "ごみ箱が、とても臭いです。",
+          "reading": "ごみばこが、とてもくさいです。",
+          "translation": {
+            "vi": "Thùng rác rất hôi.",
+            "en": "The trash can smells terrible."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "揃える",
+      "reading": "そろえる",
+      "meaning": {
+        "vi": "Sắp cho đều; gom đủ",
+        "en": "To arrange evenly; to gather a set"
+      },
+      "examples": [
+        {
+          "ja": "くつを、玄関にきれいに揃えることにしています。",
+          "reading": "くつを、げんかんにきれいにそろえることにしています。",
+          "translation": {
+            "vi": "Tôi luôn xếp giày ngay ngắn ở lối vào.",
+            "en": "I make a point of lining up my shoes neatly at the entrance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "揃う",
+      "reading": "そろう",
+      "meaning": {
+        "vi": "Đầy đủ; đều nhau",
+        "en": "To be complete; to match"
+      },
+      "examples": [
+        {
+          "ja": "家族が、久しぶりに全員揃うことになりました。",
+          "reading": "かぞくが、ひさしぶりにぜんいんそろうことになりました。",
+          "translation": {
+            "vi": "Cả nhà lâu lắm mới có đủ mặt mọi người.",
+            "en": "The whole family will be together for the first time in a while."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "影",
+      "reading": "かげ",
+      "meaning": {
+        "vi": "Bóng",
+        "en": "Shadow"
+      },
+      "examples": [
+        {
+          "ja": "夕方になると、影が長くなります。",
+          "reading": "ゆうがたになると、かげがながくなります。",
+          "translation": {
+            "vi": "Đến chiều tối thì bóng dài ra.",
+            "en": "In the evening the shadows grow long."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "埃",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 棚の上に、（　）がたまっています。 — Nghĩa của câu: “Bụi đã tích tụ trên giá.”",
+        "en": "Choose the word that fits the blank: 棚の上に、（　）がたまっています。 — Meaning of the sentence: “Dust has collected on the shelf.”"
+      },
+      "payload": {
+        "choices": [
+          "埃",
+          "染み",
+          "影",
+          "揃える"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「埃」(Bụi) hợp nghĩa câu này: “Bụi đã tích tụ trên giá.”",
+        "en": "Correct! 「埃」(Dust) fits this sentence: “Dust has collected on the shelf.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bụi đã tích tụ trên giá.”, nên cần 「埃」(Bụi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Dust has collected on the shelf.”, so it needs 「埃」(Dust); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "染み",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: シャツに、コーヒーの（　）がつきました。 — Nghĩa của câu: “Chiếc áo sơ mi dính vết cà phê.”",
+        "en": "Choose the word that fits the blank: シャツに、コーヒーの（　）がつきました。 — Meaning of the sentence: “A coffee stain got on the shirt.”"
+      },
+      "payload": {
+        "choices": [
+          "埃",
+          "染み",
+          "影",
+          "臭い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「染み」(Vết ố; vết bẩn) hợp nghĩa câu này: “Chiếc áo sơ mi dính vết cà phê.”",
+        "en": "Correct! 「染み」(Stain) fits this sentence: “A coffee stain got on the shirt.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc áo sơ mi dính vết cà phê.”, nên cần 「染み」(Vết ố; vết bẩn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A coffee stain got on the shirt.”, so it needs 「染み」(Stain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "臭い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ごみ箱が、とても（　）です。 — Nghĩa của câu: “Thùng rác rất hôi.”",
+        "en": "Choose the word that fits the blank: ごみ箱が、とても（　）です。 — Meaning of the sentence: “The trash can smells terrible.”"
+      },
+      "payload": {
+        "choices": [
+          "揃う",
+          "埃",
+          "臭い",
+          "影"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「臭い」(Hôi; thối) hợp nghĩa câu này: “Thùng rác rất hôi.”",
+        "en": "Correct! 「臭い」(Smelly) fits this sentence: “The trash can smells terrible.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thùng rác rất hôi.”, nên cần 「臭い」(Hôi; thối); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The trash can smells terrible.”, so it needs 「臭い」(Smelly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "揃える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: くつを、玄関にきれいに（　）ことにしています。 — Nghĩa của câu: “Tôi luôn xếp giày ngay ngắn ở lối vào.”",
+        "en": "Choose the word that fits the blank: くつを、玄関にきれいに（　）ことにしています。 — Meaning of the sentence: “I make a point of lining up my shoes neatly at the entrance.”"
+      },
+      "payload": {
+        "choices": [
+          "揃う",
+          "埃",
+          "臭い",
+          "揃える"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「揃える」(Sắp cho đều; gom đủ) hợp nghĩa câu này: “Tôi luôn xếp giày ngay ngắn ở lối vào.”",
+        "en": "Correct! 「揃える」(To arrange evenly; to gather a set) fits this sentence: “I make a point of lining up my shoes neatly at the entrance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi luôn xếp giày ngay ngắn ở lối vào.”, nên cần 「揃える」(Sắp cho đều; gom đủ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I make a point of lining up my shoes neatly at the entrance.”, so it needs 「揃える」(To arrange evenly; to gather a set); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "揃う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家族が、久しぶりに全員（　）ことになりました。 — Nghĩa của câu: “Cả nhà lâu lắm mới có đủ mặt mọi người.”",
+        "en": "Choose the word that fits the blank: 家族が、久しぶりに全員（　）ことになりました。 — Meaning of the sentence: “The whole family will be together for the first time in a while.”"
+      },
+      "payload": {
+        "choices": [
+          "揃う",
+          "揃える",
+          "埃",
+          "染み"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「揃う」(Đầy đủ; đều nhau) hợp nghĩa câu này: “Cả nhà lâu lắm mới có đủ mặt mọi người.”",
+        "en": "Correct! 「揃う」(To be complete; to match) fits this sentence: “The whole family will be together for the first time in a while.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cả nhà lâu lắm mới có đủ mặt mọi người.”, nên cần 「揃う」(Đầy đủ; đều nhau); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The whole family will be together for the first time in a while.”, so it needs 「揃う」(To be complete; to match); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "影",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夕方になると、（　）が長くなります。 — Nghĩa của câu: “Đến chiều tối thì bóng dài ra.”",
+        "en": "Choose the word that fits the blank: 夕方になると、（　）が長くなります。 — Meaning of the sentence: “In the evening the shadows grow long.”"
+      },
+      "payload": {
+        "choices": [
+          "埃",
+          "影",
+          "染み",
+          "揃える"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「影」(Bóng) hợp nghĩa câu này: “Đến chiều tối thì bóng dài ra.”",
+        "en": "Correct! 「影」(Shadow) fits this sentence: “In the evening the shadows grow long.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đến chiều tối thì bóng dài ra.”, nên cần 「影」(Bóng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the evening the shadows grow long.”, so it needs 「影」(Shadow); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "埃",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 棚の上に、「埃」がたまっています。",
+        "en": "Choose the correct reading of the word in 「」: 棚の上に、「埃」がたまっています。"
+      },
+      "payload": {
+        "choices": [
+          "しみ",
+          "ほこり",
+          "くさい",
+          "そろえる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「埃」 đọc là 「ほこり」, nghĩa là Bụi.",
+        "en": "Correct! 「埃」 is read 「ほこり」 and means Dust."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「埃」 đọc là 「ほこり」 (Bụi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「埃」 is read 「ほこり」 (Dust); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "揃える",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: くつを、玄関にきれいに「揃える」ことにしています。",
+        "en": "Choose the correct reading of the word in 「」: くつを、玄関にきれいに「揃える」ことにしています。"
+      },
+      "payload": {
+        "choices": [
+          "ほこり",
+          "しみ",
+          "そろえる",
+          "くさい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「揃える」 đọc là 「そろえる」, nghĩa là Sắp cho đều; gom đủ.",
+        "en": "Correct! 「揃える」 is read 「そろえる」 and means To arrange evenly; to gather a set."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「揃える」 đọc là 「そろえる」 (Sắp cho đều; gom đủ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「揃える」 is read 「そろえる」 (To arrange evenly; to gather a set); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "臭い",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: ごみ箱が、とても「くさい」です。",
+        "en": "Choose the correct way to write the word in 「」: ごみ箱が、とても「くさい」です。"
+      },
+      "payload": {
+        "choices": [
+          "染み",
+          "埃",
+          "臭い",
+          "揃う"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「くさい」 viết là 「臭い」, nghĩa là Hôi; thối.",
+        "en": "Correct! 「くさい」 is written 「臭い」 and means Smelly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「くさい」 viết là 「臭い」 (Hôi; thối); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「くさい」 is written 「臭い」 (Smelly); the other words are read differently."
+      }
+    }
+  ]
+}

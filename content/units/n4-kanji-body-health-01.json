@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-body-health",
+  "title": {
+    "vi": "Kanji cơ thể – sức khỏe (手 力 目)",
+    "en": "Body and health kanji (手 力 目)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "手",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "tay",
+        "en": "hand"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュ"
+        ],
+        "kunReadings": [
+          "て",
+          "た"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "歌手",
+          "reading": "かしゅ",
+          "kanjiReading": "シュ",
+          "translation": {
+            "vi": "ca sĩ",
+            "en": "singer"
+          }
+        },
+        {
+          "ja": "手紙",
+          "reading": "てがみ",
+          "kanjiReading": "て",
+          "translation": {
+            "vi": "lá thư",
+            "en": "letter"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "力",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "sức lực",
+        "en": "power"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リョク",
+          "リキ"
+        ],
+        "kunReadings": [
+          "ちから"
+        ],
+        "strokeCount": 2
+      },
+      "examples": [
+        {
+          "ja": "体力",
+          "reading": "たいりょく",
+          "kanjiReading": "リョク",
+          "translation": {
+            "vi": "thể lực",
+            "en": "physical strength"
+          }
+        },
+        {
+          "ja": "力",
+          "reading": "ちから",
+          "kanjiReading": "ちから",
+          "translation": {
+            "vi": "sức lực",
+            "en": "strength"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "目",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "mắt",
+        "en": "eye"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "モク",
+          "ボク"
+        ],
+        "kunReadings": [
+          "め",
+          "ま"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "目的",
+          "reading": "もくてき",
+          "kanjiReading": "モク",
+          "translation": {
+            "vi": "mục đích",
+            "en": "purpose"
+          }
+        },
+        {
+          "ja": "目",
+          "reading": "め",
+          "kanjiReading": "め",
+          "translation": {
+            "vi": "con mắt",
+            "en": "eye"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "手",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「手」nghĩa là gì?",
+        "en": "What does 「手」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tay",
+            "en": "hand"
+          },
+          {
+            "vi": "sức lực",
+            "en": "power"
+          },
+          {
+            "vi": "mắt",
+            "en": "eye"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 手 nghĩa là tay.",
+        "en": "Correct! 手 means hand."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 手 nghĩa là tay, như trong 「歌手」 (ca sĩ).",
+        "en": "Not quite. 手 means hand, as in 「歌手」 (singer)."
+      }
+    },
+    {
+      "item": "手",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「手」 trong 「歌手」 (“ca sĩ”).",
+        "en": "Type the reading of 「手」 in 「歌手」 (“singer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅ",
+          "シュ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歌手, 手 đọc là しゅ (âm On).",
+        "en": "Correct! In 歌手, 手 is read しゅ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歌手 (ca sĩ), 手 đọc là しゅ (âm On).",
+        "en": "In 歌手 (singer), 手 is read しゅ (on'yomi)."
+      }
+    },
+    {
+      "item": "手",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「手紙」(lá thư) đọc là gì?",
+        "en": "How is 「手紙」 (letter) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅがみ",
+          "てがみ",
+          "でがみ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 手紙 = てがみ (lá thư); 手 đọc là て (âm Kun).",
+        "en": "Correct! 手紙 = てがみ (letter); 手 is read て (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "手紙 đọc là てがみ (lá thư): 手 mang âm Kun て.",
+        "en": "手紙 is read てがみ (letter): 手 takes the kun'yomi て."
+      }
+    },
+    {
+      "item": "力",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「力」nghĩa là gì?",
+        "en": "What does 「力」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mắt",
+            "en": "eye"
+          },
+          {
+            "vi": "sức lực",
+            "en": "power"
+          },
+          {
+            "vi": "tay",
+            "en": "hand"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 力 nghĩa là sức lực.",
+        "en": "Correct! 力 means power."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 力 nghĩa là sức lực, như trong 「体力」 (thể lực).",
+        "en": "Not quite. 力 means power, as in 「体力」 (physical strength)."
+      }
+    },
+    {
+      "item": "力",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「力」 trong 「体力」 (“thể lực”).",
+        "en": "Type the reading of 「力」 in 「体力」 (“physical strength”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りょく",
+          "リョク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 体力, 力 đọc là りょく (âm On).",
+        "en": "Correct! In 体力, 力 is read りょく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 体力 (thể lực), 力 đọc là りょく (âm On).",
+        "en": "In 体力 (physical strength), 力 is read りょく (on'yomi)."
+      }
+    },
+    {
+      "item": "力",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「力」(sức lực; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「力」 (strength; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "りょく",
+          "かしゅ",
+          "ちから"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 力 = ちから (sức lực); 力 đọc là ちから (âm Kun).",
+        "en": "Correct! 力 = ちから (strength); 力 is read ちから (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "力 đọc là ちから (sức lực): 力 mang âm Kun ちから.",
+        "en": "力 is read ちから (strength): 力 takes the kun'yomi ちから."
+      }
+    },
+    {
+      "item": "目",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「目」nghĩa là gì?",
+        "en": "What does 「目」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tay",
+            "en": "hand"
+          },
+          {
+            "vi": "sức lực",
+            "en": "power"
+          },
+          {
+            "vi": "mắt",
+            "en": "eye"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 目 nghĩa là mắt.",
+        "en": "Correct! 目 means eye."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 目 nghĩa là mắt, như trong 「目的」 (mục đích).",
+        "en": "Not quite. 目 means eye, as in 「目的」 (purpose)."
+      }
+    },
+    {
+      "item": "目",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「目」 trong 「目的」 (“mục đích”).",
+        "en": "Type the reading of 「目」 in 「目的」 (“purpose”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "もく",
+          "モク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 目的, 目 đọc là もく (âm On).",
+        "en": "Correct! In 目的, 目 is read もく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 目的 (mục đích), 目 đọc là もく (âm On).",
+        "en": "In 目的 (purpose), 目 is read もく (on'yomi)."
+      }
+    },
+    {
+      "item": "目",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「目」(con mắt; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「目」 (eye; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "め",
+          "もく",
+          "かしゅ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 目 = め (con mắt); 目 đọc là め (âm Kun).",
+        "en": "Correct! 目 = め (eye); 目 is read め (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "目 đọc là め (con mắt): 目 mang âm Kun め.",
+        "en": "目 is read め (eye): 目 takes the kun'yomi め."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "手",
+            {
+              "vi": "tay",
+              "en": "hand"
+            }
+          ],
+          [
+            "力",
+            {
+              "vi": "sức lực",
+              "en": "power"
+            }
+          ],
+          [
+            "目",
+            {
+              "vi": "mắt",
+              "en": "eye"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

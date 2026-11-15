@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (婦 所 街)",
+    "en": "Daily life and home kanji (婦 所 街)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "婦",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "phụ nữ; vợ",
+        "en": "woman; wife"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "主婦",
+          "reading": "しゅふ",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "người nội trợ",
+            "en": "housewife"
+          }
+        },
+        {
+          "ja": "婦人",
+          "reading": "ふじん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "phụ nữ",
+            "en": "lady"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "所",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "nơi; chỗ",
+        "en": "place"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショ"
+        ],
+        "kunReadings": [
+          "ところ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "住所",
+          "reading": "じゅうしょ",
+          "kanjiReading": "ショ",
+          "translation": {
+            "vi": "địa chỉ",
+            "en": "address"
+          }
+        },
+        {
+          "ja": "所",
+          "reading": "ところ",
+          "kanjiReading": "ところ",
+          "translation": {
+            "vi": "nơi; chỗ",
+            "en": "place"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "街",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "phố; đường phố",
+        "en": "street; town"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガイ",
+          "カイ"
+        ],
+        "kunReadings": [
+          "まち"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "商店街",
+          "reading": "しょうてんがい",
+          "kanjiReading": "ガイ",
+          "translation": {
+            "vi": "khu phố mua sắm",
+            "en": "shopping street"
+          }
+        },
+        {
+          "ja": "街角",
+          "reading": "まちかど",
+          "kanjiReading": "まち",
+          "translation": {
+            "vi": "góc phố",
+            "en": "street corner"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "婦",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「婦」nghĩa là gì?",
+        "en": "What does 「婦」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phụ nữ; vợ",
+            "en": "woman; wife"
+          },
+          {
+            "vi": "nơi; chỗ",
+            "en": "place"
+          },
+          {
+            "vi": "phố; đường phố",
+            "en": "street; town"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 婦 nghĩa là phụ nữ; vợ.",
+        "en": "Correct! 婦 means woman; wife."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 婦 nghĩa là phụ nữ; vợ, như trong 「主婦」 (người nội trợ).",
+        "en": "Not quite. 婦 means woman; wife, as in 「主婦」 (housewife)."
+      }
+    },
+    {
+      "item": "婦",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「婦」 trong 「主婦」 (“người nội trợ”).",
+        "en": "Type the reading of 「婦」 in 「主婦」 (“housewife”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふ",
+          "フ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 主婦, 婦 đọc là ふ (âm On).",
+        "en": "Correct! In 主婦, 婦 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 主婦 (người nội trợ), 婦 đọc là ふ (âm On).",
+        "en": "In 主婦 (housewife), 婦 is read ふ (on'yomi)."
+      }
+    },
+    {
+      "item": "婦",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「婦人」(phụ nữ) đọc là gì?",
+        "en": "How is 「婦人」 (lady) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぶじん",
+          "ふじん",
+          "ふしん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 婦人 = ふじん (phụ nữ); 婦 đọc là ふ (âm On).",
+        "en": "Correct! 婦人 = ふじん (lady); 婦 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "婦人 đọc là ふじん (phụ nữ): 婦 mang âm On ふ.",
+        "en": "婦人 is read ふじん (lady): 婦 takes the on'yomi ふ."
+      }
+    },
+    {
+      "item": "所",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「所」nghĩa là gì?",
+        "en": "What does 「所」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phố; đường phố",
+            "en": "street; town"
+          },
+          {
+            "vi": "nơi; chỗ",
+            "en": "place"
+          },
+          {
+            "vi": "phụ nữ; vợ",
+            "en": "woman; wife"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 所 nghĩa là nơi; chỗ.",
+        "en": "Correct! 所 means place."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 所 nghĩa là nơi; chỗ, như trong 「住所」 (địa chỉ).",
+        "en": "Not quite. 所 means place, as in 「住所」 (address)."
+      }
+    },
+    {
+      "item": "所",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「所」 trong 「住所」 (“địa chỉ”).",
+        "en": "Type the reading of 「所」 in 「住所」 (“address”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょ",
+          "ショ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 住所, 所 đọc là しょ (âm On).",
+        "en": "Correct! In 住所, 所 is read しょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 住所 (địa chỉ), 所 đọc là しょ (âm On).",
+        "en": "In 住所 (address), 所 is read しょ (on'yomi)."
+      }
+    },
+    {
+      "item": "所",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「所」(nơi; chỗ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「所」 (place; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょ",
+          "しゅふ",
+          "ところ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 所 = ところ (nơi; chỗ); 所 đọc là ところ (âm Kun).",
+        "en": "Correct! 所 = ところ (place); 所 is read ところ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "所 đọc là ところ (nơi; chỗ): 所 mang âm Kun ところ.",
+        "en": "所 is read ところ (place): 所 takes the kun'yomi ところ."
+      }
+    },
+    {
+      "item": "街",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「街」nghĩa là gì?",
+        "en": "What does 「街」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phụ nữ; vợ",
+            "en": "woman; wife"
+          },
+          {
+            "vi": "nơi; chỗ",
+            "en": "place"
+          },
+          {
+            "vi": "phố; đường phố",
+            "en": "street; town"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 街 nghĩa là phố; đường phố.",
+        "en": "Correct! 街 means street; town."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 街 nghĩa là phố; đường phố, như trong 「商店街」 (khu phố mua sắm).",
+        "en": "Not quite. 街 means street; town, as in 「商店街」 (shopping street)."
+      }
+    },
+    {
+      "item": "街",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「街」 trong 「商店街」 (“khu phố mua sắm”).",
+        "en": "Type the reading of 「街」 in 「商店街」 (“shopping street”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がい",
+          "ガイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 商店街, 街 đọc là がい (âm On).",
+        "en": "Correct! In 商店街, 街 is read がい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 商店街 (khu phố mua sắm), 街 đọc là がい (âm On).",
+        "en": "In 商店街 (shopping street), 街 is read がい (on'yomi)."
+      }
+    },
+    {
+      "item": "街",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「街角」(góc phố) đọc là gì?",
+        "en": "How is 「街角」 (street corner) read?"
+      },
+      "payload": {
+        "choices": [
+          "まちかど",
+          "がいかど",
+          "まちがど"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 街角 = まちかど (góc phố); 街 đọc là まち (âm Kun).",
+        "en": "Correct! 街角 = まちかど (street corner); 街 is read まち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "街角 đọc là まちかど (góc phố): 街 mang âm Kun まち.",
+        "en": "街角 is read まちかど (street corner): 街 takes the kun'yomi まち."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "婦",
+            {
+              "vi": "phụ nữ; vợ",
+              "en": "woman; wife"
+            }
+          ],
+          [
+            "所",
+            {
+              "vi": "nơi; chỗ",
+              "en": "place"
+            }
+          ],
+          [
+            "街",
+            {
+              "vi": "phố; đường phố",
+              "en": "street; town"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

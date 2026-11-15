@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-hearsay-conjecture",
+  "title": {
+    "vi": "Truyền đạt và phỏng đoán (3): 〜はずだ và 〜なさそうだ",
+    "en": "Hearsay and conjecture (3): 〜はずだ and 〜なさそうだ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜はずだ",
+      "meaning": {
+        "vi": "Chắc chắn là ~ (theo lẽ thường)",
+        "en": "Should be ~; is expected to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な: な; danh từ: の) + はずだ. Phỏng đoán chắc chắn dựa trên căn cứ hợp lý (lịch, kinh nghiệm, kiến thức). Phủ định: 〜はずがない / 〜ないはずだ. Mạnh hơn かもしれない.",
+        "en": "Usage: plain form (な-adjective: な; noun: の) + はずだ. A confident inference based on sound grounds (schedule, experience, knowledge). Negatives: 〜はずがない / 〜ないはずだ. Stronger than かもしれない."
+      },
+      "examples": [
+        {
+          "ja": "田中さんは今日休みだから、会社にいないはずです。",
+          "reading": "たなかさんはきょうやすみだから、かいしゃにいないはずです。",
+          "translation": {
+            "vi": "Hôm nay anh Tanaka nghỉ nên chắc chắn không có ở công ty.",
+            "en": "Mr. Tanaka is off today, so he should not be at the office."
+          }
+        },
+        {
+          "ja": "この道をまっすぐ行けば、駅があるはずです。",
+          "reading": "このみちをまっすぐいけば、えきがあるはずです。",
+          "translation": {
+            "vi": "Đi thẳng đường này thì chắc chắn sẽ có nhà ga.",
+            "en": "If you go straight along this road, there should be a station."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-062"
+    },
+    {
+      "japanese": "〜なさそうだ／〜そうにない",
+      "meaning": {
+        "vi": "Có vẻ không ~",
+        "en": "Does not look ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: tính từ い bỏ い + くなさそうだ (おいしくなさそう); tính từ な + じゃなさそう; động từ gốc ます + そうにない / そうもない (やみそうにない). Là phủ định của 〜そうだ (様態), dựa trên vẻ bề ngoài.",
+        "en": "Conjugation: い-adjective drop い + くなさそうだ (おいしくなさそう); な-adjective + じゃなさそう; verb ます-stem + そうにない / そうもない (やみそうにない). The negative of 〜そうだ (appearance), based on how things look."
+      },
+      "examples": [
+        {
+          "ja": "この店は、あまりおいしくなさそうです。",
+          "reading": "このみせは、あまりおいしくなさそうです。",
+          "translation": {
+            "vi": "Quán này trông có vẻ không ngon lắm.",
+            "en": "This restaurant does not look very good."
+          }
+        },
+        {
+          "ja": "今日は雨がやみそうにありません。",
+          "reading": "きょうはあめがやみそうにありません。",
+          "translation": {
+            "vi": "Hôm nay có vẻ mưa sẽ không tạnh.",
+            "en": "It does not look like the rain will stop today."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-063"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜はずだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n田中さんは今日休みだから、会社にいない（　）です。",
+        "en": "Choose the correct option for the blank:\n田中さんは今日休みだから、会社にいない（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "はず",
+          "べき",
+          "ところ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có căn cứ rõ ràng (今日休みだから) nên suy ra chắc chắn theo lẽ thường: 「いないはずです」.",
+        "en": "Correct! There is a clear basis (今日休みだから), so the speaker infers with confidence from common sense: 「いないはずです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có căn cứ rõ ràng (今日休みだから) nên suy ra chắc chắn theo lẽ thường: 「いないはずです」.",
+        "en": "Not quite. There is a clear basis (今日休みだから), so the speaker infers with confidence from common sense: 「いないはずです」."
+      }
+    },
+    {
+      "item": "〜はずだ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの道をまっすぐ行けば、駅がある___です。",
+        "en": "Choose the correct option for the blank:\nこの道をまっすぐ行けば、駅がある___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "はず"
+        ],
+        "hint": "はず"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Theo lẽ thường sẽ có ga: 「あるはずです」.",
+        "en": "Correct! As expected there should be a station: 「あるはずです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Theo lẽ thường sẽ có ga: 「あるはずです」.",
+        "en": "Not quite. As expected there should be a station: 「あるはずです」."
+      }
+    },
+    {
+      "item": "〜はずだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は日本に三年住んでいたから、日本語が上手な（　）です。",
+        "en": "Choose the correct option for the blank:\n彼は日本に三年住んでいたから、日本語が上手な（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "はず",
+          "ほど",
+          "こと",
+          "ため"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ な + 「な」 + 「はず」: 「上手なはずです」.",
+        "en": "Correct! A な-adjective + 「な」 + 「はず」: 「上手なはずです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ な + 「な」 + 「はず」: 「上手なはずです」.",
+        "en": "Not quite. A な-adjective + 「な」 + 「はず」: 「上手なはずです」."
+      }
+    },
+    {
+      "item": "〜はずだ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "彼は今ごろ家にいるのはずです。",
+          "彼は今ごろ家にいるはずだです。",
+          "彼は今ごろ家にいるはずをです。",
+          "彼は今ごろ家にいるはずです。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はず」 gắn trực tiếp sau thể thường: 「いるはずです」.",
+        "en": "Correct! 「はず」 attaches directly to the plain form: 「いるはずです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はず」 gắn trực tiếp sau thể thường: 「いるはずです」.",
+        "en": "Not quite. 「はず」 attaches directly to the plain form: 「いるはずです」."
+      }
+    },
+    {
+      "item": "〜なさそうだ／〜そうにない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの店は、あまりおいしく（　）です。",
+        "en": "Choose the correct option for the blank:\nこの店は、あまりおいしく（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "なそう",
+          "ないそう",
+          "なさそう",
+          "くなそう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ định của 「おいしそう」 là 「おいしくなさそう」.",
+        "en": "Correct! The negative of 「おいしそう」 is 「おいしくなさそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ định của 「おいしそう」 là 「おいしくなさそう」.",
+        "en": "Not quite. The negative of 「おいしそう」 is 「おいしくなさそう」."
+      }
+    },
+    {
+      "item": "〜なさそうだ／〜そうにない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は雨がやみ（　）ありません。",
+        "en": "Choose the correct option for the blank:\n今日は雨がやみ（　）ありません。"
+      },
+      "payload": {
+        "choices": [
+          "そうが",
+          "そうに",
+          "そうで",
+          "そうだ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ gốc ます + 「そうにありません」: 「やみそうにありません」.",
+        "en": "Correct! Verb ます-stem + 「そうにありません」: 「やみそうにありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ gốc ます + 「そうにありません」: 「やみそうにありません」.",
+        "en": "Not quite. Verb ます-stem + 「そうにありません」: 「やみそうにありません」."
+      }
+    },
+    {
+      "item": "〜なさそうだ／〜そうにない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあの映画は、あまりおもしろく___です。",
+        "en": "Choose the correct option for the blank:\nあの映画は、あまりおもしろく___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なさそう"
+        ],
+        "hint": "〜なさそう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có vẻ không thú vị: 「おもしろくなさそう」.",
+        "en": "Correct! It does not look interesting: 「おもしろくなさそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có vẻ không thú vị: 「おもしろくなさそう」.",
+        "en": "Not quite. It does not look interesting: 「おもしろくなさそう」."
+      }
+    },
+    {
+      "item": "〜なさそうだ／〜そうにない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この問題は、むずかしくなさそうです。",
+          "この問題は、むずかしいなさそうです。",
+          "この問題は、むずかしなさそうです。",
+          "この問題は、むずかしくそうなさです。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い bỏ 「い」 + 「くなさそう」: 「むずかしくなさそう」.",
+        "en": "Correct! An い-adjective drops 「い」 + 「くなさそう」: 「むずかしくなさそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い bỏ 「い」 + 「くなさそう」: 「むずかしくなさそう」.",
+        "en": "Not quite. An い-adjective drops 「い」 + 「くなさそう」: 「むずかしくなさそう」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜はずだ",
+            {
+              "vi": "Chắc chắn là ~ (theo lẽ thường)",
+              "en": "Should be ~; is expected to ~"
+            }
+          ],
+          [
+            "〜なさそうだ／〜そうにない",
+            {
+              "vi": "Có vẻ không ~",
+              "en": "Does not look ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

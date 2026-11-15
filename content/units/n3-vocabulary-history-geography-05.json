@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-history-geography",
+  "title": {
+    "vi": "Thành phố và di tích",
+    "en": "Cities and historic sites"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1860,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "本州",
+      "reading": "ほんしゅう",
+      "meaning": {
+        "vi": "Đảo Honshu",
+        "en": "Honshu (main island)"
+      },
+      "examples": [
+        {
+          "ja": "日本で一番大きい島は、本州です。",
+          "reading": "にほんでいちばんおおきいしまは、ほんしゅうです。",
+          "translation": {
+            "vi": "Hòn đảo lớn nhất Nhật Bản là Honshu.",
+            "en": "The largest island in Japan is Honshu."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "首都",
+      "reading": "しゅと",
+      "meaning": {
+        "vi": "Thủ đô",
+        "en": "Capital city"
+      },
+      "examples": [
+        {
+          "ja": "日本の首都は、東京です。",
+          "reading": "にほんのしゅとは、とうきょうです。",
+          "translation": {
+            "vi": "Thủ đô của Nhật Bản là Tokyo.",
+            "en": "The capital of Japan is Tokyo."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "都市",
+      "reading": "とし",
+      "meaning": {
+        "vi": "Đô thị; thành phố",
+        "en": "City; urban area"
+      },
+      "examples": [
+        {
+          "ja": "大阪は、日本で二番目に大きい都市です。",
+          "reading": "おおさかは、にほんでにばんめにおおきいとしです。",
+          "translation": {
+            "vi": "Osaka là đô thị lớn thứ hai Nhật Bản.",
+            "en": "Osaka is the second-largest city in Japan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "都会",
+      "reading": "とかい",
+      "meaning": {
+        "vi": "Thành thị; đô hội",
+        "en": "Big city (urban life)"
+      },
+      "examples": [
+        {
+          "ja": "都会の生活は、便利ですが、少し疲れます。",
+          "reading": "とかいのせいかつは、べんりですが、すこしつかれます。",
+          "translation": {
+            "vi": "Cuộc sống thành thị tiện lợi nhưng hơi mệt.",
+            "en": "City life is convenient but a bit tiring."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "史跡",
+      "reading": "しせき",
+      "meaning": {
+        "vi": "Di tích lịch sử",
+        "en": "Historic site"
+      },
+      "examples": [
+        {
+          "ja": "この寺は、国の史跡に指定されています。",
+          "reading": "このてらは、くにのしせきにしていされています。",
+          "translation": {
+            "vi": "Ngôi chùa này được chỉ định là di tích lịch sử quốc gia.",
+            "en": "This temple is designated a national historic site."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "文明",
+      "reading": "ぶんめい",
+      "meaning": {
+        "vi": "Nền văn minh",
+        "en": "Civilization"
+      },
+      "examples": [
+        {
+          "ja": "古い文明は、大きな川のそばに生まれました。",
+          "reading": "ふるいぶんめいは、おおきなかわのそばにうまれました。",
+          "translation": {
+            "vi": "Những nền văn minh cổ ra đời bên các dòng sông lớn.",
+            "en": "Ancient civilizations arose beside large rivers."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "本州",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本で一番大きい島は、（　）です。 — Nghĩa của câu: “Hòn đảo lớn nhất Nhật Bản là Honshu.”",
+        "en": "Choose the word that fits the blank: 日本で一番大きい島は、（　）です。 — Meaning of the sentence: “The largest island in Japan is Honshu.”"
+      },
+      "payload": {
+        "choices": [
+          "文明",
+          "本州",
+          "首都",
+          "史跡"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「本州」(Đảo Honshu) hợp nghĩa câu này: “Hòn đảo lớn nhất Nhật Bản là Honshu.”",
+        "en": "Correct! 「本州」(Honshu (main island)) fits this sentence: “The largest island in Japan is Honshu.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hòn đảo lớn nhất Nhật Bản là Honshu.”, nên cần 「本州」(Đảo Honshu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The largest island in Japan is Honshu.”, so it needs 「本州」(Honshu (main island)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "首都",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本の（　）は、東京です。 — Nghĩa của câu: “Thủ đô của Nhật Bản là Tokyo.”",
+        "en": "Choose the word that fits the blank: 日本の（　）は、東京です。 — Meaning of the sentence: “The capital of Japan is Tokyo.”"
+      },
+      "payload": {
+        "choices": [
+          "都会",
+          "本州",
+          "首都",
+          "文明"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「首都」(Thủ đô) hợp nghĩa câu này: “Thủ đô của Nhật Bản là Tokyo.”",
+        "en": "Correct! 「首都」(Capital city) fits this sentence: “The capital of Japan is Tokyo.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thủ đô của Nhật Bản là Tokyo.”, nên cần 「首都」(Thủ đô); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The capital of Japan is Tokyo.”, so it needs 「首都」(Capital city); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "都市",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大阪は、日本で二番目に大きい（　）です。 — Nghĩa của câu: “Osaka là đô thị lớn thứ hai Nhật Bản.”",
+        "en": "Choose the word that fits the blank: 大阪は、日本で二番目に大きい（　）です。 — Meaning of the sentence: “Osaka is the second-largest city in Japan.”"
+      },
+      "payload": {
+        "choices": [
+          "首都",
+          "本州",
+          "史跡",
+          "都市"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「都市」(Đô thị; thành phố) hợp nghĩa câu này: “Osaka là đô thị lớn thứ hai Nhật Bản.”",
+        "en": "Correct! 「都市」(City; urban area) fits this sentence: “Osaka is the second-largest city in Japan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Osaka là đô thị lớn thứ hai Nhật Bản.”, nên cần 「都市」(Đô thị; thành phố); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Osaka is the second-largest city in Japan.”, so it needs 「都市」(City; urban area); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "都会",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の生活は、便利ですが、少し疲れます。 — Nghĩa của câu: “Cuộc sống thành thị tiện lợi nhưng hơi mệt.”",
+        "en": "Choose the word that fits the blank: （　）の生活は、便利ですが、少し疲れます。 — Meaning of the sentence: “City life is convenient but a bit tiring.”"
+      },
+      "payload": {
+        "choices": [
+          "都会",
+          "文明",
+          "本州",
+          "都市"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「都会」(Thành thị; đô hội) hợp nghĩa câu này: “Cuộc sống thành thị tiện lợi nhưng hơi mệt.”",
+        "en": "Correct! 「都会」(Big city (urban life)) fits this sentence: “City life is convenient but a bit tiring.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuộc sống thành thị tiện lợi nhưng hơi mệt.”, nên cần 「都会」(Thành thị; đô hội); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “City life is convenient but a bit tiring.”, so it needs 「都会」(Big city (urban life)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "史跡",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この寺は、国の（　）に指定されています。 — Nghĩa của câu: “Ngôi chùa này được chỉ định là di tích lịch sử quốc gia.”",
+        "en": "Choose the word that fits the blank: この寺は、国の（　）に指定されています。 — Meaning of the sentence: “This temple is designated a national historic site.”"
+      },
+      "payload": {
+        "choices": [
+          "都市",
+          "史跡",
+          "本州",
+          "首都"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「史跡」(Di tích lịch sử) hợp nghĩa câu này: “Ngôi chùa này được chỉ định là di tích lịch sử quốc gia.”",
+        "en": "Correct! 「史跡」(Historic site) fits this sentence: “This temple is designated a national historic site.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngôi chùa này được chỉ định là di tích lịch sử quốc gia.”, nên cần 「史跡」(Di tích lịch sử); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This temple is designated a national historic site.”, so it needs 「史跡」(Historic site); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "文明",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古い（　）は、大きな川のそばに生まれました。 — Nghĩa của câu: “Những nền văn minh cổ ra đời bên các dòng sông lớn.”",
+        "en": "Choose the word that fits the blank: 古い（　）は、大きな川のそばに生まれました。 — Meaning of the sentence: “Ancient civilizations arose beside large rivers.”"
+      },
+      "payload": {
+        "choices": [
+          "本州",
+          "首都",
+          "文明",
+          "都市"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文明」(Nền văn minh) hợp nghĩa câu này: “Những nền văn minh cổ ra đời bên các dòng sông lớn.”",
+        "en": "Correct! 「文明」(Civilization) fits this sentence: “Ancient civilizations arose beside large rivers.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Những nền văn minh cổ ra đời bên các dòng sông lớn.”, nên cần 「文明」(Nền văn minh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Ancient civilizations arose beside large rivers.”, so it needs 「文明」(Civilization); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "本州",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 日本で一番大きい島は、「本州」です。",
+        "en": "Choose the correct reading of the word in 「」: 日本で一番大きい島は、「本州」です。"
+      },
+      "payload": {
+        "choices": [
+          "しゅと",
+          "とし",
+          "ほんしゅう",
+          "ぶんめい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「本州」 đọc là 「ほんしゅう」, nghĩa là Đảo Honshu.",
+        "en": "Correct! 「本州」 is read 「ほんしゅう」 and means Honshu (main island)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「本州」 đọc là 「ほんしゅう」 (Đảo Honshu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「本州」 is read 「ほんしゅう」 (Honshu (main island)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "都会",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「都会」の生活は、便利ですが、少し疲れます。",
+        "en": "Choose the correct reading of the word in 「」: 「都会」の生活は、便利ですが、少し疲れます。"
+      },
+      "payload": {
+        "choices": [
+          "しゅと",
+          "ほんしゅう",
+          "とし",
+          "とかい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「都会」 đọc là 「とかい」, nghĩa là Thành thị; đô hội.",
+        "en": "Correct! 「都会」 is read 「とかい」 and means Big city (urban life)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「都会」 đọc là 「とかい」 (Thành thị; đô hội); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「都会」 is read 「とかい」 (Big city (urban life)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "都市",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 大阪は、日本で二番目に大きい「とし」です。",
+        "en": "Choose the correct way to write the word in 「」: 大阪は、日本で二番目に大きい「とし」です。"
+      },
+      "payload": {
+        "choices": [
+          "都会",
+          "本州",
+          "首都",
+          "都市"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とし」 viết là 「都市」, nghĩa là Đô thị; thành phố.",
+        "en": "Correct! 「とし」 is written 「都市」 and means City; urban area."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「とし」 viết là 「都市」 (Đô thị; thành phố); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「とし」 is written 「都市」 (City; urban area); the other words are read differently."
+      }
+    }
+  ]
+}

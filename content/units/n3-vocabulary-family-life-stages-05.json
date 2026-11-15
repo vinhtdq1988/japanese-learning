@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-family-life-stages",
+  "title": {
+    "vi": "Tổ tiên và thừa kế",
+    "en": "Ancestors and inheritance"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2270,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "先祖",
+      "reading": "せんぞ",
+      "meaning": {
+        "vi": "Tổ tiên",
+        "en": "Ancestors"
+      },
+      "examples": [
+        {
+          "ja": "先祖を大切にする習慣が、今も残っています。",
+          "reading": "せんぞをたいせつにするしゅうかんが、いまものこっています。",
+          "translation": {
+            "vi": "Tập quán coi trọng tổ tiên vẫn còn đến nay.",
+            "en": "The custom of honoring ancestors still remains today."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "子孫",
+      "reading": "しそん",
+      "meaning": {
+        "vi": "Con cháu; hậu duệ",
+        "en": "Descendants"
+      },
+      "examples": [
+        {
+          "ja": "この森は、子孫のために守らなければなりません。",
+          "reading": "このもりは、しそんのためにまもらなければなりません。",
+          "translation": {
+            "vi": "Khu rừng này phải được bảo vệ vì con cháu mai sau.",
+            "en": "We must protect this forest for our descendants."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "跡継ぎ",
+      "reading": "あとつぎ",
+      "meaning": {
+        "vi": "Người kế nghiệp",
+        "en": "Heir; successor"
+      },
+      "examples": [
+        {
+          "ja": "この店には、跡継ぎがいません。",
+          "reading": "このみせには、あとつぎがいません。",
+          "translation": {
+            "vi": "Cửa hàng này không có người kế nghiệp.",
+            "en": "This shop has no successor."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "相続",
+      "reading": "そうぞく",
+      "meaning": {
+        "vi": "Thừa kế",
+        "en": "Inheritance"
+      },
+      "examples": [
+        {
+          "ja": "父が亡くなって、家を相続しました。",
+          "reading": "ちちがなくなって、いえをそうぞくしました。",
+          "translation": {
+            "vi": "Bố mất nên tôi đã thừa kế căn nhà.",
+            "en": "My father passed away and I inherited the house."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "遺産",
+      "reading": "いさん",
+      "meaning": {
+        "vi": "Di sản (tài sản để lại)",
+        "en": "Inheritance; legacy"
+      },
+      "examples": [
+        {
+          "ja": "祖母の遺産を、家族で分けました。",
+          "reading": "そぼのいさんを、かぞくでわけました。",
+          "translation": {
+            "vi": "Cả nhà đã chia di sản của bà.",
+            "en": "The family divided my grandmother's estate."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "生涯",
+      "reading": "しょうがい",
+      "meaning": {
+        "vi": "Suốt đời; cả cuộc đời",
+        "en": "Lifetime"
+      },
+      "examples": [
+        {
+          "ja": "彼は、生涯、研究を続けました。",
+          "reading": "かれは、しょうがい、けんきゅうをつづけました。",
+          "translation": {
+            "vi": "Ông ấy tiếp tục nghiên cứu suốt cả cuộc đời.",
+            "en": "He continued his research throughout his lifetime."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "先祖",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を大切にする習慣が、今も残っています。 — Nghĩa của câu: “Tập quán coi trọng tổ tiên vẫn còn đến nay.”",
+        "en": "Choose the word that fits the blank: （　）を大切にする習慣が、今も残っています。 — Meaning of the sentence: “The custom of honoring ancestors still remains today.”"
+      },
+      "payload": {
+        "choices": [
+          "子孫",
+          "跡継ぎ",
+          "相続",
+          "先祖"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「先祖」(Tổ tiên) hợp nghĩa câu này: “Tập quán coi trọng tổ tiên vẫn còn đến nay.”",
+        "en": "Correct! 「先祖」(Ancestors) fits this sentence: “The custom of honoring ancestors still remains today.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tập quán coi trọng tổ tiên vẫn còn đến nay.”, nên cần 「先祖」(Tổ tiên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The custom of honoring ancestors still remains today.”, so it needs 「先祖」(Ancestors); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "子孫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この森は、（　）のために守らなければなりません。 — Nghĩa của câu: “Khu rừng này phải được bảo vệ vì con cháu mai sau.”",
+        "en": "Choose the word that fits the blank: この森は、（　）のために守らなければなりません。 — Meaning of the sentence: “We must protect this forest for our descendants.”"
+      },
+      "payload": {
+        "choices": [
+          "子孫",
+          "遺産",
+          "先祖",
+          "生涯"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「子孫」(Con cháu; hậu duệ) hợp nghĩa câu này: “Khu rừng này phải được bảo vệ vì con cháu mai sau.”",
+        "en": "Correct! 「子孫」(Descendants) fits this sentence: “We must protect this forest for our descendants.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu rừng này phải được bảo vệ vì con cháu mai sau.”, nên cần 「子孫」(Con cháu; hậu duệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We must protect this forest for our descendants.”, so it needs 「子孫」(Descendants); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "跡継ぎ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店には、（　）がいません。 — Nghĩa của câu: “Cửa hàng này không có người kế nghiệp.”",
+        "en": "Choose the word that fits the blank: この店には、（　）がいません。 — Meaning of the sentence: “This shop has no successor.”"
+      },
+      "payload": {
+        "choices": [
+          "子孫",
+          "跡継ぎ",
+          "先祖",
+          "遺産"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「跡継ぎ」(Người kế nghiệp) hợp nghĩa câu này: “Cửa hàng này không có người kế nghiệp.”",
+        "en": "Correct! 「跡継ぎ」(Heir; successor) fits this sentence: “This shop has no successor.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng này không có người kế nghiệp.”, nên cần 「跡継ぎ」(Người kế nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This shop has no successor.”, so it needs 「跡継ぎ」(Heir; successor); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "相続",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 父が亡くなって、家を（　）しました。 — Nghĩa của câu: “Bố mất nên tôi đã thừa kế căn nhà.”",
+        "en": "Choose the word that fits the blank: 父が亡くなって、家を（　）しました。 — Meaning of the sentence: “My father passed away and I inherited the house.”"
+      },
+      "payload": {
+        "choices": [
+          "生涯",
+          "先祖",
+          "相続",
+          "遺産"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「相続」(Thừa kế) hợp nghĩa câu này: “Bố mất nên tôi đã thừa kế căn nhà.”",
+        "en": "Correct! 「相続」(Inheritance) fits this sentence: “My father passed away and I inherited the house.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bố mất nên tôi đã thừa kế căn nhà.”, nên cần 「相続」(Thừa kế); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My father passed away and I inherited the house.”, so it needs 「相続」(Inheritance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "遺産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖母の（　）を、家族で分けました。 — Nghĩa của câu: “Cả nhà đã chia di sản của bà.”",
+        "en": "Choose the word that fits the blank: 祖母の（　）を、家族で分けました。 — Meaning of the sentence: “The family divided my grandmother's estate.”"
+      },
+      "payload": {
+        "choices": [
+          "相続",
+          "先祖",
+          "生涯",
+          "遺産"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「遺産」(Di sản (tài sản để lại)) hợp nghĩa câu này: “Cả nhà đã chia di sản của bà.”",
+        "en": "Correct! 「遺産」(Inheritance; legacy) fits this sentence: “The family divided my grandmother's estate.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cả nhà đã chia di sản của bà.”, nên cần 「遺産」(Di sản (tài sản để lại)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The family divided my grandmother's estate.”, so it needs 「遺産」(Inheritance; legacy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "生涯",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）、研究を続けました。 — Nghĩa của câu: “Ông ấy tiếp tục nghiên cứu suốt cả cuộc đời.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）、研究を続けました。 — Meaning of the sentence: “He continued his research throughout his lifetime.”"
+      },
+      "payload": {
+        "choices": [
+          "生涯",
+          "子孫",
+          "先祖",
+          "相続"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「生涯」(Suốt đời; cả cuộc đời) hợp nghĩa câu này: “Ông ấy tiếp tục nghiên cứu suốt cả cuộc đời.”",
+        "en": "Correct! 「生涯」(Lifetime) fits this sentence: “He continued his research throughout his lifetime.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ông ấy tiếp tục nghiên cứu suốt cả cuộc đời.”, nên cần 「生涯」(Suốt đời; cả cuộc đời); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He continued his research throughout his lifetime.”, so it needs 「生涯」(Lifetime); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "先祖",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「先祖」を大切にする習慣が、今も残っています。",
+        "en": "Choose the correct reading of the word in 「」: 「先祖」を大切にする習慣が、今も残っています。"
+      },
+      "payload": {
+        "choices": [
+          "せんぞ",
+          "あとつぎ",
+          "しそん",
+          "いさん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「先祖」 đọc là 「せんぞ」, nghĩa là Tổ tiên.",
+        "en": "Correct! 「先祖」 is read 「せんぞ」 and means Ancestors."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「先祖」 đọc là 「せんぞ」 (Tổ tiên); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「先祖」 is read 「せんぞ」 (Ancestors); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "相続",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 父が亡くなって、家を「相続」しました。",
+        "en": "Choose the correct reading of the word in 「」: 父が亡くなって、家を「相続」しました。"
+      },
+      "payload": {
+        "choices": [
+          "あとつぎ",
+          "そうぞく",
+          "せんぞ",
+          "いさん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「相続」 đọc là 「そうぞく」, nghĩa là Thừa kế.",
+        "en": "Correct! 「相続」 is read 「そうぞく」 and means Inheritance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「相続」 đọc là 「そうぞく」 (Thừa kế); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「相続」 is read 「そうぞく」 (Inheritance); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "跡継ぎ",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この店には、「あとつぎ」がいません。",
+        "en": "Choose the correct way to write the word in 「」: この店には、「あとつぎ」がいません。"
+      },
+      "payload": {
+        "choices": [
+          "遺産",
+          "跡継ぎ",
+          "先祖",
+          "相続"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「あとつぎ」 viết là 「跡継ぎ」, nghĩa là Người kế nghiệp.",
+        "en": "Correct! 「あとつぎ」 is written 「跡継ぎ」 and means Heir; successor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「あとつぎ」 viết là 「跡継ぎ」 (Người kế nghiệp); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「あとつぎ」 is written 「跡継ぎ」 (Heir; successor); the other words are read differently."
+      }
+    }
+  ]
+}

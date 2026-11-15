@@ -14,6 +14,7 @@ import { registerPathRoutes } from './path.js';
 import { registerPlacementRoutes } from './placement.js';
 import { registerProgressRoutes } from './progress.js';
 import { registerSessionRoutes } from './sessions.js';
+import { registerStudyDefaultsRoutes } from './study-defaults.js';
 import { registerTrialRoutes } from './trial.js';
 
 /** Đăng ký mọi route nghiệp vụ dưới `/api/v1`; các câu chuyện sau bổ sung dần tại đây. */
@@ -22,6 +23,7 @@ export async function registerApiRoutes(api: FastifyInstance): Promise<void> {
   registerTrialRoutes(api);
   registerAccountRoutes(api);
   registerOnboardingRoutes(api);
+  registerStudyDefaultsRoutes(api);
   registerPlacementRoutes(api);
   registerPathRoutes(api);
   registerDailyRoutes(api);

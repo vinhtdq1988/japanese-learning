@@ -7,6 +7,7 @@ import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../shared/page_frame.dart';
 import 'auth_support.dart';
+import 'password_field.dart';
 
 /// Màn hình đăng nhập (T052). Đăng nhập thành công cập nhật phiên và router tự chuyển về "Hôm nay"
 /// (hoặc màn hình khôi phục nếu tài khoản đang chờ xóa).
@@ -70,10 +71,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   textInputAction: TextInputAction.next,
                 ),
                 const SizedBox(height: 16),
-                TextFormField(
+                PasswordField(
                   key: const Key('password'),
                   controller: _password,
-                  obscureText: true,
                   autofillHints: const <String>[AutofillHints.password],
                   decoration: InputDecoration(
                     labelText: l10n.authPasswordLabel,

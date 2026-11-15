@@ -1,0 +1,674 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-work-business",
+  "title": {
+    "vi": "Kanji công việc – kinh doanh (管 任 役 構 組)",
+    "en": "Work and business kanji (管 任 役 構 組)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "管",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "ống; quản lý",
+        "en": "pipe; manage"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [
+          "くだ"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "管理",
+          "reading": "かんり",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "quản lý",
+            "en": "management"
+          }
+        },
+        {
+          "ja": "保管",
+          "reading": "ほかん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "bảo quản",
+            "en": "safekeeping"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "任",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "giao phó; nhiệm vụ",
+        "en": "entrust; duty"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ニン"
+        ],
+        "kunReadings": [
+          "まか.せる",
+          "まか.す"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "責任",
+          "reading": "せきにん",
+          "kanjiReading": "ニン",
+          "translation": {
+            "vi": "trách nhiệm",
+            "en": "responsibility"
+          }
+        },
+        {
+          "ja": "任せる",
+          "reading": "まかせる",
+          "kanjiReading": "まか",
+          "translation": {
+            "vi": "giao phó",
+            "en": "to entrust"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "役",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "vai trò; chức vụ",
+        "en": "role; duty"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヤク",
+          "エキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "役所",
+          "reading": "やくしょ",
+          "kanjiReading": "ヤク",
+          "translation": {
+            "vi": "cơ quan hành chính",
+            "en": "government office"
+          }
+        },
+        {
+          "ja": "主役",
+          "reading": "しゅやく",
+          "kanjiReading": "ヤク",
+          "translation": {
+            "vi": "vai chính",
+            "en": "leading role"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "構",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "cấu trúc; bày ra",
+        "en": "structure; set up"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "かま.える",
+          "かま.う"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "構成",
+          "reading": "こうせい",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "cấu thành",
+            "en": "composition"
+          }
+        },
+        {
+          "ja": "構える",
+          "reading": "かまえる",
+          "kanjiReading": "かま",
+          "translation": {
+            "vi": "bày ra; dựng lên",
+            "en": "to set up"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "組",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "tổ; bện; hợp tác",
+        "en": "group; braid"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソ"
+        ],
+        "kunReadings": [
+          "く.む",
+          "くみ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "組織",
+          "reading": "そしき",
+          "kanjiReading": "ソ",
+          "translation": {
+            "vi": "tổ chức",
+            "en": "organization"
+          }
+        },
+        {
+          "ja": "組む",
+          "reading": "くむ",
+          "kanjiReading": "く",
+          "translation": {
+            "vi": "hợp tác; đan",
+            "en": "to cooperate; to braid"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "管",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「管」nghĩa là gì?",
+        "en": "What does 「管」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ống; quản lý",
+            "en": "pipe; manage"
+          },
+          {
+            "vi": "giao phó; nhiệm vụ",
+            "en": "entrust; duty"
+          },
+          {
+            "vi": "vai trò; chức vụ",
+            "en": "role; duty"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 管 nghĩa là ống; quản lý.",
+        "en": "Correct! 管 means pipe; manage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 管 nghĩa là ống; quản lý, như trong 「管理」 (quản lý).",
+        "en": "Not quite. 管 means pipe; manage, as in 「管理」 (management)."
+      }
+    },
+    {
+      "item": "管",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「管」 trong 「管理」 (“quản lý”).",
+        "en": "Type the reading of 「管」 in 「管理」 (“management”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 管理, 管 đọc là かん (âm On).",
+        "en": "Correct! In 管理, 管 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 管理 (quản lý), 管 đọc là かん (âm On).",
+        "en": "In 管理 (management), 管 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "管",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保管」(bảo quản) đọc là gì?",
+        "en": "How is 「保管」 (safekeeping) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほくだ",
+          "ほかん",
+          "ほがん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保管 = ほかん (bảo quản); 管 đọc là かん (âm On).",
+        "en": "Correct! 保管 = ほかん (safekeeping); 管 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "保管 đọc là ほかん (bảo quản): 管 mang âm On かん.",
+        "en": "保管 is read ほかん (safekeeping): 管 takes the on'yomi かん."
+      }
+    },
+    {
+      "item": "任",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「任」nghĩa là gì?",
+        "en": "What does 「任」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vai trò; chức vụ",
+            "en": "role; duty"
+          },
+          {
+            "vi": "giao phó; nhiệm vụ",
+            "en": "entrust; duty"
+          },
+          {
+            "vi": "cấu trúc; bày ra",
+            "en": "structure; set up"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 任 nghĩa là giao phó; nhiệm vụ.",
+        "en": "Correct! 任 means entrust; duty."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 任 nghĩa là giao phó; nhiệm vụ, như trong 「責任」 (trách nhiệm).",
+        "en": "Not quite. 任 means entrust; duty, as in 「責任」 (responsibility)."
+      }
+    },
+    {
+      "item": "任",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「任」 trong 「責任」 (“trách nhiệm”).",
+        "en": "Type the reading of 「任」 in 「責任」 (“responsibility”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "にん",
+          "ニン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 責任, 任 đọc là にん (âm On).",
+        "en": "Correct! In 責任, 任 is read にん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 責任 (trách nhiệm), 任 đọc là にん (âm On).",
+        "en": "In 責任 (responsibility), 任 is read にん (on'yomi)."
+      }
+    },
+    {
+      "item": "任",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「任せる」(giao phó) đọc là gì?",
+        "en": "How is 「任せる」 (to entrust) read?"
+      },
+      "payload": {
+        "choices": [
+          "にんせる",
+          "かまえる",
+          "まかせる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 任せる = まかせる (giao phó); 任 đọc là まか (âm Kun).",
+        "en": "Correct! 任せる = まかせる (to entrust); 任 is read まか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "任せる đọc là まかせる (giao phó): 任 mang âm Kun まか.",
+        "en": "任せる is read まかせる (to entrust): 任 takes the kun'yomi まか."
+      }
+    },
+    {
+      "item": "役",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「役」nghĩa là gì?",
+        "en": "What does 「役」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cấu trúc; bày ra",
+            "en": "structure; set up"
+          },
+          {
+            "vi": "tổ; bện; hợp tác",
+            "en": "group; braid"
+          },
+          {
+            "vi": "vai trò; chức vụ",
+            "en": "role; duty"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 役 nghĩa là vai trò; chức vụ.",
+        "en": "Correct! 役 means role; duty."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 役 nghĩa là vai trò; chức vụ, như trong 「役所」 (cơ quan hành chính).",
+        "en": "Not quite. 役 means role; duty, as in 「役所」 (government office)."
+      }
+    },
+    {
+      "item": "役",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「役」 trong 「役所」 (“cơ quan hành chính”).",
+        "en": "Type the reading of 「役」 in 「役所」 (“government office”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "やく",
+          "ヤク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 役所, 役 đọc là やく (âm On).",
+        "en": "Correct! In 役所, 役 is read やく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 役所 (cơ quan hành chính), 役 đọc là やく (âm On).",
+        "en": "In 役所 (government office), 役 is read やく (on'yomi)."
+      }
+    },
+    {
+      "item": "役",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「主役」(vai chính) đọc là gì?",
+        "en": "How is 「主役」 (leading role) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅやく",
+          "しゅえき",
+          "しゅかま"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 主役 = しゅやく (vai chính); 役 đọc là やく (âm On).",
+        "en": "Correct! 主役 = しゅやく (leading role); 役 is read やく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "主役 đọc là しゅやく (vai chính): 役 mang âm On やく.",
+        "en": "主役 is read しゅやく (leading role): 役 takes the on'yomi やく."
+      }
+    },
+    {
+      "item": "構",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「構」nghĩa là gì?",
+        "en": "What does 「構」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cấu trúc; bày ra",
+            "en": "structure; set up"
+          },
+          {
+            "vi": "tổ; bện; hợp tác",
+            "en": "group; braid"
+          },
+          {
+            "vi": "ống; quản lý",
+            "en": "pipe; manage"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 構 nghĩa là cấu trúc; bày ra.",
+        "en": "Correct! 構 means structure; set up."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 構 nghĩa là cấu trúc; bày ra, như trong 「構成」 (cấu thành).",
+        "en": "Not quite. 構 means structure; set up, as in 「構成」 (composition)."
+      }
+    },
+    {
+      "item": "構",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「構」 trong 「構成」 (“cấu thành”).",
+        "en": "Type the reading of 「構」 in 「構成」 (“composition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 構成, 構 đọc là こう (âm On).",
+        "en": "Correct! In 構成, 構 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 構成 (cấu thành), 構 đọc là こう (âm On).",
+        "en": "In 構成 (composition), 構 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "構",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「構える」(bày ra; dựng lên) đọc là gì?",
+        "en": "How is 「構える」 (to set up) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうえる",
+          "かまえる",
+          "まかせる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 構える = かまえる (bày ra; dựng lên); 構 đọc là かま (âm Kun).",
+        "en": "Correct! 構える = かまえる (to set up); 構 is read かま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "構える đọc là かまえる (bày ra; dựng lên): 構 mang âm Kun かま.",
+        "en": "構える is read かまえる (to set up): 構 takes the kun'yomi かま."
+      }
+    },
+    {
+      "item": "組",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「組」nghĩa là gì?",
+        "en": "What does 「組」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ống; quản lý",
+            "en": "pipe; manage"
+          },
+          {
+            "vi": "tổ; bện; hợp tác",
+            "en": "group; braid"
+          },
+          {
+            "vi": "giao phó; nhiệm vụ",
+            "en": "entrust; duty"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 組 nghĩa là tổ; bện; hợp tác.",
+        "en": "Correct! 組 means group; braid."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 組 nghĩa là tổ; bện; hợp tác, như trong 「組織」 (tổ chức).",
+        "en": "Not quite. 組 means group; braid, as in 「組織」 (organization)."
+      }
+    },
+    {
+      "item": "組",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「組」 trong 「組織」 (“tổ chức”).",
+        "en": "Type the reading of 「組」 in 「組織」 (“organization”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そ",
+          "ソ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 組織, 組 đọc là そ (âm On).",
+        "en": "Correct! In 組織, 組 is read そ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 組織 (tổ chức), 組 đọc là そ (âm On).",
+        "en": "In 組織 (organization), 組 is read そ (on'yomi)."
+      }
+    },
+    {
+      "item": "組",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「組む」(hợp tác; đan) đọc là gì?",
+        "en": "How is 「組む」 (to cooperate; to braid) read?"
+      },
+      "payload": {
+        "choices": [
+          "そむ",
+          "かんり",
+          "くむ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 組む = くむ (hợp tác; đan); 組 đọc là く (âm Kun).",
+        "en": "Correct! 組む = くむ (to cooperate; to braid); 組 is read く (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "組む đọc là くむ (hợp tác; đan): 組 mang âm Kun く.",
+        "en": "組む is read くむ (to cooperate; to braid): 組 takes the kun'yomi く."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "管",
+            {
+              "vi": "ống; quản lý",
+              "en": "pipe; manage"
+            }
+          ],
+          [
+            "任",
+            {
+              "vi": "giao phó; nhiệm vụ",
+              "en": "entrust; duty"
+            }
+          ],
+          [
+            "役",
+            {
+              "vi": "vai trò; chức vụ",
+              "en": "role; duty"
+            }
+          ],
+          [
+            "構",
+            {
+              "vi": "cấu trúc; bày ra",
+              "en": "structure; set up"
+            }
+          ],
+          [
+            "組",
+            {
+              "vi": "tổ; bện; hợp tác",
+              "en": "group; braid"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

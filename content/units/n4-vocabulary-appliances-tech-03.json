@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-appliances-tech",
+  "title": {
+    "vi": "Trang web, đăng ký và sử dụng dịch vụ",
+    "en": "Websites, registering and using services"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2040,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "ホームページ",
+      "reading": "ホームページ",
+      "meaning": {
+        "vi": "Trang web; trang chủ",
+        "en": "Website; home page"
+      },
+      "examples": [
+        {
+          "ja": "会社のホームページで、場所を調べました。",
+          "reading": "かいしゃのホームページで、ばしょをしらべました。",
+          "translation": {
+            "vi": "Tôi đã tra địa điểm trên trang web của công ty.",
+            "en": "I checked the location on the company's website."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "プリンター",
+      "reading": "プリンター",
+      "meaning": {
+        "vi": "Máy in",
+        "en": "Printer"
+      },
+      "examples": [
+        {
+          "ja": "プリンターが壊れて、資料が出せません。",
+          "reading": "プリンターがこわれて、しりょうがだせません。",
+          "translation": {
+            "vi": "Máy in bị hỏng nên tôi không in được tài liệu.",
+            "en": "The printer is broken, so I cannot print the documents."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ボタン",
+      "reading": "ボタン",
+      "meaning": {
+        "vi": "Nút bấm",
+        "en": "Button"
+      },
+      "examples": [
+        {
+          "ja": "水を出すには、このボタンを押してください。",
+          "reading": "みずをだすには、このボタンをおしてください。",
+          "translation": {
+            "vi": "Để nước chảy ra, hãy ấn nút này.",
+            "en": "To let the water out, please press this button."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "登録",
+      "reading": "とうろく",
+      "meaning": {
+        "vi": "Đăng ký",
+        "en": "Registration"
+      },
+      "examples": [
+        {
+          "ja": "ここで名前と住所を登録すると、カードがもらえます。",
+          "reading": "ここでなまえとじゅうしょをとうろくすると、カードがもらえます。",
+          "translation": {
+            "vi": "Đăng ký tên và địa chỉ ở đây thì sẽ được nhận thẻ.",
+            "en": "If you register your name and address here, you will get a card."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "利用",
+      "reading": "りよう",
+      "meaning": {
+        "vi": "Sử dụng; tận dụng",
+        "en": "Use; utilization"
+      },
+      "examples": [
+        {
+          "ja": "この図書館は、だれでも利用することができます。",
+          "reading": "このとしょかんは、だれでもりようすることができます。",
+          "translation": {
+            "vi": "Thư viện này ai cũng có thể sử dụng.",
+            "en": "Anyone can use this library."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "温度",
+      "reading": "おんど",
+      "meaning": {
+        "vi": "Nhiệt độ",
+        "en": "Temperature"
+      },
+      "examples": [
+        {
+          "ja": "部屋の温度が高いので、窓を開けます。",
+          "reading": "へやのおんどがたかいので、まどをあけます。",
+          "translation": {
+            "vi": "Vì nhiệt độ phòng cao nên tôi mở cửa sổ.",
+            "en": "The room temperature is high, so I will open the window."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "ホームページ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の（　）で、場所を調べました。 — Nghĩa của câu: “Tôi đã tra địa điểm trên trang web của công ty.”",
+        "en": "Choose the word that fits the blank: 会社の（　）で、場所を調べました。 — Meaning of the sentence: “I checked the location on the company's website.”"
+      },
+      "payload": {
+        "choices": [
+          "ボタン",
+          "ホームページ",
+          "温度",
+          "プリンター"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ホームページ」(Trang web; trang chủ) hợp nghĩa câu này: “Tôi đã tra địa điểm trên trang web của công ty.”",
+        "en": "Correct! 「ホームページ」(Website; home page) fits this sentence: “I checked the location on the company's website.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã tra địa điểm trên trang web của công ty.”, nên cần 「ホームページ」(Trang web; trang chủ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I checked the location on the company's website.”, so it needs 「ホームページ」(Website; home page); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "プリンター",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）が壊れて、資料が出せません。 — Nghĩa của câu: “Máy in bị hỏng nên tôi không in được tài liệu.”",
+        "en": "Choose the word that fits the blank: （　）が壊れて、資料が出せません。 — Meaning of the sentence: “The printer is broken, so I cannot print the documents.”"
+      },
+      "payload": {
+        "choices": [
+          "ホームページ",
+          "登録",
+          "プリンター",
+          "利用"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プリンター」(Máy in) hợp nghĩa câu này: “Máy in bị hỏng nên tôi không in được tài liệu.”",
+        "en": "Correct! 「プリンター」(Printer) fits this sentence: “The printer is broken, so I cannot print the documents.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy in bị hỏng nên tôi không in được tài liệu.”, nên cần 「プリンター」(Máy in); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The printer is broken, so I cannot print the documents.”, so it needs 「プリンター」(Printer); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ボタン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 水を出すには、この（　）を押してください。 — Nghĩa của câu: “Để nước chảy ra, hãy ấn nút này.”",
+        "en": "Choose the word that fits the blank: 水を出すには、この（　）を押してください。 — Meaning of the sentence: “To let the water out, please press this button.”"
+      },
+      "payload": {
+        "choices": [
+          "温度",
+          "登録",
+          "ホームページ",
+          "ボタン"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ボタン」(Nút bấm) hợp nghĩa câu này: “Để nước chảy ra, hãy ấn nút này.”",
+        "en": "Correct! 「ボタン」(Button) fits this sentence: “To let the water out, please press this button.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để nước chảy ra, hãy ấn nút này.”, nên cần 「ボタン」(Nút bấm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To let the water out, please press this button.”, so it needs 「ボタン」(Button); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "登録",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ここで名前と住所を（　）すると、カードがもらえます。 — Nghĩa của câu: “Đăng ký tên và địa chỉ ở đây thì sẽ được nhận thẻ.”",
+        "en": "Choose the word that fits the blank: ここで名前と住所を（　）すると、カードがもらえます。 — Meaning of the sentence: “If you register your name and address here, you will get a card.”"
+      },
+      "payload": {
+        "choices": [
+          "登録",
+          "プリンター",
+          "ボタン",
+          "温度"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「登録」(Đăng ký) hợp nghĩa câu này: “Đăng ký tên và địa chỉ ở đây thì sẽ được nhận thẻ.”",
+        "en": "Correct! 「登録」(Registration) fits this sentence: “If you register your name and address here, you will get a card.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đăng ký tên và địa chỉ ở đây thì sẽ được nhận thẻ.”, nên cần 「登録」(Đăng ký); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you register your name and address here, you will get a card.”, so it needs 「登録」(Registration); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "利用",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この図書館は、だれでも（　）することができます。 — Nghĩa của câu: “Thư viện này ai cũng có thể sử dụng.”",
+        "en": "Choose the word that fits the blank: この図書館は、だれでも（　）することができます。 — Meaning of the sentence: “Anyone can use this library.”"
+      },
+      "payload": {
+        "choices": [
+          "ホームページ",
+          "利用",
+          "プリンター",
+          "ボタン"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利用」(Sử dụng; tận dụng) hợp nghĩa câu này: “Thư viện này ai cũng có thể sử dụng.”",
+        "en": "Correct! 「利用」(Use; utilization) fits this sentence: “Anyone can use this library.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thư viện này ai cũng có thể sử dụng.”, nên cần 「利用」(Sử dụng; tận dụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Anyone can use this library.”, so it needs 「利用」(Use; utilization); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "温度",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋の（　）が高いので、窓を開けます。 — Nghĩa của câu: “Vì nhiệt độ phòng cao nên tôi mở cửa sổ.”",
+        "en": "Choose the word that fits the blank: 部屋の（　）が高いので、窓を開けます。 — Meaning of the sentence: “The room temperature is high, so I will open the window.”"
+      },
+      "payload": {
+        "choices": [
+          "利用",
+          "登録",
+          "温度",
+          "ボタン"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「温度」(Nhiệt độ) hợp nghĩa câu này: “Vì nhiệt độ phòng cao nên tôi mở cửa sổ.”",
+        "en": "Correct! 「温度」(Temperature) fits this sentence: “The room temperature is high, so I will open the window.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì nhiệt độ phòng cao nên tôi mở cửa sổ.”, nên cần 「温度」(Nhiệt độ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The room temperature is high, so I will open the window.”, so it needs 「温度」(Temperature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "登録",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ここで名前と住所を「登録」すると、カードがもらえます。",
+        "en": "Choose the correct reading of the word in 「」: ここで名前と住所を「登録」すると、カードがもらえます。"
+      },
+      "payload": {
+        "choices": [
+          "りよう",
+          "おんど",
+          "とうろく",
+          "どうろ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「登録」 đọc là 「とうろく」, nghĩa là Đăng ký.",
+        "en": "Correct! 「登録」 is read 「とうろく」 and means Registration."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「登録」 đọc là 「とうろく」 (Đăng ký); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「登録」 is read 「とうろく」 (Registration); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "利用",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この図書館は、だれでも「利用」することができます。",
+        "en": "Choose the correct reading of the word in 「」: この図書館は、だれでも「利用」することができます。"
+      },
+      "payload": {
+        "choices": [
+          "おんど",
+          "とうろく",
+          "りょうり",
+          "りよう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利用」 đọc là 「りよう」, nghĩa là Sử dụng; tận dụng.",
+        "en": "Correct! 「利用」 is read 「りよう」 and means Use; utilization."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「利用」 đọc là 「りよう」 (Sử dụng; tận dụng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「利用」 is read 「りよう」 (Use; utilization); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "温度",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 部屋の「おんど」が高いので、窓を開けます。",
+        "en": "Choose the correct way to write the word in 「」: 部屋の「おんど」が高いので、窓を開けます。"
+      },
+      "payload": {
+        "choices": [
+          "ボタン",
+          "ホームページ",
+          "登録",
+          "温度"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おんど」 viết là 「温度」, nghĩa là Nhiệt độ.",
+        "en": "Correct! 「おんど」 is written 「温度」 and means Temperature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おんど」 viết là 「温度」 (Nhiệt độ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「おんど」 is written 「温度」 (Temperature); the other words are read differently."
+      }
+    }
+  ]
+}

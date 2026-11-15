@@ -1,0 +1,425 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-communication",
+  "title": {
+    "vi": "Kanji giao tiếp – diễn đạt (表 解 確)",
+    "en": "Communication and expression kanji (表 解 確)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "表",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "biểu; bề mặt; bảng",
+        "en": "express; surface; table"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒョウ"
+        ],
+        "kunReadings": [
+          "おもて",
+          "あらわ.す",
+          "あらわ.れる"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "表現",
+          "reading": "ひょうげん",
+          "kanjiReading": "ヒョウ",
+          "translation": {
+            "vi": "biểu hiện",
+            "en": "expression"
+          }
+        },
+        {
+          "ja": "表す",
+          "reading": "あらわす",
+          "kanjiReading": "あらわ",
+          "translation": {
+            "vi": "biểu thị",
+            "en": "to express"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "解",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "giải; hiểu",
+        "en": "solve; understand"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ",
+          "ゲ"
+        ],
+        "kunReadings": [
+          "と.く",
+          "と.ける"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "理解",
+          "reading": "りかい",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "sự hiểu",
+            "en": "understanding"
+          }
+        },
+        {
+          "ja": "解く",
+          "reading": "とく",
+          "kanjiReading": "と",
+          "translation": {
+            "vi": "giải; tháo",
+            "en": "to solve; to untie"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "確",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "chắc; xác nhận",
+        "en": "certain; confirm"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カク"
+        ],
+        "kunReadings": [
+          "たし.か",
+          "たし.かめる"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "正確",
+          "reading": "せいかく",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "chính xác",
+            "en": "accurate"
+          }
+        },
+        {
+          "ja": "確か",
+          "reading": "たしか",
+          "kanjiReading": "たし",
+          "translation": {
+            "vi": "chắc chắn; hình như",
+            "en": "certain; if I remember correctly"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "表",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「表」nghĩa là gì?",
+        "en": "What does 「表」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biểu; bề mặt; bảng",
+            "en": "express; surface; table"
+          },
+          {
+            "vi": "giải; hiểu",
+            "en": "solve; understand"
+          },
+          {
+            "vi": "chắc; xác nhận",
+            "en": "certain; confirm"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 表 nghĩa là biểu; bề mặt; bảng.",
+        "en": "Correct! 表 means express; surface; table."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 表 nghĩa là biểu; bề mặt; bảng, như trong 「表現」 (biểu hiện).",
+        "en": "Not quite. 表 means express; surface; table, as in 「表現」 (expression)."
+      }
+    },
+    {
+      "item": "表",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「表」 trong 「表現」 (“biểu hiện”).",
+        "en": "Type the reading of 「表」 in 「表現」 (“expression”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひょう",
+          "ヒョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 表現, 表 đọc là ひょう (âm On).",
+        "en": "Correct! In 表現, 表 is read ひょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 表現 (biểu hiện), 表 đọc là ひょう (âm On).",
+        "en": "In 表現 (expression), 表 is read ひょう (on'yomi)."
+      }
+    },
+    {
+      "item": "表",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「表す」(biểu thị) đọc là gì?",
+        "en": "How is 「表す」 (to express) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひょうす",
+          "あらわす",
+          "せいかく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 表す = あらわす (biểu thị); 表 đọc là あらわ (âm Kun).",
+        "en": "Correct! 表す = あらわす (to express); 表 is read あらわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "表す đọc là あらわす (biểu thị): 表 mang âm Kun あらわ.",
+        "en": "表す is read あらわす (to express): 表 takes the kun'yomi あらわ."
+      }
+    },
+    {
+      "item": "解",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「解」nghĩa là gì?",
+        "en": "What does 「解」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chắc; xác nhận",
+            "en": "certain; confirm"
+          },
+          {
+            "vi": "giải; hiểu",
+            "en": "solve; understand"
+          },
+          {
+            "vi": "biểu; bề mặt; bảng",
+            "en": "express; surface; table"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 解 nghĩa là giải; hiểu.",
+        "en": "Correct! 解 means solve; understand."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 解 nghĩa là giải; hiểu, như trong 「理解」 (sự hiểu).",
+        "en": "Not quite. 解 means solve; understand, as in 「理解」 (understanding)."
+      }
+    },
+    {
+      "item": "解",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「解」 trong 「理解」 (“sự hiểu”).",
+        "en": "Type the reading of 「解」 in 「理解」 (“understanding”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 理解, 解 đọc là かい (âm On).",
+        "en": "Correct! In 理解, 解 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 理解 (sự hiểu), 解 đọc là かい (âm On).",
+        "en": "In 理解 (understanding), 解 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "解",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「解く」(giải; tháo) đọc là gì?",
+        "en": "How is 「解く」 (to solve; to untie) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいく",
+          "たしか",
+          "とく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 解く = とく (giải; tháo); 解 đọc là と (âm Kun).",
+        "en": "Correct! 解く = とく (to solve; to untie); 解 is read と (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "解く đọc là とく (giải; tháo): 解 mang âm Kun と.",
+        "en": "解く is read とく (to solve; to untie): 解 takes the kun'yomi と."
+      }
+    },
+    {
+      "item": "確",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「確」nghĩa là gì?",
+        "en": "What does 「確」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biểu; bề mặt; bảng",
+            "en": "express; surface; table"
+          },
+          {
+            "vi": "giải; hiểu",
+            "en": "solve; understand"
+          },
+          {
+            "vi": "chắc; xác nhận",
+            "en": "certain; confirm"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 確 nghĩa là chắc; xác nhận.",
+        "en": "Correct! 確 means certain; confirm."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 確 nghĩa là chắc; xác nhận, như trong 「正確」 (chính xác).",
+        "en": "Not quite. 確 means certain; confirm, as in 「正確」 (accurate)."
+      }
+    },
+    {
+      "item": "確",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「確」 trong 「正確」 (“chính xác”).",
+        "en": "Type the reading of 「確」 in 「正確」 (“accurate”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かく",
+          "カク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 正確, 確 đọc là かく (âm On).",
+        "en": "Correct! In 正確, 確 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 正確 (chính xác), 確 đọc là かく (âm On).",
+        "en": "In 正確 (accurate), 確 is read かく (on'yomi)."
+      }
+    },
+    {
+      "item": "確",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「確か」(chắc chắn; hình như) đọc là gì?",
+        "en": "How is 「確か」 (certain; if I remember correctly) read?"
+      },
+      "payload": {
+        "choices": [
+          "たしか",
+          "かくか",
+          "りかい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 確か = たしか (chắc chắn; hình như); 確 đọc là たし (âm Kun).",
+        "en": "Correct! 確か = たしか (certain; if I remember correctly); 確 is read たし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "確か đọc là たしか (chắc chắn; hình như): 確 mang âm Kun たし.",
+        "en": "確か is read たしか (certain; if I remember correctly): 確 takes the kun'yomi たし."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "表",
+            {
+              "vi": "biểu; bề mặt; bảng",
+              "en": "express; surface; table"
+            }
+          ],
+          [
+            "解",
+            {
+              "vi": "giải; hiểu",
+              "en": "solve; understand"
+            }
+          ],
+          [
+            "確",
+            {
+              "vi": "chắc; xác nhận",
+              "en": "certain; confirm"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

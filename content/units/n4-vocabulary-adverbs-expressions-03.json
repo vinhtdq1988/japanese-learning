@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-adverbs-expressions",
+  "title": {
+    "vi": "Phó từ chỉ số lượng, phủ định và liên từ",
+    "en": "Adverbs of amount, negation and connectives"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "大体",
+      "reading": "だいたい",
+      "meaning": {
+        "vi": "Đại khái; khoảng chừng",
+        "en": "Roughly; approximately"
+      },
+      "examples": [
+        {
+          "ja": "駅から家まで、大体十分ぐらいです。",
+          "reading": "えきからいえまで、だいたいじゅっぷんぐらいです。",
+          "translation": {
+            "vi": "Từ ga đến nhà mất khoảng chừng 10 phút.",
+            "en": "It takes roughly ten minutes from the station to my house."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "全く",
+      "reading": "まったく",
+      "meaning": {
+        "vi": "Hoàn toàn (không)",
+        "en": "Not at all; completely"
+      },
+      "examples": [
+        {
+          "ja": "彼の言っていることが、全くわかりません。",
+          "reading": "かれのいっていることが、まったくわかりません。",
+          "translation": {
+            "vi": "Tôi hoàn toàn không hiểu những gì anh ấy nói.",
+            "en": "I do not understand what he is saying at all."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "殆ど",
+      "reading": "ほとんど",
+      "meaning": {
+        "vi": "Hầu như",
+        "en": "Almost; nearly all"
+      },
+      "examples": [
+        {
+          "ja": "夏休みは、殆ど毎日、プールへ行きました。",
+          "reading": "なつやすみは、ほとんどまいにち、プールへいきました。",
+          "translation": {
+            "vi": "Kỳ nghỉ hè, tôi đi bơi hầu như mỗi ngày.",
+            "en": "During the summer vacation, I went to the pool almost every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "別に",
+      "reading": "べつに",
+      "meaning": {
+        "vi": "Không có gì đặc biệt",
+        "en": "Not particularly; nothing special"
+      },
+      "examples": [
+        {
+          "ja": "「どうしたの」「別に、何でもないよ」",
+          "reading": "「どうしたの」「べつに、なんでもないよ」",
+          "translation": {
+            "vi": "“Sao vậy?” “Không có gì đặc biệt, không sao đâu.”",
+            "en": "“What's wrong?” “Nothing in particular; it's nothing.”"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "meaning": {
+        "vi": "Hết sức; cố gắng hết mình",
+        "en": "With all one's might; very hard"
+      },
+      "examples": [
+        {
+          "ja": "試験に合格するために、一生懸命勉強しています。",
+          "reading": "しけんにごうかくするために、いっしょうけんめいべんきょうしています。",
+          "translation": {
+            "vi": "Tôi đang học hết sức mình để đỗ kỳ thi.",
+            "en": "I am studying as hard as I can in order to pass the exam."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "それに",
+      "reading": "それに",
+      "meaning": {
+        "vi": "Hơn nữa; thêm vào đó",
+        "en": "Besides; moreover"
+      },
+      "examples": [
+        {
+          "ja": "この店は、安いし、おいしいし、それに店員も親切です。",
+          "reading": "このみせは、やすいし、おいしいし、それにてんいんもしんせつです。",
+          "translation": {
+            "vi": "Quán này vừa rẻ, vừa ngon, hơn nữa nhân viên cũng tử tế.",
+            "en": "This shop is cheap and tasty, and besides, the staff are kind."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "大体",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅から家まで、（　）十分ぐらいです。 — Nghĩa của câu: “Từ ga đến nhà mất khoảng chừng 10 phút.”",
+        "en": "Choose the word that fits the blank: 駅から家まで、（　）十分ぐらいです。 — Meaning of the sentence: “It takes roughly ten minutes from the station to my house.”"
+      },
+      "payload": {
+        "choices": [
+          "全く",
+          "別に",
+          "一生懸命",
+          "大体"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大体」(Đại khái; khoảng chừng) hợp nghĩa câu này: “Từ ga đến nhà mất khoảng chừng 10 phút.”",
+        "en": "Correct! 「大体」(Roughly; approximately) fits this sentence: “It takes roughly ten minutes from the station to my house.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ ga đến nhà mất khoảng chừng 10 phút.”, nên cần 「大体」(Đại khái; khoảng chừng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It takes roughly ten minutes from the station to my house.”, so it needs 「大体」(Roughly; approximately); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "全く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼の言っていることが、（　）わかりません。 — Nghĩa của câu: “Tôi hoàn toàn không hiểu những gì anh ấy nói.”",
+        "en": "Choose the word that fits the blank: 彼の言っていることが、（　）わかりません。 — Meaning of the sentence: “I do not understand what he is saying at all.”"
+      },
+      "payload": {
+        "choices": [
+          "全く",
+          "大体",
+          "別に",
+          "それに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「全く」(Hoàn toàn (không)) hợp nghĩa câu này: “Tôi hoàn toàn không hiểu những gì anh ấy nói.”",
+        "en": "Correct! 「全く」(Not at all; completely) fits this sentence: “I do not understand what he is saying at all.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi hoàn toàn không hiểu những gì anh ấy nói.”, nên cần 「全く」(Hoàn toàn (không)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I do not understand what he is saying at all.”, so it needs 「全く」(Not at all; completely); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "殆ど",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夏休みは、（　）毎日、プールへ行きました。 — Nghĩa của câu: “Kỳ nghỉ hè, tôi đi bơi hầu như mỗi ngày.”",
+        "en": "Choose the word that fits the blank: 夏休みは、（　）毎日、プールへ行きました。 — Meaning of the sentence: “During the summer vacation, I went to the pool almost every day.”"
+      },
+      "payload": {
+        "choices": [
+          "別に",
+          "殆ど",
+          "一生懸命",
+          "それに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「殆ど」(Hầu như) hợp nghĩa câu này: “Kỳ nghỉ hè, tôi đi bơi hầu như mỗi ngày.”",
+        "en": "Correct! 「殆ど」(Almost; nearly all) fits this sentence: “During the summer vacation, I went to the pool almost every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kỳ nghỉ hè, tôi đi bơi hầu như mỗi ngày.”, nên cần 「殆ど」(Hầu như); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “During the summer vacation, I went to the pool almost every day.”, so it needs 「殆ど」(Almost; nearly all); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "別に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 「どうしたの」「（　）、何でもないよ」 — Nghĩa của câu: ““Sao vậy?” “Không có gì đặc biệt, không sao đâu.””",
+        "en": "Choose the word that fits the blank: 「どうしたの」「（　）、何でもないよ」 — Meaning of the sentence: ““What's wrong?” “Nothing in particular; it's nothing.””"
+      },
+      "payload": {
+        "choices": [
+          "大体",
+          "殆ど",
+          "別に",
+          "一生懸命"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「別に」(Không có gì đặc biệt) hợp nghĩa câu này: ““Sao vậy?” “Không có gì đặc biệt, không sao đâu.””",
+        "en": "Correct! 「別に」(Not particularly; nothing special) fits this sentence: ““What's wrong?” “Nothing in particular; it's nothing.””"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là ““Sao vậy?” “Không có gì đặc biệt, không sao đâu.””, nên cần 「別に」(Không có gì đặc biệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means ““What's wrong?” “Nothing in particular; it's nothing.””, so it needs 「別に」(Not particularly; nothing special); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一生懸命",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試験に合格するために、（　）勉強しています。 — Nghĩa của câu: “Tôi đang học hết sức mình để đỗ kỳ thi.”",
+        "en": "Choose the word that fits the blank: 試験に合格するために、（　）勉強しています。 — Meaning of the sentence: “I am studying as hard as I can in order to pass the exam.”"
+      },
+      "payload": {
+        "choices": [
+          "全く",
+          "別に",
+          "大体",
+          "一生懸命"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一生懸命」(Hết sức; cố gắng hết mình) hợp nghĩa câu này: “Tôi đang học hết sức mình để đỗ kỳ thi.”",
+        "en": "Correct! 「一生懸命」(With all one's might; very hard) fits this sentence: “I am studying as hard as I can in order to pass the exam.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đang học hết sức mình để đỗ kỳ thi.”, nên cần 「一生懸命」(Hết sức; cố gắng hết mình); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am studying as hard as I can in order to pass the exam.”, so it needs 「一生懸命」(With all one's might; very hard); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "それに",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店は、安いし、おいしいし、（　）店員も親切です。 — Nghĩa của câu: “Quán này vừa rẻ, vừa ngon, hơn nữa nhân viên cũng tử tế.”",
+        "en": "Choose the word that fits the blank: この店は、安いし、おいしいし、（　）店員も親切です。 — Meaning of the sentence: “This shop is cheap and tasty, and besides, the staff are kind.”"
+      },
+      "payload": {
+        "choices": [
+          "それに",
+          "殆ど",
+          "全く",
+          "別に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「それに」(Hơn nữa; thêm vào đó) hợp nghĩa câu này: “Quán này vừa rẻ, vừa ngon, hơn nữa nhân viên cũng tử tế.”",
+        "en": "Correct! 「それに」(Besides; moreover) fits this sentence: “This shop is cheap and tasty, and besides, the staff are kind.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quán này vừa rẻ, vừa ngon, hơn nữa nhân viên cũng tử tế.”, nên cần 「それに」(Hơn nữa; thêm vào đó); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This shop is cheap and tasty, and besides, the staff are kind.”, so it needs 「それに」(Besides; moreover); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大体",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 駅から家まで、「大体」十分ぐらいです。",
+        "en": "Choose the correct reading of the word in 「」: 駅から家まで、「大体」十分ぐらいです。"
+      },
+      "payload": {
+        "choices": [
+          "だいたい",
+          "まったく",
+          "ほとんど",
+          "いっしょうけんめい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大体」 đọc là 「だいたい」, nghĩa là Đại khái; khoảng chừng.",
+        "en": "Correct! 「大体」 is read 「だいたい」 and means Roughly; approximately."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「大体」 đọc là 「だいたい」 (Đại khái; khoảng chừng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「大体」 is read 「だいたい」 (Roughly; approximately); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "殆ど",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 夏休みは、「殆ど」毎日、プールへ行きました。",
+        "en": "Choose the correct reading of the word in 「」: 夏休みは、「殆ど」毎日、プールへ行きました。"
+      },
+      "payload": {
+        "choices": [
+          "だいたい",
+          "ほとんど",
+          "それに",
+          "いっしょうけんめい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「殆ど」 đọc là 「ほとんど」, nghĩa là Hầu như.",
+        "en": "Correct! 「殆ど」 is read 「ほとんど」 and means Almost; nearly all."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「殆ど」 đọc là 「ほとんど」 (Hầu như); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「殆ど」 is read 「ほとんど」 (Almost; nearly all); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一生懸命",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 試験に合格するために、「いっしょうけんめい」勉強しています。",
+        "en": "Choose the correct way to write the word in 「」: 試験に合格するために、「いっしょうけんめい」勉強しています。"
+      },
+      "payload": {
+        "choices": [
+          "殆ど",
+          "一生懸命",
+          "大体",
+          "全く"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いっしょうけんめい」 viết là 「一生懸命」, nghĩa là Hết sức; cố gắng hết mình.",
+        "en": "Correct! 「いっしょうけんめい」 is written 「一生懸命」 and means With all one's might; very hard."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いっしょうけんめい」 viết là 「一生懸命」 (Hết sức; cố gắng hết mình); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いっしょうけんめい」 is written 「一生懸命」 (With all one's might; very hard); the other words are read differently."
+      }
+    }
+  ]
+}

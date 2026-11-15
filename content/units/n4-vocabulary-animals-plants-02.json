@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-animals-plants",
+  "title": {
+    "vi": "Hoa, quả và việc chăm sóc cây, vật nuôi",
+    "en": "Flowers, fruit and caring for plants and pets"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "桜",
+      "reading": "さくら",
+      "meaning": {
+        "vi": "Hoa anh đào",
+        "en": "Cherry blossom; cherry tree"
+      },
+      "examples": [
+        {
+          "ja": "春になると、日本中で桜がきれいに見られます。",
+          "reading": "はるになると、にほんじゅうでさくらがきれいにみられます。",
+          "translation": {
+            "vi": "Hễ đến mùa xuân, khắp nước Nhật có thể ngắm hoa anh đào rất đẹp.",
+            "en": "When spring comes, cherry blossoms can be seen beautifully all over Japan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "果物",
+      "reading": "くだもの",
+      "meaning": {
+        "vi": "Trái cây",
+        "en": "Fruit"
+      },
+      "examples": [
+        {
+          "ja": "果物の中では、りんごとみかんが好きです。",
+          "reading": "くだもののなかでは、りんごとみかんがすきです。",
+          "translation": {
+            "vi": "Trong các loại trái cây, tôi thích táo và quýt.",
+            "en": "Among fruits, I like apples and mandarin oranges."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "咲く",
+      "reading": "さく",
+      "meaning": {
+        "vi": "Nở (hoa)",
+        "en": "To bloom"
+      },
+      "examples": [
+        {
+          "ja": "春になると、庭にきれいな花が咲くようになります。",
+          "reading": "はるになると、にわにきれいなはながさくようになります。",
+          "translation": {
+            "vi": "Hễ đến mùa xuân thì ở sân vườn hoa đẹp bắt đầu nở.",
+            "en": "When spring comes, beautiful flowers begin to bloom in the garden."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "育てる",
+      "reading": "そだてる",
+      "meaning": {
+        "vi": "Nuôi dạy; trồng; chăm sóc",
+        "en": "To raise; to grow; to bring up"
+      },
+      "examples": [
+        {
+          "ja": "子どもを育てるのは、とても大変ですが、うれしいです。",
+          "reading": "こどもをそだてるのは、とてもたいへんですが、うれしいです。",
+          "translation": {
+            "vi": "Nuôi dạy con cái rất vất vả nhưng vui.",
+            "en": "Raising a child is very hard, but it is joyful."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "飼う",
+      "reading": "かう",
+      "meaning": {
+        "vi": "Nuôi (thú cưng, gia súc)",
+        "en": "To keep (a pet); to raise (an animal)"
+      },
+      "examples": [
+        {
+          "ja": "マンションでは、犬を飼うことができません。",
+          "reading": "マンションでは、いぬをかうことができません。",
+          "translation": {
+            "vi": "Ở chung cư thì không được nuôi chó.",
+            "en": "You cannot keep a dog in this apartment building."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "枯れる",
+      "reading": "かれる",
+      "meaning": {
+        "vi": "Héo; úa; khô chết",
+        "en": "To wither; to die (of plants)"
+      },
+      "examples": [
+        {
+          "ja": "水をやらないと、花が枯れるかもしれません。",
+          "reading": "みずをやらないと、はながかれるかもしれません。",
+          "translation": {
+            "vi": "Nếu không tưới nước thì hoa có thể héo.",
+            "en": "If you do not give them water, the flowers may wither."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "桜",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 春になると、日本中で（　）がきれいに見られます。 — Nghĩa của câu: “Hễ đến mùa xuân, khắp nước Nhật có thể ngắm hoa anh đào rất đẹp.”",
+        "en": "Choose the word that fits the blank: 春になると、日本中で（　）がきれいに見られます。 — Meaning of the sentence: “When spring comes, cherry blossoms can be seen beautifully all over Japan.”"
+      },
+      "payload": {
+        "choices": [
+          "果物",
+          "飼う",
+          "枯れる",
+          "桜"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「桜」(Hoa anh đào) hợp nghĩa câu này: “Hễ đến mùa xuân, khắp nước Nhật có thể ngắm hoa anh đào rất đẹp.”",
+        "en": "Correct! 「桜」(Cherry blossom; cherry tree) fits this sentence: “When spring comes, cherry blossoms can be seen beautifully all over Japan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hễ đến mùa xuân, khắp nước Nhật có thể ngắm hoa anh đào rất đẹp.”, nên cần 「桜」(Hoa anh đào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When spring comes, cherry blossoms can be seen beautifully all over Japan.”, so it needs 「桜」(Cherry blossom; cherry tree); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "果物",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の中では、りんごとみかんが好きです。 — Nghĩa của câu: “Trong các loại trái cây, tôi thích táo và quýt.”",
+        "en": "Choose the word that fits the blank: （　）の中では、りんごとみかんが好きです。 — Meaning of the sentence: “Among fruits, I like apples and mandarin oranges.”"
+      },
+      "payload": {
+        "choices": [
+          "果物",
+          "桜",
+          "育てる",
+          "咲く"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「果物」(Trái cây) hợp nghĩa câu này: “Trong các loại trái cây, tôi thích táo và quýt.”",
+        "en": "Correct! 「果物」(Fruit) fits this sentence: “Among fruits, I like apples and mandarin oranges.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong các loại trái cây, tôi thích táo và quýt.”, nên cần 「果物」(Trái cây); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Among fruits, I like apples and mandarin oranges.”, so it needs 「果物」(Fruit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "咲く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 春になると、庭にきれいな花が（　）ようになります。 — Nghĩa của câu: “Hễ đến mùa xuân thì ở sân vườn hoa đẹp bắt đầu nở.”",
+        "en": "Choose the word that fits the blank: 春になると、庭にきれいな花が（　）ようになります。 — Meaning of the sentence: “When spring comes, beautiful flowers begin to bloom in the garden.”"
+      },
+      "payload": {
+        "choices": [
+          "桜",
+          "咲く",
+          "飼う",
+          "育てる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「咲く」(Nở (hoa)) hợp nghĩa câu này: “Hễ đến mùa xuân thì ở sân vườn hoa đẹp bắt đầu nở.”",
+        "en": "Correct! 「咲く」(To bloom) fits this sentence: “When spring comes, beautiful flowers begin to bloom in the garden.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hễ đến mùa xuân thì ở sân vườn hoa đẹp bắt đầu nở.”, nên cần 「咲く」(Nở (hoa)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When spring comes, beautiful flowers begin to bloom in the garden.”, so it needs 「咲く」(To bloom); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "育てる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもを（　）のは、とても大変ですが、うれしいです。 — Nghĩa của câu: “Nuôi dạy con cái rất vất vả nhưng vui.”",
+        "en": "Choose the word that fits the blank: 子どもを（　）のは、とても大変ですが、うれしいです。 — Meaning of the sentence: “Raising a child is very hard, but it is joyful.”"
+      },
+      "payload": {
+        "choices": [
+          "咲く",
+          "枯れる",
+          "育てる",
+          "桜"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「育てる」(Nuôi dạy; trồng; chăm sóc) hợp nghĩa câu này: “Nuôi dạy con cái rất vất vả nhưng vui.”",
+        "en": "Correct! 「育てる」(To raise; to grow; to bring up) fits this sentence: “Raising a child is very hard, but it is joyful.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nuôi dạy con cái rất vất vả nhưng vui.”, nên cần 「育てる」(Nuôi dạy; trồng; chăm sóc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Raising a child is very hard, but it is joyful.”, so it needs 「育てる」(To raise; to grow; to bring up); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "飼う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: マンションでは、犬を（　）ことができません。 — Nghĩa của câu: “Ở chung cư thì không được nuôi chó.”",
+        "en": "Choose the word that fits the blank: マンションでは、犬を（　）ことができません。 — Meaning of the sentence: “You cannot keep a dog in this apartment building.”"
+      },
+      "payload": {
+        "choices": [
+          "桜",
+          "果物",
+          "咲く",
+          "飼う"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「飼う」(Nuôi (thú cưng, gia súc)) hợp nghĩa câu này: “Ở chung cư thì không được nuôi chó.”",
+        "en": "Correct! 「飼う」(To keep (a pet); to raise (an animal)) fits this sentence: “You cannot keep a dog in this apartment building.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở chung cư thì không được nuôi chó.”, nên cần 「飼う」(Nuôi (thú cưng, gia súc)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You cannot keep a dog in this apartment building.”, so it needs 「飼う」(To keep (a pet); to raise (an animal)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "枯れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 水をやらないと、花が（　）かもしれません。 — Nghĩa của câu: “Nếu không tưới nước thì hoa có thể héo.”",
+        "en": "Choose the word that fits the blank: 水をやらないと、花が（　）かもしれません。 — Meaning of the sentence: “If you do not give them water, the flowers may wither.”"
+      },
+      "payload": {
+        "choices": [
+          "枯れる",
+          "桜",
+          "果物",
+          "飼う"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「枯れる」(Héo; úa; khô chết) hợp nghĩa câu này: “Nếu không tưới nước thì hoa có thể héo.”",
+        "en": "Correct! 「枯れる」(To wither; to die (of plants)) fits this sentence: “If you do not give them water, the flowers may wither.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu không tưới nước thì hoa có thể héo.”, nên cần 「枯れる」(Héo; úa; khô chết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you do not give them water, the flowers may wither.”, so it needs 「枯れる」(To wither; to die (of plants)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "桜",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 春になると、日本中で「桜」がきれいに見られます。",
+        "en": "Choose the correct reading of the word in 「」: 春になると、日本中で「桜」がきれいに見られます。"
+      },
+      "payload": {
+        "choices": [
+          "さくら",
+          "かう",
+          "かれる",
+          "そだてる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「桜」 đọc là 「さくら」, nghĩa là Hoa anh đào.",
+        "en": "Correct! 「桜」 is read 「さくら」 and means Cherry blossom; cherry tree."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「桜」 đọc là 「さくら」 (Hoa anh đào); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「桜」 is read 「さくら」 (Cherry blossom; cherry tree); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "育てる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 子どもを「育てる」のは、とても大変ですが、うれしいです。",
+        "en": "Choose the correct reading of the word in 「」: 子どもを「育てる」のは、とても大変ですが、うれしいです。"
+      },
+      "payload": {
+        "choices": [
+          "さく",
+          "そだてる",
+          "くだもの",
+          "かれる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「育てる」 đọc là 「そだてる」, nghĩa là Nuôi dạy; trồng; chăm sóc.",
+        "en": "Correct! 「育てる」 is read 「そだてる」 and means To raise; to grow; to bring up."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「育てる」 đọc là 「そだてる」 (Nuôi dạy; trồng; chăm sóc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「育てる」 is read 「そだてる」 (To raise; to grow; to bring up); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "枯れる",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 水をやらないと、花が「かれる」かもしれません。",
+        "en": "Choose the correct way to write the word in 「」: 水をやらないと、花が「かれる」かもしれません。"
+      },
+      "payload": {
+        "choices": [
+          "飼う",
+          "枯れる",
+          "咲く",
+          "育てる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かれる」 viết là 「枯れる」, nghĩa là Héo; úa; khô chết.",
+        "en": "Correct! 「かれる」 is written 「枯れる」 and means To wither; to die (of plants)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かれる」 viết là 「枯れる」 (Héo; úa; khô chết); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かれる」 is written 「枯れる」 (To wither; to die (of plants)); the other words are read differently."
+      }
+    }
+  ]
+}

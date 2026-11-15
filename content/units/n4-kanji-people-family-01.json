@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-people-family",
+  "title": {
+    "vi": "Kanji con người – gia đình (者 主 私)",
+    "en": "People and family kanji (者 主 私)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "者",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "người; kẻ",
+        "en": "person"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シャ"
+        ],
+        "kunReadings": [
+          "もの"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "医者",
+          "reading": "いしゃ",
+          "kanjiReading": "シャ",
+          "translation": {
+            "vi": "bác sĩ",
+            "en": "doctor"
+          }
+        },
+        {
+          "ja": "若者",
+          "reading": "わかもの",
+          "kanjiReading": "もの",
+          "translation": {
+            "vi": "người trẻ",
+            "en": "young person"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "主",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "chủ; chính",
+        "en": "master; main"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュ",
+          "ス"
+        ],
+        "kunReadings": [
+          "ぬし",
+          "おも"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "主人",
+          "reading": "しゅじん",
+          "kanjiReading": "シュ",
+          "translation": {
+            "vi": "chồng; chủ nhà",
+            "en": "husband; master"
+          }
+        },
+        {
+          "ja": "主な",
+          "reading": "おもな",
+          "kanjiReading": "おも",
+          "translation": {
+            "vi": "chính; chủ yếu",
+            "en": "main; chief"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "私",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "tôi; riêng tư",
+        "en": "I; private"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "わたし",
+          "わたくし"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "私立",
+          "reading": "しりつ",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "tư lập",
+            "en": "private (school)"
+          }
+        },
+        {
+          "ja": "私服",
+          "reading": "しふく",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "quần áo thường (không đồng phục)",
+            "en": "casual clothes"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "者",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「者」nghĩa là gì?",
+        "en": "What does 「者」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "người; kẻ",
+            "en": "person"
+          },
+          {
+            "vi": "chủ; chính",
+            "en": "master; main"
+          },
+          {
+            "vi": "tôi; riêng tư",
+            "en": "I; private"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 者 nghĩa là người; kẻ.",
+        "en": "Correct! 者 means person."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 者 nghĩa là người; kẻ, như trong 「医者」 (bác sĩ).",
+        "en": "Not quite. 者 means person, as in 「医者」 (doctor)."
+      }
+    },
+    {
+      "item": "者",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「者」 trong 「医者」 (“bác sĩ”).",
+        "en": "Type the reading of 「者」 in 「医者」 (“doctor”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゃ",
+          "シャ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 医者, 者 đọc là しゃ (âm On).",
+        "en": "Correct! In 医者, 者 is read しゃ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 医者 (bác sĩ), 者 đọc là しゃ (âm On).",
+        "en": "In 医者 (doctor), 者 is read しゃ (on'yomi)."
+      }
+    },
+    {
+      "item": "者",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「若者」(người trẻ) đọc là gì?",
+        "en": "How is 「若者」 (young person) read?"
+      },
+      "payload": {
+        "choices": [
+          "わかしゃ",
+          "わかもの",
+          "わがもの"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 若者 = わかもの (người trẻ); 者 đọc là もの (âm Kun).",
+        "en": "Correct! 若者 = わかもの (young person); 者 is read もの (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "若者 đọc là わかもの (người trẻ): 者 mang âm Kun もの.",
+        "en": "若者 is read わかもの (young person): 者 takes the kun'yomi もの."
+      }
+    },
+    {
+      "item": "主",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「主」nghĩa là gì?",
+        "en": "What does 「主」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tôi; riêng tư",
+            "en": "I; private"
+          },
+          {
+            "vi": "chủ; chính",
+            "en": "master; main"
+          },
+          {
+            "vi": "người; kẻ",
+            "en": "person"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 主 nghĩa là chủ; chính.",
+        "en": "Correct! 主 means master; main."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 主 nghĩa là chủ; chính, như trong 「主人」 (chồng; chủ nhà).",
+        "en": "Not quite. 主 means master; main, as in 「主人」 (husband; master)."
+      }
+    },
+    {
+      "item": "主",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「主」 trong 「主人」 (“chồng; chủ nhà”).",
+        "en": "Type the reading of 「主」 in 「主人」 (“husband; master”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅ",
+          "シュ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 主人, 主 đọc là しゅ (âm On).",
+        "en": "Correct! In 主人, 主 is read しゅ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 主人 (chồng; chủ nhà), 主 đọc là しゅ (âm On).",
+        "en": "In 主人 (husband; master), 主 is read しゅ (on'yomi)."
+      }
+    },
+    {
+      "item": "主",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「主な」(chính; chủ yếu) đọc là gì?",
+        "en": "How is 「主な」 (main; chief) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅな",
+          "しりつ",
+          "おもな"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 主な = おもな (chính; chủ yếu); 主 đọc là おも (âm Kun).",
+        "en": "Correct! 主な = おもな (main; chief); 主 is read おも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "主な đọc là おもな (chính; chủ yếu): 主 mang âm Kun おも.",
+        "en": "主な is read おもな (main; chief): 主 takes the kun'yomi おも."
+      }
+    },
+    {
+      "item": "私",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「私」nghĩa là gì?",
+        "en": "What does 「私」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "người; kẻ",
+            "en": "person"
+          },
+          {
+            "vi": "chủ; chính",
+            "en": "master; main"
+          },
+          {
+            "vi": "tôi; riêng tư",
+            "en": "I; private"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 私 nghĩa là tôi; riêng tư.",
+        "en": "Correct! 私 means I; private."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 私 nghĩa là tôi; riêng tư, như trong 「私立」 (tư lập).",
+        "en": "Not quite. 私 means I; private, as in 「私立」 (private (school))."
+      }
+    },
+    {
+      "item": "私",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「私」 trong 「私立」 (“tư lập”).",
+        "en": "Type the reading of 「私」 in 「私立」 (“private (school)”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 私立, 私 đọc là し (âm On).",
+        "en": "Correct! In 私立, 私 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 私立 (tư lập), 私 đọc là し (âm On).",
+        "en": "In 私立 (private (school)), 私 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "私",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「私服」(quần áo thường (không đồng phục)) đọc là gì?",
+        "en": "How is 「私服」 (casual clothes) read?"
+      },
+      "payload": {
+        "choices": [
+          "しふく",
+          "わたしふく",
+          "じふく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 私服 = しふく (quần áo thường (không đồng phục)); 私 đọc là し (âm On).",
+        "en": "Correct! 私服 = しふく (casual clothes); 私 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "私服 đọc là しふく (quần áo thường (không đồng phục)): 私 mang âm On し.",
+        "en": "私服 is read しふく (casual clothes): 私 takes the on'yomi し."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "者",
+            {
+              "vi": "người; kẻ",
+              "en": "person"
+            }
+          ],
+          [
+            "主",
+            {
+              "vi": "chủ; chính",
+              "en": "master; main"
+            }
+          ],
+          [
+            "私",
+            {
+              "vi": "tôi; riêng tư",
+              "en": "I; private"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

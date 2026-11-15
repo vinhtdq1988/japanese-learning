@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (責 危 険)",
+    "en": "Law and order kanji (責 危 険)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1530,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "責",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "trách; trách nhiệm",
+        "en": "blame; duty"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ"
+        ],
+        "kunReadings": [
+          "せ.める"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "責任",
+          "reading": "せきにん",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "trách nhiệm",
+            "en": "responsibility"
+          }
+        },
+        {
+          "ja": "責める",
+          "reading": "せめる",
+          "kanjiReading": "せ",
+          "translation": {
+            "vi": "trách móc",
+            "en": "to blame"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "危",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "nguy; nguy hiểm",
+        "en": "dangerous"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [
+          "あぶ.ない",
+          "あや.うい"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "危険",
+          "reading": "きけん",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "nguy hiểm",
+            "en": "danger"
+          }
+        },
+        {
+          "ja": "危ない",
+          "reading": "あぶない",
+          "kanjiReading": "あぶ",
+          "translation": {
+            "vi": "nguy hiểm",
+            "en": "dangerous"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "険",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "hiểm; dốc",
+        "en": "steep; dangerous"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [
+          "けわ.しい"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "危険",
+          "reading": "きけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "nguy hiểm",
+            "en": "danger"
+          }
+        },
+        {
+          "ja": "保険",
+          "reading": "ほけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "bảo hiểm",
+            "en": "insurance"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "責",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「責」nghĩa là gì?",
+        "en": "What does 「責」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trách; trách nhiệm",
+            "en": "blame; duty"
+          },
+          {
+            "vi": "nguy; nguy hiểm",
+            "en": "dangerous"
+          },
+          {
+            "vi": "hiểm; dốc",
+            "en": "steep; dangerous"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 責 nghĩa là trách; trách nhiệm.",
+        "en": "Correct! 責 means blame; duty."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 責 nghĩa là trách; trách nhiệm, như trong 「責任」 (trách nhiệm).",
+        "en": "Not quite. 責 means blame; duty, as in 「責任」 (responsibility)."
+      }
+    },
+    {
+      "item": "責",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「責」 trong 「責任」 (“trách nhiệm”).",
+        "en": "Type the reading of 「責」 in 「責任」 (“responsibility”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せき",
+          "セキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 責任, 責 đọc là せき (âm On).",
+        "en": "Correct! In 責任, 責 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 責任 (trách nhiệm), 責 đọc là せき (âm On).",
+        "en": "In 責任 (responsibility), 責 is read せき (on'yomi)."
+      }
+    },
+    {
+      "item": "責",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「責める」(trách móc) đọc là gì?",
+        "en": "How is 「責める」 (to blame) read?"
+      },
+      "payload": {
+        "choices": [
+          "せきめる",
+          "せめる",
+          "きけん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 責める = せめる (trách móc); 責 đọc là せ (âm Kun).",
+        "en": "Correct! 責める = せめる (to blame); 責 is read せ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "責める đọc là せめる (trách móc): 責 mang âm Kun せ.",
+        "en": "責める is read せめる (to blame): 責 takes the kun'yomi せ."
+      }
+    },
+    {
+      "item": "危",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「危」nghĩa là gì?",
+        "en": "What does 「危」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hiểm; dốc",
+            "en": "steep; dangerous"
+          },
+          {
+            "vi": "nguy; nguy hiểm",
+            "en": "dangerous"
+          },
+          {
+            "vi": "trách; trách nhiệm",
+            "en": "blame; duty"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 危 nghĩa là nguy; nguy hiểm.",
+        "en": "Correct! 危 means dangerous."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 危 nghĩa là nguy; nguy hiểm, như trong 「危険」 (nguy hiểm).",
+        "en": "Not quite. 危 means dangerous, as in 「危険」 (danger)."
+      }
+    },
+    {
+      "item": "危",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「危」 trong 「危険」 (“nguy hiểm”).",
+        "en": "Type the reading of 「危」 in 「危険」 (“danger”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 危険, 危 đọc là き (âm On).",
+        "en": "Correct! In 危険, 危 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 危険 (nguy hiểm), 危 đọc là き (âm On).",
+        "en": "In 危険 (danger), 危 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "危",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「危ない」(nguy hiểm) đọc là gì?",
+        "en": "How is 「危ない」 (dangerous) read?"
+      },
+      "payload": {
+        "choices": [
+          "きない",
+          "せきにん",
+          "あぶない"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 危ない = あぶない (nguy hiểm); 危 đọc là あぶ (âm Kun).",
+        "en": "Correct! 危ない = あぶない (dangerous); 危 is read あぶ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "危ない đọc là あぶない (nguy hiểm): 危 mang âm Kun あぶ.",
+        "en": "危ない is read あぶない (dangerous): 危 takes the kun'yomi あぶ."
+      }
+    },
+    {
+      "item": "険",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「険」nghĩa là gì?",
+        "en": "What does 「険」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trách; trách nhiệm",
+            "en": "blame; duty"
+          },
+          {
+            "vi": "nguy; nguy hiểm",
+            "en": "dangerous"
+          },
+          {
+            "vi": "hiểm; dốc",
+            "en": "steep; dangerous"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 険 nghĩa là hiểm; dốc.",
+        "en": "Correct! 険 means steep; dangerous."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 険 nghĩa là hiểm; dốc, như trong 「危険」 (nguy hiểm).",
+        "en": "Not quite. 険 means steep; dangerous, as in 「危険」 (danger)."
+      }
+    },
+    {
+      "item": "険",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「険」 trong 「危険」 (“nguy hiểm”).",
+        "en": "Type the reading of 「険」 in 「危険」 (“danger”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 危険, 険 đọc là けん (âm On).",
+        "en": "Correct! In 危険, 険 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 危険 (nguy hiểm), 険 đọc là けん (âm On).",
+        "en": "In 危険 (danger), 険 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "険",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保険」(bảo hiểm) đọc là gì?",
+        "en": "How is 「保険」 (insurance) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほけん",
+          "ほけわ",
+          "ほげん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保険 = ほけん (bảo hiểm); 険 đọc là けん (âm On).",
+        "en": "Correct! 保険 = ほけん (insurance); 険 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "保険 đọc là ほけん (bảo hiểm): 険 mang âm On けん.",
+        "en": "保険 is read ほけん (insurance): 険 takes the on'yomi けん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "責",
+            {
+              "vi": "trách; trách nhiệm",
+              "en": "blame; duty"
+            }
+          ],
+          [
+            "危",
+            {
+              "vi": "nguy; nguy hiểm",
+              "en": "dangerous"
+            }
+          ],
+          [
+            "険",
+            {
+              "vi": "hiểm; dốc",
+              "en": "steep; dangerous"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

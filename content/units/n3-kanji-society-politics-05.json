@@ -1,0 +1,669 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society-politics",
+  "title": {
+    "vi": "Kanji xã hội – chính trị (県 市 内 現 状)",
+    "en": "Society and politics kanji (県 市 内 現 状)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "県",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "tỉnh",
+        "en": "prefecture"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "県庁",
+          "reading": "けんちょう",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "văn phòng tỉnh",
+            "en": "prefectural office"
+          }
+        },
+        {
+          "ja": "県民",
+          "reading": "けんみん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "người dân tỉnh",
+            "en": "prefecture resident"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "市",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "thành phố; chợ",
+        "en": "city; market"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "いち"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "市民",
+          "reading": "しみん",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "công dân thành phố",
+            "en": "citizen"
+          }
+        },
+        {
+          "ja": "市場",
+          "reading": "いちば",
+          "kanjiReading": "いち",
+          "translation": {
+            "vi": "chợ",
+            "en": "market"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "内",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "bên trong; nội",
+        "en": "inside"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ナイ",
+          "ダイ"
+        ],
+        "kunReadings": [
+          "うち"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "国内",
+          "reading": "こくない",
+          "kanjiReading": "ナイ",
+          "translation": {
+            "vi": "trong nước",
+            "en": "domestic"
+          }
+        },
+        {
+          "ja": "内側",
+          "reading": "うちがわ",
+          "kanjiReading": "うち",
+          "translation": {
+            "vi": "phía bên trong",
+            "en": "inner side"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "現",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "hiện; xuất hiện",
+        "en": "present; appear"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン"
+        ],
+        "kunReadings": [
+          "あらわ.れる"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "現在",
+          "reading": "げんざい",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "hiện tại",
+            "en": "present"
+          }
+        },
+        {
+          "ja": "現れる",
+          "reading": "あらわれる",
+          "kanjiReading": "あらわ",
+          "translation": {
+            "vi": "xuất hiện",
+            "en": "to appear"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "状",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "tình trạng; thư",
+        "en": "condition; letter"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "状態",
+          "reading": "じょうたい",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "tình trạng",
+            "en": "condition"
+          }
+        },
+        {
+          "ja": "年賀状",
+          "reading": "ねんがじょう",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "thiệp năm mới",
+            "en": "New Year's card"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "県",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「県」nghĩa là gì?",
+        "en": "What does 「県」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tỉnh",
+            "en": "prefecture"
+          },
+          {
+            "vi": "thành phố; chợ",
+            "en": "city; market"
+          },
+          {
+            "vi": "bên trong; nội",
+            "en": "inside"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 県 nghĩa là tỉnh.",
+        "en": "Correct! 県 means prefecture."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 県 nghĩa là tỉnh, như trong 「県庁」 (văn phòng tỉnh).",
+        "en": "Not quite. 県 means prefecture, as in 「県庁」 (prefectural office)."
+      }
+    },
+    {
+      "item": "県",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「県」 trong 「県庁」 (“văn phòng tỉnh”).",
+        "en": "Type the reading of 「県」 in 「県庁」 (“prefectural office”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 県庁, 県 đọc là けん (âm On).",
+        "en": "Correct! In 県庁, 県 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 県庁 (văn phòng tỉnh), 県 đọc là けん (âm On).",
+        "en": "In 県庁 (prefectural office), 県 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "県",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「県民」(người dân tỉnh) đọc là gì?",
+        "en": "How is 「県民」 (prefecture resident) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんみん",
+          "けんみん",
+          "いちみん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 県民 = けんみん (người dân tỉnh); 県 đọc là けん (âm On).",
+        "en": "Correct! 県民 = けんみん (prefecture resident); 県 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "県民 đọc là けんみん (người dân tỉnh): 県 mang âm On けん.",
+        "en": "県民 is read けんみん (prefecture resident): 県 takes the on'yomi けん."
+      }
+    },
+    {
+      "item": "市",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「市」nghĩa là gì?",
+        "en": "What does 「市」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bên trong; nội",
+            "en": "inside"
+          },
+          {
+            "vi": "thành phố; chợ",
+            "en": "city; market"
+          },
+          {
+            "vi": "hiện; xuất hiện",
+            "en": "present; appear"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 市 nghĩa là thành phố; chợ.",
+        "en": "Correct! 市 means city; market."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 市 nghĩa là thành phố; chợ, như trong 「市民」 (công dân thành phố).",
+        "en": "Not quite. 市 means city; market, as in 「市民」 (citizen)."
+      }
+    },
+    {
+      "item": "市",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「市」 trong 「市民」 (“công dân thành phố”).",
+        "en": "Type the reading of 「市」 in 「市民」 (“citizen”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 市民, 市 đọc là し (âm On).",
+        "en": "Correct! In 市民, 市 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 市民 (công dân thành phố), 市 đọc là し (âm On).",
+        "en": "In 市民 (citizen), 市 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "市",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「市場」(chợ) đọc là gì?",
+        "en": "How is 「市場」 (market) read?"
+      },
+      "payload": {
+        "choices": [
+          "しば",
+          "いちは",
+          "いちば"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 市場 = いちば (chợ); 市 đọc là いち (âm Kun).",
+        "en": "Correct! 市場 = いちば (market); 市 is read いち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "市場 đọc là いちば (chợ): 市 mang âm Kun いち.",
+        "en": "市場 is read いちば (market): 市 takes the kun'yomi いち."
+      }
+    },
+    {
+      "item": "内",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「内」nghĩa là gì?",
+        "en": "What does 「内」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hiện; xuất hiện",
+            "en": "present; appear"
+          },
+          {
+            "vi": "tình trạng; thư",
+            "en": "condition; letter"
+          },
+          {
+            "vi": "bên trong; nội",
+            "en": "inside"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 内 nghĩa là bên trong; nội.",
+        "en": "Correct! 内 means inside."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 内 nghĩa là bên trong; nội, như trong 「国内」 (trong nước).",
+        "en": "Not quite. 内 means inside, as in 「国内」 (domestic)."
+      }
+    },
+    {
+      "item": "内",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「内」 trong 「国内」 (“trong nước”).",
+        "en": "Type the reading of 「内」 in 「国内」 (“domestic”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ない",
+          "ナイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 国内, 内 đọc là ない (âm On).",
+        "en": "Correct! In 国内, 内 is read ない (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 国内 (trong nước), 内 đọc là ない (âm On).",
+        "en": "In 国内 (domestic), 内 is read ない (on'yomi)."
+      }
+    },
+    {
+      "item": "内",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「内側」(phía bên trong) đọc là gì?",
+        "en": "How is 「内側」 (inner side) read?"
+      },
+      "payload": {
+        "choices": [
+          "うちがわ",
+          "ないがわ",
+          "うちかわ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 内側 = うちがわ (phía bên trong); 内 đọc là うち (âm Kun).",
+        "en": "Correct! 内側 = うちがわ (inner side); 内 is read うち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "内側 đọc là うちがわ (phía bên trong): 内 mang âm Kun うち.",
+        "en": "内側 is read うちがわ (inner side): 内 takes the kun'yomi うち."
+      }
+    },
+    {
+      "item": "現",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「現」nghĩa là gì?",
+        "en": "What does 「現」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hiện; xuất hiện",
+            "en": "present; appear"
+          },
+          {
+            "vi": "tình trạng; thư",
+            "en": "condition; letter"
+          },
+          {
+            "vi": "tỉnh",
+            "en": "prefecture"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 現 nghĩa là hiện; xuất hiện.",
+        "en": "Correct! 現 means present; appear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 現 nghĩa là hiện; xuất hiện, như trong 「現在」 (hiện tại).",
+        "en": "Not quite. 現 means present; appear, as in 「現在」 (present)."
+      }
+    },
+    {
+      "item": "現",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「現」 trong 「現在」 (“hiện tại”).",
+        "en": "Type the reading of 「現」 in 「現在」 (“present”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 現在, 現 đọc là げん (âm On).",
+        "en": "Correct! In 現在, 現 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 現在 (hiện tại), 現 đọc là げん (âm On).",
+        "en": "In 現在 (present), 現 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "現",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「現れる」(xuất hiện) đọc là gì?",
+        "en": "How is 「現れる」 (to appear) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんれる",
+          "あらわれる",
+          "じょうたい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 現れる = あらわれる (xuất hiện); 現 đọc là あらわ (âm Kun).",
+        "en": "Correct! 現れる = あらわれる (to appear); 現 is read あらわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "現れる đọc là あらわれる (xuất hiện): 現 mang âm Kun あらわ.",
+        "en": "現れる is read あらわれる (to appear): 現 takes the kun'yomi あらわ."
+      }
+    },
+    {
+      "item": "状",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「状」nghĩa là gì?",
+        "en": "What does 「状」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tỉnh",
+            "en": "prefecture"
+          },
+          {
+            "vi": "tình trạng; thư",
+            "en": "condition; letter"
+          },
+          {
+            "vi": "thành phố; chợ",
+            "en": "city; market"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 状 nghĩa là tình trạng; thư.",
+        "en": "Correct! 状 means condition; letter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 状 nghĩa là tình trạng; thư, như trong 「状態」 (tình trạng).",
+        "en": "Not quite. 状 means condition; letter, as in 「状態」 (condition)."
+      }
+    },
+    {
+      "item": "状",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「状」 trong 「状態」 (“tình trạng”).",
+        "en": "Type the reading of 「状」 in 「状態」 (“condition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 状態, 状 đọc là じょう (âm On).",
+        "en": "Correct! In 状態, 状 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 状態 (tình trạng), 状 đọc là じょう (âm On).",
+        "en": "In 状態 (condition), 状 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "状",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「年賀状」(thiệp năm mới) đọc là gì?",
+        "en": "How is 「年賀状」 (New Year's card) read?"
+      },
+      "payload": {
+        "choices": [
+          "ねんがじょ",
+          "ねんがしょう",
+          "ねんがじょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 年賀状 = ねんがじょう (thiệp năm mới); 状 đọc là じょう (âm On).",
+        "en": "Correct! 年賀状 = ねんがじょう (New Year's card); 状 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "年賀状 đọc là ねんがじょう (thiệp năm mới): 状 mang âm On じょう.",
+        "en": "年賀状 is read ねんがじょう (New Year's card): 状 takes the on'yomi じょう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "県",
+            {
+              "vi": "tỉnh",
+              "en": "prefecture"
+            }
+          ],
+          [
+            "市",
+            {
+              "vi": "thành phố; chợ",
+              "en": "city; market"
+            }
+          ],
+          [
+            "内",
+            {
+              "vi": "bên trong; nội",
+              "en": "inside"
+            }
+          ],
+          [
+            "現",
+            {
+              "vi": "hiện; xuất hiện",
+              "en": "present; appear"
+            }
+          ],
+          [
+            "状",
+            {
+              "vi": "tình trạng; thư",
+              "en": "condition; letter"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

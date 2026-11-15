@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-degree",
+  "title": {
+    "vi": "So sánh và ước lượng",
+    "en": "Comparison and estimation"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2950,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "まるで",
+      "reading": "まるで",
+      "meaning": {
+        "vi": "Cứ như là; hoàn toàn (không)",
+        "en": "Just like; as if"
+      },
+      "examples": [
+        {
+          "ja": "彼女は、まるで子どものように笑いました。",
+          "reading": "かのじょは、まるでこどものようにわらいました。",
+          "translation": {
+            "vi": "Cô ấy cười cứ như một đứa trẻ.",
+            "en": "She laughed just like a child."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "まあまあ",
+      "reading": "まあまあ",
+      "meaning": {
+        "vi": "Tạm được; cũng tàm tạm",
+        "en": "So-so; fair"
+      },
+      "examples": [
+        {
+          "ja": "このレストランは、まあまあおいしいです。",
+          "reading": "このレストランは、まあまあおいしいです。",
+          "translation": {
+            "vi": "Nhà hàng này cũng tàm tạm, ngon.",
+            "en": "This restaurant is fairly good."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "結構",
+      "reading": "けっこう",
+      "meaning": {
+        "vi": "Khá; được rồi",
+        "en": "Quite; fairly"
+      },
+      "examples": [
+        {
+          "ja": "この本は、結構面白いです。",
+          "reading": "このほんは、けっこうおもしろいです。",
+          "translation": {
+            "vi": "Cuốn sách này khá thú vị.",
+            "en": "This book is quite interesting."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "少なくとも",
+      "reading": "すくなくとも",
+      "meaning": {
+        "vi": "Ít nhất",
+        "en": "At least"
+      },
+      "examples": [
+        {
+          "ja": "少なくとも、三日は休みたいです。",
+          "reading": "すくなくとも、みっかはやすみたいです。",
+          "translation": {
+            "vi": "Ít nhất tôi muốn nghỉ ba ngày.",
+            "en": "I want to take at least three days off."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "せいぜい",
+      "reading": "せいぜい",
+      "meaning": {
+        "vi": "Tối đa cũng chỉ; cùng lắm",
+        "en": "At most; at best"
+      },
+      "examples": [
+        {
+          "ja": "この店の料理は、せいぜい千円です。",
+          "reading": "このみせのりょうりは、せいぜいせんえんです。",
+          "translation": {
+            "vi": "Món ăn ở quán này cùng lắm cũng chỉ một nghìn yên.",
+            "en": "Dishes at this restaurant cost at most 1,000 yen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "比較的",
+      "reading": "ひかくてき",
+      "meaning": {
+        "vi": "Tương đối",
+        "en": "Comparatively; relatively"
+      },
+      "examples": [
+        {
+          "ja": "この地域は、比較的雨が少ないです。",
+          "reading": "このちいきは、ひかくてきあめがすくないです。",
+          "translation": {
+            "vi": "Khu vực này tương đối ít mưa.",
+            "en": "This region has relatively little rain."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "まるで",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼女は、（　）子どものように笑いました。 — Nghĩa của câu: “Cô ấy cười cứ như một đứa trẻ.”",
+        "en": "Choose the word that fits the blank: 彼女は、（　）子どものように笑いました。 — Meaning of the sentence: “She laughed just like a child.”"
+      },
+      "payload": {
+        "choices": [
+          "まるで",
+          "まあまあ",
+          "比較的",
+          "結構"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「まるで」(Cứ như là; hoàn toàn (không)) hợp nghĩa câu này: “Cô ấy cười cứ như một đứa trẻ.”",
+        "en": "Correct! 「まるで」(Just like; as if) fits this sentence: “She laughed just like a child.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cô ấy cười cứ như một đứa trẻ.”, nên cần 「まるで」(Cứ như là; hoàn toàn (không)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “She laughed just like a child.”, so it needs 「まるで」(Just like; as if); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "まあまあ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このレストランは、（　）おいしいです。 — Nghĩa của câu: “Nhà hàng này cũng tàm tạm, ngon.”",
+        "en": "Choose the word that fits the blank: このレストランは、（　）おいしいです。 — Meaning of the sentence: “This restaurant is fairly good.”"
+      },
+      "payload": {
+        "choices": [
+          "まるで",
+          "まあまあ",
+          "少なくとも",
+          "結構"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「まあまあ」(Tạm được; cũng tàm tạm) hợp nghĩa câu này: “Nhà hàng này cũng tàm tạm, ngon.”",
+        "en": "Correct! 「まあまあ」(So-so; fair) fits this sentence: “This restaurant is fairly good.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà hàng này cũng tàm tạm, ngon.”, nên cần 「まあまあ」(Tạm được; cũng tàm tạm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This restaurant is fairly good.”, so it needs 「まあまあ」(So-so; fair); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "結構",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この本は、（　）面白いです。 — Nghĩa của câu: “Cuốn sách này khá thú vị.”",
+        "en": "Choose the word that fits the blank: この本は、（　）面白いです。 — Meaning of the sentence: “This book is quite interesting.”"
+      },
+      "payload": {
+        "choices": [
+          "まるで",
+          "少なくとも",
+          "結構",
+          "まあまあ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「結構」(Khá; được rồi) hợp nghĩa câu này: “Cuốn sách này khá thú vị.”",
+        "en": "Correct! 「結構」(Quite; fairly) fits this sentence: “This book is quite interesting.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuốn sách này khá thú vị.”, nên cần 「結構」(Khá; được rồi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This book is quite interesting.”, so it needs 「結構」(Quite; fairly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "少なくとも",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、三日は休みたいです。 — Nghĩa của câu: “Ít nhất tôi muốn nghỉ ba ngày.”",
+        "en": "Choose the word that fits the blank: （　）、三日は休みたいです。 — Meaning of the sentence: “I want to take at least three days off.”"
+      },
+      "payload": {
+        "choices": [
+          "まるで",
+          "まあまあ",
+          "結構",
+          "少なくとも"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「少なくとも」(Ít nhất) hợp nghĩa câu này: “Ít nhất tôi muốn nghỉ ba ngày.”",
+        "en": "Correct! 「少なくとも」(At least) fits this sentence: “I want to take at least three days off.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ít nhất tôi muốn nghỉ ba ngày.”, nên cần 「少なくとも」(Ít nhất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I want to take at least three days off.”, so it needs 「少なくとも」(At least); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "せいぜい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店の料理は、（　）千円です。 — Nghĩa của câu: “Món ăn ở quán này cùng lắm cũng chỉ một nghìn yên.”",
+        "en": "Choose the word that fits the blank: この店の料理は、（　）千円です。 — Meaning of the sentence: “Dishes at this restaurant cost at most 1,000 yen.”"
+      },
+      "payload": {
+        "choices": [
+          "せいぜい",
+          "比較的",
+          "まるで",
+          "まあまあ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「せいぜい」(Tối đa cũng chỉ; cùng lắm) hợp nghĩa câu này: “Món ăn ở quán này cùng lắm cũng chỉ một nghìn yên.”",
+        "en": "Correct! 「せいぜい」(At most; at best) fits this sentence: “Dishes at this restaurant cost at most 1,000 yen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món ăn ở quán này cùng lắm cũng chỉ một nghìn yên.”, nên cần 「せいぜい」(Tối đa cũng chỉ; cùng lắm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Dishes at this restaurant cost at most 1,000 yen.”, so it needs 「せいぜい」(At most; at best); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "比較的",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この地域は、（　）雨が少ないです。 — Nghĩa của câu: “Khu vực này tương đối ít mưa.”",
+        "en": "Choose the word that fits the blank: この地域は、（　）雨が少ないです。 — Meaning of the sentence: “This region has relatively little rain.”"
+      },
+      "payload": {
+        "choices": [
+          "まるで",
+          "比較的",
+          "結構",
+          "まあまあ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「比較的」(Tương đối) hợp nghĩa câu này: “Khu vực này tương đối ít mưa.”",
+        "en": "Correct! 「比較的」(Comparatively; relatively) fits this sentence: “This region has relatively little rain.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu vực này tương đối ít mưa.”, nên cần 「比較的」(Tương đối); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This region has relatively little rain.”, so it needs 「比較的」(Comparatively; relatively); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "結構",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この本は、「結構」面白いです。",
+        "en": "Choose the correct reading of the word in 「」: この本は、「結構」面白いです。"
+      },
+      "payload": {
+        "choices": [
+          "ひかくてき",
+          "けっこう",
+          "まるで",
+          "せいぜい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「結構」 đọc là 「けっこう」, nghĩa là Khá; được rồi.",
+        "en": "Correct! 「結構」 is read 「けっこう」 and means Quite; fairly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「結構」 đọc là 「けっこう」 (Khá; được rồi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「結構」 is read 「けっこう」 (Quite; fairly); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "少なくとも",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「少なくとも」、三日は休みたいです。",
+        "en": "Choose the correct reading of the word in 「」: 「少なくとも」、三日は休みたいです。"
+      },
+      "payload": {
+        "choices": [
+          "まあまあ",
+          "まるで",
+          "すくなくとも",
+          "ひかくてき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「少なくとも」 đọc là 「すくなくとも」, nghĩa là Ít nhất.",
+        "en": "Correct! 「少なくとも」 is read 「すくなくとも」 and means At least."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「少なくとも」 đọc là 「すくなくとも」 (Ít nhất); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「少なくとも」 is read 「すくなくとも」 (At least); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "比較的",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この地域は、「ひかくてき」雨が少ないです。",
+        "en": "Choose the correct way to write the word in 「」: この地域は、「ひかくてき」雨が少ないです。"
+      },
+      "payload": {
+        "choices": [
+          "結構",
+          "少なくとも",
+          "比較的",
+          "せいぜい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ひかくてき」 viết là 「比較的」, nghĩa là Tương đối.",
+        "en": "Correct! 「ひかくてき」 is written 「比較的」 and means Comparatively; relatively."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ひかくてき」 viết là 「比較的」 (Tương đối); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ひかくてき」 is written 「比較的」 (Comparatively; relatively); the other words are read differently."
+      }
+    }
+  ]
+}

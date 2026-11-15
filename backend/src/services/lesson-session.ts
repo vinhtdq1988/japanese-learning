@@ -1,7 +1,12 @@
 import { sql } from 'drizzle-orm';
 import type { DbExecutor } from '../db/client.js';
 import { findActiveMembershipByUser } from '../db/repositories/class-memberships.js';
-import { findPlan, reviewPairsOf, type DailyPlanItemRow } from '../db/repositories/plans.js';
+import {
+  findPlan,
+  getUnitInfo,
+  reviewPairsOf,
+  type DailyPlanItemRow,
+} from '../db/repositories/plans.js';
 import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
 import {
   getDueDate,
@@ -41,6 +46,11 @@ import {
   type StudyRecordRow,
 } from '../db/repositories/sessions.js';
 import { gradeExercise } from '../domain/grading.js';
+import {
+  isPracticeEligible,
+  PRACTICE_LOCKED_MESSAGE,
+  PRACTICE_MIN_DAILY_MINUTES,
+} from '../domain/practice.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
 import {
   buildReviewSnapshot,
@@ -162,6 +172,46 @@ async function lockKey(db: DbExecutor, key: string): Promise<void> {
   await db.execute(sql`select pg_advisory_xact_lock(hashtextextended(${key}, 0))`);
 }
 
+// --- Cổng luyện đọc/viết (spec 007, FR-006, FR-007, I3) ---
+
+const isPracticeKind = (kind: string | null | undefined): boolean =>
+  kind === 'reading' || kind === 'writing';
+
+/**
+ * Chặn luyện đọc/viết khi quỹ thời gian đang áp dụng < 30 phút (kể cả học viên lớp: phút = ghi đè của giáo viên
+ * ?? phút của lớp, đã tính trong `resolveLearningContext`). Chỉ kiểm khi `unitKind` là luyện; kiểm ở MÁY CHỦ nên
+ * gọi API trực tiếp cũng bị chặn. Không sửa dữ liệu: phiên dở dang giữ `in_progress` để tiếp tục khi nâng lại 30.
+ */
+async function assertPracticeAllowed(
+  deps: ServiceDeps,
+  userId: string,
+  unitKind: string | null | undefined,
+): Promise<void> {
+  if (!isPracticeKind(unitKind)) return;
+  const ctx = await resolveLearningContext(deps, userId);
+  if (ctx && isPracticeEligible(ctx.profile.dailyMinutes)) return;
+  throw new AppError(403, 'PRACTICE_LOCKED', PRACTICE_LOCKED_MESSAGE, {
+    minimumDailyMinutes: String(PRACTICE_MIN_DAILY_MINUTES),
+  });
+}
+
+/** Kỹ năng của đơn vị theo id (đọc thẳng CSDL); undefined nếu đơn vị không còn. */
+async function unitKindOf(deps: ServiceDeps, unitId: string): Promise<string | undefined> {
+  return (await getUnitInfo(deps.db, [unitId])).get(unitId)?.kind;
+}
+
+/** Phiên của đơn vị luyện không còn dùng được ngay khi quỹ thời gian hạ xuống dưới 30 (trừ phiên đã xong). */
+async function assertPracticeSessionAllowed(
+  deps: ServiceDeps,
+  userId: string,
+  session: SessionRow,
+): Promise<void> {
+  if (session.status === 'completed' || !session.unitId) return;
+  const snapshot = parseSnapshot(session.snapshot);
+  const practice = snapshot.items.some((item) => isPracticeKind(item.kind));
+  await assertPracticeAllowed(deps, userId, practice ? 'reading' : null);
+}
+
 // --- Bắt đầu / tiếp tục phiên ---
 
 /**
@@ -188,6 +238,9 @@ async function startPlanItemSession(
   planLocalDate: LocalDate,
 ): Promise<LessonSessionDto> {
   const planItemId = item.id;
+  if (item.type === 'new_unit' && item.unitId) {
+    await assertPracticeAllowed(deps, userId, await unitKindOf(deps, item.unitId));
+  }
   return deps.db.transaction(async (tx) => {
     // Hai cửa sổ cùng mở một mục: xếp hàng để chỉ tạo một phiên.
     await lockKey(tx, `session:${planItemId}`);
@@ -265,6 +318,8 @@ async function startExtraSession(
   profile: ProfileRow,
   unitId: string,
 ): Promise<LessonSessionDto> {
+  // Gọi thẳng API với id đơn vị luyện khi chưa đủ 30 phút → 403 trước mọi kiểm tra khác (SC-003).
+  await assertPracticeAllowed(deps, userId, await unitKindOf(deps, unitId));
   // Nguồn học (cá nhân hay lớp) quyết định tạm dừng và tập "bài sắp tới" (spec 004, O6).
   const ctx = await resolveLearningContext(deps, userId);
   if (!ctx) throw notOnboarded();
@@ -452,6 +507,7 @@ export async function submitAnswer(
     throw new AppError(409, 'SESSION_COMPLETED', 'Phiên học đã hoàn thành');
   }
 
+  await assertPracticeSessionAllowed(deps, userId, session);
   const profile = await requireProfile(deps, userId);
   const graded = gradeExercise(exercise.type, exercise.payload, input.answer, snapshot.language);
   const occurredAt = occurredAtOf(input.answeredAt, session, deps.clock.now());
@@ -499,6 +555,7 @@ export async function recordInterval(
   input: IntervalInput,
 ): Promise<void> {
   const session = await requireSession(deps.db, userId, sessionId);
+  await assertPracticeSessionAllowed(deps, userId, session);
   const profile = await requireProfile(deps, userId);
   const startedAt = new Date(input.startedAt);
   await insertStudyInterval(deps.db, {
@@ -568,6 +625,12 @@ export async function completeSession(
   userId: string,
   sessionId: string,
 ): Promise<SessionSummaryDto> {
+  // Phiên luyện đọc/viết dở dang bị chặn khi quỹ thời gian < 30 (phiên đã xong vẫn trả tóm tắt như cũ).
+  await assertPracticeSessionAllowed(
+    deps,
+    userId,
+    await requireSession(deps.db, userId, sessionId),
+  );
   // Ngữ cảnh học dùng kết nối thường nên nạp trước giao dịch (chỉ khi còn mốc cần đến nó).
   const achievementContext = await prepareAchievementContext(deps, userId);
 

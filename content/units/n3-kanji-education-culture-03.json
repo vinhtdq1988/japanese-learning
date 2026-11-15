@@ -1,0 +1,673 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (説 述 識 覚 例)",
+    "en": "Education and culture kanji (説 述 識 覚 例)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "説",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "giải thích; truyện",
+        "en": "explain; theory"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セツ",
+          "ゼイ"
+        ],
+        "kunReadings": [
+          "と.く"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "説明",
+          "reading": "せつめい",
+          "kanjiReading": "セツ",
+          "translation": {
+            "vi": "giải thích",
+            "en": "explanation"
+          }
+        },
+        {
+          "ja": "小説",
+          "reading": "しょうせつ",
+          "kanjiReading": "セツ",
+          "translation": {
+            "vi": "tiểu thuyết",
+            "en": "novel"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "述",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "trình bày; thuật",
+        "en": "state; describe"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジュツ"
+        ],
+        "kunReadings": [
+          "の.べる"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "記述",
+          "reading": "きじゅつ",
+          "kanjiReading": "ジュツ",
+          "translation": {
+            "vi": "mô tả",
+            "en": "description"
+          }
+        },
+        {
+          "ja": "述べる",
+          "reading": "のべる",
+          "kanjiReading": "の",
+          "translation": {
+            "vi": "trình bày",
+            "en": "to state"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "識",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "nhận biết; kiến thức",
+        "en": "know; knowledge"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 19
+      },
+      "examples": [
+        {
+          "ja": "知識",
+          "reading": "ちしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "kiến thức",
+            "en": "knowledge"
+          }
+        },
+        {
+          "ja": "意識",
+          "reading": "いしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "ý thức",
+            "en": "consciousness"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "覚",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "nhớ; tỉnh; cảm nhận",
+        "en": "remember; awaken"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カク"
+        ],
+        "kunReadings": [
+          "おぼ.える",
+          "さ.める",
+          "さ.ます"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "感覚",
+          "reading": "かんかく",
+          "kanjiReading": "カク",
+          "translation": {
+            "vi": "cảm giác",
+            "en": "sense"
+          }
+        },
+        {
+          "ja": "覚える",
+          "reading": "おぼえる",
+          "kanjiReading": "おぼ",
+          "translation": {
+            "vi": "nhớ; học thuộc",
+            "en": "to remember"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "例",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "ví dụ; lệ",
+        "en": "example; precedent"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "レイ"
+        ],
+        "kunReadings": [
+          "たと.える"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "例外",
+          "reading": "れいがい",
+          "kanjiReading": "レイ",
+          "translation": {
+            "vi": "ngoại lệ",
+            "en": "exception"
+          }
+        },
+        {
+          "ja": "例えば",
+          "reading": "たとえば",
+          "kanjiReading": "たと",
+          "translation": {
+            "vi": "ví dụ như",
+            "en": "for example"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "説",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「説」nghĩa là gì?",
+        "en": "What does 「説」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giải thích; truyện",
+            "en": "explain; theory"
+          },
+          {
+            "vi": "trình bày; thuật",
+            "en": "state; describe"
+          },
+          {
+            "vi": "nhận biết; kiến thức",
+            "en": "know; knowledge"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 説 nghĩa là giải thích; truyện.",
+        "en": "Correct! 説 means explain; theory."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 説 nghĩa là giải thích; truyện, như trong 「説明」 (giải thích).",
+        "en": "Not quite. 説 means explain; theory, as in 「説明」 (explanation)."
+      }
+    },
+    {
+      "item": "説",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「説」 trong 「説明」 (“giải thích”).",
+        "en": "Type the reading of 「説」 in 「説明」 (“explanation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せつ",
+          "セツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 説明, 説 đọc là せつ (âm On).",
+        "en": "Correct! In 説明, 説 is read せつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 説明 (giải thích), 説 đọc là せつ (âm On).",
+        "en": "In 説明 (explanation), 説 is read せつ (on'yomi)."
+      }
+    },
+    {
+      "item": "説",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「小説」(tiểu thuyết) đọc là gì?",
+        "en": "How is 「小説」 (novel) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうと",
+          "しょうせつ",
+          "しょうぜつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 小説 = しょうせつ (tiểu thuyết); 説 đọc là せつ (âm On).",
+        "en": "Correct! 小説 = しょうせつ (novel); 説 is read せつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "小説 đọc là しょうせつ (tiểu thuyết): 説 mang âm On せつ.",
+        "en": "小説 is read しょうせつ (novel): 説 takes the on'yomi せつ."
+      }
+    },
+    {
+      "item": "述",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「述」nghĩa là gì?",
+        "en": "What does 「述」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhận biết; kiến thức",
+            "en": "know; knowledge"
+          },
+          {
+            "vi": "trình bày; thuật",
+            "en": "state; describe"
+          },
+          {
+            "vi": "nhớ; tỉnh; cảm nhận",
+            "en": "remember; awaken"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 述 nghĩa là trình bày; thuật.",
+        "en": "Correct! 述 means state; describe."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 述 nghĩa là trình bày; thuật, như trong 「記述」 (mô tả).",
+        "en": "Not quite. 述 means state; describe, as in 「記述」 (description)."
+      }
+    },
+    {
+      "item": "述",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「述」 trong 「記述」 (“mô tả”).",
+        "en": "Type the reading of 「述」 in 「記述」 (“description”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じゅつ",
+          "ジュツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 記述, 述 đọc là じゅつ (âm On).",
+        "en": "Correct! In 記述, 述 is read じゅつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 記述 (mô tả), 述 đọc là じゅつ (âm On).",
+        "en": "In 記述 (description), 述 is read じゅつ (on'yomi)."
+      }
+    },
+    {
+      "item": "述",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「述べる」(trình bày) đọc là gì?",
+        "en": "How is 「述べる」 (to state) read?"
+      },
+      "payload": {
+        "choices": [
+          "じゅつべる",
+          "ちしき",
+          "のべる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 述べる = のべる (trình bày); 述 đọc là の (âm Kun).",
+        "en": "Correct! 述べる = のべる (to state); 述 is read の (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "述べる đọc là のべる (trình bày): 述 mang âm Kun の.",
+        "en": "述べる is read のべる (to state): 述 takes the kun'yomi の."
+      }
+    },
+    {
+      "item": "識",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「識」nghĩa là gì?",
+        "en": "What does 「識」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhớ; tỉnh; cảm nhận",
+            "en": "remember; awaken"
+          },
+          {
+            "vi": "ví dụ; lệ",
+            "en": "example; precedent"
+          },
+          {
+            "vi": "nhận biết; kiến thức",
+            "en": "know; knowledge"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 識 nghĩa là nhận biết; kiến thức.",
+        "en": "Correct! 識 means know; knowledge."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 識 nghĩa là nhận biết; kiến thức, như trong 「知識」 (kiến thức).",
+        "en": "Not quite. 識 means know; knowledge, as in 「知識」 (knowledge)."
+      }
+    },
+    {
+      "item": "識",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「識」 trong 「知識」 (“kiến thức”).",
+        "en": "Type the reading of 「識」 in 「知識」 (“knowledge”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しき",
+          "シキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 知識, 識 đọc là しき (âm On).",
+        "en": "Correct! In 知識, 識 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 知識 (kiến thức), 識 đọc là しき (âm On).",
+        "en": "In 知識 (knowledge), 識 is read しき (on'yomi)."
+      }
+    },
+    {
+      "item": "識",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「意識」(ý thức) đọc là gì?",
+        "en": "How is 「意識」 (consciousness) read?"
+      },
+      "payload": {
+        "choices": [
+          "いしき",
+          "いじき",
+          "いおぼ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 意識 = いしき (ý thức); 識 đọc là しき (âm On).",
+        "en": "Correct! 意識 = いしき (consciousness); 識 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "意識 đọc là いしき (ý thức): 識 mang âm On しき.",
+        "en": "意識 is read いしき (consciousness): 識 takes the on'yomi しき."
+      }
+    },
+    {
+      "item": "覚",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「覚」nghĩa là gì?",
+        "en": "What does 「覚」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhớ; tỉnh; cảm nhận",
+            "en": "remember; awaken"
+          },
+          {
+            "vi": "ví dụ; lệ",
+            "en": "example; precedent"
+          },
+          {
+            "vi": "giải thích; truyện",
+            "en": "explain; theory"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 覚 nghĩa là nhớ; tỉnh; cảm nhận.",
+        "en": "Correct! 覚 means remember; awaken."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 覚 nghĩa là nhớ; tỉnh; cảm nhận, như trong 「感覚」 (cảm giác).",
+        "en": "Not quite. 覚 means remember; awaken, as in 「感覚」 (sense)."
+      }
+    },
+    {
+      "item": "覚",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「覚」 trong 「感覚」 (“cảm giác”).",
+        "en": "Type the reading of 「覚」 in 「感覚」 (“sense”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かく",
+          "カク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 感覚, 覚 đọc là かく (âm On).",
+        "en": "Correct! In 感覚, 覚 is read かく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 感覚 (cảm giác), 覚 đọc là かく (âm On).",
+        "en": "In 感覚 (sense), 覚 is read かく (on'yomi)."
+      }
+    },
+    {
+      "item": "覚",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「覚える」(nhớ; học thuộc) đọc là gì?",
+        "en": "How is 「覚える」 (to remember) read?"
+      },
+      "payload": {
+        "choices": [
+          "かくえる",
+          "おぼえる",
+          "れいがい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 覚える = おぼえる (nhớ; học thuộc); 覚 đọc là おぼ (âm Kun).",
+        "en": "Correct! 覚える = おぼえる (to remember); 覚 is read おぼ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "覚える đọc là おぼえる (nhớ; học thuộc): 覚 mang âm Kun おぼ.",
+        "en": "覚える is read おぼえる (to remember): 覚 takes the kun'yomi おぼ."
+      }
+    },
+    {
+      "item": "例",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「例」nghĩa là gì?",
+        "en": "What does 「例」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giải thích; truyện",
+            "en": "explain; theory"
+          },
+          {
+            "vi": "ví dụ; lệ",
+            "en": "example; precedent"
+          },
+          {
+            "vi": "trình bày; thuật",
+            "en": "state; describe"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 例 nghĩa là ví dụ; lệ.",
+        "en": "Correct! 例 means example; precedent."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 例 nghĩa là ví dụ; lệ, như trong 「例外」 (ngoại lệ).",
+        "en": "Not quite. 例 means example; precedent, as in 「例外」 (exception)."
+      }
+    },
+    {
+      "item": "例",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「例」 trong 「例外」 (“ngoại lệ”).",
+        "en": "Type the reading of 「例」 in 「例外」 (“exception”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "れい",
+          "レイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 例外, 例 đọc là れい (âm On).",
+        "en": "Correct! In 例外, 例 is read れい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 例外 (ngoại lệ), 例 đọc là れい (âm On).",
+        "en": "In 例外 (exception), 例 is read れい (on'yomi)."
+      }
+    },
+    {
+      "item": "例",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「例えば」(ví dụ như) đọc là gì?",
+        "en": "How is 「例えば」 (for example) read?"
+      },
+      "payload": {
+        "choices": [
+          "れいえば",
+          "せつめい",
+          "たとえば"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 例えば = たとえば (ví dụ như); 例 đọc là たと (âm Kun).",
+        "en": "Correct! 例えば = たとえば (for example); 例 is read たと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "例えば đọc là たとえば (ví dụ như): 例 mang âm Kun たと.",
+        "en": "例えば is read たとえば (for example): 例 takes the kun'yomi たと."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "説",
+            {
+              "vi": "giải thích; truyện",
+              "en": "explain; theory"
+            }
+          ],
+          [
+            "述",
+            {
+              "vi": "trình bày; thuật",
+              "en": "state; describe"
+            }
+          ],
+          [
+            "識",
+            {
+              "vi": "nhận biết; kiến thức",
+              "en": "know; knowledge"
+            }
+          ],
+          [
+            "覚",
+            {
+              "vi": "nhớ; tỉnh; cảm nhận",
+              "en": "remember; awaken"
+            }
+          ],
+          [
+            "例",
+            {
+              "vi": "ví dụ; lệ",
+              "en": "example; precedent"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

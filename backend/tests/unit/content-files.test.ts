@@ -1,4 +1,4 @@
-import { cp, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { afterAll, describe, expect, it } from 'vitest';
@@ -53,8 +53,18 @@ describe('nội dung N5 và bộ placement trong content/', () => {
   });
 
   it('mỗi mảng N4 và N3 có ít nhất một đơn vị và đơn vị N4/N3 là tier core', async () => {
-    const { topics, units } = await loadContent();
+    const { topics, units } = await loadContent(undefined, { releases: 'all' });
     const used = new Set(units.map((u) => u.topic));
+    // Chủ đề đã khai báo sớm cho đợt đang soạn (`content/drafts/`) chưa có đơn vị duyệt: không tính là lỗi.
+    const draftsDir = path.join(DEFAULT_CONTENT_DIR, 'drafts');
+    const batches = await readdir(draftsDir, { withFileTypes: true }).catch(() => []);
+    for (const batch of batches.filter((b) => b.isDirectory())) {
+      for (const file of await readdir(path.join(draftsDir, batch.name))) {
+        if (!file.endsWith('.json')) continue;
+        const draft = JSON.parse(await readFile(path.join(draftsDir, batch.name, file), 'utf8'));
+        used.add(draft.topic);
+      }
+    }
     for (const t of topics.filter((x) => x.level !== 'N5')) {
       expect(used.has(t.key), `mảng ${t.key}`).toBe(true);
     }
@@ -228,7 +238,10 @@ describe('thư viện Kanji trong content/', () => {
 
   it('mọi file đơn vị cũ (từ vựng, ngữ pháp) vẫn hợp lệ với schema 1.1.0', async () => {
     const content = await loadContent();
-    const old = { ...content, units: content.units.filter((u) => !u.file.includes('-kanji-')) };
+    const old = {
+      ...content,
+      units: content.units.filter((u) => !/-(kanji|reading|writing)-/.test(u.file)),
+    };
     expect(formatIssues(await validateContent(old))).not.toContain('schema');
     for (const u of old.units) expect(['vocabulary', 'grammar']).toContain(u.kind);
   });
@@ -287,5 +300,160 @@ describe('thư viện Kanji trong content/', () => {
       await writeFile(file, JSON.stringify(doc));
     });
     expect(messages).toContain('glyph');
+  });
+});
+
+// --- Bài luyện đọc/viết ra mắt (spec 007, T052): 12 đơn vị = N5/N4/N3 × reading/writing × 2 bài ---
+
+describe('12 đơn vị luyện đọc/viết ra mắt (practice-content.md §1–§4)', () => {
+  const LEVELS = ['n5', 'n4', 'n3'] as const;
+  const KINDS = ['reading', 'writing'] as const;
+
+  it('có đủ 12 file content/units/{n5,n4,n3}-{reading,writing}-*.json', async () => {
+    const { units } = await loadContent();
+    for (const level of LEVELS) {
+      for (const kind of KINDS) {
+        const files = units.filter((u) => u.file.startsWith(`${level}-${kind}-`));
+        expect(files.length, `${level} × ${kind}`).toBe(2);
+        expect(
+          files.map((u) => u.estMinutes).sort((a, b) => a - b),
+          `${level} × ${kind}`,
+        ).toEqual([5, 10]);
+      }
+    }
+    expect(units.filter((u) => u.kind === 'reading' || u.kind === 'writing')).toHaveLength(12);
+  });
+
+  it('mọi đơn vị luyện hợp lệ theo JSON Schema unit 1.3.0 và validateUnit (qua validateContent)', async () => {
+    const content = await loadContent();
+    expect(formatIssues(await validateContent(content))).toBe('');
+    const schema = JSON.parse(
+      await readFile(path.join(DEFAULT_CONTENT_DIR, 'schema', 'unit.schema.json'), 'utf8'),
+    ) as { $id: string; properties: { kind: { enum: string[] } } };
+    expect(schema.$id).toContain('/1.3.0');
+    expect(schema.properties.kind.enum).toEqual(expect.arrayContaining(['reading', 'writing']));
+  });
+
+  it('mỗi (trình độ × reading/writing) có ≥ 1 đơn vị estMinutes = 5', async () => {
+    const { units } = await loadContent();
+    for (const level of ['N5', 'N4', 'N3'] as const) {
+      for (const kind of KINDS) {
+        expect(
+          units.some((u) => u.level === level && u.kind === kind && u.estMinutes === 5),
+          `${level} × ${kind}`,
+        ).toBe(true);
+      }
+    }
+  });
+
+  it('khóa topic có trong topics.json và topic.skill/topic.level khớp kind/level; bài tập không gắn mục', async () => {
+    const { topics, units } = await loadContent();
+    const byKey = new Map(topics.map((t) => [t.key, t]));
+    for (const u of units.filter((x) => x.kind === 'reading' || x.kind === 'writing')) {
+      const topic = byKey.get(u.topic);
+      expect(topic, `${u.file}: topic ${u.topic}`).toBeDefined();
+      expect(topic!.skill, u.file).toBe(u.kind);
+      expect(topic!.level, u.file).toBe(u.level);
+      expect(u.tier ?? 'core', u.file).toBe('core');
+      for (const ex of u.exercises) expect(ex.item, u.file).toBeUndefined();
+    }
+  });
+
+  it('mọi ký tự Nhật (mục, ví dụ, đáp án, lựa chọn) có glyph trong NotoSansJP.ttf', async () => {
+    const { units } = await loadContent();
+    for (const u of units.filter((x) => x.kind === 'reading' || x.kind === 'writing')) {
+      const text = [
+        ...u.items.flatMap((i) => [
+          i.japanese,
+          i.reading ?? '',
+          ...(i.examples ?? []).map((e) => e.ja),
+        ]),
+        ...u.exercises.flatMap((e) => {
+          const p = e.payload as { accepted_answers?: string[]; choices?: unknown[] };
+          return [
+            ...(p.accepted_answers ?? []),
+            ...(p.choices ?? []).filter((c): c is string => typeof c === 'string'),
+          ];
+        }),
+      ].join('');
+      expect(findMissingGlyphs(text), u.file).toEqual([]);
+    }
+  });
+});
+
+// --- Thư viện theo đợt phát hành (spec 008, T016): đóng kín, manifest, đặt tên, không nạp bản nháp ---
+
+describe('thư viện theo đợt phát hành trong content/ (releases: all)', () => {
+  const loadAll = () => loadContent(DEFAULT_CONTENT_DIR, { releases: 'all' });
+
+  it('toàn bộ nội dung của MỌI đợt hợp lệ theo schema 1.3.0 và quy tắc nội dung', async () => {
+    const content = await loadAll();
+    expect(content.selectedReleases).toEqual(content.releases.map((r) => r.id));
+    expect(formatIssues(await validateContent(content))).toBe('');
+  });
+
+  it('mọi file trong content/units/ thuộc đúng một manifest (đóng kín, I4)', async () => {
+    const content = await loadAll();
+    const owners = new Map<string, string[]>();
+    for (const release of content.releases) {
+      for (const ref of release.units) {
+        owners.set(ref.file, [...(owners.get(ref.file) ?? []), release.id]);
+      }
+    }
+    for (const file of content.unitFiles) {
+      expect(owners.get(file), file).toHaveLength(1);
+    }
+    for (const file of owners.keys()) expect(content.unitFiles, file).toContain(file);
+    expect(content.units.map((u) => u.file).sort()).toEqual([...content.unitFiles].sort());
+  });
+
+  it('000-baseline có baseline: true và đúng 33 file; manifest khác không phải baseline', async () => {
+    const { releases } = await loadAll();
+    const baseline = releases.find((r) => r.id === '000-baseline');
+    expect(baseline?.baseline).toBe(true);
+    expect(baseline?.units).toHaveLength(33);
+    for (const r of releases.filter((x) => x.id !== '000-baseline')) {
+      expect(r.baseline, r.id).not.toBe(true);
+    }
+  });
+
+  it('file ngoài baseline đặt tên theo CS1: <trình-độ>-<loại>-<chủ-đề>-<NN>.json', async () => {
+    const { releases } = await loadAll();
+    const pattern =
+      /^(n4|n3)-(vocabulary|grammar|kanji|reading|writing)-[a-z0-9]+(-[a-z0-9]+)*-\d{2}\.json$/;
+    for (const release of releases.filter((r) => !r.baseline)) {
+      for (const ref of release.units)
+        expect(ref.file, `${release.id}: ${ref.file}`).toMatch(pattern);
+    }
+  });
+
+  it('schema unit là 1.3.0 và file đơn vị cũ (1.2.0) vẫn hợp lệ theo schema đó', async () => {
+    const schema = JSON.parse(
+      await readFile(path.join(DEFAULT_CONTENT_DIR, 'schema', 'unit.schema.json'), 'utf8'),
+    ) as { $id: string };
+    expect(schema.$id).toBe('https://japanese-learning.local/schema/unit/1.3.0');
+    // Mọi đơn vị baseline (không có siêu dữ liệu 1.3.0) phải qua schema mới không lỗi cấu trúc.
+    const baseline = await loadContent(DEFAULT_CONTENT_DIR, { releases: ['000-baseline'] });
+    expect(baseline.units).toHaveLength(33);
+    expect(formatIssues(await validateContent(baseline))).toBe('');
+  });
+
+  it('không file nào trong content/drafts/ bị nạp (M7)', async () => {
+    const dir = await mkdtemp(path.join(os.tmpdir(), 'content-drafts-'));
+    tempDirs.push(dir);
+    await cp(DEFAULT_CONTENT_DIR, dir, { recursive: true });
+    const source = JSON.parse(
+      await readFile(path.join(dir, 'units', 'n4-vocabulary-health-body.json'), 'utf8'),
+    );
+    source.title.en = 'Draft only unit';
+    await mkdir(path.join(dir, 'drafts', '001-vocab'), { recursive: true });
+    await writeFile(
+      path.join(dir, 'drafts', '001-vocab', 'n4-vocabulary-draft-01.json'),
+      JSON.stringify(source),
+    );
+    const content = await loadContent(dir, { releases: 'all' });
+    expect(content.unitFiles).not.toContain('n4-vocabulary-draft-01.json');
+    expect(content.units.find((u) => u.title.en === 'Draft only unit')).toBeUndefined();
+    expect(formatIssues(await validateContent(content, dir))).toBe('');
   });
 });

@@ -1,0 +1,542 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society-politics",
+  "title": {
+    "vi": "Kanji xã hội – chính trị (治 党 派 総)",
+    "en": "Society and politics kanji (治 党 派 総)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "治",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "cai trị; khỏi bệnh",
+        "en": "govern; cure"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ",
+          "チ"
+        ],
+        "kunReadings": [
+          "おさ.める",
+          "なお.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "政治",
+          "reading": "せいじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "chính trị",
+            "en": "politics"
+          }
+        },
+        {
+          "ja": "治る",
+          "reading": "なおる",
+          "kanjiReading": "なお",
+          "translation": {
+            "vi": "khỏi bệnh",
+            "en": "to be cured"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "党",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "đảng; phe",
+        "en": "party"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "政党",
+          "reading": "せいとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "chính đảng",
+            "en": "political party"
+          }
+        },
+        {
+          "ja": "野党",
+          "reading": "やとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "đảng đối lập",
+            "en": "opposition party"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "派",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "phái; phe",
+        "en": "faction; school"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "党派",
+          "reading": "とうは",
+          "kanjiReading": "ハ",
+          "translation": {
+            "vi": "phe phái",
+            "en": "faction"
+          }
+        },
+        {
+          "ja": "派手",
+          "reading": "はで",
+          "kanjiReading": "ハ",
+          "translation": {
+            "vi": "lòe loẹt; sặc sỡ",
+            "en": "flashy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "総",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "tổng; toàn bộ",
+        "en": "total; general"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "総理",
+          "reading": "そうり",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "thủ tướng",
+            "en": "prime minister"
+          }
+        },
+        {
+          "ja": "総合",
+          "reading": "そうごう",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "tổng hợp",
+            "en": "synthesis"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "治",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「治」nghĩa là gì?",
+        "en": "What does 「治」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cai trị; khỏi bệnh",
+            "en": "govern; cure"
+          },
+          {
+            "vi": "đảng; phe",
+            "en": "party"
+          },
+          {
+            "vi": "phái; phe",
+            "en": "faction; school"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 治 nghĩa là cai trị; khỏi bệnh.",
+        "en": "Correct! 治 means govern; cure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 治 nghĩa là cai trị; khỏi bệnh, như trong 「政治」 (chính trị).",
+        "en": "Not quite. 治 means govern; cure, as in 「政治」 (politics)."
+      }
+    },
+    {
+      "item": "治",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「治」 trong 「政治」 (“chính trị”).",
+        "en": "Type the reading of 「治」 in 「政治」 (“politics”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 政治, 治 đọc là じ (âm On).",
+        "en": "Correct! In 政治, 治 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 政治 (chính trị), 治 đọc là じ (âm On).",
+        "en": "In 政治 (politics), 治 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "治",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「治る」(khỏi bệnh) đọc là gì?",
+        "en": "How is 「治る」 (to be cured) read?"
+      },
+      "payload": {
+        "choices": [
+          "じる",
+          "なおる",
+          "やとう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 治る = なおる (khỏi bệnh); 治 đọc là なお (âm Kun).",
+        "en": "Correct! 治る = なおる (to be cured); 治 is read なお (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "治る đọc là なおる (khỏi bệnh): 治 mang âm Kun なお.",
+        "en": "治る is read なおる (to be cured): 治 takes the kun'yomi なお."
+      }
+    },
+    {
+      "item": "党",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「党」nghĩa là gì?",
+        "en": "What does 「党」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phái; phe",
+            "en": "faction; school"
+          },
+          {
+            "vi": "đảng; phe",
+            "en": "party"
+          },
+          {
+            "vi": "tổng; toàn bộ",
+            "en": "total; general"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 党 nghĩa là đảng; phe.",
+        "en": "Correct! 党 means party."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 党 nghĩa là đảng; phe, như trong 「政党」 (chính đảng).",
+        "en": "Not quite. 党 means party, as in 「政党」 (political party)."
+      }
+    },
+    {
+      "item": "党",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「党」 trong 「政党」 (“chính đảng”).",
+        "en": "Type the reading of 「党」 in 「政党」 (“political party”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 政党, 党 đọc là とう (âm On).",
+        "en": "Correct! In 政党, 党 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 政党 (chính đảng), 党 đọc là とう (âm On).",
+        "en": "In 政党 (political party), 党 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "党",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「野党」(đảng đối lập) đọc là gì?",
+        "en": "How is 「野党」 (opposition party) read?"
+      },
+      "payload": {
+        "choices": [
+          "やと",
+          "やどう",
+          "やとう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 野党 = やとう (đảng đối lập); 党 đọc là とう (âm On).",
+        "en": "Correct! 野党 = やとう (opposition party); 党 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "野党 đọc là やとう (đảng đối lập): 党 mang âm On とう.",
+        "en": "野党 is read やとう (opposition party): 党 takes the on'yomi とう."
+      }
+    },
+    {
+      "item": "派",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「派」nghĩa là gì?",
+        "en": "What does 「派」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tổng; toàn bộ",
+            "en": "total; general"
+          },
+          {
+            "vi": "cai trị; khỏi bệnh",
+            "en": "govern; cure"
+          },
+          {
+            "vi": "phái; phe",
+            "en": "faction; school"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 派 nghĩa là phái; phe.",
+        "en": "Correct! 派 means faction; school."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 派 nghĩa là phái; phe, như trong 「党派」 (phe phái).",
+        "en": "Not quite. 派 means faction; school, as in 「党派」 (faction)."
+      }
+    },
+    {
+      "item": "派",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「派」 trong 「党派」 (“phe phái”).",
+        "en": "Type the reading of 「派」 in 「党派」 (“faction”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "は",
+          "ハ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 党派, 派 đọc là は (âm On).",
+        "en": "Correct! In 党派, 派 is read は (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 党派 (phe phái), 派 đọc là は (âm On).",
+        "en": "In 党派 (faction), 派 is read は (on'yomi)."
+      }
+    },
+    {
+      "item": "派",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「派手」(lòe loẹt; sặc sỡ) đọc là gì?",
+        "en": "How is 「派手」 (flashy) read?"
+      },
+      "payload": {
+        "choices": [
+          "はで",
+          "ばで",
+          "はて"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 派手 = はで (lòe loẹt; sặc sỡ); 派 đọc là は (âm On).",
+        "en": "Correct! 派手 = はで (flashy); 派 is read は (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "派手 đọc là はで (lòe loẹt; sặc sỡ): 派 mang âm On は.",
+        "en": "派手 is read はで (flashy): 派 takes the on'yomi は."
+      }
+    },
+    {
+      "item": "総",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「総」nghĩa là gì?",
+        "en": "What does 「総」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tổng; toàn bộ",
+            "en": "total; general"
+          },
+          {
+            "vi": "cai trị; khỏi bệnh",
+            "en": "govern; cure"
+          },
+          {
+            "vi": "đảng; phe",
+            "en": "party"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 総 nghĩa là tổng; toàn bộ.",
+        "en": "Correct! 総 means total; general."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 総 nghĩa là tổng; toàn bộ, như trong 「総理」 (thủ tướng).",
+        "en": "Not quite. 総 means total; general, as in 「総理」 (prime minister)."
+      }
+    },
+    {
+      "item": "総",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「総」 trong 「総理」 (“thủ tướng”).",
+        "en": "Type the reading of 「総」 in 「総理」 (“prime minister”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 総理, 総 đọc là そう (âm On).",
+        "en": "Correct! In 総理, 総 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 総理 (thủ tướng), 総 đọc là そう (âm On).",
+        "en": "In 総理 (prime minister), 総 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "総",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「総合」(tổng hợp) đọc là gì?",
+        "en": "How is 「総合」 (synthesis) read?"
+      },
+      "payload": {
+        "choices": [
+          "そごう",
+          "そうごう",
+          "ぞうごう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 総合 = そうごう (tổng hợp); 総 đọc là そう (âm On).",
+        "en": "Correct! 総合 = そうごう (synthesis); 総 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "総合 đọc là そうごう (tổng hợp): 総 mang âm On そう.",
+        "en": "総合 is read そうごう (synthesis): 総 takes the on'yomi そう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "治",
+            {
+              "vi": "cai trị; khỏi bệnh",
+              "en": "govern; cure"
+            }
+          ],
+          [
+            "党",
+            {
+              "vi": "đảng; phe",
+              "en": "party"
+            }
+          ],
+          [
+            "派",
+            {
+              "vi": "phái; phe",
+              "en": "faction; school"
+            }
+          ],
+          [
+            "総",
+            {
+              "vi": "tổng; toàn bộ",
+              "en": "total; general"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

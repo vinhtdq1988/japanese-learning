@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (末 久 永)",
+    "en": "Adjectives and quantity kanji (末 久 永)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "末",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "cuối; kết",
+        "en": "end; tip"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "マツ",
+          "バツ"
+        ],
+        "kunReadings": [
+          "すえ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "週末",
+          "reading": "しゅうまつ",
+          "kanjiReading": "マツ",
+          "translation": {
+            "vi": "cuối tuần",
+            "en": "weekend"
+          }
+        },
+        {
+          "ja": "末",
+          "reading": "すえ",
+          "kanjiReading": "すえ",
+          "translation": {
+            "vi": "cuối; kết quả",
+            "en": "end"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "久",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "lâu",
+        "en": "long time"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ",
+          "ク"
+        ],
+        "kunReadings": [
+          "ひさ.しい"
+        ],
+        "strokeCount": 3
+      },
+      "examples": [
+        {
+          "ja": "永久",
+          "reading": "えいきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "vĩnh cửu",
+            "en": "eternity"
+          }
+        },
+        {
+          "ja": "久しぶり",
+          "reading": "ひさしぶり",
+          "kanjiReading": "ひさ",
+          "translation": {
+            "vi": "lâu rồi mới",
+            "en": "long time since"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "永",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "vĩnh; dài lâu",
+        "en": "eternal; long"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エイ"
+        ],
+        "kunReadings": [
+          "なが.い"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "永遠",
+          "reading": "えいえん",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "vĩnh viễn",
+            "en": "eternity"
+          }
+        },
+        {
+          "ja": "永い",
+          "reading": "ながい",
+          "kanjiReading": "なが",
+          "translation": {
+            "vi": "lâu dài (văn chương)",
+            "en": "long (literary)"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "末",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「末」nghĩa là gì?",
+        "en": "What does 「末」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cuối; kết",
+            "en": "end; tip"
+          },
+          {
+            "vi": "lâu",
+            "en": "long time"
+          },
+          {
+            "vi": "vĩnh; dài lâu",
+            "en": "eternal; long"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 末 nghĩa là cuối; kết.",
+        "en": "Correct! 末 means end; tip."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 末 nghĩa là cuối; kết, như trong 「週末」 (cuối tuần).",
+        "en": "Not quite. 末 means end; tip, as in 「週末」 (weekend)."
+      }
+    },
+    {
+      "item": "末",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「末」 trong 「週末」 (“cuối tuần”).",
+        "en": "Type the reading of 「末」 in 「週末」 (“weekend”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "まつ",
+          "マツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 週末, 末 đọc là まつ (âm On).",
+        "en": "Correct! In 週末, 末 is read まつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 週末 (cuối tuần), 末 đọc là まつ (âm On).",
+        "en": "In 週末 (weekend), 末 is read まつ (on'yomi)."
+      }
+    },
+    {
+      "item": "末",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「末」(cuối; kết quả; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「末」 (end; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "まつ",
+          "すえ",
+          "ながい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 末 = すえ (cuối; kết quả); 末 đọc là すえ (âm Kun).",
+        "en": "Correct! 末 = すえ (end); 末 is read すえ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "末 đọc là すえ (cuối; kết quả): 末 mang âm Kun すえ.",
+        "en": "末 is read すえ (end): 末 takes the kun'yomi すえ."
+      }
+    },
+    {
+      "item": "久",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「久」nghĩa là gì?",
+        "en": "What does 「久」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vĩnh; dài lâu",
+            "en": "eternal; long"
+          },
+          {
+            "vi": "lâu",
+            "en": "long time"
+          },
+          {
+            "vi": "cuối; kết",
+            "en": "end; tip"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 久 nghĩa là lâu.",
+        "en": "Correct! 久 means long time."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 久 nghĩa là lâu, như trong 「永久」 (vĩnh cửu).",
+        "en": "Not quite. 久 means long time, as in 「永久」 (eternity)."
+      }
+    },
+    {
+      "item": "久",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「久」 trong 「永久」 (“vĩnh cửu”).",
+        "en": "Type the reading of 「久」 in 「永久」 (“eternity”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 永久, 久 đọc là きゅう (âm On).",
+        "en": "Correct! In 永久, 久 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 永久 (vĩnh cửu), 久 đọc là きゅう (âm On).",
+        "en": "In 永久 (eternity), 久 is read きゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "久",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「久しぶり」(lâu rồi mới) đọc là gì?",
+        "en": "How is 「久しぶり」 (long time since) read?"
+      },
+      "payload": {
+        "choices": [
+          "きゅうしぶり",
+          "しゅうまつ",
+          "ひさしぶり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 久しぶり = ひさしぶり (lâu rồi mới); 久 đọc là ひさ (âm Kun).",
+        "en": "Correct! 久しぶり = ひさしぶり (long time since); 久 is read ひさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "久しぶり đọc là ひさしぶり (lâu rồi mới): 久 mang âm Kun ひさ.",
+        "en": "久しぶり is read ひさしぶり (long time since): 久 takes the kun'yomi ひさ."
+      }
+    },
+    {
+      "item": "永",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「永」nghĩa là gì?",
+        "en": "What does 「永」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cuối; kết",
+            "en": "end; tip"
+          },
+          {
+            "vi": "lâu",
+            "en": "long time"
+          },
+          {
+            "vi": "vĩnh; dài lâu",
+            "en": "eternal; long"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 永 nghĩa là vĩnh; dài lâu.",
+        "en": "Correct! 永 means eternal; long."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 永 nghĩa là vĩnh; dài lâu, như trong 「永遠」 (vĩnh viễn).",
+        "en": "Not quite. 永 means eternal; long, as in 「永遠」 (eternity)."
+      }
+    },
+    {
+      "item": "永",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「永」 trong 「永遠」 (“vĩnh viễn”).",
+        "en": "Type the reading of 「永」 in 「永遠」 (“eternity”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えい",
+          "エイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 永遠, 永 đọc là えい (âm On).",
+        "en": "Correct! In 永遠, 永 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 永遠 (vĩnh viễn), 永 đọc là えい (âm On).",
+        "en": "In 永遠 (eternity), 永 is read えい (on'yomi)."
+      }
+    },
+    {
+      "item": "永",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「永い」(lâu dài (văn chương)) đọc là gì?",
+        "en": "How is 「永い」 (long (literary)) read?"
+      },
+      "payload": {
+        "choices": [
+          "ながい",
+          "えいい",
+          "すえ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 永い = ながい (lâu dài (văn chương)); 永 đọc là なが (âm Kun).",
+        "en": "Correct! 永い = ながい (long (literary)); 永 is read なが (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "永い đọc là ながい (lâu dài (văn chương)): 永 mang âm Kun なが.",
+        "en": "永い is read ながい (long (literary)): 永 takes the kun'yomi なが."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "末",
+            {
+              "vi": "cuối; kết",
+              "en": "end; tip"
+            }
+          ],
+          [
+            "久",
+            {
+              "vi": "lâu",
+              "en": "long time"
+            }
+          ],
+          [
+            "永",
+            {
+              "vi": "vĩnh; dài lâu",
+              "en": "eternal; long"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

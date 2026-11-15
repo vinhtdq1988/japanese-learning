@@ -1,0 +1,552 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-daily-verbs",
+  "title": {
+    "vi": "Kanji động từ sinh hoạt (立 開 動 言)",
+    "en": "Daily verbs kanji (立 開 動 言)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "立",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "đứng; dựng",
+        "en": "stand"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リツ",
+          "リュウ"
+        ],
+        "kunReadings": [
+          "た.つ",
+          "た.てる"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "国立",
+          "reading": "こくりつ",
+          "kanjiReading": "リツ",
+          "translation": {
+            "vi": "quốc lập",
+            "en": "national (institution)"
+          }
+        },
+        {
+          "ja": "立つ",
+          "reading": "たつ",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "đứng",
+            "en": "to stand"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "開",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "mở",
+        "en": "open"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ"
+        ],
+        "kunReadings": [
+          "ひら.く",
+          "あ.く",
+          "あ.ける"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "開始",
+          "reading": "かいし",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "bắt đầu",
+            "en": "start"
+          }
+        },
+        {
+          "ja": "開ける",
+          "reading": "あける",
+          "kanjiReading": "あ",
+          "translation": {
+            "vi": "mở",
+            "en": "to open"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "動",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "chuyển động",
+        "en": "move"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドウ"
+        ],
+        "kunReadings": [
+          "うご.く"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "動物",
+          "reading": "どうぶつ",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "động vật",
+            "en": "animal"
+          }
+        },
+        {
+          "ja": "動く",
+          "reading": "うごく",
+          "kanjiReading": "うご",
+          "translation": {
+            "vi": "chuyển động",
+            "en": "to move"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "言",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "nói; lời",
+        "en": "say; word"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン",
+          "ゴン"
+        ],
+        "kunReadings": [
+          "い.う",
+          "こと"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "言語",
+          "reading": "げんご",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "ngôn ngữ",
+            "en": "language"
+          }
+        },
+        {
+          "ja": "言う",
+          "reading": "いう",
+          "kanjiReading": "い",
+          "translation": {
+            "vi": "nói",
+            "en": "to say"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "立",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「立」nghĩa là gì?",
+        "en": "What does 「立」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đứng; dựng",
+            "en": "stand"
+          },
+          {
+            "vi": "mở",
+            "en": "open"
+          },
+          {
+            "vi": "chuyển động",
+            "en": "move"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 立 nghĩa là đứng; dựng.",
+        "en": "Correct! 立 means stand."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 立 nghĩa là đứng; dựng, như trong 「国立」 (quốc lập).",
+        "en": "Not quite. 立 means stand, as in 「国立」 (national (institution))."
+      }
+    },
+    {
+      "item": "立",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「立」 trong 「国立」 (“quốc lập”).",
+        "en": "Type the reading of 「立」 in 「国立」 (“national (institution)”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りつ",
+          "リツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 国立, 立 đọc là りつ (âm On).",
+        "en": "Correct! In 国立, 立 is read りつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 国立 (quốc lập), 立 đọc là りつ (âm On).",
+        "en": "In 国立 (national (institution)), 立 is read りつ (on'yomi)."
+      }
+    },
+    {
+      "item": "立",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「立つ」(đứng) đọc là gì?",
+        "en": "How is 「立つ」 (to stand) read?"
+      },
+      "payload": {
+        "choices": [
+          "りつつ",
+          "たつ",
+          "いう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 立つ = たつ (đứng); 立 đọc là た (âm Kun).",
+        "en": "Correct! 立つ = たつ (to stand); 立 is read た (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "立つ đọc là たつ (đứng): 立 mang âm Kun た.",
+        "en": "立つ is read たつ (to stand): 立 takes the kun'yomi た."
+      }
+    },
+    {
+      "item": "開",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「開」nghĩa là gì?",
+        "en": "What does 「開」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chuyển động",
+            "en": "move"
+          },
+          {
+            "vi": "mở",
+            "en": "open"
+          },
+          {
+            "vi": "nói; lời",
+            "en": "say; word"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 開 nghĩa là mở.",
+        "en": "Correct! 開 means open."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 開 nghĩa là mở, như trong 「開始」 (bắt đầu).",
+        "en": "Not quite. 開 means open, as in 「開始」 (start)."
+      }
+    },
+    {
+      "item": "開",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「開」 trong 「開始」 (“bắt đầu”).",
+        "en": "Type the reading of 「開」 in 「開始」 (“start”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 開始, 開 đọc là かい (âm On).",
+        "en": "Correct! In 開始, 開 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 開始 (bắt đầu), 開 đọc là かい (âm On).",
+        "en": "In 開始 (start), 開 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "開",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「開ける」(mở) đọc là gì?",
+        "en": "How is 「開ける」 (to open) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいける",
+          "うごく",
+          "あける"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 開ける = あける (mở); 開 đọc là あ (âm Kun).",
+        "en": "Correct! 開ける = あける (to open); 開 is read あ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "開ける đọc là あける (mở): 開 mang âm Kun あ.",
+        "en": "開ける is read あける (to open): 開 takes the kun'yomi あ."
+      }
+    },
+    {
+      "item": "動",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「動」nghĩa là gì?",
+        "en": "What does 「動」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nói; lời",
+            "en": "say; word"
+          },
+          {
+            "vi": "đứng; dựng",
+            "en": "stand"
+          },
+          {
+            "vi": "chuyển động",
+            "en": "move"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 動 nghĩa là chuyển động.",
+        "en": "Correct! 動 means move."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 動 nghĩa là chuyển động, như trong 「動物」 (động vật).",
+        "en": "Not quite. 動 means move, as in 「動物」 (animal)."
+      }
+    },
+    {
+      "item": "動",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「動」 trong 「動物」 (“động vật”).",
+        "en": "Type the reading of 「動」 in 「動物」 (“animal”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どう",
+          "ドウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 動物, 動 đọc là どう (âm On).",
+        "en": "Correct! In 動物, 動 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 動物 (động vật), 動 đọc là どう (âm On).",
+        "en": "In 動物 (animal), 動 is read どう (on'yomi)."
+      }
+    },
+    {
+      "item": "動",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「動く」(chuyển động) đọc là gì?",
+        "en": "How is 「動く」 (to move) read?"
+      },
+      "payload": {
+        "choices": [
+          "うごく",
+          "どうく",
+          "げんご"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 動く = うごく (chuyển động); 動 đọc là うご (âm Kun).",
+        "en": "Correct! 動く = うごく (to move); 動 is read うご (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "動く đọc là うごく (chuyển động): 動 mang âm Kun うご.",
+        "en": "動く is read うごく (to move): 動 takes the kun'yomi うご."
+      }
+    },
+    {
+      "item": "言",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「言」nghĩa là gì?",
+        "en": "What does 「言」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nói; lời",
+            "en": "say; word"
+          },
+          {
+            "vi": "đứng; dựng",
+            "en": "stand"
+          },
+          {
+            "vi": "mở",
+            "en": "open"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 言 nghĩa là nói; lời.",
+        "en": "Correct! 言 means say; word."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 言 nghĩa là nói; lời, như trong 「言語」 (ngôn ngữ).",
+        "en": "Not quite. 言 means say; word, as in 「言語」 (language)."
+      }
+    },
+    {
+      "item": "言",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「言」 trong 「言語」 (“ngôn ngữ”).",
+        "en": "Type the reading of 「言」 in 「言語」 (“language”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 言語, 言 đọc là げん (âm On).",
+        "en": "Correct! In 言語, 言 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 言語 (ngôn ngữ), 言 đọc là げん (âm On).",
+        "en": "In 言語 (language), 言 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "言",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「言う」(nói) đọc là gì?",
+        "en": "How is 「言う」 (to say) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんう",
+          "いう",
+          "たつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 言う = いう (nói); 言 đọc là い (âm Kun).",
+        "en": "Correct! 言う = いう (to say); 言 is read い (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "言う đọc là いう (nói): 言 mang âm Kun い.",
+        "en": "言う is read いう (to say): 言 takes the kun'yomi い."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "立",
+            {
+              "vi": "đứng; dựng",
+              "en": "stand"
+            }
+          ],
+          [
+            "開",
+            {
+              "vi": "mở",
+              "en": "open"
+            }
+          ],
+          [
+            "動",
+            {
+              "vi": "chuyển động",
+              "en": "move"
+            }
+          ],
+          [
+            "言",
+            {
+              "vi": "nói; lời",
+              "en": "say; word"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

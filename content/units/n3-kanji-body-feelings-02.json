@@ -1,0 +1,673 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (皮 毛 骨 腹 胸)",
+    "en": "Body and feelings kanji (皮 毛 骨 腹 胸)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "皮",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "da; vỏ",
+        "en": "skin; peel"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "かわ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "皮膚",
+          "reading": "ひふ",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "da",
+            "en": "skin"
+          }
+        },
+        {
+          "ja": "皮",
+          "reading": "かわ",
+          "kanjiReading": "かわ",
+          "translation": {
+            "vi": "da; vỏ",
+            "en": "skin; peel"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "毛",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "lông; tóc",
+        "en": "hair; fur"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "モウ"
+        ],
+        "kunReadings": [
+          "け"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "毛布",
+          "reading": "もうふ",
+          "kanjiReading": "モウ",
+          "translation": {
+            "vi": "chăn",
+            "en": "blanket"
+          }
+        },
+        {
+          "ja": "毛糸",
+          "reading": "けいと",
+          "kanjiReading": "け",
+          "translation": {
+            "vi": "len",
+            "en": "yarn"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "骨",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "xương",
+        "en": "bone"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コツ"
+        ],
+        "kunReadings": [
+          "ほね"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "鉄骨",
+          "reading": "てっこつ",
+          "kanjiReading": "コツ",
+          "translation": {
+            "vi": "khung thép",
+            "en": "steel frame"
+          }
+        },
+        {
+          "ja": "骨",
+          "reading": "ほね",
+          "kanjiReading": "ほね",
+          "translation": {
+            "vi": "xương",
+            "en": "bone"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腹",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "bụng",
+        "en": "belly"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フク"
+        ],
+        "kunReadings": [
+          "はら"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "腹痛",
+          "reading": "ふくつう",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "đau bụng",
+            "en": "stomachache"
+          }
+        },
+        {
+          "ja": "腹",
+          "reading": "はら",
+          "kanjiReading": "はら",
+          "translation": {
+            "vi": "cái bụng",
+            "en": "belly"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "胸",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "ngực; lòng",
+        "en": "chest; heart"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ"
+        ],
+        "kunReadings": [
+          "むね",
+          "むな"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "度胸",
+          "reading": "どきょう",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "dũng khí",
+            "en": "courage"
+          }
+        },
+        {
+          "ja": "胸",
+          "reading": "むね",
+          "kanjiReading": "むね",
+          "translation": {
+            "vi": "ngực",
+            "en": "chest"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "皮",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「皮」nghĩa là gì?",
+        "en": "What does 「皮」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "da; vỏ",
+            "en": "skin; peel"
+          },
+          {
+            "vi": "lông; tóc",
+            "en": "hair; fur"
+          },
+          {
+            "vi": "xương",
+            "en": "bone"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 皮 nghĩa là da; vỏ.",
+        "en": "Correct! 皮 means skin; peel."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 皮 nghĩa là da; vỏ, như trong 「皮膚」 (da).",
+        "en": "Not quite. 皮 means skin; peel, as in 「皮膚」 (skin)."
+      }
+    },
+    {
+      "item": "皮",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「皮」 trong 「皮膚」 (“da”).",
+        "en": "Type the reading of 「皮」 in 「皮膚」 (“skin”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 皮膚, 皮 đọc là ひ (âm On).",
+        "en": "Correct! In 皮膚, 皮 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 皮膚 (da), 皮 đọc là ひ (âm On).",
+        "en": "In 皮膚 (skin), 皮 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "皮",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「皮」(da; vỏ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「皮」 (skin; peel; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひ",
+          "かわ",
+          "ほね"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 皮 = かわ (da; vỏ); 皮 đọc là かわ (âm Kun).",
+        "en": "Correct! 皮 = かわ (skin; peel); 皮 is read かわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "皮 đọc là かわ (da; vỏ): 皮 mang âm Kun かわ.",
+        "en": "皮 is read かわ (skin; peel): 皮 takes the kun'yomi かわ."
+      }
+    },
+    {
+      "item": "毛",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「毛」nghĩa là gì?",
+        "en": "What does 「毛」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xương",
+            "en": "bone"
+          },
+          {
+            "vi": "lông; tóc",
+            "en": "hair; fur"
+          },
+          {
+            "vi": "bụng",
+            "en": "belly"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 毛 nghĩa là lông; tóc.",
+        "en": "Correct! 毛 means hair; fur."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 毛 nghĩa là lông; tóc, như trong 「毛布」 (chăn).",
+        "en": "Not quite. 毛 means hair; fur, as in 「毛布」 (blanket)."
+      }
+    },
+    {
+      "item": "毛",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「毛」 trong 「毛布」 (“chăn”).",
+        "en": "Type the reading of 「毛」 in 「毛布」 (“blanket”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "もう",
+          "モウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 毛布, 毛 đọc là もう (âm On).",
+        "en": "Correct! In 毛布, 毛 is read もう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 毛布 (chăn), 毛 đọc là もう (âm On).",
+        "en": "In 毛布 (blanket), 毛 is read もう (on'yomi)."
+      }
+    },
+    {
+      "item": "毛",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「毛糸」(len) đọc là gì?",
+        "en": "How is 「毛糸」 (yarn) read?"
+      },
+      "payload": {
+        "choices": [
+          "もういと",
+          "げいと",
+          "けいと"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 毛糸 = けいと (len); 毛 đọc là け (âm Kun).",
+        "en": "Correct! 毛糸 = けいと (yarn); 毛 is read け (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "毛糸 đọc là けいと (len): 毛 mang âm Kun け.",
+        "en": "毛糸 is read けいと (yarn): 毛 takes the kun'yomi け."
+      }
+    },
+    {
+      "item": "骨",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「骨」nghĩa là gì?",
+        "en": "What does 「骨」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bụng",
+            "en": "belly"
+          },
+          {
+            "vi": "ngực; lòng",
+            "en": "chest; heart"
+          },
+          {
+            "vi": "xương",
+            "en": "bone"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 骨 nghĩa là xương.",
+        "en": "Correct! 骨 means bone."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 骨 nghĩa là xương, như trong 「鉄骨」 (khung thép).",
+        "en": "Not quite. 骨 means bone, as in 「鉄骨」 (steel frame)."
+      }
+    },
+    {
+      "item": "骨",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「骨」 trong 「鉄骨」 (“khung thép”).",
+        "en": "Type the reading of 「骨」 in 「鉄骨」 (“steel frame”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こつ",
+          "コツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 鉄骨, 骨 đọc là こつ (âm On).",
+        "en": "Correct! In 鉄骨, 骨 is read こつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 鉄骨 (khung thép), 骨 đọc là こつ (âm On).",
+        "en": "In 鉄骨 (steel frame), 骨 is read こつ (on'yomi)."
+      }
+    },
+    {
+      "item": "骨",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「骨」(xương; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「骨」 (bone; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほね",
+          "こつ",
+          "むね"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 骨 = ほね (xương); 骨 đọc là ほね (âm Kun).",
+        "en": "Correct! 骨 = ほね (bone); 骨 is read ほね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "骨 đọc là ほね (xương): 骨 mang âm Kun ほね.",
+        "en": "骨 is read ほね (bone): 骨 takes the kun'yomi ほね."
+      }
+    },
+    {
+      "item": "腹",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「腹」nghĩa là gì?",
+        "en": "What does 「腹」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bụng",
+            "en": "belly"
+          },
+          {
+            "vi": "ngực; lòng",
+            "en": "chest; heart"
+          },
+          {
+            "vi": "da; vỏ",
+            "en": "skin; peel"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 腹 nghĩa là bụng.",
+        "en": "Correct! 腹 means belly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 腹 nghĩa là bụng, như trong 「腹痛」 (đau bụng).",
+        "en": "Not quite. 腹 means belly, as in 「腹痛」 (stomachache)."
+      }
+    },
+    {
+      "item": "腹",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「腹」 trong 「腹痛」 (“đau bụng”).",
+        "en": "Type the reading of 「腹」 in 「腹痛」 (“stomachache”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふく",
+          "フク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 腹痛, 腹 đọc là ふく (âm On).",
+        "en": "Correct! In 腹痛, 腹 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 腹痛 (đau bụng), 腹 đọc là ふく (âm On).",
+        "en": "In 腹痛 (stomachache), 腹 is read ふく (on'yomi)."
+      }
+    },
+    {
+      "item": "腹",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「腹」(cái bụng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「腹」 (belly; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふく",
+          "はら",
+          "むね"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 腹 = はら (cái bụng); 腹 đọc là はら (âm Kun).",
+        "en": "Correct! 腹 = はら (belly); 腹 is read はら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "腹 đọc là はら (cái bụng): 腹 mang âm Kun はら.",
+        "en": "腹 is read はら (belly): 腹 takes the kun'yomi はら."
+      }
+    },
+    {
+      "item": "胸",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「胸」nghĩa là gì?",
+        "en": "What does 「胸」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "da; vỏ",
+            "en": "skin; peel"
+          },
+          {
+            "vi": "ngực; lòng",
+            "en": "chest; heart"
+          },
+          {
+            "vi": "lông; tóc",
+            "en": "hair; fur"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 胸 nghĩa là ngực; lòng.",
+        "en": "Correct! 胸 means chest; heart."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 胸 nghĩa là ngực; lòng, như trong 「度胸」 (dũng khí).",
+        "en": "Not quite. 胸 means chest; heart, as in 「度胸」 (courage)."
+      }
+    },
+    {
+      "item": "胸",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「胸」 trong 「度胸」 (“dũng khí”).",
+        "en": "Type the reading of 「胸」 in 「度胸」 (“courage”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 度胸, 胸 đọc là きょう (âm On).",
+        "en": "Correct! In 度胸, 胸 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 度胸 (dũng khí), 胸 đọc là きょう (âm On).",
+        "en": "In 度胸 (courage), 胸 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "胸",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「胸」(ngực; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「胸」 (chest; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょう",
+          "ほね",
+          "むね"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 胸 = むね (ngực); 胸 đọc là むね (âm Kun).",
+        "en": "Correct! 胸 = むね (chest); 胸 is read むね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "胸 đọc là むね (ngực): 胸 mang âm Kun むね.",
+        "en": "胸 is read むね (chest): 胸 takes the kun'yomi むね."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "皮",
+            {
+              "vi": "da; vỏ",
+              "en": "skin; peel"
+            }
+          ],
+          [
+            "毛",
+            {
+              "vi": "lông; tóc",
+              "en": "hair; fur"
+            }
+          ],
+          [
+            "骨",
+            {
+              "vi": "xương",
+              "en": "bone"
+            }
+          ],
+          [
+            "腹",
+            {
+              "vi": "bụng",
+              "en": "belly"
+            }
+          ],
+          [
+            "胸",
+            {
+              "vi": "ngực; lòng",
+              "en": "chest; heart"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

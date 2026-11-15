@@ -19,6 +19,7 @@ import { localize } from '../domain/i18n.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
 import type { Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
+import type { SkillCompetency, TopicCompetency } from '../engine/competency.js';
 import {
   allocateKanjiSeconds,
   currentStreakDays,
@@ -28,6 +29,7 @@ import {
 import { upcomingUnits, type ScopeNotice } from '../engine/path.js';
 import type { ServiceDeps } from './deps.js';
 import { secondsToMinutes } from './lesson-session.js';
+import { loadCompetency } from './competency.js';
 import { rankForContext, resolveLearningContext } from './learning-context.js';
 
 // Dịch vụ tóm tắt tiến độ (T085, FR-026 → FR-029): chế độ xem TÍNH TOÁN từ dữ liệu đã ghi, không lưu.
@@ -56,6 +58,11 @@ export interface ProgressDto {
    */
   kanji: KanjiProgressDto | null;
   weakTopics: { topicId: string; name: string; skill: Skill; accuracy: number }[];
+  /**
+   * Năng lực theo kỹ năng và theo chủ đề (spec 007, FR-018): cùng nguồn với `GET /today` và `GET /path`.
+   * `weakTopics` luôn là tập con của chủ đề `needs_improvement` trong `topics`.
+   */
+  competency: { skills: SkillCompetency[]; topics: TopicCompetency[] };
 }
 
 export interface KanjiProgressDto {
@@ -80,6 +87,7 @@ function emptySummary(): ProgressDto {
     goal: { completionRatio: 0, onTrack: null, targetDate: null, scopeNotice: null },
     kanji: null,
     weakTopics: [],
+    competency: { skills: [], topics: [] },
   };
 }
 
@@ -91,7 +99,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
   const { profile, params } = ctx;
 
   const today = localToday(deps.clock, profile.timezone);
-  const [intervals, review, activeDays, pauses, lessonsCompleted, hasData, weak, ranked] =
+  const [intervals, review, activeDays, pauses, lessonsCompleted, hasData, weak, ranked, competency] =
     await Promise.all([
       listUserIntervals(deps.db, userId),
       countReviewResults(deps.db, userId),
@@ -102,6 +110,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
       hasAnyStudyData(deps.db, userId),
       listWeakTopicStats(deps.db, userId),
       rankForContext(deps, userId, ctx, { includeMastered: true }),
+      loadCompetency(deps, userId, profile.skills),
     ]);
 
   const goal = goalRatio(ranked);
@@ -139,6 +148,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
       skill: topicSkills.get(w.topicId) ?? 'vocabulary',
       accuracy: round3(w.accuracy ?? 0),
     })),
+    competency: { skills: competency.skills, topics: competency.topics },
   };
 }
 

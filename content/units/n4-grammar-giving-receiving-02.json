@@ -1,0 +1,585 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-giving-receiving",
+  "title": {
+    "vi": "Cho – nhận (2): 〜てもらう, さしあげる, くださる, いただく, 〜ていただく",
+    "en": "Giving and receiving (2): 〜てもらう, honorific and humble forms"
+  },
+  "goalTags": [
+    "jlpt"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 620,
+  "isTrial": false,
+  "requires": [
+    "n4-grammar-giving-receiving-01"
+  ],
+  "items": [
+    {
+      "japanese": "〜てもらう",
+      "meaning": {
+        "vi": "Nhờ/được (ai đó) làm ~ cho mình",
+        "en": "Have/get someone do ~ for me"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: mình nhận được việc tốt do người khác làm. Kết hợp: A は B に + động từ thể て + もらう; chủ ngữ là người nhận lợi ích. Cùng sự việc với 〜てくれる nhưng đứng từ phía người được giúp.",
+        "en": "Meaning: I receive a favor that someone does. Form: A は B に + verb て-form + もらう; the subject is the beneficiary. It describes the same event as 〜てくれる but from the beneficiary's side."
+      },
+      "examples": [
+        {
+          "ja": "友だちに引っ越しを手伝ってもらいました。",
+          "reading": "ともだちにひっこしをてつだってもらいました。",
+          "translation": {
+            "vi": "Tôi đã được bạn giúp chuyển nhà.",
+            "en": "I had my friend help me move."
+          }
+        },
+        {
+          "ja": "先生に作文を見てもらいました。",
+          "reading": "せんせいにさくぶんをみてもらいました。",
+          "translation": {
+            "vi": "Tôi đã nhờ thầy xem giúp bài văn.",
+            "en": "I had my teacher look over my essay."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-044"
+    },
+    {
+      "japanese": "さしあげる",
+      "meaning": {
+        "vi": "Biếu, dâng (khiêm nhường của あげる)",
+        "en": "Give (humble form of あげる)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: mình cho người trên hoặc khách một cách lịch sự. Kết hợp: A は B に N をさしあげる. Là dạng khiêm nhường của あげる, dùng khi người nhận cần được tôn trọng.",
+        "en": "Meaning: giving something to a superior or customer politely. Form: A は B に N をさしあげる. It is the humble form of あげる, used when the recipient deserves respect."
+      },
+      "examples": [
+        {
+          "ja": "先生にお土産をさしあげました。",
+          "reading": "せんせいにおみやげをさしあげました。",
+          "translation": {
+            "vi": "Tôi đã biếu thầy một món quà lưu niệm.",
+            "en": "I presented a souvenir to my teacher."
+          }
+        },
+        {
+          "ja": "お客様に資料をさしあげます。",
+          "reading": "おきゃくさまにしりょうをさしあげます。",
+          "translation": {
+            "vi": "Tôi sẽ gửi tài liệu đến quý khách.",
+            "en": "I will give the materials to the customer."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-039"
+    },
+    {
+      "japanese": "くださる",
+      "meaning": {
+        "vi": "Cho (tôi) (kính ngữ của くれる)",
+        "en": "Give (to me) (honorific of くれる)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: người trên cho tôi. Kết hợp: A が (私に) N をくださる. Là kính ngữ của くれる, chủ ngữ là người được tôn kính. Thể ます là 「くださいます」, quá khứ 「くださいました」.",
+        "en": "Meaning: a superior gives something to me. Form: A が (私に) N をくださる. It is the honorific of くれる and the subject is the respected person. Polite form 「くださいます」, past 「くださいました」."
+      },
+      "examples": [
+        {
+          "ja": "先生が私に本をくださいました。",
+          "reading": "せんせいがわたしにほんをくださいました。",
+          "translation": {
+            "vi": "Thầy đã cho tôi một cuốn sách.",
+            "en": "My teacher gave me a book."
+          }
+        },
+        {
+          "ja": "社長が、お土産をくださいました。",
+          "reading": "しゃちょうが、おみやげをくださいました。",
+          "translation": {
+            "vi": "Giám đốc đã tặng quà lưu niệm cho chúng tôi.",
+            "en": "The company president gave us a souvenir."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-040"
+    },
+    {
+      "japanese": "いただく",
+      "meaning": {
+        "vi": "Nhận (khiêm nhường của もらう)",
+        "en": "Receive (humble form of もらう)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: mình nhận từ người trên một cách khiêm nhường. Kết hợp: A は B に/から N をいただく. Là khiêm nhường ngữ của もらう; cũng dùng 「いただきます」 trước bữa ăn.",
+        "en": "Meaning: I humbly receive something from a superior. Form: A は B に/から N をいただく. It is the humble form of もらう; 「いただきます」 is also said before meals."
+      },
+      "examples": [
+        {
+          "ja": "先生に辞書をいただきました。",
+          "reading": "せんせいにじしょをいただきました。",
+          "translation": {
+            "vi": "Tôi đã được thầy cho một cuốn từ điển.",
+            "en": "I received a dictionary from my teacher."
+          }
+        },
+        {
+          "ja": "お客様からお礼の手紙をいただきました。",
+          "reading": "おきゃくさまからおれいのてがみをいただきました。",
+          "translation": {
+            "vi": "Tôi đã nhận được thư cảm ơn từ quý khách.",
+            "en": "I received a thank-you letter from a customer."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-041"
+    },
+    {
+      "japanese": "〜ていただく",
+      "meaning": {
+        "vi": "Được (người trên) làm ~ cho (khiêm nhường)",
+        "en": "Have a superior do ~ for me (humble)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: nhận được việc tốt do người trên làm. Kết hợp: A は B に + động từ thể て + いただく. Là khiêm nhường ngữ của 〜てもらう; cặp với 〜てくださる (cùng sự việc, chủ ngữ là người làm).",
+        "en": "Meaning: a superior does a favor for me. Form: A は B に + verb て-form + いただく. It is the humble form of 〜てもらう; its pair 〜てくださる describes the same event with the doer as subject."
+      },
+      "examples": [
+        {
+          "ja": "先生に作文を直していただきました。",
+          "reading": "せんせいにさくぶんをなおしていただきました。",
+          "translation": {
+            "vi": "Tôi đã được thầy sửa giúp bài văn.",
+            "en": "My teacher corrected my essay for me."
+          }
+        },
+        {
+          "ja": "部長に会議に出ていただきます。",
+          "reading": "ぶちょうにかいぎにでていただきます。",
+          "translation": {
+            "vi": "Chúng tôi sẽ mời trưởng phòng tham dự cuộc họp.",
+            "en": "We will have the department head attend the meeting."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-045"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜てもらう",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n友だちに引っ越しを手伝って（　）。",
+        "en": "Choose the correct option for the blank:\n友だちに引っ越しを手伝って（　）。"
+      },
+      "payload": {
+        "choices": [
+          "くれました",
+          "もらいました",
+          "あげました",
+          "やりました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người được giúp là mình (友だちに…もらう) nên dùng 「〜てもらいました」.",
+        "en": "Correct! I am the one helped (友だちに…もらう), so 「〜てもらいました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người được giúp là mình (友だちに…もらう) nên dùng 「〜てもらいました」.",
+        "en": "Not quite. I am the one helped (友だちに…もらう), so 「〜てもらいました」 is used."
+      }
+    },
+    {
+      "item": "〜てもらう",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は友だちに宿題を見てもらいました。",
+          "私は友だちが宿題を見てもらいました。",
+          "私は友だちを宿題を見てもらいました。",
+          "私は友だちで宿題を見てもらいました。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 〜てもらう đánh dấu người làm bằng 「に」: 「友だちに〜てもらう」.",
+        "en": "Correct! 〜てもらう marks the doer with 「に」: 「友だちに〜てもらう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 〜てもらう đánh dấu người làm bằng 「に」: 「友だちに〜てもらう」.",
+        "en": "Not quite. 〜てもらう marks the doer with 「に」: 「友だちに〜てもらう」."
+      }
+    },
+    {
+      "item": "さしあげる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生にお土産を（　）。\n（Tôi tặng quà cho thầy.）",
+        "en": "Choose the correct option for the blank:\n先生にお土産を（　）。\n(I am giving a souvenir to my teacher.)"
+      },
+      "payload": {
+        "choices": [
+          "くださいました",
+          "いただきました",
+          "くれました",
+          "さしあげました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mình biếu người trên: 「さしあげました」; くださる/いただく dùng khi mình nhận.",
+        "en": "Correct! I give to a superior: 「さしあげました」; くださる/いただく are used when I receive."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mình biếu người trên: 「さしあげました」; くださる/いただく dùng khi mình nhận.",
+        "en": "Not quite. I give to a superior: 「さしあげました」; くださる/いただく are used when I receive."
+      }
+    },
+    {
+      "item": "さしあげる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người nhận là khách hàng. Chọn cách nói khiêm nhường, lịch sự nhất:\nお客様に資料を（　）。",
+        "en": "The recipient is a customer. Choose the most humble and polite option:\nお客様に資料を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "あげます",
+          "やります",
+          "さしあげます",
+          "くれます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người nhận là khách và cần nói lịch sự cao nên dùng 「さしあげます」, không dùng あげる/やる.",
+        "en": "Correct! The recipient is a customer and a very polite register is needed, so 「さしあげます」 is used instead of あげる/やる."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người nhận là khách và cần nói lịch sự cao nên dùng 「さしあげます」, không dùng あげる/やる.",
+        "en": "Not quite. The recipient is a customer and a very polite register is needed, so 「さしあげます」 is used instead of あげる/やる."
+      }
+    },
+    {
+      "item": "くださる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生が私に本を（　）。",
+        "en": "Choose the correct option for the blank:\n先生が私に本を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "さしあげました",
+          "くださいました",
+          "いただきました",
+          "あげました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người trên cho mình, chủ ngữ là 先生 nên dùng 「くださいました」.",
+        "en": "Correct! A superior gives to me and the subject is 先生, so 「くださいました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người trên cho mình, chủ ngữ là 先生 nên dùng 「くださいました」.",
+        "en": "Not quite. A superior gives to me and the subject is 先生, so 「くださいました」 is used."
+      }
+    },
+    {
+      "item": "くださる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n社長がお土産を___ました。",
+        "en": "Choose the correct option for the blank:\n社長がお土産を___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ください"
+        ],
+        "hint": "くださる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể ます của 「くださる」 là 「くださいます」 (bất quy tắc), nên 「くださいました」.",
+        "en": "Correct! The ます-form of 「くださる」 is irregular: 「くださいます」, so 「くださいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể ます của 「くださる」 là 「くださいます」 (bất quy tắc), nên 「くださいました」.",
+        "en": "Not quite. The ます-form of 「くださる」 is irregular: 「くださいます」, so 「くださいました」."
+      }
+    },
+    {
+      "item": "くださる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n先生が私に辞書を（　）。",
+        "en": "Choose the pattern that best fits the context:\n先生が私に辞書を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "くださいました",
+          "いただきました",
+          "さしあげました",
+          "もらいました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ 「先生が」 là người cho nên dùng 「くださいました」; chủ ngữ là người nhận mới dùng いただく.",
+        "en": "Correct! The subject 「先生が」 is the giver, so 「くださいました」; いただく needs the receiver as subject."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ 「先生が」 là người cho nên dùng 「くださいました」; chủ ngữ là người nhận mới dùng いただく.",
+        "en": "Not quite. The subject 「先生が」 is the giver, so 「くださいました」; いただく needs the receiver as subject."
+      }
+    },
+    {
+      "item": "いただく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は先生に辞書を（　）。\n（Tôi là người nhận.）",
+        "en": "Choose the correct option for the blank:\n私は先生に辞書を（　）。\n(I am the receiver.)"
+      },
+      "payload": {
+        "choices": [
+          "くださいました",
+          "さしあげました",
+          "くれました",
+          "いただきました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ 「私は」 là người nhận từ người trên nên dùng 「いただきました」.",
+        "en": "Correct! The subject 「私は」 receives from a superior, so 「いただきました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ 「私は」 là người nhận từ người trên nên dùng 「いただきました」.",
+        "en": "Not quite. The subject 「私は」 receives from a superior, so 「いただきました」 is used."
+      }
+    },
+    {
+      "item": "いただく",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "お客様がお礼の手紙をいただきました。",
+          "お客様からお礼の手紙をくださいました。",
+          "お客様からお礼の手紙をいただきました。",
+          "お客様をお礼の手紙をいただきました。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! いただく có chủ ngữ là người nhận và nguồn đánh dấu bằng 「から/に」; 「から」 không đi với くださる.",
+        "en": "Correct! いただく takes the receiver as subject and marks the source with 「から/に」; 「から」 does not go with くださる."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. いただく có chủ ngữ là người nhận và nguồn đánh dấu bằng 「から/に」; 「から」 không đi với くださる.",
+        "en": "Not quite. いただく takes the receiver as subject and marks the source with 「から/に」; 「から」 does not go with くださる."
+      }
+    },
+    {
+      "item": "〜ていただく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生に作文を直し（　）。\n（Tôi là người được thầy sửa bài.）",
+        "en": "Choose the correct option for the blank:\n先生に作文を直し（　）。\n(I am the one whose essay is being corrected.)"
+      },
+      "payload": {
+        "choices": [
+          "てくださいました",
+          "ていただきました",
+          "てさしあげました",
+          "てくれました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mình được người trên làm giúp (先生に) nên dùng 「〜ていただきました」.",
+        "en": "Correct! I am helped by a superior (先生に), so 「〜ていただきました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mình được người trên làm giúp (先生に) nên dùng 「〜ていただきました」.",
+        "en": "Not quite. I am helped by a superior (先生に), so 「〜ていただきました」 is used."
+      }
+    },
+    {
+      "item": "〜ていただく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部長に説明し___ました。",
+        "en": "Choose the correct option for the blank:\n部長に説明し___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ていただき"
+        ],
+        "hint": "〜ていただく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「説明していただきました」 là được trưởng phòng giải thích; chỗ trống là 「ていただき」.",
+        "en": "Correct! 「説明していただきました」 means the department head explained it for me; the blank is 「ていただき」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「説明していただきました」 là được trưởng phòng giải thích; chỗ trống là 「ていただき」.",
+        "en": "Not quite. 「説明していただきました」 means the department head explained it for me; the blank is 「ていただき」."
+      }
+    },
+    {
+      "item": "〜ていただく",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n先生が作文を直し（　）。",
+        "en": "Choose the pattern that best fits the context:\n先生が作文を直し（　）。"
+      },
+      "payload": {
+        "choices": [
+          "てくださいました",
+          "ていただきました",
+          "てさしあげました",
+          "てもらいました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ 「先生が」 là người làm nên dùng 「〜てくださいました」.",
+        "en": "Correct! The subject 「先生が」 is the doer, so 「〜てくださいました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ 「先生が」 là người làm nên dùng 「〜てくださいました」.",
+        "en": "Not quite. The subject 「先生が」 is the doer, so 「〜てくださいました」 is used."
+      }
+    },
+    {
+      "item": "〜ていただく",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n私は　＿　＿　★　＿　。\n（先生に／作文を／直して／いただきました）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n私は　＿　＿　★　＿　。\n（先生に／作文を／直して／いただきました）"
+      },
+      "payload": {
+        "choices": [
+          "先生に",
+          "作文を",
+          "いただきました",
+          "直して"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「私は先生に作文を直していただきました。」; ô ★ (thứ ba) là 「直して」.",
+        "en": "Correct! The correct sentence is 「私は先生に作文を直していただきました。」; the ★ (third) slot is 「直して」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「私は先生に作文を直していただきました。」; ô ★ (thứ ba) là 「直して」.",
+        "en": "Not quite. The correct sentence is 「私は先生に作文を直していただきました。」; the ★ (third) slot is 「直して」."
+      }
+    },
+    {
+      "item": "さしあげる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部長にお土産を___ました。\n（Tôi tặng quà cho trưởng phòng.）",
+        "en": "Choose the correct option for the blank:\n部長にお土産を___ました。\n(I am giving a souvenir to my department head.)"
+      },
+      "payload": {
+        "accepted_answers": [
+          "さしあげ"
+        ],
+        "hint": "さしあげる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Biếu người trên dùng 「さしあげる」: 「さしあげました」, gốc ます là 「さしあげ」.",
+        "en": "Correct! Giving to a superior uses 「さしあげる」: 「さしあげました」, with the stem 「さしあげ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Biếu người trên dùng 「さしあげる」: 「さしあげました」, gốc ます là 「さしあげ」.",
+        "en": "Not quite. Giving to a superior uses 「さしあげる」: 「さしあげました」, with the stem 「さしあげ」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜てもらう",
+            {
+              "vi": "Nhờ/được (ai đó) làm ~ cho mình",
+              "en": "Have/get someone do ~ for me"
+            }
+          ],
+          [
+            "さしあげる",
+            {
+              "vi": "Biếu, dâng (khiêm nhường của あげる)",
+              "en": "Give (humble form of あげる)"
+            }
+          ],
+          [
+            "くださる",
+            {
+              "vi": "Cho (tôi) (kính ngữ của くれる)",
+              "en": "Give (to me) (honorific of くれる)"
+            }
+          ],
+          [
+            "いただく",
+            {
+              "vi": "Nhận (khiêm nhường của もらう)",
+              "en": "Receive (humble form of もらう)"
+            }
+          ],
+          [
+            "〜ていただく",
+            {
+              "vi": "Được (người trên) làm ~ cho (khiêm nhường)",
+              "en": "Have a superior do ~ for me (humble)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

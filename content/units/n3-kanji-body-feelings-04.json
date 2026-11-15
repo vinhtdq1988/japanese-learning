@@ -1,0 +1,676 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (声 眠 夢 痛 疲)",
+    "en": "Body and feelings kanji (声 眠 夢 痛 疲)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "声",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "giọng; tiếng",
+        "en": "voice"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunReadings": [
+          "こえ",
+          "こわ"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "音声",
+          "reading": "おんせい",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "giọng nói; âm thanh",
+            "en": "voice; audio"
+          }
+        },
+        {
+          "ja": "声",
+          "reading": "こえ",
+          "kanjiReading": "こえ",
+          "translation": {
+            "vi": "giọng nói",
+            "en": "voice"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "眠",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "ngủ",
+        "en": "sleep"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ミン"
+        ],
+        "kunReadings": [
+          "ねむ.る",
+          "ねむ.い"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "睡眠",
+          "reading": "すいみん",
+          "kanjiReading": "ミン",
+          "translation": {
+            "vi": "giấc ngủ",
+            "en": "sleep"
+          }
+        },
+        {
+          "ja": "眠い",
+          "reading": "ねむい",
+          "kanjiReading": "ねむ",
+          "translation": {
+            "vi": "buồn ngủ",
+            "en": "sleepy"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夢",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "giấc mơ; ước mơ",
+        "en": "dream"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ム"
+        ],
+        "kunReadings": [
+          "ゆめ"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "悪夢",
+          "reading": "あくむ",
+          "kanjiReading": "ム",
+          "translation": {
+            "vi": "ác mộng",
+            "en": "nightmare"
+          }
+        },
+        {
+          "ja": "夢",
+          "reading": "ゆめ",
+          "kanjiReading": "ゆめ",
+          "translation": {
+            "vi": "giấc mơ",
+            "en": "dream"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "痛",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "đau",
+        "en": "pain"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ツウ"
+        ],
+        "kunReadings": [
+          "いた.い",
+          "いた.む"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "頭痛",
+          "reading": "ずつう",
+          "kanjiReading": "ツウ",
+          "translation": {
+            "vi": "đau đầu",
+            "en": "headache"
+          }
+        },
+        {
+          "ja": "痛い",
+          "reading": "いたい",
+          "kanjiReading": "いた",
+          "translation": {
+            "vi": "đau",
+            "en": "painful"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "疲",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "mệt",
+        "en": "tired"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "つか.れる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "疲労",
+          "reading": "ひろう",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "mệt mỏi",
+            "en": "fatigue"
+          }
+        },
+        {
+          "ja": "疲れる",
+          "reading": "つかれる",
+          "kanjiReading": "つか",
+          "translation": {
+            "vi": "mệt",
+            "en": "to get tired"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "声",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「声」nghĩa là gì?",
+        "en": "What does 「声」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giọng; tiếng",
+            "en": "voice"
+          },
+          {
+            "vi": "ngủ",
+            "en": "sleep"
+          },
+          {
+            "vi": "giấc mơ; ước mơ",
+            "en": "dream"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 声 nghĩa là giọng; tiếng.",
+        "en": "Correct! 声 means voice."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 声 nghĩa là giọng; tiếng, như trong 「音声」 (giọng nói; âm thanh).",
+        "en": "Not quite. 声 means voice, as in 「音声」 (voice; audio)."
+      }
+    },
+    {
+      "item": "声",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「声」 trong 「音声」 (“giọng nói; âm thanh”).",
+        "en": "Type the reading of 「声」 in 「音声」 (“voice; audio”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 音声, 声 đọc là せい (âm On).",
+        "en": "Correct! In 音声, 声 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 音声 (giọng nói; âm thanh), 声 đọc là せい (âm On).",
+        "en": "In 音声 (voice; audio), 声 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "声",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「声」(giọng nói; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「声」 (voice; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "せい",
+          "こえ",
+          "ゆめ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 声 = こえ (giọng nói); 声 đọc là こえ (âm Kun).",
+        "en": "Correct! 声 = こえ (voice); 声 is read こえ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "声 đọc là こえ (giọng nói): 声 mang âm Kun こえ.",
+        "en": "声 is read こえ (voice): 声 takes the kun'yomi こえ."
+      }
+    },
+    {
+      "item": "眠",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「眠」nghĩa là gì?",
+        "en": "What does 「眠」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giấc mơ; ước mơ",
+            "en": "dream"
+          },
+          {
+            "vi": "ngủ",
+            "en": "sleep"
+          },
+          {
+            "vi": "đau",
+            "en": "pain"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 眠 nghĩa là ngủ.",
+        "en": "Correct! 眠 means sleep."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 眠 nghĩa là ngủ, như trong 「睡眠」 (giấc ngủ).",
+        "en": "Not quite. 眠 means sleep, as in 「睡眠」 (sleep)."
+      }
+    },
+    {
+      "item": "眠",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「眠」 trong 「睡眠」 (“giấc ngủ”).",
+        "en": "Type the reading of 「眠」 in 「睡眠」 (“sleep”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "みん",
+          "ミン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 睡眠, 眠 đọc là みん (âm On).",
+        "en": "Correct! In 睡眠, 眠 is read みん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 睡眠 (giấc ngủ), 眠 đọc là みん (âm On).",
+        "en": "In 睡眠 (sleep), 眠 is read みん (on'yomi)."
+      }
+    },
+    {
+      "item": "眠",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「眠い」(buồn ngủ) đọc là gì?",
+        "en": "How is 「眠い」 (sleepy) read?"
+      },
+      "payload": {
+        "choices": [
+          "みんい",
+          "いたい",
+          "ねむい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 眠い = ねむい (buồn ngủ); 眠 đọc là ねむ (âm Kun).",
+        "en": "Correct! 眠い = ねむい (sleepy); 眠 is read ねむ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "眠い đọc là ねむい (buồn ngủ): 眠 mang âm Kun ねむ.",
+        "en": "眠い is read ねむい (sleepy): 眠 takes the kun'yomi ねむ."
+      }
+    },
+    {
+      "item": "夢",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夢」nghĩa là gì?",
+        "en": "What does 「夢」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đau",
+            "en": "pain"
+          },
+          {
+            "vi": "mệt",
+            "en": "tired"
+          },
+          {
+            "vi": "giấc mơ; ước mơ",
+            "en": "dream"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夢 nghĩa là giấc mơ; ước mơ.",
+        "en": "Correct! 夢 means dream."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 夢 nghĩa là giấc mơ; ước mơ, như trong 「悪夢」 (ác mộng).",
+        "en": "Not quite. 夢 means dream, as in 「悪夢」 (nightmare)."
+      }
+    },
+    {
+      "item": "夢",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「夢」 trong 「悪夢」 (“ác mộng”).",
+        "en": "Type the reading of 「夢」 in 「悪夢」 (“nightmare”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "む",
+          "ム"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 悪夢, 夢 đọc là む (âm On).",
+        "en": "Correct! In 悪夢, 夢 is read む (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 悪夢 (ác mộng), 夢 đọc là む (âm On).",
+        "en": "In 悪夢 (nightmare), 夢 is read む (on'yomi)."
+      }
+    },
+    {
+      "item": "夢",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夢」(giấc mơ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「夢」 (dream; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ゆめ",
+          "む",
+          "こえ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夢 = ゆめ (giấc mơ); 夢 đọc là ゆめ (âm Kun).",
+        "en": "Correct! 夢 = ゆめ (dream); 夢 is read ゆめ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "夢 đọc là ゆめ (giấc mơ): 夢 mang âm Kun ゆめ.",
+        "en": "夢 is read ゆめ (dream): 夢 takes the kun'yomi ゆめ."
+      }
+    },
+    {
+      "item": "痛",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「痛」nghĩa là gì?",
+        "en": "What does 「痛」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đau",
+            "en": "pain"
+          },
+          {
+            "vi": "mệt",
+            "en": "tired"
+          },
+          {
+            "vi": "giọng; tiếng",
+            "en": "voice"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 痛 nghĩa là đau.",
+        "en": "Correct! 痛 means pain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 痛 nghĩa là đau, như trong 「頭痛」 (đau đầu).",
+        "en": "Not quite. 痛 means pain, as in 「頭痛」 (headache)."
+      }
+    },
+    {
+      "item": "痛",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「痛」 trong 「頭痛」 (“đau đầu”).",
+        "en": "Type the reading of 「痛」 in 「頭痛」 (“headache”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "つう",
+          "ツウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 頭痛, 痛 đọc là つう (âm On).",
+        "en": "Correct! In 頭痛, 痛 is read つう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 頭痛 (đau đầu), 痛 đọc là つう (âm On).",
+        "en": "In 頭痛 (headache), 痛 is read つう (on'yomi)."
+      }
+    },
+    {
+      "item": "痛",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「痛い」(đau) đọc là gì?",
+        "en": "How is 「痛い」 (painful) read?"
+      },
+      "payload": {
+        "choices": [
+          "つうい",
+          "いたい",
+          "ねむい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 痛い = いたい (đau); 痛 đọc là いた (âm Kun).",
+        "en": "Correct! 痛い = いたい (painful); 痛 is read いた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "痛い đọc là いたい (đau): 痛 mang âm Kun いた.",
+        "en": "痛い is read いたい (painful): 痛 takes the kun'yomi いた."
+      }
+    },
+    {
+      "item": "疲",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「疲」nghĩa là gì?",
+        "en": "What does 「疲」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giọng; tiếng",
+            "en": "voice"
+          },
+          {
+            "vi": "mệt",
+            "en": "tired"
+          },
+          {
+            "vi": "ngủ",
+            "en": "sleep"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 疲 nghĩa là mệt.",
+        "en": "Correct! 疲 means tired."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 疲 nghĩa là mệt, như trong 「疲労」 (mệt mỏi).",
+        "en": "Not quite. 疲 means tired, as in 「疲労」 (fatigue)."
+      }
+    },
+    {
+      "item": "疲",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「疲」 trong 「疲労」 (“mệt mỏi”).",
+        "en": "Type the reading of 「疲」 in 「疲労」 (“fatigue”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 疲労, 疲 đọc là ひ (âm On).",
+        "en": "Correct! In 疲労, 疲 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 疲労 (mệt mỏi), 疲 đọc là ひ (âm On).",
+        "en": "In 疲労 (fatigue), 疲 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "疲",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「疲れる」(mệt) đọc là gì?",
+        "en": "How is 「疲れる」 (to get tired) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひれる",
+          "おんせい",
+          "つかれる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 疲れる = つかれる (mệt); 疲 đọc là つか (âm Kun).",
+        "en": "Correct! 疲れる = つかれる (to get tired); 疲 is read つか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "疲れる đọc là つかれる (mệt): 疲 mang âm Kun つか.",
+        "en": "疲れる is read つかれる (to get tired): 疲 takes the kun'yomi つか."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "声",
+            {
+              "vi": "giọng; tiếng",
+              "en": "voice"
+            }
+          ],
+          [
+            "眠",
+            {
+              "vi": "ngủ",
+              "en": "sleep"
+            }
+          ],
+          [
+            "夢",
+            {
+              "vi": "giấc mơ; ước mơ",
+              "en": "dream"
+            }
+          ],
+          [
+            "痛",
+            {
+              "vi": "đau",
+              "en": "pain"
+            }
+          ],
+          [
+            "疲",
+            {
+              "vi": "mệt",
+              "en": "tired"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-manufacturing",
+  "title": {
+    "vi": "Đóng gói và xuất xưởng",
+    "en": "Packing and shipping"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "納入",
+      "reading": "のうにゅう",
+      "meaning": {
+        "vi": "Giao nộp (hàng cho khách)",
+        "en": "Delivery (to a client)"
+      },
+      "examples": [
+        {
+          "ja": "機械は、来週、工場に納入されます。",
+          "reading": "きかいは、らいしゅう、こうじょうにのうにゅうされます。",
+          "translation": {
+            "vi": "Máy sẽ được giao đến nhà máy vào tuần sau.",
+            "en": "The machine will be delivered to the factory next week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "検品",
+      "reading": "けんぴん",
+      "meaning": {
+        "vi": "Kiểm hàng",
+        "en": "Inspection of goods"
+      },
+      "examples": [
+        {
+          "ja": "出荷の前に、全部の商品を検品します。",
+          "reading": "しゅっかのまえに、ぜんぶのしょうひんをけんぴんします。",
+          "translation": {
+            "vi": "Trước khi xuất hàng, chúng tôi kiểm tra toàn bộ hàng hóa.",
+            "en": "Before shipping, we inspect all the goods."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "梱包",
+      "reading": "こんぽう",
+      "meaning": {
+        "vi": "Đóng gói (vận chuyển)",
+        "en": "Packing; packaging for shipment"
+      },
+      "examples": [
+        {
+          "ja": "割れないように、丁寧に梱包しました。",
+          "reading": "われないように、ていねいにこんぽうしました。",
+          "translation": {
+            "vi": "Tôi đã đóng gói cẩn thận để không bị vỡ.",
+            "en": "I packed it carefully so that it would not break."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "出荷",
+      "reading": "しゅっか",
+      "meaning": {
+        "vi": "Xuất hàng; gửi hàng ra",
+        "en": "Shipment"
+      },
+      "examples": [
+        {
+          "ja": "注文を受けた商品は、すぐに出荷します。",
+          "reading": "ちゅうもんをうけたしょうひんは、すぐにしゅっかします。",
+          "translation": {
+            "vi": "Hàng đã được đặt sẽ được xuất đi ngay.",
+            "en": "Ordered goods are shipped out right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "軽量",
+      "reading": "けいりょう",
+      "meaning": {
+        "vi": "Nhẹ (trọng lượng nhẹ)",
+        "en": "Lightweight"
+      },
+      "examples": [
+        {
+          "ja": "このかばんは、軽量なので、持ち運びが楽です。",
+          "reading": "このかばんは、けいりょうなので、もちはこびがらくです。",
+          "translation": {
+            "vi": "Chiếc túi này nhẹ nên mang đi rất dễ.",
+            "en": "This bag is lightweight, so it is easy to carry."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "頑丈",
+      "reading": "がんじょう",
+      "meaning": {
+        "vi": "Chắc chắn; bền chắc",
+        "en": "Sturdy"
+      },
+      "examples": [
+        {
+          "ja": "この箱は、頑丈なので、重いものも入れられます。",
+          "reading": "このはこは、がんじょうなので、おもいものもいれられます。",
+          "translation": {
+            "vi": "Hộp này chắc chắn nên có thể đựng cả đồ nặng.",
+            "en": "This box is sturdy, so you can put heavy things in it."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "納入",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 機械は、来週、工場に（　）されます。 — Nghĩa của câu: “Máy sẽ được giao đến nhà máy vào tuần sau.”",
+        "en": "Choose the word that fits the blank: 機械は、来週、工場に（　）されます。 — Meaning of the sentence: “The machine will be delivered to the factory next week.”"
+      },
+      "payload": {
+        "choices": [
+          "梱包",
+          "検品",
+          "納入",
+          "軽量"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「納入」(Giao nộp (hàng cho khách)) hợp nghĩa câu này: “Máy sẽ được giao đến nhà máy vào tuần sau.”",
+        "en": "Correct! 「納入」(Delivery (to a client)) fits this sentence: “The machine will be delivered to the factory next week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy sẽ được giao đến nhà máy vào tuần sau.”, nên cần 「納入」(Giao nộp (hàng cho khách)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The machine will be delivered to the factory next week.”, so it needs 「納入」(Delivery (to a client)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "検品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 出荷の前に、全部の商品を（　）します。 — Nghĩa của câu: “Trước khi xuất hàng, chúng tôi kiểm tra toàn bộ hàng hóa.”",
+        "en": "Choose the word that fits the blank: 出荷の前に、全部の商品を（　）します。 — Meaning of the sentence: “Before shipping, we inspect all the goods.”"
+      },
+      "payload": {
+        "choices": [
+          "納入",
+          "軽量",
+          "梱包",
+          "検品"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「検品」(Kiểm hàng) hợp nghĩa câu này: “Trước khi xuất hàng, chúng tôi kiểm tra toàn bộ hàng hóa.”",
+        "en": "Correct! 「検品」(Inspection of goods) fits this sentence: “Before shipping, we inspect all the goods.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi xuất hàng, chúng tôi kiểm tra toàn bộ hàng hóa.”, nên cần 「検品」(Kiểm hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before shipping, we inspect all the goods.”, so it needs 「検品」(Inspection of goods); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "梱包",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 割れないように、丁寧に（　）しました。 — Nghĩa của câu: “Tôi đã đóng gói cẩn thận để không bị vỡ.”",
+        "en": "Choose the word that fits the blank: 割れないように、丁寧に（　）しました。 — Meaning of the sentence: “I packed it carefully so that it would not break.”"
+      },
+      "payload": {
+        "choices": [
+          "梱包",
+          "軽量",
+          "納入",
+          "検品"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「梱包」(Đóng gói (vận chuyển)) hợp nghĩa câu này: “Tôi đã đóng gói cẩn thận để không bị vỡ.”",
+        "en": "Correct! 「梱包」(Packing; packaging for shipment) fits this sentence: “I packed it carefully so that it would not break.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã đóng gói cẩn thận để không bị vỡ.”, nên cần 「梱包」(Đóng gói (vận chuyển)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I packed it carefully so that it would not break.”, so it needs 「梱包」(Packing; packaging for shipment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出荷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 注文を受けた商品は、すぐに（　）します。 — Nghĩa của câu: “Hàng đã được đặt sẽ được xuất đi ngay.”",
+        "en": "Choose the word that fits the blank: 注文を受けた商品は、すぐに（　）します。 — Meaning of the sentence: “Ordered goods are shipped out right away.”"
+      },
+      "payload": {
+        "choices": [
+          "納入",
+          "出荷",
+          "検品",
+          "頑丈"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出荷」(Xuất hàng; gửi hàng ra) hợp nghĩa câu này: “Hàng đã được đặt sẽ được xuất đi ngay.”",
+        "en": "Correct! 「出荷」(Shipment) fits this sentence: “Ordered goods are shipped out right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hàng đã được đặt sẽ được xuất đi ngay.”, nên cần 「出荷」(Xuất hàng; gửi hàng ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Ordered goods are shipped out right away.”, so it needs 「出荷」(Shipment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "軽量",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このかばんは、（　）なので、持ち運びが楽です。 — Nghĩa của câu: “Chiếc túi này nhẹ nên mang đi rất dễ.”",
+        "en": "Choose the word that fits the blank: このかばんは、（　）なので、持ち運びが楽です。 — Meaning of the sentence: “This bag is lightweight, so it is easy to carry.”"
+      },
+      "payload": {
+        "choices": [
+          "頑丈",
+          "納入",
+          "軽量",
+          "出荷"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「軽量」(Nhẹ (trọng lượng nhẹ)) hợp nghĩa câu này: “Chiếc túi này nhẹ nên mang đi rất dễ.”",
+        "en": "Correct! 「軽量」(Lightweight) fits this sentence: “This bag is lightweight, so it is easy to carry.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc túi này nhẹ nên mang đi rất dễ.”, nên cần 「軽量」(Nhẹ (trọng lượng nhẹ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This bag is lightweight, so it is easy to carry.”, so it needs 「軽量」(Lightweight); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "頑丈",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この箱は、（　）なので、重いものも入れられます。 — Nghĩa của câu: “Hộp này chắc chắn nên có thể đựng cả đồ nặng.”",
+        "en": "Choose the word that fits the blank: この箱は、（　）なので、重いものも入れられます。 — Meaning of the sentence: “This box is sturdy, so you can put heavy things in it.”"
+      },
+      "payload": {
+        "choices": [
+          "検品",
+          "納入",
+          "梱包",
+          "頑丈"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「頑丈」(Chắc chắn; bền chắc) hợp nghĩa câu này: “Hộp này chắc chắn nên có thể đựng cả đồ nặng.”",
+        "en": "Correct! 「頑丈」(Sturdy) fits this sentence: “This box is sturdy, so you can put heavy things in it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hộp này chắc chắn nên có thể đựng cả đồ nặng.”, nên cần 「頑丈」(Chắc chắn; bền chắc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This box is sturdy, so you can put heavy things in it.”, so it needs 「頑丈」(Sturdy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "納入",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 機械は、来週、工場に「納入」されます。",
+        "en": "Choose the correct reading of the word in 「」: 機械は、来週、工場に「納入」されます。"
+      },
+      "payload": {
+        "choices": [
+          "しゅっか",
+          "けんぴん",
+          "けいりょう",
+          "のうにゅう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「納入」 đọc là 「のうにゅう」, nghĩa là Giao nộp (hàng cho khách).",
+        "en": "Correct! 「納入」 is read 「のうにゅう」 and means Delivery (to a client)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「納入」 đọc là 「のうにゅう」 (Giao nộp (hàng cho khách)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「納入」 is read 「のうにゅう」 (Delivery (to a client)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "出荷",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 注文を受けた商品は、すぐに「出荷」します。",
+        "en": "Choose the correct reading of the word in 「」: 注文を受けた商品は、すぐに「出荷」します。"
+      },
+      "payload": {
+        "choices": [
+          "しゅっか",
+          "がんじょう",
+          "のうにゅう",
+          "けいりょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出荷」 đọc là 「しゅっか」, nghĩa là Xuất hàng; gửi hàng ra.",
+        "en": "Correct! 「出荷」 is read 「しゅっか」 and means Shipment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「出荷」 đọc là 「しゅっか」 (Xuất hàng; gửi hàng ra); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「出荷」 is read 「しゅっか」 (Shipment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "梱包",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 割れないように、丁寧に「こんぽう」しました。",
+        "en": "Choose the correct way to write the word in 「」: 割れないように、丁寧に「こんぽう」しました。"
+      },
+      "payload": {
+        "choices": [
+          "梱包",
+          "検品",
+          "納入",
+          "出荷"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こんぽう」 viết là 「梱包」, nghĩa là Đóng gói (vận chuyển).",
+        "en": "Correct! 「こんぽう」 is written 「梱包」 and means Packing; packaging for shipment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こんぽう」 viết là 「梱包」 (Đóng gói (vận chuyển)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こんぽう」 is written 「梱包」 (Packing; packaging for shipment); the other words are read differently."
+      }
+    }
+  ]
+}

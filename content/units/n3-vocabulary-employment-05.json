@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-employment",
+  "title": {
+    "vi": "Đào tạo và các bộ phận",
+    "en": "Training and departments"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "新入社員",
+      "reading": "しんにゅうしゃいん",
+      "meaning": {
+        "vi": "Nhân viên mới vào công ty",
+        "en": "New employee"
+      },
+      "examples": [
+        {
+          "ja": "四月に、新入社員が二十人入ります。",
+          "reading": "しがつに、しんにゅうしゃいんがにじゅうにんはいります。",
+          "translation": {
+            "vi": "Tháng Tư sẽ có hai mươi nhân viên mới vào công ty.",
+            "en": "Twenty new employees will join in April."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "研修",
+      "reading": "けんしゅう",
+      "meaning": {
+        "vi": "Khóa đào tạo; tập huấn",
+        "en": "Training course"
+      },
+      "examples": [
+        {
+          "ja": "新しい社員は、一か月の研修を受けます。",
+          "reading": "あたらしいしゃいんは、いっかげつのけんしゅうをうけます。",
+          "translation": {
+            "vi": "Nhân viên mới sẽ tham gia khóa đào tạo một tháng.",
+            "en": "New employees take a month-long training course."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "訓練",
+      "reading": "くんれん",
+      "meaning": {
+        "vi": "Huấn luyện; rèn luyện",
+        "en": "Drill; training"
+      },
+      "examples": [
+        {
+          "ja": "消防士は、毎日、厳しい訓練をしています。",
+          "reading": "しょうぼうしは、まいにち、きびしいくんれんをしています。",
+          "translation": {
+            "vi": "Lính cứu hỏa ngày nào cũng tập luyện nghiêm khắc.",
+            "en": "Firefighters do tough training every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "指導",
+      "reading": "しどう",
+      "meaning": {
+        "vi": "Chỉ đạo; hướng dẫn",
+        "en": "Guidance; coaching"
+      },
+      "examples": [
+        {
+          "ja": "先輩が、新人に仕事のやり方を指導します。",
+          "reading": "せんぱいが、しんじんにしごとのやりかたをしどうします。",
+          "translation": {
+            "vi": "Tiền bối hướng dẫn nhân viên mới cách làm việc.",
+            "en": "A senior colleague coaches the newcomer on how to do the work."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "総務",
+      "reading": "そうむ",
+      "meaning": {
+        "vi": "Bộ phận tổng vụ",
+        "en": "General affairs"
+      },
+      "examples": [
+        {
+          "ja": "総務の人に、会議室の予約をお願いしました。",
+          "reading": "そうむのひとに、かいぎしつのよやくをおねがいしました。",
+          "translation": {
+            "vi": "Tôi đã nhờ người ở bộ phận tổng vụ đặt phòng họp.",
+            "en": "I asked someone in General Affairs to reserve the meeting room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "経理",
+      "reading": "けいり",
+      "meaning": {
+        "vi": "Kế toán",
+        "en": "Accounting"
+      },
+      "examples": [
+        {
+          "ja": "経理の仕事は、数字を正確に扱うことです。",
+          "reading": "けいりのしごとは、すうじをせいかくにあつかうことです。",
+          "translation": {
+            "vi": "Công việc kế toán là xử lý con số một cách chính xác.",
+            "en": "Accounting work means handling numbers accurately."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "新入社員",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 四月に、（　）が二十人入ります。 — Nghĩa của câu: “Tháng Tư sẽ có hai mươi nhân viên mới vào công ty.”",
+        "en": "Choose the word that fits the blank: 四月に、（　）が二十人入ります。 — Meaning of the sentence: “Twenty new employees will join in April.”"
+      },
+      "payload": {
+        "choices": [
+          "新入社員",
+          "研修",
+          "訓練",
+          "経理"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「新入社員」(Nhân viên mới vào công ty) hợp nghĩa câu này: “Tháng Tư sẽ có hai mươi nhân viên mới vào công ty.”",
+        "en": "Correct! 「新入社員」(New employee) fits this sentence: “Twenty new employees will join in April.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng Tư sẽ có hai mươi nhân viên mới vào công ty.”, nên cần 「新入社員」(Nhân viên mới vào công ty); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Twenty new employees will join in April.”, so it needs 「新入社員」(New employee); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "研修",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい社員は、一か月の（　）を受けます。 — Nghĩa của câu: “Nhân viên mới sẽ tham gia khóa đào tạo một tháng.”",
+        "en": "Choose the word that fits the blank: 新しい社員は、一か月の（　）を受けます。 — Meaning of the sentence: “New employees take a month-long training course.”"
+      },
+      "payload": {
+        "choices": [
+          "経理",
+          "研修",
+          "新入社員",
+          "総務"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「研修」(Khóa đào tạo; tập huấn) hợp nghĩa câu này: “Nhân viên mới sẽ tham gia khóa đào tạo một tháng.”",
+        "en": "Correct! 「研修」(Training course) fits this sentence: “New employees take a month-long training course.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhân viên mới sẽ tham gia khóa đào tạo một tháng.”, nên cần 「研修」(Khóa đào tạo; tập huấn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “New employees take a month-long training course.”, so it needs 「研修」(Training course); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "訓練",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 消防士は、毎日、厳しい（　）をしています。 — Nghĩa của câu: “Lính cứu hỏa ngày nào cũng tập luyện nghiêm khắc.”",
+        "en": "Choose the word that fits the blank: 消防士は、毎日、厳しい（　）をしています。 — Meaning of the sentence: “Firefighters do tough training every day.”"
+      },
+      "payload": {
+        "choices": [
+          "研修",
+          "新入社員",
+          "訓練",
+          "経理"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「訓練」(Huấn luyện; rèn luyện) hợp nghĩa câu này: “Lính cứu hỏa ngày nào cũng tập luyện nghiêm khắc.”",
+        "en": "Correct! 「訓練」(Drill; training) fits this sentence: “Firefighters do tough training every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lính cứu hỏa ngày nào cũng tập luyện nghiêm khắc.”, nên cần 「訓練」(Huấn luyện; rèn luyện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Firefighters do tough training every day.”, so it needs 「訓練」(Drill; training); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "指導",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先輩が、新人に仕事のやり方を（　）します。 — Nghĩa của câu: “Tiền bối hướng dẫn nhân viên mới cách làm việc.”",
+        "en": "Choose the word that fits the blank: 先輩が、新人に仕事のやり方を（　）します。 — Meaning of the sentence: “A senior colleague coaches the newcomer on how to do the work.”"
+      },
+      "payload": {
+        "choices": [
+          "新入社員",
+          "研修",
+          "経理",
+          "指導"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「指導」(Chỉ đạo; hướng dẫn) hợp nghĩa câu này: “Tiền bối hướng dẫn nhân viên mới cách làm việc.”",
+        "en": "Correct! 「指導」(Guidance; coaching) fits this sentence: “A senior colleague coaches the newcomer on how to do the work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiền bối hướng dẫn nhân viên mới cách làm việc.”, nên cần 「指導」(Chỉ đạo; hướng dẫn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A senior colleague coaches the newcomer on how to do the work.”, so it needs 「指導」(Guidance; coaching); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "総務",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の人に、会議室の予約をお願いしました。 — Nghĩa của câu: “Tôi đã nhờ người ở bộ phận tổng vụ đặt phòng họp.”",
+        "en": "Choose the word that fits the blank: （　）の人に、会議室の予約をお願いしました。 — Meaning of the sentence: “I asked someone in General Affairs to reserve the meeting room.”"
+      },
+      "payload": {
+        "choices": [
+          "総務",
+          "訓練",
+          "新入社員",
+          "経理"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「総務」(Bộ phận tổng vụ) hợp nghĩa câu này: “Tôi đã nhờ người ở bộ phận tổng vụ đặt phòng họp.”",
+        "en": "Correct! 「総務」(General affairs) fits this sentence: “I asked someone in General Affairs to reserve the meeting room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nhờ người ở bộ phận tổng vụ đặt phòng họp.”, nên cần 「総務」(Bộ phận tổng vụ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I asked someone in General Affairs to reserve the meeting room.”, so it needs 「総務」(General affairs); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "経理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の仕事は、数字を正確に扱うことです。 — Nghĩa của câu: “Công việc kế toán là xử lý con số một cách chính xác.”",
+        "en": "Choose the word that fits the blank: （　）の仕事は、数字を正確に扱うことです。 — Meaning of the sentence: “Accounting work means handling numbers accurately.”"
+      },
+      "payload": {
+        "choices": [
+          "訓練",
+          "経理",
+          "新入社員",
+          "総務"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「経理」(Kế toán) hợp nghĩa câu này: “Công việc kế toán là xử lý con số một cách chính xác.”",
+        "en": "Correct! 「経理」(Accounting) fits this sentence: “Accounting work means handling numbers accurately.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công việc kế toán là xử lý con số một cách chính xác.”, nên cần 「経理」(Kế toán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Accounting work means handling numbers accurately.”, so it needs 「経理」(Accounting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "新入社員",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 四月に、「新入社員」が二十人入ります。",
+        "en": "Choose the correct reading of the word in 「」: 四月に、「新入社員」が二十人入ります。"
+      },
+      "payload": {
+        "choices": [
+          "けんしゅう",
+          "しんにゅうしゃいん",
+          "くんれん",
+          "しどう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「新入社員」 đọc là 「しんにゅうしゃいん」, nghĩa là Nhân viên mới vào công ty.",
+        "en": "Correct! 「新入社員」 is read 「しんにゅうしゃいん」 and means New employee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「新入社員」 đọc là 「しんにゅうしゃいん」 (Nhân viên mới vào công ty); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「新入社員」 is read 「しんにゅうしゃいん」 (New employee); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "指導",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 先輩が、新人に仕事のやり方を「指導」します。",
+        "en": "Choose the correct reading of the word in 「」: 先輩が、新人に仕事のやり方を「指導」します。"
+      },
+      "payload": {
+        "choices": [
+          "くんれん",
+          "しんにゅうしゃいん",
+          "しどう",
+          "けいり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「指導」 đọc là 「しどう」, nghĩa là Chỉ đạo; hướng dẫn.",
+        "en": "Correct! 「指導」 is read 「しどう」 and means Guidance; coaching."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「指導」 đọc là 「しどう」 (Chỉ đạo; hướng dẫn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「指導」 is read 「しどう」 (Guidance; coaching); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "訓練",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 消防士は、毎日、厳しい「くんれん」をしています。",
+        "en": "Choose the correct way to write the word in 「」: 消防士は、毎日、厳しい「くんれん」をしています。"
+      },
+      "payload": {
+        "choices": [
+          "経理",
+          "新入社員",
+          "訓練",
+          "総務"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「くんれん」 viết là 「訓練」, nghĩa là Huấn luyện; rèn luyện.",
+        "en": "Correct! 「くんれん」 is written 「訓練」 and means Drill; training."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「くんれん」 viết là 「訓練」 (Huấn luyện; rèn luyện); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「くんれん」 is written 「訓練」 (Drill; training); the other words are read differently."
+      }
+    }
+  ]
+}

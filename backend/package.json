@@ -20,6 +20,9 @@
     "format:check": "prettier --check .",
     "db:migrate": "tsx src/db/migrate.ts",
     "seed": "tsx src/seed/index.ts",
+    "content:coverage": "tsx src/seed/coverage.ts",
+    "content:stats": "tsx src/seed/coverage.ts --stats",
+    "content:lint": "tsx src/seed/lint.ts",
     "admin:create": "tsx src/seed/create-admin.ts",
     "job:purge": "tsx src/jobs/purge-deleted-accounts.ts",
     "report:metrics": "tsx src/reports/run.ts"

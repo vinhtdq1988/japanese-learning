@@ -1,0 +1,429 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-conditionals",
+  "title": {
+    "vi": "Điều kiện (3): khuyên, hối tiếc và hệ quả — 〜たらどう, 〜ばよかった, 〜ないと",
+    "en": "Conditionals (3): suggestion, regret and consequence — 〜たらどう, 〜ばよかった, 〜ないと"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜たらどうですか／〜たらいい",
+      "meaning": {
+        "vi": "Sao bạn không ~ (khuyên)",
+        "en": "Why don't you ~ / you could ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た + らどうですか / らいいです. Đưa lời khuyên nhẹ nhàng, đề nghị cách giải quyết. Thân mật: 〜たらどう?. Mềm hơn 〜たほうがいい vì để người nghe tự cân nhắc.",
+        "en": "Usage: verb た-form + らどうですか / らいいです. A gentle suggestion offering a way to solve something. Casual: 〜たらどう?. Softer than 〜たほうがいい because it leaves the decision to the listener."
+      },
+      "examples": [
+        {
+          "ja": "疲れたなら、少し休んだらどうですか。",
+          "reading": "つかれたなら、すこしやすんだらどうですか。",
+          "translation": {
+            "vi": "Nếu mệt thì bạn nghỉ một chút xem sao?",
+            "en": "If you are tired, why not rest for a while?"
+          }
+        },
+        {
+          "ja": "わからないことは、先生に聞いたらいいですよ。",
+          "reading": "わからないことは、せんせいにきいたらいいですよ。",
+          "translation": {
+            "vi": "Điều gì không hiểu thì bạn có thể hỏi thầy giáo.",
+            "en": "If there is something you do not understand, you can ask the teacher."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-033"
+    },
+    {
+      "japanese": "〜ばよかった／〜たらよかった",
+      "meaning": {
+        "vi": "Giá mà đã ~",
+        "en": "I should have ~ / I wish I had ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể điều kiện ば / thể た + ら + よかった (勉強すればよかった). Diễn tả hối tiếc vì đã không làm; phủ định (đã làm mà hối hận): 〜なければよかった.",
+        "en": "Conjugation: verb ば-conditional / た-form + ら + よかった (勉強すればよかった). Expresses regret for not having done something; the negative (regretting something done) is 〜なければよかった."
+      },
+      "examples": [
+        {
+          "ja": "もっと勉強すればよかったです。",
+          "reading": "もっとべんきょうすればよかったです。",
+          "translation": {
+            "vi": "Giá mà tôi đã học nhiều hơn.",
+            "en": "I should have studied more."
+          }
+        },
+        {
+          "ja": "あんなに食べなければよかった。",
+          "reading": "あんなにたべなければよかった。",
+          "translation": {
+            "vi": "Giá mà tôi đã không ăn nhiều như thế.",
+            "en": "I wish I had not eaten so much."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-034"
+    },
+    {
+      "japanese": "〜ないと（困る・だめ）",
+      "meaning": {
+        "vi": "Nếu không ~ thì (rắc rối)",
+        "en": "If you do not ~, (trouble)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ない + と + kết quả xấu (困る, だめだ, いけない, 怒られる…). Cảnh báo hậu quả nếu không làm. Rút gọn của 〜ないと〜ない. Khác 〜なくて (nguyên nhân) và 〜ないで (cách thức).",
+        "en": "Usage: ない-form + と + a bad consequence (困る, だめだ, いけない, 怒られる…). Warns of the consequence of not doing something. Different from 〜なくて (cause) and 〜ないで (manner)."
+      },
+      "examples": [
+        {
+          "ja": "宿題を出さないと、先生に怒られます。",
+          "reading": "しゅくだいをださないと、せんせいにおこられます。",
+          "translation": {
+            "vi": "Nếu không nộp bài tập thì sẽ bị thầy mắng.",
+            "en": "If you do not hand in your homework, the teacher will scold you."
+          }
+        },
+        {
+          "ja": "早く行かないと、間に合いませんよ。",
+          "reading": "はやくいかないと、まにあいませんよ。",
+          "translation": {
+            "vi": "Nếu không đi nhanh thì sẽ không kịp đâu.",
+            "en": "If you do not hurry, you will not make it in time."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-035"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜たらどうですか／〜たらいい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n疲れたなら、少し休ん（　）どうですか。",
+        "en": "Choose the correct option for the blank:\n疲れたなら、少し休ん（　）どうですか。"
+      },
+      "payload": {
+        "choices": [
+          "だら",
+          "で",
+          "だり",
+          "だ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休む」 thể た là 「休んだ」 nên 「休んだらどうですか」.",
+        "en": "Correct! The た-form of 「休む」 is 「休んだ」, so 「休んだらどうですか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「休む」 thể た là 「休んだ」 nên 「休んだらどうですか」.",
+        "en": "Not quite. The た-form of 「休む」 is 「休んだ」, so 「休んだらどうですか」."
+      }
+    },
+    {
+      "item": "〜たらどうですか／〜たらいい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nわからないことは、先生に聞い___いいですよ。",
+        "en": "Choose the correct option for the blank:\nわからないことは、先生に聞い___いいですよ。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "たら"
+        ],
+        "hint": "〜たら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Gợi ý cách làm: 「聞いたらいいですよ」.",
+        "en": "Correct! Suggesting what to do: 「聞いたらいいですよ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Gợi ý cách làm: 「聞いたらいいですよ」.",
+        "en": "Not quite. Suggesting what to do: 「聞いたらいいですよ」."
+      }
+    },
+    {
+      "item": "〜たらどうですか／〜たらいい",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "少し休むらどうですか。",
+          "少し休んでらどうですか。",
+          "少し休んたらどうですか。",
+          "少し休んだらどうですか。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休む」 → thể た 「休んだ」 + 「らどうですか」.",
+        "en": "Correct! 「休む」→ た-form 「休んだ」 + 「らどうですか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「休む」 → thể た 「休んだ」 + 「らどうですか」.",
+        "en": "Not quite. 「休む」→ た-form 「休んだ」 + 「らどうですか」."
+      }
+    },
+    {
+      "item": "〜たらどうですか／〜たらいい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n困っているなら、友だちに相談し___どうですか。",
+        "en": "Choose the correct option for the blank:\n困っているなら、友だちに相談し___どうですか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "たら"
+        ],
+        "hint": "〜たら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đưa ra lời khuyên: 「相談したらどうですか」.",
+        "en": "Correct! Offering a suggestion: 「相談したらどうですか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đưa ra lời khuyên: 「相談したらどうですか」.",
+        "en": "Not quite. Offering a suggestion: 「相談したらどうですか」."
+      }
+    },
+    {
+      "item": "〜ばよかった／〜たらよかった",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nもっと勉強すれ（　）よかったです。",
+        "en": "Choose the correct option for the blank:\nもっと勉強すれ（　）よかったです。"
+      },
+      "payload": {
+        "choices": [
+          "と",
+          "が",
+          "ば",
+          "を"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hối tiếc: 「勉強すればよかった」.",
+        "en": "Correct! Regret: 「勉強すればよかった」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hối tiếc: 「勉強すればよかった」.",
+        "en": "Not quite. Regret: 「勉強すればよかった」."
+      }
+    },
+    {
+      "item": "〜ばよかった／〜たらよかった",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあんなに食べ___よかった。",
+        "en": "Choose the correct option for the blank:\nあんなに食べ___よかった。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なければ",
+          "なかったら"
+        ],
+        "hint": "〜なければ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hối hận vì đã làm: 「食べなければよかった」.",
+        "en": "Correct! Regretting something done: 「食べなければよかった」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hối hận vì đã làm: 「食べなければよかった」.",
+        "en": "Not quite. Regretting something done: 「食べなければよかった」."
+      }
+    },
+    {
+      "item": "〜ばよかった／〜たらよかった",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "もっと早く起きるばよかった。",
+          "もっと早く起きればよかった。",
+          "もっと早く起きてばよかった。",
+          "もっと早く起きらばよかった。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「起きる」 thuộc nhóm 一段, thể ば là 「起きれば」.",
+        "en": "Correct! 「起きる」 is an 一段 verb whose ば-form is 「起きれば」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「起きる」 thuộc nhóm 一段, thể ば là 「起きれば」.",
+        "en": "Not quite. 「起きる」 is an 一段 verb whose ば-form is 「起きれば」."
+      }
+    },
+    {
+      "item": "〜ないと（困る・だめ）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n宿題を出さ（　）、先生に怒られます。",
+        "en": "Choose the correct option for the blank:\n宿題を出さ（　）、先生に怒られます。"
+      },
+      "payload": {
+        "choices": [
+          "ないと",
+          "なくて",
+          "ないで",
+          "なかった"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cảnh báo hậu quả nếu không làm: 「出さないと」.",
+        "en": "Correct! Warning of the consequence of not doing: 「出さないと」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cảnh báo hậu quả nếu không làm: 「出さないと」.",
+        "en": "Not quite. Warning of the consequence of not doing: 「出さないと」."
+      }
+    },
+    {
+      "item": "〜ないと（困る・だめ）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n早く行か___、間に合いませんよ。",
+        "en": "Choose the correct option for the blank:\n早く行か___、間に合いませんよ。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ないと"
+        ],
+        "hint": "〜ないと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nếu không đi nhanh thì không kịp: 「行かないと」.",
+        "en": "Correct! If you do not go quickly you will not make it: 「行かないと」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nếu không đi nhanh thì không kịp: 「行かないと」.",
+        "en": "Not quite. If you do not go quickly you will not make it: 「行かないと」."
+      }
+    },
+    {
+      "item": "〜ないと（困る・だめ）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n薬を飲ま（　）、病気が治りません。",
+        "en": "Choose the pattern that best fits the context:\n薬を飲ま（　）、病気が治りません。"
+      },
+      "payload": {
+        "choices": [
+          "ないで",
+          "なくて",
+          "ないが",
+          "ないと"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hậu quả xấu nếu không làm dùng 「〜ないと」; 「〜ないで」 là cách thức, 「〜なくて」 là nguyên nhân.",
+        "en": "Correct! A bad consequence of not doing uses 「〜ないと」; 「〜ないで」 is manner and 「〜なくて」 is cause."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hậu quả xấu nếu không làm dùng 「〜ないと」; 「〜ないで」 là cách thức, 「〜なくて」 là nguyên nhân.",
+        "en": "Not quite. A bad consequence of not doing uses 「〜ないと」; 「〜ないで」 is manner and 「〜なくて」 is cause."
+      }
+    },
+    {
+      "item": "〜ないと（困る・だめ）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n宿題を　＿　＿　★　＿　。\n（出さ／ないと／先生に／怒られます）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n宿題を　＿　＿　★　＿　。\n（出さ／ないと／先生に／怒られます）"
+      },
+      "payload": {
+        "choices": [
+          "出さ",
+          "ないと",
+          "先生に",
+          "怒られます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「宿題を出さないと、先生に怒られます。」; ô ★ (thứ ba) là 「先生に」.",
+        "en": "Correct! The correct sentence is 「宿題を出さないと、先生に怒られます。」; the ★ (third) slot is 「先生に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「宿題を出さないと、先生に怒られます。」; ô ★ (thứ ba) là 「先生に」.",
+        "en": "Not quite. The correct sentence is 「宿題を出さないと、先生に怒られます。」; the ★ (third) slot is 「先生に」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜たらどうですか／〜たらいい",
+            {
+              "vi": "Sao bạn không ~ (khuyên)",
+              "en": "Why don't you ~ / you could ~"
+            }
+          ],
+          [
+            "〜ばよかった／〜たらよかった",
+            {
+              "vi": "Giá mà đã ~",
+              "en": "I should have ~ / I wish I had ~"
+            }
+          ],
+          [
+            "〜ないと（困る・だめ）",
+            {
+              "vi": "Nếu không ~ thì (rắc rối)",
+              "en": "If you do not ~, (trouble)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-work-business",
+  "title": {
+    "vi": "Kanji công việc (事 仕 業)",
+    "en": "Work and business kanji (事 仕 業)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "事",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "việc; sự việc",
+        "en": "matter; thing"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ"
+        ],
+        "kunReadings": [
+          "こと"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "食事",
+          "reading": "しょくじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "bữa ăn",
+            "en": "meal"
+          }
+        },
+        {
+          "ja": "事故",
+          "reading": "じこ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "tai nạn",
+            "en": "accident"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "仕",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "làm việc; phục vụ",
+        "en": "serve; do"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ",
+          "ジ"
+        ],
+        "kunReadings": [
+          "つか.える"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "仕事",
+          "reading": "しごと",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "công việc",
+            "en": "work"
+          }
+        },
+        {
+          "ja": "仕方",
+          "reading": "しかた",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "cách làm; biện pháp",
+            "en": "way; method"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "業",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "nghề; nghiệp",
+        "en": "business; industry"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギョウ",
+          "ゴウ"
+        ],
+        "kunReadings": [
+          "わざ"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "授業",
+          "reading": "じゅぎょう",
+          "kanjiReading": "ギョウ",
+          "translation": {
+            "vi": "giờ học",
+            "en": "class lesson"
+          }
+        },
+        {
+          "ja": "卒業",
+          "reading": "そつぎょう",
+          "kanjiReading": "ギョウ",
+          "translation": {
+            "vi": "tốt nghiệp",
+            "en": "graduation"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "事",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「事」nghĩa là gì?",
+        "en": "What does 「事」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "việc; sự việc",
+            "en": "matter; thing"
+          },
+          {
+            "vi": "làm việc; phục vụ",
+            "en": "serve; do"
+          },
+          {
+            "vi": "nghề; nghiệp",
+            "en": "business; industry"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 事 nghĩa là việc; sự việc.",
+        "en": "Correct! 事 means matter; thing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 事 nghĩa là việc; sự việc, như trong 「食事」 (bữa ăn).",
+        "en": "Not quite. 事 means matter; thing, as in 「食事」 (meal)."
+      }
+    },
+    {
+      "item": "事",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「事」 trong 「食事」 (“bữa ăn”).",
+        "en": "Type the reading of 「事」 in 「食事」 (“meal”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 食事, 事 đọc là じ (âm On).",
+        "en": "Correct! In 食事, 事 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 食事 (bữa ăn), 事 đọc là じ (âm On).",
+        "en": "In 食事 (meal), 事 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "事",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「事故」(tai nạn) đọc là gì?",
+        "en": "How is 「事故」 (accident) read?"
+      },
+      "payload": {
+        "choices": [
+          "じご",
+          "じこ",
+          "しこ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 事故 = じこ (tai nạn); 事 đọc là じ (âm On).",
+        "en": "Correct! 事故 = じこ (accident); 事 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "事故 đọc là じこ (tai nạn): 事 mang âm On じ.",
+        "en": "事故 is read じこ (accident): 事 takes the on'yomi じ."
+      }
+    },
+    {
+      "item": "仕",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「仕」nghĩa là gì?",
+        "en": "What does 「仕」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nghề; nghiệp",
+            "en": "business; industry"
+          },
+          {
+            "vi": "làm việc; phục vụ",
+            "en": "serve; do"
+          },
+          {
+            "vi": "việc; sự việc",
+            "en": "matter; thing"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 仕 nghĩa là làm việc; phục vụ.",
+        "en": "Correct! 仕 means serve; do."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 仕 nghĩa là làm việc; phục vụ, như trong 「仕事」 (công việc).",
+        "en": "Not quite. 仕 means serve; do, as in 「仕事」 (work)."
+      }
+    },
+    {
+      "item": "仕",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「仕」 trong 「仕事」 (“công việc”).",
+        "en": "Type the reading of 「仕」 in 「仕事」 (“work”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 仕事, 仕 đọc là し (âm On).",
+        "en": "Correct! In 仕事, 仕 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 仕事 (công việc), 仕 đọc là し (âm On).",
+        "en": "In 仕事 (work), 仕 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "仕",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「仕方」(cách làm; biện pháp) đọc là gì?",
+        "en": "How is 「仕方」 (way; method) read?"
+      },
+      "payload": {
+        "choices": [
+          "しがた",
+          "じかた",
+          "しかた"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 仕方 = しかた (cách làm; biện pháp); 仕 đọc là し (âm On).",
+        "en": "Correct! 仕方 = しかた (way; method); 仕 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "仕方 đọc là しかた (cách làm; biện pháp): 仕 mang âm On し.",
+        "en": "仕方 is read しかた (way; method): 仕 takes the on'yomi し."
+      }
+    },
+    {
+      "item": "業",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「業」nghĩa là gì?",
+        "en": "What does 「業」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "việc; sự việc",
+            "en": "matter; thing"
+          },
+          {
+            "vi": "làm việc; phục vụ",
+            "en": "serve; do"
+          },
+          {
+            "vi": "nghề; nghiệp",
+            "en": "business; industry"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 業 nghĩa là nghề; nghiệp.",
+        "en": "Correct! 業 means business; industry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 業 nghĩa là nghề; nghiệp, như trong 「授業」 (giờ học).",
+        "en": "Not quite. 業 means business; industry, as in 「授業」 (class lesson)."
+      }
+    },
+    {
+      "item": "業",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「業」 trong 「授業」 (“giờ học”).",
+        "en": "Type the reading of 「業」 in 「授業」 (“class lesson”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎょう",
+          "ギョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 授業, 業 đọc là ぎょう (âm On).",
+        "en": "Correct! In 授業, 業 is read ぎょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 授業 (giờ học), 業 đọc là ぎょう (âm On).",
+        "en": "In 授業 (class lesson), 業 is read ぎょう (on'yomi)."
+      }
+    },
+    {
+      "item": "業",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「卒業」(tốt nghiệp) đọc là gì?",
+        "en": "How is 「卒業」 (graduation) read?"
+      },
+      "payload": {
+        "choices": [
+          "そつぎょう",
+          "そつわざ",
+          "そつきょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 卒業 = そつぎょう (tốt nghiệp); 業 đọc là ぎょう (âm On).",
+        "en": "Correct! 卒業 = そつぎょう (graduation); 業 is read ぎょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "卒業 đọc là そつぎょう (tốt nghiệp): 業 mang âm On ぎょう.",
+        "en": "卒業 is read そつぎょう (graduation): 業 takes the on'yomi ぎょう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "事",
+            {
+              "vi": "việc; sự việc",
+              "en": "matter; thing"
+            }
+          ],
+          [
+            "仕",
+            {
+              "vi": "làm việc; phục vụ",
+              "en": "serve; do"
+            }
+          ],
+          [
+            "業",
+            {
+              "vi": "nghề; nghiệp",
+              "en": "business; industry"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

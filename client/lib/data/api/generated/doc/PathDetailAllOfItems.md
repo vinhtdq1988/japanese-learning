@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **level** | [**ContentLevel**](ContentLevel.md) |  | [optional] 
 **estMinutes** | **int** |  | [optional] 
 **status** | **String** |  | [optional] 
+**competency** | [**CompetencyLevel**](CompetencyLevel.md) | Mức năng lực của CHỦ ĐỀ của đơn vị (đơn vị chưa có dữ liệu chủ đề → insufficient) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

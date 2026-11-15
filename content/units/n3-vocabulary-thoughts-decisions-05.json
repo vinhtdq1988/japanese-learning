@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-thoughts-decisions",
+  "title": {
+    "vi": "Triển vọng, mục tiêu và tư duy",
+    "en": "Outlook, aims and ideas"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2560,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "見通し",
+      "reading": "みとおし",
+      "meaning": {
+        "vi": "Triển vọng; tầm nhìn",
+        "en": "Outlook; prospect"
+      },
+      "examples": [
+        {
+          "ja": "来年の景気の見通しは、明るくありません。",
+          "reading": "らいねんのけいきのみとおしは、あかるくありません。",
+          "translation": {
+            "vi": "Triển vọng kinh tế năm sau không mấy sáng sủa.",
+            "en": "The outlook for next year's economy is not bright."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "狙う",
+      "reading": "ねらう",
+      "meaning": {
+        "vi": "Nhắm; nhắm tới",
+        "en": "To aim at"
+      },
+      "examples": [
+        {
+          "ja": "優勝を狙うために、毎日練習しています。",
+          "reading": "ゆうしょうをねらうために、まいにちれんしゅうしています。",
+          "translation": {
+            "vi": "Tôi luyện tập mỗi ngày để nhắm tới chức vô địch.",
+            "en": "I practice every day to aim for the championship."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "測る",
+      "reading": "はかる",
+      "meaning": {
+        "vi": "Đo (độ dài, thể tích)",
+        "en": "To measure"
+      },
+      "examples": [
+        {
+          "ja": "定規で、長さを測ることができます。",
+          "reading": "じょうぎで、ながさをはかることができます。",
+          "translation": {
+            "vi": "Có thể đo chiều dài bằng thước kẻ.",
+            "en": "You can measure the length with a ruler."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "思想",
+      "reading": "しそう",
+      "meaning": {
+        "vi": "Tư tưởng",
+        "en": "Thought; ideology"
+      },
+      "examples": [
+        {
+          "ja": "この作家の思想は、多くの人に影響を与えました。",
+          "reading": "このさっかのしそうは、おおくのひとにえいきょうをあたえました。",
+          "translation": {
+            "vi": "Tư tưởng của nhà văn này đã ảnh hưởng đến nhiều người.",
+            "en": "This writer's ideas influenced many people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "論理",
+      "reading": "ろんり",
+      "meaning": {
+        "vi": "Logic; lý luận",
+        "en": "Logic"
+      },
+      "examples": [
+        {
+          "ja": "彼の話は、論理がしっかりしています。",
+          "reading": "かれのはなしは、ろんりがしっかりしています。",
+          "translation": {
+            "vi": "Câu chuyện của anh ấy có logic chặt chẽ.",
+            "en": "His argument is logically sound."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発想",
+      "reading": "はっそう",
+      "meaning": {
+        "vi": "Ý tưởng; cách nghĩ ra",
+        "en": "Idea; conception"
+      },
+      "examples": [
+        {
+          "ja": "子どもの自由な発想には、驚かされます。",
+          "reading": "こどものじゆうなはっそうには、おどろかされます。",
+          "translation": {
+            "vi": "Tôi luôn ngạc nhiên trước ý tưởng tự do của trẻ nhỏ.",
+            "en": "I am amazed by children's free ideas."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "見通し",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来年の景気の（　）は、明るくありません。 — Nghĩa của câu: “Triển vọng kinh tế năm sau không mấy sáng sủa.”",
+        "en": "Choose the word that fits the blank: 来年の景気の（　）は、明るくありません。 — Meaning of the sentence: “The outlook for next year's economy is not bright.”"
+      },
+      "payload": {
+        "choices": [
+          "見通し",
+          "思想",
+          "論理",
+          "発想"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見通し」(Triển vọng; tầm nhìn) hợp nghĩa câu này: “Triển vọng kinh tế năm sau không mấy sáng sủa.”",
+        "en": "Correct! 「見通し」(Outlook; prospect) fits this sentence: “The outlook for next year's economy is not bright.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Triển vọng kinh tế năm sau không mấy sáng sủa.”, nên cần 「見通し」(Triển vọng; tầm nhìn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The outlook for next year's economy is not bright.”, so it needs 「見通し」(Outlook; prospect); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "狙う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 優勝を（　）ために、毎日練習しています。 — Nghĩa của câu: “Tôi luyện tập mỗi ngày để nhắm tới chức vô địch.”",
+        "en": "Choose the word that fits the blank: 優勝を（　）ために、毎日練習しています。 — Meaning of the sentence: “I practice every day to aim for the championship.”"
+      },
+      "payload": {
+        "choices": [
+          "測る",
+          "狙う",
+          "見通し",
+          "発想"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「狙う」(Nhắm; nhắm tới) hợp nghĩa câu này: “Tôi luyện tập mỗi ngày để nhắm tới chức vô địch.”",
+        "en": "Correct! 「狙う」(To aim at) fits this sentence: “I practice every day to aim for the championship.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi luyện tập mỗi ngày để nhắm tới chức vô địch.”, nên cần 「狙う」(Nhắm; nhắm tới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I practice every day to aim for the championship.”, so it needs 「狙う」(To aim at); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "測る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 定規で、長さを（　）ことができます。 — Nghĩa của câu: “Có thể đo chiều dài bằng thước kẻ.”",
+        "en": "Choose the word that fits the blank: 定規で、長さを（　）ことができます。 — Meaning of the sentence: “You can measure the length with a ruler.”"
+      },
+      "payload": {
+        "choices": [
+          "狙う",
+          "見通し",
+          "測る",
+          "論理"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「測る」(Đo (độ dài, thể tích)) hợp nghĩa câu này: “Có thể đo chiều dài bằng thước kẻ.”",
+        "en": "Correct! 「測る」(To measure) fits this sentence: “You can measure the length with a ruler.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Có thể đo chiều dài bằng thước kẻ.”, nên cần 「測る」(Đo (độ dài, thể tích)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can measure the length with a ruler.”, so it needs 「測る」(To measure); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "思想",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この作家の（　）は、多くの人に影響を与えました。 — Nghĩa của câu: “Tư tưởng của nhà văn này đã ảnh hưởng đến nhiều người.”",
+        "en": "Choose the word that fits the blank: この作家の（　）は、多くの人に影響を与えました。 — Meaning of the sentence: “This writer's ideas influenced many people.”"
+      },
+      "payload": {
+        "choices": [
+          "見通し",
+          "論理",
+          "発想",
+          "思想"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思想」(Tư tưởng) hợp nghĩa câu này: “Tư tưởng của nhà văn này đã ảnh hưởng đến nhiều người.”",
+        "en": "Correct! 「思想」(Thought; ideology) fits this sentence: “This writer's ideas influenced many people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tư tưởng của nhà văn này đã ảnh hưởng đến nhiều người.”, nên cần 「思想」(Tư tưởng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This writer's ideas influenced many people.”, so it needs 「思想」(Thought; ideology); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "論理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼の話は、（　）がしっかりしています。 — Nghĩa của câu: “Câu chuyện của anh ấy có logic chặt chẽ.”",
+        "en": "Choose the word that fits the blank: 彼の話は、（　）がしっかりしています。 — Meaning of the sentence: “His argument is logically sound.”"
+      },
+      "payload": {
+        "choices": [
+          "論理",
+          "思想",
+          "見通し",
+          "発想"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「論理」(Logic; lý luận) hợp nghĩa câu này: “Câu chuyện của anh ấy có logic chặt chẽ.”",
+        "en": "Correct! 「論理」(Logic) fits this sentence: “His argument is logically sound.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Câu chuyện của anh ấy có logic chặt chẽ.”, nên cần 「論理」(Logic; lý luận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “His argument is logically sound.”, so it needs 「論理」(Logic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発想",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもの自由な（　）には、驚かされます。 — Nghĩa của câu: “Tôi luôn ngạc nhiên trước ý tưởng tự do của trẻ nhỏ.”",
+        "en": "Choose the word that fits the blank: 子どもの自由な（　）には、驚かされます。 — Meaning of the sentence: “I am amazed by children's free ideas.”"
+      },
+      "payload": {
+        "choices": [
+          "見通し",
+          "発想",
+          "思想",
+          "論理"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発想」(Ý tưởng; cách nghĩ ra) hợp nghĩa câu này: “Tôi luôn ngạc nhiên trước ý tưởng tự do của trẻ nhỏ.”",
+        "en": "Correct! 「発想」(Idea; conception) fits this sentence: “I am amazed by children's free ideas.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi luôn ngạc nhiên trước ý tưởng tự do của trẻ nhỏ.”, nên cần 「発想」(Ý tưởng; cách nghĩ ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am amazed by children's free ideas.”, so it needs 「発想」(Idea; conception); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見通し",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 来年の景気の「見通し」は、明るくありません。",
+        "en": "Choose the correct reading of the word in 「」: 来年の景気の「見通し」は、明るくありません。"
+      },
+      "payload": {
+        "choices": [
+          "はかる",
+          "みとおし",
+          "ねらう",
+          "ろんり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見通し」 đọc là 「みとおし」, nghĩa là Triển vọng; tầm nhìn.",
+        "en": "Correct! 「見通し」 is read 「みとおし」 and means Outlook; prospect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見通し」 đọc là 「みとおし」 (Triển vọng; tầm nhìn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「見通し」 is read 「みとおし」 (Outlook; prospect); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "思想",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この作家の「思想」は、多くの人に影響を与えました。",
+        "en": "Choose the correct reading of the word in 「」: この作家の「思想」は、多くの人に影響を与えました。"
+      },
+      "payload": {
+        "choices": [
+          "ろんり",
+          "みとおし",
+          "しそう",
+          "はかる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思想」 đọc là 「しそう」, nghĩa là Tư tưởng.",
+        "en": "Correct! 「思想」 is read 「しそう」 and means Thought; ideology."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「思想」 đọc là 「しそう」 (Tư tưởng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「思想」 is read 「しそう」 (Thought; ideology); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "測る",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 定規で、長さを「はかる」ことができます。",
+        "en": "Choose the correct way to write the word in 「」: 定規で、長さを「はかる」ことができます。"
+      },
+      "payload": {
+        "choices": [
+          "見通し",
+          "狙う",
+          "測る",
+          "発想"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はかる」 viết là 「測る」, nghĩa là Đo (độ dài, thể tích).",
+        "en": "Correct! 「はかる」 is written 「測る」 and means To measure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はかる」 viết là 「測る」 (Đo (độ dài, thể tích)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はかる」 is written 「測る」 (To measure); the other words are read differently."
+      }
+    }
+  ]
+}

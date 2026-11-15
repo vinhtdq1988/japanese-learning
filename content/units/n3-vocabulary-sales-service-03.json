@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-sales-service",
+  "title": {
+    "vi": "Sản phẩm, giá cả và xu hướng",
+    "en": "Products, prices and trends"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "特価",
+      "reading": "とっか",
+      "meaning": {
+        "vi": "Giá đặc biệt",
+        "en": "Special price"
+      },
+      "examples": [
+        {
+          "ja": "今日は、野菜が特価で売られています。",
+          "reading": "きょうは、やさいがとっかでうられています。",
+          "translation": {
+            "vi": "Hôm nay rau được bán với giá đặc biệt.",
+            "en": "Vegetables are on sale at a special price today."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "特売",
+      "reading": "とくばい",
+      "meaning": {
+        "vi": "Bán hạ giá đặc biệt",
+        "en": "Special sale"
+      },
+      "examples": [
+        {
+          "ja": "日曜日は、肉の特売があります。",
+          "reading": "にちようびは、にくのとくばいがあります。",
+          "translation": {
+            "vi": "Chủ nhật có đợt bán hạ giá đặc biệt thịt.",
+            "en": "On Sunday there is a special sale on meat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "新製品",
+      "reading": "しんせいひん",
+      "meaning": {
+        "vi": "Sản phẩm mới",
+        "en": "New product"
+      },
+      "examples": [
+        {
+          "ja": "来月、新製品の発表会があります。",
+          "reading": "らいげつ、しんせいひんのはっぴょうかいがあります。",
+          "translation": {
+            "vi": "Tháng sau có buổi giới thiệu sản phẩm mới.",
+            "en": "Next month there is an unveiling for the new product."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "製品",
+      "reading": "せいひん",
+      "meaning": {
+        "vi": "Sản phẩm (chế tạo)",
+        "en": "Manufactured product"
+      },
+      "examples": [
+        {
+          "ja": "この会社の製品は、世界中で使われています。",
+          "reading": "このかいしゃのせいひんは、せかいじゅうでつかわれています。",
+          "translation": {
+            "vi": "Sản phẩm của công ty này được dùng trên khắp thế giới.",
+            "en": "This company's products are used all over the world."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "品質",
+      "reading": "ひんしつ",
+      "meaning": {
+        "vi": "Chất lượng",
+        "en": "Quality"
+      },
+      "examples": [
+        {
+          "ja": "値段は高いですが、品質がとてもいいです。",
+          "reading": "ねだんはたかいですが、ひんしつがとてもいいです。",
+          "translation": {
+            "vi": "Giá đắt nhưng chất lượng rất tốt.",
+            "en": "It is expensive, but the quality is very good."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "人気",
+      "reading": "にんき",
+      "meaning": {
+        "vi": "Được ưa chuộng; sự nổi tiếng",
+        "en": "Popularity"
+      },
+      "examples": [
+        {
+          "ja": "このお菓子は、子どもに人気があります。",
+          "reading": "このおかしは、こどもににんきがあります。",
+          "translation": {
+            "vi": "Loại bánh này được trẻ em ưa chuộng.",
+            "en": "These sweets are popular with children."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "流行",
+      "reading": "りゅうこう",
+      "meaning": {
+        "vi": "Mốt; thịnh hành",
+        "en": "Fashion; trend"
+      },
+      "examples": [
+        {
+          "ja": "今年は、短いスカートが流行しています。",
+          "reading": "ことしは、みじかいスカートがりゅうこうしています。",
+          "translation": {
+            "vi": "Năm nay váy ngắn đang là mốt.",
+            "en": "Short skirts are in fashion this year."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "割安",
+      "reading": "わりやす",
+      "meaning": {
+        "vi": "Rẻ so với giá trị",
+        "en": "Good value; relatively cheap"
+      },
+      "examples": [
+        {
+          "ja": "まとめて買うと、割安になります。",
+          "reading": "まとめてかうと、わりやすになります。",
+          "translation": {
+            "vi": "Mua gộp thì sẽ rẻ hơn so với mua lẻ.",
+            "en": "Buying in bulk works out cheaper."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "割高",
+      "reading": "わりだか",
+      "meaning": {
+        "vi": "Đắt so với giá trị",
+        "en": "Relatively expensive"
+      },
+      "examples": [
+        {
+          "ja": "コンビニは、スーパーより割高です。",
+          "reading": "コンビニは、スーパーよりわりだかです。",
+          "translation": {
+            "vi": "Cửa hàng tiện lợi đắt hơn siêu thị.",
+            "en": "Convenience stores are pricier than supermarkets."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "品揃え",
+      "reading": "しなぞろえ",
+      "meaning": {
+        "vi": "Sự đa dạng hàng hóa",
+        "en": "Selection of goods"
+      },
+      "examples": [
+        {
+          "ja": "この店は、品揃えが豊富で選ぶのが楽しいです。",
+          "reading": "このみせは、しなぞろえがほうふでえらぶのがたのしいです。",
+          "translation": {
+            "vi": "Cửa hàng này có hàng hóa phong phú nên chọn rất vui.",
+            "en": "This shop has a wide selection, so choosing is fun."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見本",
+      "reading": "みほん",
+      "meaning": {
+        "vi": "Hàng mẫu; mẫu",
+        "en": "Sample; specimen"
+      },
+      "examples": [
+        {
+          "ja": "見本を見てから、買うかどうか決めます。",
+          "reading": "みほんをみてから、かうかどうかきめます。",
+          "translation": {
+            "vi": "Tôi xem hàng mẫu rồi mới quyết định có mua hay không.",
+            "en": "I decide whether to buy after looking at the sample."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "試す",
+      "reading": "ためす",
+      "meaning": {
+        "vi": "Thử",
+        "en": "To try out; to test"
+      },
+      "examples": [
+        {
+          "ja": "買う前に、一度試すことができます。",
+          "reading": "かうまえに、いちどためすことができます。",
+          "translation": {
+            "vi": "Trước khi mua, bạn có thể dùng thử một lần.",
+            "en": "You can try it once before buying."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "特価",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は、野菜が（　）で売られています。 — Nghĩa của câu: “Hôm nay rau được bán với giá đặc biệt.”",
+        "en": "Choose the word that fits the blank: 今日は、野菜が（　）で売られています。 — Meaning of the sentence: “Vegetables are on sale at a special price today.”"
+      },
+      "payload": {
+        "choices": [
+          "割安",
+          "見本",
+          "特価",
+          "特売"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特価」(Giá đặc biệt) hợp nghĩa câu này: “Hôm nay rau được bán với giá đặc biệt.”",
+        "en": "Correct! 「特価」(Special price) fits this sentence: “Vegetables are on sale at a special price today.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay rau được bán với giá đặc biệt.”, nên cần 「特価」(Giá đặc biệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Vegetables are on sale at a special price today.”, so it needs 「特価」(Special price); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "特売",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日曜日は、肉の（　）があります。 — Nghĩa của câu: “Chủ nhật có đợt bán hạ giá đặc biệt thịt.”",
+        "en": "Choose the word that fits the blank: 日曜日は、肉の（　）があります。 — Meaning of the sentence: “On Sunday there is a special sale on meat.”"
+      },
+      "payload": {
+        "choices": [
+          "品揃え",
+          "割高",
+          "特価",
+          "特売"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特売」(Bán hạ giá đặc biệt) hợp nghĩa câu này: “Chủ nhật có đợt bán hạ giá đặc biệt thịt.”",
+        "en": "Correct! 「特売」(Special sale) fits this sentence: “On Sunday there is a special sale on meat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chủ nhật có đợt bán hạ giá đặc biệt thịt.”, nên cần 「特売」(Bán hạ giá đặc biệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On Sunday there is a special sale on meat.”, so it needs 「特売」(Special sale); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "新製品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来月、（　）の発表会があります。 — Nghĩa của câu: “Tháng sau có buổi giới thiệu sản phẩm mới.”",
+        "en": "Choose the word that fits the blank: 来月、（　）の発表会があります。 — Meaning of the sentence: “Next month there is an unveiling for the new product.”"
+      },
+      "payload": {
+        "choices": [
+          "新製品",
+          "品揃え",
+          "特価",
+          "品質"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「新製品」(Sản phẩm mới) hợp nghĩa câu này: “Tháng sau có buổi giới thiệu sản phẩm mới.”",
+        "en": "Correct! 「新製品」(New product) fits this sentence: “Next month there is an unveiling for the new product.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng sau có buổi giới thiệu sản phẩm mới.”, nên cần 「新製品」(Sản phẩm mới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Next month there is an unveiling for the new product.”, so it needs 「新製品」(New product); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "製品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社の（　）は、世界中で使われています。 — Nghĩa của câu: “Sản phẩm của công ty này được dùng trên khắp thế giới.”",
+        "en": "Choose the word that fits the blank: この会社の（　）は、世界中で使われています。 — Meaning of the sentence: “This company's products are used all over the world.”"
+      },
+      "payload": {
+        "choices": [
+          "特価",
+          "製品",
+          "人気",
+          "特売"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「製品」(Sản phẩm (chế tạo)) hợp nghĩa câu này: “Sản phẩm của công ty này được dùng trên khắp thế giới.”",
+        "en": "Correct! 「製品」(Manufactured product) fits this sentence: “This company's products are used all over the world.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sản phẩm của công ty này được dùng trên khắp thế giới.”, nên cần 「製品」(Sản phẩm (chế tạo)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company's products are used all over the world.”, so it needs 「製品」(Manufactured product); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "品質",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 値段は高いですが、（　）がとてもいいです。 — Nghĩa của câu: “Giá đắt nhưng chất lượng rất tốt.”",
+        "en": "Choose the word that fits the blank: 値段は高いですが、（　）がとてもいいです。 — Meaning of the sentence: “It is expensive, but the quality is very good.”"
+      },
+      "payload": {
+        "choices": [
+          "人気",
+          "特価",
+          "品質",
+          "特売"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「品質」(Chất lượng) hợp nghĩa câu này: “Giá đắt nhưng chất lượng rất tốt.”",
+        "en": "Correct! 「品質」(Quality) fits this sentence: “It is expensive, but the quality is very good.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giá đắt nhưng chất lượng rất tốt.”, nên cần 「品質」(Chất lượng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is expensive, but the quality is very good.”, so it needs 「品質」(Quality); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "人気",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお菓子は、子どもに（　）があります。 — Nghĩa của câu: “Loại bánh này được trẻ em ưa chuộng.”",
+        "en": "Choose the word that fits the blank: このお菓子は、子どもに（　）があります。 — Meaning of the sentence: “These sweets are popular with children.”"
+      },
+      "payload": {
+        "choices": [
+          "割安",
+          "見本",
+          "特価",
+          "人気"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「人気」(Được ưa chuộng; sự nổi tiếng) hợp nghĩa câu này: “Loại bánh này được trẻ em ưa chuộng.”",
+        "en": "Correct! 「人気」(Popularity) fits this sentence: “These sweets are popular with children.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Loại bánh này được trẻ em ưa chuộng.”, nên cần 「人気」(Được ưa chuộng; sự nổi tiếng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “These sweets are popular with children.”, so it needs 「人気」(Popularity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "流行",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今年は、短いスカートが（　）しています。 — Nghĩa của câu: “Năm nay váy ngắn đang là mốt.”",
+        "en": "Choose the word that fits the blank: 今年は、短いスカートが（　）しています。 — Meaning of the sentence: “Short skirts are in fashion this year.”"
+      },
+      "payload": {
+        "choices": [
+          "流行",
+          "特価",
+          "新製品",
+          "特売"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「流行」(Mốt; thịnh hành) hợp nghĩa câu này: “Năm nay váy ngắn đang là mốt.”",
+        "en": "Correct! 「流行」(Fashion; trend) fits this sentence: “Short skirts are in fashion this year.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Năm nay váy ngắn đang là mốt.”, nên cần 「流行」(Mốt; thịnh hành); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Short skirts are in fashion this year.”, so it needs 「流行」(Fashion; trend); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "割安",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: まとめて買うと、（　）になります。 — Nghĩa của câu: “Mua gộp thì sẽ rẻ hơn so với mua lẻ.”",
+        "en": "Choose the word that fits the blank: まとめて買うと、（　）になります。 — Meaning of the sentence: “Buying in bulk works out cheaper.”"
+      },
+      "payload": {
+        "choices": [
+          "新製品",
+          "割安",
+          "人気",
+          "特価"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「割安」(Rẻ so với giá trị) hợp nghĩa câu này: “Mua gộp thì sẽ rẻ hơn so với mua lẻ.”",
+        "en": "Correct! 「割安」(Good value; relatively cheap) fits this sentence: “Buying in bulk works out cheaper.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mua gộp thì sẽ rẻ hơn so với mua lẻ.”, nên cần 「割安」(Rẻ so với giá trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Buying in bulk works out cheaper.”, so it needs 「割安」(Good value; relatively cheap); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "割高",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: コンビニは、スーパーより（　）です。 — Nghĩa của câu: “Cửa hàng tiện lợi đắt hơn siêu thị.”",
+        "en": "Choose the word that fits the blank: コンビニは、スーパーより（　）です。 — Meaning of the sentence: “Convenience stores are pricier than supermarkets.”"
+      },
+      "payload": {
+        "choices": [
+          "新製品",
+          "割安",
+          "割高",
+          "特価"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「割高」(Đắt so với giá trị) hợp nghĩa câu này: “Cửa hàng tiện lợi đắt hơn siêu thị.”",
+        "en": "Correct! 「割高」(Relatively expensive) fits this sentence: “Convenience stores are pricier than supermarkets.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng tiện lợi đắt hơn siêu thị.”, nên cần 「割高」(Đắt so với giá trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Convenience stores are pricier than supermarkets.”, so it needs 「割高」(Relatively expensive); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "品揃え",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店は、（　）が豊富で選ぶのが楽しいです。 — Nghĩa của câu: “Cửa hàng này có hàng hóa phong phú nên chọn rất vui.”",
+        "en": "Choose the word that fits the blank: この店は、（　）が豊富で選ぶのが楽しいです。 — Meaning of the sentence: “This shop has a wide selection, so choosing is fun.”"
+      },
+      "payload": {
+        "choices": [
+          "品質",
+          "流行",
+          "特価",
+          "品揃え"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「品揃え」(Sự đa dạng hàng hóa) hợp nghĩa câu này: “Cửa hàng này có hàng hóa phong phú nên chọn rất vui.”",
+        "en": "Correct! 「品揃え」(Selection of goods) fits this sentence: “This shop has a wide selection, so choosing is fun.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng này có hàng hóa phong phú nên chọn rất vui.”, nên cần 「品揃え」(Sự đa dạng hàng hóa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This shop has a wide selection, so choosing is fun.”, so it needs 「品揃え」(Selection of goods); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見本",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を見てから、買うかどうか決めます。 — Nghĩa của câu: “Tôi xem hàng mẫu rồi mới quyết định có mua hay không.”",
+        "en": "Choose the word that fits the blank: （　）を見てから、買うかどうか決めます。 — Meaning of the sentence: “I decide whether to buy after looking at the sample.”"
+      },
+      "payload": {
+        "choices": [
+          "見本",
+          "割高",
+          "新製品",
+          "特価"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見本」(Hàng mẫu; mẫu) hợp nghĩa câu này: “Tôi xem hàng mẫu rồi mới quyết định có mua hay không.”",
+        "en": "Correct! 「見本」(Sample; specimen) fits this sentence: “I decide whether to buy after looking at the sample.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi xem hàng mẫu rồi mới quyết định có mua hay không.”, nên cần 「見本」(Hàng mẫu; mẫu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decide whether to buy after looking at the sample.”, so it needs 「見本」(Sample; specimen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "試す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 買う前に、一度（　）ことができます。 — Nghĩa của câu: “Trước khi mua, bạn có thể dùng thử một lần.”",
+        "en": "Choose the word that fits the blank: 買う前に、一度（　）ことができます。 — Meaning of the sentence: “You can try it once before buying.”"
+      },
+      "payload": {
+        "choices": [
+          "特売",
+          "試す",
+          "品揃え",
+          "人気"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「試す」(Thử) hợp nghĩa câu này: “Trước khi mua, bạn có thể dùng thử một lần.”",
+        "en": "Correct! 「試す」(To try out; to test) fits this sentence: “You can try it once before buying.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi mua, bạn có thể dùng thử một lần.”, nên cần 「試す」(Thử); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can try it once before buying.”, so it needs 「試す」(To try out; to test); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "特価",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今日は、野菜が「特価」で売られています。",
+        "en": "Choose the correct reading of the word in 「」: 今日は、野菜が「特価」で売られています。"
+      },
+      "payload": {
+        "choices": [
+          "りゅうこう",
+          "みほん",
+          "しなぞろえ",
+          "とっか"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特価」 đọc là 「とっか」, nghĩa là Giá đặc biệt.",
+        "en": "Correct! 「特価」 is read 「とっか」 and means Special price."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「特価」 đọc là 「とっか」 (Giá đặc biệt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「特価」 is read 「とっか」 (Special price); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "製品",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この会社の「製品」は、世界中で使われています。",
+        "en": "Choose the correct reading of the word in 「」: この会社の「製品」は、世界中で使われています。"
+      },
+      "payload": {
+        "choices": [
+          "せいひん",
+          "しなぞろえ",
+          "わりやす",
+          "とっか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「製品」 đọc là 「せいひん」, nghĩa là Sản phẩm (chế tạo).",
+        "en": "Correct! 「製品」 is read 「せいひん」 and means Manufactured product."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「製品」 đọc là 「せいひん」 (Sản phẩm (chế tạo)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「製品」 is read 「せいひん」 (Manufactured product); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "流行",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今年は、短いスカートが「流行」しています。",
+        "en": "Choose the correct reading of the word in 「」: 今年は、短いスカートが「流行」しています。"
+      },
+      "payload": {
+        "choices": [
+          "にんき",
+          "りゅうこう",
+          "しんせいひん",
+          "わりだか"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「流行」 đọc là 「りゅうこう」, nghĩa là Mốt; thịnh hành.",
+        "en": "Correct! 「流行」 is read 「りゅうこう」 and means Fashion; trend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「流行」 đọc là 「りゅうこう」 (Mốt; thịnh hành); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「流行」 is read 「りゅうこう」 (Fashion; trend); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "品揃え",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この店は、「品揃え」が豊富で選ぶのが楽しいです。",
+        "en": "Choose the correct reading of the word in 「」: この店は、「品揃え」が豊富で選ぶのが楽しいです。"
+      },
+      "payload": {
+        "choices": [
+          "わりだか",
+          "りゅうこう",
+          "しなぞろえ",
+          "せいひん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「品揃え」 đọc là 「しなぞろえ」, nghĩa là Sự đa dạng hàng hóa.",
+        "en": "Correct! 「品揃え」 is read 「しなぞろえ」 and means Selection of goods."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「品揃え」 đọc là 「しなぞろえ」 (Sự đa dạng hàng hóa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「品揃え」 is read 「しなぞろえ」 (Selection of goods); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "新製品",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 来月、「しんせいひん」の発表会があります。",
+        "en": "Choose the correct way to write the word in 「」: 来月、「しんせいひん」の発表会があります。"
+      },
+      "payload": {
+        "choices": [
+          "新製品",
+          "見本",
+          "品揃え",
+          "流行"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しんせいひん」 viết là 「新製品」, nghĩa là Sản phẩm mới.",
+        "en": "Correct! 「しんせいひん」 is written 「新製品」 and means New product."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しんせいひん」 viết là 「新製品」 (Sản phẩm mới); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しんせいひん」 is written 「新製品」 (New product); the other words are read differently."
+      }
+    },
+    {
+      "item": "割高",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: コンビニは、スーパーより「わりだか」です。",
+        "en": "Choose the correct way to write the word in 「」: コンビニは、スーパーより「わりだか」です。"
+      },
+      "payload": {
+        "choices": [
+          "試す",
+          "割高",
+          "新製品",
+          "割安"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「わりだか」 viết là 「割高」, nghĩa là Đắt so với giá trị.",
+        "en": "Correct! 「わりだか」 is written 「割高」 and means Relatively expensive."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「わりだか」 viết là 「割高」 (Đắt so với giá trị); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「わりだか」 is written 「割高」 (Relatively expensive); the other words are read differently."
+      }
+    }
+  ]
+}

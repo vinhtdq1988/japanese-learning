@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-manner",
+  "title": {
+    "vi": "Phản ứng nhanh",
+    "en": "Quick reactions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "ころころ",
+      "reading": "ころころ",
+      "meaning": {
+        "vi": "Lăn lóc (tròn trịa)",
+        "en": "Rolling (lightly)"
+      },
+      "examples": [
+        {
+          "ja": "ボールが、ころころ転がっていきました。",
+          "reading": "ボールが、ころころころがっていきました。",
+          "translation": {
+            "vi": "Quả bóng lăn lóc đi mất.",
+            "en": "The ball rolled away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "がっかり",
+      "reading": "がっかり",
+      "meaning": {
+        "vi": "Thất vọng",
+        "en": "Disappointed"
+      },
+      "examples": [
+        {
+          "ja": "試験に落ちて、がっかりしました。",
+          "reading": "しけんにおちて、がっかりしました。",
+          "translation": {
+            "vi": "Trượt kỳ thi nên tôi thất vọng.",
+            "en": "I was disappointed to fail the exam."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "びっくり",
+      "reading": "びっくり",
+      "meaning": {
+        "vi": "Giật mình; ngạc nhiên",
+        "en": "Surprised"
+      },
+      "examples": [
+        {
+          "ja": "大きな音に、びっくりしました。",
+          "reading": "おおきなおとに、びっくりしました。",
+          "translation": {
+            "vi": "Tôi giật mình vì tiếng động lớn.",
+            "en": "I was startled by the loud noise."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ほっと",
+      "reading": "ほっと",
+      "meaning": {
+        "vi": "Nhẹ nhõm",
+        "en": "Relieved"
+      },
+      "examples": [
+        {
+          "ja": "無事に着いて、ほっとしました。",
+          "reading": "ぶじについて、ほっとしました。",
+          "translation": {
+            "vi": "Đến nơi an toàn nên tôi thấy nhẹ nhõm.",
+            "en": "I felt relieved to arrive safely."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "すっと",
+      "reading": "すっと",
+      "meaning": {
+        "vi": "Nhanh nhẹn; thoáng qua",
+        "en": "Smoothly; swiftly"
+      },
+      "examples": [
+        {
+          "ja": "彼は、すっと立ち上がりました。",
+          "reading": "かれは、すっとたちあがりました。",
+          "translation": {
+            "vi": "Anh ấy đứng dậy nhẹ nhàng.",
+            "en": "He rose to his feet smoothly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ざっと",
+      "reading": "ざっと",
+      "meaning": {
+        "vi": "Sơ qua; đại khái",
+        "en": "Roughly; at a glance"
+      },
+      "examples": [
+        {
+          "ja": "書類に、ざっと目を通しました。",
+          "reading": "しょるいに、ざっとめをとおしました。",
+          "translation": {
+            "vi": "Tôi đã xem lướt qua giấy tờ.",
+            "en": "I glanced over the documents."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "ころころ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ボールが、（　）転がっていきました。 — Nghĩa của câu: “Quả bóng lăn lóc đi mất.”",
+        "en": "Choose the word that fits the blank: ボールが、（　）転がっていきました。 — Meaning of the sentence: “The ball rolled away.”"
+      },
+      "payload": {
+        "choices": [
+          "がっかり",
+          "びっくり",
+          "ころころ",
+          "ほっと"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ころころ」(Lăn lóc (tròn trịa)) hợp nghĩa câu này: “Quả bóng lăn lóc đi mất.”",
+        "en": "Correct! 「ころころ」(Rolling (lightly)) fits this sentence: “The ball rolled away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quả bóng lăn lóc đi mất.”, nên cần 「ころころ」(Lăn lóc (tròn trịa)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The ball rolled away.”, so it needs 「ころころ」(Rolling (lightly)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "がっかり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試験に落ちて、（　）しました。 — Nghĩa của câu: “Trượt kỳ thi nên tôi thất vọng.”",
+        "en": "Choose the word that fits the blank: 試験に落ちて、（　）しました。 — Meaning of the sentence: “I was disappointed to fail the exam.”"
+      },
+      "payload": {
+        "choices": [
+          "ざっと",
+          "ころころ",
+          "びっくり",
+          "がっかり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「がっかり」(Thất vọng) hợp nghĩa câu này: “Trượt kỳ thi nên tôi thất vọng.”",
+        "en": "Correct! 「がっかり」(Disappointed) fits this sentence: “I was disappointed to fail the exam.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trượt kỳ thi nên tôi thất vọng.”, nên cần 「がっかり」(Thất vọng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was disappointed to fail the exam.”, so it needs 「がっかり」(Disappointed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "びっくり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きな音に、（　）しました。 — Nghĩa của câu: “Tôi giật mình vì tiếng động lớn.”",
+        "en": "Choose the word that fits the blank: 大きな音に、（　）しました。 — Meaning of the sentence: “I was startled by the loud noise.”"
+      },
+      "payload": {
+        "choices": [
+          "びっくり",
+          "がっかり",
+          "ころころ",
+          "ざっと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「びっくり」(Giật mình; ngạc nhiên) hợp nghĩa câu này: “Tôi giật mình vì tiếng động lớn.”",
+        "en": "Correct! 「びっくり」(Surprised) fits this sentence: “I was startled by the loud noise.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi giật mình vì tiếng động lớn.”, nên cần 「びっくり」(Giật mình; ngạc nhiên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was startled by the loud noise.”, so it needs 「びっくり」(Surprised); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ほっと",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 無事に着いて、（　）しました。 — Nghĩa của câu: “Đến nơi an toàn nên tôi thấy nhẹ nhõm.”",
+        "en": "Choose the word that fits the blank: 無事に着いて、（　）しました。 — Meaning of the sentence: “I felt relieved to arrive safely.”"
+      },
+      "payload": {
+        "choices": [
+          "ころころ",
+          "ほっと",
+          "がっかり",
+          "ざっと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほっと」(Nhẹ nhõm) hợp nghĩa câu này: “Đến nơi an toàn nên tôi thấy nhẹ nhõm.”",
+        "en": "Correct! 「ほっと」(Relieved) fits this sentence: “I felt relieved to arrive safely.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đến nơi an toàn nên tôi thấy nhẹ nhõm.”, nên cần 「ほっと」(Nhẹ nhõm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I felt relieved to arrive safely.”, so it needs 「ほっと」(Relieved); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "すっと",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）立ち上がりました。 — Nghĩa của câu: “Anh ấy đứng dậy nhẹ nhàng.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）立ち上がりました。 — Meaning of the sentence: “He rose to his feet smoothly.”"
+      },
+      "payload": {
+        "choices": [
+          "びっくり",
+          "ころころ",
+          "すっと",
+          "がっかり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「すっと」(Nhanh nhẹn; thoáng qua) hợp nghĩa câu này: “Anh ấy đứng dậy nhẹ nhàng.”",
+        "en": "Correct! 「すっと」(Smoothly; swiftly) fits this sentence: “He rose to his feet smoothly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy đứng dậy nhẹ nhàng.”, nên cần 「すっと」(Nhanh nhẹn; thoáng qua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He rose to his feet smoothly.”, so it needs 「すっと」(Smoothly; swiftly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ざっと",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 書類に、（　）目を通しました。 — Nghĩa của câu: “Tôi đã xem lướt qua giấy tờ.”",
+        "en": "Choose the word that fits the blank: 書類に、（　）目を通しました。 — Meaning of the sentence: “I glanced over the documents.”"
+      },
+      "payload": {
+        "choices": [
+          "ころころ",
+          "がっかり",
+          "ほっと",
+          "ざっと"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ざっと」(Sơ qua; đại khái) hợp nghĩa câu này: “Tôi đã xem lướt qua giấy tờ.”",
+        "en": "Correct! 「ざっと」(Roughly; at a glance) fits this sentence: “I glanced over the documents.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã xem lướt qua giấy tờ.”, nên cần 「ざっと」(Sơ qua; đại khái); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I glanced over the documents.”, so it needs 「ざっと」(Roughly; at a glance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ころころ",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ có nghĩa “Lăn lóc (tròn trịa)” trong câu: ボールが、（　）転がっていきました。",
+        "en": "Choose the correct spelling of the word meaning “Rolling (lightly)” in the sentence: ボールが、（　）転がっていきました。"
+      },
+      "payload": {
+        "choices": [
+          "ころころ",
+          "ろこころ",
+          "ころっころ",
+          "こころろ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ころころ」 viết là 「ころころ」, nghĩa là Lăn lóc (tròn trịa).",
+        "en": "Correct! 「ころころ」 is written 「ころころ」 and means Rolling (lightly)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「ころころ」 (Lăn lóc (tròn trịa)); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「ころころ」 (Rolling (lightly)); the other spellings are incorrect."
+      }
+    },
+    {
+      "item": "ほっと",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ có nghĩa “Nhẹ nhõm” trong câu: 無事に着いて、（　）しました。",
+        "en": "Choose the correct spelling of the word meaning “Relieved” in the sentence: 無事に着いて、（　）しました。"
+      },
+      "payload": {
+        "choices": [
+          "っほと",
+          "ほっと",
+          "ほとっ",
+          "ほっど"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほっと」 viết là 「ほっと」, nghĩa là Nhẹ nhõm.",
+        "en": "Correct! 「ほっと」 is written 「ほっと」 and means Relieved."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「ほっと」 (Nhẹ nhõm); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「ほっと」 (Relieved); the other spellings are incorrect."
+      }
+    }
+  ]
+}

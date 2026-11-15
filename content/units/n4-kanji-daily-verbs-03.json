@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-daily-verbs",
+  "title": {
+    "vi": "Kanji động từ sinh hoạt (集 使 切)",
+    "en": "Daily verbs kanji (集 使 切)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "集",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "tập hợp; thu thập",
+        "en": "gather; collect"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "あつ.める",
+          "あつ.まる"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "集合",
+          "reading": "しゅうごう",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "tập hợp",
+            "en": "assembly"
+          }
+        },
+        {
+          "ja": "集める",
+          "reading": "あつめる",
+          "kanjiReading": "あつ",
+          "translation": {
+            "vi": "thu thập",
+            "en": "to collect"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "使",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "dùng; sử dụng",
+        "en": "use"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "つか.う"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "大使館",
+          "reading": "たいしかん",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "đại sứ quán",
+            "en": "embassy"
+          }
+        },
+        {
+          "ja": "使う",
+          "reading": "つかう",
+          "kanjiReading": "つか",
+          "translation": {
+            "vi": "sử dụng",
+            "en": "to use"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "切",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "cắt; quan trọng",
+        "en": "cut; important"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セツ",
+          "サイ"
+        ],
+        "kunReadings": [
+          "き.る",
+          "き.れる"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "大切",
+          "reading": "たいせつ",
+          "kanjiReading": "セツ",
+          "translation": {
+            "vi": "quan trọng",
+            "en": "important"
+          }
+        },
+        {
+          "ja": "切る",
+          "reading": "きる",
+          "kanjiReading": "き",
+          "translation": {
+            "vi": "cắt",
+            "en": "to cut"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "集",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「集」nghĩa là gì?",
+        "en": "What does 「集」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tập hợp; thu thập",
+            "en": "gather; collect"
+          },
+          {
+            "vi": "dùng; sử dụng",
+            "en": "use"
+          },
+          {
+            "vi": "cắt; quan trọng",
+            "en": "cut; important"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 集 nghĩa là tập hợp; thu thập.",
+        "en": "Correct! 集 means gather; collect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 集 nghĩa là tập hợp; thu thập, như trong 「集合」 (tập hợp).",
+        "en": "Not quite. 集 means gather; collect, as in 「集合」 (assembly)."
+      }
+    },
+    {
+      "item": "集",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「集」 trong 「集合」 (“tập hợp”).",
+        "en": "Type the reading of 「集」 in 「集合」 (“assembly”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 集合, 集 đọc là しゅう (âm On).",
+        "en": "Correct! In 集合, 集 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 集合 (tập hợp), 集 đọc là しゅう (âm On).",
+        "en": "In 集合 (assembly), 集 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "集",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「集める」(thu thập) đọc là gì?",
+        "en": "How is 「集める」 (to collect) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅうめる",
+          "あつめる",
+          "たいせつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 集める = あつめる (thu thập); 集 đọc là あつ (âm Kun).",
+        "en": "Correct! 集める = あつめる (to collect); 集 is read あつ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "集める đọc là あつめる (thu thập): 集 mang âm Kun あつ.",
+        "en": "集める is read あつめる (to collect): 集 takes the kun'yomi あつ."
+      }
+    },
+    {
+      "item": "使",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「使」nghĩa là gì?",
+        "en": "What does 「使」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cắt; quan trọng",
+            "en": "cut; important"
+          },
+          {
+            "vi": "dùng; sử dụng",
+            "en": "use"
+          },
+          {
+            "vi": "tập hợp; thu thập",
+            "en": "gather; collect"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 使 nghĩa là dùng; sử dụng.",
+        "en": "Correct! 使 means use."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 使 nghĩa là dùng; sử dụng, như trong 「大使館」 (đại sứ quán).",
+        "en": "Not quite. 使 means use, as in 「大使館」 (embassy)."
+      }
+    },
+    {
+      "item": "使",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「使」 trong 「大使館」 (“đại sứ quán”).",
+        "en": "Type the reading of 「使」 in 「大使館」 (“embassy”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 大使館, 使 đọc là し (âm On).",
+        "en": "Correct! In 大使館, 使 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 大使館 (đại sứ quán), 使 đọc là し (âm On).",
+        "en": "In 大使館 (embassy), 使 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "使",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「使う」(sử dụng) đọc là gì?",
+        "en": "How is 「使う」 (to use) read?"
+      },
+      "payload": {
+        "choices": [
+          "しう",
+          "たいせつ",
+          "つかう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 使う = つかう (sử dụng); 使 đọc là つか (âm Kun).",
+        "en": "Correct! 使う = つかう (to use); 使 is read つか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "使う đọc là つかう (sử dụng): 使 mang âm Kun つか.",
+        "en": "使う is read つかう (to use): 使 takes the kun'yomi つか."
+      }
+    },
+    {
+      "item": "切",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「切」nghĩa là gì?",
+        "en": "What does 「切」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tập hợp; thu thập",
+            "en": "gather; collect"
+          },
+          {
+            "vi": "dùng; sử dụng",
+            "en": "use"
+          },
+          {
+            "vi": "cắt; quan trọng",
+            "en": "cut; important"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 切 nghĩa là cắt; quan trọng.",
+        "en": "Correct! 切 means cut; important."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 切 nghĩa là cắt; quan trọng, như trong 「大切」 (quan trọng).",
+        "en": "Not quite. 切 means cut; important, as in 「大切」 (important)."
+      }
+    },
+    {
+      "item": "切",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「切」 trong 「大切」 (“quan trọng”).",
+        "en": "Type the reading of 「切」 in 「大切」 (“important”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せつ",
+          "セツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 大切, 切 đọc là せつ (âm On).",
+        "en": "Correct! In 大切, 切 is read せつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 大切 (quan trọng), 切 đọc là せつ (âm On).",
+        "en": "In 大切 (important), 切 is read せつ (on'yomi)."
+      }
+    },
+    {
+      "item": "切",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「切る」(cắt) đọc là gì?",
+        "en": "How is 「切る」 (to cut) read?"
+      },
+      "payload": {
+        "choices": [
+          "きる",
+          "せつる",
+          "つかう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 切る = きる (cắt); 切 đọc là き (âm Kun).",
+        "en": "Correct! 切る = きる (to cut); 切 is read き (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "切る đọc là きる (cắt): 切 mang âm Kun き.",
+        "en": "切る is read きる (to cut): 切 takes the kun'yomi き."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "集",
+            {
+              "vi": "tập hợp; thu thập",
+              "en": "gather; collect"
+            }
+          ],
+          [
+            "使",
+            {
+              "vi": "dùng; sử dụng",
+              "en": "use"
+            }
+          ],
+          [
+            "切",
+            {
+              "vi": "cắt; quan trọng",
+              "en": "cut; important"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

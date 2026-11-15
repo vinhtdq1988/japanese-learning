@@ -1,0 +1,666 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (路 階 段 席 座)",
+    "en": "Daily life and home kanji (路 階 段 席 座)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "路",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "đường",
+        "en": "road; path"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ロ"
+        ],
+        "kunReadings": [
+          "じ"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "道路",
+          "reading": "どうろ",
+          "kanjiReading": "ロ",
+          "translation": {
+            "vi": "đường bộ",
+            "en": "road"
+          }
+        },
+        {
+          "ja": "通路",
+          "reading": "つうろ",
+          "kanjiReading": "ロ",
+          "translation": {
+            "vi": "lối đi",
+            "en": "passage"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "階",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "tầng; bậc",
+        "en": "floor; step"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "階段",
+          "reading": "かいだん",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "cầu thang",
+            "en": "stairs"
+          }
+        },
+        {
+          "ja": "二階",
+          "reading": "にかい",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "tầng hai",
+            "en": "second floor"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "段",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "bậc; cấp; giá",
+        "en": "step; level"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "階段",
+          "reading": "かいだん",
+          "kanjiReading": "ダン",
+          "translation": {
+            "vi": "cầu thang",
+            "en": "stairs"
+          }
+        },
+        {
+          "ja": "手段",
+          "reading": "しゅだん",
+          "kanjiReading": "ダン",
+          "translation": {
+            "vi": "phương tiện; cách",
+            "en": "means"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "席",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "chỗ ngồi; buổi",
+        "en": "seat; session"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "出席",
+          "reading": "しゅっせき",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "có mặt; tham dự",
+            "en": "attendance"
+          }
+        },
+        {
+          "ja": "座席",
+          "reading": "ざせき",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "chỗ ngồi",
+            "en": "seat"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "座",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "ngồi; chỗ ngồi",
+        "en": "sit; seat"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザ"
+        ],
+        "kunReadings": [
+          "すわ.る"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "座席",
+          "reading": "ざせき",
+          "kanjiReading": "ザ",
+          "translation": {
+            "vi": "chỗ ngồi",
+            "en": "seat"
+          }
+        },
+        {
+          "ja": "座る",
+          "reading": "すわる",
+          "kanjiReading": "すわ",
+          "translation": {
+            "vi": "ngồi",
+            "en": "to sit"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "路",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「路」nghĩa là gì?",
+        "en": "What does 「路」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đường",
+            "en": "road; path"
+          },
+          {
+            "vi": "tầng; bậc",
+            "en": "floor; step"
+          },
+          {
+            "vi": "bậc; cấp; giá",
+            "en": "step; level"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 路 nghĩa là đường.",
+        "en": "Correct! 路 means road; path."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 路 nghĩa là đường, như trong 「道路」 (đường bộ).",
+        "en": "Not quite. 路 means road; path, as in 「道路」 (road)."
+      }
+    },
+    {
+      "item": "路",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「路」 trong 「道路」 (“đường bộ”).",
+        "en": "Type the reading of 「路」 in 「道路」 (“road”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ろ",
+          "ロ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 道路, 路 đọc là ろ (âm On).",
+        "en": "Correct! In 道路, 路 is read ろ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 道路 (đường bộ), 路 đọc là ろ (âm On).",
+        "en": "In 道路 (road), 路 is read ろ (on'yomi)."
+      }
+    },
+    {
+      "item": "路",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「通路」(lối đi) đọc là gì?",
+        "en": "How is 「通路」 (passage) read?"
+      },
+      "payload": {
+        "choices": [
+          "つうじ",
+          "つうろ",
+          "つうかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 通路 = つうろ (lối đi); 路 đọc là ろ (âm On).",
+        "en": "Correct! 通路 = つうろ (passage); 路 is read ろ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "通路 đọc là つうろ (lối đi): 路 mang âm On ろ.",
+        "en": "通路 is read つうろ (passage): 路 takes the on'yomi ろ."
+      }
+    },
+    {
+      "item": "階",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「階」nghĩa là gì?",
+        "en": "What does 「階」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bậc; cấp; giá",
+            "en": "step; level"
+          },
+          {
+            "vi": "tầng; bậc",
+            "en": "floor; step"
+          },
+          {
+            "vi": "chỗ ngồi; buổi",
+            "en": "seat; session"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 階 nghĩa là tầng; bậc.",
+        "en": "Correct! 階 means floor; step."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 階 nghĩa là tầng; bậc, như trong 「階段」 (cầu thang).",
+        "en": "Not quite. 階 means floor; step, as in 「階段」 (stairs)."
+      }
+    },
+    {
+      "item": "階",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「階」 trong 「階段」 (“cầu thang”).",
+        "en": "Type the reading of 「階」 in 「階段」 (“stairs”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 階段, 階 đọc là かい (âm On).",
+        "en": "Correct! In 階段, 階 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 階段 (cầu thang), 階 đọc là かい (âm On).",
+        "en": "In 階段 (stairs), 階 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "階",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「二階」(tầng hai) đọc là gì?",
+        "en": "How is 「二階」 (second floor) read?"
+      },
+      "payload": {
+        "choices": [
+          "にがい",
+          "にだん",
+          "にかい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 二階 = にかい (tầng hai); 階 đọc là かい (âm On).",
+        "en": "Correct! 二階 = にかい (second floor); 階 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "二階 đọc là にかい (tầng hai): 階 mang âm On かい.",
+        "en": "二階 is read にかい (second floor): 階 takes the on'yomi かい."
+      }
+    },
+    {
+      "item": "段",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「段」nghĩa là gì?",
+        "en": "What does 「段」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chỗ ngồi; buổi",
+            "en": "seat; session"
+          },
+          {
+            "vi": "ngồi; chỗ ngồi",
+            "en": "sit; seat"
+          },
+          {
+            "vi": "bậc; cấp; giá",
+            "en": "step; level"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 段 nghĩa là bậc; cấp; giá.",
+        "en": "Correct! 段 means step; level."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 段 nghĩa là bậc; cấp; giá, như trong 「階段」 (cầu thang).",
+        "en": "Not quite. 段 means step; level, as in 「階段」 (stairs)."
+      }
+    },
+    {
+      "item": "段",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「段」 trong 「階段」 (“cầu thang”).",
+        "en": "Type the reading of 「段」 in 「階段」 (“stairs”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だん",
+          "ダン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 階段, 段 đọc là だん (âm On).",
+        "en": "Correct! In 階段, 段 is read だん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 階段 (cầu thang), 段 đọc là だん (âm On).",
+        "en": "In 階段 (stairs), 段 is read だん (on'yomi)."
+      }
+    },
+    {
+      "item": "段",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「手段」(phương tiện; cách) đọc là gì?",
+        "en": "How is 「手段」 (means) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅだん",
+          "しゅたん",
+          "しゅせき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 手段 = しゅだん (phương tiện; cách); 段 đọc là だん (âm On).",
+        "en": "Correct! 手段 = しゅだん (means); 段 is read だん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "手段 đọc là しゅだん (phương tiện; cách): 段 mang âm On だん.",
+        "en": "手段 is read しゅだん (means): 段 takes the on'yomi だん."
+      }
+    },
+    {
+      "item": "席",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「席」nghĩa là gì?",
+        "en": "What does 「席」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chỗ ngồi; buổi",
+            "en": "seat; session"
+          },
+          {
+            "vi": "ngồi; chỗ ngồi",
+            "en": "sit; seat"
+          },
+          {
+            "vi": "đường",
+            "en": "road; path"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 席 nghĩa là chỗ ngồi; buổi.",
+        "en": "Correct! 席 means seat; session."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 席 nghĩa là chỗ ngồi; buổi, như trong 「出席」 (có mặt; tham dự).",
+        "en": "Not quite. 席 means seat; session, as in 「出席」 (attendance)."
+      }
+    },
+    {
+      "item": "席",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「席」 trong 「出席」 (“có mặt; tham dự”).",
+        "en": "Type the reading of 「席」 in 「出席」 (“attendance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せき",
+          "セキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 出席, 席 đọc là せき (âm On).",
+        "en": "Correct! In 出席, 席 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 出席 (có mặt; tham dự), 席 đọc là せき (âm On).",
+        "en": "In 出席 (attendance), 席 is read せき (on'yomi)."
+      }
+    },
+    {
+      "item": "席",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「座席」(chỗ ngồi) đọc là gì?",
+        "en": "How is 「座席」 (seat) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざぜき",
+          "ざせき",
+          "ざすわ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 座席 = ざせき (chỗ ngồi); 席 đọc là せき (âm On).",
+        "en": "Correct! 座席 = ざせき (seat); 席 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "座席 đọc là ざせき (chỗ ngồi): 席 mang âm On せき.",
+        "en": "座席 is read ざせき (seat): 席 takes the on'yomi せき."
+      }
+    },
+    {
+      "item": "座",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「座」nghĩa là gì?",
+        "en": "What does 「座」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đường",
+            "en": "road; path"
+          },
+          {
+            "vi": "ngồi; chỗ ngồi",
+            "en": "sit; seat"
+          },
+          {
+            "vi": "tầng; bậc",
+            "en": "floor; step"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 座 nghĩa là ngồi; chỗ ngồi.",
+        "en": "Correct! 座 means sit; seat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 座 nghĩa là ngồi; chỗ ngồi, như trong 「座席」 (chỗ ngồi).",
+        "en": "Not quite. 座 means sit; seat, as in 「座席」 (seat)."
+      }
+    },
+    {
+      "item": "座",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「座」 trong 「座席」 (“chỗ ngồi”).",
+        "en": "Type the reading of 「座」 in 「座席」 (“seat”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざ",
+          "ザ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 座席, 座 đọc là ざ (âm On).",
+        "en": "Correct! In 座席, 座 is read ざ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 座席 (chỗ ngồi), 座 đọc là ざ (âm On).",
+        "en": "In 座席 (seat), 座 is read ざ (on'yomi)."
+      }
+    },
+    {
+      "item": "座",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「座る」(ngồi) đọc là gì?",
+        "en": "How is 「座る」 (to sit) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざる",
+          "どうろ",
+          "すわる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 座る = すわる (ngồi); 座 đọc là すわ (âm Kun).",
+        "en": "Correct! 座る = すわる (to sit); 座 is read すわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "座る đọc là すわる (ngồi): 座 mang âm Kun すわ.",
+        "en": "座る is read すわる (to sit): 座 takes the kun'yomi すわ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "路",
+            {
+              "vi": "đường",
+              "en": "road; path"
+            }
+          ],
+          [
+            "階",
+            {
+              "vi": "tầng; bậc",
+              "en": "floor; step"
+            }
+          ],
+          [
+            "段",
+            {
+              "vi": "bậc; cấp; giá",
+              "en": "step; level"
+            }
+          ],
+          [
+            "席",
+            {
+              "vi": "chỗ ngồi; buổi",
+              "en": "seat; session"
+            }
+          ],
+          [
+            "座",
+            {
+              "vi": "ngồi; chỗ ngồi",
+              "en": "sit; seat"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

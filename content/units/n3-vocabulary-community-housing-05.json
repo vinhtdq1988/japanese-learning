@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-community-housing",
+  "title": {
+    "vi": "Chi phí và xây dựng nhà ở",
+    "en": "Housing costs and building"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1740,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "空き家",
+      "reading": "あきや",
+      "meaning": {
+        "vi": "Nhà bỏ trống",
+        "en": "Vacant house"
+      },
+      "examples": [
+        {
+          "ja": "田舎には、空き家が増えています。",
+          "reading": "いなかには、あきやがふえています。",
+          "translation": {
+            "vi": "Ở vùng quê, số nhà bỏ trống đang tăng.",
+            "en": "In the countryside, vacant houses are increasing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "集合住宅",
+      "reading": "しゅうごうじゅうたく",
+      "meaning": {
+        "vi": "Nhà ở tập thể (chung cư)",
+        "en": "Apartment complex; multi-unit housing"
+      },
+      "examples": [
+        {
+          "ja": "この集合住宅には、百世帯が住んでいます。",
+          "reading": "このしゅうごうじゅうたくには、ひゃくせたいがすんでいます。",
+          "translation": {
+            "vi": "Khu nhà tập thể này có một trăm hộ sinh sống.",
+            "en": "A hundred households live in this apartment complex."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "管理費",
+      "reading": "かんりひ",
+      "meaning": {
+        "vi": "Phí quản lý",
+        "en": "Maintenance fee"
+      },
+      "examples": [
+        {
+          "ja": "家賃のほかに、管理費も払います。",
+          "reading": "やちんのほかに、かんりひもはらいます。",
+          "translation": {
+            "vi": "Ngoài tiền nhà, tôi còn trả phí quản lý.",
+            "en": "Besides rent, I also pay a maintenance fee."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "更新料",
+      "reading": "こうしんりょう",
+      "meaning": {
+        "vi": "Phí gia hạn hợp đồng thuê",
+        "en": "Renewal fee"
+      },
+      "examples": [
+        {
+          "ja": "二年ごとに、更新料がかかります。",
+          "reading": "にねんごとに、こうしんりょうがかかります。",
+          "translation": {
+            "vi": "Cứ hai năm lại mất phí gia hạn.",
+            "en": "A renewal fee is charged every two years."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "新築",
+      "reading": "しんちく",
+      "meaning": {
+        "vi": "Nhà mới xây",
+        "en": "Newly built (house)"
+      },
+      "examples": [
+        {
+          "ja": "新築のマンションは、人気があります。",
+          "reading": "しんちくのマンションは、にんきがあります。",
+          "translation": {
+            "vi": "Chung cư mới xây được ưa chuộng.",
+            "en": "Newly built apartments are popular."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "改築",
+      "reading": "かいちく",
+      "meaning": {
+        "vi": "Cải tạo; xây lại",
+        "en": "Rebuilding; remodeling"
+      },
+      "examples": [
+        {
+          "ja": "古い家を、改築することにしました。",
+          "reading": "ふるいいえを、かいちくすることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định cải tạo ngôi nhà cũ.",
+            "en": "I decided to rebuild the old house."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "空き家",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 田舎には、（　）が増えています。 — Nghĩa của câu: “Ở vùng quê, số nhà bỏ trống đang tăng.”",
+        "en": "Choose the word that fits the blank: 田舎には、（　）が増えています。 — Meaning of the sentence: “In the countryside, vacant houses are increasing.”"
+      },
+      "payload": {
+        "choices": [
+          "新築",
+          "集合住宅",
+          "更新料",
+          "空き家"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「空き家」(Nhà bỏ trống) hợp nghĩa câu này: “Ở vùng quê, số nhà bỏ trống đang tăng.”",
+        "en": "Correct! 「空き家」(Vacant house) fits this sentence: “In the countryside, vacant houses are increasing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở vùng quê, số nhà bỏ trống đang tăng.”, nên cần 「空き家」(Nhà bỏ trống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the countryside, vacant houses are increasing.”, so it needs 「空き家」(Vacant house); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "集合住宅",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）には、百世帯が住んでいます。 — Nghĩa của câu: “Khu nhà tập thể này có một trăm hộ sinh sống.”",
+        "en": "Choose the word that fits the blank: この（　）には、百世帯が住んでいます。 — Meaning of the sentence: “A hundred households live in this apartment complex.”"
+      },
+      "payload": {
+        "choices": [
+          "集合住宅",
+          "更新料",
+          "空き家",
+          "新築"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「集合住宅」(Nhà ở tập thể (chung cư)) hợp nghĩa câu này: “Khu nhà tập thể này có một trăm hộ sinh sống.”",
+        "en": "Correct! 「集合住宅」(Apartment complex; multi-unit housing) fits this sentence: “A hundred households live in this apartment complex.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu nhà tập thể này có một trăm hộ sinh sống.”, nên cần 「集合住宅」(Nhà ở tập thể (chung cư)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A hundred households live in this apartment complex.”, so it needs 「集合住宅」(Apartment complex; multi-unit housing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "管理費",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家賃のほかに、（　）も払います。 — Nghĩa của câu: “Ngoài tiền nhà, tôi còn trả phí quản lý.”",
+        "en": "Choose the word that fits the blank: 家賃のほかに、（　）も払います。 — Meaning of the sentence: “Besides rent, I also pay a maintenance fee.”"
+      },
+      "payload": {
+        "choices": [
+          "改築",
+          "管理費",
+          "空き家",
+          "集合住宅"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「管理費」(Phí quản lý) hợp nghĩa câu này: “Ngoài tiền nhà, tôi còn trả phí quản lý.”",
+        "en": "Correct! 「管理費」(Maintenance fee) fits this sentence: “Besides rent, I also pay a maintenance fee.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngoài tiền nhà, tôi còn trả phí quản lý.”, nên cần 「管理費」(Phí quản lý); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Besides rent, I also pay a maintenance fee.”, so it needs 「管理費」(Maintenance fee); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "更新料",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 二年ごとに、（　）がかかります。 — Nghĩa của câu: “Cứ hai năm lại mất phí gia hạn.”",
+        "en": "Choose the word that fits the blank: 二年ごとに、（　）がかかります。 — Meaning of the sentence: “A renewal fee is charged every two years.”"
+      },
+      "payload": {
+        "choices": [
+          "新築",
+          "空き家",
+          "更新料",
+          "集合住宅"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「更新料」(Phí gia hạn hợp đồng thuê) hợp nghĩa câu này: “Cứ hai năm lại mất phí gia hạn.”",
+        "en": "Correct! 「更新料」(Renewal fee) fits this sentence: “A renewal fee is charged every two years.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cứ hai năm lại mất phí gia hạn.”, nên cần 「更新料」(Phí gia hạn hợp đồng thuê); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A renewal fee is charged every two years.”, so it needs 「更新料」(Renewal fee); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "新築",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）のマンションは、人気があります。 — Nghĩa của câu: “Chung cư mới xây được ưa chuộng.”",
+        "en": "Choose the word that fits the blank: （　）のマンションは、人気があります。 — Meaning of the sentence: “Newly built apartments are popular.”"
+      },
+      "payload": {
+        "choices": [
+          "空き家",
+          "管理費",
+          "集合住宅",
+          "新築"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「新築」(Nhà mới xây) hợp nghĩa câu này: “Chung cư mới xây được ưa chuộng.”",
+        "en": "Correct! 「新築」(Newly built (house)) fits this sentence: “Newly built apartments are popular.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chung cư mới xây được ưa chuộng.”, nên cần 「新築」(Nhà mới xây); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Newly built apartments are popular.”, so it needs 「新築」(Newly built (house)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "改築",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古い家を、（　）することにしました。 — Nghĩa của câu: “Tôi quyết định cải tạo ngôi nhà cũ.”",
+        "en": "Choose the word that fits the blank: 古い家を、（　）することにしました。 — Meaning of the sentence: “I decided to rebuild the old house.”"
+      },
+      "payload": {
+        "choices": [
+          "改築",
+          "空き家",
+          "集合住宅",
+          "新築"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「改築」(Cải tạo; xây lại) hợp nghĩa câu này: “Tôi quyết định cải tạo ngôi nhà cũ.”",
+        "en": "Correct! 「改築」(Rebuilding; remodeling) fits this sentence: “I decided to rebuild the old house.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định cải tạo ngôi nhà cũ.”, nên cần 「改築」(Cải tạo; xây lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to rebuild the old house.”, so it needs 「改築」(Rebuilding; remodeling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "空き家",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 田舎には、「空き家」が増えています。",
+        "en": "Choose the correct reading of the word in 「」: 田舎には、「空き家」が増えています。"
+      },
+      "payload": {
+        "choices": [
+          "あきや",
+          "しゅうごうじゅうたく",
+          "かんりひ",
+          "かいちく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「空き家」 đọc là 「あきや」, nghĩa là Nhà bỏ trống.",
+        "en": "Correct! 「空き家」 is read 「あきや」 and means Vacant house."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「空き家」 đọc là 「あきや」 (Nhà bỏ trống); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「空き家」 is read 「あきや」 (Vacant house); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "更新料",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 二年ごとに、「更新料」がかかります。",
+        "en": "Choose the correct reading of the word in 「」: 二年ごとに、「更新料」がかかります。"
+      },
+      "payload": {
+        "choices": [
+          "あきや",
+          "こうしんりょう",
+          "しゅうごうじゅうたく",
+          "しんちく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「更新料」 đọc là 「こうしんりょう」, nghĩa là Phí gia hạn hợp đồng thuê.",
+        "en": "Correct! 「更新料」 is read 「こうしんりょう」 and means Renewal fee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「更新料」 đọc là 「こうしんりょう」 (Phí gia hạn hợp đồng thuê); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「更新料」 is read 「こうしんりょう」 (Renewal fee); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "管理費",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 家賃のほかに、「かんりひ」も払います。",
+        "en": "Choose the correct way to write the word in 「」: 家賃のほかに、「かんりひ」も払います。"
+      },
+      "payload": {
+        "choices": [
+          "更新料",
+          "管理費",
+          "空き家",
+          "改築"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんりひ」 viết là 「管理費」, nghĩa là Phí quản lý.",
+        "en": "Correct! 「かんりひ」 is written 「管理費」 and means Maintenance fee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんりひ」 viết là 「管理費」 (Phí quản lý); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんりひ」 is written 「管理費」 (Maintenance fee); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-purpose-reason",
+  "title": {
+    "vi": "Nỗ lực và thay đổi: 〜ようにする và 〜ようになる",
+    "en": "Effort and change: 〜ようにする and 〜ようになる"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ようにする",
+      "meaning": {
+        "vi": "Cố gắng ~ (duy trì)",
+        "en": "Make an effort to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể từ điển / thể ない + ようにする (ようにしている). Nói sự nỗ lực, chú ý liên tục để làm hoặc không làm một việc. Khác 〜ことにする: ことにする là quyết định một lần, ようにする là cố gắng duy trì.",
+        "en": "Usage: dictionary / ない-form + ようにする (ようにしている). Describes continuing effort or attention to do or avoid something. Unlike 〜ことにする (a one-time decision), ようにする is an effort sustained over time."
+      },
+      "examples": [
+        {
+          "ja": "毎日、野菜を食べるようにしています。",
+          "reading": "まいにち、やさいをたべるようにしています。",
+          "translation": {
+            "vi": "Tôi cố gắng ăn rau mỗi ngày.",
+            "en": "I make an effort to eat vegetables every day."
+          }
+        },
+        {
+          "ja": "夜は、コーヒーを飲まないようにしています。",
+          "reading": "よるは、コーヒーをのまないようにしています。",
+          "translation": {
+            "vi": "Buổi tối tôi cố gắng không uống cà phê.",
+            "en": "I try not to drink coffee at night."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-051"
+    },
+    {
+      "japanese": "〜ようになる",
+      "meaning": {
+        "vi": "Trở nên (có thể) ~",
+        "en": "Come to ~ (a change)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể từ điển / thể khả năng + ようになる. Diễn tả sự thay đổi dần dần của khả năng hay thói quen (trước không, nay có). Phủ định: 〜なくなる.",
+        "en": "Usage: dictionary / potential form + ようになる. Describes a gradual change in ability or habit (not before, now yes). Negative: 〜なくなる."
+      },
+      "examples": [
+        {
+          "ja": "毎日練習して、日本語が話せるようになりました。",
+          "reading": "まいにちれんしゅうして、にほんごがはなせるようになりました。",
+          "translation": {
+            "vi": "Nhờ luyện tập mỗi ngày, tôi đã nói được tiếng Nhật.",
+            "en": "By practicing every day, I have become able to speak Japanese."
+          }
+        },
+        {
+          "ja": "最近、子どもが一人で寝るようになりました。",
+          "reading": "さいきん、こどもがひとりでねるようになりました。",
+          "translation": {
+            "vi": "Gần đây con tôi đã ngủ một mình được.",
+            "en": "Recently my child has started sleeping alone."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-052"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ようにする",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n毎日、野菜を食べる（　）しています。",
+        "en": "Choose the correct option for the blank:\n毎日、野菜を食べる（　）しています。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ために",
+          "ことに",
+          "ところに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nỗ lực duy trì thói quen dùng 「〜ようにしている」.",
+        "en": "Correct! Sustained effort uses 「〜ようにしている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nỗ lực duy trì thói quen dùng 「〜ようにしている」.",
+        "en": "Not quite. Sustained effort uses 「〜ようにしている」."
+      }
+    },
+    {
+      "item": "〜ようにする",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Đây là một quyết định vừa được đưa ra (không phải thói quen đang cố duy trì). Chọn đáp án đúng:\n来月から、毎日歩く（　）しました。",
+        "en": "This is a decision just made (not a habit one is trying to keep). Choose the best option:\n来月から、毎日歩く（　）しました。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ために",
+          "ところに",
+          "ことに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vừa quyết định một lần (\"từ tháng sau\") dùng 「ことにしました」; 「ようにする」 là cố gắng duy trì.",
+        "en": "Correct! A one-time decision (\"starting next month\") uses 「ことにしました」; 「ようにする」 is sustained effort."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vừa quyết định một lần (\"từ tháng sau\") dùng 「ことにしました」; 「ようにする」 là cố gắng duy trì.",
+        "en": "Not quite. A one-time decision (\"starting next month\") uses 「ことにしました」; 「ようにする」 is sustained effort."
+      }
+    },
+    {
+      "item": "〜ようにする",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n夜は、コーヒーを飲まない___しています。",
+        "en": "Choose the correct option for the blank:\n夜は、コーヒーを飲まない___しています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ように"
+        ],
+        "hint": "〜ように"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cố gắng không làm: 「飲まないようにしている」.",
+        "en": "Correct! Trying not to do something: 「飲まないようにしている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cố gắng không làm: 「飲まないようにしている」.",
+        "en": "Not quite. Trying not to do something: 「飲まないようにしている」."
+      }
+    },
+    {
+      "item": "〜ようにする",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "毎日、早く寝るのようにしています。",
+          "毎日、早く寝たようにしています。",
+          "毎日、早く寝るようにしています。",
+          "毎日、早く寝るようしています。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng: động từ thể từ điển + 「ようにしています」 (không thêm 「の」, không thiếu 「に」).",
+        "en": "Correct! The correct pattern is dictionary form + 「ようにしています」 (no extra 「の」, no missing 「に」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng: động từ thể từ điển + 「ようにしています」 (không thêm 「の」, không thiếu 「に」).",
+        "en": "Not quite. The correct pattern is dictionary form + 「ようにしています」 (no extra 「の」, no missing 「に」)."
+      }
+    },
+    {
+      "item": "〜ようになる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n練習して、日本語が話せる（　）なりました。",
+        "en": "Choose the correct option for the blank:\n練習して、日本語が話せる（　）なりました。"
+      },
+      "payload": {
+        "choices": [
+          "ことに",
+          "ように",
+          "ために",
+          "ところに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sự thay đổi khả năng dùng 「〜ようになる」.",
+        "en": "Correct! A change in ability uses 「〜ようになる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sự thay đổi khả năng dùng 「〜ようになる」.",
+        "en": "Not quite. A change in ability uses 「〜ようになる」."
+      }
+    },
+    {
+      "item": "〜ようになる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n最近、子どもが一人で寝る___なりました。",
+        "en": "Choose the correct option for the blank:\n最近、子どもが一人で寝る___なりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ように"
+        ],
+        "hint": "〜ように"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thay đổi thói quen: 「寝るようになりました」.",
+        "en": "Correct! A change of habit: 「寝るようになりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thay đổi thói quen: 「寝るようになりました」.",
+        "en": "Not quite. A change of habit: 「寝るようになりました」."
+      }
+    },
+    {
+      "item": "〜ようになる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n去年は泳げませんでしたが、今は泳げる（　）。",
+        "en": "Choose the pattern that best fits the context:\n去年は泳げませんでしたが、今は泳げる（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ようになりました",
+          "ようにしました",
+          "ことになりました",
+          "ようです"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ không thể sang có thể (thay đổi) dùng 「ようになりました」.",
+        "en": "Correct! Going from unable to able (a change) uses 「ようになりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ không thể sang có thể (thay đổi) dùng 「ようになりました」.",
+        "en": "Not quite. Going from unable to able (a change) uses 「ようになりました」."
+      }
+    },
+    {
+      "item": "〜ようになる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "日本に来て、納豆が食べられるようなりました。",
+          "日本に来て、納豆が食べられのようになりました。",
+          "日本に来て、納豆が食べられるようにしました。",
+          "日本に来て、納豆が食べられるようになりました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng: thể khả năng + 「ようになりました」; không bỏ 「に」 hay thêm 「の」.",
+        "en": "Correct! The correct pattern is potential form + 「ようになりました」; do not drop 「に」 or add 「の」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng: thể khả năng + 「ようになりました」; không bỏ 「に」 hay thêm 「の」.",
+        "en": "Not quite. The correct pattern is potential form + 「ようになりました」; do not drop 「に」 or add 「の」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ようにする",
+            {
+              "vi": "Cố gắng ~ (duy trì)",
+              "en": "Make an effort to ~"
+            }
+          ],
+          [
+            "〜ようになる",
+            {
+              "vi": "Trở nên (có thể) ~",
+              "en": "Come to ~ (a change)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

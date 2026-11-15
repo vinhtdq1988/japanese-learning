@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-transport-travel",
+  "title": {
+    "vi": "Kanji giao thông – du lịch (歩 走 旅 駅)",
+    "en": "Transport and travel kanji (歩 走 旅 駅)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "歩",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "đi bộ",
+        "en": "walk"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホ",
+          "ブ",
+          "フ"
+        ],
+        "kunReadings": [
+          "ある.く",
+          "あゆ.む"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "歩道",
+          "reading": "ほどう",
+          "kanjiReading": "ホ",
+          "translation": {
+            "vi": "vỉa hè",
+            "en": "sidewalk"
+          }
+        },
+        {
+          "ja": "歩く",
+          "reading": "あるく",
+          "kanjiReading": "ある",
+          "translation": {
+            "vi": "đi bộ",
+            "en": "to walk"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "走",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "chạy",
+        "en": "run"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ"
+        ],
+        "kunReadings": [
+          "はし.る"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "走者",
+          "reading": "そうしゃ",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "người chạy",
+            "en": "runner"
+          }
+        },
+        {
+          "ja": "走る",
+          "reading": "はしる",
+          "kanjiReading": "はし",
+          "translation": {
+            "vi": "chạy",
+            "en": "to run"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "旅",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "chuyến đi; du lịch",
+        "en": "trip; travel"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リョ"
+        ],
+        "kunReadings": [
+          "たび"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "旅行",
+          "reading": "りょこう",
+          "kanjiReading": "リョ",
+          "translation": {
+            "vi": "du lịch",
+            "en": "travel"
+          }
+        },
+        {
+          "ja": "旅",
+          "reading": "たび",
+          "kanjiReading": "たび",
+          "translation": {
+            "vi": "chuyến đi",
+            "en": "journey"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "駅",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "ga tàu",
+        "en": "station"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "駅員",
+          "reading": "えきいん",
+          "kanjiReading": "エキ",
+          "translation": {
+            "vi": "nhân viên nhà ga",
+            "en": "station staff"
+          }
+        },
+        {
+          "ja": "駅前",
+          "reading": "えきまえ",
+          "kanjiReading": "エキ",
+          "translation": {
+            "vi": "trước nhà ga",
+            "en": "in front of the station"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "歩",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歩」nghĩa là gì?",
+        "en": "What does 「歩」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đi bộ",
+            "en": "walk"
+          },
+          {
+            "vi": "chạy",
+            "en": "run"
+          },
+          {
+            "vi": "chuyến đi; du lịch",
+            "en": "trip; travel"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歩 nghĩa là đi bộ.",
+        "en": "Correct! 歩 means walk."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 歩 nghĩa là đi bộ, như trong 「歩道」 (vỉa hè).",
+        "en": "Not quite. 歩 means walk, as in 「歩道」 (sidewalk)."
+      }
+    },
+    {
+      "item": "歩",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「歩」 trong 「歩道」 (“vỉa hè”).",
+        "en": "Type the reading of 「歩」 in 「歩道」 (“sidewalk”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほ",
+          "ホ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歩道, 歩 đọc là ほ (âm On).",
+        "en": "Correct! In 歩道, 歩 is read ほ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歩道 (vỉa hè), 歩 đọc là ほ (âm On).",
+        "en": "In 歩道 (sidewalk), 歩 is read ほ (on'yomi)."
+      }
+    },
+    {
+      "item": "歩",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歩く」(đi bộ) đọc là gì?",
+        "en": "How is 「歩く」 (to walk) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほく",
+          "あるく",
+          "はしる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歩く = あるく (đi bộ); 歩 đọc là ある (âm Kun).",
+        "en": "Correct! 歩く = あるく (to walk); 歩 is read ある (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "歩く đọc là あるく (đi bộ): 歩 mang âm Kun ある.",
+        "en": "歩く is read あるく (to walk): 歩 takes the kun'yomi ある."
+      }
+    },
+    {
+      "item": "走",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「走」nghĩa là gì?",
+        "en": "What does 「走」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chuyến đi; du lịch",
+            "en": "trip; travel"
+          },
+          {
+            "vi": "chạy",
+            "en": "run"
+          },
+          {
+            "vi": "ga tàu",
+            "en": "station"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 走 nghĩa là chạy.",
+        "en": "Correct! 走 means run."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 走 nghĩa là chạy, như trong 「走者」 (người chạy).",
+        "en": "Not quite. 走 means run, as in 「走者」 (runner)."
+      }
+    },
+    {
+      "item": "走",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「走」 trong 「走者」 (“người chạy”).",
+        "en": "Type the reading of 「走」 in 「走者」 (“runner”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 走者, 走 đọc là そう (âm On).",
+        "en": "Correct! In 走者, 走 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 走者 (người chạy), 走 đọc là そう (âm On).",
+        "en": "In 走者 (runner), 走 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "走",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「走る」(chạy) đọc là gì?",
+        "en": "How is 「走る」 (to run) read?"
+      },
+      "payload": {
+        "choices": [
+          "そうる",
+          "ほどう",
+          "はしる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 走る = はしる (chạy); 走 đọc là はし (âm Kun).",
+        "en": "Correct! 走る = はしる (to run); 走 is read はし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "走る đọc là はしる (chạy): 走 mang âm Kun はし.",
+        "en": "走る is read はしる (to run): 走 takes the kun'yomi はし."
+      }
+    },
+    {
+      "item": "旅",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「旅」nghĩa là gì?",
+        "en": "What does 「旅」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ga tàu",
+            "en": "station"
+          },
+          {
+            "vi": "đi bộ",
+            "en": "walk"
+          },
+          {
+            "vi": "chuyến đi; du lịch",
+            "en": "trip; travel"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 旅 nghĩa là chuyến đi; du lịch.",
+        "en": "Correct! 旅 means trip; travel."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 旅 nghĩa là chuyến đi; du lịch, như trong 「旅行」 (du lịch).",
+        "en": "Not quite. 旅 means trip; travel, as in 「旅行」 (travel)."
+      }
+    },
+    {
+      "item": "旅",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「旅」 trong 「旅行」 (“du lịch”).",
+        "en": "Type the reading of 「旅」 in 「旅行」 (“travel”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りょ",
+          "リョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 旅行, 旅 đọc là りょ (âm On).",
+        "en": "Correct! In 旅行, 旅 is read りょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 旅行 (du lịch), 旅 đọc là りょ (âm On).",
+        "en": "In 旅行 (travel), 旅 is read りょ (on'yomi)."
+      }
+    },
+    {
+      "item": "旅",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「旅」(chuyến đi; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「旅」 (journey; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "たび",
+          "りょ",
+          "ほどう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 旅 = たび (chuyến đi); 旅 đọc là たび (âm Kun).",
+        "en": "Correct! 旅 = たび (journey); 旅 is read たび (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "旅 đọc là たび (chuyến đi): 旅 mang âm Kun たび.",
+        "en": "旅 is read たび (journey): 旅 takes the kun'yomi たび."
+      }
+    },
+    {
+      "item": "駅",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「駅」nghĩa là gì?",
+        "en": "What does 「駅」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ga tàu",
+            "en": "station"
+          },
+          {
+            "vi": "đi bộ",
+            "en": "walk"
+          },
+          {
+            "vi": "chạy",
+            "en": "run"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 駅 nghĩa là ga tàu.",
+        "en": "Correct! 駅 means station."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 駅 nghĩa là ga tàu, như trong 「駅員」 (nhân viên nhà ga).",
+        "en": "Not quite. 駅 means station, as in 「駅員」 (station staff)."
+      }
+    },
+    {
+      "item": "駅",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「駅」 trong 「駅員」 (“nhân viên nhà ga”).",
+        "en": "Type the reading of 「駅」 in 「駅員」 (“station staff”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えき",
+          "エキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 駅員, 駅 đọc là えき (âm On).",
+        "en": "Correct! In 駅員, 駅 is read えき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 駅員 (nhân viên nhà ga), 駅 đọc là えき (âm On).",
+        "en": "In 駅員 (station staff), 駅 is read えき (on'yomi)."
+      }
+    },
+    {
+      "item": "駅",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「駅前」(trước nhà ga) đọc là gì?",
+        "en": "How is 「駅前」 (in front of the station) read?"
+      },
+      "payload": {
+        "choices": [
+          "えぎまえ",
+          "えきまえ",
+          "えきまい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 駅前 = えきまえ (trước nhà ga); 駅 đọc là えき (âm On).",
+        "en": "Correct! 駅前 = えきまえ (in front of the station); 駅 is read えき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "駅前 đọc là えきまえ (trước nhà ga): 駅 mang âm On えき.",
+        "en": "駅前 is read えきまえ (in front of the station): 駅 takes the on'yomi えき."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "歩",
+            {
+              "vi": "đi bộ",
+              "en": "walk"
+            }
+          ],
+          [
+            "走",
+            {
+              "vi": "chạy",
+              "en": "run"
+            }
+          ],
+          [
+            "旅",
+            {
+              "vi": "chuyến đi; du lịch",
+              "en": "trip; travel"
+            }
+          ],
+          [
+            "駅",
+            {
+              "vi": "ga tàu",
+              "en": "station"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (講 調 論)",
+    "en": "Education and culture kanji (講 調 論)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "講",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "giảng; bài giảng",
+        "en": "lecture"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 17
+      },
+      "examples": [
+        {
+          "ja": "講義",
+          "reading": "こうぎ",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "bài giảng",
+            "en": "lecture"
+          }
+        },
+        {
+          "ja": "講師",
+          "reading": "こうし",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "giảng viên",
+            "en": "lecturer"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "調",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "điều tra; điệu; điều chỉnh",
+        "en": "investigate; tone"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョウ"
+        ],
+        "kunReadings": [
+          "しら.べる",
+          "ととの.う"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "調査",
+          "reading": "ちょうさ",
+          "kanjiReading": "チョウ",
+          "translation": {
+            "vi": "điều tra",
+            "en": "survey"
+          }
+        },
+        {
+          "ja": "調べる",
+          "reading": "しらべる",
+          "kanjiReading": "しら",
+          "translation": {
+            "vi": "tra cứu; điều tra",
+            "en": "to look into"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "論",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "luận; bàn luận",
+        "en": "argument; theory"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ロン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "論文",
+          "reading": "ろんぶん",
+          "kanjiReading": "ロン",
+          "translation": {
+            "vi": "luận văn",
+            "en": "thesis"
+          }
+        },
+        {
+          "ja": "議論",
+          "reading": "ぎろん",
+          "kanjiReading": "ロン",
+          "translation": {
+            "vi": "tranh luận",
+            "en": "discussion"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "講",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「講」nghĩa là gì?",
+        "en": "What does 「講」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giảng; bài giảng",
+            "en": "lecture"
+          },
+          {
+            "vi": "điều tra; điệu; điều chỉnh",
+            "en": "investigate; tone"
+          },
+          {
+            "vi": "luận; bàn luận",
+            "en": "argument; theory"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 講 nghĩa là giảng; bài giảng.",
+        "en": "Correct! 講 means lecture."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 講 nghĩa là giảng; bài giảng, như trong 「講義」 (bài giảng).",
+        "en": "Not quite. 講 means lecture, as in 「講義」 (lecture)."
+      }
+    },
+    {
+      "item": "講",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「講」 trong 「講義」 (“bài giảng”).",
+        "en": "Type the reading of 「講」 in 「講義」 (“lecture”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 講義, 講 đọc là こう (âm On).",
+        "en": "Correct! In 講義, 講 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 講義 (bài giảng), 講 đọc là こう (âm On).",
+        "en": "In 講義 (lecture), 講 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "講",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「講師」(giảng viên) đọc là gì?",
+        "en": "How is 「講師」 (lecturer) read?"
+      },
+      "payload": {
+        "choices": [
+          "こし",
+          "こうし",
+          "ごうし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 講師 = こうし (giảng viên); 講 đọc là こう (âm On).",
+        "en": "Correct! 講師 = こうし (lecturer); 講 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "講師 đọc là こうし (giảng viên): 講 mang âm On こう.",
+        "en": "講師 is read こうし (lecturer): 講 takes the on'yomi こう."
+      }
+    },
+    {
+      "item": "調",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「調」nghĩa là gì?",
+        "en": "What does 「調」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "luận; bàn luận",
+            "en": "argument; theory"
+          },
+          {
+            "vi": "điều tra; điệu; điều chỉnh",
+            "en": "investigate; tone"
+          },
+          {
+            "vi": "giảng; bài giảng",
+            "en": "lecture"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 調 nghĩa là điều tra; điệu; điều chỉnh.",
+        "en": "Correct! 調 means investigate; tone."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 調 nghĩa là điều tra; điệu; điều chỉnh, như trong 「調査」 (điều tra).",
+        "en": "Not quite. 調 means investigate; tone, as in 「調査」 (survey)."
+      }
+    },
+    {
+      "item": "調",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「調」 trong 「調査」 (“điều tra”).",
+        "en": "Type the reading of 「調」 in 「調査」 (“survey”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょう",
+          "チョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 調査, 調 đọc là ちょう (âm On).",
+        "en": "Correct! In 調査, 調 is read ちょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 調査 (điều tra), 調 đọc là ちょう (âm On).",
+        "en": "In 調査 (survey), 調 is read ちょう (on'yomi)."
+      }
+    },
+    {
+      "item": "調",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「調べる」(tra cứu; điều tra) đọc là gì?",
+        "en": "How is 「調べる」 (to look into) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちょうべる",
+          "ろんぶん",
+          "しらべる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 調べる = しらべる (tra cứu; điều tra); 調 đọc là しら (âm Kun).",
+        "en": "Correct! 調べる = しらべる (to look into); 調 is read しら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "調べる đọc là しらべる (tra cứu; điều tra): 調 mang âm Kun しら.",
+        "en": "調べる is read しらべる (to look into): 調 takes the kun'yomi しら."
+      }
+    },
+    {
+      "item": "論",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「論」nghĩa là gì?",
+        "en": "What does 「論」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giảng; bài giảng",
+            "en": "lecture"
+          },
+          {
+            "vi": "điều tra; điệu; điều chỉnh",
+            "en": "investigate; tone"
+          },
+          {
+            "vi": "luận; bàn luận",
+            "en": "argument; theory"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 論 nghĩa là luận; bàn luận.",
+        "en": "Correct! 論 means argument; theory."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 論 nghĩa là luận; bàn luận, như trong 「論文」 (luận văn).",
+        "en": "Not quite. 論 means argument; theory, as in 「論文」 (thesis)."
+      }
+    },
+    {
+      "item": "論",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「論」 trong 「論文」 (“luận văn”).",
+        "en": "Type the reading of 「論」 in 「論文」 (“thesis”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ろん",
+          "ロン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 論文, 論 đọc là ろん (âm On).",
+        "en": "Correct! In 論文, 論 is read ろん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 論文 (luận văn), 論 đọc là ろん (âm On).",
+        "en": "In 論文 (thesis), 論 is read ろん (on'yomi)."
+      }
+    },
+    {
+      "item": "論",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「議論」(tranh luận) đọc là gì?",
+        "en": "How is 「議論」 (discussion) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎろん",
+          "ぎこう",
+          "ぎしら"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 議論 = ぎろん (tranh luận); 論 đọc là ろん (âm On).",
+        "en": "Correct! 議論 = ぎろん (discussion); 論 is read ろん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "議論 đọc là ぎろん (tranh luận): 論 mang âm On ろん.",
+        "en": "議論 is read ぎろん (discussion): 論 takes the on'yomi ろん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "講",
+            {
+              "vi": "giảng; bài giảng",
+              "en": "lecture"
+            }
+          ],
+          [
+            "調",
+            {
+              "vi": "điều tra; điệu; điều chỉnh",
+              "en": "investigate; tone"
+            }
+          ],
+          [
+            "論",
+            {
+              "vi": "luận; bàn luận",
+              "en": "argument; theory"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

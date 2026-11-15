@@ -1,0 +1,492 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-degree-manner",
+  "title": {
+    "vi": "Mức độ và cách thức (2): 〜ほど〜ない, 〜くらい, 〜がる/〜たがる, 〜さ",
+    "en": "Degree and manner (2): 〜ほど〜ない, 〜くらい, 〜がる/〜たがる, 〜さ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ほど〜ない",
+      "meaning": {
+        "vi": "Không ~ bằng",
+        "en": "Not as ~ as"
+      },
+      "explanation": {
+        "vi": "Cách dùng: A は B ほど + từ phủ định (寒くない, 高くない). Dùng để so sánh \"A không bằng B\". Bắt buộc có phủ định ở cuối. Khác 〜より (A hơn B).",
+        "en": "Usage: A は B ほど + a negative (寒くない, 高くない). Compares \"A is not as … as B\". A negative is required at the end. Different from 〜より (\"A is more … than B\")."
+      },
+      "examples": [
+        {
+          "ja": "今年の冬は、去年ほど寒くないです。",
+          "reading": "ことしのふゆは、きょねんほどさむくないです。",
+          "translation": {
+            "vi": "Mùa đông năm nay không lạnh bằng năm ngoái.",
+            "en": "This winter is not as cold as last year."
+          }
+        },
+        {
+          "ja": "私は兄ほど背が高くありません。",
+          "reading": "わたしはあにほどせがたかくありません。",
+          "translation": {
+            "vi": "Tôi không cao bằng anh trai.",
+            "en": "I am not as tall as my older brother."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-082"
+    },
+    {
+      "japanese": "〜くらい／ぐらい",
+      "meaning": {
+        "vi": "Khoảng ~, đến mức ~",
+        "en": "About ~; to the extent that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: số lượng/thời gian + ぐらい (khoảng); câu/mệnh đề + くらい (đến mức…). Ví dụ 十分ぐらい, 歩けないくらい疲れた. 「くらい」 và 「ぐらい」 dùng thay thế được.",
+        "en": "Usage: quantity/time + ぐらい (about); clause + くらい (to the extent that…). E.g. 十分ぐらい, 歩けないくらい疲れた. 「くらい」 and 「ぐらい」 are interchangeable."
+      },
+      "examples": [
+        {
+          "ja": "駅まで十分ぐらいかかります。",
+          "reading": "えきまでじっぷんぐらいかかります。",
+          "translation": {
+            "vi": "Đến ga mất khoảng mười phút.",
+            "en": "It takes about ten minutes to the station."
+          }
+        },
+        {
+          "ja": "歩けないくらい疲れました。",
+          "reading": "あるけないくらいつかれました。",
+          "translation": {
+            "vi": "Tôi mệt đến mức không đi nổi.",
+            "en": "I was so tired that I could not walk."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-083"
+    },
+    {
+      "japanese": "〜がる／〜たがる",
+      "meaning": {
+        "vi": "Tỏ ra ~; muốn ~ (ngôi thứ ba)",
+        "en": "Show signs of ~; want to ~ (third person)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: tính từ cảm xúc bỏ い + がる (ほしがる, さびしがる); động từ gốc ます + たがる. Dùng cho cảm xúc/mong muốn của người khác nhìn từ bên ngoài, vì 〜たい/ほしい chỉ dùng cho ngôi thứ nhất.",
+        "en": "Usage: emotion adjective drop い + がる (ほしがる, さびしがる); verb ます-stem + たがる. Used for another person's feeling or desire seen from outside, since 〜たい/ほしい is for the first person."
+      },
+      "examples": [
+        {
+          "ja": "弟は、新しいゲームをほしがっています。",
+          "reading": "おとうとは、あたらしいゲームをほしがっています。",
+          "translation": {
+            "vi": "Em trai tôi đang muốn có trò chơi mới.",
+            "en": "My younger brother wants a new game."
+          }
+        },
+        {
+          "ja": "子どもは、外で遊びたがります。",
+          "reading": "こどもは、そとであそびたがります。",
+          "translation": {
+            "vi": "Trẻ con hay muốn ra ngoài chơi.",
+            "en": "Children want to play outside."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-084"
+    },
+    {
+      "japanese": "〜さ",
+      "meaning": {
+        "vi": "Danh từ hóa tính từ (độ ~)",
+        "en": "Noun form of adjectives (degree)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: tính từ い bỏ い + さ (高い→高さ); tính từ な + さ (大切→大切さ). Biến tính từ thành danh từ chỉ mức độ, tính chất. Một số từ có dạng cố định (高さ, 長さ, 重さ).",
+        "en": "Usage: い-adjective drop い + さ (高い→高さ); な-adjective + さ (大切→大切さ). Turns an adjective into a noun for degree or quality. Some are fixed forms (高さ, 長さ, 重さ)."
+      },
+      "examples": [
+        {
+          "ja": "この山の高さは、三千メートルです。",
+          "reading": "このやまのたかさは、さんぜんメートルです。",
+          "translation": {
+            "vi": "Độ cao của ngọn núi này là ba nghìn mét.",
+            "en": "The height of this mountain is three thousand meters."
+          }
+        },
+        {
+          "ja": "友だちの大切さがわかりました。",
+          "reading": "ともだちのたいせつさがわかりました。",
+          "translation": {
+            "vi": "Tôi đã hiểu được tầm quan trọng của bạn bè.",
+            "en": "I understood how important friends are."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-085"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ほど〜ない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今年の冬は、去年（　）寒くないです。",
+        "en": "Choose the correct option for the blank:\n今年の冬は、去年（　）寒くないです。"
+      },
+      "payload": {
+        "choices": [
+          "より",
+          "ぐらい",
+          "ほど",
+          "だけ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「AはBほど〜ない」 nghĩa là A không bằng B.",
+        "en": "Correct! 「AはBほど〜ない」 means A is not as ~ as B."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「AはBほど〜ない」 nghĩa là A không bằng B.",
+        "en": "Not quite. 「AはBほど〜ない」 means A is not as ~ as B."
+      }
+    },
+    {
+      "item": "〜ほど〜ない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は兄___背が高くありません。",
+        "en": "Choose the correct option for the blank:\n私は兄___背が高くありません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほど"
+        ],
+        "hint": "〜ほど"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không cao bằng anh: 「兄ほど〜ない」.",
+        "en": "Correct! Not as tall as my brother: 「兄ほど〜ない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không cao bằng anh: 「兄ほど〜ない」.",
+        "en": "Not quite. Not as tall as my brother: 「兄ほど〜ない」."
+      }
+    },
+    {
+      "item": "〜ほど〜ない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は兄ほど背が高いです。",
+          "私は兄ほど背が高くありません。",
+          "私は兄ほど背が高くないます。",
+          "私は兄ほどが背が高くありません。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜ほど」 luôn đi với phủ định ở cuối câu: 「高くありません」.",
+        "en": "Correct! 「〜ほど」 is always followed by a negative at the end: 「高くありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜ほど」 luôn đi với phủ định ở cuối câu: 「高くありません」.",
+        "en": "Not quite. 「〜ほど」 is always followed by a negative at the end: 「高くありません」."
+      }
+    },
+    {
+      "item": "〜くらい／ぐらい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n駅まで十分（　）かかります。",
+        "en": "Choose the correct option for the blank:\n駅まで十分（　）かかります。"
+      },
+      "payload": {
+        "choices": [
+          "ぐらい",
+          "から",
+          "より",
+          "ので"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Số lượng ước chừng: 「十分ぐらい」.",
+        "en": "Correct! An approximate amount: 「十分ぐらい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Số lượng ước chừng: 「十分ぐらい」.",
+        "en": "Not quite. An approximate amount: 「十分ぐらい」."
+      }
+    },
+    {
+      "item": "〜くらい／ぐらい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n歩けない（　）疲れました。",
+        "en": "Choose the correct option for the blank:\n歩けない（　）疲れました。"
+      },
+      "payload": {
+        "choices": [
+          "ばかり",
+          "のに",
+          "ほか",
+          "くらい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mức độ (đến mức không đi nổi): 「歩けないくらい」.",
+        "en": "Correct! Degree (so tired that I cannot walk): 「歩けないくらい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mức độ (đến mức không đi nổi): 「歩けないくらい」.",
+        "en": "Not quite. Degree (so tired that I cannot walk): 「歩けないくらい」."
+      }
+    },
+    {
+      "item": "〜くらい／ぐらい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお金が十万円___ほしいです。",
+        "en": "Choose the correct option for the blank:\nお金が十万円___ほしいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "くらい",
+          "ぐらい"
+        ],
+        "hint": "ぐらい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khoảng mười vạn yên: 「十万円ぐらい」.",
+        "en": "Correct! About one hundred thousand yen: 「十万円ぐらい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khoảng mười vạn yên: 「十万円ぐらい」.",
+        "en": "Not quite. About one hundred thousand yen: 「十万円ぐらい」."
+      }
+    },
+    {
+      "item": "〜がる／〜たがる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n弟は、新しいゲームを（　）います。",
+        "en": "Choose the correct option for the blank:\n弟は、新しいゲームを（　）います。"
+      },
+      "payload": {
+        "choices": [
+          "ほしくて",
+          "ほしいて",
+          "ほしがって",
+          "ほしがりて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mong muốn của người thứ ba dùng 「ほしがる」: 「ほしがっています」.",
+        "en": "Correct! A third person's desire uses 「ほしがる」: 「ほしがっています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mong muốn của người thứ ba dùng 「ほしがる」: 「ほしがっています」.",
+        "en": "Not quite. A third person's desire uses 「ほしがる」: 「ほしがっています」."
+      }
+    },
+    {
+      "item": "〜がる／〜たがる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n弟は、外で遊び（　）います。",
+        "en": "Choose the pattern that best fits the context:\n弟は、外で遊び（　）います。"
+      },
+      "payload": {
+        "choices": [
+          "たくて",
+          "たがって",
+          "たいで",
+          "たがりて"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ là em trai (ngôi thứ ba) nên dùng 「〜たがっている」, không dùng 「〜たい」.",
+        "en": "Correct! The subject is the younger brother (third person), so 「〜たがっている」 is used, not 「〜たい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ là em trai (ngôi thứ ba) nên dùng 「〜たがっている」, không dùng 「〜たい」.",
+        "en": "Not quite. The subject is the younger brother (third person), so 「〜たがっている」 is used, not 「〜たい」."
+      }
+    },
+    {
+      "item": "〜がる／〜たがる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもは、おもちゃをほし___ます。",
+        "en": "Choose the correct option for the blank:\n子どもは、おもちゃをほし___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "がり"
+        ],
+        "hint": "〜がり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほしがる」 → 「ほしがります」; gốc ます là 「ほしがり」.",
+        "en": "Correct! 「ほしがる」→「ほしがります」; the ます-stem is 「ほしがり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ほしがる」 → 「ほしがります」; gốc ます là 「ほしがり」.",
+        "en": "Not quite. 「ほしがる」→「ほしがります」; the ます-stem is 「ほしがり」."
+      }
+    },
+    {
+      "item": "〜さ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの山の高（　）は、三千メートルです。",
+        "en": "Choose the correct option for the blank:\nこの山の高（　）は、三千メートルです。"
+      },
+      "payload": {
+        "choices": [
+          "さ",
+          "み",
+          "く",
+          "ち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ hóa tính từ い: 「高い」→「高さ」.",
+        "en": "Correct! Nominalizing an い-adjective: 「高い」→「高さ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ hóa tính từ い: 「高い」→「高さ」.",
+        "en": "Not quite. Nominalizing an い-adjective: 「高い」→「高さ」."
+      }
+    },
+    {
+      "item": "〜さ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n友だちの大切___がわかりました。",
+        "en": "Choose the correct option for the blank:\n友だちの大切___がわかりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "さ"
+        ],
+        "hint": "さ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ な 「大切」 + 「さ」 = 「大切さ」 (tầm quan trọng).",
+        "en": "Correct! The な-adjective 「大切」 + 「さ」 = 「大切さ」 (importance)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ な 「大切」 + 「さ」 = 「大切さ」 (tầm quan trọng).",
+        "en": "Not quite. The な-adjective 「大切」 + 「さ」 = 「大切さ」 (importance)."
+      }
+    },
+    {
+      "item": "〜ほど〜ない",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n今年の冬は、＿　＿　★　＿　。\n（去年／ほど／寒く／ありません）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n今年の冬は、＿　＿　★　＿　。\n（去年／ほど／寒く／ありません）"
+      },
+      "payload": {
+        "choices": [
+          "去年",
+          "ほど",
+          "ありません",
+          "寒く"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「今年の冬は、去年ほど寒くありません。」; ô ★ (thứ ba) là 「寒く」.",
+        "en": "Correct! The correct sentence is 「今年の冬は、去年ほど寒くありません。」; the ★ (third) slot is 「寒く」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「今年の冬は、去年ほど寒くありません。」; ô ★ (thứ ba) là 「寒く」.",
+        "en": "Not quite. The correct sentence is 「今年の冬は、去年ほど寒くありません。」; the ★ (third) slot is 「寒く」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ほど〜ない",
+            {
+              "vi": "Không ~ bằng",
+              "en": "Not as ~ as"
+            }
+          ],
+          [
+            "〜くらい／ぐらい",
+            {
+              "vi": "Khoảng ~, đến mức ~",
+              "en": "About ~; to the extent that ~"
+            }
+          ],
+          [
+            "〜がる／〜たがる",
+            {
+              "vi": "Tỏ ra ~; muốn ~ (ngôi thứ ba)",
+              "en": "Show signs of ~; want to ~ (third person)"
+            }
+          ],
+          [
+            "〜さ",
+            {
+              "vi": "Danh từ hóa tính từ (độ ~)",
+              "en": "Noun form of adjectives (degree)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -35,6 +35,9 @@ String describeError(BuildContext context, Object? error) {
     // Thao tác bị khóa khi thuộc lớp (spec 004, US3, FR-018).
     case 'CLASS_MANAGED':
       return l10n.errorClassManaged;
+    // Luyện đọc/viết chỉ từ 30 phút mỗi ngày (spec 007, US2, FR-006).
+    case 'PRACTICE_LOCKED':
+      return l10n.practiceLockedError;
     // Lớp học (spec 004, US2).
     case 'CLASS_NOT_READY':
       return l10n.errorClassNotReady;

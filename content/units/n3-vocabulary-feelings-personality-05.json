@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-feelings-personality",
+  "title": {
+    "vi": "Biết ơn, tôn trọng và bình tĩnh",
+    "en": "Gratitude, respect and calm"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "感謝",
+      "reading": "かんしゃ",
+      "meaning": {
+        "vi": "Cảm ơn; biết ơn",
+        "en": "Gratitude"
+      },
+      "examples": [
+        {
+          "ja": "両親に、心から感謝しています。",
+          "reading": "りょうしんに、こころからかんしゃしています。",
+          "translation": {
+            "vi": "Tôi chân thành biết ơn bố mẹ.",
+            "en": "I am sincerely grateful to my parents."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "尊敬",
+      "reading": "そんけい",
+      "meaning": {
+        "vi": "Kính trọng",
+        "en": "Respect"
+      },
+      "examples": [
+        {
+          "ja": "私は、先生をとても尊敬しています。",
+          "reading": "わたしは、せんせいをとてもそんけいしています。",
+          "translation": {
+            "vi": "Tôi rất kính trọng thầy giáo.",
+            "en": "I have great respect for my teacher."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "軽蔑",
+      "reading": "けいべつ",
+      "meaning": {
+        "vi": "Khinh thường",
+        "en": "Contempt"
+      },
+      "examples": [
+        {
+          "ja": "うそをつく人を、軽蔑します。",
+          "reading": "うそをつくひとを、けいべつします。",
+          "translation": {
+            "vi": "Tôi khinh thường những người nói dối.",
+            "en": "I despise people who lie."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "同情",
+      "reading": "どうじょう",
+      "meaning": {
+        "vi": "Thông cảm; đồng cảm (thương hại)",
+        "en": "Sympathy"
+      },
+      "examples": [
+        {
+          "ja": "病気の友達に、同情しています。",
+          "reading": "びょうきのともだちに、どうじょうしています。",
+          "translation": {
+            "vi": "Tôi thương cảm cho người bạn bị bệnh.",
+            "en": "I sympathize with my sick friend."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "厚かましい",
+      "reading": "あつかましい",
+      "meaning": {
+        "vi": "Trơ tráo; mặt dày",
+        "en": "Brazen; impudent"
+      },
+      "examples": [
+        {
+          "ja": "何度も頼むのは、厚かましいと思います。",
+          "reading": "なんどもたのむのは、あつかましいとおもいます。",
+          "translation": {
+            "vi": "Tôi nghĩ nhờ vả nhiều lần là trơ tráo.",
+            "en": "I think asking so many times is brazen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "冷静",
+      "reading": "れいせい",
+      "meaning": {
+        "vi": "Bình tĩnh; điềm tĩnh",
+        "en": "Calm; composed"
+      },
+      "examples": [
+        {
+          "ja": "困ったときこそ、冷静に考えてください。",
+          "reading": "こまったときこそ、れいせいにかんがえてください。",
+          "translation": {
+            "vi": "Chính những lúc khó khăn càng phải suy nghĩ bình tĩnh.",
+            "en": "Especially when in trouble, think calmly."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "感謝",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 両親に、心から（　）しています。 — Nghĩa của câu: “Tôi chân thành biết ơn bố mẹ.”",
+        "en": "Choose the word that fits the blank: 両親に、心から（　）しています。 — Meaning of the sentence: “I am sincerely grateful to my parents.”"
+      },
+      "payload": {
+        "choices": [
+          "感謝",
+          "尊敬",
+          "軽蔑",
+          "同情"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感謝」(Cảm ơn; biết ơn) hợp nghĩa câu này: “Tôi chân thành biết ơn bố mẹ.”",
+        "en": "Correct! 「感謝」(Gratitude) fits this sentence: “I am sincerely grateful to my parents.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi chân thành biết ơn bố mẹ.”, nên cần 「感謝」(Cảm ơn; biết ơn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am sincerely grateful to my parents.”, so it needs 「感謝」(Gratitude); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "尊敬",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は、先生をとても（　）しています。 — Nghĩa của câu: “Tôi rất kính trọng thầy giáo.”",
+        "en": "Choose the word that fits the blank: 私は、先生をとても（　）しています。 — Meaning of the sentence: “I have great respect for my teacher.”"
+      },
+      "payload": {
+        "choices": [
+          "感謝",
+          "尊敬",
+          "冷静",
+          "軽蔑"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「尊敬」(Kính trọng) hợp nghĩa câu này: “Tôi rất kính trọng thầy giáo.”",
+        "en": "Correct! 「尊敬」(Respect) fits this sentence: “I have great respect for my teacher.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi rất kính trọng thầy giáo.”, nên cần 「尊敬」(Kính trọng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have great respect for my teacher.”, so it needs 「尊敬」(Respect); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "軽蔑",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: うそをつく人を、（　）します。 — Nghĩa của câu: “Tôi khinh thường những người nói dối.”",
+        "en": "Choose the word that fits the blank: うそをつく人を、（　）します。 — Meaning of the sentence: “I despise people who lie.”"
+      },
+      "payload": {
+        "choices": [
+          "感謝",
+          "同情",
+          "軽蔑",
+          "尊敬"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「軽蔑」(Khinh thường) hợp nghĩa câu này: “Tôi khinh thường những người nói dối.”",
+        "en": "Correct! 「軽蔑」(Contempt) fits this sentence: “I despise people who lie.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi khinh thường những người nói dối.”, nên cần 「軽蔑」(Khinh thường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I despise people who lie.”, so it needs 「軽蔑」(Contempt); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "同情",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 病気の友達に、（　）しています。 — Nghĩa của câu: “Tôi thương cảm cho người bạn bị bệnh.”",
+        "en": "Choose the word that fits the blank: 病気の友達に、（　）しています。 — Meaning of the sentence: “I sympathize with my sick friend.”"
+      },
+      "payload": {
+        "choices": [
+          "感謝",
+          "軽蔑",
+          "尊敬",
+          "同情"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「同情」(Thông cảm; đồng cảm (thương hại)) hợp nghĩa câu này: “Tôi thương cảm cho người bạn bị bệnh.”",
+        "en": "Correct! 「同情」(Sympathy) fits this sentence: “I sympathize with my sick friend.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi thương cảm cho người bạn bị bệnh.”, nên cần 「同情」(Thông cảm; đồng cảm (thương hại)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I sympathize with my sick friend.”, so it needs 「同情」(Sympathy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "厚かましい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 何度も頼むのは、（　）と思います。 — Nghĩa của câu: “Tôi nghĩ nhờ vả nhiều lần là trơ tráo.”",
+        "en": "Choose the word that fits the blank: 何度も頼むのは、（　）と思います。 — Meaning of the sentence: “I think asking so many times is brazen.”"
+      },
+      "payload": {
+        "choices": [
+          "厚かましい",
+          "軽蔑",
+          "感謝",
+          "冷静"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「厚かましい」(Trơ tráo; mặt dày) hợp nghĩa câu này: “Tôi nghĩ nhờ vả nhiều lần là trơ tráo.”",
+        "en": "Correct! 「厚かましい」(Brazen; impudent) fits this sentence: “I think asking so many times is brazen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nghĩ nhờ vả nhiều lần là trơ tráo.”, nên cần 「厚かましい」(Trơ tráo; mặt dày); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I think asking so many times is brazen.”, so it needs 「厚かましい」(Brazen; impudent); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "冷静",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 困ったときこそ、（　）に考えてください。 — Nghĩa của câu: “Chính những lúc khó khăn càng phải suy nghĩ bình tĩnh.”",
+        "en": "Choose the word that fits the blank: 困ったときこそ、（　）に考えてください。 — Meaning of the sentence: “Especially when in trouble, think calmly.”"
+      },
+      "payload": {
+        "choices": [
+          "感謝",
+          "冷静",
+          "尊敬",
+          "軽蔑"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「冷静」(Bình tĩnh; điềm tĩnh) hợp nghĩa câu này: “Chính những lúc khó khăn càng phải suy nghĩ bình tĩnh.”",
+        "en": "Correct! 「冷静」(Calm; composed) fits this sentence: “Especially when in trouble, think calmly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chính những lúc khó khăn càng phải suy nghĩ bình tĩnh.”, nên cần 「冷静」(Bình tĩnh; điềm tĩnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Especially when in trouble, think calmly.”, so it needs 「冷静」(Calm; composed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "感謝",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 両親に、心から「感謝」しています。",
+        "en": "Choose the correct reading of the word in 「」: 両親に、心から「感謝」しています。"
+      },
+      "payload": {
+        "choices": [
+          "どうじょう",
+          "かんしゃ",
+          "そんけい",
+          "けいべつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感謝」 đọc là 「かんしゃ」, nghĩa là Cảm ơn; biết ơn.",
+        "en": "Correct! 「感謝」 is read 「かんしゃ」 and means Gratitude."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「感謝」 đọc là 「かんしゃ」 (Cảm ơn; biết ơn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「感謝」 is read 「かんしゃ」 (Gratitude); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "同情",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 病気の友達に、「同情」しています。",
+        "en": "Choose the correct reading of the word in 「」: 病気の友達に、「同情」しています。"
+      },
+      "payload": {
+        "choices": [
+          "けいべつ",
+          "かんしゃ",
+          "どうじょう",
+          "そんけい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「同情」 đọc là 「どうじょう」, nghĩa là Thông cảm; đồng cảm (thương hại).",
+        "en": "Correct! 「同情」 is read 「どうじょう」 and means Sympathy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「同情」 đọc là 「どうじょう」 (Thông cảm; đồng cảm (thương hại)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「同情」 is read 「どうじょう」 (Sympathy); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "軽蔑",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: うそをつく人を、「けいべつ」します。",
+        "en": "Choose the correct way to write the word in 「」: うそをつく人を、「けいべつ」します。"
+      },
+      "payload": {
+        "choices": [
+          "冷静",
+          "感謝",
+          "軽蔑",
+          "同情"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「けいべつ」 viết là 「軽蔑」, nghĩa là Khinh thường.",
+        "en": "Correct! 「けいべつ」 is written 「軽蔑」 and means Contempt."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「けいべつ」 viết là 「軽蔑」 (Khinh thường); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「けいべつ」 is written 「軽蔑」 (Contempt); the other words are read differently."
+      }
+    }
+  ]
+}

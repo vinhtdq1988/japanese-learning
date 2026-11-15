@@ -1,0 +1,603 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-time-sequence",
+  "title": {
+    "vi": "Thời gian và trình tự (2): 〜たばかり, 〜間, 〜までに, 〜たことがある, 〜たり〜たり",
+    "en": "Time and sequence (2): 〜たばかり, 〜間, 〜までに, 〜たことがある, 〜たり〜たり"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜たばかり",
+      "meaning": {
+        "vi": "Vừa mới ~",
+        "en": "Have just ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た + ばかり (ばかりです). Cảm giác chủ quan là \"vừa mới\" dù thực tế có thể đã vài tháng. Khác 〜たところだ: ところ chỉ khoảnh khắc ngay trước khi nói.",
+        "en": "Usage: verb た-form + ばかり. A subjective feeling of \"just now\", even if actually months ago. Unlike 〜たところだ, which means the very moment before speaking."
+      },
+      "examples": [
+        {
+          "ja": "先月、日本に来たばかりです。",
+          "reading": "せんげつ、にほんにきたばかりです。",
+          "translation": {
+            "vi": "Tôi mới đến Nhật tháng trước.",
+            "en": "I only came to Japan last month."
+          }
+        },
+        {
+          "ja": "昼ごはんを食べたばかりなので、おなかがいっぱいです。",
+          "reading": "ひるごはんをたべたばかりなので、おなかがいっぱいです。",
+          "translation": {
+            "vi": "Vì vừa mới ăn trưa xong nên tôi no bụng.",
+            "en": "I have just had lunch, so I am full."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-100"
+    },
+    {
+      "japanese": "〜間／〜間に",
+      "meaning": {
+        "vi": "Trong suốt ~ / trong lúc ~",
+        "en": "During ~ / while ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: 「間」 = suốt khoảng thời gian đó, hành động ở vế sau diễn ra liên tục; 「間に」 = một việc xảy ra tại một thời điểm trong khoảng đó. Trước 間/間に dùng thể ている hoặc danh từ の.",
+        "en": "Usage: 「間」 = throughout that period, with the other action continuing; 「間に」 = something happens once within that period. The preceding part is in the ている-form or a noun + の."
+      },
+      "examples": [
+        {
+          "ja": "私が寝ている間、犬が静かにしていました。",
+          "reading": "わたしがねているあいだ、いぬがしずかにしていました。",
+          "translation": {
+            "vi": "Trong lúc tôi ngủ, con chó cứ yên lặng.",
+            "en": "While I was sleeping, the dog stayed quiet."
+          }
+        },
+        {
+          "ja": "留守の間に、友だちが来ました。",
+          "reading": "るすのあいだに、ともだちがきました。",
+          "translation": {
+            "vi": "Trong lúc tôi vắng nhà, bạn đã đến.",
+            "en": "A friend came while I was out."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-101"
+    },
+    {
+      "japanese": "〜までに",
+      "meaning": {
+        "vi": "Trước (hạn chót)",
+        "en": "By (a deadline)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thời điểm + までに + hành động xảy ra một lần. Khác 「まで」 (liên tục đến thời điểm đó): 五時まで働く (làm liên tục đến 5h) ≠ 五時までに戻る (về trước 5h).",
+        "en": "Usage: time + までに + an action happening once. Unlike 「まで」 (continuing up to that time): 五時まで働く (work until 5) ≠ 五時までに戻る (be back by 5)."
+      },
+      "examples": [
+        {
+          "ja": "金曜日までにレポートを出してください。",
+          "reading": "きんようびまでにレポートをだしてください。",
+          "translation": {
+            "vi": "Hãy nộp báo cáo trước thứ Sáu.",
+            "en": "Please submit the report by Friday."
+          }
+        },
+        {
+          "ja": "五時までに会社に戻ります。",
+          "reading": "ごじまでにかいしゃにもどります。",
+          "translation": {
+            "vi": "Tôi sẽ quay lại công ty trước năm giờ.",
+            "en": "I will be back at the office by five o'clock."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-102"
+    },
+    {
+      "japanese": "〜たことがある",
+      "meaning": {
+        "vi": "Đã từng ~",
+        "en": "Have done ~ before"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た + ことがある. Nói kinh nghiệm trong quá khứ. Phủ định: 〜たことがない. Khác 〜ている (kết quả/trạng thái hiện tại).",
+        "en": "Usage: verb た-form + ことがある. States a past experience. Negative: 〜たことがない. Different from 〜ている (current result/state)."
+      },
+      "examples": [
+        {
+          "ja": "富士山に登ったことがあります。",
+          "reading": "ふじさんにのぼったことがあります。",
+          "translation": {
+            "vi": "Tôi đã từng leo núi Phú Sĩ.",
+            "en": "I have climbed Mt. Fuji."
+          }
+        },
+        {
+          "ja": "納豆を食べたことがありません。",
+          "reading": "なっとうをたべたことがありません。",
+          "translation": {
+            "vi": "Tôi chưa từng ăn natto.",
+            "en": "I have never eaten natto."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-103"
+    },
+    {
+      "japanese": "〜たり〜たりする",
+      "meaning": {
+        "vi": "Lúc thì ~ lúc thì ~",
+        "en": "Do things like ~ and ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể た + り, thể た + り + する. Liệt kê vài hành động tiêu biểu (không nêu hết) hoặc hai trạng thái đối lập (行ったり来たり). Chia thì ở 「する」 cuối câu.",
+        "en": "Usage: た-form + り, た-form + り + する. Lists representative actions (not exhaustive) or contrasting states (行ったり来たり). Tense is shown on the final 「する」."
+      },
+      "examples": [
+        {
+          "ja": "休みの日は、映画を見たり、買い物に行ったりします。",
+          "reading": "やすみのひは、えいがをみたり、かいものにいったりします。",
+          "translation": {
+            "vi": "Ngày nghỉ, tôi lúc thì xem phim, lúc thì đi mua sắm.",
+            "en": "On days off, I do things like watch movies and go shopping."
+          }
+        },
+        {
+          "ja": "週末は、本を読んだり、掃除をしたりします。",
+          "reading": "しゅうまつは、ほんをよんだり、そうじをしたりします。",
+          "translation": {
+            "vi": "Cuối tuần tôi lúc thì đọc sách, lúc thì dọn dẹp.",
+            "en": "On weekends I read books, clean, and so on."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-104"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜たばかり",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先月、日本に来た（　）です。",
+        "en": "Choose the correct option for the blank:\n先月、日本に来た（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ところ",
+          "ばかり",
+          "あいだ",
+          "まで"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「来たばかりです」 nghĩa là mới đến cách đây chưa lâu.",
+        "en": "Correct! 「来たばかりです」 means one arrived not long ago."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「来たばかりです」 nghĩa là mới đến cách đây chưa lâu.",
+        "en": "Not quite. 「来たばかりです」 means one arrived not long ago."
+      }
+    },
+    {
+      "item": "〜たばかり",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Đã ba tháng nhưng người nói vẫn cảm thấy là \"vừa mới\". Chọn đáp án đúng:\n三か月前に日本に来た（　）です。",
+        "en": "It was three months ago, but the speaker feels it is recent. Choose the best option:\n三か月前に日本に来た（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ばかり",
+          "ところ",
+          "あいだ",
+          "まえ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù đã ba tháng nhưng người nói cảm thấy \"vừa mới\" nên dùng 「ばかり」; 「ところ」 chỉ dùng cho khoảnh khắc ngay trước khi nói.",
+        "en": "Correct! Even though it was three months ago, the speaker feels it is recent, so 「ばかり」 fits; 「ところ」 is only for the moment right before speaking."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù đã ba tháng nhưng người nói cảm thấy \"vừa mới\" nên dùng 「ばかり」; 「ところ」 chỉ dùng cho khoảnh khắc ngay trước khi nói.",
+        "en": "Not quite. Even though it was three months ago, the speaker feels it is recent, so 「ばかり」 fits; 「ところ」 is only for the moment right before speaking."
+      }
+    },
+    {
+      "item": "〜たばかり",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n昼ごはんを食べた___なので、おなかがいっぱいです。",
+        "en": "Choose the correct option for the blank:\n昼ごはんを食べた___なので、おなかがいっぱいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばかり"
+        ],
+        "hint": "ばかり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vừa mới ăn xong: 「食べたばかり」.",
+        "en": "Correct! Having just eaten: 「食べたばかり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vừa mới ăn xong: 「食べたばかり」.",
+        "en": "Not quite. Having just eaten: 「食べたばかり」."
+      }
+    },
+    {
+      "item": "〜間／〜間に",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私が寝ている（　）、犬は静かにしていました。",
+        "en": "Choose the correct option for the blank:\n私が寝ている（　）、犬は静かにしていました。"
+      },
+      "payload": {
+        "choices": [
+          "間に",
+          "まで",
+          "までに",
+          "間"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Suốt thời gian ngủ chó luôn yên lặng (liên tục) nên dùng 「間」.",
+        "en": "Correct! The dog stays quiet throughout the sleep (continuous), so 「間」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Suốt thời gian ngủ chó luôn yên lặng (liên tục) nên dùng 「間」.",
+        "en": "Not quite. The dog stays quiet throughout the sleep (continuous), so 「間」 is used."
+      }
+    },
+    {
+      "item": "〜間／〜間に",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n留守の（　）、友だちが来ました。",
+        "en": "Choose the pattern that best fits the context:\n留守の（　）、友だちが来ました。"
+      },
+      "payload": {
+        "choices": [
+          "間",
+          "まで",
+          "間に",
+          "までに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Việc bạn đến chỉ xảy ra một lần trong lúc vắng nhà nên dùng 「間に」.",
+        "en": "Correct! The friend's visit happened once during the absence, so 「間に」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Việc bạn đến chỉ xảy ra một lần trong lúc vắng nhà nên dùng 「間に」.",
+        "en": "Not quite. The friend's visit happened once during the absence, so 「間に」 is used."
+      }
+    },
+    {
+      "item": "〜間／〜間に",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもが寝ている___に、掃除をしました。",
+        "en": "Choose the correct option for the blank:\n子どもが寝ている___に、掃除をしました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "あいだ",
+          "間"
+        ],
+        "hint": "あいだ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm một việc trong lúc con ngủ: 「寝ている間に」.",
+        "en": "Correct! Doing one thing while the child sleeps: 「寝ている間に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm một việc trong lúc con ngủ: 「寝ている間に」.",
+        "en": "Not quite. Doing one thing while the child sleeps: 「寝ている間に」."
+      }
+    },
+    {
+      "item": "〜までに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n金曜日（　）レポートを出してください。",
+        "en": "Choose the correct option for the blank:\n金曜日（　）レポートを出してください。"
+      },
+      "payload": {
+        "choices": [
+          "まで",
+          "までに",
+          "ごろ",
+          "から"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hạn chót nộp báo cáo dùng 「までに」.",
+        "en": "Correct! A deadline for submitting the report uses 「までに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hạn chót nộp báo cáo dùng 「までに」.",
+        "en": "Not quite. A deadline for submitting the report uses 「までに」."
+      }
+    },
+    {
+      "item": "〜までに",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n五時（　）会社で働きます。",
+        "en": "Choose the pattern that best fits the context:\n五時（　）会社で働きます。"
+      },
+      "payload": {
+        "choices": [
+          "まで",
+          "までに",
+          "までも",
+          "ほど"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm việc liên tục đến 5 giờ dùng 「まで」; 「までに」 dành cho việc xảy ra một lần trước hạn.",
+        "en": "Correct! Working continuously until five uses 「まで」; 「までに」 is for something done once before a deadline."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm việc liên tục đến 5 giờ dùng 「まで」; 「までに」 dành cho việc xảy ra một lần trước hạn.",
+        "en": "Not quite. Working continuously until five uses 「まで」; 「までに」 is for something done once before a deadline."
+      }
+    },
+    {
+      "item": "〜までに",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n来週の月曜日___、資料を送ってください。",
+        "en": "Choose the correct option for the blank:\n来週の月曜日___、資料を送ってください。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "までに"
+        ],
+        "hint": "〜までに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hạn chót nên dùng 「までに」.",
+        "en": "Correct! For a deadline, use 「までに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hạn chót nên dùng 「までに」.",
+        "en": "Not quite. For a deadline, use 「までに」."
+      }
+    },
+    {
+      "item": "〜たことがある",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n富士山に登った（　）があります。",
+        "en": "Choose the correct option for the blank:\n富士山に登った（　）があります。"
+      },
+      "payload": {
+        "choices": [
+          "ところ",
+          "ばかり",
+          "あいだ",
+          "こと"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kinh nghiệm quá khứ: 「〜たことがある」.",
+        "en": "Correct! A past experience: 「〜たことがある」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kinh nghiệm quá khứ: 「〜たことがある」.",
+        "en": "Not quite. A past experience: 「〜たことがある」."
+      }
+    },
+    {
+      "item": "〜たことがある",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は納豆を食べるのことがありません。",
+          "私は納豆を食べてことがありません。",
+          "私は納豆を食べたことがありません。",
+          "私は納豆を食べたがありません。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kinh nghiệm dùng thể た + 「ことがある/ない」; thiếu 「こと」 hay dùng thể て đều sai.",
+        "en": "Correct! Experience uses the た-form + 「ことがある/ない」; dropping 「こと」 or using the て-form is wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kinh nghiệm dùng thể た + 「ことがある/ない」; thiếu 「こと」 hay dùng thể て đều sai.",
+        "en": "Not quite. Experience uses the た-form + 「ことがある/ない」; dropping 「こと」 or using the て-form is wrong."
+      }
+    },
+    {
+      "item": "〜たことがある",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本の温泉に入っ___ことがありますか。",
+        "en": "Choose the correct option for the blank:\n日本の温泉に入っ___ことがありますか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "た"
+        ],
+        "hint": "〜た"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hỏi về kinh nghiệm: 「入ったことがありますか」.",
+        "en": "Correct! Asking about experience: 「入ったことがありますか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hỏi về kinh nghiệm: 「入ったことがありますか」.",
+        "en": "Not quite. Asking about experience: 「入ったことがありますか」."
+      }
+    },
+    {
+      "item": "〜たり〜たりする",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n休みの日は、映画を見（　）、買い物に行ったりします。",
+        "en": "Choose the correct option for the blank:\n休みの日は、映画を見（　）、買い物に行ったりします。"
+      },
+      "payload": {
+        "choices": [
+          "て",
+          "たり",
+          "ながら",
+          "たら"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Liệt kê hành động: 「見たり、行ったりします」.",
+        "en": "Correct! Listing actions: 「見たり、行ったりします」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Liệt kê hành động: 「見たり、行ったりします」.",
+        "en": "Not quite. Listing actions: 「見たり、行ったりします」."
+      }
+    },
+    {
+      "item": "〜たり〜たりする",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n週末は、本を読ん___、掃除をしたりします。",
+        "en": "Choose the correct option for the blank:\n週末は、本を読ん___、掃除をしたりします。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "だり"
+        ],
+        "hint": "〜だり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「読む」 thể た là 「読んだ」 nên liệt kê là 「読んだり」.",
+        "en": "Correct! The た-form of 「読む」 is 「読んだ」, so the listing form is 「読んだり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「読む」 thể た là 「読んだ」 nên liệt kê là 「読んだり」.",
+        "en": "Not quite. The た-form of 「読む」 is 「読んだ」, so the listing form is 「読んだり」."
+      }
+    },
+    {
+      "item": "〜たり〜たりする",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n休みの日は、映画を見たり、＿　★　＿　。\n（します／買い物に／行ったり）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n休みの日は、映画を見たり、＿　★　＿　。\n（します／買い物に／行ったり）"
+      },
+      "payload": {
+        "choices": [
+          "買い物に",
+          "行ったり",
+          "します"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「休みの日は、映画を見たり、買い物に行ったりします。」; ô ★ (thứ hai) là 「行ったり」.",
+        "en": "Correct! The correct sentence is 「休みの日は、映画を見たり、買い物に行ったりします。」; the ★ (second) slot is 「行ったり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「休みの日は、映画を見たり、買い物に行ったりします。」; ô ★ (thứ hai) là 「行ったり」.",
+        "en": "Not quite. The correct sentence is 「休みの日は、映画を見たり、買い物に行ったりします。」; the ★ (second) slot is 「行ったり」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜たばかり",
+            {
+              "vi": "Vừa mới ~",
+              "en": "Have just ~"
+            }
+          ],
+          [
+            "〜間／〜間に",
+            {
+              "vi": "Trong suốt ~ / trong lúc ~",
+              "en": "During ~ / while ~"
+            }
+          ],
+          [
+            "〜までに",
+            {
+              "vi": "Trước (hạn chót)",
+              "en": "By (a deadline)"
+            }
+          ],
+          [
+            "〜たことがある",
+            {
+              "vi": "Đã từng ~",
+              "en": "Have done ~ before"
+            }
+          ],
+          [
+            "〜たり〜たりする",
+            {
+              "vi": "Lúc thì ~ lúc thì ~",
+              "en": "Do things like ~ and ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

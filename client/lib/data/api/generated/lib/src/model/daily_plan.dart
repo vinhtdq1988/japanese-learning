@@ -5,6 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/plan_item.dart';
 import 'package:japanese_api/src/model/session_summary.dart';
+import 'package:japanese_api/src/model/daily_plan_encouragement.dart';
 import 'package:japanese_api/src/model/daily_plan_kanji_notice.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
@@ -37,6 +38,8 @@ class DailyPlan {
 
     this.kanjiNotice,
 
+    this.encouragement,
+
     this.summary,
   });
 
@@ -66,6 +69,9 @@ class DailyPlan {
   @JsonKey(name: r'kanjiNotice', required: false, includeIfNull: false)
   final DailyPlanKanjiNotice? kanjiNotice;
 
+  @JsonKey(name: r'encouragement', required: false, includeIfNull: false)
+  final DailyPlanEncouragement? encouragement;
+
   @JsonKey(name: r'summary', required: false, includeIfNull: false)
   final SessionSummary? summary;
 
@@ -81,6 +87,7 @@ class DailyPlan {
           other.items == items &&
           other.notice == notice &&
           other.kanjiNotice == kanjiNotice &&
+          other.encouragement == encouragement &&
           other.summary == summary;
 
   @override
@@ -93,6 +100,7 @@ class DailyPlan {
       items.hashCode +
       (notice == null ? 0 : notice.hashCode) +
       (kanjiNotice == null ? 0 : kanjiNotice.hashCode) +
+      (encouragement == null ? 0 : encouragement.hashCode) +
       (summary == null ? 0 : summary.hashCode);
 
   factory DailyPlan.fromJson(Map<String, dynamic> json) =>

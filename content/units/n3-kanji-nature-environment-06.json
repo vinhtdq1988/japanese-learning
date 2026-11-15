@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (境 景 園 災)",
+    "en": "Nature and environment kanji (境 景 園 災)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "境",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "ranh giới; hoàn cảnh",
+        "en": "boundary; environment"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ",
+          "ケイ"
+        ],
+        "kunReadings": [
+          "さかい"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "環境",
+          "reading": "かんきょう",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "môi trường",
+            "en": "environment"
+          }
+        },
+        {
+          "ja": "境",
+          "reading": "さかい",
+          "kanjiReading": "さかい",
+          "translation": {
+            "vi": "ranh giới",
+            "en": "boundary"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "景",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "cảnh; quang cảnh",
+        "en": "scenery"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "風景",
+          "reading": "ふうけい",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "phong cảnh",
+            "en": "scenery"
+          }
+        },
+        {
+          "ja": "景気",
+          "reading": "けいき",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "tình hình kinh tế",
+            "en": "economic conditions"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "園",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "vườn; sân",
+        "en": "garden; park"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エン"
+        ],
+        "kunReadings": [
+          "その"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "公園",
+          "reading": "こうえん",
+          "kanjiReading": "エン",
+          "translation": {
+            "vi": "công viên",
+            "en": "park"
+          }
+        },
+        {
+          "ja": "動物園",
+          "reading": "どうぶつえん",
+          "kanjiReading": "エン",
+          "translation": {
+            "vi": "sở thú",
+            "en": "zoo"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "災",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "tai họa; thiên tai",
+        "en": "disaster"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ"
+        ],
+        "kunReadings": [
+          "わざわ.い"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "災害",
+          "reading": "さいがい",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "thiên tai",
+            "en": "disaster"
+          }
+        },
+        {
+          "ja": "災い",
+          "reading": "わざわい",
+          "kanjiReading": "わざわ",
+          "translation": {
+            "vi": "tai họa",
+            "en": "calamity"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "境",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「境」nghĩa là gì?",
+        "en": "What does 「境」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ranh giới; hoàn cảnh",
+            "en": "boundary; environment"
+          },
+          {
+            "vi": "cảnh; quang cảnh",
+            "en": "scenery"
+          },
+          {
+            "vi": "vườn; sân",
+            "en": "garden; park"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 境 nghĩa là ranh giới; hoàn cảnh.",
+        "en": "Correct! 境 means boundary; environment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 境 nghĩa là ranh giới; hoàn cảnh, như trong 「環境」 (môi trường).",
+        "en": "Not quite. 境 means boundary; environment, as in 「環境」 (environment)."
+      }
+    },
+    {
+      "item": "境",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「境」 trong 「環境」 (“môi trường”).",
+        "en": "Type the reading of 「境」 in 「環境」 (“environment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 環境, 境 đọc là きょう (âm On).",
+        "en": "Correct! In 環境, 境 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 環境 (môi trường), 境 đọc là きょう (âm On).",
+        "en": "In 環境 (environment), 境 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "境",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「境」(ranh giới; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「境」 (boundary; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょう",
+          "さかい",
+          "けいき"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 境 = さかい (ranh giới); 境 đọc là さかい (âm Kun).",
+        "en": "Correct! 境 = さかい (boundary); 境 is read さかい (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "境 đọc là さかい (ranh giới): 境 mang âm Kun さかい.",
+        "en": "境 is read さかい (boundary): 境 takes the kun'yomi さかい."
+      }
+    },
+    {
+      "item": "景",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「景」nghĩa là gì?",
+        "en": "What does 「景」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vườn; sân",
+            "en": "garden; park"
+          },
+          {
+            "vi": "cảnh; quang cảnh",
+            "en": "scenery"
+          },
+          {
+            "vi": "tai họa; thiên tai",
+            "en": "disaster"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 景 nghĩa là cảnh; quang cảnh.",
+        "en": "Correct! 景 means scenery."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 景 nghĩa là cảnh; quang cảnh, như trong 「風景」 (phong cảnh).",
+        "en": "Not quite. 景 means scenery, as in 「風景」 (scenery)."
+      }
+    },
+    {
+      "item": "景",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「景」 trong 「風景」 (“phong cảnh”).",
+        "en": "Type the reading of 「景」 in 「風景」 (“scenery”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 風景, 景 đọc là けい (âm On).",
+        "en": "Correct! In 風景, 景 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 風景 (phong cảnh), 景 đọc là けい (âm On).",
+        "en": "In 風景 (scenery), 景 is read けい (on'yomi)."
+      }
+    },
+    {
+      "item": "景",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「景気」(tình hình kinh tế) đọc là gì?",
+        "en": "How is 「景気」 (economic conditions) read?"
+      },
+      "payload": {
+        "choices": [
+          "げいき",
+          "けいぎ",
+          "けいき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 景気 = けいき (tình hình kinh tế); 景 đọc là けい (âm On).",
+        "en": "Correct! 景気 = けいき (economic conditions); 景 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "景気 đọc là けいき (tình hình kinh tế): 景 mang âm On けい.",
+        "en": "景気 is read けいき (economic conditions): 景 takes the on'yomi けい."
+      }
+    },
+    {
+      "item": "園",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「園」nghĩa là gì?",
+        "en": "What does 「園」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tai họa; thiên tai",
+            "en": "disaster"
+          },
+          {
+            "vi": "ranh giới; hoàn cảnh",
+            "en": "boundary; environment"
+          },
+          {
+            "vi": "vườn; sân",
+            "en": "garden; park"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 園 nghĩa là vườn; sân.",
+        "en": "Correct! 園 means garden; park."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 園 nghĩa là vườn; sân, như trong 「公園」 (công viên).",
+        "en": "Not quite. 園 means garden; park, as in 「公園」 (park)."
+      }
+    },
+    {
+      "item": "園",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「園」 trong 「公園」 (“công viên”).",
+        "en": "Type the reading of 「園」 in 「公園」 (“park”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えん",
+          "エン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 公園, 園 đọc là えん (âm On).",
+        "en": "Correct! In 公園, 園 is read えん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 公園 (công viên), 園 đọc là えん (âm On).",
+        "en": "In 公園 (park), 園 is read えん (on'yomi)."
+      }
+    },
+    {
+      "item": "園",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「動物園」(sở thú) đọc là gì?",
+        "en": "How is 「動物園」 (zoo) read?"
+      },
+      "payload": {
+        "choices": [
+          "どうぶつえん",
+          "どうぶつその",
+          "どうぶつわざわ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 動物園 = どうぶつえん (sở thú); 園 đọc là えん (âm On).",
+        "en": "Correct! 動物園 = どうぶつえん (zoo); 園 is read えん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "動物園 đọc là どうぶつえん (sở thú): 園 mang âm On えん.",
+        "en": "動物園 is read どうぶつえん (zoo): 園 takes the on'yomi えん."
+      }
+    },
+    {
+      "item": "災",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「災」nghĩa là gì?",
+        "en": "What does 「災」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tai họa; thiên tai",
+            "en": "disaster"
+          },
+          {
+            "vi": "ranh giới; hoàn cảnh",
+            "en": "boundary; environment"
+          },
+          {
+            "vi": "cảnh; quang cảnh",
+            "en": "scenery"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 災 nghĩa là tai họa; thiên tai.",
+        "en": "Correct! 災 means disaster."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 災 nghĩa là tai họa; thiên tai, như trong 「災害」 (thiên tai).",
+        "en": "Not quite. 災 means disaster, as in 「災害」 (disaster)."
+      }
+    },
+    {
+      "item": "災",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「災」 trong 「災害」 (“thiên tai”).",
+        "en": "Type the reading of 「災」 in 「災害」 (“disaster”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 災害, 災 đọc là さい (âm On).",
+        "en": "Correct! In 災害, 災 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 災害 (thiên tai), 災 đọc là さい (âm On).",
+        "en": "In 災害 (disaster), 災 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "災",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「災い」(tai họa) đọc là gì?",
+        "en": "How is 「災い」 (calamity) read?"
+      },
+      "payload": {
+        "choices": [
+          "さいい",
+          "わざわい",
+          "ふうけい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 災い = わざわい (tai họa); 災 đọc là わざわ (âm Kun).",
+        "en": "Correct! 災い = わざわい (calamity); 災 is read わざわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "災い đọc là わざわい (tai họa): 災 mang âm Kun わざわ.",
+        "en": "災い is read わざわい (calamity): 災 takes the kun'yomi わざわ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "境",
+            {
+              "vi": "ranh giới; hoàn cảnh",
+              "en": "boundary; environment"
+            }
+          ],
+          [
+            "景",
+            {
+              "vi": "cảnh; quang cảnh",
+              "en": "scenery"
+            }
+          ],
+          [
+            "園",
+            {
+              "vi": "vườn; sân",
+              "en": "garden; park"
+            }
+          ],
+          [
+            "災",
+            {
+              "vi": "tai họa; thiên tai",
+              "en": "disaster"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-office-procedures",
+  "title": {
+    "vi": "Lưu trữ và gửi tài liệu",
+    "en": "Storing and sending documents"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 540,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "保管",
+      "reading": "ほかん",
+      "meaning": {
+        "vi": "Bảo quản; cất giữ",
+        "en": "Safekeeping; storage"
+      },
+      "examples": [
+        {
+          "ja": "大切な書類は、金庫に保管しています。",
+          "reading": "たいせつなしょるいは、きんこにほかんしています。",
+          "translation": {
+            "vi": "Giấy tờ quan trọng được cất trong két sắt.",
+            "en": "Important documents are kept in a safe."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保存",
+      "reading": "ほぞん",
+      "meaning": {
+        "vi": "Lưu (dữ liệu); bảo tồn",
+        "en": "Saving; preservation"
+      },
+      "examples": [
+        {
+          "ja": "作ったファイルは、すぐに保存してください。",
+          "reading": "つくったファイルは、すぐにほぞんしてください。",
+          "translation": {
+            "vi": "Hãy lưu ngay tệp bạn vừa tạo.",
+            "en": "Please save the file you made right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "処理",
+      "reading": "しょり",
+      "meaning": {
+        "vi": "Xử lý",
+        "en": "Processing; handling"
+      },
+      "examples": [
+        {
+          "ja": "届いた注文は、今日中に処理します。",
+          "reading": "とどいたちゅうもんは、きょうじゅうにしょりします。",
+          "translation": {
+            "vi": "Các đơn hàng đã đến sẽ được xử lý trong hôm nay.",
+            "en": "We will process the orders that have arrived today."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "郵送",
+      "reading": "ゆうそう",
+      "meaning": {
+        "vi": "Gửi qua bưu điện",
+        "en": "Sending by mail"
+      },
+      "examples": [
+        {
+          "ja": "申込書は、郵送でも受け付けます。",
+          "reading": "もうしこみしょは、ゆうそうでもうけつけます。",
+          "translation": {
+            "vi": "Đơn đăng ký cũng được tiếp nhận qua đường bưu điện.",
+            "en": "Application forms are also accepted by mail."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "送付",
+      "reading": "そうふ",
+      "meaning": {
+        "vi": "Gửi đi (cách nói trang trọng)",
+        "en": "Sending (formal)"
+      },
+      "examples": [
+        {
+          "ja": "資料は、メールで送付いたします。",
+          "reading": "しりょうは、メールでそうふいたします。",
+          "translation": {
+            "vi": "Chúng tôi sẽ gửi tài liệu qua email.",
+            "en": "We will send the materials by email."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "添付",
+      "reading": "てんぷ",
+      "meaning": {
+        "vi": "Đính kèm",
+        "en": "Attachment; attaching"
+      },
+      "examples": [
+        {
+          "ja": "メールに、見積もりの書類を添付しました。",
+          "reading": "メールに、みつもりのしょるいをてんぷしました。",
+          "translation": {
+            "vi": "Tôi đã đính kèm giấy tờ báo giá vào email.",
+            "en": "I attached the quotation document to the email."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "保管",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大切な書類は、金庫に（　）しています。 — Nghĩa của câu: “Giấy tờ quan trọng được cất trong két sắt.”",
+        "en": "Choose the word that fits the blank: 大切な書類は、金庫に（　）しています。 — Meaning of the sentence: “Important documents are kept in a safe.”"
+      },
+      "payload": {
+        "choices": [
+          "送付",
+          "保存",
+          "郵送",
+          "保管"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保管」(Bảo quản; cất giữ) hợp nghĩa câu này: “Giấy tờ quan trọng được cất trong két sắt.”",
+        "en": "Correct! 「保管」(Safekeeping; storage) fits this sentence: “Important documents are kept in a safe.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giấy tờ quan trọng được cất trong két sắt.”, nên cần 「保管」(Bảo quản; cất giữ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Important documents are kept in a safe.”, so it needs 「保管」(Safekeeping; storage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保存",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 作ったファイルは、すぐに（　）してください。 — Nghĩa của câu: “Hãy lưu ngay tệp bạn vừa tạo.”",
+        "en": "Choose the word that fits the blank: 作ったファイルは、すぐに（　）してください。 — Meaning of the sentence: “Please save the file you made right away.”"
+      },
+      "payload": {
+        "choices": [
+          "保存",
+          "処理",
+          "保管",
+          "送付"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保存」(Lưu (dữ liệu); bảo tồn) hợp nghĩa câu này: “Hãy lưu ngay tệp bạn vừa tạo.”",
+        "en": "Correct! 「保存」(Saving; preservation) fits this sentence: “Please save the file you made right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy lưu ngay tệp bạn vừa tạo.”, nên cần 「保存」(Lưu (dữ liệu); bảo tồn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please save the file you made right away.”, so it needs 「保存」(Saving; preservation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "処理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 届いた注文は、今日中に（　）します。 — Nghĩa của câu: “Các đơn hàng đã đến sẽ được xử lý trong hôm nay.”",
+        "en": "Choose the word that fits the blank: 届いた注文は、今日中に（　）します。 — Meaning of the sentence: “We will process the orders that have arrived today.”"
+      },
+      "payload": {
+        "choices": [
+          "添付",
+          "処理",
+          "保管",
+          "送付"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「処理」(Xử lý) hợp nghĩa câu này: “Các đơn hàng đã đến sẽ được xử lý trong hôm nay.”",
+        "en": "Correct! 「処理」(Processing; handling) fits this sentence: “We will process the orders that have arrived today.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các đơn hàng đã đến sẽ được xử lý trong hôm nay.”, nên cần 「処理」(Xử lý); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We will process the orders that have arrived today.”, so it needs 「処理」(Processing; handling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "郵送",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 申込書は、（　）でも受け付けます。 — Nghĩa của câu: “Đơn đăng ký cũng được tiếp nhận qua đường bưu điện.”",
+        "en": "Choose the word that fits the blank: 申込書は、（　）でも受け付けます。 — Meaning of the sentence: “Application forms are also accepted by mail.”"
+      },
+      "payload": {
+        "choices": [
+          "送付",
+          "保管",
+          "郵送",
+          "保存"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「郵送」(Gửi qua bưu điện) hợp nghĩa câu này: “Đơn đăng ký cũng được tiếp nhận qua đường bưu điện.”",
+        "en": "Correct! 「郵送」(Sending by mail) fits this sentence: “Application forms are also accepted by mail.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đơn đăng ký cũng được tiếp nhận qua đường bưu điện.”, nên cần 「郵送」(Gửi qua bưu điện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Application forms are also accepted by mail.”, so it needs 「郵送」(Sending by mail); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "送付",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 資料は、メールで（　）いたします。 — Nghĩa của câu: “Chúng tôi sẽ gửi tài liệu qua email.”",
+        "en": "Choose the word that fits the blank: 資料は、メールで（　）いたします。 — Meaning of the sentence: “We will send the materials by email.”"
+      },
+      "payload": {
+        "choices": [
+          "保存",
+          "保管",
+          "処理",
+          "送付"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「送付」(Gửi đi (cách nói trang trọng)) hợp nghĩa câu này: “Chúng tôi sẽ gửi tài liệu qua email.”",
+        "en": "Correct! 「送付」(Sending (formal)) fits this sentence: “We will send the materials by email.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi sẽ gửi tài liệu qua email.”, nên cần 「送付」(Gửi đi (cách nói trang trọng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We will send the materials by email.”, so it needs 「送付」(Sending (formal)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "添付",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: メールに、見積もりの書類を（　）しました。 — Nghĩa của câu: “Tôi đã đính kèm giấy tờ báo giá vào email.”",
+        "en": "Choose the word that fits the blank: メールに、見積もりの書類を（　）しました。 — Meaning of the sentence: “I attached the quotation document to the email.”"
+      },
+      "payload": {
+        "choices": [
+          "添付",
+          "送付",
+          "保管",
+          "保存"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「添付」(Đính kèm) hợp nghĩa câu này: “Tôi đã đính kèm giấy tờ báo giá vào email.”",
+        "en": "Correct! 「添付」(Attachment; attaching) fits this sentence: “I attached the quotation document to the email.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã đính kèm giấy tờ báo giá vào email.”, nên cần 「添付」(Đính kèm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I attached the quotation document to the email.”, so it needs 「添付」(Attachment; attaching); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保管",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 大切な書類は、金庫に「保管」しています。",
+        "en": "Choose the correct reading of the word in 「」: 大切な書類は、金庫に「保管」しています。"
+      },
+      "payload": {
+        "choices": [
+          "ほかん",
+          "てんぷ",
+          "ほぞん",
+          "そうふ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保管」 đọc là 「ほかん」, nghĩa là Bảo quản; cất giữ.",
+        "en": "Correct! 「保管」 is read 「ほかん」 and means Safekeeping; storage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「保管」 đọc là 「ほかん」 (Bảo quản; cất giữ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「保管」 is read 「ほかん」 (Safekeeping; storage); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "郵送",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 申込書は、「郵送」でも受け付けます。",
+        "en": "Choose the correct reading of the word in 「」: 申込書は、「郵送」でも受け付けます。"
+      },
+      "payload": {
+        "choices": [
+          "そうふ",
+          "ゆうそう",
+          "ほかん",
+          "しょり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「郵送」 đọc là 「ゆうそう」, nghĩa là Gửi qua bưu điện.",
+        "en": "Correct! 「郵送」 is read 「ゆうそう」 and means Sending by mail."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「郵送」 đọc là 「ゆうそう」 (Gửi qua bưu điện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「郵送」 is read 「ゆうそう」 (Sending by mail); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "処理",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 届いた注文は、今日中に「しょり」します。",
+        "en": "Choose the correct way to write the word in 「」: 届いた注文は、今日中に「しょり」します。"
+      },
+      "payload": {
+        "choices": [
+          "添付",
+          "処理",
+          "保管",
+          "送付"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しょり」 viết là 「処理」, nghĩa là Xử lý.",
+        "en": "Correct! 「しょり」 is written 「処理」 and means Processing; handling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しょり」 viết là 「処理」 (Xử lý); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しょり」 is written 「処理」 (Processing; handling); the other words are read differently."
+      }
+    }
+  ]
+}

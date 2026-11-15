@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (意 音 歌)",
+    "en": "School and learning kanji (意 音 歌)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "意",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "ý; ý định",
+        "en": "meaning; intention"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "意味",
+          "reading": "いみ",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "ý nghĩa",
+            "en": "meaning"
+          }
+        },
+        {
+          "ja": "注意",
+          "reading": "ちゅうい",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "chú ý",
+            "en": "caution"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "音",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "âm thanh",
+        "en": "sound"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "オン",
+          "イン"
+        ],
+        "kunReadings": [
+          "おと",
+          "ね"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "音楽",
+          "reading": "おんがく",
+          "kanjiReading": "オン",
+          "translation": {
+            "vi": "âm nhạc",
+            "en": "music"
+          }
+        },
+        {
+          "ja": "音",
+          "reading": "おと",
+          "kanjiReading": "おと",
+          "translation": {
+            "vi": "âm thanh",
+            "en": "sound"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歌",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "bài hát; hát",
+        "en": "song; sing"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [
+          "うた",
+          "うた.う"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "歌手",
+          "reading": "かしゅ",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "ca sĩ",
+            "en": "singer"
+          }
+        },
+        {
+          "ja": "歌う",
+          "reading": "うたう",
+          "kanjiReading": "うた",
+          "translation": {
+            "vi": "hát",
+            "en": "to sing"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "意",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「意」nghĩa là gì?",
+        "en": "What does 「意」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ý; ý định",
+            "en": "meaning; intention"
+          },
+          {
+            "vi": "âm thanh",
+            "en": "sound"
+          },
+          {
+            "vi": "bài hát; hát",
+            "en": "song; sing"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 意 nghĩa là ý; ý định.",
+        "en": "Correct! 意 means meaning; intention."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 意 nghĩa là ý; ý định, như trong 「意味」 (ý nghĩa).",
+        "en": "Not quite. 意 means meaning; intention, as in 「意味」 (meaning)."
+      }
+    },
+    {
+      "item": "意",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「意」 trong 「意味」 (“ý nghĩa”).",
+        "en": "Type the reading of 「意」 in 「意味」 (“meaning”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "い",
+          "イ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 意味, 意 đọc là い (âm On).",
+        "en": "Correct! In 意味, 意 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 意味 (ý nghĩa), 意 đọc là い (âm On).",
+        "en": "In 意味 (meaning), 意 is read い (on'yomi)."
+      }
+    },
+    {
+      "item": "意",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「注意」(chú ý) đọc là gì?",
+        "en": "How is 「注意」 (caution) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちゅい",
+          "ちゅうい",
+          "ちゅうえ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 注意 = ちゅうい (chú ý); 意 đọc là い (âm On).",
+        "en": "Correct! 注意 = ちゅうい (caution); 意 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "注意 đọc là ちゅうい (chú ý): 意 mang âm On い.",
+        "en": "注意 is read ちゅうい (caution): 意 takes the on'yomi い."
+      }
+    },
+    {
+      "item": "音",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「音」nghĩa là gì?",
+        "en": "What does 「音」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bài hát; hát",
+            "en": "song; sing"
+          },
+          {
+            "vi": "âm thanh",
+            "en": "sound"
+          },
+          {
+            "vi": "ý; ý định",
+            "en": "meaning; intention"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 音 nghĩa là âm thanh.",
+        "en": "Correct! 音 means sound."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 音 nghĩa là âm thanh, như trong 「音楽」 (âm nhạc).",
+        "en": "Not quite. 音 means sound, as in 「音楽」 (music)."
+      }
+    },
+    {
+      "item": "音",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「音」 trong 「音楽」 (“âm nhạc”).",
+        "en": "Type the reading of 「音」 in 「音楽」 (“music”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "おん",
+          "オン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 音楽, 音 đọc là おん (âm On).",
+        "en": "Correct! In 音楽, 音 is read おん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 音楽 (âm nhạc), 音 đọc là おん (âm On).",
+        "en": "In 音楽 (music), 音 is read おん (on'yomi)."
+      }
+    },
+    {
+      "item": "音",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「音」(âm thanh; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「音」 (sound; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "おん",
+          "いみ",
+          "おと"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 音 = おと (âm thanh); 音 đọc là おと (âm Kun).",
+        "en": "Correct! 音 = おと (sound); 音 is read おと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "音 đọc là おと (âm thanh): 音 mang âm Kun おと.",
+        "en": "音 is read おと (sound): 音 takes the kun'yomi おと."
+      }
+    },
+    {
+      "item": "歌",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歌」nghĩa là gì?",
+        "en": "What does 「歌」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ý; ý định",
+            "en": "meaning; intention"
+          },
+          {
+            "vi": "âm thanh",
+            "en": "sound"
+          },
+          {
+            "vi": "bài hát; hát",
+            "en": "song; sing"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歌 nghĩa là bài hát; hát.",
+        "en": "Correct! 歌 means song; sing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 歌 nghĩa là bài hát; hát, như trong 「歌手」 (ca sĩ).",
+        "en": "Not quite. 歌 means song; sing, as in 「歌手」 (singer)."
+      }
+    },
+    {
+      "item": "歌",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「歌」 trong 「歌手」 (“ca sĩ”).",
+        "en": "Type the reading of 「歌」 in 「歌手」 (“singer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歌手, 歌 đọc là か (âm On).",
+        "en": "Correct! In 歌手, 歌 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歌手 (ca sĩ), 歌 đọc là か (âm On).",
+        "en": "In 歌手 (singer), 歌 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "歌",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歌う」(hát) đọc là gì?",
+        "en": "How is 「歌う」 (to sing) read?"
+      },
+      "payload": {
+        "choices": [
+          "うたう",
+          "かう",
+          "いみ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歌う = うたう (hát); 歌 đọc là うた (âm Kun).",
+        "en": "Correct! 歌う = うたう (to sing); 歌 is read うた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "歌う đọc là うたう (hát): 歌 mang âm Kun うた.",
+        "en": "歌う is read うたう (to sing): 歌 takes the kun'yomi うた."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "意",
+            {
+              "vi": "ý; ý định",
+              "en": "meaning; intention"
+            }
+          ],
+          [
+            "音",
+            {
+              "vi": "âm thanh",
+              "en": "sound"
+            }
+          ],
+          [
+            "歌",
+            {
+              "vi": "bài hát; hát",
+              "en": "song; sing"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

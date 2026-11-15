@@ -16,6 +16,7 @@ import 'package:japanese_api/src/model/onboarding_state.dart';
 import 'package:japanese_api/src/model/placement_answers.dart';
 import 'package:japanese_api/src/model/placement_question_set.dart';
 import 'package:japanese_api/src/model/placement_result.dart';
+import 'package:japanese_api/src/model/study_defaults.dart';
 
 class OnboardingApi {
   final Dio _dio;
@@ -177,6 +178,81 @@ class OnboardingApi {
     }
 
     return Response<OnboardingState>(
+      data: _responseData,
+      headers: _response.headers,
+      isRedirect: _response.isRedirect,
+      requestOptions: _response.requestOptions,
+      redirects: _response.redirects,
+      statusCode: _response.statusCode,
+      statusMessage: _response.statusMessage,
+      extra: _response.extra,
+    );
+  }
+
+  /// Bảng gợi ý kỹ năng mặc định theo quỹ thời gian mỗi ngày (spec 007, FR-021…023)
+  /// Chỉ đọc, giống nhau cho mọi người học, có thể cache theo phiên đăng nhập. Đây là GỢI Ý: người học luôn đổi/bỏ được từng lựa chọn; máy chủ không tự áp dụng vào hồ sơ.
+  ///
+  /// Parameters:
+  /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
+  /// * [headers] - Can be used to add additional headers to the request
+  /// * [extras] - Can be used to add flags to the request
+  /// * [validateStatus] - A [ValidateStatus] callback that can be used to determine request success based on the HTTP status of the response
+  /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
+  /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
+  ///
+  /// Returns a [Future] containing a [Response] with a [StudyDefaults] as data
+  /// Throws [DioException] if API call or serialization fails
+  Future<Response<StudyDefaults>> getStudyDefaults({
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
+  }) async {
+    final _path = r'/study-defaults';
+    final _options = Options(
+      method: r'GET',
+      headers: <String, dynamic>{...?headers},
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[
+          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+        ],
+        ...?extra,
+      },
+      validateStatus: validateStatus,
+    );
+
+    final _response = await _dio.request<Object>(
+      _path,
+      options: _options,
+      cancelToken: cancelToken,
+      onSendProgress: onSendProgress,
+      onReceiveProgress: onReceiveProgress,
+    );
+
+    StudyDefaults? _responseData;
+
+    try {
+      final rawData = _response.data;
+      _responseData = rawData == null
+          ? null
+          : deserialize<StudyDefaults, StudyDefaults>(
+              rawData,
+              'StudyDefaults',
+              growable: true,
+            );
+    } catch (error, stackTrace) {
+      throw DioException(
+        requestOptions: _response.requestOptions,
+        response: _response,
+        type: DioExceptionType.unknown,
+        error: error,
+        stackTrace: stackTrace,
+      );
+    }
+
+    return Response<StudyDefaults>(
       data: _responseData,
       headers: _response.headers,
       isRedirect: _response.isRedirect,

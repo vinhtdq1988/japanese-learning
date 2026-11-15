@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (処 違 断)",
+    "en": "Law and order kanji (処 違 断)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "処",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "xử lý; nơi",
+        "en": "deal with; place"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "処理",
+          "reading": "しょり",
+          "kanjiReading": "ショ",
+          "translation": {
+            "vi": "xử lý",
+            "en": "processing"
+          }
+        },
+        {
+          "ja": "対処",
+          "reading": "たいしょ",
+          "kanjiReading": "ショ",
+          "translation": {
+            "vi": "đối phó",
+            "en": "coping"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "違",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "khác; sai",
+        "en": "differ; wrong"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イ"
+        ],
+        "kunReadings": [
+          "ちが.う",
+          "ちが.える"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "違反",
+          "reading": "いはん",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "vi phạm",
+            "en": "violation"
+          }
+        },
+        {
+          "ja": "違う",
+          "reading": "ちがう",
+          "kanjiReading": "ちが",
+          "translation": {
+            "vi": "khác; sai",
+            "en": "to differ"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "断",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "cắt đứt; từ chối; quyết đoán",
+        "en": "cut off; refuse"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダン"
+        ],
+        "kunReadings": [
+          "た.つ",
+          "ことわ.る"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "判断",
+          "reading": "はんだん",
+          "kanjiReading": "ダン",
+          "translation": {
+            "vi": "phán đoán",
+            "en": "judgment"
+          }
+        },
+        {
+          "ja": "断る",
+          "reading": "ことわる",
+          "kanjiReading": "ことわ",
+          "translation": {
+            "vi": "từ chối",
+            "en": "to refuse"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "処",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「処」nghĩa là gì?",
+        "en": "What does 「処」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xử lý; nơi",
+            "en": "deal with; place"
+          },
+          {
+            "vi": "khác; sai",
+            "en": "differ; wrong"
+          },
+          {
+            "vi": "cắt đứt; từ chối; quyết đoán",
+            "en": "cut off; refuse"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 処 nghĩa là xử lý; nơi.",
+        "en": "Correct! 処 means deal with; place."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 処 nghĩa là xử lý; nơi, như trong 「処理」 (xử lý).",
+        "en": "Not quite. 処 means deal with; place, as in 「処理」 (processing)."
+      }
+    },
+    {
+      "item": "処",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「処」 trong 「処理」 (“xử lý”).",
+        "en": "Type the reading of 「処」 in 「処理」 (“processing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょ",
+          "ショ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 処理, 処 đọc là しょ (âm On).",
+        "en": "Correct! In 処理, 処 is read しょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 処理 (xử lý), 処 đọc là しょ (âm On).",
+        "en": "In 処理 (processing), 処 is read しょ (on'yomi)."
+      }
+    },
+    {
+      "item": "処",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「対処」(đối phó) đọc là gì?",
+        "en": "How is 「対処」 (coping) read?"
+      },
+      "payload": {
+        "choices": [
+          "たいじょ",
+          "たいしょ",
+          "たいちが"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 対処 = たいしょ (đối phó); 処 đọc là しょ (âm On).",
+        "en": "Correct! 対処 = たいしょ (coping); 処 is read しょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "対処 đọc là たいしょ (đối phó): 処 mang âm On しょ.",
+        "en": "対処 is read たいしょ (coping): 処 takes the on'yomi しょ."
+      }
+    },
+    {
+      "item": "違",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「違」nghĩa là gì?",
+        "en": "What does 「違」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cắt đứt; từ chối; quyết đoán",
+            "en": "cut off; refuse"
+          },
+          {
+            "vi": "khác; sai",
+            "en": "differ; wrong"
+          },
+          {
+            "vi": "xử lý; nơi",
+            "en": "deal with; place"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 違 nghĩa là khác; sai.",
+        "en": "Correct! 違 means differ; wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 違 nghĩa là khác; sai, như trong 「違反」 (vi phạm).",
+        "en": "Not quite. 違 means differ; wrong, as in 「違反」 (violation)."
+      }
+    },
+    {
+      "item": "違",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「違」 trong 「違反」 (“vi phạm”).",
+        "en": "Type the reading of 「違」 in 「違反」 (“violation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "い",
+          "イ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 違反, 違 đọc là い (âm On).",
+        "en": "Correct! In 違反, 違 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 違反 (vi phạm), 違 đọc là い (âm On).",
+        "en": "In 違反 (violation), 違 is read い (on'yomi)."
+      }
+    },
+    {
+      "item": "違",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「違う」(khác; sai) đọc là gì?",
+        "en": "How is 「違う」 (to differ) read?"
+      },
+      "payload": {
+        "choices": [
+          "いう",
+          "しょり",
+          "ちがう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 違う = ちがう (khác; sai); 違 đọc là ちが (âm Kun).",
+        "en": "Correct! 違う = ちがう (to differ); 違 is read ちが (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "違う đọc là ちがう (khác; sai): 違 mang âm Kun ちが.",
+        "en": "違う is read ちがう (to differ): 違 takes the kun'yomi ちが."
+      }
+    },
+    {
+      "item": "断",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「断」nghĩa là gì?",
+        "en": "What does 「断」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xử lý; nơi",
+            "en": "deal with; place"
+          },
+          {
+            "vi": "khác; sai",
+            "en": "differ; wrong"
+          },
+          {
+            "vi": "cắt đứt; từ chối; quyết đoán",
+            "en": "cut off; refuse"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 断 nghĩa là cắt đứt; từ chối; quyết đoán.",
+        "en": "Correct! 断 means cut off; refuse."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 断 nghĩa là cắt đứt; từ chối; quyết đoán, như trong 「判断」 (phán đoán).",
+        "en": "Not quite. 断 means cut off; refuse, as in 「判断」 (judgment)."
+      }
+    },
+    {
+      "item": "断",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「断」 trong 「判断」 (“phán đoán”).",
+        "en": "Type the reading of 「断」 in 「判断」 (“judgment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だん",
+          "ダン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 判断, 断 đọc là だん (âm On).",
+        "en": "Correct! In 判断, 断 is read だん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 判断 (phán đoán), 断 đọc là だん (âm On).",
+        "en": "In 判断 (judgment), 断 is read だん (on'yomi)."
+      }
+    },
+    {
+      "item": "断",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「断る」(từ chối) đọc là gì?",
+        "en": "How is 「断る」 (to refuse) read?"
+      },
+      "payload": {
+        "choices": [
+          "ことわる",
+          "だんる",
+          "たいしょ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 断る = ことわる (từ chối); 断 đọc là ことわ (âm Kun).",
+        "en": "Correct! 断る = ことわる (to refuse); 断 is read ことわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "断る đọc là ことわる (từ chối): 断 mang âm Kun ことわ.",
+        "en": "断る is read ことわる (to refuse): 断 takes the kun'yomi ことわ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "処",
+            {
+              "vi": "xử lý; nơi",
+              "en": "deal with; place"
+            }
+          ],
+          [
+            "違",
+            {
+              "vi": "khác; sai",
+              "en": "differ; wrong"
+            }
+          ],
+          [
+            "断",
+            {
+              "vi": "cắt đứt; từ chối; quyết đoán",
+              "en": "cut off; refuse"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

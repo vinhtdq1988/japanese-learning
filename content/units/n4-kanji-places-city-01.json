@@ -1,0 +1,544 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-places-city",
+  "title": {
+    "vi": "Kanji địa điểm – thành phố (京 地 場 町)",
+    "en": "Places and the city kanji (京 地 場 町)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "京",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "kinh đô; Tokyo",
+        "en": "capital"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ",
+          "ケイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "東京",
+          "reading": "とうきょう",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "Tokyo",
+            "en": "Tokyo"
+          }
+        },
+        {
+          "ja": "京都",
+          "reading": "きょうと",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "Kyoto",
+            "en": "Kyoto"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "đất; địa phương",
+        "en": "ground; place"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チ",
+          "ジ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "地下鉄",
+          "reading": "ちかてつ",
+          "kanjiReading": "チ",
+          "translation": {
+            "vi": "tàu điện ngầm",
+            "en": "subway"
+          }
+        },
+        {
+          "ja": "地震",
+          "reading": "じしん",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "động đất",
+            "en": "earthquake"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "場",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "nơi; chỗ",
+        "en": "place; venue"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ"
+        ],
+        "kunReadings": [
+          "ば"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "工場",
+          "reading": "こうじょう",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "nhà máy",
+            "en": "factory"
+          }
+        },
+        {
+          "ja": "場所",
+          "reading": "ばしょ",
+          "kanjiReading": "ば",
+          "translation": {
+            "vi": "địa điểm",
+            "en": "place"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "町",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "thị trấn; phố",
+        "en": "town"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョウ"
+        ],
+        "kunReadings": [
+          "まち"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "町長",
+          "reading": "ちょうちょう",
+          "kanjiReading": "チョウ",
+          "translation": {
+            "vi": "thị trưởng",
+            "en": "town mayor"
+          }
+        },
+        {
+          "ja": "町",
+          "reading": "まち",
+          "kanjiReading": "まち",
+          "translation": {
+            "vi": "thị trấn",
+            "en": "town"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "京",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「京」nghĩa là gì?",
+        "en": "What does 「京」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kinh đô; Tokyo",
+            "en": "capital"
+          },
+          {
+            "vi": "đất; địa phương",
+            "en": "ground; place"
+          },
+          {
+            "vi": "nơi; chỗ",
+            "en": "place; venue"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 京 nghĩa là kinh đô; Tokyo.",
+        "en": "Correct! 京 means capital."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 京 nghĩa là kinh đô; Tokyo, như trong 「東京」 (Tokyo).",
+        "en": "Not quite. 京 means capital, as in 「東京」 (Tokyo)."
+      }
+    },
+    {
+      "item": "京",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「京」 trong 「東京」 (“Tokyo”).",
+        "en": "Type the reading of 「京」 in 「東京」 (“Tokyo”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 東京, 京 đọc là きょう (âm On).",
+        "en": "Correct! In 東京, 京 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 東京 (Tokyo), 京 đọc là きょう (âm On).",
+        "en": "In 東京 (Tokyo), 京 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "京",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「京都」(Kyoto) đọc là gì?",
+        "en": "How is 「京都」 (Kyoto) read?"
+      },
+      "payload": {
+        "choices": [
+          "けいと",
+          "きょうと",
+          "ぎょうと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 京都 = きょうと (Kyoto); 京 đọc là きょう (âm On).",
+        "en": "Correct! 京都 = きょうと (Kyoto); 京 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "京都 đọc là きょうと (Kyoto): 京 mang âm On きょう.",
+        "en": "京都 is read きょうと (Kyoto): 京 takes the on'yomi きょう."
+      }
+    },
+    {
+      "item": "地",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「地」nghĩa là gì?",
+        "en": "What does 「地」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nơi; chỗ",
+            "en": "place; venue"
+          },
+          {
+            "vi": "đất; địa phương",
+            "en": "ground; place"
+          },
+          {
+            "vi": "thị trấn; phố",
+            "en": "town"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 地 nghĩa là đất; địa phương.",
+        "en": "Correct! 地 means ground; place."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 地 nghĩa là đất; địa phương, như trong 「地下鉄」 (tàu điện ngầm).",
+        "en": "Not quite. 地 means ground; place, as in 「地下鉄」 (subway)."
+      }
+    },
+    {
+      "item": "地",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「地」 trong 「地下鉄」 (“tàu điện ngầm”).",
+        "en": "Type the reading of 「地」 in 「地下鉄」 (“subway”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ち",
+          "チ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 地下鉄, 地 đọc là ち (âm On).",
+        "en": "Correct! In 地下鉄, 地 is read ち (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 地下鉄 (tàu điện ngầm), 地 đọc là ち (âm On).",
+        "en": "In 地下鉄 (subway), 地 is read ち (on'yomi)."
+      }
+    },
+    {
+      "item": "地",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「地震」(động đất) đọc là gì?",
+        "en": "How is 「地震」 (earthquake) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちしん",
+          "ししん",
+          "じしん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 地震 = じしん (động đất); 地 đọc là じ (âm On).",
+        "en": "Correct! 地震 = じしん (earthquake); 地 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "地震 đọc là じしん (động đất): 地 mang âm On じ.",
+        "en": "地震 is read じしん (earthquake): 地 takes the on'yomi じ."
+      }
+    },
+    {
+      "item": "場",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「場」nghĩa là gì?",
+        "en": "What does 「場」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thị trấn; phố",
+            "en": "town"
+          },
+          {
+            "vi": "kinh đô; Tokyo",
+            "en": "capital"
+          },
+          {
+            "vi": "nơi; chỗ",
+            "en": "place; venue"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 場 nghĩa là nơi; chỗ.",
+        "en": "Correct! 場 means place; venue."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 場 nghĩa là nơi; chỗ, như trong 「工場」 (nhà máy).",
+        "en": "Not quite. 場 means place; venue, as in 「工場」 (factory)."
+      }
+    },
+    {
+      "item": "場",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「場」 trong 「工場」 (“nhà máy”).",
+        "en": "Type the reading of 「場」 in 「工場」 (“factory”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 工場, 場 đọc là じょう (âm On).",
+        "en": "Correct! In 工場, 場 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 工場 (nhà máy), 場 đọc là じょう (âm On).",
+        "en": "In 工場 (factory), 場 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "場",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「場所」(địa điểm) đọc là gì?",
+        "en": "How is 「場所」 (place) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばしょ",
+          "じょうしょ",
+          "はしょ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 場所 = ばしょ (địa điểm); 場 đọc là ば (âm Kun).",
+        "en": "Correct! 場所 = ばしょ (place); 場 is read ば (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "場所 đọc là ばしょ (địa điểm): 場 mang âm Kun ば.",
+        "en": "場所 is read ばしょ (place): 場 takes the kun'yomi ば."
+      }
+    },
+    {
+      "item": "町",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「町」nghĩa là gì?",
+        "en": "What does 「町」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thị trấn; phố",
+            "en": "town"
+          },
+          {
+            "vi": "kinh đô; Tokyo",
+            "en": "capital"
+          },
+          {
+            "vi": "đất; địa phương",
+            "en": "ground; place"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 町 nghĩa là thị trấn; phố.",
+        "en": "Correct! 町 means town."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 町 nghĩa là thị trấn; phố, như trong 「町長」 (thị trưởng).",
+        "en": "Not quite. 町 means town, as in 「町長」 (town mayor)."
+      }
+    },
+    {
+      "item": "町",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「町」 trong 「町長」 (“thị trưởng”).",
+        "en": "Type the reading of 「町」 in 「町長」 (“town mayor”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょう",
+          "チョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 町長, 町 đọc là ちょう (âm On).",
+        "en": "Correct! In 町長, 町 is read ちょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 町長 (thị trưởng), 町 đọc là ちょう (âm On).",
+        "en": "In 町長 (town mayor), 町 is read ちょう (on'yomi)."
+      }
+    },
+    {
+      "item": "町",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「町」(thị trấn; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「町」 (town; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちょう",
+          "まち",
+          "じしん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 町 = まち (thị trấn); 町 đọc là まち (âm Kun).",
+        "en": "Correct! 町 = まち (town); 町 is read まち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "町 đọc là まち (thị trấn): 町 mang âm Kun まち.",
+        "en": "町 is read まち (town): 町 takes the kun'yomi まち."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "京",
+            {
+              "vi": "kinh đô; Tokyo",
+              "en": "capital"
+            }
+          ],
+          [
+            "地",
+            {
+              "vi": "đất; địa phương",
+              "en": "ground; place"
+            }
+          ],
+          [
+            "場",
+            {
+              "vi": "nơi; chỗ",
+              "en": "place; venue"
+            }
+          ],
+          [
+            "町",
+            {
+              "vi": "thị trấn; phố",
+              "en": "town"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

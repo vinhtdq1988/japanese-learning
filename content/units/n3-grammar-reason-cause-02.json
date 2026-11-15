@@ -1,0 +1,544 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-reason-cause",
+  "title": {
+    "vi": "Lý do và kết quả (2): 〜によって, 〜ことから, 〜わけだ, 〜ものだから",
+    "en": "Reason and result (2): 〜によって (cause), 〜ことから, 〜わけだ, 〜ものだから"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜によって／〜により（原因）",
+      "meaning": {
+        "vi": "Do ~, bởi ~",
+        "en": "Due to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + によって / により + kết quả. Nêu nguyên nhân khách quan (thiên tai, tai nạn, sự kiện), thường trong văn viết, bản tin. Dạng 〜による + danh từ (事故による遅れ). Khác 〜によって ở nghĩa \"tùy theo\" (N2).",
+        "en": "Usage: noun + によって / により + result. States an objective cause (disaster, accident, event), common in written and news style. Also 〜による + noun (事故による遅れ). Not the \"depending on\" sense of 〜によって (N2)."
+      },
+      "examples": [
+        {
+          "ja": "大雨によって、電車が止まりました。",
+          "reading": "おおあめによって、でんしゃがとまりました。",
+          "translation": {
+            "vi": "Do mưa lớn, tàu điện đã dừng chạy.",
+            "en": "Trains stopped because of the heavy rain."
+          }
+        },
+        {
+          "ja": "事故により、道路が通れなくなりました。",
+          "reading": "じこにより、どうろがとおれなくなりました。",
+          "translation": {
+            "vi": "Do tai nạn, con đường đã không thể đi qua.",
+            "en": "Due to an accident, the road became impassable."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-022"
+    },
+    {
+      "japanese": "〜ことから",
+      "meaning": {
+        "vi": "Từ việc ~ (căn cứ/lý do)",
+        "en": "From the fact that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な, danh từ: である) + ことから. Nêu căn cứ để suy ra kết luận (…ということがわかる) hoặc lý do đặt tên, nguồn gốc. Văn viết.",
+        "en": "Usage: plain form (な-adjective: な; noun: である) + ことから. Gives the grounds for a conclusion (…ということがわかる) or the reason for a name or origin. Written style."
+      },
+      "examples": [
+        {
+          "ja": "足跡が残っていたことから、犯人が逃げたとわかりました。",
+          "reading": "あしあとがのこっていたことから、はんにんがにげたとわかりました。",
+          "translation": {
+            "vi": "Từ việc dấu chân còn lại, người ta biết thủ phạm đã bỏ trốn.",
+            "en": "From the fact that footprints remained, it was clear the culprit had fled."
+          }
+        },
+        {
+          "ja": "この道は、桜が多いことから、桜通りと呼ばれています。",
+          "reading": "このみちは、さくらがおおいことから、さくらどおりとよばれています。",
+          "translation": {
+            "vi": "Con đường này có nhiều hoa anh đào nên được gọi là phố Anh Đào.",
+            "en": "This road is called Cherry Blossom Street because it has many cherry trees."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-023"
+    },
+    {
+      "japanese": "〜わけだ",
+      "meaning": {
+        "vi": "Thảo nào ~, nghĩa là ~",
+        "en": "No wonder ~; that is why ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な, danh từ: という/の) + わけだ. Rút ra kết luận hợp lý từ sự thật vừa biết (\"thảo nào…\"), hoặc diễn đạt lại theo cách khác (\"tức là…\"). Khác 〜はずだ: はずだ là suy đoán trước, わけだ là hiểu ra sau.",
+        "en": "Usage: plain form (な: な, noun: という/の) + わけだ. Draws a logical conclusion from a fact just learned (\"no wonder…\") or restates something (\"that means…\"). Unlike 〜はずだ (a prior expectation), わけだ is a realization afterward."
+      },
+      "examples": [
+        {
+          "ja": "三年も日本にいたのか。日本語が上手なわけだ。",
+          "reading": "さんねんもにほんにいたのか。にほんごがじょうずなわけだ。",
+          "translation": {
+            "vi": "Ở Nhật tới ba năm à. Thảo nào tiếng Nhật giỏi.",
+            "en": "He was in Japan for three years. No wonder his Japanese is good."
+          }
+        },
+        {
+          "ja": "十年間運動を続けているそうです。体が強いわけです。",
+          "reading": "じゅうねんかんうんどうをつづけているそうです。からだがつよいわけです。",
+          "translation": {
+            "vi": "Nghe nói anh ấy tập thể thao suốt mười năm. Thảo nào cơ thể khỏe.",
+            "en": "I hear he has exercised for ten years. No wonder he is strong."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-024"
+    },
+    {
+      "japanese": "〜ものだから／〜もんだから",
+      "meaning": {
+        "vi": "Vì ~ mà (biện minh)",
+        "en": "Because ~ (excuse)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な, danh từ: な) + ものだから (khẩu ngữ もんだから, lịch sự ものですから). Nêu lý do mang tính biện minh, giải thích cho kết quả không mong muốn. Vế sau không dùng mệnh lệnh, nhờ vả, ý chí.",
+        "en": "Usage: plain form (な: な, noun: な) + ものだから (casual もんだから, polite ものですから). Gives a reason as an excuse or explanation for an undesired result. The second clause cannot be a command, request or volition."
+      },
+      "examples": [
+        {
+          "ja": "道が込んでいたものだから、遅れてしまいました。",
+          "reading": "みちがこんでいたものだから、おくれてしまいました。",
+          "translation": {
+            "vi": "Vì đường đông nên tôi đã đến trễ.",
+            "en": "The road was crowded, so I was late."
+          }
+        },
+        {
+          "ja": "急いでいたものですから、連絡できませんでした。",
+          "reading": "いそいでいたものですから、れんらくできませんでした。",
+          "translation": {
+            "vi": "Vì đang vội nên tôi đã không thể liên lạc.",
+            "en": "I was in a hurry, so I could not get in touch."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-025"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜によって／〜により（原因）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n大雨（　）、電車が止まりました。",
+        "en": "Choose the correct option for the blank:\n大雨（　）、電車が止まりました。"
+      },
+      "payload": {
+        "choices": [
+          "によると",
+          "にとって",
+          "によって",
+          "に対して"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nguyên nhân khách quan (mưa lớn) dùng 「によって」.",
+        "en": "Correct! An objective cause (heavy rain) uses 「によって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nguyên nhân khách quan (mưa lớn) dùng 「によって」.",
+        "en": "Not quite. An objective cause (heavy rain) uses 「によって」."
+      }
+    },
+    {
+      "item": "〜によって／〜により（原因）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n事故___、道路が通れなくなりました。",
+        "en": "Choose the correct option for the blank:\n事故___、道路が通れなくなりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "により",
+          "によって"
+        ],
+        "hint": "〜により"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nguyên nhân văn viết: 「事故により」 (hoặc 「事故によって」).",
+        "en": "Correct! A written-style cause: 「事故により」 (or 「事故によって」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nguyên nhân văn viết: 「事故により」 (hoặc 「事故によって」).",
+        "en": "Not quite. A written-style cause: 「事故により」 (or 「事故によって」)."
+      }
+    },
+    {
+      "item": "〜によって／〜により（原因）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "台風によって、多くの家が被害を受けましょう。",
+          "台風によって、多くの家が被害を受けました。",
+          "台風によって、多くの家が被害を受けてください。",
+          "台風によって、多くの家が被害を受けたい。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「によって」 (nguyên nhân) là câu kể sự việc; không dùng rủ rê, nhờ vả hay ý chí.",
+        "en": "Correct! After 「によって」 (a cause) comes a statement of fact; no invitation, request or volition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「によって」 (nguyên nhân) là câu kể sự việc; không dùng rủ rê, nhờ vả hay ý chí.",
+        "en": "Not quite. After 「によって」 (a cause) comes a statement of fact; no invitation, request or volition."
+      }
+    },
+    {
+      "item": "〜ことから",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n足跡が残っていた（　）、犯人が逃げたとわかりました。",
+        "en": "Choose the correct option for the blank:\n足跡が残っていた（　）、犯人が逃げたとわかりました。"
+      },
+      "payload": {
+        "choices": [
+          "ことから",
+          "ことが",
+          "ことは",
+          "ことと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Căn cứ để suy ra kết luận dùng 「ことから」.",
+        "en": "Correct! The grounds for a conclusion use 「ことから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Căn cứ để suy ra kết luận dùng 「ことから」.",
+        "en": "Not quite. The grounds for a conclusion use 「ことから」."
+      }
+    },
+    {
+      "item": "〜ことから",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n桜が多い___、桜通りと呼ばれています。",
+        "en": "Choose the correct option for the blank:\n桜が多い___、桜通りと呼ばれています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ことから"
+        ],
+        "hint": "〜ことから"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lý do đặt tên: 「多いことから」.",
+        "en": "Correct! The reason for the name: 「多いことから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lý do đặt tên: 「多いことから」.",
+        "en": "Not quite. The reason for the name: 「多いことから」."
+      }
+    },
+    {
+      "item": "〜ことから",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "道が狭いことがら、車は入れません。",
+          "道が狭いことを、車は入れません。",
+          "道が狭いことの、車は入れません。",
+          "道が狭いことから、車は入れません。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu cố định 「〜ことから」 (không đổi thành ことがら).",
+        "en": "Correct! The fixed pattern 「〜ことから」 (not ことがら)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu cố định 「〜ことから」 (không đổi thành ことがら).",
+        "en": "Not quite. The fixed pattern 「〜ことから」 (not ことがら)."
+      }
+    },
+    {
+      "item": "〜わけだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n三年も日本にいたのか。日本語が上手な（　）だ。",
+        "en": "Choose the correct option for the blank:\n三年も日本にいたのか。日本語が上手な（　）だ。"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "まま",
+          "わけ",
+          "ばかり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hiểu ra lý do hợp lý (\"thảo nào\"): 「上手なわけだ」.",
+        "en": "Correct! Realizing a logical reason (\"no wonder\"): 「上手なわけだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hiểu ra lý do hợp lý (\"thảo nào\"): 「上手なわけだ」.",
+        "en": "Not quite. Realizing a logical reason (\"no wonder\"): 「上手なわけだ」."
+      }
+    },
+    {
+      "item": "〜わけだ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n毎日運動しているのか。体が強い___です。",
+        "en": "Choose the correct option for the blank:\n毎日運動しているのか。体が強い___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "わけ"
+        ],
+        "hint": "〜わけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kết luận hợp lý từ điều vừa biết: 「強いわけです」.",
+        "en": "Correct! A logical conclusion from what was just learned: 「強いわけです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kết luận hợp lý từ điều vừa biết: 「強いわけです」.",
+        "en": "Not quite. A logical conclusion from what was just learned: 「強いわけです」."
+      }
+    },
+    {
+      "item": "〜わけだ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "十年住んでいるなら、日本語が上手なわけがだ。",
+          "十年住んでいるなら、日本語が上手なわけだ。",
+          "十年住んでいるなら、日本語が上手のわけだ。",
+          "十年住んでいるなら、日本語が上手わけだ。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ な + 「な」 + 「わけだ」: 「上手なわけだ」.",
+        "en": "Correct! A な-adjective + 「な」 + 「わけだ」: 「上手なわけだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ な + 「な」 + 「わけだ」: 「上手なわけだ」.",
+        "en": "Not quite. A な-adjective + 「な」 + 「わけだ」: 「上手なわけだ」."
+      }
+    },
+    {
+      "item": "〜ものだから／〜もんだから",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n道が込んでいた（　）、遅れてしまいました。",
+        "en": "Choose the correct option for the blank:\n道が込んでいた（　）、遅れてしまいました。"
+      },
+      "payload": {
+        "choices": [
+          "ものだから",
+          "ものので",
+          "ものに",
+          "ものを"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Biện minh cho việc đến trễ: 「〜ものだから」.",
+        "en": "Correct! An excuse for being late: 「〜ものだから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Biện minh cho việc đến trễ: 「〜ものだから」.",
+        "en": "Not quite. An excuse for being late: 「〜ものだから」."
+      }
+    },
+    {
+      "item": "〜ものだから／〜もんだから",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n急いでいたもの___、連絡できませんでした。",
+        "en": "Choose the correct option for the blank:\n急いでいたもの___、連絡できませんでした。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ですから"
+        ],
+        "hint": "〜ですから"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dạng lịch sự: 「ものですから」.",
+        "en": "Correct! The polite form: 「ものですから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dạng lịch sự: 「ものですから」.",
+        "en": "Not quite. The polite form: 「ものですから」."
+      }
+    },
+    {
+      "item": "〜ものだから／〜もんだから",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n電車が遅れた（　）、遅刻してしまいました。",
+        "en": "Choose the pattern that best fits the context:\n電車が遅れた（　）、遅刻してしまいました。"
+      },
+      "payload": {
+        "choices": [
+          "ものの",
+          "ものを",
+          "ものなら",
+          "ものだから"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Biện minh cho việc lỡ làm (遅刻): 「ものだから」.",
+        "en": "Correct! An excuse for having done something (being late): 「ものだから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Biện minh cho việc lỡ làm (遅刻): 「ものだから」.",
+        "en": "Not quite. An excuse for having done something (being late): 「ものだから」."
+      }
+    },
+    {
+      "item": "〜ものだから／〜もんだから",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "寝坊したものだから、遅れてください。",
+          "寝坊したものだから、遅れましょう。",
+          "寝坊したものだから、遅れました。",
+          "寝坊したものだから、遅れなさい。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「ものだから」 không dùng nhờ vả, rủ rê hay mệnh lệnh; chỉ câu kể 「遅れました」.",
+        "en": "Correct! After 「ものだから」 requests, invitations and commands are not used; only the statement 「遅れました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「ものだから」 không dùng nhờ vả, rủ rê hay mệnh lệnh; chỉ câu kể 「遅れました」.",
+        "en": "Not quite. After 「ものだから」 requests, invitations and commands are not used; only the statement 「遅れました」."
+      }
+    },
+    {
+      "item": "〜ものだから／〜もんだから",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n道が　＿　＿　★　＿　。\n（込んで／いた／ものだから／遅れてしまいました）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n道が　＿　＿　★　＿　。\n（込んで／いた／ものだから／遅れてしまいました）"
+      },
+      "payload": {
+        "choices": [
+          "込んで",
+          "ものだから",
+          "いた",
+          "遅れてしまいました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「道が込んでいたものだから、遅れてしまいました。」; ô ★ (thứ ba) là 「ものだから」.",
+        "en": "Correct! The correct sentence is 「道が込んでいたものだから、遅れてしまいました。」; the ★ (third) slot is 「ものだから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「道が込んでいたものだから、遅れてしまいました。」; ô ★ (thứ ba) là 「ものだから」.",
+        "en": "Not quite. The correct sentence is 「道が込んでいたものだから、遅れてしまいました。」; the ★ (third) slot is 「ものだから」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜によって／〜により（原因）",
+            {
+              "vi": "Do ~, bởi ~",
+              "en": "Due to ~"
+            }
+          ],
+          [
+            "〜ことから",
+            {
+              "vi": "Từ việc ~ (căn cứ/lý do)",
+              "en": "From the fact that ~"
+            }
+          ],
+          [
+            "〜わけだ",
+            {
+              "vi": "Thảo nào ~, nghĩa là ~",
+              "en": "No wonder ~; that is why ~"
+            }
+          ],
+          [
+            "〜ものだから／〜もんだから",
+            {
+              "vi": "Vì ~ mà (biện minh)",
+              "en": "Because ~ (excuse)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (権 判 証)",
+    "en": "Law and order kanji (権 判 証)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "権",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "quyền; quyền lực",
+        "en": "right; authority"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン",
+          "ゴン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "権利",
+          "reading": "けんり",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "quyền lợi",
+            "en": "right"
+          }
+        },
+        {
+          "ja": "人権",
+          "reading": "じんけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "nhân quyền",
+            "en": "human rights"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "判",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "phán; đóng dấu",
+        "en": "judge; seal"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン",
+          "バン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "判断",
+          "reading": "はんだん",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "phán đoán",
+            "en": "judgment"
+          }
+        },
+        {
+          "ja": "裁判",
+          "reading": "さいばん",
+          "kanjiReading": "バン",
+          "translation": {
+            "vi": "xét xử",
+            "en": "trial"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "証",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "chứng; bằng chứng",
+        "en": "prove; evidence"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "あかし"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "証明",
+          "reading": "しょうめい",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "chứng minh",
+            "en": "proof"
+          }
+        },
+        {
+          "ja": "保証",
+          "reading": "ほしょう",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "bảo đảm",
+            "en": "guarantee"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "権",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「権」nghĩa là gì?",
+        "en": "What does 「権」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quyền; quyền lực",
+            "en": "right; authority"
+          },
+          {
+            "vi": "phán; đóng dấu",
+            "en": "judge; seal"
+          },
+          {
+            "vi": "chứng; bằng chứng",
+            "en": "prove; evidence"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 権 nghĩa là quyền; quyền lực.",
+        "en": "Correct! 権 means right; authority."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 権 nghĩa là quyền; quyền lực, như trong 「権利」 (quyền lợi).",
+        "en": "Not quite. 権 means right; authority, as in 「権利」 (right)."
+      }
+    },
+    {
+      "item": "権",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「権」 trong 「権利」 (“quyền lợi”).",
+        "en": "Type the reading of 「権」 in 「権利」 (“right”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 権利, 権 đọc là けん (âm On).",
+        "en": "Correct! In 権利, 権 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 権利 (quyền lợi), 権 đọc là けん (âm On).",
+        "en": "In 権利 (right), 権 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "権",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「人権」(nhân quyền) đọc là gì?",
+        "en": "How is 「人権」 (human rights) read?"
+      },
+      "payload": {
+        "choices": [
+          "じんごん",
+          "じんけん",
+          "じんげん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 人権 = じんけん (nhân quyền); 権 đọc là けん (âm On).",
+        "en": "Correct! 人権 = じんけん (human rights); 権 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "人権 đọc là じんけん (nhân quyền): 権 mang âm On けん.",
+        "en": "人権 is read じんけん (human rights): 権 takes the on'yomi けん."
+      }
+    },
+    {
+      "item": "判",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「判」nghĩa là gì?",
+        "en": "What does 「判」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chứng; bằng chứng",
+            "en": "prove; evidence"
+          },
+          {
+            "vi": "phán; đóng dấu",
+            "en": "judge; seal"
+          },
+          {
+            "vi": "quyền; quyền lực",
+            "en": "right; authority"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 判 nghĩa là phán; đóng dấu.",
+        "en": "Correct! 判 means judge; seal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 判 nghĩa là phán; đóng dấu, như trong 「判断」 (phán đoán).",
+        "en": "Not quite. 判 means judge; seal, as in 「判断」 (judgment)."
+      }
+    },
+    {
+      "item": "判",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「判」 trong 「判断」 (“phán đoán”).",
+        "en": "Type the reading of 「判」 in 「判断」 (“judgment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はん",
+          "ハン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 判断, 判 đọc là はん (âm On).",
+        "en": "Correct! In 判断, 判 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 判断 (phán đoán), 判 đọc là はん (âm On).",
+        "en": "In 判断 (judgment), 判 is read はん (on'yomi)."
+      }
+    },
+    {
+      "item": "判",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「裁判」(xét xử) đọc là gì?",
+        "en": "How is 「裁判」 (trial) read?"
+      },
+      "payload": {
+        "choices": [
+          "さいはん",
+          "さいあかし",
+          "さいばん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 裁判 = さいばん (xét xử); 判 đọc là ばん (âm On).",
+        "en": "Correct! 裁判 = さいばん (trial); 判 is read ばん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "裁判 đọc là さいばん (xét xử): 判 mang âm On ばん.",
+        "en": "裁判 is read さいばん (trial): 判 takes the on'yomi ばん."
+      }
+    },
+    {
+      "item": "証",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「証」nghĩa là gì?",
+        "en": "What does 「証」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quyền; quyền lực",
+            "en": "right; authority"
+          },
+          {
+            "vi": "phán; đóng dấu",
+            "en": "judge; seal"
+          },
+          {
+            "vi": "chứng; bằng chứng",
+            "en": "prove; evidence"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 証 nghĩa là chứng; bằng chứng.",
+        "en": "Correct! 証 means prove; evidence."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 証 nghĩa là chứng; bằng chứng, như trong 「証明」 (chứng minh).",
+        "en": "Not quite. 証 means prove; evidence, as in 「証明」 (proof)."
+      }
+    },
+    {
+      "item": "証",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「証」 trong 「証明」 (“chứng minh”).",
+        "en": "Type the reading of 「証」 in 「証明」 (“proof”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 証明, 証 đọc là しょう (âm On).",
+        "en": "Correct! In 証明, 証 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 証明 (chứng minh), 証 đọc là しょう (âm On).",
+        "en": "In 証明 (proof), 証 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "証",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保証」(bảo đảm) đọc là gì?",
+        "en": "How is 「保証」 (guarantee) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほしょう",
+          "ほあかし",
+          "ほじょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保証 = ほしょう (bảo đảm); 証 đọc là しょう (âm On).",
+        "en": "Correct! 保証 = ほしょう (guarantee); 証 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "保証 đọc là ほしょう (bảo đảm): 証 mang âm On しょう.",
+        "en": "保証 is read ほしょう (guarantee): 証 takes the on'yomi しょう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "権",
+            {
+              "vi": "quyền; quyền lực",
+              "en": "right; authority"
+            }
+          ],
+          [
+            "判",
+            {
+              "vi": "phán; đóng dấu",
+              "en": "judge; seal"
+            }
+          ],
+          [
+            "証",
+            {
+              "vi": "chứng; bằng chứng",
+              "en": "prove; evidence"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

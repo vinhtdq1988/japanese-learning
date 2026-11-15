@@ -1,0 +1,153 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N5",
+  "tier": "core",
+  "topic": "reading-n5-daily-life",
+  "title": {
+    "vi": "Đọc: Đi mua sắm cuối tuần",
+    "en": "Reading: Weekend shopping"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 210,
+  "items": [
+    {
+      "japanese": "日曜日、わたしは友だちと駅の近くのスーパーへ行きました。スーパーは朝十時に開きます。わたしたちは野菜と肉と牛乳を買いました。りんごは一つ百円で、とても安かったです。それから、近くの喫茶店でコーヒーを飲みました。友だちはケーキも食べました。午後三時に家へ帰りました。",
+      "meaning": {
+        "vi": "Chủ nhật, tôi cùng bạn đến siêu thị gần ga. Siêu thị mở cửa lúc 10 giờ sáng. Chúng tôi mua rau, thịt và sữa. Táo 100 yên một quả, rất rẻ. Sau đó chúng tôi uống cà phê ở quán cà phê gần đó. Bạn tôi còn ăn cả bánh ngọt. Chúng tôi về nhà lúc 3 giờ chiều.",
+        "en": "On Sunday I went to a supermarket near the station with a friend. The supermarket opens at ten in the morning. We bought vegetables, meat and milk. Apples were 100 yen each, which was very cheap. After that we drank coffee at a nearby café. My friend ate cake too. We went home at three in the afternoon."
+      },
+      "reading": "にちようび、わたしはともだちとえきのちかくのスーパーへいきました。スーパーはあさじゅうじにあきます。わたしたちはやさいとにくとぎゅうにゅうをかいました。りんごはひとつひゃくえんで、とてもやすかったです。それから、ちかくのきっさてんでコーヒーをのみました。ともだちはケーキもたべました。ごごさんじにいえへかえりました。",
+      "explanation": {
+        "vi": "「～と」nghĩa là \"cùng với\" (友だちと); 「それから」nối các việc xảy ra lần lượt; tính từ đuôi い ở quá khứ: 安かったです.",
+        "en": "「～と」 means \"together with\" (友だちと); 「それから」 links actions in order; past of an い-adjective: 安かったです."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người viết đi siêu thị cùng ai?",
+        "en": "Who did the writer go to the supermarket with?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gia đình",
+            "en": "Family"
+          },
+          {
+            "vi": "Một người bạn",
+            "en": "A friend"
+          },
+          {
+            "vi": "Đồng nghiệp",
+            "en": "A coworker"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn nói 友だちと駅の近くのスーパーへ行きました.",
+        "en": "Correct! The text says 友だちと駅の近くのスーパーへ行きました."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 友だちと nghĩa là \"cùng với bạn\".",
+        "en": "Not quite. 友だちと means \"with a friend\"."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Họ đã mua những gì?",
+        "en": "What did they buy?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cá, trứng và gạo",
+            "en": "Fish, eggs and rice"
+          },
+          {
+            "vi": "Rau, cá và bánh mì",
+            "en": "Vegetables, fish and bread"
+          },
+          {
+            "vi": "Rau, thịt và sữa",
+            "en": "Vegetables, meat and milk"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 野菜と肉と牛乳を買いました.",
+        "en": "Correct! 野菜と肉と牛乳を買いました."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Họ mua 野菜 (rau), 肉 (thịt) và 牛乳 (sữa).",
+        "en": "Not quite. They bought 野菜 (vegetables), 肉 (meat) and 牛乳 (milk)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Một quả táo giá bao nhiêu?",
+        "en": "How much was one apple?"
+      },
+      "payload": {
+        "choices": [
+          "50円",
+          "100円",
+          "200円"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! りんごは一つ百円で、とても安かったです.",
+        "en": "Correct! りんごは一つ百円で、とても安かったです."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 百円 là 100 yên.",
+        "en": "Not quite. 百円 is 100 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sau khi mua đồ, họ làm gì?",
+        "en": "What did they do after shopping?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Uống cà phê ở quán gần đó",
+            "en": "Drank coffee at a nearby café"
+          },
+          {
+            "vi": "Về nhà ngay",
+            "en": "Went straight home"
+          },
+          {
+            "vi": "Đi xem phim",
+            "en": "Went to see a movie"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! それから、近くの喫茶店でコーヒーを飲みました.",
+        "en": "Correct! それから、近くの喫茶店でコーヒーを飲みました."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau đó (それから) họ uống cà phê ở quán gần đó, rồi mới về nhà lúc 3 giờ chiều.",
+        "en": "Not quite. After that (それから) they drank coffee at a nearby café, and only then went home at 3 p.m."
+      }
+    }
+  ]
+}

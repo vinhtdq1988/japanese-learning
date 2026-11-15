@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (問 題 質 答)",
+    "en": "School and learning kanji (問 題 質 答)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "問",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "hỏi; vấn đề",
+        "en": "ask; question"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "モン"
+        ],
+        "kunReadings": [
+          "と.う",
+          "と.い"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "質問",
+          "reading": "しつもん",
+          "kanjiReading": "モン",
+          "translation": {
+            "vi": "câu hỏi",
+            "en": "question"
+          }
+        },
+        {
+          "ja": "問い",
+          "reading": "とい",
+          "kanjiReading": "と",
+          "translation": {
+            "vi": "câu hỏi",
+            "en": "inquiry"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "題",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "đề; chủ đề",
+        "en": "topic; title"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 18
+      },
+      "examples": [
+        {
+          "ja": "問題",
+          "reading": "もんだい",
+          "kanjiReading": "ダイ",
+          "translation": {
+            "vi": "vấn đề; bài tập",
+            "en": "problem"
+          }
+        },
+        {
+          "ja": "宿題",
+          "reading": "しゅくだい",
+          "kanjiReading": "ダイ",
+          "translation": {
+            "vi": "bài tập về nhà",
+            "en": "homework"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "質",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "chất; bản chất",
+        "en": "quality; nature"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シツ",
+          "シチ",
+          "チ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "質問",
+          "reading": "しつもん",
+          "kanjiReading": "シツ",
+          "translation": {
+            "vi": "câu hỏi",
+            "en": "question"
+          }
+        },
+        {
+          "ja": "品質",
+          "reading": "ひんしつ",
+          "kanjiReading": "シツ",
+          "translation": {
+            "vi": "chất lượng",
+            "en": "quality"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "答",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "trả lời; đáp án",
+        "en": "answer"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "こた.える",
+          "こた.え"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "答え",
+          "reading": "こたえ",
+          "kanjiReading": "こた",
+          "translation": {
+            "vi": "đáp án",
+            "en": "answer"
+          }
+        },
+        {
+          "ja": "回答",
+          "reading": "かいとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "câu trả lời",
+            "en": "reply"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "問",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「問」nghĩa là gì?",
+        "en": "What does 「問」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hỏi; vấn đề",
+            "en": "ask; question"
+          },
+          {
+            "vi": "đề; chủ đề",
+            "en": "topic; title"
+          },
+          {
+            "vi": "chất; bản chất",
+            "en": "quality; nature"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 問 nghĩa là hỏi; vấn đề.",
+        "en": "Correct! 問 means ask; question."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 問 nghĩa là hỏi; vấn đề, như trong 「質問」 (câu hỏi).",
+        "en": "Not quite. 問 means ask; question, as in 「質問」 (question)."
+      }
+    },
+    {
+      "item": "問",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「問」 trong 「質問」 (“câu hỏi”).",
+        "en": "Type the reading of 「問」 in 「質問」 (“question”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "もん",
+          "モン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 質問, 問 đọc là もん (âm On).",
+        "en": "Correct! In 質問, 問 is read もん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 質問 (câu hỏi), 問 đọc là もん (âm On).",
+        "en": "In 質問 (question), 問 is read もん (on'yomi)."
+      }
+    },
+    {
+      "item": "問",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「問い」(câu hỏi) đọc là gì?",
+        "en": "How is 「問い」 (inquiry) read?"
+      },
+      "payload": {
+        "choices": [
+          "もんい",
+          "とい",
+          "こたえ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 問い = とい (câu hỏi); 問 đọc là と (âm Kun).",
+        "en": "Correct! 問い = とい (inquiry); 問 is read と (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "問い đọc là とい (câu hỏi): 問 mang âm Kun と.",
+        "en": "問い is read とい (inquiry): 問 takes the kun'yomi と."
+      }
+    },
+    {
+      "item": "題",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「題」nghĩa là gì?",
+        "en": "What does 「題」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chất; bản chất",
+            "en": "quality; nature"
+          },
+          {
+            "vi": "đề; chủ đề",
+            "en": "topic; title"
+          },
+          {
+            "vi": "trả lời; đáp án",
+            "en": "answer"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 題 nghĩa là đề; chủ đề.",
+        "en": "Correct! 題 means topic; title."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 題 nghĩa là đề; chủ đề, như trong 「問題」 (vấn đề; bài tập).",
+        "en": "Not quite. 題 means topic; title, as in 「問題」 (problem)."
+      }
+    },
+    {
+      "item": "題",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「題」 trong 「問題」 (“vấn đề; bài tập”).",
+        "en": "Type the reading of 「題」 in 「問題」 (“problem”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だい",
+          "ダイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 問題, 題 đọc là だい (âm On).",
+        "en": "Correct! In 問題, 題 is read だい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 問題 (vấn đề; bài tập), 題 đọc là だい (âm On).",
+        "en": "In 問題 (problem), 題 is read だい (on'yomi)."
+      }
+    },
+    {
+      "item": "題",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「宿題」(bài tập về nhà) đọc là gì?",
+        "en": "How is 「宿題」 (homework) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅくたい",
+          "しゅくしつ",
+          "しゅくだい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 宿題 = しゅくだい (bài tập về nhà); 題 đọc là だい (âm On).",
+        "en": "Correct! 宿題 = しゅくだい (homework); 題 is read だい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "宿題 đọc là しゅくだい (bài tập về nhà): 題 mang âm On だい.",
+        "en": "宿題 is read しゅくだい (homework): 題 takes the on'yomi だい."
+      }
+    },
+    {
+      "item": "質",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「質」nghĩa là gì?",
+        "en": "What does 「質」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trả lời; đáp án",
+            "en": "answer"
+          },
+          {
+            "vi": "hỏi; vấn đề",
+            "en": "ask; question"
+          },
+          {
+            "vi": "chất; bản chất",
+            "en": "quality; nature"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 質 nghĩa là chất; bản chất.",
+        "en": "Correct! 質 means quality; nature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 質 nghĩa là chất; bản chất, như trong 「質問」 (câu hỏi).",
+        "en": "Not quite. 質 means quality; nature, as in 「質問」 (question)."
+      }
+    },
+    {
+      "item": "質",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「質」 trong 「質問」 (“câu hỏi”).",
+        "en": "Type the reading of 「質」 in 「質問」 (“question”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しつ",
+          "シツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 質問, 質 đọc là しつ (âm On).",
+        "en": "Correct! In 質問, 質 is read しつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 質問 (câu hỏi), 質 đọc là しつ (âm On).",
+        "en": "In 質問 (question), 質 is read しつ (on'yomi)."
+      }
+    },
+    {
+      "item": "質",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「品質」(chất lượng) đọc là gì?",
+        "en": "How is 「品質」 (quality) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひんしつ",
+          "ひんしち",
+          "ひんじつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 品質 = ひんしつ (chất lượng); 質 đọc là しつ (âm On).",
+        "en": "Correct! 品質 = ひんしつ (quality); 質 is read しつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "品質 đọc là ひんしつ (chất lượng): 質 mang âm On しつ.",
+        "en": "品質 is read ひんしつ (quality): 質 takes the on'yomi しつ."
+      }
+    },
+    {
+      "item": "答",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「答」nghĩa là gì?",
+        "en": "What does 「答」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trả lời; đáp án",
+            "en": "answer"
+          },
+          {
+            "vi": "hỏi; vấn đề",
+            "en": "ask; question"
+          },
+          {
+            "vi": "đề; chủ đề",
+            "en": "topic; title"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 答 nghĩa là trả lời; đáp án.",
+        "en": "Correct! 答 means answer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 答 nghĩa là trả lời; đáp án, như trong 「答え」 (đáp án).",
+        "en": "Not quite. 答 means answer, as in 「答え」 (answer)."
+      }
+    },
+    {
+      "item": "答",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「答」 trong 「答え」 (“đáp án”).",
+        "en": "Type the reading of 「答」 in 「答え」 (“answer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こた",
+          "コタ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 答え, 答 đọc là こた (âm Kun).",
+        "en": "Correct! In 答え, 答 is read こた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 答え (đáp án), 答 đọc là こた (âm Kun).",
+        "en": "In 答え (answer), 答 is read こた (kun'yomi)."
+      }
+    },
+    {
+      "item": "答",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「回答」(câu trả lời) đọc là gì?",
+        "en": "How is 「回答」 (reply) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいこた",
+          "かいとう",
+          "かいどう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 回答 = かいとう (câu trả lời); 答 đọc là とう (âm On).",
+        "en": "Correct! 回答 = かいとう (reply); 答 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "回答 đọc là かいとう (câu trả lời): 答 mang âm On とう.",
+        "en": "回答 is read かいとう (reply): 答 takes the on'yomi とう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "問",
+            {
+              "vi": "hỏi; vấn đề",
+              "en": "ask; question"
+            }
+          ],
+          [
+            "題",
+            {
+              "vi": "đề; chủ đề",
+              "en": "topic; title"
+            }
+          ],
+          [
+            "質",
+            {
+              "vi": "chất; bản chất",
+              "en": "quality; nature"
+            }
+          ],
+          [
+            "答",
+            {
+              "vi": "trả lời; đáp án",
+              "en": "answer"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

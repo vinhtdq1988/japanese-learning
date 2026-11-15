@@ -1,0 +1,681 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-it-internet",
+  "title": {
+    "vi": "Hệ thống và bảo mật",
+    "en": "Systems and security"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "情報",
+      "reading": "じょうほう",
+      "meaning": {
+        "vi": "Thông tin",
+        "en": "Information"
+      },
+      "examples": [
+        {
+          "ja": "インターネットで、旅行の情報を調べました。",
+          "reading": "インターネットで、りょこうのじょうほうをしらべました。",
+          "translation": {
+            "vi": "Tôi đã tra cứu thông tin du lịch trên mạng.",
+            "en": "I looked up travel information on the internet."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "システム",
+      "reading": "システム",
+      "meaning": {
+        "vi": "Hệ thống",
+        "en": "System"
+      },
+      "examples": [
+        {
+          "ja": "新しいシステムに変わって、仕事が早くなりました。",
+          "reading": "あたらしいシステムにかわって、しごとがはやくなりました。",
+          "translation": {
+            "vi": "Chuyển sang hệ thống mới nên công việc nhanh hơn.",
+            "en": "We switched to a new system, and work got faster."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "プログラム",
+      "reading": "プログラム",
+      "meaning": {
+        "vi": "Chương trình (máy tính)",
+        "en": "Program"
+      },
+      "examples": [
+        {
+          "ja": "このプログラムを使うと、計算が簡単です。",
+          "reading": "このプログラムをつかうと、けいさんがかんたんです。",
+          "translation": {
+            "vi": "Dùng chương trình này thì tính toán rất dễ.",
+            "en": "With this program, calculations are easy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ネットワーク",
+      "reading": "ネットワーク",
+      "meaning": {
+        "vi": "Mạng lưới",
+        "en": "Network"
+      },
+      "examples": [
+        {
+          "ja": "会社のネットワークに、新しいパソコンをつなぎました。",
+          "reading": "かいしゃのネットワークに、あたらしいパソコンをつなぎました。",
+          "translation": {
+            "vi": "Tôi đã kết nối máy tính mới vào mạng của công ty.",
+            "en": "I connected the new computer to the company network."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "サーバー",
+      "reading": "サーバー",
+      "meaning": {
+        "vi": "Máy chủ",
+        "en": "Server"
+      },
+      "examples": [
+        {
+          "ja": "サーバーの調子が悪くて、サイトが見られません。",
+          "reading": "サーバーのちょうしがわるくて、サイトがみられません。",
+          "translation": {
+            "vi": "Máy chủ trục trặc nên không xem được trang web.",
+            "en": "The server is acting up, so I cannot view the site."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ウイルス",
+      "reading": "ウイルス",
+      "meaning": {
+        "vi": "Vi-rút",
+        "en": "Virus"
+      },
+      "examples": [
+        {
+          "ja": "パソコンが、ウイルスに感染してしまいました。",
+          "reading": "パソコンが、ウイルスにかんせんしてしまいました。",
+          "translation": {
+            "vi": "Máy tính của tôi đã bị nhiễm vi-rút.",
+            "en": "My computer got infected with a virus."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "セキュリティ",
+      "reading": "セキュリティ",
+      "meaning": {
+        "vi": "An ninh; bảo mật",
+        "en": "Security"
+      },
+      "examples": [
+        {
+          "ja": "セキュリティのために、定期的に設定を見直します。",
+          "reading": "セキュリティのために、ていきてきにせっていをみなおします。",
+          "translation": {
+            "vi": "Vì bảo mật, tôi xem lại thiết lập định kỳ.",
+            "en": "For security, I review the settings regularly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "パスワード",
+      "reading": "パスワード",
+      "meaning": {
+        "vi": "Mật khẩu",
+        "en": "Password"
+      },
+      "examples": [
+        {
+          "ja": "パスワードは、定期的に変えたほうがいいです。",
+          "reading": "パスワードは、ていきてきにかえたほうがいいです。",
+          "translation": {
+            "vi": "Nên đổi mật khẩu định kỳ.",
+            "en": "It is better to change your password regularly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ログイン",
+      "reading": "ログイン",
+      "meaning": {
+        "vi": "Đăng nhập",
+        "en": "Log in"
+      },
+      "examples": [
+        {
+          "ja": "名前とパスワードを入れて、ログインします。",
+          "reading": "なまえとパスワードをいれて、ログインします。",
+          "translation": {
+            "vi": "Nhập tên và mật khẩu để đăng nhập.",
+            "en": "Enter your name and password to log in."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "アカウント",
+      "reading": "アカウント",
+      "meaning": {
+        "vi": "Tài khoản (trên mạng)",
+        "en": "Account"
+      },
+      "examples": [
+        {
+          "ja": "サイトに、新しいアカウントを作りました。",
+          "reading": "サイトに、あたらしいアカウントをつくりました。",
+          "translation": {
+            "vi": "Tôi đã tạo tài khoản mới trên trang web.",
+            "en": "I created a new account on the site."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "認証",
+      "reading": "にんしょう",
+      "meaning": {
+        "vi": "Xác thực",
+        "en": "Authentication"
+      },
+      "examples": [
+        {
+          "ja": "二段階の認証で、安全に使うことができます。",
+          "reading": "にだんかいのにんしょうで、あんぜんにつかうことができます。",
+          "translation": {
+            "vi": "Nhờ xác thực hai bước nên có thể dùng an toàn.",
+            "en": "Two-step authentication lets you use it safely."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "解除",
+      "reading": "かいじょ",
+      "meaning": {
+        "vi": "Gỡ bỏ; hủy (khóa)",
+        "en": "Release; cancellation (of a lock)"
+      },
+      "examples": [
+        {
+          "ja": "画面のロックを、指で解除しました。",
+          "reading": "がめんのロックを、ゆびでかいじょしました。",
+          "translation": {
+            "vi": "Tôi đã mở khóa màn hình bằng ngón tay.",
+            "en": "I unlocked the screen with my finger."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "情報",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: インターネットで、旅行の（　）を調べました。 — Nghĩa của câu: “Tôi đã tra cứu thông tin du lịch trên mạng.”",
+        "en": "Choose the word that fits the blank: インターネットで、旅行の（　）を調べました。 — Meaning of the sentence: “I looked up travel information on the internet.”"
+      },
+      "payload": {
+        "choices": [
+          "認証",
+          "情報",
+          "解除",
+          "ネットワーク"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「情報」(Thông tin) hợp nghĩa câu này: “Tôi đã tra cứu thông tin du lịch trên mạng.”",
+        "en": "Correct! 「情報」(Information) fits this sentence: “I looked up travel information on the internet.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã tra cứu thông tin du lịch trên mạng.”, nên cần 「情報」(Thông tin); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I looked up travel information on the internet.”, so it needs 「情報」(Information); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "システム",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）に変わって、仕事が早くなりました。 — Nghĩa của câu: “Chuyển sang hệ thống mới nên công việc nhanh hơn.”",
+        "en": "Choose the word that fits the blank: 新しい（　）に変わって、仕事が早くなりました。 — Meaning of the sentence: “We switched to a new system, and work got faster.”"
+      },
+      "payload": {
+        "choices": [
+          "プログラム",
+          "ログイン",
+          "システム",
+          "ウイルス"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「システム」(Hệ thống) hợp nghĩa câu này: “Chuyển sang hệ thống mới nên công việc nhanh hơn.”",
+        "en": "Correct! 「システム」(System) fits this sentence: “We switched to a new system, and work got faster.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chuyển sang hệ thống mới nên công việc nhanh hơn.”, nên cần 「システム」(Hệ thống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We switched to a new system, and work got faster.”, so it needs 「システム」(System); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "プログラム",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）を使うと、計算が簡単です。 — Nghĩa của câu: “Dùng chương trình này thì tính toán rất dễ.”",
+        "en": "Choose the word that fits the blank: この（　）を使うと、計算が簡単です。 — Meaning of the sentence: “With this program, calculations are easy.”"
+      },
+      "payload": {
+        "choices": [
+          "システム",
+          "ウイルス",
+          "ログイン",
+          "プログラム"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プログラム」(Chương trình (máy tính)) hợp nghĩa câu này: “Dùng chương trình này thì tính toán rất dễ.”",
+        "en": "Correct! 「プログラム」(Program) fits this sentence: “With this program, calculations are easy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dùng chương trình này thì tính toán rất dễ.”, nên cần 「プログラム」(Chương trình (máy tính)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “With this program, calculations are easy.”, so it needs 「プログラム」(Program); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ネットワーク",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の（　）に、新しいパソコンをつなぎました。 — Nghĩa của câu: “Tôi đã kết nối máy tính mới vào mạng của công ty.”",
+        "en": "Choose the word that fits the blank: 会社の（　）に、新しいパソコンをつなぎました。 — Meaning of the sentence: “I connected the new computer to the company network.”"
+      },
+      "payload": {
+        "choices": [
+          "ネットワーク",
+          "システム",
+          "アカウント",
+          "パスワード"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ネットワーク」(Mạng lưới) hợp nghĩa câu này: “Tôi đã kết nối máy tính mới vào mạng của công ty.”",
+        "en": "Correct! 「ネットワーク」(Network) fits this sentence: “I connected the new computer to the company network.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã kết nối máy tính mới vào mạng của công ty.”, nên cần 「ネットワーク」(Mạng lưới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I connected the new computer to the company network.”, so it needs 「ネットワーク」(Network); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "サーバー",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の調子が悪くて、サイトが見られません。 — Nghĩa của câu: “Máy chủ trục trặc nên không xem được trang web.”",
+        "en": "Choose the word that fits the blank: （　）の調子が悪くて、サイトが見られません。 — Meaning of the sentence: “The server is acting up, so I cannot view the site.”"
+      },
+      "payload": {
+        "choices": [
+          "システム",
+          "サーバー",
+          "アカウント",
+          "パスワード"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「サーバー」(Máy chủ) hợp nghĩa câu này: “Máy chủ trục trặc nên không xem được trang web.”",
+        "en": "Correct! 「サーバー」(Server) fits this sentence: “The server is acting up, so I cannot view the site.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy chủ trục trặc nên không xem được trang web.”, nên cần 「サーバー」(Máy chủ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The server is acting up, so I cannot view the site.”, so it needs 「サーバー」(Server); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ウイルス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: パソコンが、（　）に感染してしまいました。 — Nghĩa của câu: “Máy tính của tôi đã bị nhiễm vi-rút.”",
+        "en": "Choose the word that fits the blank: パソコンが、（　）に感染してしまいました。 — Meaning of the sentence: “My computer got infected with a virus.”"
+      },
+      "payload": {
+        "choices": [
+          "システム",
+          "セキュリティ",
+          "ウイルス",
+          "ログイン"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ウイルス」(Vi-rút) hợp nghĩa câu này: “Máy tính của tôi đã bị nhiễm vi-rút.”",
+        "en": "Correct! 「ウイルス」(Virus) fits this sentence: “My computer got infected with a virus.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy tính của tôi đã bị nhiễm vi-rút.”, nên cần 「ウイルス」(Vi-rút); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My computer got infected with a virus.”, so it needs 「ウイルス」(Virus); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "セキュリティ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）のために、定期的に設定を見直します。 — Nghĩa của câu: “Vì bảo mật, tôi xem lại thiết lập định kỳ.”",
+        "en": "Choose the word that fits the blank: （　）のために、定期的に設定を見直します。 — Meaning of the sentence: “For security, I review the settings regularly.”"
+      },
+      "payload": {
+        "choices": [
+          "システム",
+          "アカウント",
+          "プログラム",
+          "セキュリティ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「セキュリティ」(An ninh; bảo mật) hợp nghĩa câu này: “Vì bảo mật, tôi xem lại thiết lập định kỳ.”",
+        "en": "Correct! 「セキュリティ」(Security) fits this sentence: “For security, I review the settings regularly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bảo mật, tôi xem lại thiết lập định kỳ.”, nên cần 「セキュリティ」(An ninh; bảo mật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For security, I review the settings regularly.”, so it needs 「セキュリティ」(Security); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "パスワード",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、定期的に変えたほうがいいです。 — Nghĩa của câu: “Nên đổi mật khẩu định kỳ.”",
+        "en": "Choose the word that fits the blank: （　）は、定期的に変えたほうがいいです。 — Meaning of the sentence: “It is better to change your password regularly.”"
+      },
+      "payload": {
+        "choices": [
+          "パスワード",
+          "システム",
+          "ウイルス",
+          "ログイン"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「パスワード」(Mật khẩu) hợp nghĩa câu này: “Nên đổi mật khẩu định kỳ.”",
+        "en": "Correct! 「パスワード」(Password) fits this sentence: “It is better to change your password regularly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nên đổi mật khẩu định kỳ.”, nên cần 「パスワード」(Mật khẩu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is better to change your password regularly.”, so it needs 「パスワード」(Password); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ログイン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 名前とパスワードを入れて、（　）します。 — Nghĩa của câu: “Nhập tên và mật khẩu để đăng nhập.”",
+        "en": "Choose the word that fits the blank: 名前とパスワードを入れて、（　）します。 — Meaning of the sentence: “Enter your name and password to log in.”"
+      },
+      "payload": {
+        "choices": [
+          "セキュリティ",
+          "ログイン",
+          "システム",
+          "サーバー"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ログイン」(Đăng nhập) hợp nghĩa câu này: “Nhập tên và mật khẩu để đăng nhập.”",
+        "en": "Correct! 「ログイン」(Log in) fits this sentence: “Enter your name and password to log in.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhập tên và mật khẩu để đăng nhập.”, nên cần 「ログイン」(Đăng nhập); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Enter your name and password to log in.”, so it needs 「ログイン」(Log in); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "アカウント",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: サイトに、新しい（　）を作りました。 — Nghĩa của câu: “Tôi đã tạo tài khoản mới trên trang web.”",
+        "en": "Choose the word that fits the blank: サイトに、新しい（　）を作りました。 — Meaning of the sentence: “I created a new account on the site.”"
+      },
+      "payload": {
+        "choices": [
+          "システム",
+          "プログラム",
+          "アカウント",
+          "パスワード"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「アカウント」(Tài khoản (trên mạng)) hợp nghĩa câu này: “Tôi đã tạo tài khoản mới trên trang web.”",
+        "en": "Correct! 「アカウント」(Account) fits this sentence: “I created a new account on the site.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã tạo tài khoản mới trên trang web.”, nên cần 「アカウント」(Tài khoản (trên mạng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I created a new account on the site.”, so it needs 「アカウント」(Account); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "認証",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 二段階の（　）で、安全に使うことができます。 — Nghĩa của câu: “Nhờ xác thực hai bước nên có thể dùng an toàn.”",
+        "en": "Choose the word that fits the blank: 二段階の（　）で、安全に使うことができます。 — Meaning of the sentence: “Two-step authentication lets you use it safely.”"
+      },
+      "payload": {
+        "choices": [
+          "情報",
+          "解除",
+          "ログイン",
+          "認証"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「認証」(Xác thực) hợp nghĩa câu này: “Nhờ xác thực hai bước nên có thể dùng an toàn.”",
+        "en": "Correct! 「認証」(Authentication) fits this sentence: “Two-step authentication lets you use it safely.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhờ xác thực hai bước nên có thể dùng an toàn.”, nên cần 「認証」(Xác thực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Two-step authentication lets you use it safely.”, so it needs 「認証」(Authentication); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "解除",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 画面のロックを、指で（　）しました。 — Nghĩa của câu: “Tôi đã mở khóa màn hình bằng ngón tay.”",
+        "en": "Choose the word that fits the blank: 画面のロックを、指で（　）しました。 — Meaning of the sentence: “I unlocked the screen with my finger.”"
+      },
+      "payload": {
+        "choices": [
+          "解除",
+          "情報",
+          "認証",
+          "システム"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「解除」(Gỡ bỏ; hủy (khóa)) hợp nghĩa câu này: “Tôi đã mở khóa màn hình bằng ngón tay.”",
+        "en": "Correct! 「解除」(Release; cancellation (of a lock)) fits this sentence: “I unlocked the screen with my finger.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã mở khóa màn hình bằng ngón tay.”, nên cần 「解除」(Gỡ bỏ; hủy (khóa)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I unlocked the screen with my finger.”, so it needs 「解除」(Release; cancellation (of a lock)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "情報",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: インターネットで、旅行の「情報」を調べました。",
+        "en": "Choose the correct reading of the word in 「」: インターネットで、旅行の「情報」を調べました。"
+      },
+      "payload": {
+        "choices": [
+          "プログラム",
+          "システム",
+          "じょうほう",
+          "にんしょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「情報」 đọc là 「じょうほう」, nghĩa là Thông tin.",
+        "en": "Correct! 「情報」 is read 「じょうほう」 and means Information."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「情報」 đọc là 「じょうほう」 (Thông tin); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「情報」 is read 「じょうほう」 (Information); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "認証",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 二段階の「認証」で、安全に使うことができます。",
+        "en": "Choose the correct reading of the word in 「」: 二段階の「認証」で、安全に使うことができます。"
+      },
+      "payload": {
+        "choices": [
+          "かいじょ",
+          "サーバー",
+          "アカウント",
+          "にんしょう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「認証」 đọc là 「にんしょう」, nghĩa là Xác thực.",
+        "en": "Correct! 「認証」 is read 「にんしょう」 and means Authentication."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「認証」 đọc là 「にんしょう」 (Xác thực); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「認証」 is read 「にんしょう」 (Authentication); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "解除",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 画面のロックを、指で「解除」しました。",
+        "en": "Choose the correct reading of the word in 「」: 画面のロックを、指で「解除」しました。"
+      },
+      "payload": {
+        "choices": [
+          "かいじょ",
+          "ログイン",
+          "アカウント",
+          "じょうほう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「解除」 đọc là 「かいじょ」, nghĩa là Gỡ bỏ; hủy (khóa).",
+        "en": "Correct! 「解除」 is read 「かいじょ」 and means Release; cancellation (of a lock)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「解除」 đọc là 「かいじょ」 (Gỡ bỏ; hủy (khóa)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「解除」 is read 「かいじょ」 (Release; cancellation (of a lock)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "認証",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 二段階の「にんしょう」で、安全に使うことができます。",
+        "en": "Choose the correct way to write the word in 「」: 二段階の「にんしょう」で、安全に使うことができます。"
+      },
+      "payload": {
+        "choices": [
+          "情報",
+          "解除",
+          "ネットワーク",
+          "認証"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「にんしょう」 viết là 「認証」, nghĩa là Xác thực.",
+        "en": "Correct! 「にんしょう」 is written 「認証」 and means Authentication."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「にんしょう」 viết là 「認証」 (Xác thực); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「にんしょう」 is written 「認証」 (Authentication); the other words are read differently."
+      }
+    },
+    {
+      "item": "解除",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 画面のロックを、指で「かいじょ」しました。",
+        "en": "Choose the correct way to write the word in 「」: 画面のロックを、指で「かいじょ」しました。"
+      },
+      "payload": {
+        "choices": [
+          "解除",
+          "情報",
+          "認証",
+          "サーバー"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かいじょ」 viết là 「解除」, nghĩa là Gỡ bỏ; hủy (khóa).",
+        "en": "Correct! 「かいじょ」 is written 「解除」 and means Release; cancellation (of a lock)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かいじょ」 viết là 「解除」 (Gỡ bỏ; hủy (khóa)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かいじょ」 is written 「解除」 (Release; cancellation (of a lock)); the other words are read differently."
+      }
+    }
+  ]
+}

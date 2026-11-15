@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-time-calendar",
+  "title": {
+    "vi": "Kanji thời gian – lịch (朝 昼 夜)",
+    "en": "Time and calendar kanji (朝 昼 夜)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "朝",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "buổi sáng",
+        "en": "morning"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョウ"
+        ],
+        "kunReadings": [
+          "あさ"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "朝食",
+          "reading": "ちょうしょく",
+          "kanjiReading": "チョウ",
+          "translation": {
+            "vi": "bữa sáng",
+            "en": "breakfast"
+          }
+        },
+        {
+          "ja": "朝",
+          "reading": "あさ",
+          "kanjiReading": "あさ",
+          "translation": {
+            "vi": "buổi sáng",
+            "en": "morning"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "昼",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "buổi trưa",
+        "en": "noon; daytime"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チュウ"
+        ],
+        "kunReadings": [
+          "ひる"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "昼食",
+          "reading": "ちゅうしょく",
+          "kanjiReading": "チュウ",
+          "translation": {
+            "vi": "bữa trưa",
+            "en": "lunch"
+          }
+        },
+        {
+          "ja": "昼",
+          "reading": "ひる",
+          "kanjiReading": "ひる",
+          "translation": {
+            "vi": "buổi trưa",
+            "en": "noon"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夜",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "ban đêm",
+        "en": "night"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヤ"
+        ],
+        "kunReadings": [
+          "よる",
+          "よ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "今夜",
+          "reading": "こんや",
+          "kanjiReading": "ヤ",
+          "translation": {
+            "vi": "đêm nay",
+            "en": "tonight"
+          }
+        },
+        {
+          "ja": "夜中",
+          "reading": "よなか",
+          "kanjiReading": "よ",
+          "translation": {
+            "vi": "nửa đêm",
+            "en": "middle of the night"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "朝",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「朝」nghĩa là gì?",
+        "en": "What does 「朝」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "buổi sáng",
+            "en": "morning"
+          },
+          {
+            "vi": "buổi trưa",
+            "en": "noon; daytime"
+          },
+          {
+            "vi": "ban đêm",
+            "en": "night"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 朝 nghĩa là buổi sáng.",
+        "en": "Correct! 朝 means morning."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 朝 nghĩa là buổi sáng, như trong 「朝食」 (bữa sáng).",
+        "en": "Not quite. 朝 means morning, as in 「朝食」 (breakfast)."
+      }
+    },
+    {
+      "item": "朝",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「朝」 trong 「朝食」 (“bữa sáng”).",
+        "en": "Type the reading of 「朝」 in 「朝食」 (“breakfast”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょう",
+          "チョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 朝食, 朝 đọc là ちょう (âm On).",
+        "en": "Correct! In 朝食, 朝 is read ちょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 朝食 (bữa sáng), 朝 đọc là ちょう (âm On).",
+        "en": "In 朝食 (breakfast), 朝 is read ちょう (on'yomi)."
+      }
+    },
+    {
+      "item": "朝",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「朝」(buổi sáng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「朝」 (morning; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちょう",
+          "あさ",
+          "ひる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 朝 = あさ (buổi sáng); 朝 đọc là あさ (âm Kun).",
+        "en": "Correct! 朝 = あさ (morning); 朝 is read あさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "朝 đọc là あさ (buổi sáng): 朝 mang âm Kun あさ.",
+        "en": "朝 is read あさ (morning): 朝 takes the kun'yomi あさ."
+      }
+    },
+    {
+      "item": "昼",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「昼」nghĩa là gì?",
+        "en": "What does 「昼」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ban đêm",
+            "en": "night"
+          },
+          {
+            "vi": "buổi trưa",
+            "en": "noon; daytime"
+          },
+          {
+            "vi": "buổi sáng",
+            "en": "morning"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 昼 nghĩa là buổi trưa.",
+        "en": "Correct! 昼 means noon; daytime."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 昼 nghĩa là buổi trưa, như trong 「昼食」 (bữa trưa).",
+        "en": "Not quite. 昼 means noon; daytime, as in 「昼食」 (lunch)."
+      }
+    },
+    {
+      "item": "昼",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「昼」 trong 「昼食」 (“bữa trưa”).",
+        "en": "Type the reading of 「昼」 in 「昼食」 (“lunch”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちゅう",
+          "チュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 昼食, 昼 đọc là ちゅう (âm On).",
+        "en": "Correct! In 昼食, 昼 is read ちゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 昼食 (bữa trưa), 昼 đọc là ちゅう (âm On).",
+        "en": "In 昼食 (lunch), 昼 is read ちゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "昼",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「昼」(buổi trưa; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「昼」 (noon; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちゅう",
+          "あさ",
+          "ひる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 昼 = ひる (buổi trưa); 昼 đọc là ひる (âm Kun).",
+        "en": "Correct! 昼 = ひる (noon); 昼 is read ひる (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "昼 đọc là ひる (buổi trưa): 昼 mang âm Kun ひる.",
+        "en": "昼 is read ひる (noon): 昼 takes the kun'yomi ひる."
+      }
+    },
+    {
+      "item": "夜",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夜」nghĩa là gì?",
+        "en": "What does 「夜」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "buổi sáng",
+            "en": "morning"
+          },
+          {
+            "vi": "buổi trưa",
+            "en": "noon; daytime"
+          },
+          {
+            "vi": "ban đêm",
+            "en": "night"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夜 nghĩa là ban đêm.",
+        "en": "Correct! 夜 means night."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 夜 nghĩa là ban đêm, như trong 「今夜」 (đêm nay).",
+        "en": "Not quite. 夜 means night, as in 「今夜」 (tonight)."
+      }
+    },
+    {
+      "item": "夜",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「夜」 trong 「今夜」 (“đêm nay”).",
+        "en": "Type the reading of 「夜」 in 「今夜」 (“tonight”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "や",
+          "ヤ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 今夜, 夜 đọc là や (âm On).",
+        "en": "Correct! In 今夜, 夜 is read や (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 今夜 (đêm nay), 夜 đọc là や (âm On).",
+        "en": "In 今夜 (tonight), 夜 is read や (on'yomi)."
+      }
+    },
+    {
+      "item": "夜",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夜中」(nửa đêm) đọc là gì?",
+        "en": "How is 「夜中」 (middle of the night) read?"
+      },
+      "payload": {
+        "choices": [
+          "よなか",
+          "やなか",
+          "あさなか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夜中 = よなか (nửa đêm); 夜 đọc là よ (âm Kun).",
+        "en": "Correct! 夜中 = よなか (middle of the night); 夜 is read よ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "夜中 đọc là よなか (nửa đêm): 夜 mang âm Kun よ.",
+        "en": "夜中 is read よなか (middle of the night): 夜 takes the kun'yomi よ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "朝",
+            {
+              "vi": "buổi sáng",
+              "en": "morning"
+            }
+          ],
+          [
+            "昼",
+            {
+              "vi": "buổi trưa",
+              "en": "noon; daytime"
+            }
+          ],
+          [
+            "夜",
+            {
+              "vi": "ban đêm",
+              "en": "night"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

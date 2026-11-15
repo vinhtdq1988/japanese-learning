@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-work-business",
+  "title": {
+    "vi": "Kanji công việc – kinh doanh (織 属 営)",
+    "en": "Work and business kanji (織 属 営)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "織",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "dệt; tổ chức",
+        "en": "weave; organize"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショク",
+          "シキ"
+        ],
+        "kunReadings": [
+          "お.る"
+        ],
+        "strokeCount": 18
+      },
+      "examples": [
+        {
+          "ja": "組織",
+          "reading": "そしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "tổ chức",
+            "en": "organization"
+          }
+        },
+        {
+          "ja": "織る",
+          "reading": "おる",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "dệt",
+            "en": "to weave"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "属",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "thuộc về",
+        "en": "belong"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゾク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "所属",
+          "reading": "しょぞく",
+          "kanjiReading": "ゾク",
+          "translation": {
+            "vi": "trực thuộc",
+            "en": "affiliation"
+          }
+        },
+        {
+          "ja": "金属",
+          "reading": "きんぞく",
+          "kanjiReading": "ゾク",
+          "translation": {
+            "vi": "kim loại",
+            "en": "metal"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "営",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "điều hành; kinh doanh",
+        "en": "operate; run"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エイ"
+        ],
+        "kunReadings": [
+          "いとな.む"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "営業",
+          "reading": "えいぎょう",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "kinh doanh",
+            "en": "business operations"
+          }
+        },
+        {
+          "ja": "営む",
+          "reading": "いとなむ",
+          "kanjiReading": "いとな",
+          "translation": {
+            "vi": "điều hành; tiến hành",
+            "en": "to run"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "織",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「織」nghĩa là gì?",
+        "en": "What does 「織」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dệt; tổ chức",
+            "en": "weave; organize"
+          },
+          {
+            "vi": "thuộc về",
+            "en": "belong"
+          },
+          {
+            "vi": "điều hành; kinh doanh",
+            "en": "operate; run"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 織 nghĩa là dệt; tổ chức.",
+        "en": "Correct! 織 means weave; organize."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 織 nghĩa là dệt; tổ chức, như trong 「組織」 (tổ chức).",
+        "en": "Not quite. 織 means weave; organize, as in 「組織」 (organization)."
+      }
+    },
+    {
+      "item": "織",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「織」 trong 「組織」 (“tổ chức”).",
+        "en": "Type the reading of 「織」 in 「組織」 (“organization”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しき",
+          "シキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 組織, 織 đọc là しき (âm On).",
+        "en": "Correct! In 組織, 織 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 組織 (tổ chức), 織 đọc là しき (âm On).",
+        "en": "In 組織 (organization), 織 is read しき (on'yomi)."
+      }
+    },
+    {
+      "item": "織",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「織る」(dệt) đọc là gì?",
+        "en": "How is 「織る」 (to weave) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょくる",
+          "おる",
+          "しょぞく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 織る = おる (dệt); 織 đọc là お (âm Kun).",
+        "en": "Correct! 織る = おる (to weave); 織 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "織る đọc là おる (dệt): 織 mang âm Kun お.",
+        "en": "織る is read おる (to weave): 織 takes the kun'yomi お."
+      }
+    },
+    {
+      "item": "属",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「属」nghĩa là gì?",
+        "en": "What does 「属」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "điều hành; kinh doanh",
+            "en": "operate; run"
+          },
+          {
+            "vi": "thuộc về",
+            "en": "belong"
+          },
+          {
+            "vi": "dệt; tổ chức",
+            "en": "weave; organize"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 属 nghĩa là thuộc về.",
+        "en": "Correct! 属 means belong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 属 nghĩa là thuộc về, như trong 「所属」 (trực thuộc).",
+        "en": "Not quite. 属 means belong, as in 「所属」 (affiliation)."
+      }
+    },
+    {
+      "item": "属",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「属」 trong 「所属」 (“trực thuộc”).",
+        "en": "Type the reading of 「属」 in 「所属」 (“affiliation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぞく",
+          "ゾク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 所属, 属 đọc là ぞく (âm On).",
+        "en": "Correct! In 所属, 属 is read ぞく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 所属 (trực thuộc), 属 đọc là ぞく (âm On).",
+        "en": "In 所属 (affiliation), 属 is read ぞく (on'yomi)."
+      }
+    },
+    {
+      "item": "属",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「金属」(kim loại) đọc là gì?",
+        "en": "How is 「金属」 (metal) read?"
+      },
+      "payload": {
+        "choices": [
+          "きんそく",
+          "きんいとな",
+          "きんぞく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 金属 = きんぞく (kim loại); 属 đọc là ぞく (âm On).",
+        "en": "Correct! 金属 = きんぞく (metal); 属 is read ぞく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "金属 đọc là きんぞく (kim loại): 属 mang âm On ぞく.",
+        "en": "金属 is read きんぞく (metal): 属 takes the on'yomi ぞく."
+      }
+    },
+    {
+      "item": "営",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「営」nghĩa là gì?",
+        "en": "What does 「営」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dệt; tổ chức",
+            "en": "weave; organize"
+          },
+          {
+            "vi": "thuộc về",
+            "en": "belong"
+          },
+          {
+            "vi": "điều hành; kinh doanh",
+            "en": "operate; run"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 営 nghĩa là điều hành; kinh doanh.",
+        "en": "Correct! 営 means operate; run."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 営 nghĩa là điều hành; kinh doanh, như trong 「営業」 (kinh doanh).",
+        "en": "Not quite. 営 means operate; run, as in 「営業」 (business operations)."
+      }
+    },
+    {
+      "item": "営",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「営」 trong 「営業」 (“kinh doanh”).",
+        "en": "Type the reading of 「営」 in 「営業」 (“business operations”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えい",
+          "エイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 営業, 営 đọc là えい (âm On).",
+        "en": "Correct! In 営業, 営 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 営業 (kinh doanh), 営 đọc là えい (âm On).",
+        "en": "In 営業 (business operations), 営 is read えい (on'yomi)."
+      }
+    },
+    {
+      "item": "営",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「営む」(điều hành; tiến hành) đọc là gì?",
+        "en": "How is 「営む」 (to run) read?"
+      },
+      "payload": {
+        "choices": [
+          "いとなむ",
+          "えいむ",
+          "しょぞく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 営む = いとなむ (điều hành; tiến hành); 営 đọc là いとな (âm Kun).",
+        "en": "Correct! 営む = いとなむ (to run); 営 is read いとな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "営む đọc là いとなむ (điều hành; tiến hành): 営 mang âm Kun いとな.",
+        "en": "営む is read いとなむ (to run): 営 takes the kun'yomi いとな."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "織",
+            {
+              "vi": "dệt; tổ chức",
+              "en": "weave; organize"
+            }
+          ],
+          [
+            "属",
+            {
+              "vi": "thuộc về",
+              "en": "belong"
+            }
+          ],
+          [
+            "営",
+            {
+              "vi": "điều hành; kinh doanh",
+              "en": "operate; run"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

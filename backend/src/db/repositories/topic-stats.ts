@@ -1,6 +1,7 @@
 import { and, eq, sql } from 'drizzle-orm';
 import type { DbExecutor } from '../client.js';
-import { studyRecords, topicStats } from '../schema.js';
+import { studyRecords, topicStats, topics } from '../schema.js';
+import type { Skill } from '../../domain/types.js';
 import type { TopicAnswerResult, TopicStatState } from '../../engine/difficulty.js';
 import { EMPTY_TOPIC_STATS } from '../../engine/difficulty.js';
 
@@ -85,4 +86,28 @@ export async function listWeakTopicStats(
   return rows
     .map((r) => ({ topicId: r.topicId, accuracy: r.accuracy === null ? null : Number(r.accuracy) }))
     .sort((a, b) => (a.accuracy ?? 0) - (b.accuracy ?? 0) || a.topicId.localeCompare(b.topicId));
+}
+
+/**
+ * Cửa sổ kết quả gần nhất của mọi mảng người học đã có dữ liệu, kèm kỹ năng của mảng (`topics.skill`): MỘT truy
+ * vấn `topic_stats ⨝ topics` cho cả mức năng lực theo chủ đề lẫn theo kỹ năng (spec 007, research P7–P8).
+ */
+export async function listTopicWindows(
+  db: DbExecutor,
+  userId: string,
+): Promise<{ topicId: string; skill: Skill; recentResults: (0 | 1)[] }[]> {
+  const rows = await db
+    .select({
+      topicId: topicStats.topicId,
+      skill: topics.skill,
+      recentResults: topicStats.recentResults,
+    })
+    .from(topicStats)
+    .innerJoin(topics, eq(topics.id, topicStats.topicId))
+    .where(eq(topicStats.userId, userId));
+  return rows.map((r) => ({
+    topicId: r.topicId,
+    skill: r.skill,
+    recentResults: r.recentResults.map((v) => (v === 1 ? 1 : 0)),
+  }));
 }

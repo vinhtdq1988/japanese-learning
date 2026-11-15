@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society-politics",
+  "title": {
+    "vi": "Kanji xã hội – chính trị (選 議 決)",
+    "en": "Society and politics kanji (選 議 決)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "選",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "chọn; bầu",
+        "en": "choose; elect"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セン"
+        ],
+        "kunReadings": [
+          "えら.ぶ"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "選挙",
+          "reading": "せんきょ",
+          "kanjiReading": "セン",
+          "translation": {
+            "vi": "bầu cử",
+            "en": "election"
+          }
+        },
+        {
+          "ja": "選ぶ",
+          "reading": "えらぶ",
+          "kanjiReading": "えら",
+          "translation": {
+            "vi": "chọn",
+            "en": "to choose"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "議",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "nghị; bàn bạc",
+        "en": "deliberation"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 20
+      },
+      "examples": [
+        {
+          "ja": "会議",
+          "reading": "かいぎ",
+          "kanjiReading": "ギ",
+          "translation": {
+            "vi": "cuộc họp",
+            "en": "meeting"
+          }
+        },
+        {
+          "ja": "議論",
+          "reading": "ぎろん",
+          "kanjiReading": "ギ",
+          "translation": {
+            "vi": "tranh luận",
+            "en": "discussion"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "決",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "quyết định",
+        "en": "decide"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケツ"
+        ],
+        "kunReadings": [
+          "き.める",
+          "き.まる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "解決",
+          "reading": "かいけつ",
+          "kanjiReading": "ケツ",
+          "translation": {
+            "vi": "giải quyết",
+            "en": "solution"
+          }
+        },
+        {
+          "ja": "決める",
+          "reading": "きめる",
+          "kanjiReading": "き",
+          "translation": {
+            "vi": "quyết định",
+            "en": "to decide"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "選",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「選」nghĩa là gì?",
+        "en": "What does 「選」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chọn; bầu",
+            "en": "choose; elect"
+          },
+          {
+            "vi": "nghị; bàn bạc",
+            "en": "deliberation"
+          },
+          {
+            "vi": "quyết định",
+            "en": "decide"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 選 nghĩa là chọn; bầu.",
+        "en": "Correct! 選 means choose; elect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 選 nghĩa là chọn; bầu, như trong 「選挙」 (bầu cử).",
+        "en": "Not quite. 選 means choose; elect, as in 「選挙」 (election)."
+      }
+    },
+    {
+      "item": "選",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「選」 trong 「選挙」 (“bầu cử”).",
+        "en": "Type the reading of 「選」 in 「選挙」 (“election”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せん",
+          "セン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 選挙, 選 đọc là せん (âm On).",
+        "en": "Correct! In 選挙, 選 is read せん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 選挙 (bầu cử), 選 đọc là せん (âm On).",
+        "en": "In 選挙 (election), 選 is read せん (on'yomi)."
+      }
+    },
+    {
+      "item": "選",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「選ぶ」(chọn) đọc là gì?",
+        "en": "How is 「選ぶ」 (to choose) read?"
+      },
+      "payload": {
+        "choices": [
+          "せんぶ",
+          "えらぶ",
+          "かいぎ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 選ぶ = えらぶ (chọn); 選 đọc là えら (âm Kun).",
+        "en": "Correct! 選ぶ = えらぶ (to choose); 選 is read えら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "選ぶ đọc là えらぶ (chọn): 選 mang âm Kun えら.",
+        "en": "選ぶ is read えらぶ (to choose): 選 takes the kun'yomi えら."
+      }
+    },
+    {
+      "item": "議",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「議」nghĩa là gì?",
+        "en": "What does 「議」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quyết định",
+            "en": "decide"
+          },
+          {
+            "vi": "nghị; bàn bạc",
+            "en": "deliberation"
+          },
+          {
+            "vi": "chọn; bầu",
+            "en": "choose; elect"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 議 nghĩa là nghị; bàn bạc.",
+        "en": "Correct! 議 means deliberation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 議 nghĩa là nghị; bàn bạc, như trong 「会議」 (cuộc họp).",
+        "en": "Not quite. 議 means deliberation, as in 「会議」 (meeting)."
+      }
+    },
+    {
+      "item": "議",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「議」 trong 「会議」 (“cuộc họp”).",
+        "en": "Type the reading of 「議」 in 「会議」 (“meeting”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎ",
+          "ギ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 会議, 議 đọc là ぎ (âm On).",
+        "en": "Correct! In 会議, 議 is read ぎ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 会議 (cuộc họp), 議 đọc là ぎ (âm On).",
+        "en": "In 会議 (meeting), 議 is read ぎ (on'yomi)."
+      }
+    },
+    {
+      "item": "議",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「議論」(tranh luận) đọc là gì?",
+        "en": "How is 「議論」 (discussion) read?"
+      },
+      "payload": {
+        "choices": [
+          "きろん",
+          "けつろん",
+          "ぎろん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 議論 = ぎろん (tranh luận); 議 đọc là ぎ (âm On).",
+        "en": "Correct! 議論 = ぎろん (discussion); 議 is read ぎ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "議論 đọc là ぎろん (tranh luận): 議 mang âm On ぎ.",
+        "en": "議論 is read ぎろん (discussion): 議 takes the on'yomi ぎ."
+      }
+    },
+    {
+      "item": "決",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「決」nghĩa là gì?",
+        "en": "What does 「決」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chọn; bầu",
+            "en": "choose; elect"
+          },
+          {
+            "vi": "nghị; bàn bạc",
+            "en": "deliberation"
+          },
+          {
+            "vi": "quyết định",
+            "en": "decide"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 決 nghĩa là quyết định.",
+        "en": "Correct! 決 means decide."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 決 nghĩa là quyết định, như trong 「解決」 (giải quyết).",
+        "en": "Not quite. 決 means decide, as in 「解決」 (solution)."
+      }
+    },
+    {
+      "item": "決",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「決」 trong 「解決」 (“giải quyết”).",
+        "en": "Type the reading of 「決」 in 「解決」 (“solution”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けつ",
+          "ケツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 解決, 決 đọc là けつ (âm On).",
+        "en": "Correct! In 解決, 決 is read けつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 解決 (giải quyết), 決 đọc là けつ (âm On).",
+        "en": "In 解決 (solution), 決 is read けつ (on'yomi)."
+      }
+    },
+    {
+      "item": "決",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「決める」(quyết định) đọc là gì?",
+        "en": "How is 「決める」 (to decide) read?"
+      },
+      "payload": {
+        "choices": [
+          "きめる",
+          "けつめる",
+          "えらぶ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 決める = きめる (quyết định); 決 đọc là き (âm Kun).",
+        "en": "Correct! 決める = きめる (to decide); 決 is read き (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "決める đọc là きめる (quyết định): 決 mang âm Kun き.",
+        "en": "決める is read きめる (to decide): 決 takes the kun'yomi き."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "選",
+            {
+              "vi": "chọn; bầu",
+              "en": "choose; elect"
+            }
+          ],
+          [
+            "議",
+            {
+              "vi": "nghị; bàn bạc",
+              "en": "deliberation"
+            }
+          ],
+          [
+            "決",
+            {
+              "vi": "quyết định",
+              "en": "decide"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

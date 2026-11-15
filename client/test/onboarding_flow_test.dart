@@ -162,54 +162,59 @@ void main() {
       },
     );
 
-    testWidgets('kỹ năng nghe, đọc bị khóa kèm ghi chú; Kanji chọn được', (
-      tester,
-    ) async {
-      await _signedIn(tester, route: '/onboarding');
-      await _tap(tester, 'level-none');
-      await _tap(tester, 'next');
-      await _tap(tester, 'goal-daily_conversation');
-      await _tap(tester, 'next');
-      await _tap(tester, 'minutes-5');
-      await _tap(tester, 'next');
-      await _tap(tester, 'next');
+    testWidgets(
+      'kỹ năng nghe bị khóa kèm ghi chú; Kanji chọn được; luyện đọc/viết khóa vì dưới 30 phút (spec 007)',
+      (tester) async {
+        await _signedIn(tester, route: '/onboarding');
+        await _tap(tester, 'level-none');
+        await _tap(tester, 'next');
+        await _tap(tester, 'goal-daily_conversation');
+        await _tap(tester, 'next');
+        await _tap(tester, 'minutes-5');
+        await _tap(tester, 'next');
+        await _tap(tester, 'next');
 
-      for (final skill in <String>['listening', 'reading']) {
-        final tile = tester.widget<CheckboxListTile>(
-          find.byKey(Key('skill-$skill')),
+        for (final skill in <String>['listening', 'reading', 'writing']) {
+          final tile = tester.widget<CheckboxListTile>(
+            find.byKey(Key('skill-$skill')),
+          );
+          expect(tile.onChanged, isNull, reason: '$skill phải bị khóa');
+        }
+        expect(find.text('Chưa có trong phiên bản này'), findsOneWidget);
+        expect(
+          find.text('Dành cho người học từ 30 phút mỗi ngày'),
+          findsNWidgets(2),
         );
-        expect(tile.onChanged, isNull, reason: '$skill phải bị khóa');
-      }
-      expect(find.text('Chưa có trong phiên bản này'), findsNWidgets(2));
-      // Kanji không còn khóa (spec 003): chọn được như từ vựng và ngữ pháp.
-      final kanjiTile = tester.widget<CheckboxListTile>(
-        find.byKey(const Key('skill-kanji')),
-      );
-      expect(kanjiTile.onChanged, isNotNull);
-      // Chưa chọn kỹ năng nào → không đi tiếp được; chọn một kỹ năng thì đi tiếp được.
-      expect(
-        tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
-        isNull,
-      );
-      await _tap(tester, 'skill-vocabulary');
-      expect(
-        tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
-        isNotNull,
-      );
-      // Chọn Kanji rồi bỏ từ vựng: vẫn đi tiếp được vì còn một kỹ năng.
-      await _tap(tester, 'skill-kanji');
-      await _tap(tester, 'skill-vocabulary');
-      expect(
-        tester
-            .widget<CheckboxListTile>(find.byKey(const Key('skill-kanji')))
-            .value,
-        isTrue,
-      );
-      expect(
-        tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
-        isNotNull,
-      );
-    });
+        // Kanji không còn khóa (spec 003): chọn được như từ vựng và ngữ pháp.
+        final kanjiTile = tester.widget<CheckboxListTile>(
+          find.byKey(const Key('skill-kanji')),
+        );
+        expect(kanjiTile.onChanged, isNotNull);
+        // Chưa chọn kỹ năng nào → không đi tiếp được; chọn một kỹ năng thì đi tiếp được.
+        expect(
+          tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
+          isNull,
+        );
+        await _tap(tester, 'skill-vocabulary');
+        expect(
+          tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
+          isNotNull,
+        );
+        // Chọn Kanji rồi bỏ từ vựng: vẫn đi tiếp được vì còn một kỹ năng.
+        await _tap(tester, 'skill-kanji');
+        await _tap(tester, 'skill-vocabulary');
+        expect(
+          tester
+              .widget<CheckboxListTile>(find.byKey(const Key('skill-kanji')))
+              .value,
+          isTrue,
+        );
+        expect(
+          tester.widget<FilledButton>(find.byKey(const Key('next'))).onPressed,
+          isNotNull,
+        );
+      },
+    );
 
     testWidgets('mục tiêu JLPT bắt buộc chọn cấp độ trước khi tiếp tục', (
       tester,

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:japanese_api/japanese_api.dart';
+import 'package:japanese_api/japanese_api.dart' hide StudyDefaults;
 
 import '../../data/account_repository.dart';
 import '../../data/learning_repository.dart';
 import '../../data/onboarding_repository.dart';
 import '../../data/placement_repository.dart';
+import '../../data/study_defaults_repository.dart';
 import '../../domain/onboarding_form.dart';
+import '../../domain/study_suggestion.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../auth/auth_support.dart';
@@ -15,6 +17,7 @@ import 'class_onboarding_screen.dart';
 import '../placement/placement_result_card.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
+import '../shared/suggestion_invite_card.dart';
 import '../trial/trial_state.dart';
 import 'onboarding_labels.dart';
 
@@ -56,6 +59,14 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
   Object? _loadError;
   bool _completing = false;
   AuthFormError? _completeError;
+
+  /// Bộ kỹ năng vừa được điền/áp dụng theo gợi ý của quỹ thời gian (spec 007, FR-023): nhãn "gợi ý" chỉ
+  /// hiện khi lựa chọn hiện tại còn đúng bộ này. Chỉ giữ trong trạng thái màn hình, không lưu bền.
+  List<String>? _suggested;
+
+  /// Gợi ý mới chờ người học "Áp dụng / Giữ nguyên" (khi họ đã chỉnh riêng, FR-024) và quỹ thời gian của nó.
+  List<String>? _invite;
+  int? _inviteMinutes;
 
   static const List<OnboardingStep> _steps = OnboardingStep.values;
 
@@ -132,6 +143,72 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
 
   void _update(OnboardingForm form) => setState(() => _form = form);
 
+  /// Đổi quỹ thời gian: điền gợi ý nếu kỹ năng "chưa chỉnh", ngược lại chỉ mời (không ghi đè ngầm).
+  /// Chưa tải được bảng gợi ý ⇒ chỉ đổi phút, màn vẫn dùng được.
+  void _setMinutes(int minutes) {
+    final old = _form.dailyMinutes;
+    final defaults = ref.read(studyDefaultsProvider).valueOrNull;
+    final table = defaults?.bySkills;
+    // Hạ quỹ thời gian xuống dưới ngưỡng thì luyện đọc/viết bị bỏ khỏi lựa chọn (spec 007, FR-005).
+    final locked = isPracticeLockedFor(minutes, _practiceMin(defaults));
+    List<String> allowed(List<String> skills) => locked
+        ? <String>[
+            for (final skill in skills)
+              if (!OnboardingOptions.practiceSkills.contains(skill)) skill,
+          ]
+        : skills;
+    if (table == null || old == minutes) {
+      _update(
+        _form.copyWith(dailyMinutes: minutes, skills: allowed(_form.skills)),
+      );
+      return;
+    }
+    final result = reconcileSuggestion(
+      currentSkills: _form.skills.toSet(),
+      oldMinutes: old,
+      newMinutes: minutes,
+      table: table,
+      availableSkills: OnboardingOptions.skills,
+    );
+    setState(() {
+      _form = _form.copyWith(
+        dailyMinutes: minutes,
+        skills: allowed(result.skills),
+      );
+      if (result.filled) _suggested = _form.skills;
+      _invite = result.invite == null ? null : allowed(result.invite!);
+      _inviteMinutes = result.invite == null ? null : minutes;
+    });
+  }
+
+  /// Ngưỡng quỹ thời gian của luyện đọc/viết do máy chủ trả; chưa tải được thì dùng mức mặc định của sản phẩm.
+  static int _practiceMin(StudyDefaults? defaults) =>
+      defaults?.practiceMinDailyMinutes ??
+      OnboardingOptions.practiceMinDailyMinutesFallback;
+
+  void _applyInvite() {
+    final invite = _invite;
+    if (invite == null) return;
+    setState(() {
+      _form = _form.copyWith(skills: invite);
+      _suggested = invite;
+      _invite = null;
+      _inviteMinutes = null;
+    });
+  }
+
+  void _keepSkills() => setState(() {
+    _invite = null;
+    _inviteMinutes = null;
+  });
+
+  bool get _showSuggestionLabel {
+    final suggested = _suggested;
+    return suggested != null &&
+        suggested.length == _form.skills.length &&
+        suggested.toSet().containsAll(_form.skills);
+  }
+
   Future<void> _next() async {
     await _saveDraft();
     if (!mounted) return;
@@ -148,6 +225,9 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
     setState(() {
       _form = OnboardingForm.empty;
       _step = OnboardingStep.level;
+      _suggested = null;
+      _invite = null;
+      _inviteMinutes = null;
     });
     await _saveDraft();
   }
@@ -185,6 +265,8 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    // Bắt đầu tải bảng gợi ý ngay; lỗi tải không chặn màn (chỉ không có gợi ý).
+    ref.watch(studyDefaultsProvider);
     final Widget body;
     if (_loading) {
       body = const LoadingView();
@@ -322,7 +404,7 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
           options: OnboardingOptions.dailyMinutes,
           keyPrefix: 'minutes',
           labelOf: (v) => l10n.onboardingMinutesOption(v),
-          onChanged: (v) => _update(_form.copyWith(dailyMinutes: v)),
+          onChanged: _setMinutes,
         );
       case OnboardingStep.deadline:
         return _DeadlineStep(
@@ -335,7 +417,16 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
       case OnboardingStep.skills:
         return _SkillsStep(
           selected: _form.skills,
+          dailyMinutes: _form.dailyMinutes,
+          practiceMinDailyMinutes: _practiceMin(
+            ref.watch(studyDefaultsProvider).valueOrNull,
+          ),
           onChanged: (skills) => _update(_form.copyWith(skills: skills)),
+          showSuggestionLabel: _showSuggestionLabel,
+          invite: _invite,
+          inviteMinutes: _inviteMinutes,
+          onApplyInvite: _applyInvite,
+          onKeepInvite: _keepSkills,
         );
       case OnboardingStep.placement:
         return _PlacementStep(
@@ -500,34 +591,103 @@ class _DeadlineStep extends StatelessWidget {
 }
 
 class _SkillsStep extends StatelessWidget {
-  const _SkillsStep({required this.selected, required this.onChanged});
+  const _SkillsStep({
+    required this.selected,
+    required this.dailyMinutes,
+    required this.practiceMinDailyMinutes,
+    required this.onChanged,
+    required this.showSuggestionLabel,
+    required this.invite,
+    required this.inviteMinutes,
+    required this.onApplyInvite,
+    required this.onKeepInvite,
+  });
 
   final List<String> selected;
+
+  /// Quỹ thời gian đã chọn ở bước trước; `null` coi như chưa đủ để dùng luyện đọc/viết.
+  final int? dailyMinutes;
+
+  /// Ngưỡng quỹ thời gian của luyện đọc/viết (máy chủ trả).
+  final int practiceMinDailyMinutes;
   final ValueChanged<List<String>> onChanged;
+
+  /// Hiện nhãn "gợi ý theo thời gian bạn có" khi bộ kỹ năng đang chọn là bộ được điền sẵn (FR-023).
+  final bool showSuggestionLabel;
+
+  /// Gợi ý mới chờ người học quyết định (FR-024); null = không có lời mời.
+  final List<String>? invite;
+  final int? inviteMinutes;
+  final VoidCallback onApplyInvite;
+  final VoidCallback onKeepInvite;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
+    final practiceLocked = isPracticeLockedFor(
+      dailyMinutes,
+      practiceMinDailyMinutes,
+    );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Text(l10n.onboardingSkillsQuestion, style: theme.textTheme.titleLarge),
+        if (showSuggestionLabel) ...<Widget>[
+          const SizedBox(height: 4),
+          Text(
+            l10n.onboardingSuggestionLabel,
+            key: const Key('onboarding-suggestion-label'),
+            style: theme.textTheme.bodySmall,
+          ),
+        ],
+        if (invite != null && inviteMinutes != null) ...<Widget>[
+          const SizedBox(height: 12),
+          SuggestionInviteCard(
+            minutes: inviteMinutes!,
+            skills: invite!,
+            onApply: onApplyInvite,
+            onKeep: onKeepInvite,
+          ),
+        ],
         const SizedBox(height: 8),
         for (final skill in OnboardingOptions.skills)
-          CheckboxListTile(
-            key: Key('skill-$skill'),
-            value: selected.contains(skill),
-            title: Text(skillLabel(l10n, skill)),
-            onChanged: (checked) {
-              final next = <String>[...selected];
-              if (checked ?? false) {
-                if (!next.contains(skill)) next.add(skill);
-              } else {
-                next.remove(skill);
-              }
-              onChanged(next);
-            },
+          if (OnboardingOptions.practiceSkills.contains(skill) &&
+              practiceLocked)
+            // Luyện đọc/viết dưới ngưỡng thời gian: hiển thị KHÓA kèm lý do, không bấm bật được.
+            CheckboxListTile(
+              key: Key('skill-$skill'),
+              value: false,
+              enabled: false,
+              title: Text(skillLabel(l10n, skill)),
+              subtitle: Text(
+                l10n.practiceLockedReason(practiceMinDailyMinutes),
+              ),
+              onChanged: null,
+            )
+          else
+            CheckboxListTile(
+              key: Key('skill-$skill'),
+              value: selected.contains(skill),
+              title: Text(skillLabel(l10n, skill)),
+              onChanged: (checked) {
+                final next = <String>[...selected];
+                if (checked ?? false) {
+                  if (!next.contains(skill)) next.add(skill);
+                } else {
+                  next.remove(skill);
+                }
+                onChanged(next);
+              },
+            ),
+        if (practiceLocked)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Text(
+              l10n.practiceLockedHint,
+              key: const Key('practice-locked-hint'),
+              style: theme.textTheme.bodySmall,
+            ),
           ),
         // Kỹ năng chưa có ở Giai đoạn 1: hiển thị nhưng khóa, kèm ghi chú.
         for (final skill in OnboardingOptions.lockedSkills)

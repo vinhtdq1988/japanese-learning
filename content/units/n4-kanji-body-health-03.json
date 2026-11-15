@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-body-health",
+  "title": {
+    "vi": "Kanji cơ thể – sức khỏe (病 医 死 元)",
+    "en": "Body and health kanji (病 医 死 元)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "病",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "bệnh",
+        "en": "illness"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ビョウ",
+          "ヘイ"
+        ],
+        "kunReadings": [
+          "や.む",
+          "やまい"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "病気",
+          "reading": "びょうき",
+          "kanjiReading": "ビョウ",
+          "translation": {
+            "vi": "bệnh",
+            "en": "illness"
+          }
+        },
+        {
+          "ja": "病院",
+          "reading": "びょういん",
+          "kanjiReading": "ビョウ",
+          "translation": {
+            "vi": "bệnh viện",
+            "en": "hospital"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "医",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "y học; bác sĩ",
+        "en": "medicine"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "医者",
+          "reading": "いしゃ",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "bác sĩ",
+            "en": "doctor"
+          }
+        },
+        {
+          "ja": "医学",
+          "reading": "いがく",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "y học",
+            "en": "medicine (field)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "死",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "chết",
+        "en": "death; die"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "し.ぬ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "死亡",
+          "reading": "しぼう",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "tử vong",
+            "en": "death"
+          }
+        },
+        {
+          "ja": "死ぬ",
+          "reading": "しぬ",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "chết",
+            "en": "to die"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "元",
+      "topic": "kanji-n4-body-health",
+      "meaning": {
+        "vi": "gốc; khỏe",
+        "en": "origin; vigor"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン",
+          "ガン"
+        ],
+        "kunReadings": [
+          "もと"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "元気",
+          "reading": "げんき",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "khỏe mạnh",
+            "en": "healthy; energetic"
+          }
+        },
+        {
+          "ja": "元",
+          "reading": "もと",
+          "kanjiReading": "もと",
+          "translation": {
+            "vi": "gốc; ban đầu",
+            "en": "origin"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "病",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「病」nghĩa là gì?",
+        "en": "What does 「病」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bệnh",
+            "en": "illness"
+          },
+          {
+            "vi": "y học; bác sĩ",
+            "en": "medicine"
+          },
+          {
+            "vi": "chết",
+            "en": "death; die"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 病 nghĩa là bệnh.",
+        "en": "Correct! 病 means illness."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 病 nghĩa là bệnh, như trong 「病気」 (bệnh).",
+        "en": "Not quite. 病 means illness, as in 「病気」 (illness)."
+      }
+    },
+    {
+      "item": "病",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「病」 trong 「病気」 (“bệnh”).",
+        "en": "Type the reading of 「病」 in 「病気」 (“illness”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "びょう",
+          "ビョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 病気, 病 đọc là びょう (âm On).",
+        "en": "Correct! In 病気, 病 is read びょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 病気 (bệnh), 病 đọc là びょう (âm On).",
+        "en": "In 病気 (illness), 病 is read びょう (on'yomi)."
+      }
+    },
+    {
+      "item": "病",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「病院」(bệnh viện) đọc là gì?",
+        "en": "How is 「病院」 (hospital) read?"
+      },
+      "payload": {
+        "choices": [
+          "やいん",
+          "びょういん",
+          "ひょういん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 病院 = びょういん (bệnh viện); 病 đọc là びょう (âm On).",
+        "en": "Correct! 病院 = びょういん (hospital); 病 is read びょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "病院 đọc là びょういん (bệnh viện): 病 mang âm On びょう.",
+        "en": "病院 is read びょういん (hospital): 病 takes the on'yomi びょう."
+      }
+    },
+    {
+      "item": "医",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「医」nghĩa là gì?",
+        "en": "What does 「医」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chết",
+            "en": "death; die"
+          },
+          {
+            "vi": "y học; bác sĩ",
+            "en": "medicine"
+          },
+          {
+            "vi": "gốc; khỏe",
+            "en": "origin; vigor"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 医 nghĩa là y học; bác sĩ.",
+        "en": "Correct! 医 means medicine."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 医 nghĩa là y học; bác sĩ, như trong 「医者」 (bác sĩ).",
+        "en": "Not quite. 医 means medicine, as in 「医者」 (doctor)."
+      }
+    },
+    {
+      "item": "医",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「医」 trong 「医者」 (“bác sĩ”).",
+        "en": "Type the reading of 「医」 in 「医者」 (“doctor”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "い",
+          "イ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 医者, 医 đọc là い (âm On).",
+        "en": "Correct! In 医者, 医 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 医者 (bác sĩ), 医 đọc là い (âm On).",
+        "en": "In 医者 (doctor), 医 is read い (on'yomi)."
+      }
+    },
+    {
+      "item": "医",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「医学」(y học) đọc là gì?",
+        "en": "How is 「医学」 (medicine (field)) read?"
+      },
+      "payload": {
+        "choices": [
+          "いかく",
+          "しがく",
+          "いがく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 医学 = いがく (y học); 医 đọc là い (âm On).",
+        "en": "Correct! 医学 = いがく (medicine (field)); 医 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "医学 đọc là いがく (y học): 医 mang âm On い.",
+        "en": "医学 is read いがく (medicine (field)): 医 takes the on'yomi い."
+      }
+    },
+    {
+      "item": "死",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「死」nghĩa là gì?",
+        "en": "What does 「死」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gốc; khỏe",
+            "en": "origin; vigor"
+          },
+          {
+            "vi": "bệnh",
+            "en": "illness"
+          },
+          {
+            "vi": "chết",
+            "en": "death; die"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 死 nghĩa là chết.",
+        "en": "Correct! 死 means death; die."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 死 nghĩa là chết, như trong 「死亡」 (tử vong).",
+        "en": "Not quite. 死 means death; die, as in 「死亡」 (death)."
+      }
+    },
+    {
+      "item": "死",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「死」 trong 「死亡」 (“tử vong”).",
+        "en": "Type the reading of 「死」 in 「死亡」 (“death”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 死亡, 死 đọc là し (âm On).",
+        "en": "Correct! In 死亡, 死 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 死亡 (tử vong), 死 đọc là し (âm On).",
+        "en": "In 死亡 (death), 死 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "死",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「死ぬ」(chết) đọc là gì?",
+        "en": "How is 「死ぬ」 (to die) read?"
+      },
+      "payload": {
+        "choices": [
+          "しぬ",
+          "もと",
+          "げんき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 死ぬ = しぬ (chết); 死 đọc là し (âm On).",
+        "en": "Correct! 死ぬ = しぬ (to die); 死 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "死ぬ đọc là しぬ (chết): 死 mang âm On し.",
+        "en": "死ぬ is read しぬ (to die): 死 takes the on'yomi し."
+      }
+    },
+    {
+      "item": "元",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「元」nghĩa là gì?",
+        "en": "What does 「元」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gốc; khỏe",
+            "en": "origin; vigor"
+          },
+          {
+            "vi": "bệnh",
+            "en": "illness"
+          },
+          {
+            "vi": "y học; bác sĩ",
+            "en": "medicine"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 元 nghĩa là gốc; khỏe.",
+        "en": "Correct! 元 means origin; vigor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 元 nghĩa là gốc; khỏe, như trong 「元気」 (khỏe mạnh).",
+        "en": "Not quite. 元 means origin; vigor, as in 「元気」 (healthy; energetic)."
+      }
+    },
+    {
+      "item": "元",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「元」 trong 「元気」 (“khỏe mạnh”).",
+        "en": "Type the reading of 「元」 in 「元気」 (“healthy; energetic”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 元気, 元 đọc là げん (âm On).",
+        "en": "Correct! In 元気, 元 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 元気 (khỏe mạnh), 元 đọc là げん (âm On).",
+        "en": "In 元気 (healthy; energetic), 元 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "元",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「元」(gốc; ban đầu; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「元」 (origin; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "げん",
+          "もと",
+          "しぬ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 元 = もと (gốc; ban đầu); 元 đọc là もと (âm Kun).",
+        "en": "Correct! 元 = もと (origin); 元 is read もと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "元 đọc là もと (gốc; ban đầu): 元 mang âm Kun もと.",
+        "en": "元 is read もと (origin): 元 takes the kun'yomi もと."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "病",
+            {
+              "vi": "bệnh",
+              "en": "illness"
+            }
+          ],
+          [
+            "医",
+            {
+              "vi": "y học; bác sĩ",
+              "en": "medicine"
+            }
+          ],
+          [
+            "死",
+            {
+              "vi": "chết",
+              "en": "death; die"
+            }
+          ],
+          [
+            "元",
+            {
+              "vi": "gốc; khỏe",
+              "en": "origin; vigor"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

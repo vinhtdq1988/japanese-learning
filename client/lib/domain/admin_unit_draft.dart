@@ -8,7 +8,13 @@ import 'dart:convert';
 /// ([ExerciseDraft.item]) và được đổi thành `itemIndex` khi gửi, nên thêm/bớt/sắp xếp lại mục không làm
 /// lệch liên kết.
 
-const List<String> kUnitKinds = <String>['vocabulary', 'grammar', 'kanji'];
+const List<String> kUnitKinds = <String>[
+  'vocabulary',
+  'grammar',
+  'kanji',
+  'reading',
+  'writing',
+];
 
 /// Kỹ năng của câu hỏi kiểm tra trình độ: không có Kanji (research K12).
 const List<String> kPlacementSkills = <String>['vocabulary', 'grammar'];
@@ -446,6 +452,60 @@ class UnitDraft {
 
   bool get isKanji => kind == 'kanji';
 
+  /// Luyện đọc/viết (spec 007): bài tập KHÔNG gắn mục nên không vào lịch ôn tập.
+  bool get isReading => kind == 'reading';
+  bool get isWriting => kind == 'writing';
+  bool get isPractice => isReading || isWriting;
+
+  /// Lỗi cấu trúc riêng của bài luyện đọc/viết, cùng khóa với `fields` của server (PR2…PR5, practice-content.md).
+  /// Chỉ áp cho `kind = reading | writing`; dùng thêm [localErrors] cho lỗi chung. Chỉ xét mục/bài tập đang hoạt động.
+  Map<String, String> validate() {
+    final errors = <String, String>{};
+    if (!isPractice) return errors;
+    final activeItems = items.where((i) => i.active).toList();
+    final activeExercises = <int>[
+      for (var i = 0; i < exercises.length; i++)
+        if (exercises[i].active) i,
+    ];
+    if (isReading) {
+      // Đúng 1 mục là đoạn văn; 2–5 câu hỏi trắc nghiệm không gắn mục.
+      if (activeItems.length != 1) errors['items'] = 'passage';
+      if (activeExercises.length < 2 || activeExercises.length > 5) {
+        errors['exercises'] = 'questions';
+      }
+      for (final i in activeExercises) {
+        if (exercises[i].type != 'multiple_choice') {
+          errors['exercises[$i].type'] = 'multiple_choice';
+        }
+        if (exercises[i].item != null) {
+          errors['exercises[$i].item'] = 'unlinked';
+        }
+      }
+    } else {
+      // 3–6 mục; mỗi mục đúng 1 bài điền từ có đáp án chấp nhận, không gắn mục.
+      if (activeItems.length < 3 || activeItems.length > 6) {
+        errors['items'] = 'words';
+      }
+      if (activeExercises.length != activeItems.length) {
+        errors['exercises'] = 'one_per_item';
+      }
+      for (final i in activeExercises) {
+        final ex = exercises[i];
+        if (ex.type != 'fill_blank') {
+          errors['exercises[$i].type'] = 'fill_blank';
+        }
+        if (ex.item != null) {
+          errors['exercises[$i].item'] = 'unlinked';
+        }
+        if (ex.rawPayload == null &&
+            ex.acceptedAnswers.every((a) => a.trim().isEmpty)) {
+          errors['exercises[$i].payload.accepted_answers'] = 'accepted_answers';
+        }
+      }
+    }
+    return errors;
+  }
+
   /// Thân `AdminUnitWrite`. Ném [FormatException] nếu JSON thô của một bài tập không hợp lệ.
   Map<String, Object?> toJson() => <String, Object?>{
     'kind': kind,
@@ -455,7 +515,7 @@ class UnitDraft {
     'topicId': topicId,
     'difficulty': difficulty,
     // Bài Kanji không có tầng nền tảng (chỉ `core`).
-    'tier': level == 'N5' && !isKanji ? tier : 'core',
+    'tier': level == 'N5' && !isKanji && !isPractice ? tier : 'core',
     'estMinutes': estMinutes,
     'sequence': sequence,
     'items': items.map((i) => i.toJson(kanji: isKanji)).toList(),

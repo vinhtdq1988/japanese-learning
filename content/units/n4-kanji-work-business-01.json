@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-work-business",
+  "title": {
+    "vi": "Kanji công việc (会 社 員)",
+    "en": "Work and business kanji (会 社 員)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "会",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "gặp; họp",
+        "en": "meet; association"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ",
+          "エ"
+        ],
+        "kunReadings": [
+          "あ.う"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "会社",
+          "reading": "かいしゃ",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "công ty",
+            "en": "company"
+          }
+        },
+        {
+          "ja": "会う",
+          "reading": "あう",
+          "kanjiReading": "あ",
+          "translation": {
+            "vi": "gặp",
+            "en": "to meet"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "社",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "công ty; đền thờ",
+        "en": "company; shrine"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シャ"
+        ],
+        "kunReadings": [
+          "やしろ"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "会社",
+          "reading": "かいしゃ",
+          "kanjiReading": "シャ",
+          "translation": {
+            "vi": "công ty",
+            "en": "company"
+          }
+        },
+        {
+          "ja": "社会",
+          "reading": "しゃかい",
+          "kanjiReading": "シャ",
+          "translation": {
+            "vi": "xã hội",
+            "en": "society"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "員",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "nhân viên; thành viên",
+        "en": "member; staff"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "会社員",
+          "reading": "かいしゃいん",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "nhân viên công ty",
+            "en": "office worker"
+          }
+        },
+        {
+          "ja": "店員",
+          "reading": "てんいん",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "nhân viên cửa hàng",
+            "en": "shop clerk"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "会",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「会」nghĩa là gì?",
+        "en": "What does 「会」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gặp; họp",
+            "en": "meet; association"
+          },
+          {
+            "vi": "công ty; đền thờ",
+            "en": "company; shrine"
+          },
+          {
+            "vi": "nhân viên; thành viên",
+            "en": "member; staff"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 会 nghĩa là gặp; họp.",
+        "en": "Correct! 会 means meet; association."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 会 nghĩa là gặp; họp, như trong 「会社」 (công ty).",
+        "en": "Not quite. 会 means meet; association, as in 「会社」 (company)."
+      }
+    },
+    {
+      "item": "会",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「会」 trong 「会社」 (“công ty”).",
+        "en": "Type the reading of 「会」 in 「会社」 (“company”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 会社, 会 đọc là かい (âm On).",
+        "en": "Correct! In 会社, 会 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 会社 (công ty), 会 đọc là かい (âm On).",
+        "en": "In 会社 (company), 会 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "会",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「会う」(gặp) đọc là gì?",
+        "en": "How is 「会う」 (to meet) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいう",
+          "あう",
+          "かいしゃ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 会う = あう (gặp); 会 đọc là あ (âm Kun).",
+        "en": "Correct! 会う = あう (to meet); 会 is read あ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "会う đọc là あう (gặp): 会 mang âm Kun あ.",
+        "en": "会う is read あう (to meet): 会 takes the kun'yomi あ."
+      }
+    },
+    {
+      "item": "社",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「社」nghĩa là gì?",
+        "en": "What does 「社」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhân viên; thành viên",
+            "en": "member; staff"
+          },
+          {
+            "vi": "công ty; đền thờ",
+            "en": "company; shrine"
+          },
+          {
+            "vi": "gặp; họp",
+            "en": "meet; association"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 社 nghĩa là công ty; đền thờ.",
+        "en": "Correct! 社 means company; shrine."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 社 nghĩa là công ty; đền thờ, như trong 「会社」 (công ty).",
+        "en": "Not quite. 社 means company; shrine, as in 「会社」 (company)."
+      }
+    },
+    {
+      "item": "社",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「社」 trong 「会社」 (“công ty”).",
+        "en": "Type the reading of 「社」 in 「会社」 (“company”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゃ",
+          "シャ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 会社, 社 đọc là しゃ (âm On).",
+        "en": "Correct! In 会社, 社 is read しゃ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 会社 (công ty), 社 đọc là しゃ (âm On).",
+        "en": "In 会社 (company), 社 is read しゃ (on'yomi)."
+      }
+    },
+    {
+      "item": "社",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「社会」(xã hội) đọc là gì?",
+        "en": "How is 「社会」 (society) read?"
+      },
+      "payload": {
+        "choices": [
+          "やしろかい",
+          "じゃかい",
+          "しゃかい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 社会 = しゃかい (xã hội); 社 đọc là しゃ (âm On).",
+        "en": "Correct! 社会 = しゃかい (society); 社 is read しゃ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "社会 đọc là しゃかい (xã hội): 社 mang âm On しゃ.",
+        "en": "社会 is read しゃかい (society): 社 takes the on'yomi しゃ."
+      }
+    },
+    {
+      "item": "員",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「員」nghĩa là gì?",
+        "en": "What does 「員」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gặp; họp",
+            "en": "meet; association"
+          },
+          {
+            "vi": "công ty; đền thờ",
+            "en": "company; shrine"
+          },
+          {
+            "vi": "nhân viên; thành viên",
+            "en": "member; staff"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 員 nghĩa là nhân viên; thành viên.",
+        "en": "Correct! 員 means member; staff."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 員 nghĩa là nhân viên; thành viên, như trong 「会社員」 (nhân viên công ty).",
+        "en": "Not quite. 員 means member; staff, as in 「会社員」 (office worker)."
+      }
+    },
+    {
+      "item": "員",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「員」 trong 「会社員」 (“nhân viên công ty”).",
+        "en": "Type the reading of 「員」 in 「会社員」 (“office worker”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いん",
+          "イン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 会社員, 員 đọc là いん (âm On).",
+        "en": "Correct! In 会社員, 員 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 会社員 (nhân viên công ty), 員 đọc là いん (âm On).",
+        "en": "In 会社員 (office worker), 員 is read いん (on'yomi)."
+      }
+    },
+    {
+      "item": "員",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「店員」(nhân viên cửa hàng) đọc là gì?",
+        "en": "How is 「店員」 (shop clerk) read?"
+      },
+      "payload": {
+        "choices": [
+          "てんいん",
+          "てんあ",
+          "てんかい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 店員 = てんいん (nhân viên cửa hàng); 員 đọc là いん (âm On).",
+        "en": "Correct! 店員 = てんいん (shop clerk); 員 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "店員 đọc là てんいん (nhân viên cửa hàng): 員 mang âm On いん.",
+        "en": "店員 is read てんいん (shop clerk): 員 takes the on'yomi いん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "会",
+            {
+              "vi": "gặp; họp",
+              "en": "meet; association"
+            }
+          ],
+          [
+            "社",
+            {
+              "vi": "công ty; đền thờ",
+              "en": "company; shrine"
+            }
+          ],
+          [
+            "員",
+            {
+              "vi": "nhân viên; thành viên",
+              "en": "member; staff"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

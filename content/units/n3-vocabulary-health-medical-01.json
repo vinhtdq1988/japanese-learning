@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-health-medical",
+  "title": {
+    "vi": "Bệnh viện và điều trị",
+    "en": "Hospitals and treatment"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "医療",
+      "reading": "いりょう",
+      "meaning": {
+        "vi": "Y tế; chăm sóc y khoa",
+        "en": "Medical care"
+      },
+      "examples": [
+        {
+          "ja": "日本の医療は、世界でも高い水準です。",
+          "reading": "にほんのいりょうは、せかいでもたかいすいじゅんです。",
+          "translation": {
+            "vi": "Y tế Nhật Bản ở mức cao trên thế giới.",
+            "en": "Japan's medical care is of a high standard even by world standards."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "医学",
+      "reading": "いがく",
+      "meaning": {
+        "vi": "Y học",
+        "en": "Medicine (science)"
+      },
+      "examples": [
+        {
+          "ja": "兄は、大学で医学を勉強しています。",
+          "reading": "あには、だいがくでいがくをべんきょうしています。",
+          "translation": {
+            "vi": "Anh trai tôi đang học y ở đại học.",
+            "en": "My older brother studies medicine at university."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "医師",
+      "reading": "いし",
+      "meaning": {
+        "vi": "Bác sĩ (chức danh chính thức)",
+        "en": "Physician"
+      },
+      "examples": [
+        {
+          "ja": "医師の資格をとるには、国家試験に合格します。",
+          "reading": "いしのしかくをとるには、こっかしけんにごうかくします。",
+          "translation": {
+            "vi": "Muốn có chứng chỉ bác sĩ phải đỗ kỳ thi quốc gia.",
+            "en": "To become a physician you must pass a national exam."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "患者",
+      "reading": "かんじゃ",
+      "meaning": {
+        "vi": "Bệnh nhân",
+        "en": "Patient"
+      },
+      "examples": [
+        {
+          "ja": "この病院は、毎日たくさんの患者が来ます。",
+          "reading": "このびょういんは、まいにちたくさんのかんじゃがきます。",
+          "translation": {
+            "vi": "Bệnh viện này ngày nào cũng có rất nhiều bệnh nhân.",
+            "en": "Many patients come to this hospital every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "診察",
+      "reading": "しんさつ",
+      "meaning": {
+        "vi": "Khám bệnh",
+        "en": "Medical examination"
+      },
+      "examples": [
+        {
+          "ja": "医者が、患者を丁寧に診察しました。",
+          "reading": "いしゃが、かんじゃをていねいにしんさつしました。",
+          "translation": {
+            "vi": "Bác sĩ đã khám cho bệnh nhân rất cẩn thận.",
+            "en": "The doctor examined the patient carefully."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "診断",
+      "reading": "しんだん",
+      "meaning": {
+        "vi": "Chẩn đoán",
+        "en": "Diagnosis"
+      },
+      "examples": [
+        {
+          "ja": "検査の結果、軽い風邪と診断されました。",
+          "reading": "けんさのけっか、かるいかぜとしんだんされました。",
+          "translation": {
+            "vi": "Sau kiểm tra, tôi được chẩn đoán bị cảm nhẹ.",
+            "en": "After tests I was diagnosed with a mild cold."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "治療",
+      "reading": "ちりょう",
+      "meaning": {
+        "vi": "Điều trị",
+        "en": "Treatment"
+      },
+      "examples": [
+        {
+          "ja": "病院で、毎週治療を受けています。",
+          "reading": "びょういんで、まいしゅうちりょうをうけています。",
+          "translation": {
+            "vi": "Tôi nhận điều trị ở bệnh viện mỗi tuần.",
+            "en": "I receive treatment at the hospital every week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "手術",
+      "reading": "しゅじゅつ",
+      "meaning": {
+        "vi": "Phẫu thuật",
+        "en": "Surgery"
+      },
+      "examples": [
+        {
+          "ja": "母は、来月、足の手術をします。",
+          "reading": "ははは、らいげつ、あしのしゅじゅつをします。",
+          "translation": {
+            "vi": "Mẹ tôi sẽ phẫu thuật chân vào tháng sau.",
+            "en": "My mother will have surgery on her leg next month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "処方",
+      "reading": "しょほう",
+      "meaning": {
+        "vi": "Kê đơn",
+        "en": "Prescription"
+      },
+      "examples": [
+        {
+          "ja": "医者に、風邪の薬を処方してもらいました。",
+          "reading": "いしゃに、かぜのくすりをしょほうしてもらいました。",
+          "translation": {
+            "vi": "Tôi đã được bác sĩ kê thuốc cảm.",
+            "en": "The doctor prescribed me cold medicine."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "薬局",
+      "reading": "やっきょく",
+      "meaning": {
+        "vi": "Hiệu thuốc",
+        "en": "Pharmacy"
+      },
+      "examples": [
+        {
+          "ja": "病院の近くの薬局で、薬を受け取りました。",
+          "reading": "びょういんのちかくのやっきょくで、くすりをうけとりました。",
+          "translation": {
+            "vi": "Tôi đã nhận thuốc ở hiệu thuốc gần bệnh viện.",
+            "en": "I picked up my medicine at the pharmacy near the hospital."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "内科",
+      "reading": "ないか",
+      "meaning": {
+        "vi": "Khoa nội",
+        "en": "Internal medicine"
+      },
+      "examples": [
+        {
+          "ja": "熱があるので、内科に行きました。",
+          "reading": "ねつがあるので、ないかにいきました。",
+          "translation": {
+            "vi": "Vì bị sốt nên tôi đã đến khoa nội.",
+            "en": "I had a fever, so I went to internal medicine."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "外科",
+      "reading": "げか",
+      "meaning": {
+        "vi": "Khoa ngoại",
+        "en": "Surgery department"
+      },
+      "examples": [
+        {
+          "ja": "足を骨折して、外科で見てもらいました。",
+          "reading": "あしをこっせつして、げかでみてもらいました。",
+          "translation": {
+            "vi": "Tôi bị gãy chân nên đã đến khoa ngoại khám.",
+            "en": "I broke my leg and was seen in the surgery department."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "医療",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本の（　）は、世界でも高い水準です。 — Nghĩa của câu: “Y tế Nhật Bản ở mức cao trên thế giới.”",
+        "en": "Choose the word that fits the blank: 日本の（　）は、世界でも高い水準です。 — Meaning of the sentence: “Japan's medical care is of a high standard even by world standards.”"
+      },
+      "payload": {
+        "choices": [
+          "医療",
+          "手術",
+          "処方",
+          "外科"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医療」(Y tế; chăm sóc y khoa) hợp nghĩa câu này: “Y tế Nhật Bản ở mức cao trên thế giới.”",
+        "en": "Correct! 「医療」(Medical care) fits this sentence: “Japan's medical care is of a high standard even by world standards.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Y tế Nhật Bản ở mức cao trên thế giới.”, nên cần 「医療」(Y tế; chăm sóc y khoa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Japan's medical care is of a high standard even by world standards.”, so it needs 「医療」(Medical care); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "医学",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は、大学で（　）を勉強しています。 — Nghĩa của câu: “Anh trai tôi đang học y ở đại học.”",
+        "en": "Choose the word that fits the blank: 兄は、大学で（　）を勉強しています。 — Meaning of the sentence: “My older brother studies medicine at university.”"
+      },
+      "payload": {
+        "choices": [
+          "医師",
+          "医学",
+          "医療",
+          "処方"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医学」(Y học) hợp nghĩa câu này: “Anh trai tôi đang học y ở đại học.”",
+        "en": "Correct! 「医学」(Medicine (science)) fits this sentence: “My older brother studies medicine at university.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh trai tôi đang học y ở đại học.”, nên cần 「医学」(Y học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother studies medicine at university.”, so it needs 「医学」(Medicine (science)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "医師",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の資格をとるには、国家試験に合格します。 — Nghĩa của câu: “Muốn có chứng chỉ bác sĩ phải đỗ kỳ thi quốc gia.”",
+        "en": "Choose the word that fits the blank: （　）の資格をとるには、国家試験に合格します。 — Meaning of the sentence: “To become a physician you must pass a national exam.”"
+      },
+      "payload": {
+        "choices": [
+          "患者",
+          "内科",
+          "医師",
+          "治療"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医師」(Bác sĩ (chức danh chính thức)) hợp nghĩa câu này: “Muốn có chứng chỉ bác sĩ phải đỗ kỳ thi quốc gia.”",
+        "en": "Correct! 「医師」(Physician) fits this sentence: “To become a physician you must pass a national exam.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Muốn có chứng chỉ bác sĩ phải đỗ kỳ thi quốc gia.”, nên cần 「医師」(Bác sĩ (chức danh chính thức)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To become a physician you must pass a national exam.”, so it needs 「医師」(Physician); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "患者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この病院は、毎日たくさんの（　）が来ます。 — Nghĩa của câu: “Bệnh viện này ngày nào cũng có rất nhiều bệnh nhân.”",
+        "en": "Choose the word that fits the blank: この病院は、毎日たくさんの（　）が来ます。 — Meaning of the sentence: “Many patients come to this hospital every day.”"
+      },
+      "payload": {
+        "choices": [
+          "医学",
+          "医療",
+          "薬局",
+          "患者"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「患者」(Bệnh nhân) hợp nghĩa câu này: “Bệnh viện này ngày nào cũng có rất nhiều bệnh nhân.”",
+        "en": "Correct! 「患者」(Patient) fits this sentence: “Many patients come to this hospital every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bệnh viện này ngày nào cũng có rất nhiều bệnh nhân.”, nên cần 「患者」(Bệnh nhân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Many patients come to this hospital every day.”, so it needs 「患者」(Patient); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "診察",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 医者が、患者を丁寧に（　）しました。 — Nghĩa của câu: “Bác sĩ đã khám cho bệnh nhân rất cẩn thận.”",
+        "en": "Choose the word that fits the blank: 医者が、患者を丁寧に（　）しました。 — Meaning of the sentence: “The doctor examined the patient carefully.”"
+      },
+      "payload": {
+        "choices": [
+          "診察",
+          "治療",
+          "医療",
+          "医学"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「診察」(Khám bệnh) hợp nghĩa câu này: “Bác sĩ đã khám cho bệnh nhân rất cẩn thận.”",
+        "en": "Correct! 「診察」(Medical examination) fits this sentence: “The doctor examined the patient carefully.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bác sĩ đã khám cho bệnh nhân rất cẩn thận.”, nên cần 「診察」(Khám bệnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The doctor examined the patient carefully.”, so it needs 「診察」(Medical examination); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "診断",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 検査の結果、軽い風邪と（　）されました。 — Nghĩa của câu: “Sau kiểm tra, tôi được chẩn đoán bị cảm nhẹ.”",
+        "en": "Choose the word that fits the blank: 検査の結果、軽い風邪と（　）されました。 — Meaning of the sentence: “After tests I was diagnosed with a mild cold.”"
+      },
+      "payload": {
+        "choices": [
+          "薬局",
+          "診断",
+          "診察",
+          "医療"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「診断」(Chẩn đoán) hợp nghĩa câu này: “Sau kiểm tra, tôi được chẩn đoán bị cảm nhẹ.”",
+        "en": "Correct! 「診断」(Diagnosis) fits this sentence: “After tests I was diagnosed with a mild cold.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sau kiểm tra, tôi được chẩn đoán bị cảm nhẹ.”, nên cần 「診断」(Chẩn đoán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After tests I was diagnosed with a mild cold.”, so it needs 「診断」(Diagnosis); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "治療",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 病院で、毎週（　）を受けています。 — Nghĩa của câu: “Tôi nhận điều trị ở bệnh viện mỗi tuần.”",
+        "en": "Choose the word that fits the blank: 病院で、毎週（　）を受けています。 — Meaning of the sentence: “I receive treatment at the hospital every week.”"
+      },
+      "payload": {
+        "choices": [
+          "内科",
+          "医師",
+          "治療",
+          "医療"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「治療」(Điều trị) hợp nghĩa câu này: “Tôi nhận điều trị ở bệnh viện mỗi tuần.”",
+        "en": "Correct! 「治療」(Treatment) fits this sentence: “I receive treatment at the hospital every week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nhận điều trị ở bệnh viện mỗi tuần.”, nên cần 「治療」(Điều trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I receive treatment at the hospital every week.”, so it needs 「治療」(Treatment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "手術",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母は、来月、足の（　）をします。 — Nghĩa của câu: “Mẹ tôi sẽ phẫu thuật chân vào tháng sau.”",
+        "en": "Choose the word that fits the blank: 母は、来月、足の（　）をします。 — Meaning of the sentence: “My mother will have surgery on her leg next month.”"
+      },
+      "payload": {
+        "choices": [
+          "診察",
+          "処方",
+          "治療",
+          "手術"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「手術」(Phẫu thuật) hợp nghĩa câu này: “Mẹ tôi sẽ phẫu thuật chân vào tháng sau.”",
+        "en": "Correct! 「手術」(Surgery) fits this sentence: “My mother will have surgery on her leg next month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mẹ tôi sẽ phẫu thuật chân vào tháng sau.”, nên cần 「手術」(Phẫu thuật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My mother will have surgery on her leg next month.”, so it needs 「手術」(Surgery); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "処方",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 医者に、風邪の薬を（　）してもらいました。 — Nghĩa của câu: “Tôi đã được bác sĩ kê thuốc cảm.”",
+        "en": "Choose the word that fits the blank: 医者に、風邪の薬を（　）してもらいました。 — Meaning of the sentence: “The doctor prescribed me cold medicine.”"
+      },
+      "payload": {
+        "choices": [
+          "処方",
+          "内科",
+          "薬局",
+          "治療"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「処方」(Kê đơn) hợp nghĩa câu này: “Tôi đã được bác sĩ kê thuốc cảm.”",
+        "en": "Correct! 「処方」(Prescription) fits this sentence: “The doctor prescribed me cold medicine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã được bác sĩ kê thuốc cảm.”, nên cần 「処方」(Kê đơn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The doctor prescribed me cold medicine.”, so it needs 「処方」(Prescription); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "薬局",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 病院の近くの（　）で、薬を受け取りました。 — Nghĩa của câu: “Tôi đã nhận thuốc ở hiệu thuốc gần bệnh viện.”",
+        "en": "Choose the word that fits the blank: 病院の近くの（　）で、薬を受け取りました。 — Meaning of the sentence: “I picked up my medicine at the pharmacy near the hospital.”"
+      },
+      "payload": {
+        "choices": [
+          "診察",
+          "薬局",
+          "内科",
+          "治療"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「薬局」(Hiệu thuốc) hợp nghĩa câu này: “Tôi đã nhận thuốc ở hiệu thuốc gần bệnh viện.”",
+        "en": "Correct! 「薬局」(Pharmacy) fits this sentence: “I picked up my medicine at the pharmacy near the hospital.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nhận thuốc ở hiệu thuốc gần bệnh viện.”, nên cần 「薬局」(Hiệu thuốc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I picked up my medicine at the pharmacy near the hospital.”, so it needs 「薬局」(Pharmacy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "内科",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 熱があるので、（　）に行きました。 — Nghĩa của câu: “Vì bị sốt nên tôi đã đến khoa nội.”",
+        "en": "Choose the word that fits the blank: 熱があるので、（　）に行きました。 — Meaning of the sentence: “I had a fever, so I went to internal medicine.”"
+      },
+      "payload": {
+        "choices": [
+          "診断",
+          "医療",
+          "内科",
+          "手術"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「内科」(Khoa nội) hợp nghĩa câu này: “Vì bị sốt nên tôi đã đến khoa nội.”",
+        "en": "Correct! 「内科」(Internal medicine) fits this sentence: “I had a fever, so I went to internal medicine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bị sốt nên tôi đã đến khoa nội.”, nên cần 「内科」(Khoa nội); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I had a fever, so I went to internal medicine.”, so it needs 「内科」(Internal medicine); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "外科",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 足を骨折して、（　）で見てもらいました。 — Nghĩa của câu: “Tôi bị gãy chân nên đã đến khoa ngoại khám.”",
+        "en": "Choose the word that fits the blank: 足を骨折して、（　）で見てもらいました。 — Meaning of the sentence: “I broke my leg and was seen in the surgery department.”"
+      },
+      "payload": {
+        "choices": [
+          "医療",
+          "診断",
+          "医師",
+          "外科"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「外科」(Khoa ngoại) hợp nghĩa câu này: “Tôi bị gãy chân nên đã đến khoa ngoại khám.”",
+        "en": "Correct! 「外科」(Surgery department) fits this sentence: “I broke my leg and was seen in the surgery department.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bị gãy chân nên đã đến khoa ngoại khám.”, nên cần 「外科」(Khoa ngoại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I broke my leg and was seen in the surgery department.”, so it needs 「外科」(Surgery department); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "医療",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 日本の「医療」は、世界でも高い水準です。",
+        "en": "Choose the correct reading of the word in 「」: 日本の「医療」は、世界でも高い水準です。"
+      },
+      "payload": {
+        "choices": [
+          "ないか",
+          "いりょう",
+          "しゅじゅつ",
+          "かんじゃ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医療」 đọc là 「いりょう」, nghĩa là Y tế; chăm sóc y khoa.",
+        "en": "Correct! 「医療」 is read 「いりょう」 and means Medical care."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「医療」 đọc là 「いりょう」 (Y tế; chăm sóc y khoa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「医療」 is read 「いりょう」 (Medical care); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "患者",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この病院は、毎日たくさんの「患者」が来ます。",
+        "en": "Choose the correct reading of the word in 「」: この病院は、毎日たくさんの「患者」が来ます。"
+      },
+      "payload": {
+        "choices": [
+          "しゅじゅつ",
+          "しょほう",
+          "かんじゃ",
+          "げか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「患者」 đọc là 「かんじゃ」, nghĩa là Bệnh nhân.",
+        "en": "Correct! 「患者」 is read 「かんじゃ」 and means Patient."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「患者」 đọc là 「かんじゃ」 (Bệnh nhân); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「患者」 is read 「かんじゃ」 (Patient); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "治療",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 病院で、毎週「治療」を受けています。",
+        "en": "Choose the correct reading of the word in 「」: 病院で、毎週「治療」を受けています。"
+      },
+      "payload": {
+        "choices": [
+          "ないか",
+          "いりょう",
+          "いがく",
+          "ちりょう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「治療」 đọc là 「ちりょう」, nghĩa là Điều trị.",
+        "en": "Correct! 「治療」 is read 「ちりょう」 and means Treatment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「治療」 đọc là 「ちりょう」 (Điều trị); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「治療」 is read 「ちりょう」 (Treatment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "薬局",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 病院の近くの「薬局」で、薬を受け取りました。",
+        "en": "Choose the correct reading of the word in 「」: 病院の近くの「薬局」で、薬を受け取りました。"
+      },
+      "payload": {
+        "choices": [
+          "やっきょく",
+          "いがく",
+          "しんだん",
+          "しょほう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「薬局」 đọc là 「やっきょく」, nghĩa là Hiệu thuốc.",
+        "en": "Correct! 「薬局」 is read 「やっきょく」 and means Pharmacy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「薬局」 đọc là 「やっきょく」 (Hiệu thuốc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「薬局」 is read 「やっきょく」 (Pharmacy); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "医師",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「いし」の資格をとるには、国家試験に合格します。",
+        "en": "Choose the correct way to write the word in 「」: 「いし」の資格をとるには、国家試験に合格します。"
+      },
+      "payload": {
+        "choices": [
+          "処方",
+          "内科",
+          "医師",
+          "医療"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いし」 viết là 「医師」, nghĩa là Bác sĩ (chức danh chính thức).",
+        "en": "Correct! 「いし」 is written 「医師」 and means Physician."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いし」 viết là 「医師」 (Bác sĩ (chức danh chính thức)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いし」 is written 「医師」 (Physician); the other words are read differently."
+      }
+    },
+    {
+      "item": "処方",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 医者に、風邪の薬を「しょほう」してもらいました。",
+        "en": "Choose the correct way to write the word in 「」: 医者に、風邪の薬を「しょほう」してもらいました。"
+      },
+      "payload": {
+        "choices": [
+          "患者",
+          "医療",
+          "医師",
+          "処方"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しょほう」 viết là 「処方」, nghĩa là Kê đơn.",
+        "en": "Correct! 「しょほう」 is written 「処方」 and means Prescription."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しょほう」 viết là 「処方」 (Kê đơn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しょほう」 is written 「処方」 (Prescription); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (果 容 必)",
+    "en": "Adjectives and quantity kanji (果 容 必)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "果",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "quả; kết quả",
+        "en": "fruit; result"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [
+          "は.たす",
+          "は.て"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "結果",
+          "reading": "けっか",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "kết quả",
+            "en": "result"
+          }
+        },
+        {
+          "ja": "果たす",
+          "reading": "はたす",
+          "kanjiReading": "は",
+          "translation": {
+            "vi": "hoàn thành; thực hiện",
+            "en": "to fulfill"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "容",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "chứa; dung mạo",
+        "en": "contain; form"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "内容",
+          "reading": "ないよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "nội dung",
+            "en": "content"
+          }
+        },
+        {
+          "ja": "美容",
+          "reading": "びよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "làm đẹp",
+            "en": "beauty care"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "必",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "nhất định; tất",
+        "en": "surely; must"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒツ"
+        ],
+        "kunReadings": [
+          "かなら.ず"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "必要",
+          "reading": "ひつよう",
+          "kanjiReading": "ヒツ",
+          "translation": {
+            "vi": "cần thiết",
+            "en": "necessary"
+          }
+        },
+        {
+          "ja": "必ず",
+          "reading": "かならず",
+          "kanjiReading": "かなら",
+          "translation": {
+            "vi": "nhất định",
+            "en": "without fail"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "果",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「果」nghĩa là gì?",
+        "en": "What does 「果」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quả; kết quả",
+            "en": "fruit; result"
+          },
+          {
+            "vi": "chứa; dung mạo",
+            "en": "contain; form"
+          },
+          {
+            "vi": "nhất định; tất",
+            "en": "surely; must"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 果 nghĩa là quả; kết quả.",
+        "en": "Correct! 果 means fruit; result."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 果 nghĩa là quả; kết quả, như trong 「結果」 (kết quả).",
+        "en": "Not quite. 果 means fruit; result, as in 「結果」 (result)."
+      }
+    },
+    {
+      "item": "果",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「果」 trong 「結果」 (“kết quả”).",
+        "en": "Type the reading of 「果」 in 「結果」 (“result”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 結果, 果 đọc là か (âm On).",
+        "en": "Correct! In 結果, 果 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 結果 (kết quả), 果 đọc là か (âm On).",
+        "en": "In 結果 (result), 果 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "果",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「果たす」(hoàn thành; thực hiện) đọc là gì?",
+        "en": "How is 「果たす」 (to fulfill) read?"
+      },
+      "payload": {
+        "choices": [
+          "かたす",
+          "はたす",
+          "びよう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 果たす = はたす (hoàn thành; thực hiện); 果 đọc là は (âm Kun).",
+        "en": "Correct! 果たす = はたす (to fulfill); 果 is read は (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "果たす đọc là はたす (hoàn thành; thực hiện): 果 mang âm Kun は.",
+        "en": "果たす is read はたす (to fulfill): 果 takes the kun'yomi は."
+      }
+    },
+    {
+      "item": "容",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「容」nghĩa là gì?",
+        "en": "What does 「容」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhất định; tất",
+            "en": "surely; must"
+          },
+          {
+            "vi": "chứa; dung mạo",
+            "en": "contain; form"
+          },
+          {
+            "vi": "quả; kết quả",
+            "en": "fruit; result"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 容 nghĩa là chứa; dung mạo.",
+        "en": "Correct! 容 means contain; form."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 容 nghĩa là chứa; dung mạo, như trong 「内容」 (nội dung).",
+        "en": "Not quite. 容 means contain; form, as in 「内容」 (content)."
+      }
+    },
+    {
+      "item": "容",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「容」 trong 「内容」 (“nội dung”).",
+        "en": "Type the reading of 「容」 in 「内容」 (“content”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 内容, 容 đọc là よう (âm On).",
+        "en": "Correct! In 内容, 容 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 内容 (nội dung), 容 đọc là よう (âm On).",
+        "en": "In 内容 (content), 容 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "容",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「美容」(làm đẹp) đọc là gì?",
+        "en": "How is 「美容」 (beauty care) read?"
+      },
+      "payload": {
+        "choices": [
+          "びよ",
+          "びかなら",
+          "びよう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 美容 = びよう (làm đẹp); 容 đọc là よう (âm On).",
+        "en": "Correct! 美容 = びよう (beauty care); 容 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "美容 đọc là びよう (làm đẹp): 容 mang âm On よう.",
+        "en": "美容 is read びよう (beauty care): 容 takes the on'yomi よう."
+      }
+    },
+    {
+      "item": "必",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「必」nghĩa là gì?",
+        "en": "What does 「必」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quả; kết quả",
+            "en": "fruit; result"
+          },
+          {
+            "vi": "chứa; dung mạo",
+            "en": "contain; form"
+          },
+          {
+            "vi": "nhất định; tất",
+            "en": "surely; must"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 必 nghĩa là nhất định; tất.",
+        "en": "Correct! 必 means surely; must."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 必 nghĩa là nhất định; tất, như trong 「必要」 (cần thiết).",
+        "en": "Not quite. 必 means surely; must, as in 「必要」 (necessary)."
+      }
+    },
+    {
+      "item": "必",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「必」 trong 「必要」 (“cần thiết”).",
+        "en": "Type the reading of 「必」 in 「必要」 (“necessary”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひつ",
+          "ヒツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 必要, 必 đọc là ひつ (âm On).",
+        "en": "Correct! In 必要, 必 is read ひつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 必要 (cần thiết), 必 đọc là ひつ (âm On).",
+        "en": "In 必要 (necessary), 必 is read ひつ (on'yomi)."
+      }
+    },
+    {
+      "item": "必",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「必ず」(nhất định) đọc là gì?",
+        "en": "How is 「必ず」 (without fail) read?"
+      },
+      "payload": {
+        "choices": [
+          "かならず",
+          "ひつず",
+          "ないよう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 必ず = かならず (nhất định); 必 đọc là かなら (âm Kun).",
+        "en": "Correct! 必ず = かならず (without fail); 必 is read かなら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "必ず đọc là かならず (nhất định): 必 mang âm Kun かなら.",
+        "en": "必ず is read かならず (without fail): 必 takes the kun'yomi かなら."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "果",
+            {
+              "vi": "quả; kết quả",
+              "en": "fruit; result"
+            }
+          ],
+          [
+            "容",
+            {
+              "vi": "chứa; dung mạo",
+              "en": "contain; form"
+            }
+          ],
+          [
+            "必",
+            {
+              "vi": "nhất định; tất",
+              "en": "surely; must"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

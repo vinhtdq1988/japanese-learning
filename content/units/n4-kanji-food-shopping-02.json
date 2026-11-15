@@ -1,0 +1,416 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-food-shopping",
+  "title": {
+    "vi": "Kanji ăn uống – mua sắm (味 料 理)",
+    "en": "Food and shopping kanji (味 料 理)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "味",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "vị; mùi vị",
+        "en": "taste; flavor"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ミ"
+        ],
+        "kunReadings": [
+          "あじ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "意味",
+          "reading": "いみ",
+          "kanjiReading": "ミ",
+          "translation": {
+            "vi": "ý nghĩa",
+            "en": "meaning"
+          }
+        },
+        {
+          "ja": "味",
+          "reading": "あじ",
+          "kanjiReading": "あじ",
+          "translation": {
+            "vi": "vị",
+            "en": "taste"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "料",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "nguyên liệu; phí",
+        "en": "material; fee"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リョウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "料理",
+          "reading": "りょうり",
+          "kanjiReading": "リョウ",
+          "translation": {
+            "vi": "món ăn; nấu ăn",
+            "en": "cooking"
+          }
+        },
+        {
+          "ja": "料金",
+          "reading": "りょうきん",
+          "kanjiReading": "リョウ",
+          "translation": {
+            "vi": "tiền phí",
+            "en": "fee"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "理",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "lý; lẽ",
+        "en": "reason; logic"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "料理",
+          "reading": "りょうり",
+          "kanjiReading": "リ",
+          "translation": {
+            "vi": "món ăn; nấu ăn",
+            "en": "cooking"
+          }
+        },
+        {
+          "ja": "理由",
+          "reading": "りゆう",
+          "kanjiReading": "リ",
+          "translation": {
+            "vi": "lý do",
+            "en": "reason"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "味",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「味」nghĩa là gì?",
+        "en": "What does 「味」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vị; mùi vị",
+            "en": "taste; flavor"
+          },
+          {
+            "vi": "nguyên liệu; phí",
+            "en": "material; fee"
+          },
+          {
+            "vi": "lý; lẽ",
+            "en": "reason; logic"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 味 nghĩa là vị; mùi vị.",
+        "en": "Correct! 味 means taste; flavor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 味 nghĩa là vị; mùi vị, như trong 「意味」 (ý nghĩa).",
+        "en": "Not quite. 味 means taste; flavor, as in 「意味」 (meaning)."
+      }
+    },
+    {
+      "item": "味",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「味」 trong 「意味」 (“ý nghĩa”).",
+        "en": "Type the reading of 「味」 in 「意味」 (“meaning”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "み",
+          "ミ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 意味, 味 đọc là み (âm On).",
+        "en": "Correct! In 意味, 味 is read み (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 意味 (ý nghĩa), 味 đọc là み (âm On).",
+        "en": "In 意味 (meaning), 味 is read み (on'yomi)."
+      }
+    },
+    {
+      "item": "味",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「味」(vị; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「味」 (taste; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "み",
+          "あじ",
+          "りゆう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 味 = あじ (vị); 味 đọc là あじ (âm Kun).",
+        "en": "Correct! 味 = あじ (taste); 味 is read あじ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "味 đọc là あじ (vị): 味 mang âm Kun あじ.",
+        "en": "味 is read あじ (taste): 味 takes the kun'yomi あじ."
+      }
+    },
+    {
+      "item": "料",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「料」nghĩa là gì?",
+        "en": "What does 「料」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lý; lẽ",
+            "en": "reason; logic"
+          },
+          {
+            "vi": "nguyên liệu; phí",
+            "en": "material; fee"
+          },
+          {
+            "vi": "vị; mùi vị",
+            "en": "taste; flavor"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 料 nghĩa là nguyên liệu; phí.",
+        "en": "Correct! 料 means material; fee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 料 nghĩa là nguyên liệu; phí, như trong 「料理」 (món ăn; nấu ăn).",
+        "en": "Not quite. 料 means material; fee, as in 「料理」 (cooking)."
+      }
+    },
+    {
+      "item": "料",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「料」 trong 「料理」 (“món ăn; nấu ăn”).",
+        "en": "Type the reading of 「料」 in 「料理」 (“cooking”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りょう",
+          "リョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 料理, 料 đọc là りょう (âm On).",
+        "en": "Correct! In 料理, 料 is read りょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 料理 (món ăn; nấu ăn), 料 đọc là りょう (âm On).",
+        "en": "In 料理 (cooking), 料 is read りょう (on'yomi)."
+      }
+    },
+    {
+      "item": "料",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「料金」(tiền phí) đọc là gì?",
+        "en": "How is 「料金」 (fee) read?"
+      },
+      "payload": {
+        "choices": [
+          "りょきん",
+          "りょうぎん",
+          "りょうきん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 料金 = りょうきん (tiền phí); 料 đọc là りょう (âm On).",
+        "en": "Correct! 料金 = りょうきん (fee); 料 is read りょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "料金 đọc là りょうきん (tiền phí): 料 mang âm On りょう.",
+        "en": "料金 is read りょうきん (fee): 料 takes the on'yomi りょう."
+      }
+    },
+    {
+      "item": "理",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「理」nghĩa là gì?",
+        "en": "What does 「理」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vị; mùi vị",
+            "en": "taste; flavor"
+          },
+          {
+            "vi": "nguyên liệu; phí",
+            "en": "material; fee"
+          },
+          {
+            "vi": "lý; lẽ",
+            "en": "reason; logic"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 理 nghĩa là lý; lẽ.",
+        "en": "Correct! 理 means reason; logic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 理 nghĩa là lý; lẽ, như trong 「料理」 (món ăn; nấu ăn).",
+        "en": "Not quite. 理 means reason; logic, as in 「料理」 (cooking)."
+      }
+    },
+    {
+      "item": "理",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「理」 trong 「料理」 (“món ăn; nấu ăn”).",
+        "en": "Type the reading of 「理」 in 「料理」 (“cooking”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "り",
+          "リ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 料理, 理 đọc là り (âm On).",
+        "en": "Correct! In 料理, 理 is read り (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 料理 (món ăn; nấu ăn), 理 đọc là り (âm On).",
+        "en": "In 料理 (cooking), 理 is read り (on'yomi)."
+      }
+    },
+    {
+      "item": "理",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「理由」(lý do) đọc là gì?",
+        "en": "How is 「理由」 (reason) read?"
+      },
+      "payload": {
+        "choices": [
+          "りゆう",
+          "あじゆう",
+          "みゆう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 理由 = りゆう (lý do); 理 đọc là り (âm On).",
+        "en": "Correct! 理由 = りゆう (reason); 理 is read り (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "理由 đọc là りゆう (lý do): 理 mang âm On り.",
+        "en": "理由 is read りゆう (reason): 理 takes the on'yomi り."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "味",
+            {
+              "vi": "vị; mùi vị",
+              "en": "taste; flavor"
+            }
+          ],
+          [
+            "料",
+            {
+              "vi": "nguyên liệu; phí",
+              "en": "material; fee"
+            }
+          ],
+          [
+            "理",
+            {
+              "vi": "lý; lẽ",
+              "en": "reason; logic"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

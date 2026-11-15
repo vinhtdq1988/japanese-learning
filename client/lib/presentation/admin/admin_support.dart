@@ -89,6 +89,8 @@ String pickText(BuildContext context, I18nDraft text) {
 String unitKindLabel(AppLocalizations l10n, String kind) => switch (kind) {
   'grammar' => l10n.adminKindGrammar,
   'kanji' => l10n.adminKindKanji,
+  'reading' => l10n.onboardingSkillReading,
+  'writing' => l10n.onboardingSkillWriting,
   _ => l10n.adminKindVocabulary,
 };
 

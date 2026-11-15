@@ -1,0 +1,675 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (善 適 若 太 細)",
+    "en": "Adjectives and quantity kanji (善 適 若 太 細)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "善",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "thiện; tốt",
+        "en": "good; virtue"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゼン"
+        ],
+        "kunReadings": [
+          "よ.い"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "善悪",
+          "reading": "ぜんあく",
+          "kanjiReading": "ゼン",
+          "translation": {
+            "vi": "thiện ác",
+            "en": "good and evil"
+          }
+        },
+        {
+          "ja": "改善",
+          "reading": "かいぜん",
+          "kanjiReading": "ゼン",
+          "translation": {
+            "vi": "cải thiện",
+            "en": "improvement"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "適",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "thích hợp",
+        "en": "suitable"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "快適",
+          "reading": "かいてき",
+          "kanjiReading": "テキ",
+          "translation": {
+            "vi": "dễ chịu; thoải mái",
+            "en": "comfortable"
+          }
+        },
+        {
+          "ja": "適当",
+          "reading": "てきとう",
+          "kanjiReading": "テキ",
+          "translation": {
+            "vi": "thích hợp; qua loa",
+            "en": "suitable; haphazard"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "若",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "trẻ",
+        "en": "young"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジャク",
+          "ニャク"
+        ],
+        "kunReadings": [
+          "わか.い",
+          "も.しくは"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "若年",
+          "reading": "じゃくねん",
+          "kanjiReading": "ジャク",
+          "translation": {
+            "vi": "tuổi trẻ",
+            "en": "youth"
+          }
+        },
+        {
+          "ja": "若い",
+          "reading": "わかい",
+          "kanjiReading": "わか",
+          "translation": {
+            "vi": "trẻ",
+            "en": "young"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "太",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "to; béo",
+        "en": "thick; fat"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タイ",
+          "タ"
+        ],
+        "kunReadings": [
+          "ふと.い",
+          "ふと.る"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "太陽",
+          "reading": "たいよう",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "mặt trời",
+            "en": "sun"
+          }
+        },
+        {
+          "ja": "太い",
+          "reading": "ふとい",
+          "kanjiReading": "ふと",
+          "translation": {
+            "vi": "to; dày",
+            "en": "thick"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "細",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "nhỏ; mảnh; chi tiết",
+        "en": "thin; fine"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ"
+        ],
+        "kunReadings": [
+          "ほそ.い",
+          "こま.かい"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "細胞",
+          "reading": "さいぼう",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "tế bào",
+            "en": "cell"
+          }
+        },
+        {
+          "ja": "細かい",
+          "reading": "こまかい",
+          "kanjiReading": "こま",
+          "translation": {
+            "vi": "nhỏ; chi tiết",
+            "en": "fine; detailed"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "善",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「善」nghĩa là gì?",
+        "en": "What does 「善」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thiện; tốt",
+            "en": "good; virtue"
+          },
+          {
+            "vi": "thích hợp",
+            "en": "suitable"
+          },
+          {
+            "vi": "trẻ",
+            "en": "young"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 善 nghĩa là thiện; tốt.",
+        "en": "Correct! 善 means good; virtue."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 善 nghĩa là thiện; tốt, như trong 「善悪」 (thiện ác).",
+        "en": "Not quite. 善 means good; virtue, as in 「善悪」 (good and evil)."
+      }
+    },
+    {
+      "item": "善",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「善」 trong 「善悪」 (“thiện ác”).",
+        "en": "Type the reading of 「善」 in 「善悪」 (“good and evil”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぜん",
+          "ゼン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 善悪, 善 đọc là ぜん (âm On).",
+        "en": "Correct! In 善悪, 善 is read ぜん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 善悪 (thiện ác), 善 đọc là ぜん (âm On).",
+        "en": "In 善悪 (good and evil), 善 is read ぜん (on'yomi)."
+      }
+    },
+    {
+      "item": "善",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「改善」(cải thiện) đọc là gì?",
+        "en": "How is 「改善」 (improvement) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいよ",
+          "かいぜん",
+          "かいせん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 改善 = かいぜん (cải thiện); 善 đọc là ぜん (âm On).",
+        "en": "Correct! 改善 = かいぜん (improvement); 善 is read ぜん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "改善 đọc là かいぜん (cải thiện): 善 mang âm On ぜん.",
+        "en": "改善 is read かいぜん (improvement): 善 takes the on'yomi ぜん."
+      }
+    },
+    {
+      "item": "適",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「適」nghĩa là gì?",
+        "en": "What does 「適」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trẻ",
+            "en": "young"
+          },
+          {
+            "vi": "thích hợp",
+            "en": "suitable"
+          },
+          {
+            "vi": "to; béo",
+            "en": "thick; fat"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 適 nghĩa là thích hợp.",
+        "en": "Correct! 適 means suitable."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 適 nghĩa là thích hợp, như trong 「快適」 (dễ chịu; thoải mái).",
+        "en": "Not quite. 適 means suitable, as in 「快適」 (comfortable)."
+      }
+    },
+    {
+      "item": "適",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「適」 trong 「快適」 (“dễ chịu; thoải mái”).",
+        "en": "Type the reading of 「適」 in 「快適」 (“comfortable”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てき",
+          "テキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 快適, 適 đọc là てき (âm On).",
+        "en": "Correct! In 快適, 適 is read てき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 快適 (dễ chịu; thoải mái), 適 đọc là てき (âm On).",
+        "en": "In 快適 (comfortable), 適 is read てき (on'yomi)."
+      }
+    },
+    {
+      "item": "適",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「適当」(thích hợp; qua loa) đọc là gì?",
+        "en": "How is 「適当」 (suitable; haphazard) read?"
+      },
+      "payload": {
+        "choices": [
+          "できとう",
+          "てきどう",
+          "てきとう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 適当 = てきとう (thích hợp; qua loa); 適 đọc là てき (âm On).",
+        "en": "Correct! 適当 = てきとう (suitable; haphazard); 適 is read てき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "適当 đọc là てきとう (thích hợp; qua loa): 適 mang âm On てき.",
+        "en": "適当 is read てきとう (suitable; haphazard): 適 takes the on'yomi てき."
+      }
+    },
+    {
+      "item": "若",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「若」nghĩa là gì?",
+        "en": "What does 「若」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "to; béo",
+            "en": "thick; fat"
+          },
+          {
+            "vi": "nhỏ; mảnh; chi tiết",
+            "en": "thin; fine"
+          },
+          {
+            "vi": "trẻ",
+            "en": "young"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 若 nghĩa là trẻ.",
+        "en": "Correct! 若 means young."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 若 nghĩa là trẻ, như trong 「若年」 (tuổi trẻ).",
+        "en": "Not quite. 若 means young, as in 「若年」 (youth)."
+      }
+    },
+    {
+      "item": "若",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「若」 trong 「若年」 (“tuổi trẻ”).",
+        "en": "Type the reading of 「若」 in 「若年」 (“youth”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じゃく",
+          "ジャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 若年, 若 đọc là じゃく (âm On).",
+        "en": "Correct! In 若年, 若 is read じゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 若年 (tuổi trẻ), 若 đọc là じゃく (âm On).",
+        "en": "In 若年 (youth), 若 is read じゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "若",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「若い」(trẻ) đọc là gì?",
+        "en": "How is 「若い」 (young) read?"
+      },
+      "payload": {
+        "choices": [
+          "わかい",
+          "じゃくい",
+          "ふとい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 若い = わかい (trẻ); 若 đọc là わか (âm Kun).",
+        "en": "Correct! 若い = わかい (young); 若 is read わか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "若い đọc là わかい (trẻ): 若 mang âm Kun わか.",
+        "en": "若い is read わかい (young): 若 takes the kun'yomi わか."
+      }
+    },
+    {
+      "item": "太",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「太」nghĩa là gì?",
+        "en": "What does 「太」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "to; béo",
+            "en": "thick; fat"
+          },
+          {
+            "vi": "nhỏ; mảnh; chi tiết",
+            "en": "thin; fine"
+          },
+          {
+            "vi": "thiện; tốt",
+            "en": "good; virtue"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 太 nghĩa là to; béo.",
+        "en": "Correct! 太 means thick; fat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 太 nghĩa là to; béo, như trong 「太陽」 (mặt trời).",
+        "en": "Not quite. 太 means thick; fat, as in 「太陽」 (sun)."
+      }
+    },
+    {
+      "item": "太",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「太」 trong 「太陽」 (“mặt trời”).",
+        "en": "Type the reading of 「太」 in 「太陽」 (“sun”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たい",
+          "タイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 太陽, 太 đọc là たい (âm On).",
+        "en": "Correct! In 太陽, 太 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 太陽 (mặt trời), 太 đọc là たい (âm On).",
+        "en": "In 太陽 (sun), 太 is read たい (on'yomi)."
+      }
+    },
+    {
+      "item": "太",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「太い」(to; dày) đọc là gì?",
+        "en": "How is 「太い」 (thick) read?"
+      },
+      "payload": {
+        "choices": [
+          "たいい",
+          "ふとい",
+          "わかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 太い = ふとい (to; dày); 太 đọc là ふと (âm Kun).",
+        "en": "Correct! 太い = ふとい (thick); 太 is read ふと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "太い đọc là ふとい (to; dày): 太 mang âm Kun ふと.",
+        "en": "太い is read ふとい (thick): 太 takes the kun'yomi ふと."
+      }
+    },
+    {
+      "item": "細",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「細」nghĩa là gì?",
+        "en": "What does 「細」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thiện; tốt",
+            "en": "good; virtue"
+          },
+          {
+            "vi": "nhỏ; mảnh; chi tiết",
+            "en": "thin; fine"
+          },
+          {
+            "vi": "thích hợp",
+            "en": "suitable"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 細 nghĩa là nhỏ; mảnh; chi tiết.",
+        "en": "Correct! 細 means thin; fine."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 細 nghĩa là nhỏ; mảnh; chi tiết, như trong 「細胞」 (tế bào).",
+        "en": "Not quite. 細 means thin; fine, as in 「細胞」 (cell)."
+      }
+    },
+    {
+      "item": "細",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「細」 trong 「細胞」 (“tế bào”).",
+        "en": "Type the reading of 「細」 in 「細胞」 (“cell”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 細胞, 細 đọc là さい (âm On).",
+        "en": "Correct! In 細胞, 細 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 細胞 (tế bào), 細 đọc là さい (âm On).",
+        "en": "In 細胞 (cell), 細 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "細",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「細かい」(nhỏ; chi tiết) đọc là gì?",
+        "en": "How is 「細かい」 (fine; detailed) read?"
+      },
+      "payload": {
+        "choices": [
+          "さいかい",
+          "ぜんあく",
+          "こまかい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 細かい = こまかい (nhỏ; chi tiết); 細 đọc là こま (âm Kun).",
+        "en": "Correct! 細かい = こまかい (fine; detailed); 細 is read こま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "細かい đọc là こまかい (nhỏ; chi tiết): 細 mang âm Kun こま.",
+        "en": "細かい is read こまかい (fine; detailed): 細 takes the kun'yomi こま."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "善",
+            {
+              "vi": "thiện; tốt",
+              "en": "good; virtue"
+            }
+          ],
+          [
+            "適",
+            {
+              "vi": "thích hợp",
+              "en": "suitable"
+            }
+          ],
+          [
+            "若",
+            {
+              "vi": "trẻ",
+              "en": "young"
+            }
+          ],
+          [
+            "太",
+            {
+              "vi": "to; béo",
+              "en": "thick; fat"
+            }
+          ],
+          [
+            "細",
+            {
+              "vi": "nhỏ; mảnh; chi tiết",
+              "en": "thin; fine"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

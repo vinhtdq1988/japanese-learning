@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-daily-verbs",
+  "title": {
+    "vi": "Kanji động từ sinh hoạt (持 思 考 知)",
+    "en": "Daily verbs kanji (持 思 考 知)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "持",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "cầm; mang; giữ",
+        "en": "hold; have"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ"
+        ],
+        "kunReadings": [
+          "も.つ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "気持ち",
+          "reading": "きもち",
+          "kanjiReading": "も",
+          "translation": {
+            "vi": "cảm giác",
+            "en": "feeling"
+          }
+        },
+        {
+          "ja": "持つ",
+          "reading": "もつ",
+          "kanjiReading": "も",
+          "translation": {
+            "vi": "cầm; mang",
+            "en": "to hold"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "思",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "nghĩ",
+        "en": "think"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "おも.う"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "思考",
+          "reading": "しこう",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "tư duy",
+            "en": "thinking"
+          }
+        },
+        {
+          "ja": "思う",
+          "reading": "おもう",
+          "kanjiReading": "おも",
+          "translation": {
+            "vi": "nghĩ",
+            "en": "to think"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "考",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "suy nghĩ; xem xét",
+        "en": "consider"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "かんが.える"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "参考",
+          "reading": "さんこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "tham khảo",
+            "en": "reference"
+          }
+        },
+        {
+          "ja": "考える",
+          "reading": "かんがえる",
+          "kanjiReading": "かんが",
+          "translation": {
+            "vi": "suy nghĩ",
+            "en": "to think over"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "知",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "biết",
+        "en": "know"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チ"
+        ],
+        "kunReadings": [
+          "し.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "知人",
+          "reading": "ちじん",
+          "kanjiReading": "チ",
+          "translation": {
+            "vi": "người quen",
+            "en": "acquaintance"
+          }
+        },
+        {
+          "ja": "知る",
+          "reading": "しる",
+          "kanjiReading": "し",
+          "translation": {
+            "vi": "biết",
+            "en": "to know"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "持",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「持」nghĩa là gì?",
+        "en": "What does 「持」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cầm; mang; giữ",
+            "en": "hold; have"
+          },
+          {
+            "vi": "nghĩ",
+            "en": "think"
+          },
+          {
+            "vi": "suy nghĩ; xem xét",
+            "en": "consider"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 持 nghĩa là cầm; mang; giữ.",
+        "en": "Correct! 持 means hold; have."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 持 nghĩa là cầm; mang; giữ, như trong 「気持ち」 (cảm giác).",
+        "en": "Not quite. 持 means hold; have, as in 「気持ち」 (feeling)."
+      }
+    },
+    {
+      "item": "持",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「持」 trong 「気持ち」 (“cảm giác”).",
+        "en": "Type the reading of 「持」 in 「気持ち」 (“feeling”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "も",
+          "モ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 気持ち, 持 đọc là も (âm Kun).",
+        "en": "Correct! In 気持ち, 持 is read も (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 気持ち (cảm giác), 持 đọc là も (âm Kun).",
+        "en": "In 気持ち (feeling), 持 is read も (kun'yomi)."
+      }
+    },
+    {
+      "item": "持",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「持つ」(cầm; mang) đọc là gì?",
+        "en": "How is 「持つ」 (to hold) read?"
+      },
+      "payload": {
+        "choices": [
+          "じつ",
+          "もつ",
+          "しる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 持つ = もつ (cầm; mang); 持 đọc là も (âm Kun).",
+        "en": "Correct! 持つ = もつ (to hold); 持 is read も (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "持つ đọc là もつ (cầm; mang): 持 mang âm Kun も.",
+        "en": "持つ is read もつ (to hold): 持 takes the kun'yomi も."
+      }
+    },
+    {
+      "item": "思",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「思」nghĩa là gì?",
+        "en": "What does 「思」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "suy nghĩ; xem xét",
+            "en": "consider"
+          },
+          {
+            "vi": "nghĩ",
+            "en": "think"
+          },
+          {
+            "vi": "biết",
+            "en": "know"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 思 nghĩa là nghĩ.",
+        "en": "Correct! 思 means think."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 思 nghĩa là nghĩ, như trong 「思考」 (tư duy).",
+        "en": "Not quite. 思 means think, as in 「思考」 (thinking)."
+      }
+    },
+    {
+      "item": "思",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「思」 trong 「思考」 (“tư duy”).",
+        "en": "Type the reading of 「思」 in 「思考」 (“thinking”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 思考, 思 đọc là し (âm On).",
+        "en": "Correct! In 思考, 思 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 思考 (tư duy), 思 đọc là し (âm On).",
+        "en": "In 思考 (thinking), 思 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "思",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「思う」(nghĩ) đọc là gì?",
+        "en": "How is 「思う」 (to think) read?"
+      },
+      "payload": {
+        "choices": [
+          "しう",
+          "ちじん",
+          "おもう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 思う = おもう (nghĩ); 思 đọc là おも (âm Kun).",
+        "en": "Correct! 思う = おもう (to think); 思 is read おも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "思う đọc là おもう (nghĩ): 思 mang âm Kun おも.",
+        "en": "思う is read おもう (to think): 思 takes the kun'yomi おも."
+      }
+    },
+    {
+      "item": "考",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「考」nghĩa là gì?",
+        "en": "What does 「考」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biết",
+            "en": "know"
+          },
+          {
+            "vi": "cầm; mang; giữ",
+            "en": "hold; have"
+          },
+          {
+            "vi": "suy nghĩ; xem xét",
+            "en": "consider"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 考 nghĩa là suy nghĩ; xem xét.",
+        "en": "Correct! 考 means consider."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 考 nghĩa là suy nghĩ; xem xét, như trong 「参考」 (tham khảo).",
+        "en": "Not quite. 考 means consider, as in 「参考」 (reference)."
+      }
+    },
+    {
+      "item": "考",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「考」 trong 「参考」 (“tham khảo”).",
+        "en": "Type the reading of 「考」 in 「参考」 (“reference”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 参考, 考 đọc là こう (âm On).",
+        "en": "Correct! In 参考, 考 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 参考 (tham khảo), 考 đọc là こう (âm On).",
+        "en": "In 参考 (reference), 考 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "考",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「考える」(suy nghĩ) đọc là gì?",
+        "en": "How is 「考える」 (to think over) read?"
+      },
+      "payload": {
+        "choices": [
+          "かんがえる",
+          "こうえる",
+          "ちじん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 考える = かんがえる (suy nghĩ); 考 đọc là かんが (âm Kun).",
+        "en": "Correct! 考える = かんがえる (to think over); 考 is read かんが (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "考える đọc là かんがえる (suy nghĩ): 考 mang âm Kun かんが.",
+        "en": "考える is read かんがえる (to think over): 考 takes the kun'yomi かんが."
+      }
+    },
+    {
+      "item": "知",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「知」nghĩa là gì?",
+        "en": "What does 「知」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biết",
+            "en": "know"
+          },
+          {
+            "vi": "cầm; mang; giữ",
+            "en": "hold; have"
+          },
+          {
+            "vi": "nghĩ",
+            "en": "think"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 知 nghĩa là biết.",
+        "en": "Correct! 知 means know."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 知 nghĩa là biết, như trong 「知人」 (người quen).",
+        "en": "Not quite. 知 means know, as in 「知人」 (acquaintance)."
+      }
+    },
+    {
+      "item": "知",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「知」 trong 「知人」 (“người quen”).",
+        "en": "Type the reading of 「知」 in 「知人」 (“acquaintance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ち",
+          "チ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 知人, 知 đọc là ち (âm On).",
+        "en": "Correct! In 知人, 知 is read ち (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 知人 (người quen), 知 đọc là ち (âm On).",
+        "en": "In 知人 (acquaintance), 知 is read ち (on'yomi)."
+      }
+    },
+    {
+      "item": "知",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「知る」(biết) đọc là gì?",
+        "en": "How is 「知る」 (to know) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちる",
+          "しる",
+          "もつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 知る = しる (biết); 知 đọc là し (âm Kun).",
+        "en": "Correct! 知る = しる (to know); 知 is read し (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "知る đọc là しる (biết): 知 mang âm Kun し.",
+        "en": "知る is read しる (to know): 知 takes the kun'yomi し."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "持",
+            {
+              "vi": "cầm; mang; giữ",
+              "en": "hold; have"
+            }
+          ],
+          [
+            "思",
+            {
+              "vi": "nghĩ",
+              "en": "think"
+            }
+          ],
+          [
+            "考",
+            {
+              "vi": "suy nghĩ; xem xét",
+              "en": "consider"
+            }
+          ],
+          [
+            "知",
+            {
+              "vi": "biết",
+              "en": "know"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

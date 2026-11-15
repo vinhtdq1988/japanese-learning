@@ -1,0 +1,555 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-time-scope",
+  "title": {
+    "vi": "Phạm vi và đối tượng (3): 〜に対して, 〜をはじめ, 〜にわたって, 〜を通じて, 〜につれて",
+    "en": "Scope and target (3): 〜に対して, 〜をはじめ, 〜にわたって, 〜を通じて, 〜につれて"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜に対して",
+      "meaning": {
+        "vi": "Đối với ~; trái lại ~",
+        "en": "Toward ~; in contrast to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + に対して (+ に対する + danh từ). Nghĩa 1: hành động/thái độ hướng tới đối tượng (お客様に対して失礼だ). Nghĩa 2: đối lập giữa hai sự việc (兄は社交的なのに対して、弟は内気だ).",
+        "en": "Usage: noun + に対して (+ に対する + noun). Sense 1: an action or attitude directed at a target (お客様に対して失礼だ). Sense 2: contrast between two things (兄は社交的なのに対して、弟は内気だ)."
+      },
+      "examples": [
+        {
+          "ja": "お客様に対して、失礼なことを言ってはいけません。",
+          "reading": "おきゃくさまにたいして、しつれいなことをいってはいけません。",
+          "translation": {
+            "vi": "Không được nói điều thất lễ với khách hàng.",
+            "en": "You must not say rude things to customers."
+          }
+        },
+        {
+          "ja": "兄は社交的なのに対して、弟は内気です。",
+          "reading": "あにはしゃこうてきなのにたいして、おとうとはうちきです。",
+          "translation": {
+            "vi": "Anh trai thì hòa đồng, trái lại em trai thì nhút nhát.",
+            "en": "My older brother is sociable, whereas my younger brother is shy."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-057"
+    },
+    {
+      "japanese": "〜をはじめ",
+      "meaning": {
+        "vi": "Đứng đầu là ~, như ~",
+        "en": "Beginning with ~; including ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ A + をはじめ(として) + B, C… Nêu một ví dụ tiêu biểu nhất rồi nói về cả nhóm (社長をはじめ、社員全員). Dạng danh từ hóa: 〜をはじめとする + danh từ.",
+        "en": "Usage: noun A + をはじめ(として) + B, C… Names the most representative example then refers to the whole group (社長をはじめ、社員全員). Noun-modifying form: 〜をはじめとする + noun."
+      },
+      "examples": [
+        {
+          "ja": "社長をはじめ、社員全員が参加しました。",
+          "reading": "しゃちょうをはじめ、しゃいんぜんいんがさんかしました。",
+          "translation": {
+            "vi": "Tất cả nhân viên, đứng đầu là giám đốc, đều tham dự.",
+            "en": "All employees, beginning with the president, took part."
+          }
+        },
+        {
+          "ja": "東京をはじめ、全国で雪が降りました。",
+          "reading": "とうきょうをはじめ、ぜんこくでゆきがふりました。",
+          "translation": {
+            "vi": "Tuyết rơi khắp cả nước, bắt đầu từ Tokyo.",
+            "en": "It snowed across the country, starting with Tokyo."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-058"
+    },
+    {
+      "japanese": "〜にわたって",
+      "meaning": {
+        "vi": "Suốt ~, trải khắp ~",
+        "en": "Over ~; throughout ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ chỉ khoảng thời gian/phạm vi + にわたって (+ にわたる + danh từ). Diễn đạt sự việc kéo dài suốt một thời gian dài hoặc trải rộng trên phạm vi lớn (三日間にわたって, 全国にわたって).",
+        "en": "Usage: noun of a time span or range + にわたって (+ にわたる + noun). Expresses something that lasts over a long period or spreads over a wide area (三日間にわたって, 全国にわたって)."
+      },
+      "examples": [
+        {
+          "ja": "会議は、三日間にわたって行われました。",
+          "reading": "かいぎは、みっかかんにわたっておこなわれました。",
+          "translation": {
+            "vi": "Cuộc họp đã diễn ra suốt ba ngày.",
+            "en": "The meeting was held over three days."
+          }
+        },
+        {
+          "ja": "この川は、全国にわたって有名です。",
+          "reading": "このかわは、ぜんこくにわたってゆうめいです。",
+          "translation": {
+            "vi": "Con sông này nổi tiếng khắp cả nước.",
+            "en": "This river is famous throughout the country."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-059"
+    },
+    {
+      "japanese": "〜を通じて／〜を通して",
+      "meaning": {
+        "vi": "Thông qua ~, suốt ~",
+        "en": "Through ~; throughout ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + を通じて / を通して. Nghĩa 1: thông qua phương tiện/người trung gian (友人を通じて知り合った). Nghĩa 2: suốt cả khoảng thời gian (一年を通じて暖かい).",
+        "en": "Usage: noun + を通じて / を通して. Sense 1: by means of a medium or intermediary (友人を通じて知り合った). Sense 2: throughout a whole period (一年を通じて暖かい)."
+      },
+      "examples": [
+        {
+          "ja": "友人を通じて、彼女と知り合いました。",
+          "reading": "ゆうじんをつうじて、かのじょとしりあいました。",
+          "translation": {
+            "vi": "Tôi quen cô ấy thông qua một người bạn.",
+            "en": "I got to know her through a friend."
+          }
+        },
+        {
+          "ja": "この地方は、一年を通じて暖かいです。",
+          "reading": "このちほうは、いちねんをつうじてあたたかいです。",
+          "translation": {
+            "vi": "Vùng này ấm áp quanh năm.",
+            "en": "This region is warm throughout the year."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-060"
+    },
+    {
+      "japanese": "〜につれて／〜にしたがって",
+      "meaning": {
+        "vi": "Cùng với ~, càng ~ thì ~",
+        "en": "As ~; in proportion to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ + につれて / にしたがって. Diễn tả hai sự thay đổi diễn ra song song: A thay đổi thì B cũng thay đổi theo. Cả hai vế đều là sự thay đổi dần; không dùng ý chí.",
+        "en": "Usage: verb dictionary form / noun + につれて / にしたがって. Two changes proceed in parallel: as A changes, B changes too. Both clauses are gradual changes; no volition."
+      },
+      "examples": [
+        {
+          "ja": "年を取るにつれて、体力が落ちてきました。",
+          "reading": "としをとるにつれて、たいりょくがおちてきました。",
+          "translation": {
+            "vi": "Càng lớn tuổi thì thể lực càng giảm.",
+            "en": "As I get older, my physical strength has declined."
+          }
+        },
+        {
+          "ja": "都市が発展するにしたがって、人口が増えました。",
+          "reading": "としがはってんするにしたがって、じんこうがふえました。",
+          "translation": {
+            "vi": "Cùng với sự phát triển của đô thị, dân số tăng lên.",
+            "en": "As the city developed, the population grew."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-061"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜に対して",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお客様（　）、失礼なことを言ってはいけません。",
+        "en": "Choose the correct option for the blank:\nお客様（　）、失礼なことを言ってはいけません。"
+      },
+      "payload": {
+        "choices": [
+          "に対して",
+          "において",
+          "に関して",
+          "にわたって"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thái độ hướng tới đối tượng (khách hàng): 「に対して」.",
+        "en": "Correct! An attitude directed at a target (the customer): 「に対して」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thái độ hướng tới đối tượng (khách hàng): 「に対して」.",
+        "en": "Not quite. An attitude directed at a target (the customer): 「に対して」."
+      }
+    },
+    {
+      "item": "〜に対して",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n兄は社交的な（　）、弟は内気です。",
+        "en": "Choose the pattern that best fits the context:\n兄は社交的な（　）、弟は内気です。"
+      },
+      "payload": {
+        "choices": [
+          "のに関して",
+          "のにとって",
+          "のにおいて",
+          "のに対して"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đối lập giữa hai người: 「のに対して」.",
+        "en": "Correct! A contrast between two people: 「のに対して」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đối lập giữa hai người: 「のに対して」.",
+        "en": "Not quite. A contrast between two people: 「のに対して」."
+      }
+    },
+    {
+      "item": "〜に対して",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生___、敬語を使います。",
+        "en": "Choose the correct option for the blank:\n先生___、敬語を使います。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "に対して"
+        ],
+        "hint": "〜に対して"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dùng kính ngữ với (đối với) thầy: 「先生に対して」.",
+        "en": "Correct! Using honorifics toward the teacher: 「先生に対して」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dùng kính ngữ với (đối với) thầy: 「先生に対して」.",
+        "en": "Not quite. Using honorifics toward the teacher: 「先生に対して」."
+      }
+    },
+    {
+      "item": "〜をはじめ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n社長（　）、社員全員が参加しました。",
+        "en": "Choose the correct option for the blank:\n社長（　）、社員全員が参加しました。"
+      },
+      "payload": {
+        "choices": [
+          "に対して",
+          "にわたって",
+          "をはじめ",
+          "を通じて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nêu ví dụ tiêu biểu rồi nói cả nhóm: 「社長をはじめ」.",
+        "en": "Correct! Naming a representative example then the whole group: 「社長をはじめ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nêu ví dụ tiêu biểu rồi nói cả nhóm: 「社長をはじめ」.",
+        "en": "Not quite. Naming a representative example then the whole group: 「社長をはじめ」."
+      }
+    },
+    {
+      "item": "〜をはじめ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n東京___、全国で雪が降りました。",
+        "en": "Choose the correct option for the blank:\n東京___、全国で雪が降りました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "をはじめ"
+        ],
+        "hint": "〜をはじめ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bắt đầu từ Tokyo rồi cả nước: 「東京をはじめ」.",
+        "en": "Correct! Starting with Tokyo, then the whole country: 「東京をはじめ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bắt đầu từ Tokyo rồi cả nước: 「東京をはじめ」.",
+        "en": "Not quite. Starting with Tokyo, then the whole country: 「東京をはじめ」."
+      }
+    },
+    {
+      "item": "〜にわたって",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n会議は、三日間（　）行われました。",
+        "en": "Choose the correct option for the blank:\n会議は、三日間（　）行われました。"
+      },
+      "payload": {
+        "choices": [
+          "をはじめ",
+          "にわたって",
+          "に対して",
+          "について"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kéo dài suốt khoảng thời gian: 「三日間にわたって」.",
+        "en": "Correct! Lasting throughout a period: 「三日間にわたって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kéo dài suốt khoảng thời gian: 「三日間にわたって」.",
+        "en": "Not quite. Lasting throughout a period: 「三日間にわたって」."
+      }
+    },
+    {
+      "item": "〜にわたって",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの川は、全国___有名です。",
+        "en": "Choose the correct option for the blank:\nこの川は、全国___有名です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にわたって"
+        ],
+        "hint": "〜にわたって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trải rộng khắp phạm vi: 「全国にわたって」.",
+        "en": "Correct! Spreading over the whole range: 「全国にわたって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trải rộng khắp phạm vi: 「全国にわたって」.",
+        "en": "Not quite. Spreading over the whole range: 「全国にわたって」."
+      }
+    },
+    {
+      "item": "〜を通じて／〜を通して",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n友人（　）、彼女と知り合いました。",
+        "en": "Choose the correct option for the blank:\n友人（　）、彼女と知り合いました。"
+      },
+      "payload": {
+        "choices": [
+          "を通じて",
+          "に対して",
+          "にわたって",
+          "をはじめ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thông qua người trung gian: 「友人を通じて」.",
+        "en": "Correct! By way of an intermediary: 「友人を通じて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thông qua người trung gian: 「友人を通じて」.",
+        "en": "Not quite. By way of an intermediary: 「友人を通じて」."
+      }
+    },
+    {
+      "item": "〜を通じて／〜を通して",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この地方は、一年に通じて暖かいです。",
+          "この地方は、一年を通じに暖かいです。",
+          "この地方は、一年が通じて暖かいです。",
+          "この地方は、一年を通じて暖かいです。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cả năm dùng 「を通じて」 (có trợ từ 「を」).",
+        "en": "Correct! Throughout the year uses 「を通じて」 (with the particle 「を」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cả năm dùng 「を通じて」 (có trợ từ 「を」).",
+        "en": "Not quite. Throughout the year uses 「を通じて」 (with the particle 「を」)."
+      }
+    },
+    {
+      "item": "〜につれて／〜にしたがって",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n年を取る（　）、体力が落ちてきました。",
+        "en": "Choose the correct option for the blank:\n年を取る（　）、体力が落ちてきました。"
+      },
+      "payload": {
+        "choices": [
+          "に対して",
+          "をはじめ",
+          "につれて",
+          "において"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hai thay đổi song song: 「取るにつれて」.",
+        "en": "Correct! Two parallel changes: 「取るにつれて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hai thay đổi song song: 「取るにつれて」.",
+        "en": "Not quite. Two parallel changes: 「取るにつれて」."
+      }
+    },
+    {
+      "item": "〜につれて／〜にしたがって",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n都市が発展する___、人口が増えました。",
+        "en": "Choose the correct option for the blank:\n都市が発展する___、人口が増えました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にしたがって",
+          "につれて"
+        ],
+        "hint": "〜にしたがって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cùng với sự phát triển: 「発展するにしたがって」.",
+        "en": "Correct! Along with development: 「発展するにしたがって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cùng với sự phát triển: 「発展するにしたがって」.",
+        "en": "Not quite. Along with development: 「発展するにしたがって」."
+      }
+    },
+    {
+      "item": "〜につれて／〜にしたがって",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n年を　＿　＿　★　＿　。\n（取る／につれて／体力が／落ちてきました）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n年を　＿　＿　★　＿　。\n（取る／につれて／体力が／落ちてきました）"
+      },
+      "payload": {
+        "choices": [
+          "取る",
+          "体力が",
+          "につれて",
+          "落ちてきました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「年を取るにつれて、体力が落ちてきました。」; ô ★ (thứ ba) là 「体力が」.",
+        "en": "Correct! The correct sentence is 「年を取るにつれて、体力が落ちてきました。」; the ★ (third) slot is 「体力が」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「年を取るにつれて、体力が落ちてきました。」; ô ★ (thứ ba) là 「体力が」.",
+        "en": "Not quite. The correct sentence is 「年を取るにつれて、体力が落ちてきました。」; the ★ (third) slot is 「体力が」."
+      }
+    },
+    {
+      "item": "〜に対して",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "質問に対して、すぐに答えました。",
+          "質問に対し、すぐに答えましょう。",
+          "質問に対して、すぐに答えてください。",
+          "質問に対して、すぐに答えたい。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu kể quá khứ, hành động đáp lại đối tượng (質問): 「質問に対して、すぐに答えました」.",
+        "en": "Correct! A past statement of a response aimed at the target (質問): 「質問に対して、すぐに答えました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu kể quá khứ, hành động đáp lại đối tượng (質問): 「質問に対して、すぐに答えました」.",
+        "en": "Not quite. A past statement of a response aimed at the target (質問): 「質問に対して、すぐに答えました」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜に対して",
+            {
+              "vi": "Đối với ~; trái lại ~",
+              "en": "Toward ~; in contrast to ~"
+            }
+          ],
+          [
+            "〜をはじめ",
+            {
+              "vi": "Đứng đầu là ~, như ~",
+              "en": "Beginning with ~; including ~"
+            }
+          ],
+          [
+            "〜にわたって",
+            {
+              "vi": "Suốt ~, trải khắp ~",
+              "en": "Over ~; throughout ~"
+            }
+          ],
+          [
+            "〜を通じて／〜を通して",
+            {
+              "vi": "Thông qua ~, suốt ~",
+              "en": "Through ~; throughout ~"
+            }
+          ],
+          [
+            "〜につれて／〜にしたがって",
+            {
+              "vi": "Cùng với ~, càng ~ thì ~",
+              "en": "As ~; in proportion to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

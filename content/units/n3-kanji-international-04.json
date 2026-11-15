@@ -1,0 +1,417 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-international",
+  "title": {
+    "vi": "Kanji quốc tế (敗 軍 武)",
+    "en": "International affairs kanji (敗 軍 武)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "敗",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "bại; thua",
+        "en": "defeat; fail"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハイ"
+        ],
+        "kunReadings": [
+          "やぶ.れる"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "敗北",
+          "reading": "はいぼく",
+          "kanjiReading": "ハイ",
+          "translation": {
+            "vi": "thất bại",
+            "en": "defeat"
+          }
+        },
+        {
+          "ja": "敗れる",
+          "reading": "やぶれる",
+          "kanjiReading": "やぶ",
+          "translation": {
+            "vi": "bị đánh bại",
+            "en": "to be defeated"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "軍",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "quân; quân đội",
+        "en": "army; military"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "グン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "軍隊",
+          "reading": "ぐんたい",
+          "kanjiReading": "グン",
+          "translation": {
+            "vi": "quân đội",
+            "en": "army"
+          }
+        },
+        {
+          "ja": "空軍",
+          "reading": "くうぐん",
+          "kanjiReading": "グン",
+          "translation": {
+            "vi": "không quân",
+            "en": "air force"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "武",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "võ; vũ khí",
+        "en": "martial; military"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ブ",
+          "ム"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "武器",
+          "reading": "ぶき",
+          "kanjiReading": "ブ",
+          "translation": {
+            "vi": "vũ khí",
+            "en": "weapon"
+          }
+        },
+        {
+          "ja": "武者",
+          "reading": "むしゃ",
+          "kanjiReading": "ム",
+          "translation": {
+            "vi": "võ sĩ",
+            "en": "warrior"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "敗",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「敗」nghĩa là gì?",
+        "en": "What does 「敗」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bại; thua",
+            "en": "defeat; fail"
+          },
+          {
+            "vi": "quân; quân đội",
+            "en": "army; military"
+          },
+          {
+            "vi": "võ; vũ khí",
+            "en": "martial; military"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 敗 nghĩa là bại; thua.",
+        "en": "Correct! 敗 means defeat; fail."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 敗 nghĩa là bại; thua, như trong 「敗北」 (thất bại).",
+        "en": "Not quite. 敗 means defeat; fail, as in 「敗北」 (defeat)."
+      }
+    },
+    {
+      "item": "敗",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「敗」 trong 「敗北」 (“thất bại”).",
+        "en": "Type the reading of 「敗」 in 「敗北」 (“defeat”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はい",
+          "ハイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 敗北, 敗 đọc là はい (âm On).",
+        "en": "Correct! In 敗北, 敗 is read はい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 敗北 (thất bại), 敗 đọc là はい (âm On).",
+        "en": "In 敗北 (defeat), 敗 is read はい (on'yomi)."
+      }
+    },
+    {
+      "item": "敗",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「敗れる」(bị đánh bại) đọc là gì?",
+        "en": "How is 「敗れる」 (to be defeated) read?"
+      },
+      "payload": {
+        "choices": [
+          "はいれる",
+          "やぶれる",
+          "ぐんたい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 敗れる = やぶれる (bị đánh bại); 敗 đọc là やぶ (âm Kun).",
+        "en": "Correct! 敗れる = やぶれる (to be defeated); 敗 is read やぶ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "敗れる đọc là やぶれる (bị đánh bại): 敗 mang âm Kun やぶ.",
+        "en": "敗れる is read やぶれる (to be defeated): 敗 takes the kun'yomi やぶ."
+      }
+    },
+    {
+      "item": "軍",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「軍」nghĩa là gì?",
+        "en": "What does 「軍」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "võ; vũ khí",
+            "en": "martial; military"
+          },
+          {
+            "vi": "quân; quân đội",
+            "en": "army; military"
+          },
+          {
+            "vi": "bại; thua",
+            "en": "defeat; fail"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 軍 nghĩa là quân; quân đội.",
+        "en": "Correct! 軍 means army; military."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 軍 nghĩa là quân; quân đội, như trong 「軍隊」 (quân đội).",
+        "en": "Not quite. 軍 means army; military, as in 「軍隊」 (army)."
+      }
+    },
+    {
+      "item": "軍",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「軍」 trong 「軍隊」 (“quân đội”).",
+        "en": "Type the reading of 「軍」 in 「軍隊」 (“army”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぐん",
+          "グン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 軍隊, 軍 đọc là ぐん (âm On).",
+        "en": "Correct! In 軍隊, 軍 is read ぐん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 軍隊 (quân đội), 軍 đọc là ぐん (âm On).",
+        "en": "In 軍隊 (army), 軍 is read ぐん (on'yomi)."
+      }
+    },
+    {
+      "item": "軍",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「空軍」(không quân) đọc là gì?",
+        "en": "How is 「空軍」 (air force) read?"
+      },
+      "payload": {
+        "choices": [
+          "くうくん",
+          "くうぶ",
+          "くうぐん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 空軍 = くうぐん (không quân); 軍 đọc là ぐん (âm On).",
+        "en": "Correct! 空軍 = くうぐん (air force); 軍 is read ぐん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "空軍 đọc là くうぐん (không quân): 軍 mang âm On ぐん.",
+        "en": "空軍 is read くうぐん (air force): 軍 takes the on'yomi ぐん."
+      }
+    },
+    {
+      "item": "武",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「武」nghĩa là gì?",
+        "en": "What does 「武」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bại; thua",
+            "en": "defeat; fail"
+          },
+          {
+            "vi": "quân; quân đội",
+            "en": "army; military"
+          },
+          {
+            "vi": "võ; vũ khí",
+            "en": "martial; military"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 武 nghĩa là võ; vũ khí.",
+        "en": "Correct! 武 means martial; military."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 武 nghĩa là võ; vũ khí, như trong 「武器」 (vũ khí).",
+        "en": "Not quite. 武 means martial; military, as in 「武器」 (weapon)."
+      }
+    },
+    {
+      "item": "武",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「武」 trong 「武器」 (“vũ khí”).",
+        "en": "Type the reading of 「武」 in 「武器」 (“weapon”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぶ",
+          "ブ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 武器, 武 đọc là ぶ (âm On).",
+        "en": "Correct! In 武器, 武 is read ぶ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 武器 (vũ khí), 武 đọc là ぶ (âm On).",
+        "en": "In 武器 (weapon), 武 is read ぶ (on'yomi)."
+      }
+    },
+    {
+      "item": "武",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「武者」(võ sĩ) đọc là gì?",
+        "en": "How is 「武者」 (warrior) read?"
+      },
+      "payload": {
+        "choices": [
+          "むしゃ",
+          "ぶしゃ",
+          "むじゃ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 武者 = むしゃ (võ sĩ); 武 đọc là む (âm On).",
+        "en": "Correct! 武者 = むしゃ (warrior); 武 is read む (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "武者 đọc là むしゃ (võ sĩ): 武 mang âm On む.",
+        "en": "武者 is read むしゃ (warrior): 武 takes the on'yomi む."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "敗",
+            {
+              "vi": "bại; thua",
+              "en": "defeat; fail"
+            }
+          ],
+          [
+            "軍",
+            {
+              "vi": "quân; quân đội",
+              "en": "army; military"
+            }
+          ],
+          [
+            "武",
+            {
+              "vi": "võ; vũ khí",
+              "en": "martial; military"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

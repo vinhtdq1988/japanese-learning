@@ -1,0 +1,491 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-comparison-degree",
+  "title": {
+    "vi": "So sánh và mức độ (2): 〜だけ, 〜ばかり, 〜にとって, 〜として",
+    "en": "Comparison and degree (2): 〜だけ, 〜ばかり, 〜にとって, 〜として"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜だけ（限定・程度）",
+      "meaning": {
+        "vi": "Chỉ ~; hết mức ~",
+        "en": "Only ~; as much as ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ / động từ thể thường + だけ. Nghĩa 1: giới hạn \"chỉ\" (あなただけ). Nghĩa 2: mức tối đa trong khả năng (好きなだけ食べる, できるだけ). Khác 〜しか〜ない: だけ trung tính, しか nhấn vào sự thiếu.",
+        "en": "Usage: noun / plain form + だけ. Sense 1: limitation, \"only\" (あなただけ). Sense 2: as much as possible within one's limits (好きなだけ食べる, できるだけ). Unlike 〜しか〜ない, which stresses lack, だけ is neutral."
+      },
+      "examples": [
+        {
+          "ja": "このことは、あなただけに話します。",
+          "reading": "このことは、あなただけにはなします。",
+          "translation": {
+            "vi": "Chuyện này tôi chỉ nói với bạn thôi.",
+            "en": "I will tell this only to you."
+          }
+        },
+        {
+          "ja": "好きなだけ食べてください。",
+          "reading": "すきなだけたべてください。",
+          "translation": {
+            "vi": "Hãy ăn bao nhiêu tùy thích.",
+            "en": "Please eat as much as you like."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-065"
+    },
+    {
+      "japanese": "〜ばかり（限定・多量）",
+      "meaning": {
+        "vi": "Toàn ~, chỉ ~",
+        "en": "Nothing but ~; mostly ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + ばかり + động từ; động từ て + ばかりいる. Chỉ một thứ lặp lại quá nhiều, thường kèm ý phê phán (お菓子ばかり食べる, 遊んでばかりいる). Khác 〜だけ: ばかり hàm ý \"quá nhiều, thiên lệch\".",
+        "en": "Usage: noun + ばかり + verb; verb て-form + ばかりいる. One thing repeated far too often, usually with criticism (お菓子ばかり食べる, 遊んでばかりいる). Unlike 〜だけ, ばかり implies \"too much, one-sided\"."
+      },
+      "examples": [
+        {
+          "ja": "彼は、お菓子ばかり食べています。",
+          "reading": "かれは、おかしばかりたべています。",
+          "translation": {
+            "vi": "Anh ấy toàn ăn bánh kẹo.",
+            "en": "He eats nothing but sweets."
+          }
+        },
+        {
+          "ja": "最近、悪いニュースばかりです。",
+          "reading": "さいきん、わるいにゅーすばかりです。",
+          "translation": {
+            "vi": "Dạo này toàn tin xấu.",
+            "en": "Lately it is all bad news."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-066"
+    },
+    {
+      "japanese": "〜にとって",
+      "meaning": {
+        "vi": "Đối với ~ (quan điểm)",
+        "en": "For ~; from the standpoint of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ (người/tổ chức) + にとって + câu đánh giá, nhận xét (大切だ, 難しい, 重要だ). Nêu quan điểm của đối tượng; vế sau không dùng hành động hướng tới đối tượng (khác 〜に対して).",
+        "en": "Usage: noun (person/organization) + にとって + an evaluation (大切だ, 難しい, 重要だ). States a standpoint; the second clause is not an action directed at the target (unlike 〜に対して)."
+      },
+      "examples": [
+        {
+          "ja": "私にとって、家族は一番大切です。",
+          "reading": "わたしにとって、かぞくはいちばんたいせつです。",
+          "translation": {
+            "vi": "Đối với tôi, gia đình là quan trọng nhất.",
+            "en": "For me, family is the most important thing."
+          }
+        },
+        {
+          "ja": "外国人にとって、敬語は難しいです。",
+          "reading": "がいこくじんにとって、けいごはむずかしいです。",
+          "translation": {
+            "vi": "Đối với người nước ngoài, kính ngữ rất khó.",
+            "en": "Honorific speech is difficult for foreigners."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-067"
+    },
+    {
+      "japanese": "〜として",
+      "meaning": {
+        "vi": "Với tư cách là ~",
+        "en": "As ~; in the capacity of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + として + động từ/câu. Nêu tư cách, vai trò, chức năng (留学生として来た, 趣味として楽しむ). Khác 〜にとって (quan điểm) và 〜に対して (đối tượng).",
+        "en": "Usage: noun + として + verb/clause. Names a capacity, role or function (留学生として来た, 趣味として楽しむ). Unlike 〜にとって (standpoint) and 〜に対して (target)."
+      },
+      "examples": [
+        {
+          "ja": "留学生として、日本に来ました。",
+          "reading": "りゅうがくせいとして、にほんにきました。",
+          "translation": {
+            "vi": "Tôi đến Nhật với tư cách du học sinh.",
+            "en": "I came to Japan as an international student."
+          }
+        },
+        {
+          "ja": "彼は、医者として働いています。",
+          "reading": "かれは、いしゃとしてはたらいています。",
+          "translation": {
+            "vi": "Anh ấy làm việc với tư cách bác sĩ.",
+            "en": "He works as a doctor."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-068"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜だけ（限定・程度）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのことは、あなた（　）に話します。",
+        "en": "Choose the correct option for the blank:\nこのことは、あなた（　）に話します。"
+      },
+      "payload": {
+        "choices": [
+          "ばかり",
+          "ほど",
+          "くらい",
+          "だけ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Giới hạn \"chỉ bạn\": 「あなただけに」.",
+        "en": "Correct! The limitation \"only you\": 「あなただけに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Giới hạn \"chỉ bạn\": 「あなただけに」.",
+        "en": "Not quite. The limitation \"only you\": 「あなただけに」."
+      }
+    },
+    {
+      "item": "〜だけ（限定・程度）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n好きな___食べてください。",
+        "en": "Choose the correct option for the blank:\n好きな___食べてください。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "だけ"
+        ],
+        "hint": "〜だけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bao nhiêu tùy thích: 「好きなだけ」.",
+        "en": "Correct! As much as you like: 「好きなだけ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bao nhiêu tùy thích: 「好きなだけ」.",
+        "en": "Not quite. As much as you like: 「好きなだけ」."
+      }
+    },
+    {
+      "item": "〜ばかり（限定・多量）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、お菓子（　）食べています。",
+        "en": "Choose the correct option for the blank:\n彼は、お菓子（　）食べています。"
+      },
+      "payload": {
+        "choices": [
+          "だけ",
+          "ほど",
+          "ばかり",
+          "くらい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Toàn ăn bánh kẹo (quá thiên lệch): 「お菓子ばかり」.",
+        "en": "Correct! Eating nothing but sweets (too one-sided): 「お菓子ばかり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Toàn ăn bánh kẹo (quá thiên lệch): 「お菓子ばかり」.",
+        "en": "Not quite. Eating nothing but sweets (too one-sided): 「お菓子ばかり」."
+      }
+    },
+    {
+      "item": "〜ばかり（限定・多量）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこのクラスの学生は、男子（　）です。(toàn là nam)",
+        "en": "Choose the pattern that best fits the context:\nこのクラスの学生は、男子（　）です。(toàn là nam)"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "ばかり",
+          "として",
+          "にとって"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lặp lại/dồn về một loại: 「男子ばかり」.",
+        "en": "Correct! Concentrated on one type: 「男子ばかり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lặp lại/dồn về một loại: 「男子ばかり」.",
+        "en": "Not quite. Concentrated on one type: 「男子ばかり」."
+      }
+    },
+    {
+      "item": "〜ばかり（限定・多量）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもは、遊んで___います。",
+        "en": "Choose the correct option for the blank:\n子どもは、遊んで___います。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばかり"
+        ],
+        "hint": "〜ばかり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chỉ chơi mà không làm gì khác: 「遊んでばかりいる」.",
+        "en": "Correct! Playing and nothing else: 「遊んでばかりいる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chỉ chơi mà không làm gì khác: 「遊んでばかりいる」.",
+        "en": "Not quite. Playing and nothing else: 「遊んでばかりいる」."
+      }
+    },
+    {
+      "item": "〜にとって",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私（　）、家族は一番大切です。",
+        "en": "Choose the correct option for the blank:\n私（　）、家族は一番大切です。"
+      },
+      "payload": {
+        "choices": [
+          "にとって",
+          "として",
+          "に対して",
+          "について"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quan điểm của người nói: 「私にとって」.",
+        "en": "Correct! The speaker's standpoint: 「私にとって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quan điểm của người nói: 「私にとって」.",
+        "en": "Not quite. The speaker's standpoint: 「私にとって」."
+      }
+    },
+    {
+      "item": "〜にとって",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n外国人___、敬語は難しいです。",
+        "en": "Choose the correct option for the blank:\n外国人___、敬語は難しいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にとって"
+        ],
+        "hint": "〜にとって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đối với người nước ngoài (đánh giá): 「外国人にとって」.",
+        "en": "Correct! For foreigners (an evaluation): 「外国人にとって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đối với người nước ngoài (đánh giá): 「外国人にとって」.",
+        "en": "Not quite. For foreigners (an evaluation): 「外国人にとって」."
+      }
+    },
+    {
+      "item": "〜にとって",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこの仕事は、私（　）大きな挑戦です。",
+        "en": "Choose the pattern that best fits the context:\nこの仕事は、私（　）大きな挑戦です。"
+      },
+      "payload": {
+        "choices": [
+          "として",
+          "について",
+          "において",
+          "にとって"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nêu đánh giá (大きな挑戦) theo quan điểm của tôi: 「にとって」.",
+        "en": "Correct! Giving an evaluation (a big challenge) from my standpoint: 「にとって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nêu đánh giá (大きな挑戦) theo quan điểm của tôi: 「にとって」.",
+        "en": "Not quite. Giving an evaluation (a big challenge) from my standpoint: 「にとって」."
+      }
+    },
+    {
+      "item": "〜として",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n留学生（　）、日本に来ました。",
+        "en": "Choose the correct option for the blank:\n留学生（　）、日本に来ました。"
+      },
+      "payload": {
+        "choices": [
+          "にとって",
+          "に対して",
+          "として",
+          "について"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tư cách du học sinh: 「留学生として」.",
+        "en": "Correct! In the capacity of an international student: 「留学生として」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tư cách du học sinh: 「留学生として」.",
+        "en": "Not quite. In the capacity of an international student: 「留学生として」."
+      }
+    },
+    {
+      "item": "〜として",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、医者___働いています。",
+        "en": "Choose the correct option for the blank:\n彼は、医者___働いています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "として"
+        ],
+        "hint": "〜として"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm việc với tư cách bác sĩ: 「医者として」.",
+        "en": "Correct! Working as a doctor: 「医者として」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm việc với tư cách bác sĩ: 「医者として」.",
+        "en": "Not quite. Working as a doctor: 「医者として」."
+      }
+    },
+    {
+      "item": "〜として",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この道具は、栓抜きにとして使えます。",
+          "この道具は、栓抜きとして使えます。",
+          "この道具は、栓抜きでとして使えます。",
+          "この道具は、栓抜きをとして使えます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chức năng: danh từ + 「として」 (không thêm 「に」, 「で」, 「を」).",
+        "en": "Correct! A function: noun + 「として」 (no 「に」, 「で」 or 「を」 added)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chức năng: danh từ + 「として」 (không thêm 「に」, 「で」, 「を」).",
+        "en": "Not quite. A function: noun + 「として」 (no 「に」, 「で」 or 「を」 added)."
+      }
+    },
+    {
+      "item": "〜ばかり（限定・多量）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n最近、＿　＿　★　＿　。\n（悪い／ニュース／ばかり／です）\nLưu ý: thứ tự đúng là 悪い → ニュース → ばかり → です.",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n最近、＿　＿　★　＿　。\n（悪い／ニュース／ばかり／です）\nNote: the correct order is 悪い → ニュース → ばかり → です."
+      },
+      "payload": {
+        "choices": [
+          "ばかり",
+          "悪い",
+          "ニュース",
+          "です"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「最近、悪いニュースばかりです。」; ô ★ (thứ ba) là 「ばかり」.",
+        "en": "Correct! The correct sentence is 「最近、悪いニュースばかりです。」; the ★ (third) slot is 「ばかり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「最近、悪いニュースばかりです。」; ô ★ (thứ ba) là 「ばかり」.",
+        "en": "Not quite. The correct sentence is 「最近、悪いニュースばかりです。」; the ★ (third) slot is 「ばかり」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜だけ（限定・程度）",
+            {
+              "vi": "Chỉ ~; hết mức ~",
+              "en": "Only ~; as much as ~"
+            }
+          ],
+          [
+            "〜ばかり（限定・多量）",
+            {
+              "vi": "Toàn ~, chỉ ~",
+              "en": "Nothing but ~; mostly ~"
+            }
+          ],
+          [
+            "〜にとって",
+            {
+              "vi": "Đối với ~ (quan điểm)",
+              "en": "For ~; from the standpoint of ~"
+            }
+          ],
+          [
+            "〜として",
+            {
+              "vi": "Với tư cách là ~",
+              "en": "As ~; in the capacity of ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

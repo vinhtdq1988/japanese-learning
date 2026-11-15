@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-transport-travel",
+  "title": {
+    "vi": "Kanji giao thông – du lịch (送 急 止)",
+    "en": "Transport and travel kanji (送 急 止)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "送",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "gửi; tiễn",
+        "en": "send"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ"
+        ],
+        "kunReadings": [
+          "おく.る"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "放送",
+          "reading": "ほうそう",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "phát sóng",
+            "en": "broadcast"
+          }
+        },
+        {
+          "ja": "送る",
+          "reading": "おくる",
+          "kanjiReading": "おく",
+          "translation": {
+            "vi": "gửi",
+            "en": "to send"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "急",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "gấp; vội",
+        "en": "hurry; sudden"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ"
+        ],
+        "kunReadings": [
+          "いそ.ぐ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "急行",
+          "reading": "きゅうこう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "tàu nhanh",
+            "en": "express train"
+          }
+        },
+        {
+          "ja": "急ぐ",
+          "reading": "いそぐ",
+          "kanjiReading": "いそ",
+          "translation": {
+            "vi": "vội",
+            "en": "to hurry"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "止",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "dừng",
+        "en": "stop"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "と.まる",
+          "と.める"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "中止",
+          "reading": "ちゅうし",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "đình chỉ; hủy",
+            "en": "cancellation"
+          }
+        },
+        {
+          "ja": "止まる",
+          "reading": "とまる",
+          "kanjiReading": "と",
+          "translation": {
+            "vi": "dừng lại",
+            "en": "to stop"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "送",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「送」nghĩa là gì?",
+        "en": "What does 「送」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gửi; tiễn",
+            "en": "send"
+          },
+          {
+            "vi": "gấp; vội",
+            "en": "hurry; sudden"
+          },
+          {
+            "vi": "dừng",
+            "en": "stop"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 送 nghĩa là gửi; tiễn.",
+        "en": "Correct! 送 means send."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 送 nghĩa là gửi; tiễn, như trong 「放送」 (phát sóng).",
+        "en": "Not quite. 送 means send, as in 「放送」 (broadcast)."
+      }
+    },
+    {
+      "item": "送",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「送」 trong 「放送」 (“phát sóng”).",
+        "en": "Type the reading of 「送」 in 「放送」 (“broadcast”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 放送, 送 đọc là そう (âm On).",
+        "en": "Correct! In 放送, 送 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 放送 (phát sóng), 送 đọc là そう (âm On).",
+        "en": "In 放送 (broadcast), 送 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "送",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「送る」(gửi) đọc là gì?",
+        "en": "How is 「送る」 (to send) read?"
+      },
+      "payload": {
+        "choices": [
+          "そうる",
+          "おくる",
+          "とまる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 送る = おくる (gửi); 送 đọc là おく (âm Kun).",
+        "en": "Correct! 送る = おくる (to send); 送 is read おく (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "送る đọc là おくる (gửi): 送 mang âm Kun おく.",
+        "en": "送る is read おくる (to send): 送 takes the kun'yomi おく."
+      }
+    },
+    {
+      "item": "急",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「急」nghĩa là gì?",
+        "en": "What does 「急」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dừng",
+            "en": "stop"
+          },
+          {
+            "vi": "gấp; vội",
+            "en": "hurry; sudden"
+          },
+          {
+            "vi": "gửi; tiễn",
+            "en": "send"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 急 nghĩa là gấp; vội.",
+        "en": "Correct! 急 means hurry; sudden."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 急 nghĩa là gấp; vội, như trong 「急行」 (tàu nhanh).",
+        "en": "Not quite. 急 means hurry; sudden, as in 「急行」 (express train)."
+      }
+    },
+    {
+      "item": "急",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「急」 trong 「急行」 (“tàu nhanh”).",
+        "en": "Type the reading of 「急」 in 「急行」 (“express train”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 急行, 急 đọc là きゅう (âm On).",
+        "en": "Correct! In 急行, 急 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 急行 (tàu nhanh), 急 đọc là きゅう (âm On).",
+        "en": "In 急行 (express train), 急 is read きゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "急",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「急ぐ」(vội) đọc là gì?",
+        "en": "How is 「急ぐ」 (to hurry) read?"
+      },
+      "payload": {
+        "choices": [
+          "きゅうぐ",
+          "とまる",
+          "いそぐ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 急ぐ = いそぐ (vội); 急 đọc là いそ (âm Kun).",
+        "en": "Correct! 急ぐ = いそぐ (to hurry); 急 is read いそ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "急ぐ đọc là いそぐ (vội): 急 mang âm Kun いそ.",
+        "en": "急ぐ is read いそぐ (to hurry): 急 takes the kun'yomi いそ."
+      }
+    },
+    {
+      "item": "止",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「止」nghĩa là gì?",
+        "en": "What does 「止」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gửi; tiễn",
+            "en": "send"
+          },
+          {
+            "vi": "gấp; vội",
+            "en": "hurry; sudden"
+          },
+          {
+            "vi": "dừng",
+            "en": "stop"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 止 nghĩa là dừng.",
+        "en": "Correct! 止 means stop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 止 nghĩa là dừng, như trong 「中止」 (đình chỉ; hủy).",
+        "en": "Not quite. 止 means stop, as in 「中止」 (cancellation)."
+      }
+    },
+    {
+      "item": "止",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「止」 trong 「中止」 (“đình chỉ; hủy”).",
+        "en": "Type the reading of 「止」 in 「中止」 (“cancellation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 中止, 止 đọc là し (âm On).",
+        "en": "Correct! In 中止, 止 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 中止 (đình chỉ; hủy), 止 đọc là し (âm On).",
+        "en": "In 中止 (cancellation), 止 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "止",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「止まる」(dừng lại) đọc là gì?",
+        "en": "How is 「止まる」 (to stop) read?"
+      },
+      "payload": {
+        "choices": [
+          "とまる",
+          "しまる",
+          "おくる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 止まる = とまる (dừng lại); 止 đọc là と (âm Kun).",
+        "en": "Correct! 止まる = とまる (to stop); 止 is read と (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "止まる đọc là とまる (dừng lại): 止 mang âm Kun と.",
+        "en": "止まる is read とまる (to stop): 止 takes the kun'yomi と."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "送",
+            {
+              "vi": "gửi; tiễn",
+              "en": "send"
+            }
+          ],
+          [
+            "急",
+            {
+              "vi": "gấp; vội",
+              "en": "hurry; sudden"
+            }
+          ],
+          [
+            "止",
+            {
+              "vi": "dừng",
+              "en": "stop"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

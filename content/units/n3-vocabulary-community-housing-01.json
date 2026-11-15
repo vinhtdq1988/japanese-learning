@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-community-housing",
+  "title": {
+    "vi": "Nhà ở và thuê nhà",
+    "en": "Housing and renting"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1670,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "住宅",
+      "reading": "じゅうたく",
+      "meaning": {
+        "vi": "Nhà ở",
+        "en": "Housing; residence"
+      },
+      "examples": [
+        {
+          "ja": "この辺りは、新しい住宅がたくさん建っています。",
+          "reading": "このあたりは、あたらしいじゅうたくがたくさんたっています。",
+          "translation": {
+            "vi": "Khu vực này có nhiều nhà ở mới được xây.",
+            "en": "Many new houses have been built around here."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "団地",
+      "reading": "だんち",
+      "meaning": {
+        "vi": "Khu chung cư (tập thể)",
+        "en": "Housing complex"
+      },
+      "examples": [
+        {
+          "ja": "子どもの頃、団地に住んでいました。",
+          "reading": "こどものころ、だんちにすんでいました。",
+          "translation": {
+            "vi": "Hồi nhỏ tôi sống ở một khu chung cư.",
+            "en": "I lived in a housing complex as a child."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一戸建て",
+      "reading": "いっこだて",
+      "meaning": {
+        "vi": "Nhà riêng (nhà một hộ)",
+        "en": "Detached house"
+      },
+      "examples": [
+        {
+          "ja": "いつか、庭のある一戸建てを買いたいです。",
+          "reading": "いつか、にわのあるいっこだてをかいたいです。",
+          "translation": {
+            "vi": "Một ngày nào đó tôi muốn mua căn nhà riêng có vườn.",
+            "en": "Someday I want to buy a detached house with a garden."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "賃貸",
+      "reading": "ちんたい",
+      "meaning": {
+        "vi": "Cho thuê; nhà thuê",
+        "en": "Rental"
+      },
+      "examples": [
+        {
+          "ja": "今は、賃貸のアパートに住んでいます。",
+          "reading": "いまは、ちんたいのアパートにすんでいます。",
+          "translation": {
+            "vi": "Hiện tôi đang sống trong căn hộ thuê.",
+            "en": "Right now I live in a rental apartment."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "家主",
+      "reading": "やぬし",
+      "meaning": {
+        "vi": "Chủ nhà (cho thuê)",
+        "en": "Landlord"
+      },
+      "examples": [
+        {
+          "ja": "家主に、部屋の修理をお願いしました。",
+          "reading": "やぬしに、へやのしゅうりをおねがいしました。",
+          "translation": {
+            "vi": "Tôi đã nhờ chủ nhà sửa phòng.",
+            "en": "I asked the landlord to repair the room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "管理人",
+      "reading": "かんりにん",
+      "meaning": {
+        "vi": "Người quản lý (tòa nhà)",
+        "en": "Building manager"
+      },
+      "examples": [
+        {
+          "ja": "マンションの管理人に、荷物を預けました。",
+          "reading": "マンションのかんりにんに、にもつをあずけました。",
+          "translation": {
+            "vi": "Tôi đã gửi hành lý cho người quản lý chung cư.",
+            "en": "I left my luggage with the apartment manager."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "敷金",
+      "reading": "しききん",
+      "meaning": {
+        "vi": "Tiền đặt cọc (trả lại)",
+        "en": "Security deposit"
+      },
+      "examples": [
+        {
+          "ja": "引っ越すときに、敷金が戻ってきました。",
+          "reading": "ひっこすときに、しききんがもどってきました。",
+          "translation": {
+            "vi": "Khi chuyển đi, tiền đặt cọc đã được trả lại.",
+            "en": "When I moved out, my security deposit was returned."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "礼金",
+      "reading": "れいきん",
+      "meaning": {
+        "vi": "Tiền lễ (cho chủ nhà)",
+        "en": "Key money"
+      },
+      "examples": [
+        {
+          "ja": "部屋を借りるとき、礼金を払いました。",
+          "reading": "へやをかりるとき、れいきんをはらいました。",
+          "translation": {
+            "vi": "Khi thuê phòng, tôi đã trả tiền lễ.",
+            "en": "When renting the room I paid key money."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "入居",
+      "reading": "にゅうきょ",
+      "meaning": {
+        "vi": "Dọn vào ở",
+        "en": "Moving in; occupancy"
+      },
+      "examples": [
+        {
+          "ja": "新しいマンションに、来月入居します。",
+          "reading": "あたらしいマンションに、らいげつにゅうきょします。",
+          "translation": {
+            "vi": "Tháng sau tôi sẽ dọn vào chung cư mới.",
+            "en": "I will move into the new apartment next month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "転居",
+      "reading": "てんきょ",
+      "meaning": {
+        "vi": "Chuyển chỗ ở",
+        "en": "Change of address"
+      },
+      "examples": [
+        {
+          "ja": "転居の手続きを、市役所で済ませました。",
+          "reading": "てんきょのてつづきを、しやくしょですませました。",
+          "translation": {
+            "vi": "Tôi đã làm xong thủ tục chuyển chỗ ở ở tòa thị chính.",
+            "en": "I finished the change-of-address procedures at city hall."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "間取り",
+      "reading": "まどり",
+      "meaning": {
+        "vi": "Bố cục căn phòng",
+        "en": "Floor plan; layout"
+      },
+      "examples": [
+        {
+          "ja": "この部屋は、間取りがとても使いやすいです。",
+          "reading": "このへやは、まどりがとてもつかいやすいです。",
+          "translation": {
+            "vi": "Căn phòng này có bố cục rất dễ sử dụng.",
+            "en": "This room has a very usable layout."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "空室",
+      "reading": "くうしつ",
+      "meaning": {
+        "vi": "Phòng trống",
+        "en": "Vacant room"
+      },
+      "examples": [
+        {
+          "ja": "このアパートは、今、空室がありません。",
+          "reading": "このアパートは、いま、くうしつがありません。",
+          "translation": {
+            "vi": "Căn hộ này hiện không còn phòng trống.",
+            "en": "This apartment has no vacancies at the moment."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "住宅",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この辺りは、新しい（　）がたくさん建っています。 — Nghĩa của câu: “Khu vực này có nhiều nhà ở mới được xây.”",
+        "en": "Choose the word that fits the blank: この辺りは、新しい（　）がたくさん建っています。 — Meaning of the sentence: “Many new houses have been built around here.”"
+      },
+      "payload": {
+        "choices": [
+          "空室",
+          "賃貸",
+          "入居",
+          "住宅"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「住宅」(Nhà ở) hợp nghĩa câu này: “Khu vực này có nhiều nhà ở mới được xây.”",
+        "en": "Correct! 「住宅」(Housing; residence) fits this sentence: “Many new houses have been built around here.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu vực này có nhiều nhà ở mới được xây.”, nên cần 「住宅」(Nhà ở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Many new houses have been built around here.”, so it needs 「住宅」(Housing; residence); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "団地",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもの頃、（　）に住んでいました。 — Nghĩa của câu: “Hồi nhỏ tôi sống ở một khu chung cư.”",
+        "en": "Choose the word that fits the blank: 子どもの頃、（　）に住んでいました。 — Meaning of the sentence: “I lived in a housing complex as a child.”"
+      },
+      "payload": {
+        "choices": [
+          "団地",
+          "敷金",
+          "入居",
+          "賃貸"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「団地」(Khu chung cư (tập thể)) hợp nghĩa câu này: “Hồi nhỏ tôi sống ở một khu chung cư.”",
+        "en": "Correct! 「団地」(Housing complex) fits this sentence: “I lived in a housing complex as a child.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hồi nhỏ tôi sống ở một khu chung cư.”, nên cần 「団地」(Khu chung cư (tập thể)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I lived in a housing complex as a child.”, so it needs 「団地」(Housing complex); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一戸建て",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: いつか、庭のある（　）を買いたいです。 — Nghĩa của câu: “Một ngày nào đó tôi muốn mua căn nhà riêng có vườn.”",
+        "en": "Choose the word that fits the blank: いつか、庭のある（　）を買いたいです。 — Meaning of the sentence: “Someday I want to buy a detached house with a garden.”"
+      },
+      "payload": {
+        "choices": [
+          "礼金",
+          "一戸建て",
+          "管理人",
+          "転居"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一戸建て」(Nhà riêng (nhà một hộ)) hợp nghĩa câu này: “Một ngày nào đó tôi muốn mua căn nhà riêng có vườn.”",
+        "en": "Correct! 「一戸建て」(Detached house) fits this sentence: “Someday I want to buy a detached house with a garden.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Một ngày nào đó tôi muốn mua căn nhà riêng có vườn.”, nên cần 「一戸建て」(Nhà riêng (nhà một hộ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Someday I want to buy a detached house with a garden.”, so it needs 「一戸建て」(Detached house); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "賃貸",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今は、（　）のアパートに住んでいます。 — Nghĩa của câu: “Hiện tôi đang sống trong căn hộ thuê.”",
+        "en": "Choose the word that fits the blank: 今は、（　）のアパートに住んでいます。 — Meaning of the sentence: “Right now I live in a rental apartment.”"
+      },
+      "payload": {
+        "choices": [
+          "団地",
+          "間取り",
+          "賃貸",
+          "家主"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賃貸」(Cho thuê; nhà thuê) hợp nghĩa câu này: “Hiện tôi đang sống trong căn hộ thuê.”",
+        "en": "Correct! 「賃貸」(Rental) fits this sentence: “Right now I live in a rental apartment.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hiện tôi đang sống trong căn hộ thuê.”, nên cần 「賃貸」(Cho thuê; nhà thuê); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Right now I live in a rental apartment.”, so it needs 「賃貸」(Rental); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "家主",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）に、部屋の修理をお願いしました。 — Nghĩa của câu: “Tôi đã nhờ chủ nhà sửa phòng.”",
+        "en": "Choose the word that fits the blank: （　）に、部屋の修理をお願いしました。 — Meaning of the sentence: “I asked the landlord to repair the room.”"
+      },
+      "payload": {
+        "choices": [
+          "礼金",
+          "管理人",
+          "敷金",
+          "家主"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「家主」(Chủ nhà (cho thuê)) hợp nghĩa câu này: “Tôi đã nhờ chủ nhà sửa phòng.”",
+        "en": "Correct! 「家主」(Landlord) fits this sentence: “I asked the landlord to repair the room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nhờ chủ nhà sửa phòng.”, nên cần 「家主」(Chủ nhà (cho thuê)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I asked the landlord to repair the room.”, so it needs 「家主」(Landlord); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "管理人",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: マンションの（　）に、荷物を預けました。 — Nghĩa của câu: “Tôi đã gửi hành lý cho người quản lý chung cư.”",
+        "en": "Choose the word that fits the blank: マンションの（　）に、荷物を預けました。 — Meaning of the sentence: “I left my luggage with the apartment manager.”"
+      },
+      "payload": {
+        "choices": [
+          "管理人",
+          "団地",
+          "住宅",
+          "間取り"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「管理人」(Người quản lý (tòa nhà)) hợp nghĩa câu này: “Tôi đã gửi hành lý cho người quản lý chung cư.”",
+        "en": "Correct! 「管理人」(Building manager) fits this sentence: “I left my luggage with the apartment manager.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã gửi hành lý cho người quản lý chung cư.”, nên cần 「管理人」(Người quản lý (tòa nhà)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I left my luggage with the apartment manager.”, so it needs 「管理人」(Building manager); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "敷金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 引っ越すときに、（　）が戻ってきました。 — Nghĩa của câu: “Khi chuyển đi, tiền đặt cọc đã được trả lại.”",
+        "en": "Choose the word that fits the blank: 引っ越すときに、（　）が戻ってきました。 — Meaning of the sentence: “When I moved out, my security deposit was returned.”"
+      },
+      "payload": {
+        "choices": [
+          "一戸建て",
+          "敷金",
+          "賃貸",
+          "間取り"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「敷金」(Tiền đặt cọc (trả lại)) hợp nghĩa câu này: “Khi chuyển đi, tiền đặt cọc đã được trả lại.”",
+        "en": "Correct! 「敷金」(Security deposit) fits this sentence: “When I moved out, my security deposit was returned.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi chuyển đi, tiền đặt cọc đã được trả lại.”, nên cần 「敷金」(Tiền đặt cọc (trả lại)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When I moved out, my security deposit was returned.”, so it needs 「敷金」(Security deposit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "礼金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋を借りるとき、（　）を払いました。 — Nghĩa của câu: “Khi thuê phòng, tôi đã trả tiền lễ.”",
+        "en": "Choose the word that fits the blank: 部屋を借りるとき、（　）を払いました。 — Meaning of the sentence: “When renting the room I paid key money.”"
+      },
+      "payload": {
+        "choices": [
+          "転居",
+          "敷金",
+          "礼金",
+          "住宅"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「礼金」(Tiền lễ (cho chủ nhà)) hợp nghĩa câu này: “Khi thuê phòng, tôi đã trả tiền lễ.”",
+        "en": "Correct! 「礼金」(Key money) fits this sentence: “When renting the room I paid key money.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi thuê phòng, tôi đã trả tiền lễ.”, nên cần 「礼金」(Tiền lễ (cho chủ nhà)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When renting the room I paid key money.”, so it needs 「礼金」(Key money); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "入居",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しいマンションに、来月（　）します。 — Nghĩa của câu: “Tháng sau tôi sẽ dọn vào chung cư mới.”",
+        "en": "Choose the word that fits the blank: 新しいマンションに、来月（　）します。 — Meaning of the sentence: “I will move into the new apartment next month.”"
+      },
+      "payload": {
+        "choices": [
+          "間取り",
+          "家主",
+          "転居",
+          "入居"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入居」(Dọn vào ở) hợp nghĩa câu này: “Tháng sau tôi sẽ dọn vào chung cư mới.”",
+        "en": "Correct! 「入居」(Moving in; occupancy) fits this sentence: “I will move into the new apartment next month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng sau tôi sẽ dọn vào chung cư mới.”, nên cần 「入居」(Dọn vào ở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will move into the new apartment next month.”, so it needs 「入居」(Moving in; occupancy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "転居",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の手続きを、市役所で済ませました。 — Nghĩa của câu: “Tôi đã làm xong thủ tục chuyển chỗ ở ở tòa thị chính.”",
+        "en": "Choose the word that fits the blank: （　）の手続きを、市役所で済ませました。 — Meaning of the sentence: “I finished the change-of-address procedures at city hall.”"
+      },
+      "payload": {
+        "choices": [
+          "転居",
+          "入居",
+          "間取り",
+          "賃貸"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「転居」(Chuyển chỗ ở) hợp nghĩa câu này: “Tôi đã làm xong thủ tục chuyển chỗ ở ở tòa thị chính.”",
+        "en": "Correct! 「転居」(Change of address) fits this sentence: “I finished the change-of-address procedures at city hall.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã làm xong thủ tục chuyển chỗ ở ở tòa thị chính.”, nên cần 「転居」(Chuyển chỗ ở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I finished the change-of-address procedures at city hall.”, so it needs 「転居」(Change of address); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "間取り",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この部屋は、（　）がとても使いやすいです。 — Nghĩa của câu: “Căn phòng này có bố cục rất dễ sử dụng.”",
+        "en": "Choose the word that fits the blank: この部屋は、（　）がとても使いやすいです。 — Meaning of the sentence: “This room has a very usable layout.”"
+      },
+      "payload": {
+        "choices": [
+          "転居",
+          "間取り",
+          "敷金",
+          "賃貸"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「間取り」(Bố cục căn phòng) hợp nghĩa câu này: “Căn phòng này có bố cục rất dễ sử dụng.”",
+        "en": "Correct! 「間取り」(Floor plan; layout) fits this sentence: “This room has a very usable layout.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Căn phòng này có bố cục rất dễ sử dụng.”, nên cần 「間取り」(Bố cục căn phòng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This room has a very usable layout.”, so it needs 「間取り」(Floor plan; layout); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "空室",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このアパートは、今、（　）がありません。 — Nghĩa của câu: “Căn hộ này hiện không còn phòng trống.”",
+        "en": "Choose the word that fits the blank: このアパートは、今、（　）がありません。 — Meaning of the sentence: “This apartment has no vacancies at the moment.”"
+      },
+      "payload": {
+        "choices": [
+          "家主",
+          "住宅",
+          "空室",
+          "間取り"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「空室」(Phòng trống) hợp nghĩa câu này: “Căn hộ này hiện không còn phòng trống.”",
+        "en": "Correct! 「空室」(Vacant room) fits this sentence: “This apartment has no vacancies at the moment.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Căn hộ này hiện không còn phòng trống.”, nên cần 「空室」(Phòng trống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This apartment has no vacancies at the moment.”, so it needs 「空室」(Vacant room); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "住宅",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この辺りは、新しい「住宅」がたくさん建っています。",
+        "en": "Choose the correct reading of the word in 「」: この辺りは、新しい「住宅」がたくさん建っています。"
+      },
+      "payload": {
+        "choices": [
+          "じゅうたく",
+          "まどり",
+          "れいきん",
+          "ちんたい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「住宅」 đọc là 「じゅうたく」, nghĩa là Nhà ở.",
+        "en": "Correct! 「住宅」 is read 「じゅうたく」 and means Housing; residence."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「住宅」 đọc là 「じゅうたく」 (Nhà ở); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「住宅」 is read 「じゅうたく」 (Housing; residence); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "賃貸",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今は、「賃貸」のアパートに住んでいます。",
+        "en": "Choose the correct reading of the word in 「」: 今は、「賃貸」のアパートに住んでいます。"
+      },
+      "payload": {
+        "choices": [
+          "れいきん",
+          "ちんたい",
+          "にゅうきょ",
+          "くうしつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賃貸」 đọc là 「ちんたい」, nghĩa là Cho thuê; nhà thuê.",
+        "en": "Correct! 「賃貸」 is read 「ちんたい」 and means Rental."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「賃貸」 đọc là 「ちんたい」 (Cho thuê; nhà thuê); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「賃貸」 is read 「ちんたい」 (Rental); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "敷金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 引っ越すときに、「敷金」が戻ってきました。",
+        "en": "Choose the correct reading of the word in 「」: 引っ越すときに、「敷金」が戻ってきました。"
+      },
+      "payload": {
+        "choices": [
+          "いっこだて",
+          "にゅうきょ",
+          "しききん",
+          "まどり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「敷金」 đọc là 「しききん」, nghĩa là Tiền đặt cọc (trả lại).",
+        "en": "Correct! 「敷金」 is read 「しききん」 and means Security deposit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「敷金」 đọc là 「しききん」 (Tiền đặt cọc (trả lại)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「敷金」 is read 「しききん」 (Security deposit); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "転居",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「転居」の手続きを、市役所で済ませました。",
+        "en": "Choose the correct reading of the word in 「」: 「転居」の手続きを、市役所で済ませました。"
+      },
+      "payload": {
+        "choices": [
+          "くうしつ",
+          "しききん",
+          "やぬし",
+          "てんきょ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「転居」 đọc là 「てんきょ」, nghĩa là Chuyển chỗ ở.",
+        "en": "Correct! 「転居」 is read 「てんきょ」 and means Change of address."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「転居」 đọc là 「てんきょ」 (Chuyển chỗ ở); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「転居」 is read 「てんきょ」 (Change of address); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一戸建て",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: いつか、庭のある「いっこだて」を買いたいです。",
+        "en": "Choose the correct way to write the word in 「」: いつか、庭のある「いっこだて」を買いたいです。"
+      },
+      "payload": {
+        "choices": [
+          "住宅",
+          "一戸建て",
+          "敷金",
+          "間取り"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いっこだて」 viết là 「一戸建て」, nghĩa là Nhà riêng (nhà một hộ).",
+        "en": "Correct! 「いっこだて」 is written 「一戸建て」 and means Detached house."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いっこだて」 viết là 「一戸建て」 (Nhà riêng (nhà một hộ)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いっこだて」 is written 「一戸建て」 (Detached house); the other words are read differently."
+      }
+    },
+    {
+      "item": "入居",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しいマンションに、来月「にゅうきょ」します。",
+        "en": "Choose the correct way to write the word in 「」: 新しいマンションに、来月「にゅうきょ」します。"
+      },
+      "payload": {
+        "choices": [
+          "礼金",
+          "敷金",
+          "入居",
+          "空室"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「にゅうきょ」 viết là 「入居」, nghĩa là Dọn vào ở.",
+        "en": "Correct! 「にゅうきょ」 is written 「入居」 and means Moving in; occupancy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「にゅうきょ」 viết là 「入居」 (Dọn vào ở); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「にゅうきょ」 is written 「入居」 (Moving in; occupancy); the other words are read differently."
+      }
+    }
+  ]
+}

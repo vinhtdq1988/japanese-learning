@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-health-illness",
+  "title": {
+    "vi": "Các bộ phận cơ thể khi bị đau",
+    "en": "Body parts when you are in pain"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "咳",
+      "reading": "せき",
+      "meaning": {
+        "vi": "Cơn ho",
+        "en": "Cough"
+      },
+      "examples": [
+        {
+          "ja": "風邪をひいて、咳が止まりません。",
+          "reading": "かぜをひいて、せきがとまりません。",
+          "translation": {
+            "vi": "Tôi bị cảm nên ho mãi không dứt.",
+            "en": "I caught a cold and cannot stop coughing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "喉",
+      "reading": "のど",
+      "meaning": {
+        "vi": "Cổ họng",
+        "en": "Throat"
+      },
+      "examples": [
+        {
+          "ja": "風邪で、喉が痛くて、水も飲めません。",
+          "reading": "かぜで、のどがいたくて、みずものめません。",
+          "translation": {
+            "vi": "Tôi bị cảm, đau họng đến mức nước cũng không uống được.",
+            "en": "I have a cold and my throat hurts so much I cannot even drink water."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腹",
+      "reading": "はら",
+      "meaning": {
+        "vi": "Bụng",
+        "en": "Belly; stomach (abdomen)"
+      },
+      "examples": [
+        {
+          "ja": "昼ご飯を食べていないので、腹がへりました。",
+          "reading": "ひるごはんをたべていないので、はらがへりました。",
+          "translation": {
+            "vi": "Vì chưa ăn trưa nên tôi đói bụng.",
+            "en": "I have not eaten lunch, so I am hungry."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "胃",
+      "reading": "い",
+      "meaning": {
+        "vi": "Dạ dày",
+        "en": "Stomach (organ)"
+      },
+      "examples": [
+        {
+          "ja": "食べすぎて、胃が痛いです。",
+          "reading": "たべすぎて、いがいたいです。",
+          "translation": {
+            "vi": "Tôi ăn quá nhiều nên bị đau dạ dày.",
+            "en": "I ate too much and my stomach hurts."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "骨",
+      "reading": "ほね",
+      "meaning": {
+        "vi": "Xương",
+        "en": "Bone"
+      },
+      "examples": [
+        {
+          "ja": "自転車で転んで、足の骨を折りました。",
+          "reading": "じてんしゃでころんで、あしのほねをおりました。",
+          "translation": {
+            "vi": "Tôi bị ngã xe đạp và gãy xương chân.",
+            "en": "I fell off my bike and broke a bone in my leg."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "血",
+      "reading": "ち",
+      "meaning": {
+        "vi": "Máu",
+        "en": "Blood"
+      },
+      "examples": [
+        {
+          "ja": "指を切って、血が出ました。",
+          "reading": "ゆびをきって、ちがでました。",
+          "translation": {
+            "vi": "Tôi cắt vào ngón tay nên chảy máu.",
+            "en": "I cut my finger and it bled."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "咳",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 風邪をひいて、（　）が止まりません。 — Nghĩa của câu: “Tôi bị cảm nên ho mãi không dứt.”",
+        "en": "Choose the word that fits the blank: 風邪をひいて、（　）が止まりません。 — Meaning of the sentence: “I caught a cold and cannot stop coughing.”"
+      },
+      "payload": {
+        "choices": [
+          "咳",
+          "喉",
+          "腹",
+          "血"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「咳」(Cơn ho) hợp nghĩa câu này: “Tôi bị cảm nên ho mãi không dứt.”",
+        "en": "Correct! 「咳」(Cough) fits this sentence: “I caught a cold and cannot stop coughing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bị cảm nên ho mãi không dứt.”, nên cần 「咳」(Cơn ho); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I caught a cold and cannot stop coughing.”, so it needs 「咳」(Cough); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "喉",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 風邪で、（　）が痛くて、水も飲めません。 — Nghĩa của câu: “Tôi bị cảm, đau họng đến mức nước cũng không uống được.”",
+        "en": "Choose the word that fits the blank: 風邪で、（　）が痛くて、水も飲めません。 — Meaning of the sentence: “I have a cold and my throat hurts so much I cannot even drink water.”"
+      },
+      "payload": {
+        "choices": [
+          "腹",
+          "喉",
+          "胃",
+          "骨"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「喉」(Cổ họng) hợp nghĩa câu này: “Tôi bị cảm, đau họng đến mức nước cũng không uống được.”",
+        "en": "Correct! 「喉」(Throat) fits this sentence: “I have a cold and my throat hurts so much I cannot even drink water.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bị cảm, đau họng đến mức nước cũng không uống được.”, nên cần 「喉」(Cổ họng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have a cold and my throat hurts so much I cannot even drink water.”, so it needs 「喉」(Throat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "腹",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 昼ご飯を食べていないので、（　）がへりました。",
+        "en": "Choose the word that fits the blank: 昼ご飯を食べていないので、（　）がへりました。"
+      },
+      "payload": {
+        "choices": [
+          "胃",
+          "骨",
+          "腹",
+          "血"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腹」(Bụng) hợp nghĩa câu này: “Vì chưa ăn trưa nên tôi đói bụng.”",
+        "en": "Correct! 「腹」(Belly; stomach (abdomen)) fits this sentence: “I have not eaten lunch, so I am hungry.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì chưa ăn trưa nên tôi đói bụng.”, nên cần 「腹」(Bụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have not eaten lunch, so I am hungry.”, so it needs 「腹」(Belly; stomach (abdomen)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "胃",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 食べすぎて、（　）が痛いです。 — Nghĩa của câu: “Tôi ăn quá nhiều nên bị đau dạ dày.”",
+        "en": "Choose the word that fits the blank: 食べすぎて、（　）が痛いです。 — Meaning of the sentence: “I ate too much and my stomach hurts.”"
+      },
+      "payload": {
+        "choices": [
+          "腹",
+          "骨",
+          "喉",
+          "胃"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「胃」(Dạ dày) hợp nghĩa câu này: “Tôi ăn quá nhiều nên bị đau dạ dày.”",
+        "en": "Correct! 「胃」(Stomach (organ)) fits this sentence: “I ate too much and my stomach hurts.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi ăn quá nhiều nên bị đau dạ dày.”, nên cần 「胃」(Dạ dày); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I ate too much and my stomach hurts.”, so it needs 「胃」(Stomach (organ)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "骨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 自転車で転んで、足の（　）を折りました。",
+        "en": "Choose the word that fits the blank: 自転車で転んで、足の（　）を折りました。"
+      },
+      "payload": {
+        "choices": [
+          "骨",
+          "血",
+          "胃",
+          "咳"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「骨」(Xương) hợp nghĩa câu này: “Tôi bị ngã xe đạp và gãy xương chân.”",
+        "en": "Correct! 「骨」(Bone) fits this sentence: “I fell off my bike and broke a bone in my leg.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bị ngã xe đạp và gãy xương chân.”, nên cần 「骨」(Xương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I fell off my bike and broke a bone in my leg.”, so it needs 「骨」(Bone); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "血",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 指を切って、（　）が出ました。",
+        "en": "Choose the word that fits the blank: 指を切って、（　）が出ました。"
+      },
+      "payload": {
+        "choices": [
+          "骨",
+          "血",
+          "咳",
+          "胃"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「血」(Máu) hợp nghĩa câu này: “Tôi cắt vào ngón tay nên chảy máu.”",
+        "en": "Correct! 「血」(Blood) fits this sentence: “I cut my finger and it bled.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi cắt vào ngón tay nên chảy máu.”, nên cần 「血」(Máu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cut my finger and it bled.”, so it needs 「血」(Blood); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "咳",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 風邪をひいて、「咳」が止まりません。",
+        "en": "Choose the correct reading of the word in 「」: 風邪をひいて、「咳」が止まりません。"
+      },
+      "payload": {
+        "choices": [
+          "のど",
+          "せき",
+          "はら",
+          "い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「咳」 đọc là 「せき」, nghĩa là Cơn ho.",
+        "en": "Correct! 「咳」 is read 「せき」 and means Cough."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「咳」 đọc là 「せき」 (Cơn ho); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「咳」 is read 「せき」 (Cough); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "胃",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 食べすぎて、「胃」が痛いです。",
+        "en": "Choose the correct reading of the word in 「」: 食べすぎて、「胃」が痛いです。"
+      },
+      "payload": {
+        "choices": [
+          "せき",
+          "のど",
+          "い",
+          "はら"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「胃」 đọc là 「い」, nghĩa là Dạ dày.",
+        "en": "Correct! 「胃」 is read 「い」 and means Stomach (organ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「胃」 đọc là 「い」 (Dạ dày); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「胃」 is read 「い」 (Stomach (organ)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "喉",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 風邪で、「のど」が痛くて、水も飲めません。",
+        "en": "Choose the correct way to write the word in 「」: 風邪で、「のど」が痛くて、水も飲めません。"
+      },
+      "payload": {
+        "choices": [
+          "咳",
+          "腹",
+          "喉",
+          "胃"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「のど」 viết là 「喉」, nghĩa là Cổ họng.",
+        "en": "Correct! 「のど」 is written 「喉」 and means Throat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「のど」 viết là 「喉」 (Cổ họng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「のど」 is written 「喉」 (Throat); the other words are read differently."
+      }
+    }
+  ]
+}

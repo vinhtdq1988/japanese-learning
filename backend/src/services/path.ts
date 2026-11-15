@@ -25,6 +25,7 @@ import {
 import { localize } from '../domain/i18n.js';
 import { AppError, type Language, type Level } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
+import type { CompetencyLevel } from '../engine/competency.js';
 import {
   buildPathParams,
   CONTENT_CEILING,
@@ -40,6 +41,7 @@ import {
   type ScopeNotice,
 } from '../engine/path.js';
 import { assertNotClassManaged } from './class-lock.js';
+import { loadCompetency } from './competency.js';
 import type { CatalogUnit, ContentCache } from './content-cache.js';
 import type { ServiceDeps } from './deps.js';
 import { rankForContext, resolveLearningContext } from './learning-context.js';
@@ -73,6 +75,8 @@ export interface PathItemDto {
   level: string;
   estMinutes: number;
   status: 'pending' | 'in_progress' | 'completed' | 'mastered';
+  /** Mức năng lực của CHỦ ĐỀ của đơn vị (spec 007); chưa có dữ liệu chủ đề ⇒ `insufficient`. */
+  competency: CompetencyLevel;
 }
 
 export interface PathDetailDto extends PathSummaryDto {
@@ -191,7 +195,10 @@ export async function getPathDetail(
   const ctx = await resolveLearningContext(deps, userId);
   if (!ctx) throw notOnboarded();
 
-  const ranked = await rankForContext(deps, userId, ctx, { includeMastered: true });
+  const [ranked, competency] = await Promise.all([
+    rankForContext(deps, userId, ctx, { includeMastered: true }),
+    loadCompetency(deps, userId, ctx.profile.skills),
+  ]);
   const language: Language = ctx.profile.language;
   const summary: PathSummaryDto =
     ctx.source === 'personal'
@@ -216,6 +223,7 @@ export async function getPathDetail(
       level: r.unit.level,
       estMinutes: r.unit.estMinutes,
       status: r.status,
+      competency: r.unit.topicId ? competency.topicLevel(r.unit.topicId) : 'insufficient',
     })),
   };
 }

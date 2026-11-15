@@ -1,0 +1,518 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-aspect-state",
+  "title": {
+    "vi": "Trạng thái (2): 〜がち, 〜気味, 〜っぱなし, 〜だらけ",
+    "en": "State (2): 〜がち, 〜気味, 〜っぱなし, 〜だらけ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜がち",
+      "meaning": {
+        "vi": "Hay ~, có xu hướng ~",
+        "en": "Tend to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます / danh từ + がち (がちだ, がちな + danh từ). Xu hướng dễ xảy ra điều không mong muốn (病気がち, 遅れがち, 忘れがち). Thường mang nghĩa tiêu cực.",
+        "en": "Usage: verb ます-stem / noun + がち (がちだ, がちな + noun). A tendency toward something undesirable (病気がち, 遅れがち, 忘れがち). Usually negative."
+      },
+      "examples": [
+        {
+          "ja": "冬は、風邪をひきがちです。",
+          "reading": "ふゆは、かぜをひきがちです。",
+          "translation": {
+            "vi": "Mùa đông tôi hay bị cảm.",
+            "en": "In winter I tend to catch colds."
+          }
+        },
+        {
+          "ja": "最近、忙しくて、連絡が遅れがちです。",
+          "reading": "さいきん、いそがしくて、れんらくがおくれがちです。",
+          "translation": {
+            "vi": "Dạo này bận nên tôi hay trả lời liên lạc chậm.",
+            "en": "Lately I am busy, so I tend to be slow in getting back to people."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-103"
+    },
+    {
+      "japanese": "〜気味",
+      "meaning": {
+        "vi": "Hơi có vẻ ~",
+        "en": "A touch of ~, slightly ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます / danh từ + 気味 (ぎみ). Cảm giác hơi mang tính chất nào đó (風邪気味, 疲れ気味, 太り気味). Mức độ nhẹ, thường điều không tốt.",
+        "en": "Usage: verb ます-stem / noun + 気味 (ぎみ). A slight feeling of having some quality (風邪気味, 疲れ気味, 太り気味). Mild degree, usually something undesirable."
+      },
+      "examples": [
+        {
+          "ja": "今日は、風邪気味で、頭が痛いです。",
+          "reading": "きょうは、かぜぎみで、あたまがいたいです。",
+          "translation": {
+            "vi": "Hôm nay tôi hơi cảm nên đau đầu.",
+            "en": "I have a slight cold today and my head aches."
+          }
+        },
+        {
+          "ja": "最近、太り気味なので、運動を始めました。",
+          "reading": "さいきん、ふとりぎみなので、うんどうをはじめました。",
+          "translation": {
+            "vi": "Dạo này tôi hơi béo nên đã bắt đầu tập thể dục.",
+            "en": "I have gained a little weight lately, so I started exercising."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-104"
+    },
+    {
+      "japanese": "〜っぱなし",
+      "meaning": {
+        "vi": "Cứ để nguyên ~, liên tục ~",
+        "en": "Leave as is; keep on ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + っぱなし. Để nguyên trạng thái đáng lẽ phải thay đổi (電気をつけっぱなし) hoặc tình trạng kéo dài liên tục (立ちっぱなし). Thường kèm sự trách móc.",
+        "en": "Usage: verb ます-stem + っぱなし. Leaving a state unchanged when it should have been changed (電気をつけっぱなし), or a continuous state (立ちっぱなし). Often with a note of reproach."
+      },
+      "examples": [
+        {
+          "ja": "電気をつけっぱなしで、寝てしまいました。",
+          "reading": "でんきをつけっぱなしで、ねてしまいました。",
+          "translation": {
+            "vi": "Tôi đã ngủ quên mà để nguyên đèn sáng.",
+            "en": "I fell asleep leaving the light on."
+          }
+        },
+        {
+          "ja": "今日は、一日中立ちっぱなしで、足が痛いです。",
+          "reading": "きょうは、いちにちじゅうたちっぱなしで、あしがいたいです。",
+          "translation": {
+            "vi": "Hôm nay tôi đứng cả ngày nên chân đau.",
+            "en": "I was on my feet all day, so my legs hurt."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-105"
+    },
+    {
+      "japanese": "〜だらけ",
+      "meaning": {
+        "vi": "Toàn là ~, đầy ~",
+        "en": "Full of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + だらけ (だらけの + danh từ). Chứa quá nhiều thứ không mong muốn (ゴミだらけ, 間違いだらけ, 泥だらけ). Sắc thái tiêu cực, khác 〜でいっぱい (đầy một cách trung tính).",
+        "en": "Usage: noun + だらけ (だらけの + noun). Containing too much of something undesirable (ゴミだらけ, 間違いだらけ, 泥だらけ). Negative nuance, unlike 〜でいっぱい (neutral \"full of\")."
+      },
+      "examples": [
+        {
+          "ja": "この部屋は、ほこりだらけです。",
+          "reading": "このへやは、ほこりだらけです。",
+          "translation": {
+            "vi": "Căn phòng này đầy bụi.",
+            "en": "This room is covered in dust."
+          }
+        },
+        {
+          "ja": "子どもは、泥だらけになって帰ってきました。",
+          "reading": "こどもは、どろだらけになってかえってきました。",
+          "translation": {
+            "vi": "Đứa trẻ trở về người lấm lem bùn đất.",
+            "en": "The child came home covered in mud."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-106"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜がち",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n冬は、風邪をひき（　）です。",
+        "en": "Choose the correct option for the blank:\n冬は、風邪をひき（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ぎみ",
+          "っぱなし",
+          "だらけ",
+          "がち"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xu hướng hay bị cảm: 「ひきがち」.",
+        "en": "Correct! A tendency to catch colds: 「ひきがち」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xu hướng hay bị cảm: 「ひきがち」.",
+        "en": "Not quite. A tendency to catch colds: 「ひきがち」."
+      }
+    },
+    {
+      "item": "〜がち",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n最近、忙しくて、連絡が遅れ___です。",
+        "en": "Choose the correct option for the blank:\n最近、忙しくて、連絡が遅れ___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "がち"
+        ],
+        "hint": "〜がち"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hay chậm trễ: 「遅れがち」.",
+        "en": "Correct! Tends to be late: 「遅れがち」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hay chậm trễ: 「遅れがち」.",
+        "en": "Not quite. Tends to be late: 「遅れがち」."
+      }
+    },
+    {
+      "item": "〜がち",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n彼は病気（　）で、よく学校を休みます。",
+        "en": "Choose the pattern that best fits the context:\n彼は病気（　）で、よく学校を休みます。"
+      },
+      "payload": {
+        "choices": [
+          "ぎみ",
+          "っぱなし",
+          "がち",
+          "だらけ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hay ốm (xu hướng lặp lại): 「病気がち」.",
+        "en": "Correct! Often ill (a recurring tendency): 「病気がち」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hay ốm (xu hướng lặp lại): 「病気がち」.",
+        "en": "Not quite. Often ill (a recurring tendency): 「病気がち」."
+      }
+    },
+    {
+      "item": "〜気味",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は、風邪（　）で、頭が痛いです。",
+        "en": "Choose the correct option for the blank:\n今日は、風邪（　）で、頭が痛いです。"
+      },
+      "payload": {
+        "choices": [
+          "がち",
+          "気味",
+          "だらけ",
+          "っぱなし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hơi bị cảm (mức nhẹ, đang có): 「風邪気味」.",
+        "en": "Correct! A slight cold (mild, present now): 「風邪気味」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hơi bị cảm (mức nhẹ, đang có): 「風邪気味」.",
+        "en": "Not quite. A slight cold (mild, present now): 「風邪気味」."
+      }
+    },
+    {
+      "item": "〜気味",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n最近、太り___なので、運動を始めました。",
+        "en": "Choose the correct option for the blank:\n最近、太り___なので、運動を始めました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "気味",
+          "ぎみ"
+        ],
+        "hint": "ぎみ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hơi béo ra: 「太り気味」.",
+        "en": "Correct! A bit overweight: 「太り気味」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hơi béo ra: 「太り気味」.",
+        "en": "Not quite. A bit overweight: 「太り気味」."
+      }
+    },
+    {
+      "item": "〜気味",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "疲れ気味なので、早く寝ます。",
+          "疲れ気味を、早く寝ます。",
+          "疲れる気味なので、早く寝ます。",
+          "疲れたの気味なので、早く寝ます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ gốc ます + 「気味」: 「疲れ気味」.",
+        "en": "Correct! Verb ます-stem + 「気味」: 「疲れ気味」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ gốc ます + 「気味」: 「疲れ気味」.",
+        "en": "Not quite. Verb ます-stem + 「気味」: 「疲れ気味」."
+      }
+    },
+    {
+      "item": "〜っぱなし",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n電気をつけ（　）で、寝てしまいました。",
+        "en": "Choose the correct option for the blank:\n電気をつけ（　）で、寝てしまいました。"
+      },
+      "payload": {
+        "choices": [
+          "がち",
+          "気味",
+          "だらけ",
+          "っぱなし"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Để nguyên đèn sáng: 「つけっぱなし」.",
+        "en": "Correct! Leaving the light on: 「つけっぱなし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Để nguyên đèn sáng: 「つけっぱなし」.",
+        "en": "Not quite. Leaving the light on: 「つけっぱなし」."
+      }
+    },
+    {
+      "item": "〜っぱなし",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は、一日中立ち___で、足が痛いです。",
+        "en": "Choose the correct option for the blank:\n今日は、一日中立ち___で、足が痛いです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "っぱなし"
+        ],
+        "hint": "〜っぱなし"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đứng liên tục: 「立ちっぱなし」.",
+        "en": "Correct! Standing continuously: 「立ちっぱなし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đứng liên tục: 「立ちっぱなし」.",
+        "en": "Not quite. Standing continuously: 「立ちっぱなし」."
+      }
+    },
+    {
+      "item": "〜っぱなし",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n窓を開け（　）で出かけたら、雨で部屋が濡れました。",
+        "en": "Choose the pattern that best fits the context:\n窓を開け（　）で出かけたら、雨で部屋が濡れました。"
+      },
+      "payload": {
+        "choices": [
+          "がち",
+          "気味",
+          "っぱなし",
+          "だらけ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Để nguyên cửa sổ mở: 「開けっぱなし」.",
+        "en": "Correct! Leaving the window open: 「開けっぱなし」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Để nguyên cửa sổ mở: 「開けっぱなし」.",
+        "en": "Not quite. Leaving the window open: 「開けっぱなし」."
+      }
+    },
+    {
+      "item": "〜だらけ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの部屋は、ほこり（　）です。",
+        "en": "Choose the correct option for the blank:\nこの部屋は、ほこり（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "がち",
+          "だらけ",
+          "気味",
+          "っぱなし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Toàn bụi (nhiều, tiêu cực): 「ほこりだらけ」.",
+        "en": "Correct! Covered in dust (too much, negative): 「ほこりだらけ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Toàn bụi (nhiều, tiêu cực): 「ほこりだらけ」.",
+        "en": "Not quite. Covered in dust (too much, negative): 「ほこりだらけ」."
+      }
+    },
+    {
+      "item": "〜だらけ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもは、泥___になって帰ってきました。",
+        "en": "Choose the correct option for the blank:\n子どもは、泥___になって帰ってきました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "だらけ"
+        ],
+        "hint": "〜だらけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lấm lem bùn: 「泥だらけ」.",
+        "en": "Correct! Covered in mud: 「泥だらけ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lấm lem bùn: 「泥だらけ」.",
+        "en": "Not quite. Covered in mud: 「泥だらけ」."
+      }
+    },
+    {
+      "item": "〜だらけ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この作文は、間違いだらけです。",
+          "この作文は、間違いがちです。",
+          "この作文は、間違い気味です。",
+          "この作文は、間違いっぱなしです。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhiều lỗi sai (lượng lớn, tiêu cực): 「間違いだらけ」.",
+        "en": "Correct! Full of mistakes (a large amount, negative): 「間違いだらけ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhiều lỗi sai (lượng lớn, tiêu cực): 「間違いだらけ」.",
+        "en": "Not quite. Full of mistakes (a large amount, negative): 「間違いだらけ」."
+      }
+    },
+    {
+      "item": "〜っぱなし",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ hai):\n電気を　＿　★　＿　＿　。\n（つけ／っぱなしで／寝て／しまいました）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the second slot):\n電気を　＿　★　＿　＿　。\n（つけ／っぱなしで／寝て／しまいました）"
+      },
+      "payload": {
+        "choices": [
+          "つけ",
+          "寝て",
+          "しまいました",
+          "っぱなしで"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「電気をつけっぱなしで寝てしまいました。」; ô ★ (thứ hai) là 「っぱなしで」.",
+        "en": "Correct! The correct sentence is 「電気をつけっぱなしで寝てしまいました。」; the ★ (second) slot is 「っぱなしで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「電気をつけっぱなしで寝てしまいました。」; ô ★ (thứ hai) là 「っぱなしで」.",
+        "en": "Not quite. The correct sentence is 「電気をつけっぱなしで寝てしまいました。」; the ★ (second) slot is 「っぱなしで」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜がち",
+            {
+              "vi": "Hay ~, có xu hướng ~",
+              "en": "Tend to ~"
+            }
+          ],
+          [
+            "〜気味",
+            {
+              "vi": "Hơi có vẻ ~",
+              "en": "A touch of ~, slightly ~"
+            }
+          ],
+          [
+            "〜っぱなし",
+            {
+              "vi": "Cứ để nguyên ~, liên tục ~",
+              "en": "Leave as is; keep on ~"
+            }
+          ],
+          [
+            "〜だらけ",
+            {
+              "vi": "Toàn là ~, đầy ~",
+              "en": "Full of ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

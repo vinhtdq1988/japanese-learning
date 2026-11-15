@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (然 葉 暗 深)",
+    "en": "Nature and environment kanji (然 葉 暗 深)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "然",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "tự nhiên; như vậy",
+        "en": "naturally; so"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゼン",
+          "ネン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "自然",
+          "reading": "しぜん",
+          "kanjiReading": "ゼン",
+          "translation": {
+            "vi": "thiên nhiên",
+            "en": "nature"
+          }
+        },
+        {
+          "ja": "天然",
+          "reading": "てんねん",
+          "kanjiReading": "ネン",
+          "translation": {
+            "vi": "tự nhiên; thiên nhiên",
+            "en": "natural"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "葉",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "lá",
+        "en": "leaf"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [
+          "は"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "落葉",
+          "reading": "らくよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "lá rụng",
+            "en": "fallen leaves"
+          }
+        },
+        {
+          "ja": "葉",
+          "reading": "は",
+          "kanjiReading": "は",
+          "translation": {
+            "vi": "chiếc lá",
+            "en": "leaf"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "暗",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "tối",
+        "en": "dark"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "アン"
+        ],
+        "kunReadings": [
+          "くら.い"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "暗記",
+          "reading": "あんき",
+          "kanjiReading": "アン",
+          "translation": {
+            "vi": "học thuộc lòng",
+            "en": "memorization"
+          }
+        },
+        {
+          "ja": "暗い",
+          "reading": "くらい",
+          "kanjiReading": "くら",
+          "translation": {
+            "vi": "tối",
+            "en": "dark"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "深",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "sâu",
+        "en": "deep"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "ふか.い"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "深夜",
+          "reading": "しんや",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "đêm khuya",
+            "en": "late at night"
+          }
+        },
+        {
+          "ja": "深い",
+          "reading": "ふかい",
+          "kanjiReading": "ふか",
+          "translation": {
+            "vi": "sâu",
+            "en": "deep"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "然",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「然」nghĩa là gì?",
+        "en": "What does 「然」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tự nhiên; như vậy",
+            "en": "naturally; so"
+          },
+          {
+            "vi": "lá",
+            "en": "leaf"
+          },
+          {
+            "vi": "tối",
+            "en": "dark"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 然 nghĩa là tự nhiên; như vậy.",
+        "en": "Correct! 然 means naturally; so."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 然 nghĩa là tự nhiên; như vậy, như trong 「自然」 (thiên nhiên).",
+        "en": "Not quite. 然 means naturally; so, as in 「自然」 (nature)."
+      }
+    },
+    {
+      "item": "然",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「然」 trong 「自然」 (“thiên nhiên”).",
+        "en": "Type the reading of 「然」 in 「自然」 (“nature”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぜん",
+          "ゼン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 自然, 然 đọc là ぜん (âm On).",
+        "en": "Correct! In 自然, 然 is read ぜん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 自然 (thiên nhiên), 然 đọc là ぜん (âm On).",
+        "en": "In 自然 (nature), 然 is read ぜん (on'yomi)."
+      }
+    },
+    {
+      "item": "然",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「天然」(tự nhiên; thiên nhiên) đọc là gì?",
+        "en": "How is 「天然」 (natural) read?"
+      },
+      "payload": {
+        "choices": [
+          "てんぜん",
+          "てんねん",
+          "てんは"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 天然 = てんねん (tự nhiên; thiên nhiên); 然 đọc là ねん (âm On).",
+        "en": "Correct! 天然 = てんねん (natural); 然 is read ねん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "天然 đọc là てんねん (tự nhiên; thiên nhiên): 然 mang âm On ねん.",
+        "en": "天然 is read てんねん (natural): 然 takes the on'yomi ねん."
+      }
+    },
+    {
+      "item": "葉",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「葉」nghĩa là gì?",
+        "en": "What does 「葉」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tối",
+            "en": "dark"
+          },
+          {
+            "vi": "lá",
+            "en": "leaf"
+          },
+          {
+            "vi": "sâu",
+            "en": "deep"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 葉 nghĩa là lá.",
+        "en": "Correct! 葉 means leaf."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 葉 nghĩa là lá, như trong 「落葉」 (lá rụng).",
+        "en": "Not quite. 葉 means leaf, as in 「落葉」 (fallen leaves)."
+      }
+    },
+    {
+      "item": "葉",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「葉」 trong 「落葉」 (“lá rụng”).",
+        "en": "Type the reading of 「葉」 in 「落葉」 (“fallen leaves”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 落葉, 葉 đọc là よう (âm On).",
+        "en": "Correct! In 落葉, 葉 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 落葉 (lá rụng), 葉 đọc là よう (âm On).",
+        "en": "In 落葉 (fallen leaves), 葉 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "葉",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「葉」(chiếc lá; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「葉」 (leaf; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "よう",
+          "あんき",
+          "は"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 葉 = は (chiếc lá); 葉 đọc là は (âm Kun).",
+        "en": "Correct! 葉 = は (leaf); 葉 is read は (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "葉 đọc là は (chiếc lá): 葉 mang âm Kun は.",
+        "en": "葉 is read は (leaf): 葉 takes the kun'yomi は."
+      }
+    },
+    {
+      "item": "暗",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「暗」nghĩa là gì?",
+        "en": "What does 「暗」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sâu",
+            "en": "deep"
+          },
+          {
+            "vi": "tự nhiên; như vậy",
+            "en": "naturally; so"
+          },
+          {
+            "vi": "tối",
+            "en": "dark"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 暗 nghĩa là tối.",
+        "en": "Correct! 暗 means dark."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 暗 nghĩa là tối, như trong 「暗記」 (học thuộc lòng).",
+        "en": "Not quite. 暗 means dark, as in 「暗記」 (memorization)."
+      }
+    },
+    {
+      "item": "暗",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「暗」 trong 「暗記」 (“học thuộc lòng”).",
+        "en": "Type the reading of 「暗」 in 「暗記」 (“memorization”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "あん",
+          "アン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 暗記, 暗 đọc là あん (âm On).",
+        "en": "Correct! In 暗記, 暗 is read あん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 暗記 (học thuộc lòng), 暗 đọc là あん (âm On).",
+        "en": "In 暗記 (memorization), 暗 is read あん (on'yomi)."
+      }
+    },
+    {
+      "item": "暗",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「暗い」(tối) đọc là gì?",
+        "en": "How is 「暗い」 (dark) read?"
+      },
+      "payload": {
+        "choices": [
+          "くらい",
+          "あんい",
+          "ふかい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 暗い = くらい (tối); 暗 đọc là くら (âm Kun).",
+        "en": "Correct! 暗い = くらい (dark); 暗 is read くら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "暗い đọc là くらい (tối): 暗 mang âm Kun くら.",
+        "en": "暗い is read くらい (dark): 暗 takes the kun'yomi くら."
+      }
+    },
+    {
+      "item": "深",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「深」nghĩa là gì?",
+        "en": "What does 「深」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sâu",
+            "en": "deep"
+          },
+          {
+            "vi": "tự nhiên; như vậy",
+            "en": "naturally; so"
+          },
+          {
+            "vi": "lá",
+            "en": "leaf"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 深 nghĩa là sâu.",
+        "en": "Correct! 深 means deep."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 深 nghĩa là sâu, như trong 「深夜」 (đêm khuya).",
+        "en": "Not quite. 深 means deep, as in 「深夜」 (late at night)."
+      }
+    },
+    {
+      "item": "深",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「深」 trong 「深夜」 (“đêm khuya”).",
+        "en": "Type the reading of 「深」 in 「深夜」 (“late at night”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 深夜, 深 đọc là しん (âm On).",
+        "en": "Correct! In 深夜, 深 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 深夜 (đêm khuya), 深 đọc là しん (âm On).",
+        "en": "In 深夜 (late at night), 深 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "深",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「深い」(sâu) đọc là gì?",
+        "en": "How is 「深い」 (deep) read?"
+      },
+      "payload": {
+        "choices": [
+          "しんい",
+          "ふかい",
+          "くらい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 深い = ふかい (sâu); 深 đọc là ふか (âm Kun).",
+        "en": "Correct! 深い = ふかい (deep); 深 is read ふか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "深い đọc là ふかい (sâu): 深 mang âm Kun ふか.",
+        "en": "深い is read ふかい (deep): 深 takes the kun'yomi ふか."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "然",
+            {
+              "vi": "tự nhiên; như vậy",
+              "en": "naturally; so"
+            }
+          ],
+          [
+            "葉",
+            {
+              "vi": "lá",
+              "en": "leaf"
+            }
+          ],
+          [
+            "暗",
+            {
+              "vi": "tối",
+              "en": "dark"
+            }
+          ],
+          [
+            "深",
+            {
+              "vi": "sâu",
+              "en": "deep"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

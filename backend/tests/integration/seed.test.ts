@@ -1,13 +1,25 @@
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import { eq } from 'drizzle-orm';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import type { DbHandle } from '../../src/db/client.js';
 import { adminActionLogs, learningProfiles, users } from '../../src/db/schema.js';
 import { verifyPassword } from '../../src/services/password.js';
 import { createAdmin, generatePassword } from '../../src/seed/create-admin.js';
+import { DEFAULT_CONTENT_DIR } from '../../src/seed/content.js';
 import { seedContent, seedDevAdmin } from '../../src/seed/index.js';
 import { openTestDb, resetDatabase } from './helpers.js';
 
 // `pnpm seed` (T026) và `pnpm admin:create` (T026a) trên PostgreSQL thật.
+
+// Chủ đề luôn nạp đủ từ `topics.json` (không phụ thuộc đợt được chọn), nên số chủ đề đọc từ file.
+const TOPICS = (
+  JSON.parse(readFileSync(path.join(DEFAULT_CONTENT_DIR, 'topics.json'), 'utf8')) as {
+    topics: { skill: string }[];
+  }
+).topics;
+const TOPIC_COUNT = TOPICS.length;
+const KANJI_TOPIC_COUNT = TOPICS.filter((t) => t.skill === 'kanji').length;
 
 let handle: DbHandle;
 
@@ -28,14 +40,15 @@ describe('seedContent', () => {
   it('nạp mảng, đơn vị N5–N3 (kể cả Kanji), bài tập và bộ placement 20 câu đang kích hoạt', async () => {
     const summary = await seedContent(handle.db);
     expect(summary).toMatchObject({
-      topicsInserted: 20,
-      unitsInserted: 21,
+      // 20 chủ đề cũ + 6 chủ đề luyện đọc/viết; 21 đơn vị cũ + 12 đơn vị luyện đọc/viết (spec 007, T064–T075)
+      topicsInserted: TOPIC_COUNT,
+      unitsInserted: 33,
       unitsSkipped: 0,
       placementInserted: 20,
       placementActivated: true,
     });
-    expect(await count('topics')).toBe(20);
-    expect(await count('learning_units', "status = 'active'")).toBe(21);
+    expect(await count('topics')).toBe(TOPIC_COUNT);
+    expect(await count('learning_units', "status = 'active'")).toBe(33);
     expect(await count('content_items')).toBeGreaterThanOrEqual(14 * 3);
     expect(await count('exercises')).toBeGreaterThanOrEqual(14 * 4);
     expect(await count('placement_questions', 'is_active')).toBe(20);
@@ -71,9 +84,10 @@ describe('seedContent', () => {
     expect(trial.rows.reduce((s, r) => s + r.est_minutes, 0)).toBeLessThanOrEqual(10);
   });
 
-  it('nạp 7 bài Kanji (27 chữ) và 6 chủ đề Kanji với chi tiết, chủ đề riêng và khía cạnh (spec 003)', async () => {
+  it('nạp 7 bài Kanji (27 chữ) của baseline và mọi chủ đề Kanji với chi tiết, chủ đề riêng và khía cạnh (spec 003)', async () => {
     await seedContent(handle.db);
-    expect(await count('topics', "skill = 'kanji'")).toBe(6);
+    // Chủ đề luôn nạp đủ từ topics.json (kể cả chủ đề Kanji N4/N3 của spec 008) dù chỉ seed baseline.
+    expect(await count('topics', "skill = 'kanji'")).toBe(KANJI_TOPIC_COUNT);
     expect(await count('learning_units', "kind = 'kanji' AND status = 'active'")).toBe(7);
     expect(await count('content_items', "kind = 'kanji'")).toBe(27);
     // Mọi chữ Kanji có chủ đề thuộc kỹ năng Kanji, chi tiết đầy đủ và reading NULL.
@@ -117,7 +131,7 @@ describe('seedContent', () => {
   it('seed lại hai lần không nhân bản bài Kanji (idempotent)', async () => {
     await seedContent(handle.db);
     const again = await seedContent(handle.db);
-    expect(again).toMatchObject({ topicsInserted: 0, unitsInserted: 0, unitsSkipped: 21 });
+    expect(again).toMatchObject({ topicsInserted: 0, unitsInserted: 0, unitsSkipped: 33 });
     expect(await count('learning_units', "kind = 'kanji'")).toBe(7);
     expect(await count('content_items', "kind = 'kanji'")).toBe(27);
   });
@@ -144,11 +158,11 @@ describe('seedContent', () => {
     expect(again).toMatchObject({
       topicsInserted: 0,
       unitsInserted: 0,
-      unitsSkipped: 21,
+      unitsSkipped: 33,
       placementInserted: 0,
       placementActivated: false,
     });
-    expect(await count('learning_units')).toBe(21);
+    expect(await count('learning_units')).toBe(33);
     expect(await count('placement_questions')).toBe(20);
     expect(await count('learning_units', `title->>'vi' = 'Tiêu đề do admin sửa'`)).toBe(1);
   });

@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-food-shopping",
+  "title": {
+    "vi": "Kanji ăn uống – mua sắm (物 品 代)",
+    "en": "Food and shopping kanji (物 品 代)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "物",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "vật; đồ",
+        "en": "thing; object"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ブツ",
+          "モツ"
+        ],
+        "kunReadings": [
+          "もの"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "動物",
+          "reading": "どうぶつ",
+          "kanjiReading": "ブツ",
+          "translation": {
+            "vi": "động vật",
+            "en": "animal"
+          }
+        },
+        {
+          "ja": "買い物",
+          "reading": "かいもの",
+          "kanjiReading": "もの",
+          "translation": {
+            "vi": "việc mua sắm",
+            "en": "shopping"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "品",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "hàng; phẩm chất",
+        "en": "goods; quality"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒン"
+        ],
+        "kunReadings": [
+          "しな"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "食品",
+          "reading": "しょくひん",
+          "kanjiReading": "ヒン",
+          "translation": {
+            "vi": "thực phẩm",
+            "en": "food products"
+          }
+        },
+        {
+          "ja": "品物",
+          "reading": "しなもの",
+          "kanjiReading": "しな",
+          "translation": {
+            "vi": "món hàng",
+            "en": "goods"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "代",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "thay; thời đại; tiền",
+        "en": "substitute; era; charge"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダイ",
+          "タイ"
+        ],
+        "kunReadings": [
+          "か.わる",
+          "よ",
+          "しろ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "代金",
+          "reading": "だいきん",
+          "kanjiReading": "ダイ",
+          "translation": {
+            "vi": "tiền hàng",
+            "en": "price; payment"
+          }
+        },
+        {
+          "ja": "代わり",
+          "reading": "かわり",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "thay thế",
+            "en": "substitute"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "物",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「物」nghĩa là gì?",
+        "en": "What does 「物」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vật; đồ",
+            "en": "thing; object"
+          },
+          {
+            "vi": "hàng; phẩm chất",
+            "en": "goods; quality"
+          },
+          {
+            "vi": "thay; thời đại; tiền",
+            "en": "substitute; era; charge"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 物 nghĩa là vật; đồ.",
+        "en": "Correct! 物 means thing; object."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 物 nghĩa là vật; đồ, như trong 「動物」 (động vật).",
+        "en": "Not quite. 物 means thing; object, as in 「動物」 (animal)."
+      }
+    },
+    {
+      "item": "物",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「物」 trong 「動物」 (“động vật”).",
+        "en": "Type the reading of 「物」 in 「動物」 (“animal”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぶつ",
+          "ブツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 動物, 物 đọc là ぶつ (âm On).",
+        "en": "Correct! In 動物, 物 is read ぶつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 動物 (động vật), 物 đọc là ぶつ (âm On).",
+        "en": "In 動物 (animal), 物 is read ぶつ (on'yomi)."
+      }
+    },
+    {
+      "item": "物",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「買い物」(việc mua sắm) đọc là gì?",
+        "en": "How is 「買い物」 (shopping) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいぶつ",
+          "かいもの",
+          "かいもつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 買い物 = かいもの (việc mua sắm); 物 đọc là もの (âm Kun).",
+        "en": "Correct! 買い物 = かいもの (shopping); 物 is read もの (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "買い物 đọc là かいもの (việc mua sắm): 物 mang âm Kun もの.",
+        "en": "買い物 is read かいもの (shopping): 物 takes the kun'yomi もの."
+      }
+    },
+    {
+      "item": "品",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「品」nghĩa là gì?",
+        "en": "What does 「品」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thay; thời đại; tiền",
+            "en": "substitute; era; charge"
+          },
+          {
+            "vi": "hàng; phẩm chất",
+            "en": "goods; quality"
+          },
+          {
+            "vi": "vật; đồ",
+            "en": "thing; object"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 品 nghĩa là hàng; phẩm chất.",
+        "en": "Correct! 品 means goods; quality."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 品 nghĩa là hàng; phẩm chất, như trong 「食品」 (thực phẩm).",
+        "en": "Not quite. 品 means goods; quality, as in 「食品」 (food products)."
+      }
+    },
+    {
+      "item": "品",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「品」 trong 「食品」 (“thực phẩm”).",
+        "en": "Type the reading of 「品」 in 「食品」 (“food products”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひん",
+          "ヒン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 食品, 品 đọc là ひん (âm On).",
+        "en": "Correct! In 食品, 品 is read ひん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 食品 (thực phẩm), 品 đọc là ひん (âm On).",
+        "en": "In 食品 (food products), 品 is read ひん (on'yomi)."
+      }
+    },
+    {
+      "item": "品",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「品物」(món hàng) đọc là gì?",
+        "en": "How is 「品物」 (goods) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひんもの",
+          "じなもの",
+          "しなもの"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 品物 = しなもの (món hàng); 品 đọc là しな (âm Kun).",
+        "en": "Correct! 品物 = しなもの (goods); 品 is read しな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "品物 đọc là しなもの (món hàng): 品 mang âm Kun しな.",
+        "en": "品物 is read しなもの (goods): 品 takes the kun'yomi しな."
+      }
+    },
+    {
+      "item": "代",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「代」nghĩa là gì?",
+        "en": "What does 「代」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vật; đồ",
+            "en": "thing; object"
+          },
+          {
+            "vi": "hàng; phẩm chất",
+            "en": "goods; quality"
+          },
+          {
+            "vi": "thay; thời đại; tiền",
+            "en": "substitute; era; charge"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 代 nghĩa là thay; thời đại; tiền.",
+        "en": "Correct! 代 means substitute; era; charge."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 代 nghĩa là thay; thời đại; tiền, như trong 「代金」 (tiền hàng).",
+        "en": "Not quite. 代 means substitute; era; charge, as in 「代金」 (price; payment)."
+      }
+    },
+    {
+      "item": "代",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「代」 trong 「代金」 (“tiền hàng”).",
+        "en": "Type the reading of 「代」 in 「代金」 (“price; payment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だい",
+          "ダイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 代金, 代 đọc là だい (âm On).",
+        "en": "Correct! In 代金, 代 is read だい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 代金 (tiền hàng), 代 đọc là だい (âm On).",
+        "en": "In 代金 (price; payment), 代 is read だい (on'yomi)."
+      }
+    },
+    {
+      "item": "代",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「代わり」(thay thế) đọc là gì?",
+        "en": "How is 「代わり」 (substitute) read?"
+      },
+      "payload": {
+        "choices": [
+          "かわり",
+          "だいわり",
+          "どうぶつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 代わり = かわり (thay thế); 代 đọc là か (âm Kun).",
+        "en": "Correct! 代わり = かわり (substitute); 代 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "代わり đọc là かわり (thay thế): 代 mang âm Kun か.",
+        "en": "代わり is read かわり (substitute): 代 takes the kun'yomi か."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "物",
+            {
+              "vi": "vật; đồ",
+              "en": "thing; object"
+            }
+          ],
+          [
+            "品",
+            {
+              "vi": "hàng; phẩm chất",
+              "en": "goods; quality"
+            }
+          ],
+          [
+            "代",
+            {
+              "vi": "thay; thời đại; tiền",
+              "en": "substitute; era; charge"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

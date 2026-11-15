@@ -1,0 +1,529 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-time-sequence",
+  "title": {
+    "vi": "Thời gian và trình tự (1): 〜ながら, 〜前に, 〜たあとで, 〜ところだ",
+    "en": "Time and sequence (1): 〜ながら, 〜前に, 〜たあとで, 〜ところだ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ながら",
+      "meaning": {
+        "vi": "Vừa ~ vừa ~",
+        "en": "While doing ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ gốc ます + ながら. Hai hành động do cùng một người làm cùng lúc; hành động chính là vế sau. Không dùng khi chủ ngữ khác nhau.",
+        "en": "Conjugation: verb ます-stem + ながら. Two actions done at the same time by the same person; the main action is the one in the second clause. Not used when the subjects differ."
+      },
+      "examples": [
+        {
+          "ja": "音楽を聞きながら、勉強します。",
+          "reading": "おんがくをききながら、べんきょうします。",
+          "translation": {
+            "vi": "Tôi vừa nghe nhạc vừa học.",
+            "en": "I study while listening to music."
+          }
+        },
+        {
+          "ja": "歩きながら、スマホを見てはいけません。",
+          "reading": "あるきながら、スマホをみてはいけません。",
+          "translation": {
+            "vi": "Không được vừa đi vừa xem điện thoại.",
+            "en": "You must not look at your phone while walking."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-096"
+    },
+    {
+      "japanese": "〜前に",
+      "meaning": {
+        "vi": "Trước khi ~",
+        "en": "Before ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / 名詞の + 前に. Vế trước 前に luôn ở thể từ điển dù câu chính ở quá khứ (寝る前に、歯をみがきました).",
+        "en": "Usage: verb dictionary form / noun の + 前に. The verb before 前に is always in dictionary form even when the main clause is past (寝る前に、歯をみがきました)."
+      },
+      "examples": [
+        {
+          "ja": "寝る前に、歯をみがきます。",
+          "reading": "ねるまえに、はをみがきます。",
+          "translation": {
+            "vi": "Trước khi ngủ, tôi đánh răng.",
+            "en": "I brush my teeth before going to bed."
+          }
+        },
+        {
+          "ja": "食事の前に、手を洗ってください。",
+          "reading": "しょくじのまえに、てをあらってください。",
+          "translation": {
+            "vi": "Hãy rửa tay trước bữa ăn.",
+            "en": "Please wash your hands before the meal."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-097"
+    },
+    {
+      "japanese": "〜たあとで",
+      "meaning": {
+        "vi": "Sau khi ~",
+        "en": "After ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た / 名詞の + あとで. Ngược với 前に: vế trước 〜たあとで dùng thể た. Có thể bỏ 「で」 (〜たあと).",
+        "en": "Usage: verb た-form / noun の + あとで. Unlike 前に, the verb before 〜たあとで is in the た-form. 「で」 can be dropped (〜たあと)."
+      },
+      "examples": [
+        {
+          "ja": "仕事が終わったあとで、友だちに会います。",
+          "reading": "しごとがおわったあとで、ともだちにあいます。",
+          "translation": {
+            "vi": "Sau khi xong việc, tôi gặp bạn.",
+            "en": "I will meet a friend after work is over."
+          }
+        },
+        {
+          "ja": "食事のあとで、薬を飲みます。",
+          "reading": "しょくじのあとで、くすりをのみます。",
+          "translation": {
+            "vi": "Sau bữa ăn, tôi uống thuốc.",
+            "en": "I take medicine after the meal."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-098"
+    },
+    {
+      "japanese": "〜ところだ",
+      "meaning": {
+        "vi": "Sắp/đang/vừa mới ~",
+        "en": "About to / in the middle of / just finished"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể từ điển + ところだ (sắp làm); thể ている + ところだ (đang làm); thể た + ところだ (vừa mới làm xong, ngay trước thời điểm nói). Nhấn vào giai đoạn của hành động.",
+        "en": "Usage: dictionary form + ところだ (about to); ている-form + ところだ (in the middle of); た-form + ところだ (just finished, right before the time of speaking). It highlights the stage of the action."
+      },
+      "examples": [
+        {
+          "ja": "今、家を出るところです。",
+          "reading": "いま、いえをでるところです。",
+          "translation": {
+            "vi": "Bây giờ tôi sắp ra khỏi nhà.",
+            "en": "I am just about to leave home."
+          }
+        },
+        {
+          "ja": "ちょうど今、ごはんを食べているところです。",
+          "reading": "ちょうどいま、ごはんをたべているところです。",
+          "translation": {
+            "vi": "Đúng lúc này tôi đang ăn cơm.",
+            "en": "I am in the middle of eating right now."
+          }
+        },
+        {
+          "ja": "いま、会議が終わったところです。",
+          "reading": "いま、かいぎがおわったところです。",
+          "translation": {
+            "vi": "Cuộc họp vừa mới kết thúc.",
+            "en": "The meeting has just ended."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-099"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ながら",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n音楽を聞き（　）、勉強します。",
+        "en": "Choose the correct option for the blank:\n音楽を聞き（　）、勉強します。"
+      },
+      "payload": {
+        "choices": [
+          "ながり",
+          "て",
+          "たら",
+          "ながら"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜ながら」 gắn vào gốc ます: 「聞きながら」.",
+        "en": "Correct! 「〜ながら」 attaches to the ます-stem: 「聞きながら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜ながら」 gắn vào gốc ます: 「聞きながら」.",
+        "en": "Not quite. 「〜ながら」 attaches to the ます-stem: 「聞きながら」."
+      }
+    },
+    {
+      "item": "〜ながら",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n朝ごはんを食べ___、ニュースを見ます。",
+        "en": "Choose the correct option for the blank:\n朝ごはんを食べ___、ニュースを見ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ながら"
+        ],
+        "hint": "〜ながら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hai hành động cùng lúc: 「食べながら」.",
+        "en": "Correct! Two simultaneous actions: 「食べながら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hai hành động cùng lúc: 「食べながら」.",
+        "en": "Not quite. Two simultaneous actions: 「食べながら」."
+      }
+    },
+    {
+      "item": "〜ながら",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "コーヒーを飲むながら、新聞を読みます。",
+          "コーヒーを飲んながら、新聞を読みます。",
+          "コーヒーを飲みながら、新聞を読みます。",
+          "コーヒーを飲みながらを、新聞を読みます。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ながら」 chỉ gắn vào gốc ます (飲み), không gắn vào thể từ điển hay thể た/て.",
+        "en": "Correct! 「ながら」 attaches only to the ます-stem (飲み), not to the dictionary or た/て-form."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ながら」 chỉ gắn vào gốc ます (飲み), không gắn vào thể từ điển hay thể た/て.",
+        "en": "Not quite. 「ながら」 attaches only to the ます-stem (飲み), not to the dictionary or た/て-form."
+      }
+    },
+    {
+      "item": "〜前に",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n寝る（　）、歯をみがきます。",
+        "en": "Choose the correct option for the blank:\n寝る（　）、歯をみがきます。"
+      },
+      "payload": {
+        "choices": [
+          "後に",
+          "前に",
+          "前で",
+          "間に"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước khi làm gì: 「〜前に」.",
+        "en": "Correct! Before doing something: 「〜前に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước khi làm gì: 「〜前に」.",
+        "en": "Not quite. Before doing something: 「〜前に」."
+      }
+    },
+    {
+      "item": "〜前に",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n食事の（　）、薬を飲みます。（trước bữa ăn）",
+        "en": "Choose the pattern that best fits the context:\n食事の（　）、薬を飲みます。（trước bữa ăn）"
+      },
+      "payload": {
+        "choices": [
+          "前に",
+          "あとで",
+          "間に",
+          "までに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước bữa ăn dùng 「前に」; 「あとで」 là sau bữa ăn.",
+        "en": "Correct! Before the meal uses 「前に」; 「あとで」 means after the meal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước bữa ăn dùng 「前に」; 「あとで」 là sau bữa ăn.",
+        "en": "Not quite. Before the meal uses 「前に」; 「あとで」 means after the meal."
+      }
+    },
+    {
+      "item": "〜前に",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n旅行に行く___、荷物を準備します。",
+        "en": "Choose the correct option for the blank:\n旅行に行く___、荷物を準備します。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "前に",
+          "まえに"
+        ],
+        "hint": "まえに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước khi đi du lịch: 「行く前に」 (động từ thể từ điển + 前に).",
+        "en": "Correct! Before going on the trip: 「行く前に」 (dictionary form + 前に)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước khi đi du lịch: 「行く前に」 (động từ thể từ điển + 前に).",
+        "en": "Not quite. Before going on the trip: 「行く前に」 (dictionary form + 前に)."
+      }
+    },
+    {
+      "item": "〜たあとで",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n仕事が終わった（　）、友だちに会います。",
+        "en": "Choose the correct option for the blank:\n仕事が終わった（　）、友だちに会います。"
+      },
+      "payload": {
+        "choices": [
+          "前に",
+          "ながら",
+          "ところ",
+          "あとで"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế trước ở thể た và dùng 「あとで」: 「終わったあとで」.",
+        "en": "Correct! The first clause is in the た-form followed by 「あとで」: 「終わったあとで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế trước ở thể た và dùng 「あとで」: 「終わったあとで」.",
+        "en": "Not quite. The first clause is in the た-form followed by 「あとで」: 「終わったあとで」."
+      }
+    },
+    {
+      "item": "〜たあとで",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n食事（　）あとで、薬を飲みます。",
+        "en": "Choose the correct option for the blank:\n食事（　）あとで、薬を飲みます。"
+      },
+      "payload": {
+        "choices": [
+          "を",
+          "に",
+          "の",
+          "が"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + の + あとで: 「食事のあとで」.",
+        "en": "Correct! Noun + の + あとで: 「食事のあとで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + の + あとで: 「食事のあとで」.",
+        "en": "Not quite. Noun + の + あとで: 「食事のあとで」."
+      }
+    },
+    {
+      "item": "〜たあとで",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n宿題を（　）あとで、ゲームをします。",
+        "en": "Choose the pattern that best fits the context:\n宿題を（　）あとで、ゲームをします。"
+      },
+      "payload": {
+        "choices": [
+          "する",
+          "した",
+          "して",
+          "しない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 〜あとで dùng thể た: 「したあとで」 (〜前に mới dùng thể từ điển).",
+        "en": "Correct! 〜あとで uses the た-form: 「したあとで」 (only 〜前に takes the dictionary form)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 〜あとで dùng thể た: 「したあとで」 (〜前に mới dùng thể từ điển).",
+        "en": "Not quite. 〜あとで uses the た-form: 「したあとで」 (only 〜前に takes the dictionary form)."
+      }
+    },
+    {
+      "item": "〜ところだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今、家を出る（　）です。",
+        "en": "Choose the correct option for the blank:\n今、家を出る（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ところ",
+          "ばかり",
+          "あいだ",
+          "まえ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sắp làm gì ngay: thể từ điển + 「ところです」.",
+        "en": "Correct! About to do something: dictionary form + 「ところです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sắp làm gì ngay: thể từ điển + 「ところです」.",
+        "en": "Not quite. About to do something: dictionary form + 「ところです」."
+      }
+    },
+    {
+      "item": "〜ところだ",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nちょうど今、ごはんを食べて（　）ところです。",
+        "en": "Choose the pattern that best fits the context:\nちょうど今、ごはんを食べて（　）ところです。"
+      },
+      "payload": {
+        "choices": [
+          "いた",
+          "ある",
+          "おく",
+          "いる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đang ăn: 「食べているところです」 (thể ている).",
+        "en": "Correct! In the middle of eating: 「食べているところです」 (ている-form)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đang ăn: 「食べているところです」 (thể ている).",
+        "en": "Not quite. In the middle of eating: 「食べているところです」 (ている-form)."
+      }
+    },
+    {
+      "item": "〜ところだ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今、ごはんを食べて___ところです。",
+        "en": "Choose the correct option for the blank:\n今、ごはんを食べて___ところです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いる"
+        ],
+        "hint": "いる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đang làm dở: 「〜ているところです」.",
+        "en": "Correct! In the middle of doing: 「〜ているところです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đang làm dở: 「〜ているところです」.",
+        "en": "Not quite. In the middle of doing: 「〜ているところです」."
+      }
+    },
+    {
+      "item": "〜ところだ",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nちょうど今、＿　＿　★　＿　。\n（駅に／着いた／ところ／です）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nちょうど今、＿　＿　★　＿　。\n（駅に／着いた／ところ／です）"
+      },
+      "payload": {
+        "choices": [
+          "駅に",
+          "着いた",
+          "ところ",
+          "です"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「ちょうど今、駅に着いたところです。」; ô ★ (thứ ba) là 「ところ」.",
+        "en": "Correct! The correct sentence is 「ちょうど今、駅に着いたところです。」; the ★ (third) slot is 「ところ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「ちょうど今、駅に着いたところです。」; ô ★ (thứ ba) là 「ところ」.",
+        "en": "Not quite. The correct sentence is 「ちょうど今、駅に着いたところです。」; the ★ (third) slot is 「ところ」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ながら",
+            {
+              "vi": "Vừa ~ vừa ~",
+              "en": "While doing ~"
+            }
+          ],
+          [
+            "〜前に",
+            {
+              "vi": "Trước khi ~",
+              "en": "Before ~"
+            }
+          ],
+          [
+            "〜たあとで",
+            {
+              "vi": "Sau khi ~",
+              "en": "After ~"
+            }
+          ],
+          [
+            "〜ところだ",
+            {
+              "vi": "Sắp/đang/vừa mới ~",
+              "en": "About to / in the middle of / just finished"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

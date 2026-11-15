@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-nominalization-quote-emphasis",
+  "title": {
+    "vi": "Giải thích và diễn đạt lại: 〜というのは, 〜というより, 〜ということだ, 〜とか",
+    "en": "Explaining and rephrasing: 〜というのは, 〜というより, 〜ということだ, 〜とか"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜というのは",
+      "meaning": {
+        "vi": "~ nghĩa là ~; bởi vì ~",
+        "en": "What is called ~; the reason is ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + というのは + giải thích/định nghĩa (「遅刻」というのは、〜ことです); hoặc というのは + lý do ở đầu câu sau (というのは、〜からです). Khẩu ngữ: 〜って(いうの)は.",
+        "en": "Usage: noun + というのは + an explanation/definition (「遅刻」というのは、〜ことです); or というのは at the start of a sentence to give a reason (というのは、〜からです). Colloquial: 〜って(いうの)は."
+      },
+      "examples": [
+        {
+          "ja": "「遅刻」というのは、時間に遅れることです。",
+          "reading": "「ちこく」というのは、じかんにおくれることです。",
+          "translation": {
+            "vi": "\"Trễ giờ\" nghĩa là đến muộn so với thời gian quy định.",
+            "en": "\"Chikoku\" means being late."
+          }
+        },
+        {
+          "ja": "彼は来なかった。というのは、病気だったからです。",
+          "reading": "かれはこなかった。というのは、びょうきだったからです。",
+          "translation": {
+            "vi": "Anh ấy đã không đến. Bởi vì anh ấy bị bệnh.",
+            "en": "He did not come. That is because he was ill."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-090"
+    },
+    {
+      "japanese": "〜というより",
+      "meaning": {
+        "vi": "Đúng hơn là ~",
+        "en": "Rather than ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: Ø) + というより. Cho rằng cách nói thứ hai thích hợp hơn cách nói thứ nhất (\"nói là A thì đúng hơn là B\"). Thường đi với むしろ.",
+        "en": "Usage: plain form (な: Ø) + というより. Suggests the second description fits better than the first (\"rather than A, it is B\"). Often with むしろ."
+      },
+      "examples": [
+        {
+          "ja": "彼は、優しいというより、気が弱いんです。",
+          "reading": "かれは、やさしいというより、きがよわいんです。",
+          "translation": {
+            "vi": "Anh ấy không hẳn là hiền, mà đúng hơn là yếu đuối.",
+            "en": "He is not so much kind as weak-willed."
+          }
+        },
+        {
+          "ja": "これは、勉強というより、遊びです。",
+          "reading": "これは、べんきょうというより、あそびです。",
+          "translation": {
+            "vi": "Đây không hẳn là học mà đúng hơn là chơi.",
+            "en": "This is more play than study."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-091"
+    },
+    {
+      "japanese": "〜ということだ",
+      "meaning": {
+        "vi": "Nghe nói ~; nghĩa là ~",
+        "en": "I hear that ~; it means ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + ということだ (ということです). Nghĩa 1: truyền đạt thông tin nghe được, nguồn rõ ràng; nghĩa 2: kết luận, diễn giải (\"tức là…\"). Khác 〜そうだ (chỉ truyền đạt) ở chỗ có thể dùng để diễn giải.",
+        "en": "Usage: plain form + ということだ (ということです). Sense 1: reports information heard from a source; sense 2: a conclusion/interpretation (\"that is to say…\"). Unlike 〜そうだ (hearsay only), it can also interpret."
+      },
+      "examples": [
+        {
+          "ja": "社長の話では、来月から新しい制度が始まるということです。",
+          "reading": "しゃちょうのはなしでは、らいげつからあたらしいせいどがはじまるということです。",
+          "translation": {
+            "vi": "Theo lời giám đốc, nghe nói từ tháng sau chế độ mới sẽ bắt đầu.",
+            "en": "According to the president, a new system will start next month."
+          }
+        },
+        {
+          "ja": "返事がないのは、反対だということだ。",
+          "reading": "へんじがないのは、はんたいだということだ。",
+          "translation": {
+            "vi": "Không trả lời nghĩa là phản đối.",
+            "en": "No reply means he is against it."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-092"
+    },
+    {
+      "japanese": "〜とか",
+      "meaning": {
+        "vi": "Nào là ~ nào là ~; nghe nói ~",
+        "en": "~ or something; I heard that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ/động từ thể thường + とか + danh từ/động từ + とか: liệt kê ví dụ (りんごとかみかん). Câu cuối + とか: truyền đạt không chắc chắn (\"hình như nghe nói…\"). Khẩu ngữ.",
+        "en": "Usage: noun/verb plain form + とか + noun/verb + とか: lists examples (りんごとかみかん). A sentence + とか: uncertain hearsay (\"I heard something like…\"). Colloquial."
+      },
+      "examples": [
+        {
+          "ja": "果物は、りんごとかみかんとかが好きです。",
+          "reading": "くだものは、りんごとかみかんとかがすきです。",
+          "translation": {
+            "vi": "Trái cây thì tôi thích táo, quýt và những thứ như thế.",
+            "en": "As for fruit, I like things like apples and mandarins."
+          }
+        },
+        {
+          "ja": "明日は雨が降るとか。",
+          "reading": "あしたはあめがふるとか。",
+          "translation": {
+            "vi": "Nghe nói ngày mai trời sẽ mưa thì phải.",
+            "en": "I heard it is going to rain tomorrow or something."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-093"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜というのは",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n「遅刻」（　）は、時間に遅れることです。",
+        "en": "Choose the correct option for the blank:\n「遅刻」（　）は、時間に遅れることです。"
+      },
+      "payload": {
+        "choices": [
+          "とかの",
+          "というか",
+          "というの",
+          "というと"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Định nghĩa một từ: 「「遅刻」というのは」.",
+        "en": "Correct! Defining a word: 「「遅刻」というのは」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Định nghĩa một từ: 「「遅刻」というのは」.",
+        "en": "Not quite. Defining a word: 「「遅刻」というのは」."
+      }
+    },
+    {
+      "item": "〜というのは",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は来なかった。___、病気だったからです。",
+        "en": "Choose the correct option for the blank:\n彼は来なかった。___、病気だったからです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "というのは"
+        ],
+        "hint": "〜というのは"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đưa lý do ở đầu câu: 「というのは、〜からです」.",
+        "en": "Correct! Giving the reason at the start of the sentence: 「というのは、〜からです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đưa lý do ở đầu câu: 「というのは、〜からです」.",
+        "en": "Not quite. Giving the reason at the start of the sentence: 「というのは、〜からです」."
+      }
+    },
+    {
+      "item": "〜というのは",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "「締め切り」というのは、提出の期限のことでした。",
+          "「締め切り」というのは、提出の期限のことです。",
+          "「締め切り」ということは、提出の期限のことです。",
+          "「締め切り」というのが、提出の期限のことです。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Định nghĩa dùng 「というのは」 với vế sau là giải thích hiện tại.",
+        "en": "Correct! A definition uses 「というのは」 with a present-tense explanation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Định nghĩa dùng 「というのは」 với vế sau là giải thích hiện tại.",
+        "en": "Not quite. A definition uses 「というのは」 with a present-tense explanation."
+      }
+    },
+    {
+      "item": "〜というより",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、優しい（　）、気が弱いんです。",
+        "en": "Choose the correct option for the blank:\n彼は、優しい（　）、気が弱いんです。"
+      },
+      "payload": {
+        "choices": [
+          "というより",
+          "ということ",
+          "というのは",
+          "とか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nói cho đúng hơn: 「優しいというより」.",
+        "en": "Correct! To put it more accurately: 「優しいというより」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nói cho đúng hơn: 「優しいというより」.",
+        "en": "Not quite. To put it more accurately: 「優しいというより」."
+      }
+    },
+    {
+      "item": "〜というより",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこれは、勉強___、遊びです。",
+        "en": "Choose the correct option for the blank:\nこれは、勉強___、遊びです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "というより"
+        ],
+        "hint": "〜というより"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đúng hơn là chơi: 「勉強というより」.",
+        "en": "Correct! More play than study: 「勉強というより」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đúng hơn là chơi: 「勉強というより」.",
+        "en": "Not quite. More play than study: 「勉強というより」."
+      }
+    },
+    {
+      "item": "〜というより",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこの部屋は、狭い（　）、物が多すぎるんです。",
+        "en": "Choose the pattern that best fits the context:\nこの部屋は、狭い（　）、物が多すぎるんです。"
+      },
+      "payload": {
+        "choices": [
+          "のに対して",
+          "ことから",
+          "とは限らず",
+          "というより"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cách diễn đạt thứ hai đúng hơn: 「狭いというより」.",
+        "en": "Correct! The second description is more accurate: 「狭いというより」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách diễn đạt thứ hai đúng hơn: 「狭いというより」.",
+        "en": "Not quite. The second description is more accurate: 「狭いというより」."
+      }
+    },
+    {
+      "item": "〜ということだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n社長の話では、来月から新しい制度が始まる（　）です。",
+        "en": "Choose the correct option for the blank:\n社長の話では、来月から新しい制度が始まる（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "というの",
+          "というより",
+          "ということ",
+          "とは"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Truyền đạt thông tin nghe được: 「始まるということです」.",
+        "en": "Correct! Reporting information heard: 「始まるということです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Truyền đạt thông tin nghe được: 「始まるということです」.",
+        "en": "Not quite. Reporting information heard: 「始まるということです」."
+      }
+    },
+    {
+      "item": "〜ということだ",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n返事がないのは、反対だ（　）。（diễn giải: tức là…）",
+        "en": "Choose the pattern that best fits the context:\n返事がないのは、反対だ（　）。（diễn giải: tức là…）"
+      },
+      "payload": {
+        "choices": [
+          "というより",
+          "ということだ",
+          "というのは",
+          "とは限らない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Diễn giải kết luận: 「反対だということだ」.",
+        "en": "Correct! Interpreting a conclusion: 「反対だということだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Diễn giải kết luận: 「反対だということだ」.",
+        "en": "Not quite. Interpreting a conclusion: 「反対だということだ」."
+      }
+    },
+    {
+      "item": "〜ということだ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "先生の話では、試験は来週だということです。",
+          "先生の話では、試験は来週だのということです。",
+          "先生の話では、試験は来週ということでした。ですよ。",
+          "先生の話では、試験は来週だとということです。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể thường + 「ということです」: 「来週だということです」.",
+        "en": "Correct! Plain form + 「ということです」: 「来週だということです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể thường + 「ということです」: 「来週だということです」.",
+        "en": "Not quite. Plain form + 「ということです」: 「来週だということです」."
+      }
+    },
+    {
+      "item": "〜とか",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n果物は、りんご（　）みかんとかが好きです。",
+        "en": "Choose the correct option for the blank:\n果物は、りんご（　）みかんとかが好きです。"
+      },
+      "payload": {
+        "choices": [
+          "ほど",
+          "まで",
+          "こそ",
+          "とか"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Liệt kê ví dụ: 「りんごとかみかんとか」.",
+        "en": "Correct! Listing examples: 「りんごとかみかんとか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Liệt kê ví dụ: 「りんごとかみかんとか」.",
+        "en": "Not quite. Listing examples: 「りんごとかみかんとか」."
+      }
+    },
+    {
+      "item": "〜とか",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日は雨が降る___。",
+        "en": "Choose the correct option for the blank:\n明日は雨が降る___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "とか"
+        ],
+        "hint": "とか"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Truyền đạt không chắc chắn: 「降るとか」.",
+        "en": "Correct! Uncertain hearsay: 「降るとか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Truyền đạt không chắc chắn: 「降るとか」.",
+        "en": "Not quite. Uncertain hearsay: 「降るとか」."
+      }
+    },
+    {
+      "item": "〜とか",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n趣味は、映画を見る（　）、音楽を聞く（　）です。",
+        "en": "Choose the pattern that best fits the context:\n趣味は、映画を見る（　）、音楽を聞く（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ほど／ほど",
+          "こそ／こそ",
+          "とか／とか",
+          "まで／まで"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Liệt kê ví dụ không đầy đủ: 「見るとか、聞くとか」.",
+        "en": "Correct! Listing non-exhaustive examples: 「見るとか、聞くとか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Liệt kê ví dụ không đầy đủ: 「見るとか、聞くとか」.",
+        "en": "Not quite. Listing non-exhaustive examples: 「見るとか、聞くとか」."
+      }
+    },
+    {
+      "item": "〜というより",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n彼は、＿　＿　★　＿　。\n（優しい／というより／気が／弱いんです）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n彼は、＿　＿　★　＿　。\n（優しい／というより／気が／弱いんです）"
+      },
+      "payload": {
+        "choices": [
+          "優しい",
+          "気が",
+          "というより",
+          "弱いんです"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「彼は、優しいというより気が弱いんです。」; ô ★ (thứ ba) là 「気が」.",
+        "en": "Correct! The correct sentence is 「彼は、優しいというより気が弱いんです。」; the ★ (third) slot is 「気が」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「彼は、優しいというより気が弱いんです。」; ô ★ (thứ ba) là 「気が」.",
+        "en": "Not quite. The correct sentence is 「彼は、優しいというより気が弱いんです。」; the ★ (third) slot is 「気が」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜というのは",
+            {
+              "vi": "~ nghĩa là ~; bởi vì ~",
+              "en": "What is called ~; the reason is ~"
+            }
+          ],
+          [
+            "〜というより",
+            {
+              "vi": "Đúng hơn là ~",
+              "en": "Rather than ~"
+            }
+          ],
+          [
+            "〜ということだ",
+            {
+              "vi": "Nghe nói ~; nghĩa là ~",
+              "en": "I hear that ~; it means ~"
+            }
+          ],
+          [
+            "〜とか",
+            {
+              "vi": "Nào là ~ nào là ~; nghe nói ~",
+              "en": "~ or something; I heard that ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

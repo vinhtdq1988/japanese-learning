@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-sales-service",
+  "title": {
+    "vi": "Giao hàng, đổi trả và gói hàng",
+    "en": "Delivery, returns and wrapping"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "配達",
+      "reading": "はいたつ",
+      "meaning": {
+        "vi": "Giao (hàng, thư)",
+        "en": "Delivery"
+      },
+      "examples": [
+        {
+          "ja": "新聞は、毎朝六時に配達されます。",
+          "reading": "しんぶんは、まいあさろくじにはいたつされます。",
+          "translation": {
+            "vi": "Báo được giao mỗi sáng lúc 6 giờ.",
+            "en": "The newspaper is delivered every morning at six."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "宅配",
+      "reading": "たくはい",
+      "meaning": {
+        "vi": "Giao hàng tận nhà",
+        "en": "Home delivery"
+      },
+      "examples": [
+        {
+          "ja": "重い荷物は、宅配で送ります。",
+          "reading": "おもいにもつは、たくはいでおくります。",
+          "translation": {
+            "vi": "Hành lý nặng thì tôi gửi bằng dịch vụ giao tận nhà.",
+            "en": "I send heavy luggage by home delivery."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "返品",
+      "reading": "へんぴん",
+      "meaning": {
+        "vi": "Trả hàng",
+        "en": "Return (of goods)"
+      },
+      "examples": [
+        {
+          "ja": "サイズが合わなかったので、返品しました。",
+          "reading": "サイズがあわなかったので、へんぴんしました。",
+          "translation": {
+            "vi": "Vì size không vừa nên tôi đã trả hàng.",
+            "en": "The size did not fit, so I returned it."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "交換",
+      "reading": "こうかん",
+      "meaning": {
+        "vi": "Đổi; trao đổi",
+        "en": "Exchange"
+      },
+      "examples": [
+        {
+          "ja": "壊れていたので、新しい商品と交換してもらいました。",
+          "reading": "こわれていたので、あたらしいしょうひんとこうかんしてもらいました。",
+          "translation": {
+            "vi": "Vì bị hỏng nên tôi được đổi sang sản phẩm mới.",
+            "en": "It was broken, so I had it exchanged for a new one."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "返金",
+      "reading": "へんきん",
+      "meaning": {
+        "vi": "Hoàn tiền",
+        "en": "Refund"
+      },
+      "examples": [
+        {
+          "ja": "商品が届かなかったので、返金を頼みました。",
+          "reading": "しょうひんがとどかなかったので、へんきんをたのみました。",
+          "translation": {
+            "vi": "Vì hàng không đến nên tôi đã yêu cầu hoàn tiền.",
+            "en": "The goods did not arrive, so I asked for a refund."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保証",
+      "reading": "ほしょう",
+      "meaning": {
+        "vi": "Bảo đảm; bảo hành",
+        "en": "Guarantee; warranty"
+      },
+      "examples": [
+        {
+          "ja": "この時計は、一年間の保証がついています。",
+          "reading": "このとけいは、いちねんかんのほしょうがついています。",
+          "translation": {
+            "vi": "Chiếc đồng hồ này có bảo hành một năm.",
+            "en": "This watch comes with a one-year warranty."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保証書",
+      "reading": "ほしょうしょ",
+      "meaning": {
+        "vi": "Phiếu bảo hành",
+        "en": "Warranty card"
+      },
+      "examples": [
+        {
+          "ja": "保証書は、大切に保管してください。",
+          "reading": "ほしょうしょは、たいせつにほかんしてください。",
+          "translation": {
+            "vi": "Xin hãy giữ gìn cẩn thận phiếu bảo hành.",
+            "en": "Please keep the warranty card safe."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "即日",
+      "reading": "そくじつ",
+      "meaning": {
+        "vi": "Ngay trong ngày",
+        "en": "Same day"
+      },
+      "examples": [
+        {
+          "ja": "注文すれば、即日お届けできます。",
+          "reading": "ちゅうもんすれば、そくじつおとどけできます。",
+          "translation": {
+            "vi": "Nếu đặt hàng thì có thể giao ngay trong ngày.",
+            "en": "If you order, we can deliver the same day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "試食",
+      "reading": "ししょく",
+      "meaning": {
+        "vi": "Ăn thử (món bán)",
+        "en": "Food sample; tasting"
+      },
+      "examples": [
+        {
+          "ja": "スーパーで、新しいお菓子を試食しました。",
+          "reading": "スーパーで、あたらしいおかしをししょくしました。",
+          "translation": {
+            "vi": "Tôi đã ăn thử loại bánh kẹo mới ở siêu thị.",
+            "en": "I tried a sample of the new sweets at the supermarket."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "売り切れ",
+      "reading": "うりきれ",
+      "meaning": {
+        "vi": "Bán hết; cháy hàng",
+        "en": "Sold out"
+      },
+      "examples": [
+        {
+          "ja": "人気のケーキは、昼に売り切れました。",
+          "reading": "にんきのケーキは、ひるにうりきれました。",
+          "translation": {
+            "vi": "Bánh được ưa chuộng đã bán hết vào buổi trưa.",
+            "en": "The popular cakes sold out at noon."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "包装",
+      "reading": "ほうそう",
+      "meaning": {
+        "vi": "Gói; bao bì",
+        "en": "Wrapping; packaging"
+      },
+      "examples": [
+        {
+          "ja": "プレゼント用に、きれいに包装してもらいました。",
+          "reading": "プレゼントように、きれいにほうそうしてもらいました。",
+          "translation": {
+            "vi": "Tôi nhờ gói đẹp để làm quà tặng.",
+            "en": "I had it nicely wrapped as a gift."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "値札",
+      "reading": "ねふだ",
+      "meaning": {
+        "vi": "Nhãn giá",
+        "en": "Price tag"
+      },
+      "examples": [
+        {
+          "ja": "値札を見たら、思ったより安かったです。",
+          "reading": "ねふだをみたら、おもったよりやすかったです。",
+          "translation": {
+            "vi": "Nhìn nhãn giá thì thấy rẻ hơn tôi nghĩ.",
+            "en": "When I looked at the price tag, it was cheaper than I expected."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "配達",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新聞は、毎朝六時に（　）されます。 — Nghĩa của câu: “Báo được giao mỗi sáng lúc 6 giờ.”",
+        "en": "Choose the word that fits the blank: 新聞は、毎朝六時に（　）されます。 — Meaning of the sentence: “The newspaper is delivered every morning at six.”"
+      },
+      "payload": {
+        "choices": [
+          "保証",
+          "配達",
+          "試食",
+          "返品"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「配達」(Giao (hàng, thư)) hợp nghĩa câu này: “Báo được giao mỗi sáng lúc 6 giờ.”",
+        "en": "Correct! 「配達」(Delivery) fits this sentence: “The newspaper is delivered every morning at six.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Báo được giao mỗi sáng lúc 6 giờ.”, nên cần 「配達」(Giao (hàng, thư)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The newspaper is delivered every morning at six.”, so it needs 「配達」(Delivery); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "宅配",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 重い荷物は、（　）で送ります。 — Nghĩa của câu: “Hành lý nặng thì tôi gửi bằng dịch vụ giao tận nhà.”",
+        "en": "Choose the word that fits the blank: 重い荷物は、（　）で送ります。 — Meaning of the sentence: “I send heavy luggage by home delivery.”"
+      },
+      "payload": {
+        "choices": [
+          "値札",
+          "保証",
+          "宅配",
+          "包装"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「宅配」(Giao hàng tận nhà) hợp nghĩa câu này: “Hành lý nặng thì tôi gửi bằng dịch vụ giao tận nhà.”",
+        "en": "Correct! 「宅配」(Home delivery) fits this sentence: “I send heavy luggage by home delivery.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hành lý nặng thì tôi gửi bằng dịch vụ giao tận nhà.”, nên cần 「宅配」(Giao hàng tận nhà); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I send heavy luggage by home delivery.”, so it needs 「宅配」(Home delivery); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "返品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: サイズが合わなかったので、（　）しました。 — Nghĩa của câu: “Vì size không vừa nên tôi đã trả hàng.”",
+        "en": "Choose the word that fits the blank: サイズが合わなかったので、（　）しました。 — Meaning of the sentence: “The size did not fit, so I returned it.”"
+      },
+      "payload": {
+        "choices": [
+          "保証",
+          "包装",
+          "宅配",
+          "返品"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「返品」(Trả hàng) hợp nghĩa câu này: “Vì size không vừa nên tôi đã trả hàng.”",
+        "en": "Correct! 「返品」(Return (of goods)) fits this sentence: “The size did not fit, so I returned it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì size không vừa nên tôi đã trả hàng.”, nên cần 「返品」(Trả hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The size did not fit, so I returned it.”, so it needs 「返品」(Return (of goods)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "交換",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 壊れていたので、新しい商品と（　）してもらいました。 — Nghĩa của câu: “Vì bị hỏng nên tôi được đổi sang sản phẩm mới.”",
+        "en": "Choose the word that fits the blank: 壊れていたので、新しい商品と（　）してもらいました。 — Meaning of the sentence: “It was broken, so I had it exchanged for a new one.”"
+      },
+      "payload": {
+        "choices": [
+          "交換",
+          "値札",
+          "返品",
+          "試食"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交換」(Đổi; trao đổi) hợp nghĩa câu này: “Vì bị hỏng nên tôi được đổi sang sản phẩm mới.”",
+        "en": "Correct! 「交換」(Exchange) fits this sentence: “It was broken, so I had it exchanged for a new one.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bị hỏng nên tôi được đổi sang sản phẩm mới.”, nên cần 「交換」(Đổi; trao đổi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It was broken, so I had it exchanged for a new one.”, so it needs 「交換」(Exchange); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "返金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 商品が届かなかったので、（　）を頼みました。 — Nghĩa của câu: “Vì hàng không đến nên tôi đã yêu cầu hoàn tiền.”",
+        "en": "Choose the word that fits the blank: 商品が届かなかったので、（　）を頼みました。 — Meaning of the sentence: “The goods did not arrive, so I asked for a refund.”"
+      },
+      "payload": {
+        "choices": [
+          "配達",
+          "返金",
+          "保証書",
+          "売り切れ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「返金」(Hoàn tiền) hợp nghĩa câu này: “Vì hàng không đến nên tôi đã yêu cầu hoàn tiền.”",
+        "en": "Correct! 「返金」(Refund) fits this sentence: “The goods did not arrive, so I asked for a refund.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì hàng không đến nên tôi đã yêu cầu hoàn tiền.”, nên cần 「返金」(Hoàn tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The goods did not arrive, so I asked for a refund.”, so it needs 「返金」(Refund); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保証",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この時計は、一年間の（　）がついています。 — Nghĩa của câu: “Chiếc đồng hồ này có bảo hành một năm.”",
+        "en": "Choose the word that fits the blank: この時計は、一年間の（　）がついています。 — Meaning of the sentence: “This watch comes with a one-year warranty.”"
+      },
+      "payload": {
+        "choices": [
+          "即日",
+          "返金",
+          "保証",
+          "宅配"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保証」(Bảo đảm; bảo hành) hợp nghĩa câu này: “Chiếc đồng hồ này có bảo hành một năm.”",
+        "en": "Correct! 「保証」(Guarantee; warranty) fits this sentence: “This watch comes with a one-year warranty.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc đồng hồ này có bảo hành một năm.”, nên cần 「保証」(Bảo đảm; bảo hành); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This watch comes with a one-year warranty.”, so it needs 「保証」(Guarantee; warranty); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保証書",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、大切に保管してください。 — Nghĩa của câu: “Xin hãy giữ gìn cẩn thận phiếu bảo hành.”",
+        "en": "Choose the word that fits the blank: （　）は、大切に保管してください。 — Meaning of the sentence: “Please keep the warranty card safe.”"
+      },
+      "payload": {
+        "choices": [
+          "返金",
+          "試食",
+          "配達",
+          "保証書"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保証書」(Phiếu bảo hành) hợp nghĩa câu này: “Xin hãy giữ gìn cẩn thận phiếu bảo hành.”",
+        "en": "Correct! 「保証書」(Warranty card) fits this sentence: “Please keep the warranty card safe.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin hãy giữ gìn cẩn thận phiếu bảo hành.”, nên cần 「保証書」(Phiếu bảo hành); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please keep the warranty card safe.”, so it needs 「保証書」(Warranty card); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "即日",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 注文すれば、（　）お届けできます。 — Nghĩa của câu: “Nếu đặt hàng thì có thể giao ngay trong ngày.”",
+        "en": "Choose the word that fits the blank: 注文すれば、（　）お届けできます。 — Meaning of the sentence: “If you order, we can deliver the same day.”"
+      },
+      "payload": {
+        "choices": [
+          "即日",
+          "保証書",
+          "配達",
+          "交換"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「即日」(Ngay trong ngày) hợp nghĩa câu này: “Nếu đặt hàng thì có thể giao ngay trong ngày.”",
+        "en": "Correct! 「即日」(Same day) fits this sentence: “If you order, we can deliver the same day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu đặt hàng thì có thể giao ngay trong ngày.”, nên cần 「即日」(Ngay trong ngày); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you order, we can deliver the same day.”, so it needs 「即日」(Same day); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "試食",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スーパーで、新しいお菓子を（　）しました。 — Nghĩa của câu: “Tôi đã ăn thử loại bánh kẹo mới ở siêu thị.”",
+        "en": "Choose the word that fits the blank: スーパーで、新しいお菓子を（　）しました。 — Meaning of the sentence: “I tried a sample of the new sweets at the supermarket.”"
+      },
+      "payload": {
+        "choices": [
+          "即日",
+          "試食",
+          "包装",
+          "返品"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「試食」(Ăn thử (món bán)) hợp nghĩa câu này: “Tôi đã ăn thử loại bánh kẹo mới ở siêu thị.”",
+        "en": "Correct! 「試食」(Food sample; tasting) fits this sentence: “I tried a sample of the new sweets at the supermarket.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã ăn thử loại bánh kẹo mới ở siêu thị.”, nên cần 「試食」(Ăn thử (món bán)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I tried a sample of the new sweets at the supermarket.”, so it needs 「試食」(Food sample; tasting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "売り切れ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 人気のケーキは、昼に（　）ました。 — Nghĩa của câu: “Bánh được ưa chuộng đã bán hết vào buổi trưa.”",
+        "en": "Choose the word that fits the blank: 人気のケーキは、昼に（　）ました。 — Meaning of the sentence: “The popular cakes sold out at noon.”"
+      },
+      "payload": {
+        "choices": [
+          "返品",
+          "交換",
+          "売り切れ",
+          "包装"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売り切れ」(Bán hết; cháy hàng) hợp nghĩa câu này: “Bánh được ưa chuộng đã bán hết vào buổi trưa.”",
+        "en": "Correct! 「売り切れ」(Sold out) fits this sentence: “The popular cakes sold out at noon.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bánh được ưa chuộng đã bán hết vào buổi trưa.”, nên cần 「売り切れ」(Bán hết; cháy hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The popular cakes sold out at noon.”, so it needs 「売り切れ」(Sold out); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "包装",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: プレゼント用に、きれいに（　）してもらいました。 — Nghĩa của câu: “Tôi nhờ gói đẹp để làm quà tặng.”",
+        "en": "Choose the word that fits the blank: プレゼント用に、きれいに（　）してもらいました。 — Meaning of the sentence: “I had it nicely wrapped as a gift.”"
+      },
+      "payload": {
+        "choices": [
+          "交換",
+          "配達",
+          "売り切れ",
+          "包装"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「包装」(Gói; bao bì) hợp nghĩa câu này: “Tôi nhờ gói đẹp để làm quà tặng.”",
+        "en": "Correct! 「包装」(Wrapping; packaging) fits this sentence: “I had it nicely wrapped as a gift.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nhờ gói đẹp để làm quà tặng.”, nên cần 「包装」(Gói; bao bì); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I had it nicely wrapped as a gift.”, so it needs 「包装」(Wrapping; packaging); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "値札",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を見たら、思ったより安かったです。 — Nghĩa của câu: “Nhìn nhãn giá thì thấy rẻ hơn tôi nghĩ.”",
+        "en": "Choose the word that fits the blank: （　）を見たら、思ったより安かったです。 — Meaning of the sentence: “When I looked at the price tag, it was cheaper than I expected.”"
+      },
+      "payload": {
+        "choices": [
+          "値札",
+          "売り切れ",
+          "試食",
+          "保証"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「値札」(Nhãn giá) hợp nghĩa câu này: “Nhìn nhãn giá thì thấy rẻ hơn tôi nghĩ.”",
+        "en": "Correct! 「値札」(Price tag) fits this sentence: “When I looked at the price tag, it was cheaper than I expected.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhìn nhãn giá thì thấy rẻ hơn tôi nghĩ.”, nên cần 「値札」(Nhãn giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When I looked at the price tag, it was cheaper than I expected.”, so it needs 「値札」(Price tag); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "配達",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 新聞は、毎朝六時に「配達」されます。",
+        "en": "Choose the correct reading of the word in 「」: 新聞は、毎朝六時に「配達」されます。"
+      },
+      "payload": {
+        "choices": [
+          "ししょく",
+          "たくはい",
+          "はいたつ",
+          "へんぴん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「配達」 đọc là 「はいたつ」, nghĩa là Giao (hàng, thư).",
+        "en": "Correct! 「配達」 is read 「はいたつ」 and means Delivery."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「配達」 đọc là 「はいたつ」 (Giao (hàng, thư)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「配達」 is read 「はいたつ」 (Delivery); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "交換",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 壊れていたので、新しい商品と「交換」してもらいました。",
+        "en": "Choose the correct reading of the word in 「」: 壊れていたので、新しい商品と「交換」してもらいました。"
+      },
+      "payload": {
+        "choices": [
+          "ほしょう",
+          "ししょく",
+          "そくじつ",
+          "こうかん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交換」 đọc là 「こうかん」, nghĩa là Đổi; trao đổi.",
+        "en": "Correct! 「交換」 is read 「こうかん」 and means Exchange."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「交換」 đọc là 「こうかん」 (Đổi; trao đổi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「交換」 is read 「こうかん」 (Exchange); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "保証書",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「保証書」は、大切に保管してください。",
+        "en": "Choose the correct reading of the word in 「」: 「保証書」は、大切に保管してください。"
+      },
+      "payload": {
+        "choices": [
+          "ほしょうしょ",
+          "ししょく",
+          "はいたつ",
+          "こうかん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保証書」 đọc là 「ほしょうしょ」, nghĩa là Phiếu bảo hành.",
+        "en": "Correct! 「保証書」 is read 「ほしょうしょ」 and means Warranty card."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「保証書」 đọc là 「ほしょうしょ」 (Phiếu bảo hành); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「保証書」 is read 「ほしょうしょ」 (Warranty card); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "売り切れ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 人気のケーキは、昼に「売り切れ」ました。",
+        "en": "Choose the correct reading of the word in 「」: 人気のケーキは、昼に「売り切れ」ました。"
+      },
+      "payload": {
+        "choices": [
+          "ねふだ",
+          "うりきれ",
+          "ししょく",
+          "こうかん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売り切れ」 đọc là 「うりきれ」, nghĩa là Bán hết; cháy hàng.",
+        "en": "Correct! 「売り切れ」 is read 「うりきれ」 and means Sold out."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「売り切れ」 đọc là 「うりきれ」 (Bán hết; cháy hàng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「売り切れ」 is read 「うりきれ」 (Sold out); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "返品",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: サイズが合わなかったので、「へんぴん」しました。",
+        "en": "Choose the correct way to write the word in 「」: サイズが合わなかったので、「へんぴん」しました。"
+      },
+      "payload": {
+        "choices": [
+          "保証書",
+          "交換",
+          "即日",
+          "返品"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「へんぴん」 viết là 「返品」, nghĩa là Trả hàng.",
+        "en": "Correct! 「へんぴん」 is written 「返品」 and means Return (of goods)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「へんぴん」 viết là 「返品」 (Trả hàng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「へんぴん」 is written 「返品」 (Return (of goods)); the other words are read differently."
+      }
+    },
+    {
+      "item": "試食",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: スーパーで、新しいお菓子を「ししょく」しました。",
+        "en": "Choose the correct way to write the word in 「」: スーパーで、新しいお菓子を「ししょく」しました。"
+      },
+      "payload": {
+        "choices": [
+          "試食",
+          "宅配",
+          "保証",
+          "保証書"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ししょく」 viết là 「試食」, nghĩa là Ăn thử (món bán).",
+        "en": "Correct! 「ししょく」 is written 「試食」 and means Food sample; tasting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ししょく」 viết là 「試食」 (Ăn thử (món bán)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ししょく」 is written 「試食」 (Food sample; tasting); the other words are read differently."
+      }
+    }
+  ]
+}

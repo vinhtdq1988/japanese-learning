@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-work-business",
+  "title": {
+    "vi": "Kanji công việc (工 建 注 発)",
+    "en": "Work and business kanji (工 建 注 発)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "工",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "công; chế tạo",
+        "en": "craft; construction"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ",
+          "ク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 3
+      },
+      "examples": [
+        {
+          "ja": "工場",
+          "reading": "こうじょう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "nhà máy",
+            "en": "factory"
+          }
+        },
+        {
+          "ja": "工事",
+          "reading": "こうじ",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "công trình xây dựng",
+            "en": "construction work"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "建",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "xây dựng",
+        "en": "build"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン",
+          "コン"
+        ],
+        "kunReadings": [
+          "た.てる",
+          "た.つ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "建てる",
+          "reading": "たてる",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "xây",
+            "en": "to build"
+          }
+        },
+        {
+          "ja": "建物",
+          "reading": "たてもの",
+          "kanjiReading": "た",
+          "translation": {
+            "vi": "tòa nhà",
+            "en": "building"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "注",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "rót; chú ý",
+        "en": "pour; note"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チュウ"
+        ],
+        "kunReadings": [
+          "そそ.ぐ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "注意",
+          "reading": "ちゅうい",
+          "kanjiReading": "チュウ",
+          "translation": {
+            "vi": "chú ý",
+            "en": "caution"
+          }
+        },
+        {
+          "ja": "注文",
+          "reading": "ちゅうもん",
+          "kanjiReading": "チュウ",
+          "translation": {
+            "vi": "đặt hàng; gọi món",
+            "en": "order"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発",
+      "topic": "kanji-n4-work-business",
+      "meaning": {
+        "vi": "phát ra; xuất phát",
+        "en": "emit; depart"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハツ",
+          "ホツ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "発音",
+          "reading": "はつおん",
+          "kanjiReading": "ハツ",
+          "translation": {
+            "vi": "phát âm",
+            "en": "pronunciation"
+          }
+        },
+        {
+          "ja": "発明",
+          "reading": "はつめい",
+          "kanjiReading": "ハツ",
+          "translation": {
+            "vi": "phát minh",
+            "en": "invention"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "工",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「工」nghĩa là gì?",
+        "en": "What does 「工」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "công; chế tạo",
+            "en": "craft; construction"
+          },
+          {
+            "vi": "xây dựng",
+            "en": "build"
+          },
+          {
+            "vi": "rót; chú ý",
+            "en": "pour; note"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 工 nghĩa là công; chế tạo.",
+        "en": "Correct! 工 means craft; construction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 工 nghĩa là công; chế tạo, như trong 「工場」 (nhà máy).",
+        "en": "Not quite. 工 means craft; construction, as in 「工場」 (factory)."
+      }
+    },
+    {
+      "item": "工",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「工」 trong 「工場」 (“nhà máy”).",
+        "en": "Type the reading of 「工」 in 「工場」 (“factory”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 工場, 工 đọc là こう (âm On).",
+        "en": "Correct! In 工場, 工 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 工場 (nhà máy), 工 đọc là こう (âm On).",
+        "en": "In 工場 (factory), 工 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "工",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「工事」(công trình xây dựng) đọc là gì?",
+        "en": "How is 「工事」 (construction work) read?"
+      },
+      "payload": {
+        "choices": [
+          "くじ",
+          "こうじ",
+          "ごうじ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 工事 = こうじ (công trình xây dựng); 工 đọc là こう (âm On).",
+        "en": "Correct! 工事 = こうじ (construction work); 工 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "工事 đọc là こうじ (công trình xây dựng): 工 mang âm On こう.",
+        "en": "工事 is read こうじ (construction work): 工 takes the on'yomi こう."
+      }
+    },
+    {
+      "item": "建",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「建」nghĩa là gì?",
+        "en": "What does 「建」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rót; chú ý",
+            "en": "pour; note"
+          },
+          {
+            "vi": "xây dựng",
+            "en": "build"
+          },
+          {
+            "vi": "phát ra; xuất phát",
+            "en": "emit; depart"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 建 nghĩa là xây dựng.",
+        "en": "Correct! 建 means build."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 建 nghĩa là xây dựng, như trong 「建てる」 (xây).",
+        "en": "Not quite. 建 means build, as in 「建てる」 (to build)."
+      }
+    },
+    {
+      "item": "建",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「建」 trong 「建てる」 (“xây”).",
+        "en": "Type the reading of 「建」 in 「建てる」 (“to build”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "た",
+          "タ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 建てる, 建 đọc là た (âm Kun).",
+        "en": "Correct! In 建てる, 建 is read た (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 建てる (xây), 建 đọc là た (âm Kun).",
+        "en": "In 建てる (to build), 建 is read た (kun'yomi)."
+      }
+    },
+    {
+      "item": "建",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「建物」(tòa nhà) đọc là gì?",
+        "en": "How is 「建物」 (building) read?"
+      },
+      "payload": {
+        "choices": [
+          "けんてもの",
+          "だてもの",
+          "たてもの"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 建物 = たてもの (tòa nhà); 建 đọc là た (âm Kun).",
+        "en": "Correct! 建物 = たてもの (building); 建 is read た (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "建物 đọc là たてもの (tòa nhà): 建 mang âm Kun た.",
+        "en": "建物 is read たてもの (building): 建 takes the kun'yomi た."
+      }
+    },
+    {
+      "item": "注",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「注」nghĩa là gì?",
+        "en": "What does 「注」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phát ra; xuất phát",
+            "en": "emit; depart"
+          },
+          {
+            "vi": "công; chế tạo",
+            "en": "craft; construction"
+          },
+          {
+            "vi": "rót; chú ý",
+            "en": "pour; note"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 注 nghĩa là rót; chú ý.",
+        "en": "Correct! 注 means pour; note."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 注 nghĩa là rót; chú ý, như trong 「注意」 (chú ý).",
+        "en": "Not quite. 注 means pour; note, as in 「注意」 (caution)."
+      }
+    },
+    {
+      "item": "注",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「注」 trong 「注意」 (“chú ý”).",
+        "en": "Type the reading of 「注」 in 「注意」 (“caution”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちゅう",
+          "チュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 注意, 注 đọc là ちゅう (âm On).",
+        "en": "Correct! In 注意, 注 is read ちゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 注意 (chú ý), 注 đọc là ちゅう (âm On).",
+        "en": "In 注意 (caution), 注 is read ちゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "注",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「注文」(đặt hàng; gọi món) đọc là gì?",
+        "en": "How is 「注文」 (order) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちゅうもん",
+          "そそもん",
+          "ちゅもん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 注文 = ちゅうもん (đặt hàng; gọi món); 注 đọc là ちゅう (âm On).",
+        "en": "Correct! 注文 = ちゅうもん (order); 注 is read ちゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "注文 đọc là ちゅうもん (đặt hàng; gọi món): 注 mang âm On ちゅう.",
+        "en": "注文 is read ちゅうもん (order): 注 takes the on'yomi ちゅう."
+      }
+    },
+    {
+      "item": "発",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「発」nghĩa là gì?",
+        "en": "What does 「発」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phát ra; xuất phát",
+            "en": "emit; depart"
+          },
+          {
+            "vi": "công; chế tạo",
+            "en": "craft; construction"
+          },
+          {
+            "vi": "xây dựng",
+            "en": "build"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 発 nghĩa là phát ra; xuất phát.",
+        "en": "Correct! 発 means emit; depart."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 発 nghĩa là phát ra; xuất phát, như trong 「発音」 (phát âm).",
+        "en": "Not quite. 発 means emit; depart, as in 「発音」 (pronunciation)."
+      }
+    },
+    {
+      "item": "発",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「発」 trong 「発音」 (“phát âm”).",
+        "en": "Type the reading of 「発」 in 「発音」 (“pronunciation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はつ",
+          "ハツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 発音, 発 đọc là はつ (âm On).",
+        "en": "Correct! In 発音, 発 is read はつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 発音 (phát âm), 発 đọc là はつ (âm On).",
+        "en": "In 発音 (pronunciation), 発 is read はつ (on'yomi)."
+      }
+    },
+    {
+      "item": "発",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「発明」(phát minh) đọc là gì?",
+        "en": "How is 「発明」 (invention) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほつめい",
+          "はつめい",
+          "ばつめい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 発明 = はつめい (phát minh); 発 đọc là はつ (âm On).",
+        "en": "Correct! 発明 = はつめい (invention); 発 is read はつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "発明 đọc là はつめい (phát minh): 発 mang âm On はつ.",
+        "en": "発明 is read はつめい (invention): 発 takes the on'yomi はつ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "工",
+            {
+              "vi": "công; chế tạo",
+              "en": "craft; construction"
+            }
+          ],
+          [
+            "建",
+            {
+              "vi": "xây dựng",
+              "en": "build"
+            }
+          ],
+          [
+            "注",
+            {
+              "vi": "rót; chú ý",
+              "en": "pour; note"
+            }
+          ],
+          [
+            "発",
+            {
+              "vi": "phát ra; xuất phát",
+              "en": "emit; depart"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

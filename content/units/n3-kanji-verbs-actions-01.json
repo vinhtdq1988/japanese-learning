@@ -1,0 +1,552 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (成 向 与 付)",
+    "en": "Verbs and actions kanji (成 向 与 付)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "成",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "thành; trở thành",
+        "en": "become; achieve"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ジョウ"
+        ],
+        "kunReadings": [
+          "な.る",
+          "な.す"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "成功",
+          "reading": "せいこう",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "thành công",
+            "en": "success"
+          }
+        },
+        {
+          "ja": "成る",
+          "reading": "なる",
+          "kanjiReading": "な",
+          "translation": {
+            "vi": "trở thành (văn viết)",
+            "en": "to become (formal)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "向",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "hướng; quay về",
+        "en": "face; head for"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "む.く",
+          "む.ける",
+          "む.かう",
+          "む.こう"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "方向",
+          "reading": "ほうこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "phương hướng",
+            "en": "direction"
+          }
+        },
+        {
+          "ja": "向かう",
+          "reading": "むかう",
+          "kanjiReading": "む",
+          "translation": {
+            "vi": "hướng tới",
+            "en": "to head toward"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "与",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "cho; trao",
+        "en": "give; grant"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨ"
+        ],
+        "kunReadings": [
+          "あた.える"
+        ],
+        "strokeCount": 3
+      },
+      "examples": [
+        {
+          "ja": "給与",
+          "reading": "きゅうよ",
+          "kanjiReading": "ヨ",
+          "translation": {
+            "vi": "tiền lương",
+            "en": "salary"
+          }
+        },
+        {
+          "ja": "与える",
+          "reading": "あたえる",
+          "kanjiReading": "あた",
+          "translation": {
+            "vi": "trao; gây ra",
+            "en": "to give"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "付",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "dính; gắn; kèm",
+        "en": "attach; stick"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ"
+        ],
+        "kunReadings": [
+          "つ.く",
+          "つ.ける"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "付近",
+          "reading": "ふきん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "vùng lân cận",
+            "en": "vicinity"
+          }
+        },
+        {
+          "ja": "付ける",
+          "reading": "つける",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "gắn; bật",
+            "en": "to attach"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "成",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「成」nghĩa là gì?",
+        "en": "What does 「成」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thành; trở thành",
+            "en": "become; achieve"
+          },
+          {
+            "vi": "hướng; quay về",
+            "en": "face; head for"
+          },
+          {
+            "vi": "cho; trao",
+            "en": "give; grant"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 成 nghĩa là thành; trở thành.",
+        "en": "Correct! 成 means become; achieve."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 成 nghĩa là thành; trở thành, như trong 「成功」 (thành công).",
+        "en": "Not quite. 成 means become; achieve, as in 「成功」 (success)."
+      }
+    },
+    {
+      "item": "成",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「成」 trong 「成功」 (“thành công”).",
+        "en": "Type the reading of 「成」 in 「成功」 (“success”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 成功, 成 đọc là せい (âm On).",
+        "en": "Correct! In 成功, 成 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 成功 (thành công), 成 đọc là せい (âm On).",
+        "en": "In 成功 (success), 成 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "成",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「成る」(trở thành (văn viết)) đọc là gì?",
+        "en": "How is 「成る」 (to become (formal)) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいる",
+          "なる",
+          "つける"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 成る = なる (trở thành (văn viết)); 成 đọc là な (âm Kun).",
+        "en": "Correct! 成る = なる (to become (formal)); 成 is read な (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "成る đọc là なる (trở thành (văn viết)): 成 mang âm Kun な.",
+        "en": "成る is read なる (to become (formal)): 成 takes the kun'yomi な."
+      }
+    },
+    {
+      "item": "向",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「向」nghĩa là gì?",
+        "en": "What does 「向」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cho; trao",
+            "en": "give; grant"
+          },
+          {
+            "vi": "hướng; quay về",
+            "en": "face; head for"
+          },
+          {
+            "vi": "dính; gắn; kèm",
+            "en": "attach; stick"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 向 nghĩa là hướng; quay về.",
+        "en": "Correct! 向 means face; head for."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 向 nghĩa là hướng; quay về, như trong 「方向」 (phương hướng).",
+        "en": "Not quite. 向 means face; head for, as in 「方向」 (direction)."
+      }
+    },
+    {
+      "item": "向",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「向」 trong 「方向」 (“phương hướng”).",
+        "en": "Type the reading of 「向」 in 「方向」 (“direction”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 方向, 向 đọc là こう (âm On).",
+        "en": "Correct! In 方向, 向 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 方向 (phương hướng), 向 đọc là こう (âm On).",
+        "en": "In 方向 (direction), 向 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "向",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「向かう」(hướng tới) đọc là gì?",
+        "en": "How is 「向かう」 (to head toward) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうかう",
+          "ふきん",
+          "むかう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 向かう = むかう (hướng tới); 向 đọc là む (âm Kun).",
+        "en": "Correct! 向かう = むかう (to head toward); 向 is read む (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "向かう đọc là むかう (hướng tới): 向 mang âm Kun む.",
+        "en": "向かう is read むかう (to head toward): 向 takes the kun'yomi む."
+      }
+    },
+    {
+      "item": "与",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「与」nghĩa là gì?",
+        "en": "What does 「与」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dính; gắn; kèm",
+            "en": "attach; stick"
+          },
+          {
+            "vi": "thành; trở thành",
+            "en": "become; achieve"
+          },
+          {
+            "vi": "cho; trao",
+            "en": "give; grant"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 与 nghĩa là cho; trao.",
+        "en": "Correct! 与 means give; grant."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 与 nghĩa là cho; trao, như trong 「給与」 (tiền lương).",
+        "en": "Not quite. 与 means give; grant, as in 「給与」 (salary)."
+      }
+    },
+    {
+      "item": "与",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「与」 trong 「給与」 (“tiền lương”).",
+        "en": "Type the reading of 「与」 in 「給与」 (“salary”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よ",
+          "ヨ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 給与, 与 đọc là よ (âm On).",
+        "en": "Correct! In 給与, 与 is read よ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 給与 (tiền lương), 与 đọc là よ (âm On).",
+        "en": "In 給与 (salary), 与 is read よ (on'yomi)."
+      }
+    },
+    {
+      "item": "与",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「与える」(trao; gây ra) đọc là gì?",
+        "en": "How is 「与える」 (to give) read?"
+      },
+      "payload": {
+        "choices": [
+          "あたえる",
+          "よえる",
+          "せいこう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 与える = あたえる (trao; gây ra); 与 đọc là あた (âm Kun).",
+        "en": "Correct! 与える = あたえる (to give); 与 is read あた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "与える đọc là あたえる (trao; gây ra): 与 mang âm Kun あた.",
+        "en": "与える is read あたえる (to give): 与 takes the kun'yomi あた."
+      }
+    },
+    {
+      "item": "付",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「付」nghĩa là gì?",
+        "en": "What does 「付」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dính; gắn; kèm",
+            "en": "attach; stick"
+          },
+          {
+            "vi": "thành; trở thành",
+            "en": "become; achieve"
+          },
+          {
+            "vi": "hướng; quay về",
+            "en": "face; head for"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 付 nghĩa là dính; gắn; kèm.",
+        "en": "Correct! 付 means attach; stick."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 付 nghĩa là dính; gắn; kèm, như trong 「付近」 (vùng lân cận).",
+        "en": "Not quite. 付 means attach; stick, as in 「付近」 (vicinity)."
+      }
+    },
+    {
+      "item": "付",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「付」 trong 「付近」 (“vùng lân cận”).",
+        "en": "Type the reading of 「付」 in 「付近」 (“vicinity”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふ",
+          "フ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 付近, 付 đọc là ふ (âm On).",
+        "en": "Correct! In 付近, 付 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 付近 (vùng lân cận), 付 đọc là ふ (âm On).",
+        "en": "In 付近 (vicinity), 付 is read ふ (on'yomi)."
+      }
+    },
+    {
+      "item": "付",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「付ける」(gắn; bật) đọc là gì?",
+        "en": "How is 「付ける」 (to attach) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふける",
+          "つける",
+          "むかう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 付ける = つける (gắn; bật); 付 đọc là つ (âm Kun).",
+        "en": "Correct! 付ける = つける (to attach); 付 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "付ける đọc là つける (gắn; bật): 付 mang âm Kun つ.",
+        "en": "付ける is read つける (to attach): 付 takes the kun'yomi つ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "成",
+            {
+              "vi": "thành; trở thành",
+              "en": "become; achieve"
+            }
+          ],
+          [
+            "向",
+            {
+              "vi": "hướng; quay về",
+              "en": "face; head for"
+            }
+          ],
+          [
+            "与",
+            {
+              "vi": "cho; trao",
+              "en": "give; grant"
+            }
+          ],
+          [
+            "付",
+            {
+              "vi": "dính; gắn; kèm",
+              "en": "attach; stick"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

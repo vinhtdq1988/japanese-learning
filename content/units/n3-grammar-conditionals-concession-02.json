@@ -1,0 +1,497 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conditionals-concession",
+  "title": {
+    "vi": "Điều kiện (2): 〜とすれば, 〜ないかぎり, 〜たところで, 〜としても",
+    "en": "Conditionals (2): 〜とすれば, 〜ないかぎり, 〜たところで, 〜としても"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜とすれば／〜とすると",
+      "meaning": {
+        "vi": "Giả sử ~ thì ~",
+        "en": "Supposing that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + とすれば / とすると / とする. Đặt giả thiết rồi tính toán, suy luận hệ quả (giả sử như vậy thì…). Vế sau là phán đoán, tính toán; ít dùng cho hành động ý chí.",
+        "en": "Usage: plain form + とすれば / とすると / とする. Sets up a hypothesis and reasons about its consequences (\"supposing so, then…\"). The second clause is a judgment or calculation, rarely a volitional act."
+      },
+      "examples": [
+        {
+          "ja": "今から行くとすれば、五時には着きます。",
+          "reading": "いまからいくとすれば、ごじにはつきます。",
+          "translation": {
+            "vi": "Giả sử bây giờ đi thì năm giờ sẽ đến nơi.",
+            "en": "If we left now, we would arrive by five."
+          }
+        },
+        {
+          "ja": "一人千円とすると、全部で一万円です。",
+          "reading": "ひとりせんえんとすると、ぜんぶでいちまんえんです。",
+          "translation": {
+            "vi": "Giả sử mỗi người một nghìn yên thì tổng cộng là mười nghìn yên.",
+            "en": "If it is a thousand yen each, the total is ten thousand yen."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-010"
+    },
+    {
+      "japanese": "〜ないかぎり",
+      "meaning": {
+        "vi": "Chừng nào chưa ~ thì ~",
+        "en": "Unless ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể ない + かぎり + vế sau (phủ định hoặc trạng thái không đổi). Nghĩa \"chừng nào điều kiện chưa xảy ra thì kết quả vẫn không thay đổi\". Gần với 〜なければ nhưng nhấn mạnh sự tiếp tục.",
+        "en": "Usage: verb ない-form + かぎり + a negative or unchanged state. Means \"as long as the condition does not happen, the result does not change\". Close to 〜なければ but stresses continuation."
+      },
+      "examples": [
+        {
+          "ja": "努力しないかぎり、上手になりません。",
+          "reading": "どりょくしないかぎり、じょうずになりません。",
+          "translation": {
+            "vi": "Chừng nào chưa nỗ lực thì sẽ không giỏi lên.",
+            "en": "Unless you make an effort, you will not improve."
+          }
+        },
+        {
+          "ja": "許可がないかぎり、中に入れません。",
+          "reading": "きょかがないかぎり、なかにはいれません。",
+          "translation": {
+            "vi": "Nếu chưa có giấy phép thì không thể vào bên trong.",
+            "en": "Unless you have permission, you cannot go inside."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-014"
+    },
+    {
+      "japanese": "〜たところで",
+      "meaning": {
+        "vi": "Dù có ~ cũng (vô ích)",
+        "en": "Even if ~ (it is futile)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た + ところで + vế sau phủ định/vô ích. Giả định hành động dù có làm cũng không đạt kết quả mong muốn (間に合わない, 無駄だ). Không dùng khi kết quả là điều tốt.",
+        "en": "Usage: verb た-form + ところで + a negative or futile clause. Even if the action is done, the desired result is not achieved (間に合わない, 無駄だ). Not used when the result is good."
+      },
+      "examples": [
+        {
+          "ja": "今から急いだところで、間に合いません。",
+          "reading": "いまからいそいだところで、まにあいません。",
+          "translation": {
+            "vi": "Dù bây giờ có vội thì cũng không kịp.",
+            "en": "Even if we hurry now, we will not make it."
+          }
+        },
+        {
+          "ja": "謝ったところで、許してもらえないでしょう。",
+          "reading": "あやまったところで、ゆるしてもらえないでしょう。",
+          "translation": {
+            "vi": "Dù có xin lỗi cũng chắc không được tha thứ.",
+            "en": "Even if you apologize, you probably will not be forgiven."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-011"
+    },
+    {
+      "japanese": "〜としても／〜にしても",
+      "meaning": {
+        "vi": "Dù là ~ đi nữa",
+        "en": "Even if ~; even as for ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + としても; danh từ + にしても (にせよ, にしろ). Nhượng bộ giả định: chấp nhận điều đó nhưng kết luận vẫn thế. 〜にしても còn dùng liệt kê (\"A cũng B cũng\").",
+        "en": "Usage: plain form + としても; noun + にしても (にせよ, にしろ). A hypothetical concession: even granting that, the conclusion stands. 〜にしても also lists (\"both A and B\")."
+      },
+      "examples": [
+        {
+          "ja": "失敗したとしても、また挑戦します。",
+          "reading": "しっぱいしたとしても、またちょうせんします。",
+          "translation": {
+            "vi": "Dù có thất bại, tôi cũng sẽ thử lại.",
+            "en": "Even if I fail, I will try again."
+          }
+        },
+        {
+          "ja": "どんな理由があるにしても、約束は守るべきです。",
+          "reading": "どんなりゆうがあるにしても、やくそくはまもるべきです。",
+          "translation": {
+            "vi": "Dù có lý do gì đi nữa thì cũng phải giữ lời hứa.",
+            "en": "Whatever the reason, you should keep a promise."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-012"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜とすれば／〜とすると",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今から行く（　）、五時には着きます。",
+        "en": "Choose the correct option for the blank:\n今から行く（　）、五時には着きます。"
+      },
+      "payload": {
+        "choices": [
+          "ところで",
+          "とすれば",
+          "にしては",
+          "わりに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đặt giả thiết rồi tính: 「行くとすれば」.",
+        "en": "Correct! Setting a hypothesis and calculating: 「行くとすれば」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đặt giả thiết rồi tính: 「行くとすれば」.",
+        "en": "Not quite. Setting a hypothesis and calculating: 「行くとすれば」."
+      }
+    },
+    {
+      "item": "〜とすれば／〜とすると",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n一人千円___、全部で一万円です。",
+        "en": "Choose the correct option for the blank:\n一人千円___、全部で一万円です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "とすると",
+          "とすれば"
+        ],
+        "hint": "〜とすると"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Giả sử mỗi người 1.000 yên: 「千円とすると」.",
+        "en": "Correct! Supposing 1,000 yen each: 「千円とすると」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Giả sử mỗi người 1.000 yên: 「千円とすると」.",
+        "en": "Not quite. Supposing 1,000 yen each: 「千円とすると」."
+      }
+    },
+    {
+      "item": "〜ないかぎり",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n努力し（　）かぎり、上手になりません。",
+        "en": "Choose the correct option for the blank:\n努力し（　）かぎり、上手になりません。"
+      },
+      "payload": {
+        "choices": [
+          "ない",
+          "なかった",
+          "なくて",
+          "ず"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「Vない + かぎり」: 「努力しないかぎり」.",
+        "en": "Correct! The pattern 「Vない + かぎり」: 「努力しないかぎり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「Vない + かぎり」: 「努力しないかぎり」.",
+        "en": "Not quite. The pattern 「Vない + かぎり」: 「努力しないかぎり」."
+      }
+    },
+    {
+      "item": "〜ないかぎり",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n許可がない___、中に入れません。",
+        "en": "Choose the correct option for the blank:\n許可がない___、中に入れません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かぎり"
+        ],
+        "hint": "〜かぎり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chừng nào chưa có phép: 「許可がないかぎり」.",
+        "en": "Correct! As long as there is no permission: 「許可がないかぎり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chừng nào chưa có phép: 「許可がないかぎり」.",
+        "en": "Not quite. As long as there is no permission: 「許可がないかぎり」."
+      }
+    },
+    {
+      "item": "〜ないかぎり",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "雨が降らないかぎり、試合は行われません。",
+          "雨が降るかぎり、試合は行われます。",
+          "雨が降らなかぎり、試合は行われます。",
+          "雨が降らないかぎり、試合は行われます。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「降らないかぎり、行われます」: chừng nào mưa chưa rơi thì trận vẫn diễn ra (kết quả không đổi).",
+        "en": "Correct! 「降らないかぎり、行われます」: as long as it does not rain, the match is held (the result does not change)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「降らないかぎり、行われます」: chừng nào mưa chưa rơi thì trận vẫn diễn ra (kết quả không đổi).",
+        "en": "Not quite. 「降らないかぎり、行われます」: as long as it does not rain, the match is held (the result does not change)."
+      }
+    },
+    {
+      "item": "〜たところで",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今から急い（　）ところで、間に合いません。",
+        "en": "Choose the correct option for the blank:\n今から急い（　）ところで、間に合いません。"
+      },
+      "payload": {
+        "choices": [
+          "で",
+          "ぐ",
+          "だ",
+          "いた"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「急ぐ」 thể た là 「急いだ」: 「急いだところで」.",
+        "en": "Correct! The た-form of 「急ぐ」 is 「急いだ」: 「急いだところで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「急ぐ」 thể た là 「急いだ」: 「急いだところで」.",
+        "en": "Not quite. The た-form of 「急ぐ」 is 「急いだ」: 「急いだところで」."
+      }
+    },
+    {
+      "item": "〜たところで",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n今さら謝った（　）、許してもらえないでしょう。",
+        "en": "Choose the pattern that best fits the context:\n今さら謝った（　）、許してもらえないでしょう。"
+      },
+      "payload": {
+        "choices": [
+          "とすれば",
+          "ところで",
+          "かぎり",
+          "としても"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù có xin lỗi cũng vô ích: 「謝ったところで」.",
+        "en": "Correct! Even apologizing is futile: 「謝ったところで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù có xin lỗi cũng vô ích: 「謝ったところで」.",
+        "en": "Not quite. Even apologizing is futile: 「謝ったところで」."
+      }
+    },
+    {
+      "item": "〜としても／〜にしても",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n失敗した（　）、また挑戦します。",
+        "en": "Choose the correct option for the blank:\n失敗した（　）、また挑戦します。"
+      },
+      "payload": {
+        "choices": [
+          "としても",
+          "かぎり",
+          "ところに",
+          "ばかり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhượng bộ giả định: 「失敗したとしても」.",
+        "en": "Correct! A hypothetical concession: 「失敗したとしても」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhượng bộ giả định: 「失敗したとしても」.",
+        "en": "Not quite. A hypothetical concession: 「失敗したとしても」."
+      }
+    },
+    {
+      "item": "〜としても／〜にしても",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nどんな理由がある___、約束は守るべきです。",
+        "en": "Choose the correct option for the blank:\nどんな理由がある___、約束は守るべきです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にしても",
+          "にせよ",
+          "にしろ"
+        ],
+        "hint": "〜にしても"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù lý do gì: 「あるにしても」.",
+        "en": "Correct! Whatever the reason: 「あるにしても」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù lý do gì: 「あるにしても」.",
+        "en": "Not quite. Whatever the reason: 「あるにしても」."
+      }
+    },
+    {
+      "item": "〜としても／〜にしても",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "行けないとしても、連絡はしたい。",
+          "行けないとしても、連絡をしたかった。",
+          "行けないとしてが、連絡はしてください。",
+          "行けないとしても、連絡はしてください。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhượng bộ rồi đưa ra yêu cầu/phán đoán: 「としても、連絡はしてください」.",
+        "en": "Correct! A concession followed by a request/judgment: 「としても、連絡はしてください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhượng bộ rồi đưa ra yêu cầu/phán đoán: 「としても、連絡はしてください」.",
+        "en": "Not quite. A concession followed by a request/judgment: 「としても、連絡はしてください」."
+      }
+    },
+    {
+      "item": "〜たところで",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n今から　＿　＿　★　＿　。\n（急いだ／ところで／間に／合いません）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n今から　＿　＿　★　＿　。\n（急いだ／ところで／間に／合いません）"
+      },
+      "payload": {
+        "choices": [
+          "急いだ",
+          "間に",
+          "ところで",
+          "合いません"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「今から急いだところで間に合いません。」; ô ★ (thứ ba) là 「間に」 — thứ tự: 急いだ → ところで → 間に → 合いません.",
+        "en": "Correct! The correct sentence is 「今から急いだところで間に合いません。」; the ★ (third) slot is 「間に」 in the order 急いだ → ところで → 間に → 合いません."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「今から急いだところで間に合いません。」; ô ★ (thứ ba) là 「間に」 — thứ tự: 急いだ → ところで → 間に → 合いません.",
+        "en": "Not quite. The correct sentence is 「今から急いだところで間に合いません。」; the ★ (third) slot is 「間に」 in the order 急いだ → ところで → 間に → 合いません."
+      }
+    },
+    {
+      "item": "〜とすれば／〜とすると",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "彼が犯人だとすれば、動機は何でしたか。",
+          "彼が犯人だとすれば、動機は何でしょうか。",
+          "彼が犯人だとすれば、動機を何にしましょう。",
+          "彼が犯人だとすれば、動機を何にしてください。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau giả thiết là phán đoán, thắc mắc suy luận; không dùng rủ rê hay nhờ vả.",
+        "en": "Correct! After a hypothesis comes a judgment or inferential question; no invitations or requests."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau giả thiết là phán đoán, thắc mắc suy luận; không dùng rủ rê hay nhờ vả.",
+        "en": "Not quite. After a hypothesis comes a judgment or inferential question; no invitations or requests."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜とすれば／〜とすると",
+            {
+              "vi": "Giả sử ~ thì ~",
+              "en": "Supposing that ~"
+            }
+          ],
+          [
+            "〜ないかぎり",
+            {
+              "vi": "Chừng nào chưa ~ thì ~",
+              "en": "Unless ~"
+            }
+          ],
+          [
+            "〜たところで",
+            {
+              "vi": "Dù có ~ cũng (vô ích)",
+              "en": "Even if ~ (it is futile)"
+            }
+          ],
+          [
+            "〜としても／〜にしても",
+            {
+              "vi": "Dù là ~ đi nữa",
+              "en": "Even if ~; even as for ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

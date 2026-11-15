@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (害 防 保 守)",
+    "en": "Law and order kanji (害 防 保 守)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "害",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "hại; tai hại",
+        "en": "harm; damage"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "被害",
+          "reading": "ひがい",
+          "kanjiReading": "ガイ",
+          "translation": {
+            "vi": "thiệt hại",
+            "en": "damage"
+          }
+        },
+        {
+          "ja": "公害",
+          "reading": "こうがい",
+          "kanjiReading": "ガイ",
+          "translation": {
+            "vi": "ô nhiễm môi trường",
+            "en": "pollution"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "防",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "phòng; ngăn",
+        "en": "prevent; defend"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ボウ"
+        ],
+        "kunReadings": [
+          "ふせ.ぐ"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "予防",
+          "reading": "よぼう",
+          "kanjiReading": "ボウ",
+          "translation": {
+            "vi": "phòng ngừa",
+            "en": "prevention"
+          }
+        },
+        {
+          "ja": "防ぐ",
+          "reading": "ふせぐ",
+          "kanjiReading": "ふせ",
+          "translation": {
+            "vi": "ngăn chặn",
+            "en": "to prevent"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "giữ gìn; bảo đảm",
+        "en": "keep; ensure"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホ"
+        ],
+        "kunReadings": [
+          "たも.つ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "保険",
+          "reading": "ほけん",
+          "kanjiReading": "ホ",
+          "translation": {
+            "vi": "bảo hiểm",
+            "en": "insurance"
+          }
+        },
+        {
+          "ja": "保つ",
+          "reading": "たもつ",
+          "kanjiReading": "たも",
+          "translation": {
+            "vi": "duy trì; giữ",
+            "en": "to maintain"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "守",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "canh giữ; tuân thủ",
+        "en": "guard; obey"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュ",
+          "ス"
+        ],
+        "kunReadings": [
+          "まも.る",
+          "も.り"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "留守",
+          "reading": "るす",
+          "kanjiReading": "ス",
+          "translation": {
+            "vi": "sự vắng nhà",
+            "en": "absence from home"
+          }
+        },
+        {
+          "ja": "守る",
+          "reading": "まもる",
+          "kanjiReading": "まも",
+          "translation": {
+            "vi": "bảo vệ; tuân thủ",
+            "en": "to protect; to obey"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "害",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「害」nghĩa là gì?",
+        "en": "What does 「害」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hại; tai hại",
+            "en": "harm; damage"
+          },
+          {
+            "vi": "phòng; ngăn",
+            "en": "prevent; defend"
+          },
+          {
+            "vi": "giữ gìn; bảo đảm",
+            "en": "keep; ensure"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 害 nghĩa là hại; tai hại.",
+        "en": "Correct! 害 means harm; damage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 害 nghĩa là hại; tai hại, như trong 「被害」 (thiệt hại).",
+        "en": "Not quite. 害 means harm; damage, as in 「被害」 (damage)."
+      }
+    },
+    {
+      "item": "害",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「害」 trong 「被害」 (“thiệt hại”).",
+        "en": "Type the reading of 「害」 in 「被害」 (“damage”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がい",
+          "ガイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 被害, 害 đọc là がい (âm On).",
+        "en": "Correct! In 被害, 害 is read がい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 被害 (thiệt hại), 害 đọc là がい (âm On).",
+        "en": "In 被害 (damage), 害 is read がい (on'yomi)."
+      }
+    },
+    {
+      "item": "害",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「公害」(ô nhiễm môi trường) đọc là gì?",
+        "en": "How is 「公害」 (pollution) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうかい",
+          "こうがい",
+          "こうふせ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 公害 = こうがい (ô nhiễm môi trường); 害 đọc là がい (âm On).",
+        "en": "Correct! 公害 = こうがい (pollution); 害 is read がい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "公害 đọc là こうがい (ô nhiễm môi trường): 害 mang âm On がい.",
+        "en": "公害 is read こうがい (pollution): 害 takes the on'yomi がい."
+      }
+    },
+    {
+      "item": "防",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「防」nghĩa là gì?",
+        "en": "What does 「防」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giữ gìn; bảo đảm",
+            "en": "keep; ensure"
+          },
+          {
+            "vi": "phòng; ngăn",
+            "en": "prevent; defend"
+          },
+          {
+            "vi": "canh giữ; tuân thủ",
+            "en": "guard; obey"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 防 nghĩa là phòng; ngăn.",
+        "en": "Correct! 防 means prevent; defend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 防 nghĩa là phòng; ngăn, như trong 「予防」 (phòng ngừa).",
+        "en": "Not quite. 防 means prevent; defend, as in 「予防」 (prevention)."
+      }
+    },
+    {
+      "item": "防",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「防」 trong 「予防」 (“phòng ngừa”).",
+        "en": "Type the reading of 「防」 in 「予防」 (“prevention”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぼう",
+          "ボウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 予防, 防 đọc là ぼう (âm On).",
+        "en": "Correct! In 予防, 防 is read ぼう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 予防 (phòng ngừa), 防 đọc là ぼう (âm On).",
+        "en": "In 予防 (prevention), 防 is read ぼう (on'yomi)."
+      }
+    },
+    {
+      "item": "防",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「防ぐ」(ngăn chặn) đọc là gì?",
+        "en": "How is 「防ぐ」 (to prevent) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぼうぐ",
+          "ほけん",
+          "ふせぐ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 防ぐ = ふせぐ (ngăn chặn); 防 đọc là ふせ (âm Kun).",
+        "en": "Correct! 防ぐ = ふせぐ (to prevent); 防 is read ふせ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "防ぐ đọc là ふせぐ (ngăn chặn): 防 mang âm Kun ふせ.",
+        "en": "防ぐ is read ふせぐ (to prevent): 防 takes the kun'yomi ふせ."
+      }
+    },
+    {
+      "item": "保",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保」nghĩa là gì?",
+        "en": "What does 「保」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "canh giữ; tuân thủ",
+            "en": "guard; obey"
+          },
+          {
+            "vi": "hại; tai hại",
+            "en": "harm; damage"
+          },
+          {
+            "vi": "giữ gìn; bảo đảm",
+            "en": "keep; ensure"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保 nghĩa là giữ gìn; bảo đảm.",
+        "en": "Correct! 保 means keep; ensure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 保 nghĩa là giữ gìn; bảo đảm, như trong 「保険」 (bảo hiểm).",
+        "en": "Not quite. 保 means keep; ensure, as in 「保険」 (insurance)."
+      }
+    },
+    {
+      "item": "保",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「保」 trong 「保険」 (“bảo hiểm”).",
+        "en": "Type the reading of 「保」 in 「保険」 (“insurance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほ",
+          "ホ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 保険, 保 đọc là ほ (âm On).",
+        "en": "Correct! In 保険, 保 is read ほ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 保険 (bảo hiểm), 保 đọc là ほ (âm On).",
+        "en": "In 保険 (insurance), 保 is read ほ (on'yomi)."
+      }
+    },
+    {
+      "item": "保",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「保つ」(duy trì; giữ) đọc là gì?",
+        "en": "How is 「保つ」 (to maintain) read?"
+      },
+      "payload": {
+        "choices": [
+          "たもつ",
+          "ほつ",
+          "まもる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 保つ = たもつ (duy trì; giữ); 保 đọc là たも (âm Kun).",
+        "en": "Correct! 保つ = たもつ (to maintain); 保 is read たも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "保つ đọc là たもつ (duy trì; giữ): 保 mang âm Kun たも.",
+        "en": "保つ is read たもつ (to maintain): 保 takes the kun'yomi たも."
+      }
+    },
+    {
+      "item": "守",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「守」nghĩa là gì?",
+        "en": "What does 「守」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "canh giữ; tuân thủ",
+            "en": "guard; obey"
+          },
+          {
+            "vi": "hại; tai hại",
+            "en": "harm; damage"
+          },
+          {
+            "vi": "phòng; ngăn",
+            "en": "prevent; defend"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 守 nghĩa là canh giữ; tuân thủ.",
+        "en": "Correct! 守 means guard; obey."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 守 nghĩa là canh giữ; tuân thủ, như trong 「留守」 (sự vắng nhà).",
+        "en": "Not quite. 守 means guard; obey, as in 「留守」 (absence from home)."
+      }
+    },
+    {
+      "item": "守",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「守」 trong 「留守」 (“sự vắng nhà”).",
+        "en": "Type the reading of 「守」 in 「留守」 (“absence from home”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "す",
+          "ス"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 留守, 守 đọc là す (âm On).",
+        "en": "Correct! In 留守, 守 is read す (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 留守 (sự vắng nhà), 守 đọc là す (âm On).",
+        "en": "In 留守 (absence from home), 守 is read す (on'yomi)."
+      }
+    },
+    {
+      "item": "守",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「守る」(bảo vệ; tuân thủ) đọc là gì?",
+        "en": "How is 「守る」 (to protect; to obey) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅる",
+          "まもる",
+          "ひがい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 守る = まもる (bảo vệ; tuân thủ); 守 đọc là まも (âm Kun).",
+        "en": "Correct! 守る = まもる (to protect; to obey); 守 is read まも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "守る đọc là まもる (bảo vệ; tuân thủ): 守 mang âm Kun まも.",
+        "en": "守る is read まもる (to protect; to obey): 守 takes the kun'yomi まも."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "害",
+            {
+              "vi": "hại; tai hại",
+              "en": "harm; damage"
+            }
+          ],
+          [
+            "防",
+            {
+              "vi": "phòng; ngăn",
+              "en": "prevent; defend"
+            }
+          ],
+          [
+            "保",
+            {
+              "vi": "giữ gìn; bảo đảm",
+              "en": "keep; ensure"
+            }
+          ],
+          [
+            "守",
+            {
+              "vi": "canh giữ; tuân thủ",
+              "en": "guard; obey"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

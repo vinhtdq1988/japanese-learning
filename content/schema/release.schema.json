@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://japanese-learning.local/schema/release/1.0.0",
+  "title": "Đợt phát hành nội dung (Release manifest)",
+  "description": "Một file = một đợt đơn vị được duyệt và kích hoạt cùng lúc, kèm hồ sơ duyệt (người duyệt, ngày duyệt). Đóng kín: file trong content/units/ không thuộc manifest nào bị coi là mồ côi và làm seed thất bại. Quy tắc M1…M7: backend/src/seed/content.ts; hợp đồng: specs/008-n4-n3-jlpt-content/contracts/release-manifest.md. Schema chỉ kiểm cấu trúc; hồ sơ duyệt (M3), nguồn (M4) và baseline (M5) do bộ nạp kiểm để báo lỗi rõ ràng.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "date",
+    "title",
+    "units"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{3}-[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Mã đợt dạng `NNN-slug`, trùng tên file manifest."
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "title": {
+      "$ref": "#/definitions/i18nText"
+    },
+    "baseline": {
+      "type": "boolean",
+      "description": "true chỉ ở 000-baseline: hồ sơ lịch sử của spec 001/003/007, được miễn các quy tắc mới và hồ sơ duyệt."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "note"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "description": "Nguồn tham khảo của đợt (FR-016); đợt không phải baseline PHẢI có ít nhất một nguồn (M4)."
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/unitRef"
+      }
+    },
+    "amendments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/amendment"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "i18nText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vi",
+        "en"
+      ],
+      "properties": {
+        "vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "unitRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "pattern": "^[^/\\\\]+\\.json$"
+        },
+        "reviewer": {
+          "type": "string",
+          "description": "Họ tên người duyệt; bắt buộc ở đợt không phải baseline (quy tắc M3 do bộ nạp kiểm, để báo lỗi tiếng Việt rõ ràng)."
+        },
+        "reviewedOn": {
+          "type": "string",
+          "description": "Ngày duyệt YYYY-MM-DD, không sau `date` của đợt; bắt buộc ở đợt không phải baseline (M3)."
+        },
+        "checklist": {
+          "type": "boolean",
+          "description": "Người duyệt xác nhận đã đi hết checklist của loại đơn vị; PHẢI là true ở đợt không phải baseline (M3)."
+        }
+      }
+    },
+    "amendment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit",
+        "item",
+        "add"
+      ],
+      "description": "Bổ sung CHỈ-THÊM cho chữ Kanji đã có (data-model §4.1).",
+      "properties": {
+        "unit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "level",
+            "titleEn"
+          ],
+          "properties": {
+            "kind": {
+              "const": "kanji"
+            },
+            "level": {
+              "enum": [
+                "N5",
+                "N4",
+                "N3"
+              ]
+            },
+            "titleEn": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "item": {
+          "type": "string",
+          "minLength": 1
+        },
+        "add": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "onReadings": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[゠-ヿ]+$"
+              }
+            },
+            "kunReadings": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[぀-ゟ.]+$"
+              }
+            },
+            "examples": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "ja",
+                  "translation"
+                ],
+                "properties": {
+                  "ja": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reading": {
+                    "type": "string"
+                  },
+                  "kanjiReading": {
+                    "type": "string"
+                  },
+                  "translation": {
+                    "$ref": "#/definitions/i18nText"
+                  }
+                }
+              }
+            },
+            "exercises": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "facet",
+                  "type",
+                  "prompt",
+                  "payload",
+                  "feedbackCorrect",
+                  "feedbackIncorrect"
+                ],
+                "properties": {
+                  "item": {
+                    "type": "string"
+                  },
+                  "facet": {
+                    "enum": [
+                      "reading",
+                      "word"
+                    ]
+                  },
+                  "type": {
+                    "enum": [
+                      "multiple_choice",
+                      "matching",
+                      "fill_blank"
+                    ]
+                  },
+                  "prompt": {
+                    "$ref": "#/definitions/i18nText"
+                  },
+                  "payload": {
+                    "type": "object"
+                  },
+                  "feedbackCorrect": {
+                    "$ref": "#/definitions/i18nText"
+                  },
+                  "feedbackIncorrect": {
+                    "$ref": "#/definitions/i18nText"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

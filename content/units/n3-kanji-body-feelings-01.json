@@ -1,0 +1,423 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (頭 脳 背)",
+    "en": "Body and feelings kanji (頭 脳 背)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "頭",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "đầu",
+        "en": "head"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ",
+          "ズ",
+          "ト"
+        ],
+        "kunReadings": [
+          "あたま",
+          "かしら"
+        ],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "頭痛",
+          "reading": "ずつう",
+          "kanjiReading": "ズ",
+          "translation": {
+            "vi": "đau đầu",
+            "en": "headache"
+          }
+        },
+        {
+          "ja": "頭",
+          "reading": "あたま",
+          "kanjiReading": "あたま",
+          "translation": {
+            "vi": "cái đầu",
+            "en": "head"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "脳",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "não",
+        "en": "brain"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ノウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "頭脳",
+          "reading": "ずのう",
+          "kanjiReading": "ノウ",
+          "translation": {
+            "vi": "trí óc",
+            "en": "brains"
+          }
+        },
+        {
+          "ja": "大脳",
+          "reading": "だいのう",
+          "kanjiReading": "ノウ",
+          "translation": {
+            "vi": "đại não",
+            "en": "cerebrum"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "背",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "lưng; chiều cao",
+        "en": "back; height"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハイ"
+        ],
+        "kunReadings": [
+          "せ",
+          "せい",
+          "そむ.く"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "背景",
+          "reading": "はいけい",
+          "kanjiReading": "ハイ",
+          "translation": {
+            "vi": "bối cảnh",
+            "en": "background"
+          }
+        },
+        {
+          "ja": "背中",
+          "reading": "せなか",
+          "kanjiReading": "せ",
+          "translation": {
+            "vi": "lưng",
+            "en": "back"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "頭",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「頭」nghĩa là gì?",
+        "en": "What does 「頭」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đầu",
+            "en": "head"
+          },
+          {
+            "vi": "não",
+            "en": "brain"
+          },
+          {
+            "vi": "lưng; chiều cao",
+            "en": "back; height"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 頭 nghĩa là đầu.",
+        "en": "Correct! 頭 means head."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 頭 nghĩa là đầu, như trong 「頭痛」 (đau đầu).",
+        "en": "Not quite. 頭 means head, as in 「頭痛」 (headache)."
+      }
+    },
+    {
+      "item": "頭",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「頭」 trong 「頭痛」 (“đau đầu”).",
+        "en": "Type the reading of 「頭」 in 「頭痛」 (“headache”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ず",
+          "ズ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 頭痛, 頭 đọc là ず (âm On).",
+        "en": "Correct! In 頭痛, 頭 is read ず (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 頭痛 (đau đầu), 頭 đọc là ず (âm On).",
+        "en": "In 頭痛 (headache), 頭 is read ず (on'yomi)."
+      }
+    },
+    {
+      "item": "頭",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「頭」(cái đầu; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「頭」 (head; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "とう",
+          "あたま",
+          "ずのう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 頭 = あたま (cái đầu); 頭 đọc là あたま (âm Kun).",
+        "en": "Correct! 頭 = あたま (head); 頭 is read あたま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "頭 đọc là あたま (cái đầu): 頭 mang âm Kun あたま.",
+        "en": "頭 is read あたま (head): 頭 takes the kun'yomi あたま."
+      }
+    },
+    {
+      "item": "脳",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「脳」nghĩa là gì?",
+        "en": "What does 「脳」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lưng; chiều cao",
+            "en": "back; height"
+          },
+          {
+            "vi": "não",
+            "en": "brain"
+          },
+          {
+            "vi": "đầu",
+            "en": "head"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 脳 nghĩa là não.",
+        "en": "Correct! 脳 means brain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 脳 nghĩa là não, như trong 「頭脳」 (trí óc).",
+        "en": "Not quite. 脳 means brain, as in 「頭脳」 (brains)."
+      }
+    },
+    {
+      "item": "脳",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「脳」 trong 「頭脳」 (“trí óc”).",
+        "en": "Type the reading of 「脳」 in 「頭脳」 (“brains”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "のう",
+          "ノウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 頭脳, 脳 đọc là のう (âm On).",
+        "en": "Correct! In 頭脳, 脳 is read のう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 頭脳 (trí óc), 脳 đọc là のう (âm On).",
+        "en": "In 頭脳 (brains), 脳 is read のう (on'yomi)."
+      }
+    },
+    {
+      "item": "脳",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「大脳」(đại não) đọc là gì?",
+        "en": "How is 「大脳」 (cerebrum) read?"
+      },
+      "payload": {
+        "choices": [
+          "だいの",
+          "だいせ",
+          "だいのう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 大脳 = だいのう (đại não); 脳 đọc là のう (âm On).",
+        "en": "Correct! 大脳 = だいのう (cerebrum); 脳 is read のう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "大脳 đọc là だいのう (đại não): 脳 mang âm On のう.",
+        "en": "大脳 is read だいのう (cerebrum): 脳 takes the on'yomi のう."
+      }
+    },
+    {
+      "item": "背",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「背」nghĩa là gì?",
+        "en": "What does 「背」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đầu",
+            "en": "head"
+          },
+          {
+            "vi": "não",
+            "en": "brain"
+          },
+          {
+            "vi": "lưng; chiều cao",
+            "en": "back; height"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 背 nghĩa là lưng; chiều cao.",
+        "en": "Correct! 背 means back; height."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 背 nghĩa là lưng; chiều cao, như trong 「背景」 (bối cảnh).",
+        "en": "Not quite. 背 means back; height, as in 「背景」 (background)."
+      }
+    },
+    {
+      "item": "背",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「背」 trong 「背景」 (“bối cảnh”).",
+        "en": "Type the reading of 「背」 in 「背景」 (“background”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はい",
+          "ハイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 背景, 背 đọc là はい (âm On).",
+        "en": "Correct! In 背景, 背 is read はい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 背景 (bối cảnh), 背 đọc là はい (âm On).",
+        "en": "In 背景 (background), 背 is read はい (on'yomi)."
+      }
+    },
+    {
+      "item": "背",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「背中」(lưng) đọc là gì?",
+        "en": "How is 「背中」 (back) read?"
+      },
+      "payload": {
+        "choices": [
+          "せなか",
+          "はいなか",
+          "ぜなか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 背中 = せなか (lưng); 背 đọc là せ (âm Kun).",
+        "en": "Correct! 背中 = せなか (back); 背 is read せ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "背中 đọc là せなか (lưng): 背 mang âm Kun せ.",
+        "en": "背中 is read せなか (back): 背 takes the kun'yomi せ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "頭",
+            {
+              "vi": "đầu",
+              "en": "head"
+            }
+          ],
+          [
+            "脳",
+            {
+              "vi": "não",
+              "en": "brain"
+            }
+          ],
+          [
+            "背",
+            {
+              "vi": "lưng; chiều cao",
+              "en": "back; height"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

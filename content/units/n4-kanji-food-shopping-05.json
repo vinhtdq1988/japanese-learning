@@ -1,0 +1,414 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-food-shopping",
+  "title": {
+    "vi": "Kanji ăn uống – mua sắm (銀 服 洋)",
+    "en": "Food and shopping kanji (銀 服 洋)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "銀",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "bạc",
+        "en": "silver"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "銀行",
+          "reading": "ぎんこう",
+          "kanjiReading": "ギン",
+          "translation": {
+            "vi": "ngân hàng",
+            "en": "bank"
+          }
+        },
+        {
+          "ja": "銀色",
+          "reading": "ぎんいろ",
+          "kanjiReading": "ギン",
+          "translation": {
+            "vi": "màu bạc",
+            "en": "silver color"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "服",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "quần áo",
+        "en": "clothes"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "洋服",
+          "reading": "ようふく",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "quần áo kiểu Tây",
+            "en": "Western clothes"
+          }
+        },
+        {
+          "ja": "制服",
+          "reading": "せいふく",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "đồng phục",
+            "en": "uniform"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "洋",
+      "topic": "kanji-n4-food-shopping",
+      "meaning": {
+        "vi": "phương Tây; đại dương",
+        "en": "Western; ocean"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "洋食",
+          "reading": "ようしょく",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "món Tây",
+            "en": "Western food"
+          }
+        },
+        {
+          "ja": "西洋",
+          "reading": "せいよう",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "phương Tây",
+            "en": "the West"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "銀",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銀」nghĩa là gì?",
+        "en": "What does 「銀」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bạc",
+            "en": "silver"
+          },
+          {
+            "vi": "quần áo",
+            "en": "clothes"
+          },
+          {
+            "vi": "phương Tây; đại dương",
+            "en": "Western; ocean"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銀 nghĩa là bạc.",
+        "en": "Correct! 銀 means silver."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 銀 nghĩa là bạc, như trong 「銀行」 (ngân hàng).",
+        "en": "Not quite. 銀 means silver, as in 「銀行」 (bank)."
+      }
+    },
+    {
+      "item": "銀",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「銀」 trong 「銀行」 (“ngân hàng”).",
+        "en": "Type the reading of 「銀」 in 「銀行」 (“bank”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎん",
+          "ギン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 銀行, 銀 đọc là ぎん (âm On).",
+        "en": "Correct! In 銀行, 銀 is read ぎん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 銀行 (ngân hàng), 銀 đọc là ぎん (âm On).",
+        "en": "In 銀行 (bank), 銀 is read ぎん (on'yomi)."
+      }
+    },
+    {
+      "item": "銀",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銀色」(màu bạc) đọc là gì?",
+        "en": "How is 「銀色」 (silver color) read?"
+      },
+      "payload": {
+        "choices": [
+          "きんいろ",
+          "ぎんいろ",
+          "ふくいろ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銀色 = ぎんいろ (màu bạc); 銀 đọc là ぎん (âm On).",
+        "en": "Correct! 銀色 = ぎんいろ (silver color); 銀 is read ぎん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "銀色 đọc là ぎんいろ (màu bạc): 銀 mang âm On ぎん.",
+        "en": "銀色 is read ぎんいろ (silver color): 銀 takes the on'yomi ぎん."
+      }
+    },
+    {
+      "item": "服",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「服」nghĩa là gì?",
+        "en": "What does 「服」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "phương Tây; đại dương",
+            "en": "Western; ocean"
+          },
+          {
+            "vi": "quần áo",
+            "en": "clothes"
+          },
+          {
+            "vi": "bạc",
+            "en": "silver"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 服 nghĩa là quần áo.",
+        "en": "Correct! 服 means clothes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 服 nghĩa là quần áo, như trong 「洋服」 (quần áo kiểu Tây).",
+        "en": "Not quite. 服 means clothes, as in 「洋服」 (Western clothes)."
+      }
+    },
+    {
+      "item": "服",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「服」 trong 「洋服」 (“quần áo kiểu Tây”).",
+        "en": "Type the reading of 「服」 in 「洋服」 (“Western clothes”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふく",
+          "フク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 洋服, 服 đọc là ふく (âm On).",
+        "en": "Correct! In 洋服, 服 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 洋服 (quần áo kiểu Tây), 服 đọc là ふく (âm On).",
+        "en": "In 洋服 (Western clothes), 服 is read ふく (on'yomi)."
+      }
+    },
+    {
+      "item": "服",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「制服」(đồng phục) đọc là gì?",
+        "en": "How is 「制服」 (uniform) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいぶく",
+          "せいよう",
+          "せいふく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 制服 = せいふく (đồng phục); 服 đọc là ふく (âm On).",
+        "en": "Correct! 制服 = せいふく (uniform); 服 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "制服 đọc là せいふく (đồng phục): 服 mang âm On ふく.",
+        "en": "制服 is read せいふく (uniform): 服 takes the on'yomi ふく."
+      }
+    },
+    {
+      "item": "洋",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「洋」nghĩa là gì?",
+        "en": "What does 「洋」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bạc",
+            "en": "silver"
+          },
+          {
+            "vi": "quần áo",
+            "en": "clothes"
+          },
+          {
+            "vi": "phương Tây; đại dương",
+            "en": "Western; ocean"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 洋 nghĩa là phương Tây; đại dương.",
+        "en": "Correct! 洋 means Western; ocean."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 洋 nghĩa là phương Tây; đại dương, như trong 「洋食」 (món Tây).",
+        "en": "Not quite. 洋 means Western; ocean, as in 「洋食」 (Western food)."
+      }
+    },
+    {
+      "item": "洋",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「洋」 trong 「洋食」 (“món Tây”).",
+        "en": "Type the reading of 「洋」 in 「洋食」 (“Western food”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 洋食, 洋 đọc là よう (âm On).",
+        "en": "Correct! In 洋食, 洋 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 洋食 (món Tây), 洋 đọc là よう (âm On).",
+        "en": "In 洋食 (Western food), 洋 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "洋",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「西洋」(phương Tây) đọc là gì?",
+        "en": "How is 「西洋」 (the West) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいよう",
+          "せいよ",
+          "せいぎん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 西洋 = せいよう (phương Tây); 洋 đọc là よう (âm On).",
+        "en": "Correct! 西洋 = せいよう (the West); 洋 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "西洋 đọc là せいよう (phương Tây): 洋 mang âm On よう.",
+        "en": "西洋 is read せいよう (the West): 洋 takes the on'yomi よう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "銀",
+            {
+              "vi": "bạc",
+              "en": "silver"
+            }
+          ],
+          [
+            "服",
+            {
+              "vi": "quần áo",
+              "en": "clothes"
+            }
+          ],
+          [
+            "洋",
+            {
+              "vi": "phương Tây; đại dương",
+              "en": "Western; ocean"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

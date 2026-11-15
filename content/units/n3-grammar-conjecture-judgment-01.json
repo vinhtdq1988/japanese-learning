@@ -1,0 +1,320 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conjecture-judgment",
+  "title": {
+    "vi": "Phán đoán (1): 〜っぽい và 〜に違いない",
+    "en": "Judgment (1): 〜っぽい and 〜に違いない"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜っぽい",
+      "meaning": {
+        "vi": "Có vẻ ~, hay ~",
+        "en": "-ish; prone to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ / động từ gốc ます / tính từ い bỏ い + っぽい. Nghĩa 1: mang tính chất giống như (子どもっぽい, 男っぽい). Nghĩa 2: dễ có xu hướng (忘れっぽい, 怒りっぽい). Khẩu ngữ, thường kèm sắc thái chê nhẹ.",
+        "en": "Usage: noun / verb ます-stem / い-adjective drop い + っぽい. Sense 1: having the quality of (子どもっぽい, 男っぽい). Sense 2: prone to (忘れっぽい, 怒りっぽい). Colloquial, often with a mildly critical nuance."
+      },
+      "examples": [
+        {
+          "ja": "あの人は、子どもっぽいです。",
+          "reading": "あのひとは、こどもっぽいです。",
+          "translation": {
+            "vi": "Người kia trông trẻ con.",
+            "en": "That person is childish."
+          }
+        },
+        {
+          "ja": "最近、忘れっぽくなりました。",
+          "reading": "さいきん、わすれっぽくなりました。",
+          "translation": {
+            "vi": "Dạo này tôi trở nên hay quên.",
+            "en": "Lately I have become forgetful."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-040"
+    },
+    {
+      "japanese": "〜に違いない",
+      "meaning": {
+        "vi": "Chắc chắn là ~",
+        "en": "Must be ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (tính từ な, danh từ bỏ だ) + に違いない (ちがいない). Phán đoán chắc chắn của người nói dựa trên căn cứ. Trang trọng, văn viết; lịch sự: に違いありません. Khác 〜かもしれない (không chắc).",
+        "en": "Usage: plain form (drop だ for な-adjectives and nouns) + に違いない (ちがいない). The speaker's firm judgment based on grounds. Formal/written; polite: に違いありません. Unlike 〜かもしれない (uncertain)."
+      },
+      "examples": [
+        {
+          "ja": "電気がついているから、彼は家にいるに違いない。",
+          "reading": "でんきがついているから、かれはいえにいるにちがいない。",
+          "translation": {
+            "vi": "Đèn đang sáng nên chắc chắn anh ấy có ở nhà.",
+            "en": "The light is on, so he must be at home."
+          }
+        },
+        {
+          "ja": "この絵は、本物に違いありません。",
+          "reading": "このえは、ほんものにちがいありません。",
+          "translation": {
+            "vi": "Bức tranh này chắc chắn là thật.",
+            "en": "This painting must be genuine."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-041"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜っぽい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあの人は、子ども（　）です。",
+        "en": "Choose the correct option for the blank:\nあの人は、子ども（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "らしい",
+          "みたい",
+          "がち",
+          "っぽい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mang tính chất giống trẻ con: 「子どもっぽい」.",
+        "en": "Correct! Having a childish quality: 「子どもっぽい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mang tính chất giống trẻ con: 「子どもっぽい」.",
+        "en": "Not quite. Having a childish quality: 「子どもっぽい」."
+      }
+    },
+    {
+      "item": "〜っぽい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n最近、忘れ___なりました。",
+        "en": "Choose the correct option for the blank:\n最近、忘れ___なりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "っぽく"
+        ],
+        "hint": "〜っぽく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hay quên: 「忘れっぽく」 (dạng て/くなる của tính từ い).",
+        "en": "Correct! Forgetful: 「忘れっぽく」 (the くなる form of an い-adjective)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hay quên: 「忘れっぽく」 (dạng て/くなる của tính từ い).",
+        "en": "Not quite. Forgetful: 「忘れっぽく」 (the くなる form of an い-adjective)."
+      }
+    },
+    {
+      "item": "〜っぽい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nあの人は、怒り（　）。",
+        "en": "Choose the pattern that best fits the context:\nあの人は、怒り（　）。"
+      },
+      "payload": {
+        "choices": [
+          "そうだ",
+          "ようだ",
+          "っぽい",
+          "に違いない"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dễ nổi giận (xu hướng tính cách): 「怒りっぽい」.",
+        "en": "Correct! Prone to anger (a personality tendency): 「怒りっぽい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dễ nổi giận (xu hướng tính cách): 「怒りっぽい」.",
+        "en": "Not quite. Prone to anger (a personality tendency): 「怒りっぽい」."
+      }
+    },
+    {
+      "item": "〜っぽい",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この服は、ちょっと子どもっぽねいですね。",
+          "この服は、ちょっと子どもっぽいですね。",
+          "この服は、ちょっと子どもっぽいなですね。",
+          "この服は、ちょっと子どもっぽくですね。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜っぽい」 là tính từ い nên nối thẳng với 「です」: 「子どもっぽいです」.",
+        "en": "Correct! 「〜っぽい」 is an い-adjective, so it connects directly to 「です」: 「子どもっぽいです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜っぽい」 là tính từ い nên nối thẳng với 「です」: 「子どもっぽいです」.",
+        "en": "Not quite. 「〜っぽい」 is an い-adjective, so it connects directly to 「です」: 「子どもっぽいです」."
+      }
+    },
+    {
+      "item": "〜に違いない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n電気がついているから、彼は家にいる（　）。",
+        "en": "Choose the correct option for the blank:\n電気がついているから、彼は家にいる（　）。"
+      },
+      "payload": {
+        "choices": [
+          "に違いない",
+          "かもしれない",
+          "わけがない",
+          "はずがない"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phán đoán chắc chắn dựa trên căn cứ (đèn sáng): 「いるに違いない」.",
+        "en": "Correct! A firm judgment based on grounds (the light is on): 「いるに違いない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phán đoán chắc chắn dựa trên căn cứ (đèn sáng): 「いるに違いない」.",
+        "en": "Not quite. A firm judgment based on grounds (the light is on): 「いるに違いない」."
+      }
+    },
+    {
+      "item": "〜に違いない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの絵は、本物___ありません。",
+        "en": "Choose the correct option for the blank:\nこの絵は、本物___ありません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "に違い",
+          "にちがい"
+        ],
+        "hint": "にちがい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chắc chắn là thật: 「本物に違いありません」.",
+        "en": "Correct! It is certainly genuine: 「本物に違いありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chắc chắn là thật: 「本物に違いありません」.",
+        "en": "Not quite. It is certainly genuine: 「本物に違いありません」."
+      }
+    },
+    {
+      "item": "〜に違いない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nあれだけ練習したのだから、きっと上手に（　）。",
+        "en": "Choose the pattern that best fits the context:\nあれだけ練習したのだから、きっと上手に（　）。"
+      },
+      "payload": {
+        "choices": [
+          "なるかもしれない",
+          "なるわけがない",
+          "なったはずがない",
+          "なったに違いない"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có 「きっと」 và căn cứ nên chắc chắn: 「なったに違いない」.",
+        "en": "Correct! With 「きっと」 and a basis it is a firm judgment: 「なったに違いない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có 「きっと」 và căn cứ nên chắc chắn: 「なったに違いない」.",
+        "en": "Not quite. With 「きっと」 and a basis it is a firm judgment: 「なったに違いない」."
+      }
+    },
+    {
+      "item": "〜に違いない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "あの人が犯人だに違いない。",
+          "あの人が犯人のに違いない。",
+          "あの人が犯人に違いない。",
+          "あの人が犯人なに違いない。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ nối thẳng với 「に違いない」 (không có 「だ」, 「の」, 「な」).",
+        "en": "Correct! A noun connects directly to 「に違いない」 (no 「だ」, 「の」 or 「な」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ nối thẳng với 「に違いない」 (không có 「だ」, 「の」, 「な」).",
+        "en": "Not quite. A noun connects directly to 「に違いない」 (no 「だ」, 「の」 or 「な」)."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜っぽい",
+            {
+              "vi": "Có vẻ ~, hay ~",
+              "en": "-ish; prone to ~"
+            }
+          ],
+          [
+            "〜に違いない",
+            {
+              "vi": "Chắc chắn là ~",
+              "en": "Must be ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

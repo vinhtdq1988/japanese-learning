@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-food-health",
+  "title": {
+    "vi": "Bày món và hạn dùng",
+    "en": "Serving and shelf life"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "賞味期限",
+      "reading": "しょうみきげん",
+      "meaning": {
+        "vi": "Hạn dùng (ngon nhất)",
+        "en": "Best-before date"
+      },
+      "examples": [
+        {
+          "ja": "このパンは、賞味期限が切れています。",
+          "reading": "このパンは、しょうみきげんがきれています。",
+          "translation": {
+            "vi": "Chiếc bánh mì này đã hết hạn dùng.",
+            "en": "This bread is past its best-before date."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "添える",
+      "reading": "そえる",
+      "meaning": {
+        "vi": "Thêm vào; ăn kèm",
+        "en": "To garnish; to accompany"
+      },
+      "examples": [
+        {
+          "ja": "ステーキに、野菜を添えることにしました。",
+          "reading": "ステーキに、やさいをそえることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định ăn kèm rau với bít tết.",
+            "en": "I decided to garnish the steak with vegetables."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "盛る",
+      "reading": "もる",
+      "meaning": {
+        "vi": "Xới; bày (thức ăn)",
+        "en": "To dish up"
+      },
+      "examples": [
+        {
+          "ja": "お皿に、料理をきれいに盛ることが大切です。",
+          "reading": "おさらに、りょうりをきれいにもることがたいせつです。",
+          "translation": {
+            "vi": "Bày món ăn đẹp mắt lên đĩa là điều quan trọng.",
+            "en": "It is important to dish the food up attractively."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "炊く",
+      "reading": "たく",
+      "meaning": {
+        "vi": "Nấu (cơm)",
+        "en": "To cook (rice)"
+      },
+      "examples": [
+        {
+          "ja": "毎朝、ご飯を炊くことにしています。",
+          "reading": "まいあさ、ごはんをたくことにしています。",
+          "translation": {
+            "vi": "Mỗi sáng tôi nấu cơm.",
+            "en": "I cook rice every morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "煮込む",
+      "reading": "にこむ",
+      "meaning": {
+        "vi": "Hầm; ninh",
+        "en": "To simmer; to stew"
+      },
+      "examples": [
+        {
+          "ja": "カレーは、時間をかけて煮込むとおいしいです。",
+          "reading": "カレーは、じかんをかけてにこむとおいしいです。",
+          "translation": {
+            "vi": "Cà ri ninh lâu thì sẽ ngon.",
+            "en": "Curry tastes good when simmered for a long time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "贅沢",
+      "reading": "ぜいたく",
+      "meaning": {
+        "vi": "Xa xỉ; sang trọng",
+        "en": "Luxury; extravagance"
+      },
+      "examples": [
+        {
+          "ja": "今日は、ちょっと贅沢な食事をしました。",
+          "reading": "きょうは、ちょっとぜいたくなしょくじをしました。",
+          "translation": {
+            "vi": "Hôm nay tôi đã dùng một bữa ăn hơi xa xỉ.",
+            "en": "Today I had a rather extravagant meal."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "賞味期限",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このパンは、（　）が切れています。 — Nghĩa của câu: “Chiếc bánh mì này đã hết hạn dùng.”",
+        "en": "Choose the word that fits the blank: このパンは、（　）が切れています。 — Meaning of the sentence: “This bread is past its best-before date.”"
+      },
+      "payload": {
+        "choices": [
+          "賞味期限",
+          "贅沢",
+          "添える",
+          "炊く"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賞味期限」(Hạn dùng (ngon nhất)) hợp nghĩa câu này: “Chiếc bánh mì này đã hết hạn dùng.”",
+        "en": "Correct! 「賞味期限」(Best-before date) fits this sentence: “This bread is past its best-before date.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc bánh mì này đã hết hạn dùng.”, nên cần 「賞味期限」(Hạn dùng (ngon nhất)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This bread is past its best-before date.”, so it needs 「賞味期限」(Best-before date); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "添える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ステーキに、野菜を（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định ăn kèm rau với bít tết.”",
+        "en": "Choose the word that fits the blank: ステーキに、野菜を（　）ことにしました。 — Meaning of the sentence: “I decided to garnish the steak with vegetables.”"
+      },
+      "payload": {
+        "choices": [
+          "炊く",
+          "添える",
+          "盛る",
+          "煮込む"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「添える」(Thêm vào; ăn kèm) hợp nghĩa câu này: “Tôi quyết định ăn kèm rau với bít tết.”",
+        "en": "Correct! 「添える」(To garnish; to accompany) fits this sentence: “I decided to garnish the steak with vegetables.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định ăn kèm rau với bít tết.”, nên cần 「添える」(Thêm vào; ăn kèm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to garnish the steak with vegetables.”, so it needs 「添える」(To garnish; to accompany); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "盛る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お皿に、料理をきれいに（　）ことが大切です。 — Nghĩa của câu: “Bày món ăn đẹp mắt lên đĩa là điều quan trọng.”",
+        "en": "Choose the word that fits the blank: お皿に、料理をきれいに（　）ことが大切です。 — Meaning of the sentence: “It is important to dish the food up attractively.”"
+      },
+      "payload": {
+        "choices": [
+          "炊く",
+          "添える",
+          "盛る",
+          "煮込む"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「盛る」(Xới; bày (thức ăn)) hợp nghĩa câu này: “Bày món ăn đẹp mắt lên đĩa là điều quan trọng.”",
+        "en": "Correct! 「盛る」(To dish up) fits this sentence: “It is important to dish the food up attractively.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bày món ăn đẹp mắt lên đĩa là điều quan trọng.”, nên cần 「盛る」(Xới; bày (thức ăn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is important to dish the food up attractively.”, so it needs 「盛る」(To dish up); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "炊く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎朝、ご飯を（　）ことにしています。 — Nghĩa của câu: “Mỗi sáng tôi nấu cơm.”",
+        "en": "Choose the word that fits the blank: 毎朝、ご飯を（　）ことにしています。 — Meaning of the sentence: “I cook rice every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "煮込む",
+          "添える",
+          "盛る",
+          "炊く"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「炊く」(Nấu (cơm)) hợp nghĩa câu này: “Mỗi sáng tôi nấu cơm.”",
+        "en": "Correct! 「炊く」(To cook (rice)) fits this sentence: “I cook rice every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi sáng tôi nấu cơm.”, nên cần 「炊く」(Nấu (cơm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cook rice every morning.”, so it needs 「炊く」(To cook (rice)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "煮込む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: カレーは、時間をかけて（　）とおいしいです。 — Nghĩa của câu: “Cà ri ninh lâu thì sẽ ngon.”",
+        "en": "Choose the word that fits the blank: カレーは、時間をかけて（　）とおいしいです。 — Meaning of the sentence: “Curry tastes good when simmered for a long time.”"
+      },
+      "payload": {
+        "choices": [
+          "煮込む",
+          "炊く",
+          "添える",
+          "盛る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「煮込む」(Hầm; ninh) hợp nghĩa câu này: “Cà ri ninh lâu thì sẽ ngon.”",
+        "en": "Correct! 「煮込む」(To simmer; to stew) fits this sentence: “Curry tastes good when simmered for a long time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cà ri ninh lâu thì sẽ ngon.”, nên cần 「煮込む」(Hầm; ninh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Curry tastes good when simmered for a long time.”, so it needs 「煮込む」(To simmer; to stew); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "贅沢",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は、ちょっと（　）な食事をしました。 — Nghĩa của câu: “Hôm nay tôi đã dùng một bữa ăn hơi xa xỉ.”",
+        "en": "Choose the word that fits the blank: 今日は、ちょっと（　）な食事をしました。 — Meaning of the sentence: “Today I had a rather extravagant meal.”"
+      },
+      "payload": {
+        "choices": [
+          "賞味期限",
+          "贅沢",
+          "添える",
+          "炊く"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「贅沢」(Xa xỉ; sang trọng) hợp nghĩa câu này: “Hôm nay tôi đã dùng một bữa ăn hơi xa xỉ.”",
+        "en": "Correct! 「贅沢」(Luxury; extravagance) fits this sentence: “Today I had a rather extravagant meal.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay tôi đã dùng một bữa ăn hơi xa xỉ.”, nên cần 「贅沢」(Xa xỉ; sang trọng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Today I had a rather extravagant meal.”, so it needs 「贅沢」(Luxury; extravagance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "賞味期限",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: このパンは、「賞味期限」が切れています。",
+        "en": "Choose the correct reading of the word in 「」: このパンは、「賞味期限」が切れています。"
+      },
+      "payload": {
+        "choices": [
+          "にこむ",
+          "しょうみきげん",
+          "そえる",
+          "ぜいたく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賞味期限」 đọc là 「しょうみきげん」, nghĩa là Hạn dùng (ngon nhất).",
+        "en": "Correct! 「賞味期限」 is read 「しょうみきげん」 and means Best-before date."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「賞味期限」 đọc là 「しょうみきげん」 (Hạn dùng (ngon nhất)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「賞味期限」 is read 「しょうみきげん」 (Best-before date); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "炊く",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 毎朝、ご飯を「炊く」ことにしています。",
+        "en": "Choose the correct reading of the word in 「」: 毎朝、ご飯を「炊く」ことにしています。"
+      },
+      "payload": {
+        "choices": [
+          "ぜいたく",
+          "しょうみきげん",
+          "たく",
+          "にこむ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「炊く」 đọc là 「たく」, nghĩa là Nấu (cơm).",
+        "en": "Correct! 「炊く」 is read 「たく」 and means To cook (rice)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「炊く」 đọc là 「たく」 (Nấu (cơm)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「炊く」 is read 「たく」 (To cook (rice)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "盛る",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: お皿に、料理をきれいに「もる」ことが大切です。",
+        "en": "Choose the correct way to write the word in 「」: お皿に、料理をきれいに「もる」ことが大切です。"
+      },
+      "payload": {
+        "choices": [
+          "賞味期限",
+          "添える",
+          "盛る",
+          "煮込む"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「もる」 viết là 「盛る」, nghĩa là Xới; bày (thức ăn).",
+        "en": "Correct! 「もる」 is written 「盛る」 and means To dish up."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「もる」 viết là 「盛る」 (Xới; bày (thức ăn)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「もる」 is written 「盛る」 (To dish up); the other words are read differently."
+      }
+    }
+  ]
+}

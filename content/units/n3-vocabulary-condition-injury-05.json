@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-condition-injury",
+  "title": {
+    "vi": "Hồi phục và di chứng",
+    "en": "Recovery and aftereffects"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2040,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "痩せ細る",
+      "reading": "やせほそる",
+      "meaning": {
+        "vi": "Gầy rộc đi",
+        "en": "To become emaciated"
+      },
+      "examples": [
+        {
+          "ja": "長い病気で、体が痩せ細ることがあります。",
+          "reading": "ながいびょうきで、からだがやせほそることがあります。",
+          "translation": {
+            "vi": "Vì bệnh lâu ngày, cơ thể có thể gầy rộc đi.",
+            "en": "After a long illness, the body can become emaciated."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "震える",
+      "reading": "ふるえる",
+      "meaning": {
+        "vi": "Run; rung",
+        "en": "To tremble"
+      },
+      "examples": [
+        {
+          "ja": "寒くて、体が震えることがあります。",
+          "reading": "さむくて、からだがふるえることがあります。",
+          "translation": {
+            "vi": "Lạnh quá nên người tôi có khi run lên.",
+            "en": "It is so cold that my body sometimes trembles."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "傷つく",
+      "reading": "きずつく",
+      "meaning": {
+        "vi": "Bị tổn thương; bị thương",
+        "en": "To be hurt (feelings); to get wounded"
+      },
+      "examples": [
+        {
+          "ja": "彼の言葉に、心が傷つくことがあります。",
+          "reading": "かれのことばに、こころがきずつくことがあります。",
+          "translation": {
+            "vi": "Lời nói của anh ấy có lúc làm tôi tổn thương.",
+            "en": "His words sometimes hurt my feelings."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "傷める",
+      "reading": "いためる",
+      "meaning": {
+        "vi": "Làm hư hại; làm đau",
+        "en": "To damage; to injure"
+      },
+      "examples": [
+        {
+          "ja": "重いものを持って、腰を傷めることがあります。",
+          "reading": "おもいものをもって、こしをいためることがあります。",
+          "translation": {
+            "vi": "Mang vật nặng có thể làm đau lưng.",
+            "en": "Lifting heavy things can injure your back."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "重体",
+      "reading": "じゅうたい",
+      "meaning": {
+        "vi": "Nguy kịch",
+        "en": "Critical condition"
+      },
+      "examples": [
+        {
+          "ja": "交通事故で、重体になった人がいます。",
+          "reading": "こうつうじこで、じゅうたいになったひとがいます。",
+          "translation": {
+            "vi": "Có người bị nguy kịch vì tai nạn giao thông.",
+            "en": "Someone is in critical condition after a traffic accident."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "後遺症",
+      "reading": "こういしょう",
+      "meaning": {
+        "vi": "Di chứng",
+        "en": "Aftereffects"
+      },
+      "examples": [
+        {
+          "ja": "事故の後遺症で、今も足が痛みます。",
+          "reading": "じこのこういしょうで、いまもあしがいたみます。",
+          "translation": {
+            "vi": "Do di chứng của tai nạn, đến giờ chân tôi vẫn đau.",
+            "en": "Because of aftereffects of the accident, my leg still hurts."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "痩せ細る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 長い病気で、体が（　）ことがあります。 — Nghĩa của câu: “Vì bệnh lâu ngày, cơ thể có thể gầy rộc đi.”",
+        "en": "Choose the word that fits the blank: 長い病気で、体が（　）ことがあります。 — Meaning of the sentence: “After a long illness, the body can become emaciated.”"
+      },
+      "payload": {
+        "choices": [
+          "傷める",
+          "震える",
+          "傷つく",
+          "痩せ細る"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痩せ細る」(Gầy rộc đi) hợp nghĩa câu này: “Vì bệnh lâu ngày, cơ thể có thể gầy rộc đi.”",
+        "en": "Correct! 「痩せ細る」(To become emaciated) fits this sentence: “After a long illness, the body can become emaciated.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bệnh lâu ngày, cơ thể có thể gầy rộc đi.”, nên cần 「痩せ細る」(Gầy rộc đi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After a long illness, the body can become emaciated.”, so it needs 「痩せ細る」(To become emaciated); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "震える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 寒くて、体が（　）ことがあります。 — Nghĩa của câu: “Lạnh quá nên người tôi có khi run lên.”",
+        "en": "Choose the word that fits the blank: 寒くて、体が（　）ことがあります。 — Meaning of the sentence: “It is so cold that my body sometimes trembles.”"
+      },
+      "payload": {
+        "choices": [
+          "震える",
+          "傷つく",
+          "痩せ細る",
+          "傷める"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「震える」(Run; rung) hợp nghĩa câu này: “Lạnh quá nên người tôi có khi run lên.”",
+        "en": "Correct! 「震える」(To tremble) fits this sentence: “It is so cold that my body sometimes trembles.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lạnh quá nên người tôi có khi run lên.”, nên cần 「震える」(Run; rung); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is so cold that my body sometimes trembles.”, so it needs 「震える」(To tremble); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "傷つく",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼の言葉に、心が（　）ことがあります。 — Nghĩa của câu: “Lời nói của anh ấy có lúc làm tôi tổn thương.”",
+        "en": "Choose the word that fits the blank: 彼の言葉に、心が（　）ことがあります。 — Meaning of the sentence: “His words sometimes hurt my feelings.”"
+      },
+      "payload": {
+        "choices": [
+          "傷める",
+          "傷つく",
+          "痩せ細る",
+          "震える"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「傷つく」(Bị tổn thương; bị thương) hợp nghĩa câu này: “Lời nói của anh ấy có lúc làm tôi tổn thương.”",
+        "en": "Correct! 「傷つく」(To be hurt (feelings); to get wounded) fits this sentence: “His words sometimes hurt my feelings.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lời nói của anh ấy có lúc làm tôi tổn thương.”, nên cần 「傷つく」(Bị tổn thương; bị thương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “His words sometimes hurt my feelings.”, so it needs 「傷つく」(To be hurt (feelings); to get wounded); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "傷める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 重いものを持って、腰を（　）ことがあります。 — Nghĩa của câu: “Mang vật nặng có thể làm đau lưng.”",
+        "en": "Choose the word that fits the blank: 重いものを持って、腰を（　）ことがあります。 — Meaning of the sentence: “Lifting heavy things can injure your back.”"
+      },
+      "payload": {
+        "choices": [
+          "傷つく",
+          "痩せ細る",
+          "傷める",
+          "震える"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「傷める」(Làm hư hại; làm đau) hợp nghĩa câu này: “Mang vật nặng có thể làm đau lưng.”",
+        "en": "Correct! 「傷める」(To damage; to injure) fits this sentence: “Lifting heavy things can injure your back.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mang vật nặng có thể làm đau lưng.”, nên cần 「傷める」(Làm hư hại; làm đau); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Lifting heavy things can injure your back.”, so it needs 「傷める」(To damage; to injure); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "重体",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 交通事故で、（　）になった人がいます。 — Nghĩa của câu: “Có người bị nguy kịch vì tai nạn giao thông.”",
+        "en": "Choose the word that fits the blank: 交通事故で、（　）になった人がいます。 — Meaning of the sentence: “Someone is in critical condition after a traffic accident.”"
+      },
+      "payload": {
+        "choices": [
+          "後遺症",
+          "痩せ細る",
+          "傷める",
+          "重体"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「重体」(Nguy kịch) hợp nghĩa câu này: “Có người bị nguy kịch vì tai nạn giao thông.”",
+        "en": "Correct! 「重体」(Critical condition) fits this sentence: “Someone is in critical condition after a traffic accident.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Có người bị nguy kịch vì tai nạn giao thông.”, nên cần 「重体」(Nguy kịch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Someone is in critical condition after a traffic accident.”, so it needs 「重体」(Critical condition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "後遺症",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事故の（　）で、今も足が痛みます。 — Nghĩa của câu: “Do di chứng của tai nạn, đến giờ chân tôi vẫn đau.”",
+        "en": "Choose the word that fits the blank: 事故の（　）で、今も足が痛みます。 — Meaning of the sentence: “Because of aftereffects of the accident, my leg still hurts.”"
+      },
+      "payload": {
+        "choices": [
+          "後遺症",
+          "重体",
+          "痩せ細る",
+          "傷つく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「後遺症」(Di chứng) hợp nghĩa câu này: “Do di chứng của tai nạn, đến giờ chân tôi vẫn đau.”",
+        "en": "Correct! 「後遺症」(Aftereffects) fits this sentence: “Because of aftereffects of the accident, my leg still hurts.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Do di chứng của tai nạn, đến giờ chân tôi vẫn đau.”, nên cần 「後遺症」(Di chứng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Because of aftereffects of the accident, my leg still hurts.”, so it needs 「後遺症」(Aftereffects); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "痩せ細る",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 長い病気で、体が「痩せ細る」ことがあります。",
+        "en": "Choose the correct reading of the word in 「」: 長い病気で、体が「痩せ細る」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "やせほそる",
+          "きずつく",
+          "ふるえる",
+          "じゅうたい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痩せ細る」 đọc là 「やせほそる」, nghĩa là Gầy rộc đi.",
+        "en": "Correct! 「痩せ細る」 is read 「やせほそる」 and means To become emaciated."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「痩せ細る」 đọc là 「やせほそる」 (Gầy rộc đi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「痩せ細る」 is read 「やせほそる」 (To become emaciated); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "傷める",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 重いものを持って、腰を「傷める」ことがあります。",
+        "en": "Choose the correct reading of the word in 「」: 重いものを持って、腰を「傷める」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "ふるえる",
+          "いためる",
+          "やせほそる",
+          "じゅうたい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「傷める」 đọc là 「いためる」, nghĩa là Làm hư hại; làm đau.",
+        "en": "Correct! 「傷める」 is read 「いためる」 and means To damage; to injure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「傷める」 đọc là 「いためる」 (Làm hư hại; làm đau); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「傷める」 is read 「いためる」 (To damage; to injure); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "傷つく",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 彼の言葉に、心が「きずつく」ことがあります。",
+        "en": "Choose the correct way to write the word in 「」: 彼の言葉に、心が「きずつく」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "傷める",
+          "傷つく",
+          "痩せ細る",
+          "重体"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きずつく」 viết là 「傷つく」, nghĩa là Bị tổn thương; bị thương.",
+        "en": "Correct! 「きずつく」 is written 「傷つく」 and means To be hurt (feelings); to get wounded."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きずつく」 viết là 「傷つく」 (Bị tổn thương; bị thương); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きずつく」 is written 「傷つく」 (To be hurt (feelings); to get wounded); the other words are read differently."
+      }
+    }
+  ]
+}

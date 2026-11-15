@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-health-medical",
+  "title": {
+    "vi": "Triệu chứng và bệnh truyền nhiễm",
+    "en": "Symptoms and infectious disease"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "症状",
+      "reading": "しょうじょう",
+      "meaning": {
+        "vi": "Triệu chứng",
+        "en": "Symptom"
+      },
+      "examples": [
+        {
+          "ja": "風邪の症状が、だんだんひどくなりました。",
+          "reading": "かぜのしょうじょうが、だんだんひどくなりました。",
+          "translation": {
+            "vi": "Triệu chứng cảm ngày càng nặng hơn.",
+            "en": "The cold symptoms gradually got worse."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "病状",
+      "reading": "びょうじょう",
+      "meaning": {
+        "vi": "Tình trạng bệnh",
+        "en": "Medical condition"
+      },
+      "examples": [
+        {
+          "ja": "祖父の病状は、少しずつ安定してきました。",
+          "reading": "そふのびょうじょうは、すこしずつあんていしてきました。",
+          "translation": {
+            "vi": "Tình trạng bệnh của ông đang dần ổn định.",
+            "en": "My grandfather's condition has gradually stabilized."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "伝染",
+      "reading": "でんせん",
+      "meaning": {
+        "vi": "Lây (truyền nhiễm)",
+        "en": "Contagion"
+      },
+      "examples": [
+        {
+          "ja": "この病気は、人から人へ伝染します。",
+          "reading": "このびょうきは、ひとからひとへでんせんします。",
+          "translation": {
+            "vi": "Bệnh này lây từ người sang người.",
+            "en": "This disease spreads from person to person."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "感染",
+      "reading": "かんせん",
+      "meaning": {
+        "vi": "Nhiễm (bệnh)",
+        "en": "Infection"
+      },
+      "examples": [
+        {
+          "ja": "手を洗って、感染を防ぎましょう。",
+          "reading": "てをあらって、かんせんをふせぎましょう。",
+          "translation": {
+            "vi": "Hãy rửa tay để phòng nhiễm bệnh.",
+            "en": "Let's wash our hands to prevent infection."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ワクチン",
+      "reading": "ワクチン",
+      "meaning": {
+        "vi": "Vắc-xin",
+        "en": "Vaccine"
+      },
+      "examples": [
+        {
+          "ja": "冬になる前に、ワクチンを受けておきます。",
+          "reading": "ふゆになるまえに、ワクチンをうけておきます。",
+          "translation": {
+            "vi": "Trước mùa đông tôi sẽ tiêm vắc-xin.",
+            "en": "Before winter I will get the vaccine."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "免疫",
+      "reading": "めんえき",
+      "meaning": {
+        "vi": "Miễn dịch",
+        "en": "Immunity"
+      },
+      "examples": [
+        {
+          "ja": "睡眠不足だと、免疫が弱くなります。",
+          "reading": "すいみんぶそくだと、めんえきがよわくなります。",
+          "translation": {
+            "vi": "Thiếu ngủ thì khả năng miễn dịch yếu đi.",
+            "en": "Lack of sleep weakens immunity."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "副作用",
+      "reading": "ふくさよう",
+      "meaning": {
+        "vi": "Tác dụng phụ",
+        "en": "Side effect"
+      },
+      "examples": [
+        {
+          "ja": "この薬には、眠くなる副作用があります。",
+          "reading": "このくすりには、ねむくなるふくさようがあります。",
+          "translation": {
+            "vi": "Thuốc này có tác dụng phụ là gây buồn ngủ.",
+            "en": "This medicine has the side effect of making you sleepy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悪化",
+      "reading": "あっか",
+      "meaning": {
+        "vi": "Xấu đi; trở nặng",
+        "en": "Worsening"
+      },
+      "examples": [
+        {
+          "ja": "無理をしたので、病気が悪化しました。",
+          "reading": "むりをしたので、びょうきがあっかしました。",
+          "translation": {
+            "vi": "Vì cố quá sức nên bệnh đã trở nặng.",
+            "en": "I pushed myself too hard and the illness got worse."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "完治",
+      "reading": "かんち",
+      "meaning": {
+        "vi": "Khỏi hẳn",
+        "en": "Complete recovery"
+      },
+      "examples": [
+        {
+          "ja": "けがが完治するまで、三か月かかりました。",
+          "reading": "けががかんちするまで、さんかげつかかりました。",
+          "translation": {
+            "vi": "Phải mất ba tháng vết thương mới khỏi hẳn.",
+            "en": "It took three months for the injury to heal completely."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "末期",
+      "reading": "まっき",
+      "meaning": {
+        "vi": "Giai đoạn cuối",
+        "en": "Terminal stage"
+      },
+      "examples": [
+        {
+          "ja": "病気が末期だと、医者に言われました。",
+          "reading": "びょうきがまっきだと、いしゃにいわれました。",
+          "translation": {
+            "vi": "Bác sĩ nói bệnh đã ở giai đoạn cuối.",
+            "en": "The doctor said the illness was at a terminal stage."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "慢性",
+      "reading": "まんせい",
+      "meaning": {
+        "vi": "Mạn tính",
+        "en": "Chronic"
+      },
+      "examples": [
+        {
+          "ja": "彼は、慢性の病気で薬を飲んでいます。",
+          "reading": "かれは、まんせいのびょうきでくすりをのんでいます。",
+          "translation": {
+            "vi": "Anh ấy bị bệnh mạn tính và đang uống thuốc.",
+            "en": "He takes medicine for a chronic illness."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "急性",
+      "reading": "きゅうせい",
+      "meaning": {
+        "vi": "Cấp tính",
+        "en": "Acute"
+      },
+      "examples": [
+        {
+          "ja": "急性の病気は、すぐに病院へ行くべきです。",
+          "reading": "きゅうせいのびょうきは、すぐにびょういんへいくべきです。",
+          "translation": {
+            "vi": "Với bệnh cấp tính, nên đến bệnh viện ngay.",
+            "en": "For acute illnesses, one should go to the hospital right away."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "症状",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 風邪の（　）が、だんだんひどくなりました。 — Nghĩa của câu: “Triệu chứng cảm ngày càng nặng hơn.”",
+        "en": "Choose the word that fits the blank: 風邪の（　）が、だんだんひどくなりました。 — Meaning of the sentence: “The cold symptoms gradually got worse.”"
+      },
+      "payload": {
+        "choices": [
+          "感染",
+          "症状",
+          "完治",
+          "伝染"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「症状」(Triệu chứng) hợp nghĩa câu này: “Triệu chứng cảm ngày càng nặng hơn.”",
+        "en": "Correct! 「症状」(Symptom) fits this sentence: “The cold symptoms gradually got worse.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Triệu chứng cảm ngày càng nặng hơn.”, nên cần 「症状」(Triệu chứng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The cold symptoms gradually got worse.”, so it needs 「症状」(Symptom); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "病状",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖父の（　）は、少しずつ安定してきました。 — Nghĩa của câu: “Tình trạng bệnh của ông đang dần ổn định.”",
+        "en": "Choose the word that fits the blank: 祖父の（　）は、少しずつ安定してきました。 — Meaning of the sentence: “My grandfather's condition has gradually stabilized.”"
+      },
+      "payload": {
+        "choices": [
+          "副作用",
+          "急性",
+          "病状",
+          "症状"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「病状」(Tình trạng bệnh) hợp nghĩa câu này: “Tình trạng bệnh của ông đang dần ổn định.”",
+        "en": "Correct! 「病状」(Medical condition) fits this sentence: “My grandfather's condition has gradually stabilized.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tình trạng bệnh của ông đang dần ổn định.”, nên cần 「病状」(Tình trạng bệnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandfather's condition has gradually stabilized.”, so it needs 「病状」(Medical condition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "伝染",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この病気は、人から人へ（　）します。 — Nghĩa của câu: “Bệnh này lây từ người sang người.”",
+        "en": "Choose the word that fits the blank: この病気は、人から人へ（　）します。 — Meaning of the sentence: “This disease spreads from person to person.”"
+      },
+      "payload": {
+        "choices": [
+          "慢性",
+          "病状",
+          "症状",
+          "伝染"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「伝染」(Lây (truyền nhiễm)) hợp nghĩa câu này: “Bệnh này lây từ người sang người.”",
+        "en": "Correct! 「伝染」(Contagion) fits this sentence: “This disease spreads from person to person.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bệnh này lây từ người sang người.”, nên cần 「伝染」(Lây (truyền nhiễm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This disease spreads from person to person.”, so it needs 「伝染」(Contagion); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "感染",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 手を洗って、（　）を防ぎましょう。 — Nghĩa của câu: “Hãy rửa tay để phòng nhiễm bệnh.”",
+        "en": "Choose the word that fits the blank: 手を洗って、（　）を防ぎましょう。 — Meaning of the sentence: “Let's wash our hands to prevent infection.”"
+      },
+      "payload": {
+        "choices": [
+          "感染",
+          "症状",
+          "病状",
+          "伝染"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感染」(Nhiễm (bệnh)) hợp nghĩa câu này: “Hãy rửa tay để phòng nhiễm bệnh.”",
+        "en": "Correct! 「感染」(Infection) fits this sentence: “Let's wash our hands to prevent infection.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy rửa tay để phòng nhiễm bệnh.”, nên cần 「感染」(Nhiễm (bệnh)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's wash our hands to prevent infection.”, so it needs 「感染」(Infection); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ワクチン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 冬になる前に、（　）を受けておきます。 — Nghĩa của câu: “Trước mùa đông tôi sẽ tiêm vắc-xin.”",
+        "en": "Choose the word that fits the blank: 冬になる前に、（　）を受けておきます。 — Meaning of the sentence: “Before winter I will get the vaccine.”"
+      },
+      "payload": {
+        "choices": [
+          "慢性",
+          "ワクチン",
+          "末期",
+          "症状"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ワクチン」(Vắc-xin) hợp nghĩa câu này: “Trước mùa đông tôi sẽ tiêm vắc-xin.”",
+        "en": "Correct! 「ワクチン」(Vaccine) fits this sentence: “Before winter I will get the vaccine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước mùa đông tôi sẽ tiêm vắc-xin.”, nên cần 「ワクチン」(Vắc-xin); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before winter I will get the vaccine.”, so it needs 「ワクチン」(Vaccine); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "免疫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 睡眠不足だと、（　）が弱くなります。 — Nghĩa của câu: “Thiếu ngủ thì khả năng miễn dịch yếu đi.”",
+        "en": "Choose the word that fits the blank: 睡眠不足だと、（　）が弱くなります。 — Meaning of the sentence: “Lack of sleep weakens immunity.”"
+      },
+      "payload": {
+        "choices": [
+          "伝染",
+          "完治",
+          "免疫",
+          "症状"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「免疫」(Miễn dịch) hợp nghĩa câu này: “Thiếu ngủ thì khả năng miễn dịch yếu đi.”",
+        "en": "Correct! 「免疫」(Immunity) fits this sentence: “Lack of sleep weakens immunity.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thiếu ngủ thì khả năng miễn dịch yếu đi.”, nên cần 「免疫」(Miễn dịch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Lack of sleep weakens immunity.”, so it needs 「免疫」(Immunity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "副作用",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この薬には、眠くなる（　）があります。 — Nghĩa của câu: “Thuốc này có tác dụng phụ là gây buồn ngủ.”",
+        "en": "Choose the word that fits the blank: この薬には、眠くなる（　）があります。 — Meaning of the sentence: “This medicine has the side effect of making you sleepy.”"
+      },
+      "payload": {
+        "choices": [
+          "完治",
+          "伝染",
+          "症状",
+          "副作用"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「副作用」(Tác dụng phụ) hợp nghĩa câu này: “Thuốc này có tác dụng phụ là gây buồn ngủ.”",
+        "en": "Correct! 「副作用」(Side effect) fits this sentence: “This medicine has the side effect of making you sleepy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thuốc này có tác dụng phụ là gây buồn ngủ.”, nên cần 「副作用」(Tác dụng phụ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This medicine has the side effect of making you sleepy.”, so it needs 「副作用」(Side effect); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "悪化",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 無理をしたので、病気が（　）しました。 — Nghĩa của câu: “Vì cố quá sức nên bệnh đã trở nặng.”",
+        "en": "Choose the word that fits the blank: 無理をしたので、病気が（　）しました。 — Meaning of the sentence: “I pushed myself too hard and the illness got worse.”"
+      },
+      "payload": {
+        "choices": [
+          "悪化",
+          "慢性",
+          "病状",
+          "症状"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「悪化」(Xấu đi; trở nặng) hợp nghĩa câu này: “Vì cố quá sức nên bệnh đã trở nặng.”",
+        "en": "Correct! 「悪化」(Worsening) fits this sentence: “I pushed myself too hard and the illness got worse.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì cố quá sức nên bệnh đã trở nặng.”, nên cần 「悪化」(Xấu đi; trở nặng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I pushed myself too hard and the illness got worse.”, so it needs 「悪化」(Worsening); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "完治",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: けがが（　）するまで、三か月かかりました。 — Nghĩa của câu: “Phải mất ba tháng vết thương mới khỏi hẳn.”",
+        "en": "Choose the word that fits the blank: けがが（　）するまで、三か月かかりました。 — Meaning of the sentence: “It took three months for the injury to heal completely.”"
+      },
+      "payload": {
+        "choices": [
+          "伝染",
+          "完治",
+          "慢性",
+          "症状"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「完治」(Khỏi hẳn) hợp nghĩa câu này: “Phải mất ba tháng vết thương mới khỏi hẳn.”",
+        "en": "Correct! 「完治」(Complete recovery) fits this sentence: “It took three months for the injury to heal completely.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Phải mất ba tháng vết thương mới khỏi hẳn.”, nên cần 「完治」(Khỏi hẳn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It took three months for the injury to heal completely.”, so it needs 「完治」(Complete recovery); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "末期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 病気が（　）だと、医者に言われました。 — Nghĩa của câu: “Bác sĩ nói bệnh đã ở giai đoạn cuối.”",
+        "en": "Choose the word that fits the blank: 病気が（　）だと、医者に言われました。 — Meaning of the sentence: “The doctor said the illness was at a terminal stage.”"
+      },
+      "payload": {
+        "choices": [
+          "免疫",
+          "慢性",
+          "末期",
+          "症状"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「末期」(Giai đoạn cuối) hợp nghĩa câu này: “Bác sĩ nói bệnh đã ở giai đoạn cuối.”",
+        "en": "Correct! 「末期」(Terminal stage) fits this sentence: “The doctor said the illness was at a terminal stage.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bác sĩ nói bệnh đã ở giai đoạn cuối.”, nên cần 「末期」(Giai đoạn cuối); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The doctor said the illness was at a terminal stage.”, so it needs 「末期」(Terminal stage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "慢性",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）の病気で薬を飲んでいます。 — Nghĩa của câu: “Anh ấy bị bệnh mạn tính và đang uống thuốc.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）の病気で薬を飲んでいます。 — Meaning of the sentence: “He takes medicine for a chronic illness.”"
+      },
+      "payload": {
+        "choices": [
+          "免疫",
+          "急性",
+          "症状",
+          "慢性"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「慢性」(Mạn tính) hợp nghĩa câu này: “Anh ấy bị bệnh mạn tính và đang uống thuốc.”",
+        "en": "Correct! 「慢性」(Chronic) fits this sentence: “He takes medicine for a chronic illness.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy bị bệnh mạn tính và đang uống thuốc.”, nên cần 「慢性」(Mạn tính); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He takes medicine for a chronic illness.”, so it needs 「慢性」(Chronic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "急性",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の病気は、すぐに病院へ行くべきです。 — Nghĩa của câu: “Với bệnh cấp tính, nên đến bệnh viện ngay.”",
+        "en": "Choose the word that fits the blank: （　）の病気は、すぐに病院へ行くべきです。 — Meaning of the sentence: “For acute illnesses, one should go to the hospital right away.”"
+      },
+      "payload": {
+        "choices": [
+          "急性",
+          "悪化",
+          "伝染",
+          "症状"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「急性」(Cấp tính) hợp nghĩa câu này: “Với bệnh cấp tính, nên đến bệnh viện ngay.”",
+        "en": "Correct! 「急性」(Acute) fits this sentence: “For acute illnesses, one should go to the hospital right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Với bệnh cấp tính, nên đến bệnh viện ngay.”, nên cần 「急性」(Cấp tính); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For acute illnesses, one should go to the hospital right away.”, so it needs 「急性」(Acute); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "症状",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 風邪の「症状」が、だんだんひどくなりました。",
+        "en": "Choose the correct reading of the word in 「」: 風邪の「症状」が、だんだんひどくなりました。"
+      },
+      "payload": {
+        "choices": [
+          "ワクチン",
+          "まんせい",
+          "しょうじょう",
+          "あっか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「症状」 đọc là 「しょうじょう」, nghĩa là Triệu chứng.",
+        "en": "Correct! 「症状」 is read 「しょうじょう」 and means Symptom."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「症状」 đọc là 「しょうじょう」 (Triệu chứng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「症状」 is read 「しょうじょう」 (Symptom); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "伝染",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この病気は、人から人へ「伝染」します。",
+        "en": "Choose the correct reading of the word in 「」: この病気は、人から人へ「伝染」します。"
+      },
+      "payload": {
+        "choices": [
+          "あっか",
+          "かんち",
+          "めんえき",
+          "でんせん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「伝染」 đọc là 「でんせん」, nghĩa là Lây (truyền nhiễm).",
+        "en": "Correct! 「伝染」 is read 「でんせん」 and means Contagion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「伝染」 đọc là 「でんせん」 (Lây (truyền nhiễm)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「伝染」 is read 「でんせん」 (Contagion); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "副作用",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この薬には、眠くなる「副作用」があります。",
+        "en": "Choose the correct reading of the word in 「」: この薬には、眠くなる「副作用」があります。"
+      },
+      "payload": {
+        "choices": [
+          "ふくさよう",
+          "かんせん",
+          "かんち",
+          "まっき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「副作用」 đọc là 「ふくさよう」, nghĩa là Tác dụng phụ.",
+        "en": "Correct! 「副作用」 is read 「ふくさよう」 and means Side effect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「副作用」 đọc là 「ふくさよう」 (Tác dụng phụ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「副作用」 is read 「ふくさよう」 (Side effect); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "末期",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 病気が「末期」だと、医者に言われました。",
+        "en": "Choose the correct reading of the word in 「」: 病気が「末期」だと、医者に言われました。"
+      },
+      "payload": {
+        "choices": [
+          "ふくさよう",
+          "まっき",
+          "しょうじょう",
+          "まんせい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「末期」 đọc là 「まっき」, nghĩa là Giai đoạn cuối.",
+        "en": "Correct! 「末期」 is read 「まっき」 and means Terminal stage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「末期」 đọc là 「まっき」 (Giai đoạn cuối); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「末期」 is read 「まっき」 (Terminal stage); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "感染",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 手を洗って、「かんせん」を防ぎましょう。",
+        "en": "Choose the correct way to write the word in 「」: 手を洗って、「かんせん」を防ぎましょう。"
+      },
+      "payload": {
+        "choices": [
+          "完治",
+          "慢性",
+          "症状",
+          "感染"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんせん」 viết là 「感染」, nghĩa là Nhiễm (bệnh).",
+        "en": "Correct! 「かんせん」 is written 「感染」 and means Infection."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんせん」 viết là 「感染」 (Nhiễm (bệnh)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんせん」 is written 「感染」 (Infection); the other words are read differently."
+      }
+    },
+    {
+      "item": "完治",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: けがが「かんち」するまで、三か月かかりました。",
+        "en": "Choose the correct way to write the word in 「」: けがが「かんち」するまで、三か月かかりました。"
+      },
+      "payload": {
+        "choices": [
+          "完治",
+          "症状",
+          "副作用",
+          "病状"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんち」 viết là 「完治」, nghĩa là Khỏi hẳn.",
+        "en": "Correct! 「かんち」 is written 「完治」 and means Complete recovery."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんち」 viết là 「完治」 (Khỏi hẳn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんち」 is written 「完治」 (Complete recovery); the other words are read differently."
+      }
+    }
+  ]
+}

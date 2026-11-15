@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-communication",
+  "title": {
+    "vi": "Kanji giao tiếp – diễn đạt (印 略 応 達)",
+    "en": "Communication and expression kanji (印 略 応 達)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2640,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "印",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "dấu; in",
+        "en": "stamp; print"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イン"
+        ],
+        "kunReadings": [
+          "しるし",
+          "しる.す"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "印象",
+          "reading": "いんしょう",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "ấn tượng",
+            "en": "impression"
+          }
+        },
+        {
+          "ja": "印",
+          "reading": "しるし",
+          "kanjiReading": "しるし",
+          "translation": {
+            "vi": "dấu hiệu",
+            "en": "sign"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "略",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "lược; tóm tắt",
+        "en": "omit; abbreviate"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リャク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "省略",
+          "reading": "しょうりゃく",
+          "kanjiReading": "リャク",
+          "translation": {
+            "vi": "lược bỏ",
+            "en": "omission"
+          }
+        },
+        {
+          "ja": "略す",
+          "reading": "りゃくす",
+          "kanjiReading": "リャク",
+          "translation": {
+            "vi": "viết tắt; lược",
+            "en": "to abbreviate"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "応",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "đáp ứng; ứng",
+        "en": "respond; answer"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "オウ"
+        ],
+        "kunReadings": [
+          "こた.える"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "応援",
+          "reading": "おうえん",
+          "kanjiReading": "オウ",
+          "translation": {
+            "vi": "cổ vũ; ủng hộ",
+            "en": "support"
+          }
+        },
+        {
+          "ja": "応える",
+          "reading": "こたえる",
+          "kanjiReading": "こた",
+          "translation": {
+            "vi": "đáp lại",
+            "en": "to respond"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "達",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "đạt; đến; (số nhiều)",
+        "en": "reach; plural suffix"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タツ"
+        ],
+        "kunReadings": [
+          "たち"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "配達",
+          "reading": "はいたつ",
+          "kanjiReading": "タツ",
+          "translation": {
+            "vi": "giao hàng",
+            "en": "delivery"
+          }
+        },
+        {
+          "ja": "私達",
+          "reading": "わたしたち",
+          "kanjiReading": "たち",
+          "translation": {
+            "vi": "chúng tôi",
+            "en": "we"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "印",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「印」nghĩa là gì?",
+        "en": "What does 「印」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dấu; in",
+            "en": "stamp; print"
+          },
+          {
+            "vi": "lược; tóm tắt",
+            "en": "omit; abbreviate"
+          },
+          {
+            "vi": "đáp ứng; ứng",
+            "en": "respond; answer"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 印 nghĩa là dấu; in.",
+        "en": "Correct! 印 means stamp; print."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 印 nghĩa là dấu; in, như trong 「印象」 (ấn tượng).",
+        "en": "Not quite. 印 means stamp; print, as in 「印象」 (impression)."
+      }
+    },
+    {
+      "item": "印",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「印」 trong 「印象」 (“ấn tượng”).",
+        "en": "Type the reading of 「印」 in 「印象」 (“impression”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いん",
+          "イン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 印象, 印 đọc là いん (âm On).",
+        "en": "Correct! In 印象, 印 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 印象 (ấn tượng), 印 đọc là いん (âm On).",
+        "en": "In 印象 (impression), 印 is read いん (on'yomi)."
+      }
+    },
+    {
+      "item": "印",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「印」(dấu hiệu; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「印」 (sign; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "いん",
+          "しるし",
+          "りゃくす"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 印 = しるし (dấu hiệu); 印 đọc là しるし (âm Kun).",
+        "en": "Correct! 印 = しるし (sign); 印 is read しるし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "印 đọc là しるし (dấu hiệu): 印 mang âm Kun しるし.",
+        "en": "印 is read しるし (sign): 印 takes the kun'yomi しるし."
+      }
+    },
+    {
+      "item": "略",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「略」nghĩa là gì?",
+        "en": "What does 「略」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đáp ứng; ứng",
+            "en": "respond; answer"
+          },
+          {
+            "vi": "lược; tóm tắt",
+            "en": "omit; abbreviate"
+          },
+          {
+            "vi": "đạt; đến; (số nhiều)",
+            "en": "reach; plural suffix"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 略 nghĩa là lược; tóm tắt.",
+        "en": "Correct! 略 means omit; abbreviate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 略 nghĩa là lược; tóm tắt, như trong 「省略」 (lược bỏ).",
+        "en": "Not quite. 略 means omit; abbreviate, as in 「省略」 (omission)."
+      }
+    },
+    {
+      "item": "略",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「略」 trong 「省略」 (“lược bỏ”).",
+        "en": "Type the reading of 「略」 in 「省略」 (“omission”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りゃく",
+          "リャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 省略, 略 đọc là りゃく (âm On).",
+        "en": "Correct! In 省略, 略 is read りゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 省略 (lược bỏ), 略 đọc là りゃく (âm On).",
+        "en": "In 省略 (omission), 略 is read りゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "略",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「略す」(viết tắt; lược) đọc là gì?",
+        "en": "How is 「略す」 (to abbreviate) read?"
+      },
+      "payload": {
+        "choices": [
+          "おうえん",
+          "こたえる",
+          "りゃくす"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 略す = りゃくす (viết tắt; lược); 略 đọc là りゃく (âm On).",
+        "en": "Correct! 略す = りゃくす (to abbreviate); 略 is read りゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "略す đọc là りゃくす (viết tắt; lược): 略 mang âm On りゃく.",
+        "en": "略す is read りゃくす (to abbreviate): 略 takes the on'yomi りゃく."
+      }
+    },
+    {
+      "item": "応",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「応」nghĩa là gì?",
+        "en": "What does 「応」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đạt; đến; (số nhiều)",
+            "en": "reach; plural suffix"
+          },
+          {
+            "vi": "dấu; in",
+            "en": "stamp; print"
+          },
+          {
+            "vi": "đáp ứng; ứng",
+            "en": "respond; answer"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 応 nghĩa là đáp ứng; ứng.",
+        "en": "Correct! 応 means respond; answer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 応 nghĩa là đáp ứng; ứng, như trong 「応援」 (cổ vũ; ủng hộ).",
+        "en": "Not quite. 応 means respond; answer, as in 「応援」 (support)."
+      }
+    },
+    {
+      "item": "応",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「応」 trong 「応援」 (“cổ vũ; ủng hộ”).",
+        "en": "Type the reading of 「応」 in 「応援」 (“support”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "おう",
+          "オウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 応援, 応 đọc là おう (âm On).",
+        "en": "Correct! In 応援, 応 is read おう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 応援 (cổ vũ; ủng hộ), 応 đọc là おう (âm On).",
+        "en": "In 応援 (support), 応 is read おう (on'yomi)."
+      }
+    },
+    {
+      "item": "応",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「応える」(đáp lại) đọc là gì?",
+        "en": "How is 「応える」 (to respond) read?"
+      },
+      "payload": {
+        "choices": [
+          "こたえる",
+          "おうえる",
+          "はいたつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 応える = こたえる (đáp lại); 応 đọc là こた (âm Kun).",
+        "en": "Correct! 応える = こたえる (to respond); 応 is read こた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "応える đọc là こたえる (đáp lại): 応 mang âm Kun こた.",
+        "en": "応える is read こたえる (to respond): 応 takes the kun'yomi こた."
+      }
+    },
+    {
+      "item": "達",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「達」nghĩa là gì?",
+        "en": "What does 「達」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đạt; đến; (số nhiều)",
+            "en": "reach; plural suffix"
+          },
+          {
+            "vi": "dấu; in",
+            "en": "stamp; print"
+          },
+          {
+            "vi": "lược; tóm tắt",
+            "en": "omit; abbreviate"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 達 nghĩa là đạt; đến; (số nhiều).",
+        "en": "Correct! 達 means reach; plural suffix."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 達 nghĩa là đạt; đến; (số nhiều), như trong 「配達」 (giao hàng).",
+        "en": "Not quite. 達 means reach; plural suffix, as in 「配達」 (delivery)."
+      }
+    },
+    {
+      "item": "達",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「達」 trong 「配達」 (“giao hàng”).",
+        "en": "Type the reading of 「達」 in 「配達」 (“delivery”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たつ",
+          "タツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 配達, 達 đọc là たつ (âm On).",
+        "en": "Correct! In 配達, 達 is read たつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 配達 (giao hàng), 達 đọc là たつ (âm On).",
+        "en": "In 配達 (delivery), 達 is read たつ (on'yomi)."
+      }
+    },
+    {
+      "item": "達",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「私達」(chúng tôi) đọc là gì?",
+        "en": "How is 「私達」 (we) read?"
+      },
+      "payload": {
+        "choices": [
+          "わたしたつ",
+          "わたしたち",
+          "わたしだち"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 私達 = わたしたち (chúng tôi); 達 đọc là たち (âm Kun).",
+        "en": "Correct! 私達 = わたしたち (we); 達 is read たち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "私達 đọc là わたしたち (chúng tôi): 達 mang âm Kun たち.",
+        "en": "私達 is read わたしたち (we): 達 takes the kun'yomi たち."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "印",
+            {
+              "vi": "dấu; in",
+              "en": "stamp; print"
+            }
+          ],
+          [
+            "略",
+            {
+              "vi": "lược; tóm tắt",
+              "en": "omit; abbreviate"
+            }
+          ],
+          [
+            "応",
+            {
+              "vi": "đáp ứng; ứng",
+              "en": "respond; answer"
+            }
+          ],
+          [
+            "達",
+            {
+              "vi": "đạt; đến; (số nhiều)",
+              "en": "reach; plural suffix"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

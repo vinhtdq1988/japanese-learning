@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-daily-verbs",
+  "title": {
+    "vi": "Động từ: thay đổi, sửa chữa và quay lại",
+    "en": "Verbs: changing, fixing and returning"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1440,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "変える",
+      "reading": "かえる",
+      "meaning": {
+        "vi": "Thay đổi; đổi (tha động từ)",
+        "en": "To change; to alter (transitive)"
+      },
+      "examples": [
+        {
+          "ja": "部屋の色を変えるために、新しいカーテンを買いました。",
+          "reading": "へやのいろをかえるために、あたらしいカーテンをかいました。",
+          "translation": {
+            "vi": "Tôi đã mua rèm cửa mới để đổi màu căn phòng.",
+            "en": "I bought new curtains in order to change the color of the room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "直す",
+      "reading": "なおす",
+      "meaning": {
+        "vi": "Sửa; chữa (tha động từ)",
+        "en": "To repair; to correct (transitive)"
+      },
+      "examples": [
+        {
+          "ja": "壊れた時計を直すのに、三日かかりました。",
+          "reading": "こわれたとけいをなおすのに、みっかかかりました。",
+          "translation": {
+            "vi": "Tôi mất ba ngày để sửa chiếc đồng hồ bị hỏng.",
+            "en": "It took three days to repair the broken watch."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "直る",
+      "reading": "なおる",
+      "meaning": {
+        "vi": "Được sửa xong; khỏi (tự động từ)",
+        "en": "To be fixed; to get better (intransitive)"
+      },
+      "examples": [
+        {
+          "ja": "修理すれば、この機械が直ると言われました。",
+          "reading": "しゅうりすれば、このきかいがなおるといわれました。",
+          "translation": {
+            "vi": "Người ta bảo nếu sửa thì cái máy này sẽ chạy lại được.",
+            "en": "I was told this machine will work again if I have it repaired."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "間違える",
+      "reading": "まちがえる",
+      "meaning": {
+        "vi": "Làm sai; nhầm",
+        "en": "To make a mistake; to get wrong"
+      },
+      "examples": [
+        {
+          "ja": "道を間違えるといけないので、地図を持って行きます。",
+          "reading": "みちをまちがえるといけないので、ちずをもっていきます。",
+          "translation": {
+            "vi": "Vì nếu đi nhầm đường thì không ổn nên tôi mang theo bản đồ.",
+            "en": "I will take a map with me in case I go the wrong way."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "戻る",
+      "reading": "もどる",
+      "meaning": {
+        "vi": "Quay lại; trở về",
+        "en": "To return; to go back"
+      },
+      "examples": [
+        {
+          "ja": "忘れ物をしたので、家に戻るつもりです。",
+          "reading": "わすれものをしたので、いえにもどるつもりです。",
+          "translation": {
+            "vi": "Vì quên đồ nên tôi định quay về nhà.",
+            "en": "I left something behind, so I intend to go back home."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "温める",
+      "reading": "あたためる",
+      "meaning": {
+        "vi": "Hâm nóng; làm ấm",
+        "en": "To warm up; to heat"
+      },
+      "examples": [
+        {
+          "ja": "冷めたスープを温めるには、電子レンジが便利です。",
+          "reading": "さめたスープをあたためるには、でんしレンジがべんりです。",
+          "translation": {
+            "vi": "Để hâm nóng món súp đã nguội thì lò vi sóng rất tiện.",
+            "en": "A microwave is handy for warming up cold soup."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "変える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋の色を（　）ために、新しいカーテンを買いました。 — Nghĩa của câu: “Tôi đã mua rèm cửa mới để đổi màu căn phòng.”",
+        "en": "Choose the word that fits the blank: 部屋の色を（　）ために、新しいカーテンを買いました。 — Meaning of the sentence: “I bought new curtains in order to change the color of the room.”"
+      },
+      "payload": {
+        "choices": [
+          "戻る",
+          "温める",
+          "間違える",
+          "変える"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「変える」(Thay đổi; đổi (tha động từ)) hợp nghĩa câu này: “Tôi đã mua rèm cửa mới để đổi màu căn phòng.”",
+        "en": "Correct! 「変える」(To change; to alter (transitive)) fits this sentence: “I bought new curtains in order to change the color of the room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã mua rèm cửa mới để đổi màu căn phòng.”, nên cần 「変える」(Thay đổi; đổi (tha động từ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I bought new curtains in order to change the color of the room.”, so it needs 「変える」(To change; to alter (transitive)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "直す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 壊れた時計を（　）のに、三日かかりました。 — Nghĩa của câu: “Tôi mất ba ngày để sửa chiếc đồng hồ bị hỏng.”",
+        "en": "Choose the word that fits the blank: 壊れた時計を（　）のに、三日かかりました。 — Meaning of the sentence: “It took three days to repair the broken watch.”"
+      },
+      "payload": {
+        "choices": [
+          "直す",
+          "戻る",
+          "温める",
+          "変える"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「直す」(Sửa; chữa (tha động từ)) hợp nghĩa câu này: “Tôi mất ba ngày để sửa chiếc đồng hồ bị hỏng.”",
+        "en": "Correct! 「直す」(To repair; to correct (transitive)) fits this sentence: “It took three days to repair the broken watch.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi mất ba ngày để sửa chiếc đồng hồ bị hỏng.”, nên cần 「直す」(Sửa; chữa (tha động từ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It took three days to repair the broken watch.”, so it needs 「直す」(To repair; to correct (transitive)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "直る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 修理すれば、この機械が（　）と言われました。 — Nghĩa của câu: “Người ta bảo nếu sửa thì cái máy này sẽ chạy lại được.”",
+        "en": "Choose the word that fits the blank: 修理すれば、この機械が（　）と言われました。 — Meaning of the sentence: “I was told this machine will work again if I have it repaired.”"
+      },
+      "payload": {
+        "choices": [
+          "戻る",
+          "直る",
+          "温める",
+          "間違える"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「直る」(Được sửa xong; khỏi (tự động từ)) hợp nghĩa câu này: “Người ta bảo nếu sửa thì cái máy này sẽ chạy lại được.”",
+        "en": "Correct! 「直る」(To be fixed; to get better (intransitive)) fits this sentence: “I was told this machine will work again if I have it repaired.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người ta bảo nếu sửa thì cái máy này sẽ chạy lại được.”, nên cần 「直る」(Được sửa xong; khỏi (tự động từ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was told this machine will work again if I have it repaired.”, so it needs 「直る」(To be fixed; to get better (intransitive)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "間違える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 道を（　）といけないので、地図を持って行きます。 — Nghĩa của câu: “Vì nếu đi nhầm đường thì không ổn nên tôi mang theo bản đồ.”",
+        "en": "Choose the word that fits the blank: 道を（　）といけないので、地図を持って行きます。 — Meaning of the sentence: “I will take a map with me in case I go the wrong way.”"
+      },
+      "payload": {
+        "choices": [
+          "直る",
+          "温める",
+          "間違える",
+          "戻る"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「間違える」(Làm sai; nhầm) hợp nghĩa câu này: “Vì nếu đi nhầm đường thì không ổn nên tôi mang theo bản đồ.”",
+        "en": "Correct! 「間違える」(To make a mistake; to get wrong) fits this sentence: “I will take a map with me in case I go the wrong way.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì nếu đi nhầm đường thì không ổn nên tôi mang theo bản đồ.”, nên cần 「間違える」(Làm sai; nhầm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will take a map with me in case I go the wrong way.”, so it needs 「間違える」(To make a mistake; to get wrong); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "戻る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 忘れ物をしたので、家に（　）つもりです。 — Nghĩa của câu: “Vì quên đồ nên tôi định quay về nhà.”",
+        "en": "Choose the word that fits the blank: 忘れ物をしたので、家に（　）つもりです。 — Meaning of the sentence: “I left something behind, so I intend to go back home.”"
+      },
+      "payload": {
+        "choices": [
+          "変える",
+          "直す",
+          "間違える",
+          "戻る"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「戻る」(Quay lại; trở về) hợp nghĩa câu này: “Vì quên đồ nên tôi định quay về nhà.”",
+        "en": "Correct! 「戻る」(To return; to go back) fits this sentence: “I left something behind, so I intend to go back home.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì quên đồ nên tôi định quay về nhà.”, nên cần 「戻る」(Quay lại; trở về); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I left something behind, so I intend to go back home.”, so it needs 「戻る」(To return; to go back); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "温める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 冷めたスープを（　）には、電子レンジが便利です。 — Nghĩa của câu: “Để hâm nóng món súp đã nguội thì lò vi sóng rất tiện.”",
+        "en": "Choose the word that fits the blank: 冷めたスープを（　）には、電子レンジが便利です。 — Meaning of the sentence: “A microwave is handy for warming up cold soup.”"
+      },
+      "payload": {
+        "choices": [
+          "温める",
+          "戻る",
+          "直す",
+          "間違える"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「温める」(Hâm nóng; làm ấm) hợp nghĩa câu này: “Để hâm nóng món súp đã nguội thì lò vi sóng rất tiện.”",
+        "en": "Correct! 「温める」(To warm up; to heat) fits this sentence: “A microwave is handy for warming up cold soup.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để hâm nóng món súp đã nguội thì lò vi sóng rất tiện.”, nên cần 「温める」(Hâm nóng; làm ấm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A microwave is handy for warming up cold soup.”, so it needs 「温める」(To warm up; to heat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "変える",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 部屋の色を「変える」ために、新しいカーテンを買いました。",
+        "en": "Choose the correct reading of the word in 「」: 部屋の色を「変える」ために、新しいカーテンを買いました。"
+      },
+      "payload": {
+        "choices": [
+          "かえる",
+          "もどる",
+          "なおる",
+          "なおす"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「変える」 đọc là 「かえる」, nghĩa là Thay đổi; đổi (tha động từ).",
+        "en": "Correct! 「変える」 is read 「かえる」 and means To change; to alter (transitive)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「変える」 đọc là 「かえる」 (Thay đổi; đổi (tha động từ)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「変える」 is read 「かえる」 (To change; to alter (transitive)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "間違える",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 道を「間違える」といけないので、地図を持って行きます。",
+        "en": "Choose the correct reading of the word in 「」: 道を「間違える」といけないので、地図を持って行きます。"
+      },
+      "payload": {
+        "choices": [
+          "もどる",
+          "まちがえる",
+          "なおす",
+          "なおる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「間違える」 đọc là 「まちがえる」, nghĩa là Làm sai; nhầm.",
+        "en": "Correct! 「間違える」 is read 「まちがえる」 and means To make a mistake; to get wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「間違える」 đọc là 「まちがえる」 (Làm sai; nhầm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「間違える」 is read 「まちがえる」 (To make a mistake; to get wrong); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "温める",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 冷めたスープを「あたためる」には、電子レンジが便利です。",
+        "en": "Choose the correct way to write the word in 「」: 冷めたスープを「あたためる」には、電子レンジが便利です。"
+      },
+      "payload": {
+        "choices": [
+          "直す",
+          "温める",
+          "戻る",
+          "直る"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「あたためる」 viết là 「温める」, nghĩa là Hâm nóng; làm ấm.",
+        "en": "Correct! 「あたためる」 is written 「温める」 and means To warm up; to heat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「あたためる」 viết là 「温める」 (Hâm nóng; làm ấm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「あたためる」 is written 「温める」 (To warm up; to heat); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-purpose-intention",
+  "title": {
+    "vi": "Ý định (1): 〜ようとする và 〜ことにしている",
+    "en": "Intention (1): 〜ようとする and 〜ことにしている"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ようとする",
+      "meaning": {
+        "vi": "Định ~, cố gắng ~",
+        "en": "Try to ~; be about to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể ý chí + とする. Nghĩa 1: cố gắng làm (話そうとする). Nghĩa 2: sắp sửa xảy ra đúng lúc (家を出ようとしたとき). Thường đi với 〜ても, 〜たが (cố mà không được), 〜とき.",
+        "en": "Usage: volitional form + とする. Sense 1: trying to do (話そうとする). Sense 2: being just about to do (家を出ようとしたとき). Often with 〜ても, 〜たが (tried but could not), 〜とき."
+      },
+      "examples": [
+        {
+          "ja": "バスに乗ろうとしたとき、ドアが閉まりました。",
+          "reading": "ばすにのろうとしたとき、どあがしまりました。",
+          "translation": {
+            "vi": "Đúng lúc tôi định lên xe buýt thì cửa đóng lại.",
+            "en": "Just as I was about to board the bus, the doors closed."
+          }
+        },
+        {
+          "ja": "彼は、何かを言おうとして、口を開けました。",
+          "reading": "かれは、なにかをいおうとして、くちをあけました。",
+          "translation": {
+            "vi": "Anh ấy định nói điều gì đó và mở miệng.",
+            "en": "He opened his mouth, trying to say something."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-070"
+    },
+    {
+      "japanese": "〜ことにしている",
+      "meaning": {
+        "vi": "Đã quyết định thành thói quen ~",
+        "en": "Make it a rule to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ことにしている. Nguyên tắc/thói quen do bản thân đặt ra và duy trì. Khác 〜ことにする (quyết định một lần); 〜ようにしている là nỗ lực, ことにしている là quy tắc cá nhân.",
+        "en": "Usage: verb dictionary/ない-form + ことにしている. A personal rule or habit one sets and keeps. Unlike 〜ことにする (a one-time decision); 〜ようにしている is effort, whereas ことにしている is a personal rule."
+      },
+      "examples": [
+        {
+          "ja": "毎晩、十一時までに寝ることにしています。",
+          "reading": "まいばん、じゅういちじまでにねることにしています。",
+          "translation": {
+            "vi": "Mỗi tối tôi đặt ra quy tắc đi ngủ trước mười một giờ.",
+            "en": "I make it a rule to go to bed by eleven every night."
+          }
+        },
+        {
+          "ja": "健康のために、甘い物は食べないことにしています。",
+          "reading": "けんこうのために、あまいものはたべないことにしています。",
+          "translation": {
+            "vi": "Vì sức khỏe, tôi đặt quy tắc không ăn đồ ngọt.",
+            "en": "For my health, I have made it a rule not to eat sweets."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-071"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ようとする",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nバスに乗ろう（　）したとき、ドアが閉まりました。",
+        "en": "Choose the correct option for the blank:\nバスに乗ろう（　）したとき、ドアが閉まりました。"
+      },
+      "payload": {
+        "choices": [
+          "に",
+          "を",
+          "が",
+          "と"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「意向形 + とする」: 「乗ろうとした」.",
+        "en": "Correct! The pattern 「volitional form + とする」: 「乗ろうとした」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「意向形 + とする」: 「乗ろうとした」.",
+        "en": "Not quite. The pattern 「volitional form + とする」: 「乗ろうとした」."
+      }
+    },
+    {
+      "item": "〜ようとする",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、何かを言お___して、口を開けました。",
+        "en": "Choose the correct option for the blank:\n彼は、何かを言お___して、口を開けました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "うと"
+        ],
+        "hint": "〜うと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「言う」 → ý chí 「言おう」 + 「と」: 「言おうとして」.",
+        "en": "Correct! 「言う」→ volitional 「言おう」 + 「と」: 「言おうとして」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「言う」 → ý chí 「言おう」 + 「と」: 「言おうとして」.",
+        "en": "Not quite. 「言う」→ volitional 「言おう」 + 「と」: 「言おうとして」."
+      }
+    },
+    {
+      "item": "〜ようとする",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n家を出（　）としたとき、電話が鳴りました。",
+        "en": "Choose the pattern that best fits the context:\n家を出（　）としたとき、電話が鳴りました。"
+      },
+      "payload": {
+        "choices": [
+          "て",
+          "る",
+          "よう",
+          "た"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sắp ra khỏi nhà đúng lúc ấy: 「出ようとした」 (thể ý chí 「出よう」).",
+        "en": "Correct! Just about to leave home at that moment: 「出ようとした」 (volitional 「出よう」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sắp ra khỏi nhà đúng lúc ấy: 「出ようとした」 (thể ý chí 「出よう」).",
+        "en": "Not quite. Just about to leave home at that moment: 「出ようとした」 (volitional 「出よう」)."
+      }
+    },
+    {
+      "item": "〜ようとする",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "寝るとしたとき、友だちから電話がありました。",
+          "寝ようとしたとき、友だちから電話がありました。",
+          "寝ようにしたとき、友だちから電話がありました。",
+          "寝ようとなったとき、友だちから電話がありました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「意向形 + とする」: 「寝ようとした」.",
+        "en": "Correct! The pattern 「volitional form + とする」: 「寝ようとした」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「意向形 + とする」: 「寝ようとした」.",
+        "en": "Not quite. The pattern 「volitional form + とする」: 「寝ようとした」."
+      }
+    },
+    {
+      "item": "〜ことにしている",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n毎晩、十一時までに寝る（　）しています。",
+        "en": "Choose the correct option for the blank:\n毎晩、十一時までに寝る（　）しています。"
+      },
+      "payload": {
+        "choices": [
+          "ことに",
+          "ように",
+          "ために",
+          "ことが"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy tắc cá nhân: 「寝ることにしています」.",
+        "en": "Correct! A personal rule: 「寝ることにしています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy tắc cá nhân: 「寝ることにしています」.",
+        "en": "Not quite. A personal rule: 「寝ることにしています」."
+      }
+    },
+    {
+      "item": "〜ことにしている",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n甘い物は食べない___にしています。",
+        "en": "Choose the correct option for the blank:\n甘い物は食べない___にしています。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こと"
+        ],
+        "hint": "こと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy tắc không ăn đồ ngọt: 「食べないことにしています」.",
+        "en": "Correct! A rule not to eat sweets: 「食べないことにしています」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy tắc không ăn đồ ngọt: 「食べないことにしています」.",
+        "en": "Not quite. A rule not to eat sweets: 「食べないことにしています」."
+      }
+    },
+    {
+      "item": "〜ことにしている",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n健康のために、毎日歩く（　）います。（đã thành quy tắc）",
+        "en": "Choose the pattern that best fits the context:\n健康のために、毎日歩く（　）います。（đã thành quy tắc）"
+      },
+      "payload": {
+        "choices": [
+          "ことになって",
+          "ようになって",
+          "ようにして",
+          "ことにして"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quy tắc do bản thân đặt ra và duy trì: 「歩くことにしている」.",
+        "en": "Correct! A self-imposed rule that is kept: 「歩くことにしている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quy tắc do bản thân đặt ra và duy trì: 「歩くことにしている」.",
+        "en": "Not quite. A self-imposed rule that is kept: 「歩くことにしている」."
+      }
+    },
+    {
+      "item": "〜ことにしている",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "朝ごはんは必ず食べるのことにしています。",
+          "朝ごはんは必ず食べたことにしています。",
+          "朝ごはんは必ず食べることにしています。",
+          "朝ごはんは必ず食べてことにしています。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「ことにしている」 là thể từ điển: 「食べることにしている」.",
+        "en": "Correct! Before 「ことにしている」 comes the dictionary form: 「食べることにしている」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「ことにしている」 là thể từ điển: 「食べることにしている」.",
+        "en": "Not quite. Before 「ことにしている」 comes the dictionary form: 「食べることにしている」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ようとする",
+            {
+              "vi": "Định ~, cố gắng ~",
+              "en": "Try to ~; be about to ~"
+            }
+          ],
+          [
+            "〜ことにしている",
+            {
+              "vi": "Đã quyết định thành thói quen ~",
+              "en": "Make it a rule to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

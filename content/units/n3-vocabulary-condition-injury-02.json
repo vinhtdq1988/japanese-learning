@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-condition-injury",
+  "title": {
+    "vi": "Cơn đau và triệu chứng",
+    "en": "Pain and symptoms"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "痛む",
+      "reading": "いたむ",
+      "meaning": {
+        "vi": "Đau; nhức",
+        "en": "To hurt; to ache"
+      },
+      "examples": [
+        {
+          "ja": "転んだ膝が、まだ痛むことがあります。",
+          "reading": "ころんだひざが、まだいたむことがあります。",
+          "translation": {
+            "vi": "Đầu gối ngã hôm trước đôi khi vẫn còn đau.",
+            "en": "The knee I fell on still aches sometimes."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "痛み",
+      "reading": "いたみ",
+      "meaning": {
+        "vi": "Cơn đau; sự đau",
+        "en": "Pain"
+      },
+      "examples": [
+        {
+          "ja": "薬を飲んで、痛みがやわらぎました。",
+          "reading": "くすりをのんで、いたみがやわらぎました。",
+          "translation": {
+            "vi": "Uống thuốc xong, cơn đau đã dịu bớt.",
+            "en": "After taking medicine, the pain eased."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腫れる",
+      "reading": "はれる",
+      "meaning": {
+        "vi": "Sưng",
+        "en": "To swell"
+      },
+      "examples": [
+        {
+          "ja": "蜂に刺されると、腕が腫れることがあります。",
+          "reading": "はちにさされると、うでがはれることがあります。",
+          "translation": {
+            "vi": "Bị ong chích thì cánh tay có thể bị sưng.",
+            "en": "If you are stung by a bee, your arm may swell."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "痒い",
+      "reading": "かゆい",
+      "meaning": {
+        "vi": "Ngứa",
+        "en": "Itchy"
+      },
+      "examples": [
+        {
+          "ja": "蚊に刺された所が、とても痒いです。",
+          "reading": "かにさされたところが、とてもかゆいです。",
+          "translation": {
+            "vi": "Chỗ bị muỗi đốt rất ngứa.",
+            "en": "The place where a mosquito bit me is very itchy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "痺れる",
+      "reading": "しびれる",
+      "meaning": {
+        "vi": "Tê (chân tay)",
+        "en": "To go numb"
+      },
+      "examples": [
+        {
+          "ja": "長く座っていて、足が痺れることがあります。",
+          "reading": "ながくすわっていて、あしがしびれることがあります。",
+          "translation": {
+            "vi": "Ngồi lâu thì chân có khi bị tê.",
+            "en": "If you sit for a long time, your legs can go numb."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "眩暈",
+      "reading": "めまい",
+      "meaning": {
+        "vi": "Chóng mặt",
+        "en": "Dizziness"
+      },
+      "examples": [
+        {
+          "ja": "急に立ち上がると、眩暈がします。",
+          "reading": "きゅうにたちあがると、めまいがします。",
+          "translation": {
+            "vi": "Đứng dậy đột ngột thì tôi bị chóng mặt.",
+            "en": "If I stand up suddenly, I feel dizzy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "頭痛",
+      "reading": "ずつう",
+      "meaning": {
+        "vi": "Đau đầu",
+        "en": "Headache"
+      },
+      "examples": [
+        {
+          "ja": "寝不足で、朝から頭痛がします。",
+          "reading": "ねぶそくで、あさからずつうがします。",
+          "translation": {
+            "vi": "Vì thiếu ngủ nên từ sáng tôi đã bị đau đầu.",
+            "en": "I have had a headache since morning from lack of sleep."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腹痛",
+      "reading": "ふくつう",
+      "meaning": {
+        "vi": "Đau bụng",
+        "en": "Stomachache"
+      },
+      "examples": [
+        {
+          "ja": "冷たいものを飲みすぎて、腹痛になりました。",
+          "reading": "つめたいものをのみすぎて、ふくつうになりました。",
+          "translation": {
+            "vi": "Uống quá nhiều đồ lạnh nên tôi bị đau bụng.",
+            "en": "I drank too many cold drinks and got a stomachache."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "肩こり",
+      "reading": "かたこり",
+      "meaning": {
+        "vi": "Mỏi vai",
+        "en": "Stiff shoulders"
+      },
+      "examples": [
+        {
+          "ja": "パソコンの仕事で、肩こりがひどいです。",
+          "reading": "パソコンのしごとで、かたこりがひどいです。",
+          "translation": {
+            "vi": "Làm việc với máy tính nên tôi bị mỏi vai nặng.",
+            "en": "Working at the computer gives me terrible stiff shoulders."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腰痛",
+      "reading": "ようつう",
+      "meaning": {
+        "vi": "Đau lưng",
+        "en": "Lower back pain"
+      },
+      "examples": [
+        {
+          "ja": "重い荷物を持って、腰痛になりました。",
+          "reading": "おもいにもつをもって、ようつうになりました。",
+          "translation": {
+            "vi": "Mang vật nặng nên tôi bị đau lưng.",
+            "en": "I carried a heavy load and got lower back pain."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "苦痛",
+      "reading": "くつう",
+      "meaning": {
+        "vi": "Đau khổ; nỗi đau đớn",
+        "en": "Agony; suffering"
+      },
+      "examples": [
+        {
+          "ja": "長い会議は、私にとって苦痛です。",
+          "reading": "ながいかいぎは、わたしにとってくつうです。",
+          "translation": {
+            "vi": "Cuộc họp dài là một nỗi khổ đối với tôi.",
+            "en": "Long meetings are agony for me."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悪寒",
+      "reading": "おかん",
+      "meaning": {
+        "vi": "Ớn lạnh; rùng mình",
+        "en": "Chill"
+      },
+      "examples": [
+        {
+          "ja": "熱が出る前に、悪寒がしました。",
+          "reading": "ねつがでるまえに、おかんがしました。",
+          "translation": {
+            "vi": "Trước khi sốt, tôi thấy ớn lạnh.",
+            "en": "I felt a chill before the fever started."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "痛む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 転んだ膝が、まだ（　）ことがあります。 — Nghĩa của câu: “Đầu gối ngã hôm trước đôi khi vẫn còn đau.”",
+        "en": "Choose the word that fits the blank: 転んだ膝が、まだ（　）ことがあります。 — Meaning of the sentence: “The knee I fell on still aches sometimes.”"
+      },
+      "payload": {
+        "choices": [
+          "痛む",
+          "腫れる",
+          "痺れる",
+          "腹痛"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痛む」(Đau; nhức) hợp nghĩa câu này: “Đầu gối ngã hôm trước đôi khi vẫn còn đau.”",
+        "en": "Correct! 「痛む」(To hurt; to ache) fits this sentence: “The knee I fell on still aches sometimes.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đầu gối ngã hôm trước đôi khi vẫn còn đau.”, nên cần 「痛む」(Đau; nhức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The knee I fell on still aches sometimes.”, so it needs 「痛む」(To hurt; to ache); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "痛み",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 薬を飲んで、（　）がやわらぎました。 — Nghĩa của câu: “Uống thuốc xong, cơn đau đã dịu bớt.”",
+        "en": "Choose the word that fits the blank: 薬を飲んで、（　）がやわらぎました。 — Meaning of the sentence: “After taking medicine, the pain eased.”"
+      },
+      "payload": {
+        "choices": [
+          "苦痛",
+          "痛み",
+          "腰痛",
+          "悪寒"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痛み」(Cơn đau; sự đau) hợp nghĩa câu này: “Uống thuốc xong, cơn đau đã dịu bớt.”",
+        "en": "Correct! 「痛み」(Pain) fits this sentence: “After taking medicine, the pain eased.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Uống thuốc xong, cơn đau đã dịu bớt.”, nên cần 「痛み」(Cơn đau; sự đau); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After taking medicine, the pain eased.”, so it needs 「痛み」(Pain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "腫れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 蜂に刺されると、腕が（　）ことがあります。 — Nghĩa của câu: “Bị ong chích thì cánh tay có thể bị sưng.”",
+        "en": "Choose the word that fits the blank: 蜂に刺されると、腕が（　）ことがあります。 — Meaning of the sentence: “If you are stung by a bee, your arm may swell.”"
+      },
+      "payload": {
+        "choices": [
+          "痛む",
+          "痺れる",
+          "腫れる",
+          "苦痛"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腫れる」(Sưng) hợp nghĩa câu này: “Bị ong chích thì cánh tay có thể bị sưng.”",
+        "en": "Correct! 「腫れる」(To swell) fits this sentence: “If you are stung by a bee, your arm may swell.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bị ong chích thì cánh tay có thể bị sưng.”, nên cần 「腫れる」(Sưng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you are stung by a bee, your arm may swell.”, so it needs 「腫れる」(To swell); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "痒い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 蚊に刺された所が、とても（　）です。 — Nghĩa của câu: “Chỗ bị muỗi đốt rất ngứa.”",
+        "en": "Choose the word that fits the blank: 蚊に刺された所が、とても（　）です。 — Meaning of the sentence: “The place where a mosquito bit me is very itchy.”"
+      },
+      "payload": {
+        "choices": [
+          "腫れる",
+          "痛む",
+          "苦痛",
+          "痒い"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痒い」(Ngứa) hợp nghĩa câu này: “Chỗ bị muỗi đốt rất ngứa.”",
+        "en": "Correct! 「痒い」(Itchy) fits this sentence: “The place where a mosquito bit me is very itchy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chỗ bị muỗi đốt rất ngứa.”, nên cần 「痒い」(Ngứa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The place where a mosquito bit me is very itchy.”, so it needs 「痒い」(Itchy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "痺れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 長く座っていて、足が（　）ことがあります。 — Nghĩa của câu: “Ngồi lâu thì chân có khi bị tê.”",
+        "en": "Choose the word that fits the blank: 長く座っていて、足が（　）ことがあります。 — Meaning of the sentence: “If you sit for a long time, your legs can go numb.”"
+      },
+      "payload": {
+        "choices": [
+          "痺れる",
+          "痛む",
+          "腫れる",
+          "眩暈"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痺れる」(Tê (chân tay)) hợp nghĩa câu này: “Ngồi lâu thì chân có khi bị tê.”",
+        "en": "Correct! 「痺れる」(To go numb) fits this sentence: “If you sit for a long time, your legs can go numb.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngồi lâu thì chân có khi bị tê.”, nên cần 「痺れる」(Tê (chân tay)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you sit for a long time, your legs can go numb.”, so it needs 「痺れる」(To go numb); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "眩暈",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 急に立ち上がると、（　）がします。 — Nghĩa của câu: “Đứng dậy đột ngột thì tôi bị chóng mặt.”",
+        "en": "Choose the word that fits the blank: 急に立ち上がると、（　）がします。 — Meaning of the sentence: “If I stand up suddenly, I feel dizzy.”"
+      },
+      "payload": {
+        "choices": [
+          "腰痛",
+          "眩暈",
+          "苦痛",
+          "痛み"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「眩暈」(Chóng mặt) hợp nghĩa câu này: “Đứng dậy đột ngột thì tôi bị chóng mặt.”",
+        "en": "Correct! 「眩暈」(Dizziness) fits this sentence: “If I stand up suddenly, I feel dizzy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đứng dậy đột ngột thì tôi bị chóng mặt.”, nên cần 「眩暈」(Chóng mặt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If I stand up suddenly, I feel dizzy.”, so it needs 「眩暈」(Dizziness); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "頭痛",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 寝不足で、朝から（　）がします。 — Nghĩa của câu: “Vì thiếu ngủ nên từ sáng tôi đã bị đau đầu.”",
+        "en": "Choose the word that fits the blank: 寝不足で、朝から（　）がします。 — Meaning of the sentence: “I have had a headache since morning from lack of sleep.”"
+      },
+      "payload": {
+        "choices": [
+          "腰痛",
+          "苦痛",
+          "頭痛",
+          "腹痛"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「頭痛」(Đau đầu) hợp nghĩa câu này: “Vì thiếu ngủ nên từ sáng tôi đã bị đau đầu.”",
+        "en": "Correct! 「頭痛」(Headache) fits this sentence: “I have had a headache since morning from lack of sleep.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì thiếu ngủ nên từ sáng tôi đã bị đau đầu.”, nên cần 「頭痛」(Đau đầu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have had a headache since morning from lack of sleep.”, so it needs 「頭痛」(Headache); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "腹痛",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 冷たいものを飲みすぎて、（　）になりました。 — Nghĩa của câu: “Uống quá nhiều đồ lạnh nên tôi bị đau bụng.”",
+        "en": "Choose the word that fits the blank: 冷たいものを飲みすぎて、（　）になりました。 — Meaning of the sentence: “I drank too many cold drinks and got a stomachache.”"
+      },
+      "payload": {
+        "choices": [
+          "腰痛",
+          "痛み",
+          "悪寒",
+          "腹痛"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腹痛」(Đau bụng) hợp nghĩa câu này: “Uống quá nhiều đồ lạnh nên tôi bị đau bụng.”",
+        "en": "Correct! 「腹痛」(Stomachache) fits this sentence: “I drank too many cold drinks and got a stomachache.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Uống quá nhiều đồ lạnh nên tôi bị đau bụng.”, nên cần 「腹痛」(Đau bụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I drank too many cold drinks and got a stomachache.”, so it needs 「腹痛」(Stomachache); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "肩こり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: パソコンの仕事で、（　）がひどいです。 — Nghĩa của câu: “Làm việc với máy tính nên tôi bị mỏi vai nặng.”",
+        "en": "Choose the word that fits the blank: パソコンの仕事で、（　）がひどいです。 — Meaning of the sentence: “Working at the computer gives me terrible stiff shoulders.”"
+      },
+      "payload": {
+        "choices": [
+          "肩こり",
+          "苦痛",
+          "痛み",
+          "眩暈"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「肩こり」(Mỏi vai) hợp nghĩa câu này: “Làm việc với máy tính nên tôi bị mỏi vai nặng.”",
+        "en": "Correct! 「肩こり」(Stiff shoulders) fits this sentence: “Working at the computer gives me terrible stiff shoulders.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Làm việc với máy tính nên tôi bị mỏi vai nặng.”, nên cần 「肩こり」(Mỏi vai); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Working at the computer gives me terrible stiff shoulders.”, so it needs 「肩こり」(Stiff shoulders); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "腰痛",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 重い荷物を持って、（　）になりました。 — Nghĩa của câu: “Mang vật nặng nên tôi bị đau lưng.”",
+        "en": "Choose the word that fits the blank: 重い荷物を持って、（　）になりました。 — Meaning of the sentence: “I carried a heavy load and got lower back pain.”"
+      },
+      "payload": {
+        "choices": [
+          "頭痛",
+          "腰痛",
+          "腹痛",
+          "肩こり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腰痛」(Đau lưng) hợp nghĩa câu này: “Mang vật nặng nên tôi bị đau lưng.”",
+        "en": "Correct! 「腰痛」(Lower back pain) fits this sentence: “I carried a heavy load and got lower back pain.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mang vật nặng nên tôi bị đau lưng.”, nên cần 「腰痛」(Đau lưng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I carried a heavy load and got lower back pain.”, so it needs 「腰痛」(Lower back pain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "苦痛",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 長い会議は、私にとって（　）です。 — Nghĩa của câu: “Cuộc họp dài là một nỗi khổ đối với tôi.”",
+        "en": "Choose the word that fits the blank: 長い会議は、私にとって（　）です。 — Meaning of the sentence: “Long meetings are agony for me.”"
+      },
+      "payload": {
+        "choices": [
+          "腹痛",
+          "腰痛",
+          "苦痛",
+          "悪寒"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「苦痛」(Đau khổ; nỗi đau đớn) hợp nghĩa câu này: “Cuộc họp dài là một nỗi khổ đối với tôi.”",
+        "en": "Correct! 「苦痛」(Agony; suffering) fits this sentence: “Long meetings are agony for me.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuộc họp dài là một nỗi khổ đối với tôi.”, nên cần 「苦痛」(Đau khổ; nỗi đau đớn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Long meetings are agony for me.”, so it needs 「苦痛」(Agony; suffering); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "悪寒",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 熱が出る前に、（　）がしました。 — Nghĩa của câu: “Trước khi sốt, tôi thấy ớn lạnh.”",
+        "en": "Choose the word that fits the blank: 熱が出る前に、（　）がしました。 — Meaning of the sentence: “I felt a chill before the fever started.”"
+      },
+      "payload": {
+        "choices": [
+          "腹痛",
+          "痛み",
+          "頭痛",
+          "悪寒"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「悪寒」(Ớn lạnh; rùng mình) hợp nghĩa câu này: “Trước khi sốt, tôi thấy ớn lạnh.”",
+        "en": "Correct! 「悪寒」(Chill) fits this sentence: “I felt a chill before the fever started.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi sốt, tôi thấy ớn lạnh.”, nên cần 「悪寒」(Ớn lạnh; rùng mình); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I felt a chill before the fever started.”, so it needs 「悪寒」(Chill); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "痛む",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 転んだ膝が、まだ「痛む」ことがあります。",
+        "en": "Choose the correct reading of the word in 「」: 転んだ膝が、まだ「痛む」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "くつう",
+          "いたむ",
+          "いたみ",
+          "ふくつう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痛む」 đọc là 「いたむ」, nghĩa là Đau; nhức.",
+        "en": "Correct! 「痛む」 is read 「いたむ」 and means To hurt; to ache."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「痛む」 đọc là 「いたむ」 (Đau; nhức); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「痛む」 is read 「いたむ」 (To hurt; to ache); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "痒い",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 蚊に刺された所が、とても「痒い」です。",
+        "en": "Choose the correct reading of the word in 「」: 蚊に刺された所が、とても「痒い」です。"
+      },
+      "payload": {
+        "choices": [
+          "いたみ",
+          "ずつう",
+          "かゆい",
+          "ようつう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「痒い」 đọc là 「かゆい」, nghĩa là Ngứa.",
+        "en": "Correct! 「痒い」 is read 「かゆい」 and means Itchy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「痒い」 đọc là 「かゆい」 (Ngứa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「痒い」 is read 「かゆい」 (Itchy); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "頭痛",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 寝不足で、朝から「頭痛」がします。",
+        "en": "Choose the correct reading of the word in 「」: 寝不足で、朝から「頭痛」がします。"
+      },
+      "payload": {
+        "choices": [
+          "くつう",
+          "しびれる",
+          "おかん",
+          "ずつう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「頭痛」 đọc là 「ずつう」, nghĩa là Đau đầu.",
+        "en": "Correct! 「頭痛」 is read 「ずつう」 and means Headache."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「頭痛」 đọc là 「ずつう」 (Đau đầu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「頭痛」 is read 「ずつう」 (Headache); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "腰痛",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 重い荷物を持って、「腰痛」になりました。",
+        "en": "Choose the correct reading of the word in 「」: 重い荷物を持って、「腰痛」になりました。"
+      },
+      "payload": {
+        "choices": [
+          "ようつう",
+          "いたみ",
+          "くつう",
+          "いたむ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腰痛」 đọc là 「ようつう」, nghĩa là Đau lưng.",
+        "en": "Correct! 「腰痛」 is read 「ようつう」 and means Lower back pain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「腰痛」 đọc là 「ようつう」 (Đau lưng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「腰痛」 is read 「ようつう」 (Lower back pain); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "腫れる",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 蜂に刺されると、腕が「はれる」ことがあります。",
+        "en": "Choose the correct way to write the word in 「」: 蜂に刺されると、腕が「はれる」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "痒い",
+          "痛む",
+          "腫れる",
+          "頭痛"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はれる」 viết là 「腫れる」, nghĩa là Sưng.",
+        "en": "Correct! 「はれる」 is written 「腫れる」 and means To swell."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はれる」 viết là 「腫れる」 (Sưng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はれる」 is written 「腫れる」 (To swell); the other words are read differently."
+      }
+    },
+    {
+      "item": "肩こり",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: パソコンの仕事で、「かたこり」がひどいです。",
+        "en": "Choose the correct way to write the word in 「」: パソコンの仕事で、「かたこり」がひどいです。"
+      },
+      "payload": {
+        "choices": [
+          "痒い",
+          "眩暈",
+          "頭痛",
+          "肩こり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かたこり」 viết là 「肩こり」, nghĩa là Mỏi vai.",
+        "en": "Correct! 「かたこり」 is written 「肩こり」 and means Stiff shoulders."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かたこり」 viết là 「肩こり」 (Mỏi vai); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かたこり」 is written 「肩こり」 (Stiff shoulders); the other words are read differently."
+      }
+    }
+  ]
+}

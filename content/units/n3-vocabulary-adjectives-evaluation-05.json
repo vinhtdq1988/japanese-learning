@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adjectives-evaluation",
+  "title": {
+    "vi": "Mạnh mẽ, sắc bén và thoai thoải",
+    "en": "Intense, sharp and gentle"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2860,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "激しい",
+      "reading": "はげしい",
+      "meaning": {
+        "vi": "Dữ dội; mạnh mẽ",
+        "en": "Violent; intense"
+      },
+      "examples": [
+        {
+          "ja": "昨日は、激しい雨が降りました。",
+          "reading": "きのうは、はげしいあめがふりました。",
+          "translation": {
+            "vi": "Hôm qua trời mưa dữ dội.",
+            "en": "Heavy rain fell yesterday."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "険しい",
+      "reading": "けわしい",
+      "meaning": {
+        "vi": "Hiểm trở; dốc đứng",
+        "en": "Steep; rugged"
+      },
+      "examples": [
+        {
+          "ja": "険しい山道を、一日歩きました。",
+          "reading": "けわしいやまみちを、いちにちあるきました。",
+          "translation": {
+            "vi": "Tôi đã đi bộ cả ngày trên con đường núi hiểm trở.",
+            "en": "I walked a rugged mountain path all day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "鋭い",
+      "reading": "するどい",
+      "meaning": {
+        "vi": "Sắc bén; nhạy",
+        "en": "Sharp; keen"
+      },
+      "examples": [
+        {
+          "ja": "このナイフは、とても鋭いです。",
+          "reading": "このナイフは、とてもするどいです。",
+          "translation": {
+            "vi": "Con dao này rất sắc.",
+            "en": "This knife is very sharp."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "鈍い",
+      "reading": "にぶい",
+      "meaning": {
+        "vi": "Cùn; chậm chạp",
+        "en": "Dull; slow"
+      },
+      "examples": [
+        {
+          "ja": "このはさみは、切れ味が鈍いです。",
+          "reading": "このはさみは、きれあじがにぶいです。",
+          "translation": {
+            "vi": "Cái kéo này đã cùn, cắt không ngọt.",
+            "en": "These scissors are dull and do not cut well."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "緩やか",
+      "reading": "ゆるやか",
+      "meaning": {
+        "vi": "Thoai thoải; chậm rãi",
+        "en": "Gentle; gradual"
+      },
+      "examples": [
+        {
+          "ja": "この道は、緩やかな坂が続いています。",
+          "reading": "このみちは、ゆるやかなさかがつづいています。",
+          "translation": {
+            "vi": "Con đường này có con dốc thoai thoải kéo dài.",
+            "en": "This road continues with a gentle slope."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "奇妙",
+      "reading": "きみょう",
+      "meaning": {
+        "vi": "Kỳ lạ; quái lạ",
+        "en": "Strange; odd"
+      },
+      "examples": [
+        {
+          "ja": "夜中に、奇妙な音が聞こえました。",
+          "reading": "よなかに、きみょうなおとがきこえました。",
+          "translation": {
+            "vi": "Giữa đêm tôi nghe thấy tiếng động kỳ lạ.",
+            "en": "I heard a strange noise in the middle of the night."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "激しい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 昨日は、（　）雨が降りました。 — Nghĩa của câu: “Hôm qua trời mưa dữ dội.”",
+        "en": "Choose the word that fits the blank: 昨日は、（　）雨が降りました。 — Meaning of the sentence: “Heavy rain fell yesterday.”"
+      },
+      "payload": {
+        "choices": [
+          "険しい",
+          "激しい",
+          "鋭い",
+          "鈍い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「激しい」(Dữ dội; mạnh mẽ) hợp nghĩa câu này: “Hôm qua trời mưa dữ dội.”",
+        "en": "Correct! 「激しい」(Violent; intense) fits this sentence: “Heavy rain fell yesterday.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm qua trời mưa dữ dội.”, nên cần 「激しい」(Dữ dội; mạnh mẽ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Heavy rain fell yesterday.”, so it needs 「激しい」(Violent; intense); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "険しい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）山道を、一日歩きました。 — Nghĩa của câu: “Tôi đã đi bộ cả ngày trên con đường núi hiểm trở.”",
+        "en": "Choose the word that fits the blank: （　）山道を、一日歩きました。 — Meaning of the sentence: “I walked a rugged mountain path all day.”"
+      },
+      "payload": {
+        "choices": [
+          "激しい",
+          "鋭い",
+          "険しい",
+          "鈍い"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「険しい」(Hiểm trở; dốc đứng) hợp nghĩa câu này: “Tôi đã đi bộ cả ngày trên con đường núi hiểm trở.”",
+        "en": "Correct! 「険しい」(Steep; rugged) fits this sentence: “I walked a rugged mountain path all day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã đi bộ cả ngày trên con đường núi hiểm trở.”, nên cần 「険しい」(Hiểm trở; dốc đứng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I walked a rugged mountain path all day.”, so it needs 「険しい」(Steep; rugged); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "鋭い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このナイフは、とても（　）です。 — Nghĩa của câu: “Con dao này rất sắc.”",
+        "en": "Choose the word that fits the blank: このナイフは、とても（　）です。 — Meaning of the sentence: “This knife is very sharp.”"
+      },
+      "payload": {
+        "choices": [
+          "険しい",
+          "激しい",
+          "鈍い",
+          "鋭い"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「鋭い」(Sắc bén; nhạy) hợp nghĩa câu này: “Con dao này rất sắc.”",
+        "en": "Correct! 「鋭い」(Sharp; keen) fits this sentence: “This knife is very sharp.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con dao này rất sắc.”, nên cần 「鋭い」(Sắc bén; nhạy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This knife is very sharp.”, so it needs 「鋭い」(Sharp; keen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "鈍い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このはさみは、切れ味が（　）です。 — Nghĩa của câu: “Cái kéo này đã cùn, cắt không ngọt.”",
+        "en": "Choose the word that fits the blank: このはさみは、切れ味が（　）です。 — Meaning of the sentence: “These scissors are dull and do not cut well.”"
+      },
+      "payload": {
+        "choices": [
+          "鈍い",
+          "険しい",
+          "激しい",
+          "鋭い"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「鈍い」(Cùn; chậm chạp) hợp nghĩa câu này: “Cái kéo này đã cùn, cắt không ngọt.”",
+        "en": "Correct! 「鈍い」(Dull; slow) fits this sentence: “These scissors are dull and do not cut well.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái kéo này đã cùn, cắt không ngọt.”, nên cần 「鈍い」(Cùn; chậm chạp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “These scissors are dull and do not cut well.”, so it needs 「鈍い」(Dull; slow); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "緩やか",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この道は、（　）な坂が続いています。 — Nghĩa của câu: “Con đường này có con dốc thoai thoải kéo dài.”",
+        "en": "Choose the word that fits the blank: この道は、（　）な坂が続いています。 — Meaning of the sentence: “This road continues with a gentle slope.”"
+      },
+      "payload": {
+        "choices": [
+          "奇妙",
+          "緩やか",
+          "激しい",
+          "鈍い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「緩やか」(Thoai thoải; chậm rãi) hợp nghĩa câu này: “Con đường này có con dốc thoai thoải kéo dài.”",
+        "en": "Correct! 「緩やか」(Gentle; gradual) fits this sentence: “This road continues with a gentle slope.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con đường này có con dốc thoai thoải kéo dài.”, nên cần 「緩やか」(Thoai thoải; chậm rãi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This road continues with a gentle slope.”, so it needs 「緩やか」(Gentle; gradual); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "奇妙",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夜中に、（　）な音が聞こえました。 — Nghĩa của câu: “Giữa đêm tôi nghe thấy tiếng động kỳ lạ.”",
+        "en": "Choose the word that fits the blank: 夜中に、（　）な音が聞こえました。 — Meaning of the sentence: “I heard a strange noise in the middle of the night.”"
+      },
+      "payload": {
+        "choices": [
+          "緩やか",
+          "激しい",
+          "奇妙",
+          "鈍い"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「奇妙」(Kỳ lạ; quái lạ) hợp nghĩa câu này: “Giữa đêm tôi nghe thấy tiếng động kỳ lạ.”",
+        "en": "Correct! 「奇妙」(Strange; odd) fits this sentence: “I heard a strange noise in the middle of the night.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giữa đêm tôi nghe thấy tiếng động kỳ lạ.”, nên cần 「奇妙」(Kỳ lạ; quái lạ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I heard a strange noise in the middle of the night.”, so it needs 「奇妙」(Strange; odd); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "激しい",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 昨日は、「激しい」雨が降りました。",
+        "en": "Choose the correct reading of the word in 「」: 昨日は、「激しい」雨が降りました。"
+      },
+      "payload": {
+        "choices": [
+          "するどい",
+          "けわしい",
+          "はげしい",
+          "きみょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「激しい」 đọc là 「はげしい」, nghĩa là Dữ dội; mạnh mẽ.",
+        "en": "Correct! 「激しい」 is read 「はげしい」 and means Violent; intense."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「激しい」 đọc là 「はげしい」 (Dữ dội; mạnh mẽ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「激しい」 is read 「はげしい」 (Violent; intense); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "鈍い",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: このはさみは、切れ味が「鈍い」です。",
+        "en": "Choose the correct reading of the word in 「」: このはさみは、切れ味が「鈍い」です。"
+      },
+      "payload": {
+        "choices": [
+          "するどい",
+          "はげしい",
+          "きみょう",
+          "にぶい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「鈍い」 đọc là 「にぶい」, nghĩa là Cùn; chậm chạp.",
+        "en": "Correct! 「鈍い」 is read 「にぶい」 and means Dull; slow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「鈍い」 đọc là 「にぶい」 (Cùn; chậm chạp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「鈍い」 is read 「にぶい」 (Dull; slow); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "鋭い",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: このナイフは、とても「するどい」です。",
+        "en": "Choose the correct way to write the word in 「」: このナイフは、とても「するどい」です。"
+      },
+      "payload": {
+        "choices": [
+          "緩やか",
+          "激しい",
+          "奇妙",
+          "鋭い"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「するどい」 viết là 「鋭い」, nghĩa là Sắc bén; nhạy.",
+        "en": "Correct! 「するどい」 is written 「鋭い」 and means Sharp; keen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「するどい」 viết là 「鋭い」 (Sắc bén; nhạy); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「するどい」 is written 「鋭い」 (Sharp; keen); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:japanese_api/src/model/progress_summary_goal.dart';
 import 'package:japanese_api/src/model/progress_summary_weak_topics_inner.dart';
+import 'package:japanese_api/src/model/progress_summary_competency.dart';
 import 'package:japanese_api/src/model/progress_summary_kanji.dart';
 import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:json_annotation/json_annotation.dart';
@@ -36,6 +37,8 @@ class ProgressSummary {
     this.kanji,
 
     this.weakTopics,
+
+    this.competency,
   });
 
   /// true khi chưa có lịch sử (trạng thái trống thân thiện)
@@ -65,6 +68,9 @@ class ProgressSummary {
   @JsonKey(name: r'weakTopics', required: false, includeIfNull: false)
   final List<ProgressSummaryWeakTopicsInner>? weakTopics;
 
+  @JsonKey(name: r'competency', required: false, includeIfNull: false)
+  final ProgressSummaryCompetency? competency;
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -76,7 +82,8 @@ class ProgressSummary {
           other.currentStreakDays == currentStreakDays &&
           other.goal == goal &&
           other.kanji == kanji &&
-          other.weakTopics == weakTopics;
+          other.weakTopics == weakTopics &&
+          other.competency == competency;
 
   @override
   int get hashCode =>
@@ -87,7 +94,8 @@ class ProgressSummary {
       currentStreakDays.hashCode +
       goal.hashCode +
       (kanji == null ? 0 : kanji.hashCode) +
-      weakTopics.hashCode;
+      weakTopics.hashCode +
+      competency.hashCode;
 
   factory ProgressSummary.fromJson(Map<String, dynamic> json) =>
       _$ProgressSummaryFromJson(json);

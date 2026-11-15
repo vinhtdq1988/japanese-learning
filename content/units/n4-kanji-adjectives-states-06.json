@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (色 赤 青 黒)",
+    "en": "Adjectives and states kanji (色 赤 青 黒)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "色",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "màu",
+        "en": "color"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショク",
+          "シキ"
+        ],
+        "kunReadings": [
+          "いろ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "景色",
+          "reading": "けしき",
+          "kanjiReading": "シキ",
+          "translation": {
+            "vi": "phong cảnh",
+            "en": "scenery"
+          }
+        },
+        {
+          "ja": "色",
+          "reading": "いろ",
+          "kanjiReading": "いろ",
+          "translation": {
+            "vi": "màu sắc",
+            "en": "color"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "赤",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "đỏ",
+        "en": "red"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ",
+          "シャク"
+        ],
+        "kunReadings": [
+          "あか.い"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "赤道",
+          "reading": "せきどう",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "xích đạo",
+            "en": "equator"
+          }
+        },
+        {
+          "ja": "赤い",
+          "reading": "あかい",
+          "kanjiReading": "あか",
+          "translation": {
+            "vi": "đỏ",
+            "en": "red"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "青",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "xanh",
+        "en": "blue; green"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunReadings": [
+          "あお.い"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "青年",
+          "reading": "せいねん",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "thanh niên",
+            "en": "young man"
+          }
+        },
+        {
+          "ja": "青い",
+          "reading": "あおい",
+          "kanjiReading": "あお",
+          "translation": {
+            "vi": "xanh",
+            "en": "blue"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "黒",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "đen",
+        "en": "black"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コク"
+        ],
+        "kunReadings": [
+          "くろ.い"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "黒板",
+          "reading": "こくばん",
+          "kanjiReading": "コク",
+          "translation": {
+            "vi": "bảng đen",
+            "en": "blackboard"
+          }
+        },
+        {
+          "ja": "黒い",
+          "reading": "くろい",
+          "kanjiReading": "くろ",
+          "translation": {
+            "vi": "đen",
+            "en": "black"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "色",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「色」nghĩa là gì?",
+        "en": "What does 「色」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "màu",
+            "en": "color"
+          },
+          {
+            "vi": "đỏ",
+            "en": "red"
+          },
+          {
+            "vi": "xanh",
+            "en": "blue; green"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 色 nghĩa là màu.",
+        "en": "Correct! 色 means color."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 色 nghĩa là màu, như trong 「景色」 (phong cảnh).",
+        "en": "Not quite. 色 means color, as in 「景色」 (scenery)."
+      }
+    },
+    {
+      "item": "色",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「色」 trong 「景色」 (“phong cảnh”).",
+        "en": "Type the reading of 「色」 in 「景色」 (“scenery”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しき",
+          "シキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 景色, 色 đọc là しき (âm On).",
+        "en": "Correct! In 景色, 色 is read しき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 景色 (phong cảnh), 色 đọc là しき (âm On).",
+        "en": "In 景色 (scenery), 色 is read しき (on'yomi)."
+      }
+    },
+    {
+      "item": "色",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「色」(màu sắc; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「色」 (color; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょく",
+          "いろ",
+          "あかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 色 = いろ (màu sắc); 色 đọc là いろ (âm Kun).",
+        "en": "Correct! 色 = いろ (color); 色 is read いろ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "色 đọc là いろ (màu sắc): 色 mang âm Kun いろ.",
+        "en": "色 is read いろ (color): 色 takes the kun'yomi いろ."
+      }
+    },
+    {
+      "item": "赤",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「赤」nghĩa là gì?",
+        "en": "What does 「赤」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xanh",
+            "en": "blue; green"
+          },
+          {
+            "vi": "đỏ",
+            "en": "red"
+          },
+          {
+            "vi": "đen",
+            "en": "black"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 赤 nghĩa là đỏ.",
+        "en": "Correct! 赤 means red."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 赤 nghĩa là đỏ, như trong 「赤道」 (xích đạo).",
+        "en": "Not quite. 赤 means red, as in 「赤道」 (equator)."
+      }
+    },
+    {
+      "item": "赤",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「赤」 trong 「赤道」 (“xích đạo”).",
+        "en": "Type the reading of 「赤」 in 「赤道」 (“equator”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せき",
+          "セキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 赤道, 赤 đọc là せき (âm On).",
+        "en": "Correct! In 赤道, 赤 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 赤道 (xích đạo), 赤 đọc là せき (âm On).",
+        "en": "In 赤道 (equator), 赤 is read せき (on'yomi)."
+      }
+    },
+    {
+      "item": "赤",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「赤い」(đỏ) đọc là gì?",
+        "en": "How is 「赤い」 (red) read?"
+      },
+      "payload": {
+        "choices": [
+          "せきい",
+          "あおい",
+          "あかい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 赤い = あかい (đỏ); 赤 đọc là あか (âm Kun).",
+        "en": "Correct! 赤い = あかい (red); 赤 is read あか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "赤い đọc là あかい (đỏ): 赤 mang âm Kun あか.",
+        "en": "赤い is read あかい (red): 赤 takes the kun'yomi あか."
+      }
+    },
+    {
+      "item": "青",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「青」nghĩa là gì?",
+        "en": "What does 「青」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đen",
+            "en": "black"
+          },
+          {
+            "vi": "màu",
+            "en": "color"
+          },
+          {
+            "vi": "xanh",
+            "en": "blue; green"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 青 nghĩa là xanh.",
+        "en": "Correct! 青 means blue; green."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 青 nghĩa là xanh, như trong 「青年」 (thanh niên).",
+        "en": "Not quite. 青 means blue; green, as in 「青年」 (young man)."
+      }
+    },
+    {
+      "item": "青",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「青」 trong 「青年」 (“thanh niên”).",
+        "en": "Type the reading of 「青」 in 「青年」 (“young man”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 青年, 青 đọc là せい (âm On).",
+        "en": "Correct! In 青年, 青 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 青年 (thanh niên), 青 đọc là せい (âm On).",
+        "en": "In 青年 (young man), 青 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "青",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「青い」(xanh) đọc là gì?",
+        "en": "How is 「青い」 (blue) read?"
+      },
+      "payload": {
+        "choices": [
+          "あおい",
+          "せいい",
+          "くろい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 青い = あおい (xanh); 青 đọc là あお (âm Kun).",
+        "en": "Correct! 青い = あおい (blue); 青 is read あお (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "青い đọc là あおい (xanh): 青 mang âm Kun あお.",
+        "en": "青い is read あおい (blue): 青 takes the kun'yomi あお."
+      }
+    },
+    {
+      "item": "黒",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「黒」nghĩa là gì?",
+        "en": "What does 「黒」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đen",
+            "en": "black"
+          },
+          {
+            "vi": "màu",
+            "en": "color"
+          },
+          {
+            "vi": "đỏ",
+            "en": "red"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 黒 nghĩa là đen.",
+        "en": "Correct! 黒 means black."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 黒 nghĩa là đen, như trong 「黒板」 (bảng đen).",
+        "en": "Not quite. 黒 means black, as in 「黒板」 (blackboard)."
+      }
+    },
+    {
+      "item": "黒",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「黒」 trong 「黒板」 (“bảng đen”).",
+        "en": "Type the reading of 「黒」 in 「黒板」 (“blackboard”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こく",
+          "コク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 黒板, 黒 đọc là こく (âm On).",
+        "en": "Correct! In 黒板, 黒 is read こく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 黒板 (bảng đen), 黒 đọc là こく (âm On).",
+        "en": "In 黒板 (blackboard), 黒 is read こく (on'yomi)."
+      }
+    },
+    {
+      "item": "黒",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「黒い」(đen) đọc là gì?",
+        "en": "How is 「黒い」 (black) read?"
+      },
+      "payload": {
+        "choices": [
+          "こくい",
+          "くろい",
+          "あかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 黒い = くろい (đen); 黒 đọc là くろ (âm Kun).",
+        "en": "Correct! 黒い = くろい (black); 黒 is read くろ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "黒い đọc là くろい (đen): 黒 mang âm Kun くろ.",
+        "en": "黒い is read くろい (black): 黒 takes the kun'yomi くろ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "色",
+            {
+              "vi": "màu",
+              "en": "color"
+            }
+          ],
+          [
+            "赤",
+            {
+              "vi": "đỏ",
+              "en": "red"
+            }
+          ],
+          [
+            "青",
+            {
+              "vi": "xanh",
+              "en": "blue; green"
+            }
+          ],
+          [
+            "黒",
+            {
+              "vi": "đen",
+              "en": "black"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

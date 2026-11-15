@@ -1,0 +1,417 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-places-city",
+  "title": {
+    "vi": "Kanji địa điểm – thành phố (院 店 台)",
+    "en": "Places and the city kanji (院 店 台)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "院",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "viện; cơ sở",
+        "en": "institution"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "病院",
+          "reading": "びょういん",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "bệnh viện",
+            "en": "hospital"
+          }
+        },
+        {
+          "ja": "入院",
+          "reading": "にゅういん",
+          "kanjiReading": "イン",
+          "translation": {
+            "vi": "nhập viện",
+            "en": "hospitalization"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "店",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "cửa hàng",
+        "en": "shop"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テン"
+        ],
+        "kunReadings": [
+          "みせ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "喫茶店",
+          "reading": "きっさてん",
+          "kanjiReading": "テン",
+          "translation": {
+            "vi": "quán cà phê",
+            "en": "coffee shop"
+          }
+        },
+        {
+          "ja": "店",
+          "reading": "みせ",
+          "kanjiReading": "みせ",
+          "translation": {
+            "vi": "cửa hàng",
+            "en": "shop"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "台",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "bệ; đài; (đếm máy)",
+        "en": "stand; counter for machines"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダイ",
+          "タイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "台所",
+          "reading": "だいどころ",
+          "kanjiReading": "ダイ",
+          "translation": {
+            "vi": "nhà bếp",
+            "en": "kitchen"
+          }
+        },
+        {
+          "ja": "台風",
+          "reading": "たいふう",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "bão",
+            "en": "typhoon"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "院",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「院」nghĩa là gì?",
+        "en": "What does 「院」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "viện; cơ sở",
+            "en": "institution"
+          },
+          {
+            "vi": "cửa hàng",
+            "en": "shop"
+          },
+          {
+            "vi": "bệ; đài; (đếm máy)",
+            "en": "stand; counter for machines"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 院 nghĩa là viện; cơ sở.",
+        "en": "Correct! 院 means institution."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 院 nghĩa là viện; cơ sở, như trong 「病院」 (bệnh viện).",
+        "en": "Not quite. 院 means institution, as in 「病院」 (hospital)."
+      }
+    },
+    {
+      "item": "院",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「院」 trong 「病院」 (“bệnh viện”).",
+        "en": "Type the reading of 「院」 in 「病院」 (“hospital”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いん",
+          "イン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 病院, 院 đọc là いん (âm On).",
+        "en": "Correct! In 病院, 院 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 病院 (bệnh viện), 院 đọc là いん (âm On).",
+        "en": "In 病院 (hospital), 院 is read いん (on'yomi)."
+      }
+    },
+    {
+      "item": "院",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「入院」(nhập viện) đọc là gì?",
+        "en": "How is 「入院」 (hospitalization) read?"
+      },
+      "payload": {
+        "choices": [
+          "にゅうみせ",
+          "にゅういん",
+          "にゅうてん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 入院 = にゅういん (nhập viện); 院 đọc là いん (âm On).",
+        "en": "Correct! 入院 = にゅういん (hospitalization); 院 is read いん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "入院 đọc là にゅういん (nhập viện): 院 mang âm On いん.",
+        "en": "入院 is read にゅういん (hospitalization): 院 takes the on'yomi いん."
+      }
+    },
+    {
+      "item": "店",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「店」nghĩa là gì?",
+        "en": "What does 「店」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bệ; đài; (đếm máy)",
+            "en": "stand; counter for machines"
+          },
+          {
+            "vi": "cửa hàng",
+            "en": "shop"
+          },
+          {
+            "vi": "viện; cơ sở",
+            "en": "institution"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 店 nghĩa là cửa hàng.",
+        "en": "Correct! 店 means shop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 店 nghĩa là cửa hàng, như trong 「喫茶店」 (quán cà phê).",
+        "en": "Not quite. 店 means shop, as in 「喫茶店」 (coffee shop)."
+      }
+    },
+    {
+      "item": "店",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「店」 trong 「喫茶店」 (“quán cà phê”).",
+        "en": "Type the reading of 「店」 in 「喫茶店」 (“coffee shop”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てん",
+          "テン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 喫茶店, 店 đọc là てん (âm On).",
+        "en": "Correct! In 喫茶店, 店 is read てん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 喫茶店 (quán cà phê), 店 đọc là てん (âm On).",
+        "en": "In 喫茶店 (coffee shop), 店 is read てん (on'yomi)."
+      }
+    },
+    {
+      "item": "店",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「店」(cửa hàng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「店」 (shop; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "てん",
+          "たいふう",
+          "みせ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 店 = みせ (cửa hàng); 店 đọc là みせ (âm Kun).",
+        "en": "Correct! 店 = みせ (shop); 店 is read みせ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "店 đọc là みせ (cửa hàng): 店 mang âm Kun みせ.",
+        "en": "店 is read みせ (shop): 店 takes the kun'yomi みせ."
+      }
+    },
+    {
+      "item": "台",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「台」nghĩa là gì?",
+        "en": "What does 「台」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "viện; cơ sở",
+            "en": "institution"
+          },
+          {
+            "vi": "cửa hàng",
+            "en": "shop"
+          },
+          {
+            "vi": "bệ; đài; (đếm máy)",
+            "en": "stand; counter for machines"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 台 nghĩa là bệ; đài; (đếm máy).",
+        "en": "Correct! 台 means stand; counter for machines."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 台 nghĩa là bệ; đài; (đếm máy), như trong 「台所」 (nhà bếp).",
+        "en": "Not quite. 台 means stand; counter for machines, as in 「台所」 (kitchen)."
+      }
+    },
+    {
+      "item": "台",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「台」 trong 「台所」 (“nhà bếp”).",
+        "en": "Type the reading of 「台」 in 「台所」 (“kitchen”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だい",
+          "ダイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 台所, 台 đọc là だい (âm On).",
+        "en": "Correct! In 台所, 台 is read だい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 台所 (nhà bếp), 台 đọc là だい (âm On).",
+        "en": "In 台所 (kitchen), 台 is read だい (on'yomi)."
+      }
+    },
+    {
+      "item": "台",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「台風」(bão) đọc là gì?",
+        "en": "How is 「台風」 (typhoon) read?"
+      },
+      "payload": {
+        "choices": [
+          "たいふう",
+          "だいふう",
+          "たいぶう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 台風 = たいふう (bão); 台 đọc là たい (âm On).",
+        "en": "Correct! 台風 = たいふう (typhoon); 台 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "台風 đọc là たいふう (bão): 台 mang âm On たい.",
+        "en": "台風 is read たいふう (typhoon): 台 takes the on'yomi たい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "院",
+            {
+              "vi": "viện; cơ sở",
+              "en": "institution"
+            }
+          ],
+          [
+            "店",
+            {
+              "vi": "cửa hàng",
+              "en": "shop"
+            }
+          ],
+          [
+            "台",
+            {
+              "vi": "bệ; đài; (đếm máy)",
+              "en": "stand; counter for machines"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

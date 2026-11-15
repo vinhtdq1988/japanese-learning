@@ -1,0 +1,541 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (育 師 徒 科)",
+    "en": "Education and culture kanji (育 師 徒 科)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "育",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "nuôi; lớn lên",
+        "en": "raise; grow"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イク"
+        ],
+        "kunReadings": [
+          "そだ.つ",
+          "そだ.てる"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "教育",
+          "reading": "きょういく",
+          "kanjiReading": "イク",
+          "translation": {
+            "vi": "giáo dục",
+            "en": "education"
+          }
+        },
+        {
+          "ja": "育つ",
+          "reading": "そだつ",
+          "kanjiReading": "そだ",
+          "translation": {
+            "vi": "lớn lên",
+            "en": "to grow up"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "師",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "thầy; bậc thầy",
+        "en": "teacher; master"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "教師",
+          "reading": "きょうし",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "giáo viên",
+            "en": "teacher"
+          }
+        },
+        {
+          "ja": "医師",
+          "reading": "いし",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "bác sĩ",
+            "en": "physician"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "徒",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "học trò; đi bộ",
+        "en": "pupil; on foot"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ト"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "生徒",
+          "reading": "せいと",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "học sinh",
+            "en": "pupil"
+          }
+        },
+        {
+          "ja": "徒歩",
+          "reading": "とほ",
+          "kanjiReading": "ト",
+          "translation": {
+            "vi": "đi bộ",
+            "en": "on foot"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "科",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "khoa; môn",
+        "en": "department; subject"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "科学",
+          "reading": "かがく",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "khoa học",
+            "en": "science"
+          }
+        },
+        {
+          "ja": "教科書",
+          "reading": "きょうかしょ",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "sách giáo khoa",
+            "en": "textbook"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "育",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「育」nghĩa là gì?",
+        "en": "What does 「育」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nuôi; lớn lên",
+            "en": "raise; grow"
+          },
+          {
+            "vi": "thầy; bậc thầy",
+            "en": "teacher; master"
+          },
+          {
+            "vi": "học trò; đi bộ",
+            "en": "pupil; on foot"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 育 nghĩa là nuôi; lớn lên.",
+        "en": "Correct! 育 means raise; grow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 育 nghĩa là nuôi; lớn lên, như trong 「教育」 (giáo dục).",
+        "en": "Not quite. 育 means raise; grow, as in 「教育」 (education)."
+      }
+    },
+    {
+      "item": "育",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「育」 trong 「教育」 (“giáo dục”).",
+        "en": "Type the reading of 「育」 in 「教育」 (“education”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "いく",
+          "イク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 教育, 育 đọc là いく (âm On).",
+        "en": "Correct! In 教育, 育 is read いく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 教育 (giáo dục), 育 đọc là いく (âm On).",
+        "en": "In 教育 (education), 育 is read いく (on'yomi)."
+      }
+    },
+    {
+      "item": "育",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「育つ」(lớn lên) đọc là gì?",
+        "en": "How is 「育つ」 (to grow up) read?"
+      },
+      "payload": {
+        "choices": [
+          "いくつ",
+          "そだつ",
+          "せいと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 育つ = そだつ (lớn lên); 育 đọc là そだ (âm Kun).",
+        "en": "Correct! 育つ = そだつ (to grow up); 育 is read そだ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "育つ đọc là そだつ (lớn lên): 育 mang âm Kun そだ.",
+        "en": "育つ is read そだつ (to grow up): 育 takes the kun'yomi そだ."
+      }
+    },
+    {
+      "item": "師",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「師」nghĩa là gì?",
+        "en": "What does 「師」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "học trò; đi bộ",
+            "en": "pupil; on foot"
+          },
+          {
+            "vi": "thầy; bậc thầy",
+            "en": "teacher; master"
+          },
+          {
+            "vi": "khoa; môn",
+            "en": "department; subject"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 師 nghĩa là thầy; bậc thầy.",
+        "en": "Correct! 師 means teacher; master."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 師 nghĩa là thầy; bậc thầy, như trong 「教師」 (giáo viên).",
+        "en": "Not quite. 師 means teacher; master, as in 「教師」 (teacher)."
+      }
+    },
+    {
+      "item": "師",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「師」 trong 「教師」 (“giáo viên”).",
+        "en": "Type the reading of 「師」 in 「教師」 (“teacher”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 教師, 師 đọc là し (âm On).",
+        "en": "Correct! In 教師, 師 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 教師 (giáo viên), 師 đọc là し (âm On).",
+        "en": "In 教師 (teacher), 師 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "師",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「医師」(bác sĩ) đọc là gì?",
+        "en": "How is 「医師」 (physician) read?"
+      },
+      "payload": {
+        "choices": [
+          "いじ",
+          "いと",
+          "いし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 医師 = いし (bác sĩ); 師 đọc là し (âm On).",
+        "en": "Correct! 医師 = いし (physician); 師 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "医師 đọc là いし (bác sĩ): 師 mang âm On し.",
+        "en": "医師 is read いし (physician): 師 takes the on'yomi し."
+      }
+    },
+    {
+      "item": "徒",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「徒」nghĩa là gì?",
+        "en": "What does 「徒」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khoa; môn",
+            "en": "department; subject"
+          },
+          {
+            "vi": "nuôi; lớn lên",
+            "en": "raise; grow"
+          },
+          {
+            "vi": "học trò; đi bộ",
+            "en": "pupil; on foot"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 徒 nghĩa là học trò; đi bộ.",
+        "en": "Correct! 徒 means pupil; on foot."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 徒 nghĩa là học trò; đi bộ, như trong 「生徒」 (học sinh).",
+        "en": "Not quite. 徒 means pupil; on foot, as in 「生徒」 (pupil)."
+      }
+    },
+    {
+      "item": "徒",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「徒」 trong 「生徒」 (“học sinh”).",
+        "en": "Type the reading of 「徒」 in 「生徒」 (“pupil”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "と",
+          "ト"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 生徒, 徒 đọc là と (âm On).",
+        "en": "Correct! In 生徒, 徒 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 生徒 (học sinh), 徒 đọc là と (âm On).",
+        "en": "In 生徒 (pupil), 徒 is read と (on'yomi)."
+      }
+    },
+    {
+      "item": "徒",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「徒歩」(đi bộ) đọc là gì?",
+        "en": "How is 「徒歩」 (on foot) read?"
+      },
+      "payload": {
+        "choices": [
+          "とほ",
+          "どほ",
+          "とぼ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 徒歩 = とほ (đi bộ); 徒 đọc là と (âm On).",
+        "en": "Correct! 徒歩 = とほ (on foot); 徒 is read と (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "徒歩 đọc là とほ (đi bộ): 徒 mang âm On と.",
+        "en": "徒歩 is read とほ (on foot): 徒 takes the on'yomi と."
+      }
+    },
+    {
+      "item": "科",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「科」nghĩa là gì?",
+        "en": "What does 「科」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khoa; môn",
+            "en": "department; subject"
+          },
+          {
+            "vi": "nuôi; lớn lên",
+            "en": "raise; grow"
+          },
+          {
+            "vi": "thầy; bậc thầy",
+            "en": "teacher; master"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 科 nghĩa là khoa; môn.",
+        "en": "Correct! 科 means department; subject."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 科 nghĩa là khoa; môn, như trong 「科学」 (khoa học).",
+        "en": "Not quite. 科 means department; subject, as in 「科学」 (science)."
+      }
+    },
+    {
+      "item": "科",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「科」 trong 「科学」 (“khoa học”).",
+        "en": "Type the reading of 「科」 in 「科学」 (“science”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 科学, 科 đọc là か (âm On).",
+        "en": "Correct! In 科学, 科 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 科学 (khoa học), 科 đọc là か (âm On).",
+        "en": "In 科学 (science), 科 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "科",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「教科書」(sách giáo khoa) đọc là gì?",
+        "en": "How is 「教科書」 (textbook) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょうがしょ",
+          "きょうかしょ",
+          "きょうかじょ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 教科書 = きょうかしょ (sách giáo khoa); 科 đọc là か (âm On).",
+        "en": "Correct! 教科書 = きょうかしょ (textbook); 科 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "教科書 đọc là きょうかしょ (sách giáo khoa): 科 mang âm On か.",
+        "en": "教科書 is read きょうかしょ (textbook): 科 takes the on'yomi か."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "育",
+            {
+              "vi": "nuôi; lớn lên",
+              "en": "raise; grow"
+            }
+          ],
+          [
+            "師",
+            {
+              "vi": "thầy; bậc thầy",
+              "en": "teacher; master"
+            }
+          ],
+          [
+            "徒",
+            {
+              "vi": "học trò; đi bộ",
+              "en": "pupil; on foot"
+            }
+          ],
+          [
+            "科",
+            {
+              "vi": "khoa; môn",
+              "en": "department; subject"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

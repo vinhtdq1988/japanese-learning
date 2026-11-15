@@ -3,7 +3,7 @@ import { insertAdminLog } from '../db/repositories/admin-logs.js';
 import {
   getTopic,
   getUnit,
-  listActiveKanjiCharacters,
+  listActiveItemKeys,
   insertExercise,
   insertItem,
   insertUnit,
@@ -166,13 +166,15 @@ async function assertActivatable(
   if (!unit) throw notFound();
   const [items, exercises] = await Promise.all([listItems(db, unitId), listExercises(db, unitId)]);
   const isKanji = unit.kind === 'kanji';
-  // Ngữ cảnh toàn danh mục chỉ cần cho quy tắc Kanji: chủ đề của chữ và chữ đã có ở bài `active` khác.
-  const [topicSkills, existingKanjiChars] = isKanji
-    ? await Promise.all([
-        listTopics(db).then((rows) => new Map(rows.map((t) => [t.id, t.skill]))),
-        listActiveKanjiCharacters(db, unitId),
-      ])
-    : [undefined, undefined];
+  const hasPrimaryKeys = isKanji || unit.kind === 'vocabulary' || unit.kind === 'grammar';
+  // Ngữ cảnh toàn danh mục: chủ đề của chữ Kanji, và mục chính đã có ở đơn vị `active` khác cùng loại (Kanji,
+  // từ vựng, ngữ pháp — FR-007). Các quy tắc biên soạn AU4–AU13 KHÔNG chạy ở đây (chỉ ở seed/lint).
+  const [topicSkills, existingItemKeys] = await Promise.all([
+    isKanji ? listTopics(db).then((rows) => new Map(rows.map((t) => [t.id, t.skill]))) : undefined,
+    hasPrimaryKeys
+      ? listActiveItemKeys(db, unitId, unit.kind as 'kanji' | 'vocabulary' | 'grammar')
+      : undefined,
+  ]);
   const itemDrafts: ItemDraft[] = items.map((item) => ({ ...item, topic: item.topicId }));
   const indexOfItem = new Map(items.map((item, index) => [item.id, index]));
   const exerciseDrafts: ExerciseDraft[] = exercises.map((ex) => ({
@@ -193,7 +195,7 @@ async function assertActivatable(
     },
     {
       secondsPerExercise: deps.config.REVIEW_SECONDS_PER_ITEM,
-      ...(existingKanjiChars ? { existingKanjiChars } : {}),
+      ...(existingItemKeys ? { existingItemKeys } : {}),
       ...(topicSkills ? { topicSkillOf: (ref: string) => topicSkills.get(ref) } : {}),
     },
   );

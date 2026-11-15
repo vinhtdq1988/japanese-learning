@@ -1,0 +1,673 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (留 復 泳 突 投)",
+    "en": "Verbs and actions kanji (留 復 泳 突 投)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "留",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "lưu; giữ lại",
+        "en": "stay; fasten"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リュウ",
+          "ル"
+        ],
+        "kunReadings": [
+          "と.める",
+          "と.まる",
+          "とど.める"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "留学",
+          "reading": "りゅうがく",
+          "kanjiReading": "リュウ",
+          "translation": {
+            "vi": "du học",
+            "en": "study abroad"
+          }
+        },
+        {
+          "ja": "留守",
+          "reading": "るす",
+          "kanjiReading": "ル",
+          "translation": {
+            "vi": "vắng nhà",
+            "en": "absence from home"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "復",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "phục; quay lại; lặp lại",
+        "en": "return; repeat"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "復習",
+          "reading": "ふくしゅう",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "ôn tập",
+            "en": "review"
+          }
+        },
+        {
+          "ja": "往復",
+          "reading": "おうふく",
+          "kanjiReading": "フク",
+          "translation": {
+            "vi": "khứ hồi",
+            "en": "round trip"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "泳",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "bơi",
+        "en": "swim"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エイ"
+        ],
+        "kunReadings": [
+          "およ.ぐ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "水泳",
+          "reading": "すいえい",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "bơi lội",
+            "en": "swimming"
+          }
+        },
+        {
+          "ja": "泳ぐ",
+          "reading": "およぐ",
+          "kanjiReading": "およ",
+          "translation": {
+            "vi": "bơi",
+            "en": "to swim"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "突",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "đâm; đột ngột",
+        "en": "thrust; suddenly"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トツ"
+        ],
+        "kunReadings": [
+          "つ.く"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "突然",
+          "reading": "とつぜん",
+          "kanjiReading": "トツ",
+          "translation": {
+            "vi": "đột nhiên",
+            "en": "suddenly"
+          }
+        },
+        {
+          "ja": "突く",
+          "reading": "つく",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "chọc; đâm",
+            "en": "to poke"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "投",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "ném; đầu",
+        "en": "throw; cast"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "な.げる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "投票",
+          "reading": "とうひょう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "bỏ phiếu",
+            "en": "voting"
+          }
+        },
+        {
+          "ja": "投げる",
+          "reading": "なげる",
+          "kanjiReading": "な",
+          "translation": {
+            "vi": "ném",
+            "en": "to throw"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "留",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「留」nghĩa là gì?",
+        "en": "What does 「留」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lưu; giữ lại",
+            "en": "stay; fasten"
+          },
+          {
+            "vi": "phục; quay lại; lặp lại",
+            "en": "return; repeat"
+          },
+          {
+            "vi": "bơi",
+            "en": "swim"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 留 nghĩa là lưu; giữ lại.",
+        "en": "Correct! 留 means stay; fasten."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 留 nghĩa là lưu; giữ lại, như trong 「留学」 (du học).",
+        "en": "Not quite. 留 means stay; fasten, as in 「留学」 (study abroad)."
+      }
+    },
+    {
+      "item": "留",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「留」 trong 「留学」 (“du học”).",
+        "en": "Type the reading of 「留」 in 「留学」 (“study abroad”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りゅう",
+          "リュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 留学, 留 đọc là りゅう (âm On).",
+        "en": "Correct! In 留学, 留 is read りゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 留学 (du học), 留 đọc là りゅう (âm On).",
+        "en": "In 留学 (study abroad), 留 is read りゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "留",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「留守」(vắng nhà) đọc là gì?",
+        "en": "How is 「留守」 (absence from home) read?"
+      },
+      "payload": {
+        "choices": [
+          "とす",
+          "るす",
+          "るず"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 留守 = るす (vắng nhà); 留 đọc là る (âm On).",
+        "en": "Correct! 留守 = るす (absence from home); 留 is read る (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "留守 đọc là るす (vắng nhà): 留 mang âm On る.",
+        "en": "留守 is read るす (absence from home): 留 takes the on'yomi る."
+      }
+    },
+    {
+      "item": "復",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「復」nghĩa là gì?",
+        "en": "What does 「復」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bơi",
+            "en": "swim"
+          },
+          {
+            "vi": "phục; quay lại; lặp lại",
+            "en": "return; repeat"
+          },
+          {
+            "vi": "đâm; đột ngột",
+            "en": "thrust; suddenly"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 復 nghĩa là phục; quay lại; lặp lại.",
+        "en": "Correct! 復 means return; repeat."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 復 nghĩa là phục; quay lại; lặp lại, như trong 「復習」 (ôn tập).",
+        "en": "Not quite. 復 means return; repeat, as in 「復習」 (review)."
+      }
+    },
+    {
+      "item": "復",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「復」 trong 「復習」 (“ôn tập”).",
+        "en": "Type the reading of 「復」 in 「復習」 (“review”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふく",
+          "フク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 復習, 復 đọc là ふく (âm On).",
+        "en": "Correct! In 復習, 復 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 復習 (ôn tập), 復 đọc là ふく (âm On).",
+        "en": "In 復習 (review), 復 is read ふく (on'yomi)."
+      }
+    },
+    {
+      "item": "復",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「往復」(khứ hồi) đọc là gì?",
+        "en": "How is 「往復」 (round trip) read?"
+      },
+      "payload": {
+        "choices": [
+          "おうぶく",
+          "おうおよ",
+          "おうふく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 往復 = おうふく (khứ hồi); 復 đọc là ふく (âm On).",
+        "en": "Correct! 往復 = おうふく (round trip); 復 is read ふく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "往復 đọc là おうふく (khứ hồi): 復 mang âm On ふく.",
+        "en": "往復 is read おうふく (round trip): 復 takes the on'yomi ふく."
+      }
+    },
+    {
+      "item": "泳",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「泳」nghĩa là gì?",
+        "en": "What does 「泳」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đâm; đột ngột",
+            "en": "thrust; suddenly"
+          },
+          {
+            "vi": "ném; đầu",
+            "en": "throw; cast"
+          },
+          {
+            "vi": "bơi",
+            "en": "swim"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 泳 nghĩa là bơi.",
+        "en": "Correct! 泳 means swim."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 泳 nghĩa là bơi, như trong 「水泳」 (bơi lội).",
+        "en": "Not quite. 泳 means swim, as in 「水泳」 (swimming)."
+      }
+    },
+    {
+      "item": "泳",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「泳」 trong 「水泳」 (“bơi lội”).",
+        "en": "Type the reading of 「泳」 in 「水泳」 (“swimming”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えい",
+          "エイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 水泳, 泳 đọc là えい (âm On).",
+        "en": "Correct! In 水泳, 泳 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 水泳 (bơi lội), 泳 đọc là えい (âm On).",
+        "en": "In 水泳 (swimming), 泳 is read えい (on'yomi)."
+      }
+    },
+    {
+      "item": "泳",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「泳ぐ」(bơi) đọc là gì?",
+        "en": "How is 「泳ぐ」 (to swim) read?"
+      },
+      "payload": {
+        "choices": [
+          "およぐ",
+          "えいぐ",
+          "なげる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 泳ぐ = およぐ (bơi); 泳 đọc là およ (âm Kun).",
+        "en": "Correct! 泳ぐ = およぐ (to swim); 泳 is read およ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "泳ぐ đọc là およぐ (bơi): 泳 mang âm Kun およ.",
+        "en": "泳ぐ is read およぐ (to swim): 泳 takes the kun'yomi およ."
+      }
+    },
+    {
+      "item": "突",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「突」nghĩa là gì?",
+        "en": "What does 「突」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đâm; đột ngột",
+            "en": "thrust; suddenly"
+          },
+          {
+            "vi": "ném; đầu",
+            "en": "throw; cast"
+          },
+          {
+            "vi": "lưu; giữ lại",
+            "en": "stay; fasten"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 突 nghĩa là đâm; đột ngột.",
+        "en": "Correct! 突 means thrust; suddenly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 突 nghĩa là đâm; đột ngột, như trong 「突然」 (đột nhiên).",
+        "en": "Not quite. 突 means thrust; suddenly, as in 「突然」 (suddenly)."
+      }
+    },
+    {
+      "item": "突",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「突」 trong 「突然」 (“đột nhiên”).",
+        "en": "Type the reading of 「突」 in 「突然」 (“suddenly”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とつ",
+          "トツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 突然, 突 đọc là とつ (âm On).",
+        "en": "Correct! In 突然, 突 is read とつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 突然 (đột nhiên), 突 đọc là とつ (âm On).",
+        "en": "In 突然 (suddenly), 突 is read とつ (on'yomi)."
+      }
+    },
+    {
+      "item": "突",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「突く」(chọc; đâm) đọc là gì?",
+        "en": "How is 「突く」 (to poke) read?"
+      },
+      "payload": {
+        "choices": [
+          "とつく",
+          "つく",
+          "るす"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 突く = つく (chọc; đâm); 突 đọc là つ (âm Kun).",
+        "en": "Correct! 突く = つく (to poke); 突 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "突く đọc là つく (chọc; đâm): 突 mang âm Kun つ.",
+        "en": "突く is read つく (to poke): 突 takes the kun'yomi つ."
+      }
+    },
+    {
+      "item": "投",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「投」nghĩa là gì?",
+        "en": "What does 「投」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lưu; giữ lại",
+            "en": "stay; fasten"
+          },
+          {
+            "vi": "ném; đầu",
+            "en": "throw; cast"
+          },
+          {
+            "vi": "phục; quay lại; lặp lại",
+            "en": "return; repeat"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 投 nghĩa là ném; đầu.",
+        "en": "Correct! 投 means throw; cast."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 投 nghĩa là ném; đầu, như trong 「投票」 (bỏ phiếu).",
+        "en": "Not quite. 投 means throw; cast, as in 「投票」 (voting)."
+      }
+    },
+    {
+      "item": "投",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「投」 trong 「投票」 (“bỏ phiếu”).",
+        "en": "Type the reading of 「投」 in 「投票」 (“voting”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 投票, 投 đọc là とう (âm On).",
+        "en": "Correct! In 投票, 投 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 投票 (bỏ phiếu), 投 đọc là とう (âm On).",
+        "en": "In 投票 (voting), 投 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "投",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「投げる」(ném) đọc là gì?",
+        "en": "How is 「投げる」 (to throw) read?"
+      },
+      "payload": {
+        "choices": [
+          "とうげる",
+          "およぐ",
+          "なげる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 投げる = なげる (ném); 投 đọc là な (âm Kun).",
+        "en": "Correct! 投げる = なげる (to throw); 投 is read な (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "投げる đọc là なげる (ném): 投 mang âm Kun な.",
+        "en": "投げる is read なげる (to throw): 投 takes the kun'yomi な."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "留",
+            {
+              "vi": "lưu; giữ lại",
+              "en": "stay; fasten"
+            }
+          ],
+          [
+            "復",
+            {
+              "vi": "phục; quay lại; lặp lại",
+              "en": "return; repeat"
+            }
+          ],
+          [
+            "泳",
+            {
+              "vi": "bơi",
+              "en": "swim"
+            }
+          ],
+          [
+            "突",
+            {
+              "vi": "đâm; đột ngột",
+              "en": "thrust; suddenly"
+            }
+          ],
+          [
+            "投",
+            {
+              "vi": "ném; đầu",
+              "en": "throw; cast"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

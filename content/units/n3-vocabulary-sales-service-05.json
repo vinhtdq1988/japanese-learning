@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-sales-service",
+  "title": {
+    "vi": "Cửa hàng và giờ mở cửa",
+    "en": "The shop and its hours"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 840,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "営業時間",
+      "reading": "えいぎょうじかん",
+      "meaning": {
+        "vi": "Giờ mở cửa",
+        "en": "Business hours"
+      },
+      "examples": [
+        {
+          "ja": "この店の営業時間は、夜十時までです。",
+          "reading": "このみせのえいぎょうじかんは、よるじゅうじまでです。",
+          "translation": {
+            "vi": "Giờ mở cửa của cửa hàng này kéo dài đến 10 giờ tối.",
+            "en": "This shop's business hours run until 10 p.m."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "開店",
+      "reading": "かいてん",
+      "meaning": {
+        "vi": "Mở cửa hàng; khai trương",
+        "en": "Opening (a shop)"
+      },
+      "examples": [
+        {
+          "ja": "朝十時の開店を、お客様が待っています。",
+          "reading": "あさじゅうじのかいてんを、おきゃくさまがまっています。",
+          "translation": {
+            "vi": "Khách hàng đang chờ cửa hàng mở cửa lúc 10 giờ sáng.",
+            "en": "Customers are waiting for the shop to open at ten in the morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "閉店",
+      "reading": "へいてん",
+      "meaning": {
+        "vi": "Đóng cửa hàng; ngừng kinh doanh",
+        "en": "Closing (a shop)"
+      },
+      "examples": [
+        {
+          "ja": "長く続いた店が、来月閉店します。",
+          "reading": "ながくつづいたみせが、らいげつへいてんします。",
+          "translation": {
+            "vi": "Cửa hàng hoạt động lâu năm sẽ đóng cửa vào tháng sau.",
+            "en": "The long-running shop will close next month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "店頭",
+      "reading": "てんとう",
+      "meaning": {
+        "vi": "Quầy hàng; mặt tiền cửa hàng",
+        "en": "Shop front; in-store"
+      },
+      "examples": [
+        {
+          "ja": "新しい商品は、店頭に並べてあります。",
+          "reading": "あたらしいしょうひんは、てんとうにならべてあります。",
+          "translation": {
+            "vi": "Sản phẩm mới được bày ở quầy trước cửa hàng.",
+            "en": "The new products are displayed at the front of the shop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "店内",
+      "reading": "てんない",
+      "meaning": {
+        "vi": "Bên trong cửa hàng",
+        "en": "Inside the shop"
+      },
+      "examples": [
+        {
+          "ja": "店内では、写真をとらないでください。",
+          "reading": "てんないでは、しゃしんをとらないでください。",
+          "translation": {
+            "vi": "Xin đừng chụp ảnh bên trong cửa hàng.",
+            "en": "Please do not take photos inside the shop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "試着",
+      "reading": "しちゃく",
+      "meaning": {
+        "vi": "Mặc thử",
+        "en": "Trying on (clothes)"
+      },
+      "examples": [
+        {
+          "ja": "買う前に、服を試着してもいいですか。",
+          "reading": "かうまえに、ふくをしちゃくしてもいいですか。",
+          "translation": {
+            "vi": "Trước khi mua, tôi mặc thử quần áo được không?",
+            "en": "May I try on the clothes before buying?"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "営業時間",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店の（　）は、夜十時までです。 — Nghĩa của câu: “Giờ mở cửa của cửa hàng này kéo dài đến 10 giờ tối.”",
+        "en": "Choose the word that fits the blank: この店の（　）は、夜十時までです。 — Meaning of the sentence: “This shop's business hours run until 10 p.m.”"
+      },
+      "payload": {
+        "choices": [
+          "営業時間",
+          "店頭",
+          "開店",
+          "店内"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「営業時間」(Giờ mở cửa) hợp nghĩa câu này: “Giờ mở cửa của cửa hàng này kéo dài đến 10 giờ tối.”",
+        "en": "Correct! 「営業時間」(Business hours) fits this sentence: “This shop's business hours run until 10 p.m.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giờ mở cửa của cửa hàng này kéo dài đến 10 giờ tối.”, nên cần 「営業時間」(Giờ mở cửa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This shop's business hours run until 10 p.m.”, so it needs 「営業時間」(Business hours); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "開店",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 朝十時の（　）を、お客様が待っています。 — Nghĩa của câu: “Khách hàng đang chờ cửa hàng mở cửa lúc 10 giờ sáng.”",
+        "en": "Choose the word that fits the blank: 朝十時の（　）を、お客様が待っています。 — Meaning of the sentence: “Customers are waiting for the shop to open at ten in the morning.”"
+      },
+      "payload": {
+        "choices": [
+          "店頭",
+          "開店",
+          "営業時間",
+          "試着"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「開店」(Mở cửa hàng; khai trương) hợp nghĩa câu này: “Khách hàng đang chờ cửa hàng mở cửa lúc 10 giờ sáng.”",
+        "en": "Correct! 「開店」(Opening (a shop)) fits this sentence: “Customers are waiting for the shop to open at ten in the morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khách hàng đang chờ cửa hàng mở cửa lúc 10 giờ sáng.”, nên cần 「開店」(Mở cửa hàng; khai trương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Customers are waiting for the shop to open at ten in the morning.”, so it needs 「開店」(Opening (a shop)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "閉店",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 長く続いた店が、来月（　）します。 — Nghĩa của câu: “Cửa hàng hoạt động lâu năm sẽ đóng cửa vào tháng sau.”",
+        "en": "Choose the word that fits the blank: 長く続いた店が、来月（　）します。 — Meaning of the sentence: “The long-running shop will close next month.”"
+      },
+      "payload": {
+        "choices": [
+          "試着",
+          "営業時間",
+          "閉店",
+          "店内"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「閉店」(Đóng cửa hàng; ngừng kinh doanh) hợp nghĩa câu này: “Cửa hàng hoạt động lâu năm sẽ đóng cửa vào tháng sau.”",
+        "en": "Correct! 「閉店」(Closing (a shop)) fits this sentence: “The long-running shop will close next month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng hoạt động lâu năm sẽ đóng cửa vào tháng sau.”, nên cần 「閉店」(Đóng cửa hàng; ngừng kinh doanh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The long-running shop will close next month.”, so it needs 「閉店」(Closing (a shop)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "店頭",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい商品は、（　）に並べてあります。 — Nghĩa của câu: “Sản phẩm mới được bày ở quầy trước cửa hàng.”",
+        "en": "Choose the word that fits the blank: 新しい商品は、（　）に並べてあります。 — Meaning of the sentence: “The new products are displayed at the front of the shop.”"
+      },
+      "payload": {
+        "choices": [
+          "店内",
+          "営業時間",
+          "試着",
+          "店頭"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「店頭」(Quầy hàng; mặt tiền cửa hàng) hợp nghĩa câu này: “Sản phẩm mới được bày ở quầy trước cửa hàng.”",
+        "en": "Correct! 「店頭」(Shop front; in-store) fits this sentence: “The new products are displayed at the front of the shop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sản phẩm mới được bày ở quầy trước cửa hàng.”, nên cần 「店頭」(Quầy hàng; mặt tiền cửa hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new products are displayed at the front of the shop.”, so it needs 「店頭」(Shop front; in-store); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "店内",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）では、写真をとらないでください。 — Nghĩa của câu: “Xin đừng chụp ảnh bên trong cửa hàng.”",
+        "en": "Choose the word that fits the blank: （　）では、写真をとらないでください。 — Meaning of the sentence: “Please do not take photos inside the shop.”"
+      },
+      "payload": {
+        "choices": [
+          "店内",
+          "営業時間",
+          "開店",
+          "店頭"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「店内」(Bên trong cửa hàng) hợp nghĩa câu này: “Xin đừng chụp ảnh bên trong cửa hàng.”",
+        "en": "Correct! 「店内」(Inside the shop) fits this sentence: “Please do not take photos inside the shop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin đừng chụp ảnh bên trong cửa hàng.”, nên cần 「店内」(Bên trong cửa hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please do not take photos inside the shop.”, so it needs 「店内」(Inside the shop); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "試着",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 買う前に、服を（　）してもいいですか。 — Nghĩa của câu: “Trước khi mua, tôi mặc thử quần áo được không?”",
+        "en": "Choose the word that fits the blank: 買う前に、服を（　）してもいいですか。 — Meaning of the sentence: “May I try on the clothes before buying?”"
+      },
+      "payload": {
+        "choices": [
+          "店内",
+          "試着",
+          "営業時間",
+          "開店"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「試着」(Mặc thử) hợp nghĩa câu này: “Trước khi mua, tôi mặc thử quần áo được không?”",
+        "en": "Correct! 「試着」(Trying on (clothes)) fits this sentence: “May I try on the clothes before buying?”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi mua, tôi mặc thử quần áo được không?”, nên cần 「試着」(Mặc thử); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “May I try on the clothes before buying?”, so it needs 「試着」(Trying on (clothes)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "営業時間",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この店の「営業時間」は、夜十時までです。",
+        "en": "Choose the correct reading of the word in 「」: この店の「営業時間」は、夜十時までです。"
+      },
+      "payload": {
+        "choices": [
+          "てんない",
+          "えいぎょうじかん",
+          "かいてん",
+          "へいてん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「営業時間」 đọc là 「えいぎょうじかん」, nghĩa là Giờ mở cửa.",
+        "en": "Correct! 「営業時間」 is read 「えいぎょうじかん」 and means Business hours."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「営業時間」 đọc là 「えいぎょうじかん」 (Giờ mở cửa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「営業時間」 is read 「えいぎょうじかん」 (Business hours); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "店頭",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 新しい商品は、「店頭」に並べてあります。",
+        "en": "Choose the correct reading of the word in 「」: 新しい商品は、「店頭」に並べてあります。"
+      },
+      "payload": {
+        "choices": [
+          "えいぎょうじかん",
+          "かいてん",
+          "てんとう",
+          "へいてん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「店頭」 đọc là 「てんとう」, nghĩa là Quầy hàng; mặt tiền cửa hàng.",
+        "en": "Correct! 「店頭」 is read 「てんとう」 and means Shop front; in-store."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「店頭」 đọc là 「てんとう」 (Quầy hàng; mặt tiền cửa hàng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「店頭」 is read 「てんとう」 (Shop front; in-store); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "閉店",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 長く続いた店が、来月「へいてん」します。",
+        "en": "Choose the correct way to write the word in 「」: 長く続いた店が、来月「へいてん」します。"
+      },
+      "payload": {
+        "choices": [
+          "店頭",
+          "営業時間",
+          "閉店",
+          "店内"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「へいてん」 viết là 「閉店」, nghĩa là Đóng cửa hàng; ngừng kinh doanh.",
+        "en": "Correct! 「へいてん」 is written 「閉店」 and means Closing (a shop)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「へいてん」 viết là 「閉店」 (Đóng cửa hàng; ngừng kinh doanh); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「へいてん」 is written 「閉店」 (Closing (a shop)); the other words are read differently."
+      }
+    }
+  ]
+}

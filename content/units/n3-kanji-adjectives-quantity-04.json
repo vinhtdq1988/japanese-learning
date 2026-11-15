@@ -1,0 +1,544 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (両 他 最 限)",
+    "en": "Adjectives and quantity kanji (両 他 最 限)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "両",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "hai; cả hai",
+        "en": "both; two"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リョウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "両方",
+          "reading": "りょうほう",
+          "kanjiReading": "リョウ",
+          "translation": {
+            "vi": "cả hai bên",
+            "en": "both"
+          }
+        },
+        {
+          "ja": "両親",
+          "reading": "りょうしん",
+          "kanjiReading": "リョウ",
+          "translation": {
+            "vi": "bố mẹ",
+            "en": "parents"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "他",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "khác",
+        "en": "other"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タ"
+        ],
+        "kunReadings": [
+          "ほか"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "他人",
+          "reading": "たにん",
+          "kanjiReading": "タ",
+          "translation": {
+            "vi": "người khác",
+            "en": "another person"
+          }
+        },
+        {
+          "ja": "他",
+          "reading": "ほか",
+          "kanjiReading": "ほか",
+          "translation": {
+            "vi": "cái khác",
+            "en": "other"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "最",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "nhất; cực kỳ",
+        "en": "most; extreme"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サイ"
+        ],
+        "kunReadings": [
+          "もっと.も"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "最近",
+          "reading": "さいきん",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "gần đây",
+            "en": "recently"
+          }
+        },
+        {
+          "ja": "最も",
+          "reading": "もっとも",
+          "kanjiReading": "もっと",
+          "translation": {
+            "vi": "nhất",
+            "en": "most"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "限",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "giới hạn",
+        "en": "limit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン"
+        ],
+        "kunReadings": [
+          "かぎ.る"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "限界",
+          "reading": "げんかい",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "giới hạn",
+            "en": "limit"
+          }
+        },
+        {
+          "ja": "限る",
+          "reading": "かぎる",
+          "kanjiReading": "かぎ",
+          "translation": {
+            "vi": "giới hạn",
+            "en": "to limit"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "両",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「両」nghĩa là gì?",
+        "en": "What does 「両」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hai; cả hai",
+            "en": "both; two"
+          },
+          {
+            "vi": "khác",
+            "en": "other"
+          },
+          {
+            "vi": "nhất; cực kỳ",
+            "en": "most; extreme"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 両 nghĩa là hai; cả hai.",
+        "en": "Correct! 両 means both; two."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 両 nghĩa là hai; cả hai, như trong 「両方」 (cả hai bên).",
+        "en": "Not quite. 両 means both; two, as in 「両方」 (both)."
+      }
+    },
+    {
+      "item": "両",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「両」 trong 「両方」 (“cả hai bên”).",
+        "en": "Type the reading of 「両」 in 「両方」 (“both”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りょう",
+          "リョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 両方, 両 đọc là りょう (âm On).",
+        "en": "Correct! In 両方, 両 is read りょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 両方 (cả hai bên), 両 đọc là りょう (âm On).",
+        "en": "In 両方 (both), 両 is read りょう (on'yomi)."
+      }
+    },
+    {
+      "item": "両",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「両親」(bố mẹ) đọc là gì?",
+        "en": "How is 「両親」 (parents) read?"
+      },
+      "payload": {
+        "choices": [
+          "りょしん",
+          "りょうしん",
+          "りょうじん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 両親 = りょうしん (bố mẹ); 両 đọc là りょう (âm On).",
+        "en": "Correct! 両親 = りょうしん (parents); 両 is read りょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "両親 đọc là りょうしん (bố mẹ): 両 mang âm On りょう.",
+        "en": "両親 is read りょうしん (parents): 両 takes the on'yomi りょう."
+      }
+    },
+    {
+      "item": "他",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「他」nghĩa là gì?",
+        "en": "What does 「他」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhất; cực kỳ",
+            "en": "most; extreme"
+          },
+          {
+            "vi": "khác",
+            "en": "other"
+          },
+          {
+            "vi": "giới hạn",
+            "en": "limit"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 他 nghĩa là khác.",
+        "en": "Correct! 他 means other."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 他 nghĩa là khác, như trong 「他人」 (người khác).",
+        "en": "Not quite. 他 means other, as in 「他人」 (another person)."
+      }
+    },
+    {
+      "item": "他",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「他」 trong 「他人」 (“người khác”).",
+        "en": "Type the reading of 「他」 in 「他人」 (“another person”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "た",
+          "タ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 他人, 他 đọc là た (âm On).",
+        "en": "Correct! In 他人, 他 is read た (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 他人 (người khác), 他 đọc là た (âm On).",
+        "en": "In 他人 (another person), 他 is read た (on'yomi)."
+      }
+    },
+    {
+      "item": "他",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「他」(cái khác; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「他」 (other; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "た",
+          "かぎる",
+          "ほか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 他 = ほか (cái khác); 他 đọc là ほか (âm Kun).",
+        "en": "Correct! 他 = ほか (other); 他 is read ほか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "他 đọc là ほか (cái khác): 他 mang âm Kun ほか.",
+        "en": "他 is read ほか (other): 他 takes the kun'yomi ほか."
+      }
+    },
+    {
+      "item": "最",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「最」nghĩa là gì?",
+        "en": "What does 「最」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giới hạn",
+            "en": "limit"
+          },
+          {
+            "vi": "hai; cả hai",
+            "en": "both; two"
+          },
+          {
+            "vi": "nhất; cực kỳ",
+            "en": "most; extreme"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 最 nghĩa là nhất; cực kỳ.",
+        "en": "Correct! 最 means most; extreme."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 最 nghĩa là nhất; cực kỳ, như trong 「最近」 (gần đây).",
+        "en": "Not quite. 最 means most; extreme, as in 「最近」 (recently)."
+      }
+    },
+    {
+      "item": "最",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「最」 trong 「最近」 (“gần đây”).",
+        "en": "Type the reading of 「最」 in 「最近」 (“recently”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さい",
+          "サイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 最近, 最 đọc là さい (âm On).",
+        "en": "Correct! In 最近, 最 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 最近 (gần đây), 最 đọc là さい (âm On).",
+        "en": "In 最近 (recently), 最 is read さい (on'yomi)."
+      }
+    },
+    {
+      "item": "最",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「最も」(nhất) đọc là gì?",
+        "en": "How is 「最も」 (most) read?"
+      },
+      "payload": {
+        "choices": [
+          "もっとも",
+          "さいも",
+          "げんかい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 最も = もっとも (nhất); 最 đọc là もっと (âm Kun).",
+        "en": "Correct! 最も = もっとも (most); 最 is read もっと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "最も đọc là もっとも (nhất): 最 mang âm Kun もっと.",
+        "en": "最も is read もっとも (most): 最 takes the kun'yomi もっと."
+      }
+    },
+    {
+      "item": "限",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「限」nghĩa là gì?",
+        "en": "What does 「限」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giới hạn",
+            "en": "limit"
+          },
+          {
+            "vi": "hai; cả hai",
+            "en": "both; two"
+          },
+          {
+            "vi": "khác",
+            "en": "other"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 限 nghĩa là giới hạn.",
+        "en": "Correct! 限 means limit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 限 nghĩa là giới hạn, như trong 「限界」 (giới hạn).",
+        "en": "Not quite. 限 means limit, as in 「限界」 (limit)."
+      }
+    },
+    {
+      "item": "限",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「限」 trong 「限界」 (“giới hạn”).",
+        "en": "Type the reading of 「限」 in 「限界」 (“limit”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 限界, 限 đọc là げん (âm On).",
+        "en": "Correct! In 限界, 限 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 限界 (giới hạn), 限 đọc là げん (âm On).",
+        "en": "In 限界 (limit), 限 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "限",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「限る」(giới hạn) đọc là gì?",
+        "en": "How is 「限る」 (to limit) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんる",
+          "かぎる",
+          "たにん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 限る = かぎる (giới hạn); 限 đọc là かぎ (âm Kun).",
+        "en": "Correct! 限る = かぎる (to limit); 限 is read かぎ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "限る đọc là かぎる (giới hạn): 限 mang âm Kun かぎ.",
+        "en": "限る is read かぎる (to limit): 限 takes the kun'yomi かぎ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "両",
+            {
+              "vi": "hai; cả hai",
+              "en": "both; two"
+            }
+          ],
+          [
+            "他",
+            {
+              "vi": "khác",
+              "en": "other"
+            }
+          ],
+          [
+            "最",
+            {
+              "vi": "nhất; cực kỳ",
+              "en": "most; extreme"
+            }
+          ],
+          [
+            "限",
+            {
+              "vi": "giới hạn",
+              "en": "limit"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-education-research",
+  "title": {
+    "vi": "Ngôn ngữ, tác phẩm và môn học",
+    "en": "Language, works and subjects"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1470,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "理論",
+      "reading": "りろん",
+      "meaning": {
+        "vi": "Lý thuyết",
+        "en": "Theory"
+      },
+      "examples": [
+        {
+          "ja": "理論だけでなく、実際にやってみることも大切です。",
+          "reading": "りろんだけでなく、じっさいにやってみることもたいせつです。",
+          "translation": {
+            "vi": "Không chỉ lý thuyết mà thử làm thực tế cũng quan trọng.",
+            "en": "It is important not only to know theory but to try it in practice."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "暗記",
+      "reading": "あんき",
+      "meaning": {
+        "vi": "Học thuộc lòng",
+        "en": "Memorization"
+      },
+      "examples": [
+        {
+          "ja": "歴史の年号を、暗記しなければなりません。",
+          "reading": "れきしのねんごうを、あんきしなければなりません。",
+          "translation": {
+            "vi": "Tôi phải học thuộc các niên đại lịch sử.",
+            "en": "I have to memorize historical dates."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "単語",
+      "reading": "たんご",
+      "meaning": {
+        "vi": "Từ vựng; từ đơn",
+        "en": "Word; vocabulary item"
+      },
+      "examples": [
+        {
+          "ja": "毎日、新しい単語を十個覚えます。",
+          "reading": "まいにち、あたらしいたんごをじゅっこおぼえます。",
+          "translation": {
+            "vi": "Mỗi ngày tôi nhớ mười từ mới.",
+            "en": "I memorize ten new words every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "文法",
+      "reading": "ぶんぽう",
+      "meaning": {
+        "vi": "Ngữ pháp",
+        "en": "Grammar"
+      },
+      "examples": [
+        {
+          "ja": "日本語の文法は、難しいところもあります。",
+          "reading": "にほんごのぶんぽうは、むずかしいところもあります。",
+          "translation": {
+            "vi": "Ngữ pháp tiếng Nhật cũng có chỗ khó.",
+            "en": "Japanese grammar has some difficult parts."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発音",
+      "reading": "はつおん",
+      "meaning": {
+        "vi": "Phát âm",
+        "en": "Pronunciation"
+      },
+      "examples": [
+        {
+          "ja": "先生に、発音を直してもらいました。",
+          "reading": "せんせいに、はつおんをなおしてもらいました。",
+          "translation": {
+            "vi": "Thầy đã sửa phát âm giúp tôi.",
+            "en": "My teacher corrected my pronunciation."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "表現",
+      "reading": "ひょうげん",
+      "meaning": {
+        "vi": "Cách diễn đạt; biểu hiện",
+        "en": "Expression"
+      },
+      "examples": [
+        {
+          "ja": "同じ意味でも、いろいろな表現があります。",
+          "reading": "おなじいみでも、いろいろなひょうげんがあります。",
+          "translation": {
+            "vi": "Cùng một nghĩa nhưng có nhiều cách diễn đạt.",
+            "en": "Even with the same meaning, there are various expressions."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "文章",
+      "reading": "ぶんしょう",
+      "meaning": {
+        "vi": "Bài văn; câu văn",
+        "en": "Sentence; written passage"
+      },
+      "examples": [
+        {
+          "ja": "彼は、読みやすい文章を書きます。",
+          "reading": "かれは、よみやすいぶんしょうをかきます。",
+          "translation": {
+            "vi": "Anh ấy viết những bài văn dễ đọc.",
+            "en": "He writes easy-to-read prose."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "作者",
+      "reading": "さくしゃ",
+      "meaning": {
+        "vi": "Tác giả",
+        "en": "Author; creator"
+      },
+      "examples": [
+        {
+          "ja": "この小説の作者は、とても有名です。",
+          "reading": "このしょうせつのさくしゃは、とてもゆうめいです。",
+          "translation": {
+            "vi": "Tác giả của cuốn tiểu thuyết này rất nổi tiếng.",
+            "en": "The author of this novel is very famous."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "作品",
+      "reading": "さくひん",
+      "meaning": {
+        "vi": "Tác phẩm",
+        "en": "Work (of art/literature)"
+      },
+      "examples": [
+        {
+          "ja": "彼の作品は、世界中で読まれています。",
+          "reading": "かれのさくひんは、せかいじゅうでよまれています。",
+          "translation": {
+            "vi": "Tác phẩm của ông ấy được đọc trên khắp thế giới.",
+            "en": "His works are read all over the world."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "科目",
+      "reading": "かもく",
+      "meaning": {
+        "vi": "Môn học",
+        "en": "Subject"
+      },
+      "examples": [
+        {
+          "ja": "好きな科目は、数学と理科です。",
+          "reading": "すきなかもくは、すうがくとりかです。",
+          "translation": {
+            "vi": "Môn học tôi thích là toán và khoa học.",
+            "en": "My favorite subjects are math and science."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "教科書",
+      "reading": "きょうかしょ",
+      "meaning": {
+        "vi": "Sách giáo khoa",
+        "en": "Textbook"
+      },
+      "examples": [
+        {
+          "ja": "新しい学年の教科書が、配られました。",
+          "reading": "あたらしいがくねんのきょうかしょが、くばられました。",
+          "translation": {
+            "vi": "Sách giáo khoa của năm học mới đã được phát.",
+            "en": "The textbooks for the new school year were handed out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "学年",
+      "reading": "がくねん",
+      "meaning": {
+        "vi": "Năm học; khối lớp",
+        "en": "School year; grade"
+      },
+      "examples": [
+        {
+          "ja": "私の学年は、全部で百人います。",
+          "reading": "わたしのがくねんは、ぜんぶでひゃくにんいます。",
+          "translation": {
+            "vi": "Khối lớp của tôi có tất cả một trăm người.",
+            "en": "My grade has a hundred students in total."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "理論",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）だけでなく、実際にやってみることも大切です。 — Nghĩa của câu: “Không chỉ lý thuyết mà thử làm thực tế cũng quan trọng.”",
+        "en": "Choose the word that fits the blank: （　）だけでなく、実際にやってみることも大切です。 — Meaning of the sentence: “It is important not only to know theory but to try it in practice.”"
+      },
+      "payload": {
+        "choices": [
+          "作品",
+          "作者",
+          "理論",
+          "単語"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「理論」(Lý thuyết) hợp nghĩa câu này: “Không chỉ lý thuyết mà thử làm thực tế cũng quan trọng.”",
+        "en": "Correct! 「理論」(Theory) fits this sentence: “It is important not only to know theory but to try it in practice.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không chỉ lý thuyết mà thử làm thực tế cũng quan trọng.”, nên cần 「理論」(Lý thuyết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is important not only to know theory but to try it in practice.”, so it needs 「理論」(Theory); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "暗記",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 歴史の年号を、（　）しなければなりません。 — Nghĩa của câu: “Tôi phải học thuộc các niên đại lịch sử.”",
+        "en": "Choose the word that fits the blank: 歴史の年号を、（　）しなければなりません。 — Meaning of the sentence: “I have to memorize historical dates.”"
+      },
+      "payload": {
+        "choices": [
+          "文法",
+          "理論",
+          "発音",
+          "暗記"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「暗記」(Học thuộc lòng) hợp nghĩa câu này: “Tôi phải học thuộc các niên đại lịch sử.”",
+        "en": "Correct! 「暗記」(Memorization) fits this sentence: “I have to memorize historical dates.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi phải học thuộc các niên đại lịch sử.”, nên cần 「暗記」(Học thuộc lòng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have to memorize historical dates.”, so it needs 「暗記」(Memorization); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "単語",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎日、新しい（　）を十個覚えます。 — Nghĩa của câu: “Mỗi ngày tôi nhớ mười từ mới.”",
+        "en": "Choose the word that fits the blank: 毎日、新しい（　）を十個覚えます。 — Meaning of the sentence: “I memorize ten new words every day.”"
+      },
+      "payload": {
+        "choices": [
+          "単語",
+          "発音",
+          "教科書",
+          "暗記"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「単語」(Từ vựng; từ đơn) hợp nghĩa câu này: “Mỗi ngày tôi nhớ mười từ mới.”",
+        "en": "Correct! 「単語」(Word; vocabulary item) fits this sentence: “I memorize ten new words every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi ngày tôi nhớ mười từ mới.”, nên cần 「単語」(Từ vựng; từ đơn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I memorize ten new words every day.”, so it needs 「単語」(Word; vocabulary item); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "文法",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本語の（　）は、難しいところもあります。 — Nghĩa của câu: “Ngữ pháp tiếng Nhật cũng có chỗ khó.”",
+        "en": "Choose the word that fits the blank: 日本語の（　）は、難しいところもあります。 — Meaning of the sentence: “Japanese grammar has some difficult parts.”"
+      },
+      "payload": {
+        "choices": [
+          "教科書",
+          "文法",
+          "単語",
+          "作品"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文法」(Ngữ pháp) hợp nghĩa câu này: “Ngữ pháp tiếng Nhật cũng có chỗ khó.”",
+        "en": "Correct! 「文法」(Grammar) fits this sentence: “Japanese grammar has some difficult parts.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngữ pháp tiếng Nhật cũng có chỗ khó.”, nên cần 「文法」(Ngữ pháp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Japanese grammar has some difficult parts.”, so it needs 「文法」(Grammar); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発音",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生に、（　）を直してもらいました。 — Nghĩa của câu: “Thầy đã sửa phát âm giúp tôi.”",
+        "en": "Choose the word that fits the blank: 先生に、（　）を直してもらいました。 — Meaning of the sentence: “My teacher corrected my pronunciation.”"
+      },
+      "payload": {
+        "choices": [
+          "学年",
+          "科目",
+          "発音",
+          "表現"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発音」(Phát âm) hợp nghĩa câu này: “Thầy đã sửa phát âm giúp tôi.”",
+        "en": "Correct! 「発音」(Pronunciation) fits this sentence: “My teacher corrected my pronunciation.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thầy đã sửa phát âm giúp tôi.”, nên cần 「発音」(Phát âm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My teacher corrected my pronunciation.”, so it needs 「発音」(Pronunciation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "表現",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 同じ意味でも、いろいろな（　）があります。 — Nghĩa của câu: “Cùng một nghĩa nhưng có nhiều cách diễn đạt.”",
+        "en": "Choose the word that fits the blank: 同じ意味でも、いろいろな（　）があります。 — Meaning of the sentence: “Even with the same meaning, there are various expressions.”"
+      },
+      "payload": {
+        "choices": [
+          "教科書",
+          "発音",
+          "文法",
+          "表現"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「表現」(Cách diễn đạt; biểu hiện) hợp nghĩa câu này: “Cùng một nghĩa nhưng có nhiều cách diễn đạt.”",
+        "en": "Correct! 「表現」(Expression) fits this sentence: “Even with the same meaning, there are various expressions.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cùng một nghĩa nhưng có nhiều cách diễn đạt.”, nên cần 「表現」(Cách diễn đạt; biểu hiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Even with the same meaning, there are various expressions.”, so it needs 「表現」(Expression); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "文章",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、読みやすい（　）を書きます。 — Nghĩa của câu: “Anh ấy viết những bài văn dễ đọc.”",
+        "en": "Choose the word that fits the blank: 彼は、読みやすい（　）を書きます。 — Meaning of the sentence: “He writes easy-to-read prose.”"
+      },
+      "payload": {
+        "choices": [
+          "文章",
+          "学年",
+          "作者",
+          "単語"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文章」(Bài văn; câu văn) hợp nghĩa câu này: “Anh ấy viết những bài văn dễ đọc.”",
+        "en": "Correct! 「文章」(Sentence; written passage) fits this sentence: “He writes easy-to-read prose.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy viết những bài văn dễ đọc.”, nên cần 「文章」(Bài văn; câu văn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He writes easy-to-read prose.”, so it needs 「文章」(Sentence; written passage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "作者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この小説の（　）は、とても有名です。 — Nghĩa của câu: “Tác giả của cuốn tiểu thuyết này rất nổi tiếng.”",
+        "en": "Choose the word that fits the blank: この小説の（　）は、とても有名です。 — Meaning of the sentence: “The author of this novel is very famous.”"
+      },
+      "payload": {
+        "choices": [
+          "表現",
+          "作者",
+          "理論",
+          "文法"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「作者」(Tác giả) hợp nghĩa câu này: “Tác giả của cuốn tiểu thuyết này rất nổi tiếng.”",
+        "en": "Correct! 「作者」(Author; creator) fits this sentence: “The author of this novel is very famous.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tác giả của cuốn tiểu thuyết này rất nổi tiếng.”, nên cần 「作者」(Tác giả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The author of this novel is very famous.”, so it needs 「作者」(Author; creator); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "作品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼の（　）は、世界中で読まれています。 — Nghĩa của câu: “Tác phẩm của ông ấy được đọc trên khắp thế giới.”",
+        "en": "Choose the word that fits the blank: 彼の（　）は、世界中で読まれています。 — Meaning of the sentence: “His works are read all over the world.”"
+      },
+      "payload": {
+        "choices": [
+          "文章",
+          "教科書",
+          "作品",
+          "単語"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「作品」(Tác phẩm) hợp nghĩa câu này: “Tác phẩm của ông ấy được đọc trên khắp thế giới.”",
+        "en": "Correct! 「作品」(Work (of art/literature)) fits this sentence: “His works are read all over the world.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tác phẩm của ông ấy được đọc trên khắp thế giới.”, nên cần 「作品」(Tác phẩm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “His works are read all over the world.”, so it needs 「作品」(Work (of art/literature)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "科目",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 好きな（　）は、数学と理科です。 — Nghĩa của câu: “Môn học tôi thích là toán và khoa học.”",
+        "en": "Choose the word that fits the blank: 好きな（　）は、数学と理科です。 — Meaning of the sentence: “My favorite subjects are math and science.”"
+      },
+      "payload": {
+        "choices": [
+          "暗記",
+          "作者",
+          "文章",
+          "科目"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「科目」(Môn học) hợp nghĩa câu này: “Môn học tôi thích là toán và khoa học.”",
+        "en": "Correct! 「科目」(Subject) fits this sentence: “My favorite subjects are math and science.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Môn học tôi thích là toán và khoa học.”, nên cần 「科目」(Môn học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My favorite subjects are math and science.”, so it needs 「科目」(Subject); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "教科書",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい学年の（　）が、配られました。 — Nghĩa của câu: “Sách giáo khoa của năm học mới đã được phát.”",
+        "en": "Choose the word that fits the blank: 新しい学年の（　）が、配られました。 — Meaning of the sentence: “The textbooks for the new school year were handed out.”"
+      },
+      "payload": {
+        "choices": [
+          "教科書",
+          "作品",
+          "理論",
+          "暗記"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「教科書」(Sách giáo khoa) hợp nghĩa câu này: “Sách giáo khoa của năm học mới đã được phát.”",
+        "en": "Correct! 「教科書」(Textbook) fits this sentence: “The textbooks for the new school year were handed out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sách giáo khoa của năm học mới đã được phát.”, nên cần 「教科書」(Sách giáo khoa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The textbooks for the new school year were handed out.”, so it needs 「教科書」(Textbook); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "学年",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の（　）は、全部で百人います。 — Nghĩa của câu: “Khối lớp của tôi có tất cả một trăm người.”",
+        "en": "Choose the word that fits the blank: 私の（　）は、全部で百人います。 — Meaning of the sentence: “My grade has a hundred students in total.”"
+      },
+      "payload": {
+        "choices": [
+          "暗記",
+          "学年",
+          "表現",
+          "発音"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「学年」(Năm học; khối lớp) hợp nghĩa câu này: “Khối lớp của tôi có tất cả một trăm người.”",
+        "en": "Correct! 「学年」(School year; grade) fits this sentence: “My grade has a hundred students in total.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khối lớp của tôi có tất cả một trăm người.”, nên cần 「学年」(Năm học; khối lớp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grade has a hundred students in total.”, so it needs 「学年」(School year; grade); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "理論",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「理論」だけでなく、実際にやってみることも大切です。",
+        "en": "Choose the correct reading of the word in 「」: 「理論」だけでなく、実際にやってみることも大切です。"
+      },
+      "payload": {
+        "choices": [
+          "さくしゃ",
+          "あんき",
+          "たんご",
+          "りろん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「理論」 đọc là 「りろん」, nghĩa là Lý thuyết.",
+        "en": "Correct! 「理論」 is read 「りろん」 and means Theory."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「理論」 đọc là 「りろん」 (Lý thuyết); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「理論」 is read 「りろん」 (Theory); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "文法",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 日本語の「文法」は、難しいところもあります。",
+        "en": "Choose the correct reading of the word in 「」: 日本語の「文法」は、難しいところもあります。"
+      },
+      "payload": {
+        "choices": [
+          "ぶんぽう",
+          "はつおん",
+          "さくひん",
+          "さくしゃ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文法」 đọc là 「ぶんぽう」, nghĩa là Ngữ pháp.",
+        "en": "Correct! 「文法」 is read 「ぶんぽう」 and means Grammar."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「文法」 đọc là 「ぶんぽう」 (Ngữ pháp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「文法」 is read 「ぶんぽう」 (Grammar); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "文章",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、読みやすい「文章」を書きます。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、読みやすい「文章」を書きます。"
+      },
+      "payload": {
+        "choices": [
+          "さくしゃ",
+          "ぶんしょう",
+          "はつおん",
+          "ひょうげん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「文章」 đọc là 「ぶんしょう」, nghĩa là Bài văn; câu văn.",
+        "en": "Correct! 「文章」 is read 「ぶんしょう」 and means Sentence; written passage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「文章」 đọc là 「ぶんしょう」 (Bài văn; câu văn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「文章」 is read 「ぶんしょう」 (Sentence; written passage); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "科目",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 好きな「科目」は、数学と理科です。",
+        "en": "Choose the correct reading of the word in 「」: 好きな「科目」は、数学と理科です。"
+      },
+      "payload": {
+        "choices": [
+          "ぶんぽう",
+          "ひょうげん",
+          "かもく",
+          "あんき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「科目」 đọc là 「かもく」, nghĩa là Môn học.",
+        "en": "Correct! 「科目」 is read 「かもく」 and means Subject."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「科目」 đọc là 「かもく」 (Môn học); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「科目」 is read 「かもく」 (Subject); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "単語",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 毎日、新しい「たんご」を十個覚えます。",
+        "en": "Choose the correct way to write the word in 「」: 毎日、新しい「たんご」を十個覚えます。"
+      },
+      "payload": {
+        "choices": [
+          "単語",
+          "科目",
+          "教科書",
+          "文法"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たんご」 viết là 「単語」, nghĩa là Từ vựng; từ đơn.",
+        "en": "Correct! 「たんご」 is written 「単語」 and means Word; vocabulary item."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「たんご」 viết là 「単語」 (Từ vựng; từ đơn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「たんご」 is written 「単語」 (Word; vocabulary item); the other words are read differently."
+      }
+    },
+    {
+      "item": "作品",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 彼の「さくひん」は、世界中で読まれています。",
+        "en": "Choose the correct way to write the word in 「」: 彼の「さくひん」は、世界中で読まれています。"
+      },
+      "payload": {
+        "choices": [
+          "理論",
+          "作品",
+          "暗記",
+          "文法"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「さくひん」 viết là 「作品」, nghĩa là Tác phẩm.",
+        "en": "Correct! 「さくひん」 is written 「作品」 and means Work (of art/literature)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「さくひん」 viết là 「作品」 (Tác phẩm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「さくひん」 is written 「作品」 (Work (of art/literature)); the other words are read differently."
+      }
+    }
+  ]
+}

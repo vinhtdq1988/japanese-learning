@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **goal** | [**ProgressSummaryGoal**](ProgressSummaryGoal.md) |  | [optional] 
 **kanji** | [**ProgressSummaryKanji**](ProgressSummaryKanji.md) |  | [optional] 
 **weakTopics** | [**List&lt;ProgressSummaryWeakTopicsInner&gt;**](ProgressSummaryWeakTopicsInner.md) |  | [optional] 
+**competency** | [**ProgressSummaryCompetency**](ProgressSummaryCompetency.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

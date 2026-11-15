@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-quantity-degree",
+  "title": {
+    "vi": "So sánh và thêm bớt",
+    "en": "Comparing, adding and increasing"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "比べる",
+      "reading": "くらべる",
+      "meaning": {
+        "vi": "So sánh",
+        "en": "To compare"
+      },
+      "examples": [
+        {
+          "ja": "二つの値段を、比べることにしました。",
+          "reading": "ふたつのねだんを、くらべることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định so sánh giá của hai cái.",
+            "en": "I decided to compare the two prices."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "比較",
+      "reading": "ひかく",
+      "meaning": {
+        "vi": "So sánh (khách quan)",
+        "en": "Comparison"
+      },
+      "examples": [
+        {
+          "ja": "去年と比較して、売り上げが増えました。",
+          "reading": "きょねんとひかくして、うりあげがふえました。",
+          "translation": {
+            "vi": "So với năm ngoái, doanh thu đã tăng.",
+            "en": "Compared to last year, sales increased."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "増す",
+      "reading": "ます",
+      "meaning": {
+        "vi": "Tăng thêm",
+        "en": "To increase; to grow"
+      },
+      "examples": [
+        {
+          "ja": "人口が増すことが、予想されています。",
+          "reading": "じんこうがますことが、よそうされています。",
+          "translation": {
+            "vi": "Dự đoán dân số sẽ tăng thêm.",
+            "en": "The population is expected to increase."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "加える",
+      "reading": "くわえる",
+      "meaning": {
+        "vi": "Thêm vào",
+        "en": "To add"
+      },
+      "examples": [
+        {
+          "ja": "スープに、塩を加えることにしました。",
+          "reading": "スープに、しおをくわえることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định cho thêm muối vào súp.",
+            "en": "I decided to add salt to the soup."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "加わる",
+      "reading": "くわわる",
+      "meaning": {
+        "vi": "Tham gia; được thêm vào",
+        "en": "To join; to be added"
+      },
+      "examples": [
+        {
+          "ja": "新しいメンバーが、チームに加わることになりました。",
+          "reading": "あたらしいメンバーが、チームにくわわることになりました。",
+          "translation": {
+            "vi": "Thành viên mới sẽ gia nhập đội.",
+            "en": "A new member will join the team."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "含む",
+      "reading": "ふくむ",
+      "meaning": {
+        "vi": "Bao gồm; chứa",
+        "en": "To contain; to include"
+      },
+      "examples": [
+        {
+          "ja": "この料理には、卵を含むものがあります。",
+          "reading": "このりょうりには、たまごをふくむものがあります。",
+          "translation": {
+            "vi": "Món này có chứa trứng.",
+            "en": "This dish contains eggs."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "比べる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 二つの値段を、（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định so sánh giá của hai cái.”",
+        "en": "Choose the word that fits the blank: 二つの値段を、（　）ことにしました。 — Meaning of the sentence: “I decided to compare the two prices.”"
+      },
+      "payload": {
+        "choices": [
+          "増す",
+          "比べる",
+          "加える",
+          "加わる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「比べる」(So sánh) hợp nghĩa câu này: “Tôi quyết định so sánh giá của hai cái.”",
+        "en": "Correct! 「比べる」(To compare) fits this sentence: “I decided to compare the two prices.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định so sánh giá của hai cái.”, nên cần 「比べる」(So sánh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to compare the two prices.”, so it needs 「比べる」(To compare); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "比較",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 去年と（　）して、売り上げが増えました。 — Nghĩa của câu: “So với năm ngoái, doanh thu đã tăng.”",
+        "en": "Choose the word that fits the blank: 去年と（　）して、売り上げが増えました。 — Meaning of the sentence: “Compared to last year, sales increased.”"
+      },
+      "payload": {
+        "choices": [
+          "含む",
+          "比べる",
+          "比較",
+          "増す"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「比較」(So sánh (khách quan)) hợp nghĩa câu này: “So với năm ngoái, doanh thu đã tăng.”",
+        "en": "Correct! 「比較」(Comparison) fits this sentence: “Compared to last year, sales increased.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “So với năm ngoái, doanh thu đã tăng.”, nên cần 「比較」(So sánh (khách quan)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Compared to last year, sales increased.”, so it needs 「比較」(Comparison); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "増す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 人口が（　）ことが、予想されています。 — Nghĩa của câu: “Dự đoán dân số sẽ tăng thêm.”",
+        "en": "Choose the word that fits the blank: 人口が（　）ことが、予想されています。 — Meaning of the sentence: “The population is expected to increase.”"
+      },
+      "payload": {
+        "choices": [
+          "比べる",
+          "加える",
+          "加わる",
+          "増す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「増す」(Tăng thêm) hợp nghĩa câu này: “Dự đoán dân số sẽ tăng thêm.”",
+        "en": "Correct! 「増す」(To increase; to grow) fits this sentence: “The population is expected to increase.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dự đoán dân số sẽ tăng thêm.”, nên cần 「増す」(Tăng thêm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The population is expected to increase.”, so it needs 「増す」(To increase; to grow); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "加える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スープに、塩を（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định cho thêm muối vào súp.”",
+        "en": "Choose the word that fits the blank: スープに、塩を（　）ことにしました。 — Meaning of the sentence: “I decided to add salt to the soup.”"
+      },
+      "payload": {
+        "choices": [
+          "加える",
+          "比べる",
+          "加わる",
+          "増す"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「加える」(Thêm vào) hợp nghĩa câu này: “Tôi quyết định cho thêm muối vào súp.”",
+        "en": "Correct! 「加える」(To add) fits this sentence: “I decided to add salt to the soup.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định cho thêm muối vào súp.”, nên cần 「加える」(Thêm vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to add salt to the soup.”, so it needs 「加える」(To add); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "加わる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しいメンバーが、チームに（　）ことになりました。 — Nghĩa của câu: “Thành viên mới sẽ gia nhập đội.”",
+        "en": "Choose the word that fits the blank: 新しいメンバーが、チームに（　）ことになりました。 — Meaning of the sentence: “A new member will join the team.”"
+      },
+      "payload": {
+        "choices": [
+          "比べる",
+          "加わる",
+          "増す",
+          "加える"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「加わる」(Tham gia; được thêm vào) hợp nghĩa câu này: “Thành viên mới sẽ gia nhập đội.”",
+        "en": "Correct! 「加わる」(To join; to be added) fits this sentence: “A new member will join the team.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thành viên mới sẽ gia nhập đội.”, nên cần 「加わる」(Tham gia; được thêm vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A new member will join the team.”, so it needs 「加わる」(To join; to be added); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "含む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この料理には、卵を（　）ものがあります。 — Nghĩa của câu: “Món này có chứa trứng.”",
+        "en": "Choose the word that fits the blank: この料理には、卵を（　）ものがあります。 — Meaning of the sentence: “This dish contains eggs.”"
+      },
+      "payload": {
+        "choices": [
+          "比べる",
+          "増す",
+          "含む",
+          "加える"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「含む」(Bao gồm; chứa) hợp nghĩa câu này: “Món này có chứa trứng.”",
+        "en": "Correct! 「含む」(To contain; to include) fits this sentence: “This dish contains eggs.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món này có chứa trứng.”, nên cần 「含む」(Bao gồm; chứa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This dish contains eggs.”, so it needs 「含む」(To contain; to include); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "比べる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 二つの値段を、「比べる」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: 二つの値段を、「比べる」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "ふくむ",
+          "ひかく",
+          "くらべる",
+          "くわえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「比べる」 đọc là 「くらべる」, nghĩa là So sánh.",
+        "en": "Correct! 「比べる」 is read 「くらべる」 and means To compare."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「比べる」 đọc là 「くらべる」 (So sánh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「比べる」 is read 「くらべる」 (To compare); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "加える",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: スープに、塩を「加える」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: スープに、塩を「加える」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "ひかく",
+          "くらべる",
+          "くわわる",
+          "くわえる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「加える」 đọc là 「くわえる」, nghĩa là Thêm vào.",
+        "en": "Correct! 「加える」 is read 「くわえる」 and means To add."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「加える」 đọc là 「くわえる」 (Thêm vào); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「加える」 is read 「くわえる」 (To add); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "増す",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 人口が「ます」ことが、予想されています。",
+        "en": "Choose the correct way to write the word in 「」: 人口が「ます」ことが、予想されています。"
+      },
+      "payload": {
+        "choices": [
+          "加える",
+          "比べる",
+          "含む",
+          "増す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ます」 viết là 「増す」, nghĩa là Tăng thêm.",
+        "en": "Correct! 「ます」 is written 「増す」 and means To increase; to grow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ます」 viết là 「増す」 (Tăng thêm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ます」 is written 「増す」 (To increase; to grow); the other words are read differently."
+      }
+    }
+  ]
+}

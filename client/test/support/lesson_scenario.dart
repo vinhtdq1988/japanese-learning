@@ -46,6 +46,9 @@ class LessonScenario {
   /// `DailyPlan.kanjiNotice` server giả trả; null = không có thông báo.
   Map<String, Object?>? kanjiNotice;
 
+  /// `true` → phiên của đơn vị có thêm một mục `kind = reading` (đoạn văn luyện đọc, spec 007).
+  bool readingPassage = false;
+
   /// `true` → phiên ôn là phiên ôn Kanji: câu 1 mang `facet = meaning` và danh sách mục có chữ Kanji `it-k1`.
   bool kanjiReview = false;
 
@@ -134,6 +137,15 @@ class LessonScenario {
             },
           ],
         },
+        if (readingPassage)
+          <String, Object?>{
+            'id': 'it-r1',
+            'kind': 'reading',
+            'japanese': '田中さんは毎朝七時に起きます。',
+            'reading': 'たなかさんはまいあさしちじにおきます。',
+            'meaning': 'Anh Tanaka mỗi sáng thức dậy lúc 7 giờ.',
+            'examples': <Map<String, Object?>>[],
+          },
         if (kanjiReview && kind == 'review')
           <String, Object?>{
             'id': 'it-k1',

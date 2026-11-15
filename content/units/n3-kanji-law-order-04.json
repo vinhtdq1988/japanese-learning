@@ -1,0 +1,550 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (罪 犯 殺 暴)",
+    "en": "Law and order kanji (罪 犯 殺 暴)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "罪",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "tội",
+        "en": "crime; sin"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザイ"
+        ],
+        "kunReadings": [
+          "つみ"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "犯罪",
+          "reading": "はんざい",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "tội phạm",
+            "en": "crime"
+          }
+        },
+        {
+          "ja": "罪",
+          "reading": "つみ",
+          "kanjiReading": "つみ",
+          "translation": {
+            "vi": "tội lỗi",
+            "en": "sin"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "犯",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "phạm; kẻ phạm",
+        "en": "commit; criminal"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン"
+        ],
+        "kunReadings": [
+          "おか.す"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "犯人",
+          "reading": "はんにん",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "thủ phạm",
+            "en": "criminal"
+          }
+        },
+        {
+          "ja": "犯す",
+          "reading": "おかす",
+          "kanjiReading": "おか",
+          "translation": {
+            "vi": "phạm (tội)",
+            "en": "to commit"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "殺",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "giết",
+        "en": "kill"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サツ",
+          "サイ",
+          "セツ"
+        ],
+        "kunReadings": [
+          "ころ.す"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "殺人",
+          "reading": "さつじん",
+          "kanjiReading": "サツ",
+          "translation": {
+            "vi": "giết người",
+            "en": "murder"
+          }
+        },
+        {
+          "ja": "殺す",
+          "reading": "ころす",
+          "kanjiReading": "ころ",
+          "translation": {
+            "vi": "giết",
+            "en": "to kill"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "暴",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "bạo; dữ dội",
+        "en": "violent; wild"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ボウ",
+          "バク"
+        ],
+        "kunReadings": [
+          "あば.れる",
+          "あば.く"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "暴力",
+          "reading": "ぼうりょく",
+          "kanjiReading": "ボウ",
+          "translation": {
+            "vi": "bạo lực",
+            "en": "violence"
+          }
+        },
+        {
+          "ja": "暴れる",
+          "reading": "あばれる",
+          "kanjiReading": "あば",
+          "translation": {
+            "vi": "làm loạn",
+            "en": "to rampage"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "罪",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「罪」nghĩa là gì?",
+        "en": "What does 「罪」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tội",
+            "en": "crime; sin"
+          },
+          {
+            "vi": "phạm; kẻ phạm",
+            "en": "commit; criminal"
+          },
+          {
+            "vi": "giết",
+            "en": "kill"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 罪 nghĩa là tội.",
+        "en": "Correct! 罪 means crime; sin."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 罪 nghĩa là tội, như trong 「犯罪」 (tội phạm).",
+        "en": "Not quite. 罪 means crime; sin, as in 「犯罪」 (crime)."
+      }
+    },
+    {
+      "item": "罪",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「罪」 trong 「犯罪」 (“tội phạm”).",
+        "en": "Type the reading of 「罪」 in 「犯罪」 (“crime”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざい",
+          "ザイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 犯罪, 罪 đọc là ざい (âm On).",
+        "en": "Correct! In 犯罪, 罪 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 犯罪 (tội phạm), 罪 đọc là ざい (âm On).",
+        "en": "In 犯罪 (crime), 罪 is read ざい (on'yomi)."
+      }
+    },
+    {
+      "item": "罪",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「罪」(tội lỗi; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「罪」 (sin; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざい",
+          "つみ",
+          "おかす"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 罪 = つみ (tội lỗi); 罪 đọc là つみ (âm Kun).",
+        "en": "Correct! 罪 = つみ (sin); 罪 is read つみ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "罪 đọc là つみ (tội lỗi): 罪 mang âm Kun つみ.",
+        "en": "罪 is read つみ (sin): 罪 takes the kun'yomi つみ."
+      }
+    },
+    {
+      "item": "犯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「犯」nghĩa là gì?",
+        "en": "What does 「犯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giết",
+            "en": "kill"
+          },
+          {
+            "vi": "phạm; kẻ phạm",
+            "en": "commit; criminal"
+          },
+          {
+            "vi": "bạo; dữ dội",
+            "en": "violent; wild"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 犯 nghĩa là phạm; kẻ phạm.",
+        "en": "Correct! 犯 means commit; criminal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 犯 nghĩa là phạm; kẻ phạm, như trong 「犯人」 (thủ phạm).",
+        "en": "Not quite. 犯 means commit; criminal, as in 「犯人」 (criminal)."
+      }
+    },
+    {
+      "item": "犯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「犯」 trong 「犯人」 (“thủ phạm”).",
+        "en": "Type the reading of 「犯」 in 「犯人」 (“criminal”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はん",
+          "ハン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 犯人, 犯 đọc là はん (âm On).",
+        "en": "Correct! In 犯人, 犯 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 犯人 (thủ phạm), 犯 đọc là はん (âm On).",
+        "en": "In 犯人 (criminal), 犯 is read はん (on'yomi)."
+      }
+    },
+    {
+      "item": "犯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「犯す」(phạm (tội)) đọc là gì?",
+        "en": "How is 「犯す」 (to commit) read?"
+      },
+      "payload": {
+        "choices": [
+          "はんす",
+          "ころす",
+          "おかす"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 犯す = おかす (phạm (tội)); 犯 đọc là おか (âm Kun).",
+        "en": "Correct! 犯す = おかす (to commit); 犯 is read おか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "犯す đọc là おかす (phạm (tội)): 犯 mang âm Kun おか.",
+        "en": "犯す is read おかす (to commit): 犯 takes the kun'yomi おか."
+      }
+    },
+    {
+      "item": "殺",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「殺」nghĩa là gì?",
+        "en": "What does 「殺」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bạo; dữ dội",
+            "en": "violent; wild"
+          },
+          {
+            "vi": "tội",
+            "en": "crime; sin"
+          },
+          {
+            "vi": "giết",
+            "en": "kill"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 殺 nghĩa là giết.",
+        "en": "Correct! 殺 means kill."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 殺 nghĩa là giết, như trong 「殺人」 (giết người).",
+        "en": "Not quite. 殺 means kill, as in 「殺人」 (murder)."
+      }
+    },
+    {
+      "item": "殺",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「殺」 trong 「殺人」 (“giết người”).",
+        "en": "Type the reading of 「殺」 in 「殺人」 (“murder”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さつ",
+          "サツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 殺人, 殺 đọc là さつ (âm On).",
+        "en": "Correct! In 殺人, 殺 is read さつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 殺人 (giết người), 殺 đọc là さつ (âm On).",
+        "en": "In 殺人 (murder), 殺 is read さつ (on'yomi)."
+      }
+    },
+    {
+      "item": "殺",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「殺す」(giết) đọc là gì?",
+        "en": "How is 「殺す」 (to kill) read?"
+      },
+      "payload": {
+        "choices": [
+          "ころす",
+          "さつす",
+          "おかす"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 殺す = ころす (giết); 殺 đọc là ころ (âm Kun).",
+        "en": "Correct! 殺す = ころす (to kill); 殺 is read ころ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "殺す đọc là ころす (giết): 殺 mang âm Kun ころ.",
+        "en": "殺す is read ころす (to kill): 殺 takes the kun'yomi ころ."
+      }
+    },
+    {
+      "item": "暴",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「暴」nghĩa là gì?",
+        "en": "What does 「暴」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bạo; dữ dội",
+            "en": "violent; wild"
+          },
+          {
+            "vi": "tội",
+            "en": "crime; sin"
+          },
+          {
+            "vi": "phạm; kẻ phạm",
+            "en": "commit; criminal"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 暴 nghĩa là bạo; dữ dội.",
+        "en": "Correct! 暴 means violent; wild."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 暴 nghĩa là bạo; dữ dội, như trong 「暴力」 (bạo lực).",
+        "en": "Not quite. 暴 means violent; wild, as in 「暴力」 (violence)."
+      }
+    },
+    {
+      "item": "暴",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「暴」 trong 「暴力」 (“bạo lực”).",
+        "en": "Type the reading of 「暴」 in 「暴力」 (“violence”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぼう",
+          "ボウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 暴力, 暴 đọc là ぼう (âm On).",
+        "en": "Correct! In 暴力, 暴 is read ぼう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 暴力 (bạo lực), 暴 đọc là ぼう (âm On).",
+        "en": "In 暴力 (violence), 暴 is read ぼう (on'yomi)."
+      }
+    },
+    {
+      "item": "暴",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「暴れる」(làm loạn) đọc là gì?",
+        "en": "How is 「暴れる」 (to rampage) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぼうれる",
+          "あばれる",
+          "はんざい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 暴れる = あばれる (làm loạn); 暴 đọc là あば (âm Kun).",
+        "en": "Correct! 暴れる = あばれる (to rampage); 暴 is read あば (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "暴れる đọc là あばれる (làm loạn): 暴 mang âm Kun あば.",
+        "en": "暴れる is read あばれる (to rampage): 暴 takes the kun'yomi あば."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "罪",
+            {
+              "vi": "tội",
+              "en": "crime; sin"
+            }
+          ],
+          [
+            "犯",
+            {
+              "vi": "phạm; kẻ phạm",
+              "en": "commit; criminal"
+            }
+          ],
+          [
+            "殺",
+            {
+              "vi": "giết",
+              "en": "kill"
+            }
+          ],
+          [
+            "暴",
+            {
+              "vi": "bạo; dữ dội",
+              "en": "violent; wild"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

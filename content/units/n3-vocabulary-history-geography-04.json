@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-history-geography",
+  "title": {
+    "vi": "Các vùng của Nhật Bản",
+    "en": "Regions of Japan"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1850,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "東北",
+      "reading": "とうほく",
+      "meaning": {
+        "vi": "Vùng Tohoku",
+        "en": "Tohoku region"
+      },
+      "examples": [
+        {
+          "ja": "東北は、冬の雪が深いことで知られています。",
+          "reading": "とうほくは、ふゆのゆきがふかいことでしられています。",
+          "translation": {
+            "vi": "Tohoku nổi tiếng với tuyết dày vào mùa đông.",
+            "en": "Tohoku is known for its deep winter snow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "関東",
+      "reading": "かんとう",
+      "meaning": {
+        "vi": "Vùng Kanto",
+        "en": "Kanto region"
+      },
+      "examples": [
+        {
+          "ja": "東京は、関東の中心です。",
+          "reading": "とうきょうは、かんとうのちゅうしんです。",
+          "translation": {
+            "vi": "Tokyo là trung tâm của vùng Kanto.",
+            "en": "Tokyo is the center of the Kanto region."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "関西",
+      "reading": "かんさい",
+      "meaning": {
+        "vi": "Vùng Kansai",
+        "en": "Kansai region"
+      },
+      "examples": [
+        {
+          "ja": "大阪や京都は、関西にあります。",
+          "reading": "おおさかやきょうとは、かんさいにあります。",
+          "translation": {
+            "vi": "Osaka và Kyoto nằm ở vùng Kansai.",
+            "en": "Osaka and Kyoto are in the Kansai region."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "九州",
+      "reading": "きゅうしゅう",
+      "meaning": {
+        "vi": "Đảo/vùng Kyushu",
+        "en": "Kyushu"
+      },
+      "examples": [
+        {
+          "ja": "九州には、有名な温泉がたくさんあります。",
+          "reading": "きゅうしゅうには、ゆうめいなおんせんがたくさんあります。",
+          "translation": {
+            "vi": "Kyushu có nhiều suối nước nóng nổi tiếng.",
+            "en": "Kyushu has many famous hot springs."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "北海道",
+      "reading": "ほっかいどう",
+      "meaning": {
+        "vi": "Hokkaido",
+        "en": "Hokkaido"
+      },
+      "examples": [
+        {
+          "ja": "北海道は、日本でいちばん北にあります。",
+          "reading": "ほっかいどうは、にほんでいちばんきたにあります。",
+          "translation": {
+            "vi": "Hokkaido nằm ở cực bắc của Nhật Bản.",
+            "en": "Hokkaido is in the far north of Japan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "沖縄",
+      "reading": "おきなわ",
+      "meaning": {
+        "vi": "Okinawa",
+        "en": "Okinawa"
+      },
+      "examples": [
+        {
+          "ja": "沖縄の海は、とてもきれいです。",
+          "reading": "おきなわのうみは、とてもきれいです。",
+          "translation": {
+            "vi": "Biển Okinawa rất đẹp.",
+            "en": "The sea in Okinawa is very beautiful."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "東北",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、冬の雪が深いことで知られています。 — Nghĩa của câu: “Tohoku nổi tiếng với tuyết dày vào mùa đông.”",
+        "en": "Choose the word that fits the blank: （　）は、冬の雪が深いことで知られています。 — Meaning of the sentence: “Tohoku is known for its deep winter snow.”"
+      },
+      "payload": {
+        "choices": [
+          "東北",
+          "北海道",
+          "関東",
+          "沖縄"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「東北」(Vùng Tohoku) hợp nghĩa câu này: “Tohoku nổi tiếng với tuyết dày vào mùa đông.”",
+        "en": "Correct! 「東北」(Tohoku region) fits this sentence: “Tohoku is known for its deep winter snow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tohoku nổi tiếng với tuyết dày vào mùa đông.”, nên cần 「東北」(Vùng Tohoku); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Tohoku is known for its deep winter snow.”, so it needs 「東北」(Tohoku region); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "関東",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 東京は、（　）の中心です。 — Nghĩa của câu: “Tokyo là trung tâm của vùng Kanto.”",
+        "en": "Choose the word that fits the blank: 東京は、（　）の中心です。 — Meaning of the sentence: “Tokyo is the center of the Kanto region.”"
+      },
+      "payload": {
+        "choices": [
+          "関西",
+          "関東",
+          "東北",
+          "沖縄"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「関東」(Vùng Kanto) hợp nghĩa câu này: “Tokyo là trung tâm của vùng Kanto.”",
+        "en": "Correct! 「関東」(Kanto region) fits this sentence: “Tokyo is the center of the Kanto region.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tokyo là trung tâm của vùng Kanto.”, nên cần 「関東」(Vùng Kanto); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Tokyo is the center of the Kanto region.”, so it needs 「関東」(Kanto region); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "関西",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大阪や京都は、（　）にあります。 — Nghĩa của câu: “Osaka và Kyoto nằm ở vùng Kansai.”",
+        "en": "Choose the word that fits the blank: 大阪や京都は、（　）にあります。 — Meaning of the sentence: “Osaka and Kyoto are in the Kansai region.”"
+      },
+      "payload": {
+        "choices": [
+          "沖縄",
+          "東北",
+          "関西",
+          "九州"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「関西」(Vùng Kansai) hợp nghĩa câu này: “Osaka và Kyoto nằm ở vùng Kansai.”",
+        "en": "Correct! 「関西」(Kansai region) fits this sentence: “Osaka and Kyoto are in the Kansai region.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Osaka và Kyoto nằm ở vùng Kansai.”, nên cần 「関西」(Vùng Kansai); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Osaka and Kyoto are in the Kansai region.”, so it needs 「関西」(Kansai region); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "九州",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）には、有名な温泉がたくさんあります。 — Nghĩa của câu: “Kyushu có nhiều suối nước nóng nổi tiếng.”",
+        "en": "Choose the word that fits the blank: （　）には、有名な温泉がたくさんあります。 — Meaning of the sentence: “Kyushu has many famous hot springs.”"
+      },
+      "payload": {
+        "choices": [
+          "関西",
+          "東北",
+          "北海道",
+          "九州"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「九州」(Đảo/vùng Kyushu) hợp nghĩa câu này: “Kyushu có nhiều suối nước nóng nổi tiếng.”",
+        "en": "Correct! 「九州」(Kyushu) fits this sentence: “Kyushu has many famous hot springs.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kyushu có nhiều suối nước nóng nổi tiếng.”, nên cần 「九州」(Đảo/vùng Kyushu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Kyushu has many famous hot springs.”, so it needs 「九州」(Kyushu); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "北海道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、日本でいちばん北にあります。 — Nghĩa của câu: “Hokkaido nằm ở cực bắc của Nhật Bản.”",
+        "en": "Choose the word that fits the blank: （　）は、日本でいちばん北にあります。 — Meaning of the sentence: “Hokkaido is in the far north of Japan.”"
+      },
+      "payload": {
+        "choices": [
+          "北海道",
+          "東北",
+          "関東",
+          "九州"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「北海道」(Hokkaido) hợp nghĩa câu này: “Hokkaido nằm ở cực bắc của Nhật Bản.”",
+        "en": "Correct! 「北海道」(Hokkaido) fits this sentence: “Hokkaido is in the far north of Japan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hokkaido nằm ở cực bắc của Nhật Bản.”, nên cần 「北海道」(Hokkaido); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Hokkaido is in the far north of Japan.”, so it needs 「北海道」(Hokkaido); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "沖縄",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の海は、とてもきれいです。 — Nghĩa của câu: “Biển Okinawa rất đẹp.”",
+        "en": "Choose the word that fits the blank: （　）の海は、とてもきれいです。 — Meaning of the sentence: “The sea in Okinawa is very beautiful.”"
+      },
+      "payload": {
+        "choices": [
+          "九州",
+          "沖縄",
+          "東北",
+          "関東"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「沖縄」(Okinawa) hợp nghĩa câu này: “Biển Okinawa rất đẹp.”",
+        "en": "Correct! 「沖縄」(Okinawa) fits this sentence: “The sea in Okinawa is very beautiful.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Biển Okinawa rất đẹp.”, nên cần 「沖縄」(Okinawa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The sea in Okinawa is very beautiful.”, so it needs 「沖縄」(Okinawa); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "東北",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「東北」は、冬の雪が深いことで知られています。",
+        "en": "Choose the correct reading of the word in 「」: 「東北」は、冬の雪が深いことで知られています。"
+      },
+      "payload": {
+        "choices": [
+          "おきなわ",
+          "とうほく",
+          "かんとう",
+          "かんさい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「東北」 đọc là 「とうほく」, nghĩa là Vùng Tohoku.",
+        "en": "Correct! 「東北」 is read 「とうほく」 and means Tohoku region."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「東北」 đọc là 「とうほく」 (Vùng Tohoku); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「東北」 is read 「とうほく」 (Tohoku region); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "九州",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「九州」には、有名な温泉がたくさんあります。",
+        "en": "Choose the correct reading of the word in 「」: 「九州」には、有名な温泉がたくさんあります。"
+      },
+      "payload": {
+        "choices": [
+          "とうほく",
+          "かんとう",
+          "きゅうしゅう",
+          "かんさい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「九州」 đọc là 「きゅうしゅう」, nghĩa là Đảo/vùng Kyushu.",
+        "en": "Correct! 「九州」 is read 「きゅうしゅう」 and means Kyushu."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「九州」 đọc là 「きゅうしゅう」 (Đảo/vùng Kyushu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「九州」 is read 「きゅうしゅう」 (Kyushu); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "関西",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 大阪や京都は、「かんさい」にあります。",
+        "en": "Choose the correct way to write the word in 「」: 大阪や京都は、「かんさい」にあります。"
+      },
+      "payload": {
+        "choices": [
+          "九州",
+          "東北",
+          "関西",
+          "北海道"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんさい」 viết là 「関西」, nghĩa là Vùng Kansai.",
+        "en": "Correct! 「かんさい」 is written 「関西」 and means Kansai region."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんさい」 viết là 「関西」 (Vùng Kansai); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんさい」 is written 「関西」 (Kansai region); the other words are read differently."
+      }
+    }
+  ]
+}

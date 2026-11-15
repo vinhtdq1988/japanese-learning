@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-verbs-change-movement",
+  "title": {
+    "vi": "Tác động vật lý",
+    "en": "Physical actions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "差す",
+      "reading": "さす",
+      "meaning": {
+        "vi": "Che (ô); chiếu vào",
+        "en": "To hold up (umbrella); to shine in"
+      },
+      "examples": [
+        {
+          "ja": "雨の日は、傘を差すことにしています。",
+          "reading": "あめのひは、かさをさすことにしています。",
+          "translation": {
+            "vi": "Ngày mưa tôi luôn che ô.",
+            "en": "On rainy days I always put up an umbrella."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "挟む",
+      "reading": "はさむ",
+      "meaning": {
+        "vi": "Kẹp",
+        "en": "To pinch; to put between"
+      },
+      "examples": [
+        {
+          "ja": "本に、しおりを挟むことにしました。",
+          "reading": "ほんに、しおりをはさむことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định kẹp bookmark vào sách.",
+            "en": "I decided to put a bookmark in the book."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "叩く",
+      "reading": "たたく",
+      "meaning": {
+        "vi": "Gõ; đập",
+        "en": "To knock; to strike"
+      },
+      "examples": [
+        {
+          "ja": "部屋に入る前に、ドアを叩くことにしています。",
+          "reading": "へやにはいるまえに、ドアをたたくことにしています。",
+          "translation": {
+            "vi": "Trước khi vào phòng tôi luôn gõ cửa.",
+            "en": "Before entering a room I always knock on the door."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "殴る",
+      "reading": "なぐる",
+      "meaning": {
+        "vi": "Đấm",
+        "en": "To punch"
+      },
+      "examples": [
+        {
+          "ja": "人を殴ることは、絶対にいけません。",
+          "reading": "ひとをなぐることは、ぜったいにいけません。",
+          "translation": {
+            "vi": "Đấm người khác là điều tuyệt đối không được.",
+            "en": "Hitting people is absolutely not allowed."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "傾く",
+      "reading": "かたむく",
+      "meaning": {
+        "vi": "Nghiêng",
+        "en": "To lean; to tilt"
+      },
+      "examples": [
+        {
+          "ja": "地震で、建物が傾くことがあります。",
+          "reading": "じしんで、たてものがかたむくことがあります。",
+          "translation": {
+            "vi": "Động đất có thể làm tòa nhà bị nghiêng.",
+            "en": "Earthquakes can cause buildings to tilt."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "超える",
+      "reading": "こえる",
+      "meaning": {
+        "vi": "Vượt quá (mức)",
+        "en": "To exceed"
+      },
+      "examples": [
+        {
+          "ja": "参加者が、百人を超えることになりました。",
+          "reading": "さんかしゃが、ひゃくにんをこえることになりました。",
+          "translation": {
+            "vi": "Số người tham gia sẽ vượt quá một trăm.",
+            "en": "The number of participants will exceed one hundred."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "差す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 雨の日は、傘を（　）ことにしています。 — Nghĩa của câu: “Ngày mưa tôi luôn che ô.”",
+        "en": "Choose the word that fits the blank: 雨の日は、傘を（　）ことにしています。 — Meaning of the sentence: “On rainy days I always put up an umbrella.”"
+      },
+      "payload": {
+        "choices": [
+          "叩く",
+          "挟む",
+          "差す",
+          "傾く"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「差す」(Che (ô); chiếu vào) hợp nghĩa câu này: “Ngày mưa tôi luôn che ô.”",
+        "en": "Correct! 「差す」(To hold up (umbrella); to shine in) fits this sentence: “On rainy days I always put up an umbrella.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày mưa tôi luôn che ô.”, nên cần 「差す」(Che (ô); chiếu vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On rainy days I always put up an umbrella.”, so it needs 「差す」(To hold up (umbrella); to shine in); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "挟む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 本に、しおりを（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định kẹp bookmark vào sách.”",
+        "en": "Choose the word that fits the blank: 本に、しおりを（　）ことにしました。 — Meaning of the sentence: “I decided to put a bookmark in the book.”"
+      },
+      "payload": {
+        "choices": [
+          "差す",
+          "叩く",
+          "傾く",
+          "挟む"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「挟む」(Kẹp) hợp nghĩa câu này: “Tôi quyết định kẹp bookmark vào sách.”",
+        "en": "Correct! 「挟む」(To pinch; to put between) fits this sentence: “I decided to put a bookmark in the book.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định kẹp bookmark vào sách.”, nên cần 「挟む」(Kẹp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to put a bookmark in the book.”, so it needs 「挟む」(To pinch; to put between); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "叩く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋に入る前に、ドアを（　）ことにしています。 — Nghĩa của câu: “Trước khi vào phòng tôi luôn gõ cửa.”",
+        "en": "Choose the word that fits the blank: 部屋に入る前に、ドアを（　）ことにしています。 — Meaning of the sentence: “Before entering a room I always knock on the door.”"
+      },
+      "payload": {
+        "choices": [
+          "叩く",
+          "殴る",
+          "差す",
+          "挟む"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「叩く」(Gõ; đập) hợp nghĩa câu này: “Trước khi vào phòng tôi luôn gõ cửa.”",
+        "en": "Correct! 「叩く」(To knock; to strike) fits this sentence: “Before entering a room I always knock on the door.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi vào phòng tôi luôn gõ cửa.”, nên cần 「叩く」(Gõ; đập); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before entering a room I always knock on the door.”, so it needs 「叩く」(To knock; to strike); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "殴る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 人を（　）ことは、絶対にいけません。 — Nghĩa của câu: “Đấm người khác là điều tuyệt đối không được.”",
+        "en": "Choose the word that fits the blank: 人を（　）ことは、絶対にいけません。 — Meaning of the sentence: “Hitting people is absolutely not allowed.”"
+      },
+      "payload": {
+        "choices": [
+          "挟む",
+          "殴る",
+          "差す",
+          "叩く"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「殴る」(Đấm) hợp nghĩa câu này: “Đấm người khác là điều tuyệt đối không được.”",
+        "en": "Correct! 「殴る」(To punch) fits this sentence: “Hitting people is absolutely not allowed.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đấm người khác là điều tuyệt đối không được.”, nên cần 「殴る」(Đấm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Hitting people is absolutely not allowed.”, so it needs 「殴る」(To punch); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "傾く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地震で、建物が（　）ことがあります。 — Nghĩa của câu: “Động đất có thể làm tòa nhà bị nghiêng.”",
+        "en": "Choose the word that fits the blank: 地震で、建物が（　）ことがあります。 — Meaning of the sentence: “Earthquakes can cause buildings to tilt.”"
+      },
+      "payload": {
+        "choices": [
+          "超える",
+          "差す",
+          "傾く",
+          "挟む"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「傾く」(Nghiêng) hợp nghĩa câu này: “Động đất có thể làm tòa nhà bị nghiêng.”",
+        "en": "Correct! 「傾く」(To lean; to tilt) fits this sentence: “Earthquakes can cause buildings to tilt.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Động đất có thể làm tòa nhà bị nghiêng.”, nên cần 「傾く」(Nghiêng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Earthquakes can cause buildings to tilt.”, so it needs 「傾く」(To lean; to tilt); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "超える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 参加者が、百人を（　）ことになりました。 — Nghĩa của câu: “Số người tham gia sẽ vượt quá một trăm.”",
+        "en": "Choose the word that fits the blank: 参加者が、百人を（　）ことになりました。 — Meaning of the sentence: “The number of participants will exceed one hundred.”"
+      },
+      "payload": {
+        "choices": [
+          "殴る",
+          "差す",
+          "挟む",
+          "超える"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「超える」(Vượt quá (mức)) hợp nghĩa câu này: “Số người tham gia sẽ vượt quá một trăm.”",
+        "en": "Correct! 「超える」(To exceed) fits this sentence: “The number of participants will exceed one hundred.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Số người tham gia sẽ vượt quá một trăm.”, nên cần 「超える」(Vượt quá (mức)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The number of participants will exceed one hundred.”, so it needs 「超える」(To exceed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "差す",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 雨の日は、傘を「差す」ことにしています。",
+        "en": "Choose the correct reading of the word in 「」: 雨の日は、傘を「差す」ことにしています。"
+      },
+      "payload": {
+        "choices": [
+          "たたく",
+          "はさむ",
+          "なぐる",
+          "さす"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「差す」 đọc là 「さす」, nghĩa là Che (ô); chiếu vào.",
+        "en": "Correct! 「差す」 is read 「さす」 and means To hold up (umbrella); to shine in."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「差す」 đọc là 「さす」 (Che (ô); chiếu vào); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「差す」 is read 「さす」 (To hold up (umbrella); to shine in); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "殴る",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 人を「殴る」ことは、絶対にいけません。",
+        "en": "Choose the correct reading of the word in 「」: 人を「殴る」ことは、絶対にいけません。"
+      },
+      "payload": {
+        "choices": [
+          "なぐる",
+          "こえる",
+          "さす",
+          "たたく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「殴る」 đọc là 「なぐる」, nghĩa là Đấm.",
+        "en": "Correct! 「殴る」 is read 「なぐる」 and means To punch."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「殴る」 đọc là 「なぐる」 (Đấm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「殴る」 is read 「なぐる」 (To punch); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "叩く",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 部屋に入る前に、ドアを「たたく」ことにしています。",
+        "en": "Choose the correct way to write the word in 「」: 部屋に入る前に、ドアを「たたく」ことにしています。"
+      },
+      "payload": {
+        "choices": [
+          "叩く",
+          "差す",
+          "挟む",
+          "殴る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たたく」 viết là 「叩く」, nghĩa là Gõ; đập.",
+        "en": "Correct! 「たたく」 is written 「叩く」 and means To knock; to strike."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「たたく」 viết là 「叩く」 (Gõ; đập); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「たたく」 is written 「叩く」 (To knock; to strike); the other words are read differently."
+      }
+    }
+  ]
+}

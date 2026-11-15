@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (販 貧 預)",
+    "en": "Economy and money kanji (販 貧 預)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "販",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "bán",
+        "en": "sell"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "販売",
+          "reading": "はんばい",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "bán hàng",
+            "en": "sales"
+          }
+        },
+        {
+          "ja": "市販",
+          "reading": "しはん",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "bán trên thị trường",
+            "en": "commercially available"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貧",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "nghèo",
+        "en": "poor"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒン",
+          "ビン"
+        ],
+        "kunReadings": [
+          "まず.しい"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "貧乏",
+          "reading": "びんぼう",
+          "kanjiReading": "ビン",
+          "translation": {
+            "vi": "nghèo túng",
+            "en": "poverty"
+          }
+        },
+        {
+          "ja": "貧しい",
+          "reading": "まずしい",
+          "kanjiReading": "まず",
+          "translation": {
+            "vi": "nghèo",
+            "en": "poor"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "預",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "gửi; giữ",
+        "en": "deposit; keep"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨ"
+        ],
+        "kunReadings": [
+          "あず.ける",
+          "あず.かる"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "預金",
+          "reading": "よきん",
+          "kanjiReading": "ヨ",
+          "translation": {
+            "vi": "tiền gửi",
+            "en": "deposit"
+          }
+        },
+        {
+          "ja": "預ける",
+          "reading": "あずける",
+          "kanjiReading": "あず",
+          "translation": {
+            "vi": "gửi; giao giữ",
+            "en": "to deposit"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "販",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「販」nghĩa là gì?",
+        "en": "What does 「販」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bán",
+            "en": "sell"
+          },
+          {
+            "vi": "nghèo",
+            "en": "poor"
+          },
+          {
+            "vi": "gửi; giữ",
+            "en": "deposit; keep"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 販 nghĩa là bán.",
+        "en": "Correct! 販 means sell."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 販 nghĩa là bán, như trong 「販売」 (bán hàng).",
+        "en": "Not quite. 販 means sell, as in 「販売」 (sales)."
+      }
+    },
+    {
+      "item": "販",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「販」 trong 「販売」 (“bán hàng”).",
+        "en": "Type the reading of 「販」 in 「販売」 (“sales”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はん",
+          "ハン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 販売, 販 đọc là はん (âm On).",
+        "en": "Correct! In 販売, 販 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 販売 (bán hàng), 販 đọc là はん (âm On).",
+        "en": "In 販売 (sales), 販 is read はん (on'yomi)."
+      }
+    },
+    {
+      "item": "販",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「市販」(bán trên thị trường) đọc là gì?",
+        "en": "How is 「市販」 (commercially available) read?"
+      },
+      "payload": {
+        "choices": [
+          "しばん",
+          "しはん",
+          "しまず"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 市販 = しはん (bán trên thị trường); 販 đọc là はん (âm On).",
+        "en": "Correct! 市販 = しはん (commercially available); 販 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "市販 đọc là しはん (bán trên thị trường): 販 mang âm On はん.",
+        "en": "市販 is read しはん (commercially available): 販 takes the on'yomi はん."
+      }
+    },
+    {
+      "item": "貧",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貧」nghĩa là gì?",
+        "en": "What does 「貧」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gửi; giữ",
+            "en": "deposit; keep"
+          },
+          {
+            "vi": "nghèo",
+            "en": "poor"
+          },
+          {
+            "vi": "bán",
+            "en": "sell"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貧 nghĩa là nghèo.",
+        "en": "Correct! 貧 means poor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 貧 nghĩa là nghèo, như trong 「貧乏」 (nghèo túng).",
+        "en": "Not quite. 貧 means poor, as in 「貧乏」 (poverty)."
+      }
+    },
+    {
+      "item": "貧",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「貧」 trong 「貧乏」 (“nghèo túng”).",
+        "en": "Type the reading of 「貧」 in 「貧乏」 (“poverty”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "びん",
+          "ビン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 貧乏, 貧 đọc là びん (âm On).",
+        "en": "Correct! In 貧乏, 貧 is read びん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 貧乏 (nghèo túng), 貧 đọc là びん (âm On).",
+        "en": "In 貧乏 (poverty), 貧 is read びん (on'yomi)."
+      }
+    },
+    {
+      "item": "貧",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貧しい」(nghèo) đọc là gì?",
+        "en": "How is 「貧しい」 (poor) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひんしい",
+          "はんばい",
+          "まずしい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貧しい = まずしい (nghèo); 貧 đọc là まず (âm Kun).",
+        "en": "Correct! 貧しい = まずしい (poor); 貧 is read まず (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "貧しい đọc là まずしい (nghèo): 貧 mang âm Kun まず.",
+        "en": "貧しい is read まずしい (poor): 貧 takes the kun'yomi まず."
+      }
+    },
+    {
+      "item": "預",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「預」nghĩa là gì?",
+        "en": "What does 「預」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bán",
+            "en": "sell"
+          },
+          {
+            "vi": "nghèo",
+            "en": "poor"
+          },
+          {
+            "vi": "gửi; giữ",
+            "en": "deposit; keep"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 預 nghĩa là gửi; giữ.",
+        "en": "Correct! 預 means deposit; keep."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 預 nghĩa là gửi; giữ, như trong 「預金」 (tiền gửi).",
+        "en": "Not quite. 預 means deposit; keep, as in 「預金」 (deposit)."
+      }
+    },
+    {
+      "item": "預",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「預」 trong 「預金」 (“tiền gửi”).",
+        "en": "Type the reading of 「預」 in 「預金」 (“deposit”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よ",
+          "ヨ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 預金, 預 đọc là よ (âm On).",
+        "en": "Correct! In 預金, 預 is read よ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 預金 (tiền gửi), 預 đọc là よ (âm On).",
+        "en": "In 預金 (deposit), 預 is read よ (on'yomi)."
+      }
+    },
+    {
+      "item": "預",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「預ける」(gửi; giao giữ) đọc là gì?",
+        "en": "How is 「預ける」 (to deposit) read?"
+      },
+      "payload": {
+        "choices": [
+          "あずける",
+          "よける",
+          "はんばい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 預ける = あずける (gửi; giao giữ); 預 đọc là あず (âm Kun).",
+        "en": "Correct! 預ける = あずける (to deposit); 預 is read あず (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "預ける đọc là あずける (gửi; giao giữ): 預 mang âm Kun あず.",
+        "en": "預ける is read あずける (to deposit): 預 takes the kun'yomi あず."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "販",
+            {
+              "vi": "bán",
+              "en": "sell"
+            }
+          ],
+          [
+            "貧",
+            {
+              "vi": "nghèo",
+              "en": "poor"
+            }
+          ],
+          [
+            "預",
+            {
+              "vi": "gửi; giữ",
+              "en": "deposit; keep"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

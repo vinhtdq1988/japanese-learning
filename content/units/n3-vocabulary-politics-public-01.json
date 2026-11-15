@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-politics-public",
+  "title": {
+    "vi": "Chính trị gia và cơ quan nhà nước",
+    "en": "Politicians and government bodies"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "政治",
+      "reading": "せいじ",
+      "meaning": {
+        "vi": "Chính trị",
+        "en": "Politics"
+      },
+      "examples": [
+        {
+          "ja": "私は、政治にあまり興味がありません。",
+          "reading": "わたしは、せいじにあまりきょうみがありません。",
+          "translation": {
+            "vi": "Tôi không mấy hứng thú với chính trị.",
+            "en": "I am not very interested in politics."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "政党",
+      "reading": "せいとう",
+      "meaning": {
+        "vi": "Chính đảng",
+        "en": "Political party"
+      },
+      "examples": [
+        {
+          "ja": "この政党は、若い人に人気があります。",
+          "reading": "このせいとうは、わかいひとににんきがあります。",
+          "translation": {
+            "vi": "Chính đảng này được người trẻ ưa chuộng.",
+            "en": "This political party is popular among young people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "議員",
+      "reading": "ぎいん",
+      "meaning": {
+        "vi": "Nghị sĩ; đại biểu",
+        "en": "Member of a legislature"
+      },
+      "examples": [
+        {
+          "ja": "地元の議員に、意見を伝えました。",
+          "reading": "じもとのぎいんに、いけんをつたえました。",
+          "translation": {
+            "vi": "Tôi đã gửi ý kiến đến nghị sĩ địa phương.",
+            "en": "I conveyed my opinion to the local legislator."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "議会",
+      "reading": "ぎかい",
+      "meaning": {
+        "vi": "Hội đồng; nghị viện",
+        "en": "Assembly; council"
+      },
+      "examples": [
+        {
+          "ja": "市の議会で、新しい予算が決まりました。",
+          "reading": "しのぎかいで、あたらしいよさんがきまりました。",
+          "translation": {
+            "vi": "Tại hội đồng thành phố, ngân sách mới đã được quyết định.",
+            "en": "The city council decided on the new budget."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国会",
+      "reading": "こっかい",
+      "meaning": {
+        "vi": "Quốc hội (Nhật)",
+        "en": "The Diet (national parliament)"
+      },
+      "examples": [
+        {
+          "ja": "国会では、毎日、法律について話し合っています。",
+          "reading": "こっかいでは、まいにち、ほうりつについてはなしあっています。",
+          "translation": {
+            "vi": "Ở quốc hội, mỗi ngày người ta bàn bạc về luật.",
+            "en": "In the Diet, they discuss laws every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "首相",
+      "reading": "しゅしょう",
+      "meaning": {
+        "vi": "Thủ tướng",
+        "en": "Prime minister"
+      },
+      "examples": [
+        {
+          "ja": "首相は、外国を訪問する予定です。",
+          "reading": "しゅしょうは、がいこくをほうもんするよていです。",
+          "translation": {
+            "vi": "Thủ tướng dự định thăm nước ngoài.",
+            "en": "The prime minister plans to visit a foreign country."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大臣",
+      "reading": "だいじん",
+      "meaning": {
+        "vi": "Bộ trưởng",
+        "en": "Minister (cabinet)"
+      },
+      "examples": [
+        {
+          "ja": "新しい大臣が、記者会見を行いました。",
+          "reading": "あたらしいだいじんが、きしゃかいけんをおこないました。",
+          "translation": {
+            "vi": "Bộ trưởng mới đã tổ chức họp báo.",
+            "en": "The new minister held a press conference."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大統領",
+      "reading": "だいとうりょう",
+      "meaning": {
+        "vi": "Tổng thống",
+        "en": "President (of a nation)"
+      },
+      "examples": [
+        {
+          "ja": "アメリカの大統領が、日本に来ます。",
+          "reading": "アメリカのだいとうりょうが、にほんにきます。",
+          "translation": {
+            "vi": "Tổng thống Mỹ sẽ đến Nhật Bản.",
+            "en": "The US president is coming to Japan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "内閣",
+      "reading": "ないかく",
+      "meaning": {
+        "vi": "Nội các",
+        "en": "Cabinet"
+      },
+      "examples": [
+        {
+          "ja": "選挙の後で、新しい内閣ができました。",
+          "reading": "せんきょのあとで、あたらしいないかくができました。",
+          "translation": {
+            "vi": "Sau cuộc bầu cử, nội các mới đã được thành lập.",
+            "en": "After the election, a new cabinet was formed."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "閣僚",
+      "reading": "かくりょう",
+      "meaning": {
+        "vi": "Thành viên nội các",
+        "en": "Cabinet minister"
+      },
+      "examples": [
+        {
+          "ja": "閣僚が、会議のために集まりました。",
+          "reading": "かくりょうが、かいぎのためにあつまりました。",
+          "translation": {
+            "vi": "Các thành viên nội các đã tập hợp để họp.",
+            "en": "The cabinet ministers gathered for a meeting."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "政権",
+      "reading": "せいけん",
+      "meaning": {
+        "vi": "Chính quyền; quyền lực chính trị",
+        "en": "Administration; government in power"
+      },
+      "examples": [
+        {
+          "ja": "新しい政権は、経済を大切にすると言っています。",
+          "reading": "あたらしいせいけんは、けいざいをたいせつにするといっています。",
+          "translation": {
+            "vi": "Chính quyền mới nói rằng sẽ coi trọng kinh tế.",
+            "en": "The new administration says it will prioritize the economy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "与党",
+      "reading": "よとう",
+      "meaning": {
+        "vi": "Đảng cầm quyền",
+        "en": "Ruling party"
+      },
+      "examples": [
+        {
+          "ja": "与党は、新しい法律を作ろうとしています。",
+          "reading": "よとうは、あたらしいほうりつをつくろうとしています。",
+          "translation": {
+            "vi": "Đảng cầm quyền đang định làm ra luật mới.",
+            "en": "The ruling party is trying to make a new law."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "政治",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は、（　）にあまり興味がありません。 — Nghĩa của câu: “Tôi không mấy hứng thú với chính trị.”",
+        "en": "Choose the word that fits the blank: 私は、（　）にあまり興味がありません。 — Meaning of the sentence: “I am not very interested in politics.”"
+      },
+      "payload": {
+        "choices": [
+          "首相",
+          "内閣",
+          "政党",
+          "政治"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「政治」(Chính trị) hợp nghĩa câu này: “Tôi không mấy hứng thú với chính trị.”",
+        "en": "Correct! 「政治」(Politics) fits this sentence: “I am not very interested in politics.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi không mấy hứng thú với chính trị.”, nên cần 「政治」(Chính trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am not very interested in politics.”, so it needs 「政治」(Politics); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "政党",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）は、若い人に人気があります。 — Nghĩa của câu: “Chính đảng này được người trẻ ưa chuộng.”",
+        "en": "Choose the word that fits the blank: この（　）は、若い人に人気があります。 — Meaning of the sentence: “This political party is popular among young people.”"
+      },
+      "payload": {
+        "choices": [
+          "政党",
+          "議会",
+          "政治",
+          "大臣"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「政党」(Chính đảng) hợp nghĩa câu này: “Chính đảng này được người trẻ ưa chuộng.”",
+        "en": "Correct! 「政党」(Political party) fits this sentence: “This political party is popular among young people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chính đảng này được người trẻ ưa chuộng.”, nên cần 「政党」(Chính đảng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This political party is popular among young people.”, so it needs 「政党」(Political party); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "議員",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地元の（　）に、意見を伝えました。 — Nghĩa của câu: “Tôi đã gửi ý kiến đến nghị sĩ địa phương.”",
+        "en": "Choose the word that fits the blank: 地元の（　）に、意見を伝えました。 — Meaning of the sentence: “I conveyed my opinion to the local legislator.”"
+      },
+      "payload": {
+        "choices": [
+          "政治",
+          "議員",
+          "政権",
+          "与党"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「議員」(Nghị sĩ; đại biểu) hợp nghĩa câu này: “Tôi đã gửi ý kiến đến nghị sĩ địa phương.”",
+        "en": "Correct! 「議員」(Member of a legislature) fits this sentence: “I conveyed my opinion to the local legislator.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã gửi ý kiến đến nghị sĩ địa phương.”, nên cần 「議員」(Nghị sĩ; đại biểu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I conveyed my opinion to the local legislator.”, so it needs 「議員」(Member of a legislature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "議会",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 市の（　）で、新しい予算が決まりました。 — Nghĩa của câu: “Tại hội đồng thành phố, ngân sách mới đã được quyết định.”",
+        "en": "Choose the word that fits the blank: 市の（　）で、新しい予算が決まりました。 — Meaning of the sentence: “The city council decided on the new budget.”"
+      },
+      "payload": {
+        "choices": [
+          "議員",
+          "内閣",
+          "議会",
+          "政権"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「議会」(Hội đồng; nghị viện) hợp nghĩa câu này: “Tại hội đồng thành phố, ngân sách mới đã được quyết định.”",
+        "en": "Correct! 「議会」(Assembly; council) fits this sentence: “The city council decided on the new budget.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tại hội đồng thành phố, ngân sách mới đã được quyết định.”, nên cần 「議会」(Hội đồng; nghị viện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The city council decided on the new budget.”, so it needs 「議会」(Assembly; council); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国会",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）では、毎日、法律について話し合っています。 — Nghĩa của câu: “Ở quốc hội, mỗi ngày người ta bàn bạc về luật.”",
+        "en": "Choose the word that fits the blank: （　）では、毎日、法律について話し合っています。 — Meaning of the sentence: “In the Diet, they discuss laws every day.”"
+      },
+      "payload": {
+        "choices": [
+          "政治",
+          "政党",
+          "大統領",
+          "国会"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国会」(Quốc hội (Nhật)) hợp nghĩa câu này: “Ở quốc hội, mỗi ngày người ta bàn bạc về luật.”",
+        "en": "Correct! 「国会」(The Diet (national parliament)) fits this sentence: “In the Diet, they discuss laws every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở quốc hội, mỗi ngày người ta bàn bạc về luật.”, nên cần 「国会」(Quốc hội (Nhật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the Diet, they discuss laws every day.”, so it needs 「国会」(The Diet (national parliament)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "首相",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、外国を訪問する予定です。 — Nghĩa của câu: “Thủ tướng dự định thăm nước ngoài.”",
+        "en": "Choose the word that fits the blank: （　）は、外国を訪問する予定です。 — Meaning of the sentence: “The prime minister plans to visit a foreign country.”"
+      },
+      "payload": {
+        "choices": [
+          "首相",
+          "政権",
+          "国会",
+          "政党"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「首相」(Thủ tướng) hợp nghĩa câu này: “Thủ tướng dự định thăm nước ngoài.”",
+        "en": "Correct! 「首相」(Prime minister) fits this sentence: “The prime minister plans to visit a foreign country.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thủ tướng dự định thăm nước ngoài.”, nên cần 「首相」(Thủ tướng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The prime minister plans to visit a foreign country.”, so it needs 「首相」(Prime minister); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大臣",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）が、記者会見を行いました。 — Nghĩa của câu: “Bộ trưởng mới đã tổ chức họp báo.”",
+        "en": "Choose the word that fits the blank: 新しい（　）が、記者会見を行いました。 — Meaning of the sentence: “The new minister held a press conference.”"
+      },
+      "payload": {
+        "choices": [
+          "内閣",
+          "大臣",
+          "議員",
+          "政治"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大臣」(Bộ trưởng) hợp nghĩa câu này: “Bộ trưởng mới đã tổ chức họp báo.”",
+        "en": "Correct! 「大臣」(Minister (cabinet)) fits this sentence: “The new minister held a press conference.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bộ trưởng mới đã tổ chức họp báo.”, nên cần 「大臣」(Bộ trưởng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new minister held a press conference.”, so it needs 「大臣」(Minister (cabinet)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大統領",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: アメリカの（　）が、日本に来ます。 — Nghĩa của câu: “Tổng thống Mỹ sẽ đến Nhật Bản.”",
+        "en": "Choose the word that fits the blank: アメリカの（　）が、日本に来ます。 — Meaning of the sentence: “The US president is coming to Japan.”"
+      },
+      "payload": {
+        "choices": [
+          "首相",
+          "政治",
+          "大統領",
+          "政党"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大統領」(Tổng thống) hợp nghĩa câu này: “Tổng thống Mỹ sẽ đến Nhật Bản.”",
+        "en": "Correct! 「大統領」(President (of a nation)) fits this sentence: “The US president is coming to Japan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tổng thống Mỹ sẽ đến Nhật Bản.”, nên cần 「大統領」(Tổng thống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The US president is coming to Japan.”, so it needs 「大統領」(President (of a nation)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "内閣",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 選挙の後で、新しい（　）ができました。 — Nghĩa của câu: “Sau cuộc bầu cử, nội các mới đã được thành lập.”",
+        "en": "Choose the word that fits the blank: 選挙の後で、新しい（　）ができました。 — Meaning of the sentence: “After the election, a new cabinet was formed.”"
+      },
+      "payload": {
+        "choices": [
+          "大統領",
+          "大臣",
+          "議会",
+          "内閣"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「内閣」(Nội các) hợp nghĩa câu này: “Sau cuộc bầu cử, nội các mới đã được thành lập.”",
+        "en": "Correct! 「内閣」(Cabinet) fits this sentence: “After the election, a new cabinet was formed.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sau cuộc bầu cử, nội các mới đã được thành lập.”, nên cần 「内閣」(Nội các); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After the election, a new cabinet was formed.”, so it needs 「内閣」(Cabinet); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "閣僚",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）が、会議のために集まりました。 — Nghĩa của câu: “Các thành viên nội các đã tập hợp để họp.”",
+        "en": "Choose the word that fits the blank: （　）が、会議のために集まりました。 — Meaning of the sentence: “The cabinet ministers gathered for a meeting.”"
+      },
+      "payload": {
+        "choices": [
+          "閣僚",
+          "首相",
+          "政権",
+          "大統領"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「閣僚」(Thành viên nội các) hợp nghĩa câu này: “Các thành viên nội các đã tập hợp để họp.”",
+        "en": "Correct! 「閣僚」(Cabinet minister) fits this sentence: “The cabinet ministers gathered for a meeting.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các thành viên nội các đã tập hợp để họp.”, nên cần 「閣僚」(Thành viên nội các); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The cabinet ministers gathered for a meeting.”, so it needs 「閣僚」(Cabinet minister); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "政権",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）は、経済を大切にすると言っています。 — Nghĩa của câu: “Chính quyền mới nói rằng sẽ coi trọng kinh tế.”",
+        "en": "Choose the word that fits the blank: 新しい（　）は、経済を大切にすると言っています。 — Meaning of the sentence: “The new administration says it will prioritize the economy.”"
+      },
+      "payload": {
+        "choices": [
+          "議会",
+          "政権",
+          "政治",
+          "大統領"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「政権」(Chính quyền; quyền lực chính trị) hợp nghĩa câu này: “Chính quyền mới nói rằng sẽ coi trọng kinh tế.”",
+        "en": "Correct! 「政権」(Administration; government in power) fits this sentence: “The new administration says it will prioritize the economy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chính quyền mới nói rằng sẽ coi trọng kinh tế.”, nên cần 「政権」(Chính quyền; quyền lực chính trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new administration says it will prioritize the economy.”, so it needs 「政権」(Administration; government in power); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "与党",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、新しい法律を作ろうとしています。 — Nghĩa của câu: “Đảng cầm quyền đang định làm ra luật mới.”",
+        "en": "Choose the word that fits the blank: （　）は、新しい法律を作ろうとしています。 — Meaning of the sentence: “The ruling party is trying to make a new law.”"
+      },
+      "payload": {
+        "choices": [
+          "政党",
+          "首相",
+          "与党",
+          "議員"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「与党」(Đảng cầm quyền) hợp nghĩa câu này: “Đảng cầm quyền đang định làm ra luật mới.”",
+        "en": "Correct! 「与党」(Ruling party) fits this sentence: “The ruling party is trying to make a new law.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đảng cầm quyền đang định làm ra luật mới.”, nên cần 「与党」(Đảng cầm quyền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The ruling party is trying to make a new law.”, so it needs 「与党」(Ruling party); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "政治",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 私は、「政治」にあまり興味がありません。",
+        "en": "Choose the correct reading of the word in 「」: 私は、「政治」にあまり興味がありません。"
+      },
+      "payload": {
+        "choices": [
+          "せいじ",
+          "ないかく",
+          "だいとうりょう",
+          "かくりょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「政治」 đọc là 「せいじ」, nghĩa là Chính trị.",
+        "en": "Correct! 「政治」 is read 「せいじ」 and means Politics."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「政治」 đọc là 「せいじ」 (Chính trị); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「政治」 is read 「せいじ」 (Politics); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "議会",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 市の「議会」で、新しい予算が決まりました。",
+        "en": "Choose the correct reading of the word in 「」: 市の「議会」で、新しい予算が決まりました。"
+      },
+      "payload": {
+        "choices": [
+          "こっかい",
+          "ぎかい",
+          "ないかく",
+          "よとう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「議会」 đọc là 「ぎかい」, nghĩa là Hội đồng; nghị viện.",
+        "en": "Correct! 「議会」 is read 「ぎかい」 and means Assembly; council."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「議会」 đọc là 「ぎかい」 (Hội đồng; nghị viện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「議会」 is read 「ぎかい」 (Assembly; council); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "大臣",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 新しい「大臣」が、記者会見を行いました。",
+        "en": "Choose the correct reading of the word in 「」: 新しい「大臣」が、記者会見を行いました。"
+      },
+      "payload": {
+        "choices": [
+          "ぎかい",
+          "しゅしょう",
+          "だいじん",
+          "よとう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大臣」 đọc là 「だいじん」, nghĩa là Bộ trưởng.",
+        "en": "Correct! 「大臣」 is read 「だいじん」 and means Minister (cabinet)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「大臣」 đọc là 「だいじん」 (Bộ trưởng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「大臣」 is read 「だいじん」 (Minister (cabinet)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "閣僚",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「閣僚」が、会議のために集まりました。",
+        "en": "Choose the correct reading of the word in 「」: 「閣僚」が、会議のために集まりました。"
+      },
+      "payload": {
+        "choices": [
+          "よとう",
+          "こっかい",
+          "せいとう",
+          "かくりょう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「閣僚」 đọc là 「かくりょう」, nghĩa là Thành viên nội các.",
+        "en": "Correct! 「閣僚」 is read 「かくりょう」 and means Cabinet minister."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「閣僚」 đọc là 「かくりょう」 (Thành viên nội các); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「閣僚」 is read 「かくりょう」 (Cabinet minister); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "議員",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 地元の「ぎいん」に、意見を伝えました。",
+        "en": "Choose the correct way to write the word in 「」: 地元の「ぎいん」に、意見を伝えました。"
+      },
+      "payload": {
+        "choices": [
+          "首相",
+          "議員",
+          "議会",
+          "閣僚"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぎいん」 viết là 「議員」, nghĩa là Nghị sĩ; đại biểu.",
+        "en": "Correct! 「ぎいん」 is written 「議員」 and means Member of a legislature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ぎいん」 viết là 「議員」 (Nghị sĩ; đại biểu); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ぎいん」 is written 「議員」 (Member of a legislature); the other words are read differently."
+      }
+    },
+    {
+      "item": "内閣",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 選挙の後で、新しい「ないかく」ができました。",
+        "en": "Choose the correct way to write the word in 「」: 選挙の後で、新しい「ないかく」ができました。"
+      },
+      "payload": {
+        "choices": [
+          "閣僚",
+          "国会",
+          "内閣",
+          "政治"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ないかく」 viết là 「内閣」, nghĩa là Nội các.",
+        "en": "Correct! 「ないかく」 is written 「内閣」 and means Cabinet."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ないかく」 viết là 「内閣」 (Nội các); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ないかく」 is written 「内閣」 (Cabinet); the other words are read differently."
+      }
+    }
+  ]
+}

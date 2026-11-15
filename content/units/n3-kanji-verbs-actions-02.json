@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (置 配 訪)",
+    "en": "Verbs and actions kanji (置 配 訪)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "置",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "đặt; để",
+        "en": "put; place"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チ"
+        ],
+        "kunReadings": [
+          "お.く"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "位置",
+          "reading": "いち",
+          "kanjiReading": "チ",
+          "translation": {
+            "vi": "vị trí",
+            "en": "position"
+          }
+        },
+        {
+          "ja": "置く",
+          "reading": "おく",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "đặt; để",
+            "en": "to put"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "配",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "phân phát; lo lắng",
+        "en": "distribute; worry"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハイ"
+        ],
+        "kunReadings": [
+          "くば.る"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "配達",
+          "reading": "はいたつ",
+          "kanjiReading": "ハイ",
+          "translation": {
+            "vi": "giao hàng",
+            "en": "delivery"
+          }
+        },
+        {
+          "ja": "配る",
+          "reading": "くばる",
+          "kanjiReading": "くば",
+          "translation": {
+            "vi": "phân phát",
+            "en": "to distribute"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "訪",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "thăm; viếng",
+        "en": "visit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホウ"
+        ],
+        "kunReadings": [
+          "おとず.れる",
+          "たず.ねる"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "訪問",
+          "reading": "ほうもん",
+          "kanjiReading": "ホウ",
+          "translation": {
+            "vi": "viếng thăm",
+            "en": "visit"
+          }
+        },
+        {
+          "ja": "訪れる",
+          "reading": "おとずれる",
+          "kanjiReading": "おとず",
+          "translation": {
+            "vi": "ghé thăm",
+            "en": "to visit"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "置",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「置」nghĩa là gì?",
+        "en": "What does 「置」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đặt; để",
+            "en": "put; place"
+          },
+          {
+            "vi": "phân phát; lo lắng",
+            "en": "distribute; worry"
+          },
+          {
+            "vi": "thăm; viếng",
+            "en": "visit"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 置 nghĩa là đặt; để.",
+        "en": "Correct! 置 means put; place."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 置 nghĩa là đặt; để, như trong 「位置」 (vị trí).",
+        "en": "Not quite. 置 means put; place, as in 「位置」 (position)."
+      }
+    },
+    {
+      "item": "置",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「置」 trong 「位置」 (“vị trí”).",
+        "en": "Type the reading of 「置」 in 「位置」 (“position”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ち",
+          "チ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 位置, 置 đọc là ち (âm On).",
+        "en": "Correct! In 位置, 置 is read ち (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 位置 (vị trí), 置 đọc là ち (âm On).",
+        "en": "In 位置 (position), 置 is read ち (on'yomi)."
+      }
+    },
+    {
+      "item": "置",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「置く」(đặt; để) đọc là gì?",
+        "en": "How is 「置く」 (to put) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちく",
+          "おく",
+          "くばる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 置く = おく (đặt; để); 置 đọc là お (âm Kun).",
+        "en": "Correct! 置く = おく (to put); 置 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "置く đọc là おく (đặt; để): 置 mang âm Kun お.",
+        "en": "置く is read おく (to put): 置 takes the kun'yomi お."
+      }
+    },
+    {
+      "item": "配",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「配」nghĩa là gì?",
+        "en": "What does 「配」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thăm; viếng",
+            "en": "visit"
+          },
+          {
+            "vi": "phân phát; lo lắng",
+            "en": "distribute; worry"
+          },
+          {
+            "vi": "đặt; để",
+            "en": "put; place"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 配 nghĩa là phân phát; lo lắng.",
+        "en": "Correct! 配 means distribute; worry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 配 nghĩa là phân phát; lo lắng, như trong 「配達」 (giao hàng).",
+        "en": "Not quite. 配 means distribute; worry, as in 「配達」 (delivery)."
+      }
+    },
+    {
+      "item": "配",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「配」 trong 「配達」 (“giao hàng”).",
+        "en": "Type the reading of 「配」 in 「配達」 (“delivery”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はい",
+          "ハイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 配達, 配 đọc là はい (âm On).",
+        "en": "Correct! In 配達, 配 is read はい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 配達 (giao hàng), 配 đọc là はい (âm On).",
+        "en": "In 配達 (delivery), 配 is read はい (on'yomi)."
+      }
+    },
+    {
+      "item": "配",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「配る」(phân phát) đọc là gì?",
+        "en": "How is 「配る」 (to distribute) read?"
+      },
+      "payload": {
+        "choices": [
+          "はいる",
+          "ほうもん",
+          "くばる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 配る = くばる (phân phát); 配 đọc là くば (âm Kun).",
+        "en": "Correct! 配る = くばる (to distribute); 配 is read くば (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "配る đọc là くばる (phân phát): 配 mang âm Kun くば.",
+        "en": "配る is read くばる (to distribute): 配 takes the kun'yomi くば."
+      }
+    },
+    {
+      "item": "訪",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「訪」nghĩa là gì?",
+        "en": "What does 「訪」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đặt; để",
+            "en": "put; place"
+          },
+          {
+            "vi": "phân phát; lo lắng",
+            "en": "distribute; worry"
+          },
+          {
+            "vi": "thăm; viếng",
+            "en": "visit"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 訪 nghĩa là thăm; viếng.",
+        "en": "Correct! 訪 means visit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 訪 nghĩa là thăm; viếng, như trong 「訪問」 (viếng thăm).",
+        "en": "Not quite. 訪 means visit, as in 「訪問」 (visit)."
+      }
+    },
+    {
+      "item": "訪",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「訪」 trong 「訪問」 (“viếng thăm”).",
+        "en": "Type the reading of 「訪」 in 「訪問」 (“visit”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほう",
+          "ホウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 訪問, 訪 đọc là ほう (âm On).",
+        "en": "Correct! In 訪問, 訪 is read ほう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 訪問 (viếng thăm), 訪 đọc là ほう (âm On).",
+        "en": "In 訪問 (visit), 訪 is read ほう (on'yomi)."
+      }
+    },
+    {
+      "item": "訪",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「訪れる」(ghé thăm) đọc là gì?",
+        "en": "How is 「訪れる」 (to visit) read?"
+      },
+      "payload": {
+        "choices": [
+          "おとずれる",
+          "ほうれる",
+          "はいたつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 訪れる = おとずれる (ghé thăm); 訪 đọc là おとず (âm Kun).",
+        "en": "Correct! 訪れる = おとずれる (to visit); 訪 is read おとず (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "訪れる đọc là おとずれる (ghé thăm): 訪 mang âm Kun おとず.",
+        "en": "訪れる is read おとずれる (to visit): 訪 takes the kun'yomi おとず."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "置",
+            {
+              "vi": "đặt; để",
+              "en": "put; place"
+            }
+          ],
+          [
+            "配",
+            {
+              "vi": "phân phát; lo lắng",
+              "en": "distribute; worry"
+            }
+          ],
+          [
+            "訪",
+            {
+              "vi": "thăm; viếng",
+              "en": "visit"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

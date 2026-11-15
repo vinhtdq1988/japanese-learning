@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (追 破 除 検)",
+    "en": "Law and order kanji (追 破 除 検)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "追",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "đuổi; theo",
+        "en": "chase; add"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ツイ"
+        ],
+        "kunReadings": [
+          "お.う"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "追加",
+          "reading": "ついか",
+          "kanjiReading": "ツイ",
+          "translation": {
+            "vi": "bổ sung; thêm",
+            "en": "addition"
+          }
+        },
+        {
+          "ja": "追う",
+          "reading": "おう",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "đuổi theo",
+            "en": "to chase"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "破",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "phá; rách; vỡ",
+        "en": "break; tear"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハ"
+        ],
+        "kunReadings": [
+          "やぶ.る",
+          "やぶ.れる"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "破壊",
+          "reading": "はかい",
+          "kanjiReading": "ハ",
+          "translation": {
+            "vi": "phá hủy",
+            "en": "destruction"
+          }
+        },
+        {
+          "ja": "破る",
+          "reading": "やぶる",
+          "kanjiReading": "やぶ",
+          "translation": {
+            "vi": "xé; phá vỡ",
+            "en": "to tear; to break"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "除",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "loại bỏ; trừ",
+        "en": "remove; exclude"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョ",
+          "ジ"
+        ],
+        "kunReadings": [
+          "のぞ.く"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "掃除",
+          "reading": "そうじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "dọn dẹp",
+            "en": "cleaning"
+          }
+        },
+        {
+          "ja": "除く",
+          "reading": "のぞく",
+          "kanjiReading": "のぞ",
+          "translation": {
+            "vi": "loại bỏ",
+            "en": "to remove"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "検",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "kiểm tra; xem xét",
+        "en": "examine; inspect"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "検査",
+          "reading": "けんさ",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "kiểm tra",
+            "en": "inspection"
+          }
+        },
+        {
+          "ja": "検討",
+          "reading": "けんとう",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "xem xét",
+            "en": "consideration"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "追",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「追」nghĩa là gì?",
+        "en": "What does 「追」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đuổi; theo",
+            "en": "chase; add"
+          },
+          {
+            "vi": "phá; rách; vỡ",
+            "en": "break; tear"
+          },
+          {
+            "vi": "loại bỏ; trừ",
+            "en": "remove; exclude"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 追 nghĩa là đuổi; theo.",
+        "en": "Correct! 追 means chase; add."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 追 nghĩa là đuổi; theo, như trong 「追加」 (bổ sung; thêm).",
+        "en": "Not quite. 追 means chase; add, as in 「追加」 (addition)."
+      }
+    },
+    {
+      "item": "追",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「追」 trong 「追加」 (“bổ sung; thêm”).",
+        "en": "Type the reading of 「追」 in 「追加」 (“addition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "つい",
+          "ツイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 追加, 追 đọc là つい (âm On).",
+        "en": "Correct! In 追加, 追 is read つい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 追加 (bổ sung; thêm), 追 đọc là つい (âm On).",
+        "en": "In 追加 (addition), 追 is read つい (on'yomi)."
+      }
+    },
+    {
+      "item": "追",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「追う」(đuổi theo) đọc là gì?",
+        "en": "How is 「追う」 (to chase) read?"
+      },
+      "payload": {
+        "choices": [
+          "ついう",
+          "おう",
+          "はかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 追う = おう (đuổi theo); 追 đọc là お (âm Kun).",
+        "en": "Correct! 追う = おう (to chase); 追 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "追う đọc là おう (đuổi theo): 追 mang âm Kun お.",
+        "en": "追う is read おう (to chase): 追 takes the kun'yomi お."
+      }
+    },
+    {
+      "item": "破",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「破」nghĩa là gì?",
+        "en": "What does 「破」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "loại bỏ; trừ",
+            "en": "remove; exclude"
+          },
+          {
+            "vi": "phá; rách; vỡ",
+            "en": "break; tear"
+          },
+          {
+            "vi": "kiểm tra; xem xét",
+            "en": "examine; inspect"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 破 nghĩa là phá; rách; vỡ.",
+        "en": "Correct! 破 means break; tear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 破 nghĩa là phá; rách; vỡ, như trong 「破壊」 (phá hủy).",
+        "en": "Not quite. 破 means break; tear, as in 「破壊」 (destruction)."
+      }
+    },
+    {
+      "item": "破",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「破」 trong 「破壊」 (“phá hủy”).",
+        "en": "Type the reading of 「破」 in 「破壊」 (“destruction”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "は",
+          "ハ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 破壊, 破 đọc là は (âm On).",
+        "en": "Correct! In 破壊, 破 is read は (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 破壊 (phá hủy), 破 đọc là は (âm On).",
+        "en": "In 破壊 (destruction), 破 is read は (on'yomi)."
+      }
+    },
+    {
+      "item": "破",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「破る」(xé; phá vỡ) đọc là gì?",
+        "en": "How is 「破る」 (to tear; to break) read?"
+      },
+      "payload": {
+        "choices": [
+          "はる",
+          "そうじ",
+          "やぶる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 破る = やぶる (xé; phá vỡ); 破 đọc là やぶ (âm Kun).",
+        "en": "Correct! 破る = やぶる (to tear; to break); 破 is read やぶ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "破る đọc là やぶる (xé; phá vỡ): 破 mang âm Kun やぶ.",
+        "en": "破る is read やぶる (to tear; to break): 破 takes the kun'yomi やぶ."
+      }
+    },
+    {
+      "item": "除",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「除」nghĩa là gì?",
+        "en": "What does 「除」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kiểm tra; xem xét",
+            "en": "examine; inspect"
+          },
+          {
+            "vi": "đuổi; theo",
+            "en": "chase; add"
+          },
+          {
+            "vi": "loại bỏ; trừ",
+            "en": "remove; exclude"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 除 nghĩa là loại bỏ; trừ.",
+        "en": "Correct! 除 means remove; exclude."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 除 nghĩa là loại bỏ; trừ, như trong 「掃除」 (dọn dẹp).",
+        "en": "Not quite. 除 means remove; exclude, as in 「掃除」 (cleaning)."
+      }
+    },
+    {
+      "item": "除",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「除」 trong 「掃除」 (“dọn dẹp”).",
+        "en": "Type the reading of 「除」 in 「掃除」 (“cleaning”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 掃除, 除 đọc là じ (âm On).",
+        "en": "Correct! In 掃除, 除 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 掃除 (dọn dẹp), 除 đọc là じ (âm On).",
+        "en": "In 掃除 (cleaning), 除 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "除",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「除く」(loại bỏ) đọc là gì?",
+        "en": "How is 「除く」 (to remove) read?"
+      },
+      "payload": {
+        "choices": [
+          "のぞく",
+          "じょく",
+          "けんさ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 除く = のぞく (loại bỏ); 除 đọc là のぞ (âm Kun).",
+        "en": "Correct! 除く = のぞく (to remove); 除 is read のぞ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "除く đọc là のぞく (loại bỏ): 除 mang âm Kun のぞ.",
+        "en": "除く is read のぞく (to remove): 除 takes the kun'yomi のぞ."
+      }
+    },
+    {
+      "item": "検",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「検」nghĩa là gì?",
+        "en": "What does 「検」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kiểm tra; xem xét",
+            "en": "examine; inspect"
+          },
+          {
+            "vi": "đuổi; theo",
+            "en": "chase; add"
+          },
+          {
+            "vi": "phá; rách; vỡ",
+            "en": "break; tear"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 検 nghĩa là kiểm tra; xem xét.",
+        "en": "Correct! 検 means examine; inspect."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 検 nghĩa là kiểm tra; xem xét, như trong 「検査」 (kiểm tra).",
+        "en": "Not quite. 検 means examine; inspect, as in 「検査」 (inspection)."
+      }
+    },
+    {
+      "item": "検",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「検」 trong 「検査」 (“kiểm tra”).",
+        "en": "Type the reading of 「検」 in 「検査」 (“inspection”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 検査, 検 đọc là けん (âm On).",
+        "en": "Correct! In 検査, 検 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 検査 (kiểm tra), 検 đọc là けん (âm On).",
+        "en": "In 検査 (inspection), 検 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "検",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「検討」(xem xét) đọc là gì?",
+        "en": "How is 「検討」 (consideration) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんとう",
+          "けんとう",
+          "けんどう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 検討 = けんとう (xem xét); 検 đọc là けん (âm On).",
+        "en": "Correct! 検討 = けんとう (consideration); 検 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "検討 đọc là けんとう (xem xét): 検 mang âm On けん.",
+        "en": "検討 is read けんとう (consideration): 検 takes the on'yomi けん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "追",
+            {
+              "vi": "đuổi; theo",
+              "en": "chase; add"
+            }
+          ],
+          [
+            "破",
+            {
+              "vi": "phá; rách; vỡ",
+              "en": "break; tear"
+            }
+          ],
+          [
+            "除",
+            {
+              "vi": "loại bỏ; trừ",
+              "en": "remove; exclude"
+            }
+          ],
+          [
+            "検",
+            {
+              "vi": "kiểm tra; xem xét",
+              "en": "examine; inspect"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

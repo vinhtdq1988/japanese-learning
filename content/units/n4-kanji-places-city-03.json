@@ -1,0 +1,418 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-places-city",
+  "title": {
+    "vi": "Kanji địa điểm – thành phố (屋 館 堂)",
+    "en": "Places and the city kanji (屋 館 堂)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "屋",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "cửa hàng; mái nhà",
+        "en": "shop; roof"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "オク"
+        ],
+        "kunReadings": [
+          "や"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "屋上",
+          "reading": "おくじょう",
+          "kanjiReading": "オク",
+          "translation": {
+            "vi": "sân thượng",
+            "en": "rooftop"
+          }
+        },
+        {
+          "ja": "本屋",
+          "reading": "ほんや",
+          "kanjiReading": "や",
+          "translation": {
+            "vi": "hiệu sách",
+            "en": "bookstore"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "館",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "tòa nhà lớn; hội quán",
+        "en": "hall; large building"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [
+          "やかた"
+        ],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "図書館",
+          "reading": "としょかん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "thư viện",
+            "en": "library"
+          }
+        },
+        {
+          "ja": "映画館",
+          "reading": "えいがかん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "rạp chiếu phim",
+            "en": "movie theater"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "堂",
+      "topic": "kanji-n4-places-city",
+      "meaning": {
+        "vi": "đại sảnh; nhà",
+        "en": "hall"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "食堂",
+          "reading": "しょくどう",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "nhà ăn",
+            "en": "cafeteria"
+          }
+        },
+        {
+          "ja": "講堂",
+          "reading": "こうどう",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "giảng đường; hội trường",
+            "en": "auditorium"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "屋",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「屋」nghĩa là gì?",
+        "en": "What does 「屋」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cửa hàng; mái nhà",
+            "en": "shop; roof"
+          },
+          {
+            "vi": "tòa nhà lớn; hội quán",
+            "en": "hall; large building"
+          },
+          {
+            "vi": "đại sảnh; nhà",
+            "en": "hall"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 屋 nghĩa là cửa hàng; mái nhà.",
+        "en": "Correct! 屋 means shop; roof."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 屋 nghĩa là cửa hàng; mái nhà, như trong 「屋上」 (sân thượng).",
+        "en": "Not quite. 屋 means shop; roof, as in 「屋上」 (rooftop)."
+      }
+    },
+    {
+      "item": "屋",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「屋」 trong 「屋上」 (“sân thượng”).",
+        "en": "Type the reading of 「屋」 in 「屋上」 (“rooftop”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "おく",
+          "オク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 屋上, 屋 đọc là おく (âm On).",
+        "en": "Correct! In 屋上, 屋 is read おく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 屋上 (sân thượng), 屋 đọc là おく (âm On).",
+        "en": "In 屋上 (rooftop), 屋 is read おく (on'yomi)."
+      }
+    },
+    {
+      "item": "屋",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「本屋」(hiệu sách) đọc là gì?",
+        "en": "How is 「本屋」 (bookstore) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほんおく",
+          "ほんや",
+          "ほんやかた"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 本屋 = ほんや (hiệu sách); 屋 đọc là や (âm Kun).",
+        "en": "Correct! 本屋 = ほんや (bookstore); 屋 is read や (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "本屋 đọc là ほんや (hiệu sách): 屋 mang âm Kun や.",
+        "en": "本屋 is read ほんや (bookstore): 屋 takes the kun'yomi や."
+      }
+    },
+    {
+      "item": "館",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「館」nghĩa là gì?",
+        "en": "What does 「館」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đại sảnh; nhà",
+            "en": "hall"
+          },
+          {
+            "vi": "tòa nhà lớn; hội quán",
+            "en": "hall; large building"
+          },
+          {
+            "vi": "cửa hàng; mái nhà",
+            "en": "shop; roof"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 館 nghĩa là tòa nhà lớn; hội quán.",
+        "en": "Correct! 館 means hall; large building."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 館 nghĩa là tòa nhà lớn; hội quán, như trong 「図書館」 (thư viện).",
+        "en": "Not quite. 館 means hall; large building, as in 「図書館」 (library)."
+      }
+    },
+    {
+      "item": "館",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「館」 trong 「図書館」 (“thư viện”).",
+        "en": "Type the reading of 「館」 in 「図書館」 (“library”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 図書館, 館 đọc là かん (âm On).",
+        "en": "Correct! In 図書館, 館 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 図書館 (thư viện), 館 đọc là かん (âm On).",
+        "en": "In 図書館 (library), 館 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "館",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「映画館」(rạp chiếu phim) đọc là gì?",
+        "en": "How is 「映画館」 (movie theater) read?"
+      },
+      "payload": {
+        "choices": [
+          "えいがやかた",
+          "えいががん",
+          "えいがかん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 映画館 = えいがかん (rạp chiếu phim); 館 đọc là かん (âm On).",
+        "en": "Correct! 映画館 = えいがかん (movie theater); 館 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "映画館 đọc là えいがかん (rạp chiếu phim): 館 mang âm On かん.",
+        "en": "映画館 is read えいがかん (movie theater): 館 takes the on'yomi かん."
+      }
+    },
+    {
+      "item": "堂",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「堂」nghĩa là gì?",
+        "en": "What does 「堂」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cửa hàng; mái nhà",
+            "en": "shop; roof"
+          },
+          {
+            "vi": "tòa nhà lớn; hội quán",
+            "en": "hall; large building"
+          },
+          {
+            "vi": "đại sảnh; nhà",
+            "en": "hall"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 堂 nghĩa là đại sảnh; nhà.",
+        "en": "Correct! 堂 means hall."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 堂 nghĩa là đại sảnh; nhà, như trong 「食堂」 (nhà ăn).",
+        "en": "Not quite. 堂 means hall, as in 「食堂」 (cafeteria)."
+      }
+    },
+    {
+      "item": "堂",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「堂」 trong 「食堂」 (“nhà ăn”).",
+        "en": "Type the reading of 「堂」 in 「食堂」 (“cafeteria”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どう",
+          "ドウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 食堂, 堂 đọc là どう (âm On).",
+        "en": "Correct! In 食堂, 堂 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 食堂 (nhà ăn), 堂 đọc là どう (âm On).",
+        "en": "In 食堂 (cafeteria), 堂 is read どう (on'yomi)."
+      }
+    },
+    {
+      "item": "堂",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「講堂」(giảng đường; hội trường) đọc là gì?",
+        "en": "How is 「講堂」 (auditorium) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうどう",
+          "こうど",
+          "こうとう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 講堂 = こうどう (giảng đường; hội trường); 堂 đọc là どう (âm On).",
+        "en": "Correct! 講堂 = こうどう (auditorium); 堂 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "講堂 đọc là こうどう (giảng đường; hội trường): 堂 mang âm On どう.",
+        "en": "講堂 is read こうどう (auditorium): 堂 takes the on'yomi どう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "屋",
+            {
+              "vi": "cửa hàng; mái nhà",
+              "en": "shop; roof"
+            }
+          ],
+          [
+            "館",
+            {
+              "vi": "tòa nhà lớn; hội quán",
+              "en": "hall; large building"
+            }
+          ],
+          [
+            "堂",
+            {
+              "vi": "đại sảnh; nhà",
+              "en": "hall"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

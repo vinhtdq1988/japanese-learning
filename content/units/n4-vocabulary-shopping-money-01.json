@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-shopping-money",
+  "title": {
+    "vi": "Tiền bạc và giá cả",
+    "en": "Money and prices"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "値段",
+      "reading": "ねだん",
+      "meaning": {
+        "vi": "Giá cả",
+        "en": "Price"
+      },
+      "examples": [
+        {
+          "ja": "この時計は、値段が高すぎます。",
+          "reading": "このとけいは、ねだんがたかすぎます。",
+          "translation": {
+            "vi": "Chiếc đồng hồ này giá đắt quá.",
+            "en": "The price of this watch is too high."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "割引",
+      "reading": "わりびき",
+      "meaning": {
+        "vi": "Giảm giá",
+        "en": "Discount"
+      },
+      "examples": [
+        {
+          "ja": "学生は、三割の割引があります。",
+          "reading": "がくせいは、さんわりのわりびきがあります。",
+          "translation": {
+            "vi": "Học sinh sinh viên được giảm giá ba mươi phần trăm.",
+            "en": "Students get a thirty percent discount."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "財布",
+      "reading": "さいふ",
+      "meaning": {
+        "vi": "Cái ví",
+        "en": "Wallet"
+      },
+      "examples": [
+        {
+          "ja": "財布にお金が入っていません。",
+          "reading": "さいふにおかねがはいっていません。",
+          "translation": {
+            "vi": "Trong ví không có tiền.",
+            "en": "There is no money in my wallet."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "現金",
+      "reading": "げんきん",
+      "meaning": {
+        "vi": "Tiền mặt",
+        "en": "Cash"
+      },
+      "examples": [
+        {
+          "ja": "カードではなく、現金で払います。",
+          "reading": "カードではなく、げんきんではらいます。",
+          "translation": {
+            "vi": "Tôi trả bằng tiền mặt chứ không dùng thẻ.",
+            "en": "I will pay in cash, not by card."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "小銭",
+      "reading": "こぜに",
+      "meaning": {
+        "vi": "Tiền lẻ",
+        "en": "Small change; coins"
+      },
+      "examples": [
+        {
+          "ja": "バスに乗るので、小銭が必要です。",
+          "reading": "バスにのるので、こぜにがひつようです。",
+          "translation": {
+            "vi": "Vì đi xe buýt nên tôi cần tiền lẻ.",
+            "en": "I am taking the bus, so I need small change."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "お釣り",
+      "reading": "おつり",
+      "meaning": {
+        "vi": "Tiền thối lại",
+        "en": "Change (money returned)"
+      },
+      "examples": [
+        {
+          "ja": "千円出して、三百円のお釣りをもらいました。",
+          "reading": "せんえんだして、さんびゃくえんのおつりをもらいました。",
+          "translation": {
+            "vi": "Tôi đưa một nghìn yên và nhận lại ba trăm yên tiền thối.",
+            "en": "I handed over 1,000 yen and got 300 yen in change."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "値段",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この時計は、（　）が高すぎます。",
+        "en": "Choose the word that fits the blank: この時計は、（　）が高すぎます。"
+      },
+      "payload": {
+        "choices": [
+          "値段",
+          "割引",
+          "財布",
+          "現金"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「値段」(Giá cả) hợp nghĩa câu này: “Chiếc đồng hồ này giá đắt quá.”",
+        "en": "Correct! 「値段」(Price) fits this sentence: “The price of this watch is too high.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc đồng hồ này giá đắt quá.”, nên cần 「値段」(Giá cả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The price of this watch is too high.”, so it needs 「値段」(Price); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "割引",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 学生は、三割の（　）があります。",
+        "en": "Choose the word that fits the blank: 学生は、三割の（　）があります。"
+      },
+      "payload": {
+        "choices": [
+          "値段",
+          "割引",
+          "財布",
+          "現金"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「割引」(Giảm giá) hợp nghĩa câu này: “Học sinh sinh viên được giảm giá ba mươi phần trăm.”",
+        "en": "Correct! 「割引」(Discount) fits this sentence: “Students get a thirty percent discount.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Học sinh sinh viên được giảm giá ba mươi phần trăm.”, nên cần 「割引」(Giảm giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Students get a thirty percent discount.”, so it needs 「割引」(Discount); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "財布",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）にお金が入っていません。",
+        "en": "Choose the word that fits the blank: （　）にお金が入っていません。"
+      },
+      "payload": {
+        "choices": [
+          "現金",
+          "小銭",
+          "財布",
+          "お釣り"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「財布」(Cái ví) hợp nghĩa câu này: “Trong ví không có tiền.”",
+        "en": "Correct! 「財布」(Wallet) fits this sentence: “There is no money in my wallet.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong ví không có tiền.”, nên cần 「財布」(Cái ví); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is no money in my wallet.”, so it needs 「財布」(Wallet); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "現金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: カードではなく、（　）で払います。 — Nghĩa của câu: “Tôi trả bằng tiền mặt chứ không dùng thẻ.”",
+        "en": "Choose the word that fits the blank: カードではなく、（　）で払います。 — Meaning of the sentence: “I will pay in cash, not by card.”"
+      },
+      "payload": {
+        "choices": [
+          "小銭",
+          "割引",
+          "値段",
+          "現金"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「現金」(Tiền mặt) hợp nghĩa câu này: “Tôi trả bằng tiền mặt chứ không dùng thẻ.”",
+        "en": "Correct! 「現金」(Cash) fits this sentence: “I will pay in cash, not by card.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi trả bằng tiền mặt chứ không dùng thẻ.”, nên cần 「現金」(Tiền mặt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will pay in cash, not by card.”, so it needs 「現金」(Cash); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "小銭",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: バスに乗るので、（　）が必要です。 — Nghĩa của câu: “Vì đi xe buýt nên tôi cần tiền lẻ.”",
+        "en": "Choose the word that fits the blank: バスに乗るので、（　）が必要です。 — Meaning of the sentence: “I am taking the bus, so I need small change.”"
+      },
+      "payload": {
+        "choices": [
+          "小銭",
+          "現金",
+          "財布",
+          "値段"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小銭」(Tiền lẻ) hợp nghĩa câu này: “Vì đi xe buýt nên tôi cần tiền lẻ.”",
+        "en": "Correct! 「小銭」(Small change; coins) fits this sentence: “I am taking the bus, so I need small change.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì đi xe buýt nên tôi cần tiền lẻ.”, nên cần 「小銭」(Tiền lẻ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am taking the bus, so I need small change.”, so it needs 「小銭」(Small change; coins); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "お釣り",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 千円出して、三百円の（　）をもらいました。 — Nghĩa của câu: “Tôi đưa một nghìn yên và nhận lại ba trăm yên tiền thối.”",
+        "en": "Choose the word that fits the blank: 千円出して、三百円の（　）をもらいました。 — Meaning of the sentence: “I handed over 1,000 yen and got 300 yen in change.”"
+      },
+      "payload": {
+        "choices": [
+          "割引",
+          "お釣り",
+          "小銭",
+          "財布"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「お釣り」(Tiền thối lại) hợp nghĩa câu này: “Tôi đưa một nghìn yên và nhận lại ba trăm yên tiền thối.”",
+        "en": "Correct! 「お釣り」(Change (money returned)) fits this sentence: “I handed over 1,000 yen and got 300 yen in change.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đưa một nghìn yên và nhận lại ba trăm yên tiền thối.”, nên cần 「お釣り」(Tiền thối lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I handed over 1,000 yen and got 300 yen in change.”, so it needs 「お釣り」(Change (money returned)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "値段",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この時計は、「値段」が高すぎます。",
+        "en": "Choose the correct reading of the word in 「」: この時計は、「値段」が高すぎます。"
+      },
+      "payload": {
+        "choices": [
+          "わりびき",
+          "ねだん",
+          "さいふ",
+          "げんきん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「値段」 đọc là 「ねだん」, nghĩa là Giá cả.",
+        "en": "Correct! 「値段」 is read 「ねだん」 and means Price."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「値段」 đọc là 「ねだん」 (Giá cả); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「値段」 is read 「ねだん」 (Price); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "現金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: カードではなく、「現金」で払います。",
+        "en": "Choose the correct reading of the word in 「」: カードではなく、「現金」で払います。"
+      },
+      "payload": {
+        "choices": [
+          "ねだん",
+          "わりびき",
+          "げんきん",
+          "さいふ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「現金」 đọc là 「げんきん」, nghĩa là Tiền mặt.",
+        "en": "Correct! 「現金」 is read 「げんきん」 and means Cash."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「現金」 đọc là 「げんきん」 (Tiền mặt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「現金」 is read 「げんきん」 (Cash); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "割引",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 学生は、三割の「わりびき」があります。",
+        "en": "Choose the correct way to write the word in 「」: 学生は、三割の「わりびき」があります。"
+      },
+      "payload": {
+        "choices": [
+          "値段",
+          "財布",
+          "割引",
+          "現金"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「わりびき」 viết là 「割引」, nghĩa là Giảm giá.",
+        "en": "Correct! 「わりびき」 is written 「割引」 and means Discount."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「わりびき」 viết là 「割引」 (Giảm giá); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「わりびき」 is written 「割引」 (Discount); the other words are read differently."
+      }
+    }
+  ]
+}

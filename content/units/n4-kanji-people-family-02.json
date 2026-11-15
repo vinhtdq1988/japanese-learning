@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-people-family",
+  "title": {
+    "vi": "Kanji con người – gia đình (族 親 自)",
+    "en": "People and family kanji (族 親 自)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "族",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "dòng họ; tộc",
+        "en": "family; tribe"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゾク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "家族",
+          "reading": "かぞく",
+          "kanjiReading": "ゾク",
+          "translation": {
+            "vi": "gia đình",
+            "en": "family"
+          }
+        },
+        {
+          "ja": "民族",
+          "reading": "みんぞく",
+          "kanjiReading": "ゾク",
+          "translation": {
+            "vi": "dân tộc",
+            "en": "ethnic group"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "親",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "cha mẹ; thân thiết",
+        "en": "parent; close"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "おや",
+          "した.しい"
+        ],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "両親",
+          "reading": "りょうしん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "bố mẹ",
+            "en": "parents"
+          }
+        },
+        {
+          "ja": "親",
+          "reading": "おや",
+          "kanjiReading": "おや",
+          "translation": {
+            "vi": "cha mẹ",
+            "en": "parent"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "自",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "tự mình",
+        "en": "oneself"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ",
+          "シ"
+        ],
+        "kunReadings": [
+          "みずか.ら"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "自分",
+          "reading": "じぶん",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "bản thân",
+            "en": "oneself"
+          }
+        },
+        {
+          "ja": "自然",
+          "reading": "しぜん",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "thiên nhiên",
+            "en": "nature"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "族",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「族」nghĩa là gì?",
+        "en": "What does 「族」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dòng họ; tộc",
+            "en": "family; tribe"
+          },
+          {
+            "vi": "cha mẹ; thân thiết",
+            "en": "parent; close"
+          },
+          {
+            "vi": "tự mình",
+            "en": "oneself"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 族 nghĩa là dòng họ; tộc.",
+        "en": "Correct! 族 means family; tribe."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 族 nghĩa là dòng họ; tộc, như trong 「家族」 (gia đình).",
+        "en": "Not quite. 族 means family; tribe, as in 「家族」 (family)."
+      }
+    },
+    {
+      "item": "族",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「族」 trong 「家族」 (“gia đình”).",
+        "en": "Type the reading of 「族」 in 「家族」 (“family”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぞく",
+          "ゾク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 家族, 族 đọc là ぞく (âm On).",
+        "en": "Correct! In 家族, 族 is read ぞく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 家族 (gia đình), 族 đọc là ぞく (âm On).",
+        "en": "In 家族 (family), 族 is read ぞく (on'yomi)."
+      }
+    },
+    {
+      "item": "族",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「民族」(dân tộc) đọc là gì?",
+        "en": "How is 「民族」 (ethnic group) read?"
+      },
+      "payload": {
+        "choices": [
+          "みんそく",
+          "みんぞく",
+          "みんおや"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 民族 = みんぞく (dân tộc); 族 đọc là ぞく (âm On).",
+        "en": "Correct! 民族 = みんぞく (ethnic group); 族 is read ぞく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "民族 đọc là みんぞく (dân tộc): 族 mang âm On ぞく.",
+        "en": "民族 is read みんぞく (ethnic group): 族 takes the on'yomi ぞく."
+      }
+    },
+    {
+      "item": "親",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「親」nghĩa là gì?",
+        "en": "What does 「親」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tự mình",
+            "en": "oneself"
+          },
+          {
+            "vi": "cha mẹ; thân thiết",
+            "en": "parent; close"
+          },
+          {
+            "vi": "dòng họ; tộc",
+            "en": "family; tribe"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 親 nghĩa là cha mẹ; thân thiết.",
+        "en": "Correct! 親 means parent; close."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 親 nghĩa là cha mẹ; thân thiết, như trong 「両親」 (bố mẹ).",
+        "en": "Not quite. 親 means parent; close, as in 「両親」 (parents)."
+      }
+    },
+    {
+      "item": "親",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「親」 trong 「両親」 (“bố mẹ”).",
+        "en": "Type the reading of 「親」 in 「両親」 (“parents”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 両親, 親 đọc là しん (âm On).",
+        "en": "Correct! In 両親, 親 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 両親 (bố mẹ), 親 đọc là しん (âm On).",
+        "en": "In 両親 (parents), 親 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "親",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「親」(cha mẹ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「親」 (parent; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しん",
+          "した",
+          "おや"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 親 = おや (cha mẹ); 親 đọc là おや (âm Kun).",
+        "en": "Correct! 親 = おや (parent); 親 is read おや (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "親 đọc là おや (cha mẹ): 親 mang âm Kun おや.",
+        "en": "親 is read おや (parent): 親 takes the kun'yomi おや."
+      }
+    },
+    {
+      "item": "自",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「自」nghĩa là gì?",
+        "en": "What does 「自」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dòng họ; tộc",
+            "en": "family; tribe"
+          },
+          {
+            "vi": "cha mẹ; thân thiết",
+            "en": "parent; close"
+          },
+          {
+            "vi": "tự mình",
+            "en": "oneself"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 自 nghĩa là tự mình.",
+        "en": "Correct! 自 means oneself."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 自 nghĩa là tự mình, như trong 「自分」 (bản thân).",
+        "en": "Not quite. 自 means oneself, as in 「自分」 (oneself)."
+      }
+    },
+    {
+      "item": "自",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「自」 trong 「自分」 (“bản thân”).",
+        "en": "Type the reading of 「自」 in 「自分」 (“oneself”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 自分, 自 đọc là じ (âm On).",
+        "en": "Correct! In 自分, 自 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 自分 (bản thân), 自 đọc là じ (âm On).",
+        "en": "In 自分 (oneself), 自 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "自",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「自然」(thiên nhiên) đọc là gì?",
+        "en": "How is 「自然」 (nature) read?"
+      },
+      "payload": {
+        "choices": [
+          "しぜん",
+          "じぜん",
+          "しせん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 自然 = しぜん (thiên nhiên); 自 đọc là し (âm On).",
+        "en": "Correct! 自然 = しぜん (nature); 自 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "自然 đọc là しぜん (thiên nhiên): 自 mang âm On し.",
+        "en": "自然 is read しぜん (nature): 自 takes the on'yomi し."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "族",
+            {
+              "vi": "dòng họ; tộc",
+              "en": "family; tribe"
+            }
+          ],
+          [
+            "親",
+            {
+              "vi": "cha mẹ; thân thiết",
+              "en": "parent; close"
+            }
+          ],
+          [
+            "自",
+            {
+              "vi": "tự mình",
+              "en": "oneself"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

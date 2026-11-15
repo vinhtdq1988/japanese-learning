@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-abstract-nouns",
+  "title": {
+    "vi": "Ấn tượng và cảm nhận",
+    "en": "Impressions and sensations"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3260,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "当たり前",
+      "reading": "あたりまえ",
+      "meaning": {
+        "vi": "Đương nhiên; lẽ thường",
+        "en": "Natural; obvious"
+      },
+      "examples": [
+        {
+          "ja": "約束を守るのは、当たり前です。",
+          "reading": "やくそくをまもるのは、あたりまえです。",
+          "translation": {
+            "vi": "Giữ lời hứa là điều đương nhiên.",
+            "en": "Keeping promises is only natural."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "意義",
+      "reading": "いぎ",
+      "meaning": {
+        "vi": "Ý nghĩa; giá trị",
+        "en": "Significance"
+      },
+      "examples": [
+        {
+          "ja": "この仕事には、大きな意義があります。",
+          "reading": "このしごとには、おおきないぎがあります。",
+          "translation": {
+            "vi": "Công việc này có ý nghĩa lớn.",
+            "en": "This work has great significance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "印象",
+      "reading": "いんしょう",
+      "meaning": {
+        "vi": "Ấn tượng",
+        "en": "Impression"
+      },
+      "examples": [
+        {
+          "ja": "初めて会った人の印象は、大切です。",
+          "reading": "はじめてあったひとのいんしょうは、たいせつです。",
+          "translation": {
+            "vi": "Ấn tượng về người mới gặp lần đầu rất quan trọng.",
+            "en": "The impression of someone you meet for the first time is important."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "感覚",
+      "reading": "かんかく",
+      "meaning": {
+        "vi": "Cảm giác",
+        "en": "Sense; feeling"
+      },
+      "examples": [
+        {
+          "ja": "寒くて、手の感覚がなくなりました。",
+          "reading": "さむくて、てのかんかくがなくなりました。",
+          "translation": {
+            "vi": "Lạnh quá nên tay tôi mất cảm giác.",
+            "en": "It was so cold that my hands lost feeling."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "感想",
+      "reading": "かんそう",
+      "meaning": {
+        "vi": "Cảm tưởng; nhận xét",
+        "en": "Impressions; thoughts"
+      },
+      "examples": [
+        {
+          "ja": "映画を見た感想を、聞かせてください。",
+          "reading": "えいがをみたかんそうを、きかせてください。",
+          "translation": {
+            "vi": "Hãy cho tôi nghe cảm tưởng sau khi xem phim.",
+            "en": "Please tell me your impressions of the movie."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "事柄",
+      "reading": "ことがら",
+      "meaning": {
+        "vi": "Sự việc; vấn đề",
+        "en": "Matter; affair"
+      },
+      "examples": [
+        {
+          "ja": "この事柄については、後で話します。",
+          "reading": "このことがらについては、あとではなします。",
+          "translation": {
+            "vi": "Việc này tôi sẽ nói sau.",
+            "en": "I will talk about this matter later."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "当たり前",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 約束を守るのは、（　）です。 — Nghĩa của câu: “Giữ lời hứa là điều đương nhiên.”",
+        "en": "Choose the word that fits the blank: 約束を守るのは、（　）です。 — Meaning of the sentence: “Keeping promises is only natural.”"
+      },
+      "payload": {
+        "choices": [
+          "当たり前",
+          "感想",
+          "意義",
+          "印象"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「当たり前」(Đương nhiên; lẽ thường) hợp nghĩa câu này: “Giữ lời hứa là điều đương nhiên.”",
+        "en": "Correct! 「当たり前」(Natural; obvious) fits this sentence: “Keeping promises is only natural.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giữ lời hứa là điều đương nhiên.”, nên cần 「当たり前」(Đương nhiên; lẽ thường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Keeping promises is only natural.”, so it needs 「当たり前」(Natural; obvious); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "意義",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この仕事には、大きな（　）があります。 — Nghĩa của câu: “Công việc này có ý nghĩa lớn.”",
+        "en": "Choose the word that fits the blank: この仕事には、大きな（　）があります。 — Meaning of the sentence: “This work has great significance.”"
+      },
+      "payload": {
+        "choices": [
+          "印象",
+          "意義",
+          "当たり前",
+          "感覚"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「意義」(Ý nghĩa; giá trị) hợp nghĩa câu này: “Công việc này có ý nghĩa lớn.”",
+        "en": "Correct! 「意義」(Significance) fits this sentence: “This work has great significance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công việc này có ý nghĩa lớn.”, nên cần 「意義」(Ý nghĩa; giá trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This work has great significance.”, so it needs 「意義」(Significance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "印象",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 初めて会った人の（　）は、大切です。 — Nghĩa của câu: “Ấn tượng về người mới gặp lần đầu rất quan trọng.”",
+        "en": "Choose the word that fits the blank: 初めて会った人の（　）は、大切です。 — Meaning of the sentence: “The impression of someone you meet for the first time is important.”"
+      },
+      "payload": {
+        "choices": [
+          "事柄",
+          "当たり前",
+          "印象",
+          "感覚"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「印象」(Ấn tượng) hợp nghĩa câu này: “Ấn tượng về người mới gặp lần đầu rất quan trọng.”",
+        "en": "Correct! 「印象」(Impression) fits this sentence: “The impression of someone you meet for the first time is important.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ấn tượng về người mới gặp lần đầu rất quan trọng.”, nên cần 「印象」(Ấn tượng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The impression of someone you meet for the first time is important.”, so it needs 「印象」(Impression); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "感覚",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 寒くて、手の（　）がなくなりました。 — Nghĩa của câu: “Lạnh quá nên tay tôi mất cảm giác.”",
+        "en": "Choose the word that fits the blank: 寒くて、手の（　）がなくなりました。 — Meaning of the sentence: “It was so cold that my hands lost feeling.”"
+      },
+      "payload": {
+        "choices": [
+          "感想",
+          "当たり前",
+          "事柄",
+          "感覚"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感覚」(Cảm giác) hợp nghĩa câu này: “Lạnh quá nên tay tôi mất cảm giác.”",
+        "en": "Correct! 「感覚」(Sense; feeling) fits this sentence: “It was so cold that my hands lost feeling.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lạnh quá nên tay tôi mất cảm giác.”, nên cần 「感覚」(Cảm giác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It was so cold that my hands lost feeling.”, so it needs 「感覚」(Sense; feeling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "感想",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 映画を見た（　）を、聞かせてください。 — Nghĩa của câu: “Hãy cho tôi nghe cảm tưởng sau khi xem phim.”",
+        "en": "Choose the word that fits the blank: 映画を見た（　）を、聞かせてください。 — Meaning of the sentence: “Please tell me your impressions of the movie.”"
+      },
+      "payload": {
+        "choices": [
+          "感想",
+          "意義",
+          "当たり前",
+          "事柄"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感想」(Cảm tưởng; nhận xét) hợp nghĩa câu này: “Hãy cho tôi nghe cảm tưởng sau khi xem phim.”",
+        "en": "Correct! 「感想」(Impressions; thoughts) fits this sentence: “Please tell me your impressions of the movie.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy cho tôi nghe cảm tưởng sau khi xem phim.”, nên cần 「感想」(Cảm tưởng; nhận xét); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please tell me your impressions of the movie.”, so it needs 「感想」(Impressions; thoughts); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "事柄",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）については、後で話します。 — Nghĩa của câu: “Việc này tôi sẽ nói sau.”",
+        "en": "Choose the word that fits the blank: この（　）については、後で話します。 — Meaning of the sentence: “I will talk about this matter later.”"
+      },
+      "payload": {
+        "choices": [
+          "感想",
+          "事柄",
+          "当たり前",
+          "意義"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事柄」(Sự việc; vấn đề) hợp nghĩa câu này: “Việc này tôi sẽ nói sau.”",
+        "en": "Correct! 「事柄」(Matter; affair) fits this sentence: “I will talk about this matter later.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc này tôi sẽ nói sau.”, nên cần 「事柄」(Sự việc; vấn đề); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will talk about this matter later.”, so it needs 「事柄」(Matter; affair); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "当たり前",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 約束を守るのは、「当たり前」です。",
+        "en": "Choose the correct reading of the word in 「」: 約束を守るのは、「当たり前」です。"
+      },
+      "payload": {
+        "choices": [
+          "いんしょう",
+          "あたりまえ",
+          "いぎ",
+          "かんかく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「当たり前」 đọc là 「あたりまえ」, nghĩa là Đương nhiên; lẽ thường.",
+        "en": "Correct! 「当たり前」 is read 「あたりまえ」 and means Natural; obvious."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「当たり前」 đọc là 「あたりまえ」 (Đương nhiên; lẽ thường); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「当たり前」 is read 「あたりまえ」 (Natural; obvious); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "感覚",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 寒くて、手の「感覚」がなくなりました。",
+        "en": "Choose the correct reading of the word in 「」: 寒くて、手の「感覚」がなくなりました。"
+      },
+      "payload": {
+        "choices": [
+          "いぎ",
+          "あたりまえ",
+          "かんかく",
+          "かんそう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「感覚」 đọc là 「かんかく」, nghĩa là Cảm giác.",
+        "en": "Correct! 「感覚」 is read 「かんかく」 and means Sense; feeling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「感覚」 đọc là 「かんかく」 (Cảm giác); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「感覚」 is read 「かんかく」 (Sense; feeling); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "印象",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 初めて会った人の「いんしょう」は、大切です。",
+        "en": "Choose the correct way to write the word in 「」: 初めて会った人の「いんしょう」は、大切です。"
+      },
+      "payload": {
+        "choices": [
+          "感覚",
+          "当たり前",
+          "印象",
+          "感想"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いんしょう」 viết là 「印象」, nghĩa là Ấn tượng.",
+        "en": "Correct! 「いんしょう」 is written 「印象」 and means Impression."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いんしょう」 viết là 「印象」 (Ấn tượng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いんしょう」 is written 「印象」 (Impression); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-international",
+  "title": {
+    "vi": "Giao lưu và khu vực",
+    "en": "Exchange and regions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1650,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "交流",
+      "reading": "こうりゅう",
+      "meaning": {
+        "vi": "Giao lưu",
+        "en": "Exchange; interaction"
+      },
+      "examples": [
+        {
+          "ja": "外国の学生と、交流する機会があります。",
+          "reading": "がいこくのがくせいと、こうりゅうするきかいがあります。",
+          "translation": {
+            "vi": "Tôi có cơ hội giao lưu với sinh viên nước ngoài.",
+            "en": "I have the chance to interact with foreign students."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "親善",
+      "reading": "しんぜん",
+      "meaning": {
+        "vi": "Hữu nghị; thân thiện",
+        "en": "Goodwill; friendship"
+      },
+      "examples": [
+        {
+          "ja": "親善のために、スポーツの試合が行われました。",
+          "reading": "しんぜんのために、スポーツのしあいがおこなわれました。",
+          "translation": {
+            "vi": "Một trận thể thao đã được tổ chức để thúc đẩy tình hữu nghị.",
+            "en": "A sports match was held to promote goodwill."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "友好",
+      "reading": "ゆうこう",
+      "meaning": {
+        "vi": "Hữu hảo; thân thiện",
+        "en": "Friendship (between nations)"
+      },
+      "examples": [
+        {
+          "ja": "日本とその国は、友好な関係を保っています。",
+          "reading": "にほんとそのくには、ゆうこうなかんけいをたもっています。",
+          "translation": {
+            "vi": "Nhật Bản và nước đó giữ quan hệ hữu hảo.",
+            "en": "Japan and that country maintain friendly relations."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地域",
+      "reading": "ちいき",
+      "meaning": {
+        "vi": "Khu vực; vùng",
+        "en": "Area; region"
+      },
+      "examples": [
+        {
+          "ja": "この地域は、冬に雪がたくさん降ります。",
+          "reading": "このちいきは、ふゆにゆきがたくさんふります。",
+          "translation": {
+            "vi": "Khu vực này mùa đông tuyết rơi nhiều.",
+            "en": "This area gets a lot of snow in winter."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "欧米",
+      "reading": "おうべい",
+      "meaning": {
+        "vi": "Âu Mỹ",
+        "en": "Europe and America; the West"
+      },
+      "examples": [
+        {
+          "ja": "欧米の文化が、日本に大きな影響を与えました。",
+          "reading": "おうべいのぶんかが、にほんにおおきなえいきょうをあたえました。",
+          "translation": {
+            "vi": "Văn hóa Âu Mỹ đã ảnh hưởng lớn đến Nhật Bản.",
+            "en": "Western culture had a big influence on Japan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "東洋",
+      "reading": "とうよう",
+      "meaning": {
+        "vi": "Phương Đông",
+        "en": "The Orient; East Asia"
+      },
+      "examples": [
+        {
+          "ja": "東洋の文化について、勉強しています。",
+          "reading": "とうようのぶんかについて、べんきょうしています。",
+          "translation": {
+            "vi": "Tôi đang học về văn hóa phương Đông.",
+            "en": "I am studying Eastern cultures."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "交流",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 外国の学生と、（　）する機会があります。 — Nghĩa của câu: “Tôi có cơ hội giao lưu với sinh viên nước ngoài.”",
+        "en": "Choose the word that fits the blank: 外国の学生と、（　）する機会があります。 — Meaning of the sentence: “I have the chance to interact with foreign students.”"
+      },
+      "payload": {
+        "choices": [
+          "親善",
+          "交流",
+          "友好",
+          "東洋"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交流」(Giao lưu) hợp nghĩa câu này: “Tôi có cơ hội giao lưu với sinh viên nước ngoài.”",
+        "en": "Correct! 「交流」(Exchange; interaction) fits this sentence: “I have the chance to interact with foreign students.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi có cơ hội giao lưu với sinh viên nước ngoài.”, nên cần 「交流」(Giao lưu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have the chance to interact with foreign students.”, so it needs 「交流」(Exchange; interaction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "親善",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）のために、スポーツの試合が行われました。 — Nghĩa của câu: “Một trận thể thao đã được tổ chức để thúc đẩy tình hữu nghị.”",
+        "en": "Choose the word that fits the blank: （　）のために、スポーツの試合が行われました。 — Meaning of the sentence: “A sports match was held to promote goodwill.”"
+      },
+      "payload": {
+        "choices": [
+          "東洋",
+          "交流",
+          "親善",
+          "友好"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親善」(Hữu nghị; thân thiện) hợp nghĩa câu này: “Một trận thể thao đã được tổ chức để thúc đẩy tình hữu nghị.”",
+        "en": "Correct! 「親善」(Goodwill; friendship) fits this sentence: “A sports match was held to promote goodwill.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Một trận thể thao đã được tổ chức để thúc đẩy tình hữu nghị.”, nên cần 「親善」(Hữu nghị; thân thiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A sports match was held to promote goodwill.”, so it needs 「親善」(Goodwill; friendship); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "友好",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本とその国は、（　）な関係を保っています。 — Nghĩa của câu: “Nhật Bản và nước đó giữ quan hệ hữu hảo.”",
+        "en": "Choose the word that fits the blank: 日本とその国は、（　）な関係を保っています。 — Meaning of the sentence: “Japan and that country maintain friendly relations.”"
+      },
+      "payload": {
+        "choices": [
+          "地域",
+          "交流",
+          "欧米",
+          "友好"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「友好」(Hữu hảo; thân thiện) hợp nghĩa câu này: “Nhật Bản và nước đó giữ quan hệ hữu hảo.”",
+        "en": "Correct! 「友好」(Friendship (between nations)) fits this sentence: “Japan and that country maintain friendly relations.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhật Bản và nước đó giữ quan hệ hữu hảo.”, nên cần 「友好」(Hữu hảo; thân thiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Japan and that country maintain friendly relations.”, so it needs 「友好」(Friendship (between nations)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "地域",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）は、冬に雪がたくさん降ります。 — Nghĩa của câu: “Khu vực này mùa đông tuyết rơi nhiều.”",
+        "en": "Choose the word that fits the blank: この（　）は、冬に雪がたくさん降ります。 — Meaning of the sentence: “This area gets a lot of snow in winter.”"
+      },
+      "payload": {
+        "choices": [
+          "地域",
+          "親善",
+          "交流",
+          "友好"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地域」(Khu vực; vùng) hợp nghĩa câu này: “Khu vực này mùa đông tuyết rơi nhiều.”",
+        "en": "Correct! 「地域」(Area; region) fits this sentence: “This area gets a lot of snow in winter.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu vực này mùa đông tuyết rơi nhiều.”, nên cần 「地域」(Khu vực; vùng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This area gets a lot of snow in winter.”, so it needs 「地域」(Area; region); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "欧米",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の文化が、日本に大きな影響を与えました。 — Nghĩa của câu: “Văn hóa Âu Mỹ đã ảnh hưởng lớn đến Nhật Bản.”",
+        "en": "Choose the word that fits the blank: （　）の文化が、日本に大きな影響を与えました。 — Meaning of the sentence: “Western culture had a big influence on Japan.”"
+      },
+      "payload": {
+        "choices": [
+          "地域",
+          "欧米",
+          "交流",
+          "親善"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「欧米」(Âu Mỹ) hợp nghĩa câu này: “Văn hóa Âu Mỹ đã ảnh hưởng lớn đến Nhật Bản.”",
+        "en": "Correct! 「欧米」(Europe and America; the West) fits this sentence: “Western culture had a big influence on Japan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Văn hóa Âu Mỹ đã ảnh hưởng lớn đến Nhật Bản.”, nên cần 「欧米」(Âu Mỹ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Western culture had a big influence on Japan.”, so it needs 「欧米」(Europe and America; the West); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "東洋",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の文化について、勉強しています。 — Nghĩa của câu: “Tôi đang học về văn hóa phương Đông.”",
+        "en": "Choose the word that fits the blank: （　）の文化について、勉強しています。 — Meaning of the sentence: “I am studying Eastern cultures.”"
+      },
+      "payload": {
+        "choices": [
+          "友好",
+          "交流",
+          "東洋",
+          "親善"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「東洋」(Phương Đông) hợp nghĩa câu này: “Tôi đang học về văn hóa phương Đông.”",
+        "en": "Correct! 「東洋」(The Orient; East Asia) fits this sentence: “I am studying Eastern cultures.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đang học về văn hóa phương Đông.”, nên cần 「東洋」(Phương Đông); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am studying Eastern cultures.”, so it needs 「東洋」(The Orient; East Asia); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "交流",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 外国の学生と、「交流」する機会があります。",
+        "en": "Choose the correct reading of the word in 「」: 外国の学生と、「交流」する機会があります。"
+      },
+      "payload": {
+        "choices": [
+          "ゆうこう",
+          "しんぜん",
+          "こうりゅう",
+          "とうよう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交流」 đọc là 「こうりゅう」, nghĩa là Giao lưu.",
+        "en": "Correct! 「交流」 is read 「こうりゅう」 and means Exchange; interaction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「交流」 đọc là 「こうりゅう」 (Giao lưu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「交流」 is read 「こうりゅう」 (Exchange; interaction); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "地域",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この「地域」は、冬に雪がたくさん降ります。",
+        "en": "Choose the correct reading of the word in 「」: この「地域」は、冬に雪がたくさん降ります。"
+      },
+      "payload": {
+        "choices": [
+          "おうべい",
+          "こうりゅう",
+          "しんぜん",
+          "ちいき"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地域」 đọc là 「ちいき」, nghĩa là Khu vực; vùng.",
+        "en": "Correct! 「地域」 is read 「ちいき」 and means Area; region."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「地域」 đọc là 「ちいき」 (Khu vực; vùng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「地域」 is read 「ちいき」 (Area; region); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "友好",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 日本とその国は、「ゆうこう」な関係を保っています。",
+        "en": "Choose the correct way to write the word in 「」: 日本とその国は、「ゆうこう」な関係を保っています。"
+      },
+      "payload": {
+        "choices": [
+          "東洋",
+          "交流",
+          "地域",
+          "友好"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ゆうこう」 viết là 「友好」, nghĩa là Hữu hảo; thân thiện.",
+        "en": "Correct! 「ゆうこう」 is written 「友好」 and means Friendship (between nations)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ゆうこう」 viết là 「友好」 (Hữu hảo; thân thiện); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ゆうこう」 is written 「友好」 (Friendship (between nations)); the other words are read differently."
+      }
+    }
+  ]
+}

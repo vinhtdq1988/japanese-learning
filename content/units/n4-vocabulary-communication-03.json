@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-communication",
+  "title": {
+    "vi": "Động từ biểu đạt lời nói và cảm xúc",
+    "en": "Verbs of speaking and showing emotion"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "叫ぶ",
+      "reading": "さけぶ",
+      "meaning": {
+        "vi": "Hét; kêu to",
+        "en": "To shout; to cry out"
+      },
+      "examples": [
+        {
+          "ja": "火事のときは、大きな声で叫ぶことが大切です。",
+          "reading": "かじのときは、おおきなこえでさけぶことがたいせつです。",
+          "translation": {
+            "vi": "Khi có hỏa hoạn, điều quan trọng là hét thật to.",
+            "en": "In a fire, it is important to shout in a loud voice."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "褒める",
+      "reading": "ほめる",
+      "meaning": {
+        "vi": "Khen; khen ngợi",
+        "en": "To praise"
+      },
+      "examples": [
+        {
+          "ja": "子どもは、褒めると、もっと頑張ります。",
+          "reading": "こどもは、ほめると、もっとがんばります。",
+          "translation": {
+            "vi": "Trẻ con được khen thì sẽ cố gắng hơn nữa.",
+            "en": "Children try even harder when they are praised."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "謝る",
+      "reading": "あやまる",
+      "meaning": {
+        "vi": "Xin lỗi",
+        "en": "To apologize"
+      },
+      "examples": [
+        {
+          "ja": "約束に遅れたので、友達に謝るつもりです。",
+          "reading": "やくそくにおくれたので、ともだちにあやまるつもりです。",
+          "translation": {
+            "vi": "Vì đến trễ hẹn nên tôi định xin lỗi bạn.",
+            "en": "I was late for the appointment, so I intend to apologize to my friend."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "怒る",
+      "reading": "おこる",
+      "meaning": {
+        "vi": "Giận; nổi giận",
+        "en": "To get angry"
+      },
+      "examples": [
+        {
+          "ja": "先生は、うそをつく学生に怒ることがあります。",
+          "reading": "せんせいは、うそをつくがくせいにおこることがあります。",
+          "translation": {
+            "vi": "Thầy giáo đôi khi nổi giận với học sinh nói dối.",
+            "en": "The teacher sometimes gets angry with students who tell lies."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "叱る",
+      "reading": "しかる",
+      "meaning": {
+        "vi": "Mắng; la rầy",
+        "en": "To scold"
+      },
+      "examples": [
+        {
+          "ja": "子どもが悪いことをしたときは、叱ることも必要です。",
+          "reading": "こどもがわるいことをしたときは、しかることもひつようです。",
+          "translation": {
+            "vi": "Khi trẻ làm điều xấu thì việc la mắng cũng là cần thiết.",
+            "en": "When a child does something bad, scolding is also necessary."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "笑う",
+      "reading": "わらう",
+      "meaning": {
+        "vi": "Cười",
+        "en": "To laugh; to smile"
+      },
+      "examples": [
+        {
+          "ja": "おもしろい話をすると、みんなが笑うでしょう。",
+          "reading": "おもしろいはなしをすると、みんながわらうでしょう。",
+          "translation": {
+            "vi": "Nếu kể chuyện vui thì chắc mọi người sẽ cười.",
+            "en": "If you tell a funny story, everyone will probably laugh."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "叫ぶ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 火事のときは、大きな声で（　）ことが大切です。 — Nghĩa của câu: “Khi có hỏa hoạn, điều quan trọng là hét thật to.”",
+        "en": "Choose the word that fits the blank: 火事のときは、大きな声で（　）ことが大切です。 — Meaning of the sentence: “In a fire, it is important to shout in a loud voice.”"
+      },
+      "payload": {
+        "choices": [
+          "褒める",
+          "謝る",
+          "叫ぶ",
+          "笑う"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「叫ぶ」(Hét; kêu to) hợp nghĩa câu này: “Khi có hỏa hoạn, điều quan trọng là hét thật to.”",
+        "en": "Correct! 「叫ぶ」(To shout; to cry out) fits this sentence: “In a fire, it is important to shout in a loud voice.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi có hỏa hoạn, điều quan trọng là hét thật to.”, nên cần 「叫ぶ」(Hét; kêu to); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In a fire, it is important to shout in a loud voice.”, so it needs 「叫ぶ」(To shout; to cry out); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "褒める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもは、（　）と、もっと頑張ります。 — Nghĩa của câu: “Trẻ con được khen thì sẽ cố gắng hơn nữa.”",
+        "en": "Choose the word that fits the blank: 子どもは、（　）と、もっと頑張ります。 — Meaning of the sentence: “Children try even harder when they are praised.”"
+      },
+      "payload": {
+        "choices": [
+          "叫ぶ",
+          "叱る",
+          "怒る",
+          "褒める"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「褒める」(Khen; khen ngợi) hợp nghĩa câu này: “Trẻ con được khen thì sẽ cố gắng hơn nữa.”",
+        "en": "Correct! 「褒める」(To praise) fits this sentence: “Children try even harder when they are praised.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trẻ con được khen thì sẽ cố gắng hơn nữa.”, nên cần 「褒める」(Khen; khen ngợi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Children try even harder when they are praised.”, so it needs 「褒める」(To praise); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "謝る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 約束に遅れたので、友達に（　）つもりです。 — Nghĩa của câu: “Vì đến trễ hẹn nên tôi định xin lỗi bạn.”",
+        "en": "Choose the word that fits the blank: 約束に遅れたので、友達に（　）つもりです。 — Meaning of the sentence: “I was late for the appointment, so I intend to apologize to my friend.”"
+      },
+      "payload": {
+        "choices": [
+          "謝る",
+          "叫ぶ",
+          "笑う",
+          "褒める"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「謝る」(Xin lỗi) hợp nghĩa câu này: “Vì đến trễ hẹn nên tôi định xin lỗi bạn.”",
+        "en": "Correct! 「謝る」(To apologize) fits this sentence: “I was late for the appointment, so I intend to apologize to my friend.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì đến trễ hẹn nên tôi định xin lỗi bạn.”, nên cần 「謝る」(Xin lỗi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was late for the appointment, so I intend to apologize to my friend.”, so it needs 「謝る」(To apologize); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "怒る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生は、うそをつく学生に（　）ことがあります。 — Nghĩa của câu: “Thầy giáo đôi khi nổi giận với học sinh nói dối.”",
+        "en": "Choose the word that fits the blank: 先生は、うそをつく学生に（　）ことがあります。 — Meaning of the sentence: “The teacher sometimes gets angry with students who tell lies.”"
+      },
+      "payload": {
+        "choices": [
+          "褒める",
+          "怒る",
+          "謝る",
+          "笑う"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「怒る」(Giận; nổi giận) hợp nghĩa câu này: “Thầy giáo đôi khi nổi giận với học sinh nói dối.”",
+        "en": "Correct! 「怒る」(To get angry) fits this sentence: “The teacher sometimes gets angry with students who tell lies.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thầy giáo đôi khi nổi giận với học sinh nói dối.”, nên cần 「怒る」(Giận; nổi giận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The teacher sometimes gets angry with students who tell lies.”, so it needs 「怒る」(To get angry); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "叱る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもが悪いことをしたときは、（　）ことも必要です。 — Nghĩa của câu: “Khi trẻ làm điều xấu thì việc la mắng cũng là cần thiết.”",
+        "en": "Choose the word that fits the blank: 子どもが悪いことをしたときは、（　）ことも必要です。 — Meaning of the sentence: “When a child does something bad, scolding is also necessary.”"
+      },
+      "payload": {
+        "choices": [
+          "叫ぶ",
+          "褒める",
+          "叱る",
+          "笑う"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「叱る」(Mắng; la rầy) hợp nghĩa câu này: “Khi trẻ làm điều xấu thì việc la mắng cũng là cần thiết.”",
+        "en": "Correct! 「叱る」(To scold) fits this sentence: “When a child does something bad, scolding is also necessary.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi trẻ làm điều xấu thì việc la mắng cũng là cần thiết.”, nên cần 「叱る」(Mắng; la rầy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When a child does something bad, scolding is also necessary.”, so it needs 「叱る」(To scold); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "笑う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: おもしろい話をすると、みんなが（　）でしょう。 — Nghĩa của câu: “Nếu kể chuyện vui thì chắc mọi người sẽ cười.”",
+        "en": "Choose the word that fits the blank: おもしろい話をすると、みんなが（　）でしょう。 — Meaning of the sentence: “If you tell a funny story, everyone will probably laugh.”"
+      },
+      "payload": {
+        "choices": [
+          "叫ぶ",
+          "怒る",
+          "謝る",
+          "笑う"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「笑う」(Cười) hợp nghĩa câu này: “Nếu kể chuyện vui thì chắc mọi người sẽ cười.”",
+        "en": "Correct! 「笑う」(To laugh; to smile) fits this sentence: “If you tell a funny story, everyone will probably laugh.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu kể chuyện vui thì chắc mọi người sẽ cười.”, nên cần 「笑う」(Cười); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you tell a funny story, everyone will probably laugh.”, so it needs 「笑う」(To laugh; to smile); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "叫ぶ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 火事のときは、大きな声で「叫ぶ」ことが大切です。",
+        "en": "Choose the correct reading of the word in 「」: 火事のときは、大きな声で「叫ぶ」ことが大切です。"
+      },
+      "payload": {
+        "choices": [
+          "おこる",
+          "わらう",
+          "しかる",
+          "さけぶ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「叫ぶ」 đọc là 「さけぶ」, nghĩa là Hét; kêu to.",
+        "en": "Correct! 「叫ぶ」 is read 「さけぶ」 and means To shout; to cry out."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「叫ぶ」 đọc là 「さけぶ」 (Hét; kêu to); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「叫ぶ」 is read 「さけぶ」 (To shout; to cry out); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "怒る",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 先生は、うそをつく学生に「怒る」ことがあります。",
+        "en": "Choose the correct reading of the word in 「」: 先生は、うそをつく学生に「怒る」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "おこる",
+          "わらう",
+          "あやまる",
+          "さけぶ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「怒る」 đọc là 「おこる」, nghĩa là Giận; nổi giận.",
+        "en": "Correct! 「怒る」 is read 「おこる」 and means To get angry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「怒る」 đọc là 「おこる」 (Giận; nổi giận); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「怒る」 is read 「おこる」 (To get angry); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "笑う",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: おもしろい話をすると、みんなが「わらう」でしょう。",
+        "en": "Choose the correct way to write the word in 「」: おもしろい話をすると、みんなが「わらう」でしょう。"
+      },
+      "payload": {
+        "choices": [
+          "笑う",
+          "叱る",
+          "叫ぶ",
+          "謝る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「わらう」 viết là 「笑う」, nghĩa là Cười.",
+        "en": "Correct! 「わらう」 is written 「笑う」 and means To laugh; to smile."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「わらう」 viết là 「笑う」 (Cười); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「わらう」 is written 「笑う」 (To laugh; to smile); the other words are read differently."
+      }
+    }
+  ]
+}

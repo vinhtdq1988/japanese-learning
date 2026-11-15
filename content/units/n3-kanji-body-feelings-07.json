@@ -1,0 +1,678 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (泣 笑 怒 悲 幸)",
+    "en": "Body and feelings kanji (泣 笑 怒 悲 幸)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2320,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "泣",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "khóc",
+        "en": "cry"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ"
+        ],
+        "kunReadings": [
+          "な.く"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "号泣",
+          "reading": "ごうきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "khóc nức nở",
+            "en": "wailing"
+          }
+        },
+        {
+          "ja": "泣く",
+          "reading": "なく",
+          "kanjiReading": "な",
+          "translation": {
+            "vi": "khóc",
+            "en": "to cry"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "笑",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "cười",
+        "en": "laugh; smile"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "わら.う",
+          "え.む"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "苦笑",
+          "reading": "くしょう",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "cười gượng",
+            "en": "wry smile"
+          }
+        },
+        {
+          "ja": "笑う",
+          "reading": "わらう",
+          "kanjiReading": "わら",
+          "translation": {
+            "vi": "cười",
+            "en": "to laugh"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "怒",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "giận",
+        "en": "anger"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ド",
+          "ヌ"
+        ],
+        "kunReadings": [
+          "いか.る",
+          "おこ.る"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "激怒",
+          "reading": "げきど",
+          "kanjiReading": "ド",
+          "translation": {
+            "vi": "giận dữ",
+            "en": "fury"
+          }
+        },
+        {
+          "ja": "怒り",
+          "reading": "いかり",
+          "kanjiReading": "いか",
+          "translation": {
+            "vi": "cơn giận",
+            "en": "anger"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悲",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "buồn",
+        "en": "sad"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "かな.しい",
+          "かな.しむ"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "悲劇",
+          "reading": "ひげき",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "bi kịch",
+            "en": "tragedy"
+          }
+        },
+        {
+          "ja": "悲しい",
+          "reading": "かなしい",
+          "kanjiReading": "かな",
+          "translation": {
+            "vi": "buồn",
+            "en": "sad"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "幸",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "may mắn; hạnh phúc",
+        "en": "fortune; happiness"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "さいわ.い",
+          "しあわ.せ",
+          "さち"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "不幸",
+          "reading": "ふこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "bất hạnh",
+            "en": "misfortune"
+          }
+        },
+        {
+          "ja": "幸せ",
+          "reading": "しあわせ",
+          "kanjiReading": "しあわ",
+          "translation": {
+            "vi": "hạnh phúc",
+            "en": "happiness"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "泣",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「泣」nghĩa là gì?",
+        "en": "What does 「泣」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khóc",
+            "en": "cry"
+          },
+          {
+            "vi": "cười",
+            "en": "laugh; smile"
+          },
+          {
+            "vi": "giận",
+            "en": "anger"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 泣 nghĩa là khóc.",
+        "en": "Correct! 泣 means cry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 泣 nghĩa là khóc, như trong 「号泣」 (khóc nức nở).",
+        "en": "Not quite. 泣 means cry, as in 「号泣」 (wailing)."
+      }
+    },
+    {
+      "item": "泣",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「泣」 trong 「号泣」 (“khóc nức nở”).",
+        "en": "Type the reading of 「泣」 in 「号泣」 (“wailing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 号泣, 泣 đọc là きゅう (âm On).",
+        "en": "Correct! In 号泣, 泣 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 号泣 (khóc nức nở), 泣 đọc là きゅう (âm On).",
+        "en": "In 号泣 (wailing), 泣 is read きゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "泣",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「泣く」(khóc) đọc là gì?",
+        "en": "How is 「泣く」 (to cry) read?"
+      },
+      "payload": {
+        "choices": [
+          "きゅうく",
+          "なく",
+          "わらう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 泣く = なく (khóc); 泣 đọc là な (âm Kun).",
+        "en": "Correct! 泣く = なく (to cry); 泣 is read な (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "泣く đọc là なく (khóc): 泣 mang âm Kun な.",
+        "en": "泣く is read なく (to cry): 泣 takes the kun'yomi な."
+      }
+    },
+    {
+      "item": "笑",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「笑」nghĩa là gì?",
+        "en": "What does 「笑」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giận",
+            "en": "anger"
+          },
+          {
+            "vi": "cười",
+            "en": "laugh; smile"
+          },
+          {
+            "vi": "buồn",
+            "en": "sad"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 笑 nghĩa là cười.",
+        "en": "Correct! 笑 means laugh; smile."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 笑 nghĩa là cười, như trong 「苦笑」 (cười gượng).",
+        "en": "Not quite. 笑 means laugh; smile, as in 「苦笑」 (wry smile)."
+      }
+    },
+    {
+      "item": "笑",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「笑」 trong 「苦笑」 (“cười gượng”).",
+        "en": "Type the reading of 「笑」 in 「苦笑」 (“wry smile”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 苦笑, 笑 đọc là しょう (âm On).",
+        "en": "Correct! In 苦笑, 笑 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 苦笑 (cười gượng), 笑 đọc là しょう (âm On).",
+        "en": "In 苦笑 (wry smile), 笑 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "笑",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「笑う」(cười) đọc là gì?",
+        "en": "How is 「笑う」 (to laugh) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうう",
+          "ふこう",
+          "わらう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 笑う = わらう (cười); 笑 đọc là わら (âm Kun).",
+        "en": "Correct! 笑う = わらう (to laugh); 笑 is read わら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "笑う đọc là わらう (cười): 笑 mang âm Kun わら.",
+        "en": "笑う is read わらう (to laugh): 笑 takes the kun'yomi わら."
+      }
+    },
+    {
+      "item": "怒",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「怒」nghĩa là gì?",
+        "en": "What does 「怒」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "buồn",
+            "en": "sad"
+          },
+          {
+            "vi": "may mắn; hạnh phúc",
+            "en": "fortune; happiness"
+          },
+          {
+            "vi": "giận",
+            "en": "anger"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 怒 nghĩa là giận.",
+        "en": "Correct! 怒 means anger."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 怒 nghĩa là giận, như trong 「激怒」 (giận dữ).",
+        "en": "Not quite. 怒 means anger, as in 「激怒」 (fury)."
+      }
+    },
+    {
+      "item": "怒",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「怒」 trong 「激怒」 (“giận dữ”).",
+        "en": "Type the reading of 「怒」 in 「激怒」 (“fury”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ど",
+          "ド"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 激怒, 怒 đọc là ど (âm On).",
+        "en": "Correct! In 激怒, 怒 is read ど (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 激怒 (giận dữ), 怒 đọc là ど (âm On).",
+        "en": "In 激怒 (fury), 怒 is read ど (on'yomi)."
+      }
+    },
+    {
+      "item": "怒",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「怒り」(cơn giận) đọc là gì?",
+        "en": "How is 「怒り」 (anger) read?"
+      },
+      "payload": {
+        "choices": [
+          "いかり",
+          "どり",
+          "ひげき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 怒り = いかり (cơn giận); 怒 đọc là いか (âm Kun).",
+        "en": "Correct! 怒り = いかり (anger); 怒 is read いか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "怒り đọc là いかり (cơn giận): 怒 mang âm Kun いか.",
+        "en": "怒り is read いかり (anger): 怒 takes the kun'yomi いか."
+      }
+    },
+    {
+      "item": "悲",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「悲」nghĩa là gì?",
+        "en": "What does 「悲」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "buồn",
+            "en": "sad"
+          },
+          {
+            "vi": "may mắn; hạnh phúc",
+            "en": "fortune; happiness"
+          },
+          {
+            "vi": "khóc",
+            "en": "cry"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 悲 nghĩa là buồn.",
+        "en": "Correct! 悲 means sad."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 悲 nghĩa là buồn, như trong 「悲劇」 (bi kịch).",
+        "en": "Not quite. 悲 means sad, as in 「悲劇」 (tragedy)."
+      }
+    },
+    {
+      "item": "悲",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「悲」 trong 「悲劇」 (“bi kịch”).",
+        "en": "Type the reading of 「悲」 in 「悲劇」 (“tragedy”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 悲劇, 悲 đọc là ひ (âm On).",
+        "en": "Correct! In 悲劇, 悲 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 悲劇 (bi kịch), 悲 đọc là ひ (âm On).",
+        "en": "In 悲劇 (tragedy), 悲 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "悲",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「悲しい」(buồn) đọc là gì?",
+        "en": "How is 「悲しい」 (sad) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひしい",
+          "かなしい",
+          "しあわせ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 悲しい = かなしい (buồn); 悲 đọc là かな (âm Kun).",
+        "en": "Correct! 悲しい = かなしい (sad); 悲 is read かな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "悲しい đọc là かなしい (buồn): 悲 mang âm Kun かな.",
+        "en": "悲しい is read かなしい (sad): 悲 takes the kun'yomi かな."
+      }
+    },
+    {
+      "item": "幸",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「幸」nghĩa là gì?",
+        "en": "What does 「幸」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khóc",
+            "en": "cry"
+          },
+          {
+            "vi": "may mắn; hạnh phúc",
+            "en": "fortune; happiness"
+          },
+          {
+            "vi": "cười",
+            "en": "laugh; smile"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 幸 nghĩa là may mắn; hạnh phúc.",
+        "en": "Correct! 幸 means fortune; happiness."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 幸 nghĩa là may mắn; hạnh phúc, như trong 「不幸」 (bất hạnh).",
+        "en": "Not quite. 幸 means fortune; happiness, as in 「不幸」 (misfortune)."
+      }
+    },
+    {
+      "item": "幸",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「幸」 trong 「不幸」 (“bất hạnh”).",
+        "en": "Type the reading of 「幸」 in 「不幸」 (“misfortune”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 不幸, 幸 đọc là こう (âm On).",
+        "en": "Correct! In 不幸, 幸 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 不幸 (bất hạnh), 幸 đọc là こう (âm On).",
+        "en": "In 不幸 (misfortune), 幸 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "幸",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「幸せ」(hạnh phúc) đọc là gì?",
+        "en": "How is 「幸せ」 (happiness) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうせ",
+          "くしょう",
+          "しあわせ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 幸せ = しあわせ (hạnh phúc); 幸 đọc là しあわ (âm Kun).",
+        "en": "Correct! 幸せ = しあわせ (happiness); 幸 is read しあわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "幸せ đọc là しあわせ (hạnh phúc): 幸 mang âm Kun しあわ.",
+        "en": "幸せ is read しあわせ (happiness): 幸 takes the kun'yomi しあわ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "泣",
+            {
+              "vi": "khóc",
+              "en": "cry"
+            }
+          ],
+          [
+            "笑",
+            {
+              "vi": "cười",
+              "en": "laugh; smile"
+            }
+          ],
+          [
+            "怒",
+            {
+              "vi": "giận",
+              "en": "anger"
+            }
+          ],
+          [
+            "悲",
+            {
+              "vi": "buồn",
+              "en": "sad"
+            }
+          ],
+          [
+            "幸",
+            {
+              "vi": "may mắn; hạnh phúc",
+              "en": "fortune; happiness"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

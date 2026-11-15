@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-daily-verbs",
+  "title": {
+    "vi": "Kanji động từ sinh hoạt (起 着 帰 待)",
+    "en": "Daily verbs kanji (起 着 帰 待)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "起",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "dậy; xảy ra",
+        "en": "get up; occur"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [
+          "お.きる",
+          "お.こす"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "起床",
+          "reading": "きしょう",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "thức dậy",
+            "en": "rising from bed"
+          }
+        },
+        {
+          "ja": "起きる",
+          "reading": "おきる",
+          "kanjiReading": "お",
+          "translation": {
+            "vi": "thức dậy",
+            "en": "to get up"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "着",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "đến; mặc",
+        "en": "arrive; wear"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チャク",
+          "ジャク"
+        ],
+        "kunReadings": [
+          "き.る",
+          "つ.く"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "到着",
+          "reading": "とうちゃく",
+          "kanjiReading": "チャク",
+          "translation": {
+            "vi": "đến nơi",
+            "en": "arrival"
+          }
+        },
+        {
+          "ja": "着く",
+          "reading": "つく",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "đến nơi",
+            "en": "to arrive"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "帰",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "về",
+        "en": "return"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [
+          "かえ.る"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "帰国",
+          "reading": "きこく",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "về nước",
+            "en": "return to one's country"
+          }
+        },
+        {
+          "ja": "帰る",
+          "reading": "かえる",
+          "kanjiReading": "かえ",
+          "translation": {
+            "vi": "về",
+            "en": "to return"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "待",
+      "topic": "kanji-n4-daily-verbs",
+      "meaning": {
+        "vi": "đợi",
+        "en": "wait"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タイ"
+        ],
+        "kunReadings": [
+          "ま.つ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "期待",
+          "reading": "きたい",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "kỳ vọng",
+            "en": "expectation"
+          }
+        },
+        {
+          "ja": "待つ",
+          "reading": "まつ",
+          "kanjiReading": "ま",
+          "translation": {
+            "vi": "đợi",
+            "en": "to wait"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "起",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「起」nghĩa là gì?",
+        "en": "What does 「起」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dậy; xảy ra",
+            "en": "get up; occur"
+          },
+          {
+            "vi": "đến; mặc",
+            "en": "arrive; wear"
+          },
+          {
+            "vi": "về",
+            "en": "return"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 起 nghĩa là dậy; xảy ra.",
+        "en": "Correct! 起 means get up; occur."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 起 nghĩa là dậy; xảy ra, như trong 「起床」 (thức dậy).",
+        "en": "Not quite. 起 means get up; occur, as in 「起床」 (rising from bed)."
+      }
+    },
+    {
+      "item": "起",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「起」 trong 「起床」 (“thức dậy”).",
+        "en": "Type the reading of 「起」 in 「起床」 (“rising from bed”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 起床, 起 đọc là き (âm On).",
+        "en": "Correct! In 起床, 起 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 起床 (thức dậy), 起 đọc là き (âm On).",
+        "en": "In 起床 (rising from bed), 起 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "起",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「起きる」(thức dậy) đọc là gì?",
+        "en": "How is 「起きる」 (to get up) read?"
+      },
+      "payload": {
+        "choices": [
+          "ききる",
+          "おきる",
+          "かえる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 起きる = おきる (thức dậy); 起 đọc là お (âm Kun).",
+        "en": "Correct! 起きる = おきる (to get up); 起 is read お (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "起きる đọc là おきる (thức dậy): 起 mang âm Kun お.",
+        "en": "起きる is read おきる (to get up): 起 takes the kun'yomi お."
+      }
+    },
+    {
+      "item": "着",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「着」nghĩa là gì?",
+        "en": "What does 「着」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "về",
+            "en": "return"
+          },
+          {
+            "vi": "đến; mặc",
+            "en": "arrive; wear"
+          },
+          {
+            "vi": "đợi",
+            "en": "wait"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 着 nghĩa là đến; mặc.",
+        "en": "Correct! 着 means arrive; wear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 着 nghĩa là đến; mặc, như trong 「到着」 (đến nơi).",
+        "en": "Not quite. 着 means arrive; wear, as in 「到着」 (arrival)."
+      }
+    },
+    {
+      "item": "着",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「着」 trong 「到着」 (“đến nơi”).",
+        "en": "Type the reading of 「着」 in 「到着」 (“arrival”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちゃく",
+          "チャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 到着, 着 đọc là ちゃく (âm On).",
+        "en": "Correct! In 到着, 着 is read ちゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 到着 (đến nơi), 着 đọc là ちゃく (âm On).",
+        "en": "In 到着 (arrival), 着 is read ちゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "着",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「着く」(đến nơi) đọc là gì?",
+        "en": "How is 「着く」 (to arrive) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちゃくく",
+          "まつ",
+          "つく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 着く = つく (đến nơi); 着 đọc là つ (âm Kun).",
+        "en": "Correct! 着く = つく (to arrive); 着 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "着く đọc là つく (đến nơi): 着 mang âm Kun つ.",
+        "en": "着く is read つく (to arrive): 着 takes the kun'yomi つ."
+      }
+    },
+    {
+      "item": "帰",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「帰」nghĩa là gì?",
+        "en": "What does 「帰」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đợi",
+            "en": "wait"
+          },
+          {
+            "vi": "dậy; xảy ra",
+            "en": "get up; occur"
+          },
+          {
+            "vi": "về",
+            "en": "return"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 帰 nghĩa là về.",
+        "en": "Correct! 帰 means return."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 帰 nghĩa là về, như trong 「帰国」 (về nước).",
+        "en": "Not quite. 帰 means return, as in 「帰国」 (return to one's country)."
+      }
+    },
+    {
+      "item": "帰",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「帰」 trong 「帰国」 (“về nước”).",
+        "en": "Type the reading of 「帰」 in 「帰国」 (“return to one's country”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 帰国, 帰 đọc là き (âm On).",
+        "en": "Correct! In 帰国, 帰 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 帰国 (về nước), 帰 đọc là き (âm On).",
+        "en": "In 帰国 (return to one's country), 帰 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "帰",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「帰る」(về) đọc là gì?",
+        "en": "How is 「帰る」 (to return) read?"
+      },
+      "payload": {
+        "choices": [
+          "かえる",
+          "きる",
+          "おきる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 帰る = かえる (về); 帰 đọc là かえ (âm Kun).",
+        "en": "Correct! 帰る = かえる (to return); 帰 is read かえ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "帰る đọc là かえる (về): 帰 mang âm Kun かえ.",
+        "en": "帰る is read かえる (to return): 帰 takes the kun'yomi かえ."
+      }
+    },
+    {
+      "item": "待",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「待」nghĩa là gì?",
+        "en": "What does 「待」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đợi",
+            "en": "wait"
+          },
+          {
+            "vi": "dậy; xảy ra",
+            "en": "get up; occur"
+          },
+          {
+            "vi": "đến; mặc",
+            "en": "arrive; wear"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 待 nghĩa là đợi.",
+        "en": "Correct! 待 means wait."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 待 nghĩa là đợi, như trong 「期待」 (kỳ vọng).",
+        "en": "Not quite. 待 means wait, as in 「期待」 (expectation)."
+      }
+    },
+    {
+      "item": "待",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「待」 trong 「期待」 (“kỳ vọng”).",
+        "en": "Type the reading of 「待」 in 「期待」 (“expectation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たい",
+          "タイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 期待, 待 đọc là たい (âm On).",
+        "en": "Correct! In 期待, 待 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 期待 (kỳ vọng), 待 đọc là たい (âm On).",
+        "en": "In 期待 (expectation), 待 is read たい (on'yomi)."
+      }
+    },
+    {
+      "item": "待",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「待つ」(đợi) đọc là gì?",
+        "en": "How is 「待つ」 (to wait) read?"
+      },
+      "payload": {
+        "choices": [
+          "たいつ",
+          "まつ",
+          "つく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 待つ = まつ (đợi); 待 đọc là ま (âm Kun).",
+        "en": "Correct! 待つ = まつ (to wait); 待 is read ま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "待つ đọc là まつ (đợi): 待 mang âm Kun ま.",
+        "en": "待つ is read まつ (to wait): 待 takes the kun'yomi ま."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "起",
+            {
+              "vi": "dậy; xảy ra",
+              "en": "get up; occur"
+            }
+          ],
+          [
+            "着",
+            {
+              "vi": "đến; mặc",
+              "en": "arrive; wear"
+            }
+          ],
+          [
+            "帰",
+            {
+              "vi": "về",
+              "en": "return"
+            }
+          ],
+          [
+            "待",
+            {
+              "vi": "đợi",
+              "en": "wait"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-contracts-rules",
+  "title": {
+    "vi": "Nguyên tắc và hạn chế",
+    "en": "Principles and restrictions"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "原則",
+      "reading": "げんそく",
+      "meaning": {
+        "vi": "Nguyên tắc",
+        "en": "Principle; general rule"
+      },
+      "examples": [
+        {
+          "ja": "原則として、遅刻は認められません。",
+          "reading": "げんそくとして、ちこくはみとめられません。",
+          "translation": {
+            "vi": "Về nguyên tắc, việc đến muộn không được chấp nhận.",
+            "en": "As a rule, being late is not allowed."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "適用",
+      "reading": "てきよう",
+      "meaning": {
+        "vi": "Áp dụng",
+        "en": "Application (of a rule)"
+      },
+      "examples": [
+        {
+          "ja": "この割引は、学生にも適用されます。",
+          "reading": "このわりびきは、がくせいにもてきようされます。",
+          "translation": {
+            "vi": "Chế độ giảm giá này cũng được áp dụng cho sinh viên.",
+            "en": "This discount also applies to students."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "規制",
+      "reading": "きせい",
+      "meaning": {
+        "vi": "Quy định hạn chế; kiểm soát",
+        "en": "Regulation; restriction"
+      },
+      "examples": [
+        {
+          "ja": "町の中心では、車の通行が規制されています。",
+          "reading": "まちのちゅうしんでは、くるまのつうこうがきせいされています。",
+          "translation": {
+            "vi": "Ở trung tâm thành phố, xe cộ bị hạn chế lưu thông.",
+            "en": "Car traffic is restricted in the town center."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "取り締まる",
+      "reading": "とりしまる",
+      "meaning": {
+        "vi": "Kiểm soát; xử lý (vi phạm)",
+        "en": "To crack down on; to control"
+      },
+      "examples": [
+        {
+          "ja": "警察は、違法な駐車を取り締まることにしました。",
+          "reading": "けいさつは、いほうなちゅうしゃをとりしまることにしました。",
+          "translation": {
+            "vi": "Cảnh sát quyết định xử lý việc đỗ xe trái phép.",
+            "en": "The police decided to crack down on illegal parking."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "脱退",
+      "reading": "だったい",
+      "meaning": {
+        "vi": "Rút khỏi (tổ chức)",
+        "en": "Withdrawal; leaving (an organization)"
+      },
+      "examples": [
+        {
+          "ja": "あの国は、組織から脱退すると発表しました。",
+          "reading": "あのくには、そしきからだったいするとはっぴょうしました。",
+          "translation": {
+            "vi": "Nước đó đã tuyên bố sẽ rút khỏi tổ chức.",
+            "en": "That country announced it would withdraw from the organization."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "了解",
+      "reading": "りょうかい",
+      "meaning": {
+        "vi": "Hiểu rõ; đồng ý (rõ rồi)",
+        "en": "Understood; roger"
+      },
+      "examples": [
+        {
+          "ja": "はい、了解しました。明日お届けします。",
+          "reading": "はい、りょうかいしました。あしたおとどけします。",
+          "translation": {
+            "vi": "Vâng, tôi hiểu rồi. Ngày mai tôi sẽ giao tới.",
+            "en": "Yes, understood. I will deliver it tomorrow."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "原則",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）として、遅刻は認められません。 — Nghĩa của câu: “Về nguyên tắc, việc đến muộn không được chấp nhận.”",
+        "en": "Choose the word that fits the blank: （　）として、遅刻は認められません。 — Meaning of the sentence: “As a rule, being late is not allowed.”"
+      },
+      "payload": {
+        "choices": [
+          "原則",
+          "適用",
+          "了解",
+          "規制"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「原則」(Nguyên tắc) hợp nghĩa câu này: “Về nguyên tắc, việc đến muộn không được chấp nhận.”",
+        "en": "Correct! 「原則」(Principle; general rule) fits this sentence: “As a rule, being late is not allowed.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Về nguyên tắc, việc đến muộn không được chấp nhận.”, nên cần 「原則」(Nguyên tắc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “As a rule, being late is not allowed.”, so it needs 「原則」(Principle; general rule); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "適用",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この割引は、学生にも（　）されます。 — Nghĩa của câu: “Chế độ giảm giá này cũng được áp dụng cho sinh viên.”",
+        "en": "Choose the word that fits the blank: この割引は、学生にも（　）されます。 — Meaning of the sentence: “This discount also applies to students.”"
+      },
+      "payload": {
+        "choices": [
+          "原則",
+          "適用",
+          "了解",
+          "規制"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「適用」(Áp dụng) hợp nghĩa câu này: “Chế độ giảm giá này cũng được áp dụng cho sinh viên.”",
+        "en": "Correct! 「適用」(Application (of a rule)) fits this sentence: “This discount also applies to students.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chế độ giảm giá này cũng được áp dụng cho sinh viên.”, nên cần 「適用」(Áp dụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This discount also applies to students.”, so it needs 「適用」(Application (of a rule)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "規制",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 町の中心では、車の通行が（　）されています。 — Nghĩa của câu: “Ở trung tâm thành phố, xe cộ bị hạn chế lưu thông.”",
+        "en": "Choose the word that fits the blank: 町の中心では、車の通行が（　）されています。 — Meaning of the sentence: “Car traffic is restricted in the town center.”"
+      },
+      "payload": {
+        "choices": [
+          "原則",
+          "脱退",
+          "規制",
+          "適用"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「規制」(Quy định hạn chế; kiểm soát) hợp nghĩa câu này: “Ở trung tâm thành phố, xe cộ bị hạn chế lưu thông.”",
+        "en": "Correct! 「規制」(Regulation; restriction) fits this sentence: “Car traffic is restricted in the town center.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở trung tâm thành phố, xe cộ bị hạn chế lưu thông.”, nên cần 「規制」(Quy định hạn chế; kiểm soát); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Car traffic is restricted in the town center.”, so it needs 「規制」(Regulation; restriction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "取り締まる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 警察は、違法な駐車を（　）ことにしました。 — Nghĩa của câu: “Cảnh sát quyết định xử lý việc đỗ xe trái phép.”",
+        "en": "Choose the word that fits the blank: 警察は、違法な駐車を（　）ことにしました。 — Meaning of the sentence: “The police decided to crack down on illegal parking.”"
+      },
+      "payload": {
+        "choices": [
+          "適用",
+          "原則",
+          "規制",
+          "取り締まる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「取り締まる」(Kiểm soát; xử lý (vi phạm)) hợp nghĩa câu này: “Cảnh sát quyết định xử lý việc đỗ xe trái phép.”",
+        "en": "Correct! 「取り締まる」(To crack down on; to control) fits this sentence: “The police decided to crack down on illegal parking.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cảnh sát quyết định xử lý việc đỗ xe trái phép.”, nên cần 「取り締まる」(Kiểm soát; xử lý (vi phạm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The police decided to crack down on illegal parking.”, so it needs 「取り締まる」(To crack down on; to control); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "脱退",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あの国は、組織から（　）すると発表しました。 — Nghĩa của câu: “Nước đó đã tuyên bố sẽ rút khỏi tổ chức.”",
+        "en": "Choose the word that fits the blank: あの国は、組織から（　）すると発表しました。 — Meaning of the sentence: “That country announced it would withdraw from the organization.”"
+      },
+      "payload": {
+        "choices": [
+          "脱退",
+          "原則",
+          "適用",
+          "規制"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「脱退」(Rút khỏi (tổ chức)) hợp nghĩa câu này: “Nước đó đã tuyên bố sẽ rút khỏi tổ chức.”",
+        "en": "Correct! 「脱退」(Withdrawal; leaving (an organization)) fits this sentence: “That country announced it would withdraw from the organization.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nước đó đã tuyên bố sẽ rút khỏi tổ chức.”, nên cần 「脱退」(Rút khỏi (tổ chức)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That country announced it would withdraw from the organization.”, so it needs 「脱退」(Withdrawal; leaving (an organization)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "了解",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: はい、（　）しました。明日お届けします。 — Nghĩa của câu: “Vâng, tôi hiểu rồi. Ngày mai tôi sẽ giao tới.”",
+        "en": "Choose the word that fits the blank: はい、（　）しました。明日お届けします。 — Meaning of the sentence: “Yes, understood. I will deliver it tomorrow.”"
+      },
+      "payload": {
+        "choices": [
+          "原則",
+          "了解",
+          "脱退",
+          "適用"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「了解」(Hiểu rõ; đồng ý (rõ rồi)) hợp nghĩa câu này: “Vâng, tôi hiểu rồi. Ngày mai tôi sẽ giao tới.”",
+        "en": "Correct! 「了解」(Understood; roger) fits this sentence: “Yes, understood. I will deliver it tomorrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vâng, tôi hiểu rồi. Ngày mai tôi sẽ giao tới.”, nên cần 「了解」(Hiểu rõ; đồng ý (rõ rồi)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Yes, understood. I will deliver it tomorrow.”, so it needs 「了解」(Understood; roger); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "原則",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「原則」として、遅刻は認められません。",
+        "en": "Choose the correct reading of the word in 「」: 「原則」として、遅刻は認められません。"
+      },
+      "payload": {
+        "choices": [
+          "とりしまる",
+          "げんそく",
+          "てきよう",
+          "だったい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「原則」 đọc là 「げんそく」, nghĩa là Nguyên tắc.",
+        "en": "Correct! 「原則」 is read 「げんそく」 and means Principle; general rule."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「原則」 đọc là 「げんそく」 (Nguyên tắc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「原則」 is read 「げんそく」 (Principle; general rule); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "取り締まる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 警察は、違法な駐車を「取り締まる」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: 警察は、違法な駐車を「取り締まる」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "きせい",
+          "げんそく",
+          "とりしまる",
+          "りょうかい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「取り締まる」 đọc là 「とりしまる」, nghĩa là Kiểm soát; xử lý (vi phạm).",
+        "en": "Correct! 「取り締まる」 is read 「とりしまる」 and means To crack down on; to control."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「取り締まる」 đọc là 「とりしまる」 (Kiểm soát; xử lý (vi phạm)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「取り締まる」 is read 「とりしまる」 (To crack down on; to control); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "規制",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 町の中心では、車の通行が「きせい」されています。",
+        "en": "Choose the correct way to write the word in 「」: 町の中心では、車の通行が「きせい」されています。"
+      },
+      "payload": {
+        "choices": [
+          "脱退",
+          "原則",
+          "規制",
+          "了解"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きせい」 viết là 「規制」, nghĩa là Quy định hạn chế; kiểm soát.",
+        "en": "Correct! 「きせい」 is written 「規制」 and means Regulation; restriction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きせい」 viết là 「規制」 (Quy định hạn chế; kiểm soát); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きせい」 is written 「規制」 (Regulation; restriction); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-health-medical",
+  "title": {
+    "vi": "Chuyên khoa và cơ sở y tế",
+    "en": "Specialties and facilities"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1950,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "小児科",
+      "reading": "しょうにか",
+      "meaning": {
+        "vi": "Khoa nhi",
+        "en": "Pediatrics"
+      },
+      "examples": [
+        {
+          "ja": "子どもが熱を出したので、小児科に連れて行きました。",
+          "reading": "こどもがねつをだしたので、しょうにかにつれていきました。",
+          "translation": {
+            "vi": "Con bị sốt nên tôi đưa đến khoa nhi.",
+            "en": "My child had a fever, so I took them to the pediatrician."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "眼科",
+      "reading": "がんか",
+      "meaning": {
+        "vi": "Khoa mắt",
+        "en": "Ophthalmology"
+      },
+      "examples": [
+        {
+          "ja": "目が痛いので、眼科で診てもらいました。",
+          "reading": "めがいたいので、がんかでみてもらいました。",
+          "translation": {
+            "vi": "Vì đau mắt nên tôi đã đến khoa mắt khám.",
+            "en": "My eyes hurt, so I had them checked at the eye clinic."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "皮膚科",
+      "reading": "ひふか",
+      "meaning": {
+        "vi": "Khoa da liễu",
+        "en": "Dermatology"
+      },
+      "examples": [
+        {
+          "ja": "肌が荒れたので、皮膚科に通っています。",
+          "reading": "はだがあれたので、ひふかにかよっています。",
+          "translation": {
+            "vi": "Da bị khô ráp nên tôi đang đến khoa da liễu.",
+            "en": "My skin is irritated, so I am going to the dermatologist."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "医院",
+      "reading": "いいん",
+      "meaning": {
+        "vi": "Phòng khám; y viện (nhỏ)",
+        "en": "Clinic (private)"
+      },
+      "examples": [
+        {
+          "ja": "近所の小さな医院で、薬をもらいました。",
+          "reading": "きんじょのちいさないいんで、くすりをもらいました。",
+          "translation": {
+            "vi": "Tôi đã lấy thuốc ở một phòng khám nhỏ gần nhà.",
+            "en": "I got medicine at a small clinic nearby."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "病室",
+      "reading": "びょうしつ",
+      "meaning": {
+        "vi": "Phòng bệnh",
+        "en": "Hospital room"
+      },
+      "examples": [
+        {
+          "ja": "入院した友達の病室に、花を持って行きました。",
+          "reading": "にゅういんしたともだちのびょうしつに、はなをもっていきました。",
+          "translation": {
+            "vi": "Tôi mang hoa đến phòng bệnh của bạn nhập viện.",
+            "en": "I took flowers to my hospitalized friend's room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "病棟",
+      "reading": "びょうとう",
+      "meaning": {
+        "vi": "Khu bệnh (tòa bệnh)",
+        "en": "Hospital ward"
+      },
+      "examples": [
+        {
+          "ja": "この病院には、三つの病棟があります。",
+          "reading": "このびょういんには、みっつのびょうとうがあります。",
+          "translation": {
+            "vi": "Bệnh viện này có ba khu bệnh.",
+            "en": "This hospital has three wards."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "小児科",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもが熱を出したので、（　）に連れて行きました。 — Nghĩa của câu: “Con bị sốt nên tôi đưa đến khoa nhi.”",
+        "en": "Choose the word that fits the blank: 子どもが熱を出したので、（　）に連れて行きました。 — Meaning of the sentence: “My child had a fever, so I took them to the pediatrician.”"
+      },
+      "payload": {
+        "choices": [
+          "小児科",
+          "皮膚科",
+          "眼科",
+          "医院"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小児科」(Khoa nhi) hợp nghĩa câu này: “Con bị sốt nên tôi đưa đến khoa nhi.”",
+        "en": "Correct! 「小児科」(Pediatrics) fits this sentence: “My child had a fever, so I took them to the pediatrician.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con bị sốt nên tôi đưa đến khoa nhi.”, nên cần 「小児科」(Khoa nhi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My child had a fever, so I took them to the pediatrician.”, so it needs 「小児科」(Pediatrics); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "眼科",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 目が痛いので、（　）で診てもらいました。 — Nghĩa của câu: “Vì đau mắt nên tôi đã đến khoa mắt khám.”",
+        "en": "Choose the word that fits the blank: 目が痛いので、（　）で診てもらいました。 — Meaning of the sentence: “My eyes hurt, so I had them checked at the eye clinic.”"
+      },
+      "payload": {
+        "choices": [
+          "病室",
+          "眼科",
+          "小児科",
+          "病棟"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「眼科」(Khoa mắt) hợp nghĩa câu này: “Vì đau mắt nên tôi đã đến khoa mắt khám.”",
+        "en": "Correct! 「眼科」(Ophthalmology) fits this sentence: “My eyes hurt, so I had them checked at the eye clinic.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì đau mắt nên tôi đã đến khoa mắt khám.”, nên cần 「眼科」(Khoa mắt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My eyes hurt, so I had them checked at the eye clinic.”, so it needs 「眼科」(Ophthalmology); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "皮膚科",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 肌が荒れたので、（　）に通っています。 — Nghĩa của câu: “Da bị khô ráp nên tôi đang đến khoa da liễu.”",
+        "en": "Choose the word that fits the blank: 肌が荒れたので、（　）に通っています。 — Meaning of the sentence: “My skin is irritated, so I am going to the dermatologist.”"
+      },
+      "payload": {
+        "choices": [
+          "医院",
+          "小児科",
+          "皮膚科",
+          "眼科"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「皮膚科」(Khoa da liễu) hợp nghĩa câu này: “Da bị khô ráp nên tôi đang đến khoa da liễu.”",
+        "en": "Correct! 「皮膚科」(Dermatology) fits this sentence: “My skin is irritated, so I am going to the dermatologist.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Da bị khô ráp nên tôi đang đến khoa da liễu.”, nên cần 「皮膚科」(Khoa da liễu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My skin is irritated, so I am going to the dermatologist.”, so it needs 「皮膚科」(Dermatology); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "医院",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 近所の小さな（　）で、薬をもらいました。 — Nghĩa của câu: “Tôi đã lấy thuốc ở một phòng khám nhỏ gần nhà.”",
+        "en": "Choose the word that fits the blank: 近所の小さな（　）で、薬をもらいました。 — Meaning of the sentence: “I got medicine at a small clinic nearby.”"
+      },
+      "payload": {
+        "choices": [
+          "病棟",
+          "小児科",
+          "眼科",
+          "医院"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医院」(Phòng khám; y viện (nhỏ)) hợp nghĩa câu này: “Tôi đã lấy thuốc ở một phòng khám nhỏ gần nhà.”",
+        "en": "Correct! 「医院」(Clinic (private)) fits this sentence: “I got medicine at a small clinic nearby.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã lấy thuốc ở một phòng khám nhỏ gần nhà.”, nên cần 「医院」(Phòng khám; y viện (nhỏ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I got medicine at a small clinic nearby.”, so it needs 「医院」(Clinic (private)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "病室",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 入院した友達の（　）に、花を持って行きました。 — Nghĩa của câu: “Tôi mang hoa đến phòng bệnh của bạn nhập viện.”",
+        "en": "Choose the word that fits the blank: 入院した友達の（　）に、花を持って行きました。 — Meaning of the sentence: “I took flowers to my hospitalized friend's room.”"
+      },
+      "payload": {
+        "choices": [
+          "病室",
+          "病棟",
+          "小児科",
+          "医院"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「病室」(Phòng bệnh) hợp nghĩa câu này: “Tôi mang hoa đến phòng bệnh của bạn nhập viện.”",
+        "en": "Correct! 「病室」(Hospital room) fits this sentence: “I took flowers to my hospitalized friend's room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi mang hoa đến phòng bệnh của bạn nhập viện.”, nên cần 「病室」(Phòng bệnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I took flowers to my hospitalized friend's room.”, so it needs 「病室」(Hospital room); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "病棟",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この病院には、三つの（　）があります。 — Nghĩa của câu: “Bệnh viện này có ba khu bệnh.”",
+        "en": "Choose the word that fits the blank: この病院には、三つの（　）があります。 — Meaning of the sentence: “This hospital has three wards.”"
+      },
+      "payload": {
+        "choices": [
+          "眼科",
+          "病棟",
+          "小児科",
+          "病室"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「病棟」(Khu bệnh (tòa bệnh)) hợp nghĩa câu này: “Bệnh viện này có ba khu bệnh.”",
+        "en": "Correct! 「病棟」(Hospital ward) fits this sentence: “This hospital has three wards.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bệnh viện này có ba khu bệnh.”, nên cần 「病棟」(Khu bệnh (tòa bệnh)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This hospital has three wards.”, so it needs 「病棟」(Hospital ward); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "小児科",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 子どもが熱を出したので、「小児科」に連れて行きました。",
+        "en": "Choose the correct reading of the word in 「」: 子どもが熱を出したので、「小児科」に連れて行きました。"
+      },
+      "payload": {
+        "choices": [
+          "いいん",
+          "しょうにか",
+          "がんか",
+          "びょうしつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小児科」 đọc là 「しょうにか」, nghĩa là Khoa nhi.",
+        "en": "Correct! 「小児科」 is read 「しょうにか」 and means Pediatrics."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「小児科」 đọc là 「しょうにか」 (Khoa nhi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「小児科」 is read 「しょうにか」 (Pediatrics); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "医院",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 近所の小さな「医院」で、薬をもらいました。",
+        "en": "Choose the correct reading of the word in 「」: 近所の小さな「医院」で、薬をもらいました。"
+      },
+      "payload": {
+        "choices": [
+          "ひふか",
+          "しょうにか",
+          "いいん",
+          "がんか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「医院」 đọc là 「いいん」, nghĩa là Phòng khám; y viện (nhỏ).",
+        "en": "Correct! 「医院」 is read 「いいん」 and means Clinic (private)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「医院」 đọc là 「いいん」 (Phòng khám; y viện (nhỏ)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「医院」 is read 「いいん」 (Clinic (private)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "皮膚科",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 肌が荒れたので、「ひふか」に通っています。",
+        "en": "Choose the correct way to write the word in 「」: 肌が荒れたので、「ひふか」に通っています。"
+      },
+      "payload": {
+        "choices": [
+          "病室",
+          "小児科",
+          "皮膚科",
+          "病棟"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ひふか」 viết là 「皮膚科」, nghĩa là Khoa da liễu.",
+        "en": "Correct! 「ひふか」 is written 「皮膚科」 and means Dermatology."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ひふか」 viết là 「皮膚科」 (Khoa da liễu); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ひふか」 is written 「皮膚科」 (Dermatology); the other words are read differently."
+      }
+    }
+  ]
+}

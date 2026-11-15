@@ -1,0 +1,328 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-honorific-basic",
+  "title": {
+    "vi": "Kính ngữ cơ bản (1): tôn kính ngữ — động từ đặc biệt và お〜になる",
+    "en": "Basic honorifics (1): respectful verbs and お〜になる"
+  },
+  "goalTags": [
+    "jlpt",
+    "work",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "尊敬語（特別な動詞）",
+      "meaning": {
+        "vi": "Tôn kính ngữ (động từ đặc biệt)",
+        "en": "Honorific verbs (special forms)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: nâng người đối diện hoặc người thứ ba cần tôn trọng bằng động từ riêng: いる/行く/来る→いらっしゃる; 言う→おっしゃる; 食べる/飲む→召し上がる; する→なさる; 見る→ご覧になる; くれる→くださる. Thể ます: いらっしゃいます, おっしゃいます, なさいます, くださいます. Không dùng cho hành động của chính mình.",
+        "en": "Usage: elevates the listener or a respected third person with special verbs: いる/行く/来る→いらっしゃる; 言う→おっしゃる; 食べる/飲む→召し上がる; する→なさる; 見る→ご覧になる; くれる→くださる. Polite stems: いらっしゃいます, おっしゃいます, なさいます, くださいます. Never used for one's own actions."
+      },
+      "examples": [
+        {
+          "ja": "先生は、明日学校にいらっしゃいます。",
+          "reading": "せんせいは、あしたがっこうにいらっしゃいます。",
+          "translation": {
+            "vi": "Ngày mai thầy giáo sẽ đến trường.",
+            "en": "The teacher will come to school tomorrow."
+          }
+        },
+        {
+          "ja": "社長は、そうおっしゃいました。",
+          "reading": "しゃちょうは、そうおっしゃいました。",
+          "translation": {
+            "vi": "Giám đốc đã nói như vậy.",
+            "en": "The president said so."
+          }
+        },
+        {
+          "ja": "どうぞ、たくさん召し上がってください。",
+          "reading": "どうぞ、たくさんめしあがってください。",
+          "translation": {
+            "vi": "Xin mời ngài dùng nhiều vào.",
+            "en": "Please eat plenty."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-070"
+    },
+    {
+      "japanese": "お〜になる／ご〜になる",
+      "meaning": {
+        "vi": "Tôn kính ngữ dạng お〜になる",
+        "en": "Honorific お〜になる"
+      },
+      "explanation": {
+        "vi": "Cách chia: お + động từ gốc ます + になる (お書きになる, お帰りになる); danh từ gốc Hán dùng ご + する-động từ + になる (ご利用になる). Dùng cho hành động của người cần tôn trọng. Mẫu này không dùng với động từ một âm tiết như 見る, 寝る (dùng ご覧になる, お休みになる).",
+        "en": "Conjugation: お + verb ます-stem + になる (お書きになる, お帰りになる); Sino-Japanese する-verbs use ご + stem + になる (ご利用になる). Used for the actions of someone to be respected. It is not used with one-mora verbs such as 見る, 寝る (use ご覧になる, お休みになる)."
+      },
+      "examples": [
+        {
+          "ja": "部長は、もうお帰りになりました。",
+          "reading": "ぶちょうは、もうおかえりになりました。",
+          "translation": {
+            "vi": "Trưởng phòng đã về rồi ạ.",
+            "en": "The department head has already gone home."
+          }
+        },
+        {
+          "ja": "こちらの部屋をご利用になりますか。",
+          "reading": "こちらのへやをごりようになりますか。",
+          "translation": {
+            "vi": "Quý khách có dùng phòng này không ạ?",
+            "en": "Will you be using this room?"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-071"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "尊敬語（特別な動詞）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生は、明日学校に（　）。",
+        "en": "Choose the correct option for the blank:\n先生は、明日学校に（　）。"
+      },
+      "payload": {
+        "choices": [
+          "まいります",
+          "おります",
+          "いたします",
+          "いらっしゃいます"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hành động của thầy giáo dùng tôn kính ngữ: 「いらっしゃいます」; まいる/おる/いたす là khiêm nhường.",
+        "en": "Correct! The teacher's action takes an honorific: 「いらっしゃいます」; まいる/おる/いたす are humble."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hành động của thầy giáo dùng tôn kính ngữ: 「いらっしゃいます」; まいる/おる/いたす là khiêm nhường.",
+        "en": "Not quite. The teacher's action takes an honorific: 「いらっしゃいます」; まいる/おる/いたす are humble."
+      }
+    },
+    {
+      "item": "尊敬語（特別な動詞）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n社長は、そう___ました。",
+        "en": "Choose the correct option for the blank:\n社長は、そう___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おっしゃい"
+        ],
+        "hint": "おっしゃる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tôn kính của 「言う」 là 「おっしゃる」: 「おっしゃいました」.",
+        "en": "Correct! The honorific of 「言う」 is 「おっしゃる」: 「おっしゃいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tôn kính của 「言う」 là 「おっしゃる」: 「おっしゃいました」.",
+        "en": "Not quite. The honorific of 「言う」 is 「おっしゃる」: 「おっしゃいました」."
+      }
+    },
+    {
+      "item": "尊敬語（特別な動詞）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nどうぞ、たくさん（　）ください。",
+        "en": "Choose the correct option for the blank:\nどうぞ、たくさん（　）ください。"
+      },
+      "payload": {
+        "choices": [
+          "食べさせて",
+          "いただいて",
+          "召し上がって",
+          "申して"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mời ai dùng bữa: 「召し上がってください」; いただく và 申す là khiêm nhường.",
+        "en": "Correct! Inviting someone to eat: 「召し上がってください」; いただく and 申す are humble."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mời ai dùng bữa: 「召し上がってください」; いただく và 申す là khiêm nhường.",
+        "en": "Not quite. Inviting someone to eat: 「召し上がってください」; いただく and 申す are humble."
+      }
+    },
+    {
+      "item": "尊敬語（特別な動詞）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "先生はもうお昼ごはんをいただきました。",
+          "先生はもうお昼ごはんを召し上がりました。",
+          "先生はもうお昼ごはんを召し上がりいたしました。",
+          "先生はもうお昼ごはんを召し上がっておりました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hành động của thầy dùng 「召し上がる」; 「いただく」 và 「いたす/おる」 là khiêm nhường nên không dùng cho thầy.",
+        "en": "Correct! The teacher's action uses 「召し上がる」; 「いただく」 and 「いたす/おる」 are humble and not used for the teacher."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hành động của thầy dùng 「召し上がる」; 「いただく」 và 「いたす/おる」 là khiêm nhường nên không dùng cho thầy.",
+        "en": "Not quite. The teacher's action uses 「召し上がる」; 「いただく」 and 「いたす/おる」 are humble and not used for the teacher."
+      }
+    },
+    {
+      "item": "お〜になる／ご〜になる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部長は、もう（　）になりました。",
+        "en": "Choose the correct option for the blank:\n部長は、もう（　）になりました。"
+      },
+      "payload": {
+        "choices": [
+          "お帰り",
+          "帰り",
+          "ご帰り",
+          "お帰る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「お + gốc ます + になる」: 「お帰りになる」.",
+        "en": "Correct! The pattern 「お + ます-stem + になる」: 「お帰りになる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「お + gốc ます + になる」: 「お帰りになる」.",
+        "en": "Not quite. The pattern 「お + ます-stem + になる」: 「お帰りになる」."
+      }
+    },
+    {
+      "item": "お〜になる／ご〜になる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこちらの部屋を___利用になりますか。",
+        "en": "Choose the correct option for the blank:\nこちらの部屋を___利用になりますか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ご"
+        ],
+        "hint": "ご"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ gốc Hán 「利用」 dùng 「ご」: 「ご利用になる」.",
+        "en": "Correct! The Sino-Japanese word 「利用」 takes 「ご」: 「ご利用になる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ gốc Hán 「利用」 dùng 「ご」: 「ご利用になる」.",
+        "en": "Not quite. The Sino-Japanese word 「利用」 takes 「ご」: 「ご利用になる」."
+      }
+    },
+    {
+      "item": "お〜になる／ご〜になる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n先生は、新しい本を（　）になりました。",
+        "en": "Choose the pattern that best fits the context:\n先生は、新しい本を（　）になりました。"
+      },
+      "payload": {
+        "choices": [
+          "ご書き",
+          "書きに",
+          "お書く",
+          "お書き"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ thuần Nhật 「書く」 dùng 「お + gốc ます」: 「お書きになる」.",
+        "en": "Correct! The native Japanese verb 「書く」 takes 「お + ます-stem」: 「お書きになる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ thuần Nhật 「書く」 dùng 「お + gốc ます」: 「お書きになる」.",
+        "en": "Not quite. The native Japanese verb 「書く」 takes 「お + ます-stem」: 「お書きになる」."
+      }
+    },
+    {
+      "item": "お〜になる／ご〜になる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "社長はもうお帰りしました。",
+          "社長はもうお帰りいたしました。",
+          "社長はもうお帰りになりました。",
+          "社長はもうお帰りになさいました。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hành động của 社長 dùng 「お帰りになる」; 「お帰りする/いたす」 là khiêm nhường.",
+        "en": "Correct! The president's action uses 「お帰りになる」; 「お帰りする/いたす」 is humble."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hành động của 社長 dùng 「お帰りになる」; 「お帰りする/いたす」 là khiêm nhường.",
+        "en": "Not quite. The president's action uses 「お帰りになる」; 「お帰りする/いたす」 is humble."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "尊敬語（特別な動詞）",
+            {
+              "vi": "Tôn kính ngữ (động từ đặc biệt)",
+              "en": "Honorific verbs (special forms)"
+            }
+          ],
+          [
+            "お〜になる／ご〜になる",
+            {
+              "vi": "Tôn kính ngữ dạng お〜になる",
+              "en": "Honorific お〜になる"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

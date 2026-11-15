@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-family-people",
+  "title": {
+    "vi": "Người thân trong gia đình",
+    "en": "Close family members"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "両親",
+      "reading": "りょうしん",
+      "meaning": {
+        "vi": "Bố mẹ (cả hai người)",
+        "en": "Parents (both)"
+      },
+      "examples": [
+        {
+          "ja": "父と母は私の両親です。",
+          "reading": "ちちとははわたしのりょうしんです。",
+          "translation": {
+            "vi": "Bố và mẹ là bố mẹ của tôi.",
+            "en": "My father and mother are my parents."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "祖父",
+      "reading": "そふ",
+      "meaning": {
+        "vi": "Ông (của mình)",
+        "en": "Grandfather (one’s own)"
+      },
+      "examples": [
+        {
+          "ja": "母の父は、私の祖父です。",
+          "reading": "ははのちちは、わたしのそふです。",
+          "translation": {
+            "vi": "Bố của mẹ tôi là ông của tôi.",
+            "en": "My mother’s father is my grandfather."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "祖母",
+      "reading": "そぼ",
+      "meaning": {
+        "vi": "Bà (của mình)",
+        "en": "Grandmother (one’s own)"
+      },
+      "examples": [
+        {
+          "ja": "父の母は、私の祖母です。",
+          "reading": "ちちのははは、わたしのそぼです。",
+          "translation": {
+            "vi": "Mẹ của bố tôi là bà của tôi.",
+            "en": "My father’s mother is my grandmother."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "孫",
+      "reading": "まご",
+      "meaning": {
+        "vi": "Cháu (của ông bà)",
+        "en": "Grandchild"
+      },
+      "examples": [
+        {
+          "ja": "私は祖父と祖母の孫です。",
+          "reading": "わたしはそふとそぼのまごです。",
+          "translation": {
+            "vi": "Tôi là cháu của ông và bà.",
+            "en": "I am the grandchild of my grandfather and grandmother."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "息子",
+      "reading": "むすこ",
+      "meaning": {
+        "vi": "Con trai (của mình)",
+        "en": "Son (one’s own)"
+      },
+      "examples": [
+        {
+          "ja": "息子は来年、中学生になります。",
+          "reading": "むすこはらいねん、ちゅうがくせいになります。",
+          "translation": {
+            "vi": "Con trai tôi sang năm sẽ lên cấp hai.",
+            "en": "My son will start junior high school next year."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "娘",
+      "reading": "むすめ",
+      "meaning": {
+        "vi": "Con gái (của mình)",
+        "en": "Daughter (one’s own)"
+      },
+      "examples": [
+        {
+          "ja": "娘は毎朝、ピアノを練習します。",
+          "reading": "むすめはまいあさ、ピアノをれんしゅうします。",
+          "translation": {
+            "vi": "Con gái tôi mỗi sáng đều tập piano.",
+            "en": "My daughter practices the piano every morning."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "両親",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 父と母は私の（　）です。",
+        "en": "Choose the word that fits the blank: 父と母は私の（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "両親",
+          "祖父",
+          "祖母",
+          "孫"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「両親」(Bố mẹ (cả hai người)) hợp nghĩa câu này: “Bố và mẹ là bố mẹ của tôi.”",
+        "en": "Correct! 「両親」(Parents (both)) fits this sentence: “My father and mother are my parents.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bố và mẹ là bố mẹ của tôi.”, nên cần 「両親」(Bố mẹ (cả hai người)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My father and mother are my parents.”, so it needs 「両親」(Parents (both)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "祖父",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母の父は、私の（　）です。",
+        "en": "Choose the word that fits the blank: 母の父は、私の（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "祖母",
+          "祖父",
+          "孫",
+          "息子"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「祖父」(Ông (của mình)) hợp nghĩa câu này: “Bố của mẹ tôi là ông của tôi.”",
+        "en": "Correct! 「祖父」(Grandfather (one’s own)) fits this sentence: “My mother’s father is my grandfather.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bố của mẹ tôi là ông của tôi.”, nên cần 「祖父」(Ông (của mình)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My mother’s father is my grandfather.”, so it needs 「祖父」(Grandfather (one’s own)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "祖母",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 父の母は、私の（　）です。",
+        "en": "Choose the word that fits the blank: 父の母は、私の（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "孫",
+          "息子",
+          "祖母",
+          "娘"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「祖母」(Bà (của mình)) hợp nghĩa câu này: “Mẹ của bố tôi là bà của tôi.”",
+        "en": "Correct! 「祖母」(Grandmother (one’s own)) fits this sentence: “My father’s mother is my grandmother.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mẹ của bố tôi là bà của tôi.”, nên cần 「祖母」(Bà (của mình)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My father’s mother is my grandmother.”, so it needs 「祖母」(Grandmother (one’s own)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "孫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は祖父と祖母の（　）です。 — Nghĩa của câu: “Tôi là cháu của ông và bà.”",
+        "en": "Choose the word that fits the blank: 私は祖父と祖母の（　）です。 — Meaning of the sentence: “I am the grandchild of my grandfather and grandmother.”"
+      },
+      "payload": {
+        "choices": [
+          "息子",
+          "娘",
+          "両親",
+          "孫"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「孫」(Cháu (của ông bà)) hợp nghĩa câu này: “Tôi là cháu của ông và bà.”",
+        "en": "Correct! 「孫」(Grandchild) fits this sentence: “I am the grandchild of my grandfather and grandmother.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi là cháu của ông và bà.”, nên cần 「孫」(Cháu (của ông bà)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am the grandchild of my grandfather and grandmother.”, so it needs 「孫」(Grandchild); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "息子",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は来年、中学生になります。 — Nghĩa của câu: “Con trai tôi sang năm sẽ lên cấp hai.”",
+        "en": "Choose the word that fits the blank: （　）は来年、中学生になります。 — Meaning of the sentence: “My son will start junior high school next year.”"
+      },
+      "payload": {
+        "choices": [
+          "息子",
+          "娘",
+          "両親",
+          "祖父"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「息子」(Con trai (của mình)) hợp nghĩa câu này: “Con trai tôi sang năm sẽ lên cấp hai.”",
+        "en": "Correct! 「息子」(Son (one’s own)) fits this sentence: “My son will start junior high school next year.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con trai tôi sang năm sẽ lên cấp hai.”, nên cần 「息子」(Con trai (của mình)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My son will start junior high school next year.”, so it needs 「息子」(Son (one’s own)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "娘",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は毎朝、ピアノを練習します。 — Nghĩa của câu: “Con gái tôi mỗi sáng đều tập piano.”",
+        "en": "Choose the word that fits the blank: （　）は毎朝、ピアノを練習します。 — Meaning of the sentence: “My daughter practices the piano every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "息子",
+          "娘",
+          "孫",
+          "祖母"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「娘」(Con gái (của mình)) hợp nghĩa câu này: “Con gái tôi mỗi sáng đều tập piano.”",
+        "en": "Correct! 「娘」(Daughter (one’s own)) fits this sentence: “My daughter practices the piano every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con gái tôi mỗi sáng đều tập piano.”, nên cần 「娘」(Con gái (của mình)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My daughter practices the piano every morning.”, so it needs 「娘」(Daughter (one’s own)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "両親",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 父と母は私の「両親」です。",
+        "en": "Choose the correct reading of the word in 「」: 父と母は私の「両親」です。"
+      },
+      "payload": {
+        "choices": [
+          "そふ",
+          "りょうしん",
+          "そぼ",
+          "まご"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「両親」 đọc là 「りょうしん」, nghĩa là Bố mẹ (cả hai người).",
+        "en": "Correct! 「両親」 is read 「りょうしん」 and means Parents (both)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「両親」 đọc là 「りょうしん」 (Bố mẹ (cả hai người)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「両親」 is read 「りょうしん」 (Parents (both)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "孫",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 私は祖父と祖母の「孫」です。",
+        "en": "Choose the correct reading of the word in 「」: 私は祖父と祖母の「孫」です。"
+      },
+      "payload": {
+        "choices": [
+          "りょうしん",
+          "そふ",
+          "まご",
+          "そぼ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「孫」 đọc là 「まご」, nghĩa là Cháu (của ông bà).",
+        "en": "Correct! 「孫」 is read 「まご」 and means Grandchild."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「孫」 đọc là 「まご」 (Cháu (của ông bà)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「孫」 is read 「まご」 (Grandchild); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "祖父",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 母の父は、私の「そふ」です。",
+        "en": "Choose the correct way to write the word in 「」: 母の父は、私の「そふ」です。"
+      },
+      "payload": {
+        "choices": [
+          "両親",
+          "祖母",
+          "祖父",
+          "孫"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「そふ」 viết là 「祖父」, nghĩa là Ông (của mình).",
+        "en": "Correct! 「そふ」 is written 「祖父」 and means Grandfather (one’s own)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「そふ」 viết là 「祖父」 (Ông (của mình)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「そふ」 is written 「祖父」 (Grandfather (one’s own)); the other words are read differently."
+      }
+    }
+  ]
+}

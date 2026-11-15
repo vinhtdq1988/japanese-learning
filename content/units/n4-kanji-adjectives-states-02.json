@@ -1,0 +1,551 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (少 多 強 重)",
+    "en": "Adjectives and states kanji (少 多 強 重)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "少",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "ít",
+        "en": "few; little"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "すく.ない",
+          "すこ.し"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "少年",
+          "reading": "しょうねん",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "thiếu niên",
+            "en": "boy"
+          }
+        },
+        {
+          "ja": "少ない",
+          "reading": "すくない",
+          "kanjiReading": "すく",
+          "translation": {
+            "vi": "ít",
+            "en": "few"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "多",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "nhiều",
+        "en": "many"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タ"
+        ],
+        "kunReadings": [
+          "おお.い"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "多少",
+          "reading": "たしょう",
+          "kanjiReading": "タ",
+          "translation": {
+            "vi": "ít nhiều",
+            "en": "more or less"
+          }
+        },
+        {
+          "ja": "多い",
+          "reading": "おおい",
+          "kanjiReading": "おお",
+          "translation": {
+            "vi": "nhiều",
+            "en": "many"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "強",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "mạnh",
+        "en": "strong"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ",
+          "ゴウ"
+        ],
+        "kunReadings": [
+          "つよ.い"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "勉強",
+          "reading": "べんきょう",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "học tập",
+            "en": "study"
+          }
+        },
+        {
+          "ja": "強い",
+          "reading": "つよい",
+          "kanjiReading": "つよ",
+          "translation": {
+            "vi": "mạnh",
+            "en": "strong"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "重",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "nặng; quan trọng",
+        "en": "heavy; important"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジュウ",
+          "チョウ"
+        ],
+        "kunReadings": [
+          "おも.い",
+          "かさ.ねる",
+          "え"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "体重",
+          "reading": "たいじゅう",
+          "kanjiReading": "ジュウ",
+          "translation": {
+            "vi": "cân nặng",
+            "en": "body weight"
+          }
+        },
+        {
+          "ja": "重い",
+          "reading": "おもい",
+          "kanjiReading": "おも",
+          "translation": {
+            "vi": "nặng",
+            "en": "heavy"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "少",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「少」nghĩa là gì?",
+        "en": "What does 「少」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ít",
+            "en": "few; little"
+          },
+          {
+            "vi": "nhiều",
+            "en": "many"
+          },
+          {
+            "vi": "mạnh",
+            "en": "strong"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 少 nghĩa là ít.",
+        "en": "Correct! 少 means few; little."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 少 nghĩa là ít, như trong 「少年」 (thiếu niên).",
+        "en": "Not quite. 少 means few; little, as in 「少年」 (boy)."
+      }
+    },
+    {
+      "item": "少",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「少」 trong 「少年」 (“thiếu niên”).",
+        "en": "Type the reading of 「少」 in 「少年」 (“boy”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 少年, 少 đọc là しょう (âm On).",
+        "en": "Correct! In 少年, 少 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 少年 (thiếu niên), 少 đọc là しょう (âm On).",
+        "en": "In 少年 (boy), 少 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "少",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「少ない」(ít) đọc là gì?",
+        "en": "How is 「少ない」 (few) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうない",
+          "すくない",
+          "たしょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 少ない = すくない (ít); 少 đọc là すく (âm Kun).",
+        "en": "Correct! 少ない = すくない (few); 少 is read すく (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "少ない đọc là すくない (ít): 少 mang âm Kun すく.",
+        "en": "少ない is read すくない (few): 少 takes the kun'yomi すく."
+      }
+    },
+    {
+      "item": "多",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「多」nghĩa là gì?",
+        "en": "What does 「多」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mạnh",
+            "en": "strong"
+          },
+          {
+            "vi": "nhiều",
+            "en": "many"
+          },
+          {
+            "vi": "nặng; quan trọng",
+            "en": "heavy; important"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 多 nghĩa là nhiều.",
+        "en": "Correct! 多 means many."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 多 nghĩa là nhiều, như trong 「多少」 (ít nhiều).",
+        "en": "Not quite. 多 means many, as in 「多少」 (more or less)."
+      }
+    },
+    {
+      "item": "多",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「多」 trong 「多少」 (“ít nhiều”).",
+        "en": "Type the reading of 「多」 in 「多少」 (“more or less”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "た",
+          "タ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 多少, 多 đọc là た (âm On).",
+        "en": "Correct! In 多少, 多 is read た (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 多少 (ít nhiều), 多 đọc là た (âm On).",
+        "en": "In 多少 (more or less), 多 is read た (on'yomi)."
+      }
+    },
+    {
+      "item": "多",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「多い」(nhiều) đọc là gì?",
+        "en": "How is 「多い」 (many) read?"
+      },
+      "payload": {
+        "choices": [
+          "たい",
+          "つよい",
+          "おおい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 多い = おおい (nhiều); 多 đọc là おお (âm Kun).",
+        "en": "Correct! 多い = おおい (many); 多 is read おお (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "多い đọc là おおい (nhiều): 多 mang âm Kun おお.",
+        "en": "多い is read おおい (many): 多 takes the kun'yomi おお."
+      }
+    },
+    {
+      "item": "強",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「強」nghĩa là gì?",
+        "en": "What does 「強」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nặng; quan trọng",
+            "en": "heavy; important"
+          },
+          {
+            "vi": "ít",
+            "en": "few; little"
+          },
+          {
+            "vi": "mạnh",
+            "en": "strong"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 強 nghĩa là mạnh.",
+        "en": "Correct! 強 means strong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 強 nghĩa là mạnh, như trong 「勉強」 (học tập).",
+        "en": "Not quite. 強 means strong, as in 「勉強」 (study)."
+      }
+    },
+    {
+      "item": "強",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「強」 trong 「勉強」 (“học tập”).",
+        "en": "Type the reading of 「強」 in 「勉強」 (“study”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 勉強, 強 đọc là きょう (âm On).",
+        "en": "Correct! In 勉強, 強 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 勉強 (học tập), 強 đọc là きょう (âm On).",
+        "en": "In 勉強 (study), 強 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "強",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「強い」(mạnh) đọc là gì?",
+        "en": "How is 「強い」 (strong) read?"
+      },
+      "payload": {
+        "choices": [
+          "つよい",
+          "きょうい",
+          "おもい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 強い = つよい (mạnh); 強 đọc là つよ (âm Kun).",
+        "en": "Correct! 強い = つよい (strong); 強 is read つよ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "強い đọc là つよい (mạnh): 強 mang âm Kun つよ.",
+        "en": "強い is read つよい (strong): 強 takes the kun'yomi つよ."
+      }
+    },
+    {
+      "item": "重",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「重」nghĩa là gì?",
+        "en": "What does 「重」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nặng; quan trọng",
+            "en": "heavy; important"
+          },
+          {
+            "vi": "ít",
+            "en": "few; little"
+          },
+          {
+            "vi": "nhiều",
+            "en": "many"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 重 nghĩa là nặng; quan trọng.",
+        "en": "Correct! 重 means heavy; important."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 重 nghĩa là nặng; quan trọng, như trong 「体重」 (cân nặng).",
+        "en": "Not quite. 重 means heavy; important, as in 「体重」 (body weight)."
+      }
+    },
+    {
+      "item": "重",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「重」 trong 「体重」 (“cân nặng”).",
+        "en": "Type the reading of 「重」 in 「体重」 (“body weight”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じゅう",
+          "ジュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 体重, 重 đọc là じゅう (âm On).",
+        "en": "Correct! In 体重, 重 is read じゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 体重 (cân nặng), 重 đọc là じゅう (âm On).",
+        "en": "In 体重 (body weight), 重 is read じゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "重",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「重い」(nặng) đọc là gì?",
+        "en": "How is 「重い」 (heavy) read?"
+      },
+      "payload": {
+        "choices": [
+          "じゅうい",
+          "おもい",
+          "おおい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 重い = おもい (nặng); 重 đọc là おも (âm Kun).",
+        "en": "Correct! 重い = おもい (heavy); 重 is read おも (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "重い đọc là おもい (nặng): 重 mang âm Kun おも.",
+        "en": "重い is read おもい (heavy): 重 takes the kun'yomi おも."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "少",
+            {
+              "vi": "ít",
+              "en": "few; little"
+            }
+          ],
+          [
+            "多",
+            {
+              "vi": "nhiều",
+              "en": "many"
+            }
+          ],
+          [
+            "強",
+            {
+              "vi": "mạnh",
+              "en": "strong"
+            }
+          ],
+          [
+            "重",
+            {
+              "vi": "nặng; quan trọng",
+              "en": "heavy; important"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

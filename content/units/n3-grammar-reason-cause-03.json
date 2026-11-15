@@ -1,0 +1,517 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-reason-cause",
+  "title": {
+    "vi": "Lý do và kết quả (3): 〜ために (nguyên nhân), 〜ばかりに, 〜だけに, 〜あまり",
+    "en": "Reason and result (3): 〜ために (cause), 〜ばかりに, 〜だけに, 〜あまり"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ために（原因）",
+      "meaning": {
+        "vi": "Vì ~, do ~ (nguyên nhân)",
+        "en": "Because of ~ (cause)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ の / động từ, tính từ thể thường + ために + kết quả. Nguyên nhân khách quan, thường văn viết, bản tin, thông báo; kết quả thường là sự việc đã xảy ra. Khác ために (目的 — baseline): mục đích đi với động từ ý chí, nguyên nhân đi với sự việc/trạng thái.",
+        "en": "Usage: noun の / plain form of verbs and adjectives + ために + result. An objective cause, common in writing, news and notices; the result is usually something that happened. Unlike ために (purpose — baseline), purpose goes with a volitional verb while cause goes with an event or state."
+      },
+      "examples": [
+        {
+          "ja": "台風のために、飛行機が飛びませんでした。",
+          "reading": "たいふうのために、ひこうきがとびませんでした。",
+          "translation": {
+            "vi": "Do bão, máy bay đã không cất cánh.",
+            "en": "Because of the typhoon, the plane did not fly."
+          }
+        },
+        {
+          "ja": "病気のために、会社を休みます。",
+          "reading": "びょうきのために、かいしゃをやすみます。",
+          "translation": {
+            "vi": "Vì bệnh nên tôi nghỉ làm.",
+            "en": "I will be absent from work due to illness."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-026"
+    },
+    {
+      "japanese": "〜ばかりに",
+      "meaning": {
+        "vi": "Chỉ vì ~ mà (hối tiếc)",
+        "en": "Just because ~ (regret)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な) + ばかりに + kết quả xấu. Chỉ vì một lý do nhỏ mà dẫn tới kết quả không mong muốn, kèm hối tiếc. Vế sau là kết quả tiêu cực, thường ở quá khứ.",
+        "en": "Usage: plain form (な: な) + ばかりに + a bad result. Just because of one small reason, an undesirable result followed, with regret. The second clause is a negative outcome, usually in the past."
+      },
+      "examples": [
+        {
+          "ja": "うそをついたばかりに、信用を失いました。",
+          "reading": "うそをついたばかりに、しんようをうしないました。",
+          "translation": {
+            "vi": "Chỉ vì nói dối mà tôi đã mất đi sự tin tưởng.",
+            "en": "Just because I lied, I lost people's trust."
+          }
+        },
+        {
+          "ja": "地図を持っていかなかったばかりに、道に迷いました。",
+          "reading": "ちずをもっていかなかったばかりに、みちにまよいました。",
+          "translation": {
+            "vi": "Chỉ vì không mang bản đồ mà tôi đã bị lạc đường.",
+            "en": "Just because I did not take a map, I got lost."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-027"
+    },
+    {
+      "japanese": "〜だけに",
+      "meaning": {
+        "vi": "Chính vì ~ nên (đúng như kỳ vọng)",
+        "en": "Precisely because ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な; danh từ: だけに) + だけに. Vì có đặc điểm/kỳ vọng đó nên kết quả càng đáng kể, hợp lẽ (tốt hoặc xấu đều được). Khác せいで/おかげで ở sắc thái \"đúng như mong đợi/nhấn mạnh mức độ\".",
+        "en": "Usage: plain form (な: な; noun: だけに) + だけに. Because of that trait or expectation, the result is all the more notable or natural (good or bad). Unlike せいで/おかげで, it carries a nuance of \"just as expected / emphasized degree\"."
+      },
+      "examples": [
+        {
+          "ja": "彼は経験が豊富なだけに、判断が早いです。",
+          "reading": "かれはけいけんがほうふなだけに、はんだんがはやいです。",
+          "translation": {
+            "vi": "Chính vì anh ấy giàu kinh nghiệm nên phán đoán rất nhanh.",
+            "en": "Precisely because he is experienced, his judgment is quick."
+          }
+        },
+        {
+          "ja": "期待していただけに、結果が残念でした。",
+          "reading": "きたいしていただけに、けっかがざんねんでした。",
+          "translation": {
+            "vi": "Chính vì đã kỳ vọng nên kết quả càng đáng tiếc.",
+            "en": "Because I had expected so much, the result was all the more disappointing."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-028"
+    },
+    {
+      "japanese": "〜あまり（に）",
+      "meaning": {
+        "vi": "Vì quá ~ mà",
+        "en": "Because of too much ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ の / tính từ (さ) + あまり(に). Cảm xúc hay mức độ quá mạnh dẫn đến kết quả bất thường (thường kết quả không bình thường, mang tính cực đoan). Vế sau không dùng ý chí.",
+        "en": "Usage: dictionary form / noun の / adjective (さ) + あまり(に). An emotion or degree so strong that an abnormal result follows (usually extreme). The second clause cannot be volitional."
+      },
+      "examples": [
+        {
+          "ja": "うれしさのあまり、泣き出しました。",
+          "reading": "うれしさのあまり、なきだしました。",
+          "translation": {
+            "vi": "Vui quá nên tôi bật khóc.",
+            "en": "I burst into tears out of sheer joy."
+          }
+        },
+        {
+          "ja": "忙しさのあまり、食事をするのも忘れました。",
+          "reading": "いそがしさのあまり、しょくじをするのもわすれました。",
+          "translation": {
+            "vi": "Bận quá nên tôi quên cả ăn.",
+            "en": "I was so busy that I even forgot to eat."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-029"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ために（原因）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n台風（　）ために、飛行機が飛びませんでした。",
+        "en": "Choose the correct option for the blank:\n台風（　）ために、飛行機が飛びませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "の",
+          "が",
+          "を",
+          "に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「の」 + 「ために」: 「台風のために」.",
+        "en": "Correct! A noun + 「の」 + 「ために」: 「台風のために」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「の」 + 「ために」: 「台風のために」.",
+        "en": "Not quite. A noun + 「の」 + 「ために」: 「台風のために」."
+      }
+    },
+    {
+      "item": "〜ために（原因）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n病気の（　）、会社を休みます。",
+        "en": "Choose the pattern that best fits the context:\n病気の（　）、会社を休みます。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ながら",
+          "たびに",
+          "ために"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế trước là nguyên nhân (病気) nên 「ために」; không dùng 「ように」 (mục đích).",
+        "en": "Correct! The first clause is a cause (病気), so 「ために」; 「ように」 would express purpose."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế trước là nguyên nhân (病気) nên 「ために」; không dùng 「ように」 (mục đích).",
+        "en": "Not quite. The first clause is a cause (病気), so 「ために」; 「ように」 would express purpose."
+      }
+    },
+    {
+      "item": "〜ために（原因）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n強い風の___、窓ガラスが割れました。",
+        "en": "Choose the correct option for the blank:\n強い風の___、窓ガラスが割れました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ために"
+        ],
+        "hint": "〜ために"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nguyên nhân của sự việc: 「強い風のために」.",
+        "en": "Correct! The cause of the event: 「強い風のために」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nguyên nhân của sự việc: 「強い風のために」.",
+        "en": "Not quite. The cause of the event: 「強い風のために」."
+      }
+    },
+    {
+      "item": "〜ばかりに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nうそをついた（　）、信用を失いました。",
+        "en": "Choose the correct option for the blank:\nうそをついた（　）、信用を失いました。"
+      },
+      "payload": {
+        "choices": [
+          "せいに",
+          "だけに",
+          "ばかりに",
+          "ものの"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chỉ vì một việc nhỏ mà hối tiếc: 「ついたばかりに」.",
+        "en": "Correct! Regret over a small cause: 「ついたばかりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chỉ vì một việc nhỏ mà hối tiếc: 「ついたばかりに」.",
+        "en": "Not quite. Regret over a small cause: 「ついたばかりに」."
+      }
+    },
+    {
+      "item": "〜ばかりに",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n地図を持っていかなかった___、道に迷いました。",
+        "en": "Choose the correct option for the blank:\n地図を持っていかなかった___、道に迷いました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばかりに"
+        ],
+        "hint": "〜ばかりに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hối tiếc vì một lý do nhỏ: 「〜なかったばかりに」.",
+        "en": "Correct! Regret over one small reason: 「〜なかったばかりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hối tiếc vì một lý do nhỏ: 「〜なかったばかりに」.",
+        "en": "Not quite. Regret over one small reason: 「〜なかったばかりに」."
+      }
+    },
+    {
+      "item": "〜ばかりに",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "急いだばかりに、成功してうれしいです。",
+          "急いだばかりに、かえって失敗しました。",
+          "急いだばかりに、成功しましょう。",
+          "急いだばかりが、かえって失敗しました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「ばかりに」 là kết quả xấu (失敗); không dùng kết quả tốt hay rủ rê.",
+        "en": "Correct! After 「ばかりに」 comes a bad result (失敗); a good result or invitation does not fit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「ばかりに」 là kết quả xấu (失敗); không dùng kết quả tốt hay rủ rê.",
+        "en": "Not quite. After 「ばかりに」 comes a bad result (失敗); a good result or invitation does not fit."
+      }
+    },
+    {
+      "item": "〜だけに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は経験が豊富な（　）、判断が早いです。",
+        "en": "Choose the correct option for the blank:\n彼は経験が豊富な（　）、判断が早いです。"
+      },
+      "payload": {
+        "choices": [
+          "だけに",
+          "せいで",
+          "ばかりに",
+          "くせに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hợp lẽ vì kinh nghiệm phong phú: 「豊富なだけに」.",
+        "en": "Correct! Natural given his rich experience: 「豊富なだけに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hợp lẽ vì kinh nghiệm phong phú: 「豊富なだけに」.",
+        "en": "Not quite. Natural given his rich experience: 「豊富なだけに」."
+      }
+    },
+    {
+      "item": "〜だけに",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n期待していた___、結果が残念でした。",
+        "en": "Choose the correct option for the blank:\n期待していた___、結果が残念でした。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "だけに"
+        ],
+        "hint": "〜だけに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vì kỳ vọng nên càng tiếc: 「期待していただけに」.",
+        "en": "Correct! Because of the high hopes, all the more disappointing: 「期待していただけに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vì kỳ vọng nên càng tiếc: 「期待していただけに」.",
+        "en": "Not quite. Because of the high hopes, all the more disappointing: 「期待していただけに」."
+      }
+    },
+    {
+      "item": "〜だけに",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nプロの選手（　）、さすがにうまい。",
+        "en": "Choose the pattern that best fits the context:\nプロの選手（　）、さすがにうまい。"
+      },
+      "payload": {
+        "choices": [
+          "せいで",
+          "ばかりに",
+          "ものだから",
+          "だけに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hợp lẽ vì là vận động viên chuyên nghiệp (đúng như kỳ vọng): 「だけに」.",
+        "en": "Correct! As expected of a pro player: 「だけに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hợp lẽ vì là vận động viên chuyên nghiệp (đúng như kỳ vọng): 「だけに」.",
+        "en": "Not quite. As expected of a pro player: 「だけに」."
+      }
+    },
+    {
+      "item": "〜あまり（に）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nうれしさ（　）あまり、泣き出しました。",
+        "en": "Choose the correct option for the blank:\nうれしさ（　）あまり、泣き出しました。"
+      },
+      "payload": {
+        "choices": [
+          "が",
+          "を",
+          "の",
+          "で"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ (さ) + 「の」 + 「あまり」: 「うれしさのあまり」.",
+        "en": "Correct! A noun (さ) + 「の」 + 「あまり」: 「うれしさのあまり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ (さ) + 「の」 + 「あまり」: 「うれしさのあまり」.",
+        "en": "Not quite. A noun (さ) + 「の」 + 「あまり」: 「うれしさのあまり」."
+      }
+    },
+    {
+      "item": "〜あまり（に）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n忙しさの___、食事をするのも忘れました。",
+        "en": "Choose the correct option for the blank:\n忙しさの___、食事をするのも忘れました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "あまり"
+        ],
+        "hint": "〜あまり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Quá bận đến mức quên cả ăn: 「忙しさのあまり」.",
+        "en": "Correct! So busy that I forgot even to eat: 「忙しさのあまり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Quá bận đến mức quên cả ăn: 「忙しさのあまり」.",
+        "en": "Not quite. So busy that I forgot even to eat: 「忙しさのあまり」."
+      }
+    },
+    {
+      "item": "〜あまり（に）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "緊張するあまり、声を出しましょう。",
+          "緊張するあまり、声が出ませんでした。",
+          "緊張するあまり、声を出してください。",
+          "緊張するあまり、声を出したい。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「あまり」 là kết quả bất thường đã xảy ra (声が出ませんでした), không dùng ý chí.",
+        "en": "Correct! After 「あまり」 comes an abnormal result that happened (声が出ませんでした), not volition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「あまり」 là kết quả bất thường đã xảy ra (声が出ませんでした), không dùng ý chí.",
+        "en": "Not quite. After 「あまり」 comes an abnormal result that happened (声が出ませんでした), not volition."
+      }
+    },
+    {
+      "item": "〜ばかりに",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n電車の中で　＿　＿　★　＿　。\n（寝て／しまった／ばかりに／乗り過ごした）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n電車の中で　＿　＿　★　＿　。\n（寝て／しまった／ばかりに／乗り過ごした）"
+      },
+      "payload": {
+        "choices": [
+          "ばかりに",
+          "寝て",
+          "しまった",
+          "乗り過ごした"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「電車の中で寝てしまったばかりに、乗り過ごした。」; ô ★ (thứ ba) là 「ばかりに」.",
+        "en": "Correct! The correct sentence is 「電車の中で寝てしまったばかりに、乗り過ごした。」; the ★ (third) slot is 「ばかりに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「電車の中で寝てしまったばかりに、乗り過ごした。」; ô ★ (thứ ba) là 「ばかりに」.",
+        "en": "Not quite. The correct sentence is 「電車の中で寝てしまったばかりに、乗り過ごした。」; the ★ (third) slot is 「ばかりに」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ために（原因）",
+            {
+              "vi": "Vì ~, do ~ (nguyên nhân)",
+              "en": "Because of ~ (cause)"
+            }
+          ],
+          [
+            "〜ばかりに",
+            {
+              "vi": "Chỉ vì ~ mà (hối tiếc)",
+              "en": "Just because ~ (regret)"
+            }
+          ],
+          [
+            "〜だけに",
+            {
+              "vi": "Chính vì ~ nên (đúng như kỳ vọng)",
+              "en": "Precisely because ~"
+            }
+          ],
+          [
+            "〜あまり（に）",
+            {
+              "vi": "Vì quá ~ mà",
+              "en": "Because of too much ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

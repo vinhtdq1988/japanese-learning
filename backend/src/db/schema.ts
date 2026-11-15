@@ -32,7 +32,7 @@ const timestamptz = (name: string) => timestamp(name, { withTimezone: true, mode
 // --- Kiểu liệt kê (tên khớp CREATE TYPE trong migration) ---
 export const userRole = pgEnum('user_role', ['learner', 'admin']);
 export const accountStatus = pgEnum('account_status', ['active', 'disabled', 'pending_deletion']);
-export const skill = pgEnum('skill', ['vocabulary', 'grammar', 'kanji']);
+export const skill = pgEnum('skill', ['vocabulary', 'grammar', 'kanji', 'reading', 'writing']);
 export const reviewFacet = pgEnum('review_facet', ['item', 'meaning', 'reading', 'word']);
 export const language = pgEnum('language', ['vi', 'en']);
 export const selfLevel = pgEnum('self_level', ['none', 'N5', 'N4', 'N3', 'N2', 'N1']);

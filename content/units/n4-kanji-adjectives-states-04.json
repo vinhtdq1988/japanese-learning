@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (正 真 同 有)",
+    "en": "Adjectives and states kanji (正 真 同 有)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "正",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "đúng; chính",
+        "en": "correct"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ",
+          "ショウ"
+        ],
+        "kunReadings": [
+          "ただ.しい",
+          "まさ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "正解",
+          "reading": "せいかい",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "đáp án đúng",
+            "en": "correct answer"
+          }
+        },
+        {
+          "ja": "正しい",
+          "reading": "ただしい",
+          "kanjiReading": "ただ",
+          "translation": {
+            "vi": "đúng",
+            "en": "correct"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "真",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "thật; chân thực",
+        "en": "true; real"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [
+          "ま"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "写真",
+          "reading": "しゃしん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "bức ảnh",
+            "en": "photograph"
+          }
+        },
+        {
+          "ja": "真ん中",
+          "reading": "まんなか",
+          "kanjiReading": "ま",
+          "translation": {
+            "vi": "chính giữa",
+            "en": "middle"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "同",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "giống; cùng",
+        "en": "same"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドウ"
+        ],
+        "kunReadings": [
+          "おな.じ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "同時",
+          "reading": "どうじ",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "cùng lúc",
+            "en": "at the same time"
+          }
+        },
+        {
+          "ja": "同じ",
+          "reading": "おなじ",
+          "kanjiReading": "おな",
+          "translation": {
+            "vi": "giống nhau",
+            "en": "same"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "有",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "có",
+        "en": "have; exist"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ユウ",
+          "ウ"
+        ],
+        "kunReadings": [
+          "あ.る"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "有名",
+          "reading": "ゆうめい",
+          "kanjiReading": "ユウ",
+          "translation": {
+            "vi": "nổi tiếng",
+            "en": "famous"
+          }
+        },
+        {
+          "ja": "有料",
+          "reading": "ゆうりょう",
+          "kanjiReading": "ユウ",
+          "translation": {
+            "vi": "có phí",
+            "en": "charged (fee)"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "正",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「正」nghĩa là gì?",
+        "en": "What does 「正」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đúng; chính",
+            "en": "correct"
+          },
+          {
+            "vi": "thật; chân thực",
+            "en": "true; real"
+          },
+          {
+            "vi": "giống; cùng",
+            "en": "same"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 正 nghĩa là đúng; chính.",
+        "en": "Correct! 正 means correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 正 nghĩa là đúng; chính, như trong 「正解」 (đáp án đúng).",
+        "en": "Not quite. 正 means correct, as in 「正解」 (correct answer)."
+      }
+    },
+    {
+      "item": "正",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「正」 trong 「正解」 (“đáp án đúng”).",
+        "en": "Type the reading of 「正」 in 「正解」 (“correct answer”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 正解, 正 đọc là せい (âm On).",
+        "en": "Correct! In 正解, 正 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 正解 (đáp án đúng), 正 đọc là せい (âm On).",
+        "en": "In 正解 (correct answer), 正 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "正",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「正しい」(đúng) đọc là gì?",
+        "en": "How is 「正しい」 (correct) read?"
+      },
+      "payload": {
+        "choices": [
+          "せいしい",
+          "ただしい",
+          "ゆうめい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 正しい = ただしい (đúng); 正 đọc là ただ (âm Kun).",
+        "en": "Correct! 正しい = ただしい (correct); 正 is read ただ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "正しい đọc là ただしい (đúng): 正 mang âm Kun ただ.",
+        "en": "正しい is read ただしい (correct): 正 takes the kun'yomi ただ."
+      }
+    },
+    {
+      "item": "真",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「真」nghĩa là gì?",
+        "en": "What does 「真」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giống; cùng",
+            "en": "same"
+          },
+          {
+            "vi": "thật; chân thực",
+            "en": "true; real"
+          },
+          {
+            "vi": "có",
+            "en": "have; exist"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 真 nghĩa là thật; chân thực.",
+        "en": "Correct! 真 means true; real."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 真 nghĩa là thật; chân thực, như trong 「写真」 (bức ảnh).",
+        "en": "Not quite. 真 means true; real, as in 「写真」 (photograph)."
+      }
+    },
+    {
+      "item": "真",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「真」 trong 「写真」 (“bức ảnh”).",
+        "en": "Type the reading of 「真」 in 「写真」 (“photograph”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 写真, 真 đọc là しん (âm On).",
+        "en": "Correct! In 写真, 真 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 写真 (bức ảnh), 真 đọc là しん (âm On).",
+        "en": "In 写真 (photograph), 真 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "真",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「真ん中」(chính giữa) đọc là gì?",
+        "en": "How is 「真ん中」 (middle) read?"
+      },
+      "payload": {
+        "choices": [
+          "しんなか",
+          "まるなか",
+          "まんなか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 真ん中 = まんなか (chính giữa); 真 đọc là ま (âm Kun).",
+        "en": "Correct! 真ん中 = まんなか (middle); 真 is read ま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "真ん中 đọc là まんなか (chính giữa): 真 mang âm Kun ま.",
+        "en": "真ん中 is read まんなか (middle): 真 takes the kun'yomi ま."
+      }
+    },
+    {
+      "item": "同",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「同」nghĩa là gì?",
+        "en": "What does 「同」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "có",
+            "en": "have; exist"
+          },
+          {
+            "vi": "đúng; chính",
+            "en": "correct"
+          },
+          {
+            "vi": "giống; cùng",
+            "en": "same"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 同 nghĩa là giống; cùng.",
+        "en": "Correct! 同 means same."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 同 nghĩa là giống; cùng, như trong 「同時」 (cùng lúc).",
+        "en": "Not quite. 同 means same, as in 「同時」 (at the same time)."
+      }
+    },
+    {
+      "item": "同",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「同」 trong 「同時」 (“cùng lúc”).",
+        "en": "Type the reading of 「同」 in 「同時」 (“at the same time”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どう",
+          "ドウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 同時, 同 đọc là どう (âm On).",
+        "en": "Correct! In 同時, 同 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 同時 (cùng lúc), 同 đọc là どう (âm On).",
+        "en": "In 同時 (at the same time), 同 is read どう (on'yomi)."
+      }
+    },
+    {
+      "item": "同",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「同じ」(giống nhau) đọc là gì?",
+        "en": "How is 「同じ」 (same) read?"
+      },
+      "payload": {
+        "choices": [
+          "おなじ",
+          "どうじ",
+          "ゆうめい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 同じ = おなじ (giống nhau); 同 đọc là おな (âm Kun).",
+        "en": "Correct! 同じ = おなじ (same); 同 is read おな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "同じ đọc là おなじ (giống nhau): 同 mang âm Kun おな.",
+        "en": "同じ is read おなじ (same): 同 takes the kun'yomi おな."
+      }
+    },
+    {
+      "item": "有",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「有」nghĩa là gì?",
+        "en": "What does 「有」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "có",
+            "en": "have; exist"
+          },
+          {
+            "vi": "đúng; chính",
+            "en": "correct"
+          },
+          {
+            "vi": "thật; chân thực",
+            "en": "true; real"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 有 nghĩa là có.",
+        "en": "Correct! 有 means have; exist."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 有 nghĩa là có, như trong 「有名」 (nổi tiếng).",
+        "en": "Not quite. 有 means have; exist, as in 「有名」 (famous)."
+      }
+    },
+    {
+      "item": "有",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「有」 trong 「有名」 (“nổi tiếng”).",
+        "en": "Type the reading of 「有」 in 「有名」 (“famous”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゆう",
+          "ユウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 有名, 有 đọc là ゆう (âm On).",
+        "en": "Correct! In 有名, 有 is read ゆう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 有名 (nổi tiếng), 有 đọc là ゆう (âm On).",
+        "en": "In 有名 (famous), 有 is read ゆう (on'yomi)."
+      }
+    },
+    {
+      "item": "有",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「有料」(có phí) đọc là gì?",
+        "en": "How is 「有料」 (charged (fee)) read?"
+      },
+      "payload": {
+        "choices": [
+          "ありょう",
+          "ゆうりょう",
+          "うりょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 有料 = ゆうりょう (có phí); 有 đọc là ゆう (âm On).",
+        "en": "Correct! 有料 = ゆうりょう (charged (fee)); 有 is read ゆう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "有料 đọc là ゆうりょう (có phí): 有 mang âm On ゆう.",
+        "en": "有料 is read ゆうりょう (charged (fee)): 有 takes the on'yomi ゆう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "正",
+            {
+              "vi": "đúng; chính",
+              "en": "correct"
+            }
+          ],
+          [
+            "真",
+            {
+              "vi": "thật; chân thực",
+              "en": "true; real"
+            }
+          ],
+          [
+            "同",
+            {
+              "vi": "giống; cùng",
+              "en": "same"
+            }
+          ],
+          [
+            "有",
+            {
+              "vi": "có",
+              "en": "have; exist"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

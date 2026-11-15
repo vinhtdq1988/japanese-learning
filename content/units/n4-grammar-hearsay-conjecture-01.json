@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-hearsay-conjecture",
+  "title": {
+    "vi": "Truyền đạt và phỏng đoán (1): 〜そうだ (hai nghĩa) và 〜ようだ",
+    "en": "Hearsay and conjecture (1): 〜そうだ (two uses) and 〜ようだ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜そうだ（様態）",
+      "meaning": {
+        "vi": "Có vẻ ~ (nhìn bề ngoài)",
+        "en": "Looks like ~ (appearance)"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ gốc ます / tính từ い bỏ い / tính từ な + そうだ (降りそう, おいしそう, 元気そう). Phỏng đoán từ vẻ bề ngoài nhìn thấy. Ngoại lệ: いい→よさそう, ない→なさそう. Nối danh từ bằng 「な」 (おいしそうなケーキ).",
+        "en": "Conjugation: verb ます-stem / い-adjective drop い / な-adjective + そうだ (降りそう, おいしそう, 元気そう). A guess from the appearance one sees. Exceptions: いい→よさそう, ない→なさそう. Before a noun use 「な」 (おいしそうなケーキ)."
+      },
+      "examples": [
+        {
+          "ja": "このケーキはおいしそうです。",
+          "reading": "このケーキはおいしそうです。",
+          "translation": {
+            "vi": "Chiếc bánh này trông ngon quá.",
+            "en": "This cake looks delicious."
+          }
+        },
+        {
+          "ja": "雨が降りそうですから、かさを持っていきます。",
+          "reading": "あめがふりそうですから、かさをもっていきます。",
+          "translation": {
+            "vi": "Trông trời sắp mưa nên tôi mang ô theo.",
+            "en": "It looks like rain, so I will take an umbrella."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-054"
+    },
+    {
+      "japanese": "〜そうだ（伝聞）",
+      "meaning": {
+        "vi": "Nghe nói ~",
+        "en": "I hear that ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể thường + そうだ (降るそうだ, おいしいそうだ). Truyền đạt thông tin nghe từ người khác hoặc đọc được; thường đi với 「〜によると」. Không đổi hình thái của そう. Khác 〜そうだ (様態) ở chỗ gắn vào thể thường chứ không phải gốc ます.",
+        "en": "Conjugation: plain form + そうだ (降るそうだ, おいしいそうだ). Relays information heard or read; often with 「〜によると」. そう does not change form. Unlike 〜そうだ (appearance), it attaches to the plain form, not the ます-stem."
+      },
+      "examples": [
+        {
+          "ja": "ニュースによると、明日は雪が降るそうです。",
+          "reading": "ニュースによると、あしたはゆきがふるそうです。",
+          "translation": {
+            "vi": "Theo tin tức, nghe nói ngày mai sẽ có tuyết.",
+            "en": "According to the news, it will snow tomorrow."
+          }
+        },
+        {
+          "ja": "田中さんは、来月結婚するそうです。",
+          "reading": "たなかさんは、らいげつけっこんするそうです。",
+          "translation": {
+            "vi": "Nghe nói anh Tanaka sẽ kết hôn vào tháng sau.",
+            "en": "I hear that Mr. Tanaka is getting married next month."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-055"
+    },
+    {
+      "japanese": "〜ようだ（推量）",
+      "meaning": {
+        "vi": "Có vẻ như ~ (suy đoán)",
+        "en": "It seems that ~ (inference)"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể thường (tính từ な: な; danh từ: の) + ようだ. Suy đoán dựa trên điều chính người nói thấy, nghe hoặc cảm nhận. Lịch sự: ようです. Chủ quan hơn らしい vì dựa trên giác quan của người nói.",
+        "en": "Conjugation: plain form (な-adjective: な; noun: の) + ようだ. An inference from what the speaker sees, hears or feels. Polite: ようです. More subjective than らしい because it rests on the speaker's own senses."
+      },
+      "examples": [
+        {
+          "ja": "部屋の電気がついているから、田中さんはいるようです。",
+          "reading": "へやのでんきがついているから、たなかさんはいるようです。",
+          "translation": {
+            "vi": "Đèn phòng đang sáng nên có vẻ anh Tanaka có ở đó.",
+            "en": "The room light is on, so it seems Mr. Tanaka is there."
+          }
+        },
+        {
+          "ja": "だれかいるようですね。",
+          "reading": "だれかいるようですね。",
+          "translation": {
+            "vi": "Hình như có ai đó ở đây.",
+            "en": "It seems that someone is here."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-056"
+    },
+    {
+      "japanese": "〜ようだ／〜みたいだ（比喩・例示）",
+      "meaning": {
+        "vi": "Như là ~; chẳng hạn như ~",
+        "en": "Like ~; such as ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ の + ようだ (so sánh: まるで〜のようだ); danh từ の + ような + danh từ (ví dụ: りんごのような果物). Khẩu ngữ dùng みたいだ / みたいな. Khác nghĩa \"suy đoán\" của ようだ ở trên.",
+        "en": "Usage: noun の + ようだ (comparison: まるで〜のようだ); noun の + ような + noun (example: りんごのような果物). Casual speech uses みたいだ / みたいな. Different from the \"inference\" use of ようだ above."
+      },
+      "examples": [
+        {
+          "ja": "彼の部屋は、まるで博物館のようです。",
+          "reading": "かれのへやは、まるではくぶつかんのようです。",
+          "translation": {
+            "vi": "Phòng của anh ấy cứ như một viện bảo tàng.",
+            "en": "His room is just like a museum."
+          }
+        },
+        {
+          "ja": "りんごのような果物が好きです。",
+          "reading": "りんごのようなくだものがすきです。",
+          "translation": {
+            "vi": "Tôi thích những loại trái cây như táo.",
+            "en": "I like fruit such as apples."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-057"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜そうだ（様態）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのケーキは、おいし（　）です。",
+        "en": "Choose the correct option for the blank:\nこのケーキは、おいし（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "よう",
+          "そう",
+          "らしい",
+          "だ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhìn bề ngoài mà đoán: tính từ い bỏ い + 「そう」: 「おいしそう」.",
+        "en": "Correct! A guess from appearance: い-adjective drop い + 「そう」: 「おいしそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhìn bề ngoài mà đoán: tính từ い bỏ い + 「そう」: 「おいしそう」.",
+        "en": "Not quite. A guess from appearance: い-adjective drop い + 「そう」: 「おいしそう」."
+      }
+    },
+    {
+      "item": "〜そうだ（様態）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨が降り（　）ですから、かさを持っていきます。",
+        "en": "Choose the correct option for the blank:\n雨が降り（　）ですから、かさを持っていきます。"
+      },
+      "payload": {
+        "choices": [
+          "そう",
+          "よう",
+          "みたい",
+          "らしい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ gốc ます + 「そう」: 「降りそう」.",
+        "en": "Correct! Verb ます-stem + 「そう」: 「降りそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ gốc ます + 「そう」: 「降りそう」.",
+        "en": "Not quite. Verb ます-stem + 「そう」: 「降りそう」."
+      }
+    },
+    {
+      "item": "〜そうだ（様態）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n天気予報によると、明日は雨が（　）です。",
+        "en": "Choose the pattern that best fits the context:\n天気予報によると、明日は雨が（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "降りそう",
+          "降るよう",
+          "降りよう",
+          "降るそう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có 「〜によると」 (nghe từ nguồn tin) nên là truyền đạt: thể thường + そう → 「降るそう」.",
+        "en": "Correct! With 「〜によると」 (a reported source) it is hearsay: plain form + そう → 「降るそう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có 「〜によると」 (nghe từ nguồn tin) nên là truyền đạt: thể thường + そう → 「降るそう」.",
+        "en": "Not quite. With 「〜によると」 (a reported source) it is hearsay: plain form + そう → 「降るそう」."
+      }
+    },
+    {
+      "item": "〜そうだ（様態）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "おいしいそうなケーキですね。",
+          "おいしくそうなケーキですね。",
+          "おいしそうなケーキですね。",
+          "おいしそうのケーキですね。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おいしい」 bỏ 「い」 + 「そう」, nối danh từ bằng 「な」: 「おいしそうなケーキ」.",
+        "en": "Correct! 「おいしい」 drops 「い」 + 「そう」 and links to a noun with 「な」: 「おいしそうなケーキ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おいしい」 bỏ 「い」 + 「そう」, nối danh từ bằng 「な」: 「おいしそうなケーキ」.",
+        "en": "Not quite. 「おいしい」 drops 「い」 + 「そう」 and links to a noun with 「な」: 「おいしそうなケーキ」."
+      }
+    },
+    {
+      "item": "〜そうだ（伝聞）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nニュースによると、明日は雪が降る（　）です。",
+        "en": "Choose the correct option for the blank:\nニュースによると、明日は雪が降る（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "そうに",
+          "そう",
+          "ように",
+          "ほど"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Truyền đạt: thể thường + 「そうです」: 「降るそうです」.",
+        "en": "Correct! Hearsay: plain form + 「そうです」: 「降るそうです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Truyền đạt: thể thường + 「そうです」: 「降るそうです」.",
+        "en": "Not quite. Hearsay: plain form + 「そうです」: 「降るそうです」."
+      }
+    },
+    {
+      "item": "〜そうだ（伝聞）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n田中さんは、来月結婚する___です。",
+        "en": "Choose the correct option for the blank:\n田中さんは、来月結婚する___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう"
+        ],
+        "hint": "そう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nghe nói: 「結婚するそうです」.",
+        "en": "Correct! I hear that: 「結婚するそうです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nghe nói: 「結婚するそうです」.",
+        "en": "Not quite. I hear that: 「結婚するそうです」."
+      }
+    },
+    {
+      "item": "〜そうだ（伝聞）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nニュースによると、＿　＿　★　＿　。\n（明日は／雪が／降る／そうです）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nニュースによると、＿　＿　★　＿　。\n（明日は／雪が／降る／そうです）"
+      },
+      "payload": {
+        "choices": [
+          "降る",
+          "明日は",
+          "雪が",
+          "そうです"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「ニュースによると、明日は雪が降るそうです。」; ô ★ (thứ ba) là 「降る」.",
+        "en": "Correct! The correct sentence is 「ニュースによると、明日は雪が降るそうです。」; the ★ (third) slot is 「降る」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「ニュースによると、明日は雪が降るそうです。」; ô ★ (thứ ba) là 「降る」.",
+        "en": "Not quite. The correct sentence is 「ニュースによると、明日は雪が降るそうです。」; the ★ (third) slot is 「降る」."
+      }
+    },
+    {
+      "item": "〜ようだ（推量）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n部屋の電気がついているから、田中さんはいる（　）です。",
+        "en": "Choose the correct option for the blank:\n部屋の電気がついているから、田中さんはいる（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ようにです",
+          "のようです",
+          "ようなです",
+          "ようです"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Suy đoán từ điều quan sát: động từ thể thường + 「ようです」: 「いるようです」.",
+        "en": "Correct! An inference from observation: verb plain form + 「ようです」: 「いるようです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Suy đoán từ điều quan sát: động từ thể thường + 「ようです」: 「いるようです」.",
+        "en": "Not quite. An inference from observation: verb plain form + 「ようです」: 「いるようです」."
+      }
+    },
+    {
+      "item": "〜ようだ（推量）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nだれかいる___ですね。",
+        "en": "Choose the correct option for the blank:\nだれかいる___ですね。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう"
+        ],
+        "hint": "よう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có vẻ có ai đó: 「いるようですね」.",
+        "en": "Correct! It seems someone is here: 「いるようですね」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có vẻ có ai đó: 「いるようですね」.",
+        "en": "Not quite. It seems someone is here: 「いるようですね」."
+      }
+    },
+    {
+      "item": "〜ようだ（推量）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "彼は病気にようです。",
+          "彼は病気だようです。",
+          "彼は病気のようです。",
+          "彼は病気ようです。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ nối với 「ようだ」 bằng 「の」: 「病気のようです」.",
+        "en": "Correct! A noun connects to 「ようだ」 with 「の」: 「病気のようです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ nối với 「ようだ」 bằng 「の」: 「病気のようです」.",
+        "en": "Not quite. A noun connects to 「ようだ」 with 「の」: 「病気のようです」."
+      }
+    },
+    {
+      "item": "〜ようだ／〜みたいだ（比喩・例示）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼の部屋は、まるで博物館（　）です。",
+        "en": "Choose the correct option for the blank:\n彼の部屋は、まるで博物館（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "のよ",
+          "のよう",
+          "にょう",
+          "なよう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! So sánh: danh từ + 「のようです」: 「博物館のようです」.",
+        "en": "Correct! Comparison: noun + 「のようです」: 「博物館のようです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. So sánh: danh từ + 「のようです」: 「博物館のようです」.",
+        "en": "Not quite. Comparison: noun + 「のようです」: 「博物館のようです」."
+      }
+    },
+    {
+      "item": "〜ようだ／〜みたいだ（比喩・例示）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nりんご___果物が好きです。",
+        "en": "Choose the correct option for the blank:\nりんご___果物が好きです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "のような"
+        ],
+        "hint": "〜のような"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ví dụ: danh từ + 「のような」 + danh từ: 「りんごのような果物」.",
+        "en": "Correct! An example: noun + 「のような」 + noun: 「りんごのような果物」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ví dụ: danh từ + 「のような」 + danh từ: 「りんごのような果物」.",
+        "en": "Not quite. An example: noun + 「のような」 + noun: 「りんごのような果物」."
+      }
+    },
+    {
+      "item": "〜ようだ／〜みたいだ（比喩・例示）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "りんごのような果物が好きです。",
+          "りんごようの果物が好きです。",
+          "りんごなような果物が好きです。",
+          "りんごのような果物がだ好きです。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng: danh từ + 「のような」 + danh từ.",
+        "en": "Correct! The correct pattern is noun + 「のような」 + noun."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng: danh từ + 「のような」 + danh từ.",
+        "en": "Not quite. The correct pattern is noun + 「のような」 + noun."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜そうだ（様態）",
+            {
+              "vi": "Có vẻ ~ (nhìn bề ngoài)",
+              "en": "Looks like ~ (appearance)"
+            }
+          ],
+          [
+            "〜そうだ（伝聞）",
+            {
+              "vi": "Nghe nói ~",
+              "en": "I hear that ~"
+            }
+          ],
+          [
+            "〜ようだ（推量）",
+            {
+              "vi": "Có vẻ như ~ (suy đoán)",
+              "en": "It seems that ~ (inference)"
+            }
+          ],
+          [
+            "〜ようだ／〜みたいだ（比喩・例示）",
+            {
+              "vi": "Như là ~; chẳng hạn như ~",
+              "en": "Like ~; such as ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

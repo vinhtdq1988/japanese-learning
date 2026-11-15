@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-international",
+  "title": {
+    "vi": "Bốn phương và tiền tệ",
+    "en": "Poles and foreign currency"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1660,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "西洋",
+      "reading": "せいよう",
+      "meaning": {
+        "vi": "Phương Tây",
+        "en": "The West"
+      },
+      "examples": [
+        {
+          "ja": "西洋の音楽を聞いて育ちました。",
+          "reading": "せいようのおんがくをきいてそだちました。",
+          "translation": {
+            "vi": "Tôi lớn lên nghe nhạc phương Tây.",
+            "en": "I grew up listening to Western music."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "南極",
+      "reading": "なんきょく",
+      "meaning": {
+        "vi": "Nam Cực",
+        "en": "South Pole; Antarctica"
+      },
+      "examples": [
+        {
+          "ja": "南極には、ペンギンが住んでいます。",
+          "reading": "なんきょくには、ペンギンがすんでいます。",
+          "translation": {
+            "vi": "Ở Nam Cực có chim cánh cụt sinh sống.",
+            "en": "Penguins live in Antarctica."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "北極",
+      "reading": "ほっきょく",
+      "meaning": {
+        "vi": "Bắc Cực",
+        "en": "North Pole; the Arctic"
+      },
+      "examples": [
+        {
+          "ja": "北極の氷が、少しずつ溶けています。",
+          "reading": "ほっきょくのこおりが、すこしずつとけています。",
+          "translation": {
+            "vi": "Băng ở Bắc Cực đang tan dần.",
+            "en": "The ice in the Arctic is melting little by little."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "赤道",
+      "reading": "せきどう",
+      "meaning": {
+        "vi": "Xích đạo",
+        "en": "Equator"
+      },
+      "examples": [
+        {
+          "ja": "赤道の近くは、一年中暑いです。",
+          "reading": "せきどうのちかくは、いちねんじゅうあついです。",
+          "translation": {
+            "vi": "Gần xích đạo thì nóng quanh năm.",
+            "en": "Near the equator it is hot all year round."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "外貨",
+      "reading": "がいか",
+      "meaning": {
+        "vi": "Ngoại tệ",
+        "en": "Foreign currency"
+      },
+      "examples": [
+        {
+          "ja": "旅行の前に、空港で外貨に替えました。",
+          "reading": "りょこうのまえに、くうこうでがいかにかえました。",
+          "translation": {
+            "vi": "Trước chuyến đi, tôi đã đổi sang ngoại tệ ở sân bay.",
+            "en": "Before the trip I changed money into foreign currency at the airport."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "世界中",
+      "reading": "せかいじゅう",
+      "meaning": {
+        "vi": "Khắp thế giới",
+        "en": "All over the world"
+      },
+      "examples": [
+        {
+          "ja": "この歌は、世界中で歌われています。",
+          "reading": "このうたは、せかいじゅうでうたわれています。",
+          "translation": {
+            "vi": "Bài hát này được hát khắp thế giới.",
+            "en": "This song is sung all over the world."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "西洋",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の音楽を聞いて育ちました。 — Nghĩa của câu: “Tôi lớn lên nghe nhạc phương Tây.”",
+        "en": "Choose the word that fits the blank: （　）の音楽を聞いて育ちました。 — Meaning of the sentence: “I grew up listening to Western music.”"
+      },
+      "payload": {
+        "choices": [
+          "北極",
+          "南極",
+          "西洋",
+          "外貨"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「西洋」(Phương Tây) hợp nghĩa câu này: “Tôi lớn lên nghe nhạc phương Tây.”",
+        "en": "Correct! 「西洋」(The West) fits this sentence: “I grew up listening to Western music.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi lớn lên nghe nhạc phương Tây.”, nên cần 「西洋」(Phương Tây); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I grew up listening to Western music.”, so it needs 「西洋」(The West); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "南極",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）には、ペンギンが住んでいます。 — Nghĩa của câu: “Ở Nam Cực có chim cánh cụt sinh sống.”",
+        "en": "Choose the word that fits the blank: （　）には、ペンギンが住んでいます。 — Meaning of the sentence: “Penguins live in Antarctica.”"
+      },
+      "payload": {
+        "choices": [
+          "西洋",
+          "北極",
+          "外貨",
+          "南極"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「南極」(Nam Cực) hợp nghĩa câu này: “Ở Nam Cực có chim cánh cụt sinh sống.”",
+        "en": "Correct! 「南極」(South Pole; Antarctica) fits this sentence: “Penguins live in Antarctica.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở Nam Cực có chim cánh cụt sinh sống.”, nên cần 「南極」(Nam Cực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Penguins live in Antarctica.”, so it needs 「南極」(South Pole; Antarctica); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "北極",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の氷が、少しずつ溶けています。 — Nghĩa của câu: “Băng ở Bắc Cực đang tan dần.”",
+        "en": "Choose the word that fits the blank: （　）の氷が、少しずつ溶けています。 — Meaning of the sentence: “The ice in the Arctic is melting little by little.”"
+      },
+      "payload": {
+        "choices": [
+          "北極",
+          "赤道",
+          "西洋",
+          "南極"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「北極」(Bắc Cực) hợp nghĩa câu này: “Băng ở Bắc Cực đang tan dần.”",
+        "en": "Correct! 「北極」(North Pole; the Arctic) fits this sentence: “The ice in the Arctic is melting little by little.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Băng ở Bắc Cực đang tan dần.”, nên cần 「北極」(Bắc Cực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The ice in the Arctic is melting little by little.”, so it needs 「北極」(North Pole; the Arctic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "赤道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の近くは、一年中暑いです。 — Nghĩa của câu: “Gần xích đạo thì nóng quanh năm.”",
+        "en": "Choose the word that fits the blank: （　）の近くは、一年中暑いです。 — Meaning of the sentence: “Near the equator it is hot all year round.”"
+      },
+      "payload": {
+        "choices": [
+          "北極",
+          "赤道",
+          "西洋",
+          "南極"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「赤道」(Xích đạo) hợp nghĩa câu này: “Gần xích đạo thì nóng quanh năm.”",
+        "en": "Correct! 「赤道」(Equator) fits this sentence: “Near the equator it is hot all year round.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gần xích đạo thì nóng quanh năm.”, nên cần 「赤道」(Xích đạo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Near the equator it is hot all year round.”, so it needs 「赤道」(Equator); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "外貨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行の前に、空港で（　）に替えました。 — Nghĩa của câu: “Trước chuyến đi, tôi đã đổi sang ngoại tệ ở sân bay.”",
+        "en": "Choose the word that fits the blank: 旅行の前に、空港で（　）に替えました。 — Meaning of the sentence: “Before the trip I changed money into foreign currency at the airport.”"
+      },
+      "payload": {
+        "choices": [
+          "世界中",
+          "西洋",
+          "外貨",
+          "南極"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「外貨」(Ngoại tệ) hợp nghĩa câu này: “Trước chuyến đi, tôi đã đổi sang ngoại tệ ở sân bay.”",
+        "en": "Correct! 「外貨」(Foreign currency) fits this sentence: “Before the trip I changed money into foreign currency at the airport.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước chuyến đi, tôi đã đổi sang ngoại tệ ở sân bay.”, nên cần 「外貨」(Ngoại tệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before the trip I changed money into foreign currency at the airport.”, so it needs 「外貨」(Foreign currency); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "世界中",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この歌は、（　）で歌われています。 — Nghĩa của câu: “Bài hát này được hát khắp thế giới.”",
+        "en": "Choose the word that fits the blank: この歌は、（　）で歌われています。 — Meaning of the sentence: “This song is sung all over the world.”"
+      },
+      "payload": {
+        "choices": [
+          "赤道",
+          "西洋",
+          "南極",
+          "世界中"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「世界中」(Khắp thế giới) hợp nghĩa câu này: “Bài hát này được hát khắp thế giới.”",
+        "en": "Correct! 「世界中」(All over the world) fits this sentence: “This song is sung all over the world.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bài hát này được hát khắp thế giới.”, nên cần 「世界中」(Khắp thế giới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This song is sung all over the world.”, so it needs 「世界中」(All over the world); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "西洋",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「西洋」の音楽を聞いて育ちました。",
+        "en": "Choose the correct reading of the word in 「」: 「西洋」の音楽を聞いて育ちました。"
+      },
+      "payload": {
+        "choices": [
+          "せかいじゅう",
+          "なんきょく",
+          "ほっきょく",
+          "せいよう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「西洋」 đọc là 「せいよう」, nghĩa là Phương Tây.",
+        "en": "Correct! 「西洋」 is read 「せいよう」 and means The West."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「西洋」 đọc là 「せいよう」 (Phương Tây); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「西洋」 is read 「せいよう」 (The West); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "赤道",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「赤道」の近くは、一年中暑いです。",
+        "en": "Choose the correct reading of the word in 「」: 「赤道」の近くは、一年中暑いです。"
+      },
+      "payload": {
+        "choices": [
+          "せきどう",
+          "せかいじゅう",
+          "せいよう",
+          "がいか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「赤道」 đọc là 「せきどう」, nghĩa là Xích đạo.",
+        "en": "Correct! 「赤道」 is read 「せきどう」 and means Equator."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「赤道」 đọc là 「せきどう」 (Xích đạo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「赤道」 is read 「せきどう」 (Equator); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "北極",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「ほっきょく」の氷が、少しずつ溶けています。",
+        "en": "Choose the correct way to write the word in 「」: 「ほっきょく」の氷が、少しずつ溶けています。"
+      },
+      "payload": {
+        "choices": [
+          "北極",
+          "西洋",
+          "南極",
+          "外貨"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほっきょく」 viết là 「北極」, nghĩa là Bắc Cực.",
+        "en": "Correct! 「ほっきょく」 is written 「北極」 and means North Pole; the Arctic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ほっきょく」 viết là 「北極」 (Bắc Cực); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ほっきょく」 is written 「北極」 (North Pole; the Arctic); the other words are read differently."
+      }
+    }
+  ]
+}

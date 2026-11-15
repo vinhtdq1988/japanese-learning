@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-abstract-nouns",
+  "title": {
+    "vi": "Sự vật, loại và lĩnh vực",
+    "en": "Matters, kinds and fields"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3270,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "物事",
+      "reading": "ものごと",
+      "meaning": {
+        "vi": "Sự vật; mọi việc",
+        "en": "Things; matters"
+      },
+      "examples": [
+        {
+          "ja": "物事を、いろいろな角度から考えます。",
+          "reading": "ものごとを、いろいろなかくどからかんがえます。",
+          "translation": {
+            "vi": "Tôi xem xét mọi việc từ nhiều góc độ.",
+            "en": "I think about things from various angles."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "項目",
+      "reading": "こうもく",
+      "meaning": {
+        "vi": "Hạng mục; mục",
+        "en": "Item; category"
+      },
+      "examples": [
+        {
+          "ja": "チェックする項目が、たくさんあります。",
+          "reading": "チェックするこうもくが、たくさんあります。",
+          "translation": {
+            "vi": "Có rất nhiều hạng mục cần kiểm tra.",
+            "en": "There are many items to check."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "種類",
+      "reading": "しゅるい",
+      "meaning": {
+        "vi": "Loại; chủng loại",
+        "en": "Kind; type"
+      },
+      "examples": [
+        {
+          "ja": "この店には、いろいろな種類のパンがあります。",
+          "reading": "このみせには、いろいろなしゅるいのパンがあります。",
+          "translation": {
+            "vi": "Cửa hàng này có nhiều loại bánh mì.",
+            "en": "This shop has many kinds of bread."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "分野",
+      "reading": "ぶんや",
+      "meaning": {
+        "vi": "Lĩnh vực",
+        "en": "Field; area"
+      },
+      "examples": [
+        {
+          "ja": "彼は、医学の分野で有名です。",
+          "reading": "かれは、いがくのぶんやでゆうめいです。",
+          "translation": {
+            "vi": "Ông ấy nổi tiếng trong lĩnh vực y học.",
+            "en": "He is famous in the field of medicine."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "側",
+      "reading": "そく",
+      "meaning": {
+        "vi": "Phía; bên",
+        "en": "Side"
+      },
+      "examples": [
+        {
+          "ja": "建物の側面に、窓があります。",
+          "reading": "たてもののそくめんに、まどがあります。",
+          "translation": {
+            "vi": "Ở mặt bên của tòa nhà có cửa sổ.",
+            "en": "There is a window on the side of the building."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一種",
+      "reading": "いっしゅ",
+      "meaning": {
+        "vi": "Một loại; một dạng",
+        "en": "A kind of"
+      },
+      "examples": [
+        {
+          "ja": "これは、一種の薬です。",
+          "reading": "これは、いっしゅのくすりです。",
+          "translation": {
+            "vi": "Đây là một loại thuốc.",
+            "en": "This is a kind of medicine."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "物事",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を、いろいろな角度から考えます。 — Nghĩa của câu: “Tôi xem xét mọi việc từ nhiều góc độ.”",
+        "en": "Choose the word that fits the blank: （　）を、いろいろな角度から考えます。 — Meaning of the sentence: “I think about things from various angles.”"
+      },
+      "payload": {
+        "choices": [
+          "分野",
+          "物事",
+          "項目",
+          "側"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「物事」(Sự vật; mọi việc) hợp nghĩa câu này: “Tôi xem xét mọi việc từ nhiều góc độ.”",
+        "en": "Correct! 「物事」(Things; matters) fits this sentence: “I think about things from various angles.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi xem xét mọi việc từ nhiều góc độ.”, nên cần 「物事」(Sự vật; mọi việc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I think about things from various angles.”, so it needs 「物事」(Things; matters); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "項目",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: チェックする（　）が、たくさんあります。 — Nghĩa của câu: “Có rất nhiều hạng mục cần kiểm tra.”",
+        "en": "Choose the word that fits the blank: チェックする（　）が、たくさんあります。 — Meaning of the sentence: “There are many items to check.”"
+      },
+      "payload": {
+        "choices": [
+          "物事",
+          "種類",
+          "項目",
+          "一種"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「項目」(Hạng mục; mục) hợp nghĩa câu này: “Có rất nhiều hạng mục cần kiểm tra.”",
+        "en": "Correct! 「項目」(Item; category) fits this sentence: “There are many items to check.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Có rất nhiều hạng mục cần kiểm tra.”, nên cần 「項目」(Hạng mục; mục); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There are many items to check.”, so it needs 「項目」(Item; category); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "種類",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店には、いろいろな（　）のパンがあります。 — Nghĩa của câu: “Cửa hàng này có nhiều loại bánh mì.”",
+        "en": "Choose the word that fits the blank: この店には、いろいろな（　）のパンがあります。 — Meaning of the sentence: “This shop has many kinds of bread.”"
+      },
+      "payload": {
+        "choices": [
+          "項目",
+          "物事",
+          "一種",
+          "種類"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「種類」(Loại; chủng loại) hợp nghĩa câu này: “Cửa hàng này có nhiều loại bánh mì.”",
+        "en": "Correct! 「種類」(Kind; type) fits this sentence: “This shop has many kinds of bread.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng này có nhiều loại bánh mì.”, nên cần 「種類」(Loại; chủng loại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This shop has many kinds of bread.”, so it needs 「種類」(Kind; type); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "分野",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、医学の（　）で有名です。 — Nghĩa của câu: “Ông ấy nổi tiếng trong lĩnh vực y học.”",
+        "en": "Choose the word that fits the blank: 彼は、医学の（　）で有名です。 — Meaning of the sentence: “He is famous in the field of medicine.”"
+      },
+      "payload": {
+        "choices": [
+          "分野",
+          "一種",
+          "物事",
+          "種類"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「分野」(Lĩnh vực) hợp nghĩa câu này: “Ông ấy nổi tiếng trong lĩnh vực y học.”",
+        "en": "Correct! 「分野」(Field; area) fits this sentence: “He is famous in the field of medicine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ông ấy nổi tiếng trong lĩnh vực y học.”, nên cần 「分野」(Lĩnh vực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is famous in the field of medicine.”, so it needs 「分野」(Field; area); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "側",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 建物の（　）面に、窓があります。 — Nghĩa của câu: “Ở mặt bên của tòa nhà có cửa sổ.”",
+        "en": "Choose the word that fits the blank: 建物の（　）面に、窓があります。 — Meaning of the sentence: “There is a window on the side of the building.”"
+      },
+      "payload": {
+        "choices": [
+          "分野",
+          "側",
+          "物事",
+          "種類"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「側」(Phía; bên) hợp nghĩa câu này: “Ở mặt bên của tòa nhà có cửa sổ.”",
+        "en": "Correct! 「側」(Side) fits this sentence: “There is a window on the side of the building.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở mặt bên của tòa nhà có cửa sổ.”, nên cần 「側」(Phía; bên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is a window on the side of the building.”, so it needs 「側」(Side); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一種",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: これは、（　）の薬です。 — Nghĩa của câu: “Đây là một loại thuốc.”",
+        "en": "Choose the word that fits the blank: これは、（　）の薬です。 — Meaning of the sentence: “This is a kind of medicine.”"
+      },
+      "payload": {
+        "choices": [
+          "項目",
+          "物事",
+          "一種",
+          "分野"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一種」(Một loại; một dạng) hợp nghĩa câu này: “Đây là một loại thuốc.”",
+        "en": "Correct! 「一種」(A kind of) fits this sentence: “This is a kind of medicine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đây là một loại thuốc.”, nên cần 「一種」(Một loại; một dạng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This is a kind of medicine.”, so it needs 「一種」(A kind of); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "物事",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「物事」を、いろいろな角度から考えます。",
+        "en": "Choose the correct reading of the word in 「」: 「物事」を、いろいろな角度から考えます。"
+      },
+      "payload": {
+        "choices": [
+          "こうもく",
+          "しゅるい",
+          "ものごと",
+          "ぶんや"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「物事」 đọc là 「ものごと」, nghĩa là Sự vật; mọi việc.",
+        "en": "Correct! 「物事」 is read 「ものごと」 and means Things; matters."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「物事」 đọc là 「ものごと」 (Sự vật; mọi việc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「物事」 is read 「ものごと」 (Things; matters); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "分野",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、医学の「分野」で有名です。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、医学の「分野」で有名です。"
+      },
+      "payload": {
+        "choices": [
+          "そく",
+          "ものごと",
+          "こうもく",
+          "ぶんや"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「分野」 đọc là 「ぶんや」, nghĩa là Lĩnh vực.",
+        "en": "Correct! 「分野」 is read 「ぶんや」 and means Field; area."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「分野」 đọc là 「ぶんや」 (Lĩnh vực); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「分野」 is read 「ぶんや」 (Field; area); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "種類",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この店には、いろいろな「しゅるい」のパンがあります。",
+        "en": "Choose the correct way to write the word in 「」: この店には、いろいろな「しゅるい」のパンがあります。"
+      },
+      "payload": {
+        "choices": [
+          "一種",
+          "物事",
+          "分野",
+          "種類"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しゅるい」 viết là 「種類」, nghĩa là Loại; chủng loại.",
+        "en": "Correct! 「しゅるい」 is written 「種類」 and means Kind; type."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しゅるい」 viết là 「種類」 (Loại; chủng loại); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しゅるい」 is written 「種類」 (Kind; type); the other words are read differently."
+      }
+    }
+  ]
+}

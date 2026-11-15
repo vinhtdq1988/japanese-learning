@@ -1,0 +1,676 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (消 当 混 過 完)",
+    "en": "Verbs and actions kanji (消 当 混 過 完)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "消",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "tắt; xóa; mất",
+        "en": "extinguish; erase"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "き.える",
+          "け.す"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "消費",
+          "reading": "しょうひ",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "tiêu dùng",
+            "en": "consumption"
+          }
+        },
+        {
+          "ja": "消す",
+          "reading": "けす",
+          "kanjiReading": "け",
+          "translation": {
+            "vi": "tắt; xóa",
+            "en": "to turn off; to erase"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "当",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "trúng; đương; ngay",
+        "en": "hit; this; just"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "あ.たる",
+          "あ.てる"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "本当",
+          "reading": "ほんとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "sự thật",
+            "en": "truth"
+          }
+        },
+        {
+          "ja": "当たる",
+          "reading": "あたる",
+          "kanjiReading": "あ",
+          "translation": {
+            "vi": "trúng; va phải",
+            "en": "to hit"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "混",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "trộn; đông",
+        "en": "mix; crowded"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コン"
+        ],
+        "kunReadings": [
+          "ま.じる",
+          "ま.ざる",
+          "こ.む"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "混雑",
+          "reading": "こんざつ",
+          "kanjiReading": "コン",
+          "translation": {
+            "vi": "đông đúc",
+            "en": "congestion"
+          }
+        },
+        {
+          "ja": "混ぜる",
+          "reading": "まぜる",
+          "kanjiReading": "ま",
+          "translation": {
+            "vi": "trộn",
+            "en": "to mix"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "過",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "qua; quá",
+        "en": "pass; excess"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [
+          "す.ぎる",
+          "す.ごす",
+          "あやま.ち"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "通過",
+          "reading": "つうか",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "đi qua",
+            "en": "passing through"
+          }
+        },
+        {
+          "ja": "過ごす",
+          "reading": "すごす",
+          "kanjiReading": "す",
+          "translation": {
+            "vi": "trải qua",
+            "en": "to spend (time)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "完",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "hoàn; trọn vẹn",
+        "en": "complete"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "完全",
+          "reading": "かんぜん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "hoàn toàn",
+            "en": "complete"
+          }
+        },
+        {
+          "ja": "完成",
+          "reading": "かんせい",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "hoàn thành",
+            "en": "completion"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "消",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「消」nghĩa là gì?",
+        "en": "What does 「消」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tắt; xóa; mất",
+            "en": "extinguish; erase"
+          },
+          {
+            "vi": "trúng; đương; ngay",
+            "en": "hit; this; just"
+          },
+          {
+            "vi": "trộn; đông",
+            "en": "mix; crowded"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 消 nghĩa là tắt; xóa; mất.",
+        "en": "Correct! 消 means extinguish; erase."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 消 nghĩa là tắt; xóa; mất, như trong 「消費」 (tiêu dùng).",
+        "en": "Not quite. 消 means extinguish; erase, as in 「消費」 (consumption)."
+      }
+    },
+    {
+      "item": "消",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「消」 trong 「消費」 (“tiêu dùng”).",
+        "en": "Type the reading of 「消」 in 「消費」 (“consumption”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 消費, 消 đọc là しょう (âm On).",
+        "en": "Correct! In 消費, 消 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 消費 (tiêu dùng), 消 đọc là しょう (âm On).",
+        "en": "In 消費 (consumption), 消 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "消",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「消す」(tắt; xóa) đọc là gì?",
+        "en": "How is 「消す」 (to turn off; to erase) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうす",
+          "けす",
+          "すごす"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 消す = けす (tắt; xóa); 消 đọc là け (âm Kun).",
+        "en": "Correct! 消す = けす (to turn off; to erase); 消 is read け (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "消す đọc là けす (tắt; xóa): 消 mang âm Kun け.",
+        "en": "消す is read けす (to turn off; to erase): 消 takes the kun'yomi け."
+      }
+    },
+    {
+      "item": "当",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「当」nghĩa là gì?",
+        "en": "What does 「当」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trộn; đông",
+            "en": "mix; crowded"
+          },
+          {
+            "vi": "trúng; đương; ngay",
+            "en": "hit; this; just"
+          },
+          {
+            "vi": "qua; quá",
+            "en": "pass; excess"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 当 nghĩa là trúng; đương; ngay.",
+        "en": "Correct! 当 means hit; this; just."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 当 nghĩa là trúng; đương; ngay, như trong 「本当」 (sự thật).",
+        "en": "Not quite. 当 means hit; this; just, as in 「本当」 (truth)."
+      }
+    },
+    {
+      "item": "当",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「当」 trong 「本当」 (“sự thật”).",
+        "en": "Type the reading of 「当」 in 「本当」 (“truth”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 本当, 当 đọc là とう (âm On).",
+        "en": "Correct! In 本当, 当 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 本当 (sự thật), 当 đọc là とう (âm On).",
+        "en": "In 本当 (truth), 当 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "当",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「当たる」(trúng; va phải) đọc là gì?",
+        "en": "How is 「当たる」 (to hit) read?"
+      },
+      "payload": {
+        "choices": [
+          "とうたる",
+          "まぜる",
+          "あたる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 当たる = あたる (trúng; va phải); 当 đọc là あ (âm Kun).",
+        "en": "Correct! 当たる = あたる (to hit); 当 is read あ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "当たる đọc là あたる (trúng; va phải): 当 mang âm Kun あ.",
+        "en": "当たる is read あたる (to hit): 当 takes the kun'yomi あ."
+      }
+    },
+    {
+      "item": "混",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「混」nghĩa là gì?",
+        "en": "What does 「混」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "qua; quá",
+            "en": "pass; excess"
+          },
+          {
+            "vi": "hoàn; trọn vẹn",
+            "en": "complete"
+          },
+          {
+            "vi": "trộn; đông",
+            "en": "mix; crowded"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 混 nghĩa là trộn; đông.",
+        "en": "Correct! 混 means mix; crowded."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 混 nghĩa là trộn; đông, như trong 「混雑」 (đông đúc).",
+        "en": "Not quite. 混 means mix; crowded, as in 「混雑」 (congestion)."
+      }
+    },
+    {
+      "item": "混",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「混」 trong 「混雑」 (“đông đúc”).",
+        "en": "Type the reading of 「混」 in 「混雑」 (“congestion”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こん",
+          "コン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 混雑, 混 đọc là こん (âm On).",
+        "en": "Correct! In 混雑, 混 is read こん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 混雑 (đông đúc), 混 đọc là こん (âm On).",
+        "en": "In 混雑 (congestion), 混 is read こん (on'yomi)."
+      }
+    },
+    {
+      "item": "混",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「混ぜる」(trộn) đọc là gì?",
+        "en": "How is 「混ぜる」 (to mix) read?"
+      },
+      "payload": {
+        "choices": [
+          "まぜる",
+          "こんぜる",
+          "あたる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 混ぜる = まぜる (trộn); 混 đọc là ま (âm Kun).",
+        "en": "Correct! 混ぜる = まぜる (to mix); 混 is read ま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "混ぜる đọc là まぜる (trộn): 混 mang âm Kun ま.",
+        "en": "混ぜる is read まぜる (to mix): 混 takes the kun'yomi ま."
+      }
+    },
+    {
+      "item": "過",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「過」nghĩa là gì?",
+        "en": "What does 「過」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "qua; quá",
+            "en": "pass; excess"
+          },
+          {
+            "vi": "hoàn; trọn vẹn",
+            "en": "complete"
+          },
+          {
+            "vi": "tắt; xóa; mất",
+            "en": "extinguish; erase"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 過 nghĩa là qua; quá.",
+        "en": "Correct! 過 means pass; excess."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 過 nghĩa là qua; quá, như trong 「通過」 (đi qua).",
+        "en": "Not quite. 過 means pass; excess, as in 「通過」 (passing through)."
+      }
+    },
+    {
+      "item": "過",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「過」 trong 「通過」 (“đi qua”).",
+        "en": "Type the reading of 「過」 in 「通過」 (“passing through”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 通過, 過 đọc là か (âm On).",
+        "en": "Correct! In 通過, 過 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 通過 (đi qua), 過 đọc là か (âm On).",
+        "en": "In 通過 (passing through), 過 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "過",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「過ごす」(trải qua) đọc là gì?",
+        "en": "How is 「過ごす」 (to spend (time)) read?"
+      },
+      "payload": {
+        "choices": [
+          "かごす",
+          "すごす",
+          "あたる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 過ごす = すごす (trải qua); 過 đọc là す (âm Kun).",
+        "en": "Correct! 過ごす = すごす (to spend (time)); 過 is read す (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "過ごす đọc là すごす (trải qua): 過 mang âm Kun す.",
+        "en": "過ごす is read すごす (to spend (time)): 過 takes the kun'yomi す."
+      }
+    },
+    {
+      "item": "完",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「完」nghĩa là gì?",
+        "en": "What does 「完」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tắt; xóa; mất",
+            "en": "extinguish; erase"
+          },
+          {
+            "vi": "hoàn; trọn vẹn",
+            "en": "complete"
+          },
+          {
+            "vi": "trúng; đương; ngay",
+            "en": "hit; this; just"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 完 nghĩa là hoàn; trọn vẹn.",
+        "en": "Correct! 完 means complete."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 完 nghĩa là hoàn; trọn vẹn, như trong 「完全」 (hoàn toàn).",
+        "en": "Not quite. 完 means complete, as in 「完全」 (complete)."
+      }
+    },
+    {
+      "item": "完",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「完」 trong 「完全」 (“hoàn toàn”).",
+        "en": "Type the reading of 「完」 in 「完全」 (“complete”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 完全, 完 đọc là かん (âm On).",
+        "en": "Correct! In 完全, 完 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 完全 (hoàn toàn), 完 đọc là かん (âm On).",
+        "en": "In 完全 (complete), 完 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "完",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「完成」(hoàn thành) đọc là gì?",
+        "en": "How is 「完成」 (completion) read?"
+      },
+      "payload": {
+        "choices": [
+          "がんせい",
+          "かんぜい",
+          "かんせい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 完成 = かんせい (hoàn thành); 完 đọc là かん (âm On).",
+        "en": "Correct! 完成 = かんせい (completion); 完 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "完成 đọc là かんせい (hoàn thành): 完 mang âm On かん.",
+        "en": "完成 is read かんせい (completion): 完 takes the on'yomi かん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "消",
+            {
+              "vi": "tắt; xóa; mất",
+              "en": "extinguish; erase"
+            }
+          ],
+          [
+            "当",
+            {
+              "vi": "trúng; đương; ngay",
+              "en": "hit; this; just"
+            }
+          ],
+          [
+            "混",
+            {
+              "vi": "trộn; đông",
+              "en": "mix; crowded"
+            }
+          ],
+          [
+            "過",
+            {
+              "vi": "qua; quá",
+              "en": "pass; excess"
+            }
+          ],
+          [
+            "完",
+            {
+              "vi": "hoàn; trọn vẹn",
+              "en": "complete"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

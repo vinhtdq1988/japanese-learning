@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-health-medical",
+  "title": {
+    "vi": "Chỉ số cơ thể và sức khỏe",
+    "en": "Body measures and health"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1930,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "血圧",
+      "reading": "けつあつ",
+      "meaning": {
+        "vi": "Huyết áp",
+        "en": "Blood pressure"
+      },
+      "examples": [
+        {
+          "ja": "毎朝、血圧を測っています。",
+          "reading": "まいあさ、けつあつをはかっています。",
+          "translation": {
+            "vi": "Mỗi sáng tôi đo huyết áp.",
+            "en": "I measure my blood pressure every morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "脈",
+      "reading": "みゃく",
+      "meaning": {
+        "vi": "Mạch",
+        "en": "Pulse"
+      },
+      "examples": [
+        {
+          "ja": "看護師が、手首で脈をはかりました。",
+          "reading": "かんごしが、てくびでみゃくをはかりました。",
+          "translation": {
+            "vi": "Y tá đã bắt mạch ở cổ tay.",
+            "en": "The nurse took my pulse at the wrist."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "体温",
+      "reading": "たいおん",
+      "meaning": {
+        "vi": "Thân nhiệt",
+        "en": "Body temperature"
+      },
+      "examples": [
+        {
+          "ja": "朝起きたら、まず体温を測ります。",
+          "reading": "あさおきたら、まずたいおんをはかります。",
+          "translation": {
+            "vi": "Sáng thức dậy tôi đo thân nhiệt trước.",
+            "en": "When I wake up in the morning, I take my temperature first."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "体重",
+      "reading": "たいじゅう",
+      "meaning": {
+        "vi": "Cân nặng",
+        "en": "Body weight"
+      },
+      "examples": [
+        {
+          "ja": "最近、体重が少し増えました。",
+          "reading": "さいきん、たいじゅうがすこしふえました。",
+          "translation": {
+            "vi": "Gần đây cân nặng của tôi tăng một chút.",
+            "en": "Recently my weight has gone up a little."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "体力",
+      "reading": "たいりょく",
+      "meaning": {
+        "vi": "Thể lực",
+        "en": "Physical strength"
+      },
+      "examples": [
+        {
+          "ja": "年をとって、体力が落ちてきました。",
+          "reading": "としをとって、たいりょくがおちてきました。",
+          "translation": {
+            "vi": "Lớn tuổi nên thể lực suy giảm.",
+            "en": "With age, my stamina has declined."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "栄養",
+      "reading": "えいよう",
+      "meaning": {
+        "vi": "Dinh dưỡng",
+        "en": "Nutrition"
+      },
+      "examples": [
+        {
+          "ja": "野菜は、栄養がたくさんあります。",
+          "reading": "やさいは、えいようがたくさんあります。",
+          "translation": {
+            "vi": "Rau có nhiều dinh dưỡng.",
+            "en": "Vegetables are rich in nutrients."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "睡眠",
+      "reading": "すいみん",
+      "meaning": {
+        "vi": "Giấc ngủ",
+        "en": "Sleep"
+      },
+      "examples": [
+        {
+          "ja": "健康のために、八時間の睡眠をとります。",
+          "reading": "けんこうのために、はちじかんのすいみんをとります。",
+          "translation": {
+            "vi": "Để giữ sức khỏe, tôi ngủ đủ tám tiếng.",
+            "en": "For my health, I get eight hours of sleep."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "疲労",
+      "reading": "ひろう",
+      "meaning": {
+        "vi": "Mệt mỏi; kiệt sức",
+        "en": "Fatigue"
+      },
+      "examples": [
+        {
+          "ja": "疲労がたまって、仕事に集中できません。",
+          "reading": "ひろうがたまって、しごとにしゅうちゅうできません。",
+          "translation": {
+            "vi": "Mệt mỏi tích tụ nên tôi không tập trung làm việc được.",
+            "en": "Fatigue has built up and I cannot concentrate on work."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ストレス",
+      "reading": "ストレス",
+      "meaning": {
+        "vi": "Căng thẳng",
+        "en": "Stress"
+      },
+      "examples": [
+        {
+          "ja": "仕事のストレスで、胃が痛くなりました。",
+          "reading": "しごとのストレスで、いがいたくなりました。",
+          "translation": {
+            "vi": "Vì căng thẳng công việc nên tôi bị đau dạ dày.",
+            "en": "Work stress gave me a stomachache."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "過労",
+      "reading": "かろう",
+      "meaning": {
+        "vi": "Làm việc quá sức",
+        "en": "Overwork"
+      },
+      "examples": [
+        {
+          "ja": "過労で倒れる人が、増えています。",
+          "reading": "かろうでたおれるひとが、ふえています。",
+          "translation": {
+            "vi": "Số người ngã quỵ vì làm việc quá sức đang tăng.",
+            "en": "More people are collapsing from overwork."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "健康診断",
+      "reading": "けんこうしんだん",
+      "meaning": {
+        "vi": "Khám sức khỏe định kỳ",
+        "en": "Health checkup"
+      },
+      "examples": [
+        {
+          "ja": "年に一回、会社で健康診断があります。",
+          "reading": "ねんにいっかい、かいしゃでけんこうしんだんがあります。",
+          "translation": {
+            "vi": "Mỗi năm một lần, công ty có khám sức khỏe định kỳ.",
+            "en": "Once a year there is a health checkup at the company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "持病",
+      "reading": "じびょう",
+      "meaning": {
+        "vi": "Bệnh mãn tính (bệnh có sẵn)",
+        "en": "Chronic condition"
+      },
+      "examples": [
+        {
+          "ja": "祖母は、持病があるので、毎日薬を飲みます。",
+          "reading": "そぼは、じびょうがあるので、まいにちくすりをのみます。",
+          "translation": {
+            "vi": "Bà tôi có bệnh nền nên ngày nào cũng uống thuốc.",
+            "en": "My grandmother has a chronic condition, so she takes medicine every day."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "血圧",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎朝、（　）を測っています。 — Nghĩa của câu: “Mỗi sáng tôi đo huyết áp.”",
+        "en": "Choose the word that fits the blank: 毎朝、（　）を測っています。 — Meaning of the sentence: “I measure my blood pressure every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "体重",
+          "健康診断",
+          "血圧",
+          "脈"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「血圧」(Huyết áp) hợp nghĩa câu này: “Mỗi sáng tôi đo huyết áp.”",
+        "en": "Correct! 「血圧」(Blood pressure) fits this sentence: “I measure my blood pressure every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi sáng tôi đo huyết áp.”, nên cần 「血圧」(Huyết áp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I measure my blood pressure every morning.”, so it needs 「血圧」(Blood pressure); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "脈",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 看護師が、手首で（　）をはかりました。 — Nghĩa của câu: “Y tá đã bắt mạch ở cổ tay.”",
+        "en": "Choose the word that fits the blank: 看護師が、手首で（　）をはかりました。 — Meaning of the sentence: “The nurse took my pulse at the wrist.”"
+      },
+      "payload": {
+        "choices": [
+          "体重",
+          "持病",
+          "血圧",
+          "脈"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「脈」(Mạch) hợp nghĩa câu này: “Y tá đã bắt mạch ở cổ tay.”",
+        "en": "Correct! 「脈」(Pulse) fits this sentence: “The nurse took my pulse at the wrist.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Y tá đã bắt mạch ở cổ tay.”, nên cần 「脈」(Mạch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The nurse took my pulse at the wrist.”, so it needs 「脈」(Pulse); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "体温",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 朝起きたら、まず（　）を測ります。 — Nghĩa của câu: “Sáng thức dậy tôi đo thân nhiệt trước.”",
+        "en": "Choose the word that fits the blank: 朝起きたら、まず（　）を測ります。 — Meaning of the sentence: “When I wake up in the morning, I take my temperature first.”"
+      },
+      "payload": {
+        "choices": [
+          "体温",
+          "栄養",
+          "体重",
+          "血圧"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「体温」(Thân nhiệt) hợp nghĩa câu này: “Sáng thức dậy tôi đo thân nhiệt trước.”",
+        "en": "Correct! 「体温」(Body temperature) fits this sentence: “When I wake up in the morning, I take my temperature first.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sáng thức dậy tôi đo thân nhiệt trước.”, nên cần 「体温」(Thân nhiệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When I wake up in the morning, I take my temperature first.”, so it needs 「体温」(Body temperature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "体重",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 最近、（　）が少し増えました。 — Nghĩa của câu: “Gần đây cân nặng của tôi tăng một chút.”",
+        "en": "Choose the word that fits the blank: 最近、（　）が少し増えました。 — Meaning of the sentence: “Recently my weight has gone up a little.”"
+      },
+      "payload": {
+        "choices": [
+          "健康診断",
+          "体重",
+          "栄養",
+          "血圧"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「体重」(Cân nặng) hợp nghĩa câu này: “Gần đây cân nặng của tôi tăng một chút.”",
+        "en": "Correct! 「体重」(Body weight) fits this sentence: “Recently my weight has gone up a little.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gần đây cân nặng của tôi tăng một chút.”, nên cần 「体重」(Cân nặng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Recently my weight has gone up a little.”, so it needs 「体重」(Body weight); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "体力",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 年をとって、（　）が落ちてきました。 — Nghĩa của câu: “Lớn tuổi nên thể lực suy giảm.”",
+        "en": "Choose the word that fits the blank: 年をとって、（　）が落ちてきました。 — Meaning of the sentence: “With age, my stamina has declined.”"
+      },
+      "payload": {
+        "choices": [
+          "血圧",
+          "栄養",
+          "体力",
+          "脈"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「体力」(Thể lực) hợp nghĩa câu này: “Lớn tuổi nên thể lực suy giảm.”",
+        "en": "Correct! 「体力」(Physical strength) fits this sentence: “With age, my stamina has declined.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lớn tuổi nên thể lực suy giảm.”, nên cần 「体力」(Thể lực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “With age, my stamina has declined.”, so it needs 「体力」(Physical strength); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "栄養",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 野菜は、（　）がたくさんあります。 — Nghĩa của câu: “Rau có nhiều dinh dưỡng.”",
+        "en": "Choose the word that fits the blank: 野菜は、（　）がたくさんあります。 — Meaning of the sentence: “Vegetables are rich in nutrients.”"
+      },
+      "payload": {
+        "choices": [
+          "体力",
+          "脈",
+          "血圧",
+          "栄養"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「栄養」(Dinh dưỡng) hợp nghĩa câu này: “Rau có nhiều dinh dưỡng.”",
+        "en": "Correct! 「栄養」(Nutrition) fits this sentence: “Vegetables are rich in nutrients.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Rau có nhiều dinh dưỡng.”, nên cần 「栄養」(Dinh dưỡng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Vegetables are rich in nutrients.”, so it needs 「栄養」(Nutrition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "睡眠",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 健康のために、八時間の（　）をとります。 — Nghĩa của câu: “Để giữ sức khỏe, tôi ngủ đủ tám tiếng.”",
+        "en": "Choose the word that fits the blank: 健康のために、八時間の（　）をとります。 — Meaning of the sentence: “For my health, I get eight hours of sleep.”"
+      },
+      "payload": {
+        "choices": [
+          "睡眠",
+          "体温",
+          "持病",
+          "血圧"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「睡眠」(Giấc ngủ) hợp nghĩa câu này: “Để giữ sức khỏe, tôi ngủ đủ tám tiếng.”",
+        "en": "Correct! 「睡眠」(Sleep) fits this sentence: “For my health, I get eight hours of sleep.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để giữ sức khỏe, tôi ngủ đủ tám tiếng.”, nên cần 「睡眠」(Giấc ngủ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For my health, I get eight hours of sleep.”, so it needs 「睡眠」(Sleep); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "疲労",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）がたまって、仕事に集中できません。 — Nghĩa của câu: “Mệt mỏi tích tụ nên tôi không tập trung làm việc được.”",
+        "en": "Choose the word that fits the blank: （　）がたまって、仕事に集中できません。 — Meaning of the sentence: “Fatigue has built up and I cannot concentrate on work.”"
+      },
+      "payload": {
+        "choices": [
+          "睡眠",
+          "疲労",
+          "栄養",
+          "血圧"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「疲労」(Mệt mỏi; kiệt sức) hợp nghĩa câu này: “Mệt mỏi tích tụ nên tôi không tập trung làm việc được.”",
+        "en": "Correct! 「疲労」(Fatigue) fits this sentence: “Fatigue has built up and I cannot concentrate on work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mệt mỏi tích tụ nên tôi không tập trung làm việc được.”, nên cần 「疲労」(Mệt mỏi; kiệt sức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Fatigue has built up and I cannot concentrate on work.”, so it needs 「疲労」(Fatigue); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ストレス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 仕事の（　）で、胃が痛くなりました。 — Nghĩa của câu: “Vì căng thẳng công việc nên tôi bị đau dạ dày.”",
+        "en": "Choose the word that fits the blank: 仕事の（　）で、胃が痛くなりました。 — Meaning of the sentence: “Work stress gave me a stomachache.”"
+      },
+      "payload": {
+        "choices": [
+          "栄養",
+          "血圧",
+          "ストレス",
+          "疲労"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ストレス」(Căng thẳng) hợp nghĩa câu này: “Vì căng thẳng công việc nên tôi bị đau dạ dày.”",
+        "en": "Correct! 「ストレス」(Stress) fits this sentence: “Work stress gave me a stomachache.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì căng thẳng công việc nên tôi bị đau dạ dày.”, nên cần 「ストレス」(Căng thẳng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Work stress gave me a stomachache.”, so it needs 「ストレス」(Stress); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "過労",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）で倒れる人が、増えています。 — Nghĩa của câu: “Số người ngã quỵ vì làm việc quá sức đang tăng.”",
+        "en": "Choose the word that fits the blank: （　）で倒れる人が、増えています。 — Meaning of the sentence: “More people are collapsing from overwork.”"
+      },
+      "payload": {
+        "choices": [
+          "体温",
+          "脈",
+          "血圧",
+          "過労"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「過労」(Làm việc quá sức) hợp nghĩa câu này: “Số người ngã quỵ vì làm việc quá sức đang tăng.”",
+        "en": "Correct! 「過労」(Overwork) fits this sentence: “More people are collapsing from overwork.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Số người ngã quỵ vì làm việc quá sức đang tăng.”, nên cần 「過労」(Làm việc quá sức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “More people are collapsing from overwork.”, so it needs 「過労」(Overwork); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "健康診断",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 年に一回、会社で（　）があります。 — Nghĩa của câu: “Mỗi năm một lần, công ty có khám sức khỏe định kỳ.”",
+        "en": "Choose the word that fits the blank: 年に一回、会社で（　）があります。 — Meaning of the sentence: “Once a year there is a health checkup at the company.”"
+      },
+      "payload": {
+        "choices": [
+          "健康診断",
+          "体力",
+          "脈",
+          "血圧"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「健康診断」(Khám sức khỏe định kỳ) hợp nghĩa câu này: “Mỗi năm một lần, công ty có khám sức khỏe định kỳ.”",
+        "en": "Correct! 「健康診断」(Health checkup) fits this sentence: “Once a year there is a health checkup at the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi năm một lần, công ty có khám sức khỏe định kỳ.”, nên cần 「健康診断」(Khám sức khỏe định kỳ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Once a year there is a health checkup at the company.”, so it needs 「健康診断」(Health checkup); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "持病",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖母は、（　）があるので、毎日薬を飲みます。 — Nghĩa của câu: “Bà tôi có bệnh nền nên ngày nào cũng uống thuốc.”",
+        "en": "Choose the word that fits the blank: 祖母は、（　）があるので、毎日薬を飲みます。 — Meaning of the sentence: “My grandmother has a chronic condition, so she takes medicine every day.”"
+      },
+      "payload": {
+        "choices": [
+          "体力",
+          "持病",
+          "体温",
+          "血圧"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「持病」(Bệnh mãn tính (bệnh có sẵn)) hợp nghĩa câu này: “Bà tôi có bệnh nền nên ngày nào cũng uống thuốc.”",
+        "en": "Correct! 「持病」(Chronic condition) fits this sentence: “My grandmother has a chronic condition, so she takes medicine every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bà tôi có bệnh nền nên ngày nào cũng uống thuốc.”, nên cần 「持病」(Bệnh mãn tính (bệnh có sẵn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandmother has a chronic condition, so she takes medicine every day.”, so it needs 「持病」(Chronic condition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "血圧",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 毎朝、「血圧」を測っています。",
+        "en": "Choose the correct reading of the word in 「」: 毎朝、「血圧」を測っています。"
+      },
+      "payload": {
+        "choices": [
+          "たいおん",
+          "みゃく",
+          "ストレス",
+          "けつあつ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「血圧」 đọc là 「けつあつ」, nghĩa là Huyết áp.",
+        "en": "Correct! 「血圧」 is read 「けつあつ」 and means Blood pressure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「血圧」 đọc là 「けつあつ」 (Huyết áp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「血圧」 is read 「けつあつ」 (Blood pressure); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "体温",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 朝起きたら、まず「体温」を測ります。",
+        "en": "Choose the correct reading of the word in 「」: 朝起きたら、まず「体温」を測ります。"
+      },
+      "payload": {
+        "choices": [
+          "たいおん",
+          "えいよう",
+          "すいみん",
+          "ストレス"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「体温」 đọc là 「たいおん」, nghĩa là Thân nhiệt.",
+        "en": "Correct! 「体温」 is read 「たいおん」 and means Body temperature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「体温」 đọc là 「たいおん」 (Thân nhiệt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「体温」 is read 「たいおん」 (Body temperature); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "栄養",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 野菜は、「栄養」がたくさんあります。",
+        "en": "Choose the correct reading of the word in 「」: 野菜は、「栄養」がたくさんあります。"
+      },
+      "payload": {
+        "choices": [
+          "みゃく",
+          "えいよう",
+          "すいみん",
+          "けつあつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「栄養」 đọc là 「えいよう」, nghĩa là Dinh dưỡng.",
+        "en": "Correct! 「栄養」 is read 「えいよう」 and means Nutrition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「栄養」 đọc là 「えいよう」 (Dinh dưỡng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「栄養」 is read 「えいよう」 (Nutrition); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "過労",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「過労」で倒れる人が、増えています。",
+        "en": "Choose the correct reading of the word in 「」: 「過労」で倒れる人が、増えています。"
+      },
+      "payload": {
+        "choices": [
+          "たいりょく",
+          "けんこうしんだん",
+          "かろう",
+          "じびょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「過労」 đọc là 「かろう」, nghĩa là Làm việc quá sức.",
+        "en": "Correct! 「過労」 is read 「かろう」 and means Overwork."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「過労」 đọc là 「かろう」 (Làm việc quá sức); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「過労」 is read 「かろう」 (Overwork); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "体重",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 最近、「たいじゅう」が少し増えました。",
+        "en": "Choose the correct way to write the word in 「」: 最近、「たいじゅう」が少し増えました。"
+      },
+      "payload": {
+        "choices": [
+          "体重",
+          "体温",
+          "睡眠",
+          "血圧"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たいじゅう」 viết là 「体重」, nghĩa là Cân nặng.",
+        "en": "Correct! 「たいじゅう」 is written 「体重」 and means Body weight."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「たいじゅう」 viết là 「体重」 (Cân nặng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「たいじゅう」 is written 「体重」 (Body weight); the other words are read differently."
+      }
+    },
+    {
+      "item": "疲労",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「ひろう」がたまって、仕事に集中できません。",
+        "en": "Choose the correct way to write the word in 「」: 「ひろう」がたまって、仕事に集中できません。"
+      },
+      "payload": {
+        "choices": [
+          "血圧",
+          "疲労",
+          "脈",
+          "体温"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ひろう」 viết là 「疲労」, nghĩa là Mệt mỏi; kiệt sức.",
+        "en": "Correct! 「ひろう」 is written 「疲労」 and means Fatigue."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ひろう」 viết là 「疲労」 (Mệt mỏi; kiệt sức); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ひろう」 is written 「疲労」 (Fatigue); the other words are read differently."
+      }
+    }
+  ]
+}

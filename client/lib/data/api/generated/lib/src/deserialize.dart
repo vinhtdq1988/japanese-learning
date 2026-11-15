@@ -58,6 +58,7 @@ import 'package:japanese_api/src/model/create_class_assignments_request.dart';
 import 'package:japanese_api/src/model/create_class_pause_request.dart';
 import 'package:japanese_api/src/model/create_class_request.dart';
 import 'package:japanese_api/src/model/daily_plan.dart';
+import 'package:japanese_api/src/model/daily_plan_encouragement.dart';
 import 'package:japanese_api/src/model/daily_plan_kanji_notice.dart';
 import 'package:japanese_api/src/model/delete_account200_response.dart';
 import 'package:japanese_api/src/model/delete_account_request.dart';
@@ -117,6 +118,9 @@ import 'package:japanese_api/src/model/plan_item.dart';
 import 'package:japanese_api/src/model/profile.dart';
 import 'package:japanese_api/src/model/profile_update.dart';
 import 'package:japanese_api/src/model/progress_summary.dart';
+import 'package:japanese_api/src/model/progress_summary_competency.dart';
+import 'package:japanese_api/src/model/progress_summary_competency_skills_inner.dart';
+import 'package:japanese_api/src/model/progress_summary_competency_topics_inner.dart';
 import 'package:japanese_api/src/model/progress_summary_goal.dart';
 import 'package:japanese_api/src/model/progress_summary_kanji.dart';
 import 'package:japanese_api/src/model/progress_summary_weak_topics_inner.dart';
@@ -140,6 +144,8 @@ import 'package:japanese_api/src/model/set_unit_mastered_request.dart';
 import 'package:japanese_api/src/model/shared_data_disclosure.dart';
 import 'package:japanese_api/src/model/shared_data_item.dart';
 import 'package:japanese_api/src/model/start_session_request.dart';
+import 'package:japanese_api/src/model/study_defaults.dart';
+import 'package:japanese_api/src/model/study_defaults_items_inner.dart';
 import 'package:japanese_api/src/model/trial_content.dart';
 import 'package:japanese_api/src/model/trial_content_units_inner.dart';
 import 'package:japanese_api/src/model/trial_content_units_inner_exercises_inner.dart';
@@ -332,6 +338,7 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'ClassWeakTopic':
       return ClassWeakTopic.fromJson(value as Map<String, dynamic>)
           as ReturnType;
+    case 'CompetencyLevel':
     case 'CompleteOnboarding200Response':
       return CompleteOnboarding200Response.fromJson(
             value as Map<String, dynamic>,
@@ -367,6 +374,9 @@ ReturnType deserialize<ReturnType, BaseType>(
           as ReturnType;
     case 'DailyPlan':
       return DailyPlan.fromJson(value as Map<String, dynamic>) as ReturnType;
+    case 'DailyPlanEncouragement':
+      return DailyPlanEncouragement.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
     case 'DailyPlanKanjiNotice':
       return DailyPlanKanjiNotice.fromJson(value as Map<String, dynamic>)
           as ReturnType;
@@ -537,6 +547,19 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'ProgressSummary':
       return ProgressSummary.fromJson(value as Map<String, dynamic>)
           as ReturnType;
+    case 'ProgressSummaryCompetency':
+      return ProgressSummaryCompetency.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
+    case 'ProgressSummaryCompetencySkillsInner':
+      return ProgressSummaryCompetencySkillsInner.fromJson(
+            value as Map<String, dynamic>,
+          )
+          as ReturnType;
+    case 'ProgressSummaryCompetencyTopicsInner':
+      return ProgressSummaryCompetencyTopicsInner.fromJson(
+            value as Map<String, dynamic>,
+          )
+          as ReturnType;
     case 'ProgressSummaryGoal':
       return ProgressSummaryGoal.fromJson(value as Map<String, dynamic>)
           as ReturnType;
@@ -612,6 +635,12 @@ ReturnType deserialize<ReturnType, BaseType>(
     case 'Skill':
     case 'StartSessionRequest':
       return StartSessionRequest.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
+    case 'StudyDefaults':
+      return StudyDefaults.fromJson(value as Map<String, dynamic>)
+          as ReturnType;
+    case 'StudyDefaultsItemsInner':
+      return StudyDefaultsItemsInner.fromJson(value as Map<String, dynamic>)
           as ReturnType;
     case 'TargetLevel':
     case 'TrialContent':

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-quantity-degree",
+  "title": {
+    "vi": "Gộp, loại và biến động",
+    "en": "Including, excluding and changes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3230,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "含める",
+      "reading": "ふくめる",
+      "meaning": {
+        "vi": "Gộp vào; tính cả",
+        "en": "To include (in a count)"
+      },
+      "examples": [
+        {
+          "ja": "私を含める場合は、五人で行きます。",
+          "reading": "わたしをふくめるばあいは、ごにんでいきます。",
+          "translation": {
+            "vi": "Nếu tính cả tôi thì chúng tôi đi năm người.",
+            "en": "If you count me, five of us will go."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "除く",
+      "reading": "のぞく",
+      "meaning": {
+        "vi": "Loại trừ; trừ ra",
+        "en": "To exclude"
+      },
+      "examples": [
+        {
+          "ja": "日曜日を除く毎日、営業しています。",
+          "reading": "にちようびをのぞくまいにち、えいぎょうしています。",
+          "translation": {
+            "vi": "Cửa hàng mở cửa mỗi ngày trừ Chủ nhật.",
+            "en": "We are open every day except Sunday."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大幅",
+      "reading": "おおはば",
+      "meaning": {
+        "vi": "Đáng kể; mạnh (mức độ lớn)",
+        "en": "Substantial"
+      },
+      "examples": [
+        {
+          "ja": "今年は、売り上げが大幅に増えました。",
+          "reading": "ことしは、うりあげがおおはばにふえました。",
+          "translation": {
+            "vi": "Năm nay doanh thu đã tăng đáng kể.",
+            "en": "This year sales have increased substantially."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "小幅",
+      "reading": "こはば",
+      "meaning": {
+        "vi": "Ít; nhẹ (mức nhỏ)",
+        "en": "Slight; narrow"
+      },
+      "examples": [
+        {
+          "ja": "株価は、小幅に上がりました。",
+          "reading": "かぶかは、こはばにあがりました。",
+          "translation": {
+            "vi": "Giá cổ phiếu tăng nhẹ.",
+            "en": "Stock prices rose slightly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "倍増",
+      "reading": "ばいぞう",
+      "meaning": {
+        "vi": "Tăng gấp đôi",
+        "en": "Doubling"
+      },
+      "examples": [
+        {
+          "ja": "観光客が、前の年の倍増になりました。",
+          "reading": "かんこうきゃくが、まえのとしのばいぞうになりました。",
+          "translation": {
+            "vi": "Số khách du lịch đã tăng gấp đôi so với năm trước.",
+            "en": "The number of tourists doubled compared to the previous year."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "急増",
+      "reading": "きゅうぞう",
+      "meaning": {
+        "vi": "Tăng đột biến",
+        "en": "Sharp increase"
+      },
+      "examples": [
+        {
+          "ja": "外国人の観光客が、急増しています。",
+          "reading": "がいこくじんのかんこうきゃくが、きゅうぞうしています。",
+          "translation": {
+            "vi": "Du khách nước ngoài đang tăng đột biến.",
+            "en": "Foreign tourists are increasing rapidly."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "含める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私を（　）場合は、五人で行きます。 — Nghĩa của câu: “Nếu tính cả tôi thì chúng tôi đi năm người.”",
+        "en": "Choose the word that fits the blank: 私を（　）場合は、五人で行きます。 — Meaning of the sentence: “If you count me, five of us will go.”"
+      },
+      "payload": {
+        "choices": [
+          "除く",
+          "大幅",
+          "含める",
+          "小幅"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「含める」(Gộp vào; tính cả) hợp nghĩa câu này: “Nếu tính cả tôi thì chúng tôi đi năm người.”",
+        "en": "Correct! 「含める」(To include (in a count)) fits this sentence: “If you count me, five of us will go.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu tính cả tôi thì chúng tôi đi năm người.”, nên cần 「含める」(Gộp vào; tính cả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you count me, five of us will go.”, so it needs 「含める」(To include (in a count)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "除く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日曜日を（　）毎日、営業しています。 — Nghĩa của câu: “Cửa hàng mở cửa mỗi ngày trừ Chủ nhật.”",
+        "en": "Choose the word that fits the blank: 日曜日を（　）毎日、営業しています。 — Meaning of the sentence: “We are open every day except Sunday.”"
+      },
+      "payload": {
+        "choices": [
+          "含める",
+          "大幅",
+          "小幅",
+          "除く"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「除く」(Loại trừ; trừ ra) hợp nghĩa câu này: “Cửa hàng mở cửa mỗi ngày trừ Chủ nhật.”",
+        "en": "Correct! 「除く」(To exclude) fits this sentence: “We are open every day except Sunday.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng mở cửa mỗi ngày trừ Chủ nhật.”, nên cần 「除く」(Loại trừ; trừ ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We are open every day except Sunday.”, so it needs 「除く」(To exclude); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大幅",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今年は、売り上げが（　）に増えました。 — Nghĩa của câu: “Năm nay doanh thu đã tăng đáng kể.”",
+        "en": "Choose the word that fits the blank: 今年は、売り上げが（　）に増えました。 — Meaning of the sentence: “This year sales have increased substantially.”"
+      },
+      "payload": {
+        "choices": [
+          "大幅",
+          "急増",
+          "小幅",
+          "倍増"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大幅」(Đáng kể; mạnh (mức độ lớn)) hợp nghĩa câu này: “Năm nay doanh thu đã tăng đáng kể.”",
+        "en": "Correct! 「大幅」(Substantial) fits this sentence: “This year sales have increased substantially.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Năm nay doanh thu đã tăng đáng kể.”, nên cần 「大幅」(Đáng kể; mạnh (mức độ lớn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This year sales have increased substantially.”, so it needs 「大幅」(Substantial); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "小幅",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 株価は、（　）に上がりました。 — Nghĩa của câu: “Giá cổ phiếu tăng nhẹ.”",
+        "en": "Choose the word that fits the blank: 株価は、（　）に上がりました。 — Meaning of the sentence: “Stock prices rose slightly.”"
+      },
+      "payload": {
+        "choices": [
+          "大幅",
+          "小幅",
+          "倍増",
+          "急増"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小幅」(Ít; nhẹ (mức nhỏ)) hợp nghĩa câu này: “Giá cổ phiếu tăng nhẹ.”",
+        "en": "Correct! 「小幅」(Slight; narrow) fits this sentence: “Stock prices rose slightly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giá cổ phiếu tăng nhẹ.”, nên cần 「小幅」(Ít; nhẹ (mức nhỏ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Stock prices rose slightly.”, so it needs 「小幅」(Slight; narrow); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "倍増",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 観光客が、前の年の（　）になりました。 — Nghĩa của câu: “Số khách du lịch đã tăng gấp đôi so với năm trước.”",
+        "en": "Choose the word that fits the blank: 観光客が、前の年の（　）になりました。 — Meaning of the sentence: “The number of tourists doubled compared to the previous year.”"
+      },
+      "payload": {
+        "choices": [
+          "大幅",
+          "小幅",
+          "倍増",
+          "急増"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「倍増」(Tăng gấp đôi) hợp nghĩa câu này: “Số khách du lịch đã tăng gấp đôi so với năm trước.”",
+        "en": "Correct! 「倍増」(Doubling) fits this sentence: “The number of tourists doubled compared to the previous year.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Số khách du lịch đã tăng gấp đôi so với năm trước.”, nên cần 「倍増」(Tăng gấp đôi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The number of tourists doubled compared to the previous year.”, so it needs 「倍増」(Doubling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "急増",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 外国人の観光客が、（　）しています。 — Nghĩa của câu: “Du khách nước ngoài đang tăng đột biến.”",
+        "en": "Choose the word that fits the blank: 外国人の観光客が、（　）しています。 — Meaning of the sentence: “Foreign tourists are increasing rapidly.”"
+      },
+      "payload": {
+        "choices": [
+          "小幅",
+          "大幅",
+          "倍増",
+          "急増"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「急増」(Tăng đột biến) hợp nghĩa câu này: “Du khách nước ngoài đang tăng đột biến.”",
+        "en": "Correct! 「急増」(Sharp increase) fits this sentence: “Foreign tourists are increasing rapidly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Du khách nước ngoài đang tăng đột biến.”, nên cần 「急増」(Tăng đột biến); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Foreign tourists are increasing rapidly.”, so it needs 「急増」(Sharp increase); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "含める",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 私を「含める」場合は、五人で行きます。",
+        "en": "Choose the correct reading of the word in 「」: 私を「含める」場合は、五人で行きます。"
+      },
+      "payload": {
+        "choices": [
+          "のぞく",
+          "おおはば",
+          "ばいぞう",
+          "ふくめる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「含める」 đọc là 「ふくめる」, nghĩa là Gộp vào; tính cả.",
+        "en": "Correct! 「含める」 is read 「ふくめる」 and means To include (in a count)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「含める」 đọc là 「ふくめる」 (Gộp vào; tính cả); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「含める」 is read 「ふくめる」 (To include (in a count)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "小幅",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 株価は、「小幅」に上がりました。",
+        "en": "Choose the correct reading of the word in 「」: 株価は、「小幅」に上がりました。"
+      },
+      "payload": {
+        "choices": [
+          "こはば",
+          "おおはば",
+          "ふくめる",
+          "ばいぞう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小幅」 đọc là 「こはば」, nghĩa là Ít; nhẹ (mức nhỏ).",
+        "en": "Correct! 「小幅」 is read 「こはば」 and means Slight; narrow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「小幅」 đọc là 「こはば」 (Ít; nhẹ (mức nhỏ)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「小幅」 is read 「こはば」 (Slight; narrow); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "大幅",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 今年は、売り上げが「おおはば」に増えました。",
+        "en": "Choose the correct way to write the word in 「」: 今年は、売り上げが「おおはば」に増えました。"
+      },
+      "payload": {
+        "choices": [
+          "大幅",
+          "倍増",
+          "含める",
+          "急増"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おおはば」 viết là 「大幅」, nghĩa là Đáng kể; mạnh (mức độ lớn).",
+        "en": "Correct! 「おおはば」 is written 「大幅」 and means Substantial."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おおはば」 viết là 「大幅」 (Đáng kể; mạnh (mức độ lớn)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「おおはば」 is written 「大幅」 (Substantial); the other words are read differently."
+      }
+    }
+  ]
+}

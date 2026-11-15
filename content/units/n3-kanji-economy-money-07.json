@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (割 率 倍)",
+    "en": "Economy and money kanji (割 率 倍)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "割",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "chia; tỷ lệ",
+        "en": "divide; ratio"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カツ"
+        ],
+        "kunReadings": [
+          "わ.る",
+          "わり",
+          "わ.れる",
+          "さ.く"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "分割",
+          "reading": "ぶんかつ",
+          "kanjiReading": "カツ",
+          "translation": {
+            "vi": "chia nhỏ",
+            "en": "division"
+          }
+        },
+        {
+          "ja": "割合",
+          "reading": "わりあい",
+          "kanjiReading": "わり",
+          "translation": {
+            "vi": "tỷ lệ",
+            "en": "proportion"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "率",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "tỷ lệ; dẫn đầu",
+        "en": "rate; lead"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リツ",
+          "ソツ"
+        ],
+        "kunReadings": [
+          "ひき.いる"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "確率",
+          "reading": "かくりつ",
+          "kanjiReading": "リツ",
+          "translation": {
+            "vi": "xác suất",
+            "en": "probability"
+          }
+        },
+        {
+          "ja": "率いる",
+          "reading": "ひきいる",
+          "kanjiReading": "ひき",
+          "translation": {
+            "vi": "dẫn dắt",
+            "en": "to lead"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "倍",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "gấp; lần",
+        "en": "times; double"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "バイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "二倍",
+          "reading": "にばい",
+          "kanjiReading": "バイ",
+          "translation": {
+            "vi": "gấp đôi",
+            "en": "double"
+          }
+        },
+        {
+          "ja": "倍率",
+          "reading": "ばいりつ",
+          "kanjiReading": "バイ",
+          "translation": {
+            "vi": "tỷ lệ phóng đại; độ cạnh tranh",
+            "en": "magnification; ratio"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "割",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「割」nghĩa là gì?",
+        "en": "What does 「割」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chia; tỷ lệ",
+            "en": "divide; ratio"
+          },
+          {
+            "vi": "tỷ lệ; dẫn đầu",
+            "en": "rate; lead"
+          },
+          {
+            "vi": "gấp; lần",
+            "en": "times; double"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 割 nghĩa là chia; tỷ lệ.",
+        "en": "Correct! 割 means divide; ratio."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 割 nghĩa là chia; tỷ lệ, như trong 「分割」 (chia nhỏ).",
+        "en": "Not quite. 割 means divide; ratio, as in 「分割」 (division)."
+      }
+    },
+    {
+      "item": "割",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「割」 trong 「分割」 (“chia nhỏ”).",
+        "en": "Type the reading of 「割」 in 「分割」 (“division”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かつ",
+          "カツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 分割, 割 đọc là かつ (âm On).",
+        "en": "Correct! In 分割, 割 is read かつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 分割 (chia nhỏ), 割 đọc là かつ (âm On).",
+        "en": "In 分割 (division), 割 is read かつ (on'yomi)."
+      }
+    },
+    {
+      "item": "割",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「割合」(tỷ lệ) đọc là gì?",
+        "en": "How is 「割合」 (proportion) read?"
+      },
+      "payload": {
+        "choices": [
+          "かつあい",
+          "わりあい",
+          "ひきあい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 割合 = わりあい (tỷ lệ); 割 đọc là わり (âm Kun).",
+        "en": "Correct! 割合 = わりあい (proportion); 割 is read わり (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "割合 đọc là わりあい (tỷ lệ): 割 mang âm Kun わり.",
+        "en": "割合 is read わりあい (proportion): 割 takes the kun'yomi わり."
+      }
+    },
+    {
+      "item": "率",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「率」nghĩa là gì?",
+        "en": "What does 「率」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "gấp; lần",
+            "en": "times; double"
+          },
+          {
+            "vi": "tỷ lệ; dẫn đầu",
+            "en": "rate; lead"
+          },
+          {
+            "vi": "chia; tỷ lệ",
+            "en": "divide; ratio"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 率 nghĩa là tỷ lệ; dẫn đầu.",
+        "en": "Correct! 率 means rate; lead."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 率 nghĩa là tỷ lệ; dẫn đầu, như trong 「確率」 (xác suất).",
+        "en": "Not quite. 率 means rate; lead, as in 「確率」 (probability)."
+      }
+    },
+    {
+      "item": "率",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「率」 trong 「確率」 (“xác suất”).",
+        "en": "Type the reading of 「率」 in 「確率」 (“probability”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りつ",
+          "リツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 確率, 率 đọc là りつ (âm On).",
+        "en": "Correct! In 確率, 率 is read りつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 確率 (xác suất), 率 đọc là りつ (âm On).",
+        "en": "In 確率 (probability), 率 is read りつ (on'yomi)."
+      }
+    },
+    {
+      "item": "率",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「率いる」(dẫn dắt) đọc là gì?",
+        "en": "How is 「率いる」 (to lead) read?"
+      },
+      "payload": {
+        "choices": [
+          "りついる",
+          "ばいりつ",
+          "ひきいる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 率いる = ひきいる (dẫn dắt); 率 đọc là ひき (âm Kun).",
+        "en": "Correct! 率いる = ひきいる (to lead); 率 is read ひき (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "率いる đọc là ひきいる (dẫn dắt): 率 mang âm Kun ひき.",
+        "en": "率いる is read ひきいる (to lead): 率 takes the kun'yomi ひき."
+      }
+    },
+    {
+      "item": "倍",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「倍」nghĩa là gì?",
+        "en": "What does 「倍」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chia; tỷ lệ",
+            "en": "divide; ratio"
+          },
+          {
+            "vi": "tỷ lệ; dẫn đầu",
+            "en": "rate; lead"
+          },
+          {
+            "vi": "gấp; lần",
+            "en": "times; double"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 倍 nghĩa là gấp; lần.",
+        "en": "Correct! 倍 means times; double."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 倍 nghĩa là gấp; lần, như trong 「二倍」 (gấp đôi).",
+        "en": "Not quite. 倍 means times; double, as in 「二倍」 (double)."
+      }
+    },
+    {
+      "item": "倍",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「倍」 trong 「二倍」 (“gấp đôi”).",
+        "en": "Type the reading of 「倍」 in 「二倍」 (“double”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばい",
+          "バイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 二倍, 倍 đọc là ばい (âm On).",
+        "en": "Correct! In 二倍, 倍 is read ばい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 二倍 (gấp đôi), 倍 đọc là ばい (âm On).",
+        "en": "In 二倍 (double), 倍 is read ばい (on'yomi)."
+      }
+    },
+    {
+      "item": "倍",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「倍率」(tỷ lệ phóng đại; độ cạnh tranh) đọc là gì?",
+        "en": "How is 「倍率」 (magnification; ratio) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばいりつ",
+          "はいりつ",
+          "わりつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 倍率 = ばいりつ (tỷ lệ phóng đại; độ cạnh tranh); 倍 đọc là ばい (âm On).",
+        "en": "Correct! 倍率 = ばいりつ (magnification; ratio); 倍 is read ばい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "倍率 đọc là ばいりつ (tỷ lệ phóng đại; độ cạnh tranh): 倍 mang âm On ばい.",
+        "en": "倍率 is read ばいりつ (magnification; ratio): 倍 takes the on'yomi ばい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "割",
+            {
+              "vi": "chia; tỷ lệ",
+              "en": "divide; ratio"
+            }
+          ],
+          [
+            "率",
+            {
+              "vi": "tỷ lệ; dẫn đầu",
+              "en": "rate; lead"
+            }
+          ],
+          [
+            "倍",
+            {
+              "vi": "gấp; lần",
+              "en": "times; double"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

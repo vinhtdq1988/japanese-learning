@@ -108,6 +108,39 @@ describe('rankClassUnits (chế độ mẫu) trên hồ sơ lớp', () => {
       unitProgress: none,
       topicStats: [],
     });
+    // Spec 008 (D10): thích ứng chỉ hoán đổi TRONG biên giới (3 đơn vị chưa học đầu của mỗi loại). Chọn đơn
+    // vị cuối biên giới của loại có vị trí thấp nhất trong thứ tự cơ sở: mảng yếu phải kéo nó lên.
+    const pending = base.ranked.filter((r) => r.status === 'pending');
+    const thirdOfKind = new Map<string, (typeof pending)[number]>();
+    const seenOfKind = new Map<string, number>();
+    for (const r of pending) {
+      const n = (seenOfKind.get(r.unit.kind) ?? 0) + 1;
+      seenOfKind.set(r.unit.kind, n);
+      if (n === 3) thirdOfKind.set(r.unit.kind, r);
+    }
+    const frontierLast = [...thirdOfKind.values()].sort(
+      (a, b) => pending.indexOf(b) - pending.indexOf(a),
+    )[0]!;
+    const adapted = rankClassUnits({
+      template: tpl,
+      units: catalog,
+      unitProgress: none,
+      topicStats: [{ topicId: frontierLast.unit.topicId, isWeak: true, difficultyBias: 0 }],
+    });
+    const position = (r: typeof base, id: string) => r.ranked.findIndex((x) => x.unit.id === id);
+    expect(position(adapted, frontierLast.unit.id)).toBeLessThan(
+      position(base, frontierLast.unit.id),
+    );
+    expect(adapted.required.map((u) => u.id).sort()).toEqual(base.required.map((u) => u.id).sort());
+  });
+
+  it('mảng yếu của đơn vị NGOÀI biên giới không kéo nó lên (thứ tự giáo trình được giữ, D10)', () => {
+    const base = rankClassUnits({
+      template: tpl,
+      units: catalog,
+      unitProgress: none,
+      topicStats: [],
+    });
     const lastPending = [...base.ranked].reverse().find((r) => r.status === 'pending')!;
     const adapted = rankClassUnits({
       template: tpl,
@@ -116,10 +149,9 @@ describe('rankClassUnits (chế độ mẫu) trên hồ sơ lớp', () => {
       topicStats: [{ topicId: lastPending.unit.topicId, isWeak: true, difficultyBias: 0 }],
     });
     const position = (r: typeof base, id: string) => r.ranked.findIndex((x) => x.unit.id === id);
-    expect(position(adapted, lastPending.unit.id)).toBeLessThan(
+    expect(position(adapted, lastPending.unit.id)).toBeGreaterThanOrEqual(
       position(base, lastPending.unit.id),
     );
-    expect(adapted.required.map((u) => u.id).sort()).toEqual(base.required.map((u) => u.id).sort());
   });
 
   it('đơn vị đã completed/mastered trước khi vào lớp tính là hoàn thành (US3.5)', () => {

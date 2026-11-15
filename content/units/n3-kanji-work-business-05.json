@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-work-business",
+  "title": {
+    "vi": "Kanji công việc – kinh doanh (約 定 予)",
+    "en": "Work and business kanji (約 定 予)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "約",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "hẹn; khoảng; ước",
+        "en": "promise; approximately"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヤク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "約束",
+          "reading": "やくそく",
+          "kanjiReading": "ヤク",
+          "translation": {
+            "vi": "lời hứa",
+            "en": "promise"
+          }
+        },
+        {
+          "ja": "予約",
+          "reading": "よやく",
+          "kanjiReading": "ヤク",
+          "translation": {
+            "vi": "đặt trước",
+            "en": "reservation"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "定",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "định; quy định",
+        "en": "decide; fix"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テイ",
+          "ジョウ"
+        ],
+        "kunReadings": [
+          "さだ.める",
+          "さだ.まる"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "予定",
+          "reading": "よてい",
+          "kanjiReading": "テイ",
+          "translation": {
+            "vi": "dự định",
+            "en": "plan"
+          }
+        },
+        {
+          "ja": "定める",
+          "reading": "さだめる",
+          "kanjiReading": "さだ",
+          "translation": {
+            "vi": "quy định; ấn định",
+            "en": "to determine"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "予",
+      "topic": "kanji-n3-work-business",
+      "meaning": {
+        "vi": "trước; dự",
+        "en": "beforehand; in advance"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨ"
+        ],
+        "kunReadings": [
+          "あらかじ.め"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "予定",
+          "reading": "よてい",
+          "kanjiReading": "ヨ",
+          "translation": {
+            "vi": "dự định",
+            "en": "plan"
+          }
+        },
+        {
+          "ja": "予習",
+          "reading": "よしゅう",
+          "kanjiReading": "ヨ",
+          "translation": {
+            "vi": "chuẩn bị bài trước",
+            "en": "preparation for class"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "約",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「約」nghĩa là gì?",
+        "en": "What does 「約」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hẹn; khoảng; ước",
+            "en": "promise; approximately"
+          },
+          {
+            "vi": "định; quy định",
+            "en": "decide; fix"
+          },
+          {
+            "vi": "trước; dự",
+            "en": "beforehand; in advance"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 約 nghĩa là hẹn; khoảng; ước.",
+        "en": "Correct! 約 means promise; approximately."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 約 nghĩa là hẹn; khoảng; ước, như trong 「約束」 (lời hứa).",
+        "en": "Not quite. 約 means promise; approximately, as in 「約束」 (promise)."
+      }
+    },
+    {
+      "item": "約",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「約」 trong 「約束」 (“lời hứa”).",
+        "en": "Type the reading of 「約」 in 「約束」 (“promise”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "やく",
+          "ヤク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 約束, 約 đọc là やく (âm On).",
+        "en": "Correct! In 約束, 約 is read やく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 約束 (lời hứa), 約 đọc là やく (âm On).",
+        "en": "In 約束 (promise), 約 is read やく (on'yomi)."
+      }
+    },
+    {
+      "item": "約",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「予約」(đặt trước) đọc là gì?",
+        "en": "How is 「予約」 (reservation) read?"
+      },
+      "payload": {
+        "choices": [
+          "よさだ",
+          "よやく",
+          "よてい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 予約 = よやく (đặt trước); 約 đọc là やく (âm On).",
+        "en": "Correct! 予約 = よやく (reservation); 約 is read やく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "予約 đọc là よやく (đặt trước): 約 mang âm On やく.",
+        "en": "予約 is read よやく (reservation): 約 takes the on'yomi やく."
+      }
+    },
+    {
+      "item": "定",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「定」nghĩa là gì?",
+        "en": "What does 「定」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trước; dự",
+            "en": "beforehand; in advance"
+          },
+          {
+            "vi": "định; quy định",
+            "en": "decide; fix"
+          },
+          {
+            "vi": "hẹn; khoảng; ước",
+            "en": "promise; approximately"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 定 nghĩa là định; quy định.",
+        "en": "Correct! 定 means decide; fix."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 定 nghĩa là định; quy định, như trong 「予定」 (dự định).",
+        "en": "Not quite. 定 means decide; fix, as in 「予定」 (plan)."
+      }
+    },
+    {
+      "item": "定",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「定」 trong 「予定」 (“dự định”).",
+        "en": "Type the reading of 「定」 in 「予定」 (“plan”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てい",
+          "テイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 予定, 定 đọc là てい (âm On).",
+        "en": "Correct! In 予定, 定 is read てい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 予定 (dự định), 定 đọc là てい (âm On).",
+        "en": "In 予定 (plan), 定 is read てい (on'yomi)."
+      }
+    },
+    {
+      "item": "定",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「定める」(quy định; ấn định) đọc là gì?",
+        "en": "How is 「定める」 (to determine) read?"
+      },
+      "payload": {
+        "choices": [
+          "ていめる",
+          "よしゅう",
+          "さだめる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 定める = さだめる (quy định; ấn định); 定 đọc là さだ (âm Kun).",
+        "en": "Correct! 定める = さだめる (to determine); 定 is read さだ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "定める đọc là さだめる (quy định; ấn định): 定 mang âm Kun さだ.",
+        "en": "定める is read さだめる (to determine): 定 takes the kun'yomi さだ."
+      }
+    },
+    {
+      "item": "予",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「予」nghĩa là gì?",
+        "en": "What does 「予」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hẹn; khoảng; ước",
+            "en": "promise; approximately"
+          },
+          {
+            "vi": "định; quy định",
+            "en": "decide; fix"
+          },
+          {
+            "vi": "trước; dự",
+            "en": "beforehand; in advance"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 予 nghĩa là trước; dự.",
+        "en": "Correct! 予 means beforehand; in advance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 予 nghĩa là trước; dự, như trong 「予定」 (dự định).",
+        "en": "Not quite. 予 means beforehand; in advance, as in 「予定」 (plan)."
+      }
+    },
+    {
+      "item": "予",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「予」 trong 「予定」 (“dự định”).",
+        "en": "Type the reading of 「予」 in 「予定」 (“plan”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よ",
+          "ヨ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 予定, 予 đọc là よ (âm On).",
+        "en": "Correct! In 予定, 予 is read よ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 予定 (dự định), 予 đọc là よ (âm On).",
+        "en": "In 予定 (plan), 予 is read よ (on'yomi)."
+      }
+    },
+    {
+      "item": "予",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「予習」(chuẩn bị bài trước) đọc là gì?",
+        "en": "How is 「予習」 (preparation for class) read?"
+      },
+      "payload": {
+        "choices": [
+          "よしゅう",
+          "あらかじしゅう",
+          "よじゅう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 予習 = よしゅう (chuẩn bị bài trước); 予 đọc là よ (âm On).",
+        "en": "Correct! 予習 = よしゅう (preparation for class); 予 is read よ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "予習 đọc là よしゅう (chuẩn bị bài trước): 予 mang âm On よ.",
+        "en": "予習 is read よしゅう (preparation for class): 予 takes the on'yomi よ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "約",
+            {
+              "vi": "hẹn; khoảng; ước",
+              "en": "promise; approximately"
+            }
+          ],
+          [
+            "定",
+            {
+              "vi": "định; quy định",
+              "en": "decide; fix"
+            }
+          ],
+          [
+            "予",
+            {
+              "vi": "trước; dự",
+              "en": "beforehand; in advance"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

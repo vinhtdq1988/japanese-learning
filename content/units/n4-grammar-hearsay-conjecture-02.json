@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-hearsay-conjecture",
+  "title": {
+    "vi": "Truyền đạt và phỏng đoán (2): 〜みたいだ, 〜らしい, 〜かもしれない, 〜でしょう",
+    "en": "Hearsay and conjecture (2): 〜みたいだ, 〜らしい, 〜かもしれない, 〜でしょう"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜みたいだ",
+      "meaning": {
+        "vi": "Hình như ~ (khẩu ngữ)",
+        "en": "It seems ~ (casual)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (danh từ và tính từ な bỏ だ) + みたいだ. Dạng khẩu ngữ của 〜ようだ (suy đoán), dùng trong hội thoại thân mật; bài viết trang trọng nên dùng ようだ.",
+        "en": "Usage: plain form (drop だ for nouns and な-adjectives) + みたいだ. The casual form of 〜ようだ (inference), used in friendly conversation; formal writing prefers ようだ."
+      },
+      "examples": [
+        {
+          "ja": "だれか来たみたいです。",
+          "reading": "だれかきたみたいです。",
+          "translation": {
+            "vi": "Hình như có ai đó đến.",
+            "en": "It seems someone has come."
+          }
+        },
+        {
+          "ja": "あの人は、学生みたいですね。",
+          "reading": "あのひとは、がくせいみたいですね。",
+          "translation": {
+            "vi": "Người kia trông có vẻ là sinh viên nhỉ.",
+            "en": "That person seems to be a student."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-058"
+    },
+    {
+      "japanese": "〜らしい",
+      "meaning": {
+        "vi": "Nghe nói/có vẻ ~; đúng kiểu ~",
+        "en": "Apparently ~; typical of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: (1) thể thường + らしい: suy đoán dựa trên thông tin nghe/đọc được (khách quan hơn ようだ); (2) danh từ + らしい: \"đúng chất\", đúng với tính cách điển hình (男らしい, 春らしい). Chia như tính từ い.",
+        "en": "Usage: (1) plain form + らしい: an inference based on information heard or read (more detached than ようだ); (2) noun + らしい: \"typical of\", true to type (男らしい, 春らしい). It conjugates as an い-adjective."
+      },
+      "examples": [
+        {
+          "ja": "田中さんは、かぜをひいたらしいです。",
+          "reading": "たなかさんは、かぜをひいたらしいです。",
+          "translation": {
+            "vi": "Nghe nói anh Tanaka bị cảm.",
+            "en": "Apparently Mr. Tanaka caught a cold."
+          }
+        },
+        {
+          "ja": "今日は春らしい天気ですね。",
+          "reading": "きょうははるらしいてんきですね。",
+          "translation": {
+            "vi": "Hôm nay thời tiết đúng kiểu mùa xuân nhỉ.",
+            "en": "Today is a spring-like day, isn't it?"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-059"
+    },
+    {
+      "japanese": "〜かもしれない",
+      "meaning": {
+        "vi": "Có lẽ ~, không chừng ~",
+        "en": "Might ~, perhaps ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (danh từ và tính từ な bỏ だ) + かもしれない (かもしれません). Khả năng khoảng 50%, không chắc chắn. Có thể rút gọn: かも. Không dùng khi người nói tin chắc.",
+        "en": "Usage: plain form (drop だ for nouns and な-adjectives) + かもしれない (かもしれません). A possibility of around 50%, not certain. Casual contraction: かも. Not used when the speaker is sure."
+      },
+      "examples": [
+        {
+          "ja": "明日は雨が降るかもしれません。",
+          "reading": "あしたはあめがふるかもしれません。",
+          "translation": {
+            "vi": "Ngày mai có thể trời sẽ mưa.",
+            "en": "It might rain tomorrow."
+          }
+        },
+        {
+          "ja": "彼は、もう家に着いたかもしれません。",
+          "reading": "かれは、もういえについたかもしれません。",
+          "translation": {
+            "vi": "Có lẽ anh ấy đã về tới nhà rồi.",
+            "en": "He may have already arrived home."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-060"
+    },
+    {
+      "japanese": "〜でしょう／〜だろう",
+      "meaning": {
+        "vi": "Chắc là ~",
+        "en": "Probably ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (danh từ và tính từ な bỏ だ) + でしょう (lịch sự) / だろう (thân mật). Phỏng đoán khá chắc chắn (khoảng 70–80%). Khi lên giọng cuối câu thì hỏi xác nhận (\"…đúng không?\").",
+        "en": "Usage: plain form (drop だ for nouns and な-adjectives) + でしょう (polite) / だろう (casual). A fairly confident guess (about 70–80%). With a rising tone it asks for confirmation (\"…right?\")."
+      },
+      "examples": [
+        {
+          "ja": "明日はいい天気でしょう。",
+          "reading": "あしたはいいてんきでしょう。",
+          "translation": {
+            "vi": "Ngày mai chắc trời sẽ đẹp.",
+            "en": "Tomorrow will probably be nice weather."
+          }
+        },
+        {
+          "ja": "彼は、もう帰っただろう。",
+          "reading": "かれは、もうかえっただろう。",
+          "translation": {
+            "vi": "Chắc là anh ấy đã về rồi.",
+            "en": "He has probably already gone home."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-061"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜みたいだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nだれか来た（　）です。",
+        "en": "Choose the correct option for the blank:\nだれか来た（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "みたいな",
+          "みたいに",
+          "みたいだった",
+          "みたい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể thường + 「みたいです」: 「来たみたいです」.",
+        "en": "Correct! Plain form + 「みたいです」: 「来たみたいです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể thường + 「みたいです」: 「来たみたいです」.",
+        "en": "Not quite. Plain form + 「みたいです」: 「来たみたいです」."
+      }
+    },
+    {
+      "item": "〜みたいだ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nあの人は、学生___ですね。",
+        "en": "Choose the correct option for the blank:\nあの人は、学生___ですね。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "みたい"
+        ],
+        "hint": "みたい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + みたい (không cần 「の」): 「学生みたいですね」.",
+        "en": "Correct! A noun + みたい (no 「の」 needed): 「学生みたいですね」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + みたい (không cần 「の」): 「学生みたいですね」.",
+        "en": "Not quite. A noun + みたい (no 「の」 needed): 「学生みたいですね」."
+      }
+    },
+    {
+      "item": "〜みたいだ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "あの人は、学生だみたいですね。",
+          "あの人は、学生のみたいですね。",
+          "あの人は、学生みたいですね。",
+          "あの人は、学生なみたいですね。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ nối thẳng với 「みたい」 (学生みたい), không dùng 「だ」, 「の」 hay 「な」.",
+        "en": "Correct! A noun joins 「みたい」 directly (学生みたい); no 「だ」, 「の」 or 「な」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ nối thẳng với 「みたい」 (学生みたい), không dùng 「だ」, 「の」 hay 「な」.",
+        "en": "Not quite. A noun joins 「みたい」 directly (学生みたい); no 「だ」, 「の」 or 「な」."
+      }
+    },
+    {
+      "item": "〜らしい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n田中さんは、かぜをひいた（　）です。",
+        "en": "Choose the correct option for the blank:\n田中さんは、かぜをひいた（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "らしく",
+          "らしい",
+          "らしくて",
+          "らしな"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Suy đoán từ thông tin nghe được: thể thường + 「らしいです」.",
+        "en": "Correct! An inference from information heard: plain form + 「らしいです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Suy đoán từ thông tin nghe được: thể thường + 「らしいです」.",
+        "en": "Not quite. An inference from information heard: plain form + 「らしいです」."
+      }
+    },
+    {
+      "item": "〜らしい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は春（　）天気ですね。",
+        "en": "Choose the correct option for the blank:\n今日は春（　）天気ですね。"
+      },
+      "payload": {
+        "choices": [
+          "らしい",
+          "らしく",
+          "ような",
+          "らしな"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「らしい」 nghĩa là \"đúng chất\": 「春らしい天気」.",
+        "en": "Correct! A noun + 「らしい」 means \"typical of\": 「春らしい天気」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「らしい」 nghĩa là \"đúng chất\": 「春らしい天気」.",
+        "en": "Not quite. A noun + 「らしい」 means \"typical of\": 「春らしい天気」."
+      }
+    },
+    {
+      "item": "〜らしい",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "彼はいつも男のらしいです。",
+          "彼はいつも男だらしいです。",
+          "彼はいつも男ならしいです。",
+          "彼はいつも男らしいです。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ nối thẳng với 「らしい」: 「男らしい」.",
+        "en": "Correct! A noun connects directly to 「らしい」: 「男らしい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ nối thẳng với 「らしい」: 「男らしい」.",
+        "en": "Not quite. A noun connects directly to 「らしい」: 「男らしい」."
+      }
+    },
+    {
+      "item": "〜かもしれない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日は雨が降る（　）。",
+        "en": "Choose the correct option for the blank:\n明日は雨が降る（　）。"
+      },
+      "payload": {
+        "choices": [
+          "かもしません",
+          "かしれません",
+          "かもしれません",
+          "かもしなません"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khả năng không chắc chắn: 「〜かもしれません」.",
+        "en": "Correct! An uncertain possibility: 「〜かもしれません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khả năng không chắc chắn: 「〜かもしれません」.",
+        "en": "Not quite. An uncertain possibility: 「〜かもしれません」."
+      }
+    },
+    {
+      "item": "〜かもしれない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、もう家に着いた___ません。",
+        "en": "Choose the correct option for the blank:\n彼は、もう家に着いた___ません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かもしれ"
+        ],
+        "hint": "〜かもしれ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có thể đã tới nhà: 「着いたかもしれません」.",
+        "en": "Correct! He may have arrived home: 「着いたかもしれません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có thể đã tới nhà: 「着いたかもしれません」.",
+        "en": "Not quite. He may have arrived home: 「着いたかもしれません」."
+      }
+    },
+    {
+      "item": "〜かもしれない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "田中さんは、来ないでかもしれません。",
+          "田中さんは、来ないかもしれません。",
+          "田中さんは、来なくかもしれません。",
+          "田中さんは、来なかもしれません。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ định + 「かもしれません」: 「来ないかもしれません」.",
+        "en": "Correct! A negative + 「かもしれません」: 「来ないかもしれません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ định + 「かもしれません」: 「来ないかもしれません」.",
+        "en": "Not quite. A negative + 「かもしれません」: 「来ないかもしれません」."
+      }
+    },
+    {
+      "item": "〜でしょう／〜だろう",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日はいい天気（　）。",
+        "en": "Choose the correct option for the blank:\n明日はいい天気（　）。"
+      },
+      "payload": {
+        "choices": [
+          "でしょう",
+          "ましょう",
+          "でしょ",
+          "だでしょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「でしょう」 (không thêm 「だ」): 「天気でしょう」.",
+        "en": "Correct! A noun + 「でしょう」 (no 「だ」): 「天気でしょう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「でしょう」 (không thêm 「だ」): 「天気でしょう」.",
+        "en": "Not quite. A noun + 「でしょう」 (no 「だ」): 「天気でしょう」."
+      }
+    },
+    {
+      "item": "〜でしょう／〜だろう",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は、もう帰っ___だろう。",
+        "en": "Choose the correct option for the blank:\n彼は、もう帰っ___だろう。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "た"
+        ],
+        "hint": "〜た"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phỏng đoán chuyện đã xảy ra: 「帰っただろう」.",
+        "en": "Correct! Guessing about something already done: 「帰っただろう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phỏng đoán chuyện đã xảy ra: 「帰っただろう」.",
+        "en": "Not quite. Guessing about something already done: 「帰っただろう」."
+      }
+    },
+    {
+      "item": "〜でしょう／〜だろう",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nあの人は、きっと来る（　）。\n（Người nói tin chắc là họ sẽ đến.）",
+        "en": "Choose the pattern that best fits the context:\nあの人は、きっと来る（　）。\n(The speaker is sure that the person will come.)"
+      },
+      "payload": {
+        "choices": [
+          "かもしれません",
+          "ましょう",
+          "でした",
+          "でしょう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có 「きっと」 (tin khá chắc) nên dùng 「でしょう」; 「かもしれません」 thể hiện không chắc, không hợp với 「きっと」.",
+        "en": "Correct! With 「きっと」 (fairly sure) 「でしょう」 fits; 「かもしれません」 expresses uncertainty and clashes with 「きっと」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có 「きっと」 (tin khá chắc) nên dùng 「でしょう」; 「かもしれません」 thể hiện không chắc, không hợp với 「きっと」.",
+        "en": "Not quite. With 「きっと」 (fairly sure) 「でしょう」 fits; 「かもしれません」 expresses uncertainty and clashes with 「きっと」."
+      }
+    },
+    {
+      "item": "〜かもしれない",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n明日は　＿　＿　★　＿　。\n（雨が／降る／かも／しれません）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n明日は　＿　＿　★　＿　。\n（雨が／降る／かも／しれません）"
+      },
+      "payload": {
+        "choices": [
+          "雨が",
+          "降る",
+          "かも",
+          "しれません"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「明日は雨が降るかもしれません。」; ô ★ (thứ ba) là 「かも」.",
+        "en": "Correct! The correct sentence is 「明日は雨が降るかもしれません。」; the ★ (third) slot is 「かも」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「明日は雨が降るかもしれません。」; ô ★ (thứ ba) là 「かも」.",
+        "en": "Not quite. The correct sentence is 「明日は雨が降るかもしれません。」; the ★ (third) slot is 「かも」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜みたいだ",
+            {
+              "vi": "Hình như ~ (khẩu ngữ)",
+              "en": "It seems ~ (casual)"
+            }
+          ],
+          [
+            "〜らしい",
+            {
+              "vi": "Nghe nói/có vẻ ~; đúng kiểu ~",
+              "en": "Apparently ~; typical of ~"
+            }
+          ],
+          [
+            "〜かもしれない",
+            {
+              "vi": "Có lẽ ~, không chừng ~",
+              "en": "Might ~, perhaps ~"
+            }
+          ],
+          [
+            "〜でしょう／〜だろう",
+            {
+              "vi": "Chắc là ~",
+              "en": "Probably ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

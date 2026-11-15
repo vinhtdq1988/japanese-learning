@@ -1,0 +1,582 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-obligation-permission",
+  "title": {
+    "vi": "Khuyên và ra lệnh: 〜たほうがいい, 〜ないほうがいい, 命令形, 禁止形, 〜なさい",
+    "en": "Advice and commands: 〜たほうがいい, imperative, prohibitive, 〜なさい"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜たほうがいい",
+      "meaning": {
+        "vi": "Nên ~",
+        "en": "Had better ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể た + ほうがいい. Lời khuyên cụ thể cho một tình huống (\"nên làm thì tốt hơn\"). Nếu nói với người trên cần nhẹ nhàng hơn (〜たほうがいいと思います).",
+        "en": "Conjugation: verb た-form + ほうがいい. Specific advice for a situation (\"it would be better to…\"). Toward a superior, soften it (〜たほうがいいと思います)."
+      },
+      "examples": [
+        {
+          "ja": "かぜをひいたら、早く寝たほうがいいですよ。",
+          "reading": "かぜをひいたら、はやくねたほうがいいですよ。",
+          "translation": {
+            "vi": "Nếu bị cảm thì nên đi ngủ sớm.",
+            "en": "If you catch a cold, you should go to bed early."
+          }
+        },
+        {
+          "ja": "疲れているときは、休んだほうがいいです。",
+          "reading": "つかれているときは、やすんだほうがいいです。",
+          "translation": {
+            "vi": "Khi mệt thì nên nghỉ ngơi.",
+            "en": "When you are tired, you had better rest."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-089"
+    },
+    {
+      "japanese": "〜ないほうがいい",
+      "meaning": {
+        "vi": "Không nên ~",
+        "en": "Had better not ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể ない + ほうがいい. Khuyên không nên làm. Nhớ: khẳng định dùng thể た (〜たほうがいい), phủ định dùng thể ない (〜ないほうがいい).",
+        "en": "Conjugation: verb ない-form + ほうがいい. Advises against doing something. Remember: the affirmative takes the た-form (〜たほうがいい) while the negative takes the ない-form (〜ないほうがいい)."
+      },
+      "examples": [
+        {
+          "ja": "夜遅くコーヒーを飲まないほうがいいです。",
+          "reading": "よるおそくコーヒーをのまないほうがいいです。",
+          "translation": {
+            "vi": "Không nên uống cà phê vào đêm khuya.",
+            "en": "You should not drink coffee late at night."
+          }
+        },
+        {
+          "ja": "無理をしないほうがいいですよ。",
+          "reading": "むりをしないほうがいいですよ。",
+          "translation": {
+            "vi": "Bạn không nên cố quá sức đâu.",
+            "en": "You should not overdo it."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-090"
+    },
+    {
+      "japanese": "命令形",
+      "meaning": {
+        "vi": "Thể mệnh lệnh",
+        "en": "Imperative form"
+      },
+      "explanation": {
+        "vi": "Cách chia: 五段 đổi đuôi う→え (走る→走れ); 一段 bỏ る thêm ろ (食べる→食べろ); する→しろ, くる→こい. Rất mạnh, dùng giữa nam giới thân thiết, khi thúc giục hoặc trên biển báo (止まれ). Lịch sự dùng 〜てください.",
+        "en": "Conjugation: 五段 change the final う-sound to え (走る→走れ); 一段 drop る and add ろ (食べる→食べろ); する→しろ, くる→こい. Very forceful; used between close male friends, to urge, and on signs (止まれ). Polite speech uses 〜てください."
+      },
+      "examples": [
+        {
+          "ja": "早く走れ。",
+          "reading": "はやくはしれ。",
+          "translation": {
+            "vi": "Chạy nhanh lên!",
+            "en": "Run fast!"
+          }
+        },
+        {
+          "ja": "止まれ。",
+          "reading": "とまれ。",
+          "translation": {
+            "vi": "Dừng lại! (biển báo)",
+            "en": "Stop! (sign)"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-091"
+    },
+    {
+      "japanese": "禁止形 〜な",
+      "meaning": {
+        "vi": "Cấm ~ (đừng ~)",
+        "en": "Prohibitive form 〜な (don't ~)"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể từ điển + な (入るな, 忘れるな). Lệnh cấm rất mạnh, dùng với người thân, biển báo; không dùng trong giao tiếp lịch sự. Cặp với 命令形.",
+        "en": "Conjugation: verb dictionary form + な (入るな, 忘れるな). A very strong prohibition, used with close people and on signs; not for polite speech. It pairs with the imperative form."
+      },
+      "examples": [
+        {
+          "ja": "ここに入るな。",
+          "reading": "ここにはいるな。",
+          "translation": {
+            "vi": "Đừng vào đây!",
+            "en": "Do not enter here!"
+          }
+        },
+        {
+          "ja": "大事な約束を忘れるな。",
+          "reading": "だいじなやくそくをわすれるな。",
+          "translation": {
+            "vi": "Đừng quên lời hứa quan trọng.",
+            "en": "Do not forget the important promise."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-092"
+    },
+    {
+      "japanese": "〜なさい",
+      "meaning": {
+        "vi": "Hãy ~ (mệnh lệnh nhẹ)",
+        "en": "Do ~ (mild command)"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ gốc ます + なさい (起きなさい). Mệnh lệnh nhẹ nhàng nhưng vẫn là lệnh, thường là người trên nói với người dưới (cha mẹ với con, thầy với trò). Không dùng với người trên mình.",
+        "en": "Conjugation: verb ます-stem + なさい (起きなさい). A mild but still firm command, usually from a superior to a subordinate (parent to child, teacher to student). Not used toward someone above you."
+      },
+      "examples": [
+        {
+          "ja": "早く起きなさい。",
+          "reading": "はやくおきなさい。",
+          "translation": {
+            "vi": "Dậy nhanh lên nào.",
+            "en": "Get up quickly."
+          }
+        },
+        {
+          "ja": "宿題をしなさい。",
+          "reading": "しゅくだいをしなさい。",
+          "translation": {
+            "vi": "Con hãy làm bài tập đi.",
+            "en": "Do your homework."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-093"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜たほうがいい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nかぜをひいたら、早く寝（　）ほうがいいですよ。",
+        "en": "Choose the correct option for the blank:\nかぜをひいたら、早く寝（　）ほうがいいですよ。"
+      },
+      "payload": {
+        "choices": [
+          "て",
+          "ます",
+          "た",
+          "ず"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lời khuyên khẳng định dùng thể た: 「寝たほうがいい」.",
+        "en": "Correct! An affirmative piece of advice uses the た-form: 「寝たほうがいい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lời khuyên khẳng định dùng thể た: 「寝たほうがいい」.",
+        "en": "Not quite. An affirmative piece of advice uses the た-form: 「寝たほうがいい」."
+      }
+    },
+    {
+      "item": "〜たほうがいい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n疲れているときは、休ん___ほうがいいです。",
+        "en": "Choose the correct option for the blank:\n疲れているときは、休ん___ほうがいいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "だ"
+        ],
+        "hint": "〜だ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休む」 thuộc nhóm 五段, thể た là 「休んだ」.",
+        "en": "Correct! 「休む」 is a 五段 verb with the た-form 「休んだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「休む」 thuộc nhóm 五段, thể た là 「休んだ」.",
+        "en": "Not quite. 「休む」 is a 五段 verb with the た-form 「休んだ」."
+      }
+    },
+    {
+      "item": "〜ないほうがいい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n夜遅くコーヒーを飲ま（　）ほうがいいです。",
+        "en": "Choose the pattern that best fits the context:\n夜遅くコーヒーを飲ま（　）ほうがいいです。"
+      },
+      "payload": {
+        "choices": [
+          "た",
+          "ない",
+          "る",
+          "ず"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khuyên không nên làm dùng thể ない: 「飲まないほうがいい」 (khẳng định mới dùng thể た).",
+        "en": "Correct! Advice not to do something uses the ない-form: 「飲まないほうがいい」 (only the affirmative uses the た-form)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khuyên không nên làm dùng thể ない: 「飲まないほうがいい」 (khẳng định mới dùng thể た).",
+        "en": "Not quite. Advice not to do something uses the ない-form: 「飲まないほうがいい」 (only the affirmative uses the た-form)."
+      }
+    },
+    {
+      "item": "〜ないほうがいい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n無理を（　）ほうがいいですよ。",
+        "en": "Choose the correct option for the blank:\n無理を（　）ほうがいいですよ。"
+      },
+      "payload": {
+        "choices": [
+          "しない",
+          "さない",
+          "しなくて",
+          "しないで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「する」 → ない形 「しない」: 「無理をしないほうがいい」.",
+        "en": "Correct! 「する」→ ない-form 「しない」: 「無理をしないほうがいい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「する」 → ない形 「しない」: 「無理をしないほうがいい」.",
+        "en": "Not quite. 「する」→ ない-form 「しない」: 「無理をしないほうがいい」."
+      }
+    },
+    {
+      "item": "命令形",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n早く走（　）！",
+        "en": "Choose the correct option for the blank:\n早く走（　）！"
+      },
+      "payload": {
+        "choices": [
+          "ろ",
+          "ら",
+          "り",
+          "れ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「走る」 thuộc nhóm 五段, thể mệnh lệnh đổi る→れ: 「走れ」.",
+        "en": "Correct! 「走る」 is a 五段 verb; its imperative changes る→れ: 「走れ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「走る」 thuộc nhóm 五段, thể mệnh lệnh đổi る→れ: 「走れ」.",
+        "en": "Not quite. 「走る」 is a 五段 verb; its imperative changes る→れ: 「走れ」."
+      }
+    },
+    {
+      "item": "命令形",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nちゃんと食べ（　）！",
+        "en": "Choose the correct option for the blank:\nちゃんと食べ（　）！"
+      },
+      "payload": {
+        "choices": [
+          "れ",
+          "る",
+          "ろ",
+          "ら"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食べる」 thuộc nhóm 一段, thể mệnh lệnh bỏ る thêm ろ: 「食べろ」.",
+        "en": "Correct! 「食べる」 is an 一段 verb; its imperative drops る and adds ろ: 「食べろ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「食べる」 thuộc nhóm 一段, thể mệnh lệnh bỏ る thêm ろ: 「食べろ」.",
+        "en": "Not quite. 「食べる」 is an 一段 verb; its imperative drops る and adds ろ: 「食べろ」."
+      }
+    },
+    {
+      "item": "命令形",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nここで止ま___！",
+        "en": "Choose the correct option for the blank:\nここで止ま___！"
+      },
+      "payload": {
+        "accepted_answers": [
+          "れ"
+        ],
+        "hint": "〜れ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「止まる」 thuộc nhóm 五段: 「止まれ」.",
+        "en": "Correct! 「止まる」 is a 五段 verb: 「止まれ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「止まる」 thuộc nhóm 五段: 「止まれ」.",
+        "en": "Not quite. 「止まる」 is a 五段 verb: 「止まれ」."
+      }
+    },
+    {
+      "item": "命令形",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "もっと速く走ろ。",
+          "もっと速く走れ。",
+          "もっと速く走り。",
+          "もっと速く走るれ。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「走る」 là động từ nhóm 五段 nên mệnh lệnh là 「走れ」 (「走ろ」 chỉ dùng cho nhóm 一段).",
+        "en": "Correct! 「走る」 is a 五段 verb so its imperative is 「走れ」 (「走ろ」 is only for 一段 verbs)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「走る」 là động từ nhóm 五段 nên mệnh lệnh là 「走れ」 (「走ろ」 chỉ dùng cho nhóm 一段).",
+        "en": "Not quite. 「走る」 is a 五段 verb so its imperative is 「走れ」 (「走ろ」 is only for 一段 verbs)."
+      }
+    },
+    {
+      "item": "禁止形 〜な",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nここに入る（　）。",
+        "en": "Choose the correct option for the blank:\nここに入る（　）。"
+      },
+      "payload": {
+        "choices": [
+          "な",
+          "ない",
+          "ろ",
+          "よ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lệnh cấm: thể từ điển + 「な」: 「入るな」.",
+        "en": "Correct! A prohibition: dictionary form + 「な」: 「入るな」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lệnh cấm: thể từ điển + 「な」: 「入るな」.",
+        "en": "Not quite. A prohibition: dictionary form + 「な」: 「入るな」."
+      }
+    },
+    {
+      "item": "禁止形 〜な",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n大事な約束を忘れる___。",
+        "en": "Choose the correct option for the blank:\n大事な約束を忘れる___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "な"
+        ],
+        "hint": "な"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「忘れる」 + 「な」 = 「忘れるな」 (đừng quên).",
+        "en": "Correct! 「忘れる」 + 「な」 = 「忘れるな」 (don't forget)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「忘れる」 + 「な」 = 「忘れるな」 (đừng quên).",
+        "en": "Not quite. 「忘れる」 + 「な」 = 「忘れるな」 (don't forget)."
+      }
+    },
+    {
+      "item": "〜なさい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n（母が子どもに）早く起き（　）。",
+        "en": "Choose the pattern that best fits the context:\n（母が子どもに）早く起き（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ましょうか",
+          "なければ",
+          "ようと",
+          "なさい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cha mẹ ra lệnh nhẹ với con dùng 「〜なさい」: 「起きなさい」.",
+        "en": "Correct! A parent giving a mild command to a child uses 「〜なさい」: 「起きなさい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cha mẹ ra lệnh nhẹ với con dùng 「〜なさい」: 「起きなさい」.",
+        "en": "Not quite. A parent giving a mild command to a child uses 「〜なさい」: 「起きなさい」."
+      }
+    },
+    {
+      "item": "〜なさい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n宿題をし（　）。",
+        "en": "Choose the correct option for the blank:\n宿題をし（　）。"
+      },
+      "payload": {
+        "choices": [
+          "なさる",
+          "なさいます",
+          "なさい",
+          "させる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「ます形の語幹 + なさい」: 「しなさい」.",
+        "en": "Correct! The pattern 「ます-stem + なさい」: 「しなさい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「ます形の語幹 + なさい」: 「しなさい」.",
+        "en": "Not quite. The pattern 「ます-stem + なさい」: 「しなさい」."
+      }
+    },
+    {
+      "item": "〜なさい",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "早く寝るなさい。",
+          "早く寝なさい。",
+          "早く寝てなさい。",
+          "早く寝たなさい。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜なさい」 gắn vào gốc ます (寝 + なさい), không gắn vào thể từ điển, thể て hay thể た.",
+        "en": "Correct! 「〜なさい」 attaches to the ます-stem (寝 + なさい), not to the dictionary, て- or た-form."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜なさい」 gắn vào gốc ます (寝 + なさい), không gắn vào thể từ điển, thể て hay thể た.",
+        "en": "Not quite. 「〜なさい」 attaches to the ます-stem (寝 + なさい), not to the dictionary, て- or た-form."
+      }
+    },
+    {
+      "item": "〜たほうがいい",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nかぜをひいたら、＿　★　＿　ほうがいいです。\n（早く／家に／帰った）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nかぜをひいたら、＿　★　＿　ほうがいいです。\n（早く／家に／帰った）"
+      },
+      "payload": {
+        "choices": [
+          "早く",
+          "家に",
+          "帰った"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「かぜをひいたら、早く家に帰ったほうがいいです。」; ô ★ (thứ hai) là 「家に」.",
+        "en": "Correct! The correct sentence is 「かぜをひいたら、早く家に帰ったほうがいいです。」; the ★ (second) slot is 「家に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「かぜをひいたら、早く家に帰ったほうがいいです。」; ô ★ (thứ hai) là 「家に」.",
+        "en": "Not quite. The correct sentence is 「かぜをひいたら、早く家に帰ったほうがいいです。」; the ★ (second) slot is 「家に」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜たほうがいい",
+            {
+              "vi": "Nên ~",
+              "en": "Had better ~"
+            }
+          ],
+          [
+            "〜ないほうがいい",
+            {
+              "vi": "Không nên ~",
+              "en": "Had better not ~"
+            }
+          ],
+          [
+            "命令形",
+            {
+              "vi": "Thể mệnh lệnh",
+              "en": "Imperative form"
+            }
+          ],
+          [
+            "禁止形 〜な",
+            {
+              "vi": "Cấm ~ (đừng ~)",
+              "en": "Prohibitive form 〜な (don't ~)"
+            }
+          ],
+          [
+            "〜なさい",
+            {
+              "vi": "Hãy ~ (mệnh lệnh nhẹ)",
+              "en": "Do ~ (mild command)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

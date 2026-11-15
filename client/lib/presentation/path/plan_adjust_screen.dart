@@ -10,6 +10,9 @@ import '../../data/api_providers.dart';
 import '../../data/learning_repository.dart';
 import '../../data/plan_adjustment_repository.dart';
 import '../../data/progress_repository.dart';
+import '../../data/study_defaults_repository.dart';
+import '../../domain/onboarding_form.dart';
+import '../../domain/study_suggestion.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../classroom/locked_control.dart';
@@ -18,20 +21,26 @@ import '../shared/confirm_dialog.dart';
 import '../shared/error_messages.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
+import '../shared/suggestion_invite_card.dart';
 
 const List<String> _goalTypes = <String>['daily_conversation', 'work', 'jlpt'];
 const List<String> _targetLevels = <String>['N5', 'N4', 'N3', 'N2', 'N1'];
 const List<int> _dailyMinutes = <int>[5, 10, 15, 30];
 
 /// Kỹ năng chưa có trong phiên bản này: hiển thị là tùy chọn bị khóa (giống onboarding).
-const List<String> _lockedSkills = <String>['listening', 'reading'];
+const List<String> _lockedSkills = <String>['listening'];
 
-/// Kỹ năng bật/tắt được trong kế hoạch (Kanji từ spec 003).
+/// Kỹ năng bật/tắt được trong kế hoạch (Kanji từ spec 003; luyện đọc/viết từ spec 007, chỉ khi đủ thời gian).
 const List<String> _selectableSkills = <String>[
   'vocabulary',
   'grammar',
   'kanji',
+  'reading',
+  'writing',
 ];
+
+/// Luyện đọc/viết: bị khóa khi quỹ thời gian đang áp dụng chưa đạt ngưỡng của máy chủ (spec 007, FR-005).
+const List<String> _practiceSkills = <String>['reading', 'writing'];
 
 /// Làm mới mọi màn hình phụ thuộc lộ trình/kế hoạch sau khi người học ghi đè.
 void invalidatePlanViews(WidgetRef ref) {
@@ -152,6 +161,11 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
   String? _message;
   bool _messageIsError = false;
 
+  /// Gợi ý kỹ năng mới sau khi đổi quỹ thời gian (spec 007, FR-024): máy chủ chỉ lưu phút, `skills` chỉ
+  /// đổi khi người học bấm "Áp dụng". Chỉ giữ trong trạng thái màn hình (mất khi rời màn).
+  List<String>? _invite;
+  int? _inviteMinutes;
+
   @override
   void initState() {
     super.initState();
@@ -167,6 +181,15 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
   }
 
   int? get _currentMinutes => int.tryParse(_profile.dailyMinutes?.value ?? '');
+
+  /// Ngưỡng quỹ thời gian của luyện đọc/viết do máy chủ trả; chưa tải được thì dùng mức mặc định của sản phẩm.
+  int get _practiceMin =>
+      ref.read(studyDefaultsProvider).valueOrNull?.practiceMinDailyMinutes ??
+      OnboardingOptions.practiceMinDailyMinutesFallback;
+
+  /// Luyện đọc/viết đang bị khóa theo quỹ thời gian hiện tại (kỹ năng đã lưu vẫn giữ nguyên, chỉ không dùng được).
+  bool get _practiceLocked =>
+      isPracticeLockedFor(_currentMinutes, _practiceMin);
 
   bool get _goalChanged =>
       _goalType != (_profile.goalType?.value ?? '') ||
@@ -225,14 +248,66 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
     );
   }
 
-  Future<void> _setMinutes(int minutes) {
+  Future<void> _setMinutes(int minutes) async {
     final l10n = AppLocalizations.of(context);
     final repo = ref.read(planAdjustmentRepositoryProvider);
-    return _run(
+    final oldMinutes = _currentMinutes;
+    final savedSkills = _selectedSkills;
+    setState(() {
+      _invite = null;
+      _inviteMinutes = null;
+    });
+    await _run(
       () => repo.update(ProfileChange(dailyMinutes: minutes)),
       l10n.planAdjustTimeSaved,
     );
+    // Lưu lỗi thì giữ nguyên; lưu xong mới xét mời gợi ý mới.
+    if (!mounted || _currentMinutes != minutes) return;
+    _offerSuggestion(oldMinutes, minutes, savedSkills);
   }
+
+  /// Mời áp dụng gợi ý của quỹ thời gian mới khi nó khác kỹ năng đã lưu. Không bao giờ tự ghi `skills`.
+  void _offerSuggestion(int? oldMinutes, int minutes, List<String> saved) {
+    final table = ref.read(studyDefaultsProvider).valueOrNull?.bySkills;
+    if (table == null) return;
+    final result = reconcileSuggestion(
+      currentSkills: saved.toSet(),
+      oldMinutes: oldMinutes,
+      newMinutes: minutes,
+      table: table,
+      availableSkills: _selectableSkills,
+    );
+    final suggestion = result.filled ? result.skills : result.invite;
+    if (suggestion == null || suggestion.isEmpty) return;
+    final same =
+        suggestion.length == saved.length &&
+        suggestion.toSet().containsAll(saved);
+    if (same) return;
+    setState(() {
+      _invite = suggestion;
+      _inviteMinutes = minutes;
+    });
+  }
+
+  void _applyInvite() {
+    final l10n = AppLocalizations.of(context);
+    final repo = ref.read(planAdjustmentRepositoryProvider);
+    final skills = _invite;
+    if (skills == null) return;
+    setState(() {
+      _invite = null;
+      _inviteMinutes = null;
+    });
+    _run(
+      () => repo.update(ProfileChange(skills: skills)),
+      l10n.planAdjustSkillsSaved,
+    );
+  }
+
+  void _keepSkills() => setState(() {
+    _invite = null;
+    _inviteMinutes = null;
+  });
 
   /// Bật/tắt một kỹ năng (US2.4): chỉ đổi phạm vi kế hoạch kế tiếp, không mất tiến độ hay lịch ôn. Server tự
   /// bỏ ưu tiên nếu kỹ năng đó đang được ưu tiên; UI hiển thị ưu tiên theo kỹ năng còn chọn.
@@ -243,6 +318,7 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
       for (final s in _selectableSkills)
         if (s == skill ? enabled : _selectedSkills.contains(s)) s,
     ];
+    _keepSkills();
     return _run(
       () => repo.update(ProfileChange(skills: next)),
       l10n.planAdjustSkillsSaved,
@@ -310,6 +386,8 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    // Tải sẵn bảng gợi ý để mời kỹ năng mới sau khi đổi quỹ thời gian; lỗi tải thì không mời.
+    ref.watch(studyDefaultsProvider);
     final theme = Theme.of(context);
     final locale = Localizations.localeOf(context).toString();
     final paused = _profile.paused ?? false;
@@ -441,6 +519,16 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
                     ),
                 ],
               ),
+              if (_invite != null && _inviteMinutes != null) ...<Widget>[
+                const SizedBox(height: 12),
+                SuggestionInviteCard(
+                  minutes: _inviteMinutes!,
+                  skills: _invite!,
+                  enabled: !_busy,
+                  onApply: _applyInvite,
+                  onKeep: _keepSkills,
+                ),
+              ],
             ],
           ),
           _Section(
@@ -455,11 +543,17 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
                   for (final skill in _selectableSkills)
                     FilterChip(
                       key: Key('skill-toggle-$skill'),
+                      avatar: _practiceSkills.contains(skill) && _practiceLocked
+                          ? const Icon(Icons.lock_outline, size: 16)
+                          : null,
                       label: Text(skillLabel(l10n, skill)),
                       selected: selectedSkills.contains(skill),
-                      // Luôn giữ ít nhất một kỹ năng được chọn.
+                      // Luôn giữ ít nhất một kỹ năng được chọn; luyện đọc/viết bị khóa khi chưa đủ thời gian
+                      // (lựa chọn đã lưu vẫn hiển thị, không bị xóa).
                       onSelected:
                           _busy ||
+                              (_practiceSkills.contains(skill) &&
+                                  _practiceLocked) ||
                               (selectedSkills.contains(skill) &&
                                   selectedSkills.length == 1)
                           ? null
@@ -472,6 +566,19 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
                 l10n.planAdjustSkillsKeepOne,
                 style: theme.textTheme.bodySmall,
               ),
+              if (_practiceLocked) ...<Widget>[
+                const SizedBox(height: 4),
+                Text(
+                  l10n.practiceLockedReason(_practiceMin),
+                  key: const Key('practice-locked-reason'),
+                  style: theme.textTheme.bodySmall,
+                ),
+                Text(
+                  l10n.practiceLockedHint,
+                  key: const Key('practice-locked-hint'),
+                  style: theme.textTheme.bodySmall,
+                ),
+              ],
             ],
           ),
           _Section(
@@ -492,7 +599,9 @@ class _AdjustFormState extends ConsumerState<_AdjustForm> {
                         : (_) => _setPriority(null),
                   ),
                   for (final skill in _selectableSkills.where(
-                    selectedSkills.contains,
+                    (s) =>
+                        selectedSkills.contains(s) &&
+                        !(_practiceSkills.contains(s) && _practiceLocked),
                   ))
                     ChoiceChip(
                       key: Key('priority-$skill'),

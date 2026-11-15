@@ -1,0 +1,555 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-time-scope",
+  "title": {
+    "vi": "Thời gian và đối tượng (2): 〜たびに, 〜とたん, 〜際に, 〜において, 〜に関して",
+    "en": "Time and subject (2): 〜たびに, 〜とたん, 〜際に, 〜において, 〜に関して"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜たびに",
+      "meaning": {
+        "vi": "Mỗi lần ~",
+        "en": "Every time ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ の + たびに. Mỗi lần hành động xảy ra thì kết quả lặp lại (thường là cảm xúc hoặc việc thường lệ). Vế sau không dùng ý chí đơn lẻ.",
+        "en": "Usage: verb dictionary form / noun の + たびに. Each time the action occurs the same result recurs (often a feeling or routine). The second clause is not a one-off volition."
+      },
+      "examples": [
+        {
+          "ja": "この写真を見るたびに、昔を思い出します。",
+          "reading": "このしゃしんをみるたびに、むかしをおもいだします。",
+          "translation": {
+            "vi": "Mỗi lần nhìn tấm ảnh này tôi lại nhớ chuyện xưa.",
+            "en": "Every time I see this photo, I remember the past."
+          }
+        },
+        {
+          "ja": "旅行のたびに、写真をたくさん撮ります。",
+          "reading": "りょこうのたびに、しゃしんをたくさんとります。",
+          "translation": {
+            "vi": "Mỗi lần đi du lịch tôi lại chụp rất nhiều ảnh.",
+            "en": "On every trip I take lots of photos."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-052"
+    },
+    {
+      "japanese": "〜とたん（に）",
+      "meaning": {
+        "vi": "Ngay khi ~",
+        "en": "The moment that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể た + とたん(に). Ngay sau hành động A thì xảy ra B ngoài dự đoán. Cả hai vế là sự việc đã xảy ra (quá khứ); vế sau không dùng ý chí, mệnh lệnh.",
+        "en": "Usage: verb た-form + とたん(に). Immediately after A, an unexpected B happens. Both clauses are past events; the second cannot be volition or command."
+      },
+      "examples": [
+        {
+          "ja": "ドアを開けたとたん、猫が飛び出しました。",
+          "reading": "どあをあけたとたん、ねこがとびだしました。",
+          "translation": {
+            "vi": "Ngay khi tôi mở cửa, con mèo lao ra ngoài.",
+            "en": "The moment I opened the door, the cat darted out."
+          }
+        },
+        {
+          "ja": "椅子に座ったとたん、足が痛くなりました。",
+          "reading": "いすにすわったとたん、あしがいたくなりました。",
+          "translation": {
+            "vi": "Vừa ngồi xuống ghế là chân bắt đầu đau.",
+            "en": "The moment I sat down, my leg began to hurt."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-053"
+    },
+    {
+      "japanese": "〜際に",
+      "meaning": {
+        "vi": "Khi ~, vào lúc ~",
+        "en": "At the time of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển/た, danh từ の + 際に (さいに). Cách nói trang trọng của 「とき」, dùng trong thông báo, văn bản hành chính. Dạng lịch sự: 〜の際は.",
+        "en": "Usage: verb dictionary/た-form, noun の + 際に (さいに). A formal equivalent of 「とき」 used in notices and official documents. Polite form: 〜の際は."
+      },
+      "examples": [
+        {
+          "ja": "お帰りの際は、忘れ物にご注意ください。",
+          "reading": "おかえりのさいは、わすれものにごちゅういください。",
+          "translation": {
+            "vi": "Khi ra về, xin quý khách chú ý đồ để quên.",
+            "en": "When you leave, please watch for items left behind."
+          }
+        },
+        {
+          "ja": "ビザを申請する際に、パスポートが必要です。",
+          "reading": "びざをしんせいするさいに、ぱすぽーとがひつようです。",
+          "translation": {
+            "vi": "Khi xin visa cần có hộ chiếu.",
+            "en": "A passport is required when applying for a visa."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-054"
+    },
+    {
+      "japanese": "〜において",
+      "meaning": {
+        "vi": "Tại ~, trong ~ (nơi chốn/lĩnh vực)",
+        "en": "In ~, at ~ (place, field)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + において + động từ; danh từ + における + danh từ. Cách nói trang trọng của 「で」 (địa điểm, thời điểm, lĩnh vực) trong văn viết, diễn văn, thông báo.",
+        "en": "Usage: noun + において + verb; noun + における + noun. A formal equivalent of 「で」 (place, time, field) in writing, speeches and notices."
+      },
+      "examples": [
+        {
+          "ja": "この大会は、東京において開かれます。",
+          "reading": "このたいかいは、とうきょうにおいてひらかれます。",
+          "translation": {
+            "vi": "Đại hội này sẽ được tổ chức tại Tokyo.",
+            "en": "This convention will be held in Tokyo."
+          }
+        },
+        {
+          "ja": "日本の経済において、中小企業は重要です。",
+          "reading": "にほんのけいざいにおいて、ちゅうしょうきぎょうはじゅうようです。",
+          "translation": {
+            "vi": "Trong nền kinh tế Nhật Bản, doanh nghiệp vừa và nhỏ rất quan trọng.",
+            "en": "In Japan's economy, small and medium-sized businesses are important."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-055"
+    },
+    {
+      "japanese": "〜に関して／〜について",
+      "meaning": {
+        "vi": "Về ~",
+        "en": "Regarding ~, about ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ + に関して / について + động từ (質問する, 調べる, 話す…); danh từ + に関する + danh từ. 〜に関して trang trọng hơn 〜について, hay dùng trong văn bản, báo cáo, nghiên cứu.",
+        "en": "Usage: noun + に関して / について + verb (質問する, 調べる, 話す…); noun + に関する + noun. 〜に関して is more formal than 〜について, common in documents, reports and research."
+      },
+      "examples": [
+        {
+          "ja": "新しい制度に関して、質問があります。",
+          "reading": "あたらしいせいどにかんして、しつもんがあります。",
+          "translation": {
+            "vi": "Tôi có câu hỏi về chế độ mới.",
+            "en": "I have a question regarding the new system."
+          }
+        },
+        {
+          "ja": "日本の歴史について、調べています。",
+          "reading": "にほんのれきしについて、しらべています。",
+          "translation": {
+            "vi": "Tôi đang tìm hiểu về lịch sử Nhật Bản.",
+            "en": "I am researching Japanese history."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-056"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜たびに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの写真を見る（　）、昔を思い出します。",
+        "en": "Choose the correct option for the blank:\nこの写真を見る（　）、昔を思い出します。"
+      },
+      "payload": {
+        "choices": [
+          "うちに",
+          "たびに",
+          "最中に",
+          "あいだ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lặp lại mỗi lần: 「見るたびに」.",
+        "en": "Correct! A recurring result each time: 「見るたびに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lặp lại mỗi lần: 「見るたびに」.",
+        "en": "Not quite. A recurring result each time: 「見るたびに」."
+      }
+    },
+    {
+      "item": "〜たびに",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n旅行の___、写真をたくさん撮ります。",
+        "en": "Choose the correct option for the blank:\n旅行の___、写真をたくさん撮ります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "たびに"
+        ],
+        "hint": "〜たびに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + の + たびに: 「旅行のたびに」.",
+        "en": "Correct! Noun + の + たびに: 「旅行のたびに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + の + たびに: 「旅行のたびに」.",
+        "en": "Not quite. Noun + の + たびに: 「旅行のたびに」."
+      }
+    },
+    {
+      "item": "〜たびに",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "会うたびに、彼は同じ話をします。",
+          "会うたびに、同じ話をしてください。",
+          "会うたびに、同じ話をしましょう。",
+          "会うたびを、彼は同じ話をします。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「たびに」 là việc lặp lại thường lệ; không dùng nhờ vả hay rủ rê.",
+        "en": "Correct! After 「たびに」 comes a recurring habit; no requests or invitations."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「たびに」 là việc lặp lại thường lệ; không dùng nhờ vả hay rủ rê.",
+        "en": "Not quite. After 「たびに」 comes a recurring habit; no requests or invitations."
+      }
+    },
+    {
+      "item": "〜とたん（に）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nドアを開け（　）とたん、猫が飛び出しました。",
+        "en": "Choose the correct option for the blank:\nドアを開け（　）とたん、猫が飛び出しました。"
+      },
+      "payload": {
+        "choices": [
+          "る",
+          "て",
+          "ない",
+          "た"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とたん」 đi với thể た: 「開けたとたん」.",
+        "en": "Correct! 「とたん」 follows the た-form: 「開けたとたん」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「とたん」 đi với thể た: 「開けたとたん」.",
+        "en": "Not quite. 「とたん」 follows the た-form: 「開けたとたん」."
+      }
+    },
+    {
+      "item": "〜とたん（に）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n椅子に座った___、足が痛くなりました。",
+        "en": "Choose the correct option for the blank:\n椅子に座った___、足が痛くなりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "とたん"
+        ],
+        "hint": "〜とたん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ngay khi vừa ngồi: 「座ったとたん」.",
+        "en": "Correct! The instant I sat: 「座ったとたん」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ngay khi vừa ngồi: 「座ったとたん」.",
+        "en": "Not quite. The instant I sat: 「座ったとたん」."
+      }
+    },
+    {
+      "item": "〜とたん（に）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n家を出た（　）、雨が降り出しました。",
+        "en": "Choose the pattern that best fits the context:\n家を出た（　）、雨が降り出しました。"
+      },
+      "payload": {
+        "choices": [
+          "たびに",
+          "うちに",
+          "とたん",
+          "あいだ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ngay khi ra khỏi nhà thì mưa bắt đầu rơi (ngoài dự đoán): 「出たとたん」.",
+        "en": "Correct! Rain started the instant I left home (unexpected): 「出たとたん」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ngay khi ra khỏi nhà thì mưa bắt đầu rơi (ngoài dự đoán): 「出たとたん」.",
+        "en": "Not quite. Rain started the instant I left home (unexpected): 「出たとたん」."
+      }
+    },
+    {
+      "item": "〜際に",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお帰りの（　）は、忘れ物にご注意ください。",
+        "en": "Choose the correct option for the blank:\nお帰りの（　）は、忘れ物にご注意ください。"
+      },
+      "payload": {
+        "choices": [
+          "うち",
+          "際",
+          "あいだ",
+          "たび"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cách nói trang trọng của 「とき」: 「お帰りの際は」.",
+        "en": "Correct! The formal equivalent of 「とき」: 「お帰りの際は」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách nói trang trọng của 「とき」: 「お帰りの際は」.",
+        "en": "Not quite. The formal equivalent of 「とき」: 「お帰りの際は」."
+      }
+    },
+    {
+      "item": "〜際に",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nビザを申請する___、パスポートが必要です。",
+        "en": "Choose the correct option for the blank:\nビザを申請する___、パスポートが必要です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "際に",
+          "さいに"
+        ],
+        "hint": "さいに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khi làm thủ tục: 「申請する際に」.",
+        "en": "Correct! When applying: 「申請する際に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khi làm thủ tục: 「申請する際に」.",
+        "en": "Not quite. When applying: 「申請する際に」."
+      }
+    },
+    {
+      "item": "〜において",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの大会は、東京（　）開かれます。",
+        "en": "Choose the correct option for the blank:\nこの大会は、東京（　）開かれます。"
+      },
+      "payload": {
+        "choices": [
+          "において",
+          "について",
+          "にとって",
+          "に対して"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Địa điểm tổ chức sự kiện trang trọng: 「東京において」.",
+        "en": "Correct! The venue of a formal event: 「東京において」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Địa điểm tổ chức sự kiện trang trọng: 「東京において」.",
+        "en": "Not quite. The venue of a formal event: 「東京において」."
+      }
+    },
+    {
+      "item": "〜において",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n日本の経済___、中小企業は重要です。",
+        "en": "Choose the correct option for the blank:\n日本の経済___、中小企業は重要です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "において"
+        ],
+        "hint": "〜において"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trong lĩnh vực (kinh tế): 「経済において」.",
+        "en": "Correct! In the field of (economy): 「経済において」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trong lĩnh vực (kinh tế): 「経済において」.",
+        "en": "Not quite. In the field of (economy): 「経済において」."
+      }
+    },
+    {
+      "item": "〜に関して／〜について",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n新しい制度（　）、質問があります。",
+        "en": "Choose the correct option for the blank:\n新しい制度（　）、質問があります。"
+      },
+      "payload": {
+        "choices": [
+          "において",
+          "にとって",
+          "に比べて",
+          "に関して"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ đề của câu hỏi: 「制度に関して」.",
+        "en": "Correct! The topic of the question: 「制度に関して」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ đề của câu hỏi: 「制度に関して」.",
+        "en": "Not quite. The topic of the question: 「制度に関して」."
+      }
+    },
+    {
+      "item": "〜に関して／〜について",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "日本の歴史にとって、調べています。",
+          "日本の歴史において、調べています。",
+          "日本の歴史について、調べています。",
+          "日本の歴史によって、調べています。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Điều tra \"về\" một chủ đề dùng 「について」.",
+        "en": "Correct! Researching \"about\" a topic uses 「について」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Điều tra \"về\" một chủ đề dùng 「について」.",
+        "en": "Not quite. Researching \"about\" a topic uses 「について」."
+      }
+    },
+    {
+      "item": "〜際に",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nビザを　＿　＿　★　＿　。\n（申請する／際に／パスポートが／必要です）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nビザを　＿　＿　★　＿　。\n（申請する／際に／パスポートが／必要です）"
+      },
+      "payload": {
+        "choices": [
+          "申請する",
+          "パスポートが",
+          "際に",
+          "必要です"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「ビザを申請する際に、パスポートが必要です。」; ô ★ (thứ ba) là 「パスポートが」.",
+        "en": "Correct! The correct sentence is 「ビザを申請する際に、パスポートが必要です。」; the ★ (third) slot is 「パスポートが」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「ビザを申請する際に、パスポートが必要です。」; ô ★ (thứ ba) là 「パスポートが」.",
+        "en": "Not quite. The correct sentence is 「ビザを申請する際に、パスポートが必要です。」; the ★ (third) slot is 「パスポートが」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜たびに",
+            {
+              "vi": "Mỗi lần ~",
+              "en": "Every time ~"
+            }
+          ],
+          [
+            "〜とたん（に）",
+            {
+              "vi": "Ngay khi ~",
+              "en": "The moment that ~"
+            }
+          ],
+          [
+            "〜際に",
+            {
+              "vi": "Khi ~, vào lúc ~",
+              "en": "At the time of ~"
+            }
+          ],
+          [
+            "〜において",
+            {
+              "vi": "Tại ~, trong ~ (nơi chốn/lĩnh vực)",
+              "en": "In ~, at ~ (place, field)"
+            }
+          ],
+          [
+            "〜に関して／〜について",
+            {
+              "vi": "Về ~",
+              "en": "Regarding ~, about ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

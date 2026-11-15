@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-communication",
+  "title": {
+    "vi": "Kanji giao tiếp – diễn đạt (伝 由 否)",
+    "en": "Communication and expression kanji (伝 由 否)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "伝",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "truyền; truyền đạt",
+        "en": "convey; transmit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "デン"
+        ],
+        "kunReadings": [
+          "つた.える",
+          "つた.わる",
+          "つた.う"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "伝言",
+          "reading": "でんごん",
+          "kanjiReading": "デン",
+          "translation": {
+            "vi": "lời nhắn",
+            "en": "message"
+          }
+        },
+        {
+          "ja": "伝える",
+          "reading": "つたえる",
+          "kanjiReading": "つた",
+          "translation": {
+            "vi": "truyền đạt",
+            "en": "to convey"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "由",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "lý do; xuất phát",
+        "en": "reason; origin"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ユウ",
+          "ユ",
+          "ユイ"
+        ],
+        "kunReadings": [
+          "よし"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "自由",
+          "reading": "じゆう",
+          "kanjiReading": "ユウ",
+          "translation": {
+            "vi": "tự do",
+            "en": "freedom"
+          }
+        },
+        {
+          "ja": "理由",
+          "reading": "りゆう",
+          "kanjiReading": "ユ",
+          "translation": {
+            "vi": "lý do",
+            "en": "reason"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "否",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "không; phủ nhận",
+        "en": "no; deny"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "いな"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "否定",
+          "reading": "ひてい",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "phủ định",
+            "en": "denial"
+          }
+        },
+        {
+          "ja": "拒否",
+          "reading": "きょひ",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "từ chối",
+            "en": "refusal"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "伝",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「伝」nghĩa là gì?",
+        "en": "What does 「伝」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "truyền; truyền đạt",
+            "en": "convey; transmit"
+          },
+          {
+            "vi": "lý do; xuất phát",
+            "en": "reason; origin"
+          },
+          {
+            "vi": "không; phủ nhận",
+            "en": "no; deny"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 伝 nghĩa là truyền; truyền đạt.",
+        "en": "Correct! 伝 means convey; transmit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 伝 nghĩa là truyền; truyền đạt, như trong 「伝言」 (lời nhắn).",
+        "en": "Not quite. 伝 means convey; transmit, as in 「伝言」 (message)."
+      }
+    },
+    {
+      "item": "伝",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「伝」 trong 「伝言」 (“lời nhắn”).",
+        "en": "Type the reading of 「伝」 in 「伝言」 (“message”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "でん",
+          "デン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 伝言, 伝 đọc là でん (âm On).",
+        "en": "Correct! In 伝言, 伝 is read でん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 伝言 (lời nhắn), 伝 đọc là でん (âm On).",
+        "en": "In 伝言 (message), 伝 is read でん (on'yomi)."
+      }
+    },
+    {
+      "item": "伝",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「伝える」(truyền đạt) đọc là gì?",
+        "en": "How is 「伝える」 (to convey) read?"
+      },
+      "payload": {
+        "choices": [
+          "でんえる",
+          "つたえる",
+          "じゆう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 伝える = つたえる (truyền đạt); 伝 đọc là つた (âm Kun).",
+        "en": "Correct! 伝える = つたえる (to convey); 伝 is read つた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "伝える đọc là つたえる (truyền đạt): 伝 mang âm Kun つた.",
+        "en": "伝える is read つたえる (to convey): 伝 takes the kun'yomi つた."
+      }
+    },
+    {
+      "item": "由",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「由」nghĩa là gì?",
+        "en": "What does 「由」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "không; phủ nhận",
+            "en": "no; deny"
+          },
+          {
+            "vi": "lý do; xuất phát",
+            "en": "reason; origin"
+          },
+          {
+            "vi": "truyền; truyền đạt",
+            "en": "convey; transmit"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 由 nghĩa là lý do; xuất phát.",
+        "en": "Correct! 由 means reason; origin."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 由 nghĩa là lý do; xuất phát, như trong 「自由」 (tự do).",
+        "en": "Not quite. 由 means reason; origin, as in 「自由」 (freedom)."
+      }
+    },
+    {
+      "item": "由",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「由」 trong 「自由」 (“tự do”).",
+        "en": "Type the reading of 「由」 in 「自由」 (“freedom”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゆう",
+          "ユウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 自由, 由 đọc là ゆう (âm On).",
+        "en": "Correct! In 自由, 由 is read ゆう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 自由 (tự do), 由 đọc là ゆう (âm On).",
+        "en": "In 自由 (freedom), 由 is read ゆう (on'yomi)."
+      }
+    },
+    {
+      "item": "由",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「理由」(lý do) đọc là gì?",
+        "en": "How is 「理由」 (reason) read?"
+      },
+      "payload": {
+        "choices": [
+          "りよしう",
+          "りゆうう",
+          "りゆう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 理由 = りゆう (lý do); 由 đọc là ゆ (âm On).",
+        "en": "Correct! 理由 = りゆう (reason); 由 is read ゆ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "理由 đọc là りゆう (lý do): 由 mang âm On ゆ.",
+        "en": "理由 is read りゆう (reason): 由 takes the on'yomi ゆ."
+      }
+    },
+    {
+      "item": "否",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「否」nghĩa là gì?",
+        "en": "What does 「否」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "truyền; truyền đạt",
+            "en": "convey; transmit"
+          },
+          {
+            "vi": "lý do; xuất phát",
+            "en": "reason; origin"
+          },
+          {
+            "vi": "không; phủ nhận",
+            "en": "no; deny"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 否 nghĩa là không; phủ nhận.",
+        "en": "Correct! 否 means no; deny."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 否 nghĩa là không; phủ nhận, như trong 「否定」 (phủ định).",
+        "en": "Not quite. 否 means no; deny, as in 「否定」 (denial)."
+      }
+    },
+    {
+      "item": "否",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「否」 trong 「否定」 (“phủ định”).",
+        "en": "Type the reading of 「否」 in 「否定」 (“denial”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 否定, 否 đọc là ひ (âm On).",
+        "en": "Correct! In 否定, 否 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 否定 (phủ định), 否 đọc là ひ (âm On).",
+        "en": "In 否定 (denial), 否 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "否",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「拒否」(từ chối) đọc là gì?",
+        "en": "How is 「拒否」 (refusal) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょひ",
+          "きょいな",
+          "きょび"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 拒否 = きょひ (từ chối); 否 đọc là ひ (âm On).",
+        "en": "Correct! 拒否 = きょひ (refusal); 否 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "拒否 đọc là きょひ (từ chối): 否 mang âm On ひ.",
+        "en": "拒否 is read きょひ (refusal): 否 takes the on'yomi ひ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "伝",
+            {
+              "vi": "truyền; truyền đạt",
+              "en": "convey; transmit"
+            }
+          ],
+          [
+            "由",
+            {
+              "vi": "lý do; xuất phát",
+              "en": "reason; origin"
+            }
+          ],
+          [
+            "否",
+            {
+              "vi": "không; phủ nhận",
+              "en": "no; deny"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

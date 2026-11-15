@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-loanwords",
+  "title": {
+    "vi": "Khảo sát và văn phòng",
+    "en": "Surveys and the office"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3360,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "アンケート",
+      "reading": "アンケート",
+      "meaning": {
+        "vi": "Khảo sát",
+        "en": "Questionnaire; survey"
+      },
+      "examples": [
+        {
+          "ja": "お客様に、アンケートをお願いしています。",
+          "reading": "おきゃくさまに、アンケートをおねがいしています。",
+          "translation": {
+            "vi": "Chúng tôi nhờ quý khách điền khảo sát.",
+            "en": "We are asking customers to fill out a questionnaire."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "シーズン",
+      "reading": "シーズン",
+      "meaning": {
+        "vi": "Mùa; mùa cao điểm",
+        "en": "Season (peak)"
+      },
+      "examples": [
+        {
+          "ja": "今は、スキーのシーズンです。",
+          "reading": "いまは、スキーのシーズンです。",
+          "translation": {
+            "vi": "Bây giờ là mùa trượt tuyết.",
+            "en": "It is the ski season now."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ロボット",
+      "reading": "ロボット",
+      "meaning": {
+        "vi": "Người máy",
+        "en": "Robot"
+      },
+      "examples": [
+        {
+          "ja": "工場で、ロボットが働いています。",
+          "reading": "こうじょうで、ロボットがはたらいています。",
+          "translation": {
+            "vi": "Ở nhà máy, người máy đang làm việc.",
+            "en": "Robots are working in the factory."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "マイナス",
+      "reading": "マイナス",
+      "meaning": {
+        "vi": "Âm; điểm trừ",
+        "en": "Minus; negative"
+      },
+      "examples": [
+        {
+          "ja": "今朝の気温は、マイナス五度でした。",
+          "reading": "けさのきおんは、マイナスごどでした。",
+          "translation": {
+            "vi": "Nhiệt độ sáng nay là âm năm độ.",
+            "en": "This morning's temperature was minus five degrees."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "プラス",
+      "reading": "プラス",
+      "meaning": {
+        "vi": "Dương; điểm cộng",
+        "en": "Plus; positive"
+      },
+      "examples": [
+        {
+          "ja": "この経験は、将来にプラスになります。",
+          "reading": "このけいけんは、しょうらいにプラスになります。",
+          "translation": {
+            "vi": "Kinh nghiệm này sẽ có lợi cho tương lai.",
+            "en": "This experience will be a plus for the future."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "オフィス",
+      "reading": "オフィス",
+      "meaning": {
+        "vi": "Văn phòng",
+        "en": "Office"
+      },
+      "examples": [
+        {
+          "ja": "駅の近くに、新しいオフィスを借りました。",
+          "reading": "えきのちかくに、あたらしいオフィスをかりました。",
+          "translation": {
+            "vi": "Tôi đã thuê văn phòng mới gần nhà ga.",
+            "en": "I rented a new office near the station."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "アンケート",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お客様に、（　）をお願いしています。 — Nghĩa của câu: “Chúng tôi nhờ quý khách điền khảo sát.”",
+        "en": "Choose the word that fits the blank: お客様に、（　）をお願いしています。 — Meaning of the sentence: “We are asking customers to fill out a questionnaire.”"
+      },
+      "payload": {
+        "choices": [
+          "ロボット",
+          "シーズン",
+          "プラス",
+          "アンケート"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「アンケート」(Khảo sát) hợp nghĩa câu này: “Chúng tôi nhờ quý khách điền khảo sát.”",
+        "en": "Correct! 「アンケート」(Questionnaire; survey) fits this sentence: “We are asking customers to fill out a questionnaire.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi nhờ quý khách điền khảo sát.”, nên cần 「アンケート」(Khảo sát); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We are asking customers to fill out a questionnaire.”, so it needs 「アンケート」(Questionnaire; survey); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "シーズン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今は、スキーの（　）です。 — Nghĩa của câu: “Bây giờ là mùa trượt tuyết.”",
+        "en": "Choose the word that fits the blank: 今は、スキーの（　）です。 — Meaning of the sentence: “It is the ski season now.”"
+      },
+      "payload": {
+        "choices": [
+          "シーズン",
+          "オフィス",
+          "アンケート",
+          "マイナス"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「シーズン」(Mùa; mùa cao điểm) hợp nghĩa câu này: “Bây giờ là mùa trượt tuyết.”",
+        "en": "Correct! 「シーズン」(Season (peak)) fits this sentence: “It is the ski season now.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bây giờ là mùa trượt tuyết.”, nên cần 「シーズン」(Mùa; mùa cao điểm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is the ski season now.”, so it needs 「シーズン」(Season (peak)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ロボット",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工場で、（　）が働いています。 — Nghĩa của câu: “Ở nhà máy, người máy đang làm việc.”",
+        "en": "Choose the word that fits the blank: 工場で、（　）が働いています。 — Meaning of the sentence: “Robots are working in the factory.”"
+      },
+      "payload": {
+        "choices": [
+          "オフィス",
+          "ロボット",
+          "アンケート",
+          "プラス"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ロボット」(Người máy) hợp nghĩa câu này: “Ở nhà máy, người máy đang làm việc.”",
+        "en": "Correct! 「ロボット」(Robot) fits this sentence: “Robots are working in the factory.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở nhà máy, người máy đang làm việc.”, nên cần 「ロボット」(Người máy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Robots are working in the factory.”, so it needs 「ロボット」(Robot); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "マイナス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今朝の気温は、（　）五度でした。 — Nghĩa của câu: “Nhiệt độ sáng nay là âm năm độ.”",
+        "en": "Choose the word that fits the blank: 今朝の気温は、（　）五度でした。 — Meaning of the sentence: “This morning's temperature was minus five degrees.”"
+      },
+      "payload": {
+        "choices": [
+          "オフィス",
+          "アンケート",
+          "マイナス",
+          "ロボット"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「マイナス」(Âm; điểm trừ) hợp nghĩa câu này: “Nhiệt độ sáng nay là âm năm độ.”",
+        "en": "Correct! 「マイナス」(Minus; negative) fits this sentence: “This morning's temperature was minus five degrees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhiệt độ sáng nay là âm năm độ.”, nên cần 「マイナス」(Âm; điểm trừ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This morning's temperature was minus five degrees.”, so it needs 「マイナス」(Minus; negative); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "プラス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この経験は、将来に（　）になります。 — Nghĩa của câu: “Kinh nghiệm này sẽ có lợi cho tương lai.”",
+        "en": "Choose the word that fits the blank: この経験は、将来に（　）になります。 — Meaning of the sentence: “This experience will be a plus for the future.”"
+      },
+      "payload": {
+        "choices": [
+          "マイナス",
+          "アンケート",
+          "シーズン",
+          "プラス"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プラス」(Dương; điểm cộng) hợp nghĩa câu này: “Kinh nghiệm này sẽ có lợi cho tương lai.”",
+        "en": "Correct! 「プラス」(Plus; positive) fits this sentence: “This experience will be a plus for the future.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kinh nghiệm này sẽ có lợi cho tương lai.”, nên cần 「プラス」(Dương; điểm cộng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This experience will be a plus for the future.”, so it needs 「プラス」(Plus; positive); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "オフィス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅の近くに、新しい（　）を借りました。 — Nghĩa của câu: “Tôi đã thuê văn phòng mới gần nhà ga.”",
+        "en": "Choose the word that fits the blank: 駅の近くに、新しい（　）を借りました。 — Meaning of the sentence: “I rented a new office near the station.”"
+      },
+      "payload": {
+        "choices": [
+          "オフィス",
+          "マイナス",
+          "アンケート",
+          "シーズン"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「オフィス」(Văn phòng) hợp nghĩa câu này: “Tôi đã thuê văn phòng mới gần nhà ga.”",
+        "en": "Correct! 「オフィス」(Office) fits this sentence: “I rented a new office near the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã thuê văn phòng mới gần nhà ga.”, nên cần 「オフィス」(Văn phòng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I rented a new office near the station.”, so it needs 「オフィス」(Office); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "アンケート",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: お客様に、「あんけーと」をお願いしています。",
+        "en": "Choose the correct katakana spelling of the word in 「」: お客様に、「あんけーと」をお願いしています。"
+      },
+      "payload": {
+        "choices": [
+          "アソケート",
+          "アンケート",
+          "アーンケート",
+          "アンケト"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「あんけーと」 viết là 「アンケート」, nghĩa là Khảo sát.",
+        "en": "Correct! 「あんけーと」 is written 「アンケート」 and means Questionnaire; survey."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「アンケート」 (Khảo sát); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「アンケート」 (Questionnaire; survey); the other spellings are incorrect."
+      }
+    },
+    {
+      "item": "マイナス",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: 今朝の気温は、「まいなす」五度でした。",
+        "en": "Choose the correct katakana spelling of the word in 「」: 今朝の気温は、「まいなす」五度でした。"
+      },
+      "payload": {
+        "choices": [
+          "マーイナス",
+          "マイーナス",
+          "マイナス",
+          "マイナース"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「まいなす」 viết là 「マイナス」, nghĩa là Âm; điểm trừ.",
+        "en": "Correct! 「まいなす」 is written 「マイナス」 and means Minus; negative."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「マイナス」 (Âm; điểm trừ); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「マイナス」 (Minus; negative); the other spellings are incorrect."
+      }
+    }
+  ]
+}

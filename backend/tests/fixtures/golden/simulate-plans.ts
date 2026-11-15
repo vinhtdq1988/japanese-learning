@@ -19,7 +19,11 @@ import {
   type RankableUnit,
   type UnitProgressStatus,
 } from '../../../src/engine/path.js';
-import { DEFAULT_CONTENT_DIR, type PlacementFile } from '../../../src/seed/content.js';
+import {
+  DEFAULT_CONTENT_DIR,
+  resolveReleaseSelection,
+  type PlacementFile,
+} from '../../../src/seed/content.js';
 import type { LearnerProfileFixture } from '../learner-profiles/index.js';
 
 // Mô phỏng kế hoạch nhiều ngày cho một hồ sơ đại diện (T001, T040, SC-006).
@@ -66,12 +70,33 @@ const placementFile = JSON.parse(
   readFileSync(path.join(DEFAULT_CONTENT_DIR, 'placement/placement-v1.json'), 'utf8'),
 ) as PlacementFile;
 
-/** Nạp danh mục đơn vị từ `content/units/*.json` (loại đơn vị Kanji nếu `includeKanji = false`). */
+/**
+ * Tên file đơn vị thuộc các đợt được chọn (spec 008, D7): mặc định theo `CONTENT_RELEASES` như `loadContent`
+ * nên golden luôn chạy trên thư viện cơ sở 33 đơn vị dù `content/units/` có thêm đơn vị của đợt mới.
+ */
+function selectedUnitFiles(): Set<string> {
+  const selection = resolveReleaseSelection();
+  const dir = path.join(DEFAULT_CONTENT_DIR, 'releases');
+  const files = new Set<string>();
+  for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+    const release = JSON.parse(readFileSync(path.join(dir, f), 'utf8')) as {
+      id: string;
+      units: { file: string }[];
+    };
+    if (selection === 'all' || selection.includes(release.id)) {
+      for (const u of release.units) files.add(u.file);
+    }
+  }
+  return files;
+}
+
+/** Nạp danh mục đơn vị từ `content/units/*.json` của các đợt được chọn (loại Kanji nếu `includeKanji = false`). */
 export function loadSimCatalog(includeKanji: boolean): SimUnit[] {
   const dir = path.join(DEFAULT_CONTENT_DIR, 'units');
   const units: SimUnit[] = [];
+  const selected = selectedUnitFiles();
   for (const file of readdirSync(dir)
-    .filter((f) => f.endsWith('.json'))
+    .filter((f) => f.endsWith('.json') && selected.has(f))
     .sort()) {
     const raw = JSON.parse(readFileSync(path.join(dir, file), 'utf8')) as {
       kind: string;
@@ -124,6 +149,21 @@ function placementOf(f: LearnerProfileFixture) {
   };
 }
 
+/** Tham số lộ trình của một hồ sơ đại diện (dùng chung cho mô phỏng kế hoạch và ảnh chụp lộ trình/tiến độ). */
+export function simPathParams(f: LearnerProfileFixture) {
+  return buildPathParams(
+    {
+      currentLevel: f.profile.currentLevel,
+      goalType: f.profile.goalType,
+      targetLevel: f.profile.targetLevel,
+      targetDate: f.profile.targetDate,
+      skills: f.profile.skills,
+      prioritizedSkill: f.profile.prioritizedSkill,
+    },
+    placementOf(f),
+  );
+}
+
 export interface SimulateOptions {
   catalog: readonly SimUnit[];
   transform?: CandidateTransform;
@@ -137,17 +177,7 @@ export interface SimulateOptions {
  */
 export function simulatePlans(f: LearnerProfileFixture, options: SimulateOptions): SimHistory {
   const { catalog, transform, days = SIMULATION_DAYS } = options;
-  const params = buildPathParams(
-    {
-      currentLevel: f.profile.currentLevel,
-      goalType: f.profile.goalType,
-      targetLevel: f.profile.targetLevel,
-      targetDate: f.profile.targetDate,
-      skills: f.profile.skills,
-      prioritizedSkill: f.profile.prioritizedSkill,
-    },
-    placementOf(f),
-  );
+  const params = simPathParams(f);
   const unitsById = new Map(catalog.map((u) => [u.id, u]));
   const progress = new Map<string, UnitProgressStatus>(
     (f.completedUnitSlugs ?? []).map((slug) => [slug, 'completed' as const]),

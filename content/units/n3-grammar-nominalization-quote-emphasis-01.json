@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-nominalization-quote-emphasis",
+  "title": {
+    "vi": "Danh từ hóa và gọi tên: 〜こと/〜の và 〜という",
+    "en": "Nominalization and naming: 〜こと/〜の and 〜という"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜こと／〜の（名詞化）",
+      "meaning": {
+        "vi": "Danh từ hóa động từ",
+        "en": "Nominalizer こと / の"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể thường + こと / の → danh từ. 「こと」 dùng cho điều trừu tượng, mục tiêu, sở thích, quy định (趣味は、読むことです). 「の」 dùng cho điều tri giác trực tiếp (見る, 聞く, 手伝う: 歌うのを聞く) và trong văn nói. Không thay thế nhau hoàn toàn.",
+        "en": "Usage: plain form + こと / の turns a verb into a noun. 「こと」 is for abstract matters, goals, hobbies and rules (趣味は、読むことです). 「の」 is for directly perceived things (見る, 聞く, 手伝う: 歌うのを聞く) and in speech. They are not fully interchangeable."
+      },
+      "examples": [
+        {
+          "ja": "私の趣味は、写真を撮ることです。",
+          "reading": "わたしのしゅみは、しゃしんをとることです。",
+          "translation": {
+            "vi": "Sở thích của tôi là chụp ảnh.",
+            "en": "My hobby is taking photographs."
+          }
+        },
+        {
+          "ja": "彼が走るのを見ました。",
+          "reading": "かれがはしるのをみました。",
+          "translation": {
+            "vi": "Tôi đã nhìn thấy anh ấy chạy.",
+            "en": "I saw him running."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-088"
+    },
+    {
+      "japanese": "〜という",
+      "meaning": {
+        "vi": "Gọi là ~; rằng ~",
+        "en": "Called ~; the ~ that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: (1) danh từ + という + danh từ: tên gọi (「寿司」という料理); (2) thể thường + という + danh từ: nội dung (雨が降るという予報). Giúp giải thích một từ/nội dung đứng trước danh từ.",
+        "en": "Usage: (1) noun + という + noun: a name (「寿司」という料理); (2) plain form + という + noun: content (雨が降るという予報). Explains a word or content that modifies a noun."
+      },
+      "examples": [
+        {
+          "ja": "これは、「寿司」という料理です。",
+          "reading": "これは、「すし」というりょうりです。",
+          "translation": {
+            "vi": "Đây là món ăn gọi là \"sushi\".",
+            "en": "This is a dish called \"sushi\"."
+          }
+        },
+        {
+          "ja": "明日、雨が降るという予報です。",
+          "reading": "あした、あめがふるというよほうです。",
+          "translation": {
+            "vi": "Dự báo rằng ngày mai sẽ có mưa.",
+            "en": "The forecast says that it will rain tomorrow."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-089"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜こと／〜の（名詞化）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私の趣味は、写真を撮る（　）です。",
+        "en": "Choose the correct option for the blank:\n私の趣味は、写真を撮る（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "こと",
+          "の",
+          "ところ",
+          "もの"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sở thích (điều trừu tượng) dùng 「こと」 làm vị ngữ: 「撮ることです」 (không dùng 「の」 làm vị ngữ).",
+        "en": "Correct! A hobby (an abstract matter) uses 「こと」 as the predicate: 「撮ることです」 (「の」 cannot be the predicate)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sở thích (điều trừu tượng) dùng 「こと」 làm vị ngữ: 「撮ることです」 (không dùng 「の」 làm vị ngữ).",
+        "en": "Not quite. A hobby (an abstract matter) uses 「こと」 as the predicate: 「撮ることです」 (「の」 cannot be the predicate)."
+      }
+    },
+    {
+      "item": "〜こと／〜の（名詞化）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼が走る___を見ました。",
+        "en": "Choose the correct option for the blank:\n彼が走る___を見ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "の"
+        ],
+        "hint": "の"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thấy trực tiếp (見る) dùng 「の」: 「走るのを見ました」.",
+        "en": "Correct! Direct perception (見る) uses 「の」: 「走るのを見ました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thấy trực tiếp (見る) dùng 「の」: 「走るのを見ました」.",
+        "en": "Not quite. Direct perception (見る) uses 「の」: 「走るのを見ました」."
+      }
+    },
+    {
+      "item": "〜こと／〜の（名詞化）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n日本語を勉強する（　）は、楽しいです。",
+        "en": "Choose the pattern that best fits the context:\n日本語を勉強する（　）は、楽しいです。"
+      },
+      "payload": {
+        "choices": [
+          "ところ",
+          "もの",
+          "わけ",
+          "の"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ hóa làm chủ ngữ: 「勉強するのは」 (hoặc 「勉強することは」).",
+        "en": "Correct! Nominalizing as the subject: 「勉強するのは」 (or 「勉強することは」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ hóa làm chủ ngữ: 「勉強するのは」 (hoặc 「勉強することは」).",
+        "en": "Not quite. Nominalizing as the subject: 「勉強するのは」 (or 「勉強することは」)."
+      }
+    },
+    {
+      "item": "〜こと／〜の（名詞化）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "泳ぐがこと好きです。",
+          "泳いだことを好きです。",
+          "泳ぐことが好きです。",
+          "泳ぐことが好きですこと。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ thể từ điển + 「こと」 + 「が好きです」.",
+        "en": "Correct! Verb dictionary form + 「こと」 + 「が好きです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ thể từ điển + 「こと」 + 「が好きです」.",
+        "en": "Not quite. Verb dictionary form + 「こと」 + 「が好きです」."
+      }
+    },
+    {
+      "item": "〜という",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこれは、「寿司」（　）料理です。",
+        "en": "Choose the correct option for the blank:\nこれは、「寿司」（　）料理です。"
+      },
+      "payload": {
+        "choices": [
+          "との",
+          "という",
+          "ような",
+          "ほど"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tên gọi: 「「寿司」という料理」.",
+        "en": "Correct! A name: 「「寿司」という料理」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tên gọi: 「「寿司」という料理」.",
+        "en": "Not quite. A name: 「「寿司」という料理」."
+      }
+    },
+    {
+      "item": "〜という",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日、雨が降る___予報です。",
+        "en": "Choose the correct option for the blank:\n明日、雨が降る___予報です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "という"
+        ],
+        "hint": "〜という"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nội dung dự báo: 「降るという予報」.",
+        "en": "Correct! The content of the forecast: 「降るという予報」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nội dung dự báo: 「降るという予報」.",
+        "en": "Not quite. The content of the forecast: 「降るという予報」."
+      }
+    },
+    {
+      "item": "〜という",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n「サンクスギビング」（　）祝日を知っていますか。",
+        "en": "Choose the pattern that best fits the context:\n「サンクスギビング」（　）祝日を知っていますか。"
+      },
+      "payload": {
+        "choices": [
+          "という",
+          "とか",
+          "みたいな",
+          "とは"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Giới thiệu tên của một ngày lễ trước danh từ: 「という」.",
+        "en": "Correct! Introducing the name of a holiday before the noun: 「という」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Giới thiệu tên của một ngày lễ trước danh từ: 「という」.",
+        "en": "Not quite. Introducing the name of a holiday before the noun: 「という」."
+      }
+    },
+    {
+      "item": "〜という",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "田中さんというの人から電話がありました。",
+          "田中さんと言うな人から電話がありました。",
+          "田中さんといって人から電話がありました。",
+          "田中さんという人から電話がありました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「N + という + 人」: 「田中さんという人」.",
+        "en": "Correct! 「N + という + 人」: 「田中さんという人」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「N + という + 人」: 「田中さんという人」.",
+        "en": "Not quite. 「N + という + 人」: 「田中さんという人」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜こと／〜の（名詞化）",
+            {
+              "vi": "Danh từ hóa động từ",
+              "en": "Nominalizer こと / の"
+            }
+          ],
+          [
+            "〜という",
+            {
+              "vi": "Gọi là ~; rằng ~",
+              "en": "Called ~; the ~ that ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

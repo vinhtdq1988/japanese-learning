@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (歯 眼 指)",
+    "en": "Body and feelings kanji (歯 眼 指)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "歯",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "răng",
+        "en": "tooth"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "は"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "歯科",
+          "reading": "しか",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "nha khoa",
+            "en": "dentistry"
+          }
+        },
+        {
+          "ja": "歯",
+          "reading": "は",
+          "kanjiReading": "は",
+          "translation": {
+            "vi": "cái răng",
+            "en": "tooth"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "眼",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "mắt; nhãn",
+        "en": "eye"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガン",
+          "ゲン"
+        ],
+        "kunReadings": [
+          "まなこ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "眼科",
+          "reading": "がんか",
+          "kanjiReading": "ガン",
+          "translation": {
+            "vi": "khoa mắt",
+            "en": "ophthalmology"
+          }
+        },
+        {
+          "ja": "肉眼",
+          "reading": "にくがん",
+          "kanjiReading": "ガン",
+          "translation": {
+            "vi": "mắt thường",
+            "en": "naked eye"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "指",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "ngón tay; chỉ",
+        "en": "finger; point"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "ゆび",
+          "さ.す"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "指導",
+          "reading": "しどう",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "hướng dẫn",
+            "en": "guidance"
+          }
+        },
+        {
+          "ja": "指",
+          "reading": "ゆび",
+          "kanjiReading": "ゆび",
+          "translation": {
+            "vi": "ngón tay",
+            "en": "finger"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "歯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歯」nghĩa là gì?",
+        "en": "What does 「歯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "răng",
+            "en": "tooth"
+          },
+          {
+            "vi": "mắt; nhãn",
+            "en": "eye"
+          },
+          {
+            "vi": "ngón tay; chỉ",
+            "en": "finger; point"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歯 nghĩa là răng.",
+        "en": "Correct! 歯 means tooth."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 歯 nghĩa là răng, như trong 「歯科」 (nha khoa).",
+        "en": "Not quite. 歯 means tooth, as in 「歯科」 (dentistry)."
+      }
+    },
+    {
+      "item": "歯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「歯」 trong 「歯科」 (“nha khoa”).",
+        "en": "Type the reading of 「歯」 in 「歯科」 (“dentistry”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歯科, 歯 đọc là し (âm On).",
+        "en": "Correct! In 歯科, 歯 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歯科 (nha khoa), 歯 đọc là し (âm On).",
+        "en": "In 歯科 (dentistry), 歯 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "歯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歯」(cái răng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「歯」 (tooth; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "し",
+          "は",
+          "ゆび"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歯 = は (cái răng); 歯 đọc là は (âm Kun).",
+        "en": "Correct! 歯 = は (tooth); 歯 is read は (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "歯 đọc là は (cái răng): 歯 mang âm Kun は.",
+        "en": "歯 is read は (tooth): 歯 takes the kun'yomi は."
+      }
+    },
+    {
+      "item": "眼",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「眼」nghĩa là gì?",
+        "en": "What does 「眼」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngón tay; chỉ",
+            "en": "finger; point"
+          },
+          {
+            "vi": "mắt; nhãn",
+            "en": "eye"
+          },
+          {
+            "vi": "răng",
+            "en": "tooth"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 眼 nghĩa là mắt; nhãn.",
+        "en": "Correct! 眼 means eye."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 眼 nghĩa là mắt; nhãn, như trong 「眼科」 (khoa mắt).",
+        "en": "Not quite. 眼 means eye, as in 「眼科」 (ophthalmology)."
+      }
+    },
+    {
+      "item": "眼",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「眼」 trong 「眼科」 (“khoa mắt”).",
+        "en": "Type the reading of 「眼」 in 「眼科」 (“ophthalmology”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がん",
+          "ガン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 眼科, 眼 đọc là がん (âm On).",
+        "en": "Correct! In 眼科, 眼 is read がん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 眼科 (khoa mắt), 眼 đọc là がん (âm On).",
+        "en": "In 眼科 (ophthalmology), 眼 is read がん (on'yomi)."
+      }
+    },
+    {
+      "item": "眼",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「肉眼」(mắt thường) đọc là gì?",
+        "en": "How is 「肉眼」 (naked eye) read?"
+      },
+      "payload": {
+        "choices": [
+          "にくまなこ",
+          "にくかん",
+          "にくがん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 肉眼 = にくがん (mắt thường); 眼 đọc là がん (âm On).",
+        "en": "Correct! 肉眼 = にくがん (naked eye); 眼 is read がん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "肉眼 đọc là にくがん (mắt thường): 眼 mang âm On がん.",
+        "en": "肉眼 is read にくがん (naked eye): 眼 takes the on'yomi がん."
+      }
+    },
+    {
+      "item": "指",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「指」nghĩa là gì?",
+        "en": "What does 「指」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "răng",
+            "en": "tooth"
+          },
+          {
+            "vi": "mắt; nhãn",
+            "en": "eye"
+          },
+          {
+            "vi": "ngón tay; chỉ",
+            "en": "finger; point"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 指 nghĩa là ngón tay; chỉ.",
+        "en": "Correct! 指 means finger; point."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 指 nghĩa là ngón tay; chỉ, như trong 「指導」 (hướng dẫn).",
+        "en": "Not quite. 指 means finger; point, as in 「指導」 (guidance)."
+      }
+    },
+    {
+      "item": "指",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「指」 trong 「指導」 (“hướng dẫn”).",
+        "en": "Type the reading of 「指」 in 「指導」 (“guidance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 指導, 指 đọc là し (âm On).",
+        "en": "Correct! In 指導, 指 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 指導 (hướng dẫn), 指 đọc là し (âm On).",
+        "en": "In 指導 (guidance), 指 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "指",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「指」(ngón tay; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「指」 (finger; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ゆび",
+          "し",
+          "しか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 指 = ゆび (ngón tay); 指 đọc là ゆび (âm Kun).",
+        "en": "Correct! 指 = ゆび (finger); 指 is read ゆび (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "指 đọc là ゆび (ngón tay): 指 mang âm Kun ゆび.",
+        "en": "指 is read ゆび (finger): 指 takes the kun'yomi ゆび."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "歯",
+            {
+              "vi": "răng",
+              "en": "tooth"
+            }
+          ],
+          [
+            "眼",
+            {
+              "vi": "mắt; nhãn",
+              "en": "eye"
+            }
+          ],
+          [
+            "指",
+            {
+              "vi": "ngón tay; chỉ",
+              "en": "finger; point"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

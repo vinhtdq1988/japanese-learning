@@ -1,0 +1,584 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-giving-receiving",
+  "title": {
+    "vi": "Cho – nhận (1): あげる, くれる, もらう và 〜てあげる, 〜てくれる",
+    "en": "Giving and receiving (1): あげる, くれる, もらう and their て-forms"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "あげる／やる",
+      "meaning": {
+        "vi": "Cho (ai đó)",
+        "en": "Give (to someone)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: người cho là mình hoặc người thuộc phía mình, nói về việc cho người khác. Kết hợp: A は B に N をあげる. 「やる」 dùng khi người nhận là người dưới, trẻ nhỏ, động vật hoặc cây cối. Không dùng あげる khi người nhận là bản thân người nói (khi đó dùng くれる).",
+        "en": "Meaning: the giver is the speaker or someone on the speaker's side giving to another person. Form: A は B に N をあげる. 「やる」 is used when the recipient is a subordinate, child, animal or plant. あげる is not used when the recipient is the speaker (use くれる)."
+      },
+      "examples": [
+        {
+          "ja": "私は友だちに誕生日プレゼントをあげました。",
+          "reading": "わたしはともだちにたんじょうびプレゼントをあげました。",
+          "translation": {
+            "vi": "Tôi đã tặng quà sinh nhật cho bạn.",
+            "en": "I gave my friend a birthday present."
+          }
+        },
+        {
+          "ja": "毎朝、犬にえさをやります。",
+          "reading": "まいあさ、いぬにえさをやります。",
+          "translation": {
+            "vi": "Mỗi sáng tôi cho chó ăn.",
+            "en": "Every morning I feed the dog."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-036"
+    },
+    {
+      "japanese": "くれる",
+      "meaning": {
+        "vi": "Cho (tôi / người phía tôi)",
+        "en": "Give (to me / to my side)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: người khác cho tôi hoặc người thuộc phía tôi. Kết hợp: A が (私に) N をくれる; người nhận là người nói. Khác あげる: あげる đi từ mình ra ngoài, còn くれる đi từ ngoài vào phía mình.",
+        "en": "Meaning: someone gives something to me or to someone on my side. Form: A が (私に) N をくれる; the recipient is the speaker. Compared with あげる, which goes outward from me, くれる comes inward toward me."
+      },
+      "examples": [
+        {
+          "ja": "友だちが私にきれいな花をくれました。",
+          "reading": "ともだちがわたしにきれいなはなをくれました。",
+          "translation": {
+            "vi": "Bạn đã tặng tôi một bó hoa đẹp.",
+            "en": "My friend gave me beautiful flowers."
+          }
+        },
+        {
+          "ja": "先生は私に辞書をくれました。",
+          "reading": "せんせいはわたしにじしょをくれました。",
+          "translation": {
+            "vi": "Thầy giáo đã cho tôi một cuốn từ điển.",
+            "en": "My teacher gave me a dictionary."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-037"
+    },
+    {
+      "japanese": "もらう",
+      "meaning": {
+        "vi": "Nhận",
+        "en": "Receive"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: mình nhận được thứ gì từ ai đó. Kết hợp: A は B に/から N をもらう; chủ ngữ là người nhận. Cùng một sự việc có thể nói bằng くれる (chủ ngữ là người cho) hoặc もらう (chủ ngữ là người nhận).",
+        "en": "Meaning: I receive something from someone. Form: A は B に/から N をもらう; the subject is the receiver. The same event can be said with くれる (giver as subject) or もらう (receiver as subject)."
+      },
+      "examples": [
+        {
+          "ja": "誕生日に、友だちから時計をもらいました。",
+          "reading": "たんじょうびに、ともだちからとけいをもらいました。",
+          "translation": {
+            "vi": "Vào sinh nhật, tôi nhận được chiếc đồng hồ từ bạn.",
+            "en": "I received a watch from my friend on my birthday."
+          }
+        },
+        {
+          "ja": "兄にカメラをもらいました。",
+          "reading": "あににカメラをもらいました。",
+          "translation": {
+            "vi": "Tôi đã được anh trai cho một chiếc máy ảnh.",
+            "en": "I got a camera from my older brother."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-038"
+    },
+    {
+      "japanese": "〜てあげる",
+      "meaning": {
+        "vi": "Làm ~ cho (ai đó)",
+        "en": "Do ~ for someone"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: mình làm một việc có ích cho người khác. Kết hợp: động từ thể て + あげる; người được làm là B (B に). Với người trên, nói 〜てあげる dễ nghe như ban ơn, nên dùng cách khiêm nhường khác.",
+        "en": "Meaning: I do something beneficial for someone else. Form: verb て-form + あげる; the beneficiary is B (B に). Toward a superior, 〜てあげる can sound like granting a favor, so a humbler form is used instead."
+      },
+      "examples": [
+        {
+          "ja": "友だちに日本語を教えてあげました。",
+          "reading": "ともだちににほんごをおしえてあげました。",
+          "translation": {
+            "vi": "Tôi đã dạy tiếng Nhật cho bạn.",
+            "en": "I taught my friend Japanese."
+          }
+        },
+        {
+          "ja": "子どもに本を読んであげます。",
+          "reading": "こどもにほんをよんであげます。",
+          "translation": {
+            "vi": "Tôi đọc sách cho con nghe.",
+            "en": "I read a book to my child."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-042"
+    },
+    {
+      "japanese": "〜てくれる",
+      "meaning": {
+        "vi": "(Ai đó) làm ~ cho tôi",
+        "en": "Someone does ~ for me"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: người khác làm việc có ích cho tôi hoặc người phía tôi, thường kèm lòng biết ơn. Kết hợp: A が + động từ thể て + くれる. Chủ ngữ là người làm.",
+        "en": "Meaning: someone does something beneficial for me or my side, often with gratitude. Form: A が + verb て-form + くれる. The subject is the person who acts."
+      },
+      "examples": [
+        {
+          "ja": "友だちが空港まで迎えに来てくれました。",
+          "reading": "ともだちがくうこうまでむかえにきてくれました。",
+          "translation": {
+            "vi": "Bạn đã đến đón tôi tận sân bay.",
+            "en": "My friend came to pick me up at the airport."
+          }
+        },
+        {
+          "ja": "先生が作文を直してくれました。",
+          "reading": "せんせいがさくぶんをなおしてくれました。",
+          "translation": {
+            "vi": "Thầy giáo đã sửa bài văn giúp tôi.",
+            "en": "My teacher corrected my essay for me."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-043"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "あげる／やる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は友だちに花を（　）。\n（Tôi tặng hoa cho bạn.）",
+        "en": "Choose the correct option for the blank:\n私は友だちに花を（　）。\n(I am giving my friend flowers.)"
+      },
+      "payload": {
+        "choices": [
+          "あげました",
+          "くれました",
+          "もらいました",
+          "いただきました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mình cho người khác (友だちに) thì dùng 「あげました」; 「くれました」 là người khác cho mình.",
+        "en": "Correct! When I give to someone else (友だちに), use 「あげました」; 「くれました」 is when someone gives to me."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mình cho người khác (友だちに) thì dùng 「あげました」; 「くれました」 là người khác cho mình.",
+        "en": "Not quite. When I give to someone else (友だちに), use 「あげました」; 「くれました」 is when someone gives to me."
+      }
+    },
+    {
+      "item": "あげる／やる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n毎朝、犬にえさを___ます。",
+        "en": "Choose the correct option for the blank:\n毎朝、犬にえさを___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "やり",
+          "あげ"
+        ],
+        "hint": "やる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người nhận là động vật nên dùng 「やる」: 「やります」, gốc ます là 「やり」. 「あげる」 (gốc 「あげ」) cũng được chấp nhận vì nói thường ngày hiện nay hay dùng 「あげる」 cho cả vật nuôi.",
+        "en": "Correct! The recipient is an animal, so 「やる」 is used: 「やります」, with the stem 「やり」. 「あげる」 (stem 「あげ」) is also accepted, since everyday speech now often uses 「あげる」 for pets too."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người nhận là động vật nên dùng 「やる」: 「やります」, gốc ます là 「やり」. 「あげる」 (gốc 「あげ」) cũng được chấp nhận vì nói thường ngày hiện nay hay dùng 「あげる」 cho cả vật nuôi.",
+        "en": "Not quite. The recipient is an animal, so 「やる」 is used: 「やります」, with the stem 「やり」. 「あげる」 (stem 「あげ」) is also accepted, since everyday speech now often uses 「あげる」 for pets too."
+      }
+    },
+    {
+      "item": "あげる／やる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n友だちが私に本を（　）。",
+        "en": "Choose the pattern that best fits the context:\n友だちが私に本を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "あげました",
+          "やりました",
+          "もらいました",
+          "くれました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ là bạn và người nhận là 「私に」 nên dùng 「くれました」; あげる dùng khi mình là người cho.",
+        "en": "Correct! The subject is the friend and the recipient is 「私に」, so 「くれました」 is used; あげる is for when I am the giver."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ là bạn và người nhận là 「私に」 nên dùng 「くれました」; あげる dùng khi mình là người cho.",
+        "en": "Not quite. The subject is the friend and the recipient is 「私に」, so 「くれました」 is used; あげる is for when I am the giver."
+      }
+    },
+    {
+      "item": "くれる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生は私に辞書を（　）。",
+        "en": "Choose the correct option for the blank:\n先生は私に辞書を（　）。"
+      },
+      "payload": {
+        "choices": [
+          "あげました",
+          "もらいました",
+          "くれました",
+          "やりました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người nhận là 「私に」 nên dùng 「くれました」.",
+        "en": "Correct! The recipient is 「私に」, so 「くれました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người nhận là 「私に」 nên dùng 「くれました」.",
+        "en": "Not quite. The recipient is 「私に」, so 「くれました」 is used."
+      }
+    },
+    {
+      "item": "くれる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私が友だちにお土産をくれました。",
+          "友だちが私にお土産をくれました。",
+          "友だちが私にお土産をもらいました。",
+          "私は友だちにお土産をくれました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! くれる có người cho làm chủ ngữ và người nhận là phía mình; 「私が友だちに〜くれる」 hay 「〜もらいました」 với chủ ngữ là người cho đều sai.",
+        "en": "Correct! くれる takes the giver as subject and a recipient on my side; 「私が友だちに〜くれる」 or 「〜もらいました」 with the giver as subject is wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. くれる có người cho làm chủ ngữ và người nhận là phía mình; 「私が友だちに〜くれる」 hay 「〜もらいました」 với chủ ngữ là người cho đều sai.",
+        "en": "Not quite. くれる takes the giver as subject and a recipient on my side; 「私が友だちに〜くれる」 or 「〜もらいました」 with the giver as subject is wrong."
+      }
+    },
+    {
+      "item": "もらう",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n誕生日に、友だち（　）時計をもらいました。",
+        "en": "Choose the correct option for the blank:\n誕生日に、友だち（　）時計をもらいました。"
+      },
+      "payload": {
+        "choices": [
+          "から",
+          "を",
+          "が",
+          "へ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nguồn nhận được đánh dấu bằng 「から」 (hoặc 「に」): 「友だちから」.",
+        "en": "Correct! The source of what is received is marked with 「から」 (or 「に」): 「友だちから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nguồn nhận được đánh dấu bằng 「から」 (hoặc 「に」): 「友だちから」.",
+        "en": "Not quite. The source of what is received is marked with 「から」 (or 「に」): 「友だちから」."
+      }
+    },
+    {
+      "item": "もらう",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n兄が私にカメラをくれました。＝私は兄にカメラを（　）。",
+        "en": "Choose the pattern that best fits the context:\n兄が私にカメラをくれました。＝私は兄にカメラを（　）。"
+      },
+      "payload": {
+        "choices": [
+          "くれました",
+          "あげました",
+          "やりました",
+          "もらいました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nói cùng sự việc từ phía người nhận (私は兄に) thì dùng 「もらいました」.",
+        "en": "Correct! Describing the same event from the receiver's side (私は兄に) uses 「もらいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nói cùng sự việc từ phía người nhận (私は兄に) thì dùng 「もらいました」.",
+        "en": "Not quite. Describing the same event from the receiver's side (私は兄に) uses 「もらいました」."
+      }
+    },
+    {
+      "item": "もらう",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は兄にカメラを___ました。",
+        "en": "Choose the correct option for the blank:\n私は兄にカメラを___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "もらい"
+        ],
+        "hint": "もらう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ 「私は」 là người nhận nên dùng 「もらう」: 「もらいました」.",
+        "en": "Correct! The subject 「私は」 is the receiver, so 「もらう」 is used: 「もらいました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ 「私は」 là người nhận nên dùng 「もらう」: 「もらいました」.",
+        "en": "Not quite. The subject 「私は」 is the receiver, so 「もらう」 is used: 「もらいました」."
+      }
+    },
+    {
+      "item": "〜てあげる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n友だちに日本語を教え（　）。\n（Người dạy là tôi.）",
+        "en": "Choose the correct option for the blank:\n友だちに日本語を教え（　）。\n(I am the one teaching.)"
+      },
+      "payload": {
+        "choices": [
+          "てくれました",
+          "てもらいました",
+          "てあげました",
+          "ていただきました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mình làm việc có ích cho bạn (友だちに) thì dùng 「〜てあげました」.",
+        "en": "Correct! I do something useful for my friend (友だちに), so 「〜てあげました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mình làm việc có ích cho bạn (友だちに) thì dùng 「〜てあげました」.",
+        "en": "Not quite. I do something useful for my friend (友だちに), so 「〜てあげました」 is used."
+      }
+    },
+    {
+      "item": "〜てあげる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n友だちが私に日本語を教え（　）。",
+        "en": "Choose the pattern that best fits the context:\n友だちが私に日本語を教え（　）。"
+      },
+      "payload": {
+        "choices": [
+          "てあげました",
+          "てくれました",
+          "てやりました",
+          "てもらいました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ là bạn và người được giúp là 「私に」 nên dùng 「〜てくれました」.",
+        "en": "Correct! The subject is the friend and the beneficiary is 「私に」, so 「〜てくれました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ là bạn và người được giúp là 「私に」 nên dùng 「〜てくれました」.",
+        "en": "Not quite. The subject is the friend and the beneficiary is 「私に」, so 「〜てくれました」 is used."
+      }
+    },
+    {
+      "item": "〜てあげる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は子どもに本を読んであげます。",
+          "私は子どもに本を読んでくれます。",
+          "私は子どもが本を読んであげます。",
+          "私は子どもに本を読んでいただきます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てあげる」 có chủ ngữ là người làm (私は) và người nhận là 「子どもに」; 「いただく」 là cách nói khiêm nhường, không dùng với trẻ em.",
+        "en": "Correct! 「〜てあげる」 has the doer (私は) as subject and 「子どもに」 as the recipient; 「いただく」 is humble and not used toward a child."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てあげる」 có chủ ngữ là người làm (私は) và người nhận là 「子どもに」; 「いただく」 là cách nói khiêm nhường, không dùng với trẻ em.",
+        "en": "Not quite. 「〜てあげる」 has the doer (私は) as subject and 「子どもに」 as the recipient; 「いただく」 is humble and not used toward a child."
+      }
+    },
+    {
+      "item": "〜てくれる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n友だちが空港まで迎えに来て（　）。",
+        "en": "Choose the correct option for the blank:\n友だちが空港まで迎えに来て（　）。"
+      },
+      "payload": {
+        "choices": [
+          "あげました",
+          "もらいました",
+          "やりました",
+          "くれました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn làm việc có ích cho tôi nên dùng 「〜てくれました」.",
+        "en": "Correct! The friend did something useful for me, so 「〜てくれました」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bạn làm việc có ích cho tôi nên dùng 「〜てくれました」.",
+        "en": "Not quite. The friend did something useful for me, so 「〜てくれました」 is used."
+      }
+    },
+    {
+      "item": "〜てくれる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生が作文を直し___ました。",
+        "en": "Choose the correct option for the blank:\n先生が作文を直し___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "てくれ"
+        ],
+        "hint": "〜てくれる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thầy làm giúp tôi: 「直してくれました」; chỗ trống là 「てくれ」.",
+        "en": "Correct! The teacher did it for me: 「直してくれました」; the blank is 「てくれ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thầy làm giúp tôi: 「直してくれました」; chỗ trống là 「てくれ」.",
+        "en": "Not quite. The teacher did it for me: 「直してくれました」; the blank is 「てくれ」."
+      }
+    },
+    {
+      "item": "〜てくれる",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n友だちが　＿　＿　★　＿　。\n（私に／荷物を／持って／くれました）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n友だちが　＿　＿　★　＿　。\n（私に／荷物を／持って／くれました）"
+      },
+      "payload": {
+        "choices": [
+          "私に",
+          "荷物を",
+          "持って",
+          "くれました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「友だちが私に荷物を持ってくれました。」; ô ★ (thứ ba) là 「持って」.",
+        "en": "Correct! The correct sentence is 「友だちが私に荷物を持ってくれました。」; the ★ (third) slot is 「持って」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「友だちが私に荷物を持ってくれました。」; ô ★ (thứ ba) là 「持って」.",
+        "en": "Not quite. The correct sentence is 「友だちが私に荷物を持ってくれました。」; the ★ (third) slot is 「持って」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "あげる／やる",
+            {
+              "vi": "Cho (ai đó)",
+              "en": "Give (to someone)"
+            }
+          ],
+          [
+            "くれる",
+            {
+              "vi": "Cho (tôi / người phía tôi)",
+              "en": "Give (to me / to my side)"
+            }
+          ],
+          [
+            "もらう",
+            {
+              "vi": "Nhận",
+              "en": "Receive"
+            }
+          ],
+          [
+            "〜てあげる",
+            {
+              "vi": "Làm ~ cho (ai đó)",
+              "en": "Do ~ for someone"
+            }
+          ],
+          [
+            "〜てくれる",
+            {
+              "vi": "(Ai đó) làm ~ cho tôi",
+              "en": "Someone does ~ for me"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-society-politics",
+  "title": {
+    "vi": "Kanji xã hội – chính trị (位 関 対)",
+    "en": "Society and politics kanji (位 関 対)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "位",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "ngôi; thứ hạng; vị trí",
+        "en": "rank; position"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イ"
+        ],
+        "kunReadings": [
+          "くらい"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "地位",
+          "reading": "ちい",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "địa vị",
+            "en": "status"
+          }
+        },
+        {
+          "ja": "一位",
+          "reading": "いちい",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "hạng nhất",
+            "en": "first place"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "関",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "liên quan; cửa ải",
+        "en": "relation; barrier"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [
+          "せき"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "関心",
+          "reading": "かんしん",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "quan tâm",
+            "en": "interest"
+          }
+        },
+        {
+          "ja": "関係",
+          "reading": "かんけい",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "quan hệ",
+            "en": "relationship"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "対",
+      "topic": "kanji-n3-society-politics",
+      "meaning": {
+        "vi": "đối; đối với",
+        "en": "versus; toward"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タイ",
+          "ツイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "対応",
+          "reading": "たいおう",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "ứng phó",
+            "en": "response"
+          }
+        },
+        {
+          "ja": "反対",
+          "reading": "はんたい",
+          "kanjiReading": "タイ",
+          "translation": {
+            "vi": "phản đối",
+            "en": "opposition"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "位",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「位」nghĩa là gì?",
+        "en": "What does 「位」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngôi; thứ hạng; vị trí",
+            "en": "rank; position"
+          },
+          {
+            "vi": "liên quan; cửa ải",
+            "en": "relation; barrier"
+          },
+          {
+            "vi": "đối; đối với",
+            "en": "versus; toward"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 位 nghĩa là ngôi; thứ hạng; vị trí.",
+        "en": "Correct! 位 means rank; position."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 位 nghĩa là ngôi; thứ hạng; vị trí, như trong 「地位」 (địa vị).",
+        "en": "Not quite. 位 means rank; position, as in 「地位」 (status)."
+      }
+    },
+    {
+      "item": "位",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「位」 trong 「地位」 (“địa vị”).",
+        "en": "Type the reading of 「位」 in 「地位」 (“status”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "い",
+          "イ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 地位, 位 đọc là い (âm On).",
+        "en": "Correct! In 地位, 位 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 地位 (địa vị), 位 đọc là い (âm On).",
+        "en": "In 地位 (status), 位 is read い (on'yomi)."
+      }
+    },
+    {
+      "item": "位",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「一位」(hạng nhất) đọc là gì?",
+        "en": "How is 「一位」 (first place) read?"
+      },
+      "payload": {
+        "choices": [
+          "いちくらい",
+          "いちい",
+          "いちせき"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 一位 = いちい (hạng nhất); 位 đọc là い (âm On).",
+        "en": "Correct! 一位 = いちい (first place); 位 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "一位 đọc là いちい (hạng nhất): 位 mang âm On い.",
+        "en": "一位 is read いちい (first place): 位 takes the on'yomi い."
+      }
+    },
+    {
+      "item": "関",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「関」nghĩa là gì?",
+        "en": "What does 「関」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đối; đối với",
+            "en": "versus; toward"
+          },
+          {
+            "vi": "liên quan; cửa ải",
+            "en": "relation; barrier"
+          },
+          {
+            "vi": "ngôi; thứ hạng; vị trí",
+            "en": "rank; position"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 関 nghĩa là liên quan; cửa ải.",
+        "en": "Correct! 関 means relation; barrier."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 関 nghĩa là liên quan; cửa ải, như trong 「関心」 (quan tâm).",
+        "en": "Not quite. 関 means relation; barrier, as in 「関心」 (interest)."
+      }
+    },
+    {
+      "item": "関",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「関」 trong 「関心」 (“quan tâm”).",
+        "en": "Type the reading of 「関」 in 「関心」 (“interest”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 関心, 関 đọc là かん (âm On).",
+        "en": "Correct! In 関心, 関 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 関心 (quan tâm), 関 đọc là かん (âm On).",
+        "en": "In 関心 (interest), 関 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "関",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「関係」(quan hệ) đọc là gì?",
+        "en": "How is 「関係」 (relationship) read?"
+      },
+      "payload": {
+        "choices": [
+          "せきけい",
+          "がんけい",
+          "かんけい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 関係 = かんけい (quan hệ); 関 đọc là かん (âm On).",
+        "en": "Correct! 関係 = かんけい (relationship); 関 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "関係 đọc là かんけい (quan hệ): 関 mang âm On かん.",
+        "en": "関係 is read かんけい (relationship): 関 takes the on'yomi かん."
+      }
+    },
+    {
+      "item": "対",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「対」nghĩa là gì?",
+        "en": "What does 「対」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngôi; thứ hạng; vị trí",
+            "en": "rank; position"
+          },
+          {
+            "vi": "liên quan; cửa ải",
+            "en": "relation; barrier"
+          },
+          {
+            "vi": "đối; đối với",
+            "en": "versus; toward"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 対 nghĩa là đối; đối với.",
+        "en": "Correct! 対 means versus; toward."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 対 nghĩa là đối; đối với, như trong 「対応」 (ứng phó).",
+        "en": "Not quite. 対 means versus; toward, as in 「対応」 (response)."
+      }
+    },
+    {
+      "item": "対",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「対」 trong 「対応」 (“ứng phó”).",
+        "en": "Type the reading of 「対」 in 「対応」 (“response”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たい",
+          "タイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 対応, 対 đọc là たい (âm On).",
+        "en": "Correct! In 対応, 対 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 対応 (ứng phó), 対 đọc là たい (âm On).",
+        "en": "In 対応 (response), 対 is read たい (on'yomi)."
+      }
+    },
+    {
+      "item": "対",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「反対」(phản đối) đọc là gì?",
+        "en": "How is 「反対」 (opposition) read?"
+      },
+      "payload": {
+        "choices": [
+          "はんたい",
+          "はんつい",
+          "はんだい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 反対 = はんたい (phản đối); 対 đọc là たい (âm On).",
+        "en": "Correct! 反対 = はんたい (opposition); 対 is read たい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "反対 đọc là はんたい (phản đối): 対 mang âm On たい.",
+        "en": "反対 is read はんたい (opposition): 対 takes the on'yomi たい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "位",
+            {
+              "vi": "ngôi; thứ hạng; vị trí",
+              "en": "rank; position"
+            }
+          ],
+          [
+            "関",
+            {
+              "vi": "liên quan; cửa ải",
+              "en": "relation; barrier"
+            }
+          ],
+          [
+            "対",
+            {
+              "vi": "đối; đối với",
+              "en": "versus; toward"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-leisure-sports",
+  "title": {
+    "vi": "Khán giả và giải thưởng",
+    "en": "Spectators and prizes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2460,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "観客",
+      "reading": "かんきゃく",
+      "meaning": {
+        "vi": "Khán giả",
+        "en": "Spectators"
+      },
+      "examples": [
+        {
+          "ja": "スタジアムには、五万人の観客が集まりました。",
+          "reading": "スタジアムには、ごまんにんのかんきゃくがあつまりました。",
+          "translation": {
+            "vi": "Sân vận động có năm vạn khán giả tụ họp.",
+            "en": "Fifty thousand spectators gathered at the stadium."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "拍手",
+      "reading": "はくしゅ",
+      "meaning": {
+        "vi": "Vỗ tay",
+        "en": "Applause"
+      },
+      "examples": [
+        {
+          "ja": "演奏が終わると、大きな拍手が起こりました。",
+          "reading": "えんそうがおわると、おおきなはくしゅがおこりました。",
+          "translation": {
+            "vi": "Khi bản nhạc kết thúc, tiếng vỗ tay vang lên lớn.",
+            "en": "When the performance ended, loud applause broke out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歓声",
+      "reading": "かんせい",
+      "meaning": {
+        "vi": "Tiếng reo hò",
+        "en": "Cheers"
+      },
+      "examples": [
+        {
+          "ja": "ゴールが決まると、会場に歓声が上がりました。",
+          "reading": "ゴールがきまると、かいじょうにかんせいがあがりました。",
+          "translation": {
+            "vi": "Khi bàn thắng được ghi, khán đài vang lên tiếng reo hò.",
+            "en": "When the goal was scored, cheers rose in the venue."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見どころ",
+      "reading": "みどころ",
+      "meaning": {
+        "vi": "Điểm đáng xem",
+        "en": "Highlight; main attraction"
+      },
+      "examples": [
+        {
+          "ja": "この試合の見どころは、最後の十分間です。",
+          "reading": "このしあいのみどころは、さいごのじゅっぷんかんです。",
+          "translation": {
+            "vi": "Điểm đáng xem của trận này là mười phút cuối.",
+            "en": "The highlight of this game is the last ten minutes."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "賞",
+      "reading": "しょう",
+      "meaning": {
+        "vi": "Giải thưởng",
+        "en": "Prize; award"
+      },
+      "examples": [
+        {
+          "ja": "彼の作品は、大きな賞を取りました。",
+          "reading": "かれのさくひんは、おおきなしょうをとりました。",
+          "translation": {
+            "vi": "Tác phẩm của anh ấy đã giành giải thưởng lớn.",
+            "en": "His work won a major prize."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "順位",
+      "reading": "じゅんい",
+      "meaning": {
+        "vi": "Thứ hạng",
+        "en": "Ranking; place"
+      },
+      "examples": [
+        {
+          "ja": "私のチームは、順位が三位でした。",
+          "reading": "わたしのチームは、じゅんいがさんいでした。",
+          "translation": {
+            "vi": "Đội của tôi xếp thứ ba.",
+            "en": "My team came in third place."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "観客",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スタジアムには、五万人の（　）が集まりました。 — Nghĩa của câu: “Sân vận động có năm vạn khán giả tụ họp.”",
+        "en": "Choose the word that fits the blank: スタジアムには、五万人の（　）が集まりました。 — Meaning of the sentence: “Fifty thousand spectators gathered at the stadium.”"
+      },
+      "payload": {
+        "choices": [
+          "観客",
+          "拍手",
+          "歓声",
+          "賞"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「観客」(Khán giả) hợp nghĩa câu này: “Sân vận động có năm vạn khán giả tụ họp.”",
+        "en": "Correct! 「観客」(Spectators) fits this sentence: “Fifty thousand spectators gathered at the stadium.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sân vận động có năm vạn khán giả tụ họp.”, nên cần 「観客」(Khán giả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Fifty thousand spectators gathered at the stadium.”, so it needs 「観客」(Spectators); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "拍手",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 演奏が終わると、大きな（　）が起こりました。 — Nghĩa của câu: “Khi bản nhạc kết thúc, tiếng vỗ tay vang lên lớn.”",
+        "en": "Choose the word that fits the blank: 演奏が終わると、大きな（　）が起こりました。 — Meaning of the sentence: “When the performance ended, loud applause broke out.”"
+      },
+      "payload": {
+        "choices": [
+          "見どころ",
+          "拍手",
+          "観客",
+          "賞"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「拍手」(Vỗ tay) hợp nghĩa câu này: “Khi bản nhạc kết thúc, tiếng vỗ tay vang lên lớn.”",
+        "en": "Correct! 「拍手」(Applause) fits this sentence: “When the performance ended, loud applause broke out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi bản nhạc kết thúc, tiếng vỗ tay vang lên lớn.”, nên cần 「拍手」(Vỗ tay); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When the performance ended, loud applause broke out.”, so it needs 「拍手」(Applause); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "歓声",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ゴールが決まると、会場に（　）が上がりました。 — Nghĩa của câu: “Khi bàn thắng được ghi, khán đài vang lên tiếng reo hò.”",
+        "en": "Choose the word that fits the blank: ゴールが決まると、会場に（　）が上がりました。 — Meaning of the sentence: “When the goal was scored, cheers rose in the venue.”"
+      },
+      "payload": {
+        "choices": [
+          "拍手",
+          "観客",
+          "歓声",
+          "賞"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歓声」(Tiếng reo hò) hợp nghĩa câu này: “Khi bàn thắng được ghi, khán đài vang lên tiếng reo hò.”",
+        "en": "Correct! 「歓声」(Cheers) fits this sentence: “When the goal was scored, cheers rose in the venue.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi bàn thắng được ghi, khán đài vang lên tiếng reo hò.”, nên cần 「歓声」(Tiếng reo hò); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When the goal was scored, cheers rose in the venue.”, so it needs 「歓声」(Cheers); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見どころ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この試合の（　）は、最後の十分間です。 — Nghĩa của câu: “Điểm đáng xem của trận này là mười phút cuối.”",
+        "en": "Choose the word that fits the blank: この試合の（　）は、最後の十分間です。 — Meaning of the sentence: “The highlight of this game is the last ten minutes.”"
+      },
+      "payload": {
+        "choices": [
+          "順位",
+          "観客",
+          "拍手",
+          "見どころ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見どころ」(Điểm đáng xem) hợp nghĩa câu này: “Điểm đáng xem của trận này là mười phút cuối.”",
+        "en": "Correct! 「見どころ」(Highlight; main attraction) fits this sentence: “The highlight of this game is the last ten minutes.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Điểm đáng xem của trận này là mười phút cuối.”, nên cần 「見どころ」(Điểm đáng xem); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The highlight of this game is the last ten minutes.”, so it needs 「見どころ」(Highlight; main attraction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "賞",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼の作品は、大きな（　）を取りました。 — Nghĩa của câu: “Tác phẩm của anh ấy đã giành giải thưởng lớn.”",
+        "en": "Choose the word that fits the blank: 彼の作品は、大きな（　）を取りました。 — Meaning of the sentence: “His work won a major prize.”"
+      },
+      "payload": {
+        "choices": [
+          "賞",
+          "見どころ",
+          "観客",
+          "歓声"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賞」(Giải thưởng) hợp nghĩa câu này: “Tác phẩm của anh ấy đã giành giải thưởng lớn.”",
+        "en": "Correct! 「賞」(Prize; award) fits this sentence: “His work won a major prize.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tác phẩm của anh ấy đã giành giải thưởng lớn.”, nên cần 「賞」(Giải thưởng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “His work won a major prize.”, so it needs 「賞」(Prize; award); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "順位",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私のチームは、（　）が三位でした。 — Nghĩa của câu: “Đội của tôi xếp thứ ba.”",
+        "en": "Choose the word that fits the blank: 私のチームは、（　）が三位でした。 — Meaning of the sentence: “My team came in third place.”"
+      },
+      "payload": {
+        "choices": [
+          "観客",
+          "順位",
+          "拍手",
+          "賞"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「順位」(Thứ hạng) hợp nghĩa câu này: “Đội của tôi xếp thứ ba.”",
+        "en": "Correct! 「順位」(Ranking; place) fits this sentence: “My team came in third place.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đội của tôi xếp thứ ba.”, nên cần 「順位」(Thứ hạng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My team came in third place.”, so it needs 「順位」(Ranking; place); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "観客",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: スタジアムには、五万人の「観客」が集まりました。",
+        "en": "Choose the correct reading of the word in 「」: スタジアムには、五万人の「観客」が集まりました。"
+      },
+      "payload": {
+        "choices": [
+          "かんせい",
+          "かんきゃく",
+          "はくしゅ",
+          "じゅんい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「観客」 đọc là 「かんきゃく」, nghĩa là Khán giả.",
+        "en": "Correct! 「観客」 is read 「かんきゃく」 and means Spectators."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「観客」 đọc là 「かんきゃく」 (Khán giả); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「観客」 is read 「かんきゃく」 (Spectators); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "見どころ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この試合の「見どころ」は、最後の十分間です。",
+        "en": "Choose the correct reading of the word in 「」: この試合の「見どころ」は、最後の十分間です。"
+      },
+      "payload": {
+        "choices": [
+          "しょう",
+          "かんきゃく",
+          "みどころ",
+          "じゅんい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見どころ」 đọc là 「みどころ」, nghĩa là Điểm đáng xem.",
+        "en": "Correct! 「見どころ」 is read 「みどころ」 and means Highlight; main attraction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見どころ」 đọc là 「みどころ」 (Điểm đáng xem); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「見どころ」 is read 「みどころ」 (Highlight; main attraction); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "歓声",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: ゴールが決まると、会場に「かんせい」が上がりました。",
+        "en": "Choose the correct way to write the word in 「」: ゴールが決まると、会場に「かんせい」が上がりました。"
+      },
+      "payload": {
+        "choices": [
+          "順位",
+          "観客",
+          "歓声",
+          "拍手"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かんせい」 viết là 「歓声」, nghĩa là Tiếng reo hò.",
+        "en": "Correct! 「かんせい」 is written 「歓声」 and means Cheers."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かんせい」 viết là 「歓声」 (Tiếng reo hò); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かんせい」 is written 「歓声」 (Cheers); the other words are read differently."
+      }
+    }
+  ]
+}

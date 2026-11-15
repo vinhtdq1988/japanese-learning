@@ -16,7 +16,7 @@ import {
 import { addDays } from '../../src/engine/clock.js';
 
 // Truy vấn báo cáo chỉ số sản phẩm (T119, T084, T129, T076): SC-003, SC-009, SC-011, Kanji SC-001, SC-008, lớp học SC-010
-// và hiệu ứng thưởng SC-006, SC-007 (spec 005)
+// và hiệu ứng thưởng SC-006, SC-007 (spec 005), tỷ lệ bật luyện đọc/viết (spec 007 SC-003/SC-004)
 // trên dữ liệu dựng sẵn.
 // Thời điểm lộ trình/phiên học được "già hóa" bằng UPDATE để nhóm đủ chín mà không cần chờ.
 
@@ -86,6 +86,7 @@ describe('bộ truy vấn báo cáo', () => {
       'sc010_class_week4_active_days',
       'sc006_effects_disabled_ratio',
       'sc007_next_day_return_after_plan_completion',
+      'practice_opt_in_ratio',
     ]);
     for (const name of queries.keys()) await expect(run(name)).resolves.toBeDefined();
   });
@@ -491,6 +492,53 @@ describe('Spec 005 SC-007: quay lại ngày kế tiếp sau ngày hoàn thành k
       sau_ty_le_pct: '66.7',
       chenh_lech_diem: '16.7',
       muc_tieu_diem: 5,
+    });
+  });
+});
+
+describe('Spec 007: tỷ lệ bật luyện đọc/viết trong nhóm đủ điều kiện (>= 30 phút)', () => {
+  const setProfile = (userId: string, dailyMinutes: number, skills: string[]) =>
+    query(
+      ctx,
+      `UPDATE learning_profiles SET daily_minutes = $2, skills = $3::skill[] WHERE user_id = $1`,
+      [userId, dailyMinutes, skills],
+    );
+
+  it('chưa có học viên đủ điều kiện thì tỷ lệ là NULL, không lỗi chia cho 0', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const fifteen = await onboardedLearner(api, ctx);
+    await setProfile(fifteen.userId, 15, ['vocabulary', 'writing']);
+
+    const [row] = await run('practice_opt_in_ratio');
+    expect(row).toMatchObject({
+      so_nguoi_hoc: 1,
+      du_dieu_kien: 0,
+      bat_luyen: 1,
+      bat_luyen_du_dieu_kien: 0,
+      bat_luyen_chua_du_dieu_kien: 1,
+      ty_le_bat_luyen_pct: null,
+    });
+  });
+
+  it('đếm đúng: 30 phút bật/không bật luyện, 15 phút bật luyện (bị lọc) và 15 phút không bật', async () => {
+    await query(ctx, 'DELETE FROM users');
+    const thirtyOn = await onboardedLearner(api, ctx);
+    const thirtyOff = await onboardedLearner(api, ctx);
+    const fifteenOn = await onboardedLearner(api, ctx);
+    const fifteenOff = await onboardedLearner(api, ctx);
+    await setProfile(thirtyOn.userId, 30, ['vocabulary', 'reading', 'writing']);
+    await setProfile(thirtyOff.userId, 30, ['vocabulary', 'grammar', 'kanji']);
+    await setProfile(fifteenOn.userId, 15, ['vocabulary', 'reading']);
+    await setProfile(fifteenOff.userId, 15, ['vocabulary', 'grammar']);
+
+    const [row] = await run('practice_opt_in_ratio');
+    expect(row).toMatchObject({
+      so_nguoi_hoc: 4,
+      du_dieu_kien: 2,
+      bat_luyen: 2,
+      bat_luyen_du_dieu_kien: 1,
+      bat_luyen_chua_du_dieu_kien: 1,
+      ty_le_bat_luyen_pct: '50.0',
     });
   });
 });

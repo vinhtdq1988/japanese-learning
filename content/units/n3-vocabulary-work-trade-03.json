@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-work-trade",
+  "title": {
+    "vi": "Đặt hàng và giao hàng",
+    "en": "Orders and deliveries"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "発注",
+      "reading": "はっちゅう",
+      "meaning": {
+        "vi": "Đặt hàng (với nhà cung cấp)",
+        "en": "Placing an order"
+      },
+      "examples": [
+        {
+          "ja": "足りない部品を、今日中に発注してください。",
+          "reading": "たりないぶひんを、きょうじゅうにはっちゅうしてください。",
+          "translation": {
+            "vi": "Hãy đặt hàng những linh kiện còn thiếu trong hôm nay.",
+            "en": "Please order the missing parts by the end of today."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "受注",
+      "reading": "じゅちゅう",
+      "meaning": {
+        "vi": "Nhận đơn đặt hàng",
+        "en": "Receiving an order"
+      },
+      "examples": [
+        {
+          "ja": "新しい工場から、大きな仕事を受注しました。",
+          "reading": "あたらしいこうじょうから、おおきなしごとをじゅちゅうしました。",
+          "translation": {
+            "vi": "Chúng tôi đã nhận được một đơn hàng lớn từ nhà máy mới.",
+            "en": "We received a big order from the new factory."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "納期",
+      "reading": "のうき",
+      "meaning": {
+        "vi": "Thời hạn giao hàng",
+        "en": "Delivery deadline"
+      },
+      "examples": [
+        {
+          "ja": "お客様に、納期を一週間延ばしてもらいました。",
+          "reading": "おきゃくさまに、のうきをいっしゅうかんのばしてもらいました。",
+          "translation": {
+            "vi": "Khách hàng đã cho chúng tôi lùi thời hạn giao hàng một tuần.",
+            "en": "The customer let us extend the delivery deadline by a week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "納品",
+      "reading": "のうひん",
+      "meaning": {
+        "vi": "Giao hàng (nộp sản phẩm)",
+        "en": "Delivery of goods"
+      },
+      "examples": [
+        {
+          "ja": "商品は、明日の午前中に納品します。",
+          "reading": "しょうひんは、あしたのごぜんちゅうにのうひんします。",
+          "translation": {
+            "vi": "Hàng hóa sẽ được giao vào sáng mai.",
+            "en": "We will deliver the goods tomorrow morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "在庫",
+      "reading": "ざいこ",
+      "meaning": {
+        "vi": "Hàng tồn kho",
+        "en": "Stock; inventory"
+      },
+      "examples": [
+        {
+          "ja": "人気の商品は、在庫がなくなりました。",
+          "reading": "にんきのしょうひんは、ざいこがなくなりました。",
+          "translation": {
+            "vi": "Mặt hàng được ưa chuộng đã hết hàng trong kho.",
+            "en": "The popular product is out of stock."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "仕入れ",
+      "reading": "しいれ",
+      "meaning": {
+        "vi": "Nhập hàng (mua hàng về bán)",
+        "en": "Stocking up; purchasing goods"
+      },
+      "examples": [
+        {
+          "ja": "魚屋は、毎朝、市場で仕入れをします。",
+          "reading": "さかなやは、まいあさ、いちばでしいれをします。",
+          "translation": {
+            "vi": "Cửa hàng cá sáng nào cũng đi nhập hàng ở chợ.",
+            "en": "The fish shop buys its stock at the market every morning."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "発注",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 足りない部品を、今日中に（　）してください。 — Nghĩa của câu: “Hãy đặt hàng những linh kiện còn thiếu trong hôm nay.”",
+        "en": "Choose the word that fits the blank: 足りない部品を、今日中に（　）してください。 — Meaning of the sentence: “Please order the missing parts by the end of today.”"
+      },
+      "payload": {
+        "choices": [
+          "在庫",
+          "受注",
+          "発注",
+          "仕入れ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発注」(Đặt hàng (với nhà cung cấp)) hợp nghĩa câu này: “Hãy đặt hàng những linh kiện còn thiếu trong hôm nay.”",
+        "en": "Correct! 「発注」(Placing an order) fits this sentence: “Please order the missing parts by the end of today.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy đặt hàng những linh kiện còn thiếu trong hôm nay.”, nên cần 「発注」(Đặt hàng (với nhà cung cấp)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please order the missing parts by the end of today.”, so it needs 「発注」(Placing an order); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "受注",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい工場から、大きな仕事を（　）しました。 — Nghĩa của câu: “Chúng tôi đã nhận được một đơn hàng lớn từ nhà máy mới.”",
+        "en": "Choose the word that fits the blank: 新しい工場から、大きな仕事を（　）しました。 — Meaning of the sentence: “We received a big order from the new factory.”"
+      },
+      "payload": {
+        "choices": [
+          "発注",
+          "納期",
+          "在庫",
+          "受注"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「受注」(Nhận đơn đặt hàng) hợp nghĩa câu này: “Chúng tôi đã nhận được một đơn hàng lớn từ nhà máy mới.”",
+        "en": "Correct! 「受注」(Receiving an order) fits this sentence: “We received a big order from the new factory.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi đã nhận được một đơn hàng lớn từ nhà máy mới.”, nên cần 「受注」(Nhận đơn đặt hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We received a big order from the new factory.”, so it needs 「受注」(Receiving an order); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "納期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お客様に、（　）を一週間延ばしてもらいました。 — Nghĩa của câu: “Khách hàng đã cho chúng tôi lùi thời hạn giao hàng một tuần.”",
+        "en": "Choose the word that fits the blank: お客様に、（　）を一週間延ばしてもらいました。 — Meaning of the sentence: “The customer let us extend the delivery deadline by a week.”"
+      },
+      "payload": {
+        "choices": [
+          "納期",
+          "仕入れ",
+          "発注",
+          "納品"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「納期」(Thời hạn giao hàng) hợp nghĩa câu này: “Khách hàng đã cho chúng tôi lùi thời hạn giao hàng một tuần.”",
+        "en": "Correct! 「納期」(Delivery deadline) fits this sentence: “The customer let us extend the delivery deadline by a week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khách hàng đã cho chúng tôi lùi thời hạn giao hàng một tuần.”, nên cần 「納期」(Thời hạn giao hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The customer let us extend the delivery deadline by a week.”, so it needs 「納期」(Delivery deadline); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "納品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 商品は、明日の午前中に（　）します。 — Nghĩa của câu: “Hàng hóa sẽ được giao vào sáng mai.”",
+        "en": "Choose the word that fits the blank: 商品は、明日の午前中に（　）します。 — Meaning of the sentence: “We will deliver the goods tomorrow morning.”"
+      },
+      "payload": {
+        "choices": [
+          "受注",
+          "納品",
+          "発注",
+          "仕入れ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「納品」(Giao hàng (nộp sản phẩm)) hợp nghĩa câu này: “Hàng hóa sẽ được giao vào sáng mai.”",
+        "en": "Correct! 「納品」(Delivery of goods) fits this sentence: “We will deliver the goods tomorrow morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hàng hóa sẽ được giao vào sáng mai.”, nên cần 「納品」(Giao hàng (nộp sản phẩm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We will deliver the goods tomorrow morning.”, so it needs 「納品」(Delivery of goods); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "在庫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 人気の商品は、（　）がなくなりました。 — Nghĩa của câu: “Mặt hàng được ưa chuộng đã hết hàng trong kho.”",
+        "en": "Choose the word that fits the blank: 人気の商品は、（　）がなくなりました。 — Meaning of the sentence: “The popular product is out of stock.”"
+      },
+      "payload": {
+        "choices": [
+          "受注",
+          "発注",
+          "在庫",
+          "納期"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「在庫」(Hàng tồn kho) hợp nghĩa câu này: “Mặt hàng được ưa chuộng đã hết hàng trong kho.”",
+        "en": "Correct! 「在庫」(Stock; inventory) fits this sentence: “The popular product is out of stock.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mặt hàng được ưa chuộng đã hết hàng trong kho.”, nên cần 「在庫」(Hàng tồn kho); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The popular product is out of stock.”, so it needs 「在庫」(Stock; inventory); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "仕入れ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 魚屋は、毎朝、市場で（　）をします。 — Nghĩa của câu: “Cửa hàng cá sáng nào cũng đi nhập hàng ở chợ.”",
+        "en": "Choose the word that fits the blank: 魚屋は、毎朝、市場で（　）をします。 — Meaning of the sentence: “The fish shop buys its stock at the market every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "納品",
+          "発注",
+          "受注",
+          "仕入れ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「仕入れ」(Nhập hàng (mua hàng về bán)) hợp nghĩa câu này: “Cửa hàng cá sáng nào cũng đi nhập hàng ở chợ.”",
+        "en": "Correct! 「仕入れ」(Stocking up; purchasing goods) fits this sentence: “The fish shop buys its stock at the market every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng cá sáng nào cũng đi nhập hàng ở chợ.”, nên cần 「仕入れ」(Nhập hàng (mua hàng về bán)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The fish shop buys its stock at the market every morning.”, so it needs 「仕入れ」(Stocking up; purchasing goods); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発注",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 足りない部品を、今日中に「発注」してください。",
+        "en": "Choose the correct reading of the word in 「」: 足りない部品を、今日中に「発注」してください。"
+      },
+      "payload": {
+        "choices": [
+          "しいれ",
+          "じゅちゅう",
+          "ざいこ",
+          "はっちゅう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発注」 đọc là 「はっちゅう」, nghĩa là Đặt hàng (với nhà cung cấp).",
+        "en": "Correct! 「発注」 is read 「はっちゅう」 and means Placing an order."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「発注」 đọc là 「はっちゅう」 (Đặt hàng (với nhà cung cấp)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「発注」 is read 「はっちゅう」 (Placing an order); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "納品",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 商品は、明日の午前中に「納品」します。",
+        "en": "Choose the correct reading of the word in 「」: 商品は、明日の午前中に「納品」します。"
+      },
+      "payload": {
+        "choices": [
+          "のうひん",
+          "しいれ",
+          "はっちゅう",
+          "ざいこ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「納品」 đọc là 「のうひん」, nghĩa là Giao hàng (nộp sản phẩm).",
+        "en": "Correct! 「納品」 is read 「のうひん」 and means Delivery of goods."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「納品」 đọc là 「のうひん」 (Giao hàng (nộp sản phẩm)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「納品」 is read 「のうひん」 (Delivery of goods); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "納期",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: お客様に、「のうき」を一週間延ばしてもらいました。",
+        "en": "Choose the correct way to write the word in 「」: お客様に、「のうき」を一週間延ばしてもらいました。"
+      },
+      "payload": {
+        "choices": [
+          "納期",
+          "発注",
+          "受注",
+          "納品"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「のうき」 viết là 「納期」, nghĩa là Thời hạn giao hàng.",
+        "en": "Correct! 「のうき」 is written 「納期」 and means Delivery deadline."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「のうき」 viết là 「納期」 (Thời hạn giao hàng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「のうき」 is written 「納期」 (Delivery deadline); the other words are read differently."
+      }
+    }
+  ]
+}

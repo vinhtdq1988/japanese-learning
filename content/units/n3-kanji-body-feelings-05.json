@@ -1,0 +1,420 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (苦 命 感)",
+    "en": "Body and feelings kanji (苦 命 感)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2230,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "苦",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "khổ; đắng",
+        "en": "suffering; bitter"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ク"
+        ],
+        "kunReadings": [
+          "くる.しい",
+          "にが.い"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "苦労",
+          "reading": "くろう",
+          "kanjiReading": "ク",
+          "translation": {
+            "vi": "vất vả",
+            "en": "hardship"
+          }
+        },
+        {
+          "ja": "苦い",
+          "reading": "にがい",
+          "kanjiReading": "にが",
+          "translation": {
+            "vi": "đắng",
+            "en": "bitter"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "命",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "mạng sống; mệnh lệnh",
+        "en": "life; command"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "メイ",
+          "ミョウ"
+        ],
+        "kunReadings": [
+          "いのち"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "生命",
+          "reading": "せいめい",
+          "kanjiReading": "メイ",
+          "translation": {
+            "vi": "sinh mạng",
+            "en": "life"
+          }
+        },
+        {
+          "ja": "命",
+          "reading": "いのち",
+          "kanjiReading": "いのち",
+          "translation": {
+            "vi": "sinh mạng",
+            "en": "life"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "感",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "cảm; cảm giác",
+        "en": "feel; sense"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "感情",
+          "reading": "かんじょう",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "cảm xúc",
+            "en": "emotion"
+          }
+        },
+        {
+          "ja": "感動",
+          "reading": "かんどう",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "cảm động",
+            "en": "deep emotion"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "苦",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「苦」nghĩa là gì?",
+        "en": "What does 「苦」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khổ; đắng",
+            "en": "suffering; bitter"
+          },
+          {
+            "vi": "mạng sống; mệnh lệnh",
+            "en": "life; command"
+          },
+          {
+            "vi": "cảm; cảm giác",
+            "en": "feel; sense"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 苦 nghĩa là khổ; đắng.",
+        "en": "Correct! 苦 means suffering; bitter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 苦 nghĩa là khổ; đắng, như trong 「苦労」 (vất vả).",
+        "en": "Not quite. 苦 means suffering; bitter, as in 「苦労」 (hardship)."
+      }
+    },
+    {
+      "item": "苦",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「苦」 trong 「苦労」 (“vất vả”).",
+        "en": "Type the reading of 「苦」 in 「苦労」 (“hardship”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "く",
+          "ク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 苦労, 苦 đọc là く (âm On).",
+        "en": "Correct! In 苦労, 苦 is read く (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 苦労 (vất vả), 苦 đọc là く (âm On).",
+        "en": "In 苦労 (hardship), 苦 is read く (on'yomi)."
+      }
+    },
+    {
+      "item": "苦",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「苦い」(đắng) đọc là gì?",
+        "en": "How is 「苦い」 (bitter) read?"
+      },
+      "payload": {
+        "choices": [
+          "くい",
+          "にがい",
+          "いのち"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 苦い = にがい (đắng); 苦 đọc là にが (âm Kun).",
+        "en": "Correct! 苦い = にがい (bitter); 苦 is read にが (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "苦い đọc là にがい (đắng): 苦 mang âm Kun にが.",
+        "en": "苦い is read にがい (bitter): 苦 takes the kun'yomi にが."
+      }
+    },
+    {
+      "item": "命",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「命」nghĩa là gì?",
+        "en": "What does 「命」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cảm; cảm giác",
+            "en": "feel; sense"
+          },
+          {
+            "vi": "mạng sống; mệnh lệnh",
+            "en": "life; command"
+          },
+          {
+            "vi": "khổ; đắng",
+            "en": "suffering; bitter"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 命 nghĩa là mạng sống; mệnh lệnh.",
+        "en": "Correct! 命 means life; command."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 命 nghĩa là mạng sống; mệnh lệnh, như trong 「生命」 (sinh mạng).",
+        "en": "Not quite. 命 means life; command, as in 「生命」 (life)."
+      }
+    },
+    {
+      "item": "命",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「命」 trong 「生命」 (“sinh mạng”).",
+        "en": "Type the reading of 「命」 in 「生命」 (“life”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "めい",
+          "メイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 生命, 命 đọc là めい (âm On).",
+        "en": "Correct! In 生命, 命 is read めい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 生命 (sinh mạng), 命 đọc là めい (âm On).",
+        "en": "In 生命 (life), 命 is read めい (on'yomi)."
+      }
+    },
+    {
+      "item": "命",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「命」(sinh mạng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「命」 (life; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "めい",
+          "くろう",
+          "いのち"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 命 = いのち (sinh mạng); 命 đọc là いのち (âm Kun).",
+        "en": "Correct! 命 = いのち (life); 命 is read いのち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "命 đọc là いのち (sinh mạng): 命 mang âm Kun いのち.",
+        "en": "命 is read いのち (life): 命 takes the kun'yomi いのち."
+      }
+    },
+    {
+      "item": "感",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「感」nghĩa là gì?",
+        "en": "What does 「感」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khổ; đắng",
+            "en": "suffering; bitter"
+          },
+          {
+            "vi": "mạng sống; mệnh lệnh",
+            "en": "life; command"
+          },
+          {
+            "vi": "cảm; cảm giác",
+            "en": "feel; sense"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 感 nghĩa là cảm; cảm giác.",
+        "en": "Correct! 感 means feel; sense."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 感 nghĩa là cảm; cảm giác, như trong 「感情」 (cảm xúc).",
+        "en": "Not quite. 感 means feel; sense, as in 「感情」 (emotion)."
+      }
+    },
+    {
+      "item": "感",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「感」 trong 「感情」 (“cảm xúc”).",
+        "en": "Type the reading of 「感」 in 「感情」 (“emotion”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 感情, 感 đọc là かん (âm On).",
+        "en": "Correct! In 感情, 感 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 感情 (cảm xúc), 感 đọc là かん (âm On).",
+        "en": "In 感情 (emotion), 感 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "感",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「感動」(cảm động) đọc là gì?",
+        "en": "How is 「感動」 (deep emotion) read?"
+      },
+      "payload": {
+        "choices": [
+          "かんどう",
+          "がんどう",
+          "かんとう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 感動 = かんどう (cảm động); 感 đọc là かん (âm On).",
+        "en": "Correct! 感動 = かんどう (deep emotion); 感 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "感動 đọc là かんどう (cảm động): 感 mang âm On かん.",
+        "en": "感動 is read かんどう (deep emotion): 感 takes the on'yomi かん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "苦",
+            {
+              "vi": "khổ; đắng",
+              "en": "suffering; bitter"
+            }
+          ],
+          [
+            "命",
+            {
+              "vi": "mạng sống; mệnh lệnh",
+              "en": "life; command"
+            }
+          ],
+          [
+            "感",
+            {
+              "vi": "cảm; cảm giác",
+              "en": "feel; sense"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

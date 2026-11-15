@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-finance-banking",
+  "title": {
+    "vi": "Tài khoản và chuyển tiền",
+    "en": "Accounts and money transfers"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 630,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "口座",
+      "reading": "こうざ",
+      "meaning": {
+        "vi": "Tài khoản (ngân hàng)",
+        "en": "Account"
+      },
+      "examples": [
+        {
+          "ja": "銀行に、新しい口座を作りました。",
+          "reading": "ぎんこうに、あたらしいこうざをつくりました。",
+          "translation": {
+            "vi": "Tôi đã mở một tài khoản mới ở ngân hàng.",
+            "en": "I opened a new account at the bank."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "預金",
+      "reading": "よきん",
+      "meaning": {
+        "vi": "Tiền gửi; gửi tiền",
+        "en": "Deposit; savings"
+      },
+      "examples": [
+        {
+          "ja": "毎月、給料の一部を預金しています。",
+          "reading": "まいつき、きゅうりょうのいちぶをよきんしています。",
+          "translation": {
+            "vi": "Hằng tháng tôi gửi một phần lương vào ngân hàng.",
+            "en": "Every month I deposit part of my salary."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "振り込む",
+      "reading": "ふりこむ",
+      "meaning": {
+        "vi": "Chuyển khoản",
+        "en": "To transfer (money)"
+      },
+      "examples": [
+        {
+          "ja": "代金は、明日までに銀行で振り込むことになっています。",
+          "reading": "だいきんは、あしたまでにぎんこうでふりこむことになっています。",
+          "translation": {
+            "vi": "Tiền hàng phải chuyển khoản qua ngân hàng trước ngày mai.",
+            "en": "The payment is to be transferred through the bank by tomorrow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "振込",
+      "reading": "ふりこみ",
+      "meaning": {
+        "vi": "Việc chuyển khoản",
+        "en": "Bank transfer"
+      },
+      "examples": [
+        {
+          "ja": "家賃は、銀行振込でお願いします。",
+          "reading": "やちんは、ぎんこうふりこみでおねがいします。",
+          "translation": {
+            "vi": "Tiền nhà xin vui lòng thanh toán bằng chuyển khoản ngân hàng.",
+            "en": "Please pay the rent by bank transfer."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "引き出す",
+      "reading": "ひきだす",
+      "meaning": {
+        "vi": "Rút (tiền)",
+        "en": "To withdraw (money)"
+      },
+      "examples": [
+        {
+          "ja": "機械でお金を引き出すには、カードが必要です。",
+          "reading": "きかいでおかねをひきだすには、カードがひつようです。",
+          "translation": {
+            "vi": "Để rút tiền từ máy cần có thẻ.",
+            "en": "You need a card to withdraw money from the machine."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "残高",
+      "reading": "ざんだか",
+      "meaning": {
+        "vi": "Số dư",
+        "en": "Balance"
+      },
+      "examples": [
+        {
+          "ja": "口座の残高を、毎月確かめています。",
+          "reading": "こうざのざんだかを、まいつきたしかめています。",
+          "translation": {
+            "vi": "Tôi kiểm tra số dư tài khoản mỗi tháng.",
+            "en": "I check my account balance every month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "通帳",
+      "reading": "つうちょう",
+      "meaning": {
+        "vi": "Sổ ngân hàng",
+        "en": "Bankbook"
+      },
+      "examples": [
+        {
+          "ja": "通帳に、今月の入金が記入されました。",
+          "reading": "つうちょうに、こんげつのにゅうきんがきにゅうされました。",
+          "translation": {
+            "vi": "Khoản tiền vào tháng này đã được ghi vào sổ ngân hàng.",
+            "en": "This month's deposit was recorded in the bankbook."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "暗証番号",
+      "reading": "あんしょうばんごう",
+      "meaning": {
+        "vi": "Mã PIN",
+        "en": "PIN; security code"
+      },
+      "examples": [
+        {
+          "ja": "カードの暗証番号は、人に教えてはいけません。",
+          "reading": "カードのあんしょうばんごうは、ひとにおしえてはいけません。",
+          "translation": {
+            "vi": "Không được cho người khác biết mã PIN của thẻ.",
+            "en": "You must not tell anyone your card's PIN."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "入金",
+      "reading": "にゅうきん",
+      "meaning": {
+        "vi": "Tiền nộp vào; nhận tiền",
+        "en": "Incoming payment; deposit"
+      },
+      "examples": [
+        {
+          "ja": "お客様からの入金を、まだ確認していません。",
+          "reading": "おきゃくさまからのにゅうきんを、まだかくにんしていません。",
+          "translation": {
+            "vi": "Tôi vẫn chưa xác nhận khoản tiền khách hàng nộp vào.",
+            "en": "I have not yet confirmed the payment from the customer."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "出金",
+      "reading": "しゅっきん",
+      "meaning": {
+        "vi": "Tiền rút ra; chi ra",
+        "en": "Withdrawal; outgoing payment"
+      },
+      "examples": [
+        {
+          "ja": "この口座では、出金の回数が決まっています。",
+          "reading": "このこうざでは、しゅっきんのかいすうがきまっています。",
+          "translation": {
+            "vi": "Với tài khoản này, số lần rút tiền được quy định.",
+            "en": "For this account, the number of withdrawals is fixed."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "送金",
+      "reading": "そうきん",
+      "meaning": {
+        "vi": "Gửi tiền",
+        "en": "Remittance; sending money"
+      },
+      "examples": [
+        {
+          "ja": "海外にいる家族に、毎月送金しています。",
+          "reading": "かいがいにいるかぞくに、まいつきそうきんしています。",
+          "translation": {
+            "vi": "Hằng tháng tôi gửi tiền cho gia đình ở nước ngoài.",
+            "en": "I send money every month to my family abroad."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "手数料",
+      "reading": "てすうりょう",
+      "meaning": {
+        "vi": "Phí dịch vụ",
+        "en": "Fee; commission"
+      },
+      "examples": [
+        {
+          "ja": "他の銀行へ送金すると、手数料がかかります。",
+          "reading": "ほかのぎんこうへそうきんすると、てすうりょうがかかります。",
+          "translation": {
+            "vi": "Gửi tiền sang ngân hàng khác thì mất phí dịch vụ.",
+            "en": "Sending money to another bank incurs a fee."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "口座",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 銀行に、新しい（　）を作りました。 — Nghĩa của câu: “Tôi đã mở một tài khoản mới ở ngân hàng.”",
+        "en": "Choose the word that fits the blank: 銀行に、新しい（　）を作りました。 — Meaning of the sentence: “I opened a new account at the bank.”"
+      },
+      "payload": {
+        "choices": [
+          "通帳",
+          "口座",
+          "預金",
+          "入金"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「口座」(Tài khoản (ngân hàng)) hợp nghĩa câu này: “Tôi đã mở một tài khoản mới ở ngân hàng.”",
+        "en": "Correct! 「口座」(Account) fits this sentence: “I opened a new account at the bank.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã mở một tài khoản mới ở ngân hàng.”, nên cần 「口座」(Tài khoản (ngân hàng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I opened a new account at the bank.”, so it needs 「口座」(Account); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "預金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎月、給料の一部を（　）しています。 — Nghĩa của câu: “Hằng tháng tôi gửi một phần lương vào ngân hàng.”",
+        "en": "Choose the word that fits the blank: 毎月、給料の一部を（　）しています。 — Meaning of the sentence: “Every month I deposit part of my salary.”"
+      },
+      "payload": {
+        "choices": [
+          "口座",
+          "振込",
+          "預金",
+          "暗証番号"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「預金」(Tiền gửi; gửi tiền) hợp nghĩa câu này: “Hằng tháng tôi gửi một phần lương vào ngân hàng.”",
+        "en": "Correct! 「預金」(Deposit; savings) fits this sentence: “Every month I deposit part of my salary.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hằng tháng tôi gửi một phần lương vào ngân hàng.”, nên cần 「預金」(Tiền gửi; gửi tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Every month I deposit part of my salary.”, so it needs 「預金」(Deposit; savings); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "振り込む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 代金は、明日までに銀行で（　）ことになっています。 — Nghĩa của câu: “Tiền hàng phải chuyển khoản qua ngân hàng trước ngày mai.”",
+        "en": "Choose the word that fits the blank: 代金は、明日までに銀行で（　）ことになっています。 — Meaning of the sentence: “The payment is to be transferred through the bank by tomorrow.”"
+      },
+      "payload": {
+        "choices": [
+          "引き出す",
+          "送金",
+          "振込",
+          "振り込む"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「振り込む」(Chuyển khoản) hợp nghĩa câu này: “Tiền hàng phải chuyển khoản qua ngân hàng trước ngày mai.”",
+        "en": "Correct! 「振り込む」(To transfer (money)) fits this sentence: “The payment is to be transferred through the bank by tomorrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiền hàng phải chuyển khoản qua ngân hàng trước ngày mai.”, nên cần 「振り込む」(Chuyển khoản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The payment is to be transferred through the bank by tomorrow.”, so it needs 「振り込む」(To transfer (money)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "振込",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家賃は、銀行（　）でお願いします。 — Nghĩa của câu: “Tiền nhà xin vui lòng thanh toán bằng chuyển khoản ngân hàng.”",
+        "en": "Choose the word that fits the blank: 家賃は、銀行（　）でお願いします。 — Meaning of the sentence: “Please pay the rent by bank transfer.”"
+      },
+      "payload": {
+        "choices": [
+          "振込",
+          "通帳",
+          "口座",
+          "暗証番号"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「振込」(Việc chuyển khoản) hợp nghĩa câu này: “Tiền nhà xin vui lòng thanh toán bằng chuyển khoản ngân hàng.”",
+        "en": "Correct! 「振込」(Bank transfer) fits this sentence: “Please pay the rent by bank transfer.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiền nhà xin vui lòng thanh toán bằng chuyển khoản ngân hàng.”, nên cần 「振込」(Việc chuyển khoản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please pay the rent by bank transfer.”, so it needs 「振込」(Bank transfer); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "引き出す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 機械でお金を（　）には、カードが必要です。 — Nghĩa của câu: “Để rút tiền từ máy cần có thẻ.”",
+        "en": "Choose the word that fits the blank: 機械でお金を（　）には、カードが必要です。 — Meaning of the sentence: “You need a card to withdraw money from the machine.”"
+      },
+      "payload": {
+        "choices": [
+          "振り込む",
+          "引き出す",
+          "通帳",
+          "入金"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「引き出す」(Rút (tiền)) hợp nghĩa câu này: “Để rút tiền từ máy cần có thẻ.”",
+        "en": "Correct! 「引き出す」(To withdraw (money)) fits this sentence: “You need a card to withdraw money from the machine.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để rút tiền từ máy cần có thẻ.”, nên cần 「引き出す」(Rút (tiền)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You need a card to withdraw money from the machine.”, so it needs 「引き出す」(To withdraw (money)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "残高",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 口座の（　）を、毎月確かめています。 — Nghĩa của câu: “Tôi kiểm tra số dư tài khoản mỗi tháng.”",
+        "en": "Choose the word that fits the blank: 口座の（　）を、毎月確かめています。 — Meaning of the sentence: “I check my account balance every month.”"
+      },
+      "payload": {
+        "choices": [
+          "預金",
+          "手数料",
+          "残高",
+          "振込"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「残高」(Số dư) hợp nghĩa câu này: “Tôi kiểm tra số dư tài khoản mỗi tháng.”",
+        "en": "Correct! 「残高」(Balance) fits this sentence: “I check my account balance every month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi kiểm tra số dư tài khoản mỗi tháng.”, nên cần 「残高」(Số dư); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I check my account balance every month.”, so it needs 「残高」(Balance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "通帳",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）に、今月の入金が記入されました。 — Nghĩa của câu: “Khoản tiền vào tháng này đã được ghi vào sổ ngân hàng.”",
+        "en": "Choose the word that fits the blank: （　）に、今月の入金が記入されました。 — Meaning of the sentence: “This month's deposit was recorded in the bankbook.”"
+      },
+      "payload": {
+        "choices": [
+          "口座",
+          "振込",
+          "預金",
+          "通帳"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通帳」(Sổ ngân hàng) hợp nghĩa câu này: “Khoản tiền vào tháng này đã được ghi vào sổ ngân hàng.”",
+        "en": "Correct! 「通帳」(Bankbook) fits this sentence: “This month's deposit was recorded in the bankbook.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khoản tiền vào tháng này đã được ghi vào sổ ngân hàng.”, nên cần 「通帳」(Sổ ngân hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This month's deposit was recorded in the bankbook.”, so it needs 「通帳」(Bankbook); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "暗証番号",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: カードの（　）は、人に教えてはいけません。 — Nghĩa của câu: “Không được cho người khác biết mã PIN của thẻ.”",
+        "en": "Choose the word that fits the blank: カードの（　）は、人に教えてはいけません。 — Meaning of the sentence: “You must not tell anyone your card's PIN.”"
+      },
+      "payload": {
+        "choices": [
+          "暗証番号",
+          "通帳",
+          "口座",
+          "送金"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「暗証番号」(Mã PIN) hợp nghĩa câu này: “Không được cho người khác biết mã PIN của thẻ.”",
+        "en": "Correct! 「暗証番号」(PIN; security code) fits this sentence: “You must not tell anyone your card's PIN.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không được cho người khác biết mã PIN của thẻ.”, nên cần 「暗証番号」(Mã PIN); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You must not tell anyone your card's PIN.”, so it needs 「暗証番号」(PIN; security code); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "入金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お客様からの（　）を、まだ確認していません。 — Nghĩa của câu: “Tôi vẫn chưa xác nhận khoản tiền khách hàng nộp vào.”",
+        "en": "Choose the word that fits the blank: お客様からの（　）を、まだ確認していません。 — Meaning of the sentence: “I have not yet confirmed the payment from the customer.”"
+      },
+      "payload": {
+        "choices": [
+          "暗証番号",
+          "入金",
+          "口座",
+          "残高"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入金」(Tiền nộp vào; nhận tiền) hợp nghĩa câu này: “Tôi vẫn chưa xác nhận khoản tiền khách hàng nộp vào.”",
+        "en": "Correct! 「入金」(Incoming payment; deposit) fits this sentence: “I have not yet confirmed the payment from the customer.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi vẫn chưa xác nhận khoản tiền khách hàng nộp vào.”, nên cần 「入金」(Tiền nộp vào; nhận tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have not yet confirmed the payment from the customer.”, so it needs 「入金」(Incoming payment; deposit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この口座では、（　）の回数が決まっています。 — Nghĩa của câu: “Với tài khoản này, số lần rút tiền được quy định.”",
+        "en": "Choose the word that fits the blank: この口座では、（　）の回数が決まっています。 — Meaning of the sentence: “For this account, the number of withdrawals is fixed.”"
+      },
+      "payload": {
+        "choices": [
+          "預金",
+          "暗証番号",
+          "出金",
+          "通帳"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出金」(Tiền rút ra; chi ra) hợp nghĩa câu này: “Với tài khoản này, số lần rút tiền được quy định.”",
+        "en": "Correct! 「出金」(Withdrawal; outgoing payment) fits this sentence: “For this account, the number of withdrawals is fixed.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Với tài khoản này, số lần rút tiền được quy định.”, nên cần 「出金」(Tiền rút ra; chi ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For this account, the number of withdrawals is fixed.”, so it needs 「出金」(Withdrawal; outgoing payment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "送金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海外にいる家族に、毎月（　）しています。 — Nghĩa của câu: “Hằng tháng tôi gửi tiền cho gia đình ở nước ngoài.”",
+        "en": "Choose the word that fits the blank: 海外にいる家族に、毎月（　）しています。 — Meaning of the sentence: “I send money every month to my family abroad.”"
+      },
+      "payload": {
+        "choices": [
+          "手数料",
+          "口座",
+          "入金",
+          "送金"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「送金」(Gửi tiền) hợp nghĩa câu này: “Hằng tháng tôi gửi tiền cho gia đình ở nước ngoài.”",
+        "en": "Correct! 「送金」(Remittance; sending money) fits this sentence: “I send money every month to my family abroad.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hằng tháng tôi gửi tiền cho gia đình ở nước ngoài.”, nên cần 「送金」(Gửi tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I send money every month to my family abroad.”, so it needs 「送金」(Remittance; sending money); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "手数料",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 他の銀行へ送金すると、（　）がかかります。 — Nghĩa của câu: “Gửi tiền sang ngân hàng khác thì mất phí dịch vụ.”",
+        "en": "Choose the word that fits the blank: 他の銀行へ送金すると、（　）がかかります。 — Meaning of the sentence: “Sending money to another bank incurs a fee.”"
+      },
+      "payload": {
+        "choices": [
+          "手数料",
+          "口座",
+          "預金",
+          "入金"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「手数料」(Phí dịch vụ) hợp nghĩa câu này: “Gửi tiền sang ngân hàng khác thì mất phí dịch vụ.”",
+        "en": "Correct! 「手数料」(Fee; commission) fits this sentence: “Sending money to another bank incurs a fee.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gửi tiền sang ngân hàng khác thì mất phí dịch vụ.”, nên cần 「手数料」(Phí dịch vụ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Sending money to another bank incurs a fee.”, so it needs 「手数料」(Fee; commission); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "口座",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 銀行に、新しい「口座」を作りました。",
+        "en": "Choose the correct reading of the word in 「」: 銀行に、新しい「口座」を作りました。"
+      },
+      "payload": {
+        "choices": [
+          "つうちょう",
+          "ざんだか",
+          "こうざ",
+          "しゅっきん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「口座」 đọc là 「こうざ」, nghĩa là Tài khoản (ngân hàng).",
+        "en": "Correct! 「口座」 is read 「こうざ」 and means Account."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「口座」 đọc là 「こうざ」 (Tài khoản (ngân hàng)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「口座」 is read 「こうざ」 (Account); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "振込",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 家賃は、銀行「振込」でお願いします。",
+        "en": "Choose the correct reading of the word in 「」: 家賃は、銀行「振込」でお願いします。"
+      },
+      "payload": {
+        "choices": [
+          "しゅっきん",
+          "ふりこむ",
+          "つうちょう",
+          "ふりこみ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「振込」 đọc là 「ふりこみ」, nghĩa là Việc chuyển khoản.",
+        "en": "Correct! 「振込」 is read 「ふりこみ」 and means Bank transfer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「振込」 đọc là 「ふりこみ」 (Việc chuyển khoản); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「振込」 is read 「ふりこみ」 (Bank transfer); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "通帳",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「通帳」に、今月の入金が記入されました。",
+        "en": "Choose the correct reading of the word in 「」: 「通帳」に、今月の入金が記入されました。"
+      },
+      "payload": {
+        "choices": [
+          "つうちょう",
+          "ざんだか",
+          "そうきん",
+          "こうざ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通帳」 đọc là 「つうちょう」, nghĩa là Sổ ngân hàng.",
+        "en": "Correct! 「通帳」 is read 「つうちょう」 and means Bankbook."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「通帳」 đọc là 「つうちょう」 (Sổ ngân hàng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「通帳」 is read 「つうちょう」 (Bankbook); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "出金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この口座では、「出金」の回数が決まっています。",
+        "en": "Choose the correct reading of the word in 「」: この口座では、「出金」の回数が決まっています。"
+      },
+      "payload": {
+        "choices": [
+          "にゅうきん",
+          "しゅっきん",
+          "ふりこむ",
+          "こうざ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出金」 đọc là 「しゅっきん」, nghĩa là Tiền rút ra; chi ra.",
+        "en": "Correct! 「出金」 is read 「しゅっきん」 and means Withdrawal; outgoing payment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「出金」 đọc là 「しゅっきん」 (Tiền rút ra; chi ra); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「出金」 is read 「しゅっきん」 (Withdrawal; outgoing payment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "振り込む",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 代金は、明日までに銀行で「ふりこむ」ことになっています。",
+        "en": "Choose the correct way to write the word in 「」: 代金は、明日までに銀行で「ふりこむ」ことになっています。"
+      },
+      "payload": {
+        "choices": [
+          "振込",
+          "通帳",
+          "暗証番号",
+          "振り込む"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ふりこむ」 viết là 「振り込む」, nghĩa là Chuyển khoản.",
+        "en": "Correct! 「ふりこむ」 is written 「振り込む」 and means To transfer (money)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ふりこむ」 viết là 「振り込む」 (Chuyển khoản); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ふりこむ」 is written 「振り込む」 (To transfer (money)); the other words are read differently."
+      }
+    },
+    {
+      "item": "入金",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: お客様からの「にゅうきん」を、まだ確認していません。",
+        "en": "Choose the correct way to write the word in 「」: お客様からの「にゅうきん」を、まだ確認していません。"
+      },
+      "payload": {
+        "choices": [
+          "入金",
+          "手数料",
+          "出金",
+          "預金"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「にゅうきん」 viết là 「入金」, nghĩa là Tiền nộp vào; nhận tiền.",
+        "en": "Correct! 「にゅうきん」 is written 「入金」 and means Incoming payment; deposit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「にゅうきん」 viết là 「入金」 (Tiền nộp vào; nhận tiền); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「にゅうきん」 is written 「入金」 (Incoming payment; deposit); the other words are read differently."
+      }
+    }
+  ]
+}

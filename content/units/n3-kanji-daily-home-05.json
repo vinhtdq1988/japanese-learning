@@ -1,0 +1,418 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (弁 墓 機)",
+    "en": "Daily life and home kanji (弁 墓 機)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2530,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "弁",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "biện; phân biệt; hộp cơm",
+        "en": "speech; lunch box"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ベン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "弁当",
+          "reading": "べんとう",
+          "kanjiReading": "ベン",
+          "translation": {
+            "vi": "cơm hộp",
+            "en": "boxed lunch"
+          }
+        },
+        {
+          "ja": "弁護士",
+          "reading": "べんごし",
+          "kanjiReading": "ベン",
+          "translation": {
+            "vi": "luật sư",
+            "en": "lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "墓",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "mộ",
+        "en": "grave"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ボ"
+        ],
+        "kunReadings": [
+          "はか"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "墓地",
+          "reading": "ぼち",
+          "kanjiReading": "ボ",
+          "translation": {
+            "vi": "nghĩa trang",
+            "en": "cemetery"
+          }
+        },
+        {
+          "ja": "墓",
+          "reading": "はか",
+          "kanjiReading": "はか",
+          "translation": {
+            "vi": "ngôi mộ",
+            "en": "grave"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "機",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "máy; cơ hội",
+        "en": "machine; opportunity"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [
+          "はた"
+        ],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "機会",
+          "reading": "きかい",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "cơ hội",
+            "en": "opportunity"
+          }
+        },
+        {
+          "ja": "飛行機",
+          "reading": "ひこうき",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "máy bay",
+            "en": "airplane"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "弁",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「弁」nghĩa là gì?",
+        "en": "What does 「弁」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biện; phân biệt; hộp cơm",
+            "en": "speech; lunch box"
+          },
+          {
+            "vi": "mộ",
+            "en": "grave"
+          },
+          {
+            "vi": "máy; cơ hội",
+            "en": "machine; opportunity"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 弁 nghĩa là biện; phân biệt; hộp cơm.",
+        "en": "Correct! 弁 means speech; lunch box."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 弁 nghĩa là biện; phân biệt; hộp cơm, như trong 「弁当」 (cơm hộp).",
+        "en": "Not quite. 弁 means speech; lunch box, as in 「弁当」 (boxed lunch)."
+      }
+    },
+    {
+      "item": "弁",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「弁」 trong 「弁当」 (“cơm hộp”).",
+        "en": "Type the reading of 「弁」 in 「弁当」 (“boxed lunch”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "べん",
+          "ベン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 弁当, 弁 đọc là べん (âm On).",
+        "en": "Correct! In 弁当, 弁 is read べん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 弁当 (cơm hộp), 弁 đọc là べん (âm On).",
+        "en": "In 弁当 (boxed lunch), 弁 is read べん (on'yomi)."
+      }
+    },
+    {
+      "item": "弁",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「弁護士」(luật sư) đọc là gì?",
+        "en": "How is 「弁護士」 (lawyer) read?"
+      },
+      "payload": {
+        "choices": [
+          "へんごし",
+          "べんごし",
+          "べんこし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 弁護士 = べんごし (luật sư); 弁 đọc là べん (âm On).",
+        "en": "Correct! 弁護士 = べんごし (lawyer); 弁 is read べん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "弁護士 đọc là べんごし (luật sư): 弁 mang âm On べん.",
+        "en": "弁護士 is read べんごし (lawyer): 弁 takes the on'yomi べん."
+      }
+    },
+    {
+      "item": "墓",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「墓」nghĩa là gì?",
+        "en": "What does 「墓」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "máy; cơ hội",
+            "en": "machine; opportunity"
+          },
+          {
+            "vi": "mộ",
+            "en": "grave"
+          },
+          {
+            "vi": "biện; phân biệt; hộp cơm",
+            "en": "speech; lunch box"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 墓 nghĩa là mộ.",
+        "en": "Correct! 墓 means grave."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 墓 nghĩa là mộ, như trong 「墓地」 (nghĩa trang).",
+        "en": "Not quite. 墓 means grave, as in 「墓地」 (cemetery)."
+      }
+    },
+    {
+      "item": "墓",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「墓」 trong 「墓地」 (“nghĩa trang”).",
+        "en": "Type the reading of 「墓」 in 「墓地」 (“cemetery”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぼ",
+          "ボ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 墓地, 墓 đọc là ぼ (âm On).",
+        "en": "Correct! In 墓地, 墓 is read ぼ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 墓地 (nghĩa trang), 墓 đọc là ぼ (âm On).",
+        "en": "In 墓地 (cemetery), 墓 is read ぼ (on'yomi)."
+      }
+    },
+    {
+      "item": "墓",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「墓」(ngôi mộ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「墓」 (grave; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぼ",
+          "きかい",
+          "はか"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 墓 = はか (ngôi mộ); 墓 đọc là はか (âm Kun).",
+        "en": "Correct! 墓 = はか (grave); 墓 is read はか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "墓 đọc là はか (ngôi mộ): 墓 mang âm Kun はか.",
+        "en": "墓 is read はか (grave): 墓 takes the kun'yomi はか."
+      }
+    },
+    {
+      "item": "機",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「機」nghĩa là gì?",
+        "en": "What does 「機」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biện; phân biệt; hộp cơm",
+            "en": "speech; lunch box"
+          },
+          {
+            "vi": "mộ",
+            "en": "grave"
+          },
+          {
+            "vi": "máy; cơ hội",
+            "en": "machine; opportunity"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 機 nghĩa là máy; cơ hội.",
+        "en": "Correct! 機 means machine; opportunity."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 機 nghĩa là máy; cơ hội, như trong 「機会」 (cơ hội).",
+        "en": "Not quite. 機 means machine; opportunity, as in 「機会」 (opportunity)."
+      }
+    },
+    {
+      "item": "機",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「機」 trong 「機会」 (“cơ hội”).",
+        "en": "Type the reading of 「機」 in 「機会」 (“opportunity”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 機会, 機 đọc là き (âm On).",
+        "en": "Correct! In 機会, 機 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 機会 (cơ hội), 機 đọc là き (âm On).",
+        "en": "In 機会 (opportunity), 機 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "機",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飛行機」(máy bay) đọc là gì?",
+        "en": "How is 「飛行機」 (airplane) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひこうき",
+          "ひこうはた",
+          "ひこうぎ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飛行機 = ひこうき (máy bay); 機 đọc là き (âm On).",
+        "en": "Correct! 飛行機 = ひこうき (airplane); 機 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "飛行機 đọc là ひこうき (máy bay): 機 mang âm On き.",
+        "en": "飛行機 is read ひこうき (airplane): 機 takes the on'yomi き."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "弁",
+            {
+              "vi": "biện; phân biệt; hộp cơm",
+              "en": "speech; lunch box"
+            }
+          ],
+          [
+            "墓",
+            {
+              "vi": "mộ",
+              "en": "grave"
+            }
+          ],
+          [
+            "機",
+            {
+              "vi": "máy; cơ hội",
+              "en": "machine; opportunity"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

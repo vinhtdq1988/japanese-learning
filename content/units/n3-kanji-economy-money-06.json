@@ -1,0 +1,550 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (得 増 減 比)",
+    "en": "Economy and money kanji (得 増 減 比)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "得",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "được; lợi",
+        "en": "gain; profit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トク"
+        ],
+        "kunReadings": [
+          "え.る",
+          "う.る"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "得意",
+          "reading": "とくい",
+          "kanjiReading": "トク",
+          "translation": {
+            "vi": "sở trường",
+            "en": "strong point"
+          }
+        },
+        {
+          "ja": "得る",
+          "reading": "える",
+          "kanjiReading": "え",
+          "translation": {
+            "vi": "đạt được",
+            "en": "to obtain"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "増",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "tăng",
+        "en": "increase"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゾウ"
+        ],
+        "kunReadings": [
+          "ま.す",
+          "ふ.える",
+          "ふ.やす"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "増加",
+          "reading": "ぞうか",
+          "kanjiReading": "ゾウ",
+          "translation": {
+            "vi": "tăng",
+            "en": "increase"
+          }
+        },
+        {
+          "ja": "増える",
+          "reading": "ふえる",
+          "kanjiReading": "ふ",
+          "translation": {
+            "vi": "tăng lên",
+            "en": "to increase"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "減",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "giảm",
+        "en": "decrease"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン"
+        ],
+        "kunReadings": [
+          "へ.る",
+          "へ.らす"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "減少",
+          "reading": "げんしょう",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "giảm",
+            "en": "decrease"
+          }
+        },
+        {
+          "ja": "減る",
+          "reading": "へる",
+          "kanjiReading": "へ",
+          "translation": {
+            "vi": "giảm đi",
+            "en": "to decrease"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "比",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "so sánh; tỷ",
+        "en": "compare; ratio"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "くら.べる"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "比較",
+          "reading": "ひかく",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "so sánh",
+            "en": "comparison"
+          }
+        },
+        {
+          "ja": "比べる",
+          "reading": "くらべる",
+          "kanjiReading": "くら",
+          "translation": {
+            "vi": "so sánh",
+            "en": "to compare"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "得",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「得」nghĩa là gì?",
+        "en": "What does 「得」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "được; lợi",
+            "en": "gain; profit"
+          },
+          {
+            "vi": "tăng",
+            "en": "increase"
+          },
+          {
+            "vi": "giảm",
+            "en": "decrease"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 得 nghĩa là được; lợi.",
+        "en": "Correct! 得 means gain; profit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 得 nghĩa là được; lợi, như trong 「得意」 (sở trường).",
+        "en": "Not quite. 得 means gain; profit, as in 「得意」 (strong point)."
+      }
+    },
+    {
+      "item": "得",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「得」 trong 「得意」 (“sở trường”).",
+        "en": "Type the reading of 「得」 in 「得意」 (“strong point”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とく",
+          "トク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 得意, 得 đọc là とく (âm On).",
+        "en": "Correct! In 得意, 得 is read とく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 得意 (sở trường), 得 đọc là とく (âm On).",
+        "en": "In 得意 (strong point), 得 is read とく (on'yomi)."
+      }
+    },
+    {
+      "item": "得",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「得る」(đạt được) đọc là gì?",
+        "en": "How is 「得る」 (to obtain) read?"
+      },
+      "payload": {
+        "choices": [
+          "とくる",
+          "える",
+          "へる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 得る = える (đạt được); 得 đọc là え (âm Kun).",
+        "en": "Correct! 得る = える (to obtain); 得 is read え (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "得る đọc là える (đạt được): 得 mang âm Kun え.",
+        "en": "得る is read える (to obtain): 得 takes the kun'yomi え."
+      }
+    },
+    {
+      "item": "増",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「増」nghĩa là gì?",
+        "en": "What does 「増」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "giảm",
+            "en": "decrease"
+          },
+          {
+            "vi": "tăng",
+            "en": "increase"
+          },
+          {
+            "vi": "so sánh; tỷ",
+            "en": "compare; ratio"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 増 nghĩa là tăng.",
+        "en": "Correct! 増 means increase."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 増 nghĩa là tăng, như trong 「増加」 (tăng).",
+        "en": "Not quite. 増 means increase, as in 「増加」 (increase)."
+      }
+    },
+    {
+      "item": "増",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「増」 trong 「増加」 (“tăng”).",
+        "en": "Type the reading of 「増」 in 「増加」 (“increase”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぞう",
+          "ゾウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 増加, 増 đọc là ぞう (âm On).",
+        "en": "Correct! In 増加, 増 is read ぞう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 増加 (tăng), 増 đọc là ぞう (âm On).",
+        "en": "In 増加 (increase), 増 is read ぞう (on'yomi)."
+      }
+    },
+    {
+      "item": "増",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「増える」(tăng lên) đọc là gì?",
+        "en": "How is 「増える」 (to increase) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぞうえる",
+          "ひかく",
+          "ふえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 増える = ふえる (tăng lên); 増 đọc là ふ (âm Kun).",
+        "en": "Correct! 増える = ふえる (to increase); 増 is read ふ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "増える đọc là ふえる (tăng lên): 増 mang âm Kun ふ.",
+        "en": "増える is read ふえる (to increase): 増 takes the kun'yomi ふ."
+      }
+    },
+    {
+      "item": "減",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「減」nghĩa là gì?",
+        "en": "What does 「減」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "so sánh; tỷ",
+            "en": "compare; ratio"
+          },
+          {
+            "vi": "được; lợi",
+            "en": "gain; profit"
+          },
+          {
+            "vi": "giảm",
+            "en": "decrease"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 減 nghĩa là giảm.",
+        "en": "Correct! 減 means decrease."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 減 nghĩa là giảm, như trong 「減少」 (giảm).",
+        "en": "Not quite. 減 means decrease, as in 「減少」 (decrease)."
+      }
+    },
+    {
+      "item": "減",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「減」 trong 「減少」 (“giảm”).",
+        "en": "Type the reading of 「減」 in 「減少」 (“decrease”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 減少, 減 đọc là げん (âm On).",
+        "en": "Correct! In 減少, 減 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 減少 (giảm), 減 đọc là げん (âm On).",
+        "en": "In 減少 (decrease), 減 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "減",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「減る」(giảm đi) đọc là gì?",
+        "en": "How is 「減る」 (to decrease) read?"
+      },
+      "payload": {
+        "choices": [
+          "へる",
+          "げんる",
+          "える"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 減る = へる (giảm đi); 減 đọc là へ (âm Kun).",
+        "en": "Correct! 減る = へる (to decrease); 減 is read へ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "減る đọc là へる (giảm đi): 減 mang âm Kun へ.",
+        "en": "減る is read へる (to decrease): 減 takes the kun'yomi へ."
+      }
+    },
+    {
+      "item": "比",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「比」nghĩa là gì?",
+        "en": "What does 「比」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "so sánh; tỷ",
+            "en": "compare; ratio"
+          },
+          {
+            "vi": "được; lợi",
+            "en": "gain; profit"
+          },
+          {
+            "vi": "tăng",
+            "en": "increase"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 比 nghĩa là so sánh; tỷ.",
+        "en": "Correct! 比 means compare; ratio."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 比 nghĩa là so sánh; tỷ, như trong 「比較」 (so sánh).",
+        "en": "Not quite. 比 means compare; ratio, as in 「比較」 (comparison)."
+      }
+    },
+    {
+      "item": "比",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「比」 trong 「比較」 (“so sánh”).",
+        "en": "Type the reading of 「比」 in 「比較」 (“comparison”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 比較, 比 đọc là ひ (âm On).",
+        "en": "Correct! In 比較, 比 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 比較 (so sánh), 比 đọc là ひ (âm On).",
+        "en": "In 比較 (comparison), 比 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "比",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「比べる」(so sánh) đọc là gì?",
+        "en": "How is 「比べる」 (to compare) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひべる",
+          "くらべる",
+          "ふえる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 比べる = くらべる (so sánh); 比 đọc là くら (âm Kun).",
+        "en": "Correct! 比べる = くらべる (to compare); 比 is read くら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "比べる đọc là くらべる (so sánh): 比 mang âm Kun くら.",
+        "en": "比べる is read くらべる (to compare): 比 takes the kun'yomi くら."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "得",
+            {
+              "vi": "được; lợi",
+              "en": "gain; profit"
+            }
+          ],
+          [
+            "増",
+            {
+              "vi": "tăng",
+              "en": "increase"
+            }
+          ],
+          [
+            "減",
+            {
+              "vi": "giảm",
+              "en": "decrease"
+            }
+          ],
+          [
+            "比",
+            {
+              "vi": "so sánh; tỷ",
+              "en": "compare; ratio"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

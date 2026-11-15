@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-work-trade",
+  "title": {
+    "vi": "Trách nhiệm và phối hợp trong công việc",
+    "en": "Responsibility and teamwork"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 460,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "責任",
+      "reading": "せきにん",
+      "meaning": {
+        "vi": "Trách nhiệm",
+        "en": "Responsibility"
+      },
+      "examples": [
+        {
+          "ja": "失敗したときは、私が責任をとります。",
+          "reading": "しっぱいしたときは、わたしがせきにんをとります。",
+          "translation": {
+            "vi": "Khi thất bại, tôi sẽ chịu trách nhiệm.",
+            "en": "If it fails, I will take responsibility."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "担当",
+      "reading": "たんとう",
+      "meaning": {
+        "vi": "Phụ trách",
+        "en": "Being in charge"
+      },
+      "examples": [
+        {
+          "ja": "この仕事は、田中さんが担当しています。",
+          "reading": "このしごとは、たなかさんがたんとうしています。",
+          "translation": {
+            "vi": "Công việc này do anh Tanaka phụ trách.",
+            "en": "Mr. Tanaka is in charge of this work."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "負担",
+      "reading": "ふたん",
+      "meaning": {
+        "vi": "Gánh nặng; sự chịu (chi phí)",
+        "en": "Burden; bearing a cost"
+      },
+      "examples": [
+        {
+          "ja": "交通費は、会社が負担してくれます。",
+          "reading": "こうつうひは、かいしゃがふたんしてくれます。",
+          "translation": {
+            "vi": "Chi phí đi lại do công ty chi trả.",
+            "en": "The company covers the transportation costs."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "協力",
+      "reading": "きょうりょく",
+      "meaning": {
+        "vi": "Hợp tác; hỗ trợ",
+        "en": "Cooperation"
+      },
+      "examples": [
+        {
+          "ja": "みなさんのご協力に、心から感謝します。",
+          "reading": "みなさんのごきょうりょくに、こころからかんしゃします。",
+          "translation": {
+            "vi": "Tôi chân thành cảm ơn sự hợp tác của mọi người.",
+            "en": "I sincerely thank everyone for their cooperation."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "打ち合わせ",
+      "reading": "うちあわせ",
+      "meaning": {
+        "vi": "Họp bàn trước; thảo luận công việc",
+        "en": "Preliminary meeting; briefing"
+      },
+      "examples": [
+        {
+          "ja": "三時から、新商品の打ち合わせがあります。",
+          "reading": "さんじから、しんしょうひんのうちあわせがあります。",
+          "translation": {
+            "vi": "Từ 3 giờ có buổi họp bàn về sản phẩm mới.",
+            "en": "From three o'clock there is a meeting about the new product."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "業務",
+      "reading": "ぎょうむ",
+      "meaning": {
+        "vi": "Nghiệp vụ; công việc (của công ty)",
+        "en": "Business duties; operations"
+      },
+      "examples": [
+        {
+          "ja": "新しい社員に、業務の流れを説明しました。",
+          "reading": "あたらしいしゃいんに、ぎょうむのながれをせつめいしました。",
+          "translation": {
+            "vi": "Tôi đã giải thích quy trình nghiệp vụ cho nhân viên mới.",
+            "en": "I explained the flow of work duties to the new employee."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "責任",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 失敗したときは、私が（　）をとります。 — Nghĩa của câu: “Khi thất bại, tôi sẽ chịu trách nhiệm.”",
+        "en": "Choose the word that fits the blank: 失敗したときは、私が（　）をとります。 — Meaning of the sentence: “If it fails, I will take responsibility.”"
+      },
+      "payload": {
+        "choices": [
+          "担当",
+          "責任",
+          "負担",
+          "協力"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「責任」(Trách nhiệm) hợp nghĩa câu này: “Khi thất bại, tôi sẽ chịu trách nhiệm.”",
+        "en": "Correct! 「責任」(Responsibility) fits this sentence: “If it fails, I will take responsibility.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi thất bại, tôi sẽ chịu trách nhiệm.”, nên cần 「責任」(Trách nhiệm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If it fails, I will take responsibility.”, so it needs 「責任」(Responsibility); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "担当",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この仕事は、田中さんが（　）しています。 — Nghĩa của câu: “Công việc này do anh Tanaka phụ trách.”",
+        "en": "Choose the word that fits the blank: この仕事は、田中さんが（　）しています。 — Meaning of the sentence: “Mr. Tanaka is in charge of this work.”"
+      },
+      "payload": {
+        "choices": [
+          "業務",
+          "責任",
+          "担当",
+          "協力"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「担当」(Phụ trách) hợp nghĩa câu này: “Công việc này do anh Tanaka phụ trách.”",
+        "en": "Correct! 「担当」(Being in charge) fits this sentence: “Mr. Tanaka is in charge of this work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công việc này do anh Tanaka phụ trách.”, nên cần 「担当」(Phụ trách); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Mr. Tanaka is in charge of this work.”, so it needs 「担当」(Being in charge); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "負担",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 交通費は、会社が（　）してくれます。 — Nghĩa của câu: “Chi phí đi lại do công ty chi trả.”",
+        "en": "Choose the word that fits the blank: 交通費は、会社が（　）してくれます。 — Meaning of the sentence: “The company covers the transportation costs.”"
+      },
+      "payload": {
+        "choices": [
+          "担当",
+          "責任",
+          "打ち合わせ",
+          "負担"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「負担」(Gánh nặng; sự chịu (chi phí)) hợp nghĩa câu này: “Chi phí đi lại do công ty chi trả.”",
+        "en": "Correct! 「負担」(Burden; bearing a cost) fits this sentence: “The company covers the transportation costs.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chi phí đi lại do công ty chi trả.”, nên cần 「負担」(Gánh nặng; sự chịu (chi phí)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company covers the transportation costs.”, so it needs 「負担」(Burden; bearing a cost); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "協力",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: みなさんのご（　）に、心から感謝します。 — Nghĩa của câu: “Tôi chân thành cảm ơn sự hợp tác của mọi người.”",
+        "en": "Choose the word that fits the blank: みなさんのご（　）に、心から感謝します。 — Meaning of the sentence: “I sincerely thank everyone for their cooperation.”"
+      },
+      "payload": {
+        "choices": [
+          "協力",
+          "担当",
+          "責任",
+          "業務"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「協力」(Hợp tác; hỗ trợ) hợp nghĩa câu này: “Tôi chân thành cảm ơn sự hợp tác của mọi người.”",
+        "en": "Correct! 「協力」(Cooperation) fits this sentence: “I sincerely thank everyone for their cooperation.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi chân thành cảm ơn sự hợp tác của mọi người.”, nên cần 「協力」(Hợp tác; hỗ trợ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I sincerely thank everyone for their cooperation.”, so it needs 「協力」(Cooperation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "打ち合わせ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 三時から、新商品の（　）があります。 — Nghĩa của câu: “Từ 3 giờ có buổi họp bàn về sản phẩm mới.”",
+        "en": "Choose the word that fits the blank: 三時から、新商品の（　）があります。 — Meaning of the sentence: “From three o'clock there is a meeting about the new product.”"
+      },
+      "payload": {
+        "choices": [
+          "協力",
+          "打ち合わせ",
+          "責任",
+          "負担"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「打ち合わせ」(Họp bàn trước; thảo luận công việc) hợp nghĩa câu này: “Từ 3 giờ có buổi họp bàn về sản phẩm mới.”",
+        "en": "Correct! 「打ち合わせ」(Preliminary meeting; briefing) fits this sentence: “From three o'clock there is a meeting about the new product.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ 3 giờ có buổi họp bàn về sản phẩm mới.”, nên cần 「打ち合わせ」(Họp bàn trước; thảo luận công việc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “From three o'clock there is a meeting about the new product.”, so it needs 「打ち合わせ」(Preliminary meeting; briefing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "業務",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい社員に、（　）の流れを説明しました。 — Nghĩa của câu: “Tôi đã giải thích quy trình nghiệp vụ cho nhân viên mới.”",
+        "en": "Choose the word that fits the blank: 新しい社員に、（　）の流れを説明しました。 — Meaning of the sentence: “I explained the flow of work duties to the new employee.”"
+      },
+      "payload": {
+        "choices": [
+          "負担",
+          "責任",
+          "業務",
+          "協力"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「業務」(Nghiệp vụ; công việc (của công ty)) hợp nghĩa câu này: “Tôi đã giải thích quy trình nghiệp vụ cho nhân viên mới.”",
+        "en": "Correct! 「業務」(Business duties; operations) fits this sentence: “I explained the flow of work duties to the new employee.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã giải thích quy trình nghiệp vụ cho nhân viên mới.”, nên cần 「業務」(Nghiệp vụ; công việc (của công ty)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I explained the flow of work duties to the new employee.”, so it needs 「業務」(Business duties; operations); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "責任",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 失敗したときは、私が「責任」をとります。",
+        "en": "Choose the correct reading of the word in 「」: 失敗したときは、私が「責任」をとります。"
+      },
+      "payload": {
+        "choices": [
+          "ふたん",
+          "たんとう",
+          "せきにん",
+          "うちあわせ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「責任」 đọc là 「せきにん」, nghĩa là Trách nhiệm.",
+        "en": "Correct! 「責任」 is read 「せきにん」 and means Responsibility."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「責任」 đọc là 「せきにん」 (Trách nhiệm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「責任」 is read 「せきにん」 (Responsibility); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "協力",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: みなさんのご「協力」に、心から感謝します。",
+        "en": "Choose the correct reading of the word in 「」: みなさんのご「協力」に、心から感謝します。"
+      },
+      "payload": {
+        "choices": [
+          "うちあわせ",
+          "せきにん",
+          "ふたん",
+          "きょうりょく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「協力」 đọc là 「きょうりょく」, nghĩa là Hợp tác; hỗ trợ.",
+        "en": "Correct! 「協力」 is read 「きょうりょく」 and means Cooperation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「協力」 đọc là 「きょうりょく」 (Hợp tác; hỗ trợ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「協力」 is read 「きょうりょく」 (Cooperation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "負担",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 交通費は、会社が「ふたん」してくれます。",
+        "en": "Choose the correct way to write the word in 「」: 交通費は、会社が「ふたん」してくれます。"
+      },
+      "payload": {
+        "choices": [
+          "業務",
+          "責任",
+          "打ち合わせ",
+          "負担"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ふたん」 viết là 「負担」, nghĩa là Gánh nặng; sự chịu (chi phí).",
+        "en": "Correct! 「ふたん」 is written 「負担」 and means Burden; bearing a cost."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ふたん」 viết là 「負担」 (Gánh nặng; sự chịu (chi phí)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ふたん」 is written 「負担」 (Burden; bearing a cost); the other words are read differently."
+      }
+    }
+  ]
+}

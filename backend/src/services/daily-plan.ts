@@ -4,6 +4,7 @@ import {
   insertPlanIfAbsent,
   insertPlanItems,
   lastNewUnitPlanKinds,
+  lastPracticeKind,
   listPlanItems,
   previousPlanKind,
   reviewFacetsColumn,
@@ -17,21 +18,26 @@ import {
   listSessionIntervals,
 } from '../db/repositories/sessions.js';
 import { unionDurationSeconds } from '../domain/intervals.js';
+import { isPracticeEligible } from '../domain/practice.js';
 import { decodeReviewKey, encodeReviewKey } from '../domain/review-key.js';
 import { localize } from '../domain/i18n.js';
 import { AppError, type Language, type Skill } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
+import type { CompetencyLevel } from '../engine/competency.js';
 import {
   GAP_NOTICE,
   applyKanjiSlot,
+  applyPracticeSlot,
   hasLearningGap,
   packReviewBatches,
   planDailyPlan,
   rankDueItems,
 } from '../engine/daily-plan.js';
 import { levelIndex, upcomingUnits, type PathParams } from '../engine/path.js';
+import { loadCompetency, type Competency } from './competency.js';
 import type { CatalogUnit } from './content-cache.js';
 import type { ServiceDeps } from './deps.js';
+import { buildEncouragement, type EncouragementDto } from './encouragement.js';
 import type { SessionSummaryDto } from './lesson-session.js';
 import {
   rankForContext,
@@ -62,6 +68,8 @@ export interface PlanItemDto {
   estMinutes: number;
   status: 'pending' | 'in_progress' | 'completed';
   itemCount: number | null;
+  /** Mức năng lực của KỸ NĂNG của đơn vị với `new_unit` (spec 007); null với `review_batch`. */
+  competency: CompetencyLevel | null;
 }
 
 export interface DailyPlanDto {
@@ -77,6 +85,11 @@ export interface DailyPlanDto {
    * để không đè thông báo khoảng nghỉ/hết nội dung chung. Kế hoạch vẫn có bài kỹ năng khác và ôn tập.
    */
   kanjiNotice?: KanjiNoticeDto;
+  /**
+   * Lời khích lệ của `GET /today` (spec 007, FR-026): trạng thái chọn tất định từ tiến độ đã ghi + câu theo ngôn ngữ
+   * hồ sơ. Chỉ gắn ở `getTodayPlan` (không có ở `POST /today/extra`, không có khi lộ trình tạm dừng).
+   */
+  encouragement?: EncouragementDto;
   /** Chỉ có khi ngày đã hoàn thành: kết quả tổng hợp của mọi phiên trong kế hoạch (US2.3). */
   summary?: SessionSummaryDto;
 }
@@ -128,6 +141,7 @@ async function toDto(
   deps: Pick<ServiceDeps, 'db'>,
   plan: DailyPlanRow,
   language: Language,
+  competency: Competency,
   kanjiNotice: KanjiNoticeDto | null = null,
 ): Promise<DailyPlanDto> {
   const items = await listPlanItems(deps.db, plan.id);
@@ -155,6 +169,10 @@ async function toDto(
       estMinutes: i.estMinutes,
       status: i.status,
       itemCount: i.type === 'review_batch' ? (i.reviewItemIds?.length ?? 0) : null,
+      competency:
+        i.type === 'new_unit' && i.unitId && units.get(i.unitId)
+          ? competency.skillLevel(units.get(i.unitId)!.kind)
+          : null,
     })),
   };
 }
@@ -174,15 +192,24 @@ async function generatePlan(
   // Suất Kanji (research K5): bảo đảm bài Kanji có mặt từ ngày đầu và tối thiểu cách một ngày có bài mới;
   // no-op khi người học không chọn Kanji nên kế hoạch cũ giống hệt (FR-009, SC-006).
   const lastKinds = await lastNewUnitPlanKinds(deps.db, userId, localDate);
-  const candidates = applyKanjiSlot(
+  // Suất luyện đọc/viết (spec 007, data-model §3.2) đi TRƯỚC suất Kanji; `profile.skills` đã là kỹ năng hiệu
+  // lực nên người dưới 30 phút (hoặc không chọn luyện) không bao giờ có ứng viên luyện được đẩy lên (I2, I3).
+  const practiced = applyPracticeSlot(
     upcoming.map((u) => ({ unitId: u.id, estMinutes: u.estMinutes, kind: u.kind })),
     {
       skills: profile.skills,
       prioritizedSkill: profile.prioritizedSkill,
-      lastNewUnitPlanHadKanji: lastKinds === null ? null : lastKinds.includes('kanji'),
+      lastNewUnitPlanKinds: lastKinds,
+      lastPracticeKind: await lastPracticeKind(deps.db, userId, localDate),
       budgetMinutes,
     },
   );
+  const candidates = applyKanjiSlot(practiced, {
+    skills: profile.skills,
+    prioritizedSkill: profile.prioritizedSkill,
+    lastNewUnitPlanHadKanji: lastKinds === null ? null : lastKinds.includes('kanji'),
+    budgetMinutes,
+  });
   // Mục ôn đến hạn xếp theo ưu tiên (mục khó, quá hạn lâu nhất); mục không vừa quỹ hôm nay không bị
   // sửa `due_date` nên tiếp tục được ưu tiên ở ngày sau (T078, R7).
   // Khóa ghép `itemId[:facet]` (research K3) đi qua engine không đổi chữ ký; facet `item` giữ nguyên `itemId`.
@@ -272,7 +299,9 @@ export async function getTodayPlan(deps: ServiceDeps, userId: string): Promise<D
     plan = await findPlan(deps.db, userId, localDate);
   }
   const kanjiNotice = await kanjiNoticeFor(deps, userId, ctx);
-  return toDto(deps, plan!, profile.language, kanjiNotice);
+  const competency = await loadCompetency(deps, userId, profile.skills);
+  const dto = await toDto(deps, plan!, profile.language, competency, kanjiNotice);
+  return { ...dto, encouragement: await buildEncouragement(deps, userId, ctx, dto) };
 }
 
 /** Tính `kanjiNotice` hiện tại (null nếu không chọn Kanji hoặc vẫn còn bài Kanji sắp tới). */
@@ -344,10 +373,14 @@ export async function getExtraUnit(deps: ServiceDeps, userId: string): Promise<P
     (r) => (r.status === 'pending' || r.status === 'in_progress') && !planned.has(r.unit.id),
   );
   if (!next) {
+    // Người chưa đủ 30 phút không bao giờ được mời bật luyện đọc/viết qua gợi ý "thêm kỹ năng" (spec 007).
+    const eligible = isPracticeEligible(profile.dailyMinutes);
     const suggestion = suggestAfterExhaustion(
       params,
       profile.skills,
-      await deps.contentCache.activeUnits(),
+      (await deps.contentCache.activeUnits()).filter(
+        (u) => eligible || (u.kind !== 'reading' && u.kind !== 'writing'),
+      ),
     );
     throw new AppError(404, 'CONTENT_EXHAUSTED', EXHAUSTED_MESSAGES[suggestion], { suggestion });
   }
@@ -359,5 +392,6 @@ export async function getExtraUnit(deps: ServiceDeps, userId: string): Promise<P
     estMinutes: next.unit.estMinutes,
     status: next.status === 'in_progress' ? 'in_progress' : 'pending',
     itemCount: null,
+    competency: (await loadCompetency(deps, userId, profile.skills)).skillLevel(next.unit.kind),
   };
 }

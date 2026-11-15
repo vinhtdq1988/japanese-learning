@@ -1,0 +1,322 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-passive-causative-honorific",
+  "title": {
+    "vi": "Xin phép khiêm nhường: 〜(さ)せていただく và 〜(さ)せていただけませんか",
+    "en": "Humble permission: 〜(さ)せていただく and 〜(さ)せていただけませんか"
+  },
+  "goalTags": [
+    "jlpt"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3010,
+  "isTrial": false,
+  "requires": [
+    "n3-grammar-passive-causative",
+    "n4-grammar-honorific-basic-03"
+  ],
+  "items": [
+    {
+      "japanese": "〜(さ)せていただく",
+      "meaning": {
+        "vi": "Xin được ~ (khiêm nhường)",
+        "en": "Humbly be allowed to ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể sai khiến + て + いただく (司会をさせていただきます). Nói mình làm việc gì với sự cho phép/ân huệ của người nghe, rất khiêm nhường; dùng nhiều trong kinh doanh. Là dạng lịch sự của 〜(さ)せてもらう (N4). Không nên lạm dụng khi không cần xin phép.",
+        "en": "Conjugation: causative form + て + いただく (司会をさせていただきます). States that one does something with the listener's permission or favor, very humbly; heavily used in business. The polite form of 〜(さ)せてもらう (N4). It should not be overused when no permission is involved."
+      },
+      "examples": [
+        {
+          "ja": "本日は、私が司会をさせていただきます。",
+          "reading": "ほんじつは、わたしがしかいをさせていただきます。",
+          "translation": {
+            "vi": "Hôm nay tôi xin được làm người dẫn chương trình.",
+            "en": "Today I will humbly serve as the host."
+          }
+        },
+        {
+          "ja": "明日、休みを取らせていただきたいのですが。",
+          "reading": "あした、やすみをとらせていただきたいのですが。",
+          "translation": {
+            "vi": "Tôi xin phép được nghỉ vào ngày mai ạ.",
+            "en": "I would like to ask your permission to take tomorrow off."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-030"
+    },
+    {
+      "japanese": "〜(さ)せていただけませんか",
+      "meaning": {
+        "vi": "Xin cho phép tôi ~ được không",
+        "en": "May I be allowed to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể sai khiến + て + いただけませんか (いただけますか). Xin phép rất lịch sự. Cấu trúc ghép của 〜(さ)せていただく và 〜ていただけませんか (N4). Chỉ dùng khi việc đó cần được người nghe cho phép.",
+        "en": "Usage: causative form + て + いただけませんか (いただけますか). A very polite request for permission, combining 〜(さ)せていただく and 〜ていただけませんか (N4). Used only when the listener's permission is actually needed."
+      },
+      "examples": [
+        {
+          "ja": "少し意見を言わせていただけませんか。",
+          "reading": "すこしいけんをいわせていただけませんか。",
+          "translation": {
+            "vi": "Xin cho phép tôi nói đôi lời ý kiến được không ạ?",
+            "en": "May I be permitted to give a short opinion?"
+          }
+        },
+        {
+          "ja": "写真を撮らせていただけませんか。",
+          "reading": "しゃしんをとらせていただけませんか。",
+          "translation": {
+            "vi": "Xin cho phép tôi chụp ảnh được không ạ?",
+            "en": "May I take a photo?"
+          }
+        }
+      ],
+      "scopeRef": "g-n3-031"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜(さ)せていただく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n本日は、私が司会を（　）いただきます。",
+        "en": "Choose the correct option for the blank:\n本日は、私が司会を（　）いただきます。"
+      },
+      "payload": {
+        "choices": [
+          "されて",
+          "して",
+          "させられて",
+          "させて"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể sai khiến + て: 「司会をさせていただきます」.",
+        "en": "Correct! Causative + て: 「司会をさせていただきます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể sai khiến + て: 「司会をさせていただきます」.",
+        "en": "Not quite. Causative + て: 「司会をさせていただきます」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日、休みを取ら___いただきたいのですが。",
+        "en": "Choose the correct option for the blank:\n明日、休みを取ら___いただきたいのですが。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "せて"
+        ],
+        "hint": "〜せて"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「取る」 → 「取らせて」: 「取らせていただきたい」.",
+        "en": "Correct! 「取る」→「取らせて」: 「取らせていただきたい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「取る」 → 「取らせて」: 「取らせていただきたい」.",
+        "en": "Not quite. 「取る」→「取らせて」: 「取らせていただきたい」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただく",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n(người nói xin phép sếp) 今日は早く帰ら（　）。",
+        "en": "Choose the pattern that best fits the context:\n(người nói xin phép sếp) 今日は早く帰ら（　）。"
+      },
+      "payload": {
+        "choices": [
+          "れていただきます",
+          "せられます",
+          "せていただきます",
+          "していただきます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xin phép được làm việc của mình: 「帰らせていただきます」.",
+        "en": "Correct! Asking permission to do one's own action: 「帰らせていただきます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xin phép được làm việc của mình: 「帰らせていただきます」.",
+        "en": "Not quite. Asking permission to do one's own action: 「帰らせていただきます」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただく",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "先に帰りせていただきます。",
+          "先に帰らせていただきます。",
+          "先に帰るせていただきます。",
+          "先に帰られていただきます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「帰る」 → 「帰らせる」 + 「ていただく」.",
+        "en": "Correct! 「帰る」→「帰らせる」 + 「ていただく」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「帰る」 → 「帰らせる」 + 「ていただく」.",
+        "en": "Not quite. 「帰る」→「帰らせる」 + 「ていただく」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただけませんか",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n少し意見を言わ（　）いただけませんか。",
+        "en": "Choose the correct option for the blank:\n少し意見を言わ（　）いただけませんか。"
+      },
+      "payload": {
+        "choices": [
+          "せて",
+          "れて",
+          "せ",
+          "して"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xin phép nói: 「言わせていただけませんか」.",
+        "en": "Correct! Asking permission to speak: 「言わせていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xin phép nói: 「言わせていただけませんか」.",
+        "en": "Not quite. Asking permission to speak: 「言わせていただけませんか」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただけませんか",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n写真を撮ら___いただけませんか。",
+        "en": "Choose the correct option for the blank:\n写真を撮ら___いただけませんか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "せて"
+        ],
+        "hint": "〜せて"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xin phép chụp ảnh: 「撮らせていただけませんか」.",
+        "en": "Correct! Asking permission to take a photo: 「撮らせていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xin phép chụp ảnh: 「撮らせていただけませんか」.",
+        "en": "Not quite. Asking permission to take a photo: 「撮らせていただけませんか」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただけませんか",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n(xin phép khách hàng) 資料を拝見（　）。",
+        "en": "Choose the pattern that best fits the context:\n(xin phép khách hàng) 資料を拝見（　）。"
+      },
+      "payload": {
+        "choices": [
+          "していただけませんか",
+          "されていただけませんか",
+          "させてもらえませんか",
+          "させていただけませんか"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xin phép làm việc của mình trước khách: 「拝見させていただけませんか」.",
+        "en": "Correct! Asking a customer's permission for one's own action: 「拝見させていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xin phép làm việc của mình trước khách: 「拝見させていただけませんか」.",
+        "en": "Not quite. Asking a customer's permission for one's own action: 「拝見させていただけませんか」."
+      }
+    },
+    {
+      "item": "〜(さ)せていただけませんか",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "ここで、少し説明していただかせませんか。",
+          "ここで、少し説明させていただけますせんか。",
+          "ここで、少し説明させていただけませんか。",
+          "ここで、少し説明されていただけませんか。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng: 「Vさせていただけませんか」.",
+        "en": "Correct! The correct pattern: 「Vさせていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng: 「Vさせていただけませんか」.",
+        "en": "Not quite. The correct pattern: 「Vさせていただけませんか」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜(さ)せていただく",
+            {
+              "vi": "Xin được ~ (khiêm nhường)",
+              "en": "Humbly be allowed to ~"
+            }
+          ],
+          [
+            "〜(さ)せていただけませんか",
+            {
+              "vi": "Xin cho phép tôi ~ được không",
+              "en": "May I be allowed to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

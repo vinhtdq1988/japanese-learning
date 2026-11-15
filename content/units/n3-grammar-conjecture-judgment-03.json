@@ -1,0 +1,494 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conjecture-judgment",
+  "title": {
+    "vi": "Phán đoán (3): 〜かねない, 〜かねる, 〜おそれがある, 〜とは限らない",
+    "en": "Judgment (3): 〜かねない, 〜かねる, 〜おそれがある, 〜とは限らない"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜かねない",
+      "meaning": {
+        "vi": "Có thể dẫn đến ~ (xấu)",
+        "en": "Might well ~ (bad outcome)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + かねない. Có khả năng xảy ra điều không tốt (危険性を示す). Mạnh hơn 〜かもしれない ở chỗ nhấn vào mối nguy; chủ yếu đi với kết quả tiêu cực. Không dùng với kết quả tốt.",
+        "en": "Usage: verb ます-stem + かねない. A real possibility of something bad happening (it signals risk). Stronger than 〜かもしれない in stressing danger; used mainly with negative outcomes, not good ones."
+      },
+      "examples": [
+        {
+          "ja": "そんなに無理をすると、病気になりかねません。",
+          "reading": "そんなにむりをすると、びょうきになりかねません。",
+          "translation": {
+            "vi": "Cố quá sức như vậy thì có thể sẽ đổ bệnh.",
+            "en": "If you overdo it like that, you might well get sick."
+          }
+        },
+        {
+          "ja": "このままでは、大変なことになりかねない。",
+          "reading": "このままでは、たいへんなことになりかねない。",
+          "translation": {
+            "vi": "Cứ thế này thì có thể xảy ra chuyện nghiêm trọng.",
+            "en": "At this rate, something serious could happen."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-046"
+    },
+    {
+      "japanese": "〜かねる",
+      "meaning": {
+        "vi": "Không thể ~ (khó mà ~)",
+        "en": "Cannot bring oneself to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + かねる (かねます). Cách từ chối lịch sự, khéo léo: không thể làm vì lý do hoàn cảnh hoặc không muốn, thường trong dịch vụ, kinh doanh (お答えしかねます). Về hình thức là khẳng định nhưng nghĩa phủ định.",
+        "en": "Usage: verb ます-stem + かねる (かねます). A polite, tactful refusal: unable (or unwilling) to do it for circumstantial reasons, common in service and business (お答えしかねます). Affirmative in form but negative in meaning."
+      },
+      "examples": [
+        {
+          "ja": "その意見には、賛成しかねます。",
+          "reading": "そのいけんには、さんせいしかねます。",
+          "translation": {
+            "vi": "Tôi khó mà tán thành ý kiến đó.",
+            "en": "I find it hard to agree with that opinion."
+          }
+        },
+        {
+          "ja": "お客様のご要望には、お応えしかねます。",
+          "reading": "おきゃくさまのごようぼうには、おこたえしかねます。",
+          "translation": {
+            "vi": "Chúng tôi không thể đáp ứng yêu cầu của quý khách.",
+            "en": "We are unable to meet the customer's request."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-047"
+    },
+    {
+      "japanese": "〜おそれがある",
+      "meaning": {
+        "vi": "Có nguy cơ ~",
+        "en": "There is a risk that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / danh từ の + おそれがある (おそれ = 恐れ/虞). Cảnh báo khả năng xảy ra điều xấu; thường trong bản tin, thông báo, văn bản pháp luật. Chỉ dùng với điều không tốt.",
+        "en": "Usage: verb dictionary form / noun の + おそれがある (おそれ = 恐れ/虞). Warns that something bad may happen; typical of news, notices and legal text. Used only for bad things."
+      },
+      "examples": [
+        {
+          "ja": "台風で、電車が止まるおそれがあります。",
+          "reading": "たいふうで、でんしゃがとまるおそれがあります。",
+          "translation": {
+            "vi": "Vì bão, có nguy cơ tàu điện sẽ ngừng chạy.",
+            "en": "Because of the typhoon, trains may be suspended."
+          }
+        },
+        {
+          "ja": "この薬は、副作用のおそれがあります。",
+          "reading": "このくすりは、ふくさようのおそれがあります。",
+          "translation": {
+            "vi": "Thuốc này có nguy cơ gây tác dụng phụ.",
+            "en": "This medicine carries a risk of side effects."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-048"
+    },
+    {
+      "japanese": "〜とは限らない",
+      "meaning": {
+        "vi": "Không phải lúc nào cũng ~",
+        "en": "Not necessarily ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + とは限らない (かぎらない). Phủ nhận một phần suy nghĩ thông thường: có ngoại lệ, không phải lúc nào/ai cũng đúng. Hay đi với 必ずしも (nhất thiết).",
+        "en": "Usage: plain form + とは限らない (かぎらない). Partly denies a common assumption: there are exceptions, it is not always or for everyone. Often with 必ずしも (\"necessarily\")."
+      },
+      "examples": [
+        {
+          "ja": "高い物がいいとは限りません。",
+          "reading": "たかいものがいいとはかぎりません。",
+          "translation": {
+            "vi": "Không phải cứ đồ đắt là tốt.",
+            "en": "Expensive things are not necessarily good."
+          }
+        },
+        {
+          "ja": "日本人だからといって、全員が寿司が好きだとは限らない。",
+          "reading": "にほんじんだからといって、ぜんいんがすしがすきだとはかぎらない。",
+          "translation": {
+            "vi": "Dù là người Nhật không có nghĩa ai cũng thích sushi.",
+            "en": "Not every Japanese person necessarily likes sushi."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-049"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜かねない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nそんなに無理をすると、病気になり（　）。",
+        "en": "Choose the correct option for the blank:\nそんなに無理をすると、病気になり（　）。"
+      },
+      "payload": {
+        "choices": [
+          "かねません",
+          "かねます",
+          "かもしれ",
+          "そうです"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nguy cơ xấu: 「病気になりかねません」.",
+        "en": "Correct! A risk of something bad: 「病気になりかねません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nguy cơ xấu: 「病気になりかねません」.",
+        "en": "Not quite. A risk of something bad: 「病気になりかねません」."
+      }
+    },
+    {
+      "item": "〜かねない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのままでは、大変なことになり___。",
+        "en": "Choose the correct option for the blank:\nこのままでは、大変なことになり___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かねない"
+        ],
+        "hint": "〜かねない"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cảnh báo nguy cơ: 「なりかねない」.",
+        "en": "Correct! Warning of a risk: 「なりかねない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cảnh báo nguy cơ: 「なりかねない」.",
+        "en": "Not quite. Warning of a risk: 「なりかねない」."
+      }
+    },
+    {
+      "item": "〜かねない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "運転中に携帯電話を使うと、事故を起こしかねます。",
+          "運転中に携帯電話を使うと、うれしいことになりかねません。",
+          "運転中に携帯電話を使うと、事故を起こすかねません。",
+          "運転中に携帯電話を使うと、事故を起こしかねません。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Gốc ます + 「かねません」, và kết quả phải là điều xấu (事故).",
+        "en": "Correct! ます-stem + 「かねません」, and the outcome must be bad (事故)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Gốc ます + 「かねません」, và kết quả phải là điều xấu (事故).",
+        "en": "Not quite. ます-stem + 「かねません」, and the outcome must be bad (事故)."
+      }
+    },
+    {
+      "item": "〜かねる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nその意見には、賛成し（　）。",
+        "en": "Choose the correct option for the blank:\nその意見には、賛成し（　）。"
+      },
+      "payload": {
+        "choices": [
+          "かねません",
+          "ますかね",
+          "かねます",
+          "あたいます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ chối lịch sự (khó mà tán thành): 「賛成しかねます」.",
+        "en": "Correct! A polite refusal (find it hard to agree): 「賛成しかねます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ chối lịch sự (khó mà tán thành): 「賛成しかねます」.",
+        "en": "Not quite. A polite refusal (find it hard to agree): 「賛成しかねます」."
+      }
+    },
+    {
+      "item": "〜かねる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお客様のご要望には、お応えし___。",
+        "en": "Choose the correct option for the blank:\nお客様のご要望には、お応えし___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かねます"
+        ],
+        "hint": "〜かねます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ chối khéo: 「お応えしかねます」.",
+        "en": "Correct! A tactful refusal: 「お応えしかねます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ chối khéo: 「お応えしかねます」.",
+        "en": "Not quite. A tactful refusal: 「お応えしかねます」."
+      }
+    },
+    {
+      "item": "〜かねる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこの件については、私一人では判断し（　）。",
+        "en": "Choose the pattern that best fits the context:\nこの件については、私一人では判断し（　）。"
+      },
+      "payload": {
+        "choices": [
+          "かねません",
+          "かねます",
+          "そうです",
+          "ようがあります"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể quyết định một mình: 「判断しかねます」 (khẳng định về hình thức, nghĩa phủ định).",
+        "en": "Correct! Cannot decide alone: 「判断しかねます」 (affirmative in form, negative in meaning)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể quyết định một mình: 「判断しかねます」 (khẳng định về hình thức, nghĩa phủ định).",
+        "en": "Not quite. Cannot decide alone: 「判断しかねます」 (affirmative in form, negative in meaning)."
+      }
+    },
+    {
+      "item": "〜おそれがある",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n台風で、電車が止まる（　）があります。",
+        "en": "Choose the correct option for the blank:\n台風で、電車が止まる（　）があります。"
+      },
+      "payload": {
+        "choices": [
+          "おそれ",
+          "つもり",
+          "はず",
+          "わけ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cảnh báo nguy cơ: 「止まるおそれがあります」.",
+        "en": "Correct! A warning of risk: 「止まるおそれがあります」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cảnh báo nguy cơ: 「止まるおそれがあります」.",
+        "en": "Not quite. A warning of risk: 「止まるおそれがあります」."
+      }
+    },
+    {
+      "item": "〜おそれがある",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの薬は、副作用の___があります。",
+        "en": "Choose the correct option for the blank:\nこの薬は、副作用の___があります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おそれ"
+        ],
+        "hint": "おそれ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Có nguy cơ tác dụng phụ: 「副作用のおそれ」.",
+        "en": "Correct! A risk of side effects: 「副作用のおそれ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Có nguy cơ tác dụng phụ: 「副作用のおそれ」.",
+        "en": "Not quite. A risk of side effects: 「副作用のおそれ」."
+      }
+    },
+    {
+      "item": "〜おそれがある",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "大雨で、うれしいことになるおそれがあります。",
+          "大雨で、川が増水するおそれにあります。",
+          "大雨で、川が増水するおそれだあります。",
+          "大雨で、川が増水するおそれがあります。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おそれがある」 chỉ dùng với điều xấu (川が増水する) và đúng mẫu 「おそれがある」.",
+        "en": "Correct! 「おそれがある」 is only for bad things (川が増水する) and takes the exact form 「おそれがある」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おそれがある」 chỉ dùng với điều xấu (川が増水する) và đúng mẫu 「おそれがある」.",
+        "en": "Not quite. 「おそれがある」 is only for bad things (川が増水する) and takes the exact form 「おそれがある」."
+      }
+    },
+    {
+      "item": "〜とは限らない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n高い物がいい（　）限りません。",
+        "en": "Choose the correct option for the blank:\n高い物がいい（　）限りません。"
+      },
+      "payload": {
+        "choices": [
+          "ては",
+          "には",
+          "とは",
+          "のは"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「〜とは限らない」: 「いいとは限りません」.",
+        "en": "Correct! The pattern 「〜とは限らない」: 「いいとは限りません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「〜とは限らない」: 「いいとは限りません」.",
+        "en": "Not quite. The pattern 「〜とは限らない」: 「いいとは限りません」."
+      }
+    },
+    {
+      "item": "〜とは限らない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n日本人でも、全員が納豆を食べられる（　）。",
+        "en": "Choose the pattern that best fits the context:\n日本人でも、全員が納豆を食べられる（　）。"
+      },
+      "payload": {
+        "choices": [
+          "わけがない",
+          "とは限らない",
+          "に違いない",
+          "かねない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ nhận một phần (có ngoại lệ): 「食べられるとは限らない」.",
+        "en": "Correct! A partial denial (there are exceptions): 「食べられるとは限らない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ nhận một phần (có ngoại lệ): 「食べられるとは限らない」.",
+        "en": "Not quite. A partial denial (there are exceptions): 「食べられるとは限らない」."
+      }
+    },
+    {
+      "item": "〜とは限らない",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n高い物が　＿　＿　★　＿　。\n（いい／とは／限り／ません）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n高い物が　＿　＿　★　＿　。\n（いい／とは／限り／ません）"
+      },
+      "payload": {
+        "choices": [
+          "限り",
+          "いい",
+          "とは",
+          "ません"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「高い物がいいとは限りません。」; ô ★ (thứ ba) là 「限り」.",
+        "en": "Correct! The correct sentence is 「高い物がいいとは限りません。」; the ★ (third) slot is 「限り」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「高い物がいいとは限りません。」; ô ★ (thứ ba) là 「限り」.",
+        "en": "Not quite. The correct sentence is 「高い物がいいとは限りません。」; the ★ (third) slot is 「限り」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜かねない",
+            {
+              "vi": "Có thể dẫn đến ~ (xấu)",
+              "en": "Might well ~ (bad outcome)"
+            }
+          ],
+          [
+            "〜かねる",
+            {
+              "vi": "Không thể ~ (khó mà ~)",
+              "en": "Cannot bring oneself to ~"
+            }
+          ],
+          [
+            "〜おそれがある",
+            {
+              "vi": "Có nguy cơ ~",
+              "en": "There is a risk that ~"
+            }
+          ],
+          [
+            "〜とは限らない",
+            {
+              "vi": "Không phải lúc nào cũng ~",
+              "en": "Not necessarily ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

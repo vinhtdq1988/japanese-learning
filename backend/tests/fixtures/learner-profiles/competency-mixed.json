@@ -1,0 +1,65 @@
+{
+  "id": "competency-mixed",
+  "description": "Người học N5 30 phút, đủ năm kỹ năng: từ vựng và luyện đọc tốt (≥ 70%), Kanji cần cải thiện (50%, đủ 10 câu), luyện viết mới có 5 câu (chưa đủ dữ liệu), ngữ pháp chưa có dữ liệu.",
+  "asOf": "2026-01-08",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "jlpt",
+    "targetLevel": "N4",
+    "dailyMinutes": 30,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar", "kanji", "reading", "writing"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-07",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-05",
+      "topic": "greetings",
+      "context": "lesson",
+      "results": [1, 1, 1, 0, 1, 1, 1, 0, 1, 1]
+    },
+    {
+      "date": "2026-01-06",
+      "topic": "kanji-n5-numbers",
+      "context": "lesson",
+      "results": [1, 0, 0, 1, 0, 1, 1, 0, 0, 1]
+    },
+    {
+      "date": "2026-01-06",
+      "topic": "reading-n5-daily-life",
+      "context": "lesson",
+      "results": [1, 1, 0, 1, 1, 1, 1, 0, 1, 1]
+    },
+    {
+      "date": "2026-01-07",
+      "topic": "writing-n5-greetings",
+      "context": "lesson",
+      "results": [1, 1, 0, 1, 1]
+    }
+  ],
+  "reviewBacklog": [],
+  "expected": {
+    "competency": {
+      "skills": {
+        "vocabulary": "good",
+        "grammar": "insufficient",
+        "kanji": "needs_improvement",
+        "reading": "good",
+        "writing": "insufficient"
+      },
+      "topics": {
+        "greetings": "good",
+        "kanji-n5-numbers": "needs_improvement",
+        "reading-n5-daily-life": "good",
+        "writing-n5-greetings": "insufficient"
+      },
+      "weakTopics": ["kanji-n5-numbers"]
+    }
+  }
+}

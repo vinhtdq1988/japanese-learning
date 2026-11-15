@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-obligation-possibility",
+  "title": {
+    "vi": "Nghĩa vụ (1): 〜べきだ và 〜ざるをえない",
+    "en": "Obligation (1): 〜べきだ and 〜ざるをえない"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜べきだ／〜べきではない",
+      "meaning": {
+        "vi": "Nên/không nên ~ (đạo lý)",
+        "en": "Should / should not ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + べきだ (する → すべき/するべき). Nghĩa vụ hoặc lẽ phải theo đạo lý, chuẩn mực xã hội, mang tính phán đoán khách quan, mạnh hơn 〜たほうがいい. Phủ định: 〜べきではない.",
+        "en": "Usage: verb dictionary form + べきだ (する → すべき/するべき). A duty or what is right by morality or social norms, an objective judgment stronger than 〜たほうがいい. Negative: 〜べきではない."
+      },
+      "examples": [
+        {
+          "ja": "学生は、まず勉強すべきです。",
+          "reading": "がくせいは、まずべんきょうすべきです。",
+          "translation": {
+            "vi": "Học sinh trước hết nên học tập.",
+            "en": "Students should study first of all."
+          }
+        },
+        {
+          "ja": "人の悪口を言うべきではありません。",
+          "reading": "ひとのわるぐちをいうべきではありません。",
+          "translation": {
+            "vi": "Không nên nói xấu người khác.",
+            "en": "You should not speak ill of others."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-079"
+    },
+    {
+      "japanese": "〜ざるをえない",
+      "meaning": {
+        "vi": "Đành phải ~",
+        "en": "Have no choice but to ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể ない bỏ ない + ざるをえない (行かない→行かざるをえない; する→せざるをえない). Không còn lựa chọn nào khác, làm trái ý muốn. Văn viết/trang trọng, gần nghĩa 〜しかない.",
+        "en": "Conjugation: verb ない-form drop ない + ざるをえない (行かない→行かざるをえない; する→せざるをえない). No other choice, against one's wish. Written/formal, close to 〜しかない."
+      },
+      "examples": [
+        {
+          "ja": "雨なので、旅行を中止せざるをえません。",
+          "reading": "あめなので、りょこうをちゅうしせざるをえません。",
+          "translation": {
+            "vi": "Vì trời mưa nên đành phải hủy chuyến đi.",
+            "en": "Because of the rain, we have no choice but to cancel the trip."
+          }
+        },
+        {
+          "ja": "上司の命令なので、従わざるをえない。",
+          "reading": "じょうしのめいれいなので、したがわざるをえない。",
+          "translation": {
+            "vi": "Vì là lệnh của cấp trên nên đành phải tuân theo.",
+            "en": "It is my boss's order, so I have no choice but to obey."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-080"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜べきだ／〜べきではない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n学生は、まず勉強す（　）です。",
+        "en": "Choose the correct option for the blank:\n学生は、まず勉強す（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "べき",
+          "べきな",
+          "べきの",
+          "べきに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勉強する」 + 「べきです」: 「勉強すべきです」.",
+        "en": "Correct! 「勉強する」 + 「べきです」: 「勉強すべきです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「勉強する」 + 「べきです」: 「勉強すべきです」.",
+        "en": "Not quite. 「勉強する」 + 「べきです」: 「勉強すべきです」."
+      }
+    },
+    {
+      "item": "〜べきだ／〜べきではない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n人の悪口を言う___ではありません。",
+        "en": "Choose the correct option for the blank:\n人の悪口を言う___ではありません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "べき"
+        ],
+        "hint": "〜べき"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không nên: 「言うべきではありません」.",
+        "en": "Correct! You should not: 「言うべきではありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không nên: 「言うべきではありません」.",
+        "en": "Not quite. You should not: 「言うべきではありません」."
+      }
+    },
+    {
+      "item": "〜べきだ／〜べきではない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n約束した以上、守る（　）です。",
+        "en": "Choose the pattern that best fits the context:\n約束した以上、守る（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "わけ",
+          "ところ",
+          "ばかり",
+          "べき"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đạo lý/nghĩa vụ: 「守るべきです」.",
+        "en": "Correct! A moral duty: 「守るべきです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đạo lý/nghĩa vụ: 「守るべきです」.",
+        "en": "Not quite. A moral duty: 「守るべきです」."
+      }
+    },
+    {
+      "item": "〜べきだ／〜べきではない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "困っている人は、助けたべきです。",
+          "困っている人は、助けてべきです。",
+          "困っている人は、助けるべきです。",
+          "困っている人は、助けるのべきです。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「べき」 là động từ thể từ điển: 「助けるべき」.",
+        "en": "Correct! Before 「べき」 comes the dictionary form: 「助けるべき」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「べき」 là động từ thể từ điển: 「助けるべき」.",
+        "en": "Not quite. Before 「べき」 comes the dictionary form: 「助けるべき」."
+      }
+    },
+    {
+      "item": "〜ざるをえない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨なので、旅行を中止せ（　）をえません。",
+        "en": "Choose the correct option for the blank:\n雨なので、旅行を中止せ（　）をえません。"
+      },
+      "payload": {
+        "choices": [
+          "ない",
+          "ざる",
+          "ず",
+          "なく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「中止する」 → 「せざるをえない」 (する đổi thành せ).",
+        "en": "Correct! 「中止する」→「せざるをえない」 (する becomes せ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「中止する」 → 「せざるをえない」 (する đổi thành せ).",
+        "en": "Not quite. 「中止する」→「せざるをえない」 (する becomes せ)."
+      }
+    },
+    {
+      "item": "〜ざるをえない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n上司の命令なので、従わ___をえない。",
+        "en": "Choose the correct option for the blank:\n上司の命令なので、従わ___をえない。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざる"
+        ],
+        "hint": "〜ざる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「従う」 → 「従わざるをえない」.",
+        "en": "Correct! 「従う」→「従わざるをえない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「従う」 → 「従わざるをえない」.",
+        "en": "Not quite. 「従う」→「従わざるをえない」."
+      }
+    },
+    {
+      "item": "〜ざるをえない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n会社が決めたことなので、行か（　）。",
+        "en": "Choose the pattern that best fits the context:\n会社が決めたことなので、行か（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ざるをえない",
+          "ないほうがいい",
+          "なくてもいい",
+          "ようがない"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không còn lựa chọn nào khác: 「行かざるをえない」.",
+        "en": "Correct! There is no other choice: 「行かざるをえない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không còn lựa chọn nào khác: 「行かざるをえない」.",
+        "en": "Not quite. There is no other choice: 「行かざるをえない」."
+      }
+    },
+    {
+      "item": "〜ざるをえない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "病気なので、会議を欠席しざるをえません。",
+          "病気なので、会議を欠席するざるをえません。",
+          "病気なので、会議を欠席せないざるをえません。",
+          "病気なので、会議を欠席せざるをえません。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「する」 đổi thành 「せ」 trước 「ざる」: 「欠席せざるをえない」.",
+        "en": "Correct! 「する」 becomes 「せ」 before 「ざる」: 「欠席せざるをえない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「する」 đổi thành 「せ」 trước 「ざる」: 「欠席せざるをえない」.",
+        "en": "Not quite. 「する」 becomes 「せ」 before 「ざる」: 「欠席せざるをえない」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜べきだ／〜べきではない",
+            {
+              "vi": "Nên/không nên ~ (đạo lý)",
+              "en": "Should / should not ~"
+            }
+          ],
+          [
+            "〜ざるをえない",
+            {
+              "vi": "Đành phải ~",
+              "en": "Have no choice but to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

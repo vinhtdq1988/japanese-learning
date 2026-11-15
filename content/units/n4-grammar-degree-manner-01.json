@@ -1,0 +1,492 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-degree-manner",
+  "title": {
+    "vi": "Mức độ và cách thức (1): 〜すぎる, 〜やすい, 〜にくい, 〜方",
+    "en": "Degree and manner (1): 〜すぎる, 〜やすい, 〜にくい, 〜方"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 1420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜すぎる",
+      "meaning": {
+        "vi": "Quá ~",
+        "en": "Too much ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます / tính từ い bỏ い / tính từ な + すぎる (飲みすぎる, 高すぎる, 静かすぎる). Chỉ mức độ vượt quá giới hạn, thường mang nghĩa tiêu cực. Chia như động từ 一段 (すぎます, すぎた).",
+        "en": "Usage: verb ます-stem / い-adjective drop い / な-adjective + すぎる (飲みすぎる, 高すぎる, 静かすぎる). Indicates exceeding a limit, usually in a negative sense. It conjugates as an 一段 verb (すぎます, すぎた)."
+      },
+      "examples": [
+        {
+          "ja": "昨日は、お酒を飲みすぎました。",
+          "reading": "きのうは、おさけをのみすぎました。",
+          "translation": {
+            "vi": "Hôm qua tôi đã uống rượu quá nhiều.",
+            "en": "I drank too much yesterday."
+          }
+        },
+        {
+          "ja": "この部屋は、暑すぎます。",
+          "reading": "このへやは、あつすぎます。",
+          "translation": {
+            "vi": "Căn phòng này nóng quá.",
+            "en": "This room is too hot."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-078"
+    },
+    {
+      "japanese": "〜やすい",
+      "meaning": {
+        "vi": "Dễ ~",
+        "en": "Easy to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + やすい (書きやすい). Diễn tả việc đó dễ làm hoặc dễ xảy ra. Cũng nói về xu hướng dễ xảy ra điều không mong muốn (すべりやすい). Chia như tính từ い.",
+        "en": "Usage: verb ます-stem + やすい (書きやすい). Means the action is easy to do or easily happens. It also describes a tendency toward something unwanted (すべりやすい). It conjugates as an い-adjective."
+      },
+      "examples": [
+        {
+          "ja": "このペンは書きやすいです。",
+          "reading": "このペンはかきやすいです。",
+          "translation": {
+            "vi": "Cây bút này dễ viết.",
+            "en": "This pen is easy to write with."
+          }
+        },
+        {
+          "ja": "雨の日は、道がすべりやすいです。",
+          "reading": "あめのひは、みちがすべりやすいです。",
+          "translation": {
+            "vi": "Ngày mưa đường dễ trơn trượt.",
+            "en": "The road is slippery on rainy days."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-079"
+    },
+    {
+      "japanese": "〜にくい",
+      "meaning": {
+        "vi": "Khó ~",
+        "en": "Hard to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + にくい (読みにくい). Đối lập với 〜やすい, diễn tả việc khó làm do tính chất của vật hay hoàn cảnh. Không dùng cho khó khăn do trình độ của người nói (そのときは 難しい).",
+        "en": "Usage: verb ます-stem + にくい (読みにくい). The opposite of 〜やすい; it means something is hard to do because of the nature of the thing or situation. It is not used for difficulty due to the speaker's skill (use 難しい)."
+      },
+      "examples": [
+        {
+          "ja": "この漢字は、読みにくいです。",
+          "reading": "このかんじは、よみにくいです。",
+          "translation": {
+            "vi": "Chữ Hán này khó đọc.",
+            "en": "This kanji is hard to read."
+          }
+        },
+        {
+          "ja": "この靴は歩きにくいです。",
+          "reading": "このくつはあるきにくいです。",
+          "translation": {
+            "vi": "Đôi giày này khó đi.",
+            "en": "These shoes are hard to walk in."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-080"
+    },
+    {
+      "japanese": "〜方",
+      "meaning": {
+        "vi": "Cách ~",
+        "en": "Way of doing ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + 方 (かた). Danh từ hóa động từ thành \"cách làm\" (書き方, 使い方, 行き方). Thường nối bằng 「の」 với danh từ đứng trước (漢字の書き方).",
+        "en": "Usage: verb ます-stem + 方 (かた). Turns a verb into \"way of doing\" (書き方, 使い方, 行き方). A preceding noun is connected with 「の」 (漢字の書き方)."
+      },
+      "examples": [
+        {
+          "ja": "漢字の書き方を教えてください。",
+          "reading": "かんじのかきかたをおしえてください。",
+          "translation": {
+            "vi": "Xin hãy chỉ cho tôi cách viết chữ Hán.",
+            "en": "Please teach me how to write kanji."
+          }
+        },
+        {
+          "ja": "この機械の使い方がわかりません。",
+          "reading": "このきかいのつかいかたがわかりません。",
+          "translation": {
+            "vi": "Tôi không biết cách sử dụng cái máy này.",
+            "en": "I do not know how to use this machine."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-081"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜すぎる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n昨日は、お酒を飲み（　）。",
+        "en": "Choose the correct option for the blank:\n昨日は、お酒を飲み（　）。"
+      },
+      "payload": {
+        "choices": [
+          "すきました",
+          "ずきました",
+          "すぎました",
+          "すぎるました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「飲みすぎる」 chia như động từ 一段: 「飲みすぎました」.",
+        "en": "Correct! 「飲みすぎる」 conjugates like an 一段 verb: 「飲みすぎました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「飲みすぎる」 chia như động từ 一段: 「飲みすぎました」.",
+        "en": "Not quite. 「飲みすぎる」 conjugates like an 一段 verb: 「飲みすぎました」."
+      }
+    },
+    {
+      "item": "〜すぎる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの部屋は、暑___ます。",
+        "en": "Choose the correct option for the blank:\nこの部屋は、暑___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "すぎ"
+        ],
+        "hint": "〜すぎ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い bỏ い + すぎる: 「暑すぎます」.",
+        "en": "Correct! An い-adjective drops い + すぎる: 「暑すぎます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い bỏ い + すぎる: 「暑すぎます」.",
+        "en": "Not quite. An い-adjective drops い + すぎる: 「暑すぎます」."
+      }
+    },
+    {
+      "item": "〜すぎる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "このラーメンは、辛いすぎます。",
+          "このラーメンは、辛すぎます。",
+          "このラーメンは、辛くすぎます。",
+          "このラーメンは、辛さすぎます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い phải bỏ 「い」 trước 「すぎる」: 「辛すぎる」.",
+        "en": "Correct! An い-adjective must drop 「い」 before 「すぎる」: 「辛すぎる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い phải bỏ 「い」 trước 「すぎる」: 「辛すぎる」.",
+        "en": "Not quite. An い-adjective must drop 「い」 before 「すぎる」: 「辛すぎる」."
+      }
+    },
+    {
+      "item": "〜やすい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこのペンは軽くて、書き（　）です。",
+        "en": "Choose the correct option for the blank:\nこのペンは軽くて、書き（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "やすい",
+          "にくい",
+          "すぎ",
+          "方"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bút nhẹ nên viết dễ: 「書きやすい」.",
+        "en": "Correct! The pen is light, so it is easy to write with: 「書きやすい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bút nhẹ nên viết dễ: 「書きやすい」.",
+        "en": "Not quite. The pen is light, so it is easy to write with: 「書きやすい」."
+      }
+    },
+    {
+      "item": "〜やすい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨の日は、道がすべり___です。",
+        "en": "Choose the correct option for the blank:\n雨の日は、道がすべり___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "やすい"
+        ],
+        "hint": "〜やすい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dễ xảy ra điều không mong muốn: 「すべりやすい」.",
+        "en": "Correct! A tendency to easily happen: 「すべりやすい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dễ xảy ra điều không mong muốn: 「すべりやすい」.",
+        "en": "Not quite. A tendency to easily happen: 「すべりやすい」."
+      }
+    },
+    {
+      "item": "〜やすい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n字が小さくて、読み（　）です。",
+        "en": "Choose the pattern that best fits the context:\n字が小さくて、読み（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "やすい",
+          "すぎ",
+          "たがる",
+          "にくい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chữ nhỏ thì khó đọc: 「読みにくい」.",
+        "en": "Correct! Small print is hard to read: 「読みにくい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chữ nhỏ thì khó đọc: 「読みにくい」.",
+        "en": "Not quite. Small print is hard to read: 「読みにくい」."
+      }
+    },
+    {
+      "item": "〜にくい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの靴は大きすぎて、歩き（　）です。",
+        "en": "Choose the correct option for the blank:\nこの靴は大きすぎて、歩き（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "やすい",
+          "ながら",
+          "にくい",
+          "たい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Giày quá to nên khó đi: 「歩きにくい」.",
+        "en": "Correct! The shoes are too big, so they are hard to walk in: 「歩きにくい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Giày quá to nên khó đi: 「歩きにくい」.",
+        "en": "Not quite. The shoes are too big, so they are hard to walk in: 「歩きにくい」."
+      }
+    },
+    {
+      "item": "〜にくい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの漢字は、読み___です。",
+        "en": "Choose the correct option for the blank:\nこの漢字は、読み___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にくい"
+        ],
+        "hint": "〜にくい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khó đọc: 「読みにくい」.",
+        "en": "Correct! Hard to read: 「読みにくい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khó đọc: 「読みにくい」.",
+        "en": "Not quite. Hard to read: 「読みにくい」."
+      }
+    },
+    {
+      "item": "〜方",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n漢字の書き（　）を教えてください。",
+        "en": "Choose the correct option for the blank:\n漢字の書き（　）を教えてください。"
+      },
+      "payload": {
+        "choices": [
+          "事",
+          "方",
+          "所",
+          "物"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「書き方」 nghĩa là cách viết (động từ gốc ます + 方).",
+        "en": "Correct! 「書き方」 means the way of writing (verb ます-stem + 方)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「書き方」 nghĩa là cách viết (động từ gốc ます + 方).",
+        "en": "Not quite. 「書き方」 means the way of writing (verb ます-stem + 方)."
+      }
+    },
+    {
+      "item": "〜方",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの機械の使い___がわかりません。",
+        "en": "Choose the correct option for the blank:\nこの機械の使い___がわかりません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かた",
+          "方"
+        ],
+        "hint": "かた"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「使い方」 (つかいかた) là cách sử dụng.",
+        "en": "Correct! 「使い方」 (つかいかた) means how to use it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「使い方」 (つかいかた) là cách sử dụng.",
+        "en": "Not quite. 「使い方」 (つかいかた) means how to use it."
+      }
+    },
+    {
+      "item": "〜方",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "駅への行き方を教えてください。",
+          "駅への行く方を教えてください。",
+          "駅への行きの方を教えてください。",
+          "駅への行って方を教えてください。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「方」 gắn vào gốc ます (行き): 「行き方」.",
+        "en": "Correct! 「方」 attaches to the ます-stem (行き): 「行き方」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「方」 gắn vào gốc ます (行き): 「行き方」.",
+        "en": "Not quite. 「方」 attaches to the ます-stem (行き): 「行き方」."
+      }
+    },
+    {
+      "item": "〜方",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nこの機械の　＿　＿　★　＿　。\n（使い方が／わからなくて／困って／います）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nこの機械の　＿　＿　★　＿　。\n（使い方が／わからなくて／困って／います）"
+      },
+      "payload": {
+        "choices": [
+          "使い方が",
+          "わからなくて",
+          "います",
+          "困って"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「この機械の使い方がわからなくて困っています。」; ô ★ (thứ ba) là 「困って」.",
+        "en": "Correct! The correct sentence is 「この機械の使い方がわからなくて困っています。」; the ★ (third) slot is 「困って」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「この機械の使い方がわからなくて困っています。」; ô ★ (thứ ba) là 「困って」.",
+        "en": "Not quite. The correct sentence is 「この機械の使い方がわからなくて困っています。」; the ★ (third) slot is 「困って」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜すぎる",
+            {
+              "vi": "Quá ~",
+              "en": "Too much ~"
+            }
+          ],
+          [
+            "〜やすい",
+            {
+              "vi": "Dễ ~",
+              "en": "Easy to ~"
+            }
+          ],
+          [
+            "〜にくい",
+            {
+              "vi": "Khó ~",
+              "en": "Hard to ~"
+            }
+          ],
+          [
+            "〜方",
+            {
+              "vi": "Cách ~",
+              "en": "Way of doing ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

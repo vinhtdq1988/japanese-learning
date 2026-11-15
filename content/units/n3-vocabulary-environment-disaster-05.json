@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-environment-disaster",
+  "title": {
+    "vi": "Vệ sinh và đất đai",
+    "en": "Cleanliness and land"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1440,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "汚れ",
+      "reading": "よごれ",
+      "meaning": {
+        "vi": "Vết bẩn",
+        "en": "Dirt; stain"
+      },
+      "examples": [
+        {
+          "ja": "服についた汚れが、なかなか落ちません。",
+          "reading": "ふくについたよごれが、なかなかおちません。",
+          "translation": {
+            "vi": "Vết bẩn dính trên quần áo mãi không sạch.",
+            "en": "The stain on my clothes will not come out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "清潔",
+      "reading": "せいけつ",
+      "meaning": {
+        "vi": "Sạch sẽ; vệ sinh",
+        "en": "Clean; hygienic"
+      },
+      "examples": [
+        {
+          "ja": "台所は、いつも清潔にしておきましょう。",
+          "reading": "だいどころは、いつもせいけつにしておきましょう。",
+          "translation": {
+            "vi": "Hãy luôn giữ cho nhà bếp sạch sẽ.",
+            "en": "Let's always keep the kitchen clean."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "衛生",
+      "reading": "えいせい",
+      "meaning": {
+        "vi": "Vệ sinh (sức khỏe cộng đồng)",
+        "en": "Hygiene; sanitation"
+      },
+      "examples": [
+        {
+          "ja": "食べ物を扱うときは、衛生に気をつけます。",
+          "reading": "たべものをあつかうときは、えいせいにきをつけます。",
+          "translation": {
+            "vi": "Khi xử lý thức ăn, tôi chú ý vệ sinh.",
+            "en": "When handling food, I pay attention to hygiene."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "砂漠",
+      "reading": "さばく",
+      "meaning": {
+        "vi": "Sa mạc",
+        "en": "Desert"
+      },
+      "examples": [
+        {
+          "ja": "砂漠では、昼と夜の温度の差が大きいです。",
+          "reading": "さばくでは、ひるとよるのおんどのさがおおきいです。",
+          "translation": {
+            "vi": "Ở sa mạc, chênh lệch nhiệt độ ngày đêm rất lớn.",
+            "en": "In the desert, the temperature gap between day and night is large."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "排水",
+      "reading": "はいすい",
+      "meaning": {
+        "vi": "Thoát nước; nước thải",
+        "en": "Drainage"
+      },
+      "examples": [
+        {
+          "ja": "台所の排水が、詰まってしまいました。",
+          "reading": "だいどころのはいすいが、つまってしまいました。",
+          "translation": {
+            "vi": "Ống thoát nước của nhà bếp bị tắc.",
+            "en": "The kitchen drain got clogged."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "伐採",
+      "reading": "ばっさい",
+      "meaning": {
+        "vi": "Chặt (cây); khai thác gỗ",
+        "en": "Logging; felling trees"
+      },
+      "examples": [
+        {
+          "ja": "山の木を伐採しすぎると、災害が起きやすくなります。",
+          "reading": "やまのきをばっさいしすぎると、さいがいがおきやすくなります。",
+          "translation": {
+            "vi": "Chặt quá nhiều cây trên núi thì dễ xảy ra thiên tai.",
+            "en": "Cutting too many trees on the mountains makes disasters more likely."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "汚れ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 服についた（　）が、なかなか落ちません。 — Nghĩa của câu: “Vết bẩn dính trên quần áo mãi không sạch.”",
+        "en": "Choose the word that fits the blank: 服についた（　）が、なかなか落ちません。 — Meaning of the sentence: “The stain on my clothes will not come out.”"
+      },
+      "payload": {
+        "choices": [
+          "伐採",
+          "汚れ",
+          "清潔",
+          "衛生"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「汚れ」(Vết bẩn) hợp nghĩa câu này: “Vết bẩn dính trên quần áo mãi không sạch.”",
+        "en": "Correct! 「汚れ」(Dirt; stain) fits this sentence: “The stain on my clothes will not come out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vết bẩn dính trên quần áo mãi không sạch.”, nên cần 「汚れ」(Vết bẩn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The stain on my clothes will not come out.”, so it needs 「汚れ」(Dirt; stain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "清潔",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台所は、いつも（　）にしておきましょう。 — Nghĩa của câu: “Hãy luôn giữ cho nhà bếp sạch sẽ.”",
+        "en": "Choose the word that fits the blank: 台所は、いつも（　）にしておきましょう。 — Meaning of the sentence: “Let's always keep the kitchen clean.”"
+      },
+      "payload": {
+        "choices": [
+          "衛生",
+          "汚れ",
+          "清潔",
+          "伐採"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「清潔」(Sạch sẽ; vệ sinh) hợp nghĩa câu này: “Hãy luôn giữ cho nhà bếp sạch sẽ.”",
+        "en": "Correct! 「清潔」(Clean; hygienic) fits this sentence: “Let's always keep the kitchen clean.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy luôn giữ cho nhà bếp sạch sẽ.”, nên cần 「清潔」(Sạch sẽ; vệ sinh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's always keep the kitchen clean.”, so it needs 「清潔」(Clean; hygienic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "衛生",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 食べ物を扱うときは、（　）に気をつけます。 — Nghĩa của câu: “Khi xử lý thức ăn, tôi chú ý vệ sinh.”",
+        "en": "Choose the word that fits the blank: 食べ物を扱うときは、（　）に気をつけます。 — Meaning of the sentence: “When handling food, I pay attention to hygiene.”"
+      },
+      "payload": {
+        "choices": [
+          "汚れ",
+          "清潔",
+          "排水",
+          "衛生"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「衛生」(Vệ sinh (sức khỏe cộng đồng)) hợp nghĩa câu này: “Khi xử lý thức ăn, tôi chú ý vệ sinh.”",
+        "en": "Correct! 「衛生」(Hygiene; sanitation) fits this sentence: “When handling food, I pay attention to hygiene.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi xử lý thức ăn, tôi chú ý vệ sinh.”, nên cần 「衛生」(Vệ sinh (sức khỏe cộng đồng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When handling food, I pay attention to hygiene.”, so it needs 「衛生」(Hygiene; sanitation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "砂漠",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）では、昼と夜の温度の差が大きいです。 — Nghĩa của câu: “Ở sa mạc, chênh lệch nhiệt độ ngày đêm rất lớn.”",
+        "en": "Choose the word that fits the blank: （　）では、昼と夜の温度の差が大きいです。 — Meaning of the sentence: “In the desert, the temperature gap between day and night is large.”"
+      },
+      "payload": {
+        "choices": [
+          "砂漠",
+          "衛生",
+          "汚れ",
+          "伐採"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「砂漠」(Sa mạc) hợp nghĩa câu này: “Ở sa mạc, chênh lệch nhiệt độ ngày đêm rất lớn.”",
+        "en": "Correct! 「砂漠」(Desert) fits this sentence: “In the desert, the temperature gap between day and night is large.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở sa mạc, chênh lệch nhiệt độ ngày đêm rất lớn.”, nên cần 「砂漠」(Sa mạc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the desert, the temperature gap between day and night is large.”, so it needs 「砂漠」(Desert); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "排水",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台所の（　）が、詰まってしまいました。 — Nghĩa của câu: “Ống thoát nước của nhà bếp bị tắc.”",
+        "en": "Choose the word that fits the blank: 台所の（　）が、詰まってしまいました。 — Meaning of the sentence: “The kitchen drain got clogged.”"
+      },
+      "payload": {
+        "choices": [
+          "衛生",
+          "排水",
+          "汚れ",
+          "伐採"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「排水」(Thoát nước; nước thải) hợp nghĩa câu này: “Ống thoát nước của nhà bếp bị tắc.”",
+        "en": "Correct! 「排水」(Drainage) fits this sentence: “The kitchen drain got clogged.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ống thoát nước của nhà bếp bị tắc.”, nên cần 「排水」(Thoát nước; nước thải); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The kitchen drain got clogged.”, so it needs 「排水」(Drainage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "伐採",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 山の木を（　）しすぎると、災害が起きやすくなります。 — Nghĩa của câu: “Chặt quá nhiều cây trên núi thì dễ xảy ra thiên tai.”",
+        "en": "Choose the word that fits the blank: 山の木を（　）しすぎると、災害が起きやすくなります。 — Meaning of the sentence: “Cutting too many trees on the mountains makes disasters more likely.”"
+      },
+      "payload": {
+        "choices": [
+          "排水",
+          "汚れ",
+          "伐採",
+          "砂漠"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「伐採」(Chặt (cây); khai thác gỗ) hợp nghĩa câu này: “Chặt quá nhiều cây trên núi thì dễ xảy ra thiên tai.”",
+        "en": "Correct! 「伐採」(Logging; felling trees) fits this sentence: “Cutting too many trees on the mountains makes disasters more likely.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chặt quá nhiều cây trên núi thì dễ xảy ra thiên tai.”, nên cần 「伐採」(Chặt (cây); khai thác gỗ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Cutting too many trees on the mountains makes disasters more likely.”, so it needs 「伐採」(Logging; felling trees); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "汚れ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 服についた「汚れ」が、なかなか落ちません。",
+        "en": "Choose the correct reading of the word in 「」: 服についた「汚れ」が、なかなか落ちません。"
+      },
+      "payload": {
+        "choices": [
+          "ばっさい",
+          "せいけつ",
+          "よごれ",
+          "えいせい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「汚れ」 đọc là 「よごれ」, nghĩa là Vết bẩn.",
+        "en": "Correct! 「汚れ」 is read 「よごれ」 and means Dirt; stain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「汚れ」 đọc là 「よごれ」 (Vết bẩn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「汚れ」 is read 「よごれ」 (Dirt; stain); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "砂漠",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「砂漠」では、昼と夜の温度の差が大きいです。",
+        "en": "Choose the correct reading of the word in 「」: 「砂漠」では、昼と夜の温度の差が大きいです。"
+      },
+      "payload": {
+        "choices": [
+          "ばっさい",
+          "せいけつ",
+          "えいせい",
+          "さばく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「砂漠」 đọc là 「さばく」, nghĩa là Sa mạc.",
+        "en": "Correct! 「砂漠」 is read 「さばく」 and means Desert."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「砂漠」 đọc là 「さばく」 (Sa mạc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「砂漠」 is read 「さばく」 (Desert); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "衛生",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 食べ物を扱うときは、「えいせい」に気をつけます。",
+        "en": "Choose the correct way to write the word in 「」: 食べ物を扱うときは、「えいせい」に気をつけます。"
+      },
+      "payload": {
+        "choices": [
+          "清潔",
+          "汚れ",
+          "伐採",
+          "衛生"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「えいせい」 viết là 「衛生」, nghĩa là Vệ sinh (sức khỏe cộng đồng).",
+        "en": "Correct! 「えいせい」 is written 「衛生」 and means Hygiene; sanitation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「えいせい」 viết là 「衛生」 (Vệ sinh (sức khỏe cộng đồng)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「えいせい」 is written 「衛生」 (Hygiene; sanitation); the other words are read differently."
+      }
+    }
+  ]
+}

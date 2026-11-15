@@ -12,11 +12,14 @@ import '../../data/plan_adjustment_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../classroom/locked_control.dart';
+import '../competency/competency_chip.dart';
+import '../competency/competency_legend.dart';
 import '../path/plan_adjust_screen.dart';
 import '../path/scope_notice_banner.dart';
 import '../shared/error_messages.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
+import 'encouragement_banner.dart';
 
 /// Màn hình "Hôm nay" (T055, T070): bài mới, bài ôn và tổng thời lượng ước tính so với quỹ thời gian
 /// đã khai báo; mở/tiếp tục từng mục, trạng thái và tóm tắt khi hoàn thành ngày, nút "Học thêm" (US2.5).
@@ -163,6 +166,11 @@ class _TodayContentState extends ConsumerState<_TodayContent> {
         children: <Widget>[
           Text(l10n.todayHeading, style: theme.textTheme.headlineSmall),
           if (dateText.isNotEmpty) Text(dateText, key: const Key('today-date')),
+          // Lời khích lệ (FR-026): dải chữ tĩnh ngay dưới tiêu đề, không che tổng thời lượng và danh sách bài.
+          if (plan.encouragement != null) ...<Widget>[
+            const SizedBox(height: 12),
+            EncouragementBanner(encouragement: plan.encouragement),
+          ],
           const SizedBox(height: 12),
           Text(
             l10n.todayTimeSummary(
@@ -198,6 +206,11 @@ class _TodayContentState extends ConsumerState<_TodayContent> {
               const SizedBox(height: 12),
             ],
             for (final item in items) _PlanItemCard(item: item),
+            // Chú giải màu năng lực (FR-020); chỉ khi máy chủ có trả mức cho ít nhất một mục.
+            if (items.any((i) => i.competency != null)) ...<Widget>[
+              const SizedBox(height: 8),
+              const CompetencyLegend(),
+            ],
           ],
           if (dayCompleted || items.isEmpty) ...<Widget>[
             const SizedBox(height: 8),
@@ -320,6 +333,8 @@ class _PlanItemCard extends ConsumerWidget {
     final done = item.status == PlanItemStatusEnum.completed;
     final started = item.status == PlanItemStatusEnum.inProgress;
     final isKanji = item.kind == Skill.kanji;
+    final isReading = item.kind == Skill.reading;
+    final isWriting = item.kind == Skill.writing;
     final detail = <String>[
       l10n.minutesShort(item.estMinutes ?? 0),
       if (isReview && item.itemCount != null)
@@ -332,15 +347,44 @@ class _PlanItemCard extends ConsumerWidget {
         leading: Icon(
           isReview
               ? Icons.replay
-              : (isKanji ? Icons.translate : Icons.menu_book_outlined),
+              : isKanji
+              ? Icons.translate
+              : isReading
+              ? Icons.menu_book
+              : isWriting
+              ? Icons.edit
+              : Icons.menu_book_outlined,
         ),
         title: Text(item.title ?? ''),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              '${isReview ? l10n.todayTypeReview : (isKanji ? l10n.todayTypeKanji : l10n.todayTypeNew)} · $detail',
+              '${isReview
+                  ? l10n.todayTypeReview
+                  : isKanji
+                  ? l10n.todayTypeKanji
+                  : isReading
+                  ? l10n.todaySkillReading
+                  : isWriting
+                  ? l10n.todaySkillWriting
+                  : l10n.todayTypeNew} · $detail',
             ),
+            // Mức năng lực của kỹ năng (chỉ mục bài mới; gói ôn tập không có mức).
+            if (!isReview && item.competency != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: CompetencyChip(
+                    key: Key('competency-${item.id}'),
+                    level: item.competency,
+                    label: item.kind == null
+                        ? (item.title ?? '')
+                        : competencySkillLabel(l10n, item.kind!),
+                  ),
+                ),
+              ),
             if (dueOn != null)
               Text(
                 l10n.todayAssignedLabel(DateFormat('yyyy-MM-dd').format(dueOn)),

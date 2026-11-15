@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (支 産 資 利)",
+    "en": "Economy and money kanji (支 産 資 利)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "支",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "chống; chi; nhánh",
+        "en": "support; branch"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "ささ.える"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "支払い",
+          "reading": "しはらい",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "thanh toán",
+            "en": "payment"
+          }
+        },
+        {
+          "ja": "支える",
+          "reading": "ささえる",
+          "kanjiReading": "ささ",
+          "translation": {
+            "vi": "chống đỡ; hỗ trợ",
+            "en": "to support"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "産",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "sinh; sản xuất",
+        "en": "give birth; produce"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サン"
+        ],
+        "kunReadings": [
+          "う.む",
+          "う.まれる",
+          "うぶ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "生産",
+          "reading": "せいさん",
+          "kanjiReading": "サン",
+          "translation": {
+            "vi": "sản xuất",
+            "en": "production"
+          }
+        },
+        {
+          "ja": "産む",
+          "reading": "うむ",
+          "kanjiReading": "う",
+          "translation": {
+            "vi": "sinh (con)",
+            "en": "to give birth"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "資",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "vốn; tư liệu",
+        "en": "capital; resources"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "資料",
+          "reading": "しりょう",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "tài liệu",
+            "en": "materials"
+          }
+        },
+        {
+          "ja": "資金",
+          "reading": "しきん",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "vốn",
+            "en": "funds"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "利",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "lợi; sắc bén",
+        "en": "profit; advantage"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リ"
+        ],
+        "kunReadings": [
+          "き.く"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "利用",
+          "reading": "りよう",
+          "kanjiReading": "リ",
+          "translation": {
+            "vi": "sử dụng",
+            "en": "use"
+          }
+        },
+        {
+          "ja": "便利",
+          "reading": "べんり",
+          "kanjiReading": "リ",
+          "translation": {
+            "vi": "tiện lợi",
+            "en": "convenient"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "支",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「支」nghĩa là gì?",
+        "en": "What does 「支」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chống; chi; nhánh",
+            "en": "support; branch"
+          },
+          {
+            "vi": "sinh; sản xuất",
+            "en": "give birth; produce"
+          },
+          {
+            "vi": "vốn; tư liệu",
+            "en": "capital; resources"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 支 nghĩa là chống; chi; nhánh.",
+        "en": "Correct! 支 means support; branch."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 支 nghĩa là chống; chi; nhánh, như trong 「支払い」 (thanh toán).",
+        "en": "Not quite. 支 means support; branch, as in 「支払い」 (payment)."
+      }
+    },
+    {
+      "item": "支",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「支」 trong 「支払い」 (“thanh toán”).",
+        "en": "Type the reading of 「支」 in 「支払い」 (“payment”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 支払い, 支 đọc là し (âm On).",
+        "en": "Correct! In 支払い, 支 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 支払い (thanh toán), 支 đọc là し (âm On).",
+        "en": "In 支払い (payment), 支 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "支",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「支える」(chống đỡ; hỗ trợ) đọc là gì?",
+        "en": "How is 「支える」 (to support) read?"
+      },
+      "payload": {
+        "choices": [
+          "しえる",
+          "ささえる",
+          "せいさん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 支える = ささえる (chống đỡ; hỗ trợ); 支 đọc là ささ (âm Kun).",
+        "en": "Correct! 支える = ささえる (to support); 支 is read ささ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "支える đọc là ささえる (chống đỡ; hỗ trợ): 支 mang âm Kun ささ.",
+        "en": "支える is read ささえる (to support): 支 takes the kun'yomi ささ."
+      }
+    },
+    {
+      "item": "産",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「産」nghĩa là gì?",
+        "en": "What does 「産」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vốn; tư liệu",
+            "en": "capital; resources"
+          },
+          {
+            "vi": "sinh; sản xuất",
+            "en": "give birth; produce"
+          },
+          {
+            "vi": "lợi; sắc bén",
+            "en": "profit; advantage"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 産 nghĩa là sinh; sản xuất.",
+        "en": "Correct! 産 means give birth; produce."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 産 nghĩa là sinh; sản xuất, như trong 「生産」 (sản xuất).",
+        "en": "Not quite. 産 means give birth; produce, as in 「生産」 (production)."
+      }
+    },
+    {
+      "item": "産",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「産」 trong 「生産」 (“sản xuất”).",
+        "en": "Type the reading of 「産」 in 「生産」 (“production”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さん",
+          "サン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 生産, 産 đọc là さん (âm On).",
+        "en": "Correct! In 生産, 産 is read さん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 生産 (sản xuất), 産 đọc là さん (âm On).",
+        "en": "In 生産 (production), 産 is read さん (on'yomi)."
+      }
+    },
+    {
+      "item": "産",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「産む」(sinh (con)) đọc là gì?",
+        "en": "How is 「産む」 (to give birth) read?"
+      },
+      "payload": {
+        "choices": [
+          "さんむ",
+          "しきん",
+          "うむ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 産む = うむ (sinh (con)); 産 đọc là う (âm Kun).",
+        "en": "Correct! 産む = うむ (to give birth); 産 is read う (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "産む đọc là うむ (sinh (con)): 産 mang âm Kun う.",
+        "en": "産む is read うむ (to give birth): 産 takes the kun'yomi う."
+      }
+    },
+    {
+      "item": "資",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「資」nghĩa là gì?",
+        "en": "What does 「資」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lợi; sắc bén",
+            "en": "profit; advantage"
+          },
+          {
+            "vi": "chống; chi; nhánh",
+            "en": "support; branch"
+          },
+          {
+            "vi": "vốn; tư liệu",
+            "en": "capital; resources"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 資 nghĩa là vốn; tư liệu.",
+        "en": "Correct! 資 means capital; resources."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 資 nghĩa là vốn; tư liệu, như trong 「資料」 (tài liệu).",
+        "en": "Not quite. 資 means capital; resources, as in 「資料」 (materials)."
+      }
+    },
+    {
+      "item": "資",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「資」 trong 「資料」 (“tài liệu”).",
+        "en": "Type the reading of 「資」 in 「資料」 (“materials”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 資料, 資 đọc là し (âm On).",
+        "en": "Correct! In 資料, 資 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 資料 (tài liệu), 資 đọc là し (âm On).",
+        "en": "In 資料 (materials), 資 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "資",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「資金」(vốn) đọc là gì?",
+        "en": "How is 「資金」 (funds) read?"
+      },
+      "payload": {
+        "choices": [
+          "しきん",
+          "じきん",
+          "しぎん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 資金 = しきん (vốn); 資 đọc là し (âm On).",
+        "en": "Correct! 資金 = しきん (funds); 資 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "資金 đọc là しきん (vốn): 資 mang âm On し.",
+        "en": "資金 is read しきん (funds): 資 takes the on'yomi し."
+      }
+    },
+    {
+      "item": "利",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「利」nghĩa là gì?",
+        "en": "What does 「利」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lợi; sắc bén",
+            "en": "profit; advantage"
+          },
+          {
+            "vi": "chống; chi; nhánh",
+            "en": "support; branch"
+          },
+          {
+            "vi": "sinh; sản xuất",
+            "en": "give birth; produce"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 利 nghĩa là lợi; sắc bén.",
+        "en": "Correct! 利 means profit; advantage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 利 nghĩa là lợi; sắc bén, như trong 「利用」 (sử dụng).",
+        "en": "Not quite. 利 means profit; advantage, as in 「利用」 (use)."
+      }
+    },
+    {
+      "item": "利",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「利」 trong 「利用」 (“sử dụng”).",
+        "en": "Type the reading of 「利」 in 「利用」 (“use”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "り",
+          "リ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 利用, 利 đọc là り (âm On).",
+        "en": "Correct! In 利用, 利 is read り (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 利用 (sử dụng), 利 đọc là り (âm On).",
+        "en": "In 利用 (use), 利 is read り (on'yomi)."
+      }
+    },
+    {
+      "item": "利",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「便利」(tiện lợi) đọc là gì?",
+        "en": "How is 「便利」 (convenient) read?"
+      },
+      "payload": {
+        "choices": [
+          "べんき",
+          "べんり",
+          "べんささ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 便利 = べんり (tiện lợi); 利 đọc là り (âm On).",
+        "en": "Correct! 便利 = べんり (convenient); 利 is read り (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "便利 đọc là べんり (tiện lợi): 利 mang âm On り.",
+        "en": "便利 is read べんり (convenient): 利 takes the on'yomi り."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "支",
+            {
+              "vi": "chống; chi; nhánh",
+              "en": "support; branch"
+            }
+          ],
+          [
+            "産",
+            {
+              "vi": "sinh; sản xuất",
+              "en": "give birth; produce"
+            }
+          ],
+          [
+            "資",
+            {
+              "vi": "vốn; tư liệu",
+              "en": "capital; resources"
+            }
+          ],
+          [
+            "利",
+            {
+              "vi": "lợi; sắc bén",
+              "en": "profit; advantage"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

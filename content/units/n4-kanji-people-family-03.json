@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-people-family",
+  "title": {
+    "vi": "Kanji con người – gia đình (弟 兄 妹 姉)",
+    "en": "People and family kanji (弟 兄 妹 姉)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 430,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "弟",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "em trai",
+        "en": "younger brother"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダイ",
+          "テイ",
+          "デ"
+        ],
+        "kunReadings": [
+          "おとうと"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "兄弟",
+          "reading": "きょうだい",
+          "kanjiReading": "ダイ",
+          "translation": {
+            "vi": "anh em",
+            "en": "siblings"
+          }
+        },
+        {
+          "ja": "弟",
+          "reading": "おとうと",
+          "kanjiReading": "おとうと",
+          "translation": {
+            "vi": "em trai",
+            "en": "younger brother"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "兄",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "anh trai",
+        "en": "older brother"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ",
+          "キョウ"
+        ],
+        "kunReadings": [
+          "あに"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "兄弟",
+          "reading": "きょうだい",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "anh em",
+            "en": "siblings"
+          }
+        },
+        {
+          "ja": "兄",
+          "reading": "あに",
+          "kanjiReading": "あに",
+          "translation": {
+            "vi": "anh trai",
+            "en": "older brother"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "妹",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "em gái",
+        "en": "younger sister"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "マイ"
+        ],
+        "kunReadings": [
+          "いもうと"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "姉妹",
+          "reading": "しまい",
+          "kanjiReading": "マイ",
+          "translation": {
+            "vi": "chị em gái",
+            "en": "sisters"
+          }
+        },
+        {
+          "ja": "妹",
+          "reading": "いもうと",
+          "kanjiReading": "いもうと",
+          "translation": {
+            "vi": "em gái",
+            "en": "younger sister"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "姉",
+      "topic": "kanji-n4-people-family",
+      "meaning": {
+        "vi": "chị gái",
+        "en": "older sister"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "あね"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "姉妹",
+          "reading": "しまい",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "chị em gái",
+            "en": "sisters"
+          }
+        },
+        {
+          "ja": "姉",
+          "reading": "あね",
+          "kanjiReading": "あね",
+          "translation": {
+            "vi": "chị gái",
+            "en": "older sister"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "弟",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「弟」nghĩa là gì?",
+        "en": "What does 「弟」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "em trai",
+            "en": "younger brother"
+          },
+          {
+            "vi": "anh trai",
+            "en": "older brother"
+          },
+          {
+            "vi": "em gái",
+            "en": "younger sister"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 弟 nghĩa là em trai.",
+        "en": "Correct! 弟 means younger brother."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 弟 nghĩa là em trai, như trong 「兄弟」 (anh em).",
+        "en": "Not quite. 弟 means younger brother, as in 「兄弟」 (siblings)."
+      }
+    },
+    {
+      "item": "弟",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「弟」 trong 「兄弟」 (“anh em”).",
+        "en": "Type the reading of 「弟」 in 「兄弟」 (“siblings”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だい",
+          "ダイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 兄弟, 弟 đọc là だい (âm On).",
+        "en": "Correct! In 兄弟, 弟 is read だい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 兄弟 (anh em), 弟 đọc là だい (âm On).",
+        "en": "In 兄弟 (siblings), 弟 is read だい (on'yomi)."
+      }
+    },
+    {
+      "item": "弟",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「弟」(em trai; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「弟」 (younger brother; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "だい",
+          "おとうと",
+          "いもうと"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 弟 = おとうと (em trai); 弟 đọc là おとうと (âm Kun).",
+        "en": "Correct! 弟 = おとうと (younger brother); 弟 is read おとうと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "弟 đọc là おとうと (em trai): 弟 mang âm Kun おとうと.",
+        "en": "弟 is read おとうと (younger brother): 弟 takes the kun'yomi おとうと."
+      }
+    },
+    {
+      "item": "兄",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「兄」nghĩa là gì?",
+        "en": "What does 「兄」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "em gái",
+            "en": "younger sister"
+          },
+          {
+            "vi": "anh trai",
+            "en": "older brother"
+          },
+          {
+            "vi": "chị gái",
+            "en": "older sister"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 兄 nghĩa là anh trai.",
+        "en": "Correct! 兄 means older brother."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 兄 nghĩa là anh trai, như trong 「兄弟」 (anh em).",
+        "en": "Not quite. 兄 means older brother, as in 「兄弟」 (siblings)."
+      }
+    },
+    {
+      "item": "兄",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「兄」 trong 「兄弟」 (“anh em”).",
+        "en": "Type the reading of 「兄」 in 「兄弟」 (“siblings”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 兄弟, 兄 đọc là きょう (âm On).",
+        "en": "Correct! In 兄弟, 兄 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 兄弟 (anh em), 兄 đọc là きょう (âm On).",
+        "en": "In 兄弟 (siblings), 兄 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "兄",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「兄」(anh trai; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「兄」 (older brother; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "けい",
+          "あね",
+          "あに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 兄 = あに (anh trai); 兄 đọc là あに (âm Kun).",
+        "en": "Correct! 兄 = あに (older brother); 兄 is read あに (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "兄 đọc là あに (anh trai): 兄 mang âm Kun あに.",
+        "en": "兄 is read あに (older brother): 兄 takes the kun'yomi あに."
+      }
+    },
+    {
+      "item": "妹",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「妹」nghĩa là gì?",
+        "en": "What does 「妹」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chị gái",
+            "en": "older sister"
+          },
+          {
+            "vi": "em trai",
+            "en": "younger brother"
+          },
+          {
+            "vi": "em gái",
+            "en": "younger sister"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 妹 nghĩa là em gái.",
+        "en": "Correct! 妹 means younger sister."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 妹 nghĩa là em gái, như trong 「姉妹」 (chị em gái).",
+        "en": "Not quite. 妹 means younger sister, as in 「姉妹」 (sisters)."
+      }
+    },
+    {
+      "item": "妹",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「妹」 trong 「姉妹」 (“chị em gái”).",
+        "en": "Type the reading of 「妹」 in 「姉妹」 (“sisters”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "まい",
+          "マイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 姉妹, 妹 đọc là まい (âm On).",
+        "en": "Correct! In 姉妹, 妹 is read まい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 姉妹 (chị em gái), 妹 đọc là まい (âm On).",
+        "en": "In 姉妹 (sisters), 妹 is read まい (on'yomi)."
+      }
+    },
+    {
+      "item": "妹",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「妹」(em gái; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「妹」 (younger sister; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "いもうと",
+          "まい",
+          "おとうと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 妹 = いもうと (em gái); 妹 đọc là いもうと (âm Kun).",
+        "en": "Correct! 妹 = いもうと (younger sister); 妹 is read いもうと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "妹 đọc là いもうと (em gái): 妹 mang âm Kun いもうと.",
+        "en": "妹 is read いもうと (younger sister): 妹 takes the kun'yomi いもうと."
+      }
+    },
+    {
+      "item": "姉",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「姉」nghĩa là gì?",
+        "en": "What does 「姉」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chị gái",
+            "en": "older sister"
+          },
+          {
+            "vi": "em trai",
+            "en": "younger brother"
+          },
+          {
+            "vi": "anh trai",
+            "en": "older brother"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 姉 nghĩa là chị gái.",
+        "en": "Correct! 姉 means older sister."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 姉 nghĩa là chị gái, như trong 「姉妹」 (chị em gái).",
+        "en": "Not quite. 姉 means older sister, as in 「姉妹」 (sisters)."
+      }
+    },
+    {
+      "item": "姉",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「姉」 trong 「姉妹」 (“chị em gái”).",
+        "en": "Type the reading of 「姉」 in 「姉妹」 (“sisters”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 姉妹, 姉 đọc là し (âm On).",
+        "en": "Correct! In 姉妹, 姉 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 姉妹 (chị em gái), 姉 đọc là し (âm On).",
+        "en": "In 姉妹 (sisters), 姉 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "姉",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「姉」(chị gái; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「姉」 (older sister; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "し",
+          "あね",
+          "あに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 姉 = あね (chị gái); 姉 đọc là あね (âm Kun).",
+        "en": "Correct! 姉 = あね (older sister); 姉 is read あね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "姉 đọc là あね (chị gái): 姉 mang âm Kun あね.",
+        "en": "姉 is read あね (older sister): 姉 takes the kun'yomi あね."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "弟",
+            {
+              "vi": "em trai",
+              "en": "younger brother"
+            }
+          ],
+          [
+            "兄",
+            {
+              "vi": "anh trai",
+              "en": "older brother"
+            }
+          ],
+          [
+            "妹",
+            {
+              "vi": "em gái",
+              "en": "younger sister"
+            }
+          ],
+          [
+            "姉",
+            {
+              "vi": "chị gái",
+              "en": "older sister"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

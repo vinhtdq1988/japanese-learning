@@ -1,0 +1,708 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-shopping-money",
+  "title": {
+    "vi": "Thu nhập, tiết kiệm và thẻ ngân hàng",
+    "en": "Income, savings and cards"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "税金",
+      "reading": "ぜいきん",
+      "meaning": {
+        "vi": "Tiền thuế",
+        "en": "Tax"
+      },
+      "examples": [
+        {
+          "ja": "給料から、税金が引かれます。",
+          "reading": "きゅうりょうから、ぜいきんがひかれます。",
+          "translation": {
+            "vi": "Tiền thuế bị trừ từ lương.",
+            "en": "Tax is deducted from your salary."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "給料",
+      "reading": "きゅうりょう",
+      "meaning": {
+        "vi": "Tiền lương",
+        "en": "Salary; pay"
+      },
+      "examples": [
+        {
+          "ja": "月末に、会社から給料をもらいます。",
+          "reading": "げつまつに、かいしゃからきゅうりょうをもらいます。",
+          "translation": {
+            "vi": "Cuối tháng tôi nhận lương từ công ty.",
+            "en": "At the end of the month I receive my salary from the company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貯金",
+      "reading": "ちょきん",
+      "meaning": {
+        "vi": "Tiền tiết kiệm; gửi tiết kiệm",
+        "en": "Savings; to save money"
+      },
+      "examples": [
+        {
+          "ja": "毎月、一万円ずつ貯金しています。",
+          "reading": "まいつき、いちまんえんずつちょきんしています。",
+          "translation": {
+            "vi": "Mỗi tháng tôi để dành mười nghìn yên.",
+            "en": "I save 10,000 yen every month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "預ける",
+      "reading": "あずける",
+      "meaning": {
+        "vi": "Gửi (đồ, tiền); giao cho giữ",
+        "en": "To leave in someone’s care; to deposit"
+      },
+      "examples": [
+        {
+          "ja": "大きい荷物は、ホテルに預けることができます。",
+          "reading": "おおきいにもつは、ホテルにあずけることができます。",
+          "translation": {
+            "vi": "Hành lý lớn thì có thể gửi ở khách sạn.",
+            "en": "You can leave large luggage at the hotel."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貸す",
+      "reading": "かす",
+      "meaning": {
+        "vi": "Cho mượn; cho vay",
+        "en": "To lend"
+      },
+      "examples": [
+        {
+          "ja": "友達に、本を貸すことにしました。",
+          "reading": "ともだちに、ほんをかすことにしました。",
+          "translation": {
+            "vi": "Tôi đã quyết định cho bạn mượn sách.",
+            "en": "I decided to lend a book to my friend."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "両替",
+      "reading": "りょうがえ",
+      "meaning": {
+        "vi": "Đổi tiền",
+        "en": "Currency exchange"
+      },
+      "examples": [
+        {
+          "ja": "空港で、円をドルに両替しました。",
+          "reading": "くうこうで、えんをドルにりょうがえしました。",
+          "translation": {
+            "vi": "Ở sân bay, tôi đã đổi yên sang đô la.",
+            "en": "At the airport, I exchanged yen for dollars."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "予算",
+      "reading": "よさん",
+      "meaning": {
+        "vi": "Ngân sách; dự toán",
+        "en": "Budget"
+      },
+      "examples": [
+        {
+          "ja": "旅行の予算は、十万円です。",
+          "reading": "りょこうのよさんは、じゅうまんえんです。",
+          "translation": {
+            "vi": "Ngân sách cho chuyến du lịch là một trăm nghìn yên.",
+            "en": "The budget for the trip is 100,000 yen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "合計",
+      "reading": "ごうけい",
+      "meaning": {
+        "vi": "Tổng cộng",
+        "en": "Total"
+      },
+      "examples": [
+        {
+          "ja": "全部で、合計三千円です。",
+          "reading": "ぜんぶで、ごうけいさんぜんえんです。",
+          "translation": {
+            "vi": "Tính tổng cộng là ba nghìn yên.",
+            "en": "The total comes to 3,000 yen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "サービス",
+      "reading": "サービス",
+      "meaning": {
+        "vi": "Dịch vụ; sự phục vụ",
+        "en": "Service"
+      },
+      "examples": [
+        {
+          "ja": "この店は、サービスがとてもいいです。",
+          "reading": "このみせは、サービスがとてもいいです。",
+          "translation": {
+            "vi": "Cửa hàng này phục vụ rất tốt.",
+            "en": "The service at this shop is very good."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "レジ",
+      "reading": "レジ",
+      "meaning": {
+        "vi": "Quầy thu ngân; máy tính tiền",
+        "en": "Cash register; checkout"
+      },
+      "examples": [
+        {
+          "ja": "レジの前に、お客さんが並んでいます。",
+          "reading": "レジのまえに、おきゃくさんがならんでいます。",
+          "translation": {
+            "vi": "Khách đang xếp hàng trước quầy thu ngân.",
+            "en": "Customers are lined up in front of the register."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "カード",
+      "reading": "カード",
+      "meaning": {
+        "vi": "Thẻ (thẻ tín dụng, thẻ thành viên)",
+        "en": "Card (credit card, member card)"
+      },
+      "examples": [
+        {
+          "ja": "現金がないので、カードで払いました。",
+          "reading": "げんきんがないので、カードではらいました。",
+          "translation": {
+            "vi": "Vì không có tiền mặt nên tôi đã trả bằng thẻ.",
+            "en": "I had no cash, so I paid by card."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "値上がり",
+      "reading": "ねあがり",
+      "meaning": {
+        "vi": "Việc tăng giá",
+        "en": "Price increase"
+      },
+      "examples": [
+        {
+          "ja": "野菜の値上がりで、生活が大変です。",
+          "reading": "やさいのねあがりで、せいかつがたいへんです。",
+          "translation": {
+            "vi": "Rau tăng giá nên cuộc sống rất vất vả.",
+            "en": "Life is hard because of rising vegetable prices."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "税金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 給料から、（　）が引かれます。 — Nghĩa của câu: “Tiền thuế bị trừ từ lương.”",
+        "en": "Choose the word that fits the blank: 給料から、（　）が引かれます。 — Meaning of the sentence: “Tax is deducted from your salary.”"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "貯金",
+          "予算",
+          "合計"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「税金」(Tiền thuế) hợp nghĩa câu này: “Tiền thuế bị trừ từ lương.”",
+        "en": "Correct! 「税金」(Tax) fits this sentence: “Tax is deducted from your salary.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiền thuế bị trừ từ lương.”, nên cần 「税金」(Tiền thuế); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Tax is deducted from your salary.”, so it needs 「税金」(Tax); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "給料",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 月末に、会社から（　）をもらいます。",
+        "en": "Choose the word that fits the blank: 月末に、会社から（　）をもらいます。"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "給料",
+          "貯金",
+          "予算"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「給料」(Tiền lương) hợp nghĩa câu này: “Cuối tháng tôi nhận lương từ công ty.”",
+        "en": "Correct! 「給料」(Salary; pay) fits this sentence: “At the end of the month I receive my salary from the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối tháng tôi nhận lương từ công ty.”, nên cần 「給料」(Tiền lương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the end of the month I receive my salary from the company.”, so it needs 「給料」(Salary; pay); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "貯金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎月、一万円ずつ（　）しています。 — Nghĩa của câu: “Mỗi tháng tôi để dành mười nghìn yên.”",
+        "en": "Choose the word that fits the blank: 毎月、一万円ずつ（　）しています。 — Meaning of the sentence: “I save 10,000 yen every month.”"
+      },
+      "payload": {
+        "choices": [
+          "両替",
+          "予算",
+          "貯金",
+          "合計"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「貯金」(Tiền tiết kiệm; gửi tiết kiệm) hợp nghĩa câu này: “Mỗi tháng tôi để dành mười nghìn yên.”",
+        "en": "Correct! 「貯金」(Savings; to save money) fits this sentence: “I save 10,000 yen every month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi tháng tôi để dành mười nghìn yên.”, nên cần 「貯金」(Tiền tiết kiệm; gửi tiết kiệm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I save 10,000 yen every month.”, so it needs 「貯金」(Savings; to save money); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "預ける",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きい荷物は、ホテルに（　）ことができます。",
+        "en": "Choose the word that fits the blank: 大きい荷物は、ホテルに（　）ことができます。"
+      },
+      "payload": {
+        "choices": [
+          "貸す",
+          "両替する",
+          "払う",
+          "預ける"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「預ける」(Gửi (đồ, tiền); giao cho giữ) hợp nghĩa câu này: “Hành lý lớn thì có thể gửi ở khách sạn.”",
+        "en": "Correct! 「預ける」(To leave in someone’s care; to deposit) fits this sentence: “You can leave large luggage at the hotel.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hành lý lớn thì có thể gửi ở khách sạn.”, nên cần 「預ける」(Gửi (đồ, tiền); giao cho giữ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can leave large luggage at the hotel.”, so it needs 「預ける」(To leave in someone’s care; to deposit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "貸す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 友達に、本を（　）ことにしました。 — Nghĩa của câu: “Tôi đã quyết định cho bạn mượn sách.”",
+        "en": "Choose the word that fits the blank: 友達に、本を（　）ことにしました。 — Meaning of the sentence: “I decided to lend a book to my friend.”"
+      },
+      "payload": {
+        "choices": [
+          "貸す",
+          "預ける",
+          "借りる",
+          "返す"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「貸す」(Cho mượn; cho vay) hợp nghĩa câu này: “Tôi đã quyết định cho bạn mượn sách.”",
+        "en": "Correct! 「貸す」(To lend) fits this sentence: “I decided to lend a book to my friend.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã quyết định cho bạn mượn sách.”, nên cần 「貸す」(Cho mượn; cho vay); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to lend a book to my friend.”, so it needs 「貸す」(To lend); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "両替",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 空港で、円をドルに（　）しました。",
+        "en": "Choose the word that fits the blank: 空港で、円をドルに（　）しました。"
+      },
+      "payload": {
+        "choices": [
+          "貯金",
+          "両替",
+          "予算",
+          "合計"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「両替」(Đổi tiền) hợp nghĩa câu này: “Ở sân bay, tôi đã đổi yên sang đô la.”",
+        "en": "Correct! 「両替」(Currency exchange) fits this sentence: “At the airport, I exchanged yen for dollars.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở sân bay, tôi đã đổi yên sang đô la.”, nên cần 「両替」(Đổi tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the airport, I exchanged yen for dollars.”, so it needs 「両替」(Currency exchange); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "予算",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行の（　）は、十万円です。 — Nghĩa của câu: “Ngân sách cho chuyến du lịch là một trăm nghìn yên.”",
+        "en": "Choose the word that fits the blank: 旅行の（　）は、十万円です。 — Meaning of the sentence: “The budget for the trip is 100,000 yen.”"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "給料",
+          "予算",
+          "貯金"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「予算」(Ngân sách; dự toán) hợp nghĩa câu này: “Ngân sách cho chuyến du lịch là một trăm nghìn yên.”",
+        "en": "Correct! 「予算」(Budget) fits this sentence: “The budget for the trip is 100,000 yen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngân sách cho chuyến du lịch là một trăm nghìn yên.”, nên cần 「予算」(Ngân sách; dự toán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The budget for the trip is 100,000 yen.”, so it needs 「予算」(Budget); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "合計",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 全部で、（　）三千円です。",
+        "en": "Choose the word that fits the blank: 全部で、（　）三千円です。"
+      },
+      "payload": {
+        "choices": [
+          "予算",
+          "給料",
+          "税金",
+          "合計"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「合計」(Tổng cộng) hợp nghĩa câu này: “Tính tổng cộng là ba nghìn yên.”",
+        "en": "Correct! 「合計」(Total) fits this sentence: “The total comes to 3,000 yen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tính tổng cộng là ba nghìn yên.”, nên cần 「合計」(Tổng cộng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The total comes to 3,000 yen.”, so it needs 「合計」(Total); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "サービス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店は、（　）がとてもいいです。 — Nghĩa của câu: “Cửa hàng này phục vụ rất tốt.”",
+        "en": "Choose the word that fits the blank: この店は、（　）がとてもいいです。 — Meaning of the sentence: “The service at this shop is very good.”"
+      },
+      "payload": {
+        "choices": [
+          "サービス",
+          "レジ",
+          "カード",
+          "予算"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「サービス」(Dịch vụ; sự phục vụ) hợp nghĩa câu này: “Cửa hàng này phục vụ rất tốt.”",
+        "en": "Correct! 「サービス」(Service) fits this sentence: “The service at this shop is very good.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng này phục vụ rất tốt.”, nên cần 「サービス」(Dịch vụ; sự phục vụ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The service at this shop is very good.”, so it needs 「サービス」(Service); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "レジ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の前に、お客さんが並んでいます。",
+        "en": "Choose the word that fits the blank: （　）の前に、お客さんが並んでいます。"
+      },
+      "payload": {
+        "choices": [
+          "カード",
+          "レジ",
+          "予算",
+          "合計"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「レジ」(Quầy thu ngân; máy tính tiền) hợp nghĩa câu này: “Khách đang xếp hàng trước quầy thu ngân.”",
+        "en": "Correct! 「レジ」(Cash register; checkout) fits this sentence: “Customers are lined up in front of the register.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khách đang xếp hàng trước quầy thu ngân.”, nên cần 「レジ」(Quầy thu ngân; máy tính tiền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Customers are lined up in front of the register.”, so it needs 「レジ」(Cash register; checkout); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "カード",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 現金がないので、（　）で払いました。",
+        "en": "Choose the word that fits the blank: 現金がないので、（　）で払いました。"
+      },
+      "payload": {
+        "choices": [
+          "レジ",
+          "予算",
+          "カード",
+          "税金"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「カード」(Thẻ (thẻ tín dụng, thẻ thành viên)) hợp nghĩa câu này: “Vì không có tiền mặt nên tôi đã trả bằng thẻ.”",
+        "en": "Correct! 「カード」(Card (credit card, member card)) fits this sentence: “I had no cash, so I paid by card.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì không có tiền mặt nên tôi đã trả bằng thẻ.”, nên cần 「カード」(Thẻ (thẻ tín dụng, thẻ thành viên)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I had no cash, so I paid by card.”, so it needs 「カード」(Card (credit card, member card)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "値上がり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 野菜の（　）で、生活が大変です。 — Nghĩa của câu: “Rau tăng giá nên cuộc sống rất vất vả.”",
+        "en": "Choose the word that fits the blank: 野菜の（　）で、生活が大変です。 — Meaning of the sentence: “Life is hard because of rising vegetable prices.”"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "給料",
+          "予算",
+          "値上がり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「値上がり」(Việc tăng giá) hợp nghĩa câu này: “Rau tăng giá nên cuộc sống rất vất vả.”",
+        "en": "Correct! 「値上がり」(Price increase) fits this sentence: “Life is hard because of rising vegetable prices.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Rau tăng giá nên cuộc sống rất vất vả.”, nên cần 「値上がり」(Việc tăng giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Life is hard because of rising vegetable prices.”, so it needs 「値上がり」(Price increase); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "税金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 給料から、「税金」が引かれます。",
+        "en": "Choose the correct reading of the word in 「」: 給料から、「税金」が引かれます。"
+      },
+      "payload": {
+        "choices": [
+          "きゅうりょう",
+          "ぜいきん",
+          "ちょきん",
+          "あずける"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「税金」 đọc là 「ぜいきん」, nghĩa là Tiền thuế.",
+        "en": "Correct! 「税金」 is read 「ぜいきん」 and means Tax."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「税金」 đọc là 「ぜいきん」 (Tiền thuế); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「税金」 is read 「ぜいきん」 (Tax); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "貯金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 毎月、一万円ずつ「貯金」しています。",
+        "en": "Choose the correct reading of the word in 「」: 毎月、一万円ずつ「貯金」しています。"
+      },
+      "payload": {
+        "choices": [
+          "ぜいきん",
+          "きゅうりょう",
+          "ちょきん",
+          "あずける"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「貯金」 đọc là 「ちょきん」, nghĩa là Tiền tiết kiệm; gửi tiết kiệm.",
+        "en": "Correct! 「貯金」 is read 「ちょきん」 and means Savings; to save money."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「貯金」 đọc là 「ちょきん」 (Tiền tiết kiệm; gửi tiết kiệm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「貯金」 is read 「ちょきん」 (Savings; to save money); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "貸す",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 友達に、本を「貸す」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: 友達に、本を「貸す」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "ぜいきん",
+          "きゅうりょう",
+          "ちょきん",
+          "かす"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「貸す」 đọc là 「かす」, nghĩa là Cho mượn; cho vay.",
+        "en": "Correct! 「貸す」 is read 「かす」 and means To lend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「貸す」 đọc là 「かす」 (Cho mượn; cho vay); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「貸す」 is read 「かす」 (To lend); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "予算",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 旅行の「予算」は、十万円です。",
+        "en": "Choose the correct reading of the word in 「」: 旅行の「予算」は、十万円です。"
+      },
+      "payload": {
+        "choices": [
+          "よさん",
+          "ぜいきん",
+          "きゅうりょう",
+          "ちょきん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「予算」 đọc là 「よさん」, nghĩa là Ngân sách; dự toán.",
+        "en": "Correct! 「予算」 is read 「よさん」 and means Budget."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「予算」 đọc là 「よさん」 (Ngân sách; dự toán); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「予算」 is read 「よさん」 (Budget); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "給料",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 月末に、会社から「きゅうりょう」をもらいます。",
+        "en": "Choose the correct way to write the word in 「」: 月末に、会社から「きゅうりょう」をもらいます。"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "貯金",
+          "給料",
+          "預ける"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きゅうりょう」 viết là 「給料」, nghĩa là Tiền lương.",
+        "en": "Correct! 「きゅうりょう」 is written 「給料」 and means Salary; pay."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きゅうりょう」 viết là 「給料」 (Tiền lương); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きゅうりょう」 is written 「給料」 (Salary; pay); the other words are read differently."
+      }
+    },
+    {
+      "item": "合計",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 全部で、「ごうけい」三千円です。",
+        "en": "Choose the correct way to write the word in 「」: 全部で、「ごうけい」三千円です。"
+      },
+      "payload": {
+        "choices": [
+          "税金",
+          "給料",
+          "貯金",
+          "合計"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ごうけい」 viết là 「合計」, nghĩa là Tổng cộng.",
+        "en": "Correct! 「ごうけい」 is written 「合計」 and means Total."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ごうけい」 viết là 「合計」 (Tổng cộng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ごうけい」 is written 「合計」 (Total); the other words are read differently."
+      }
+    }
+  ]
+}

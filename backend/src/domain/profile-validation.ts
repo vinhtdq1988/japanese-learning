@@ -72,15 +72,16 @@ export const dailyMinutesSchema = z
 export const targetDateSchema = z.iso.date('Mốc thời gian phải có dạng YYYY-MM-DD');
 
 /**
- * Kỹ năng hỗ trợ: từ vựng, ngữ pháp và Kanji (spec 003); nghe, đọc bị từ chối với thông điệp
- * "chưa có trong phiên bản này". Phải là tập con không rỗng, không trùng.
+ * Kỹ năng hỗ trợ: từ vựng, ngữ pháp, Kanji (spec 003), luyện đọc và luyện viết (spec 007); kỹ năng
+ * khác (ví dụ nghe) bị từ chối kèm danh sách kỹ năng hợp lệ. Phải là tập con không rỗng, không trùng.
+ * KHÔNG kiểm số phút ở đây: điều kiện ≥ 30 phút của luyện đọc/viết do dịch vụ hồ sơ kiểm.
  */
 export const skillsSchema = z
   .array(z.string({ error: 'Kỹ năng không hợp lệ' }), { error: 'Kỹ năng phải là danh sách' })
   .min(1, 'Chọn ít nhất một kỹ năng')
   // Lỗi đặt ở chính mảng (khóa `skills`), không theo từng phần tử (`skills.1`) để client hiển thị một chỗ.
   .refine((skills) => skills.every((s) => (SKILLS as readonly string[]).includes(s)), {
-    error: 'Kỹ năng này chưa có trong phiên bản hiện tại',
+    error: 'Kỹ năng không hợp lệ; chỉ hỗ trợ: từ vựng, ngữ pháp, Kanji, luyện đọc, luyện viết',
   })
   .transform((skills) => [...new Set(skills)] as Skill[]);
 

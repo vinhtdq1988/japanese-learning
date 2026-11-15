@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-position-shape",
+  "title": {
+    "vi": "Phía, phương hướng và hình dạng",
+    "en": "Sides, directions and shapes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2330,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "側",
+      "reading": "がわ",
+      "meaning": {
+        "vi": "Phía; bên",
+        "en": "Side"
+      },
+      "examples": [
+        {
+          "ja": "日本では、車は道の左側を走ります。",
+          "reading": "にほんでは、くるまはみちのひだりがわをはしります。",
+          "translation": {
+            "vi": "Ở Nhật, xe chạy ở phía bên trái đường.",
+            "en": "In Japan, cars drive on the left side of the road."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "方向",
+      "reading": "ほうこう",
+      "meaning": {
+        "vi": "Phương hướng; hướng",
+        "en": "Direction"
+      },
+      "examples": [
+        {
+          "ja": "駅は、この方向にまっすぐ行くと、着きます。",
+          "reading": "えきは、このほうこうにまっすぐいくと、つきます。",
+          "translation": {
+            "vi": "Đi thẳng theo hướng này thì sẽ tới ga.",
+            "en": "If you go straight in this direction, you will reach the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "形",
+      "reading": "かたち",
+      "meaning": {
+        "vi": "Hình dạng; hình thức",
+        "en": "Shape; form"
+      },
+      "examples": [
+        {
+          "ja": "この石は、ハートの形をしています。",
+          "reading": "このいしは、ハートのかたちをしています。",
+          "translation": {
+            "vi": "Hòn đá này có hình trái tim.",
+            "en": "This stone is shaped like a heart."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "丸い",
+      "reading": "まるい",
+      "meaning": {
+        "vi": "Tròn",
+        "en": "Round"
+      },
+      "examples": [
+        {
+          "ja": "このお皿は、丸いので、持ちやすいです。",
+          "reading": "このおさらは、まるいので、もちやすいです。",
+          "translation": {
+            "vi": "Cái đĩa này tròn nên dễ cầm.",
+            "en": "This plate is round, so it is easy to hold."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "四角",
+      "reading": "しかく",
+      "meaning": {
+        "vi": "Hình vuông; hình tứ giác",
+        "en": "Square; rectangle"
+      },
+      "examples": [
+        {
+          "ja": "この箱は、四角で、中に十個入ります。",
+          "reading": "このはこは、しかくで、なかにじっこはいります。",
+          "translation": {
+            "vi": "Cái hộp này hình vuông, bên trong đựng được mười cái.",
+            "en": "This box is square and holds ten items inside."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "三角",
+      "reading": "さんかく",
+      "meaning": {
+        "vi": "Hình tam giác",
+        "en": "Triangle"
+      },
+      "examples": [
+        {
+          "ja": "おにぎりは、三角にして食べることが多いです。",
+          "reading": "おにぎりは、さんかくにしてたべることがおおいです。",
+          "translation": {
+            "vi": "Onigiri thường được nặn thành hình tam giác để ăn.",
+            "en": "Onigiri are often shaped into triangles."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "側",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本では、車は道の左（　）を走ります。 — Nghĩa của câu: “Ở Nhật, xe chạy ở phía bên trái đường.”",
+        "en": "Choose the word that fits the blank: 日本では、車は道の左（　）を走ります。 — Meaning of the sentence: “In Japan, cars drive on the left side of the road.”"
+      },
+      "payload": {
+        "choices": [
+          "方向",
+          "形",
+          "側",
+          "四角"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「側」(Phía; bên) hợp nghĩa câu này: “Ở Nhật, xe chạy ở phía bên trái đường.”",
+        "en": "Correct! 「側」(Side) fits this sentence: “In Japan, cars drive on the left side of the road.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở Nhật, xe chạy ở phía bên trái đường.”, nên cần 「側」(Phía; bên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In Japan, cars drive on the left side of the road.”, so it needs 「側」(Side); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "方向",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅は、この（　）にまっすぐ行くと、着きます。 — Nghĩa của câu: “Đi thẳng theo hướng này thì sẽ tới ga.”",
+        "en": "Choose the word that fits the blank: 駅は、この（　）にまっすぐ行くと、着きます。 — Meaning of the sentence: “If you go straight in this direction, you will reach the station.”"
+      },
+      "payload": {
+        "choices": [
+          "側",
+          "丸い",
+          "三角",
+          "方向"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「方向」(Phương hướng; hướng) hợp nghĩa câu này: “Đi thẳng theo hướng này thì sẽ tới ga.”",
+        "en": "Correct! 「方向」(Direction) fits this sentence: “If you go straight in this direction, you will reach the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đi thẳng theo hướng này thì sẽ tới ga.”, nên cần 「方向」(Phương hướng; hướng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you go straight in this direction, you will reach the station.”, so it needs 「方向」(Direction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "形",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この石は、ハートの（　）をしています。 — Nghĩa của câu: “Hòn đá này có hình trái tim.”",
+        "en": "Choose the word that fits the blank: この石は、ハートの（　）をしています。 — Meaning of the sentence: “This stone is shaped like a heart.”"
+      },
+      "payload": {
+        "choices": [
+          "形",
+          "方向",
+          "側",
+          "丸い"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「形」(Hình dạng; hình thức) hợp nghĩa câu này: “Hòn đá này có hình trái tim.”",
+        "en": "Correct! 「形」(Shape; form) fits this sentence: “This stone is shaped like a heart.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hòn đá này có hình trái tim.”, nên cần 「形」(Hình dạng; hình thức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This stone is shaped like a heart.”, so it needs 「形」(Shape; form); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "丸い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお皿は、（　）ので、持ちやすいです。 — Nghĩa của câu: “Cái đĩa này tròn nên dễ cầm.”",
+        "en": "Choose the word that fits the blank: このお皿は、（　）ので、持ちやすいです。 — Meaning of the sentence: “This plate is round, so it is easy to hold.”"
+      },
+      "payload": {
+        "choices": [
+          "方向",
+          "丸い",
+          "側",
+          "三角"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「丸い」(Tròn) hợp nghĩa câu này: “Cái đĩa này tròn nên dễ cầm.”",
+        "en": "Correct! 「丸い」(Round) fits this sentence: “This plate is round, so it is easy to hold.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái đĩa này tròn nên dễ cầm.”, nên cần 「丸い」(Tròn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This plate is round, so it is easy to hold.”, so it needs 「丸い」(Round); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "四角",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この箱は、（　）で、中に十個入ります。 — Nghĩa của câu: “Cái hộp này hình vuông, bên trong đựng được mười cái.”",
+        "en": "Choose the word that fits the blank: この箱は、（　）で、中に十個入ります。 — Meaning of the sentence: “This box is square and holds ten items inside.”"
+      },
+      "payload": {
+        "choices": [
+          "形",
+          "丸い",
+          "四角",
+          "方向"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「四角」(Hình vuông; hình tứ giác) hợp nghĩa câu này: “Cái hộp này hình vuông, bên trong đựng được mười cái.”",
+        "en": "Correct! 「四角」(Square; rectangle) fits this sentence: “This box is square and holds ten items inside.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái hộp này hình vuông, bên trong đựng được mười cái.”, nên cần 「四角」(Hình vuông; hình tứ giác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This box is square and holds ten items inside.”, so it needs 「四角」(Square; rectangle); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "三角",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: おにぎりは、（　）にして食べることが多いです。 — Nghĩa của câu: “Onigiri thường được nặn thành hình tam giác để ăn.”",
+        "en": "Choose the word that fits the blank: おにぎりは、（　）にして食べることが多いです。 — Meaning of the sentence: “Onigiri are often shaped into triangles.”"
+      },
+      "payload": {
+        "choices": [
+          "方向",
+          "側",
+          "形",
+          "三角"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「三角」(Hình tam giác) hợp nghĩa câu này: “Onigiri thường được nặn thành hình tam giác để ăn.”",
+        "en": "Correct! 「三角」(Triangle) fits this sentence: “Onigiri are often shaped into triangles.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Onigiri thường được nặn thành hình tam giác để ăn.”, nên cần 「三角」(Hình tam giác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Onigiri are often shaped into triangles.”, so it needs 「三角」(Triangle); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "方向",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 駅は、この「方向」にまっすぐ行くと、着きます。",
+        "en": "Choose the correct reading of the word in 「」: 駅は、この「方向」にまっすぐ行くと、着きます。"
+      },
+      "payload": {
+        "choices": [
+          "がわ",
+          "さんかく",
+          "かたち",
+          "ほうこう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「方向」 đọc là 「ほうこう」, nghĩa là Phương hướng; hướng.",
+        "en": "Correct! 「方向」 is read 「ほうこう」 and means Direction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「方向」 đọc là 「ほうこう」 (Phương hướng; hướng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「方向」 is read 「ほうこう」 (Direction); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "丸い",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: このお皿は、「丸い」ので、持ちやすいです。",
+        "en": "Choose the correct reading of the word in 「」: このお皿は、「丸い」ので、持ちやすいです。"
+      },
+      "payload": {
+        "choices": [
+          "まるい",
+          "しかく",
+          "がわ",
+          "かたち"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「丸い」 đọc là 「まるい」, nghĩa là Tròn.",
+        "en": "Correct! 「丸い」 is read 「まるい」 and means Round."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「丸い」 đọc là 「まるい」 (Tròn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「丸い」 is read 「まるい」 (Round); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "三角",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: おにぎりは、「さんかく」にして食べることが多いです。",
+        "en": "Choose the correct way to write the word in 「」: おにぎりは、「さんかく」にして食べることが多いです。"
+      },
+      "payload": {
+        "choices": [
+          "三角",
+          "丸い",
+          "形",
+          "方向"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「さんかく」 viết là 「三角」, nghĩa là Hình tam giác.",
+        "en": "Correct! 「さんかく」 is written 「三角」 and means Triangle."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「さんかく」 viết là 「三角」 (Hình tam giác); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「さんかく」 is written 「三角」 (Triangle); the other words are read differently."
+      }
+    }
+  ]
+}

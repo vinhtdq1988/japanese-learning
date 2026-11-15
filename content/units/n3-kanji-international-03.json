@@ -1,0 +1,675 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-international",
+  "title": {
+    "vi": "Kanji quốc tế (招 米 戦 争 勝)",
+    "en": "International affairs kanji (招 米 戦 争 勝)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "招",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "mời; vẫy gọi",
+        "en": "invite; beckon"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "まね.く"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "招待",
+          "reading": "しょうたい",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "lời mời",
+            "en": "invitation"
+          }
+        },
+        {
+          "ja": "招く",
+          "reading": "まねく",
+          "kanjiReading": "まね",
+          "translation": {
+            "vi": "mời; gây ra",
+            "en": "to invite"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "米",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "gạo; nước Mỹ",
+        "en": "rice; America"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ベイ",
+          "マイ"
+        ],
+        "kunReadings": [
+          "こめ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "米国",
+          "reading": "べいこく",
+          "kanjiReading": "ベイ",
+          "translation": {
+            "vi": "nước Mỹ",
+            "en": "United States"
+          }
+        },
+        {
+          "ja": "米",
+          "reading": "こめ",
+          "kanjiReading": "こめ",
+          "translation": {
+            "vi": "gạo",
+            "en": "rice"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "戦",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "chiến; đánh",
+        "en": "war; fight"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セン"
+        ],
+        "kunReadings": [
+          "いくさ",
+          "たたか.う"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "戦争",
+          "reading": "せんそう",
+          "kanjiReading": "セン",
+          "translation": {
+            "vi": "chiến tranh",
+            "en": "war"
+          }
+        },
+        {
+          "ja": "戦う",
+          "reading": "たたかう",
+          "kanjiReading": "たたか",
+          "translation": {
+            "vi": "chiến đấu",
+            "en": "to fight"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "争",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "tranh; giành",
+        "en": "contend; quarrel"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ"
+        ],
+        "kunReadings": [
+          "あらそ.う"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "競争",
+          "reading": "きょうそう",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "cạnh tranh",
+            "en": "competition"
+          }
+        },
+        {
+          "ja": "争う",
+          "reading": "あらそう",
+          "kanjiReading": "あらそ",
+          "translation": {
+            "vi": "tranh giành",
+            "en": "to compete"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勝",
+      "topic": "kanji-n3-international",
+      "meaning": {
+        "vi": "thắng",
+        "en": "win; excel"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ"
+        ],
+        "kunReadings": [
+          "か.つ",
+          "まさ.る"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "勝利",
+          "reading": "しょうり",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "chiến thắng",
+            "en": "victory"
+          }
+        },
+        {
+          "ja": "勝つ",
+          "reading": "かつ",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "thắng",
+            "en": "to win"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "招",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「招」nghĩa là gì?",
+        "en": "What does 「招」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mời; vẫy gọi",
+            "en": "invite; beckon"
+          },
+          {
+            "vi": "gạo; nước Mỹ",
+            "en": "rice; America"
+          },
+          {
+            "vi": "chiến; đánh",
+            "en": "war; fight"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 招 nghĩa là mời; vẫy gọi.",
+        "en": "Correct! 招 means invite; beckon."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 招 nghĩa là mời; vẫy gọi, như trong 「招待」 (lời mời).",
+        "en": "Not quite. 招 means invite; beckon, as in 「招待」 (invitation)."
+      }
+    },
+    {
+      "item": "招",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「招」 trong 「招待」 (“lời mời”).",
+        "en": "Type the reading of 「招」 in 「招待」 (“invitation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 招待, 招 đọc là しょう (âm On).",
+        "en": "Correct! In 招待, 招 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 招待 (lời mời), 招 đọc là しょう (âm On).",
+        "en": "In 招待 (invitation), 招 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "招",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「招く」(mời; gây ra) đọc là gì?",
+        "en": "How is 「招く」 (to invite) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうく",
+          "まねく",
+          "べいこく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 招く = まねく (mời; gây ra); 招 đọc là まね (âm Kun).",
+        "en": "Correct! 招く = まねく (to invite); 招 is read まね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "招く đọc là まねく (mời; gây ra): 招 mang âm Kun まね.",
+        "en": "招く is read まねく (to invite): 招 takes the kun'yomi まね."
+      }
+    },
+    {
+      "item": "米",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「米」nghĩa là gì?",
+        "en": "What does 「米」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chiến; đánh",
+            "en": "war; fight"
+          },
+          {
+            "vi": "gạo; nước Mỹ",
+            "en": "rice; America"
+          },
+          {
+            "vi": "tranh; giành",
+            "en": "contend; quarrel"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 米 nghĩa là gạo; nước Mỹ.",
+        "en": "Correct! 米 means rice; America."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 米 nghĩa là gạo; nước Mỹ, như trong 「米国」 (nước Mỹ).",
+        "en": "Not quite. 米 means rice; America, as in 「米国」 (United States)."
+      }
+    },
+    {
+      "item": "米",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「米」 trong 「米国」 (“nước Mỹ”).",
+        "en": "Type the reading of 「米」 in 「米国」 (“United States”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "べい",
+          "ベイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 米国, 米 đọc là べい (âm On).",
+        "en": "Correct! In 米国, 米 is read べい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 米国 (nước Mỹ), 米 đọc là べい (âm On).",
+        "en": "In 米国 (United States), 米 is read べい (on'yomi)."
+      }
+    },
+    {
+      "item": "米",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「米」(gạo; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「米」 (rice; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "べい",
+          "かつ",
+          "こめ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 米 = こめ (gạo); 米 đọc là こめ (âm Kun).",
+        "en": "Correct! 米 = こめ (rice); 米 is read こめ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "米 đọc là こめ (gạo): 米 mang âm Kun こめ.",
+        "en": "米 is read こめ (rice): 米 takes the kun'yomi こめ."
+      }
+    },
+    {
+      "item": "戦",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「戦」nghĩa là gì?",
+        "en": "What does 「戦」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tranh; giành",
+            "en": "contend; quarrel"
+          },
+          {
+            "vi": "thắng",
+            "en": "win; excel"
+          },
+          {
+            "vi": "chiến; đánh",
+            "en": "war; fight"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 戦 nghĩa là chiến; đánh.",
+        "en": "Correct! 戦 means war; fight."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 戦 nghĩa là chiến; đánh, như trong 「戦争」 (chiến tranh).",
+        "en": "Not quite. 戦 means war; fight, as in 「戦争」 (war)."
+      }
+    },
+    {
+      "item": "戦",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「戦」 trong 「戦争」 (“chiến tranh”).",
+        "en": "Type the reading of 「戦」 in 「戦争」 (“war”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せん",
+          "セン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 戦争, 戦 đọc là せん (âm On).",
+        "en": "Correct! In 戦争, 戦 is read せん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 戦争 (chiến tranh), 戦 đọc là せん (âm On).",
+        "en": "In 戦争 (war), 戦 is read せん (on'yomi)."
+      }
+    },
+    {
+      "item": "戦",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「戦う」(chiến đấu) đọc là gì?",
+        "en": "How is 「戦う」 (to fight) read?"
+      },
+      "payload": {
+        "choices": [
+          "たたかう",
+          "せんう",
+          "あらそう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 戦う = たたかう (chiến đấu); 戦 đọc là たたか (âm Kun).",
+        "en": "Correct! 戦う = たたかう (to fight); 戦 is read たたか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "戦う đọc là たたかう (chiến đấu): 戦 mang âm Kun たたか.",
+        "en": "戦う is read たたかう (to fight): 戦 takes the kun'yomi たたか."
+      }
+    },
+    {
+      "item": "争",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「争」nghĩa là gì?",
+        "en": "What does 「争」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tranh; giành",
+            "en": "contend; quarrel"
+          },
+          {
+            "vi": "thắng",
+            "en": "win; excel"
+          },
+          {
+            "vi": "mời; vẫy gọi",
+            "en": "invite; beckon"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 争 nghĩa là tranh; giành.",
+        "en": "Correct! 争 means contend; quarrel."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 争 nghĩa là tranh; giành, như trong 「競争」 (cạnh tranh).",
+        "en": "Not quite. 争 means contend; quarrel, as in 「競争」 (competition)."
+      }
+    },
+    {
+      "item": "争",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「争」 trong 「競争」 (“cạnh tranh”).",
+        "en": "Type the reading of 「争」 in 「競争」 (“competition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 競争, 争 đọc là そう (âm On).",
+        "en": "Correct! In 競争, 争 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 競争 (cạnh tranh), 争 đọc là そう (âm On).",
+        "en": "In 競争 (competition), 争 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "争",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「争う」(tranh giành) đọc là gì?",
+        "en": "How is 「争う」 (to compete) read?"
+      },
+      "payload": {
+        "choices": [
+          "そうう",
+          "あらそう",
+          "せんそう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 争う = あらそう (tranh giành); 争 đọc là あらそ (âm Kun).",
+        "en": "Correct! 争う = あらそう (to compete); 争 is read あらそ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "争う đọc là あらそう (tranh giành): 争 mang âm Kun あらそ.",
+        "en": "争う is read あらそう (to compete): 争 takes the kun'yomi あらそ."
+      }
+    },
+    {
+      "item": "勝",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「勝」nghĩa là gì?",
+        "en": "What does 「勝」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mời; vẫy gọi",
+            "en": "invite; beckon"
+          },
+          {
+            "vi": "thắng",
+            "en": "win; excel"
+          },
+          {
+            "vi": "gạo; nước Mỹ",
+            "en": "rice; America"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 勝 nghĩa là thắng.",
+        "en": "Correct! 勝 means win; excel."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 勝 nghĩa là thắng, như trong 「勝利」 (chiến thắng).",
+        "en": "Not quite. 勝 means win; excel, as in 「勝利」 (victory)."
+      }
+    },
+    {
+      "item": "勝",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「勝」 trong 「勝利」 (“chiến thắng”).",
+        "en": "Type the reading of 「勝」 in 「勝利」 (“victory”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 勝利, 勝 đọc là しょう (âm On).",
+        "en": "Correct! In 勝利, 勝 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 勝利 (chiến thắng), 勝 đọc là しょう (âm On).",
+        "en": "In 勝利 (victory), 勝 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "勝",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「勝つ」(thắng) đọc là gì?",
+        "en": "How is 「勝つ」 (to win) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうつ",
+          "こめ",
+          "かつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 勝つ = かつ (thắng); 勝 đọc là か (âm Kun).",
+        "en": "Correct! 勝つ = かつ (to win); 勝 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "勝つ đọc là かつ (thắng): 勝 mang âm Kun か.",
+        "en": "勝つ is read かつ (to win): 勝 takes the kun'yomi か."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "招",
+            {
+              "vi": "mời; vẫy gọi",
+              "en": "invite; beckon"
+            }
+          ],
+          [
+            "米",
+            {
+              "vi": "gạo; nước Mỹ",
+              "en": "rice; America"
+            }
+          ],
+          [
+            "戦",
+            {
+              "vi": "chiến; đánh",
+              "en": "war; fight"
+            }
+          ],
+          [
+            "争",
+            {
+              "vi": "tranh; giành",
+              "en": "contend; quarrel"
+            }
+          ],
+          [
+            "勝",
+            {
+              "vi": "thắng",
+              "en": "win; excel"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

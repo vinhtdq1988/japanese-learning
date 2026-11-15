@@ -1,0 +1,416 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (記 録 版)",
+    "en": "Education and culture kanji (記 録 版)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1230,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "記",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "ghi; ghi chép",
+        "en": "record; write down"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [
+          "しる.す"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "日記",
+          "reading": "にっき",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "nhật ký",
+            "en": "diary"
+          }
+        },
+        {
+          "ja": "記す",
+          "reading": "しるす",
+          "kanjiReading": "しる",
+          "translation": {
+            "vi": "ghi lại",
+            "en": "to write down"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "録",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "ghi; ghi lại",
+        "en": "record"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ロク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "録音",
+          "reading": "ろくおん",
+          "kanjiReading": "ロク",
+          "translation": {
+            "vi": "ghi âm",
+            "en": "sound recording"
+          }
+        },
+        {
+          "ja": "記録",
+          "reading": "きろく",
+          "kanjiReading": "ロク",
+          "translation": {
+            "vi": "kỷ lục; ghi chép",
+            "en": "record"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "版",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "bản in; ấn bản",
+        "en": "edition; print"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "版画",
+          "reading": "はんが",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "tranh khắc in",
+            "en": "woodblock print"
+          }
+        },
+        {
+          "ja": "再版",
+          "reading": "さいはん",
+          "kanjiReading": "ハン",
+          "translation": {
+            "vi": "tái bản",
+            "en": "reprint"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "記",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「記」nghĩa là gì?",
+        "en": "What does 「記」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ghi; ghi chép",
+            "en": "record; write down"
+          },
+          {
+            "vi": "ghi; ghi lại",
+            "en": "record"
+          },
+          {
+            "vi": "bản in; ấn bản",
+            "en": "edition; print"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 記 nghĩa là ghi; ghi chép.",
+        "en": "Correct! 記 means record; write down."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 記 nghĩa là ghi; ghi chép, như trong 「日記」 (nhật ký).",
+        "en": "Not quite. 記 means record; write down, as in 「日記」 (diary)."
+      }
+    },
+    {
+      "item": "記",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「記」 trong 「日記」 (“nhật ký”).",
+        "en": "Type the reading of 「記」 in 「日記」 (“diary”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 日記, 記 đọc là き (âm On).",
+        "en": "Correct! In 日記, 記 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 日記 (nhật ký), 記 đọc là き (âm On).",
+        "en": "In 日記 (diary), 記 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "記",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「記す」(ghi lại) đọc là gì?",
+        "en": "How is 「記す」 (to write down) read?"
+      },
+      "payload": {
+        "choices": [
+          "きす",
+          "しるす",
+          "きろく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 記す = しるす (ghi lại); 記 đọc là しる (âm Kun).",
+        "en": "Correct! 記す = しるす (to write down); 記 is read しる (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "記す đọc là しるす (ghi lại): 記 mang âm Kun しる.",
+        "en": "記す is read しるす (to write down): 記 takes the kun'yomi しる."
+      }
+    },
+    {
+      "item": "録",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「録」nghĩa là gì?",
+        "en": "What does 「録」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bản in; ấn bản",
+            "en": "edition; print"
+          },
+          {
+            "vi": "ghi; ghi lại",
+            "en": "record"
+          },
+          {
+            "vi": "ghi; ghi chép",
+            "en": "record; write down"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 録 nghĩa là ghi; ghi lại.",
+        "en": "Correct! 録 means record."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 録 nghĩa là ghi; ghi lại, như trong 「録音」 (ghi âm).",
+        "en": "Not quite. 録 means record, as in 「録音」 (sound recording)."
+      }
+    },
+    {
+      "item": "録",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「録」 trong 「録音」 (“ghi âm”).",
+        "en": "Type the reading of 「録」 in 「録音」 (“sound recording”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ろく",
+          "ロク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 録音, 録 đọc là ろく (âm On).",
+        "en": "Correct! In 録音, 録 is read ろく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 録音 (ghi âm), 録 đọc là ろく (âm On).",
+        "en": "In 録音 (sound recording), 録 is read ろく (on'yomi)."
+      }
+    },
+    {
+      "item": "録",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「記録」(kỷ lục; ghi chép) đọc là gì?",
+        "en": "How is 「記録」 (record) read?"
+      },
+      "payload": {
+        "choices": [
+          "きはん",
+          "きしる",
+          "きろく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 記録 = きろく (kỷ lục; ghi chép); 録 đọc là ろく (âm On).",
+        "en": "Correct! 記録 = きろく (record); 録 is read ろく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "記録 đọc là きろく (kỷ lục; ghi chép): 録 mang âm On ろく.",
+        "en": "記録 is read きろく (record): 録 takes the on'yomi ろく."
+      }
+    },
+    {
+      "item": "版",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「版」nghĩa là gì?",
+        "en": "What does 「版」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ghi; ghi chép",
+            "en": "record; write down"
+          },
+          {
+            "vi": "ghi; ghi lại",
+            "en": "record"
+          },
+          {
+            "vi": "bản in; ấn bản",
+            "en": "edition; print"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 版 nghĩa là bản in; ấn bản.",
+        "en": "Correct! 版 means edition; print."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 版 nghĩa là bản in; ấn bản, như trong 「版画」 (tranh khắc in).",
+        "en": "Not quite. 版 means edition; print, as in 「版画」 (woodblock print)."
+      }
+    },
+    {
+      "item": "版",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「版」 trong 「版画」 (“tranh khắc in”).",
+        "en": "Type the reading of 「版」 in 「版画」 (“woodblock print”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "はん",
+          "ハン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 版画, 版 đọc là はん (âm On).",
+        "en": "Correct! In 版画, 版 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 版画 (tranh khắc in), 版 đọc là はん (âm On).",
+        "en": "In 版画 (woodblock print), 版 is read はん (on'yomi)."
+      }
+    },
+    {
+      "item": "版",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「再版」(tái bản) đọc là gì?",
+        "en": "How is 「再版」 (reprint) read?"
+      },
+      "payload": {
+        "choices": [
+          "さいはん",
+          "さいばん",
+          "さいしる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 再版 = さいはん (tái bản); 版 đọc là はん (âm On).",
+        "en": "Correct! 再版 = さいはん (reprint); 版 is read はん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "再版 đọc là さいはん (tái bản): 版 mang âm On はん.",
+        "en": "再版 is read さいはん (reprint): 版 takes the on'yomi はん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "記",
+            {
+              "vi": "ghi; ghi chép",
+              "en": "record; write down"
+            }
+          ],
+          [
+            "録",
+            {
+              "vi": "ghi; ghi lại",
+              "en": "record"
+            }
+          ],
+          [
+            "版",
+            {
+              "vi": "bản in; ấn bản",
+              "en": "edition; print"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

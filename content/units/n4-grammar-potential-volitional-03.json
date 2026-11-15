@@ -1,0 +1,521 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-potential-volitional",
+  "title": {
+    "vi": "Dự định và quyết định: 〜つもりだ, 〜予定だ, 〜ことにする, 〜ことになる",
+    "en": "Plans and decisions: 〜つもりだ, 〜予定だ, 〜ことにする, 〜ことになる"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜つもりだ",
+      "meaning": {
+        "vi": "Dự định ~",
+        "en": "Intend to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + つもりだ. Nói ý định do bản thân quyết định, có thể thay đổi. Phủ định: 〜ないつもりだ. Chỉ nói về ý định của người nói (hoặc người được hỏi).",
+        "en": "Usage: verb dictionary form / ない-form + つもりだ. States an intention the speaker has decided; it can still change. Negative: 〜ないつもりだ. It is used for the speaker's (or the person asked) intention."
+      },
+      "examples": [
+        {
+          "ja": "夏休みに国へ帰るつもりです。",
+          "reading": "なつやすみにくにへかえるつもりです。",
+          "translation": {
+            "vi": "Kỳ nghỉ hè tôi định về nước.",
+            "en": "I intend to go back to my country over the summer vacation."
+          }
+        },
+        {
+          "ja": "今年はお酒を飲まないつもりです。",
+          "reading": "ことしはおさけをのまないつもりです。",
+          "translation": {
+            "vi": "Năm nay tôi định không uống rượu.",
+            "en": "I plan not to drink alcohol this year."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-024"
+    },
+    {
+      "japanese": "〜予定だ",
+      "meaning": {
+        "vi": "Có kế hoạch ~",
+        "en": "Be scheduled to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / 名詞の + 予定だ. Nói kế hoạch đã sắp xếp, lịch trình, mang tính khách quan hơn つもり; dùng được cho sự việc không do ý chí người nói (会議が始まる予定だ).",
+        "en": "Usage: verb dictionary form / noun の + 予定だ. States an arranged plan or schedule, more objective than つもり; it can also describe events not under the speaker's will (会議が始まる予定だ)."
+      },
+      "examples": [
+        {
+          "ja": "来週の月曜日に出張する予定です。",
+          "reading": "らいしゅうのげつようびにしゅっちょうするよていです。",
+          "translation": {
+            "vi": "Thứ Hai tuần sau tôi có lịch đi công tác.",
+            "en": "I am scheduled to go on a business trip next Monday."
+          }
+        },
+        {
+          "ja": "会議は三時から始まる予定です。",
+          "reading": "かいぎはさんじからはじまるよていです。",
+          "translation": {
+            "vi": "Cuộc họp dự kiến bắt đầu từ ba giờ.",
+            "en": "The meeting is scheduled to start at three o'clock."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-025"
+    },
+    {
+      "japanese": "〜ことにする",
+      "meaning": {
+        "vi": "Quyết định ~",
+        "en": "Decide to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ことにする. Chủ ngữ tự quyết định (健康のために走ることにした). Đã quyết định xong thì nói 〜ことにしました; muốn nói thói quen đã định thì 〜ことにしている (N3).",
+        "en": "Usage: verb dictionary form / ない-form + ことにする. The subject decides by themselves (健康のために走ることにした). Use 〜ことにしました for a decision just made; 〜ことにしている (N3) is for a fixed habit."
+      },
+      "examples": [
+        {
+          "ja": "健康のために、毎朝走ることにしました。",
+          "reading": "けんこうのために、まいあさはしることにしました。",
+          "translation": {
+            "vi": "Vì sức khỏe, tôi đã quyết định chạy bộ mỗi sáng.",
+            "en": "For my health, I decided to run every morning."
+          }
+        },
+        {
+          "ja": "今日は家で休むことにします。",
+          "reading": "きょうはいえでやすむことにします。",
+          "translation": {
+            "vi": "Hôm nay tôi quyết định nghỉ ở nhà.",
+            "en": "I will decide to rest at home today."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-026"
+    },
+    {
+      "japanese": "〜ことになる",
+      "meaning": {
+        "vi": "Được quyết định là ~",
+        "en": "It has been decided that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ことになる. Kết quả do hoàn cảnh, công ty, người khác quyết định, không phải ý chí của mình. Cặp với 〜ことにする: ことにする (mình quyết) ↔ ことになる (được quyết).",
+        "en": "Usage: verb dictionary form / ない-form + ことになる. The result is decided by circumstances, the company or others, not by oneself. It pairs with 〜ことにする: ことにする (I decide) ↔ ことになる (it is decided)."
+      },
+      "examples": [
+        {
+          "ja": "来月から大阪で働くことになりました。",
+          "reading": "らいげつからおおさかではたらくことになりました。",
+          "translation": {
+            "vi": "Từ tháng sau tôi sẽ làm việc ở Osaka (đã được quyết định).",
+            "en": "It has been decided that I will work in Osaka from next month."
+          }
+        },
+        {
+          "ja": "来年、結婚することになりました。",
+          "reading": "らいねん、けっこんすることになりました。",
+          "translation": {
+            "vi": "Sang năm tôi sẽ kết hôn (đã được quyết định).",
+            "en": "It has been decided that I will get married next year."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-027"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜つもりだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n夏休みに国へ帰る（　）です。",
+        "en": "Choose the correct option for the blank:\n夏休みに国へ帰る（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "ため",
+          "ところ",
+          "つもり",
+          "ばかり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ý định của bản thân dùng 「〜つもりです」: 「帰るつもりです」.",
+        "en": "Correct! One's own intention uses 「〜つもりです」: 「帰るつもりです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ý định của bản thân dùng 「〜つもりです」: 「帰るつもりです」.",
+        "en": "Not quite. One's own intention uses 「〜つもりです」: 「帰るつもりです」."
+      }
+    },
+    {
+      "item": "〜つもりだ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今年はお酒を飲ま___つもりです。",
+        "en": "Choose the correct option for the blank:\n今年はお酒を飲ま___つもりです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ない"
+        ],
+        "hint": "〜ない"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phủ định của ý định: động từ thể ない + つもり: 「飲まないつもり」.",
+        "en": "Correct! A negative intention: verb ない-form + つもり: 「飲まないつもり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phủ định của ý định: động từ thể ない + つもり: 「飲まないつもり」.",
+        "en": "Not quite. A negative intention: verb ない-form + つもり: 「飲まないつもり」."
+      }
+    },
+    {
+      "item": "〜つもりだ",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n明日の会議は十時から始まる（　）です。",
+        "en": "Choose the pattern that best fits the context:\n明日の会議は十時から始まる（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "つもり",
+          "予定",
+          "こと",
+          "ところ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sự việc không do ý chí người nói (cuộc họp bắt đầu) dùng 「予定」, không dùng 「つもり」.",
+        "en": "Correct! An event not under the speaker's will (a meeting starting) uses 「予定」, not 「つもり」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sự việc không do ý chí người nói (cuộc họp bắt đầu) dùng 「予定」, không dùng 「つもり」.",
+        "en": "Not quite. An event not under the speaker's will (a meeting starting) uses 「予定」, not 「つもり」."
+      }
+    },
+    {
+      "item": "〜予定だ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n来週は出張（　）予定です。",
+        "en": "Choose the correct option for the blank:\n来週は出張（　）予定です。"
+      },
+      "payload": {
+        "choices": [
+          "の",
+          "を",
+          "に",
+          "が"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + の + 予定: 「出張の予定」.",
+        "en": "Correct! Noun + の + 予定: 「出張の予定」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + の + 予定: 「出張の予定」.",
+        "en": "Not quite. Noun + の + 予定: 「出張の予定」."
+      }
+    },
+    {
+      "item": "〜予定だ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n会議は三時に始まる___です。",
+        "en": "Choose the correct option for the blank:\n会議は三時に始まる___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "予定",
+          "よてい"
+        ],
+        "hint": "よてい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lịch trình đã sắp xếp dùng 「予定」: 「始まる予定です」.",
+        "en": "Correct! An arranged schedule uses 「予定」: 「始まる予定です」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lịch trình đã sắp xếp dùng 「予定」: 「始まる予定です」.",
+        "en": "Not quite. An arranged schedule uses 「予定」: 「始まる予定です」."
+      }
+    },
+    {
+      "item": "〜予定だ",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "来月、東京へ引っ越した予定です。",
+          "来月、東京へ引っ越して予定です。",
+          "来月、東京へ引っ越すの予定です。",
+          "来月、東京へ引っ越す予定です。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「予定」 là động từ thể từ điển: 「引っ越す予定」 (không dùng thể た, thể て hay 「の」).",
+        "en": "Correct! The verb before 「予定」 is in dictionary form: 「引っ越す予定」 (not た-form, て-form or 「の」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「予定」 là động từ thể từ điển: 「引っ越す予定」 (không dùng thể た, thể て hay 「の」).",
+        "en": "Not quite. The verb before 「予定」 is in dictionary form: 「引っ越す予定」 (not た-form, て-form or 「の」)."
+      }
+    },
+    {
+      "item": "〜ことにする",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n健康のために、毎朝走る（　）しました。",
+        "en": "Choose the correct option for the blank:\n健康のために、毎朝走る（　）しました。"
+      },
+      "payload": {
+        "choices": [
+          "ことが",
+          "ことを",
+          "ことに",
+          "ことで"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu là 「〜ことにする」: 「走ることにしました」.",
+        "en": "Correct! The pattern is 「〜ことにする」: 「走ることにしました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu là 「〜ことにする」: 「走ることにしました」.",
+        "en": "Not quite. The pattern is 「〜ことにする」: 「走ることにしました」."
+      }
+    },
+    {
+      "item": "〜ことにする",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は家で休む___にします。",
+        "en": "Choose the correct option for the blank:\n今日は家で休む___にします。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こと"
+        ],
+        "hint": "こと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休むことにします」 là tự quyết định nghỉ ở nhà.",
+        "en": "Correct! 「休むことにします」 means deciding by oneself to rest at home."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「休むことにします」 là tự quyết định nghỉ ở nhà.",
+        "en": "Not quite. 「休むことにします」 means deciding by oneself to rest at home."
+      }
+    },
+    {
+      "item": "〜ことにする",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n私は毎日日記を書く（　）。\n（Tôi tự quyết định như vậy.）",
+        "en": "Choose the pattern that best fits the context:\n私は毎日日記を書く（　）。\n(I decided this on my own.)"
+      },
+      "payload": {
+        "choices": [
+          "ことになりました",
+          "ことにしました",
+          "ことにあります",
+          "ことです"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tự mình quyết định (私は…書く) dùng 「ことにしました」; 「ことになりました」 là được người khác/hoàn cảnh quyết định.",
+        "en": "Correct! Deciding by myself (私は…書く) uses 「ことにしました」; 「ことになりました」 means it was decided by others or circumstances."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tự mình quyết định (私は…書く) dùng 「ことにしました」; 「ことになりました」 là được người khác/hoàn cảnh quyết định.",
+        "en": "Not quite. Deciding by myself (私は…書く) uses 「ことにしました」; 「ことになりました」 means it was decided by others or circumstances."
+      }
+    },
+    {
+      "item": "〜ことになる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n来年、結婚する（　）なりました。",
+        "en": "Choose the correct option for the blank:\n来年、結婚する（　）なりました。"
+      },
+      "payload": {
+        "choices": [
+          "ことに",
+          "ことが",
+          "ことを",
+          "ことで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu là 「〜ことになる」: 「結婚することになりました」.",
+        "en": "Correct! The pattern is 「〜ことになる」: 「結婚することになりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu là 「〜ことになる」: 「結婚することになりました」.",
+        "en": "Not quite. The pattern is 「〜ことになる」: 「結婚することになりました」."
+      }
+    },
+    {
+      "item": "〜ことになる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n会社の命令で、来月から大阪で働く（　）。",
+        "en": "Choose the pattern that best fits the context:\n会社の命令で、来月から大阪で働く（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ことにしました",
+          "つもりです",
+          "ことにします",
+          "ことになりました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Do công ty quyết định (không phải ý mình) dùng 「ことになりました」.",
+        "en": "Correct! A decision made by the company (not by me) uses 「ことになりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Do công ty quyết định (không phải ý mình) dùng 「ことになりました」.",
+        "en": "Not quite. A decision made by the company (not by me) uses 「ことになりました」."
+      }
+    },
+    {
+      "item": "〜ことになる",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n来月から　＿　＿　★　＿　。\n（大阪で／働く／ことに／なりました）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n来月から　＿　＿　★　＿　。\n（大阪で／働く／ことに／なりました）"
+      },
+      "payload": {
+        "choices": [
+          "大阪で",
+          "働く",
+          "ことに",
+          "なりました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「来月から大阪で働くことになりました。」; ô ★ (thứ ba) là 「ことに」.",
+        "en": "Correct! The correct sentence is 「来月から大阪で働くことになりました。」; the ★ (third) slot is 「ことに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「来月から大阪で働くことになりました。」; ô ★ (thứ ba) là 「ことに」.",
+        "en": "Not quite. The correct sentence is 「来月から大阪で働くことになりました。」; the ★ (third) slot is 「ことに」."
+      }
+    },
+    {
+      "item": "〜ことになる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "来年から、会社の制度が変わるになりました。",
+          "来年から、会社の制度が変わることになりました。",
+          "来年から、会社の制度が変わることにしました。",
+          "来年から、会社の制度が変わりことになりました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「制度が変わる」 do công ty quyết định, không phải chủ ngữ tự quyết, nên dùng 「〜ことになりました」 (động từ thể từ điển + ことに).",
+        "en": "Correct! The system change is decided by the company, not by the subject, so 「〜ことになりました」 is used (dictionary form + ことに)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「制度が変わる」 do công ty quyết định, không phải chủ ngữ tự quyết, nên dùng 「〜ことになりました」 (động từ thể từ điển + ことに).",
+        "en": "Not quite. The system change is decided by the company, not by the subject, so 「〜ことになりました」 is used (dictionary form + ことに)."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜つもりだ",
+            {
+              "vi": "Dự định ~",
+              "en": "Intend to ~"
+            }
+          ],
+          [
+            "〜予定だ",
+            {
+              "vi": "Có kế hoạch ~",
+              "en": "Be scheduled to ~"
+            }
+          ],
+          [
+            "〜ことにする",
+            {
+              "vi": "Quyết định ~",
+              "en": "Decide to ~"
+            }
+          ],
+          [
+            "〜ことになる",
+            {
+              "vi": "Được quyết định là ~",
+              "en": "It has been decided that ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

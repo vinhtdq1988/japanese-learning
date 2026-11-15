@@ -1,0 +1,206 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N5",
+  "tier": "core",
+  "topic": "writing-n5-greetings",
+  "title": {
+    "vi": "Viết: Đồ ăn thức uống và thời gian",
+    "en": "Writing: Food, drink and time"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 310,
+  "items": [
+    {
+      "japanese": "水",
+      "reading": "みず",
+      "meaning": {
+        "vi": "Nước (để uống)",
+        "en": "Water (to drink)"
+      }
+    },
+    {
+      "japanese": "お茶",
+      "reading": "おちゃ",
+      "meaning": {
+        "vi": "Trà (trà xanh Nhật)",
+        "en": "Tea (Japanese green tea)"
+      }
+    },
+    {
+      "japanese": "朝ごはん",
+      "reading": "あさごはん",
+      "meaning": {
+        "vi": "Bữa sáng",
+        "en": "Breakfast"
+      }
+    },
+    {
+      "japanese": "今日",
+      "reading": "きょう",
+      "meaning": {
+        "vi": "Hôm nay",
+        "en": "Today"
+      }
+    },
+    {
+      "japanese": "毎日",
+      "reading": "まいにち",
+      "meaning": {
+        "vi": "Mỗi ngày",
+        "en": "Every day"
+      }
+    },
+    {
+      "japanese": "時間",
+      "reading": "じかん",
+      "meaning": {
+        "vi": "Thời gian; giờ",
+        "en": "Time; hour"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nước (để uống)”",
+        "en": "Type in Japanese: “Water (to drink)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "水",
+          "みず",
+          "お水",
+          "おみず"
+        ],
+        "hint": "よみ: みず"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 水 (đọc là みず).",
+        "en": "Not quite. Reference answer: 水 (read as みず)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Trà (trà xanh Nhật)”",
+        "en": "Type in Japanese: “Tea (Japanese green tea)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "お茶",
+          "おちゃ"
+        ],
+        "hint": "よみ: おちゃ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: お茶 (đọc là おちゃ).",
+        "en": "Not quite. Reference answer: お茶 (read as おちゃ)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bữa sáng”",
+        "en": "Type in Japanese: “Breakfast”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "朝ごはん",
+          "朝ご飯",
+          "あさごはん",
+          "あさご飯"
+        ],
+        "hint": "よみ: あさごはん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 朝ごはん (đọc là あさごはん).",
+        "en": "Not quite. Reference answer: 朝ごはん (read as あさごはん)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Hôm nay”",
+        "en": "Type in Japanese: “Today”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "今日",
+          "きょう"
+        ],
+        "hint": "よみ: きょう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 今日 (đọc là きょう).",
+        "en": "Not quite. Reference answer: 今日 (read as きょう)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Mỗi ngày”",
+        "en": "Type in Japanese: “Every day”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "毎日",
+          "まいにち"
+        ],
+        "hint": "よみ: まいにち"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 毎日 (đọc là まいにち).",
+        "en": "Not quite. Reference answer: 毎日 (read as まいにち)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Thời gian; giờ”",
+        "en": "Type in Japanese: “Time; hour”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "時間",
+          "じかん"
+        ],
+        "hint": "よみ: じかん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 時間 (đọc là じかん).",
+        "en": "Not quite. Reference answer: 時間 (read as じかん)."
+      }
+    }
+  ]
+}

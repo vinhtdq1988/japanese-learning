@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-manufacturing",
+  "title": {
+    "vi": "Linh kiện, thiết bị và sản xuất hàng loạt",
+    "en": "Parts, equipment and mass production"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1070,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "部品",
+      "reading": "ぶひん",
+      "meaning": {
+        "vi": "Linh kiện",
+        "en": "Part; component"
+      },
+      "examples": [
+        {
+          "ja": "壊れた部品を、新しいものと取り替えました。",
+          "reading": "こわれたぶひんを、あたらしいものととりかえました。",
+          "translation": {
+            "vi": "Tôi đã thay linh kiện hỏng bằng linh kiện mới.",
+            "en": "I replaced the broken part with a new one."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "装置",
+      "reading": "そうち",
+      "meaning": {
+        "vi": "Thiết bị; cơ cấu",
+        "en": "Device; apparatus"
+      },
+      "examples": [
+        {
+          "ja": "この装置を使うと、空気がきれいになります。",
+          "reading": "このそうちをつかうと、くうきがきれいになります。",
+          "translation": {
+            "vi": "Dùng thiết bị này thì không khí sẽ sạch hơn.",
+            "en": "Using this device cleans the air."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "設備",
+      "reading": "せつび",
+      "meaning": {
+        "vi": "Trang thiết bị; cơ sở vật chất",
+        "en": "Equipment; facilities"
+      },
+      "examples": [
+        {
+          "ja": "新しい工場には、最新の設備が入っています。",
+          "reading": "あたらしいこうじょうには、さいしんのせつびがはいっています。",
+          "translation": {
+            "vi": "Nhà máy mới có trang thiết bị mới nhất.",
+            "en": "The new factory has the latest equipment."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "工具",
+      "reading": "こうぐ",
+      "meaning": {
+        "vi": "Dụng cụ (cơ khí)",
+        "en": "Tool"
+      },
+      "examples": [
+        {
+          "ja": "修理には、特別な工具が必要です。",
+          "reading": "しゅうりには、とくべつなこうぐがひつようです。",
+          "translation": {
+            "vi": "Việc sửa chữa cần có dụng cụ đặc biệt.",
+            "en": "Repairs require special tools."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "原因",
+      "reading": "げんいん",
+      "meaning": {
+        "vi": "Nguyên nhân",
+        "en": "Cause"
+      },
+      "examples": [
+        {
+          "ja": "事故の原因は、まだわかっていません。",
+          "reading": "じこのげんいんは、まだわかっていません。",
+          "translation": {
+            "vi": "Nguyên nhân tai nạn vẫn chưa rõ.",
+            "en": "The cause of the accident is still unknown."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "結果",
+      "reading": "けっか",
+      "meaning": {
+        "vi": "Kết quả",
+        "en": "Result"
+      },
+      "examples": [
+        {
+          "ja": "実験の結果は、予想と違いました。",
+          "reading": "じっけんのけっかは、よそうとちがいました。",
+          "translation": {
+            "vi": "Kết quả thí nghiệm khác với dự đoán.",
+            "en": "The result of the experiment differed from the prediction."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "性能",
+      "reading": "せいのう",
+      "meaning": {
+        "vi": "Tính năng; hiệu suất",
+        "en": "Performance; specifications"
+      },
+      "examples": [
+        {
+          "ja": "この車は、性能がとてもいいです。",
+          "reading": "このくるまは、せいのうがとてもいいです。",
+          "translation": {
+            "vi": "Chiếc xe này có hiệu suất rất tốt.",
+            "en": "This car has excellent performance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "品種",
+      "reading": "ひんしゅ",
+      "meaning": {
+        "vi": "Giống (cây, vật nuôi); chủng loại",
+        "en": "Variety; breed"
+      },
+      "examples": [
+        {
+          "ja": "この畑では、何種類もの品種の米を作っています。",
+          "reading": "このはたけでは、なんしゅるいものひんしゅのこめをつくっています。",
+          "translation": {
+            "vi": "Ở cánh đồng này người ta trồng nhiều giống lúa.",
+            "en": "Many varieties of rice are grown in this field."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "工程",
+      "reading": "こうてい",
+      "meaning": {
+        "vi": "Công đoạn; quy trình sản xuất",
+        "en": "Process; production stage"
+      },
+      "examples": [
+        {
+          "ja": "製造の工程は、全部で十あります。",
+          "reading": "せいぞうのこうていは、ぜんぶでじゅうあります。",
+          "translation": {
+            "vi": "Quy trình sản xuất có tất cả mười công đoạn.",
+            "en": "The manufacturing process has ten stages in total."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "流れ作業",
+      "reading": "ながれさぎょう",
+      "meaning": {
+        "vi": "Dây chuyền (làm việc theo từng công đoạn)",
+        "en": "Assembly-line work"
+      },
+      "examples": [
+        {
+          "ja": "この工場では、流れ作業で車を作ります。",
+          "reading": "このこうじょうでは、ながれさぎょうでくるまをつくります。",
+          "translation": {
+            "vi": "Nhà máy này làm xe theo dây chuyền.",
+            "en": "This factory makes cars on an assembly line."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "生産性",
+      "reading": "せいさんせい",
+      "meaning": {
+        "vi": "Năng suất sản xuất",
+        "en": "Productivity"
+      },
+      "examples": [
+        {
+          "ja": "新しい機械で、工場の生産性が上がりました。",
+          "reading": "あたらしいきかいで、こうじょうのせいさんせいがあがりました。",
+          "translation": {
+            "vi": "Nhờ máy mới, năng suất của nhà máy đã tăng lên.",
+            "en": "The new machine raised the factory's productivity."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "量産",
+      "reading": "りょうさん",
+      "meaning": {
+        "vi": "Sản xuất hàng loạt",
+        "en": "Mass production"
+      },
+      "examples": [
+        {
+          "ja": "試作が成功したので、量産を始めます。",
+          "reading": "しさくがせいこうしたので、りょうさんをはじめます。",
+          "translation": {
+            "vi": "Vì làm thử thành công nên chúng tôi bắt đầu sản xuất hàng loạt.",
+            "en": "The prototype was a success, so we will start mass production."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "部品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 壊れた（　）を、新しいものと取り替えました。 — Nghĩa của câu: “Tôi đã thay linh kiện hỏng bằng linh kiện mới.”",
+        "en": "Choose the word that fits the blank: 壊れた（　）を、新しいものと取り替えました。 — Meaning of the sentence: “I replaced the broken part with a new one.”"
+      },
+      "payload": {
+        "choices": [
+          "結果",
+          "工程",
+          "量産",
+          "部品"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「部品」(Linh kiện) hợp nghĩa câu này: “Tôi đã thay linh kiện hỏng bằng linh kiện mới.”",
+        "en": "Correct! 「部品」(Part; component) fits this sentence: “I replaced the broken part with a new one.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã thay linh kiện hỏng bằng linh kiện mới.”, nên cần 「部品」(Linh kiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I replaced the broken part with a new one.”, so it needs 「部品」(Part; component); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "装置",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）を使うと、空気がきれいになります。 — Nghĩa của câu: “Dùng thiết bị này thì không khí sẽ sạch hơn.”",
+        "en": "Choose the word that fits the blank: この（　）を使うと、空気がきれいになります。 — Meaning of the sentence: “Using this device cleans the air.”"
+      },
+      "payload": {
+        "choices": [
+          "装置",
+          "性能",
+          "生産性",
+          "工程"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「装置」(Thiết bị; cơ cấu) hợp nghĩa câu này: “Dùng thiết bị này thì không khí sẽ sạch hơn.”",
+        "en": "Correct! 「装置」(Device; apparatus) fits this sentence: “Using this device cleans the air.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dùng thiết bị này thì không khí sẽ sạch hơn.”, nên cần 「装置」(Thiết bị; cơ cấu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Using this device cleans the air.”, so it needs 「装置」(Device; apparatus); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "設備",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい工場には、最新の（　）が入っています。 — Nghĩa của câu: “Nhà máy mới có trang thiết bị mới nhất.”",
+        "en": "Choose the word that fits the blank: 新しい工場には、最新の（　）が入っています。 — Meaning of the sentence: “The new factory has the latest equipment.”"
+      },
+      "payload": {
+        "choices": [
+          "結果",
+          "設備",
+          "生産性",
+          "性能"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「設備」(Trang thiết bị; cơ sở vật chất) hợp nghĩa câu này: “Nhà máy mới có trang thiết bị mới nhất.”",
+        "en": "Correct! 「設備」(Equipment; facilities) fits this sentence: “The new factory has the latest equipment.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà máy mới có trang thiết bị mới nhất.”, nên cần 「設備」(Trang thiết bị; cơ sở vật chất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new factory has the latest equipment.”, so it needs 「設備」(Equipment; facilities); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "工具",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 修理には、特別な（　）が必要です。 — Nghĩa của câu: “Việc sửa chữa cần có dụng cụ đặc biệt.”",
+        "en": "Choose the word that fits the blank: 修理には、特別な（　）が必要です。 — Meaning of the sentence: “Repairs require special tools.”"
+      },
+      "payload": {
+        "choices": [
+          "性能",
+          "部品",
+          "工具",
+          "工程"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「工具」(Dụng cụ (cơ khí)) hợp nghĩa câu này: “Việc sửa chữa cần có dụng cụ đặc biệt.”",
+        "en": "Correct! 「工具」(Tool) fits this sentence: “Repairs require special tools.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc sửa chữa cần có dụng cụ đặc biệt.”, nên cần 「工具」(Dụng cụ (cơ khí)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Repairs require special tools.”, so it needs 「工具」(Tool); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "原因",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事故の（　）は、まだわかっていません。 — Nghĩa của câu: “Nguyên nhân tai nạn vẫn chưa rõ.”",
+        "en": "Choose the word that fits the blank: 事故の（　）は、まだわかっていません。 — Meaning of the sentence: “The cause of the accident is still unknown.”"
+      },
+      "payload": {
+        "choices": [
+          "部品",
+          "装置",
+          "設備",
+          "原因"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「原因」(Nguyên nhân) hợp nghĩa câu này: “Nguyên nhân tai nạn vẫn chưa rõ.”",
+        "en": "Correct! 「原因」(Cause) fits this sentence: “The cause of the accident is still unknown.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nguyên nhân tai nạn vẫn chưa rõ.”, nên cần 「原因」(Nguyên nhân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The cause of the accident is still unknown.”, so it needs 「原因」(Cause); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "結果",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 実験の（　）は、予想と違いました。 — Nghĩa của câu: “Kết quả thí nghiệm khác với dự đoán.”",
+        "en": "Choose the word that fits the blank: 実験の（　）は、予想と違いました。 — Meaning of the sentence: “The result of the experiment differed from the prediction.”"
+      },
+      "payload": {
+        "choices": [
+          "結果",
+          "装置",
+          "工具",
+          "部品"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「結果」(Kết quả) hợp nghĩa câu này: “Kết quả thí nghiệm khác với dự đoán.”",
+        "en": "Correct! 「結果」(Result) fits this sentence: “The result of the experiment differed from the prediction.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kết quả thí nghiệm khác với dự đoán.”, nên cần 「結果」(Kết quả); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The result of the experiment differed from the prediction.”, so it needs 「結果」(Result); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "性能",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この車は、（　）がとてもいいです。 — Nghĩa của câu: “Chiếc xe này có hiệu suất rất tốt.”",
+        "en": "Choose the word that fits the blank: この車は、（　）がとてもいいです。 — Meaning of the sentence: “This car has excellent performance.”"
+      },
+      "payload": {
+        "choices": [
+          "工程",
+          "性能",
+          "部品",
+          "品種"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「性能」(Tính năng; hiệu suất) hợp nghĩa câu này: “Chiếc xe này có hiệu suất rất tốt.”",
+        "en": "Correct! 「性能」(Performance; specifications) fits this sentence: “This car has excellent performance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chiếc xe này có hiệu suất rất tốt.”, nên cần 「性能」(Tính năng; hiệu suất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This car has excellent performance.”, so it needs 「性能」(Performance; specifications); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "品種",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この畑では、何種類もの（　）の米を作っています。 — Nghĩa của câu: “Ở cánh đồng này người ta trồng nhiều giống lúa.”",
+        "en": "Choose the word that fits the blank: この畑では、何種類もの（　）の米を作っています。 — Meaning of the sentence: “Many varieties of rice are grown in this field.”"
+      },
+      "payload": {
+        "choices": [
+          "装置",
+          "結果",
+          "品種",
+          "部品"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「品種」(Giống (cây, vật nuôi); chủng loại) hợp nghĩa câu này: “Ở cánh đồng này người ta trồng nhiều giống lúa.”",
+        "en": "Correct! 「品種」(Variety; breed) fits this sentence: “Many varieties of rice are grown in this field.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở cánh đồng này người ta trồng nhiều giống lúa.”, nên cần 「品種」(Giống (cây, vật nuôi); chủng loại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Many varieties of rice are grown in this field.”, so it needs 「品種」(Variety; breed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "工程",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 製造の（　）は、全部で十あります。 — Nghĩa của câu: “Quy trình sản xuất có tất cả mười công đoạn.”",
+        "en": "Choose the word that fits the blank: 製造の（　）は、全部で十あります。 — Meaning of the sentence: “The manufacturing process has ten stages in total.”"
+      },
+      "payload": {
+        "choices": [
+          "品種",
+          "生産性",
+          "結果",
+          "工程"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「工程」(Công đoạn; quy trình sản xuất) hợp nghĩa câu này: “Quy trình sản xuất có tất cả mười công đoạn.”",
+        "en": "Correct! 「工程」(Process; production stage) fits this sentence: “The manufacturing process has ten stages in total.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quy trình sản xuất có tất cả mười công đoạn.”, nên cần 「工程」(Công đoạn; quy trình sản xuất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The manufacturing process has ten stages in total.”, so it needs 「工程」(Process; production stage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "流れ作業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この工場では、（　）で車を作ります。 — Nghĩa của câu: “Nhà máy này làm xe theo dây chuyền.”",
+        "en": "Choose the word that fits the blank: この工場では、（　）で車を作ります。 — Meaning of the sentence: “This factory makes cars on an assembly line.”"
+      },
+      "payload": {
+        "choices": [
+          "流れ作業",
+          "工程",
+          "性能",
+          "結果"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「流れ作業」(Dây chuyền (làm việc theo từng công đoạn)) hợp nghĩa câu này: “Nhà máy này làm xe theo dây chuyền.”",
+        "en": "Correct! 「流れ作業」(Assembly-line work) fits this sentence: “This factory makes cars on an assembly line.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà máy này làm xe theo dây chuyền.”, nên cần 「流れ作業」(Dây chuyền (làm việc theo từng công đoạn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This factory makes cars on an assembly line.”, so it needs 「流れ作業」(Assembly-line work); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "生産性",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい機械で、工場の（　）が上がりました。 — Nghĩa của câu: “Nhờ máy mới, năng suất của nhà máy đã tăng lên.”",
+        "en": "Choose the word that fits the blank: 新しい機械で、工場の（　）が上がりました。 — Meaning of the sentence: “The new machine raised the factory's productivity.”"
+      },
+      "payload": {
+        "choices": [
+          "工具",
+          "生産性",
+          "部品",
+          "品種"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「生産性」(Năng suất sản xuất) hợp nghĩa câu này: “Nhờ máy mới, năng suất của nhà máy đã tăng lên.”",
+        "en": "Correct! 「生産性」(Productivity) fits this sentence: “The new machine raised the factory's productivity.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhờ máy mới, năng suất của nhà máy đã tăng lên.”, nên cần 「生産性」(Năng suất sản xuất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new machine raised the factory's productivity.”, so it needs 「生産性」(Productivity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "量産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試作が成功したので、（　）を始めます。 — Nghĩa của câu: “Vì làm thử thành công nên chúng tôi bắt đầu sản xuất hàng loạt.”",
+        "en": "Choose the word that fits the blank: 試作が成功したので、（　）を始めます。 — Meaning of the sentence: “The prototype was a success, so we will start mass production.”"
+      },
+      "payload": {
+        "choices": [
+          "原因",
+          "設備",
+          "量産",
+          "結果"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「量産」(Sản xuất hàng loạt) hợp nghĩa câu này: “Vì làm thử thành công nên chúng tôi bắt đầu sản xuất hàng loạt.”",
+        "en": "Correct! 「量産」(Mass production) fits this sentence: “The prototype was a success, so we will start mass production.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì làm thử thành công nên chúng tôi bắt đầu sản xuất hàng loạt.”, nên cần 「量産」(Sản xuất hàng loạt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The prototype was a success, so we will start mass production.”, so it needs 「量産」(Mass production); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "部品",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 壊れた「部品」を、新しいものと取り替えました。",
+        "en": "Choose the correct reading of the word in 「」: 壊れた「部品」を、新しいものと取り替えました。"
+      },
+      "payload": {
+        "choices": [
+          "ぶひん",
+          "こうてい",
+          "ひんしゅ",
+          "こうぐ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「部品」 đọc là 「ぶひん」, nghĩa là Linh kiện.",
+        "en": "Correct! 「部品」 is read 「ぶひん」 and means Part; component."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「部品」 đọc là 「ぶひん」 (Linh kiện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「部品」 is read 「ぶひん」 (Part; component); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "工具",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 修理には、特別な「工具」が必要です。",
+        "en": "Choose the correct reading of the word in 「」: 修理には、特別な「工具」が必要です。"
+      },
+      "payload": {
+        "choices": [
+          "りょうさん",
+          "こうぐ",
+          "けっか",
+          "せいのう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「工具」 đọc là 「こうぐ」, nghĩa là Dụng cụ (cơ khí).",
+        "en": "Correct! 「工具」 is read 「こうぐ」 and means Tool."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「工具」 đọc là 「こうぐ」 (Dụng cụ (cơ khí)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「工具」 is read 「こうぐ」 (Tool); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "性能",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この車は、「性能」がとてもいいです。",
+        "en": "Choose the correct reading of the word in 「」: この車は、「性能」がとてもいいです。"
+      },
+      "payload": {
+        "choices": [
+          "せつび",
+          "せいさんせい",
+          "せいのう",
+          "ぶひん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「性能」 đọc là 「せいのう」, nghĩa là Tính năng; hiệu suất.",
+        "en": "Correct! 「性能」 is read 「せいのう」 and means Performance; specifications."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「性能」 đọc là 「せいのう」 (Tính năng; hiệu suất); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「性能」 is read 「せいのう」 (Performance; specifications); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "流れ作業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この工場では、「流れ作業」で車を作ります。",
+        "en": "Choose the correct reading of the word in 「」: この工場では、「流れ作業」で車を作ります。"
+      },
+      "payload": {
+        "choices": [
+          "りょうさん",
+          "げんいん",
+          "こうてい",
+          "ながれさぎょう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「流れ作業」 đọc là 「ながれさぎょう」, nghĩa là Dây chuyền (làm việc theo từng công đoạn).",
+        "en": "Correct! 「流れ作業」 is read 「ながれさぎょう」 and means Assembly-line work."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「流れ作業」 đọc là 「ながれさぎょう」 (Dây chuyền (làm việc theo từng công đoạn)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「流れ作業」 is read 「ながれさぎょう」 (Assembly-line work); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "設備",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しい工場には、最新の「せつび」が入っています。",
+        "en": "Choose the correct way to write the word in 「」: 新しい工場には、最新の「せつび」が入っています。"
+      },
+      "payload": {
+        "choices": [
+          "部品",
+          "設備",
+          "装置",
+          "生産性"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「せつび」 viết là 「設備」, nghĩa là Trang thiết bị; cơ sở vật chất.",
+        "en": "Correct! 「せつび」 is written 「設備」 and means Equipment; facilities."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「せつび」 viết là 「設備」 (Trang thiết bị; cơ sở vật chất); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「せつび」 is written 「設備」 (Equipment; facilities); the other words are read differently."
+      }
+    },
+    {
+      "item": "工程",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 製造の「こうてい」は、全部で十あります。",
+        "en": "Choose the correct way to write the word in 「」: 製造の「こうてい」は、全部で十あります。"
+      },
+      "payload": {
+        "choices": [
+          "品種",
+          "生産性",
+          "工程",
+          "結果"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こうてい」 viết là 「工程」, nghĩa là Công đoạn; quy trình sản xuất.",
+        "en": "Correct! 「こうてい」 is written 「工程」 and means Process; production stage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こうてい」 viết là 「工程」 (Công đoạn; quy trình sản xuất); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こうてい」 is written 「工程」 (Process; production stage); the other words are read differently."
+      }
+    }
+  ]
+}

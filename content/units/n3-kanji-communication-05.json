@@ -1,0 +1,538 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-communication",
+  "title": {
+    "vi": "Kanji giao tiếp – diễn đạt (信 号 番 単)",
+    "en": "Communication and expression kanji (信 号 番 単)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "信",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "tin; thư tín",
+        "en": "believe; message"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "通信",
+          "reading": "つうしん",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "viễn thông; thông tin",
+            "en": "communication"
+          }
+        },
+        {
+          "ja": "信じる",
+          "reading": "しんじる",
+          "kanjiReading": "シン",
+          "translation": {
+            "vi": "tin tưởng",
+            "en": "to believe"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "号",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "số; ký hiệu; tín hiệu",
+        "en": "number; signal"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゴウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "番号",
+          "reading": "ばんごう",
+          "kanjiReading": "ゴウ",
+          "translation": {
+            "vi": "số",
+            "en": "number"
+          }
+        },
+        {
+          "ja": "信号",
+          "reading": "しんごう",
+          "kanjiReading": "ゴウ",
+          "translation": {
+            "vi": "đèn tín hiệu",
+            "en": "signal"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "番",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "số thứ tự; phiên; lượt",
+        "en": "number; turn"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "バン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "番号",
+          "reading": "ばんごう",
+          "kanjiReading": "バン",
+          "translation": {
+            "vi": "số",
+            "en": "number"
+          }
+        },
+        {
+          "ja": "順番",
+          "reading": "じゅんばん",
+          "kanjiReading": "バン",
+          "translation": {
+            "vi": "thứ tự; lượt",
+            "en": "order; turn"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "単",
+      "topic": "kanji-n3-communication",
+      "meaning": {
+        "vi": "đơn; đơn giản",
+        "en": "single; simple"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "単語",
+          "reading": "たんご",
+          "kanjiReading": "タン",
+          "translation": {
+            "vi": "từ vựng",
+            "en": "word"
+          }
+        },
+        {
+          "ja": "簡単",
+          "reading": "かんたん",
+          "kanjiReading": "タン",
+          "translation": {
+            "vi": "đơn giản",
+            "en": "simple"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "信",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「信」nghĩa là gì?",
+        "en": "What does 「信」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tin; thư tín",
+            "en": "believe; message"
+          },
+          {
+            "vi": "số; ký hiệu; tín hiệu",
+            "en": "number; signal"
+          },
+          {
+            "vi": "số thứ tự; phiên; lượt",
+            "en": "number; turn"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 信 nghĩa là tin; thư tín.",
+        "en": "Correct! 信 means believe; message."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 信 nghĩa là tin; thư tín, như trong 「通信」 (viễn thông; thông tin).",
+        "en": "Not quite. 信 means believe; message, as in 「通信」 (communication)."
+      }
+    },
+    {
+      "item": "信",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「信」 trong 「通信」 (“viễn thông; thông tin”).",
+        "en": "Type the reading of 「信」 in 「通信」 (“communication”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しん",
+          "シン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 通信, 信 đọc là しん (âm On).",
+        "en": "Correct! In 通信, 信 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 通信 (viễn thông; thông tin), 信 đọc là しん (âm On).",
+        "en": "In 通信 (communication), 信 is read しん (on'yomi)."
+      }
+    },
+    {
+      "item": "信",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「信じる」(tin tưởng) đọc là gì?",
+        "en": "How is 「信じる」 (to believe) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばんごう",
+          "しんじる",
+          "しんごう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 信じる = しんじる (tin tưởng); 信 đọc là しん (âm On).",
+        "en": "Correct! 信じる = しんじる (to believe); 信 is read しん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "信じる đọc là しんじる (tin tưởng): 信 mang âm On しん.",
+        "en": "信じる is read しんじる (to believe): 信 takes the on'yomi しん."
+      }
+    },
+    {
+      "item": "号",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「号」nghĩa là gì?",
+        "en": "What does 「号」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "số thứ tự; phiên; lượt",
+            "en": "number; turn"
+          },
+          {
+            "vi": "số; ký hiệu; tín hiệu",
+            "en": "number; signal"
+          },
+          {
+            "vi": "đơn; đơn giản",
+            "en": "single; simple"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 号 nghĩa là số; ký hiệu; tín hiệu.",
+        "en": "Correct! 号 means number; signal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 号 nghĩa là số; ký hiệu; tín hiệu, như trong 「番号」 (số).",
+        "en": "Not quite. 号 means number; signal, as in 「番号」 (number)."
+      }
+    },
+    {
+      "item": "号",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「号」 trong 「番号」 (“số”).",
+        "en": "Type the reading of 「号」 in 「番号」 (“number”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ごう",
+          "ゴウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 番号, 号 đọc là ごう (âm On).",
+        "en": "Correct! In 番号, 号 is read ごう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 番号 (số), 号 đọc là ごう (âm On).",
+        "en": "In 番号 (number), 号 is read ごう (on'yomi)."
+      }
+    },
+    {
+      "item": "号",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「信号」(đèn tín hiệu) đọc là gì?",
+        "en": "How is 「信号」 (signal) read?"
+      },
+      "payload": {
+        "choices": [
+          "しんご",
+          "しんこう",
+          "しんごう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 信号 = しんごう (đèn tín hiệu); 号 đọc là ごう (âm On).",
+        "en": "Correct! 信号 = しんごう (signal); 号 is read ごう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "信号 đọc là しんごう (đèn tín hiệu): 号 mang âm On ごう.",
+        "en": "信号 is read しんごう (signal): 号 takes the on'yomi ごう."
+      }
+    },
+    {
+      "item": "番",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「番」nghĩa là gì?",
+        "en": "What does 「番」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đơn; đơn giản",
+            "en": "single; simple"
+          },
+          {
+            "vi": "tin; thư tín",
+            "en": "believe; message"
+          },
+          {
+            "vi": "số thứ tự; phiên; lượt",
+            "en": "number; turn"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 番 nghĩa là số thứ tự; phiên; lượt.",
+        "en": "Correct! 番 means number; turn."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 番 nghĩa là số thứ tự; phiên; lượt, như trong 「番号」 (số).",
+        "en": "Not quite. 番 means number; turn, as in 「番号」 (number)."
+      }
+    },
+    {
+      "item": "番",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「番」 trong 「番号」 (“số”).",
+        "en": "Type the reading of 「番」 in 「番号」 (“number”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばん",
+          "バン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 番号, 番 đọc là ばん (âm On).",
+        "en": "Correct! In 番号, 番 is read ばん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 番号 (số), 番 đọc là ばん (âm On).",
+        "en": "In 番号 (number), 番 is read ばん (on'yomi)."
+      }
+    },
+    {
+      "item": "番",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「順番」(thứ tự; lượt) đọc là gì?",
+        "en": "How is 「順番」 (order; turn) read?"
+      },
+      "payload": {
+        "choices": [
+          "じゅんばん",
+          "じゅんはん",
+          "じゅんたん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 順番 = じゅんばん (thứ tự; lượt); 番 đọc là ばん (âm On).",
+        "en": "Correct! 順番 = じゅんばん (order; turn); 番 is read ばん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "順番 đọc là じゅんばん (thứ tự; lượt): 番 mang âm On ばん.",
+        "en": "順番 is read じゅんばん (order; turn): 番 takes the on'yomi ばん."
+      }
+    },
+    {
+      "item": "単",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「単」nghĩa là gì?",
+        "en": "What does 「単」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đơn; đơn giản",
+            "en": "single; simple"
+          },
+          {
+            "vi": "tin; thư tín",
+            "en": "believe; message"
+          },
+          {
+            "vi": "số; ký hiệu; tín hiệu",
+            "en": "number; signal"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 単 nghĩa là đơn; đơn giản.",
+        "en": "Correct! 単 means single; simple."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 単 nghĩa là đơn; đơn giản, như trong 「単語」 (từ vựng).",
+        "en": "Not quite. 単 means single; simple, as in 「単語」 (word)."
+      }
+    },
+    {
+      "item": "単",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「単」 trong 「単語」 (“từ vựng”).",
+        "en": "Type the reading of 「単」 in 「単語」 (“word”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たん",
+          "タン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 単語, 単 đọc là たん (âm On).",
+        "en": "Correct! In 単語, 単 is read たん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 単語 (từ vựng), 単 đọc là たん (âm On).",
+        "en": "In 単語 (word), 単 is read たん (on'yomi)."
+      }
+    },
+    {
+      "item": "単",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「簡単」(đơn giản) đọc là gì?",
+        "en": "How is 「簡単」 (simple) read?"
+      },
+      "payload": {
+        "choices": [
+          "かんだん",
+          "かんたん",
+          "かんしん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 簡単 = かんたん (đơn giản); 単 đọc là たん (âm On).",
+        "en": "Correct! 簡単 = かんたん (simple); 単 is read たん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "簡単 đọc là かんたん (đơn giản): 単 mang âm On たん.",
+        "en": "簡単 is read かんたん (simple): 単 takes the on'yomi たん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "信",
+            {
+              "vi": "tin; thư tín",
+              "en": "believe; message"
+            }
+          ],
+          [
+            "号",
+            {
+              "vi": "số; ký hiệu; tín hiệu",
+              "en": "number; signal"
+            }
+          ],
+          [
+            "番",
+            {
+              "vi": "số thứ tự; phiên; lượt",
+              "en": "number; turn"
+            }
+          ],
+          [
+            "単",
+            {
+              "vi": "đơn; đơn giản",
+              "en": "single; simple"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (氷 光 波)",
+    "en": "Nature and environment kanji (氷 光 波)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "氷",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "băng; đá",
+        "en": "ice"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒョウ"
+        ],
+        "kunReadings": [
+          "こおり",
+          "ひ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "氷山",
+          "reading": "ひょうざん",
+          "kanjiReading": "ヒョウ",
+          "translation": {
+            "vi": "tảng băng trôi",
+            "en": "iceberg"
+          }
+        },
+        {
+          "ja": "氷",
+          "reading": "こおり",
+          "kanjiReading": "こおり",
+          "translation": {
+            "vi": "băng; đá",
+            "en": "ice"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "光",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "ánh sáng",
+        "en": "light"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "ひかり",
+          "ひか.る"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "観光",
+          "reading": "かんこう",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "tham quan; du lịch",
+            "en": "sightseeing"
+          }
+        },
+        {
+          "ja": "光る",
+          "reading": "ひかる",
+          "kanjiReading": "ひか",
+          "translation": {
+            "vi": "tỏa sáng",
+            "en": "to shine"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "波",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "sóng",
+        "en": "wave"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハ"
+        ],
+        "kunReadings": [
+          "なみ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "波長",
+          "reading": "はちょう",
+          "kanjiReading": "ハ",
+          "translation": {
+            "vi": "bước sóng",
+            "en": "wavelength"
+          }
+        },
+        {
+          "ja": "津波",
+          "reading": "つなみ",
+          "kanjiReading": "なみ",
+          "translation": {
+            "vi": "sóng thần",
+            "en": "tsunami"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "氷",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「氷」nghĩa là gì?",
+        "en": "What does 「氷」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "băng; đá",
+            "en": "ice"
+          },
+          {
+            "vi": "ánh sáng",
+            "en": "light"
+          },
+          {
+            "vi": "sóng",
+            "en": "wave"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 氷 nghĩa là băng; đá.",
+        "en": "Correct! 氷 means ice."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 氷 nghĩa là băng; đá, như trong 「氷山」 (tảng băng trôi).",
+        "en": "Not quite. 氷 means ice, as in 「氷山」 (iceberg)."
+      }
+    },
+    {
+      "item": "氷",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「氷」 trong 「氷山」 (“tảng băng trôi”).",
+        "en": "Type the reading of 「氷」 in 「氷山」 (“iceberg”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひょう",
+          "ヒョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 氷山, 氷 đọc là ひょう (âm On).",
+        "en": "Correct! In 氷山, 氷 is read ひょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 氷山 (tảng băng trôi), 氷 đọc là ひょう (âm On).",
+        "en": "In 氷山 (iceberg), 氷 is read ひょう (on'yomi)."
+      }
+    },
+    {
+      "item": "氷",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「氷」(băng; đá; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「氷」 (ice; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひょう",
+          "こおり",
+          "ひかる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 氷 = こおり (băng; đá); 氷 đọc là こおり (âm Kun).",
+        "en": "Correct! 氷 = こおり (ice); 氷 is read こおり (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "氷 đọc là こおり (băng; đá): 氷 mang âm Kun こおり.",
+        "en": "氷 is read こおり (ice): 氷 takes the kun'yomi こおり."
+      }
+    },
+    {
+      "item": "光",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「光」nghĩa là gì?",
+        "en": "What does 「光」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sóng",
+            "en": "wave"
+          },
+          {
+            "vi": "ánh sáng",
+            "en": "light"
+          },
+          {
+            "vi": "băng; đá",
+            "en": "ice"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 光 nghĩa là ánh sáng.",
+        "en": "Correct! 光 means light."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 光 nghĩa là ánh sáng, như trong 「観光」 (tham quan; du lịch).",
+        "en": "Not quite. 光 means light, as in 「観光」 (sightseeing)."
+      }
+    },
+    {
+      "item": "光",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「光」 trong 「観光」 (“tham quan; du lịch”).",
+        "en": "Type the reading of 「光」 in 「観光」 (“sightseeing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 観光, 光 đọc là こう (âm On).",
+        "en": "Correct! In 観光, 光 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 観光 (tham quan; du lịch), 光 đọc là こう (âm On).",
+        "en": "In 観光 (sightseeing), 光 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "光",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「光る」(tỏa sáng) đọc là gì?",
+        "en": "How is 「光る」 (to shine) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうる",
+          "つなみ",
+          "ひかる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 光る = ひかる (tỏa sáng); 光 đọc là ひか (âm Kun).",
+        "en": "Correct! 光る = ひかる (to shine); 光 is read ひか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "光る đọc là ひかる (tỏa sáng): 光 mang âm Kun ひか.",
+        "en": "光る is read ひかる (to shine): 光 takes the kun'yomi ひか."
+      }
+    },
+    {
+      "item": "波",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「波」nghĩa là gì?",
+        "en": "What does 「波」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "băng; đá",
+            "en": "ice"
+          },
+          {
+            "vi": "ánh sáng",
+            "en": "light"
+          },
+          {
+            "vi": "sóng",
+            "en": "wave"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 波 nghĩa là sóng.",
+        "en": "Correct! 波 means wave."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 波 nghĩa là sóng, như trong 「波長」 (bước sóng).",
+        "en": "Not quite. 波 means wave, as in 「波長」 (wavelength)."
+      }
+    },
+    {
+      "item": "波",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「波」 trong 「波長」 (“bước sóng”).",
+        "en": "Type the reading of 「波」 in 「波長」 (“wavelength”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "は",
+          "ハ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 波長, 波 đọc là は (âm On).",
+        "en": "Correct! In 波長, 波 is read は (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 波長 (bước sóng), 波 đọc là は (âm On).",
+        "en": "In 波長 (wavelength), 波 is read は (on'yomi)."
+      }
+    },
+    {
+      "item": "波",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「津波」(sóng thần) đọc là gì?",
+        "en": "How is 「津波」 (tsunami) read?"
+      },
+      "payload": {
+        "choices": [
+          "つなみ",
+          "つは",
+          "つこおり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 津波 = つなみ (sóng thần); 波 đọc là なみ (âm Kun).",
+        "en": "Correct! 津波 = つなみ (tsunami); 波 is read なみ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "津波 đọc là つなみ (sóng thần): 波 mang âm Kun なみ.",
+        "en": "津波 is read つなみ (tsunami): 波 takes the kun'yomi なみ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "氷",
+            {
+              "vi": "băng; đá",
+              "en": "ice"
+            }
+          ],
+          [
+            "光",
+            {
+              "vi": "ánh sáng",
+              "en": "light"
+            }
+          ],
+          [
+            "波",
+            {
+              "vi": "sóng",
+              "en": "wave"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

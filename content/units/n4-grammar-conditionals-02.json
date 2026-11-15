@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-conditionals",
+  "title": {
+    "vi": "Điều kiện (2): 〜なら và 〜ても",
+    "en": "Conditionals (2): 〜なら and 〜ても"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜なら（話題・助言）",
+      "meaning": {
+        "vi": "Nếu là ~ thì ~; nếu vậy thì ~",
+        "en": "If it is the case that ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な và danh từ bỏ だ) + なら. Tiếp nhận chủ đề hay thông tin mà người đối thoại vừa nêu rồi đưa lời khuyên, đề nghị, ý kiến. Vế sau có thể là nhờ vả, rủ rê, ý chí.",
+        "en": "Usage: plain form (drop だ for な-adjectives and nouns) + なら. Picks up a topic or information the other person just gave, then offers advice, a suggestion or an opinion. The second clause may be a request, invitation or volition."
+      },
+      "examples": [
+        {
+          "ja": "京都へ行くなら、秋がいいですよ。",
+          "reading": "きょうとへいくなら、あきがいいですよ。",
+          "translation": {
+            "vi": "Nếu đi Kyoto thì mùa thu là tuyệt nhất.",
+            "en": "If you are going to Kyoto, autumn is best."
+          }
+        },
+        {
+          "ja": "安いのがほしいなら、あの店に行ってみてください。",
+          "reading": "やすいのがほしいなら、あのみせにいってみてください。",
+          "translation": {
+            "vi": "Nếu bạn muốn đồ rẻ thì hãy thử đến cửa hàng kia.",
+            "en": "If you want something cheap, try going to that shop."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-031"
+    },
+    {
+      "japanese": "〜ても／〜でも（逆接）",
+      "meaning": {
+        "vi": "Dù ~ cũng ~",
+        "en": "Even if ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể て + も (飲んでも, 書いても); tính từ い bỏ い + くても; tính từ な/danh từ + でも. Nhượng bộ: kết quả không thay đổi dù điều kiện thế nào. Hay đi với いくら, たとえ.",
+        "en": "Conjugation: verb て-form + も (飲んでも, 書いても); い-adjective drop い + くても; な-adjective/noun + でも. Concession: the result does not change regardless of the condition. Often with いくら or たとえ."
+      },
+      "examples": [
+        {
+          "ja": "雨が降っても、行きます。",
+          "reading": "あめがふっても、いきます。",
+          "translation": {
+            "vi": "Dù trời mưa tôi cũng đi.",
+            "en": "I will go even if it rains."
+          }
+        },
+        {
+          "ja": "高くても、この車を買いたいです。",
+          "reading": "たかくても、このくるまをかいたいです。",
+          "translation": {
+            "vi": "Dù đắt tôi cũng muốn mua chiếc xe này.",
+            "en": "Even if it is expensive, I want to buy this car."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-032"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜なら（話題・助言）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n京都へ行く（　）、秋がいいですよ。",
+        "en": "Choose the correct option for the blank:\n京都へ行く（　）、秋がいいですよ。"
+      },
+      "payload": {
+        "choices": [
+          "と",
+          "ても",
+          "なら",
+          "のに"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tiếp nhận thông tin \"đi Kyoto\" rồi khuyên: 「行くなら」.",
+        "en": "Correct! Picking up the information \"going to Kyoto\" and advising: 「行くなら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tiếp nhận thông tin \"đi Kyoto\" rồi khuyên: 「行くなら」.",
+        "en": "Not quite. Picking up the information \"going to Kyoto\" and advising: 「行くなら」."
+      }
+    },
+    {
+      "item": "〜なら（話題・助言）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n安いのがほしい___、あの店に行ってみてください。",
+        "en": "Choose the correct option for the blank:\n安いのがほしい___、あの店に行ってみてください。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なら"
+        ],
+        "hint": "〜なら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dựa trên mong muốn người nghe nêu ra rồi đề nghị: 「ほしいなら」.",
+        "en": "Correct! Building on the listener's stated wish and suggesting: 「ほしいなら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dựa trên mong muốn người nghe nêu ra rồi đề nghị: 「ほしいなら」.",
+        "en": "Not quite. Building on the listener's stated wish and suggesting: 「ほしいなら」."
+      }
+    },
+    {
+      "item": "〜なら（話題・助言）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nA: 来週、大阪へ出張します。 B: 大阪（　）、おいしいたこ焼きの店を知っていますよ。",
+        "en": "Choose the pattern that best fits the context:\nA: 来週、大阪へ出張します。 B: 大阪（　）、おいしいたこ焼きの店を知っていますよ。"
+      },
+      "payload": {
+        "choices": [
+          "たら",
+          "なら",
+          "と",
+          "ば"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhận chủ đề \"大阪\" từ người nói và đưa thông tin liên quan: 「大阪なら」.",
+        "en": "Correct! Picking up the topic \"大阪\" and giving related information: 「大阪なら」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhận chủ đề \"大阪\" từ người nói và đưa thông tin liên quan: 「大阪なら」.",
+        "en": "Not quite. Picking up the topic \"大阪\" and giving related information: 「大阪なら」."
+      }
+    },
+    {
+      "item": "〜なら（話題・助言）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "日本語を勉強するなら、この本がいいですよ。",
+          "日本語を勉強するなら、この本をいいですよ。",
+          "日本語を勉強するならに、この本がいいですよ。",
+          "日本語を勉強するなの、この本がいいですよ。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜なら」 đứng thẳng sau động từ thể từ điển; 「いい」 đi với 「が」, không dùng 「を」.",
+        "en": "Correct! 「〜なら」 follows the dictionary form directly; 「いい」 takes 「が」, not 「を」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜なら」 đứng thẳng sau động từ thể từ điển; 「いい」 đi với 「が」, không dùng 「を」.",
+        "en": "Not quite. 「〜なら」 follows the dictionary form directly; 「いい」 takes 「が」, not 「を」."
+      }
+    },
+    {
+      "item": "〜ても／〜でも（逆接）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨が降（　）、行きます。",
+        "en": "Choose the correct option for the blank:\n雨が降（　）、行きます。"
+      },
+      "payload": {
+        "choices": [
+          "って",
+          "っでも",
+          "りても",
+          "っても"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「降る」 thuộc nhóm 五段, thể て là 「降って」 + 「も」: 「降っても」.",
+        "en": "Correct! 「降る」 is a 五段 verb with the て-form 「降って」 + 「も」: 「降っても」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「降る」 thuộc nhóm 五段, thể て là 「降って」 + 「も」: 「降っても」.",
+        "en": "Not quite. 「降る」 is a 五段 verb with the て-form 「降って」 + 「も」: 「降っても」."
+      }
+    },
+    {
+      "item": "〜ても／〜でも（逆接）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n高（　）、この車を買いたいです。",
+        "en": "Choose the correct option for the blank:\n高（　）、この車を買いたいです。"
+      },
+      "payload": {
+        "choices": [
+          "くて",
+          "でも",
+          "くても",
+          "いても"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tính từ い bỏ い + 「くても」: 「高くても」.",
+        "en": "Correct! An い-adjective drops い + 「くても」: 「高くても」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tính từ い bỏ い + 「くても」: 「高くても」.",
+        "en": "Not quite. An い-adjective drops い + 「くても」: 「高くても」."
+      }
+    },
+    {
+      "item": "〜ても／〜でも（逆接）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの本は難しく___、読みたいです。",
+        "en": "Choose the correct option for the blank:\nこの本は難しく___、読みたいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ても"
+        ],
+        "hint": "〜ても"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhượng bộ: 「難しくても」.",
+        "en": "Correct! Concession: 「難しくても」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhượng bộ: 「難しくても」.",
+        "en": "Not quite. Concession: 「難しくても」."
+      }
+    },
+    {
+      "item": "〜ても／〜でも（逆接）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "日曜日ても、仕事があります。",
+          "日曜日でも、仕事があります。",
+          "日曜日くても、仕事があります。",
+          "日曜日だても、仕事があります。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「でも」: 「日曜日でも」.",
+        "en": "Correct! A noun takes 「でも」: 「日曜日でも」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「でも」: 「日曜日でも」.",
+        "en": "Not quite. A noun takes 「でも」: 「日曜日でも」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜なら（話題・助言）",
+            {
+              "vi": "Nếu là ~ thì ~; nếu vậy thì ~",
+              "en": "If it is the case that ~"
+            }
+          ],
+          [
+            "〜ても／〜でも（逆接）",
+            {
+              "vi": "Dù ~ cũng ~",
+              "en": "Even if ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

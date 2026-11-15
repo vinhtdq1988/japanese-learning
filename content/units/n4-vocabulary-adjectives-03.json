@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-adjectives",
+  "title": {
+    "vi": "Tính từ đuôi な thường gặp",
+    "en": "Common na-adjectives"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1530,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "親切",
+      "reading": "しんせつ",
+      "meaning": {
+        "vi": "Tử tế; thân thiện",
+        "en": "Kind; helpful"
+      },
+      "examples": [
+        {
+          "ja": "駅で道を教えてくれた人は、とても親切でした。",
+          "reading": "えきでみちをおしえてくれたひとは、とてもしんせつでした。",
+          "translation": {
+            "vi": "Người chỉ đường cho tôi ở nhà ga rất tử tế.",
+            "en": "The person who told me the way at the station was very kind."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "丈夫",
+      "reading": "じょうぶ",
+      "meaning": {
+        "vi": "Bền; chắc; khỏe mạnh",
+        "en": "Durable; sturdy; healthy"
+      },
+      "examples": [
+        {
+          "ja": "この鞄は、丈夫なので、長く使えます。",
+          "reading": "このかばんは、じょうぶなので、ながくつかえます。",
+          "translation": {
+            "vi": "Cái cặp này bền nên dùng được lâu.",
+            "en": "This bag is sturdy, so you can use it for a long time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大切",
+      "reading": "たいせつ",
+      "meaning": {
+        "vi": "Quan trọng; quý giá",
+        "en": "Important; precious"
+      },
+      "examples": [
+        {
+          "ja": "家族は、私にとって、いちばん大切です。",
+          "reading": "かぞくは、わたしにとって、いちばんたいせつです。",
+          "translation": {
+            "vi": "Gia đình là điều quan trọng nhất đối với tôi.",
+            "en": "My family is the most important thing to me."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "特別",
+      "reading": "とくべつ",
+      "meaning": {
+        "vi": "Đặc biệt",
+        "en": "Special"
+      },
+      "examples": [
+        {
+          "ja": "今日は、母の誕生日なので、特別な料理を作ります。",
+          "reading": "きょうは、ははのたんじょうびなので、とくべつなりょうりをつくります。",
+          "translation": {
+            "vi": "Hôm nay là sinh nhật mẹ nên tôi sẽ nấu món ăn đặc biệt.",
+            "en": "Today is my mother's birthday, so I will cook a special dish."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "不便",
+      "reading": "ふべん",
+      "meaning": {
+        "vi": "Bất tiện",
+        "en": "Inconvenient"
+      },
+      "examples": [
+        {
+          "ja": "駅から遠くて、バスも少ないので、とても不便です。",
+          "reading": "えきからとおくて、バスもすくないので、とてもふべんです。",
+          "translation": {
+            "vi": "Vì xa ga và xe buýt cũng ít nên rất bất tiện.",
+            "en": "It is far from the station and has few buses, so it is very inconvenient."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "必要",
+      "reading": "ひつよう",
+      "meaning": {
+        "vi": "Cần thiết",
+        "en": "Necessary; needed"
+      },
+      "examples": [
+        {
+          "ja": "旅行に行くには、パスポートが必要です。",
+          "reading": "りょこうにいくには、パスポートがひつようです。",
+          "translation": {
+            "vi": "Để đi du lịch thì cần có hộ chiếu.",
+            "en": "You need a passport to go on a trip."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "親切",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅で道を教えてくれた人は、とても（　）でした。 — Nghĩa của câu: “Người chỉ đường cho tôi ở nhà ga rất tử tế.”",
+        "en": "Choose the word that fits the blank: 駅で道を教えてくれた人は、とても（　）でした。 — Meaning of the sentence: “The person who told me the way at the station was very kind.”"
+      },
+      "payload": {
+        "choices": [
+          "不便",
+          "必要",
+          "親切",
+          "特別"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親切」(Tử tế; thân thiện) hợp nghĩa câu này: “Người chỉ đường cho tôi ở nhà ga rất tử tế.”",
+        "en": "Correct! 「親切」(Kind; helpful) fits this sentence: “The person who told me the way at the station was very kind.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người chỉ đường cho tôi ở nhà ga rất tử tế.”, nên cần 「親切」(Tử tế; thân thiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The person who told me the way at the station was very kind.”, so it needs 「親切」(Kind; helpful); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "丈夫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この鞄は、（　）なので、長く使えます。 — Nghĩa của câu: “Cái cặp này bền nên dùng được lâu.”",
+        "en": "Choose the word that fits the blank: この鞄は、（　）なので、長く使えます。 — Meaning of the sentence: “This bag is sturdy, so you can use it for a long time.”"
+      },
+      "payload": {
+        "choices": [
+          "親切",
+          "特別",
+          "大切",
+          "丈夫"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「丈夫」(Bền; chắc; khỏe mạnh) hợp nghĩa câu này: “Cái cặp này bền nên dùng được lâu.”",
+        "en": "Correct! 「丈夫」(Durable; sturdy; healthy) fits this sentence: “This bag is sturdy, so you can use it for a long time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái cặp này bền nên dùng được lâu.”, nên cần 「丈夫」(Bền; chắc; khỏe mạnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This bag is sturdy, so you can use it for a long time.”, so it needs 「丈夫」(Durable; sturdy; healthy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大切",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家族は、私にとって、いちばん（　）です。 — Nghĩa của câu: “Gia đình là điều quan trọng nhất đối với tôi.”",
+        "en": "Choose the word that fits the blank: 家族は、私にとって、いちばん（　）です。 — Meaning of the sentence: “My family is the most important thing to me.”"
+      },
+      "payload": {
+        "choices": [
+          "大切",
+          "不便",
+          "丈夫",
+          "親切"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大切」(Quan trọng; quý giá) hợp nghĩa câu này: “Gia đình là điều quan trọng nhất đối với tôi.”",
+        "en": "Correct! 「大切」(Important; precious) fits this sentence: “My family is the most important thing to me.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gia đình là điều quan trọng nhất đối với tôi.”, nên cần 「大切」(Quan trọng; quý giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My family is the most important thing to me.”, so it needs 「大切」(Important; precious); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "特別",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は、母の誕生日なので、（　）な料理を作ります。 — Nghĩa của câu: “Hôm nay là sinh nhật mẹ nên tôi sẽ nấu món ăn đặc biệt.”",
+        "en": "Choose the word that fits the blank: 今日は、母の誕生日なので、（　）な料理を作ります。 — Meaning of the sentence: “Today is my mother's birthday, so I will cook a special dish.”"
+      },
+      "payload": {
+        "choices": [
+          "不便",
+          "特別",
+          "必要",
+          "丈夫"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特別」(Đặc biệt) hợp nghĩa câu này: “Hôm nay là sinh nhật mẹ nên tôi sẽ nấu món ăn đặc biệt.”",
+        "en": "Correct! 「特別」(Special) fits this sentence: “Today is my mother's birthday, so I will cook a special dish.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay là sinh nhật mẹ nên tôi sẽ nấu món ăn đặc biệt.”, nên cần 「特別」(Đặc biệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Today is my mother's birthday, so I will cook a special dish.”, so it needs 「特別」(Special); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "不便",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅から遠くて、バスも少ないので、とても（　）です。 — Nghĩa của câu: “Vì xa ga và xe buýt cũng ít nên rất bất tiện.”",
+        "en": "Choose the word that fits the blank: 駅から遠くて、バスも少ないので、とても（　）です。 — Meaning of the sentence: “It is far from the station and has few buses, so it is very inconvenient.”"
+      },
+      "payload": {
+        "choices": [
+          "特別",
+          "親切",
+          "不便",
+          "大切"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「不便」(Bất tiện) hợp nghĩa câu này: “Vì xa ga và xe buýt cũng ít nên rất bất tiện.”",
+        "en": "Correct! 「不便」(Inconvenient) fits this sentence: “It is far from the station and has few buses, so it is very inconvenient.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì xa ga và xe buýt cũng ít nên rất bất tiện.”, nên cần 「不便」(Bất tiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is far from the station and has few buses, so it is very inconvenient.”, so it needs 「不便」(Inconvenient); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "必要",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行に行くには、パスポートが（　）です。 — Nghĩa của câu: “Để đi du lịch thì cần có hộ chiếu.”",
+        "en": "Choose the word that fits the blank: 旅行に行くには、パスポートが（　）です。 — Meaning of the sentence: “You need a passport to go on a trip.”"
+      },
+      "payload": {
+        "choices": [
+          "親切",
+          "丈夫",
+          "不便",
+          "必要"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「必要」(Cần thiết) hợp nghĩa câu này: “Để đi du lịch thì cần có hộ chiếu.”",
+        "en": "Correct! 「必要」(Necessary; needed) fits this sentence: “You need a passport to go on a trip.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để đi du lịch thì cần có hộ chiếu.”, nên cần 「必要」(Cần thiết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You need a passport to go on a trip.”, so it needs 「必要」(Necessary; needed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "親切",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 駅で道を教えてくれた人は、とても「親切」でした。",
+        "en": "Choose the correct reading of the word in 「」: 駅で道を教えてくれた人は、とても「親切」でした。"
+      },
+      "payload": {
+        "choices": [
+          "とくべつ",
+          "たいせつ",
+          "ふべん",
+          "しんせつ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親切」 đọc là 「しんせつ」, nghĩa là Tử tế; thân thiện.",
+        "en": "Correct! 「親切」 is read 「しんせつ」 and means Kind; helpful."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「親切」 đọc là 「しんせつ」 (Tử tế; thân thiện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「親切」 is read 「しんせつ」 (Kind; helpful); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "特別",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今日は、母の誕生日なので、「特別」な料理を作ります。",
+        "en": "Choose the correct reading of the word in 「」: 今日は、母の誕生日なので、「特別」な料理を作ります。"
+      },
+      "payload": {
+        "choices": [
+          "とくべつ",
+          "じょうぶ",
+          "ひつよう",
+          "しんせつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特別」 đọc là 「とくべつ」, nghĩa là Đặc biệt.",
+        "en": "Correct! 「特別」 is read 「とくべつ」 and means Special."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「特別」 đọc là 「とくべつ」 (Đặc biệt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「特別」 is read 「とくべつ」 (Special); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "必要",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 旅行に行くには、パスポートが「ひつよう」です。",
+        "en": "Choose the correct way to write the word in 「」: 旅行に行くには、パスポートが「ひつよう」です。"
+      },
+      "payload": {
+        "choices": [
+          "必要",
+          "大切",
+          "親切",
+          "丈夫"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ひつよう」 viết là 「必要」, nghĩa là Cần thiết.",
+        "en": "Correct! 「ひつよう」 is written 「必要」 and means Necessary; needed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ひつよう」 viết là 「必要」 (Cần thiết); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ひつよう」 is written 「必要」 (Necessary; needed); the other words are read differently."
+      }
+    }
+  ]
+}

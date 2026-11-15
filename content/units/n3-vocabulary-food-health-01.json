@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-food-health",
+  "title": {
+    "vi": "Thực phẩm, nấu nướng và hương vị",
+    "en": "Food, cooking and flavor"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2360,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "食欲",
+      "reading": "しょくよく",
+      "meaning": {
+        "vi": "Cảm giác thèm ăn",
+        "en": "Appetite"
+      },
+      "examples": [
+        {
+          "ja": "暑くて、食欲がありません。",
+          "reading": "あつくて、しょくよくがありません。",
+          "translation": {
+            "vi": "Trời nóng nên tôi chẳng thèm ăn.",
+            "en": "It is so hot that I have no appetite."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "食品",
+      "reading": "しょくひん",
+      "meaning": {
+        "vi": "Thực phẩm",
+        "en": "Food products"
+      },
+      "examples": [
+        {
+          "ja": "この店は、新鮮な食品を売っています。",
+          "reading": "このみせは、しんせんなしょくひんをうっています。",
+          "translation": {
+            "vi": "Cửa hàng này bán thực phẩm tươi.",
+            "en": "This store sells fresh food products."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "食材",
+      "reading": "しょくざい",
+      "meaning": {
+        "vi": "Nguyên liệu nấu ăn",
+        "en": "Ingredients"
+      },
+      "examples": [
+        {
+          "ja": "新鮮な食材を使って、料理を作ります。",
+          "reading": "しんせんなしょくざいをつかって、りょうりをつくります。",
+          "translation": {
+            "vi": "Tôi dùng nguyên liệu tươi để nấu ăn.",
+            "en": "I cook using fresh ingredients."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "調理",
+      "reading": "ちょうり",
+      "meaning": {
+        "vi": "Chế biến; nấu nướng",
+        "en": "Cooking; preparation"
+      },
+      "examples": [
+        {
+          "ja": "この魚は、調理の方法で味が変わります。",
+          "reading": "このさかなは、ちょうりのほうほうであじがかわります。",
+          "translation": {
+            "vi": "Món cá này vị thay đổi tùy cách chế biến.",
+            "en": "The taste of this fish changes with the way it is prepared."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "献立",
+      "reading": "こんだて",
+      "meaning": {
+        "vi": "Thực đơn (bữa ăn)",
+        "en": "Menu; meal plan"
+      },
+      "examples": [
+        {
+          "ja": "毎日の献立を考えるのは、大変です。",
+          "reading": "まいにちのこんだてをかんがえるのは、たいへんです。",
+          "translation": {
+            "vi": "Nghĩ thực đơn mỗi ngày thật vất vả.",
+            "en": "Planning the daily menu is hard."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "味付け",
+      "reading": "あじつけ",
+      "meaning": {
+        "vi": "Nêm nếm",
+        "en": "Seasoning"
+      },
+      "examples": [
+        {
+          "ja": "この料理は、味付けが少し濃いです。",
+          "reading": "このりょうりは、あじつけがすこしこいです。",
+          "translation": {
+            "vi": "Món này nêm hơi đậm.",
+            "en": "This dish is seasoned a little strongly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "味わう",
+      "reading": "あじわう",
+      "meaning": {
+        "vi": "Nếm; thưởng thức",
+        "en": "To savor"
+      },
+      "examples": [
+        {
+          "ja": "ゆっくり、旬の料理を味わうことにしました。",
+          "reading": "ゆっくり、しゅんのりょうりをあじわうことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định thong thả thưởng thức món ăn đúng mùa.",
+            "en": "I decided to take my time and savor the seasonal dish."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "旨い",
+      "reading": "うまい",
+      "meaning": {
+        "vi": "Ngon",
+        "en": "Delicious (casual)"
+      },
+      "examples": [
+        {
+          "ja": "この店のラーメンは、本当に旨いです。",
+          "reading": "このみせのラーメンは、ほんとうにうまいです。",
+          "translation": {
+            "vi": "Mì ramen của quán này thật sự rất ngon.",
+            "en": "The ramen at this shop is really delicious."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "不味い",
+      "reading": "まずい",
+      "meaning": {
+        "vi": "Dở; không ngon",
+        "en": "Bad-tasting"
+      },
+      "examples": [
+        {
+          "ja": "この料理は、塩が足りなくて不味いです。",
+          "reading": "このりょうりは、しおがたりなくてまずいです。",
+          "translation": {
+            "vi": "Món này thiếu muối nên dở.",
+            "en": "This dish lacks salt and tastes bad."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "出汁",
+      "reading": "だし",
+      "meaning": {
+        "vi": "Nước dùng (dashi)",
+        "en": "Soup stock (dashi)"
+      },
+      "examples": [
+        {
+          "ja": "味噌汁は、出汁が大切です。",
+          "reading": "みそしるは、だしがたいせつです。",
+          "translation": {
+            "vi": "Với canh miso, nước dùng rất quan trọng.",
+            "en": "For miso soup, the stock is important."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "調味料",
+      "reading": "ちょうみりょう",
+      "meaning": {
+        "vi": "Gia vị nêm",
+        "en": "Seasoning"
+      },
+      "examples": [
+        {
+          "ja": "台所には、いろいろな調味料があります。",
+          "reading": "だいどころには、いろいろなちょうみりょうがあります。",
+          "translation": {
+            "vi": "Trong bếp có nhiều loại gia vị nêm.",
+            "en": "There are various seasonings in the kitchen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "香辛料",
+      "reading": "こうしんりょう",
+      "meaning": {
+        "vi": "Gia vị cay thơm (hương liệu)",
+        "en": "Spice"
+      },
+      "examples": [
+        {
+          "ja": "カレーには、たくさんの香辛料を使います。",
+          "reading": "カレーには、たくさんのこうしんりょうをつかいます。",
+          "translation": {
+            "vi": "Món cà ri dùng rất nhiều hương liệu.",
+            "en": "Curry uses a lot of spices."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "食欲",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 暑くて、（　）がありません。 — Nghĩa của câu: “Trời nóng nên tôi chẳng thèm ăn.”",
+        "en": "Choose the word that fits the blank: 暑くて、（　）がありません。 — Meaning of the sentence: “It is so hot that I have no appetite.”"
+      },
+      "payload": {
+        "choices": [
+          "食品",
+          "食欲",
+          "食材",
+          "調理"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食欲」(Cảm giác thèm ăn) hợp nghĩa câu này: “Trời nóng nên tôi chẳng thèm ăn.”",
+        "en": "Correct! 「食欲」(Appetite) fits this sentence: “It is so hot that I have no appetite.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trời nóng nên tôi chẳng thèm ăn.”, nên cần 「食欲」(Cảm giác thèm ăn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is so hot that I have no appetite.”, so it needs 「食欲」(Appetite); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "食品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店は、新鮮な（　）を売っています。 — Nghĩa của câu: “Cửa hàng này bán thực phẩm tươi.”",
+        "en": "Choose the word that fits the blank: この店は、新鮮な（　）を売っています。 — Meaning of the sentence: “This store sells fresh food products.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "食材",
+          "食品",
+          "調味料"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食品」(Thực phẩm) hợp nghĩa câu này: “Cửa hàng này bán thực phẩm tươi.”",
+        "en": "Correct! 「食品」(Food products) fits this sentence: “This store sells fresh food products.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng này bán thực phẩm tươi.”, nên cần 「食品」(Thực phẩm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This store sells fresh food products.”, so it needs 「食品」(Food products); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "食材",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新鮮な（　）を使って、料理を作ります。 — Nghĩa của câu: “Tôi dùng nguyên liệu tươi để nấu ăn.”",
+        "en": "Choose the word that fits the blank: 新鮮な（　）を使って、料理を作ります。 — Meaning of the sentence: “I cook using fresh ingredients.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "食品",
+          "味付け",
+          "食材"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食材」(Nguyên liệu nấu ăn) hợp nghĩa câu này: “Tôi dùng nguyên liệu tươi để nấu ăn.”",
+        "en": "Correct! 「食材」(Ingredients) fits this sentence: “I cook using fresh ingredients.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi dùng nguyên liệu tươi để nấu ăn.”, nên cần 「食材」(Nguyên liệu nấu ăn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cook using fresh ingredients.”, so it needs 「食材」(Ingredients); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "調理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この魚は、（　）の方法で味が変わります。 — Nghĩa của câu: “Món cá này vị thay đổi tùy cách chế biến.”",
+        "en": "Choose the word that fits the blank: この魚は、（　）の方法で味が変わります。 — Meaning of the sentence: “The taste of this fish changes with the way it is prepared.”"
+      },
+      "payload": {
+        "choices": [
+          "調理",
+          "食欲",
+          "調味料",
+          "献立"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「調理」(Chế biến; nấu nướng) hợp nghĩa câu này: “Món cá này vị thay đổi tùy cách chế biến.”",
+        "en": "Correct! 「調理」(Cooking; preparation) fits this sentence: “The taste of this fish changes with the way it is prepared.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món cá này vị thay đổi tùy cách chế biến.”, nên cần 「調理」(Chế biến; nấu nướng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The taste of this fish changes with the way it is prepared.”, so it needs 「調理」(Cooking; preparation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "献立",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎日の（　）を考えるのは、大変です。 — Nghĩa của câu: “Nghĩ thực đơn mỗi ngày thật vất vả.”",
+        "en": "Choose the word that fits the blank: 毎日の（　）を考えるのは、大変です。 — Meaning of the sentence: “Planning the daily menu is hard.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "献立",
+          "出汁",
+          "調理"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「献立」(Thực đơn (bữa ăn)) hợp nghĩa câu này: “Nghĩ thực đơn mỗi ngày thật vất vả.”",
+        "en": "Correct! 「献立」(Menu; meal plan) fits this sentence: “Planning the daily menu is hard.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nghĩ thực đơn mỗi ngày thật vất vả.”, nên cần 「献立」(Thực đơn (bữa ăn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Planning the daily menu is hard.”, so it needs 「献立」(Menu; meal plan); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "味付け",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この料理は、（　）が少し濃いです。 — Nghĩa của câu: “Món này nêm hơi đậm.”",
+        "en": "Choose the word that fits the blank: この料理は、（　）が少し濃いです。 — Meaning of the sentence: “This dish is seasoned a little strongly.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "食品",
+          "味付け",
+          "献立"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「味付け」(Nêm nếm) hợp nghĩa câu này: “Món này nêm hơi đậm.”",
+        "en": "Correct! 「味付け」(Seasoning) fits this sentence: “This dish is seasoned a little strongly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món này nêm hơi đậm.”, nên cần 「味付け」(Nêm nếm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This dish is seasoned a little strongly.”, so it needs 「味付け」(Seasoning); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "味わう",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ゆっくり、旬の料理を（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định thong thả thưởng thức món ăn đúng mùa.”",
+        "en": "Choose the word that fits the blank: ゆっくり、旬の料理を（　）ことにしました。 — Meaning of the sentence: “I decided to take my time and savor the seasonal dish.”"
+      },
+      "payload": {
+        "choices": [
+          "献立",
+          "味付け",
+          "調味料",
+          "味わう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「味わう」(Nếm; thưởng thức) hợp nghĩa câu này: “Tôi quyết định thong thả thưởng thức món ăn đúng mùa.”",
+        "en": "Correct! 「味わう」(To savor) fits this sentence: “I decided to take my time and savor the seasonal dish.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định thong thả thưởng thức món ăn đúng mùa.”, nên cần 「味わう」(Nếm; thưởng thức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to take my time and savor the seasonal dish.”, so it needs 「味わう」(To savor); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "旨い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店のラーメンは、本当に（　）です。 — Nghĩa của câu: “Mì ramen của quán này thật sự rất ngon.”",
+        "en": "Choose the word that fits the blank: この店のラーメンは、本当に（　）です。 — Meaning of the sentence: “The ramen at this shop is really delicious.”"
+      },
+      "payload": {
+        "choices": [
+          "旨い",
+          "不味い",
+          "献立",
+          "味わう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「旨い」(Ngon) hợp nghĩa câu này: “Mì ramen của quán này thật sự rất ngon.”",
+        "en": "Correct! 「旨い」(Delicious (casual)) fits this sentence: “The ramen at this shop is really delicious.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mì ramen của quán này thật sự rất ngon.”, nên cần 「旨い」(Ngon); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The ramen at this shop is really delicious.”, so it needs 「旨い」(Delicious (casual)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "不味い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この料理は、塩が足りなくて（　）です。 — Nghĩa của câu: “Món này thiếu muối nên dở.”",
+        "en": "Choose the word that fits the blank: この料理は、塩が足りなくて（　）です。 — Meaning of the sentence: “This dish lacks salt and tastes bad.”"
+      },
+      "payload": {
+        "choices": [
+          "旨い",
+          "不味い",
+          "食欲",
+          "献立"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「不味い」(Dở; không ngon) hợp nghĩa câu này: “Món này thiếu muối nên dở.”",
+        "en": "Correct! 「不味い」(Bad-tasting) fits this sentence: “This dish lacks salt and tastes bad.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món này thiếu muối nên dở.”, nên cần 「不味い」(Dở; không ngon); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This dish lacks salt and tastes bad.”, so it needs 「不味い」(Bad-tasting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出汁",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 味噌汁は、（　）が大切です。 — Nghĩa của câu: “Với canh miso, nước dùng rất quan trọng.”",
+        "en": "Choose the word that fits the blank: 味噌汁は、（　）が大切です。 — Meaning of the sentence: “For miso soup, the stock is important.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "食材",
+          "出汁",
+          "食品"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出汁」(Nước dùng (dashi)) hợp nghĩa câu này: “Với canh miso, nước dùng rất quan trọng.”",
+        "en": "Correct! 「出汁」(Soup stock (dashi)) fits this sentence: “For miso soup, the stock is important.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Với canh miso, nước dùng rất quan trọng.”, nên cần 「出汁」(Nước dùng (dashi)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For miso soup, the stock is important.”, so it needs 「出汁」(Soup stock (dashi)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "調味料",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台所には、いろいろな（　）があります。 — Nghĩa của câu: “Trong bếp có nhiều loại gia vị nêm.”",
+        "en": "Choose the word that fits the blank: 台所には、いろいろな（　）があります。 — Meaning of the sentence: “There are various seasonings in the kitchen.”"
+      },
+      "payload": {
+        "choices": [
+          "食欲",
+          "出汁",
+          "味付け",
+          "調味料"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「調味料」(Gia vị nêm) hợp nghĩa câu này: “Trong bếp có nhiều loại gia vị nêm.”",
+        "en": "Correct! 「調味料」(Seasoning) fits this sentence: “There are various seasonings in the kitchen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong bếp có nhiều loại gia vị nêm.”, nên cần 「調味料」(Gia vị nêm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There are various seasonings in the kitchen.”, so it needs 「調味料」(Seasoning); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "香辛料",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: カレーには、たくさんの（　）を使います。 — Nghĩa của câu: “Món cà ri dùng rất nhiều hương liệu.”",
+        "en": "Choose the word that fits the blank: カレーには、たくさんの（　）を使います。 — Meaning of the sentence: “Curry uses a lot of spices.”"
+      },
+      "payload": {
+        "choices": [
+          "香辛料",
+          "食欲",
+          "食品",
+          "献立"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「香辛料」(Gia vị cay thơm (hương liệu)) hợp nghĩa câu này: “Món cà ri dùng rất nhiều hương liệu.”",
+        "en": "Correct! 「香辛料」(Spice) fits this sentence: “Curry uses a lot of spices.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món cà ri dùng rất nhiều hương liệu.”, nên cần 「香辛料」(Gia vị cay thơm (hương liệu)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Curry uses a lot of spices.”, so it needs 「香辛料」(Spice); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "食欲",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 暑くて、「食欲」がありません。",
+        "en": "Choose the correct reading of the word in 「」: 暑くて、「食欲」がありません。"
+      },
+      "payload": {
+        "choices": [
+          "しょくざい",
+          "しょくひん",
+          "しょくよく",
+          "だし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食欲」 đọc là 「しょくよく」, nghĩa là Cảm giác thèm ăn.",
+        "en": "Correct! 「食欲」 is read 「しょくよく」 and means Appetite."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「食欲」 đọc là 「しょくよく」 (Cảm giác thèm ăn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「食欲」 is read 「しょくよく」 (Appetite); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "調理",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この魚は、「調理」の方法で味が変わります。",
+        "en": "Choose the correct reading of the word in 「」: この魚は、「調理」の方法で味が変わります。"
+      },
+      "payload": {
+        "choices": [
+          "しょくひん",
+          "まずい",
+          "あじわう",
+          "ちょうり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「調理」 đọc là 「ちょうり」, nghĩa là Chế biến; nấu nướng.",
+        "en": "Correct! 「調理」 is read 「ちょうり」 and means Cooking; preparation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「調理」 đọc là 「ちょうり」 (Chế biến; nấu nướng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「調理」 is read 「ちょうり」 (Cooking; preparation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "味わう",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ゆっくり、旬の料理を「味わう」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: ゆっくり、旬の料理を「味わう」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "あじわう",
+          "しょくひん",
+          "あじつけ",
+          "うまい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「味わう」 đọc là 「あじわう」, nghĩa là Nếm; thưởng thức.",
+        "en": "Correct! 「味わう」 is read 「あじわう」 and means To savor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「味わう」 đọc là 「あじわう」 (Nếm; thưởng thức); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「味わう」 is read 「あじわう」 (To savor); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "出汁",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 味噌汁は、「出汁」が大切です。",
+        "en": "Choose the correct reading of the word in 「」: 味噌汁は、「出汁」が大切です。"
+      },
+      "payload": {
+        "choices": [
+          "しょくひん",
+          "だし",
+          "ちょうみりょう",
+          "あじつけ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出汁」 đọc là 「だし」, nghĩa là Nước dùng (dashi).",
+        "en": "Correct! 「出汁」 is read 「だし」 and means Soup stock (dashi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「出汁」 đọc là 「だし」 (Nước dùng (dashi)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「出汁」 is read 「だし」 (Soup stock (dashi)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "食材",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新鮮な「しょくざい」を使って、料理を作ります。",
+        "en": "Choose the correct way to write the word in 「」: 新鮮な「しょくざい」を使って、料理を作ります。"
+      },
+      "payload": {
+        "choices": [
+          "調理",
+          "不味い",
+          "旨い",
+          "食材"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しょくざい」 viết là 「食材」, nghĩa là Nguyên liệu nấu ăn.",
+        "en": "Correct! 「しょくざい」 is written 「食材」 and means Ingredients."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しょくざい」 viết là 「食材」 (Nguyên liệu nấu ăn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しょくざい」 is written 「食材」 (Ingredients); the other words are read differently."
+      }
+    },
+    {
+      "item": "不味い",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この料理は、塩が足りなくて「まずい」です。",
+        "en": "Choose the correct way to write the word in 「」: この料理は、塩が足りなくて「まずい」です。"
+      },
+      "payload": {
+        "choices": [
+          "不味い",
+          "味わう",
+          "献立",
+          "旨い"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「まずい」 viết là 「不味い」, nghĩa là Dở; không ngon.",
+        "en": "Correct! 「まずい」 is written 「不味い」 and means Bad-tasting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「まずい」 viết là 「不味い」 (Dở; không ngon); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「まずい」 is written 「不味い」 (Bad-tasting); the other words are read differently."
+      }
+    }
+  ]
+}

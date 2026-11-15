@@ -51,6 +51,8 @@
   "landingSubtitle": "A path made for you, short lessons that fit your time, and reviews right before you forget.",
   "authEmailLabel": "Email",
   "authPasswordLabel": "Password",
+  "authShowPassword": "Show password",
+  "authHidePassword": "Hide password",
   "authNewPasswordLabel": "New password",
   "authDisplayNameLabel": "Display name",
   "authEmailRequired": "Please enter your email.",
@@ -156,7 +158,7 @@
   "onboardingSkillVocabulary": "Vocabulary",
   "onboardingSkillGrammar": "Grammar",
   "onboardingSkillListening": "Listening",
-  "onboardingSkillReading": "Reading",
+  "onboardingSkillReading": "Reading practice",
   "onboardingSkillKanji": "Kanji",
   "onboardingSkillLocked": "Not available in this version yet",
   "onboardingPlacementTitle": "Level check (optional)",
@@ -1376,6 +1378,8 @@
   "progressWeakSkillVocabulary": "Vocabulary",
   "progressWeakSkillGrammar": "Grammar",
   "progressWeakSkillKanji": "Kanji",
+  "progressWeakSkillReading": "Reading",
+  "progressWeakSkillWriting": "Writing",
   "adminKindKanji": "Kanji",
   "adminKanjiHeading": "Kanji details",
   "adminKanjiTopic": "Character topic",
@@ -3496,5 +3500,117 @@
         "example": "3"
       }
     }
+  },
+  "onboardingSuggestionLabel": "Suggested for the time you have",
+  "@onboardingSuggestionLabel": {
+    "description": "Nhãn cạnh bộ kỹ năng được điền sẵn theo quỹ thời gian mỗi ngày (spec 007, FR-023)"
+  },
+  "suggestionInviteTitle": "New suggestion for {minutes} minutes",
+  "@suggestionInviteTitle": {
+    "description": "Tiêu đề lời mời khi người học đã chỉnh kỹ năng riêng rồi đổi quỹ thời gian (spec 007, FR-024)",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  "suggestionInviteBody": "Suggested skills: {skills}",
+  "@suggestionInviteBody": {
+    "description": "Nội dung lời mời: danh sách kỹ năng gợi ý, ngăn cách bằng dấu phẩy",
+    "placeholders": {
+      "skills": {
+        "type": "String",
+        "example": "Vocabulary, Grammar"
+      }
+    }
+  },
+  "suggestionApply": "Apply",
+  "@suggestionApply": {
+    "description": "Nút áp dụng bộ kỹ năng gợi ý mới"
+  },
+  "suggestionKeep": "Keep mine",
+  "@suggestionKeep": {
+    "description": "Nút giữ nguyên lựa chọn kỹ năng hiện tại, bỏ qua gợi ý"
+  },
+  "onboardingSkillWriting": "Writing practice",
+  "@onboardingSkillWriting": {
+    "description": "Kỹ năng luyện viết (gõ bằng IME, chỉ từ 30 phút mỗi ngày)"
+  },
+  "practiceLockedReason": "For learners with {minutes} minutes or more per day",
+  "@practiceLockedReason": {
+    "description": "Lý do luyện đọc/viết bị khóa khi quỹ thời gian chưa đủ (spec 007, FR-005)",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  "practiceLockedHint": "Raise your daily time in Profile to use reading/writing practice",
+  "@practiceLockedHint": {
+    "description": "Hướng dẫn mở khóa luyện đọc/viết bằng cách tăng quỹ thời gian"
+  },
+  "practiceLockedError": "Reading/writing practice is for learners with 30+ minutes per day",
+  "@practiceLockedError": {
+    "description": "Thông báo khi máy chủ từ chối luyện đọc/viết (PRACTICE_LOCKED)"
+  },
+  "lessonPassageTitle": "Passage",
+  "@lessonPassageTitle": {
+    "description": "Tiêu đề bảng đoạn văn ghim khi làm bài luyện đọc"
+  },
+  "lessonPassageCollapse": "Collapse",
+  "@lessonPassageCollapse": {
+    "description": "Nút thu gọn bảng đoạn văn"
+  },
+  "lessonPassageExpand": "Expand",
+  "@lessonPassageExpand": {
+    "description": "Nút mở rộng bảng đoạn văn"
+  },
+  "todaySkillReading": "Reading practice",
+  "@todaySkillReading": {
+    "description": "Nhãn loại bài luyện đọc của mục kế hoạch ở màn Hôm nay"
+  },
+  "todaySkillWriting": "Writing practice",
+  "@todaySkillWriting": {
+    "description": "Nhãn loại bài luyện viết của mục kế hoạch ở màn Hôm nay"
+  },
+  "competencyGood": "Strong",
+  "@competencyGood": {
+    "description": "Nhãn mức năng lực tốt (xanh lục), đi kèm biểu tượng (spec 007, FR-019)"
+  },
+  "competencyNeedsImprovement": "Needs practice",
+  "@competencyNeedsImprovement": {
+    "description": "Nhãn mức năng lực cần cải thiện (vàng nhạt), đi kèm biểu tượng"
+  },
+  "competencyInsufficient": "Not enough data",
+  "@competencyInsufficient": {
+    "description": "Nhãn mức chưa đủ dữ liệu để đánh giá (trung tính), đi kèm biểu tượng"
+  },
+  "competencyLegendTitle": "Competency levels",
+  "@competencyLegendTitle": {
+    "description": "Tiêu đề chú giải ba mức năng lực ở Hôm nay, Lộ trình, Tiến độ (FR-020)"
+  },
+  "competencySemantics": "{skill}: {level}",
+  "@competencySemantics": {
+    "description": "Nhãn trợ năng của chip năng lực: đầu mục và mức bằng lời",
+    "placeholders": {
+      "skill": {
+        "type": "String",
+        "example": "Từ vựng"
+      },
+      "level": {
+        "type": "String",
+        "example": "Tốt"
+      }
+    }
+  },
+  "progressCompetencyTitle": "Competency by skill",
+  "@progressCompetencyTitle": {
+    "description": "Tiêu đề dải năng lực theo kỹ năng ở màn Tiến độ"
+  },
+  "progressCompetencyTopics": "Competency by topic",
+  "@progressCompetencyTopics": {
+    "description": "Tiêu đề danh sách năng lực theo chủ đề ở màn Tiến độ"
   }
 }

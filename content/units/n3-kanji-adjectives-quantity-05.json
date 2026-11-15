@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (程 難 良)",
+    "en": "Adjectives and quantity kanji (程 難 良)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "程",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "mức độ; chừng",
+        "en": "extent; degree"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テイ"
+        ],
+        "kunReadings": [
+          "ほど"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "程度",
+          "reading": "ていど",
+          "kanjiReading": "テイ",
+          "translation": {
+            "vi": "mức độ",
+            "en": "degree"
+          }
+        },
+        {
+          "ja": "程",
+          "reading": "ほど",
+          "kanjiReading": "ほど",
+          "translation": {
+            "vi": "chừng; mức",
+            "en": "extent"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "難",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "khó; khó khăn",
+        "en": "difficult"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ナン"
+        ],
+        "kunReadings": [
+          "むずか.しい",
+          "かた.い"
+        ],
+        "strokeCount": 18
+      },
+      "examples": [
+        {
+          "ja": "困難",
+          "reading": "こんなん",
+          "kanjiReading": "ナン",
+          "translation": {
+            "vi": "khó khăn",
+            "en": "difficulty"
+          }
+        },
+        {
+          "ja": "難しい",
+          "reading": "むずかしい",
+          "kanjiReading": "むずか",
+          "translation": {
+            "vi": "khó",
+            "en": "difficult"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "良",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "tốt; hay",
+        "en": "good"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "リョウ"
+        ],
+        "kunReadings": [
+          "よ.い",
+          "い.い"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "改良",
+          "reading": "かいりょう",
+          "kanjiReading": "リョウ",
+          "translation": {
+            "vi": "cải tiến",
+            "en": "improvement"
+          }
+        },
+        {
+          "ja": "良く",
+          "reading": "よく",
+          "kanjiReading": "よ",
+          "translation": {
+            "vi": "tốt; thường xuyên",
+            "en": "well; often"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "程",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「程」nghĩa là gì?",
+        "en": "What does 「程」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mức độ; chừng",
+            "en": "extent; degree"
+          },
+          {
+            "vi": "khó; khó khăn",
+            "en": "difficult"
+          },
+          {
+            "vi": "tốt; hay",
+            "en": "good"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 程 nghĩa là mức độ; chừng.",
+        "en": "Correct! 程 means extent; degree."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 程 nghĩa là mức độ; chừng, như trong 「程度」 (mức độ).",
+        "en": "Not quite. 程 means extent; degree, as in 「程度」 (degree)."
+      }
+    },
+    {
+      "item": "程",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「程」 trong 「程度」 (“mức độ”).",
+        "en": "Type the reading of 「程」 in 「程度」 (“degree”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てい",
+          "テイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 程度, 程 đọc là てい (âm On).",
+        "en": "Correct! In 程度, 程 is read てい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 程度 (mức độ), 程 đọc là てい (âm On).",
+        "en": "In 程度 (degree), 程 is read てい (on'yomi)."
+      }
+    },
+    {
+      "item": "程",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「程」(chừng; mức; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「程」 (extent; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "てい",
+          "ほど",
+          "よく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 程 = ほど (chừng; mức); 程 đọc là ほど (âm Kun).",
+        "en": "Correct! 程 = ほど (extent); 程 is read ほど (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "程 đọc là ほど (chừng; mức): 程 mang âm Kun ほど.",
+        "en": "程 is read ほど (extent): 程 takes the kun'yomi ほど."
+      }
+    },
+    {
+      "item": "難",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「難」nghĩa là gì?",
+        "en": "What does 「難」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tốt; hay",
+            "en": "good"
+          },
+          {
+            "vi": "khó; khó khăn",
+            "en": "difficult"
+          },
+          {
+            "vi": "mức độ; chừng",
+            "en": "extent; degree"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 難 nghĩa là khó; khó khăn.",
+        "en": "Correct! 難 means difficult."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 難 nghĩa là khó; khó khăn, như trong 「困難」 (khó khăn).",
+        "en": "Not quite. 難 means difficult, as in 「困難」 (difficulty)."
+      }
+    },
+    {
+      "item": "難",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「難」 trong 「困難」 (“khó khăn”).",
+        "en": "Type the reading of 「難」 in 「困難」 (“difficulty”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "なん",
+          "ナン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 困難, 難 đọc là なん (âm On).",
+        "en": "Correct! In 困難, 難 is read なん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 困難 (khó khăn), 難 đọc là なん (âm On).",
+        "en": "In 困難 (difficulty), 難 is read なん (on'yomi)."
+      }
+    },
+    {
+      "item": "難",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「難しい」(khó) đọc là gì?",
+        "en": "How is 「難しい」 (difficult) read?"
+      },
+      "payload": {
+        "choices": [
+          "なんしい",
+          "かいりょう",
+          "むずかしい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 難しい = むずかしい (khó); 難 đọc là むずか (âm Kun).",
+        "en": "Correct! 難しい = むずかしい (difficult); 難 is read むずか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "難しい đọc là むずかしい (khó): 難 mang âm Kun むずか.",
+        "en": "難しい is read むずかしい (difficult): 難 takes the kun'yomi むずか."
+      }
+    },
+    {
+      "item": "良",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「良」nghĩa là gì?",
+        "en": "What does 「良」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mức độ; chừng",
+            "en": "extent; degree"
+          },
+          {
+            "vi": "khó; khó khăn",
+            "en": "difficult"
+          },
+          {
+            "vi": "tốt; hay",
+            "en": "good"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 良 nghĩa là tốt; hay.",
+        "en": "Correct! 良 means good."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 良 nghĩa là tốt; hay, như trong 「改良」 (cải tiến).",
+        "en": "Not quite. 良 means good, as in 「改良」 (improvement)."
+      }
+    },
+    {
+      "item": "良",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「良」 trong 「改良」 (“cải tiến”).",
+        "en": "Type the reading of 「良」 in 「改良」 (“improvement”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "りょう",
+          "リョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 改良, 良 đọc là りょう (âm On).",
+        "en": "Correct! In 改良, 良 is read りょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 改良 (cải tiến), 良 đọc là りょう (âm On).",
+        "en": "In 改良 (improvement), 良 is read りょう (on'yomi)."
+      }
+    },
+    {
+      "item": "良",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「良く」(tốt; thường xuyên) đọc là gì?",
+        "en": "How is 「良く」 (well; often) read?"
+      },
+      "payload": {
+        "choices": [
+          "よく",
+          "りょうく",
+          "ほど"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 良く = よく (tốt; thường xuyên); 良 đọc là よ (âm Kun).",
+        "en": "Correct! 良く = よく (well; often); 良 is read よ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "良く đọc là よく (tốt; thường xuyên): 良 mang âm Kun よ.",
+        "en": "良く is read よく (well; often): 良 takes the kun'yomi よ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "程",
+            {
+              "vi": "mức độ; chừng",
+              "en": "extent; degree"
+            }
+          ],
+          [
+            "難",
+            {
+              "vi": "khó; khó khăn",
+              "en": "difficult"
+            }
+          ],
+          [
+            "良",
+            {
+              "vi": "tốt; hay",
+              "en": "good"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

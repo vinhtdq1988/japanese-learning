@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (期 初 次 昨)",
+    "en": "Adjectives and quantity kanji (期 初 次 昨)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "期",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "kỳ; thời hạn",
+        "en": "period; term"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ",
+          "ゴ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "時期",
+          "reading": "じき",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "thời kỳ",
+            "en": "period"
+          }
+        },
+        {
+          "ja": "最期",
+          "reading": "さいご",
+          "kanjiReading": "ゴ",
+          "translation": {
+            "vi": "lúc lâm chung",
+            "en": "last moments"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "初",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "đầu tiên; ban đầu",
+        "en": "first; beginning"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショ"
+        ],
+        "kunReadings": [
+          "はじ.め",
+          "はつ",
+          "はじ.めて"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "最初",
+          "reading": "さいしょ",
+          "kanjiReading": "ショ",
+          "translation": {
+            "vi": "đầu tiên",
+            "en": "first"
+          }
+        },
+        {
+          "ja": "初めて",
+          "reading": "はじめて",
+          "kanjiReading": "はじ",
+          "translation": {
+            "vi": "lần đầu",
+            "en": "for the first time"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "次",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "tiếp theo; thứ",
+        "en": "next; order"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ",
+          "シ"
+        ],
+        "kunReadings": [
+          "つぎ",
+          "つ.ぐ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "次回",
+          "reading": "じかい",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "lần sau",
+            "en": "next time"
+          }
+        },
+        {
+          "ja": "次",
+          "reading": "つぎ",
+          "kanjiReading": "つぎ",
+          "translation": {
+            "vi": "tiếp theo",
+            "en": "next"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "昨",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "hôm qua; trước",
+        "en": "yesterday; last"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "昨年",
+          "reading": "さくねん",
+          "kanjiReading": "サク",
+          "translation": {
+            "vi": "năm ngoái",
+            "en": "last year"
+          }
+        },
+        {
+          "ja": "昨夜",
+          "reading": "さくや",
+          "kanjiReading": "サク",
+          "translation": {
+            "vi": "tối qua",
+            "en": "last night"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "期",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「期」nghĩa là gì?",
+        "en": "What does 「期」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kỳ; thời hạn",
+            "en": "period; term"
+          },
+          {
+            "vi": "đầu tiên; ban đầu",
+            "en": "first; beginning"
+          },
+          {
+            "vi": "tiếp theo; thứ",
+            "en": "next; order"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 期 nghĩa là kỳ; thời hạn.",
+        "en": "Correct! 期 means period; term."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 期 nghĩa là kỳ; thời hạn, như trong 「時期」 (thời kỳ).",
+        "en": "Not quite. 期 means period; term, as in 「時期」 (period)."
+      }
+    },
+    {
+      "item": "期",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「期」 trong 「時期」 (“thời kỳ”).",
+        "en": "Type the reading of 「期」 in 「時期」 (“period”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 時期, 期 đọc là き (âm On).",
+        "en": "Correct! In 時期, 期 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 時期 (thời kỳ), 期 đọc là き (âm On).",
+        "en": "In 時期 (period), 期 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "期",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「最期」(lúc lâm chung) đọc là gì?",
+        "en": "How is 「最期」 (last moments) read?"
+      },
+      "payload": {
+        "choices": [
+          "さいき",
+          "さいご",
+          "さいこ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 最期 = さいご (lúc lâm chung); 期 đọc là ご (âm On).",
+        "en": "Correct! 最期 = さいご (last moments); 期 is read ご (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "最期 đọc là さいご (lúc lâm chung): 期 mang âm On ご.",
+        "en": "最期 is read さいご (last moments): 期 takes the on'yomi ご."
+      }
+    },
+    {
+      "item": "初",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「初」nghĩa là gì?",
+        "en": "What does 「初」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tiếp theo; thứ",
+            "en": "next; order"
+          },
+          {
+            "vi": "đầu tiên; ban đầu",
+            "en": "first; beginning"
+          },
+          {
+            "vi": "hôm qua; trước",
+            "en": "yesterday; last"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 初 nghĩa là đầu tiên; ban đầu.",
+        "en": "Correct! 初 means first; beginning."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 初 nghĩa là đầu tiên; ban đầu, như trong 「最初」 (đầu tiên).",
+        "en": "Not quite. 初 means first; beginning, as in 「最初」 (first)."
+      }
+    },
+    {
+      "item": "初",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「初」 trong 「最初」 (“đầu tiên”).",
+        "en": "Type the reading of 「初」 in 「最初」 (“first”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょ",
+          "ショ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 最初, 初 đọc là しょ (âm On).",
+        "en": "Correct! In 最初, 初 is read しょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 最初 (đầu tiên), 初 đọc là しょ (âm On).",
+        "en": "In 最初 (first), 初 is read しょ (on'yomi)."
+      }
+    },
+    {
+      "item": "初",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「初めて」(lần đầu) đọc là gì?",
+        "en": "How is 「初めて」 (for the first time) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょめて",
+          "さくねん",
+          "はじめて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 初めて = はじめて (lần đầu); 初 đọc là はじ (âm Kun).",
+        "en": "Correct! 初めて = はじめて (for the first time); 初 is read はじ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "初めて đọc là はじめて (lần đầu): 初 mang âm Kun はじ.",
+        "en": "初めて is read はじめて (for the first time): 初 takes the kun'yomi はじ."
+      }
+    },
+    {
+      "item": "次",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「次」nghĩa là gì?",
+        "en": "What does 「次」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hôm qua; trước",
+            "en": "yesterday; last"
+          },
+          {
+            "vi": "kỳ; thời hạn",
+            "en": "period; term"
+          },
+          {
+            "vi": "tiếp theo; thứ",
+            "en": "next; order"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 次 nghĩa là tiếp theo; thứ.",
+        "en": "Correct! 次 means next; order."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 次 nghĩa là tiếp theo; thứ, như trong 「次回」 (lần sau).",
+        "en": "Not quite. 次 means next; order, as in 「次回」 (next time)."
+      }
+    },
+    {
+      "item": "次",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「次」 trong 「次回」 (“lần sau”).",
+        "en": "Type the reading of 「次」 in 「次回」 (“next time”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 次回, 次 đọc là じ (âm On).",
+        "en": "Correct! In 次回, 次 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 次回 (lần sau), 次 đọc là じ (âm On).",
+        "en": "In 次回 (next time), 次 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "次",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「次」(tiếp theo; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「次」 (next; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "つぎ",
+          "じ",
+          "じき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 次 = つぎ (tiếp theo); 次 đọc là つぎ (âm Kun).",
+        "en": "Correct! 次 = つぎ (next); 次 is read つぎ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "次 đọc là つぎ (tiếp theo): 次 mang âm Kun つぎ.",
+        "en": "次 is read つぎ (next): 次 takes the kun'yomi つぎ."
+      }
+    },
+    {
+      "item": "昨",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「昨」nghĩa là gì?",
+        "en": "What does 「昨」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hôm qua; trước",
+            "en": "yesterday; last"
+          },
+          {
+            "vi": "kỳ; thời hạn",
+            "en": "period; term"
+          },
+          {
+            "vi": "đầu tiên; ban đầu",
+            "en": "first; beginning"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 昨 nghĩa là hôm qua; trước.",
+        "en": "Correct! 昨 means yesterday; last."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 昨 nghĩa là hôm qua; trước, như trong 「昨年」 (năm ngoái).",
+        "en": "Not quite. 昨 means yesterday; last, as in 「昨年」 (last year)."
+      }
+    },
+    {
+      "item": "昨",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「昨」 trong 「昨年」 (“năm ngoái”).",
+        "en": "Type the reading of 「昨」 in 「昨年」 (“last year”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さく",
+          "サク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 昨年, 昨 đọc là さく (âm On).",
+        "en": "Correct! In 昨年, 昨 is read さく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 昨年 (năm ngoái), 昨 đọc là さく (âm On).",
+        "en": "In 昨年 (last year), 昨 is read さく (on'yomi)."
+      }
+    },
+    {
+      "item": "昨",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「昨夜」(tối qua) đọc là gì?",
+        "en": "How is 「昨夜」 (last night) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざくや",
+          "さくや",
+          "きや"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 昨夜 = さくや (tối qua); 昨 đọc là さく (âm On).",
+        "en": "Correct! 昨夜 = さくや (last night); 昨 is read さく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "昨夜 đọc là さくや (tối qua): 昨 mang âm On さく.",
+        "en": "昨夜 is read さくや (last night): 昨 takes the on'yomi さく."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "期",
+            {
+              "vi": "kỳ; thời hạn",
+              "en": "period; term"
+            }
+          ],
+          [
+            "初",
+            {
+              "vi": "đầu tiên; ban đầu",
+              "en": "first; beginning"
+            }
+          ],
+          [
+            "次",
+            {
+              "vi": "tiếp theo; thứ",
+              "en": "next; order"
+            }
+          ],
+          [
+            "昨",
+            {
+              "vi": "hôm qua; trước",
+              "en": "yesterday; last"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

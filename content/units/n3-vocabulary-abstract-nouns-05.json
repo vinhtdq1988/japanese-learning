@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-abstract-nouns",
+  "title": {
+    "vi": "Các bên liên quan và vai trò",
+    "en": "Parties concerned and roles"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "関係者",
+      "reading": "かんけいしゃ",
+      "meaning": {
+        "vi": "Người có liên quan",
+        "en": "Person concerned"
+      },
+      "examples": [
+        {
+          "ja": "関係者以外は、立ち入り禁止です。",
+          "reading": "かんけいしゃいがいは、たちいりきんしです。",
+          "translation": {
+            "vi": "Ngoài những người có liên quan, cấm vào.",
+            "en": "No entry except for authorized persons."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "当事者",
+      "reading": "とうじしゃ",
+      "meaning": {
+        "vi": "Đương sự",
+        "en": "Party concerned"
+      },
+      "examples": [
+        {
+          "ja": "当事者同士で、話し合いました。",
+          "reading": "とうじしゃどうしで、はなしあいました。",
+          "translation": {
+            "vi": "Các đương sự đã tự bàn bạc với nhau.",
+            "en": "The parties involved talked it over among themselves."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "第三者",
+      "reading": "だいさんしゃ",
+      "meaning": {
+        "vi": "Bên thứ ba",
+        "en": "Third party"
+      },
+      "examples": [
+        {
+          "ja": "第三者の意見も、聞いてみたいです。",
+          "reading": "だいさんしゃのいけんも、きいてみたいです。",
+          "translation": {
+            "vi": "Tôi cũng muốn nghe ý kiến của bên thứ ba.",
+            "en": "I would like to hear a third party's opinion too."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "正体",
+      "reading": "しょうたい",
+      "meaning": {
+        "vi": "Chân tướng; danh tính thật",
+        "en": "True identity"
+      },
+      "examples": [
+        {
+          "ja": "犯人の正体は、まだわかりません。",
+          "reading": "はんにんのしょうたいは、まだわかりません。",
+          "translation": {
+            "vi": "Chân tướng của thủ phạm vẫn chưa rõ.",
+            "en": "The culprit's true identity is still unknown."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "実体",
+      "reading": "じったい",
+      "meaning": {
+        "vi": "Thực thể; thực chất",
+        "en": "Substance; entity"
+      },
+      "examples": [
+        {
+          "ja": "その会社には、実体がありません。",
+          "reading": "そのかいしゃには、じったいがありません。",
+          "translation": {
+            "vi": "Công ty đó không có thực thể.",
+            "en": "That company has no real substance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "役目",
+      "reading": "やくめ",
+      "meaning": {
+        "vi": "Nhiệm vụ; vai trò (trách nhiệm)",
+        "en": "Duty; role"
+      },
+      "examples": [
+        {
+          "ja": "私の役目は、お客様を案内することです。",
+          "reading": "わたしのやくめは、おきゃくさまをあんないすることです。",
+          "translation": {
+            "vi": "Nhiệm vụ của tôi là hướng dẫn khách.",
+            "en": "My duty is to guide the customers."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "関係者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）以外は、立ち入り禁止です。 — Nghĩa của câu: “Ngoài những người có liên quan, cấm vào.”",
+        "en": "Choose the word that fits the blank: （　）以外は、立ち入り禁止です。 — Meaning of the sentence: “No entry except for authorized persons.”"
+      },
+      "payload": {
+        "choices": [
+          "役目",
+          "当事者",
+          "関係者",
+          "正体"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「関係者」(Người có liên quan) hợp nghĩa câu này: “Ngoài những người có liên quan, cấm vào.”",
+        "en": "Correct! 「関係者」(Person concerned) fits this sentence: “No entry except for authorized persons.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngoài những người có liên quan, cấm vào.”, nên cần 「関係者」(Người có liên quan); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “No entry except for authorized persons.”, so it needs 「関係者」(Person concerned); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "当事者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）同士で、話し合いました。 — Nghĩa của câu: “Các đương sự đã tự bàn bạc với nhau.”",
+        "en": "Choose the word that fits the blank: （　）同士で、話し合いました。 — Meaning of the sentence: “The parties involved talked it over among themselves.”"
+      },
+      "payload": {
+        "choices": [
+          "正体",
+          "関係者",
+          "第三者",
+          "当事者"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「当事者」(Đương sự) hợp nghĩa câu này: “Các đương sự đã tự bàn bạc với nhau.”",
+        "en": "Correct! 「当事者」(Party concerned) fits this sentence: “The parties involved talked it over among themselves.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các đương sự đã tự bàn bạc với nhau.”, nên cần 「当事者」(Đương sự); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The parties involved talked it over among themselves.”, so it needs 「当事者」(Party concerned); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "第三者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の意見も、聞いてみたいです。 — Nghĩa của câu: “Tôi cũng muốn nghe ý kiến của bên thứ ba.”",
+        "en": "Choose the word that fits the blank: （　）の意見も、聞いてみたいです。 — Meaning of the sentence: “I would like to hear a third party's opinion too.”"
+      },
+      "payload": {
+        "choices": [
+          "第三者",
+          "関係者",
+          "当事者",
+          "実体"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「第三者」(Bên thứ ba) hợp nghĩa câu này: “Tôi cũng muốn nghe ý kiến của bên thứ ba.”",
+        "en": "Correct! 「第三者」(Third party) fits this sentence: “I would like to hear a third party's opinion too.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi cũng muốn nghe ý kiến của bên thứ ba.”, nên cần 「第三者」(Bên thứ ba); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I would like to hear a third party's opinion too.”, so it needs 「第三者」(Third party); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "正体",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 犯人の（　）は、まだわかりません。 — Nghĩa của câu: “Chân tướng của thủ phạm vẫn chưa rõ.”",
+        "en": "Choose the word that fits the blank: 犯人の（　）は、まだわかりません。 — Meaning of the sentence: “The culprit's true identity is still unknown.”"
+      },
+      "payload": {
+        "choices": [
+          "実体",
+          "正体",
+          "関係者",
+          "当事者"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「正体」(Chân tướng; danh tính thật) hợp nghĩa câu này: “Chân tướng của thủ phạm vẫn chưa rõ.”",
+        "en": "Correct! 「正体」(True identity) fits this sentence: “The culprit's true identity is still unknown.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chân tướng của thủ phạm vẫn chưa rõ.”, nên cần 「正体」(Chân tướng; danh tính thật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The culprit's true identity is still unknown.”, so it needs 「正体」(True identity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "実体",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: その会社には、（　）がありません。 — Nghĩa của câu: “Công ty đó không có thực thể.”",
+        "en": "Choose the word that fits the blank: その会社には、（　）がありません。 — Meaning of the sentence: “That company has no real substance.”"
+      },
+      "payload": {
+        "choices": [
+          "当事者",
+          "関係者",
+          "実体",
+          "役目"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「実体」(Thực thể; thực chất) hợp nghĩa câu này: “Công ty đó không có thực thể.”",
+        "en": "Correct! 「実体」(Substance; entity) fits this sentence: “That company has no real substance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty đó không có thực thể.”, nên cần 「実体」(Thực thể; thực chất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That company has no real substance.”, so it needs 「実体」(Substance; entity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "役目",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の（　）は、お客様を案内することです。 — Nghĩa của câu: “Nhiệm vụ của tôi là hướng dẫn khách.”",
+        "en": "Choose the word that fits the blank: 私の（　）は、お客様を案内することです。 — Meaning of the sentence: “My duty is to guide the customers.”"
+      },
+      "payload": {
+        "choices": [
+          "正体",
+          "関係者",
+          "当事者",
+          "役目"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「役目」(Nhiệm vụ; vai trò (trách nhiệm)) hợp nghĩa câu này: “Nhiệm vụ của tôi là hướng dẫn khách.”",
+        "en": "Correct! 「役目」(Duty; role) fits this sentence: “My duty is to guide the customers.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhiệm vụ của tôi là hướng dẫn khách.”, nên cần 「役目」(Nhiệm vụ; vai trò (trách nhiệm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My duty is to guide the customers.”, so it needs 「役目」(Duty; role); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "関係者",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「関係者」以外は、立ち入り禁止です。",
+        "en": "Choose the correct reading of the word in 「」: 「関係者」以外は、立ち入り禁止です。"
+      },
+      "payload": {
+        "choices": [
+          "だいさんしゃ",
+          "とうじしゃ",
+          "しょうたい",
+          "かんけいしゃ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「関係者」 đọc là 「かんけいしゃ」, nghĩa là Người có liên quan.",
+        "en": "Correct! 「関係者」 is read 「かんけいしゃ」 and means Person concerned."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「関係者」 đọc là 「かんけいしゃ」 (Người có liên quan); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「関係者」 is read 「かんけいしゃ」 (Person concerned); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "正体",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 犯人の「正体」は、まだわかりません。",
+        "en": "Choose the correct reading of the word in 「」: 犯人の「正体」は、まだわかりません。"
+      },
+      "payload": {
+        "choices": [
+          "しょうたい",
+          "とうじしゃ",
+          "かんけいしゃ",
+          "じったい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「正体」 đọc là 「しょうたい」, nghĩa là Chân tướng; danh tính thật.",
+        "en": "Correct! 「正体」 is read 「しょうたい」 and means True identity."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「正体」 đọc là 「しょうたい」 (Chân tướng; danh tính thật); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「正体」 is read 「しょうたい」 (True identity); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "第三者",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「だいさんしゃ」の意見も、聞いてみたいです。",
+        "en": "Choose the correct way to write the word in 「」: 「だいさんしゃ」の意見も、聞いてみたいです。"
+      },
+      "payload": {
+        "choices": [
+          "第三者",
+          "当事者",
+          "関係者",
+          "正体"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「だいさんしゃ」 viết là 「第三者」, nghĩa là Bên thứ ba.",
+        "en": "Correct! 「だいさんしゃ」 is written 「第三者」 and means Third party."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「だいさんしゃ」 viết là 「第三者」 (Bên thứ ba); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「だいさんしゃ」 is written 「第三者」 (Third party); the other words are read differently."
+      }
+    }
+  ]
+}

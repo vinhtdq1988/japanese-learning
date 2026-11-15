@@ -1,0 +1,543 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (文 字 漢 英)",
+    "en": "School and learning kanji (文 字 漢 英)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "文",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "câu; văn",
+        "en": "sentence; writing"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ブン",
+          "モン"
+        ],
+        "kunReadings": [
+          "ふみ"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "作文",
+          "reading": "さくぶん",
+          "kanjiReading": "ブン",
+          "translation": {
+            "vi": "bài văn",
+            "en": "composition"
+          }
+        },
+        {
+          "ja": "文化",
+          "reading": "ぶんか",
+          "kanjiReading": "ブン",
+          "translation": {
+            "vi": "văn hóa",
+            "en": "culture"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "字",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "chữ; ký tự",
+        "en": "character; letter"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジ"
+        ],
+        "kunReadings": [
+          "あざ"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "漢字",
+          "reading": "かんじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "chữ Hán",
+            "en": "kanji"
+          }
+        },
+        {
+          "ja": "文字",
+          "reading": "もじ",
+          "kanjiReading": "ジ",
+          "translation": {
+            "vi": "chữ; ký tự",
+            "en": "letter"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "漢",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "Hán; (Trung Quốc)",
+        "en": "Chinese; Han"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "漢字",
+          "reading": "かんじ",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "chữ Hán",
+            "en": "kanji"
+          }
+        },
+        {
+          "ja": "漢語",
+          "reading": "かんご",
+          "kanjiReading": "カン",
+          "translation": {
+            "vi": "từ Hán",
+            "en": "Sino-Japanese word"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "英",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "Anh; xuất sắc",
+        "en": "England; excellent"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "英語",
+          "reading": "えいご",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "tiếng Anh",
+            "en": "English"
+          }
+        },
+        {
+          "ja": "英会話",
+          "reading": "えいかいわ",
+          "kanjiReading": "エイ",
+          "translation": {
+            "vi": "hội thoại tiếng Anh",
+            "en": "English conversation"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "文",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「文」nghĩa là gì?",
+        "en": "What does 「文」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "câu; văn",
+            "en": "sentence; writing"
+          },
+          {
+            "vi": "chữ; ký tự",
+            "en": "character; letter"
+          },
+          {
+            "vi": "Hán; (Trung Quốc)",
+            "en": "Chinese; Han"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 文 nghĩa là câu; văn.",
+        "en": "Correct! 文 means sentence; writing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 文 nghĩa là câu; văn, như trong 「作文」 (bài văn).",
+        "en": "Not quite. 文 means sentence; writing, as in 「作文」 (composition)."
+      }
+    },
+    {
+      "item": "文",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「文」 trong 「作文」 (“bài văn”).",
+        "en": "Type the reading of 「文」 in 「作文」 (“composition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぶん",
+          "ブン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 作文, 文 đọc là ぶん (âm On).",
+        "en": "Correct! In 作文, 文 is read ぶん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 作文 (bài văn), 文 đọc là ぶん (âm On).",
+        "en": "In 作文 (composition), 文 is read ぶん (on'yomi)."
+      }
+    },
+    {
+      "item": "文",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「文化」(văn hóa) đọc là gì?",
+        "en": "How is 「文化」 (culture) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふみか",
+          "ぶんか",
+          "ふんか"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 文化 = ぶんか (văn hóa); 文 đọc là ぶん (âm On).",
+        "en": "Correct! 文化 = ぶんか (culture); 文 is read ぶん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "文化 đọc là ぶんか (văn hóa): 文 mang âm On ぶん.",
+        "en": "文化 is read ぶんか (culture): 文 takes the on'yomi ぶん."
+      }
+    },
+    {
+      "item": "字",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「字」nghĩa là gì?",
+        "en": "What does 「字」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hán; (Trung Quốc)",
+            "en": "Chinese; Han"
+          },
+          {
+            "vi": "chữ; ký tự",
+            "en": "character; letter"
+          },
+          {
+            "vi": "Anh; xuất sắc",
+            "en": "England; excellent"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 字 nghĩa là chữ; ký tự.",
+        "en": "Correct! 字 means character; letter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 字 nghĩa là chữ; ký tự, như trong 「漢字」 (chữ Hán).",
+        "en": "Not quite. 字 means character; letter, as in 「漢字」 (kanji)."
+      }
+    },
+    {
+      "item": "字",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「字」 trong 「漢字」 (“chữ Hán”).",
+        "en": "Type the reading of 「字」 in 「漢字」 (“kanji”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じ",
+          "ジ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 漢字, 字 đọc là じ (âm On).",
+        "en": "Correct! In 漢字, 字 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 漢字 (chữ Hán), 字 đọc là じ (âm On).",
+        "en": "In 漢字 (kanji), 字 is read じ (on'yomi)."
+      }
+    },
+    {
+      "item": "字",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「文字」(chữ; ký tự) đọc là gì?",
+        "en": "How is 「文字」 (letter) read?"
+      },
+      "payload": {
+        "choices": [
+          "もあざ",
+          "もし",
+          "もじ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 文字 = もじ (chữ; ký tự); 字 đọc là じ (âm On).",
+        "en": "Correct! 文字 = もじ (letter); 字 is read じ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "文字 đọc là もじ (chữ; ký tự): 字 mang âm On じ.",
+        "en": "文字 is read もじ (letter): 字 takes the on'yomi じ."
+      }
+    },
+    {
+      "item": "漢",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「漢」nghĩa là gì?",
+        "en": "What does 「漢」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Anh; xuất sắc",
+            "en": "England; excellent"
+          },
+          {
+            "vi": "câu; văn",
+            "en": "sentence; writing"
+          },
+          {
+            "vi": "Hán; (Trung Quốc)",
+            "en": "Chinese; Han"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 漢 nghĩa là Hán; (Trung Quốc).",
+        "en": "Correct! 漢 means Chinese; Han."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 漢 nghĩa là Hán; (Trung Quốc), như trong 「漢字」 (chữ Hán).",
+        "en": "Not quite. 漢 means Chinese; Han, as in 「漢字」 (kanji)."
+      }
+    },
+    {
+      "item": "漢",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「漢」 trong 「漢字」 (“chữ Hán”).",
+        "en": "Type the reading of 「漢」 in 「漢字」 (“kanji”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かん",
+          "カン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 漢字, 漢 đọc là かん (âm On).",
+        "en": "Correct! In 漢字, 漢 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 漢字 (chữ Hán), 漢 đọc là かん (âm On).",
+        "en": "In 漢字 (kanji), 漢 is read かん (on'yomi)."
+      }
+    },
+    {
+      "item": "漢",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「漢語」(từ Hán) đọc là gì?",
+        "en": "How is 「漢語」 (Sino-Japanese word) read?"
+      },
+      "payload": {
+        "choices": [
+          "かんご",
+          "がんご",
+          "かんこ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 漢語 = かんご (từ Hán); 漢 đọc là かん (âm On).",
+        "en": "Correct! 漢語 = かんご (Sino-Japanese word); 漢 is read かん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "漢語 đọc là かんご (từ Hán): 漢 mang âm On かん.",
+        "en": "漢語 is read かんご (Sino-Japanese word): 漢 takes the on'yomi かん."
+      }
+    },
+    {
+      "item": "英",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「英」nghĩa là gì?",
+        "en": "What does 「英」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Anh; xuất sắc",
+            "en": "England; excellent"
+          },
+          {
+            "vi": "câu; văn",
+            "en": "sentence; writing"
+          },
+          {
+            "vi": "chữ; ký tự",
+            "en": "character; letter"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 英 nghĩa là Anh; xuất sắc.",
+        "en": "Correct! 英 means England; excellent."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 英 nghĩa là Anh; xuất sắc, như trong 「英語」 (tiếng Anh).",
+        "en": "Not quite. 英 means England; excellent, as in 「英語」 (English)."
+      }
+    },
+    {
+      "item": "英",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「英」 trong 「英語」 (“tiếng Anh”).",
+        "en": "Type the reading of 「英」 in 「英語」 (“English”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えい",
+          "エイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 英語, 英 đọc là えい (âm On).",
+        "en": "Correct! In 英語, 英 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 英語 (tiếng Anh), 英 đọc là えい (âm On).",
+        "en": "In 英語 (English), 英 is read えい (on'yomi)."
+      }
+    },
+    {
+      "item": "英",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「英会話」(hội thoại tiếng Anh) đọc là gì?",
+        "en": "How is 「英会話」 (English conversation) read?"
+      },
+      "payload": {
+        "choices": [
+          "えいがいわ",
+          "えいかいわ",
+          "ふみかいわ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 英会話 = えいかいわ (hội thoại tiếng Anh); 英 đọc là えい (âm On).",
+        "en": "Correct! 英会話 = えいかいわ (English conversation); 英 is read えい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "英会話 đọc là えいかいわ (hội thoại tiếng Anh): 英 mang âm On えい.",
+        "en": "英会話 is read えいかいわ (English conversation): 英 takes the on'yomi えい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "文",
+            {
+              "vi": "câu; văn",
+              "en": "sentence; writing"
+            }
+          ],
+          [
+            "字",
+            {
+              "vi": "chữ; ký tự",
+              "en": "character; letter"
+            }
+          ],
+          [
+            "漢",
+            {
+              "vi": "Hán; (Trung Quốc)",
+              "en": "Chinese; Han"
+            }
+          ],
+          [
+            "英",
+            {
+              "vi": "Anh; xuất sắc",
+              "en": "England; excellent"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

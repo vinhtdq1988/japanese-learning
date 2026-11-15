@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 **itemCount** | **int** |  | [optional] 
 **kind** | [**Skill**](Skill.md) | Kỹ năng của đơn vị với `new_unit` (client hiển thị nhãn Kanji); null với `review_batch` | [optional] 
+**competency** | [**CompetencyLevel**](CompetencyLevel.md) | Mức năng lực của KỸ NĂNG của đơn vị với `new_unit`; null với `review_batch` (không thuộc một kỹ năng) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

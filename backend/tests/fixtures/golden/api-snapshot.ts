@@ -48,6 +48,26 @@ export function normalizeIds(value: unknown, seen = new Map<string, string>()): 
   return value;
 }
 
+/** Các trường tùy chọn thêm ở hợp đồng 1.14.0 (spec 007): năng lực và lời khích lệ. */
+const NEW_OPTIONAL_FIELDS = new Set(['competency', 'encouragement']);
+
+/**
+ * Bỏ đệ quy các khóa `competency` và `encouragement` (trường tùy chọn mới của 1.14.0, spec 007) khỏi một phản hồi
+ * để golden `api-pre-org.json` và `org-regression-api.test.ts` vẫn chứng minh "chỉ thêm trường tùy chọn, phần còn
+ * lại không đổi" (QS6). Dùng chung cho script sinh và kiểm thử hồi quy; không sửa giá trị đầu vào.
+ */
+export function stripNewOptionalFields(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map((v) => stripNewOptionalFields(v));
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>)
+        .filter(([k]) => !NEW_OPTIONAL_FIELDS.has(k))
+        .map(([k, v]) => [k, stripNewOptionalFields(v)]),
+    );
+  }
+  return value;
+}
+
 export interface SnapshotContext {
   api: ContractClient;
   clock: FakeClock;
@@ -140,7 +160,7 @@ export async function captureProfile(
 
   const snap = async (url: string) => {
     const res = await api.get(url, { token, validateResponse: false });
-    return { status: res.status, body: normalizeIds(res.body) };
+    return { status: res.status, body: normalizeIds(stripNewOptionalFields(res.body)) };
   };
   return {
     path: await snap('/path'),

@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-nature-weather",
+  "title": {
+    "vi": "Kanji thiên nhiên – mùa – động vật (鳥 牛 魚 犬)",
+    "en": "Nature, seasons and animals kanji (鳥 牛 魚 犬)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 720,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "鳥",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "chim",
+        "en": "bird"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョウ"
+        ],
+        "kunReadings": [
+          "とり"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "野鳥",
+          "reading": "やちょう",
+          "kanjiReading": "チョウ",
+          "translation": {
+            "vi": "chim hoang dã",
+            "en": "wild bird"
+          }
+        },
+        {
+          "ja": "小鳥",
+          "reading": "ことり",
+          "kanjiReading": "とり",
+          "translation": {
+            "vi": "chim nhỏ",
+            "en": "small bird"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "牛",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "bò",
+        "en": "cow; cattle"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギュウ"
+        ],
+        "kunReadings": [
+          "うし"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "牛肉",
+          "reading": "ぎゅうにく",
+          "kanjiReading": "ギュウ",
+          "translation": {
+            "vi": "thịt bò",
+            "en": "beef"
+          }
+        },
+        {
+          "ja": "牛",
+          "reading": "うし",
+          "kanjiReading": "うし",
+          "translation": {
+            "vi": "con bò",
+            "en": "cow"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "魚",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "cá",
+        "en": "fish"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ギョ"
+        ],
+        "kunReadings": [
+          "さかな",
+          "うお"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "金魚",
+          "reading": "きんぎょ",
+          "kanjiReading": "ギョ",
+          "translation": {
+            "vi": "cá vàng",
+            "en": "goldfish"
+          }
+        },
+        {
+          "ja": "魚",
+          "reading": "さかな",
+          "kanjiReading": "さかな",
+          "translation": {
+            "vi": "con cá",
+            "en": "fish"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "犬",
+      "topic": "kanji-n4-nature-weather",
+      "meaning": {
+        "vi": "chó",
+        "en": "dog"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [
+          "いぬ"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "愛犬",
+          "reading": "あいけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "chó cưng",
+            "en": "pet dog"
+          }
+        },
+        {
+          "ja": "犬",
+          "reading": "いぬ",
+          "kanjiReading": "いぬ",
+          "translation": {
+            "vi": "con chó",
+            "en": "dog"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "鳥",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「鳥」nghĩa là gì?",
+        "en": "What does 「鳥」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chim",
+            "en": "bird"
+          },
+          {
+            "vi": "bò",
+            "en": "cow; cattle"
+          },
+          {
+            "vi": "cá",
+            "en": "fish"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 鳥 nghĩa là chim.",
+        "en": "Correct! 鳥 means bird."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 鳥 nghĩa là chim, như trong 「野鳥」 (chim hoang dã).",
+        "en": "Not quite. 鳥 means bird, as in 「野鳥」 (wild bird)."
+      }
+    },
+    {
+      "item": "鳥",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「鳥」 trong 「野鳥」 (“chim hoang dã”).",
+        "en": "Type the reading of 「鳥」 in 「野鳥」 (“wild bird”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょう",
+          "チョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 野鳥, 鳥 đọc là ちょう (âm On).",
+        "en": "Correct! In 野鳥, 鳥 is read ちょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 野鳥 (chim hoang dã), 鳥 đọc là ちょう (âm On).",
+        "en": "In 野鳥 (wild bird), 鳥 is read ちょう (on'yomi)."
+      }
+    },
+    {
+      "item": "鳥",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「小鳥」(chim nhỏ) đọc là gì?",
+        "en": "How is 「小鳥」 (small bird) read?"
+      },
+      "payload": {
+        "choices": [
+          "こちょう",
+          "ことり",
+          "こどり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 小鳥 = ことり (chim nhỏ); 鳥 đọc là とり (âm Kun).",
+        "en": "Correct! 小鳥 = ことり (small bird); 鳥 is read とり (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "小鳥 đọc là ことり (chim nhỏ): 鳥 mang âm Kun とり.",
+        "en": "小鳥 is read ことり (small bird): 鳥 takes the kun'yomi とり."
+      }
+    },
+    {
+      "item": "牛",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「牛」nghĩa là gì?",
+        "en": "What does 「牛」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cá",
+            "en": "fish"
+          },
+          {
+            "vi": "bò",
+            "en": "cow; cattle"
+          },
+          {
+            "vi": "chó",
+            "en": "dog"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 牛 nghĩa là bò.",
+        "en": "Correct! 牛 means cow; cattle."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 牛 nghĩa là bò, như trong 「牛肉」 (thịt bò).",
+        "en": "Not quite. 牛 means cow; cattle, as in 「牛肉」 (beef)."
+      }
+    },
+    {
+      "item": "牛",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「牛」 trong 「牛肉」 (“thịt bò”).",
+        "en": "Type the reading of 「牛」 in 「牛肉」 (“beef”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎゅう",
+          "ギュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 牛肉, 牛 đọc là ぎゅう (âm On).",
+        "en": "Correct! In 牛肉, 牛 is read ぎゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 牛肉 (thịt bò), 牛 đọc là ぎゅう (âm On).",
+        "en": "In 牛肉 (beef), 牛 is read ぎゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "牛",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「牛」(con bò; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「牛」 (cow; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎゅう",
+          "うじ",
+          "うし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 牛 = うし (con bò); 牛 đọc là うし (âm Kun).",
+        "en": "Correct! 牛 = うし (cow); 牛 is read うし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "牛 đọc là うし (con bò): 牛 mang âm Kun うし.",
+        "en": "牛 is read うし (cow): 牛 takes the kun'yomi うし."
+      }
+    },
+    {
+      "item": "魚",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「魚」nghĩa là gì?",
+        "en": "What does 「魚」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chó",
+            "en": "dog"
+          },
+          {
+            "vi": "chim",
+            "en": "bird"
+          },
+          {
+            "vi": "cá",
+            "en": "fish"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 魚 nghĩa là cá.",
+        "en": "Correct! 魚 means fish."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 魚 nghĩa là cá, như trong 「金魚」 (cá vàng).",
+        "en": "Not quite. 魚 means fish, as in 「金魚」 (goldfish)."
+      }
+    },
+    {
+      "item": "魚",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「魚」 trong 「金魚」 (“cá vàng”).",
+        "en": "Type the reading of 「魚」 in 「金魚」 (“goldfish”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ぎょ",
+          "ギョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 金魚, 魚 đọc là ぎょ (âm On).",
+        "en": "Correct! In 金魚, 魚 is read ぎょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 金魚 (cá vàng), 魚 đọc là ぎょ (âm On).",
+        "en": "In 金魚 (goldfish), 魚 is read ぎょ (on'yomi)."
+      }
+    },
+    {
+      "item": "魚",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「魚」(con cá; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「魚」 (fish; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "さかな",
+          "ぎょ",
+          "さがな"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 魚 = さかな (con cá); 魚 đọc là さかな (âm Kun).",
+        "en": "Correct! 魚 = さかな (fish); 魚 is read さかな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "魚 đọc là さかな (con cá): 魚 mang âm Kun さかな.",
+        "en": "魚 is read さかな (fish): 魚 takes the kun'yomi さかな."
+      }
+    },
+    {
+      "item": "犬",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「犬」nghĩa là gì?",
+        "en": "What does 「犬」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chó",
+            "en": "dog"
+          },
+          {
+            "vi": "chim",
+            "en": "bird"
+          },
+          {
+            "vi": "bò",
+            "en": "cow; cattle"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 犬 nghĩa là chó.",
+        "en": "Correct! 犬 means dog."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 犬 nghĩa là chó, như trong 「愛犬」 (chó cưng).",
+        "en": "Not quite. 犬 means dog, as in 「愛犬」 (pet dog)."
+      }
+    },
+    {
+      "item": "犬",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「犬」 trong 「愛犬」 (“chó cưng”).",
+        "en": "Type the reading of 「犬」 in 「愛犬」 (“pet dog”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 愛犬, 犬 đọc là けん (âm On).",
+        "en": "Correct! In 愛犬, 犬 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 愛犬 (chó cưng), 犬 đọc là けん (âm On).",
+        "en": "In 愛犬 (pet dog), 犬 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "犬",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「犬」(con chó; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「犬」 (dog; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "けん",
+          "いぬ",
+          "いな"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 犬 = いぬ (con chó); 犬 đọc là いぬ (âm Kun).",
+        "en": "Correct! 犬 = いぬ (dog); 犬 is read いぬ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "犬 đọc là いぬ (con chó): 犬 mang âm Kun いぬ.",
+        "en": "犬 is read いぬ (dog): 犬 takes the kun'yomi いぬ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "鳥",
+            {
+              "vi": "chim",
+              "en": "bird"
+            }
+          ],
+          [
+            "牛",
+            {
+              "vi": "bò",
+              "en": "cow; cattle"
+            }
+          ],
+          [
+            "魚",
+            {
+              "vi": "cá",
+              "en": "fish"
+            }
+          ],
+          [
+            "犬",
+            {
+              "vi": "chó",
+              "en": "dog"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

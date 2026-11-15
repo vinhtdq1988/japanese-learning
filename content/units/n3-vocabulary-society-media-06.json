@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-society-media",
+  "title": {
+    "vi": "Báo giấy và tin nhanh",
+    "en": "Newspapers and news flashes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "特集",
+      "reading": "とくしゅう",
+      "meaning": {
+        "vi": "Chuyên đề; số đặc biệt",
+        "en": "Special feature"
+      },
+      "examples": [
+        {
+          "ja": "この雑誌は、毎月、旅行の特集があります。",
+          "reading": "このざっしは、まいつき、りょこうのとくしゅうがあります。",
+          "translation": {
+            "vi": "Tạp chí này mỗi tháng đều có chuyên đề du lịch.",
+            "en": "This magazine has a travel feature every month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見出し",
+      "reading": "みだし",
+      "meaning": {
+        "vi": "Tiêu đề (bài báo)",
+        "en": "Headline"
+      },
+      "examples": [
+        {
+          "ja": "新聞の見出しだけ、先に読みました。",
+          "reading": "しんぶんのみだしだけ、さきによみました。",
+          "translation": {
+            "vi": "Tôi chỉ đọc trước phần tiêu đề của tờ báo.",
+            "en": "I read only the newspaper headlines first."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "社説",
+      "reading": "しゃせつ",
+      "meaning": {
+        "vi": "Bài xã luận",
+        "en": "Editorial"
+      },
+      "examples": [
+        {
+          "ja": "新聞の社説に、意見が書かれていました。",
+          "reading": "しんぶんのしゃせつに、いけんがかかれていました。",
+          "translation": {
+            "vi": "Quan điểm được viết trong bài xã luận của tờ báo.",
+            "en": "An opinion was written in the newspaper's editorial."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "速報",
+      "reading": "そくほう",
+      "meaning": {
+        "vi": "Tin nhanh",
+        "en": "News flash"
+      },
+      "examples": [
+        {
+          "ja": "地震の速報が、テレビに流れました。",
+          "reading": "じしんのそくほうが、テレビにながれました。",
+          "translation": {
+            "vi": "Tin nhanh về động đất đã chiếu trên tivi.",
+            "en": "A news flash about the earthquake aired on TV."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "号外",
+      "reading": "ごうがい",
+      "meaning": {
+        "vi": "Số báo đặc biệt (phát ngoài kỳ)",
+        "en": "Extra edition"
+      },
+      "examples": [
+        {
+          "ja": "大きなニュースがあって、号外が配られました。",
+          "reading": "おおきなニュースがあって、ごうがいがくばられました。",
+          "translation": {
+            "vi": "Có tin lớn nên số báo đặc biệt đã được phát.",
+            "en": "There was big news, so an extra edition was handed out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "情報源",
+      "reading": "じょうほうげん",
+      "meaning": {
+        "vi": "Nguồn thông tin",
+        "en": "Source of information"
+      },
+      "examples": [
+        {
+          "ja": "ニュースの情報源は、確かなものにしてください。",
+          "reading": "ニュースのじょうほうげんは、たしかなものにしてください。",
+          "translation": {
+            "vi": "Hãy dùng nguồn thông tin đáng tin cậy cho tin tức.",
+            "en": "Please use reliable sources of information for news."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "特集",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この雑誌は、毎月、旅行の（　）があります。 — Nghĩa của câu: “Tạp chí này mỗi tháng đều có chuyên đề du lịch.”",
+        "en": "Choose the word that fits the blank: この雑誌は、毎月、旅行の（　）があります。 — Meaning of the sentence: “This magazine has a travel feature every month.”"
+      },
+      "payload": {
+        "choices": [
+          "速報",
+          "見出し",
+          "特集",
+          "情報源"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特集」(Chuyên đề; số đặc biệt) hợp nghĩa câu này: “Tạp chí này mỗi tháng đều có chuyên đề du lịch.”",
+        "en": "Correct! 「特集」(Special feature) fits this sentence: “This magazine has a travel feature every month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tạp chí này mỗi tháng đều có chuyên đề du lịch.”, nên cần 「特集」(Chuyên đề; số đặc biệt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This magazine has a travel feature every month.”, so it needs 「特集」(Special feature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見出し",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新聞の（　）だけ、先に読みました。 — Nghĩa của câu: “Tôi chỉ đọc trước phần tiêu đề của tờ báo.”",
+        "en": "Choose the word that fits the blank: 新聞の（　）だけ、先に読みました。 — Meaning of the sentence: “I read only the newspaper headlines first.”"
+      },
+      "payload": {
+        "choices": [
+          "特集",
+          "社説",
+          "速報",
+          "見出し"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見出し」(Tiêu đề (bài báo)) hợp nghĩa câu này: “Tôi chỉ đọc trước phần tiêu đề của tờ báo.”",
+        "en": "Correct! 「見出し」(Headline) fits this sentence: “I read only the newspaper headlines first.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi chỉ đọc trước phần tiêu đề của tờ báo.”, nên cần 「見出し」(Tiêu đề (bài báo)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I read only the newspaper headlines first.”, so it needs 「見出し」(Headline); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "社説",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新聞の（　）に、意見が書かれていました。 — Nghĩa của câu: “Quan điểm được viết trong bài xã luận của tờ báo.”",
+        "en": "Choose the word that fits the blank: 新聞の（　）に、意見が書かれていました。 — Meaning of the sentence: “An opinion was written in the newspaper's editorial.”"
+      },
+      "payload": {
+        "choices": [
+          "社説",
+          "情報源",
+          "特集",
+          "号外"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「社説」(Bài xã luận) hợp nghĩa câu này: “Quan điểm được viết trong bài xã luận của tờ báo.”",
+        "en": "Correct! 「社説」(Editorial) fits this sentence: “An opinion was written in the newspaper's editorial.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quan điểm được viết trong bài xã luận của tờ báo.”, nên cần 「社説」(Bài xã luận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “An opinion was written in the newspaper's editorial.”, so it needs 「社説」(Editorial); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "速報",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地震の（　）が、テレビに流れました。 — Nghĩa của câu: “Tin nhanh về động đất đã chiếu trên tivi.”",
+        "en": "Choose the word that fits the blank: 地震の（　）が、テレビに流れました。 — Meaning of the sentence: “A news flash about the earthquake aired on TV.”"
+      },
+      "payload": {
+        "choices": [
+          "社説",
+          "速報",
+          "特集",
+          "情報源"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「速報」(Tin nhanh) hợp nghĩa câu này: “Tin nhanh về động đất đã chiếu trên tivi.”",
+        "en": "Correct! 「速報」(News flash) fits this sentence: “A news flash about the earthquake aired on TV.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tin nhanh về động đất đã chiếu trên tivi.”, nên cần 「速報」(Tin nhanh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A news flash about the earthquake aired on TV.”, so it needs 「速報」(News flash); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "号外",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きなニュースがあって、（　）が配られました。 — Nghĩa của câu: “Có tin lớn nên số báo đặc biệt đã được phát.”",
+        "en": "Choose the word that fits the blank: 大きなニュースがあって、（　）が配られました。 — Meaning of the sentence: “There was big news, so an extra edition was handed out.”"
+      },
+      "payload": {
+        "choices": [
+          "特集",
+          "見出し",
+          "号外",
+          "速報"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「号外」(Số báo đặc biệt (phát ngoài kỳ)) hợp nghĩa câu này: “Có tin lớn nên số báo đặc biệt đã được phát.”",
+        "en": "Correct! 「号外」(Extra edition) fits this sentence: “There was big news, so an extra edition was handed out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Có tin lớn nên số báo đặc biệt đã được phát.”, nên cần 「号外」(Số báo đặc biệt (phát ngoài kỳ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was big news, so an extra edition was handed out.”, so it needs 「号外」(Extra edition); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "情報源",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ニュースの（　）は、確かなものにしてください。 — Nghĩa của câu: “Hãy dùng nguồn thông tin đáng tin cậy cho tin tức.”",
+        "en": "Choose the word that fits the blank: ニュースの（　）は、確かなものにしてください。 — Meaning of the sentence: “Please use reliable sources of information for news.”"
+      },
+      "payload": {
+        "choices": [
+          "速報",
+          "特集",
+          "社説",
+          "情報源"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「情報源」(Nguồn thông tin) hợp nghĩa câu này: “Hãy dùng nguồn thông tin đáng tin cậy cho tin tức.”",
+        "en": "Correct! 「情報源」(Source of information) fits this sentence: “Please use reliable sources of information for news.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy dùng nguồn thông tin đáng tin cậy cho tin tức.”, nên cần 「情報源」(Nguồn thông tin); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please use reliable sources of information for news.”, so it needs 「情報源」(Source of information); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "特集",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この雑誌は、毎月、旅行の「特集」があります。",
+        "en": "Choose the correct reading of the word in 「」: この雑誌は、毎月、旅行の「特集」があります。"
+      },
+      "payload": {
+        "choices": [
+          "ごうがい",
+          "みだし",
+          "しゃせつ",
+          "とくしゅう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「特集」 đọc là 「とくしゅう」, nghĩa là Chuyên đề; số đặc biệt.",
+        "en": "Correct! 「特集」 is read 「とくしゅう」 and means Special feature."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「特集」 đọc là 「とくしゅう」 (Chuyên đề; số đặc biệt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「特集」 is read 「とくしゅう」 (Special feature); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "速報",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 地震の「速報」が、テレビに流れました。",
+        "en": "Choose the correct reading of the word in 「」: 地震の「速報」が、テレビに流れました。"
+      },
+      "payload": {
+        "choices": [
+          "そくほう",
+          "しゃせつ",
+          "とくしゅう",
+          "みだし"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「速報」 đọc là 「そくほう」, nghĩa là Tin nhanh.",
+        "en": "Correct! 「速報」 is read 「そくほう」 and means News flash."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「速報」 đọc là 「そくほう」 (Tin nhanh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「速報」 is read 「そくほう」 (News flash); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "社説",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新聞の「しゃせつ」に、意見が書かれていました。",
+        "en": "Choose the correct way to write the word in 「」: 新聞の「しゃせつ」に、意見が書かれていました。"
+      },
+      "payload": {
+        "choices": [
+          "社説",
+          "号外",
+          "特集",
+          "見出し"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しゃせつ」 viết là 「社説」, nghĩa là Bài xã luận.",
+        "en": "Correct! 「しゃせつ」 is written 「社説」 and means Editorial."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しゃせつ」 viết là 「社説」 (Bài xã luận); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しゃせつ」 is written 「社説」 (Editorial); the other words are read differently."
+      }
+    }
+  ]
+}

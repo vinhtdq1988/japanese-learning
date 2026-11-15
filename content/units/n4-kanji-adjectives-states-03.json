@@ -1,0 +1,551 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-adjectives-states",
+  "title": {
+    "vi": "Kanji tính từ – trạng thái (安 楽 悪 明)",
+    "en": "Adjectives and states kanji (安 楽 悪 明)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "安",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "rẻ; yên ổn",
+        "en": "cheap; safe"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "アン"
+        ],
+        "kunReadings": [
+          "やす.い"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "安心",
+          "reading": "あんしん",
+          "kanjiReading": "アン",
+          "translation": {
+            "vi": "yên tâm",
+            "en": "relief"
+          }
+        },
+        {
+          "ja": "安い",
+          "reading": "やすい",
+          "kanjiReading": "やす",
+          "translation": {
+            "vi": "rẻ",
+            "en": "cheap"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "楽",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "vui; dễ chịu; nhạc",
+        "en": "fun; easy; music"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガク",
+          "ラク"
+        ],
+        "kunReadings": [
+          "たの.しい",
+          "たの.しむ"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "音楽",
+          "reading": "おんがく",
+          "kanjiReading": "ガク",
+          "translation": {
+            "vi": "âm nhạc",
+            "en": "music"
+          }
+        },
+        {
+          "ja": "楽しい",
+          "reading": "たのしい",
+          "kanjiReading": "たの",
+          "translation": {
+            "vi": "vui",
+            "en": "fun"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悪",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "xấu; tệ",
+        "en": "bad"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "アク",
+          "オ"
+        ],
+        "kunReadings": [
+          "わる.い"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "最悪",
+          "reading": "さいあく",
+          "kanjiReading": "アク",
+          "translation": {
+            "vi": "tồi tệ nhất",
+            "en": "the worst"
+          }
+        },
+        {
+          "ja": "悪い",
+          "reading": "わるい",
+          "kanjiReading": "わる",
+          "translation": {
+            "vi": "xấu; tệ",
+            "en": "bad"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "明",
+      "topic": "kanji-n4-adjectives-states",
+      "meaning": {
+        "vi": "sáng; rõ",
+        "en": "bright; clear"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "メイ",
+          "ミョウ"
+        ],
+        "kunReadings": [
+          "あか.るい",
+          "あき.らか"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "説明",
+          "reading": "せつめい",
+          "kanjiReading": "メイ",
+          "translation": {
+            "vi": "giải thích",
+            "en": "explanation"
+          }
+        },
+        {
+          "ja": "明るい",
+          "reading": "あかるい",
+          "kanjiReading": "あか",
+          "translation": {
+            "vi": "sáng",
+            "en": "bright"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "安",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「安」nghĩa là gì?",
+        "en": "What does 「安」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "rẻ; yên ổn",
+            "en": "cheap; safe"
+          },
+          {
+            "vi": "vui; dễ chịu; nhạc",
+            "en": "fun; easy; music"
+          },
+          {
+            "vi": "xấu; tệ",
+            "en": "bad"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 安 nghĩa là rẻ; yên ổn.",
+        "en": "Correct! 安 means cheap; safe."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 安 nghĩa là rẻ; yên ổn, như trong 「安心」 (yên tâm).",
+        "en": "Not quite. 安 means cheap; safe, as in 「安心」 (relief)."
+      }
+    },
+    {
+      "item": "安",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「安」 trong 「安心」 (“yên tâm”).",
+        "en": "Type the reading of 「安」 in 「安心」 (“relief”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "あん",
+          "アン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 安心, 安 đọc là あん (âm On).",
+        "en": "Correct! In 安心, 安 is read あん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 安心 (yên tâm), 安 đọc là あん (âm On).",
+        "en": "In 安心 (relief), 安 is read あん (on'yomi)."
+      }
+    },
+    {
+      "item": "安",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「安い」(rẻ) đọc là gì?",
+        "en": "How is 「安い」 (cheap) read?"
+      },
+      "payload": {
+        "choices": [
+          "あんい",
+          "やすい",
+          "わるい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 安い = やすい (rẻ); 安 đọc là やす (âm Kun).",
+        "en": "Correct! 安い = やすい (cheap); 安 is read やす (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "安い đọc là やすい (rẻ): 安 mang âm Kun やす.",
+        "en": "安い is read やすい (cheap): 安 takes the kun'yomi やす."
+      }
+    },
+    {
+      "item": "楽",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「楽」nghĩa là gì?",
+        "en": "What does 「楽」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xấu; tệ",
+            "en": "bad"
+          },
+          {
+            "vi": "vui; dễ chịu; nhạc",
+            "en": "fun; easy; music"
+          },
+          {
+            "vi": "sáng; rõ",
+            "en": "bright; clear"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 楽 nghĩa là vui; dễ chịu; nhạc.",
+        "en": "Correct! 楽 means fun; easy; music."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 楽 nghĩa là vui; dễ chịu; nhạc, như trong 「音楽」 (âm nhạc).",
+        "en": "Not quite. 楽 means fun; easy; music, as in 「音楽」 (music)."
+      }
+    },
+    {
+      "item": "楽",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「楽」 trong 「音楽」 (“âm nhạc”).",
+        "en": "Type the reading of 「楽」 in 「音楽」 (“music”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がく",
+          "ガク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 音楽, 楽 đọc là がく (âm On).",
+        "en": "Correct! In 音楽, 楽 is read がく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 音楽 (âm nhạc), 楽 đọc là がく (âm On).",
+        "en": "In 音楽 (music), 楽 is read がく (on'yomi)."
+      }
+    },
+    {
+      "item": "楽",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「楽しい」(vui) đọc là gì?",
+        "en": "How is 「楽しい」 (fun) read?"
+      },
+      "payload": {
+        "choices": [
+          "がくしい",
+          "せつめい",
+          "たのしい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 楽しい = たのしい (vui); 楽 đọc là たの (âm Kun).",
+        "en": "Correct! 楽しい = たのしい (fun); 楽 is read たの (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "楽しい đọc là たのしい (vui): 楽 mang âm Kun たの.",
+        "en": "楽しい is read たのしい (fun): 楽 takes the kun'yomi たの."
+      }
+    },
+    {
+      "item": "悪",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「悪」nghĩa là gì?",
+        "en": "What does 「悪」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sáng; rõ",
+            "en": "bright; clear"
+          },
+          {
+            "vi": "rẻ; yên ổn",
+            "en": "cheap; safe"
+          },
+          {
+            "vi": "xấu; tệ",
+            "en": "bad"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 悪 nghĩa là xấu; tệ.",
+        "en": "Correct! 悪 means bad."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 悪 nghĩa là xấu; tệ, như trong 「最悪」 (tồi tệ nhất).",
+        "en": "Not quite. 悪 means bad, as in 「最悪」 (the worst)."
+      }
+    },
+    {
+      "item": "悪",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「悪」 trong 「最悪」 (“tồi tệ nhất”).",
+        "en": "Type the reading of 「悪」 in 「最悪」 (“the worst”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "あく",
+          "アク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 最悪, 悪 đọc là あく (âm On).",
+        "en": "Correct! In 最悪, 悪 is read あく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 最悪 (tồi tệ nhất), 悪 đọc là あく (âm On).",
+        "en": "In 最悪 (the worst), 悪 is read あく (on'yomi)."
+      }
+    },
+    {
+      "item": "悪",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「悪い」(xấu; tệ) đọc là gì?",
+        "en": "How is 「悪い」 (bad) read?"
+      },
+      "payload": {
+        "choices": [
+          "わるい",
+          "あくい",
+          "やすい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 悪い = わるい (xấu; tệ); 悪 đọc là わる (âm Kun).",
+        "en": "Correct! 悪い = わるい (bad); 悪 is read わる (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "悪い đọc là わるい (xấu; tệ): 悪 mang âm Kun わる.",
+        "en": "悪い is read わるい (bad): 悪 takes the kun'yomi わる."
+      }
+    },
+    {
+      "item": "明",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「明」nghĩa là gì?",
+        "en": "What does 「明」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sáng; rõ",
+            "en": "bright; clear"
+          },
+          {
+            "vi": "rẻ; yên ổn",
+            "en": "cheap; safe"
+          },
+          {
+            "vi": "vui; dễ chịu; nhạc",
+            "en": "fun; easy; music"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 明 nghĩa là sáng; rõ.",
+        "en": "Correct! 明 means bright; clear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 明 nghĩa là sáng; rõ, như trong 「説明」 (giải thích).",
+        "en": "Not quite. 明 means bright; clear, as in 「説明」 (explanation)."
+      }
+    },
+    {
+      "item": "明",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「明」 trong 「説明」 (“giải thích”).",
+        "en": "Type the reading of 「明」 in 「説明」 (“explanation”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "めい",
+          "メイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 説明, 明 đọc là めい (âm On).",
+        "en": "Correct! In 説明, 明 is read めい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 説明 (giải thích), 明 đọc là めい (âm On).",
+        "en": "In 説明 (explanation), 明 is read めい (on'yomi)."
+      }
+    },
+    {
+      "item": "明",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「明るい」(sáng) đọc là gì?",
+        "en": "How is 「明るい」 (bright) read?"
+      },
+      "payload": {
+        "choices": [
+          "めいるい",
+          "あかるい",
+          "たのしい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 明るい = あかるい (sáng); 明 đọc là あか (âm Kun).",
+        "en": "Correct! 明るい = あかるい (bright); 明 is read あか (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "明るい đọc là あかるい (sáng): 明 mang âm Kun あか.",
+        "en": "明るい is read あかるい (bright): 明 takes the kun'yomi あか."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "安",
+            {
+              "vi": "rẻ; yên ổn",
+              "en": "cheap; safe"
+            }
+          ],
+          [
+            "楽",
+            {
+              "vi": "vui; dễ chịu; nhạc",
+              "en": "fun; easy; music"
+            }
+          ],
+          [
+            "悪",
+            {
+              "vi": "xấu; tệ",
+              "en": "bad"
+            }
+          ],
+          [
+            "明",
+            {
+              "vi": "sáng; rõ",
+              "en": "bright; clear"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

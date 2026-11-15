@@ -1,0 +1,320 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-honorific-basic",
+  "title": {
+    "vi": "Kính ngữ cơ bản (3): nhờ vả lịch sự — 〜ていただけませんか, お〜ください",
+    "en": "Basic honorifics (3): polite requests — 〜ていただけませんか, お〜ください"
+  },
+  "goalTags": [
+    "jlpt",
+    "work",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ていただけませんか",
+      "meaning": {
+        "vi": "Xin vui lòng ~ giúp được không",
+        "en": "Could you please ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể て + いただけませんか. Nhờ vả rất lịch sự (dạng phủ định + nghi vấn của いただく). Lịch sự hơn 〜てくださいませんか và 〜てもらえませんか. Dùng với khách, cấp trên.",
+        "en": "Usage: verb て-form + いただけませんか. A very polite request (the negative question of いただく). More polite than 〜てくださいませんか and 〜てもらえませんか. Used with customers and superiors."
+      },
+      "examples": [
+        {
+          "ja": "すみません、もう一度言っていただけませんか。",
+          "reading": "すみません、もういちどいっていただけませんか。",
+          "translation": {
+            "vi": "Xin lỗi, anh/chị vui lòng nói lại một lần nữa được không ạ?",
+            "en": "Excuse me, could you please say that once more?"
+          }
+        },
+        {
+          "ja": "この書類を見ていただけませんか。",
+          "reading": "このしょるいをみていただけませんか。",
+          "translation": {
+            "vi": "Xin ngài vui lòng xem giúp tài liệu này được không ạ?",
+            "en": "Could you please look over this document?"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-075"
+    },
+    {
+      "japanese": "お〜ください／ご〜ください",
+      "meaning": {
+        "vi": "Xin mời ~ (kính ngữ)",
+        "en": "Please ~ (honorific request)"
+      },
+      "explanation": {
+        "vi": "Cách chia: お + động từ gốc ます + ください (お座りください); ご + danh từ gốc Hán + ください (ご確認ください). Là lời mời/yêu cầu lịch sự, trang trọng hơn 〜てください, hay xuất hiện trong thông báo, biển hiệu.",
+        "en": "Conjugation: お + verb ます-stem + ください (お座りください); ご + Sino-Japanese noun + ください (ご確認ください). A polite invitation or request, more formal than 〜てください, common in announcements and signs."
+      },
+      "examples": [
+        {
+          "ja": "こちらにお座りください。",
+          "reading": "こちらにおすわりください。",
+          "translation": {
+            "vi": "Xin mời ngồi ở đây ạ.",
+            "en": "Please take a seat here."
+          }
+        },
+        {
+          "ja": "詳しくは、ご確認ください。",
+          "reading": "くわしくは、ごかくにんください。",
+          "translation": {
+            "vi": "Để biết chi tiết, xin vui lòng xác nhận.",
+            "en": "For details, please check."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-076"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ていただけませんか",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nすみません、もう一度言って（　）。",
+        "en": "Choose the correct option for the blank:\nすみません、もう一度言って（　）。"
+      },
+      "payload": {
+        "choices": [
+          "いただけないか",
+          "いただきませんです",
+          "いただきましたか",
+          "いただけませんか"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhờ rất lịch sự: 「〜ていただけませんか」.",
+        "en": "Correct! A very polite request: 「〜ていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhờ rất lịch sự: 「〜ていただけませんか」.",
+        "en": "Not quite. A very polite request: 「〜ていただけませんか」."
+      }
+    },
+    {
+      "item": "〜ていただけませんか",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの書類を見て___ませんか。",
+        "en": "Choose the correct option for the blank:\nこの書類を見て___ませんか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いただけ"
+        ],
+        "hint": "いただけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dạng khả năng của 「いただく」: 「いただけませんか」.",
+        "en": "Correct! The potential form of 「いただく」: 「いただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dạng khả năng của 「いただく」: 「いただけませんか」.",
+        "en": "Not quite. The potential form of 「いただく」: 「いただけませんか」."
+      }
+    },
+    {
+      "item": "〜ていただけませんか",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Bạn nhờ thầy giáo (người trên) một cách lịch sự nhất. Chọn đáp án đúng:\n先生に作文を直して（　）。",
+        "en": "You are asking your teacher (a superior) as politely as possible. Choose the best option:\n先生に作文を直して（　）。"
+      },
+      "payload": {
+        "choices": [
+          "くれませんか",
+          "もらえませんか",
+          "いただけませんか",
+          "ほしいんですが"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhờ người trên một cách lịch sự nhất: 「〜ていただけませんか」.",
+        "en": "Correct! Asking a superior in the most polite way: 「〜ていただけませんか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhờ người trên một cách lịch sự nhất: 「〜ていただけませんか」.",
+        "en": "Not quite. Asking a superior in the most polite way: 「〜ていただけませんか」."
+      }
+    },
+    {
+      "item": "〜ていただけませんか",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "恐れ入りますが、お名前を書いてもいただけませんか。",
+          "恐れ入りますが、お名前を書いていただけませんか。",
+          "恐れ入りますが、お名前を書いていただけませんでか。",
+          "恐れ入りますが、お名前を書いておいただけませんか。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng là 「〜ていただけませんか」, không chèn 「も」, 「お」 hay thêm 「で」.",
+        "en": "Correct! The correct pattern is 「〜ていただけませんか」, without inserting 「も」 or 「お」 or adding 「で」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng là 「〜ていただけませんか」, không chèn 「も」, 「お」 hay thêm 「で」.",
+        "en": "Not quite. The correct pattern is 「〜ていただけませんか」, without inserting 「も」 or 「お」 or adding 「で」."
+      }
+    },
+    {
+      "item": "お〜ください／ご〜ください",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこちらに（　）ください。",
+        "en": "Choose the correct option for the blank:\nこちらに（　）ください。"
+      },
+      "payload": {
+        "choices": [
+          "お座り",
+          "座り",
+          "ご座り",
+          "お座る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ thuần Nhật dùng 「お + gốc ます + ください」: 「お座りください」.",
+        "en": "Correct! A native Japanese verb takes 「お + ます-stem + ください」: 「お座りください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ thuần Nhật dùng 「お + gốc ます + ください」: 「お座りください」.",
+        "en": "Not quite. A native Japanese verb takes 「お + ます-stem + ください」: 「お座りください」."
+      }
+    },
+    {
+      "item": "お〜ください／ご〜ください",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n詳しくは、___確認ください。",
+        "en": "Choose the correct option for the blank:\n詳しくは、___確認ください。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ご"
+        ],
+        "hint": "ご"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ gốc Hán 「確認」 dùng 「ご」: 「ご確認ください」.",
+        "en": "Correct! The Sino-Japanese word 「確認」 takes 「ご」: 「ご確認ください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ gốc Hán 「確認」 dùng 「ご」: 「ご確認ください」.",
+        "en": "Not quite. The Sino-Japanese word 「確認」 takes 「ご」: 「ご確認ください」."
+      }
+    },
+    {
+      "item": "お〜ください／ご〜ください",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Biển thông báo lịch sự: \"Xin vui lòng sử dụng cái này\". Chọn đáp án đúng:\nこちらを（　）ください。",
+        "en": "A polite notice: \"Please use this.\" Choose the correct option:\nこちらを（　）ください。"
+      },
+      "payload": {
+        "choices": [
+          "お利用",
+          "利用",
+          "ご利用に",
+          "ご利用"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利用」 là từ gốc Hán nên dùng 「ご」: 「ご利用ください」.",
+        "en": "Correct! 「利用」 is Sino-Japanese so it takes 「ご」: 「ご利用ください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「利用」 là từ gốc Hán nên dùng 「ご」: 「ご利用ください」.",
+        "en": "Not quite. 「利用」 is Sino-Japanese so it takes 「ご」: 「ご利用ください」."
+      }
+    },
+    {
+      "item": "お〜ください／ご〜ください",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "こちらにお座りしてください。",
+          "こちらにご座りください。",
+          "こちらにお座りください。",
+          "こちらにお座りをください。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「お + gốc ます + ください」: 「お座りください」; 「ご」 chỉ đi với từ gốc Hán.",
+        "en": "Correct! 「お + ます-stem + ください」: 「お座りください」; 「ご」 only goes with Sino-Japanese words."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「お + gốc ます + ください」: 「お座りください」; 「ご」 chỉ đi với từ gốc Hán.",
+        "en": "Not quite. 「お + ます-stem + ください」: 「お座りください」; 「ご」 only goes with Sino-Japanese words."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ていただけませんか",
+            {
+              "vi": "Xin vui lòng ~ giúp được không",
+              "en": "Could you please ~"
+            }
+          ],
+          [
+            "お〜ください／ご〜ください",
+            {
+              "vi": "Xin mời ~ (kính ngữ)",
+              "en": "Please ~ (honorific request)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

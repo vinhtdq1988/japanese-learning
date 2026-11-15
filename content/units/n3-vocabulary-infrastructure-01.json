@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-infrastructure",
+  "title": {
+    "vi": "Giao thông đường bộ",
+    "en": "Road traffic"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1750,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "交通",
+      "reading": "こうつう",
+      "meaning": {
+        "vi": "Giao thông",
+        "en": "Traffic; transportation"
+      },
+      "examples": [
+        {
+          "ja": "この町は、交通がとても便利です。",
+          "reading": "このまちは、こうつうがとてもべんりです。",
+          "translation": {
+            "vi": "Thị trấn này giao thông rất thuận tiện.",
+            "en": "This town has very convenient transportation."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "渋滞",
+      "reading": "じゅうたい",
+      "meaning": {
+        "vi": "Tắc đường",
+        "en": "Traffic jam"
+      },
+      "examples": [
+        {
+          "ja": "連休には、高速道路が渋滞します。",
+          "reading": "れんきゅうには、こうそくどうろがじゅうたいします。",
+          "translation": {
+            "vi": "Vào kỳ nghỉ dài, đường cao tốc bị tắc.",
+            "en": "On long holidays the expressway gets jammed."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "混雑",
+      "reading": "こんざつ",
+      "meaning": {
+        "vi": "Đông đúc; chen chúc",
+        "en": "Congestion; crowding"
+      },
+      "examples": [
+        {
+          "ja": "朝のラッシュは、駅がとても混雑します。",
+          "reading": "あさのラッシュは、えきがとてもこんざつします。",
+          "translation": {
+            "vi": "Giờ cao điểm buổi sáng, nhà ga rất đông đúc.",
+            "en": "During the morning rush the station is very crowded."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "混む",
+      "reading": "こむ",
+      "meaning": {
+        "vi": "Đông; chật",
+        "en": "To be crowded"
+      },
+      "examples": [
+        {
+          "ja": "夏休みは、どこへ行っても混むでしょう。",
+          "reading": "なつやすみは、どこへいってもこむでしょう。",
+          "translation": {
+            "vi": "Kỳ nghỉ hè thì đi đâu cũng đông.",
+            "en": "In summer vacation, anywhere you go will be crowded."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "車線",
+      "reading": "しゃせん",
+      "meaning": {
+        "vi": "Làn xe",
+        "en": "Lane (of a road)"
+      },
+      "examples": [
+        {
+          "ja": "この道は、片側二車線です。",
+          "reading": "このみちは、かたがわにしゃせんです。",
+          "translation": {
+            "vi": "Con đường này mỗi bên có hai làn xe.",
+            "en": "This road has two lanes on each side."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "高速道路",
+      "reading": "こうそくどうろ",
+      "meaning": {
+        "vi": "Đường cao tốc",
+        "en": "Expressway"
+      },
+      "examples": [
+        {
+          "ja": "高速道路を使うと、早く着きます。",
+          "reading": "こうそくどうろをつかうと、はやくつきます。",
+          "translation": {
+            "vi": "Đi đường cao tốc thì đến nhanh hơn.",
+            "en": "If you use the expressway, you arrive faster."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国道",
+      "reading": "こくどう",
+      "meaning": {
+        "vi": "Quốc lộ",
+        "en": "National route"
+      },
+      "examples": [
+        {
+          "ja": "この国道は、いつも車が多いです。",
+          "reading": "このこくどうは、いつもくるまがおおいです。",
+          "translation": {
+            "vi": "Quốc lộ này lúc nào cũng nhiều xe.",
+            "en": "This national route always has a lot of cars."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "通行",
+      "reading": "つうこう",
+      "meaning": {
+        "vi": "Qua lại; lưu thông",
+        "en": "Passage; traffic"
+      },
+      "examples": [
+        {
+          "ja": "この道は、車の通行が禁止されています。",
+          "reading": "このみちは、くるまのつうこうがきんしされています。",
+          "translation": {
+            "vi": "Con đường này cấm xe cộ qua lại.",
+            "en": "Vehicle traffic is prohibited on this road."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "通行止め",
+      "reading": "つうこうどめ",
+      "meaning": {
+        "vi": "Cấm đường; đường bị chặn",
+        "en": "Road closed"
+      },
+      "examples": [
+        {
+          "ja": "工事のため、この先は通行止めです。",
+          "reading": "こうじのため、このさきはつうこうどめです。",
+          "translation": {
+            "vi": "Vì thi công nên phía trước bị cấm đường.",
+            "en": "The road ahead is closed for construction."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "横断",
+      "reading": "おうだん",
+      "meaning": {
+        "vi": "Băng qua",
+        "en": "Crossing"
+      },
+      "examples": [
+        {
+          "ja": "道を横断するときは、車に気をつけてください。",
+          "reading": "みちをおうだんするときは、くるまにきをつけてください。",
+          "translation": {
+            "vi": "Khi băng qua đường hãy chú ý xe.",
+            "en": "Watch out for cars when you cross the road."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "横断歩道",
+      "reading": "おうだんほどう",
+      "meaning": {
+        "vi": "Vạch qua đường",
+        "en": "Pedestrian crossing"
+      },
+      "examples": [
+        {
+          "ja": "横断歩道では、車が止まってくれました。",
+          "reading": "おうだんほどうでは、くるまがとまってくれました。",
+          "translation": {
+            "vi": "Ở vạch qua đường, xe đã dừng lại cho tôi.",
+            "en": "Cars stopped for me at the crosswalk."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歩行者",
+      "reading": "ほこうしゃ",
+      "meaning": {
+        "vi": "Người đi bộ",
+        "en": "Pedestrian"
+      },
+      "examples": [
+        {
+          "ja": "歩行者は、右側を歩いてください。",
+          "reading": "ほこうしゃは、みぎがわをあるいてください。",
+          "translation": {
+            "vi": "Người đi bộ hãy đi bên phải.",
+            "en": "Pedestrians, please walk on the right."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "交通",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町は、（　）がとても便利です。 — Nghĩa của câu: “Thị trấn này giao thông rất thuận tiện.”",
+        "en": "Choose the word that fits the blank: この町は、（　）がとても便利です。 — Meaning of the sentence: “This town has very convenient transportation.”"
+      },
+      "payload": {
+        "choices": [
+          "通行止め",
+          "交通",
+          "歩行者",
+          "渋滞"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交通」(Giao thông) hợp nghĩa câu này: “Thị trấn này giao thông rất thuận tiện.”",
+        "en": "Correct! 「交通」(Traffic; transportation) fits this sentence: “This town has very convenient transportation.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn này giao thông rất thuận tiện.”, nên cần 「交通」(Giao thông); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This town has very convenient transportation.”, so it needs 「交通」(Traffic; transportation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "渋滞",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 連休には、高速道路が（　）します。 — Nghĩa của câu: “Vào kỳ nghỉ dài, đường cao tốc bị tắc.”",
+        "en": "Choose the word that fits the blank: 連休には、高速道路が（　）します。 — Meaning of the sentence: “On long holidays the expressway gets jammed.”"
+      },
+      "payload": {
+        "choices": [
+          "交通",
+          "混雑",
+          "渋滞",
+          "通行止め"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「渋滞」(Tắc đường) hợp nghĩa câu này: “Vào kỳ nghỉ dài, đường cao tốc bị tắc.”",
+        "en": "Correct! 「渋滞」(Traffic jam) fits this sentence: “On long holidays the expressway gets jammed.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào kỳ nghỉ dài, đường cao tốc bị tắc.”, nên cần 「渋滞」(Tắc đường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On long holidays the expressway gets jammed.”, so it needs 「渋滞」(Traffic jam); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "混雑",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 朝のラッシュは、駅がとても（　）します。 — Nghĩa của câu: “Giờ cao điểm buổi sáng, nhà ga rất đông đúc.”",
+        "en": "Choose the word that fits the blank: 朝のラッシュは、駅がとても（　）します。 — Meaning of the sentence: “During the morning rush the station is very crowded.”"
+      },
+      "payload": {
+        "choices": [
+          "車線",
+          "通行",
+          "交通",
+          "混雑"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「混雑」(Đông đúc; chen chúc) hợp nghĩa câu này: “Giờ cao điểm buổi sáng, nhà ga rất đông đúc.”",
+        "en": "Correct! 「混雑」(Congestion; crowding) fits this sentence: “During the morning rush the station is very crowded.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giờ cao điểm buổi sáng, nhà ga rất đông đúc.”, nên cần 「混雑」(Đông đúc; chen chúc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “During the morning rush the station is very crowded.”, so it needs 「混雑」(Congestion; crowding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "混む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夏休みは、どこへ行っても（　）でしょう。 — Nghĩa của câu: “Kỳ nghỉ hè thì đi đâu cũng đông.”",
+        "en": "Choose the word that fits the blank: 夏休みは、どこへ行っても（　）でしょう。 — Meaning of the sentence: “In summer vacation, anywhere you go will be crowded.”"
+      },
+      "payload": {
+        "choices": [
+          "混む",
+          "横断歩道",
+          "通行",
+          "歩行者"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「混む」(Đông; chật) hợp nghĩa câu này: “Kỳ nghỉ hè thì đi đâu cũng đông.”",
+        "en": "Correct! 「混む」(To be crowded) fits this sentence: “In summer vacation, anywhere you go will be crowded.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kỳ nghỉ hè thì đi đâu cũng đông.”, nên cần 「混む」(Đông; chật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In summer vacation, anywhere you go will be crowded.”, so it needs 「混む」(To be crowded); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "車線",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この道は、片側二（　）です。 — Nghĩa của câu: “Con đường này mỗi bên có hai làn xe.”",
+        "en": "Choose the word that fits the blank: この道は、片側二（　）です。 — Meaning of the sentence: “This road has two lanes on each side.”"
+      },
+      "payload": {
+        "choices": [
+          "横断歩道",
+          "車線",
+          "渋滞",
+          "交通"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「車線」(Làn xe) hợp nghĩa câu này: “Con đường này mỗi bên có hai làn xe.”",
+        "en": "Correct! 「車線」(Lane (of a road)) fits this sentence: “This road has two lanes on each side.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con đường này mỗi bên có hai làn xe.”, nên cần 「車線」(Làn xe); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This road has two lanes on each side.”, so it needs 「車線」(Lane (of a road)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "高速道路",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を使うと、早く着きます。 — Nghĩa của câu: “Đi đường cao tốc thì đến nhanh hơn.”",
+        "en": "Choose the word that fits the blank: （　）を使うと、早く着きます。 — Meaning of the sentence: “If you use the expressway, you arrive faster.”"
+      },
+      "payload": {
+        "choices": [
+          "通行止め",
+          "歩行者",
+          "高速道路",
+          "交通"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「高速道路」(Đường cao tốc) hợp nghĩa câu này: “Đi đường cao tốc thì đến nhanh hơn.”",
+        "en": "Correct! 「高速道路」(Expressway) fits this sentence: “If you use the expressway, you arrive faster.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đi đường cao tốc thì đến nhanh hơn.”, nên cần 「高速道路」(Đường cao tốc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you use the expressway, you arrive faster.”, so it needs 「高速道路」(Expressway); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）は、いつも車が多いです。 — Nghĩa của câu: “Quốc lộ này lúc nào cũng nhiều xe.”",
+        "en": "Choose the word that fits the blank: この（　）は、いつも車が多いです。 — Meaning of the sentence: “This national route always has a lot of cars.”"
+      },
+      "payload": {
+        "choices": [
+          "交通",
+          "通行止め",
+          "渋滞",
+          "国道"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国道」(Quốc lộ) hợp nghĩa câu này: “Quốc lộ này lúc nào cũng nhiều xe.”",
+        "en": "Correct! 「国道」(National route) fits this sentence: “This national route always has a lot of cars.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quốc lộ này lúc nào cũng nhiều xe.”, nên cần 「国道」(Quốc lộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This national route always has a lot of cars.”, so it needs 「国道」(National route); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "通行",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この道は、車の（　）が禁止されています。 — Nghĩa của câu: “Con đường này cấm xe cộ qua lại.”",
+        "en": "Choose the word that fits the blank: この道は、車の（　）が禁止されています。 — Meaning of the sentence: “Vehicle traffic is prohibited on this road.”"
+      },
+      "payload": {
+        "choices": [
+          "通行",
+          "混雑",
+          "国道",
+          "交通"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通行」(Qua lại; lưu thông) hợp nghĩa câu này: “Con đường này cấm xe cộ qua lại.”",
+        "en": "Correct! 「通行」(Passage; traffic) fits this sentence: “Vehicle traffic is prohibited on this road.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con đường này cấm xe cộ qua lại.”, nên cần 「通行」(Qua lại; lưu thông); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Vehicle traffic is prohibited on this road.”, so it needs 「通行」(Passage; traffic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "通行止め",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工事のため、この先は（　）です。 — Nghĩa của câu: “Vì thi công nên phía trước bị cấm đường.”",
+        "en": "Choose the word that fits the blank: 工事のため、この先は（　）です。 — Meaning of the sentence: “The road ahead is closed for construction.”"
+      },
+      "payload": {
+        "choices": [
+          "国道",
+          "通行止め",
+          "交通",
+          "高速道路"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通行止め」(Cấm đường; đường bị chặn) hợp nghĩa câu này: “Vì thi công nên phía trước bị cấm đường.”",
+        "en": "Correct! 「通行止め」(Road closed) fits this sentence: “The road ahead is closed for construction.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì thi công nên phía trước bị cấm đường.”, nên cần 「通行止め」(Cấm đường; đường bị chặn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The road ahead is closed for construction.”, so it needs 「通行止め」(Road closed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "横断",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 道を（　）するときは、車に気をつけてください。 — Nghĩa của câu: “Khi băng qua đường hãy chú ý xe.”",
+        "en": "Choose the word that fits the blank: 道を（　）するときは、車に気をつけてください。 — Meaning of the sentence: “Watch out for cars when you cross the road.”"
+      },
+      "payload": {
+        "choices": [
+          "横断歩道",
+          "渋滞",
+          "横断",
+          "交通"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「横断」(Băng qua) hợp nghĩa câu này: “Khi băng qua đường hãy chú ý xe.”",
+        "en": "Correct! 「横断」(Crossing) fits this sentence: “Watch out for cars when you cross the road.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi băng qua đường hãy chú ý xe.”, nên cần 「横断」(Băng qua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Watch out for cars when you cross the road.”, so it needs 「横断」(Crossing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "横断歩道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）では、車が止まってくれました。 — Nghĩa của câu: “Ở vạch qua đường, xe đã dừng lại cho tôi.”",
+        "en": "Choose the word that fits the blank: （　）では、車が止まってくれました。 — Meaning of the sentence: “Cars stopped for me at the crosswalk.”"
+      },
+      "payload": {
+        "choices": [
+          "車線",
+          "交通",
+          "通行止め",
+          "横断歩道"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「横断歩道」(Vạch qua đường) hợp nghĩa câu này: “Ở vạch qua đường, xe đã dừng lại cho tôi.”",
+        "en": "Correct! 「横断歩道」(Pedestrian crossing) fits this sentence: “Cars stopped for me at the crosswalk.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở vạch qua đường, xe đã dừng lại cho tôi.”, nên cần 「横断歩道」(Vạch qua đường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Cars stopped for me at the crosswalk.”, so it needs 「横断歩道」(Pedestrian crossing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "歩行者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、右側を歩いてください。 — Nghĩa của câu: “Người đi bộ hãy đi bên phải.”",
+        "en": "Choose the word that fits the blank: （　）は、右側を歩いてください。 — Meaning of the sentence: “Pedestrians, please walk on the right.”"
+      },
+      "payload": {
+        "choices": [
+          "歩行者",
+          "交通",
+          "混雑",
+          "渋滞"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歩行者」(Người đi bộ) hợp nghĩa câu này: “Người đi bộ hãy đi bên phải.”",
+        "en": "Correct! 「歩行者」(Pedestrian) fits this sentence: “Pedestrians, please walk on the right.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người đi bộ hãy đi bên phải.”, nên cần 「歩行者」(Người đi bộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Pedestrians, please walk on the right.”, so it needs 「歩行者」(Pedestrian); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "交通",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この町は、「交通」がとても便利です。",
+        "en": "Choose the correct reading of the word in 「」: この町は、「交通」がとても便利です。"
+      },
+      "payload": {
+        "choices": [
+          "こんざつ",
+          "つうこうどめ",
+          "こうつう",
+          "じゅうたい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交通」 đọc là 「こうつう」, nghĩa là Giao thông.",
+        "en": "Correct! 「交通」 is read 「こうつう」 and means Traffic; transportation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「交通」 đọc là 「こうつう」 (Giao thông); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「交通」 is read 「こうつう」 (Traffic; transportation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "混む",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 夏休みは、どこへ行っても「混む」でしょう。",
+        "en": "Choose the correct reading of the word in 「」: 夏休みは、どこへ行っても「混む」でしょう。"
+      },
+      "payload": {
+        "choices": [
+          "おうだんほどう",
+          "こうつう",
+          "じゅうたい",
+          "こむ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「混む」 đọc là 「こむ」, nghĩa là Đông; chật.",
+        "en": "Correct! 「混む」 is read 「こむ」 and means To be crowded."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「混む」 đọc là 「こむ」 (Đông; chật); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「混む」 is read 「こむ」 (To be crowded); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "国道",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この「国道」は、いつも車が多いです。",
+        "en": "Choose the correct reading of the word in 「」: この「国道」は、いつも車が多いです。"
+      },
+      "payload": {
+        "choices": [
+          "こくどう",
+          "じゅうたい",
+          "こうそくどうろ",
+          "こんざつ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国道」 đọc là 「こくどう」, nghĩa là Quốc lộ.",
+        "en": "Correct! 「国道」 is read 「こくどう」 and means National route."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「国道」 đọc là 「こくどう」 (Quốc lộ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「国道」 is read 「こくどう」 (National route); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "横断",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 道を「横断」するときは、車に気をつけてください。",
+        "en": "Choose the correct reading of the word in 「」: 道を「横断」するときは、車に気をつけてください。"
+      },
+      "payload": {
+        "choices": [
+          "おうだんほどう",
+          "おうだん",
+          "しゃせん",
+          "つうこうどめ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「横断」 đọc là 「おうだん」, nghĩa là Băng qua.",
+        "en": "Correct! 「横断」 is read 「おうだん」 and means Crossing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「横断」 đọc là 「おうだん」 (Băng qua); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「横断」 is read 「おうだん」 (Crossing); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "混雑",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 朝のラッシュは、駅がとても「こんざつ」します。",
+        "en": "Choose the correct way to write the word in 「」: 朝のラッシュは、駅がとても「こんざつ」します。"
+      },
+      "payload": {
+        "choices": [
+          "車線",
+          "横断歩道",
+          "高速道路",
+          "混雑"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こんざつ」 viết là 「混雑」, nghĩa là Đông đúc; chen chúc.",
+        "en": "Correct! 「こんざつ」 is written 「混雑」 and means Congestion; crowding."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こんざつ」 viết là 「混雑」 (Đông đúc; chen chúc); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こんざつ」 is written 「混雑」 (Congestion; crowding); the other words are read differently."
+      }
+    },
+    {
+      "item": "通行止め",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 工事のため、この先は「つうこうどめ」です。",
+        "en": "Choose the correct way to write the word in 「」: 工事のため、この先は「つうこうどめ」です。"
+      },
+      "payload": {
+        "choices": [
+          "通行止め",
+          "歩行者",
+          "交通",
+          "高速道路"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「つうこうどめ」 viết là 「通行止め」, nghĩa là Cấm đường; đường bị chặn.",
+        "en": "Correct! 「つうこうどめ」 is written 「通行止め」 and means Road closed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「つうこうどめ」 viết là 「通行止め」 (Cấm đường; đường bị chặn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「つうこうどめ」 is written 「通行止め」 (Road closed); the other words are read differently."
+      }
+    }
+  ]
+}

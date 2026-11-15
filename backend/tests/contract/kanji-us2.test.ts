@@ -56,12 +56,13 @@ describe('PATCH /me – skills (ProfileUpdate)', () => {
     expect(res.body.fields.skills).toBeTruthy();
   });
 
-  it('422 với listening/reading (chưa có trong phiên bản này)', async () => {
+  // Luyện đọc/viết (reading/writing) hợp lệ từ spec 007; kỹ năng khác (nghe, nói…) vẫn bị từ chối.
+  it('422 với listening/speaking (chưa có trong phiên bản này)', async () => {
     const learner = await onboardedLearner(api, ctx);
-    for (const skill of ['listening', 'reading']) {
+    for (const skill of ['listening', 'speaking']) {
       const res = await patchMe(learner, { skills: ['vocabulary', skill] }, false);
       expect(res.status, skill).toBe(422);
-      expect(res.body.fields.skills, skill).toContain('chưa có trong phiên bản');
+      expect(res.body.fields.skills, skill).toContain('không hợp lệ');
     }
   });
 

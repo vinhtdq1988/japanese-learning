@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-community-housing",
+  "title": {
+    "vi": "Cộng đồng cư dân",
+    "en": "The resident community"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1730,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "歩行",
+      "reading": "ほこう",
+      "meaning": {
+        "vi": "Đi bộ",
+        "en": "Walking; pedestrian"
+      },
+      "examples": [
+        {
+          "ja": "歩行者が多いので、車は注意して運転してください。",
+          "reading": "ほこうしゃがおおいので、くるまはちゅういしてうんてんしてください。",
+          "translation": {
+            "vi": "Vì có nhiều người đi bộ nên xe hãy lái cẩn thận.",
+            "en": "There are many pedestrians, so please drive carefully."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "公民館",
+      "reading": "こうみんかん",
+      "meaning": {
+        "vi": "Nhà văn hóa cộng đồng",
+        "en": "Community center"
+      },
+      "examples": [
+        {
+          "ja": "公民館で、日本語教室が開かれています。",
+          "reading": "こうみんかんで、にほんごきょうしつがひらかれています。",
+          "translation": {
+            "vi": "Lớp tiếng Nhật được tổ chức tại nhà văn hóa cộng đồng.",
+            "en": "A Japanese class is held at the community center."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地区",
+      "reading": "ちく",
+      "meaning": {
+        "vi": "Khu vực; quận",
+        "en": "District"
+      },
+      "examples": [
+        {
+          "ja": "私の住んでいる地区には、大きな公園があります。",
+          "reading": "わたしのすんでいるちくには、おおきなこうえんがあります。",
+          "translation": {
+            "vi": "Khu vực tôi sống có một công viên lớn.",
+            "en": "The district where I live has a large park."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "隣人",
+      "reading": "りんじん",
+      "meaning": {
+        "vi": "Hàng xóm",
+        "en": "Neighbor"
+      },
+      "examples": [
+        {
+          "ja": "隣人とは、とても仲良くしています。",
+          "reading": "りんじんとは、とてもなかよくしています。",
+          "translation": {
+            "vi": "Tôi rất thân thiết với hàng xóm.",
+            "en": "I get along very well with my neighbors."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "住人",
+      "reading": "じゅうにん",
+      "meaning": {
+        "vi": "Người sống (trong nhà)",
+        "en": "Occupant; inhabitant"
+      },
+      "examples": [
+        {
+          "ja": "このマンションの住人は、みんな親切です。",
+          "reading": "このマンションのじゅうにんは、みんなしんせつです。",
+          "translation": {
+            "vi": "Mọi người sống trong chung cư này đều tử tế.",
+            "en": "The people living in this apartment building are all kind."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "入居者",
+      "reading": "にゅうきょしゃ",
+      "meaning": {
+        "vi": "Người dọn vào ở",
+        "en": "Tenant; new resident"
+      },
+      "examples": [
+        {
+          "ja": "新しい入居者のために、部屋を掃除しました。",
+          "reading": "あたらしいにゅうきょしゃのために、へやをそうじしました。",
+          "translation": {
+            "vi": "Tôi đã dọn phòng cho người thuê mới.",
+            "en": "I cleaned the room for the new tenant."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "歩行",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）者が多いので、車は注意して運転してください。 — Nghĩa của câu: “Vì có nhiều người đi bộ nên xe hãy lái cẩn thận.”",
+        "en": "Choose the word that fits the blank: （　）者が多いので、車は注意して運転してください。 — Meaning of the sentence: “There are many pedestrians, so please drive carefully.”"
+      },
+      "payload": {
+        "choices": [
+          "隣人",
+          "公民館",
+          "歩行",
+          "住人"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歩行」(Đi bộ) hợp nghĩa câu này: “Vì có nhiều người đi bộ nên xe hãy lái cẩn thận.”",
+        "en": "Correct! 「歩行」(Walking; pedestrian) fits this sentence: “There are many pedestrians, so please drive carefully.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì có nhiều người đi bộ nên xe hãy lái cẩn thận.”, nên cần 「歩行」(Đi bộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There are many pedestrians, so please drive carefully.”, so it needs 「歩行」(Walking; pedestrian); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "公民館",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）で、日本語教室が開かれています。 — Nghĩa của câu: “Lớp tiếng Nhật được tổ chức tại nhà văn hóa cộng đồng.”",
+        "en": "Choose the word that fits the blank: （　）で、日本語教室が開かれています。 — Meaning of the sentence: “A Japanese class is held at the community center.”"
+      },
+      "payload": {
+        "choices": [
+          "地区",
+          "歩行",
+          "住人",
+          "公民館"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「公民館」(Nhà văn hóa cộng đồng) hợp nghĩa câu này: “Lớp tiếng Nhật được tổ chức tại nhà văn hóa cộng đồng.”",
+        "en": "Correct! 「公民館」(Community center) fits this sentence: “A Japanese class is held at the community center.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lớp tiếng Nhật được tổ chức tại nhà văn hóa cộng đồng.”, nên cần 「公民館」(Nhà văn hóa cộng đồng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A Japanese class is held at the community center.”, so it needs 「公民館」(Community center); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "地区",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の住んでいる（　）には、大きな公園があります。 — Nghĩa của câu: “Khu vực tôi sống có một công viên lớn.”",
+        "en": "Choose the word that fits the blank: 私の住んでいる（　）には、大きな公園があります。 — Meaning of the sentence: “The district where I live has a large park.”"
+      },
+      "payload": {
+        "choices": [
+          "地区",
+          "住人",
+          "歩行",
+          "公民館"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地区」(Khu vực; quận) hợp nghĩa câu này: “Khu vực tôi sống có một công viên lớn.”",
+        "en": "Correct! 「地区」(District) fits this sentence: “The district where I live has a large park.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu vực tôi sống có một công viên lớn.”, nên cần 「地区」(Khu vực; quận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The district where I live has a large park.”, so it needs 「地区」(District); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "隣人",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）とは、とても仲良くしています。 — Nghĩa của câu: “Tôi rất thân thiết với hàng xóm.”",
+        "en": "Choose the word that fits the blank: （　）とは、とても仲良くしています。 — Meaning of the sentence: “I get along very well with my neighbors.”"
+      },
+      "payload": {
+        "choices": [
+          "住人",
+          "隣人",
+          "歩行",
+          "地区"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「隣人」(Hàng xóm) hợp nghĩa câu này: “Tôi rất thân thiết với hàng xóm.”",
+        "en": "Correct! 「隣人」(Neighbor) fits this sentence: “I get along very well with my neighbors.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi rất thân thiết với hàng xóm.”, nên cần 「隣人」(Hàng xóm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I get along very well with my neighbors.”, so it needs 「隣人」(Neighbor); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "住人",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このマンションの（　）は、みんな親切です。 — Nghĩa của câu: “Mọi người sống trong chung cư này đều tử tế.”",
+        "en": "Choose the word that fits the blank: このマンションの（　）は、みんな親切です。 — Meaning of the sentence: “The people living in this apartment building are all kind.”"
+      },
+      "payload": {
+        "choices": [
+          "歩行",
+          "公民館",
+          "住人",
+          "地区"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「住人」(Người sống (trong nhà)) hợp nghĩa câu này: “Mọi người sống trong chung cư này đều tử tế.”",
+        "en": "Correct! 「住人」(Occupant; inhabitant) fits this sentence: “The people living in this apartment building are all kind.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mọi người sống trong chung cư này đều tử tế.”, nên cần 「住人」(Người sống (trong nhà)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The people living in this apartment building are all kind.”, so it needs 「住人」(Occupant; inhabitant); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "入居者",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）のために、部屋を掃除しました。 — Nghĩa của câu: “Tôi đã dọn phòng cho người thuê mới.”",
+        "en": "Choose the word that fits the blank: 新しい（　）のために、部屋を掃除しました。 — Meaning of the sentence: “I cleaned the room for the new tenant.”"
+      },
+      "payload": {
+        "choices": [
+          "住人",
+          "歩行",
+          "公民館",
+          "入居者"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「入居者」(Người dọn vào ở) hợp nghĩa câu này: “Tôi đã dọn phòng cho người thuê mới.”",
+        "en": "Correct! 「入居者」(Tenant; new resident) fits this sentence: “I cleaned the room for the new tenant.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã dọn phòng cho người thuê mới.”, nên cần 「入居者」(Người dọn vào ở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cleaned the room for the new tenant.”, so it needs 「入居者」(Tenant; new resident); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "歩行",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「歩行」者が多いので、車は注意して運転してください。",
+        "en": "Choose the correct reading of the word in 「」: 「歩行」者が多いので、車は注意して運転してください。"
+      },
+      "payload": {
+        "choices": [
+          "じゅうにん",
+          "こうみんかん",
+          "ちく",
+          "ほこう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歩行」 đọc là 「ほこう」, nghĩa là Đi bộ.",
+        "en": "Correct! 「歩行」 is read 「ほこう」 and means Walking; pedestrian."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「歩行」 đọc là 「ほこう」 (Đi bộ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「歩行」 is read 「ほこう」 (Walking; pedestrian); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "隣人",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「隣人」とは、とても仲良くしています。",
+        "en": "Choose the correct reading of the word in 「」: 「隣人」とは、とても仲良くしています。"
+      },
+      "payload": {
+        "choices": [
+          "りんじん",
+          "ほこう",
+          "こうみんかん",
+          "にゅうきょしゃ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「隣人」 đọc là 「りんじん」, nghĩa là Hàng xóm.",
+        "en": "Correct! 「隣人」 is read 「りんじん」 and means Neighbor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「隣人」 đọc là 「りんじん」 (Hàng xóm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「隣人」 is read 「りんじん」 (Neighbor); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "地区",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 私の住んでいる「ちく」には、大きな公園があります。",
+        "en": "Choose the correct way to write the word in 「」: 私の住んでいる「ちく」には、大きな公園があります。"
+      },
+      "payload": {
+        "choices": [
+          "地区",
+          "公民館",
+          "歩行",
+          "隣人"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ちく」 viết là 「地区」, nghĩa là Khu vực; quận.",
+        "en": "Correct! 「ちく」 is written 「地区」 and means District."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ちく」 viết là 「地区」 (Khu vực; quận); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ちく」 is written 「地区」 (District); the other words are read differently."
+      }
+    }
+  ]
+}

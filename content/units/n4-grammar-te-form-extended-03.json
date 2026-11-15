@@ -1,0 +1,520 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "te-form",
+  "title": {
+    "vi": "Thể て mở rộng (3): 〜てから, 〜てほしい, nguyên nhân với 〜て, 〜ないで",
+    "en": "Extended te-form (3): 〜てから, 〜てほしい, cause with 〜て, 〜ないで"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜てから",
+      "meaning": {
+        "vi": "Sau khi ~ (rồi mới)",
+        "en": "After ~ (and only then)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: nhấn mạnh làm xong việc A rồi mới đến việc B. Kết hợp: động từ thể て + から. Cũng dùng để nói mốc bắt đầu của trạng thái kéo dài (日本に来てから、〜). Khác 「〜たあとで」: 〜てから nhấn vào trình tự bắt buộc.",
+        "en": "Meaning: stresses that B happens only after A is done. Form: verb て-form + から. It can also mark the starting point of a continuing state (日本に来てから、〜). Compared with 「〜たあとで」, 〜てから emphasizes a required order."
+      },
+      "examples": [
+        {
+          "ja": "手を洗ってから、ごはんを食べます。",
+          "reading": "てをあらってから、ごはんをたべます。",
+          "translation": {
+            "vi": "Tôi rửa tay xong rồi mới ăn cơm.",
+            "en": "I eat after washing my hands."
+          }
+        },
+        {
+          "ja": "日本に来てから、毎日日本語を勉強しています。",
+          "reading": "にほんにきてから、まいにちにほんごをべんきょうしています。",
+          "translation": {
+            "vi": "Từ khi đến Nhật, tôi học tiếng Nhật mỗi ngày.",
+            "en": "Since coming to Japan, I have studied Japanese every day."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-015"
+    },
+    {
+      "japanese": "〜てほしい",
+      "meaning": {
+        "vi": "Muốn (ai đó) làm ~",
+        "en": "Want (someone) to do ~"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: người nói muốn người khác làm điều gì. Kết hợp: 〜に + động từ thể て + ほしい; phủ định: 〜ないでほしい. Chủ yếu dùng cho mong muốn của ngôi thứ nhất. Khác 〜たい: 〜たい là mong muốn của chính mình làm, 〜てほしい là mong người khác làm.",
+        "en": "Meaning: the speaker wants someone else to do something. Form: 〜に + verb て-form + ほしい; negative: 〜ないでほしい. Mainly used for the first person's wish. Compared with 〜たい (what I want to do myself), 〜てほしい is what I want someone else to do."
+      },
+      "examples": [
+        {
+          "ja": "母に早く元気になってほしいです。",
+          "reading": "ははにはやくげんきになってほしいです。",
+          "translation": {
+            "vi": "Tôi muốn mẹ mau khỏe lại.",
+            "en": "I want my mother to get well soon."
+          }
+        },
+        {
+          "ja": "ここでは、たばこを吸わないでほしいです。",
+          "reading": "ここでは、たばこをすわないでほしいです。",
+          "translation": {
+            "vi": "Tôi mong mọi người đừng hút thuốc ở đây.",
+            "en": "I would like people not to smoke here."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-016"
+    },
+    {
+      "japanese": "〜くて／〜で（原因・理由）",
+      "meaning": {
+        "vi": "Vì ~ nên ~ (nguyên nhân)",
+        "en": "Because of ~ (cause via the te-form)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: vế trước là nguyên nhân dẫn đến vế sau (thường là cảm xúc, trạng thái hoặc sự việc). Kết hợp: tính từ い bỏ い + くて; tính từ な/danh từ + で; động từ thể て. Vế sau không dùng ý chí, mệnh lệnh, rủ rê hay nhờ vả.",
+        "en": "Meaning: the first clause is the cause of the second (often a feeling, state or event). Form: い-adjective drop い + くて; な-adjective/noun + で; verb て-form. The second clause cannot express will, command, invitation or request."
+      },
+      "examples": [
+        {
+          "ja": "試験の結果がうれしくて、泣きました。",
+          "reading": "しけんのけっかがうれしくて、なきました。",
+          "translation": {
+            "vi": "Tôi vui vì kết quả kỳ thi nên đã khóc.",
+            "en": "I was so happy about the exam result that I cried."
+          }
+        },
+        {
+          "ja": "かぜで、会社を休みました。",
+          "reading": "かぜで、かいしゃをやすみました。",
+          "translation": {
+            "vi": "Tôi bị cảm nên đã nghỉ làm.",
+            "en": "I took a day off work because of a cold."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-017"
+    },
+    {
+      "japanese": "〜ないで（〜ずに）",
+      "meaning": {
+        "vi": "Mà không ~; đừng ~",
+        "en": "Without doing ~; (please) don't ~"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: (1) làm việc B trong tình trạng không làm A (朝ごはんを食べないで出かけた); (2) 〜ないでください (xin đừng). Kết hợp: động từ thể ない + で. Khác 〜なくて: 〜なくて chỉ nguyên nhân (会えなくて、さびしい), 〜ないで chỉ cách thức/trạng thái đi kèm.",
+        "en": "Meaning: (1) doing B while not doing A (朝ごはんを食べないで出かけた); (2) 〜ないでください (please don't). Form: verb ない-form + で. Compared with 〜なくて, which gives a cause (会えなくて、さびしい), 〜ないで gives the accompanying manner or state."
+      },
+      "examples": [
+        {
+          "ja": "傘を持たないで、出かけてしまいました。",
+          "reading": "かさをもたないで、でかけてしまいました。",
+          "translation": {
+            "vi": "Tôi đã ra ngoài mà không mang ô.",
+            "en": "I went out without taking an umbrella."
+          }
+        },
+        {
+          "ja": "かぎをかけないで寝るのは、あぶないです。",
+          "reading": "かぎをかけないでねるのは、あぶないです。",
+          "translation": {
+            "vi": "Ngủ mà không khóa cửa thì nguy hiểm.",
+            "en": "Sleeping without locking the door is dangerous."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-018"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜てから",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n宿題を（　）から、ゲームをします。",
+        "en": "Choose the correct option for the blank:\n宿題を（　）から、ゲームをします。"
+      },
+      "payload": {
+        "choices": [
+          "した",
+          "して",
+          "する",
+          "しない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てから」 luôn nối với thể て của động từ: 「宿題をしてから」.",
+        "en": "Correct! 「〜てから」 always attaches to the て-form of the verb: 「宿題をしてから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てから」 luôn nối với thể て của động từ: 「宿題をしてから」.",
+        "en": "Not quite. 「〜てから」 always attaches to the て-form of the verb: 「宿題をしてから」."
+      }
+    },
+    {
+      "item": "〜てから",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n晩ごはんを食べ___、お風呂に入ります。",
+        "en": "Choose the correct option for the blank:\n晩ごはんを食べ___、お風呂に入ります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "てから"
+        ],
+        "hint": "〜てから"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Muốn nói ăn xong rồi mới tắm thì dùng 「食べてから」.",
+        "en": "Correct! To say \"only after eating, take a bath\", use 「食べてから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Muốn nói ăn xong rồi mới tắm thì dùng 「食べてから」.",
+        "en": "Not quite. To say \"only after eating, take a bath\", use 「食べてから」."
+      }
+    },
+    {
+      "item": "〜てから",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "起きてから、顔を洗います。",
+          "起きるてから、顔を洗います。",
+          "起きたてから、顔を洗います。",
+          "起きてからを、顔を洗います。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てから」 gắn trực tiếp sau thể て, không chen thêm 「る」, 「た」 hay 「を」.",
+        "en": "Correct! 「〜てから」 attaches directly to the て-form; no 「る」, 「た」 or 「を」 is inserted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てから」 gắn trực tiếp sau thể て, không chen thêm 「る」, 「た」 hay 「を」.",
+        "en": "Not quite. 「〜てから」 attaches directly to the て-form; no 「る」, 「た」 or 「を」 is inserted."
+      }
+    },
+    {
+      "item": "〜てほしい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は、母に早く元気に（　）ほしいです。",
+        "en": "Choose the correct option for the blank:\n私は、母に早く元気に（　）ほしいです。"
+      },
+      "payload": {
+        "choices": [
+          "なる",
+          "なり",
+          "なった",
+          "なって"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜てほしい」 đi sau thể て: 「元気になってほしい」.",
+        "en": "Correct! 「〜てほしい」 follows the て-form: 「元気になってほしい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜てほしい」 đi sau thể て: 「元気になってほしい」.",
+        "en": "Not quite. 「〜てほしい」 follows the て-form: 「元気になってほしい」."
+      }
+    },
+    {
+      "item": "〜てほしい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n私は先生に、もう少しゆっくり話し（　）。",
+        "en": "Choose the pattern that best fits the context:\n私は先生に、もう少しゆっくり話し（　）。"
+      },
+      "payload": {
+        "choices": [
+          "たいです",
+          "てたいです",
+          "てほしいです",
+          "ましたいです"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mong người khác (先生) làm điều gì thì dùng 〜てほしい; 〜たい chỉ dùng cho việc chính mình muốn làm.",
+        "en": "Correct! Wanting someone else (the teacher) to do something uses 〜てほしい; 〜たい is only for what you yourself want to do."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mong người khác (先生) làm điều gì thì dùng 〜てほしい; 〜たい chỉ dùng cho việc chính mình muốn làm.",
+        "en": "Not quite. Wanting someone else (the teacher) to do something uses 〜てほしい; 〜たい is only for what you yourself want to do."
+      }
+    },
+    {
+      "item": "〜てほしい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもに、ここで遊ば___ほしいです。",
+        "en": "Choose the correct option for the blank:\n子どもに、ここで遊ば___ほしいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ないで"
+        ],
+        "hint": "〜ないで"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mong ai đó đừng làm gì thì dùng 〜ないでほしい: 「遊ばないでほしい」.",
+        "en": "Correct! Wishing someone would not do something uses 〜ないでほしい: 「遊ばないでほしい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mong ai đó đừng làm gì thì dùng 〜ないでほしい: 「遊ばないでほしい」.",
+        "en": "Not quite. Wishing someone would not do something uses 〜ないでほしい: 「遊ばないでほしい」."
+      }
+    },
+    {
+      "item": "〜くて／〜で（原因・理由）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nテストの点が悪（　）、がっかりしました。",
+        "en": "Choose the correct option for the blank:\nテストの点が悪（　）、がっかりしました。"
+      },
+      "payload": {
+        "choices": [
+          "で",
+          "くて",
+          "に",
+          "いて"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「悪い」 là tính từ い nên bỏ 「い」 thêm 「くて」 để nêu nguyên nhân: 「悪くて」.",
+        "en": "Correct! 「悪い」 is an い-adjective, so drop 「い」 and add 「くて」 to give the cause: 「悪くて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「悪い」 là tính từ い nên bỏ 「い」 thêm 「くて」 để nêu nguyên nhân: 「悪くて」.",
+        "en": "Not quite. 「悪い」 is an い-adjective, so drop 「い」 and add 「くて」 to give the cause: 「悪くて」."
+      }
+    },
+    {
+      "item": "〜くて／〜で（原因・理由）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nかぜ（　）、会社を休みました。",
+        "en": "Choose the correct option for the blank:\nかぜ（　）、会社を休みました。"
+      },
+      "payload": {
+        "choices": [
+          "で",
+          "くて",
+          "に",
+          "を"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かぜ」 là danh từ nên nguyên nhân dùng 「で」: 「かぜで」.",
+        "en": "Correct! 「かぜ」 is a noun, so the cause is marked with 「で」: 「かぜで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かぜ」 là danh từ nên nguyên nhân dùng 「で」: 「かぜで」.",
+        "en": "Not quite. 「かぜ」 is a noun, so the cause is marked with 「で」: 「かぜで」."
+      }
+    },
+    {
+      "item": "〜くて／〜で（原因・理由）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "頭が痛くて、学校を休みましょう。",
+          "頭が痛くて、学校を休んでください。",
+          "頭が痛くて、学校を休もう。",
+          "頭が痛くて、学校を休みました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế sau của 〜くて (nguyên nhân) không dùng rủ rê, nhờ vả hay ý chí; chỉ câu kể 「休みました」 là đúng.",
+        "en": "Correct! The clause after cause-type 〜くて cannot be an invitation, request or volition; only the plain statement 「休みました」 is correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế sau của 〜くて (nguyên nhân) không dùng rủ rê, nhờ vả hay ý chí; chỉ câu kể 「休みました」 là đúng.",
+        "en": "Not quite. The clause after cause-type 〜くて cannot be an invitation, request or volition; only the plain statement 「休みました」 is correct."
+      }
+    },
+    {
+      "item": "〜ないで（〜ずに）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n朝ごはんを食べ（　）、会社に行きました。",
+        "en": "Choose the correct option for the blank:\n朝ごはんを食べ（　）、会社に行きました。"
+      },
+      "payload": {
+        "choices": [
+          "なくて",
+          "なかったで",
+          "ないで",
+          "ないて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm việc khác trong khi không làm A dùng 〜ないで: 「食べないで」.",
+        "en": "Correct! Doing something else while not doing A uses 〜ないで: 「食べないで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm việc khác trong khi không làm A dùng 〜ないで: 「食べないで」.",
+        "en": "Not quite. Doing something else while not doing A uses 〜ないで: 「食べないで」."
+      }
+    },
+    {
+      "item": "〜ないで（〜ずに）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n友だちに会え（　）、さびしいです。",
+        "en": "Choose the pattern that best fits the context:\n友だちに会え（　）、さびしいです。"
+      },
+      "payload": {
+        "choices": [
+          "ないで",
+          "なくて",
+          "ないと",
+          "なければ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đây là nguyên nhân của cảm xúc (さびしい) nên dùng 〜なくて; 〜ないで chỉ cách thức đi kèm.",
+        "en": "Correct! This is the cause of a feeling (さびしい), so 〜なくて is used; 〜ないで marks an accompanying manner."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đây là nguyên nhân của cảm xúc (さびしい) nên dùng 〜なくて; 〜ないで chỉ cách thức đi kèm.",
+        "en": "Not quite. This is the cause of a feeling (さびしい), so 〜なくて is used; 〜ないで marks an accompanying manner."
+      }
+    },
+    {
+      "item": "〜ないで（〜ずに）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★:\n昨日は　＿　★　＿　。\n（宿題を／しないで／遊びに行きました）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot:\n昨日は　＿　★　＿　。\n（宿題を／しないで／遊びに行きました）"
+      },
+      "payload": {
+        "choices": [
+          "宿題を",
+          "しないで",
+          "遊びに行きました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「昨日は宿題をしないで遊びに行きました。」; ô ★ (thứ hai trong ba mảnh) là 「しないで」.",
+        "en": "Correct! The correct sentence is 「昨日は宿題をしないで遊びに行きました。」; the ★ slot (second of the three pieces) is 「しないで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「昨日は宿題をしないで遊びに行きました。」; ô ★ (thứ hai trong ba mảnh) là 「しないで」.",
+        "en": "Not quite. The correct sentence is 「昨日は宿題をしないで遊びに行きました。」; the ★ slot (second of the three pieces) is 「しないで」."
+      }
+    },
+    {
+      "item": "〜ないで（〜ずに）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は朝ごはんを食べ___、出かけました。",
+        "en": "Choose the correct option for the blank:\n私は朝ごはんを食べ___、出かけました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ないで",
+          "ずに"
+        ],
+        "hint": "〜ないで"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm hành động chính mà không làm việc kia: 「食べないで」. Dạng văn viết 「食べずに」 cũng đúng nên được chấp nhận.",
+        "en": "Correct! Doing the main action without doing the other: 「食べないで」. The written-style form 「食べずに」 is also correct, so it is accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm hành động chính mà không làm việc kia: 「食べないで」. Dạng văn viết 「食べずに」 cũng đúng nên được chấp nhận.",
+        "en": "Not quite. Doing the main action without doing the other: 「食べないで」. The written-style form 「食べずに」 is also correct, so it is accepted."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜てから",
+            {
+              "vi": "Sau khi ~ (rồi mới)",
+              "en": "After ~ (and only then)"
+            }
+          ],
+          [
+            "〜てほしい",
+            {
+              "vi": "Muốn (ai đó) làm ~",
+              "en": "Want (someone) to do ~"
+            }
+          ],
+          [
+            "〜くて／〜で（原因・理由）",
+            {
+              "vi": "Vì ~ nên ~ (nguyên nhân)",
+              "en": "Because of ~ (cause via the te-form)"
+            }
+          ],
+          [
+            "〜ないで（〜ずに）",
+            {
+              "vi": "Mà không ~; đừng ~",
+              "en": "Without doing ~; (please) don't ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-home-housing",
+  "title": {
+    "vi": "Các phòng và bộ phận của ngôi nhà",
+    "en": "Rooms and parts of a house"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 440,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "玄関",
+      "reading": "げんかん",
+      "meaning": {
+        "vi": "Cửa vào nhà; sảnh vào",
+        "en": "Entrance hall"
+      },
+      "examples": [
+        {
+          "ja": "家に入るとき、玄関で靴をぬぎます。",
+          "reading": "いえにはいるとき、げんかんでくつをぬぎます。",
+          "translation": {
+            "vi": "Khi vào nhà, tôi cởi giày ở sảnh vào.",
+            "en": "When I enter the house, I take off my shoes in the entrance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "居間",
+      "reading": "いま",
+      "meaning": {
+        "vi": "Phòng khách; phòng sinh hoạt chung",
+        "en": "Living room"
+      },
+      "examples": [
+        {
+          "ja": "家族はみんな居間でテレビを見ます。",
+          "reading": "かぞくはみんないまでテレビをみます。",
+          "translation": {
+            "vi": "Cả nhà cùng xem ti vi ở phòng khách.",
+            "en": "The whole family watches TV in the living room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "台所",
+      "reading": "だいどころ",
+      "meaning": {
+        "vi": "Nhà bếp",
+        "en": "Kitchen"
+      },
+      "examples": [
+        {
+          "ja": "母は台所で夕ご飯を作っています。",
+          "reading": "はははだいどころでゆうごはんをつくっています。",
+          "translation": {
+            "vi": "Mẹ đang nấu bữa tối trong bếp.",
+            "en": "My mother is making dinner in the kitchen."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "階段",
+      "reading": "かいだん",
+      "meaning": {
+        "vi": "Cầu thang",
+        "en": "Stairs"
+      },
+      "examples": [
+        {
+          "ja": "二階へ行くには、階段を上がります。",
+          "reading": "にかいへいくには、かいだんをあがります。",
+          "translation": {
+            "vi": "Muốn lên tầng hai thì đi lên cầu thang.",
+            "en": "To go up to the second floor, you go up the stairs."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "屋上",
+      "reading": "おくじょう",
+      "meaning": {
+        "vi": "Sân thượng; mái bằng",
+        "en": "Rooftop"
+      },
+      "examples": [
+        {
+          "ja": "ビルの屋上から、町がよく見えます。",
+          "reading": "ビルのおくじょうから、まちがよくみえます。",
+          "translation": {
+            "vi": "Từ sân thượng của tòa nhà có thể nhìn rõ cả thị trấn.",
+            "en": "You can see the whole town well from the roof of the building."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "洗面所",
+      "reading": "せんめんじょ",
+      "meaning": {
+        "vi": "Chỗ rửa mặt; phòng vệ sinh rửa tay mặt",
+        "en": "Washroom; place to wash up"
+      },
+      "examples": [
+        {
+          "ja": "朝は、洗面所で顔を洗います。",
+          "reading": "あさは、せんめんじょでかおをあらいます。",
+          "translation": {
+            "vi": "Buổi sáng tôi rửa mặt ở chỗ rửa mặt.",
+            "en": "In the morning I wash my face in the washroom."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "玄関",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家に入るとき、（　）で靴をぬぎます。",
+        "en": "Choose the word that fits the blank: 家に入るとき、（　）で靴をぬぎます。"
+      },
+      "payload": {
+        "choices": [
+          "玄関",
+          "台所",
+          "居間",
+          "階段"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「玄関」(Cửa vào nhà; sảnh vào) hợp nghĩa câu này: “Khi vào nhà, tôi cởi giày ở sảnh vào.”",
+        "en": "Correct! 「玄関」(Entrance hall) fits this sentence: “When I enter the house, I take off my shoes in the entrance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi vào nhà, tôi cởi giày ở sảnh vào.”, nên cần 「玄関」(Cửa vào nhà; sảnh vào); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When I enter the house, I take off my shoes in the entrance.”, so it needs 「玄関」(Entrance hall); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "居間",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家族はみんな（　）でテレビを見ます。 — Nghĩa của câu: “Cả nhà cùng xem ti vi ở phòng khách.”",
+        "en": "Choose the word that fits the blank: 家族はみんな（　）でテレビを見ます。 — Meaning of the sentence: “The whole family watches TV in the living room.”"
+      },
+      "payload": {
+        "choices": [
+          "台所",
+          "居間",
+          "階段",
+          "屋上"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「居間」(Phòng khách; phòng sinh hoạt chung) hợp nghĩa câu này: “Cả nhà cùng xem ti vi ở phòng khách.”",
+        "en": "Correct! 「居間」(Living room) fits this sentence: “The whole family watches TV in the living room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cả nhà cùng xem ti vi ở phòng khách.”, nên cần 「居間」(Phòng khách; phòng sinh hoạt chung); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The whole family watches TV in the living room.”, so it needs 「居間」(Living room); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "台所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母は（　）で夕ご飯を作っています。",
+        "en": "Choose the word that fits the blank: 母は（　）で夕ご飯を作っています。"
+      },
+      "payload": {
+        "choices": [
+          "階段",
+          "屋上",
+          "台所",
+          "洗面所"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「台所」(Nhà bếp) hợp nghĩa câu này: “Mẹ đang nấu bữa tối trong bếp.”",
+        "en": "Correct! 「台所」(Kitchen) fits this sentence: “My mother is making dinner in the kitchen.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mẹ đang nấu bữa tối trong bếp.”, nên cần 「台所」(Nhà bếp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My mother is making dinner in the kitchen.”, so it needs 「台所」(Kitchen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "階段",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 二階へ行くには、（　）を上がります。",
+        "en": "Choose the word that fits the blank: 二階へ行くには、（　）を上がります。"
+      },
+      "payload": {
+        "choices": [
+          "屋上",
+          "洗面所",
+          "台所",
+          "階段"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「階段」(Cầu thang) hợp nghĩa câu này: “Muốn lên tầng hai thì đi lên cầu thang.”",
+        "en": "Correct! 「階段」(Stairs) fits this sentence: “To go up to the second floor, you go up the stairs.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Muốn lên tầng hai thì đi lên cầu thang.”, nên cần 「階段」(Cầu thang); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To go up to the second floor, you go up the stairs.”, so it needs 「階段」(Stairs); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "屋上",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ビルの（　）から、町がよく見えます。 — Nghĩa của câu: “Từ sân thượng của tòa nhà có thể nhìn rõ cả thị trấn.”",
+        "en": "Choose the word that fits the blank: ビルの（　）から、町がよく見えます。 — Meaning of the sentence: “You can see the whole town well from the roof of the building.”"
+      },
+      "payload": {
+        "choices": [
+          "屋上",
+          "階段",
+          "玄関",
+          "台所"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「屋上」(Sân thượng; mái bằng) hợp nghĩa câu này: “Từ sân thượng của tòa nhà có thể nhìn rõ cả thị trấn.”",
+        "en": "Correct! 「屋上」(Rooftop) fits this sentence: “You can see the whole town well from the roof of the building.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ sân thượng của tòa nhà có thể nhìn rõ cả thị trấn.”, nên cần 「屋上」(Sân thượng; mái bằng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can see the whole town well from the roof of the building.”, so it needs 「屋上」(Rooftop); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "洗面所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 朝は、（　）で顔を洗います。 — Nghĩa của câu: “Buổi sáng tôi rửa mặt ở chỗ rửa mặt.”",
+        "en": "Choose the word that fits the blank: 朝は、（　）で顔を洗います。 — Meaning of the sentence: “In the morning I wash my face in the washroom.”"
+      },
+      "payload": {
+        "choices": [
+          "台所",
+          "洗面所",
+          "玄関",
+          "居間"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「洗面所」(Chỗ rửa mặt; phòng vệ sinh rửa tay mặt) hợp nghĩa câu này: “Buổi sáng tôi rửa mặt ở chỗ rửa mặt.”",
+        "en": "Correct! 「洗面所」(Washroom; place to wash up) fits this sentence: “In the morning I wash my face in the washroom.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Buổi sáng tôi rửa mặt ở chỗ rửa mặt.”, nên cần 「洗面所」(Chỗ rửa mặt; phòng vệ sinh rửa tay mặt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In the morning I wash my face in the washroom.”, so it needs 「洗面所」(Washroom; place to wash up); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "玄関",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 家に入るとき、「玄関」で靴をぬぎます。",
+        "en": "Choose the correct reading of the word in 「」: 家に入るとき、「玄関」で靴をぬぎます。"
+      },
+      "payload": {
+        "choices": [
+          "いま",
+          "げんかん",
+          "だいどころ",
+          "かいだん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「玄関」 đọc là 「げんかん」, nghĩa là Cửa vào nhà; sảnh vào.",
+        "en": "Correct! 「玄関」 is read 「げんかん」 and means Entrance hall."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「玄関」 đọc là 「げんかん」 (Cửa vào nhà; sảnh vào); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「玄関」 is read 「げんかん」 (Entrance hall); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "階段",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 二階へ行くには、「階段」を上がります。",
+        "en": "Choose the correct reading of the word in 「」: 二階へ行くには、「階段」を上がります。"
+      },
+      "payload": {
+        "choices": [
+          "げんかん",
+          "いま",
+          "かいだん",
+          "だいどころ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「階段」 đọc là 「かいだん」, nghĩa là Cầu thang.",
+        "en": "Correct! 「階段」 is read 「かいだん」 and means Stairs."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「階段」 đọc là 「かいだん」 (Cầu thang); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「階段」 is read 「かいだん」 (Stairs); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "居間",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 家族はみんな「いま」でテレビを見ます。",
+        "en": "Choose the correct way to write the word in 「」: 家族はみんな「いま」でテレビを見ます。"
+      },
+      "payload": {
+        "choices": [
+          "玄関",
+          "台所",
+          "居間",
+          "階段"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いま」 viết là 「居間」, nghĩa là Phòng khách; phòng sinh hoạt chung.",
+        "en": "Correct! 「いま」 is written 「居間」 and means Living room."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いま」 viết là 「居間」 (Phòng khách; phòng sinh hoạt chung); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いま」 is written 「居間」 (Living room); the other words are read differently."
+      }
+    }
+  ]
+}

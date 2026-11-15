@@ -1,0 +1,547 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (差 余 数 点)",
+    "en": "Economy and money kanji (差 余 数 点)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "差",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "chênh lệch; sai khác",
+        "en": "difference"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サ"
+        ],
+        "kunReadings": [
+          "さ.す"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "時差",
+          "reading": "じさ",
+          "kanjiReading": "サ",
+          "translation": {
+            "vi": "chênh lệch múi giờ",
+            "en": "time difference"
+          }
+        },
+        {
+          "ja": "差す",
+          "reading": "さす",
+          "kanjiReading": "サ",
+          "translation": {
+            "vi": "chiếu vào; giương (ô)",
+            "en": "to shine in; to hold up"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "余",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "thừa; còn lại",
+        "en": "surplus; remainder"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨ"
+        ],
+        "kunReadings": [
+          "あま.る",
+          "あま.り"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "余裕",
+          "reading": "よゆう",
+          "kanjiReading": "ヨ",
+          "translation": {
+            "vi": "sự dư dả; thong thả",
+            "en": "margin; leeway"
+          }
+        },
+        {
+          "ja": "余る",
+          "reading": "あまる",
+          "kanjiReading": "あま",
+          "translation": {
+            "vi": "còn thừa",
+            "en": "to be left over"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "数",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "số; đếm",
+        "en": "number; count"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "スウ",
+          "ス"
+        ],
+        "kunReadings": [
+          "かず",
+          "かぞ.える"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "数字",
+          "reading": "すうじ",
+          "kanjiReading": "スウ",
+          "translation": {
+            "vi": "chữ số",
+            "en": "number; digit"
+          }
+        },
+        {
+          "ja": "数える",
+          "reading": "かぞえる",
+          "kanjiReading": "かぞ",
+          "translation": {
+            "vi": "đếm",
+            "en": "to count"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "点",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "điểm; chấm",
+        "en": "point; dot"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "点数",
+          "reading": "てんすう",
+          "kanjiReading": "テン",
+          "translation": {
+            "vi": "điểm số",
+            "en": "score"
+          }
+        },
+        {
+          "ja": "欠点",
+          "reading": "けってん",
+          "kanjiReading": "テン",
+          "translation": {
+            "vi": "khuyết điểm",
+            "en": "fault"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "差",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「差」nghĩa là gì?",
+        "en": "What does 「差」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chênh lệch; sai khác",
+            "en": "difference"
+          },
+          {
+            "vi": "thừa; còn lại",
+            "en": "surplus; remainder"
+          },
+          {
+            "vi": "số; đếm",
+            "en": "number; count"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 差 nghĩa là chênh lệch; sai khác.",
+        "en": "Correct! 差 means difference."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 差 nghĩa là chênh lệch; sai khác, như trong 「時差」 (chênh lệch múi giờ).",
+        "en": "Not quite. 差 means difference, as in 「時差」 (time difference)."
+      }
+    },
+    {
+      "item": "差",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「差」 trong 「時差」 (“chênh lệch múi giờ”).",
+        "en": "Type the reading of 「差」 in 「時差」 (“time difference”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さ",
+          "サ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 時差, 差 đọc là さ (âm On).",
+        "en": "Correct! In 時差, 差 is read さ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 時差 (chênh lệch múi giờ), 差 đọc là さ (âm On).",
+        "en": "In 時差 (time difference), 差 is read さ (on'yomi)."
+      }
+    },
+    {
+      "item": "差",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「差す」(chiếu vào; giương (ô)) đọc là gì?",
+        "en": "How is 「差す」 (to shine in; to hold up) read?"
+      },
+      "payload": {
+        "choices": [
+          "よゆう",
+          "さす",
+          "あまる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 差す = さす (chiếu vào; giương (ô)); 差 đọc là さ (âm On).",
+        "en": "Correct! 差す = さす (to shine in; to hold up); 差 is read さ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "差す đọc là さす (chiếu vào; giương (ô)): 差 mang âm On さ.",
+        "en": "差す is read さす (to shine in; to hold up): 差 takes the on'yomi さ."
+      }
+    },
+    {
+      "item": "余",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「余」nghĩa là gì?",
+        "en": "What does 「余」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "số; đếm",
+            "en": "number; count"
+          },
+          {
+            "vi": "thừa; còn lại",
+            "en": "surplus; remainder"
+          },
+          {
+            "vi": "điểm; chấm",
+            "en": "point; dot"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 余 nghĩa là thừa; còn lại.",
+        "en": "Correct! 余 means surplus; remainder."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 余 nghĩa là thừa; còn lại, như trong 「余裕」 (sự dư dả; thong thả).",
+        "en": "Not quite. 余 means surplus; remainder, as in 「余裕」 (margin; leeway)."
+      }
+    },
+    {
+      "item": "余",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「余」 trong 「余裕」 (“sự dư dả; thong thả”).",
+        "en": "Type the reading of 「余」 in 「余裕」 (“margin; leeway”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よ",
+          "ヨ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 余裕, 余 đọc là よ (âm On).",
+        "en": "Correct! In 余裕, 余 is read よ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 余裕 (sự dư dả; thong thả), 余 đọc là よ (âm On).",
+        "en": "In 余裕 (margin; leeway), 余 is read よ (on'yomi)."
+      }
+    },
+    {
+      "item": "余",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「余る」(còn thừa) đọc là gì?",
+        "en": "How is 「余る」 (to be left over) read?"
+      },
+      "payload": {
+        "choices": [
+          "よる",
+          "すうじ",
+          "あまる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 余る = あまる (còn thừa); 余 đọc là あま (âm Kun).",
+        "en": "Correct! 余る = あまる (to be left over); 余 is read あま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "余る đọc là あまる (còn thừa): 余 mang âm Kun あま.",
+        "en": "余る is read あまる (to be left over): 余 takes the kun'yomi あま."
+      }
+    },
+    {
+      "item": "数",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「数」nghĩa là gì?",
+        "en": "What does 「数」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "điểm; chấm",
+            "en": "point; dot"
+          },
+          {
+            "vi": "chênh lệch; sai khác",
+            "en": "difference"
+          },
+          {
+            "vi": "số; đếm",
+            "en": "number; count"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 数 nghĩa là số; đếm.",
+        "en": "Correct! 数 means number; count."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 数 nghĩa là số; đếm, như trong 「数字」 (chữ số).",
+        "en": "Not quite. 数 means number; count, as in 「数字」 (number; digit)."
+      }
+    },
+    {
+      "item": "数",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「数」 trong 「数字」 (“chữ số”).",
+        "en": "Type the reading of 「数」 in 「数字」 (“number; digit”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "すう",
+          "スウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 数字, 数 đọc là すう (âm On).",
+        "en": "Correct! In 数字, 数 is read すう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 数字 (chữ số), 数 đọc là すう (âm On).",
+        "en": "In 数字 (number; digit), 数 is read すう (on'yomi)."
+      }
+    },
+    {
+      "item": "数",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「数える」(đếm) đọc là gì?",
+        "en": "How is 「数える」 (to count) read?"
+      },
+      "payload": {
+        "choices": [
+          "かぞえる",
+          "すうえる",
+          "てんすう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 数える = かぞえる (đếm); 数 đọc là かぞ (âm Kun).",
+        "en": "Correct! 数える = かぞえる (to count); 数 is read かぞ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "数える đọc là かぞえる (đếm): 数 mang âm Kun かぞ.",
+        "en": "数える is read かぞえる (to count): 数 takes the kun'yomi かぞ."
+      }
+    },
+    {
+      "item": "点",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「点」nghĩa là gì?",
+        "en": "What does 「点」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "điểm; chấm",
+            "en": "point; dot"
+          },
+          {
+            "vi": "chênh lệch; sai khác",
+            "en": "difference"
+          },
+          {
+            "vi": "thừa; còn lại",
+            "en": "surplus; remainder"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 点 nghĩa là điểm; chấm.",
+        "en": "Correct! 点 means point; dot."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 点 nghĩa là điểm; chấm, như trong 「点数」 (điểm số).",
+        "en": "Not quite. 点 means point; dot, as in 「点数」 (score)."
+      }
+    },
+    {
+      "item": "点",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「点」 trong 「点数」 (“điểm số”).",
+        "en": "Type the reading of 「点」 in 「点数」 (“score”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てん",
+          "テン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 点数, 点 đọc là てん (âm On).",
+        "en": "Correct! In 点数, 点 is read てん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 点数 (điểm số), 点 đọc là てん (âm On).",
+        "en": "In 点数 (score), 点 is read てん (on'yomi)."
+      }
+    },
+    {
+      "item": "点",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「欠点」(khuyết điểm) đọc là gì?",
+        "en": "How is 「欠点」 (fault) read?"
+      },
+      "payload": {
+        "choices": [
+          "けっでん",
+          "けってん",
+          "けっさ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 欠点 = けってん (khuyết điểm); 点 đọc là てん (âm On).",
+        "en": "Correct! 欠点 = けってん (fault); 点 is read てん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "欠点 đọc là けってん (khuyết điểm): 点 mang âm On てん.",
+        "en": "欠点 is read けってん (fault): 点 takes the on'yomi てん."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "差",
+            {
+              "vi": "chênh lệch; sai khác",
+              "en": "difference"
+            }
+          ],
+          [
+            "余",
+            {
+              "vi": "thừa; còn lại",
+              "en": "surplus; remainder"
+            }
+          ],
+          [
+            "数",
+            {
+              "vi": "số; đếm",
+              "en": "number; count"
+            }
+          ],
+          [
+            "点",
+            {
+              "vi": "điểm; chấm",
+              "en": "point; dot"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

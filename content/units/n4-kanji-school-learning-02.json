@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (研 究 験 試)",
+    "en": "School and learning kanji (研 究 験 試)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "研",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "mài giũa; nghiên cứu",
+        "en": "polish; research"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [
+          "と.ぐ"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "研究",
+          "reading": "けんきゅう",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "nghiên cứu",
+            "en": "research"
+          }
+        },
+        {
+          "ja": "研修",
+          "reading": "けんしゅう",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "tập huấn",
+            "en": "training"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "究",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "đào sâu; tìm tòi",
+        "en": "investigate"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ"
+        ],
+        "kunReadings": [
+          "きわ.める"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "研究",
+          "reading": "けんきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "nghiên cứu",
+            "en": "research"
+          }
+        },
+        {
+          "ja": "探究",
+          "reading": "たんきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "truy tìm; khám phá",
+            "en": "inquiry"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "験",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "kiểm nghiệm; kinh nghiệm",
+        "en": "test; experience"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 18
+      },
+      "examples": [
+        {
+          "ja": "試験",
+          "reading": "しけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "kỳ thi",
+            "en": "exam"
+          }
+        },
+        {
+          "ja": "経験",
+          "reading": "けいけん",
+          "kanjiReading": "ケン",
+          "translation": {
+            "vi": "kinh nghiệm",
+            "en": "experience"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "試",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "thử",
+        "en": "try; test"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シ"
+        ],
+        "kunReadings": [
+          "こころ.みる",
+          "ため.す"
+        ],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "試験",
+          "reading": "しけん",
+          "kanjiReading": "シ",
+          "translation": {
+            "vi": "kỳ thi",
+            "en": "exam"
+          }
+        },
+        {
+          "ja": "試す",
+          "reading": "ためす",
+          "kanjiReading": "ため",
+          "translation": {
+            "vi": "thử",
+            "en": "to try"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "研",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「研」nghĩa là gì?",
+        "en": "What does 「研」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "mài giũa; nghiên cứu",
+            "en": "polish; research"
+          },
+          {
+            "vi": "đào sâu; tìm tòi",
+            "en": "investigate"
+          },
+          {
+            "vi": "kiểm nghiệm; kinh nghiệm",
+            "en": "test; experience"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 研 nghĩa là mài giũa; nghiên cứu.",
+        "en": "Correct! 研 means polish; research."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 研 nghĩa là mài giũa; nghiên cứu, như trong 「研究」 (nghiên cứu).",
+        "en": "Not quite. 研 means polish; research, as in 「研究」 (research)."
+      }
+    },
+    {
+      "item": "研",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「研」 trong 「研究」 (“nghiên cứu”).",
+        "en": "Type the reading of 「研」 in 「研究」 (“research”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 研究, 研 đọc là けん (âm On).",
+        "en": "Correct! In 研究, 研 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 研究 (nghiên cứu), 研 đọc là けん (âm On).",
+        "en": "In 研究 (research), 研 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "研",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「研修」(tập huấn) đọc là gì?",
+        "en": "How is 「研修」 (training) read?"
+      },
+      "payload": {
+        "choices": [
+          "としゅう",
+          "けんしゅう",
+          "げんしゅう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 研修 = けんしゅう (tập huấn); 研 đọc là けん (âm On).",
+        "en": "Correct! 研修 = けんしゅう (training); 研 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "研修 đọc là けんしゅう (tập huấn): 研 mang âm On けん.",
+        "en": "研修 is read けんしゅう (training): 研 takes the on'yomi けん."
+      }
+    },
+    {
+      "item": "究",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「究」nghĩa là gì?",
+        "en": "What does 「究」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kiểm nghiệm; kinh nghiệm",
+            "en": "test; experience"
+          },
+          {
+            "vi": "đào sâu; tìm tòi",
+            "en": "investigate"
+          },
+          {
+            "vi": "thử",
+            "en": "try; test"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 究 nghĩa là đào sâu; tìm tòi.",
+        "en": "Correct! 究 means investigate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 究 nghĩa là đào sâu; tìm tòi, như trong 「研究」 (nghiên cứu).",
+        "en": "Not quite. 究 means investigate, as in 「研究」 (research)."
+      }
+    },
+    {
+      "item": "究",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「究」 trong 「研究」 (“nghiên cứu”).",
+        "en": "Type the reading of 「究」 in 「研究」 (“research”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 研究, 究 đọc là きゅう (âm On).",
+        "en": "Correct! In 研究, 究 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 研究 (nghiên cứu), 究 đọc là きゅう (âm On).",
+        "en": "In 研究 (research), 究 is read きゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "究",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「探究」(truy tìm; khám phá) đọc là gì?",
+        "en": "How is 「探究」 (inquiry) read?"
+      },
+      "payload": {
+        "choices": [
+          "たんきわ",
+          "たんぎゅう",
+          "たんきゅう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 探究 = たんきゅう (truy tìm; khám phá); 究 đọc là きゅう (âm On).",
+        "en": "Correct! 探究 = たんきゅう (inquiry); 究 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "探究 đọc là たんきゅう (truy tìm; khám phá): 究 mang âm On きゅう.",
+        "en": "探究 is read たんきゅう (inquiry): 究 takes the on'yomi きゅう."
+      }
+    },
+    {
+      "item": "験",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「験」nghĩa là gì?",
+        "en": "What does 「験」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thử",
+            "en": "try; test"
+          },
+          {
+            "vi": "mài giũa; nghiên cứu",
+            "en": "polish; research"
+          },
+          {
+            "vi": "kiểm nghiệm; kinh nghiệm",
+            "en": "test; experience"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 験 nghĩa là kiểm nghiệm; kinh nghiệm.",
+        "en": "Correct! 験 means test; experience."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 験 nghĩa là kiểm nghiệm; kinh nghiệm, như trong 「試験」 (kỳ thi).",
+        "en": "Not quite. 験 means test; experience, as in 「試験」 (exam)."
+      }
+    },
+    {
+      "item": "験",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「験」 trong 「試験」 (“kỳ thi”).",
+        "en": "Type the reading of 「験」 in 「試験」 (“exam”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けん",
+          "ケン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 試験, 験 đọc là けん (âm On).",
+        "en": "Correct! In 試験, 験 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 試験 (kỳ thi), 験 đọc là けん (âm On).",
+        "en": "In 試験 (exam), 験 is read けん (on'yomi)."
+      }
+    },
+    {
+      "item": "験",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「経験」(kinh nghiệm) đọc là gì?",
+        "en": "How is 「経験」 (experience) read?"
+      },
+      "payload": {
+        "choices": [
+          "けいけん",
+          "けいげん",
+          "けいこころ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 経験 = けいけん (kinh nghiệm); 験 đọc là けん (âm On).",
+        "en": "Correct! 経験 = けいけん (experience); 験 is read けん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "経験 đọc là けいけん (kinh nghiệm): 験 mang âm On けん.",
+        "en": "経験 is read けいけん (experience): 験 takes the on'yomi けん."
+      }
+    },
+    {
+      "item": "試",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「試」nghĩa là gì?",
+        "en": "What does 「試」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thử",
+            "en": "try; test"
+          },
+          {
+            "vi": "mài giũa; nghiên cứu",
+            "en": "polish; research"
+          },
+          {
+            "vi": "đào sâu; tìm tòi",
+            "en": "investigate"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 試 nghĩa là thử.",
+        "en": "Correct! 試 means try; test."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 試 nghĩa là thử, như trong 「試験」 (kỳ thi).",
+        "en": "Not quite. 試 means try; test, as in 「試験」 (exam)."
+      }
+    },
+    {
+      "item": "試",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「試」 trong 「試験」 (“kỳ thi”).",
+        "en": "Type the reading of 「試」 in 「試験」 (“exam”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "し",
+          "シ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 試験, 試 đọc là し (âm On).",
+        "en": "Correct! In 試験, 試 is read し (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 試験 (kỳ thi), 試 đọc là し (âm On).",
+        "en": "In 試験 (exam), 試 is read し (on'yomi)."
+      }
+    },
+    {
+      "item": "試",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「試す」(thử) đọc là gì?",
+        "en": "How is 「試す」 (to try) read?"
+      },
+      "payload": {
+        "choices": [
+          "しす",
+          "ためす",
+          "しけん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 試す = ためす (thử); 試 đọc là ため (âm Kun).",
+        "en": "Correct! 試す = ためす (to try); 試 is read ため (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "試す đọc là ためす (thử): 試 mang âm Kun ため.",
+        "en": "試す is read ためす (to try): 試 takes the kun'yomi ため."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "研",
+            {
+              "vi": "mài giũa; nghiên cứu",
+              "en": "polish; research"
+            }
+          ],
+          [
+            "究",
+            {
+              "vi": "đào sâu; tìm tòi",
+              "en": "investigate"
+            }
+          ],
+          [
+            "験",
+            {
+              "vi": "kiểm nghiệm; kinh nghiệm",
+              "en": "test; experience"
+            }
+          ],
+          [
+            "試",
+            {
+              "vi": "thử",
+              "en": "try; test"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

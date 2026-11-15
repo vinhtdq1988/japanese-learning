@@ -226,8 +226,9 @@ describe('bộ lọc và phạm vi loại trừ', () => {
     expect(res.body.every((t: any) => t.skill === 'kanji')).toBe(true);
 
     const all = await api.get('/admin/topics', { ...asAdmin });
+    // Spec 007: thêm chủ đề luyện đọc/viết nên không lọc trả đủ năm kỹ năng.
     expect(new Set(all.body.map((t: any) => t.skill))).toEqual(
-      new Set(['vocabulary', 'grammar', 'kanji']),
+      new Set(['vocabulary', 'grammar', 'kanji', 'reading', 'writing']),
     );
 
     const bad = await api.get('/admin/topics?skill=bogus', { ...asAdmin });

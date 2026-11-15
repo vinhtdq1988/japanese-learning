@@ -377,8 +377,10 @@ class _BasicFields extends StatelessWidget {
               onChanged: (v) {
                 draft.kind = v;
                 draft.topicId = null;
-                // Bài Kanji không có tầng nền tảng.
-                if (v == 'kanji') draft.tier = 'core';
+                // Bài Kanji và bài luyện đọc/viết không có tầng nền tảng.
+                if (v == 'kanji' || v == 'reading' || v == 'writing') {
+                  draft.tier = 'core';
+                }
                 onChanged();
               },
             ),
@@ -394,7 +396,7 @@ class _BasicFields extends StatelessWidget {
                 onChanged();
               },
             ),
-            if (draft.level == 'N5' && !draft.isKanji)
+            if (draft.level == 'N5' && !draft.isKanji && !draft.isPractice)
               _Select<String>(
                 fieldKey: const Key('field-tier'),
                 label: l10n.adminFieldTier,
@@ -509,7 +511,7 @@ class _BasicFields extends StatelessWidget {
               ),
           ],
         ),
-        if (draft.isKanji)
+        if (draft.isKanji || draft.isPractice)
           Padding(
             padding: const EdgeInsets.only(top: 4),
             child: Text(

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-society-media",
+  "title": {
+    "vi": "Sự thật và hoàn cảnh",
+    "en": "Facts and circumstances"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "状態",
+      "reading": "じょうたい",
+      "meaning": {
+        "vi": "Tình trạng; trạng thái",
+        "en": "Condition; state"
+      },
+      "examples": [
+        {
+          "ja": "この部屋は、とてもきれいな状態です。",
+          "reading": "このへやは、とてもきれいなじょうたいです。",
+          "translation": {
+            "vi": "Căn phòng này đang ở trong tình trạng rất sạch sẽ.",
+            "en": "This room is in very clean condition."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "事情",
+      "reading": "じじょう",
+      "meaning": {
+        "vi": "Hoàn cảnh; lý do riêng",
+        "en": "Circumstances; reasons"
+      },
+      "examples": [
+        {
+          "ja": "家の事情で、大学をやめました。",
+          "reading": "いえのじじょうで、だいがくをやめました。",
+          "translation": {
+            "vi": "Vì hoàn cảnh gia đình, tôi đã nghỉ đại học.",
+            "en": "I left university because of family circumstances."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "事実",
+      "reading": "じじつ",
+      "meaning": {
+        "vi": "Sự thật; sự việc có thật",
+        "en": "Fact"
+      },
+      "examples": [
+        {
+          "ja": "その話が事実かどうか、調べてみます。",
+          "reading": "そのはなしがじじつかどうか、しらべてみます。",
+          "translation": {
+            "vi": "Tôi sẽ thử tra xem câu chuyện đó có phải sự thật không.",
+            "en": "I will check whether that story is true."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "真実",
+      "reading": "しんじつ",
+      "meaning": {
+        "vi": "Chân thực; sự thật (cuối cùng)",
+        "en": "Truth"
+      },
+      "examples": [
+        {
+          "ja": "裁判で、ようやく真実が明らかになりました。",
+          "reading": "さいばんで、ようやくしんじつがあきらかになりました。",
+          "translation": {
+            "vi": "Cuối cùng sự thật đã được làm sáng tỏ trong phiên tòa.",
+            "en": "At last the truth was revealed in the trial."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "現在",
+      "reading": "げんざい",
+      "meaning": {
+        "vi": "Hiện tại",
+        "en": "Present; current"
+      },
+      "examples": [
+        {
+          "ja": "現在、準備を進めているところです。",
+          "reading": "げんざい、じゅんびをすすめているところです。",
+          "translation": {
+            "vi": "Hiện tại chúng tôi đang tiến hành chuẩn bị.",
+            "en": "At present we are in the middle of preparing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "評判",
+      "reading": "ひょうばん",
+      "meaning": {
+        "vi": "Tiếng tăm; lời đồn",
+        "en": "Reputation"
+      },
+      "examples": [
+        {
+          "ja": "あのレストランは、評判がとてもいいです。",
+          "reading": "あのレストランは、ひょうばんがとてもいいです。",
+          "translation": {
+            "vi": "Nhà hàng đó có tiếng rất tốt.",
+            "en": "That restaurant has a very good reputation."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "状態",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この部屋は、とてもきれいな（　）です。 — Nghĩa của câu: “Căn phòng này đang ở trong tình trạng rất sạch sẽ.”",
+        "en": "Choose the word that fits the blank: この部屋は、とてもきれいな（　）です。 — Meaning of the sentence: “This room is in very clean condition.”"
+      },
+      "payload": {
+        "choices": [
+          "評判",
+          "状態",
+          "事情",
+          "真実"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「状態」(Tình trạng; trạng thái) hợp nghĩa câu này: “Căn phòng này đang ở trong tình trạng rất sạch sẽ.”",
+        "en": "Correct! 「状態」(Condition; state) fits this sentence: “This room is in very clean condition.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Căn phòng này đang ở trong tình trạng rất sạch sẽ.”, nên cần 「状態」(Tình trạng; trạng thái); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This room is in very clean condition.”, so it needs 「状態」(Condition; state); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "事情",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家の（　）で、大学をやめました。 — Nghĩa của câu: “Vì hoàn cảnh gia đình, tôi đã nghỉ đại học.”",
+        "en": "Choose the word that fits the blank: 家の（　）で、大学をやめました。 — Meaning of the sentence: “I left university because of family circumstances.”"
+      },
+      "payload": {
+        "choices": [
+          "真実",
+          "状態",
+          "事情",
+          "現在"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事情」(Hoàn cảnh; lý do riêng) hợp nghĩa câu này: “Vì hoàn cảnh gia đình, tôi đã nghỉ đại học.”",
+        "en": "Correct! 「事情」(Circumstances; reasons) fits this sentence: “I left university because of family circumstances.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì hoàn cảnh gia đình, tôi đã nghỉ đại học.”, nên cần 「事情」(Hoàn cảnh; lý do riêng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I left university because of family circumstances.”, so it needs 「事情」(Circumstances; reasons); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "事実",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: その話が（　）かどうか、調べてみます。 — Nghĩa của câu: “Tôi sẽ thử tra xem câu chuyện đó có phải sự thật không.”",
+        "en": "Choose the word that fits the blank: その話が（　）かどうか、調べてみます。 — Meaning of the sentence: “I will check whether that story is true.”"
+      },
+      "payload": {
+        "choices": [
+          "状態",
+          "事情",
+          "評判",
+          "事実"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事実」(Sự thật; sự việc có thật) hợp nghĩa câu này: “Tôi sẽ thử tra xem câu chuyện đó có phải sự thật không.”",
+        "en": "Correct! 「事実」(Fact) fits this sentence: “I will check whether that story is true.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi sẽ thử tra xem câu chuyện đó có phải sự thật không.”, nên cần 「事実」(Sự thật; sự việc có thật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will check whether that story is true.”, so it needs 「事実」(Fact); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "真実",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 裁判で、ようやく（　）が明らかになりました。 — Nghĩa của câu: “Cuối cùng sự thật đã được làm sáng tỏ trong phiên tòa.”",
+        "en": "Choose the word that fits the blank: 裁判で、ようやく（　）が明らかになりました。 — Meaning of the sentence: “At last the truth was revealed in the trial.”"
+      },
+      "payload": {
+        "choices": [
+          "真実",
+          "現在",
+          "状態",
+          "事実"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「真実」(Chân thực; sự thật (cuối cùng)) hợp nghĩa câu này: “Cuối cùng sự thật đã được làm sáng tỏ trong phiên tòa.”",
+        "en": "Correct! 「真実」(Truth) fits this sentence: “At last the truth was revealed in the trial.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối cùng sự thật đã được làm sáng tỏ trong phiên tòa.”, nên cần 「真実」(Chân thực; sự thật (cuối cùng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At last the truth was revealed in the trial.”, so it needs 「真実」(Truth); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "現在",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、準備を進めているところです。 — Nghĩa của câu: “Hiện tại chúng tôi đang tiến hành chuẩn bị.”",
+        "en": "Choose the word that fits the blank: （　）、準備を進めているところです。 — Meaning of the sentence: “At present we are in the middle of preparing.”"
+      },
+      "payload": {
+        "choices": [
+          "事情",
+          "現在",
+          "状態",
+          "事実"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「現在」(Hiện tại) hợp nghĩa câu này: “Hiện tại chúng tôi đang tiến hành chuẩn bị.”",
+        "en": "Correct! 「現在」(Present; current) fits this sentence: “At present we are in the middle of preparing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hiện tại chúng tôi đang tiến hành chuẩn bị.”, nên cần 「現在」(Hiện tại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At present we are in the middle of preparing.”, so it needs 「現在」(Present; current); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "評判",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あのレストランは、（　）がとてもいいです。 — Nghĩa của câu: “Nhà hàng đó có tiếng rất tốt.”",
+        "en": "Choose the word that fits the blank: あのレストランは、（　）がとてもいいです。 — Meaning of the sentence: “That restaurant has a very good reputation.”"
+      },
+      "payload": {
+        "choices": [
+          "状態",
+          "事情",
+          "評判",
+          "現在"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「評判」(Tiếng tăm; lời đồn) hợp nghĩa câu này: “Nhà hàng đó có tiếng rất tốt.”",
+        "en": "Correct! 「評判」(Reputation) fits this sentence: “That restaurant has a very good reputation.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà hàng đó có tiếng rất tốt.”, nên cần 「評判」(Tiếng tăm; lời đồn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That restaurant has a very good reputation.”, so it needs 「評判」(Reputation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "状態",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この部屋は、とてもきれいな「状態」です。",
+        "en": "Choose the correct reading of the word in 「」: この部屋は、とてもきれいな「状態」です。"
+      },
+      "payload": {
+        "choices": [
+          "しんじつ",
+          "じじょう",
+          "じょうたい",
+          "じじつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「状態」 đọc là 「じょうたい」, nghĩa là Tình trạng; trạng thái.",
+        "en": "Correct! 「状態」 is read 「じょうたい」 and means Condition; state."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「状態」 đọc là 「じょうたい」 (Tình trạng; trạng thái); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「状態」 is read 「じょうたい」 (Condition; state); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "真実",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 裁判で、ようやく「真実」が明らかになりました。",
+        "en": "Choose the correct reading of the word in 「」: 裁判で、ようやく「真実」が明らかになりました。"
+      },
+      "payload": {
+        "choices": [
+          "げんざい",
+          "じょうたい",
+          "じじつ",
+          "しんじつ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「真実」 đọc là 「しんじつ」, nghĩa là Chân thực; sự thật (cuối cùng).",
+        "en": "Correct! 「真実」 is read 「しんじつ」 and means Truth."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「真実」 đọc là 「しんじつ」 (Chân thực; sự thật (cuối cùng)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「真実」 is read 「しんじつ」 (Truth); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "事実",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: その話が「じじつ」かどうか、調べてみます。",
+        "en": "Choose the correct way to write the word in 「」: その話が「じじつ」かどうか、調べてみます。"
+      },
+      "payload": {
+        "choices": [
+          "状態",
+          "事情",
+          "評判",
+          "事実"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「じじつ」 viết là 「事実」, nghĩa là Sự thật; sự việc có thật.",
+        "en": "Correct! 「じじつ」 is written 「事実」 and means Fact."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「じじつ」 viết là 「事実」 (Sự thật; sự việc có thật); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「じじつ」 is written 「事実」 (Fact); the other words are read differently."
+      }
+    }
+  ]
+}

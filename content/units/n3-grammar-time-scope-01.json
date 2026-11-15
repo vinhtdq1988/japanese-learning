@@ -1,0 +1,320 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-time-scope",
+  "title": {
+    "vi": "Thời gian (1): 〜うちに và 〜最中に",
+    "en": "Time (1): 〜うちに and 〜最中に"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜うちに",
+      "meaning": {
+        "vi": "Trong khi còn ~",
+        "en": "While still ~ (before it changes)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ ている/thể từ điển, thể ない, tính từ い, tính từ な + な, danh từ + の + うちに. Làm một việc trong khoảng thời gian trạng thái hiện tại còn tiếp diễn, trước khi nó thay đổi. Vế sau là hành động có chủ ý (không dùng khi chỉ nói sự việc xảy ra).",
+        "en": "Usage: verb ている/dictionary form, ない-form, い-adjective, な-adjective + な, noun + の + うちに. Doing something within the period while the current state lasts, before it changes. The second clause is a deliberate action."
+      },
+      "examples": [
+        {
+          "ja": "温かいうちに、食べてください。",
+          "reading": "あたたかいうちに、たべてください。",
+          "translation": {
+            "vi": "Hãy ăn khi còn nóng.",
+            "en": "Please eat it while it is still warm."
+          }
+        },
+        {
+          "ja": "若いうちに、いろいろな経験をしたいです。",
+          "reading": "わかいうちに、いろいろなけいけんをしたいです。",
+          "translation": {
+            "vi": "Tôi muốn trải nghiệm nhiều thứ khi còn trẻ.",
+            "en": "I want to have various experiences while I am young."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-050"
+    },
+    {
+      "japanese": "〜最中に",
+      "meaning": {
+        "vi": "Đang giữa lúc ~",
+        "en": "Right in the middle of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ の / động từ ている + 最中に (さいちゅうに). Một sự việc bất ngờ xảy ra đúng lúc hành động đang diễn ra mạnh. Vế sau thường là chuyện làm phiền, gián đoạn.",
+        "en": "Usage: noun の / verb ている + 最中に (さいちゅうに). Something unexpected happens right while an action is in full swing. The second clause is usually an interruption or nuisance."
+      },
+      "examples": [
+        {
+          "ja": "会議の最中に、携帯電話が鳴りました。",
+          "reading": "かいぎのさいちゅうに、けいたいでんわがなりました。",
+          "translation": {
+            "vi": "Đang giữa cuộc họp thì điện thoại di động reo.",
+            "en": "My cell phone rang right in the middle of the meeting."
+          }
+        },
+        {
+          "ja": "食事をしている最中に、地震が起きました。",
+          "reading": "しょくじをしているさいちゅうに、じしんがおきました。",
+          "translation": {
+            "vi": "Đang lúc ăn cơm thì động đất xảy ra.",
+            "en": "An earthquake struck right in the middle of the meal."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-051"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜うちに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n温かい（　）、食べてください。",
+        "en": "Choose the correct option for the blank:\n温かい（　）、食べてください。"
+      },
+      "payload": {
+        "choices": [
+          "あいだ",
+          "ところに",
+          "ばかりに",
+          "うちに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Làm khi trạng thái còn nóng, trước khi nguội: 「温かいうちに」.",
+        "en": "Correct! Doing it while it is warm, before it cools: 「温かいうちに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Làm khi trạng thái còn nóng, trước khi nguội: 「温かいうちに」.",
+        "en": "Not quite. Doing it while it is warm, before it cools: 「温かいうちに」."
+      }
+    },
+    {
+      "item": "〜うちに",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n若い___、いろいろな経験をしたいです。",
+        "en": "Choose the correct option for the blank:\n若い___、いろいろな経験をしたいです。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "うちに"
+        ],
+        "hint": "〜うちに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trong khi còn trẻ: 「若いうちに」.",
+        "en": "Correct! While still young: 「若いうちに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trong khi còn trẻ: 「若いうちに」.",
+        "en": "Not quite. While still young: 「若いうちに」."
+      }
+    },
+    {
+      "item": "〜うちに",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n雨が降らない（　）、洗濯物を干しましょう。",
+        "en": "Choose the pattern that best fits the context:\n雨が降らない（　）、洗濯物を干しましょう。"
+      },
+      "payload": {
+        "choices": [
+          "最中に",
+          "たびに",
+          "うちに",
+          "あいだ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phơi khi trời chưa mưa (trước khi thay đổi): 「降らないうちに」.",
+        "en": "Correct! Hang the laundry before the rain starts (before it changes): 「降らないうちに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phơi khi trời chưa mưa (trước khi thay đổi): 「降らないうちに」.",
+        "en": "Not quite. Hang the laundry before the rain starts (before it changes): 「降らないうちに」."
+      }
+    },
+    {
+      "item": "〜うちに",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "忘れないうちが、メモしておきます。",
+          "忘れないうちに、メモしておきます。",
+          "忘れないうちを、メモしておきます。",
+          "忘れないのうちに、メモしておきます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể ない + 「うちに」 trực tiếp: 「忘れないうちに」.",
+        "en": "Correct! The ない-form + 「うちに」 directly: 「忘れないうちに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể ない + 「うちに」 trực tiếp: 「忘れないうちに」.",
+        "en": "Not quite. The ない-form + 「うちに」 directly: 「忘れないうちに」."
+      }
+    },
+    {
+      "item": "〜最中に",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n会議の（　）、携帯電話が鳴りました。",
+        "en": "Choose the correct option for the blank:\n会議の（　）、携帯電話が鳴りました。"
+      },
+      "payload": {
+        "choices": [
+          "最中に",
+          "うちに",
+          "たびに",
+          "ところに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đang giữa cuộc họp: 「会議の最中に」.",
+        "en": "Correct! Right in the middle of the meeting: 「会議の最中に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đang giữa cuộc họp: 「会議の最中に」.",
+        "en": "Not quite. Right in the middle of the meeting: 「会議の最中に」."
+      }
+    },
+    {
+      "item": "〜最中に",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n食事をしている___、地震が起きました。",
+        "en": "Choose the correct option for the blank:\n食事をしている___、地震が起きました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "最中に",
+          "さいちゅうに"
+        ],
+        "hint": "さいちゅうに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đang ăn thì xảy ra chuyện: 「している最中に」.",
+        "en": "Correct! Something happens while eating: 「している最中に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đang ăn thì xảy ra chuyện: 「している最中に」.",
+        "en": "Not quite. Something happens while eating: 「している最中に」."
+      }
+    },
+    {
+      "item": "〜最中に",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nお風呂に入っている（　）、電話が鳴りました。",
+        "en": "Choose the pattern that best fits the context:\nお風呂に入っている（　）、電話が鳴りました。"
+      },
+      "payload": {
+        "choices": [
+          "うちに",
+          "たびに",
+          "あとで",
+          "最中に"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sự việc làm gián đoạn xảy ra giữa lúc đang tắm: 「最中に」.",
+        "en": "Correct! An interrupting event occurs while bathing: 「最中に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sự việc làm gián đoạn xảy ra giữa lúc đang tắm: 「最中に」.",
+        "en": "Not quite. An interrupting event occurs while bathing: 「最中に」."
+      }
+    },
+    {
+      "item": "〜最中に",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "試験の最中に、勉強してください。",
+          "試験の最中に、停電にしましょう。",
+          "試験の最中に、停電になりました。",
+          "試験の最中に、停電にしたい。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「最中に」 là sự việc bất ngờ đã xảy ra, không dùng nhờ vả hay ý chí.",
+        "en": "Correct! After 「最中に」 comes an unexpected event, not a request or volition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「最中に」 là sự việc bất ngờ đã xảy ra, không dùng nhờ vả hay ý chí.",
+        "en": "Not quite. After 「最中に」 comes an unexpected event, not a request or volition."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜うちに",
+            {
+              "vi": "Trong khi còn ~",
+              "en": "While still ~ (before it changes)"
+            }
+          ],
+          [
+            "〜最中に",
+            {
+              "vi": "Đang giữa lúc ~",
+              "en": "Right in the middle of ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

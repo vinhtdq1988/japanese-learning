@@ -1,0 +1,531 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-obligation-possibility",
+  "title": {
+    "vi": "Cần thiết và khả năng (3): 〜ことはない, 〜ものだ, 〜ようがない, 〜ずにはいられない, 〜ことだ",
+    "en": "Necessity and possibility (3): 〜ことはない, 〜ものだ, 〜ようがない, 〜ずにはいられない, 〜ことだ"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ことはない",
+      "meaning": {
+        "vi": "Không cần phải ~",
+        "en": "There is no need to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + ことはない. Nói không cần thiết phải làm; dùng khi an ủi, trấn an (そんなに心配することはない). Khác 〜なくてもいい (không cần) ở sắc thái an ủi.",
+        "en": "Usage: verb dictionary form + ことはない. Says it is unnecessary; used to reassure (そんなに心配することはない). Unlike 〜なくてもいい, it has a comforting nuance."
+      },
+      "examples": [
+        {
+          "ja": "そんなに心配することはありません。",
+          "reading": "そんなにしんぱいすることはありません。",
+          "translation": {
+            "vi": "Không cần phải lo lắng đến thế.",
+            "en": "There is no need to worry that much."
+          }
+        },
+        {
+          "ja": "もう謝ることはないよ。",
+          "reading": "もうあやまることはないよ。",
+          "translation": {
+            "vi": "Không cần phải xin lỗi nữa đâu.",
+            "en": "You do not need to apologize anymore."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-083"
+    },
+    {
+      "japanese": "〜ものだ",
+      "meaning": {
+        "vi": "Vốn dĩ ~, lẽ thường ~",
+        "en": "It is natural that ~; used to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / tính từ + ものだ (nhận xét theo lẽ thường, lời khuyên); động từ thể た + ものだ (hồi tưởng nhớ lại). Biểu hiện chân lý chung hoặc cảm khái, không phải một sự việc cụ thể.",
+        "en": "Usage: verb dictionary form / adjective + ものだ (a general truth or advice); verb た-form + ものだ (nostalgic recollection). Expresses a general truth or sentiment, not a particular event."
+      },
+      "examples": [
+        {
+          "ja": "子どもは、よく遊ぶものです。",
+          "reading": "こどもは、よくあそぶものです。",
+          "translation": {
+            "vi": "Trẻ con vốn dĩ là hay chơi.",
+            "en": "Children naturally play a lot."
+          }
+        },
+        {
+          "ja": "若いころは、よく徹夜したものだ。",
+          "reading": "わかいころは、よくてつやしたものだ。",
+          "translation": {
+            "vi": "Hồi còn trẻ tôi thường thức trắng đêm.",
+            "en": "When I was young, I used to stay up all night."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-084"
+    },
+    {
+      "japanese": "〜ようがない",
+      "meaning": {
+        "vi": "Không có cách nào ~",
+        "en": "There is no way to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + ようがない (ようもない). Không có phương pháp để làm dù muốn, do thiếu thông tin hoặc hoàn cảnh. Khác 〜できない (không thể nói chung).",
+        "en": "Usage: verb ます-stem + ようがない (ようもない). There is no method to do it even if one wants to, due to a lack of information or circumstances. Unlike plain 〜できない."
+      },
+      "examples": [
+        {
+          "ja": "連絡先がわからないので、連絡しようがありません。",
+          "reading": "れんらくさきがわからないので、れんらくしようがありません。",
+          "translation": {
+            "vi": "Vì không biết địa chỉ liên lạc nên không có cách nào liên lạc.",
+            "en": "I do not know the contact details, so there is no way to get in touch."
+          }
+        },
+        {
+          "ja": "こんなに壊れていては、直しようがない。",
+          "reading": "こんなにこわれていては、なおしようがない。",
+          "translation": {
+            "vi": "Hỏng thế này thì không cách nào sửa được.",
+            "en": "It is so broken there is no way to fix it."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-085"
+    },
+    {
+      "japanese": "〜ずにはいられない",
+      "meaning": {
+        "vi": "Không thể không ~ (kìm lòng không đặng)",
+        "en": "Cannot help ~ing"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể ない bỏ ない + ずにはいられない (する→せずには). Cảm xúc/phản xạ mạnh khiến không thể kìm nén được. Gần nghĩa 〜ないではいられない.",
+        "en": "Conjugation: verb ない-form drop ない + ずにはいられない (する→せずには). A strong emotion or reflex that cannot be suppressed. Close to 〜ないではいられない."
+      },
+      "examples": [
+        {
+          "ja": "おもしろくて、笑わずにはいられませんでした。",
+          "reading": "おもしろくて、わらわずにはいられませんでした。",
+          "translation": {
+            "vi": "Buồn cười quá nên tôi không thể nhịn cười.",
+            "en": "It was so funny that I could not help laughing."
+          }
+        },
+        {
+          "ja": "その話を聞いて、泣かずにはいられなかった。",
+          "reading": "そのはなしをきいて、なかずにはいられなかった。",
+          "translation": {
+            "vi": "Nghe câu chuyện đó, tôi không thể không khóc.",
+            "en": "Hearing that story, I could not help crying."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-086"
+    },
+    {
+      "japanese": "〜ことだ（助言）",
+      "meaning": {
+        "vi": "Nên ~ (khuyên nhủ)",
+        "en": "You should ~ (advice)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ことだ. Lời khuyên mạnh, giọng người lớn tuổi hoặc cấp trên dạy bảo (\"điều nên làm là…\"). Không dùng với người trên; khác 〜たほうがいい ở sắc thái răn dạy.",
+        "en": "Usage: verb dictionary/ない-form + ことだ. A firm piece of advice, in the tone of an elder or superior instructing (\"what you should do is…\"). Not used toward superiors; unlike 〜たほうがいい it has a teaching tone."
+      },
+      "examples": [
+        {
+          "ja": "上手になりたいなら、毎日練習することだ。",
+          "reading": "じょうずになりたいなら、まいにちれんしゅうすることだ。",
+          "translation": {
+            "vi": "Muốn giỏi thì phải luyện tập mỗi ngày.",
+            "en": "If you want to improve, practice every day."
+          }
+        },
+        {
+          "ja": "風邪をひかないように、体を温めることです。",
+          "reading": "かぜをひかないように、からだをあたためることです。",
+          "translation": {
+            "vi": "Để không bị cảm thì nên giữ ấm cơ thể.",
+            "en": "To avoid catching a cold, keep your body warm."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-087"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ことはない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nそんなに心配する（　）ありません。",
+        "en": "Choose the correct option for the blank:\nそんなに心配する（　）ありません。"
+      },
+      "payload": {
+        "choices": [
+          "ことは",
+          "ことが",
+          "ことを",
+          "ことに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trấn an không cần lo: 「心配することはありません」.",
+        "en": "Correct! Reassuring that there is no need to worry: 「心配することはありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trấn an không cần lo: 「心配することはありません」.",
+        "en": "Not quite. Reassuring that there is no need to worry: 「心配することはありません」."
+      }
+    },
+    {
+      "item": "〜ことはない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nもう謝る___はないよ。",
+        "en": "Choose the correct option for the blank:\nもう謝る___はないよ。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こと"
+        ],
+        "hint": "こと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không cần xin lỗi nữa: 「謝ることはない」.",
+        "en": "Correct! No need to apologize anymore: 「謝ることはない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không cần xin lỗi nữa: 「謝ることはない」.",
+        "en": "Not quite. No need to apologize anymore: 「謝ることはない」."
+      }
+    },
+    {
+      "item": "〜ものだ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n子どもは、よく遊ぶ（　）です。",
+        "en": "Choose the correct option for the blank:\n子どもは、よく遊ぶ（　）です。"
+      },
+      "payload": {
+        "choices": [
+          "こと",
+          "はず",
+          "わけ",
+          "もの"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhận xét theo lẽ thường: 「遊ぶものです」.",
+        "en": "Correct! A general observation: 「遊ぶものです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhận xét theo lẽ thường: 「遊ぶものです」.",
+        "en": "Not quite. A general observation: 「遊ぶものです」."
+      }
+    },
+    {
+      "item": "〜ものだ",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n若いころは、よく徹夜した（　）。（hồi tưởng）",
+        "en": "Choose the pattern that best fits the context:\n若いころは、よく徹夜した（　）。（hồi tưởng）"
+      },
+      "payload": {
+        "choices": [
+          "ことだ",
+          "わけだ",
+          "ものだ",
+          "はずだ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Hồi tưởng chuyện thường làm ngày xưa: thể た + 「ものだ」.",
+        "en": "Correct! Recalling something often done long ago: た-form + 「ものだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hồi tưởng chuyện thường làm ngày xưa: thể た + 「ものだ」.",
+        "en": "Not quite. Recalling something often done long ago: た-form + 「ものだ」."
+      }
+    },
+    {
+      "item": "〜ようがない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n連絡先がわからないので、連絡し（　）ありません。",
+        "en": "Choose the correct option for the blank:\n連絡先がわからないので、連絡し（　）ありません。"
+      },
+      "payload": {
+        "choices": [
+          "ように",
+          "ようが",
+          "ようで",
+          "ような"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không có cách nào liên lạc: 「連絡しようがありません」.",
+        "en": "Correct! No way to get in touch: 「連絡しようがありません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không có cách nào liên lạc: 「連絡しようがありません」.",
+        "en": "Not quite. No way to get in touch: 「連絡しようがありません」."
+      }
+    },
+    {
+      "item": "〜ようがない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこんなに壊れていては、直し___がない。",
+        "en": "Choose the correct option for the blank:\nこんなに壊れていては、直し___がない。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう"
+        ],
+        "hint": "よう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không cách nào sửa: 「直しようがない」.",
+        "en": "Correct! No way to repair it: 「直しようがない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không cách nào sửa: 「直しようがない」.",
+        "en": "Not quite. No way to repair it: 「直しようがない」."
+      }
+    },
+    {
+      "item": "〜ずにはいられない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nおもしろくて、笑わ（　）はいられませんでした。",
+        "en": "Choose the correct option for the blank:\nおもしろくて、笑わ（　）はいられませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "ずに",
+          "ないで",
+          "なくて",
+          "ないと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể nhịn: 「笑わずにはいられない」.",
+        "en": "Correct! Cannot help laughing: 「笑わずにはいられない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể nhịn: 「笑わずにはいられない」.",
+        "en": "Not quite. Cannot help laughing: 「笑わずにはいられない」."
+      }
+    },
+    {
+      "item": "〜ずにはいられない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "その話を聞いて、泣かないずにはいられなかった。",
+          "その話を聞いて、泣きずにはいられなかった。",
+          "その話を聞いて、泣くずにはいられなかった。",
+          "その話を聞いて、泣かずにはいられなかった。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể ない bỏ 「ない」 + 「ずに」: 「泣かずに」.",
+        "en": "Correct! The ない-form drops 「ない」 + 「ずに」: 「泣かずに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể ない bỏ 「ない」 + 「ずに」: 「泣かずに」.",
+        "en": "Not quite. The ない-form drops 「ない」 + 「ずに」: 「泣かずに」."
+      }
+    },
+    {
+      "item": "〜ことだ（助言）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n上手になりたいなら、毎日練習する（　）。",
+        "en": "Choose the correct option for the blank:\n上手になりたいなら、毎日練習する（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ものだ",
+          "わけだ",
+          "ことだ",
+          "はずだ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lời khuyên: 「練習することだ」.",
+        "en": "Correct! A piece of advice: 「練習することだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lời khuyên: 「練習することだ」.",
+        "en": "Not quite. A piece of advice: 「練習することだ」."
+      }
+    },
+    {
+      "item": "〜ことだ（助言）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n風邪をひかないように、体を温める___です。",
+        "en": "Choose the correct option for the blank:\n風邪をひかないように、体を温める___です。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ことだ",
+          "こと"
+        ],
+        "hint": "こと"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khuyên giữ ấm: 「温めることです」.",
+        "en": "Correct! Advising to keep warm: 「温めることです」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khuyên giữ ấm: 「温めることです」.",
+        "en": "Not quite. Advising to keep warm: 「温めることです」."
+      }
+    },
+    {
+      "item": "〜ことだ（助言）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nA: 試験に受かりたいんです。 B: それなら、毎日復習する（　）。",
+        "en": "Choose the pattern that best fits the context:\nA: 試験に受かりたいんです。 B: それなら、毎日復習する（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ものだ",
+          "ことだ",
+          "ずにはいられない",
+          "ようがない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lời khuyên của người đi trước: 「復習することだ」.",
+        "en": "Correct! Advice from someone experienced: 「復習することだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lời khuyên của người đi trước: 「復習することだ」.",
+        "en": "Not quite. Advice from someone experienced: 「復習することだ」."
+      }
+    },
+    {
+      "item": "〜ようがない",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ hai):\nこんなに壊れていては、＿　★　＿　。\n（直し／ようが／ない）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the second slot):\nこんなに壊れていては、＿　★　＿　。\n（直し／ようが／ない）"
+      },
+      "payload": {
+        "choices": [
+          "直し",
+          "ようが",
+          "ない"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「こんなに壊れていては、直しようがない。」 trong bài này sắp xếp 直し → ようが → ない; ô ★ (thứ hai) là 「ようが」.",
+        "en": "Correct! The correct phrase is 「直しようがない」, arranged 直し → ようが → ない; the ★ (second) slot is 「ようが」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「こんなに壊れていては、直しようがない。」 trong bài này sắp xếp 直し → ようが → ない; ô ★ (thứ hai) là 「ようが」.",
+        "en": "Not quite. The correct phrase is 「直しようがない」, arranged 直し → ようが → ない; the ★ (second) slot is 「ようが」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ことはない",
+            {
+              "vi": "Không cần phải ~",
+              "en": "There is no need to ~"
+            }
+          ],
+          [
+            "〜ものだ",
+            {
+              "vi": "Vốn dĩ ~, lẽ thường ~",
+              "en": "It is natural that ~; used to ~"
+            }
+          ],
+          [
+            "〜ようがない",
+            {
+              "vi": "Không có cách nào ~",
+              "en": "There is no way to ~"
+            }
+          ],
+          [
+            "〜ずにはいられない",
+            {
+              "vi": "Không thể không ~ (kìm lòng không đặng)",
+              "en": "Cannot help ~ing"
+            }
+          ],
+          [
+            "〜ことだ（助言）",
+            {
+              "vi": "Nên ~ (khuyên nhủ)",
+              "en": "You should ~ (advice)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

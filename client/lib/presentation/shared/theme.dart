@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../competency/competency_palette.dart';
+
 /// Chủ đề giao diện Material 3, tối ưu cho trình duyệt desktop (Giai đoạn 1).
 ThemeData buildAppTheme({Brightness brightness = Brightness.light}) {
   final scheme = ColorScheme.fromSeed(
@@ -11,6 +13,11 @@ ThemeData buildAppTheme({Brightness brightness = Brightness.light}) {
   return ThemeData(
     useMaterial3: true,
     colorScheme: scheme,
+    extensions: <ThemeExtension<dynamic>>[
+      brightness == Brightness.dark
+          ? CompetencyPalette.dark(scheme)
+          : CompetencyPalette.light(scheme),
+    ],
     visualDensity: VisualDensity.standard,
     // Chữ Nhật cần phông có glyph CJK. Flutter web (CanvasKit) không dùng phông hệ thống nên
     // 'Noto Sans JP' là phông đóng gói trong assets/fonts (khai báo ở pubspec.yaml); các phông còn lại

@@ -1,0 +1,667 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-economy-money",
+  "title": {
+    "vi": "Kanji kinh tế – tiền bạc (財 値 客 貨 材)",
+    "en": "Economy and money kanji (財 値 客 貨 材)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 930,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "財",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "tài; của cải",
+        "en": "wealth; property"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザイ",
+          "サイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "財産",
+          "reading": "ざいさん",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "tài sản",
+            "en": "property"
+          }
+        },
+        {
+          "ja": "財布",
+          "reading": "さいふ",
+          "kanjiReading": "サイ",
+          "translation": {
+            "vi": "ví tiền",
+            "en": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "値",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "giá; giá trị",
+        "en": "price; value"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チ"
+        ],
+        "kunReadings": [
+          "ね",
+          "あたい"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "価値",
+          "reading": "かち",
+          "kanjiReading": "チ",
+          "translation": {
+            "vi": "giá trị",
+            "en": "value"
+          }
+        },
+        {
+          "ja": "値段",
+          "reading": "ねだん",
+          "kanjiReading": "ね",
+          "translation": {
+            "vi": "giá cả",
+            "en": "price"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "客",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "khách",
+        "en": "guest; customer"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キャク",
+          "カク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "乗客",
+          "reading": "じょうきゃく",
+          "kanjiReading": "キャク",
+          "translation": {
+            "vi": "hành khách",
+            "en": "passenger"
+          }
+        },
+        {
+          "ja": "お客さん",
+          "reading": "おきゃくさん",
+          "kanjiReading": "キャク",
+          "translation": {
+            "vi": "khách hàng",
+            "en": "customer"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "貨",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "hàng; tiền tệ",
+        "en": "goods; currency"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "通貨",
+          "reading": "つうか",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "tiền tệ",
+            "en": "currency"
+          }
+        },
+        {
+          "ja": "貨物",
+          "reading": "かもつ",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "hàng hóa vận chuyển",
+            "en": "cargo"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "材",
+      "topic": "kanji-n3-economy-money",
+      "meaning": {
+        "vi": "vật liệu; tài năng",
+        "en": "material; talent"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "材料",
+          "reading": "ざいりょう",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "nguyên liệu",
+            "en": "ingredients"
+          }
+        },
+        {
+          "ja": "人材",
+          "reading": "じんざい",
+          "kanjiReading": "ザイ",
+          "translation": {
+            "vi": "nhân tài",
+            "en": "talent"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "財",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「財」nghĩa là gì?",
+        "en": "What does 「財」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tài; của cải",
+            "en": "wealth; property"
+          },
+          {
+            "vi": "giá; giá trị",
+            "en": "price; value"
+          },
+          {
+            "vi": "khách",
+            "en": "guest; customer"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 財 nghĩa là tài; của cải.",
+        "en": "Correct! 財 means wealth; property."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 財 nghĩa là tài; của cải, như trong 「財産」 (tài sản).",
+        "en": "Not quite. 財 means wealth; property, as in 「財産」 (property)."
+      }
+    },
+    {
+      "item": "財",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「財」 trong 「財産」 (“tài sản”).",
+        "en": "Type the reading of 「財」 in 「財産」 (“property”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざい",
+          "ザイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 財産, 財 đọc là ざい (âm On).",
+        "en": "Correct! In 財産, 財 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 財産 (tài sản), 財 đọc là ざい (âm On).",
+        "en": "In 財産 (property), 財 is read ざい (on'yomi)."
+      }
+    },
+    {
+      "item": "財",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「財布」(ví tiền) đọc là gì?",
+        "en": "How is 「財布」 (wallet) read?"
+      },
+      "payload": {
+        "choices": [
+          "ざいふ",
+          "さいふ",
+          "さいぶ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 財布 = さいふ (ví tiền); 財 đọc là さい (âm On).",
+        "en": "Correct! 財布 = さいふ (wallet); 財 is read さい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "財布 đọc là さいふ (ví tiền): 財 mang âm On さい.",
+        "en": "財布 is read さいふ (wallet): 財 takes the on'yomi さい."
+      }
+    },
+    {
+      "item": "値",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「値」nghĩa là gì?",
+        "en": "What does 「値」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "khách",
+            "en": "guest; customer"
+          },
+          {
+            "vi": "giá; giá trị",
+            "en": "price; value"
+          },
+          {
+            "vi": "hàng; tiền tệ",
+            "en": "goods; currency"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 値 nghĩa là giá; giá trị.",
+        "en": "Correct! 値 means price; value."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 値 nghĩa là giá; giá trị, như trong 「価値」 (giá trị).",
+        "en": "Not quite. 値 means price; value, as in 「価値」 (value)."
+      }
+    },
+    {
+      "item": "値",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「値」 trong 「価値」 (“giá trị”).",
+        "en": "Type the reading of 「値」 in 「価値」 (“value”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ち",
+          "チ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 価値, 値 đọc là ち (âm On).",
+        "en": "Correct! In 価値, 値 is read ち (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 価値 (giá trị), 値 đọc là ち (âm On).",
+        "en": "In 価値 (value), 値 is read ち (on'yomi)."
+      }
+    },
+    {
+      "item": "値",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「値段」(giá cả) đọc là gì?",
+        "en": "How is 「値段」 (price) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちだん",
+          "ねたん",
+          "ねだん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 値段 = ねだん (giá cả); 値 đọc là ね (âm Kun).",
+        "en": "Correct! 値段 = ねだん (price); 値 is read ね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "値段 đọc là ねだん (giá cả): 値 mang âm Kun ね.",
+        "en": "値段 is read ねだん (price): 値 takes the kun'yomi ね."
+      }
+    },
+    {
+      "item": "客",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「客」nghĩa là gì?",
+        "en": "What does 「客」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hàng; tiền tệ",
+            "en": "goods; currency"
+          },
+          {
+            "vi": "vật liệu; tài năng",
+            "en": "material; talent"
+          },
+          {
+            "vi": "khách",
+            "en": "guest; customer"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 客 nghĩa là khách.",
+        "en": "Correct! 客 means guest; customer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 客 nghĩa là khách, như trong 「乗客」 (hành khách).",
+        "en": "Not quite. 客 means guest; customer, as in 「乗客」 (passenger)."
+      }
+    },
+    {
+      "item": "客",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「客」 trong 「乗客」 (“hành khách”).",
+        "en": "Type the reading of 「客」 in 「乗客」 (“passenger”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゃく",
+          "キャク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 乗客, 客 đọc là きゃく (âm On).",
+        "en": "Correct! In 乗客, 客 is read きゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 乗客 (hành khách), 客 đọc là きゃく (âm On).",
+        "en": "In 乗客 (passenger), 客 is read きゃく (on'yomi)."
+      }
+    },
+    {
+      "item": "客",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「お客さん」(khách hàng) đọc là gì?",
+        "en": "How is 「お客さん」 (customer) read?"
+      },
+      "payload": {
+        "choices": [
+          "おきゃくさん",
+          "おかくさん",
+          "ざいりょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! お客さん = おきゃくさん (khách hàng); 客 đọc là きゃく (âm On).",
+        "en": "Correct! お客さん = おきゃくさん (customer); 客 is read きゃく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "お客さん đọc là おきゃくさん (khách hàng): 客 mang âm On きゃく.",
+        "en": "お客さん is read おきゃくさん (customer): 客 takes the on'yomi きゃく."
+      }
+    },
+    {
+      "item": "貨",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貨」nghĩa là gì?",
+        "en": "What does 「貨」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hàng; tiền tệ",
+            "en": "goods; currency"
+          },
+          {
+            "vi": "vật liệu; tài năng",
+            "en": "material; talent"
+          },
+          {
+            "vi": "tài; của cải",
+            "en": "wealth; property"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貨 nghĩa là hàng; tiền tệ.",
+        "en": "Correct! 貨 means goods; currency."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 貨 nghĩa là hàng; tiền tệ, như trong 「通貨」 (tiền tệ).",
+        "en": "Not quite. 貨 means goods; currency, as in 「通貨」 (currency)."
+      }
+    },
+    {
+      "item": "貨",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「貨」 trong 「通貨」 (“tiền tệ”).",
+        "en": "Type the reading of 「貨」 in 「通貨」 (“currency”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 通貨, 貨 đọc là か (âm On).",
+        "en": "Correct! In 通貨, 貨 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 通貨 (tiền tệ), 貨 đọc là か (âm On).",
+        "en": "In 通貨 (currency), 貨 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "貨",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「貨物」(hàng hóa vận chuyển) đọc là gì?",
+        "en": "How is 「貨物」 (cargo) read?"
+      },
+      "payload": {
+        "choices": [
+          "がもつ",
+          "かもつ",
+          "ざいもつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 貨物 = かもつ (hàng hóa vận chuyển); 貨 đọc là か (âm On).",
+        "en": "Correct! 貨物 = かもつ (cargo); 貨 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "貨物 đọc là かもつ (hàng hóa vận chuyển): 貨 mang âm On か.",
+        "en": "貨物 is read かもつ (cargo): 貨 takes the on'yomi か."
+      }
+    },
+    {
+      "item": "材",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「材」nghĩa là gì?",
+        "en": "What does 「材」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tài; của cải",
+            "en": "wealth; property"
+          },
+          {
+            "vi": "vật liệu; tài năng",
+            "en": "material; talent"
+          },
+          {
+            "vi": "giá; giá trị",
+            "en": "price; value"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 材 nghĩa là vật liệu; tài năng.",
+        "en": "Correct! 材 means material; talent."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 材 nghĩa là vật liệu; tài năng, như trong 「材料」 (nguyên liệu).",
+        "en": "Not quite. 材 means material; talent, as in 「材料」 (ingredients)."
+      }
+    },
+    {
+      "item": "材",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「材」 trong 「材料」 (“nguyên liệu”).",
+        "en": "Type the reading of 「材」 in 「材料」 (“ingredients”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざい",
+          "ザイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 材料, 材 đọc là ざい (âm On).",
+        "en": "Correct! In 材料, 材 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 材料 (nguyên liệu), 材 đọc là ざい (âm On).",
+        "en": "In 材料 (ingredients), 材 is read ざい (on'yomi)."
+      }
+    },
+    {
+      "item": "材",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「人材」(nhân tài) đọc là gì?",
+        "en": "How is 「人材」 (talent) read?"
+      },
+      "payload": {
+        "choices": [
+          "じんさい",
+          "じんね",
+          "じんざい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 人材 = じんざい (nhân tài); 材 đọc là ざい (âm On).",
+        "en": "Correct! 人材 = じんざい (talent); 材 is read ざい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "人材 đọc là じんざい (nhân tài): 材 mang âm On ざい.",
+        "en": "人材 is read じんざい (talent): 材 takes the on'yomi ざい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "財",
+            {
+              "vi": "tài; của cải",
+              "en": "wealth; property"
+            }
+          ],
+          [
+            "値",
+            {
+              "vi": "giá; giá trị",
+              "en": "price; value"
+            }
+          ],
+          [
+            "客",
+            {
+              "vi": "khách",
+              "en": "guest; customer"
+            }
+          ],
+          [
+            "貨",
+            {
+              "vi": "hàng; tiền tệ",
+              "en": "goods; currency"
+            }
+          ],
+          [
+            "材",
+            {
+              "vi": "vật liệu; tài năng",
+              "en": "material; talent"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-discourse",
+  "title": {
+    "vi": "Nối ý và chuyển ý",
+    "en": "Linking and shifting ideas"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3040,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "そして",
+      "reading": "そして",
+      "meaning": {
+        "vi": "Và rồi; sau đó",
+        "en": "And then"
+      },
+      "examples": [
+        {
+          "ja": "朝ご飯を食べました。そして、学校へ行きました。",
+          "reading": "あさごはんをたべました。そして、がっこうへいきました。",
+          "translation": {
+            "vi": "Tôi ăn sáng. Rồi tôi đến trường.",
+            "en": "I ate breakfast. And then I went to school."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "但し",
+      "reading": "ただし",
+      "meaning": {
+        "vi": "Tuy nhiên (với điều kiện)",
+        "en": "However; provided that"
+      },
+      "examples": [
+        {
+          "ja": "入場は無料です。但し、予約が必要です。",
+          "reading": "にゅうじょうはむりょうです。ただし、よやくがひつようです。",
+          "translation": {
+            "vi": "Vào cửa miễn phí. Tuy nhiên cần đặt chỗ trước.",
+            "en": "Admission is free. However, a reservation is required."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "又は",
+      "reading": "または",
+      "meaning": {
+        "vi": "Hoặc",
+        "en": "Or (formal)"
+      },
+      "examples": [
+        {
+          "ja": "申込書は、郵送又は持参してください。",
+          "reading": "もうしこみしょは、ゆうそうまたはじさんしてください。",
+          "translation": {
+            "vi": "Hãy gửi đơn đăng ký qua bưu điện hoặc mang đến trực tiếp.",
+            "en": "Please send the application by mail or bring it in person."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "つまり",
+      "reading": "つまり",
+      "meaning": {
+        "vi": "Tức là; nói cách khác",
+        "en": "In other words; that is"
+      },
+      "examples": [
+        {
+          "ja": "彼は父の弟です。つまり、私のおじです。",
+          "reading": "かれはちちのおとうとです。つまり、わたしのおじです。",
+          "translation": {
+            "vi": "Anh ấy là em của bố tôi. Tức là chú của tôi.",
+            "en": "He is my father's younger brother. In other words, my uncle."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "それゆえ",
+      "reading": "それゆえ",
+      "meaning": {
+        "vi": "Vì vậy; do đó (trang trọng)",
+        "en": "For that reason"
+      },
+      "examples": [
+        {
+          "ja": "彼は、勤勉だ。それゆえ、信頼されている。",
+          "reading": "かれは、きんべんだ。それゆえ、しんらいされている。",
+          "translation": {
+            "vi": "Anh ấy chăm chỉ. Vì vậy anh được tin cậy.",
+            "en": "He is diligent. For that reason he is trusted."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "おまけに",
+      "reading": "おまけに",
+      "meaning": {
+        "vi": "Thêm vào đó (thường điều xấu)",
+        "en": "On top of that"
+      },
+      "examples": [
+        {
+          "ja": "雨が降っていて、おまけに、風も強いです。",
+          "reading": "あめがふっていて、おまけに、かぜもつよいです。",
+          "translation": {
+            "vi": "Trời đang mưa, hơn nữa gió lại mạnh.",
+            "en": "It is raining, and on top of that the wind is strong."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ちなみに",
+      "reading": "ちなみに",
+      "meaning": {
+        "vi": "Nhân tiện; tiện thể nói thêm",
+        "en": "Incidentally; by the way"
+      },
+      "examples": [
+        {
+          "ja": "会議は三時からです。ちなみに、場所は二階です。",
+          "reading": "かいぎはさんじからです。ちなみに、ばしょはにかいです。",
+          "translation": {
+            "vi": "Cuộc họp bắt đầu từ 3 giờ. Nhân tiện, địa điểm ở tầng hai.",
+            "en": "The meeting is from three o'clock. Incidentally, the place is on the second floor."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一方",
+      "reading": "いっぽう",
+      "meaning": {
+        "vi": "Mặt khác; trong khi đó",
+        "en": "On the other hand; meanwhile"
+      },
+      "examples": [
+        {
+          "ja": "兄は活発だ。一方、弟は静かだ。",
+          "reading": "あにはかっぱつだ。いっぽう、おとうとはしずかだ。",
+          "translation": {
+            "vi": "Anh trai thì hoạt bát. Mặt khác, em trai lại trầm lặng.",
+            "en": "My older brother is lively. On the other hand, my younger brother is quiet."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "逆に",
+      "reading": "ぎゃくに",
+      "meaning": {
+        "vi": "Ngược lại",
+        "en": "Conversely"
+      },
+      "examples": [
+        {
+          "ja": "安くしたのに、逆に、売り上げが減りました。",
+          "reading": "やすくしたのに、ぎゃくに、うりあげがへりました。",
+          "translation": {
+            "vi": "Đã giảm giá mà ngược lại doanh thu lại giảm.",
+            "en": "We lowered the price, but conversely sales dropped."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "さて",
+      "reading": "さて",
+      "meaning": {
+        "vi": "Vậy thì; nào (chuyển chủ đề)",
+        "en": "Now then; well"
+      },
+      "examples": [
+        {
+          "ja": "さて、次の話題に移りましょう。",
+          "reading": "さて、つぎのわだいにうつりましょう。",
+          "translation": {
+            "vi": "Nào, chúng ta chuyển sang chủ đề tiếp theo.",
+            "en": "Now then, let's move on to the next topic."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "最後に",
+      "reading": "さいごに",
+      "meaning": {
+        "vi": "Cuối cùng",
+        "en": "Finally; lastly"
+      },
+      "examples": [
+        {
+          "ja": "最後に、一言お礼を申し上げます。",
+          "reading": "さいごに、ひとことおれいをもうしあげます。",
+          "translation": {
+            "vi": "Cuối cùng, tôi xin gửi lời cảm ơn.",
+            "en": "Lastly, I would like to say a word of thanks."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "だが",
+      "reading": "だが",
+      "meaning": {
+        "vi": "Nhưng; tuy nhiên (văn viết)",
+        "en": "But; however"
+      },
+      "examples": [
+        {
+          "ja": "彼は、強い。だが、優しさも持っている。",
+          "reading": "かれは、つよい。だが、やさしさももっている。",
+          "translation": {
+            "vi": "Anh ấy mạnh mẽ. Nhưng cũng có sự dịu dàng.",
+            "en": "He is strong. But he also has gentleness."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "そして",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 朝ご飯を食べました。（　）、学校へ行きました。 — Nghĩa của câu: “Tôi ăn sáng. Rồi tôi đến trường.”",
+        "en": "Choose the word that fits the blank: 朝ご飯を食べました。（　）、学校へ行きました。 — Meaning of the sentence: “I ate breakfast. And then I went to school.”"
+      },
+      "payload": {
+        "choices": [
+          "最後に",
+          "おまけに",
+          "一方",
+          "そして"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「そして」(Và rồi; sau đó) hợp nghĩa câu này: “Tôi ăn sáng. Rồi tôi đến trường.”",
+        "en": "Correct! 「そして」(And then) fits this sentence: “I ate breakfast. And then I went to school.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi ăn sáng. Rồi tôi đến trường.”, nên cần 「そして」(Và rồi; sau đó); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I ate breakfast. And then I went to school.”, so it needs 「そして」(And then); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "但し",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 入場は無料です。（　）、予約が必要です。 — Nghĩa của câu: “Vào cửa miễn phí. Tuy nhiên cần đặt chỗ trước.”",
+        "en": "Choose the word that fits the blank: 入場は無料です。（　）、予約が必要です。 — Meaning of the sentence: “Admission is free. However, a reservation is required.”"
+      },
+      "payload": {
+        "choices": [
+          "但し",
+          "逆に",
+          "最後に",
+          "つまり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「但し」(Tuy nhiên (với điều kiện)) hợp nghĩa câu này: “Vào cửa miễn phí. Tuy nhiên cần đặt chỗ trước.”",
+        "en": "Correct! 「但し」(However; provided that) fits this sentence: “Admission is free. However, a reservation is required.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào cửa miễn phí. Tuy nhiên cần đặt chỗ trước.”, nên cần 「但し」(Tuy nhiên (với điều kiện)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Admission is free. However, a reservation is required.”, so it needs 「但し」(However; provided that); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "又は",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 申込書は、郵送（　）持参してください。 — Nghĩa của câu: “Hãy gửi đơn đăng ký qua bưu điện hoặc mang đến trực tiếp.”",
+        "en": "Choose the word that fits the blank: 申込書は、郵送（　）持参してください。 — Meaning of the sentence: “Please send the application by mail or bring it in person.”"
+      },
+      "payload": {
+        "choices": [
+          "ちなみに",
+          "又は",
+          "つまり",
+          "それゆえ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「又は」(Hoặc) hợp nghĩa câu này: “Hãy gửi đơn đăng ký qua bưu điện hoặc mang đến trực tiếp.”",
+        "en": "Correct! 「又は」(Or (formal)) fits this sentence: “Please send the application by mail or bring it in person.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy gửi đơn đăng ký qua bưu điện hoặc mang đến trực tiếp.”, nên cần 「又は」(Hoặc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please send the application by mail or bring it in person.”, so it needs 「又は」(Or (formal)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "つまり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は父の弟です。（　）、私のおじです。 — Nghĩa của câu: “Anh ấy là em của bố tôi. Tức là chú của tôi.”",
+        "en": "Choose the word that fits the blank: 彼は父の弟です。（　）、私のおじです。 — Meaning of the sentence: “He is my father's younger brother. In other words, my uncle.”"
+      },
+      "payload": {
+        "choices": [
+          "それゆえ",
+          "逆に",
+          "つまり",
+          "そして"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「つまり」(Tức là; nói cách khác) hợp nghĩa câu này: “Anh ấy là em của bố tôi. Tức là chú của tôi.”",
+        "en": "Correct! 「つまり」(In other words; that is) fits this sentence: “He is my father's younger brother. In other words, my uncle.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy là em của bố tôi. Tức là chú của tôi.”, nên cần 「つまり」(Tức là; nói cách khác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is my father's younger brother. In other words, my uncle.”, so it needs 「つまり」(In other words; that is); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "それゆえ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、勤勉だ。（　）、信頼されている。 — Nghĩa của câu: “Anh ấy chăm chỉ. Vì vậy anh được tin cậy.”",
+        "en": "Choose the word that fits the blank: 彼は、勤勉だ。（　）、信頼されている。 — Meaning of the sentence: “He is diligent. For that reason he is trusted.”"
+      },
+      "payload": {
+        "choices": [
+          "ちなみに",
+          "最後に",
+          "但し",
+          "それゆえ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「それゆえ」(Vì vậy; do đó (trang trọng)) hợp nghĩa câu này: “Anh ấy chăm chỉ. Vì vậy anh được tin cậy.”",
+        "en": "Correct! 「それゆえ」(For that reason) fits this sentence: “He is diligent. For that reason he is trusted.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy chăm chỉ. Vì vậy anh được tin cậy.”, nên cần 「それゆえ」(Vì vậy; do đó (trang trọng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is diligent. For that reason he is trusted.”, so it needs 「それゆえ」(For that reason); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "おまけに",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 雨が降っていて、（　）、風も強いです。 — Nghĩa của câu: “Trời đang mưa, hơn nữa gió lại mạnh.”",
+        "en": "Choose the word that fits the blank: 雨が降っていて、（　）、風も強いです。 — Meaning of the sentence: “It is raining, and on top of that the wind is strong.”"
+      },
+      "payload": {
+        "choices": [
+          "おまけに",
+          "つまり",
+          "又は",
+          "ちなみに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おまけに」(Thêm vào đó (thường điều xấu)) hợp nghĩa câu này: “Trời đang mưa, hơn nữa gió lại mạnh.”",
+        "en": "Correct! 「おまけに」(On top of that) fits this sentence: “It is raining, and on top of that the wind is strong.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trời đang mưa, hơn nữa gió lại mạnh.”, nên cần 「おまけに」(Thêm vào đó (thường điều xấu)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is raining, and on top of that the wind is strong.”, so it needs 「おまけに」(On top of that); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ちなみに",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会議は三時からです。（　）、場所は二階です。 — Nghĩa của câu: “Cuộc họp bắt đầu từ 3 giờ. Nhân tiện, địa điểm ở tầng hai.”",
+        "en": "Choose the word that fits the blank: 会議は三時からです。（　）、場所は二階です。 — Meaning of the sentence: “The meeting is from three o'clock. Incidentally, the place is on the second floor.”"
+      },
+      "payload": {
+        "choices": [
+          "但し",
+          "ちなみに",
+          "そして",
+          "おまけに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ちなみに」(Nhân tiện; tiện thể nói thêm) hợp nghĩa câu này: “Cuộc họp bắt đầu từ 3 giờ. Nhân tiện, địa điểm ở tầng hai.”",
+        "en": "Correct! 「ちなみに」(Incidentally; by the way) fits this sentence: “The meeting is from three o'clock. Incidentally, the place is on the second floor.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuộc họp bắt đầu từ 3 giờ. Nhân tiện, địa điểm ở tầng hai.”, nên cần 「ちなみに」(Nhân tiện; tiện thể nói thêm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The meeting is from three o'clock. Incidentally, the place is on the second floor.”, so it needs 「ちなみに」(Incidentally; by the way); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一方",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は活発だ。（　）、弟は静かだ。 — Nghĩa của câu: “Anh trai thì hoạt bát. Mặt khác, em trai lại trầm lặng.”",
+        "en": "Choose the word that fits the blank: 兄は活発だ。（　）、弟は静かだ。 — Meaning of the sentence: “My older brother is lively. On the other hand, my younger brother is quiet.”"
+      },
+      "payload": {
+        "choices": [
+          "だが",
+          "それゆえ",
+          "一方",
+          "つまり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一方」(Mặt khác; trong khi đó) hợp nghĩa câu này: “Anh trai thì hoạt bát. Mặt khác, em trai lại trầm lặng.”",
+        "en": "Correct! 「一方」(On the other hand; meanwhile) fits this sentence: “My older brother is lively. On the other hand, my younger brother is quiet.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh trai thì hoạt bát. Mặt khác, em trai lại trầm lặng.”, nên cần 「一方」(Mặt khác; trong khi đó); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother is lively. On the other hand, my younger brother is quiet.”, so it needs 「一方」(On the other hand; meanwhile); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "逆に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 安くしたのに、（　）、売り上げが減りました。 — Nghĩa của câu: “Đã giảm giá mà ngược lại doanh thu lại giảm.”",
+        "en": "Choose the word that fits the blank: 安くしたのに、（　）、売り上げが減りました。 — Meaning of the sentence: “We lowered the price, but conversely sales dropped.”"
+      },
+      "payload": {
+        "choices": [
+          "但し",
+          "一方",
+          "つまり",
+          "逆に"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「逆に」(Ngược lại) hợp nghĩa câu này: “Đã giảm giá mà ngược lại doanh thu lại giảm.”",
+        "en": "Correct! 「逆に」(Conversely) fits this sentence: “We lowered the price, but conversely sales dropped.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đã giảm giá mà ngược lại doanh thu lại giảm.”, nên cần 「逆に」(Ngược lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We lowered the price, but conversely sales dropped.”, so it needs 「逆に」(Conversely); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "さて",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、次の話題に移りましょう。 — Nghĩa của câu: “Nào, chúng ta chuyển sang chủ đề tiếp theo.”",
+        "en": "Choose the word that fits the blank: （　）、次の話題に移りましょう。 — Meaning of the sentence: “Now then, let's move on to the next topic.”"
+      },
+      "payload": {
+        "choices": [
+          "さて",
+          "だが",
+          "ちなみに",
+          "そして"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「さて」(Vậy thì; nào (chuyển chủ đề)) hợp nghĩa câu này: “Nào, chúng ta chuyển sang chủ đề tiếp theo.”",
+        "en": "Correct! 「さて」(Now then; well) fits this sentence: “Now then, let's move on to the next topic.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nào, chúng ta chuyển sang chủ đề tiếp theo.”, nên cần 「さて」(Vậy thì; nào (chuyển chủ đề)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Now then, let's move on to the next topic.”, so it needs 「さて」(Now then; well); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "最後に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、一言お礼を申し上げます。 — Nghĩa của câu: “Cuối cùng, tôi xin gửi lời cảm ơn.”",
+        "en": "Choose the word that fits the blank: （　）、一言お礼を申し上げます。 — Meaning of the sentence: “Lastly, I would like to say a word of thanks.”"
+      },
+      "payload": {
+        "choices": [
+          "だが",
+          "最後に",
+          "それゆえ",
+          "おまけに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「最後に」(Cuối cùng) hợp nghĩa câu này: “Cuối cùng, tôi xin gửi lời cảm ơn.”",
+        "en": "Correct! 「最後に」(Finally; lastly) fits this sentence: “Lastly, I would like to say a word of thanks.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối cùng, tôi xin gửi lời cảm ơn.”, nên cần 「最後に」(Cuối cùng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Lastly, I would like to say a word of thanks.”, so it needs 「最後に」(Finally; lastly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "だが",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、強い。（　）、優しさも持っている。 — Nghĩa của câu: “Anh ấy mạnh mẽ. Nhưng cũng có sự dịu dàng.”",
+        "en": "Choose the word that fits the blank: 彼は、強い。（　）、優しさも持っている。 — Meaning of the sentence: “He is strong. But he also has gentleness.”"
+      },
+      "payload": {
+        "choices": [
+          "逆に",
+          "さて",
+          "だが",
+          "そして"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「だが」(Nhưng; tuy nhiên (văn viết)) hợp nghĩa câu này: “Anh ấy mạnh mẽ. Nhưng cũng có sự dịu dàng.”",
+        "en": "Correct! 「だが」(But; however) fits this sentence: “He is strong. But he also has gentleness.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy mạnh mẽ. Nhưng cũng có sự dịu dàng.”, nên cần 「だが」(Nhưng; tuy nhiên (văn viết)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is strong. But he also has gentleness.”, so it needs 「だが」(But; however); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "但し",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 入場は無料です。「但し」、予約が必要です。",
+        "en": "Choose the correct reading of the word in 「」: 入場は無料です。「但し」、予約が必要です。"
+      },
+      "payload": {
+        "choices": [
+          "ただし",
+          "だが",
+          "おまけに",
+          "そして"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「但し」 đọc là 「ただし」, nghĩa là Tuy nhiên (với điều kiện).",
+        "en": "Correct! 「但し」 is read 「ただし」 and means However; provided that."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「但し」 đọc là 「ただし」 (Tuy nhiên (với điều kiện)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「但し」 is read 「ただし」 (However; provided that); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "又は",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 申込書は、郵送「又は」持参してください。",
+        "en": "Choose the correct reading of the word in 「」: 申込書は、郵送「又は」持参してください。"
+      },
+      "payload": {
+        "choices": [
+          "さて",
+          "または",
+          "さいごに",
+          "ただし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「又は」 đọc là 「または」, nghĩa là Hoặc.",
+        "en": "Correct! 「又は」 is read 「または」 and means Or (formal)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「又は」 đọc là 「または」 (Hoặc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「又は」 is read 「または」 (Or (formal)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一方",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 兄は活発だ。「一方」、弟は静かだ。",
+        "en": "Choose the correct reading of the word in 「」: 兄は活発だ。「一方」、弟は静かだ。"
+      },
+      "payload": {
+        "choices": [
+          "さて",
+          "それゆえ",
+          "いっぽう",
+          "だが"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一方」 đọc là 「いっぽう」, nghĩa là Mặt khác; trong khi đó.",
+        "en": "Correct! 「一方」 is read 「いっぽう」 and means On the other hand; meanwhile."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「一方」 đọc là 「いっぽう」 (Mặt khác; trong khi đó); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「一方」 is read 「いっぽう」 (On the other hand; meanwhile); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "逆に",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 安くしたのに、「逆に」、売り上げが減りました。",
+        "en": "Choose the correct reading of the word in 「」: 安くしたのに、「逆に」、売り上げが減りました。"
+      },
+      "payload": {
+        "choices": [
+          "ちなみに",
+          "さいごに",
+          "そして",
+          "ぎゃくに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「逆に」 đọc là 「ぎゃくに」, nghĩa là Ngược lại.",
+        "en": "Correct! 「逆に」 is read 「ぎゃくに」 and means Conversely."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「逆に」 đọc là 「ぎゃくに」 (Ngược lại); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「逆に」 is read 「ぎゃくに」 (Conversely); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "最後に",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「さいごに」、一言お礼を申し上げます。",
+        "en": "Choose the correct way to write the word in 「」: 「さいごに」、一言お礼を申し上げます。"
+      },
+      "payload": {
+        "choices": [
+          "但し",
+          "最後に",
+          "逆に",
+          "又は"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「さいごに」 viết là 「最後に」, nghĩa là Cuối cùng.",
+        "en": "Correct! 「さいごに」 is written 「最後に」 and means Finally; lastly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「さいごに」 viết là 「最後に」 (Cuối cùng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「さいごに」 is written 「最後に」 (Finally; lastly); the other words are read differently."
+      }
+    }
+  ]
+}

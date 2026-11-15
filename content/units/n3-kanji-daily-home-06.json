@@ -1,0 +1,545 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (活 停 側 横)",
+    "en": "Daily life and home kanji (活 停 側 横)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "活",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "sống; hoạt động",
+        "en": "live; active"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カツ"
+        ],
+        "kunReadings": [
+          "い.きる"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "生活",
+          "reading": "せいかつ",
+          "kanjiReading": "カツ",
+          "translation": {
+            "vi": "cuộc sống",
+            "en": "life"
+          }
+        },
+        {
+          "ja": "活動",
+          "reading": "かつどう",
+          "kanjiReading": "カツ",
+          "translation": {
+            "vi": "hoạt động",
+            "en": "activity"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "停",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "dừng; đình",
+        "en": "stop"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "停電",
+          "reading": "ていでん",
+          "kanjiReading": "テイ",
+          "translation": {
+            "vi": "mất điện",
+            "en": "power outage"
+          }
+        },
+        {
+          "ja": "停止",
+          "reading": "ていし",
+          "kanjiReading": "テイ",
+          "translation": {
+            "vi": "dừng lại",
+            "en": "stoppage"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "側",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "bên; phía",
+        "en": "side"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソク"
+        ],
+        "kunReadings": [
+          "がわ",
+          "かわ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "側面",
+          "reading": "そくめん",
+          "kanjiReading": "ソク",
+          "translation": {
+            "vi": "mặt bên",
+            "en": "side"
+          }
+        },
+        {
+          "ja": "右側",
+          "reading": "みぎがわ",
+          "kanjiReading": "がわ",
+          "translation": {
+            "vi": "bên phải",
+            "en": "right side"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "横",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "ngang; bên cạnh",
+        "en": "side; horizontal"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "オウ"
+        ],
+        "kunReadings": [
+          "よこ"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "横断",
+          "reading": "おうだん",
+          "kanjiReading": "オウ",
+          "translation": {
+            "vi": "băng qua",
+            "en": "crossing"
+          }
+        },
+        {
+          "ja": "横切る",
+          "reading": "よこぎる",
+          "kanjiReading": "よこ",
+          "translation": {
+            "vi": "băng ngang qua",
+            "en": "to cross"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "活",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「活」nghĩa là gì?",
+        "en": "What does 「活」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "sống; hoạt động",
+            "en": "live; active"
+          },
+          {
+            "vi": "dừng; đình",
+            "en": "stop"
+          },
+          {
+            "vi": "bên; phía",
+            "en": "side"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 活 nghĩa là sống; hoạt động.",
+        "en": "Correct! 活 means live; active."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 活 nghĩa là sống; hoạt động, như trong 「生活」 (cuộc sống).",
+        "en": "Not quite. 活 means live; active, as in 「生活」 (life)."
+      }
+    },
+    {
+      "item": "活",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「活」 trong 「生活」 (“cuộc sống”).",
+        "en": "Type the reading of 「活」 in 「生活」 (“life”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かつ",
+          "カツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 生活, 活 đọc là かつ (âm On).",
+        "en": "Correct! In 生活, 活 is read かつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 生活 (cuộc sống), 活 đọc là かつ (âm On).",
+        "en": "In 生活 (life), 活 is read かつ (on'yomi)."
+      }
+    },
+    {
+      "item": "活",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「活動」(hoạt động) đọc là gì?",
+        "en": "How is 「活動」 (activity) read?"
+      },
+      "payload": {
+        "choices": [
+          "いどう",
+          "かつどう",
+          "がつどう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 活動 = かつどう (hoạt động); 活 đọc là かつ (âm On).",
+        "en": "Correct! 活動 = かつどう (activity); 活 is read かつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "活動 đọc là かつどう (hoạt động): 活 mang âm On かつ.",
+        "en": "活動 is read かつどう (activity): 活 takes the on'yomi かつ."
+      }
+    },
+    {
+      "item": "停",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「停」nghĩa là gì?",
+        "en": "What does 「停」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bên; phía",
+            "en": "side"
+          },
+          {
+            "vi": "dừng; đình",
+            "en": "stop"
+          },
+          {
+            "vi": "ngang; bên cạnh",
+            "en": "side; horizontal"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 停 nghĩa là dừng; đình.",
+        "en": "Correct! 停 means stop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 停 nghĩa là dừng; đình, như trong 「停電」 (mất điện).",
+        "en": "Not quite. 停 means stop, as in 「停電」 (power outage)."
+      }
+    },
+    {
+      "item": "停",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「停」 trong 「停電」 (“mất điện”).",
+        "en": "Type the reading of 「停」 in 「停電」 (“power outage”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てい",
+          "テイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 停電, 停 đọc là てい (âm On).",
+        "en": "Correct! In 停電, 停 is read てい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 停電 (mất điện), 停 đọc là てい (âm On).",
+        "en": "In 停電 (power outage), 停 is read てい (on'yomi)."
+      }
+    },
+    {
+      "item": "停",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「停止」(dừng lại) đọc là gì?",
+        "en": "How is 「停止」 (stoppage) read?"
+      },
+      "payload": {
+        "choices": [
+          "でいし",
+          "ていじ",
+          "ていし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 停止 = ていし (dừng lại); 停 đọc là てい (âm On).",
+        "en": "Correct! 停止 = ていし (stoppage); 停 is read てい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "停止 đọc là ていし (dừng lại): 停 mang âm On てい.",
+        "en": "停止 is read ていし (stoppage): 停 takes the on'yomi てい."
+      }
+    },
+    {
+      "item": "側",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「側」nghĩa là gì?",
+        "en": "What does 「側」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngang; bên cạnh",
+            "en": "side; horizontal"
+          },
+          {
+            "vi": "sống; hoạt động",
+            "en": "live; active"
+          },
+          {
+            "vi": "bên; phía",
+            "en": "side"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 側 nghĩa là bên; phía.",
+        "en": "Correct! 側 means side."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 側 nghĩa là bên; phía, như trong 「側面」 (mặt bên).",
+        "en": "Not quite. 側 means side, as in 「側面」 (side)."
+      }
+    },
+    {
+      "item": "側",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「側」 trong 「側面」 (“mặt bên”).",
+        "en": "Type the reading of 「側」 in 「側面」 (“side”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そく",
+          "ソク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 側面, 側 đọc là そく (âm On).",
+        "en": "Correct! In 側面, 側 is read そく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 側面 (mặt bên), 側 đọc là そく (âm On).",
+        "en": "In 側面 (side), 側 is read そく (on'yomi)."
+      }
+    },
+    {
+      "item": "側",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「右側」(bên phải) đọc là gì?",
+        "en": "How is 「右側」 (right side) read?"
+      },
+      "payload": {
+        "choices": [
+          "みぎがわ",
+          "みぎそく",
+          "みぎかわ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 右側 = みぎがわ (bên phải); 側 đọc là がわ (âm Kun).",
+        "en": "Correct! 右側 = みぎがわ (right side); 側 is read がわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "右側 đọc là みぎがわ (bên phải): 側 mang âm Kun がわ.",
+        "en": "右側 is read みぎがわ (right side): 側 takes the kun'yomi がわ."
+      }
+    },
+    {
+      "item": "横",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「横」nghĩa là gì?",
+        "en": "What does 「横」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "ngang; bên cạnh",
+            "en": "side; horizontal"
+          },
+          {
+            "vi": "sống; hoạt động",
+            "en": "live; active"
+          },
+          {
+            "vi": "dừng; đình",
+            "en": "stop"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 横 nghĩa là ngang; bên cạnh.",
+        "en": "Correct! 横 means side; horizontal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 横 nghĩa là ngang; bên cạnh, như trong 「横断」 (băng qua).",
+        "en": "Not quite. 横 means side; horizontal, as in 「横断」 (crossing)."
+      }
+    },
+    {
+      "item": "横",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「横」 trong 「横断」 (“băng qua”).",
+        "en": "Type the reading of 「横」 in 「横断」 (“crossing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "おう",
+          "オウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 横断, 横 đọc là おう (âm On).",
+        "en": "Correct! In 横断, 横 is read おう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 横断 (băng qua), 横 đọc là おう (âm On).",
+        "en": "In 横断 (crossing), 横 is read おう (on'yomi)."
+      }
+    },
+    {
+      "item": "横",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「横切る」(băng ngang qua) đọc là gì?",
+        "en": "How is 「横切る」 (to cross) read?"
+      },
+      "payload": {
+        "choices": [
+          "おうぎる",
+          "よこぎる",
+          "せいかつ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 横切る = よこぎる (băng ngang qua); 横 đọc là よこ (âm Kun).",
+        "en": "Correct! 横切る = よこぎる (to cross); 横 is read よこ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "横切る đọc là よこぎる (băng ngang qua): 横 mang âm Kun よこ.",
+        "en": "横切る is read よこぎる (to cross): 横 takes the kun'yomi よこ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "活",
+            {
+              "vi": "sống; hoạt động",
+              "en": "live; active"
+            }
+          ],
+          [
+            "停",
+            {
+              "vi": "dừng; đình",
+              "en": "stop"
+            }
+          ],
+          [
+            "側",
+            {
+              "vi": "bên; phía",
+              "en": "side"
+            }
+          ],
+          [
+            "横",
+            {
+              "vi": "ngang; bên cạnh",
+              "en": "side; horizontal"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

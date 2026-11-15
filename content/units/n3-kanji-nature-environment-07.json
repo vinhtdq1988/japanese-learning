@@ -1,0 +1,415 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (象 液 毒)",
+    "en": "Nature and environment kanji (象 液 毒)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "象",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "hình tượng; voi",
+        "en": "phenomenon; elephant"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ショウ",
+          "ゾウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "現象",
+          "reading": "げんしょう",
+          "kanjiReading": "ショウ",
+          "translation": {
+            "vi": "hiện tượng",
+            "en": "phenomenon"
+          }
+        },
+        {
+          "ja": "象",
+          "reading": "ぞう",
+          "kanjiReading": "ゾウ",
+          "translation": {
+            "vi": "con voi",
+            "en": "elephant"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "液",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "chất lỏng; dịch",
+        "en": "liquid"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "エキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "液体",
+          "reading": "えきたい",
+          "kanjiReading": "エキ",
+          "translation": {
+            "vi": "chất lỏng",
+            "en": "liquid"
+          }
+        },
+        {
+          "ja": "血液",
+          "reading": "けつえき",
+          "kanjiReading": "エキ",
+          "translation": {
+            "vi": "máu",
+            "en": "blood"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "毒",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "độc; chất độc",
+        "en": "poison"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "消毒",
+          "reading": "しょうどく",
+          "kanjiReading": "ドク",
+          "translation": {
+            "vi": "khử trùng",
+            "en": "disinfection"
+          }
+        },
+        {
+          "ja": "中毒",
+          "reading": "ちゅうどく",
+          "kanjiReading": "ドク",
+          "translation": {
+            "vi": "ngộ độc",
+            "en": "poisoning"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "象",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「象」nghĩa là gì?",
+        "en": "What does 「象」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hình tượng; voi",
+            "en": "phenomenon; elephant"
+          },
+          {
+            "vi": "chất lỏng; dịch",
+            "en": "liquid"
+          },
+          {
+            "vi": "độc; chất độc",
+            "en": "poison"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 象 nghĩa là hình tượng; voi.",
+        "en": "Correct! 象 means phenomenon; elephant."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 象 nghĩa là hình tượng; voi, như trong 「現象」 (hiện tượng).",
+        "en": "Not quite. 象 means phenomenon; elephant, as in 「現象」 (phenomenon)."
+      }
+    },
+    {
+      "item": "象",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「象」 trong 「現象」 (“hiện tượng”).",
+        "en": "Type the reading of 「象」 in 「現象」 (“phenomenon”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しょう",
+          "ショウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 現象, 象 đọc là しょう (âm On).",
+        "en": "Correct! In 現象, 象 is read しょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 現象 (hiện tượng), 象 đọc là しょう (âm On).",
+        "en": "In 現象 (phenomenon), 象 is read しょう (on'yomi)."
+      }
+    },
+    {
+      "item": "象",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「象」(con voi; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「象」 (elephant; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょう",
+          "ぞう",
+          "えきたい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 象 = ぞう (con voi); 象 đọc là ぞう (âm On).",
+        "en": "Correct! 象 = ぞう (elephant); 象 is read ぞう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "象 đọc là ぞう (con voi): 象 mang âm On ぞう.",
+        "en": "象 is read ぞう (elephant): 象 takes the on'yomi ぞう."
+      }
+    },
+    {
+      "item": "液",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「液」nghĩa là gì?",
+        "en": "What does 「液」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "độc; chất độc",
+            "en": "poison"
+          },
+          {
+            "vi": "chất lỏng; dịch",
+            "en": "liquid"
+          },
+          {
+            "vi": "hình tượng; voi",
+            "en": "phenomenon; elephant"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 液 nghĩa là chất lỏng; dịch.",
+        "en": "Correct! 液 means liquid."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 液 nghĩa là chất lỏng; dịch, như trong 「液体」 (chất lỏng).",
+        "en": "Not quite. 液 means liquid, as in 「液体」 (liquid)."
+      }
+    },
+    {
+      "item": "液",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「液」 trong 「液体」 (“chất lỏng”).",
+        "en": "Type the reading of 「液」 in 「液体」 (“liquid”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "えき",
+          "エキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 液体, 液 đọc là えき (âm On).",
+        "en": "Correct! In 液体, 液 is read えき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 液体 (chất lỏng), 液 đọc là えき (âm On).",
+        "en": "In 液体 (liquid), 液 is read えき (on'yomi)."
+      }
+    },
+    {
+      "item": "液",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「血液」(máu) đọc là gì?",
+        "en": "How is 「血液」 (blood) read?"
+      },
+      "payload": {
+        "choices": [
+          "けつどく",
+          "けつしょう",
+          "けつえき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 血液 = けつえき (máu); 液 đọc là えき (âm On).",
+        "en": "Correct! 血液 = けつえき (blood); 液 is read えき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "血液 đọc là けつえき (máu): 液 mang âm On えき.",
+        "en": "血液 is read けつえき (blood): 液 takes the on'yomi えき."
+      }
+    },
+    {
+      "item": "毒",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「毒」nghĩa là gì?",
+        "en": "What does 「毒」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hình tượng; voi",
+            "en": "phenomenon; elephant"
+          },
+          {
+            "vi": "chất lỏng; dịch",
+            "en": "liquid"
+          },
+          {
+            "vi": "độc; chất độc",
+            "en": "poison"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 毒 nghĩa là độc; chất độc.",
+        "en": "Correct! 毒 means poison."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 毒 nghĩa là độc; chất độc, như trong 「消毒」 (khử trùng).",
+        "en": "Not quite. 毒 means poison, as in 「消毒」 (disinfection)."
+      }
+    },
+    {
+      "item": "毒",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「毒」 trong 「消毒」 (“khử trùng”).",
+        "en": "Type the reading of 「毒」 in 「消毒」 (“disinfection”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どく",
+          "ドク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 消毒, 毒 đọc là どく (âm On).",
+        "en": "Correct! In 消毒, 毒 is read どく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 消毒 (khử trùng), 毒 đọc là どく (âm On).",
+        "en": "In 消毒 (disinfection), 毒 is read どく (on'yomi)."
+      }
+    },
+    {
+      "item": "毒",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「中毒」(ngộ độc) đọc là gì?",
+        "en": "How is 「中毒」 (poisoning) read?"
+      },
+      "payload": {
+        "choices": [
+          "ちゅうどく",
+          "ちゅうとく",
+          "ちゅうしょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 中毒 = ちゅうどく (ngộ độc); 毒 đọc là どく (âm On).",
+        "en": "Correct! 中毒 = ちゅうどく (poisoning); 毒 is read どく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "中毒 đọc là ちゅうどく (ngộ độc): 毒 mang âm On どく.",
+        "en": "中毒 is read ちゅうどく (poisoning): 毒 takes the on'yomi どく."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "象",
+            {
+              "vi": "hình tượng; voi",
+              "en": "phenomenon; elephant"
+            }
+          ],
+          [
+            "液",
+            {
+              "vi": "chất lỏng; dịch",
+              "en": "liquid"
+            }
+          ],
+          [
+            "毒",
+            {
+              "vi": "độc; chất độc",
+              "en": "poison"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

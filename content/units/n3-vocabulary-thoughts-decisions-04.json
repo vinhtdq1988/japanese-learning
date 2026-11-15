@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-thoughts-decisions",
+  "title": {
+    "vi": "Triển vọng và niềm tin",
+    "en": "Prospects and convictions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2550,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "見込み",
+      "reading": "みこみ",
+      "meaning": {
+        "vi": "Triển vọng; dự kiến",
+        "en": "Prospect; expectation"
+      },
+      "examples": [
+        {
+          "ja": "工事は、来月終わる見込みです。",
+          "reading": "こうじは、らいげつおわるみこみです。",
+          "translation": {
+            "vi": "Công trình dự kiến sẽ xong vào tháng sau.",
+            "en": "The construction is expected to finish next month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "尊重",
+      "reading": "そんちょう",
+      "meaning": {
+        "vi": "Tôn trọng",
+        "en": "Respect (for opinions)"
+      },
+      "examples": [
+        {
+          "ja": "相手の意見を、尊重することが大切です。",
+          "reading": "あいてのいけんを、そんちょうすることがたいせつです。",
+          "translation": {
+            "vi": "Tôn trọng ý kiến của đối phương là điều quan trọng.",
+            "en": "Respecting the other person's opinion is important."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "可能性",
+      "reading": "かのうせい",
+      "meaning": {
+        "vi": "Khả năng",
+        "en": "Possibility"
+      },
+      "examples": [
+        {
+          "ja": "明日、雨が降る可能性があります。",
+          "reading": "あした、あめがふるかのうせいがあります。",
+          "translation": {
+            "vi": "Ngày mai có khả năng trời mưa.",
+            "en": "There is a possibility of rain tomorrow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "思い込む",
+      "reading": "おもいこむ",
+      "meaning": {
+        "vi": "Tin chắc; khăng khăng cho là",
+        "en": "To be convinced; to assume"
+      },
+      "examples": [
+        {
+          "ja": "自分が正しいと、思い込むことは危険です。",
+          "reading": "じぶんがただしいと、おもいこむことはきけんです。",
+          "translation": {
+            "vi": "Khăng khăng cho rằng mình đúng là điều nguy hiểm.",
+            "en": "It is dangerous to be convinced that you are right."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "思いつく",
+      "reading": "おもいつく",
+      "meaning": {
+        "vi": "Nghĩ ra",
+        "en": "To think of; to come up with"
+      },
+      "examples": [
+        {
+          "ja": "いい方法を、思いつくことができました。",
+          "reading": "いいほうほうを、おもいつくことができました。",
+          "translation": {
+            "vi": "Tôi đã nghĩ ra được một cách hay.",
+            "en": "I was able to come up with a good method."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "信念",
+      "reading": "しんねん",
+      "meaning": {
+        "vi": "Niềm tin; tín niệm",
+        "en": "Conviction; belief"
+      },
+      "examples": [
+        {
+          "ja": "彼は、自分の信念を、決して曲げません。",
+          "reading": "かれは、じぶんのしんねんを、けっしてまげません。",
+          "translation": {
+            "vi": "Anh ấy tuyệt đối không bẻ cong niềm tin của mình.",
+            "en": "He never bends his convictions."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "見込み",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工事は、来月終わる（　）です。 — Nghĩa của câu: “Công trình dự kiến sẽ xong vào tháng sau.”",
+        "en": "Choose the word that fits the blank: 工事は、来月終わる（　）です。 — Meaning of the sentence: “The construction is expected to finish next month.”"
+      },
+      "payload": {
+        "choices": [
+          "信念",
+          "尊重",
+          "可能性",
+          "見込み"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見込み」(Triển vọng; dự kiến) hợp nghĩa câu này: “Công trình dự kiến sẽ xong vào tháng sau.”",
+        "en": "Correct! 「見込み」(Prospect; expectation) fits this sentence: “The construction is expected to finish next month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công trình dự kiến sẽ xong vào tháng sau.”, nên cần 「見込み」(Triển vọng; dự kiến); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The construction is expected to finish next month.”, so it needs 「見込み」(Prospect; expectation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "尊重",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 相手の意見を、（　）することが大切です。 — Nghĩa của câu: “Tôn trọng ý kiến của đối phương là điều quan trọng.”",
+        "en": "Choose the word that fits the blank: 相手の意見を、（　）することが大切です。 — Meaning of the sentence: “Respecting the other person's opinion is important.”"
+      },
+      "payload": {
+        "choices": [
+          "尊重",
+          "可能性",
+          "見込み",
+          "信念"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「尊重」(Tôn trọng) hợp nghĩa câu này: “Tôn trọng ý kiến của đối phương là điều quan trọng.”",
+        "en": "Correct! 「尊重」(Respect (for opinions)) fits this sentence: “Respecting the other person's opinion is important.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôn trọng ý kiến của đối phương là điều quan trọng.”, nên cần 「尊重」(Tôn trọng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Respecting the other person's opinion is important.”, so it needs 「尊重」(Respect (for opinions)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "可能性",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 明日、雨が降る（　）があります。 — Nghĩa của câu: “Ngày mai có khả năng trời mưa.”",
+        "en": "Choose the word that fits the blank: 明日、雨が降る（　）があります。 — Meaning of the sentence: “There is a possibility of rain tomorrow.”"
+      },
+      "payload": {
+        "choices": [
+          "信念",
+          "可能性",
+          "見込み",
+          "尊重"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「可能性」(Khả năng) hợp nghĩa câu này: “Ngày mai có khả năng trời mưa.”",
+        "en": "Correct! 「可能性」(Possibility) fits this sentence: “There is a possibility of rain tomorrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày mai có khả năng trời mưa.”, nên cần 「可能性」(Khả năng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is a possibility of rain tomorrow.”, so it needs 「可能性」(Possibility); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "思い込む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 自分が正しいと、（　）ことは危険です。 — Nghĩa của câu: “Khăng khăng cho rằng mình đúng là điều nguy hiểm.”",
+        "en": "Choose the word that fits the blank: 自分が正しいと、（　）ことは危険です。 — Meaning of the sentence: “It is dangerous to be convinced that you are right.”"
+      },
+      "payload": {
+        "choices": [
+          "思いつく",
+          "見込み",
+          "思い込む",
+          "信念"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思い込む」(Tin chắc; khăng khăng cho là) hợp nghĩa câu này: “Khăng khăng cho rằng mình đúng là điều nguy hiểm.”",
+        "en": "Correct! 「思い込む」(To be convinced; to assume) fits this sentence: “It is dangerous to be convinced that you are right.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khăng khăng cho rằng mình đúng là điều nguy hiểm.”, nên cần 「思い込む」(Tin chắc; khăng khăng cho là); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is dangerous to be convinced that you are right.”, so it needs 「思い込む」(To be convinced; to assume); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "思いつく",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: いい方法を、（　）ことができました。 — Nghĩa của câu: “Tôi đã nghĩ ra được một cách hay.”",
+        "en": "Choose the word that fits the blank: いい方法を、（　）ことができました。 — Meaning of the sentence: “I was able to come up with a good method.”"
+      },
+      "payload": {
+        "choices": [
+          "思い込む",
+          "見込み",
+          "尊重",
+          "思いつく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思いつく」(Nghĩ ra) hợp nghĩa câu này: “Tôi đã nghĩ ra được một cách hay.”",
+        "en": "Correct! 「思いつく」(To think of; to come up with) fits this sentence: “I was able to come up with a good method.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nghĩ ra được một cách hay.”, nên cần 「思いつく」(Nghĩ ra); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was able to come up with a good method.”, so it needs 「思いつく」(To think of; to come up with); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "信念",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、自分の（　）を、決して曲げません。 — Nghĩa của câu: “Anh ấy tuyệt đối không bẻ cong niềm tin của mình.”",
+        "en": "Choose the word that fits the blank: 彼は、自分の（　）を、決して曲げません。 — Meaning of the sentence: “He never bends his convictions.”"
+      },
+      "payload": {
+        "choices": [
+          "信念",
+          "可能性",
+          "見込み",
+          "尊重"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「信念」(Niềm tin; tín niệm) hợp nghĩa câu này: “Anh ấy tuyệt đối không bẻ cong niềm tin của mình.”",
+        "en": "Correct! 「信念」(Conviction; belief) fits this sentence: “He never bends his convictions.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy tuyệt đối không bẻ cong niềm tin của mình.”, nên cần 「信念」(Niềm tin; tín niệm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He never bends his convictions.”, so it needs 「信念」(Conviction; belief); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見込み",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 工事は、来月終わる「見込み」です。",
+        "en": "Choose the correct reading of the word in 「」: 工事は、来月終わる「見込み」です。"
+      },
+      "payload": {
+        "choices": [
+          "みこみ",
+          "そんちょう",
+          "かのうせい",
+          "おもいつく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見込み」 đọc là 「みこみ」, nghĩa là Triển vọng; dự kiến.",
+        "en": "Correct! 「見込み」 is read 「みこみ」 and means Prospect; expectation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見込み」 đọc là 「みこみ」 (Triển vọng; dự kiến); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「見込み」 is read 「みこみ」 (Prospect; expectation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "思い込む",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 自分が正しいと、「思い込む」ことは危険です。",
+        "en": "Choose the correct reading of the word in 「」: 自分が正しいと、「思い込む」ことは危険です。"
+      },
+      "payload": {
+        "choices": [
+          "みこみ",
+          "おもいこむ",
+          "そんちょう",
+          "しんねん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思い込む」 đọc là 「おもいこむ」, nghĩa là Tin chắc; khăng khăng cho là.",
+        "en": "Correct! 「思い込む」 is read 「おもいこむ」 and means To be convinced; to assume."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「思い込む」 đọc là 「おもいこむ」 (Tin chắc; khăng khăng cho là); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「思い込む」 is read 「おもいこむ」 (To be convinced; to assume); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "可能性",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 明日、雨が降る「かのうせい」があります。",
+        "en": "Choose the correct way to write the word in 「」: 明日、雨が降る「かのうせい」があります。"
+      },
+      "payload": {
+        "choices": [
+          "思い込む",
+          "可能性",
+          "見込み",
+          "信念"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かのうせい」 viết là 「可能性」, nghĩa là Khả năng.",
+        "en": "Correct! 「かのうせい」 is written 「可能性」 and means Possibility."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かのうせい」 viết là 「可能性」 (Khả năng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かのうせい」 is written 「可能性」 (Possibility); the other words are read differently."
+      }
+    }
+  ]
+}

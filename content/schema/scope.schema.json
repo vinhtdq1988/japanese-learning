@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://japanese-learning.local/schema/scope/1.0.0",
+  "title": "Danh mục phạm vi JLPT (Scope catalog)",
+  "description": "Một file = danh mục phạm vi của một (loại × trình độ): liệt kê cái cần phủ, kèm nguồn tham khảo. Là tài liệu nghiệm thu dạng dữ liệu, không vào CSDL. Trạng thái phủ (covered/uncovered/excluded) được SUY RA từ đơn vị đã duyệt, không lưu ở đây. Quy tắc khớp khóa và vi phạm: backend/src/domain/content-scope.ts; hợp đồng: specs/008-n4-n3-jlpt-content/contracts/scope-catalog.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "level", "reference", "sources", "rows"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "kind": { "enum": ["kanji", "vocabulary", "grammar", "reading"] },
+    "level": {
+      "enum": ["N5", "N4", "N3"],
+      "description": "N4 hoặc N3 với danh mục theo dõi độ phủ; N5 chỉ với file tham chiếu (`reference: true`)."
+    },
+    "reference": {
+      "type": "boolean",
+      "description": "true chỉ với *.ref.json: dùng kiểm chữ Hán trong đoạn đọc/luyện viết, không tính độ phủ."
+    },
+    "sources": {
+      "type": "object",
+      "description": "Bảng mã nguồn → mô tả. Chỉ ghi phạm vi đã tham khảo, KHÔNG dán nội dung có bản quyền.",
+      "additionalProperties": { "$ref": "#/definitions/source" }
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/row" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "reference": { "const": false } } },
+      "then": { "properties": { "level": { "enum": ["N4", "N3"] } } }
+    },
+    {
+      "if": { "properties": { "reference": { "const": true } } },
+      "then": { "properties": { "kind": { "const": "kanji" } } }
+    },
+    {
+      "if": { "properties": { "kind": { "enum": ["grammar", "reading"] } }, "required": ["kind"] },
+      "then": {
+        "properties": { "rows": { "items": { "required": ["label"] } } }
+      }
+    }
+  ],
+  "definitions": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "note"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "i18nText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vi", "en"],
+      "properties": {
+        "vi": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "key", "sources"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Ổn định, không đổi, không tái sử dụng: k-n4-012 (Kanji), v-n3-0450 (từ vựng), g-n4-023 (ngữ pháp), r-n3-form-notice (đọc).",
+          "pattern": "^((k|v|g)-(n5|n4|n3)-[0-9]{3,4}|r-(n4|n3)-[a-z0-9]+(-[a-z0-9]+)*)$"
+        },
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Kanji = ký tự; từ vựng = `japanese|reading`; ngữ pháp/đọc = mẫu viết tự do."
+        },
+        "label": { "$ref": "#/definitions/i18nText" },
+        "sources": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Mã nguồn có trong `sources` của file."
+        },
+        "exclude": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reason"],
+          "properties": { "reason": { "type": "string", "minLength": 1 } }
+        },
+        "minUnits": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Chỉ dòng `reading`: số đơn vị tối thiểu để coi là phủ (mặc định 1)."
+        }
+      }
+    }
+  }
+}

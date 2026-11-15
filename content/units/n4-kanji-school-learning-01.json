@@ -1,0 +1,419 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-school-learning",
+  "title": {
+    "vi": "Kanji trường học – học tập (習 勉 教)",
+    "en": "School and learning kanji (習 勉 教)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1120,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "習",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "học; tập",
+        "en": "learn; practice"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュウ"
+        ],
+        "kunReadings": [
+          "なら.う"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "練習",
+          "reading": "れんしゅう",
+          "kanjiReading": "シュウ",
+          "translation": {
+            "vi": "luyện tập",
+            "en": "practice"
+          }
+        },
+        {
+          "ja": "習う",
+          "reading": "ならう",
+          "kanjiReading": "なら",
+          "translation": {
+            "vi": "học (từ ai đó)",
+            "en": "to learn"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勉",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "cố gắng; học",
+        "en": "strive; study"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ベン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "勉強",
+          "reading": "べんきょう",
+          "kanjiReading": "ベン",
+          "translation": {
+            "vi": "học tập",
+            "en": "study"
+          }
+        },
+        {
+          "ja": "勉学",
+          "reading": "べんがく",
+          "kanjiReading": "ベン",
+          "translation": {
+            "vi": "học vấn",
+            "en": "studies"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "教",
+      "topic": "kanji-n4-school-learning",
+      "meaning": {
+        "vi": "dạy",
+        "en": "teach"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョウ"
+        ],
+        "kunReadings": [
+          "おし.える",
+          "おそ.わる"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "教室",
+          "reading": "きょうしつ",
+          "kanjiReading": "キョウ",
+          "translation": {
+            "vi": "lớp học",
+            "en": "classroom"
+          }
+        },
+        {
+          "ja": "教える",
+          "reading": "おしえる",
+          "kanjiReading": "おし",
+          "translation": {
+            "vi": "dạy",
+            "en": "to teach"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "習",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「習」nghĩa là gì?",
+        "en": "What does 「習」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "học; tập",
+            "en": "learn; practice"
+          },
+          {
+            "vi": "cố gắng; học",
+            "en": "strive; study"
+          },
+          {
+            "vi": "dạy",
+            "en": "teach"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 習 nghĩa là học; tập.",
+        "en": "Correct! 習 means learn; practice."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 習 nghĩa là học; tập, như trong 「練習」 (luyện tập).",
+        "en": "Not quite. 習 means learn; practice, as in 「練習」 (practice)."
+      }
+    },
+    {
+      "item": "習",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「習」 trong 「練習」 (“luyện tập”).",
+        "en": "Type the reading of 「習」 in 「練習」 (“practice”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅう",
+          "シュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 練習, 習 đọc là しゅう (âm On).",
+        "en": "Correct! In 練習, 習 is read しゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 練習 (luyện tập), 習 đọc là しゅう (âm On).",
+        "en": "In 練習 (practice), 習 is read しゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "習",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「習う」(học (từ ai đó)) đọc là gì?",
+        "en": "How is 「習う」 (to learn) read?"
+      },
+      "payload": {
+        "choices": [
+          "しゅうう",
+          "ならう",
+          "さらう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 習う = ならう (học (từ ai đó)); 習 đọc là なら (âm Kun).",
+        "en": "Correct! 習う = ならう (to learn); 習 is read なら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "習う đọc là ならう (học (từ ai đó)): 習 mang âm Kun なら.",
+        "en": "習う is read ならう (to learn): 習 takes the kun'yomi なら."
+      }
+    },
+    {
+      "item": "勉",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「勉」nghĩa là gì?",
+        "en": "What does 「勉」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "dạy",
+            "en": "teach"
+          },
+          {
+            "vi": "cố gắng; học",
+            "en": "strive; study"
+          },
+          {
+            "vi": "học; tập",
+            "en": "learn; practice"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 勉 nghĩa là cố gắng; học.",
+        "en": "Correct! 勉 means strive; study."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 勉 nghĩa là cố gắng; học, như trong 「勉強」 (học tập).",
+        "en": "Not quite. 勉 means strive; study, as in 「勉強」 (study)."
+      }
+    },
+    {
+      "item": "勉",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「勉」 trong 「勉強」 (“học tập”).",
+        "en": "Type the reading of 「勉」 in 「勉強」 (“study”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "べん",
+          "ベン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 勉強, 勉 đọc là べん (âm On).",
+        "en": "Correct! In 勉強, 勉 is read べん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 勉強 (học tập), 勉 đọc là べん (âm On).",
+        "en": "In 勉強 (study), 勉 is read べん (on'yomi)."
+      }
+    },
+    {
+      "item": "勉",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「勉学」(học vấn) đọc là gì?",
+        "en": "How is 「勉学」 (studies) read?"
+      },
+      "payload": {
+        "choices": [
+          "へんがく",
+          "べんかく",
+          "べんがく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 勉学 = べんがく (học vấn); 勉 đọc là べん (âm On).",
+        "en": "Correct! 勉学 = べんがく (studies); 勉 is read べん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "勉学 đọc là べんがく (học vấn): 勉 mang âm On べん.",
+        "en": "勉学 is read べんがく (studies): 勉 takes the on'yomi べん."
+      }
+    },
+    {
+      "item": "教",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「教」nghĩa là gì?",
+        "en": "What does 「教」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "học; tập",
+            "en": "learn; practice"
+          },
+          {
+            "vi": "cố gắng; học",
+            "en": "strive; study"
+          },
+          {
+            "vi": "dạy",
+            "en": "teach"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 教 nghĩa là dạy.",
+        "en": "Correct! 教 means teach."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 教 nghĩa là dạy, như trong 「教室」 (lớp học).",
+        "en": "Not quite. 教 means teach, as in 「教室」 (classroom)."
+      }
+    },
+    {
+      "item": "教",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「教」 trong 「教室」 (“lớp học”).",
+        "en": "Type the reading of 「教」 in 「教室」 (“classroom”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょう",
+          "キョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 教室, 教 đọc là きょう (âm On).",
+        "en": "Correct! In 教室, 教 is read きょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 教室 (lớp học), 教 đọc là きょう (âm On).",
+        "en": "In 教室 (classroom), 教 is read きょう (on'yomi)."
+      }
+    },
+    {
+      "item": "教",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「教える」(dạy) đọc là gì?",
+        "en": "How is 「教える」 (to teach) read?"
+      },
+      "payload": {
+        "choices": [
+          "おしえる",
+          "きょうえる",
+          "べんがく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 教える = おしえる (dạy); 教 đọc là おし (âm Kun).",
+        "en": "Correct! 教える = おしえる (to teach); 教 is read おし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "教える đọc là おしえる (dạy): 教 mang âm Kun おし.",
+        "en": "教える is read おしえる (to teach): 教 takes the kun'yomi おし."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "習",
+            {
+              "vi": "học; tập",
+              "en": "learn; practice"
+            }
+          ],
+          [
+            "勉",
+            {
+              "vi": "cố gắng; học",
+              "en": "strive; study"
+            }
+          ],
+          [
+            "教",
+            {
+              "vi": "dạy",
+              "en": "teach"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

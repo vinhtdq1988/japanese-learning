@@ -1,0 +1,37 @@
+{
+  "id": "encouragement-behind-target",
+  "description": "Có mốc mục tiêu gần (7 ngày) mà còn nhiều nội dung, chưa có chuỗi ≥ 3 ngày ⇒ 'behind_target' (FR-026, US4.5).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "none",
+    "goalType": "daily_conversation",
+    "targetLevel": null,
+    "dailyMinutes": 5,
+    "targetDate": "2026-01-12",
+    "skills": [
+      "vocabulary"
+    ],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {
+    "encouragement": {
+      "state": "behind_target",
+      "signals": {
+        "planStatus": "open",
+        "planItemsTotal": 3,
+        "planItemsDone": 0,
+        "streakDays": 0,
+        "afterGap": false,
+        "onTrack": false
+      }
+    }
+  }
+}

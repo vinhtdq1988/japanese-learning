@@ -67,24 +67,30 @@ export async function getTopic(db: DbExecutor, id: string): Promise<TopicRow | u
   return row;
 }
 
-/** Đơn vị `active` đang chứa một chữ Kanji (cho quy tắc "chữ duy nhất", research K10). */
+/** Đơn vị `active` đang chứa một mục chính (cho quy tắc "mục chính duy nhất", FR-007, research K10/D4). */
 export interface KanjiHolder {
   unitId: string;
   /** Định danh dễ đọc của đơn vị trong thông báo lỗi (tiêu đề tiếng Anh; DB không có slug). */
   unitSlug: string;
 }
 
+/** Loại đơn vị có quy tắc mục chính duy nhất qua Admin: Kanji, từ vựng, ngữ pháp. */
+export type PrimaryItemKind = 'kanji' | 'vocabulary' | 'grammar';
+
 /**
- * Chữ Kanji đang nằm trong mục `active` của đơn vị Kanji `active`, kèm đơn vị chứa. `excludeUnitId` loại
- * đơn vị đang kiểm tra để chữ của chính nó không bị tính là trùng.
+ * Khóa mục chính của mục `active` trong các đơn vị `active` CÙNG LOẠI, kèm đơn vị chứa: Kanji = ký tự;
+ * từ vựng = `japanese|reading`; ngữ pháp = `japanese`. `excludeUnitId` loại đơn vị đang kiểm tra để mục của
+ * chính nó không bị tính là trùng.
  */
-export async function listActiveKanjiCharacters(
+export async function listActiveItemKeys(
   db: DbExecutor,
-  excludeUnitId?: string,
+  excludeUnitId: string | undefined,
+  kind: PrimaryItemKind,
 ): Promise<Map<string, KanjiHolder>> {
   const rows = await db
     .select({
       japanese: contentItems.japanese,
+      reading: contentItems.reading,
       unitId: learningUnits.id,
       title: learningUnits.title,
     })
@@ -92,9 +98,9 @@ export async function listActiveKanjiCharacters(
     .innerJoin(learningUnits, eq(contentItems.unitId, learningUnits.id))
     .where(
       and(
-        eq(learningUnits.kind, 'kanji'),
+        eq(learningUnits.kind, kind),
         eq(learningUnits.status, 'active'),
-        eq(contentItems.kind, 'kanji'),
+        eq(contentItems.kind, kind),
         eq(contentItems.status, 'active'),
         excludeUnitId ? ne(learningUnits.id, excludeUnitId) : undefined,
       ),
@@ -102,8 +108,9 @@ export async function listActiveKanjiCharacters(
     .orderBy(asc(learningUnits.createdAt), asc(learningUnits.id));
   const holders = new Map<string, KanjiHolder>();
   for (const r of rows) {
-    if (!holders.has(r.japanese)) {
-      holders.set(r.japanese, { unitId: r.unitId, unitSlug: r.title.en || r.unitId });
+    const key = kind === 'vocabulary' ? `${r.japanese}|${r.reading ?? ''}` : r.japanese;
+    if (!holders.has(key)) {
+      holders.set(key, { unitId: r.unitId, unitSlug: r.title.en || r.unitId });
     }
   }
   return holders;

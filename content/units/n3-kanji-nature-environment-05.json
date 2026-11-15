@@ -1,0 +1,418 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (銅 原 球)",
+    "en": "Nature and environment kanji (銅 原 球)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "銅",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "đồng",
+        "en": "copper"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "銅像",
+          "reading": "どうぞう",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "tượng đồng",
+            "en": "bronze statue"
+          }
+        },
+        {
+          "ja": "銅山",
+          "reading": "どうざん",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "mỏ đồng",
+            "en": "copper mine"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "原",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "nguyên; cánh đồng",
+        "en": "origin; field"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ゲン"
+        ],
+        "kunReadings": [
+          "はら"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "原因",
+          "reading": "げんいん",
+          "kanjiReading": "ゲン",
+          "translation": {
+            "vi": "nguyên nhân",
+            "en": "cause"
+          }
+        },
+        {
+          "ja": "原っぱ",
+          "reading": "はらっぱ",
+          "kanjiReading": "はら",
+          "translation": {
+            "vi": "bãi đất trống",
+            "en": "open field"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "球",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "quả cầu; bóng",
+        "en": "sphere; ball"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キュウ"
+        ],
+        "kunReadings": [
+          "たま"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "地球",
+          "reading": "ちきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "Trái Đất",
+            "en": "Earth"
+          }
+        },
+        {
+          "ja": "野球",
+          "reading": "やきゅう",
+          "kanjiReading": "キュウ",
+          "translation": {
+            "vi": "bóng chày",
+            "en": "baseball"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "銅",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銅」nghĩa là gì?",
+        "en": "What does 「銅」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đồng",
+            "en": "copper"
+          },
+          {
+            "vi": "nguyên; cánh đồng",
+            "en": "origin; field"
+          },
+          {
+            "vi": "quả cầu; bóng",
+            "en": "sphere; ball"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銅 nghĩa là đồng.",
+        "en": "Correct! 銅 means copper."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 銅 nghĩa là đồng, như trong 「銅像」 (tượng đồng).",
+        "en": "Not quite. 銅 means copper, as in 「銅像」 (bronze statue)."
+      }
+    },
+    {
+      "item": "銅",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「銅」 trong 「銅像」 (“tượng đồng”).",
+        "en": "Type the reading of 「銅」 in 「銅像」 (“bronze statue”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どう",
+          "ドウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 銅像, 銅 đọc là どう (âm On).",
+        "en": "Correct! In 銅像, 銅 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 銅像 (tượng đồng), 銅 đọc là どう (âm On).",
+        "en": "In 銅像 (bronze statue), 銅 is read どう (on'yomi)."
+      }
+    },
+    {
+      "item": "銅",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「銅山」(mỏ đồng) đọc là gì?",
+        "en": "How is 「銅山」 (copper mine) read?"
+      },
+      "payload": {
+        "choices": [
+          "どざん",
+          "どうざん",
+          "とうざん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 銅山 = どうざん (mỏ đồng); 銅 đọc là どう (âm On).",
+        "en": "Correct! 銅山 = どうざん (copper mine); 銅 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "銅山 đọc là どうざん (mỏ đồng): 銅 mang âm On どう.",
+        "en": "銅山 is read どうざん (copper mine): 銅 takes the on'yomi どう."
+      }
+    },
+    {
+      "item": "原",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「原」nghĩa là gì?",
+        "en": "What does 「原」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "quả cầu; bóng",
+            "en": "sphere; ball"
+          },
+          {
+            "vi": "nguyên; cánh đồng",
+            "en": "origin; field"
+          },
+          {
+            "vi": "đồng",
+            "en": "copper"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 原 nghĩa là nguyên; cánh đồng.",
+        "en": "Correct! 原 means origin; field."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 原 nghĩa là nguyên; cánh đồng, như trong 「原因」 (nguyên nhân).",
+        "en": "Not quite. 原 means origin; field, as in 「原因」 (cause)."
+      }
+    },
+    {
+      "item": "原",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「原」 trong 「原因」 (“nguyên nhân”).",
+        "en": "Type the reading of 「原」 in 「原因」 (“cause”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "げん",
+          "ゲン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 原因, 原 đọc là げん (âm On).",
+        "en": "Correct! In 原因, 原 is read げん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 原因 (nguyên nhân), 原 đọc là げん (âm On).",
+        "en": "In 原因 (cause), 原 is read げん (on'yomi)."
+      }
+    },
+    {
+      "item": "原",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「原っぱ」(bãi đất trống) đọc là gì?",
+        "en": "How is 「原っぱ」 (open field) read?"
+      },
+      "payload": {
+        "choices": [
+          "げんっぱ",
+          "ちきゅう",
+          "はらっぱ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 原っぱ = はらっぱ (bãi đất trống); 原 đọc là はら (âm Kun).",
+        "en": "Correct! 原っぱ = はらっぱ (open field); 原 is read はら (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "原っぱ đọc là はらっぱ (bãi đất trống): 原 mang âm Kun はら.",
+        "en": "原っぱ is read はらっぱ (open field): 原 takes the kun'yomi はら."
+      }
+    },
+    {
+      "item": "球",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「球」nghĩa là gì?",
+        "en": "What does 「球」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đồng",
+            "en": "copper"
+          },
+          {
+            "vi": "nguyên; cánh đồng",
+            "en": "origin; field"
+          },
+          {
+            "vi": "quả cầu; bóng",
+            "en": "sphere; ball"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 球 nghĩa là quả cầu; bóng.",
+        "en": "Correct! 球 means sphere; ball."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 球 nghĩa là quả cầu; bóng, như trong 「地球」 (Trái Đất).",
+        "en": "Not quite. 球 means sphere; ball, as in 「地球」 (Earth)."
+      }
+    },
+    {
+      "item": "球",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「球」 trong 「地球」 (“Trái Đất”).",
+        "en": "Type the reading of 「球」 in 「地球」 (“Earth”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きゅう",
+          "キュウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 地球, 球 đọc là きゅう (âm On).",
+        "en": "Correct! In 地球, 球 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 地球 (Trái Đất), 球 đọc là きゅう (âm On).",
+        "en": "In 地球 (Earth), 球 is read きゅう (on'yomi)."
+      }
+    },
+    {
+      "item": "球",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「野球」(bóng chày) đọc là gì?",
+        "en": "How is 「野球」 (baseball) read?"
+      },
+      "payload": {
+        "choices": [
+          "やきゅう",
+          "やたま",
+          "やぎゅう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 野球 = やきゅう (bóng chày); 球 đọc là きゅう (âm On).",
+        "en": "Correct! 野球 = やきゅう (baseball); 球 is read きゅう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "野球 đọc là やきゅう (bóng chày): 球 mang âm On きゅう.",
+        "en": "野球 is read やきゅう (baseball): 球 takes the on'yomi きゅう."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "銅",
+            {
+              "vi": "đồng",
+              "en": "copper"
+            }
+          ],
+          [
+            "原",
+            {
+              "vi": "nguyên; cánh đồng",
+              "en": "origin; field"
+            }
+          ],
+          [
+            "球",
+            {
+              "vi": "quả cầu; bóng",
+              "en": "sphere; ball"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

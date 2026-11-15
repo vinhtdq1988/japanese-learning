@@ -201,7 +201,22 @@ const W = {
   weakTopic: 40,
   biasPerDifficultyStep: 4,
   sequence: 0.01,
+  // Điểm nền của đơn vị chưa học NGOÀI biên giới (spec 008, research D10): thấp hơn mọi điểm có thể có của
+  // đơn vị trong biên giới (≈ −250 ở trường hợp xấu nhất) nên chúng luôn đứng sau, chỉ phân biệt theo
+  // (trình độ, sequence).
+  beyondFrontier: -10_000,
 } as const;
+
+/**
+ * Biên giới thứ tự học (research D10): mỗi loại chỉ `FRONTIER_SIZE` đơn vị chưa học đầu tiên theo
+ * `(trình độ, sequence)` được hưởng cộng điểm thích ứng; thích ứng chỉ hoán đổi trong các bài kế tiếp thay
+ * vì nhảy tới bất kỳ đâu trong hàng trăm đơn vị.
+ */
+export const FRONTIER_SIZE = 3;
+/** Học viên mục tiêu `work`/`daily_conversation`: nhìn trước tối đa `GOAL_LOOKAHEAD` đơn vị chưa học của loại… */
+export const GOAL_LOOKAHEAD = 12;
+/** …và đưa tối đa `GOAL_EXTRA` đơn vị đầu tiên mang thẻ mục tiêu trong cửa sổ đó vào biên giới. */
+export const GOAL_EXTRA = 3;
 
 /**
  * Tính thứ tự đơn vị cho một người học (hàm thuần, không lưu).
@@ -226,7 +241,8 @@ export function rankUnits<U extends RankableUnit>(
   const weakTopics = new Set<string>(params.weakTopics);
   for (const s of topicStats) if (s.isWeak) weakTopics.add(s.topicId);
 
-  const ranked: RankedUnit<U>[] = [];
+  // Lọc điều kiện (chưa chấm điểm): cần biết toàn bộ đơn vị chưa học của từng loại để dựng biên giới.
+  const candidates: { unit: U; status: RankedStatus; idx: number }[] = [];
   for (const unit of units) {
     if (unit.status !== undefined && unit.status !== 'active') continue;
     if (!skills.has(unit.kind)) continue;
@@ -235,7 +251,21 @@ export function rankUnits<U extends RankableUnit>(
 
     const progress = unitProgress.get(unit.id);
     if (progress === 'mastered' && !options.includeMastered) continue;
-    const status: RankedStatus = progress ?? 'pending';
+    candidates.push({ unit, status: progress ?? 'pending', idx });
+  }
+  const frontier = frontierOf(candidates, profile.goalType);
+
+  const ranked: RankedUnit<U>[] = [];
+  for (const { unit, status, idx } of candidates) {
+    // Đơn vị chưa học ngoài biên giới: điểm chỉ phụ thuộc (trình độ, sequence) nên luôn đúng thứ tự giáo trình.
+    if (status === 'pending' && !frontier.has(unit.id)) {
+      ranked.push({
+        unit,
+        status,
+        score: W.beyondFrontier - W.perLevelStep * (idx - startIdx) - unit.sequence * W.sequence,
+      });
+      continue;
+    }
 
     let score = 0;
     if (status === 'in_progress') score += W.inProgress;
@@ -262,6 +292,47 @@ export function rankUnits<U extends RankableUnit>(
       (a.unit.kind === b.unit.kind ? 0 : a.unit.kind === 'vocabulary' ? -1 : 1) ||
       a.unit.id.localeCompare(b.unit.id),
   );
+}
+
+/**
+ * Tập id đơn vị thuộc biên giới (research D10). Với mỗi loại: `FRONTIER_SIZE` đơn vị chưa học đầu tiên
+ * theo `(trình độ, sequence)`, mọi đơn vị `in_progress`, và — chỉ khi mục tiêu là `work` hoặc
+ * `daily_conversation` — tối đa `GOAL_EXTRA` đơn vị đầu tiên mang thẻ mục tiêu trong `GOAL_LOOKAHEAD` đơn vị
+ * chưa học đầu tiên. Mục tiêu `jlpt` hoặc rỗng không mở rộng (mọi đơn vị đều mang thẻ `jlpt`).
+ * Khi một loại còn ≤ `FRONTIER_SIZE` đơn vị chưa học, biên giới bao trùm tất cả nên kết quả bằng công thức cũ.
+ */
+function frontierOf<U extends RankableUnit>(
+  candidates: readonly { unit: U; status: RankedStatus; idx: number }[],
+  goalType: GoalType | null,
+): Set<string> {
+  const pendingByKind = new Map<Skill, { unit: U; status: RankedStatus; idx: number }[]>();
+  for (const c of candidates) {
+    if (c.status !== 'pending' && c.status !== 'in_progress') continue;
+    const list = pendingByKind.get(c.unit.kind) ?? [];
+    list.push(c);
+    pendingByKind.set(c.unit.kind, list);
+  }
+  const goalExtends = goalType === 'work' || goalType === 'daily_conversation';
+  const frontier = new Set<string>();
+  for (const list of pendingByKind.values()) {
+    list.sort(
+      (a, b) =>
+        a.idx - b.idx ||
+        a.unit.sequence - b.unit.sequence ||
+        // `sequence` duy nhất trong (trình độ × loại) với nội dung mới; id chỉ phá hòa với nội dung cũ.
+        a.unit.id.localeCompare(b.unit.id),
+    );
+    for (const c of list.slice(0, FRONTIER_SIZE)) frontier.add(c.unit.id);
+    for (const c of list) if (c.status === 'in_progress') frontier.add(c.unit.id);
+    if (goalExtends) {
+      list
+        .slice(0, GOAL_LOOKAHEAD)
+        .filter((c) => c.unit.goalTags.includes(goalType))
+        .slice(0, GOAL_EXTRA)
+        .forEach((c) => frontier.add(c.unit.id));
+    }
+  }
+  return frontier;
 }
 
 /** Đơn vị còn có thể học mới (chưa hoàn thành, chưa thành thạo), giữ thứ tự xếp hạng. */

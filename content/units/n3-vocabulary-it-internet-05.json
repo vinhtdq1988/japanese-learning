@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-it-internet",
+  "title": {
+    "vi": "Số hóa và tự động",
+    "en": "Digital and automatic"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1050,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "デジタル",
+      "reading": "デジタル",
+      "meaning": {
+        "vi": "Kỹ thuật số",
+        "en": "Digital"
+      },
+      "examples": [
+        {
+          "ja": "このカメラは、デジタルなので、すぐに写真が見られます。",
+          "reading": "このカメラは、デジタルなので、すぐにしゃしんがみられます。",
+          "translation": {
+            "vi": "Máy ảnh này là máy kỹ thuật số nên xem ảnh được ngay.",
+            "en": "This camera is digital, so you can see the photos right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "アナログ",
+      "reading": "アナログ",
+      "meaning": {
+        "vi": "Tương tự; kiểu cũ (analog)",
+        "en": "Analog"
+      },
+      "examples": [
+        {
+          "ja": "私は、アナログの時計のほうが好きです。",
+          "reading": "わたしは、アナログのとけいのほうがすきです。",
+          "translation": {
+            "vi": "Tôi thích đồng hồ kim hơn.",
+            "en": "I prefer analog watches."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "アプリ",
+      "reading": "アプリ",
+      "meaning": {
+        "vi": "Ứng dụng (điện thoại)",
+        "en": "App"
+      },
+      "examples": [
+        {
+          "ja": "電車の時間は、アプリで調べます。",
+          "reading": "でんしゃのじかんは、アプリでしらべます。",
+          "translation": {
+            "vi": "Giờ tàu điện thì tôi tra bằng ứng dụng.",
+            "en": "I check the train times with an app."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "スマホ",
+      "reading": "スマホ",
+      "meaning": {
+        "vi": "Điện thoại thông minh (viết tắt)",
+        "en": "Smartphone (short form)"
+      },
+      "examples": [
+        {
+          "ja": "スマホの電池が、もうすぐなくなりそうです。",
+          "reading": "スマホのでんちが、もうすぐなくなりそうです。",
+          "translation": {
+            "vi": "Pin điện thoại sắp hết rồi.",
+            "en": "My phone's battery is about to run out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "自動",
+      "reading": "じどう",
+      "meaning": {
+        "vi": "Tự động",
+        "en": "Automatic"
+      },
+      "examples": [
+        {
+          "ja": "このドアは、人が近づくと自動で開きます。",
+          "reading": "このドアは、ひとがちかづくとじどうであきます。",
+          "translation": {
+            "vi": "Cánh cửa này tự động mở khi có người lại gần.",
+            "en": "This door opens automatically when someone approaches."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "手動",
+      "reading": "しゅどう",
+      "meaning": {
+        "vi": "Thủ công (bằng tay)",
+        "en": "Manual"
+      },
+      "examples": [
+        {
+          "ja": "機械が壊れたので、手動で動かしました。",
+          "reading": "きかいがこわれたので、しゅどうでうごかしました。",
+          "translation": {
+            "vi": "Máy hỏng nên tôi đã vận hành bằng tay.",
+            "en": "The machine broke, so I operated it manually."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "デジタル",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このカメラは、（　）なので、すぐに写真が見られます。 — Nghĩa của câu: “Máy ảnh này là máy kỹ thuật số nên xem ảnh được ngay.”",
+        "en": "Choose the word that fits the blank: このカメラは、（　）なので、すぐに写真が見られます。 — Meaning of the sentence: “This camera is digital, so you can see the photos right away.”"
+      },
+      "payload": {
+        "choices": [
+          "アプリ",
+          "デジタル",
+          "アナログ",
+          "スマホ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「デジタル」(Kỹ thuật số) hợp nghĩa câu này: “Máy ảnh này là máy kỹ thuật số nên xem ảnh được ngay.”",
+        "en": "Correct! 「デジタル」(Digital) fits this sentence: “This camera is digital, so you can see the photos right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy ảnh này là máy kỹ thuật số nên xem ảnh được ngay.”, nên cần 「デジタル」(Kỹ thuật số); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This camera is digital, so you can see the photos right away.”, so it needs 「デジタル」(Digital); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "アナログ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は、（　）の時計のほうが好きです。 — Nghĩa của câu: “Tôi thích đồng hồ kim hơn.”",
+        "en": "Choose the word that fits the blank: 私は、（　）の時計のほうが好きです。 — Meaning of the sentence: “I prefer analog watches.”"
+      },
+      "payload": {
+        "choices": [
+          "アプリ",
+          "デジタル",
+          "アナログ",
+          "スマホ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「アナログ」(Tương tự; kiểu cũ (analog)) hợp nghĩa câu này: “Tôi thích đồng hồ kim hơn.”",
+        "en": "Correct! 「アナログ」(Analog) fits this sentence: “I prefer analog watches.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi thích đồng hồ kim hơn.”, nên cần 「アナログ」(Tương tự; kiểu cũ (analog)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I prefer analog watches.”, so it needs 「アナログ」(Analog); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "アプリ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 電車の時間は、（　）で調べます。 — Nghĩa của câu: “Giờ tàu điện thì tôi tra bằng ứng dụng.”",
+        "en": "Choose the word that fits the blank: 電車の時間は、（　）で調べます。 — Meaning of the sentence: “I check the train times with an app.”"
+      },
+      "payload": {
+        "choices": [
+          "アナログ",
+          "デジタル",
+          "スマホ",
+          "アプリ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「アプリ」(Ứng dụng (điện thoại)) hợp nghĩa câu này: “Giờ tàu điện thì tôi tra bằng ứng dụng.”",
+        "en": "Correct! 「アプリ」(App) fits this sentence: “I check the train times with an app.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giờ tàu điện thì tôi tra bằng ứng dụng.”, nên cần 「アプリ」(Ứng dụng (điện thoại)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I check the train times with an app.”, so it needs 「アプリ」(App); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "スマホ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の電池が、もうすぐなくなりそうです。 — Nghĩa của câu: “Pin điện thoại sắp hết rồi.”",
+        "en": "Choose the word that fits the blank: （　）の電池が、もうすぐなくなりそうです。 — Meaning of the sentence: “My phone's battery is about to run out.”"
+      },
+      "payload": {
+        "choices": [
+          "スマホ",
+          "アナログ",
+          "アプリ",
+          "デジタル"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「スマホ」(Điện thoại thông minh (viết tắt)) hợp nghĩa câu này: “Pin điện thoại sắp hết rồi.”",
+        "en": "Correct! 「スマホ」(Smartphone (short form)) fits this sentence: “My phone's battery is about to run out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Pin điện thoại sắp hết rồi.”, nên cần 「スマホ」(Điện thoại thông minh (viết tắt)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My phone's battery is about to run out.”, so it needs 「スマホ」(Smartphone (short form)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "自動",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このドアは、人が近づくと（　）で開きます。 — Nghĩa của câu: “Cánh cửa này tự động mở khi có người lại gần.”",
+        "en": "Choose the word that fits the blank: このドアは、人が近づくと（　）で開きます。 — Meaning of the sentence: “This door opens automatically when someone approaches.”"
+      },
+      "payload": {
+        "choices": [
+          "手動",
+          "自動",
+          "デジタル",
+          "アナログ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自動」(Tự động) hợp nghĩa câu này: “Cánh cửa này tự động mở khi có người lại gần.”",
+        "en": "Correct! 「自動」(Automatic) fits this sentence: “This door opens automatically when someone approaches.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cánh cửa này tự động mở khi có người lại gần.”, nên cần 「自動」(Tự động); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This door opens automatically when someone approaches.”, so it needs 「自動」(Automatic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "手動",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 機械が壊れたので、（　）で動かしました。 — Nghĩa của câu: “Máy hỏng nên tôi đã vận hành bằng tay.”",
+        "en": "Choose the word that fits the blank: 機械が壊れたので、（　）で動かしました。 — Meaning of the sentence: “The machine broke, so I operated it manually.”"
+      },
+      "payload": {
+        "choices": [
+          "自動",
+          "デジタル",
+          "手動",
+          "アプリ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「手動」(Thủ công (bằng tay)) hợp nghĩa câu này: “Máy hỏng nên tôi đã vận hành bằng tay.”",
+        "en": "Correct! 「手動」(Manual) fits this sentence: “The machine broke, so I operated it manually.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Máy hỏng nên tôi đã vận hành bằng tay.”, nên cần 「手動」(Thủ công (bằng tay)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The machine broke, so I operated it manually.”, so it needs 「手動」(Manual); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "自動",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: このドアは、人が近づくと「自動」で開きます。",
+        "en": "Choose the correct reading of the word in 「」: このドアは、人が近づくと「自動」で開きます。"
+      },
+      "payload": {
+        "choices": [
+          "スマホ",
+          "デジタル",
+          "じどう",
+          "アプリ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自動」 đọc là 「じどう」, nghĩa là Tự động.",
+        "en": "Correct! 「自動」 is read 「じどう」 and means Automatic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「自動」 đọc là 「じどう」 (Tự động); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「自動」 is read 「じどう」 (Automatic); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "手動",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 機械が壊れたので、「手動」で動かしました。",
+        "en": "Choose the correct reading of the word in 「」: 機械が壊れたので、「手動」で動かしました。"
+      },
+      "payload": {
+        "choices": [
+          "スマホ",
+          "デジタル",
+          "じどう",
+          "しゅどう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「手動」 đọc là 「しゅどう」, nghĩa là Thủ công (bằng tay).",
+        "en": "Correct! 「手動」 is read 「しゅどう」 and means Manual."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「手動」 đọc là 「しゅどう」 (Thủ công (bằng tay)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「手動」 is read 「しゅどう」 (Manual); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "手動",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 機械が壊れたので、「しゅどう」で動かしました。",
+        "en": "Choose the correct way to write the word in 「」: 機械が壊れたので、「しゅどう」で動かしました。"
+      },
+      "payload": {
+        "choices": [
+          "自動",
+          "デジタル",
+          "アプリ",
+          "手動"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しゅどう」 viết là 「手動」, nghĩa là Thủ công (bằng tay).",
+        "en": "Correct! 「しゅどう」 is written 「手動」 and means Manual."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しゅどう」 viết là 「手動」 (Thủ công (bằng tay)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しゅどう」 is written 「手動」 (Manual); the other words are read differently."
+      }
+    }
+  ]
+}

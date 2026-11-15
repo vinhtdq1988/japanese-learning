@@ -1,0 +1,422 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (飛 改 迷)",
+    "en": "Verbs and actions kanji (飛 改 迷)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "飛",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "bay",
+        "en": "fly"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヒ"
+        ],
+        "kunReadings": [
+          "と.ぶ",
+          "と.ばす"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "飛行",
+          "reading": "ひこう",
+          "kanjiReading": "ヒ",
+          "translation": {
+            "vi": "bay (hàng không)",
+            "en": "flight"
+          }
+        },
+        {
+          "ja": "飛ぶ",
+          "reading": "とぶ",
+          "kanjiReading": "と",
+          "translation": {
+            "vi": "bay",
+            "en": "to fly"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "改",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "sửa đổi; cải",
+        "en": "reform; revise"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カイ"
+        ],
+        "kunReadings": [
+          "あらた.める",
+          "あらた.まる"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "改革",
+          "reading": "かいかく",
+          "kanjiReading": "カイ",
+          "translation": {
+            "vi": "cải cách",
+            "en": "reform"
+          }
+        },
+        {
+          "ja": "改める",
+          "reading": "あらためる",
+          "kanjiReading": "あらた",
+          "translation": {
+            "vi": "sửa đổi; thay đổi",
+            "en": "to revise"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "迷",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "lạc; phân vân",
+        "en": "lose one's way; hesitate"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "メイ"
+        ],
+        "kunReadings": [
+          "まよ.う"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "迷惑",
+          "reading": "めいわく",
+          "kanjiReading": "メイ",
+          "translation": {
+            "vi": "phiền phức",
+            "en": "nuisance"
+          }
+        },
+        {
+          "ja": "迷う",
+          "reading": "まよう",
+          "kanjiReading": "まよ",
+          "translation": {
+            "vi": "lạc; phân vân",
+            "en": "to be lost; to hesitate"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "飛",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飛」nghĩa là gì?",
+        "en": "What does 「飛」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bay",
+            "en": "fly"
+          },
+          {
+            "vi": "sửa đổi; cải",
+            "en": "reform; revise"
+          },
+          {
+            "vi": "lạc; phân vân",
+            "en": "lose one's way; hesitate"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飛 nghĩa là bay.",
+        "en": "Correct! 飛 means fly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 飛 nghĩa là bay, như trong 「飛行」 (bay (hàng không)).",
+        "en": "Not quite. 飛 means fly, as in 「飛行」 (flight)."
+      }
+    },
+    {
+      "item": "飛",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「飛」 trong 「飛行」 (“bay (hàng không)”).",
+        "en": "Type the reading of 「飛」 in 「飛行」 (“flight”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ひ",
+          "ヒ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 飛行, 飛 đọc là ひ (âm On).",
+        "en": "Correct! In 飛行, 飛 is read ひ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 飛行 (bay (hàng không)), 飛 đọc là ひ (âm On).",
+        "en": "In 飛行 (flight), 飛 is read ひ (on'yomi)."
+      }
+    },
+    {
+      "item": "飛",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「飛ぶ」(bay) đọc là gì?",
+        "en": "How is 「飛ぶ」 (to fly) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひぶ",
+          "とぶ",
+          "まよう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 飛ぶ = とぶ (bay); 飛 đọc là と (âm Kun).",
+        "en": "Correct! 飛ぶ = とぶ (to fly); 飛 is read と (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "飛ぶ đọc là とぶ (bay): 飛 mang âm Kun と.",
+        "en": "飛ぶ is read とぶ (to fly): 飛 takes the kun'yomi と."
+      }
+    },
+    {
+      "item": "改",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「改」nghĩa là gì?",
+        "en": "What does 「改」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lạc; phân vân",
+            "en": "lose one's way; hesitate"
+          },
+          {
+            "vi": "sửa đổi; cải",
+            "en": "reform; revise"
+          },
+          {
+            "vi": "bay",
+            "en": "fly"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 改 nghĩa là sửa đổi; cải.",
+        "en": "Correct! 改 means reform; revise."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 改 nghĩa là sửa đổi; cải, như trong 「改革」 (cải cách).",
+        "en": "Not quite. 改 means reform; revise, as in 「改革」 (reform)."
+      }
+    },
+    {
+      "item": "改",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「改」 trong 「改革」 (“cải cách”).",
+        "en": "Type the reading of 「改」 in 「改革」 (“reform”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "かい",
+          "カイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 改革, 改 đọc là かい (âm On).",
+        "en": "Correct! In 改革, 改 is read かい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 改革 (cải cách), 改 đọc là かい (âm On).",
+        "en": "In 改革 (reform), 改 is read かい (on'yomi)."
+      }
+    },
+    {
+      "item": "改",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「改める」(sửa đổi; thay đổi) đọc là gì?",
+        "en": "How is 「改める」 (to revise) read?"
+      },
+      "payload": {
+        "choices": [
+          "かいめる",
+          "めいわく",
+          "あらためる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 改める = あらためる (sửa đổi; thay đổi); 改 đọc là あらた (âm Kun).",
+        "en": "Correct! 改める = あらためる (to revise); 改 is read あらた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "改める đọc là あらためる (sửa đổi; thay đổi): 改 mang âm Kun あらた.",
+        "en": "改める is read あらためる (to revise): 改 takes the kun'yomi あらた."
+      }
+    },
+    {
+      "item": "迷",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「迷」nghĩa là gì?",
+        "en": "What does 「迷」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bay",
+            "en": "fly"
+          },
+          {
+            "vi": "sửa đổi; cải",
+            "en": "reform; revise"
+          },
+          {
+            "vi": "lạc; phân vân",
+            "en": "lose one's way; hesitate"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 迷 nghĩa là lạc; phân vân.",
+        "en": "Correct! 迷 means lose one's way; hesitate."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 迷 nghĩa là lạc; phân vân, như trong 「迷惑」 (phiền phức).",
+        "en": "Not quite. 迷 means lose one's way; hesitate, as in 「迷惑」 (nuisance)."
+      }
+    },
+    {
+      "item": "迷",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「迷」 trong 「迷惑」 (“phiền phức”).",
+        "en": "Type the reading of 「迷」 in 「迷惑」 (“nuisance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "めい",
+          "メイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 迷惑, 迷 đọc là めい (âm On).",
+        "en": "Correct! In 迷惑, 迷 is read めい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 迷惑 (phiền phức), 迷 đọc là めい (âm On).",
+        "en": "In 迷惑 (nuisance), 迷 is read めい (on'yomi)."
+      }
+    },
+    {
+      "item": "迷",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「迷う」(lạc; phân vân) đọc là gì?",
+        "en": "How is 「迷う」 (to be lost; to hesitate) read?"
+      },
+      "payload": {
+        "choices": [
+          "まよう",
+          "めいう",
+          "ひこう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 迷う = まよう (lạc; phân vân); 迷 đọc là まよ (âm Kun).",
+        "en": "Correct! 迷う = まよう (to be lost; to hesitate); 迷 is read まよ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "迷う đọc là まよう (lạc; phân vân): 迷 mang âm Kun まよ.",
+        "en": "迷う is read まよう (to be lost; to hesitate): 迷 takes the kun'yomi まよ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "飛",
+            {
+              "vi": "bay",
+              "en": "fly"
+            }
+          ],
+          [
+            "改",
+            {
+              "vi": "sửa đổi; cải",
+              "en": "reform; revise"
+            }
+          ],
+          [
+            "迷",
+            {
+              "vi": "lạc; phân vân",
+              "en": "lose one's way; hesitate"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

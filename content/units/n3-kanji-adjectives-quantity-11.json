@@ -1,0 +1,676 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-adjectives-quantity",
+  "title": {
+    "vi": "Kanji tính từ – số lượng (様 形 種 積 満)",
+    "en": "Adjectives and quantity kanji (様 形 種 積 満)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3330,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "様",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "kiểu; ngài; dáng vẻ",
+        "en": "manner; Mr./Ms."
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヨウ"
+        ],
+        "kunReadings": [
+          "さま"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "様子",
+          "reading": "ようす",
+          "kanjiReading": "ヨウ",
+          "translation": {
+            "vi": "tình hình; dáng vẻ",
+            "en": "state of affairs; appearance"
+          }
+        },
+        {
+          "ja": "お客様",
+          "reading": "おきゃくさま",
+          "kanjiReading": "さま",
+          "translation": {
+            "vi": "quý khách",
+            "en": "customer (honorific)"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "形",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "hình; hình dạng",
+        "en": "shape; form"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ケイ",
+          "ギョウ"
+        ],
+        "kunReadings": [
+          "かたち",
+          "かた"
+        ],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "図形",
+          "reading": "ずけい",
+          "kanjiReading": "ケイ",
+          "translation": {
+            "vi": "hình vẽ",
+            "en": "figure"
+          }
+        },
+        {
+          "ja": "人形",
+          "reading": "にんぎょう",
+          "kanjiReading": "ギョウ",
+          "translation": {
+            "vi": "búp bê",
+            "en": "doll"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "種",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "loại; hạt giống",
+        "en": "kind; seed"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュ"
+        ],
+        "kunReadings": [
+          "たね"
+        ],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "種類",
+          "reading": "しゅるい",
+          "kanjiReading": "シュ",
+          "translation": {
+            "vi": "chủng loại",
+            "en": "kind"
+          }
+        },
+        {
+          "ja": "種",
+          "reading": "たね",
+          "kanjiReading": "たね",
+          "translation": {
+            "vi": "hạt giống",
+            "en": "seed"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "積",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "tích; chất đống",
+        "en": "pile up; area"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ"
+        ],
+        "kunReadings": [
+          "つ.む",
+          "つ.もる"
+        ],
+        "strokeCount": 16
+      },
+      "examples": [
+        {
+          "ja": "面積",
+          "reading": "めんせき",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "diện tích",
+            "en": "area"
+          }
+        },
+        {
+          "ja": "積む",
+          "reading": "つむ",
+          "kanjiReading": "つ",
+          "translation": {
+            "vi": "chất; xếp",
+            "en": "to pile up"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "満",
+      "topic": "kanji-n3-adjectives-quantity",
+      "meaning": {
+        "vi": "đầy; thỏa mãn",
+        "en": "full; satisfied"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "マン"
+        ],
+        "kunReadings": [
+          "み.ちる",
+          "み.たす"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "満足",
+          "reading": "まんぞく",
+          "kanjiReading": "マン",
+          "translation": {
+            "vi": "hài lòng",
+            "en": "satisfaction"
+          }
+        },
+        {
+          "ja": "満たす",
+          "reading": "みたす",
+          "kanjiReading": "み",
+          "translation": {
+            "vi": "làm đầy; thỏa mãn",
+            "en": "to fill; to satisfy"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "様",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「様」nghĩa là gì?",
+        "en": "What does 「様」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kiểu; ngài; dáng vẻ",
+            "en": "manner; Mr./Ms."
+          },
+          {
+            "vi": "hình; hình dạng",
+            "en": "shape; form"
+          },
+          {
+            "vi": "loại; hạt giống",
+            "en": "kind; seed"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 様 nghĩa là kiểu; ngài; dáng vẻ.",
+        "en": "Correct! 様 means manner; Mr./Ms.."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 様 nghĩa là kiểu; ngài; dáng vẻ, như trong 「様子」 (tình hình; dáng vẻ).",
+        "en": "Not quite. 様 means manner; Mr./Ms., as in 「様子」 (state of affairs; appearance)."
+      }
+    },
+    {
+      "item": "様",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「様」 trong 「様子」 (“tình hình; dáng vẻ”).",
+        "en": "Type the reading of 「様」 in 「様子」 (“state of affairs; appearance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "よう",
+          "ヨウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 様子, 様 đọc là よう (âm On).",
+        "en": "Correct! In 様子, 様 is read よう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 様子 (tình hình; dáng vẻ), 様 đọc là よう (âm On).",
+        "en": "In 様子 (state of affairs; appearance), 様 is read よう (on'yomi)."
+      }
+    },
+    {
+      "item": "様",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「お客様」(quý khách) đọc là gì?",
+        "en": "How is 「お客様」 (customer (honorific)) read?"
+      },
+      "payload": {
+        "choices": [
+          "おきゃくよう",
+          "おきゃくさま",
+          "おきゃくざま"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! お客様 = おきゃくさま (quý khách); 様 đọc là さま (âm Kun).",
+        "en": "Correct! お客様 = おきゃくさま (customer (honorific)); 様 is read さま (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "お客様 đọc là おきゃくさま (quý khách): 様 mang âm Kun さま.",
+        "en": "お客様 is read おきゃくさま (customer (honorific)): 様 takes the kun'yomi さま."
+      }
+    },
+    {
+      "item": "形",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「形」nghĩa là gì?",
+        "en": "What does 「形」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "loại; hạt giống",
+            "en": "kind; seed"
+          },
+          {
+            "vi": "hình; hình dạng",
+            "en": "shape; form"
+          },
+          {
+            "vi": "tích; chất đống",
+            "en": "pile up; area"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 形 nghĩa là hình; hình dạng.",
+        "en": "Correct! 形 means shape; form."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 形 nghĩa là hình; hình dạng, như trong 「図形」 (hình vẽ).",
+        "en": "Not quite. 形 means shape; form, as in 「図形」 (figure)."
+      }
+    },
+    {
+      "item": "形",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「形」 trong 「図形」 (“hình vẽ”).",
+        "en": "Type the reading of 「形」 in 「図形」 (“figure”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "けい",
+          "ケイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 図形, 形 đọc là けい (âm On).",
+        "en": "Correct! In 図形, 形 is read けい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 図形 (hình vẽ), 形 đọc là けい (âm On).",
+        "en": "In 図形 (figure), 形 is read けい (on'yomi)."
+      }
+    },
+    {
+      "item": "形",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「人形」(búp bê) đọc là gì?",
+        "en": "How is 「人形」 (doll) read?"
+      },
+      "payload": {
+        "choices": [
+          "にんかたち",
+          "にんきょう",
+          "にんぎょう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 人形 = にんぎょう (búp bê); 形 đọc là ぎょう (âm On).",
+        "en": "Correct! 人形 = にんぎょう (doll); 形 is read ぎょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "人形 đọc là にんぎょう (búp bê): 形 mang âm On ぎょう.",
+        "en": "人形 is read にんぎょう (doll): 形 takes the on'yomi ぎょう."
+      }
+    },
+    {
+      "item": "種",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「種」nghĩa là gì?",
+        "en": "What does 「種」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tích; chất đống",
+            "en": "pile up; area"
+          },
+          {
+            "vi": "đầy; thỏa mãn",
+            "en": "full; satisfied"
+          },
+          {
+            "vi": "loại; hạt giống",
+            "en": "kind; seed"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 種 nghĩa là loại; hạt giống.",
+        "en": "Correct! 種 means kind; seed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 種 nghĩa là loại; hạt giống, như trong 「種類」 (chủng loại).",
+        "en": "Not quite. 種 means kind; seed, as in 「種類」 (kind)."
+      }
+    },
+    {
+      "item": "種",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「種」 trong 「種類」 (“chủng loại”).",
+        "en": "Type the reading of 「種」 in 「種類」 (“kind”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅ",
+          "シュ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 種類, 種 đọc là しゅ (âm On).",
+        "en": "Correct! In 種類, 種 is read しゅ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 種類 (chủng loại), 種 đọc là しゅ (âm On).",
+        "en": "In 種類 (kind), 種 is read しゅ (on'yomi)."
+      }
+    },
+    {
+      "item": "種",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「種」(hạt giống; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「種」 (seed; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "たね",
+          "しゅ",
+          "つむ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 種 = たね (hạt giống); 種 đọc là たね (âm Kun).",
+        "en": "Correct! 種 = たね (seed); 種 is read たね (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "種 đọc là たね (hạt giống): 種 mang âm Kun たね.",
+        "en": "種 is read たね (seed): 種 takes the kun'yomi たね."
+      }
+    },
+    {
+      "item": "積",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「積」nghĩa là gì?",
+        "en": "What does 「積」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tích; chất đống",
+            "en": "pile up; area"
+          },
+          {
+            "vi": "đầy; thỏa mãn",
+            "en": "full; satisfied"
+          },
+          {
+            "vi": "kiểu; ngài; dáng vẻ",
+            "en": "manner; Mr./Ms."
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 積 nghĩa là tích; chất đống.",
+        "en": "Correct! 積 means pile up; area."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 積 nghĩa là tích; chất đống, như trong 「面積」 (diện tích).",
+        "en": "Not quite. 積 means pile up; area, as in 「面積」 (area)."
+      }
+    },
+    {
+      "item": "積",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「積」 trong 「面積」 (“diện tích”).",
+        "en": "Type the reading of 「積」 in 「面積」 (“area”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せき",
+          "セキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 面積, 積 đọc là せき (âm On).",
+        "en": "Correct! In 面積, 積 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 面積 (diện tích), 積 đọc là せき (âm On).",
+        "en": "In 面積 (area), 積 is read せき (on'yomi)."
+      }
+    },
+    {
+      "item": "積",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「積む」(chất; xếp) đọc là gì?",
+        "en": "How is 「積む」 (to pile up) read?"
+      },
+      "payload": {
+        "choices": [
+          "せきむ",
+          "つむ",
+          "たね"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 積む = つむ (chất; xếp); 積 đọc là つ (âm Kun).",
+        "en": "Correct! 積む = つむ (to pile up); 積 is read つ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "積む đọc là つむ (chất; xếp): 積 mang âm Kun つ.",
+        "en": "積む is read つむ (to pile up): 積 takes the kun'yomi つ."
+      }
+    },
+    {
+      "item": "満",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「満」nghĩa là gì?",
+        "en": "What does 「満」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "kiểu; ngài; dáng vẻ",
+            "en": "manner; Mr./Ms."
+          },
+          {
+            "vi": "đầy; thỏa mãn",
+            "en": "full; satisfied"
+          },
+          {
+            "vi": "hình; hình dạng",
+            "en": "shape; form"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 満 nghĩa là đầy; thỏa mãn.",
+        "en": "Correct! 満 means full; satisfied."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 満 nghĩa là đầy; thỏa mãn, như trong 「満足」 (hài lòng).",
+        "en": "Not quite. 満 means full; satisfied, as in 「満足」 (satisfaction)."
+      }
+    },
+    {
+      "item": "満",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「満」 trong 「満足」 (“hài lòng”).",
+        "en": "Type the reading of 「満」 in 「満足」 (“satisfaction”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "まん",
+          "マン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 満足, 満 đọc là まん (âm On).",
+        "en": "Correct! In 満足, 満 is read まん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 満足 (hài lòng), 満 đọc là まん (âm On).",
+        "en": "In 満足 (satisfaction), 満 is read まん (on'yomi)."
+      }
+    },
+    {
+      "item": "満",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「満たす」(làm đầy; thỏa mãn) đọc là gì?",
+        "en": "How is 「満たす」 (to fill; to satisfy) read?"
+      },
+      "payload": {
+        "choices": [
+          "まんたす",
+          "ようす",
+          "みたす"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 満たす = みたす (làm đầy; thỏa mãn); 満 đọc là み (âm Kun).",
+        "en": "Correct! 満たす = みたす (to fill; to satisfy); 満 is read み (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "満たす đọc là みたす (làm đầy; thỏa mãn): 満 mang âm Kun み.",
+        "en": "満たす is read みたす (to fill; to satisfy): 満 takes the kun'yomi み."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "様",
+            {
+              "vi": "kiểu; ngài; dáng vẻ",
+              "en": "manner; Mr./Ms."
+            }
+          ],
+          [
+            "形",
+            {
+              "vi": "hình; hình dạng",
+              "en": "shape; form"
+            }
+          ],
+          [
+            "種",
+            {
+              "vi": "loại; hạt giống",
+              "en": "kind; seed"
+            }
+          ],
+          [
+            "積",
+            {
+              "vi": "tích; chất đống",
+              "en": "pile up; area"
+            }
+          ],
+          [
+            "満",
+            {
+              "vi": "đầy; thỏa mãn",
+              "en": "full; satisfied"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

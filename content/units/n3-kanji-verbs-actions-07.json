@@ -1,0 +1,424 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-verbs-actions",
+  "title": {
+    "vi": "Kanji động từ – hành động (打 直 変)",
+    "en": "Verbs and actions kanji (打 直 変)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2930,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "打",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "đánh; gõ",
+        "en": "hit; strike"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ダ"
+        ],
+        "kunReadings": [
+          "う.つ"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "打撃",
+          "reading": "だげき",
+          "kanjiReading": "ダ",
+          "translation": {
+            "vi": "cú đánh; đòn",
+            "en": "blow"
+          }
+        },
+        {
+          "ja": "打つ",
+          "reading": "うつ",
+          "kanjiReading": "う",
+          "translation": {
+            "vi": "đánh; gõ",
+            "en": "to hit"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "直",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "thẳng; sửa; trực tiếp",
+        "en": "straight; fix"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "チョク",
+          "ジキ"
+        ],
+        "kunReadings": [
+          "ただ.ちに",
+          "なお.す",
+          "なお.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "直接",
+          "reading": "ちょくせつ",
+          "kanjiReading": "チョク",
+          "translation": {
+            "vi": "trực tiếp",
+            "en": "directly"
+          }
+        },
+        {
+          "ja": "正直",
+          "reading": "しょうじき",
+          "kanjiReading": "ジキ",
+          "translation": {
+            "vi": "thật thà",
+            "en": "honest"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "変",
+      "topic": "kanji-n3-verbs-actions",
+      "meaning": {
+        "vi": "đổi; lạ",
+        "en": "change; strange"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヘン"
+        ],
+        "kunReadings": [
+          "か.わる",
+          "か.える"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "大変",
+          "reading": "たいへん",
+          "kanjiReading": "ヘン",
+          "translation": {
+            "vi": "vất vả; nghiêm trọng",
+            "en": "serious; hard"
+          }
+        },
+        {
+          "ja": "変わる",
+          "reading": "かわる",
+          "kanjiReading": "か",
+          "translation": {
+            "vi": "thay đổi",
+            "en": "to change"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "打",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「打」nghĩa là gì?",
+        "en": "What does 「打」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đánh; gõ",
+            "en": "hit; strike"
+          },
+          {
+            "vi": "thẳng; sửa; trực tiếp",
+            "en": "straight; fix"
+          },
+          {
+            "vi": "đổi; lạ",
+            "en": "change; strange"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 打 nghĩa là đánh; gõ.",
+        "en": "Correct! 打 means hit; strike."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 打 nghĩa là đánh; gõ, như trong 「打撃」 (cú đánh; đòn).",
+        "en": "Not quite. 打 means hit; strike, as in 「打撃」 (blow)."
+      }
+    },
+    {
+      "item": "打",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「打」 trong 「打撃」 (“cú đánh; đòn”).",
+        "en": "Type the reading of 「打」 in 「打撃」 (“blow”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "だ",
+          "ダ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 打撃, 打 đọc là だ (âm On).",
+        "en": "Correct! In 打撃, 打 is read だ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 打撃 (cú đánh; đòn), 打 đọc là だ (âm On).",
+        "en": "In 打撃 (blow), 打 is read だ (on'yomi)."
+      }
+    },
+    {
+      "item": "打",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「打つ」(đánh; gõ) đọc là gì?",
+        "en": "How is 「打つ」 (to hit) read?"
+      },
+      "payload": {
+        "choices": [
+          "だつ",
+          "うつ",
+          "かわる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 打つ = うつ (đánh; gõ); 打 đọc là う (âm Kun).",
+        "en": "Correct! 打つ = うつ (to hit); 打 is read う (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "打つ đọc là うつ (đánh; gõ): 打 mang âm Kun う.",
+        "en": "打つ is read うつ (to hit): 打 takes the kun'yomi う."
+      }
+    },
+    {
+      "item": "直",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「直」nghĩa là gì?",
+        "en": "What does 「直」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đổi; lạ",
+            "en": "change; strange"
+          },
+          {
+            "vi": "thẳng; sửa; trực tiếp",
+            "en": "straight; fix"
+          },
+          {
+            "vi": "đánh; gõ",
+            "en": "hit; strike"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 直 nghĩa là thẳng; sửa; trực tiếp.",
+        "en": "Correct! 直 means straight; fix."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 直 nghĩa là thẳng; sửa; trực tiếp, như trong 「直接」 (trực tiếp).",
+        "en": "Not quite. 直 means straight; fix, as in 「直接」 (directly)."
+      }
+    },
+    {
+      "item": "直",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「直」 trong 「直接」 (“trực tiếp”).",
+        "en": "Type the reading of 「直」 in 「直接」 (“directly”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ちょく",
+          "チョク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 直接, 直 đọc là ちょく (âm On).",
+        "en": "Correct! In 直接, 直 is read ちょく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 直接 (trực tiếp), 直 đọc là ちょく (âm On).",
+        "en": "In 直接 (directly), 直 is read ちょく (on'yomi)."
+      }
+    },
+    {
+      "item": "直",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「正直」(thật thà) đọc là gì?",
+        "en": "How is 「正直」 (honest) read?"
+      },
+      "payload": {
+        "choices": [
+          "しょうただ",
+          "しょうしき",
+          "しょうじき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 正直 = しょうじき (thật thà); 直 đọc là じき (âm On).",
+        "en": "Correct! 正直 = しょうじき (honest); 直 is read じき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "正直 đọc là しょうじき (thật thà): 直 mang âm On じき.",
+        "en": "正直 is read しょうじき (honest): 直 takes the on'yomi じき."
+      }
+    },
+    {
+      "item": "変",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「変」nghĩa là gì?",
+        "en": "What does 「変」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đánh; gõ",
+            "en": "hit; strike"
+          },
+          {
+            "vi": "thẳng; sửa; trực tiếp",
+            "en": "straight; fix"
+          },
+          {
+            "vi": "đổi; lạ",
+            "en": "change; strange"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 変 nghĩa là đổi; lạ.",
+        "en": "Correct! 変 means change; strange."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 変 nghĩa là đổi; lạ, như trong 「大変」 (vất vả; nghiêm trọng).",
+        "en": "Not quite. 変 means change; strange, as in 「大変」 (serious; hard)."
+      }
+    },
+    {
+      "item": "変",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「変」 trong 「大変」 (“vất vả; nghiêm trọng”).",
+        "en": "Type the reading of 「変」 in 「大変」 (“serious; hard”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "へん",
+          "ヘン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 大変, 変 đọc là へん (âm On).",
+        "en": "Correct! In 大変, 変 is read へん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 大変 (vất vả; nghiêm trọng), 変 đọc là へん (âm On).",
+        "en": "In 大変 (serious; hard), 変 is read へん (on'yomi)."
+      }
+    },
+    {
+      "item": "変",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「変わる」(thay đổi) đọc là gì?",
+        "en": "How is 「変わる」 (to change) read?"
+      },
+      "payload": {
+        "choices": [
+          "かわる",
+          "へんわる",
+          "だげき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 変わる = かわる (thay đổi); 変 đọc là か (âm Kun).",
+        "en": "Correct! 変わる = かわる (to change); 変 is read か (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "変わる đọc là かわる (thay đổi): 変 mang âm Kun か.",
+        "en": "変わる is read かわる (to change): 変 takes the kun'yomi か."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "打",
+            {
+              "vi": "đánh; gõ",
+              "en": "hit; strike"
+            }
+          ],
+          [
+            "直",
+            {
+              "vi": "thẳng; sửa; trực tiếp",
+              "en": "straight; fix"
+            }
+          ],
+          [
+            "変",
+            {
+              "vi": "đổi; lạ",
+              "en": "change; strange"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

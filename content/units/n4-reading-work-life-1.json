@@ -1,0 +1,130 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Thông báo họp nhóm",
+    "en": "Reading: Team meeting notice"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 220,
+  "items": [
+    {
+      "japanese": "来週の火曜日、午後二時から三階の会議室でチームの会議があります。新しい仕事について話しますので、みんなで意見を出してください。資料は前の日までにメールで送ります。出られない人は、月曜日までに山田に連絡してください。",
+      "meaning": {
+        "vi": "Thứ Ba tuần sau, từ 2 giờ chiều có cuộc họp nhóm ở phòng họp tầng 3. Chúng ta sẽ bàn về công việc mới nên mọi người hãy cùng đóng góp ý kiến. Tài liệu sẽ được gửi qua email trước đó một ngày. Ai không tham dự được xin liên lạc với Yamada trước thứ Hai.",
+        "en": "Next Tuesday, there will be a team meeting from 2 p.m. in the meeting room on the third floor. We will discuss the new project, so please share your opinions. The materials will be sent by email the day before. If you cannot attend, please contact Yamada by Monday."
+      },
+      "reading": "らいしゅうのかようび、ごごにじからさんがいのかいぎしつでチームのかいぎがあります。あたらしいしごとについてはなしますので、みんなでいけんをだしてください。しりょうはまえのひまでにメールでおくります。でられないひとは、げつようびまでにやまだにれんらくしてください。",
+      "explanation": {
+        "vi": "「～ので」nêu lý do (話しますので); 「～までに」chỉ hạn chót (月曜日までに); 「出られない」là dạng phủ định của khả năng 出られる.",
+        "en": "「～ので」 gives a reason (話しますので); 「～までに」 sets a deadline (月曜日までに); 「出られない」 is the negative potential form of 出る."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Cuộc họp diễn ra khi nào?",
+        "en": "When is the meeting?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Hai tuần sau, 2 giờ chiều",
+            "en": "Next Monday at 2 p.m."
+          },
+          {
+            "vi": "Thứ Ba tuần sau, 3 giờ chiều",
+            "en": "Next Tuesday at 3 p.m."
+          },
+          {
+            "vi": "Thứ Ba tuần sau, 2 giờ chiều",
+            "en": "Next Tuesday at 2 p.m."
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 来週の火曜日、午後二時から.",
+        "en": "Correct! 来週の火曜日、午後二時から."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 火曜日 là thứ Ba và 午後二時 là 2 giờ chiều.",
+        "en": "Not quite. 火曜日 is Tuesday and 午後二時 is 2 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Tài liệu được gửi bằng cách nào?",
+        "en": "How will the materials be sent?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gửi qua email trước một ngày",
+            "en": "By email the day before"
+          },
+          {
+            "vi": "Phát tại phòng họp",
+            "en": "Handed out in the meeting room"
+          },
+          {
+            "vi": "Gửi qua đường bưu điện",
+            "en": "By post"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 資料は前の日までにメールで送ります.",
+        "en": "Correct! 資料は前の日までにメールで送ります."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Văn bản nói 資料は前の日までにメールで送ります: gửi bằng email trước đó một ngày.",
+        "en": "Not quite. The text says 資料は前の日までにメールで送ります: by email the day before."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người không tham dự được phải làm gì?",
+        "en": "What should people who cannot attend do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gửi email cho trưởng nhóm sau cuộc họp",
+            "en": "Email the team leader after the meeting"
+          },
+          {
+            "vi": "Liên lạc với Yamada trước thứ Hai",
+            "en": "Contact Yamada by Monday"
+          },
+          {
+            "vi": "Không cần làm gì",
+            "en": "Nothing"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 月曜日までに山田に連絡してください.",
+        "en": "Correct! 月曜日までに山田に連絡してください."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người không tham dự được cần 山田に連絡 (liên lạc với Yamada) 月曜日までに (trước thứ Hai).",
+        "en": "Not quite. Those who cannot attend must 山田に連絡 (contact Yamada) 月曜日までに (by Monday)."
+      }
+    }
+  ]
+}

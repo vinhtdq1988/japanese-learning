@@ -1,0 +1,318 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-passive-causative",
+  "title": {
+    "vi": "Bị động đặc biệt: bị phiền và bị lấy/hỏng đồ của mình",
+    "en": "Special passives: adversative and possessor passive"
+  },
+  "goalTags": [
+    "jlpt"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "迷惑の受身（間接受身）",
+      "meaning": {
+        "vi": "Bị động gián tiếp (bị làm phiền)",
+        "en": "Adversative (indirect) passive"
+      },
+      "explanation": {
+        "vi": "Cách chia: 五段 đổi う→あ + れる (踏む→踏まれる); 一段 bỏ る thêm られる (食べる→食べられる); する→される, くる→こられる. Cách dùng: N1 は N2 に + động từ bị động, chỉ việc người khác/tự nhiên làm khiến N1 khó chịu (雨に降られる, 子どもに泣かれる), kể cả với tự động từ. Thường mang cảm giác bị làm phiền.",
+        "en": "Conjugation: 五段 change the final う-sound to あ + れる (踏む→踏まれる); 一段 drop る and add られる (食べる→食べられる); する→される, くる→こられる. Usage: N1 は N2 に + passive verb, an action by someone/something else that troubles N1 (雨に降られる, 子どもに泣かれる), even with intransitive verbs. It usually carries a feeling of being bothered."
+      },
+      "examples": [
+        {
+          "ja": "電車の中で、隣の人に足を踏まれました。",
+          "reading": "でんしゃのなかで、となりのひとにあしをふまれました。",
+          "translation": {
+            "vi": "Trong tàu điện, tôi bị người bên cạnh giẫm vào chân.",
+            "en": "On the train, I got my foot stepped on by the person next to me."
+          }
+        },
+        {
+          "ja": "昨日、雨に降られて、びしょぬれになりました。",
+          "reading": "きのう、あめにふられて、びしょぬれになりました。",
+          "translation": {
+            "vi": "Hôm qua tôi bị mưa, ướt như chuột lột.",
+            "en": "Yesterday I got caught in the rain and was soaked."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-065"
+    },
+    {
+      "japanese": "持ち主の受身",
+      "meaning": {
+        "vi": "Bị động chủ sở hữu (bị làm gì vào đồ của mình)",
+        "en": "Possessor passive"
+      },
+      "explanation": {
+        "vi": "Cách dùng: N1 は N2 に N3 を + động từ bị động, trong đó N3 là đồ vật/bộ phận cơ thể của N1 (日記を読まれる, 足を踏まれる). Chủ ngữ là người sở hữu, nhấn vào việc người đó chịu tác động. Câu chủ động tương ứng: N2 が N1 の N3 を V.",
+        "en": "Usage: N1 は N2 に N3 を + passive verb, where N3 belongs to N1 (a thing or body part) (日記を読まれる, 足を踏まれる). The subject is the owner, stressing that they are affected. The active counterpart is N2 が N1 の N3 を V."
+      },
+      "examples": [
+        {
+          "ja": "私は友だちに日記を読まれました。",
+          "reading": "わたしはともだちににっきをよまれました。",
+          "translation": {
+            "vi": "Nhật ký của tôi bị bạn đọc mất.",
+            "en": "My friend read my diary (to my dismay)."
+          }
+        },
+        {
+          "ja": "弟に大切なおもちゃをこわされました。",
+          "reading": "おとうとにたいせつなおもちゃをこわされました。",
+          "translation": {
+            "vi": "Món đồ chơi quan trọng của tôi bị em trai làm hỏng.",
+            "en": "My younger brother broke my precious toy."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-064"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "迷惑の受身（間接受身）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n昨日、雨に（　）、びしょぬれになりました。",
+        "en": "Choose the correct option for the blank:\n昨日、雨に（　）、びしょぬれになりました。"
+      },
+      "payload": {
+        "choices": [
+          "降って",
+          "降らせて",
+          "降られ",
+          "降られて"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bị mưa làm phiền (động từ tự động) dùng thể bị động: 「雨に降られて」.",
+        "en": "Correct! Being troubled by rain (an intransitive verb) uses the passive: 「雨に降られて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bị mưa làm phiền (động từ tự động) dùng thể bị động: 「雨に降られて」.",
+        "en": "Not quite. Being troubled by rain (an intransitive verb) uses the passive: 「雨に降られて」."
+      }
+    },
+    {
+      "item": "迷惑の受身（間接受身）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n電車の中で、隣の人に足を踏ま___ました。",
+        "en": "Choose the correct option for the blank:\n電車の中で、隣の人に足を踏ま___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "れ"
+        ],
+        "hint": "〜れ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「踏む」 thuộc nhóm 五段: 「踏まれる」, thể ます 「踏まれます」; chỗ trống là 「れ」.",
+        "en": "Correct! 「踏む」 is a 五段 verb: 「踏まれる」, polite 「踏まれます」; the blank is 「れ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「踏む」 thuộc nhóm 五段: 「踏まれる」, thể ます 「踏まれます」; chỗ trống là 「れ」.",
+        "en": "Not quite. 「踏む」 is a 五段 verb: 「踏まれる」, polite 「踏まれます」; the blank is 「れ」."
+      }
+    },
+    {
+      "item": "迷惑の受身（間接受身）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n子どもに（　）、勉強できませんでした。",
+        "en": "Choose the pattern that best fits the context:\n子どもに（　）、勉強できませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "泣いて",
+          "泣かせて",
+          "泣かれて",
+          "泣けて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bị con khóc làm phiền (động từ tự động) dùng 「泣かれて」; 「泣かせて」 là sai khiến.",
+        "en": "Correct! Being bothered by the child crying (an intransitive verb) uses 「泣かれて」; 「泣かせて」 is the causative."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bị con khóc làm phiền (động từ tự động) dùng 「泣かれて」; 「泣かせて」 là sai khiến.",
+        "en": "Not quite. Being bothered by the child crying (an intransitive verb) uses 「泣かれて」; 「泣かせて」 is the causative."
+      }
+    },
+    {
+      "item": "迷惑の受身（間接受身）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "隣の人にたばこを吸わせて、困りました。",
+          "隣の人にたばこを吸われて、困りました。",
+          "隣の人をたばこを吸われて、困りました。",
+          "隣の人にたばこが吸われて、困りました。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người gây phiền đánh dấu bằng 「に」 và động từ ở thể bị động: 「吸われて」.",
+        "en": "Correct! The person causing trouble is marked with 「に」 and the verb is passive: 「吸われて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người gây phiền đánh dấu bằng 「に」 và động từ ở thể bị động: 「吸われて」.",
+        "en": "Not quite. The person causing trouble is marked with 「に」 and the verb is passive: 「吸われて」."
+      }
+    },
+    {
+      "item": "持ち主の受身",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は友だちに日記を（　）。\n（Bạn tự ý đọc nhật ký của tôi, tôi thấy phiền.）",
+        "en": "Choose the correct option for the blank:\n私は友だちに日記を（　）。\n(My friend read my diary without permission, which bothered me.)"
+      },
+      "payload": {
+        "choices": [
+          "読まれました",
+          "読みました",
+          "読ませました",
+          "読めました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhật ký của mình bị bạn đọc: 「読まれました」.",
+        "en": "Correct! My diary was read by my friend: 「読まれました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhật ký của mình bị bạn đọc: 「読まれました」.",
+        "en": "Not quite. My diary was read by my friend: 「読まれました」."
+      }
+    },
+    {
+      "item": "持ち主の受身",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n弟に大切なおもちゃをこわ___ました。",
+        "en": "Choose the correct option for the blank:\n弟に大切なおもちゃをこわ___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "され"
+        ],
+        "hint": "〜され"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こわす」 thuộc nhóm 五段: 「こわされる」, nên 「こわされました」.",
+        "en": "Correct! 「こわす」 is a 五段 verb: 「こわされる」, so 「こわされました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こわす」 thuộc nhóm 五段: 「こわされる」, nên 「こわされました」.",
+        "en": "Not quite. 「こわす」 is a 五段 verb: 「こわされる」, so 「こわされました」."
+      }
+    },
+    {
+      "item": "持ち主の受身",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n弟が私のケーキを食べた。→ 私は弟にケーキを（　）。",
+        "en": "Choose the pattern that best fits the context:\n弟が私のケーキを食べた。→ 私は弟にケーキを（　）。"
+      },
+      "payload": {
+        "choices": [
+          "食べさせました",
+          "食べました",
+          "食べたがりました",
+          "食べられました"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nói từ phía người bị mất bánh: 「私は弟にケーキを食べられました」.",
+        "en": "Correct! Seen from the side of the person who lost the cake: 「私は弟にケーキを食べられました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nói từ phía người bị mất bánh: 「私は弟にケーキを食べられました」.",
+        "en": "Not quite. Seen from the side of the person who lost the cake: 「私は弟にケーキを食べられました」."
+      }
+    },
+    {
+      "item": "持ち主の受身",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は兄がカメラをこわされました。",
+          "私は兄をカメラをこわされました。",
+          "私は兄にカメラをこわされました。",
+          "私は兄にカメラをこわしました。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người gây ra đánh dấu 「に」, đồ vật 「を」 và động từ bị động: 「兄にカメラをこわされました」.",
+        "en": "Correct! The agent takes 「に」, the object 「を」 and the verb is passive: 「兄にカメラをこわされました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người gây ra đánh dấu 「に」, đồ vật 「を」 và động từ bị động: 「兄にカメラをこわされました」.",
+        "en": "Not quite. The agent takes 「に」, the object 「を」 and the verb is passive: 「兄にカメラをこわされました」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "迷惑の受身（間接受身）",
+            {
+              "vi": "Bị động gián tiếp (bị làm phiền)",
+              "en": "Adversative (indirect) passive"
+            }
+          ],
+          [
+            "持ち主の受身",
+            {
+              "vi": "Bị động chủ sở hữu (bị làm gì vào đồ của mình)",
+              "en": "Possessor passive"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

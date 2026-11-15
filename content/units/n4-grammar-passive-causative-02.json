@@ -1,0 +1,544 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-passive-causative",
+  "title": {
+    "vi": "Bị động tác nhân và sai khiến: 〜によって, 〜(さ)せてもらう, 〜を/〜に〜させる",
+    "en": "Agent passive and causative: 〜によって, 〜(さ)せてもらう, 〜を/〜に〜させる"
+  },
+  "goalTags": [
+    "jlpt"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2110,
+  "isTrial": false,
+  "requires": [
+    "n4-grammar-passive-causative-01"
+  ],
+  "items": [
+    {
+      "japanese": "〜によって〜(ら)れる",
+      "meaning": {
+        "vi": "Được tạo ra/làm bởi ~ (tác nhân)",
+        "en": "Be done by ~ (creator/agent)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: N1 は N2 によって + động từ bị động. Dùng khi N2 là người sáng tạo/phát minh/thực hiện việc có tính trang trọng (tác giả, họa sĩ, nhà phát minh); thay cho 「に」 trong văn viết. Chủ ngữ là tác phẩm/sự vật được tạo ra.",
+        "en": "Usage: N1 は N2 によって + passive verb. Used when N2 is the creator/inventor/doer of something formal (author, painter, inventor), replacing 「に」 in writing. The subject is the work or thing that was made."
+      },
+      "examples": [
+        {
+          "ja": "この小説は、夏目漱石によって書かれました。",
+          "reading": "このしょうせつは、なつめそうせきによってかかれました。",
+          "translation": {
+            "vi": "Cuốn tiểu thuyết này do Natsume Soseki viết.",
+            "en": "This novel was written by Natsume Soseki."
+          }
+        },
+        {
+          "ja": "この絵は、有名な画家によってかかれました。",
+          "reading": "このえは、ゆうめいながかによってかかれました。",
+          "translation": {
+            "vi": "Bức tranh này do một họa sĩ nổi tiếng vẽ.",
+            "en": "This picture was painted by a famous artist."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-066"
+    },
+    {
+      "japanese": "〜(さ)せてもらう",
+      "meaning": {
+        "vi": "Xin phép được ~, được cho phép ~",
+        "en": "Be allowed to ~ (by someone)"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể sai khiến + て + もらう (使わせてもらう, 休ませてもらう). Xin phép/nhận sự cho phép của người khác để làm việc của mình. Khi hỏi: 〜(さ)せてもらってもいいですか. Lịch sự hơn: 〜(さ)せていただく (N3).",
+        "en": "Conjugation: causative form + て + もらう (使わせてもらう, 休ませてもらう). Asking for, or receiving, someone's permission to do one's own action. As a question: 〜(さ)せてもらってもいいですか. More polite: 〜(さ)せていただく (N3)."
+      },
+      "examples": [
+        {
+          "ja": "すみません、ちょっと電話を使わせてもらってもいいですか。",
+          "reading": "すみません、ちょっとでんわをつかわせてもらってもいいですか。",
+          "translation": {
+            "vi": "Xin lỗi, tôi dùng điện thoại một chút có được không?",
+            "en": "Excuse me, may I use the phone for a moment?"
+          }
+        },
+        {
+          "ja": "会社を休ませてもらいました。",
+          "reading": "かいしゃをやすませてもらいました。",
+          "translation": {
+            "vi": "Tôi đã được công ty cho phép nghỉ.",
+            "en": "I was allowed to take time off from work."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-067"
+    },
+    {
+      "japanese": "〜を〜させる（自動詞の使役）",
+      "meaning": {
+        "vi": "Bắt/cho ai làm ~ (tự động từ)",
+        "en": "Make/let someone do ~ (intransitive verb)"
+      },
+      "explanation": {
+        "vi": "Cách chia: 五段 đổi う→あ + せる (行く→行かせる); 一段 bỏ る thêm させる (食べる→食べさせる); する→させる, くる→こさせる. Với tự động từ: N1 は N2 を + động từ sai khiến (子どもを行かせる, 人を笑わせる). Vừa có nghĩa bắt ép, vừa nghĩa để/cho phép tùy ngữ cảnh.",
+        "en": "Conjugation: 五段 change the final う-sound to あ + せる (行く→行かせる); 一段 drop る and add させる (食べる→食べさせる); する→させる, くる→こさせる. With intransitive verbs: N1 は N2 を + causative (子どもを行かせる, 人を笑わせる). It can mean either force or permission depending on context."
+      },
+      "examples": [
+        {
+          "ja": "母は、子どもを買い物に行かせました。",
+          "reading": "ははは、こどもをかいものにいかせました。",
+          "translation": {
+            "vi": "Mẹ đã sai con đi mua sắm.",
+            "en": "My mother sent the child out shopping."
+          }
+        },
+        {
+          "ja": "彼は冗談を言って、みんなを笑わせました。",
+          "reading": "かれはじょうだんをいって、みんなをわらわせました。",
+          "translation": {
+            "vi": "Anh ấy nói đùa làm mọi người bật cười.",
+            "en": "He told a joke and made everyone laugh."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-068"
+    },
+    {
+      "japanese": "〜に〜させる（他動詞の使役）",
+      "meaning": {
+        "vi": "Bắt/cho ai làm ~ (tha động từ)",
+        "en": "Make/let someone do ~ (transitive verb)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: với tha động từ đã có 「を」 (tân ngữ), người bị sai khiến đánh dấu bằng 「に」: N1 は N2 に N3 を + động từ sai khiến (学生に作文を書かせる). Không dùng hai 「を」 trong một câu.",
+        "en": "Usage: with a transitive verb that already has 「を」 (the object), the person made to act is marked with 「に」: N1 は N2 に N3 を + causative (学生に作文を書かせる). Two 「を」 are not used in one clause."
+      },
+      "examples": [
+        {
+          "ja": "先生は、学生に作文を書かせました。",
+          "reading": "せんせいは、がくせいにさくぶんをかかせました。",
+          "translation": {
+            "vi": "Thầy giáo bắt học sinh viết bài văn.",
+            "en": "The teacher had the students write an essay."
+          }
+        },
+        {
+          "ja": "母は、私に野菜を食べさせます。",
+          "reading": "ははは、わたしにやさいをたべさせます。",
+          "translation": {
+            "vi": "Mẹ bắt tôi ăn rau.",
+            "en": "My mother makes me eat vegetables."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-069"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜によって〜(ら)れる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの小説は、夏目漱石（　）書かれました。",
+        "en": "Choose the correct option for the blank:\nこの小説は、夏目漱石（　）書かれました。"
+      },
+      "payload": {
+        "choices": [
+          "によると",
+          "によって",
+          "にとって",
+          "について"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tác giả/người tạo ra tác phẩm đánh dấu bằng 「によって」.",
+        "en": "Correct! The author/creator of a work is marked with 「によって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tác giả/người tạo ra tác phẩm đánh dấu bằng 「によって」.",
+        "en": "Not quite. The author/creator of a work is marked with 「によって」."
+      }
+    },
+    {
+      "item": "〜によって〜(ら)れる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n電話は、ベル___発明されました。",
+        "en": "Choose the correct option for the blank:\n電話は、ベル___発明されました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "によって"
+        ],
+        "hint": "〜によって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người phát minh: 「ベルによって」.",
+        "en": "Correct! The inventor: 「ベルによって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người phát minh: 「ベルによって」.",
+        "en": "Not quite. The inventor: 「ベルによって」."
+      }
+    },
+    {
+      "item": "〜によって〜(ら)れる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この絵は、有名な画家によってかかれました。",
+          "この絵は、有名な画家によってかきました。",
+          "この絵は、有名な画家によってかかせました。",
+          "この絵は、有名な画家によってかけました。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「によって」 phải là thể bị động: 「かかれました」.",
+        "en": "Correct! After 「によって」 the verb must be passive: 「かかれました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「によって」 phải là thể bị động: 「かかれました」.",
+        "en": "Not quite. After 「によって」 the verb must be passive: 「かかれました」."
+      }
+    },
+    {
+      "item": "〜(さ)せてもらう",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nすみません、ちょっと電話を使わ（　）もらってもいいですか。",
+        "en": "Choose the correct option for the blank:\nすみません、ちょっと電話を使わ（　）もらってもいいですか。"
+      },
+      "payload": {
+        "choices": [
+          "れて",
+          "せ",
+          "せる",
+          "せて"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Xin phép: thể sai khiến + て + もらう: 「使わせてもらう」.",
+        "en": "Correct! Asking permission: causative + て + もらう: 「使わせてもらう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Xin phép: thể sai khiến + て + もらう: 「使わせてもらう」.",
+        "en": "Not quite. Asking permission: causative + て + もらう: 「使わせてもらう」."
+      }
+    },
+    {
+      "item": "〜(さ)せてもらう",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n会社を休ま___もらいました。",
+        "en": "Choose the correct option for the blank:\n会社を休ま___もらいました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "せて"
+        ],
+        "hint": "〜せて"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休む」 → 「休ませる」 → 「休ませてもらう」.",
+        "en": "Correct! 「休む」→「休ませる」→「休ませてもらう」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「休む」 → 「休ませる」 → 「休ませてもらう」.",
+        "en": "Not quite. 「休む」→「休ませる」→「休ませてもらう」."
+      }
+    },
+    {
+      "item": "〜(さ)せてもらう",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n私は先生に発表を（　）。\n（Tôi xin phép và được thầy cho phát biểu.）",
+        "en": "Choose the pattern that best fits the context:\n私は先生に発表を（　）。\n(I asked permission and my teacher let me give the presentation.)"
+      },
+      "payload": {
+        "choices": [
+          "させました",
+          "させられました",
+          "させてもらいました",
+          "されました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mình được cho phép làm (発表する): 「発表させてもらいました」; 「させました」 là mình bắt người khác.",
+        "en": "Correct! I was allowed to do it (発表する): 「発表させてもらいました」; 「させました」 means I made someone else do it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mình được cho phép làm (発表する): 「発表させてもらいました」; 「させました」 là mình bắt người khác.",
+        "en": "Not quite. I was allowed to do it (発表する): 「発表させてもらいました」; 「させました」 means I made someone else do it."
+      }
+    },
+    {
+      "item": "〜(さ)せてもらう",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "今日は早く帰らせもらいます。",
+          "今日は早く帰らせてもらいます。",
+          "今日は早く帰らさせてもらいます。",
+          "今日は早く帰らせられてもらいます。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「帰る」 → 「帰らせる」 + 「てもらう」: 「帰らせてもらいます」.",
+        "en": "Correct! 「帰る」→「帰らせる」 + 「てもらう」: 「帰らせてもらいます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「帰る」 → 「帰らせる」 + 「てもらう」: 「帰らせてもらいます」.",
+        "en": "Not quite. 「帰る」→「帰らせる」 + 「てもらう」: 「帰らせてもらいます」."
+      }
+    },
+    {
+      "item": "〜を〜させる（自動詞の使役）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n母は、子どもを買い物に（　）。",
+        "en": "Choose the correct option for the blank:\n母は、子どもを買い物に（　）。"
+      },
+      "payload": {
+        "choices": [
+          "行かせました",
+          "行かされました",
+          "行きました",
+          "行かれました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẹ sai con đi: 「行かせました」 (thể sai khiến của 行く).",
+        "en": "Correct! The mother sent the child: 「行かせました」 (causative of 行く)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẹ sai con đi: 「行かせました」 (thể sai khiến của 行く).",
+        "en": "Not quite. The mother sent the child: 「行かせました」 (causative of 行く)."
+      }
+    },
+    {
+      "item": "〜を〜させる（自動詞の使役）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は冗談を言って、みんなを笑わ___ました。",
+        "en": "Choose the correct option for the blank:\n彼は冗談を言って、みんなを笑わ___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "せ"
+        ],
+        "hint": "〜せ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「笑う」 → 「笑わせる」: 「笑わせました」.",
+        "en": "Correct! 「笑う」→「笑わせる」: 「笑わせました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「笑う」 → 「笑わせる」: 「笑わせました」.",
+        "en": "Not quite. 「笑う」→「笑わせる」: 「笑わせました」."
+      }
+    },
+    {
+      "item": "〜を〜させる（自動詞の使役）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n母は、子ども（　）泣かせました。",
+        "en": "Choose the correct option for the blank:\n母は、子ども（　）泣かせました。"
+      },
+      "payload": {
+        "choices": [
+          "に",
+          "が",
+          "と",
+          "を"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tự động từ 「泣く」 dùng 「を」 cho người bị sai khiến: 「子どもを泣かせた」.",
+        "en": "Correct! With the intransitive 「泣く」 the person is marked with 「を」: 「子どもを泣かせた」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tự động từ 「泣く」 dùng 「を」 cho người bị sai khiến: 「子どもを泣かせた」.",
+        "en": "Not quite. With the intransitive 「泣く」 the person is marked with 「を」: 「子どもを泣かせた」."
+      }
+    },
+    {
+      "item": "〜に〜させる（他動詞の使役）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生は、学生（　）作文を書かせました。",
+        "en": "Choose the correct option for the blank:\n先生は、学生（　）作文を書かせました。"
+      },
+      "payload": {
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "と"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tha động từ đã có 「作文を」 nên người bị sai khiến dùng 「に」: 「学生に」.",
+        "en": "Correct! The transitive verb already has 「作文を」, so the person made to act takes 「に」: 「学生に」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tha động từ đã có 「作文を」 nên người bị sai khiến dùng 「に」: 「学生に」.",
+        "en": "Not quite. The transitive verb already has 「作文を」, so the person made to act takes 「に」: 「学生に」."
+      }
+    },
+    {
+      "item": "〜に〜させる（他動詞の使役）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n母は、私に野菜を食べ___ます。",
+        "en": "Choose the correct option for the blank:\n母は、私に野菜を食べ___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "させ"
+        ],
+        "hint": "〜させ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「食べる」 → 「食べさせる」: 「食べさせます」.",
+        "en": "Correct! 「食べる」→「食べさせる」: 「食べさせます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「食べる」 → 「食べさせる」: 「食べさせます」.",
+        "en": "Not quite. 「食べる」→「食べさせる」: 「食べさせます」."
+      }
+    },
+    {
+      "item": "〜に〜させる（他動詞の使役）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\n先生は、学生に　＿　★　＿　。\n（書かせました／日本語の／作文を）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\n先生は、学生に　＿　★　＿　。\n（書かせました／日本語の／作文を）"
+      },
+      "payload": {
+        "choices": [
+          "日本語の",
+          "作文を",
+          "書かせました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「先生は、学生に日本語の作文を書かせました。」; ô ★ (thứ hai) là 「作文を」.",
+        "en": "Correct! The correct sentence is 「先生は、学生に日本語の作文を書かせました。」; the ★ (second) slot is 「作文を」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「先生は、学生に日本語の作文を書かせました。」; ô ★ (thứ hai) là 「作文を」.",
+        "en": "Not quite. The correct sentence is 「先生は、学生に日本語の作文を書かせました。」; the ★ (second) slot is 「作文を」."
+      }
+    },
+    {
+      "item": "〜に〜させる（他動詞の使役）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "母は、私に野菜を食べさせます。",
+          "母は、私を野菜を食べさせます。",
+          "母は、私に野菜が食べさせます。",
+          "母は、私に野菜を食べられます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Tha động từ: người bị sai khiến dùng 「に」, tân ngữ dùng 「を」, động từ ở thể sai khiến.",
+        "en": "Correct! With a transitive verb: the person made to act takes 「に」, the object takes 「を」, and the verb is causative."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Tha động từ: người bị sai khiến dùng 「に」, tân ngữ dùng 「を」, động từ ở thể sai khiến.",
+        "en": "Not quite. With a transitive verb: the person made to act takes 「に」, the object takes 「を」, and the verb is causative."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜によって〜(ら)れる",
+            {
+              "vi": "Được tạo ra/làm bởi ~ (tác nhân)",
+              "en": "Be done by ~ (creator/agent)"
+            }
+          ],
+          [
+            "〜(さ)せてもらう",
+            {
+              "vi": "Xin phép được ~, được cho phép ~",
+              "en": "Be allowed to ~ (by someone)"
+            }
+          ],
+          [
+            "〜を〜させる（自動詞の使役）",
+            {
+              "vi": "Bắt/cho ai làm ~ (tự động từ)",
+              "en": "Make/let someone do ~ (intransitive verb)"
+            }
+          ],
+          [
+            "〜に〜させる（他動詞の使役）",
+            {
+              "vi": "Bắt/cho ai làm ~ (tha động từ)",
+              "en": "Make/let someone do ~ (transitive verb)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

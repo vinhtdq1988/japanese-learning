@@ -1,0 +1,174 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N5",
+  "tier": "core",
+  "topic": "writing-n5-greetings",
+  "title": {
+    "vi": "Viết: Lời chào",
+    "en": "Writing: Greetings"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 1,
+  "estMinutes": 5,
+  "sequence": 300,
+  "items": [
+    {
+      "japanese": "おはようございます",
+      "reading": "おはようございます",
+      "meaning": {
+        "vi": "Chào buổi sáng (lịch sự)",
+        "en": "Good morning (polite)"
+      }
+    },
+    {
+      "japanese": "ありがとうございます",
+      "reading": "ありがとうございます",
+      "meaning": {
+        "vi": "Cảm ơn (lịch sự)",
+        "en": "Thank you (polite)"
+      }
+    },
+    {
+      "japanese": "こんにちは",
+      "reading": "こんにちは",
+      "meaning": {
+        "vi": "Xin chào (ban ngày)",
+        "en": "Hello (daytime)"
+      }
+    },
+    {
+      "japanese": "さようなら",
+      "reading": "さようなら",
+      "meaning": {
+        "vi": "Tạm biệt (trang trọng)",
+        "en": "Goodbye (formal)"
+      }
+    },
+    {
+      "japanese": "おやすみなさい",
+      "reading": "おやすみなさい",
+      "meaning": {
+        "vi": "Chúc ngủ ngon",
+        "en": "Good night (before sleeping)"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chào buổi sáng (lịch sự)”",
+        "en": "Type in Japanese: “Good morning (polite)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おはようございます",
+          "おはよう ございます"
+        ],
+        "hint": "お…（9文字）"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: おはようございます (đọc là おはようございます).",
+        "en": "Not quite. Reference answer: おはようございます (read as おはようございます)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cảm ơn (lịch sự)”",
+        "en": "Type in Japanese: “Thank you (polite)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ありがとうございます",
+          "ありがとう ございます",
+          "有難うございます"
+        ],
+        "hint": "あ…（10文字）"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: ありがとうございます (đọc là ありがとうございます).",
+        "en": "Not quite. Reference answer: ありがとうございます (read as ありがとうございます)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Xin chào (ban ngày)”",
+        "en": "Type in Japanese: “Hello (daytime)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こんにちは"
+        ],
+        "hint": "こ…（5文字）"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: こんにちは (đọc là こんにちは).",
+        "en": "Not quite. Reference answer: こんにちは (read as こんにちは)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tạm biệt (trang trọng)”",
+        "en": "Type in Japanese: “Goodbye (formal)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "さようなら",
+          "さよなら"
+        ],
+        "hint": "さ…（5文字）"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: さようなら (đọc là さようなら).",
+        "en": "Not quite. Reference answer: さようなら (read as さようなら)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chúc ngủ ngon”",
+        "en": "Type in Japanese: “Good night (before sleeping)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おやすみなさい",
+          "お休みなさい",
+          "おやすみ なさい"
+        ],
+        "hint": "お…（7文字）"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác!",
+        "en": "Correct!"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: おやすみなさい (đọc là おやすみなさい).",
+        "en": "Not quite. Reference answer: おやすみなさい (read as おやすみなさい)."
+      }
+    }
+  ]
+}

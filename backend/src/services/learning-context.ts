@@ -15,6 +15,8 @@ import {
   type LearningPathRow,
 } from '../db/repositories/paths.js';
 import { getProfile, type ProfileRow } from '../db/repositories/profiles.js';
+import { effectiveSkills, isPracticeEligible } from '../domain/practice.js';
+import type { Skill } from '../domain/types.js';
 import type { ClassMembershipRow } from '../db/repositories/class-memberships.js';
 import { localToday } from '../engine/clock.js';
 import { classPathParams, rankClassUnits } from '../engine/class-path.js';
@@ -93,7 +95,42 @@ export async function resolveLearningContext(
 
   const path = await getActivePath(deps.db, userId);
   if (!path || profile.onboardingState !== 'completed') return null;
-  return { source: 'personal', profile, path, params: paramsOfPath(path) };
+  return personalContext(profile, path);
+}
+
+/** `prioritizedSkill` là luyện đọc/viết nhưng quỹ thời gian chưa đủ ⇒ bỏ ưu tiên (chỉ trong bộ nhớ). */
+function effectivePriority(prioritized: Skill | null, skills: readonly Skill[]): Skill | null {
+  return prioritized !== null && !skills.includes(prioritized) && isPracticeSkill(prioritized)
+    ? null
+    : prioritized;
+}
+
+const isPracticeSkill = (skill: Skill): boolean => skill === 'reading' || skill === 'writing';
+
+/**
+ * Ngữ cảnh cá nhân với kỹ năng HIỆU LỰC (spec 007, research P2): luyện đọc/viết chỉ tính khi quỹ thời gian
+ * ≥ 30 phút. Đối tượng được dựng MỚI trong bộ nhớ — `skills` đã lưu trong CSDL không bao giờ bị sửa, nên hạ phút
+ * rồi nâng lại thì lựa chọn của người học còn nguyên. Đây là điểm lọc DUY NHẤT cho kế hoạch/lộ trình/học
+ * thêm/tiến độ.
+ */
+function personalContext(profile: ProfileRow, path: LearningPathRow): PersonalLearningContext {
+  const params = paramsOfPath(path);
+  const skills = effectiveSkills(profile.skills, profile.dailyMinutes);
+  const effectiveParams = isPracticeEligible(profile.dailyMinutes)
+    ? params
+    : { ...params, skills: effectiveSkills(params.skills, profile.dailyMinutes) };
+  return {
+    source: 'personal',
+    profile: isPracticeEligible(profile.dailyMinutes)
+      ? profile
+      : {
+          ...profile,
+          skills,
+          prioritizedSkill: effectivePriority(profile.prioritizedSkill, skills),
+        },
+    path,
+    params: effectiveParams,
+  };
 }
 
 async function buildClassContext(
@@ -113,10 +150,13 @@ async function buildClassContext(
   // Thành viên luôn gắn với lớp có lộ trình (điều kiện vào lớp); thiếu dữ liệu thì rơi về nhánh cá nhân.
   if (!classPath || !brief) return null;
 
+  // Phút áp dụng của học viên lớp: ghi đè của giáo viên ?? phút của lộ trình lớp (spec 007, research P2).
+  const dailyMinutes = override?.dailyMinutes ?? classPath.dailyMinutes;
+  const classSkills = effectiveSkills(classPath.skills, dailyMinutes);
   const template: ClassPathTemplateInput = {
     startLevel: classPath.startLevel,
     targetLevel: classPath.targetLevel,
-    skills: classPath.skills,
+    skills: classSkills,
     startsOn: classPath.startsOn,
     endsOn: classPath.endsOn,
     dailyMinutes: classPath.dailyMinutes,
@@ -124,8 +164,8 @@ async function buildClassContext(
   const today = localToday(deps.clock, profile.timezone);
   const effective: ProfileRow = {
     ...profile,
-    dailyMinutes: override?.dailyMinutes ?? classPath.dailyMinutes,
-    skills: classPath.skills,
+    dailyMinutes,
+    skills: classSkills,
     prioritizedSkill: null,
     goalType: null,
     targetDate: classPath.endsOn,

@@ -1,0 +1,163 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Đi làm bằng tàu điện",
+    "en": "Reading: Commuting by train"
+  },
+  "goalTags": [
+    "jlpt",
+    "work",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 230,
+  "items": [
+    {
+      "japanese": "わたしは毎朝、電車で会社へ通っています。家から駅まで歩いて十分かかります。駅から会社まで電車で四十分です。朝は人が多いので、いつも座れません。ですから、電車の中で英語の勉強をしています。先週、電車が事故で止まったので、会社に三十分遅れました。それから、わたしは少し早く家を出ることにしました。",
+      "meaning": {
+        "vi": "Mỗi sáng tôi đi làm bằng tàu điện. Từ nhà đến ga đi bộ mất 10 phút. Từ ga đến công ty đi tàu mất 40 phút. Buổi sáng đông người nên tôi lúc nào cũng không ngồi được. Vì vậy tôi học tiếng Anh trên tàu. Tuần trước tàu dừng vì tai nạn nên tôi đến công ty trễ 30 phút. Từ đó tôi quyết định ra khỏi nhà sớm hơn một chút.",
+        "en": "I commute to the office by train every morning. It takes ten minutes to walk from my house to the station, and forty minutes by train from the station to the office. The trains are crowded in the morning, so I can never get a seat. That is why I study English on the train. Last week the train stopped because of an accident and I was thirty minutes late to work. Since then I have decided to leave home a little earlier."
+      },
+      "reading": "わたしはまいあさ、でんしゃでかいしゃへかよっています。いえからえきまであるいてじゅっぷんかかります。えきからかいしゃまででんしゃでよんじゅっぷんです。あさはひとがおおいので、いつもすわれません。ですから、でんしゃのなかでえいごのべんきょうをしています。せんしゅう、でんしゃがじこでとまったので、かいしゃにさんじゅっぷんおくれました。それから、わたしはすこしはやくいえをでることにしました。",
+      "explanation": {
+        "vi": "「～ので」nêu lý do; 「ですから」= vì vậy; 「～ことにしました」diễn tả quyết định của bản thân (早く家を出ることにしました).",
+        "en": "「～ので」 gives a reason; 「ですから」 = therefore; 「～ことにしました」 expresses a personal decision (早く家を出ることにしました)."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Từ nhà đến ga mất bao lâu?",
+        "en": "How long does it take to get from home to the station?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "10 phút đi bộ",
+            "en": "10 minutes on foot"
+          },
+          {
+            "vi": "30 phút đi bộ",
+            "en": "30 minutes on foot"
+          },
+          {
+            "vi": "40 phút đi tàu",
+            "en": "40 minutes by train"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 家から駅まで歩いて十分かかります.",
+        "en": "Correct! 家から駅まで歩いて十分かかります."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 40 phút là thời gian đi tàu từ ga đến công ty; từ nhà đến ga đi bộ 十分 (10 phút).",
+        "en": "Not quite. Forty minutes is the train ride from the station to the office; the walk from home is 十分 (10 minutes)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Vì sao người viết không ngồi được trên tàu?",
+        "en": "Why can the writer not get a seat on the train?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì tàu rất ngắn",
+            "en": "Because the train is very short"
+          },
+          {
+            "vi": "Vì người viết thích đứng",
+            "en": "Because the writer prefers to stand"
+          },
+          {
+            "vi": "Vì buổi sáng có nhiều người",
+            "en": "Because the train is crowded in the morning"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 朝は人が多いので、いつも座れません.",
+        "en": "Correct! 朝は人が多いので、いつも座れません."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lý do được nêu bằng ので: 朝は人が多い (buổi sáng đông người).",
+        "en": "Not quite. The reason is given with ので: 朝は人が多い (it is crowded in the morning)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người viết làm gì trên tàu?",
+        "en": "What does the writer do on the train?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Học tiếng Anh",
+            "en": "Studies English"
+          },
+          {
+            "vi": "Đọc báo",
+            "en": "Reads the newspaper"
+          },
+          {
+            "vi": "Ngủ",
+            "en": "Sleeps"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 電車の中で英語の勉強をしています.",
+        "en": "Correct! 電車の中で英語の勉強をしています."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đoạn văn nói 電車の中で英語の勉強をしています.",
+        "en": "Not quite. The text says 電車の中で英語の勉強をしています."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Tuần trước vì sao người viết đến công ty trễ?",
+        "en": "Why was the writer late to work last week?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Người viết ngủ quên",
+            "en": "The writer overslept"
+          },
+          {
+            "vi": "Tàu dừng vì có tai nạn",
+            "en": "The train stopped because of an accident"
+          },
+          {
+            "vi": "Công ty dời giờ làm",
+            "en": "The company changed the working hours"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 電車が事故で止まったので、会社に三十分遅れました.",
+        "en": "Correct! 電車が事故で止まったので、会社に三十分遅れました."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lý do là 電車が事故で止まった (tàu dừng vì tai nạn).",
+        "en": "Not quite. The reason is 電車が事故で止まった (the train stopped due to an accident)."
+      }
+    }
+  ]
+}

@@ -96,7 +96,11 @@ Future<_Run> _runPlan(WidgetTester tester, {required bool effects}) async {
     for (var i = 0; i < 30 && !has('continue'); i++) {
       await tester.pump(const Duration(milliseconds: 16));
     }
-    expect(has('continue'), isTrue, reason: '"Tiếp tục" phải bấm được ngay sau khi có kết quả');
+    expect(
+      has('continue'),
+      isTrue,
+      reason: '"Tiếp tục" phải bấm được ngay sau khi có kết quả',
+    );
     waited += clock.now().difference(submitted);
     await tapKey('continue');
     await tester.pump(const Duration(milliseconds: 50));
@@ -130,34 +134,37 @@ Future<_Run> _runPlan(WidgetTester tester, {required bool effects}) async {
 }
 
 void main() {
-  testWidgets('không có thời gian chờ nào sau khi trả lời, dù hiệu ứng đang chạy', (
-    tester,
-  ) async {
-    final run = await _runPlan(tester, effects: true);
-    expect(run.waited, lessThanOrEqualTo(_maxWaitAfterAnswer * 3));
-  });
+  testWidgets(
+    'không có thời gian chờ nào sau khi trả lời, dù hiệu ứng đang chạy',
+    (tester) async {
+      final run = await _runPlan(tester, effects: true);
+      expect(run.waited, lessThanOrEqualTo(_maxWaitAfterAnswer * 3));
+    },
+  );
 
-  testWidgets('thời gian hoàn thành kế hoạch với hiệu ứng không tăng quá 3% so với tắt hiệu ứng', (
-    tester,
-  ) async {
-    final off = await _runPlan(tester, effects: false);
-    final on = await _runPlan(tester, effects: true);
+  testWidgets(
+    'thời gian hoàn thành kế hoạch với hiệu ứng không tăng quá 3% so với tắt hiệu ứng',
+    (tester) async {
+      final off = await _runPlan(tester, effects: false);
+      final on = await _runPlan(tester, effects: true);
 
-    expect(off.elapsed, greaterThan(Duration.zero));
-    expect(
-      on.elapsed.inMilliseconds,
-      lessThanOrEqualTo((off.elapsed.inMilliseconds * 1.03).ceil()),
-      reason: 'bật ${on.elapsed}, tắt ${off.elapsed}',
-    );
-  });
+      expect(off.elapsed, greaterThan(Duration.zero));
+      expect(
+        on.elapsed.inMilliseconds,
+        lessThanOrEqualTo((off.elapsed.inMilliseconds * 1.03).ceil()),
+        reason: 'bật ${on.elapsed}, tắt ${off.elapsed}',
+      );
+    },
+  );
 
-  testWidgets('bật hay tắt hiệu ứng, kế hoạch hiển thị (kể cả thời gian ước tính) không đổi', (
-    tester,
-  ) async {
-    final off = await _runPlan(tester, effects: false);
-    final on = await _runPlan(tester, effects: true);
+  testWidgets(
+    'bật hay tắt hiệu ứng, kế hoạch hiển thị (kể cả thời gian ước tính) không đổi',
+    (tester) async {
+      final off = await _runPlan(tester, effects: false);
+      final on = await _runPlan(tester, effects: true);
 
-    expect(off.todayTexts, isNotEmpty);
-    expect(on.todayTexts, off.todayTexts);
-  });
+      expect(off.todayTexts, isNotEmpty);
+      expect(on.todayTexts, off.todayTexts);
+    },
+  );
 }

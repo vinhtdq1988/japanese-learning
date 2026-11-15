@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-degree",
+  "title": {
+    "vi": "Cùng lúc và liên tiếp",
+    "en": "All at once and one after another"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2940,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "一度に",
+      "reading": "いちどに",
+      "meaning": {
+        "vi": "Cùng một lúc",
+        "en": "At once"
+      },
+      "examples": [
+        {
+          "ja": "一度に、たくさんのことはできません。",
+          "reading": "いちどに、たくさんのことはできません。",
+          "translation": {
+            "vi": "Không thể làm nhiều việc cùng một lúc.",
+            "en": "You cannot do many things at once."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "続々",
+      "reading": "ぞくぞく",
+      "meaning": {
+        "vi": "Liên tiếp; lần lượt",
+        "en": "One after another (in great numbers)"
+      },
+      "examples": [
+        {
+          "ja": "新しい店が、続々と開いています。",
+          "reading": "あたらしいみせが、ぞくぞくとひらいています。",
+          "translation": {
+            "vi": "Các cửa hàng mới đang lần lượt khai trương.",
+            "en": "New shops are opening one after another."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "次々",
+      "reading": "つぎつぎ",
+      "meaning": {
+        "vi": "Lần lượt; hết cái này đến cái khác",
+        "en": "One after another"
+      },
+      "examples": [
+        {
+          "ja": "質問が、次々に出ました。",
+          "reading": "しつもんが、つぎつぎにでました。",
+          "translation": {
+            "vi": "Câu hỏi lần lượt được đưa ra.",
+            "en": "Questions came out one after another."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一斉に",
+      "reading": "いっせいに",
+      "meaning": {
+        "vi": "Đồng loạt",
+        "en": "All at once; in unison"
+      },
+      "examples": [
+        {
+          "ja": "ベルが鳴ると、みんなが一斉に立ち上がりました。",
+          "reading": "ベルがなると、みんながいっせいにたちあがりました。",
+          "translation": {
+            "vi": "Chuông reo lên là mọi người đồng loạt đứng dậy.",
+            "en": "When the bell rang, everyone stood up at once."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一気に",
+      "reading": "いっきに",
+      "meaning": {
+        "vi": "Một hơi; liền một mạch",
+        "en": "In one go"
+      },
+      "examples": [
+        {
+          "ja": "一気に、ジュースを飲み干しました。",
+          "reading": "いっきに、ジュースをのみほしました。",
+          "translation": {
+            "vi": "Tôi uống cạn ly nước ép trong một hơi.",
+            "en": "I drained the juice in one go."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "徐々に",
+      "reading": "じょじょに",
+      "meaning": {
+        "vi": "Từ từ; dần dần",
+        "en": "Little by little"
+      },
+      "examples": [
+        {
+          "ja": "体調が、徐々に回復しています。",
+          "reading": "たいちょうが、じょじょにかいふくしています。",
+          "translation": {
+            "vi": "Sức khỏe đang hồi phục từng chút một.",
+            "en": "My health is recovering little by little."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "一度に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、たくさんのことはできません。 — Nghĩa của câu: “Không thể làm nhiều việc cùng một lúc.”",
+        "en": "Choose the word that fits the blank: （　）、たくさんのことはできません。 — Meaning of the sentence: “You cannot do many things at once.”"
+      },
+      "payload": {
+        "choices": [
+          "一斉に",
+          "続々",
+          "徐々に",
+          "一度に"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一度に」(Cùng một lúc) hợp nghĩa câu này: “Không thể làm nhiều việc cùng một lúc.”",
+        "en": "Correct! 「一度に」(At once) fits this sentence: “You cannot do many things at once.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không thể làm nhiều việc cùng một lúc.”, nên cần 「一度に」(Cùng một lúc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You cannot do many things at once.”, so it needs 「一度に」(At once); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "続々",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい店が、（　）と開いています。 — Nghĩa của câu: “Các cửa hàng mới đang lần lượt khai trương.”",
+        "en": "Choose the word that fits the blank: 新しい店が、（　）と開いています。 — Meaning of the sentence: “New shops are opening one after another.”"
+      },
+      "payload": {
+        "choices": [
+          "続々",
+          "一度に",
+          "次々",
+          "徐々に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「続々」(Liên tiếp; lần lượt) hợp nghĩa câu này: “Các cửa hàng mới đang lần lượt khai trương.”",
+        "en": "Correct! 「続々」(One after another (in great numbers)) fits this sentence: “New shops are opening one after another.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các cửa hàng mới đang lần lượt khai trương.”, nên cần 「続々」(Liên tiếp; lần lượt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “New shops are opening one after another.”, so it needs 「続々」(One after another (in great numbers)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "次々",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 質問が、（　）に出ました。 — Nghĩa của câu: “Câu hỏi lần lượt được đưa ra.”",
+        "en": "Choose the word that fits the blank: 質問が、（　）に出ました。 — Meaning of the sentence: “Questions came out one after another.”"
+      },
+      "payload": {
+        "choices": [
+          "徐々に",
+          "次々",
+          "一度に",
+          "一斉に"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「次々」(Lần lượt; hết cái này đến cái khác) hợp nghĩa câu này: “Câu hỏi lần lượt được đưa ra.”",
+        "en": "Correct! 「次々」(One after another) fits this sentence: “Questions came out one after another.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Câu hỏi lần lượt được đưa ra.”, nên cần 「次々」(Lần lượt; hết cái này đến cái khác); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Questions came out one after another.”, so it needs 「次々」(One after another); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一斉に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ベルが鳴ると、みんなが（　）立ち上がりました。 — Nghĩa của câu: “Chuông reo lên là mọi người đồng loạt đứng dậy.”",
+        "en": "Choose the word that fits the blank: ベルが鳴ると、みんなが（　）立ち上がりました。 — Meaning of the sentence: “When the bell rang, everyone stood up at once.”"
+      },
+      "payload": {
+        "choices": [
+          "続々",
+          "一度に",
+          "一斉に",
+          "次々"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一斉に」(Đồng loạt) hợp nghĩa câu này: “Chuông reo lên là mọi người đồng loạt đứng dậy.”",
+        "en": "Correct! 「一斉に」(All at once; in unison) fits this sentence: “When the bell rang, everyone stood up at once.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chuông reo lên là mọi người đồng loạt đứng dậy.”, nên cần 「一斉に」(Đồng loạt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When the bell rang, everyone stood up at once.”, so it needs 「一斉に」(All at once; in unison); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一気に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、ジュースを飲み干しました。 — Nghĩa của câu: “Tôi uống cạn ly nước ép trong một hơi.”",
+        "en": "Choose the word that fits the blank: （　）、ジュースを飲み干しました。 — Meaning of the sentence: “I drained the juice in one go.”"
+      },
+      "payload": {
+        "choices": [
+          "一度に",
+          "続々",
+          "次々",
+          "一気に"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一気に」(Một hơi; liền một mạch) hợp nghĩa câu này: “Tôi uống cạn ly nước ép trong một hơi.”",
+        "en": "Correct! 「一気に」(In one go) fits this sentence: “I drained the juice in one go.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi uống cạn ly nước ép trong một hơi.”, nên cần 「一気に」(Một hơi; liền một mạch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I drained the juice in one go.”, so it needs 「一気に」(In one go); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "徐々に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 体調が、（　）回復しています。 — Nghĩa của câu: “Sức khỏe đang hồi phục từng chút một.”",
+        "en": "Choose the word that fits the blank: 体調が、（　）回復しています。 — Meaning of the sentence: “My health is recovering little by little.”"
+      },
+      "payload": {
+        "choices": [
+          "徐々に",
+          "次々",
+          "一度に",
+          "続々"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「徐々に」(Từ từ; dần dần) hợp nghĩa câu này: “Sức khỏe đang hồi phục từng chút một.”",
+        "en": "Correct! 「徐々に」(Little by little) fits this sentence: “My health is recovering little by little.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sức khỏe đang hồi phục từng chút một.”, nên cần 「徐々に」(Từ từ; dần dần); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My health is recovering little by little.”, so it needs 「徐々に」(Little by little); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一度に",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「一度に」、たくさんのことはできません。",
+        "en": "Choose the correct reading of the word in 「」: 「一度に」、たくさんのことはできません。"
+      },
+      "payload": {
+        "choices": [
+          "いちどに",
+          "いっきに",
+          "ぞくぞく",
+          "じょじょに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一度に」 đọc là 「いちどに」, nghĩa là Cùng một lúc.",
+        "en": "Correct! 「一度に」 is read 「いちどに」 and means At once."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「一度に」 đọc là 「いちどに」 (Cùng một lúc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「一度に」 is read 「いちどに」 (At once); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一斉に",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ベルが鳴ると、みんなが「一斉に」立ち上がりました。",
+        "en": "Choose the correct reading of the word in 「」: ベルが鳴ると、みんなが「一斉に」立ち上がりました。"
+      },
+      "payload": {
+        "choices": [
+          "いっきに",
+          "いっせいに",
+          "いちどに",
+          "じょじょに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一斉に」 đọc là 「いっせいに」, nghĩa là Đồng loạt.",
+        "en": "Correct! 「一斉に」 is read 「いっせいに」 and means All at once; in unison."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「一斉に」 đọc là 「いっせいに」 (Đồng loạt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「一斉に」 is read 「いっせいに」 (All at once; in unison); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "次々",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 質問が、「つぎつぎ」に出ました。",
+        "en": "Choose the correct way to write the word in 「」: 質問が、「つぎつぎ」に出ました。"
+      },
+      "payload": {
+        "choices": [
+          "一度に",
+          "次々",
+          "続々",
+          "一斉に"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「つぎつぎ」 viết là 「次々」, nghĩa là Lần lượt; hết cái này đến cái khác.",
+        "en": "Correct! 「つぎつぎ」 is written 「次々」 and means One after another."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「つぎつぎ」 viết là 「次々」 (Lần lượt; hết cái này đến cái khác); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「つぎつぎ」 is written 「次々」 (One after another); the other words are read differently."
+      }
+    }
+  ]
+}

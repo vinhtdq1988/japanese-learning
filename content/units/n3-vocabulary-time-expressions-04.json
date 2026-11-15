@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-time-expressions",
+  "title": {
+    "vi": "Dài hạn, định kỳ và đột xuất",
+    "en": "Long-term, regular and ad hoc"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3150,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "今後",
+      "reading": "こんご",
+      "meaning": {
+        "vi": "Từ nay về sau",
+        "en": "From now on"
+      },
+      "examples": [
+        {
+          "ja": "今後は、気をつけたいと思います。",
+          "reading": "こんごは、きをつけたいとおもいます。",
+          "translation": {
+            "vi": "Từ nay về sau tôi muốn chú ý hơn.",
+            "en": "From now on I would like to be careful."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "長期",
+      "reading": "ちょうき",
+      "meaning": {
+        "vi": "Dài hạn",
+        "en": "Long term"
+      },
+      "examples": [
+        {
+          "ja": "長期の休みをとって、旅行します。",
+          "reading": "ちょうきのやすみをとって、りょこうします。",
+          "translation": {
+            "vi": "Tôi xin nghỉ dài ngày để đi du lịch.",
+            "en": "I will take a long vacation and travel."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "短期",
+      "reading": "たんき",
+      "meaning": {
+        "vi": "Ngắn hạn",
+        "en": "Short term"
+      },
+      "examples": [
+        {
+          "ja": "短期の留学を、考えています。",
+          "reading": "たんきのりゅうがくを、かんがえています。",
+          "translation": {
+            "vi": "Tôi đang cân nhắc đi du học ngắn hạn.",
+            "en": "I am considering a short-term study abroad."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "定期",
+      "reading": "ていき",
+      "meaning": {
+        "vi": "Định kỳ",
+        "en": "Regular; periodic"
+      },
+      "examples": [
+        {
+          "ja": "定期的に、健康診断を受けます。",
+          "reading": "ていきてきに、けんこうしんだんをうけます。",
+          "translation": {
+            "vi": "Tôi đi khám sức khỏe định kỳ.",
+            "en": "I get regular health checkups."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "臨時",
+      "reading": "りんじ",
+      "meaning": {
+        "vi": "Tạm thời; đột xuất",
+        "en": "Temporary; extraordinary"
+      },
+      "examples": [
+        {
+          "ja": "台風のため、臨時の会議を開きました。",
+          "reading": "たいふうのため、りんじのかいぎをひらきました。",
+          "translation": {
+            "vi": "Vì bão nên chúng tôi đã mở cuộc họp đột xuất.",
+            "en": "Because of the typhoon, we held an extraordinary meeting."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "随時",
+      "reading": "ずいじ",
+      "meaning": {
+        "vi": "Bất cứ lúc nào; tùy lúc",
+        "en": "At any time"
+      },
+      "examples": [
+        {
+          "ja": "質問は、随時受け付けます。",
+          "reading": "しつもんは、ずいじうけつけます。",
+          "translation": {
+            "vi": "Câu hỏi được tiếp nhận bất cứ lúc nào.",
+            "en": "Questions are accepted at any time."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "今後",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、気をつけたいと思います。 — Nghĩa của câu: “Từ nay về sau tôi muốn chú ý hơn.”",
+        "en": "Choose the word that fits the blank: （　）は、気をつけたいと思います。 — Meaning of the sentence: “From now on I would like to be careful.”"
+      },
+      "payload": {
+        "choices": [
+          "今後",
+          "臨時",
+          "長期",
+          "短期"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「今後」(Từ nay về sau) hợp nghĩa câu này: “Từ nay về sau tôi muốn chú ý hơn.”",
+        "en": "Correct! 「今後」(From now on) fits this sentence: “From now on I would like to be careful.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ nay về sau tôi muốn chú ý hơn.”, nên cần 「今後」(Từ nay về sau); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “From now on I would like to be careful.”, so it needs 「今後」(From now on); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "長期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の休みをとって、旅行します。 — Nghĩa của câu: “Tôi xin nghỉ dài ngày để đi du lịch.”",
+        "en": "Choose the word that fits the blank: （　）の休みをとって、旅行します。 — Meaning of the sentence: “I will take a long vacation and travel.”"
+      },
+      "payload": {
+        "choices": [
+          "短期",
+          "長期",
+          "今後",
+          "定期"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「長期」(Dài hạn) hợp nghĩa câu này: “Tôi xin nghỉ dài ngày để đi du lịch.”",
+        "en": "Correct! 「長期」(Long term) fits this sentence: “I will take a long vacation and travel.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi xin nghỉ dài ngày để đi du lịch.”, nên cần 「長期」(Dài hạn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will take a long vacation and travel.”, so it needs 「長期」(Long term); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "短期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の留学を、考えています。 — Nghĩa của câu: “Tôi đang cân nhắc đi du học ngắn hạn.”",
+        "en": "Choose the word that fits the blank: （　）の留学を、考えています。 — Meaning of the sentence: “I am considering a short-term study abroad.”"
+      },
+      "payload": {
+        "choices": [
+          "随時",
+          "今後",
+          "短期",
+          "定期"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「短期」(Ngắn hạn) hợp nghĩa câu này: “Tôi đang cân nhắc đi du học ngắn hạn.”",
+        "en": "Correct! 「短期」(Short term) fits this sentence: “I am considering a short-term study abroad.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đang cân nhắc đi du học ngắn hạn.”, nên cần 「短期」(Ngắn hạn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am considering a short-term study abroad.”, so it needs 「短期」(Short term); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "定期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）的に、健康診断を受けます。 — Nghĩa của câu: “Tôi đi khám sức khỏe định kỳ.”",
+        "en": "Choose the word that fits the blank: （　）的に、健康診断を受けます。 — Meaning of the sentence: “I get regular health checkups.”"
+      },
+      "payload": {
+        "choices": [
+          "短期",
+          "今後",
+          "随時",
+          "定期"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「定期」(Định kỳ) hợp nghĩa câu này: “Tôi đi khám sức khỏe định kỳ.”",
+        "en": "Correct! 「定期」(Regular; periodic) fits this sentence: “I get regular health checkups.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đi khám sức khỏe định kỳ.”, nên cần 「定期」(Định kỳ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I get regular health checkups.”, so it needs 「定期」(Regular; periodic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "臨時",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風のため、（　）の会議を開きました。 — Nghĩa của câu: “Vì bão nên chúng tôi đã mở cuộc họp đột xuất.”",
+        "en": "Choose the word that fits the blank: 台風のため、（　）の会議を開きました。 — Meaning of the sentence: “Because of the typhoon, we held an extraordinary meeting.”"
+      },
+      "payload": {
+        "choices": [
+          "臨時",
+          "長期",
+          "今後",
+          "随時"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「臨時」(Tạm thời; đột xuất) hợp nghĩa câu này: “Vì bão nên chúng tôi đã mở cuộc họp đột xuất.”",
+        "en": "Correct! 「臨時」(Temporary; extraordinary) fits this sentence: “Because of the typhoon, we held an extraordinary meeting.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bão nên chúng tôi đã mở cuộc họp đột xuất.”, nên cần 「臨時」(Tạm thời; đột xuất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Because of the typhoon, we held an extraordinary meeting.”, so it needs 「臨時」(Temporary; extraordinary); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "随時",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 質問は、（　）受け付けます。 — Nghĩa của câu: “Câu hỏi được tiếp nhận bất cứ lúc nào.”",
+        "en": "Choose the word that fits the blank: 質問は、（　）受け付けます。 — Meaning of the sentence: “Questions are accepted at any time.”"
+      },
+      "payload": {
+        "choices": [
+          "臨時",
+          "随時",
+          "今後",
+          "短期"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「随時」(Bất cứ lúc nào; tùy lúc) hợp nghĩa câu này: “Câu hỏi được tiếp nhận bất cứ lúc nào.”",
+        "en": "Correct! 「随時」(At any time) fits this sentence: “Questions are accepted at any time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Câu hỏi được tiếp nhận bất cứ lúc nào.”, nên cần 「随時」(Bất cứ lúc nào; tùy lúc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Questions are accepted at any time.”, so it needs 「随時」(At any time); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "今後",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「今後」は、気をつけたいと思います。",
+        "en": "Choose the correct reading of the word in 「」: 「今後」は、気をつけたいと思います。"
+      },
+      "payload": {
+        "choices": [
+          "りんじ",
+          "こんご",
+          "ちょうき",
+          "ていき"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「今後」 đọc là 「こんご」, nghĩa là Từ nay về sau.",
+        "en": "Correct! 「今後」 is read 「こんご」 and means From now on."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「今後」 đọc là 「こんご」 (Từ nay về sau); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「今後」 is read 「こんご」 (From now on); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "定期",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「定期」的に、健康診断を受けます。",
+        "en": "Choose the correct reading of the word in 「」: 「定期」的に、健康診断を受けます。"
+      },
+      "payload": {
+        "choices": [
+          "こんご",
+          "ちょうき",
+          "ていき",
+          "たんき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「定期」 đọc là 「ていき」, nghĩa là Định kỳ.",
+        "en": "Correct! 「定期」 is read 「ていき」 and means Regular; periodic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「定期」 đọc là 「ていき」 (Định kỳ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「定期」 is read 「ていき」 (Regular; periodic); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "短期",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「たんき」の留学を、考えています。",
+        "en": "Choose the correct way to write the word in 「」: 「たんき」の留学を、考えています。"
+      },
+      "payload": {
+        "choices": [
+          "長期",
+          "今後",
+          "短期",
+          "臨時"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たんき」 viết là 「短期」, nghĩa là Ngắn hạn.",
+        "en": "Correct! 「たんき」 is written 「短期」 and means Short term."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「たんき」 viết là 「短期」 (Ngắn hạn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「たんき」 is written 「短期」 (Short term); the other words are read differently."
+      }
+    }
+  ]
+}

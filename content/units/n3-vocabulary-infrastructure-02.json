@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-infrastructure",
+  "title": {
+    "vi": "Tàu điện, xe buýt và vé",
+    "en": "Trains, buses and tickets"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1760,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "線路",
+      "reading": "せんろ",
+      "meaning": {
+        "vi": "Đường ray",
+        "en": "Railway tracks"
+      },
+      "examples": [
+        {
+          "ja": "線路の上を、歩いてはいけません。",
+          "reading": "せんろのうえを、あるいてはいけません。",
+          "translation": {
+            "vi": "Không được đi bộ trên đường ray.",
+            "en": "You must not walk on the railway tracks."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "鉄道",
+      "reading": "てつどう",
+      "meaning": {
+        "vi": "Đường sắt",
+        "en": "Railway"
+      },
+      "examples": [
+        {
+          "ja": "日本の鉄道は、時間に正確です。",
+          "reading": "にほんのてつどうは、じかんにせいかくです。",
+          "translation": {
+            "vi": "Đường sắt Nhật Bản rất đúng giờ.",
+            "en": "Japan's railways are punctual."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地下鉄",
+      "reading": "ちかてつ",
+      "meaning": {
+        "vi": "Tàu điện ngầm",
+        "en": "Subway"
+      },
+      "examples": [
+        {
+          "ja": "地下鉄に乗れば、空港まで三十分です。",
+          "reading": "ちかてつにのれば、くうこうまでさんじゅっぷんです。",
+          "translation": {
+            "vi": "Đi tàu điện ngầm thì đến sân bay mất 30 phút.",
+            "en": "By subway, it is thirty minutes to the airport."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "路線",
+      "reading": "ろせん",
+      "meaning": {
+        "vi": "Tuyến (xe, tàu)",
+        "en": "Route; line"
+      },
+      "examples": [
+        {
+          "ja": "この駅には、三つの路線が乗り入れています。",
+          "reading": "このえきには、みっつのろせんがのりいれています。",
+          "translation": {
+            "vi": "Nhà ga này có ba tuyến chạy vào.",
+            "en": "Three lines come into this station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "運賃",
+      "reading": "うんちん",
+      "meaning": {
+        "vi": "Giá vé; cước phí",
+        "en": "Fare"
+      },
+      "examples": [
+        {
+          "ja": "バスの運賃は、距離によって違います。",
+          "reading": "バスのうんちんは、きょりによってちがいます。",
+          "translation": {
+            "vi": "Giá vé xe buýt khác nhau theo khoảng cách.",
+            "en": "Bus fares differ depending on the distance."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "改札",
+      "reading": "かいさつ",
+      "meaning": {
+        "vi": "Cửa soát vé",
+        "en": "Ticket gate"
+      },
+      "examples": [
+        {
+          "ja": "改札で、友達と待ち合わせました。",
+          "reading": "かいさつで、ともだちとまちあわせました。",
+          "translation": {
+            "vi": "Tôi đã hẹn gặp bạn ở cửa soát vé.",
+            "en": "I arranged to meet a friend at the ticket gate."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "定期券",
+      "reading": "ていきけん",
+      "meaning": {
+        "vi": "Vé tháng",
+        "en": "Commuter pass"
+      },
+      "examples": [
+        {
+          "ja": "毎日使うので、定期券を買いました。",
+          "reading": "まいにちつかうので、ていきけんをかいました。",
+          "translation": {
+            "vi": "Vì dùng hằng ngày nên tôi đã mua vé tháng.",
+            "en": "I use it every day, so I bought a commuter pass."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "乗り場",
+      "reading": "のりば",
+      "meaning": {
+        "vi": "Nơi lên xe; bến",
+        "en": "Boarding point"
+      },
+      "examples": [
+        {
+          "ja": "タクシーの乗り場は、駅の前にあります。",
+          "reading": "タクシーののりばは、えきのまえにあります。",
+          "translation": {
+            "vi": "Chỗ bắt taxi nằm trước nhà ga.",
+            "en": "The taxi stand is in front of the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "停留所",
+      "reading": "ていりゅうじょ",
+      "meaning": {
+        "vi": "Trạm dừng (xe buýt)",
+        "en": "Bus stop"
+      },
+      "examples": [
+        {
+          "ja": "次の停留所で、バスを降ります。",
+          "reading": "つぎのていりゅうじょで、バスをおります。",
+          "translation": {
+            "vi": "Tôi xuống xe buýt ở trạm tiếp theo.",
+            "en": "I will get off the bus at the next stop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発車",
+      "reading": "はっしゃ",
+      "meaning": {
+        "vi": "Xuất bến; xe chạy",
+        "en": "Departure (of a vehicle)"
+      },
+      "examples": [
+        {
+          "ja": "電車は、あと一分で発車します。",
+          "reading": "でんしゃは、あといっぷんではっしゃします。",
+          "translation": {
+            "vi": "Chỉ một phút nữa là tàu chạy.",
+            "en": "The train departs in one minute."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "停車",
+      "reading": "ていしゃ",
+      "meaning": {
+        "vi": "Dừng xe",
+        "en": "Stopping (of a vehicle)"
+      },
+      "examples": [
+        {
+          "ja": "この電車は、次の駅に停車しません。",
+          "reading": "このでんしゃは、つぎのえきにていしゃしません。",
+          "translation": {
+            "vi": "Tàu này không dừng ở ga tiếp theo.",
+            "en": "This train does not stop at the next station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "運行",
+      "reading": "うんこう",
+      "meaning": {
+        "vi": "Chạy (theo lịch); vận hành",
+        "en": "Operation (of a service)"
+      },
+      "examples": [
+        {
+          "ja": "この路線は、朝五時から運行しています。",
+          "reading": "このろせんは、あさごじからうんこうしています。",
+          "translation": {
+            "vi": "Tuyến này chạy từ 5 giờ sáng.",
+            "en": "This line operates from five in the morning."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "線路",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の上を、歩いてはいけません。 — Nghĩa của câu: “Không được đi bộ trên đường ray.”",
+        "en": "Choose the word that fits the blank: （　）の上を、歩いてはいけません。 — Meaning of the sentence: “You must not walk on the railway tracks.”"
+      },
+      "payload": {
+        "choices": [
+          "停留所",
+          "停車",
+          "線路",
+          "運賃"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「線路」(Đường ray) hợp nghĩa câu này: “Không được đi bộ trên đường ray.”",
+        "en": "Correct! 「線路」(Railway tracks) fits this sentence: “You must not walk on the railway tracks.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không được đi bộ trên đường ray.”, nên cần 「線路」(Đường ray); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You must not walk on the railway tracks.”, so it needs 「線路」(Railway tracks); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "鉄道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本の（　）は、時間に正確です。 — Nghĩa của câu: “Đường sắt Nhật Bản rất đúng giờ.”",
+        "en": "Choose the word that fits the blank: 日本の（　）は、時間に正確です。 — Meaning of the sentence: “Japan's railways are punctual.”"
+      },
+      "payload": {
+        "choices": [
+          "乗り場",
+          "停車",
+          "地下鉄",
+          "鉄道"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「鉄道」(Đường sắt) hợp nghĩa câu này: “Đường sắt Nhật Bản rất đúng giờ.”",
+        "en": "Correct! 「鉄道」(Railway) fits this sentence: “Japan's railways are punctual.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đường sắt Nhật Bản rất đúng giờ.”, nên cần 「鉄道」(Đường sắt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Japan's railways are punctual.”, so it needs 「鉄道」(Railway); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "地下鉄",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）に乗れば、空港まで三十分です。 — Nghĩa của câu: “Đi tàu điện ngầm thì đến sân bay mất 30 phút.”",
+        "en": "Choose the word that fits the blank: （　）に乗れば、空港まで三十分です。 — Meaning of the sentence: “By subway, it is thirty minutes to the airport.”"
+      },
+      "payload": {
+        "choices": [
+          "地下鉄",
+          "停留所",
+          "線路",
+          "路線"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地下鉄」(Tàu điện ngầm) hợp nghĩa câu này: “Đi tàu điện ngầm thì đến sân bay mất 30 phút.”",
+        "en": "Correct! 「地下鉄」(Subway) fits this sentence: “By subway, it is thirty minutes to the airport.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đi tàu điện ngầm thì đến sân bay mất 30 phút.”, nên cần 「地下鉄」(Tàu điện ngầm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “By subway, it is thirty minutes to the airport.”, so it needs 「地下鉄」(Subway); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "路線",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この駅には、三つの（　）が乗り入れています。 — Nghĩa của câu: “Nhà ga này có ba tuyến chạy vào.”",
+        "en": "Choose the word that fits the blank: この駅には、三つの（　）が乗り入れています。 — Meaning of the sentence: “Three lines come into this station.”"
+      },
+      "payload": {
+        "choices": [
+          "地下鉄",
+          "路線",
+          "線路",
+          "発車"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「路線」(Tuyến (xe, tàu)) hợp nghĩa câu này: “Nhà ga này có ba tuyến chạy vào.”",
+        "en": "Correct! 「路線」(Route; line) fits this sentence: “Three lines come into this station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà ga này có ba tuyến chạy vào.”, nên cần 「路線」(Tuyến (xe, tàu)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Three lines come into this station.”, so it needs 「路線」(Route; line); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "運賃",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: バスの（　）は、距離によって違います。 — Nghĩa của câu: “Giá vé xe buýt khác nhau theo khoảng cách.”",
+        "en": "Choose the word that fits the blank: バスの（　）は、距離によって違います。 — Meaning of the sentence: “Bus fares differ depending on the distance.”"
+      },
+      "payload": {
+        "choices": [
+          "路線",
+          "地下鉄",
+          "運賃",
+          "発車"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「運賃」(Giá vé; cước phí) hợp nghĩa câu này: “Giá vé xe buýt khác nhau theo khoảng cách.”",
+        "en": "Correct! 「運賃」(Fare) fits this sentence: “Bus fares differ depending on the distance.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giá vé xe buýt khác nhau theo khoảng cách.”, nên cần 「運賃」(Giá vé; cước phí); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Bus fares differ depending on the distance.”, so it needs 「運賃」(Fare); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "改札",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）で、友達と待ち合わせました。 — Nghĩa của câu: “Tôi đã hẹn gặp bạn ở cửa soát vé.”",
+        "en": "Choose the word that fits the blank: （　）で、友達と待ち合わせました。 — Meaning of the sentence: “I arranged to meet a friend at the ticket gate.”"
+      },
+      "payload": {
+        "choices": [
+          "停車",
+          "線路",
+          "鉄道",
+          "改札"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「改札」(Cửa soát vé) hợp nghĩa câu này: “Tôi đã hẹn gặp bạn ở cửa soát vé.”",
+        "en": "Correct! 「改札」(Ticket gate) fits this sentence: “I arranged to meet a friend at the ticket gate.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã hẹn gặp bạn ở cửa soát vé.”, nên cần 「改札」(Cửa soát vé); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I arranged to meet a friend at the ticket gate.”, so it needs 「改札」(Ticket gate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "定期券",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎日使うので、（　）を買いました。 — Nghĩa của câu: “Vì dùng hằng ngày nên tôi đã mua vé tháng.”",
+        "en": "Choose the word that fits the blank: 毎日使うので、（　）を買いました。 — Meaning of the sentence: “I use it every day, so I bought a commuter pass.”"
+      },
+      "payload": {
+        "choices": [
+          "定期券",
+          "路線",
+          "改札",
+          "発車"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「定期券」(Vé tháng) hợp nghĩa câu này: “Vì dùng hằng ngày nên tôi đã mua vé tháng.”",
+        "en": "Correct! 「定期券」(Commuter pass) fits this sentence: “I use it every day, so I bought a commuter pass.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì dùng hằng ngày nên tôi đã mua vé tháng.”, nên cần 「定期券」(Vé tháng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I use it every day, so I bought a commuter pass.”, so it needs 「定期券」(Commuter pass); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "乗り場",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: タクシーの（　）は、駅の前にあります。 — Nghĩa của câu: “Chỗ bắt taxi nằm trước nhà ga.”",
+        "en": "Choose the word that fits the blank: タクシーの（　）は、駅の前にあります。 — Meaning of the sentence: “The taxi stand is in front of the station.”"
+      },
+      "payload": {
+        "choices": [
+          "停車",
+          "乗り場",
+          "発車",
+          "地下鉄"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乗り場」(Nơi lên xe; bến) hợp nghĩa câu này: “Chỗ bắt taxi nằm trước nhà ga.”",
+        "en": "Correct! 「乗り場」(Boarding point) fits this sentence: “The taxi stand is in front of the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chỗ bắt taxi nằm trước nhà ga.”, nên cần 「乗り場」(Nơi lên xe; bến); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The taxi stand is in front of the station.”, so it needs 「乗り場」(Boarding point); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "停留所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 次の（　）で、バスを降ります。 — Nghĩa của câu: “Tôi xuống xe buýt ở trạm tiếp theo.”",
+        "en": "Choose the word that fits the blank: 次の（　）で、バスを降ります。 — Meaning of the sentence: “I will get off the bus at the next stop.”"
+      },
+      "payload": {
+        "choices": [
+          "運行",
+          "定期券",
+          "停留所",
+          "地下鉄"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「停留所」(Trạm dừng (xe buýt)) hợp nghĩa câu này: “Tôi xuống xe buýt ở trạm tiếp theo.”",
+        "en": "Correct! 「停留所」(Bus stop) fits this sentence: “I will get off the bus at the next stop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi xuống xe buýt ở trạm tiếp theo.”, nên cần 「停留所」(Trạm dừng (xe buýt)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will get off the bus at the next stop.”, so it needs 「停留所」(Bus stop); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発車",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 電車は、あと一分で（　）します。 — Nghĩa của câu: “Chỉ một phút nữa là tàu chạy.”",
+        "en": "Choose the word that fits the blank: 電車は、あと一分で（　）します。 — Meaning of the sentence: “The train departs in one minute.”"
+      },
+      "payload": {
+        "choices": [
+          "改札",
+          "線路",
+          "停車",
+          "発車"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発車」(Xuất bến; xe chạy) hợp nghĩa câu này: “Chỉ một phút nữa là tàu chạy.”",
+        "en": "Correct! 「発車」(Departure (of a vehicle)) fits this sentence: “The train departs in one minute.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chỉ một phút nữa là tàu chạy.”, nên cần 「発車」(Xuất bến; xe chạy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The train departs in one minute.”, so it needs 「発車」(Departure (of a vehicle)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "停車",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この電車は、次の駅に（　）しません。 — Nghĩa của câu: “Tàu này không dừng ở ga tiếp theo.”",
+        "en": "Choose the word that fits the blank: この電車は、次の駅に（　）しません。 — Meaning of the sentence: “This train does not stop at the next station.”"
+      },
+      "payload": {
+        "choices": [
+          "停車",
+          "定期券",
+          "乗り場",
+          "運行"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「停車」(Dừng xe) hợp nghĩa câu này: “Tàu này không dừng ở ga tiếp theo.”",
+        "en": "Correct! 「停車」(Stopping (of a vehicle)) fits this sentence: “This train does not stop at the next station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tàu này không dừng ở ga tiếp theo.”, nên cần 「停車」(Dừng xe); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This train does not stop at the next station.”, so it needs 「停車」(Stopping (of a vehicle)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "運行",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この路線は、朝五時から（　）しています。 — Nghĩa của câu: “Tuyến này chạy từ 5 giờ sáng.”",
+        "en": "Choose the word that fits the blank: この路線は、朝五時から（　）しています。 — Meaning of the sentence: “This line operates from five in the morning.”"
+      },
+      "payload": {
+        "choices": [
+          "乗り場",
+          "運行",
+          "地下鉄",
+          "線路"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「運行」(Chạy (theo lịch); vận hành) hợp nghĩa câu này: “Tuyến này chạy từ 5 giờ sáng.”",
+        "en": "Correct! 「運行」(Operation (of a service)) fits this sentence: “This line operates from five in the morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tuyến này chạy từ 5 giờ sáng.”, nên cần 「運行」(Chạy (theo lịch); vận hành); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This line operates from five in the morning.”, so it needs 「運行」(Operation (of a service)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "線路",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「線路」の上を、歩いてはいけません。",
+        "en": "Choose the correct reading of the word in 「」: 「線路」の上を、歩いてはいけません。"
+      },
+      "payload": {
+        "choices": [
+          "うんこう",
+          "はっしゃ",
+          "ていしゃ",
+          "せんろ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「線路」 đọc là 「せんろ」, nghĩa là Đường ray.",
+        "en": "Correct! 「線路」 is read 「せんろ」 and means Railway tracks."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「線路」 đọc là 「せんろ」 (Đường ray); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「線路」 is read 「せんろ」 (Railway tracks); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "路線",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この駅には、三つの「路線」が乗り入れています。",
+        "en": "Choose the correct reading of the word in 「」: この駅には、三つの「路線」が乗り入れています。"
+      },
+      "payload": {
+        "choices": [
+          "ろせん",
+          "ちかてつ",
+          "うんちん",
+          "せんろ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「路線」 đọc là 「ろせん」, nghĩa là Tuyến (xe, tàu).",
+        "en": "Correct! 「路線」 is read 「ろせん」 and means Route; line."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「路線」 đọc là 「ろせん」 (Tuyến (xe, tàu)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「路線」 is read 「ろせん」 (Route; line); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "定期券",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 毎日使うので、「定期券」を買いました。",
+        "en": "Choose the correct reading of the word in 「」: 毎日使うので、「定期券」を買いました。"
+      },
+      "payload": {
+        "choices": [
+          "うんこう",
+          "ていきけん",
+          "ちかてつ",
+          "ていりゅうじょ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「定期券」 đọc là 「ていきけん」, nghĩa là Vé tháng.",
+        "en": "Correct! 「定期券」 is read 「ていきけん」 and means Commuter pass."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「定期券」 đọc là 「ていきけん」 (Vé tháng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「定期券」 is read 「ていきけん」 (Commuter pass); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "発車",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 電車は、あと一分で「発車」します。",
+        "en": "Choose the correct reading of the word in 「」: 電車は、あと一分で「発車」します。"
+      },
+      "payload": {
+        "choices": [
+          "ちかてつ",
+          "のりば",
+          "はっしゃ",
+          "うんちん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発車」 đọc là 「はっしゃ」, nghĩa là Xuất bến; xe chạy.",
+        "en": "Correct! 「発車」 is read 「はっしゃ」 and means Departure (of a vehicle)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「発車」 đọc là 「はっしゃ」 (Xuất bến; xe chạy); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「発車」 is read 「はっしゃ」 (Departure (of a vehicle)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "地下鉄",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「ちかてつ」に乗れば、空港まで三十分です。",
+        "en": "Choose the correct way to write the word in 「」: 「ちかてつ」に乗れば、空港まで三十分です。"
+      },
+      "payload": {
+        "choices": [
+          "地下鉄",
+          "鉄道",
+          "線路",
+          "発車"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ちかてつ」 viết là 「地下鉄」, nghĩa là Tàu điện ngầm.",
+        "en": "Correct! 「ちかてつ」 is written 「地下鉄」 and means Subway."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ちかてつ」 viết là 「地下鉄」 (Tàu điện ngầm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ちかてつ」 is written 「地下鉄」 (Subway); the other words are read differently."
+      }
+    },
+    {
+      "item": "停留所",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 次の「ていりゅうじょ」で、バスを降ります。",
+        "en": "Choose the correct way to write the word in 「」: 次の「ていりゅうじょ」で、バスを降ります。"
+      },
+      "payload": {
+        "choices": [
+          "運賃",
+          "停留所",
+          "地下鉄",
+          "停車"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ていりゅうじょ」 viết là 「停留所」, nghĩa là Trạm dừng (xe buýt).",
+        "en": "Correct! 「ていりゅうじょ」 is written 「停留所」 and means Bus stop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ていりゅうじょ」 viết là 「停留所」 (Trạm dừng (xe buýt)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ていりゅうじょ」 is written 「停留所」 (Bus stop); the other words are read differently."
+      }
+    }
+  ]
+}

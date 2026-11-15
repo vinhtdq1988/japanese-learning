@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-condition-injury",
+  "title": {
+    "vi": "Vết thương và sơ cứu",
+    "en": "Injuries and first aid"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1970,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "出血",
+      "reading": "しゅっけつ",
+      "meaning": {
+        "vi": "Chảy máu",
+        "en": "Bleeding"
+      },
+      "examples": [
+        {
+          "ja": "傷が深くて、出血が止まりません。",
+          "reading": "きずがふかくて、しゅっけつがとまりません。",
+          "translation": {
+            "vi": "Vết thương sâu nên máu không cầm được.",
+            "en": "The wound is deep and the bleeding will not stop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "骨折",
+      "reading": "こっせつ",
+      "meaning": {
+        "vi": "Gãy xương",
+        "en": "Fracture"
+      },
+      "examples": [
+        {
+          "ja": "スキーで転んで、足を骨折しました。",
+          "reading": "スキーでころんで、あしをこっせつしました。",
+          "translation": {
+            "vi": "Tôi ngã khi trượt tuyết và bị gãy chân.",
+            "en": "I fell while skiing and broke my leg."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "捻挫",
+      "reading": "ねんざ",
+      "meaning": {
+        "vi": "Bong gân",
+        "en": "Sprain"
+      },
+      "examples": [
+        {
+          "ja": "階段で足を捻挫して、歩けません。",
+          "reading": "かいだんであしをねんざして、あるけません。",
+          "translation": {
+            "vi": "Tôi bị bong gân chân ở cầu thang nên không đi được.",
+            "en": "I sprained my foot on the stairs and cannot walk."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "打撲",
+      "reading": "だぼく",
+      "meaning": {
+        "vi": "Va đập; bầm tím",
+        "en": "Bruise; contusion"
+      },
+      "examples": [
+        {
+          "ja": "転んで、腕を打撲しました。",
+          "reading": "ころんで、うでをだぼくしました。",
+          "translation": {
+            "vi": "Tôi ngã và bị bầm tím ở cánh tay.",
+            "en": "I fell and bruised my arm."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "火傷",
+      "reading": "やけど",
+      "meaning": {
+        "vi": "Bỏng",
+        "en": "Burn"
+      },
+      "examples": [
+        {
+          "ja": "お湯をこぼして、手に火傷をしました。",
+          "reading": "おゆをこぼして、てにやけどをしました。",
+          "translation": {
+            "vi": "Tôi làm đổ nước nóng và bị bỏng tay.",
+            "en": "I spilled hot water and burned my hand."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "切り傷",
+      "reading": "きりきず",
+      "meaning": {
+        "vi": "Vết cắt",
+        "en": "Cut"
+      },
+      "examples": [
+        {
+          "ja": "料理中に、指に切り傷を作りました。",
+          "reading": "りょうりちゅうに、ゆびにきりきずをつくりました。",
+          "translation": {
+            "vi": "Lúc nấu ăn tôi bị một vết cắt ở ngón tay.",
+            "en": "I got a cut on my finger while cooking."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "包帯",
+      "reading": "ほうたい",
+      "meaning": {
+        "vi": "Băng gạc",
+        "en": "Bandage"
+      },
+      "examples": [
+        {
+          "ja": "けがをした腕に、包帯を巻きました。",
+          "reading": "けがをしたうでに、ほうたいをまきました。",
+          "translation": {
+            "vi": "Tôi quấn băng gạc lên cánh tay bị thương.",
+            "en": "I wrapped a bandage around my injured arm."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "絆創膏",
+      "reading": "ばんそうこう",
+      "meaning": {
+        "vi": "Băng dán cá nhân",
+        "en": "Adhesive bandage"
+      },
+      "examples": [
+        {
+          "ja": "小さな傷には、絆創膏をはります。",
+          "reading": "ちいさなきずには、ばんそうこうをはります。",
+          "translation": {
+            "vi": "Vết thương nhỏ thì dán băng cá nhân.",
+            "en": "For small wounds, I put on a bandage."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "湿布",
+      "reading": "しっぷ",
+      "meaning": {
+        "vi": "Miếng dán giảm đau (thuốc dán)",
+        "en": "Medicated patch"
+      },
+      "examples": [
+        {
+          "ja": "腰が痛いので、湿布をはりました。",
+          "reading": "こしがいたいので、しっぷをはりました。",
+          "translation": {
+            "vi": "Vì đau lưng nên tôi đã dán miếng dán giảm đau.",
+            "en": "My back hurts, so I put on a medicated patch."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "消毒",
+      "reading": "しょうどく",
+      "meaning": {
+        "vi": "Khử trùng",
+        "en": "Disinfection"
+      },
+      "examples": [
+        {
+          "ja": "傷は、きれいに消毒してください。",
+          "reading": "きずは、きれいにしょうどくしてください。",
+          "translation": {
+            "vi": "Hãy khử trùng vết thương cho sạch.",
+            "en": "Please disinfect the wound thoroughly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "傷跡",
+      "reading": "きずあと",
+      "meaning": {
+        "vi": "Sẹo; vết tích",
+        "en": "Scar"
+      },
+      "examples": [
+        {
+          "ja": "手術の傷跡が、まだ残っています。",
+          "reading": "しゅじゅつのきずあとが、まだのこっています。",
+          "translation": {
+            "vi": "Vết sẹo phẫu thuật vẫn còn đó.",
+            "en": "The scar from the surgery still remains."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "麻酔",
+      "reading": "ますい",
+      "meaning": {
+        "vi": "Gây mê; gây tê",
+        "en": "Anesthesia"
+      },
+      "examples": [
+        {
+          "ja": "手術のとき、麻酔をかけられました。",
+          "reading": "しゅじゅつのとき、ますいをかけられました。",
+          "translation": {
+            "vi": "Khi phẫu thuật tôi đã được gây mê.",
+            "en": "I was given anesthesia during the surgery."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "出血",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 傷が深くて、（　）が止まりません。 — Nghĩa của câu: “Vết thương sâu nên máu không cầm được.”",
+        "en": "Choose the word that fits the blank: 傷が深くて、（　）が止まりません。 — Meaning of the sentence: “The wound is deep and the bleeding will not stop.”"
+      },
+      "payload": {
+        "choices": [
+          "消毒",
+          "傷跡",
+          "麻酔",
+          "出血"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出血」(Chảy máu) hợp nghĩa câu này: “Vết thương sâu nên máu không cầm được.”",
+        "en": "Correct! 「出血」(Bleeding) fits this sentence: “The wound is deep and the bleeding will not stop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vết thương sâu nên máu không cầm được.”, nên cần 「出血」(Chảy máu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The wound is deep and the bleeding will not stop.”, so it needs 「出血」(Bleeding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "骨折",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スキーで転んで、足を（　）しました。 — Nghĩa của câu: “Tôi ngã khi trượt tuyết và bị gãy chân.”",
+        "en": "Choose the word that fits the blank: スキーで転んで、足を（　）しました。 — Meaning of the sentence: “I fell while skiing and broke my leg.”"
+      },
+      "payload": {
+        "choices": [
+          "骨折",
+          "火傷",
+          "打撲",
+          "絆創膏"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「骨折」(Gãy xương) hợp nghĩa câu này: “Tôi ngã khi trượt tuyết và bị gãy chân.”",
+        "en": "Correct! 「骨折」(Fracture) fits this sentence: “I fell while skiing and broke my leg.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi ngã khi trượt tuyết và bị gãy chân.”, nên cần 「骨折」(Gãy xương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I fell while skiing and broke my leg.”, so it needs 「骨折」(Fracture); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "捻挫",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 階段で足を（　）して、歩けません。 — Nghĩa của câu: “Tôi bị bong gân chân ở cầu thang nên không đi được.”",
+        "en": "Choose the word that fits the blank: 階段で足を（　）して、歩けません。 — Meaning of the sentence: “I sprained my foot on the stairs and cannot walk.”"
+      },
+      "payload": {
+        "choices": [
+          "切り傷",
+          "捻挫",
+          "包帯",
+          "消毒"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「捻挫」(Bong gân) hợp nghĩa câu này: “Tôi bị bong gân chân ở cầu thang nên không đi được.”",
+        "en": "Correct! 「捻挫」(Sprain) fits this sentence: “I sprained my foot on the stairs and cannot walk.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bị bong gân chân ở cầu thang nên không đi được.”, nên cần 「捻挫」(Bong gân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I sprained my foot on the stairs and cannot walk.”, so it needs 「捻挫」(Sprain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "打撲",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 転んで、腕を（　）しました。 — Nghĩa của câu: “Tôi ngã và bị bầm tím ở cánh tay.”",
+        "en": "Choose the word that fits the blank: 転んで、腕を（　）しました。 — Meaning of the sentence: “I fell and bruised my arm.”"
+      },
+      "payload": {
+        "choices": [
+          "火傷",
+          "包帯",
+          "打撲",
+          "絆創膏"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「打撲」(Va đập; bầm tím) hợp nghĩa câu này: “Tôi ngã và bị bầm tím ở cánh tay.”",
+        "en": "Correct! 「打撲」(Bruise; contusion) fits this sentence: “I fell and bruised my arm.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi ngã và bị bầm tím ở cánh tay.”, nên cần 「打撲」(Va đập; bầm tím); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I fell and bruised my arm.”, so it needs 「打撲」(Bruise; contusion); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "火傷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お湯をこぼして、手に（　）をしました。 — Nghĩa của câu: “Tôi làm đổ nước nóng và bị bỏng tay.”",
+        "en": "Choose the word that fits the blank: お湯をこぼして、手に（　）をしました。 — Meaning of the sentence: “I spilled hot water and burned my hand.”"
+      },
+      "payload": {
+        "choices": [
+          "切り傷",
+          "捻挫",
+          "包帯",
+          "火傷"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「火傷」(Bỏng) hợp nghĩa câu này: “Tôi làm đổ nước nóng và bị bỏng tay.”",
+        "en": "Correct! 「火傷」(Burn) fits this sentence: “I spilled hot water and burned my hand.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi làm đổ nước nóng và bị bỏng tay.”, nên cần 「火傷」(Bỏng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I spilled hot water and burned my hand.”, so it needs 「火傷」(Burn); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "切り傷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 料理中に、指に（　）を作りました。 — Nghĩa của câu: “Lúc nấu ăn tôi bị một vết cắt ở ngón tay.”",
+        "en": "Choose the word that fits the blank: 料理中に、指に（　）を作りました。 — Meaning of the sentence: “I got a cut on my finger while cooking.”"
+      },
+      "payload": {
+        "choices": [
+          "切り傷",
+          "麻酔",
+          "絆創膏",
+          "出血"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「切り傷」(Vết cắt) hợp nghĩa câu này: “Lúc nấu ăn tôi bị một vết cắt ở ngón tay.”",
+        "en": "Correct! 「切り傷」(Cut) fits this sentence: “I got a cut on my finger while cooking.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lúc nấu ăn tôi bị một vết cắt ở ngón tay.”, nên cần 「切り傷」(Vết cắt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I got a cut on my finger while cooking.”, so it needs 「切り傷」(Cut); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "包帯",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: けがをした腕に、（　）を巻きました。 — Nghĩa của câu: “Tôi quấn băng gạc lên cánh tay bị thương.”",
+        "en": "Choose the word that fits the blank: けがをした腕に、（　）を巻きました。 — Meaning of the sentence: “I wrapped a bandage around my injured arm.”"
+      },
+      "payload": {
+        "choices": [
+          "出血",
+          "包帯",
+          "傷跡",
+          "骨折"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「包帯」(Băng gạc) hợp nghĩa câu này: “Tôi quấn băng gạc lên cánh tay bị thương.”",
+        "en": "Correct! 「包帯」(Bandage) fits this sentence: “I wrapped a bandage around my injured arm.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quấn băng gạc lên cánh tay bị thương.”, nên cần 「包帯」(Băng gạc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I wrapped a bandage around my injured arm.”, so it needs 「包帯」(Bandage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "絆創膏",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 小さな傷には、（　）をはります。 — Nghĩa của câu: “Vết thương nhỏ thì dán băng cá nhân.”",
+        "en": "Choose the word that fits the blank: 小さな傷には、（　）をはります。 — Meaning of the sentence: “For small wounds, I put on a bandage.”"
+      },
+      "payload": {
+        "choices": [
+          "包帯",
+          "湿布",
+          "絆創膏",
+          "切り傷"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「絆創膏」(Băng dán cá nhân) hợp nghĩa câu này: “Vết thương nhỏ thì dán băng cá nhân.”",
+        "en": "Correct! 「絆創膏」(Adhesive bandage) fits this sentence: “For small wounds, I put on a bandage.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vết thương nhỏ thì dán băng cá nhân.”, nên cần 「絆創膏」(Băng dán cá nhân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “For small wounds, I put on a bandage.”, so it needs 「絆創膏」(Adhesive bandage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "湿布",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 腰が痛いので、（　）をはりました。 — Nghĩa của câu: “Vì đau lưng nên tôi đã dán miếng dán giảm đau.”",
+        "en": "Choose the word that fits the blank: 腰が痛いので、（　）をはりました。 — Meaning of the sentence: “My back hurts, so I put on a medicated patch.”"
+      },
+      "payload": {
+        "choices": [
+          "出血",
+          "骨折",
+          "絆創膏",
+          "湿布"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「湿布」(Miếng dán giảm đau (thuốc dán)) hợp nghĩa câu này: “Vì đau lưng nên tôi đã dán miếng dán giảm đau.”",
+        "en": "Correct! 「湿布」(Medicated patch) fits this sentence: “My back hurts, so I put on a medicated patch.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì đau lưng nên tôi đã dán miếng dán giảm đau.”, nên cần 「湿布」(Miếng dán giảm đau (thuốc dán)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My back hurts, so I put on a medicated patch.”, so it needs 「湿布」(Medicated patch); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "消毒",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 傷は、きれいに（　）してください。 — Nghĩa của câu: “Hãy khử trùng vết thương cho sạch.”",
+        "en": "Choose the word that fits the blank: 傷は、きれいに（　）してください。 — Meaning of the sentence: “Please disinfect the wound thoroughly.”"
+      },
+      "payload": {
+        "choices": [
+          "消毒",
+          "包帯",
+          "火傷",
+          "絆創膏"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「消毒」(Khử trùng) hợp nghĩa câu này: “Hãy khử trùng vết thương cho sạch.”",
+        "en": "Correct! 「消毒」(Disinfection) fits this sentence: “Please disinfect the wound thoroughly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy khử trùng vết thương cho sạch.”, nên cần 「消毒」(Khử trùng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please disinfect the wound thoroughly.”, so it needs 「消毒」(Disinfection); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "傷跡",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 手術の（　）が、まだ残っています。 — Nghĩa của câu: “Vết sẹo phẫu thuật vẫn còn đó.”",
+        "en": "Choose the word that fits the blank: 手術の（　）が、まだ残っています。 — Meaning of the sentence: “The scar from the surgery still remains.”"
+      },
+      "payload": {
+        "choices": [
+          "絆創膏",
+          "傷跡",
+          "捻挫",
+          "包帯"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「傷跡」(Sẹo; vết tích) hợp nghĩa câu này: “Vết sẹo phẫu thuật vẫn còn đó.”",
+        "en": "Correct! 「傷跡」(Scar) fits this sentence: “The scar from the surgery still remains.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vết sẹo phẫu thuật vẫn còn đó.”, nên cần 「傷跡」(Sẹo; vết tích); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The scar from the surgery still remains.”, so it needs 「傷跡」(Scar); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "麻酔",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 手術のとき、（　）をかけられました。 — Nghĩa của câu: “Khi phẫu thuật tôi đã được gây mê.”",
+        "en": "Choose the word that fits the blank: 手術のとき、（　）をかけられました。 — Meaning of the sentence: “I was given anesthesia during the surgery.”"
+      },
+      "payload": {
+        "choices": [
+          "捻挫",
+          "絆創膏",
+          "麻酔",
+          "骨折"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「麻酔」(Gây mê; gây tê) hợp nghĩa câu này: “Khi phẫu thuật tôi đã được gây mê.”",
+        "en": "Correct! 「麻酔」(Anesthesia) fits this sentence: “I was given anesthesia during the surgery.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi phẫu thuật tôi đã được gây mê.”, nên cần 「麻酔」(Gây mê; gây tê); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was given anesthesia during the surgery.”, so it needs 「麻酔」(Anesthesia); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出血",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 傷が深くて、「出血」が止まりません。",
+        "en": "Choose the correct reading of the word in 「」: 傷が深くて、「出血」が止まりません。"
+      },
+      "payload": {
+        "choices": [
+          "しゅっけつ",
+          "こっせつ",
+          "きずあと",
+          "しっぷ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出血」 đọc là 「しゅっけつ」, nghĩa là Chảy máu.",
+        "en": "Correct! 「出血」 is read 「しゅっけつ」 and means Bleeding."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「出血」 đọc là 「しゅっけつ」 (Chảy máu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「出血」 is read 「しゅっけつ」 (Bleeding); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "打撲",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 転んで、腕を「打撲」しました。",
+        "en": "Choose the correct reading of the word in 「」: 転んで、腕を「打撲」しました。"
+      },
+      "payload": {
+        "choices": [
+          "やけど",
+          "だぼく",
+          "しっぷ",
+          "ほうたい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「打撲」 đọc là 「だぼく」, nghĩa là Va đập; bầm tím.",
+        "en": "Correct! 「打撲」 is read 「だぼく」 and means Bruise; contusion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「打撲」 đọc là 「だぼく」 (Va đập; bầm tím); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「打撲」 is read 「だぼく」 (Bruise; contusion); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "包帯",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: けがをした腕に、「包帯」を巻きました。",
+        "en": "Choose the correct reading of the word in 「」: けがをした腕に、「包帯」を巻きました。"
+      },
+      "payload": {
+        "choices": [
+          "しゅっけつ",
+          "だぼく",
+          "ほうたい",
+          "こっせつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「包帯」 đọc là 「ほうたい」, nghĩa là Băng gạc.",
+        "en": "Correct! 「包帯」 is read 「ほうたい」 and means Bandage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「包帯」 đọc là 「ほうたい」 (Băng gạc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「包帯」 is read 「ほうたい」 (Bandage); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "消毒",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 傷は、きれいに「消毒」してください。",
+        "en": "Choose the correct reading of the word in 「」: 傷は、きれいに「消毒」してください。"
+      },
+      "payload": {
+        "choices": [
+          "だぼく",
+          "しゅっけつ",
+          "やけど",
+          "しょうどく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「消毒」 đọc là 「しょうどく」, nghĩa là Khử trùng.",
+        "en": "Correct! 「消毒」 is read 「しょうどく」 and means Disinfection."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「消毒」 đọc là 「しょうどく」 (Khử trùng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「消毒」 is read 「しょうどく」 (Disinfection); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "捻挫",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 階段で足を「ねんざ」して、歩けません。",
+        "en": "Choose the correct way to write the word in 「」: 階段で足を「ねんざ」して、歩けません。"
+      },
+      "payload": {
+        "choices": [
+          "傷跡",
+          "捻挫",
+          "出血",
+          "骨折"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ねんざ」 viết là 「捻挫」, nghĩa là Bong gân.",
+        "en": "Correct! 「ねんざ」 is written 「捻挫」 and means Sprain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ねんざ」 viết là 「捻挫」 (Bong gân); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ねんざ」 is written 「捻挫」 (Sprain); the other words are read differently."
+      }
+    },
+    {
+      "item": "湿布",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 腰が痛いので、「しっぷ」をはりました。",
+        "en": "Choose the correct way to write the word in 「」: 腰が痛いので、「しっぷ」をはりました。"
+      },
+      "payload": {
+        "choices": [
+          "切り傷",
+          "捻挫",
+          "湿布",
+          "骨折"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しっぷ」 viết là 「湿布」, nghĩa là Miếng dán giảm đau (thuốc dán).",
+        "en": "Correct! 「しっぷ」 is written 「湿布」 and means Medicated patch."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しっぷ」 viết là 「湿布」 (Miếng dán giảm đau (thuốc dán)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しっぷ」 is written 「湿布」 (Medicated patch); the other words are read differently."
+      }
+    }
+  ]
+}

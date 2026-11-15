@@ -114,7 +114,7 @@ Future<void> _choose(
 void main() {
   group('màn hình điều chỉnh kế hoạch', () {
     testWidgets(
-      'hiển thị lựa chọn hiện tại; nghe, đọc bị khóa kèm ghi chú, Kanji bật/tắt được',
+      'hiển thị lựa chọn hiện tại; nghe bị khóa kèm ghi chú, Kanji bật/tắt được, luyện đọc/viết khóa dưới 30 phút',
       (tester) async {
         await _open(tester);
         expect(_selected(tester, 'minutes-10'), isTrue);
@@ -125,12 +125,17 @@ void main() {
 
         expect(_has('skill-locked-kanji'), isFalse);
         expect(_has('skill-toggle-kanji'), isTrue);
-        for (final skill in <String>['listening', 'reading']) {
-          expect(_has('skill-locked-$skill'), isTrue);
+        expect(_has('skill-locked-listening'), isTrue);
+        final listening = tester.widget<FilterChip>(
+          find.byKey(const Key('skill-locked-listening')),
+        );
+        expect(listening.onSelected, isNull, reason: 'phải bị khóa');
+        // Luyện đọc/viết (spec 007): chip có mặt nhưng bị khóa vì quỹ 10 phút < 30.
+        for (final skill in <String>['reading', 'writing']) {
           final chip = tester.widget<FilterChip>(
-            find.byKey(Key('skill-locked-$skill')),
+            find.byKey(Key('skill-toggle-$skill')),
           );
-          expect(chip.onSelected, isNull, reason: 'phải bị khóa');
+          expect(chip.onSelected, isNull, reason: '$skill phải bị khóa');
         }
         expect(find.text('Chưa có trong phiên bản này'), findsWidgets);
       },

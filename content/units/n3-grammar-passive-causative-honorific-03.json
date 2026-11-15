@@ -1,0 +1,516 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-passive-causative-honorific",
+  "title": {
+    "vi": "Kính ngữ mở rộng (2): お〜いただく, お〜願う, 〜(ら)れる (tự phát), 〜(さ)せられる (cảm xúc)",
+    "en": "Extended honorifics (2): お〜いただく, お〜願う, spontaneous 〜(ら)れる, emotive 〜(さ)せられる"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "お〜いただく／ご〜いただく",
+      "meaning": {
+        "vi": "Xin được (ngài) ~",
+        "en": "Humbly receive the favor of ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: お + động từ gốc ます + いただく; ご + danh từ gốc Hán + いただく (ご協力いただく). Mình nhận việc do người trên làm; văn viết/điện thoại, thông báo. Gần 〜ていただく (N4) nhưng trang trọng hơn.",
+        "en": "Conjugation: お + verb ます-stem + いただく; ご + Sino-Japanese noun + いただく (ご協力いただく). I receive what a superior does for me; common in writing, phone calls and notices. Similar to 〜ていただく (N4) but more formal."
+      },
+      "examples": [
+        {
+          "ja": "ご協力いただき、ありがとうございます。",
+          "reading": "ごきょうりょくいただき、ありがとうございます。",
+          "translation": {
+            "vi": "Xin cảm ơn sự hợp tác của quý vị.",
+            "en": "Thank you for your cooperation."
+          }
+        },
+        {
+          "ja": "こちらにお名前をご記入いただけますか。",
+          "reading": "こちらにおなまえをごきにゅういただけますか。",
+          "translation": {
+            "vi": "Xin ngài vui lòng ghi tên vào đây được không ạ?",
+            "en": "Could you please write your name here?"
+          }
+        }
+      ],
+      "scopeRef": "g-n3-036"
+    },
+    {
+      "japanese": "お〜願う／ご〜願う",
+      "meaning": {
+        "vi": "Xin nhờ ~ (lịch sự)",
+        "en": "Humbly request ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: お/ご + danh từ/động từ gốc ます + 願う (願います). Yêu cầu lịch sự, trang trọng, thường trong thông báo, biển báo (ご利用の方は…お越し願います). Gần お〜ください nhưng mang giọng trịnh trọng hơn.",
+        "en": "Usage: お/ご + noun/verb ます-stem + 願う (願います). A polite, formal request, common in announcements and signs (ご利用の方は…お越し願います). Close to お〜ください but more ceremonious."
+      },
+      "examples": [
+        {
+          "ja": "ご利用の方は、受付までお越し願います。",
+          "reading": "ごりようのかたは、うけつけまでおこしねがいます。",
+          "translation": {
+            "vi": "Quý khách sử dụng xin vui lòng đến quầy tiếp tân.",
+            "en": "Users are requested to come to the reception desk."
+          }
+        },
+        {
+          "ja": "ご静粛に願います。",
+          "reading": "ごせいしゅくにねがいます。",
+          "translation": {
+            "vi": "Xin quý vị giữ trật tự.",
+            "en": "Silence is requested."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-037"
+    },
+    {
+      "japanese": "〜(ら)れる（自発）",
+      "meaning": {
+        "vi": "Tự nhiên ~, không kiềm được ~",
+        "en": "Spontaneous 〜(ら)れる"
+      },
+      "explanation": {
+        "vi": "Cách dùng: các động từ cảm nghĩ (思う, 感じる, 思い出す, 案じる, 偲ぶ) ở thể bị động diễn tả cảm xúc/suy nghĩ tự nhiên trào lên không do ý chí. Có hiệu quả trang trọng, văn viết. Khác thể bị động thông thường ở chỗ không có tác nhân.",
+        "en": "Usage: verbs of thought and feeling (思う, 感じる, 思い出す, 案じる, 偲ぶ) in the passive express feelings or thoughts that arise naturally without intention. Formal, written effect. Unlike an ordinary passive, there is no agent."
+      },
+      "examples": [
+        {
+          "ja": "この写真を見ると、昔のことが思い出されます。",
+          "reading": "このしゃしんをみると、むかしのことがおもいだされます。",
+          "translation": {
+            "vi": "Nhìn tấm ảnh này, chuyện xưa tự nhiên hiện về.",
+            "en": "Looking at this photo, the past comes back to me."
+          }
+        },
+        {
+          "ja": "将来が案じられます。",
+          "reading": "しょうらいがあんじられます。",
+          "translation": {
+            "vi": "Tôi không khỏi lo lắng cho tương lai.",
+            "en": "I cannot help worrying about the future."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-038"
+    },
+    {
+      "japanese": "〜(さ)せられる（自発的感情）",
+      "meaning": {
+        "vi": "Bị khiến cho cảm thấy ~",
+        "en": "Made to feel ~ (emotive)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: 考えさせられる, 感心させられる, 驚かされる… (động từ cảm xúc, suy nghĩ ở thể sai khiến bị động). Điều gì đó khiến mình tự nhiên nảy sinh cảm xúc/suy nghĩ. Chủ ngữ là cảm xúc của người nói, nguyên nhân thường là một sự việc, tác phẩm.",
+        "en": "Usage: 考えさせられる, 感心させられる, 驚かされる… (emotion/thought verbs in the causative-passive). Something makes one spontaneously feel or think. The subject is the speaker's feeling, and the cause is usually an event or work."
+      },
+      "examples": [
+        {
+          "ja": "この映画には、いろいろと考えさせられました。",
+          "reading": "このえいがには、いろいろとかんがえさせられました。",
+          "translation": {
+            "vi": "Bộ phim này đã khiến tôi phải suy nghĩ nhiều điều.",
+            "en": "This movie made me think about many things."
+          }
+        },
+        {
+          "ja": "彼の努力には、感心させられます。",
+          "reading": "かれのどりょくには、かんしんさせられます。",
+          "translation": {
+            "vi": "Tôi phải thán phục nỗ lực của anh ấy.",
+            "en": "His effort makes me admire him."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-039"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "お〜いただく／ご〜いただく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n（　）協力いただき、ありがとうございます。",
+        "en": "Choose the correct option for the blank:\n（　）協力いただき、ありがとうございます。"
+      },
+      "payload": {
+        "choices": [
+          "ご",
+          "お",
+          "を",
+          "に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ gốc Hán 「協力」 dùng 「ご」: 「ご協力いただき」.",
+        "en": "Correct! The Sino-Japanese word 「協力」 takes 「ご」: 「ご協力いただき」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ gốc Hán 「協力」 dùng 「ご」: 「ご協力いただき」.",
+        "en": "Not quite. The Sino-Japanese word 「協力」 takes 「ご」: 「ご協力いただき」."
+      }
+    },
+    {
+      "item": "お〜いただく／ご〜いただく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこちらにお名前をご記入___ますか。",
+        "en": "Choose the correct option for the blank:\nこちらにお名前をご記入___ますか。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いただけ"
+        ],
+        "hint": "〜いただけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhờ lịch sự: 「ご記入いただけますか」.",
+        "en": "Correct! A polite request: 「ご記入いただけますか」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhờ lịch sự: 「ご記入いただけますか」.",
+        "en": "Not quite. A polite request: 「ご記入いただけますか」."
+      }
+    },
+    {
+      "item": "お〜いただく／ご〜いただく",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nお客様に、お名前を（　）いただきたいのですが。",
+        "en": "Choose the pattern that best fits the context:\nお客様に、お名前を（　）いただきたいのですが。"
+      },
+      "payload": {
+        "choices": [
+          "ご書き",
+          "書いて",
+          "書き",
+          "お書き"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Động từ thuần Nhật 「書く」 dùng 「お + gốc ます」: 「お書きいただく」.",
+        "en": "Correct! The native verb 「書く」 takes 「お + ます-stem」: 「お書きいただく」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Động từ thuần Nhật 「書く」 dùng 「お + gốc ます」: 「お書きいただく」.",
+        "en": "Not quite. The native verb 「書く」 takes 「お + ます-stem」: 「お書きいただく」."
+      }
+    },
+    {
+      "item": "お〜願う／ご〜願う",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nご利用の方は、受付までお越し（　）。",
+        "en": "Choose the correct option for the blank:\nご利用の方は、受付までお越し（　）。"
+      },
+      "payload": {
+        "choices": [
+          "ください願います",
+          "お願うます",
+          "願います",
+          "願いたい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Yêu cầu trang trọng trên thông báo: 「お越し願います」.",
+        "en": "Correct! A formal request on a notice: 「お越し願います」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Yêu cầu trang trọng trên thông báo: 「お越し願います」.",
+        "en": "Not quite. A formal request on a notice: 「お越し願います」."
+      }
+    },
+    {
+      "item": "お〜願う／ご〜願う",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n___静粛に願います。",
+        "en": "Choose the correct option for the blank:\n___静粛に願います。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ご"
+        ],
+        "hint": "ご"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Từ gốc Hán 「静粛」 dùng 「ご」: 「ご静粛に願います」.",
+        "en": "Correct! The Sino-Japanese word 「静粛」 takes 「ご」: 「ご静粛に願います」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Từ gốc Hán 「静粛」 dùng 「ご」: 「ご静粛に願います」.",
+        "en": "Not quite. The Sino-Japanese word 「静粛」 takes 「ご」: 「ご静粛に願います」."
+      }
+    },
+    {
+      "item": "お〜願う／ご〜願う",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "ご協力を願ますます。",
+          "ご協力を願います。",
+          "お協力を願います。",
+          "ご協力が願いください。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ご + từ gốc Hán + 願います」: 「ご協力を願います」.",
+        "en": "Correct! 「ご + Sino-Japanese word + 願います」: 「ご協力を願います」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ご + từ gốc Hán + 願います」: 「ご協力を願います」.",
+        "en": "Not quite. 「ご + Sino-Japanese word + 願います」: 「ご協力を願います」."
+      }
+    },
+    {
+      "item": "〜(ら)れる（自発）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの写真を見ると、昔のことが思い出（　）。",
+        "en": "Choose the correct option for the blank:\nこの写真を見ると、昔のことが思い出（　）。"
+      },
+      "payload": {
+        "choices": [
+          "されます",
+          "します",
+          "せます",
+          "れます"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Suy nghĩ tự trào lên: 「思い出されます」.",
+        "en": "Correct! A thought that rises spontaneously: 「思い出されます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Suy nghĩ tự trào lên: 「思い出されます」.",
+        "en": "Not quite. A thought that rises spontaneously: 「思い出されます」."
+      }
+    },
+    {
+      "item": "お〜いただく／ご〜いただく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお客様には、こちらでお待ち___。",
+        "en": "Choose the correct option for the blank:\nお客様には、こちらでお待ち___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "いただきます"
+        ],
+        "hint": "〜いただきます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhờ khách đợi trang trọng: 「お待ちいただきます」.",
+        "en": "Correct! A formal request to wait: 「お待ちいただきます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhờ khách đợi trang trọng: 「お待ちいただきます」.",
+        "en": "Not quite. A formal request to wait: 「お待ちいただきます」."
+      }
+    },
+    {
+      "item": "〜(ら)れる（自発）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n将来が案じ（　）。",
+        "en": "Choose the pattern that best fits the context:\n将来が案じ（　）。"
+      },
+      "payload": {
+        "choices": [
+          "させます",
+          "ます",
+          "れません",
+          "られます"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lo lắng tự nhiên trào lên: 「案じられます」.",
+        "en": "Correct! Worry rising naturally: 「案じられます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lo lắng tự nhiên trào lên: 「案じられます」.",
+        "en": "Not quite. Worry rising naturally: 「案じられます」."
+      }
+    },
+    {
+      "item": "〜(さ)せられる（自発的感情）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの映画には、いろいろと考え（　）。",
+        "en": "Choose the correct option for the blank:\nこの映画には、いろいろと考え（　）。"
+      },
+      "payload": {
+        "choices": [
+          "られました",
+          "させました",
+          "させられました",
+          "ました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bị khiến phải suy nghĩ: 「考えさせられました」.",
+        "en": "Correct! Made to think: 「考えさせられました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bị khiến phải suy nghĩ: 「考えさせられました」.",
+        "en": "Not quite. Made to think: 「考えさせられました」."
+      }
+    },
+    {
+      "item": "〜(さ)せられる（自発的感情）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼の努力には、感心さ___ます。",
+        "en": "Choose the correct option for the blank:\n彼の努力には、感心さ___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "せられ"
+        ],
+        "hint": "〜せられ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thán phục tự nhiên: 「感心させられます」.",
+        "en": "Correct! Spontaneous admiration: 「感心させられます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thán phục tự nhiên: 「感心させられます」.",
+        "en": "Not quite. Spontaneous admiration: 「感心させられます」."
+      }
+    },
+    {
+      "item": "〜(さ)せられる（自発的感情）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n先生の話に、深く（　）。",
+        "en": "Choose the pattern that best fits the context:\n先生の話に、深く（　）。"
+      },
+      "payload": {
+        "choices": [
+          "考えさせました",
+          "考えさせられました",
+          "考えられました",
+          "考えました"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Lời thầy khiến mình phải suy ngẫm: 「考えさせられました」.",
+        "en": "Correct! The teacher's words made me reflect: 「考えさせられました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Lời thầy khiến mình phải suy ngẫm: 「考えさせられました」.",
+        "en": "Not quite. The teacher's words made me reflect: 「考えさせられました」."
+      }
+    },
+    {
+      "item": "〜(さ)せられる（自発的感情）",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ hai):\n彼の努力には、＿　★　＿　。\n（感心／させ／られます）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the second slot):\n彼の努力には、＿　★　＿　。\n（感心／させ／られます）"
+      },
+      "payload": {
+        "choices": [
+          "感心",
+          "させ",
+          "られます"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「彼の努力には、感心させられます。」; ô ★ (thứ hai) là 「させ」.",
+        "en": "Correct! The correct sentence is 「彼の努力には、感心させられます。」; the ★ (second) slot is 「させ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「彼の努力には、感心させられます。」; ô ★ (thứ hai) là 「させ」.",
+        "en": "Not quite. The correct sentence is 「彼の努力には、感心させられます。」; the ★ (second) slot is 「させ」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "お〜いただく／ご〜いただく",
+            {
+              "vi": "Xin được (ngài) ~",
+              "en": "Humbly receive the favor of ~"
+            }
+          ],
+          [
+            "お〜願う／ご〜願う",
+            {
+              "vi": "Xin nhờ ~ (lịch sự)",
+              "en": "Humbly request ~"
+            }
+          ],
+          [
+            "〜(ら)れる（自発）",
+            {
+              "vi": "Tự nhiên ~, không kiềm được ~",
+              "en": "Spontaneous 〜(ら)れる"
+            }
+          ],
+          [
+            "〜(さ)せられる（自発的感情）",
+            {
+              "vi": "Bị khiến cho cảm thấy ~",
+              "en": "Made to feel ~ (emotive)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

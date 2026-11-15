@@ -1,0 +1,321 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "te-form",
+  "title": {
+    "vi": "Thể て mở rộng (1): 〜てある và 〜ておく",
+    "en": "Extended te-form (1): 〜てある and 〜ておく"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜てある",
+      "meaning": {
+        "vi": "Có sẵn ~ (trạng thái do ai đó cố ý làm)",
+        "en": "Be ~ed (a state left by someone's deliberate action)"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: diễn tả trạng thái còn lại sau khi ai đó cố ý làm một việc. Kết hợp: tha động từ thể て + ある; vật là chủ ngữ và thường đi với 「が」 (ドアが開けてある). Không dùng với tự động từ (開く, 落ちる). Khác 「〜ている」: 〜てある cho thấy có người làm với mục đích, còn 〜ている chỉ trạng thái nói chung.",
+        "en": "Meaning: a state that remains after someone did something on purpose. Form: transitive verb て-form + ある; the object is the subject, usually marked with 「が」 (ドアが開けてある). It is not used with intransitive verbs (開く, 落ちる). Compared with 「〜ている」, 〜てある implies someone did it deliberately, while 〜ている describes a state in general."
+      },
+      "examples": [
+        {
+          "ja": "テーブルの上に花が飾ってあります。",
+          "reading": "テーブルのうえにはながかざってあります。",
+          "translation": {
+            "vi": "Trên bàn có hoa được cắm sẵn.",
+            "en": "Flowers have been arranged on the table."
+          }
+        },
+        {
+          "ja": "かべに今月の予定が書いてあります。",
+          "reading": "かべにこんげつのよていがかいてあります。",
+          "translation": {
+            "vi": "Trên tường có ghi sẵn lịch trình của tháng này.",
+            "en": "This month's schedule is written on the wall."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-009"
+    },
+    {
+      "japanese": "〜ておく",
+      "meaning": {
+        "vi": "Làm sẵn ~; để nguyên ~",
+        "en": "Do ~ in advance; leave ~ as it is"
+      },
+      "explanation": {
+        "vi": "Ý nghĩa: (1) làm trước để chuẩn bị cho việc sau; (2) để nguyên trạng thái hiện tại. Kết hợp: động từ thể て + おく (ておきます). Khẩu ngữ hay nói 「〜とく」 (読んどく). Khác 〜てある: ておく nhấn vào hành động chuẩn bị của người làm, còn 〜てある nhấn vào kết quả đang còn đó.",
+        "en": "Meaning: (1) do something beforehand as preparation; (2) leave something as it is. Form: verb て-form + おく (ておきます). Casually it becomes 「〜とく」 (読んどく). Compared with 〜てある, ておく focuses on the preparatory act of the doer, while 〜てある focuses on the resulting state."
+      },
+      "examples": [
+        {
+          "ja": "旅行の前に、ホテルを予約しておきます。",
+          "reading": "りょこうのまえに、ホテルをよやくしておきます。",
+          "translation": {
+            "vi": "Trước chuyến du lịch, tôi sẽ đặt sẵn khách sạn.",
+            "en": "I will book the hotel before the trip."
+          }
+        },
+        {
+          "ja": "暑いので、窓を開けておいてください。",
+          "reading": "あついので、まどをあけておいてください。",
+          "translation": {
+            "vi": "Trời nóng nên hãy cứ để cửa sổ mở nhé.",
+            "en": "It is hot, so please leave the window open."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-010"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜てある",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n窓が（　）あります。",
+        "en": "Choose the correct option for the blank:\n窓が（　）あります。"
+      },
+      "payload": {
+        "choices": [
+          "開けて",
+          "開いて",
+          "開け",
+          "開けた"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「開ける」 là tha động từ nên nối 〜てある thành 「開けてあります」; 「開く」 là tự động từ nên không dùng với 〜てある.",
+        "en": "Correct! 「開ける」 is transitive, so it forms 「開けてあります」; 「開く」 is intransitive and cannot take 〜てある."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「開ける」 là tha động từ nên nối 〜てある thành 「開けてあります」; 「開く」 là tự động từ nên không dùng với 〜てある.",
+        "en": "Not quite. 「開ける」 is transitive, so it forms 「開けてあります」; 「開く」 is intransitive and cannot take 〜てある."
+      }
+    },
+    {
+      "item": "〜てある",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "机の上に本が落ちてあります。",
+          "机の上に本が置いあります。",
+          "机の上に本が置くてあります。",
+          "机の上に本が置いてあります。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「置く」 là tha động từ → 「置いてあります」; 「落ちる」 là tự động từ nên không đi với 〜てある, và động từ phải ở thể て.",
+        "en": "Correct! 「置く」 is transitive → 「置いてあります」; 「落ちる」 is intransitive and cannot take 〜てある, and the verb must be in the て-form."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「置く」 là tha động từ → 「置いてあります」; 「落ちる」 là tự động từ nên không đi với 〜てある, và động từ phải ở thể て.",
+        "en": "Not quite. 「置く」 is transitive → 「置いてあります」; 「落ちる」 is intransitive and cannot take 〜てある, and the verb must be in the て-form."
+      }
+    },
+    {
+      "item": "〜てある",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nかべにポスターが___あります。",
+        "en": "Choose the correct option for the blank:\nかべにポスターが___あります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "はって",
+          "貼って"
+        ],
+        "hint": "貼る"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chủ ngữ 「ポスターが」 là vật và 「貼る」 là tha động từ, nên dùng 「貼ってあります」 để nói trạng thái còn lại.",
+        "en": "Correct! The subject 「ポスターが」 is a thing and 「貼る」 is transitive, so 「貼ってあります」 describes the state left behind."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chủ ngữ 「ポスターが」 là vật và 「貼る」 là tha động từ, nên dùng 「貼ってあります」 để nói trạng thái còn lại.",
+        "en": "Not quite. The subject 「ポスターが」 is a thing and 「貼る」 is transitive, so 「貼ってあります」 describes the state left behind."
+      }
+    },
+    {
+      "item": "〜てある",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n部屋に入ると、机の上にメモが置いて（　）。",
+        "en": "Choose the pattern that best fits the context:\n部屋に入ると、机の上にメモが置いて（　）。"
+      },
+      "payload": {
+        "choices": [
+          "おきました",
+          "みました",
+          "ありました",
+          "いきました"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Người nói thấy kết quả còn lại (tờ giấy ghi chú) nên dùng 〜てあります; 「〜ておきました」 diễn tả hành động chuẩn bị của người làm.",
+        "en": "Correct! The speaker sees a leftover result (the memo), so 〜てあります fits; 「〜ておきました」 describes the doer's preparatory act."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Người nói thấy kết quả còn lại (tờ giấy ghi chú) nên dùng 〜てあります; 「〜ておきました」 diễn tả hành động chuẩn bị của người làm.",
+        "en": "Not quite. The speaker sees a leftover result (the memo), so 〜てあります fits; 「〜ておきました」 describes the doer's preparatory act."
+      }
+    },
+    {
+      "item": "〜ておく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nコンサートのチケットを（　）おきました。",
+        "en": "Choose the correct option for the blank:\nコンサートのチケットを（　）おきました。"
+      },
+      "payload": {
+        "choices": [
+          "予約し",
+          "予約して",
+          "予約する",
+          "予約した"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「〜ておきます」 luôn nối với thể て của động từ: 「予約しておきました」.",
+        "en": "Correct! 「〜ておきます」 always attaches to the て-form of the verb: 「予約しておきました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「〜ておきます」 luôn nối với thể て của động từ: 「予約しておきました」.",
+        "en": "Not quite. 「〜ておきます」 always attaches to the て-form of the verb: 「予約しておきました」."
+      }
+    },
+    {
+      "item": "〜ておく",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先に飲み物を買って___ます。",
+        "en": "Choose the correct option for the blank:\n先に飲み物を買って___ます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おき",
+          "置き"
+        ],
+        "hint": "おく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể ます của 「おく」 là 「おき」, nên 「買っておきます」 nghĩa là mua sẵn trước.",
+        "en": "Correct! The ます-stem of 「おく」 is 「おき」, so 「買っておきます」 means to buy it in advance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể ます của 「おく」 là 「おき」, nên 「買っておきます」 nghĩa là mua sẵn trước.",
+        "en": "Not quite. The ます-stem of 「おく」 is 「おき」, so 「買っておきます」 means to buy it in advance."
+      }
+    },
+    {
+      "item": "〜ておく",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "パーティーの前に、飲み物を買っておきます。",
+          "パーティーの前に、飲み物を買っておくます。",
+          "パーティーの前に、飲み物を買っておきす。",
+          "パーティーの前に、飲み物を買ておきます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thể ます của 「おく」 là 「おきます」, và động từ trước đó phải ở thể て (買って).",
+        "en": "Correct! The polite form of 「おく」 is 「おきます」, and the preceding verb must be in the て-form (買って)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thể ます của 「おく」 là 「おきます」, và động từ trước đó phải ở thể て (買って).",
+        "en": "Not quite. The polite form of 「おく」 is 「おきます」, and the preceding verb must be in the て-form (買って)."
+      }
+    },
+    {
+      "item": "〜ておく",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n暑いので、窓を開けて（　）ください。",
+        "en": "Choose the correct option for the blank:\n暑いので、窓を開けて（　）ください。"
+      },
+      "payload": {
+        "choices": [
+          "あって",
+          "いって",
+          "しまって",
+          "おいて"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nghĩa 「để nguyên trạng thái」 dùng 〜ておく; 「開けておいてください」 là nhờ cứ để cửa mở.",
+        "en": "Correct! The \"leave as it is\" meaning uses 〜ておく; 「開けておいてください」 asks someone to keep the window open."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nghĩa 「để nguyên trạng thái」 dùng 〜ておく; 「開けておいてください」 là nhờ cứ để cửa mở.",
+        "en": "Not quite. The \"leave as it is\" meaning uses 〜ておく; 「開けておいてください」 asks someone to keep the window open."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜てある",
+            {
+              "vi": "Có sẵn ~ (trạng thái do ai đó cố ý làm)",
+              "en": "Be ~ed (a state left by someone's deliberate action)"
+            }
+          ],
+          [
+            "〜ておく",
+            {
+              "vi": "Làm sẵn ~; để nguyên ~",
+              "en": "Do ~ in advance; leave ~ as it is"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

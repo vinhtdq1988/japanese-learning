@@ -1,0 +1,492 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-aspect-state",
+  "title": {
+    "vi": "Diễn tiến (1): 〜つつある, 〜かけ, 〜きる, 〜はじめる/〜つづける/〜おわる",
+    "en": "Progress (1): 〜つつある, 〜かけ, 〜きる, 〜はじめる/〜つづける/〜おわる"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜つつある",
+      "meaning": {
+        "vi": "Đang dần ~",
+        "en": "Be in the process of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + つつある. Diễn tả sự thay đổi đang tiến triển dần dần theo một hướng (増えつつある, 変わりつつある). Văn viết, tin tức. Khác 〜ている ở chỗ nhấn vào quá trình thay đổi.",
+        "en": "Usage: verb ます-stem + つつある. Expresses a change gradually progressing in one direction (増えつつある, 変わりつつある). Written/news style. Unlike 〜ている, it stresses the process of change."
+      },
+      "examples": [
+        {
+          "ja": "この町の人口は、減りつつあります。",
+          "reading": "このまちのじんこうは、へりつつあります。",
+          "translation": {
+            "vi": "Dân số của thị trấn này đang dần giảm.",
+            "en": "The population of this town is gradually decreasing."
+          }
+        },
+        {
+          "ja": "景気は、回復しつつあります。",
+          "reading": "けいきは、かいふくしつつあります。",
+          "translation": {
+            "vi": "Nền kinh tế đang dần phục hồi.",
+            "en": "The economy is gradually recovering."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-099"
+    },
+    {
+      "japanese": "〜かけ（る）",
+      "meaning": {
+        "vi": "~ dở dang",
+        "en": "Half-done; about to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + かける / かけの + danh từ / かけだ. Nghĩa 1: làm đến giữa chừng rồi dừng (食べかけのパン). Nghĩa 2: sắp sửa làm (言いかける). Chủ yếu với động từ chỉ hành động kéo dài.",
+        "en": "Usage: verb ます-stem + かける / かけの + noun / かけだ. Sense 1: stopped halfway (食べかけのパン). Sense 2: about to do (言いかける). Mainly with verbs of continuing action."
+      },
+      "examples": [
+        {
+          "ja": "食べかけのパンが、机の上にあります。",
+          "reading": "たべかけのぱんが、つくえのうえにあります。",
+          "translation": {
+            "vi": "Có miếng bánh mì ăn dở trên bàn.",
+            "en": "There is a half-eaten loaf of bread on the desk."
+          }
+        },
+        {
+          "ja": "彼は何か言いかけて、やめました。",
+          "reading": "かれはなにかいいかけて、やめました。",
+          "translation": {
+            "vi": "Anh ấy định nói gì đó rồi lại thôi.",
+            "en": "He started to say something, then stopped."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-100"
+    },
+    {
+      "japanese": "〜きる",
+      "meaning": {
+        "vi": "~ hết, ~ trọn vẹn",
+        "en": "Do ~ completely"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + きる (きれる). Làm trọn đến cùng, dùng hết sức (走りきる, 使いきる, 疲れきる). Dạng khả năng: 〜きれない (không thể ... hết).",
+        "en": "Usage: verb ます-stem + きる (きれる). Doing something all the way through or to the limit (走りきる, 使いきる, 疲れきる). Negative potential: 〜きれない (cannot finish/handle completely)."
+      },
+      "examples": [
+        {
+          "ja": "マラソンを最後まで走りきりました。",
+          "reading": "まらそんをさいごまではしりきりました。",
+          "translation": {
+            "vi": "Tôi đã chạy hết cuộc ma-ra-tông đến cùng.",
+            "en": "I ran the marathon all the way to the end."
+          }
+        },
+        {
+          "ja": "この料理は、多すぎて食べきれません。",
+          "reading": "このりょうりは、おおすぎてたべきれません。",
+          "translation": {
+            "vi": "Món này nhiều quá, tôi ăn không hết.",
+            "en": "This dish is too much; I cannot finish it."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-101"
+    },
+    {
+      "japanese": "〜はじめる／〜つづける／〜おわる",
+      "meaning": {
+        "vi": "Bắt đầu/tiếp tục/xong ~",
+        "en": "Begin / continue / finish doing ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます + はじめる (bắt đầu), つづける (tiếp tục), おわる (làm xong). Chỉ giai đoạn của hành động; chủ ngữ là người làm. Không dùng với động từ chỉ trạng thái hay hành động tức thời không kéo dài.",
+        "en": "Usage: verb ます-stem + はじめる (begin), つづける (continue), おわる (finish). Marks the phase of an action; the subject is the doer. Not used with stative verbs or instantaneous actions."
+      },
+      "examples": [
+        {
+          "ja": "雨が降りはじめました。",
+          "reading": "あめがふりはじめました。",
+          "translation": {
+            "vi": "Trời bắt đầu mưa.",
+            "en": "It began to rain."
+          }
+        },
+        {
+          "ja": "この本を、やっと読みおわりました。",
+          "reading": "このほんを、やっとよみおわりました。",
+          "translation": {
+            "vi": "Cuối cùng tôi đã đọc xong cuốn sách này.",
+            "en": "I finally finished reading this book."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-102"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜つつある",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの町の人口は、減り（　）あります。",
+        "en": "Choose the correct option for the blank:\nこの町の人口は、減り（　）あります。"
+      },
+      "payload": {
+        "choices": [
+          "ながら",
+          "たり",
+          "つづけ",
+          "つつ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Thay đổi đang tiến triển: 「減りつつある」.",
+        "en": "Correct! A change in progress: 「減りつつある」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Thay đổi đang tiến triển: 「減りつつある」.",
+        "en": "Not quite. A change in progress: 「減りつつある」."
+      }
+    },
+    {
+      "item": "〜つつある",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n景気は、回復し___あります。",
+        "en": "Choose the correct option for the blank:\n景気は、回復し___あります。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "つつ"
+        ],
+        "hint": "〜つつ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đang dần phục hồi: 「回復しつつあります」.",
+        "en": "Correct! Gradually recovering: 「回復しつつあります」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đang dần phục hồi: 「回復しつつあります」.",
+        "en": "Not quite. Gradually recovering: 「回復しつつあります」."
+      }
+    },
+    {
+      "item": "〜かけ（る）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n食べ（　）のパンが、机の上にあります。",
+        "en": "Choose the correct option for the blank:\n食べ（　）のパンが、机の上にあります。"
+      },
+      "payload": {
+        "choices": [
+          "つつ",
+          "きり",
+          "かけ",
+          "はじめ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ăn dở: 「食べかけのパン」.",
+        "en": "Correct! Half-eaten: 「食べかけのパン」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ăn dở: 「食べかけのパン」.",
+        "en": "Not quite. Half-eaten: 「食べかけのパン」."
+      }
+    },
+    {
+      "item": "〜かけ（る）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n彼は何か言い___て、やめました。",
+        "en": "Choose the correct option for the blank:\n彼は何か言い___て、やめました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かけ"
+        ],
+        "hint": "〜かけ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Định nói rồi dừng: 「言いかけて」.",
+        "en": "Correct! About to say something then stopped: 「言いかけて」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Định nói rồi dừng: 「言いかけて」.",
+        "en": "Not quite. About to say something then stopped: 「言いかけて」."
+      }
+    },
+    {
+      "item": "〜きる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nマラソンを最後まで走り（　）ました。",
+        "en": "Choose the correct option for the blank:\nマラソンを最後まで走り（　）ました。"
+      },
+      "payload": {
+        "choices": [
+          "かけ",
+          "きり",
+          "つつ",
+          "はじめ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chạy trọn vẹn đến cuối: 「走りきりました」.",
+        "en": "Correct! Running it all the way: 「走りきりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chạy trọn vẹn đến cuối: 「走りきりました」.",
+        "en": "Not quite. Running it all the way: 「走りきりました」."
+      }
+    },
+    {
+      "item": "〜きる",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nこの料理は、多すぎて食べ（　）ません。",
+        "en": "Choose the pattern that best fits the context:\nこの料理は、多すぎて食べ（　）ません。"
+      },
+      "payload": {
+        "choices": [
+          "きれ",
+          "かけ",
+          "つつ",
+          "つづけ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không thể ăn hết: 「食べきれません」.",
+        "en": "Correct! Cannot finish eating: 「食べきれません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không thể ăn hết: 「食べきれません」.",
+        "en": "Not quite. Cannot finish eating: 「食べきれません」."
+      }
+    },
+    {
+      "item": "〜きる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nお金を全部使い___ました。",
+        "en": "Choose the correct option for the blank:\nお金を全部使い___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "きり"
+        ],
+        "hint": "〜きり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dùng hết sạch: 「使いきりました」.",
+        "en": "Correct! Used it all up: 「使いきりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dùng hết sạch: 「使いきりました」.",
+        "en": "Not quite. Used it all up: 「使いきりました」."
+      }
+    },
+    {
+      "item": "〜はじめる／〜つづける／〜おわる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨が降り（　）ました。",
+        "en": "Choose the correct option for the blank:\n雨が降り（　）ました。"
+      },
+      "payload": {
+        "choices": [
+          "おわり",
+          "きり",
+          "つつ",
+          "はじめ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bắt đầu mưa: 「降りはじめました」.",
+        "en": "Correct! It started to rain: 「降りはじめました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bắt đầu mưa: 「降りはじめました」.",
+        "en": "Not quite. It started to rain: 「降りはじめました」."
+      }
+    },
+    {
+      "item": "〜はじめる／〜つづける／〜おわる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの本を、やっと読み___ました。",
+        "en": "Choose the correct option for the blank:\nこの本を、やっと読み___ました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おわり",
+          "終わり"
+        ],
+        "hint": "おわる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Đọc xong: 「読みおわりました」.",
+        "en": "Correct! Finished reading: 「読みおわりました」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đọc xong: 「読みおわりました」.",
+        "en": "Not quite. Finished reading: 「読みおわりました」."
+      }
+    },
+    {
+      "item": "〜はじめる／〜つづける／〜おわる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "三時間、ずっと話しはじめました。",
+          "三時間、ずっと話しおわりました。",
+          "三時間、ずっと話しつづけました。",
+          "三時間、ずっと話しきれました。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ずっと…」 diễn tả sự liên tục nên dùng 「つづける」.",
+        "en": "Correct! 「ずっと…」 expresses continuity, so 「つづける」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ずっと…」 diễn tả sự liên tục nên dùng 「つづける」.",
+        "en": "Not quite. 「ずっと…」 expresses continuity, so 「つづける」 is used."
+      }
+    },
+    {
+      "item": "〜かけ（る）",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nご飯を（　）ところに、電話が鳴りました。",
+        "en": "Choose the pattern that best fits the context:\nご飯を（　）ところに、電話が鳴りました。"
+      },
+      "payload": {
+        "choices": [
+          "食べきった",
+          "食べかけた",
+          "食べつつあった",
+          "食べおわった"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sắp/đang bắt đầu ăn thì điện thoại reo: 「食べかけた」.",
+        "en": "Correct! About to/just starting to eat when the phone rang: 「食べかけた」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sắp/đang bắt đầu ăn thì điện thoại reo: 「食べかけた」.",
+        "en": "Not quite. About to/just starting to eat when the phone rang: 「食べかけた」."
+      }
+    },
+    {
+      "item": "〜つつある",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nこの町の人口は、＿　＿　★　＿　。\n（減り／つつ／あります／ゆっくり）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nこの町の人口は、＿　＿　★　＿　。\n（減り／つつ／あります／ゆっくり）"
+      },
+      "payload": {
+        "choices": [
+          "つつ",
+          "ゆっくり",
+          "減り",
+          "あります"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「この町の人口は、ゆっくり減りつつあります。」; ô ★ (thứ ba) là 「つつ」.",
+        "en": "Correct! The correct sentence is 「この町の人口は、ゆっくり減りつつあります。」; the ★ (third) slot is 「つつ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「この町の人口は、ゆっくり減りつつあります。」; ô ★ (thứ ba) là 「つつ」.",
+        "en": "Not quite. The correct sentence is 「この町の人口は、ゆっくり減りつつあります。」; the ★ (third) slot is 「つつ」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜つつある",
+            {
+              "vi": "Đang dần ~",
+              "en": "Be in the process of ~"
+            }
+          ],
+          [
+            "〜かけ（る）",
+            {
+              "vi": "~ dở dang",
+              "en": "Half-done; about to ~"
+            }
+          ],
+          [
+            "〜きる",
+            {
+              "vi": "~ hết, ~ trọn vẹn",
+              "en": "Do ~ completely"
+            }
+          ],
+          [
+            "〜はじめる／〜つづける／〜おわる",
+            {
+              "vi": "Bắt đầu/tiếp tục/xong ~",
+              "en": "Begin / continue / finish doing ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

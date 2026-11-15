@@ -1,0 +1,554 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-conditionals-concession",
+  "title": {
+    "vi": "Nhượng bộ (3): 〜ようでは, 〜からといって, 〜ながらも, 〜くせに, 〜にもかかわらず",
+    "en": "Concession (3): 〜ようでは, 〜からといって, 〜ながらも, 〜くせに, 〜にもかかわらず"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜ようでは",
+      "meaning": {
+        "vi": "Nếu cứ như ~ thì (không ổn)",
+        "en": "If (you are) like that, (it won't do)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển / thể ない + ようでは + vế sau tiêu cực (だめだ, 困る, 無理だ). Phê bình nếu tình trạng như vậy thì không chấp nhận được. Văn nói và viết.",
+        "en": "Usage: verb dictionary/ない-form + ようでは + a negative clause (だめだ, 困る, 無理だ). Criticizes that if things are like this it is unacceptable. Spoken and written."
+      },
+      "examples": [
+        {
+          "ja": "この程度で疲れるようでは、山には登れません。",
+          "reading": "このていどでつかれるようでは、やまにはのぼれません。",
+          "translation": {
+            "vi": "Nếu mới mức này mà đã mệt thì không leo núi nổi.",
+            "en": "If you get tired from this little, you cannot climb mountains."
+          }
+        },
+        {
+          "ja": "約束を守らないようでは、信用されません。",
+          "reading": "やくそくをまもらないようでは、しんようされません。",
+          "translation": {
+            "vi": "Nếu cứ không giữ lời hứa thì sẽ không được tin tưởng.",
+            "en": "If you do not keep promises, you will not be trusted."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-015"
+    },
+    {
+      "japanese": "〜からといって",
+      "meaning": {
+        "vi": "Không phải cứ ~ thì ~",
+        "en": "Just because ~ (does not mean ~)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường + からといって + vế sau phủ định (とは限らない, わけではない, てはいけない). Phản bác suy nghĩ \"vì A nên đương nhiên B\". Khác 〜から (lý do đơn thuần).",
+        "en": "Usage: plain form + からといって + a negative clause (とは限らない, わけではない, てはいけない). Rebuts the thinking \"A, therefore naturally B\". Unlike 〜から (a plain reason)."
+      },
+      "examples": [
+        {
+          "ja": "日本人だからといって、敬語が完璧とは限りません。",
+          "reading": "にほんじんだからといって、けいごがかんぺきとはかぎりません。",
+          "translation": {
+            "vi": "Không phải cứ là người Nhật thì kính ngữ sẽ hoàn hảo.",
+            "en": "Just because someone is Japanese does not mean their honorifics are perfect."
+          }
+        },
+        {
+          "ja": "安いからといって、買いすぎてはいけません。",
+          "reading": "やすいからといって、かいすぎてはいけません。",
+          "translation": {
+            "vi": "Không phải cứ rẻ thì được mua quá nhiều.",
+            "en": "Just because it is cheap, you must not buy too much."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-016"
+    },
+    {
+      "japanese": "〜ながらも／〜つつも",
+      "meaning": {
+        "vi": "Dù ~, tuy ~",
+        "en": "Although ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ gốc ます / tính từ / danh từ + ながらも; động từ gốc ます + つつも. Diễn tả hai điều trái ngược cùng tồn tại (わかっていながらも). Là dạng trang trọng/văn viết của 〜けれども. Chủ ngữ hai vế giống nhau.",
+        "en": "Usage: verb ます-stem / adjective / noun + ながらも; verb ます-stem + つつも. Expresses two opposing things coexisting (わかっていながらも). A formal/written counterpart of 〜けれども. Both clauses share the subject."
+      },
+      "examples": [
+        {
+          "ja": "わかっていながらも、つい食べてしまいます。",
+          "reading": "わかっていながらも、ついたべてしまいます。",
+          "translation": {
+            "vi": "Dù biết rõ nhưng tôi vẫn lỡ ăn.",
+            "en": "Although I know better, I end up eating it."
+          }
+        },
+        {
+          "ja": "悪いと知りつつも、うそをつきました。",
+          "reading": "わるいとしりつつも、うそをつきました。",
+          "translation": {
+            "vi": "Dù biết là xấu, tôi vẫn đã nói dối.",
+            "en": "Though I knew it was wrong, I lied."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-017"
+    },
+    {
+      "japanese": "〜くせに",
+      "meaning": {
+        "vi": "Vậy mà ~ (chê trách)",
+        "en": "Even though ~ (reproach)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: な; danh từ: の) + くせに. Chê trách, khinh thường: A thế mà lại B (trái với điều đáng ra phải thế). Mang sắc thái tiêu cực mạnh, không dùng cho người trên.",
+        "en": "Usage: plain form (な: な; noun: の) + くせに. Reproach or scorn: A, yet B (contrary to what one would expect). A strongly negative nuance, not used toward superiors."
+      },
+      "examples": [
+        {
+          "ja": "知っているくせに、教えてくれません。",
+          "reading": "しっているくせに、おしえてくれません。",
+          "translation": {
+            "vi": "Biết rõ vậy mà không chịu chỉ cho tôi.",
+            "en": "He knows it, yet he will not tell me."
+          }
+        },
+        {
+          "ja": "子どものくせに、大人のような口をききます。",
+          "reading": "こどものくせに、おとなのようなくちをききます。",
+          "translation": {
+            "vi": "Mới là trẻ con mà nói năng như người lớn.",
+            "en": "He is only a child, yet talks like an adult."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-018"
+    },
+    {
+      "japanese": "〜にもかかわらず",
+      "meaning": {
+        "vi": "Bất chấp ~",
+        "en": "In spite of ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: thể thường (な: である/な; danh từ: である/の) / danh từ + にもかかわらず. Nhượng bộ trang trọng: bất chấp điều kiện đó, kết quả vẫn đi ngược lại. Văn viết, thông báo, tin tức.",
+        "en": "Usage: plain form (な: である/な; noun: である/の) / noun + にもかかわらず. A formal concession: despite that condition, the result runs contrary. Written, notices and news."
+      },
+      "examples": [
+        {
+          "ja": "雨にもかかわらず、大勢の人が集まりました。",
+          "reading": "あめにもかかわらず、おおぜいのひとがあつまりました。",
+          "translation": {
+            "vi": "Bất chấp trời mưa, rất đông người đã tụ họp.",
+            "en": "Despite the rain, a large crowd gathered."
+          }
+        },
+        {
+          "ja": "努力したにもかかわらず、結果は不合格でした。",
+          "reading": "どりょくしたにもかかわらず、けっかはふごうかくでした。",
+          "translation": {
+            "vi": "Dù đã nỗ lực nhưng kết quả vẫn là trượt.",
+            "en": "Despite my effort, the result was a failure."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-019"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜ようでは",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの程度で疲れる（　）、山には登れません。",
+        "en": "Choose the correct option for the blank:\nこの程度で疲れる（　）、山には登れません。"
+      },
+      "payload": {
+        "choices": [
+          "ようでは",
+          "ようなら",
+          "ように",
+          "ようで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phê bình nếu tình trạng như vậy: 「疲れるようでは」.",
+        "en": "Correct! Criticizing if things are like that: 「疲れるようでは」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phê bình nếu tình trạng như vậy: 「疲れるようでは」.",
+        "en": "Not quite. Criticizing if things are like that: 「疲れるようでは」."
+      }
+    },
+    {
+      "item": "〜ようでは",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n約束を守らない___、信用されません。",
+        "en": "Choose the correct option for the blank:\n約束を守らない___、信用されません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ようでは"
+        ],
+        "hint": "〜ようでは"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nếu cứ không giữ lời hứa: 「守らないようでは」.",
+        "en": "Correct! If you keep failing to keep promises: 「守らないようでは」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nếu cứ không giữ lời hứa: 「守らないようでは」.",
+        "en": "Not quite. If you keep failing to keep promises: 「守らないようでは」."
+      }
+    },
+    {
+      "item": "〜からといって",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n安い（　）、買いすぎてはいけません。",
+        "en": "Choose the correct option for the blank:\n安い（　）、買いすぎてはいけません。"
+      },
+      "payload": {
+        "choices": [
+          "からには",
+          "ばかりに",
+          "ようでは",
+          "からといって"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Phản bác \"rẻ thì cứ mua\": 「からといって」.",
+        "en": "Correct! Rebutting \"cheap so just buy\": 「からといって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Phản bác \"rẻ thì cứ mua\": 「からといって」.",
+        "en": "Not quite. Rebutting \"cheap so just buy\": 「からといって」."
+      }
+    },
+    {
+      "item": "〜からといって",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n日本人だ（　）、敬語が完璧とは限りません。",
+        "en": "Choose the pattern that best fits the context:\n日本人だ（　）、敬語が完璧とは限りません。"
+      },
+      "payload": {
+        "choices": [
+          "から",
+          "ので",
+          "からといって",
+          "ために"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Vế sau phủ định/phản bác (とは限りません) nên dùng 「からといって」.",
+        "en": "Correct! The second clause is a negation/rebuttal (とは限りません), so 「からといって」 is used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Vế sau phủ định/phản bác (とは限りません) nên dùng 「からといって」.",
+        "en": "Not quite. The second clause is a negation/rebuttal (とは限りません), so 「からといって」 is used."
+      }
+    },
+    {
+      "item": "〜からといって",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n有名な店だ___、おいしいとは限りません。",
+        "en": "Choose the correct option for the blank:\n有名な店だ___、おいしいとは限りません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "からといって"
+        ],
+        "hint": "〜からといって"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không phải cứ nổi tiếng là ngon: 「だからといって」.",
+        "en": "Correct! Not everything famous is tasty: 「だからといって」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không phải cứ nổi tiếng là ngon: 「だからといって」.",
+        "en": "Not quite. Not everything famous is tasty: 「だからといって」."
+      }
+    },
+    {
+      "item": "〜ながらも／〜つつも",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nわかっている（　）も、つい食べてしまいます。",
+        "en": "Choose the correct option for the blank:\nわかっている（　）も、つい食べてしまいます。"
+      },
+      "payload": {
+        "choices": [
+          "つつ",
+          "ながら",
+          "たり",
+          "ため"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù biết nhưng: 「わかっていながらも」.",
+        "en": "Correct! Although I know: 「わかっていながらも」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù biết nhưng: 「わかっていながらも」.",
+        "en": "Not quite. Although I know: 「わかっていながらも」."
+      }
+    },
+    {
+      "item": "〜ながらも／〜つつも",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n悪いと知り___も、うそをつきました。",
+        "en": "Choose the correct option for the blank:\n悪いと知り___も、うそをつきました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "つつ"
+        ],
+        "hint": "〜つつ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù biết là xấu: 「知りつつも」.",
+        "en": "Correct! Though knowing it is wrong: 「知りつつも」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù biết là xấu: 「知りつつも」.",
+        "en": "Not quite. Though knowing it is wrong: 「知りつつも」."
+      }
+    },
+    {
+      "item": "〜くせに",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n知っている（　）、教えてくれません。",
+        "en": "Choose the correct option for the blank:\n知っている（　）、教えてくれません。"
+      },
+      "payload": {
+        "choices": [
+          "くせに",
+          "ために",
+          "ながらも",
+          "ようでは"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Chê trách: biết mà không chịu nói: 「くせに」.",
+        "en": "Correct! Reproach: knows yet will not tell: 「くせに」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Chê trách: biết mà không chịu nói: 「くせに」.",
+        "en": "Not quite. Reproach: knows yet will not tell: 「くせに」."
+      }
+    },
+    {
+      "item": "〜くせに",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n子どもの（　）、大人のような口をききます。",
+        "en": "Choose the pattern that best fits the context:\n子どもの（　）、大人のような口をききます。"
+      },
+      "payload": {
+        "choices": [
+          "ために",
+          "ばかりに",
+          "ながらも",
+          "くせに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「の」 + 「くせに」: chê trách kiểu \"mới là trẻ con mà…\".",
+        "en": "Correct! Noun + 「の」 + 「くせに」: reproach like \"only a child, yet…\"."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「の」 + 「くせに」: chê trách kiểu \"mới là trẻ con mà…\".",
+        "en": "Not quite. Noun + 「の」 + 「くせに」: reproach like \"only a child, yet…\"."
+      }
+    },
+    {
+      "item": "〜にもかかわらず",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨（　）、大勢の人が集まりました。",
+        "en": "Choose the correct option for the blank:\n雨（　）、大勢の人が集まりました。"
+      },
+      "payload": {
+        "choices": [
+          "のおかげで",
+          "のせいで",
+          "にもかかわらず",
+          "によって"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bất chấp trời mưa: 「にもかかわらず」.",
+        "en": "Correct! Despite the rain: 「にもかかわらず」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Bất chấp trời mưa: 「にもかかわらず」.",
+        "en": "Not quite. Despite the rain: 「にもかかわらず」."
+      }
+    },
+    {
+      "item": "〜にもかかわらず",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n努力した___、結果は不合格でした。",
+        "en": "Choose the correct option for the blank:\n努力した___、結果は不合格でした。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "にもかかわらず"
+        ],
+        "hint": "〜にもかかわらず"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Dù đã nỗ lực: 「努力したにもかかわらず」.",
+        "en": "Correct! Despite having made an effort: 「努力したにもかかわらず」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Dù đã nỗ lực: 「努力したにもかかわらず」.",
+        "en": "Not quite. Despite having made an effort: 「努力したにもかかわらず」."
+      }
+    },
+    {
+      "item": "〜にもかかわらず",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "休日にもかかわらず、多くの人が働きましょう。",
+          "休日にもかかわらず、多くの人が働いています。",
+          "休日にもかかわらず、多くの人が働いてください。",
+          "休日にもかかわらず、多くの人が働きたい。"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Sau 「にもかかわらず」 là sự thật trái dự đoán, không dùng rủ rê/nhờ vả/ý chí.",
+        "en": "Correct! After 「にもかかわらず」 comes a fact contrary to expectation, not an invitation, request or volition."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Sau 「にもかかわらず」 là sự thật trái dự đoán, không dùng rủ rê/nhờ vả/ý chí.",
+        "en": "Not quite. After 「にもかかわらず」 comes a fact contrary to expectation, not an invitation, request or volition."
+      }
+    },
+    {
+      "item": "〜にもかかわらず",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng rồi chọn mảnh ở ô ★ (ô thứ ba):\n雨に　＿　＿　★　＿　。\n（もかかわらず／大勢の／人が／集まりました）",
+        "en": "Arrange the pieces into a correct sentence and choose the piece in the ★ slot (the third slot):\n雨に　＿　＿　★　＿　。\n（もかかわらず／大勢の／人が／集まりました）"
+      },
+      "payload": {
+        "choices": [
+          "人が",
+          "もかかわらず",
+          "大勢の",
+          "集まりました"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「雨にもかかわらず大勢の人が集まりました。」; ô ★ (thứ ba) là 「人が」.",
+        "en": "Correct! The correct sentence is 「雨にもかかわらず大勢の人が集まりました。」; the ★ (third) slot is 「人が」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「雨にもかかわらず大勢の人が集まりました。」; ô ★ (thứ ba) là 「人が」.",
+        "en": "Not quite. The correct sentence is 「雨にもかかわらず大勢の人が集まりました。」; the ★ (third) slot is 「人が」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜ようでは",
+            {
+              "vi": "Nếu cứ như ~ thì (không ổn)",
+              "en": "If (you are) like that, (it won't do)"
+            }
+          ],
+          [
+            "〜からといって",
+            {
+              "vi": "Không phải cứ ~ thì ~",
+              "en": "Just because ~ (does not mean ~)"
+            }
+          ],
+          [
+            "〜ながらも／〜つつも",
+            {
+              "vi": "Dù ~, tuy ~",
+              "en": "Although ~"
+            }
+          ],
+          [
+            "〜くせに",
+            {
+              "vi": "Vậy mà ~ (chê trách)",
+              "en": "Even though ~ (reproach)"
+            }
+          ],
+          [
+            "〜にもかかわらず",
+            {
+              "vi": "Bất chấp ~",
+              "en": "In spite of ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

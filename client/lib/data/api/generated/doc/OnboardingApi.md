@@ -11,6 +11,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**completeOnboarding**](OnboardingApi.md#completeonboarding) | **POST** /onboarding/complete | Hoàn tất onboarding – sinh lộ trình và bài học hôm nay (FR-008, FR-010)
 [**getOnboarding**](OnboardingApi.md#getonboarding) | **GET** /onboarding | Trạng thái và bản nháp onboarding (tiếp tục khi bỏ dở)
+[**getStudyDefaults**](OnboardingApi.md#getstudydefaults) | **GET** /study-defaults | Bảng gợi ý kỹ năng mặc định theo quỹ thời gian mỗi ngày (spec 007, FR-021…023)
 [**listPlacementQuestions**](OnboardingApi.md#listplacementquestions) | **GET** /placement/questions | Bộ câu hỏi kiểm tra trình độ (công khai, KHÔNG kèm đáp án)
 [**saveOnboarding**](OnboardingApi.md#saveonboarding) | **PUT** /onboarding | Lưu nháp các bước đã nhập (FR-005)
 [**submitPlacement**](OnboardingApi.md#submitplacement) | **POST** /placement/submit | Nộp bài kiểm tra trình độ (cũng dùng để mang kết quả dùng thử sang – FR-039; làm lại – FR-009)
@@ -84,6 +85,45 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**OnboardingState**](OnboardingState.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **getStudyDefaults**
+> StudyDefaults getStudyDefaults()
+
+Bảng gợi ý kỹ năng mặc định theo quỹ thời gian mỗi ngày (spec 007, FR-021…023)
+
+Chỉ đọc, giống nhau cho mọi người học, có thể cache theo phiên đăng nhập. Đây là GỢI Ý: người học luôn đổi/bỏ được từng lựa chọn; máy chủ không tự áp dụng vào hồ sơ.
+
+### Example
+```dart
+import 'package:japanese_api/api.dart';
+
+final api = JapaneseApi().getOnboardingApi();
+
+try {
+    final response = api.getStudyDefaults();
+    print(response);
+} on DioException catch (e) {
+    print('Exception when calling OnboardingApi->getStudyDefaults: $e\n');
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**StudyDefaults**](StudyDefaults.md)
 
 ### Authorization
 

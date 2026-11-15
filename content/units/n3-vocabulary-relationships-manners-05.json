@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-relationships-manners",
+  "title": {
+    "vi": "Bạn thân và nghĩa tình",
+    "en": "Close friends and obligations"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "親友",
+      "reading": "しんゆう",
+      "meaning": {
+        "vi": "Bạn thân",
+        "en": "Best friend"
+      },
+      "examples": [
+        {
+          "ja": "彼は、小学校からの親友です。",
+          "reading": "かれは、しょうがっこうからのしんゆうです。",
+          "translation": {
+            "vi": "Anh ấy là bạn thân từ hồi tiểu học.",
+            "en": "He is my best friend since elementary school."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "知人",
+      "reading": "ちじん",
+      "meaning": {
+        "vi": "Người quen",
+        "en": "Acquaintance"
+      },
+      "examples": [
+        {
+          "ja": "知人の紹介で、この仕事を見つけました。",
+          "reading": "ちじんのしょうかいで、このしごとをみつけました。",
+          "translation": {
+            "vi": "Tôi tìm được việc này nhờ người quen giới thiệu.",
+            "en": "I found this job through an acquaintance's introduction."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "義理",
+      "reading": "ぎり",
+      "meaning": {
+        "vi": "Nghĩa lý; bổn phận (xã hội)",
+        "en": "Obligation; duty (social)"
+      },
+      "examples": [
+        {
+          "ja": "お世話になった人には、義理を果たしたいです。",
+          "reading": "おせわになったひとには、ぎりをはたしたいです。",
+          "translation": {
+            "vi": "Tôi muốn làm tròn bổn phận với người đã giúp đỡ mình.",
+            "en": "I want to repay my social obligation to those who helped me."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "人情",
+      "reading": "にんじょう",
+      "meaning": {
+        "vi": "Tình người",
+        "en": "Human feeling; kindness"
+      },
+      "examples": [
+        {
+          "ja": "この町は、人情があって温かいです。",
+          "reading": "このまちは、にんじょうがあってあたたかいです。",
+          "translation": {
+            "vi": "Thị trấn này giàu tình người và ấm áp.",
+            "en": "This town is warm and full of human kindness."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "恩",
+      "reading": "おん",
+      "meaning": {
+        "vi": "Ơn; ân huệ",
+        "en": "Favor; debt of gratitude"
+      },
+      "examples": [
+        {
+          "ja": "先生の恩は、一生忘れません。",
+          "reading": "せんせいのおんは、いっしょうわすれません。",
+          "translation": {
+            "vi": "Ơn của thầy, tôi sẽ không quên suốt đời.",
+            "en": "I will never forget my teacher's kindness."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "信用",
+      "reading": "しんよう",
+      "meaning": {
+        "vi": "Sự tin dùng; uy tín",
+        "en": "Trust; credit"
+      },
+      "examples": [
+        {
+          "ja": "この会社は、長年の信用があるので安心です。",
+          "reading": "このかいしゃは、ながねんのしんようがあるのであんしんです。",
+          "translation": {
+            "vi": "Công ty này có uy tín lâu năm nên yên tâm.",
+            "en": "This company has built trust over many years, so I feel safe."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "親友",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、小学校からの（　）です。 — Nghĩa của câu: “Anh ấy là bạn thân từ hồi tiểu học.”",
+        "en": "Choose the word that fits the blank: 彼は、小学校からの（　）です。 — Meaning of the sentence: “He is my best friend since elementary school.”"
+      },
+      "payload": {
+        "choices": [
+          "親友",
+          "知人",
+          "義理",
+          "人情"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親友」(Bạn thân) hợp nghĩa câu này: “Anh ấy là bạn thân từ hồi tiểu học.”",
+        "en": "Correct! 「親友」(Best friend) fits this sentence: “He is my best friend since elementary school.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy là bạn thân từ hồi tiểu học.”, nên cần 「親友」(Bạn thân); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is my best friend since elementary school.”, so it needs 「親友」(Best friend); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "知人",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の紹介で、この仕事を見つけました。 — Nghĩa của câu: “Tôi tìm được việc này nhờ người quen giới thiệu.”",
+        "en": "Choose the word that fits the blank: （　）の紹介で、この仕事を見つけました。 — Meaning of the sentence: “I found this job through an acquaintance's introduction.”"
+      },
+      "payload": {
+        "choices": [
+          "恩",
+          "知人",
+          "親友",
+          "義理"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「知人」(Người quen) hợp nghĩa câu này: “Tôi tìm được việc này nhờ người quen giới thiệu.”",
+        "en": "Correct! 「知人」(Acquaintance) fits this sentence: “I found this job through an acquaintance's introduction.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi tìm được việc này nhờ người quen giới thiệu.”, nên cần 「知人」(Người quen); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I found this job through an acquaintance's introduction.”, so it needs 「知人」(Acquaintance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "義理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お世話になった人には、（　）を果たしたいです。 — Nghĩa của câu: “Tôi muốn làm tròn bổn phận với người đã giúp đỡ mình.”",
+        "en": "Choose the word that fits the blank: お世話になった人には、（　）を果たしたいです。 — Meaning of the sentence: “I want to repay my social obligation to those who helped me.”"
+      },
+      "payload": {
+        "choices": [
+          "知人",
+          "親友",
+          "義理",
+          "信用"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「義理」(Nghĩa lý; bổn phận (xã hội)) hợp nghĩa câu này: “Tôi muốn làm tròn bổn phận với người đã giúp đỡ mình.”",
+        "en": "Correct! 「義理」(Obligation; duty (social)) fits this sentence: “I want to repay my social obligation to those who helped me.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi muốn làm tròn bổn phận với người đã giúp đỡ mình.”, nên cần 「義理」(Nghĩa lý; bổn phận (xã hội)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I want to repay my social obligation to those who helped me.”, so it needs 「義理」(Obligation; duty (social)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "人情",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町は、（　）があって温かいです。 — Nghĩa của câu: “Thị trấn này giàu tình người và ấm áp.”",
+        "en": "Choose the word that fits the blank: この町は、（　）があって温かいです。 — Meaning of the sentence: “This town is warm and full of human kindness.”"
+      },
+      "payload": {
+        "choices": [
+          "信用",
+          "親友",
+          "恩",
+          "人情"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「人情」(Tình người) hợp nghĩa câu này: “Thị trấn này giàu tình người và ấm áp.”",
+        "en": "Correct! 「人情」(Human feeling; kindness) fits this sentence: “This town is warm and full of human kindness.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn này giàu tình người và ấm áp.”, nên cần 「人情」(Tình người); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This town is warm and full of human kindness.”, so it needs 「人情」(Human feeling; kindness); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "恩",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生の（　）は、一生忘れません。 — Nghĩa của câu: “Ơn của thầy, tôi sẽ không quên suốt đời.”",
+        "en": "Choose the word that fits the blank: 先生の（　）は、一生忘れません。 — Meaning of the sentence: “I will never forget my teacher's kindness.”"
+      },
+      "payload": {
+        "choices": [
+          "恩",
+          "人情",
+          "親友",
+          "信用"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「恩」(Ơn; ân huệ) hợp nghĩa câu này: “Ơn của thầy, tôi sẽ không quên suốt đời.”",
+        "en": "Correct! 「恩」(Favor; debt of gratitude) fits this sentence: “I will never forget my teacher's kindness.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ơn của thầy, tôi sẽ không quên suốt đời.”, nên cần 「恩」(Ơn; ân huệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will never forget my teacher's kindness.”, so it needs 「恩」(Favor; debt of gratitude); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "信用",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社は、長年の（　）があるので安心です。 — Nghĩa của câu: “Công ty này có uy tín lâu năm nên yên tâm.”",
+        "en": "Choose the word that fits the blank: この会社は、長年の（　）があるので安心です。 — Meaning of the sentence: “This company has built trust over many years, so I feel safe.”"
+      },
+      "payload": {
+        "choices": [
+          "知人",
+          "信用",
+          "親友",
+          "恩"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「信用」(Sự tin dùng; uy tín) hợp nghĩa câu này: “Công ty này có uy tín lâu năm nên yên tâm.”",
+        "en": "Correct! 「信用」(Trust; credit) fits this sentence: “This company has built trust over many years, so I feel safe.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty này có uy tín lâu năm nên yên tâm.”, nên cần 「信用」(Sự tin dùng; uy tín); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company has built trust over many years, so I feel safe.”, so it needs 「信用」(Trust; credit); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "親友",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、小学校からの「親友」です。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、小学校からの「親友」です。"
+      },
+      "payload": {
+        "choices": [
+          "ちじん",
+          "しんゆう",
+          "ぎり",
+          "おん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親友」 đọc là 「しんゆう」, nghĩa là Bạn thân.",
+        "en": "Correct! 「親友」 is read 「しんゆう」 and means Best friend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「親友」 đọc là 「しんゆう」 (Bạn thân); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「親友」 is read 「しんゆう」 (Best friend); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "人情",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この町は、「人情」があって温かいです。",
+        "en": "Choose the correct reading of the word in 「」: この町は、「人情」があって温かいです。"
+      },
+      "payload": {
+        "choices": [
+          "ちじん",
+          "しんゆう",
+          "にんじょう",
+          "ぎり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「人情」 đọc là 「にんじょう」, nghĩa là Tình người.",
+        "en": "Correct! 「人情」 is read 「にんじょう」 and means Human feeling; kindness."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「人情」 đọc là 「にんじょう」 (Tình người); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「人情」 is read 「にんじょう」 (Human feeling; kindness); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "義理",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: お世話になった人には、「ぎり」を果たしたいです。",
+        "en": "Choose the correct way to write the word in 「」: お世話になった人には、「ぎり」を果たしたいです。"
+      },
+      "payload": {
+        "choices": [
+          "恩",
+          "親友",
+          "義理",
+          "信用"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぎり」 viết là 「義理」, nghĩa là Nghĩa lý; bổn phận (xã hội).",
+        "en": "Correct! 「ぎり」 is written 「義理」 and means Obligation; duty (social)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ぎり」 viết là 「義理」 (Nghĩa lý; bổn phận (xã hội)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ぎり」 is written 「義理」 (Obligation; duty (social)); the other words are read differently."
+      }
+    }
+  ]
+}

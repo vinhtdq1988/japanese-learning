@@ -186,6 +186,14 @@
   "@authPasswordLabel": {
     "description": "Nhãn ô nhập mật khẩu"
   },
+  "authShowPassword": "Hiện mật khẩu",
+  "@authShowPassword": {
+    "description": "Nhãn/chú thích nút bật xem mật khẩu đang nhập (đang che)"
+  },
+  "authHidePassword": "Ẩn mật khẩu",
+  "@authHidePassword": {
+    "description": "Nhãn/chú thích nút che lại mật khẩu đang nhập (đang hiện)"
+  },
   "authNewPasswordLabel": "Mật khẩu mới",
   "@authNewPasswordLabel": {
     "description": "Nhãn ô nhập mật khẩu mới"
@@ -459,9 +467,9 @@
   "@onboardingSkillListening": {
     "description": "Kỹ năng nghe (bị khóa)"
   },
-  "onboardingSkillReading": "Đọc",
+  "onboardingSkillReading": "Luyện đọc",
   "@onboardingSkillReading": {
-    "description": "Kỹ năng đọc (bị khóa)"
+    "description": "Kỹ năng luyện đọc (chỉ từ 30 phút mỗi ngày)"
   },
   "onboardingSkillKanji": "Kanji",
   "@onboardingSkillKanji": {
@@ -2339,6 +2347,14 @@
   "progressWeakSkillKanji": "Kanji",
   "@progressWeakSkillKanji": {
     "description": "Nhãn kỹ năng Kanji của một mảng yếu"
+  },
+  "progressWeakSkillReading": "Đọc",
+  "@progressWeakSkillReading": {
+    "description": "Nhãn kỹ năng luyện đọc của một mảng yếu"
+  },
+  "progressWeakSkillWriting": "Viết",
+  "@progressWeakSkillWriting": {
+    "description": "Nhãn kỹ năng luyện viết của một mảng yếu"
   },
   "adminKindKanji": "Kanji",
   "@adminKindKanji": {
@@ -4536,5 +4552,117 @@
         "example": "3"
       }
     }
+  },
+  "onboardingSuggestionLabel": "Gợi ý theo thời gian bạn có",
+  "@onboardingSuggestionLabel": {
+    "description": "Nhãn cạnh bộ kỹ năng được điền sẵn theo quỹ thời gian mỗi ngày (spec 007, FR-023)"
+  },
+  "suggestionInviteTitle": "Gợi ý mới cho {minutes} phút",
+  "@suggestionInviteTitle": {
+    "description": "Tiêu đề lời mời khi người học đã chỉnh kỹ năng riêng rồi đổi quỹ thời gian (spec 007, FR-024)",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  "suggestionInviteBody": "Bộ kỹ năng gợi ý: {skills}",
+  "@suggestionInviteBody": {
+    "description": "Nội dung lời mời: danh sách kỹ năng gợi ý, ngăn cách bằng dấu phẩy",
+    "placeholders": {
+      "skills": {
+        "type": "String",
+        "example": "Từ vựng, Ngữ pháp"
+      }
+    }
+  },
+  "suggestionApply": "Áp dụng",
+  "@suggestionApply": {
+    "description": "Nút áp dụng bộ kỹ năng gợi ý mới"
+  },
+  "suggestionKeep": "Giữ nguyên",
+  "@suggestionKeep": {
+    "description": "Nút giữ nguyên lựa chọn kỹ năng hiện tại, bỏ qua gợi ý"
+  },
+  "onboardingSkillWriting": "Luyện viết",
+  "@onboardingSkillWriting": {
+    "description": "Kỹ năng luyện viết (gõ bằng IME, chỉ từ 30 phút mỗi ngày)"
+  },
+  "practiceLockedReason": "Dành cho người học từ {minutes} phút mỗi ngày",
+  "@practiceLockedReason": {
+    "description": "Lý do luyện đọc/viết bị khóa khi quỹ thời gian chưa đủ (spec 007, FR-005)",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  "practiceLockedHint": "Tăng thời gian học mỗi ngày trong Hồ sơ để dùng luyện đọc/viết",
+  "@practiceLockedHint": {
+    "description": "Hướng dẫn mở khóa luyện đọc/viết bằng cách tăng quỹ thời gian"
+  },
+  "practiceLockedError": "Luyện đọc/viết chỉ dành cho người học từ 30 phút mỗi ngày",
+  "@practiceLockedError": {
+    "description": "Thông báo khi máy chủ từ chối luyện đọc/viết (PRACTICE_LOCKED)"
+  },
+  "lessonPassageTitle": "Đoạn văn",
+  "@lessonPassageTitle": {
+    "description": "Tiêu đề bảng đoạn văn ghim khi làm bài luyện đọc"
+  },
+  "lessonPassageCollapse": "Thu gọn",
+  "@lessonPassageCollapse": {
+    "description": "Nút thu gọn bảng đoạn văn"
+  },
+  "lessonPassageExpand": "Mở rộng",
+  "@lessonPassageExpand": {
+    "description": "Nút mở rộng bảng đoạn văn"
+  },
+  "todaySkillReading": "Luyện đọc",
+  "@todaySkillReading": {
+    "description": "Nhãn loại bài luyện đọc của mục kế hoạch ở màn Hôm nay"
+  },
+  "todaySkillWriting": "Luyện viết",
+  "@todaySkillWriting": {
+    "description": "Nhãn loại bài luyện viết của mục kế hoạch ở màn Hôm nay"
+  },
+  "competencyGood": "Tốt",
+  "@competencyGood": {
+    "description": "Nhãn mức năng lực tốt (xanh lục), đi kèm biểu tượng (spec 007, FR-019)"
+  },
+  "competencyNeedsImprovement": "Cần cải thiện",
+  "@competencyNeedsImprovement": {
+    "description": "Nhãn mức năng lực cần cải thiện (vàng nhạt), đi kèm biểu tượng"
+  },
+  "competencyInsufficient": "Chưa đủ dữ liệu",
+  "@competencyInsufficient": {
+    "description": "Nhãn mức chưa đủ dữ liệu để đánh giá (trung tính), đi kèm biểu tượng"
+  },
+  "competencyLegendTitle": "Mức năng lực",
+  "@competencyLegendTitle": {
+    "description": "Tiêu đề chú giải ba mức năng lực ở Hôm nay, Lộ trình, Tiến độ (FR-020)"
+  },
+  "competencySemantics": "{skill}: {level}",
+  "@competencySemantics": {
+    "description": "Nhãn trợ năng của chip năng lực: đầu mục và mức bằng lời",
+    "placeholders": {
+      "skill": {
+        "type": "String",
+        "example": "Từ vựng"
+      },
+      "level": {
+        "type": "String",
+        "example": "Tốt"
+      }
+    }
+  },
+  "progressCompetencyTitle": "Năng lực theo kỹ năng",
+  "@progressCompetencyTitle": {
+    "description": "Tiêu đề dải năng lực theo kỹ năng ở màn Tiến độ"
+  },
+  "progressCompetencyTopics": "Năng lực theo chủ đề",
+  "@progressCompetencyTopics": {
+    "description": "Tiêu đề danh sách năng lực theo chủ đề ở màn Tiến độ"
   }
 }

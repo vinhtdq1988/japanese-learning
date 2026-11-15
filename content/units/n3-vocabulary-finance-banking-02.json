@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-finance-banking",
+  "title": {
+    "vi": "Lãi suất, nợ và thanh toán",
+    "en": "Interest, debt and payments"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 640,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "利子",
+      "reading": "りし",
+      "meaning": {
+        "vi": "Tiền lãi",
+        "en": "Interest (on money)"
+      },
+      "examples": [
+        {
+          "ja": "借りたお金には、利子がつきます。",
+          "reading": "かりたおかねには、りしがつきます。",
+          "translation": {
+            "vi": "Tiền vay thì có phát sinh tiền lãi.",
+            "en": "Interest is added to money you borrow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "金利",
+      "reading": "きんり",
+      "meaning": {
+        "vi": "Lãi suất",
+        "en": "Interest rate"
+      },
+      "examples": [
+        {
+          "ja": "今は、銀行の金利がとても低いです。",
+          "reading": "いまは、ぎんこうのきんりがとてもひくいです。",
+          "translation": {
+            "vi": "Hiện nay lãi suất ngân hàng rất thấp.",
+            "en": "Bank interest rates are very low now."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "借金",
+      "reading": "しゃっきん",
+      "meaning": {
+        "vi": "Khoản nợ; tiền vay nợ",
+        "en": "Debt"
+      },
+      "examples": [
+        {
+          "ja": "大きな借金があって、毎月返すのが大変です。",
+          "reading": "おおきなしゃっきんがあって、まいつきかえすのがたいへんです。",
+          "translation": {
+            "vi": "Tôi có khoản nợ lớn nên mỗi tháng trả rất vất vả.",
+            "en": "I have a large debt, and paying it back every month is hard."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "融資",
+      "reading": "ゆうし",
+      "meaning": {
+        "vi": "Cho vay vốn; khoản vay (doanh nghiệp)",
+        "en": "Loan; financing"
+      },
+      "examples": [
+        {
+          "ja": "銀行から、事業のための融資を受けました。",
+          "reading": "ぎんこうから、じぎょうのためのゆうしをうけました。",
+          "translation": {
+            "vi": "Tôi đã nhận khoản vay vốn từ ngân hàng cho việc kinh doanh.",
+            "en": "I received financing from the bank for my business."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ローン",
+      "reading": "ローン",
+      "meaning": {
+        "vi": "Khoản vay trả góp",
+        "en": "Loan; mortgage"
+      },
+      "examples": [
+        {
+          "ja": "家を買うために、三十年のローンを組みました。",
+          "reading": "いえをかうために、さんじゅうねんのローンをくみました。",
+          "translation": {
+            "vi": "Tôi vay trả góp ba mươi năm để mua nhà.",
+            "en": "I took out a thirty-year loan to buy a house."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "返済",
+      "reading": "へんさい",
+      "meaning": {
+        "vi": "Hoàn trả (nợ)",
+        "en": "Repayment"
+      },
+      "examples": [
+        {
+          "ja": "ローンの返済は、来月から始まります。",
+          "reading": "ローンのへんさいは、らいげつからはじまります。",
+          "translation": {
+            "vi": "Việc trả nợ khoản vay sẽ bắt đầu từ tháng sau.",
+            "en": "Repayment of the loan starts next month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "負債",
+      "reading": "ふさい",
+      "meaning": {
+        "vi": "Nợ phải trả; công nợ",
+        "en": "Liabilities; debt"
+      },
+      "examples": [
+        {
+          "ja": "会社は、多額の負債をかかえています。",
+          "reading": "かいしゃは、たがくのふさいをかかえています。",
+          "translation": {
+            "vi": "Công ty đang gánh một khoản nợ phải trả rất lớn.",
+            "en": "The company is carrying a large amount of debt."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "分割",
+      "reading": "ぶんかつ",
+      "meaning": {
+        "vi": "Chia nhỏ; trả góp",
+        "en": "Division; installments"
+      },
+      "examples": [
+        {
+          "ja": "高い買い物は、分割で払うこともできます。",
+          "reading": "たかいかいものは、ぶんかつではらうこともできます。",
+          "translation": {
+            "vi": "Mua sắm đắt tiền cũng có thể thanh toán trả góp.",
+            "en": "Expensive purchases can also be paid in installments."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一括",
+      "reading": "いっかつ",
+      "meaning": {
+        "vi": "Gộp một lần; trả một lần",
+        "en": "Lump sum; all at once"
+      },
+      "examples": [
+        {
+          "ja": "代金は、一括で払うほうが安くなります。",
+          "reading": "だいきんは、いっかつではらうほうがやすくなります。",
+          "translation": {
+            "vi": "Trả tiền hàng một lần thì rẻ hơn.",
+            "en": "Paying the price in a lump sum comes out cheaper."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "割り勘",
+      "reading": "わりかん",
+      "meaning": {
+        "vi": "Chia đều hóa đơn",
+        "en": "Splitting the bill"
+      },
+      "examples": [
+        {
+          "ja": "今日の食事は、割り勘にしましょう。",
+          "reading": "きょうのしょくじは、わりかんにしましょう。",
+          "translation": {
+            "vi": "Bữa ăn hôm nay chúng ta chia đều tiền nhé.",
+            "en": "Let's split the bill for today's meal."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "為替",
+      "reading": "かわせ",
+      "meaning": {
+        "vi": "Hối đoái; tỷ giá",
+        "en": "Exchange; money order"
+      },
+      "examples": [
+        {
+          "ja": "為替の変化で、輸入品の値段が変わります。",
+          "reading": "かわせのへんかで、ゆにゅうひんのねだんがかわります。",
+          "translation": {
+            "vi": "Do biến động hối đoái, giá hàng nhập khẩu thay đổi.",
+            "en": "Exchange-rate changes alter the price of imported goods."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "通貨",
+      "reading": "つうか",
+      "meaning": {
+        "vi": "Tiền tệ",
+        "en": "Currency"
+      },
+      "examples": [
+        {
+          "ja": "国によって、使われる通貨が違います。",
+          "reading": "くにによって、つかわれるつうかがちがいます。",
+          "translation": {
+            "vi": "Mỗi nước dùng loại tiền tệ khác nhau.",
+            "en": "The currency used differs from country to country."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "利子",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 借りたお金には、（　）がつきます。 — Nghĩa của câu: “Tiền vay thì có phát sinh tiền lãi.”",
+        "en": "Choose the word that fits the blank: 借りたお金には、（　）がつきます。 — Meaning of the sentence: “Interest is added to money you borrow.”"
+      },
+      "payload": {
+        "choices": [
+          "負債",
+          "通貨",
+          "利子",
+          "金利"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利子」(Tiền lãi) hợp nghĩa câu này: “Tiền vay thì có phát sinh tiền lãi.”",
+        "en": "Correct! 「利子」(Interest (on money)) fits this sentence: “Interest is added to money you borrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiền vay thì có phát sinh tiền lãi.”, nên cần 「利子」(Tiền lãi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Interest is added to money you borrow.”, so it needs 「利子」(Interest (on money)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "金利",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今は、銀行の（　）がとても低いです。 — Nghĩa của câu: “Hiện nay lãi suất ngân hàng rất thấp.”",
+        "en": "Choose the word that fits the blank: 今は、銀行の（　）がとても低いです。 — Meaning of the sentence: “Bank interest rates are very low now.”"
+      },
+      "payload": {
+        "choices": [
+          "為替",
+          "分割",
+          "利子",
+          "金利"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「金利」(Lãi suất) hợp nghĩa câu này: “Hiện nay lãi suất ngân hàng rất thấp.”",
+        "en": "Correct! 「金利」(Interest rate) fits this sentence: “Bank interest rates are very low now.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hiện nay lãi suất ngân hàng rất thấp.”, nên cần 「金利」(Lãi suất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Bank interest rates are very low now.”, so it needs 「金利」(Interest rate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "借金",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きな（　）があって、毎月返すのが大変です。 — Nghĩa của câu: “Tôi có khoản nợ lớn nên mỗi tháng trả rất vất vả.”",
+        "en": "Choose the word that fits the blank: 大きな（　）があって、毎月返すのが大変です。 — Meaning of the sentence: “I have a large debt, and paying it back every month is hard.”"
+      },
+      "payload": {
+        "choices": [
+          "借金",
+          "利子",
+          "割り勘",
+          "金利"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「借金」(Khoản nợ; tiền vay nợ) hợp nghĩa câu này: “Tôi có khoản nợ lớn nên mỗi tháng trả rất vất vả.”",
+        "en": "Correct! 「借金」(Debt) fits this sentence: “I have a large debt, and paying it back every month is hard.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi có khoản nợ lớn nên mỗi tháng trả rất vất vả.”, nên cần 「借金」(Khoản nợ; tiền vay nợ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have a large debt, and paying it back every month is hard.”, so it needs 「借金」(Debt); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "融資",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 銀行から、事業のための（　）を受けました。 — Nghĩa của câu: “Tôi đã nhận khoản vay vốn từ ngân hàng cho việc kinh doanh.”",
+        "en": "Choose the word that fits the blank: 銀行から、事業のための（　）を受けました。 — Meaning of the sentence: “I received financing from the bank for my business.”"
+      },
+      "payload": {
+        "choices": [
+          "利子",
+          "融資",
+          "借金",
+          "金利"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「融資」(Cho vay vốn; khoản vay (doanh nghiệp)) hợp nghĩa câu này: “Tôi đã nhận khoản vay vốn từ ngân hàng cho việc kinh doanh.”",
+        "en": "Correct! 「融資」(Loan; financing) fits this sentence: “I received financing from the bank for my business.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nhận khoản vay vốn từ ngân hàng cho việc kinh doanh.”, nên cần 「融資」(Cho vay vốn; khoản vay (doanh nghiệp)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I received financing from the bank for my business.”, so it needs 「融資」(Loan; financing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ローン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家を買うために、三十年の（　）を組みました。 — Nghĩa của câu: “Tôi vay trả góp ba mươi năm để mua nhà.”",
+        "en": "Choose the word that fits the blank: 家を買うために、三十年の（　）を組みました。 — Meaning of the sentence: “I took out a thirty-year loan to buy a house.”"
+      },
+      "payload": {
+        "choices": [
+          "為替",
+          "分割",
+          "ローン",
+          "返済"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ローン」(Khoản vay trả góp) hợp nghĩa câu này: “Tôi vay trả góp ba mươi năm để mua nhà.”",
+        "en": "Correct! 「ローン」(Loan; mortgage) fits this sentence: “I took out a thirty-year loan to buy a house.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi vay trả góp ba mươi năm để mua nhà.”, nên cần 「ローン」(Khoản vay trả góp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I took out a thirty-year loan to buy a house.”, so it needs 「ローン」(Loan; mortgage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "返済",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ローンの（　）は、来月から始まります。 — Nghĩa của câu: “Việc trả nợ khoản vay sẽ bắt đầu từ tháng sau.”",
+        "en": "Choose the word that fits the blank: ローンの（　）は、来月から始まります。 — Meaning of the sentence: “Repayment of the loan starts next month.”"
+      },
+      "payload": {
+        "choices": [
+          "一括",
+          "借金",
+          "利子",
+          "返済"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「返済」(Hoàn trả (nợ)) hợp nghĩa câu này: “Việc trả nợ khoản vay sẽ bắt đầu từ tháng sau.”",
+        "en": "Correct! 「返済」(Repayment) fits this sentence: “Repayment of the loan starts next month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc trả nợ khoản vay sẽ bắt đầu từ tháng sau.”, nên cần 「返済」(Hoàn trả (nợ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Repayment of the loan starts next month.”, so it needs 「返済」(Repayment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "負債",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社は、多額の（　）をかかえています。 — Nghĩa của câu: “Công ty đang gánh một khoản nợ phải trả rất lớn.”",
+        "en": "Choose the word that fits the blank: 会社は、多額の（　）をかかえています。 — Meaning of the sentence: “The company is carrying a large amount of debt.”"
+      },
+      "payload": {
+        "choices": [
+          "負債",
+          "為替",
+          "分割",
+          "利子"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「負債」(Nợ phải trả; công nợ) hợp nghĩa câu này: “Công ty đang gánh một khoản nợ phải trả rất lớn.”",
+        "en": "Correct! 「負債」(Liabilities; debt) fits this sentence: “The company is carrying a large amount of debt.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty đang gánh một khoản nợ phải trả rất lớn.”, nên cần 「負債」(Nợ phải trả; công nợ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company is carrying a large amount of debt.”, so it needs 「負債」(Liabilities; debt); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "分割",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 高い買い物は、（　）で払うこともできます。 — Nghĩa của câu: “Mua sắm đắt tiền cũng có thể thanh toán trả góp.”",
+        "en": "Choose the word that fits the blank: 高い買い物は、（　）で払うこともできます。 — Meaning of the sentence: “Expensive purchases can also be paid in installments.”"
+      },
+      "payload": {
+        "choices": [
+          "借金",
+          "分割",
+          "利子",
+          "金利"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「分割」(Chia nhỏ; trả góp) hợp nghĩa câu này: “Mua sắm đắt tiền cũng có thể thanh toán trả góp.”",
+        "en": "Correct! 「分割」(Division; installments) fits this sentence: “Expensive purchases can also be paid in installments.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mua sắm đắt tiền cũng có thể thanh toán trả góp.”, nên cần 「分割」(Chia nhỏ; trả góp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Expensive purchases can also be paid in installments.”, so it needs 「分割」(Division; installments); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一括",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 代金は、（　）で払うほうが安くなります。 — Nghĩa của câu: “Trả tiền hàng một lần thì rẻ hơn.”",
+        "en": "Choose the word that fits the blank: 代金は、（　）で払うほうが安くなります。 — Meaning of the sentence: “Paying the price in a lump sum comes out cheaper.”"
+      },
+      "payload": {
+        "choices": [
+          "利子",
+          "割り勘",
+          "一括",
+          "金利"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一括」(Gộp một lần; trả một lần) hợp nghĩa câu này: “Trả tiền hàng một lần thì rẻ hơn.”",
+        "en": "Correct! 「一括」(Lump sum; all at once) fits this sentence: “Paying the price in a lump sum comes out cheaper.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trả tiền hàng một lần thì rẻ hơn.”, nên cần 「一括」(Gộp một lần; trả một lần); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Paying the price in a lump sum comes out cheaper.”, so it needs 「一括」(Lump sum; all at once); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "割り勘",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日の食事は、（　）にしましょう。 — Nghĩa của câu: “Bữa ăn hôm nay chúng ta chia đều tiền nhé.”",
+        "en": "Choose the word that fits the blank: 今日の食事は、（　）にしましょう。 — Meaning of the sentence: “Let's split the bill for today's meal.”"
+      },
+      "payload": {
+        "choices": [
+          "返済",
+          "融資",
+          "利子",
+          "割り勘"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「割り勘」(Chia đều hóa đơn) hợp nghĩa câu này: “Bữa ăn hôm nay chúng ta chia đều tiền nhé.”",
+        "en": "Correct! 「割り勘」(Splitting the bill) fits this sentence: “Let's split the bill for today's meal.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bữa ăn hôm nay chúng ta chia đều tiền nhé.”, nên cần 「割り勘」(Chia đều hóa đơn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's split the bill for today's meal.”, so it needs 「割り勘」(Splitting the bill); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "為替",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の変化で、輸入品の値段が変わります。 — Nghĩa của câu: “Do biến động hối đoái, giá hàng nhập khẩu thay đổi.”",
+        "en": "Choose the word that fits the blank: （　）の変化で、輸入品の値段が変わります。 — Meaning of the sentence: “Exchange-rate changes alter the price of imported goods.”"
+      },
+      "payload": {
+        "choices": [
+          "為替",
+          "分割",
+          "借金",
+          "利子"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「為替」(Hối đoái; tỷ giá) hợp nghĩa câu này: “Do biến động hối đoái, giá hàng nhập khẩu thay đổi.”",
+        "en": "Correct! 「為替」(Exchange; money order) fits this sentence: “Exchange-rate changes alter the price of imported goods.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Do biến động hối đoái, giá hàng nhập khẩu thay đổi.”, nên cần 「為替」(Hối đoái; tỷ giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Exchange-rate changes alter the price of imported goods.”, so it needs 「為替」(Exchange; money order); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "通貨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 国によって、使われる（　）が違います。 — Nghĩa của câu: “Mỗi nước dùng loại tiền tệ khác nhau.”",
+        "en": "Choose the word that fits the blank: 国によって、使われる（　）が違います。 — Meaning of the sentence: “The currency used differs from country to country.”"
+      },
+      "payload": {
+        "choices": [
+          "利子",
+          "通貨",
+          "為替",
+          "金利"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通貨」(Tiền tệ) hợp nghĩa câu này: “Mỗi nước dùng loại tiền tệ khác nhau.”",
+        "en": "Correct! 「通貨」(Currency) fits this sentence: “The currency used differs from country to country.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mỗi nước dùng loại tiền tệ khác nhau.”, nên cần 「通貨」(Tiền tệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The currency used differs from country to country.”, so it needs 「通貨」(Currency); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "利子",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 借りたお金には、「利子」がつきます。",
+        "en": "Choose the correct reading of the word in 「」: 借りたお金には、「利子」がつきます。"
+      },
+      "payload": {
+        "choices": [
+          "ローン",
+          "いっかつ",
+          "ぶんかつ",
+          "りし"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「利子」 đọc là 「りし」, nghĩa là Tiền lãi.",
+        "en": "Correct! 「利子」 is read 「りし」 and means Interest (on money)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「利子」 đọc là 「りし」 (Tiền lãi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「利子」 is read 「りし」 (Interest (on money)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "借金",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 大きな「借金」があって、毎月返すのが大変です。",
+        "en": "Choose the correct reading of the word in 「」: 大きな「借金」があって、毎月返すのが大変です。"
+      },
+      "payload": {
+        "choices": [
+          "しゃっきん",
+          "ぶんかつ",
+          "りし",
+          "わりかん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「借金」 đọc là 「しゃっきん」, nghĩa là Khoản nợ; tiền vay nợ.",
+        "en": "Correct! 「借金」 is read 「しゃっきん」 and means Debt."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「借金」 đọc là 「しゃっきん」 (Khoản nợ; tiền vay nợ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「借金」 is read 「しゃっきん」 (Debt); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "負債",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 会社は、多額の「負債」をかかえています。",
+        "en": "Choose the correct reading of the word in 「」: 会社は、多額の「負債」をかかえています。"
+      },
+      "payload": {
+        "choices": [
+          "ゆうし",
+          "ふさい",
+          "りし",
+          "つうか"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「負債」 đọc là 「ふさい」, nghĩa là Nợ phải trả; công nợ.",
+        "en": "Correct! 「負債」 is read 「ふさい」 and means Liabilities; debt."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「負債」 đọc là 「ふさい」 (Nợ phải trả; công nợ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「負債」 is read 「ふさい」 (Liabilities; debt); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "割り勘",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 今日の食事は、「割り勘」にしましょう。",
+        "en": "Choose the correct reading of the word in 「」: 今日の食事は、「割り勘」にしましょう。"
+      },
+      "payload": {
+        "choices": [
+          "ふさい",
+          "ローン",
+          "わりかん",
+          "りし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「割り勘」 đọc là 「わりかん」, nghĩa là Chia đều hóa đơn.",
+        "en": "Correct! 「割り勘」 is read 「わりかん」 and means Splitting the bill."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「割り勘」 đọc là 「わりかん」 (Chia đều hóa đơn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「割り勘」 is read 「わりかん」 (Splitting the bill); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "融資",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 銀行から、事業のための「ゆうし」を受けました。",
+        "en": "Choose the correct way to write the word in 「」: 銀行から、事業のための「ゆうし」を受けました。"
+      },
+      "payload": {
+        "choices": [
+          "融資",
+          "為替",
+          "一括",
+          "利子"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ゆうし」 viết là 「融資」, nghĩa là Cho vay vốn; khoản vay (doanh nghiệp).",
+        "en": "Correct! 「ゆうし」 is written 「融資」 and means Loan; financing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ゆうし」 viết là 「融資」 (Cho vay vốn; khoản vay (doanh nghiệp)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ゆうし」 is written 「融資」 (Loan; financing); the other words are read differently."
+      }
+    },
+    {
+      "item": "一括",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 代金は、「いっかつ」で払うほうが安くなります。",
+        "en": "Choose the correct way to write the word in 「」: 代金は、「いっかつ」で払うほうが安くなります。"
+      },
+      "payload": {
+        "choices": [
+          "借金",
+          "一括",
+          "割り勘",
+          "利子"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いっかつ」 viết là 「一括」, nghĩa là Gộp một lần; trả một lần.",
+        "en": "Correct! 「いっかつ」 is written 「一括」 and means Lump sum; all at once."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いっかつ」 viết là 「一括」 (Gộp một lần; trả một lần); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いっかつ」 is written 「一括」 (Lump sum; all at once); the other words are read differently."
+      }
+    }
+  ]
+}

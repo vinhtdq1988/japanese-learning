@@ -42,6 +42,16 @@ class _FillBlankExerciseState extends State<FillBlankExercise> {
     if (_canSubmit) widget.onSubmit(_controller.text.trim());
   }
 
+  /// Enter khi IME còn đang soạn chữ (vùng `composing` hợp lệ và không rỗng) chỉ để chốt chữ, KHÔNG được nộp
+  /// bài (spec 007, research §P6). Nút "Kiểm tra" vẫn nộp được bình thường; không có mã riêng nền tảng.
+  /// Dùng `onEditingComplete` thay cho `onSubmitted`: khi không có `onEditingComplete`, Flutter xóa vùng
+  /// `composing` TRƯỚC khi gọi `onSubmitted` nên không còn phân biệt được đang soạn hay đã chốt.
+  void _submitFromKeyboard() {
+    final composing = _controller.value.composing;
+    if (composing.isValid && !composing.isCollapsed) return;
+    _submit();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
@@ -55,7 +65,7 @@ class _FillBlankExerciseState extends State<FillBlankExercise> {
           enabled: widget.enabled && result == null,
           autofocus: true,
           onChanged: (_) => setState(() {}),
-          onSubmitted: (_) => _submit(),
+          onEditingComplete: _submitFromKeyboard,
           decoration: InputDecoration(
             labelText: l10n.lessonFillBlankLabel,
             helperText: widget.hint,

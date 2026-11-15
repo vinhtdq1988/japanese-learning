@@ -1,0 +1,548 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (灯 板 布 湯)",
+    "en": "Daily life and home kanji (灯 板 布 湯)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "灯",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "đèn",
+        "en": "lamp"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "ひ",
+          "あかり"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "電灯",
+          "reading": "でんとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "đèn điện",
+            "en": "electric light"
+          }
+        },
+        {
+          "ja": "灯台",
+          "reading": "とうだい",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "hải đăng",
+            "en": "lighthouse"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "板",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "tấm ván; bảng",
+        "en": "board; plank"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ハン",
+          "バン"
+        ],
+        "kunReadings": [
+          "いた"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "黒板",
+          "reading": "こくばん",
+          "kanjiReading": "バン",
+          "translation": {
+            "vi": "bảng đen",
+            "en": "blackboard"
+          }
+        },
+        {
+          "ja": "板",
+          "reading": "いた",
+          "kanjiReading": "いた",
+          "translation": {
+            "vi": "tấm ván",
+            "en": "board"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "布",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "vải; trải",
+        "en": "cloth; spread"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ"
+        ],
+        "kunReadings": [
+          "ぬの"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "布団",
+          "reading": "ふとん",
+          "kanjiReading": "フ",
+          "translation": {
+            "vi": "chăn đệm",
+            "en": "futon"
+          }
+        },
+        {
+          "ja": "布",
+          "reading": "ぬの",
+          "kanjiReading": "ぬの",
+          "translation": {
+            "vi": "vải",
+            "en": "cloth"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "湯",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "nước nóng",
+        "en": "hot water"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "トウ"
+        ],
+        "kunReadings": [
+          "ゆ"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "銭湯",
+          "reading": "せんとう",
+          "kanjiReading": "トウ",
+          "translation": {
+            "vi": "nhà tắm công cộng",
+            "en": "public bath"
+          }
+        },
+        {
+          "ja": "お湯",
+          "reading": "おゆ",
+          "kanjiReading": "ゆ",
+          "translation": {
+            "vi": "nước nóng",
+            "en": "hot water"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "灯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「灯」nghĩa là gì?",
+        "en": "What does 「灯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đèn",
+            "en": "lamp"
+          },
+          {
+            "vi": "tấm ván; bảng",
+            "en": "board; plank"
+          },
+          {
+            "vi": "vải; trải",
+            "en": "cloth; spread"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 灯 nghĩa là đèn.",
+        "en": "Correct! 灯 means lamp."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 灯 nghĩa là đèn, như trong 「電灯」 (đèn điện).",
+        "en": "Not quite. 灯 means lamp, as in 「電灯」 (electric light)."
+      }
+    },
+    {
+      "item": "灯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「灯」 trong 「電灯」 (“đèn điện”).",
+        "en": "Type the reading of 「灯」 in 「電灯」 (“electric light”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 電灯, 灯 đọc là とう (âm On).",
+        "en": "Correct! In 電灯, 灯 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 電灯 (đèn điện), 灯 đọc là とう (âm On).",
+        "en": "In 電灯 (electric light), 灯 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "灯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「灯台」(hải đăng) đọc là gì?",
+        "en": "How is 「灯台」 (lighthouse) read?"
+      },
+      "payload": {
+        "choices": [
+          "ひだい",
+          "とうだい",
+          "どうだい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 灯台 = とうだい (hải đăng); 灯 đọc là とう (âm On).",
+        "en": "Correct! 灯台 = とうだい (lighthouse); 灯 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "灯台 đọc là とうだい (hải đăng): 灯 mang âm On とう.",
+        "en": "灯台 is read とうだい (lighthouse): 灯 takes the on'yomi とう."
+      }
+    },
+    {
+      "item": "板",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「板」nghĩa là gì?",
+        "en": "What does 「板」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vải; trải",
+            "en": "cloth; spread"
+          },
+          {
+            "vi": "tấm ván; bảng",
+            "en": "board; plank"
+          },
+          {
+            "vi": "nước nóng",
+            "en": "hot water"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 板 nghĩa là tấm ván; bảng.",
+        "en": "Correct! 板 means board; plank."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 板 nghĩa là tấm ván; bảng, như trong 「黒板」 (bảng đen).",
+        "en": "Not quite. 板 means board; plank, as in 「黒板」 (blackboard)."
+      }
+    },
+    {
+      "item": "板",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「板」 trong 「黒板」 (“bảng đen”).",
+        "en": "Type the reading of 「板」 in 「黒板」 (“blackboard”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ばん",
+          "バン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 黒板, 板 đọc là ばん (âm On).",
+        "en": "Correct! In 黒板, 板 is read ばん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 黒板 (bảng đen), 板 đọc là ばん (âm On).",
+        "en": "In 黒板 (blackboard), 板 is read ばん (on'yomi)."
+      }
+    },
+    {
+      "item": "板",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「板」(tấm ván; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「板」 (board; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "はん",
+          "ぬの",
+          "いた"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 板 = いた (tấm ván); 板 đọc là いた (âm Kun).",
+        "en": "Correct! 板 = いた (board); 板 is read いた (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "板 đọc là いた (tấm ván): 板 mang âm Kun いた.",
+        "en": "板 is read いた (board): 板 takes the kun'yomi いた."
+      }
+    },
+    {
+      "item": "布",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「布」nghĩa là gì?",
+        "en": "What does 「布」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nước nóng",
+            "en": "hot water"
+          },
+          {
+            "vi": "đèn",
+            "en": "lamp"
+          },
+          {
+            "vi": "vải; trải",
+            "en": "cloth; spread"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 布 nghĩa là vải; trải.",
+        "en": "Correct! 布 means cloth; spread."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 布 nghĩa là vải; trải, như trong 「布団」 (chăn đệm).",
+        "en": "Not quite. 布 means cloth; spread, as in 「布団」 (futon)."
+      }
+    },
+    {
+      "item": "布",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「布」 trong 「布団」 (“chăn đệm”).",
+        "en": "Type the reading of 「布」 in 「布団」 (“futon”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふ",
+          "フ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 布団, 布 đọc là ふ (âm On).",
+        "en": "Correct! In 布団, 布 is read ふ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 布団 (chăn đệm), 布 đọc là ふ (âm On).",
+        "en": "In 布団 (futon), 布 is read ふ (on'yomi)."
+      }
+    },
+    {
+      "item": "布",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「布」(vải; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「布」 (cloth; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぬの",
+          "ふ",
+          "おゆ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 布 = ぬの (vải); 布 đọc là ぬの (âm Kun).",
+        "en": "Correct! 布 = ぬの (cloth); 布 is read ぬの (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "布 đọc là ぬの (vải): 布 mang âm Kun ぬの.",
+        "en": "布 is read ぬの (cloth): 布 takes the kun'yomi ぬの."
+      }
+    },
+    {
+      "item": "湯",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「湯」nghĩa là gì?",
+        "en": "What does 「湯」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nước nóng",
+            "en": "hot water"
+          },
+          {
+            "vi": "đèn",
+            "en": "lamp"
+          },
+          {
+            "vi": "tấm ván; bảng",
+            "en": "board; plank"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 湯 nghĩa là nước nóng.",
+        "en": "Correct! 湯 means hot water."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 湯 nghĩa là nước nóng, như trong 「銭湯」 (nhà tắm công cộng).",
+        "en": "Not quite. 湯 means hot water, as in 「銭湯」 (public bath)."
+      }
+    },
+    {
+      "item": "湯",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「湯」 trong 「銭湯」 (“nhà tắm công cộng”).",
+        "en": "Type the reading of 「湯」 in 「銭湯」 (“public bath”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "とう",
+          "トウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 銭湯, 湯 đọc là とう (âm On).",
+        "en": "Correct! In 銭湯, 湯 is read とう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 銭湯 (nhà tắm công cộng), 湯 đọc là とう (âm On).",
+        "en": "In 銭湯 (public bath), 湯 is read とう (on'yomi)."
+      }
+    },
+    {
+      "item": "湯",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「お湯」(nước nóng) đọc là gì?",
+        "en": "How is 「お湯」 (hot water) read?"
+      },
+      "payload": {
+        "choices": [
+          "おとう",
+          "おゆ",
+          "おひ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! お湯 = おゆ (nước nóng); 湯 đọc là ゆ (âm Kun).",
+        "en": "Correct! お湯 = おゆ (hot water); 湯 is read ゆ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "お湯 đọc là おゆ (nước nóng): 湯 mang âm Kun ゆ.",
+        "en": "お湯 is read おゆ (hot water): 湯 takes the kun'yomi ゆ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "灯",
+            {
+              "vi": "đèn",
+              "en": "lamp"
+            }
+          ],
+          [
+            "板",
+            {
+              "vi": "tấm ván; bảng",
+              "en": "board; plank"
+            }
+          ],
+          [
+            "布",
+            {
+              "vi": "vải; trải",
+              "en": "cloth; spread"
+            }
+          ],
+          [
+            "湯",
+            {
+              "vi": "nước nóng",
+              "en": "hot water"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

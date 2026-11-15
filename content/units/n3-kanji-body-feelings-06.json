@@ -1,0 +1,672 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-body-feelings",
+  "title": {
+    "vi": "Kanji cơ thể – cảm xúc (情 想 念 好 恋)",
+    "en": "Body and feelings kanji (情 想 念 好 恋)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "情",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "tình; cảm xúc",
+        "en": "feeling; emotion"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ",
+          "セイ"
+        ],
+        "kunReadings": [
+          "なさ.け"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "感情",
+          "reading": "かんじょう",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "cảm xúc",
+            "en": "emotion"
+          }
+        },
+        {
+          "ja": "情け",
+          "reading": "なさけ",
+          "kanjiReading": "なさ",
+          "translation": {
+            "vi": "lòng thương",
+            "en": "compassion"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "想",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "nghĩ; tưởng",
+        "en": "think; imagine"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ソウ",
+          "ソ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 13
+      },
+      "examples": [
+        {
+          "ja": "予想",
+          "reading": "よそう",
+          "kanjiReading": "ソウ",
+          "translation": {
+            "vi": "dự đoán",
+            "en": "prediction"
+          }
+        },
+        {
+          "ja": "愛想",
+          "reading": "あいそ",
+          "kanjiReading": "ソ",
+          "translation": {
+            "vi": "sự niềm nở",
+            "en": "geniality"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "念",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "niệm; ý nghĩ",
+        "en": "thought; wish"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ネン"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "残念",
+          "reading": "ざんねん",
+          "kanjiReading": "ネン",
+          "translation": {
+            "vi": "đáng tiếc",
+            "en": "regrettable"
+          }
+        },
+        {
+          "ja": "記念",
+          "reading": "きねん",
+          "kanjiReading": "ネン",
+          "translation": {
+            "vi": "kỷ niệm",
+            "en": "commemoration"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "好",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "thích; ưa",
+        "en": "like; fond of"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "コウ"
+        ],
+        "kunReadings": [
+          "この.む",
+          "す.く"
+        ],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "好意",
+          "reading": "こうい",
+          "kanjiReading": "コウ",
+          "translation": {
+            "vi": "thiện ý",
+            "en": "goodwill"
+          }
+        },
+        {
+          "ja": "好き",
+          "reading": "すき",
+          "kanjiReading": "す",
+          "translation": {
+            "vi": "thích",
+            "en": "fond of"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "恋",
+      "topic": "kanji-n3-body-feelings",
+      "meaning": {
+        "vi": "yêu; tình yêu",
+        "en": "love; romance"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "レン"
+        ],
+        "kunReadings": [
+          "こい",
+          "こい.しい"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "恋愛",
+          "reading": "れんあい",
+          "kanjiReading": "レン",
+          "translation": {
+            "vi": "tình yêu",
+            "en": "romance"
+          }
+        },
+        {
+          "ja": "恋",
+          "reading": "こい",
+          "kanjiReading": "こい",
+          "translation": {
+            "vi": "tình yêu",
+            "en": "love"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "情",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「情」nghĩa là gì?",
+        "en": "What does 「情」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tình; cảm xúc",
+            "en": "feeling; emotion"
+          },
+          {
+            "vi": "nghĩ; tưởng",
+            "en": "think; imagine"
+          },
+          {
+            "vi": "niệm; ý nghĩ",
+            "en": "thought; wish"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 情 nghĩa là tình; cảm xúc.",
+        "en": "Correct! 情 means feeling; emotion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 情 nghĩa là tình; cảm xúc, như trong 「感情」 (cảm xúc).",
+        "en": "Not quite. 情 means feeling; emotion, as in 「感情」 (emotion)."
+      }
+    },
+    {
+      "item": "情",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「情」 trong 「感情」 (“cảm xúc”).",
+        "en": "Type the reading of 「情」 in 「感情」 (“emotion”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 感情, 情 đọc là じょう (âm On).",
+        "en": "Correct! In 感情, 情 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 感情 (cảm xúc), 情 đọc là じょう (âm On).",
+        "en": "In 感情 (emotion), 情 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "情",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「情け」(lòng thương) đọc là gì?",
+        "en": "How is 「情け」 (compassion) read?"
+      },
+      "payload": {
+        "choices": [
+          "じょうけ",
+          "なさけ",
+          "よそう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 情け = なさけ (lòng thương); 情 đọc là なさ (âm Kun).",
+        "en": "Correct! 情け = なさけ (compassion); 情 is read なさ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "情け đọc là なさけ (lòng thương): 情 mang âm Kun なさ.",
+        "en": "情け is read なさけ (compassion): 情 takes the kun'yomi なさ."
+      }
+    },
+    {
+      "item": "想",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「想」nghĩa là gì?",
+        "en": "What does 「想」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "niệm; ý nghĩ",
+            "en": "thought; wish"
+          },
+          {
+            "vi": "nghĩ; tưởng",
+            "en": "think; imagine"
+          },
+          {
+            "vi": "thích; ưa",
+            "en": "like; fond of"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 想 nghĩa là nghĩ; tưởng.",
+        "en": "Correct! 想 means think; imagine."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 想 nghĩa là nghĩ; tưởng, như trong 「予想」 (dự đoán).",
+        "en": "Not quite. 想 means think; imagine, as in 「予想」 (prediction)."
+      }
+    },
+    {
+      "item": "想",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「想」 trong 「予想」 (“dự đoán”).",
+        "en": "Type the reading of 「想」 in 「予想」 (“prediction”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "そう",
+          "ソウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 予想, 想 đọc là そう (âm On).",
+        "en": "Correct! In 予想, 想 is read そう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 予想 (dự đoán), 想 đọc là そう (âm On).",
+        "en": "In 予想 (prediction), 想 is read そう (on'yomi)."
+      }
+    },
+    {
+      "item": "想",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「愛想」(sự niềm nở) đọc là gì?",
+        "en": "How is 「愛想」 (geniality) read?"
+      },
+      "payload": {
+        "choices": [
+          "あいそう",
+          "あいぞ",
+          "あいそ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 愛想 = あいそ (sự niềm nở); 想 đọc là そ (âm On).",
+        "en": "Correct! 愛想 = あいそ (geniality); 想 is read そ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "愛想 đọc là あいそ (sự niềm nở): 想 mang âm On そ.",
+        "en": "愛想 is read あいそ (geniality): 想 takes the on'yomi そ."
+      }
+    },
+    {
+      "item": "念",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「念」nghĩa là gì?",
+        "en": "What does 「念」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thích; ưa",
+            "en": "like; fond of"
+          },
+          {
+            "vi": "yêu; tình yêu",
+            "en": "love; romance"
+          },
+          {
+            "vi": "niệm; ý nghĩ",
+            "en": "thought; wish"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 念 nghĩa là niệm; ý nghĩ.",
+        "en": "Correct! 念 means thought; wish."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 念 nghĩa là niệm; ý nghĩ, như trong 「残念」 (đáng tiếc).",
+        "en": "Not quite. 念 means thought; wish, as in 「残念」 (regrettable)."
+      }
+    },
+    {
+      "item": "念",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「念」 trong 「残念」 (“đáng tiếc”).",
+        "en": "Type the reading of 「念」 in 「残念」 (“regrettable”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ねん",
+          "ネン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 残念, 念 đọc là ねん (âm On).",
+        "en": "Correct! In 残念, 念 is read ねん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 残念 (đáng tiếc), 念 đọc là ねん (âm On).",
+        "en": "In 残念 (regrettable), 念 is read ねん (on'yomi)."
+      }
+    },
+    {
+      "item": "念",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「記念」(kỷ niệm) đọc là gì?",
+        "en": "How is 「記念」 (commemoration) read?"
+      },
+      "payload": {
+        "choices": [
+          "きねん",
+          "きこの",
+          "きこう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 記念 = きねん (kỷ niệm); 念 đọc là ねん (âm On).",
+        "en": "Correct! 記念 = きねん (commemoration); 念 is read ねん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "記念 đọc là きねん (kỷ niệm): 念 mang âm On ねん.",
+        "en": "記念 is read きねん (commemoration): 念 takes the on'yomi ねん."
+      }
+    },
+    {
+      "item": "好",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「好」nghĩa là gì?",
+        "en": "What does 「好」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "thích; ưa",
+            "en": "like; fond of"
+          },
+          {
+            "vi": "yêu; tình yêu",
+            "en": "love; romance"
+          },
+          {
+            "vi": "tình; cảm xúc",
+            "en": "feeling; emotion"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 好 nghĩa là thích; ưa.",
+        "en": "Correct! 好 means like; fond of."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 好 nghĩa là thích; ưa, như trong 「好意」 (thiện ý).",
+        "en": "Not quite. 好 means like; fond of, as in 「好意」 (goodwill)."
+      }
+    },
+    {
+      "item": "好",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「好」 trong 「好意」 (“thiện ý”).",
+        "en": "Type the reading of 「好」 in 「好意」 (“goodwill”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "こう",
+          "コウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 好意, 好 đọc là こう (âm On).",
+        "en": "Correct! In 好意, 好 is read こう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 好意 (thiện ý), 好 đọc là こう (âm On).",
+        "en": "In 好意 (goodwill), 好 is read こう (on'yomi)."
+      }
+    },
+    {
+      "item": "好",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「好き」(thích) đọc là gì?",
+        "en": "How is 「好き」 (fond of) read?"
+      },
+      "payload": {
+        "choices": [
+          "こうき",
+          "すき",
+          "こい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 好き = すき (thích); 好 đọc là す (âm Kun).",
+        "en": "Correct! 好き = すき (fond of); 好 is read す (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "好き đọc là すき (thích): 好 mang âm Kun す.",
+        "en": "好き is read すき (fond of): 好 takes the kun'yomi す."
+      }
+    },
+    {
+      "item": "恋",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「恋」nghĩa là gì?",
+        "en": "What does 「恋」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "tình; cảm xúc",
+            "en": "feeling; emotion"
+          },
+          {
+            "vi": "yêu; tình yêu",
+            "en": "love; romance"
+          },
+          {
+            "vi": "nghĩ; tưởng",
+            "en": "think; imagine"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 恋 nghĩa là yêu; tình yêu.",
+        "en": "Correct! 恋 means love; romance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 恋 nghĩa là yêu; tình yêu, như trong 「恋愛」 (tình yêu).",
+        "en": "Not quite. 恋 means love; romance, as in 「恋愛」 (romance)."
+      }
+    },
+    {
+      "item": "恋",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「恋」 trong 「恋愛」 (“tình yêu”).",
+        "en": "Type the reading of 「恋」 in 「恋愛」 (“romance”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "れん",
+          "レン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 恋愛, 恋 đọc là れん (âm On).",
+        "en": "Correct! In 恋愛, 恋 is read れん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 恋愛 (tình yêu), 恋 đọc là れん (âm On).",
+        "en": "In 恋愛 (romance), 恋 is read れん (on'yomi)."
+      }
+    },
+    {
+      "item": "恋",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「恋」(tình yêu; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「恋」 (love; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "れん",
+          "すき",
+          "こい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 恋 = こい (tình yêu); 恋 đọc là こい (âm Kun).",
+        "en": "Correct! 恋 = こい (love); 恋 is read こい (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "恋 đọc là こい (tình yêu): 恋 mang âm Kun こい.",
+        "en": "恋 is read こい (love): 恋 takes the kun'yomi こい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "情",
+            {
+              "vi": "tình; cảm xúc",
+              "en": "feeling; emotion"
+            }
+          ],
+          [
+            "想",
+            {
+              "vi": "nghĩ; tưởng",
+              "en": "think; imagine"
+            }
+          ],
+          [
+            "念",
+            {
+              "vi": "niệm; ý nghĩ",
+              "en": "thought; wish"
+            }
+          ],
+          [
+            "好",
+            {
+              "vi": "thích; ưa",
+              "en": "like; fond of"
+            }
+          ],
+          [
+            "恋",
+            {
+              "vi": "yêu; tình yêu",
+              "en": "love; romance"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

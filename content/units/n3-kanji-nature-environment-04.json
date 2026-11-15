@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-nature-environment",
+  "title": {
+    "vi": "Kanji thiên nhiên – môi trường (岸 岩 砂 石)",
+    "en": "Nature and environment kanji (岸 岩 砂 石)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1940,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "岸",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "bờ",
+        "en": "shore"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガン"
+        ],
+        "kunReadings": [
+          "きし"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "海岸",
+          "reading": "かいがん",
+          "kanjiReading": "ガン",
+          "translation": {
+            "vi": "bờ biển",
+            "en": "coast"
+          }
+        },
+        {
+          "ja": "岸",
+          "reading": "きし",
+          "kanjiReading": "きし",
+          "translation": {
+            "vi": "bờ",
+            "en": "shore"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "岩",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "đá tảng; vách đá",
+        "en": "rock"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ガン"
+        ],
+        "kunReadings": [
+          "いわ"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "岩石",
+          "reading": "がんせき",
+          "kanjiReading": "ガン",
+          "translation": {
+            "vi": "đá",
+            "en": "rock"
+          }
+        },
+        {
+          "ja": "岩",
+          "reading": "いわ",
+          "kanjiReading": "いわ",
+          "translation": {
+            "vi": "tảng đá",
+            "en": "rock"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "砂",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "cát",
+        "en": "sand"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "サ",
+          "シャ"
+        ],
+        "kunReadings": [
+          "すな"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "砂漠",
+          "reading": "さばく",
+          "kanjiReading": "サ",
+          "translation": {
+            "vi": "sa mạc",
+            "en": "desert"
+          }
+        },
+        {
+          "ja": "砂",
+          "reading": "すな",
+          "kanjiReading": "すな",
+          "translation": {
+            "vi": "cát",
+            "en": "sand"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "石",
+      "topic": "kanji-n3-nature-environment",
+      "meaning": {
+        "vi": "đá; sỏi",
+        "en": "stone"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セキ",
+          "シャク",
+          "コク"
+        ],
+        "kunReadings": [
+          "いし"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "石油",
+          "reading": "せきゆ",
+          "kanjiReading": "セキ",
+          "translation": {
+            "vi": "dầu mỏ",
+            "en": "petroleum"
+          }
+        },
+        {
+          "ja": "石",
+          "reading": "いし",
+          "kanjiReading": "いし",
+          "translation": {
+            "vi": "hòn đá",
+            "en": "stone"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "岸",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「岸」nghĩa là gì?",
+        "en": "What does 「岸」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "bờ",
+            "en": "shore"
+          },
+          {
+            "vi": "đá tảng; vách đá",
+            "en": "rock"
+          },
+          {
+            "vi": "cát",
+            "en": "sand"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 岸 nghĩa là bờ.",
+        "en": "Correct! 岸 means shore."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 岸 nghĩa là bờ, như trong 「海岸」 (bờ biển).",
+        "en": "Not quite. 岸 means shore, as in 「海岸」 (coast)."
+      }
+    },
+    {
+      "item": "岸",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「岸」 trong 「海岸」 (“bờ biển”).",
+        "en": "Type the reading of 「岸」 in 「海岸」 (“coast”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がん",
+          "ガン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 海岸, 岸 đọc là がん (âm On).",
+        "en": "Correct! In 海岸, 岸 is read がん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 海岸 (bờ biển), 岸 đọc là がん (âm On).",
+        "en": "In 海岸 (coast), 岸 is read がん (on'yomi)."
+      }
+    },
+    {
+      "item": "岸",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「岸」(bờ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「岸」 (shore; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "がん",
+          "きし",
+          "いし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 岸 = きし (bờ); 岸 đọc là きし (âm Kun).",
+        "en": "Correct! 岸 = きし (shore); 岸 is read きし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "岸 đọc là きし (bờ): 岸 mang âm Kun きし.",
+        "en": "岸 is read きし (shore): 岸 takes the kun'yomi きし."
+      }
+    },
+    {
+      "item": "岩",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「岩」nghĩa là gì?",
+        "en": "What does 「岩」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "cát",
+            "en": "sand"
+          },
+          {
+            "vi": "đá tảng; vách đá",
+            "en": "rock"
+          },
+          {
+            "vi": "đá; sỏi",
+            "en": "stone"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 岩 nghĩa là đá tảng; vách đá.",
+        "en": "Correct! 岩 means rock."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 岩 nghĩa là đá tảng; vách đá, như trong 「岩石」 (đá).",
+        "en": "Not quite. 岩 means rock, as in 「岩石」 (rock)."
+      }
+    },
+    {
+      "item": "岩",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「岩」 trong 「岩石」 (“đá”).",
+        "en": "Type the reading of 「岩」 in 「岩石」 (“rock”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "がん",
+          "ガン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 岩石, 岩 đọc là がん (âm On).",
+        "en": "Correct! In 岩石, 岩 is read がん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 岩石 (đá), 岩 đọc là がん (âm On).",
+        "en": "In 岩石 (rock), 岩 is read がん (on'yomi)."
+      }
+    },
+    {
+      "item": "岩",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「岩」(tảng đá; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「岩」 (rock; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "がん",
+          "すな",
+          "いわ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 岩 = いわ (tảng đá); 岩 đọc là いわ (âm Kun).",
+        "en": "Correct! 岩 = いわ (rock); 岩 is read いわ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "岩 đọc là いわ (tảng đá): 岩 mang âm Kun いわ.",
+        "en": "岩 is read いわ (rock): 岩 takes the kun'yomi いわ."
+      }
+    },
+    {
+      "item": "砂",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「砂」nghĩa là gì?",
+        "en": "What does 「砂」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đá; sỏi",
+            "en": "stone"
+          },
+          {
+            "vi": "bờ",
+            "en": "shore"
+          },
+          {
+            "vi": "cát",
+            "en": "sand"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 砂 nghĩa là cát.",
+        "en": "Correct! 砂 means sand."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 砂 nghĩa là cát, như trong 「砂漠」 (sa mạc).",
+        "en": "Not quite. 砂 means sand, as in 「砂漠」 (desert)."
+      }
+    },
+    {
+      "item": "砂",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「砂」 trong 「砂漠」 (“sa mạc”).",
+        "en": "Type the reading of 「砂」 in 「砂漠」 (“desert”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "さ",
+          "サ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 砂漠, 砂 đọc là さ (âm On).",
+        "en": "Correct! In 砂漠, 砂 is read さ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 砂漠 (sa mạc), 砂 đọc là さ (âm On).",
+        "en": "In 砂漠 (desert), 砂 is read さ (on'yomi)."
+      }
+    },
+    {
+      "item": "砂",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「砂」(cát; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「砂」 (sand; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "すな",
+          "さ",
+          "いし"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 砂 = すな (cát); 砂 đọc là すな (âm Kun).",
+        "en": "Correct! 砂 = すな (sand); 砂 is read すな (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "砂 đọc là すな (cát): 砂 mang âm Kun すな.",
+        "en": "砂 is read すな (sand): 砂 takes the kun'yomi すな."
+      }
+    },
+    {
+      "item": "石",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「石」nghĩa là gì?",
+        "en": "What does 「石」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đá; sỏi",
+            "en": "stone"
+          },
+          {
+            "vi": "bờ",
+            "en": "shore"
+          },
+          {
+            "vi": "đá tảng; vách đá",
+            "en": "rock"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 石 nghĩa là đá; sỏi.",
+        "en": "Correct! 石 means stone."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 石 nghĩa là đá; sỏi, như trong 「石油」 (dầu mỏ).",
+        "en": "Not quite. 石 means stone, as in 「石油」 (petroleum)."
+      }
+    },
+    {
+      "item": "石",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「石」 trong 「石油」 (“dầu mỏ”).",
+        "en": "Type the reading of 「石」 in 「石油」 (“petroleum”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せき",
+          "セキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 石油, 石 đọc là せき (âm On).",
+        "en": "Correct! In 石油, 石 is read せき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 石油 (dầu mỏ), 石 đọc là せき (âm On).",
+        "en": "In 石油 (petroleum), 石 is read せき (on'yomi)."
+      }
+    },
+    {
+      "item": "石",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「石」(hòn đá; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「石」 (stone; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "せき",
+          "いし",
+          "きし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 石 = いし (hòn đá); 石 đọc là いし (âm Kun).",
+        "en": "Correct! 石 = いし (stone); 石 is read いし (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "石 đọc là いし (hòn đá): 石 mang âm Kun いし.",
+        "en": "石 is read いし (stone): 石 takes the kun'yomi いし."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "岸",
+            {
+              "vi": "bờ",
+              "en": "shore"
+            }
+          ],
+          [
+            "岩",
+            {
+              "vi": "đá tảng; vách đá",
+              "en": "rock"
+            }
+          ],
+          [
+            "砂",
+            {
+              "vi": "cát",
+              "en": "sand"
+            }
+          ],
+          [
+            "石",
+            {
+              "vi": "đá; sỏi",
+              "en": "stone"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "tier": "core",
+  "topic": "grammar-n3-reason-cause",
+  "title": {
+    "vi": "Lý do và kết quả (1): 〜おかげで và 〜せいで",
+    "en": "Reason and result (1): 〜おかげで and 〜せいで"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜おかげで",
+      "meaning": {
+        "vi": "Nhờ ~ (kết quả tốt)",
+        "en": "Thanks to ~ (good result)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ の / động từ, tính từ thể thường + おかげで (おかげだ). Nêu nguyên nhân dẫn đến kết quả tốt, kèm lòng biết ơn. Kết quả ở vế sau là điều người nói thấy may mắn. Dạng nhấn mạnh: おかげさまで.",
+        "en": "Usage: noun の / plain form of verbs and adjectives + おかげで (おかげだ). Gives the cause of a good result with gratitude. The result in the second clause is something the speaker feels fortunate about. Common set phrase: おかげさまで."
+      },
+      "examples": [
+        {
+          "ja": "先生のおかげで、試験に合格しました。",
+          "reading": "せんせいのおかげで、しけんにごうかくしました。",
+          "translation": {
+            "vi": "Nhờ thầy giáo mà tôi đã đỗ kỳ thi.",
+            "en": "Thanks to my teacher, I passed the exam."
+          }
+        },
+        {
+          "ja": "薬を飲んだおかげで、熱が下がりました。",
+          "reading": "くすりをのんだおかげで、ねつがさがりました。",
+          "translation": {
+            "vi": "Nhờ uống thuốc mà cơn sốt đã hạ.",
+            "en": "Thanks to taking the medicine, my fever went down."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-020"
+    },
+    {
+      "japanese": "〜せいで",
+      "meaning": {
+        "vi": "Tại ~, vì ~ (kết quả xấu)",
+        "en": "Because of ~ (blame)"
+      },
+      "explanation": {
+        "vi": "Cách dùng: danh từ の / động từ, tính từ thể thường + せいで (せいだ). Nêu nguyên nhân của kết quả xấu và hàm ý đổ lỗi, trách móc. Cặp đối lập với おかげで: おかげで (tốt, biết ơn) ↔ せいで (xấu, quy lỗi).",
+        "en": "Usage: noun の / plain form of verbs and adjectives + せいで (せいだ). Gives the cause of a bad result and implies blame. It pairs with おかげで: おかげで (good, grateful) ↔ せいで (bad, blaming)."
+      },
+      "examples": [
+        {
+          "ja": "寝坊したせいで、電車に乗り遅れました。",
+          "reading": "ねぼうしたせいで、でんしゃにのりおくれました。",
+          "translation": {
+            "vi": "Vì ngủ quên mà tôi lỡ chuyến tàu.",
+            "en": "Because I overslept, I missed the train."
+          }
+        },
+        {
+          "ja": "雨のせいで、試合が中止になりました。",
+          "reading": "あめのせいで、しあいがちゅうしになりました。",
+          "translation": {
+            "vi": "Vì trời mưa nên trận đấu bị hủy.",
+            "en": "The match was canceled because of the rain."
+          }
+        }
+      ],
+      "scopeRef": "g-n3-021"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜おかげで",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n先生（　）おかげで、試験に合格しました。",
+        "en": "Choose the correct option for the blank:\n先生（　）おかげで、試験に合格しました。"
+      },
+      "payload": {
+        "choices": [
+          "の",
+          "が",
+          "を",
+          "に"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「の」 + 「おかげで」: 「先生のおかげで」.",
+        "en": "Correct! A noun + 「の」 + 「おかげで」: 「先生のおかげで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「の」 + 「おかげで」: 「先生のおかげで」.",
+        "en": "Not quite. A noun + 「の」 + 「おかげで」: 「先生のおかげで」."
+      }
+    },
+    {
+      "item": "〜おかげで",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n薬を飲んだ___、熱が下がりました。",
+        "en": "Choose the correct option for the blank:\n薬を飲んだ___、熱が下がりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "おかげで"
+        ],
+        "hint": "〜おかげで"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kết quả tốt (hạ sốt) dùng 「おかげで」.",
+        "en": "Correct! A good result (fever going down) uses 「おかげで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kết quả tốt (hạ sốt) dùng 「おかげで」.",
+        "en": "Not quite. A good result (fever going down) uses 「おかげで」."
+      }
+    },
+    {
+      "item": "〜おかげで",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n友だちが手伝ってくれた（　）、早く終わりました。",
+        "en": "Choose the pattern that best fits the context:\n友だちが手伝ってくれた（　）、早く終わりました。"
+      },
+      "payload": {
+        "choices": [
+          "せいで",
+          "くせに",
+          "ばかりに",
+          "おかげで"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kết quả tốt và biết ơn bạn: 「おかげで」; 「せいで」 dùng cho kết quả xấu.",
+        "en": "Correct! A good result and gratitude toward the friend: 「おかげで」; 「せいで」 is for bad results."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kết quả tốt và biết ơn bạn: 「おかげで」; 「せいで」 dùng cho kết quả xấu.",
+        "en": "Not quite. A good result and gratitude toward the friend: 「おかげで」; 「せいで」 is for bad results."
+      }
+    },
+    {
+      "item": "〜おかげで",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "あなたのせいで、助かりました。",
+          "あなたのおかげで、困りました。",
+          "あなたのおかげで、助かりました。",
+          "あなたのせいで、うれしいです。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「助かりました」 là kết quả tốt nên đi với 「おかげで」; kết quả xấu mới dùng 「せいで」.",
+        "en": "Correct! 「助かりました」 is a good result, so it goes with 「おかげで」; 「せいで」 is for bad results."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「助かりました」 là kết quả tốt nên đi với 「おかげで」; kết quả xấu mới dùng 「せいで」.",
+        "en": "Not quite. 「助かりました」 is a good result, so it goes with 「おかげで」; 「せいで」 is for bad results."
+      }
+    },
+    {
+      "item": "〜せいで",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n寝坊した（　）、電車に乗り遅れました。",
+        "en": "Choose the correct option for the blank:\n寝坊した（　）、電車に乗り遅れました。"
+      },
+      "payload": {
+        "choices": [
+          "おかげで",
+          "せいで",
+          "おかげに",
+          "せいに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Kết quả xấu (lỡ tàu) dùng 「せいで」: 「寝坊したせいで」.",
+        "en": "Correct! A bad result (missing the train) uses 「せいで」: 「寝坊したせいで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Kết quả xấu (lỡ tàu) dùng 「せいで」: 「寝坊したせいで」.",
+        "en": "Not quite. A bad result (missing the train) uses 「せいで」: 「寝坊したせいで」."
+      }
+    },
+    {
+      "item": "〜せいで",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n雨___せいで、試合が中止になりました。",
+        "en": "Choose the correct option for the blank:\n雨___せいで、試合が中止になりました。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "の"
+        ],
+        "hint": "の"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「の」 + 「せいで」: 「雨のせいで」.",
+        "en": "Correct! A noun + 「の」 + 「せいで」: 「雨のせいで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「の」 + 「せいで」: 「雨のせいで」.",
+        "en": "Not quite. A noun + 「の」 + 「せいで」: 「雨のせいで」."
+      }
+    },
+    {
+      "item": "〜せいで",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Người nói muốn trách người kia vì công việc tăng lên. Chọn đáp án đúng:\nあの人（　）、仕事が増えました。",
+        "en": "The speaker wants to blame that person for the increased workload. Choose the best option:\nあの人（　）、仕事が増えました。"
+      },
+      "payload": {
+        "choices": [
+          "のせいで",
+          "のおかげで",
+          "のくせに",
+          "のもので"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Công việc tăng là điều không mong muốn, quy lỗi cho người đó: 「のせいで」.",
+        "en": "Correct! More work is undesirable and is blamed on that person: 「のせいで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Công việc tăng là điều không mong muốn, quy lỗi cho người đó: 「のせいで」.",
+        "en": "Not quite. More work is undesirable and is blamed on that person: 「のせいで」."
+      }
+    },
+    {
+      "item": "〜せいで",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "事故のおかげで、電車が遅れました。",
+          "事故せいで、電車が遅れました。",
+          "事故のせいに、電車が遅れました。",
+          "事故のせいで、電車が遅れました。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Danh từ + 「の」 + 「せいで」; 「遅れました」 là kết quả xấu nên không dùng 「おかげで」.",
+        "en": "Correct! A noun + 「の」 + 「せいで」; 「遅れました」 is a bad result so 「おかげで」 is not used."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Danh từ + 「の」 + 「せいで」; 「遅れました」 là kết quả xấu nên không dùng 「おかげで」.",
+        "en": "Not quite. A noun + 「の」 + 「せいで」; 「遅れました」 is a bad result so 「おかげで」 is not used."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜おかげで",
+            {
+              "vi": "Nhờ ~ (kết quả tốt)",
+              "en": "Thanks to ~ (good result)"
+            }
+          ],
+          [
+            "〜せいで",
+            {
+              "vi": "Tại ~, vì ~ (kết quả xấu)",
+              "en": "Because of ~ (blame)"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

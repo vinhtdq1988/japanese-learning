@@ -1,0 +1,1289 @@
+{
+  "$schema": "../schema/scope.schema.json",
+  "kind": "grammar",
+  "level": "N3",
+  "reference": false,
+  "sources": {
+    "s1": {
+      "name": "Shin Kanzen Master N3 文法, 3A Corporation",
+      "note": "Danh mục mẫu ngữ pháp N3; chỉ lấy tư cách thành viên danh sách, không chép nghĩa/ví dụ"
+    },
+    "s2": {
+      "name": "Nihongo So-matome N3 (日本語総まとめ N3 文法), Asuku",
+      "note": "Danh mục chương/mẫu ngữ pháp N3; chỉ lấy tư cách thành viên danh sách"
+    },
+    "s3": {
+      "name": "Danh sách ngữ pháp JLPT N3 do cộng đồng tổng hợp (ví dụ Bunpro, JLPT Sensei)",
+      "note": "Dùng đối chiếu bổ sung; giấy phép từng nguồn PHẢI được chủ dự án kiểm tra ở cổng G0 (C2)"
+    }
+  },
+  "rows": [
+    {
+      "id": "g-n3-001",
+      "key": "〜ば（仮定条件）",
+      "label": {
+        "vi": "nếu…",
+        "en": "if (conditional ば)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-002",
+      "key": "〜たら（仮定・確定条件）",
+      "label": {
+        "vi": "nếu…, sau khi…",
+        "en": "if/when (conditional たら)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-003",
+      "key": "〜ので",
+      "label": {
+        "vi": "vì…, nên… (khách quan)",
+        "en": "because (objective reason)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-004",
+      "key": "〜ために（目的）",
+      "label": {
+        "vi": "để…",
+        "en": "in order to (purpose)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-005",
+      "key": "受身 〜(ら)れる",
+      "label": {
+        "vi": "thể bị động",
+        "en": "passive form"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-006",
+      "key": "使役 〜(さ)せる",
+      "label": {
+        "vi": "thể sai khiến",
+        "en": "causative form"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-007",
+      "key": "使役受身 〜(さ)せられる",
+      "label": {
+        "vi": "thể bị sai khiến",
+        "en": "causative-passive form"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-008",
+      "key": "〜(さ)せてください",
+      "label": {
+        "vi": "xin cho phép tôi…",
+        "en": "please let me"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-009",
+      "key": "〜ば〜ほど",
+      "label": {
+        "vi": "càng… càng…",
+        "en": "the more… the more…"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-010",
+      "key": "〜とすれば／〜とすると",
+      "label": {
+        "vi": "giả sử…",
+        "en": "supposing that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-011",
+      "key": "〜たところで",
+      "label": {
+        "vi": "dù có… cũng (vô ích)",
+        "en": "even if (it's futile)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-012",
+      "key": "〜としても／〜にしても",
+      "label": {
+        "vi": "dù là… đi nữa",
+        "en": "even if/even as for"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-013",
+      "key": "〜さえ〜ば",
+      "label": {
+        "vi": "chỉ cần… là…",
+        "en": "if only"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-014",
+      "key": "〜ないかぎり",
+      "label": {
+        "vi": "chừng nào chưa… thì…",
+        "en": "unless"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-015",
+      "key": "〜ようでは",
+      "label": {
+        "vi": "nếu cứ như… thì…",
+        "en": "if (it is) like that"
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "g-n3-016",
+      "key": "〜からといって",
+      "label": {
+        "vi": "không phải cứ… thì…",
+        "en": "just because"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-017",
+      "key": "〜ながらも／〜つつも",
+      "label": {
+        "vi": "dù…, tuy…",
+        "en": "although"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-018",
+      "key": "〜くせに",
+      "label": {
+        "vi": "vậy mà…, thế mà… (chê trách)",
+        "en": "even though (reproach)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-019",
+      "key": "〜にもかかわらず",
+      "label": {
+        "vi": "bất chấp…",
+        "en": "in spite of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-020",
+      "key": "〜おかげで",
+      "label": {
+        "vi": "nhờ… (kết quả tốt)",
+        "en": "thanks to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-021",
+      "key": "〜せいで",
+      "label": {
+        "vi": "tại…, vì… (kết quả xấu)",
+        "en": "because of (blame)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-022",
+      "key": "〜によって／〜により（原因）",
+      "label": {
+        "vi": "do…, bởi…",
+        "en": "due to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-023",
+      "key": "〜ことから",
+      "label": {
+        "vi": "từ việc…",
+        "en": "from the fact that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-024",
+      "key": "〜わけだ",
+      "label": {
+        "vi": "thảo nào…, có nghĩa là…",
+        "en": "no wonder, that is why"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-025",
+      "key": "〜ものだから／〜もんだから",
+      "label": {
+        "vi": "vì… mà (biện minh)",
+        "en": "because (excuse)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-026",
+      "key": "〜ために（原因）",
+      "label": {
+        "vi": "vì…, do… (nguyên nhân)",
+        "en": "because of (cause)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-027",
+      "key": "〜ばかりに",
+      "label": {
+        "vi": "chỉ vì… mà",
+        "en": "just because"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-028",
+      "key": "〜だけに",
+      "label": {
+        "vi": "chính vì… nên",
+        "en": "precisely because"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-029",
+      "key": "〜あまり（に）",
+      "label": {
+        "vi": "vì quá… mà",
+        "en": "because of too much"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-030",
+      "key": "〜(さ)せていただく",
+      "label": {
+        "vi": "xin được…(khiêm nhường)",
+        "en": "humbly be allowed to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-031",
+      "key": "〜(さ)せていただけませんか",
+      "label": {
+        "vi": "xin cho phép tôi…",
+        "en": "may I be allowed to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-032",
+      "key": "〜てくださる",
+      "label": {
+        "vi": "(ai đó) làm… cho tôi (kính ngữ)",
+        "en": "someone does for me (honorific)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-033",
+      "key": "〜てさしあげる",
+      "label": {
+        "vi": "làm… cho (người trên) (khiêm nhường)",
+        "en": "do for someone (humble)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-034",
+      "key": "敬語の使い分け",
+      "label": {
+        "vi": "phân biệt tôn kính/khiêm nhường/lịch sự",
+        "en": "choosing among honorific, humble, polite"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-035",
+      "key": "〜ております",
+      "label": {
+        "vi": "đang… (khiêm nhường)",
+        "en": "be doing (humble)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-036",
+      "key": "お〜いただく／ご〜いただく",
+      "label": {
+        "vi": "xin được…(khiêm nhường)",
+        "en": "humbly receive (お〜いただく)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-037",
+      "key": "お〜願う／ご〜願う",
+      "label": {
+        "vi": "xin nhờ… (lịch sự)",
+        "en": "humbly request"
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "g-n3-038",
+      "key": "〜(ら)れる（自発）",
+      "label": {
+        "vi": "tự nhiên…, không kiềm được…",
+        "en": "spontaneous (自発)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-039",
+      "key": "〜(さ)せられる（自発的感情）",
+      "label": {
+        "vi": "bị khiến cho cảm thấy…",
+        "en": "made to feel"
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "g-n3-040",
+      "key": "〜っぽい",
+      "label": {
+        "vi": "có vẻ…, hay…",
+        "en": "-ish, prone to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-041",
+      "key": "〜に違いない",
+      "label": {
+        "vi": "chắc chắn là…",
+        "en": "must be"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-042",
+      "key": "〜に決まっている",
+      "label": {
+        "vi": "nhất định là…",
+        "en": "definitely"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-043",
+      "key": "〜はずがない",
+      "label": {
+        "vi": "không thể nào…",
+        "en": "cannot be"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-044",
+      "key": "〜わけがない",
+      "label": {
+        "vi": "làm gì có chuyện…",
+        "en": "there's no way"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-045",
+      "key": "〜わけではない",
+      "label": {
+        "vi": "không hẳn là…",
+        "en": "it doesn't mean that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-046",
+      "key": "〜かねない",
+      "label": {
+        "vi": "có thể dẫn đến… (xấu)",
+        "en": "might possibly (bad outcome)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-047",
+      "key": "〜かねる",
+      "label": {
+        "vi": "không thể…(khó lòng)",
+        "en": "cannot bring oneself to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-048",
+      "key": "〜おそれがある",
+      "label": {
+        "vi": "có nguy cơ…",
+        "en": "there is a risk that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-049",
+      "key": "〜とは限らない",
+      "label": {
+        "vi": "không phải lúc nào cũng…",
+        "en": "not necessarily"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-050",
+      "key": "〜うちに",
+      "label": {
+        "vi": "trong khi còn…",
+        "en": "while, before it changes"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-051",
+      "key": "〜最中に",
+      "label": {
+        "vi": "đang giữa lúc…",
+        "en": "right in the middle of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-052",
+      "key": "〜たびに",
+      "label": {
+        "vi": "mỗi lần…",
+        "en": "every time"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-053",
+      "key": "〜とたん（に）",
+      "label": {
+        "vi": "ngay khi…",
+        "en": "the moment that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-054",
+      "key": "〜際に",
+      "label": {
+        "vi": "khi…, vào lúc…",
+        "en": "at the time of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-055",
+      "key": "〜において",
+      "label": {
+        "vi": "tại…, trong… (nơi chốn/lĩnh vực)",
+        "en": "in, at (formal)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-056",
+      "key": "〜に関して／〜について",
+      "label": {
+        "vi": "về…",
+        "en": "regarding, about"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-057",
+      "key": "〜に対して",
+      "label": {
+        "vi": "đối với…, trái lại…",
+        "en": "toward, in contrast to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-058",
+      "key": "〜をはじめ",
+      "label": {
+        "vi": "đứng đầu là…, như…",
+        "en": "beginning with"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-059",
+      "key": "〜にわたって",
+      "label": {
+        "vi": "suốt…, trải khắp…",
+        "en": "throughout, spanning"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-060",
+      "key": "〜を通じて／〜を通して",
+      "label": {
+        "vi": "thông qua…, suốt…",
+        "en": "through, throughout"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-061",
+      "key": "〜につれて／〜にしたがって",
+      "label": {
+        "vi": "cùng với…, càng… thì",
+        "en": "as, in proportion to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-062",
+      "key": "〜に比べて",
+      "label": {
+        "vi": "so với…",
+        "en": "compared to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-063",
+      "key": "〜わりに（は）",
+      "label": {
+        "vi": "so với…thì khá…",
+        "en": "considering that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-064",
+      "key": "〜ほど（程度）",
+      "label": {
+        "vi": "đến mức…",
+        "en": "to the extent that"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-065",
+      "key": "〜だけ（限定・程度）",
+      "label": {
+        "vi": "chỉ…, hết mức…",
+        "en": "only, as much as"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-066",
+      "key": "〜ばかり（限定・多量）",
+      "label": {
+        "vi": "toàn…, chỉ…",
+        "en": "nothing but, only"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-067",
+      "key": "〜にとって",
+      "label": {
+        "vi": "đối với (quan điểm của)…",
+        "en": "for, from the viewpoint of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-068",
+      "key": "〜として",
+      "label": {
+        "vi": "với tư cách là…",
+        "en": "as, in the capacity of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-069",
+      "key": "〜にしては",
+      "label": {
+        "vi": "xét ra thì… (trái dự đoán)",
+        "en": "for (unexpectedly)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-070",
+      "key": "〜ようとする",
+      "label": {
+        "vi": "cố gắng/định…",
+        "en": "try to, be about to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-071",
+      "key": "〜ことにしている",
+      "label": {
+        "vi": "đã quyết định thành thói quen…",
+        "en": "make it a rule to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-072",
+      "key": "〜ことになっている",
+      "label": {
+        "vi": "theo quy định/dự kiến thì…",
+        "en": "it is arranged/the rule is"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-073",
+      "key": "〜つもりだった",
+      "label": {
+        "vi": "đã định… (nhưng)",
+        "en": "had intended to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-074",
+      "key": "〜つもりはない",
+      "label": {
+        "vi": "không có ý định…",
+        "en": "have no intention of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-075",
+      "key": "〜ためには",
+      "label": {
+        "vi": "để… thì phải…",
+        "en": "in order to… (requires)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-076",
+      "key": "〜(よ)うではないか",
+      "label": {
+        "vi": "chúng ta hãy…",
+        "en": "let's… (rallying)"
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "g-n3-077",
+      "key": "〜ように言う／〜ように頼む",
+      "label": {
+        "vi": "bảo/nhờ ai làm…",
+        "en": "tell/ask someone to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-078",
+      "key": "〜はずだった",
+      "label": {
+        "vi": "lẽ ra đã…",
+        "en": "was supposed to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-079",
+      "key": "〜べきだ／〜べきではない",
+      "label": {
+        "vi": "nên/không nên…",
+        "en": "should / should not"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-080",
+      "key": "〜ざるをえない",
+      "label": {
+        "vi": "đành phải…",
+        "en": "have no choice but to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-081",
+      "key": "〜ないわけにはいかない",
+      "label": {
+        "vi": "không thể không…",
+        "en": "cannot help but"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-082",
+      "key": "〜わけにはいかない",
+      "label": {
+        "vi": "không thể…(vì lý do xã hội)",
+        "en": "cannot (for social reasons)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-083",
+      "key": "〜ことはない",
+      "label": {
+        "vi": "không cần phải…",
+        "en": "there is no need to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-084",
+      "key": "〜ものだ",
+      "label": {
+        "vi": "vốn dĩ…, lẽ thường…",
+        "en": "it is natural that, nostalgic"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-085",
+      "key": "〜ようがない",
+      "label": {
+        "vi": "không có cách nào…",
+        "en": "there's no way to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-086",
+      "key": "〜ずにはいられない",
+      "label": {
+        "vi": "không thể không…",
+        "en": "can't help doing"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-087",
+      "key": "〜ことだ（助言）",
+      "label": {
+        "vi": "nên…(khuyên nhủ)",
+        "en": "you should…"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-088",
+      "key": "〜こと／〜の（名詞化）",
+      "label": {
+        "vi": "danh từ hóa động từ",
+        "en": "nominalizer こと／の"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-089",
+      "key": "〜という",
+      "label": {
+        "vi": "gọi là…, rằng…",
+        "en": "called, that (noun modifier)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-090",
+      "key": "〜というのは",
+      "label": {
+        "vi": "…nghĩa là…, bởi vì…",
+        "en": "what is called, which means"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-091",
+      "key": "〜というより",
+      "label": {
+        "vi": "đúng hơn là…",
+        "en": "rather than saying"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-092",
+      "key": "〜ということだ",
+      "label": {
+        "vi": "nghe nói…, nghĩa là…",
+        "en": "I hear that, it means"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-093",
+      "key": "〜とか",
+      "label": {
+        "vi": "…hoặc…, nghe nói…",
+        "en": "or something, I heard"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-094",
+      "key": "〜なんて",
+      "label": {
+        "vi": "…thật là, cái gì mà…",
+        "en": "such a thing as, (surprise)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-095",
+      "key": "〜さえ",
+      "label": {
+        "vi": "ngay cả…",
+        "en": "even"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-096",
+      "key": "〜こそ",
+      "label": {
+        "vi": "chính…",
+        "en": "precisely"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-097",
+      "key": "〜って（口語の引用）",
+      "label": {
+        "vi": "… (trích dẫn khẩu ngữ)",
+        "en": "colloquial quotation"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-098",
+      "key": "〜とは（定義・驚き）",
+      "label": {
+        "vi": "…là cái gì? / không ngờ…",
+        "en": "so-called; (surprise)"
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "g-n3-099",
+      "key": "〜つつある",
+      "label": {
+        "vi": "đang dần…",
+        "en": "be in the process of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-100",
+      "key": "〜かけ（る）",
+      "label": {
+        "vi": "…dở dang",
+        "en": "half-done, about to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-101",
+      "key": "〜きる",
+      "label": {
+        "vi": "…hết, …trọn vẹn",
+        "en": "completely do"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-102",
+      "key": "〜はじめる／〜つづける／〜おわる",
+      "label": {
+        "vi": "bắt đầu/tiếp tục/xong…",
+        "en": "begin / continue / finish doing"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-103",
+      "key": "〜がち",
+      "label": {
+        "vi": "hay…, có xu hướng…",
+        "en": "tend to"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-104",
+      "key": "〜気味",
+      "label": {
+        "vi": "hơi có vẻ…",
+        "en": "a touch of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-105",
+      "key": "〜っぱなし",
+      "label": {
+        "vi": "cứ để nguyên…, liên tục…",
+        "en": "leaving as is, continuously"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "g-n3-106",
+      "key": "〜だらけ",
+      "label": {
+        "vi": "toàn là…, đầy…",
+        "en": "full of"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    }
+  ]
+}

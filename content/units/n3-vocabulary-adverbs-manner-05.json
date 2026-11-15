@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-manner",
+  "title": {
+    "vi": "Thấm thía và đầy ắp",
+    "en": "Deeply felt and full"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3030,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "しみじみ",
+      "reading": "しみじみ",
+      "meaning": {
+        "vi": "Thấm thía; sâu sắc",
+        "en": "Deeply; keenly"
+      },
+      "examples": [
+        {
+          "ja": "親のありがたさを、しみじみ感じました。",
+          "reading": "おやのありがたさを、しみじみかんじました。",
+          "translation": {
+            "vi": "Tôi thấm thía cảm nhận được lòng biết ơn bố mẹ.",
+            "en": "I keenly felt gratitude toward my parents."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "たっぷり",
+      "reading": "たっぷり",
+      "meaning": {
+        "vi": "Đầy đủ; thừa thãi",
+        "en": "Plenty; fully"
+      },
+      "examples": [
+        {
+          "ja": "時間は、たっぷりあります。",
+          "reading": "じかんは、たっぷりあります。",
+          "translation": {
+            "vi": "Thời gian còn rất dư dả.",
+            "en": "There is plenty of time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "うんざり",
+      "reading": "うんざり",
+      "meaning": {
+        "vi": "Chán ngấy",
+        "en": "Fed up"
+      },
+      "examples": [
+        {
+          "ja": "毎日同じ料理で、うんざりしています。",
+          "reading": "まいにちおなじりょうりで、うんざりしています。",
+          "translation": {
+            "vi": "Ngày nào cũng cùng một món nên tôi chán ngấy.",
+            "en": "I am fed up with the same meal every day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "きらきら",
+      "reading": "きらきら",
+      "meaning": {
+        "vi": "Lấp lánh",
+        "en": "Sparkling"
+      },
+      "examples": [
+        {
+          "ja": "星が、きらきら光っています。",
+          "reading": "ほしが、きらきらひかっています。",
+          "translation": {
+            "vi": "Những vì sao đang lấp lánh.",
+            "en": "The stars are sparkling."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ふと",
+      "reading": "ふと",
+      "meaning": {
+        "vi": "Chợt; bất chợt",
+        "en": "Suddenly; by chance"
+      },
+      "examples": [
+        {
+          "ja": "ふと、昔のことを思い出しました。",
+          "reading": "ふと、むかしのことをおもいだしました。",
+          "translation": {
+            "vi": "Bất chợt tôi nhớ lại chuyện ngày xưa.",
+            "en": "I suddenly recalled something from the past."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ぎっしり",
+      "reading": "ぎっしり",
+      "meaning": {
+        "vi": "Chật kín; đầy ắp",
+        "en": "Packed tightly"
+      },
+      "examples": [
+        {
+          "ja": "かばんに、本がぎっしり入っています。",
+          "reading": "かばんに、ほんがぎっしりはいっています。",
+          "translation": {
+            "vi": "Trong cặp sách chất đầy sách.",
+            "en": "The bag is packed with books."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "しみじみ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 親のありがたさを、（　）感じました。 — Nghĩa của câu: “Tôi thấm thía cảm nhận được lòng biết ơn bố mẹ.”",
+        "en": "Choose the word that fits the blank: 親のありがたさを、（　）感じました。 — Meaning of the sentence: “I keenly felt gratitude toward my parents.”"
+      },
+      "payload": {
+        "choices": [
+          "たっぷり",
+          "うんざり",
+          "ふと",
+          "しみじみ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しみじみ」(Thấm thía; sâu sắc) hợp nghĩa câu này: “Tôi thấm thía cảm nhận được lòng biết ơn bố mẹ.”",
+        "en": "Correct! 「しみじみ」(Deeply; keenly) fits this sentence: “I keenly felt gratitude toward my parents.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi thấm thía cảm nhận được lòng biết ơn bố mẹ.”, nên cần 「しみじみ」(Thấm thía; sâu sắc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I keenly felt gratitude toward my parents.”, so it needs 「しみじみ」(Deeply; keenly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "たっぷり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 時間は、（　）あります。 — Nghĩa của câu: “Thời gian còn rất dư dả.”",
+        "en": "Choose the word that fits the blank: 時間は、（　）あります。 — Meaning of the sentence: “There is plenty of time.”"
+      },
+      "payload": {
+        "choices": [
+          "たっぷり",
+          "しみじみ",
+          "うんざり",
+          "ぎっしり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たっぷり」(Đầy đủ; thừa thãi) hợp nghĩa câu này: “Thời gian còn rất dư dả.”",
+        "en": "Correct! 「たっぷり」(Plenty; fully) fits this sentence: “There is plenty of time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thời gian còn rất dư dả.”, nên cần 「たっぷり」(Đầy đủ; thừa thãi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is plenty of time.”, so it needs 「たっぷり」(Plenty; fully); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "うんざり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎日同じ料理で、（　）しています。 — Nghĩa của câu: “Ngày nào cũng cùng một món nên tôi chán ngấy.”",
+        "en": "Choose the word that fits the blank: 毎日同じ料理で、（　）しています。 — Meaning of the sentence: “I am fed up with the same meal every day.”"
+      },
+      "payload": {
+        "choices": [
+          "きらきら",
+          "うんざり",
+          "しみじみ",
+          "ぎっしり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「うんざり」(Chán ngấy) hợp nghĩa câu này: “Ngày nào cũng cùng một món nên tôi chán ngấy.”",
+        "en": "Correct! 「うんざり」(Fed up) fits this sentence: “I am fed up with the same meal every day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày nào cũng cùng một món nên tôi chán ngấy.”, nên cần 「うんざり」(Chán ngấy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am fed up with the same meal every day.”, so it needs 「うんざり」(Fed up); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "きらきら",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 星が、（　）光っています。 — Nghĩa của câu: “Những vì sao đang lấp lánh.”",
+        "en": "Choose the word that fits the blank: 星が、（　）光っています。 — Meaning of the sentence: “The stars are sparkling.”"
+      },
+      "payload": {
+        "choices": [
+          "たっぷり",
+          "しみじみ",
+          "きらきら",
+          "ぎっしり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きらきら」(Lấp lánh) hợp nghĩa câu này: “Những vì sao đang lấp lánh.”",
+        "en": "Correct! 「きらきら」(Sparkling) fits this sentence: “The stars are sparkling.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Những vì sao đang lấp lánh.”, nên cần 「きらきら」(Lấp lánh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The stars are sparkling.”, so it needs 「きらきら」(Sparkling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ふと",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、昔のことを思い出しました。 — Nghĩa của câu: “Bất chợt tôi nhớ lại chuyện ngày xưa.”",
+        "en": "Choose the word that fits the blank: （　）、昔のことを思い出しました。 — Meaning of the sentence: “I suddenly recalled something from the past.”"
+      },
+      "payload": {
+        "choices": [
+          "きらきら",
+          "しみじみ",
+          "うんざり",
+          "ふと"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ふと」(Chợt; bất chợt) hợp nghĩa câu này: “Bất chợt tôi nhớ lại chuyện ngày xưa.”",
+        "en": "Correct! 「ふと」(Suddenly; by chance) fits this sentence: “I suddenly recalled something from the past.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bất chợt tôi nhớ lại chuyện ngày xưa.”, nên cần 「ふと」(Chợt; bất chợt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I suddenly recalled something from the past.”, so it needs 「ふと」(Suddenly; by chance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ぎっしり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: かばんに、本が（　）入っています。 — Nghĩa của câu: “Trong cặp sách chất đầy sách.”",
+        "en": "Choose the word that fits the blank: かばんに、本が（　）入っています。 — Meaning of the sentence: “The bag is packed with books.”"
+      },
+      "payload": {
+        "choices": [
+          "ぎっしり",
+          "うんざり",
+          "しみじみ",
+          "たっぷり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぎっしり」(Chật kín; đầy ắp) hợp nghĩa câu này: “Trong cặp sách chất đầy sách.”",
+        "en": "Correct! 「ぎっしり」(Packed tightly) fits this sentence: “The bag is packed with books.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong cặp sách chất đầy sách.”, nên cần 「ぎっしり」(Chật kín; đầy ắp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The bag is packed with books.”, so it needs 「ぎっしり」(Packed tightly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "しみじみ",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ có nghĩa “Thấm thía” trong câu: 親のありがたさを、（　）感じました。",
+        "en": "Choose the correct spelling of the word meaning “Deeply” in the sentence: 親のありがたさを、（　）感じました。"
+      },
+      "payload": {
+        "choices": [
+          "みしじみ",
+          "しみじみ",
+          "しみしみ",
+          "しみみじ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しみじみ」 viết là 「しみじみ」, nghĩa là Thấm thía; sâu sắc.",
+        "en": "Correct! 「しみじみ」 is written 「しみじみ」 and means Deeply; keenly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「しみじみ」 (Thấm thía; sâu sắc); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「しみじみ」 (Deeply; keenly); the other spellings are incorrect."
+      }
+    },
+    {
+      "item": "きらきら",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ có nghĩa “Lấp lánh” trong câu: 星が、（　）光っています。",
+        "en": "Choose the correct spelling of the word meaning “Sparkling” in the sentence: 星が、（　）光っています。"
+      },
+      "payload": {
+        "choices": [
+          "きらっきら",
+          "らききら",
+          "きらきら",
+          "きららき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きらきら」 viết là 「きらきら」, nghĩa là Lấp lánh.",
+        "en": "Correct! 「きらきら」 is written 「きらきら」 and means Sparkling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「きらきら」 (Lấp lánh); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「きらきら」 (Sparkling); the other spellings are incorrect."
+      }
+    }
+  ]
+}

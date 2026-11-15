@@ -193,3 +193,45 @@ export async function kanjiUnitId(ctx: TestApp, titleEn: string): Promise<string
   if (rows.length !== 1) throw new Error(`Không có đúng một bài Kanji "${titleEn}"`);
   return rows[0]!.id;
 }
+
+// --- Luyện đọc/viết (spec 007) ---
+
+/** Đủ năm kỹ năng, gồm luyện đọc/viết (chỉ hợp lệ khi quỹ thời gian ≥ 30 phút). */
+export const PRACTICE_LEARNER_SKILLS = ['vocabulary', 'grammar', 'kanji', 'reading', 'writing'];
+
+/** Đăng ký + onboarding 30 phút/ngày có luyện đọc/viết; `overrides` ghi đè bản nháp onboarding. */
+export async function practiceLearner(
+  api: ContractClient,
+  ctx: TestApp,
+  overrides: Record<string, unknown> = {},
+): Promise<Learner> {
+  return onboardedLearner(api, ctx, {
+    dailyMinutes: 30,
+    skills: PRACTICE_LEARNER_SKILLS,
+    currentLevel: 'N5',
+    goalType: 'jlpt',
+    targetLevel: 'N4',
+    ...overrides,
+  });
+}
+
+/** Id đơn vị luyện đầu tiên (theo tiêu đề) của một loại và trình độ. */
+export async function practiceUnitId(
+  ctx: TestApp,
+  kind: 'reading' | 'writing',
+  level = 'N5',
+  estMinutes = 5,
+): Promise<string> {
+  const rows = await query<{ id: string }>(
+    ctx,
+    `SELECT id FROM learning_units WHERE kind = $1 AND level = $2 AND est_minutes = $3 AND status = 'active'
+      ORDER BY title->>'en' LIMIT 1`,
+    [kind, level, estMinutes],
+  );
+  if (rows.length === 0) throw new Error(`Không có bài ${kind} ${level} ${estMinutes} phút`);
+  return rows[0]!.id;
+}
+
+/** Tìm mục kế hoạch hôm nay theo loại bài (reading/writing); undefined nếu không có. */
+export const planItemOfKind = (plan: any, kind: 'reading' | 'writing') =>
+  (plan.items as any[]).find((i) => i.type === 'new_unit' && i.kind === kind);

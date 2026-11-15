@@ -433,7 +433,7 @@ describe('chữ duy nhất trong danh mục (research K10)', () => {
 
 describe('validateCatalog với Kanji', () => {
   const unit = (
-    kind: 'vocabulary' | 'grammar' | 'kanji',
+    kind: 'vocabulary' | 'grammar' | 'kanji' | 'reading' | 'writing',
     level: 'N5' | 'N4' | 'N3',
     over = {},
   ) => ({
@@ -447,6 +447,8 @@ describe('validateCatalog với Kanji', () => {
     unit('vocabulary', level),
     unit('grammar', level),
     unit('kanji', level),
+    unit('reading', level),
+    unit('writing', level),
   ];
   const foundation = [
     unit('vocabulary', 'N5', { tier: 'foundation' }),

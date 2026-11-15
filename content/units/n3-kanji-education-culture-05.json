@@ -1,0 +1,674 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-education-culture",
+  "title": {
+    "vi": "Kanji giáo dục – văn hóa (編 雑 歴 化 神)",
+    "en": "Education and culture kanji (編 雑 歴 化 神)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "編",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "biên; đan",
+        "en": "edit; knit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ヘン"
+        ],
+        "kunReadings": [
+          "あ.む"
+        ],
+        "strokeCount": 15
+      },
+      "examples": [
+        {
+          "ja": "編集",
+          "reading": "へんしゅう",
+          "kanjiReading": "ヘン",
+          "translation": {
+            "vi": "biên tập",
+            "en": "editing"
+          }
+        },
+        {
+          "ja": "編む",
+          "reading": "あむ",
+          "kanjiReading": "あ",
+          "translation": {
+            "vi": "đan (len)",
+            "en": "to knit"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "雑",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "tạp; lẫn lộn",
+        "en": "miscellaneous; mixed"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ザツ",
+          "ゾウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "複雑",
+          "reading": "ふくざつ",
+          "kanjiReading": "ザツ",
+          "translation": {
+            "vi": "phức tạp",
+            "en": "complicated"
+          }
+        },
+        {
+          "ja": "雑談",
+          "reading": "ざつだん",
+          "kanjiReading": "ザツ",
+          "translation": {
+            "vi": "tán gẫu",
+            "en": "chat"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歴",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "lịch; trải qua",
+        "en": "history; career"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "レキ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 14
+      },
+      "examples": [
+        {
+          "ja": "歴史",
+          "reading": "れきし",
+          "kanjiReading": "レキ",
+          "translation": {
+            "vi": "lịch sử",
+            "en": "history"
+          }
+        },
+        {
+          "ja": "学歴",
+          "reading": "がくれき",
+          "kanjiReading": "レキ",
+          "translation": {
+            "vi": "học vấn",
+            "en": "educational background"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "化",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "hóa; biến đổi",
+        "en": "change; -ization"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "カ",
+          "ケ"
+        ],
+        "kunReadings": [
+          "ば.ける",
+          "ば.かす"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "文化",
+          "reading": "ぶんか",
+          "kanjiReading": "カ",
+          "translation": {
+            "vi": "văn hóa",
+            "en": "culture"
+          }
+        },
+        {
+          "ja": "化粧",
+          "reading": "けしょう",
+          "kanjiReading": "ケ",
+          "translation": {
+            "vi": "trang điểm",
+            "en": "makeup"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "神",
+      "topic": "kanji-n3-education-culture",
+      "meaning": {
+        "vi": "thần; thần linh",
+        "en": "god; spirit"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シン",
+          "ジン"
+        ],
+        "kunReadings": [
+          "かみ",
+          "かん",
+          "こう"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "神社",
+          "reading": "じんじゃ",
+          "kanjiReading": "ジン",
+          "translation": {
+            "vi": "đền thờ thần đạo",
+            "en": "Shinto shrine"
+          }
+        },
+        {
+          "ja": "神様",
+          "reading": "かみさま",
+          "kanjiReading": "かみ",
+          "translation": {
+            "vi": "thần; ông trời",
+            "en": "god"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "編",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「編」nghĩa là gì?",
+        "en": "What does 「編」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biên; đan",
+            "en": "edit; knit"
+          },
+          {
+            "vi": "tạp; lẫn lộn",
+            "en": "miscellaneous; mixed"
+          },
+          {
+            "vi": "lịch; trải qua",
+            "en": "history; career"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 編 nghĩa là biên; đan.",
+        "en": "Correct! 編 means edit; knit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 編 nghĩa là biên; đan, như trong 「編集」 (biên tập).",
+        "en": "Not quite. 編 means edit; knit, as in 「編集」 (editing)."
+      }
+    },
+    {
+      "item": "編",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「編」 trong 「編集」 (“biên tập”).",
+        "en": "Type the reading of 「編」 in 「編集」 (“editing”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "へん",
+          "ヘン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 編集, 編 đọc là へん (âm On).",
+        "en": "Correct! In 編集, 編 is read へん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 編集 (biên tập), 編 đọc là へん (âm On).",
+        "en": "In 編集 (editing), 編 is read へん (on'yomi)."
+      }
+    },
+    {
+      "item": "編",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「編む」(đan (len)) đọc là gì?",
+        "en": "How is 「編む」 (to knit) read?"
+      },
+      "payload": {
+        "choices": [
+          "へんむ",
+          "あむ",
+          "れきし"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 編む = あむ (đan (len)); 編 đọc là あ (âm Kun).",
+        "en": "Correct! 編む = あむ (to knit); 編 is read あ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "編む đọc là あむ (đan (len)): 編 mang âm Kun あ.",
+        "en": "編む is read あむ (to knit): 編 takes the kun'yomi あ."
+      }
+    },
+    {
+      "item": "雑",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雑」nghĩa là gì?",
+        "en": "What does 「雑」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lịch; trải qua",
+            "en": "history; career"
+          },
+          {
+            "vi": "tạp; lẫn lộn",
+            "en": "miscellaneous; mixed"
+          },
+          {
+            "vi": "hóa; biến đổi",
+            "en": "change; -ization"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雑 nghĩa là tạp; lẫn lộn.",
+        "en": "Correct! 雑 means miscellaneous; mixed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 雑 nghĩa là tạp; lẫn lộn, như trong 「複雑」 (phức tạp).",
+        "en": "Not quite. 雑 means miscellaneous; mixed, as in 「複雑」 (complicated)."
+      }
+    },
+    {
+      "item": "雑",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「雑」 trong 「複雑」 (“phức tạp”).",
+        "en": "Type the reading of 「雑」 in 「複雑」 (“complicated”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ざつ",
+          "ザツ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 複雑, 雑 đọc là ざつ (âm On).",
+        "en": "Correct! In 複雑, 雑 is read ざつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 複雑 (phức tạp), 雑 đọc là ざつ (âm On).",
+        "en": "In 複雑 (complicated), 雑 is read ざつ (on'yomi)."
+      }
+    },
+    {
+      "item": "雑",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「雑談」(tán gẫu) đọc là gì?",
+        "en": "How is 「雑談」 (chat) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぞうだん",
+          "さつだん",
+          "ざつだん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 雑談 = ざつだん (tán gẫu); 雑 đọc là ざつ (âm On).",
+        "en": "Correct! 雑談 = ざつだん (chat); 雑 is read ざつ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "雑談 đọc là ざつだん (tán gẫu): 雑 mang âm On ざつ.",
+        "en": "雑談 is read ざつだん (chat): 雑 takes the on'yomi ざつ."
+      }
+    },
+    {
+      "item": "歴",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「歴」nghĩa là gì?",
+        "en": "What does 「歴」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hóa; biến đổi",
+            "en": "change; -ization"
+          },
+          {
+            "vi": "thần; thần linh",
+            "en": "god; spirit"
+          },
+          {
+            "vi": "lịch; trải qua",
+            "en": "history; career"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 歴 nghĩa là lịch; trải qua.",
+        "en": "Correct! 歴 means history; career."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 歴 nghĩa là lịch; trải qua, như trong 「歴史」 (lịch sử).",
+        "en": "Not quite. 歴 means history; career, as in 「歴史」 (history)."
+      }
+    },
+    {
+      "item": "歴",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「歴」 trong 「歴史」 (“lịch sử”).",
+        "en": "Type the reading of 「歴」 in 「歴史」 (“history”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "れき",
+          "レキ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歴史, 歴 đọc là れき (âm On).",
+        "en": "Correct! In 歴史, 歴 is read れき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歴史 (lịch sử), 歴 đọc là れき (âm On).",
+        "en": "In 歴史 (history), 歴 is read れき (on'yomi)."
+      }
+    },
+    {
+      "item": "歴",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「学歴」(học vấn) đọc là gì?",
+        "en": "How is 「学歴」 (educational background) read?"
+      },
+      "payload": {
+        "choices": [
+          "がくれき",
+          "がくば",
+          "がくか"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 学歴 = がくれき (học vấn); 歴 đọc là れき (âm On).",
+        "en": "Correct! 学歴 = がくれき (educational background); 歴 is read れき (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "学歴 đọc là がくれき (học vấn): 歴 mang âm On れき.",
+        "en": "学歴 is read がくれき (educational background): 歴 takes the on'yomi れき."
+      }
+    },
+    {
+      "item": "化",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「化」nghĩa là gì?",
+        "en": "What does 「化」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "hóa; biến đổi",
+            "en": "change; -ization"
+          },
+          {
+            "vi": "thần; thần linh",
+            "en": "god; spirit"
+          },
+          {
+            "vi": "biên; đan",
+            "en": "edit; knit"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 化 nghĩa là hóa; biến đổi.",
+        "en": "Correct! 化 means change; -ization."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 化 nghĩa là hóa; biến đổi, như trong 「文化」 (văn hóa).",
+        "en": "Not quite. 化 means change; -ization, as in 「文化」 (culture)."
+      }
+    },
+    {
+      "item": "化",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「化」 trong 「文化」 (“văn hóa”).",
+        "en": "Type the reading of 「化」 in 「文化」 (“culture”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "か",
+          "カ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 文化, 化 đọc là か (âm On).",
+        "en": "Correct! In 文化, 化 is read か (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 文化 (văn hóa), 化 đọc là か (âm On).",
+        "en": "In 文化 (culture), 化 is read か (on'yomi)."
+      }
+    },
+    {
+      "item": "化",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「化粧」(trang điểm) đọc là gì?",
+        "en": "How is 「化粧」 (makeup) read?"
+      },
+      "payload": {
+        "choices": [
+          "ばしょう",
+          "けしょう",
+          "げしょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 化粧 = けしょう (trang điểm); 化 đọc là け (âm On).",
+        "en": "Correct! 化粧 = けしょう (makeup); 化 is read け (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "化粧 đọc là けしょう (trang điểm): 化 mang âm On け.",
+        "en": "化粧 is read けしょう (makeup): 化 takes the on'yomi け."
+      }
+    },
+    {
+      "item": "神",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「神」nghĩa là gì?",
+        "en": "What does 「神」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "biên; đan",
+            "en": "edit; knit"
+          },
+          {
+            "vi": "thần; thần linh",
+            "en": "god; spirit"
+          },
+          {
+            "vi": "tạp; lẫn lộn",
+            "en": "miscellaneous; mixed"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 神 nghĩa là thần; thần linh.",
+        "en": "Correct! 神 means god; spirit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 神 nghĩa là thần; thần linh, như trong 「神社」 (đền thờ thần đạo).",
+        "en": "Not quite. 神 means god; spirit, as in 「神社」 (Shinto shrine)."
+      }
+    },
+    {
+      "item": "神",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「神」 trong 「神社」 (“đền thờ thần đạo”).",
+        "en": "Type the reading of 「神」 in 「神社」 (“Shinto shrine”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じん",
+          "ジン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 神社, 神 đọc là じん (âm On).",
+        "en": "Correct! In 神社, 神 is read じん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 神社 (đền thờ thần đạo), 神 đọc là じん (âm On).",
+        "en": "In 神社 (Shinto shrine), 神 is read じん (on'yomi)."
+      }
+    },
+    {
+      "item": "神",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「神様」(thần; ông trời) đọc là gì?",
+        "en": "How is 「神様」 (god) read?"
+      },
+      "payload": {
+        "choices": [
+          "しんさま",
+          "がみさま",
+          "かみさま"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 神様 = かみさま (thần; ông trời); 神 đọc là かみ (âm Kun).",
+        "en": "Correct! 神様 = かみさま (god); 神 is read かみ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "神様 đọc là かみさま (thần; ông trời): 神 mang âm Kun かみ.",
+        "en": "神様 is read かみさま (god): 神 takes the kun'yomi かみ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "編",
+            {
+              "vi": "biên; đan",
+              "en": "edit; knit"
+            }
+          ],
+          [
+            "雑",
+            {
+              "vi": "tạp; lẫn lộn",
+              "en": "miscellaneous; mixed"
+            }
+          ],
+          [
+            "歴",
+            {
+              "vi": "lịch; trải qua",
+              "en": "history; career"
+            }
+          ],
+          [
+            "化",
+            {
+              "vi": "hóa; biến đổi",
+              "en": "change; -ization"
+            }
+          ],
+          [
+            "神",
+            {
+              "vi": "thần; thần linh",
+              "en": "god; spirit"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

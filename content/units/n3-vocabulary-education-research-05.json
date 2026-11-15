@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-education-research",
+  "title": {
+    "vi": "Học kỳ và chương trình học",
+    "en": "Terms and courses"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1520,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "学期",
+      "reading": "がっき",
+      "meaning": {
+        "vi": "Học kỳ",
+        "en": "Term; semester"
+      },
+      "examples": [
+        {
+          "ja": "新しい学期が、来週から始まります。",
+          "reading": "あたらしいがっきが、らいしゅうからはじまります。",
+          "translation": {
+            "vi": "Học kỳ mới sẽ bắt đầu từ tuần sau.",
+            "en": "The new term starts next week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "課程",
+      "reading": "かてい",
+      "meaning": {
+        "vi": "Chương trình học; khóa trình",
+        "en": "Course; curriculum"
+      },
+      "examples": [
+        {
+          "ja": "この学校には、二年間の課程があります。",
+          "reading": "このがっこうには、にねんかんのかていがあります。",
+          "translation": {
+            "vi": "Trường này có chương trình học hai năm.",
+            "en": "This school has a two-year course."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "修了",
+      "reading": "しゅうりょう",
+      "meaning": {
+        "vi": "Hoàn thành (khóa học)",
+        "en": "Completion (of a course)"
+      },
+      "examples": [
+        {
+          "ja": "すべての科目を、無事に修了しました。",
+          "reading": "すべてのかもくを、ぶじにしゅうりょうしました。",
+          "translation": {
+            "vi": "Tôi đã hoàn thành tất cả các môn học một cách suôn sẻ.",
+            "en": "I completed all the subjects without trouble."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "在学",
+      "reading": "ざいがく",
+      "meaning": {
+        "vi": "Đang theo học",
+        "en": "Being enrolled (in school)"
+      },
+      "examples": [
+        {
+          "ja": "彼は、大学に在学中に留学しました。",
+          "reading": "かれは、だいがくにざいがくちゅうにりゅうがくしました。",
+          "translation": {
+            "vi": "Anh ấy đã đi du học trong lúc còn đang học đại học.",
+            "en": "He studied abroad while enrolled at university."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保育園",
+      "reading": "ほいくえん",
+      "meaning": {
+        "vi": "Nhà trẻ",
+        "en": "Nursery school; daycare"
+      },
+      "examples": [
+        {
+          "ja": "共働きなので、子どもを保育園に預けています。",
+          "reading": "ともばたらきなので、こどもをほいくえんにあずけています。",
+          "translation": {
+            "vi": "Vì vợ chồng cùng đi làm nên tôi gửi con ở nhà trẻ.",
+            "en": "Both of us work, so we leave our child at a daycare."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "受講",
+      "reading": "じゅこう",
+      "meaning": {
+        "vi": "Theo học (khóa); nghe giảng",
+        "en": "Attending a course"
+      },
+      "examples": [
+        {
+          "ja": "この講座は、オンラインでも受講できます。",
+          "reading": "このこうざは、オンラインでもじゅこうできます。",
+          "translation": {
+            "vi": "Khóa học này cũng có thể theo học trực tuyến.",
+            "en": "You can take this course online too."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "学期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）が、来週から始まります。 — Nghĩa của câu: “Học kỳ mới sẽ bắt đầu từ tuần sau.”",
+        "en": "Choose the word that fits the blank: 新しい（　）が、来週から始まります。 — Meaning of the sentence: “The new term starts next week.”"
+      },
+      "payload": {
+        "choices": [
+          "学期",
+          "在学",
+          "課程",
+          "修了"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「学期」(Học kỳ) hợp nghĩa câu này: “Học kỳ mới sẽ bắt đầu từ tuần sau.”",
+        "en": "Correct! 「学期」(Term; semester) fits this sentence: “The new term starts next week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Học kỳ mới sẽ bắt đầu từ tuần sau.”, nên cần 「学期」(Học kỳ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new term starts next week.”, so it needs 「学期」(Term; semester); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "課程",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この学校には、二年間の（　）があります。 — Nghĩa của câu: “Trường này có chương trình học hai năm.”",
+        "en": "Choose the word that fits the blank: この学校には、二年間の（　）があります。 — Meaning of the sentence: “This school has a two-year course.”"
+      },
+      "payload": {
+        "choices": [
+          "修了",
+          "課程",
+          "学期",
+          "在学"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「課程」(Chương trình học; khóa trình) hợp nghĩa câu này: “Trường này có chương trình học hai năm.”",
+        "en": "Correct! 「課程」(Course; curriculum) fits this sentence: “This school has a two-year course.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trường này có chương trình học hai năm.”, nên cần 「課程」(Chương trình học; khóa trình); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This school has a two-year course.”, so it needs 「課程」(Course; curriculum); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "修了",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: すべての科目を、無事に（　）しました。 — Nghĩa của câu: “Tôi đã hoàn thành tất cả các môn học một cách suôn sẻ.”",
+        "en": "Choose the word that fits the blank: すべての科目を、無事に（　）しました。 — Meaning of the sentence: “I completed all the subjects without trouble.”"
+      },
+      "payload": {
+        "choices": [
+          "受講",
+          "学期",
+          "修了",
+          "保育園"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「修了」(Hoàn thành (khóa học)) hợp nghĩa câu này: “Tôi đã hoàn thành tất cả các môn học một cách suôn sẻ.”",
+        "en": "Correct! 「修了」(Completion (of a course)) fits this sentence: “I completed all the subjects without trouble.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã hoàn thành tất cả các môn học một cách suôn sẻ.”, nên cần 「修了」(Hoàn thành (khóa học)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I completed all the subjects without trouble.”, so it needs 「修了」(Completion (of a course)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "在学",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、大学に（　）中に留学しました。 — Nghĩa của câu: “Anh ấy đã đi du học trong lúc còn đang học đại học.”",
+        "en": "Choose the word that fits the blank: 彼は、大学に（　）中に留学しました。 — Meaning of the sentence: “He studied abroad while enrolled at university.”"
+      },
+      "payload": {
+        "choices": [
+          "保育園",
+          "学期",
+          "受講",
+          "在学"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「在学」(Đang theo học) hợp nghĩa câu này: “Anh ấy đã đi du học trong lúc còn đang học đại học.”",
+        "en": "Correct! 「在学」(Being enrolled (in school)) fits this sentence: “He studied abroad while enrolled at university.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy đã đi du học trong lúc còn đang học đại học.”, nên cần 「在学」(Đang theo học); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He studied abroad while enrolled at university.”, so it needs 「在学」(Being enrolled (in school)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保育園",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 共働きなので、子どもを（　）に預けています。 — Nghĩa của câu: “Vì vợ chồng cùng đi làm nên tôi gửi con ở nhà trẻ.”",
+        "en": "Choose the word that fits the blank: 共働きなので、子どもを（　）に預けています。 — Meaning of the sentence: “Both of us work, so we leave our child at a daycare.”"
+      },
+      "payload": {
+        "choices": [
+          "保育園",
+          "学期",
+          "課程",
+          "受講"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保育園」(Nhà trẻ) hợp nghĩa câu này: “Vì vợ chồng cùng đi làm nên tôi gửi con ở nhà trẻ.”",
+        "en": "Correct! 「保育園」(Nursery school; daycare) fits this sentence: “Both of us work, so we leave our child at a daycare.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì vợ chồng cùng đi làm nên tôi gửi con ở nhà trẻ.”, nên cần 「保育園」(Nhà trẻ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Both of us work, so we leave our child at a daycare.”, so it needs 「保育園」(Nursery school; daycare); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "受講",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この講座は、オンラインでも（　）できます。 — Nghĩa của câu: “Khóa học này cũng có thể theo học trực tuyến.”",
+        "en": "Choose the word that fits the blank: この講座は、オンラインでも（　）できます。 — Meaning of the sentence: “You can take this course online too.”"
+      },
+      "payload": {
+        "choices": [
+          "保育園",
+          "受講",
+          "学期",
+          "課程"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「受講」(Theo học (khóa); nghe giảng) hợp nghĩa câu này: “Khóa học này cũng có thể theo học trực tuyến.”",
+        "en": "Correct! 「受講」(Attending a course) fits this sentence: “You can take this course online too.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khóa học này cũng có thể theo học trực tuyến.”, nên cần 「受講」(Theo học (khóa); nghe giảng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can take this course online too.”, so it needs 「受講」(Attending a course); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "学期",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 新しい「学期」が、来週から始まります。",
+        "en": "Choose the correct reading of the word in 「」: 新しい「学期」が、来週から始まります。"
+      },
+      "payload": {
+        "choices": [
+          "ほいくえん",
+          "がっき",
+          "かてい",
+          "ざいがく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「学期」 đọc là 「がっき」, nghĩa là Học kỳ.",
+        "en": "Correct! 「学期」 is read 「がっき」 and means Term; semester."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「学期」 đọc là 「がっき」 (Học kỳ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「学期」 is read 「がっき」 (Term; semester); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "在学",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、大学に「在学」中に留学しました。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、大学に「在学」中に留学しました。"
+      },
+      "payload": {
+        "choices": [
+          "がっき",
+          "かてい",
+          "ざいがく",
+          "ほいくえん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「在学」 đọc là 「ざいがく」, nghĩa là Đang theo học.",
+        "en": "Correct! 「在学」 is read 「ざいがく」 and means Being enrolled (in school)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「在学」 đọc là 「ざいがく」 (Đang theo học); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「在学」 is read 「ざいがく」 (Being enrolled (in school)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "修了",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: すべての科目を、無事に「しゅうりょう」しました。",
+        "en": "Choose the correct way to write the word in 「」: すべての科目を、無事に「しゅうりょう」しました。"
+      },
+      "payload": {
+        "choices": [
+          "課程",
+          "学期",
+          "修了",
+          "在学"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しゅうりょう」 viết là 「修了」, nghĩa là Hoàn thành (khóa học).",
+        "en": "Correct! 「しゅうりょう」 is written 「修了」 and means Completion (of a course)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しゅうりょう」 viết là 「修了」 (Hoàn thành (khóa học)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しゅうりょう」 is written 「修了」 (Completion (of a course)); the other words are read differently."
+      }
+    }
+  ]
+}

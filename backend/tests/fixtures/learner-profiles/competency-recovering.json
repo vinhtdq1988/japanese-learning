@@ -1,0 +1,53 @@
+{
+  "id": "competency-recovering",
+  "description": "Mảng 'verbs-masu' từng yếu (30% rồi 50% với ≥ 8 câu) nay ≥ 70% trong cửa sổ 20 câu gần nhất → mức 'good' và không còn trong danh sách mảng yếu.",
+  "asOf": "2026-01-08",
+  "profile": {
+    "currentLevel": "N5",
+    "goalType": "work",
+    "targetLevel": null,
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": null,
+  "lastActiveDate": "2026-01-07",
+  "pausePeriods": [],
+  "history": [
+    {
+      "date": "2026-01-02",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [0, 1, 0, 0, 1, 0, 0, 1, 0, 0]
+    },
+    {
+      "date": "2026-01-05",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [1, 0, 1, 1, 0, 1, 1, 1, 0, 1]
+    },
+    {
+      "date": "2026-01-07",
+      "topic": "verbs-masu",
+      "context": "lesson",
+      "results": [1, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+    }
+  ],
+  "reviewBacklog": [],
+  "expected": {
+    "competency": {
+      "skills": {
+        "vocabulary": "insufficient",
+        "grammar": "good"
+      },
+      "topics": {
+        "verbs-masu": "good"
+      },
+      "weakTopics": []
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-daily-home",
+  "title": {
+    "vi": "Kanji đời sống – nhà cửa (宅 居 宿 夫)",
+    "en": "Daily life and home kanji (宅 居 宿 夫)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "宅",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "nhà; tư gia",
+        "en": "home; residence"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "タク"
+        ],
+        "kunReadings": [],
+        "strokeCount": 6
+      },
+      "examples": [
+        {
+          "ja": "自宅",
+          "reading": "じたく",
+          "kanjiReading": "タク",
+          "translation": {
+            "vi": "nhà riêng",
+            "en": "one's home"
+          }
+        },
+        {
+          "ja": "住宅",
+          "reading": "じゅうたく",
+          "kanjiReading": "タク",
+          "translation": {
+            "vi": "nhà ở",
+            "en": "housing"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "居",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "ở; có mặt",
+        "en": "reside; be present"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョ"
+        ],
+        "kunReadings": [
+          "い.る"
+        ],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "住居",
+          "reading": "じゅうきょ",
+          "kanjiReading": "キョ",
+          "translation": {
+            "vi": "nơi ở",
+            "en": "residence"
+          }
+        },
+        {
+          "ja": "居間",
+          "reading": "いま",
+          "kanjiReading": "い",
+          "translation": {
+            "vi": "phòng khách",
+            "en": "living room"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "宿",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "trọ; nghỉ trọ",
+        "en": "lodging; inn"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "シュク"
+        ],
+        "kunReadings": [
+          "やど",
+          "やど.る"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "宿題",
+          "reading": "しゅくだい",
+          "kanjiReading": "シュク",
+          "translation": {
+            "vi": "bài tập về nhà",
+            "en": "homework"
+          }
+        },
+        {
+          "ja": "宿",
+          "reading": "やど",
+          "kanjiReading": "やど",
+          "translation": {
+            "vi": "nhà trọ",
+            "en": "inn"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "夫",
+      "topic": "kanji-n3-daily-home",
+      "meaning": {
+        "vi": "chồng; phu",
+        "en": "husband; man"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "フ",
+          "フウ"
+        ],
+        "kunReadings": [
+          "おっと"
+        ],
+        "strokeCount": 4
+      },
+      "examples": [
+        {
+          "ja": "夫婦",
+          "reading": "ふうふ",
+          "kanjiReading": "フウ",
+          "translation": {
+            "vi": "vợ chồng",
+            "en": "married couple"
+          }
+        },
+        {
+          "ja": "夫",
+          "reading": "おっと",
+          "kanjiReading": "おっと",
+          "translation": {
+            "vi": "chồng",
+            "en": "husband"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "宅",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「宅」nghĩa là gì?",
+        "en": "What does 「宅」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "nhà; tư gia",
+            "en": "home; residence"
+          },
+          {
+            "vi": "ở; có mặt",
+            "en": "reside; be present"
+          },
+          {
+            "vi": "trọ; nghỉ trọ",
+            "en": "lodging; inn"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 宅 nghĩa là nhà; tư gia.",
+        "en": "Correct! 宅 means home; residence."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 宅 nghĩa là nhà; tư gia, như trong 「自宅」 (nhà riêng).",
+        "en": "Not quite. 宅 means home; residence, as in 「自宅」 (one's home)."
+      }
+    },
+    {
+      "item": "宅",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「宅」 trong 「自宅」 (“nhà riêng”).",
+        "en": "Type the reading of 「宅」 in 「自宅」 (“one's home”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "たく",
+          "タク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 自宅, 宅 đọc là たく (âm On).",
+        "en": "Correct! In 自宅, 宅 is read たく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 自宅 (nhà riêng), 宅 đọc là たく (âm On).",
+        "en": "In 自宅 (one's home), 宅 is read たく (on'yomi)."
+      }
+    },
+    {
+      "item": "宅",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「住宅」(nhà ở) đọc là gì?",
+        "en": "How is 「住宅」 (housing) read?"
+      },
+      "payload": {
+        "choices": [
+          "じゅうだく",
+          "じゅうたく",
+          "じゅうい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 住宅 = じゅうたく (nhà ở); 宅 đọc là たく (âm On).",
+        "en": "Correct! 住宅 = じゅうたく (housing); 宅 is read たく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "住宅 đọc là じゅうたく (nhà ở): 宅 mang âm On たく.",
+        "en": "住宅 is read じゅうたく (housing): 宅 takes the on'yomi たく."
+      }
+    },
+    {
+      "item": "居",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「居」nghĩa là gì?",
+        "en": "What does 「居」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "trọ; nghỉ trọ",
+            "en": "lodging; inn"
+          },
+          {
+            "vi": "ở; có mặt",
+            "en": "reside; be present"
+          },
+          {
+            "vi": "chồng; phu",
+            "en": "husband; man"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 居 nghĩa là ở; có mặt.",
+        "en": "Correct! 居 means reside; be present."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 居 nghĩa là ở; có mặt, như trong 「住居」 (nơi ở).",
+        "en": "Not quite. 居 means reside; be present, as in 「住居」 (residence)."
+      }
+    },
+    {
+      "item": "居",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「居」 trong 「住居」 (“nơi ở”).",
+        "en": "Type the reading of 「居」 in 「住居」 (“residence”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょ",
+          "キョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 住居, 居 đọc là きょ (âm On).",
+        "en": "Correct! In 住居, 居 is read きょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 住居 (nơi ở), 居 đọc là きょ (âm On).",
+        "en": "In 住居 (residence), 居 is read きょ (on'yomi)."
+      }
+    },
+    {
+      "item": "居",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「居間」(phòng khách) đọc là gì?",
+        "en": "How is 「居間」 (living room) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょま",
+          "やどま",
+          "いま"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 居間 = いま (phòng khách); 居 đọc là い (âm Kun).",
+        "en": "Correct! 居間 = いま (living room); 居 is read い (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "居間 đọc là いま (phòng khách): 居 mang âm Kun い.",
+        "en": "居間 is read いま (living room): 居 takes the kun'yomi い."
+      }
+    },
+    {
+      "item": "宿",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「宿」nghĩa là gì?",
+        "en": "What does 「宿」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chồng; phu",
+            "en": "husband; man"
+          },
+          {
+            "vi": "nhà; tư gia",
+            "en": "home; residence"
+          },
+          {
+            "vi": "trọ; nghỉ trọ",
+            "en": "lodging; inn"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 宿 nghĩa là trọ; nghỉ trọ.",
+        "en": "Correct! 宿 means lodging; inn."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 宿 nghĩa là trọ; nghỉ trọ, như trong 「宿題」 (bài tập về nhà).",
+        "en": "Not quite. 宿 means lodging; inn, as in 「宿題」 (homework)."
+      }
+    },
+    {
+      "item": "宿",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「宿」 trong 「宿題」 (“bài tập về nhà”).",
+        "en": "Type the reading of 「宿」 in 「宿題」 (“homework”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "しゅく",
+          "シュク"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 宿題, 宿 đọc là しゅく (âm On).",
+        "en": "Correct! In 宿題, 宿 is read しゅく (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 宿題 (bài tập về nhà), 宿 đọc là しゅく (âm On).",
+        "en": "In 宿題 (homework), 宿 is read しゅく (on'yomi)."
+      }
+    },
+    {
+      "item": "宿",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「宿」(nhà trọ; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「宿」 (inn; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "やど",
+          "しゅく",
+          "いま"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 宿 = やど (nhà trọ); 宿 đọc là やど (âm Kun).",
+        "en": "Correct! 宿 = やど (inn); 宿 is read やど (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "宿 đọc là やど (nhà trọ): 宿 mang âm Kun やど.",
+        "en": "宿 is read やど (inn): 宿 takes the kun'yomi やど."
+      }
+    },
+    {
+      "item": "夫",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夫」nghĩa là gì?",
+        "en": "What does 「夫」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chồng; phu",
+            "en": "husband; man"
+          },
+          {
+            "vi": "nhà; tư gia",
+            "en": "home; residence"
+          },
+          {
+            "vi": "ở; có mặt",
+            "en": "reside; be present"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夫 nghĩa là chồng; phu.",
+        "en": "Correct! 夫 means husband; man."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 夫 nghĩa là chồng; phu, như trong 「夫婦」 (vợ chồng).",
+        "en": "Not quite. 夫 means husband; man, as in 「夫婦」 (married couple)."
+      }
+    },
+    {
+      "item": "夫",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「夫」 trong 「夫婦」 (“vợ chồng”).",
+        "en": "Type the reading of 「夫」 in 「夫婦」 (“married couple”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ふう",
+          "フウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 夫婦, 夫 đọc là ふう (âm On).",
+        "en": "Correct! In 夫婦, 夫 is read ふう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 夫婦 (vợ chồng), 夫 đọc là ふう (âm On).",
+        "en": "In 夫婦 (married couple), 夫 is read ふう (on'yomi)."
+      }
+    },
+    {
+      "item": "夫",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「夫」(chồng; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「夫」 (husband; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "ふ",
+          "おっと",
+          "じたく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 夫 = おっと (chồng); 夫 đọc là おっと (âm Kun).",
+        "en": "Correct! 夫 = おっと (husband); 夫 is read おっと (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "夫 đọc là おっと (chồng): 夫 mang âm Kun おっと.",
+        "en": "夫 is read おっと (husband): 夫 takes the kun'yomi おっと."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "宅",
+            {
+              "vi": "nhà; tư gia",
+              "en": "home; residence"
+            }
+          ],
+          [
+            "居",
+            {
+              "vi": "ở; có mặt",
+              "en": "reside; be present"
+            }
+          ],
+          [
+            "宿",
+            {
+              "vi": "trọ; nghỉ trọ",
+              "en": "lodging; inn"
+            }
+          ],
+          [
+            "夫",
+            {
+              "vi": "chồng; phu",
+              "en": "husband; man"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

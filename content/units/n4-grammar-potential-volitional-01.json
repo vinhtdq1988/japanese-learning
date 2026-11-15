@@ -1,0 +1,319 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-potential-volitional",
+  "title": {
+    "vi": "Khả năng: thể khả năng và 〜ことができる",
+    "en": "Ability: the potential form and 〜ことができる"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "可能形（五段・一段・する／くる）",
+      "meaning": {
+        "vi": "Thể khả năng",
+        "en": "Potential form"
+      },
+      "explanation": {
+        "vi": "Cách chia: nhóm 五段 đổi đuôi う→え (書く→書ける); nhóm 一段 bỏ る thêm られる (食べる→食べられる); する→できる, くる→こられる. Tân ngữ thường dùng 「が」 (日本語が話せる). Thể khả năng đều là động từ nhóm 一段.",
+        "en": "Conjugation: 五段 verbs change the final う-sound to え (書く→書ける); 一段 verbs drop る and add られる (食べる→食べられる); する→できる, くる→こられる. The object usually takes 「が」 (日本語が話せる). Potential verbs all conjugate as 一段 verbs."
+      },
+      "examples": [
+        {
+          "ja": "私は日本語が少し話せます。",
+          "reading": "わたしはにほんごがすこしはなせます。",
+          "translation": {
+            "vi": "Tôi nói được một chút tiếng Nhật.",
+            "en": "I can speak a little Japanese."
+          }
+        },
+        {
+          "ja": "朝早く起きられません。",
+          "reading": "あさはやくおきられません。",
+          "translation": {
+            "vi": "Tôi không thể dậy sớm vào buổi sáng.",
+            "en": "I cannot get up early in the morning."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-019"
+    },
+    {
+      "japanese": "〜ことができる",
+      "meaning": {
+        "vi": "Có thể ~",
+        "en": "Be able to ~"
+      },
+      "explanation": {
+        "vi": "Cách dùng: động từ thể từ điển + ことができる (ことができます). Diễn tả khả năng hoặc điều được phép/có điều kiện để làm; trang trọng hơn thể khả năng, hay dùng trong thông báo, quy định. Phủ định: ことができない.",
+        "en": "Usage: verb dictionary form + ことができる. Expresses ability or that something is possible/permitted under the conditions; more formal than the potential form and common in notices and rules. Negative: ことができない."
+      },
+      "examples": [
+        {
+          "ja": "ここで写真を撮ることができます。",
+          "reading": "ここでしゃしんをとることができます。",
+          "translation": {
+            "vi": "Bạn có thể chụp ảnh ở đây.",
+            "en": "You can take photos here."
+          }
+        },
+        {
+          "ja": "私は漢字を読むことができます。",
+          "reading": "わたしはかんじをよむことができます。",
+          "translation": {
+            "vi": "Tôi có thể đọc chữ Hán.",
+            "en": "I can read kanji."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-020"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "可能形（五段・一段・する／くる）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は日本語が（　）。",
+        "en": "Choose the correct option for the blank:\n私は日本語が（　）。"
+      },
+      "payload": {
+        "choices": [
+          "話します",
+          "話させます",
+          "話せます",
+          "話されます"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「話す」 thuộc nhóm 五段, thể khả năng đổi đuôi す→せ: 「話せます」.",
+        "en": "Correct! 「話す」 is a 五段 verb, and its potential form changes す→せ: 「話せます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「話す」 thuộc nhóm 五段, thể khả năng đổi đuôi す→せ: 「話せます」.",
+        "en": "Not quite. 「話す」 is a 五段 verb, and its potential form changes す→せ: 「話せます」."
+      }
+    },
+    {
+      "item": "可能形（五段・一段・する／くる）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n朝は六時に起き（　）。",
+        "en": "Choose the correct option for the blank:\n朝は六時に起き（　）。"
+      },
+      "payload": {
+        "choices": [
+          "れます",
+          "られます",
+          "せます",
+          "させます"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「起きる」 thuộc nhóm 一段 nên thể khả năng là 「起きられる」.",
+        "en": "Correct! 「起きる」 is an 一段 verb, so the potential form is 「起きられる」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「起きる」 thuộc nhóm 一段 nên thể khả năng là 「起きられる」.",
+        "en": "Not quite. 「起きる」 is an 一段 verb, so the potential form is 「起きられる」."
+      }
+    },
+    {
+      "item": "可能形（五段・一段・する／くる）",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日は会社に来___ません。",
+        "en": "Choose the correct option for the blank:\n明日は会社に来___ません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "られ"
+        ],
+        "hint": "くる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「来る」 có thể khả năng là 「来られる」 (こられる), nên phủ định lịch sự là 「来られません」.",
+        "en": "Correct! The potential of 「来る」 is 「来られる」 (こられる), so the polite negative is 「来られません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「来る」 có thể khả năng là 「来られる」 (こられる), nên phủ định lịch sự là 「来られません」.",
+        "en": "Not quite. The potential of 「来る」 is 「来られる」 (こられる), so the polite negative is 「来られません」."
+      }
+    },
+    {
+      "item": "可能形（五段・一段・する／くる）",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "私は日本語が話せます。",
+          "私は日本語が話しれます。",
+          "私は日本語を話せるます。",
+          "私は日本語が話せられます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「話す」 → 「話せる」 → 「話せます」; không thêm られ vào động từ nhóm 五段.",
+        "en": "Correct! 「話す」→「話せる」→「話せます」; られ is not added to 五段 verbs."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「話す」 → 「話せる」 → 「話せます」; không thêm られ vào động từ nhóm 五段.",
+        "en": "Not quite. 「話す」→「話せる」→「話せます」; られ is not added to 五段 verbs."
+      }
+    },
+    {
+      "item": "〜ことができる",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nここでは、たばこを吸う（　）できません。",
+        "en": "Choose the correct option for the blank:\nここでは、たばこを吸う（　）できません。"
+      },
+      "payload": {
+        "choices": [
+          "ことを",
+          "ことに",
+          "ことで",
+          "ことが"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「できる」 đi với 「が」: 「吸うことができません」.",
+        "en": "Correct! 「できる」 takes 「が」: 「吸うことができません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「できる」 đi với 「が」: 「吸うことができません」.",
+        "en": "Not quite. 「できる」 takes 「が」: 「吸うことができません」."
+      }
+    },
+    {
+      "item": "〜ことができる",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n私は漢字を読む___ができます。",
+        "en": "Choose the correct option for the blank:\n私は漢字を読む___ができます。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "こと"
+        ],
+        "hint": "〜ことができる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu là 「動詞の辞書形 + ことができる」: 「読むことができます」.",
+        "en": "Correct! The pattern is 「verb dictionary form + ことができる」: 「読むことができます」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu là 「動詞の辞書形 + ことができる」: 「読むことができます」.",
+        "en": "Not quite. The pattern is 「verb dictionary form + ことができる」: 「読むことができます」."
+      }
+    },
+    {
+      "item": "〜ことができる",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "この図書館では、本を借りるができます。",
+          "この図書館では、本を借りたことができます。",
+          "この図書館では、本を借りることができます。",
+          "この図書館では、本を借りてことができます。"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Trước 「ことができる」 phải là thể từ điển (借りる) và cần 「こと」.",
+        "en": "Correct! Before 「ことができる」 the verb must be in dictionary form (借りる), and 「こと」 is required."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Trước 「ことができる」 phải là thể từ điển (借りる) và cần 「こと」.",
+        "en": "Not quite. Before 「ことができる」 the verb must be in dictionary form (借りる), and 「こと」 is required."
+      }
+    },
+    {
+      "item": "可能形（五段・一段・する／くる）",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n辞書を見ないで、漢字が書け（　）。",
+        "en": "Choose the correct option for the blank:\n辞書を見ないで、漢字が書け（　）。"
+      },
+      "payload": {
+        "choices": [
+          "れます",
+          "ます",
+          "られます",
+          "させます"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「書く」 → 「書ける」 → 「書けます」; 「書け」 đã là thể khả năng nên chỉ thêm 「ます」.",
+        "en": "Correct! 「書く」→「書ける」→「書けます」; 「書け」 is already the potential stem, so only 「ます」 is added."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「書く」 → 「書ける」 → 「書けます」; 「書け」 đã là thể khả năng nên chỉ thêm 「ます」.",
+        "en": "Not quite. 「書く」→「書ける」→「書けます」; 「書け」 is already the potential stem, so only 「ます」 is added."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "可能形（五段・一段・する／くる）",
+            {
+              "vi": "Thể khả năng",
+              "en": "Potential form"
+            }
+          ],
+          [
+            "〜ことができる",
+            {
+              "vi": "Có thể ~",
+              "en": "Be able to ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

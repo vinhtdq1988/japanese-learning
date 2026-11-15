@@ -128,6 +128,33 @@ export async function lastNewUnitPlanKinds(
   return rows.map((r) => r.kind);
 }
 
+/**
+ * Loại luyện (reading/writing) của lần luyện gần nhất trong các kế hoạch TRƯỚC `before`; null nếu chưa luyện lần
+ * nào. Dùng để luân phiên đọc ↔ viết ở `applyPracticeSlot` (spec 007).
+ */
+export async function lastPracticeKind(
+  db: DbExecutor,
+  userId: string,
+  before: LocalDate,
+): Promise<'reading' | 'writing' | null> {
+  const [row] = await db
+    .select({ kind: learningUnits.kind })
+    .from(dailyPlanItems)
+    .innerJoin(dailyPlans, eq(dailyPlans.id, dailyPlanItems.planId))
+    .innerJoin(learningUnits, eq(learningUnits.id, dailyPlanItems.unitId))
+    .where(
+      and(
+        eq(dailyPlans.userId, userId),
+        lt(dailyPlans.localDate, before),
+        eq(dailyPlanItems.type, 'new_unit'),
+        inArray(learningUnits.kind, ['reading', 'writing']),
+      ),
+    )
+    .orderBy(desc(dailyPlans.localDate))
+    .limit(1);
+  return row ? (row.kind as 'reading' | 'writing') : null;
+}
+
 /** Tiêu đề (i18n) và kỹ năng của các đơn vị theo id – đọc thẳng CSDL, không phụ thuộc bộ đệm. */
 export async function getUnitInfo(
   db: DbExecutor,

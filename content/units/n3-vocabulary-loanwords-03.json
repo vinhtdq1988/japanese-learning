@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-loanwords",
+  "title": {
+    "vi": "Giao tiếp và cơ hội",
+    "en": "Communication and chances"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3340,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "コミュニケーション",
+      "reading": "コミュニケーション",
+      "meaning": {
+        "vi": "Giao tiếp",
+        "en": "Communication"
+      },
+      "examples": [
+        {
+          "ja": "同僚とのコミュニケーションが、大切です。",
+          "reading": "どうりょうとのコミュニケーションが、たいせつです。",
+          "translation": {
+            "vi": "Giao tiếp với đồng nghiệp rất quan trọng.",
+            "en": "Communication with colleagues is important."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "トラブル",
+      "reading": "トラブル",
+      "meaning": {
+        "vi": "Rắc rối",
+        "en": "Trouble"
+      },
+      "examples": [
+        {
+          "ja": "旅行中に、トラブルがありました。",
+          "reading": "りょこうちゅうに、トラブルがありました。",
+          "translation": {
+            "vi": "Trong chuyến đi đã có rắc rối.",
+            "en": "There was trouble during the trip."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "チャンス",
+      "reading": "チャンス",
+      "meaning": {
+        "vi": "Cơ hội",
+        "en": "Chance"
+      },
+      "examples": [
+        {
+          "ja": "やっと、チャンスが来ました。",
+          "reading": "やっと、チャンスがきました。",
+          "translation": {
+            "vi": "Cuối cùng cơ hội cũng đến.",
+            "en": "At last my chance has come."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "メリット",
+      "reading": "メリット",
+      "meaning": {
+        "vi": "Lợi ích; ưu điểm",
+        "en": "Merit; advantage"
+      },
+      "examples": [
+        {
+          "ja": "この方法には、多くのメリットがあります。",
+          "reading": "このほうほうには、おおくのメリットがあります。",
+          "translation": {
+            "vi": "Phương pháp này có nhiều lợi ích.",
+            "en": "This method has many advantages."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "デメリット",
+      "reading": "デメリット",
+      "meaning": {
+        "vi": "Bất lợi; nhược điểm",
+        "en": "Demerit; disadvantage"
+      },
+      "examples": [
+        {
+          "ja": "安いことの、デメリットも考えましょう。",
+          "reading": "やすいことの、デメリットもかんがえましょう。",
+          "translation": {
+            "vi": "Hãy cũng cân nhắc nhược điểm của việc rẻ.",
+            "en": "Let's also think about the disadvantages of being cheap."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "テクニック",
+      "reading": "テクニック",
+      "meaning": {
+        "vi": "Kỹ thuật; thủ thuật",
+        "en": "Technique"
+      },
+      "examples": [
+        {
+          "ja": "彼は、すばらしいテクニックを持っています。",
+          "reading": "かれは、すばらしいテクニックをもっています。",
+          "translation": {
+            "vi": "Anh ấy có kỹ thuật tuyệt vời.",
+            "en": "He has wonderful technique."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "コミュニケーション",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 同僚との（　）が、大切です。 — Nghĩa của câu: “Giao tiếp với đồng nghiệp rất quan trọng.”",
+        "en": "Choose the word that fits the blank: 同僚との（　）が、大切です。 — Meaning of the sentence: “Communication with colleagues is important.”"
+      },
+      "payload": {
+        "choices": [
+          "デメリット",
+          "コミュニケーション",
+          "トラブル",
+          "チャンス"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「コミュニケーション」(Giao tiếp) hợp nghĩa câu này: “Giao tiếp với đồng nghiệp rất quan trọng.”",
+        "en": "Correct! 「コミュニケーション」(Communication) fits this sentence: “Communication with colleagues is important.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giao tiếp với đồng nghiệp rất quan trọng.”, nên cần 「コミュニケーション」(Giao tiếp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Communication with colleagues is important.”, so it needs 「コミュニケーション」(Communication); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "トラブル",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行中に、（　）がありました。 — Nghĩa của câu: “Trong chuyến đi đã có rắc rối.”",
+        "en": "Choose the word that fits the blank: 旅行中に、（　）がありました。 — Meaning of the sentence: “There was trouble during the trip.”"
+      },
+      "payload": {
+        "choices": [
+          "デメリット",
+          "コミュニケーション",
+          "トラブル",
+          "メリット"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「トラブル」(Rắc rối) hợp nghĩa câu này: “Trong chuyến đi đã có rắc rối.”",
+        "en": "Correct! 「トラブル」(Trouble) fits this sentence: “There was trouble during the trip.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong chuyến đi đã có rắc rối.”, nên cần 「トラブル」(Rắc rối); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was trouble during the trip.”, so it needs 「トラブル」(Trouble); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "チャンス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: やっと、（　）が来ました。 — Nghĩa của câu: “Cuối cùng cơ hội cũng đến.”",
+        "en": "Choose the word that fits the blank: やっと、（　）が来ました。 — Meaning of the sentence: “At last my chance has come.”"
+      },
+      "payload": {
+        "choices": [
+          "メリット",
+          "コミュニケーション",
+          "トラブル",
+          "チャンス"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「チャンス」(Cơ hội) hợp nghĩa câu này: “Cuối cùng cơ hội cũng đến.”",
+        "en": "Correct! 「チャンス」(Chance) fits this sentence: “At last my chance has come.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối cùng cơ hội cũng đến.”, nên cần 「チャンス」(Cơ hội); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At last my chance has come.”, so it needs 「チャンス」(Chance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "メリット",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この方法には、多くの（　）があります。 — Nghĩa của câu: “Phương pháp này có nhiều lợi ích.”",
+        "en": "Choose the word that fits the blank: この方法には、多くの（　）があります。 — Meaning of the sentence: “This method has many advantages.”"
+      },
+      "payload": {
+        "choices": [
+          "メリット",
+          "チャンス",
+          "コミュニケーション",
+          "デメリット"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「メリット」(Lợi ích; ưu điểm) hợp nghĩa câu này: “Phương pháp này có nhiều lợi ích.”",
+        "en": "Correct! 「メリット」(Merit; advantage) fits this sentence: “This method has many advantages.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Phương pháp này có nhiều lợi ích.”, nên cần 「メリット」(Lợi ích; ưu điểm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This method has many advantages.”, so it needs 「メリット」(Merit; advantage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "デメリット",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 安いことの、（　）も考えましょう。 — Nghĩa của câu: “Hãy cũng cân nhắc nhược điểm của việc rẻ.”",
+        "en": "Choose the word that fits the blank: 安いことの、（　）も考えましょう。 — Meaning of the sentence: “Let's also think about the disadvantages of being cheap.”"
+      },
+      "payload": {
+        "choices": [
+          "コミュニケーション",
+          "デメリット",
+          "トラブル",
+          "チャンス"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「デメリット」(Bất lợi; nhược điểm) hợp nghĩa câu này: “Hãy cũng cân nhắc nhược điểm của việc rẻ.”",
+        "en": "Correct! 「デメリット」(Demerit; disadvantage) fits this sentence: “Let's also think about the disadvantages of being cheap.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy cũng cân nhắc nhược điểm của việc rẻ.”, nên cần 「デメリット」(Bất lợi; nhược điểm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Let's also think about the disadvantages of being cheap.”, so it needs 「デメリット」(Demerit; disadvantage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "テクニック",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、すばらしい（　）を持っています。 — Nghĩa của câu: “Anh ấy có kỹ thuật tuyệt vời.”",
+        "en": "Choose the word that fits the blank: 彼は、すばらしい（　）を持っています。 — Meaning of the sentence: “He has wonderful technique.”"
+      },
+      "payload": {
+        "choices": [
+          "コミュニケーション",
+          "トラブル",
+          "テクニック",
+          "デメリット"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「テクニック」(Kỹ thuật; thủ thuật) hợp nghĩa câu này: “Anh ấy có kỹ thuật tuyệt vời.”",
+        "en": "Correct! 「テクニック」(Technique) fits this sentence: “He has wonderful technique.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy có kỹ thuật tuyệt vời.”, nên cần 「テクニック」(Kỹ thuật; thủ thuật); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He has wonderful technique.”, so it needs 「テクニック」(Technique); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "コミュニケーション",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: 同僚との「こみゅにけーしょん」が、大切です。",
+        "en": "Choose the correct katakana spelling of the word in 「」: 同僚との「こみゅにけーしょん」が、大切です。"
+      },
+      "payload": {
+        "choices": [
+          "コーミュニケーション",
+          "コミーュニケーション",
+          "コミュニケーシーョン",
+          "コミュニケーション"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こみゅにけーしょん」 viết là 「コミュニケーション」, nghĩa là Giao tiếp.",
+        "en": "Correct! 「こみゅにけーしょん」 is written 「コミュニケーション」 and means Communication."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「コミュニケーション」 (Giao tiếp); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「コミュニケーション」 (Communication); the other spellings are incorrect."
+      }
+    },
+    {
+      "item": "メリット",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: この方法には、多くの「めりっと」があります。",
+        "en": "Choose the correct katakana spelling of the word in 「」: この方法には、多くの「めりっと」があります。"
+      },
+      "payload": {
+        "choices": [
+          "メリット",
+          "メーリット",
+          "メリッート",
+          "メリーット"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「めりっと」 viết là 「メリット」, nghĩa là Lợi ích; ưu điểm.",
+        "en": "Correct! 「めりっと」 is written 「メリット」 and means Merit; advantage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「メリット」 (Lợi ích; ưu điểm); các cách viết còn lại sai chính tả.",
+        "en": "Not quite. The correct spelling is 「メリット」 (Merit; advantage); the other spellings are incorrect."
+      }
+    }
+  ]
+}

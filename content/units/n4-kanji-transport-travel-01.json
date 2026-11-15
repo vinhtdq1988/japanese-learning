@@ -1,0 +1,549 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-transport-travel",
+  "title": {
+    "vi": "Kanji giao thông – du lịch (通 道 運 転)",
+    "en": "Transport and travel kanji (通 道 運 転)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "通",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "đi qua; thông",
+        "en": "pass through; commute"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ツウ",
+          "ツ"
+        ],
+        "kunReadings": [
+          "とお.る",
+          "かよ.う"
+        ],
+        "strokeCount": 10
+      },
+      "examples": [
+        {
+          "ja": "交通",
+          "reading": "こうつう",
+          "kanjiReading": "ツウ",
+          "translation": {
+            "vi": "giao thông",
+            "en": "traffic"
+          }
+        },
+        {
+          "ja": "通る",
+          "reading": "とおる",
+          "kanjiReading": "とお",
+          "translation": {
+            "vi": "đi qua",
+            "en": "to pass through"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "道",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "đường; đạo",
+        "en": "road; way"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ドウ"
+        ],
+        "kunReadings": [
+          "みち"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "歩道",
+          "reading": "ほどう",
+          "kanjiReading": "ドウ",
+          "translation": {
+            "vi": "vỉa hè",
+            "en": "sidewalk"
+          }
+        },
+        {
+          "ja": "道",
+          "reading": "みち",
+          "kanjiReading": "みち",
+          "translation": {
+            "vi": "con đường",
+            "en": "road"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "運",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "vận chuyển; vận may",
+        "en": "carry; luck"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ウン"
+        ],
+        "kunReadings": [
+          "はこ.ぶ"
+        ],
+        "strokeCount": 12
+      },
+      "examples": [
+        {
+          "ja": "運転",
+          "reading": "うんてん",
+          "kanjiReading": "ウン",
+          "translation": {
+            "vi": "lái xe",
+            "en": "driving"
+          }
+        },
+        {
+          "ja": "運ぶ",
+          "reading": "はこぶ",
+          "kanjiReading": "はこ",
+          "translation": {
+            "vi": "vận chuyển",
+            "en": "to carry"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "転",
+      "topic": "kanji-n4-transport-travel",
+      "meaning": {
+        "vi": "xoay; lăn",
+        "en": "turn; roll"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "テン"
+        ],
+        "kunReadings": [
+          "ころ.がる",
+          "ころ.ぶ"
+        ],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "運転",
+          "reading": "うんてん",
+          "kanjiReading": "テン",
+          "translation": {
+            "vi": "lái xe",
+            "en": "driving"
+          }
+        },
+        {
+          "ja": "転ぶ",
+          "reading": "ころぶ",
+          "kanjiReading": "ころ",
+          "translation": {
+            "vi": "ngã",
+            "en": "to fall over"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "通",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「通」nghĩa là gì?",
+        "en": "What does 「通」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "đi qua; thông",
+            "en": "pass through; commute"
+          },
+          {
+            "vi": "đường; đạo",
+            "en": "road; way"
+          },
+          {
+            "vi": "vận chuyển; vận may",
+            "en": "carry; luck"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 通 nghĩa là đi qua; thông.",
+        "en": "Correct! 通 means pass through; commute."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 通 nghĩa là đi qua; thông, như trong 「交通」 (giao thông).",
+        "en": "Not quite. 通 means pass through; commute, as in 「交通」 (traffic)."
+      }
+    },
+    {
+      "item": "通",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「通」 trong 「交通」 (“giao thông”).",
+        "en": "Type the reading of 「通」 in 「交通」 (“traffic”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "つう",
+          "ツウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 交通, 通 đọc là つう (âm On).",
+        "en": "Correct! In 交通, 通 is read つう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 交通 (giao thông), 通 đọc là つう (âm On).",
+        "en": "In 交通 (traffic), 通 is read つう (on'yomi)."
+      }
+    },
+    {
+      "item": "通",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「通る」(đi qua) đọc là gì?",
+        "en": "How is 「通る」 (to pass through) read?"
+      },
+      "payload": {
+        "choices": [
+          "つうる",
+          "とおる",
+          "ほどう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 通る = とおる (đi qua); 通 đọc là とお (âm Kun).",
+        "en": "Correct! 通る = とおる (to pass through); 通 is read とお (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "通る đọc là とおる (đi qua): 通 mang âm Kun とお.",
+        "en": "通る is read とおる (to pass through): 通 takes the kun'yomi とお."
+      }
+    },
+    {
+      "item": "道",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「道」nghĩa là gì?",
+        "en": "What does 「道」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "vận chuyển; vận may",
+            "en": "carry; luck"
+          },
+          {
+            "vi": "đường; đạo",
+            "en": "road; way"
+          },
+          {
+            "vi": "xoay; lăn",
+            "en": "turn; roll"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 道 nghĩa là đường; đạo.",
+        "en": "Correct! 道 means road; way."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 道 nghĩa là đường; đạo, như trong 「歩道」 (vỉa hè).",
+        "en": "Not quite. 道 means road; way, as in 「歩道」 (sidewalk)."
+      }
+    },
+    {
+      "item": "道",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「道」 trong 「歩道」 (“vỉa hè”).",
+        "en": "Type the reading of 「道」 in 「歩道」 (“sidewalk”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "どう",
+          "ドウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 歩道, 道 đọc là どう (âm On).",
+        "en": "Correct! In 歩道, 道 is read どう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 歩道 (vỉa hè), 道 đọc là どう (âm On).",
+        "en": "In 歩道 (sidewalk), 道 is read どう (on'yomi)."
+      }
+    },
+    {
+      "item": "道",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「道」(con đường; đứng riêng một mình) đọc là gì?",
+        "en": "How is 「道」 (road; standing alone) read?"
+      },
+      "payload": {
+        "choices": [
+          "どう",
+          "みつ",
+          "みち"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 道 = みち (con đường); 道 đọc là みち (âm Kun).",
+        "en": "Correct! 道 = みち (road); 道 is read みち (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "道 đọc là みち (con đường): 道 mang âm Kun みち.",
+        "en": "道 is read みち (road): 道 takes the kun'yomi みち."
+      }
+    },
+    {
+      "item": "運",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「運」nghĩa là gì?",
+        "en": "What does 「運」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xoay; lăn",
+            "en": "turn; roll"
+          },
+          {
+            "vi": "đi qua; thông",
+            "en": "pass through; commute"
+          },
+          {
+            "vi": "vận chuyển; vận may",
+            "en": "carry; luck"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 運 nghĩa là vận chuyển; vận may.",
+        "en": "Correct! 運 means carry; luck."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 運 nghĩa là vận chuyển; vận may, như trong 「運転」 (lái xe).",
+        "en": "Not quite. 運 means carry; luck, as in 「運転」 (driving)."
+      }
+    },
+    {
+      "item": "運",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「運」 trong 「運転」 (“lái xe”).",
+        "en": "Type the reading of 「運」 in 「運転」 (“driving”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "うん",
+          "ウン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 運転, 運 đọc là うん (âm On).",
+        "en": "Correct! In 運転, 運 is read うん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 運転 (lái xe), 運 đọc là うん (âm On).",
+        "en": "In 運転 (driving), 運 is read うん (on'yomi)."
+      }
+    },
+    {
+      "item": "運",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「運ぶ」(vận chuyển) đọc là gì?",
+        "en": "How is 「運ぶ」 (to carry) read?"
+      },
+      "payload": {
+        "choices": [
+          "はこぶ",
+          "うんぶ",
+          "ころぶ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 運ぶ = はこぶ (vận chuyển); 運 đọc là はこ (âm Kun).",
+        "en": "Correct! 運ぶ = はこぶ (to carry); 運 is read はこ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "運ぶ đọc là はこぶ (vận chuyển): 運 mang âm Kun はこ.",
+        "en": "運ぶ is read はこぶ (to carry): 運 takes the kun'yomi はこ."
+      }
+    },
+    {
+      "item": "転",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「転」nghĩa là gì?",
+        "en": "What does 「転」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "xoay; lăn",
+            "en": "turn; roll"
+          },
+          {
+            "vi": "đi qua; thông",
+            "en": "pass through; commute"
+          },
+          {
+            "vi": "đường; đạo",
+            "en": "road; way"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 転 nghĩa là xoay; lăn.",
+        "en": "Correct! 転 means turn; roll."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 転 nghĩa là xoay; lăn, như trong 「運転」 (lái xe).",
+        "en": "Not quite. 転 means turn; roll, as in 「運転」 (driving)."
+      }
+    },
+    {
+      "item": "転",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「転」 trong 「運転」 (“lái xe”).",
+        "en": "Type the reading of 「転」 in 「運転」 (“driving”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "てん",
+          "テン"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 運転, 転 đọc là てん (âm On).",
+        "en": "Correct! In 運転, 転 is read てん (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 運転 (lái xe), 転 đọc là てん (âm On).",
+        "en": "In 運転 (driving), 転 is read てん (on'yomi)."
+      }
+    },
+    {
+      "item": "転",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「転ぶ」(ngã) đọc là gì?",
+        "en": "How is 「転ぶ」 (to fall over) read?"
+      },
+      "payload": {
+        "choices": [
+          "てんぶ",
+          "ころぶ",
+          "はこぶ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 転ぶ = ころぶ (ngã); 転 đọc là ころ (âm Kun).",
+        "en": "Correct! 転ぶ = ころぶ (to fall over); 転 is read ころ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "転ぶ đọc là ころぶ (ngã): 転 mang âm Kun ころ.",
+        "en": "転ぶ is read ころぶ (to fall over): 転 takes the kun'yomi ころ."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "通",
+            {
+              "vi": "đi qua; thông",
+              "en": "pass through; commute"
+            }
+          ],
+          [
+            "道",
+            {
+              "vi": "đường; đạo",
+              "en": "road; way"
+            }
+          ],
+          [
+            "運",
+            {
+              "vi": "vận chuyển; vận may",
+              "en": "carry; luck"
+            }
+          ],
+          [
+            "転",
+            {
+              "vi": "xoay; lăn",
+              "en": "turn; roll"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

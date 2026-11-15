@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-news-incidents",
+  "title": {
+    "vi": "Nhân chứng và vụ kiện",
+    "en": "Witnesses and lawsuits"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "目撃",
+      "reading": "もくげき",
+      "meaning": {
+        "vi": "Chứng kiến; mục kích",
+        "en": "Witnessing"
+      },
+      "examples": [
+        {
+          "ja": "事故を目撃した人が、警察に話しました。",
+          "reading": "じこをもくげきしたひとが、けいさつにはなしました。",
+          "translation": {
+            "vi": "Người chứng kiến vụ tai nạn đã kể cho cảnh sát.",
+            "en": "A person who witnessed the accident spoke to the police."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "通報",
+      "reading": "つうほう",
+      "meaning": {
+        "vi": "Báo (cho cảnh sát, cứu hỏa)",
+        "en": "Reporting (to authorities)"
+      },
+      "examples": [
+        {
+          "ja": "近所の人が、すぐに警察に通報しました。",
+          "reading": "きんじょのひとが、すぐにけいさつにつうほうしました。",
+          "translation": {
+            "vi": "Người hàng xóm đã báo ngay cho cảnh sát.",
+            "en": "A neighbor notified the police right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "発覚",
+      "reading": "はっかく",
+      "meaning": {
+        "vi": "Bị phát giác; bị lộ",
+        "en": "Being discovered (of wrongdoing)"
+      },
+      "examples": [
+        {
+          "ja": "会社の不正が、ついに発覚しました。",
+          "reading": "かいしゃのふせいが、ついにはっかくしました。",
+          "translation": {
+            "vi": "Sai phạm của công ty cuối cùng đã bị phát giác.",
+            "en": "The company's wrongdoing was finally discovered."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "被告",
+      "reading": "ひこく",
+      "meaning": {
+        "vi": "Bị cáo",
+        "en": "Defendant"
+      },
+      "examples": [
+        {
+          "ja": "被告は、裁判で自分の無実を訴えました。",
+          "reading": "ひこくは、さいばんでじぶんのむじつをうったえました。",
+          "translation": {
+            "vi": "Bị cáo đã khẳng định mình vô tội tại phiên tòa.",
+            "en": "The defendant claimed his innocence at the trial."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "原告",
+      "reading": "げんこく",
+      "meaning": {
+        "vi": "Nguyên cáo; bên khởi kiện",
+        "en": "Plaintiff"
+      },
+      "examples": [
+        {
+          "ja": "原告は、会社に賠償を求めました。",
+          "reading": "げんこくは、かいしゃにばいしょうをもとめました。",
+          "translation": {
+            "vi": "Nguyên đơn đã yêu cầu công ty bồi thường.",
+            "en": "The plaintiff demanded compensation from the company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "証言",
+      "reading": "しょうげん",
+      "meaning": {
+        "vi": "Lời khai; chứng ngôn",
+        "en": "Testimony"
+      },
+      "examples": [
+        {
+          "ja": "目撃者の証言が、裁判で大切な証拠になりました。",
+          "reading": "もくげきしゃのしょうげんが、さいばんでたいせつなしょうこになりました。",
+          "translation": {
+            "vi": "Lời khai của nhân chứng đã trở thành chứng cứ quan trọng trong phiên tòa.",
+            "en": "The witness's testimony became important evidence at the trial."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "目撃",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事故を（　）した人が、警察に話しました。 — Nghĩa của câu: “Người chứng kiến vụ tai nạn đã kể cho cảnh sát.”",
+        "en": "Choose the word that fits the blank: 事故を（　）した人が、警察に話しました。 — Meaning of the sentence: “A person who witnessed the accident spoke to the police.”"
+      },
+      "payload": {
+        "choices": [
+          "被告",
+          "目撃",
+          "通報",
+          "原告"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「目撃」(Chứng kiến; mục kích) hợp nghĩa câu này: “Người chứng kiến vụ tai nạn đã kể cho cảnh sát.”",
+        "en": "Correct! 「目撃」(Witnessing) fits this sentence: “A person who witnessed the accident spoke to the police.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người chứng kiến vụ tai nạn đã kể cho cảnh sát.”, nên cần 「目撃」(Chứng kiến; mục kích); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A person who witnessed the accident spoke to the police.”, so it needs 「目撃」(Witnessing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "通報",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 近所の人が、すぐに警察に（　）しました。 — Nghĩa của câu: “Người hàng xóm đã báo ngay cho cảnh sát.”",
+        "en": "Choose the word that fits the blank: 近所の人が、すぐに警察に（　）しました。 — Meaning of the sentence: “A neighbor notified the police right away.”"
+      },
+      "payload": {
+        "choices": [
+          "目撃",
+          "発覚",
+          "通報",
+          "証言"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「通報」(Báo (cho cảnh sát, cứu hỏa)) hợp nghĩa câu này: “Người hàng xóm đã báo ngay cho cảnh sát.”",
+        "en": "Correct! 「通報」(Reporting (to authorities)) fits this sentence: “A neighbor notified the police right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người hàng xóm đã báo ngay cho cảnh sát.”, nên cần 「通報」(Báo (cho cảnh sát, cứu hỏa)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A neighbor notified the police right away.”, so it needs 「通報」(Reporting (to authorities)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "発覚",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の不正が、ついに（　）しました。 — Nghĩa của câu: “Sai phạm của công ty cuối cùng đã bị phát giác.”",
+        "en": "Choose the word that fits the blank: 会社の不正が、ついに（　）しました。 — Meaning of the sentence: “The company's wrongdoing was finally discovered.”"
+      },
+      "payload": {
+        "choices": [
+          "通報",
+          "目撃",
+          "被告",
+          "発覚"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「発覚」(Bị phát giác; bị lộ) hợp nghĩa câu này: “Sai phạm của công ty cuối cùng đã bị phát giác.”",
+        "en": "Correct! 「発覚」(Being discovered (of wrongdoing)) fits this sentence: “The company's wrongdoing was finally discovered.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sai phạm của công ty cuối cùng đã bị phát giác.”, nên cần 「発覚」(Bị phát giác; bị lộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The company's wrongdoing was finally discovered.”, so it needs 「発覚」(Being discovered (of wrongdoing)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "被告",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、裁判で自分の無実を訴えました。 — Nghĩa của câu: “Bị cáo đã khẳng định mình vô tội tại phiên tòa.”",
+        "en": "Choose the word that fits the blank: （　）は、裁判で自分の無実を訴えました。 — Meaning of the sentence: “The defendant claimed his innocence at the trial.”"
+      },
+      "payload": {
+        "choices": [
+          "被告",
+          "通報",
+          "目撃",
+          "発覚"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「被告」(Bị cáo) hợp nghĩa câu này: “Bị cáo đã khẳng định mình vô tội tại phiên tòa.”",
+        "en": "Correct! 「被告」(Defendant) fits this sentence: “The defendant claimed his innocence at the trial.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bị cáo đã khẳng định mình vô tội tại phiên tòa.”, nên cần 「被告」(Bị cáo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The defendant claimed his innocence at the trial.”, so it needs 「被告」(Defendant); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "原告",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、会社に賠償を求めました。 — Nghĩa của câu: “Nguyên đơn đã yêu cầu công ty bồi thường.”",
+        "en": "Choose the word that fits the blank: （　）は、会社に賠償を求めました。 — Meaning of the sentence: “The plaintiff demanded compensation from the company.”"
+      },
+      "payload": {
+        "choices": [
+          "証言",
+          "原告",
+          "目撃",
+          "通報"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「原告」(Nguyên cáo; bên khởi kiện) hợp nghĩa câu này: “Nguyên đơn đã yêu cầu công ty bồi thường.”",
+        "en": "Correct! 「原告」(Plaintiff) fits this sentence: “The plaintiff demanded compensation from the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nguyên đơn đã yêu cầu công ty bồi thường.”, nên cần 「原告」(Nguyên cáo; bên khởi kiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The plaintiff demanded compensation from the company.”, so it needs 「原告」(Plaintiff); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "証言",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 目撃者の（　）が、裁判で大切な証拠になりました。 — Nghĩa của câu: “Lời khai của nhân chứng đã trở thành chứng cứ quan trọng trong phiên tòa.”",
+        "en": "Choose the word that fits the blank: 目撃者の（　）が、裁判で大切な証拠になりました。 — Meaning of the sentence: “The witness's testimony became important evidence at the trial.”"
+      },
+      "payload": {
+        "choices": [
+          "通報",
+          "被告",
+          "証言",
+          "発覚"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「証言」(Lời khai; chứng ngôn) hợp nghĩa câu này: “Lời khai của nhân chứng đã trở thành chứng cứ quan trọng trong phiên tòa.”",
+        "en": "Correct! 「証言」(Testimony) fits this sentence: “The witness's testimony became important evidence at the trial.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Lời khai của nhân chứng đã trở thành chứng cứ quan trọng trong phiên tòa.”, nên cần 「証言」(Lời khai; chứng ngôn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The witness's testimony became important evidence at the trial.”, so it needs 「証言」(Testimony); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "目撃",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 事故を「目撃」した人が、警察に話しました。",
+        "en": "Choose the correct reading of the word in 「」: 事故を「目撃」した人が、警察に話しました。"
+      },
+      "payload": {
+        "choices": [
+          "つうほう",
+          "はっかく",
+          "もくげき",
+          "ひこく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「目撃」 đọc là 「もくげき」, nghĩa là Chứng kiến; mục kích.",
+        "en": "Correct! 「目撃」 is read 「もくげき」 and means Witnessing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「目撃」 đọc là 「もくげき」 (Chứng kiến; mục kích); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「目撃」 is read 「もくげき」 (Witnessing); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "被告",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「被告」は、裁判で自分の無実を訴えました。",
+        "en": "Choose the correct reading of the word in 「」: 「被告」は、裁判で自分の無実を訴えました。"
+      },
+      "payload": {
+        "choices": [
+          "はっかく",
+          "もくげき",
+          "げんこく",
+          "ひこく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「被告」 đọc là 「ひこく」, nghĩa là Bị cáo.",
+        "en": "Correct! 「被告」 is read 「ひこく」 and means Defendant."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「被告」 đọc là 「ひこく」 (Bị cáo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「被告」 is read 「ひこく」 (Defendant); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "発覚",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 会社の不正が、ついに「はっかく」しました。",
+        "en": "Choose the correct way to write the word in 「」: 会社の不正が、ついに「はっかく」しました。"
+      },
+      "payload": {
+        "choices": [
+          "被告",
+          "目撃",
+          "原告",
+          "発覚"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「はっかく」 viết là 「発覚」, nghĩa là Bị phát giác; bị lộ.",
+        "en": "Correct! 「はっかく」 is written 「発覚」 and means Being discovered (of wrongdoing)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「はっかく」 viết là 「発覚」 (Bị phát giác; bị lộ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「はっかく」 is written 「発覚」 (Being discovered (of wrongdoing)); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "grammar",
+  "level": "N4",
+  "tier": "core",
+  "topic": "grammar-n4-obligation-permission",
+  "title": {
+    "vi": "Nghĩa vụ và cho phép: 〜なければならない, 〜なくてもいい, 〜てもかまわない, 〜ないでください",
+    "en": "Obligation and permission: must, need not, may, and please don't"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 920,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "〜なければならない／〜なくてはいけない",
+      "meaning": {
+        "vi": "Phải ~",
+        "en": "Must ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: động từ thể ない bỏ い + ければならない / くてはいけない (書かない→書かなければならない / 書かなくてはいけない). Diễn tả nghĩa vụ, việc bắt buộc theo quy định hay hoàn cảnh. 〜なければならない hơi cứng; 〜なくてはいけない mềm hơn một chút.",
+        "en": "Conjugation: ない-form of the verb, drop い and add ければならない / くてはいけない (書かない→書かなければならない / 書かなくてはいけない). Expresses an obligation required by rules or circumstances. 〜なければならない is slightly stiffer; 〜なくてはいけない is a bit softer."
+      },
+      "examples": [
+        {
+          "ja": "明日までにレポートを出さなければなりません。",
+          "reading": "あしたまでにレポートをださなければなりません。",
+          "translation": {
+            "vi": "Tôi phải nộp báo cáo trước ngày mai.",
+            "en": "I must submit the report by tomorrow."
+          }
+        },
+        {
+          "ja": "毎日薬を飲まなくてはいけません。",
+          "reading": "まいにちくすりをのまなくてはいけません。",
+          "translation": {
+            "vi": "Mỗi ngày tôi phải uống thuốc.",
+            "en": "I have to take medicine every day."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-086"
+    },
+    {
+      "japanese": "〜ないといけない／〜なきゃ",
+      "meaning": {
+        "vi": "Phải ~ (khẩu ngữ)",
+        "en": "Have to ~ (casual)"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể ない + といけない (ないといけません), khẩu ngữ rút gọn: 〜なきゃ / 〜なくちゃ (行かなきゃ). Cùng nghĩa với 〜なければならない nhưng thân mật, hay dùng khi nói chuyện. Không dùng trong văn bản trang trọng.",
+        "en": "Conjugation: ない-form + といけない (ないといけません); casual contractions: 〜なきゃ / 〜なくちゃ (行かなきゃ). Same meaning as 〜なければならない but conversational; not used in formal writing."
+      },
+      "examples": [
+        {
+          "ja": "もう帰らないといけません。",
+          "reading": "もうかえらないといけません。",
+          "translation": {
+            "vi": "Tôi phải về rồi.",
+            "en": "I have to go home now."
+          }
+        },
+        {
+          "ja": "明日は早いから、もう寝なきゃ。",
+          "reading": "あしたははやいから、もうねなきゃ。",
+          "translation": {
+            "vi": "Mai dậy sớm nên phải đi ngủ thôi.",
+            "en": "I have to get to bed since tomorrow is early."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-087"
+    },
+    {
+      "japanese": "〜なくてもいい",
+      "meaning": {
+        "vi": "Không cần ~ cũng được",
+        "en": "Need not ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể ない bỏ い + くてもいい (行かなくてもいい). Diễn tả không bắt buộc. Là phủ định của 〜なければならない. Khác 〜てはいけない (cấm): 〜なくてもいい chỉ nói không cần làm.",
+        "en": "Conjugation: ない-form, drop い and add くてもいい (行かなくてもいい). Means it is not necessary. It is the negation of 〜なければならない. Unlike 〜てはいけない (prohibition), it only says the action is unnecessary."
+      },
+      "examples": [
+        {
+          "ja": "今日は、早く来なくてもいいです。",
+          "reading": "きょうは、はやくこなくてもいいです。",
+          "translation": {
+            "vi": "Hôm nay bạn không cần đến sớm cũng được.",
+            "en": "You do not need to come early today."
+          }
+        },
+        {
+          "ja": "この薬は、毎日飲まなくてもいいですよ。",
+          "reading": "このくすりは、まいにちのまなくてもいいですよ。",
+          "translation": {
+            "vi": "Thuốc này không cần uống mỗi ngày cũng được.",
+            "en": "You do not have to take this medicine every day."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-088"
+    },
+    {
+      "japanese": "〜てもかまわない",
+      "meaning": {
+        "vi": "~ cũng không sao",
+        "en": "It does not matter if ~; you may ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể て + もかまわない (かまいません). Dùng để cho phép hoặc xin phép lịch sự hơn 〜てもいい một chút; câu hỏi 〜てもかまいませんか. Nghĩa đen là \"dù làm cũng không phiền\".",
+        "en": "Conjugation: て-form + もかまわない (かまいません). Used to grant or ask permission, slightly more polite than 〜てもいい; the question form is 〜てもかまいませんか. Literally \"it does not bother me even if you do\"."
+      },
+      "examples": [
+        {
+          "ja": "ここで写真を撮ってもかまいません。",
+          "reading": "ここでしゃしんをとってもかまいません。",
+          "translation": {
+            "vi": "Bạn chụp ảnh ở đây cũng không sao.",
+            "en": "You may take photos here."
+          }
+        },
+        {
+          "ja": "窓を開けてもかまいませんか。",
+          "reading": "まどをあけてもかまいませんか。",
+          "translation": {
+            "vi": "Tôi mở cửa sổ có được không?",
+            "en": "Would it be all right if I opened the window?"
+          }
+        }
+      ],
+      "scopeRef": "g-n4-095"
+    },
+    {
+      "japanese": "〜ないでください",
+      "meaning": {
+        "vi": "Xin đừng ~",
+        "en": "Please do not ~"
+      },
+      "explanation": {
+        "vi": "Cách chia: thể ない + でください (吸わないでください). Dùng để nhờ ai đó không làm điều gì, lịch sự. Mạnh hơn lời khuyên 〜ないほうがいい nhưng nhẹ hơn lệnh cấm 〜てはいけません.",
+        "en": "Conjugation: ない-form + でください (吸わないでください). A polite request not to do something. Stronger than the advice 〜ないほうがいい but milder than the prohibition 〜てはいけません."
+      },
+      "examples": [
+        {
+          "ja": "ここでたばこを吸わないでください。",
+          "reading": "ここでたばこをすわないでください。",
+          "translation": {
+            "vi": "Xin đừng hút thuốc ở đây.",
+            "en": "Please do not smoke here."
+          }
+        },
+        {
+          "ja": "心配しないでください。",
+          "reading": "しんぱいしないでください。",
+          "translation": {
+            "vi": "Xin đừng lo lắng.",
+            "en": "Please do not worry."
+          }
+        }
+      ],
+      "scopeRef": "g-n4-094"
+    }
+  ],
+  "exercises": [
+    {
+      "item": "〜なければならない／〜なくてはいけない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日までにレポートを出さ（　）なりません。",
+        "en": "Choose the correct option for the blank:\n明日までにレポートを出さ（　）なりません。"
+      },
+      "payload": {
+        "choices": [
+          "なければ",
+          "なくて",
+          "ないと",
+          "ないで"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nghĩa vụ dùng 「〜なければなりません」: 「出さなければなりません」.",
+        "en": "Correct! An obligation uses 「〜なければなりません」: 「出さなければなりません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nghĩa vụ dùng 「〜なければなりません」: 「出さなければなりません」.",
+        "en": "Not quite. An obligation uses 「〜なければなりません」: 「出さなければなりません」."
+      }
+    },
+    {
+      "item": "〜なければならない／〜なくてはいけない",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n毎日薬を飲ま___いけません。",
+        "en": "Choose the correct option for the blank:\n毎日薬を飲ま___いけません。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なくては",
+          "なければ",
+          "ないと"
+        ],
+        "hint": "〜なくては"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「〜なくてはいけません」: 「飲まなくてはいけません」. 「飲まなければいけません」 và 「飲まないといけません」 cũng đúng nên được chấp nhận.",
+        "en": "Correct! The pattern 「〜なくてはいけません」: 「飲まなくてはいけません」. 「飲まなければいけません」 and 「飲まないといけません」 are also correct, so they are accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「〜なくてはいけません」: 「飲まなくてはいけません」. 「飲まなければいけません」 và 「飲まないといけません」 cũng đúng nên được chấp nhận.",
+        "en": "Not quite. The pattern 「〜なくてはいけません」: 「飲まなくてはいけません」. 「飲まなければいけません」 and 「飲まないといけません」 are also correct, so they are accepted."
+      }
+    },
+    {
+      "item": "〜なければならない／〜なくてはいけない",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "約束は守なければなりません。",
+          "約束は守らないければなりません。",
+          "約束は守らなくなければなりません。",
+          "約束は守らなければなりません。"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「守る」 → ない形 「守らない」 → bỏ い + ければならない: 「守らなければならない」.",
+        "en": "Correct! 「守る」→ない-form 「守らない」→ drop い + ければならない: 「守らなければならない」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「守る」 → ない形 「守らない」 → bỏ い + ければならない: 「守らなければならない」.",
+        "en": "Not quite. 「守る」→ない-form 「守らない」→ drop い + ければならない: 「守らなければならない」."
+      }
+    },
+    {
+      "item": "〜ないといけない／〜なきゃ",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nもう帰ら（　）いけません。",
+        "en": "Choose the correct option for the blank:\nもう帰ら（　）いけません。"
+      },
+      "payload": {
+        "choices": [
+          "ないで",
+          "なくて",
+          "ないと",
+          "ないば"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「〜ないといけません」: 「帰らないといけません」.",
+        "en": "Correct! The pattern 「〜ないといけません」: 「帰らないといけません」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「〜ないといけません」: 「帰らないといけません」.",
+        "en": "Not quite. The pattern 「〜ないといけません」: 「帰らないといけません」."
+      }
+    },
+    {
+      "item": "〜ないといけない／〜なきゃ",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n明日は早いから、もう寝___。",
+        "en": "Choose the correct option for the blank:\n明日は早いから、もう寝___。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なきゃ",
+          "なくちゃ"
+        ],
+        "hint": "ねなきゃ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Khẩu ngữ rút gọn của 「寝なければ」 là 「寝なきゃ」 (hoặc 「寝なくちゃ」).",
+        "en": "Correct! The casual contraction of 「寝なければ」 is 「寝なきゃ」 (or 「寝なくちゃ」)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Khẩu ngữ rút gọn của 「寝なければ」 là 「寝なきゃ」 (hoặc 「寝なくちゃ」).",
+        "en": "Not quite. The casual contraction of 「寝なければ」 is 「寝なきゃ」 (or 「寝なくちゃ」)."
+      }
+    },
+    {
+      "item": "〜なくてもいい",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\n今日は、早く来（　）いいです。",
+        "en": "Choose the correct option for the blank:\n今日は、早く来（　）いいです。"
+      },
+      "payload": {
+        "choices": [
+          "ないでも",
+          "なくても",
+          "なくては",
+          "なければ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không cần làm: 「〜なくてもいい」 → 「来なくてもいい」.",
+        "en": "Correct! Not necessary: 「〜なくてもいい」→「来なくてもいい」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không cần làm: 「〜なくてもいい」 → 「来なくてもいい」.",
+        "en": "Not quite. Not necessary: 「〜なくてもいい」→「来なくてもいい」."
+      }
+    },
+    {
+      "item": "〜なくてもいい",
+      "format": "form_fill",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nこの薬は、毎日飲ま___いいですよ。",
+        "en": "Choose the correct option for the blank:\nこの薬は、毎日飲ま___いいですよ。"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なくても"
+        ],
+        "hint": "〜なくても"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Không bắt buộc uống mỗi ngày: 「飲まなくてもいいですよ」.",
+        "en": "Correct! Not required to take it daily: 「飲まなくてもいいですよ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Không bắt buộc uống mỗi ngày: 「飲まなくてもいいですよ」.",
+        "en": "Not quite. Not required to take it daily: 「飲まなくてもいいですよ」."
+      }
+    },
+    {
+      "item": "〜なくてもいい",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\n明日は休みですから、会社に行か（　）。",
+        "en": "Choose the pattern that best fits the context:\n明日は休みですから、会社に行か（　）。"
+      },
+      "payload": {
+        "choices": [
+          "なくてもいいです",
+          "なければなりません",
+          "ないでください",
+          "なくてはいけません"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Ngày mai nghỉ nên không cần đi làm: 「行かなくてもいいです」; các đáp án khác đều nói phải/không được.",
+        "en": "Correct! Tomorrow is a day off, so there is no need to go: 「行かなくてもいいです」; the others say must/must not."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Ngày mai nghỉ nên không cần đi làm: 「行かなくてもいいです」; các đáp án khác đều nói phải/không được.",
+        "en": "Not quite. Tomorrow is a day off, so there is no need to go: 「行かなくてもいいです」; the others say must/must not."
+      }
+    },
+    {
+      "item": "〜てもかまわない",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nここで写真を撮って（　）かまいません。",
+        "en": "Choose the correct option for the blank:\nここで写真を撮って（　）かまいません。"
+      },
+      "payload": {
+        "choices": [
+          "は",
+          "が",
+          "を",
+          "も"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu 「〜てもかまいません」 dùng trợ từ 「も」.",
+        "en": "Correct! The pattern 「〜てもかまいません」 uses the particle 「も」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu 「〜てもかまいません」 dùng trợ từ 「も」.",
+        "en": "Not quite. The pattern 「〜てもかまいません」 uses the particle 「も」."
+      }
+    },
+    {
+      "item": "〜てもかまわない",
+      "format": "contrast",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn mẫu câu phù hợp nhất với ngữ cảnh:\nA: 窓を開けてもいいですか。 B: はい、開けても（　）。",
+        "en": "Choose the pattern that best fits the context:\nA: 窓を開けてもいいですか。 B: はい、開けても（　）。"
+      },
+      "payload": {
+        "choices": [
+          "いけません",
+          "ありません",
+          "かまいません",
+          "なりません"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Cho phép đáp lại bằng 「かまいません」; 「いけません」 là cấm.",
+        "en": "Correct! Permission is answered with 「かまいません」; 「いけません」 would be a refusal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cho phép đáp lại bằng 「かまいません」; 「いけません」 là cấm.",
+        "en": "Not quite. Permission is answered with 「かまいません」; 「いけません」 would be a refusal."
+      }
+    },
+    {
+      "item": "〜ないでください",
+      "format": "form_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn đáp án đúng điền vào chỗ trống:\nここで写真を撮ら（　）ください。",
+        "en": "Choose the correct option for the blank:\nここで写真を撮ら（　）ください。"
+      },
+      "payload": {
+        "choices": [
+          "なくて",
+          "ないで",
+          "ないと",
+          "なければ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Nhờ đừng làm: 「撮らないでください」.",
+        "en": "Correct! Asking someone not to: 「撮らないでください」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Nhờ đừng làm: 「撮らないでください」.",
+        "en": "Not quite. Asking someone not to: 「撮らないでください」."
+      }
+    },
+    {
+      "item": "〜ないでください",
+      "format": "sentence_correct",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu đúng ngữ pháp.",
+        "en": "Choose the grammatically correct sentence."
+      },
+      "payload": {
+        "choices": [
+          "心配しないでください。",
+          "心配しなくでください。",
+          "心配しないください。",
+          "心配しないでくださいます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mẫu đúng là 「〜ないでください」; thiếu 「で」 hay thêm 「ます」 đều sai.",
+        "en": "Correct! The correct pattern is 「〜ないでください」; dropping 「で」 or adding 「ます」 is wrong."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mẫu đúng là 「〜ないでください」; thiếu 「で」 hay thêm 「ます」 đều sai.",
+        "en": "Not quite. The correct pattern is 「〜ないでください」; dropping 「で」 or adding 「ます」 is wrong."
+      }
+    },
+    {
+      "item": "〜ないでください",
+      "format": "sentence_order_star",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Sắp xếp các mảnh thành câu đúng, rồi chọn mảnh đứng ở ô ★:\nここでは　＿　＿　★　＿　。\n（たばこを／吸わ／ないで／ください）",
+        "en": "Arrange the pieces into a correct sentence, then choose the piece that goes in the ★ slot:\nここでは　＿　＿　★　＿　。\n（たばこを／吸わ／ないで／ください）"
+      },
+      "payload": {
+        "choices": [
+          "たばこを",
+          "吸わ",
+          "ください",
+          "ないで"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Câu đúng là 「ここではたばこを吸わないでください。」; ô ★ (thứ ba) là 「ないで」.",
+        "en": "Correct! The correct sentence is 「ここではたばこを吸わないでください。」; the ★ (third) slot is 「ないで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu đúng là 「ここではたばこを吸わないでください。」; ô ★ (thứ ba) là 「ないで」.",
+        "en": "Not quite. The correct sentence is 「ここではたばこを吸わないでください。」; the ★ (third) slot is 「ないで」."
+      }
+    },
+    {
+      "format": "form_fill",
+      "type": "matching",
+      "prompt": {
+        "vi": "Nối mỗi mẫu câu với ý nghĩa tương ứng.",
+        "en": "Match each pattern with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "〜なければならない／〜なくてはいけない",
+            {
+              "vi": "Phải ~",
+              "en": "Must ~"
+            }
+          ],
+          [
+            "〜ないといけない／〜なきゃ",
+            {
+              "vi": "Phải ~ (khẩu ngữ)",
+              "en": "Have to ~ (casual)"
+            }
+          ],
+          [
+            "〜なくてもいい",
+            {
+              "vi": "Không cần ~ cũng được",
+              "en": "Need not ~"
+            }
+          ],
+          [
+            "〜てもかまわない",
+            {
+              "vi": "~ cũng không sao",
+              "en": "It does not matter if ~; you may ~"
+            }
+          ],
+          [
+            "〜ないでください",
+            {
+              "vi": "Xin đừng ~",
+              "en": "Please do not ~"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Correct! Each pattern has its own meaning and usage; review the explanation of each pattern."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Mỗi mẫu câu có một ý nghĩa/cách dùng riêng, xem lại phần giải thích của từng mẫu.",
+        "en": "Not quite. Each pattern has its own meaning and usage; review the explanation of each pattern."
+      }
+    }
+  ]
+}

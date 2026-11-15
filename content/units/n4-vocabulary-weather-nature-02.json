@@ -1,0 +1,707 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-weather-nature",
+  "title": {
+    "vi": "Thiên tai, mùa mưa và dự báo thời tiết",
+    "en": "Disasters, rainy season and forecasts"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "台風",
+      "reading": "たいふう",
+      "meaning": {
+        "vi": "Bão (nhiệt đới)",
+        "en": "Typhoon"
+      },
+      "examples": [
+        {
+          "ja": "強い台風が来るので、電車が止まるかもしれません。",
+          "reading": "つよいたいふうがくるので、でんしゃがとまるかもしれません。",
+          "translation": {
+            "vi": "Vì có bão mạnh nên tàu điện có thể sẽ ngừng chạy.",
+            "en": "A strong typhoon is coming, so the trains may stop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地震",
+      "reading": "じしん",
+      "meaning": {
+        "vi": "Động đất",
+        "en": "Earthquake"
+      },
+      "examples": [
+        {
+          "ja": "昨日、大きな地震があって、棚の物が落ちました。",
+          "reading": "きのう、おおきなじしんがあって、たなのものがおちました。",
+          "translation": {
+            "vi": "Hôm qua có động đất lớn, đồ trên kệ bị rơi xuống.",
+            "en": "There was a big earthquake yesterday and things fell off the shelf."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "津波",
+      "reading": "つなみ",
+      "meaning": {
+        "vi": "Sóng thần",
+        "en": "Tsunami"
+      },
+      "examples": [
+        {
+          "ja": "海の近くで地震があったら、津波に気をつけてください。",
+          "reading": "うみのちかくでじしんがあったら、つなみにきをつけてください。",
+          "translation": {
+            "vi": "Nếu có động đất gần biển, hãy cẩn thận sóng thần.",
+            "en": "If there is an earthquake near the sea, beware of tsunami."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "火事",
+      "reading": "かじ",
+      "meaning": {
+        "vi": "Hỏa hoạn; đám cháy",
+        "en": "Fire (accidental)"
+      },
+      "examples": [
+        {
+          "ja": "となりの家で火事があって、消防車が来ました。",
+          "reading": "となりのいえでかじがあって、しょうぼうしゃがきました。",
+          "translation": {
+            "vi": "Nhà bên cạnh bị cháy nên xe cứu hỏa đã đến.",
+            "en": "There was a fire at the house next door, and fire trucks came."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "洪水",
+      "reading": "こうずい",
+      "meaning": {
+        "vi": "Lũ lụt",
+        "en": "Flood"
+      },
+      "examples": [
+        {
+          "ja": "大雨で川の水があふれて、洪水になりました。",
+          "reading": "おおあめでかわのみずがあふれて、こうずいになりました。",
+          "translation": {
+            "vi": "Mưa lớn làm nước sông tràn bờ, gây ra lũ lụt.",
+            "en": "Heavy rain made the river overflow, causing a flood."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "嵐",
+      "reading": "あらし",
+      "meaning": {
+        "vi": "Cơn bão (gió mưa dữ dội)",
+        "en": "Storm"
+      },
+      "examples": [
+        {
+          "ja": "昨日の夜は嵐で、風も雨もとても強かったです。",
+          "reading": "きのうのよるはあらしで、かぜもあめもとてもつよかったです。",
+          "translation": {
+            "vi": "Đêm qua có bão, cả gió lẫn mưa đều rất mạnh.",
+            "en": "There was a storm last night, and both wind and rain were very strong."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "梅雨",
+      "reading": "つゆ",
+      "meaning": {
+        "vi": "Mùa mưa (đầu hè ở Nhật)",
+        "en": "Rainy season"
+      },
+      "examples": [
+        {
+          "ja": "日本では、六月から七月は梅雨で、雨の日が続きます。",
+          "reading": "にほんでは、ろくがつからしちがつはつゆで、あめのひがつづきます。",
+          "translation": {
+            "vi": "Ở Nhật, từ tháng Sáu đến tháng Bảy là mùa mưa nên liên tục có những ngày mưa.",
+            "en": "In Japan, June to July is the rainy season, and rainy days continue."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "氷",
+      "reading": "こおり",
+      "meaning": {
+        "vi": "Băng; nước đá",
+        "en": "Ice"
+      },
+      "examples": [
+        {
+          "ja": "冬は、池の水が凍って氷になります。",
+          "reading": "ふゆは、いけのみずがこおってこおりになります。",
+          "translation": {
+            "vi": "Mùa đông nước ao đóng băng thành băng đá.",
+            "en": "In winter, the water in the pond freezes and becomes ice."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "吹く",
+      "reading": "ふく",
+      "meaning": {
+        "vi": "Thổi (gió)",
+        "en": "To blow (wind)"
+      },
+      "examples": [
+        {
+          "ja": "北から冷たい風が吹くと、寒くなります。",
+          "reading": "きたからつめたいかぜがふくと、さむくなります。",
+          "translation": {
+            "vi": "Khi gió lạnh thổi từ phía bắc thì trời trở lạnh.",
+            "en": "When a cold wind blows from the north, it gets cold."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "晴れる",
+      "reading": "はれる",
+      "meaning": {
+        "vi": "Nắng; trời quang",
+        "en": "To clear up; to be sunny"
+      },
+      "examples": [
+        {
+          "ja": "明日は、朝から晴れるでしょう。",
+          "reading": "あしたは、あさからはれるでしょう。",
+          "translation": {
+            "vi": "Ngày mai trời sẽ nắng từ sáng.",
+            "en": "It will be sunny from the morning tomorrow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "曇る",
+      "reading": "くもる",
+      "meaning": {
+        "vi": "Có mây; âm u",
+        "en": "To become cloudy"
+      },
+      "examples": [
+        {
+          "ja": "午後から、だんだん曇るでしょう。",
+          "reading": "ごごから、だんだんくもるでしょう。",
+          "translation": {
+            "vi": "Từ chiều trời sẽ dần dần có mây.",
+            "en": "It will gradually become cloudy from the afternoon."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "気温",
+      "reading": "きおん",
+      "meaning": {
+        "vi": "Nhiệt độ không khí",
+        "en": "Air temperature"
+      },
+      "examples": [
+        {
+          "ja": "今日の気温は、三十度を超えました。",
+          "reading": "きょうのきおんは、さんじゅうどをこえました。",
+          "translation": {
+            "vi": "Nhiệt độ hôm nay đã vượt quá ba mươi độ.",
+            "en": "Today’s temperature went over thirty degrees."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "台風",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 強い（　）が来るので、電車が止まるかもしれません。 — Nghĩa của câu: “Vì có bão mạnh nên tàu điện có thể sẽ ngừng chạy.”",
+        "en": "Choose the word that fits the blank: 強い（　）が来るので、電車が止まるかもしれません。 — Meaning of the sentence: “A strong typhoon is coming, so the trains may stop.”"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "地震",
+          "嵐",
+          "洪水"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「台風」(Bão (nhiệt đới)) hợp nghĩa câu này: “Vì có bão mạnh nên tàu điện có thể sẽ ngừng chạy.”",
+        "en": "Correct! 「台風」(Typhoon) fits this sentence: “A strong typhoon is coming, so the trains may stop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì có bão mạnh nên tàu điện có thể sẽ ngừng chạy.”, nên cần 「台風」(Bão (nhiệt đới)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A strong typhoon is coming, so the trains may stop.”, so it needs 「台風」(Typhoon); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "地震",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 昨日、大きな（　）があって、棚の物が落ちました。 — Nghĩa của câu: “Hôm qua có động đất lớn, đồ trên kệ bị rơi xuống.”",
+        "en": "Choose the word that fits the blank: 昨日、大きな（　）があって、棚の物が落ちました。 — Meaning of the sentence: “There was a big earthquake yesterday and things fell off the shelf.”"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "地震",
+          "津波",
+          "火事"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地震」(Động đất) hợp nghĩa câu này: “Hôm qua có động đất lớn, đồ trên kệ bị rơi xuống.”",
+        "en": "Correct! 「地震」(Earthquake) fits this sentence: “There was a big earthquake yesterday and things fell off the shelf.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm qua có động đất lớn, đồ trên kệ bị rơi xuống.”, nên cần 「地震」(Động đất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was a big earthquake yesterday and things fell off the shelf.”, so it needs 「地震」(Earthquake); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "津波",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海の近くで地震があったら、（　）に気をつけてください。 — Nghĩa của câu: “Nếu có động đất gần biển, hãy cẩn thận sóng thần.”",
+        "en": "Choose the word that fits the blank: 海の近くで地震があったら、（　）に気をつけてください。 — Meaning of the sentence: “If there is an earthquake near the sea, beware of tsunami.”"
+      },
+      "payload": {
+        "choices": [
+          "洪水",
+          "火事",
+          "津波",
+          "台風"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「津波」(Sóng thần) hợp nghĩa câu này: “Nếu có động đất gần biển, hãy cẩn thận sóng thần.”",
+        "en": "Correct! 「津波」(Tsunami) fits this sentence: “If there is an earthquake near the sea, beware of tsunami.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu có động đất gần biển, hãy cẩn thận sóng thần.”, nên cần 「津波」(Sóng thần); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If there is an earthquake near the sea, beware of tsunami.”, so it needs 「津波」(Tsunami); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "火事",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: となりの家で（　）があって、消防車が来ました。 — Nghĩa của câu: “Nhà bên cạnh bị cháy nên xe cứu hỏa đã đến.”",
+        "en": "Choose the word that fits the blank: となりの家で（　）があって、消防車が来ました。 — Meaning of the sentence: “There was a fire at the house next door, and fire trucks came.”"
+      },
+      "payload": {
+        "choices": [
+          "地震",
+          "津波",
+          "洪水",
+          "火事"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「火事」(Hỏa hoạn; đám cháy) hợp nghĩa câu này: “Nhà bên cạnh bị cháy nên xe cứu hỏa đã đến.”",
+        "en": "Correct! 「火事」(Fire (accidental)) fits this sentence: “There was a fire at the house next door, and fire trucks came.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà bên cạnh bị cháy nên xe cứu hỏa đã đến.”, nên cần 「火事」(Hỏa hoạn; đám cháy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was a fire at the house next door, and fire trucks came.”, so it needs 「火事」(Fire (accidental)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "洪水",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大雨で川の水があふれて、（　）になりました。",
+        "en": "Choose the word that fits the blank: 大雨で川の水があふれて、（　）になりました。"
+      },
+      "payload": {
+        "choices": [
+          "洪水",
+          "火事",
+          "地震",
+          "氷"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「洪水」(Lũ lụt) hợp nghĩa câu này: “Mưa lớn làm nước sông tràn bờ, gây ra lũ lụt.”",
+        "en": "Correct! 「洪水」(Flood) fits this sentence: “Heavy rain made the river overflow, causing a flood.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mưa lớn làm nước sông tràn bờ, gây ra lũ lụt.”, nên cần 「洪水」(Lũ lụt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Heavy rain made the river overflow, causing a flood.”, so it needs 「洪水」(Flood); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "嵐",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 昨日の夜は（　）で、風も雨もとても強かったです。 — Nghĩa của câu: “Đêm qua có bão, cả gió lẫn mưa đều rất mạnh.”",
+        "en": "Choose the word that fits the blank: 昨日の夜は（　）で、風も雨もとても強かったです。 — Meaning of the sentence: “There was a storm last night, and both wind and rain were very strong.”"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "嵐",
+          "梅雨",
+          "津波"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「嵐」(Cơn bão (gió mưa dữ dội)) hợp nghĩa câu này: “Đêm qua có bão, cả gió lẫn mưa đều rất mạnh.”",
+        "en": "Correct! 「嵐」(Storm) fits this sentence: “There was a storm last night, and both wind and rain were very strong.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đêm qua có bão, cả gió lẫn mưa đều rất mạnh.”, nên cần 「嵐」(Cơn bão (gió mưa dữ dội)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There was a storm last night, and both wind and rain were very strong.”, so it needs 「嵐」(Storm); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "梅雨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本では、六月から七月は（　）で、雨の日が続きます。 — Nghĩa của câu: “Ở Nhật, từ tháng Sáu đến tháng Bảy là mùa mưa nên liên tục có những ngày mưa.”",
+        "en": "Choose the word that fits the blank: 日本では、六月から七月は（　）で、雨の日が続きます。 — Meaning of the sentence: “In Japan, June to July is the rainy season, and rainy days continue.”"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "嵐",
+          "梅雨",
+          "洪水"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「梅雨」(Mùa mưa (đầu hè ở Nhật)) hợp nghĩa câu này: “Ở Nhật, từ tháng Sáu đến tháng Bảy là mùa mưa nên liên tục có những ngày mưa.”",
+        "en": "Correct! 「梅雨」(Rainy season) fits this sentence: “In Japan, June to July is the rainy season, and rainy days continue.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở Nhật, từ tháng Sáu đến tháng Bảy là mùa mưa nên liên tục có những ngày mưa.”, nên cần 「梅雨」(Mùa mưa (đầu hè ở Nhật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In Japan, June to July is the rainy season, and rainy days continue.”, so it needs 「梅雨」(Rainy season); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "氷",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 冬は、池の水が凍って（　）になります。",
+        "en": "Choose the word that fits the blank: 冬は、池の水が凍って（　）になります。"
+      },
+      "payload": {
+        "choices": [
+          "雷",
+          "霧",
+          "洪水",
+          "氷"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「氷」(Băng; nước đá) hợp nghĩa câu này: “Mùa đông nước ao đóng băng thành băng đá.”",
+        "en": "Correct! 「氷」(Ice) fits this sentence: “In winter, the water in the pond freezes and becomes ice.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mùa đông nước ao đóng băng thành băng đá.”, nên cần 「氷」(Băng; nước đá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In winter, the water in the pond freezes and becomes ice.”, so it needs 「氷」(Ice); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "吹く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 北から冷たい風が（　）と、寒くなります。",
+        "en": "Choose the word that fits the blank: 北から冷たい風が（　）と、寒くなります。"
+      },
+      "payload": {
+        "choices": [
+          "吹く",
+          "晴れる",
+          "曇る",
+          "降る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「吹く」(Thổi (gió)) hợp nghĩa câu này: “Khi gió lạnh thổi từ phía bắc thì trời trở lạnh.”",
+        "en": "Correct! 「吹く」(To blow (wind)) fits this sentence: “When a cold wind blows from the north, it gets cold.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi gió lạnh thổi từ phía bắc thì trời trở lạnh.”, nên cần 「吹く」(Thổi (gió)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When a cold wind blows from the north, it gets cold.”, so it needs 「吹く」(To blow (wind)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "晴れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 明日は、朝から（　）でしょう。 — Nghĩa của câu: “Ngày mai trời sẽ nắng từ sáng.”",
+        "en": "Choose the word that fits the blank: 明日は、朝から（　）でしょう。 — Meaning of the sentence: “It will be sunny from the morning tomorrow.”"
+      },
+      "payload": {
+        "choices": [
+          "曇る",
+          "晴れる",
+          "吹く",
+          "降る"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「晴れる」(Nắng; trời quang) hợp nghĩa câu này: “Ngày mai trời sẽ nắng từ sáng.”",
+        "en": "Correct! 「晴れる」(To clear up; to be sunny) fits this sentence: “It will be sunny from the morning tomorrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày mai trời sẽ nắng từ sáng.”, nên cần 「晴れる」(Nắng; trời quang); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It will be sunny from the morning tomorrow.”, so it needs 「晴れる」(To clear up; to be sunny); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "曇る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 午後から、だんだん（　）でしょう。 — Nghĩa của câu: “Từ chiều trời sẽ dần dần có mây.”",
+        "en": "Choose the word that fits the blank: 午後から、だんだん（　）でしょう。 — Meaning of the sentence: “It will gradually become cloudy from the afternoon.”"
+      },
+      "payload": {
+        "choices": [
+          "晴れる",
+          "吹く",
+          "曇る",
+          "降る"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「曇る」(Có mây; âm u) hợp nghĩa câu này: “Từ chiều trời sẽ dần dần có mây.”",
+        "en": "Correct! 「曇る」(To become cloudy) fits this sentence: “It will gradually become cloudy from the afternoon.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Từ chiều trời sẽ dần dần có mây.”, nên cần 「曇る」(Có mây; âm u); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It will gradually become cloudy from the afternoon.”, so it needs 「曇る」(To become cloudy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "気温",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日の（　）は、三十度を超えました。",
+        "en": "Choose the word that fits the blank: 今日の（　）は、三十度を超えました。"
+      },
+      "payload": {
+        "choices": [
+          "梅雨",
+          "台風",
+          "氷",
+          "気温"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「気温」(Nhiệt độ không khí) hợp nghĩa câu này: “Nhiệt độ hôm nay đã vượt quá ba mươi độ.”",
+        "en": "Correct! 「気温」(Air temperature) fits this sentence: “Today’s temperature went over thirty degrees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhiệt độ hôm nay đã vượt quá ba mươi độ.”, nên cần 「気温」(Nhiệt độ không khí); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Today’s temperature went over thirty degrees.”, so it needs 「気温」(Air temperature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "台風",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 強い「台風」が来るので、電車が止まるかもしれません。",
+        "en": "Choose the correct reading of the word in 「」: 強い「台風」が来るので、電車が止まるかもしれません。"
+      },
+      "payload": {
+        "choices": [
+          "じしん",
+          "たいふう",
+          "つなみ",
+          "かじ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「台風」 đọc là 「たいふう」, nghĩa là Bão (nhiệt đới).",
+        "en": "Correct! 「台風」 is read 「たいふう」 and means Typhoon."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「台風」 đọc là 「たいふう」 (Bão (nhiệt đới)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「台風」 is read 「たいふう」 (Typhoon); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "火事",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: となりの家で「火事」があって、消防車が来ました。",
+        "en": "Choose the correct reading of the word in 「」: となりの家で「火事」があって、消防車が来ました。"
+      },
+      "payload": {
+        "choices": [
+          "たいふう",
+          "じしん",
+          "かじ",
+          "つなみ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「火事」 đọc là 「かじ」, nghĩa là Hỏa hoạn; đám cháy.",
+        "en": "Correct! 「火事」 is read 「かじ」 and means Fire (accidental)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「火事」 đọc là 「かじ」 (Hỏa hoạn; đám cháy); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「火事」 is read 「かじ」 (Fire (accidental)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "梅雨",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 日本では、六月から七月は「梅雨」で、雨の日が続きます。",
+        "en": "Choose the correct reading of the word in 「」: 日本では、六月から七月は「梅雨」で、雨の日が続きます。"
+      },
+      "payload": {
+        "choices": [
+          "たいふう",
+          "じしん",
+          "つなみ",
+          "つゆ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「梅雨」 đọc là 「つゆ」, nghĩa là Mùa mưa (đầu hè ở Nhật).",
+        "en": "Correct! 「梅雨」 is read 「つゆ」 and means Rainy season."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「梅雨」 đọc là 「つゆ」 (Mùa mưa (đầu hè ở Nhật)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「梅雨」 is read 「つゆ」 (Rainy season); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "晴れる",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 明日は、朝から「晴れる」でしょう。",
+        "en": "Choose the correct reading of the word in 「」: 明日は、朝から「晴れる」でしょう。"
+      },
+      "payload": {
+        "choices": [
+          "はれる",
+          "たいふう",
+          "じしん",
+          "つなみ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「晴れる」 đọc là 「はれる」, nghĩa là Nắng; trời quang.",
+        "en": "Correct! 「晴れる」 is read 「はれる」 and means To clear up; to be sunny."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「晴れる」 đọc là 「はれる」 (Nắng; trời quang); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「晴れる」 is read 「はれる」 (To clear up; to be sunny); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "地震",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 昨日、大きな「じしん」があって、棚の物が落ちました。",
+        "en": "Choose the correct way to write the word in 「」: 昨日、大きな「じしん」があって、棚の物が落ちました。"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "津波",
+          "地震",
+          "火事"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「じしん」 viết là 「地震」, nghĩa là Động đất.",
+        "en": "Correct! 「じしん」 is written 「地震」 and means Earthquake."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「じしん」 viết là 「地震」 (Động đất); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「じしん」 is written 「地震」 (Earthquake); the other words are read differently."
+      }
+    },
+    {
+      "item": "氷",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 冬は、池の水が凍って「こおり」になります。",
+        "en": "Choose the correct way to write the word in 「」: 冬は、池の水が凍って「こおり」になります。"
+      },
+      "payload": {
+        "choices": [
+          "台風",
+          "地震",
+          "津波",
+          "氷"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こおり」 viết là 「氷」, nghĩa là Băng; nước đá.",
+        "en": "Correct! 「こおり」 is written 「氷」 and means Ice."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こおり」 viết là 「氷」 (Băng; nước đá); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こおり」 is written 「氷」 (Ice); the other words are read differently."
+      }
+    }
+  ]
+}

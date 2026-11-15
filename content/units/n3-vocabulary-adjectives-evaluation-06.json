@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adjectives-evaluation",
+  "title": {
+    "vi": "Tính cách và thái độ làm việc",
+    "en": "Manner and working style"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2870,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "乱暴",
+      "reading": "らんぼう",
+      "meaning": {
+        "vi": "Thô bạo",
+        "en": "Rough; violent"
+      },
+      "examples": [
+        {
+          "ja": "ものを乱暴に扱わないでください。",
+          "reading": "ものをらんぼうにあつかわないでください。",
+          "translation": {
+            "vi": "Xin đừng xử lý đồ vật thô bạo.",
+            "en": "Please do not handle things roughly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "情けない",
+      "reading": "なさけない",
+      "meaning": {
+        "vi": "Thảm hại; đáng thương",
+        "en": "Pathetic; miserable"
+      },
+      "examples": [
+        {
+          "ja": "こんな簡単な間違いをして、情けないです。",
+          "reading": "こんなかんたんなまちがいをして、なさけないです。",
+          "translation": {
+            "vi": "Mắc lỗi dễ như vậy thật đáng xấu hổ.",
+            "en": "Making such a simple mistake is pathetic."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "慎重",
+      "reading": "しんちょう",
+      "meaning": {
+        "vi": "Thận trọng",
+        "en": "Cautious"
+      },
+      "examples": [
+        {
+          "ja": "大切な決定は、慎重に行います。",
+          "reading": "たいせつなけっていは、しんちょうにおこないます。",
+          "translation": {
+            "vi": "Quyết định quan trọng thì phải tiến hành thận trọng.",
+            "en": "Important decisions are made cautiously."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大胆",
+      "reading": "だいたん",
+      "meaning": {
+        "vi": "Táo bạo",
+        "en": "Bold; daring"
+      },
+      "examples": [
+        {
+          "ja": "彼は、大胆な計画を立てました。",
+          "reading": "かれは、だいたんなけいかくをたてました。",
+          "translation": {
+            "vi": "Anh ấy đã lập một kế hoạch táo bạo.",
+            "en": "He made a bold plan."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "控えめ",
+      "reading": "ひかえめ",
+      "meaning": {
+        "vi": "Khiêm tốn; kín đáo",
+        "en": "Modest; reserved"
+      },
+      "examples": [
+        {
+          "ja": "彼女は、控えめで、あまり話しません。",
+          "reading": "かのじょは、ひかえめで、あまりはなしません。",
+          "translation": {
+            "vi": "Cô ấy kín đáo, ít khi nói chuyện.",
+            "en": "She is reserved and does not talk much."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "地道",
+      "reading": "じみち",
+      "meaning": {
+        "vi": "Đều đặn; kiên trì (chắc chắn)",
+        "en": "Steady; down-to-earth"
+      },
+      "examples": [
+        {
+          "ja": "地道な努力が、成功につながります。",
+          "reading": "じみちなどりょくが、せいこうにつながります。",
+          "translation": {
+            "vi": "Nỗ lực kiên trì sẽ dẫn đến thành công.",
+            "en": "Steady effort leads to success."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "乱暴",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ものを（　）に扱わないでください。 — Nghĩa của câu: “Xin đừng xử lý đồ vật thô bạo.”",
+        "en": "Choose the word that fits the blank: ものを（　）に扱わないでください。 — Meaning of the sentence: “Please do not handle things roughly.”"
+      },
+      "payload": {
+        "choices": [
+          "慎重",
+          "大胆",
+          "乱暴",
+          "控えめ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乱暴」(Thô bạo) hợp nghĩa câu này: “Xin đừng xử lý đồ vật thô bạo.”",
+        "en": "Correct! 「乱暴」(Rough; violent) fits this sentence: “Please do not handle things roughly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin đừng xử lý đồ vật thô bạo.”, nên cần 「乱暴」(Thô bạo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please do not handle things roughly.”, so it needs 「乱暴」(Rough; violent); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "情けない",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: こんな簡単な間違いをして、（　）です。 — Nghĩa của câu: “Mắc lỗi dễ như vậy thật đáng xấu hổ.”",
+        "en": "Choose the word that fits the blank: こんな簡単な間違いをして、（　）です。 — Meaning of the sentence: “Making such a simple mistake is pathetic.”"
+      },
+      "payload": {
+        "choices": [
+          "大胆",
+          "乱暴",
+          "慎重",
+          "情けない"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「情けない」(Thảm hại; đáng thương) hợp nghĩa câu này: “Mắc lỗi dễ như vậy thật đáng xấu hổ.”",
+        "en": "Correct! 「情けない」(Pathetic; miserable) fits this sentence: “Making such a simple mistake is pathetic.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mắc lỗi dễ như vậy thật đáng xấu hổ.”, nên cần 「情けない」(Thảm hại; đáng thương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Making such a simple mistake is pathetic.”, so it needs 「情けない」(Pathetic; miserable); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "慎重",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大切な決定は、（　）に行います。 — Nghĩa của câu: “Quyết định quan trọng thì phải tiến hành thận trọng.”",
+        "en": "Choose the word that fits the blank: 大切な決定は、（　）に行います。 — Meaning of the sentence: “Important decisions are made cautiously.”"
+      },
+      "payload": {
+        "choices": [
+          "慎重",
+          "乱暴",
+          "大胆",
+          "控えめ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「慎重」(Thận trọng) hợp nghĩa câu này: “Quyết định quan trọng thì phải tiến hành thận trọng.”",
+        "en": "Correct! 「慎重」(Cautious) fits this sentence: “Important decisions are made cautiously.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quyết định quan trọng thì phải tiến hành thận trọng.”, nên cần 「慎重」(Thận trọng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Important decisions are made cautiously.”, so it needs 「慎重」(Cautious); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大胆",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、（　）な計画を立てました。 — Nghĩa của câu: “Anh ấy đã lập một kế hoạch táo bạo.”",
+        "en": "Choose the word that fits the blank: 彼は、（　）な計画を立てました。 — Meaning of the sentence: “He made a bold plan.”"
+      },
+      "payload": {
+        "choices": [
+          "乱暴",
+          "大胆",
+          "慎重",
+          "控えめ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大胆」(Táo bạo) hợp nghĩa câu này: “Anh ấy đã lập một kế hoạch táo bạo.”",
+        "en": "Correct! 「大胆」(Bold; daring) fits this sentence: “He made a bold plan.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy đã lập một kế hoạch táo bạo.”, nên cần 「大胆」(Táo bạo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He made a bold plan.”, so it needs 「大胆」(Bold; daring); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "控えめ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼女は、（　）で、あまり話しません。 — Nghĩa của câu: “Cô ấy kín đáo, ít khi nói chuyện.”",
+        "en": "Choose the word that fits the blank: 彼女は、（　）で、あまり話しません。 — Meaning of the sentence: “She is reserved and does not talk much.”"
+      },
+      "payload": {
+        "choices": [
+          "乱暴",
+          "慎重",
+          "控えめ",
+          "大胆"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「控えめ」(Khiêm tốn; kín đáo) hợp nghĩa câu này: “Cô ấy kín đáo, ít khi nói chuyện.”",
+        "en": "Correct! 「控えめ」(Modest; reserved) fits this sentence: “She is reserved and does not talk much.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cô ấy kín đáo, ít khi nói chuyện.”, nên cần 「控えめ」(Khiêm tốn; kín đáo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “She is reserved and does not talk much.”, so it needs 「控えめ」(Modest; reserved); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "地道",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）な努力が、成功につながります。 — Nghĩa của câu: “Nỗ lực kiên trì sẽ dẫn đến thành công.”",
+        "en": "Choose the word that fits the blank: （　）な努力が、成功につながります。 — Meaning of the sentence: “Steady effort leads to success.”"
+      },
+      "payload": {
+        "choices": [
+          "乱暴",
+          "大胆",
+          "慎重",
+          "地道"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「地道」(Đều đặn; kiên trì (chắc chắn)) hợp nghĩa câu này: “Nỗ lực kiên trì sẽ dẫn đến thành công.”",
+        "en": "Correct! 「地道」(Steady; down-to-earth) fits this sentence: “Steady effort leads to success.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nỗ lực kiên trì sẽ dẫn đến thành công.”, nên cần 「地道」(Đều đặn; kiên trì (chắc chắn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Steady effort leads to success.”, so it needs 「地道」(Steady; down-to-earth); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "乱暴",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ものを「乱暴」に扱わないでください。",
+        "en": "Choose the correct reading of the word in 「」: ものを「乱暴」に扱わないでください。"
+      },
+      "payload": {
+        "choices": [
+          "なさけない",
+          "しんちょう",
+          "だいたん",
+          "らんぼう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乱暴」 đọc là 「らんぼう」, nghĩa là Thô bạo.",
+        "en": "Correct! 「乱暴」 is read 「らんぼう」 and means Rough; violent."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「乱暴」 đọc là 「らんぼう」 (Thô bạo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「乱暴」 is read 「らんぼう」 (Rough; violent); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "大胆",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、「大胆」な計画を立てました。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、「大胆」な計画を立てました。"
+      },
+      "payload": {
+        "choices": [
+          "だいたん",
+          "なさけない",
+          "らんぼう",
+          "しんちょう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大胆」 đọc là 「だいたん」, nghĩa là Táo bạo.",
+        "en": "Correct! 「大胆」 is read 「だいたん」 and means Bold; daring."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「大胆」 đọc là 「だいたん」 (Táo bạo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「大胆」 is read 「だいたん」 (Bold; daring); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "慎重",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 大切な決定は、「しんちょう」に行います。",
+        "en": "Choose the correct way to write the word in 「」: 大切な決定は、「しんちょう」に行います。"
+      },
+      "payload": {
+        "choices": [
+          "慎重",
+          "大胆",
+          "乱暴",
+          "地道"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しんちょう」 viết là 「慎重」, nghĩa là Thận trọng.",
+        "en": "Correct! 「しんちょう」 is written 「慎重」 and means Cautious."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しんちょう」 viết là 「慎重」 (Thận trọng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しんちょう」 is written 「慎重」 (Cautious); the other words are read differently."
+      }
+    }
+  ]
+}

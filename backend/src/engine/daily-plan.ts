@@ -314,3 +314,69 @@ export function applyKanjiSlot<U extends NewUnitCandidate>(
   if (!promote || first === 0) return unchanged;
   return [candidates[first]!, ...candidates.filter((_, i) => i !== first)];
 }
+
+// --- Suất luyện đọc/viết trong kế hoạch ngày (spec 007, data-model §3.2) ---
+
+/** Cứ ít nhất 2 kế hoạch có bài mới thì có 1 kế hoạch đưa luyện đọc/viết lên đầu. */
+export const PRACTICE_EVERY_N_PLANS = 2;
+
+const PRACTICE_KINDS = ['reading', 'writing'] as const;
+type PracticeKind = (typeof PRACTICE_KINDS)[number];
+const isPracticeKind = (kind: string | undefined): kind is PracticeKind =>
+  kind === 'reading' || kind === 'writing';
+
+export interface PracticeSlotInput {
+  /** Kỹ năng HIỆU LỰC của người học (đã qua `effectiveSkills`); không có reading/writing thì hàm là no-op (I2). */
+  skills: readonly Skill[];
+  prioritizedSkill: Skill | null;
+  /**
+   * Loại (`kind`) các đơn vị mới của kế hoạch gần nhất CÓ bài mới (trước hôm nay). `null` = chưa có kế hoạch
+   * nào như vậy (ngày đầu) → coi như chưa có luyện để luyện được đứng đầu ngay.
+   */
+  lastNewUnitPlanKinds: readonly string[] | null;
+  /**
+   * Loại luyện của lần luyện gần nhất (kế hoạch nào cũng được); dùng để luân phiên đọc ↔ viết. Vắng mặt thì suy
+   * từ `lastNewUnitPlanKinds`; chưa luyện lần nào → bắt đầu bằng `reading`.
+   */
+  lastPracticeKind?: PracticeKind | null;
+  /** Quỹ thời gian ngày (phút): chỉ ứng viên luyện vừa quỹ mới được đưa lên đầu. */
+  budgetMinutes: number;
+}
+
+/**
+ * Áp "suất luyện đọc/viết" lên danh sách ứng viên bài mới đã xếp hạng, TRƯỚC `applyKanjiSlot` và
+ * `planDailyPlan` (hàm thuần, chỉ sắp lại thứ tự).
+ *
+ * - `skills` không chứa reading/writing, hoặc không có ứng viên luyện nào vừa quỹ → giữ nguyên.
+ * - `prioritizedSkill` là reading/writing HOẶC kế hoạch có bài mới gần nhất KHÔNG chứa luyện (hoặc chưa có)
+ *   → đưa ứng viên luyện đầu tiên của loại "cần" lên vị trí 0, phần còn lại giữ thứ tự.
+ * - Loại "cần" là loại đối lập với lần luyện gần nhất (chưa có → reading); hết loại đó thì lấy loại còn lại.
+ *
+ * Không đổi quỹ thời gian, giới hạn 60% ôn tập hay quy tắc luân phiên của `planDailyPlan` (Nguyên tắc I).
+ */
+export function applyPracticeSlot<U extends NewUnitCandidate>(
+  candidates: readonly U[],
+  input: PracticeSlotInput,
+): U[] {
+  const unchanged = [...candidates];
+  const enabled = new Set(PRACTICE_KINDS.filter((k) => input.skills.includes(k)));
+  if (enabled.size === 0) return unchanged;
+  const fits = candidates.filter(
+    (c) => isPracticeKind(c.kind) && enabled.has(c.kind) && c.estMinutes <= input.budgetMinutes,
+  );
+  if (fits.length === 0) return unchanged;
+
+  const last = input.lastNewUnitPlanKinds;
+  const prioritized = isPracticeKind(input.prioritizedSkill ?? undefined);
+  const promote = prioritized || last === null || !last.some(isPracticeKind);
+  if (!promote) return unchanged;
+
+  const previous =
+    input.lastPracticeKind !== undefined
+      ? input.lastPracticeKind
+      : (last?.filter(isPracticeKind).at(-1) ?? null);
+  const wanted: PracticeKind = previous === 'reading' ? 'writing' : 'reading';
+  const picked = fits.find((c) => c.kind === wanted) ?? fits[0]!;
+  if (candidates[0] === picked) return unchanged;
+  return [picked, ...candidates.filter((c) => c !== picked)];
+}

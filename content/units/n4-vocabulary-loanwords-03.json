@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-loanwords",
+  "title": {
+    "vi": "Từ katakana thường ngày (3): quà tặng, thú cưng, phép lịch sự",
+    "en": "Everyday katakana words (3): gifts, pets and manners"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2130,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "プレゼント",
+      "reading": "プレゼント",
+      "meaning": {
+        "vi": "Quà tặng",
+        "en": "Present; gift"
+      },
+      "examples": [
+        {
+          "ja": "母の日に、母へプレゼントを送りました。",
+          "reading": "ははのひに、ははへプレゼントをおくりました。",
+          "translation": {
+            "vi": "Vào Ngày của Mẹ, tôi đã gửi quà cho mẹ.",
+            "en": "On Mother's Day, I sent my mother a present."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ペット",
+      "reading": "ペット",
+      "meaning": {
+        "vi": "Thú cưng",
+        "en": "Pet"
+      },
+      "examples": [
+        {
+          "ja": "うちでは、犬と猫のペットを飼っています。",
+          "reading": "うちでは、いぬとねこのペットをかっています。",
+          "translation": {
+            "vi": "Nhà tôi nuôi thú cưng là chó và mèo.",
+            "en": "At home we keep a dog and a cat as pets."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "マナー",
+      "reading": "マナー",
+      "meaning": {
+        "vi": "Phép lịch sự; cách cư xử",
+        "en": "Manners; etiquette"
+      },
+      "examples": [
+        {
+          "ja": "電車の中で電話をするのは、マナーが悪いです。",
+          "reading": "でんしゃのなかででんわをするのは、マナーがわるいです。",
+          "translation": {
+            "vi": "Nói điện thoại trong tàu điện là thiếu phép lịch sự.",
+            "en": "It is bad manners to talk on the phone on the train."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ミス",
+      "reading": "ミス",
+      "meaning": {
+        "vi": "Lỗi; sai sót",
+        "en": "Mistake; error"
+      },
+      "examples": [
+        {
+          "ja": "仕事でミスをしたので、部長に謝りました。",
+          "reading": "しごとでミスをしたので、ぶちょうにあやまりました。",
+          "translation": {
+            "vi": "Vì mắc lỗi trong công việc nên tôi đã xin lỗi trưởng phòng.",
+            "en": "I made a mistake at work, so I apologized to my manager."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "メニュー",
+      "reading": "メニュー",
+      "meaning": {
+        "vi": "Thực đơn",
+        "en": "Menu"
+      },
+      "examples": [
+        {
+          "ja": "レストランで、メニューを見て、料理を選びました。",
+          "reading": "レストランで、メニューをみて、りょうりをえらびました。",
+          "translation": {
+            "vi": "Ở nhà hàng, tôi xem thực đơn rồi chọn món ăn.",
+            "en": "At the restaurant, I looked at the menu and chose a dish."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "リサイクル",
+      "reading": "リサイクル",
+      "meaning": {
+        "vi": "Tái chế",
+        "en": "Recycling"
+      },
+      "examples": [
+        {
+          "ja": "古い紙やびんは、リサイクルに出します。",
+          "reading": "ふるいかみやびんは、リサイクルにだします。",
+          "translation": {
+            "vi": "Giấy và chai lọ cũ thì mang đi tái chế.",
+            "en": "Old paper and bottles are put out for recycling."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "プレゼント",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母の日に、母へ（　）を送りました。 — Nghĩa của câu: “Vào Ngày của Mẹ, tôi đã gửi quà cho mẹ.”",
+        "en": "Choose the word that fits the blank: 母の日に、母へ（　）を送りました。 — Meaning of the sentence: “On Mother's Day, I sent my mother a present.”"
+      },
+      "payload": {
+        "choices": [
+          "ペット",
+          "プレゼント",
+          "メニュー",
+          "リサイクル"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プレゼント」(Quà tặng) hợp nghĩa câu này: “Vào Ngày của Mẹ, tôi đã gửi quà cho mẹ.”",
+        "en": "Correct! 「プレゼント」(Present; gift) fits this sentence: “On Mother's Day, I sent my mother a present.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào Ngày của Mẹ, tôi đã gửi quà cho mẹ.”, nên cần 「プレゼント」(Quà tặng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On Mother's Day, I sent my mother a present.”, so it needs 「プレゼント」(Present; gift); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ペット",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: うちでは、犬と猫の（　）を飼っています。 — Nghĩa của câu: “Nhà tôi nuôi thú cưng là chó và mèo.”",
+        "en": "Choose the word that fits the blank: うちでは、犬と猫の（　）を飼っています。 — Meaning of the sentence: “At home we keep a dog and a cat as pets.”"
+      },
+      "payload": {
+        "choices": [
+          "プレゼント",
+          "マナー",
+          "ペット",
+          "ミス"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ペット」(Thú cưng) hợp nghĩa câu này: “Nhà tôi nuôi thú cưng là chó và mèo.”",
+        "en": "Correct! 「ペット」(Pet) fits this sentence: “At home we keep a dog and a cat as pets.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà tôi nuôi thú cưng là chó và mèo.”, nên cần 「ペット」(Thú cưng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At home we keep a dog and a cat as pets.”, so it needs 「ペット」(Pet); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "マナー",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 電車の中で電話をするのは、（　）が悪いです。 — Nghĩa của câu: “Nói điện thoại trong tàu điện là thiếu phép lịch sự.”",
+        "en": "Choose the word that fits the blank: 電車の中で電話をするのは、（　）が悪いです。 — Meaning of the sentence: “It is bad manners to talk on the phone on the train.”"
+      },
+      "payload": {
+        "choices": [
+          "ペット",
+          "リサイクル",
+          "プレゼント",
+          "マナー"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「マナー」(Phép lịch sự; cách cư xử) hợp nghĩa câu này: “Nói điện thoại trong tàu điện là thiếu phép lịch sự.”",
+        "en": "Correct! 「マナー」(Manners; etiquette) fits this sentence: “It is bad manners to talk on the phone on the train.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nói điện thoại trong tàu điện là thiếu phép lịch sự.”, nên cần 「マナー」(Phép lịch sự; cách cư xử); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is bad manners to talk on the phone on the train.”, so it needs 「マナー」(Manners; etiquette); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ミス",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 仕事で（　）をしたので、部長に謝りました。 — Nghĩa của câu: “Vì mắc lỗi trong công việc nên tôi đã xin lỗi trưởng phòng.”",
+        "en": "Choose the word that fits the blank: 仕事で（　）をしたので、部長に謝りました。 — Meaning of the sentence: “I made a mistake at work, so I apologized to my manager.”"
+      },
+      "payload": {
+        "choices": [
+          "ミス",
+          "ペット",
+          "メニュー",
+          "リサイクル"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ミス」(Lỗi; sai sót) hợp nghĩa câu này: “Vì mắc lỗi trong công việc nên tôi đã xin lỗi trưởng phòng.”",
+        "en": "Correct! 「ミス」(Mistake; error) fits this sentence: “I made a mistake at work, so I apologized to my manager.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì mắc lỗi trong công việc nên tôi đã xin lỗi trưởng phòng.”, nên cần 「ミス」(Lỗi; sai sót); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I made a mistake at work, so I apologized to my manager.”, so it needs 「ミス」(Mistake; error); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "メニュー",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: レストランで、（　）を見て、料理を選びました。 — Nghĩa của câu: “Ở nhà hàng, tôi xem thực đơn rồi chọn món ăn.”",
+        "en": "Choose the word that fits the blank: レストランで、（　）を見て、料理を選びました。 — Meaning of the sentence: “At the restaurant, I looked at the menu and chose a dish.”"
+      },
+      "payload": {
+        "choices": [
+          "ペット",
+          "メニュー",
+          "マナー",
+          "ミス"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「メニュー」(Thực đơn) hợp nghĩa câu này: “Ở nhà hàng, tôi xem thực đơn rồi chọn món ăn.”",
+        "en": "Correct! 「メニュー」(Menu) fits this sentence: “At the restaurant, I looked at the menu and chose a dish.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở nhà hàng, tôi xem thực đơn rồi chọn món ăn.”, nên cần 「メニュー」(Thực đơn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the restaurant, I looked at the menu and chose a dish.”, so it needs 「メニュー」(Menu); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "リサイクル",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古い紙やびんは、（　）に出します。 — Nghĩa của câu: “Giấy và chai lọ cũ thì mang đi tái chế.”",
+        "en": "Choose the word that fits the blank: 古い紙やびんは、（　）に出します。 — Meaning of the sentence: “Old paper and bottles are put out for recycling.”"
+      },
+      "payload": {
+        "choices": [
+          "プレゼント",
+          "ペット",
+          "リサイクル",
+          "ミス"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「リサイクル」(Tái chế) hợp nghĩa câu này: “Giấy và chai lọ cũ thì mang đi tái chế.”",
+        "en": "Correct! 「リサイクル」(Recycling) fits this sentence: “Old paper and bottles are put out for recycling.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giấy và chai lọ cũ thì mang đi tái chế.”, nên cần 「リサイクル」(Tái chế); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Old paper and bottles are put out for recycling.”, so it needs 「リサイクル」(Recycling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "マナー",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: 電車の中で電話をするのは、「まなー」が悪いです。",
+        "en": "Choose the correct katakana spelling of the word in 「」: 電車の中で電話をするのは、「まなー」が悪いです。"
+      },
+      "payload": {
+        "choices": [
+          "ヌナー",
+          "マラー",
+          "マナァー",
+          "マナー"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「まなー」 viết là 「マナー」, nghĩa là Phép lịch sự; cách cư xử.",
+        "en": "Correct! 「まなー」 is written 「マナー」 and means Manners; etiquette."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「マナー」 (Phép lịch sự; cách cư xử); các dạng còn lại sai nguyên âm kéo dài, âm ngắt hoặc chữ katakana.",
+        "en": "Not quite. The correct spelling is 「マナー」 (Manners; etiquette); the others get a long vowel, small tsu or kana letter wrong."
+      }
+    },
+    {
+      "item": "メニュー",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết katakana đúng của từ trong 「」: レストランで、「めにゅー」を見て、料理を選びました。",
+        "en": "Choose the correct katakana spelling of the word in 「」: レストランで、「めにゅー」を見て、料理を選びました。"
+      },
+      "payload": {
+        "choices": [
+          "メニュー",
+          "メニュ",
+          "メニユー",
+          "メニュウ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「めにゅー」 viết là 「メニュー」, nghĩa là Thực đơn.",
+        "en": "Correct! 「めにゅー」 is written 「メニュー」 and means Menu."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Cách viết đúng là 「メニュー」 (Thực đơn); các dạng còn lại sai nguyên âm kéo dài, âm ngắt hoặc chữ katakana.",
+        "en": "Not quite. The correct spelling is 「メニュー」 (Menu); the others get a long vowel, small tsu or kana letter wrong."
+      }
+    },
+    {
+      "item": "プレゼント",
+      "format": "usage",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn câu dùng từ 「プレゼント」 đúng:",
+        "en": "Choose the sentence that uses 「プレゼント」 correctly:"
+      },
+      "payload": {
+        "choices": [
+          "友達の誕生日に、本をプレゼントしました。",
+          "プレゼントを飲むと、元気になります。",
+          "この道は、プレゼントがたくさん走っています。",
+          "毎朝、プレゼントを洗ってから、学校へ行きます。"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「プレゼント」(Quà tặng) được dùng tự nhiên trong câu: “友達の誕生日に、本をプレゼントしました。”",
+        "en": "Correct! 「プレゼント」(Present; gift) is used naturally in the sentence: “友達の誕生日に、本をプレゼントしました。”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu dùng đúng 「プレゼント」(Quà tặng) là “友達の誕生日に、本をプレゼントしました。”; các câu còn lại dùng từ không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence that uses 「プレゼント」(Present; gift) correctly is “友達の誕生日に、本をプレゼントしました。”; the other sentences use it in the wrong context."
+      }
+    }
+  ]
+}

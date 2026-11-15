@@ -1,0 +1,540 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N3",
+  "tier": "core",
+  "topic": "kanji-n3-law-order",
+  "title": {
+    "vi": "Kanji pháp luật – trật tự (法 規 条 制)",
+    "en": "Law and order kanji (法 規 条 制)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "法",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "pháp; luật; cách",
+        "en": "law; method"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ホウ",
+          "ハッ",
+          "ホッ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "法律",
+          "reading": "ほうりつ",
+          "kanjiReading": "ホウ",
+          "translation": {
+            "vi": "pháp luật",
+            "en": "law"
+          }
+        },
+        {
+          "ja": "方法",
+          "reading": "ほうほう",
+          "kanjiReading": "ホウ",
+          "translation": {
+            "vi": "phương pháp",
+            "en": "method"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "規",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "quy tắc; chuẩn",
+        "en": "rule; standard"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 11
+      },
+      "examples": [
+        {
+          "ja": "規則",
+          "reading": "きそく",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "quy tắc",
+            "en": "rule"
+          }
+        },
+        {
+          "ja": "規模",
+          "reading": "きぼ",
+          "kanjiReading": "キ",
+          "translation": {
+            "vi": "quy mô",
+            "en": "scale"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "条",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "điều khoản; điều",
+        "en": "clause; article"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ジョウ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 7
+      },
+      "examples": [
+        {
+          "ja": "条件",
+          "reading": "じょうけん",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "điều kiện",
+            "en": "condition"
+          }
+        },
+        {
+          "ja": "条約",
+          "reading": "じょうやく",
+          "kanjiReading": "ジョウ",
+          "translation": {
+            "vi": "hiệp ước",
+            "en": "treaty"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "制",
+      "topic": "kanji-n3-law-order",
+      "meaning": {
+        "vi": "chế độ; ép buộc",
+        "en": "system; control"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "セイ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 8
+      },
+      "examples": [
+        {
+          "ja": "制度",
+          "reading": "せいど",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "chế độ; hệ thống",
+            "en": "system"
+          }
+        },
+        {
+          "ja": "制服",
+          "reading": "せいふく",
+          "kanjiReading": "セイ",
+          "translation": {
+            "vi": "đồng phục",
+            "en": "uniform"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "法",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「法」nghĩa là gì?",
+        "en": "What does 「法」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "pháp; luật; cách",
+            "en": "law; method"
+          },
+          {
+            "vi": "quy tắc; chuẩn",
+            "en": "rule; standard"
+          },
+          {
+            "vi": "điều khoản; điều",
+            "en": "clause; article"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 法 nghĩa là pháp; luật; cách.",
+        "en": "Correct! 法 means law; method."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 法 nghĩa là pháp; luật; cách, như trong 「法律」 (pháp luật).",
+        "en": "Not quite. 法 means law; method, as in 「法律」 (law)."
+      }
+    },
+    {
+      "item": "法",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「法」 trong 「法律」 (“pháp luật”).",
+        "en": "Type the reading of 「法」 in 「法律」 (“law”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ほう",
+          "ホウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 法律, 法 đọc là ほう (âm On).",
+        "en": "Correct! In 法律, 法 is read ほう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 法律 (pháp luật), 法 đọc là ほう (âm On).",
+        "en": "In 法律 (law), 法 is read ほう (on'yomi)."
+      }
+    },
+    {
+      "item": "法",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「方法」(phương pháp) đọc là gì?",
+        "en": "How is 「方法」 (method) read?"
+      },
+      "payload": {
+        "choices": [
+          "ほうはっ",
+          "ほうほう",
+          "ほうぼう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 方法 = ほうほう (phương pháp); 法 đọc là ほう (âm On).",
+        "en": "Correct! 方法 = ほうほう (method); 法 is read ほう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "方法 đọc là ほうほう (phương pháp): 法 mang âm On ほう.",
+        "en": "方法 is read ほうほう (method): 法 takes the on'yomi ほう."
+      }
+    },
+    {
+      "item": "規",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「規」nghĩa là gì?",
+        "en": "What does 「規」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "điều khoản; điều",
+            "en": "clause; article"
+          },
+          {
+            "vi": "quy tắc; chuẩn",
+            "en": "rule; standard"
+          },
+          {
+            "vi": "chế độ; ép buộc",
+            "en": "system; control"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 規 nghĩa là quy tắc; chuẩn.",
+        "en": "Correct! 規 means rule; standard."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 規 nghĩa là quy tắc; chuẩn, như trong 「規則」 (quy tắc).",
+        "en": "Not quite. 規 means rule; standard, as in 「規則」 (rule)."
+      }
+    },
+    {
+      "item": "規",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「規」 trong 「規則」 (“quy tắc”).",
+        "en": "Type the reading of 「規」 in 「規則」 (“rule”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "き",
+          "キ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 規則, 規 đọc là き (âm On).",
+        "en": "Correct! In 規則, 規 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 規則 (quy tắc), 規 đọc là き (âm On).",
+        "en": "In 規則 (rule), 規 is read き (on'yomi)."
+      }
+    },
+    {
+      "item": "規",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「規模」(quy mô) đọc là gì?",
+        "en": "How is 「規模」 (scale) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぎぼ",
+          "きほ",
+          "きぼ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 規模 = きぼ (quy mô); 規 đọc là き (âm On).",
+        "en": "Correct! 規模 = きぼ (scale); 規 is read き (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "規模 đọc là きぼ (quy mô): 規 mang âm On き.",
+        "en": "規模 is read きぼ (scale): 規 takes the on'yomi き."
+      }
+    },
+    {
+      "item": "条",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「条」nghĩa là gì?",
+        "en": "What does 「条」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chế độ; ép buộc",
+            "en": "system; control"
+          },
+          {
+            "vi": "pháp; luật; cách",
+            "en": "law; method"
+          },
+          {
+            "vi": "điều khoản; điều",
+            "en": "clause; article"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 条 nghĩa là điều khoản; điều.",
+        "en": "Correct! 条 means clause; article."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 条 nghĩa là điều khoản; điều, như trong 「条件」 (điều kiện).",
+        "en": "Not quite. 条 means clause; article, as in 「条件」 (condition)."
+      }
+    },
+    {
+      "item": "条",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「条」 trong 「条件」 (“điều kiện”).",
+        "en": "Type the reading of 「条」 in 「条件」 (“condition”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "じょう",
+          "ジョウ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 条件, 条 đọc là じょう (âm On).",
+        "en": "Correct! In 条件, 条 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 条件 (điều kiện), 条 đọc là じょう (âm On).",
+        "en": "In 条件 (condition), 条 is read じょう (on'yomi)."
+      }
+    },
+    {
+      "item": "条",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「条約」(hiệp ước) đọc là gì?",
+        "en": "How is 「条約」 (treaty) read?"
+      },
+      "payload": {
+        "choices": [
+          "じょうやく",
+          "じょやく",
+          "しょうやく"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 条約 = じょうやく (hiệp ước); 条 đọc là じょう (âm On).",
+        "en": "Correct! 条約 = じょうやく (treaty); 条 is read じょう (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "条約 đọc là じょうやく (hiệp ước): 条 mang âm On じょう.",
+        "en": "条約 is read じょうやく (treaty): 条 takes the on'yomi じょう."
+      }
+    },
+    {
+      "item": "制",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「制」nghĩa là gì?",
+        "en": "What does 「制」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "chế độ; ép buộc",
+            "en": "system; control"
+          },
+          {
+            "vi": "pháp; luật; cách",
+            "en": "law; method"
+          },
+          {
+            "vi": "quy tắc; chuẩn",
+            "en": "rule; standard"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 制 nghĩa là chế độ; ép buộc.",
+        "en": "Correct! 制 means system; control."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 制 nghĩa là chế độ; ép buộc, như trong 「制度」 (chế độ; hệ thống).",
+        "en": "Not quite. 制 means system; control, as in 「制度」 (system)."
+      }
+    },
+    {
+      "item": "制",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「制」 trong 「制度」 (“chế độ; hệ thống”).",
+        "en": "Type the reading of 「制」 in 「制度」 (“system”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "せい",
+          "セイ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 制度, 制 đọc là せい (âm On).",
+        "en": "Correct! In 制度, 制 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 制度 (chế độ; hệ thống), 制 đọc là せい (âm On).",
+        "en": "In 制度 (system), 制 is read せい (on'yomi)."
+      }
+    },
+    {
+      "item": "制",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「制服」(đồng phục) đọc là gì?",
+        "en": "How is 「制服」 (uniform) read?"
+      },
+      "payload": {
+        "choices": [
+          "ぜいふく",
+          "せいふく",
+          "せいぶく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 制服 = せいふく (đồng phục); 制 đọc là せい (âm On).",
+        "en": "Correct! 制服 = せいふく (uniform); 制 is read せい (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "制服 đọc là せいふく (đồng phục): 制 mang âm On せい.",
+        "en": "制服 is read せいふく (uniform): 制 takes the on'yomi せい."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "法",
+            {
+              "vi": "pháp; luật; cách",
+              "en": "law; method"
+            }
+          ],
+          [
+            "規",
+            {
+              "vi": "quy tắc; chuẩn",
+              "en": "rule; standard"
+            }
+          ],
+          [
+            "条",
+            {
+              "vi": "điều khoản; điều",
+              "en": "clause; article"
+            }
+          ],
+          [
+            "制",
+            {
+              "vi": "chế độ; ép buộc",
+              "en": "system; control"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

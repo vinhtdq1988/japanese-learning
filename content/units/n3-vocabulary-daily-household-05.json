@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-daily-household",
+  "title": {
+    "vi": "Lửa, khói và dụng cụ",
+    "en": "Fire, smoke and tools"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2350,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "煙",
+      "reading": "けむり",
+      "meaning": {
+        "vi": "Khói",
+        "en": "Smoke"
+      },
+      "examples": [
+        {
+          "ja": "火事で、黒い煙が空に上がりました。",
+          "reading": "かじで、くろいけむりがそらにあがりました。",
+          "translation": {
+            "vi": "Vì hỏa hoạn mà khói đen bốc lên trời.",
+            "en": "Black smoke rose into the sky from the fire."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "燃える",
+      "reading": "もえる",
+      "meaning": {
+        "vi": "Cháy",
+        "en": "To burn (intransitive)"
+      },
+      "examples": [
+        {
+          "ja": "紙は、すぐに燃えることがあります。",
+          "reading": "かみは、すぐにもえることがあります。",
+          "translation": {
+            "vi": "Giấy có thể cháy rất nhanh.",
+            "en": "Paper can burn very quickly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "燃やす",
+      "reading": "もやす",
+      "meaning": {
+        "vi": "Đốt",
+        "en": "To burn (transitive)"
+      },
+      "examples": [
+        {
+          "ja": "枯れ葉を集めて、燃やすことにしました。",
+          "reading": "かれはをあつめて、もやすことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định gom lá khô lại để đốt.",
+            "en": "I decided to gather the dead leaves and burn them."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "電灯",
+      "reading": "でんとう",
+      "meaning": {
+        "vi": "Đèn điện",
+        "en": "Electric light"
+      },
+      "examples": [
+        {
+          "ja": "暗くなったので、電灯をつけました。",
+          "reading": "くらくなったので、でんとうをつけました。",
+          "translation": {
+            "vi": "Trời tối rồi nên tôi bật đèn.",
+            "en": "It got dark, so I turned on the light."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "箒",
+      "reading": "ほうき",
+      "meaning": {
+        "vi": "Chổi",
+        "en": "Broom"
+      },
+      "examples": [
+        {
+          "ja": "玄関を、箒できれいに掃きました。",
+          "reading": "げんかんを、ほうきできれいにはきました。",
+          "translation": {
+            "vi": "Tôi đã quét sạch lối vào bằng chổi.",
+            "en": "I swept the entrance clean with a broom."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "雑貨",
+      "reading": "ざっか",
+      "meaning": {
+        "vi": "Đồ tạp hóa",
+        "en": "Miscellaneous goods"
+      },
+      "examples": [
+        {
+          "ja": "駅の近くに、かわいい雑貨の店があります。",
+          "reading": "えきのちかくに、かわいいざっかのみせがあります。",
+          "translation": {
+            "vi": "Gần nhà ga có một cửa hàng đồ tạp hóa dễ thương.",
+            "en": "There is a cute variety goods shop near the station."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "煙",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 火事で、黒い（　）が空に上がりました。 — Nghĩa của câu: “Vì hỏa hoạn mà khói đen bốc lên trời.”",
+        "en": "Choose the word that fits the blank: 火事で、黒い（　）が空に上がりました。 — Meaning of the sentence: “Black smoke rose into the sky from the fire.”"
+      },
+      "payload": {
+        "choices": [
+          "電灯",
+          "煙",
+          "箒",
+          "雑貨"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「煙」(Khói) hợp nghĩa câu này: “Vì hỏa hoạn mà khói đen bốc lên trời.”",
+        "en": "Correct! 「煙」(Smoke) fits this sentence: “Black smoke rose into the sky from the fire.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì hỏa hoạn mà khói đen bốc lên trời.”, nên cần 「煙」(Khói); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Black smoke rose into the sky from the fire.”, so it needs 「煙」(Smoke); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "燃える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 紙は、すぐに（　）ことがあります。 — Nghĩa của câu: “Giấy có thể cháy rất nhanh.”",
+        "en": "Choose the word that fits the blank: 紙は、すぐに（　）ことがあります。 — Meaning of the sentence: “Paper can burn very quickly.”"
+      },
+      "payload": {
+        "choices": [
+          "燃やす",
+          "煙",
+          "燃える",
+          "電灯"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「燃える」(Cháy) hợp nghĩa câu này: “Giấy có thể cháy rất nhanh.”",
+        "en": "Correct! 「燃える」(To burn (intransitive)) fits this sentence: “Paper can burn very quickly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giấy có thể cháy rất nhanh.”, nên cần 「燃える」(Cháy); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Paper can burn very quickly.”, so it needs 「燃える」(To burn (intransitive)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "燃やす",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 枯れ葉を集めて、（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định gom lá khô lại để đốt.”",
+        "en": "Choose the word that fits the blank: 枯れ葉を集めて、（　）ことにしました。 — Meaning of the sentence: “I decided to gather the dead leaves and burn them.”"
+      },
+      "payload": {
+        "choices": [
+          "燃える",
+          "煙",
+          "電灯",
+          "燃やす"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「燃やす」(Đốt) hợp nghĩa câu này: “Tôi quyết định gom lá khô lại để đốt.”",
+        "en": "Correct! 「燃やす」(To burn (transitive)) fits this sentence: “I decided to gather the dead leaves and burn them.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định gom lá khô lại để đốt.”, nên cần 「燃やす」(Đốt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to gather the dead leaves and burn them.”, so it needs 「燃やす」(To burn (transitive)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "電灯",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 暗くなったので、（　）をつけました。 — Nghĩa của câu: “Trời tối rồi nên tôi bật đèn.”",
+        "en": "Choose the word that fits the blank: 暗くなったので、（　）をつけました。 — Meaning of the sentence: “It got dark, so I turned on the light.”"
+      },
+      "payload": {
+        "choices": [
+          "電灯",
+          "雑貨",
+          "煙",
+          "箒"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「電灯」(Đèn điện) hợp nghĩa câu này: “Trời tối rồi nên tôi bật đèn.”",
+        "en": "Correct! 「電灯」(Electric light) fits this sentence: “It got dark, so I turned on the light.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trời tối rồi nên tôi bật đèn.”, nên cần 「電灯」(Đèn điện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It got dark, so I turned on the light.”, so it needs 「電灯」(Electric light); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "箒",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 玄関を、（　）できれいに掃きました。 — Nghĩa của câu: “Tôi đã quét sạch lối vào bằng chổi.”",
+        "en": "Choose the word that fits the blank: 玄関を、（　）できれいに掃きました。 — Meaning of the sentence: “I swept the entrance clean with a broom.”"
+      },
+      "payload": {
+        "choices": [
+          "電灯",
+          "箒",
+          "煙",
+          "雑貨"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「箒」(Chổi) hợp nghĩa câu này: “Tôi đã quét sạch lối vào bằng chổi.”",
+        "en": "Correct! 「箒」(Broom) fits this sentence: “I swept the entrance clean with a broom.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã quét sạch lối vào bằng chổi.”, nên cần 「箒」(Chổi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I swept the entrance clean with a broom.”, so it needs 「箒」(Broom); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "雑貨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅の近くに、かわいい（　）の店があります。 — Nghĩa của câu: “Gần nhà ga có một cửa hàng đồ tạp hóa dễ thương.”",
+        "en": "Choose the word that fits the blank: 駅の近くに、かわいい（　）の店があります。 — Meaning of the sentence: “There is a cute variety goods shop near the station.”"
+      },
+      "payload": {
+        "choices": [
+          "煙",
+          "電灯",
+          "雑貨",
+          "箒"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「雑貨」(Đồ tạp hóa) hợp nghĩa câu này: “Gần nhà ga có một cửa hàng đồ tạp hóa dễ thương.”",
+        "en": "Correct! 「雑貨」(Miscellaneous goods) fits this sentence: “There is a cute variety goods shop near the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Gần nhà ga có một cửa hàng đồ tạp hóa dễ thương.”, nên cần 「雑貨」(Đồ tạp hóa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is a cute variety goods shop near the station.”, so it needs 「雑貨」(Miscellaneous goods); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "煙",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 火事で、黒い「煙」が空に上がりました。",
+        "en": "Choose the correct reading of the word in 「」: 火事で、黒い「煙」が空に上がりました。"
+      },
+      "payload": {
+        "choices": [
+          "もえる",
+          "もやす",
+          "けむり",
+          "ほうき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「煙」 đọc là 「けむり」, nghĩa là Khói.",
+        "en": "Correct! 「煙」 is read 「けむり」 and means Smoke."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「煙」 đọc là 「けむり」 (Khói); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「煙」 is read 「けむり」 (Smoke); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "電灯",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 暗くなったので、「電灯」をつけました。",
+        "en": "Choose the correct reading of the word in 「」: 暗くなったので、「電灯」をつけました。"
+      },
+      "payload": {
+        "choices": [
+          "ほうき",
+          "けむり",
+          "もやす",
+          "でんとう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「電灯」 đọc là 「でんとう」, nghĩa là Đèn điện.",
+        "en": "Correct! 「電灯」 is read 「でんとう」 and means Electric light."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「電灯」 đọc là 「でんとう」 (Đèn điện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「電灯」 is read 「でんとう」 (Electric light); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "燃やす",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 枯れ葉を集めて、「もやす」ことにしました。",
+        "en": "Choose the correct way to write the word in 「」: 枯れ葉を集めて、「もやす」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "雑貨",
+          "煙",
+          "電灯",
+          "燃やす"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「もやす」 viết là 「燃やす」, nghĩa là Đốt.",
+        "en": "Correct! 「もやす」 is written 「燃やす」 and means To burn (transitive)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「もやす」 viết là 「燃やす」 (Đốt); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「もやす」 is written 「燃やす」 (To burn (transitive)); the other words are read differently."
+      }
+    }
+  ]
+}

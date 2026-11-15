@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-leisure-sports",
+  "title": {
+    "vi": "Thử thách và thắng bại",
+    "en": "Challenge, victory and defeat"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "目指す",
+      "reading": "めざす",
+      "meaning": {
+        "vi": "Hướng tới; nhắm tới",
+        "en": "To aim for"
+      },
+      "examples": [
+        {
+          "ja": "オリンピックの金メダルを目指すことにしました。",
+          "reading": "オリンピックのきんメダルをめざすことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định nhắm đến huy chương vàng Olympic.",
+            "en": "I decided to aim for an Olympic gold medal."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "挑戦",
+      "reading": "ちょうせん",
+      "meaning": {
+        "vi": "Thử thách; thách đấu",
+        "en": "Challenge"
+      },
+      "examples": [
+        {
+          "ja": "新しいことに、挑戦してみたいです。",
+          "reading": "あたらしいことに、ちょうせんしてみたいです。",
+          "translation": {
+            "vi": "Tôi muốn thử thách bản thân với điều mới.",
+            "en": "I want to try challenging myself with something new."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "敗れる",
+      "reading": "やぶれる",
+      "meaning": {
+        "vi": "Thua; bại trận",
+        "en": "To be defeated"
+      },
+      "examples": [
+        {
+          "ja": "惜しくも決勝で敗れることになりました。",
+          "reading": "おしくもけっしょうでやぶれることになりました。",
+          "translation": {
+            "vi": "Tiếc là đã thua ở trận chung kết.",
+            "en": "Unfortunately we lost in the final."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勝利",
+      "reading": "しょうり",
+      "meaning": {
+        "vi": "Chiến thắng",
+        "en": "Victory"
+      },
+      "examples": [
+        {
+          "ja": "チームの勝利を、みんなで喜びました。",
+          "reading": "チームのしょうりを、みんなでよろこびました。",
+          "translation": {
+            "vi": "Mọi người cùng vui mừng trước chiến thắng của đội.",
+            "en": "Everyone rejoiced at the team's victory."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "敗北",
+      "reading": "はいぼく",
+      "meaning": {
+        "vi": "Thất bại; bại trận",
+        "en": "Defeat"
+      },
+      "examples": [
+        {
+          "ja": "この敗北から、多くを学びました。",
+          "reading": "このはいぼくから、おおくをまなびました。",
+          "translation": {
+            "vi": "Tôi đã học được nhiều điều từ thất bại này.",
+            "en": "I learned a lot from this defeat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "作戦",
+      "reading": "さくせん",
+      "meaning": {
+        "vi": "Chiến thuật; kế hoạch tác chiến",
+        "en": "Strategy; tactics"
+      },
+      "examples": [
+        {
+          "ja": "新しい作戦で、試合に臨みました。",
+          "reading": "あたらしいさくせんで、しあいにのぞみました。",
+          "translation": {
+            "vi": "Tôi bước vào trận đấu với chiến thuật mới.",
+            "en": "We faced the game with a new strategy."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "目指す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: オリンピックの金メダルを（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định nhắm đến huy chương vàng Olympic.”",
+        "en": "Choose the word that fits the blank: オリンピックの金メダルを（　）ことにしました。 — Meaning of the sentence: “I decided to aim for an Olympic gold medal.”"
+      },
+      "payload": {
+        "choices": [
+          "敗れる",
+          "目指す",
+          "挑戦",
+          "勝利"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「目指す」(Hướng tới; nhắm tới) hợp nghĩa câu này: “Tôi quyết định nhắm đến huy chương vàng Olympic.”",
+        "en": "Correct! 「目指す」(To aim for) fits this sentence: “I decided to aim for an Olympic gold medal.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định nhắm đến huy chương vàng Olympic.”, nên cần 「目指す」(Hướng tới; nhắm tới); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to aim for an Olympic gold medal.”, so it needs 「目指す」(To aim for); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "挑戦",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しいことに、（　）してみたいです。 — Nghĩa của câu: “Tôi muốn thử thách bản thân với điều mới.”",
+        "en": "Choose the word that fits the blank: 新しいことに、（　）してみたいです。 — Meaning of the sentence: “I want to try challenging myself with something new.”"
+      },
+      "payload": {
+        "choices": [
+          "作戦",
+          "勝利",
+          "挑戦",
+          "敗北"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「挑戦」(Thử thách; thách đấu) hợp nghĩa câu này: “Tôi muốn thử thách bản thân với điều mới.”",
+        "en": "Correct! 「挑戦」(Challenge) fits this sentence: “I want to try challenging myself with something new.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi muốn thử thách bản thân với điều mới.”, nên cần 「挑戦」(Thử thách; thách đấu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I want to try challenging myself with something new.”, so it needs 「挑戦」(Challenge); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "敗れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 惜しくも決勝で（　）ことになりました。 — Nghĩa của câu: “Tiếc là đã thua ở trận chung kết.”",
+        "en": "Choose the word that fits the blank: 惜しくも決勝で（　）ことになりました。 — Meaning of the sentence: “Unfortunately we lost in the final.”"
+      },
+      "payload": {
+        "choices": [
+          "目指す",
+          "挑戦",
+          "勝利",
+          "敗れる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「敗れる」(Thua; bại trận) hợp nghĩa câu này: “Tiếc là đã thua ở trận chung kết.”",
+        "en": "Correct! 「敗れる」(To be defeated) fits this sentence: “Unfortunately we lost in the final.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiếc là đã thua ở trận chung kết.”, nên cần 「敗れる」(Thua; bại trận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Unfortunately we lost in the final.”, so it needs 「敗れる」(To be defeated); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "勝利",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: チームの（　）を、みんなで喜びました。 — Nghĩa của câu: “Mọi người cùng vui mừng trước chiến thắng của đội.”",
+        "en": "Choose the word that fits the blank: チームの（　）を、みんなで喜びました。 — Meaning of the sentence: “Everyone rejoiced at the team's victory.”"
+      },
+      "payload": {
+        "choices": [
+          "勝利",
+          "作戦",
+          "挑戦",
+          "敗北"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勝利」(Chiến thắng) hợp nghĩa câu này: “Mọi người cùng vui mừng trước chiến thắng của đội.”",
+        "en": "Correct! 「勝利」(Victory) fits this sentence: “Everyone rejoiced at the team's victory.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mọi người cùng vui mừng trước chiến thắng của đội.”, nên cần 「勝利」(Chiến thắng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Everyone rejoiced at the team's victory.”, so it needs 「勝利」(Victory); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "敗北",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）から、多くを学びました。 — Nghĩa của câu: “Tôi đã học được nhiều điều từ thất bại này.”",
+        "en": "Choose the word that fits the blank: この（　）から、多くを学びました。 — Meaning of the sentence: “I learned a lot from this defeat.”"
+      },
+      "payload": {
+        "choices": [
+          "勝利",
+          "敗北",
+          "挑戦",
+          "作戦"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「敗北」(Thất bại; bại trận) hợp nghĩa câu này: “Tôi đã học được nhiều điều từ thất bại này.”",
+        "en": "Correct! 「敗北」(Defeat) fits this sentence: “I learned a lot from this defeat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã học được nhiều điều từ thất bại này.”, nên cần 「敗北」(Thất bại; bại trận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I learned a lot from this defeat.”, so it needs 「敗北」(Defeat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "作戦",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）で、試合に臨みました。 — Nghĩa của câu: “Tôi bước vào trận đấu với chiến thuật mới.”",
+        "en": "Choose the word that fits the blank: 新しい（　）で、試合に臨みました。 — Meaning of the sentence: “We faced the game with a new strategy.”"
+      },
+      "payload": {
+        "choices": [
+          "挑戦",
+          "勝利",
+          "作戦",
+          "敗北"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「作戦」(Chiến thuật; kế hoạch tác chiến) hợp nghĩa câu này: “Tôi bước vào trận đấu với chiến thuật mới.”",
+        "en": "Correct! 「作戦」(Strategy; tactics) fits this sentence: “We faced the game with a new strategy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi bước vào trận đấu với chiến thuật mới.”, nên cần 「作戦」(Chiến thuật; kế hoạch tác chiến); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We faced the game with a new strategy.”, so it needs 「作戦」(Strategy; tactics); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "目指す",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: オリンピックの金メダルを「目指す」ことにしました。",
+        "en": "Choose the correct reading of the word in 「」: オリンピックの金メダルを「目指す」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "やぶれる",
+          "ちょうせん",
+          "めざす",
+          "しょうり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「目指す」 đọc là 「めざす」, nghĩa là Hướng tới; nhắm tới.",
+        "en": "Correct! 「目指す」 is read 「めざす」 and means To aim for."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「目指す」 đọc là 「めざす」 (Hướng tới; nhắm tới); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「目指す」 is read 「めざす」 (To aim for); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "勝利",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: チームの「勝利」を、みんなで喜びました。",
+        "en": "Choose the correct reading of the word in 「」: チームの「勝利」を、みんなで喜びました。"
+      },
+      "payload": {
+        "choices": [
+          "はいぼく",
+          "めざす",
+          "ちょうせん",
+          "しょうり"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勝利」 đọc là 「しょうり」, nghĩa là Chiến thắng.",
+        "en": "Correct! 「勝利」 is read 「しょうり」 and means Victory."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「勝利」 đọc là 「しょうり」 (Chiến thắng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「勝利」 is read 「しょうり」 (Victory); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "敗れる",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 惜しくも決勝で「やぶれる」ことになりました。",
+        "en": "Choose the correct way to write the word in 「」: 惜しくも決勝で「やぶれる」ことになりました。"
+      },
+      "payload": {
+        "choices": [
+          "目指す",
+          "挑戦",
+          "作戦",
+          "敗れる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「やぶれる」 viết là 「敗れる」, nghĩa là Thua; bại trận.",
+        "en": "Correct! 「やぶれる」 is written 「敗れる」 and means To be defeated."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「やぶれる」 viết là 「敗れる」 (Thua; bại trận); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「やぶれる」 is written 「敗れる」 (To be defeated); the other words are read differently."
+      }
+    }
+  ]
+}

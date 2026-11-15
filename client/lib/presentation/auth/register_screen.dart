@@ -8,6 +8,7 @@ import '../../router_paths.dart';
 import '../shared/page_frame.dart';
 import '../trial/trial_state.dart';
 import 'auth_support.dart';
+import 'password_field.dart';
 
 /// Màn hình đăng ký (T052): email, mật khẩu, tên hiển thị. Không cần xác minh email (FR-001): đăng ký
 /// thành công đăng nhập luôn, router đưa người học vào luồng onboarding qua "Hôm nay".
@@ -116,10 +117,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   textInputAction: TextInputAction.next,
                 ),
                 const SizedBox(height: 16),
-                TextFormField(
+                PasswordField(
                   key: const Key('password'),
                   controller: _password,
-                  obscureText: true,
                   autofillHints: const <String>[AutofillHints.newPassword],
                   decoration: InputDecoration(
                     labelText: l10n.authPasswordLabel,

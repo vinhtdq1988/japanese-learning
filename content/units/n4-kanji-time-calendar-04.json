@@ -1,0 +1,421 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "kanji",
+  "level": "N4",
+  "tier": "core",
+  "topic": "kanji-n4-time-calendar",
+  "title": {
+    "vi": "Kanji thời gian – lịch (以 去 度)",
+    "en": "Time and calendar kanji (以 去 度)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "以",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "từ ... trở đi; trở lên",
+        "en": "from; by"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "イ"
+        ],
+        "kunReadings": [],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "以上",
+          "reading": "いじょう",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "trở lên",
+            "en": "more than"
+          }
+        },
+        {
+          "ja": "以前",
+          "reading": "いぜん",
+          "kanjiReading": "イ",
+          "translation": {
+            "vi": "trước đây",
+            "en": "before"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "去",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "đã qua; rời đi",
+        "en": "past; leave"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "キョ",
+          "コ"
+        ],
+        "kunReadings": [
+          "さ.る"
+        ],
+        "strokeCount": 5
+      },
+      "examples": [
+        {
+          "ja": "去年",
+          "reading": "きょねん",
+          "kanjiReading": "キョ",
+          "translation": {
+            "vi": "năm ngoái",
+            "en": "last year"
+          }
+        },
+        {
+          "ja": "去る",
+          "reading": "さる",
+          "kanjiReading": "さ",
+          "translation": {
+            "vi": "rời đi",
+            "en": "to leave"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "度",
+      "topic": "kanji-n4-time-calendar",
+      "meaning": {
+        "vi": "lần; độ",
+        "en": "time; degree"
+      },
+      "kanjiDetails": {
+        "onReadings": [
+          "ド",
+          "ト",
+          "タク"
+        ],
+        "kunReadings": [
+          "たび"
+        ],
+        "strokeCount": 9
+      },
+      "examples": [
+        {
+          "ja": "今度",
+          "reading": "こんど",
+          "kanjiReading": "ド",
+          "translation": {
+            "vi": "lần này; lần sau",
+            "en": "this time; next time"
+          }
+        },
+        {
+          "ja": "一度",
+          "reading": "いちど",
+          "kanjiReading": "ド",
+          "translation": {
+            "vi": "một lần",
+            "en": "once"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "以",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「以」nghĩa là gì?",
+        "en": "What does 「以」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "từ ... trở đi; trở lên",
+            "en": "from; by"
+          },
+          {
+            "vi": "đã qua; rời đi",
+            "en": "past; leave"
+          },
+          {
+            "vi": "lần; độ",
+            "en": "time; degree"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 以 nghĩa là từ ... trở đi; trở lên.",
+        "en": "Correct! 以 means from; by."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 以 nghĩa là từ ... trở đi; trở lên, như trong 「以上」 (trở lên).",
+        "en": "Not quite. 以 means from; by, as in 「以上」 (more than)."
+      }
+    },
+    {
+      "item": "以",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「以」 trong 「以上」 (“trở lên”).",
+        "en": "Type the reading of 「以」 in 「以上」 (“more than”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "い",
+          "イ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 以上, 以 đọc là い (âm On).",
+        "en": "Correct! In 以上, 以 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 以上 (trở lên), 以 đọc là い (âm On).",
+        "en": "In 以上 (more than), 以 is read い (on'yomi)."
+      }
+    },
+    {
+      "item": "以",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「以前」(trước đây) đọc là gì?",
+        "en": "How is 「以前」 (before) read?"
+      },
+      "payload": {
+        "choices": [
+          "いせん",
+          "いぜん",
+          "さぜん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 以前 = いぜん (trước đây); 以 đọc là い (âm On).",
+        "en": "Correct! 以前 = いぜん (before); 以 is read い (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "以前 đọc là いぜん (trước đây): 以 mang âm On い.",
+        "en": "以前 is read いぜん (before): 以 takes the on'yomi い."
+      }
+    },
+    {
+      "item": "去",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「去」nghĩa là gì?",
+        "en": "What does 「去」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "lần; độ",
+            "en": "time; degree"
+          },
+          {
+            "vi": "đã qua; rời đi",
+            "en": "past; leave"
+          },
+          {
+            "vi": "từ ... trở đi; trở lên",
+            "en": "from; by"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 去 nghĩa là đã qua; rời đi.",
+        "en": "Correct! 去 means past; leave."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 去 nghĩa là đã qua; rời đi, như trong 「去年」 (năm ngoái).",
+        "en": "Not quite. 去 means past; leave, as in 「去年」 (last year)."
+      }
+    },
+    {
+      "item": "去",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「去」 trong 「去年」 (“năm ngoái”).",
+        "en": "Type the reading of 「去」 in 「去年」 (“last year”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "きょ",
+          "キョ"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 去年, 去 đọc là きょ (âm On).",
+        "en": "Correct! In 去年, 去 is read きょ (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 去年 (năm ngoái), 去 đọc là きょ (âm On).",
+        "en": "In 去年 (last year), 去 is read きょ (on'yomi)."
+      }
+    },
+    {
+      "item": "去",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「去る」(rời đi) đọc là gì?",
+        "en": "How is 「去る」 (to leave) read?"
+      },
+      "payload": {
+        "choices": [
+          "きょる",
+          "こんど",
+          "さる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 去る = さる (rời đi); 去 đọc là さ (âm Kun).",
+        "en": "Correct! 去る = さる (to leave); 去 is read さ (kun'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "去る đọc là さる (rời đi): 去 mang âm Kun さ.",
+        "en": "去る is read さる (to leave): 去 takes the kun'yomi さ."
+      }
+    },
+    {
+      "item": "度",
+      "facet": "meaning",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「度」nghĩa là gì?",
+        "en": "What does 「度」 mean?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "từ ... trở đi; trở lên",
+            "en": "from; by"
+          },
+          {
+            "vi": "đã qua; rời đi",
+            "en": "past; leave"
+          },
+          {
+            "vi": "lần; độ",
+            "en": "time; degree"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 度 nghĩa là lần; độ.",
+        "en": "Correct! 度 means time; degree."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 度 nghĩa là lần; độ, như trong 「今度」 (lần này; lần sau).",
+        "en": "Not quite. 度 means time; degree, as in 「今度」 (this time; next time)."
+      }
+    },
+    {
+      "item": "度",
+      "facet": "reading",
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Điền cách đọc của 「度」 trong 「今度」 (“lần này; lần sau”).",
+        "en": "Type the reading of 「度」 in 「今度」 (“this time; next time”)."
+      },
+      "payload": {
+        "accepted_answers": [
+          "ど",
+          "ド"
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Trong 今度, 度 đọc là ど (âm On).",
+        "en": "Correct! In 今度, 度 is read ど (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Trong 今度 (lần này; lần sau), 度 đọc là ど (âm On).",
+        "en": "In 今度 (this time; next time), 度 is read ど (on'yomi)."
+      }
+    },
+    {
+      "item": "度",
+      "facet": "word",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "「一度」(một lần) đọc là gì?",
+        "en": "How is 「一度」 (once) read?"
+      },
+      "payload": {
+        "choices": [
+          "いちど",
+          "いちたび",
+          "いちと"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! 一度 = いちど (một lần); 度 đọc là ど (âm On).",
+        "en": "Correct! 一度 = いちど (once); 度 is read ど (on'yomi)."
+      },
+      "feedbackIncorrect": {
+        "vi": "一度 đọc là いちど (một lần): 度 mang âm On ど.",
+        "en": "一度 is read いちど (once): 度 takes the on'yomi ど."
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": {
+        "vi": "Ghép chữ Kanji với nghĩa.",
+        "en": "Match each kanji with its meaning."
+      },
+      "payload": {
+        "pairs": [
+          [
+            "以",
+            {
+              "vi": "từ ... trở đi; trở lên",
+              "en": "from; by"
+            }
+          ],
+          [
+            "去",
+            {
+              "vi": "đã qua; rời đi",
+              "en": "past; leave"
+            }
+          ],
+          [
+            "度",
+            {
+              "vi": "lần; độ",
+              "en": "time; degree"
+            }
+          ]
+        ]
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! Bạn đã ghép đúng tất cả.",
+        "en": "Well done! All pairs are correct."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng hết. Xem lại nghĩa của từng chữ nhé.",
+        "en": "Not all pairs are right. Review each kanji meaning."
+      }
+    }
+  ]
+}

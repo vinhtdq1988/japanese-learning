@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-verbs-states-actions",
+  "title": {
+    "vi": "Nhìn, tiễn và thăm",
+    "en": "Seeing, seeing off and visiting"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2760,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "見かける",
+      "reading": "みかける",
+      "meaning": {
+        "vi": "Bắt gặp; thấy (tình cờ)",
+        "en": "To happen to see"
+      },
+      "examples": [
+        {
+          "ja": "駅で、有名な俳優を見かけることがあります。",
+          "reading": "えきで、ゆうめいなはいゆうをみかけることがあります。",
+          "translation": {
+            "vi": "Đôi khi tôi bắt gặp diễn viên nổi tiếng ở nhà ga.",
+            "en": "I sometimes spot a famous actor at the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見送る",
+      "reading": "みおくる",
+      "meaning": {
+        "vi": "Tiễn; bỏ qua",
+        "en": "To see off; to let pass"
+      },
+      "examples": [
+        {
+          "ja": "空港で、友達を見送ることにしました。",
+          "reading": "くうこうで、ともだちをみおくることにしました。",
+          "translation": {
+            "vi": "Tôi quyết định ra sân bay tiễn bạn.",
+            "en": "I decided to see my friend off at the airport."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見守る",
+      "reading": "みまもる",
+      "meaning": {
+        "vi": "Dõi theo; trông chừng",
+        "en": "To watch over"
+      },
+      "examples": [
+        {
+          "ja": "子どもの成長を、そっと見守ることにしています。",
+          "reading": "こどものせいちょうを、そっとみまもることにしています。",
+          "translation": {
+            "vi": "Tôi lặng lẽ dõi theo sự trưởng thành của con.",
+            "en": "I quietly watch over my child's growth."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見逃す",
+      "reading": "みのがす",
+      "meaning": {
+        "vi": "Bỏ lỡ; bỏ qua",
+        "en": "To overlook; to miss"
+      },
+      "examples": [
+        {
+          "ja": "大切な間違いを、見逃すことはできません。",
+          "reading": "たいせつなまちがいを、みのがすことはできません。",
+          "translation": {
+            "vi": "Không thể bỏ qua một lỗi quan trọng.",
+            "en": "I cannot overlook an important mistake."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見舞う",
+      "reading": "みまう",
+      "meaning": {
+        "vi": "Thăm hỏi (người bệnh)",
+        "en": "To visit (a sick person)"
+      },
+      "examples": [
+        {
+          "ja": "入院した先生を、見舞うことにしました。",
+          "reading": "にゅういんしたせんせいを、みまうことにしました。",
+          "translation": {
+            "vi": "Tôi quyết định đi thăm thầy giáo đang nằm viện.",
+            "en": "I decided to visit my teacher who is in the hospital."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "確かめる",
+      "reading": "たしかめる",
+      "meaning": {
+        "vi": "Xác nhận; kiểm chứng",
+        "en": "To make sure; to confirm"
+      },
+      "examples": [
+        {
+          "ja": "出かける前に、鍵を確かめることにしています。",
+          "reading": "でかけるまえに、かぎをたしかめることにしています。",
+          "translation": {
+            "vi": "Trước khi ra ngoài tôi luôn kiểm tra lại khóa.",
+            "en": "Before going out I always check the lock."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "見かける",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅で、有名な俳優を（　）ことがあります。 — Nghĩa của câu: “Đôi khi tôi bắt gặp diễn viên nổi tiếng ở nhà ga.”",
+        "en": "Choose the word that fits the blank: 駅で、有名な俳優を（　）ことがあります。 — Meaning of the sentence: “I sometimes spot a famous actor at the station.”"
+      },
+      "payload": {
+        "choices": [
+          "見かける",
+          "見守る",
+          "見送る",
+          "確かめる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見かける」(Bắt gặp; thấy (tình cờ)) hợp nghĩa câu này: “Đôi khi tôi bắt gặp diễn viên nổi tiếng ở nhà ga.”",
+        "en": "Correct! 「見かける」(To happen to see) fits this sentence: “I sometimes spot a famous actor at the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đôi khi tôi bắt gặp diễn viên nổi tiếng ở nhà ga.”, nên cần 「見かける」(Bắt gặp; thấy (tình cờ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I sometimes spot a famous actor at the station.”, so it needs 「見かける」(To happen to see); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見送る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 空港で、友達を（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định ra sân bay tiễn bạn.”",
+        "en": "Choose the word that fits the blank: 空港で、友達を（　）ことにしました。 — Meaning of the sentence: “I decided to see my friend off at the airport.”"
+      },
+      "payload": {
+        "choices": [
+          "確かめる",
+          "見送る",
+          "見かける",
+          "見逃す"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見送る」(Tiễn; bỏ qua) hợp nghĩa câu này: “Tôi quyết định ra sân bay tiễn bạn.”",
+        "en": "Correct! 「見送る」(To see off; to let pass) fits this sentence: “I decided to see my friend off at the airport.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định ra sân bay tiễn bạn.”, nên cần 「見送る」(Tiễn; bỏ qua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to see my friend off at the airport.”, so it needs 「見送る」(To see off; to let pass); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見守る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもの成長を、そっと（　）ことにしています。 — Nghĩa của câu: “Tôi lặng lẽ dõi theo sự trưởng thành của con.”",
+        "en": "Choose the word that fits the blank: 子どもの成長を、そっと（　）ことにしています。 — Meaning of the sentence: “I quietly watch over my child's growth.”"
+      },
+      "payload": {
+        "choices": [
+          "見逃す",
+          "見かける",
+          "見守る",
+          "見舞う"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見守る」(Dõi theo; trông chừng) hợp nghĩa câu này: “Tôi lặng lẽ dõi theo sự trưởng thành của con.”",
+        "en": "Correct! 「見守る」(To watch over) fits this sentence: “I quietly watch over my child's growth.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi lặng lẽ dõi theo sự trưởng thành của con.”, nên cần 「見守る」(Dõi theo; trông chừng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I quietly watch over my child's growth.”, so it needs 「見守る」(To watch over); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見逃す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大切な間違いを、（　）ことはできません。 — Nghĩa của câu: “Không thể bỏ qua một lỗi quan trọng.”",
+        "en": "Choose the word that fits the blank: 大切な間違いを、（　）ことはできません。 — Meaning of the sentence: “I cannot overlook an important mistake.”"
+      },
+      "payload": {
+        "choices": [
+          "見かける",
+          "見送る",
+          "見守る",
+          "見逃す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見逃す」(Bỏ lỡ; bỏ qua) hợp nghĩa câu này: “Không thể bỏ qua một lỗi quan trọng.”",
+        "en": "Correct! 「見逃す」(To overlook; to miss) fits this sentence: “I cannot overlook an important mistake.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không thể bỏ qua một lỗi quan trọng.”, nên cần 「見逃す」(Bỏ lỡ; bỏ qua); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I cannot overlook an important mistake.”, so it needs 「見逃す」(To overlook; to miss); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見舞う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 入院した先生を、（　）ことにしました。 — Nghĩa của câu: “Tôi quyết định đi thăm thầy giáo đang nằm viện.”",
+        "en": "Choose the word that fits the blank: 入院した先生を、（　）ことにしました。 — Meaning of the sentence: “I decided to visit my teacher who is in the hospital.”"
+      },
+      "payload": {
+        "choices": [
+          "見舞う",
+          "確かめる",
+          "見かける",
+          "見送る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見舞う」(Thăm hỏi (người bệnh)) hợp nghĩa câu này: “Tôi quyết định đi thăm thầy giáo đang nằm viện.”",
+        "en": "Correct! 「見舞う」(To visit (a sick person)) fits this sentence: “I decided to visit my teacher who is in the hospital.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định đi thăm thầy giáo đang nằm viện.”, nên cần 「見舞う」(Thăm hỏi (người bệnh)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I decided to visit my teacher who is in the hospital.”, so it needs 「見舞う」(To visit (a sick person)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "確かめる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 出かける前に、鍵を（　）ことにしています。 — Nghĩa của câu: “Trước khi ra ngoài tôi luôn kiểm tra lại khóa.”",
+        "en": "Choose the word that fits the blank: 出かける前に、鍵を（　）ことにしています。 — Meaning of the sentence: “Before going out I always check the lock.”"
+      },
+      "payload": {
+        "choices": [
+          "見守る",
+          "確かめる",
+          "見かける",
+          "見逃す"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「確かめる」(Xác nhận; kiểm chứng) hợp nghĩa câu này: “Trước khi ra ngoài tôi luôn kiểm tra lại khóa.”",
+        "en": "Correct! 「確かめる」(To make sure; to confirm) fits this sentence: “Before going out I always check the lock.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi ra ngoài tôi luôn kiểm tra lại khóa.”, nên cần 「確かめる」(Xác nhận; kiểm chứng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before going out I always check the lock.”, so it needs 「確かめる」(To make sure; to confirm); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見かける",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 駅で、有名な俳優を「見かける」ことがあります。",
+        "en": "Choose the correct reading of the word in 「」: 駅で、有名な俳優を「見かける」ことがあります。"
+      },
+      "payload": {
+        "choices": [
+          "みまもる",
+          "みかける",
+          "みおくる",
+          "たしかめる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見かける」 đọc là 「みかける」, nghĩa là Bắt gặp; thấy (tình cờ).",
+        "en": "Correct! 「見かける」 is read 「みかける」 and means To happen to see."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見かける」 đọc là 「みかける」 (Bắt gặp; thấy (tình cờ)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「見かける」 is read 「みかける」 (To happen to see); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "見逃す",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 大切な間違いを、「見逃す」ことはできません。",
+        "en": "Choose the correct reading of the word in 「」: 大切な間違いを、「見逃す」ことはできません。"
+      },
+      "payload": {
+        "choices": [
+          "みまう",
+          "みかける",
+          "みのがす",
+          "たしかめる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見逃す」 đọc là 「みのがす」, nghĩa là Bỏ lỡ; bỏ qua.",
+        "en": "Correct! 「見逃す」 is read 「みのがす」 and means To overlook; to miss."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「見逃す」 đọc là 「みのがす」 (Bỏ lỡ; bỏ qua); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「見逃す」 is read 「みのがす」 (To overlook; to miss); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "見守る",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 子どもの成長を、そっと「みまもる」ことにしています。",
+        "en": "Choose the correct way to write the word in 「」: 子どもの成長を、そっと「みまもる」ことにしています。"
+      },
+      "payload": {
+        "choices": [
+          "確かめる",
+          "見かける",
+          "見守る",
+          "見逃す"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「みまもる」 viết là 「見守る」, nghĩa là Dõi theo; trông chừng.",
+        "en": "Correct! 「みまもる」 is written 「見守る」 and means To watch over."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「みまもる」 viết là 「見守る」 (Dõi theo; trông chừng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「みまもる」 is written 「見守る」 (To watch over); the other words are read differently."
+      }
+    }
+  ]
+}
