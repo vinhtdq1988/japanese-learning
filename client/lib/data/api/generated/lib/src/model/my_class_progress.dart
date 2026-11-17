@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'my_class_progress.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,66 +19,129 @@ part 'my_class_progress.g.dart';
 class MyClassProgress {
   /// Returns a new [MyClassProgress] instance.
   MyClassProgress({
-    required this.hasStarted,
 
-    this.completionRatio,
+    required  this.hasStarted,
 
-    required this.minutesTotal,
+     this.completionRatio,
 
-    required this.minutesLast7Days,
+    required  this.minutesTotal,
 
-    this.reviewAccuracy,
+    required  this.minutesLast7Days,
 
-    required this.streakDays,
+     this.reviewAccuracy,
 
-    this.lastActiveOn,
+    required  this.streakDays,
+
+     this.lastActiveOn,
   });
 
-  @JsonKey(name: r'hasStarted', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'hasStarted',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final bool hasStarted;
 
-  @JsonKey(name: r'completionRatio', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'completionRatio',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? completionRatio;
 
-  @JsonKey(name: r'minutesTotal', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'minutesTotal',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final num minutesTotal;
 
-  @JsonKey(name: r'minutesLast7Days', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'minutesLast7Days',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final num minutesLast7Days;
 
-  @JsonKey(name: r'reviewAccuracy', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'reviewAccuracy',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? reviewAccuracy;
 
-  @JsonKey(name: r'streakDays', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'streakDays',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int streakDays;
 
-  @JsonKey(name: r'lastActiveOn', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'lastActiveOn',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? lastActiveOn;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MyClassProgress &&
-          other.hasStarted == hasStarted &&
-          other.completionRatio == completionRatio &&
-          other.minutesTotal == minutesTotal &&
-          other.minutesLast7Days == minutesLast7Days &&
-          other.reviewAccuracy == reviewAccuracy &&
-          other.streakDays == streakDays &&
-          other.lastActiveOn == lastActiveOn;
 
-  @override
-  int get hashCode =>
-      hasStarted.hashCode +
-      (completionRatio == null ? 0 : completionRatio.hashCode) +
-      minutesTotal.hashCode +
-      minutesLast7Days.hashCode +
-      (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode) +
-      streakDays.hashCode +
-      (lastActiveOn == null ? 0 : lastActiveOn.hashCode);
 
-  factory MyClassProgress.fromJson(Map<String, dynamic> json) =>
-      _$MyClassProgressFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is MyClassProgress &&
+      other.hasStarted == hasStarted &&
+      other.completionRatio == completionRatio &&
+      other.minutesTotal == minutesTotal &&
+      other.minutesLast7Days == minutesLast7Days &&
+      other.reviewAccuracy == reviewAccuracy &&
+      other.streakDays == streakDays &&
+      other.lastActiveOn == lastActiveOn;
+
+    @override
+    int get hashCode =>
+        hasStarted.hashCode +
+        (completionRatio == null ? 0 : completionRatio.hashCode) +
+        minutesTotal.hashCode +
+        minutesLast7Days.hashCode +
+        (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode) +
+        streakDays.hashCode +
+        (lastActiveOn == null ? 0 : lastActiveOn.hashCode);
+
+  factory MyClassProgress.fromJson(Map<String, dynamic> json) => _$MyClassProgressFromJson(json);
 
   Map<String, dynamic> toJson() => _$MyClassProgressToJson(this);
 
@@ -85,4 +149,6 @@ class MyClassProgress {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-society",
+  "title": {
+    "vi": "Đọc: Vì sao Nhật Bản có nhiều máy bán hàng tự động?",
+    "en": "Reading: Why Japan has so many vending machines"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "日本には、街のあちこちに自動販売機がある。その数は、約400万台といわれ、人口あたりの数は世界でもトップクラスだ。なぜ、日本にはこれほど多くの自動販売機があるのだろうか。\n理由の一つは、治安の良さである。夜の道に機械が置いてあっても、こわされる心配が少ない。また、日本は人件費が高い。店を開いて人をやとうより、機械を置くほうが、費用が安くすむ場合が多い。さらに、日本人は、いつでも、どこでも、すぐに商品を手に入れたいという気持ちが強いとも言われている。\n最近の自動販売機は、さらに進化している。あたたかい飲み物とつめたい飲み物が一つの機械で買えるものや、災害のときにただで飲み物を出すものもある。便利さだけでなく、社会の役に立つ工夫が増えているのだ。",
+      "meaning": {
+        "vi": "Ở Nhật Bản, máy bán hàng tự động có ở khắp nơi trong thành phố. Số lượng được cho là khoảng 4 triệu máy, và tính theo số dân thì thuộc hàng đầu thế giới. Tại sao Nhật Bản lại có nhiều máy bán hàng tự động đến vậy? Một lý do là trật tự an ninh tốt. Dù máy được đặt trên đường vào ban đêm thì cũng ít lo bị phá hỏng. Ngoài ra, chi phí nhân công ở Nhật cao. So với mở cửa hàng và thuê người, đặt máy thường tốn ít chi phí hơn. Hơn nữa, người ta cũng nói người Nhật có mong muốn mạnh mẽ là muốn có được hàng hóa ngay lập tức, bất cứ lúc nào, ở bất cứ đâu. Những máy bán hàng tự động gần đây còn tiến hóa hơn nữa. Có loại bán được cả đồ uống nóng lẫn lạnh trong một máy, và cả loại cung cấp đồ uống miễn phí khi có thiên tai. Không chỉ tiện lợi mà những sáng kiến hữu ích cho xã hội cũng đang tăng lên.",
+        "en": "In Japan there are vending machines all over town. Their number is said to be about four million, and in terms of machines per person it is among the highest in the world. Why does Japan have so many vending machines? One reason is the good public safety. Even if a machine is placed on a street at night, there is little worry it will be destroyed. Also, labor costs in Japan are high. Compared with opening a shop and hiring people, placing a machine is often cheaper. Furthermore, it is also said that Japanese people have a strong desire to get products immediately, anytime and anywhere. Recent vending machines have evolved even further. There are machines that sell both hot and cold drinks in one unit, and ones that give out drinks for free during disasters. Not only convenience but also ideas that help society are increasing."
+      },
+      "explanation": {
+        "vi": "「～あたり」= tính trên…; 「～より、…ほうが」= so với… thì… hơn; 「～とも言われている」= cũng được cho là…; 「～だけでなく」= không chỉ…. Từ vựng: 「便利」(べんり) = tiện lợi; 「こわされる」= bị phá hỏng; 「やとう」= thuê (người); 「ただ」= miễn phí; 「機械」(きかい) = máy móc.",
+        "en": "「～あたり」 = per…; 「～より、…ほうが」 = … rather than …; 「～とも言われている」 = it is also said…; 「～だけでなく」 = not only…. Vocabulary: 「便利」(べんり) = convenient; 「こわされる」 = to be destroyed; 「やとう」 = to hire; 「ただ」 = free of charge."
+      },
+      "scopeRef": "r-n3-midtext-explanation"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Số máy bán hàng tự động ở Nhật khoảng bao nhiêu?",
+        "en": "About how many vending machines are there in Japan?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khoảng 40.000 máy",
+            "en": "About 40,000"
+          },
+          {
+            "vi": "Khoảng 400.000 máy",
+            "en": "About 400,000"
+          },
+          {
+            "vi": "Khoảng 4 triệu máy",
+            "en": "About 4 million"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「その数は、約400万台といわれ」: 「400万台」là 4 triệu máy.",
+        "en": "Correct! The text has 「その数は、約400万台といわれ」: 「400万台」 means four million machines."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「その数は、約400万台といわれ」: 「400万台」là 4 triệu máy.",
+        "en": "Not quite. Look again at 「その数は、約400万台といわれ」: 「400万台」 means four million machines."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Một lý do khiến máy bán hàng tự động nhiều là gì?",
+        "en": "What is one reason there are so many vending machines?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "An ninh tốt nên ít lo máy bị phá hỏng",
+            "en": "Public safety is good, so there is little worry about damage"
+          },
+          {
+            "vi": "Chính phủ trả tiền đặt máy",
+            "en": "The government pays for installation"
+          },
+          {
+            "vi": "Người Nhật không thích vào cửa hàng",
+            "en": "Japanese people dislike entering shops"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「治安の良さである。夜の道に機械が置いてあっても、こわされる心配が少ない」: Trật tự an ninh tốt nên đặt máy ngoài đường cũng ít sợ bị phá.",
+        "en": "Correct! The text has 「治安の良さである。夜の道に機械が置いてあっても、こわされる心配が少ない」: With good public safety, machines on the street are rarely vandalized."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「治安の良さである。夜の道に機械が置いてあっても、こわされる心配が少ない」: Trật tự an ninh tốt nên đặt máy ngoài đường cũng ít sợ bị phá.",
+        "en": "Not quite. Look again at 「治安の良さである。夜の道に機械が置いてあっても、こわされる心配が少ない」: With good public safety, machines on the street are rarely vandalized."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao đặt máy thường rẻ hơn mở cửa hàng?",
+        "en": "Why is placing a machine often cheaper than opening a shop?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Máy không cần điện",
+            "en": "Machines need no electricity"
+          },
+          {
+            "vi": "Không phải thuê người, nên tiết kiệm chi phí nhân công",
+            "en": "No staff need to be hired, so labor costs are saved"
+          },
+          {
+            "vi": "Thuế được miễn",
+            "en": "They are tax-exempt"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「店を開いて人をやとうより、機械を置くほうが、費用が安くすむ場合が多い」: Chi phí nhân công ở Nhật cao nên đặt máy tiết kiệm hơn thuê người.",
+        "en": "Correct! The text has 「店を開いて人をやとうより、機械を置くほうが、費用が安くすむ場合が多い」: Labor costs are high, so machines save money compared with hiring staff."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「店を開いて人をやとうより、機械を置くほうが、費用が安くすむ場合が多い」: Chi phí nhân công ở Nhật cao nên đặt máy tiết kiệm hơn thuê người.",
+        "en": "Not quite. Look again at 「店を開いて人をやとうより、機械を置くほうが、費用が安くすむ場合が多い」: Labor costs are high, so machines save money compared with hiring staff."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Ví dụ nào cho thấy máy tự động “hữu ích cho xã hội”?",
+        "en": "Which example shows vending machines “helping society”?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Máy bán được nhiều loại bánh",
+            "en": "Machines that sell many kinds of snacks"
+          },
+          {
+            "vi": "Máy phát đồ uống miễn phí khi có thiên tai",
+            "en": "Machines that give out drinks for free during disasters"
+          },
+          {
+            "vi": "Máy chơi nhạc to",
+            "en": "Machines that play loud music"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「災害のときにただで飲み物を出すもの」: Máy phát đồ uống miễn phí khi có thiên tai là ví dụ hữu ích cho xã hội.",
+        "en": "Correct! The text has 「災害のときにただで飲み物を出すもの」: Machines giving free drinks during disasters are an example of social usefulness."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「災害のときにただで飲み物を出すもの」: Máy phát đồ uống miễn phí khi có thiên tai là ví dụ hữu ích cho xã hội.",
+        "en": "Not quite. Look again at 「災害のときにただで飲み物を出すもの」: Machines giving free drinks during disasters are an example of social usefulness."
+      }
+    }
+  ]
+}

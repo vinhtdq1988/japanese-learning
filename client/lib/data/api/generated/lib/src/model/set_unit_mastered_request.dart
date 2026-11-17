@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'set_unit_mastered_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'set_unit_mastered_request.g.dart';
 )
 class SetUnitMasteredRequest {
   /// Returns a new [SetUnitMasteredRequest] instance.
-  SetUnitMasteredRequest({required this.mastered});
+  SetUnitMasteredRequest({
 
-  @JsonKey(name: r'mastered', required: true, includeIfNull: false)
+    required  this.mastered,
+  });
+
+  @JsonKey(
+    
+    name: r'mastered',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final bool mastered;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is SetUnitMasteredRequest && other.mastered == mastered;
 
-  @override
-  int get hashCode => mastered.hashCode;
 
-  factory SetUnitMasteredRequest.fromJson(Map<String, dynamic> json) =>
-      _$SetUnitMasteredRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is SetUnitMasteredRequest &&
+      other.mastered == mastered;
+
+    @override
+    int get hashCode =>
+        mastered.hashCode;
+
+  factory SetUnitMasteredRequest.fromJson(Map<String, dynamic> json) => _$SetUnitMasteredRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$SetUnitMasteredRequestToJson(this);
 
@@ -39,4 +53,6 @@ class SetUnitMasteredRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

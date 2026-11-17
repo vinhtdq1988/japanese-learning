@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'change_password_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,29 +19,49 @@ part 'change_password_request.g.dart';
 class ChangePasswordRequest {
   /// Returns a new [ChangePasswordRequest] instance.
   ChangePasswordRequest({
-    required this.currentPassword,
 
-    required this.newPassword,
+    required  this.currentPassword,
+
+    required  this.newPassword,
   });
 
-  @JsonKey(name: r'currentPassword', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'currentPassword',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String currentPassword;
 
-  @JsonKey(name: r'newPassword', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'newPassword',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String newPassword;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ChangePasswordRequest &&
-          other.currentPassword == currentPassword &&
-          other.newPassword == newPassword;
 
-  @override
-  int get hashCode => currentPassword.hashCode + newPassword.hashCode;
 
-  factory ChangePasswordRequest.fromJson(Map<String, dynamic> json) =>
-      _$ChangePasswordRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ChangePasswordRequest &&
+      other.currentPassword == currentPassword &&
+      other.newPassword == newPassword;
+
+    @override
+    int get hashCode =>
+        currentPassword.hashCode +
+        newPassword.hashCode;
+
+  factory ChangePasswordRequest.fromJson(Map<String, dynamic> json) => _$ChangePasswordRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$ChangePasswordRequestToJson(this);
 
@@ -48,4 +69,6 @@ class ChangePasswordRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **targetLevel** | [**TargetLevel**](TargetLevel.md) |  | [optional] 
 **targetDate** | [**DateTime**](DateTime.md) |  | [optional] 
 **prioritizedSkill** | [**Skill**](Skill.md) |  | [optional] 
-**skills** | [**Set&lt;Skill&gt;**](Skill.md) | Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null. | [optional] 
+**skills** | [**Set&lt;Skill&gt;**](Skill.md) | Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ngay: kế hoạch hôm nay bị xóa và sinh lại nếu mọi mục còn chưa học; đã học dở thì giữ nguyên và có hiệu lực từ ngày sau. Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null. | [optional] 
 **language** | [**Lang**](Lang.md) |  | [optional] 
 **timezone** | **String** |  | [optional] 
 **soundEnabled** | **bool** | Chỉ hai trường hiệu ứng: không sinh lại lộ trình, không đụng kế hoạch, không cần `currentPassword`, học viên thuộc lớp vẫn sửa được (spec 005). | [optional] 

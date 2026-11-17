@@ -13,10 +13,10 @@ export interface EvaluateInput {
   streakAfter: number;
   itemsBefore: number;
   itemsAfter: number;
-  /** Số đơn vị mục tiêu đã xong SAU lần hoàn thành này và tổng số đơn vị mục tiêu. */
+  /** Số PHÚT của đơn vị mục tiêu đã xong SAU lần hoàn thành này và tổng số phút của phạm vi (spec 008, D12.1). */
   goalDone: number;
   goalTotal: number;
-  /** 1 nếu chính phiên này đưa một đơn vị trong phạm vi từ chưa-xong thành xong; ngược lại 0. */
+  /** `estMinutes` của đơn vị nếu chính phiên này đưa nó (trong phạm vi) từ chưa-xong thành xong; ngược lại 0. */
   delta: number;
   /** Có bài học mới nào khác đã hoàn thành trước phiên này. */
   hasEarlierLesson: boolean;

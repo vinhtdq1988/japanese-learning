@@ -4,8 +4,9 @@ import { registerApiRoutes } from '../../src/api/routes.js';
 import { loadConfig } from '../../src/config.js';
 import { createDb } from '../../src/db/client.js';
 import { runMigrations } from '../../src/db/migrate.js';
-import { FakeClock } from '../../src/engine/clock.js';
+import { FakeClock, systemClock } from '../../src/engine/clock.js';
 import { InMemoryJobQueue } from '../../src/jobs/boss.js';
+import { ContentCache } from '../../src/services/content-cache.js';
 import { InMemoryEmailSender } from '../../src/services/email.js';
 import { seedContent } from '../../src/seed/index.js';
 import { ContractClient, newcomerOnboarding, registerUser } from '../contract/client.js';
@@ -28,7 +29,10 @@ import { resetDatabase } from '../integration/helpers.js';
 // Chạy (từ `backend/`):
 //   Baseline : LOAD_DATABASE_URL=postgres://… CONTENT_RELEASES=000-baseline npx tsx tests/load/measure-today.ts --label baseline
 //   Đầy đủ   : LOAD_DATABASE_URL=postgres://… CONTENT_RELEASES=all          npx tsx tests/load/measure-today.ts --label full
-// Tùy chọn: `--calls <N>` (mặc định 200), `--warmup <N>` (mặc định 10), `--json` (in thêm một dòng JSON).
+// Tùy chọn: `--calls <N>` (mặc định 200), `--warmup <N>` (mặc định 10), `--json` (in thêm một dòng JSON),
+// `--warm-cache` (bộ đệm danh mục dùng đồng hồ thật, TTL 60 giây như production: danh mục chỉ đọc lại từ CSDL ≤ 1 lần/phút).
+// Mặc định đồng hồ giả tiến 1 ngày mỗi lần gọi nên bộ đệm danh mục LUÔN quá hạn và `GET /today` đọc lại toàn bộ
+// đơn vị `active` từ CSDL mỗi lần — trường hợp xấu nhất, chi phí tỉ lệ số đơn vị.
 
 const databaseUrl = process.env.LOAD_DATABASE_URL ?? '';
 const dbName = databaseUrl.split('/').pop()?.split('?')[0] ?? '';
@@ -47,6 +51,7 @@ const label = argValue('--label', 'run');
 const calls = Number(argValue('--calls', '200'));
 const warmup = Number(argValue('--warmup', '10'));
 const asJson = process.argv.includes('--json');
+const warmCache = process.argv.includes('--warm-cache');
 
 /** Phân vị theo cách xếp hạng gần nhất trên mảng đã sắp. */
 function percentile(sorted: readonly number[], p: number): number {
@@ -123,6 +128,13 @@ const app = await buildApp(
   { logger: false, registerRoutes: registerApiRoutes },
 );
 await app.ready();
+// Bộ đệm danh mục theo đồng hồ thật (không bị đồng hồ giả làm quá hạn mỗi lần gọi) = hành vi ổn định của production.
+if (warmCache) {
+  (app.deps as { contentCache: ContentCache }).contentCache = new ContentCache(
+    handle.db,
+    systemClock,
+  );
+}
 
 try {
   const api = new ContractClient(app);
@@ -163,7 +175,9 @@ try {
   );
   const active = rows[0]?.active ?? 0;
 
-  console.log(`\n[${label}] CONTENT_RELEASES=${process.env.CONTENT_RELEASES ?? '(mặc định)'}`);
+  console.log(
+    `\n[${label}] CONTENT_RELEASES=${process.env.CONTENT_RELEASES ?? '(mặc định)'} | bộ đệm danh mục: ${warmCache ? 'ấm (đồng hồ thật, TTL 60 giây)' : 'nguội mỗi lần gọi (đồng hồ giả)'}`,
+  );
   console.log(
     `Đơn vị đang hoạt động: ${active} | seed: ${summary.unitsInserted} đơn vị mới trong ${Math.round(seedMs)} ms`,
   );

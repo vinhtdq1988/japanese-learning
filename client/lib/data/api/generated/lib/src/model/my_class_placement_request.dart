@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'my_class_placement_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'my_class_placement_request.g.dart';
 )
 class MyClassPlacementRequest {
   /// Returns a new [MyClassPlacementRequest] instance.
-  MyClassPlacementRequest({this.id, this.requestedAt});
+  MyClassPlacementRequest({
 
-  @JsonKey(name: r'id', required: false, includeIfNull: false)
+     this.id,
+
+     this.requestedAt,
+  });
+
+  @JsonKey(
+    
+    name: r'id',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? id;
 
-  @JsonKey(name: r'requestedAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'requestedAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? requestedAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MyClassPlacementRequest &&
-          other.id == id &&
-          other.requestedAt == requestedAt;
 
-  @override
-  int get hashCode => id.hashCode + requestedAt.hashCode;
 
-  factory MyClassPlacementRequest.fromJson(Map<String, dynamic> json) =>
-      _$MyClassPlacementRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is MyClassPlacementRequest &&
+      other.id == id &&
+      other.requestedAt == requestedAt;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        requestedAt.hashCode;
+
+  factory MyClassPlacementRequest.fromJson(Map<String, dynamic> json) => _$MyClassPlacementRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$MyClassPlacementRequestToJson(this);
 
@@ -44,4 +69,6 @@ class MyClassPlacementRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

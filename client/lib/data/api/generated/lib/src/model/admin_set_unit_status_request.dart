@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'admin_set_unit_status_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'admin_set_unit_status_request.g.dart';
 )
 class AdminSetUnitStatusRequest {
   /// Returns a new [AdminSetUnitStatusRequest] instance.
-  AdminSetUnitStatusRequest({this.status, this.isTrial});
+  AdminSetUnitStatusRequest({
 
-  @JsonKey(name: r'status', required: false, includeIfNull: false)
+     this.status,
+
+     this.isTrial,
+  });
+
+  @JsonKey(
+    
+    name: r'status',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final AdminSetUnitStatusRequestStatusEnum? status;
 
-  @JsonKey(name: r'isTrial', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'isTrial',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? isTrial;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is AdminSetUnitStatusRequest &&
-          other.status == status &&
-          other.isTrial == isTrial;
 
-  @override
-  int get hashCode => status.hashCode + isTrial.hashCode;
 
-  factory AdminSetUnitStatusRequest.fromJson(Map<String, dynamic> json) =>
-      _$AdminSetUnitStatusRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is AdminSetUnitStatusRequest &&
+      other.status == status &&
+      other.isTrial == isTrial;
+
+    @override
+    int get hashCode =>
+        status.hashCode +
+        isTrial.hashCode;
+
+  factory AdminSetUnitStatusRequest.fromJson(Map<String, dynamic> json) => _$AdminSetUnitStatusRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminSetUnitStatusRequestToJson(this);
 
@@ -44,20 +69,23 @@ class AdminSetUnitStatusRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum AdminSetUnitStatusRequestStatusEnum {
-  @JsonValue(r'draft')
-  draft(r'draft'),
-  @JsonValue(r'active')
-  active(r'active'),
-  @JsonValue(r'inactive')
-  inactive(r'inactive');
+@JsonValue(r'draft')
+draft(r'draft'),
+@JsonValue(r'active')
+active(r'active'),
+@JsonValue(r'inactive')
+inactive(r'inactive');
 
-  const AdminSetUnitStatusRequestStatusEnum(this.value);
+const AdminSetUnitStatusRequestStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-daily-household",
+  "title": {
+    "vi": "Ánh sáng, bụi bẩn và đồ dùng trong nhà",
+    "en": "Lighting, dust and household items"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2470,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "照明",
+      "reading": "しょうめい",
+      "meaning": {
+        "vi": "Chiếu sáng; đèn chiếu sáng",
+        "en": "Lighting"
+      },
+      "examples": [
+        {
+          "ja": "部屋の照明を、少し暗くしました。",
+          "reading": "へやのしょうめいを、すこしくらくしました。",
+          "translation": {
+            "vi": "Tôi đã làm đèn trong phòng tối đi một chút.",
+            "en": "I made the lighting in the room a little dimmer."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "明かり",
+      "reading": "あかり",
+      "meaning": {
+        "vi": "Ánh đèn; ánh sáng",
+        "en": "Light; lamp light"
+      },
+      "examples": [
+        {
+          "ja": "窓から、やさしい明かりがもれています。",
+          "reading": "まどから、やさしいあかりがもれています。",
+          "translation": {
+            "vi": "Ánh đèn dịu nhẹ hắt ra từ cửa sổ.",
+            "en": "A soft light is leaking out of the window."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "塵",
+      "reading": "ちり",
+      "meaning": {
+        "vi": "Bụi; rác vụn",
+        "en": "Dust; dirt"
+      },
+      "examples": [
+        {
+          "ja": "机の上に、塵がたまっています。",
+          "reading": "つくえのうえに、ちりがたまっています。",
+          "translation": {
+            "vi": "Bụi đã đọng lại trên bàn.",
+            "en": "Dust has collected on the desk."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "灰",
+      "reading": "はい",
+      "meaning": {
+        "vi": "Tro",
+        "en": "Ash"
+      },
+      "examples": [
+        {
+          "ja": "たばこの灰が、テーブルに落ちました。",
+          "reading": "たばこのはいが、テーブルにおちました。",
+          "translation": {
+            "vi": "Tàn thuốc đã rơi xuống bàn.",
+            "en": "Cigarette ash fell onto the table."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "栓",
+      "reading": "せん",
+      "meaning": {
+        "vi": "Nút; nắp; van",
+        "en": "Plug; stopper"
+      },
+      "examples": [
+        {
+          "ja": "お風呂の栓を抜いて、お湯を流しました。",
+          "reading": "おふろのせんをぬいて、おゆをながしました。",
+          "translation": {
+            "vi": "Tôi đã rút nút bồn tắm để xả nước nóng.",
+            "en": "I pulled the plug in the bath and let the water drain."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "磨き",
+      "reading": "みがき",
+      "meaning": {
+        "vi": "Việc đánh bóng; sự mài giũa",
+        "en": "Polishing"
+      },
+      "examples": [
+        {
+          "ja": "靴は、磨きが足りなくて、少し汚れて見えます。",
+          "reading": "くつは、みがきがたりなくて、すこしよごれてみえます。",
+          "translation": {
+            "vi": "Đôi giày đánh bóng chưa kỹ nên trông hơi bẩn.",
+            "en": "The shoes were not polished enough and look a little dirty."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "照明",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋の（　）を、少し暗くしました。 — Nghĩa của câu: “Tôi đã làm đèn trong phòng tối đi một chút.”",
+        "en": "Choose the word that fits the blank: 部屋の（　）を、少し暗くしました。 — Meaning of the sentence: “I made the lighting in the room a little dimmer.”"
+      },
+      "payload": {
+        "choices": [
+          "栓",
+          "照明",
+          "灰",
+          "磨き"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「照明」(Chiếu sáng; đèn chiếu sáng) hợp nghĩa câu này: “Tôi đã làm đèn trong phòng tối đi một chút.”",
+        "en": "Correct! 「照明」(Lighting) fits this sentence: “I made the lighting in the room a little dimmer.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã làm đèn trong phòng tối đi một chút.”, nên cần 「照明」(Chiếu sáng; đèn chiếu sáng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I made the lighting in the room a little dimmer.”, so it needs 「照明」(Lighting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "明かり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 窓から、やさしい（　）がもれています。 — Nghĩa của câu: “Ánh đèn dịu nhẹ hắt ra từ cửa sổ.”",
+        "en": "Choose the word that fits the blank: 窓から、やさしい（　）がもれています。 — Meaning of the sentence: “A soft light is leaking out of the window.”"
+      },
+      "payload": {
+        "choices": [
+          "塵",
+          "灰",
+          "明かり",
+          "磨き"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「明かり」(Ánh đèn; ánh sáng) hợp nghĩa câu này: “Ánh đèn dịu nhẹ hắt ra từ cửa sổ.”",
+        "en": "Correct! 「明かり」(Light; lamp light) fits this sentence: “A soft light is leaking out of the window.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ánh đèn dịu nhẹ hắt ra từ cửa sổ.”, nên cần 「明かり」(Ánh đèn; ánh sáng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A soft light is leaking out of the window.”, so it needs 「明かり」(Light; lamp light); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "塵",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 机の上に、（　）がたまっています。 — Nghĩa của câu: “Bụi đã đọng lại trên bàn.”",
+        "en": "Choose the word that fits the blank: 机の上に、（　）がたまっています。 — Meaning of the sentence: “Dust has collected on the desk.”"
+      },
+      "payload": {
+        "choices": [
+          "明かり",
+          "栓",
+          "照明",
+          "塵"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「塵」(Bụi; rác vụn) hợp nghĩa câu này: “Bụi đã đọng lại trên bàn.”",
+        "en": "Correct! 「塵」(Dust; dirt) fits this sentence: “Dust has collected on the desk.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bụi đã đọng lại trên bàn.”, nên cần 「塵」(Bụi; rác vụn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Dust has collected on the desk.”, so it needs 「塵」(Dust; dirt); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "灰",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: たばこの（　）が、テーブルに落ちました。 — Nghĩa của câu: “Tàn thuốc đã rơi xuống bàn.”",
+        "en": "Choose the word that fits the blank: たばこの（　）が、テーブルに落ちました。 — Meaning of the sentence: “Cigarette ash fell onto the table.”"
+      },
+      "payload": {
+        "choices": [
+          "灰",
+          "磨き",
+          "塵",
+          "照明"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「灰」(Tro) hợp nghĩa câu này: “Tàn thuốc đã rơi xuống bàn.”",
+        "en": "Correct! 「灰」(Ash) fits this sentence: “Cigarette ash fell onto the table.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tàn thuốc đã rơi xuống bàn.”, nên cần 「灰」(Tro); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Cigarette ash fell onto the table.”, so it needs 「灰」(Ash); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "栓",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お風呂の（　）を抜いて、お湯を流しました。 — Nghĩa của câu: “Tôi đã rút nút bồn tắm để xả nước nóng.”",
+        "en": "Choose the word that fits the blank: お風呂の（　）を抜いて、お湯を流しました。 — Meaning of the sentence: “I pulled the plug in the bath and let the water drain.”"
+      },
+      "payload": {
+        "choices": [
+          "磨き",
+          "栓",
+          "照明",
+          "明かり"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「栓」(Nút; nắp; van) hợp nghĩa câu này: “Tôi đã rút nút bồn tắm để xả nước nóng.”",
+        "en": "Correct! 「栓」(Plug; stopper) fits this sentence: “I pulled the plug in the bath and let the water drain.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã rút nút bồn tắm để xả nước nóng.”, nên cần 「栓」(Nút; nắp; van); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I pulled the plug in the bath and let the water drain.”, so it needs 「栓」(Plug; stopper); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "磨き",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 靴は、（　）が足りなくて、少し汚れて見えます。 — Nghĩa của câu: “Đôi giày đánh bóng chưa kỹ nên trông hơi bẩn.”",
+        "en": "Choose the word that fits the blank: 靴は、（　）が足りなくて、少し汚れて見えます。 — Meaning of the sentence: “The shoes were not polished enough and look a little dirty.”"
+      },
+      "payload": {
+        "choices": [
+          "塵",
+          "栓",
+          "磨き",
+          "灰"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「磨き」(Việc đánh bóng; sự mài giũa) hợp nghĩa câu này: “Đôi giày đánh bóng chưa kỹ nên trông hơi bẩn.”",
+        "en": "Correct! 「磨き」(Polishing) fits this sentence: “The shoes were not polished enough and look a little dirty.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đôi giày đánh bóng chưa kỹ nên trông hơi bẩn.”, nên cần 「磨き」(Việc đánh bóng; sự mài giũa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The shoes were not polished enough and look a little dirty.”, so it needs 「磨き」(Polishing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "照明",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 部屋の「照明」を、少し暗くしました。",
+        "en": "Choose the correct reading of the word in 「」: 部屋の「照明」を、少し暗くしました。"
+      },
+      "payload": {
+        "choices": [
+          "あかり",
+          "ちり",
+          "しょうめい",
+          "せん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「照明」 đọc là 「しょうめい」, nghĩa là Chiếu sáng; đèn chiếu sáng.",
+        "en": "Correct! 「照明」 is read 「しょうめい」 and means Lighting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「照明」 đọc là 「しょうめい」 (Chiếu sáng; đèn chiếu sáng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「照明」 is read 「しょうめい」 (Lighting); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "灰",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: たばこの「灰」が、テーブルに落ちました。",
+        "en": "Choose the correct reading of the word in 「」: たばこの「灰」が、テーブルに落ちました。"
+      },
+      "payload": {
+        "choices": [
+          "ちり",
+          "みがき",
+          "しょうめい",
+          "はい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「灰」 đọc là 「はい」, nghĩa là Tro.",
+        "en": "Correct! 「灰」 is read 「はい」 and means Ash."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「灰」 đọc là 「はい」 (Tro); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「灰」 is read 「はい」 (Ash); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "磨き",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 靴は、「みがき」が足りなくて、少し汚れて見えます。",
+        "en": "Choose the correct way to write the word in 「」: 靴は、「みがき」が足りなくて、少し汚れて見えます。"
+      },
+      "payload": {
+        "choices": [
+          "灰",
+          "明かり",
+          "照明",
+          "磨き"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「みがき」 viết là 「磨き」, nghĩa là Việc đánh bóng; sự mài giũa.",
+        "en": "Correct! 「みがき」 is written 「磨き」 and means Polishing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「みがき」 viết là 「磨き」 (Việc đánh bóng; sự mài giũa); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「みがき」 is written 「磨き」 (Polishing); the other words are read differently."
+      }
+    }
+  ]
+}

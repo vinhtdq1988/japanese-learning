@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'delete_account_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'delete_account_request.g.dart';
 )
 class DeleteAccountRequest {
   /// Returns a new [DeleteAccountRequest] instance.
-  DeleteAccountRequest({required this.password});
+  DeleteAccountRequest({
 
-  @JsonKey(name: r'password', required: true, includeIfNull: false)
+    required  this.password,
+  });
+
+  @JsonKey(
+    
+    name: r'password',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String password;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is DeleteAccountRequest && other.password == password;
 
-  @override
-  int get hashCode => password.hashCode;
 
-  factory DeleteAccountRequest.fromJson(Map<String, dynamic> json) =>
-      _$DeleteAccountRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is DeleteAccountRequest &&
+      other.password == password;
+
+    @override
+    int get hashCode =>
+        password.hashCode;
+
+  factory DeleteAccountRequest.fromJson(Map<String, dynamic> json) => _$DeleteAccountRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$DeleteAccountRequestToJson(this);
 
@@ -39,4 +53,6 @@ class DeleteAccountRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -48,11 +48,14 @@ export function normalizeIds(value: unknown, seen = new Map<string, string>()): 
   return value;
 }
 
-/** Các trường tùy chọn thêm ở hợp đồng 1.14.0 (spec 007): năng lực và lời khích lệ. */
-const NEW_OPTIONAL_FIELDS = new Set(['competency', 'encouragement']);
+/**
+ * Các trường tùy chọn thêm ở hợp đồng 1.14.0 (spec 007: năng lực, lời khích lệ) và 1.15.0 (spec 008: `notices` của
+ * `PathSummary`/`ProgressSummary.goal`, `itemsTotal` của `PathDetail`).
+ */
+const NEW_OPTIONAL_FIELDS = new Set(['competency', 'encouragement', 'notices', 'itemsTotal']);
 
 /**
- * Bỏ đệ quy các khóa `competency` và `encouragement` (trường tùy chọn mới của 1.14.0, spec 007) khỏi một phản hồi
+ * Bỏ đệ quy các khóa `competency` và `encouragement` (trường tùy chọn mới của 1.14.0, spec 007) cùng `notices`/`itemsTotal` (1.15.0, spec 008) khỏi một phản hồi
  * để golden `api-pre-org.json` và `org-regression-api.test.ts` vẫn chứng minh "chỉ thêm trường tùy chọn, phần còn
  * lại không đổi" (QS6). Dùng chung cho script sinh và kiểm thử hồi quy; không sửa giá trị đầu vào.
  */

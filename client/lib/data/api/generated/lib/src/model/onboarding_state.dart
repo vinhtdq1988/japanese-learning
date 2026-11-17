@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'onboarding_state.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,33 +20,66 @@ part 'onboarding_state.g.dart';
 )
 class OnboardingState {
   /// Returns a new [OnboardingState] instance.
-  OnboardingState({this.state, this.draft, this.carriedPlacement});
+  OnboardingState({
 
-  @JsonKey(name: r'state', required: false, includeIfNull: false)
+     this.state,
+
+     this.draft,
+
+     this.carriedPlacement,
+  });
+
+  @JsonKey(
+    
+    name: r'state',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final OnboardingStateStateEnum? state;
 
-  @JsonKey(name: r'draft', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'draft',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final OnboardingDraft? draft;
 
-  @JsonKey(name: r'carriedPlacement', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'carriedPlacement',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final PlacementResult? carriedPlacement;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is OnboardingState &&
-          other.state == state &&
-          other.draft == draft &&
-          other.carriedPlacement == carriedPlacement;
 
-  @override
-  int get hashCode =>
-      state.hashCode +
-      draft.hashCode +
-      (carriedPlacement == null ? 0 : carriedPlacement.hashCode);
 
-  factory OnboardingState.fromJson(Map<String, dynamic> json) =>
-      _$OnboardingStateFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is OnboardingState &&
+      other.state == state &&
+      other.draft == draft &&
+      other.carriedPlacement == carriedPlacement;
+
+    @override
+    int get hashCode =>
+        state.hashCode +
+        draft.hashCode +
+        (carriedPlacement == null ? 0 : carriedPlacement.hashCode);
+
+  factory OnboardingState.fromJson(Map<String, dynamic> json) => _$OnboardingStateFromJson(json);
 
   Map<String, dynamic> toJson() => _$OnboardingStateToJson(this);
 
@@ -53,20 +87,23 @@ class OnboardingState {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum OnboardingStateStateEnum {
-  @JsonValue(r'not_started')
-  notStarted(r'not_started'),
-  @JsonValue(r'in_progress')
-  inProgress(r'in_progress'),
-  @JsonValue(r'completed')
-  completed(r'completed');
+@JsonValue(r'not_started')
+notStarted(r'not_started'),
+@JsonValue(r'in_progress')
+inProgress(r'in_progress'),
+@JsonValue(r'completed')
+completed(r'completed');
 
-  const OnboardingStateStateEnum(this.value);
+const OnboardingStateStateEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

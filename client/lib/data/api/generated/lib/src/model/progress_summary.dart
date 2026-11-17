@@ -12,6 +12,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'progress_summary.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -22,83 +23,164 @@ part 'progress_summary.g.dart';
 class ProgressSummary {
   /// Returns a new [ProgressSummary] instance.
   ProgressSummary({
-    this.isEmpty,
 
-    this.totalMinutes,
+     this.isEmpty,
 
-    this.lessonsCompleted,
+     this.totalMinutes,
 
-    this.reviewAccuracy,
+     this.lessonsCompleted,
 
-    this.currentStreakDays,
+     this.reviewAccuracy,
 
-    this.goal,
+     this.currentStreakDays,
 
-    this.kanji,
+     this.goal,
 
-    this.weakTopics,
+     this.kanji,
 
-    this.competency,
+     this.weakTopics,
+
+     this.competency,
   });
 
-  /// true khi chưa có lịch sử (trạng thái trống thân thiện)
-  @JsonKey(name: r'isEmpty', required: false, includeIfNull: false)
+      /// true khi chưa có lịch sử (trạng thái trống thân thiện)
+  @JsonKey(
+    
+    name: r'isEmpty',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? isEmpty;
 
-  @JsonKey(name: r'totalMinutes', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'totalMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? totalMinutes;
 
-  @JsonKey(name: r'lessonsCompleted', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'lessonsCompleted',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? lessonsCompleted;
 
-  // minimum: 0
-  // maximum: 1
-  @JsonKey(name: r'reviewAccuracy', required: false, includeIfNull: false)
+
+
+          // minimum: 0
+          // maximum: 1
+  @JsonKey(
+    
+    name: r'reviewAccuracy',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? reviewAccuracy;
 
-  @JsonKey(name: r'currentStreakDays', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'currentStreakDays',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? currentStreakDays;
 
-  @JsonKey(name: r'goal', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'goal',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProgressSummaryGoal? goal;
 
-  @JsonKey(name: r'kanji', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'kanji',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProgressSummaryKanji? kanji;
 
-  @JsonKey(name: r'weakTopics', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'weakTopics',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<ProgressSummaryWeakTopicsInner>? weakTopics;
 
-  @JsonKey(name: r'competency', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'competency',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProgressSummaryCompetency? competency;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ProgressSummary &&
-          other.isEmpty == isEmpty &&
-          other.totalMinutes == totalMinutes &&
-          other.lessonsCompleted == lessonsCompleted &&
-          other.reviewAccuracy == reviewAccuracy &&
-          other.currentStreakDays == currentStreakDays &&
-          other.goal == goal &&
-          other.kanji == kanji &&
-          other.weakTopics == weakTopics &&
-          other.competency == competency;
 
-  @override
-  int get hashCode =>
-      isEmpty.hashCode +
-      totalMinutes.hashCode +
-      lessonsCompleted.hashCode +
-      (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode) +
-      currentStreakDays.hashCode +
-      goal.hashCode +
-      (kanji == null ? 0 : kanji.hashCode) +
-      weakTopics.hashCode +
-      competency.hashCode;
 
-  factory ProgressSummary.fromJson(Map<String, dynamic> json) =>
-      _$ProgressSummaryFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ProgressSummary &&
+      other.isEmpty == isEmpty &&
+      other.totalMinutes == totalMinutes &&
+      other.lessonsCompleted == lessonsCompleted &&
+      other.reviewAccuracy == reviewAccuracy &&
+      other.currentStreakDays == currentStreakDays &&
+      other.goal == goal &&
+      other.kanji == kanji &&
+      other.weakTopics == weakTopics &&
+      other.competency == competency;
+
+    @override
+    int get hashCode =>
+        isEmpty.hashCode +
+        totalMinutes.hashCode +
+        lessonsCompleted.hashCode +
+        (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode) +
+        currentStreakDays.hashCode +
+        goal.hashCode +
+        (kanji == null ? 0 : kanji.hashCode) +
+        weakTopics.hashCode +
+        competency.hashCode;
+
+  factory ProgressSummary.fromJson(Map<String, dynamic> json) => _$ProgressSummaryFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProgressSummaryToJson(this);
 
@@ -106,4 +188,6 @@ class ProgressSummary {
   String toString() {
     return toJson().toString();
   }
+
 }
+

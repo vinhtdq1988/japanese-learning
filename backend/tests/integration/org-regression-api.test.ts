@@ -9,6 +9,9 @@ import { requireDatabaseUrl } from './helpers.js';
 // `resolveLearningContext`, phản hồi `GET /path`, `GET /progress`, `GET /today` ngày đầu của người học KHÔNG
 // thuộc lớp phải giống hệt ảnh chụp `api-pre-org.json` (T002, sinh từ mã chưa sửa). Chỉ có MỘT khác biệt được
 // phép là khóa bổ sung `source` ở `GET /path` (trường tùy chọn mới của hợp đồng 1.12.0, giá trị `personal`).
+// Ngoại lệ đã duyệt: `PATCH /me` đổi `prioritizedSkill` khi kế hoạch hôm nay chưa học gì thì kế hoạch được sinh lại
+// ngay (không còn giữ bản sinh lúc onboarding), nên `today` của `jlpt-n1-goal` trong golden được cập nhật: cùng
+// các bài và cùng tổng thời gian, chỉ bài `grammar` được xếp trước.
 
 const GOLDEN = JSON.parse(
   readFileSync(

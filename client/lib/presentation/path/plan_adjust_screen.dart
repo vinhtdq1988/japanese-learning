@@ -45,6 +45,7 @@ const List<String> _practiceSkills = <String>['reading', 'writing'];
 /// Làm mới mọi màn hình phụ thuộc lộ trình/kế hoạch sau khi người học ghi đè.
 void invalidatePlanViews(WidgetRef ref) {
   ref.invalidate(pathProvider);
+  ref.invalidate(pathListProvider);
   ref.invalidate(todayProvider);
   ref.invalidate(progressProvider);
 }

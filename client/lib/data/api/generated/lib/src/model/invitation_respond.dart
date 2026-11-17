@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'invitation_respond.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,28 +18,52 @@ part 'invitation_respond.g.dart';
 )
 class InvitationRespond {
   /// Returns a new [InvitationRespond] instance.
-  InvitationRespond({required this.decision, this.confirmed});
+  InvitationRespond({
 
-  /// student - join_class/stay_personal; teacher/owner - accept/decline
-  @JsonKey(name: r'decision', required: true, includeIfNull: false)
+    required  this.decision,
+
+     this.confirmed,
+  });
+
+      /// student - join_class/stay_personal; teacher/owner - accept/decline
+  @JsonKey(
+    
+    name: r'decision',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final InvitationRespondDecisionEnum decision;
 
-  /// Bắt buộc true với `join_class`
-  @JsonKey(name: r'confirmed', required: false, includeIfNull: false)
+
+
+      /// Bắt buộc true với `join_class`
+  @JsonKey(
+    
+    name: r'confirmed',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? confirmed;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is InvitationRespond &&
-          other.decision == decision &&
-          other.confirmed == confirmed;
 
-  @override
-  int get hashCode => decision.hashCode + confirmed.hashCode;
 
-  factory InvitationRespond.fromJson(Map<String, dynamic> json) =>
-      _$InvitationRespondFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is InvitationRespond &&
+      other.decision == decision &&
+      other.confirmed == confirmed;
+
+    @override
+    int get hashCode =>
+        decision.hashCode +
+        confirmed.hashCode;
+
+  factory InvitationRespond.fromJson(Map<String, dynamic> json) => _$InvitationRespondFromJson(json);
 
   Map<String, dynamic> toJson() => _$InvitationRespondToJson(this);
 
@@ -46,23 +71,26 @@ class InvitationRespond {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 /// student - join_class/stay_personal; teacher/owner - accept/decline
 enum InvitationRespondDecisionEnum {
-  @JsonValue(r'join_class')
-  joinClass(r'join_class'),
-  @JsonValue(r'stay_personal')
-  stayPersonal(r'stay_personal'),
-  @JsonValue(r'accept')
-  accept(r'accept'),
-  @JsonValue(r'decline')
-  decline(r'decline');
+@JsonValue(r'join_class')
+joinClass(r'join_class'),
+@JsonValue(r'stay_personal')
+stayPersonal(r'stay_personal'),
+@JsonValue(r'accept')
+accept(r'accept'),
+@JsonValue(r'decline')
+decline(r'decline');
 
-  const InvitationRespondDecisionEnum(this.value);
+const InvitationRespondDecisionEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

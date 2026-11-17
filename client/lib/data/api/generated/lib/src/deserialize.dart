@@ -156,555 +156,397 @@ final _regList = RegExp(r'^List<(.*)>$');
 final _regSet = RegExp(r'^Set<(.*)>$');
 final _regMap = RegExp(r'^Map<String,(.*)>$');
 
-ReturnType deserialize<ReturnType, BaseType>(
-  dynamic value,
-  String targetType, {
-  bool growable = true,
-}) {
-  switch (targetType) {
-    case 'String':
-      return '$value' as ReturnType;
-    case 'int':
-      return (value is int ? value : int.parse('$value')) as ReturnType;
-    case 'bool':
-      if (value is bool) {
-        return value as ReturnType;
-      }
-      final valueString = '$value'.toLowerCase();
-      return (valueString == 'true' || valueString == '1') as ReturnType;
-    case 'double':
-      return (value is double ? value : double.parse('$value')) as ReturnType;
-    case 'AccountStatus':
-    case 'AchievementEarned':
-      return AchievementEarned.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AchievementKind':
-    case 'AdminActionLog':
-      return AdminActionLog.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationCreate':
-      return AdminOrganizationCreate.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationDetail':
-      return AdminOrganizationDetail.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationDetailAllOfSeatHolders':
-      return AdminOrganizationDetailAllOfSeatHolders.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'AdminOrganizationPage':
-      return AdminOrganizationPage.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationRow':
-      return AdminOrganizationRow.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationRowLicense':
-      return AdminOrganizationRowLicense.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminOrganizationRowOwnersInner':
-      return AdminOrganizationRowOwnersInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'AdminPlacementQuestion':
-      return AdminPlacementQuestion.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminSetActivePlacementSetRequest':
-      return AdminSetActivePlacementSetRequest.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'AdminSetUnitStatusRequest':
-      return AdminSetUnitStatusRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminSetUserStatusRequest':
-      return AdminSetUserStatusRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminTopic':
-      return AdminTopic.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'AdminUnit':
-      return AdminUnit.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'AdminUnitWrite':
-      return AdminUnitWrite.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminUnitWriteExercisesInner':
-      return AdminUnitWriteExercisesInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'AdminUnitWriteItemsInner':
-      return AdminUnitWriteItemsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminUpdateOrganizationRequest':
-      return AdminUpdateOrganizationRequest.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'AdminUserPage':
-      return AdminUserPage.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AdminUserPageItemsInner':
-      return AdminUserPageItemsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AnswerResult':
-      return AnswerResult.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'AnswerSubmission':
-      return AnswerSubmission.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ArchiveClass200Response':
-      return ArchiveClass200Response.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'AuthTokens':
-      return AuthTokens.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'Celebrations':
-      return Celebrations.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ChangePasswordRequest':
-      return ChangePasswordRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassAlert':
-    case 'ClassAssignment':
-      return ClassAssignment.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassBrief':
-      return ClassBrief.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ClassBriefTeachersInner':
-      return ClassBriefTeachersInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassDashboard':
-      return ClassDashboard.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassDashboardSummary':
-      return ClassDashboardSummary.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassDetail':
-      return ClassDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ClassLearnerDetail':
-      return ClassLearnerDetail.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassLearnerDetailAssignmentStatesInner':
-      return ClassLearnerDetailAssignmentStatesInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ClassLearnerDetailDailyMinutes30Inner':
-      return ClassLearnerDetailDailyMinutes30Inner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ClassLearnerDetailPlacement':
-      return ClassLearnerDetailPlacement.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassLearnerDetailUnitsInner':
-      return ClassLearnerDetailUnitsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ClassLearnerDetailWeakTopicsInner':
-      return ClassLearnerDetailWeakTopicsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ClassLearnerRow':
-      return ClassLearnerRow.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassPath':
-      return ClassPath.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ClassPathTemplate':
-      return ClassPathTemplate.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassPathUnit':
-      return ClassPathUnit.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassPause':
-      return ClassPause.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ClassPlacementRequest':
-      return ClassPlacementRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassPlacementResults':
-      return ClassPlacementResults.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassPlacementResultsResultsInner':
-      return ClassPlacementResultsResultsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ClassProgressStatus':
-    case 'ClassRow':
-      return ClassRow.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ClassRowTeachersInner':
-      return ClassRowTeachersInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ClassWeakTopic':
-      return ClassWeakTopic.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'CompetencyLevel':
-    case 'CompleteOnboarding200Response':
-      return CompleteOnboarding200Response.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ConfirmPasswordResetRequest':
-      return ConfirmPasswordResetRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ContentItem':
-      return ContentItem.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ContentItemExamplesInner':
-      return ContentItemExamplesInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ContentLevel':
-    case 'ContentNotice':
-      return ContentNotice.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'CreateClassAssignments201Response':
-      return CreateClassAssignments201Response.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'CreateClassAssignmentsRequest':
-      return CreateClassAssignmentsRequest.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'CreateClassPauseRequest':
-      return CreateClassPauseRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'CreateClassRequest':
-      return CreateClassRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'DailyPlan':
-      return DailyPlan.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'DailyPlanEncouragement':
-      return DailyPlanEncouragement.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'DailyPlanKanjiNotice':
-      return DailyPlanKanjiNotice.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'DeleteAccount200Response':
-      return DeleteAccount200Response.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'DeleteAccountRequest':
-      return DeleteAccountRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'EndClassPauseRequest':
-      return EndClassPauseRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'Error':
-      return Error.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'Exercise':
-      return Exercise.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'GetClassPath200Response':
-      return GetClassPath200Response.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'GoalType':
-    case 'I18nText':
-      return I18nText.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ImportResults':
-      return ImportResults.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ImportResultsResultsInner':
-      return ImportResultsResultsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InvitationPreview':
-      return InvitationPreview.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InvitationRespond':
-      return InvitationRespond.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InvitationRespondResult':
-      return InvitationRespondResult.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InvitationRow':
-      return InvitationRow.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InviteClassLearnersRequest':
-      return InviteClassLearnersRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'InviteClassLearnersRequestInviteesInner':
-      return InviteClassLearnersRequestInviteesInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'JoinByCode':
-      return JoinByCode.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'JoinByCodeResult':
-      return JoinByCodeResult.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'JoinCode':
-      return JoinCode.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'KanjiDetails':
-      return KanjiDetails.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'KanjiDetailsWrite':
-      return KanjiDetailsWrite.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'Lang':
-    case 'LearnerOverride':
-      return LearnerOverride.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'LeaveMyClassRequest':
-      return LeaveMyClassRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'LessonSession':
-      return LessonSession.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'LessonSessionAnsweredInner':
-      return LessonSessionAnsweredInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'Level':
-    case 'LicenseState':
-    case 'LicenseUpdate':
-      return LicenseUpdate.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'LicenseWrite':
-      return LicenseWrite.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'Login200Response':
-      return Login200Response.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'LoginRequest':
-      return LoginRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'MasterResult':
-      return MasterResult.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'Me':
-      return Me.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'MeClassSummary':
-      return MeClassSummary.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MeOrganization':
-      return MeOrganization.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MeOrganizationLicense':
-      return MeOrganizationLicense.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MoveClassMemberRequest':
-      return MoveClassMemberRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MyClass':
-      return MyClass.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'MyClassAssignmentsInner':
-      return MyClassAssignmentsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MyClassMovedNotice':
-      return MyClassMovedNotice.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MyClassPlacementRequest':
-      return MyClassPlacementRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'MyClassProgress':
-      return MyClassProgress.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'OnboardingDraft':
-      return OnboardingDraft.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'OnboardingState':
-      return OnboardingState.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'OrgLicense':
-      return OrgLicense.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'OrgOverview':
-      return OrgOverview.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'OrgOverviewLicense':
-      return OrgOverviewLicense.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'OrgOverviewTeachersInner':
-      return OrgOverviewTeachersInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'OrgStatus':
-    case 'PathDetail':
-      return PathDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'PathDetailAllOfItems':
-      return PathDetailAllOfItems.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'PathSummary':
-      return PathSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'PathWarning':
-      return PathWarning.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'PlacementAnswers':
-      return PlacementAnswers.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'PlacementAnswersAnswersInner':
-      return PlacementAnswersAnswersInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'PlacementQuestionSet':
-      return PlacementQuestionSet.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'PlacementQuestionSetQuestionsInner':
-      return PlacementQuestionSetQuestionsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'PlacementResult':
-      return PlacementResult.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'PlanItem':
-      return PlanItem.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'Profile':
-      return Profile.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ProfileUpdate':
-      return ProfileUpdate.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ProgressSummary':
-      return ProgressSummary.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ProgressSummaryCompetency':
-      return ProgressSummaryCompetency.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ProgressSummaryCompetencySkillsInner':
-      return ProgressSummaryCompetencySkillsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ProgressSummaryCompetencyTopicsInner':
-      return ProgressSummaryCompetencyTopicsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'ProgressSummaryGoal':
-      return ProgressSummaryGoal.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ProgressSummaryKanji':
-      return ProgressSummaryKanji.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ProgressSummaryWeakTopicsInner':
-      return ProgressSummaryWeakTopicsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'PutClassPathUnitsRequest':
-      return PutClassPathUnitsRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'PutClassPathUnitsRequestUnitsInner':
-      return PutClassPathUnitsRequestUnitsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'PutLearnerOverrideRequest':
-      return PutLearnerOverrideRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RebuildPathRequest':
-      return RebuildPathRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RecordStudyIntervalRequest':
-      return RecordStudyIntervalRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RecordTrialEventRequest':
-      return RecordTrialEventRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RefreshTokenRequest':
-      return RefreshTokenRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RegisterRequest':
-      return RegisterRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'RequestPasswordResetRequest':
-      return RequestPasswordResetRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'ReviewFacet':
-    case 'RosterRow':
-      return RosterRow.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'ScopeNotice':
-    case 'SeatSummary':
-      return SeatSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'SessionSummary':
-      return SessionSummary.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SessionSummaryAttentionItemsInner':
-      return SessionSummaryAttentionItemsInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'SetClassTeachersRequest':
-      return SetClassTeachersRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SetItemMastered200Response':
-      return SetItemMastered200Response.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SetJoinCodeRequest':
-      return SetJoinCodeRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SetUnitMasteredRequest':
-      return SetUnitMasteredRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SharedDataDisclosure':
-      return SharedDataDisclosure.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'SharedDataItem':
-      return SharedDataItem.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'Skill':
-    case 'StartSessionRequest':
-      return StartSessionRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'StudyDefaults':
-      return StudyDefaults.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'StudyDefaultsItemsInner':
-      return StudyDefaultsItemsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'TargetLevel':
-    case 'TrialContent':
-      return TrialContent.fromJson(value as Map<String, dynamic>) as ReturnType;
-    case 'TrialContentUnitsInner':
-      return TrialContentUnitsInner.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    case 'TrialContentUnitsInnerExercisesInner':
-      return TrialContentUnitsInnerExercisesInner.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'TrialContentUnitsInnerExercisesInnerAllOfAnswerKey':
-      return TrialContentUnitsInnerExercisesInnerAllOfAnswerKey.fromJson(
-            value as Map<String, dynamic>,
-          )
-          as ReturnType;
-    case 'UpdateClassRequest':
-      return UpdateClassRequest.fromJson(value as Map<String, dynamic>)
-          as ReturnType;
-    default:
-      RegExpMatch? match;
+  ReturnType deserialize<ReturnType, BaseType>(dynamic value, String targetType, {bool growable= true}) {
+      switch (targetType) {
+        case 'String':
+          return '$value' as ReturnType;
+        case 'int':
+          return (value is int ? value : int.parse('$value')) as ReturnType;
+        case 'bool':
+          if (value is bool) {
+            return value as ReturnType;
+          }
+          final valueString = '$value'.toLowerCase();
+          return (valueString == 'true' || valueString == '1') as ReturnType;
+        case 'double':
+          return (value is double ? value : double.parse('$value')) as ReturnType;
+        case 'AccountStatus':
+          
+          
+        case 'AchievementEarned':
+          return AchievementEarned.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AchievementKind':
+          
+          
+        case 'AdminActionLog':
+          return AdminActionLog.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationCreate':
+          return AdminOrganizationCreate.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationDetail':
+          return AdminOrganizationDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationDetailAllOfSeatHolders':
+          return AdminOrganizationDetailAllOfSeatHolders.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationPage':
+          return AdminOrganizationPage.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationRow':
+          return AdminOrganizationRow.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationRowLicense':
+          return AdminOrganizationRowLicense.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminOrganizationRowOwnersInner':
+          return AdminOrganizationRowOwnersInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminPlacementQuestion':
+          return AdminPlacementQuestion.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminSetActivePlacementSetRequest':
+          return AdminSetActivePlacementSetRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminSetUnitStatusRequest':
+          return AdminSetUnitStatusRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminSetUserStatusRequest':
+          return AdminSetUserStatusRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminTopic':
+          return AdminTopic.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUnit':
+          return AdminUnit.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUnitWrite':
+          return AdminUnitWrite.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUnitWriteExercisesInner':
+          return AdminUnitWriteExercisesInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUnitWriteItemsInner':
+          return AdminUnitWriteItemsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUpdateOrganizationRequest':
+          return AdminUpdateOrganizationRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUserPage':
+          return AdminUserPage.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AdminUserPageItemsInner':
+          return AdminUserPageItemsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AnswerResult':
+          return AnswerResult.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AnswerSubmission':
+          return AnswerSubmission.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ArchiveClass200Response':
+          return ArchiveClass200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'AuthTokens':
+          return AuthTokens.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Celebrations':
+          return Celebrations.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ChangePasswordRequest':
+          return ChangePasswordRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassAlert':
+          
+          
+        case 'ClassAssignment':
+          return ClassAssignment.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassBrief':
+          return ClassBrief.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassBriefTeachersInner':
+          return ClassBriefTeachersInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassDashboard':
+          return ClassDashboard.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassDashboardSummary':
+          return ClassDashboardSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassDetail':
+          return ClassDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetail':
+          return ClassLearnerDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetailAssignmentStatesInner':
+          return ClassLearnerDetailAssignmentStatesInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetailDailyMinutes30Inner':
+          return ClassLearnerDetailDailyMinutes30Inner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetailPlacement':
+          return ClassLearnerDetailPlacement.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetailUnitsInner':
+          return ClassLearnerDetailUnitsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerDetailWeakTopicsInner':
+          return ClassLearnerDetailWeakTopicsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassLearnerRow':
+          return ClassLearnerRow.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPath':
+          return ClassPath.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPathTemplate':
+          return ClassPathTemplate.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPathUnit':
+          return ClassPathUnit.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPause':
+          return ClassPause.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPlacementRequest':
+          return ClassPlacementRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPlacementResults':
+          return ClassPlacementResults.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassPlacementResultsResultsInner':
+          return ClassPlacementResultsResultsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassProgressStatus':
+          
+          
+        case 'ClassRow':
+          return ClassRow.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassRowTeachersInner':
+          return ClassRowTeachersInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ClassWeakTopic':
+          return ClassWeakTopic.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'CompetencyLevel':
+          
+          
+        case 'CompleteOnboarding200Response':
+          return CompleteOnboarding200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ConfirmPasswordResetRequest':
+          return ConfirmPasswordResetRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ContentItem':
+          return ContentItem.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ContentItemExamplesInner':
+          return ContentItemExamplesInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ContentLevel':
+          
+          
+        case 'ContentNotice':
+          return ContentNotice.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'CreateClassAssignments201Response':
+          return CreateClassAssignments201Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'CreateClassAssignmentsRequest':
+          return CreateClassAssignmentsRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'CreateClassPauseRequest':
+          return CreateClassPauseRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'CreateClassRequest':
+          return CreateClassRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'DailyPlan':
+          return DailyPlan.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'DailyPlanEncouragement':
+          return DailyPlanEncouragement.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'DailyPlanKanjiNotice':
+          return DailyPlanKanjiNotice.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'DeleteAccount200Response':
+          return DeleteAccount200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'DeleteAccountRequest':
+          return DeleteAccountRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'EndClassPauseRequest':
+          return EndClassPauseRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Error':
+          return Error.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Exercise':
+          return Exercise.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'GetClassPath200Response':
+          return GetClassPath200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'GoalType':
+          
+          
+        case 'I18nText':
+          return I18nText.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ImportResults':
+          return ImportResults.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ImportResultsResultsInner':
+          return ImportResultsResultsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InvitationPreview':
+          return InvitationPreview.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InvitationRespond':
+          return InvitationRespond.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InvitationRespondResult':
+          return InvitationRespondResult.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InvitationRow':
+          return InvitationRow.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InviteClassLearnersRequest':
+          return InviteClassLearnersRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'InviteClassLearnersRequestInviteesInner':
+          return InviteClassLearnersRequestInviteesInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'JoinByCode':
+          return JoinByCode.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'JoinByCodeResult':
+          return JoinByCodeResult.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'JoinCode':
+          return JoinCode.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'KanjiDetails':
+          return KanjiDetails.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'KanjiDetailsWrite':
+          return KanjiDetailsWrite.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Lang':
+          
+          
+        case 'LearnerOverride':
+          return LearnerOverride.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'LeaveMyClassRequest':
+          return LeaveMyClassRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'LessonSession':
+          return LessonSession.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'LessonSessionAnsweredInner':
+          return LessonSessionAnsweredInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Level':
+          
+          
+        case 'LicenseState':
+          
+          
+        case 'LicenseUpdate':
+          return LicenseUpdate.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'LicenseWrite':
+          return LicenseWrite.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Login200Response':
+          return Login200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'LoginRequest':
+          return LoginRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MasterResult':
+          return MasterResult.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Me':
+          return Me.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MeClassSummary':
+          return MeClassSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MeOrganization':
+          return MeOrganization.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MeOrganizationLicense':
+          return MeOrganizationLicense.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MoveClassMemberRequest':
+          return MoveClassMemberRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MyClass':
+          return MyClass.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MyClassAssignmentsInner':
+          return MyClassAssignmentsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MyClassMovedNotice':
+          return MyClassMovedNotice.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MyClassPlacementRequest':
+          return MyClassPlacementRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'MyClassProgress':
+          return MyClassProgress.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OnboardingDraft':
+          return OnboardingDraft.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OnboardingState':
+          return OnboardingState.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OrgLicense':
+          return OrgLicense.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OrgOverview':
+          return OrgOverview.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OrgOverviewLicense':
+          return OrgOverviewLicense.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OrgOverviewTeachersInner':
+          return OrgOverviewTeachersInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'OrgStatus':
+          
+          
+        case 'PathDetail':
+          return PathDetail.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PathDetailAllOfItems':
+          return PathDetailAllOfItems.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PathSummary':
+          return PathSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PathWarning':
+          return PathWarning.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlacementAnswers':
+          return PlacementAnswers.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlacementAnswersAnswersInner':
+          return PlacementAnswersAnswersInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlacementQuestionSet':
+          return PlacementQuestionSet.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlacementQuestionSetQuestionsInner':
+          return PlacementQuestionSetQuestionsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlacementResult':
+          return PlacementResult.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PlanItem':
+          return PlanItem.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Profile':
+          return Profile.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProfileUpdate':
+          return ProfileUpdate.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummary':
+          return ProgressSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryCompetency':
+          return ProgressSummaryCompetency.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryCompetencySkillsInner':
+          return ProgressSummaryCompetencySkillsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryCompetencyTopicsInner':
+          return ProgressSummaryCompetencyTopicsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryGoal':
+          return ProgressSummaryGoal.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryKanji':
+          return ProgressSummaryKanji.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ProgressSummaryWeakTopicsInner':
+          return ProgressSummaryWeakTopicsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PutClassPathUnitsRequest':
+          return PutClassPathUnitsRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PutClassPathUnitsRequestUnitsInner':
+          return PutClassPathUnitsRequestUnitsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'PutLearnerOverrideRequest':
+          return PutLearnerOverrideRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RebuildPathRequest':
+          return RebuildPathRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RecordStudyIntervalRequest':
+          return RecordStudyIntervalRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RecordTrialEventRequest':
+          return RecordTrialEventRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RefreshTokenRequest':
+          return RefreshTokenRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RegisterRequest':
+          return RegisterRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'RequestPasswordResetRequest':
+          return RequestPasswordResetRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ReviewFacet':
+          
+          
+        case 'RosterRow':
+          return RosterRow.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'ScopeNotice':
+          
+          
+        case 'ScopeNoticeCode':
+          
+          
+        case 'SeatSummary':
+          return SeatSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SessionSummary':
+          return SessionSummary.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SessionSummaryAttentionItemsInner':
+          return SessionSummaryAttentionItemsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SetClassTeachersRequest':
+          return SetClassTeachersRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SetItemMastered200Response':
+          return SetItemMastered200Response.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SetJoinCodeRequest':
+          return SetJoinCodeRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SetUnitMasteredRequest':
+          return SetUnitMasteredRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SharedDataDisclosure':
+          return SharedDataDisclosure.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'SharedDataItem':
+          return SharedDataItem.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'Skill':
+          
+          
+        case 'StartSessionRequest':
+          return StartSessionRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'StudyDefaults':
+          return StudyDefaults.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'StudyDefaultsItemsInner':
+          return StudyDefaultsItemsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'TargetLevel':
+          
+          
+        case 'TrialContent':
+          return TrialContent.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'TrialContentUnitsInner':
+          return TrialContentUnitsInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'TrialContentUnitsInnerExercisesInner':
+          return TrialContentUnitsInnerExercisesInner.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'TrialContentUnitsInnerExercisesInnerAllOfAnswerKey':
+          return TrialContentUnitsInnerExercisesInnerAllOfAnswerKey.fromJson(value as Map<String, dynamic>) as ReturnType;
+        case 'UpdateClassRequest':
+          return UpdateClassRequest.fromJson(value as Map<String, dynamic>) as ReturnType;
+        default:
+          RegExpMatch? match;
 
-      if (value is List && (match = _regList.firstMatch(targetType)) != null) {
-        targetType = match![1]!; // ignore: parameter_assignments
-        return value
-                .map<BaseType>(
-                  (dynamic v) => deserialize<BaseType, BaseType>(
-                    v,
-                    targetType,
-                    growable: growable,
-                  ),
-                )
-                .toList(growable: growable)
-            as ReturnType;
-      }
-      if (value is Set && (match = _regSet.firstMatch(targetType)) != null) {
-        targetType = match![1]!; // ignore: parameter_assignments
-        return value
-                .map<BaseType>(
-                  (dynamic v) => deserialize<BaseType, BaseType>(
-                    v,
-                    targetType,
-                    growable: growable,
-                  ),
-                )
-                .toSet()
-            as ReturnType;
-      }
-      if (value is Map && (match = _regMap.firstMatch(targetType)) != null) {
-        targetType = match![1]!.trim(); // ignore: parameter_assignments
-        return Map<String, BaseType>.fromIterables(
+          if (value is List && (match = _regList.firstMatch(targetType)) != null) {
+            targetType = match![1]!; // ignore: parameter_assignments
+            return value
+              .map<BaseType>((dynamic v) => deserialize<BaseType, BaseType>(v, targetType, growable: growable))
+              .toList(growable: growable) as ReturnType;
+          }
+          if (value is Set && (match = _regSet.firstMatch(targetType)) != null) {
+            targetType = match![1]!; // ignore: parameter_assignments
+            return value
+              .map<BaseType>((dynamic v) => deserialize<BaseType, BaseType>(v, targetType, growable: growable))
+              .toSet() as ReturnType;
+          }
+          if (value is Map && (match = _regMap.firstMatch(targetType)) != null) {
+            targetType = match![1]!.trim(); // ignore: parameter_assignments
+            return Map<String, BaseType>.fromIterables(
               value.keys as Iterable<String>,
-              value.values.map(
-                (dynamic v) => deserialize<BaseType, BaseType>(
-                  v,
-                  targetType,
-                  growable: growable,
-                ),
-              ),
-            )
-            as ReturnType;
-      }
-      break;
+              value.values.map((dynamic v) => deserialize<BaseType, BaseType>(v, targetType, growable: growable)),
+            ) as ReturnType;
+          }
+          break;
+    }
+    throw Exception('Cannot deserialize');
   }
-  throw Exception('Cannot deserialize');
-}

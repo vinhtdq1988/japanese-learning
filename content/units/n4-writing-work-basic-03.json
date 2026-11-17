@@ -1,0 +1,173 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-work-basic",
+  "title": {
+    "vi": "Viết: Công việc cơ bản (3)",
+    "en": "Writing: Basic work (3)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "使い方",
+      "reading": "つかいかた",
+      "meaning": {
+        "vi": "Cách sử dụng",
+        "en": "How to use"
+      }
+    },
+    {
+      "japanese": "別に",
+      "reading": "べつに",
+      "meaning": {
+        "vi": "Không có gì đặc biệt",
+        "en": "Not particularly; nothing special"
+      }
+    },
+    {
+      "japanese": "大切",
+      "reading": "たいせつ",
+      "meaning": {
+        "vi": "Quan trọng; quý giá",
+        "en": "Important; precious"
+      }
+    },
+    {
+      "japanese": "思い出",
+      "reading": "おもいで",
+      "meaning": {
+        "vi": "Kỷ niệm; hồi ức",
+        "en": "Memory; recollection"
+      }
+    },
+    {
+      "japanese": "注文",
+      "reading": "ちゅうもん",
+      "meaning": {
+        "vi": "Đặt hàng; gọi món",
+        "en": "Order"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cách sử dụng”",
+        "en": "Type in Japanese: “How to use”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "使い方",
+          "つかいかた"
+        ],
+        "hint": "よみ: つかいかた"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cách sử dụng” viết là 使い方 (đọc là つかいかた).",
+        "en": "Correct! “How to use” is written 使い方 (read as つかいかた)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Cách sử dụng” viết là 使い方 (đọc là つかいかた); hãy so lại từng ký tự.",
+        "en": "Not quite. “How to use” is written 使い方 (read as つかいかた); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Không có gì đặc biệt”",
+        "en": "Type in Japanese: “Not particularly; nothing special”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "別に",
+          "べつに"
+        ],
+        "hint": "よみ: べつに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Không có gì đặc biệt” viết là 別に (đọc là べつに).",
+        "en": "Correct! “Not particularly; nothing special” is written 別に (read as べつに)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Không có gì đặc biệt” viết là 別に (đọc là べつに); hãy so lại từng ký tự.",
+        "en": "Not quite. “Not particularly; nothing special” is written 別に (read as べつに); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Quan trọng; quý giá”",
+        "en": "Type in Japanese: “Important; precious”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "大切",
+          "たいせつ"
+        ],
+        "hint": "よみ: たいせつ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Quan trọng; quý giá” viết là 大切 (đọc là たいせつ).",
+        "en": "Correct! “Important; precious” is written 大切 (read as たいせつ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Quan trọng; quý giá” viết là 大切 (đọc là たいせつ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Important; precious” is written 大切 (read as たいせつ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Kỷ niệm; hồi ức”",
+        "en": "Type in Japanese: “Memory; recollection”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "思い出",
+          "おもいで"
+        ],
+        "hint": "よみ: おもいで"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Kỷ niệm; hồi ức” viết là 思い出 (đọc là おもいで).",
+        "en": "Correct! “Memory; recollection” is written 思い出 (read as おもいで)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Kỷ niệm; hồi ức” viết là 思い出 (đọc là おもいで); hãy so lại từng ký tự.",
+        "en": "Not quite. “Memory; recollection” is written 思い出 (read as おもいで); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Đặt hàng; gọi món”",
+        "en": "Type in Japanese: “Order”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "注文",
+          "ちゅうもん"
+        ],
+        "hint": "よみ: ちゅうもん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Đặt hàng; gọi món” viết là 注文 (đọc là ちゅうもん).",
+        "en": "Correct! “Order” is written 注文 (read as ちゅうもん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Đặt hàng; gọi món” viết là 注文 (đọc là ちゅうもん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Order” is written 注文 (read as ちゅうもん); compare it character by character."
+      }
+    }
+  ]
+}

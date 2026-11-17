@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'get_class_path200_response.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,21 +19,34 @@ part 'get_class_path200_response.g.dart';
 )
 class GetClassPath200Response {
   /// Returns a new [GetClassPath200Response] instance.
-  GetClassPath200Response({required this.path});
+  GetClassPath200Response({
 
-  @JsonKey(name: r'path', required: true, includeIfNull: true)
+    required  this.path,
+  });
+
+  @JsonKey(
+    
+    name: r'path',
+    required: true,
+    includeIfNull: true,
+  )
+
+
   final ClassPath? path;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is GetClassPath200Response && other.path == path;
 
-  @override
-  int get hashCode => (path == null ? 0 : path.hashCode);
 
-  factory GetClassPath200Response.fromJson(Map<String, dynamic> json) =>
-      _$GetClassPath200ResponseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is GetClassPath200Response &&
+      other.path == path;
+
+    @override
+    int get hashCode =>
+        (path == null ? 0 : path.hashCode);
+
+  factory GetClassPath200Response.fromJson(Map<String, dynamic> json) => _$GetClassPath200ResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$GetClassPath200ResponseToJson(this);
 
@@ -40,4 +54,6 @@ class GetClassPath200Response {
   String toString() {
     return toJson().toString();
   }
+
 }
+

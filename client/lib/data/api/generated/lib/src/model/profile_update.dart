@@ -13,6 +13,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'profile_update.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -23,118 +24,244 @@ part 'profile_update.g.dart';
 class ProfileUpdate {
   /// Returns a new [ProfileUpdate] instance.
   ProfileUpdate({
-    this.displayName,
 
-    this.email,
+     this.displayName,
 
-    this.currentPassword,
+     this.email,
 
-    this.currentLevel,
+     this.currentPassword,
 
-    this.dailyMinutes,
+     this.currentLevel,
 
-    this.goalType,
+     this.dailyMinutes,
 
-    this.targetLevel,
+     this.goalType,
 
-    this.targetDate,
+     this.targetLevel,
 
-    this.prioritizedSkill,
+     this.targetDate,
 
-    this.skills,
+     this.prioritizedSkill,
 
-    this.language,
+     this.skills,
 
-    this.timezone,
+     this.language,
 
-    this.soundEnabled,
+     this.timezone,
 
-    this.visualEffectsEnabled,
+     this.soundEnabled,
+
+     this.visualEffectsEnabled,
   });
 
-  @JsonKey(name: r'displayName', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'displayName',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? displayName;
 
-  @JsonKey(name: r'email', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'email',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? email;
 
-  /// Bắt buộc khi có `email`
-  @JsonKey(name: r'currentPassword', required: false, includeIfNull: false)
+
+
+      /// Bắt buộc khi có `email`
+  @JsonKey(
+    
+    name: r'currentPassword',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? currentPassword;
 
-  @JsonKey(name: r'currentLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'currentLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Level? currentLevel;
 
-  @JsonKey(name: r'dailyMinutes', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'dailyMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProfileUpdateDailyMinutesEnum? dailyMinutes;
 
-  @JsonKey(name: r'goalType', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'goalType',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final GoalType? goalType;
 
-  @JsonKey(name: r'targetLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'targetLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final TargetLevel? targetLevel;
 
-  @JsonKey(name: r'targetDate', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'targetDate',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? targetDate;
 
-  @JsonKey(name: r'prioritizedSkill', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'prioritizedSkill',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Skill? prioritizedSkill;
 
-  /// Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.
-  @JsonKey(name: r'skills', required: false, includeIfNull: false)
+
+
+      /// Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ngay: kế hoạch hôm nay bị xóa và sinh lại nếu mọi mục còn chưa học; đã học dở thì giữ nguyên và có hiệu lực từ ngày sau. Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.
+  @JsonKey(
+    
+    name: r'skills',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Set<Skill>? skills;
 
-  @JsonKey(name: r'language', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'language',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Lang? language;
 
-  @JsonKey(name: r'timezone', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'timezone',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? timezone;
 
-  /// Chỉ hai trường hiệu ứng: không sinh lại lộ trình, không đụng kế hoạch, không cần `currentPassword`, học viên thuộc lớp vẫn sửa được (spec 005).
-  @JsonKey(name: r'soundEnabled', required: false, includeIfNull: false)
+
+
+      /// Chỉ hai trường hiệu ứng: không sinh lại lộ trình, không đụng kế hoạch, không cần `currentPassword`, học viên thuộc lớp vẫn sửa được (spec 005).
+  @JsonKey(
+    
+    name: r'soundEnabled',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? soundEnabled;
 
-  @JsonKey(name: r'visualEffectsEnabled', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'visualEffectsEnabled',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? visualEffectsEnabled;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ProfileUpdate &&
-          other.displayName == displayName &&
-          other.email == email &&
-          other.currentPassword == currentPassword &&
-          other.currentLevel == currentLevel &&
-          other.dailyMinutes == dailyMinutes &&
-          other.goalType == goalType &&
-          other.targetLevel == targetLevel &&
-          other.targetDate == targetDate &&
-          other.prioritizedSkill == prioritizedSkill &&
-          other.skills == skills &&
-          other.language == language &&
-          other.timezone == timezone &&
-          other.soundEnabled == soundEnabled &&
-          other.visualEffectsEnabled == visualEffectsEnabled;
 
-  @override
-  int get hashCode =>
-      displayName.hashCode +
-      email.hashCode +
-      currentPassword.hashCode +
-      currentLevel.hashCode +
-      dailyMinutes.hashCode +
-      goalType.hashCode +
-      targetLevel.hashCode +
-      (targetDate == null ? 0 : targetDate.hashCode) +
-      (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
-      skills.hashCode +
-      language.hashCode +
-      timezone.hashCode +
-      soundEnabled.hashCode +
-      visualEffectsEnabled.hashCode;
 
-  factory ProfileUpdate.fromJson(Map<String, dynamic> json) =>
-      _$ProfileUpdateFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ProfileUpdate &&
+      other.displayName == displayName &&
+      other.email == email &&
+      other.currentPassword == currentPassword &&
+      other.currentLevel == currentLevel &&
+      other.dailyMinutes == dailyMinutes &&
+      other.goalType == goalType &&
+      other.targetLevel == targetLevel &&
+      other.targetDate == targetDate &&
+      other.prioritizedSkill == prioritizedSkill &&
+      other.skills == skills &&
+      other.language == language &&
+      other.timezone == timezone &&
+      other.soundEnabled == soundEnabled &&
+      other.visualEffectsEnabled == visualEffectsEnabled;
+
+    @override
+    int get hashCode =>
+        displayName.hashCode +
+        email.hashCode +
+        currentPassword.hashCode +
+        currentLevel.hashCode +
+        dailyMinutes.hashCode +
+        goalType.hashCode +
+        targetLevel.hashCode +
+        (targetDate == null ? 0 : targetDate.hashCode) +
+        (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
+        skills.hashCode +
+        language.hashCode +
+        timezone.hashCode +
+        soundEnabled.hashCode +
+        visualEffectsEnabled.hashCode;
+
+  factory ProfileUpdate.fromJson(Map<String, dynamic> json) => _$ProfileUpdateFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProfileUpdateToJson(this);
 
@@ -142,22 +269,25 @@ class ProfileUpdate {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ProfileUpdateDailyMinutesEnum {
-  @JsonValue(5)
-  number5('5'),
-  @JsonValue(10)
-  number10('10'),
-  @JsonValue(15)
-  number15('15'),
-  @JsonValue(30)
-  number30('30');
+@JsonValue(5)
+number5('5'),
+@JsonValue(10)
+number10('10'),
+@JsonValue(15)
+number15('15'),
+@JsonValue(30)
+number30('30');
 
-  const ProfileUpdateDailyMinutesEnum(this.value);
+const ProfileUpdateDailyMinutesEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-shopping",
+  "title": {
+    "vi": "Đọc: Quảng cáo giảm giá siêu thị",
+    "en": "Reading: Supermarket sale flyer"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【東町スーパー　セール】\n土曜日と日曜日だけ！\n牛肉　100グラムで　298円\nたまご　1パック　158円\n午後6時すぎは、パンが半分のねだんです。\n5,000円以上買うと、ビニールぶくろがただです。",
+      "meaning": {
+        "vi": "[Giảm giá siêu thị Higashimachi] Chỉ thứ Bảy và Chủ nhật! Thịt bò: 298 yên/100 gram. Trứng: 158 yên/hộp. Sau 6 giờ chiều, bánh mì bán nửa giá. Nếu mua từ 5.000 yên trở lên, túi nilon được miễn phí.",
+        "en": "[Higashimachi Supermarket sale] Saturday and Sunday only! Beef: 298 yen per 100 grams. Eggs: 158 yen per pack. After 6 p.m., bread is half price. If you buy 5,000 yen or more, the plastic bag is free."
+      },
+      "reading": "ひがしまちスーパー　セール\nどようびとにちようびだけ！\nぎゅうにく　100グラムで　298えん\nたまご　1パック　158えん\nごご6じすぎは、パンがはんぶんのねだんです。\n5,000えんいじょうかうと、ビニールぶくろがただです。",
+      "explanation": {
+        "vi": "「～だけ」= chỉ; 「～すぎ」= sau (6時すぎ); 「以上」= từ… trở lên; 「ただ」= miễn phí; 「ひがしまち」= 東町.",
+        "en": "「～だけ」 = only; 「～すぎ」 = past (6時すぎ); 「以上」 = or more; 「ただ」 = free; 「ひがしまち」 = 東町."
+      },
+      "scopeRef": "r-n4-info-price-ad"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Đợt giảm giá diễn ra vào những ngày nào?",
+        "en": "On which days is the sale?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cả tuần",
+            "en": "All week"
+          },
+          {
+            "vi": "Chỉ thứ Bảy và Chủ nhật",
+            "en": "Only Saturday and Sunday"
+          },
+          {
+            "vi": "Chỉ ngày thường",
+            "en": "Only weekdays"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「土曜日と日曜日だけ」: 「～だけ」nghĩa là chỉ; chỉ thứ Bảy và Chủ nhật.",
+        "en": "Correct! The text has 「土曜日と日曜日だけ」: 「～だけ」 means only; just Saturday and Sunday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「土曜日と日曜日だけ」: 「～だけ」nghĩa là chỉ; chỉ thứ Bảy và Chủ nhật.",
+        "en": "Not quite. Look again at 「土曜日と日曜日だけ」: 「～だけ」 means only; just Saturday and Sunday."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Khi nào bánh mì được bán nửa giá?",
+        "en": "When is bread sold at half price?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Sau 6 giờ chiều",
+            "en": "After 6 p.m."
+          },
+          {
+            "vi": "Trước 10 giờ sáng",
+            "en": "Before 10 a.m."
+          },
+          {
+            "vi": "Cả ngày",
+            "en": "All day"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「午後6時すぎは、パンが半分のねだんです」: 「6時すぎ」là sau 6 giờ; khi đó bánh mì còn nửa giá.",
+        "en": "Correct! The text has 「午後6時すぎは、パンが半分のねだんです」: 「6時すぎ」 means after 6 o’clock; bread is half price then."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「午後6時すぎは、パンが半分のねだんです」: 「6時すぎ」là sau 6 giờ; khi đó bánh mì còn nửa giá.",
+        "en": "Not quite. Look again at 「午後6時すぎは、パンが半分のねだんです」: 「6時すぎ」 means after 6 o’clock; bread is half price then."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Cần làm gì để được túi nilon miễn phí?",
+        "en": "What must you do to get a free plastic bag?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mua từ 5.000 yên trở lên",
+            "en": "Buy 5,000 yen or more"
+          },
+          {
+            "vi": "Mua 5 quả trứng",
+            "en": "Buy five eggs"
+          },
+          {
+            "vi": "Đến trước 6 giờ chiều",
+            "en": "Come before 6 p.m."
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「5,000円以上買うと、ビニールぶくろがただです」: 「以上」nghĩa là từ… trở lên; mua từ 5.000 yên thì túi miễn phí.",
+        "en": "Correct! The text has 「5,000円以上買うと、ビニールぶくろがただです」: 「以上」 means or more; spend 5,000 yen or more and the bag is free."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「5,000円以上買うと、ビニールぶくろがただです」: 「以上」nghĩa là từ… trở lên; mua từ 5.000 yên thì túi miễn phí.",
+        "en": "Not quite. Look again at 「5,000円以上買うと、ビニールぶくろがただです」: 「以上」 means or more; spend 5,000 yen or more and the bag is free."
+      }
+    }
+  ]
+}

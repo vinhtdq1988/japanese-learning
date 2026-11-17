@@ -15,23 +15,31 @@ import '../shared/state_views.dart';
 import '../classroom/locked_control.dart';
 import '../competency/competency_chip.dart';
 import '../competency/competency_legend.dart';
+import '../onboarding/onboarding_labels.dart';
 import 'plan_adjust_screen.dart';
 import 'scope_notice_banner.dart';
 
 /// Màn hình lộ trình (T055, T094): tiến độ tổng quát, thứ tự đơn vị do server tính động, đánh dấu một
 /// đơn vị là "đã thành thạo" (loại khỏi bài sắp tới, FR-016), lối vào làm lại bài kiểm tra trình độ
 /// (US1.6) và sang màn hình điều chỉnh kế hoạch.
-class PathScreen extends ConsumerWidget {
+class PathScreen extends ConsumerStatefulWidget {
   const PathScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PathScreen> createState() => _PathScreenState();
+}
+
+class _PathScreenState extends ConsumerState<PathScreen> {
+  PathFilter _filter = noPathFilter;
+
+  @override
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final path = ref.watch(pathProvider);
+    final path = ref.watch(pathListProvider(_filter));
     return PageFrame(
       title: l10n.navPath,
       child: path.when(
-        loading: () => const LoadingView(),
+        loading: () => _framed(const LoadingView()),
         error: (Object error, StackTrace _) {
           if (error is ApiError && error.statusCode == 404) {
             WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -41,10 +49,85 @@ class PathScreen extends ConsumerWidget {
           }
           return ErrorView(
             error: error,
-            onRetry: () => ref.invalidate(pathProvider),
+            onRetry: () => ref.invalidate(pathListProvider),
           );
         },
-        data: (PathDetail data) => _PathContent(path: data),
+        data: (PathDetail data) => _framed(
+          _PathContent(
+            // Đổi bộ lọc thì dựng lại; làm mới dữ liệu (đánh dấu thành thạo…) chỉ bỏ các trang nạp thêm, giữ thông báo.
+            key: ValueKey<PathFilter>(_filter),
+            path: data,
+            filter: _filter,
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Thanh lọc (loại, trình độ) luôn hiển thị phía trên danh sách, kể cả khi đang tải lại sau đổi bộ lọc.
+  Widget _framed(Widget body) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        _PathFilterBar(
+          filter: _filter,
+          onChanged: (f) => setState(() => _filter = f),
+        ),
+        Expanded(child: body),
+      ],
+    );
+  }
+}
+
+/// Bộ lọc danh sách lộ trình theo loại và trình độ (gửi `kind`/`level` cho `GET /path`).
+class _PathFilterBar extends StatelessWidget {
+  const _PathFilterBar({required this.filter, required this.onChanged});
+
+  final PathFilter filter;
+  final ValueChanged<PathFilter> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Wrap(
+        spacing: 12,
+        runSpacing: 4,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: <Widget>[
+          DropdownButton<Skill?>(
+            key: const Key('path-filter-kind'),
+            hint: Text(l10n.adminFilterKind),
+            value: filter.kind,
+            items: <DropdownMenuItem<Skill?>>[
+              DropdownMenuItem<Skill?>(
+                value: null,
+                child: Text(l10n.adminFilterAll),
+              ),
+              for (final k in Skill.values)
+                DropdownMenuItem<Skill?>(
+                  value: k,
+                  child: Text(skillLabel(l10n, k.value)),
+                ),
+            ],
+            onChanged: (v) => onChanged((kind: v, level: filter.level)),
+          ),
+          DropdownButton<ContentLevel?>(
+            key: const Key('path-filter-level'),
+            hint: Text(l10n.adminFilterLevel),
+            value: filter.level,
+            items: <DropdownMenuItem<ContentLevel?>>[
+              DropdownMenuItem<ContentLevel?>(
+                value: null,
+                child: Text(l10n.adminFilterAll),
+              ),
+              for (final l in ContentLevel.values)
+                DropdownMenuItem<ContentLevel?>(value: l, child: Text(l.value)),
+            ],
+            onChanged: (v) => onChanged((kind: filter.kind, level: v)),
+          ),
+        ],
       ),
     );
   }
@@ -61,9 +144,11 @@ String? nextLevelAfter(Level? level) {
 }
 
 class _PathContent extends ConsumerStatefulWidget {
-  const _PathContent({required this.path});
+  const _PathContent({super.key, required this.path, required this.filter});
 
+  /// Trang đầu của danh sách theo bộ lọc [filter]; các trang sau nạp thêm bằng `offset`.
   final PathDetail path;
+  final PathFilter filter;
 
   @override
   ConsumerState<_PathContent> createState() => _PathContentState();
@@ -74,8 +159,64 @@ class _PathContentState extends ConsumerState<_PathContent> {
   String? _message;
   bool _messageIsError = false;
 
-  List<PathDetailAllOfItems> get _items =>
-      widget.path.items ?? const <PathDetailAllOfItems>[];
+  /// Các trang đã nạp thêm sau trang đầu (danh sách dựng lười, ≈ 600 đơn vị).
+  final List<PathDetailAllOfItems> _more = <PathDetailAllOfItems>[];
+  bool _loadingMore = false;
+  String? _loadMoreError;
+
+  List<PathDetailAllOfItems> get _items => <PathDetailAllOfItems>[
+    ...(widget.path.items ?? const <PathDetailAllOfItems>[]),
+    ..._more,
+  ];
+
+  @override
+  void didUpdateWidget(covariant _PathContent oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Trang đầu vừa được tải lại: các trang nạp thêm trước đó đã cũ.
+    if (!identical(oldWidget.path, widget.path)) {
+      _more.clear();
+      _loadMoreError = null;
+    }
+  }
+
+  /// Còn đơn vị khớp bộ lọc chưa nạp (máy chủ cũ không trả `itemsTotal` ⇒ đã có đủ).
+  bool get _hasMore {
+    final total = widget.path.itemsTotal;
+    return total != null && _items.length < total;
+  }
+
+  Future<void> _loadMore() async {
+    if (_loadingMore || !_hasMore) return;
+    final firstPage = widget.path;
+    setState(() {
+      _loadingMore = true;
+      _loadMoreError = null;
+    });
+    try {
+      final page = await ref
+          .read(learningRepositoryProvider)
+          .path(
+            kind: widget.filter.kind,
+            level: widget.filter.level,
+            limit: pathPageSize,
+            offset: _items.length,
+          );
+      if (!mounted) return;
+      setState(() {
+        _loadingMore = false;
+        // Trang đầu đã được tải lại trong lúc chờ: bỏ trang này (sẽ nạp lại theo trang đầu mới).
+        if (identical(firstPage, widget.path)) {
+          _more.addAll(page.items ?? const <PathDetailAllOfItems>[]);
+        }
+      });
+    } on ApiError catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _loadingMore = false;
+        _loadMoreError = describeError(context, e);
+      });
+    }
+  }
 
   /// Đơn vị còn có thể học (chưa học hoặc đang học dở): "bài sắp tới".
   int get _upcomingCount => _items
@@ -225,92 +366,149 @@ class _PathContentState extends ConsumerState<_PathContent> {
 
     // Học viên thuộc lớp: nhãn nguồn lớp và điều khiển "thành thạo" bị khóa (spec 004, US3, FR-018).
     final inClass = path.source_ == PathDetailSource_Enum.class_;
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          const ClassSourceBanner(),
-          Text(l10n.pathHeading, style: theme.textTheme.headlineSmall),
-          const SizedBox(height: 4),
-          if (start != null)
-            Text(
-              (start == Level.none
-                  ? l10n.pathStartBeginner
-                  : l10n.pathStartLevel(start.value)),
-              key: const Key('path-start'),
+    final notices = scopeNoticeCodes(
+      notices: path.notices,
+      scopeNotice: path.scopeNotice,
+    );
+    // Cuộn gần cuối danh sách thì nạp trang kế (danh sách dựng lười bằng SliverList).
+    return NotificationListener<ScrollNotification>(
+      onNotification: (n) {
+        if (_hasMore && n.metrics.extentAfter < 400) _loadMore();
+        return false;
+      },
+      child: CustomScrollView(
+        slivers: <Widget>[
+          SliverToBoxAdapter(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                const ClassSourceBanner(),
+                Text(l10n.pathHeading, style: theme.textTheme.headlineSmall),
+                const SizedBox(height: 4),
+                if (start != null)
+                  Text(
+                    (start == Level.none
+                        ? l10n.pathStartBeginner
+                        : l10n.pathStartLevel(start.value)),
+                    key: const Key('path-start'),
+                  ),
+                if (path.reason != null) Text(_reasonText(l10n, path.reason!)),
+                const SizedBox(height: 12),
+                Text(
+                  l10n.pathProgress(completed, total),
+                  key: const Key('path-progress'),
+                  style: theme.textTheme.titleMedium,
+                ),
+                const SizedBox(height: 4),
+                LinearProgressIndicator(
+                  value: total == 0 ? 0 : completed / total,
+                ),
+                if (notices.isNotEmpty) ...<Widget>[
+                  const SizedBox(height: 12),
+                  ScopeNoticeBanner(notices: notices),
+                ],
+                if (_message != null) ...<Widget>[
+                  const SizedBox(height: 12),
+                  Semantics(
+                    liveRegion: true,
+                    child: Text(
+                      _message!,
+                      key: const Key('path-message'),
+                      style: TextStyle(
+                        color: _messageIsError
+                            ? theme.colorScheme.error
+                            : theme.colorScheme.primary,
+                      ),
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 16),
+                if (items.isEmpty)
+                  EmptyView(
+                    key: const Key('path-empty'),
+                    icon: Icons.route_outlined,
+                    title: l10n.pathEmptyTitle,
+                    message: l10n.pathEmptyMessage,
+                  ),
+              ],
             ),
-          if (path.reason != null) Text(_reasonText(l10n, path.reason!)),
-          const SizedBox(height: 12),
-          Text(
-            l10n.pathProgress(completed, total),
-            key: const Key('path-progress'),
-            style: theme.textTheme.titleMedium,
           ),
-          const SizedBox(height: 4),
-          LinearProgressIndicator(value: total == 0 ? 0 : completed / total),
-          if (path.scopeNotice != null) ...<Widget>[
-            const SizedBox(height: 12),
-            ScopeNoticeBanner(notice: path.scopeNotice!),
-          ],
-          if (_message != null) ...<Widget>[
-            const SizedBox(height: 12),
-            Semantics(
-              liveRegion: true,
-              child: Text(
-                _message!,
-                key: const Key('path-message'),
-                style: TextStyle(
-                  color: _messageIsError
-                      ? theme.colorScheme.error
-                      : theme.colorScheme.primary,
-                ),
-              ),
+          if (items.isNotEmpty)
+            SliverList.builder(
+              itemCount: items.length,
+              itemBuilder: (BuildContext context, int index) {
+                final item = items[index];
+                return _UnitTile(
+                  item: item,
+                  busy: _busy,
+                  locked: inClass,
+                  onToggleMastered: () => _setMastered(
+                    item,
+                    mastered:
+                        item.status != PathDetailAllOfItemsStatusEnum.mastered,
+                  ),
+                );
+              },
             ),
-          ],
-          const SizedBox(height: 16),
-          if (items.isEmpty)
-            EmptyView(
-              key: const Key('path-empty'),
-              icon: Icons.route_outlined,
-              title: l10n.pathEmptyTitle,
-              message: l10n.pathEmptyMessage,
-            )
-          else ...<Widget>[
-            for (final item in items)
-              _UnitTile(
-                item: item,
-                busy: _busy,
-                locked: inClass,
-                onToggleMastered: () => _setMastered(
-                  item,
-                  mastered:
-                      item.status != PathDetailAllOfItemsStatusEnum.mastered,
+          SliverToBoxAdapter(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                if (_hasMore)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Center(
+                      child: _loadingMore
+                          ? const CircularProgressIndicator(
+                              key: Key('path-loading-more'),
+                            )
+                          : OutlinedButton(
+                              key: const Key('path-load-more'),
+                              onPressed: _loadMore,
+                              child: Text(
+                                l10n.pathLoadMore(
+                                  items.length,
+                                  path.itemsTotal ?? items.length,
+                                ),
+                              ),
+                            ),
+                    ),
+                  ),
+                if (_loadMoreError != null)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8),
+                    child: Text(
+                      _loadMoreError!,
+                      key: const Key('path-load-more-error'),
+                      style: TextStyle(color: theme.colorScheme.error),
+                    ),
+                  ),
+                // Chú giải màu năng lực (FR-020); chỉ khi máy chủ có trả mức.
+                if (items.any((i) => i.competency != null)) ...<Widget>[
+                  const SizedBox(height: 8),
+                  const CompetencyLegend(),
+                ],
+                const SizedBox(height: 16),
+                Wrap(
+                  spacing: 12,
+                  runSpacing: 12,
+                  children: <Widget>[
+                    OutlinedButton.icon(
+                      key: const Key('adjust-plan'),
+                      icon: const Icon(Icons.tune),
+                      label: Text(l10n.pathAdjustPlan),
+                      onPressed: () => context.go(AppRoutes.pathAdjust),
+                    ),
+                    OutlinedButton.icon(
+                      key: const Key('retake-placement'),
+                      icon: const Icon(Icons.fact_check_outlined),
+                      label: Text(l10n.pathRetakePlacement),
+                      onPressed: () => context.go(AppRoutes.placement),
+                    ),
+                  ],
                 ),
-              ),
-            // Chú giải màu năng lực (FR-020); chỉ khi máy chủ có trả mức.
-            if (items.any((i) => i.competency != null)) ...<Widget>[
-              const SizedBox(height: 8),
-              const CompetencyLegend(),
-            ],
-          ],
-          const SizedBox(height: 16),
-          Wrap(
-            spacing: 12,
-            runSpacing: 12,
-            children: <Widget>[
-              OutlinedButton.icon(
-                key: const Key('adjust-plan'),
-                icon: const Icon(Icons.tune),
-                label: Text(l10n.pathAdjustPlan),
-                onPressed: () => context.go(AppRoutes.pathAdjust),
-              ),
-              OutlinedButton.icon(
-                key: const Key('retake-placement'),
-                icon: const Icon(Icons.fact_check_outlined),
-                label: Text(l10n.pathRetakePlacement),
-                onPressed: () => context.go(AppRoutes.placement),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
@@ -349,9 +547,9 @@ class _UnitTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final kind = item.kind == Skill.grammar
-        ? l10n.skillGrammar
-        : l10n.skillVocabulary;
+    final kind = item.kind == null
+        ? l10n.skillVocabulary
+        : skillLabel(l10n, item.kind!.value);
     final mastered = item.status == PathDetailAllOfItemsStatusEnum.mastered;
     final (icon, status) = switch (item.status) {
       PathDetailAllOfItemsStatusEnum.completed => (

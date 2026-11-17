@@ -14,6 +14,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'org_overview.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -24,73 +25,145 @@ part 'org_overview.g.dart';
 class OrgOverview {
   /// Returns a new [OrgOverview] instance.
   OrgOverview({
-    required this.id,
 
-    required this.name,
+    required  this.id,
 
-    required this.status,
+    required  this.name,
 
-    required this.seats,
+    required  this.status,
 
-    this.license,
+    required  this.seats,
 
-    required this.teachers,
+     this.license,
 
-    required this.classes,
+    required  this.teachers,
 
-    required this.pendingInvitations,
+    required  this.classes,
+
+    required  this.pendingInvitations,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'name', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'name',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String name;
 
-  @JsonKey(name: r'status', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final OrgStatus status;
 
-  @JsonKey(name: r'seats', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'seats',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final SeatSummary seats;
 
-  @JsonKey(name: r'license', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'license',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final OrgOverviewLicense? license;
 
-  @JsonKey(name: r'teachers', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teachers',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<OrgOverviewTeachersInner> teachers;
 
-  @JsonKey(name: r'classes', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'classes',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassRow> classes;
 
-  @JsonKey(name: r'pendingInvitations', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'pendingInvitations',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<InvitationRow> pendingInvitations;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is OrgOverview &&
-          other.id == id &&
-          other.name == name &&
-          other.status == status &&
-          other.seats == seats &&
-          other.license == license &&
-          other.teachers == teachers &&
-          other.classes == classes &&
-          other.pendingInvitations == pendingInvitations;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      name.hashCode +
-      status.hashCode +
-      seats.hashCode +
-      (license == null ? 0 : license.hashCode) +
-      teachers.hashCode +
-      classes.hashCode +
-      pendingInvitations.hashCode;
 
-  factory OrgOverview.fromJson(Map<String, dynamic> json) =>
-      _$OrgOverviewFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is OrgOverview &&
+      other.id == id &&
+      other.name == name &&
+      other.status == status &&
+      other.seats == seats &&
+      other.license == license &&
+      other.teachers == teachers &&
+      other.classes == classes &&
+      other.pendingInvitations == pendingInvitations;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        name.hashCode +
+        status.hashCode +
+        seats.hashCode +
+        (license == null ? 0 : license.hashCode) +
+        teachers.hashCode +
+        classes.hashCode +
+        pendingInvitations.hashCode;
+
+  factory OrgOverview.fromJson(Map<String, dynamic> json) => _$OrgOverviewFromJson(json);
 
   Map<String, dynamic> toJson() => _$OrgOverviewToJson(this);
 
@@ -98,4 +171,6 @@ class OrgOverview {
   String toString() {
     return toJson().toString();
   }
+
 }
+

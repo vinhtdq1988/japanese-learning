@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-business-email",
+  "title": {
+    "vi": "Đọc: Email nhờ kiểm tra tài liệu họp",
+    "en": "Reading: Email asking for a document check"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：会議資料のご確認のお願い\n田中様\nお疲れ様です。企画部の山田です。\n明日の会議で使う資料を作成しましたので、添付いたします。内容をご確認いただき、修正が必要な点がございましたら、本日の午後5時までにお知らせください。お忙しいところ恐れ入りますが、よろしくお願いいたします。",
+      "meaning": {
+        "vi": "Tiêu đề: Nhờ kiểm tra tài liệu họp. Gửi anh/chị Tanaka. Anh/chị vất vả rồi. Tôi là Yamada ở phòng Kế hoạch. Tôi đã soạn xong tài liệu dùng cho cuộc họp ngày mai nên xin đính kèm. Xin anh/chị kiểm tra nội dung, và nếu có chỗ cần chỉnh sửa, xin cho tôi biết trước 5 giờ chiều hôm nay. Tôi biết anh/chị đang bận nhưng rất mong được giúp đỡ.",
+        "en": "Subject: Request to check the meeting materials. Dear Mr./Ms. Tanaka, Thank you for your hard work. This is Yamada from the Planning Department. I have prepared the materials for tomorrow’s meeting and am attaching them. Please check the contents, and if there is anything that needs correcting, let me know by 5 p.m. today. I am sorry to trouble you when you are busy, and thank you in advance."
+      },
+      "explanation": {
+        "vi": "「～ましたので」nêu lý do (lịch sự); 「～ていただき」= xin (ai đó) làm…; 「～がございましたら」= nếu có…. Từ vựng: 「企画部」(きかくぶ) = phòng kế hoạch; 「添付」(てんぷ) = đính kèm; 「修正」(しゅうせい) = chỉnh sửa; 「忙しい」(いそがしい) = bận; 「恐れ入ります」(おそれいります) = xin lỗi/cảm phiền; 「願い」(ねがい) = lời nhờ.",
+        "en": "「～ましたので」 gives a polite reason; 「～ていただき」 = asking someone to…; 「～がございましたら」 = if there is…. Vocabulary: 「企画部」(きかくぶ) = Planning Department; 「添付」(てんぷ) = attach; 「修正」(しゅうせい) = correction; 「忙しい」(いそがしい) = busy; 「恐れ入ります」(おそれいります) = I am sorry to trouble you; 「願い」(ねがい) = request."
+      },
+      "scopeRef": "r-n3-email-request-report"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Yamada gửi kèm email thứ gì?",
+        "en": "What does Yamada attach to the email?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tài liệu dùng cho cuộc họp ngày mai",
+            "en": "Materials for tomorrow’s meeting"
+          },
+          {
+            "vi": "Báo cáo doanh thu tháng này",
+            "en": "This month’s sales report"
+          },
+          {
+            "vi": "Bảng chấm công",
+            "en": "A timesheet"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「明日の会議で使う資料を作成しました」: 「資料」là tài liệu; đó là tài liệu dùng cho cuộc họp ngày mai.",
+        "en": "Correct! The text has 「明日の会議で使う資料を作成しました」: 「資料」 means materials; they are for tomorrow’s meeting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「明日の会議で使う資料を作成しました」: 「資料」là tài liệu; đó là tài liệu dùng cho cuộc họp ngày mai.",
+        "en": "Not quite. Look again at 「明日の会議で使う資料を作成しました」: 「資料」 means materials; they are for tomorrow’s meeting."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Người nhận cần làm gì?",
+        "en": "What does the recipient need to do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gửi lại tài liệu cho phòng khác",
+            "en": "Forward the materials to another department"
+          },
+          {
+            "vi": "Kiểm tra nội dung và báo nếu có chỗ cần sửa",
+            "en": "Check the contents and report anything that needs correcting"
+          },
+          {
+            "vi": "Tham dự cuộc họp thay Yamada",
+            "en": "Attend the meeting in place of Yamada"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「内容をご確認いただき、修正が必要な点がございましたら」: Người nhận được nhờ kiểm tra nội dung và báo lại nếu có chỗ cần sửa.",
+        "en": "Correct! The text has 「内容をご確認いただき、修正が必要な点がございましたら」: The recipient is asked to check the contents and report anything that needs correcting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「内容をご確認いただき、修正が必要な点がございましたら」: Người nhận được nhờ kiểm tra nội dung và báo lại nếu có chỗ cần sửa.",
+        "en": "Not quite. Look again at 「内容をご確認いただき、修正が必要な点がございましたら」: The recipient is asked to check the contents and report anything that needs correcting."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Hạn trả lời là khi nào?",
+        "en": "What is the deadline for replying?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "5 giờ chiều ngày mai",
+            "en": "5 p.m. tomorrow"
+          },
+          {
+            "vi": "5 giờ chiều hôm nay",
+            "en": "5 p.m. today"
+          },
+          {
+            "vi": "Trước cuộc họp tuần sau",
+            "en": "Before next week’s meeting"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「本日の午後5時までに」: 「本日」nghĩa là hôm nay; hạn là 5 giờ chiều hôm nay.",
+        "en": "Correct! The text has 「本日の午後5時までに」: 「本日」 means today; the deadline is 5 p.m. today."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「本日の午後5時までに」: 「本日」nghĩa là hôm nay; hạn là 5 giờ chiều hôm nay.",
+        "en": "Not quite. Look again at 「本日の午後5時までに」: 「本日」 means today; the deadline is 5 p.m. today."
+      }
+    }
+  ]
+}

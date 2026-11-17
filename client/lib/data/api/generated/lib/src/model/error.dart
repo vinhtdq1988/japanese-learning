@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'error.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,28 +18,65 @@ part 'error.g.dart';
 )
 class Error {
   /// Returns a new [Error] instance.
-  Error({required this.code, required this.message, this.fields});
+  Error({
 
-  /// Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED, PRACTICE_LOCKED, CLASS_MANAGED, SEAT_UNAVAILABLE, SEAT_REASSIGN_LIMIT, SEAT_BELOW_USAGE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE
-  @JsonKey(name: r'code', required: true, includeIfNull: false)
+    required  this.code,
+
+    required  this.message,
+
+     this.fields,
+  });
+
+      /// Mã máy đọc được, ví dụ EMAIL_TAKEN, EMAIL_PENDING_DELETION, VALIDATION_FAILED, ACCOUNT_DISABLED, ACCOUNT_PENDING_DELETION, ACCOUNT_DELETED, PLACEMENT_SET_INVALID, PATH_PAUSED, SESSION_INCOMPLETE, SESSION_COMPLETED, CONTENT_EXHAUSTED, PRACTICE_LOCKED, CLASS_MANAGED, SEAT_UNAVAILABLE, SEAT_REASSIGN_LIMIT, SEAT_BELOW_USAGE, CLASS_NOT_READY, CLASS_FULL, CLASS_ARCHIVED, LAST_TEACHER, ALREADY_IN_CLASS, INVITEE_UNAVAILABLE
+  @JsonKey(
+    
+    name: r'code',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String code;
 
-  @JsonKey(name: r'message', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'message',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String message;
 
-  @JsonKey(name: r'fields', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'fields',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Map<String, String>? fields;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Error &&
-          other.code == code &&
-          other.message == message &&
-          other.fields == fields;
 
-  @override
-  int get hashCode => code.hashCode + message.hashCode + fields.hashCode;
+
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is Error &&
+      other.code == code &&
+      other.message == message &&
+      other.fields == fields;
+
+    @override
+    int get hashCode =>
+        code.hashCode +
+        message.hashCode +
+        fields.hashCode;
 
   factory Error.fromJson(Map<String, dynamic> json) => _$ErrorFromJson(json);
 
@@ -48,4 +86,6 @@ class Error {
   String toString() {
     return toJson().toString();
   }
+
 }
+

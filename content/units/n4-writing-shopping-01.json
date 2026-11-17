@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-shopping",
+  "title": {
+    "vi": "Viết: Mua sắm (1)",
+    "en": "Writing: Shopping (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "貸す",
+      "reading": "かす",
+      "meaning": {
+        "vi": "Cho mượn; cho vay",
+        "en": "To lend"
+      }
+    },
+    {
+      "japanese": "天ぷら",
+      "reading": "てんぷら",
+      "meaning": {
+        "vi": "Tempura; đồ chiên bọc bột",
+        "en": "Tempura"
+      }
+    },
+    {
+      "japanese": "スーツ",
+      "reading": "スーツ",
+      "meaning": {
+        "vi": "Bộ vest; bộ đồ công sở",
+        "en": "Suit"
+      }
+    },
+    {
+      "japanese": "以下",
+      "reading": "いか",
+      "meaning": {
+        "vi": "Từ ... trở xuống; dưới mức đó",
+        "en": "Less than; and below"
+      }
+    },
+    {
+      "japanese": "料金",
+      "reading": "りょうきん",
+      "meaning": {
+        "vi": "Phí; cước; giá vé",
+        "en": "Fee; fare"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cho mượn; cho vay”",
+        "en": "Type in Japanese: “To lend”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "貸す",
+          "かす"
+        ],
+        "hint": "よみ: かす"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cho mượn; cho vay” viết là 貸す (đọc là かす).",
+        "en": "Correct! “To lend” is written 貸す (read as かす)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Cho mượn; cho vay” viết là 貸す (đọc là かす); hãy so lại từng ký tự.",
+        "en": "Not quite. “To lend” is written 貸す (read as かす); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tempura; đồ chiên bọc bột”",
+        "en": "Type in Japanese: “Tempura”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "天ぷら",
+          "てんぷら"
+        ],
+        "hint": "よみ: てんぷら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tempura; đồ chiên bọc bột” viết là 天ぷら (đọc là てんぷら).",
+        "en": "Correct! “Tempura” is written 天ぷら (read as てんぷら)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Tempura; đồ chiên bọc bột” viết là 天ぷら (đọc là てんぷら); hãy so lại từng ký tự.",
+        "en": "Not quite. “Tempura” is written 天ぷら (read as てんぷら); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bộ vest; bộ đồ công sở”",
+        "en": "Type in Japanese: “Suit”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "スーツ"
+        ],
+        "hint": "Viết bằng katakana (3 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bộ vest; bộ đồ công sở” viết là スーツ.",
+        "en": "Correct! “Suit” is written スーツ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bộ vest; bộ đồ công sở” viết là スーツ; hãy so lại từng ký tự.",
+        "en": "Not quite. “Suit” is written スーツ; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Từ ... trở xuống; dưới mức đó”",
+        "en": "Type in Japanese: “Less than; and below”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "以下",
+          "いか"
+        ],
+        "hint": "よみ: いか"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Từ ... trở xuống; dưới mức đó” viết là 以下 (đọc là いか).",
+        "en": "Correct! “Less than; and below” is written 以下 (read as いか)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Từ ... trở xuống; dưới mức đó” viết là 以下 (đọc là いか); hãy so lại từng ký tự.",
+        "en": "Not quite. “Less than; and below” is written 以下 (read as いか); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Phí; cước; giá vé”",
+        "en": "Type in Japanese: “Fee; fare”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "料金",
+          "りょうきん"
+        ],
+        "hint": "よみ: りょうきん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Phí; cước; giá vé” viết là 料金 (đọc là りょうきん).",
+        "en": "Correct! “Fee; fare” is written 料金 (read as りょうきん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Phí; cước; giá vé” viết là 料金 (đọc là りょうきん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Fee; fare” is written 料金 (read as りょうきん); compare it character by character."
+      }
+    }
+  ]
+}

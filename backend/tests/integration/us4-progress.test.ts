@@ -226,22 +226,35 @@ describe('chuỗi ngày học (R11)', () => {
 
 describe('tiến độ mục tiêu (FR-028)', () => {
   /**
-   * Số đơn vị `active` trong khoảng trình độ của người mới không chọn Kanji (N5–N3: toàn bộ nội dung
-   * từ vựng + ngữ pháp đã seed). Bài Kanji không tính với người không chọn Kanji (FR-009, FR-019).
+   * Tổng PHÚT của đơn vị `active` trong khoảng trình độ của người mới không chọn Kanji (N5–N3: toàn bộ nội dung
+   * từ vựng + ngữ pháp đã seed). Bài Kanji không tính với người không chọn Kanji (FR-009, FR-019). Từ spec 008
+   * (D12.1) tỷ lệ mục tiêu tính theo phút nên tử số/mẫu số đều là phút.
    */
-  const activeUnits = async (): Promise<number> =>
+  const activeMinutes = async (): Promise<number> =>
     (
       await query(
         ctx,
-        `SELECT count(*)::int AS n FROM learning_units
+        `SELECT coalesce(sum(est_minutes), 0)::int AS n FROM learning_units
           WHERE status = 'active' AND kind IN ('vocabulary', 'grammar')`,
+      )
+    )[0].n;
+
+  /** Tổng phút của các đơn vị người học đã hoàn thành/thành thạo. */
+  const doneMinutes = async (userId: string): Promise<number> =>
+    (
+      await query(
+        ctx,
+        `SELECT coalesce(sum(u.est_minutes), 0)::int AS n
+           FROM unit_progress p JOIN learning_units u ON u.id = p.unit_id
+          WHERE p.user_id = $1 AND p.status IN ('completed', 'mastered') AND u.status = 'active'`,
+        [userId],
       )
     )[0].n;
 
   it('tỷ lệ hoàn thành theo đơn vị `active` trong khoảng trình độ; đúng/chậm tiến độ theo mốc', async () => {
     // Mốc 54 ngày: đủ cho toàn bộ nội dung N5–N3 ở quỹ 10 phút/ngày (40% dành cho bài mới).
     const learner = await onboardedLearner(api, ctx, { targetDate: '2026-02-28' });
-    const total = await activeUnits();
+    const total = await activeMinutes();
     const start = await progressOf(learner);
     expect(start.goal).toMatchObject({
       completionRatio: 0,
@@ -251,7 +264,9 @@ describe('tiến độ mục tiêu (FR-028)', () => {
 
     await studyFirstItem(learner);
     const after = await progressOf(learner);
-    expect(after.goal.completionRatio).toBeCloseTo(1 / total, 3);
+    const done = await doneMinutes(learner.userId);
+    expect(done).toBeGreaterThan(0);
+    expect(after.goal.completionRatio).toBeCloseTo(done / total, 3);
     expect(after.goal.onTrack).toBe(true);
 
     // Mốc gần (4 ngày) không đủ cho phần còn lại → chậm tiến độ; số liệu đã học không đổi.
@@ -262,7 +277,7 @@ describe('tiến độ mục tiêu (FR-028)', () => {
     expect(tight.status).toBe(200);
     const late = await progressOf(learner);
     expect(late.goal).toMatchObject({ onTrack: false, targetDate: '2026-01-09' });
-    expect(late.goal.completionRatio).toBeCloseTo(1 / total, 3);
+    expect(late.goal.completionRatio).toBeCloseTo(done / total, 3);
     expect(late.lessonsCompleted).toBe(1);
 
     // Bỏ mốc → không đánh giá đúng/chậm tiến độ.
@@ -279,8 +294,10 @@ describe('tiến độ mục tiêu (FR-028)', () => {
       body: { mastered: true },
     });
     expect(marked.status).toBe(200);
+    const done = await doneMinutes(learner.userId);
+    expect(done).toBeGreaterThan(0);
     expect((await progressOf(learner)).goal.completionRatio).toBeCloseTo(
-      1 / (await activeUnits()),
+      done / (await activeMinutes()),
       3,
     );
   });
@@ -295,9 +312,14 @@ describe('tiến độ mục tiêu (FR-028)', () => {
     ctx.app.deps.contentCache.invalidate();
     try {
       await studyFirstItem(learner);
-      const total = await activeUnits(); // đã trừ đơn vị vừa vô hiệu hóa
-      expect(total).toBeGreaterThanOrEqual(5);
-      expect((await progressOf(learner)).goal.completionRatio).toBeCloseTo(1 / total, 3);
+      const total = await activeMinutes(); // đã trừ đơn vị vừa vô hiệu hóa
+      expect(total).toBeGreaterThanOrEqual(25);
+      const done = await doneMinutes(learner.userId);
+      expect(done).toBeGreaterThan(0);
+      // Làm tròn 3 chữ số như `goalRatio` (so sánh đúng bằng, không dùng sai số).
+      expect((await progressOf(learner)).goal.completionRatio).toBe(
+        Math.round((done / total) * 1000) / 1000,
+      );
     } finally {
       await query(ctx, `UPDATE learning_units SET status = 'active' WHERE id = $1`, [unit.id]);
       ctx.app.deps.contentCache.invalidate();

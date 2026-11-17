@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-health",
+  "title": {
+    "vi": "Đọc: Nhật ký thói quen ngủ muộn",
+    "en": "Reading: Diary about going to bed late"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "十一月二十日　雨\nさいきん、朝起きるのがつらくなってきました。夜おそくまでスマホを見ているので、ねるのがおそいからです。きのう、会社のとなりのせきの田中さんに「顔色がよくないよ」と言われました。それで、今日から早くねることにしました。夜十一時にはスマホを見ないで、おふろに入って、本を読みながらゆっくりします。三日つづけたら、朝の気分が少しよくなりそうです。体は大事なので、これからもつづけたいです。",
+      "meaning": {
+        "vi": "Ngày 20 tháng 11, trời mưa. Gần đây tôi thấy việc dậy vào buổi sáng ngày càng khó khăn. Đó là vì tôi xem điện thoại đến khuya nên đi ngủ muộn. Hôm qua, anh Tanaka ngồi cạnh ở công ty bảo tôi: “Sắc mặt cậu không tốt đâu.” Vì vậy từ hôm nay tôi quyết định đi ngủ sớm. Lúc 11 giờ đêm tôi sẽ không xem điện thoại, đi tắm, rồi vừa đọc sách vừa thư giãn. Nếu duy trì được ba ngày, buổi sáng có vẻ sẽ dễ chịu hơn một chút. Sức khỏe là điều quan trọng nên tôi muốn tiếp tục từ nay về sau.",
+        "en": "November 20, rainy. Recently it has become hard for me to get up in the morning. That is because I look at my phone until late at night and go to bed late. Yesterday, Mr. Tanaka, who sits next to me at work, told me, “You don’t look well.” So I decided to go to bed early starting today. At 11 p.m. I will not look at my phone; I will take a bath and relax while reading a book. If I keep this up for three days, I think my mornings will feel a little better. My health is important, so I want to keep going from now on."
+      },
+      "reading": "じゅういちがつはつか　あめ\nさいきん、あさおきるのがつらくなってきました。よるおそくまでスマホをみているので、ねるのがおそいからです。きのう、かいしゃのとなりのせきのたなかさんに「かおいろがよくないよ」といわれました。それで、きょうからはやくねることにしました。よるじゅういちじにはスマホをみないで、おふろにはいって、ほんをよみながらゆっくりします。みっかつづけたら、あさのきぶんがすこしよくなりそうです。からだはだいじなので、これからもつづけたいです。",
+      "explanation": {
+        "vi": "「～ことにしました」= quyết định làm; 「～ながら」= vừa… vừa…; 「～そうです」= có vẻ sẽ (よくなりそう); 「言われました」là dạng bị động của 言う.",
+        "en": "「～ことにしました」 = decided to; 「～ながら」 = while doing; 「～そうです」 = looks like it will (よくなりそう); 「言われました」 is the passive of 言う."
+      },
+      "scopeRef": "r-n4-essay-diary"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao dạo này tác giả khó dậy buổi sáng?",
+        "en": "Why has it been hard for the writer to get up recently?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì phải đi làm sớm",
+            "en": "Because work starts early"
+          },
+          {
+            "vi": "Vì đi ngủ muộn do xem điện thoại",
+            "en": "Because they go to bed late looking at their phone"
+          },
+          {
+            "vi": "Vì tiếng ồn ban đêm",
+            "en": "Because of noise at night"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「夜おそくまでスマホを見ているので、ねるのがおそいからです」: Tác giả xem điện thoại đến khuya nên đi ngủ muộn và khó dậy.",
+        "en": "Correct! The text has 「夜おそくまでスマホを見ているので、ねるのがおそいからです」: The writer looks at the phone until late, goes to bed late and finds it hard to wake up."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「夜おそくまでスマホを見ているので、ねるのがおそいからです」: Tác giả xem điện thoại đến khuya nên đi ngủ muộn và khó dậy.",
+        "en": "Not quite. Look again at 「夜おそくまでスマホを見ているので、ねるのがおそいからです」: The writer looks at the phone until late, goes to bed late and finds it hard to wake up."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Anh Tanaka đã nói gì với tác giả?",
+        "en": "What did Mr. Tanaka say to the writer?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "“Sắc mặt cậu không tốt đâu”",
+            "en": "“You don’t look well”"
+          },
+          {
+            "vi": "“Cậu làm việc rất chăm chỉ”",
+            "en": "“You work very hard”"
+          },
+          {
+            "vi": "“Cậu nên đi khám bệnh ngay”",
+            "en": "“You should see a doctor right away”"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「「顔色がよくないよ」と言われました」: 「顔色」là sắc mặt; anh Tanaka nói sắc mặt tác giả không tốt.",
+        "en": "Correct! The text has 「「顔色がよくないよ」と言われました」: 「顔色」 is complexion; Mr. Tanaka said the writer did not look well."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「「顔色がよくないよ」と言われました」: 「顔色」là sắc mặt; anh Tanaka nói sắc mặt tác giả không tốt.",
+        "en": "Not quite. Look again at 「「顔色がよくないよ」と言われました」: 「顔色」 is complexion; Mr. Tanaka said the writer did not look well."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả đã quyết định điều gì?",
+        "en": "What did the writer decide to do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nghỉ làm vài ngày",
+            "en": "Take a few days off"
+          },
+          {
+            "vi": "Đi ngủ sớm từ hôm nay",
+            "en": "Go to bed early starting today"
+          },
+          {
+            "vi": "Bỏ điện thoại",
+            "en": "Give up the phone completely"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「今日から早くねることにしました」: 「～ことにする」nghĩa là quyết định làm; tác giả quyết định đi ngủ sớm từ hôm nay.",
+        "en": "Correct! The text has 「今日から早くねることにしました」: 「～ことにする」 means to decide to; the writer decided to sleep early from today."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「今日から早くねることにしました」: 「～ことにする」nghĩa là quyết định làm; tác giả quyết định đi ngủ sớm từ hôm nay.",
+        "en": "Not quite. Look again at 「今日から早くねることにしました」: 「～ことにする」 means to decide to; the writer decided to sleep early from today."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Trước khi ngủ, tác giả định làm gì?",
+        "en": "What does the writer plan to do before sleeping?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tắm và vừa đọc sách vừa thư giãn",
+            "en": "Take a bath and relax while reading a book"
+          },
+          {
+            "vi": "Xem phim trên điện thoại",
+            "en": "Watch a movie on the phone"
+          },
+          {
+            "vi": "Uống một cốc trà nóng rồi học bài",
+            "en": "Drink hot tea and study"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「おふろに入って、本を読みながらゆっくりします」: 「～ながら」nghĩa là vừa… vừa…; tác giả tắm rồi vừa đọc sách vừa thư giãn.",
+        "en": "Correct! The text has 「おふろに入って、本を読みながらゆっくりします」: 「～ながら」 means while; the writer takes a bath and relaxes while reading."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「おふろに入って、本を読みながらゆっくりします」: 「～ながら」nghĩa là vừa… vừa…; tác giả tắm rồi vừa đọc sách vừa thư giãn.",
+        "en": "Not quite. Look again at 「おふろに入って、本を読みながらゆっくりします」: 「～ながら」 means while; the writer takes a bath and relaxes while reading."
+      }
+    }
+  ]
+}

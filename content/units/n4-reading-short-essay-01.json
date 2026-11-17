@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-school-life",
+  "title": {
+    "vi": "Đọc: Nhật ký ngày đầu đến lớp tiếng Nhật",
+    "en": "Reading: Diary of the first day at Japanese school"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "四月十日　はれ\nきょうは日本語学校のはじめの日でした。クラスには十人の学生がいて、みんな国がちがいます。じこしょうかいをするとき、わたしはとてもどきどきしました。でも、となりの人がやさしく話してくれたので、すぐ友だちになれました。あしたからがんばろうと思います。",
+      "meaning": {
+        "vi": "Ngày 10 tháng 4, trời nắng. Hôm nay là ngày đầu tiên ở trường tiếng Nhật. Lớp có 10 sinh viên, ai cũng đến từ nước khác nhau. Lúc tự giới thiệu, tôi rất hồi hộp. Nhưng người ngồi cạnh nói chuyện rất dịu dàng với tôi nên tôi nhanh chóng thành bạn với họ. Từ ngày mai tôi sẽ cố gắng.",
+        "en": "April 10, sunny. Today was the first day at Japanese school. There are ten students in the class, and everyone comes from a different country. When I introduced myself, my heart was pounding. But the person next to me spoke to me kindly, so we quickly became friends. I will do my best from tomorrow."
+      },
+      "reading": "しがつとおか　はれ\nきょうはにほんごがっこうのはじめのひでした。クラスにはじゅうにんのがくせいがいて、みんなくにがちがいます。じこしょうかいをするとき、わたしはとてもどきどきしました。でも、となりのひとがやさしくはなしてくれたので、すぐともだちになれました。あしたからがんばろうとおもいます。",
+      "explanation": {
+        "vi": "「～てくれる」= ai đó làm điều tốt cho mình (話してくれた); 「～ので」nêu lý do; 「～ようと思います」= định làm.",
+        "en": "「～てくれる」 = someone does something kind for me (話してくれた); 「～ので」 gives a reason; 「～ようと思います」 = intend to."
+      },
+      "scopeRef": "r-n4-essay-diary"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Hôm nay là ngày thế nào đối với tác giả?",
+        "en": "What kind of day was today for the writer?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ngày đầu tiên ở trường tiếng Nhật",
+            "en": "The first day at Japanese school"
+          },
+          {
+            "vi": "Ngày thi cuối kỳ",
+            "en": "The day of the final exam"
+          },
+          {
+            "vi": "Ngày cuối cùng ở trường",
+            "en": "The last day at school"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「きょうは日本語学校のはじめの日でした」: 「はじめの日」nghĩa là ngày đầu tiên.",
+        "en": "Correct! The text has 「きょうは日本語学校のはじめの日でした」: 「はじめの日」 means the first day."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「きょうは日本語学校のはじめの日でした」: 「はじめの日」nghĩa là ngày đầu tiên.",
+        "en": "Not quite. Look again at 「きょうは日本語学校のはじめの日でした」: 「はじめの日」 means the first day."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Khi nào tác giả cảm thấy hồi hộp?",
+        "en": "When did the writer feel nervous?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khi làm bài kiểm tra",
+            "en": "When taking a test"
+          },
+          {
+            "vi": "Khi tự giới thiệu",
+            "en": "When introducing herself/himself"
+          },
+          {
+            "vi": "Khi gặp giáo viên",
+            "en": "When meeting the teacher"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「じこしょうかいをするとき、わたしはとてもどきどきしました」: 「どきどき」là tim đập nhanh; điều đó xảy ra lúc tự giới thiệu.",
+        "en": "Correct! The text has 「じこしょうかいをするとき、わたしはとてもどきどきしました」: 「どきどき」 describes a pounding heart; it happened during the self-introduction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「じこしょうかいをするとき、わたしはとてもどきどきしました」: 「どきどき」là tim đập nhanh; điều đó xảy ra lúc tự giới thiệu.",
+        "en": "Not quite. Look again at 「じこしょうかいをするとき、わたしはとてもどきどきしました」: 「どきどき」 describes a pounding heart; it happened during the self-introduction."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Vì sao tác giả nhanh chóng có bạn?",
+        "en": "Why did the writer quickly make a friend?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì ai cũng nói tiếng mẹ đẻ của tác giả",
+            "en": "Because everyone spoke the writer’s language"
+          },
+          {
+            "vi": "Vì giáo viên giới thiệu",
+            "en": "Because the teacher introduced them"
+          },
+          {
+            "vi": "Vì người ngồi cạnh nói chuyện dịu dàng",
+            "en": "Because the person next to them spoke kindly"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「となりの人がやさしく話してくれたので、すぐ友だちになれました」: 「～ので」nêu lý do: người bên cạnh nói chuyện dịu dàng nên kết bạn nhanh.",
+        "en": "Correct! The text has 「となりの人がやさしく話してくれたので、すぐ友だちになれました」: 「～ので」 gives the reason: the kind person next to them made it easy to become friends."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「となりの人がやさしく話してくれたので、すぐ友だちになれました」: 「～ので」nêu lý do: người bên cạnh nói chuyện dịu dàng nên kết bạn nhanh.",
+        "en": "Not quite. Look again at 「となりの人がやさしく話してくれたので、すぐ友だちになれました」: 「～ので」 gives the reason: the kind person next to them made it easy to become friends."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-position-shape",
+  "title": {
+    "vi": "Hình dạng, quy tắc và sức khỏe",
+    "en": "Shapes, rules and health"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2050,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "円",
+      "reading": "えん",
+      "meaning": {
+        "vi": "Hình tròn; yên (tiền Nhật)",
+        "en": "Circle; yen"
+      },
+      "examples": [
+        {
+          "ja": "先生は、黒板に大きな円をかきました。",
+          "reading": "せんせいは、こくばんにおおきなえんをかきました。",
+          "translation": {
+            "vi": "Thầy giáo đã vẽ một hình tròn lớn lên bảng.",
+            "en": "The teacher drew a large circle on the blackboard."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "線",
+      "reading": "せん",
+      "meaning": {
+        "vi": "Đường kẻ; vạch; tuyến",
+        "en": "Line"
+      },
+      "examples": [
+        {
+          "ja": "白い線の内側に立って、電車を待ってください。",
+          "reading": "しろいせんのうちがわにたって、でんしゃをまってください。",
+          "translation": {
+            "vi": "Hãy đứng phía trong vạch trắng để chờ tàu.",
+            "en": "Please stand inside the white line and wait for the train."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "幅",
+      "reading": "はば",
+      "meaning": {
+        "vi": "Chiều rộng; bề ngang",
+        "en": "Width"
+      },
+      "examples": [
+        {
+          "ja": "この道は幅がせまいので、大きい車は通れません。",
+          "reading": "このみちははばがせまいので、おおきいくるまはとおれません。",
+          "translation": {
+            "vi": "Con đường này hẹp nên xe lớn không đi qua được.",
+            "en": "This road is narrow, so large vehicles cannot pass."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ルール",
+      "reading": "ルール",
+      "meaning": {
+        "vi": "Quy tắc; luật lệ",
+        "en": "Rule"
+      },
+      "examples": [
+        {
+          "ja": "町のルールを守って、ごみを出してください。",
+          "reading": "まちのルールをまもって、ごみをだしてください。",
+          "translation": {
+            "vi": "Hãy tuân thủ quy tắc của khu phố khi bỏ rác.",
+            "en": "Please follow the neighborhood rules when you put out the garbage."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "レポート",
+      "reading": "レポート",
+      "meaning": {
+        "vi": "Bài báo cáo; bài luận",
+        "en": "Report; paper"
+      },
+      "examples": [
+        {
+          "ja": "来週までに、レポートを出さなければなりません。",
+          "reading": "らいしゅうまでに、レポートをださなければなりません。",
+          "translation": {
+            "vi": "Tôi phải nộp bài báo cáo trước tuần sau.",
+            "en": "I have to hand in the report by next week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "健康",
+      "reading": "けんこう",
+      "meaning": {
+        "vi": "Sức khỏe; khỏe mạnh",
+        "en": "Health; healthy"
+      },
+      "examples": [
+        {
+          "ja": "毎朝歩くのは、健康のためにいいと思います。",
+          "reading": "まいあさあるくのは、けんこうのためにいいとおもいます。",
+          "translation": {
+            "vi": "Tôi nghĩ đi bộ mỗi sáng tốt cho sức khỏe.",
+            "en": "I think walking every morning is good for your health."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "円",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生は、黒板に大きな（　）をかきました。 — Nghĩa của câu: “Thầy giáo đã vẽ một hình tròn lớn lên bảng.”",
+        "en": "Choose the word that fits the blank: 先生は、黒板に大きな（　）をかきました。 — Meaning of the sentence: “The teacher drew a large circle on the blackboard.”"
+      },
+      "payload": {
+        "choices": [
+          "健康",
+          "レポート",
+          "ルール",
+          "円"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「円」(Hình tròn; yên (tiền Nhật)) hợp nghĩa câu này: “Thầy giáo đã vẽ một hình tròn lớn lên bảng.”",
+        "en": "Correct! 「円」(Circle; yen) fits this sentence: “The teacher drew a large circle on the blackboard.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thầy giáo đã vẽ một hình tròn lớn lên bảng.”, nên cần 「円」(Hình tròn; yên (tiền Nhật)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The teacher drew a large circle on the blackboard.”, so it needs 「円」(Circle; yen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "線",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 白い（　）の内側に立って、電車を待ってください。 — Nghĩa của câu: “Hãy đứng phía trong vạch trắng để chờ tàu.”",
+        "en": "Choose the word that fits the blank: 白い（　）の内側に立って、電車を待ってください。 — Meaning of the sentence: “Please stand inside the white line and wait for the train.”"
+      },
+      "payload": {
+        "choices": [
+          "線",
+          "健康",
+          "ルール",
+          "レポート"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「線」(Đường kẻ; vạch; tuyến) hợp nghĩa câu này: “Hãy đứng phía trong vạch trắng để chờ tàu.”",
+        "en": "Correct! 「線」(Line) fits this sentence: “Please stand inside the white line and wait for the train.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy đứng phía trong vạch trắng để chờ tàu.”, nên cần 「線」(Đường kẻ; vạch; tuyến); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please stand inside the white line and wait for the train.”, so it needs 「線」(Line); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "幅",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この道は（　）がせまいので、大きい車は通れません。 — Nghĩa của câu: “Con đường này hẹp nên xe lớn không đi qua được.”",
+        "en": "Choose the word that fits the blank: この道は（　）がせまいので、大きい車は通れません。 — Meaning of the sentence: “This road is narrow, so large vehicles cannot pass.”"
+      },
+      "payload": {
+        "choices": [
+          "線",
+          "幅",
+          "レポート",
+          "円"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「幅」(Chiều rộng; bề ngang) hợp nghĩa câu này: “Con đường này hẹp nên xe lớn không đi qua được.”",
+        "en": "Correct! 「幅」(Width) fits this sentence: “This road is narrow, so large vehicles cannot pass.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con đường này hẹp nên xe lớn không đi qua được.”, nên cần 「幅」(Chiều rộng; bề ngang); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This road is narrow, so large vehicles cannot pass.”, so it needs 「幅」(Width); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ルール",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 町の（　）を守って、ごみを出してください。 — Nghĩa của câu: “Hãy tuân thủ quy tắc của khu phố khi bỏ rác.”",
+        "en": "Choose the word that fits the blank: 町の（　）を守って、ごみを出してください。 — Meaning of the sentence: “Please follow the neighborhood rules when you put out the garbage.”"
+      },
+      "payload": {
+        "choices": [
+          "健康",
+          "レポート",
+          "ルール",
+          "線"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ルール」(Quy tắc; luật lệ) hợp nghĩa câu này: “Hãy tuân thủ quy tắc của khu phố khi bỏ rác.”",
+        "en": "Correct! 「ルール」(Rule) fits this sentence: “Please follow the neighborhood rules when you put out the garbage.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy tuân thủ quy tắc của khu phố khi bỏ rác.”, nên cần 「ルール」(Quy tắc; luật lệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please follow the neighborhood rules when you put out the garbage.”, so it needs 「ルール」(Rule); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "レポート",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来週までに、（　）を出さなければなりません。 — Nghĩa của câu: “Tôi phải nộp bài báo cáo trước tuần sau.”",
+        "en": "Choose the word that fits the blank: 来週までに、（　）を出さなければなりません。 — Meaning of the sentence: “I have to hand in the report by next week.”"
+      },
+      "payload": {
+        "choices": [
+          "円",
+          "健康",
+          "ルール",
+          "レポート"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「レポート」(Bài báo cáo; bài luận) hợp nghĩa câu này: “Tôi phải nộp bài báo cáo trước tuần sau.”",
+        "en": "Correct! 「レポート」(Report; paper) fits this sentence: “I have to hand in the report by next week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi phải nộp bài báo cáo trước tuần sau.”, nên cần 「レポート」(Bài báo cáo; bài luận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have to hand in the report by next week.”, so it needs 「レポート」(Report; paper); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "健康",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎朝歩くのは、（　）のためにいいと思います。 — Nghĩa của câu: “Tôi nghĩ đi bộ mỗi sáng tốt cho sức khỏe.”",
+        "en": "Choose the word that fits the blank: 毎朝歩くのは、（　）のためにいいと思います。 — Meaning of the sentence: “I think walking every morning is good for your health.”"
+      },
+      "payload": {
+        "choices": [
+          "健康",
+          "ルール",
+          "レポート",
+          "幅"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「健康」(Sức khỏe; khỏe mạnh) hợp nghĩa câu này: “Tôi nghĩ đi bộ mỗi sáng tốt cho sức khỏe.”",
+        "en": "Correct! 「健康」(Health; healthy) fits this sentence: “I think walking every morning is good for your health.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nghĩ đi bộ mỗi sáng tốt cho sức khỏe.”, nên cần 「健康」(Sức khỏe; khỏe mạnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I think walking every morning is good for your health.”, so it needs 「健康」(Health; healthy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "円",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 先生は、黒板に大きな「円」をかきました。",
+        "en": "Choose the correct reading of the word in 「」: 先生は、黒板に大きな「円」をかきました。"
+      },
+      "payload": {
+        "choices": [
+          "えん",
+          "レポート",
+          "せん",
+          "ルール"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「円」 đọc là 「えん」, nghĩa là Hình tròn; yên (tiền Nhật).",
+        "en": "Correct! 「円」 is read 「えん」 and means Circle; yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「円」 đọc là 「えん」 (Hình tròn; yên (tiền Nhật)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「円」 is read 「えん」 (Circle; yen); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "幅",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この道は「幅」がせまいので、大きい車は通れません。",
+        "en": "Choose the correct reading of the word in 「」: この道は「幅」がせまいので、大きい車は通れません。"
+      },
+      "payload": {
+        "choices": [
+          "せん",
+          "はば",
+          "ルール",
+          "レポート"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「幅」 đọc là 「はば」, nghĩa là Chiều rộng; bề ngang.",
+        "en": "Correct! 「幅」 is read 「はば」 and means Width."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「幅」 đọc là 「はば」 (Chiều rộng; bề ngang); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「幅」 is read 「はば」 (Width); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "健康",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 毎朝歩くのは、「けんこう」のためにいいと思います。",
+        "en": "Choose the correct way to write the word in 「」: 毎朝歩くのは、「けんこう」のためにいいと思います。"
+      },
+      "payload": {
+        "choices": [
+          "幅",
+          "健康",
+          "円",
+          "線"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「けんこう」 viết là 「健康」, nghĩa là Sức khỏe; khỏe mạnh.",
+        "en": "Correct! 「けんこう」 is written 「健康」 and means Health; healthy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「けんこう」 viết là 「健康」 (Sức khỏe; khỏe mạnh); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「けんこう」 is written 「健康」 (Health; healthy); the other words are read differently."
+      }
+    }
+  ]
+}

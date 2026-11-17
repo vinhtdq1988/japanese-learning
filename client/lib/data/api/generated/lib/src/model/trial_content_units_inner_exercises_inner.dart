@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'trial_content_units_inner_exercises_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -20,100 +21,173 @@ part 'trial_content_units_inner_exercises_inner.g.dart';
 class TrialContentUnitsInnerExercisesInner {
   /// Returns a new [TrialContentUnitsInnerExercisesInner] instance.
   TrialContentUnitsInnerExercisesInner({
-    required this.id,
 
-    required this.type,
+    required  this.id,
 
-    this.facet,
+    required  this.type,
 
-    required this.prompt,
+     this.facet,
 
-    required this.payload,
+    required  this.prompt,
 
-    this.answerKey,
+    required  this.payload,
 
-    this.feedbackCorrect,
+     this.answerKey,
 
-    this.feedbackIncorrect,
+     this.feedbackCorrect,
+
+     this.feedbackIncorrect,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'type', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'type',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final TrialContentUnitsInnerExercisesInnerTypeEnum type;
 
-  @JsonKey(name: r'facet', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'facet',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ReviewFacet? facet;
 
-  /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
-  @JsonKey(name: r'prompt', required: true, includeIfNull: false)
+
+
+      /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+  @JsonKey(
+    
+    name: r'prompt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String prompt;
 
-  /// Dạng theo `type`: `multiple_choice` → `choices[]`; `matching` → `left[]` và `right[]` (vế phải đã xáo; trả lời là danh sách cặp [vế trái, vế phải]); `fill_blank` → `hint` (tùy chọn). KHÔNG chứa đáp án trong luồng người học.
-  @JsonKey(name: r'payload', required: true, includeIfNull: false)
+
+
+      /// Dạng theo `type`: `multiple_choice` → `choices[]`; `matching` → `left[]` và `right[]` (vế phải đã xáo; trả lời là danh sách cặp [vế trái, vế phải]); `fill_blank` → `hint` (tùy chọn). KHÔNG chứa đáp án trong luồng người học.
+  @JsonKey(
+    
+    name: r'payload',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Object payload;
 
-  @JsonKey(name: r'answerKey', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'answerKey',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final TrialContentUnitsInnerExercisesInnerAllOfAnswerKey? answerKey;
 
-  /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
-  @JsonKey(name: r'feedbackCorrect', required: false, includeIfNull: false)
+
+
+      /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+  @JsonKey(
+    
+    name: r'feedbackCorrect',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? feedbackCorrect;
 
-  /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
-  @JsonKey(name: r'feedbackIncorrect', required: false, includeIfNull: false)
+
+
+      /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+  @JsonKey(
+    
+    name: r'feedbackIncorrect',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? feedbackIncorrect;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is TrialContentUnitsInnerExercisesInner &&
-          other.id == id &&
-          other.type == type &&
-          other.facet == facet &&
-          other.prompt == prompt &&
-          other.payload == payload &&
-          other.answerKey == answerKey &&
-          other.feedbackCorrect == feedbackCorrect &&
-          other.feedbackIncorrect == feedbackIncorrect;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      type.hashCode +
-      facet.hashCode +
-      prompt.hashCode +
-      payload.hashCode +
-      answerKey.hashCode +
-      feedbackCorrect.hashCode +
-      feedbackIncorrect.hashCode;
 
-  factory TrialContentUnitsInnerExercisesInner.fromJson(
-    Map<String, dynamic> json,
-  ) => _$TrialContentUnitsInnerExercisesInnerFromJson(json);
 
-  Map<String, dynamic> toJson() =>
-      _$TrialContentUnitsInnerExercisesInnerToJson(this);
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is TrialContentUnitsInnerExercisesInner &&
+      other.id == id &&
+      other.type == type &&
+      other.facet == facet &&
+      other.prompt == prompt &&
+      other.payload == payload &&
+      other.answerKey == answerKey &&
+      other.feedbackCorrect == feedbackCorrect &&
+      other.feedbackIncorrect == feedbackIncorrect;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        type.hashCode +
+        facet.hashCode +
+        prompt.hashCode +
+        payload.hashCode +
+        answerKey.hashCode +
+        feedbackCorrect.hashCode +
+        feedbackIncorrect.hashCode;
+
+  factory TrialContentUnitsInnerExercisesInner.fromJson(Map<String, dynamic> json) => _$TrialContentUnitsInnerExercisesInnerFromJson(json);
+
+  Map<String, dynamic> toJson() => _$TrialContentUnitsInnerExercisesInnerToJson(this);
 
   @override
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum TrialContentUnitsInnerExercisesInnerTypeEnum {
-  @JsonValue(r'multiple_choice')
-  multipleChoice(r'multiple_choice'),
-  @JsonValue(r'matching')
-  matching(r'matching'),
-  @JsonValue(r'fill_blank')
-  fillBlank(r'fill_blank');
+@JsonValue(r'multiple_choice')
+multipleChoice(r'multiple_choice'),
+@JsonValue(r'matching')
+matching(r'matching'),
+@JsonValue(r'fill_blank')
+fillBlank(r'fill_blank');
 
-  const TrialContentUnitsInnerExercisesInnerTypeEnum(this.value);
+const TrialContentUnitsInnerExercisesInnerTypeEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

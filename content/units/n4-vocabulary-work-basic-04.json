@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-work-basic",
+  "title": {
+    "vi": "Nghề nghiệp, hồ sơ và ngày nghỉ",
+    "en": "Occupations, résumés and days off"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 450,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "会社員",
+      "reading": "かいしゃいん",
+      "meaning": {
+        "vi": "Nhân viên công ty",
+        "en": "Company employee"
+      },
+      "examples": [
+        {
+          "ja": "兄は、大きな商社で働く会社員です。",
+          "reading": "あにはおおきなしょうしゃではたらくかいしゃいんです。",
+          "translation": {
+            "vi": "Anh trai tôi là nhân viên công ty làm ở một công ty thương mại lớn.",
+            "en": "My older brother is a company employee at a large trading company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "主婦",
+      "reading": "しゅふ",
+      "meaning": {
+        "vi": "Nội trợ",
+        "en": "Housewife; homemaker"
+      },
+      "examples": [
+        {
+          "ja": "母は主婦ですが、週に三日だけパートで働いています。",
+          "reading": "はははしゅふですが、しゅうにみっかだけパートではたらいています。",
+          "translation": {
+            "vi": "Mẹ tôi là nội trợ nhưng mỗi tuần làm bán thời gian ba ngày.",
+            "en": "My mother is a homemaker but works part-time three days a week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "履歴書",
+      "reading": "りれきしょ",
+      "meaning": {
+        "vi": "Sơ yếu lý lịch",
+        "en": "Résumé; CV"
+      },
+      "examples": [
+        {
+          "ja": "会社に出す履歴書に、写真をはりました。",
+          "reading": "かいしゃにだすりれきしょに、しゃしんをはりました。",
+          "translation": {
+            "vi": "Tôi đã dán ảnh vào sơ yếu lý lịch nộp cho công ty.",
+            "en": "I attached a photo to the résumé I am submitting to the company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "作業",
+      "reading": "さぎょう",
+      "meaning": {
+        "vi": "Công việc (thao tác); việc làm tay",
+        "en": "Work; task; operation"
+      },
+      "examples": [
+        {
+          "ja": "工場では、朝から夜まで同じ作業を続けます。",
+          "reading": "こうじょうでは、あさからよるまでおなじさぎょうをつづけます。",
+          "translation": {
+            "vi": "Ở nhà máy, người ta làm cùng một công việc từ sáng đến tối.",
+            "en": "At the factory, they carry on the same task from morning till night."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "休日",
+      "reading": "きゅうじつ",
+      "meaning": {
+        "vi": "Ngày nghỉ; ngày lễ",
+        "en": "Day off; holiday"
+      },
+      "examples": [
+        {
+          "ja": "休日は、家族と公園へ行くことが多いです。",
+          "reading": "きゅうじつは、かぞくとこうえんへいくことがおおいです。",
+          "translation": {
+            "vi": "Vào ngày nghỉ, tôi thường đi công viên cùng gia đình.",
+            "en": "On my days off, I often go to the park with my family."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保険",
+      "reading": "ほけん",
+      "meaning": {
+        "vi": "Bảo hiểm",
+        "en": "Insurance"
+      },
+      "examples": [
+        {
+          "ja": "旅行に行く前に、保険に入りました。",
+          "reading": "りょこうにいくまえに、ほけんにはいりました。",
+          "translation": {
+            "vi": "Trước khi đi du lịch, tôi đã tham gia bảo hiểm.",
+            "en": "I took out insurance before going on the trip."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "会社員",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は、大きな商社で働く（　）です。 — Nghĩa của câu: “Anh trai tôi là nhân viên công ty làm ở một công ty thương mại lớn.”",
+        "en": "Choose the word that fits the blank: 兄は、大きな商社で働く（　）です。 — Meaning of the sentence: “My older brother is a company employee at a large trading company.”"
+      },
+      "payload": {
+        "choices": [
+          "主婦",
+          "履歴書",
+          "休日",
+          "会社員"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「会社員」(Nhân viên công ty) hợp nghĩa câu này: “Anh trai tôi là nhân viên công ty làm ở một công ty thương mại lớn.”",
+        "en": "Correct! 「会社員」(Company employee) fits this sentence: “My older brother is a company employee at a large trading company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh trai tôi là nhân viên công ty làm ở một công ty thương mại lớn.”, nên cần 「会社員」(Nhân viên công ty); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother is a company employee at a large trading company.”, so it needs 「会社員」(Company employee); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "主婦",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母は（　）ですが、週に三日だけパートで働いています。 — Nghĩa của câu: “Mẹ tôi là nội trợ nhưng mỗi tuần làm bán thời gian ba ngày.”",
+        "en": "Choose the word that fits the blank: 母は（　）ですが、週に三日だけパートで働いています。 — Meaning of the sentence: “My mother is a homemaker but works part-time three days a week.”"
+      },
+      "payload": {
+        "choices": [
+          "主婦",
+          "履歴書",
+          "会社員",
+          "休日"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「主婦」(Nội trợ) hợp nghĩa câu này: “Mẹ tôi là nội trợ nhưng mỗi tuần làm bán thời gian ba ngày.”",
+        "en": "Correct! 「主婦」(Housewife; homemaker) fits this sentence: “My mother is a homemaker but works part-time three days a week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mẹ tôi là nội trợ nhưng mỗi tuần làm bán thời gian ba ngày.”, nên cần 「主婦」(Nội trợ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My mother is a homemaker but works part-time three days a week.”, so it needs 「主婦」(Housewife; homemaker); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "履歴書",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社に出す（　）に、写真をはりました。 — Nghĩa của câu: “Tôi đã dán ảnh vào sơ yếu lý lịch nộp cho công ty.”",
+        "en": "Choose the word that fits the blank: 会社に出す（　）に、写真をはりました。 — Meaning of the sentence: “I attached a photo to the résumé I am submitting to the company.”"
+      },
+      "payload": {
+        "choices": [
+          "作業",
+          "履歴書",
+          "休日",
+          "主婦"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「履歴書」(Sơ yếu lý lịch) hợp nghĩa câu này: “Tôi đã dán ảnh vào sơ yếu lý lịch nộp cho công ty.”",
+        "en": "Correct! 「履歴書」(Résumé; CV) fits this sentence: “I attached a photo to the résumé I am submitting to the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã dán ảnh vào sơ yếu lý lịch nộp cho công ty.”, nên cần 「履歴書」(Sơ yếu lý lịch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I attached a photo to the résumé I am submitting to the company.”, so it needs 「履歴書」(Résumé; CV); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "作業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工場では、朝から夜まで同じ（　）を続けます。 — Nghĩa của câu: “Ở nhà máy, người ta làm cùng một công việc từ sáng đến tối.”",
+        "en": "Choose the word that fits the blank: 工場では、朝から夜まで同じ（　）を続けます。 — Meaning of the sentence: “At the factory, they carry on the same task from morning till night.”"
+      },
+      "payload": {
+        "choices": [
+          "履歴書",
+          "保険",
+          "作業",
+          "主婦"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「作業」(Công việc (thao tác); việc làm tay) hợp nghĩa câu này: “Ở nhà máy, người ta làm cùng một công việc từ sáng đến tối.”",
+        "en": "Correct! 「作業」(Work; task; operation) fits this sentence: “At the factory, they carry on the same task from morning till night.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở nhà máy, người ta làm cùng một công việc từ sáng đến tối.”, nên cần 「作業」(Công việc (thao tác); việc làm tay); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the factory, they carry on the same task from morning till night.”, so it needs 「作業」(Work; task; operation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "休日",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は、家族と公園へ行くことが多いです。 — Nghĩa của câu: “Vào ngày nghỉ, tôi thường đi công viên cùng gia đình.”",
+        "en": "Choose the word that fits the blank: （　）は、家族と公園へ行くことが多いです。 — Meaning of the sentence: “On my days off, I often go to the park with my family.”"
+      },
+      "payload": {
+        "choices": [
+          "履歴書",
+          "主婦",
+          "保険",
+          "休日"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「休日」(Ngày nghỉ; ngày lễ) hợp nghĩa câu này: “Vào ngày nghỉ, tôi thường đi công viên cùng gia đình.”",
+        "en": "Correct! 「休日」(Day off; holiday) fits this sentence: “On my days off, I often go to the park with my family.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào ngày nghỉ, tôi thường đi công viên cùng gia đình.”, nên cần 「休日」(Ngày nghỉ; ngày lễ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On my days off, I often go to the park with my family.”, so it needs 「休日」(Day off; holiday); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保険",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行に行く前に、（　）に入りました。 — Nghĩa của câu: “Trước khi đi du lịch, tôi đã tham gia bảo hiểm.”",
+        "en": "Choose the word that fits the blank: 旅行に行く前に、（　）に入りました。 — Meaning of the sentence: “I took out insurance before going on the trip.”"
+      },
+      "payload": {
+        "choices": [
+          "保険",
+          "会社員",
+          "作業",
+          "主婦"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保険」(Bảo hiểm) hợp nghĩa câu này: “Trước khi đi du lịch, tôi đã tham gia bảo hiểm.”",
+        "en": "Correct! 「保険」(Insurance) fits this sentence: “I took out insurance before going on the trip.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi đi du lịch, tôi đã tham gia bảo hiểm.”, nên cần 「保険」(Bảo hiểm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I took out insurance before going on the trip.”, so it needs 「保険」(Insurance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "会社員",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 兄は、大きな商社で働く「会社員」です。",
+        "en": "Choose the correct reading of the word in 「」: 兄は、大きな商社で働く「会社員」です。"
+      },
+      "payload": {
+        "choices": [
+          "かいしゃいん",
+          "りれきしょ",
+          "ほけん",
+          "しゅふ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「会社員」 đọc là 「かいしゃいん」, nghĩa là Nhân viên công ty.",
+        "en": "Correct! 「会社員」 is read 「かいしゃいん」 and means Company employee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「会社員」 đọc là 「かいしゃいん」 (Nhân viên công ty); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「会社員」 is read 「かいしゃいん」 (Company employee); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "作業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 工場では、朝から夜まで同じ「作業」を続けます。",
+        "en": "Choose the correct reading of the word in 「」: 工場では、朝から夜まで同じ「作業」を続けます。"
+      },
+      "payload": {
+        "choices": [
+          "きゅうじつ",
+          "さぎょう",
+          "りれきしょ",
+          "ほけん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「作業」 đọc là 「さぎょう」, nghĩa là Công việc (thao tác); việc làm tay.",
+        "en": "Correct! 「作業」 is read 「さぎょう」 and means Work; task; operation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「作業」 đọc là 「さぎょう」 (Công việc (thao tác); việc làm tay); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「作業」 is read 「さぎょう」 (Work; task; operation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "保険",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 旅行に行く前に、「ほけん」に入りました。",
+        "en": "Choose the correct way to write the word in 「」: 旅行に行く前に、「ほけん」に入りました。"
+      },
+      "payload": {
+        "choices": [
+          "会社員",
+          "保険",
+          "休日",
+          "作業"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほけん」 viết là 「保険」, nghĩa là Bảo hiểm.",
+        "en": "Correct! 「ほけん」 is written 「保険」 and means Insurance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ほけん」 viết là 「保険」 (Bảo hiểm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ほけん」 is written 「保険」 (Insurance); the other words are read differently."
+      }
+    }
+  ]
+}

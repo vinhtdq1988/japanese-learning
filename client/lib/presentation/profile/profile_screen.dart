@@ -5,6 +5,7 @@ import 'package:japanese_api/japanese_api.dart';
 
 import '../../data/account_repository.dart';
 import '../../data/auth_repository.dart';
+import '../../data/learning_repository.dart' show pathProvider;
 import '../../data/locale_provider.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
@@ -12,6 +13,7 @@ import '../auth/auth_support.dart' show AuthValidators;
 import '../classroom/locked_control.dart';
 import '../effects/effects_settings_section.dart';
 import '../path/plan_adjust_screen.dart' show invalidatePlanViews;
+import '../path/scope_notice_banner.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
 import 'account_security_sections.dart';
@@ -270,10 +272,20 @@ class _PlanSection extends ConsumerWidget {
         ],
       );
     }
+    // Thông báo phạm vi theo mục tiêu (spec 008, FR-022): trần N3 và "chưa có phần nghe hiểu" cho mục tiêu JLPT.
+    final path = ref.watch(pathProvider).valueOrNull;
+    final notices = scopeNoticeCodes(
+      notices: path?.notices,
+      scopeNotice: path?.scopeNotice,
+    );
     return ProfileSection(
       title: l10n.profileSectionPlan,
       help: l10n.profilePlanHelp,
       children: <Widget>[
+        if (notices.isNotEmpty) ...<Widget>[
+          ScopeNoticeBanner(notices: notices),
+          const SizedBox(height: 12),
+        ],
         Align(
           alignment: Alignment.centerLeft,
           child: Wrap(

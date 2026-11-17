@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'trial_content.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,20 +19,34 @@ part 'trial_content.g.dart';
 )
 class TrialContent {
   /// Returns a new [TrialContent] instance.
-  TrialContent({this.units});
+  TrialContent({
 
-  @JsonKey(name: r'units', required: false, includeIfNull: false)
+     this.units,
+  });
+
+  @JsonKey(
+    
+    name: r'units',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<TrialContentUnitsInner>? units;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) || other is TrialContent && other.units == units;
 
-  @override
-  int get hashCode => units.hashCode;
 
-  factory TrialContent.fromJson(Map<String, dynamic> json) =>
-      _$TrialContentFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is TrialContent &&
+      other.units == units;
+
+    @override
+    int get hashCode =>
+        units.hashCode;
+
+  factory TrialContent.fromJson(Map<String, dynamic> json) => _$TrialContentFromJson(json);
 
   Map<String, dynamic> toJson() => _$TrialContentToJson(this);
 
@@ -39,4 +54,6 @@ class TrialContent {
   String toString() {
     return toJson().toString();
   }
+
 }
+

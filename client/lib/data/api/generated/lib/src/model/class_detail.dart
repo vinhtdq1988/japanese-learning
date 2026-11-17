@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_detail.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,104 +20,212 @@ part 'class_detail.g.dart';
 class ClassDetail {
   /// Returns a new [ClassDetail] instance.
   ClassDetail({
-    required this.id,
 
-    required this.name,
+    required  this.id,
 
-    required this.status,
+    required  this.name,
 
-    required this.memberCount,
+    required  this.status,
 
-    required this.hasPath,
+    required  this.memberCount,
 
-    required this.teachers,
+    required  this.hasPath,
 
-    this.needAttentionCount,
+    required  this.teachers,
 
-    required this.teacherless,
+     this.needAttentionCount,
 
-    this.description,
+    required  this.teacherless,
 
-    this.absenceThresholdDays,
+     this.description,
 
-    this.archivedAt,
+     this.absenceThresholdDays,
 
-    this.createdAt,
+     this.archivedAt,
+
+     this.createdAt,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'name', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'name',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String name;
 
-  @JsonKey(name: r'status', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassDetailStatusEnum status;
 
-  @JsonKey(name: r'memberCount', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'memberCount',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int memberCount;
 
-  @JsonKey(name: r'hasPath', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'hasPath',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final bool hasPath;
 
-  @JsonKey(name: r'teachers', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teachers',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassRowTeachersInner> teachers;
 
-  /// Chỉ có khi người gọi có quyền xem dữ liệu học viên
-  @JsonKey(name: r'needAttentionCount', required: false, includeIfNull: false)
+
+
+      /// Chỉ có khi người gọi có quyền xem dữ liệu học viên
+  @JsonKey(
+    
+    name: r'needAttentionCount',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? needAttentionCount;
 
-  @JsonKey(name: r'teacherless', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teacherless',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final bool teacherless;
 
-  @JsonKey(name: r'description', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'description',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? description;
 
-  // minimum: 1
-  // maximum: 14
-  @JsonKey(name: r'absenceThresholdDays', required: false, includeIfNull: false)
+
+
+          // minimum: 1
+          // maximum: 14
+  @JsonKey(
+    
+    name: r'absenceThresholdDays',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? absenceThresholdDays;
 
-  @JsonKey(name: r'archivedAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'archivedAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? archivedAt;
 
-  @JsonKey(name: r'createdAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'createdAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? createdAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassDetail &&
-          other.id == id &&
-          other.name == name &&
-          other.status == status &&
-          other.memberCount == memberCount &&
-          other.hasPath == hasPath &&
-          other.teachers == teachers &&
-          other.needAttentionCount == needAttentionCount &&
-          other.teacherless == teacherless &&
-          other.description == description &&
-          other.absenceThresholdDays == absenceThresholdDays &&
-          other.archivedAt == archivedAt &&
-          other.createdAt == createdAt;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      name.hashCode +
-      status.hashCode +
-      memberCount.hashCode +
-      hasPath.hashCode +
-      teachers.hashCode +
-      needAttentionCount.hashCode +
-      teacherless.hashCode +
-      (description == null ? 0 : description.hashCode) +
-      absenceThresholdDays.hashCode +
-      (archivedAt == null ? 0 : archivedAt.hashCode) +
-      createdAt.hashCode;
 
-  factory ClassDetail.fromJson(Map<String, dynamic> json) =>
-      _$ClassDetailFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassDetail &&
+      other.id == id &&
+      other.name == name &&
+      other.status == status &&
+      other.memberCount == memberCount &&
+      other.hasPath == hasPath &&
+      other.teachers == teachers &&
+      other.needAttentionCount == needAttentionCount &&
+      other.teacherless == teacherless &&
+      other.description == description &&
+      other.absenceThresholdDays == absenceThresholdDays &&
+      other.archivedAt == archivedAt &&
+      other.createdAt == createdAt;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        name.hashCode +
+        status.hashCode +
+        memberCount.hashCode +
+        hasPath.hashCode +
+        teachers.hashCode +
+        needAttentionCount.hashCode +
+        teacherless.hashCode +
+        (description == null ? 0 : description.hashCode) +
+        absenceThresholdDays.hashCode +
+        (archivedAt == null ? 0 : archivedAt.hashCode) +
+        createdAt.hashCode;
+
+  factory ClassDetail.fromJson(Map<String, dynamic> json) => _$ClassDetailFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassDetailToJson(this);
 
@@ -124,18 +233,21 @@ class ClassDetail {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ClassDetailStatusEnum {
-  @JsonValue(r'active')
-  active(r'active'),
-  @JsonValue(r'archived')
-  archived(r'archived');
+@JsonValue(r'active')
+active(r'active'),
+@JsonValue(r'archived')
+archived(r'archived');
 
-  const ClassDetailStatusEnum(this.value);
+const ClassDetailStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-international",
+  "title": {
+    "vi": "Nguồn gốc, lãnh sự quán và đi lại quốc tế",
+    "en": "Origins, consulates and international travel"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1780,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "起源",
+      "reading": "きげん",
+      "meaning": {
+        "vi": "Nguồn gốc; khởi nguyên",
+        "en": "Origin"
+      },
+      "examples": [
+        {
+          "ja": "この祭りの起源は、千年以上前にあります。",
+          "reading": "このまつりのきげんは、せんねんいじょうまえにあります。",
+          "translation": {
+            "vi": "Nguồn gốc của lễ hội này có từ hơn một nghìn năm trước.",
+            "en": "The origin of this festival goes back more than a thousand years."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "母国語",
+      "reading": "ぼこくご",
+      "meaning": {
+        "vi": "Tiếng mẹ đẻ",
+        "en": "Native language"
+      },
+      "examples": [
+        {
+          "ja": "私の母国語は、ベトナム語です。",
+          "reading": "わたしのぼこくごは、ベトナムごです。",
+          "translation": {
+            "vi": "Tiếng mẹ đẻ của tôi là tiếng Việt.",
+            "en": "My native language is Vietnamese."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "領事館",
+      "reading": "りょうじかん",
+      "meaning": {
+        "vi": "Lãnh sự quán",
+        "en": "Consulate"
+      },
+      "examples": [
+        {
+          "ja": "パスポートをなくしたので、領事館へ行きました。",
+          "reading": "パスポートをなくしたので、りょうじかんへいきました。",
+          "translation": {
+            "vi": "Vì làm mất hộ chiếu nên tôi đã đến lãnh sự quán.",
+            "en": "I lost my passport, so I went to the consulate."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "外資",
+      "reading": "がいし",
+      "meaning": {
+        "vi": "Vốn nước ngoài",
+        "en": "Foreign capital"
+      },
+      "examples": [
+        {
+          "ja": "あの会社は、外資の会社で、外国人の社員が多いです。",
+          "reading": "あのかいしゃは、がいしのかいしゃで、がいこくじんのしゃいんがおおいです。",
+          "translation": {
+            "vi": "Công ty đó là công ty vốn nước ngoài, có nhiều nhân viên người nước ngoài.",
+            "en": "That company is foreign-owned and has many foreign employees."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "渡航",
+      "reading": "とこう",
+      "meaning": {
+        "vi": "Đi ra nước ngoài (bằng tàu, máy bay)",
+        "en": "Traveling abroad"
+      },
+      "examples": [
+        {
+          "ja": "海外へ渡航する前に、ビザを確認します。",
+          "reading": "かいがいへとこうするまえに、ビザをかくにんします。",
+          "translation": {
+            "vi": "Trước khi đi nước ngoài, tôi kiểm tra thị thực.",
+            "en": "Before traveling abroad, I check my visa."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "往来",
+      "reading": "おうらい",
+      "meaning": {
+        "vi": "Qua lại; giao thông qua lại",
+        "en": "Coming and going; traffic"
+      },
+      "examples": [
+        {
+          "ja": "この通りは、車の往来が激しいです。",
+          "reading": "このとおりは、くるまのおうらいがはげしいです。",
+          "translation": {
+            "vi": "Con đường này xe cộ qua lại rất đông.",
+            "en": "There is heavy traffic on this street."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "起源",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この祭りの（　）は、千年以上前にあります。 — Nghĩa của câu: “Nguồn gốc của lễ hội này có từ hơn một nghìn năm trước.”",
+        "en": "Choose the word that fits the blank: この祭りの（　）は、千年以上前にあります。 — Meaning of the sentence: “The origin of this festival goes back more than a thousand years.”"
+      },
+      "payload": {
+        "choices": [
+          "渡航",
+          "外資",
+          "起源",
+          "領事館"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「起源」(Nguồn gốc; khởi nguyên) hợp nghĩa câu này: “Nguồn gốc của lễ hội này có từ hơn một nghìn năm trước.”",
+        "en": "Correct! 「起源」(Origin) fits this sentence: “The origin of this festival goes back more than a thousand years.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nguồn gốc của lễ hội này có từ hơn một nghìn năm trước.”, nên cần 「起源」(Nguồn gốc; khởi nguyên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The origin of this festival goes back more than a thousand years.”, so it needs 「起源」(Origin); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "母国語",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の（　）は、ベトナム語です。 — Nghĩa của câu: “Tiếng mẹ đẻ của tôi là tiếng Việt.”",
+        "en": "Choose the word that fits the blank: 私の（　）は、ベトナム語です。 — Meaning of the sentence: “My native language is Vietnamese.”"
+      },
+      "payload": {
+        "choices": [
+          "往来",
+          "起源",
+          "領事館",
+          "母国語"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「母国語」(Tiếng mẹ đẻ) hợp nghĩa câu này: “Tiếng mẹ đẻ của tôi là tiếng Việt.”",
+        "en": "Correct! 「母国語」(Native language) fits this sentence: “My native language is Vietnamese.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tiếng mẹ đẻ của tôi là tiếng Việt.”, nên cần 「母国語」(Tiếng mẹ đẻ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My native language is Vietnamese.”, so it needs 「母国語」(Native language); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "領事館",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: パスポートをなくしたので、（　）へ行きました。 — Nghĩa của câu: “Vì làm mất hộ chiếu nên tôi đã đến lãnh sự quán.”",
+        "en": "Choose the word that fits the blank: パスポートをなくしたので、（　）へ行きました。 — Meaning of the sentence: “I lost my passport, so I went to the consulate.”"
+      },
+      "payload": {
+        "choices": [
+          "領事館",
+          "母国語",
+          "往来",
+          "渡航"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「領事館」(Lãnh sự quán) hợp nghĩa câu này: “Vì làm mất hộ chiếu nên tôi đã đến lãnh sự quán.”",
+        "en": "Correct! 「領事館」(Consulate) fits this sentence: “I lost my passport, so I went to the consulate.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì làm mất hộ chiếu nên tôi đã đến lãnh sự quán.”, nên cần 「領事館」(Lãnh sự quán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I lost my passport, so I went to the consulate.”, so it needs 「領事館」(Consulate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "外資",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あの会社は、（　）の会社で、外国人の社員が多いです。 — Nghĩa của câu: “Công ty đó là công ty vốn nước ngoài, có nhiều nhân viên người nước ngoài.”",
+        "en": "Choose the word that fits the blank: あの会社は、（　）の会社で、外国人の社員が多いです。 — Meaning of the sentence: “That company is foreign-owned and has many foreign employees.”"
+      },
+      "payload": {
+        "choices": [
+          "起源",
+          "外資",
+          "渡航",
+          "領事館"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「外資」(Vốn nước ngoài) hợp nghĩa câu này: “Công ty đó là công ty vốn nước ngoài, có nhiều nhân viên người nước ngoài.”",
+        "en": "Correct! 「外資」(Foreign capital) fits this sentence: “That company is foreign-owned and has many foreign employees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty đó là công ty vốn nước ngoài, có nhiều nhân viên người nước ngoài.”, nên cần 「外資」(Vốn nước ngoài); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That company is foreign-owned and has many foreign employees.”, so it needs 「外資」(Foreign capital); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "渡航",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海外へ（　）する前に、ビザを確認します。 — Nghĩa của câu: “Trước khi đi nước ngoài, tôi kiểm tra thị thực.”",
+        "en": "Choose the word that fits the blank: 海外へ（　）する前に、ビザを確認します。 — Meaning of the sentence: “Before traveling abroad, I check my visa.”"
+      },
+      "payload": {
+        "choices": [
+          "母国語",
+          "起源",
+          "渡航",
+          "外資"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「渡航」(Đi ra nước ngoài (bằng tàu, máy bay)) hợp nghĩa câu này: “Trước khi đi nước ngoài, tôi kiểm tra thị thực.”",
+        "en": "Correct! 「渡航」(Traveling abroad) fits this sentence: “Before traveling abroad, I check my visa.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trước khi đi nước ngoài, tôi kiểm tra thị thực.”, nên cần 「渡航」(Đi ra nước ngoài (bằng tàu, máy bay)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Before traveling abroad, I check my visa.”, so it needs 「渡航」(Traveling abroad); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "往来",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この通りは、車の（　）が激しいです。 — Nghĩa của câu: “Con đường này xe cộ qua lại rất đông.”",
+        "en": "Choose the word that fits the blank: この通りは、車の（　）が激しいです。 — Meaning of the sentence: “There is heavy traffic on this street.”"
+      },
+      "payload": {
+        "choices": [
+          "外資",
+          "母国語",
+          "渡航",
+          "往来"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「往来」(Qua lại; giao thông qua lại) hợp nghĩa câu này: “Con đường này xe cộ qua lại rất đông.”",
+        "en": "Correct! 「往来」(Coming and going; traffic) fits this sentence: “There is heavy traffic on this street.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Con đường này xe cộ qua lại rất đông.”, nên cần 「往来」(Qua lại; giao thông qua lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is heavy traffic on this street.”, so it needs 「往来」(Coming and going; traffic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "起源",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この祭りの「起源」は、千年以上前にあります。",
+        "en": "Choose the correct reading of the word in 「」: この祭りの「起源」は、千年以上前にあります。"
+      },
+      "payload": {
+        "choices": [
+          "ぼこくご",
+          "とこう",
+          "がいし",
+          "きげん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「起源」 đọc là 「きげん」, nghĩa là Nguồn gốc; khởi nguyên.",
+        "en": "Correct! 「起源」 is read 「きげん」 and means Origin."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「起源」 đọc là 「きげん」 (Nguồn gốc; khởi nguyên); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「起源」 is read 「きげん」 (Origin); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "外資",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: あの会社は、「外資」の会社で、外国人の社員が多いです。",
+        "en": "Choose the correct reading of the word in 「」: あの会社は、「外資」の会社で、外国人の社員が多いです。"
+      },
+      "payload": {
+        "choices": [
+          "がいし",
+          "ぼこくご",
+          "とこう",
+          "おうらい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「外資」 đọc là 「がいし」, nghĩa là Vốn nước ngoài.",
+        "en": "Correct! 「外資」 is read 「がいし」 and means Foreign capital."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「外資」 đọc là 「がいし」 (Vốn nước ngoài); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「外資」 is read 「がいし」 (Foreign capital); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "往来",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この通りは、車の「おうらい」が激しいです。",
+        "en": "Choose the correct way to write the word in 「」: この通りは、車の「おうらい」が激しいです。"
+      },
+      "payload": {
+        "choices": [
+          "往来",
+          "外資",
+          "起源",
+          "母国語"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「おうらい」 viết là 「往来」, nghĩa là Qua lại; giao thông qua lại.",
+        "en": "Correct! 「おうらい」 is written 「往来」 and means Coming and going; traffic."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「おうらい」 viết là 「往来」 (Qua lại; giao thông qua lại); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「おうらい」 is written 「往来」 (Coming and going; traffic); the other words are read differently."
+      }
+    }
+  ]
+}

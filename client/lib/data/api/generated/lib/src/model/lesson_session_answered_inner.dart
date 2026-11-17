@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'lesson_session_answered_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'lesson_session_answered_inner.g.dart';
 )
 class LessonSessionAnsweredInner {
   /// Returns a new [LessonSessionAnsweredInner] instance.
-  LessonSessionAnsweredInner({this.exerciseId, this.isCorrect});
+  LessonSessionAnsweredInner({
 
-  @JsonKey(name: r'exerciseId', required: false, includeIfNull: false)
+     this.exerciseId,
+
+     this.isCorrect,
+  });
+
+  @JsonKey(
+    
+    name: r'exerciseId',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? exerciseId;
 
-  @JsonKey(name: r'isCorrect', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'isCorrect',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? isCorrect;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is LessonSessionAnsweredInner &&
-          other.exerciseId == exerciseId &&
-          other.isCorrect == isCorrect;
 
-  @override
-  int get hashCode => exerciseId.hashCode + isCorrect.hashCode;
 
-  factory LessonSessionAnsweredInner.fromJson(Map<String, dynamic> json) =>
-      _$LessonSessionAnsweredInnerFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is LessonSessionAnsweredInner &&
+      other.exerciseId == exerciseId &&
+      other.isCorrect == isCorrect;
+
+    @override
+    int get hashCode =>
+        exerciseId.hashCode +
+        isCorrect.hashCode;
+
+  factory LessonSessionAnsweredInner.fromJson(Map<String, dynamic> json) => _$LessonSessionAnsweredInnerFromJson(json);
 
   Map<String, dynamic> toJson() => _$LessonSessionAnsweredInnerToJson(this);
 
@@ -44,4 +69,6 @@ class LessonSessionAnsweredInner {
   String toString() {
     return toJson().toString();
   }
+
 }
+

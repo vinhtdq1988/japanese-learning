@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'admin_organization_page.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,30 +19,66 @@ part 'admin_organization_page.g.dart';
 )
 class AdminOrganizationPage {
   /// Returns a new [AdminOrganizationPage] instance.
-  AdminOrganizationPage({required this.items, required this.total, this.page});
+  AdminOrganizationPage({
 
-  @JsonKey(name: r'items', required: true, includeIfNull: false)
+    required  this.items,
+
+    required  this.total,
+
+     this.page,
+  });
+
+  @JsonKey(
+    
+    name: r'items',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<AdminOrganizationRow> items;
 
-  @JsonKey(name: r'total', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'total',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int total;
 
-  @JsonKey(name: r'page', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'page',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? page;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is AdminOrganizationPage &&
-          other.items == items &&
-          other.total == total &&
-          other.page == page;
 
-  @override
-  int get hashCode => items.hashCode + total.hashCode + page.hashCode;
 
-  factory AdminOrganizationPage.fromJson(Map<String, dynamic> json) =>
-      _$AdminOrganizationPageFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is AdminOrganizationPage &&
+      other.items == items &&
+      other.total == total &&
+      other.page == page;
+
+    @override
+    int get hashCode =>
+        items.hashCode +
+        total.hashCode +
+        page.hashCode;
+
+  factory AdminOrganizationPage.fromJson(Map<String, dynamic> json) => _$AdminOrganizationPageFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminOrganizationPageToJson(this);
 
@@ -49,4 +86,6 @@ class AdminOrganizationPage {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-infrastructure",
+  "title": {
+    "vi": "Vé nhiều lượt, cống rãnh và hạ tầng giao thông",
+    "en": "Coupon tickets, drains and transport infrastructure"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1980,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "回数券",
+      "reading": "かいすうけん",
+      "meaning": {
+        "vi": "Vé nhiều lượt (vé tập)",
+        "en": "Coupon ticket book"
+      },
+      "examples": [
+        {
+          "ja": "バスの回数券を買うと、少し安くなります。",
+          "reading": "バスのかいすうけんをかうと、すこしやすくなります。",
+          "translation": {
+            "vi": "Mua vé nhiều lượt của xe buýt thì rẻ hơn một chút.",
+            "en": "Buying a book of bus tickets makes each ride a little cheaper."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "下水",
+      "reading": "げすい",
+      "meaning": {
+        "vi": "Nước thải; cống thoát nước",
+        "en": "Sewage; drainage"
+      },
+      "examples": [
+        {
+          "ja": "大雨が降ると、下水があふれることがあります。",
+          "reading": "おおあめがふると、げすいがあふれることがあります。",
+          "translation": {
+            "vi": "Khi có mưa lớn, cống thoát nước đôi khi bị tràn.",
+            "en": "When it rains heavily, the sewers sometimes overflow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "電線",
+      "reading": "でんせん",
+      "meaning": {
+        "vi": "Dây điện",
+        "en": "Electric wire; power line"
+      },
+      "examples": [
+        {
+          "ja": "台風で電線が切れて、町が停電しました。",
+          "reading": "たいふうででんせんがきれて、まちがていでんしました。",
+          "translation": {
+            "vi": "Bão làm đứt dây điện nên cả thị trấn bị mất điện.",
+            "en": "The typhoon snapped power lines and the town lost power."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "道端",
+      "reading": "みちばた",
+      "meaning": {
+        "vi": "Ven đường",
+        "en": "Roadside"
+      },
+      "examples": [
+        {
+          "ja": "道端に、小さな花が咲いていました。",
+          "reading": "みちばたに、ちいさなはながさいていました。",
+          "translation": {
+            "vi": "Ven đường có những bông hoa nhỏ đang nở.",
+            "en": "Small flowers were blooming by the roadside."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "歩道橋",
+      "reading": "ほどうきょう",
+      "meaning": {
+        "vi": "Cầu vượt cho người đi bộ",
+        "en": "Pedestrian overpass"
+      },
+      "examples": [
+        {
+          "ja": "子どもたちは、歩道橋を渡って学校へ行きます。",
+          "reading": "こどもたちは、ほどうきょうをわたってがっこうへいきます。",
+          "translation": {
+            "vi": "Bọn trẻ đi qua cầu vượt dành cho người đi bộ để đến trường.",
+            "en": "The children cross the pedestrian overpass to get to school."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "交通機関",
+      "reading": "こうつうきかん",
+      "meaning": {
+        "vi": "Phương tiện giao thông công cộng",
+        "en": "Public transportation"
+      },
+      "examples": [
+        {
+          "ja": "雪の日は、交通機関が乱れやすいです。",
+          "reading": "ゆきのひは、こうつうきかんがみだれやすいです。",
+          "translation": {
+            "vi": "Những ngày có tuyết, giao thông công cộng dễ bị rối loạn.",
+            "en": "On snowy days, public transportation is easily disrupted."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "回数券",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: バスの（　）を買うと、少し安くなります。 — Nghĩa của câu: “Mua vé nhiều lượt của xe buýt thì rẻ hơn một chút.”",
+        "en": "Choose the word that fits the blank: バスの（　）を買うと、少し安くなります。 — Meaning of the sentence: “Buying a book of bus tickets makes each ride a little cheaper.”"
+      },
+      "payload": {
+        "choices": [
+          "歩道橋",
+          "交通機関",
+          "回数券",
+          "道端"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「回数券」(Vé nhiều lượt (vé tập)) hợp nghĩa câu này: “Mua vé nhiều lượt của xe buýt thì rẻ hơn một chút.”",
+        "en": "Correct! 「回数券」(Coupon ticket book) fits this sentence: “Buying a book of bus tickets makes each ride a little cheaper.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mua vé nhiều lượt của xe buýt thì rẻ hơn một chút.”, nên cần 「回数券」(Vé nhiều lượt (vé tập)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Buying a book of bus tickets makes each ride a little cheaper.”, so it needs 「回数券」(Coupon ticket book); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "下水",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大雨が降ると、（　）があふれることがあります。 — Nghĩa của câu: “Khi có mưa lớn, cống thoát nước đôi khi bị tràn.”",
+        "en": "Choose the word that fits the blank: 大雨が降ると、（　）があふれることがあります。 — Meaning of the sentence: “When it rains heavily, the sewers sometimes overflow.”"
+      },
+      "payload": {
+        "choices": [
+          "回数券",
+          "歩道橋",
+          "道端",
+          "下水"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「下水」(Nước thải; cống thoát nước) hợp nghĩa câu này: “Khi có mưa lớn, cống thoát nước đôi khi bị tràn.”",
+        "en": "Correct! 「下水」(Sewage; drainage) fits this sentence: “When it rains heavily, the sewers sometimes overflow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi có mưa lớn, cống thoát nước đôi khi bị tràn.”, nên cần 「下水」(Nước thải; cống thoát nước); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When it rains heavily, the sewers sometimes overflow.”, so it needs 「下水」(Sewage; drainage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "電線",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風で（　）が切れて、町が停電しました。 — Nghĩa của câu: “Bão làm đứt dây điện nên cả thị trấn bị mất điện.”",
+        "en": "Choose the word that fits the blank: 台風で（　）が切れて、町が停電しました。 — Meaning of the sentence: “The typhoon snapped power lines and the town lost power.”"
+      },
+      "payload": {
+        "choices": [
+          "電線",
+          "回数券",
+          "交通機関",
+          "歩道橋"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「電線」(Dây điện) hợp nghĩa câu này: “Bão làm đứt dây điện nên cả thị trấn bị mất điện.”",
+        "en": "Correct! 「電線」(Electric wire; power line) fits this sentence: “The typhoon snapped power lines and the town lost power.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bão làm đứt dây điện nên cả thị trấn bị mất điện.”, nên cần 「電線」(Dây điện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The typhoon snapped power lines and the town lost power.”, so it needs 「電線」(Electric wire; power line); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "道端",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）に、小さな花が咲いていました。 — Nghĩa của câu: “Ven đường có những bông hoa nhỏ đang nở.”",
+        "en": "Choose the word that fits the blank: （　）に、小さな花が咲いていました。 — Meaning of the sentence: “Small flowers were blooming by the roadside.”"
+      },
+      "payload": {
+        "choices": [
+          "電線",
+          "道端",
+          "交通機関",
+          "歩道橋"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「道端」(Ven đường) hợp nghĩa câu này: “Ven đường có những bông hoa nhỏ đang nở.”",
+        "en": "Correct! 「道端」(Roadside) fits this sentence: “Small flowers were blooming by the roadside.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ven đường có những bông hoa nhỏ đang nở.”, nên cần 「道端」(Ven đường); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Small flowers were blooming by the roadside.”, so it needs 「道端」(Roadside); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "歩道橋",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 子どもたちは、（　）を渡って学校へ行きます。 — Nghĩa của câu: “Bọn trẻ đi qua cầu vượt dành cho người đi bộ để đến trường.”",
+        "en": "Choose the word that fits the blank: 子どもたちは、（　）を渡って学校へ行きます。 — Meaning of the sentence: “The children cross the pedestrian overpass to get to school.”"
+      },
+      "payload": {
+        "choices": [
+          "道端",
+          "電線",
+          "歩道橋",
+          "回数券"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「歩道橋」(Cầu vượt cho người đi bộ) hợp nghĩa câu này: “Bọn trẻ đi qua cầu vượt dành cho người đi bộ để đến trường.”",
+        "en": "Correct! 「歩道橋」(Pedestrian overpass) fits this sentence: “The children cross the pedestrian overpass to get to school.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bọn trẻ đi qua cầu vượt dành cho người đi bộ để đến trường.”, nên cần 「歩道橋」(Cầu vượt cho người đi bộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The children cross the pedestrian overpass to get to school.”, so it needs 「歩道橋」(Pedestrian overpass); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "交通機関",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 雪の日は、（　）が乱れやすいです。 — Nghĩa của câu: “Những ngày có tuyết, giao thông công cộng dễ bị rối loạn.”",
+        "en": "Choose the word that fits the blank: 雪の日は、（　）が乱れやすいです。 — Meaning of the sentence: “On snowy days, public transportation is easily disrupted.”"
+      },
+      "payload": {
+        "choices": [
+          "道端",
+          "電線",
+          "回数券",
+          "交通機関"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「交通機関」(Phương tiện giao thông công cộng) hợp nghĩa câu này: “Những ngày có tuyết, giao thông công cộng dễ bị rối loạn.”",
+        "en": "Correct! 「交通機関」(Public transportation) fits this sentence: “On snowy days, public transportation is easily disrupted.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Những ngày có tuyết, giao thông công cộng dễ bị rối loạn.”, nên cần 「交通機関」(Phương tiện giao thông công cộng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On snowy days, public transportation is easily disrupted.”, so it needs 「交通機関」(Public transportation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "回数券",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: バスの「回数券」を買うと、少し安くなります。",
+        "en": "Choose the correct reading of the word in 「」: バスの「回数券」を買うと、少し安くなります。"
+      },
+      "payload": {
+        "choices": [
+          "げすい",
+          "こうつうきかん",
+          "でんせん",
+          "かいすうけん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「回数券」 đọc là 「かいすうけん」, nghĩa là Vé nhiều lượt (vé tập).",
+        "en": "Correct! 「回数券」 is read 「かいすうけん」 and means Coupon ticket book."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「回数券」 đọc là 「かいすうけん」 (Vé nhiều lượt (vé tập)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「回数券」 is read 「かいすうけん」 (Coupon ticket book); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "道端",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「道端」に、小さな花が咲いていました。",
+        "en": "Choose the correct reading of the word in 「」: 「道端」に、小さな花が咲いていました。"
+      },
+      "payload": {
+        "choices": [
+          "みちばた",
+          "でんせん",
+          "かいすうけん",
+          "げすい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「道端」 đọc là 「みちばた」, nghĩa là Ven đường.",
+        "en": "Correct! 「道端」 is read 「みちばた」 and means Roadside."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「道端」 đọc là 「みちばた」 (Ven đường); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「道端」 is read 「みちばた」 (Roadside); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "交通機関",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 雪の日は、「こうつうきかん」が乱れやすいです。",
+        "en": "Choose the correct way to write the word in 「」: 雪の日は、「こうつうきかん」が乱れやすいです。"
+      },
+      "payload": {
+        "choices": [
+          "交通機関",
+          "下水",
+          "歩道橋",
+          "電線"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こうつうきかん」 viết là 「交通機関」, nghĩa là Phương tiện giao thông công cộng.",
+        "en": "Correct! 「こうつうきかん」 is written 「交通機関」 and means Public transportation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こうつうきかん」 viết là 「交通機関」 (Phương tiện giao thông công cộng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こうつうきかん」 is written 「交通機関」 (Public transportation); the other words are read differently."
+      }
+    }
+  ]
+}

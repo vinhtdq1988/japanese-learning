@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'create_class_pause_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,33 +18,66 @@ part 'create_class_pause_request.g.dart';
 )
 class CreateClassPauseRequest {
   /// Returns a new [CreateClassPauseRequest] instance.
-  CreateClassPauseRequest({this.userId, required this.startedOn, this.endedOn});
+  CreateClassPauseRequest({
 
-  @JsonKey(name: r'userId', required: false, includeIfNull: false)
+     this.userId,
+
+    required  this.startedOn,
+
+     this.endedOn,
+  });
+
+  @JsonKey(
+    
+    name: r'userId',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? userId;
 
-  @JsonKey(name: r'startedOn', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'startedOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime startedOn;
 
-  @JsonKey(name: r'endedOn', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'endedOn',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? endedOn;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is CreateClassPauseRequest &&
-          other.userId == userId &&
-          other.startedOn == startedOn &&
-          other.endedOn == endedOn;
 
-  @override
-  int get hashCode =>
-      userId.hashCode +
-      startedOn.hashCode +
-      (endedOn == null ? 0 : endedOn.hashCode);
 
-  factory CreateClassPauseRequest.fromJson(Map<String, dynamic> json) =>
-      _$CreateClassPauseRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is CreateClassPauseRequest &&
+      other.userId == userId &&
+      other.startedOn == startedOn &&
+      other.endedOn == endedOn;
+
+    @override
+    int get hashCode =>
+        userId.hashCode +
+        startedOn.hashCode +
+        (endedOn == null ? 0 : endedOn.hashCode);
+
+  factory CreateClassPauseRequest.fromJson(Map<String, dynamic> json) => _$CreateClassPauseRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$CreateClassPauseRequestToJson(this);
 
@@ -51,4 +85,6 @@ class CreateClassPauseRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

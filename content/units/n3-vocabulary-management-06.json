@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-management",
+  "title": {
+    "vi": "Đóng tàu, hết hàng, phụ trách và đối tượng",
+    "en": "Shipbuilding, stock-outs and responsibilities"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1080,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "造船",
+      "reading": "ぞうせん",
+      "meaning": {
+        "vi": "Đóng tàu",
+        "en": "Shipbuilding"
+      },
+      "examples": [
+        {
+          "ja": "海に近いこの町は、造船で知られています。",
+          "reading": "うみにちかいこのまちは、ぞうせんでしられています。",
+          "translation": {
+            "vi": "Thị trấn gần biển này nổi tiếng về đóng tàu.",
+            "en": "This town near the sea is known for shipbuilding."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "品切れ",
+      "reading": "しなぎれ",
+      "meaning": {
+        "vi": "Hết hàng",
+        "en": "Out of stock"
+      },
+      "examples": [
+        {
+          "ja": "人気の商品は、すぐに品切れになってしまいます。",
+          "reading": "にんきのしょうひんは、すぐにしなぎれになってしまいます。",
+          "translation": {
+            "vi": "Hàng được ưa chuộng thường hết ngay.",
+            "en": "Popular products quickly go out of stock."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "受け持つ",
+      "reading": "うけもつ",
+      "meaning": {
+        "vi": "Phụ trách; đảm nhiệm",
+        "en": "To take charge of"
+      },
+      "examples": [
+        {
+          "ja": "私は、新入社員の研修を受け持つことになりました。",
+          "reading": "わたしは、しんにゅうしゃいんのけんしゅうをうけもつことになりました。",
+          "translation": {
+            "vi": "Tôi được giao phụ trách việc đào tạo nhân viên mới.",
+            "en": "I have been put in charge of training the new employees."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "指名",
+      "reading": "しめい",
+      "meaning": {
+        "vi": "Chỉ định; gọi tên",
+        "en": "Nomination; designation"
+      },
+      "examples": [
+        {
+          "ja": "会議で、司会者に指名されて、話すことになりました。",
+          "reading": "かいぎで、しかいしゃにしめいされて、はなすことになりました。",
+          "translation": {
+            "vi": "Ở cuộc họp, tôi được người điều hành chỉ định nên phải phát biểu.",
+            "en": "I was called on by the chair at the meeting and had to speak."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "予備",
+      "reading": "よび",
+      "meaning": {
+        "vi": "Dự phòng",
+        "en": "Spare; reserve"
+      },
+      "examples": [
+        {
+          "ja": "予備の電池を、かばんに入れておきました。",
+          "reading": "よびのでんちを、かばんにいれておきました。",
+          "translation": {
+            "vi": "Tôi đã bỏ pin dự phòng vào trong cặp.",
+            "en": "I put spare batteries in my bag."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "該当",
+      "reading": "がいとう",
+      "meaning": {
+        "vi": "Thuộc diện; tương ứng",
+        "en": "Applicable; corresponding"
+      },
+      "examples": [
+        {
+          "ja": "該当する項目に、丸をつけてください。",
+          "reading": "がいとうするこうもくに、まるをつけてください。",
+          "translation": {
+            "vi": "Xin hãy khoanh tròn vào mục thuộc diện áp dụng.",
+            "en": "Please circle the items that apply."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "造船",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海に近いこの町は、（　）で知られています。 — Nghĩa của câu: “Thị trấn gần biển này nổi tiếng về đóng tàu.”",
+        "en": "Choose the word that fits the blank: 海に近いこの町は、（　）で知られています。 — Meaning of the sentence: “This town near the sea is known for shipbuilding.”"
+      },
+      "payload": {
+        "choices": [
+          "指名",
+          "品切れ",
+          "受け持つ",
+          "造船"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「造船」(Đóng tàu) hợp nghĩa câu này: “Thị trấn gần biển này nổi tiếng về đóng tàu.”",
+        "en": "Correct! 「造船」(Shipbuilding) fits this sentence: “This town near the sea is known for shipbuilding.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn gần biển này nổi tiếng về đóng tàu.”, nên cần 「造船」(Đóng tàu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This town near the sea is known for shipbuilding.”, so it needs 「造船」(Shipbuilding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "品切れ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 人気の商品は、すぐに（　）になってしまいます。 — Nghĩa của câu: “Hàng được ưa chuộng thường hết ngay.”",
+        "en": "Choose the word that fits the blank: 人気の商品は、すぐに（　）になってしまいます。 — Meaning of the sentence: “Popular products quickly go out of stock.”"
+      },
+      "payload": {
+        "choices": [
+          "品切れ",
+          "予備",
+          "指名",
+          "造船"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「品切れ」(Hết hàng) hợp nghĩa câu này: “Hàng được ưa chuộng thường hết ngay.”",
+        "en": "Correct! 「品切れ」(Out of stock) fits this sentence: “Popular products quickly go out of stock.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hàng được ưa chuộng thường hết ngay.”, nên cần 「品切れ」(Hết hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Popular products quickly go out of stock.”, so it needs 「品切れ」(Out of stock); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "受け持つ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は、新入社員の研修を（　）ことになりました。 — Nghĩa của câu: “Tôi được giao phụ trách việc đào tạo nhân viên mới.”",
+        "en": "Choose the word that fits the blank: 私は、新入社員の研修を（　）ことになりました。 — Meaning of the sentence: “I have been put in charge of training the new employees.”"
+      },
+      "payload": {
+        "choices": [
+          "造船",
+          "受け持つ",
+          "指名",
+          "品切れ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「受け持つ」(Phụ trách; đảm nhiệm) hợp nghĩa câu này: “Tôi được giao phụ trách việc đào tạo nhân viên mới.”",
+        "en": "Correct! 「受け持つ」(To take charge of) fits this sentence: “I have been put in charge of training the new employees.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi được giao phụ trách việc đào tạo nhân viên mới.”, nên cần 「受け持つ」(Phụ trách; đảm nhiệm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have been put in charge of training the new employees.”, so it needs 「受け持つ」(To take charge of); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "指名",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会議で、司会者に（　）されて、話すことになりました。 — Nghĩa của câu: “Ở cuộc họp, tôi được người điều hành chỉ định nên phải phát biểu.”",
+        "en": "Choose the word that fits the blank: 会議で、司会者に（　）されて、話すことになりました。 — Meaning of the sentence: “I was called on by the chair at the meeting and had to speak.”"
+      },
+      "payload": {
+        "choices": [
+          "品切れ",
+          "造船",
+          "指名",
+          "該当"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「指名」(Chỉ định; gọi tên) hợp nghĩa câu này: “Ở cuộc họp, tôi được người điều hành chỉ định nên phải phát biểu.”",
+        "en": "Correct! 「指名」(Nomination; designation) fits this sentence: “I was called on by the chair at the meeting and had to speak.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở cuộc họp, tôi được người điều hành chỉ định nên phải phát biểu.”, nên cần 「指名」(Chỉ định; gọi tên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I was called on by the chair at the meeting and had to speak.”, so it needs 「指名」(Nomination; designation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "予備",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の電池を、かばんに入れておきました。 — Nghĩa của câu: “Tôi đã bỏ pin dự phòng vào trong cặp.”",
+        "en": "Choose the word that fits the blank: （　）の電池を、かばんに入れておきました。 — Meaning of the sentence: “I put spare batteries in my bag.”"
+      },
+      "payload": {
+        "choices": [
+          "造船",
+          "品切れ",
+          "指名",
+          "予備"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「予備」(Dự phòng) hợp nghĩa câu này: “Tôi đã bỏ pin dự phòng vào trong cặp.”",
+        "en": "Correct! 「予備」(Spare; reserve) fits this sentence: “I put spare batteries in my bag.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã bỏ pin dự phòng vào trong cặp.”, nên cần 「予備」(Dự phòng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I put spare batteries in my bag.”, so it needs 「予備」(Spare; reserve); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "該当",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）する項目に、丸をつけてください。 — Nghĩa của câu: “Xin hãy khoanh tròn vào mục thuộc diện áp dụng.”",
+        "en": "Choose the word that fits the blank: （　）する項目に、丸をつけてください。 — Meaning of the sentence: “Please circle the items that apply.”"
+      },
+      "payload": {
+        "choices": [
+          "該当",
+          "造船",
+          "予備",
+          "指名"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「該当」(Thuộc diện; tương ứng) hợp nghĩa câu này: “Xin hãy khoanh tròn vào mục thuộc diện áp dụng.”",
+        "en": "Correct! 「該当」(Applicable; corresponding) fits this sentence: “Please circle the items that apply.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin hãy khoanh tròn vào mục thuộc diện áp dụng.”, nên cần 「該当」(Thuộc diện; tương ứng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please circle the items that apply.”, so it needs 「該当」(Applicable; corresponding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "造船",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 海に近いこの町は、「造船」で知られています。",
+        "en": "Choose the correct reading of the word in 「」: 海に近いこの町は、「造船」で知られています。"
+      },
+      "payload": {
+        "choices": [
+          "ぞうせん",
+          "しなぎれ",
+          "よび",
+          "しめい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「造船」 đọc là 「ぞうせん」, nghĩa là Đóng tàu.",
+        "en": "Correct! 「造船」 is read 「ぞうせん」 and means Shipbuilding."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「造船」 đọc là 「ぞうせん」 (Đóng tàu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「造船」 is read 「ぞうせん」 (Shipbuilding); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "指名",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 会議で、司会者に「指名」されて、話すことになりました。",
+        "en": "Choose the correct reading of the word in 「」: 会議で、司会者に「指名」されて、話すことになりました。"
+      },
+      "payload": {
+        "choices": [
+          "うけもつ",
+          "しめい",
+          "しなぎれ",
+          "よび"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「指名」 đọc là 「しめい」, nghĩa là Chỉ định; gọi tên.",
+        "en": "Correct! 「指名」 is read 「しめい」 and means Nomination; designation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「指名」 đọc là 「しめい」 (Chỉ định; gọi tên); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「指名」 is read 「しめい」 (Nomination; designation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "該当",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「がいとう」する項目に、丸をつけてください。",
+        "en": "Choose the correct way to write the word in 「」: 「がいとう」する項目に、丸をつけてください。"
+      },
+      "payload": {
+        "choices": [
+          "造船",
+          "該当",
+          "指名",
+          "品切れ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「がいとう」 viết là 「該当」, nghĩa là Thuộc diện; tương ứng.",
+        "en": "Correct! 「がいとう」 is written 「該当」 and means Applicable; corresponding."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「がいとう」 viết là 「該当」 (Thuộc diện; tương ứng); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「がいとう」 is written 「該当」 (Applicable; corresponding); the other words are read differently."
+      }
+    }
+  ]
+}

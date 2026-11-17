@@ -170,6 +170,38 @@
   "@scopeNoticeContentCeiling": {
     "description": "Thông báo khi trình độ hoặc mục tiêu JLPT là N2/N1, vượt phạm vi nội dung"
   },
+  "scopeNoticeListeningNotAvailable": "Ứng dụng chưa có phần nghe hiểu của kỳ thi JLPT (dự kiến ở giai đoạn sau). Hãy luyện nghe bằng đề thi hoặc tài liệu bên ngoài; các phần từ vựng, ngữ pháp, chữ Hán, đọc và viết đã có trong lộ trình.",
+  "@scopeNoticeListeningNotAvailable": {
+    "description": "Thông báo cho người học có mục tiêu JLPT: chưa có phần nghe hiểu (spec 008, FR-022)"
+  },
+  "pathLoadMore": "Tải thêm ({loaded}/{total})",
+  "@pathLoadMore": {
+    "description": "Nút nạp thêm đơn vị của lộ trình (danh sách phân trang)",
+    "placeholders": {
+      "loaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "scopeNoticeDialogTitle": "Lưu ý về phạm vi nội dung",
+  "@scopeNoticeDialogTitle": {
+    "description": "Tiêu đề hộp thoại nêu thông báo phạm vi sau khi hoàn tất onboarding với mục tiêu JLPT"
+  },
+  "classUnitsFilterTruncated": "Đang hiển thị {shown}/{total} bài. Dùng bộ lọc loại và trình độ để thu hẹp danh sách.",
+  "@classUnitsFilterTruncated": {
+    "description": "Gợi ý khi danh sách bài để giao quá dài và chỉ hiển thị một phần",
+    "placeholders": {
+      "shown": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "landingHeadline": "Học tiếng Nhật 5–15 phút mỗi ngày",
   "@landingHeadline": {
     "description": "Tiêu đề trang đầu"

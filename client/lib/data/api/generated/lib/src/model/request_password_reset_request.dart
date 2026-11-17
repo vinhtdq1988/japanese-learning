@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'request_password_reset_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'request_password_reset_request.g.dart';
 )
 class RequestPasswordResetRequest {
   /// Returns a new [RequestPasswordResetRequest] instance.
-  RequestPasswordResetRequest({required this.email});
+  RequestPasswordResetRequest({
 
-  @JsonKey(name: r'email', required: true, includeIfNull: false)
+    required  this.email,
+  });
+
+  @JsonKey(
+    
+    name: r'email',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String email;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is RequestPasswordResetRequest && other.email == email;
 
-  @override
-  int get hashCode => email.hashCode;
 
-  factory RequestPasswordResetRequest.fromJson(Map<String, dynamic> json) =>
-      _$RequestPasswordResetRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is RequestPasswordResetRequest &&
+      other.email == email;
+
+    @override
+    int get hashCode =>
+        email.hashCode;
+
+  factory RequestPasswordResetRequest.fromJson(Map<String, dynamic> json) => _$RequestPasswordResetRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$RequestPasswordResetRequestToJson(this);
 
@@ -39,4 +53,6 @@ class RequestPasswordResetRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -1,0 +1,201 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-school",
+  "title": {
+    "vi": "Viết: Trường học (2)",
+    "en": "Writing: School (2)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "知らせる",
+      "reading": "しらせる",
+      "meaning": {
+        "vi": "Thông báo; cho biết",
+        "en": "To notify; to let know"
+      }
+    },
+    {
+      "japanese": "花見",
+      "reading": "はなみ",
+      "meaning": {
+        "vi": "Ngắm hoa anh đào",
+        "en": "Cherry-blossom viewing"
+      }
+    },
+    {
+      "japanese": "ゴルフ",
+      "reading": "ゴルフ",
+      "meaning": {
+        "vi": "Golf",
+        "en": "Golf"
+      }
+    },
+    {
+      "japanese": "問題",
+      "reading": "もんだい",
+      "meaning": {
+        "vi": "Bài tập; vấn đề",
+        "en": "Problem; question (on a test)"
+      }
+    },
+    {
+      "japanese": "メッセージ",
+      "reading": "メッセージ",
+      "meaning": {
+        "vi": "Tin nhắn; lời nhắn",
+        "en": "Message"
+      }
+    },
+    {
+      "japanese": "運動会",
+      "reading": "うんどうかい",
+      "meaning": {
+        "vi": "Hội thao (của trường)",
+        "en": "Sports day"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Thông báo; cho biết”",
+        "en": "Type in Japanese: “To notify; to let know”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "知らせる",
+          "しらせる"
+        ],
+        "hint": "よみ: しらせる"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Thông báo; cho biết” viết là 知らせる (đọc là しらせる).",
+        "en": "Correct! “To notify; to let know” is written 知らせる (read as しらせる)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Thông báo; cho biết” viết là 知らせる (đọc là しらせる); hãy so lại từng ký tự.",
+        "en": "Not quite. “To notify; to let know” is written 知らせる (read as しらせる); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Ngắm hoa anh đào”",
+        "en": "Type in Japanese: “Cherry-blossom viewing”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "花見",
+          "はなみ"
+        ],
+        "hint": "よみ: はなみ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Ngắm hoa anh đào” viết là 花見 (đọc là はなみ).",
+        "en": "Correct! “Cherry-blossom viewing” is written 花見 (read as はなみ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Ngắm hoa anh đào” viết là 花見 (đọc là はなみ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Cherry-blossom viewing” is written 花見 (read as はなみ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Golf”",
+        "en": "Type in Japanese: “Golf”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ゴルフ"
+        ],
+        "hint": "Viết bằng katakana (3 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Golf” viết là ゴルフ.",
+        "en": "Correct! “Golf” is written ゴルフ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Golf” viết là ゴルフ; hãy so lại từng ký tự.",
+        "en": "Not quite. “Golf” is written ゴルフ; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bài tập; vấn đề”",
+        "en": "Type in Japanese: “Problem; question (on a test)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "問題",
+          "もんだい"
+        ],
+        "hint": "よみ: もんだい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bài tập; vấn đề” viết là 問題 (đọc là もんだい).",
+        "en": "Correct! “Problem; question (on a test)” is written 問題 (read as もんだい)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bài tập; vấn đề” viết là 問題 (đọc là もんだい); hãy so lại từng ký tự.",
+        "en": "Not quite. “Problem; question (on a test)” is written 問題 (read as もんだい); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tin nhắn; lời nhắn”",
+        "en": "Type in Japanese: “Message”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "メッセージ"
+        ],
+        "hint": "Viết bằng katakana (5 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tin nhắn; lời nhắn” viết là メッセージ.",
+        "en": "Correct! “Message” is written メッセージ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Tin nhắn; lời nhắn” viết là メッセージ; hãy so lại từng ký tự.",
+        "en": "Not quite. “Message” is written メッセージ; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Hội thao (của trường)”",
+        "en": "Type in Japanese: “Sports day”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "運動会",
+          "うんどうかい"
+        ],
+        "hint": "よみ: うんどうかい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Hội thao (của trường)” viết là 運動会 (đọc là うんどうかい).",
+        "en": "Correct! “Sports day” is written 運動会 (read as うんどうかい)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Hội thao (của trường)” viết là 運動会 (đọc là うんどうかい); hãy so lại từng ký tự.",
+        "en": "Not quite. “Sports day” is written 運動会 (read as うんどうかい); compare it character by character."
+      }
+    }
+  ]
+}

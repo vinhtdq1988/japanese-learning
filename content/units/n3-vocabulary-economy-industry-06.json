@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-economy-industry",
+  "title": {
+    "vi": "Bán lẻ, chi nhánh và ngành nghề",
+    "en": "Retail, branches and industries"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 480,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "小売",
+      "reading": "こうり",
+      "meaning": {
+        "vi": "Bán lẻ",
+        "en": "Retail"
+      },
+      "examples": [
+        {
+          "ja": "小売の店は、仕入れた商品を一つずつ客に売ります。",
+          "reading": "こうりのみせは、しいれたしょうひんをひとつずつきゃくにうります。",
+          "translation": {
+            "vi": "Cửa hàng bán lẻ bán từng món hàng đã nhập cho khách.",
+            "en": "Retail shops sell the goods they have bought one item at a time to customers."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "支社",
+      "reading": "ししゃ",
+      "meaning": {
+        "vi": "Chi nhánh (của công ty)",
+        "en": "Branch office (of a company)"
+      },
+      "examples": [
+        {
+          "ja": "来年、大阪に新しい支社ができる予定です。",
+          "reading": "らいねん、おおさかにあたらしいししゃができるよていです。",
+          "translation": {
+            "vi": "Dự kiến năm sau sẽ có chi nhánh mới ở Osaka.",
+            "en": "A new branch office is due to open in Osaka next year."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "職業",
+      "reading": "しょくぎょう",
+      "meaning": {
+        "vi": "Nghề nghiệp",
+        "en": "Occupation; profession"
+      },
+      "examples": [
+        {
+          "ja": "申込書には、名前と職業を書く欄があります。",
+          "reading": "もうしこみしょには、なまえとしょくぎょうをかくらんがあります。",
+          "translation": {
+            "vi": "Trong đơn đăng ký có ô để ghi tên và nghề nghiệp.",
+            "en": "The application form has a box for your name and occupation."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "産業",
+      "reading": "さんぎょう",
+      "meaning": {
+        "vi": "Công nghiệp; ngành sản xuất",
+        "en": "Industry"
+      },
+      "examples": [
+        {
+          "ja": "この地方では、農業が中心の産業です。",
+          "reading": "このちほうでは、のうぎょうがちゅうしんのさんぎょうです。",
+          "translation": {
+            "vi": "Ở vùng này, nông nghiệp là ngành sản xuất chủ yếu.",
+            "en": "In this region, farming is the main industry."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "案",
+      "reading": "あん",
+      "meaning": {
+        "vi": "Phương án; đề án",
+        "en": "Plan; proposal"
+      },
+      "examples": [
+        {
+          "ja": "新しい案を、来週の会議で説明します。",
+          "reading": "あたらしいあんを、らいしゅうのかいぎでせつめいします。",
+          "translation": {
+            "vi": "Tôi sẽ trình bày phương án mới ở cuộc họp tuần sau.",
+            "en": "I will explain the new proposal at next week’s meeting."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "取り扱い",
+      "reading": "とりあつかい",
+      "meaning": {
+        "vi": "Cách xử lý; việc xử lý (hàng hóa)",
+        "en": "Handling"
+      },
+      "examples": [
+        {
+          "ja": "この商品の取り扱いには、十分な注意が必要です。",
+          "reading": "このしょうひんのとりあつかいには、じゅうぶんなちゅういがひつようです。",
+          "translation": {
+            "vi": "Cần hết sức cẩn thận khi xử lý sản phẩm này.",
+            "en": "Great care is needed when handling this product."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "小売",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の店は、仕入れた商品を一つずつ客に売ります。 — Nghĩa của câu: “Cửa hàng bán lẻ bán từng món hàng đã nhập cho khách.”",
+        "en": "Choose the word that fits the blank: （　）の店は、仕入れた商品を一つずつ客に売ります。 — Meaning of the sentence: “Retail shops sell the goods they have bought one item at a time to customers.”"
+      },
+      "payload": {
+        "choices": [
+          "産業",
+          "職業",
+          "支社",
+          "小売"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小売」(Bán lẻ) hợp nghĩa câu này: “Cửa hàng bán lẻ bán từng món hàng đã nhập cho khách.”",
+        "en": "Correct! 「小売」(Retail) fits this sentence: “Retail shops sell the goods they have bought one item at a time to customers.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng bán lẻ bán từng món hàng đã nhập cho khách.”, nên cần 「小売」(Bán lẻ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Retail shops sell the goods they have bought one item at a time to customers.”, so it needs 「小売」(Retail); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "支社",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来年、大阪に新しい（　）ができる予定です。 — Nghĩa của câu: “Dự kiến năm sau sẽ có chi nhánh mới ở Osaka.”",
+        "en": "Choose the word that fits the blank: 来年、大阪に新しい（　）ができる予定です。 — Meaning of the sentence: “A new branch office is due to open in Osaka next year.”"
+      },
+      "payload": {
+        "choices": [
+          "支社",
+          "小売",
+          "取り扱い",
+          "職業"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「支社」(Chi nhánh (của công ty)) hợp nghĩa câu này: “Dự kiến năm sau sẽ có chi nhánh mới ở Osaka.”",
+        "en": "Correct! 「支社」(Branch office (of a company)) fits this sentence: “A new branch office is due to open in Osaka next year.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dự kiến năm sau sẽ có chi nhánh mới ở Osaka.”, nên cần 「支社」(Chi nhánh (của công ty)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A new branch office is due to open in Osaka next year.”, so it needs 「支社」(Branch office (of a company)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "職業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 申込書には、名前と（　）を書く欄があります。 — Nghĩa của câu: “Trong đơn đăng ký có ô để ghi tên và nghề nghiệp.”",
+        "en": "Choose the word that fits the blank: 申込書には、名前と（　）を書く欄があります。 — Meaning of the sentence: “The application form has a box for your name and occupation.”"
+      },
+      "payload": {
+        "choices": [
+          "案",
+          "職業",
+          "取り扱い",
+          "産業"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「職業」(Nghề nghiệp) hợp nghĩa câu này: “Trong đơn đăng ký có ô để ghi tên và nghề nghiệp.”",
+        "en": "Correct! 「職業」(Occupation; profession) fits this sentence: “The application form has a box for your name and occupation.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong đơn đăng ký có ô để ghi tên và nghề nghiệp.”, nên cần 「職業」(Nghề nghiệp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The application form has a box for your name and occupation.”, so it needs 「職業」(Occupation; profession); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "産業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この地方では、農業が中心の（　）です。 — Nghĩa của câu: “Ở vùng này, nông nghiệp là ngành sản xuất chủ yếu.”",
+        "en": "Choose the word that fits the blank: この地方では、農業が中心の（　）です。 — Meaning of the sentence: “In this region, farming is the main industry.”"
+      },
+      "payload": {
+        "choices": [
+          "職業",
+          "取り扱い",
+          "産業",
+          "小売"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「産業」(Công nghiệp; ngành sản xuất) hợp nghĩa câu này: “Ở vùng này, nông nghiệp là ngành sản xuất chủ yếu.”",
+        "en": "Correct! 「産業」(Industry) fits this sentence: “In this region, farming is the main industry.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở vùng này, nông nghiệp là ngành sản xuất chủ yếu.”, nên cần 「産業」(Công nghiệp; ngành sản xuất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In this region, farming is the main industry.”, so it needs 「産業」(Industry); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "案",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい（　）を、来週の会議で説明します。 — Nghĩa của câu: “Tôi sẽ trình bày phương án mới ở cuộc họp tuần sau.”",
+        "en": "Choose the word that fits the blank: 新しい（　）を、来週の会議で説明します。 — Meaning of the sentence: “I will explain the new proposal at next week’s meeting.”"
+      },
+      "payload": {
+        "choices": [
+          "産業",
+          "小売",
+          "職業",
+          "案"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「案」(Phương án; đề án) hợp nghĩa câu này: “Tôi sẽ trình bày phương án mới ở cuộc họp tuần sau.”",
+        "en": "Correct! 「案」(Plan; proposal) fits this sentence: “I will explain the new proposal at next week’s meeting.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi sẽ trình bày phương án mới ở cuộc họp tuần sau.”, nên cần 「案」(Phương án; đề án); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will explain the new proposal at next week’s meeting.”, so it needs 「案」(Plan; proposal); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "取り扱い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この商品の（　）には、十分な注意が必要です。 — Nghĩa của câu: “Cần hết sức cẩn thận khi xử lý sản phẩm này.”",
+        "en": "Choose the word that fits the blank: この商品の（　）には、十分な注意が必要です。 — Meaning of the sentence: “Great care is needed when handling this product.”"
+      },
+      "payload": {
+        "choices": [
+          "取り扱い",
+          "職業",
+          "産業",
+          "案"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「取り扱い」(Cách xử lý; việc xử lý (hàng hóa)) hợp nghĩa câu này: “Cần hết sức cẩn thận khi xử lý sản phẩm này.”",
+        "en": "Correct! 「取り扱い」(Handling) fits this sentence: “Great care is needed when handling this product.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cần hết sức cẩn thận khi xử lý sản phẩm này.”, nên cần 「取り扱い」(Cách xử lý; việc xử lý (hàng hóa)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Great care is needed when handling this product.”, so it needs 「取り扱い」(Handling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "小売",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「小売」の店は、仕入れた商品を一つずつ客に売ります。",
+        "en": "Choose the correct reading of the word in 「」: 「小売」の店は、仕入れた商品を一つずつ客に売ります。"
+      },
+      "payload": {
+        "choices": [
+          "こうり",
+          "さんぎょう",
+          "とりあつかい",
+          "あん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「小売」 đọc là 「こうり」, nghĩa là Bán lẻ.",
+        "en": "Correct! 「小売」 is read 「こうり」 and means Retail."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「小売」 đọc là 「こうり」 (Bán lẻ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「小売」 is read 「こうり」 (Retail); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "産業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この地方では、農業が中心の「産業」です。",
+        "en": "Choose the correct reading of the word in 「」: この地方では、農業が中心の「産業」です。"
+      },
+      "payload": {
+        "choices": [
+          "ししゃ",
+          "さんぎょう",
+          "こうり",
+          "とりあつかい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「産業」 đọc là 「さんぎょう」, nghĩa là Công nghiệp; ngành sản xuất.",
+        "en": "Correct! 「産業」 is read 「さんぎょう」 and means Industry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「産業」 đọc là 「さんぎょう」 (Công nghiệp; ngành sản xuất); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「産業」 is read 「さんぎょう」 (Industry); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "取り扱い",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この商品の「とりあつかい」には、十分な注意が必要です。",
+        "en": "Choose the correct way to write the word in 「」: この商品の「とりあつかい」には、十分な注意が必要です。"
+      },
+      "payload": {
+        "choices": [
+          "支社",
+          "取り扱い",
+          "職業",
+          "案"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「とりあつかい」 viết là 「取り扱い」, nghĩa là Cách xử lý; việc xử lý (hàng hóa).",
+        "en": "Correct! 「とりあつかい」 is written 「取り扱い」 and means Handling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「とりあつかい」 viết là 「取り扱い」 (Cách xử lý; việc xử lý (hàng hóa)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「とりあつかい」 is written 「取り扱い」 (Handling); the other words are read differently."
+      }
+    }
+  ]
+}

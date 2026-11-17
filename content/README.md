@@ -193,3 +193,26 @@ pnpm content:stats                     # số đơn vị/phút/mục/chủ đề
 ```
 
 `CONTENT_RELEASES=all|id1,id2` chọn đợt nạp (`pnpm seed`, kiểm thử); tham số `releases` của `loadContent`/`seedContent` thắng biến môi trường; vắng mặt = `all`. Vitest đặt `CONTENT_RELEASES=000-baseline` để các kiểm thử và golden hiện có giữ nguyên 33 đơn vị; kiểm thử về nội dung thật truyền `releases: 'all'` tường minh.
+
+### Thư viện sau đợt 014-final (2026-11-17)
+
+15 đợt phát hành (`releases/000-baseline.json` … `014-final.json`), **629 đơn vị** `active`. Số đơn vị theo loại × trình độ (kết quả `pnpm content:stats`):
+
+| Loại | N5 (baseline) | N4 | N3 |
+|---|---|---|---|
+| Từ vựng | 3 | 74 | 235 |
+| Ngữ pháp | 3 | 30 | 30 |
+| Chữ Hán | 3 | 48 | 91 |
+| Luyện đọc | 2 | 32 | 32 |
+| Luyện viết | 2 | 22 | 22 |
+
+Độ phủ danh mục (`pnpm content:coverage --final`): từ vựng N4 716/716 và N3 2.243/2.243, Kanji N4 170/170 và N3 359/359, ngữ pháp N4 104/104 và N3 106/106, đọc hiểu N4 14/14 và N3 13/13 — không còn dòng chưa phủ (SC-001). Tổng thời lượng từ vựng + ngữ pháp + Kanji N4 + N3 là 4.055 phút (SC-003 yêu cầu ≥ 2.700).
+
+### Ghi chú phát hành dành cho người học
+
+- Phạm vi học N4 → N3 tăng nhiều lần (từ 33 lên 629 đơn vị). Mọi tiến độ, lịch ôn và thành tựu hiện có được giữ nguyên.
+- **`completionRatio` (tỷ lệ hoàn thành mục tiêu) nay tính theo tổng số PHÚT học** thay vì số đơn vị. Vì phạm vi của mục tiêu tăng mạnh, tỷ lệ của người đang học có thể **giảm đột ngột** sau khi các đợt mới được kích hoạt; đây là kết quả đúng của phạm vi mới, không phải mất tiến độ.
+- Các thành tựu `goal_*` đã đạt trước đó **không bị thu hồi** dù tỷ lệ giảm.
+- Học viên có mục tiêu JLPT thấy thông báo "chưa có phần nghe hiểu" (`listening_not_available`); mục tiêu N2 trở lên dừng ở trần nội dung N3 (`content_ceiling_n3`).
+- Luyện đọc và luyện viết chỉ hiện với học viên có quỹ thời gian ≥ 30 phút/ngày.
+- Kênh thông báo trong ứng dụng/email cho học viên nằm ngoài kho mã này: người phụ trách phát hành cần đăng nội dung trên cho người học khi triển khai đợt đầu lên môi trường thật.

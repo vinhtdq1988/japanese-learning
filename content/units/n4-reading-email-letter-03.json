@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-school-life",
+  "title": {
+    "vi": "Đọc: Email xin nghỉ học vì sốt",
+    "en": "Reading: Email asking to miss class"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "田中先生\nおはようございます。リンです。きのうからねつがあって、きょうは学校を休みたいです。しゅくだいは、あしたもっていきます。じゅぎょうのノートは、友だちに借りるつもりです。すみませんが、よろしくおねがいします。\nリン",
+      "meaning": {
+        "vi": "Thưa thầy Tanaka. Chào buổi sáng ạ. Em là Lin. Từ hôm qua em bị sốt nên hôm nay em muốn xin nghỉ học. Bài tập em sẽ mang đến vào ngày mai. Vở ghi bài giảng em định mượn bạn. Em xin lỗi thầy, mong thầy giúp đỡ ạ. — Lin",
+        "en": "Dear Mr. Tanaka, Good morning. This is Lin. I have had a fever since yesterday, so I would like to miss school today. I will bring my homework tomorrow. I plan to borrow the class notes from a friend. I am sorry for the trouble, and thank you for your understanding. — Lin"
+      },
+      "reading": "たなかせんせい\nおはようございます。リンです。きのうからねつがあって、きょうはがっこうをやすみたいです。しゅくだいは、あしたもっていきます。じゅぎょうのノートは、ともだちにかりるつもりです。すみませんが、よろしくおねがいします。\nリン",
+      "explanation": {
+        "vi": "「～たいです」= muốn; 「～つもりです」= dự định; 「ねつ」= sốt; 「しゅくだい」= bài tập về nhà; 「じゅぎょう」= giờ học.",
+        "en": "「～たいです」 = want to; 「～つもりです」 = plan to; 「ねつ」 = fever; 「しゅくだい」 = homework; 「じゅぎょう」 = class."
+      },
+      "scopeRef": "r-n4-email-request-permission"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Vì sao Lin muốn nghỉ học hôm nay?",
+        "en": "Why does Lin want to miss school today?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì phải đi làm thêm",
+            "en": "Because of a part-time job"
+          },
+          {
+            "vi": "Vì bị sốt từ hôm qua",
+            "en": "Because of a fever since yesterday"
+          },
+          {
+            "vi": "Vì quên bài tập",
+            "en": "Because she forgot her homework"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「きのうからねつがあって」: 「きのうから」là từ hôm qua; Lin bị sốt (ねつ) nên muốn nghỉ.",
+        "en": "Correct! The text has 「きのうからねつがあって」: 「きのうから」 means since yesterday; Lin has a fever (ねつ), so she wants to rest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「きのうからねつがあって」: 「きのうから」là từ hôm qua; Lin bị sốt (ねつ) nên muốn nghỉ.",
+        "en": "Not quite. Look again at 「きのうからねつがあって」: 「きのうから」 means since yesterday; Lin has a fever (ねつ), so she wants to rest."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Lin sẽ nộp bài tập khi nào?",
+        "en": "When will Lin hand in her homework?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hôm nay",
+            "en": "Today"
+          },
+          {
+            "vi": "Ngày mai",
+            "en": "Tomorrow"
+          },
+          {
+            "vi": "Tuần sau",
+            "en": "Next week"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「しゅくだいは、あしたもっていきます」: 「あした」là ngày mai; Lin sẽ mang bài tập đến vào ngày mai.",
+        "en": "Correct! The text has 「しゅくだいは、あしたもっていきます」: 「あした」 means tomorrow; Lin will bring the homework then."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「しゅくだいは、あしたもっていきます」: 「あした」là ngày mai; Lin sẽ mang bài tập đến vào ngày mai.",
+        "en": "Not quite. Look again at 「しゅくだいは、あしたもっていきます」: 「あした」 means tomorrow; Lin will bring the homework then."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Lin sẽ xử lý phần vở ghi bài giảng như thế nào?",
+        "en": "How will Lin get the class notes?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mượn của bạn",
+            "en": "Borrow them from a friend"
+          },
+          {
+            "vi": "Xin thầy giáo",
+            "en": "Ask the teacher"
+          },
+          {
+            "vi": "Nghe lại bản ghi âm",
+            "en": "Listen to a recording"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「じゅぎょうのノートは、友だちに借りるつもりです」: 「友だちに借りる」nghĩa là mượn từ bạn bè.",
+        "en": "Correct! The text has 「じゅぎょうのノートは、友だちに借りるつもりです」: 「友だちに借りる」 means to borrow from a friend."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「じゅぎょうのノートは、友だちに借りるつもりです」: 「友だちに借りる」nghĩa là mượn từ bạn bè.",
+        "en": "Not quite. Look again at 「じゅぎょうのノートは、友だちに借りるつもりです」: 「友だちに借りる」 means to borrow from a friend."
+      }
+    }
+  ]
+}

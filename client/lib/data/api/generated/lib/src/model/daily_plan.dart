@@ -12,6 +12,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'daily_plan.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -22,89 +23,179 @@ part 'daily_plan.g.dart';
 class DailyPlan {
   /// Returns a new [DailyPlan] instance.
   DailyPlan({
-    this.id,
 
-    this.localDate,
+     this.id,
 
-    this.budgetMinutes,
+     this.localDate,
 
-    this.estimatedMinutes,
+     this.budgetMinutes,
 
-    this.status,
+     this.estimatedMinutes,
 
-    this.items,
+     this.status,
 
-    this.notice,
+     this.items,
 
-    this.kanjiNotice,
+     this.notice,
 
-    this.encouragement,
+     this.kanjiNotice,
 
-    this.summary,
+     this.encouragement,
+
+     this.summary,
   });
 
-  @JsonKey(name: r'id', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? id;
 
-  @JsonKey(name: r'localDate', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'localDate',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? localDate;
 
-  @JsonKey(name: r'budgetMinutes', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'budgetMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? budgetMinutes;
 
-  /// Luôn ≤ budgetMinutes
-  @JsonKey(name: r'estimatedMinutes', required: false, includeIfNull: false)
+
+
+      /// Luôn ≤ budgetMinutes
+  @JsonKey(
+    
+    name: r'estimatedMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? estimatedMinutes;
 
-  @JsonKey(name: r'status', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DailyPlanStatusEnum? status;
 
-  @JsonKey(name: r'items', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'items',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<PlanItem>? items;
 
-  /// Thông báo (đã học hết nội dung phù hợp, kế hoạch đã điều chỉnh sau khoảng nghỉ…)
-  @JsonKey(name: r'notice', required: false, includeIfNull: false)
+
+
+      /// Thông báo (đã học hết nội dung phù hợp, kế hoạch đã điều chỉnh sau khoảng nghỉ…)
+  @JsonKey(
+    
+    name: r'notice',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? notice;
 
-  @JsonKey(name: r'kanjiNotice', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'kanjiNotice',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DailyPlanKanjiNotice? kanjiNotice;
 
-  @JsonKey(name: r'encouragement', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'encouragement',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DailyPlanEncouragement? encouragement;
 
-  @JsonKey(name: r'summary', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'summary',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final SessionSummary? summary;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is DailyPlan &&
-          other.id == id &&
-          other.localDate == localDate &&
-          other.budgetMinutes == budgetMinutes &&
-          other.estimatedMinutes == estimatedMinutes &&
-          other.status == status &&
-          other.items == items &&
-          other.notice == notice &&
-          other.kanjiNotice == kanjiNotice &&
-          other.encouragement == encouragement &&
-          other.summary == summary;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      localDate.hashCode +
-      budgetMinutes.hashCode +
-      estimatedMinutes.hashCode +
-      status.hashCode +
-      items.hashCode +
-      (notice == null ? 0 : notice.hashCode) +
-      (kanjiNotice == null ? 0 : kanjiNotice.hashCode) +
-      (encouragement == null ? 0 : encouragement.hashCode) +
-      (summary == null ? 0 : summary.hashCode);
 
-  factory DailyPlan.fromJson(Map<String, dynamic> json) =>
-      _$DailyPlanFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is DailyPlan &&
+      other.id == id &&
+      other.localDate == localDate &&
+      other.budgetMinutes == budgetMinutes &&
+      other.estimatedMinutes == estimatedMinutes &&
+      other.status == status &&
+      other.items == items &&
+      other.notice == notice &&
+      other.kanjiNotice == kanjiNotice &&
+      other.encouragement == encouragement &&
+      other.summary == summary;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        localDate.hashCode +
+        budgetMinutes.hashCode +
+        estimatedMinutes.hashCode +
+        status.hashCode +
+        items.hashCode +
+        (notice == null ? 0 : notice.hashCode) +
+        (kanjiNotice == null ? 0 : kanjiNotice.hashCode) +
+        (encouragement == null ? 0 : encouragement.hashCode) +
+        (summary == null ? 0 : summary.hashCode);
+
+  factory DailyPlan.fromJson(Map<String, dynamic> json) => _$DailyPlanFromJson(json);
 
   Map<String, dynamic> toJson() => _$DailyPlanToJson(this);
 
@@ -112,18 +203,21 @@ class DailyPlan {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum DailyPlanStatusEnum {
-  @JsonValue(r'open')
-  open(r'open'),
-  @JsonValue(r'completed')
-  completed(r'completed');
+@JsonValue(r'open')
+open(r'open'),
+@JsonValue(r'completed')
+completed(r'completed');
 
-  const DailyPlanStatusEnum(this.value);
+const DailyPlanStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

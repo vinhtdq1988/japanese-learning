@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-business-email",
+  "title": {
+    "vi": "Đọc: Email trả lời câu hỏi về sự kiện",
+    "en": "Reading: Email replying to an event inquiry"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：Re: イベント参加についてのお問い合わせ\n林様\nお問い合わせいただき、ありがとうございます。\nご質問の件について、お答えいたします。\n1. 参加費\n参加費は、一人2,000円です。当日、受付でお支払いください。\n2. お申し込みの方法\nこのメールに、お名前、人数、電話番号を書いて、ご返信ください。お申し込みは、今月末までです。\n3. 持ち物\n特に必要なものはありません。ただし、会場は少しさむいので、上着を持ってくることをおすすめします。\n他にご不明な点がございましたら、いつでもお知らせください。\nお会いできるのを楽しみにしております。\n山田",
+      "meaning": {
+        "vi": "Tiêu đề: Re: Hỏi về việc tham gia sự kiện. Kính gửi anh/chị Hayashi. Cảm ơn anh/chị đã liên hệ. Tôi xin trả lời các câu hỏi của anh/chị. 1. Phí tham gia: 2.000 yên mỗi người. Xin thanh toán tại quầy tiếp tân vào ngày diễn ra. 2. Cách đăng ký: xin trả lời email này, ghi tên, số người và số điện thoại. Hạn đăng ký là cuối tháng này. 3. Đồ mang theo: không có gì đặc biệt cần thiết. Tuy nhiên, hội trường hơi lạnh nên chúng tôi khuyên anh/chị mang theo áo khoác. Nếu còn điểm nào chưa rõ, xin cứ cho chúng tôi biết bất cứ lúc nào. Rất mong được gặp anh/chị. — Yamada",
+        "en": "Subject: Re: Inquiry about attending the event. Dear Mr./Ms. Hayashi, Thank you for your inquiry. I will answer your questions. 1. Participation fee: 2,000 yen per person. Please pay at the reception desk on the day. 2. How to apply: Please reply to this email with your name, the number of people and your phone number. The application deadline is the end of this month. 3. What to bring: Nothing in particular is necessary. However, the venue is a little cold, so we recommend bringing a jacket. If you have any other questions, please let us know at any time. We look forward to seeing you. — Yamada"
+      },
+      "explanation": {
+        "vi": "「～ことをおすすめします」= khuyên nên…; 「ただし」= tuy nhiên; 「お～ください」là cách nhờ lịch sự; 「～を楽しみにしております」= mong chờ…. Từ vựng: 「お支払い」(おしはらい) = thanh toán; 「お申し込み」(おもうしこみ) = đăng ký; 「ご返信」(ごへんしん) = trả lời thư.",
+        "en": "「～ことをおすすめします」 = we recommend…ing; 「ただし」 = however; 「お～ください」 is a polite request; 「～を楽しみにしております」 = we look forward to…. Vocabulary: 「お支払い」(おしはらい) = payment; 「お申し込み」(おもうしこみ) = application; 「ご返信」(ごへんしん) = reply."
+      },
+      "scopeRef": "r-n3-email-apology-reply"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Phí tham gia là bao nhiêu và trả khi nào?",
+        "en": "How much is the fee, and when is it paid?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "2.000 yên mỗi người, trả vào ngày diễn ra tại quầy tiếp tân",
+            "en": "2,000 yen per person, paid at the reception desk on the day"
+          },
+          {
+            "vi": "2.000 yên mỗi người, chuyển khoản trước",
+            "en": "2,000 yen per person, transferred in advance"
+          },
+          {
+            "vi": "Miễn phí",
+            "en": "Free"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「参加費は、一人2,000円です。当日、受付でお支払いください」: 「当日」là ngày diễn ra sự kiện; phí trả tại quầy tiếp tân.",
+        "en": "Correct! The text has 「参加費は、一人2,000円です。当日、受付でお支払いください」: 「当日」 is the day of the event; the fee is paid at the reception desk."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「参加費は、一人2,000円です。当日、受付でお支払いください」: 「当日」là ngày diễn ra sự kiện; phí trả tại quầy tiếp tân.",
+        "en": "Not quite. Look again at 「参加費は、一人2,000円です。当日、受付でお支払いください」: 「当日」 is the day of the event; the fee is paid at the reception desk."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Muốn đăng ký thì làm thế nào?",
+        "en": "How do you apply?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gọi điện thoại",
+            "en": "Phone them"
+          },
+          {
+            "vi": "Trả lời email này kèm tên, số người, số điện thoại",
+            "en": "Reply to this email with name, number of people and phone number"
+          },
+          {
+            "vi": "Đến trực tiếp quầy tiếp tân",
+            "en": "Go to the reception desk in person"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「このメールに、お名前、人数、電話番号を書いて、ご返信ください」: Đăng ký bằng cách trả lời email này kèm các thông tin cần thiết.",
+        "en": "Correct! The text has 「このメールに、お名前、人数、電話番号を書いて、ご返信ください」: You apply by replying to this email with the required details."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「このメールに、お名前、人数、電話番号を書いて、ご返信ください」: Đăng ký bằng cách trả lời email này kèm các thông tin cần thiết.",
+        "en": "Not quite. Look again at 「このメールに、お名前、人数、電話番号を書いて、ご返信ください」: You apply by replying to this email with the required details."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Hạn đăng ký là khi nào?",
+        "en": "When is the application deadline?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cuối tháng này",
+            "en": "The end of this month"
+          },
+          {
+            "vi": "Ngày diễn ra sự kiện",
+            "en": "The day of the event"
+          },
+          {
+            "vi": "Cuối tuần này",
+            "en": "The end of this week"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「お申し込みは、今月末までです」: 「今月末」nghĩa là cuối tháng này.",
+        "en": "Correct! The text has 「お申し込みは、今月末までです」: 「今月末」 means the end of this month."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「お申し込みは、今月末までです」: 「今月末」nghĩa là cuối tháng này.",
+        "en": "Not quite. Look again at 「お申し込みは、今月末までです」: 「今月末」 means the end of this month."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người viết khuyên điều gì?",
+        "en": "What does the writer recommend?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mang theo áo khoác",
+            "en": "Bringing a jacket"
+          },
+          {
+            "vi": "Mang theo tiền mặt thêm",
+            "en": "Bringing extra cash"
+          },
+          {
+            "vi": "Đến sớm 1 tiếng",
+            "en": "Arriving an hour early"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「上着を持ってくることをおすすめします」: 「～ことをおすすめします」là khuyên nên; vì hội trường hơi lạnh nên khuyên mang áo khoác.",
+        "en": "Correct! The text has 「上着を持ってくることをおすすめします」: 「～ことをおすすめします」 is a recommendation; the venue is a bit cold, so a jacket is advised."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「上着を持ってくることをおすすめします」: 「～ことをおすすめします」là khuyên nên; vì hội trường hơi lạnh nên khuyên mang áo khoác.",
+        "en": "Not quite. Look again at 「上着を持ってくることをおすすめします」: 「～ことをおすすめします」 is a recommendation; the venue is a bit cold, so a jacket is advised."
+      }
+    }
+  ]
+}

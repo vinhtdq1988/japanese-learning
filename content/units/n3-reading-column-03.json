@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-column",
+  "title": {
+    "vi": "Đọc: Thanh niên có thật sự ngại đọc sách?",
+    "en": "Reading: Are young people really reading less?"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "「最近の若者は本を読まなくなった」とよく言われる。確かに、ある調査によると、一か月に一冊も本を読まない人は、若い世代で約半数にのぼるという。\nしかし、これは本当に「読書離れ」なのだろうか。スマートフォンで小説やニュースを読む人は、むしろ増えている。紙の本を読まなくなっただけで、文章にふれる時間は、以前より長くなっているかもしれない。\n大切なのは、何で読むかではなく、読んだ内容について自分で考えることだと思う。紙か画面かという議論よりも、読み方の質を問うべきではないだろうか。",
+      "meaning": {
+        "vi": "Người ta thường nói: “Thanh niên dạo này không đọc sách nữa.” Quả thật, theo một cuộc khảo sát, số người không đọc nổi một cuốn sách nào trong một tháng chiếm khoảng một nửa ở thế hệ trẻ. Nhưng liệu đây có thật sự là “ngại đọc sách”? Số người đọc tiểu thuyết hay tin tức trên điện thoại thông minh thậm chí đang tăng lên. Có thể họ chỉ không đọc sách giấy nữa, còn thời gian tiếp xúc với văn bản thì có khi còn dài hơn trước. Theo tôi, điều quan trọng không phải là đọc bằng phương tiện gì, mà là tự mình suy nghĩ về nội dung đã đọc. Thay vì tranh luận giấy hay màn hình, chẳng phải nên đặt câu hỏi về chất lượng của cách đọc sao?",
+        "en": "It is often said that “young people these days no longer read books.” It is true that, according to one survey, about half of the younger generation do not read even one book a month. But is this really a case of “turning away from reading”? The number of people who read novels and news on their smartphones is, if anything, increasing. They may simply have stopped reading paper books, and the time they spend with text may even be longer than before. I think what matters is not what you read on, but thinking for yourself about what you have read. Rather than the debate over paper versus screen, shouldn’t we be asking about the quality of the way people read?"
+      },
+      "explanation": {
+        "vi": "「～によると」= theo…; 「～という」= (nghe nói) là…; 「むしろ」= ngược lại/thậm chí; 「～べきではないだろうか」= chẳng phải nên…sao. Từ vựng: 「調査」(ちょうさ) = khảo sát; 「読書離れ」(どくしょばなれ) = xu hướng ngại đọc sách (離: はな.れる); 「冊」(さつ) = quyển; 「文章」(ぶんしょう) = văn bản.",
+        "en": "「～によると」 = according to…; 「～という」 = it is said that…; 「むしろ」 = if anything; 「～べきではないだろうか」 = shouldn’t we…? Vocabulary: 「調査」(ちょうさ) = survey; 「読書離れ」(どくしょばなれ) = turning away from reading (離: はな.れる); 「冊」(さつ) = counter for books; 「文章」(ぶんしょう) = text."
+      },
+      "scopeRef": "r-n3-column-society"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Theo khảo sát, điều gì xảy ra với thế hệ trẻ?",
+        "en": "According to the survey, what is true of the younger generation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khoảng một nửa không đọc cuốn sách nào trong một tháng",
+            "en": "About half do not read even one book a month"
+          },
+          {
+            "vi": "Hầu hết đọc hơn mười cuốn một tháng",
+            "en": "Most read more than ten books a month"
+          },
+          {
+            "vi": "Không ai đọc sách giấy",
+            "en": "No one reads paper books"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「一か月に一冊も本を読まない人は、若い世代で約半数にのぼるという」: 「約半数」là khoảng một nửa; đó là số người không đọc cuốn nào trong một tháng.",
+        "en": "Correct! The text has 「一か月に一冊も本を読まない人は、若い世代で約半数にのぼるという」: 「約半数」 means about half; they are people who read no book in a month."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「一か月に一冊も本を読まない人は、若い世代で約半数にのぼるという」: 「約半数」là khoảng một nửa; đó là số người không đọc cuốn nào trong một tháng.",
+        "en": "Not quite. Look again at 「一か月に一冊も本を読まない人は、若い世代で約半数にのぼるという」: 「約半数」 means about half; they are people who read no book in a month."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả chỉ ra điều gì ngược với suy nghĩ thông thường?",
+        "en": "What does the author point out that goes against common belief?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Số người đọc sách giấy tăng mạnh",
+            "en": "Readers of paper books are increasing sharply"
+          },
+          {
+            "vi": "Số người đọc tiểu thuyết và tin tức trên điện thoại đang tăng",
+            "en": "More people are reading novels and news on smartphones"
+          },
+          {
+            "vi": "Thanh niên ghét đọc chữ",
+            "en": "Young people hate reading text"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「スマートフォンで小説やニュースを読む人は、むしろ増えている」: 「むしろ」nghĩa là ngược lại: người đọc trên điện thoại đang tăng.",
+        "en": "Correct! The text has 「スマートフォンで小説やニュースを読む人は、むしろ増えている」: 「むしろ」 means on the contrary: people reading on smartphones are increasing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「スマートフォンで小説やニュースを読む人は、むしろ増えている」: 「むしろ」nghĩa là ngược lại: người đọc trên điện thoại đang tăng.",
+        "en": "Not quite. Look again at 「スマートフォンで小説やニュースを読む人は、むしろ増えている」: 「むしろ」 means on the contrary: people reading on smartphones are increasing."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều tác giả cho là quan trọng nhất là gì?",
+        "en": "What does the author consider most important?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đọc bằng sách giấy",
+            "en": "Reading on paper"
+          },
+          {
+            "vi": "Đọc thật nhiều sách mỗi tháng",
+            "en": "Reading many books every month"
+          },
+          {
+            "vi": "Tự mình suy nghĩ về nội dung đã đọc",
+            "en": "Thinking for yourself about what you have read"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「読んだ内容について自分で考えることだと思う」: Tác giả nhấn mạnh việc tự suy nghĩ về nội dung, không phải phương tiện đọc.",
+        "en": "Correct! The text has 「読んだ内容について自分で考えることだと思う」: The author stresses thinking about the content, not the medium."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「読んだ内容について自分で考えることだと思う」: Tác giả nhấn mạnh việc tự suy nghĩ về nội dung, không phải phương tiện đọc.",
+        "en": "Not quite. Look again at 「読んだ内容について自分で考えることだと思う」: The author stresses thinking about the content, not the medium."
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-health",
+  "title": {
+    "vi": "Đọc: Đi bộ buổi sáng",
+    "en": "Reading: Morning walks"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "三週間前から、朝ごはんの前に三十分歩いています。はじめは、早く起きるのがたいへんでした。でも、いまは朝の空気がすきになりました。よくねむれるようになったし、会社でもねむくなりません。これからも、つづけたいです。",
+      "meaning": {
+        "vi": "Từ ba tuần trước, tôi đi bộ 30 phút trước bữa sáng. Lúc đầu, dậy sớm rất vất vả. Nhưng bây giờ tôi đã thích không khí buổi sáng. Tôi ngủ ngon hơn, và ở công ty cũng không còn buồn ngủ. Tôi muốn tiếp tục như vậy từ nay về sau.",
+        "en": "For three weeks, I have been walking for thirty minutes before breakfast. At first, getting up early was hard. But now I have come to like the morning air. I have started to sleep well, and I don’t feel sleepy at work either. I want to keep it up from now on."
+      },
+      "reading": "さんしゅうかんまえから、あさごはんのまえにさんじゅっぷんあるいています。はじめは、はやくおきるのがたいへんでした。でも、いまはあさのくうきがすきになりました。よくねむれるようになったし、かいしゃでもねむくなりません。これからも、つづけたいです。",
+      "explanation": {
+        "vi": "「～ようになりました」= đã trở nên có thể…/bắt đầu…; 「～し、～」= liệt kê lý do; 「～くなりません」= không trở nên…",
+        "en": "「～ようになりました」 = has come to…; 「～し、～」 lists reasons; 「～くなりません」 = does not become…."
+      },
+      "scopeRef": "r-n4-essay-daily-impression"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Tác giả làm gì trước bữa sáng?",
+        "en": "What does the writer do before breakfast?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chạy 10 km",
+            "en": "Runs 10 km"
+          },
+          {
+            "vi": "Đi bộ 30 phút",
+            "en": "Walks for 30 minutes"
+          },
+          {
+            "vi": "Tập yoga",
+            "en": "Does yoga"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「朝ごはんの前に三十分歩いています」: 「三十分歩く」nghĩa là đi bộ 30 phút.",
+        "en": "Correct! The text has 「朝ごはんの前に三十分歩いています」: 「三十分歩く」 means walking for thirty minutes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「朝ごはんの前に三十分歩いています」: 「三十分歩く」nghĩa là đi bộ 30 phút.",
+        "en": "Not quite. Look again at 「朝ごはんの前に三十分歩いています」: 「三十分歩く」 means walking for thirty minutes."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Lúc đầu điều gì khó khăn với tác giả?",
+        "en": "What was hard for the writer at first?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Dậy sớm",
+            "en": "Getting up early"
+          },
+          {
+            "vi": "Đi bộ nhanh",
+            "en": "Walking fast"
+          },
+          {
+            "vi": "Ăn sáng nhiều",
+            "en": "Eating a big breakfast"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「早く起きるのがたいへんでした」: 「たいへん」là vất vả; việc khó lúc đầu là dậy sớm.",
+        "en": "Correct! The text has 「早く起きるのがたいへんでした」: 「たいへん」 means hard; what was difficult at first was waking up early."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「早く起きるのがたいへんでした」: 「たいへん」là vất vả; việc khó lúc đầu là dậy sớm.",
+        "en": "Not quite. Look again at 「早く起きるのがたいへんでした」: 「たいへん」 means hard; what was difficult at first was waking up early."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Hiện nay có thay đổi gì tốt?",
+        "en": "What good changes are there now?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Giảm được 5 kg",
+            "en": "Lost 5 kg"
+          },
+          {
+            "vi": "Ngủ ngon hơn và không buồn ngủ ở công ty",
+            "en": "Sleeps well and is not sleepy at work"
+          },
+          {
+            "vi": "Không phải ăn sáng nữa",
+            "en": "No longer needs breakfast"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「よくねむれるようになったし、会社でもねむくなりません」: 「～ようになった」chỉ sự thay đổi: ngủ ngon hơn và không buồn ngủ khi làm việc.",
+        "en": "Correct! The text has 「よくねむれるようになったし、会社でもねむくなりません」: 「～ようになった」 shows change: sleeping well and no sleepiness at work."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「よくねむれるようになったし、会社でもねむくなりません」: 「～ようになった」chỉ sự thay đổi: ngủ ngon hơn và không buồn ngủ khi làm việc.",
+        "en": "Not quite. Look again at 「よくねむれるようになったし、会社でもねむくなりません」: 「～ようになった」 shows change: sleeping well and no sleepiness at work."
+      }
+    }
+  ]
+}

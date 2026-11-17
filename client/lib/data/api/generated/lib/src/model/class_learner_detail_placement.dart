@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_learner_detail_placement.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,45 +20,81 @@ part 'class_learner_detail_placement.g.dart';
 class ClassLearnerDetailPlacement {
   /// Returns a new [ClassLearnerDetailPlacement] instance.
   ClassLearnerDetailPlacement({
-    this.estimatedLevel,
 
-    this.score,
+     this.estimatedLevel,
 
-    this.total,
+     this.score,
 
-    this.takenAt,
+     this.total,
+
+     this.takenAt,
   });
 
-  @JsonKey(name: r'estimatedLevel', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'estimatedLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Level? estimatedLevel;
 
-  @JsonKey(name: r'score', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'score',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? score;
 
-  @JsonKey(name: r'total', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'total',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? total;
 
-  @JsonKey(name: r'takenAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'takenAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? takenAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassLearnerDetailPlacement &&
-          other.estimatedLevel == estimatedLevel &&
-          other.score == score &&
-          other.total == total &&
-          other.takenAt == takenAt;
 
-  @override
-  int get hashCode =>
-      estimatedLevel.hashCode +
-      score.hashCode +
-      total.hashCode +
-      takenAt.hashCode;
 
-  factory ClassLearnerDetailPlacement.fromJson(Map<String, dynamic> json) =>
-      _$ClassLearnerDetailPlacementFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassLearnerDetailPlacement &&
+      other.estimatedLevel == estimatedLevel &&
+      other.score == score &&
+      other.total == total &&
+      other.takenAt == takenAt;
+
+    @override
+    int get hashCode =>
+        estimatedLevel.hashCode +
+        score.hashCode +
+        total.hashCode +
+        takenAt.hashCode;
+
+  factory ClassLearnerDetailPlacement.fromJson(Map<String, dynamic> json) => _$ClassLearnerDetailPlacementFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassLearnerDetailPlacementToJson(this);
 
@@ -65,4 +102,6 @@ class ClassLearnerDetailPlacement {
   String toString() {
     return toJson().toString();
   }
+
 }
+

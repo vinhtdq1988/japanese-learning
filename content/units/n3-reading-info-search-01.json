@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-info-search",
+  "title": {
+    "vi": "Đọc: Sự kiện tháng này tại hội trường thành phố",
+    "en": "Reading: This month’s events at the city hall"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【市民ホール　今月のイベント】\n5日（土）13:00～ 子ども映画会（無料）\n12日（土）14:00～ ピアノコンサート（1,500円）\n19日（土）10:00～ 手作り体験教室（材料費500円）\n※コンサートと体験教室は、前日までに予約が必要です。",
+      "meaning": {
+        "vi": "[Sự kiện tháng này tại Hội trường thành phố] Thứ Bảy ngày 5, từ 13:00: buổi chiếu phim cho trẻ em (miễn phí). Thứ Bảy ngày 12, từ 14:00: hòa nhạc piano (1.500 yên). Thứ Bảy ngày 19, từ 10:00: lớp trải nghiệm thủ công (phí nguyên liệu 500 yên). * Hòa nhạc và lớp trải nghiệm cần đặt trước chậm nhất vào ngày hôm trước.",
+        "en": "[This month’s events at the City Hall] Saturday the 5th, from 13:00: children’s film screening (free). Saturday the 12th, from 14:00: piano concert (1,500 yen). Saturday the 19th, from 10:00: handmade workshop (500 yen for materials). * The concert and the workshop require a reservation by the previous day."
+      },
+      "explanation": {
+        "vi": "「～までに」chỉ hạn chót; 「～が必要です」= cần…; 「無料」(むりょう) = miễn phí; 「体験」(たいけん) = trải nghiệm; 「材料費」(ざいりょうひ) = phí nguyên liệu.",
+        "en": "「～までに」 sets a deadline; 「～が必要です」 = is required; 「無料」(むりょう) = free of charge; 「体験」(たいけん) = hands-on experience; 「材料費」(ざいりょうひ) = cost of materials."
+      },
+      "scopeRef": "r-n3-info-schedule-event"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Muốn xem buổi chiếu phim cho trẻ em thì cần làm gì?",
+        "en": "What do you need to do to attend the children’s film screening?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đặt trước một ngày",
+            "en": "Reserve one day in advance"
+          },
+          {
+            "vi": "Trả 1.500 yên",
+            "en": "Pay 1,500 yen"
+          },
+          {
+            "vi": "Không cần đặt trước và miễn phí",
+            "en": "Nothing; it is free and needs no reservation"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「5日（土）13:00～ 子ども映画会（無料）」: Chỉ buổi hòa nhạc và lớp trải nghiệm cần đặt trước; buổi chiếu phim miễn phí.",
+        "en": "Correct! The text has 「5日（土）13:00～ 子ども映画会（無料）」: Only the concert and workshop need reservations; the film screening is free."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「5日（土）13:00～ 子ども映画会（無料）」: Chỉ buổi hòa nhạc và lớp trải nghiệm cần đặt trước; buổi chiếu phim miễn phí.",
+        "en": "Not quite. Look again at 「5日（土）13:00～ 子ども映画会（無料）」: Only the concert and workshop need reservations; the film screening is free."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Buổi hòa nhạc piano diễn ra khi nào và giá vé bao nhiêu?",
+        "en": "When is the piano concert and how much is it?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ngày 12, từ 14:00, 1.500 yên",
+            "en": "The 12th, from 14:00, 1,500 yen"
+          },
+          {
+            "vi": "Ngày 5, từ 13:00, 500 yên",
+            "en": "The 5th, from 13:00, 500 yen"
+          },
+          {
+            "vi": "Ngày 19, từ 10:00, 1.500 yên",
+            "en": "The 19th, from 10:00, 1,500 yen"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「12日（土）14:00～ ピアノコンサート（1,500円）」: Dòng của buổi hòa nhạc ghi ngày 12, 14:00 và 1.500 yên.",
+        "en": "Correct! The text has 「12日（土）14:00～ ピアノコンサート（1,500円）」: The concert line gives the 12th, 14:00 and 1,500 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「12日（土）14:00～ ピアノコンサート（1,500円）」: Dòng của buổi hòa nhạc ghi ngày 12, 14:00 và 1.500 yên.",
+        "en": "Not quite. Look again at 「12日（土）14:00～ ピアノコンサート（1,500円）」: The concert line gives the 12th, 14:00 and 1,500 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Những sự kiện nào cần đặt trước?",
+        "en": "Which events require a reservation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chỉ buổi chiếu phim",
+            "en": "Only the film screening"
+          },
+          {
+            "vi": "Hòa nhạc và lớp trải nghiệm",
+            "en": "The concert and the workshop"
+          },
+          {
+            "vi": "Cả ba sự kiện",
+            "en": "All three events"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「コンサートと体験教室は、前日までに予約が必要です」: Ghi chú ※ nói rõ hòa nhạc và lớp trải nghiệm cần đặt trước.",
+        "en": "Correct! The text has 「コンサートと体験教室は、前日までに予約が必要です」: The ※ note says the concert and the workshop need reservations."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「コンサートと体験教室は、前日までに予約が必要です」: Ghi chú ※ nói rõ hòa nhạc và lớp trải nghiệm cần đặt trước.",
+        "en": "Not quite. Look again at 「コンサートと体験教室は、前日までに予約が必要です」: The ※ note says the concert and the workshop need reservations."
+      }
+    }
+  ]
+}

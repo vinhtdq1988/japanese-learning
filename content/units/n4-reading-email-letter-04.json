@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Email xin về sớm",
+    "en": "Reading: Email asking to leave early"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1220,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "田中かちょう\nおつかれさまです。山本です。来週の木曜日のことで、おねがいがあります。その日は、子どもの学校で先生と話す会があるので、午後三時に会社を出たいです。朝は早く来て、昼ごはんの時間もみじかくして、仕事を先にすませるようにします。かいぎのしりょうは、水曜日の夕方までに作って、メールで送ります。もし木曜日に急ぎの仕事が入ったら、けいたいに電話をください。ごめいわくをおかけしてすみませんが、よろしくおねがいします。\n山本",
+      "meaning": {
+        "vi": "Thưa trưởng phòng Tanaka. Anh/chị vất vả rồi ạ. Em là Yamamoto. Em có một việc muốn nhờ về thứ Năm tuần sau. Hôm đó ở trường của con em có buổi nói chuyện với giáo viên, nên em muốn rời công ty lúc 3 giờ chiều. Buổi sáng em sẽ đến sớm, rút ngắn giờ ăn trưa và cố gắng làm xong công việc trước. Tài liệu họp em sẽ làm xong trước chiều thứ Tư và gửi bằng email. Nếu thứ Năm có việc gấp, xin hãy gọi vào điện thoại di động của em. Em xin lỗi vì làm phiền và mong anh/chị giúp đỡ. — Yamamoto",
+        "en": "Dear Manager Tanaka, Thank you for your hard work. This is Yamamoto. I have a request about next Thursday. On that day there is a meeting with my child’s teacher at school, so I would like to leave the office at 3 p.m. I will come in early in the morning, shorten my lunch break and finish my work beforehand. I will prepare the meeting materials by Wednesday evening and send them by email. If urgent work comes up on Thursday, please call my mobile phone. I am sorry for the inconvenience, and thank you for your understanding. — Yamamoto"
+      },
+      "reading": "たなかかちょう\nおつかれさまです。やまもとです。らいしゅうのもくようびのことで、おねがいがあります。そのひは、こどものがっこうでせんせいとはなすかいがあるので、ごごさんじにかいしゃをでたいです。あさははやくきて、ひるごはんのじかんもみじかくして、しごとをさきにすませるようにします。かいぎのしりょうは、すいようびのゆうがたまでにつくって、メールでおくります。もしもくようびにいそぎのしごとがはいったら、けいたいにでんわをください。ごめいわくをおかけしてすみませんが、よろしくおねがいします。\nやまもと",
+      "explanation": {
+        "vi": "「～ようにします」= cố gắng làm (すませるようにします); 「～ので」nêu lý do; 「かちょう」= trưởng phòng; 「しりょう」= tài liệu; 「かいぎ」= cuộc họp.",
+        "en": "「～ようにします」 = make an effort to (すませるようにします); 「～ので」 gives a reason; 「かちょう」 = section manager; 「しりょう」 = materials; 「かいぎ」 = meeting."
+      },
+      "scopeRef": "r-n4-email-request-permission"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamamoto muốn nhờ điều gì?",
+        "en": "What is Yamamoto asking for?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nghỉ cả ngày thứ Năm tuần sau",
+            "en": "The whole day off next Thursday"
+          },
+          {
+            "vi": "Rời công ty lúc 3 giờ chiều thứ Năm tuần sau",
+            "en": "To leave the office at 3 p.m. next Thursday"
+          },
+          {
+            "vi": "Đổi sang làm ca đêm",
+            "en": "To switch to the night shift"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「午後三時に会社を出たいです」: 「出たい」là muốn rời đi; anh ấy muốn rời công ty lúc 3 giờ chiều.",
+        "en": "Correct! The text has 「午後三時に会社を出たいです」: 「出たい」 means want to leave; he wants to leave the office at 3 p.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「午後三時に会社を出たいです」: 「出たい」là muốn rời đi; anh ấy muốn rời công ty lúc 3 giờ chiều.",
+        "en": "Not quite. Look again at 「午後三時に会社を出たいです」: 「出たい」 means want to leave; he wants to leave the office at 3 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao Yamamoto muốn về sớm?",
+        "en": "Why does Yamamoto want to leave early?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì phải đi khám bệnh",
+            "en": "To see a doctor"
+          },
+          {
+            "vi": "Vì phải đón bạn ở sân bay",
+            "en": "To pick up a friend at the airport"
+          },
+          {
+            "vi": "Vì có buổi nói chuyện với giáo viên của con",
+            "en": "Because of a meeting with his child’s teacher"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「子どもの学校で先生と話す会があるので」: 「～ので」nêu lý do: ở trường của con có buổi nói chuyện với giáo viên.",
+        "en": "Correct! The text has 「子どもの学校で先生と話す会があるので」: 「～ので」 gives the reason: there is a meeting with the teacher at his child’s school."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「子どもの学校で先生と話す会があるので」: 「～ので」nêu lý do: ở trường của con có buổi nói chuyện với giáo viên.",
+        "en": "Not quite. Look again at 「子どもの学校で先生と話す会があるので」: 「～ので」 gives the reason: there is a meeting with the teacher at his child’s school."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamamoto sẽ làm gì để bù lại?",
+        "en": "What will Yamamoto do to make up for it?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đến sớm, rút ngắn giờ ăn trưa và làm xong việc trước",
+            "en": "Come in early, shorten lunch and finish work beforehand"
+          },
+          {
+            "vi": "Làm thêm vào Chủ nhật",
+            "en": "Work on Sunday"
+          },
+          {
+            "vi": "Nhờ đồng nghiệp làm thay",
+            "en": "Ask a coworker to do his work"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「朝は早く来て、昼ごはんの時間もみじかくして」: Anh ấy sẽ đến sớm vào buổi sáng và rút ngắn giờ ăn trưa.",
+        "en": "Correct! The text has 「朝は早く来て、昼ごはんの時間もみじかくして」: He will come early in the morning and shorten his lunch break."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「朝は早く来て、昼ごはんの時間もみじかくして」: Anh ấy sẽ đến sớm vào buổi sáng và rút ngắn giờ ăn trưa.",
+        "en": "Not quite. Look again at 「朝は早く来て、昼ごはんの時間もみじかくして」: He will come early in the morning and shorten his lunch break."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamamoto sẽ gửi tài liệu họp khi nào?",
+        "en": "When will Yamamoto send the meeting materials?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trước chiều thứ Tư",
+            "en": "By Wednesday evening"
+          },
+          {
+            "vi": "Sáng thứ Năm",
+            "en": "On Thursday morning"
+          },
+          {
+            "vi": "Sau khi về nhà",
+            "en": "After he gets home"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「かいぎのしりょうは、水曜日の夕方までに作って」: 「～までに」chỉ hạn chót: làm xong trước chiều thứ Tư.",
+        "en": "Correct! The text has 「かいぎのしりょうは、水曜日の夕方までに作って」: 「～までに」 sets the deadline: finish by Wednesday evening."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「かいぎのしりょうは、水曜日の夕方までに作って」: 「～までに」chỉ hạn chót: làm xong trước chiều thứ Tư.",
+        "en": "Not quite. Look again at 「かいぎのしりょうは、水曜日の夕方までに作って」: 「～までに」 sets the deadline: finish by Wednesday evening."
+      }
+    }
+  ]
+}

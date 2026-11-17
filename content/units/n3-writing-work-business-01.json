@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-work-business",
+  "title": {
+    "vi": "Viết: Công việc – kinh doanh (1)",
+    "en": "Writing: Work and business (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "正社員",
+      "reading": "せいしゃいん",
+      "meaning": {
+        "vi": "Nhân viên chính thức",
+        "en": "Full-time employee"
+      }
+    },
+    {
+      "japanese": "記入",
+      "reading": "きにゅう",
+      "meaning": {
+        "vi": "Điền vào (biểu mẫu)",
+        "en": "Filling in (a form)"
+      }
+    },
+    {
+      "japanese": "カタログ",
+      "reading": "カタログ",
+      "meaning": {
+        "vi": "Ca-ta-lô",
+        "en": "Catalog"
+      }
+    },
+    {
+      "japanese": "手段",
+      "reading": "しゅだん",
+      "meaning": {
+        "vi": "Phương tiện; biện pháp",
+        "en": "Means; measure"
+      }
+    },
+    {
+      "japanese": "販売店",
+      "reading": "はんばいてん",
+      "meaning": {
+        "vi": "Cửa hàng bán lẻ (đại lý bán hàng)",
+        "en": "Retail outlet; dealer"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nhân viên chính thức”",
+        "en": "Type in Japanese: “Full-time employee”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "正社員",
+          "せいしゃいん"
+        ],
+        "hint": "よみ: せいしゃいん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nhân viên chính thức” viết là 正社員 (đọc là せいしゃいん).",
+        "en": "Correct! “Full-time employee” is written 正社員 (read as せいしゃいん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Nhân viên chính thức” viết là 正社員 (đọc là せいしゃいん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Full-time employee” is written 正社員 (read as せいしゃいん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Điền vào (biểu mẫu)”",
+        "en": "Type in Japanese: “Filling in (a form)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "記入",
+          "きにゅう"
+        ],
+        "hint": "よみ: きにゅう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Điền vào (biểu mẫu)” viết là 記入 (đọc là きにゅう).",
+        "en": "Correct! “Filling in (a form)” is written 記入 (read as きにゅう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Điền vào (biểu mẫu)” viết là 記入 (đọc là きにゅう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Filling in (a form)” is written 記入 (read as きにゅう); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Ca-ta-lô”",
+        "en": "Type in Japanese: “Catalog”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "カタログ"
+        ],
+        "hint": "Viết bằng katakana (4 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Ca-ta-lô” viết là カタログ.",
+        "en": "Correct! “Catalog” is written カタログ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Ca-ta-lô” viết là カタログ; hãy so lại từng ký tự.",
+        "en": "Not quite. “Catalog” is written カタログ; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Phương tiện; biện pháp”",
+        "en": "Type in Japanese: “Means; measure”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "手段",
+          "しゅだん"
+        ],
+        "hint": "よみ: しゅだん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Phương tiện; biện pháp” viết là 手段 (đọc là しゅだん).",
+        "en": "Correct! “Means; measure” is written 手段 (read as しゅだん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Phương tiện; biện pháp” viết là 手段 (đọc là しゅだん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Means; measure” is written 手段 (read as しゅだん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cửa hàng bán lẻ (đại lý bán hàng)”",
+        "en": "Type in Japanese: “Retail outlet; dealer”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "販売店",
+          "はんばいてん"
+        ],
+        "hint": "よみ: はんばいてん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cửa hàng bán lẻ (đại lý bán hàng)” viết là 販売店 (đọc là はんばいてん).",
+        "en": "Correct! “Retail outlet; dealer” is written 販売店 (read as はんばいてん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Cửa hàng bán lẻ (đại lý bán hàng)” viết là 販売店 (đọc là はんばいてん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Retail outlet; dealer” is written 販売店 (read as はんばいてん); compare it character by character."
+      }
+    }
+  ]
+}

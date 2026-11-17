@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-quantity-degree",
+  "title": {
+    "vi": "Phản ánh, đồng bộ, vật lý và phạm vi",
+    "en": "Reflection, sync, physics and scope"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1380,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "反映",
+      "reading": "はんえい",
+      "meaning": {
+        "vi": "Phản ánh",
+        "en": "Reflection; reflecting"
+      },
+      "examples": [
+        {
+          "ja": "お客さんの意見を、新しい商品に反映させました。",
+          "reading": "おきゃくさんのいけんを、あたらしいしょうひんにはんえいさせました。",
+          "translation": {
+            "vi": "Chúng tôi đã phản ánh ý kiến khách hàng vào sản phẩm mới.",
+            "en": "We reflected the customers’ opinions in the new product."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "同期",
+      "reading": "どうき",
+      "meaning": {
+        "vi": "Đồng bộ; cùng kỳ",
+        "en": "Synchronization; same period"
+      },
+      "examples": [
+        {
+          "ja": "スマホとパソコンのデータを同期しておきました。",
+          "reading": "スマホとパソコンのデータをどうきしておきました。",
+          "translation": {
+            "vi": "Tôi đã đồng bộ dữ liệu giữa điện thoại và máy tính.",
+            "en": "I synchronized the data between my phone and my computer."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "摩擦",
+      "reading": "まさつ",
+      "meaning": {
+        "vi": "Ma sát; xung đột",
+        "en": "Friction"
+      },
+      "examples": [
+        {
+          "ja": "手をこすると、摩擦で熱が出ます。",
+          "reading": "てをこすると、まさつでねつがでます。",
+          "translation": {
+            "vi": "Xoa hai tay vào nhau thì ma sát sinh ra nhiệt.",
+            "en": "When you rub your hands together, friction produces heat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "圧力",
+      "reading": "あつりょく",
+      "meaning": {
+        "vi": "Áp lực; sức ép",
+        "en": "Pressure"
+      },
+      "examples": [
+        {
+          "ja": "深い海の底では、水の圧力がとても高くなります。",
+          "reading": "ふかいうみのそこでは、みずのあつりょくがとてもたかくなります。",
+          "translation": {
+            "vi": "Ở đáy biển sâu, áp lực của nước rất cao.",
+            "en": "At the bottom of the deep sea, water pressure becomes very high."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "密度",
+      "reading": "みつど",
+      "meaning": {
+        "vi": "Mật độ",
+        "en": "Density"
+      },
+      "examples": [
+        {
+          "ja": "東京は、人口の密度が高い都市です。",
+          "reading": "とうきょうは、じんこうのみつどがたかいとしです。",
+          "translation": {
+            "vi": "Tokyo là thành phố có mật độ dân số cao.",
+            "en": "Tokyo is a city with a high population density."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "全国",
+      "reading": "ぜんこく",
+      "meaning": {
+        "vi": "Toàn quốc",
+        "en": "Nationwide; the whole country"
+      },
+      "examples": [
+        {
+          "ja": "このお菓子は、全国のスーパーで買えます。",
+          "reading": "このおかしは、ぜんこくのスーパーでかえます。",
+          "translation": {
+            "vi": "Loại bánh kẹo này có thể mua ở siêu thị trên toàn quốc.",
+            "en": "You can buy these sweets at supermarkets across the country."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "反映",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: お客さんの意見を、新しい商品に（　）させました。 — Nghĩa của câu: “Chúng tôi đã phản ánh ý kiến khách hàng vào sản phẩm mới.”",
+        "en": "Choose the word that fits the blank: お客さんの意見を、新しい商品に（　）させました。 — Meaning of the sentence: “We reflected the customers’ opinions in the new product.”"
+      },
+      "payload": {
+        "choices": [
+          "全国",
+          "同期",
+          "反映",
+          "圧力"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「反映」(Phản ánh) hợp nghĩa câu này: “Chúng tôi đã phản ánh ý kiến khách hàng vào sản phẩm mới.”",
+        "en": "Correct! 「反映」(Reflection; reflecting) fits this sentence: “We reflected the customers’ opinions in the new product.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi đã phản ánh ý kiến khách hàng vào sản phẩm mới.”, nên cần 「反映」(Phản ánh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We reflected the customers’ opinions in the new product.”, so it needs 「反映」(Reflection; reflecting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "同期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スマホとパソコンのデータを（　）しておきました。 — Nghĩa của câu: “Tôi đã đồng bộ dữ liệu giữa điện thoại và máy tính.”",
+        "en": "Choose the word that fits the blank: スマホとパソコンのデータを（　）しておきました。 — Meaning of the sentence: “I synchronized the data between my phone and my computer.”"
+      },
+      "payload": {
+        "choices": [
+          "圧力",
+          "密度",
+          "反映",
+          "同期"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「同期」(Đồng bộ; cùng kỳ) hợp nghĩa câu này: “Tôi đã đồng bộ dữ liệu giữa điện thoại và máy tính.”",
+        "en": "Correct! 「同期」(Synchronization; same period) fits this sentence: “I synchronized the data between my phone and my computer.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã đồng bộ dữ liệu giữa điện thoại và máy tính.”, nên cần 「同期」(Đồng bộ; cùng kỳ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I synchronized the data between my phone and my computer.”, so it needs 「同期」(Synchronization; same period); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "摩擦",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 手をこすると、（　）で熱が出ます。 — Nghĩa của câu: “Xoa hai tay vào nhau thì ma sát sinh ra nhiệt.”",
+        "en": "Choose the word that fits the blank: 手をこすると、（　）で熱が出ます。 — Meaning of the sentence: “When you rub your hands together, friction produces heat.”"
+      },
+      "payload": {
+        "choices": [
+          "摩擦",
+          "全国",
+          "圧力",
+          "密度"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「摩擦」(Ma sát; xung đột) hợp nghĩa câu này: “Xoa hai tay vào nhau thì ma sát sinh ra nhiệt.”",
+        "en": "Correct! 「摩擦」(Friction) fits this sentence: “When you rub your hands together, friction produces heat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xoa hai tay vào nhau thì ma sát sinh ra nhiệt.”, nên cần 「摩擦」(Ma sát; xung đột); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When you rub your hands together, friction produces heat.”, so it needs 「摩擦」(Friction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "圧力",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 深い海の底では、水の（　）がとても高くなります。 — Nghĩa của câu: “Ở đáy biển sâu, áp lực của nước rất cao.”",
+        "en": "Choose the word that fits the blank: 深い海の底では、水の（　）がとても高くなります。 — Meaning of the sentence: “At the bottom of the deep sea, water pressure becomes very high.”"
+      },
+      "payload": {
+        "choices": [
+          "全国",
+          "圧力",
+          "同期",
+          "反映"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「圧力」(Áp lực; sức ép) hợp nghĩa câu này: “Ở đáy biển sâu, áp lực của nước rất cao.”",
+        "en": "Correct! 「圧力」(Pressure) fits this sentence: “At the bottom of the deep sea, water pressure becomes very high.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở đáy biển sâu, áp lực của nước rất cao.”, nên cần 「圧力」(Áp lực; sức ép); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the bottom of the deep sea, water pressure becomes very high.”, so it needs 「圧力」(Pressure); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "密度",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 東京は、人口の（　）が高い都市です。 — Nghĩa của câu: “Tokyo là thành phố có mật độ dân số cao.”",
+        "en": "Choose the word that fits the blank: 東京は、人口の（　）が高い都市です。 — Meaning of the sentence: “Tokyo is a city with a high population density.”"
+      },
+      "payload": {
+        "choices": [
+          "圧力",
+          "摩擦",
+          "密度",
+          "全国"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「密度」(Mật độ) hợp nghĩa câu này: “Tokyo là thành phố có mật độ dân số cao.”",
+        "en": "Correct! 「密度」(Density) fits this sentence: “Tokyo is a city with a high population density.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tokyo là thành phố có mật độ dân số cao.”, nên cần 「密度」(Mật độ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Tokyo is a city with a high population density.”, so it needs 「密度」(Density); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "全国",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお菓子は、（　）のスーパーで買えます。 — Nghĩa của câu: “Loại bánh kẹo này có thể mua ở siêu thị trên toàn quốc.”",
+        "en": "Choose the word that fits the blank: このお菓子は、（　）のスーパーで買えます。 — Meaning of the sentence: “You can buy these sweets at supermarkets across the country.”"
+      },
+      "payload": {
+        "choices": [
+          "摩擦",
+          "反映",
+          "同期",
+          "全国"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「全国」(Toàn quốc) hợp nghĩa câu này: “Loại bánh kẹo này có thể mua ở siêu thị trên toàn quốc.”",
+        "en": "Correct! 「全国」(Nationwide; the whole country) fits this sentence: “You can buy these sweets at supermarkets across the country.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Loại bánh kẹo này có thể mua ở siêu thị trên toàn quốc.”, nên cần 「全国」(Toàn quốc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “You can buy these sweets at supermarkets across the country.”, so it needs 「全国」(Nationwide; the whole country); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "反映",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: お客さんの意見を、新しい商品に「反映」させました。",
+        "en": "Choose the correct reading of the word in 「」: お客さんの意見を、新しい商品に「反映」させました。"
+      },
+      "payload": {
+        "choices": [
+          "どうき",
+          "まさつ",
+          "あつりょく",
+          "はんえい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「反映」 đọc là 「はんえい」, nghĩa là Phản ánh.",
+        "en": "Correct! 「反映」 is read 「はんえい」 and means Reflection; reflecting."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「反映」 đọc là 「はんえい」 (Phản ánh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「反映」 is read 「はんえい」 (Reflection; reflecting); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "圧力",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 深い海の底では、水の「圧力」がとても高くなります。",
+        "en": "Choose the correct reading of the word in 「」: 深い海の底では、水の「圧力」がとても高くなります。"
+      },
+      "payload": {
+        "choices": [
+          "あつりょく",
+          "はんえい",
+          "みつど",
+          "どうき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「圧力」 đọc là 「あつりょく」, nghĩa là Áp lực; sức ép.",
+        "en": "Correct! 「圧力」 is read 「あつりょく」 and means Pressure."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「圧力」 đọc là 「あつりょく」 (Áp lực; sức ép); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「圧力」 is read 「あつりょく」 (Pressure); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "全国",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: このお菓子は、「ぜんこく」のスーパーで買えます。",
+        "en": "Choose the correct way to write the word in 「」: このお菓子は、「ぜんこく」のスーパーで買えます。"
+      },
+      "payload": {
+        "choices": [
+          "全国",
+          "摩擦",
+          "圧力",
+          "密度"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぜんこく」 viết là 「全国」, nghĩa là Toàn quốc.",
+        "en": "Correct! 「ぜんこく」 is written 「全国」 and means Nationwide; the whole country."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ぜんこく」 viết là 「全国」 (Toàn quốc); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ぜんこく」 is written 「全国」 (Nationwide; the whole country); the other words are read differently."
+      }
+    }
+  ]
+}

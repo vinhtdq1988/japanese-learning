@@ -259,7 +259,11 @@ class _GoalSection extends StatelessWidget {
     final percent = (ratio * 100).round();
     final onTrack = goal?.onTrack;
     final targetDate = goal?.targetDate;
-    final scopeNotice = goal?.scopeNotice;
+    // `notices` (1.15.0): thông báo trần N3 và "chưa có phần nghe hiểu" (mục tiêu JLPT); máy chủ cũ lùi về `scopeNotice`.
+    final notices = scopeNoticeCodes(
+      notices: goal?.notices?.toList(),
+      scopeNotice: goal?.scopeNotice,
+    );
 
     return Card(
       key: const Key('goal-section'),
@@ -276,9 +280,9 @@ class _GoalSection extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             LinearProgressIndicator(value: ratio),
-            if (scopeNotice != null) ...<Widget>[
+            if (notices.isNotEmpty) ...<Widget>[
               const SizedBox(height: 12),
-              ScopeNoticeBanner(notice: scopeNotice),
+              ScopeNoticeBanner(notices: notices),
             ],
             const SizedBox(height: 12),
             if (targetDate != null)

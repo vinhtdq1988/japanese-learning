@@ -26,3 +26,7 @@ Quy tắc PR3 (độ dài đoạn luyện đọc, `items[0].japanese`) đổi nh
 - Cho phép ký tự xuống dòng `\n` trong đoạn (bảng giá, lịch, danh sách); client PHẢI hiển thị xuống dòng trong `PassagePanel`.
 
 Nới (không thu hẹp) nên mọi đoạn đã lưu (≤ 400 ký tự) vẫn hợp lệ.
+
+### Hoàn tất thư viện N4 → N3 (spec 008) — 2026-11-17
+
+Các đợt 012-reading, 013-writing và 014-final **không đổi schema** nào (vẫn `unit` 1.3.0, `topics` 1.2.0, `scope` 1.0.0, `release` 1.0.0); chỉ thêm dữ liệu: 10 chủ đề luyện viết vào `content/topics.json` (`writing-n4-*`, `writing-n3-*`; không đổi khóa/tên chủ đề cũ), thêm đơn vị vào `units/` và manifest `releases/012…014`. Thư viện cuối: 15 đợt, 629 đơn vị `active` (xem `content/README.md`, mục "Thư viện sau đợt 014-final").

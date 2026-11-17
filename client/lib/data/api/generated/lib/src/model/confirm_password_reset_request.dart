@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'confirm_password_reset_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'confirm_password_reset_request.g.dart';
 )
 class ConfirmPasswordResetRequest {
   /// Returns a new [ConfirmPasswordResetRequest] instance.
-  ConfirmPasswordResetRequest({required this.token, required this.newPassword});
+  ConfirmPasswordResetRequest({
 
-  @JsonKey(name: r'token', required: true, includeIfNull: false)
+    required  this.token,
+
+    required  this.newPassword,
+  });
+
+  @JsonKey(
+    
+    name: r'token',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String token;
 
-  @JsonKey(name: r'newPassword', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'newPassword',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String newPassword;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ConfirmPasswordResetRequest &&
-          other.token == token &&
-          other.newPassword == newPassword;
 
-  @override
-  int get hashCode => token.hashCode + newPassword.hashCode;
 
-  factory ConfirmPasswordResetRequest.fromJson(Map<String, dynamic> json) =>
-      _$ConfirmPasswordResetRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ConfirmPasswordResetRequest &&
+      other.token == token &&
+      other.newPassword == newPassword;
+
+    @override
+    int get hashCode =>
+        token.hashCode +
+        newPassword.hashCode;
+
+  factory ConfirmPasswordResetRequest.fromJson(Map<String, dynamic> json) => _$ConfirmPasswordResetRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$ConfirmPasswordResetRequestToJson(this);
 
@@ -44,4 +69,6 @@ class ConfirmPasswordResetRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

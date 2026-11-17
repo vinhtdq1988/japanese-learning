@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-notice",
+  "title": {
+    "vi": "Đọc: Quy định trung tâm thể thao",
+    "en": "Reading: Sports center rules"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "スポーツセンターをりようする人へ。開いている時間は、朝九時から夜九時までです。月曜日は休みです。はじめに、うけつけで名前を書いて、百円を出してください。プールに入る前に、シャワーであらってください。ぼうしをかぶらない人は、プールに入れません。たいせつなものは、ロッカーに入れてください。ロッカーのかぎは、帰るときにうけつけにかえしてください。ごみは、ごみばこに入れてください。",
+      "meaning": {
+        "vi": "Gửi những người sử dụng trung tâm thể thao. Giờ mở cửa là từ 9 giờ sáng đến 9 giờ tối. Thứ Hai nghỉ. Trước tiên, xin hãy ghi tên ở quầy tiếp tân và nộp 100 yên. Trước khi xuống bể bơi, xin hãy tắm rửa bằng vòi sen. Người không đội mũ bơi thì không được xuống bể. Đồ quan trọng xin hãy cất vào tủ khóa. Chìa khóa tủ xin hãy trả lại quầy tiếp tân khi ra về. Rác xin hãy bỏ vào thùng rác.",
+        "en": "To users of the sports center: We are open from 9 a.m. to 9 p.m. We are closed on Mondays. First, please write your name at the reception desk and pay 100 yen. Before entering the pool, please wash off in the shower. People who are not wearing a cap cannot enter the pool. Please put valuables in a locker. Please return the locker key to the reception desk when you leave. Please put trash in the trash can."
+      },
+      "reading": "スポーツセンターをりようするひとへ。あいているじかんは、あさくじからよるくじまでです。げつようびはやすみです。はじめに、うけつけでなまえをかいて、ひゃくえんをだしてください。プールにはいるまえに、シャワーであらってください。ぼうしをかぶらないひとは、プールにはいれません。たいせつなものは、ロッカーにいれてください。ロッカーのかぎは、かえるときにうけつけにかえしてください。ごみは、ごみばこにいれてください。",
+      "explanation": {
+        "vi": "「～前に」= trước khi (入る前に); 「～ない人は…入れません」= người không… thì không vào được; 「ぼうし」ở đây là mũ bơi.",
+        "en": "「～前に」 = before (入る前に); 「～ない人は…入れません」 = those who do not… cannot enter; 「ぼうし」 here means a swim cap."
+      },
+      "scopeRef": "r-n4-notice-events-rules"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Trung tâm thể thao nghỉ vào ngày nào?",
+        "en": "On which day is the sports center closed?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Hai",
+            "en": "Monday"
+          },
+          {
+            "vi": "Chủ nhật",
+            "en": "Sunday"
+          },
+          {
+            "vi": "Thứ Bảy",
+            "en": "Saturday"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「月曜日は休みです」: 休み là ngày nghỉ; văn bản nói thứ Hai nghỉ.",
+        "en": "Correct! The text has 「月曜日は休みです」: 休み means a day off; the text says Monday is the closed day."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「月曜日は休みです」: 休み là ngày nghỉ; văn bản nói thứ Hai nghỉ.",
+        "en": "Not quite. Look again at 「月曜日は休みです」: 休み means a day off; the text says Monday is the closed day."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người mới đến phải làm gì trước tiên?",
+        "en": "What must a visitor do first?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tắm bằng vòi sen",
+            "en": "Wash in the shower"
+          },
+          {
+            "vi": "Ghi tên ở quầy tiếp tân và nộp 100 yên",
+            "en": "Write their name at reception and pay 100 yen"
+          },
+          {
+            "vi": "Cất đồ vào tủ khóa",
+            "en": "Put belongings in a locker"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「はじめに、うけつけで名前を書いて、百円を出してください」: 「はじめに」là trước tiên; việc đầu tiên là ghi tên và nộp tiền ở quầy tiếp tân.",
+        "en": "Correct! The text has 「はじめに、うけつけで名前を書いて、百円を出してください」: 「はじめに」 means first; the first thing is writing your name and paying at reception."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「はじめに、うけつけで名前を書いて、百円を出してください」: 「はじめに」là trước tiên; việc đầu tiên là ghi tên và nộp tiền ở quầy tiếp tân.",
+        "en": "Not quite. Look again at 「はじめに、うけつけで名前を書いて、百円を出してください」: 「はじめに」 means first; the first thing is writing your name and paying at reception."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người nào không được xuống bể bơi?",
+        "en": "Who cannot enter the pool?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Người chưa tắm bằng vòi sen",
+            "en": "People who have not showered"
+          },
+          {
+            "vi": "Người đến sau 6 giờ tối",
+            "en": "People who arrive after 6 p.m."
+          },
+          {
+            "vi": "Người không đội mũ bơi",
+            "en": "People without a swim cap"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ぼうしをかぶらない人は、プールに入れません」: 「入れません」nghĩa là không vào được; điều kiện bị loại là không đội mũ.",
+        "en": "Correct! The text has 「ぼうしをかぶらない人は、プールに入れません」: 「入れません」 means cannot enter; the disqualifying condition is not wearing a cap."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ぼうしをかぶらない人は、プールに入れません」: 「入れません」nghĩa là không vào được; điều kiện bị loại là không đội mũ.",
+        "en": "Not quite. Look again at 「ぼうしをかぶらない人は、プールに入れません」: 「入れません」 means cannot enter; the disqualifying condition is not wearing a cap."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Chìa khóa tủ phải xử lý thế nào khi ra về?",
+        "en": "What should you do with the locker key when you leave?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mang về nhà",
+            "en": "Take it home"
+          },
+          {
+            "vi": "Trả lại quầy tiếp tân",
+            "en": "Return it to the reception desk"
+          },
+          {
+            "vi": "Bỏ vào thùng rác",
+            "en": "Put it in the trash can"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ロッカーのかぎは、帰るときにうけつけにかえしてください」: 「かえす」nghĩa là trả lại; chìa khóa phải trả ở quầy tiếp tân khi ra về.",
+        "en": "Correct! The text has 「ロッカーのかぎは、帰るときにうけつけにかえしてください」: 「かえす」 means to return; the key goes back to the reception desk when you leave."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ロッカーのかぎは、帰るときにうけつけにかえしてください」: 「かえす」nghĩa là trả lại; chìa khóa phải trả ở quầy tiếp tân khi ra về.",
+        "en": "Not quite. Look again at 「ロッカーのかぎは、帰るときにうけつけにかえしてください」: 「かえす」 means to return; the key goes back to the reception desk when you leave."
+      }
+    }
+  ]
+}

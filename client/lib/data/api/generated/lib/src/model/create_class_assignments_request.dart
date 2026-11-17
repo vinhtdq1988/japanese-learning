@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'create_class_assignments_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'create_class_assignments_request.g.dart';
 )
 class CreateClassAssignmentsRequest {
   /// Returns a new [CreateClassAssignmentsRequest] instance.
-  CreateClassAssignmentsRequest({required this.unitIds, required this.dueOn});
+  CreateClassAssignmentsRequest({
 
-  @JsonKey(name: r'unitIds', required: true, includeIfNull: false)
+    required  this.unitIds,
+
+    required  this.dueOn,
+  });
+
+  @JsonKey(
+    
+    name: r'unitIds',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<String> unitIds;
 
-  @JsonKey(name: r'dueOn', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'dueOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime dueOn;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is CreateClassAssignmentsRequest &&
-          other.unitIds == unitIds &&
-          other.dueOn == dueOn;
 
-  @override
-  int get hashCode => unitIds.hashCode + dueOn.hashCode;
 
-  factory CreateClassAssignmentsRequest.fromJson(Map<String, dynamic> json) =>
-      _$CreateClassAssignmentsRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is CreateClassAssignmentsRequest &&
+      other.unitIds == unitIds &&
+      other.dueOn == dueOn;
+
+    @override
+    int get hashCode =>
+        unitIds.hashCode +
+        dueOn.hashCode;
+
+  factory CreateClassAssignmentsRequest.fromJson(Map<String, dynamic> json) => _$CreateClassAssignmentsRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$CreateClassAssignmentsRequestToJson(this);
 
@@ -44,4 +69,6 @@ class CreateClassAssignmentsRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

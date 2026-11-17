@@ -233,19 +233,25 @@ describe('mảng yếu theo chủ đề của chữ (US4.3)', () => {
 });
 
 describe('tiến độ mục tiêu (FR-019)', () => {
-  const unitsCount = async (kinds: string[]): Promise<number> =>
+  // Từ spec 008 (D12) tỷ lệ hoàn thành tính theo tổng PHÚT (Σ est_minutes), không theo số đơn vị.
+  const unitsMinutes = async (kinds: string[]): Promise<number> =>
     (
       await query(
         ctx,
-        `SELECT count(*)::int AS n FROM learning_units WHERE status = 'active' AND kind::text = ANY($1)`,
+        `SELECT coalesce(sum(est_minutes), 0)::int AS n FROM learning_units WHERE status = 'active' AND kind::text = ANY($1)`,
         [kinds],
       )
     )[0].n;
 
   it('tính bài Kanji khi kanji ∈ skills; không đổi khi không chọn Kanji', async () => {
-    const base = await unitsCount(['vocabulary', 'grammar']);
-    const kanji = await unitsCount(['kanji']);
+    const base = await unitsMinutes(['vocabulary', 'grammar']);
+    const kanji = await unitsMinutes(['kanji']);
     expect(kanji).toBeGreaterThan(0);
+    const [{ n: kanjiUnitMinutes }] = await query(
+      ctx,
+      `SELECT est_minutes::int AS n FROM learning_units WHERE id = $1`,
+      [await kanjiUnitId(ctx, NUMBERS_1)],
+    );
 
     const withKanji = await kanjiLearner(api, ctx);
     const without = await onboardedLearner(api, ctx);
@@ -255,8 +261,8 @@ describe('tiến độ mục tiêu (FR-019)', () => {
 
     const a = await progressOf(withKanji);
     const b = await progressOf(without);
-    expect(a.goal.completionRatio).toBeCloseTo(1 / (base + kanji), 3);
-    expect(b.goal.completionRatio).toBeCloseTo(1 / base, 3);
+    expect(a.goal.completionRatio).toBeCloseTo(kanjiUnitMinutes / (base + kanji), 3);
+    expect(b.goal.completionRatio).toBeCloseTo(plan.items[0].estMinutes / base, 3);
     expect(b.kanji).toBeNull();
   });
 });

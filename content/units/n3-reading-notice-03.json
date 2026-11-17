@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-notice",
+  "title": {
+    "vi": "Đọc: Thông báo bảo trì ngân hàng trực tuyến",
+    "en": "Reading: Online banking maintenance notice"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【重要】インターネットバンキング　メンテナンスのお知らせ\nいつもご利用いただき、ありがとうございます。システムの点検のため、下記の時間、サービスをご利用いただけません。\n日時：5月18日（土）午後11時 ～ 5月19日（日）午前7時\n停止するサービス：\n・残高照会、振込、定期預金の申し込み\n・スマートフォンアプリのログイン\nなお、ATMと店舗の窓口は、通常どおりご利用いただけます。\nメンテナンスが予定より長くなった場合は、ホームページでお知らせします。お客様にはご迷惑をおかけいたしますが、ご了承ください。",
+      "meaning": {
+        "vi": "[Quan trọng] Thông báo bảo trì ngân hàng trực tuyến. Cảm ơn quý khách đã luôn sử dụng dịch vụ. Do kiểm tra hệ thống, trong khoảng thời gian dưới đây quý khách sẽ không thể sử dụng dịch vụ. Thời gian: từ 11 giờ tối thứ Bảy ngày 18 tháng 5 đến 7 giờ sáng Chủ nhật ngày 19 tháng 5. Dịch vụ bị tạm dừng: tra cứu số dư, chuyển khoản, đăng ký tiền gửi có kỳ hạn; đăng nhập ứng dụng trên điện thoại thông minh. Lưu ý, máy ATM và quầy giao dịch tại chi nhánh vẫn sử dụng như bình thường. Nếu việc bảo trì kéo dài hơn dự kiến, chúng tôi sẽ thông báo trên trang web. Chúng tôi xin lỗi vì sự bất tiện và mong quý khách thông cảm.",
+        "en": "[Important] Notice of online banking maintenance. Thank you for always using our services. Because of a system inspection, you will not be able to use the service during the following time. Date and time: from 11 p.m. on Saturday, May 18, to 7 a.m. on Sunday, May 19. Services that will stop: balance inquiries, transfers, and time deposit applications; logging in to the smartphone app. Please note that ATMs and the counters at our branches can be used as usual. If the maintenance runs longer than planned, we will announce it on our website. We apologize for the inconvenience and ask for your understanding."
+      },
+      "explanation": {
+        "vi": "「～ため」nêu lý do; 「～どおり」= như…; 「～ていただけません」= không thể (dùng) được. Từ vựng: 「残高照会」(ざんだかしょうかい) = tra cứu số dư; 「振込」(ふりこみ) = chuyển khoản; 「店舗」(てんぽ) = cửa hàng/chi nhánh; 「窓口」(まどぐち) = quầy giao dịch; 「迷惑」(めいわく) = phiền phức; 「了承」(りょうしょう) = chấp thuận.",
+        "en": "「～ため」 gives a reason; 「～どおり」 = as…; 「～ていただけません」 = cannot (use). Vocabulary: 「残高照会」(ざんだかしょうかい) = balance inquiry; 「振込」(ふりこみ) = bank transfer; 「店舗」(てんぽ) = branch/store; 「窓口」(まどぐち) = counter; 「迷惑」(めいわく) = trouble; 「了承」(りょうしょう) = acceptance."
+      },
+      "scopeRef": "r-n3-notice-company-service"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Dịch vụ trực tuyến không dùng được vào lúc nào?",
+        "en": "When will the online service be unavailable?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Từ 11 giờ tối thứ Bảy đến 7 giờ sáng Chủ nhật",
+            "en": "From 11 p.m. Saturday to 7 a.m. Sunday"
+          },
+          {
+            "vi": "Cả ngày thứ Bảy",
+            "en": "All day Saturday"
+          },
+          {
+            "vi": "Từ 7 giờ sáng thứ Bảy đến 11 giờ tối",
+            "en": "From 7 a.m. to 11 p.m. on Saturday"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「5月18日（土）午後11時 ～ 5月19日（日）午前7時」: Thời gian dừng được ghi rõ ở dòng 日時.",
+        "en": "Correct! The text has 「5月18日（土）午後11時 ～ 5月19日（日）午前7時」: The stoppage time is given on the 日時 line."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「5月18日（土）午後11時 ～ 5月19日（日）午前7時」: Thời gian dừng được ghi rõ ở dòng 日時.",
+        "en": "Not quite. Look again at 「5月18日（土）午後11時 ～ 5月19日（日）午前7時」: The stoppage time is given on the 日時 line."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Việc nào KHÔNG làm được trong thời gian bảo trì?",
+        "en": "Which of these cannot be done during the maintenance?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Rút tiền ở máy ATM",
+            "en": "Withdraw cash at an ATM"
+          },
+          {
+            "vi": "Chuyển khoản trên mạng",
+            "en": "Make an online transfer"
+          },
+          {
+            "vi": "Giao dịch tại quầy chi nhánh",
+            "en": "Do business at a branch counter"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「残高照会、振込、定期預金の申し込み」: 「振込」(chuyển khoản) nằm trong danh sách dịch vụ tạm dừng.",
+        "en": "Correct! The text has 「残高照会、振込、定期預金の申し込み」: 「振込」 (transfers) is on the list of stopped services."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「残高照会、振込、定期預金の申し込み」: 「振込」(chuyển khoản) nằm trong danh sách dịch vụ tạm dừng.",
+        "en": "Not quite. Look again at 「残高照会、振込、定期預金の申し込み」: 「振込」 (transfers) is on the list of stopped services."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "ATM và quầy giao dịch ở chi nhánh thì sao?",
+        "en": "What about ATMs and branch counters?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cũng ngừng hoạt động",
+            "en": "They also stop"
+          },
+          {
+            "vi": "Chỉ ATM ngừng",
+            "en": "Only the ATMs stop"
+          },
+          {
+            "vi": "Vẫn dùng bình thường",
+            "en": "They can be used as usual"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ATMと店舗の窓口は、通常どおりご利用いただけます」: 「通常どおり」nghĩa là như bình thường.",
+        "en": "Correct! The text has 「ATMと店舗の窓口は、通常どおりご利用いただけます」: 「通常どおり」 means as usual."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ATMと店舗の窓口は、通常どおりご利用いただけます」: 「通常どおり」nghĩa là như bình thường.",
+        "en": "Not quite. Look again at 「ATMと店舗の窓口は、通常どおりご利用いただけます」: 「通常どおり」 means as usual."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nếu việc bảo trì kéo dài hơn dự kiến thì sao?",
+        "en": "What happens if the maintenance takes longer than planned?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thông báo trên trang web",
+            "en": "It will be announced on the website"
+          },
+          {
+            "vi": "Gửi thư riêng cho từng khách",
+            "en": "A letter will be sent to each customer"
+          },
+          {
+            "vi": "Dịch vụ sẽ bị dừng vĩnh viễn",
+            "en": "The service will stop permanently"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ホームページでお知らせします」: 「お知らせします」nghĩa là sẽ thông báo; kênh thông báo là trang web.",
+        "en": "Correct! The text has 「ホームページでお知らせします」: 「お知らせします」 means will announce; the channel is the website."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ホームページでお知らせします」: 「お知らせします」nghĩa là sẽ thông báo; kênh thông báo là trang web.",
+        "en": "Not quite. Look again at 「ホームページでお知らせします」: 「お知らせします」 means will announce; the channel is the website."
+      }
+    }
+  ]
+}

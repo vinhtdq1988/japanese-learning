@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-shopping-money",
+  "title": {
+    "vi": "Đồ ăn, giảm giá và nhà hàng",
+    "en": "Food storage, sales and restaurants"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 750,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "冷める",
+      "reading": "さめる",
+      "meaning": {
+        "vi": "Nguội đi",
+        "en": "To get cold; to cool down"
+      },
+      "examples": [
+        {
+          "ja": "スープが冷める前に、飲んでください。",
+          "reading": "スープがさめるまえに、のんでください。",
+          "translation": {
+            "vi": "Hãy uống súp trước khi nó nguội.",
+            "en": "Please drink the soup before it gets cold."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "冷凍",
+      "reading": "れいとう",
+      "meaning": {
+        "vi": "Đông lạnh",
+        "en": "Freezing; frozen"
+      },
+      "examples": [
+        {
+          "ja": "残ったご飯は、冷凍して保存します。",
+          "reading": "のこったごはんは、れいとうしてほぞんします。",
+          "translation": {
+            "vi": "Cơm còn lại thì tôi để đông lạnh bảo quản.",
+            "en": "I freeze leftover rice to store it."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "腐る",
+      "reading": "くさる",
+      "meaning": {
+        "vi": "Thối; ôi; hỏng (thức ăn)",
+        "en": "To rot; to go bad"
+      },
+      "examples": [
+        {
+          "ja": "夏は、肉や魚が腐るのが早いです。",
+          "reading": "なつは、にくやさかながくさるのがはやいです。",
+          "translation": {
+            "vi": "Mùa hè, thịt và cá hỏng rất nhanh.",
+            "en": "In summer, meat and fish go bad quickly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "安売り",
+      "reading": "やすうり",
+      "meaning": {
+        "vi": "Bán hạ giá",
+        "en": "Sale; selling cheaply"
+      },
+      "examples": [
+        {
+          "ja": "駅前のスーパーで、野菜の安売りをしています。",
+          "reading": "えきまえのスーパーで、やさいのやすうりをしています。",
+          "translation": {
+            "vi": "Siêu thị trước ga đang bán hạ giá rau.",
+            "en": "The supermarket in front of the station is having a sale on vegetables."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "レストラン",
+      "reading": "レストラン",
+      "meaning": {
+        "vi": "Nhà hàng",
+        "en": "Restaurant"
+      },
+      "examples": [
+        {
+          "ja": "誕生日に、家族でレストランへ行きました。",
+          "reading": "たんじょうびに、かぞくでレストランへいきました。",
+          "translation": {
+            "vi": "Vào sinh nhật, tôi đã cùng gia đình đi nhà hàng.",
+            "en": "On my birthday, I went to a restaurant with my family."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "パーセント",
+      "reading": "パーセント",
+      "meaning": {
+        "vi": "Phần trăm",
+        "en": "Percent"
+      },
+      "examples": [
+        {
+          "ja": "この店では、全部の商品が二十パーセント安くなります。",
+          "reading": "このみせでは、ぜんぶのしょうひんがにじゅうパーセントやすくなります。",
+          "translation": {
+            "vi": "Ở cửa hàng này, mọi mặt hàng đều được giảm 20 phần trăm.",
+            "en": "At this store, every item is 20 percent off."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "冷める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: スープが（　）前に、飲んでください。 — Nghĩa của câu: “Hãy uống súp trước khi nó nguội.”",
+        "en": "Choose the word that fits the blank: スープが（　）前に、飲んでください。 — Meaning of the sentence: “Please drink the soup before it gets cold.”"
+      },
+      "payload": {
+        "choices": [
+          "安売り",
+          "冷凍",
+          "冷める",
+          "レストラン"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「冷める」(Nguội đi) hợp nghĩa câu này: “Hãy uống súp trước khi nó nguội.”",
+        "en": "Correct! 「冷める」(To get cold; to cool down) fits this sentence: “Please drink the soup before it gets cold.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy uống súp trước khi nó nguội.”, nên cần 「冷める」(Nguội đi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please drink the soup before it gets cold.”, so it needs 「冷める」(To get cold; to cool down); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "冷凍",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 残ったご飯は、（　）して保存します。 — Nghĩa của câu: “Cơm còn lại thì tôi để đông lạnh bảo quản.”",
+        "en": "Choose the word that fits the blank: 残ったご飯は、（　）して保存します。 — Meaning of the sentence: “I freeze leftover rice to store it.”"
+      },
+      "payload": {
+        "choices": [
+          "冷める",
+          "レストラン",
+          "安売り",
+          "冷凍"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「冷凍」(Đông lạnh) hợp nghĩa câu này: “Cơm còn lại thì tôi để đông lạnh bảo quản.”",
+        "en": "Correct! 「冷凍」(Freezing; frozen) fits this sentence: “I freeze leftover rice to store it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cơm còn lại thì tôi để đông lạnh bảo quản.”, nên cần 「冷凍」(Đông lạnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I freeze leftover rice to store it.”, so it needs 「冷凍」(Freezing; frozen); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "腐る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夏は、肉や魚が（　）のが早いです。 — Nghĩa của câu: “Mùa hè, thịt và cá hỏng rất nhanh.”",
+        "en": "Choose the word that fits the blank: 夏は、肉や魚が（　）のが早いです。 — Meaning of the sentence: “In summer, meat and fish go bad quickly.”"
+      },
+      "payload": {
+        "choices": [
+          "腐る",
+          "安売り",
+          "レストラン",
+          "冷める"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腐る」(Thối; ôi; hỏng (thức ăn)) hợp nghĩa câu này: “Mùa hè, thịt và cá hỏng rất nhanh.”",
+        "en": "Correct! 「腐る」(To rot; to go bad) fits this sentence: “In summer, meat and fish go bad quickly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mùa hè, thịt và cá hỏng rất nhanh.”, nên cần 「腐る」(Thối; ôi; hỏng (thức ăn)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In summer, meat and fish go bad quickly.”, so it needs 「腐る」(To rot; to go bad); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "安売り",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅前のスーパーで、野菜の（　）をしています。 — Nghĩa của câu: “Siêu thị trước ga đang bán hạ giá rau.”",
+        "en": "Choose the word that fits the blank: 駅前のスーパーで、野菜の（　）をしています。 — Meaning of the sentence: “The supermarket in front of the station is having a sale on vegetables.”"
+      },
+      "payload": {
+        "choices": [
+          "冷める",
+          "安売り",
+          "腐る",
+          "パーセント"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「安売り」(Bán hạ giá) hợp nghĩa câu này: “Siêu thị trước ga đang bán hạ giá rau.”",
+        "en": "Correct! 「安売り」(Sale; selling cheaply) fits this sentence: “The supermarket in front of the station is having a sale on vegetables.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Siêu thị trước ga đang bán hạ giá rau.”, nên cần 「安売り」(Bán hạ giá); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The supermarket in front of the station is having a sale on vegetables.”, so it needs 「安売り」(Sale; selling cheaply); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "レストラン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 誕生日に、家族で（　）へ行きました。 — Nghĩa của câu: “Vào sinh nhật, tôi đã cùng gia đình đi nhà hàng.”",
+        "en": "Choose the word that fits the blank: 誕生日に、家族で（　）へ行きました。 — Meaning of the sentence: “On my birthday, I went to a restaurant with my family.”"
+      },
+      "payload": {
+        "choices": [
+          "安売り",
+          "冷凍",
+          "レストラン",
+          "腐る"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「レストラン」(Nhà hàng) hợp nghĩa câu này: “Vào sinh nhật, tôi đã cùng gia đình đi nhà hàng.”",
+        "en": "Correct! 「レストラン」(Restaurant) fits this sentence: “On my birthday, I went to a restaurant with my family.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào sinh nhật, tôi đã cùng gia đình đi nhà hàng.”, nên cần 「レストラン」(Nhà hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On my birthday, I went to a restaurant with my family.”, so it needs 「レストラン」(Restaurant); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "パーセント",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店では、全部の商品が二十（　）安くなります。 — Nghĩa của câu: “Ở cửa hàng này, mọi mặt hàng đều được giảm 20 phần trăm.”",
+        "en": "Choose the word that fits the blank: この店では、全部の商品が二十（　）安くなります。 — Meaning of the sentence: “At this store, every item is 20 percent off.”"
+      },
+      "payload": {
+        "choices": [
+          "レストラン",
+          "冷める",
+          "冷凍",
+          "パーセント"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「パーセント」(Phần trăm) hợp nghĩa câu này: “Ở cửa hàng này, mọi mặt hàng đều được giảm 20 phần trăm.”",
+        "en": "Correct! 「パーセント」(Percent) fits this sentence: “At this store, every item is 20 percent off.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở cửa hàng này, mọi mặt hàng đều được giảm 20 phần trăm.”, nên cần 「パーセント」(Phần trăm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At this store, every item is 20 percent off.”, so it needs 「パーセント」(Percent); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "冷める",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: スープが「冷める」前に、飲んでください。",
+        "en": "Choose the correct reading of the word in 「」: スープが「冷める」前に、飲んでください。"
+      },
+      "payload": {
+        "choices": [
+          "れいとう",
+          "やすうり",
+          "パーセント",
+          "さめる"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「冷める」 đọc là 「さめる」, nghĩa là Nguội đi.",
+        "en": "Correct! 「冷める」 is read 「さめる」 and means To get cold; to cool down."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「冷める」 đọc là 「さめる」 (Nguội đi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「冷める」 is read 「さめる」 (To get cold; to cool down); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "腐る",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 夏は、肉や魚が「腐る」のが早いです。",
+        "en": "Choose the correct reading of the word in 「」: 夏は、肉や魚が「腐る」のが早いです。"
+      },
+      "payload": {
+        "choices": [
+          "くさる",
+          "パーセント",
+          "やすうり",
+          "さめる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「腐る」 đọc là 「くさる」, nghĩa là Thối; ôi; hỏng (thức ăn).",
+        "en": "Correct! 「腐る」 is read 「くさる」 and means To rot; to go bad."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「腐る」 đọc là 「くさる」 (Thối; ôi; hỏng (thức ăn)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「腐る」 is read 「くさる」 (To rot; to go bad); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "安売り",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 駅前のスーパーで、野菜の「やすうり」をしています。",
+        "en": "Choose the correct way to write the word in 「」: 駅前のスーパーで、野菜の「やすうり」をしています。"
+      },
+      "payload": {
+        "choices": [
+          "安売り",
+          "腐る",
+          "冷凍",
+          "冷める"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「やすうり」 viết là 「安売り」, nghĩa là Bán hạ giá.",
+        "en": "Correct! 「やすうり」 is written 「安売り」 and means Sale; selling cheaply."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「やすうり」 viết là 「安売り」 (Bán hạ giá); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「やすうり」 is written 「安売り」 (Sale; selling cheaply); the other words are read differently."
+      }
+    }
+  ]
+}

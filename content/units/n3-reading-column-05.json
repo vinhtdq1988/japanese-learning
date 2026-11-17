@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-column",
+  "title": {
+    "vi": "Đọc: Tập thói quen vận động",
+    "en": "Reading: Building an exercise habit"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "健康のために運動をしたいと思いながら、なかなか続けられない人は多い。その原因の一つは、最初から目標を高くしすぎることだ。毎日1時間走ると決めても、いそがしい日が続けば、すぐにやめてしまう。\nそこでおすすめしたいのが、「5分だけやる」という方法だ。5分なら、どんなに疲れている日でもできる。不思議なことに、一度始めると、10分、20分と続けたくなることが多い。\n大切なのは、運動のりょうではなく、毎日続けることである。小さな成功を重ねるうちに、自信がつき、自然に体を動かすことが楽しくなっていくだろう。",
+      "meaning": {
+        "vi": "Có nhiều người muốn vận động vì sức khỏe nhưng mãi không duy trì được. Một nguyên nhân là đặt mục tiêu quá cao ngay từ đầu. Dù quyết định chạy mỗi ngày một tiếng, nếu những ngày bận rộn kéo dài thì họ sẽ bỏ cuộc rất nhanh. Vì vậy, tôi muốn giới thiệu phương pháp “chỉ làm 5 phút”. Nếu chỉ 5 phút thì ngày mệt đến mấy cũng làm được. Kỳ lạ là, khi đã bắt đầu, nhiều khi bạn lại muốn tiếp tục thêm 10 phút, 20 phút. Điều quan trọng không phải là lượng vận động mà là duy trì mỗi ngày. Trong quá trình tích lũy những thành công nhỏ, bạn sẽ có tự tin, và việc cử động cơ thể sẽ dần trở nên vui một cách tự nhiên.",
+        "en": "Many people want to exercise for their health but cannot keep it up. One cause is setting the goal too high from the start. Even if you decide to run for an hour every day, if busy days continue, you quickly give up. So what I would like to recommend is the method of “just doing it for five minutes.” If it is five minutes, you can do it even on the most tiring day. Strangely, once you start, you often want to keep going for 10 or 20 minutes. What matters is not the amount of exercise but continuing every day. As you pile up small successes, you gain confidence, and moving your body will naturally become enjoyable."
+      },
+      "explanation": {
+        "vi": "「～ながら」= vừa… vừa (hoặc dù…); 「～すぎる」= quá…; 「～ても」= dù…; 「～うちに」= trong lúc…; 「～ていくだろう」= sẽ dần trở nên…. Từ vựng: 「健康」(けんこう) = sức khỏe; 「原因」(げんいん) = nguyên nhân; 「目標」(もくひょう) = mục tiêu; 「成功」(せいこう) = thành công.",
+        "en": "「～ながら」 = while/although; 「～すぎる」 = too…; 「～ても」 = even if…; 「～うちに」 = while/as…; 「～ていくだろう」 = will gradually…. Vocabulary: 「健康」(けんこう) = health; 「原因」(げんいん) = cause; 「目標」(もくひょう) = goal; 「成功」(せいこう) = success."
+      },
+      "scopeRef": "r-n3-column-lifestyle-health"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Một nguyên nhân khiến nhiều người không duy trì được vận động là gì?",
+        "en": "What is one reason many people cannot keep up exercise?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đặt mục tiêu quá cao ngay từ đầu",
+            "en": "They set the goal too high from the start"
+          },
+          {
+            "vi": "Không có dụng cụ tập",
+            "en": "They have no equipment"
+          },
+          {
+            "vi": "Không có ai tập cùng",
+            "en": "They have no one to exercise with"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「最初から目標を高くしすぎることだ」: 「～すぎる」nghĩa là quá mức: đặt mục tiêu quá cao ngay từ đầu.",
+        "en": "Correct! The text has 「最初から目標を高くしすぎることだ」: 「～すぎる」 means too much: setting the goal too high from the start."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「最初から目標を高くしすぎることだ」: 「～すぎる」nghĩa là quá mức: đặt mục tiêu quá cao ngay từ đầu.",
+        "en": "Not quite. Look again at 「最初から目標を高くしすぎることだ」: 「～すぎる」 means too much: setting the goal too high from the start."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Phương pháp tác giả giới thiệu là gì?",
+        "en": "What method does the author recommend?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chạy một tiếng mỗi ngày",
+            "en": "Run for an hour every day"
+          },
+          {
+            "vi": "Chỉ làm 5 phút",
+            "en": "Do it for just five minutes"
+          },
+          {
+            "vi": "Tập thật mạnh vào cuối tuần",
+            "en": "Exercise hard on weekends"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「「5分だけやる」という方法だ」: Phương pháp được nêu là “chỉ làm 5 phút”.",
+        "en": "Correct! The text has 「「5分だけやる」という方法だ」: The method presented is “just doing it for five minutes.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「「5分だけやる」という方法だ」: Phương pháp được nêu là “chỉ làm 5 phút”.",
+        "en": "Not quite. Look again at 「「5分だけやる」という方法だ」: The method presented is “just doing it for five minutes.”"
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Theo tác giả, điều quan trọng là gì?",
+        "en": "According to the author, what is important?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Lượng vận động mỗi lần",
+            "en": "The amount of exercise each time"
+          },
+          {
+            "vi": "Duy trì mỗi ngày",
+            "en": "Continuing every day"
+          },
+          {
+            "vi": "Mua quần áo thể thao đẹp",
+            "en": "Buying nice sportswear"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「運動のりょうではなく、毎日続けることである」: Tác giả nhấn mạnh việc duy trì hằng ngày, không phải lượng vận động.",
+        "en": "Correct! The text has 「運動のりょうではなく、毎日続けることである」: The author stresses daily continuation, not the amount."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「運動のりょうではなく、毎日続けることである」: Tác giả nhấn mạnh việc duy trì hằng ngày, không phải lượng vận động.",
+        "en": "Not quite. Look again at 「運動のりょうではなく、毎日続けることである」: The author stresses daily continuation, not the amount."
+      }
+    }
+  ]
+}

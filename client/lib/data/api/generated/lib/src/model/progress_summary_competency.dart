@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'progress_summary_competency.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,28 +20,52 @@ part 'progress_summary_competency.g.dart';
 )
 class ProgressSummaryCompetency {
   /// Returns a new [ProgressSummaryCompetency] instance.
-  ProgressSummaryCompetency({required this.skills, required this.topics});
+  ProgressSummaryCompetency({
 
-  /// Mỗi kỹ năng hiệu lực của người học (và kỹ năng đã có dữ liệu), theo thứ tự vocabulary, grammar, kanji, reading, writing
-  @JsonKey(name: r'skills', required: true, includeIfNull: false)
+    required  this.skills,
+
+    required  this.topics,
+  });
+
+      /// Mỗi kỹ năng hiệu lực của người học (và kỹ năng đã có dữ liệu), theo thứ tự vocabulary, grammar, kanji, reading, writing
+  @JsonKey(
+    
+    name: r'skills',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ProgressSummaryCompetencySkillsInner> skills;
 
-  /// Mọi chủ đề có dữ liệu; luôn gồm các chủ đề trong `weakTopics`
-  @JsonKey(name: r'topics', required: true, includeIfNull: false)
+
+
+      /// Mọi chủ đề có dữ liệu; luôn gồm các chủ đề trong `weakTopics`
+  @JsonKey(
+    
+    name: r'topics',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ProgressSummaryCompetencyTopicsInner> topics;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ProgressSummaryCompetency &&
-          other.skills == skills &&
-          other.topics == topics;
 
-  @override
-  int get hashCode => skills.hashCode + topics.hashCode;
 
-  factory ProgressSummaryCompetency.fromJson(Map<String, dynamic> json) =>
-      _$ProgressSummaryCompetencyFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ProgressSummaryCompetency &&
+      other.skills == skills &&
+      other.topics == topics;
+
+    @override
+    int get hashCode =>
+        skills.hashCode +
+        topics.hashCode;
+
+  factory ProgressSummaryCompetency.fromJson(Map<String, dynamic> json) => _$ProgressSummaryCompetencyFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProgressSummaryCompetencyToJson(this);
 
@@ -48,4 +73,6 @@ class ProgressSummaryCompetency {
   String toString() {
     return toJson().toString();
   }
+
 }
+

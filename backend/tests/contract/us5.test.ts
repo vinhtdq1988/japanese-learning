@@ -41,6 +41,17 @@ describe('POST /path/rebuild', () => {
     expect((await pathOf(learner)).id).toBe(body.id);
   });
 
+  it('200 khi thân là JSON `null` (client Dart gửi `jsonEncode(null)` khi không có tham số)', async () => {
+    const learner = await onboardedLearner(api, ctx);
+    const res = await api.raw('post', '/path/rebuild', {
+      token: learner.token,
+      headers: { 'content-type': 'application/json' },
+      body: 'null',
+    });
+    expect(res.status).toBe(200);
+    expect(JSON.parse(res.text).reason).toBe('rebuild_request');
+  });
+
   it('404 khi chưa hoàn tất onboarding; 404 khi kết quả kiểm tra không tồn tại; 422 khi id sai định dạng', async () => {
     const fresh = await registerUser(api);
     expect((await api.post('/path/rebuild', { token: fresh.accessToken })).status).toBe(404);

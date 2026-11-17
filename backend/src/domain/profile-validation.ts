@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { isValidTimezone } from '../engine/clock.js';
 import {
+  CONTENT_LEVELS,
   DAILY_MINUTES,
   GOAL_TYPES,
   LANGUAGES,
@@ -211,15 +212,42 @@ export const placementAnswersSchema = z.object({
 });
 export type PlacementAnswersInput = z.infer<typeof placementAnswersSchema>;
 
+// `nullish`: client Dart sinh từ OpenAPI gửi body `null` (`jsonEncode(null)`) khi không có tham số.
 export const rebuildPathSchema = z
   .object({ usePlacementResultId: z.uuid('usePlacementResultId không hợp lệ').optional() })
-  .optional();
+  .nullish();
 
 // --- Ghi đè lộ trình ---
 
 export const unitIdParamsSchema = z.object({
   unitId: z.uuid('unitId phải là UUID'),
 });
+
+/**
+ * Tham số lọc/phân trang tùy chọn của `GET /path` (spec 008, OpenAPI 1.15.0): `kind`, `level`, `status`, `limit`
+ * (1–500), `offset` (≥ 0, mặc định 0). Giá trị sai kiểu/ngoài enum → 422 `VALIDATION_FAILED`.
+ */
+export const pathQuerySchema = z.object({
+  kind: z.enum(SKILLS, { error: 'Loại đơn vị không hợp lệ' }).optional(),
+  level: z.enum(CONTENT_LEVELS, { error: 'Trình độ nội dung không hợp lệ' }).optional(),
+  status: z
+    .enum(['pending', 'in_progress', 'completed', 'mastered'], {
+      error: 'Trạng thái đơn vị không hợp lệ',
+    })
+    .optional(),
+  limit: z.coerce
+    .number({ error: 'limit phải là số nguyên từ 1 đến 500' })
+    .int('limit phải là số nguyên từ 1 đến 500')
+    .min(1, 'limit phải từ 1 đến 500')
+    .max(500, 'limit phải từ 1 đến 500')
+    .optional(),
+  offset: z.coerce
+    .number({ error: 'offset phải là số nguyên không âm' })
+    .int('offset phải là số nguyên không âm')
+    .min(0, 'offset phải là số nguyên không âm')
+    .default(0),
+});
+export type PathQuery = z.infer<typeof pathQuerySchema>;
 
 export const itemIdParamsSchema = z.object({
   itemId: z.uuid('itemId phải là UUID'),

@@ -1,0 +1,202 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-opinions",
+  "title": {
+    "vi": "Viết: Ý kiến – lý do (2)",
+    "en": "Writing: Opinions and reasons (2)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "疲れたからです",
+      "reading": "つかれたからです",
+      "meaning": {
+        "vi": "Là vì tôi mệt.",
+        "en": "It is because I am tired."
+      }
+    },
+    {
+      "japanese": "なぜなら",
+      "reading": "なぜなら",
+      "meaning": {
+        "vi": "Bởi vì (mở đầu câu giải thích)",
+        "en": "Because (opening an explanation)"
+      }
+    },
+    {
+      "japanese": "雨なので",
+      "reading": "あめなので",
+      "meaning": {
+        "vi": "Vì trời mưa (dạng ので)",
+        "en": "Because it is raining (ので)"
+      }
+    },
+    {
+      "japanese": "そのため",
+      "reading": "そのため",
+      "meaning": {
+        "vi": "Vì thế; do đó",
+        "en": "For that reason; therefore"
+      }
+    },
+    {
+      "japanese": "理由は明らかです",
+      "reading": "りゆうはあきらかです",
+      "meaning": {
+        "vi": "Lý do thì rõ ràng.",
+        "en": "The reason is clear."
+      }
+    },
+    {
+      "japanese": "病気のせいで",
+      "reading": "びょうきのせいで",
+      "meaning": {
+        "vi": "Vì bị bệnh (nguyên nhân dẫn đến kết quả xấu)",
+        "en": "Because of illness (a cause of a bad result)"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Là vì tôi mệt.”",
+        "en": "Type in Japanese: “It is because I am tired.”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "疲れたからです",
+          "つかれたからです"
+        ],
+        "hint": "よみ: つかれたからです"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Là vì tôi mệt.” viết là 疲れたからです. 「～からです」 nêu lý do ở cuối câu.",
+        "en": "Correct! “It is because I am tired.” is written 疲れたからです. 「～からです」 gives the reason at the end of the sentence."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 疲れたからです (đọc là つかれたからです). 「～からです」 nêu lý do ở cuối câu.",
+        "en": "Not quite. Reference answer: 疲れたからです (read as つかれたからです). 「～からです」 gives the reason at the end of the sentence."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bởi vì (mở đầu câu giải thích)”",
+        "en": "Type in Japanese: “Because (opening an explanation)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "なぜなら",
+          "何故なら"
+        ],
+        "hint": "よみ: なぜなら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bởi vì (mở đầu câu giải thích)” viết là なぜなら. なぜなら đứng đầu câu giải thích, thường kết thúc bằng 「～からだ」.",
+        "en": "Correct! “Because (opening an explanation)” is written なぜなら. なぜなら opens an explaining sentence, usually ending with 「～からだ」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: なぜなら (đọc là なぜなら). なぜなら đứng đầu câu giải thích, thường kết thúc bằng 「～からだ」.",
+        "en": "Not quite. Reference answer: なぜなら (read as なぜなら). なぜなら opens an explaining sentence, usually ending with 「～からだ」."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Vì trời mưa (dạng ので)”",
+        "en": "Type in Japanese: “Because it is raining (ので)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "雨なので",
+          "あめなので"
+        ],
+        "hint": "よみ: あめなので"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Vì trời mưa (dạng ので)” viết là 雨なので. danh từ + 「なので」 = vì…, mềm hơn 「だから」.",
+        "en": "Correct! “Because it is raining (ので)” is written 雨なので. noun + 「なので」 = because…, softer than 「だから」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 雨なので (đọc là あめなので). danh từ + 「なので」 = vì…, mềm hơn 「だから」.",
+        "en": "Not quite. Reference answer: 雨なので (read as あめなので). noun + 「なので」 = because…, softer than 「だから」."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Vì thế; do đó”",
+        "en": "Type in Japanese: “For that reason; therefore”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "そのため"
+        ],
+        "hint": "よみ: そのため"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Vì thế; do đó” viết là そのため. 「そのため」 nối nguyên nhân đã nêu với kết quả.",
+        "en": "Correct! “For that reason; therefore” is written そのため. 「そのため」 links a stated cause to its result."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: そのため (đọc là そのため). 「そのため」 nối nguyên nhân đã nêu với kết quả.",
+        "en": "Not quite. Reference answer: そのため (read as そのため). 「そのため」 links a stated cause to its result."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Lý do thì rõ ràng.”",
+        "en": "Type in Japanese: “The reason is clear.”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "理由は明らかです",
+          "りゆうはあきらかです"
+        ],
+        "hint": "よみ: りゆうはあきらかです"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Lý do thì rõ ràng.” viết là 理由は明らかです. 理由 = lý do; 明らか = rõ ràng.",
+        "en": "Correct! “The reason is clear.” is written 理由は明らかです. 理由 = reason; 明らか = clear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 理由は明らかです (đọc là りゆうはあきらかです). 理由 = lý do; 明らか = rõ ràng.",
+        "en": "Not quite. Reference answer: 理由は明らかです (read as りゆうはあきらかです). 理由 = reason; 明らか = clear."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Vì bị bệnh (nguyên nhân dẫn đến kết quả xấu)”",
+        "en": "Type in Japanese: “Because of illness (a cause of a bad result)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "病気のせいで",
+          "びょうきのせいで"
+        ],
+        "hint": "よみ: びょうきのせいで"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Vì bị bệnh (nguyên nhân dẫn đến kết quả xấu)” viết là 病気のせいで. 「～のせいで」 chỉ nguyên nhân dẫn đến kết quả không tốt.",
+        "en": "Correct! “Because of illness (a cause of a bad result)” is written 病気のせいで. 「～のせいで」 marks the cause of an unfavorable result."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 病気のせいで (đọc là びょうきのせいで). 「～のせいで」 chỉ nguyên nhân dẫn đến kết quả không tốt.",
+        "en": "Not quite. Reference answer: 病気のせいで (read as びょうきのせいで). 「～のせいで」 marks the cause of an unfavorable result."
+      }
+    }
+  ]
+}

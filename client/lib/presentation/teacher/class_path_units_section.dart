@@ -6,13 +6,19 @@ import 'package:japanese_api/japanese_api.dart';
 import '../../data/api/api_error.dart';
 import '../../data/api_providers.dart';
 import '../../data/class_repository.dart';
+import '../../domain/admin_unit_draft.dart' show kContentLevels, kUnitKinds;
 import '../../l10n/app_localizations.dart';
+import '../admin/admin_support.dart' show unitKindLabel;
 import '../shared/error_messages.dart';
 
 final DateFormat _dateFormat = DateFormat('yyyy-MM-dd');
 
 /// Số bài tối đa mỗi lần giao (khớp hợp đồng `POST /classes/{id}/assignments`).
 const int maxAssignmentUnits = 20;
+
+/// Số bài giao tối đa hiển thị cùng lúc dưới dạng chip (thư viện N4–N3 có ≈ 600 bài; spec 008, D15): phần dư được
+/// thu hẹp bằng bộ lọc loại/trình độ. Bài đã chọn luôn hiển thị.
+const int assignChipLimit = 60;
 
 class _Pick {
   _Pick(this.unit, this.opensOn);
@@ -46,6 +52,9 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
   final Map<String, ClassPathUnit> _pool = <String, ClassPathUnit>{};
   List<_Pick> _picks = <_Pick>[];
   final Set<String> _assignPicks = <String>{};
+  // Bộ lọc thư viện bài (dùng chung cho danh sách thêm bài và danh sách bài giao): thư viện có thể tới ≈ 600 bài.
+  String? _poolKind;
+  String? _poolLevel;
   DateTime _dueOn = DateTime.now().add(const Duration(days: 7));
 
   bool _busy = false;
@@ -153,6 +162,59 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
     lastDate: DateTime(2100),
   );
 
+  /// Thư viện bài sau khi áp bộ lọc loại/trình độ (giữ thứ tự của lộ trình).
+  Iterable<ClassPathUnit> _filteredPool() => _pool.values.where(
+    (u) =>
+        (_poolKind == null || u.kind.name == _poolKind) &&
+        (_poolLevel == null || u.level == _poolLevel),
+  );
+
+  Widget _poolFilters(AppLocalizations l10n) {
+    DropdownButton<String?> dropdown({
+      required Key key,
+      required String hint,
+      required String? value,
+      required Map<String, String> options,
+      required ValueChanged<String?> onChanged,
+    }) => DropdownButton<String?>(
+      key: key,
+      hint: Text(hint),
+      value: value,
+      items: <DropdownMenuItem<String?>>[
+        DropdownMenuItem<String?>(
+          value: null,
+          child: Text(l10n.adminFilterAll),
+        ),
+        for (final e in options.entries)
+          DropdownMenuItem<String?>(value: e.key, child: Text(e.value)),
+      ],
+      onChanged: onChanged,
+    );
+    return Wrap(
+      spacing: 12,
+      runSpacing: 4,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: <Widget>[
+        dropdown(
+          key: const Key('class-units-filter-kind'),
+          hint: l10n.adminFilterKind,
+          value: _poolKind,
+          options: <String, String>{
+            for (final k in kUnitKinds) k: unitKindLabel(l10n, k),
+          },
+          onChanged: (v) => setState(() => _poolKind = v),
+        ),
+        dropdown(
+          key: const Key('class-units-filter-level'),
+          hint: l10n.adminFilterLevel,
+          value: _poolLevel,
+          options: <String, String>{for (final l in kContentLevels) l: l},
+          onChanged: (v) => setState(() => _poolLevel = v),
+        ),
+      ],
+    );
+  }
+
   void _move(int index, int delta) {
     final target = index + delta;
     if (target < 0 || target >= _picks.length) return;
@@ -205,7 +267,7 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
 
   Widget _unitsCard(AppLocalizations l10n, ThemeData theme) {
     final chosen = _picks.map((p) => p.unit.unitId).toSet();
-    final addable = _pool.values.where((u) => !chosen.contains(u.unitId));
+    final addable = _filteredPool().where((u) => !chosen.contains(u.unitId));
     final explicit = widget.path.mode == ClassPathModeEnum.explicit;
     return Card(
       child: Padding(
@@ -229,6 +291,7 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
               Text(l10n.classUnitsEmpty, key: const Key('class-units-empty')),
             for (var i = 0; i < _picks.length; i++) _pickRow(l10n, i),
             const SizedBox(height: 8),
+            _poolFilters(l10n),
             DropdownButton<String>(
               key: const Key('class-units-add'),
               hint: Text(l10n.classUnitsAdd),
@@ -324,6 +387,16 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
 
   Widget _assignCard(AppLocalizations l10n, ThemeData theme) {
     final assignments = widget.path.assignments;
+    final filtered = _filteredPool().toList();
+    // Bài đã chọn luôn hiển thị (kể cả khi không khớp bộ lọc hiện tại); phần còn lại cắt ở `assignChipLimit`.
+    final shownForAssign = <ClassPathUnit>[
+      for (final id in _assignPicks)
+        if (_pool[id] != null) _pool[id]!,
+      ...filtered
+          .where((u) => !_assignPicks.contains(u.unitId))
+          .take(assignChipLimit),
+    ];
+    final truncated = filtered.length > shownForAssign.length;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -334,11 +407,13 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
             const SizedBox(height: 4),
             Text(l10n.classAssignIntro),
             const SizedBox(height: 8),
+            _poolFilters(l10n),
+            const SizedBox(height: 8),
             Wrap(
               spacing: 8,
               runSpacing: 4,
               children: <Widget>[
-                for (final u in _pool.values)
+                for (final u in shownForAssign)
                   FilterChip(
                     key: Key('assign-unit-${u.unitId}'),
                     label: Text(u.title),
@@ -353,6 +428,18 @@ class _ClassPathUnitsSectionState extends ConsumerState<ClassPathUnitsSection> {
                   ),
               ],
             ),
+            if (truncated)
+              Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Text(
+                  l10n.classUnitsFilterTruncated(
+                    shownForAssign.length,
+                    filtered.length,
+                  ),
+                  key: const Key('assign-truncated'),
+                  style: theme.textTheme.bodySmall,
+                ),
+              ),
             const SizedBox(height: 8),
             Wrap(
               spacing: 12,

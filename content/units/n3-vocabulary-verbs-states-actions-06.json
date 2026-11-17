@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-verbs-states-actions",
+  "title": {
+    "vi": "Khái niệm và những động tác",
+    "en": "Concepts and physical actions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2680,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "概念",
+      "reading": "がいねん",
+      "meaning": {
+        "vi": "Khái niệm",
+        "en": "Concept"
+      },
+      "examples": [
+        {
+          "ja": "この言葉の概念を、図を使って説明します。",
+          "reading": "このことばのがいねんを、ずをつかってせつめいします。",
+          "translation": {
+            "vi": "Tôi sẽ giải thích khái niệm của từ này bằng sơ đồ.",
+            "en": "I will explain the concept of this word using a diagram."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "巡る",
+      "reading": "めぐる",
+      "meaning": {
+        "vi": "Đi vòng quanh; xoay quanh",
+        "en": "To go around; to revolve around"
+      },
+      "examples": [
+        {
+          "ja": "世界の有名な美術館を巡る旅に出たいです。",
+          "reading": "せかいのゆうめいなびじゅつかんをめぐるたびにでたいです。",
+          "translation": {
+            "vi": "Tôi muốn đi một chuyến du lịch tham quan các bảo tàng nổi tiếng thế giới.",
+            "en": "I want to take a trip around the famous museums of the world."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "担ぐ",
+      "reading": "かつぐ",
+      "meaning": {
+        "vi": "Vác (trên vai)",
+        "en": "To carry on one’s shoulder"
+      },
+      "examples": [
+        {
+          "ja": "山登りで、重い荷物を担ぐのは大変です。",
+          "reading": "やまのぼりで、おもいにもつをかつぐのはたいへんです。",
+          "translation": {
+            "vi": "Khi leo núi, vác hành lý nặng rất vất vả.",
+            "en": "Carrying heavy luggage on your shoulder is hard when climbing mountains."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "突く",
+      "reading": "つく",
+      "meaning": {
+        "vi": "Chọc; thọc; đâm",
+        "en": "To poke; to thrust"
+      },
+      "examples": [
+        {
+          "ja": "針で指を突くと、血が出ます。",
+          "reading": "はりでゆびをつくと、ちがでます。",
+          "translation": {
+            "vi": "Chọc kim vào ngón tay thì sẽ chảy máu.",
+            "en": "If you prick your finger with a needle, it bleeds."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "引き返す",
+      "reading": "ひきかえす",
+      "meaning": {
+        "vi": "Quay trở lại",
+        "en": "To turn back"
+      },
+      "examples": [
+        {
+          "ja": "雨がひどくなったので、途中で引き返すことにしました。",
+          "reading": "あめがひどくなったので、とちゅうでひきかえすことにしました。",
+          "translation": {
+            "vi": "Vì mưa nặng hạt hơn nên chúng tôi quyết định quay lại giữa đường.",
+            "en": "The rain got heavier, so we decided to turn back halfway."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "努める",
+      "reading": "つとめる",
+      "meaning": {
+        "vi": "Cố gắng; nỗ lực",
+        "en": "To strive; to make an effort"
+      },
+      "examples": [
+        {
+          "ja": "少しでもよい結果が出るよう、努めるつもりです。",
+          "reading": "すこしでもよいけっかがでるよう、つとめるつもりです。",
+          "translation": {
+            "vi": "Tôi sẽ cố gắng để có kết quả tốt dù chỉ một chút.",
+            "en": "I intend to do my best to get even slightly better results."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "概念",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この言葉の（　）を、図を使って説明します。 — Nghĩa của câu: “Tôi sẽ giải thích khái niệm của từ này bằng sơ đồ.”",
+        "en": "Choose the word that fits the blank: この言葉の（　）を、図を使って説明します。 — Meaning of the sentence: “I will explain the concept of this word using a diagram.”"
+      },
+      "payload": {
+        "choices": [
+          "引き返す",
+          "担ぐ",
+          "努める",
+          "概念"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「概念」(Khái niệm) hợp nghĩa câu này: “Tôi sẽ giải thích khái niệm của từ này bằng sơ đồ.”",
+        "en": "Correct! 「概念」(Concept) fits this sentence: “I will explain the concept of this word using a diagram.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi sẽ giải thích khái niệm của từ này bằng sơ đồ.”, nên cần 「概念」(Khái niệm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I will explain the concept of this word using a diagram.”, so it needs 「概念」(Concept); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "巡る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 世界の有名な美術館を（　）旅に出たいです。 — Nghĩa của câu: “Tôi muốn đi một chuyến du lịch tham quan các bảo tàng nổi tiếng thế giới.”",
+        "en": "Choose the word that fits the blank: 世界の有名な美術館を（　）旅に出たいです。 — Meaning of the sentence: “I want to take a trip around the famous museums of the world.”"
+      },
+      "payload": {
+        "choices": [
+          "巡る",
+          "突く",
+          "努める",
+          "引き返す"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「巡る」(Đi vòng quanh; xoay quanh) hợp nghĩa câu này: “Tôi muốn đi một chuyến du lịch tham quan các bảo tàng nổi tiếng thế giới.”",
+        "en": "Correct! 「巡る」(To go around; to revolve around) fits this sentence: “I want to take a trip around the famous museums of the world.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi muốn đi một chuyến du lịch tham quan các bảo tàng nổi tiếng thế giới.”, nên cần 「巡る」(Đi vòng quanh; xoay quanh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I want to take a trip around the famous museums of the world.”, so it needs 「巡る」(To go around; to revolve around); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "担ぐ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 山登りで、重い荷物を（　）のは大変です。 — Nghĩa của câu: “Khi leo núi, vác hành lý nặng rất vất vả.”",
+        "en": "Choose the word that fits the blank: 山登りで、重い荷物を（　）のは大変です。 — Meaning of the sentence: “Carrying heavy luggage on your shoulder is hard when climbing mountains.”"
+      },
+      "payload": {
+        "choices": [
+          "努める",
+          "担ぐ",
+          "巡る",
+          "概念"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「担ぐ」(Vác (trên vai)) hợp nghĩa câu này: “Khi leo núi, vác hành lý nặng rất vất vả.”",
+        "en": "Correct! 「担ぐ」(To carry on one’s shoulder) fits this sentence: “Carrying heavy luggage on your shoulder is hard when climbing mountains.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi leo núi, vác hành lý nặng rất vất vả.”, nên cần 「担ぐ」(Vác (trên vai)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Carrying heavy luggage on your shoulder is hard when climbing mountains.”, so it needs 「担ぐ」(To carry on one’s shoulder); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "突く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 針で指を（　）と、血が出ます。 — Nghĩa của câu: “Chọc kim vào ngón tay thì sẽ chảy máu.”",
+        "en": "Choose the word that fits the blank: 針で指を（　）と、血が出ます。 — Meaning of the sentence: “If you prick your finger with a needle, it bleeds.”"
+      },
+      "payload": {
+        "choices": [
+          "引き返す",
+          "努める",
+          "突く",
+          "担ぐ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「突く」(Chọc; thọc; đâm) hợp nghĩa câu này: “Chọc kim vào ngón tay thì sẽ chảy máu.”",
+        "en": "Correct! 「突く」(To poke; to thrust) fits this sentence: “If you prick your finger with a needle, it bleeds.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chọc kim vào ngón tay thì sẽ chảy máu.”, nên cần 「突く」(Chọc; thọc; đâm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you prick your finger with a needle, it bleeds.”, so it needs 「突く」(To poke; to thrust); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "引き返す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 雨がひどくなったので、途中で（　）ことにしました。 — Nghĩa của câu: “Vì mưa nặng hạt hơn nên chúng tôi quyết định quay lại giữa đường.”",
+        "en": "Choose the word that fits the blank: 雨がひどくなったので、途中で（　）ことにしました。 — Meaning of the sentence: “The rain got heavier, so we decided to turn back halfway.”"
+      },
+      "payload": {
+        "choices": [
+          "担ぐ",
+          "突く",
+          "概念",
+          "引き返す"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「引き返す」(Quay trở lại) hợp nghĩa câu này: “Vì mưa nặng hạt hơn nên chúng tôi quyết định quay lại giữa đường.”",
+        "en": "Correct! 「引き返す」(To turn back) fits this sentence: “The rain got heavier, so we decided to turn back halfway.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì mưa nặng hạt hơn nên chúng tôi quyết định quay lại giữa đường.”, nên cần 「引き返す」(Quay trở lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The rain got heavier, so we decided to turn back halfway.”, so it needs 「引き返す」(To turn back); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "努める",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 少しでもよい結果が出るよう、（　）つもりです。 — Nghĩa của câu: “Tôi sẽ cố gắng để có kết quả tốt dù chỉ một chút.”",
+        "en": "Choose the word that fits the blank: 少しでもよい結果が出るよう、（　）つもりです。 — Meaning of the sentence: “I intend to do my best to get even slightly better results.”"
+      },
+      "payload": {
+        "choices": [
+          "努める",
+          "巡る",
+          "概念",
+          "引き返す"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「努める」(Cố gắng; nỗ lực) hợp nghĩa câu này: “Tôi sẽ cố gắng để có kết quả tốt dù chỉ một chút.”",
+        "en": "Correct! 「努める」(To strive; to make an effort) fits this sentence: “I intend to do my best to get even slightly better results.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi sẽ cố gắng để có kết quả tốt dù chỉ một chút.”, nên cần 「努める」(Cố gắng; nỗ lực); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I intend to do my best to get even slightly better results.”, so it needs 「努める」(To strive; to make an effort); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "概念",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この言葉の「概念」を、図を使って説明します。",
+        "en": "Choose the correct reading of the word in 「」: この言葉の「概念」を、図を使って説明します。"
+      },
+      "payload": {
+        "choices": [
+          "がいねん",
+          "つく",
+          "かつぐ",
+          "めぐる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「概念」 đọc là 「がいねん」, nghĩa là Khái niệm.",
+        "en": "Correct! 「概念」 is read 「がいねん」 and means Concept."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「概念」 đọc là 「がいねん」 (Khái niệm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「概念」 is read 「がいねん」 (Concept); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "突く",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 針で指を「突く」と、血が出ます。",
+        "en": "Choose the correct reading of the word in 「」: 針で指を「突く」と、血が出ます。"
+      },
+      "payload": {
+        "choices": [
+          "つとめる",
+          "つく",
+          "かつぐ",
+          "めぐる"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「突く」 đọc là 「つく」, nghĩa là Chọc; thọc; đâm.",
+        "en": "Correct! 「突く」 is read 「つく」 and means To poke; to thrust."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「突く」 đọc là 「つく」 (Chọc; thọc; đâm); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「突く」 is read 「つく」 (To poke; to thrust); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "努める",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 少しでもよい結果が出るよう、「つとめる」つもりです。",
+        "en": "Choose the correct way to write the word in 「」: 少しでもよい結果が出るよう、「つとめる」つもりです。"
+      },
+      "payload": {
+        "choices": [
+          "引き返す",
+          "努める",
+          "突く",
+          "概念"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「つとめる」 viết là 「努める」, nghĩa là Cố gắng; nỗ lực.",
+        "en": "Correct! 「つとめる」 is written 「努める」 and means To strive; to make an effort."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「つとめる」 viết là 「努める」 (Cố gắng; nỗ lực); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「つとめる」 is written 「努める」 (To strive; to make an effort); the other words are read differently."
+      }
+    }
+  ]
+}

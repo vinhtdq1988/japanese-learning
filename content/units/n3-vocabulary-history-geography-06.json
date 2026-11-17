@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-history-geography",
+  "title": {
+    "vi": "Đi quá ga, vua chúa và các thời đại",
+    "en": "Riding past, kings and historical periods"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2080,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "乗り越し",
+      "reading": "のりこし",
+      "meaning": {
+        "vi": "Đi quá ga (phải trả thêm tiền)",
+        "en": "Riding past one’s stop"
+      },
+      "examples": [
+        {
+          "ja": "乗り越しをしたので、駅で料金を払いました。",
+          "reading": "のりこしをしたので、えきでりょうきんをはらいました。",
+          "translation": {
+            "vi": "Vì đi quá ga nên tôi đã trả thêm tiền ở nhà ga.",
+            "en": "I rode past my stop, so I paid the extra fare at the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国王",
+      "reading": "こくおう",
+      "meaning": {
+        "vi": "Quốc vương",
+        "en": "King"
+      },
+      "examples": [
+        {
+          "ja": "その国の国王は、国民に愛されています。",
+          "reading": "そのくにのこくおうは、こくみんにあいされています。",
+          "translation": {
+            "vi": "Quốc vương của nước đó được người dân yêu mến.",
+            "en": "The king of that country is loved by its people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "世紀末",
+      "reading": "せいきまつ",
+      "meaning": {
+        "vi": "Cuối thế kỷ",
+        "en": "End of a century"
+      },
+      "examples": [
+        {
+          "ja": "世紀末には、世界中に不安な空気が広がりました。",
+          "reading": "せいきまつには、せかいじゅうにふあんなくうきがひろがりました。",
+          "translation": {
+            "vi": "Vào cuối thế kỷ, bầu không khí bất an lan rộng khắp thế giới.",
+            "en": "At the end of the century, a sense of unease spread around the world."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "紀元",
+      "reading": "きげん",
+      "meaning": {
+        "vi": "Kỷ nguyên; năm đầu của lịch",
+        "en": "Era; beginning of a calendar"
+      },
+      "examples": [
+        {
+          "ja": "ローマの建国は、紀元前の出来事です。",
+          "reading": "ローマのけんこくは、きげんぜんのできごとです。",
+          "translation": {
+            "vi": "Việc lập nên La Mã là sự kiện trước Công nguyên.",
+            "en": "The founding of Rome is an event from before the Common Era."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "縄文",
+      "reading": "じょうもん",
+      "meaning": {
+        "vi": "Thời kỳ Jomon; hoa văn dây thừng",
+        "en": "Jomon"
+      },
+      "examples": [
+        {
+          "ja": "縄文時代の人々は、土器を作って暮らしていました。",
+          "reading": "じょうもんじだいのひとびとは、どきをつくってくらしていました。",
+          "translation": {
+            "vi": "Người thời Jomon sống bằng cách làm đồ gốm.",
+            "en": "People of the Jomon period lived making earthenware."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "疲れ",
+      "reading": "つかれ",
+      "meaning": {
+        "vi": "Sự mệt mỏi",
+        "en": "Tiredness; fatigue"
+      },
+      "examples": [
+        {
+          "ja": "旅行の疲れが、まだ取れません。",
+          "reading": "りょこうのつかれが、まだとれません。",
+          "translation": {
+            "vi": "Cái mệt của chuyến du lịch vẫn chưa hết.",
+            "en": "I still have not shaken off the fatigue from the trip."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "乗り越し",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）をしたので、駅で料金を払いました。 — Nghĩa của câu: “Vì đi quá ga nên tôi đã trả thêm tiền ở nhà ga.”",
+        "en": "Choose the word that fits the blank: （　）をしたので、駅で料金を払いました。 — Meaning of the sentence: “I rode past my stop, so I paid the extra fare at the station.”"
+      },
+      "payload": {
+        "choices": [
+          "紀元",
+          "世紀末",
+          "縄文",
+          "乗り越し"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乗り越し」(Đi quá ga (phải trả thêm tiền)) hợp nghĩa câu này: “Vì đi quá ga nên tôi đã trả thêm tiền ở nhà ga.”",
+        "en": "Correct! 「乗り越し」(Riding past one’s stop) fits this sentence: “I rode past my stop, so I paid the extra fare at the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì đi quá ga nên tôi đã trả thêm tiền ở nhà ga.”, nên cần 「乗り越し」(Đi quá ga (phải trả thêm tiền)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I rode past my stop, so I paid the extra fare at the station.”, so it needs 「乗り越し」(Riding past one’s stop); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国王",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: その国の（　）は、国民に愛されています。 — Nghĩa của câu: “Quốc vương của nước đó được người dân yêu mến.”",
+        "en": "Choose the word that fits the blank: その国の（　）は、国民に愛されています。 — Meaning of the sentence: “The king of that country is loved by its people.”"
+      },
+      "payload": {
+        "choices": [
+          "国王",
+          "疲れ",
+          "縄文",
+          "乗り越し"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国王」(Quốc vương) hợp nghĩa câu này: “Quốc vương của nước đó được người dân yêu mến.”",
+        "en": "Correct! 「国王」(King) fits this sentence: “The king of that country is loved by its people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Quốc vương của nước đó được người dân yêu mến.”, nên cần 「国王」(Quốc vương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The king of that country is loved by its people.”, so it needs 「国王」(King); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "世紀末",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）には、世界中に不安な空気が広がりました。 — Nghĩa của câu: “Vào cuối thế kỷ, bầu không khí bất an lan rộng khắp thế giới.”",
+        "en": "Choose the word that fits the blank: （　）には、世界中に不安な空気が広がりました。 — Meaning of the sentence: “At the end of the century, a sense of unease spread around the world.”"
+      },
+      "payload": {
+        "choices": [
+          "疲れ",
+          "世紀末",
+          "縄文",
+          "国王"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「世紀末」(Cuối thế kỷ) hợp nghĩa câu này: “Vào cuối thế kỷ, bầu không khí bất an lan rộng khắp thế giới.”",
+        "en": "Correct! 「世紀末」(End of a century) fits this sentence: “At the end of the century, a sense of unease spread around the world.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vào cuối thế kỷ, bầu không khí bất an lan rộng khắp thế giới.”, nên cần 「世紀末」(Cuối thế kỷ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At the end of the century, a sense of unease spread around the world.”, so it needs 「世紀末」(End of a century); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "紀元",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ローマの建国は、（　）前の出来事です。 — Nghĩa của câu: “Việc lập nên La Mã là sự kiện trước Công nguyên.”",
+        "en": "Choose the word that fits the blank: ローマの建国は、（　）前の出来事です。 — Meaning of the sentence: “The founding of Rome is an event from before the Common Era.”"
+      },
+      "payload": {
+        "choices": [
+          "疲れ",
+          "世紀末",
+          "紀元",
+          "国王"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「紀元」(Kỷ nguyên; năm đầu của lịch) hợp nghĩa câu này: “Việc lập nên La Mã là sự kiện trước Công nguyên.”",
+        "en": "Correct! 「紀元」(Era; beginning of a calendar) fits this sentence: “The founding of Rome is an event from before the Common Era.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc lập nên La Mã là sự kiện trước Công nguyên.”, nên cần 「紀元」(Kỷ nguyên; năm đầu của lịch); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The founding of Rome is an event from before the Common Era.”, so it needs 「紀元」(Era; beginning of a calendar); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "縄文",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）時代の人々は、土器を作って暮らしていました。 — Nghĩa của câu: “Người thời Jomon sống bằng cách làm đồ gốm.”",
+        "en": "Choose the word that fits the blank: （　）時代の人々は、土器を作って暮らしていました。 — Meaning of the sentence: “People of the Jomon period lived making earthenware.”"
+      },
+      "payload": {
+        "choices": [
+          "世紀末",
+          "乗り越し",
+          "紀元",
+          "縄文"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「縄文」(Thời kỳ Jomon; hoa văn dây thừng) hợp nghĩa câu này: “Người thời Jomon sống bằng cách làm đồ gốm.”",
+        "en": "Correct! 「縄文」(Jomon) fits this sentence: “People of the Jomon period lived making earthenware.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người thời Jomon sống bằng cách làm đồ gốm.”, nên cần 「縄文」(Thời kỳ Jomon; hoa văn dây thừng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “People of the Jomon period lived making earthenware.”, so it needs 「縄文」(Jomon); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "疲れ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 旅行の（　）が、まだ取れません。 — Nghĩa của câu: “Cái mệt của chuyến du lịch vẫn chưa hết.”",
+        "en": "Choose the word that fits the blank: 旅行の（　）が、まだ取れません。 — Meaning of the sentence: “I still have not shaken off the fatigue from the trip.”"
+      },
+      "payload": {
+        "choices": [
+          "疲れ",
+          "乗り越し",
+          "世紀末",
+          "紀元"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「疲れ」(Sự mệt mỏi) hợp nghĩa câu này: “Cái mệt của chuyến du lịch vẫn chưa hết.”",
+        "en": "Correct! 「疲れ」(Tiredness; fatigue) fits this sentence: “I still have not shaken off the fatigue from the trip.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái mệt của chuyến du lịch vẫn chưa hết.”, nên cần 「疲れ」(Sự mệt mỏi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I still have not shaken off the fatigue from the trip.”, so it needs 「疲れ」(Tiredness; fatigue); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "乗り越し",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「乗り越し」をしたので、駅で料金を払いました。",
+        "en": "Choose the correct reading of the word in 「」: 「乗り越し」をしたので、駅で料金を払いました。"
+      },
+      "payload": {
+        "choices": [
+          "のりこし",
+          "きげん",
+          "つかれ",
+          "こくおう"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乗り越し」 đọc là 「のりこし」, nghĩa là Đi quá ga (phải trả thêm tiền).",
+        "en": "Correct! 「乗り越し」 is read 「のりこし」 and means Riding past one’s stop."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「乗り越し」 đọc là 「のりこし」 (Đi quá ga (phải trả thêm tiền)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「乗り越し」 is read 「のりこし」 (Riding past one’s stop); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "紀元",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: ローマの建国は、「紀元」前の出来事です。",
+        "en": "Choose the correct reading of the word in 「」: ローマの建国は、「紀元」前の出来事です。"
+      },
+      "payload": {
+        "choices": [
+          "せいきまつ",
+          "きげん",
+          "じょうもん",
+          "こくおう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「紀元」 đọc là 「きげん」, nghĩa là Kỷ nguyên; năm đầu của lịch.",
+        "en": "Correct! 「紀元」 is read 「きげん」 and means Era; beginning of a calendar."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「紀元」 đọc là 「きげん」 (Kỷ nguyên; năm đầu của lịch); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「紀元」 is read 「きげん」 (Era; beginning of a calendar); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "疲れ",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 旅行の「つかれ」が、まだ取れません。",
+        "en": "Choose the correct way to write the word in 「」: 旅行の「つかれ」が、まだ取れません。"
+      },
+      "payload": {
+        "choices": [
+          "乗り越し",
+          "疲れ",
+          "紀元",
+          "縄文"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「つかれ」 viết là 「疲れ」, nghĩa là Sự mệt mỏi.",
+        "en": "Correct! 「つかれ」 is written 「疲れ」 and means Tiredness; fatigue."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「つかれ」 viết là 「疲れ」 (Sự mệt mỏi); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「つかれ」 is written 「疲れ」 (Tiredness; fatigue); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -164,7 +164,7 @@ export async function copyContentDir(registry?: string[]): Promise<string> {
       const rel = path.relative(DEFAULT_CONTENT_DIR, src).split(path.sep);
       if (rel[0] === 'drafts') return false;
       if (rel[0] === 'releases' && rel.length > 1) return rel[1] === '000-baseline.json';
-      if (rel[0] === 'units' && rel.length > 1) return baselineFiles.has(rel[1]);
+      if (rel[0] === 'units' && rel.length > 1) return baselineFiles.has(rel[1] ?? '');
       return true;
     },
   });

@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Email xin lỗi vì đến trễ họp",
+    "en": "Reading: Email apologizing for being late"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "木下さんへ\nきのうは、かいぎにおくれてしまって、すみませんでした。電車がじこでとまって、三十分も動きませんでした。会社に電話をしようと思いましたが、電車の中だったので、できませんでした。かいぎのはじめの話を聞くことができなかったので、あとで山田さんにノートを見せてもらいました。これからは、もっと早い電車にのるようにします。また、おくれそうなときは、すぐにメールを送ります。ごめいわくをおかけして、もうしわけありませんでした。\n山本",
+      "meaning": {
+        "vi": "Gửi anh Kinoshita. Hôm qua tôi đã đến muộn buổi họp, tôi xin lỗi. Tàu điện bị dừng vì tai nạn và không chạy suốt 30 phút. Tôi định gọi điện cho công ty nhưng vì đang ở trên tàu nên không làm được. Vì không nghe được phần đầu buổi họp, sau đó tôi đã nhờ anh Yamada cho xem vở ghi. Từ nay tôi sẽ cố gắng đi chuyến tàu sớm hơn. Ngoài ra, khi có vẻ sắp trễ, tôi sẽ gửi email ngay. Tôi thành thật xin lỗi vì đã làm phiền. — Yamamoto",
+        "en": "Dear Mr. Kinoshita, I am sorry for being late to the meeting yesterday. The train stopped because of an accident and did not move for thirty minutes. I thought about calling the office, but I was on the train, so I could not. Since I could not hear the first part of the meeting, I afterward asked Mr. Yamada to show me his notes. From now on I will try to take an earlier train. Also, when it looks like I will be late, I will send an email right away. I sincerely apologize for the trouble. — Yamamoto"
+      },
+      "reading": "きのしたさんへ\nきのうは、かいぎにおくれてしまって、すみませんでした。でんしゃがじこでとまって、さんじゅっぷんもうごきませんでした。かいしゃにでんわをしようとおもいましたが、でんしゃのなかだったので、できませんでした。かいぎのはじめのはなしをきくことができなかったので、あとでやまださんにノートをみせてもらいました。これからは、もっとはやいでんしゃにのるようにします。また、おくれそうなときは、すぐにメールをおくります。ごめいわくをおかけして、もうしわけありませんでした。\nやまもと",
+      "explanation": {
+        "vi": "「～てしまう」= lỡ làm / làm mất (おくれてしまって); 「～ようとおもう」= định làm; 「～てもらう」= được ai làm cho; 「～そう」= có vẻ sắp.",
+        "en": "「～てしまう」 = ended up (おくれてしまって); 「～ようとおもう」 = intend to; 「～てもらう」 = have someone do for you; 「～そう」 = looks like it will."
+      },
+      "scopeRef": "r-n4-email-thanks-apology"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao Yamamoto đến muộn buổi họp?",
+        "en": "Why was Yamamoto late for the meeting?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì ngủ quên",
+            "en": "He overslept"
+          },
+          {
+            "vi": "Vì tàu điện bị dừng do tai nạn",
+            "en": "The train stopped because of an accident"
+          },
+          {
+            "vi": "Vì lạc đường",
+            "en": "He got lost"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電車がじこでとまって、三十分も動きませんでした」: Tàu bị dừng vì tai nạn (じこ) và không chạy trong 30 phút.",
+        "en": "Correct! The text has 「電車がじこでとまって、三十分も動きませんでした」: The train stopped because of an accident (じこ) and did not move for 30 minutes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電車がじこでとまって、三十分も動きませんでした」: Tàu bị dừng vì tai nạn (じこ) và không chạy trong 30 phút.",
+        "en": "Not quite. Look again at 「電車がじこでとまって、三十分も動きませんでした」: The train stopped because of an accident (じこ) and did not move for 30 minutes."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao Yamamoto không gọi điện cho công ty?",
+        "en": "Why did Yamamoto not call the office?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì hết pin điện thoại",
+            "en": "His phone battery was dead"
+          },
+          {
+            "vi": "Vì quên số điện thoại",
+            "en": "He forgot the number"
+          },
+          {
+            "vi": "Vì đang ở trong tàu điện",
+            "en": "Because he was on the train"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電車の中だったので、できませんでした」: 「～ので」nêu lý do: đang ở trong tàu nên không gọi được.",
+        "en": "Correct! The text has 「電車の中だったので、できませんでした」: 「～ので」 gives the reason: he was on the train, so he could not call."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電車の中だったので、できませんでした」: 「～ので」nêu lý do: đang ở trong tàu nên không gọi được.",
+        "en": "Not quite. Look again at 「電車の中だったので、できませんでした」: 「～ので」 gives the reason: he was on the train, so he could not call."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamamoto đã theo kịp phần đầu cuộc họp bằng cách nào?",
+        "en": "How did Yamamoto catch up on the first part of the meeting?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Xem vở ghi của Yamada",
+            "en": "He looked at Yamada’s notes"
+          },
+          {
+            "vi": "Xem video buổi họp",
+            "en": "He watched a video of the meeting"
+          },
+          {
+            "vi": "Hỏi trưởng phòng",
+            "en": "He asked the manager"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「あとで山田さんにノートを見せてもらいました」: 「～てもらう」nghĩa là nhờ ai làm cho: anh ấy được Yamada cho xem vở ghi.",
+        "en": "Correct! The text has 「あとで山田さんにノートを見せてもらいました」: 「～てもらう」 means to have someone do something for you: Yamada showed him his notes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「あとで山田さんにノートを見せてもらいました」: 「～てもらう」nghĩa là nhờ ai làm cho: anh ấy được Yamada cho xem vở ghi.",
+        "en": "Not quite. Look again at 「あとで山田さんにノートを見せてもらいました」: 「～てもらう」 means to have someone do something for you: Yamada showed him his notes."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Từ nay Yamamoto sẽ làm gì?",
+        "en": "What will Yamamoto do from now on?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đi làm bằng xe máy",
+            "en": "Commute by motorbike"
+          },
+          {
+            "vi": "Đi chuyến tàu sớm hơn và gửi email ngay khi sắp trễ",
+            "en": "Take an earlier train and email right away when he may be late"
+          },
+          {
+            "vi": "Xin phép làm việc ở nhà",
+            "en": "Ask to work from home"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「もっと早い電車にのるようにします」: 「～ようにします」nghĩa là cố gắng làm; anh ấy sẽ đi tàu sớm hơn và báo email ngay khi sắp trễ.",
+        "en": "Correct! The text has 「もっと早い電車にのるようにします」: 「～ようにします」 means make an effort to; he will take an earlier train and email immediately if he may be late."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「もっと早い電車にのるようにします」: 「～ようにします」nghĩa là cố gắng làm; anh ấy sẽ đi tàu sớm hơn và báo email ngay khi sắp trễ.",
+        "en": "Not quite. Look again at 「もっと早い電車にのるようにします」: 「～ようにします」 means make an effort to; he will take an earlier train and email immediately if he may be late."
+      }
+    }
+  ]
+}

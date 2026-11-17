@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_placement_results.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -20,37 +21,66 @@ part 'class_placement_results.g.dart';
 class ClassPlacementResults {
   /// Returns a new [ClassPlacementResults] instance.
   ClassPlacementResults({
-    required this.request,
 
-    required this.results,
+    required  this.request,
 
-    required this.distribution,
+    required  this.results,
+
+    required  this.distribution,
   });
 
-  @JsonKey(name: r'request', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'request',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassPlacementRequest request;
 
-  @JsonKey(name: r'results', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'results',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassPlacementResultsResultsInner> results;
 
-  /// Số học viên theo `estimatedLevel` (none, N5, N4, N3)
-  @JsonKey(name: r'distribution', required: true, includeIfNull: false)
+
+
+      /// Số học viên theo `estimatedLevel` (none, N5, N4, N3)
+  @JsonKey(
+    
+    name: r'distribution',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Map<String, int> distribution;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassPlacementResults &&
-          other.request == request &&
-          other.results == results &&
-          other.distribution == distribution;
 
-  @override
-  int get hashCode =>
-      request.hashCode + results.hashCode + distribution.hashCode;
 
-  factory ClassPlacementResults.fromJson(Map<String, dynamic> json) =>
-      _$ClassPlacementResultsFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassPlacementResults &&
+      other.request == request &&
+      other.results == results &&
+      other.distribution == distribution;
+
+    @override
+    int get hashCode =>
+        request.hashCode +
+        results.hashCode +
+        distribution.hashCode;
+
+  factory ClassPlacementResults.fromJson(Map<String, dynamic> json) => _$ClassPlacementResultsFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassPlacementResultsToJson(this);
 
@@ -58,4 +88,6 @@ class ClassPlacementResults {
   String toString() {
     return toJson().toString();
   }
+
 }
+

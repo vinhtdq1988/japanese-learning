@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_learner_detail_weak_topics_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,49 +19,88 @@ part 'class_learner_detail_weak_topics_inner.g.dart';
 class ClassLearnerDetailWeakTopicsInner {
   /// Returns a new [ClassLearnerDetailWeakTopicsInner] instance.
   ClassLearnerDetailWeakTopicsInner({
-    required this.topicId,
 
-    required this.name,
+    required  this.topicId,
 
-    this.accuracy,
+    required  this.name,
 
-    this.answers,
+     this.accuracy,
+
+     this.answers,
   });
 
-  @JsonKey(name: r'topicId', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'topicId',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String topicId;
 
-  @JsonKey(name: r'name', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'name',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String name;
 
-  @JsonKey(name: r'accuracy', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'accuracy',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? accuracy;
 
-  @JsonKey(name: r'answers', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'answers',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? answers;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassLearnerDetailWeakTopicsInner &&
-          other.topicId == topicId &&
-          other.name == name &&
-          other.accuracy == accuracy &&
-          other.answers == answers;
 
-  @override
-  int get hashCode =>
-      topicId.hashCode + name.hashCode + accuracy.hashCode + answers.hashCode;
 
-  factory ClassLearnerDetailWeakTopicsInner.fromJson(
-    Map<String, dynamic> json,
-  ) => _$ClassLearnerDetailWeakTopicsInnerFromJson(json);
 
-  Map<String, dynamic> toJson() =>
-      _$ClassLearnerDetailWeakTopicsInnerToJson(this);
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassLearnerDetailWeakTopicsInner &&
+      other.topicId == topicId &&
+      other.name == name &&
+      other.accuracy == accuracy &&
+      other.answers == answers;
+
+    @override
+    int get hashCode =>
+        topicId.hashCode +
+        name.hashCode +
+        accuracy.hashCode +
+        answers.hashCode;
+
+  factory ClassLearnerDetailWeakTopicsInner.fromJson(Map<String, dynamic> json) => _$ClassLearnerDetailWeakTopicsInnerFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ClassLearnerDetailWeakTopicsInnerToJson(this);
 
   @override
   String toString() {
     return toJson().toString();
   }
+
 }
+

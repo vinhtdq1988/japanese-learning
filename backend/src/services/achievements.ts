@@ -152,7 +152,7 @@ export async function evaluateOnSessionCompletion(
     itemsAfter = await countItemsLearned(tx, userId);
   }
 
-  // Tiến độ mục tiêu: cùng phép tính với `GET /progress` (`goalRatio`).
+  // Tiến độ mục tiêu: cùng phép tính (theo phút) với `GET /progress` (`goalRatio`).
   let goalDone = 0;
   let goalTotal = 0;
   let delta = 0;
@@ -165,8 +165,9 @@ export async function evaluateOnSessionCompletion(
     goalTotal = goal.total;
     const wasDone =
       before.unitStatusBefore === 'completed' || before.unitStatusBefore === 'mastered';
-    const inScope = session.unitId !== null && ranked.some((r) => r.unit.id === session.unitId);
-    delta = inScope && !wasDone ? 1 : 0;
+    // `done`/`total` tính theo phút nên `delta` cũng là số phút của đơn vị vừa xong (cùng đơn vị với `goalDone`).
+    const lessonUnit = ranked.find((r) => r.unit.id === session.unitId);
+    delta = lessonUnit && !wasDone ? lessonUnit.unit.estMinutes : 0;
   }
 
   const hasEarlierLesson = !earned.has('first_lesson')

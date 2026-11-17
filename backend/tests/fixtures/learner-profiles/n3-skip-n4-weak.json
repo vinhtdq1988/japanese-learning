@@ -1,0 +1,57 @@
+{
+  "id": "n3-skip-n4-weak",
+  "description": "Xếp thẳng N3 qua bài xếp lớp nhưng yếu hai mảng N4 (transport-places, health-body): được gợi ý ôn lùi tối đa 3 đơn vị N4 (D11).",
+  "asOf": "2026-01-05",
+  "profile": {
+    "currentLevel": "N3",
+    "goalType": "jlpt",
+    "targetLevel": "N3",
+    "dailyMinutes": 15,
+    "targetDate": null,
+    "skills": ["vocabulary", "grammar", "kanji"],
+    "prioritizedSkill": null,
+    "language": "vi",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "paused": false
+  },
+  "placement": {
+    "note": "Đúng hết N5 và N3; sai hai câu N4 (transport-places, health-body) ⇒ xếp N3, mảng yếu thuộc N4.",
+    "correctByPosition": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "lastActiveDate": null,
+  "pausePeriods": [],
+  "history": [],
+  "reviewBacklog": [],
+  "expected": {
+    "path": {
+      "startLevel": "N3",
+      "levelRange": ["N3", "N3"],
+      "scopeNotice": null,
+      "weakTopics": ["transport-places", "health-body"]
+    },
+    "remedial": {
+      "maxUnits": 3
+    }
+  }
+}

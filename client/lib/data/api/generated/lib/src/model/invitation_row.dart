@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'invitation_row.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,73 +19,145 @@ part 'invitation_row.g.dart';
 class InvitationRow {
   /// Returns a new [InvitationRow] instance.
   InvitationRow({
-    required this.id,
 
-    required this.kind,
+    required  this.id,
 
-    required this.email,
+    required  this.kind,
 
-    this.displayNameHint,
+    required  this.email,
 
-    this.classId,
+     this.displayNameHint,
 
-    required this.status,
+     this.classId,
 
-    required this.expiresAt,
+    required  this.status,
 
-    this.createdAt,
+    required  this.expiresAt,
+
+     this.createdAt,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'kind', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'kind',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final InvitationRowKindEnum kind;
 
-  @JsonKey(name: r'email', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'email',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String email;
 
-  @JsonKey(name: r'displayNameHint', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'displayNameHint',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? displayNameHint;
 
-  @JsonKey(name: r'classId', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'classId',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? classId;
 
-  @JsonKey(name: r'status', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final InvitationRowStatusEnum status;
 
-  @JsonKey(name: r'expiresAt', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'expiresAt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime expiresAt;
 
-  @JsonKey(name: r'createdAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'createdAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? createdAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is InvitationRow &&
-          other.id == id &&
-          other.kind == kind &&
-          other.email == email &&
-          other.displayNameHint == displayNameHint &&
-          other.classId == classId &&
-          other.status == status &&
-          other.expiresAt == expiresAt &&
-          other.createdAt == createdAt;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      kind.hashCode +
-      email.hashCode +
-      (displayNameHint == null ? 0 : displayNameHint.hashCode) +
-      (classId == null ? 0 : classId.hashCode) +
-      status.hashCode +
-      expiresAt.hashCode +
-      createdAt.hashCode;
 
-  factory InvitationRow.fromJson(Map<String, dynamic> json) =>
-      _$InvitationRowFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is InvitationRow &&
+      other.id == id &&
+      other.kind == kind &&
+      other.email == email &&
+      other.displayNameHint == displayNameHint &&
+      other.classId == classId &&
+      other.status == status &&
+      other.expiresAt == expiresAt &&
+      other.createdAt == createdAt;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        kind.hashCode +
+        email.hashCode +
+        (displayNameHint == null ? 0 : displayNameHint.hashCode) +
+        (classId == null ? 0 : classId.hashCode) +
+        status.hashCode +
+        expiresAt.hashCode +
+        createdAt.hashCode;
+
+  factory InvitationRow.fromJson(Map<String, dynamic> json) => _$InvitationRowFromJson(json);
 
   Map<String, dynamic> toJson() => _$InvitationRowToJson(this);
 
@@ -92,40 +165,44 @@ class InvitationRow {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum InvitationRowKindEnum {
-  @JsonValue(r'owner')
-  owner(r'owner'),
-  @JsonValue(r'teacher')
-  teacher(r'teacher'),
-  @JsonValue(r'student')
-  student(r'student');
+@JsonValue(r'owner')
+owner(r'owner'),
+@JsonValue(r'teacher')
+teacher(r'teacher'),
+@JsonValue(r'student')
+student(r'student');
 
-  const InvitationRowKindEnum(this.value);
+const InvitationRowKindEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
 
 enum InvitationRowStatusEnum {
-  @JsonValue(r'pending')
-  pending(r'pending'),
-  @JsonValue(r'accepted')
-  accepted(r'accepted'),
-  @JsonValue(r'declined')
-  declined(r'declined'),
-  @JsonValue(r'revoked')
-  revoked(r'revoked'),
-  @JsonValue(r'expired')
-  expired(r'expired');
+@JsonValue(r'pending')
+pending(r'pending'),
+@JsonValue(r'accepted')
+accepted(r'accepted'),
+@JsonValue(r'declined')
+declined(r'declined'),
+@JsonValue(r'revoked')
+revoked(r'revoked'),
+@JsonValue(r'expired')
+expired(r'expired');
 
-  const InvitationRowStatusEnum(this.value);
+const InvitationRowStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

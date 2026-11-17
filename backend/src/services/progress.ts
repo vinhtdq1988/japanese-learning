@@ -26,7 +26,12 @@ import {
   goalRatio,
   isOnTrack,
 } from '../engine/progress.js';
-import { upcomingUnits, type ScopeNotice } from '../engine/path.js';
+import {
+  scopeNotices,
+  upcomingUnits,
+  type ScopeNotice,
+  type ScopeNoticeCode,
+} from '../engine/path.js';
 import type { ServiceDeps } from './deps.js';
 import { secondsToMinutes } from './lesson-session.js';
 import { loadCompetency } from './competency.js';
@@ -45,12 +50,14 @@ export interface ProgressDto {
   reviewAccuracy: number | null;
   currentStreakDays: number;
   goal: {
-    /** Tỷ lệ đơn vị mục tiêu đã xong (hoàn thành hoặc thành thạo), chỉ tính đơn vị `active`. */
+    /** Tỷ lệ PHÚT của đơn vị mục tiêu đã xong (hoàn thành hoặc thành thạo) trên tổng phút trong phạm vi, chỉ tính đơn vị `active`. */
     completionRatio: number;
     /** null khi không có mốc thời gian mục tiêu. */
     onTrack: boolean | null;
     targetDate: string | null;
     scopeNotice: ScopeNotice | null;
+    /** Thông báo phạm vi suy ra lúc đọc (spec 008, D12.2): cùng quy tắc với `PathSummary.notices`. */
+    notices: ScopeNoticeCode[];
   };
   /**
    * Khối Kanji (research K8); null khi người học không chọn Kanji và chưa có dữ liệu học Kanji. Các trường tổng
@@ -84,7 +91,7 @@ function emptySummary(): ProgressDto {
     lessonsCompleted: 0,
     reviewAccuracy: null,
     currentStreakDays: 0,
-    goal: { completionRatio: 0, onTrack: null, targetDate: null, scopeNotice: null },
+    goal: { completionRatio: 0, onTrack: null, targetDate: null, scopeNotice: null, notices: [] },
     kanji: null,
     weakTopics: [],
     competency: { skills: [], topics: [] },
@@ -99,19 +106,28 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
   const { profile, params } = ctx;
 
   const today = localToday(deps.clock, profile.timezone);
-  const [intervals, review, activeDays, pauses, lessonsCompleted, hasData, weak, ranked, competency] =
-    await Promise.all([
-      listUserIntervals(deps.db, userId),
-      countReviewResults(deps.db, userId),
-      listActiveDays(deps.db, userId),
-      // Trong lớp chỉ khoảng tạm dừng của lớp áp dụng (research O9).
-      ctx.source === 'class' ? Promise.resolve(ctx.pauses) : listPausePeriods(deps.db, userId),
-      countCompletedUnits(deps.db, userId),
-      hasAnyStudyData(deps.db, userId),
-      listWeakTopicStats(deps.db, userId),
-      rankForContext(deps, userId, ctx, { includeMastered: true }),
-      loadCompetency(deps, userId, profile.skills),
-    ]);
+  const [
+    intervals,
+    review,
+    activeDays,
+    pauses,
+    lessonsCompleted,
+    hasData,
+    weak,
+    ranked,
+    competency,
+  ] = await Promise.all([
+    listUserIntervals(deps.db, userId),
+    countReviewResults(deps.db, userId),
+    listActiveDays(deps.db, userId),
+    // Trong lớp chỉ khoảng tạm dừng của lớp áp dụng (research O9).
+    ctx.source === 'class' ? Promise.resolve(ctx.pauses) : listPausePeriods(deps.db, userId),
+    countCompletedUnits(deps.db, userId),
+    hasAnyStudyData(deps.db, userId),
+    listWeakTopicStats(deps.db, userId),
+    rankForContext(deps, userId, ctx, { includeMastered: true }),
+    loadCompetency(deps, userId, profile.skills),
+  ]);
 
   const goal = goalRatio(ranked);
   const remaining = upcomingUnits(ranked);
@@ -140,6 +156,7 @@ export async function getProgress(deps: ServiceDeps, userId: string): Promise<Pr
       }),
       targetDate: profile.targetDate,
       scopeNotice: params.scopeNotice,
+      notices: scopeNotices(params.scopeNotice, profile.goalType),
     },
     kanji,
     weakTopics: weak.map((w) => ({

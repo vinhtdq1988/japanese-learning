@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_placement_results_results_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,87 +20,151 @@ part 'class_placement_results_results_inner.g.dart';
 class ClassPlacementResultsResultsInner {
   /// Returns a new [ClassPlacementResultsResultsInner] instance.
   ClassPlacementResultsResultsInner({
-    required this.userId,
 
-    required this.displayName,
+    required  this.userId,
 
-    required this.status,
+    required  this.displayName,
 
-    this.estimatedLevel,
+    required  this.status,
 
-    this.score,
+     this.estimatedLevel,
 
-    this.total,
+     this.score,
 
-    this.takenAt,
+     this.total,
+
+     this.takenAt,
   });
 
-  @JsonKey(name: r'userId', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'userId',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String userId;
 
-  @JsonKey(name: r'displayName', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'displayName',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String displayName;
 
-  @JsonKey(name: r'status', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassPlacementResultsResultsInnerStatusEnum status;
 
-  @JsonKey(name: r'estimatedLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'estimatedLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Level? estimatedLevel;
 
-  @JsonKey(name: r'score', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'score',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? score;
 
-  @JsonKey(name: r'total', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'total',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? total;
 
-  @JsonKey(name: r'takenAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'takenAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? takenAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassPlacementResultsResultsInner &&
-          other.userId == userId &&
-          other.displayName == displayName &&
-          other.status == status &&
-          other.estimatedLevel == estimatedLevel &&
-          other.score == score &&
-          other.total == total &&
-          other.takenAt == takenAt;
 
-  @override
-  int get hashCode =>
-      userId.hashCode +
-      displayName.hashCode +
-      status.hashCode +
-      estimatedLevel.hashCode +
-      score.hashCode +
-      total.hashCode +
-      takenAt.hashCode;
 
-  factory ClassPlacementResultsResultsInner.fromJson(
-    Map<String, dynamic> json,
-  ) => _$ClassPlacementResultsResultsInnerFromJson(json);
 
-  Map<String, dynamic> toJson() =>
-      _$ClassPlacementResultsResultsInnerToJson(this);
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassPlacementResultsResultsInner &&
+      other.userId == userId &&
+      other.displayName == displayName &&
+      other.status == status &&
+      other.estimatedLevel == estimatedLevel &&
+      other.score == score &&
+      other.total == total &&
+      other.takenAt == takenAt;
+
+    @override
+    int get hashCode =>
+        userId.hashCode +
+        displayName.hashCode +
+        status.hashCode +
+        estimatedLevel.hashCode +
+        score.hashCode +
+        total.hashCode +
+        takenAt.hashCode;
+
+  factory ClassPlacementResultsResultsInner.fromJson(Map<String, dynamic> json) => _$ClassPlacementResultsResultsInnerFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ClassPlacementResultsResultsInnerToJson(this);
 
   @override
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ClassPlacementResultsResultsInnerStatusEnum {
-  @JsonValue(r'done')
-  done(r'done'),
-  @JsonValue(r'pending')
-  pending(r'pending');
+@JsonValue(r'done')
+done(r'done'),
+@JsonValue(r'pending')
+pending(r'pending');
 
-  const ClassPlacementResultsResultsInnerStatusEnum(this.value);
+const ClassPlacementResultsResultsInnerStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

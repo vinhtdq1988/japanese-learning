@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-manner",
+  "title": {
+    "vi": "Cực kỳ, từ tượng thanh và liên từ nối",
+    "en": "Extremely, mimetic words and linking words"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3180,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "極",
+      "reading": "ごく",
+      "meaning": {
+        "vi": "Cực kỳ; rất (ít, bình thường)",
+        "en": "Extremely; very (slight, ordinary)"
+      },
+      "examples": [
+        {
+          "ja": "極わずかな人しか、その場所を知りません。",
+          "reading": "ごくわずかなひとしか、そのばしょをしりません。",
+          "translation": {
+            "vi": "Chỉ cực kỳ ít người biết nơi đó.",
+            "en": "Only a very few people know that place."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ぺこぺこ",
+      "reading": "ぺこぺこ",
+      "meaning": {
+        "vi": "Đói meo (bụng); cúi đầu lia lịa",
+        "en": "Very hungry; bowing repeatedly"
+      },
+      "examples": [
+        {
+          "ja": "一日歩き回って、お腹がぺこぺこになりました。",
+          "reading": "いちにちあるきまわって、おなかがぺこぺこになりました。",
+          "translation": {
+            "vi": "Đi bộ cả ngày nên bụng tôi đói meo.",
+            "en": "After walking around all day, I became ravenously hungry."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "きっかり",
+      "reading": "きっかり",
+      "meaning": {
+        "vi": "Đúng (giờ, số lượng)",
+        "en": "Exactly; on the dot"
+      },
+      "examples": [
+        {
+          "ja": "約束の時間きっかりに、電車が来ました。",
+          "reading": "やくそくのじかんきっかりに、でんしゃがきました。",
+          "translation": {
+            "vi": "Tàu đến đúng vào giờ đã hẹn.",
+            "en": "The train arrived exactly at the appointed time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "しっとり",
+      "reading": "しっとり",
+      "meaning": {
+        "vi": "Ẩm mượt; dịu dàng",
+        "en": "Moist and smooth; calm"
+      },
+      "examples": [
+        {
+          "ja": "このクリームを塗ると、肌がしっとりします。",
+          "reading": "このクリームをぬると、はだがしっとりします。",
+          "translation": {
+            "vi": "Thoa kem này thì da trở nên ẩm mượt.",
+            "en": "When you apply this cream, your skin becomes moist and smooth."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "並びに",
+      "reading": "ならびに",
+      "meaning": {
+        "vi": "Và; cùng với (văn viết)",
+        "en": "And; as well as (formal)"
+      },
+      "examples": [
+        {
+          "ja": "会場では、飲み物並びに軽い食べ物を販売しています。",
+          "reading": "かいじょうでは、のみものならびにかるいたべものをはんばいしています。",
+          "translation": {
+            "vi": "Tại hội trường có bán đồ uống cũng như đồ ăn nhẹ.",
+            "en": "Drinks and light snacks are sold at the venue."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "もしくは",
+      "reading": "もしくは",
+      "meaning": {
+        "vi": "Hoặc; hay là",
+        "en": "Or; otherwise"
+      },
+      "examples": [
+        {
+          "ja": "申し込みは、電話もしくはメールでお願いします。",
+          "reading": "もうしこみは、でんわもしくはメールでおねがいします。",
+          "translation": {
+            "vi": "Xin vui lòng đăng ký bằng điện thoại hoặc email.",
+            "en": "Please apply by phone or by email."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "極",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）わずかな人しか、その場所を知りません。 — Nghĩa của câu: “Chỉ cực kỳ ít người biết nơi đó.”",
+        "en": "Choose the word that fits the blank: （　）わずかな人しか、その場所を知りません。 — Meaning of the sentence: “Only a very few people know that place.”"
+      },
+      "payload": {
+        "choices": [
+          "もしくは",
+          "並びに",
+          "しっとり",
+          "極"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「極」(Cực kỳ; rất (ít, bình thường)) hợp nghĩa câu này: “Chỉ cực kỳ ít người biết nơi đó.”",
+        "en": "Correct! 「極」(Extremely; very (slight, ordinary)) fits this sentence: “Only a very few people know that place.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chỉ cực kỳ ít người biết nơi đó.”, nên cần 「極」(Cực kỳ; rất (ít, bình thường)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Only a very few people know that place.”, so it needs 「極」(Extremely; very (slight, ordinary)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ぺこぺこ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 一日歩き回って、お腹が（　）になりました。 — Nghĩa của câu: “Đi bộ cả ngày nên bụng tôi đói meo.”",
+        "en": "Choose the word that fits the blank: 一日歩き回って、お腹が（　）になりました。 — Meaning of the sentence: “After walking around all day, I became ravenously hungry.”"
+      },
+      "payload": {
+        "choices": [
+          "ぺこぺこ",
+          "並びに",
+          "極",
+          "きっかり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぺこぺこ」(Đói meo (bụng); cúi đầu lia lịa) hợp nghĩa câu này: “Đi bộ cả ngày nên bụng tôi đói meo.”",
+        "en": "Correct! 「ぺこぺこ」(Very hungry; bowing repeatedly) fits this sentence: “After walking around all day, I became ravenously hungry.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đi bộ cả ngày nên bụng tôi đói meo.”, nên cần 「ぺこぺこ」(Đói meo (bụng); cúi đầu lia lịa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After walking around all day, I became ravenously hungry.”, so it needs 「ぺこぺこ」(Very hungry; bowing repeatedly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "きっかり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 約束の時間（　）に、電車が来ました。 — Nghĩa của câu: “Tàu đến đúng vào giờ đã hẹn.”",
+        "en": "Choose the word that fits the blank: 約束の時間（　）に、電車が来ました。 — Meaning of the sentence: “The train arrived exactly at the appointed time.”"
+      },
+      "payload": {
+        "choices": [
+          "極",
+          "きっかり",
+          "もしくは",
+          "並びに"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きっかり」(Đúng (giờ, số lượng)) hợp nghĩa câu này: “Tàu đến đúng vào giờ đã hẹn.”",
+        "en": "Correct! 「きっかり」(Exactly; on the dot) fits this sentence: “The train arrived exactly at the appointed time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tàu đến đúng vào giờ đã hẹn.”, nên cần 「きっかり」(Đúng (giờ, số lượng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The train arrived exactly at the appointed time.”, so it needs 「きっかり」(Exactly; on the dot); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "しっとり",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このクリームを塗ると、肌が（　）します。 — Nghĩa của câu: “Thoa kem này thì da trở nên ẩm mượt.”",
+        "en": "Choose the word that fits the blank: このクリームを塗ると、肌が（　）します。 — Meaning of the sentence: “When you apply this cream, your skin becomes moist and smooth.”"
+      },
+      "payload": {
+        "choices": [
+          "極",
+          "もしくは",
+          "しっとり",
+          "きっかり"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しっとり」(Ẩm mượt; dịu dàng) hợp nghĩa câu này: “Thoa kem này thì da trở nên ẩm mượt.”",
+        "en": "Correct! 「しっとり」(Moist and smooth; calm) fits this sentence: “When you apply this cream, your skin becomes moist and smooth.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thoa kem này thì da trở nên ẩm mượt.”, nên cần 「しっとり」(Ẩm mượt; dịu dàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When you apply this cream, your skin becomes moist and smooth.”, so it needs 「しっとり」(Moist and smooth; calm); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "並びに",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会場では、飲み物（　）軽い食べ物を販売しています。 — Nghĩa của câu: “Tại hội trường có bán đồ uống cũng như đồ ăn nhẹ.”",
+        "en": "Choose the word that fits the blank: 会場では、飲み物（　）軽い食べ物を販売しています。 — Meaning of the sentence: “Drinks and light snacks are sold at the venue.”"
+      },
+      "payload": {
+        "choices": [
+          "しっとり",
+          "極",
+          "きっかり",
+          "並びに"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「並びに」(Và; cùng với (văn viết)) hợp nghĩa câu này: “Tại hội trường có bán đồ uống cũng như đồ ăn nhẹ.”",
+        "en": "Correct! 「並びに」(And; as well as (formal)) fits this sentence: “Drinks and light snacks are sold at the venue.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tại hội trường có bán đồ uống cũng như đồ ăn nhẹ.”, nên cần 「並びに」(Và; cùng với (văn viết)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Drinks and light snacks are sold at the venue.”, so it needs 「並びに」(And; as well as (formal)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "もしくは",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 申し込みは、電話（　）メールでお願いします。 — Nghĩa của câu: “Xin vui lòng đăng ký bằng điện thoại hoặc email.”",
+        "en": "Choose the word that fits the blank: 申し込みは、電話（　）メールでお願いします。 — Meaning of the sentence: “Please apply by phone or by email.”"
+      },
+      "payload": {
+        "choices": [
+          "もしくは",
+          "極",
+          "きっかり",
+          "しっとり"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「もしくは」(Hoặc; hay là) hợp nghĩa câu này: “Xin vui lòng đăng ký bằng điện thoại hoặc email.”",
+        "en": "Correct! 「もしくは」(Or; otherwise) fits this sentence: “Please apply by phone or by email.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin vui lòng đăng ký bằng điện thoại hoặc email.”, nên cần 「もしくは」(Hoặc; hay là); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please apply by phone or by email.”, so it needs 「もしくは」(Or; otherwise); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "極",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「極」わずかな人しか、その場所を知りません。",
+        "en": "Choose the correct reading of the word in 「」: 「極」わずかな人しか、その場所を知りません。"
+      },
+      "payload": {
+        "choices": [
+          "ごく",
+          "ならびに",
+          "しっとり",
+          "ぺこぺこ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「極」 đọc là 「ごく」, nghĩa là Cực kỳ; rất (ít, bình thường).",
+        "en": "Correct! 「極」 is read 「ごく」 and means Extremely; very (slight, ordinary)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「極」 đọc là 「ごく」 (Cực kỳ; rất (ít, bình thường)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「極」 is read 「ごく」 (Extremely; very (slight, ordinary)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "並びに",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 会場では、飲み物「並びに」軽い食べ物を販売しています。",
+        "en": "Choose the correct reading of the word in 「」: 会場では、飲み物「並びに」軽い食べ物を販売しています。"
+      },
+      "payload": {
+        "choices": [
+          "しっとり",
+          "ならびに",
+          "きっかり",
+          "ごく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「並びに」 đọc là 「ならびに」, nghĩa là Và; cùng với (văn viết).",
+        "en": "Correct! 「並びに」 is read 「ならびに」 and means And; as well as (formal)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「並びに」 đọc là 「ならびに」 (Và; cùng với (văn viết)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「並びに」 is read 「ならびに」 (And; as well as (formal)); the other readings belong to different words in this lesson."
+      }
+    }
+  ]
+}

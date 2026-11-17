@@ -3,6 +3,206 @@
   "kind": "reading",
   "level": "N4",
   "reference": false,
-  "sources": {},
-  "rows": []
+  "sources": {
+    "s1": {
+      "name": "Trang chính thức của kỳ thi JLPT (jlpt.jp; Quỹ Nhật Bản và JEES) — \"Nội dung kỳ thi\" và đề mẫu",
+      "note": "Chỉ tham khảo DẠNG câu hỏi đọc hiểu (đoạn ngắn, đoạn vừa, tra cứu thông tin) và độ dài/độ khó đoạn theo trình độ; không chép đề mẫu"
+    },
+    "s2": {
+      "name": "Minna no Nihongo Shokyu II (第2版), 3A Corporation — phần bài đọc",
+      "note": "Chủ đề và dạng văn bản (thông báo, thư, nhật ký) của sơ cấp II để xác định phạm vi chủ đề N4; không chép đoạn văn"
+    },
+    "s3": {
+      "name": "Nihongo So-matome N4 (日本語総まとめ N4 読解), Asuku",
+      "note": "Phân loại dạng đoạn đọc N4 theo giáo trình luyện thi; chỉ lấy tư cách thành viên danh sách dạng/chủ đề"
+    }
+  },
+  "rows": [
+    {
+      "id": "r-n4-notice-school",
+      "key": "掲示・お知らせ（学校）",
+      "label": {
+        "vi": "Thông báo ở trường học (lịch thi, nghỉ học, sự kiện)",
+        "en": "School notices (exams, closures, events)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-notice-workplace",
+      "key": "掲示・お知らせ（会社）",
+      "label": {
+        "vi": "Thông báo ở nơi làm việc (họp, nghỉ lễ, nội quy)",
+        "en": "Workplace notices (meetings, holidays, rules)"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-notice-neighborhood",
+      "key": "掲示・お知らせ（地域）",
+      "label": {
+        "vi": "Thông báo khu phố, tòa nhà (rác, vệ sinh, cúp nước)",
+        "en": "Neighborhood and building notices (garbage, cleaning, water cuts)"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-notice-events-rules",
+      "key": "掲示・お知らせ（行事・きまり）",
+      "label": {
+        "vi": "Thông báo sự kiện và nội quy nơi công cộng",
+        "en": "Event announcements and public-place rules"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-email-invitation",
+      "key": "メール・手紙（さそい）",
+      "label": {
+        "vi": "Thư/email mời, rủ rê, hẹn gặp bạn bè",
+        "en": "Invitation emails and letters between friends"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-email-request-permission",
+      "key": "メール・手紙（おねがい・きょか）",
+      "label": {
+        "vi": "Thư/email nhờ vả, xin phép",
+        "en": "Emails asking for favors or permission"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-email-thanks-apology",
+      "key": "メール・手紙（お礼・おわび）",
+      "label": {
+        "vi": "Thư/email cảm ơn, xin lỗi",
+        "en": "Emails of thanks and apology"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-email-appointment",
+      "key": "メール・手紙（やくそく・連絡）",
+      "label": {
+        "vi": "Thư/email hẹn giờ, đổi lịch, thông báo ngắn",
+        "en": "Emails arranging or changing appointments"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-essay-diary",
+      "key": "短い文章（日記）",
+      "label": {
+        "vi": "Nhật ký, bài cảm nghĩ về một ngày",
+        "en": "Diary entries and reflections on a day"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 3
+    },
+    {
+      "id": "r-n4-essay-hobby-travel",
+      "key": "短い文章（しゅみ・旅行）",
+      "label": {
+        "vi": "Bài viết ngắn về sở thích, du lịch, chuyến đi",
+        "en": "Short essays on hobbies and travel"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 3
+    },
+    {
+      "id": "r-n4-essay-daily-impression",
+      "key": "短い文章（生活・感想）",
+      "label": {
+        "vi": "Bài viết ngắn về sinh hoạt, sức khỏe, cảm nghĩ",
+        "en": "Short essays on daily life, health and impressions"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-info-schedule",
+      "key": "情報検索（スケジュール）",
+      "label": {
+        "vi": "Tra cứu lịch trình, thời khóa biểu, giờ mở cửa",
+        "en": "Information search: schedules, timetables, opening hours"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-info-price-ad",
+      "key": "情報検索（料金・広告）",
+      "label": {
+        "vi": "Tra cứu bảng giá, quảng cáo, phiếu giảm giá",
+        "en": "Information search: price lists, ads, coupons"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n4-info-menu-guide",
+      "key": "情報検索（案内・メニュー）",
+      "label": {
+        "vi": "Tra cứu hướng dẫn, thực đơn, bảng chỉ dẫn",
+        "en": "Information search: guides, menus, signage"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    }
+  ]
 }

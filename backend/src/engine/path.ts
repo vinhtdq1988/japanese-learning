@@ -21,6 +21,25 @@ export const CONTENT_CEILING: ContentLevel = 'N3';
 
 export type ScopeNotice = 'content_ceiling_n3';
 
+/**
+ * Mã thông báo phạm vi trả ở `notices` (spec 008, research D12.2): suy ra LÚC ĐỌC từ hồ sơ và tham số lộ trình,
+ * không lưu vào `learning_paths.generated_from` nên lộ trình đã tồn tại cũng có.
+ * - `content_ceiling_n3`: như `scopeNotice` (trình độ/mục tiêu N2, N1 bị cắt ở N3);
+ * - `listening_not_available`: mục tiêu JLPT — ứng dụng chưa có phần nghe hiểu của kỳ thi (Giai đoạn 2).
+ */
+export type ScopeNoticeCode = ScopeNotice | 'listening_not_available';
+
+/** Thông báo phạm vi theo thứ tự cố định: `content_ceiling_n3` (nếu có) rồi `listening_not_available` (mục tiêu JLPT). */
+export function scopeNotices(
+  scopeNotice: ScopeNotice | null,
+  goalType: GoalType | null,
+): ScopeNoticeCode[] {
+  const notices: ScopeNoticeCode[] = [];
+  if (scopeNotice) notices.push(scopeNotice);
+  if (goalType === 'jlpt') notices.push('listening_not_available');
+  return notices;
+}
+
 export interface PathProfileInput {
   currentLevel: Level;
   goalType: GoalType | null;
@@ -219,6 +238,15 @@ export const GOAL_LOOKAHEAD = 12;
 export const GOAL_EXTRA = 3;
 
 /**
+ * Ôn lùi có chặn cho người xếp thẳng N3 (research D11): tối đa `REMEDIAL_MAX_UNITS` đơn vị của ĐÚNG MỘT bậc dưới
+ * trình độ xuất phát (N4) thuộc mảng yếu của placement được đưa vào lộ trình, bất kể trạng thái học; học xong ba
+ * bài đó cũng không có bài ôn lùi thứ tư.
+ */
+export const REMEDIAL_MAX_UNITS = 3;
+/** Chỉ người xếp N3 được ôn lùi (xếp N4/N5 hoặc `foundationFirst` thì không). */
+const REMEDIAL_START_LEVEL: ContentLevel = 'N3';
+
+/**
  * Tính thứ tự đơn vị cho một người học (hàm thuần, không lưu).
  *
  * Lọc: `active`, thuộc kỹ năng đã chọn, nằm trong khoảng trình độ, chưa `mastered` (trừ khi
@@ -242,23 +270,25 @@ export function rankUnits<U extends RankableUnit>(
   for (const s of topicStats) if (s.isWeak) weakTopics.add(s.topicId);
 
   // Lọc điều kiện (chưa chấm điểm): cần biết toàn bộ đơn vị chưa học của từng loại để dựng biên giới.
-  const candidates: { unit: U; status: RankedStatus; idx: number }[] = [];
+  const remedial = remedialUnitIds(params, skills, units);
+  const candidates: Candidate<U>[] = [];
   for (const unit of units) {
     if (unit.status !== undefined && unit.status !== 'active') continue;
     if (!skills.has(unit.kind)) continue;
     const idx = levelIndex(unit.level);
-    if (idx < lowIdx || idx > highIdx) continue;
+    const isRemedial = remedial.has(unit.id);
+    if (!isRemedial && (idx < lowIdx || idx > highIdx)) continue;
 
     const progress = unitProgress.get(unit.id);
     if (progress === 'mastered' && !options.includeMastered) continue;
-    candidates.push({ unit, status: progress ?? 'pending', idx });
+    candidates.push({ unit, status: progress ?? 'pending', idx, remedial: isRemedial });
   }
   const frontier = frontierOf(candidates, profile.goalType);
 
   const ranked: RankedUnit<U>[] = [];
-  for (const { unit, status, idx } of candidates) {
+  for (const { unit, status, idx, remedial: isRemedial } of candidates) {
     // Đơn vị chưa học ngoài biên giới: điểm chỉ phụ thuộc (trình độ, sequence) nên luôn đúng thứ tự giáo trình.
-    if (status === 'pending' && !frontier.has(unit.id)) {
+    if (status === 'pending' && !isRemedial && !frontier.has(unit.id)) {
       ranked.push({
         unit,
         status,
@@ -270,7 +300,8 @@ export function rankUnits<U extends RankableUnit>(
     let score = 0;
     if (status === 'in_progress') score += W.inProgress;
     if (params.foundationFirst && unit.tier === 'foundation') score += W.foundation;
-    score -= W.perLevelStep * (idx - startIdx);
+    // Bài ôn lùi (một bậc dưới trình độ xuất phát): điểm trình độ kẹp bằng 0 thay vì cộng thêm bậc lùi.
+    if (!isRemedial) score -= W.perLevelStep * (idx - startIdx);
     if (profile.goalType && unit.goalTags.includes(profile.goalType)) score += W.goalTag;
     if (profile.prioritizedSkill && unit.kind === profile.prioritizedSkill) {
       score += W.prioritizedSkill;
@@ -294,6 +325,43 @@ export function rankUnits<U extends RankableUnit>(
   );
 }
 
+/** Ứng viên đã lọc điều kiện, chưa chấm điểm; `remedial` = bài ôn lùi (research D11). */
+interface Candidate<U extends RankableUnit> {
+  unit: U;
+  status: RankedStatus;
+  idx: number;
+  remedial: boolean;
+}
+
+/**
+ * Tập id đơn vị ôn lùi (research D11, bất biến I8): `REMEDIAL_MAX_UNITS` đơn vị đầu theo `(sequence, id)` của đúng
+ * một bậc dưới trình độ xuất phát thuộc `params.weakTopics`, trong các kỹ năng đã chọn, bất kể trạng thái học. Rỗng khi
+ * không có mảng yếu của placement, người học không xếp N3 hoặc `foundationFirst`.
+ */
+function remedialUnitIds<U extends RankableUnit>(
+  params: PathParams,
+  skills: ReadonlySet<Skill>,
+  units: readonly U[],
+): Set<string> {
+  if (params.startLevel !== REMEDIAL_START_LEVEL || params.foundationFirst) return new Set();
+  if (params.weakTopics.length === 0) return new Set();
+  const weak = new Set<string>(params.weakTopics);
+  const belowIdx = levelIndex(params.startLevel) - 1;
+  return new Set(
+    units
+      .filter(
+        (u) =>
+          (u.status === undefined || u.status === 'active') &&
+          skills.has(u.kind) &&
+          levelIndex(u.level) === belowIdx &&
+          weak.has(u.topicId),
+      )
+      .sort((a, b) => a.sequence - b.sequence || a.id.localeCompare(b.id))
+      .slice(0, REMEDIAL_MAX_UNITS)
+      .map((u) => u.id),
+  );
+}
+
 /**
  * Tập id đơn vị thuộc biên giới (research D10). Với mỗi loại: `FRONTIER_SIZE` đơn vị chưa học đầu tiên
  * theo `(trình độ, sequence)`, mọi đơn vị `in_progress`, và — chỉ khi mục tiêu là `work` hoặc
@@ -302,12 +370,14 @@ export function rankUnits<U extends RankableUnit>(
  * Khi một loại còn ≤ `FRONTIER_SIZE` đơn vị chưa học, biên giới bao trùm tất cả nên kết quả bằng công thức cũ.
  */
 function frontierOf<U extends RankableUnit>(
-  candidates: readonly { unit: U; status: RankedStatus; idx: number }[],
+  candidates: readonly Candidate<U>[],
   goalType: GoalType | null,
 ): Set<string> {
-  const pendingByKind = new Map<Skill, { unit: U; status: RankedStatus; idx: number }[]>();
+  const pendingByKind = new Map<Skill, Candidate<U>[]>();
   for (const c of candidates) {
     if (c.status !== 'pending' && c.status !== 'in_progress') continue;
+    // Bài ôn lùi không chiếm chỗ biên giới của loại (điểm của chúng không đi qua nhánh "ngoài biên giới").
+    if (c.remedial) continue;
     const list = pendingByKind.get(c.unit.kind) ?? [];
     list.push(c);
     pendingByKind.set(c.unit.kind, list);

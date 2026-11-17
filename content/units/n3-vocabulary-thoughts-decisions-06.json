@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-thoughts-decisions",
+  "title": {
+    "vi": "Đánh cược, phán đoán và suy luận",
+    "en": "Gambling, estimating and reasoning"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2580,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "賭け",
+      "reading": "かけ",
+      "meaning": {
+        "vi": "Cá cược; canh bạc",
+        "en": "Bet; gamble"
+      },
+      "examples": [
+        {
+          "ja": "あの人は、賭けが好きで、よく競馬に行きます。",
+          "reading": "あのひとは、かけがすきで、よくけいばにいきます。",
+          "translation": {
+            "vi": "Người đó thích cá cược nên thường đi xem đua ngựa.",
+            "en": "He likes gambling and often goes to the horse races."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見当",
+      "reading": "けんとう",
+      "meaning": {
+        "vi": "Phỏng đoán; hình dung",
+        "en": "Guess; estimate"
+      },
+      "examples": [
+        {
+          "ja": "犯人が誰か、まだ見当もつきません。",
+          "reading": "はんにんがだれか、まだけんとうもつきません。",
+          "translation": {
+            "vi": "Tôi vẫn chưa đoán ra thủ phạm là ai.",
+            "en": "I still have no idea who the culprit is."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悟る",
+      "reading": "さとる",
+      "meaning": {
+        "vi": "Nhận ra; thấu hiểu",
+        "en": "To realize; to perceive"
+      },
+      "examples": [
+        {
+          "ja": "失敗して初めて、準備の大切さを悟る人も多いです。",
+          "reading": "しっぱいしてはじめて、じゅんびのたいせつさをさとるひともおおいです。",
+          "translation": {
+            "vi": "Nhiều người chỉ khi thất bại mới nhận ra tầm quan trọng của việc chuẩn bị.",
+            "en": "Many people realize the importance of preparation only after failing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "思い切って",
+      "reading": "おもいきって",
+      "meaning": {
+        "vi": "Quyết tâm; mạnh dạn",
+        "en": "Boldly; resolving to"
+      },
+      "examples": [
+        {
+          "ja": "思い切って、会社を辞めることにしました。",
+          "reading": "おもいきって、かいしゃをやめることにしました。",
+          "translation": {
+            "vi": "Tôi đã mạnh dạn quyết định nghỉ việc ở công ty.",
+            "en": "I made up my mind and decided to quit the company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "計る",
+      "reading": "はかる",
+      "meaning": {
+        "vi": "Đo (cân nặng, thời gian)",
+        "en": "To measure (weight, time)"
+      },
+      "examples": [
+        {
+          "ja": "毎朝、体重を計る習慣があります。",
+          "reading": "まいあさ、たいじゅうをはかるしゅうかんがあります。",
+          "translation": {
+            "vi": "Tôi có thói quen cân nặng mỗi sáng.",
+            "en": "I have a habit of weighing myself every morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "推理",
+      "reading": "すいり",
+      "meaning": {
+        "vi": "Suy luận",
+        "en": "Reasoning; deduction"
+      },
+      "examples": [
+        {
+          "ja": "探偵は、小さな手がかりから、犯人を推理しました。",
+          "reading": "たんていは、ちいさなてがかりから、はんにんをすいりしました。",
+          "translation": {
+            "vi": "Thám tử suy luận ra thủ phạm từ những manh mối nhỏ.",
+            "en": "The detective deduced the culprit from small clues."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "賭け",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あの人は、（　）が好きで、よく競馬に行きます。 — Nghĩa của câu: “Người đó thích cá cược nên thường đi xem đua ngựa.”",
+        "en": "Choose the word that fits the blank: あの人は、（　）が好きで、よく競馬に行きます。 — Meaning of the sentence: “He likes gambling and often goes to the horse races.”"
+      },
+      "payload": {
+        "choices": [
+          "計る",
+          "悟る",
+          "賭け",
+          "思い切って"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賭け」(Cá cược; canh bạc) hợp nghĩa câu này: “Người đó thích cá cược nên thường đi xem đua ngựa.”",
+        "en": "Correct! 「賭け」(Bet; gamble) fits this sentence: “He likes gambling and often goes to the horse races.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người đó thích cá cược nên thường đi xem đua ngựa.”, nên cần 「賭け」(Cá cược; canh bạc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He likes gambling and often goes to the horse races.”, so it needs 「賭け」(Bet; gamble); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見当",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 犯人が誰か、まだ（　）もつきません。 — Nghĩa của câu: “Tôi vẫn chưa đoán ra thủ phạm là ai.”",
+        "en": "Choose the word that fits the blank: 犯人が誰か、まだ（　）もつきません。 — Meaning of the sentence: “I still have no idea who the culprit is.”"
+      },
+      "payload": {
+        "choices": [
+          "計る",
+          "賭け",
+          "推理",
+          "見当"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見当」(Phỏng đoán; hình dung) hợp nghĩa câu này: “Tôi vẫn chưa đoán ra thủ phạm là ai.”",
+        "en": "Correct! 「見当」(Guess; estimate) fits this sentence: “I still have no idea who the culprit is.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi vẫn chưa đoán ra thủ phạm là ai.”, nên cần 「見当」(Phỏng đoán; hình dung); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I still have no idea who the culprit is.”, so it needs 「見当」(Guess; estimate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "悟る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 失敗して初めて、準備の大切さを（　）人も多いです。 — Nghĩa của câu: “Nhiều người chỉ khi thất bại mới nhận ra tầm quan trọng của việc chuẩn bị.”",
+        "en": "Choose the word that fits the blank: 失敗して初めて、準備の大切さを（　）人も多いです。 — Meaning of the sentence: “Many people realize the importance of preparation only after failing.”"
+      },
+      "payload": {
+        "choices": [
+          "悟る",
+          "計る",
+          "推理",
+          "見当"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「悟る」(Nhận ra; thấu hiểu) hợp nghĩa câu này: “Nhiều người chỉ khi thất bại mới nhận ra tầm quan trọng của việc chuẩn bị.”",
+        "en": "Correct! 「悟る」(To realize; to perceive) fits this sentence: “Many people realize the importance of preparation only after failing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhiều người chỉ khi thất bại mới nhận ra tầm quan trọng của việc chuẩn bị.”, nên cần 「悟る」(Nhận ra; thấu hiểu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Many people realize the importance of preparation only after failing.”, so it needs 「悟る」(To realize; to perceive); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "思い切って",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）、会社を辞めることにしました。 — Nghĩa của câu: “Tôi đã mạnh dạn quyết định nghỉ việc ở công ty.”",
+        "en": "Choose the word that fits the blank: （　）、会社を辞めることにしました。 — Meaning of the sentence: “I made up my mind and decided to quit the company.”"
+      },
+      "payload": {
+        "choices": [
+          "推理",
+          "思い切って",
+          "見当",
+          "賭け"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思い切って」(Quyết tâm; mạnh dạn) hợp nghĩa câu này: “Tôi đã mạnh dạn quyết định nghỉ việc ở công ty.”",
+        "en": "Correct! 「思い切って」(Boldly; resolving to) fits this sentence: “I made up my mind and decided to quit the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã mạnh dạn quyết định nghỉ việc ở công ty.”, nên cần 「思い切って」(Quyết tâm; mạnh dạn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I made up my mind and decided to quit the company.”, so it needs 「思い切って」(Boldly; resolving to); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "計る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 毎朝、体重を（　）習慣があります。 — Nghĩa của câu: “Tôi có thói quen cân nặng mỗi sáng.”",
+        "en": "Choose the word that fits the blank: 毎朝、体重を（　）習慣があります。 — Meaning of the sentence: “I have a habit of weighing myself every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "推理",
+          "悟る",
+          "計る",
+          "賭け"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「計る」(Đo (cân nặng, thời gian)) hợp nghĩa câu này: “Tôi có thói quen cân nặng mỗi sáng.”",
+        "en": "Correct! 「計る」(To measure (weight, time)) fits this sentence: “I have a habit of weighing myself every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi có thói quen cân nặng mỗi sáng.”, nên cần 「計る」(Đo (cân nặng, thời gian)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have a habit of weighing myself every morning.”, so it needs 「計る」(To measure (weight, time)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "推理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 探偵は、小さな手がかりから、犯人を（　）しました。 — Nghĩa của câu: “Thám tử suy luận ra thủ phạm từ những manh mối nhỏ.”",
+        "en": "Choose the word that fits the blank: 探偵は、小さな手がかりから、犯人を（　）しました。 — Meaning of the sentence: “The detective deduced the culprit from small clues.”"
+      },
+      "payload": {
+        "choices": [
+          "見当",
+          "悟る",
+          "思い切って",
+          "推理"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「推理」(Suy luận) hợp nghĩa câu này: “Thám tử suy luận ra thủ phạm từ những manh mối nhỏ.”",
+        "en": "Correct! 「推理」(Reasoning; deduction) fits this sentence: “The detective deduced the culprit from small clues.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thám tử suy luận ra thủ phạm từ những manh mối nhỏ.”, nên cần 「推理」(Suy luận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The detective deduced the culprit from small clues.”, so it needs 「推理」(Reasoning; deduction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "賭け",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: あの人は、「賭け」が好きで、よく競馬に行きます。",
+        "en": "Choose the correct reading of the word in 「」: あの人は、「賭け」が好きで、よく競馬に行きます。"
+      },
+      "payload": {
+        "choices": [
+          "おもいきって",
+          "はかる",
+          "さとる",
+          "かけ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「賭け」 đọc là 「かけ」, nghĩa là Cá cược; canh bạc.",
+        "en": "Correct! 「賭け」 is read 「かけ」 and means Bet; gamble."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「賭け」 đọc là 「かけ」 (Cá cược; canh bạc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「賭け」 is read 「かけ」 (Bet; gamble); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "思い切って",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「思い切って」、会社を辞めることにしました。",
+        "en": "Choose the correct reading of the word in 「」: 「思い切って」、会社を辞めることにしました。"
+      },
+      "payload": {
+        "choices": [
+          "おもいきって",
+          "すいり",
+          "けんとう",
+          "かけ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「思い切って」 đọc là 「おもいきって」, nghĩa là Quyết tâm; mạnh dạn.",
+        "en": "Correct! 「思い切って」 is read 「おもいきって」 and means Boldly; resolving to."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「思い切って」 đọc là 「おもいきって」 (Quyết tâm; mạnh dạn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「思い切って」 is read 「おもいきって」 (Boldly; resolving to); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "推理",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 探偵は、小さな手がかりから、犯人を「すいり」しました。",
+        "en": "Choose the correct way to write the word in 「」: 探偵は、小さな手がかりから、犯人を「すいり」しました。"
+      },
+      "payload": {
+        "choices": [
+          "推理",
+          "見当",
+          "賭け",
+          "悟る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「すいり」 viết là 「推理」, nghĩa là Suy luận.",
+        "en": "Correct! 「すいり」 is written 「推理」 and means Reasoning; deduction."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「すいり」 viết là 「推理」 (Suy luận); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「すいり」 is written 「推理」 (Reasoning; deduction); the other words are read differently."
+      }
+    }
+  ]
+}

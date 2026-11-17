@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'invitation_respond_result.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,33 +19,66 @@ part 'invitation_respond_result.g.dart';
 )
 class InvitationRespondResult {
   /// Returns a new [InvitationRespondResult] instance.
-  InvitationRespondResult({required this.status, this.class_, this.joinedAt});
+  InvitationRespondResult({
 
-  @JsonKey(name: r'status', required: true, includeIfNull: false)
+    required  this.status,
+
+     this.class_,
+
+     this.joinedAt,
+  });
+
+  @JsonKey(
+    
+    name: r'status',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final InvitationRespondResultStatusEnum status;
 
-  @JsonKey(name: r'class', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'class',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ClassBrief? class_;
 
-  @JsonKey(name: r'joinedAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'joinedAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? joinedAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is InvitationRespondResult &&
-          other.status == status &&
-          other.class_ == class_ &&
-          other.joinedAt == joinedAt;
 
-  @override
-  int get hashCode =>
-      status.hashCode +
-      (class_ == null ? 0 : class_.hashCode) +
-      (joinedAt == null ? 0 : joinedAt.hashCode);
 
-  factory InvitationRespondResult.fromJson(Map<String, dynamic> json) =>
-      _$InvitationRespondResultFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is InvitationRespondResult &&
+      other.status == status &&
+      other.class_ == class_ &&
+      other.joinedAt == joinedAt;
+
+    @override
+    int get hashCode =>
+        status.hashCode +
+        (class_ == null ? 0 : class_.hashCode) +
+        (joinedAt == null ? 0 : joinedAt.hashCode);
+
+  factory InvitationRespondResult.fromJson(Map<String, dynamic> json) => _$InvitationRespondResultFromJson(json);
 
   Map<String, dynamic> toJson() => _$InvitationRespondResultToJson(this);
 
@@ -52,22 +86,25 @@ class InvitationRespondResult {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum InvitationRespondResultStatusEnum {
-  @JsonValue(r'joined')
-  joined(r'joined'),
-  @JsonValue(r'stayed_personal')
-  stayedPersonal(r'stayed_personal'),
-  @JsonValue(r'accepted')
-  accepted(r'accepted'),
-  @JsonValue(r'declined')
-  declined(r'declined');
+@JsonValue(r'joined')
+joined(r'joined'),
+@JsonValue(r'stayed_personal')
+stayedPersonal(r'stayed_personal'),
+@JsonValue(r'accepted')
+accepted(r'accepted'),
+@JsonValue(r'declined')
+declined(r'declined');
 
-  const InvitationRespondResultStatusEnum(this.value);
+const InvitationRespondResultStatusEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

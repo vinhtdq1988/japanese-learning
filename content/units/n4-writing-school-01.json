@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-school",
+  "title": {
+    "vi": "Viết: Trường học (1)",
+    "en": "Writing: School (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "作文",
+      "reading": "さくぶん",
+      "meaning": {
+        "vi": "Bài văn; viết văn",
+        "en": "Composition; essay"
+      }
+    },
+    {
+      "japanese": "メール",
+      "reading": "メール",
+      "meaning": {
+        "vi": "Thư điện tử; email",
+        "en": "E-mail"
+      }
+    },
+    {
+      "japanese": "花火",
+      "reading": "はなび",
+      "meaning": {
+        "vi": "Pháo hoa",
+        "en": "Fireworks"
+      }
+    },
+    {
+      "japanese": "文学",
+      "reading": "ぶんがく",
+      "meaning": {
+        "vi": "Văn học",
+        "en": "Literature"
+      }
+    },
+    {
+      "japanese": "教室",
+      "reading": "きょうしつ",
+      "meaning": {
+        "vi": "Phòng học",
+        "en": "Classroom"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bài văn; viết văn”",
+        "en": "Type in Japanese: “Composition; essay”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "作文",
+          "さくぶん"
+        ],
+        "hint": "よみ: さくぶん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bài văn; viết văn” viết là 作文 (đọc là さくぶん).",
+        "en": "Correct! “Composition; essay” is written 作文 (read as さくぶん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bài văn; viết văn” viết là 作文 (đọc là さくぶん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Composition; essay” is written 作文 (read as さくぶん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Thư điện tử; email”",
+        "en": "Type in Japanese: “E-mail”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "メール"
+        ],
+        "hint": "Viết bằng katakana (3 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Thư điện tử; email” viết là メール.",
+        "en": "Correct! “E-mail” is written メール."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Thư điện tử; email” viết là メール; hãy so lại từng ký tự.",
+        "en": "Not quite. “E-mail” is written メール; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Pháo hoa”",
+        "en": "Type in Japanese: “Fireworks”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "花火",
+          "はなび"
+        ],
+        "hint": "よみ: はなび"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Pháo hoa” viết là 花火 (đọc là はなび).",
+        "en": "Correct! “Fireworks” is written 花火 (read as はなび)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Pháo hoa” viết là 花火 (đọc là はなび); hãy so lại từng ký tự.",
+        "en": "Not quite. “Fireworks” is written 花火 (read as はなび); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Văn học”",
+        "en": "Type in Japanese: “Literature”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "文学",
+          "ぶんがく"
+        ],
+        "hint": "よみ: ぶんがく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Văn học” viết là 文学 (đọc là ぶんがく).",
+        "en": "Correct! “Literature” is written 文学 (read as ぶんがく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Văn học” viết là 文学 (đọc là ぶんがく); hãy so lại từng ký tự.",
+        "en": "Not quite. “Literature” is written 文学 (read as ぶんがく); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Phòng học”",
+        "en": "Type in Japanese: “Classroom”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "教室",
+          "きょうしつ"
+        ],
+        "hint": "よみ: きょうしつ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Phòng học” viết là 教室 (đọc là きょうしつ).",
+        "en": "Correct! “Classroom” is written 教室 (read as きょうしつ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Phòng học” viết là 教室 (đọc là きょうしつ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Classroom” is written 教室 (read as きょうしつ); compare it character by character."
+      }
+    }
+  ]
+}

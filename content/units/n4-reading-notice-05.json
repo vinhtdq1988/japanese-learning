@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-school-life",
+  "title": {
+    "vi": "Đọc: Thông báo bài kiểm tra tiếng Nhật",
+    "en": "Reading: Japanese test announcement"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "日本語のクラスのみなさんへ。来月の十日に、日本語のテストがあります。時間は午後一時から三時までです。いつもの教室ではなく、にかいの大きい教室でうけます。えんぴつとけしゴムを持ってきてください。じしょは使えません。テストは、読む問題、書く問題、聞く問題の三つです。聞く問題はさいごにありますので、おくれないで来てください。病気などで来られない人は、前の日までに先生に電話をしてください。",
+      "meaning": {
+        "vi": "Gửi các bạn lớp tiếng Nhật. Ngày 10 tháng sau có bài kiểm tra tiếng Nhật. Thời gian từ 1 giờ đến 3 giờ chiều. Các bạn sẽ thi không phải ở phòng học thường ngày mà ở phòng học lớn trên tầng 2. Hãy mang theo bút chì và cục tẩy. Không được dùng từ điển. Bài kiểm tra gồm ba phần: đọc, viết và nghe. Phần nghe ở cuối cùng nên xin đừng đến muộn. Ai không thể đến vì bệnh hoặc lý do khác, xin gọi điện cho giáo viên trước đó một ngày.",
+        "en": "To the Japanese class: There will be a Japanese test on the 10th of next month. It runs from 1 to 3 p.m. You will take it not in the usual classroom but in the large classroom on the second floor. Please bring a pencil and an eraser. Dictionaries cannot be used. The test has three parts: reading, writing and listening. The listening part comes last, so please do not be late. If you cannot come because of illness or something else, please call the teacher by the day before."
+      },
+      "reading": "にほんごのクラスのみなさんへ。らいげつのとおかに、にほんごのテストがあります。じかんはごごいちじからさんじまでです。いつものきょうしつではなく、にかいのおおきいきょうしつでうけます。えんぴつとけしゴムをもってきてください。じしょはつかえません。テストは、よむもんだい、かくもんだい、きくもんだいのみっつです。きくもんだいはさいごにありますので、おくれないできてください。びょうきなどでこられないひとは、まえのひまでにせんせいにでんわをしてください。",
+      "explanation": {
+        "vi": "「～ではなく、～」= không phải… mà là…; 「～ないで」= đừng/không làm (おくれないで); 「来られない」là dạng phủ định của khả năng 来られる.",
+        "en": "「～ではなく、～」 = not… but…; 「～ないで」 = without doing (おくれないで); 「来られない」 is the negative potential of 来る."
+      },
+      "scopeRef": "r-n4-notice-school"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Bài kiểm tra diễn ra khi nào?",
+        "en": "When is the test?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ngày 10 tháng sau, từ 1 giờ đến 3 giờ chiều",
+            "en": "The 10th of next month, 1 to 3 p.m."
+          },
+          {
+            "vi": "Ngày 10 tháng này, từ 1 giờ đến 3 giờ chiều",
+            "en": "The 10th of this month, 1 to 3 p.m."
+          },
+          {
+            "vi": "Ngày 10 tháng sau, từ 3 giờ đến 5 giờ chiều",
+            "en": "The 10th of next month, 3 to 5 p.m."
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来月の十日に、日本語のテストがあります」: 来月 là tháng sau; giờ thi là 午後一時から三時まで.",
+        "en": "Correct! The text has 「来月の十日に、日本語のテストがあります」: 来月 means next month; the test time is 午後一時から三時まで."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来月の十日に、日本語のテストがあります」: 来月 là tháng sau; giờ thi là 午後一時から三時まで.",
+        "en": "Not quite. Look again at 「来月の十日に、日本語のテストがあります」: 来月 means next month; the test time is 午後一時から三時まで."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Bài kiểm tra diễn ra ở đâu?",
+        "en": "Where will the test be held?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Phòng học thường ngày",
+            "en": "The usual classroom"
+          },
+          {
+            "vi": "Phòng học lớn trên tầng 2",
+            "en": "The large classroom on the second floor"
+          },
+          {
+            "vi": "Phòng học lớn trên tầng 1",
+            "en": "The large classroom on the first floor"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「いつもの教室ではなく、にかいの大きい教室でうけます」: 「～ではなく」phủ nhận phòng thường ngày; phòng thi là phòng lớn tầng 2.",
+        "en": "Correct! The text has 「いつもの教室ではなく、にかいの大きい教室でうけます」: 「～ではなく」 rules out the usual room; the test room is the large one on the second floor."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「いつもの教室ではなく、にかいの大きい教室でうけます」: 「～ではなく」phủ nhận phòng thường ngày; phòng thi là phòng lớn tầng 2.",
+        "en": "Not quite. Look again at 「いつもの教室ではなく、にかいの大きい教室でうけます」: 「～ではなく」 rules out the usual room; the test room is the large one on the second floor."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều nào KHÔNG được phép trong bài kiểm tra?",
+        "en": "Which is NOT allowed during the test?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Dùng bút chì",
+            "en": "Using a pencil"
+          },
+          {
+            "vi": "Dùng cục tẩy",
+            "en": "Using an eraser"
+          },
+          {
+            "vi": "Dùng từ điển",
+            "en": "Using a dictionary"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「じしょは使えません」: 「使えません」nghĩa là không dùng được; từ điển không được mang vào dùng.",
+        "en": "Correct! The text has 「じしょは使えません」: 「使えません」 means cannot be used; dictionaries are not allowed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「じしょは使えません」: 「使えません」nghĩa là không dùng được; từ điển không được mang vào dùng.",
+        "en": "Not quite. Look again at 「じしょは使えません」: 「使えません」 means cannot be used; dictionaries are not allowed."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người không thể đến vì bệnh phải làm gì?",
+        "en": "What should people who cannot come because of illness do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gọi điện cho giáo viên trước một ngày",
+            "en": "Call the teacher the day before"
+          },
+          {
+            "vi": "Gọi điện cho giáo viên sau bài kiểm tra",
+            "en": "Call the teacher after the test"
+          },
+          {
+            "vi": "Gửi email cho bạn cùng lớp",
+            "en": "Email a classmate"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「前の日までに先生に電話をしてください」: 「前の日までに」nghĩa là trước đó một ngày; phải gọi điện cho giáo viên.",
+        "en": "Correct! The text has 「前の日までに先生に電話をしてください」: 「前の日までに」 means by the day before; they must phone the teacher."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「前の日までに先生に電話をしてください」: 「前の日までに」nghĩa là trước đó một ngày; phải gọi điện cho giáo viên.",
+        "en": "Not quite. Look again at 「前の日までに先生に電話をしてください」: 「前の日までに」 means by the day before; they must phone the teacher."
+      }
+    }
+  ]
+}

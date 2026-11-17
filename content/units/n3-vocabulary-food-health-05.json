@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-food-health",
+  "title": {
+    "vi": "Quần áo, vị giác, thực phẩm dự trữ và thể thao",
+    "en": "Clothing, tastes, stored food and sports"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2480,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "衣服",
+      "reading": "いふく",
+      "meaning": {
+        "vi": "Quần áo; y phục",
+        "en": "Clothing"
+      },
+      "examples": [
+        {
+          "ja": "寒い国へ行くので、暖かい衣服を用意しました。",
+          "reading": "さむいくにへいくので、あたたかいいふくをよういしました。",
+          "translation": {
+            "vi": "Vì sắp đến một nước lạnh nên tôi đã chuẩn bị quần áo ấm.",
+            "en": "I am going to a cold country, so I prepared warm clothing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "渋い",
+      "reading": "しぶい",
+      "meaning": {
+        "vi": "Chát; (nghĩa bóng) trầm, kín đáo",
+        "en": "Astringent; (figuratively) tasteful, subdued"
+      },
+      "examples": [
+        {
+          "ja": "このお茶は、渋いので、砂糖を入れて飲みます。",
+          "reading": "このおちゃは、しぶいので、さとうをいれてのみます。",
+          "translation": {
+            "vi": "Trà này chát nên tôi cho thêm đường rồi mới uống.",
+            "en": "This tea is astringent, so I add sugar before drinking it."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "塩辛い",
+      "reading": "しおからい",
+      "meaning": {
+        "vi": "Mặn",
+        "en": "Salty"
+      },
+      "examples": [
+        {
+          "ja": "このスープは、塩辛いので、お湯を足しました。",
+          "reading": "このスープは、しおからいので、おゆをたしました。",
+          "translation": {
+            "vi": "Món súp này mặn nên tôi đã thêm nước nóng.",
+            "en": "This soup was salty, so I added hot water."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "保存食",
+      "reading": "ほぞんしょく",
+      "meaning": {
+        "vi": "Thực phẩm dự trữ",
+        "en": "Preserved food; emergency food"
+      },
+      "examples": [
+        {
+          "ja": "地震に備えて、保存食を買っておきました。",
+          "reading": "じしんにそなえて、ほぞんしょくをかっておきました。",
+          "translation": {
+            "vi": "Để phòng động đất, tôi đã mua sẵn thực phẩm dự trữ.",
+            "en": "I bought emergency food in preparation for earthquakes."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勝敗",
+      "reading": "しょうはい",
+      "meaning": {
+        "vi": "Thắng bại",
+        "en": "Victory or defeat; outcome"
+      },
+      "examples": [
+        {
+          "ja": "試合の勝敗は、最後まで分かりませんでした。",
+          "reading": "しあいのしょうはいは、さいごまでわかりませんでした。",
+          "translation": {
+            "vi": "Kết quả thắng bại của trận đấu đến phút cuối vẫn chưa rõ.",
+            "en": "The outcome of the match was not clear until the very end."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "乗馬",
+      "reading": "じょうば",
+      "meaning": {
+        "vi": "Cưỡi ngựa",
+        "en": "Horseback riding"
+      },
+      "examples": [
+        {
+          "ja": "週末は、乗馬を習いに行っています。",
+          "reading": "しゅうまつは、じょうばをならいにいっています。",
+          "translation": {
+            "vi": "Cuối tuần tôi đi học cưỡi ngựa.",
+            "en": "On weekends I go to learn horseback riding."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "衣服",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 寒い国へ行くので、暖かい（　）を用意しました。 — Nghĩa của câu: “Vì sắp đến một nước lạnh nên tôi đã chuẩn bị quần áo ấm.”",
+        "en": "Choose the word that fits the blank: 寒い国へ行くので、暖かい（　）を用意しました。 — Meaning of the sentence: “I am going to a cold country, so I prepared warm clothing.”"
+      },
+      "payload": {
+        "choices": [
+          "衣服",
+          "塩辛い",
+          "乗馬",
+          "勝敗"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「衣服」(Quần áo; y phục) hợp nghĩa câu này: “Vì sắp đến một nước lạnh nên tôi đã chuẩn bị quần áo ấm.”",
+        "en": "Correct! 「衣服」(Clothing) fits this sentence: “I am going to a cold country, so I prepared warm clothing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì sắp đến một nước lạnh nên tôi đã chuẩn bị quần áo ấm.”, nên cần 「衣服」(Quần áo; y phục); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am going to a cold country, so I prepared warm clothing.”, so it needs 「衣服」(Clothing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "渋い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このお茶は、（　）ので、砂糖を入れて飲みます。 — Nghĩa của câu: “Trà này chát nên tôi cho thêm đường rồi mới uống.”",
+        "en": "Choose the word that fits the blank: このお茶は、（　）ので、砂糖を入れて飲みます。 — Meaning of the sentence: “This tea is astringent, so I add sugar before drinking it.”"
+      },
+      "payload": {
+        "choices": [
+          "勝敗",
+          "渋い",
+          "乗馬",
+          "保存食"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「渋い」(Chát; (nghĩa bóng) trầm, kín đáo) hợp nghĩa câu này: “Trà này chát nên tôi cho thêm đường rồi mới uống.”",
+        "en": "Correct! 「渋い」(Astringent; (figuratively) tasteful, subdued) fits this sentence: “This tea is astringent, so I add sugar before drinking it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trà này chát nên tôi cho thêm đường rồi mới uống.”, nên cần 「渋い」(Chát; (nghĩa bóng) trầm, kín đáo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This tea is astringent, so I add sugar before drinking it.”, so it needs 「渋い」(Astringent; (figuratively) tasteful, subdued); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "塩辛い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このスープは、（　）ので、お湯を足しました。 — Nghĩa của câu: “Món súp này mặn nên tôi đã thêm nước nóng.”",
+        "en": "Choose the word that fits the blank: このスープは、（　）ので、お湯を足しました。 — Meaning of the sentence: “This soup was salty, so I added hot water.”"
+      },
+      "payload": {
+        "choices": [
+          "勝敗",
+          "渋い",
+          "塩辛い",
+          "乗馬"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「塩辛い」(Mặn) hợp nghĩa câu này: “Món súp này mặn nên tôi đã thêm nước nóng.”",
+        "en": "Correct! 「塩辛い」(Salty) fits this sentence: “This soup was salty, so I added hot water.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Món súp này mặn nên tôi đã thêm nước nóng.”, nên cần 「塩辛い」(Mặn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This soup was salty, so I added hot water.”, so it needs 「塩辛い」(Salty); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "保存食",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 地震に備えて、（　）を買っておきました。 — Nghĩa của câu: “Để phòng động đất, tôi đã mua sẵn thực phẩm dự trữ.”",
+        "en": "Choose the word that fits the blank: 地震に備えて、（　）を買っておきました。 — Meaning of the sentence: “I bought emergency food in preparation for earthquakes.”"
+      },
+      "payload": {
+        "choices": [
+          "衣服",
+          "渋い",
+          "乗馬",
+          "保存食"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保存食」(Thực phẩm dự trữ) hợp nghĩa câu này: “Để phòng động đất, tôi đã mua sẵn thực phẩm dự trữ.”",
+        "en": "Correct! 「保存食」(Preserved food; emergency food) fits this sentence: “I bought emergency food in preparation for earthquakes.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Để phòng động đất, tôi đã mua sẵn thực phẩm dự trữ.”, nên cần 「保存食」(Thực phẩm dự trữ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I bought emergency food in preparation for earthquakes.”, so it needs 「保存食」(Preserved food; emergency food); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "勝敗",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試合の（　）は、最後まで分かりませんでした。 — Nghĩa của câu: “Kết quả thắng bại của trận đấu đến phút cuối vẫn chưa rõ.”",
+        "en": "Choose the word that fits the blank: 試合の（　）は、最後まで分かりませんでした。 — Meaning of the sentence: “The outcome of the match was not clear until the very end.”"
+      },
+      "payload": {
+        "choices": [
+          "勝敗",
+          "保存食",
+          "乗馬",
+          "衣服"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勝敗」(Thắng bại) hợp nghĩa câu này: “Kết quả thắng bại của trận đấu đến phút cuối vẫn chưa rõ.”",
+        "en": "Correct! 「勝敗」(Victory or defeat; outcome) fits this sentence: “The outcome of the match was not clear until the very end.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Kết quả thắng bại của trận đấu đến phút cuối vẫn chưa rõ.”, nên cần 「勝敗」(Thắng bại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The outcome of the match was not clear until the very end.”, so it needs 「勝敗」(Victory or defeat; outcome); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "乗馬",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 週末は、（　）を習いに行っています。 — Nghĩa của câu: “Cuối tuần tôi đi học cưỡi ngựa.”",
+        "en": "Choose the word that fits the blank: 週末は、（　）を習いに行っています。 — Meaning of the sentence: “On weekends I go to learn horseback riding.”"
+      },
+      "payload": {
+        "choices": [
+          "塩辛い",
+          "乗馬",
+          "衣服",
+          "渋い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「乗馬」(Cưỡi ngựa) hợp nghĩa câu này: “Cuối tuần tôi đi học cưỡi ngựa.”",
+        "en": "Correct! 「乗馬」(Horseback riding) fits this sentence: “On weekends I go to learn horseback riding.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuối tuần tôi đi học cưỡi ngựa.”, nên cần 「乗馬」(Cưỡi ngựa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “On weekends I go to learn horseback riding.”, so it needs 「乗馬」(Horseback riding); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "衣服",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 寒い国へ行くので、暖かい「衣服」を用意しました。",
+        "en": "Choose the correct reading of the word in 「」: 寒い国へ行くので、暖かい「衣服」を用意しました。"
+      },
+      "payload": {
+        "choices": [
+          "しぶい",
+          "いふく",
+          "しおからい",
+          "じょうば"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「衣服」 đọc là 「いふく」, nghĩa là Quần áo; y phục.",
+        "en": "Correct! 「衣服」 is read 「いふく」 and means Clothing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「衣服」 đọc là 「いふく」 (Quần áo; y phục); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「衣服」 is read 「いふく」 (Clothing); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "保存食",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 地震に備えて、「保存食」を買っておきました。",
+        "en": "Choose the correct reading of the word in 「」: 地震に備えて、「保存食」を買っておきました。"
+      },
+      "payload": {
+        "choices": [
+          "しょうはい",
+          "じょうば",
+          "ほぞんしょく",
+          "しぶい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「保存食」 đọc là 「ほぞんしょく」, nghĩa là Thực phẩm dự trữ.",
+        "en": "Correct! 「保存食」 is read 「ほぞんしょく」 and means Preserved food; emergency food."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「保存食」 đọc là 「ほぞんしょく」 (Thực phẩm dự trữ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「保存食」 is read 「ほぞんしょく」 (Preserved food; emergency food); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "乗馬",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 週末は、「じょうば」を習いに行っています。",
+        "en": "Choose the correct way to write the word in 「」: 週末は、「じょうば」を習いに行っています。"
+      },
+      "payload": {
+        "choices": [
+          "衣服",
+          "勝敗",
+          "乗馬",
+          "塩辛い"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「じょうば」 viết là 「乗馬」, nghĩa là Cưỡi ngựa.",
+        "en": "Correct! 「じょうば」 is written 「乗馬」 and means Horseback riding."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「じょうば」 viết là 「乗馬」 (Cưỡi ngựa); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「じょうば」 is written 「乗馬」 (Horseback riding); the other words are read differently."
+      }
+    }
+  ]
+}

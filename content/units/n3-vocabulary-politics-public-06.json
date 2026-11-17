@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-politics-public",
+  "title": {
+    "vi": "Đầu thú, nhà nước và quốc gia",
+    "en": "Surrendering, state affairs and national interest"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1490,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "自首",
+      "reading": "じしゅ",
+      "meaning": {
+        "vi": "Ra đầu thú",
+        "en": "Giving oneself up"
+      },
+      "examples": [
+        {
+          "ja": "犯人は、自分から警察に自首しました。",
+          "reading": "はんにんは、じぶんからけいさつにじしゅしました。",
+          "translation": {
+            "vi": "Thủ phạm đã tự mình ra đầu thú với cảnh sát.",
+            "en": "The culprit turned himself in to the police."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国政",
+      "reading": "こくせい",
+      "meaning": {
+        "vi": "Chính sự quốc gia",
+        "en": "National government; affairs of state"
+      },
+      "examples": [
+        {
+          "ja": "選挙で、国民は国政に自分の意見を伝えます。",
+          "reading": "せんきょで、こくみんはこくせいにじぶんのいけんをつたえます。",
+          "translation": {
+            "vi": "Qua bầu cử, người dân gửi ý kiến của mình đến chính quyền quốc gia.",
+            "en": "In elections, citizens convey their views to the national government."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "財務",
+      "reading": "ざいむ",
+      "meaning": {
+        "vi": "Tài vụ; tài chính",
+        "en": "Finance; financial affairs"
+      },
+      "examples": [
+        {
+          "ja": "兄は、会社の財務の仕事をしています。",
+          "reading": "あには、かいしゃのざいむのしごとをしています。",
+          "translation": {
+            "vi": "Anh tôi làm công việc tài vụ của công ty.",
+            "en": "My older brother works in the company’s finance department."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国益",
+      "reading": "こくえき",
+      "meaning": {
+        "vi": "Lợi ích quốc gia",
+        "en": "National interest"
+      },
+      "examples": [
+        {
+          "ja": "国益を守るために、政府は交渉を続けています。",
+          "reading": "こくえきをまもるために、せいふはこうしょうをつづけています。",
+          "translation": {
+            "vi": "Chính phủ tiếp tục đàm phán để bảo vệ lợi ích quốc gia.",
+            "en": "The government continues negotiations to protect the national interest."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "酸性雨",
+      "reading": "さんせいう",
+      "meaning": {
+        "vi": "Mưa axit",
+        "en": "Acid rain"
+      },
+      "examples": [
+        {
+          "ja": "酸性雨のせいで、山の木が枯れてしまいました。",
+          "reading": "さんせいうのせいで、やまのきがかれてしまいました。",
+          "translation": {
+            "vi": "Vì mưa axit, cây trên núi đã chết khô.",
+            "en": "Because of acid rain, the trees on the mountain withered."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "放射能",
+      "reading": "ほうしゃのう",
+      "meaning": {
+        "vi": "Chất phóng xạ; tính phóng xạ",
+        "en": "Radioactivity"
+      },
+      "examples": [
+        {
+          "ja": "事故のあと、水や食べ物の放射能が検査されました。",
+          "reading": "じこのあと、みずやたべもののほうしゃのうがけんさされました。",
+          "translation": {
+            "vi": "Sau tai nạn, người ta kiểm tra chất phóng xạ trong nước và thực phẩm.",
+            "en": "After the accident, water and food were tested for radioactivity."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "自首",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 犯人は、自分から警察に（　）しました。 — Nghĩa của câu: “Thủ phạm đã tự mình ra đầu thú với cảnh sát.”",
+        "en": "Choose the word that fits the blank: 犯人は、自分から警察に（　）しました。 — Meaning of the sentence: “The culprit turned himself in to the police.”"
+      },
+      "payload": {
+        "choices": [
+          "酸性雨",
+          "自首",
+          "国益",
+          "財務"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自首」(Ra đầu thú) hợp nghĩa câu này: “Thủ phạm đã tự mình ra đầu thú với cảnh sát.”",
+        "en": "Correct! 「自首」(Giving oneself up) fits this sentence: “The culprit turned himself in to the police.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thủ phạm đã tự mình ra đầu thú với cảnh sát.”, nên cần 「自首」(Ra đầu thú); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The culprit turned himself in to the police.”, so it needs 「自首」(Giving oneself up); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国政",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 選挙で、国民は（　）に自分の意見を伝えます。 — Nghĩa của câu: “Qua bầu cử, người dân gửi ý kiến của mình đến chính quyền quốc gia.”",
+        "en": "Choose the word that fits the blank: 選挙で、国民は（　）に自分の意見を伝えます。 — Meaning of the sentence: “In elections, citizens convey their views to the national government.”"
+      },
+      "payload": {
+        "choices": [
+          "自首",
+          "財務",
+          "国政",
+          "酸性雨"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国政」(Chính sự quốc gia) hợp nghĩa câu này: “Qua bầu cử, người dân gửi ý kiến của mình đến chính quyền quốc gia.”",
+        "en": "Correct! 「国政」(National government; affairs of state) fits this sentence: “In elections, citizens convey their views to the national government.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Qua bầu cử, người dân gửi ý kiến của mình đến chính quyền quốc gia.”, nên cần 「国政」(Chính sự quốc gia); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In elections, citizens convey their views to the national government.”, so it needs 「国政」(National government; affairs of state); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "財務",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 兄は、会社の（　）の仕事をしています。 — Nghĩa của câu: “Anh tôi làm công việc tài vụ của công ty.”",
+        "en": "Choose the word that fits the blank: 兄は、会社の（　）の仕事をしています。 — Meaning of the sentence: “My older brother works in the company’s finance department.”"
+      },
+      "payload": {
+        "choices": [
+          "国益",
+          "酸性雨",
+          "放射能",
+          "財務"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「財務」(Tài vụ; tài chính) hợp nghĩa câu này: “Anh tôi làm công việc tài vụ của công ty.”",
+        "en": "Correct! 「財務」(Finance; financial affairs) fits this sentence: “My older brother works in the company’s finance department.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh tôi làm công việc tài vụ của công ty.”, nên cần 「財務」(Tài vụ; tài chính); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My older brother works in the company’s finance department.”, so it needs 「財務」(Finance; financial affairs); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国益",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を守るために、政府は交渉を続けています。 — Nghĩa của câu: “Chính phủ tiếp tục đàm phán để bảo vệ lợi ích quốc gia.”",
+        "en": "Choose the word that fits the blank: （　）を守るために、政府は交渉を続けています。 — Meaning of the sentence: “The government continues negotiations to protect the national interest.”"
+      },
+      "payload": {
+        "choices": [
+          "国益",
+          "国政",
+          "放射能",
+          "自首"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国益」(Lợi ích quốc gia) hợp nghĩa câu này: “Chính phủ tiếp tục đàm phán để bảo vệ lợi ích quốc gia.”",
+        "en": "Correct! 「国益」(National interest) fits this sentence: “The government continues negotiations to protect the national interest.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chính phủ tiếp tục đàm phán để bảo vệ lợi ích quốc gia.”, nên cần 「国益」(Lợi ích quốc gia); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The government continues negotiations to protect the national interest.”, so it needs 「国益」(National interest); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "酸性雨",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）のせいで、山の木が枯れてしまいました。 — Nghĩa của câu: “Vì mưa axit, cây trên núi đã chết khô.”",
+        "en": "Choose the word that fits the blank: （　）のせいで、山の木が枯れてしまいました。 — Meaning of the sentence: “Because of acid rain, the trees on the mountain withered.”"
+      },
+      "payload": {
+        "choices": [
+          "放射能",
+          "酸性雨",
+          "国益",
+          "財務"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「酸性雨」(Mưa axit) hợp nghĩa câu này: “Vì mưa axit, cây trên núi đã chết khô.”",
+        "en": "Correct! 「酸性雨」(Acid rain) fits this sentence: “Because of acid rain, the trees on the mountain withered.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì mưa axit, cây trên núi đã chết khô.”, nên cần 「酸性雨」(Mưa axit); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Because of acid rain, the trees on the mountain withered.”, so it needs 「酸性雨」(Acid rain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "放射能",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事故のあと、水や食べ物の（　）が検査されました。 — Nghĩa của câu: “Sau tai nạn, người ta kiểm tra chất phóng xạ trong nước và thực phẩm.”",
+        "en": "Choose the word that fits the blank: 事故のあと、水や食べ物の（　）が検査されました。 — Meaning of the sentence: “After the accident, water and food were tested for radioactivity.”"
+      },
+      "payload": {
+        "choices": [
+          "酸性雨",
+          "国益",
+          "放射能",
+          "国政"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「放射能」(Chất phóng xạ; tính phóng xạ) hợp nghĩa câu này: “Sau tai nạn, người ta kiểm tra chất phóng xạ trong nước và thực phẩm.”",
+        "en": "Correct! 「放射能」(Radioactivity) fits this sentence: “After the accident, water and food were tested for radioactivity.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sau tai nạn, người ta kiểm tra chất phóng xạ trong nước và thực phẩm.”, nên cần 「放射能」(Chất phóng xạ; tính phóng xạ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After the accident, water and food were tested for radioactivity.”, so it needs 「放射能」(Radioactivity); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "自首",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 犯人は、自分から警察に「自首」しました。",
+        "en": "Choose the correct reading of the word in 「」: 犯人は、自分から警察に「自首」しました。"
+      },
+      "payload": {
+        "choices": [
+          "ざいむ",
+          "ほうしゃのう",
+          "じしゅ",
+          "さんせいう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自首」 đọc là 「じしゅ」, nghĩa là Ra đầu thú.",
+        "en": "Correct! 「自首」 is read 「じしゅ」 and means Giving oneself up."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「自首」 đọc là 「じしゅ」 (Ra đầu thú); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「自首」 is read 「じしゅ」 (Giving oneself up); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "国益",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「国益」を守るために、政府は交渉を続けています。",
+        "en": "Choose the correct reading of the word in 「」: 「国益」を守るために、政府は交渉を続けています。"
+      },
+      "payload": {
+        "choices": [
+          "ざいむ",
+          "じしゅ",
+          "さんせいう",
+          "こくえき"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国益」 đọc là 「こくえき」, nghĩa là Lợi ích quốc gia.",
+        "en": "Correct! 「国益」 is read 「こくえき」 and means National interest."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「国益」 đọc là 「こくえき」 (Lợi ích quốc gia); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「国益」 is read 「こくえき」 (National interest); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "放射能",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 事故のあと、水や食べ物の「ほうしゃのう」が検査されました。",
+        "en": "Choose the correct way to write the word in 「」: 事故のあと、水や食べ物の「ほうしゃのう」が検査されました。"
+      },
+      "payload": {
+        "choices": [
+          "自首",
+          "財務",
+          "酸性雨",
+          "放射能"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ほうしゃのう」 viết là 「放射能」, nghĩa là Chất phóng xạ; tính phóng xạ.",
+        "en": "Correct! 「ほうしゃのう」 is written 「放射能」 and means Radioactivity."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ほうしゃのう」 viết là 「放射能」 (Chất phóng xạ; tính phóng xạ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ほうしゃのう」 is written 「放射能」 (Radioactivity); the other words are read differently."
+      }
+    }
+  ]
+}

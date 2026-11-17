@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-hobbies",
+  "title": {
+    "vi": "Đọc: Học nấu ăn",
+    "en": "Reading: Learning to cook"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "三か月前から、料理を習っています。いままでは、いそがしくて外で食べることが多かったので、体のことがしんぱいでした。習ってみると、料理はむずかしそうに見えて、じつは思ったよりかんたんでした。いちばんすきなのは、カレーです。たまねぎをじっくりいためると、おいしくなります。先週は、はじめて友だちのために作りました。「お店の味みたい」とほめられて、とてもうれしかったです。これからは、毎週ちがう料理を作ってみたいです。",
+      "meaning": {
+        "vi": "Từ ba tháng trước, tôi đang học nấu ăn. Trước đây vì bận nên tôi thường ăn ngoài, và tôi lo cho sức khỏe. Khi học thử, nấu ăn trông có vẻ khó nhưng thực ra dễ hơn tôi nghĩ. Món tôi thích nhất là cà ri. Nếu xào hành tây thật kỹ thì sẽ ngon. Tuần trước, lần đầu tiên tôi nấu cho bạn bè. Được khen là “giống vị của nhà hàng”, tôi rất vui. Từ nay, tôi muốn thử nấu một món khác nhau mỗi tuần.",
+        "en": "I have been learning to cook for three months. Until now I was busy and often ate out, so I was worried about my health. Once I tried learning, cooking looked difficult but was actually easier than I expected. My favorite is curry. If you fry the onions slowly, it tastes good. Last week, I cooked for friends for the first time. I was praised with “It tastes like a restaurant,” and I was very happy. From now on, I want to try cooking a different dish every week."
+      },
+      "reading": "さんかげつまえから、りょうりをならっています。いままでは、いそがしくてそとでたべることがおおかったので、からだのことがしんぱいでした。ならってみると、りょうりはむずかしそうにみえて、じつはおもったよりかんたんでした。いちばんすきなのは、カレーです。たまねぎをじっくりいためると、おいしくなります。せんしゅうは、はじめてともだちのためにつくりました。「おみせのあじみたい」とほめられて、とてもうれしかったです。これからは、まいしゅうちがうりょうりをつくってみたいです。",
+      "explanation": {
+        "vi": "「～てみる」= thử làm; 「～そうに見える」= trông có vẻ…; 「～より」= hơn…(思ったより); 「ほめられて」là dạng bị động của ほめる; 「～と」nêu kết quả tự nhiên (いためると、おいしくなります).",
+        "en": "「～てみる」 = try doing; 「～そうに見える」 = looks like…; 「～より」 = than… (思ったより); 「ほめられて」 is the passive of ほめる; 「～と」 gives a natural result (いためると、おいしくなります)."
+      },
+      "scopeRef": "r-n4-essay-hobby-travel"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả bắt đầu học nấu ăn từ khi nào?",
+        "en": "Since when has the writer been learning to cook?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Một tháng trước",
+            "en": "One month ago"
+          },
+          {
+            "vi": "Ba tháng trước",
+            "en": "Three months ago"
+          },
+          {
+            "vi": "Từ năm ngoái",
+            "en": "Since last year"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「三か月前から、料理を習っています」: 「三か月前」nghĩa là ba tháng trước.",
+        "en": "Correct! The text has 「三か月前から、料理を習っています」: 「三か月前」 means three months ago."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「三か月前から、料理を習っています」: 「三か月前」nghĩa là ba tháng trước.",
+        "en": "Not quite. Look again at 「三か月前から、料理を習っています」: 「三か月前」 means three months ago."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao trước đây tác giả lo cho sức khỏe?",
+        "en": "Why was the writer worried about their health before?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì ít ngủ",
+            "en": "Because they slept little"
+          },
+          {
+            "vi": "Vì hay ăn ngoài",
+            "en": "Because they often ate out"
+          },
+          {
+            "vi": "Vì hay bỏ bữa sáng",
+            "en": "Because they often skipped breakfast"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「いそがしくて外で食べることが多かったので」: Vì bận nên thường ăn ngoài, và tác giả lo cho sức khỏe.",
+        "en": "Correct! The text has 「いそがしくて外で食べることが多かったので」: They were busy and often ate out, which worried them about their health."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「いそがしくて外で食べることが多かったので」: Vì bận nên thường ăn ngoài, và tác giả lo cho sức khỏe.",
+        "en": "Not quite. Look again at 「いそがしくて外で食べることが多かったので」: They were busy and often ate out, which worried them about their health."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Món tác giả thích nhất là gì?",
+        "en": "What does the writer like most?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cà ri",
+            "en": "Curry"
+          },
+          {
+            "vi": "Mì ramen",
+            "en": "Ramen"
+          },
+          {
+            "vi": "Cá nướng",
+            "en": "Grilled fish"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「いちばんすきなのは、カレーです」: 「いちばんすき」nghĩa là thích nhất; món đó là cà ri.",
+        "en": "Correct! The text has 「いちばんすきなのは、カレーです」: 「いちばんすき」 means favorite; the dish is curry."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「いちばんすきなのは、カレーです」: 「いちばんすき」nghĩa là thích nhất; món đó là cà ri.",
+        "en": "Not quite. Look again at 「いちばんすきなのは、カレーです」: 「いちばんすき」 means favorite; the dish is curry."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Bạn bè đã nói gì về món ăn tác giả nấu?",
+        "en": "What did friends say about the dish the writer cooked?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hơi mặn",
+            "en": "It was a little salty"
+          },
+          {
+            "vi": "Giống vị của nhà hàng",
+            "en": "It tasted like a restaurant"
+          },
+          {
+            "vi": "Nên nấu lâu hơn",
+            "en": "It should be cooked longer"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「「お店の味みたい」とほめられて」: 「ほめられて」nghĩa là được khen; họ khen món ăn giống vị nhà hàng.",
+        "en": "Correct! The text has 「「お店の味みたい」とほめられて」: 「ほめられて」 means being praised; friends said it tasted like a restaurant."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「「お店の味みたい」とほめられて」: 「ほめられて」nghĩa là được khen; họ khen món ăn giống vị nhà hàng.",
+        "en": "Not quite. Look again at 「「お店の味みたい」とほめられて」: 「ほめられて」 means being praised; friends said it tasted like a restaurant."
+      }
+    }
+  ]
+}

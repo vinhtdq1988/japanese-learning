@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-health",
+  "title": {
+    "vi": "Đọc: Hướng dẫn phòng khám",
+    "en": "Reading: Clinic guide"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【山田クリニック　あんない】\nしんさつの時間\n月・火・木・金　午前9時～12時　午後3時～6時\n水・土　午前9時～12時（午後は休み）\n日曜日としゅくじつは休みです。\nはじめての人は、ほけんしょうを持ってきてください。\n電話でよやくをすると、待つ時間がみじかくなります。\nねつがある人は、入口でマスクをつけて、うけつけで言ってください。",
+      "meaning": {
+        "vi": "[Hướng dẫn phòng khám Yamada] Giờ khám: Thứ Hai, Ba, Năm, Sáu: 9 giờ đến 12 giờ sáng và 3 giờ đến 6 giờ chiều. Thứ Tư, thứ Bảy: 9 giờ đến 12 giờ sáng (nghỉ buổi chiều). Chủ nhật và ngày lễ nghỉ. Người đến lần đầu xin hãy mang theo thẻ bảo hiểm. Nếu đặt lịch qua điện thoại, thời gian chờ sẽ ngắn hơn. Người bị sốt xin hãy đeo khẩu trang ở cửa vào và báo với quầy tiếp tân.",
+        "en": "[Yamada Clinic guide] Consultation hours: Mon, Tue, Thu, Fri: 9 a.m. to 12 noon and 3 to 6 p.m. Wed, Sat: 9 a.m. to 12 noon (closed in the afternoon). Closed on Sundays and public holidays. First-time patients, please bring your insurance card. If you make a reservation by phone, the waiting time becomes shorter. If you have a fever, please put on a mask at the entrance and tell the reception desk."
+      },
+      "reading": "やまだクリニック　あんない\nしんさつのじかん\nげつ・か・もく・きん　ごぜんくじ～じゅうにじ　ごごさんじ～ろくじ\nすい・ど　ごぜんくじ～じゅうにじ（ごごはやすみ）\nにちようびとしゅくじつはやすみです。\nはじめてのひとは、ほけんしょうをもってきてください。\nでんわでよやくをすると、まつじかんがみじかくなります。\nねつがあるひとは、いりぐちでマスクをつけて、うけつけでいってください。",
+      "explanation": {
+        "vi": "「はじめての人」= người đến lần đầu; 「～と、…」= nếu… thì…; 「みじかくなります」= trở nên ngắn hơn; 「しんさつ」= khám bệnh; 「ほけんしょう」= thẻ bảo hiểm; 「よやく」= đặt lịch.",
+        "en": "「はじめての人」 = first-time patients; 「～と、…」 = if…, then…; 「みじかくなります」 = becomes shorter; 「しんさつ」 = medical examination; 「ほけんしょう」 = insurance card; 「よやく」 = reservation."
+      },
+      "scopeRef": "r-n4-info-menu-guide"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Vào lúc nào có thể đi khám?",
+        "en": "At which of these times can you be seen?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Tư, 4 giờ chiều",
+            "en": "Wednesday, 4 p.m."
+          },
+          {
+            "vi": "Thứ Năm, 4 giờ chiều",
+            "en": "Thursday, 4 p.m."
+          },
+          {
+            "vi": "Thứ Bảy, 4 giờ chiều",
+            "en": "Saturday, 4 p.m."
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「月・火・木・金　午前9時～12時　午後3時～6時」: Thứ Năm có khám cả chiều (3 đến 6 giờ); thứ Tư và thứ Bảy nghỉ buổi chiều.",
+        "en": "Correct! The text has 「月・火・木・金　午前9時～12時　午後3時～6時」: Thursday has afternoon hours (3 to 6 p.m.); Wednesday and Saturday are closed in the afternoon."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「月・火・木・金　午前9時～12時　午後3時～6時」: Thứ Năm có khám cả chiều (3 đến 6 giờ); thứ Tư và thứ Bảy nghỉ buổi chiều.",
+        "en": "Not quite. Look again at 「月・火・木・金　午前9時～12時　午後3時～6時」: Thursday has afternoon hours (3 to 6 p.m.); Wednesday and Saturday are closed in the afternoon."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Người đến lần đầu phải mang theo gì?",
+        "en": "What must first-time patients bring?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thẻ bảo hiểm",
+            "en": "An insurance card"
+          },
+          {
+            "vi": "Tiền mặt 5.000 yên",
+            "en": "5,000 yen in cash"
+          },
+          {
+            "vi": "Thư giới thiệu",
+            "en": "A letter of introduction"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「はじめての人は、ほけんしょうを持ってきてください」: 「はじめての人」là người đến lần đầu; họ cần mang ほけんしょう (thẻ bảo hiểm).",
+        "en": "Correct! The text has 「はじめての人は、ほけんしょうを持ってきてください」: 「はじめての人」 means first-time patients; they must bring a ほけんしょう (insurance card)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「はじめての人は、ほけんしょうを持ってきてください」: 「はじめての人」là người đến lần đầu; họ cần mang ほけんしょう (thẻ bảo hiểm).",
+        "en": "Not quite. Look again at 「はじめての人は、ほけんしょうを持ってきてください」: 「はじめての人」 means first-time patients; they must bring a ほけんしょう (insurance card)."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Làm thế nào để thời gian chờ ngắn hơn?",
+        "en": "How can you shorten the waiting time?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đến sớm 1 tiếng",
+            "en": "Arrive an hour early"
+          },
+          {
+            "vi": "Đặt lịch bằng điện thoại",
+            "en": "Reserve by phone"
+          },
+          {
+            "vi": "Đến vào Chủ nhật",
+            "en": "Come on Sunday"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電話でよやくをすると、待つ時間がみじかくなります」: 「～と」nêu kết quả: đặt lịch qua điện thoại thì thời gian chờ ngắn lại.",
+        "en": "Correct! The text has 「電話でよやくをすると、待つ時間がみじかくなります」: 「～と」 gives the result: reserving by phone shortens the wait."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電話でよやくをすると、待つ時間がみじかくなります」: 「～と」nêu kết quả: đặt lịch qua điện thoại thì thời gian chờ ngắn lại.",
+        "en": "Not quite. Look again at 「電話でよやくをすると、待つ時間がみじかくなります」: 「～と」 gives the result: reserving by phone shortens the wait."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Người bị sốt nên làm gì?",
+        "en": "What should someone with a fever do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chờ ngoài cửa đến khi được gọi",
+            "en": "Wait outside until called"
+          },
+          {
+            "vi": "Đeo khẩu trang ở cửa và báo với quầy tiếp tân",
+            "en": "Put on a mask at the entrance and tell reception"
+          },
+          {
+            "vi": "Gọi xe cấp cứu",
+            "en": "Call an ambulance"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ねつがある人は、入口でマスクをつけて、うけつけで言ってください」: Người sốt cần đeo khẩu trang ở cửa vào rồi báo ở quầy tiếp tân.",
+        "en": "Correct! The text has 「ねつがある人は、入口でマスクをつけて、うけつけで言ってください」: People with a fever should put on a mask at the entrance and tell the reception desk."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ねつがある人は、入口でマスクをつけて、うけつけで言ってください」: Người sốt cần đeo khẩu trang ở cửa vào rồi báo ở quầy tiếp tân.",
+        "en": "Not quite. Look again at 「ねつがある人は、入口でマスクをつけて、うけつけで言ってください」: People with a fever should put on a mask at the entrance and tell the reception desk."
+      }
+    }
+  ]
+}

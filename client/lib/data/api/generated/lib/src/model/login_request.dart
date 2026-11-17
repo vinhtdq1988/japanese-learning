@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'login_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,26 +18,50 @@ part 'login_request.g.dart';
 )
 class LoginRequest {
   /// Returns a new [LoginRequest] instance.
-  LoginRequest({required this.email, required this.password});
+  LoginRequest({
 
-  @JsonKey(name: r'email', required: true, includeIfNull: false)
+    required  this.email,
+
+    required  this.password,
+  });
+
+  @JsonKey(
+    
+    name: r'email',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String email;
 
-  @JsonKey(name: r'password', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'password',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String password;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is LoginRequest &&
-          other.email == email &&
-          other.password == password;
 
-  @override
-  int get hashCode => email.hashCode + password.hashCode;
 
-  factory LoginRequest.fromJson(Map<String, dynamic> json) =>
-      _$LoginRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is LoginRequest &&
+      other.email == email &&
+      other.password == password;
+
+    @override
+    int get hashCode =>
+        email.hashCode +
+        password.hashCode;
+
+  factory LoginRequest.fromJson(Map<String, dynamic> json) => _$LoginRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$LoginRequestToJson(this);
 
@@ -44,4 +69,6 @@ class LoginRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

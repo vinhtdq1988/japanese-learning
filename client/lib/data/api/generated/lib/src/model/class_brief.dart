@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_brief.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,45 +20,81 @@ part 'class_brief.g.dart';
 class ClassBrief {
   /// Returns a new [ClassBrief] instance.
   ClassBrief({
-    required this.id,
 
-    required this.name,
+    required  this.id,
 
-    required this.organizationName,
+    required  this.name,
 
-    required this.teachers,
+    required  this.organizationName,
+
+    required  this.teachers,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'name', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'name',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String name;
 
-  @JsonKey(name: r'organizationName', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'organizationName',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String organizationName;
 
-  @JsonKey(name: r'teachers', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teachers',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassBriefTeachersInner> teachers;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassBrief &&
-          other.id == id &&
-          other.name == name &&
-          other.organizationName == organizationName &&
-          other.teachers == teachers;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      name.hashCode +
-      organizationName.hashCode +
-      teachers.hashCode;
 
-  factory ClassBrief.fromJson(Map<String, dynamic> json) =>
-      _$ClassBriefFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassBrief &&
+      other.id == id &&
+      other.name == name &&
+      other.organizationName == organizationName &&
+      other.teachers == teachers;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        name.hashCode +
+        organizationName.hashCode +
+        teachers.hashCode;
+
+  factory ClassBrief.fromJson(Map<String, dynamic> json) => _$ClassBriefFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassBriefToJson(this);
 
@@ -65,4 +102,6 @@ class ClassBrief {
   String toString() {
     return toJson().toString();
   }
+
 }
+

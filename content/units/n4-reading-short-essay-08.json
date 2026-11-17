@@ -1,0 +1,169 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Tháng đầu đi làm",
+    "en": "Reading: My first month at work"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "わたしは先月から、小さな会社ではたらいています。仕事はおもしろいですが、わからないことがたくさんあって、毎日いそがしいです。この前、おきゃくさんにていねいなことばで話すのがむずかしくて、まちがえてしまいました。そのとき、先ぱいの木下さんが、わたしのかわりにあやまって、あとでやさしく教えてくれました。木下さんのおかげで、同じまちがいを二度としないようになりました。いつか、わたしも新しい人に教えられる人になりたいです。",
+      "meaning": {
+        "vi": "Tôi làm việc ở một công ty nhỏ từ tháng trước. Công việc thú vị nhưng có nhiều điều tôi chưa biết nên ngày nào cũng bận rộn. Hôm trước, tôi thấy khó nói chuyện bằng lời lẽ lịch sự với khách hàng và đã nói sai. Lúc đó, anh Kinoshita, người đi trước, đã xin lỗi thay tôi, rồi sau đó chỉ cho tôi một cách dịu dàng. Nhờ anh Kinoshita, tôi không còn mắc lại cùng một lỗi lần thứ hai. Một ngày nào đó, tôi cũng muốn trở thành người có thể chỉ dạy cho những người mới.",
+        "en": "I have worked at a small company since last month. The work is interesting, but there are many things I do not understand, so I am busy every day. The other day, I found it hard to speak politely to a customer and made a mistake. At that time, my senior colleague Mr. Kinoshita apologized in my place and then kindly taught me afterward. Thanks to Mr. Kinoshita, I no longer make the same mistake twice. Someday, I would like to become a person who can teach new people too."
+      },
+      "reading": "わたしはせんげつから、ちいさなかいしゃではたらいています。しごとはおもしろいですが、わからないことがたくさんあって、まいにちいそがしいです。このまえ、おきゃくさんにていねいなことばではなすのがむずかしくて、まちがえてしまいました。そのとき、せんぱいのきのしたさんが、わたしのかわりにあやまって、あとでやさしくおしえてくれました。きのしたさんのおかげで、おなじまちがいをにどとしないようになりました。いつか、わたしもあたらしいひとにおしえられるひとになりたいです。",
+      "explanation": {
+        "vi": "「～てしまいました」= lỡ làm (まちがえてしまいました); 「～てくれました」= ai đó làm giúp mình; 「～のおかげで」= nhờ…; 「～ようになりました」= đã trở nên…; 「教えられる」là dạng khả năng của 教える.",
+        "en": "「～てしまいました」 = ended up (まちがえてしまいました); 「～てくれました」 = did for me; 「～のおかげで」 = thanks to…; 「～ようになりました」 = came to…; 「教えられる」 is the potential form of 教える."
+      },
+      "scopeRef": "r-n4-essay-daily-impression"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả làm việc ở công ty được bao lâu?",
+        "en": "How long has the writer been working at the company?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khoảng một tháng",
+            "en": "About one month"
+          },
+          {
+            "vi": "Khoảng một năm",
+            "en": "About one year"
+          },
+          {
+            "vi": "Khoảng một tuần",
+            "en": "About one week"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「わたしは先月から、小さな会社ではたらいています」: 「先月から」nghĩa là từ tháng trước, tức là khoảng một tháng.",
+        "en": "Correct! The text has 「わたしは先月から、小さな会社ではたらいています」: 「先月から」 means since last month, so about one month."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「わたしは先月から、小さな会社ではたらいています」: 「先月から」nghĩa là từ tháng trước, tức là khoảng một tháng.",
+        "en": "Not quite. Look again at 「わたしは先月から、小さな会社ではたらいています」: 「先月から」 means since last month, so about one month."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả đã mắc lỗi gì?",
+        "en": "What mistake did the writer make?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Làm mất tài liệu của khách",
+            "en": "Lost a customer’s documents"
+          },
+          {
+            "vi": "Đến muộn buổi họp",
+            "en": "Was late to a meeting"
+          },
+          {
+            "vi": "Nói chuyện với khách chưa đúng cách lịch sự",
+            "en": "Did not speak to a customer in proper polite language"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「おきゃくさんにていねいなことばで話すのがむずかしくて、まちがえてしまいました」: Tác giả thấy khó nói lời lẽ lịch sự với khách nên đã nói sai.",
+        "en": "Correct! The text has 「おきゃくさんにていねいなことばで話すのがむずかしくて、まちがえてしまいました」: The writer found polite speech hard and made a mistake when talking to a customer."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「おきゃくさんにていねいなことばで話すのがむずかしくて、まちがえてしまいました」: Tác giả thấy khó nói lời lẽ lịch sự với khách nên đã nói sai.",
+        "en": "Not quite. Look again at 「おきゃくさんにていねいなことばで話すのがむずかしくて、まちがえてしまいました」: The writer found polite speech hard and made a mistake when talking to a customer."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Anh Kinoshita đã làm gì?",
+        "en": "What did Mr. Kinoshita do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Xin lỗi thay tác giả và sau đó chỉ dạy tử tế",
+            "en": "Apologized for the writer and then taught kindly afterward"
+          },
+          {
+            "vi": "Quở trách tác giả trước mặt khách",
+            "en": "Scolded the writer in front of the customer"
+          },
+          {
+            "vi": "Báo cho giám đốc",
+            "en": "Reported it to the president"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「わたしのかわりにあやまって、あとでやさしく教えてくれました」: 「かわりに」nghĩa là thay cho; anh Kinoshita xin lỗi thay rồi dạy lại tử tế.",
+        "en": "Correct! The text has 「わたしのかわりにあやまって、あとでやさしく教えてくれました」: 「かわりに」 means in place of; Mr. Kinoshita apologized instead and taught kindly later."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「わたしのかわりにあやまって、あとでやさしく教えてくれました」: 「かわりに」nghĩa là thay cho; anh Kinoshita xin lỗi thay rồi dạy lại tử tế.",
+        "en": "Not quite. Look again at 「わたしのかわりにあやまって、あとでやさしく教えてくれました」: 「かわりに」 means in place of; Mr. Kinoshita apologized instead and taught kindly later."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Trong tương lai tác giả muốn trở thành người như thế nào?",
+        "en": "What kind of person does the writer want to become?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Người giỏi nói tiếng Anh",
+            "en": "A person good at English"
+          },
+          {
+            "vi": "Người có thể chỉ dạy cho người mới",
+            "en": "A person who can teach newcomers"
+          },
+          {
+            "vi": "Người làm việc ở công ty lớn",
+            "en": "A person working at a big company"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「新しい人に教えられる人になりたいです」: 「教えられる」là dạng khả năng: người có thể chỉ dạy cho người mới.",
+        "en": "Correct! The text has 「新しい人に教えられる人になりたいです」: 「教えられる」 is the potential form: a person who can teach newcomers."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「新しい人に教えられる人になりたいです」: 「教えられる」là dạng khả năng: người có thể chỉ dạy cho người mới.",
+        "en": "Not quite. Look again at 「新しい人に教えられる人になりたいです」: 「教えられる」 is the potential form: a person who can teach newcomers."
+      }
+    }
+  ]
+}

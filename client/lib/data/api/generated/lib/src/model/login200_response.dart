@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'login200_response.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,46 +20,82 @@ part 'login200_response.g.dart';
 class Login200Response {
   /// Returns a new [Login200Response] instance.
   Login200Response({
-    required this.accessToken,
 
-    required this.refreshToken,
+    required  this.accessToken,
 
-    required this.expiresIn,
+    required  this.refreshToken,
 
-    this.accountStatus,
+    required  this.expiresIn,
+
+     this.accountStatus,
   });
 
-  @JsonKey(name: r'accessToken', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'accessToken',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String accessToken;
 
-  @JsonKey(name: r'refreshToken', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'refreshToken',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String refreshToken;
 
-  /// Số giây hiệu lực của access token
-  @JsonKey(name: r'expiresIn', required: true, includeIfNull: false)
+
+
+      /// Số giây hiệu lực của access token
+  @JsonKey(
+    
+    name: r'expiresIn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int expiresIn;
 
-  @JsonKey(name: r'accountStatus', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'accountStatus',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final AccountStatus? accountStatus;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Login200Response &&
-          other.accessToken == accessToken &&
-          other.refreshToken == refreshToken &&
-          other.expiresIn == expiresIn &&
-          other.accountStatus == accountStatus;
 
-  @override
-  int get hashCode =>
-      accessToken.hashCode +
-      refreshToken.hashCode +
-      expiresIn.hashCode +
-      accountStatus.hashCode;
 
-  factory Login200Response.fromJson(Map<String, dynamic> json) =>
-      _$Login200ResponseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is Login200Response &&
+      other.accessToken == accessToken &&
+      other.refreshToken == refreshToken &&
+      other.expiresIn == expiresIn &&
+      other.accountStatus == accountStatus;
+
+    @override
+    int get hashCode =>
+        accessToken.hashCode +
+        refreshToken.hashCode +
+        expiresIn.hashCode +
+        accountStatus.hashCode;
+
+  factory Login200Response.fromJson(Map<String, dynamic> json) => _$Login200ResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$Login200ResponseToJson(this);
 
@@ -66,4 +103,6 @@ class Login200Response {
   String toString() {
     return toJson().toString();
   }
+
 }
+

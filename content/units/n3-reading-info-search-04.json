@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-info-search",
+  "title": {
+    "vi": "Đọc: Bảng giá rạp chiếu phim",
+    "en": "Reading: Cinema ticket prices"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【さくら映画館　料金】\n一般　1,900円　大学生　1,500円\n高校生以下　1,000円　シニア（60歳以上）　1,200円\n毎月1日は「映画の日」で、どなたでも1,200円です。\n※レイトショー（午後8時以降）は、一般も1,400円になります。",
+      "meaning": {
+        "vi": "[Giá vé rạp chiếu phim Sakura] Người lớn: 1.900 yên; sinh viên đại học: 1.500 yên. Học sinh cấp 3 trở xuống: 1.000 yên; người cao tuổi (từ 60 tuổi): 1.200 yên. Ngày mùng 1 hằng tháng là “Ngày phim”, ai cũng được giá 1.200 yên. * Suất chiếu muộn (sau 8 giờ tối): người lớn cũng chỉ còn 1.400 yên.",
+        "en": "[Sakura Cinema prices] General: 1,900 yen; university students: 1,500 yen. High school students and under: 1,000 yen; seniors (aged 60 and over): 1,200 yen. The 1st of every month is “Movie Day,” and anyone pays 1,200 yen. * For late shows (after 8 p.m.), the general price is also 1,400 yen."
+      },
+      "explanation": {
+        "vi": "「～以下」= từ… trở xuống; 「～以上」= từ… trở lên; 「～以降」= sau…; 「一般」(いっぱん) = người lớn/giá thông thường; 「どなたでも」= bất kỳ ai.",
+        "en": "「～以下」 = and under; 「～以上」 = and over; 「～以降」 = after…; 「一般」(いっぱん) = general admission; 「どなたでも」 = anyone."
+      },
+      "scopeRef": "r-n3-info-price-ad"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Sinh viên đại học xem phim lúc 3 giờ chiều vào ngày thường (không phải ngày mùng 1) trả bao nhiêu?",
+        "en": "How much does a university student pay at 3 p.m. on a weekday that is not the 1st?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.000 yên",
+            "en": "1,000 yen"
+          },
+          {
+            "vi": "1.500 yên",
+            "en": "1,500 yen"
+          },
+          {
+            "vi": "1.900 yên",
+            "en": "1,900 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「大学生　1,500円」: Dòng giá ghi sinh viên đại học là 1.500 yên.",
+        "en": "Correct! The text has 「大学生　1,500円」: The price line gives 1,500 yen for university students."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「大学生　1,500円」: Dòng giá ghi sinh viên đại học là 1.500 yên.",
+        "en": "Not quite. Look again at 「大学生　1,500円」: The price line gives 1,500 yen for university students."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Người 65 tuổi xem phim vào ngày mùng 1 trả bao nhiêu?",
+        "en": "How much does a 65-year-old pay on the 1st of the month?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.200 yên",
+            "en": "1,200 yen"
+          },
+          {
+            "vi": "1.000 yên",
+            "en": "1,000 yen"
+          },
+          {
+            "vi": "1.400 yên",
+            "en": "1,400 yen"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「毎月1日は「映画の日」で、どなたでも1,200円です」: Ngày mùng 1, ai cũng 1.200 yên; giá người cao tuổi cũng là 1.200 yên.",
+        "en": "Correct! The text has 「毎月1日は「映画の日」で、どなたでも1,200円です」: On the 1st everyone pays 1,200 yen, and the senior price is also 1,200 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「毎月1日は「映画の日」で、どなたでも1,200円です」: Ngày mùng 1, ai cũng 1.200 yên; giá người cao tuổi cũng là 1.200 yên.",
+        "en": "Not quite. Look again at 「毎月1日は「映画の日」で、どなたでも1,200円です」: On the 1st everyone pays 1,200 yen, and the senior price is also 1,200 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Người lớn xem suất chiếu lúc 9 giờ tối ngày thường trả bao nhiêu?",
+        "en": "How much does an adult pay for a 9 p.m. show on a weekday?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.900 yên",
+            "en": "1,900 yen"
+          },
+          {
+            "vi": "1.400 yên",
+            "en": "1,400 yen"
+          },
+          {
+            "vi": "1.200 yên",
+            "en": "1,200 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「レイトショー（午後8時以降）は、一般も1,400円になります」: 9 giờ tối là suất chiếu muộn (sau 8 giờ), người lớn chỉ còn 1.400 yên.",
+        "en": "Correct! The text has 「レイトショー（午後8時以降）は、一般も1,400円になります」: 9 p.m. is a late show (after 8 p.m.), so adults pay 1,400 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「レイトショー（午後8時以降）は、一般も1,400円になります」: 9 giờ tối là suất chiếu muộn (sau 8 giờ), người lớn chỉ còn 1.400 yên.",
+        "en": "Not quite. Look again at 「レイトショー（午後8時以降）は、一般も1,400円になります」: 9 p.m. is a late show (after 8 p.m.), so adults pay 1,400 yen."
+      }
+    }
+  ]
+}

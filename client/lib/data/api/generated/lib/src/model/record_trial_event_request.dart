@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'record_trial_event_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'record_trial_event_request.g.dart';
 )
 class RecordTrialEventRequest {
   /// Returns a new [RecordTrialEventRequest] instance.
-  RecordTrialEventRequest({required this.event});
+  RecordTrialEventRequest({
 
-  @JsonKey(name: r'event', required: true, includeIfNull: false)
+    required  this.event,
+  });
+
+  @JsonKey(
+    
+    name: r'event',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final RecordTrialEventRequestEventEnum event;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is RecordTrialEventRequest && other.event == event;
 
-  @override
-  int get hashCode => event.hashCode;
 
-  factory RecordTrialEventRequest.fromJson(Map<String, dynamic> json) =>
-      _$RecordTrialEventRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is RecordTrialEventRequest &&
+      other.event == event;
+
+    @override
+    int get hashCode =>
+        event.hashCode;
+
+  factory RecordTrialEventRequest.fromJson(Map<String, dynamic> json) => _$RecordTrialEventRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$RecordTrialEventRequestToJson(this);
 
@@ -39,16 +53,19 @@ class RecordTrialEventRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum RecordTrialEventRequestEventEnum {
-  @JsonValue(r'lesson_completed')
-  lessonCompleted(r'lesson_completed');
+@JsonValue(r'lesson_completed')
+lessonCompleted(r'lesson_completed');
 
-  const RecordTrialEventRequestEventEnum(this.value);
+const RecordTrialEventRequestEventEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-school-life",
+  "title": {
+    "vi": "Đọc: Giờ mở cửa thư viện",
+    "en": "Reading: Library opening hours"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 820,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【図書館のあんない】\n月曜日～金曜日　午前9:00～午後8:00\n土曜日　午前9:00～午後5:00\n日曜日としゅくじつ　休み\n本は、一人五さつまで、二週間借りることができます。",
+      "meaning": {
+        "vi": "[Hướng dẫn thư viện] Thứ Hai đến thứ Sáu: 9:00 sáng đến 8:00 tối. Thứ Bảy: 9:00 sáng đến 5:00 chiều. Chủ nhật và ngày lễ: nghỉ. Mỗi người được mượn tối đa 5 cuốn sách trong 2 tuần.",
+        "en": "[Library guide] Monday to Friday: 9:00 a.m. to 8:00 p.m. Saturday: 9:00 a.m. to 5:00 p.m. Closed on Sundays and public holidays. Each person may borrow up to five books for two weeks."
+      },
+      "reading": "としょかんのあんない\nげつようび～きんようび　ごぜん9:00～ごご8:00\nどようび　ごぜん9:00～ごご5:00\nにちようびとしゅくじつ　やすみ\nほんは、ひとりごさつまで、にしゅうかんかりることができます。",
+      "explanation": {
+        "vi": "「～まで」= tối đa/đến mức…; 「～ことができます」= có thể…; 「しゅくじつ」= ngày lễ; 「二週間」= hai tuần.",
+        "en": "「～まで」 = up to…; 「～ことができます」 = can…; 「しゅくじつ」 = public holiday; 「二週間」 = two weeks."
+      },
+      "scopeRef": "r-n4-info-schedule"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Thứ Bảy thư viện mở cửa đến mấy giờ?",
+        "en": "Until what time is the library open on Saturdays?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đến 5 giờ chiều",
+            "en": "Until 5 p.m."
+          },
+          {
+            "vi": "Đến 8 giờ tối",
+            "en": "Until 8 p.m."
+          },
+          {
+            "vi": "Đến 12 giờ trưa",
+            "en": "Until 12 noon"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「土曜日　午前9:00～午後5:00」: Dòng thứ Bảy ghi 9:00 sáng đến 5:00 chiều.",
+        "en": "Correct! The text has 「土曜日　午前9:00～午後5:00」: The Saturday line says 9:00 a.m. to 5:00 p.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「土曜日　午前9:00～午後5:00」: Dòng thứ Bảy ghi 9:00 sáng đến 5:00 chiều.",
+        "en": "Not quite. Look again at 「土曜日　午前9:00～午後5:00」: The Saturday line says 9:00 a.m. to 5:00 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Ngày nào thư viện nghỉ?",
+        "en": "When is the library closed?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Hai",
+            "en": "Mondays"
+          },
+          {
+            "vi": "Thứ Bảy",
+            "en": "Saturdays"
+          },
+          {
+            "vi": "Chủ nhật và ngày lễ",
+            "en": "Sundays and public holidays"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「日曜日としゅくじつ　休み」: 「休み」là ngày nghỉ; thư viện nghỉ Chủ nhật và ngày lễ.",
+        "en": "Correct! The text has 「日曜日としゅくじつ　休み」: 「休み」 means closed; the library is closed on Sundays and public holidays."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「日曜日としゅくじつ　休み」: 「休み」là ngày nghỉ; thư viện nghỉ Chủ nhật và ngày lễ.",
+        "en": "Not quite. Look again at 「日曜日としゅくじつ　休み」: 「休み」 means closed; the library is closed on Sundays and public holidays."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Mỗi người được mượn tối đa bao nhiêu cuốn và trong bao lâu?",
+        "en": "How many books may each person borrow, and for how long?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "3 cuốn trong 1 tuần",
+            "en": "Three books for one week"
+          },
+          {
+            "vi": "5 cuốn trong 2 tuần",
+            "en": "Five books for two weeks"
+          },
+          {
+            "vi": "10 cuốn trong 2 tuần",
+            "en": "Ten books for two weeks"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「一人五さつまで、二週間借りることができます」: 「一人五さつまで」là tối đa 5 cuốn mỗi người, và 二週間 là hai tuần.",
+        "en": "Correct! The text has 「一人五さつまで、二週間借りることができます」: 「一人五さつまで」 is up to five books per person, and 二週間 is two weeks."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「一人五さつまで、二週間借りることができます」: 「一人五さつまで」là tối đa 5 cuốn mỗi người, và 二週間 là hai tuần.",
+        "en": "Not quite. Look again at 「一人五さつまで、二週間借りることができます」: 「一人五さつまで」 is up to five books per person, and 二週間 is two weeks."
+      }
+    }
+  ]
+}

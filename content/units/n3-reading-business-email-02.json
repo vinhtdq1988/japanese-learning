@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-work-life",
+  "title": {
+    "vi": "Đọc: Email báo cáo kinh doanh tuần",
+    "en": "Reading: Weekly sales report email"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：今週の営業報告\n田中課長\nお疲れ様です。営業部の山本です。今週の活動について、ご報告いたします。\n【訪問先】\n・月曜日　A社（新商品の説明）\n・水曜日　B社（見積書の提出）\n・金曜日　C社（契約の相談）\n【結果】\nA社は、来月から商品を試しに使ってくれることになりました。B社からは、見積もりの金額が少し高いと言われたため、来週までに価格を見直します。C社は、まだ決まっていませんが、前向きに考えているようです。\n【来週の予定】\nB社に新しい見積書を送り、C社の担当者と電話でお話しします。\nご不明な点がございましたら、お知らせください。",
+      "meaning": {
+        "vi": "Tiêu đề: Báo cáo kinh doanh tuần này. Gửi trưởng phòng Tanaka. Anh/chị vất vả rồi. Tôi là Yamamoto ở phòng Kinh doanh. Tôi xin báo cáo về hoạt động tuần này. [Nơi đã thăm] Thứ Hai: công ty A (giới thiệu sản phẩm mới). Thứ Tư: công ty B (nộp bảng báo giá). Thứ Sáu: công ty C (bàn về hợp đồng). [Kết quả] Công ty A đã đồng ý dùng thử sản phẩm từ tháng sau. Công ty B nói số tiền trong bảng báo giá hơi cao, nên tôi sẽ xem xét lại giá trước tuần sau. Công ty C vẫn chưa quyết định nhưng có vẻ đang cân nhắc tích cực. [Kế hoạch tuần sau] Tôi sẽ gửi bảng báo giá mới cho công ty B và trao đổi qua điện thoại với người phụ trách của công ty C. Nếu có điểm nào chưa rõ, xin cho tôi biết.",
+        "en": "Subject: This week’s sales report. Dear Manager Tanaka, Thank you for your hard work. This is Yamamoto from the Sales Department. I would like to report on this week’s activities. [Visits] Monday: Company A (explaining the new product). Wednesday: Company B (submitting a quotation). Friday: Company C (discussing a contract). [Results] Company A has agreed to try the product from next month. Company B said the quoted amount was a little high, so I will review the price by next week. Company C has not decided yet but seems to be considering it positively. [Plans for next week] I will send Company B a new quotation and talk by phone with the person in charge at Company C. If anything is unclear, please let me know."
+      },
+      "explanation": {
+        "vi": "「～ことになりました」= (được) quyết định là…; 「～たため」nêu lý do; 「～ようです」= có vẻ…; 「～と言われた」là dạng bị động của 言う. Từ vựng: 「契約」(けいやく) = hợp đồng; 「結果」(けっか) = kết quả; 「金額」(きんがく) = số tiền; 「価格」(かかく) = giá cả; 「担当者」(たんとうしゃ) = người phụ trách.",
+        "en": "「～ことになりました」 = it has been decided that…; 「～たため」 gives a reason; 「～ようです」 = it seems…; 「～と言われた」 is the passive of 言う. Vocabulary: 「契約」(けいやく) = contract; 「結果」(けっか) = result; 「金額」(きんがく) = amount of money; 「価格」(かかく) = price; 「担当者」(たんとうしゃ) = person in charge."
+      },
+      "scopeRef": "r-n3-email-request-report"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Đây là loại email gì?",
+        "en": "What kind of email is this?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Báo cáo hoạt động kinh doanh trong tuần",
+            "en": "A report on the week’s sales activities"
+          },
+          {
+            "vi": "Lời mời họp",
+            "en": "A meeting invitation"
+          },
+          {
+            "vi": "Đơn xin nghỉ phép",
+            "en": "A leave request"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「今週の活動について、ご報告いたします」: 「ご報告いたします」là xin báo cáo; nội dung là hoạt động trong tuần này.",
+        "en": "Correct! The text has 「今週の活動について、ご報告いたします」: 「ご報告いたします」 means I will report; the content is this week’s activities."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「今週の活動について、ご報告いたします」: 「ご報告いたします」là xin báo cáo; nội dung là hoạt động trong tuần này.",
+        "en": "Not quite. Look again at 「今週の活動について、ご報告いたします」: 「ご報告いたします」 means I will report; the content is this week’s activities."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Công ty A đã quyết định điều gì?",
+        "en": "What did Company A decide?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ký hợp đồng ngay",
+            "en": "To sign a contract immediately"
+          },
+          {
+            "vi": "Dùng thử sản phẩm từ tháng sau",
+            "en": "To try the product from next month"
+          },
+          {
+            "vi": "Từ chối sản phẩm",
+            "en": "To decline the product"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来月から商品を試しに使ってくれることになりました」: 「～ことになりました」nghĩa là đã được quyết định; công ty A sẽ dùng thử từ tháng sau.",
+        "en": "Correct! The text has 「来月から商品を試しに使ってくれることになりました」: 「～ことになりました」 means it was decided; Company A will try the product from next month."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来月から商品を試しに使ってくれることになりました」: 「～ことになりました」nghĩa là đã được quyết định; công ty A sẽ dùng thử từ tháng sau.",
+        "en": "Not quite. Look again at 「来月から商品を試しに使ってくれることになりました」: 「～ことになりました」 means it was decided; Company A will try the product from next month."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Công ty B phản hồi điều gì và Yamamoto sẽ làm gì?",
+        "en": "What did Company B say, and what will Yamamoto do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nói giá hơi cao nên sẽ xem xét lại giá trước tuần sau",
+            "en": "Said the price was a bit high, so he will review the price by next week"
+          },
+          {
+            "vi": "Nói giao hàng chậm nên sẽ xin lỗi",
+            "en": "Said delivery was late, so he will apologize"
+          },
+          {
+            "vi": "Nói sản phẩm bị lỗi nên sẽ đổi hàng",
+            "en": "Said the product was defective, so he will replace it"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「見積もりの金額が少し高いと言われたため、来週までに価格を見直します」: 「～ため」nêu lý do: bị nói là hơi đắt nên sẽ xem lại giá trước tuần sau.",
+        "en": "Correct! The text has 「見積もりの金額が少し高いと言われたため、来週までに価格を見直します」: 「～ため」 gives the reason: told it was a little expensive, so the price will be reviewed by next week."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「見積もりの金額が少し高いと言われたため、来週までに価格を見直します」: 「～ため」nêu lý do: bị nói là hơi đắt nên sẽ xem lại giá trước tuần sau.",
+        "en": "Not quite. Look again at 「見積もりの金額が少し高いと言われたため、来週までに価格を見直します」: 「～ため」 gives the reason: told it was a little expensive, so the price will be reviewed by next week."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Kế hoạch tuần sau của Yamamoto là gì?",
+        "en": "What is Yamamoto’s plan for next week?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đến thăm công ty A",
+            "en": "Visit Company A"
+          },
+          {
+            "vi": "Gửi bảng báo giá mới cho B và gọi điện cho người phụ trách của C",
+            "en": "Send Company B a new quotation and phone the person in charge at C"
+          },
+          {
+            "vi": "Ký hợp đồng với C",
+            "en": "Sign a contract with C"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「B社に新しい見積書を送り、C社の担当者と電話でお話しします」: Tuần sau anh ấy gửi bảng báo giá mới cho B và nói chuyện điện thoại với người phụ trách của C.",
+        "en": "Correct! The text has 「B社に新しい見積書を送り、C社の担当者と電話でお話しします」: Next week he will send B a new quotation and phone C’s person in charge."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「B社に新しい見積書を送り、C社の担当者と電話でお話しします」: Tuần sau anh ấy gửi bảng báo giá mới cho B và nói chuyện điện thoại với người phụ trách của C.",
+        "en": "Not quite. Look again at 「B社に新しい見積書を送り、C社の担当者と電話でお話しします」: Next week he will send B a new quotation and phone C’s person in charge."
+      }
+    }
+  ]
+}

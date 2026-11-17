@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-school-life",
+  "title": {
+    "vi": "Đọc: Thư viện đóng cửa để sửa chữa",
+    "en": "Reading: Library closed for repairs"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "学生のみなさんへ。来週の月曜日から金曜日まで、図書館は工事のため休みです。本を借りたい人は、今週の土曜日までに借りてください。かえす本は、図書館の前のはこに入れてください。工事が終わったら、また知らせます。",
+      "meaning": {
+        "vi": "Gửi các bạn sinh viên. Từ thứ Hai đến thứ Sáu tuần sau, thư viện đóng cửa vì sửa chữa. Ai muốn mượn sách xin hãy mượn trước thứ Bảy tuần này. Sách trả xin bỏ vào thùng trước thư viện. Khi sửa xong, chúng tôi sẽ thông báo lại.",
+        "en": "To all students: The library will be closed from Monday to Friday next week because of construction. If you want to borrow books, please do so by this Saturday. Please put books you are returning in the box in front of the library. We will let you know again when the work is finished."
+      },
+      "reading": "がくせいのみなさんへ。らいしゅうのげつようびからきんようびまで、としょかんはこうじのためやすみです。ほんをかりたいひとは、こんしゅうのどようびまでにかりてください。かえすほんは、としょかんのまえのはこにいれてください。こうじがおわったら、またしらせます。",
+      "explanation": {
+        "vi": "「～ため」(工事のため) nêu lý do; 「～までに」chỉ hạn chót (土曜日までに); 「借りたい人」= người muốn mượn.",
+        "en": "「～ため」 (工事のため) gives a reason; 「～までに」 sets a deadline (土曜日までに); 「借りたい人」 = people who want to borrow."
+      },
+      "scopeRef": "r-n4-notice-school"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Thư viện đóng cửa khi nào?",
+        "en": "When is the library closed?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tuần này, từ thứ Hai đến thứ Sáu",
+            "en": "This week, Monday to Friday"
+          },
+          {
+            "vi": "Tuần sau, từ thứ Hai đến thứ Sáu",
+            "en": "Next week, Monday to Friday"
+          },
+          {
+            "vi": "Từ tuần sau cho đến hết tháng",
+            "en": "From next week until the end of the month"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来週の月曜日から金曜日まで」: 来週 là tuần sau, nên thư viện đóng từ thứ Hai đến thứ Sáu của tuần sau.",
+        "en": "Correct! The text has 「来週の月曜日から金曜日まで」: 来週 means next week, so the closure runs Monday to Friday of next week."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来週の月曜日から金曜日まで」: 来週 là tuần sau, nên thư viện đóng từ thứ Hai đến thứ Sáu của tuần sau.",
+        "en": "Not quite. Look again at 「来週の月曜日から金曜日まで」: 来週 means next week, so the closure runs Monday to Friday of next week."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Ai muốn mượn sách thì phải làm gì?",
+        "en": "What should people who want to borrow books do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mượn trước thứ Bảy tuần này",
+            "en": "Borrow them by this Saturday"
+          },
+          {
+            "vi": "Mượn vào thứ Hai tuần sau",
+            "en": "Borrow them next Monday"
+          },
+          {
+            "vi": "Hỏi lại sau khi sửa xong",
+            "en": "Ask again after the repairs"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「今週の土曜日までに借りてください」: 「までに」chỉ hạn chót, nên phải mượn trước thứ Bảy tuần này.",
+        "en": "Correct! The text has 「今週の土曜日までに借りてください」: 「までに」 marks a deadline, so the books must be borrowed by this Saturday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「今週の土曜日までに借りてください」: 「までに」chỉ hạn chót, nên phải mượn trước thứ Bảy tuần này.",
+        "en": "Not quite. Look again at 「今週の土曜日までに借りてください」: 「までに」 marks a deadline, so the books must be borrowed by this Saturday."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Muốn trả sách trong lúc thư viện đóng cửa thì làm thế nào?",
+        "en": "How can you return books while the library is closed?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gửi qua bưu điện",
+            "en": "Send them by post"
+          },
+          {
+            "vi": "Đưa cho thầy cô",
+            "en": "Give them to a teacher"
+          },
+          {
+            "vi": "Bỏ vào thùng trước thư viện",
+            "en": "Put them in the box in front of the library"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「図書館の前のはこに入れてください」: Sách trả được bỏ vào cái thùng đặt trước thư viện.",
+        "en": "Correct! The text has 「図書館の前のはこに入れてください」: Books being returned go into the box in front of the library."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「図書館の前のはこに入れてください」: Sách trả được bỏ vào cái thùng đặt trước thư viện.",
+        "en": "Not quite. Look again at 「図書館の前のはこに入れてください」: Books being returned go into the box in front of the library."
+      }
+    }
+  ]
+}

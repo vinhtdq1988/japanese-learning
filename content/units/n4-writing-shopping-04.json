@@ -1,0 +1,203 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-shopping",
+  "title": {
+    "vi": "Viết: Mua sắm (4)",
+    "en": "Writing: Shopping (4)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "売り場",
+      "reading": "うりば",
+      "meaning": {
+        "vi": "Quầy bán; khu bán hàng",
+        "en": "Sales floor; counter"
+      }
+    },
+    {
+      "japanese": "食料品",
+      "reading": "しょくりょうひん",
+      "meaning": {
+        "vi": "Thực phẩm",
+        "en": "Groceries; food products"
+      }
+    },
+    {
+      "japanese": "着物",
+      "reading": "きもの",
+      "meaning": {
+        "vi": "Kimono; trang phục truyền thống Nhật",
+        "en": "Kimono"
+      }
+    },
+    {
+      "japanese": "度",
+      "reading": "ど",
+      "meaning": {
+        "vi": "Lần; độ",
+        "en": "Times; degrees"
+      }
+    },
+    {
+      "japanese": "有料",
+      "reading": "ゆうりょう",
+      "meaning": {
+        "vi": "Mất phí; có tính phí",
+        "en": "Pay (not free); charged"
+      }
+    },
+    {
+      "japanese": "夕食",
+      "reading": "ゆうしょく",
+      "meaning": {
+        "vi": "Bữa tối",
+        "en": "Dinner; evening meal"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Quầy bán; khu bán hàng”",
+        "en": "Type in Japanese: “Sales floor; counter”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "売り場",
+          "うりば"
+        ],
+        "hint": "よみ: うりば"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Quầy bán; khu bán hàng” viết là 売り場 (đọc là うりば).",
+        "en": "Correct! “Sales floor; counter” is written 売り場 (read as うりば)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Quầy bán; khu bán hàng” viết là 売り場 (đọc là うりば); hãy so lại từng ký tự.",
+        "en": "Not quite. “Sales floor; counter” is written 売り場 (read as うりば); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Thực phẩm”",
+        "en": "Type in Japanese: “Groceries; food products”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "食料品",
+          "しょくりょうひん"
+        ],
+        "hint": "よみ: しょくりょうひん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Thực phẩm” viết là 食料品 (đọc là しょくりょうひん).",
+        "en": "Correct! “Groceries; food products” is written 食料品 (read as しょくりょうひん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Thực phẩm” viết là 食料品 (đọc là しょくりょうひん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Groceries; food products” is written 食料品 (read as しょくりょうひん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Kimono; trang phục truyền thống Nhật”",
+        "en": "Type in Japanese: “Kimono”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "着物",
+          "きもの"
+        ],
+        "hint": "よみ: きもの"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Kimono; trang phục truyền thống Nhật” viết là 着物 (đọc là きもの).",
+        "en": "Correct! “Kimono” is written 着物 (read as きもの)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Kimono; trang phục truyền thống Nhật” viết là 着物 (đọc là きもの); hãy so lại từng ký tự.",
+        "en": "Not quite. “Kimono” is written 着物 (read as きもの); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Lần; độ”",
+        "en": "Type in Japanese: “Times; degrees”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "度",
+          "ど"
+        ],
+        "hint": "よみ: ど"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Lần; độ” viết là 度 (đọc là ど).",
+        "en": "Correct! “Times; degrees” is written 度 (read as ど)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Lần; độ” viết là 度 (đọc là ど); hãy so lại từng ký tự.",
+        "en": "Not quite. “Times; degrees” is written 度 (read as ど); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Mất phí; có tính phí”",
+        "en": "Type in Japanese: “Pay (not free); charged”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "有料",
+          "ゆうりょう"
+        ],
+        "hint": "よみ: ゆうりょう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Mất phí; có tính phí” viết là 有料 (đọc là ゆうりょう).",
+        "en": "Correct! “Pay (not free); charged” is written 有料 (read as ゆうりょう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Mất phí; có tính phí” viết là 有料 (đọc là ゆうりょう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Pay (not free); charged” is written 有料 (read as ゆうりょう); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bữa tối”",
+        "en": "Type in Japanese: “Dinner; evening meal”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "夕食",
+          "ゆうしょく"
+        ],
+        "hint": "よみ: ゆうしょく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bữa tối” viết là 夕食 (đọc là ゆうしょく).",
+        "en": "Correct! “Dinner; evening meal” is written 夕食 (read as ゆうしょく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bữa tối” viết là 夕食 (đọc là ゆうしょく); hãy so lại từng ký tự.",
+        "en": "Not quite. “Dinner; evening meal” is written 夕食 (read as ゆうしょく); compare it character by character."
+      }
+    }
+  ]
+}

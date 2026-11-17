@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-travel",
+  "title": {
+    "vi": "Đọc: Bảng giá thuê xe đạp",
+    "en": "Reading: Bicycle rental price list"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【レンタサイクルの料金】\n・2時間まで　500円\n・4時間まで　800円\n・1日（朝9時～夕方6時）　1,200円\n・2日目からは、1日800円\n・雨の日は、料金が200円やすくなります\n・学生は、がくせいしょうを見せると、料金から100円ひきます\n借りるときは、名前と電話ばんごうを書いてください。\nかえすときは、夕方6時までに、この店にもどってください。おくれると、1時間ごとに300円かかります。",
+      "meaning": {
+        "vi": "[Giá thuê xe đạp] Đến 2 giờ: 500 yên. Đến 4 giờ: 800 yên. 1 ngày (9 giờ sáng đến 6 giờ chiều): 1.200 yên. Từ ngày thứ hai trở đi: 800 yên mỗi ngày. Ngày mưa, giá rẻ hơn 200 yên. Sinh viên đưa thẻ sinh viên sẽ được giảm 100 yên. Khi thuê, xin ghi tên và số điện thoại. Khi trả xe, xin quay lại cửa hàng này trước 6 giờ chiều. Nếu trễ, mỗi giờ sẽ tính thêm 300 yên.",
+        "en": "[Bicycle rental prices] Up to 2 hours: 500 yen. Up to 4 hours: 800 yen. One day (9 a.m. to 6 p.m.): 1,200 yen. From the second day: 800 yen per day. On rainy days the price is 200 yen cheaper. Students get 100 yen off the price when they show a student ID. When renting, please write your name and phone number. When returning, please come back to this shop by 6 p.m. If you are late, 300 yen is charged for every hour."
+      },
+      "reading": "レンタサイクルのりょうきん\n・にじかんまで　ごひゃくえん\n・よじかんまで　はっぴゃくえん\n・いちにち（あさくじ～ゆうがたろくじ）　せんにひゃくえん\n・ふつかめからは、いちにちはっぴゃくえん\n・あめのひは、りょうきんがにひゃくえんやすくなります\n・がくせいは、がくせいしょうをみせると、りょうきんからひゃくえんひきます\nかりるときは、なまえとでんわばんごうをかいてください。\nかえすときは、ゆうがたろくじまでに、このみせにもどってください。おくれると、いちじかんごとにさんびゃくえんかかります。",
+      "explanation": {
+        "vi": "「～まで」= tối đa…; 「～ごとに」= mỗi… (1時間ごとに); 「やすくなります」= trở nên rẻ hơn; 「ひきます」= trừ đi (giảm giá); 「がくせいしょう」= thẻ sinh viên.",
+        "en": "「～まで」 = up to…; 「～ごとに」 = every… (1時間ごとに); 「やすくなります」 = becomes cheaper; 「ひきます」 = deduct (a discount); 「がくせいしょう」 = student ID."
+      },
+      "scopeRef": "r-n4-info-price-ad"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Ngày nắng, người không phải sinh viên thuê 3 tiếng thì phải trả bao nhiêu?",
+        "en": "On a sunny day, how much does a non-student pay to rent a bike for 3 hours?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "500 yên",
+            "en": "500 yen"
+          },
+          {
+            "vi": "800 yên",
+            "en": "800 yen"
+          },
+          {
+            "vi": "1.200 yên",
+            "en": "1,200 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「4時間まで　800円」: 3 tiếng nằm trong mức “đến 4 giờ”, nên giá là 800 yên.",
+        "en": "Correct! The text has 「4時間まで　800円」: Three hours falls under “up to 4 hours,” so the price is 800 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「4時間まで　800円」: 3 tiếng nằm trong mức “đến 4 giờ”, nên giá là 800 yên.",
+        "en": "Not quite. Look again at 「4時間まで　800円」: Three hours falls under “up to 4 hours,” so the price is 800 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Sinh viên thuê 1 ngày vào ngày mưa thì phải trả bao nhiêu?",
+        "en": "How much does a student pay for one day on a rainy day?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.000 yên",
+            "en": "1,000 yen"
+          },
+          {
+            "vi": "900 yên",
+            "en": "900 yen"
+          },
+          {
+            "vi": "700 yên",
+            "en": "700 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「雨の日は、料金が200円やすくなります」: 1.200 − 200 (ngày mưa) − 100 (sinh viên) = 900 yên.",
+        "en": "Correct! The text has 「雨の日は、料金が200円やすくなります」: 1,200 − 200 (rainy day) − 100 (student) = 900 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「雨の日は、料金が200円やすくなります」: 1.200 − 200 (ngày mưa) − 100 (sinh viên) = 900 yên.",
+        "en": "Not quite. Look again at 「雨の日は、料金が200円やすくなります」: 1,200 − 200 (rainy day) − 100 (student) = 900 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Thuê 2 ngày liên tiếp vào những ngày nắng (không phải sinh viên) thì tổng bao nhiêu?",
+        "en": "How much is it to rent for two days in a row on sunny days (non-student)?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.200 yên",
+            "en": "1,200 yen"
+          },
+          {
+            "vi": "2.000 yên",
+            "en": "2,000 yen"
+          },
+          {
+            "vi": "2.400 yên",
+            "en": "2,400 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「2日目からは、1日800円」: Ngày đầu 1.200 yên, từ ngày thứ hai 800 yên: tổng 2.000 yên.",
+        "en": "Correct! The text has 「2日目からは、1日800円」: The first day is 1,200 yen and the second day 800 yen: 2,000 yen in total."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「2日目からは、1日800円」: Ngày đầu 1.200 yên, từ ngày thứ hai 800 yên: tổng 2.000 yên.",
+        "en": "Not quite. Look again at 「2日目からは、1日800円」: The first day is 1,200 yen and the second day 800 yen: 2,000 yen in total."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Nếu trả xe lúc 7 giờ tối thì phải trả thêm bao nhiêu?",
+        "en": "How much extra is charged if the bike is returned at 7 p.m.?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Không mất thêm",
+            "en": "Nothing extra"
+          },
+          {
+            "vi": "300 yên",
+            "en": "300 yen"
+          },
+          {
+            "vi": "600 yên",
+            "en": "600 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「おくれると、1時間ごとに300円かかります」: 6 giờ chiều là hạn trả; trễ 1 giờ thì tính thêm 300 yên.",
+        "en": "Correct! The text has 「おくれると、1時間ごとに300円かかります」: The deadline is 6 p.m.; being one hour late costs 300 yen extra."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「おくれると、1時間ごとに300円かかります」: 6 giờ chiều là hạn trả; trễ 1 giờ thì tính thêm 300 yên.",
+        "en": "Not quite. Look again at 「おくれると、1時間ごとに300円かかります」: The deadline is 6 p.m.; being one hour late costs 300 yen extra."
+      }
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_dashboard.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -21,52 +22,97 @@ part 'class_dashboard.g.dart';
 class ClassDashboard {
   /// Returns a new [ClassDashboard] instance.
   ClassDashboard({
-    required this.classId,
 
-    required this.learners,
+    required  this.classId,
 
-    required this.summary,
+    required  this.learners,
 
-    required this.contentNotices,
+    required  this.summary,
 
-    this.teacherlessWarning,
+    required  this.contentNotices,
+
+     this.teacherlessWarning,
   });
 
-  @JsonKey(name: r'classId', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'classId',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String classId;
 
-  @JsonKey(name: r'learners', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'learners',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassLearnerRow> learners;
 
-  @JsonKey(name: r'summary', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'summary',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassDashboardSummary summary;
 
-  @JsonKey(name: r'contentNotices', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'contentNotices',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ContentNotice> contentNotices;
 
-  @JsonKey(name: r'teacherlessWarning', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teacherlessWarning',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? teacherlessWarning;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassDashboard &&
-          other.classId == classId &&
-          other.learners == learners &&
-          other.summary == summary &&
-          other.contentNotices == contentNotices &&
-          other.teacherlessWarning == teacherlessWarning;
 
-  @override
-  int get hashCode =>
-      classId.hashCode +
-      learners.hashCode +
-      summary.hashCode +
-      contentNotices.hashCode +
-      teacherlessWarning.hashCode;
 
-  factory ClassDashboard.fromJson(Map<String, dynamic> json) =>
-      _$ClassDashboardFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassDashboard &&
+      other.classId == classId &&
+      other.learners == learners &&
+      other.summary == summary &&
+      other.contentNotices == contentNotices &&
+      other.teacherlessWarning == teacherlessWarning;
+
+    @override
+    int get hashCode =>
+        classId.hashCode +
+        learners.hashCode +
+        summary.hashCode +
+        contentNotices.hashCode +
+        teacherlessWarning.hashCode;
+
+  factory ClassDashboard.fromJson(Map<String, dynamic> json) => _$ClassDashboardFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassDashboardToJson(this);
 
@@ -74,4 +120,6 @@ class ClassDashboard {
   String toString() {
     return toJson().toString();
   }
+
 }
+

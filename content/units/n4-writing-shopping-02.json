@@ -1,0 +1,200 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-shopping",
+  "title": {
+    "vi": "Viết: Mua sắm (2)",
+    "en": "Writing: Shopping (2)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 10,
+  "sequence": 1010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "食事",
+      "reading": "しょくじ",
+      "meaning": {
+        "vi": "Bữa ăn; việc ăn uống",
+        "en": "Meal; eating"
+      }
+    },
+    {
+      "japanese": "かぶる",
+      "reading": "かぶる",
+      "meaning": {
+        "vi": "Đội (mũ); trùm lên",
+        "en": "To put on (a hat); to wear on the head"
+      }
+    },
+    {
+      "japanese": "グラム",
+      "reading": "グラム",
+      "meaning": {
+        "vi": "Gam",
+        "en": "Gram"
+      }
+    },
+    {
+      "japanese": "品物",
+      "reading": "しなもの",
+      "meaning": {
+        "vi": "Món hàng; hàng hóa",
+        "en": "Goods; article"
+      }
+    },
+    {
+      "japanese": "食堂",
+      "reading": "しょくどう",
+      "meaning": {
+        "vi": "Nhà ăn; quán cơm",
+        "en": "Cafeteria; dining hall"
+      }
+    },
+    {
+      "japanese": "ネクタイ",
+      "reading": "ネクタイ",
+      "meaning": {
+        "vi": "Cà vạt",
+        "en": "Necktie"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bữa ăn; việc ăn uống”",
+        "en": "Type in Japanese: “Meal; eating”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "食事",
+          "しょくじ"
+        ],
+        "hint": "よみ: しょくじ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bữa ăn; việc ăn uống” viết là 食事 (đọc là しょくじ).",
+        "en": "Correct! “Meal; eating” is written 食事 (read as しょくじ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bữa ăn; việc ăn uống” viết là 食事 (đọc là しょくじ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Meal; eating” is written 食事 (read as しょくじ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Đội (mũ); trùm lên”",
+        "en": "Type in Japanese: “To put on (a hat); to wear on the head”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "かぶる"
+        ],
+        "hint": "Viết bằng hiragana (3 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Đội (mũ); trùm lên” viết là かぶる.",
+        "en": "Correct! “To put on (a hat); to wear on the head” is written かぶる."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Đội (mũ); trùm lên” viết là かぶる; hãy so lại từng ký tự.",
+        "en": "Not quite. “To put on (a hat); to wear on the head” is written かぶる; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Gam”",
+        "en": "Type in Japanese: “Gram”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "グラム"
+        ],
+        "hint": "Viết bằng katakana (3 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Gam” viết là グラム.",
+        "en": "Correct! “Gram” is written グラム."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Gam” viết là グラム; hãy so lại từng ký tự.",
+        "en": "Not quite. “Gram” is written グラム; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Món hàng; hàng hóa”",
+        "en": "Type in Japanese: “Goods; article”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "品物",
+          "しなもの"
+        ],
+        "hint": "よみ: しなもの"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Món hàng; hàng hóa” viết là 品物 (đọc là しなもの).",
+        "en": "Correct! “Goods; article” is written 品物 (read as しなもの)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Món hàng; hàng hóa” viết là 品物 (đọc là しなもの); hãy so lại từng ký tự.",
+        "en": "Not quite. “Goods; article” is written 品物 (read as しなもの); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nhà ăn; quán cơm”",
+        "en": "Type in Japanese: “Cafeteria; dining hall”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "食堂",
+          "しょくどう"
+        ],
+        "hint": "よみ: しょくどう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nhà ăn; quán cơm” viết là 食堂 (đọc là しょくどう).",
+        "en": "Correct! “Cafeteria; dining hall” is written 食堂 (read as しょくどう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Nhà ăn; quán cơm” viết là 食堂 (đọc là しょくどう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Cafeteria; dining hall” is written 食堂 (read as しょくどう); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cà vạt”",
+        "en": "Type in Japanese: “Necktie”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "ネクタイ"
+        ],
+        "hint": "Viết bằng katakana (4 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cà vạt” viết là ネクタイ.",
+        "en": "Correct! “Necktie” is written ネクタイ."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Cà vạt” viết là ネクタイ; hãy so lại từng ký tự.",
+        "en": "Not quite. “Necktie” is written ネクタイ; compare it character by character."
+      }
+    }
+  ]
+}

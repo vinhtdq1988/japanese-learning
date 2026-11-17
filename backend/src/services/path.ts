@@ -23,7 +23,8 @@ import {
   openPausePeriod,
 } from '../db/repositories/progress.js';
 import { localize } from '../domain/i18n.js';
-import { AppError, type Language, type Level } from '../domain/types.js';
+import type { PathQuery } from '../domain/profile-validation.js';
+import { AppError, type GoalType, type Language, type Level } from '../domain/types.js';
 import { localToday } from '../engine/clock.js';
 import type { CompetencyLevel } from '../engine/competency.js';
 import {
@@ -39,6 +40,8 @@ import {
   type PathProfileInput,
   type RankedUnit,
   type ScopeNotice,
+  type ScopeNoticeCode,
+  scopeNotices,
 } from '../engine/path.js';
 import { assertNotClassManaged } from './class-lock.js';
 import { loadCompetency } from './competency.js';
@@ -65,6 +68,8 @@ export interface PathSummaryDto {
   startLevel: Level;
   reason: PathReason;
   scopeNotice: ScopeNotice | null;
+  /** Thông báo phạm vi suy ra lúc đọc (spec 008, D12.2); không lưu trong lộ trình. */
+  notices: ScopeNoticeCode[];
   message: string | null;
 }
 
@@ -82,6 +87,8 @@ export interface PathItemDto {
 export interface PathDetailDto extends PathSummaryDto {
   /** Nguồn của lộ trình: `class` khi người học thuộc lớp (spec 004). */
   source: 'personal' | 'class';
+  /** Số đơn vị khớp bộ lọc, TRƯỚC `limit`/`offset` (không bộ lọc = số phần tử của toàn bộ lộ trình). */
+  itemsTotal: number;
   items: PathItemDto[];
 }
 
@@ -157,6 +164,7 @@ export async function rankForUser(
 function summarize(
   path: LearningPathRow,
   params: PathParams,
+  goalType: GoalType | null,
   ranked: readonly RankedUnit<CatalogUnit>[],
 ): PathSummaryDto {
   return {
@@ -167,6 +175,7 @@ function summarize(
     startLevel: params.startLevel,
     reason: path.reason,
     scopeNotice: params.scopeNotice,
+    notices: scopeNotices(params.scopeNotice, goalType),
     message: null,
   };
 }
@@ -180,17 +189,22 @@ export async function summarizePath(
 ): Promise<PathSummaryDto> {
   const params = paramsOfPath(path);
   const ranked = await rankForUser(deps, userId, profile, params, { includeMastered: true });
-  return summarize(path, params, ranked);
+  return summarize(path, params, profile.goalType, ranked);
 }
 
 /**
  * `GET /path`: lộ trình hiện tại kèm thứ tự đơn vị tính động tại thời điểm gọi. Học viên thuộc lớp nhận
  * LỘ TRÌNH LỚP (`source: 'class'`, `id` là id lớp vì lớp không có dòng `learning_paths`); người học cá nhân nhận
  * đúng như cũ.
+ *
+ * Bộ lọc tùy chọn (spec 008, OpenAPI 1.15.0) để client dựng danh sách lười khi thư viện lớn: lọc theo `kind`/`level`/
+ * `status` TRƯỚC rồi mới cắt `limit`/`offset`, giữ thứ tự xếp hạng; `itemsTotal` là số khớp bộ lọc; `totalUnits`/
+ * `completedUnits` luôn là số của TOÀN BỘ lộ trình. Không tham số = toàn bộ đơn vị như cũ.
  */
 export async function getPathDetail(
   deps: Pick<ServiceDeps, 'config' | 'db' | 'clock' | 'contentCache'>,
   userId: string,
+  query: Partial<PathQuery> = {},
 ): Promise<PathDetailDto> {
   const ctx = await resolveLearningContext(deps, userId);
   if (!ctx) throw notOnboarded();
@@ -202,7 +216,7 @@ export async function getPathDetail(
   const language: Language = ctx.profile.language;
   const summary: PathSummaryDto =
     ctx.source === 'personal'
-      ? summarize(ctx.path, ctx.params, ranked)
+      ? summarize(ctx.path, ctx.params, ctx.profile.goalType, ranked)
       : {
           id: ctx.classInfo.id,
           totalUnits: ranked.length,
@@ -211,12 +225,22 @@ export async function getPathDetail(
           startLevel: ctx.params.startLevel,
           reason: 'onboarding',
           scopeNotice: ctx.params.scopeNotice,
+          notices: scopeNotices(ctx.params.scopeNotice, ctx.profile.goalType),
           message: null,
         };
+  const matching = ranked.filter(
+    (r) =>
+      (query.kind === undefined || r.unit.kind === query.kind) &&
+      (query.level === undefined || r.unit.level === query.level) &&
+      (query.status === undefined || r.status === query.status),
+  );
+  const offset = query.offset ?? 0;
+  const page = matching.slice(offset, query.limit === undefined ? undefined : offset + query.limit);
   return {
     ...summary,
     source: ctx.source,
-    items: ranked.map((r) => ({
+    itemsTotal: matching.length,
+    items: page.map((r) => ({
       unitId: r.unit.id,
       title: localize(r.unit.title, language),
       kind: r.unit.kind,

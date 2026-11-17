@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-it-internet",
+  "title": {
+    "vi": "Thống nhất, thống kê và mật mã",
+    "en": "Control, statistics and codes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1270,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "支配",
+      "reading": "しはい",
+      "meaning": {
+        "vi": "Chi phối; thống trị",
+        "en": "Control; domination"
+      },
+      "examples": [
+        {
+          "ja": "その国は、長い間、他の国に支配されていました。",
+          "reading": "そのくには、ながいあいだ、ほかのくににしはいされていました。",
+          "translation": {
+            "vi": "Đất nước đó đã bị nước khác thống trị trong thời gian dài.",
+            "en": "That country was ruled by another country for a long time."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "統一",
+      "reading": "とういつ",
+      "meaning": {
+        "vi": "Thống nhất",
+        "en": "Unification; standardization"
+      },
+      "examples": [
+        {
+          "ja": "資料の書き方を、会社全体で統一しました。",
+          "reading": "しりょうのかきかたを、かいしゃぜんたいでとういつしました。",
+          "translation": {
+            "vi": "Cách viết tài liệu đã được thống nhất trong toàn công ty.",
+            "en": "The way of writing documents was standardized across the whole company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "統計",
+      "reading": "とうけい",
+      "meaning": {
+        "vi": "Thống kê",
+        "en": "Statistics"
+      },
+      "examples": [
+        {
+          "ja": "国の統計によると、人口は少しずつ減っています。",
+          "reading": "くにのとうけいによると、じんこうはすこしずつへっています。",
+          "translation": {
+            "vi": "Theo thống kê của nhà nước, dân số đang giảm dần.",
+            "en": "According to national statistics, the population is slowly decreasing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "暗号",
+      "reading": "あんごう",
+      "meaning": {
+        "vi": "Mật mã; mã hóa",
+        "en": "Code; cipher"
+      },
+      "examples": [
+        {
+          "ja": "大切なデータは、暗号をかけて保存します。",
+          "reading": "たいせつなデータは、あんごうをかけてほぞんします。",
+          "translation": {
+            "vi": "Dữ liệu quan trọng được mã hóa trước khi lưu.",
+            "en": "Important data is encrypted before it is stored."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "自動的",
+      "reading": "じどうてき",
+      "meaning": {
+        "vi": "Một cách tự động",
+        "en": "Automatic"
+      },
+      "examples": [
+        {
+          "ja": "ファイルは、自動的に保存される設定になっています。",
+          "reading": "ファイルは、じどうてきにほぞんされるせっていになっています。",
+          "translation": {
+            "vi": "Tệp được cài đặt để lưu một cách tự động.",
+            "en": "The files are set to be saved automatically."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "初期",
+      "reading": "しょき",
+      "meaning": {
+        "vi": "Thời kỳ đầu; ban đầu",
+        "en": "Initial stage; default"
+      },
+      "examples": [
+        {
+          "ja": "初期の設定のままでも、問題なく使えます。",
+          "reading": "しょきのせっていのままでも、もんだいなくつかえます。",
+          "translation": {
+            "vi": "Cứ để nguyên thiết lập ban đầu thì vẫn dùng được bình thường.",
+            "en": "It works fine even with the initial settings left as they are."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "支配",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: その国は、長い間、他の国に（　）されていました。 — Nghĩa của câu: “Đất nước đó đã bị nước khác thống trị trong thời gian dài.”",
+        "en": "Choose the word that fits the blank: その国は、長い間、他の国に（　）されていました。 — Meaning of the sentence: “That country was ruled by another country for a long time.”"
+      },
+      "payload": {
+        "choices": [
+          "暗号",
+          "支配",
+          "統計",
+          "自動的"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「支配」(Chi phối; thống trị) hợp nghĩa câu này: “Đất nước đó đã bị nước khác thống trị trong thời gian dài.”",
+        "en": "Correct! 「支配」(Control; domination) fits this sentence: “That country was ruled by another country for a long time.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đất nước đó đã bị nước khác thống trị trong thời gian dài.”, nên cần 「支配」(Chi phối; thống trị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “That country was ruled by another country for a long time.”, so it needs 「支配」(Control; domination); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "統一",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 資料の書き方を、会社全体で（　）しました。 — Nghĩa của câu: “Cách viết tài liệu đã được thống nhất trong toàn công ty.”",
+        "en": "Choose the word that fits the blank: 資料の書き方を、会社全体で（　）しました。 — Meaning of the sentence: “The way of writing documents was standardized across the whole company.”"
+      },
+      "payload": {
+        "choices": [
+          "支配",
+          "暗号",
+          "統一",
+          "初期"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「統一」(Thống nhất) hợp nghĩa câu này: “Cách viết tài liệu đã được thống nhất trong toàn công ty.”",
+        "en": "Correct! 「統一」(Unification; standardization) fits this sentence: “The way of writing documents was standardized across the whole company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cách viết tài liệu đã được thống nhất trong toàn công ty.”, nên cần 「統一」(Thống nhất); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The way of writing documents was standardized across the whole company.”, so it needs 「統一」(Unification; standardization); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "統計",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 国の（　）によると、人口は少しずつ減っています。 — Nghĩa của câu: “Theo thống kê của nhà nước, dân số đang giảm dần.”",
+        "en": "Choose the word that fits the blank: 国の（　）によると、人口は少しずつ減っています。 — Meaning of the sentence: “According to national statistics, the population is slowly decreasing.”"
+      },
+      "payload": {
+        "choices": [
+          "初期",
+          "暗号",
+          "支配",
+          "統計"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「統計」(Thống kê) hợp nghĩa câu này: “Theo thống kê của nhà nước, dân số đang giảm dần.”",
+        "en": "Correct! 「統計」(Statistics) fits this sentence: “According to national statistics, the population is slowly decreasing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Theo thống kê của nhà nước, dân số đang giảm dần.”, nên cần 「統計」(Thống kê); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “According to national statistics, the population is slowly decreasing.”, so it needs 「統計」(Statistics); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "暗号",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大切なデータは、（　）をかけて保存します。 — Nghĩa của câu: “Dữ liệu quan trọng được mã hóa trước khi lưu.”",
+        "en": "Choose the word that fits the blank: 大切なデータは、（　）をかけて保存します。 — Meaning of the sentence: “Important data is encrypted before it is stored.”"
+      },
+      "payload": {
+        "choices": [
+          "暗号",
+          "自動的",
+          "初期",
+          "統計"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「暗号」(Mật mã; mã hóa) hợp nghĩa câu này: “Dữ liệu quan trọng được mã hóa trước khi lưu.”",
+        "en": "Correct! 「暗号」(Code; cipher) fits this sentence: “Important data is encrypted before it is stored.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dữ liệu quan trọng được mã hóa trước khi lưu.”, nên cần 「暗号」(Mật mã; mã hóa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Important data is encrypted before it is stored.”, so it needs 「暗号」(Code; cipher); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "自動的",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ファイルは、（　）に保存される設定になっています。 — Nghĩa của câu: “Tệp được cài đặt để lưu một cách tự động.”",
+        "en": "Choose the word that fits the blank: ファイルは、（　）に保存される設定になっています。 — Meaning of the sentence: “The files are set to be saved automatically.”"
+      },
+      "payload": {
+        "choices": [
+          "支配",
+          "自動的",
+          "統一",
+          "統計"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自動的」(Một cách tự động) hợp nghĩa câu này: “Tệp được cài đặt để lưu một cách tự động.”",
+        "en": "Correct! 「自動的」(Automatic) fits this sentence: “The files are set to be saved automatically.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tệp được cài đặt để lưu một cách tự động.”, nên cần 「自動的」(Một cách tự động); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The files are set to be saved automatically.”, so it needs 「自動的」(Automatic); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "初期",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の設定のままでも、問題なく使えます。 — Nghĩa của câu: “Cứ để nguyên thiết lập ban đầu thì vẫn dùng được bình thường.”",
+        "en": "Choose the word that fits the blank: （　）の設定のままでも、問題なく使えます。 — Meaning of the sentence: “It works fine even with the initial settings left as they are.”"
+      },
+      "payload": {
+        "choices": [
+          "暗号",
+          "統一",
+          "初期",
+          "統計"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「初期」(Thời kỳ đầu; ban đầu) hợp nghĩa câu này: “Cứ để nguyên thiết lập ban đầu thì vẫn dùng được bình thường.”",
+        "en": "Correct! 「初期」(Initial stage; default) fits this sentence: “It works fine even with the initial settings left as they are.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cứ để nguyên thiết lập ban đầu thì vẫn dùng được bình thường.”, nên cần 「初期」(Thời kỳ đầu; ban đầu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It works fine even with the initial settings left as they are.”, so it needs 「初期」(Initial stage; default); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "支配",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: その国は、長い間、他の国に「支配」されていました。",
+        "en": "Choose the correct reading of the word in 「」: その国は、長い間、他の国に「支配」されていました。"
+      },
+      "payload": {
+        "choices": [
+          "しょき",
+          "とういつ",
+          "しはい",
+          "あんごう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「支配」 đọc là 「しはい」, nghĩa là Chi phối; thống trị.",
+        "en": "Correct! 「支配」 is read 「しはい」 and means Control; domination."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「支配」 đọc là 「しはい」 (Chi phối; thống trị); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「支配」 is read 「しはい」 (Control; domination); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "暗号",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 大切なデータは、「暗号」をかけて保存します。",
+        "en": "Choose the correct reading of the word in 「」: 大切なデータは、「暗号」をかけて保存します。"
+      },
+      "payload": {
+        "choices": [
+          "とうけい",
+          "じどうてき",
+          "しはい",
+          "あんごう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「暗号」 đọc là 「あんごう」, nghĩa là Mật mã; mã hóa.",
+        "en": "Correct! 「暗号」 is read 「あんごう」 and means Code; cipher."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「暗号」 đọc là 「あんごう」 (Mật mã; mã hóa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「暗号」 is read 「あんごう」 (Code; cipher); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "初期",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「しょき」の設定のままでも、問題なく使えます。",
+        "en": "Choose the correct way to write the word in 「」: 「しょき」の設定のままでも、問題なく使えます。"
+      },
+      "payload": {
+        "choices": [
+          "統計",
+          "統一",
+          "暗号",
+          "初期"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しょき」 viết là 「初期」, nghĩa là Thời kỳ đầu; ban đầu.",
+        "en": "Correct! 「しょき」 is written 「初期」 and means Initial stage; default."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しょき」 viết là 「初期」 (Thời kỳ đầu; ban đầu); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しょき」 is written 「初期」 (Initial stage; default); the other words are read differently."
+      }
+    }
+  ]
+}

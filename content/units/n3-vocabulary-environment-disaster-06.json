@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-environment-disaster",
+  "title": {
+    "vi": "Trồng cây xanh, nước thải và giáo dục bắt buộc",
+    "en": "Greening, wastewater and compulsory education"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1570,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "緑化",
+      "reading": "りょくか",
+      "meaning": {
+        "vi": "Phủ xanh; trồng cây xanh",
+        "en": "Greening; planting greenery"
+      },
+      "examples": [
+        {
+          "ja": "町では、ビルの屋上の緑化を進めています。",
+          "reading": "まちでは、ビルのおくじょうのりょくかをすすめています。",
+          "translation": {
+            "vi": "Thành phố đang đẩy mạnh việc phủ xanh sân thượng các tòa nhà.",
+            "en": "The city is promoting greening of rooftops."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "汚水",
+      "reading": "おすい",
+      "meaning": {
+        "vi": "Nước thải; nước bẩn",
+        "en": "Sewage; dirty water"
+      },
+      "examples": [
+        {
+          "ja": "工場からの汚水が、川に流れ込んでいました。",
+          "reading": "こうじょうからのおすいが、かわにながれこんでいました。",
+          "translation": {
+            "vi": "Nước thải từ nhà máy đã chảy vào sông.",
+            "en": "Dirty water from the factory was flowing into the river."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "排気",
+      "reading": "はいき",
+      "meaning": {
+        "vi": "Khí thải; xả khí",
+        "en": "Exhaust"
+      },
+      "examples": [
+        {
+          "ja": "車の排気で、道の空気が汚れています。",
+          "reading": "くるまのはいきで、みちのくうきがよごれています。",
+          "translation": {
+            "vi": "Không khí trên đường bị ô nhiễm vì khí thải của xe.",
+            "en": "The air along the road is polluted by car exhaust."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "偏差値",
+      "reading": "へんさち",
+      "meaning": {
+        "vi": "Điểm chuẩn hóa (độ lệch chuẩn của điểm thi)",
+        "en": "Standardized score"
+      },
+      "examples": [
+        {
+          "ja": "模擬試験の偏差値が、少し上がりました。",
+          "reading": "もぎしけんのへんさちが、すこしあがりました。",
+          "translation": {
+            "vi": "Điểm chuẩn hóa của kỳ thi thử đã tăng lên một chút.",
+            "en": "My standardized score on the mock exam rose a little."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "義務教育",
+      "reading": "ぎむきょういく",
+      "meaning": {
+        "vi": "Giáo dục bắt buộc",
+        "en": "Compulsory education"
+      },
+      "examples": [
+        {
+          "ja": "日本では、中学校までが義務教育です。",
+          "reading": "にほんでは、ちゅうがっこうまでがぎむきょういくです。",
+          "translation": {
+            "vi": "Ở Nhật, giáo dục bắt buộc kéo dài đến hết cấp hai.",
+            "en": "In Japan, compulsory education lasts through junior high school."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "推測",
+      "reading": "すいそく",
+      "meaning": {
+        "vi": "Suy đoán",
+        "en": "Guess; conjecture"
+      },
+      "examples": [
+        {
+          "ja": "これは事実ではなく、私の推測です。",
+          "reading": "これはじじつではなく、わたしのすいそくです。",
+          "translation": {
+            "vi": "Đây không phải sự thật mà chỉ là suy đoán của tôi.",
+            "en": "This is not a fact; it is just my guess."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "緑化",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 町では、ビルの屋上の（　）を進めています。 — Nghĩa của câu: “Thành phố đang đẩy mạnh việc phủ xanh sân thượng các tòa nhà.”",
+        "en": "Choose the word that fits the blank: 町では、ビルの屋上の（　）を進めています。 — Meaning of the sentence: “The city is promoting greening of rooftops.”"
+      },
+      "payload": {
+        "choices": [
+          "汚水",
+          "推測",
+          "偏差値",
+          "緑化"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「緑化」(Phủ xanh; trồng cây xanh) hợp nghĩa câu này: “Thành phố đang đẩy mạnh việc phủ xanh sân thượng các tòa nhà.”",
+        "en": "Correct! 「緑化」(Greening; planting greenery) fits this sentence: “The city is promoting greening of rooftops.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thành phố đang đẩy mạnh việc phủ xanh sân thượng các tòa nhà.”, nên cần 「緑化」(Phủ xanh; trồng cây xanh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The city is promoting greening of rooftops.”, so it needs 「緑化」(Greening; planting greenery); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "汚水",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 工場からの（　）が、川に流れ込んでいました。 — Nghĩa của câu: “Nước thải từ nhà máy đã chảy vào sông.”",
+        "en": "Choose the word that fits the blank: 工場からの（　）が、川に流れ込んでいました。 — Meaning of the sentence: “Dirty water from the factory was flowing into the river.”"
+      },
+      "payload": {
+        "choices": [
+          "汚水",
+          "義務教育",
+          "排気",
+          "偏差値"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「汚水」(Nước thải; nước bẩn) hợp nghĩa câu này: “Nước thải từ nhà máy đã chảy vào sông.”",
+        "en": "Correct! 「汚水」(Sewage; dirty water) fits this sentence: “Dirty water from the factory was flowing into the river.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nước thải từ nhà máy đã chảy vào sông.”, nên cần 「汚水」(Nước thải; nước bẩn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Dirty water from the factory was flowing into the river.”, so it needs 「汚水」(Sewage; dirty water); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "排気",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 車の（　）で、道の空気が汚れています。 — Nghĩa của câu: “Không khí trên đường bị ô nhiễm vì khí thải của xe.”",
+        "en": "Choose the word that fits the blank: 車の（　）で、道の空気が汚れています。 — Meaning of the sentence: “The air along the road is polluted by car exhaust.”"
+      },
+      "payload": {
+        "choices": [
+          "義務教育",
+          "排気",
+          "汚水",
+          "偏差値"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「排気」(Khí thải; xả khí) hợp nghĩa câu này: “Không khí trên đường bị ô nhiễm vì khí thải của xe.”",
+        "en": "Correct! 「排気」(Exhaust) fits this sentence: “The air along the road is polluted by car exhaust.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không khí trên đường bị ô nhiễm vì khí thải của xe.”, nên cần 「排気」(Khí thải; xả khí); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The air along the road is polluted by car exhaust.”, so it needs 「排気」(Exhaust); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "偏差値",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 模擬試験の（　）が、少し上がりました。 — Nghĩa của câu: “Điểm chuẩn hóa của kỳ thi thử đã tăng lên một chút.”",
+        "en": "Choose the word that fits the blank: 模擬試験の（　）が、少し上がりました。 — Meaning of the sentence: “My standardized score on the mock exam rose a little.”"
+      },
+      "payload": {
+        "choices": [
+          "義務教育",
+          "汚水",
+          "偏差値",
+          "推測"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「偏差値」(Điểm chuẩn hóa (độ lệch chuẩn của điểm thi)) hợp nghĩa câu này: “Điểm chuẩn hóa của kỳ thi thử đã tăng lên một chút.”",
+        "en": "Correct! 「偏差値」(Standardized score) fits this sentence: “My standardized score on the mock exam rose a little.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Điểm chuẩn hóa của kỳ thi thử đã tăng lên một chút.”, nên cần 「偏差値」(Điểm chuẩn hóa (độ lệch chuẩn của điểm thi)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My standardized score on the mock exam rose a little.”, so it needs 「偏差値」(Standardized score); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "義務教育",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 日本では、中学校までが（　）です。 — Nghĩa của câu: “Ở Nhật, giáo dục bắt buộc kéo dài đến hết cấp hai.”",
+        "en": "Choose the word that fits the blank: 日本では、中学校までが（　）です。 — Meaning of the sentence: “In Japan, compulsory education lasts through junior high school.”"
+      },
+      "payload": {
+        "choices": [
+          "偏差値",
+          "推測",
+          "汚水",
+          "義務教育"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「義務教育」(Giáo dục bắt buộc) hợp nghĩa câu này: “Ở Nhật, giáo dục bắt buộc kéo dài đến hết cấp hai.”",
+        "en": "Correct! 「義務教育」(Compulsory education) fits this sentence: “In Japan, compulsory education lasts through junior high school.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở Nhật, giáo dục bắt buộc kéo dài đến hết cấp hai.”, nên cần 「義務教育」(Giáo dục bắt buộc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In Japan, compulsory education lasts through junior high school.”, so it needs 「義務教育」(Compulsory education); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "推測",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: これは事実ではなく、私の（　）です。 — Nghĩa của câu: “Đây không phải sự thật mà chỉ là suy đoán của tôi.”",
+        "en": "Choose the word that fits the blank: これは事実ではなく、私の（　）です。 — Meaning of the sentence: “This is not a fact; it is just my guess.”"
+      },
+      "payload": {
+        "choices": [
+          "推測",
+          "汚水",
+          "偏差値",
+          "緑化"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「推測」(Suy đoán) hợp nghĩa câu này: “Đây không phải sự thật mà chỉ là suy đoán của tôi.”",
+        "en": "Correct! 「推測」(Guess; conjecture) fits this sentence: “This is not a fact; it is just my guess.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đây không phải sự thật mà chỉ là suy đoán của tôi.”, nên cần 「推測」(Suy đoán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This is not a fact; it is just my guess.”, so it needs 「推測」(Guess; conjecture); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "緑化",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 町では、ビルの屋上の「緑化」を進めています。",
+        "en": "Choose the correct reading of the word in 「」: 町では、ビルの屋上の「緑化」を進めています。"
+      },
+      "payload": {
+        "choices": [
+          "りょくか",
+          "おすい",
+          "すいそく",
+          "はいき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「緑化」 đọc là 「りょくか」, nghĩa là Phủ xanh; trồng cây xanh.",
+        "en": "Correct! 「緑化」 is read 「りょくか」 and means Greening; planting greenery."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「緑化」 đọc là 「りょくか」 (Phủ xanh; trồng cây xanh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「緑化」 is read 「りょくか」 (Greening; planting greenery); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "偏差値",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 模擬試験の「偏差値」が、少し上がりました。",
+        "en": "Choose the correct reading of the word in 「」: 模擬試験の「偏差値」が、少し上がりました。"
+      },
+      "payload": {
+        "choices": [
+          "りょくか",
+          "へんさち",
+          "ぎむきょういく",
+          "おすい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「偏差値」 đọc là 「へんさち」, nghĩa là Điểm chuẩn hóa (độ lệch chuẩn của điểm thi).",
+        "en": "Correct! 「偏差値」 is read 「へんさち」 and means Standardized score."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「偏差値」 đọc là 「へんさち」 (Điểm chuẩn hóa (độ lệch chuẩn của điểm thi)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「偏差値」 is read 「へんさち」 (Standardized score); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "推測",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: これは事実ではなく、私の「すいそく」です。",
+        "en": "Choose the correct way to write the word in 「」: これは事実ではなく、私の「すいそく」です。"
+      },
+      "payload": {
+        "choices": [
+          "緑化",
+          "推測",
+          "義務教育",
+          "排気"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「すいそく」 viết là 「推測」, nghĩa là Suy đoán.",
+        "en": "Correct! 「すいそく」 is written 「推測」 and means Guess; conjecture."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「すいそく」 viết là 「推測」 (Suy đoán); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「すいそく」 is written 「推測」 (Guess; conjecture); the other words are read differently."
+      }
+    }
+  ]
+}

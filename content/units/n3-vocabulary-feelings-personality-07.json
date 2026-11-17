@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-feelings-personality",
+  "title": {
+    "vi": "Xử lý, mồ hôi và những cảm xúc",
+    "en": "Treatment, perspiration and feelings"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2280,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "処置",
+      "reading": "しょち",
+      "meaning": {
+        "vi": "Xử lý; sơ cứu",
+        "en": "Treatment; handling"
+      },
+      "examples": [
+        {
+          "ja": "けがをした人に、すぐに応急の処置をしました。",
+          "reading": "けがをしたひとに、すぐにおうきゅうのしょちをしました。",
+          "translation": {
+            "vi": "Tôi đã nhanh chóng sơ cứu cho người bị thương.",
+            "en": "I gave first-aid treatment to the injured person right away."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "汗ばむ",
+      "reading": "あせばむ",
+      "meaning": {
+        "vi": "Hơi đổ mồ hôi",
+        "en": "To break into a sweat"
+      },
+      "examples": [
+        {
+          "ja": "今日は暖かくて、歩くと少し汗ばむほどです。",
+          "reading": "きょうはあたたかくて、あるくとすこしあせばむほどです。",
+          "translation": {
+            "vi": "Hôm nay trời ấm đến mức đi bộ là hơi đổ mồ hôi.",
+            "en": "It is so warm today that walking makes you start to sweat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "愛",
+      "reading": "あい",
+      "meaning": {
+        "vi": "Tình yêu; tình thương",
+        "en": "Love; affection"
+      },
+      "examples": [
+        {
+          "ja": "母の愛は、いつも私を支えてくれます。",
+          "reading": "ははのあいは、いつもわたしをささえてくれます。",
+          "translation": {
+            "vi": "Tình thương của mẹ luôn nâng đỡ tôi.",
+            "en": "My mother’s love always supports me."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "好み",
+      "reading": "このみ",
+      "meaning": {
+        "vi": "Sở thích; khẩu vị",
+        "en": "Taste; preference"
+      },
+      "examples": [
+        {
+          "ja": "コーヒーの好みは、人によって違います。",
+          "reading": "コーヒーのこのみは、ひとによってちがいます。",
+          "translation": {
+            "vi": "Khẩu vị cà phê khác nhau tùy từng người.",
+            "en": "Preferences in coffee differ from person to person."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "妬む",
+      "reading": "ねたむ",
+      "meaning": {
+        "vi": "Ghen tị; đố kỵ",
+        "en": "To envy; to be jealous of"
+      },
+      "examples": [
+        {
+          "ja": "友達の成功を妬むのは、よくないことです。",
+          "reading": "ともだちのせいこうをねたむのは、よくないことです。",
+          "translation": {
+            "vi": "Ghen tị với thành công của bạn là điều không tốt.",
+            "en": "It is not good to be jealous of a friend’s success."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "憤る",
+      "reading": "いきどおる",
+      "meaning": {
+        "vi": "Phẫn nộ",
+        "en": "To be indignant; to be outraged"
+      },
+      "examples": [
+        {
+          "ja": "社員は、会社の不正に憤る気持ちを隠せませんでした。",
+          "reading": "しゃいんは、かいしゃのふせいにいきどおるきもちをかくせませんでした。",
+          "translation": {
+            "vi": "Các nhân viên không giấu nổi sự phẫn nộ trước việc làm sai trái của công ty.",
+            "en": "The employees could not hide their outrage at the company’s wrongdoing."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "処置",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: けがをした人に、すぐに応急の（　）をしました。 — Nghĩa của câu: “Tôi đã nhanh chóng sơ cứu cho người bị thương.”",
+        "en": "Choose the word that fits the blank: けがをした人に、すぐに応急の（　）をしました。 — Meaning of the sentence: “I gave first-aid treatment to the injured person right away.”"
+      },
+      "payload": {
+        "choices": [
+          "憤る",
+          "好み",
+          "愛",
+          "処置"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「処置」(Xử lý; sơ cứu) hợp nghĩa câu này: “Tôi đã nhanh chóng sơ cứu cho người bị thương.”",
+        "en": "Correct! 「処置」(Treatment; handling) fits this sentence: “I gave first-aid treatment to the injured person right away.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã nhanh chóng sơ cứu cho người bị thương.”, nên cần 「処置」(Xử lý; sơ cứu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I gave first-aid treatment to the injured person right away.”, so it needs 「処置」(Treatment; handling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "汗ばむ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は暖かくて、歩くと少し（　）ほどです。 — Nghĩa của câu: “Hôm nay trời ấm đến mức đi bộ là hơi đổ mồ hôi.”",
+        "en": "Choose the word that fits the blank: 今日は暖かくて、歩くと少し（　）ほどです。 — Meaning of the sentence: “It is so warm today that walking makes you start to sweat.”"
+      },
+      "payload": {
+        "choices": [
+          "汗ばむ",
+          "処置",
+          "愛",
+          "好み"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「汗ばむ」(Hơi đổ mồ hôi) hợp nghĩa câu này: “Hôm nay trời ấm đến mức đi bộ là hơi đổ mồ hôi.”",
+        "en": "Correct! 「汗ばむ」(To break into a sweat) fits this sentence: “It is so warm today that walking makes you start to sweat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay trời ấm đến mức đi bộ là hơi đổ mồ hôi.”, nên cần 「汗ばむ」(Hơi đổ mồ hôi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is so warm today that walking makes you start to sweat.”, so it needs 「汗ばむ」(To break into a sweat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "愛",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 母の（　）は、いつも私を支えてくれます。 — Nghĩa của câu: “Tình thương của mẹ luôn nâng đỡ tôi.”",
+        "en": "Choose the word that fits the blank: 母の（　）は、いつも私を支えてくれます。 — Meaning of the sentence: “My mother’s love always supports me.”"
+      },
+      "payload": {
+        "choices": [
+          "好み",
+          "愛",
+          "処置",
+          "妬む"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「愛」(Tình yêu; tình thương) hợp nghĩa câu này: “Tình thương của mẹ luôn nâng đỡ tôi.”",
+        "en": "Correct! 「愛」(Love; affection) fits this sentence: “My mother’s love always supports me.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tình thương của mẹ luôn nâng đỡ tôi.”, nên cần 「愛」(Tình yêu; tình thương); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My mother’s love always supports me.”, so it needs 「愛」(Love; affection); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "好み",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: コーヒーの（　）は、人によって違います。 — Nghĩa của câu: “Khẩu vị cà phê khác nhau tùy từng người.”",
+        "en": "Choose the word that fits the blank: コーヒーの（　）は、人によって違います。 — Meaning of the sentence: “Preferences in coffee differ from person to person.”"
+      },
+      "payload": {
+        "choices": [
+          "愛",
+          "妬む",
+          "好み",
+          "憤る"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「好み」(Sở thích; khẩu vị) hợp nghĩa câu này: “Khẩu vị cà phê khác nhau tùy từng người.”",
+        "en": "Correct! 「好み」(Taste; preference) fits this sentence: “Preferences in coffee differ from person to person.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khẩu vị cà phê khác nhau tùy từng người.”, nên cần 「好み」(Sở thích; khẩu vị); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Preferences in coffee differ from person to person.”, so it needs 「好み」(Taste; preference); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "妬む",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 友達の成功を（　）のは、よくないことです。 — Nghĩa của câu: “Ghen tị với thành công của bạn là điều không tốt.”",
+        "en": "Choose the word that fits the blank: 友達の成功を（　）のは、よくないことです。 — Meaning of the sentence: “It is not good to be jealous of a friend’s success.”"
+      },
+      "payload": {
+        "choices": [
+          "汗ばむ",
+          "処置",
+          "愛",
+          "妬む"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「妬む」(Ghen tị; đố kỵ) hợp nghĩa câu này: “Ghen tị với thành công của bạn là điều không tốt.”",
+        "en": "Correct! 「妬む」(To envy; to be jealous of) fits this sentence: “It is not good to be jealous of a friend’s success.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ghen tị với thành công của bạn là điều không tốt.”, nên cần 「妬む」(Ghen tị; đố kỵ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is not good to be jealous of a friend’s success.”, so it needs 「妬む」(To envy; to be jealous of); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "憤る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 社員は、会社の不正に（　）気持ちを隠せませんでした。 — Nghĩa của câu: “Các nhân viên không giấu nổi sự phẫn nộ trước việc làm sai trái của công ty.”",
+        "en": "Choose the word that fits the blank: 社員は、会社の不正に（　）気持ちを隠せませんでした。 — Meaning of the sentence: “The employees could not hide their outrage at the company’s wrongdoing.”"
+      },
+      "payload": {
+        "choices": [
+          "憤る",
+          "汗ばむ",
+          "好み",
+          "処置"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「憤る」(Phẫn nộ) hợp nghĩa câu này: “Các nhân viên không giấu nổi sự phẫn nộ trước việc làm sai trái của công ty.”",
+        "en": "Correct! 「憤る」(To be indignant; to be outraged) fits this sentence: “The employees could not hide their outrage at the company’s wrongdoing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Các nhân viên không giấu nổi sự phẫn nộ trước việc làm sai trái của công ty.”, nên cần 「憤る」(Phẫn nộ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The employees could not hide their outrage at the company’s wrongdoing.”, so it needs 「憤る」(To be indignant; to be outraged); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "処置",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: けがをした人に、すぐに応急の「処置」をしました。",
+        "en": "Choose the correct reading of the word in 「」: けがをした人に、すぐに応急の「処置」をしました。"
+      },
+      "payload": {
+        "choices": [
+          "しょち",
+          "このみ",
+          "ねたむ",
+          "いきどおる"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「処置」 đọc là 「しょち」, nghĩa là Xử lý; sơ cứu.",
+        "en": "Correct! 「処置」 is read 「しょち」 and means Treatment; handling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「処置」 đọc là 「しょち」 (Xử lý; sơ cứu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「処置」 is read 「しょち」 (Treatment; handling); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "好み",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: コーヒーの「好み」は、人によって違います。",
+        "en": "Choose the correct reading of the word in 「」: コーヒーの「好み」は、人によって違います。"
+      },
+      "payload": {
+        "choices": [
+          "ねたむ",
+          "このみ",
+          "あい",
+          "あせばむ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「好み」 đọc là 「このみ」, nghĩa là Sở thích; khẩu vị.",
+        "en": "Correct! 「好み」 is read 「このみ」 and means Taste; preference."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「好み」 đọc là 「このみ」 (Sở thích; khẩu vị); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「好み」 is read 「このみ」 (Taste; preference); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "憤る",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 社員は、会社の不正に「いきどおる」気持ちを隠せませんでした。",
+        "en": "Choose the correct way to write the word in 「」: 社員は、会社の不正に「いきどおる」気持ちを隠せませんでした。"
+      },
+      "payload": {
+        "choices": [
+          "汗ばむ",
+          "憤る",
+          "好み",
+          "愛"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いきどおる」 viết là 「憤る」, nghĩa là Phẫn nộ.",
+        "en": "Correct! 「いきどおる」 is written 「憤る」 and means To be indignant; to be outraged."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いきどおる」 viết là 「憤る」 (Phẫn nộ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いきどおる」 is written 「憤る」 (To be indignant; to be outraged); the other words are read differently."
+      }
+    }
+  ]
+}

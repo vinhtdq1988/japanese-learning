@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'refresh_token_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'refresh_token_request.g.dart';
 )
 class RefreshTokenRequest {
   /// Returns a new [RefreshTokenRequest] instance.
-  RefreshTokenRequest({required this.refreshToken});
+  RefreshTokenRequest({
 
-  @JsonKey(name: r'refreshToken', required: true, includeIfNull: false)
+    required  this.refreshToken,
+  });
+
+  @JsonKey(
+    
+    name: r'refreshToken',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String refreshToken;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is RefreshTokenRequest && other.refreshToken == refreshToken;
 
-  @override
-  int get hashCode => refreshToken.hashCode;
 
-  factory RefreshTokenRequest.fromJson(Map<String, dynamic> json) =>
-      _$RefreshTokenRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is RefreshTokenRequest &&
+      other.refreshToken == refreshToken;
+
+    @override
+    int get hashCode =>
+        refreshToken.hashCode;
+
+  factory RefreshTokenRequest.fromJson(Map<String, dynamic> json) => _$RefreshTokenRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$RefreshTokenRequestToJson(this);
 
@@ -39,4 +53,6 @@ class RefreshTokenRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

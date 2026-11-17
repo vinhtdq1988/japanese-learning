@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-adverbs-expressions",
+  "title": {
+    "vi": "Liên từ và biểu hiện nối ý",
+    "en": "Connectives and linking expressions"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 1750,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "それで",
+      "reading": "それで",
+      "meaning": {
+        "vi": "Vì vậy; thế nên; rồi sau đó",
+        "en": "So; and then; that is why"
+      },
+      "examples": [
+        {
+          "ja": "電車が止まりました。それで、会議に遅れました。",
+          "reading": "でんしゃがとまりました。それで、かいぎにおくれました。",
+          "translation": {
+            "vi": "Tàu đã dừng. Vì vậy tôi bị trễ cuộc họp.",
+            "en": "The train stopped. So I was late for the meeting."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ところで",
+      "reading": "ところで",
+      "meaning": {
+        "vi": "Nhân tiện; à này (chuyển chủ đề)",
+        "en": "By the way (changing the subject)"
+      },
+      "examples": [
+        {
+          "ja": "今日は寒いですね。ところで、昨日の試験はどうでしたか。",
+          "reading": "きょうはさむいですね。ところで、きのうのしけんはどうでしたか。",
+          "translation": {
+            "vi": "Hôm nay lạnh nhỉ. À này, kỳ thi hôm qua thế nào rồi?",
+            "en": "It is cold today, isn’t it? By the way, how was yesterday’s exam?"
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "しかし",
+      "reading": "しかし",
+      "meaning": {
+        "vi": "Tuy nhiên; nhưng",
+        "en": "However; but"
+      },
+      "examples": [
+        {
+          "ja": "薬を飲みました。しかし、熱は下がりませんでした。",
+          "reading": "くすりをのみました。しかし、ねつはさがりませんでした。",
+          "translation": {
+            "vi": "Tôi đã uống thuốc. Tuy nhiên, cơn sốt không hạ.",
+            "en": "I took medicine. However, the fever did not go down."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "全体",
+      "reading": "ぜんたい",
+      "meaning": {
+        "vi": "Toàn thể; tổng thể",
+        "en": "Whole; overall"
+      },
+      "examples": [
+        {
+          "ja": "雪で、町の全体が白くなりました。",
+          "reading": "ゆきで、まちのぜんたいがしろくなりました。",
+          "translation": {
+            "vi": "Vì tuyết, cả thị trấn trở nên trắng xóa.",
+            "en": "Because of the snow, the whole town turned white."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "間",
+      "reading": "あいだ",
+      "meaning": {
+        "vi": "Trong khi; khoảng giữa",
+        "en": "While; during; between"
+      },
+      "examples": [
+        {
+          "ja": "私が買い物をしている間、子どもは車で待っていました。",
+          "reading": "わたしがかいものをしているあいだ、こどもはくるまでまっていました。",
+          "translation": {
+            "vi": "Trong lúc tôi mua sắm, đứa trẻ đợi trong xe.",
+            "en": "While I was shopping, my child waited in the car."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "慣れる",
+      "reading": "なれる",
+      "meaning": {
+        "vi": "Quen (với)",
+        "en": "To get used to"
+      },
+      "examples": [
+        {
+          "ja": "新しい仕事に慣れるまで、半年かかりました。",
+          "reading": "あたらしいしごとになれるまで、はんとしかかりました。",
+          "translation": {
+            "vi": "Tôi mất nửa năm mới quen với công việc mới.",
+            "en": "It took me half a year to get used to my new job."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "それで",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 電車が止まりました。（　）、会議に遅れました。 — Nghĩa của câu: “Tàu đã dừng. Vì vậy tôi bị trễ cuộc họp.”",
+        "en": "Choose the word that fits the blank: 電車が止まりました。（　）、会議に遅れました。 — Meaning of the sentence: “The train stopped. So I was late for the meeting.”"
+      },
+      "payload": {
+        "choices": [
+          "それで",
+          "しかし",
+          "ところで",
+          "間"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「それで」(Vì vậy; thế nên; rồi sau đó) hợp nghĩa câu này: “Tàu đã dừng. Vì vậy tôi bị trễ cuộc họp.”",
+        "en": "Correct! 「それで」(So; and then; that is why) fits this sentence: “The train stopped. So I was late for the meeting.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tàu đã dừng. Vì vậy tôi bị trễ cuộc họp.”, nên cần 「それで」(Vì vậy; thế nên; rồi sau đó); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The train stopped. So I was late for the meeting.”, so it needs 「それで」(So; and then; that is why); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ところで",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は寒いですね。（　）、昨日の試験はどうでしたか。 — Nghĩa của câu: “Hôm nay lạnh nhỉ. À này, kỳ thi hôm qua thế nào rồi?”",
+        "en": "Choose the word that fits the blank: 今日は寒いですね。（　）、昨日の試験はどうでしたか。 — Meaning of the sentence: “It is cold today, isn’t it? By the way, how was yesterday’s exam?”"
+      },
+      "payload": {
+        "choices": [
+          "それで",
+          "ところで",
+          "しかし",
+          "全体"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ところで」(Nhân tiện; à này (chuyển chủ đề)) hợp nghĩa câu này: “Hôm nay lạnh nhỉ. À này, kỳ thi hôm qua thế nào rồi?”",
+        "en": "Correct! 「ところで」(By the way (changing the subject)) fits this sentence: “It is cold today, isn’t it? By the way, how was yesterday’s exam?”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay lạnh nhỉ. À này, kỳ thi hôm qua thế nào rồi?”, nên cần 「ところで」(Nhân tiện; à này (chuyển chủ đề)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is cold today, isn’t it? By the way, how was yesterday’s exam?”, so it needs 「ところで」(By the way (changing the subject)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "しかし",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 薬を飲みました。（　）、熱は下がりませんでした。 — Nghĩa của câu: “Tôi đã uống thuốc. Tuy nhiên, cơn sốt không hạ.”",
+        "en": "Choose the word that fits the blank: 薬を飲みました。（　）、熱は下がりませんでした。 — Meaning of the sentence: “I took medicine. However, the fever did not go down.”"
+      },
+      "payload": {
+        "choices": [
+          "それで",
+          "ところで",
+          "しかし",
+          "慣れる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しかし」(Tuy nhiên; nhưng) hợp nghĩa câu này: “Tôi đã uống thuốc. Tuy nhiên, cơn sốt không hạ.”",
+        "en": "Correct! 「しかし」(However; but) fits this sentence: “I took medicine. However, the fever did not go down.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã uống thuốc. Tuy nhiên, cơn sốt không hạ.”, nên cần 「しかし」(Tuy nhiên; nhưng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I took medicine. However, the fever did not go down.”, so it needs 「しかし」(However; but); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "全体",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 雪で、町の（　）が白くなりました。 — Nghĩa của câu: “Vì tuyết, cả thị trấn trở nên trắng xóa.”",
+        "en": "Choose the word that fits the blank: 雪で、町の（　）が白くなりました。 — Meaning of the sentence: “Because of the snow, the whole town turned white.”"
+      },
+      "payload": {
+        "choices": [
+          "間",
+          "慣れる",
+          "それで",
+          "全体"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「全体」(Toàn thể; tổng thể) hợp nghĩa câu này: “Vì tuyết, cả thị trấn trở nên trắng xóa.”",
+        "en": "Correct! 「全体」(Whole; overall) fits this sentence: “Because of the snow, the whole town turned white.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì tuyết, cả thị trấn trở nên trắng xóa.”, nên cần 「全体」(Toàn thể; tổng thể); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Because of the snow, the whole town turned white.”, so it needs 「全体」(Whole; overall); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "間",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私が買い物をしている（　）、子どもは車で待っていました。 — Nghĩa của câu: “Trong lúc tôi mua sắm, đứa trẻ đợi trong xe.”",
+        "en": "Choose the word that fits the blank: 私が買い物をしている（　）、子どもは車で待っていました。 — Meaning of the sentence: “While I was shopping, my child waited in the car.”"
+      },
+      "payload": {
+        "choices": [
+          "間",
+          "全体",
+          "慣れる",
+          "しかし"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「間」(Trong khi; khoảng giữa) hợp nghĩa câu này: “Trong lúc tôi mua sắm, đứa trẻ đợi trong xe.”",
+        "en": "Correct! 「間」(While; during; between) fits this sentence: “While I was shopping, my child waited in the car.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong lúc tôi mua sắm, đứa trẻ đợi trong xe.”, nên cần 「間」(Trong khi; khoảng giữa); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “While I was shopping, my child waited in the car.”, so it needs 「間」(While; during; between); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "慣れる",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい仕事に（　）まで、半年かかりました。 — Nghĩa của câu: “Tôi mất nửa năm mới quen với công việc mới.”",
+        "en": "Choose the word that fits the blank: 新しい仕事に（　）まで、半年かかりました。 — Meaning of the sentence: “It took me half a year to get used to my new job.”"
+      },
+      "payload": {
+        "choices": [
+          "間",
+          "慣れる",
+          "全体",
+          "ところで"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「慣れる」(Quen (với)) hợp nghĩa câu này: “Tôi mất nửa năm mới quen với công việc mới.”",
+        "en": "Correct! 「慣れる」(To get used to) fits this sentence: “It took me half a year to get used to my new job.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi mất nửa năm mới quen với công việc mới.”, nên cần 「慣れる」(Quen (với)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It took me half a year to get used to my new job.”, so it needs 「慣れる」(To get used to); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "全体",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 雪で、町の「全体」が白くなりました。",
+        "en": "Choose the correct reading of the word in 「」: 雪で、町の「全体」が白くなりました。"
+      },
+      "payload": {
+        "choices": [
+          "なれる",
+          "ぜんたい",
+          "それで",
+          "ところで"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「全体」 đọc là 「ぜんたい」, nghĩa là Toàn thể; tổng thể.",
+        "en": "Correct! 「全体」 is read 「ぜんたい」 and means Whole; overall."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「全体」 đọc là 「ぜんたい」 (Toàn thể; tổng thể); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「全体」 is read 「ぜんたい」 (Whole; overall); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "間",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 私が買い物をしている「間」、子どもは車で待っていました。",
+        "en": "Choose the correct reading of the word in 「」: 私が買い物をしている「間」、子どもは車で待っていました。"
+      },
+      "payload": {
+        "choices": [
+          "なれる",
+          "しかし",
+          "あいだ",
+          "ぜんたい"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「間」 đọc là 「あいだ」, nghĩa là Trong khi; khoảng giữa.",
+        "en": "Correct! 「間」 is read 「あいだ」 and means While; during; between."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「間」 đọc là 「あいだ」 (Trong khi; khoảng giữa); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「間」 is read 「あいだ」 (While; during; between); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "慣れる",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 新しい仕事に「なれる」まで、半年かかりました。",
+        "en": "Choose the correct way to write the word in 「」: 新しい仕事に「なれる」まで、半年かかりました。"
+      },
+      "payload": {
+        "choices": [
+          "全体",
+          "間",
+          "慣れる",
+          "しかし"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「なれる」 viết là 「慣れる」, nghĩa là Quen (với).",
+        "en": "Correct! 「なれる」 is written 「慣れる」 and means To get used to."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「なれる」 viết là 「慣れる」 (Quen (với)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「なれる」 is written 「慣れる」 (To get used to); the other words are read differently."
+      }
+    }
+  ]
+}

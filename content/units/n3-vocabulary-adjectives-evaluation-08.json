@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adjectives-evaluation",
+  "title": {
+    "vi": "Trẻ trung, thô ráp và mức độ",
+    "en": "Youthful, rough and degrees"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2980,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "若々しい",
+      "reading": "わかわかしい",
+      "meaning": {
+        "vi": "Trẻ trung; tươi trẻ",
+        "en": "Youthful"
+      },
+      "examples": [
+        {
+          "ja": "祖母は、七十歳なのに、若々しい声で話します。",
+          "reading": "そぼは、ななじゅっさいなのに、わかわかしいこえではなします。",
+          "translation": {
+            "vi": "Bà tôi đã bảy mươi tuổi mà vẫn nói chuyện bằng giọng trẻ trung.",
+            "en": "My grandmother is seventy but speaks in a youthful voice."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "荒い",
+      "reading": "あらい",
+      "meaning": {
+        "vi": "Dữ dội; thô bạo",
+        "en": "Rough; violent"
+      },
+      "examples": [
+        {
+          "ja": "今日は、波が荒いので、船が出ません。",
+          "reading": "きょうは、なみがあらいので、ふねがでません。",
+          "translation": {
+            "vi": "Hôm nay sóng dữ nên tàu không chạy.",
+            "en": "The waves are rough today, so the boat will not sail."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "粗い",
+      "reading": "あらい",
+      "meaning": {
+        "vi": "Thô; không mịn; lỏng lẻo",
+        "en": "Coarse; rough in texture"
+      },
+      "examples": [
+        {
+          "ja": "このざるは、目が粗いので、小さい豆が落ちます。",
+          "reading": "このざるは、めがあらいので、ちいさいまめがおちます。",
+          "translation": {
+            "vi": "Cái rổ này mắt thưa nên đậu nhỏ lọt xuống.",
+            "en": "This strainer has a coarse mesh, so small beans fall through."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "見苦しい",
+      "reading": "みぐるしい",
+      "meaning": {
+        "vi": "Khó coi; chướng mắt",
+        "en": "Unsightly; unseemly"
+      },
+      "examples": [
+        {
+          "ja": "言い訳をするのは、見苦しいと思います。",
+          "reading": "いいわけをするのは、みぐるしいとおもいます。",
+          "translation": {
+            "vi": "Tôi nghĩ việc viện cớ là khó coi.",
+            "en": "I think making excuses is unseemly."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "余程",
+      "reading": "よほど",
+      "meaning": {
+        "vi": "Khá; hết sức",
+        "en": "Quite; very much"
+      },
+      "examples": [
+        {
+          "ja": "余程のことがない限り、会議は中止になりません。",
+          "reading": "よほどのことがないかぎり、かいぎはちゅうしになりません。",
+          "translation": {
+            "vi": "Trừ khi có chuyện hết sức đặc biệt, cuộc họp sẽ không bị hủy.",
+            "en": "Unless something quite extraordinary happens, the meeting will not be canceled."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一段と",
+      "reading": "いちだんと",
+      "meaning": {
+        "vi": "Hơn hẳn; càng thêm",
+        "en": "All the more; even more"
+      },
+      "examples": [
+        {
+          "ja": "十二月になって、寒さが一段と厳しくなりました。",
+          "reading": "じゅうにがつになって、さむさがいちだんときびしくなりました。",
+          "translation": {
+            "vi": "Sang tháng Mười hai, cái lạnh trở nên khắc nghiệt hơn hẳn.",
+            "en": "In December, the cold became all the more severe."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "若々しい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖母は、七十歳なのに、（　）声で話します。 — Nghĩa của câu: “Bà tôi đã bảy mươi tuổi mà vẫn nói chuyện bằng giọng trẻ trung.”",
+        "en": "Choose the word that fits the blank: 祖母は、七十歳なのに、（　）声で話します。 — Meaning of the sentence: “My grandmother is seventy but speaks in a youthful voice.”"
+      },
+      "payload": {
+        "choices": [
+          "見苦しい",
+          "荒い",
+          "一段と",
+          "若々しい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「若々しい」(Trẻ trung; tươi trẻ) hợp nghĩa câu này: “Bà tôi đã bảy mươi tuổi mà vẫn nói chuyện bằng giọng trẻ trung.”",
+        "en": "Correct! 「若々しい」(Youthful) fits this sentence: “My grandmother is seventy but speaks in a youthful voice.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bà tôi đã bảy mươi tuổi mà vẫn nói chuyện bằng giọng trẻ trung.”, nên cần 「若々しい」(Trẻ trung; tươi trẻ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandmother is seventy but speaks in a youthful voice.”, so it needs 「若々しい」(Youthful); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "荒い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は、波が（　）ので、船が出ません。 — Nghĩa của câu: “Hôm nay sóng dữ nên tàu không chạy.”",
+        "en": "Choose the word that fits the blank: 今日は、波が（　）ので、船が出ません。 — Meaning of the sentence: “The waves are rough today, so the boat will not sail.”"
+      },
+      "payload": {
+        "choices": [
+          "荒い",
+          "粗い",
+          "見苦しい",
+          "若々しい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「荒い」(Dữ dội; thô bạo) hợp nghĩa câu này: “Hôm nay sóng dữ nên tàu không chạy.”",
+        "en": "Correct! 「荒い」(Rough; violent) fits this sentence: “The waves are rough today, so the boat will not sail.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay sóng dữ nên tàu không chạy.”, nên cần 「荒い」(Dữ dội; thô bạo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The waves are rough today, so the boat will not sail.”, so it needs 「荒い」(Rough; violent); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "粗い",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: このざるは、目が（　）ので、小さい豆が落ちます。 — Nghĩa của câu: “Cái rổ này mắt thưa nên đậu nhỏ lọt xuống.”",
+        "en": "Choose the word that fits the blank: このざるは、目が（　）ので、小さい豆が落ちます。 — Meaning of the sentence: “This strainer has a coarse mesh, so small beans fall through.”"
+      },
+      "payload": {
+        "choices": [
+          "荒い",
+          "粗い",
+          "一段と",
+          "余程"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「粗い」(Thô; không mịn; lỏng lẻo) hợp nghĩa câu này: “Cái rổ này mắt thưa nên đậu nhỏ lọt xuống.”",
+        "en": "Correct! 「粗い」(Coarse; rough in texture) fits this sentence: “This strainer has a coarse mesh, so small beans fall through.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cái rổ này mắt thưa nên đậu nhỏ lọt xuống.”, nên cần 「粗い」(Thô; không mịn; lỏng lẻo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This strainer has a coarse mesh, so small beans fall through.”, so it needs 「粗い」(Coarse; rough in texture); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "見苦しい",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 言い訳をするのは、（　）と思います。 — Nghĩa của câu: “Tôi nghĩ việc viện cớ là khó coi.”",
+        "en": "Choose the word that fits the blank: 言い訳をするのは、（　）と思います。 — Meaning of the sentence: “I think making excuses is unseemly.”"
+      },
+      "payload": {
+        "choices": [
+          "粗い",
+          "余程",
+          "見苦しい",
+          "荒い"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「見苦しい」(Khó coi; chướng mắt) hợp nghĩa câu này: “Tôi nghĩ việc viện cớ là khó coi.”",
+        "en": "Correct! 「見苦しい」(Unsightly; unseemly) fits this sentence: “I think making excuses is unseemly.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nghĩ việc viện cớ là khó coi.”, nên cần 「見苦しい」(Khó coi; chướng mắt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I think making excuses is unseemly.”, so it needs 「見苦しい」(Unsightly; unseemly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "余程",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）のことがない限り、会議は中止になりません。 — Nghĩa của câu: “Trừ khi có chuyện hết sức đặc biệt, cuộc họp sẽ không bị hủy.”",
+        "en": "Choose the word that fits the blank: （　）のことがない限り、会議は中止になりません。 — Meaning of the sentence: “Unless something quite extraordinary happens, the meeting will not be canceled.”"
+      },
+      "payload": {
+        "choices": [
+          "荒い",
+          "若々しい",
+          "見苦しい",
+          "余程"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「余程」(Khá; hết sức) hợp nghĩa câu này: “Trừ khi có chuyện hết sức đặc biệt, cuộc họp sẽ không bị hủy.”",
+        "en": "Correct! 「余程」(Quite; very much) fits this sentence: “Unless something quite extraordinary happens, the meeting will not be canceled.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trừ khi có chuyện hết sức đặc biệt, cuộc họp sẽ không bị hủy.”, nên cần 「余程」(Khá; hết sức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Unless something quite extraordinary happens, the meeting will not be canceled.”, so it needs 「余程」(Quite; very much); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一段と",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 十二月になって、寒さが（　）厳しくなりました。 — Nghĩa của câu: “Sang tháng Mười hai, cái lạnh trở nên khắc nghiệt hơn hẳn.”",
+        "en": "Choose the word that fits the blank: 十二月になって、寒さが（　）厳しくなりました。 — Meaning of the sentence: “In December, the cold became all the more severe.”"
+      },
+      "payload": {
+        "choices": [
+          "一段と",
+          "粗い",
+          "見苦しい",
+          "荒い"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一段と」(Hơn hẳn; càng thêm) hợp nghĩa câu này: “Sang tháng Mười hai, cái lạnh trở nên khắc nghiệt hơn hẳn.”",
+        "en": "Correct! 「一段と」(All the more; even more) fits this sentence: “In December, the cold became all the more severe.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sang tháng Mười hai, cái lạnh trở nên khắc nghiệt hơn hẳn.”, nên cần 「一段と」(Hơn hẳn; càng thêm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In December, the cold became all the more severe.”, so it needs 「一段と」(All the more; even more); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "若々しい",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 祖母は、七十歳なのに、「若々しい」声で話します。",
+        "en": "Choose the correct reading of the word in 「」: 祖母は、七十歳なのに、「若々しい」声で話します。"
+      },
+      "payload": {
+        "choices": [
+          "わかわかしい",
+          "いちだんと",
+          "みぐるしい",
+          "あらい"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「若々しい」 đọc là 「わかわかしい」, nghĩa là Trẻ trung; tươi trẻ.",
+        "en": "Correct! 「若々しい」 is read 「わかわかしい」 and means Youthful."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「若々しい」 đọc là 「わかわかしい」 (Trẻ trung; tươi trẻ); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「若々しい」 is read 「わかわかしい」 (Youthful); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "余程",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「余程」のことがない限り、会議は中止になりません。",
+        "en": "Choose the correct reading of the word in 「」: 「余程」のことがない限り、会議は中止になりません。"
+      },
+      "payload": {
+        "choices": [
+          "いちだんと",
+          "よほど",
+          "みぐるしい",
+          "わかわかしい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「余程」 đọc là 「よほど」, nghĩa là Khá; hết sức.",
+        "en": "Correct! 「余程」 is read 「よほど」 and means Quite; very much."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「余程」 đọc là 「よほど」 (Khá; hết sức); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「余程」 is read 「よほど」 (Quite; very much); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一段と",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 十二月になって、寒さが「いちだんと」厳しくなりました。",
+        "en": "Choose the correct way to write the word in 「」: 十二月になって、寒さが「いちだんと」厳しくなりました。"
+      },
+      "payload": {
+        "choices": [
+          "荒い",
+          "一段と",
+          "若々しい",
+          "粗い"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いちだんと」 viết là 「一段と」, nghĩa là Hơn hẳn; càng thêm.",
+        "en": "Correct! 「いちだんと」 is written 「一段と」 and means All the more; even more."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いちだんと」 viết là 「一段と」 (Hơn hẳn; càng thêm); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いちだんと」 is written 「一段と」 (All the more; even more); the other words are read differently."
+      }
+    }
+  ]
+}

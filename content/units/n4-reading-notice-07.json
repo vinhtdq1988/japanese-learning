@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-neighbors-events",
+  "title": {
+    "vi": "Đọc: Dọn dẹp khu phố",
+    "en": "Reading: Neighborhood cleanup"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "町のみなさんへ。今月の二十日の日曜日に、町のそうじをします。朝九時に、小学校の前に集まってください。手ぶくろとごみぶくろは、町で用意します。ぼうしと飲み物は、自分で持ってきてください。雨の日は、つぎの日曜日にします。そうじは十一時ごろ終わります。終わったあと、みなさんにつめたいお茶をあげます。家族みんなで来てもいいです。小さい子どもは、大人といっしょに来てください。",
+      "meaning": {
+        "vi": "Gửi cư dân trong phố. Chủ nhật ngày 20 tháng này, chúng ta sẽ dọn dẹp khu phố. Xin hãy tập trung trước trường tiểu học lúc 9 giờ sáng. Găng tay và túi rác do khu phố chuẩn bị. Mũ và đồ uống xin tự mang theo. Nếu hôm đó mưa thì sẽ dời sang Chủ nhật tuần sau. Việc dọn dẹp kết thúc khoảng 11 giờ. Sau khi xong, chúng tôi sẽ tặng mọi người trà lạnh. Cả gia đình cùng đến cũng được. Trẻ nhỏ xin hãy đến cùng người lớn.",
+        "en": "To the residents: We will clean the neighborhood on Sunday the 20th of this month. Please gather in front of the elementary school at 9 a.m. Gloves and trash bags will be prepared by the town. Please bring your own hat and drinks. If it rains, it will be held the following Sunday. The cleanup ends around 11. Afterward we will give everyone cold tea. Whole families are welcome. Small children should come with an adult."
+      },
+      "reading": "まちのみなさんへ。こんげつのはつかのにちようびに、まちのそうじをします。あさくじに、しょうがっこうのまえにあつまってください。てぶくろとごみぶくろは、まちでよういします。ぼうしとのみものは、じぶんでもってきてください。あめのひは、つぎのにちようびにします。そうじはじゅういちじごろおわります。おわったあと、みなさんにつめたいおちゃをあげます。かぞくみんなできてもいいです。ちいさいこどもは、おとなといっしょにきてください。",
+      "explanation": {
+        "vi": "「～ごろ」= khoảng (十一時ごろ); 「～てもいいです」= được phép; 「～といっしょに」= cùng với.",
+        "en": "「～ごろ」 = around (十一時ごろ); 「～てもいいです」 = it is okay to; 「～といっしょに」 = together with."
+      },
+      "scopeRef": "r-n4-notice-neighborhood"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Mọi người tập trung ở đâu và lúc mấy giờ?",
+        "en": "Where and when should people gather?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trước trường tiểu học lúc 9 giờ",
+            "en": "In front of the elementary school at 9 o’clock"
+          },
+          {
+            "vi": "Ở công viên lúc 11 giờ",
+            "en": "At the park at 11 o’clock"
+          },
+          {
+            "vi": "Trước nhà văn hóa lúc 9 giờ",
+            "en": "In front of the community hall at 9 o’clock"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「朝九時に、小学校の前に集まってください」: 集まる là tập trung; địa điểm là trước trường tiểu học, lúc 9 giờ sáng.",
+        "en": "Correct! The text has 「朝九時に、小学校の前に集まってください」: 集まる means to gather; the place is in front of the elementary school at 9 a.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「朝九時に、小学校の前に集まってください」: 集まる là tập trung; địa điểm là trước trường tiểu học, lúc 9 giờ sáng.",
+        "en": "Not quite. Look again at 「朝九時に、小学校の前に集まってください」: 集まる means to gather; the place is in front of the elementary school at 9 a.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người tham gia phải tự mang gì?",
+        "en": "What must participants bring themselves?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Găng tay và túi rác",
+            "en": "Gloves and trash bags"
+          },
+          {
+            "vi": "Mũ và đồ uống",
+            "en": "A hat and drinks"
+          },
+          {
+            "vi": "Trà lạnh",
+            "en": "Cold tea"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ぼうしと飲み物は、自分で持ってきてください」: 「自分で」nghĩa là tự mình; mũ và đồ uống phải tự mang, còn găng tay, túi rác do khu phố lo.",
+        "en": "Correct! The text has 「ぼうしと飲み物は、自分で持ってきてください」: 「自分で」 means by yourself; hats and drinks are self-supplied, while gloves and bags are provided."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ぼうしと飲み物は、自分で持ってきてください」: 「自分で」nghĩa là tự mình; mũ và đồ uống phải tự mang, còn găng tay, túi rác do khu phố lo.",
+        "en": "Not quite. Look again at 「ぼうしと飲み物は、自分で持ってきてください」: 「自分で」 means by yourself; hats and drinks are self-supplied, while gloves and bags are provided."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nếu hôm đó trời mưa thì sao?",
+        "en": "What happens if it rains that day?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hủy hẳn",
+            "en": "It is canceled for good"
+          },
+          {
+            "vi": "Vẫn làm như bình thường",
+            "en": "It is held as usual"
+          },
+          {
+            "vi": "Dời sang Chủ nhật tuần sau",
+            "en": "It is moved to the following Sunday"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「雨の日は、つぎの日曜日にします」: Nếu mưa thì làm vào Chủ nhật kế tiếp.",
+        "en": "Correct! The text has 「雨の日は、つぎの日曜日にします」: If it rains, it will be done on the next Sunday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「雨の日は、つぎの日曜日にします」: Nếu mưa thì làm vào Chủ nhật kế tiếp.",
+        "en": "Not quite. Look again at 「雨の日は、つぎの日曜日にします」: If it rains, it will be done on the next Sunday."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều nào đúng về trẻ nhỏ?",
+        "en": "Which statement about small children is correct?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trẻ nhỏ không được đến",
+            "en": "Small children may not come"
+          },
+          {
+            "vi": "Trẻ nhỏ phải đến cùng người lớn",
+            "en": "Small children must come with an adult"
+          },
+          {
+            "vi": "Trẻ nhỏ phải mang trà đến",
+            "en": "Small children must bring tea"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「小さい子どもは、大人といっしょに来てください」: 「～といっしょに」nghĩa là cùng với; trẻ nhỏ cần đi cùng người lớn.",
+        "en": "Correct! The text has 「小さい子どもは、大人といっしょに来てください」: 「～といっしょに」 means together with; small children need to come with an adult."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「小さい子どもは、大人といっしょに来てください」: 「～といっしょに」nghĩa là cùng với; trẻ nhỏ cần đi cùng người lớn.",
+        "en": "Not quite. Look again at 「小さい子どもは、大人といっしょに来てください」: 「～といっしょに」 means together with; small children need to come with an adult."
+      }
+    }
+  ]
+}

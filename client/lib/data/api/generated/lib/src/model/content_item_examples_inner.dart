@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'content_item_examples_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,47 +19,83 @@ part 'content_item_examples_inner.g.dart';
 class ContentItemExamplesInner {
   /// Returns a new [ContentItemExamplesInner] instance.
   ContentItemExamplesInner({
-    this.ja,
 
-    this.reading,
+     this.ja,
 
-    this.kanjiReading,
+     this.reading,
 
-    this.translation,
+     this.kanjiReading,
+
+     this.translation,
   });
 
-  @JsonKey(name: r'ja', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'ja',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? ja;
 
-  @JsonKey(name: r'reading', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'reading',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? reading;
 
-  /// Kanji: cách đọc của chữ trong từ ví dụ này
-  @JsonKey(name: r'kanjiReading', required: false, includeIfNull: false)
+
+
+      /// Kanji: cách đọc của chữ trong từ ví dụ này
+  @JsonKey(
+    
+    name: r'kanjiReading',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? kanjiReading;
 
-  /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
-  @JsonKey(name: r'translation', required: false, includeIfNull: false)
+
+
+      /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+  @JsonKey(
+    
+    name: r'translation',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? translation;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ContentItemExamplesInner &&
-          other.ja == ja &&
-          other.reading == reading &&
-          other.kanjiReading == kanjiReading &&
-          other.translation == translation;
 
-  @override
-  int get hashCode =>
-      ja.hashCode +
-      (reading == null ? 0 : reading.hashCode) +
-      (kanjiReading == null ? 0 : kanjiReading.hashCode) +
-      translation.hashCode;
 
-  factory ContentItemExamplesInner.fromJson(Map<String, dynamic> json) =>
-      _$ContentItemExamplesInnerFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ContentItemExamplesInner &&
+      other.ja == ja &&
+      other.reading == reading &&
+      other.kanjiReading == kanjiReading &&
+      other.translation == translation;
+
+    @override
+    int get hashCode =>
+        ja.hashCode +
+        (reading == null ? 0 : reading.hashCode) +
+        (kanjiReading == null ? 0 : kanjiReading.hashCode) +
+        translation.hashCode;
+
+  factory ContentItemExamplesInner.fromJson(Map<String, dynamic> json) => _$ContentItemExamplesInnerFromJson(json);
 
   Map<String, dynamic> toJson() => _$ContentItemExamplesInnerToJson(this);
 
@@ -66,4 +103,6 @@ class ContentItemExamplesInner {
   String toString() {
     return toJson().toString();
   }
+
 }
+

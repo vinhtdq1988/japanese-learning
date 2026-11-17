@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'complete_onboarding200_response.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,26 +20,50 @@ part 'complete_onboarding200_response.g.dart';
 )
 class CompleteOnboarding200Response {
   /// Returns a new [CompleteOnboarding200Response] instance.
-  CompleteOnboarding200Response({this.path, this.today});
+  CompleteOnboarding200Response({
 
-  @JsonKey(name: r'path', required: false, includeIfNull: false)
+     this.path,
+
+     this.today,
+  });
+
+  @JsonKey(
+    
+    name: r'path',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final PathSummary? path;
 
-  @JsonKey(name: r'today', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'today',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DailyPlan? today;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is CompleteOnboarding200Response &&
-          other.path == path &&
-          other.today == today;
 
-  @override
-  int get hashCode => path.hashCode + today.hashCode;
 
-  factory CompleteOnboarding200Response.fromJson(Map<String, dynamic> json) =>
-      _$CompleteOnboarding200ResponseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is CompleteOnboarding200Response &&
+      other.path == path &&
+      other.today == today;
+
+    @override
+    int get hashCode =>
+        path.hashCode +
+        today.hashCode;
+
+  factory CompleteOnboarding200Response.fromJson(Map<String, dynamic> json) => _$CompleteOnboarding200ResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$CompleteOnboarding200ResponseToJson(this);
 
@@ -46,4 +71,6 @@ class CompleteOnboarding200Response {
   String toString() {
     return toJson().toString();
   }
+
 }
+

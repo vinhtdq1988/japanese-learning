@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-community-housing",
+  "title": {
+    "vi": "Xuất nhập khẩu, chủ nhà và cư trú",
+    "en": "Trade, landlords and residence"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1870,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "輸出入",
+      "reading": "ゆしゅつにゅう",
+      "meaning": {
+        "vi": "Xuất nhập khẩu",
+        "en": "Exports and imports"
+      },
+      "examples": [
+        {
+          "ja": "港は、輸出入の荷物でいつもにぎわっています。",
+          "reading": "みなとは、ゆしゅつにゅうのにもつでいつもにぎわっています。",
+          "translation": {
+            "vi": "Cảng lúc nào cũng nhộn nhịp hàng xuất nhập khẩu.",
+            "en": "The port is always busy with import and export cargo."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "大家",
+      "reading": "おおや",
+      "meaning": {
+        "vi": "Chủ nhà (cho thuê)",
+        "en": "Landlord"
+      },
+      "examples": [
+        {
+          "ja": "部屋の水漏れについて、大家に連絡しました。",
+          "reading": "へやのみずもれについて、おおやにれんらくしました。",
+          "translation": {
+            "vi": "Tôi đã liên lạc với chủ nhà về việc phòng bị rò nước.",
+            "en": "I contacted the landlord about the water leak in my room."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "区域",
+      "reading": "くいき",
+      "meaning": {
+        "vi": "Khu vực; phạm vi",
+        "en": "Area; zone"
+      },
+      "examples": [
+        {
+          "ja": "この区域では、ごみの出し方が決められています。",
+          "reading": "このくいきでは、ごみのだしかたがきめられています。",
+          "translation": {
+            "vi": "Ở khu vực này, cách vứt rác đã được quy định.",
+            "en": "In this area, the way to put out garbage is regulated."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "居住",
+      "reading": "きょじゅう",
+      "meaning": {
+        "vi": "Cư trú; sinh sống",
+        "en": "Residence; living"
+      },
+      "examples": [
+        {
+          "ja": "この団地には、約千人が居住しています。",
+          "reading": "このだんちには、やくせんにんがきょじゅうしています。",
+          "translation": {
+            "vi": "Khu chung cư này có khoảng một nghìn người sinh sống.",
+            "en": "About a thousand people live in this housing complex."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "立ち退き",
+      "reading": "たちのき",
+      "meaning": {
+        "vi": "Dọn đi; bị buộc rời chỗ ở",
+        "en": "Eviction; moving out"
+      },
+      "examples": [
+        {
+          "ja": "古いアパートの住人は、立ち退きを求められています。",
+          "reading": "ふるいアパートのじゅうにんは、たちのきをもとめられています。",
+          "translation": {
+            "vi": "Cư dân của khu nhà trọ cũ bị yêu cầu dọn đi.",
+            "en": "The residents of the old apartment building are being asked to move out."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "増築",
+      "reading": "ぞうちく",
+      "meaning": {
+        "vi": "Xây thêm; mở rộng nhà",
+        "en": "Extension; adding a room"
+      },
+      "examples": [
+        {
+          "ja": "家族が増えたので、二階を増築しました。",
+          "reading": "かぞくがふえたので、にかいをぞうちくしました。",
+          "translation": {
+            "vi": "Vì gia đình đông thêm nên chúng tôi xây thêm tầng hai.",
+            "en": "Our family grew, so we added a second floor."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "輸出入",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 港は、（　）の荷物でいつもにぎわっています。 — Nghĩa của câu: “Cảng lúc nào cũng nhộn nhịp hàng xuất nhập khẩu.”",
+        "en": "Choose the word that fits the blank: 港は、（　）の荷物でいつもにぎわっています。 — Meaning of the sentence: “The port is always busy with import and export cargo.”"
+      },
+      "payload": {
+        "choices": [
+          "立ち退き",
+          "輸出入",
+          "大家",
+          "居住"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「輸出入」(Xuất nhập khẩu) hợp nghĩa câu này: “Cảng lúc nào cũng nhộn nhịp hàng xuất nhập khẩu.”",
+        "en": "Correct! 「輸出入」(Exports and imports) fits this sentence: “The port is always busy with import and export cargo.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cảng lúc nào cũng nhộn nhịp hàng xuất nhập khẩu.”, nên cần 「輸出入」(Xuất nhập khẩu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The port is always busy with import and export cargo.”, so it needs 「輸出入」(Exports and imports); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "大家",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋の水漏れについて、（　）に連絡しました。 — Nghĩa của câu: “Tôi đã liên lạc với chủ nhà về việc phòng bị rò nước.”",
+        "en": "Choose the word that fits the blank: 部屋の水漏れについて、（　）に連絡しました。 — Meaning of the sentence: “I contacted the landlord about the water leak in my room.”"
+      },
+      "payload": {
+        "choices": [
+          "立ち退き",
+          "増築",
+          "大家",
+          "輸出入"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「大家」(Chủ nhà (cho thuê)) hợp nghĩa câu này: “Tôi đã liên lạc với chủ nhà về việc phòng bị rò nước.”",
+        "en": "Correct! 「大家」(Landlord) fits this sentence: “I contacted the landlord about the water leak in my room.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã liên lạc với chủ nhà về việc phòng bị rò nước.”, nên cần 「大家」(Chủ nhà (cho thuê)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I contacted the landlord about the water leak in my room.”, so it needs 「大家」(Landlord); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "区域",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この（　）では、ごみの出し方が決められています。 — Nghĩa của câu: “Ở khu vực này, cách vứt rác đã được quy định.”",
+        "en": "Choose the word that fits the blank: この（　）では、ごみの出し方が決められています。 — Meaning of the sentence: “In this area, the way to put out garbage is regulated.”"
+      },
+      "payload": {
+        "choices": [
+          "大家",
+          "立ち退き",
+          "輸出入",
+          "区域"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「区域」(Khu vực; phạm vi) hợp nghĩa câu này: “Ở khu vực này, cách vứt rác đã được quy định.”",
+        "en": "Correct! 「区域」(Area; zone) fits this sentence: “In this area, the way to put out garbage is regulated.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở khu vực này, cách vứt rác đã được quy định.”, nên cần 「区域」(Khu vực; phạm vi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In this area, the way to put out garbage is regulated.”, so it needs 「区域」(Area; zone); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "居住",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この団地には、約千人が（　）しています。 — Nghĩa của câu: “Khu chung cư này có khoảng một nghìn người sinh sống.”",
+        "en": "Choose the word that fits the blank: この団地には、約千人が（　）しています。 — Meaning of the sentence: “About a thousand people live in this housing complex.”"
+      },
+      "payload": {
+        "choices": [
+          "居住",
+          "増築",
+          "大家",
+          "区域"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「居住」(Cư trú; sinh sống) hợp nghĩa câu này: “Khu chung cư này có khoảng một nghìn người sinh sống.”",
+        "en": "Correct! 「居住」(Residence; living) fits this sentence: “About a thousand people live in this housing complex.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khu chung cư này có khoảng một nghìn người sinh sống.”, nên cần 「居住」(Cư trú; sinh sống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “About a thousand people live in this housing complex.”, so it needs 「居住」(Residence; living); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "立ち退き",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古いアパートの住人は、（　）を求められています。 — Nghĩa của câu: “Cư dân của khu nhà trọ cũ bị yêu cầu dọn đi.”",
+        "en": "Choose the word that fits the blank: 古いアパートの住人は、（　）を求められています。 — Meaning of the sentence: “The residents of the old apartment building are being asked to move out.”"
+      },
+      "payload": {
+        "choices": [
+          "大家",
+          "立ち退き",
+          "増築",
+          "輸出入"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「立ち退き」(Dọn đi; bị buộc rời chỗ ở) hợp nghĩa câu này: “Cư dân của khu nhà trọ cũ bị yêu cầu dọn đi.”",
+        "en": "Correct! 「立ち退き」(Eviction; moving out) fits this sentence: “The residents of the old apartment building are being asked to move out.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cư dân của khu nhà trọ cũ bị yêu cầu dọn đi.”, nên cần 「立ち退き」(Dọn đi; bị buộc rời chỗ ở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The residents of the old apartment building are being asked to move out.”, so it needs 「立ち退き」(Eviction; moving out); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "増築",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 家族が増えたので、二階を（　）しました。 — Nghĩa của câu: “Vì gia đình đông thêm nên chúng tôi xây thêm tầng hai.”",
+        "en": "Choose the word that fits the blank: 家族が増えたので、二階を（　）しました。 — Meaning of the sentence: “Our family grew, so we added a second floor.”"
+      },
+      "payload": {
+        "choices": [
+          "輸出入",
+          "居住",
+          "増築",
+          "区域"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「増築」(Xây thêm; mở rộng nhà) hợp nghĩa câu này: “Vì gia đình đông thêm nên chúng tôi xây thêm tầng hai.”",
+        "en": "Correct! 「増築」(Extension; adding a room) fits this sentence: “Our family grew, so we added a second floor.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì gia đình đông thêm nên chúng tôi xây thêm tầng hai.”, nên cần 「増築」(Xây thêm; mở rộng nhà); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Our family grew, so we added a second floor.”, so it needs 「増築」(Extension; adding a room); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "輸出入",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 港は、「輸出入」の荷物でいつもにぎわっています。",
+        "en": "Choose the correct reading of the word in 「」: 港は、「輸出入」の荷物でいつもにぎわっています。"
+      },
+      "payload": {
+        "choices": [
+          "たちのき",
+          "くいき",
+          "ゆしゅつにゅう",
+          "おおや"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「輸出入」 đọc là 「ゆしゅつにゅう」, nghĩa là Xuất nhập khẩu.",
+        "en": "Correct! 「輸出入」 is read 「ゆしゅつにゅう」 and means Exports and imports."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「輸出入」 đọc là 「ゆしゅつにゅう」 (Xuất nhập khẩu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「輸出入」 is read 「ゆしゅつにゅう」 (Exports and imports); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "居住",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この団地には、約千人が「居住」しています。",
+        "en": "Choose the correct reading of the word in 「」: この団地には、約千人が「居住」しています。"
+      },
+      "payload": {
+        "choices": [
+          "たちのき",
+          "ゆしゅつにゅう",
+          "おおや",
+          "きょじゅう"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「居住」 đọc là 「きょじゅう」, nghĩa là Cư trú; sinh sống.",
+        "en": "Correct! 「居住」 is read 「きょじゅう」 and means Residence; living."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「居住」 đọc là 「きょじゅう」 (Cư trú; sinh sống); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「居住」 is read 「きょじゅう」 (Residence; living); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "増築",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 家族が増えたので、二階を「ぞうちく」しました。",
+        "en": "Choose the correct way to write the word in 「」: 家族が増えたので、二階を「ぞうちく」しました。"
+      },
+      "payload": {
+        "choices": [
+          "大家",
+          "輸出入",
+          "居住",
+          "増築"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ぞうちく」 viết là 「増築」, nghĩa là Xây thêm; mở rộng nhà.",
+        "en": "Correct! 「ぞうちく」 is written 「増築」 and means Extension; adding a room."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ぞうちく」 viết là 「増築」 (Xây thêm; mở rộng nhà); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ぞうちく」 is written 「増築」 (Extension; adding a room); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_pause.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,53 +19,98 @@ part 'class_pause.g.dart';
 class ClassPause {
   /// Returns a new [ClassPause] instance.
   ClassPause({
-    required this.id,
 
-    this.userId,
+    required  this.id,
 
-    this.displayName,
+     this.userId,
 
-    required this.startedOn,
+     this.displayName,
 
-    this.endedOn,
+    required  this.startedOn,
+
+     this.endedOn,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  /// null - cả lớp
-  @JsonKey(name: r'userId', required: false, includeIfNull: false)
+
+
+      /// null - cả lớp
+  @JsonKey(
+    
+    name: r'userId',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? userId;
 
-  @JsonKey(name: r'displayName', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'displayName',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? displayName;
 
-  @JsonKey(name: r'startedOn', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'startedOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime startedOn;
 
-  @JsonKey(name: r'endedOn', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'endedOn',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? endedOn;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassPause &&
-          other.id == id &&
-          other.userId == userId &&
-          other.displayName == displayName &&
-          other.startedOn == startedOn &&
-          other.endedOn == endedOn;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      (userId == null ? 0 : userId.hashCode) +
-      (displayName == null ? 0 : displayName.hashCode) +
-      startedOn.hashCode +
-      (endedOn == null ? 0 : endedOn.hashCode);
 
-  factory ClassPause.fromJson(Map<String, dynamic> json) =>
-      _$ClassPauseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassPause &&
+      other.id == id &&
+      other.userId == userId &&
+      other.displayName == displayName &&
+      other.startedOn == startedOn &&
+      other.endedOn == endedOn;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        (userId == null ? 0 : userId.hashCode) +
+        (displayName == null ? 0 : displayName.hashCode) +
+        startedOn.hashCode +
+        (endedOn == null ? 0 : endedOn.hashCode);
+
+  factory ClassPause.fromJson(Map<String, dynamic> json) => _$ClassPauseFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassPauseToJson(this);
 
@@ -72,4 +118,6 @@ class ClassPause {
   String toString() {
     return toJson().toString();
   }
+
 }
+

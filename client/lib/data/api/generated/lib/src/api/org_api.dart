@@ -15,12 +15,13 @@ import 'package:japanese_api/src/model/org_overview.dart';
 import 'package:japanese_api/src/model/request_password_reset_request.dart';
 
 class OrgApi {
+
   final Dio _dio;
 
   const OrgApi(this._dio);
 
   /// Tổng quan tổ chức - seat, giấy phép, giáo viên, lớp, lời mời chờ
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -32,7 +33,7 @@ class OrgApi {
   ///
   /// Returns a [Future] containing a [Response] with a [OrgOverview] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<OrgOverview>> getOrg({
+  Future<Response<OrgOverview>> getOrg({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -43,10 +44,16 @@ class OrgApi {
     final _path = r'/org';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -64,14 +71,9 @@ class OrgApi {
     OrgOverview? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<OrgOverview, OrgOverview>(
-              rawData,
-              'OrgOverview',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<OrgOverview, OrgOverview>(rawData, 'OrgOverview', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -95,10 +97,10 @@ class OrgApi {
   }
 
   /// Cấp lại seat cho giáo viên đang mất seat
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [userId]
+  /// * [userId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -108,7 +110,7 @@ class OrgApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> grantSeat({
+  Future<Response<void>> grantSeat({ 
     required String userId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -117,18 +119,19 @@ class OrgApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/org/seats/{userId}/grant'.replaceAll(
-      '{'
-      r'userId'
-      '}',
-      userId.toString(),
-    );
+    final _path = r'/org/seats/{userId}/grant'.replaceAll('{' r'userId' '}', userId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -147,10 +150,10 @@ class OrgApi {
   }
 
   /// Mời giáo viên (giữ chỗ một seat)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [requestPasswordResetRequest]
+  /// * [requestPasswordResetRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -160,7 +163,7 @@ class OrgApi {
   ///
   /// Returns a [Future] containing a [Response] with a [InvitationRow] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<InvitationRow>> inviteTeacher({
+  Future<Response<InvitationRow>> inviteTeacher({ 
     required RequestPasswordResetRequest requestPasswordResetRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -172,10 +175,16 @@ class OrgApi {
     final _path = r'/org/teachers/invitations';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -187,9 +196,13 @@ class OrgApi {
 
     try {
       _bodyData = jsonEncode(requestPasswordResetRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -208,14 +221,9 @@ class OrgApi {
     InvitationRow? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<InvitationRow, InvitationRow>(
-              rawData,
-              'InvitationRow',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<InvitationRow, InvitationRow>(rawData, 'InvitationRow', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -239,10 +247,10 @@ class OrgApi {
   }
 
   /// Gỡ vai trò giáo viên - mất quyền ngay, giải phóng seat
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [userId]
+  /// * [userId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -252,7 +260,7 @@ class OrgApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> removeTeacher({
+  Future<Response<void>> removeTeacher({ 
     required String userId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -261,18 +269,19 @@ class OrgApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/org/teachers/{userId}'.replaceAll(
-      '{'
-      r'userId'
-      '}',
-      userId.toString(),
-    );
+    final _path = r'/org/teachers/{userId}'.replaceAll('{' r'userId' '}', userId.toString());
     final _options = Options(
       method: r'DELETE',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -291,7 +300,7 @@ class OrgApi {
   }
 
   /// Thu hồi lời mời (OWN - mọi lời mời của tổ chức; TCH - lời mời học viên của lớp mình)
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [token] - GET: token trong email. DELETE: id (uuid) của lời mời cần thu hồi (cùng vị trí đường dẫn).
@@ -304,7 +313,7 @@ class OrgApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> revokeInvitation({
+  Future<Response<void>> revokeInvitation({ 
     required String token,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -313,18 +322,19 @@ class OrgApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/invitations/{token}'.replaceAll(
-      '{'
-      r'token'
-      '}',
-      token.toString(),
-    );
+    final _path = r'/invitations/{token}'.replaceAll('{' r'token' '}', token.toString());
     final _options = Options(
       method: r'DELETE',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -343,10 +353,10 @@ class OrgApi {
   }
 
   /// Thu hồi seat của giáo viên/học viên trong tổ chức mình
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [userId]
+  /// * [userId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -356,7 +366,7 @@ class OrgApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> revokeOrgSeat({
+  Future<Response<void>> revokeOrgSeat({ 
     required String userId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -365,18 +375,19 @@ class OrgApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/org/seats/{userId}/revoke'.replaceAll(
-      '{'
-      r'userId'
-      '}',
-      userId.toString(),
-    );
+    final _path = r'/org/seats/{userId}/revoke'.replaceAll('{' r'userId' '}', userId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -393,4 +404,5 @@ class OrgApi {
 
     return _response;
   }
+
 }

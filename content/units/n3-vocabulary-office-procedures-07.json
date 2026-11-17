@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-office-procedures",
+  "title": {
+    "vi": "Mẫu đơn, tiếp nhận và phê chuẩn",
+    "en": "Forms, acceptance and approval"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 670,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "様式",
+      "reading": "ようしき",
+      "meaning": {
+        "vi": "Mẫu; cách thức trình bày",
+        "en": "Form; format; style"
+      },
+      "examples": [
+        {
+          "ja": "決まった様式で、書類を作ってください。",
+          "reading": "きまったようしきで、しょるいをつくってください。",
+          "translation": {
+            "vi": "Hãy lập hồ sơ theo mẫu đã quy định.",
+            "en": "Please prepare the documents in the specified format."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "受理",
+      "reading": "じゅり",
+      "meaning": {
+        "vi": "Tiếp nhận (hồ sơ)",
+        "en": "Acceptance (of an application)"
+      },
+      "examples": [
+        {
+          "ja": "申込書は、きのう無事に受理されました。",
+          "reading": "もうしこみしょは、きのうぶじにじゅりされました。",
+          "translation": {
+            "vi": "Đơn đăng ký đã được tiếp nhận suôn sẻ vào hôm qua.",
+            "en": "The application was accepted without problems yesterday."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "認可",
+      "reading": "にんか",
+      "meaning": {
+        "vi": "Cấp phép; phê chuẩn",
+        "en": "Approval; authorization"
+      },
+      "examples": [
+        {
+          "ja": "新しい学校を作るには、国の認可が必要です。",
+          "reading": "あたらしいがっこうをつくるには、くにのにんかがひつようです。",
+          "translation": {
+            "vi": "Muốn lập trường học mới thì cần được nhà nước cấp phép.",
+            "en": "To set up a new school, you need approval from the state."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "返送",
+      "reading": "へんそう",
+      "meaning": {
+        "vi": "Gửi trả lại",
+        "en": "Sending back; return mailing"
+      },
+      "examples": [
+        {
+          "ja": "記入した用紙は、同封の封筒で返送してください。",
+          "reading": "きにゅうしたようしは、どうふうのふうとうでへんそうしてください。",
+          "translation": {
+            "vi": "Xin gửi trả lại tờ đã điền bằng phong bì kèm theo.",
+            "en": "Please send back the completed form in the enclosed envelope."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "求職",
+      "reading": "きゅうしょく",
+      "meaning": {
+        "vi": "Tìm việc",
+        "en": "Job hunting"
+      },
+      "examples": [
+        {
+          "ja": "求職中の人のために、無料の相談会があります。",
+          "reading": "きゅうしょくちゅうのひとのために、むりょうのそうだんかいがあります。",
+          "translation": {
+            "vi": "Có buổi tư vấn miễn phí dành cho người đang tìm việc.",
+            "en": "There is a free consultation session for people looking for work."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勤続",
+      "reading": "きんぞく",
+      "meaning": {
+        "vi": "Làm việc liên tục (số năm)",
+        "en": "Continuous service"
+      },
+      "examples": [
+        {
+          "ja": "勤続二十年の社員が、会社から表彰されました。",
+          "reading": "きんぞくにじゅうねんのしゃいんが、かいしゃからひょうしょうされました。",
+          "translation": {
+            "vi": "Nhân viên có 20 năm làm việc liên tục đã được công ty khen thưởng.",
+            "en": "An employee with twenty years of continuous service was honored by the company."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "様式",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 決まった（　）で、書類を作ってください。 — Nghĩa của câu: “Hãy lập hồ sơ theo mẫu đã quy định.”",
+        "en": "Choose the word that fits the blank: 決まった（　）で、書類を作ってください。 — Meaning of the sentence: “Please prepare the documents in the specified format.”"
+      },
+      "payload": {
+        "choices": [
+          "様式",
+          "勤続",
+          "返送",
+          "認可"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「様式」(Mẫu; cách thức trình bày) hợp nghĩa câu này: “Hãy lập hồ sơ theo mẫu đã quy định.”",
+        "en": "Correct! 「様式」(Form; format; style) fits this sentence: “Please prepare the documents in the specified format.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy lập hồ sơ theo mẫu đã quy định.”, nên cần 「様式」(Mẫu; cách thức trình bày); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please prepare the documents in the specified format.”, so it needs 「様式」(Form; format; style); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "受理",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 申込書は、きのう無事に（　）されました。 — Nghĩa của câu: “Đơn đăng ký đã được tiếp nhận suôn sẻ vào hôm qua.”",
+        "en": "Choose the word that fits the blank: 申込書は、きのう無事に（　）されました。 — Meaning of the sentence: “The application was accepted without problems yesterday.”"
+      },
+      "payload": {
+        "choices": [
+          "勤続",
+          "受理",
+          "返送",
+          "求職"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「受理」(Tiếp nhận (hồ sơ)) hợp nghĩa câu này: “Đơn đăng ký đã được tiếp nhận suôn sẻ vào hôm qua.”",
+        "en": "Correct! 「受理」(Acceptance (of an application)) fits this sentence: “The application was accepted without problems yesterday.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đơn đăng ký đã được tiếp nhận suôn sẻ vào hôm qua.”, nên cần 「受理」(Tiếp nhận (hồ sơ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The application was accepted without problems yesterday.”, so it needs 「受理」(Acceptance (of an application)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "認可",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい学校を作るには、国の（　）が必要です。 — Nghĩa của câu: “Muốn lập trường học mới thì cần được nhà nước cấp phép.”",
+        "en": "Choose the word that fits the blank: 新しい学校を作るには、国の（　）が必要です。 — Meaning of the sentence: “To set up a new school, you need approval from the state.”"
+      },
+      "payload": {
+        "choices": [
+          "勤続",
+          "返送",
+          "認可",
+          "受理"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「認可」(Cấp phép; phê chuẩn) hợp nghĩa câu này: “Muốn lập trường học mới thì cần được nhà nước cấp phép.”",
+        "en": "Correct! 「認可」(Approval; authorization) fits this sentence: “To set up a new school, you need approval from the state.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Muốn lập trường học mới thì cần được nhà nước cấp phép.”, nên cần 「認可」(Cấp phép; phê chuẩn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To set up a new school, you need approval from the state.”, so it needs 「認可」(Approval; authorization); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "返送",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 記入した用紙は、同封の封筒で（　）してください。 — Nghĩa của câu: “Xin gửi trả lại tờ đã điền bằng phong bì kèm theo.”",
+        "en": "Choose the word that fits the blank: 記入した用紙は、同封の封筒で（　）してください。 — Meaning of the sentence: “Please send back the completed form in the enclosed envelope.”"
+      },
+      "payload": {
+        "choices": [
+          "勤続",
+          "様式",
+          "認可",
+          "返送"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「返送」(Gửi trả lại) hợp nghĩa câu này: “Xin gửi trả lại tờ đã điền bằng phong bì kèm theo.”",
+        "en": "Correct! 「返送」(Sending back; return mailing) fits this sentence: “Please send back the completed form in the enclosed envelope.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin gửi trả lại tờ đã điền bằng phong bì kèm theo.”, nên cần 「返送」(Gửi trả lại); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please send back the completed form in the enclosed envelope.”, so it needs 「返送」(Sending back; return mailing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "求職",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）中の人のために、無料の相談会があります。 — Nghĩa của câu: “Có buổi tư vấn miễn phí dành cho người đang tìm việc.”",
+        "en": "Choose the word that fits the blank: （　）中の人のために、無料の相談会があります。 — Meaning of the sentence: “There is a free consultation session for people looking for work.”"
+      },
+      "payload": {
+        "choices": [
+          "求職",
+          "勤続",
+          "様式",
+          "認可"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「求職」(Tìm việc) hợp nghĩa câu này: “Có buổi tư vấn miễn phí dành cho người đang tìm việc.”",
+        "en": "Correct! 「求職」(Job hunting) fits this sentence: “There is a free consultation session for people looking for work.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Có buổi tư vấn miễn phí dành cho người đang tìm việc.”, nên cần 「求職」(Tìm việc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is a free consultation session for people looking for work.”, so it needs 「求職」(Job hunting); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "勤続",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）二十年の社員が、会社から表彰されました。 — Nghĩa của câu: “Nhân viên có 20 năm làm việc liên tục đã được công ty khen thưởng.”",
+        "en": "Choose the word that fits the blank: （　）二十年の社員が、会社から表彰されました。 — Meaning of the sentence: “An employee with twenty years of continuous service was honored by the company.”"
+      },
+      "payload": {
+        "choices": [
+          "受理",
+          "勤続",
+          "求職",
+          "様式"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勤続」(Làm việc liên tục (số năm)) hợp nghĩa câu này: “Nhân viên có 20 năm làm việc liên tục đã được công ty khen thưởng.”",
+        "en": "Correct! 「勤続」(Continuous service) fits this sentence: “An employee with twenty years of continuous service was honored by the company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhân viên có 20 năm làm việc liên tục đã được công ty khen thưởng.”, nên cần 「勤続」(Làm việc liên tục (số năm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “An employee with twenty years of continuous service was honored by the company.”, so it needs 「勤続」(Continuous service); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "様式",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 決まった「様式」で、書類を作ってください。",
+        "en": "Choose the correct reading of the word in 「」: 決まった「様式」で、書類を作ってください。"
+      },
+      "payload": {
+        "choices": [
+          "きゅうしょく",
+          "ようしき",
+          "じゅり",
+          "きんぞく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「様式」 đọc là 「ようしき」, nghĩa là Mẫu; cách thức trình bày.",
+        "en": "Correct! 「様式」 is read 「ようしき」 and means Form; format; style."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「様式」 đọc là 「ようしき」 (Mẫu; cách thức trình bày); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「様式」 is read 「ようしき」 (Form; format; style); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "返送",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 記入した用紙は、同封の封筒で「返送」してください。",
+        "en": "Choose the correct reading of the word in 「」: 記入した用紙は、同封の封筒で「返送」してください。"
+      },
+      "payload": {
+        "choices": [
+          "にんか",
+          "じゅり",
+          "へんそう",
+          "ようしき"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「返送」 đọc là 「へんそう」, nghĩa là Gửi trả lại.",
+        "en": "Correct! 「返送」 is read 「へんそう」 and means Sending back; return mailing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「返送」 đọc là 「へんそう」 (Gửi trả lại); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「返送」 is read 「へんそう」 (Sending back; return mailing); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "勤続",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 「きんぞく」二十年の社員が、会社から表彰されました。",
+        "en": "Choose the correct way to write the word in 「」: 「きんぞく」二十年の社員が、会社から表彰されました。"
+      },
+      "payload": {
+        "choices": [
+          "受理",
+          "返送",
+          "勤続",
+          "認可"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きんぞく」 viết là 「勤続」, nghĩa là Làm việc liên tục (số năm).",
+        "en": "Correct! 「きんぞく」 is written 「勤続」 and means Continuous service."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きんぞく」 viết là 「勤続」 (Làm việc liên tục (số năm)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きんぞく」 is written 「勤続」 (Continuous service); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../auth/auth_support.dart';
 import 'class_onboarding_screen.dart';
+import '../path/scope_notice_banner.dart';
 import '../placement/placement_result_card.dart';
 import '../shared/page_frame.dart';
 import '../shared/state_views.dart';
@@ -248,18 +249,50 @@ class _OnboardingScreenState extends ConsumerState<_PersonalOnboardingScreen> {
       placementResultId: carried != null && _useCarried ? carried.id : null,
       clearPlacementResultId: !(carried != null && _useCarried),
     );
+    var completed = false;
+    var notices = const <ScopeNoticeCode>[];
     try {
-      await ref.read(onboardingRepositoryProvider).complete(form);
+      final result = await ref
+          .read(onboardingRepositoryProvider)
+          .complete(form);
       // Đã chuyển sang tài khoản thật: dữ liệu dùng thử còn lại (bài mẫu) không còn ý nghĩa.
       await ref.read(trialStateProvider.notifier).clear();
       ref.invalidate(todayProvider);
       ref.invalidate(pathProvider);
-      if (mounted) context.go(AppRoutes.today);
+      // `PathSummary.notices` là nguồn duy nhất của thông báo phạm vi (không tự suy từ biểu mẫu).
+      notices = result.path?.notices ?? const <ScopeNoticeCode>[];
+      completed = true;
     } catch (e) {
       if (mounted) setState(() => _completeError = mapAuthError(context, e));
     } finally {
       if (mounted) setState(() => _completing = false);
     }
+    if (!completed || !mounted) return;
+    // Mục tiêu JLPT: nói rõ ngay từ đầu rằng chưa có phần nghe hiểu (spec 008, FR-022) rồi mới vào "Hôm nay".
+    if (notices.isNotEmpty) await _showScopeNotices(notices);
+    if (mounted) context.go(AppRoutes.today);
+  }
+
+  /// Hộp thoại thông báo phạm vi sau khi hoàn tất onboarding (người học bấm đóng rồi mới vào Hôm nay).
+  Future<void> _showScopeNotices(List<ScopeNoticeCode> notices) {
+    final l10n = AppLocalizations.of(context);
+    return showDialog<void>(
+      context: context,
+      builder: (BuildContext dialogContext) => AlertDialog(
+        key: const Key('onboarding-scope-notices'),
+        title: Text(l10n.scopeNoticeDialogTitle),
+        content: SingleChildScrollView(
+          child: ScopeNoticeBanner(notices: notices),
+        ),
+        actions: <Widget>[
+          FilledButton(
+            key: const Key('onboarding-scope-notices-ok'),
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: Text(l10n.actionContinue),
+          ),
+        ],
+      ),
+    );
   }
 
   @override

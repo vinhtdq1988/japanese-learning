@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-health",
+  "title": {
+    "vi": "Đọc: Email đổi lịch hẹn vì bị cảm",
+    "en": "Reading: Email changing plans because of a cold"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2020,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "木下さんへ\nこんばんは。あしたの午後三時に、駅の前で会うやくそくでしたが、かぜをひいてしまいました。きょうの夕方からのどがいたくて、ねつも少しあります。病院へ行ったら、「あしたはうちでゆっくり休んでください」と言われました。すみませんが、会う日をかえてもらえませんか。来週の土曜日か日曜日なら、一日中だいじょうぶです。木下さんのつごうのいい日を教えてください。よろしくおねがいします。\n山田",
+      "meaning": {
+        "vi": "Gửi anh Kinoshita. Chào buổi tối. Chúng ta đã hẹn gặp trước nhà ga lúc 3 giờ chiều mai, nhưng tôi bị cảm mất rồi. Từ chiều nay tôi bị đau họng và cũng hơi sốt. Khi đến bệnh viện, bác sĩ dặn: “Ngày mai hãy nghỉ ngơi thong thả ở nhà.” Xin lỗi, anh có thể đổi ngày gặp được không? Thứ Bảy hoặc Chủ nhật tuần sau thì cả ngày tôi đều rảnh. Xin anh cho tôi biết ngày nào thuận tiện cho anh. Mong anh giúp đỡ. — Yamada",
+        "en": "Dear Mr. Kinoshita, Good evening. We had planned to meet in front of the station at 3 p.m. tomorrow, but I have caught a cold. Since this evening I have had a sore throat and a slight fever. When I went to the hospital, I was told, “Please rest at home tomorrow.” I am sorry, but could we change the day? Next Saturday or Sunday I am free all day. Please let me know which day is convenient for you. Thank you. — Yamada"
+      },
+      "reading": "きのしたさんへ\nこんばんは。あしたのごごさんじに、えきのまえであうやくそくでしたが、かぜをひいてしまいました。きょうのゆうがたからのどがいたくて、ねつもすこしあります。びょういんへいったら、「あしたはうちでゆっくりやすんでください」といわれました。すみませんが、あうひをかえてもらえませんか。らいしゅうのどようびかにちようびなら、いちにちじゅうだいじょうぶです。きのしたさんのつごうのいいひをおしえてください。よろしくおねがいします。\nやまだ",
+      "explanation": {
+        "vi": "「～てしまいました」= lỡ (bị cảm); 「言われました」là dạng bị động của 言う; 「～てもらえませんか」= nhờ ai làm giúp (lịch sự); 「～中」(一日中) = suốt cả.",
+        "en": "「～てしまいました」 = ended up (catching a cold); 「言われました」 is the passive of 言う; 「～てもらえませんか」 = a polite request; 「～中」 (一日中) = throughout."
+      },
+      "scopeRef": "r-n4-email-appointment"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao Yamada muốn đổi ngày gặp?",
+        "en": "Why does Yamada want to change the day?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì phải đi làm",
+            "en": "He has to work"
+          },
+          {
+            "vi": "Vì bị cảm",
+            "en": "Because he has a cold"
+          },
+          {
+            "vi": "Vì quên cuộc hẹn",
+            "en": "He forgot the appointment"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「かぜをひいてしまいました」: かぜをひく nghĩa là bị cảm; đó là lý do anh ấy muốn dời lịch.",
+        "en": "Correct! The text has 「かぜをひいてしまいました」: かぜをひく means to catch a cold, which is why he wants to reschedule."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「かぜをひいてしまいました」: かぜをひく nghĩa là bị cảm; đó là lý do anh ấy muốn dời lịch.",
+        "en": "Not quite. Look again at 「かぜをひいてしまいました」: かぜをひく means to catch a cold, which is why he wants to reschedule."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Bác sĩ đã dặn gì?",
+        "en": "What did the doctor tell him?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nên uống nhiều nước",
+            "en": "Drink plenty of water"
+          },
+          {
+            "vi": "Hãy đến lại bệnh viện ngày mai",
+            "en": "Come back to the hospital tomorrow"
+          },
+          {
+            "vi": "Ngày mai nghỉ ngơi ở nhà",
+            "en": "Rest at home tomorrow"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「あしたはうちでゆっくり休んでください」: 「言われました」là bị bác sĩ dặn: ngày mai hãy ở nhà nghỉ ngơi.",
+        "en": "Correct! The text has 「あしたはうちでゆっくり休んでください」: 「言われました」 means he was told by the doctor to rest at home tomorrow."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「あしたはうちでゆっくり休んでください」: 「言われました」là bị bác sĩ dặn: ngày mai hãy ở nhà nghỉ ngơi.",
+        "en": "Not quite. Look again at 「あしたはうちでゆっくり休んでください」: 「言われました」 means he was told by the doctor to rest at home tomorrow."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamada rảnh vào những ngày nào?",
+        "en": "On which days is Yamada free?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Bảy hoặc Chủ nhật tuần sau",
+            "en": "Next Saturday or Sunday"
+          },
+          {
+            "vi": "Thứ Hai hoặc thứ Ba tuần sau",
+            "en": "Next Monday or Tuesday"
+          },
+          {
+            "vi": "Ngày mai",
+            "en": "Tomorrow"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来週の土曜日か日曜日なら、一日中だいじょうぶです」: 「一日中」nghĩa là suốt cả ngày; Yamada rảnh vào thứ Bảy hoặc Chủ nhật tuần sau.",
+        "en": "Correct! The text has 「来週の土曜日か日曜日なら、一日中だいじょうぶです」: 「一日中」 means all day long; Yamada is free next Saturday or Sunday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来週の土曜日か日曜日なら、一日中だいじょうぶです」: 「一日中」nghĩa là suốt cả ngày; Yamada rảnh vào thứ Bảy hoặc Chủ nhật tuần sau.",
+        "en": "Not quite. Look again at 「来週の土曜日か日曜日なら、一日中だいじょうぶです」: 「一日中」 means all day long; Yamada is free next Saturday or Sunday."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Yamada nhờ Kinoshita điều gì?",
+        "en": "What does Yamada ask Kinoshita?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đến thăm mình ở nhà",
+            "en": "To visit him at home"
+          },
+          {
+            "vi": "Mua thuốc giúp",
+            "en": "To buy medicine for him"
+          },
+          {
+            "vi": "Cho biết ngày nào thuận tiện",
+            "en": "To tell him which day is convenient"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「木下さんのつごうのいい日を教えてください」: 「つごうのいい日」là ngày thuận tiện; Yamada nhờ Kinoshita cho biết.",
+        "en": "Correct! The text has 「木下さんのつごうのいい日を教えてください」: 「つごうのいい日」 is a convenient day; Yamada asks Kinoshita to tell him."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「木下さんのつごうのいい日を教えてください」: 「つごうのいい日」là ngày thuận tiện; Yamada nhờ Kinoshita cho biết.",
+        "en": "Not quite. Look again at 「木下さんのつごうのいい日を教えてください」: 「つごうのいい日」 is a convenient day; Yamada asks Kinoshita to tell him."
+      }
+    }
+  ]
+}

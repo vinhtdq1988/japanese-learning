@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'delete_account200_response.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,22 +18,34 @@ part 'delete_account200_response.g.dart';
 )
 class DeleteAccount200Response {
   /// Returns a new [DeleteAccount200Response] instance.
-  DeleteAccount200Response({required this.permanentDeletionAt});
+  DeleteAccount200Response({
 
-  @JsonKey(name: r'permanentDeletionAt', required: true, includeIfNull: false)
+    required  this.permanentDeletionAt,
+  });
+
+  @JsonKey(
+    
+    name: r'permanentDeletionAt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime permanentDeletionAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is DeleteAccount200Response &&
-          other.permanentDeletionAt == permanentDeletionAt;
 
-  @override
-  int get hashCode => permanentDeletionAt.hashCode;
 
-  factory DeleteAccount200Response.fromJson(Map<String, dynamic> json) =>
-      _$DeleteAccount200ResponseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is DeleteAccount200Response &&
+      other.permanentDeletionAt == permanentDeletionAt;
+
+    @override
+    int get hashCode =>
+        permanentDeletionAt.hashCode;
+
+  factory DeleteAccount200Response.fromJson(Map<String, dynamic> json) => _$DeleteAccount200ResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$DeleteAccount200ResponseToJson(this);
 
@@ -40,4 +53,6 @@ class DeleteAccount200Response {
   String toString() {
     return toJson().toString();
   }
+
 }
+

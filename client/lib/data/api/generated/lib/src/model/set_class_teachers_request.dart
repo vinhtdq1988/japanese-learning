@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'set_class_teachers_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'set_class_teachers_request.g.dart';
 )
 class SetClassTeachersRequest {
   /// Returns a new [SetClassTeachersRequest] instance.
-  SetClassTeachersRequest({required this.userIds});
+  SetClassTeachersRequest({
 
-  @JsonKey(name: r'userIds', required: true, includeIfNull: false)
+    required  this.userIds,
+  });
+
+  @JsonKey(
+    
+    name: r'userIds',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<String> userIds;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is SetClassTeachersRequest && other.userIds == userIds;
 
-  @override
-  int get hashCode => userIds.hashCode;
 
-  factory SetClassTeachersRequest.fromJson(Map<String, dynamic> json) =>
-      _$SetClassTeachersRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is SetClassTeachersRequest &&
+      other.userIds == userIds;
+
+    @override
+    int get hashCode =>
+        userIds.hashCode;
+
+  factory SetClassTeachersRequest.fromJson(Map<String, dynamic> json) => _$SetClassTeachersRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$SetClassTeachersRequestToJson(this);
 
@@ -39,4 +53,6 @@ class SetClassTeachersRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

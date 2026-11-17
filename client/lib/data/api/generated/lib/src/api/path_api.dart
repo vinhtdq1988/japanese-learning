@@ -9,6 +9,7 @@ import 'dart:convert';
 import 'package:japanese_api/src/deserialize.dart';
 import 'package:dio/dio.dart';
 
+import 'package:japanese_api/src/model/content_level.dart';
 import 'package:japanese_api/src/model/error.dart';
 import 'package:japanese_api/src/model/master_result.dart';
 import 'package:japanese_api/src/model/path_detail.dart';
@@ -16,16 +17,23 @@ import 'package:japanese_api/src/model/path_summary.dart';
 import 'package:japanese_api/src/model/rebuild_path_request.dart';
 import 'package:japanese_api/src/model/set_item_mastered200_response.dart';
 import 'package:japanese_api/src/model/set_unit_mastered_request.dart';
+import 'package:japanese_api/src/model/skill.dart';
 
 class PathApi {
+
   final Dio _dio;
 
   const PathApi(this._dio);
 
   /// Lộ trình hiện tại
-  ///
+  /// Không có tham số thì trả toàn bộ đơn vị như cũ. Có thể lọc để client dựng danh sách lười khi thư viện lớn (khoảng 600 đơn vị). Lọc theo &#x60;kind&#x60;/&#x60;level&#x60;/&#x60;status&#x60; trước rồi mới cắt &#x60;limit&#x60;/&#x60;offset&#x60;; thứ tự các phần tử giữ nguyên thứ tự xếp hạng động. &#x60;totalUnits&#x60;/&#x60;completedUnits&#x60; luôn là số của TOÀN BỘ lộ trình (không đổi theo bộ lọc). &#x60;offset&#x60; vượt &#x60;itemsTotal&#x60; → &#x60;items: []&#x60;; &#x60;kind&#x60; nằm ngoài kỹ năng hiệu lực của người học → &#x60;items: []&#x60; (không lỗi). Áp dụng cả cho lộ trình lớp (&#x60;source &#x3D; class&#x60;). 
   ///
   /// Parameters:
+  /// * [kind] 
+  /// * [level] 
+  /// * [status] 
+  /// * [limit] 
+  /// * [offset] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -35,7 +43,12 @@ class PathApi {
   ///
   /// Returns a [Future] containing a [Response] with a [PathDetail] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<PathDetail>> getPath({
+  Future<Response<PathDetail>> getPath({ 
+    Skill? kind,
+    ContentLevel? level,
+    String? status,
+    int? limit,
+    int? offset = 0,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -46,19 +59,34 @@ class PathApi {
     final _path = r'/path';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
       validateStatus: validateStatus,
     );
 
+    final _queryParameters = <String, dynamic>{
+      if (kind != null) r'kind': kind,
+      if (level != null) r'level': level,
+      if (status != null) r'status': status,
+      if (limit != null) r'limit': limit,
+      if (offset != null) r'offset': offset,
+    };
+
     final _response = await _dio.request<Object>(
       _path,
       options: _options,
+      queryParameters: _queryParameters,
       cancelToken: cancelToken,
       onSendProgress: onSendProgress,
       onReceiveProgress: onReceiveProgress,
@@ -67,14 +95,9 @@ class PathApi {
     PathDetail? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<PathDetail, PathDetail>(
-              rawData,
-              'PathDetail',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<PathDetail, PathDetail>(rawData, 'PathDetail', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -110,7 +133,7 @@ class PathApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> pausePath({
+  Future<Response<void>> pausePath({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -121,10 +144,16 @@ class PathApi {
     final _path = r'/path/pause';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -146,7 +175,7 @@ class PathApi {
   /// Có &#x60;usePlacementResultId&#x60; (làm lại placement rồi chọn xây dựng lại, US1.6) → lộ trình mới lưu &#x60;reason&#x3D;&#39;placement_retake&#39;&#x60;; bỏ trống → &#x60;reason&#x3D;&#39;rebuild_request&#39;&#x60;.
   ///
   /// Parameters:
-  /// * [rebuildPathRequest]
+  /// * [rebuildPathRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -156,7 +185,7 @@ class PathApi {
   ///
   /// Returns a [Future] containing a [Response] with a [PathSummary] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<PathSummary>> rebuildPath({
+  Future<Response<PathSummary>> rebuildPath({ 
     RebuildPathRequest? rebuildPathRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -168,10 +197,16 @@ class PathApi {
     final _path = r'/path/rebuild';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -183,9 +218,13 @@ class PathApi {
 
     try {
       _bodyData = jsonEncode(rebuildPathRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -204,14 +243,9 @@ class PathApi {
     PathSummary? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<PathSummary, PathSummary>(
-              rawData,
-              'PathSummary',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<PathSummary, PathSummary>(rawData, 'PathSummary', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -247,7 +281,7 @@ class PathApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> resumePath({
+  Future<Response<void>> resumePath({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -258,10 +292,16 @@ class PathApi {
     final _path = r'/path/resume';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -283,8 +323,8 @@ class PathApi {
   /// Idempotent – gửi lại cùng giá trị trả 200 không đổi dữ liệu. Đánh dấu cả bài Kanji dùng &#x60;PUT /path/units/{unitId}/master&#x60;.
   ///
   /// Parameters:
-  /// * [itemId]
-  /// * [setUnitMasteredRequest]
+  /// * [itemId] 
+  /// * [setUnitMasteredRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -294,7 +334,7 @@ class PathApi {
   ///
   /// Returns a [Future] containing a [Response] with a [SetItemMastered200Response] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<SetItemMastered200Response>> setItemMastered({
+  Future<Response<SetItemMastered200Response>> setItemMastered({ 
     required String itemId,
     required SetUnitMasteredRequest setUnitMasteredRequest,
     CancelToken? cancelToken,
@@ -304,18 +344,19 @@ class PathApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/path/items/{itemId}/master'.replaceAll(
-      '{'
-      r'itemId'
-      '}',
-      itemId.toString(),
-    );
+    final _path = r'/path/items/{itemId}/master'.replaceAll('{' r'itemId' '}', itemId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -327,9 +368,13 @@ class PathApi {
 
     try {
       _bodyData = jsonEncode(setUnitMasteredRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -348,14 +393,9 @@ class PathApi {
     SetItemMastered200Response? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<SetItemMastered200Response, SetItemMastered200Response>(
-              rawData,
-              'SetItemMastered200Response',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<SetItemMastered200Response, SetItemMastered200Response>(rawData, 'SetItemMastered200Response', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -379,11 +419,11 @@ class PathApi {
   }
 
   /// Đánh dấu / bỏ đánh dấu đã thành thạo
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [unitId]
-  /// * [setUnitMasteredRequest]
+  /// * [unitId] 
+  /// * [setUnitMasteredRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -393,7 +433,7 @@ class PathApi {
   ///
   /// Returns a [Future] containing a [Response] with a [MasterResult] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<MasterResult>> setUnitMastered({
+  Future<Response<MasterResult>> setUnitMastered({ 
     required String unitId,
     required SetUnitMasteredRequest setUnitMasteredRequest,
     CancelToken? cancelToken,
@@ -403,18 +443,19 @@ class PathApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/path/units/{unitId}/master'.replaceAll(
-      '{'
-      r'unitId'
-      '}',
-      unitId.toString(),
-    );
+    final _path = r'/path/units/{unitId}/master'.replaceAll('{' r'unitId' '}', unitId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -426,9 +467,13 @@ class PathApi {
 
     try {
       _bodyData = jsonEncode(setUnitMasteredRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -447,14 +492,9 @@ class PathApi {
     MasterResult? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<MasterResult, MasterResult>(
-              rawData,
-              'MasterResult',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<MasterResult, MasterResult>(rawData, 'MasterResult', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -476,4 +516,5 @@ class PathApi {
       extra: _response.extra,
     );
   }
+
 }

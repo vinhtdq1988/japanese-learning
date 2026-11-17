@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'put_learner_override_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,29 +18,52 @@ part 'put_learner_override_request.g.dart';
 )
 class PutLearnerOverrideRequest {
   /// Returns a new [PutLearnerOverrideRequest] instance.
-  PutLearnerOverrideRequest({this.dailyMinutes, required this.shiftDays});
+  PutLearnerOverrideRequest({
 
-  @JsonKey(name: r'dailyMinutes', required: false, includeIfNull: false)
+     this.dailyMinutes,
+
+    required  this.shiftDays,
+  });
+
+  @JsonKey(
+    
+    name: r'dailyMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final PutLearnerOverrideRequestDailyMinutesEnum? dailyMinutes;
 
-  // minimum: -60
-  // maximum: 60
-  @JsonKey(name: r'shiftDays', required: true, includeIfNull: false)
+
+
+          // minimum: -60
+          // maximum: 60
+  @JsonKey(
+    
+    name: r'shiftDays',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int shiftDays;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is PutLearnerOverrideRequest &&
-          other.dailyMinutes == dailyMinutes &&
-          other.shiftDays == shiftDays;
 
-  @override
-  int get hashCode =>
-      (dailyMinutes == null ? 0 : dailyMinutes.hashCode) + shiftDays.hashCode;
 
-  factory PutLearnerOverrideRequest.fromJson(Map<String, dynamic> json) =>
-      _$PutLearnerOverrideRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is PutLearnerOverrideRequest &&
+      other.dailyMinutes == dailyMinutes &&
+      other.shiftDays == shiftDays;
+
+    @override
+    int get hashCode =>
+        (dailyMinutes == null ? 0 : dailyMinutes.hashCode) +
+        shiftDays.hashCode;
+
+  factory PutLearnerOverrideRequest.fromJson(Map<String, dynamic> json) => _$PutLearnerOverrideRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$PutLearnerOverrideRequestToJson(this);
 
@@ -47,22 +71,25 @@ class PutLearnerOverrideRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum PutLearnerOverrideRequestDailyMinutesEnum {
-  @JsonValue(5)
-  number5('5'),
-  @JsonValue(10)
-  number10('10'),
-  @JsonValue(15)
-  number15('15'),
-  @JsonValue(30)
-  number30('30');
+@JsonValue(5)
+number5('5'),
+@JsonValue(10)
+number10('10'),
+@JsonValue(15)
+number15('15'),
+@JsonValue(30)
+number30('30');
 
-  const PutLearnerOverrideRequestDailyMinutesEnum(this.value);
+const PutLearnerOverrideRequestDailyMinutesEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-neighbors-events",
+  "title": {
+    "vi": "Đọc: Thông báo cúp nước",
+    "en": "Reading: Water shutoff notice"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "アパートに住んでいるみなさんへ。あしたの午前九時から十二時まで、工事のため水が出ません。九時までに、水をバケツやおふろに入れておいてください。トイレも使えませんので、近くのこうえんのトイレを使ってください。",
+      "meaning": {
+        "vi": "Gửi các cư dân sống trong chung cư. Từ 9 giờ đến 12 giờ sáng mai, nước sẽ không chảy vì sửa chữa. Xin hãy trữ sẵn nước vào xô hoặc bồn tắm trước 9 giờ. Nhà vệ sinh cũng không dùng được nên xin hãy dùng nhà vệ sinh ở công viên gần đó.",
+        "en": "To the residents of the apartment building: Tomorrow from 9 a.m. to 12 noon, no water will come out because of construction work. By 9 o’clock, please store water in buckets or the bathtub. The toilets cannot be used either, so please use the toilet in the nearby park."
+      },
+      "reading": "アパートにすんでいるみなさんへ。あしたのごぜんくじからじゅうにじまで、こうじのためみずがでません。くじまでに、みずをバケツやおふろにいれておいてください。トイレもつかえませんので、ちかくのこうえんのトイレをつかってください。",
+      "explanation": {
+        "vi": "「～ておく」= làm sẵn trước (入れておいてください); 「～ので」nêu lý do (使えませんので).",
+        "en": "「～ておく」 = do in advance (入れておいてください); 「～ので」 gives a reason (使えませんので)."
+      },
+      "scopeRef": "r-n4-notice-neighborhood"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Khi nào nước không chảy?",
+        "en": "When will the water not come out?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Từ 9 giờ đến 12 giờ sáng mai",
+            "en": "Tomorrow from 9 a.m. to 12 noon"
+          },
+          {
+            "vi": "Từ 9 giờ đến 12 giờ tối nay",
+            "en": "Tonight from 9 p.m. to 12 midnight"
+          },
+          {
+            "vi": "Cả ngày mai",
+            "en": "All day tomorrow"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「あしたの午前九時から十二時まで」: 午前 là buổi sáng; nước ngừng từ 9 giờ đến 12 giờ sáng mai.",
+        "en": "Correct! The text has 「あしたの午前九時から十二時まで」: 午前 means morning; the water stops from 9 to 12 tomorrow morning."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「あしたの午前九時から十二時まで」: 午前 là buổi sáng; nước ngừng từ 9 giờ đến 12 giờ sáng mai.",
+        "en": "Not quite. Look again at 「あしたの午前九時から十二時まで」: 午前 means morning; the water stops from 9 to 12 tomorrow morning."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Cư dân nên làm gì trước 9 giờ?",
+        "en": "What should residents do before 9 o’clock?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gọi cho công ty nước",
+            "en": "Call the water company"
+          },
+          {
+            "vi": "Đi ra khỏi chung cư",
+            "en": "Leave the apartment building"
+          },
+          {
+            "vi": "Trữ nước vào xô hoặc bồn tắm",
+            "en": "Store water in buckets or the bathtub"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「水をバケツやおふろに入れておいてください」: 「～ておく」nghĩa là làm sẵn: hãy chứa nước trước vào xô hoặc bồn tắm.",
+        "en": "Correct! The text has 「水をバケツやおふろに入れておいてください」: 「～ておく」 means to do in advance: store water in buckets or the bathtub beforehand."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「水をバケツやおふろに入れておいてください」: 「～ておく」nghĩa là làm sẵn: hãy chứa nước trước vào xô hoặc bồn tắm.",
+        "en": "Not quite. Look again at 「水をバケツやおふろに入れておいてください」: 「～ておく」 means to do in advance: store water in buckets or the bathtub beforehand."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Muốn đi vệ sinh trong lúc cúp nước thì làm thế nào?",
+        "en": "What should you do if you need a toilet during the shutoff?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Dùng nhà vệ sinh ở công viên gần đó",
+            "en": "Use the toilet in the nearby park"
+          },
+          {
+            "vi": "Dùng nhà vệ sinh của hàng xóm",
+            "en": "Use a neighbor’s toilet"
+          },
+          {
+            "vi": "Chờ đến 12 giờ",
+            "en": "Wait until 12 o’clock"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「近くのこうえんのトイレを使ってください」: Văn bản bảo dùng nhà vệ sinh ở công viên gần đó.",
+        "en": "Correct! The text has 「近くのこうえんのトイレを使ってください」: The notice tells residents to use the toilet in the nearby park."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「近くのこうえんのトイレを使ってください」: Văn bản bảo dùng nhà vệ sinh ở công viên gần đó.",
+        "en": "Not quite. Look again at 「近くのこうえんのトイレを使ってください」: The notice tells residents to use the toilet in the nearby park."
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-opinions",
+  "title": {
+    "vi": "Viết: Ý kiến – lý do (1)",
+    "en": "Writing: Opinions and reasons (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "私の考えでは",
+      "reading": "わたしのかんがえでは",
+      "meaning": {
+        "vi": "Theo suy nghĩ của tôi",
+        "en": "In my opinion"
+      }
+    },
+    {
+      "japanese": "賛成です",
+      "reading": "さんせいです",
+      "meaning": {
+        "vi": "Tôi tán thành.",
+        "en": "I agree (I am in favor)."
+      }
+    },
+    {
+      "japanese": "反対です",
+      "reading": "はんたいです",
+      "meaning": {
+        "vi": "Tôi phản đối.",
+        "en": "I am opposed."
+      }
+    },
+    {
+      "japanese": "大切だと思います",
+      "reading": "たいせつだとおもいます",
+      "meaning": {
+        "vi": "Tôi nghĩ điều đó quan trọng.",
+        "en": "I think it is important."
+      }
+    },
+    {
+      "japanese": "意見を言う",
+      "reading": "いけんをいう",
+      "meaning": {
+        "vi": "Nói ý kiến",
+        "en": "To state one's opinion"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Theo suy nghĩ của tôi”",
+        "en": "Type in Japanese: “In my opinion”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "私の考えでは",
+          "わたしのかんがえでは"
+        ],
+        "hint": "よみ: わたしのかんがえでは"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Theo suy nghĩ của tôi” viết là 私の考えでは. 「～では」 mở đầu quan điểm của người nói.",
+        "en": "Correct! “In my opinion” is written 私の考えでは. 「～では」 introduces the speaker's viewpoint."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 私の考えでは (đọc là わたしのかんがえでは). 「～では」 mở đầu quan điểm của người nói.",
+        "en": "Not quite. Reference answer: 私の考えでは (read as わたしのかんがえでは). 「～では」 introduces the speaker's viewpoint."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi tán thành.”",
+        "en": "Type in Japanese: “I agree (I am in favor).”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "賛成です",
+          "さんせいです"
+        ],
+        "hint": "よみ: さんせいです"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi tán thành.” viết là 賛成です. 賛成 = tán thành, ủng hộ.",
+        "en": "Correct! “I agree (I am in favor).” is written 賛成です. 賛成 = approval, support."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 賛成です (đọc là さんせいです). 賛成 = tán thành, ủng hộ.",
+        "en": "Not quite. Reference answer: 賛成です (read as さんせいです). 賛成 = approval, support."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi phản đối.”",
+        "en": "Type in Japanese: “I am opposed.”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "反対です",
+          "はんたいです"
+        ],
+        "hint": "よみ: はんたいです"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi phản đối.” viết là 反対です. 反対 = phản đối, trái ngược với 賛成.",
+        "en": "Correct! “I am opposed.” is written 反対です. 反対 = opposition, the opposite of 賛成."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 反対です (đọc là はんたいです). 反対 = phản đối, trái ngược với 賛成.",
+        "en": "Not quite. Reference answer: 反対です (read as はんたいです). 反対 = opposition, the opposite of 賛成."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi nghĩ điều đó quan trọng.”",
+        "en": "Type in Japanese: “I think it is important.”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "大切だと思います",
+          "たいせつだとおもいます",
+          "大切だとおもいます"
+        ],
+        "hint": "よみ: たいせつだとおもいます"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi nghĩ điều đó quan trọng.” viết là 大切だと思います. 「～と思います」 nêu suy nghĩ; tính từ -na đứng trước bằng 「だ」.",
+        "en": "Correct! “I think it is important.” is written 大切だと思います. 「～と思います」 states a thought; a -na adjective takes 「だ」 before it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 大切だと思います (đọc là たいせつだとおもいます). 「～と思います」 nêu suy nghĩ; tính từ -na đứng trước bằng 「だ」.",
+        "en": "Not quite. Reference answer: 大切だと思います (read as たいせつだとおもいます). 「～と思います」 states a thought; a -na adjective takes 「だ」 before it."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nói ý kiến”",
+        "en": "Type in Japanese: “To state one's opinion”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "意見を言う",
+          "いけんをいう",
+          "意見をいう"
+        ],
+        "hint": "よみ: いけんをいう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nói ý kiến” viết là 意見を言う. 意見 = ý kiến; 言う = nói.",
+        "en": "Correct! “To state one's opinion” is written 意見を言う. 意見 = opinion; 言う = to say."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 意見を言う (đọc là いけんをいう). 意見 = ý kiến; 言う = nói.",
+        "en": "Not quite. Reference answer: 意見を言う (read as いけんをいう). 意見 = opinion; 言う = to say."
+      }
+    }
+  ]
+}

@@ -20,15 +20,16 @@ import 'package:japanese_api/src/model/session_summary.dart';
 import 'package:japanese_api/src/model/start_session_request.dart';
 
 class DailyApi {
+
   final Dio _dio;
 
   const DailyApi(this._dio);
 
   /// Hoàn thành phiên – cập nhật trạng thái mục kế hoạch/ngày và trả tóm tắt
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [sessionId]
+  /// * [sessionId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -38,7 +39,7 @@ class DailyApi {
   ///
   /// Returns a [Future] containing a [Response] with a [SessionSummary] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<SessionSummary>> completeSession({
+  Future<Response<SessionSummary>> completeSession({ 
     required String sessionId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -47,18 +48,19 @@ class DailyApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/sessions/{sessionId}/complete'.replaceAll(
-      '{'
-      r'sessionId'
-      '}',
-      sessionId.toString(),
-    );
+    final _path = r'/sessions/{sessionId}/complete'.replaceAll('{' r'sessionId' '}', sessionId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -76,14 +78,9 @@ class DailyApi {
     SessionSummary? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<SessionSummary, SessionSummary>(
-              rawData,
-              'SessionSummary',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<SessionSummary, SessionSummary>(rawData, 'SessionSummary', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -119,7 +116,7 @@ class DailyApi {
   ///
   /// Returns a [Future] containing a [Response] with a [PlanItem] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<PlanItem>> getExtraUnit({
+  Future<Response<PlanItem>> getExtraUnit({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -130,10 +127,16 @@ class DailyApi {
     final _path = r'/today/extra';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -151,14 +154,9 @@ class DailyApi {
     PlanItem? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<PlanItem, PlanItem>(
-              rawData,
-              'PlanItem',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<PlanItem, PlanItem>(rawData, 'PlanItem', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -182,7 +180,7 @@ class DailyApi {
   }
 
   /// Kế hoạch hôm nay (sinh một lần theo ngày địa phương)
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -194,7 +192,7 @@ class DailyApi {
   ///
   /// Returns a [Future] containing a [Response] with a [DailyPlan] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<DailyPlan>> getToday({
+  Future<Response<DailyPlan>> getToday({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -205,10 +203,16 @@ class DailyApi {
     final _path = r'/today';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -226,14 +230,9 @@ class DailyApi {
     DailyPlan? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<DailyPlan, DailyPlan>(
-              rawData,
-              'DailyPlan',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<DailyPlan, DailyPlan>(rawData, 'DailyPlan', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -257,11 +256,11 @@ class DailyApi {
   }
 
   /// Ghi khoảng thời gian học (idempotent)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [sessionId]
-  /// * [recordStudyIntervalRequest]
+  /// * [sessionId] 
+  /// * [recordStudyIntervalRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -271,7 +270,7 @@ class DailyApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> recordStudyInterval({
+  Future<Response<void>> recordStudyInterval({ 
     required String sessionId,
     required RecordStudyIntervalRequest recordStudyIntervalRequest,
     CancelToken? cancelToken,
@@ -281,18 +280,19 @@ class DailyApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/sessions/{sessionId}/intervals'.replaceAll(
-      '{'
-      r'sessionId'
-      '}',
-      sessionId.toString(),
-    );
+    final _path = r'/sessions/{sessionId}/intervals'.replaceAll('{' r'sessionId' '}', sessionId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -304,9 +304,13 @@ class DailyApi {
 
     try {
       _bodyData = jsonEncode(recordStudyIntervalRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -329,7 +333,7 @@ class DailyApi {
   /// &#x60;planItemId&#x60; là id mục kế hoạch của người học, hoặc id đơn vị do &#x60;POST /today/extra&#x60; trả về (học thêm). Đã có phiên cho mục đó thì trả lại phiên ấy (tiếp tục, đúng snapshot cũ).
   ///
   /// Parameters:
-  /// * [startSessionRequest]
+  /// * [startSessionRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -339,7 +343,7 @@ class DailyApi {
   ///
   /// Returns a [Future] containing a [Response] with a [LessonSession] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<LessonSession>> startSession({
+  Future<Response<LessonSession>> startSession({ 
     required StartSessionRequest startSessionRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -351,10 +355,16 @@ class DailyApi {
     final _path = r'/sessions';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -366,9 +376,13 @@ class DailyApi {
 
     try {
       _bodyData = jsonEncode(startSessionRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -387,14 +401,9 @@ class DailyApi {
     LessonSession? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<LessonSession, LessonSession>(
-              rawData,
-              'LessonSession',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<LessonSession, LessonSession>(rawData, 'LessonSession', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -418,11 +427,11 @@ class DailyApi {
   }
 
   /// Ghi câu trả lời – chấm tự động, idempotent (FR-025, FR-041)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [sessionId]
-  /// * [answerSubmission]
+  /// * [sessionId] 
+  /// * [answerSubmission] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -432,7 +441,7 @@ class DailyApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AnswerResult] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AnswerResult>> submitAnswer({
+  Future<Response<AnswerResult>> submitAnswer({ 
     required String sessionId,
     required AnswerSubmission answerSubmission,
     CancelToken? cancelToken,
@@ -442,18 +451,19 @@ class DailyApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/sessions/{sessionId}/answers'.replaceAll(
-      '{'
-      r'sessionId'
-      '}',
-      sessionId.toString(),
-    );
+    final _path = r'/sessions/{sessionId}/answers'.replaceAll('{' r'sessionId' '}', sessionId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -465,9 +475,13 @@ class DailyApi {
 
     try {
       _bodyData = jsonEncode(answerSubmission);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -486,14 +500,9 @@ class DailyApi {
     AnswerResult? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AnswerResult, AnswerResult>(
-              rawData,
-              'AnswerResult',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AnswerResult, AnswerResult>(rawData, 'AnswerResult', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -515,4 +524,5 @@ class DailyApi {
       extra: _response.extra,
     );
   }
+
 }

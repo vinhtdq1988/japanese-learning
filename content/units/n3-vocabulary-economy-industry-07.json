@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-economy-industry",
+  "title": {
+    "vi": "Vốn, cổ tức và năng lượng",
+    "en": "Capital, dividends and energy"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 970,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "資本",
+      "reading": "しほん",
+      "meaning": {
+        "vi": "Vốn; tư bản",
+        "en": "Capital"
+      },
+      "examples": [
+        {
+          "ja": "店を開くには、まず資本が必要です。",
+          "reading": "みせをひらくには、まずしほんがひつようです。",
+          "translation": {
+            "vi": "Muốn mở cửa hàng thì trước hết phải có vốn.",
+            "en": "To open a shop, you first need capital."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "配当",
+      "reading": "はいとう",
+      "meaning": {
+        "vi": "Cổ tức; chia lãi",
+        "en": "Dividend"
+      },
+      "examples": [
+        {
+          "ja": "この会社は、毎年、株主に配当を出しています。",
+          "reading": "このかいしゃは、まいとし、かぶぬしにはいとうをだしています。",
+          "translation": {
+            "vi": "Công ty này hằng năm đều chi trả cổ tức cho cổ đông.",
+            "en": "This company pays its shareholders a dividend every year."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "融通",
+      "reading": "ゆうずう",
+      "meaning": {
+        "vi": "Linh hoạt; cho vay thông hiểu",
+        "en": "Flexibility; accommodation"
+      },
+      "examples": [
+        {
+          "ja": "あの人は、融通がきかなくて、決まりどおりにしかしません。",
+          "reading": "あのひとは、ゆうずうがきかなくて、きまりどおりにしかしません。",
+          "translation": {
+            "vi": "Người đó không linh hoạt, chỉ làm đúng theo quy định.",
+            "en": "He is inflexible and only does things strictly by the rules."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "電力",
+      "reading": "でんりょく",
+      "meaning": {
+        "vi": "Điện lực; điện năng",
+        "en": "Electric power"
+      },
+      "examples": [
+        {
+          "ja": "夏は、エアコンの使用で、電力の消費が増えます。",
+          "reading": "なつは、エアコンのしようで、でんりょくのしょうひがふえます。",
+          "translation": {
+            "vi": "Mùa hè dùng điều hòa nên mức tiêu thụ điện tăng.",
+            "en": "In summer, power consumption rises because of air conditioners."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "エネルギー",
+      "reading": "エネルギー",
+      "meaning": {
+        "vi": "Năng lượng",
+        "en": "Energy"
+      },
+      "examples": [
+        {
+          "ja": "太陽の光から、エネルギーを作る方法を研究しています。",
+          "reading": "たいようのひかりから、エネルギーをつくるほうほうをけんきゅうしています。",
+          "translation": {
+            "vi": "Tôi đang nghiên cứu cách tạo năng lượng từ ánh sáng mặt trời.",
+            "en": "I am researching ways to produce energy from sunlight."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "製鉄",
+      "reading": "せいてつ",
+      "meaning": {
+        "vi": "Luyện thép; sản xuất sắt thép",
+        "en": "Iron and steel making"
+      },
+      "examples": [
+        {
+          "ja": "この町では、昔から製鉄が盛んです。",
+          "reading": "このまちでは、むかしからせいてつがさかんです。",
+          "translation": {
+            "vi": "Thị trấn này từ xưa đã nổi tiếng về luyện thép.",
+            "en": "Steelmaking has long been thriving in this town."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "資本",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 店を開くには、まず（　）が必要です。 — Nghĩa của câu: “Muốn mở cửa hàng thì trước hết phải có vốn.”",
+        "en": "Choose the word that fits the blank: 店を開くには、まず（　）が必要です。 — Meaning of the sentence: “To open a shop, you first need capital.”"
+      },
+      "payload": {
+        "choices": [
+          "資本",
+          "エネルギー",
+          "配当",
+          "電力"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「資本」(Vốn; tư bản) hợp nghĩa câu này: “Muốn mở cửa hàng thì trước hết phải có vốn.”",
+        "en": "Correct! 「資本」(Capital) fits this sentence: “To open a shop, you first need capital.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Muốn mở cửa hàng thì trước hết phải có vốn.”, nên cần 「資本」(Vốn; tư bản); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To open a shop, you first need capital.”, so it needs 「資本」(Capital); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "配当",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社は、毎年、株主に（　）を出しています。 — Nghĩa của câu: “Công ty này hằng năm đều chi trả cổ tức cho cổ đông.”",
+        "en": "Choose the word that fits the blank: この会社は、毎年、株主に（　）を出しています。 — Meaning of the sentence: “This company pays its shareholders a dividend every year.”"
+      },
+      "payload": {
+        "choices": [
+          "資本",
+          "配当",
+          "電力",
+          "融通"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「配当」(Cổ tức; chia lãi) hợp nghĩa câu này: “Công ty này hằng năm đều chi trả cổ tức cho cổ đông.”",
+        "en": "Correct! 「配当」(Dividend) fits this sentence: “This company pays its shareholders a dividend every year.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty này hằng năm đều chi trả cổ tức cho cổ đông.”, nên cần 「配当」(Cổ tức; chia lãi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company pays its shareholders a dividend every year.”, so it needs 「配当」(Dividend); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "融通",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: あの人は、（　）がきかなくて、決まりどおりにしかしません。 — Nghĩa của câu: “Người đó không linh hoạt, chỉ làm đúng theo quy định.”",
+        "en": "Choose the word that fits the blank: あの人は、（　）がきかなくて、決まりどおりにしかしません。 — Meaning of the sentence: “He is inflexible and only does things strictly by the rules.”"
+      },
+      "payload": {
+        "choices": [
+          "製鉄",
+          "配当",
+          "融通",
+          "エネルギー"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「融通」(Linh hoạt; cho vay thông hiểu) hợp nghĩa câu này: “Người đó không linh hoạt, chỉ làm đúng theo quy định.”",
+        "en": "Correct! 「融通」(Flexibility; accommodation) fits this sentence: “He is inflexible and only does things strictly by the rules.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người đó không linh hoạt, chỉ làm đúng theo quy định.”, nên cần 「融通」(Linh hoạt; cho vay thông hiểu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He is inflexible and only does things strictly by the rules.”, so it needs 「融通」(Flexibility; accommodation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "電力",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夏は、エアコンの使用で、（　）の消費が増えます。 — Nghĩa của câu: “Mùa hè dùng điều hòa nên mức tiêu thụ điện tăng.”",
+        "en": "Choose the word that fits the blank: 夏は、エアコンの使用で、（　）の消費が増えます。 — Meaning of the sentence: “In summer, power consumption rises because of air conditioners.”"
+      },
+      "payload": {
+        "choices": [
+          "エネルギー",
+          "製鉄",
+          "融通",
+          "電力"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「電力」(Điện lực; điện năng) hợp nghĩa câu này: “Mùa hè dùng điều hòa nên mức tiêu thụ điện tăng.”",
+        "en": "Correct! 「電力」(Electric power) fits this sentence: “In summer, power consumption rises because of air conditioners.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mùa hè dùng điều hòa nên mức tiêu thụ điện tăng.”, nên cần 「電力」(Điện lực; điện năng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In summer, power consumption rises because of air conditioners.”, so it needs 「電力」(Electric power); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "エネルギー",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 太陽の光から、（　）を作る方法を研究しています。 — Nghĩa của câu: “Tôi đang nghiên cứu cách tạo năng lượng từ ánh sáng mặt trời.”",
+        "en": "Choose the word that fits the blank: 太陽の光から、（　）を作る方法を研究しています。 — Meaning of the sentence: “I am researching ways to produce energy from sunlight.”"
+      },
+      "payload": {
+        "choices": [
+          "エネルギー",
+          "配当",
+          "融通",
+          "資本"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「エネルギー」(Năng lượng) hợp nghĩa câu này: “Tôi đang nghiên cứu cách tạo năng lượng từ ánh sáng mặt trời.”",
+        "en": "Correct! 「エネルギー」(Energy) fits this sentence: “I am researching ways to produce energy from sunlight.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đang nghiên cứu cách tạo năng lượng từ ánh sáng mặt trời.”, nên cần 「エネルギー」(Năng lượng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I am researching ways to produce energy from sunlight.”, so it needs 「エネルギー」(Energy); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "製鉄",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町では、昔から（　）が盛んです。 — Nghĩa của câu: “Thị trấn này từ xưa đã nổi tiếng về luyện thép.”",
+        "en": "Choose the word that fits the blank: この町では、昔から（　）が盛んです。 — Meaning of the sentence: “Steelmaking has long been thriving in this town.”"
+      },
+      "payload": {
+        "choices": [
+          "エネルギー",
+          "製鉄",
+          "資本",
+          "融通"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「製鉄」(Luyện thép; sản xuất sắt thép) hợp nghĩa câu này: “Thị trấn này từ xưa đã nổi tiếng về luyện thép.”",
+        "en": "Correct! 「製鉄」(Iron and steel making) fits this sentence: “Steelmaking has long been thriving in this town.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn này từ xưa đã nổi tiếng về luyện thép.”, nên cần 「製鉄」(Luyện thép; sản xuất sắt thép); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Steelmaking has long been thriving in this town.”, so it needs 「製鉄」(Iron and steel making); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "資本",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 店を開くには、まず「資本」が必要です。",
+        "en": "Choose the correct reading of the word in 「」: 店を開くには、まず「資本」が必要です。"
+      },
+      "payload": {
+        "choices": [
+          "せいてつ",
+          "しほん",
+          "ゆうずう",
+          "でんりょく"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「資本」 đọc là 「しほん」, nghĩa là Vốn; tư bản.",
+        "en": "Correct! 「資本」 is read 「しほん」 and means Capital."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「資本」 đọc là 「しほん」 (Vốn; tư bản); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「資本」 is read 「しほん」 (Capital); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "融通",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: あの人は、「融通」がきかなくて、決まりどおりにしかしません。",
+        "en": "Choose the correct reading of the word in 「」: あの人は、「融通」がきかなくて、決まりどおりにしかしません。"
+      },
+      "payload": {
+        "choices": [
+          "せいてつ",
+          "しほん",
+          "ゆうずう",
+          "はいとう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「融通」 đọc là 「ゆうずう」, nghĩa là Linh hoạt; cho vay thông hiểu.",
+        "en": "Correct! 「融通」 is read 「ゆうずう」 and means Flexibility; accommodation."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「融通」 đọc là 「ゆうずう」 (Linh hoạt; cho vay thông hiểu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「融通」 is read 「ゆうずう」 (Flexibility; accommodation); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "製鉄",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: この町では、昔から「せいてつ」が盛んです。",
+        "en": "Choose the correct way to write the word in 「」: この町では、昔から「せいてつ」が盛んです。"
+      },
+      "payload": {
+        "choices": [
+          "融通",
+          "配当",
+          "製鉄",
+          "電力"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「せいてつ」 viết là 「製鉄」, nghĩa là Luyện thép; sản xuất sắt thép.",
+        "en": "Correct! 「せいてつ」 is written 「製鉄」 and means Iron and steel making."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「せいてつ」 viết là 「製鉄」 (Luyện thép; sản xuất sắt thép); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「せいてつ」 is written 「製鉄」 (Iron and steel making); the other words are read differently."
+      }
+    }
+  ]
+}

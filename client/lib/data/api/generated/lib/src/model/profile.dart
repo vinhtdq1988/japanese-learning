@@ -13,6 +13,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'profile.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -23,127 +24,243 @@ part 'profile.g.dart';
 class Profile {
   /// Returns a new [Profile] instance.
   Profile({
-    this.displayName,
 
-    this.currentLevel,
+     this.displayName,
 
-    this.goalType,
+     this.currentLevel,
 
-    this.targetLevel,
+     this.goalType,
 
-    this.dailyMinutes,
+     this.targetLevel,
 
-    this.targetDate,
+     this.dailyMinutes,
 
-    this.skills,
+     this.targetDate,
 
-    this.prioritizedSkill,
+     this.skills,
 
-    this.language,
+     this.prioritizedSkill,
 
-    this.timezone,
+     this.language,
 
-    this.paused,
+     this.timezone,
 
-    this.onboardingState,
+     this.paused,
 
-    this.soundEnabled = true,
+     this.onboardingState,
 
-    this.visualEffectsEnabled = true,
+     this.soundEnabled = true,
+
+     this.visualEffectsEnabled = true,
   });
 
-  @JsonKey(name: r'displayName', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'displayName',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? displayName;
 
-  @JsonKey(name: r'currentLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'currentLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Level? currentLevel;
 
-  @JsonKey(name: r'goalType', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'goalType',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final GoalType? goalType;
 
-  @JsonKey(name: r'targetLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'targetLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final TargetLevel? targetLevel;
 
-  @JsonKey(name: r'dailyMinutes', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'dailyMinutes',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProfileDailyMinutesEnum? dailyMinutes;
 
-  @JsonKey(name: r'targetDate', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'targetDate',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? targetDate;
 
-  @JsonKey(name: r'skills', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'skills',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<Skill>? skills;
 
-  @JsonKey(name: r'prioritizedSkill', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'prioritizedSkill',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Skill? prioritizedSkill;
 
-  @JsonKey(name: r'language', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'language',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Lang? language;
 
-  @JsonKey(name: r'timezone', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'timezone',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? timezone;
 
-  @JsonKey(name: r'paused', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'paused',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? paused;
 
-  @JsonKey(name: r'onboardingState', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'onboardingState',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ProfileOnboardingStateEnum? onboardingState;
 
-  /// Bật/tắt âm thanh phản hồi và chúc mừng (spec 005). Mặc định true.
+
+
+      /// Bật/tắt âm thanh phản hồi và chúc mừng (spec 005). Mặc định true.
   @JsonKey(
     defaultValue: true,
     name: r'soundEnabled',
     required: false,
     includeIfNull: false,
   )
+
+
   final bool? soundEnabled;
 
-  /// Bật/tắt hiệu ứng hình ảnh (hoạt ảnh, màn chúc mừng động). Khi tắt, kết quả đúng/sai và thành tựu vẫn được thể hiện bằng dạng tĩnh. Mặc định true.
+
+
+      /// Bật/tắt hiệu ứng hình ảnh (hoạt ảnh, màn chúc mừng động). Khi tắt, kết quả đúng/sai và thành tựu vẫn được thể hiện bằng dạng tĩnh. Mặc định true.
   @JsonKey(
     defaultValue: true,
     name: r'visualEffectsEnabled',
     required: false,
     includeIfNull: false,
   )
+
+
   final bool? visualEffectsEnabled;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Profile &&
-          other.displayName == displayName &&
-          other.currentLevel == currentLevel &&
-          other.goalType == goalType &&
-          other.targetLevel == targetLevel &&
-          other.dailyMinutes == dailyMinutes &&
-          other.targetDate == targetDate &&
-          other.skills == skills &&
-          other.prioritizedSkill == prioritizedSkill &&
-          other.language == language &&
-          other.timezone == timezone &&
-          other.paused == paused &&
-          other.onboardingState == onboardingState &&
-          other.soundEnabled == soundEnabled &&
-          other.visualEffectsEnabled == visualEffectsEnabled;
 
-  @override
-  int get hashCode =>
-      displayName.hashCode +
-      currentLevel.hashCode +
-      goalType.hashCode +
-      targetLevel.hashCode +
-      dailyMinutes.hashCode +
-      (targetDate == null ? 0 : targetDate.hashCode) +
-      skills.hashCode +
-      (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
-      language.hashCode +
-      timezone.hashCode +
-      paused.hashCode +
-      onboardingState.hashCode +
-      soundEnabled.hashCode +
-      visualEffectsEnabled.hashCode;
 
-  factory Profile.fromJson(Map<String, dynamic> json) =>
-      _$ProfileFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is Profile &&
+      other.displayName == displayName &&
+      other.currentLevel == currentLevel &&
+      other.goalType == goalType &&
+      other.targetLevel == targetLevel &&
+      other.dailyMinutes == dailyMinutes &&
+      other.targetDate == targetDate &&
+      other.skills == skills &&
+      other.prioritizedSkill == prioritizedSkill &&
+      other.language == language &&
+      other.timezone == timezone &&
+      other.paused == paused &&
+      other.onboardingState == onboardingState &&
+      other.soundEnabled == soundEnabled &&
+      other.visualEffectsEnabled == visualEffectsEnabled;
+
+    @override
+    int get hashCode =>
+        displayName.hashCode +
+        currentLevel.hashCode +
+        goalType.hashCode +
+        targetLevel.hashCode +
+        dailyMinutes.hashCode +
+        (targetDate == null ? 0 : targetDate.hashCode) +
+        skills.hashCode +
+        (prioritizedSkill == null ? 0 : prioritizedSkill.hashCode) +
+        language.hashCode +
+        timezone.hashCode +
+        paused.hashCode +
+        onboardingState.hashCode +
+        soundEnabled.hashCode +
+        visualEffectsEnabled.hashCode;
+
+  factory Profile.fromJson(Map<String, dynamic> json) => _$ProfileFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProfileToJson(this);
 
@@ -151,38 +268,42 @@ class Profile {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ProfileDailyMinutesEnum {
-  @JsonValue(5)
-  number5('5'),
-  @JsonValue(10)
-  number10('10'),
-  @JsonValue(15)
-  number15('15'),
-  @JsonValue(30)
-  number30('30');
+@JsonValue(5)
+number5('5'),
+@JsonValue(10)
+number10('10'),
+@JsonValue(15)
+number15('15'),
+@JsonValue(30)
+number30('30');
 
-  const ProfileDailyMinutesEnum(this.value);
+const ProfileDailyMinutesEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
 
 enum ProfileOnboardingStateEnum {
-  @JsonValue(r'not_started')
-  notStarted(r'not_started'),
-  @JsonValue(r'in_progress')
-  inProgress(r'in_progress'),
-  @JsonValue(r'completed')
-  completed(r'completed');
+@JsonValue(r'not_started')
+notStarted(r'not_started'),
+@JsonValue(r'in_progress')
+inProgress(r'in_progress'),
+@JsonValue(r'completed')
+completed(r'completed');
 
-  const ProfileOnboardingStateEnum(this.value);
+const ProfileOnboardingStateEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

@@ -3,6 +3,194 @@
   "kind": "reading",
   "level": "N3",
   "reference": false,
-  "sources": {},
-  "rows": []
+  "sources": {
+    "s1": {
+      "name": "Trang chính thức của kỳ thi JLPT (jlpt.jp; Quỹ Nhật Bản và JEES) — \"Nội dung kỳ thi\" và đề mẫu",
+      "note": "Chỉ tham khảo DẠNG câu hỏi đọc hiểu N3 (đoạn ngắn, đoạn vừa 中文, tra cứu thông tin 情報検索) và độ dài/độ khó đoạn; không chép đề mẫu"
+    },
+    "s2": {
+      "name": "Nihongo So-matome N3 (日本語総まとめ N3 読解), Asuku",
+      "note": "Phân loại dạng đoạn đọc N3 theo giáo trình luyện thi; chỉ lấy tư cách thành viên danh sách dạng/chủ đề"
+    },
+    "s3": {
+      "name": "Shin Kanzen Master N3 Dokkai (新完全マスター N3 読解), 3A Corporation",
+      "note": "Phân loại dạng văn bản (thông báo, email công việc, cột báo, đoạn vừa, tra cứu thông tin) theo giáo trình; chỉ lấy tư cách thành viên danh sách dạng/chủ đề"
+    }
+  },
+  "rows": [
+    {
+      "id": "r-n3-notice-company-service",
+      "key": "お知らせ（会社・サービス）",
+      "label": {
+        "vi": "Thông báo của công ty, dịch vụ, cửa hàng (đổi giờ, thay đổi quy định)",
+        "en": "Company and service notices (hours, rule changes)"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 3
+    },
+    {
+      "id": "r-n3-notice-guide-manual",
+      "key": "案内・使い方",
+      "label": {
+        "vi": "Hướng dẫn sử dụng, lưu ý khi dùng cơ sở/thiết bị",
+        "en": "Usage guides and cautions for facilities and equipment"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-email-request-report",
+      "key": "ビジネスメール（依頼・報告）",
+      "label": {
+        "vi": "Email công việc: đề nghị, báo cáo, xác nhận",
+        "en": "Business email: requests, reports, confirmations"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-email-apology-reply",
+      "key": "ビジネスメール（おわび・返信）",
+      "label": {
+        "vi": "Email công việc: xin lỗi, trả lời khách hàng",
+        "en": "Business email: apologies and replies to customers"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-email-schedule-arrangement",
+      "key": "ビジネスメール（日程調整）",
+      "label": {
+        "vi": "Email công việc: sắp xếp, đổi lịch hẹn",
+        "en": "Business email: scheduling and rescheduling"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-column-society",
+      "key": "コラム（社会）",
+      "label": {
+        "vi": "Bài viết/cột báo về vấn đề xã hội",
+        "en": "Columns on social issues"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 3
+    },
+    {
+      "id": "r-n3-column-lifestyle-health",
+      "key": "コラム（生活・健康）",
+      "label": {
+        "vi": "Bài viết/cột báo về lối sống, sức khỏe",
+        "en": "Columns on lifestyle and health"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-column-opinion-culture",
+      "key": "コラム（意見・文化）",
+      "label": {
+        "vi": "Bài viết nêu ý kiến, về văn hóa, ngôn ngữ",
+        "en": "Opinion pieces on culture and language"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-midtext-argument",
+      "key": "中文（意見・主張）",
+      "label": {
+        "vi": "Đoạn vừa có lập luận, nêu ý kiến và lý do",
+        "en": "Mid-length texts with an argument and reasons"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 3
+    },
+    {
+      "id": "r-n3-midtext-experience",
+      "key": "中文（体験・物語）",
+      "label": {
+        "vi": "Đoạn vừa kể trải nghiệm, câu chuyện",
+        "en": "Mid-length texts narrating experiences"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-midtext-explanation",
+      "key": "中文（説明）",
+      "label": {
+        "vi": "Đoạn vừa giải thích hiện tượng, cách làm",
+        "en": "Mid-length texts explaining a phenomenon or method"
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-info-schedule-event",
+      "key": "情報検索（日程・イベント）",
+      "label": {
+        "vi": "Tra cứu lịch, chương trình sự kiện nhiều dòng",
+        "en": "Information search: schedules and event programs"
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ],
+      "minUnits": 2
+    },
+    {
+      "id": "r-n3-info-price-ad",
+      "key": "情報検索（料金・広告）",
+      "label": {
+        "vi": "Tra cứu bảng giá, quảng cáo có điều kiện lọc",
+        "en": "Information search: price tables and ads with conditions"
+      },
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "minUnits": 3
+    }
+  ]
 }

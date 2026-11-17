@@ -1,0 +1,171 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-opinions",
+  "title": {
+    "vi": "Viết: Ý kiến – lý do (3)",
+    "en": "Writing: Opinions and reasons (3)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "確かに",
+      "reading": "たしかに",
+      "meaning": {
+        "vi": "Đúng là (thừa nhận ý của đối phương)",
+        "en": "Certainly (granting the other's point)"
+      }
+    },
+    {
+      "japanese": "しかし",
+      "reading": "しかし",
+      "meaning": {
+        "vi": "Tuy nhiên",
+        "en": "However"
+      }
+    },
+    {
+      "japanese": "つまり",
+      "reading": "つまり",
+      "meaning": {
+        "vi": "Nói cách khác; tóm lại",
+        "en": "In other words; in short"
+      }
+    },
+    {
+      "japanese": "例えば",
+      "reading": "たとえば",
+      "meaning": {
+        "vi": "Ví dụ",
+        "en": "For example"
+      }
+    },
+    {
+      "japanese": "最後に",
+      "reading": "さいごに",
+      "meaning": {
+        "vi": "Cuối cùng (mở đầu phần kết luận)",
+        "en": "Finally (opening the conclusion)"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Đúng là (thừa nhận ý của đối phương)”",
+        "en": "Type in Japanese: “Certainly (granting the other's point)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "確かに",
+          "たしかに"
+        ],
+        "hint": "よみ: たしかに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Đúng là (thừa nhận ý của đối phương)” viết là 確かに. 「確かに」 thừa nhận một điểm trước khi nêu ý khác.",
+        "en": "Correct! “Certainly (granting the other's point)” is written 確かに. 「確かに」 concedes a point before giving a different view."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 確かに (đọc là たしかに). 「確かに」 thừa nhận một điểm trước khi nêu ý khác.",
+        "en": "Not quite. Reference answer: 確かに (read as たしかに). 「確かに」 concedes a point before giving a different view."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tuy nhiên”",
+        "en": "Type in Japanese: “However”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "しかし"
+        ],
+        "hint": "よみ: しかし"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tuy nhiên” viết là しかし. 「しかし」 nối hai ý đối lập.",
+        "en": "Correct! “However” is written しかし. 「しかし」 joins two contrasting ideas."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: しかし (đọc là しかし). 「しかし」 nối hai ý đối lập.",
+        "en": "Not quite. Reference answer: しかし (read as しかし). 「しかし」 joins two contrasting ideas."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nói cách khác; tóm lại”",
+        "en": "Type in Japanese: “In other words; in short”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "つまり"
+        ],
+        "hint": "よみ: つまり"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nói cách khác; tóm lại” viết là つまり. 「つまり」 diễn đạt lại hoặc tóm gọn ý trước.",
+        "en": "Correct! “In other words; in short” is written つまり. 「つまり」 restates or sums up the previous point."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: つまり (đọc là つまり). 「つまり」 diễn đạt lại hoặc tóm gọn ý trước.",
+        "en": "Not quite. Reference answer: つまり (read as つまり). 「つまり」 restates or sums up the previous point."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Ví dụ”",
+        "en": "Type in Japanese: “For example”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "例えば",
+          "たとえば"
+        ],
+        "hint": "よみ: たとえば"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Ví dụ” viết là 例えば. 「例えば」 đưa ví dụ minh họa cho ý kiến.",
+        "en": "Correct! “For example” is written 例えば. 「例えば」 gives an example that supports the opinion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 例えば (đọc là たとえば). 「例えば」 đưa ví dụ minh họa cho ý kiến.",
+        "en": "Not quite. Reference answer: 例えば (read as たとえば). 「例えば」 gives an example that supports the opinion."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cuối cùng (mở đầu phần kết luận)”",
+        "en": "Type in Japanese: “Finally (opening the conclusion)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "最後に",
+          "さいごに"
+        ],
+        "hint": "よみ: さいごに"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cuối cùng (mở đầu phần kết luận)” viết là 最後に. 「最後に」 mở đầu ý cuối cùng của bài nói/viết.",
+        "en": "Correct! “Finally (opening the conclusion)” is written 最後に. 「最後に」 introduces the final point of a talk or text."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 最後に (đọc là さいごに). 「最後に」 mở đầu ý cuối cùng của bài nói/viết.",
+        "en": "Not quite. Reference answer: 最後に (read as さいごに). 「最後に」 introduces the final point of a talk or text."
+      }
+    }
+  ]
+}

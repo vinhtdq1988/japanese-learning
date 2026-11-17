@@ -12,12 +12,13 @@ import 'package:dio/dio.dart';
 import 'package:japanese_api/src/model/progress_summary.dart';
 
 class ProgressApi {
+
   final Dio _dio;
 
   const ProgressApi(this._dio);
 
   /// Tóm tắt tiến độ (FR-026 → FR-029)
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -29,7 +30,7 @@ class ProgressApi {
   ///
   /// Returns a [Future] containing a [Response] with a [ProgressSummary] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<ProgressSummary>> getProgress({
+  Future<Response<ProgressSummary>> getProgress({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -40,10 +41,16 @@ class ProgressApi {
     final _path = r'/progress';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -61,14 +68,9 @@ class ProgressApi {
     ProgressSummary? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<ProgressSummary, ProgressSummary>(
-              rawData,
-              'ProgressSummary',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<ProgressSummary, ProgressSummary>(rawData, 'ProgressSummary', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -90,4 +92,5 @@ class ProgressApi {
       extra: _response.extra,
     );
   }
+
 }

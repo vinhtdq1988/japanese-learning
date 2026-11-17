@@ -133,14 +133,17 @@ describe('lộ trình: reason và bảo toàn lịch sử', () => {
 });
 
 describe('thời gian mỗi ngày', () => {
-  it('có hiệu lực ở kế hoạch kế tiếp, không sinh lộ trình mới, kế hoạch đã sinh không đổi', async () => {
+  it('kế hoạch hôm nay chưa học gì: sinh lại ngay theo phút mới, không sinh lộ trình mới', async () => {
     const learner = await onboardedLearner(api, ctx);
     const day1 = await getToday(api, learner);
     expect(day1.budgetMinutes).toBe(10);
 
     expect((await patchMe(learner, { dailyMinutes: 15 })).status).toBe(200);
-    // Kế hoạch hôm nay đã được sinh và lưu: giữ nguyên.
-    expect((await getToday(api, learner)).budgetMinutes).toBe(10);
+    // Mọi mục còn `pending` ⇒ kế hoạch cũ bị xóa, `GET /today` sinh lại theo 15 phút.
+    const regenerated = await getToday(api, learner);
+    expect(regenerated.id).not.toBe(day1.id);
+    expect(regenerated.budgetMinutes).toBe(15);
+    expect(regenerated.estimatedMinutes).toBeLessThanOrEqual(15);
 
     await advanceDays(api, ctx, learner);
     const day2 = await getToday(api, learner);
@@ -153,6 +156,28 @@ describe('thời gian mỗi ngày', () => {
       [learner.userId],
     );
     expect(n).toBe(1);
+  });
+
+  it('đã học dở kế hoạch hôm nay: giữ nguyên, phút mới có hiệu lực từ ngày sau', async () => {
+    const learner = await onboardedLearner(api, ctx);
+    const day1 = await getToday(api, learner);
+    await studyPlanItem(api, ctx, learner, day1.items[0].id);
+
+    expect((await patchMe(learner, { dailyMinutes: 15 })).status).toBe(200);
+    const same = await getToday(api, learner);
+    expect(same.id).toBe(day1.id);
+    expect(same.budgetMinutes).toBe(10);
+
+    await advanceDays(api, ctx, learner);
+    expect((await getToday(api, learner)).budgetMinutes).toBe(15);
+  });
+
+  it('đổi mục tiêu khi chưa học gì: lộ trình mới và kế hoạch hôm nay được sinh lại', async () => {
+    const learner = await onboardedLearner(api, ctx);
+    const day1 = await getToday(api, learner);
+
+    expect((await patchMe(learner, { goalType: 'work' })).status).toBe(200);
+    expect((await getToday(api, learner)).id).not.toBe(day1.id);
   });
 });
 
@@ -199,15 +224,12 @@ describe('tạm dừng và tiếp tục', () => {
 
 describe('ưu tiên kỹ năng', () => {
   it('đặt prioritizedSkill đổi loại đơn vị mới trong kế hoạch kế tiếp', async () => {
-    // Kế hoạch hôm nay đã được sinh lúc hoàn tất onboarding và không đổi; thiết lập có hiệu lực từ
-    // kế hoạch được sinh kế tiếp (SC-006).
+    // Kế hoạch hôm nay chưa học gì nên được sinh lại ngay theo thiết lập mới (SC-006).
     const plain = await onboardedLearner(api, ctx);
     const prioritized = await onboardedLearner(api, ctx);
     expect((await patchMe(prioritized, { prioritizedSkill: 'grammar' })).status).toBe(200);
     const today = await getToday(api, prioritized);
-    expect(today.items.map((i: any) => i.title)).toEqual(
-      (await getToday(api, plain)).items.map((i: any) => i.title),
-    );
+    expect((await planKinds([today.items[0].id]))[0]!.kind).toBe('grammar');
 
     await advanceDays(api, ctx, plain);
     await advanceDays(api, ctx, prioritized, 0); // đồng hồ dùng chung: chỉ đăng nhập lại lấy token mới

@@ -1,0 +1,207 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-opinions",
+  "title": {
+    "vi": "Viết: Ý kiến – lý do (4)",
+    "en": "Writing: Opinions and reasons (4)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "早く帰るべきだ",
+      "reading": "はやくかえるべきだ",
+      "meaning": {
+        "vi": "Nên về sớm (dùng べきだ)",
+        "en": "One should go home early (べきだ)"
+      }
+    },
+    {
+      "japanese": "雨が降るかもしれません",
+      "reading": "あめがふるかもしれません",
+      "meaning": {
+        "vi": "Có thể trời sẽ mưa.",
+        "en": "It might rain."
+      }
+    },
+    {
+      "japanese": "先生は来るに違いない",
+      "reading": "せんせいはくるにちがいない",
+      "meaning": {
+        "vi": "Chắc chắn thầy/cô sẽ đến (dùng に違いない)",
+        "en": "The teacher will surely come (に違いない)"
+      }
+    },
+    {
+      "japanese": "毎日運動するようにしています",
+      "reading": "まいにちうんどうするようにしています",
+      "meaning": {
+        "vi": "Tôi cố gắng vận động mỗi ngày (dùng ようにしている)",
+        "en": "I try to exercise every day (ようにしている)"
+      }
+    },
+    {
+      "japanese": "日本で働くことにしました",
+      "reading": "にほんではたらくことにしました",
+      "meaning": {
+        "vi": "Tôi đã quyết định làm việc ở Nhật (dùng ことにする)",
+        "en": "I decided to work in Japan (ことにする)"
+      }
+    },
+    {
+      "japanese": "何も食べずに出かけました",
+      "reading": "なにもたべずにでかけました",
+      "meaning": {
+        "vi": "Tôi đã ra ngoài mà không ăn gì cả (dùng ずに)",
+        "en": "I went out without eating anything (ずに)"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nên về sớm (dùng べきだ)”",
+        "en": "Type in Japanese: “One should go home early (べきだ)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "早く帰るべきだ",
+          "はやくかえるべきだ"
+        ],
+        "hint": "よみ: はやくかえるべきだ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nên về sớm (dùng べきだ)” viết là 早く帰るべきだ. 「～べきだ」 = nên, phải làm (động từ thể từ điển).",
+        "en": "Correct! “One should go home early (べきだ)” is written 早く帰るべきだ. 「～べきだ」 = should (dictionary form of the verb)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 早く帰るべきだ (đọc là はやくかえるべきだ). 「～べきだ」 = nên, phải làm (động từ thể từ điển).",
+        "en": "Not quite. Reference answer: 早く帰るべきだ (read as はやくかえるべきだ). 「～べきだ」 = should (dictionary form of the verb)."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Có thể trời sẽ mưa.”",
+        "en": "Type in Japanese: “It might rain.”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "雨が降るかもしれません",
+          "あめがふるかもしれません",
+          "雨がふるかもしれません",
+          "雨が降るかも知れません"
+        ],
+        "hint": "よみ: あめがふるかもしれません"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Có thể trời sẽ mưa.” viết là 雨が降るかもしれません. 「～かもしれません」 = có thể là…",
+        "en": "Correct! “It might rain.” is written 雨が降るかもしれません. 「～かもしれません」 = may be…, might…"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 雨が降るかもしれません (đọc là あめがふるかもしれません). 「～かもしれません」 = có thể là…",
+        "en": "Not quite. Reference answer: 雨が降るかもしれません (read as あめがふるかもしれません). 「～かもしれません」 = may be…, might…"
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chắc chắn thầy/cô sẽ đến (dùng に違いない)”",
+        "en": "Type in Japanese: “The teacher will surely come (に違いない)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "先生は来るに違いない",
+          "せんせいはくるにちがいない",
+          "先生は来るにちがいない"
+        ],
+        "hint": "よみ: せんせいはくるにちがいない"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Chắc chắn thầy/cô sẽ đến (dùng に違いない)” viết là 先生は来るに違いない. 「～に違いない」 = chắc chắn là…, mức tin chắc cao.",
+        "en": "Correct! “The teacher will surely come (に違いない)” is written 先生は来るに違いない. 「～に違いない」 = must be…, a high degree of certainty."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 先生は来るに違いない (đọc là せんせいはくるにちがいない). 「～に違いない」 = chắc chắn là…, mức tin chắc cao.",
+        "en": "Not quite. Reference answer: 先生は来るに違いない (read as せんせいはくるにちがいない). 「～に違いない」 = must be…, a high degree of certainty."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi cố gắng vận động mỗi ngày (dùng ようにしている)”",
+        "en": "Type in Japanese: “I try to exercise every day (ようにしている)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "毎日運動するようにしています",
+          "まいにちうんどうするようにしています"
+        ],
+        "hint": "よみ: まいにちうんどうするようにしています"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi cố gắng vận động mỗi ngày (dùng ようにしている)” viết là 毎日運動するようにしています. 「～ようにしている」 = cố gắng duy trì thói quen.",
+        "en": "Correct! “I try to exercise every day (ようにしている)” is written 毎日運動するようにしています. 「～ようにしている」 = make an effort to keep a habit."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 毎日運動するようにしています (đọc là まいにちうんどうするようにしています). 「～ようにしている」 = cố gắng duy trì thói quen.",
+        "en": "Not quite. Reference answer: 毎日運動するようにしています (read as まいにちうんどうするようにしています). 「～ようにしている」 = make an effort to keep a habit."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi đã quyết định làm việc ở Nhật (dùng ことにする)”",
+        "en": "Type in Japanese: “I decided to work in Japan (ことにする)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "日本で働くことにしました",
+          "にほんではたらくことにしました",
+          "日本ではたらくことにしました"
+        ],
+        "hint": "よみ: にほんではたらくことにしました"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi đã quyết định làm việc ở Nhật (dùng ことにする)” viết là 日本で働くことにしました. 「～ことにする」 = tự mình quyết định…",
+        "en": "Correct! “I decided to work in Japan (ことにする)” is written 日本で働くことにしました. 「～ことにする」 = decide (by oneself) to…"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 日本で働くことにしました (đọc là にほんではたらくことにしました). 「～ことにする」 = tự mình quyết định…",
+        "en": "Not quite. Reference answer: 日本で働くことにしました (read as にほんではたらくことにしました). 「～ことにする」 = decide (by oneself) to…"
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tôi đã ra ngoài mà không ăn gì cả (dùng ずに)”",
+        "en": "Type in Japanese: “I went out without eating anything (ずに)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "何も食べずに出かけました",
+          "なにもたべずにでかけました"
+        ],
+        "hint": "よみ: なにもたべずにでかけました"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tôi đã ra ngoài mà không ăn gì cả (dùng ずに)” viết là 何も食べずに出かけました. 「～ずに」 = không làm… mà…, tương đương 「～ないで」.",
+        "en": "Correct! “I went out without eating anything (ずに)” is written 何も食べずに出かけました. 「～ずに」 = without doing…, equivalent to 「～ないで」."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Đáp án tham chiếu: 何も食べずに出かけました (đọc là なにもたべずにでかけました). 「～ずに」 = không làm… mà…, tương đương 「～ないで」.",
+        "en": "Not quite. Reference answer: 何も食べずに出かけました (read as なにもたべずにでかけました). 「～ずに」 = without doing…, equivalent to 「～ないで」."
+      }
+    }
+  ]
+}

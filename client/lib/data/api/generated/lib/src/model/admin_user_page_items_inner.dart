@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'admin_user_page_items_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,59 +20,113 @@ part 'admin_user_page_items_inner.g.dart';
 class AdminUserPageItemsInner {
   /// Returns a new [AdminUserPageItemsInner] instance.
   AdminUserPageItemsInner({
-    this.id,
 
-    this.email,
+     this.id,
 
-    this.displayName,
+     this.email,
 
-    this.role,
+     this.displayName,
 
-    this.status,
+     this.role,
 
-    this.createdAt,
+     this.status,
+
+     this.createdAt,
   });
 
-  @JsonKey(name: r'id', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? id;
 
-  @JsonKey(name: r'email', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'email',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? email;
 
-  @JsonKey(name: r'displayName', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'displayName',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? displayName;
 
-  @JsonKey(name: r'role', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'role',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final AdminUserPageItemsInnerRoleEnum? role;
 
-  @JsonKey(name: r'status', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final AccountStatus? status;
 
-  @JsonKey(name: r'createdAt', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'createdAt',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final DateTime? createdAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is AdminUserPageItemsInner &&
-          other.id == id &&
-          other.email == email &&
-          other.displayName == displayName &&
-          other.role == role &&
-          other.status == status &&
-          other.createdAt == createdAt;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      email.hashCode +
-      displayName.hashCode +
-      role.hashCode +
-      status.hashCode +
-      createdAt.hashCode;
 
-  factory AdminUserPageItemsInner.fromJson(Map<String, dynamic> json) =>
-      _$AdminUserPageItemsInnerFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is AdminUserPageItemsInner &&
+      other.id == id &&
+      other.email == email &&
+      other.displayName == displayName &&
+      other.role == role &&
+      other.status == status &&
+      other.createdAt == createdAt;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        email.hashCode +
+        displayName.hashCode +
+        role.hashCode +
+        status.hashCode +
+        createdAt.hashCode;
+
+  factory AdminUserPageItemsInner.fromJson(Map<String, dynamic> json) => _$AdminUserPageItemsInnerFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminUserPageItemsInnerToJson(this);
 
@@ -79,18 +134,21 @@ class AdminUserPageItemsInner {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum AdminUserPageItemsInnerRoleEnum {
-  @JsonValue(r'learner')
-  learner(r'learner'),
-  @JsonValue(r'admin')
-  admin(r'admin');
+@JsonValue(r'learner')
+learner(r'learner'),
+@JsonValue(r'admin')
+admin(r'admin');
 
-  const AdminUserPageItemsInnerRoleEnum(this.value);
+const AdminUserPageItemsInnerRoleEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

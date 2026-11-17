@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-sales-service",
+  "title": {
+    "vi": "Ủy thác, cơ sở kinh doanh và mua bán",
+    "en": "Consignment, offices and trading"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 490,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "委託",
+      "reading": "いたく",
+      "meaning": {
+        "vi": "Ủy thác; giao phó",
+        "en": "Entrusting; consignment"
+      },
+      "examples": [
+        {
+          "ja": "商品の販売を、専門の会社に委託しました。",
+          "reading": "しょうひんのはんばいを、せんもんのかいしゃにいたくしました。",
+          "translation": {
+            "vi": "Chúng tôi đã ủy thác việc bán sản phẩm cho một công ty chuyên môn.",
+            "en": "We entrusted the sale of the product to a specialist company."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "営業所",
+      "reading": "えいぎょうしょ",
+      "meaning": {
+        "vi": "Văn phòng kinh doanh; chi điểm bán hàng",
+        "en": "Sales office"
+      },
+      "examples": [
+        {
+          "ja": "近くの営業所に、書類を持って行ってください。",
+          "reading": "ちかくのえいぎょうしょに、しょるいをもっていってください。",
+          "translation": {
+            "vi": "Xin hãy mang giấy tờ đến văn phòng kinh doanh gần đây.",
+            "en": "Please take the documents to a nearby sales office."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "本店",
+      "reading": "ほんてん",
+      "meaning": {
+        "vi": "Cửa hàng chính; trụ sở chính",
+        "en": "Main store; head office"
+      },
+      "examples": [
+        {
+          "ja": "この店の本店は、京都にあります。",
+          "reading": "このみせのほんてんは、きょうとにあります。",
+          "translation": {
+            "vi": "Cửa hàng chính của tiệm này ở Kyoto.",
+            "en": "The main store of this shop is in Kyoto."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "同業",
+      "reading": "どうぎょう",
+      "meaning": {
+        "vi": "Cùng ngành nghề",
+        "en": "The same trade or business"
+      },
+      "examples": [
+        {
+          "ja": "同業の人たちが集まって、情報を交換しました。",
+          "reading": "どうぎょうのひとたちがあつまって、じょうほうをこうかんしました。",
+          "translation": {
+            "vi": "Những người cùng ngành đã tụ họp để trao đổi thông tin.",
+            "en": "People in the same line of business gathered to exchange information."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "売買",
+      "reading": "ばいばい",
+      "meaning": {
+        "vi": "Mua bán",
+        "en": "Buying and selling; trade"
+      },
+      "examples": [
+        {
+          "ja": "土地の売買には、いろいろな手続きが必要です。",
+          "reading": "とちのばいばいには、いろいろなてつづきがひつようです。",
+          "translation": {
+            "vi": "Mua bán đất cần nhiều thủ tục khác nhau.",
+            "en": "Buying and selling land requires a variety of procedures."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "売却",
+      "reading": "ばいきゃく",
+      "meaning": {
+        "vi": "Bán đi; thanh lý",
+        "en": "Sale; disposal"
+      },
+      "examples": [
+        {
+          "ja": "古いビルを売却して、新しい事務所を借りました。",
+          "reading": "ふるいビルをばいきゃくして、あたらしいじむしょをかりました。",
+          "translation": {
+            "vi": "Công ty đã bán tòa nhà cũ và thuê văn phòng mới.",
+            "en": "They sold the old building and rented a new office."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "委託",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 商品の販売を、専門の会社に（　）しました。 — Nghĩa của câu: “Chúng tôi đã ủy thác việc bán sản phẩm cho một công ty chuyên môn.”",
+        "en": "Choose the word that fits the blank: 商品の販売を、専門の会社に（　）しました。 — Meaning of the sentence: “We entrusted the sale of the product to a specialist company.”"
+      },
+      "payload": {
+        "choices": [
+          "委託",
+          "営業所",
+          "売却",
+          "本店"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「委託」(Ủy thác; giao phó) hợp nghĩa câu này: “Chúng tôi đã ủy thác việc bán sản phẩm cho một công ty chuyên môn.”",
+        "en": "Correct! 「委託」(Entrusting; consignment) fits this sentence: “We entrusted the sale of the product to a specialist company.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi đã ủy thác việc bán sản phẩm cho một công ty chuyên môn.”, nên cần 「委託」(Ủy thác; giao phó); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We entrusted the sale of the product to a specialist company.”, so it needs 「委託」(Entrusting; consignment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "営業所",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 近くの（　）に、書類を持って行ってください。 — Nghĩa của câu: “Xin hãy mang giấy tờ đến văn phòng kinh doanh gần đây.”",
+        "en": "Choose the word that fits the blank: 近くの（　）に、書類を持って行ってください。 — Meaning of the sentence: “Please take the documents to a nearby sales office.”"
+      },
+      "payload": {
+        "choices": [
+          "本店",
+          "営業所",
+          "売却",
+          "委託"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「営業所」(Văn phòng kinh doanh; chi điểm bán hàng) hợp nghĩa câu này: “Xin hãy mang giấy tờ đến văn phòng kinh doanh gần đây.”",
+        "en": "Correct! 「営業所」(Sales office) fits this sentence: “Please take the documents to a nearby sales office.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin hãy mang giấy tờ đến văn phòng kinh doanh gần đây.”, nên cần 「営業所」(Văn phòng kinh doanh; chi điểm bán hàng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please take the documents to a nearby sales office.”, so it needs 「営業所」(Sales office); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "本店",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この店の（　）は、京都にあります。 — Nghĩa của câu: “Cửa hàng chính của tiệm này ở Kyoto.”",
+        "en": "Choose the word that fits the blank: この店の（　）は、京都にあります。 — Meaning of the sentence: “The main store of this shop is in Kyoto.”"
+      },
+      "payload": {
+        "choices": [
+          "営業所",
+          "委託",
+          "本店",
+          "売買"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「本店」(Cửa hàng chính; trụ sở chính) hợp nghĩa câu này: “Cửa hàng chính của tiệm này ở Kyoto.”",
+        "en": "Correct! 「本店」(Main store; head office) fits this sentence: “The main store of this shop is in Kyoto.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cửa hàng chính của tiệm này ở Kyoto.”, nên cần 「本店」(Cửa hàng chính; trụ sở chính); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The main store of this shop is in Kyoto.”, so it needs 「本店」(Main store; head office); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "同業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）の人たちが集まって、情報を交換しました。 — Nghĩa của câu: “Những người cùng ngành đã tụ họp để trao đổi thông tin.”",
+        "en": "Choose the word that fits the blank: （　）の人たちが集まって、情報を交換しました。 — Meaning of the sentence: “People in the same line of business gathered to exchange information.”"
+      },
+      "payload": {
+        "choices": [
+          "営業所",
+          "売却",
+          "本店",
+          "同業"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「同業」(Cùng ngành nghề) hợp nghĩa câu này: “Những người cùng ngành đã tụ họp để trao đổi thông tin.”",
+        "en": "Correct! 「同業」(The same trade or business) fits this sentence: “People in the same line of business gathered to exchange information.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Những người cùng ngành đã tụ họp để trao đổi thông tin.”, nên cần 「同業」(Cùng ngành nghề); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “People in the same line of business gathered to exchange information.”, so it needs 「同業」(The same trade or business); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "売買",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 土地の（　）には、いろいろな手続きが必要です。 — Nghĩa của câu: “Mua bán đất cần nhiều thủ tục khác nhau.”",
+        "en": "Choose the word that fits the blank: 土地の（　）には、いろいろな手続きが必要です。 — Meaning of the sentence: “Buying and selling land requires a variety of procedures.”"
+      },
+      "payload": {
+        "choices": [
+          "売買",
+          "営業所",
+          "同業",
+          "委託"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売買」(Mua bán) hợp nghĩa câu này: “Mua bán đất cần nhiều thủ tục khác nhau.”",
+        "en": "Correct! 「売買」(Buying and selling; trade) fits this sentence: “Buying and selling land requires a variety of procedures.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Mua bán đất cần nhiều thủ tục khác nhau.”, nên cần 「売買」(Mua bán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Buying and selling land requires a variety of procedures.”, so it needs 「売買」(Buying and selling; trade); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "売却",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 古いビルを（　）して、新しい事務所を借りました。 — Nghĩa của câu: “Công ty đã bán tòa nhà cũ và thuê văn phòng mới.”",
+        "en": "Choose the word that fits the blank: 古いビルを（　）して、新しい事務所を借りました。 — Meaning of the sentence: “They sold the old building and rented a new office.”"
+      },
+      "payload": {
+        "choices": [
+          "営業所",
+          "売却",
+          "委託",
+          "同業"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「売却」(Bán đi; thanh lý) hợp nghĩa câu này: “Công ty đã bán tòa nhà cũ và thuê văn phòng mới.”",
+        "en": "Correct! 「売却」(Sale; disposal) fits this sentence: “They sold the old building and rented a new office.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty đã bán tòa nhà cũ và thuê văn phòng mới.”, nên cần 「売却」(Bán đi; thanh lý); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “They sold the old building and rented a new office.”, so it needs 「売却」(Sale; disposal); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "委託",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 商品の販売を、専門の会社に「委託」しました。",
+        "en": "Choose the correct reading of the word in 「」: 商品の販売を、専門の会社に「委託」しました。"
+      },
+      "payload": {
+        "choices": [
+          "どうぎょう",
+          "いたく",
+          "えいぎょうしょ",
+          "ばいばい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「委託」 đọc là 「いたく」, nghĩa là Ủy thác; giao phó.",
+        "en": "Correct! 「委託」 is read 「いたく」 and means Entrusting; consignment."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「委託」 đọc là 「いたく」 (Ủy thác; giao phó); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「委託」 is read 「いたく」 (Entrusting; consignment); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "同業",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「同業」の人たちが集まって、情報を交換しました。",
+        "en": "Choose the correct reading of the word in 「」: 「同業」の人たちが集まって、情報を交換しました。"
+      },
+      "payload": {
+        "choices": [
+          "ばいばい",
+          "いたく",
+          "どうぎょう",
+          "ほんてん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「同業」 đọc là 「どうぎょう」, nghĩa là Cùng ngành nghề.",
+        "en": "Correct! 「同業」 is read 「どうぎょう」 and means The same trade or business."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「同業」 đọc là 「どうぎょう」 (Cùng ngành nghề); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「同業」 is read 「どうぎょう」 (The same trade or business); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "売却",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 古いビルを「ばいきゃく」して、新しい事務所を借りました。",
+        "en": "Choose the correct way to write the word in 「」: 古いビルを「ばいきゃく」して、新しい事務所を借りました。"
+      },
+      "payload": {
+        "choices": [
+          "営業所",
+          "本店",
+          "売却",
+          "委託"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ばいきゃく」 viết là 「売却」, nghĩa là Bán đi; thanh lý.",
+        "en": "Correct! 「ばいきゃく」 is written 「売却」 and means Sale; disposal."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ばいきゃく」 viết là 「売却」 (Bán đi; thanh lý); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ばいきゃく」 is written 「売却」 (Sale; disposal); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-adverbs-degree",
+  "title": {
+    "vi": "Phó từ chỉ mức độ và tần suất",
+    "en": "Adverbs of degree and frequency"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3070,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "度々",
+      "reading": "たびたび",
+      "meaning": {
+        "vi": "Nhiều lần; thường xuyên",
+        "en": "Often; repeatedly"
+      },
+      "examples": [
+        {
+          "ja": "彼は、会議に度々遅れて来ます。",
+          "reading": "かれは、かいぎにたびたびおくれてきます。",
+          "translation": {
+            "vi": "Anh ấy thường xuyên đến họp muộn.",
+            "en": "He often arrives late to meetings."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "殊に",
+      "reading": "ことに",
+      "meaning": {
+        "vi": "Đặc biệt là",
+        "en": "Especially"
+      },
+      "examples": [
+        {
+          "ja": "この町は、殊に秋の景色が美しいです。",
+          "reading": "このまちは、ことにあきのけしきがうつくしいです。",
+          "translation": {
+            "vi": "Thị trấn này đặc biệt đẹp vào mùa thu.",
+            "en": "This town is especially beautiful in autumn."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "強いて",
+      "reading": "しいて",
+      "meaning": {
+        "vi": "Nếu buộc phải; gượng ép",
+        "en": "If pressed; forcibly"
+      },
+      "examples": [
+        {
+          "ja": "強いて言えば、私は犬より猫のほうが好きです。",
+          "reading": "しいていえば、わたしはいぬよりねこのほうがすきです。",
+          "translation": {
+            "vi": "Nếu buộc phải nói thì tôi thích mèo hơn chó.",
+            "en": "If I had to say, I like cats better than dogs."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "甚だ",
+      "reading": "はなはだ",
+      "meaning": {
+        "vi": "Rất; cực kỳ (văn viết)",
+        "en": "Extremely; exceedingly"
+      },
+      "examples": [
+        {
+          "ja": "約束を守らないとは、甚だ失礼です。",
+          "reading": "やくそくをまもらないとは、はなはだしつれいです。",
+          "translation": {
+            "vi": "Không giữ lời hứa thì thật là cực kỳ thất lễ.",
+            "en": "Not keeping a promise is extremely rude."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "誠に",
+      "reading": "まことに",
+      "meaning": {
+        "vi": "Thật sự; vô cùng (lịch sự)",
+        "en": "Truly; sincerely"
+      },
+      "examples": [
+        {
+          "ja": "ご迷惑をおかけして、誠に申し訳ありません。",
+          "reading": "ごめいわくをおかけして、まことにもうしわけありません。",
+          "translation": {
+            "vi": "Chúng tôi vô cùng xin lỗi vì đã gây phiền phức.",
+            "en": "We are truly sorry for the inconvenience."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "一際",
+      "reading": "ひときわ",
+      "meaning": {
+        "vi": "Nổi bật hơn hẳn",
+        "en": "Particularly; conspicuously"
+      },
+      "examples": [
+        {
+          "ja": "夜空に、一際明るい星が見えました。",
+          "reading": "よぞらに、ひときわあかるいほしがみえました。",
+          "translation": {
+            "vi": "Trên bầu trời đêm có một ngôi sao sáng nổi bật hơn hẳn.",
+            "en": "A particularly bright star could be seen in the night sky."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "度々",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、会議に（　）遅れて来ます。 — Nghĩa của câu: “Anh ấy thường xuyên đến họp muộn.”",
+        "en": "Choose the word that fits the blank: 彼は、会議に（　）遅れて来ます。 — Meaning of the sentence: “He often arrives late to meetings.”"
+      },
+      "payload": {
+        "choices": [
+          "誠に",
+          "一際",
+          "度々",
+          "強いて"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「度々」(Nhiều lần; thường xuyên) hợp nghĩa câu này: “Anh ấy thường xuyên đến họp muộn.”",
+        "en": "Correct! 「度々」(Often; repeatedly) fits this sentence: “He often arrives late to meetings.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy thường xuyên đến họp muộn.”, nên cần 「度々」(Nhiều lần; thường xuyên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He often arrives late to meetings.”, so it needs 「度々」(Often; repeatedly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "殊に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この町は、（　）秋の景色が美しいです。 — Nghĩa của câu: “Thị trấn này đặc biệt đẹp vào mùa thu.”",
+        "en": "Choose the word that fits the blank: この町は、（　）秋の景色が美しいです。 — Meaning of the sentence: “This town is especially beautiful in autumn.”"
+      },
+      "payload": {
+        "choices": [
+          "強いて",
+          "誠に",
+          "甚だ",
+          "殊に"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「殊に」(Đặc biệt là) hợp nghĩa câu này: “Thị trấn này đặc biệt đẹp vào mùa thu.”",
+        "en": "Correct! 「殊に」(Especially) fits this sentence: “This town is especially beautiful in autumn.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thị trấn này đặc biệt đẹp vào mùa thu.”, nên cần 「殊に」(Đặc biệt là); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This town is especially beautiful in autumn.”, so it needs 「殊に」(Especially); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "強いて",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）言えば、私は犬より猫のほうが好きです。 — Nghĩa của câu: “Nếu buộc phải nói thì tôi thích mèo hơn chó.”",
+        "en": "Choose the word that fits the blank: （　）言えば、私は犬より猫のほうが好きです。 — Meaning of the sentence: “If I had to say, I like cats better than dogs.”"
+      },
+      "payload": {
+        "choices": [
+          "強いて",
+          "甚だ",
+          "誠に",
+          "一際"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「強いて」(Nếu buộc phải; gượng ép) hợp nghĩa câu này: “Nếu buộc phải nói thì tôi thích mèo hơn chó.”",
+        "en": "Correct! 「強いて」(If pressed; forcibly) fits this sentence: “If I had to say, I like cats better than dogs.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu buộc phải nói thì tôi thích mèo hơn chó.”, nên cần 「強いて」(Nếu buộc phải; gượng ép); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If I had to say, I like cats better than dogs.”, so it needs 「強いて」(If pressed; forcibly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "甚だ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 約束を守らないとは、（　）失礼です。 — Nghĩa của câu: “Không giữ lời hứa thì thật là cực kỳ thất lễ.”",
+        "en": "Choose the word that fits the blank: 約束を守らないとは、（　）失礼です。 — Meaning of the sentence: “Not keeping a promise is extremely rude.”"
+      },
+      "payload": {
+        "choices": [
+          "殊に",
+          "甚だ",
+          "一際",
+          "誠に"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「甚だ」(Rất; cực kỳ (văn viết)) hợp nghĩa câu này: “Không giữ lời hứa thì thật là cực kỳ thất lễ.”",
+        "en": "Correct! 「甚だ」(Extremely; exceedingly) fits this sentence: “Not keeping a promise is extremely rude.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Không giữ lời hứa thì thật là cực kỳ thất lễ.”, nên cần 「甚だ」(Rất; cực kỳ (văn viết)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Not keeping a promise is extremely rude.”, so it needs 「甚だ」(Extremely; exceedingly); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "誠に",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ご迷惑をおかけして、（　）申し訳ありません。 — Nghĩa của câu: “Chúng tôi vô cùng xin lỗi vì đã gây phiền phức.”",
+        "en": "Choose the word that fits the blank: ご迷惑をおかけして、（　）申し訳ありません。 — Meaning of the sentence: “We are truly sorry for the inconvenience.”"
+      },
+      "payload": {
+        "choices": [
+          "度々",
+          "強いて",
+          "誠に",
+          "一際"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「誠に」(Thật sự; vô cùng (lịch sự)) hợp nghĩa câu này: “Chúng tôi vô cùng xin lỗi vì đã gây phiền phức.”",
+        "en": "Correct! 「誠に」(Truly; sincerely) fits this sentence: “We are truly sorry for the inconvenience.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Chúng tôi vô cùng xin lỗi vì đã gây phiền phức.”, nên cần 「誠に」(Thật sự; vô cùng (lịch sự)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “We are truly sorry for the inconvenience.”, so it needs 「誠に」(Truly; sincerely); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "一際",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 夜空に、（　）明るい星が見えました。 — Nghĩa của câu: “Trên bầu trời đêm có một ngôi sao sáng nổi bật hơn hẳn.”",
+        "en": "Choose the word that fits the blank: 夜空に、（　）明るい星が見えました。 — Meaning of the sentence: “A particularly bright star could be seen in the night sky.”"
+      },
+      "payload": {
+        "choices": [
+          "強いて",
+          "甚だ",
+          "誠に",
+          "一際"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「一際」(Nổi bật hơn hẳn) hợp nghĩa câu này: “Trên bầu trời đêm có một ngôi sao sáng nổi bật hơn hẳn.”",
+        "en": "Correct! 「一際」(Particularly; conspicuously) fits this sentence: “A particularly bright star could be seen in the night sky.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trên bầu trời đêm có một ngôi sao sáng nổi bật hơn hẳn.”, nên cần 「一際」(Nổi bật hơn hẳn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A particularly bright star could be seen in the night sky.”, so it needs 「一際」(Particularly; conspicuously); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "度々",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、会議に「度々」遅れて来ます。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、会議に「度々」遅れて来ます。"
+      },
+      "payload": {
+        "choices": [
+          "はなはだ",
+          "まことに",
+          "ことに",
+          "たびたび"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「度々」 đọc là 「たびたび」, nghĩa là Nhiều lần; thường xuyên.",
+        "en": "Correct! 「度々」 is read 「たびたび」 and means Often; repeatedly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「度々」 đọc là 「たびたび」 (Nhiều lần; thường xuyên); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「度々」 is read 「たびたび」 (Often; repeatedly); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "甚だ",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 約束を守らないとは、「甚だ」失礼です。",
+        "en": "Choose the correct reading of the word in 「」: 約束を守らないとは、「甚だ」失礼です。"
+      },
+      "payload": {
+        "choices": [
+          "はなはだ",
+          "ひときわ",
+          "たびたび",
+          "ことに"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「甚だ」 đọc là 「はなはだ」, nghĩa là Rất; cực kỳ (văn viết).",
+        "en": "Correct! 「甚だ」 is read 「はなはだ」 and means Extremely; exceedingly."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「甚だ」 đọc là 「はなはだ」 (Rất; cực kỳ (văn viết)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「甚だ」 is read 「はなはだ」 (Extremely; exceedingly); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "一際",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 夜空に、「ひときわ」明るい星が見えました。",
+        "en": "Choose the correct way to write the word in 「」: 夜空に、「ひときわ」明るい星が見えました。"
+      },
+      "payload": {
+        "choices": [
+          "一際",
+          "殊に",
+          "強いて",
+          "度々"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ひときわ」 viết là 「一際」, nghĩa là Nổi bật hơn hẳn.",
+        "en": "Correct! 「ひときわ」 is written 「一際」 and means Particularly; conspicuously."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「ひときわ」 viết là 「一際」 (Nổi bật hơn hẳn); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「ひときわ」 is written 「一際」 (Particularly; conspicuously); the other words are read differently."
+      }
+    }
+  ]
+}

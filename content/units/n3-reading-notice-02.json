@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-work-life",
+  "title": {
+    "vi": "Đọc: Quy định mới về đăng ký làm thêm giờ",
+    "en": "Reading: New overtime application rules"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "全社員のみなさんへ\n来月1日から、残業の申請方法が変わります。これまでは、上司に口で伝えるだけでよかったのですが、今後は、社内のシステムから申請しなければなりません。\n【新しい方法】\n1. 残業をする日の前日までに、システムに入ります。\n2. 残業の理由と予定の時間を入力します。\n3. 上司が確認すると、申請が完了します。\n急な残業が必要な場合は、当日の午後3時までに申請してください。申請がない残業は、認められません。わからないことがあれば、人事課のスズキまで聞いてください。",
+      "meaning": {
+        "vi": "Gửi toàn thể nhân viên. Từ ngày 1 tháng sau, cách đăng ký làm thêm giờ sẽ thay đổi. Trước đây chỉ cần nói miệng với cấp trên là được, nhưng từ nay phải đăng ký qua hệ thống nội bộ của công ty. [Cách mới] 1. Trước ngày làm thêm, đăng nhập vào hệ thống. 2. Nhập lý do làm thêm và thời gian dự kiến. 3. Khi cấp trên xác nhận, việc đăng ký hoàn tất. Trường hợp cần làm thêm đột xuất, xin đăng ký trước 3 giờ chiều cùng ngày. Giờ làm thêm không có đăng ký sẽ không được công nhận. Nếu có điều gì chưa rõ, xin hỏi anh/chị Suzuki ở phòng nhân sự.",
+        "en": "To all employees: From the 1st of next month, the way to apply for overtime will change. Until now it was enough to tell your supervisor verbally, but from now on you must apply through the in-house system. [New method] 1. By the day before the overtime, log in to the system. 2. Enter the reason for the overtime and the expected hours. 3. When your supervisor confirms it, the application is complete. If sudden overtime is necessary, apply by 3 p.m. on the same day. Overtime without an application will not be recognized. If you have any questions, please ask Suzuki in the Personnel Department."
+      },
+      "explanation": {
+        "vi": "「～だけでよかった」= trước đây chỉ cần…; 「～なければなりません」= phải…; 「～と、…」= khi… thì…. Từ vựng: 「申請」(しんせい) = đăng ký/nộp đơn; 「上司」(じょうし) = cấp trên; 「完了」(かんりょう) = hoàn tất.",
+        "en": "「～だけでよかった」 = it used to be enough to…; 「～なければなりません」 = must…; 「～と、…」 = when…. Vocabulary: 「申請」(しんせい) = application; 「上司」(じょうし) = supervisor; 「完了」(かんりょう) = completion."
+      },
+      "scopeRef": "r-n3-notice-company-service"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều gì sẽ thay đổi từ tháng sau?",
+        "en": "What will change from next month?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Giờ làm việc",
+            "en": "Working hours"
+          },
+          {
+            "vi": "Cách đăng ký làm thêm giờ",
+            "en": "How to apply for overtime"
+          },
+          {
+            "vi": "Tiền lương làm thêm giờ",
+            "en": "Overtime pay"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「残業の申請方法が変わります」: 「申請方法」là cách đăng ký; thông báo nói cách đăng ký làm thêm giờ thay đổi.",
+        "en": "Correct! The text has 「残業の申請方法が変わります」: 「申請方法」 means the application method, and it is overtime applications that change."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「残業の申請方法が変わります」: 「申請方法」là cách đăng ký; thông báo nói cách đăng ký làm thêm giờ thay đổi.",
+        "en": "Not quite. Look again at 「残業の申請方法が変わります」: 「申請方法」 means the application method, and it is overtime applications that change."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Trước đây nhân viên đăng ký làm thêm giờ như thế nào?",
+        "en": "How did employees apply for overtime before?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nói miệng với cấp trên",
+            "en": "They told their supervisor verbally"
+          },
+          {
+            "vi": "Điền vào giấy",
+            "en": "They filled in a paper form"
+          },
+          {
+            "vi": "Gửi email cho phòng nhân sự",
+            "en": "They emailed the Personnel Department"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「上司に口で伝えるだけでよかった」: 「口で伝える」nghĩa là nói miệng; trước đây chỉ cần nói với cấp trên.",
+        "en": "Correct! The text has 「上司に口で伝えるだけでよかった」: 「口で伝える」 means to tell verbally; previously that was enough."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「上司に口で伝えるだけでよかった」: 「口で伝える」nghĩa là nói miệng; trước đây chỉ cần nói với cấp trên.",
+        "en": "Not quite. Look again at 「上司に口で伝えるだけでよかった」: 「口で伝える」 means to tell verbally; previously that was enough."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Khi cần làm thêm giờ đột xuất thì phải làm gì?",
+        "en": "What must you do if sudden overtime is needed?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đăng ký trước 3 giờ chiều cùng ngày",
+            "en": "Apply by 3 p.m. on the same day"
+          },
+          {
+            "vi": "Đăng ký trước một ngày",
+            "en": "Apply the day before"
+          },
+          {
+            "vi": "Không cần đăng ký",
+            "en": "No application is needed"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「当日の午後3時までに申請してください」: 「当日」là ngày hôm đó; cần đăng ký trước 3 giờ chiều hôm đó.",
+        "en": "Correct! The text has 「当日の午後3時までに申請してください」: 「当日」 means that very day; the application must be made by 3 p.m. that day."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「当日の午後3時までに申請してください」: 「当日」là ngày hôm đó; cần đăng ký trước 3 giờ chiều hôm đó.",
+        "en": "Not quite. Look again at 「当日の午後3時までに申請してください」: 「当日」 means that very day; the application must be made by 3 p.m. that day."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Giờ làm thêm không được đăng ký thì sao?",
+        "en": "What happens to overtime that has not been applied for?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vẫn được trả lương",
+            "en": "It is still paid"
+          },
+          {
+            "vi": "Không được công nhận",
+            "en": "It is not recognized"
+          },
+          {
+            "vi": "Phải nộp báo cáo sau",
+            "en": "A report must be submitted later"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「申請がない残業は、認められません」: 「認められません」nghĩa là không được công nhận.",
+        "en": "Correct! The text has 「申請がない残業は、認められません」: 「認められません」 means it will not be recognized."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「申請がない残業は、認められません」: 「認められません」nghĩa là không được công nhận.",
+        "en": "Not quite. Look again at 「申請がない残業は、認められません」: 「認められません」 means it will not be recognized."
+      }
+    }
+  ]
+}

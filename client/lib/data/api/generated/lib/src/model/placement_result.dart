@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'placement_result.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,67 +20,130 @@ part 'placement_result.g.dart';
 class PlacementResult {
   /// Returns a new [PlacementResult] instance.
   PlacementResult({
-    this.id,
 
-    this.estimatedLevel,
+     this.id,
 
-    this.score,
+     this.estimatedLevel,
 
-    this.total,
+     this.score,
 
-    this.strongTopics,
+     this.total,
 
-    this.weakTopics,
+     this.strongTopics,
 
-    this.guessSuspected,
+     this.weakTopics,
+
+     this.guessSuspected,
   });
 
-  /// null cho khách (không lưu)
-  @JsonKey(name: r'id', required: false, includeIfNull: false)
+      /// null cho khách (không lưu)
+  @JsonKey(
+    
+    name: r'id',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? id;
 
-  @JsonKey(name: r'estimatedLevel', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'estimatedLevel',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Level? estimatedLevel;
 
-  @JsonKey(name: r'score', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'score',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? score;
 
-  @JsonKey(name: r'total', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'total',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? total;
 
-  @JsonKey(name: r'strongTopics', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'strongTopics',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<String>? strongTopics;
 
-  @JsonKey(name: r'weakTopics', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'weakTopics',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<String>? weakTopics;
 
-  @JsonKey(name: r'guessSuspected', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'guessSuspected',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? guessSuspected;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is PlacementResult &&
-          other.id == id &&
-          other.estimatedLevel == estimatedLevel &&
-          other.score == score &&
-          other.total == total &&
-          other.strongTopics == strongTopics &&
-          other.weakTopics == weakTopics &&
-          other.guessSuspected == guessSuspected;
 
-  @override
-  int get hashCode =>
-      (id == null ? 0 : id.hashCode) +
-      estimatedLevel.hashCode +
-      score.hashCode +
-      total.hashCode +
-      strongTopics.hashCode +
-      weakTopics.hashCode +
-      guessSuspected.hashCode;
 
-  factory PlacementResult.fromJson(Map<String, dynamic> json) =>
-      _$PlacementResultFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is PlacementResult &&
+      other.id == id &&
+      other.estimatedLevel == estimatedLevel &&
+      other.score == score &&
+      other.total == total &&
+      other.strongTopics == strongTopics &&
+      other.weakTopics == weakTopics &&
+      other.guessSuspected == guessSuspected;
+
+    @override
+    int get hashCode =>
+        (id == null ? 0 : id.hashCode) +
+        estimatedLevel.hashCode +
+        score.hashCode +
+        total.hashCode +
+        strongTopics.hashCode +
+        weakTopics.hashCode +
+        guessSuspected.hashCode;
+
+  factory PlacementResult.fromJson(Map<String, dynamic> json) => _$PlacementResultFromJson(json);
 
   Map<String, dynamic> toJson() => _$PlacementResultToJson(this);
 
@@ -87,4 +151,6 @@ class PlacementResult {
   String toString() {
     return toJson().toString();
   }
+
 }
+

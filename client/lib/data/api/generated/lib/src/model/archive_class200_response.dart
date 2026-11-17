@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'archive_class200_response.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'archive_class200_response.g.dart';
 )
 class ArchiveClass200Response {
   /// Returns a new [ArchiveClass200Response] instance.
-  ArchiveClass200Response({required this.learnersMoved});
+  ArchiveClass200Response({
 
-  @JsonKey(name: r'learnersMoved', required: true, includeIfNull: false)
+    required  this.learnersMoved,
+  });
+
+  @JsonKey(
+    
+    name: r'learnersMoved',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int learnersMoved;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ArchiveClass200Response && other.learnersMoved == learnersMoved;
 
-  @override
-  int get hashCode => learnersMoved.hashCode;
 
-  factory ArchiveClass200Response.fromJson(Map<String, dynamic> json) =>
-      _$ArchiveClass200ResponseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ArchiveClass200Response &&
+      other.learnersMoved == learnersMoved;
+
+    @override
+    int get hashCode =>
+        learnersMoved.hashCode;
+
+  factory ArchiveClass200Response.fromJson(Map<String, dynamic> json) => _$ArchiveClass200ResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$ArchiveClass200ResponseToJson(this);
 
@@ -39,4 +53,6 @@ class ArchiveClass200Response {
   String toString() {
     return toJson().toString();
   }
+
 }
+

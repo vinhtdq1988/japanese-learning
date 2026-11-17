@@ -17,6 +17,7 @@ import 'package:japanese_api/src/model/me.dart';
 import 'package:japanese_api/src/model/profile_update.dart';
 
 class AccountApi {
+
   final Dio _dio;
 
   const AccountApi(this._dio);
@@ -25,7 +26,7 @@ class AccountApi {
   /// Yêu cầu &#x60;currentPassword&#x60; đúng. Đổi thành công thu hồi mọi &#x60;auth_sessions&#x60; khác của người dùng, chỉ giữ phiên hiện tại.
   ///
   /// Parameters:
-  /// * [changePasswordRequest]
+  /// * [changePasswordRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -35,7 +36,7 @@ class AccountApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> changePassword({
+  Future<Response<void>> changePassword({ 
     required ChangePasswordRequest changePasswordRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -47,10 +48,16 @@ class AccountApi {
     final _path = r'/me/password';
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -62,9 +69,13 @@ class AccountApi {
 
     try {
       _bodyData = jsonEncode(changePasswordRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -84,10 +95,10 @@ class AccountApi {
   }
 
   /// Xóa tài khoản – vô hiệu hóa ngay, xóa vĩnh viễn sau 30 ngày (FR-003)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [deleteAccountRequest]
+  /// * [deleteAccountRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -97,7 +108,7 @@ class AccountApi {
   ///
   /// Returns a [Future] containing a [Response] with a [DeleteAccount200Response] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<DeleteAccount200Response>> deleteAccount({
+  Future<Response<DeleteAccount200Response>> deleteAccount({ 
     required DeleteAccountRequest deleteAccountRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -109,10 +120,16 @@ class AccountApi {
     final _path = r'/account/delete';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -124,9 +141,13 @@ class AccountApi {
 
     try {
       _bodyData = jsonEncode(deleteAccountRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -145,14 +166,9 @@ class AccountApi {
     DeleteAccount200Response? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<DeleteAccount200Response, DeleteAccount200Response>(
-              rawData,
-              'DeleteAccount200Response',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<DeleteAccount200Response, DeleteAccount200Response>(rawData, 'DeleteAccount200Response', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -176,7 +192,7 @@ class AccountApi {
   }
 
   /// Thông tin tài khoản + hồ sơ học tập
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -188,7 +204,7 @@ class AccountApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Me] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Me>> getMe({
+  Future<Response<Me>> getMe({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -199,10 +215,16 @@ class AccountApi {
     final _path = r'/me';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -220,10 +242,9 @@ class AccountApi {
     Me? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<Me, Me>(rawData, 'Me', growable: true);
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<Me, Me>(rawData, 'Me', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -259,7 +280,7 @@ class AccountApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Me] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Me>> restoreAccount({
+  Future<Response<Me>> restoreAccount({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -270,10 +291,16 @@ class AccountApi {
     final _path = r'/account/restore';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -291,10 +318,9 @@ class AccountApi {
     Me? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<Me, Me>(rawData, 'Me', growable: true);
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<Me, Me>(rawData, 'Me', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -318,10 +344,10 @@ class AccountApi {
   }
 
   /// Sửa hồ sơ (FR-002)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [profileUpdate]
+  /// * [profileUpdate] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -331,7 +357,7 @@ class AccountApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Me] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Me>> updateMe({
+  Future<Response<Me>> updateMe({ 
     required ProfileUpdate profileUpdate,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -343,10 +369,16 @@ class AccountApi {
     final _path = r'/me';
     final _options = Options(
       method: r'PATCH',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -358,9 +390,13 @@ class AccountApi {
 
     try {
       _bodyData = jsonEncode(profileUpdate);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -379,10 +415,9 @@ class AccountApi {
     Me? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<Me, Me>(rawData, 'Me', growable: true);
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<Me, Me>(rawData, 'Me', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -404,4 +439,5 @@ class AccountApi {
       extra: _response.extra,
     );
   }
+
 }

@@ -32,16 +32,17 @@ import 'package:japanese_api/src/model/request_password_reset_request.dart';
 import 'package:japanese_api/src/model/skill.dart';
 
 class AdminApi {
+
   final Dio _dio;
 
   const AdminApi(this._dio);
 
   /// Cấp giấy phép (kỳ hạn + số seat)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [licenseWrite]
+  /// * [orgId] 
+  /// * [licenseWrite] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -51,7 +52,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [OrgLicense] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<OrgLicense>> adminCreateLicense({
+  Future<Response<OrgLicense>> adminCreateLicense({ 
     required String orgId,
     required LicenseWrite licenseWrite,
     CancelToken? cancelToken,
@@ -61,18 +62,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}/licenses'.replaceAll(
-      '{'
-      r'orgId'
-      '}',
-      orgId.toString(),
-    );
+    final _path = r'/admin/organizations/{orgId}/licenses'.replaceAll('{' r'orgId' '}', orgId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -84,9 +86,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(licenseWrite);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -105,14 +111,9 @@ class AdminApi {
     OrgLicense? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<OrgLicense, OrgLicense>(
-              rawData,
-              'OrgLicense',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<OrgLicense, OrgLicense>(rawData, 'OrgLicense', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -136,10 +137,10 @@ class AdminApi {
   }
 
   /// Tạo tổ chức, mời chủ tổ chức, cấp giấy phép/seat tùy chọn
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [adminOrganizationCreate]
+  /// * [adminOrganizationCreate] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -149,7 +150,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminOrganizationDetail] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminOrganizationDetail>> adminCreateOrganization({
+  Future<Response<AdminOrganizationDetail>> adminCreateOrganization({ 
     required AdminOrganizationCreate adminOrganizationCreate,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -161,10 +162,16 @@ class AdminApi {
     final _path = r'/admin/organizations';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -176,9 +183,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminOrganizationCreate);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -197,14 +208,9 @@ class AdminApi {
     AdminOrganizationDetail? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(
-              rawData,
-              'AdminOrganizationDetail',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(rawData, 'AdminOrganizationDetail', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -228,10 +234,10 @@ class AdminApi {
   }
 
   /// Tạo câu hỏi kiểm tra trình độ (luôn ở trạng thái chưa kích hoạt; đưa vào bộ hiện hành bằng &#x60;PUT /admin/placement-questions/active-set&#x60;)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [adminPlacementQuestion]
+  /// * [adminPlacementQuestion] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -241,7 +247,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminPlacementQuestion] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminPlacementQuestion>> adminCreatePlacementQuestion({
+  Future<Response<AdminPlacementQuestion>> adminCreatePlacementQuestion({ 
     required AdminPlacementQuestion adminPlacementQuestion,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -253,10 +259,16 @@ class AdminApi {
     final _path = r'/admin/placement-questions';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -268,9 +280,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminPlacementQuestion);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -289,14 +305,9 @@ class AdminApi {
     AdminPlacementQuestion? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminPlacementQuestion, AdminPlacementQuestion>(
-              rawData,
-              'AdminPlacementQuestion',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminPlacementQuestion, AdminPlacementQuestion>(rawData, 'AdminPlacementQuestion', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -320,10 +331,10 @@ class AdminApi {
   }
 
   /// Tạo đơn vị học (kèm mục nội dung và bài tập) – FR-030
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [adminUnitWrite]
+  /// * [adminUnitWrite] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -333,7 +344,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminUnit] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminUnit>> adminCreateUnit({
+  Future<Response<AdminUnit>> adminCreateUnit({ 
     required AdminUnitWrite adminUnitWrite,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -345,10 +356,16 @@ class AdminApi {
     final _path = r'/admin/units';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -360,9 +377,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminUnitWrite);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -381,14 +402,9 @@ class AdminApi {
     AdminUnit? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminUnit, AdminUnit>(
-              rawData,
-              'AdminUnit',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminUnit, AdminUnit>(rawData, 'AdminUnit', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -412,10 +428,10 @@ class AdminApi {
   }
 
   /// Chi tiết tổ chức - giấy phép, người giữ seat, chủ tổ chức
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
+  /// * [orgId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -425,7 +441,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminOrganizationDetail] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminOrganizationDetail>> adminGetOrganization({
+  Future<Response<AdminOrganizationDetail>> adminGetOrganization({ 
     required String orgId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -434,18 +450,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}'.replaceAll(
-      '{'
-      r'orgId'
-      '}',
-      orgId.toString(),
-    );
+    final _path = r'/admin/organizations/{orgId}'.replaceAll('{' r'orgId' '}', orgId.toString());
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -463,14 +480,9 @@ class AdminApi {
     AdminOrganizationDetail? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(
-              rawData,
-              'AdminOrganizationDetail',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(rawData, 'AdminOrganizationDetail', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -494,10 +506,10 @@ class AdminApi {
   }
 
   /// Chi tiết đơn vị học (kèm mọi mục và bài tập, cả &#x60;inactive&#x60;)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [unitId]
+  /// * [unitId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -507,7 +519,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminUnit] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminUnit>> adminGetUnit({
+  Future<Response<AdminUnit>> adminGetUnit({ 
     required String unitId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -516,18 +528,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/units/{unitId}'.replaceAll(
-      '{'
-      r'unitId'
-      '}',
-      unitId.toString(),
-    );
+    final _path = r'/admin/units/{unitId}'.replaceAll('{' r'unitId' '}', unitId.toString());
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -545,14 +558,9 @@ class AdminApi {
     AdminUnit? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminUnit, AdminUnit>(
-              rawData,
-              'AdminUnit',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminUnit, AdminUnit>(rawData, 'AdminUnit', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -576,11 +584,11 @@ class AdminApi {
   }
 
   /// Mời thêm/thay chủ tổ chức (không chiếm seat)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [requestPasswordResetRequest]
+  /// * [orgId] 
+  /// * [requestPasswordResetRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -590,7 +598,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [InvitationRow] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<InvitationRow>> adminInviteOwner({
+  Future<Response<InvitationRow>> adminInviteOwner({ 
     required String orgId,
     required RequestPasswordResetRequest requestPasswordResetRequest,
     CancelToken? cancelToken,
@@ -600,18 +608,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}/owners/invitations'.replaceAll(
-      '{'
-      r'orgId'
-      '}',
-      orgId.toString(),
-    );
+    final _path = r'/admin/organizations/{orgId}/owners/invitations'.replaceAll('{' r'orgId' '}', orgId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -623,9 +632,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(requestPasswordResetRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -644,14 +657,9 @@ class AdminApi {
     InvitationRow? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<InvitationRow, InvitationRow>(
-              rawData,
-              'InvitationRow',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<InvitationRow, InvitationRow>(rawData, 'InvitationRow', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -675,7 +683,7 @@ class AdminApi {
   }
 
   /// Nhật ký hành động quản trị (FR-032), mới nhất trước
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cursor] - Giá trị header `X-Next-Cursor` của trang trước
@@ -689,7 +697,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [List<AdminActionLog>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<List<AdminActionLog>>> adminListActionLogs({
+  Future<Response<List<AdminActionLog>>> adminListActionLogs({ 
     String? cursor,
     String? organizationId,
     CancelToken? cancelToken,
@@ -702,10 +710,16 @@ class AdminApi {
     final _path = r'/admin/action-logs';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -729,14 +743,9 @@ class AdminApi {
     List<AdminActionLog>? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<List<AdminActionLog>, AdminActionLog>(
-              rawData,
-              'List<AdminActionLog>',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<List<AdminActionLog>, AdminActionLog>(rawData, 'List<AdminActionLog>', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -760,12 +769,12 @@ class AdminApi {
   }
 
   /// Danh sách tổ chức (không có dữ liệu học viên)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [q]
-  /// * [status]
-  /// * [page]
+  /// * [q] 
+  /// * [status] 
+  /// * [page] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -775,7 +784,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminOrganizationPage] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminOrganizationPage>> adminListOrganizations({
+  Future<Response<AdminOrganizationPage>> adminListOrganizations({ 
     String? q,
     OrgStatus? status,
     int? page = 1,
@@ -789,10 +798,16 @@ class AdminApi {
     final _path = r'/admin/organizations';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -817,14 +832,9 @@ class AdminApi {
     AdminOrganizationPage? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminOrganizationPage, AdminOrganizationPage>(
-              rawData,
-              'AdminOrganizationPage',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminOrganizationPage, AdminOrganizationPage>(rawData, 'AdminOrganizationPage', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -848,7 +858,7 @@ class AdminApi {
   }
 
   /// Danh sách câu hỏi kiểm tra trình độ
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -860,7 +870,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [List<AdminPlacementQuestion>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<List<AdminPlacementQuestion>>> adminListPlacementQuestions({
+  Future<Response<List<AdminPlacementQuestion>>> adminListPlacementQuestions({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -871,10 +881,16 @@ class AdminApi {
     final _path = r'/admin/placement-questions';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -892,14 +908,9 @@ class AdminApi {
     List<AdminPlacementQuestion>? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<List<AdminPlacementQuestion>, AdminPlacementQuestion>(
-              rawData,
-              'List<AdminPlacementQuestion>',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<List<AdminPlacementQuestion>, AdminPlacementQuestion>(rawData, 'List<AdminPlacementQuestion>', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -923,10 +934,10 @@ class AdminApi {
   }
 
   /// Danh sách mảng nội dung (để chọn &#x60;topicId&#x60; khi soạn đơn vị học và câu hỏi kiểm tra trình độ)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [skill]
+  /// * [skill] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -936,7 +947,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [List<AdminTopic>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<List<AdminTopic>>> adminListTopics({
+  Future<Response<List<AdminTopic>>> adminListTopics({ 
     Skill? skill,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -948,10 +959,16 @@ class AdminApi {
     final _path = r'/admin/topics';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -974,14 +991,9 @@ class AdminApi {
     List<AdminTopic>? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<List<AdminTopic>, AdminTopic>(
-              rawData,
-              'List<AdminTopic>',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<List<AdminTopic>, AdminTopic>(rawData, 'List<AdminTopic>', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1005,12 +1017,12 @@ class AdminApi {
   }
 
   /// Danh sách đơn vị học (lọc theo trạng thái, trình độ, loại); không kèm &#x60;items&#x60;/&#x60;exercises&#x60;
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [status]
-  /// * [level]
-  /// * [kind]
+  /// * [status] 
+  /// * [level] 
+  /// * [kind] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1020,7 +1032,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [List<AdminUnit>] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<List<AdminUnit>>> adminListUnits({
+  Future<Response<List<AdminUnit>>> adminListUnits({ 
     String? status,
     String? level,
     Skill? kind,
@@ -1034,10 +1046,16 @@ class AdminApi {
     final _path = r'/admin/units';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1062,14 +1080,9 @@ class AdminApi {
     List<AdminUnit>? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<List<AdminUnit>, AdminUnit>(
-              rawData,
-              'List<AdminUnit>',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<List<AdminUnit>, AdminUnit>(rawData, 'List<AdminUnit>', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1093,7 +1106,7 @@ class AdminApi {
   }
 
   /// Tìm tài khoản người học (FR-031), mới nhất trước
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [q] - Tìm theo email/tên
@@ -1107,7 +1120,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminUserPage] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminUserPage>> adminListUsers({
+  Future<Response<AdminUserPage>> adminListUsers({ 
     String? q,
     String? cursor,
     CancelToken? cancelToken,
@@ -1120,10 +1133,16 @@ class AdminApi {
     final _path = r'/admin/users';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1147,14 +1166,9 @@ class AdminApi {
     AdminUserPage? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminUserPage, AdminUserPage>(
-              rawData,
-              'AdminUserPage',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminUserPage, AdminUserPage>(rawData, 'AdminUserPage', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1178,11 +1192,11 @@ class AdminApi {
   }
 
   /// Thu hồi giấy phép - xử lý như hết hạn
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [licenseId]
+  /// * [orgId] 
+  /// * [licenseId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1192,7 +1206,7 @@ class AdminApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> adminRevokeLicense({
+  Future<Response<void>> adminRevokeLicense({ 
     required String orgId,
     required String licenseId,
     CancelToken? cancelToken,
@@ -1202,25 +1216,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}/licenses/{licenseId}/revoke'
-        .replaceAll(
-          '{'
-          r'orgId'
-          '}',
-          orgId.toString(),
-        )
-        .replaceAll(
-          '{'
-          r'licenseId'
-          '}',
-          licenseId.toString(),
-        );
+    final _path = r'/admin/organizations/{orgId}/licenses/{licenseId}/revoke'.replaceAll('{' r'orgId' '}', orgId.toString()).replaceAll('{' r'licenseId' '}', licenseId.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1239,11 +1247,11 @@ class AdminApi {
   }
 
   /// Thu hồi seat của một người (học viên - đóng thành viên; giáo viên - giữ vai trò, mất quyền dữ liệu)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [userId]
+  /// * [orgId] 
+  /// * [userId] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1253,7 +1261,7 @@ class AdminApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> adminRevokeSeat({
+  Future<Response<void>> adminRevokeSeat({ 
     required String orgId,
     required String userId,
     CancelToken? cancelToken,
@@ -1263,25 +1271,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}/seats/{userId}'
-        .replaceAll(
-          '{'
-          r'orgId'
-          '}',
-          orgId.toString(),
-        )
-        .replaceAll(
-          '{'
-          r'userId'
-          '}',
-          userId.toString(),
-        );
+    final _path = r'/admin/organizations/{orgId}/seats/{userId}'.replaceAll('{' r'orgId' '}', orgId.toString()).replaceAll('{' r'userId' '}', userId.toString());
     final _options = Options(
       method: r'DELETE',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1300,10 +1302,10 @@ class AdminApi {
   }
 
   /// Kích hoạt nguyên tử một bộ câu hỏi (thay thế bộ hiện hành) – PHẢI đúng 20 câu (8 N5, 6 N4, 6 N3) (FR-007, FR-030)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [adminSetActivePlacementSetRequest]
+  /// * [adminSetActivePlacementSetRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1313,9 +1315,8 @@ class AdminApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> adminSetActivePlacementSet({
-    required AdminSetActivePlacementSetRequest
-    adminSetActivePlacementSetRequest,
+  Future<Response<void>> adminSetActivePlacementSet({ 
+    required AdminSetActivePlacementSetRequest adminSetActivePlacementSetRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -1326,10 +1327,16 @@ class AdminApi {
     final _path = r'/admin/placement-questions/active-set';
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1341,9 +1348,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminSetActivePlacementSetRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1363,11 +1374,11 @@ class AdminApi {
   }
 
   /// Kích hoạt / vô hiệu hóa; đánh dấu thuộc tập dùng thử (FR-037)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [unitId]
-  /// * [adminSetUnitStatusRequest]
+  /// * [unitId] 
+  /// * [adminSetUnitStatusRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1377,7 +1388,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminUnit] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminUnit>> adminSetUnitStatus({
+  Future<Response<AdminUnit>> adminSetUnitStatus({ 
     required String unitId,
     required AdminSetUnitStatusRequest adminSetUnitStatusRequest,
     CancelToken? cancelToken,
@@ -1387,18 +1398,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/units/{unitId}/status'.replaceAll(
-      '{'
-      r'unitId'
-      '}',
-      unitId.toString(),
-    );
+    final _path = r'/admin/units/{unitId}/status'.replaceAll('{' r'unitId' '}', unitId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1410,9 +1422,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminSetUnitStatusRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1431,14 +1447,9 @@ class AdminApi {
     AdminUnit? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminUnit, AdminUnit>(
-              rawData,
-              'AdminUnit',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminUnit, AdminUnit>(rawData, 'AdminUnit', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1462,11 +1473,11 @@ class AdminApi {
   }
 
   /// Vô hiệu hóa / kích hoạt lại tài khoản
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [userId]
-  /// * [adminSetUserStatusRequest]
+  /// * [userId] 
+  /// * [adminSetUserStatusRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1476,7 +1487,7 @@ class AdminApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> adminSetUserStatus({
+  Future<Response<void>> adminSetUserStatus({ 
     required String userId,
     required AdminSetUserStatusRequest adminSetUserStatusRequest,
     CancelToken? cancelToken,
@@ -1486,18 +1497,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/users/{userId}/status'.replaceAll(
-      '{'
-      r'userId'
-      '}',
-      userId.toString(),
-    );
+    final _path = r'/admin/users/{userId}/status'.replaceAll('{' r'userId' '}', userId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1509,9 +1521,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminSetUserStatusRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1534,9 +1550,9 @@ class AdminApi {
   /// Giảm &#x60;seats&#x60; dưới (đang dùng + giữ chỗ) → 422 &#x60;SEAT_BELOW_USAGE&#x60;.
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [licenseId]
-  /// * [licenseUpdate]
+  /// * [orgId] 
+  /// * [licenseId] 
+  /// * [licenseUpdate] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1546,7 +1562,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [OrgLicense] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<OrgLicense>> adminUpdateLicense({
+  Future<Response<OrgLicense>> adminUpdateLicense({ 
     required String orgId,
     required String licenseId,
     required LicenseUpdate licenseUpdate,
@@ -1557,25 +1573,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}/licenses/{licenseId}'
-        .replaceAll(
-          '{'
-          r'orgId'
-          '}',
-          orgId.toString(),
-        )
-        .replaceAll(
-          '{'
-          r'licenseId'
-          '}',
-          licenseId.toString(),
-        );
+    final _path = r'/admin/organizations/{orgId}/licenses/{licenseId}'.replaceAll('{' r'orgId' '}', orgId.toString()).replaceAll('{' r'licenseId' '}', licenseId.toString());
     final _options = Options(
       method: r'PATCH',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1587,9 +1597,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(licenseUpdate);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1608,14 +1622,9 @@ class AdminApi {
     OrgLicense? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<OrgLicense, OrgLicense>(
-              rawData,
-              'OrgLicense',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<OrgLicense, OrgLicense>(rawData, 'OrgLicense', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1639,11 +1648,11 @@ class AdminApi {
   }
 
   /// Đổi tên hoặc vô hiệu hóa/kích hoạt lại tổ chức
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [orgId]
-  /// * [adminUpdateOrganizationRequest]
+  /// * [orgId] 
+  /// * [adminUpdateOrganizationRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1653,7 +1662,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminOrganizationDetail] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminOrganizationDetail>> adminUpdateOrganization({
+  Future<Response<AdminOrganizationDetail>> adminUpdateOrganization({ 
     required String orgId,
     required AdminUpdateOrganizationRequest adminUpdateOrganizationRequest,
     CancelToken? cancelToken,
@@ -1663,18 +1672,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/organizations/{orgId}'.replaceAll(
-      '{'
-      r'orgId'
-      '}',
-      orgId.toString(),
-    );
+    final _path = r'/admin/organizations/{orgId}'.replaceAll('{' r'orgId' '}', orgId.toString());
     final _options = Options(
       method: r'PATCH',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1686,9 +1696,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminUpdateOrganizationRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1707,14 +1721,9 @@ class AdminApi {
     AdminOrganizationDetail? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(
-              rawData,
-              'AdminOrganizationDetail',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminOrganizationDetail, AdminOrganizationDetail>(rawData, 'AdminOrganizationDetail', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1738,11 +1747,11 @@ class AdminApi {
   }
 
   /// Sửa câu hỏi kiểm tra trình độ (nội dung, lựa chọn, đáp án, position) – ghi nhật ký quản trị (FR-030, FR-032)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [questionId]
-  /// * [adminPlacementQuestion]
+  /// * [questionId] 
+  /// * [adminPlacementQuestion] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1752,7 +1761,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminPlacementQuestion] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminPlacementQuestion>> adminUpdatePlacementQuestion({
+  Future<Response<AdminPlacementQuestion>> adminUpdatePlacementQuestion({ 
     required String questionId,
     required AdminPlacementQuestion adminPlacementQuestion,
     CancelToken? cancelToken,
@@ -1762,18 +1771,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/placement-questions/{questionId}'.replaceAll(
-      '{'
-      r'questionId'
-      '}',
-      questionId.toString(),
-    );
+    final _path = r'/admin/placement-questions/{questionId}'.replaceAll('{' r'questionId' '}', questionId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1785,9 +1795,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminPlacementQuestion);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1806,14 +1820,9 @@ class AdminApi {
     AdminPlacementQuestion? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminPlacementQuestion, AdminPlacementQuestion>(
-              rawData,
-              'AdminPlacementQuestion',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminPlacementQuestion, AdminPlacementQuestion>(rawData, 'AdminPlacementQuestion', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1837,11 +1846,11 @@ class AdminApi {
   }
 
   /// Sửa đơn vị học (có hiệu lực với phiên mới; phiên đang học giữ nguyên ảnh chụp). Đơn vị đang &#x60;active&#x60; PHẢI vẫn đạt kiểm tra nội dung sau khi sửa.
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [unitId]
-  /// * [adminUnitWrite]
+  /// * [unitId] 
+  /// * [adminUnitWrite] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -1851,7 +1860,7 @@ class AdminApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AdminUnit] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AdminUnit>> adminUpdateUnit({
+  Future<Response<AdminUnit>> adminUpdateUnit({ 
     required String unitId,
     required AdminUnitWrite adminUnitWrite,
     CancelToken? cancelToken,
@@ -1861,18 +1870,19 @@ class AdminApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/admin/units/{unitId}'.replaceAll(
-      '{'
-      r'unitId'
-      '}',
-      unitId.toString(),
-    );
+    final _path = r'/admin/units/{unitId}'.replaceAll('{' r'unitId' '}', unitId.toString());
     final _options = Options(
       method: r'PUT',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -1884,9 +1894,13 @@ class AdminApi {
 
     try {
       _bodyData = jsonEncode(adminUnitWrite);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -1905,14 +1919,9 @@ class AdminApi {
     AdminUnit? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AdminUnit, AdminUnit>(
-              rawData,
-              'AdminUnit',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AdminUnit, AdminUnit>(rawData, 'AdminUnit', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1934,4 +1943,5 @@ class AdminApi {
       extra: _response.extra,
     );
   }
+
 }

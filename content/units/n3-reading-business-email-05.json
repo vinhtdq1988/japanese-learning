@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-business-email",
+  "title": {
+    "vi": "Đọc: Email hỏi lịch họp",
+    "en": "Reading: Email arranging a meeting date"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：打ち合わせの日程について\n田中様\nお世話になっております。来週の打ち合わせの日程を調整したいと考えております。\n以下のうち、ご都合のよい日時をお知らせください。\n・火曜日　午後2時～\n・水曜日　午前10時～\n・金曜日　午後4時～\nどれも難しい場合は、別の候補をご提案ください。",
+      "meaning": {
+        "vi": "Tiêu đề: Về lịch buổi trao đổi. Kính gửi anh/chị Tanaka. Cảm ơn anh/chị đã luôn giúp đỡ. Tôi muốn sắp xếp lịch cho buổi trao đổi tuần sau. Trong các lựa chọn dưới đây, xin cho tôi biết ngày giờ thuận tiện cho anh/chị. Thứ Ba từ 2 giờ chiều; thứ Tư từ 10 giờ sáng; thứ Sáu từ 4 giờ chiều. Nếu cả ba đều khó, xin đề xuất một phương án khác.",
+        "en": "Subject: About the meeting schedule. Dear Mr./Ms. Tanaka, Thank you for your continued support. I would like to arrange the date for next week’s meeting. From the options below, please let me know a date and time that is convenient for you. Tuesday from 2 p.m.; Wednesday from 10 a.m.; Friday from 4 p.m. If none of these work, please suggest another option."
+      },
+      "explanation": {
+        "vi": "「お世話になっております」= lời chào mở đầu email công việc; 「～たいと考えております」= xin được…; 「どれも～ない」= không cái nào…. Từ vựng: 「調整」(ちょうせい) = điều chỉnh/sắp xếp; 「候補」(こうほ) = phương án; 「ご都合」(ごつごう) = sự thuận tiện.",
+        "en": "「お世話になっております」 = a standard opening of a business email; 「～たいと考えております」 = I would like to…; 「どれも～ない」 = none of them…. Vocabulary: 「調整」(ちょうせい) = arrange/adjust; 「候補」(こうほ) = candidate/option; 「ご都合」(ごつごう) = convenience."
+      },
+      "scopeRef": "r-n3-email-schedule-arrangement"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Mục đích của email là gì?",
+        "en": "What is the purpose of the email?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hủy buổi trao đổi tuần sau",
+            "en": "To cancel next week’s meeting"
+          },
+          {
+            "vi": "Sắp xếp ngày giờ cho buổi trao đổi tuần sau",
+            "en": "To arrange the date and time of next week’s meeting"
+          },
+          {
+            "vi": "Báo cáo kết quả buổi trao đổi",
+            "en": "To report the results of the meeting"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来週の打ち合わせの日程を調整したい」: 「日程を調整したい」nghĩa là muốn sắp xếp lịch.",
+        "en": "Correct! The text has 「来週の打ち合わせの日程を調整したい」: 「日程を調整したい」 means wanting to arrange the schedule."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来週の打ち合わせの日程を調整したい」: 「日程を調整したい」nghĩa là muốn sắp xếp lịch.",
+        "en": "Not quite. Look again at 「来週の打ち合わせの日程を調整したい」: 「日程を調整したい」 means wanting to arrange the schedule."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Người viết đưa ra mấy lựa chọn ngày giờ?",
+        "en": "How many date-and-time options does the writer give?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "2",
+            "en": "Two"
+          },
+          {
+            "vi": "3",
+            "en": "Three"
+          },
+          {
+            "vi": "5",
+            "en": "Five"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「・火曜日　午後2時～」: Có ba lựa chọn: thứ Ba, thứ Tư và thứ Sáu.",
+        "en": "Correct! The text has 「・火曜日　午後2時～」: There are three options: Tuesday, Wednesday and Friday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「・火曜日　午後2時～」: Có ba lựa chọn: thứ Ba, thứ Tư và thứ Sáu.",
+        "en": "Not quite. Look again at 「・火曜日　午後2時～」: There are three options: Tuesday, Wednesday and Friday."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Nếu không lựa chọn nào phù hợp thì người nhận nên làm gì?",
+        "en": "What should the recipient do if none of the options works?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chờ liên lạc tiếp theo",
+            "en": "Wait for further contact"
+          },
+          {
+            "vi": "Đề xuất một phương án khác",
+            "en": "Suggest another option"
+          },
+          {
+            "vi": "Đến thẳng văn phòng",
+            "en": "Come straight to the office"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「別の候補をご提案ください」: 「提案してください」nghĩa là hãy đề xuất; cần đưa ra phương án khác.",
+        "en": "Correct! The text has 「別の候補をご提案ください」: 「提案してください」 means please propose; another option is needed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「別の候補をご提案ください」: 「提案してください」nghĩa là hãy đề xuất; cần đưa ra phương án khác.",
+        "en": "Not quite. Look again at 「別の候補をご提案ください」: 「提案してください」 means please propose; another option is needed."
+      }
+    }
+  ]
+}

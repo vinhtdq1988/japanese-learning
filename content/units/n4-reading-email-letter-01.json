@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-neighbors-events",
+  "title": {
+    "vi": "Đọc: Email mời dự tiệc takoyaki",
+    "en": "Reading: Invitation to a takoyaki party"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 420,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "山田さんへ\nこんにちは。来週の日曜日に、うちでたこやきパーティーをします。午後二時からです。山田さんも来ませんか。友だちが五人ぐらい来ます。飲み物はわたしが用意します。来られるかどうか、金曜日までに教えてください。\n田中",
+      "meaning": {
+        "vi": "Gửi Yamada. Xin chào. Chủ nhật tuần sau, nhà mình sẽ có tiệc takoyaki, bắt đầu từ 2 giờ chiều. Yamada cũng đến nhé? Khoảng năm người bạn sẽ đến. Đồ uống mình sẽ chuẩn bị. Bạn có đến được hay không, xin cho mình biết trước thứ Sáu. — Tanaka",
+        "en": "Dear Yamada, Hello. Next Sunday we will have a takoyaki party at my place, starting at 2 p.m. Won’t you come too? About five friends will be there. I will prepare the drinks. Please let me know by Friday whether you can come. — Tanaka"
+      },
+      "reading": "やまださんへ\nこんにちは。らいしゅうのにちようびに、うちでたこやきパーティーをします。ごごにじからです。やまださんもきませんか。ともだちがごにんぐらいきます。のみものはわたしがよういします。こられるかどうか、きんようびまでにおしえてください。\nたなか",
+      "explanation": {
+        "vi": "「～ませんか」là lời mời; 「～かどうか」= có… hay không (来られるかどうか); 「～までに」chỉ hạn chót.",
+        "en": "「～ませんか」 is an invitation; 「～かどうか」 = whether or not (来られるかどうか); 「～までに」 sets a deadline."
+      },
+      "scopeRef": "r-n4-email-invitation"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Tiệc takoyaki diễn ra khi nào?",
+        "en": "When is the takoyaki party?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chủ nhật tuần sau, từ 2 giờ chiều",
+            "en": "Next Sunday from 2 p.m."
+          },
+          {
+            "vi": "Chủ nhật tuần này, từ 2 giờ chiều",
+            "en": "This Sunday from 2 p.m."
+          },
+          {
+            "vi": "Thứ Sáu tuần sau, từ 2 giờ chiều",
+            "en": "Next Friday from 2 p.m."
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来週の日曜日に、うちでたこやきパーティーをします」: 来週の日曜日 là Chủ nhật tuần sau, bắt đầu 午後二時.",
+        "en": "Correct! The text has 「来週の日曜日に、うちでたこやきパーティーをします」: 来週の日曜日 is next Sunday, starting at 午後二時."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来週の日曜日に、うちでたこやきパーティーをします」: 来週の日曜日 là Chủ nhật tuần sau, bắt đầu 午後二時.",
+        "en": "Not quite. Look again at 「来週の日曜日に、うちでたこやきパーティーをします」: 来週の日曜日 is next Sunday, starting at 午後二時."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Ai chuẩn bị đồ uống?",
+        "en": "Who will prepare the drinks?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Yamada",
+            "en": "Yamada"
+          },
+          {
+            "vi": "Tanaka (người viết email)",
+            "en": "Tanaka (the writer)"
+          },
+          {
+            "vi": "Từng người bạn tự mang",
+            "en": "Each friend brings their own"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「飲み物はわたしが用意します」: 「わたしが」chỉ người viết (Tanaka) sẽ chuẩn bị đồ uống.",
+        "en": "Correct! The text has 「飲み物はわたしが用意します」: 「わたしが」 refers to the writer, Tanaka, who will prepare the drinks."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「飲み物はわたしが用意します」: 「わたしが」chỉ người viết (Tanaka) sẽ chuẩn bị đồ uống.",
+        "en": "Not quite. Look again at 「飲み物はわたしが用意します」: 「わたしが」 refers to the writer, Tanaka, who will prepare the drinks."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Yamada cần làm gì trước thứ Sáu?",
+        "en": "What does Yamada need to do by Friday?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Mang đồ uống đến",
+            "en": "Bring drinks"
+          },
+          {
+            "vi": "Gọi cho năm người bạn",
+            "en": "Call the five friends"
+          },
+          {
+            "vi": "Cho biết có đến được hay không",
+            "en": "Say whether he can come"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来られるかどうか、金曜日までに教えてください」: 「～かどうか」nghĩa là có… hay không; Yamada cần trả lời trước thứ Sáu.",
+        "en": "Correct! The text has 「来られるかどうか、金曜日までに教えてください」: 「～かどうか」 means whether or not; Yamada must reply by Friday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来られるかどうか、金曜日までに教えてください」: 「～かどうか」nghĩa là có… hay không; Yamada cần trả lời trước thứ Sáu.",
+        "en": "Not quite. Look again at 「来られるかどうか、金曜日までに教えてください」: 「～かどうか」 means whether or not; Yamada must reply by Friday."
+      }
+    }
+  ]
+}

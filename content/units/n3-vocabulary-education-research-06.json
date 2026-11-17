@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-education-research",
+  "title": {
+    "vi": "Giả thuyết, giáo trình và nét văn hóa xưa",
+    "en": "Hypotheses, teaching materials and old culture"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1680,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "仮説",
+      "reading": "かせつ",
+      "meaning": {
+        "vi": "Giả thuyết",
+        "en": "Hypothesis"
+      },
+      "examples": [
+        {
+          "ja": "研究者は、実験で仮説が正しいかどうか調べました。",
+          "reading": "けんきゅうしゃは、じっけんでかせつがただしいかどうかしらべました。",
+          "translation": {
+            "vi": "Nhà nghiên cứu đã kiểm tra giả thuyết có đúng hay không bằng thí nghiệm.",
+            "en": "The researcher tested by experiment whether the hypothesis was correct."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "教材",
+      "reading": "きょうざい",
+      "meaning": {
+        "vi": "Tài liệu giảng dạy; giáo cụ",
+        "en": "Teaching materials"
+      },
+      "examples": [
+        {
+          "ja": "先生は、授業のために新しい教材を作りました。",
+          "reading": "せんせいは、じゅぎょうのためにあたらしいきょうざいをつくりました。",
+          "translation": {
+            "vi": "Cô giáo đã soạn giáo cụ mới cho giờ học.",
+            "en": "The teacher made new teaching materials for the class."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "履修",
+      "reading": "りしゅう",
+      "meaning": {
+        "vi": "Đăng ký và học (môn học)",
+        "en": "Taking a course"
+      },
+      "examples": [
+        {
+          "ja": "来学期は、日本史の授業を履修するつもりです。",
+          "reading": "らいがっきは、にほんしのじゅぎょうをりしゅうするつもりです。",
+          "translation": {
+            "vi": "Học kỳ sau tôi định đăng ký học môn lịch sử Nhật Bản.",
+            "en": "Next semester I intend to take a Japanese history course."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "洋風",
+      "reading": "ようふう",
+      "meaning": {
+        "vi": "Kiểu phương Tây",
+        "en": "Western style"
+      },
+      "examples": [
+        {
+          "ja": "この家は、洋風の造りで、窓が大きいです。",
+          "reading": "このいえは、ようふうのつくりで、まどがおおきいです。",
+          "translation": {
+            "vi": "Ngôi nhà này xây theo kiểu phương Tây, cửa sổ rất lớn.",
+            "en": "This house is built in a Western style with large windows."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "民話",
+      "reading": "みんわ",
+      "meaning": {
+        "vi": "Truyện dân gian",
+        "en": "Folktale"
+      },
+      "examples": [
+        {
+          "ja": "祖母は、よく昔の民話を聞かせてくれました。",
+          "reading": "そぼは、よくむかしのみんわをきかせてくれました。",
+          "translation": {
+            "vi": "Bà tôi thường kể cho tôi nghe những truyện dân gian xưa.",
+            "en": "My grandmother often told me old folktales."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "骨董品",
+      "reading": "こっとうひん",
+      "meaning": {
+        "vi": "Đồ cổ",
+        "en": "Antique"
+      },
+      "examples": [
+        {
+          "ja": "父は、古い骨董品を集めるのが好きです。",
+          "reading": "ちちは、ふるいこっとうひんをあつめるのがすきです。",
+          "translation": {
+            "vi": "Bố tôi thích sưu tầm đồ cổ.",
+            "en": "My father likes collecting old antiques."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "仮説",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 研究者は、実験で（　）が正しいかどうか調べました。 — Nghĩa của câu: “Nhà nghiên cứu đã kiểm tra giả thuyết có đúng hay không bằng thí nghiệm.”",
+        "en": "Choose the word that fits the blank: 研究者は、実験で（　）が正しいかどうか調べました。 — Meaning of the sentence: “The researcher tested by experiment whether the hypothesis was correct.”"
+      },
+      "payload": {
+        "choices": [
+          "仮説",
+          "骨董品",
+          "教材",
+          "洋風"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「仮説」(Giả thuyết) hợp nghĩa câu này: “Nhà nghiên cứu đã kiểm tra giả thuyết có đúng hay không bằng thí nghiệm.”",
+        "en": "Correct! 「仮説」(Hypothesis) fits this sentence: “The researcher tested by experiment whether the hypothesis was correct.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nhà nghiên cứu đã kiểm tra giả thuyết có đúng hay không bằng thí nghiệm.”, nên cần 「仮説」(Giả thuyết); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The researcher tested by experiment whether the hypothesis was correct.”, so it needs 「仮説」(Hypothesis); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "教材",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生は、授業のために新しい（　）を作りました。 — Nghĩa của câu: “Cô giáo đã soạn giáo cụ mới cho giờ học.”",
+        "en": "Choose the word that fits the blank: 先生は、授業のために新しい（　）を作りました。 — Meaning of the sentence: “The teacher made new teaching materials for the class.”"
+      },
+      "payload": {
+        "choices": [
+          "仮説",
+          "教材",
+          "洋風",
+          "骨董品"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「教材」(Tài liệu giảng dạy; giáo cụ) hợp nghĩa câu này: “Cô giáo đã soạn giáo cụ mới cho giờ học.”",
+        "en": "Correct! 「教材」(Teaching materials) fits this sentence: “The teacher made new teaching materials for the class.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cô giáo đã soạn giáo cụ mới cho giờ học.”, nên cần 「教材」(Tài liệu giảng dạy; giáo cụ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The teacher made new teaching materials for the class.”, so it needs 「教材」(Teaching materials); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "履修",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 来学期は、日本史の授業を（　）するつもりです。 — Nghĩa của câu: “Học kỳ sau tôi định đăng ký học môn lịch sử Nhật Bản.”",
+        "en": "Choose the word that fits the blank: 来学期は、日本史の授業を（　）するつもりです。 — Meaning of the sentence: “Next semester I intend to take a Japanese history course.”"
+      },
+      "payload": {
+        "choices": [
+          "仮説",
+          "教材",
+          "履修",
+          "民話"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「履修」(Đăng ký và học (môn học)) hợp nghĩa câu này: “Học kỳ sau tôi định đăng ký học môn lịch sử Nhật Bản.”",
+        "en": "Correct! 「履修」(Taking a course) fits this sentence: “Next semester I intend to take a Japanese history course.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Học kỳ sau tôi định đăng ký học môn lịch sử Nhật Bản.”, nên cần 「履修」(Đăng ký và học (môn học)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Next semester I intend to take a Japanese history course.”, so it needs 「履修」(Taking a course); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "洋風",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この家は、（　）の造りで、窓が大きいです。 — Nghĩa của câu: “Ngôi nhà này xây theo kiểu phương Tây, cửa sổ rất lớn.”",
+        "en": "Choose the word that fits the blank: この家は、（　）の造りで、窓が大きいです。 — Meaning of the sentence: “This house is built in a Western style with large windows.”"
+      },
+      "payload": {
+        "choices": [
+          "骨董品",
+          "仮説",
+          "教材",
+          "洋風"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「洋風」(Kiểu phương Tây) hợp nghĩa câu này: “Ngôi nhà này xây theo kiểu phương Tây, cửa sổ rất lớn.”",
+        "en": "Correct! 「洋風」(Western style) fits this sentence: “This house is built in a Western style with large windows.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngôi nhà này xây theo kiểu phương Tây, cửa sổ rất lớn.”, nên cần 「洋風」(Kiểu phương Tây); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This house is built in a Western style with large windows.”, so it needs 「洋風」(Western style); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "民話",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖母は、よく昔の（　）を聞かせてくれました。 — Nghĩa của câu: “Bà tôi thường kể cho tôi nghe những truyện dân gian xưa.”",
+        "en": "Choose the word that fits the blank: 祖母は、よく昔の（　）を聞かせてくれました。 — Meaning of the sentence: “My grandmother often told me old folktales.”"
+      },
+      "payload": {
+        "choices": [
+          "民話",
+          "仮説",
+          "洋風",
+          "履修"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「民話」(Truyện dân gian) hợp nghĩa câu này: “Bà tôi thường kể cho tôi nghe những truyện dân gian xưa.”",
+        "en": "Correct! 「民話」(Folktale) fits this sentence: “My grandmother often told me old folktales.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bà tôi thường kể cho tôi nghe những truyện dân gian xưa.”, nên cần 「民話」(Truyện dân gian); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandmother often told me old folktales.”, so it needs 「民話」(Folktale); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "骨董品",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 父は、古い（　）を集めるのが好きです。 — Nghĩa của câu: “Bố tôi thích sưu tầm đồ cổ.”",
+        "en": "Choose the word that fits the blank: 父は、古い（　）を集めるのが好きです。 — Meaning of the sentence: “My father likes collecting old antiques.”"
+      },
+      "payload": {
+        "choices": [
+          "洋風",
+          "骨董品",
+          "仮説",
+          "教材"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「骨董品」(Đồ cổ) hợp nghĩa câu này: “Bố tôi thích sưu tầm đồ cổ.”",
+        "en": "Correct! 「骨董品」(Antique) fits this sentence: “My father likes collecting old antiques.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bố tôi thích sưu tầm đồ cổ.”, nên cần 「骨董品」(Đồ cổ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My father likes collecting old antiques.”, so it needs 「骨董品」(Antique); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "仮説",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 研究者は、実験で「仮説」が正しいかどうか調べました。",
+        "en": "Choose the correct reading of the word in 「」: 研究者は、実験で「仮説」が正しいかどうか調べました。"
+      },
+      "payload": {
+        "choices": [
+          "きょうざい",
+          "かせつ",
+          "りしゅう",
+          "こっとうひん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「仮説」 đọc là 「かせつ」, nghĩa là Giả thuyết.",
+        "en": "Correct! 「仮説」 is read 「かせつ」 and means Hypothesis."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「仮説」 đọc là 「かせつ」 (Giả thuyết); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「仮説」 is read 「かせつ」 (Hypothesis); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "洋風",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この家は、「洋風」の造りで、窓が大きいです。",
+        "en": "Choose the correct reading of the word in 「」: この家は、「洋風」の造りで、窓が大きいです。"
+      },
+      "payload": {
+        "choices": [
+          "こっとうひん",
+          "かせつ",
+          "ようふう",
+          "みんわ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「洋風」 đọc là 「ようふう」, nghĩa là Kiểu phương Tây.",
+        "en": "Correct! 「洋風」 is read 「ようふう」 and means Western style."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「洋風」 đọc là 「ようふう」 (Kiểu phương Tây); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「洋風」 is read 「ようふう」 (Western style); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "骨董品",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 父は、古い「こっとうひん」を集めるのが好きです。",
+        "en": "Choose the correct way to write the word in 「」: 父は、古い「こっとうひん」を集めるのが好きです。"
+      },
+      "payload": {
+        "choices": [
+          "仮説",
+          "民話",
+          "骨董品",
+          "教材"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「こっとうひん」 viết là 「骨董品」, nghĩa là Đồ cổ.",
+        "en": "Correct! 「こっとうひん」 is written 「骨董品」 and means Antique."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「こっとうひん」 viết là 「骨董品」 (Đồ cổ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「こっとうひん」 is written 「骨董品」 (Antique); the other words are read differently."
+      }
+    }
+  ]
+}

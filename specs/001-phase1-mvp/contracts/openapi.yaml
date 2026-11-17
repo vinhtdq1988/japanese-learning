@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Japanese Learning API
-  version: 1.14.0
+  version: 1.15.0
   description: |
     Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
     - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
@@ -22,6 +22,7 @@ info:
       1.12.0 (2026-11-07, spec 004-org-classes) – bổ sung tổ chức, lớp học, lộ trình lớp (B2B theo seat): (1) nhóm `/admin/organizations*` cho quản trị viên hệ thống (tổ chức, giấy phép, seat; KHÔNG có dữ liệu học); (2) nhóm `/org*` cho chủ tổ chức; (3) nhóm `/classes*` cho giáo viên phụ trách và chủ tổ chức (lớp, thành viên, lời mời, mã tham gia, nhập CSV, lộ trình lớp, bài giao, ghi đè cá nhân, tạm dừng, bảng điều khiển, điểm yếu, xuất CSV, yêu cầu kiểm tra trình độ); (4) `/invitations/{token}*`, `/me/class*` cho người học (xem trước + hai lựa chọn, nhập mã, "Lớp của tôi", chuyển sang lộ trình cá nhân); (5) `Me` thêm `learningSource`, `classSummary`, `organization`; `GET /path` thêm `source`; (6) `PlacementAnswers` thêm `classRequestId`; (7) mã lỗi mới `CLASS_MANAGED` (409) và các mã seat/lớp (`SEAT_UNAVAILABLE`, `SEAT_REASSIGN_LIMIT`, `SEAT_BELOW_USAGE`, `CLASS_NOT_READY`, `CLASS_FULL`, `CLASS_ARCHIVED`, `LAST_TEACHER`, `ALREADY_IN_CLASS`, `INVITEE_UNAVAILABLE`); (8) `GET /admin/action-logs` thêm tham số `organizationId`. Người học không thuộc lớp: mọi phản hồi cũ không đổi (chỉ thêm trường tùy chọn `learningSource: personal`). Vai trò tổ chức KHÔNG nằm trong access token; quyền được tra CSDL mỗi yêu cầu nên mất quyền có hiệu lực ngay. `DELETE /invitations/{token}` nhận id lời mời (uuid) ở cùng vị trí đường dẫn. Thay đổi bổ sung, không phá vỡ tương thích; client và backend PHẢI phát hành cùng lúc để hiển thị khóa lớp.
       1.13.0 (2026-11-08, spec 005-reward-feedback-effects) – bổ sung hiệu ứng thưởng: (1) `SessionSummary.celebrations` (tùy chọn) trả MỘT LẦN, trong phản hồi của lần `POST /sessions/{id}/complete` thực sự hoàn thành phiên: lời chúc mừng hoàn thành ngày (`dayCompleted`) và danh sách thành tựu vừa đạt (`achievements`, đã bản địa hóa theo ngôn ngữ hồ sơ); gọi lại trên phiên đã hoàn thành KHÔNG trả trường này và không ghi thêm gì; (2) `Profile` và `ProfileUpdate` thêm `soundEnabled`, `visualEffectsEnabled` (mặc định true; KHÔNG thuộc nhóm trường bị khóa khi người học thuộc lớp). Thành tựu không có endpoint đọc lại và không xuất hiện trong các DTO của giáo viên/tổ chức. Thay đổi bổ sung; client 1.12.0 bỏ qua các trường mới.
       1.14.0 (spec 007-fix-comments) – hoàn thiện trải nghiệm học: (1) enum `Skill` thêm `reading` (luyện đọc) và `writing` (luyện viết, gõ bàn phím); hai kỹ năng này chỉ có hiệu lực với học viên có quỹ thời gian đang áp dụng ≥ 30 phút/ngày (kiểm ở máy chủ); thêm mã lỗi `PRACTICE_LOCKED` (403); thêm `GET /study-defaults` (bảng gợi ý kỹ năng theo quỹ thời gian); (2) `DailyPlan.encouragement` (lời khích lệ theo tiến độ, đã bản địa hóa) và `PlanItem.competency`; `ProgressSummary.competency`; mục `items` của `PathDetail` thêm `competency` (mức năng lực: good | needs_improvement | insufficient); (3) `Profile.skills` vẫn trả giá trị ĐÃ LƯU (kể cả `reading/writing` đang bị khóa do quỹ thời gian < 30 phút); `PATCH /me` và `PUT /onboarding*` từ chối THÊM `reading/writing` khi quỹ thời gian sau cập nhật < 30 phút (422). Thay đổi bổ sung; client PHẢI phát hành cùng backend (enum `Skill` mở rộng).
+      1.15.0 (spec 008-n4-n3-jlpt-content) – mở rộng nội dung N4/N3: (1) `GET /path` nhận tham số lọc tùy chọn `kind`, `level`, `status`, `limit`, `offset` và trả thêm `itemsTotal` (số đơn vị khớp bộ lọc trước `limit`/`offset`); không có tham số thì hành vi cũ (toàn bộ đơn vị); `totalUnits`/`completedUnits` luôn của toàn bộ lộ trình; (2) `PathSummary.notices` và `ProgressSummary.goal.notices` (mảng `ScopeNoticeCode`, tính khi đọc, không lưu vào lộ trình): `content_ceiling_n3` như `scopeNotice` cũ và `listening_not_available` khi mục tiêu là JLPT (ứng dụng chưa có phần nghe hiểu); `scopeNotice` giữ nguyên; (3) `ProgressSummary.goal.completionRatio` nay tính theo TỔNG PHÚT (Σ estMinutes đã xong / Σ estMinutes trong phạm vi) thay vì số đơn vị; (4) Admin: kích hoạt đơn vị kiểm tra "mục chính duy nhất" cho từ vựng và ngữ pháp (trước chỉ Kanji) nên `PUT /admin/units/{unitId}` và `PUT /admin/units/{unitId}/status` có thể trả `422 VALIDATION_FAILED`. Thay đổi bổ sung/làm rõ, không thêm route; client PHẢI sinh lại từ OpenAPI 1.15.0.
 servers:
   - url: /api/v1
 tags:
@@ -423,9 +424,21 @@ paths:
       operationId: getPath
       tags: [path]
       summary: Lộ trình hiện tại
+      description: >
+        Không có tham số thì trả toàn bộ đơn vị như cũ. Có thể lọc để client dựng danh sách lười khi thư viện lớn (khoảng 600 đơn vị).
+        Lọc theo `kind`/`level`/`status` trước rồi mới cắt `limit`/`offset`; thứ tự các phần tử giữ nguyên thứ tự xếp hạng động.
+        `totalUnits`/`completedUnits` luôn là số của TOÀN BỘ lộ trình (không đổi theo bộ lọc). `offset` vượt `itemsTotal` → `items: []`;
+        `kind` nằm ngoài kỹ năng hiệu lực của người học → `items: []` (không lỗi). Áp dụng cả cho lộ trình lớp (`source = class`).
+      parameters:
+        - { name: kind, in: query, required: false, schema: { $ref: '#/components/schemas/Skill' } }
+        - { name: level, in: query, required: false, schema: { $ref: '#/components/schemas/ContentLevel' } }
+        - { name: status, in: query, required: false, schema: { type: string, enum: [pending, in_progress, completed, mastered] } }
+        - { name: limit, in: query, required: false, schema: { type: integer, minimum: 1, maximum: 500 } }
+        - { name: offset, in: query, required: false, schema: { type: integer, minimum: 0, default: 0 } }
       responses:
         '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/PathDetail' } } } }
         '404': { description: Chưa có lộ trình (chưa onboarding), content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '422': { $ref: '#/components/responses/ValidationError' }
   /path/rebuild:
     post:
       operationId: rebuildPath
@@ -690,7 +703,7 @@ paths:
         '200': { description: Đã sửa, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
         '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
-        '422': { $ref: '#/components/responses/ValidationError' }
+        '422': { description: 'Không đạt kiểm tra nội dung (đơn vị đang `active`). Từ 1.15.0 có thêm: mục từ vựng trùng khóa `japanese|reading`, hoặc mục ngữ pháp trùng `japanese`, với đơn vị `active` khác → `fields["items[i].japanese"]` = "mục 「…」 đã có ở bài 「…」 đang hoạt động" (Kanji trùng vẫn bị chặn như cũ)', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /admin/units/{unitId}/status:
     put:
       operationId: adminSetUnitStatus
@@ -711,7 +724,7 @@ paths:
         '200': { description: Đã cập nhật, content: { application/json: { schema: { $ref: '#/components/schemas/AdminUnit' } } } }
         '403': { $ref: '#/components/responses/Forbidden' }
         '404': { $ref: '#/components/responses/NotFound' }
-        '422': { description: 'Không đạt kiểm tra nội dung khi kích hoạt (`fields` liệt kê từng lỗi theo vị trí), hoặc thân rỗng', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+        '422': { description: 'Không đạt kiểm tra nội dung khi kích hoạt (`fields` liệt kê từng lỗi theo vị trí; từ 1.15.0 gồm cả mục từ vựng/ngữ pháp trùng khóa với đơn vị `active` khác: `fields["items[i].japanese"]` = "mục 「…」 đã có ở bài 「…」 đang hoạt động"), hoặc thân rỗng', content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
   /admin/placement-questions:
     get:
       operationId: adminListPlacementQuestions
@@ -1601,6 +1614,12 @@ components:
     Level: { type: string, enum: [none, N5, N4, N3, N2, N1] }
     ContentLevel: { type: string, enum: [N5, N4, N3] }
     TargetLevel: { type: string, enum: [N5, N4, N3, N2, N1], description: 'Mục tiêu JLPT; N2/N1 được chấp nhận nhưng nội dung Giai đoạn 1 chỉ đến N3 (`scopeNotice`)' }
+    ScopeNoticeCode:
+      type: string
+      enum: [content_ceiling_n3, listening_not_available]
+      description: >
+        `content_ceiling_n3`: trình độ hoặc mục tiêu N2/N1 bị cắt ở N3 (như `scopeNotice`).
+        `listening_not_available`: mục tiêu JLPT — ứng dụng chưa có phần nghe hiểu của kỳ thi (Giai đoạn 2).
     ScopeNotice: { type: string, enum: [content_ceiling_n3], nullable: true, description: 'Trình độ hoặc mục tiêu vượt phạm vi nội dung hiện có (N5–N3); lộ trình dùng N3 làm trần' }
     Skill: { type: string, enum: [vocabulary, grammar, kanji, reading, writing], description: '`reading`/`writing` (luyện đọc/viết, spec 007) chỉ có hiệu lực với học viên có quỹ thời gian đang áp dụng từ 30 phút mỗi ngày; không xuất hiện trong placement và dùng thử' }
     ReviewFacet:
@@ -1706,7 +1725,7 @@ components:
                 graceEndsOn: { type: string, format: date }
     ProfileUpdate:
       type: object
-      description: Mọi trường tùy chọn; các thay đổi liên quan lộ trình/kế hoạch có hiệu lực ở kế hoạch tiếp theo (SC-006). Đổi `goalType`/`targetLevel`/`targetDate` sinh lại lộ trình (`reason='goal_change'`); đổi `currentLevel` sinh lại lộ trình (`reason='level_change'`); đổi `dailyMinutes`/`prioritizedSkill` không sinh lộ trình mới mà áp dụng trực tiếp cho kế hoạch kế tiếp. Đổi `email` bắt buộc kèm `currentPassword`.
+      description: Mọi trường tùy chọn; các thay đổi liên quan lộ trình/kế hoạch có hiệu lực ngay nếu kế hoạch hôm nay chưa học mục nào (kế hoạch bị xóa và sinh lại), ngược lại từ kế hoạch tiếp theo (SC-006). Đổi `goalType`/`targetLevel`/`targetDate` sinh lại lộ trình (`reason='goal_change'`); đổi `currentLevel` sinh lại lộ trình (`reason='level_change'`); đổi `dailyMinutes`/`prioritizedSkill` không sinh lộ trình mới mà áp dụng trực tiếp cho kế hoạch kế tiếp. Đổi `email` bắt buộc kèm `currentPassword`.
       properties:
         displayName: { type: string }
         email: { type: string, format: email }
@@ -1722,7 +1741,7 @@ components:
           minItems: 1
           uniqueItems: true
           items: { $ref: '#/components/schemas/Skill' }
-          description: 'Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.'
+          description: 'Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ngay: kế hoạch hôm nay bị xóa và sinh lại nếu mọi mục còn chưa học; đã học dở thì giữ nguyên và có hiệu lực từ ngày sau. Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.'
         language: { $ref: '#/components/schemas/Lang' }
         timezone: { type: string }
         soundEnabled: { type: boolean, description: 'Chỉ hai trường hiệu ứng: không sinh lại lộ trình, không đụng kế hoạch, không cần `currentPassword`, học viên thuộc lớp vẫn sửa được (spec 005).' }
@@ -1883,6 +1902,10 @@ components:
         startLevel: { $ref: '#/components/schemas/Level' }
         reason: { type: string, enum: [onboarding, rebuild_request, goal_change, level_change, placement_retake] }
         scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+        notices:
+          type: array
+          items: { $ref: '#/components/schemas/ScopeNoticeCode' }
+          description: 'Tính khi đọc từ hồ sơ và tham số lộ trình, KHÔNG lưu vào lộ trình nên lộ trình đã tồn tại cũng có. Thứ tự: `content_ceiling_n3` (nếu có) rồi `listening_not_available` (nếu `goalType = jlpt`).'
         message: { type: string, nullable: true, description: 'Ví dụ: kỹ năng chưa hỗ trợ trong phiên bản này' }
     PathDetail:
       allOf:
@@ -1890,6 +1913,9 @@ components:
         - type: object
           properties:
             source: { type: string, enum: [personal, class], description: 'Spec 004: nguồn của lộ trình; `class` khi học viên thuộc lớp' }
+            itemsTotal:
+              type: integer
+              description: 'Số đơn vị khớp bộ lọc (trước `limit`/`offset`); không có bộ lọc = số phần tử của toàn bộ lộ trình'
             items:
               type: array
               description: Thứ tự đơn vị được tính động tại thời điểm gọi từ tham số lộ trình, nội dung `active` hiện hành và trạng thái học (không lưu sẵn; đơn vị mới kích hoạt xuất hiện ở lần gọi kế tiếp, SC-008)
@@ -2063,10 +2089,14 @@ components:
         goal:
           type: object
           properties:
-            completionRatio: { type: number, minimum: 0, maximum: 1 }
+            completionRatio: { type: number, minimum: 0, maximum: 1, description: 'Tỷ lệ PHÚT của các đơn vị đã xong (hoàn thành hoặc thành thạo) trên tổng phút của các đơn vị `active` trong phạm vi lộ trình, làm tròn 3 chữ số; cùng nguồn với thành tựu `goal_*` (spec 008)' }
             onTrack: { type: boolean, nullable: true }
             targetDate: { type: string, format: date, nullable: true }
             scopeNotice: { $ref: '#/components/schemas/ScopeNotice' }
+            notices:
+              type: array
+              items: { $ref: '#/components/schemas/ScopeNoticeCode' }
+              description: 'Cùng quy tắc với `PathSummary.notices` (tính khi đọc): `content_ceiling_n3` rồi `listening_not_available` khi mục tiêu là JLPT'
         kanji:
           type: object
           nullable: true

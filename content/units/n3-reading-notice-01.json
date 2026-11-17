@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-notice",
+  "title": {
+    "vi": "Đọc: Thông báo đổi giờ mở cửa",
+    "en": "Reading: Notice of changed business hours"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "お客様へ\n12月1日（月）から、営業時間が変わります。これまでは午前10時から午後9時まででしたが、今後は午前10時から午後8時までとなります。ただし、土曜日・日曜日は今までどおり午後9時まで営業いたします。ご不便をおかけしますが、ご理解くださいますようお願いいたします。",
+      "meaning": {
+        "vi": "Gửi quý khách. Từ ngày 1 tháng 12 (thứ Hai), giờ mở cửa sẽ thay đổi. Trước đây là từ 10 giờ sáng đến 9 giờ tối, nhưng từ nay sẽ là từ 10 giờ sáng đến 8 giờ tối. Tuy nhiên, thứ Bảy và Chủ nhật vẫn mở cửa đến 9 giờ tối như trước. Chúng tôi xin lỗi vì sự bất tiện và mong quý khách thông cảm.",
+        "en": "To our customers: From Monday, December 1, our business hours will change. Until now we were open from 10 a.m. to 9 p.m., but from now on we will be open from 10 a.m. to 8 p.m. However, on Saturdays and Sundays we will remain open until 9 p.m. as before. We apologize for the inconvenience and ask for your understanding."
+      },
+      "explanation": {
+        "vi": "「～どおり」= đúng như…; 「ただし」= tuy nhiên (thêm ngoại lệ); 「不便」(ふべん) = bất tiện; 「お願い」(おねがい) = xin nhờ/mong; 「いたします」là dạng khiêm nhường của する.",
+        "en": "「～どおり」 = just as…; 「ただし」 = however (adds an exception); 「不便」(ふべん) = inconvenience; 「お願い」(おねがい) = request; 「いたします」 is the humble form of する."
+      },
+      "scopeRef": "r-n3-notice-company-service"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Từ ngày 1 tháng 12, ngày thường cửa hàng đóng cửa lúc mấy giờ?",
+        "en": "From December 1, what time does the shop close on weekdays?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "9 giờ tối",
+            "en": "9 p.m."
+          },
+          {
+            "vi": "8 giờ tối",
+            "en": "8 p.m."
+          },
+          {
+            "vi": "10 giờ sáng",
+            "en": "10 a.m."
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「今後は午前10時から午後8時までとなります」: 「今後は」là từ nay về sau: giờ đóng cửa mới là 8 giờ tối.",
+        "en": "Correct! The text has 「今後は午前10時から午後8時までとなります」: 「今後は」 means from now on: the new closing time is 8 p.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「今後は午前10時から午後8時までとなります」: 「今後は」là từ nay về sau: giờ đóng cửa mới là 8 giờ tối.",
+        "en": "Not quite. Look again at 「今後は午前10時から午後8時までとなります」: 「今後は」 means from now on: the new closing time is 8 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Thứ Bảy và Chủ nhật thì thế nào?",
+        "en": "What about Saturdays and Sundays?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đóng cửa sớm hơn",
+            "en": "They close earlier"
+          },
+          {
+            "vi": "Vẫn mở đến 9 giờ tối như trước",
+            "en": "Still open until 9 p.m. as before"
+          },
+          {
+            "vi": "Nghỉ cả ngày",
+            "en": "Closed all day"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「土曜日・日曜日は今までどおり午後9時まで営業いたします」: 「今までどおり」nghĩa là như từ trước đến nay; cuối tuần vẫn đến 9 giờ tối.",
+        "en": "Correct! The text has 「土曜日・日曜日は今までどおり午後9時まで営業いたします」: 「今までどおり」 means as before; weekends remain until 9 p.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「土曜日・日曜日は今までどおり午後9時まで営業いたします」: 「今までどおり」nghĩa là như từ trước đến nay; cuối tuần vẫn đến 9 giờ tối.",
+        "en": "Not quite. Look again at 「土曜日・日曜日は今までどおり午後9時まで営業いたします」: 「今までどおり」 means as before; weekends remain until 9 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Giờ mở cửa buổi sáng có thay đổi không?",
+        "en": "Does the morning opening time change?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Có, mở muộn hơn",
+            "en": "Yes, it opens later"
+          },
+          {
+            "vi": "Có, mở sớm hơn",
+            "en": "Yes, it opens earlier"
+          },
+          {
+            "vi": "Không, vẫn là 10 giờ sáng",
+            "en": "No, it is still 10 a.m."
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「午前10時から午後8時までとなります」: Giờ mở cửa vẫn là 午前10時; chỉ có giờ đóng cửa thay đổi.",
+        "en": "Correct! The text has 「午前10時から午後8時までとなります」: The opening time remains 午前10時; only the closing time changes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「午前10時から午後8時までとなります」: Giờ mở cửa vẫn là 午前10時; chỉ có giờ đóng cửa thay đổi.",
+        "en": "Not quite. Look again at 「午前10時から午後8時までとなります」: The opening time remains 午前10時; only the closing time changes."
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-shopping",
+  "title": {
+    "vi": "Đọc: Nhật ký mua đôi giày mới",
+    "en": "Reading: Diary about buying new shoes"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "六月三日　くもり\nきょう、駅の前のデパートで新しいくつを買いました。ほしかった黒いくつが、半分のねだんで売っていたので、うれしかったです。でも、家に帰ってはいてみたら、少し小さかったです。あしたもう一度店に行って、大きいサイズにかえてもらおうと思います。",
+      "meaning": {
+        "vi": "Ngày 3 tháng 6, trời nhiều mây. Hôm nay tôi mua một đôi giày mới ở cửa hàng bách hóa trước ga. Đôi giày đen mà tôi thích được bán nửa giá nên tôi rất vui. Nhưng về nhà đi thử thì hơi nhỏ. Ngày mai tôi định đến cửa hàng một lần nữa để đổi sang cỡ lớn hơn.",
+        "en": "June 3, cloudy. Today I bought new shoes at the department store in front of the station. The black shoes I had wanted were being sold at half price, so I was happy. But when I got home and tried them on, they were a little small. Tomorrow I plan to go to the store again and have them exchanged for a larger size."
+      },
+      "reading": "ろくがつみっか　くもり\nきょう、えきのまえのデパートであたらしいくつをかいました。ほしかったくろいくつが、はんぶんのねだんでうっていたので、うれしかったです。でも、いえにかえってはいてみたら、すこしちいさかったです。あしたもういちどみせにいって、おおきいサイズにかえてもらおうとおもいます。",
+      "explanation": {
+        "vi": "「～てみる」= thử làm (はいてみたら); 「～たら」nêu điều kiện/phát hiện; 「～てもらう」= nhờ làm cho (かえてもらおう); 「くつ」= giày.",
+        "en": "「～てみる」 = try doing (はいてみたら); 「～たら」 = when/if (a discovery); 「～てもらう」 = have it done for you (かえてもらおう); 「くつ」 = shoes."
+      },
+      "scopeRef": "r-n4-essay-diary"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Tác giả đã mua gì?",
+        "en": "What did the writer buy?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Một đôi giày đen",
+            "en": "A pair of black shoes"
+          },
+          {
+            "vi": "Một chiếc áo đen",
+            "en": "A black shirt"
+          },
+          {
+            "vi": "Một chiếc túi nhỏ",
+            "en": "A small bag"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ほしかった黒いくつが」: 「黒いくつ」nghĩa là đôi giày màu đen.",
+        "en": "Correct! The text has 「ほしかった黒いくつが」: 「黒いくつ」 means black shoes."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ほしかった黒いくつが」: 「黒いくつ」nghĩa là đôi giày màu đen.",
+        "en": "Not quite. Look again at 「ほしかった黒いくつが」: 「黒いくつ」 means black shoes."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Vì sao tác giả vui?",
+        "en": "Why was the writer happy?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì được tặng thêm một đôi",
+            "en": "Because they got a second pair free"
+          },
+          {
+            "vi": "Vì giày được bán nửa giá",
+            "en": "Because the shoes were half price"
+          },
+          {
+            "vi": "Vì đi thử rất vừa",
+            "en": "Because they fit perfectly"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「半分のねだんで売っていたので、うれしかったです」: 「半分のねだん」nghĩa là nửa giá, nên tác giả thấy vui.",
+        "en": "Correct! The text has 「半分のねだんで売っていたので、うれしかったです」: 「半分のねだん」 means half price, which made the writer happy."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「半分のねだんで売っていたので、うれしかったです」: 「半分のねだん」nghĩa là nửa giá, nên tác giả thấy vui.",
+        "en": "Not quite. Look again at 「半分のねだんで売っていたので、うれしかったです」: 「半分のねだん」 means half price, which made the writer happy."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Vấn đề của đôi giày là gì?",
+        "en": "What is the problem with the shoes?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Màu không đẹp",
+            "en": "The color is not nice"
+          },
+          {
+            "vi": "Hơi nhỏ",
+            "en": "They are a little small"
+          },
+          {
+            "vi": "Quá đắt",
+            "en": "They are too expensive"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「少し小さかったです」: 「少し小さい」nghĩa là hơi nhỏ khi đi thử ở nhà.",
+        "en": "Correct! The text has 「少し小さかったです」: 「少し小さい」 means a little small when tried on at home."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「少し小さかったです」: 「少し小さい」nghĩa là hơi nhỏ khi đi thử ở nhà.",
+        "en": "Not quite. Look again at 「少し小さかったです」: 「少し小さい」 means a little small when tried on at home."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Ngày mai tác giả định làm gì?",
+        "en": "What does the writer plan to do tomorrow?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Đổi sang cỡ lớn hơn ở cửa hàng",
+            "en": "Exchange them for a larger size at the store"
+          },
+          {
+            "vi": "Bán lại đôi giày",
+            "en": "Sell the shoes"
+          },
+          {
+            "vi": "Mua thêm một đôi màu khác",
+            "en": "Buy another pair in a different color"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「大きいサイズにかえてもらおうと思います」: 「～てもらおうと思う」nghĩa là định nhờ (cửa hàng) đổi cho cỡ lớn hơn.",
+        "en": "Correct! The text has 「大きいサイズにかえてもらおうと思います」: 「～てもらおうと思う」 means plan to have (the store) exchange them for a larger size."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「大きいサイズにかえてもらおうと思います」: 「～てもらおうと思う」nghĩa là định nhờ (cửa hàng) đổi cho cỡ lớn hơn.",
+        "en": "Not quite. Look again at 「大きいサイズにかえてもらおうと思います」: 「～てもらおうと思う」 means plan to have (the store) exchange them for a larger size."
+      }
+    }
+  ]
+}

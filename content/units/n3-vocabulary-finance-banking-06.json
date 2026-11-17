@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-finance-banking",
+  "title": {
+    "vi": "Tài sản, phá sản và tổn thất",
+    "en": "Assets, bankruptcy and loss"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 880,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "資産",
+      "reading": "しさん",
+      "meaning": {
+        "vi": "Tài sản (của cá nhân, công ty)",
+        "en": "Assets"
+      },
+      "examples": [
+        {
+          "ja": "この会社は、大きな資産を持っています。",
+          "reading": "このかいしゃは、おおきなしさんをもっています。",
+          "translation": {
+            "vi": "Công ty này sở hữu một khối tài sản lớn.",
+            "en": "This company holds substantial assets."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "財産",
+      "reading": "ざいさん",
+      "meaning": {
+        "vi": "Tài sản; của cải",
+        "en": "Property; fortune"
+      },
+      "examples": [
+        {
+          "ja": "祖父は、財産を三人の子どもに分けました。",
+          "reading": "そふは、ざいさんをさんにんのこどもにわけました。",
+          "translation": {
+            "vi": "Ông tôi đã chia tài sản cho ba người con.",
+            "en": "My grandfather divided his property among his three children."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "金銭",
+      "reading": "きんせん",
+      "meaning": {
+        "vi": "Tiền bạc",
+        "en": "Money; cash matters"
+      },
+      "examples": [
+        {
+          "ja": "友達との間で、金銭の貸し借りはしないことにしています。",
+          "reading": "ともだちとのあいだで、きんせんのかしかりはしないことにしています。",
+          "translation": {
+            "vi": "Tôi quyết định không vay mượn tiền bạc giữa bạn bè.",
+            "en": "I have decided not to borrow or lend money among friends."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "倒産",
+      "reading": "とうさん",
+      "meaning": {
+        "vi": "Phá sản (công ty)",
+        "en": "Bankruptcy (of a company)"
+      },
+      "examples": [
+        {
+          "ja": "不景気で、小さな工場が倒産しました。",
+          "reading": "ふけいきで、ちいさなこうじょうがとうさんしました。",
+          "translation": {
+            "vi": "Vì kinh tế suy thoái, một nhà máy nhỏ đã phá sản.",
+            "en": "A small factory went bankrupt because of the recession."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "破産",
+      "reading": "はさん",
+      "meaning": {
+        "vi": "Phá sản (cá nhân)",
+        "en": "Bankruptcy (of a person)"
+      },
+      "examples": [
+        {
+          "ja": "借金が増えて、とうとう破産してしまいました。",
+          "reading": "しゃっきんがふえて、とうとうはさんしてしまいました。",
+          "translation": {
+            "vi": "Nợ tăng lên và cuối cùng ông ấy đã phá sản.",
+            "en": "His debts grew and he finally went bankrupt."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "損失",
+      "reading": "そんしつ",
+      "meaning": {
+        "vi": "Tổn thất; thua lỗ",
+        "en": "Loss"
+      },
+      "examples": [
+        {
+          "ja": "台風で、会社は大きな損失を出しました。",
+          "reading": "たいふうで、かいしゃはおおきなそんしつをだしました。",
+          "translation": {
+            "vi": "Vì bão, công ty đã chịu tổn thất lớn.",
+            "en": "The typhoon caused the company a large loss."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "資産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社は、大きな（　）を持っています。 — Nghĩa của câu: “Công ty này sở hữu một khối tài sản lớn.”",
+        "en": "Choose the word that fits the blank: この会社は、大きな（　）を持っています。 — Meaning of the sentence: “This company holds substantial assets.”"
+      },
+      "payload": {
+        "choices": [
+          "損失",
+          "資産",
+          "財産",
+          "金銭"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「資産」(Tài sản (của cá nhân, công ty)) hợp nghĩa câu này: “Công ty này sở hữu một khối tài sản lớn.”",
+        "en": "Correct! 「資産」(Assets) fits this sentence: “This company holds substantial assets.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Công ty này sở hữu một khối tài sản lớn.”, nên cần 「資産」(Tài sản (của cá nhân, công ty)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company holds substantial assets.”, so it needs 「資産」(Assets); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "財産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 祖父は、（　）を三人の子どもに分けました。 — Nghĩa của câu: “Ông tôi đã chia tài sản cho ba người con.”",
+        "en": "Choose the word that fits the blank: 祖父は、（　）を三人の子どもに分けました。 — Meaning of the sentence: “My grandfather divided his property among his three children.”"
+      },
+      "payload": {
+        "choices": [
+          "資産",
+          "金銭",
+          "財産",
+          "損失"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「財産」(Tài sản; của cải) hợp nghĩa câu này: “Ông tôi đã chia tài sản cho ba người con.”",
+        "en": "Correct! 「財産」(Property; fortune) fits this sentence: “My grandfather divided his property among his three children.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ông tôi đã chia tài sản cho ba người con.”, nên cần 「財産」(Tài sản; của cải); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My grandfather divided his property among his three children.”, so it needs 「財産」(Property; fortune); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "金銭",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 友達との間で、（　）の貸し借りはしないことにしています。 — Nghĩa của câu: “Tôi quyết định không vay mượn tiền bạc giữa bạn bè.”",
+        "en": "Choose the word that fits the blank: 友達との間で、（　）の貸し借りはしないことにしています。 — Meaning of the sentence: “I have decided not to borrow or lend money among friends.”"
+      },
+      "payload": {
+        "choices": [
+          "損失",
+          "資産",
+          "財産",
+          "金銭"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「金銭」(Tiền bạc) hợp nghĩa câu này: “Tôi quyết định không vay mượn tiền bạc giữa bạn bè.”",
+        "en": "Correct! 「金銭」(Money; cash matters) fits this sentence: “I have decided not to borrow or lend money among friends.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi quyết định không vay mượn tiền bạc giữa bạn bè.”, nên cần 「金銭」(Tiền bạc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have decided not to borrow or lend money among friends.”, so it needs 「金銭」(Money; cash matters); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "倒産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 不景気で、小さな工場が（　）しました。 — Nghĩa của câu: “Vì kinh tế suy thoái, một nhà máy nhỏ đã phá sản.”",
+        "en": "Choose the word that fits the blank: 不景気で、小さな工場が（　）しました。 — Meaning of the sentence: “A small factory went bankrupt because of the recession.”"
+      },
+      "payload": {
+        "choices": [
+          "倒産",
+          "資産",
+          "損失",
+          "財産"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「倒産」(Phá sản (công ty)) hợp nghĩa câu này: “Vì kinh tế suy thoái, một nhà máy nhỏ đã phá sản.”",
+        "en": "Correct! 「倒産」(Bankruptcy (of a company)) fits this sentence: “A small factory went bankrupt because of the recession.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì kinh tế suy thoái, một nhà máy nhỏ đã phá sản.”, nên cần 「倒産」(Phá sản (công ty)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A small factory went bankrupt because of the recession.”, so it needs 「倒産」(Bankruptcy (of a company)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "破産",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 借金が増えて、とうとう（　）してしまいました。 — Nghĩa của câu: “Nợ tăng lên và cuối cùng ông ấy đã phá sản.”",
+        "en": "Choose the word that fits the blank: 借金が増えて、とうとう（　）してしまいました。 — Meaning of the sentence: “His debts grew and he finally went bankrupt.”"
+      },
+      "payload": {
+        "choices": [
+          "財産",
+          "破産",
+          "金銭",
+          "損失"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「破産」(Phá sản (cá nhân)) hợp nghĩa câu này: “Nợ tăng lên và cuối cùng ông ấy đã phá sản.”",
+        "en": "Correct! 「破産」(Bankruptcy (of a person)) fits this sentence: “His debts grew and he finally went bankrupt.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nợ tăng lên và cuối cùng ông ấy đã phá sản.”, nên cần 「破産」(Phá sản (cá nhân)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “His debts grew and he finally went bankrupt.”, so it needs 「破産」(Bankruptcy (of a person)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "損失",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風で、会社は大きな（　）を出しました。 — Nghĩa của câu: “Vì bão, công ty đã chịu tổn thất lớn.”",
+        "en": "Choose the word that fits the blank: 台風で、会社は大きな（　）を出しました。 — Meaning of the sentence: “The typhoon caused the company a large loss.”"
+      },
+      "payload": {
+        "choices": [
+          "資産",
+          "財産",
+          "損失",
+          "倒産"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「損失」(Tổn thất; thua lỗ) hợp nghĩa câu này: “Vì bão, công ty đã chịu tổn thất lớn.”",
+        "en": "Correct! 「損失」(Loss) fits this sentence: “The typhoon caused the company a large loss.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì bão, công ty đã chịu tổn thất lớn.”, nên cần 「損失」(Tổn thất; thua lỗ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The typhoon caused the company a large loss.”, so it needs 「損失」(Loss); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "資産",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この会社は、大きな「資産」を持っています。",
+        "en": "Choose the correct reading of the word in 「」: この会社は、大きな「資産」を持っています。"
+      },
+      "payload": {
+        "choices": [
+          "ざいさん",
+          "きんせん",
+          "しさん",
+          "そんしつ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「資産」 đọc là 「しさん」, nghĩa là Tài sản (của cá nhân, công ty).",
+        "en": "Correct! 「資産」 is read 「しさん」 and means Assets."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「資産」 đọc là 「しさん」 (Tài sản (của cá nhân, công ty)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「資産」 is read 「しさん」 (Assets); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "倒産",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 不景気で、小さな工場が「倒産」しました。",
+        "en": "Choose the correct reading of the word in 「」: 不景気で、小さな工場が「倒産」しました。"
+      },
+      "payload": {
+        "choices": [
+          "はさん",
+          "そんしつ",
+          "きんせん",
+          "とうさん"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「倒産」 đọc là 「とうさん」, nghĩa là Phá sản (công ty).",
+        "en": "Correct! 「倒産」 is read 「とうさん」 and means Bankruptcy (of a company)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「倒産」 đọc là 「とうさん」 (Phá sản (công ty)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「倒産」 is read 「とうさん」 (Bankruptcy (of a company)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "損失",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 台風で、会社は大きな「そんしつ」を出しました。",
+        "en": "Choose the correct way to write the word in 「」: 台風で、会社は大きな「そんしつ」を出しました。"
+      },
+      "payload": {
+        "choices": [
+          "資産",
+          "財産",
+          "倒産",
+          "損失"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「そんしつ」 viết là 「損失」, nghĩa là Tổn thất; thua lỗ.",
+        "en": "Correct! 「そんしつ」 is written 「損失」 and means Loss."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「そんしつ」 viết là 「損失」 (Tổn thất; thua lỗ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「そんしつ」 is written 「損失」 (Loss); the other words are read differently."
+      }
+    }
+  ]
+}

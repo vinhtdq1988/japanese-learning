@@ -43,20 +43,26 @@ export function currentStreakDays(
 const round3 = (value: number): number => Math.round(value * 1000) / 1000;
 
 /**
- * Tiến độ mục tiêu từ danh sách đơn vị đã xếp hạng (gồm `mastered`): `done` = số đơn vị đã hoàn thành hoặc thành
- * thạo, `total` = số đơn vị trong phạm vi. MỘT nguồn duy nhất cho `GET /progress` và thành tựu `goal_*` (spec 005).
+ * Tiến độ mục tiêu từ danh sách đơn vị đã xếp hạng (gồm `mastered`), TRỌNG SỐ THEO PHÚT (spec 008, research D12.1):
+ * `done` = Σ `estMinutes` của đơn vị đã hoàn thành hoặc thành thạo, `total` = Σ `estMinutes` của mọi đơn vị trong phạm vi,
+ * `ratio = done / total` làm tròn 3 chữ số (0 khi phạm vi rỗng). Đơn vị 5/10/15 phút lệch nhau và từ vựng chiếm gần nửa số
+ * đơn vị nên đếm đơn vị sẽ phản ánh "đã học bao nhiêu từ vựng" hơn là "đã đi bao xa". MỘT nguồn duy nhất cho `GET /progress`
+ * và thành tựu `goal_*` (spec 005); cùng đơn vị phút với `isOnTrack`.
  */
-export function goalRatio(ranked: readonly { status: RankedStatus }[]): {
+export function goalRatio(
+  ranked: readonly { status: RankedStatus; unit: { estMinutes: number } }[],
+): {
   done: number;
   total: number;
   ratio: number;
 } {
-  const done = ranked.filter((r) => r.status === 'completed' || r.status === 'mastered').length;
-  return {
-    done,
-    total: ranked.length,
-    ratio: ranked.length > 0 ? round3(done / ranked.length) : 0,
-  };
+  let done = 0;
+  let total = 0;
+  for (const r of ranked) {
+    total += r.unit.estMinutes;
+    if (r.status === 'completed' || r.status === 'mastered') done += r.unit.estMinutes;
+  }
+  return { done, total, ratio: total > 0 ? round3(done / total) : 0 };
 }
 
 export interface OnTrackInput {

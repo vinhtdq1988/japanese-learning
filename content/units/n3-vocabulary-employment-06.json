@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-employment",
+  "title": {
+    "vi": "Giáng chức, kiêm nhiệm và nhậm chức",
+    "en": "Demotion, side jobs and taking office"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 780,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "降格",
+      "reading": "こうかく",
+      "meaning": {
+        "vi": "Giáng chức; hạ cấp",
+        "en": "Demotion"
+      },
+      "examples": [
+        {
+          "ja": "大きな失敗をして、課長から係長に降格されました。",
+          "reading": "おおきなしっぱいをして、かちょうからかかりちょうにこうかくされました。",
+          "translation": {
+            "vi": "Vì mắc lỗi lớn, anh ấy bị giáng từ trưởng phòng xuống tổ trưởng.",
+            "en": "After a serious mistake, he was demoted from section chief to team leader."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "兼業",
+      "reading": "けんぎょう",
+      "meaning": {
+        "vi": "Kiêm nhiệm nghề (làm thêm nghề khác)",
+        "en": "Holding a second occupation"
+      },
+      "examples": [
+        {
+          "ja": "兼業を認めている会社が、少しずつ増えています。",
+          "reading": "けんぎょうをみとめているかいしゃが、すこしずつふえています。",
+          "translation": {
+            "vi": "Số công ty cho phép làm thêm nghề khác đang tăng dần.",
+            "en": "The number of companies that allow side jobs is slowly increasing."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "就任",
+      "reading": "しゅうにん",
+      "meaning": {
+        "vi": "Nhậm chức",
+        "en": "Taking up a post"
+      },
+      "examples": [
+        {
+          "ja": "新しい社長が、四月に就任します。",
+          "reading": "あたらしいしゃちょうが、しがつにしゅうにんします。",
+          "translation": {
+            "vi": "Giám đốc mới sẽ nhậm chức vào tháng Tư.",
+            "en": "The new president will take office in April."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "着任",
+      "reading": "ちゃくにん",
+      "meaning": {
+        "vi": "Đến nhận nhiệm sở",
+        "en": "Arriving at a new post"
+      },
+      "examples": [
+        {
+          "ja": "先月、大阪支店に着任したばかりです。",
+          "reading": "せんげつ、おおさかしてんにちゃくにんしたばかりです。",
+          "translation": {
+            "vi": "Tháng trước tôi vừa đến nhận nhiệm sở ở chi nhánh Osaka.",
+            "en": "I only arrived at my new post at the Osaka branch last month."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "勤め先",
+      "reading": "つとめさき",
+      "meaning": {
+        "vi": "Nơi làm việc",
+        "en": "Place of employment"
+      },
+      "examples": [
+        {
+          "ja": "履歴書には、現在の勤め先も書いてください。",
+          "reading": "りれきしょには、げんざいのつとめさきもかいてください。",
+          "translation": {
+            "vi": "Trong sơ yếu lý lịch, xin hãy ghi cả nơi làm việc hiện tại.",
+            "en": "Please also write your current employer on your résumé."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "肩書き",
+      "reading": "かたがき",
+      "meaning": {
+        "vi": "Chức danh",
+        "en": "Job title"
+      },
+      "examples": [
+        {
+          "ja": "名刺には、名前と肩書きが印刷されています。",
+          "reading": "めいしには、なまえとかたがきがいんさつされています。",
+          "translation": {
+            "vi": "Trên danh thiếp có in tên và chức danh.",
+            "en": "The business card has a name and a job title printed on it."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "降格",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大きな失敗をして、課長から係長に（　）されました。 — Nghĩa của câu: “Vì mắc lỗi lớn, anh ấy bị giáng từ trưởng phòng xuống tổ trưởng.”",
+        "en": "Choose the word that fits the blank: 大きな失敗をして、課長から係長に（　）されました。 — Meaning of the sentence: “After a serious mistake, he was demoted from section chief to team leader.”"
+      },
+      "payload": {
+        "choices": [
+          "降格",
+          "就任",
+          "兼業",
+          "着任"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「降格」(Giáng chức; hạ cấp) hợp nghĩa câu này: “Vì mắc lỗi lớn, anh ấy bị giáng từ trưởng phòng xuống tổ trưởng.”",
+        "en": "Correct! 「降格」(Demotion) fits this sentence: “After a serious mistake, he was demoted from section chief to team leader.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vì mắc lỗi lớn, anh ấy bị giáng từ trưởng phòng xuống tổ trưởng.”, nên cần 「降格」(Giáng chức; hạ cấp); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “After a serious mistake, he was demoted from section chief to team leader.”, so it needs 「降格」(Demotion); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "兼業",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）を認めている会社が、少しずつ増えています。 — Nghĩa của câu: “Số công ty cho phép làm thêm nghề khác đang tăng dần.”",
+        "en": "Choose the word that fits the blank: （　）を認めている会社が、少しずつ増えています。 — Meaning of the sentence: “The number of companies that allow side jobs is slowly increasing.”"
+      },
+      "payload": {
+        "choices": [
+          "降格",
+          "兼業",
+          "着任",
+          "就任"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「兼業」(Kiêm nhiệm nghề (làm thêm nghề khác)) hợp nghĩa câu này: “Số công ty cho phép làm thêm nghề khác đang tăng dần.”",
+        "en": "Correct! 「兼業」(Holding a second occupation) fits this sentence: “The number of companies that allow side jobs is slowly increasing.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Số công ty cho phép làm thêm nghề khác đang tăng dần.”, nên cần 「兼業」(Kiêm nhiệm nghề (làm thêm nghề khác)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The number of companies that allow side jobs is slowly increasing.”, so it needs 「兼業」(Holding a second occupation); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "就任",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい社長が、四月に（　）します。 — Nghĩa của câu: “Giám đốc mới sẽ nhậm chức vào tháng Tư.”",
+        "en": "Choose the word that fits the blank: 新しい社長が、四月に（　）します。 — Meaning of the sentence: “The new president will take office in April.”"
+      },
+      "payload": {
+        "choices": [
+          "勤め先",
+          "肩書き",
+          "就任",
+          "降格"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「就任」(Nhậm chức) hợp nghĩa câu này: “Giám đốc mới sẽ nhậm chức vào tháng Tư.”",
+        "en": "Correct! 「就任」(Taking up a post) fits this sentence: “The new president will take office in April.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Giám đốc mới sẽ nhậm chức vào tháng Tư.”, nên cần 「就任」(Nhậm chức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The new president will take office in April.”, so it needs 「就任」(Taking up a post); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "着任",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先月、大阪支店に（　）したばかりです。 — Nghĩa của câu: “Tháng trước tôi vừa đến nhận nhiệm sở ở chi nhánh Osaka.”",
+        "en": "Choose the word that fits the blank: 先月、大阪支店に（　）したばかりです。 — Meaning of the sentence: “I only arrived at my new post at the Osaka branch last month.”"
+      },
+      "payload": {
+        "choices": [
+          "兼業",
+          "勤め先",
+          "就任",
+          "着任"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「着任」(Đến nhận nhiệm sở) hợp nghĩa câu này: “Tháng trước tôi vừa đến nhận nhiệm sở ở chi nhánh Osaka.”",
+        "en": "Correct! 「着任」(Arriving at a new post) fits this sentence: “I only arrived at my new post at the Osaka branch last month.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tháng trước tôi vừa đến nhận nhiệm sở ở chi nhánh Osaka.”, nên cần 「着任」(Đến nhận nhiệm sở); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I only arrived at my new post at the Osaka branch last month.”, so it needs 「着任」(Arriving at a new post); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "勤め先",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 履歴書には、現在の（　）も書いてください。 — Nghĩa của câu: “Trong sơ yếu lý lịch, xin hãy ghi cả nơi làm việc hiện tại.”",
+        "en": "Choose the word that fits the blank: 履歴書には、現在の（　）も書いてください。 — Meaning of the sentence: “Please also write your current employer on your résumé.”"
+      },
+      "payload": {
+        "choices": [
+          "勤め先",
+          "兼業",
+          "着任",
+          "肩書き"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「勤め先」(Nơi làm việc) hợp nghĩa câu này: “Trong sơ yếu lý lịch, xin hãy ghi cả nơi làm việc hiện tại.”",
+        "en": "Correct! 「勤め先」(Place of employment) fits this sentence: “Please also write your current employer on your résumé.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong sơ yếu lý lịch, xin hãy ghi cả nơi làm việc hiện tại.”, nên cần 「勤め先」(Nơi làm việc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please also write your current employer on your résumé.”, so it needs 「勤め先」(Place of employment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "肩書き",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 名刺には、名前と（　）が印刷されています。 — Nghĩa của câu: “Trên danh thiếp có in tên và chức danh.”",
+        "en": "Choose the word that fits the blank: 名刺には、名前と（　）が印刷されています。 — Meaning of the sentence: “The business card has a name and a job title printed on it.”"
+      },
+      "payload": {
+        "choices": [
+          "勤め先",
+          "肩書き",
+          "着任",
+          "就任"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「肩書き」(Chức danh) hợp nghĩa câu này: “Trên danh thiếp có in tên và chức danh.”",
+        "en": "Correct! 「肩書き」(Job title) fits this sentence: “The business card has a name and a job title printed on it.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trên danh thiếp có in tên và chức danh.”, nên cần 「肩書き」(Chức danh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The business card has a name and a job title printed on it.”, so it needs 「肩書き」(Job title); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "降格",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 大きな失敗をして、課長から係長に「降格」されました。",
+        "en": "Choose the correct reading of the word in 「」: 大きな失敗をして、課長から係長に「降格」されました。"
+      },
+      "payload": {
+        "choices": [
+          "けんぎょう",
+          "こうかく",
+          "つとめさき",
+          "しゅうにん"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「降格」 đọc là 「こうかく」, nghĩa là Giáng chức; hạ cấp.",
+        "en": "Correct! 「降格」 is read 「こうかく」 and means Demotion."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「降格」 đọc là 「こうかく」 (Giáng chức; hạ cấp); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「降格」 is read 「こうかく」 (Demotion); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "着任",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 先月、大阪支店に「着任」したばかりです。",
+        "en": "Choose the correct reading of the word in 「」: 先月、大阪支店に「着任」したばかりです。"
+      },
+      "payload": {
+        "choices": [
+          "かたがき",
+          "つとめさき",
+          "ちゃくにん",
+          "しゅうにん"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「着任」 đọc là 「ちゃくにん」, nghĩa là Đến nhận nhiệm sở.",
+        "en": "Correct! 「着任」 is read 「ちゃくにん」 and means Arriving at a new post."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「着任」 đọc là 「ちゃくにん」 (Đến nhận nhiệm sở); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「着任」 is read 「ちゃくにん」 (Arriving at a new post); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "肩書き",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 名刺には、名前と「かたがき」が印刷されています。",
+        "en": "Choose the correct way to write the word in 「」: 名刺には、名前と「かたがき」が印刷されています。"
+      },
+      "payload": {
+        "choices": [
+          "兼業",
+          "着任",
+          "肩書き",
+          "勤め先"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かたがき」 viết là 「肩書き」, nghĩa là Chức danh.",
+        "en": "Correct! 「かたがき」 is written 「肩書き」 and means Job title."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かたがき」 viết là 「肩書き」 (Chức danh); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かたがき」 is written 「肩書き」 (Job title); the other words are read differently."
+      }
+    }
+  ]
+}

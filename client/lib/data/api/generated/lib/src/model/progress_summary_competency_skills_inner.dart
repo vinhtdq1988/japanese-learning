@@ -10,6 +10,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'progress_summary_competency_skills_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -20,56 +21,92 @@ part 'progress_summary_competency_skills_inner.g.dart';
 class ProgressSummaryCompetencySkillsInner {
   /// Returns a new [ProgressSummaryCompetencySkillsInner] instance.
   ProgressSummaryCompetencySkillsInner({
-    required this.skill,
 
-    required this.level,
+    required  this.skill,
 
-    required this.answered,
+    required  this.level,
 
-    this.accuracy,
+    required  this.answered,
+
+     this.accuracy,
   });
 
-  @JsonKey(name: r'skill', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'skill',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Skill skill;
 
-  @JsonKey(name: r'level', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'level',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final CompetencyLevel level;
 
-  /// Số câu lượt chính trong cửa sổ gần nhất (tối đa 20 mỗi chủ đề, cộng theo chủ đề)
-  // minimum: 0
-  @JsonKey(name: r'answered', required: true, includeIfNull: false)
+
+
+      /// Số câu lượt chính trong cửa sổ gần nhất (tối đa 20 mỗi chủ đề, cộng theo chủ đề)
+          // minimum: 0
+  @JsonKey(
+    
+    name: r'answered',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int answered;
 
-  // minimum: 0
-  // maximum: 1
-  @JsonKey(name: r'accuracy', required: false, includeIfNull: false)
+
+
+          // minimum: 0
+          // maximum: 1
+  @JsonKey(
+    
+    name: r'accuracy',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? accuracy;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ProgressSummaryCompetencySkillsInner &&
-          other.skill == skill &&
-          other.level == level &&
-          other.answered == answered &&
-          other.accuracy == accuracy;
 
-  @override
-  int get hashCode =>
-      skill.hashCode +
-      level.hashCode +
-      answered.hashCode +
-      (accuracy == null ? 0 : accuracy.hashCode);
 
-  factory ProgressSummaryCompetencySkillsInner.fromJson(
-    Map<String, dynamic> json,
-  ) => _$ProgressSummaryCompetencySkillsInnerFromJson(json);
 
-  Map<String, dynamic> toJson() =>
-      _$ProgressSummaryCompetencySkillsInnerToJson(this);
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ProgressSummaryCompetencySkillsInner &&
+      other.skill == skill &&
+      other.level == level &&
+      other.answered == answered &&
+      other.accuracy == accuracy;
+
+    @override
+    int get hashCode =>
+        skill.hashCode +
+        level.hashCode +
+        answered.hashCode +
+        (accuracy == null ? 0 : accuracy.hashCode);
+
+  factory ProgressSummaryCompetencySkillsInner.fromJson(Map<String, dynamic> json) => _$ProgressSummaryCompetencySkillsInnerFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ProgressSummaryCompetencySkillsInnerToJson(this);
 
   @override
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-news-incidents",
+  "title": {
+    "vi": "Các nơi, bắt giữ và lời khai",
+    "en": "Regions, arrests and testimony"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1480,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "各地",
+      "reading": "かくち",
+      "meaning": {
+        "vi": "Các nơi; khắp nơi",
+        "en": "Various places; every region"
+      },
+      "examples": [
+        {
+          "ja": "台風の影響で、各地で大雨が降りました。",
+          "reading": "たいふうのえいきょうで、かくちでおおあめがふりました。",
+          "translation": {
+            "vi": "Do ảnh hưởng của bão, nhiều nơi đã có mưa lớn.",
+            "en": "Because of the typhoon, heavy rain fell in many places."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "国内外",
+      "reading": "こくないがい",
+      "meaning": {
+        "vi": "Trong và ngoài nước",
+        "en": "Home and abroad"
+      },
+      "examples": [
+        {
+          "ja": "この会社の製品は、国内外で人気があります。",
+          "reading": "このかいしゃのせいひんは、こくないがいでにんきがあります。",
+          "translation": {
+            "vi": "Sản phẩm của công ty này được ưa chuộng cả trong lẫn ngoài nước.",
+            "en": "This company’s products are popular both at home and abroad."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "摘発",
+      "reading": "てきはつ",
+      "meaning": {
+        "vi": "Phát hiện và xử lý (vi phạm)",
+        "en": "Exposing; cracking down on"
+      },
+      "examples": [
+        {
+          "ja": "警察は、違法な店を摘発しました。",
+          "reading": "けいさつは、いほうなみせをてきはつしました。",
+          "translation": {
+            "vi": "Cảnh sát đã triệt phá cửa hàng hoạt động trái luật.",
+            "en": "The police cracked down on an illegal shop."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "拘束",
+      "reading": "こうそく",
+      "meaning": {
+        "vi": "Giam giữ; ràng buộc",
+        "en": "Detention; restraint"
+      },
+      "examples": [
+        {
+          "ja": "男は、警察に一晩拘束されました。",
+          "reading": "おとこは、けいさつにひとばんこうそくされました。",
+          "translation": {
+            "vi": "Người đàn ông đã bị cảnh sát giam giữ một đêm.",
+            "en": "The man was held by the police for one night."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "釈放",
+      "reading": "しゃくほう",
+      "meaning": {
+        "vi": "Thả (người bị giam)",
+        "en": "Release (from custody)"
+      },
+      "examples": [
+        {
+          "ja": "調べが終わって、男は釈放されました。",
+          "reading": "しらべがおわって、おとこはしゃくほうされました。",
+          "translation": {
+            "vi": "Cuộc điều tra kết thúc và người đàn ông đã được thả.",
+            "en": "The investigation ended and the man was released."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "供述",
+      "reading": "きょうじゅつ",
+      "meaning": {
+        "vi": "Lời khai",
+        "en": "Statement; testimony"
+      },
+      "examples": [
+        {
+          "ja": "男は、事件について警察に供述しました。",
+          "reading": "おとこは、じけんについてけいさつにきょうじゅつしました。",
+          "translation": {
+            "vi": "Người đàn ông đã khai với cảnh sát về vụ án.",
+            "en": "The man gave a statement to the police about the case."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "各地",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 台風の影響で、（　）で大雨が降りました。 — Nghĩa của câu: “Do ảnh hưởng của bão, nhiều nơi đã có mưa lớn.”",
+        "en": "Choose the word that fits the blank: 台風の影響で、（　）で大雨が降りました。 — Meaning of the sentence: “Because of the typhoon, heavy rain fell in many places.”"
+      },
+      "payload": {
+        "choices": [
+          "供述",
+          "各地",
+          "摘発",
+          "拘束"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「各地」(Các nơi; khắp nơi) hợp nghĩa câu này: “Do ảnh hưởng của bão, nhiều nơi đã có mưa lớn.”",
+        "en": "Correct! 「各地」(Various places; every region) fits this sentence: “Because of the typhoon, heavy rain fell in many places.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Do ảnh hưởng của bão, nhiều nơi đã có mưa lớn.”, nên cần 「各地」(Các nơi; khắp nơi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Because of the typhoon, heavy rain fell in many places.”, so it needs 「各地」(Various places; every region); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "国内外",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この会社の製品は、（　）で人気があります。 — Nghĩa của câu: “Sản phẩm của công ty này được ưa chuộng cả trong lẫn ngoài nước.”",
+        "en": "Choose the word that fits the blank: この会社の製品は、（　）で人気があります。 — Meaning of the sentence: “This company’s products are popular both at home and abroad.”"
+      },
+      "payload": {
+        "choices": [
+          "釈放",
+          "供述",
+          "国内外",
+          "各地"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「国内外」(Trong và ngoài nước) hợp nghĩa câu này: “Sản phẩm của công ty này được ưa chuộng cả trong lẫn ngoài nước.”",
+        "en": "Correct! 「国内外」(Home and abroad) fits this sentence: “This company’s products are popular both at home and abroad.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Sản phẩm của công ty này được ưa chuộng cả trong lẫn ngoài nước.”, nên cần 「国内外」(Trong và ngoài nước); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This company’s products are popular both at home and abroad.”, so it needs 「国内外」(Home and abroad); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "摘発",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 警察は、違法な店を（　）しました。 — Nghĩa của câu: “Cảnh sát đã triệt phá cửa hàng hoạt động trái luật.”",
+        "en": "Choose the word that fits the blank: 警察は、違法な店を（　）しました。 — Meaning of the sentence: “The police cracked down on an illegal shop.”"
+      },
+      "payload": {
+        "choices": [
+          "釈放",
+          "供述",
+          "国内外",
+          "摘発"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「摘発」(Phát hiện và xử lý (vi phạm)) hợp nghĩa câu này: “Cảnh sát đã triệt phá cửa hàng hoạt động trái luật.”",
+        "en": "Correct! 「摘発」(Exposing; cracking down on) fits this sentence: “The police cracked down on an illegal shop.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cảnh sát đã triệt phá cửa hàng hoạt động trái luật.”, nên cần 「摘発」(Phát hiện và xử lý (vi phạm)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The police cracked down on an illegal shop.”, so it needs 「摘発」(Exposing; cracking down on); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "拘束",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 男は、警察に一晩（　）されました。 — Nghĩa của câu: “Người đàn ông đã bị cảnh sát giam giữ một đêm.”",
+        "en": "Choose the word that fits the blank: 男は、警察に一晩（　）されました。 — Meaning of the sentence: “The man was held by the police for one night.”"
+      },
+      "payload": {
+        "choices": [
+          "拘束",
+          "摘発",
+          "供述",
+          "釈放"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「拘束」(Giam giữ; ràng buộc) hợp nghĩa câu này: “Người đàn ông đã bị cảnh sát giam giữ một đêm.”",
+        "en": "Correct! 「拘束」(Detention; restraint) fits this sentence: “The man was held by the police for one night.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người đàn ông đã bị cảnh sát giam giữ một đêm.”, nên cần 「拘束」(Giam giữ; ràng buộc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The man was held by the police for one night.”, so it needs 「拘束」(Detention; restraint); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "釈放",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 調べが終わって、男は（　）されました。 — Nghĩa của câu: “Cuộc điều tra kết thúc và người đàn ông đã được thả.”",
+        "en": "Choose the word that fits the blank: 調べが終わって、男は（　）されました。 — Meaning of the sentence: “The investigation ended and the man was released.”"
+      },
+      "payload": {
+        "choices": [
+          "各地",
+          "釈放",
+          "拘束",
+          "国内外"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「釈放」(Thả (người bị giam)) hợp nghĩa câu này: “Cuộc điều tra kết thúc và người đàn ông đã được thả.”",
+        "en": "Correct! 「釈放」(Release (from custody)) fits this sentence: “The investigation ended and the man was released.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cuộc điều tra kết thúc và người đàn ông đã được thả.”, nên cần 「釈放」(Thả (người bị giam)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The investigation ended and the man was released.”, so it needs 「釈放」(Release (from custody)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "供述",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 男は、事件について警察に（　）しました。 — Nghĩa của câu: “Người đàn ông đã khai với cảnh sát về vụ án.”",
+        "en": "Choose the word that fits the blank: 男は、事件について警察に（　）しました。 — Meaning of the sentence: “The man gave a statement to the police about the case.”"
+      },
+      "payload": {
+        "choices": [
+          "摘発",
+          "拘束",
+          "供述",
+          "各地"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「供述」(Lời khai) hợp nghĩa câu này: “Người đàn ông đã khai với cảnh sát về vụ án.”",
+        "en": "Correct! 「供述」(Statement; testimony) fits this sentence: “The man gave a statement to the police about the case.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người đàn ông đã khai với cảnh sát về vụ án.”, nên cần 「供述」(Lời khai); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The man gave a statement to the police about the case.”, so it needs 「供述」(Statement; testimony); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "各地",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 台風の影響で、「各地」で大雨が降りました。",
+        "en": "Choose the correct reading of the word in 「」: 台風の影響で、「各地」で大雨が降りました。"
+      },
+      "payload": {
+        "choices": [
+          "こくないがい",
+          "きょうじゅつ",
+          "かくち",
+          "しゃくほう"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「各地」 đọc là 「かくち」, nghĩa là Các nơi; khắp nơi.",
+        "en": "Correct! 「各地」 is read 「かくち」 and means Various places; every region."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「各地」 đọc là 「かくち」 (Các nơi; khắp nơi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「各地」 is read 「かくち」 (Various places; every region); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "拘束",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 男は、警察に一晩「拘束」されました。",
+        "en": "Choose the correct reading of the word in 「」: 男は、警察に一晩「拘束」されました。"
+      },
+      "payload": {
+        "choices": [
+          "てきはつ",
+          "かくち",
+          "こくないがい",
+          "こうそく"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「拘束」 đọc là 「こうそく」, nghĩa là Giam giữ; ràng buộc.",
+        "en": "Correct! 「拘束」 is read 「こうそく」 and means Detention; restraint."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「拘束」 đọc là 「こうそく」 (Giam giữ; ràng buộc); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「拘束」 is read 「こうそく」 (Detention; restraint); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "供述",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 男は、事件について警察に「きょうじゅつ」しました。",
+        "en": "Choose the correct way to write the word in 「」: 男は、事件について警察に「きょうじゅつ」しました。"
+      },
+      "payload": {
+        "choices": [
+          "国内外",
+          "釈放",
+          "摘発",
+          "供述"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「きょうじゅつ」 viết là 「供述」, nghĩa là Lời khai.",
+        "en": "Correct! 「きょうじゅつ」 is written 「供述」 and means Statement; testimony."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「きょうじゅつ」 viết là 「供述」 (Lời khai); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「きょうじゅつ」 is written 「供述」 (Statement; testimony); the other words are read differently."
+      }
+    }
+  ]
+}

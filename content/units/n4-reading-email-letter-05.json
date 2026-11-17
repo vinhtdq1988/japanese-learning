@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-email",
+  "title": {
+    "vi": "Đọc: Thư cảm ơn món quà",
+    "en": "Reading: Thank-you letter for a gift"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "おばさんへ\nこの間は、すてきなセーターをありがとうございました。ちょうどさむくなってきたので、毎日着ています。色もサイズもぴったりです。友だちにも「いいね」と言われました。こんど日本に来たとき、いっしょにごはんを食べましょう。\nあや",
+      "meaning": {
+        "vi": "Gửi cô. Hôm trước cháu cảm ơn cô về chiếc áo len rất đẹp ạ. Vừa lúc trời bắt đầu lạnh nên ngày nào cháu cũng mặc. Màu sắc và kích cỡ đều vừa vặn. Bạn bè cũng khen “đẹp quá”. Lần tới khi cô đến Nhật, chúng ta cùng đi ăn nhé. — Aya",
+        "en": "Dear Aunt, Thank you for the lovely sweater the other day. It has just started to get cold, so I wear it every day. The color and the size are both perfect. My friends also said, “That’s nice.” Next time you come to Japan, let’s have a meal together. — Aya"
+      },
+      "reading": "おばさんへ\nこのあいだは、すてきなセーターをありがとうございました。ちょうどさむくなってきたので、まいにちきています。いろもサイズもぴったりです。ともだちにも「いいね」といわれました。こんどにほんにきたとき、いっしょにごはんをたべましょう。\nあや",
+      "explanation": {
+        "vi": "「この間」= hôm trước; 「～てきた」= bắt đầu trở nên…; 「言われました」là dạng bị động của 言う; 「～ましょう」= rủ rê.",
+        "en": "「この間」 = the other day; 「～てきた」 = has become…; 「言われました」 is the passive of 言う; 「～ましょう」 = let’s."
+      },
+      "scopeRef": "r-n4-email-thanks-apology"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Aya cảm ơn người cô về điều gì?",
+        "en": "What is Aya thanking her aunt for?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Một chiếc áo len",
+            "en": "A sweater"
+          },
+          {
+            "vi": "Một bữa ăn",
+            "en": "A meal"
+          },
+          {
+            "vi": "Một chuyến du lịch",
+            "en": "A trip"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「すてきなセーターをありがとうございました」: セーター là áo len; Aya cảm ơn vì món quà này.",
+        "en": "Correct! The text has 「すてきなセーターをありがとうございました」: セーター is a sweater; Aya thanks her aunt for this gift."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「すてきなセーターをありがとうございました」: セーター là áo len; Aya cảm ơn vì món quà này.",
+        "en": "Not quite. Look again at 「すてきなセーターをありがとうございました」: セーター is a sweater; Aya thanks her aunt for this gift."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Vì sao Aya ngày nào cũng mặc?",
+        "en": "Why does Aya wear it every day?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì trời bắt đầu lạnh",
+            "en": "Because it has started to get cold"
+          },
+          {
+            "vi": "Vì không có áo khác",
+            "en": "Because she has no other clothes"
+          },
+          {
+            "vi": "Vì trường bắt buộc",
+            "en": "Because her school requires it"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ちょうどさむくなってきたので、毎日着ています」: 「～てきた」nghĩa là bắt đầu trở nên; trời đang lạnh dần nên cô ấy mặc hằng ngày.",
+        "en": "Correct! The text has 「ちょうどさむくなってきたので、毎日着ています」: 「～てきた」 means has begun to become; it is getting cold, so she wears it daily."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ちょうどさむくなってきたので、毎日着ています」: 「～てきた」nghĩa là bắt đầu trở nên; trời đang lạnh dần nên cô ấy mặc hằng ngày.",
+        "en": "Not quite. Look again at 「ちょうどさむくなってきたので、毎日着ています」: 「～てきた」 means has begun to become; it is getting cold, so she wears it daily."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Aya đề nghị gì với người cô?",
+        "en": "What does Aya suggest to her aunt?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cùng đi ăn khi cô đến Nhật",
+            "en": "To eat together when her aunt comes to Japan"
+          },
+          {
+            "vi": "Gửi thêm một chiếc áo len",
+            "en": "To send another sweater"
+          },
+          {
+            "vi": "Đến thăm nhà cô vào mùa hè",
+            "en": "To visit her aunt in summer"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「こんど日本に来たとき、いっしょにごはんを食べましょう」: 「～ましょう」là lời rủ rê: lần tới cô đến Nhật thì cùng ăn cơm.",
+        "en": "Correct! The text has 「こんど日本に来たとき、いっしょにごはんを食べましょう」: 「～ましょう」 is an invitation: next time her aunt comes to Japan, they will eat together."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「こんど日本に来たとき、いっしょにごはんを食べましょう」: 「～ましょう」là lời rủ rê: lần tới cô đến Nhật thì cùng ăn cơm.",
+        "en": "Not quite. Look again at 「こんど日本に来たとき、いっしょにごはんを食べましょう」: 「～ましょう」 is an invitation: next time her aunt comes to Japan, they will eat together."
+      }
+    }
+  ]
+}

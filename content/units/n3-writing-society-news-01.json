@@ -1,0 +1,173 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N3",
+  "tier": "core",
+  "topic": "writing-n3-society-news",
+  "title": {
+    "vi": "Viết: Xã hội – tin tức (1)",
+    "en": "Writing: Society and news (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "号外",
+      "reading": "ごうがい",
+      "meaning": {
+        "vi": "Số báo đặc biệt (phát ngoài kỳ)",
+        "en": "Extra edition"
+      }
+    },
+    {
+      "japanese": "証言",
+      "reading": "しょうげん",
+      "meaning": {
+        "vi": "Lời khai; chứng ngôn",
+        "en": "Testimony"
+      }
+    },
+    {
+      "japanese": "公約",
+      "reading": "こうやく",
+      "meaning": {
+        "vi": "Cam kết (khi tranh cử)",
+        "en": "Campaign pledge"
+      }
+    },
+    {
+      "japanese": "共通",
+      "reading": "きょうつう",
+      "meaning": {
+        "vi": "Chung; điểm chung",
+        "en": "Common; shared"
+      }
+    },
+    {
+      "japanese": "原料",
+      "reading": "げんりょう",
+      "meaning": {
+        "vi": "Nguyên liệu (thô)",
+        "en": "Raw material"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Số báo đặc biệt (phát ngoài kỳ)”",
+        "en": "Type in Japanese: “Extra edition”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "号外",
+          "ごうがい"
+        ],
+        "hint": "よみ: ごうがい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Số báo đặc biệt (phát ngoài kỳ)” viết là 号外 (đọc là ごうがい).",
+        "en": "Correct! “Extra edition” is written 号外 (read as ごうがい)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Số báo đặc biệt (phát ngoài kỳ)” viết là 号外 (đọc là ごうがい); hãy so lại từng ký tự.",
+        "en": "Not quite. “Extra edition” is written 号外 (read as ごうがい); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Lời khai; chứng ngôn”",
+        "en": "Type in Japanese: “Testimony”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "証言",
+          "しょうげん"
+        ],
+        "hint": "よみ: しょうげん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Lời khai; chứng ngôn” viết là 証言 (đọc là しょうげん).",
+        "en": "Correct! “Testimony” is written 証言 (read as しょうげん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Lời khai; chứng ngôn” viết là 証言 (đọc là しょうげん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Testimony” is written 証言 (read as しょうげん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Cam kết (khi tranh cử)”",
+        "en": "Type in Japanese: “Campaign pledge”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "公約",
+          "こうやく"
+        ],
+        "hint": "よみ: こうやく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Cam kết (khi tranh cử)” viết là 公約 (đọc là こうやく).",
+        "en": "Correct! “Campaign pledge” is written 公約 (read as こうやく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Cam kết (khi tranh cử)” viết là 公約 (đọc là こうやく); hãy so lại từng ký tự.",
+        "en": "Not quite. “Campaign pledge” is written 公約 (read as こうやく); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chung; điểm chung”",
+        "en": "Type in Japanese: “Common; shared”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "共通",
+          "きょうつう"
+        ],
+        "hint": "よみ: きょうつう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Chung; điểm chung” viết là 共通 (đọc là きょうつう).",
+        "en": "Correct! “Common; shared” is written 共通 (read as きょうつう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Chung; điểm chung” viết là 共通 (đọc là きょうつう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Common; shared” is written 共通 (read as きょうつう); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nguyên liệu (thô)”",
+        "en": "Type in Japanese: “Raw material”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "原料",
+          "げんりょう"
+        ],
+        "hint": "よみ: げんりょう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nguyên liệu (thô)” viết là 原料 (đọc là げんりょう).",
+        "en": "Correct! “Raw material” is written 原料 (read as げんりょう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Nguyên liệu (thô)” viết là 原料 (đọc là げんりょう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Raw material” is written 原料 (read as げんりょう); compare it character by character."
+      }
+    }
+  ]
+}

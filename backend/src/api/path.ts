@@ -1,6 +1,7 @@
 import type { FastifyInstance } from 'fastify';
 import {
   itemIdParamsSchema,
+  pathQuerySchema,
   rebuildPathSchema,
   setMasteredSchema,
   unitIdParamsSchema,
@@ -23,7 +24,9 @@ export function registerPathRoutes(api: FastifyInstance): void {
   const deps = api.deps;
   const secured = { preHandler: [api.authenticate] };
 
-  api.get('/path', secured, async (request) => getPathDetail(deps, currentUserId(request)));
+  api.get('/path', secured, async (request) =>
+    getPathDetail(deps, currentUserId(request), parseInput(pathQuerySchema, request.query)),
+  );
 
   api.post('/path/rebuild', secured, async (request) => {
     const body = parseInput(rebuildPathSchema, request.body);

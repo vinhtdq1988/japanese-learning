@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-weather-nature",
+  "title": {
+    "vi": "Cảnh vật, cây cỏ và sinh mạng",
+    "en": "Scenery, plants and life"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1050,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "景色",
+      "reading": "けしき",
+      "meaning": {
+        "vi": "Cảnh sắc; phong cảnh",
+        "en": "Scenery; view"
+      },
+      "examples": [
+        {
+          "ja": "山の上から見る景色は、とてもきれいでした。",
+          "reading": "やまのうえからみるけしきは、とてもきれいでした。",
+          "translation": {
+            "vi": "Phong cảnh nhìn từ trên núi rất đẹp.",
+            "en": "The view from the top of the mountain was very beautiful."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "自然",
+      "reading": "しぜん",
+      "meaning": {
+        "vi": "Thiên nhiên; tự nhiên",
+        "en": "Nature"
+      },
+      "examples": [
+        {
+          "ja": "私は、自然の多い田舎で育ちました。",
+          "reading": "わたしは、しぜんのおおいいなかでそだちました。",
+          "translation": {
+            "vi": "Tôi lớn lên ở vùng quê có nhiều thiên nhiên.",
+            "en": "I grew up in the countryside, surrounded by nature."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "竹",
+      "reading": "たけ",
+      "meaning": {
+        "vi": "Tre",
+        "en": "Bamboo"
+      },
+      "examples": [
+        {
+          "ja": "京都で、竹の林をゆっくり歩きました。",
+          "reading": "きょうとで、たけのはやしをゆっくりあるきました。",
+          "translation": {
+            "vi": "Ở Kyoto, tôi đã thong thả đi bộ trong rừng tre.",
+            "en": "In Kyoto, I walked slowly through a bamboo grove."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "種",
+      "reading": "たね",
+      "meaning": {
+        "vi": "Hạt giống; hạt",
+        "en": "Seed"
+      },
+      "examples": [
+        {
+          "ja": "春になったら、庭に花の種をまきます。",
+          "reading": "はるになったら、にわにはなのたねをまきます。",
+          "translation": {
+            "vi": "Khi xuân đến, tôi sẽ gieo hạt hoa ngoài vườn.",
+            "en": "When spring comes, I will sow flower seeds in the garden."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "生える",
+      "reading": "はえる",
+      "meaning": {
+        "vi": "Mọc (cỏ, cây, răng)",
+        "en": "To grow (of grass, plants, teeth)"
+      },
+      "examples": [
+        {
+          "ja": "庭に草が生えるので、毎週切っています。",
+          "reading": "にわにくさがはえるので、まいしゅうきっています。",
+          "translation": {
+            "vi": "Cỏ cứ mọc ngoài vườn nên tuần nào tôi cũng cắt.",
+            "en": "Grass keeps growing in the garden, so I cut it every week."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "命",
+      "reading": "いのち",
+      "meaning": {
+        "vi": "Sinh mạng; mạng sống",
+        "en": "Life"
+      },
+      "examples": [
+        {
+          "ja": "海で泳ぐときは、命を守るために気をつけてください。",
+          "reading": "うみでおよぐときは、いのちをまもるためにきをつけてください。",
+          "translation": {
+            "vi": "Khi bơi ở biển, hãy cẩn thận để bảo vệ tính mạng.",
+            "en": "When swimming in the sea, please be careful to protect your life."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "景色",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 山の上から見る（　）は、とてもきれいでした。 — Nghĩa của câu: “Phong cảnh nhìn từ trên núi rất đẹp.”",
+        "en": "Choose the word that fits the blank: 山の上から見る（　）は、とてもきれいでした。 — Meaning of the sentence: “The view from the top of the mountain was very beautiful.”"
+      },
+      "payload": {
+        "choices": [
+          "自然",
+          "景色",
+          "種",
+          "生える"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「景色」(Cảnh sắc; phong cảnh) hợp nghĩa câu này: “Phong cảnh nhìn từ trên núi rất đẹp.”",
+        "en": "Correct! 「景色」(Scenery; view) fits this sentence: “The view from the top of the mountain was very beautiful.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Phong cảnh nhìn từ trên núi rất đẹp.”, nên cần 「景色」(Cảnh sắc; phong cảnh); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The view from the top of the mountain was very beautiful.”, so it needs 「景色」(Scenery; view); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "自然",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私は、（　）の多い田舎で育ちました。 — Nghĩa của câu: “Tôi lớn lên ở vùng quê có nhiều thiên nhiên.”",
+        "en": "Choose the word that fits the blank: 私は、（　）の多い田舎で育ちました。 — Meaning of the sentence: “I grew up in the countryside, surrounded by nature.”"
+      },
+      "payload": {
+        "choices": [
+          "種",
+          "命",
+          "自然",
+          "竹"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「自然」(Thiên nhiên; tự nhiên) hợp nghĩa câu này: “Tôi lớn lên ở vùng quê có nhiều thiên nhiên.”",
+        "en": "Correct! 「自然」(Nature) fits this sentence: “I grew up in the countryside, surrounded by nature.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi lớn lên ở vùng quê có nhiều thiên nhiên.”, nên cần 「自然」(Thiên nhiên; tự nhiên); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I grew up in the countryside, surrounded by nature.”, so it needs 「自然」(Nature); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "竹",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 京都で、（　）の林をゆっくり歩きました。 — Nghĩa của câu: “Ở Kyoto, tôi đã thong thả đi bộ trong rừng tre.”",
+        "en": "Choose the word that fits the blank: 京都で、（　）の林をゆっくり歩きました。 — Meaning of the sentence: “In Kyoto, I walked slowly through a bamboo grove.”"
+      },
+      "payload": {
+        "choices": [
+          "自然",
+          "生える",
+          "種",
+          "竹"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「竹」(Tre) hợp nghĩa câu này: “Ở Kyoto, tôi đã thong thả đi bộ trong rừng tre.”",
+        "en": "Correct! 「竹」(Bamboo) fits this sentence: “In Kyoto, I walked slowly through a bamboo grove.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở Kyoto, tôi đã thong thả đi bộ trong rừng tre.”, nên cần 「竹」(Tre); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “In Kyoto, I walked slowly through a bamboo grove.”, so it needs 「竹」(Bamboo); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "種",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 春になったら、庭に花の（　）をまきます。 — Nghĩa của câu: “Khi xuân đến, tôi sẽ gieo hạt hoa ngoài vườn.”",
+        "en": "Choose the word that fits the blank: 春になったら、庭に花の（　）をまきます。 — Meaning of the sentence: “When spring comes, I will sow flower seeds in the garden.”"
+      },
+      "payload": {
+        "choices": [
+          "種",
+          "景色",
+          "生える",
+          "自然"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「種」(Hạt giống; hạt) hợp nghĩa câu này: “Khi xuân đến, tôi sẽ gieo hạt hoa ngoài vườn.”",
+        "en": "Correct! 「種」(Seed) fits this sentence: “When spring comes, I will sow flower seeds in the garden.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi xuân đến, tôi sẽ gieo hạt hoa ngoài vườn.”, nên cần 「種」(Hạt giống; hạt); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When spring comes, I will sow flower seeds in the garden.”, so it needs 「種」(Seed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "生える",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 庭に草が（　）ので、毎週切っています。 — Nghĩa của câu: “Cỏ cứ mọc ngoài vườn nên tuần nào tôi cũng cắt.”",
+        "en": "Choose the word that fits the blank: 庭に草が（　）ので、毎週切っています。 — Meaning of the sentence: “Grass keeps growing in the garden, so I cut it every week.”"
+      },
+      "payload": {
+        "choices": [
+          "竹",
+          "生える",
+          "自然",
+          "景色"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「生える」(Mọc (cỏ, cây, răng)) hợp nghĩa câu này: “Cỏ cứ mọc ngoài vườn nên tuần nào tôi cũng cắt.”",
+        "en": "Correct! 「生える」(To grow (of grass, plants, teeth)) fits this sentence: “Grass keeps growing in the garden, so I cut it every week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Cỏ cứ mọc ngoài vườn nên tuần nào tôi cũng cắt.”, nên cần 「生える」(Mọc (cỏ, cây, răng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Grass keeps growing in the garden, so I cut it every week.”, so it needs 「生える」(To grow (of grass, plants, teeth)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "命",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 海で泳ぐときは、（　）を守るために気をつけてください。 — Nghĩa của câu: “Khi bơi ở biển, hãy cẩn thận để bảo vệ tính mạng.”",
+        "en": "Choose the word that fits the blank: 海で泳ぐときは、（　）を守るために気をつけてください。 — Meaning of the sentence: “When swimming in the sea, please be careful to protect your life.”"
+      },
+      "payload": {
+        "choices": [
+          "景色",
+          "竹",
+          "命",
+          "生える"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「命」(Sinh mạng; mạng sống) hợp nghĩa câu này: “Khi bơi ở biển, hãy cẩn thận để bảo vệ tính mạng.”",
+        "en": "Correct! 「命」(Life) fits this sentence: “When swimming in the sea, please be careful to protect your life.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi bơi ở biển, hãy cẩn thận để bảo vệ tính mạng.”, nên cần 「命」(Sinh mạng; mạng sống); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When swimming in the sea, please be careful to protect your life.”, so it needs 「命」(Life); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "景色",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 山の上から見る「景色」は、とてもきれいでした。",
+        "en": "Choose the correct reading of the word in 「」: 山の上から見る「景色」は、とてもきれいでした。"
+      },
+      "payload": {
+        "choices": [
+          "しぜん",
+          "いのち",
+          "けしき",
+          "はえる"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「景色」 đọc là 「けしき」, nghĩa là Cảnh sắc; phong cảnh.",
+        "en": "Correct! 「景色」 is read 「けしき」 and means Scenery; view."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「景色」 đọc là 「けしき」 (Cảnh sắc; phong cảnh); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「景色」 is read 「けしき」 (Scenery; view); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "種",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 春になったら、庭に花の「種」をまきます。",
+        "en": "Choose the correct reading of the word in 「」: 春になったら、庭に花の「種」をまきます。"
+      },
+      "payload": {
+        "choices": [
+          "はえる",
+          "いのち",
+          "けしき",
+          "たね"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「種」 đọc là 「たね」, nghĩa là Hạt giống; hạt.",
+        "en": "Correct! 「種」 is read 「たね」 and means Seed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「種」 đọc là 「たね」 (Hạt giống; hạt); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「種」 is read 「たね」 (Seed); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "命",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 海で泳ぐときは、「いのち」を守るために気をつけてください。",
+        "en": "Choose the correct way to write the word in 「」: 海で泳ぐときは、「いのち」を守るために気をつけてください。"
+      },
+      "payload": {
+        "choices": [
+          "生える",
+          "竹",
+          "自然",
+          "命"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「いのち」 viết là 「命」, nghĩa là Sinh mạng; mạng sống.",
+        "en": "Correct! 「いのち」 is written 「命」 and means Life."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「いのち」 viết là 「命」 (Sinh mạng; mạng sống); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「いのち」 is written 「命」 (Life); the other words are read differently."
+      }
+    }
+  ]
+}

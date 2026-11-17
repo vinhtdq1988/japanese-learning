@@ -12,6 +12,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'me.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -22,71 +23,144 @@ part 'me.g.dart';
 class Me {
   /// Returns a new [Me] instance.
   Me({
-    this.id,
 
-    this.email,
+     this.id,
 
-    this.role,
+     this.email,
 
-    this.status,
+     this.role,
 
-    this.profile,
+     this.status,
 
-    this.learningSource,
+     this.profile,
 
-    this.classSummary,
+     this.learningSource,
 
-    this.organization,
+     this.classSummary,
+
+     this.organization,
   });
 
-  @JsonKey(name: r'id', required: false, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? id;
 
-  @JsonKey(name: r'email', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'email',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? email;
 
-  @JsonKey(name: r'role', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'role',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MeRoleEnum? role;
 
-  @JsonKey(name: r'status', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'status',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final AccountStatus? status;
 
-  @JsonKey(name: r'profile', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'profile',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final Profile? profile;
 
-  /// Nguồn học hiện tại (spec 004); `class` - lộ trình do lớp quyết định
-  @JsonKey(name: r'learningSource', required: false, includeIfNull: false)
+
+
+      /// Nguồn học hiện tại (spec 004); `class` - lộ trình do lớp quyết định
+  @JsonKey(
+    
+    name: r'learningSource',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MeLearningSourceEnum? learningSource;
 
-  @JsonKey(name: r'classSummary', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'classSummary',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MeClassSummary? classSummary;
 
-  @JsonKey(name: r'organization', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'organization',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MeOrganization? organization;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Me &&
-          other.id == id &&
-          other.email == email &&
-          other.role == role &&
-          other.status == status &&
-          other.profile == profile &&
-          other.learningSource == learningSource &&
-          other.classSummary == classSummary &&
-          other.organization == organization;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      email.hashCode +
-      role.hashCode +
-      status.hashCode +
-      profile.hashCode +
-      learningSource.hashCode +
-      classSummary.hashCode +
-      organization.hashCode;
+
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is Me &&
+      other.id == id &&
+      other.email == email &&
+      other.role == role &&
+      other.status == status &&
+      other.profile == profile &&
+      other.learningSource == learningSource &&
+      other.classSummary == classSummary &&
+      other.organization == organization;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        email.hashCode +
+        role.hashCode +
+        status.hashCode +
+        profile.hashCode +
+        learningSource.hashCode +
+        classSummary.hashCode +
+        organization.hashCode;
 
   factory Me.fromJson(Map<String, dynamic> json) => _$MeFromJson(json);
 
@@ -96,33 +170,37 @@ class Me {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum MeRoleEnum {
-  @JsonValue(r'learner')
-  learner(r'learner'),
-  @JsonValue(r'admin')
-  admin(r'admin');
+@JsonValue(r'learner')
+learner(r'learner'),
+@JsonValue(r'admin')
+admin(r'admin');
 
-  const MeRoleEnum(this.value);
+const MeRoleEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
 
 /// Nguồn học hiện tại (spec 004); `class` - lộ trình do lớp quyết định
 enum MeLearningSourceEnum {
-  @JsonValue(r'personal')
-  personal(r'personal'),
-  @JsonValue(r'class')
-  class_(r'class');
+@JsonValue(r'personal')
+personal(r'personal'),
+@JsonValue(r'class')
+class_(r'class');
 
-  const MeLearningSourceEnum(this.value);
+const MeLearningSourceEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

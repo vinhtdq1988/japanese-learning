@@ -19,15 +19,16 @@ import 'package:japanese_api/src/model/register_request.dart';
 import 'package:japanese_api/src/model/request_password_reset_request.dart';
 
 class AuthApi {
+
   final Dio _dio;
 
   const AuthApi(this._dio);
 
   /// Đặt mật khẩu mới bằng token một lần
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [confirmPasswordResetRequest]
+  /// * [confirmPasswordResetRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -37,7 +38,7 @@ class AuthApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> confirmPasswordReset({
+  Future<Response<void>> confirmPasswordReset({ 
     required ConfirmPasswordResetRequest confirmPasswordResetRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -49,8 +50,13 @@ class AuthApi {
     final _path = r'/auth/password-reset/confirm';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
-      extra: <String, dynamic>{'secure': <Map<String, String>>[], ...?extra},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[],
+        ...?extra,
+      },
       contentType: 'application/json',
       validateStatus: validateStatus,
     );
@@ -59,9 +65,13 @@ class AuthApi {
 
     try {
       _bodyData = jsonEncode(confirmPasswordResetRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -81,10 +91,10 @@ class AuthApi {
   }
 
   /// Đăng nhập
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [loginRequest]
+  /// * [loginRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -94,7 +104,7 @@ class AuthApi {
   ///
   /// Returns a [Future] containing a [Response] with a [Login200Response] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<Login200Response>> login({
+  Future<Response<Login200Response>> login({ 
     required LoginRequest loginRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -106,8 +116,13 @@ class AuthApi {
     final _path = r'/auth/login';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
-      extra: <String, dynamic>{'secure': <Map<String, String>>[], ...?extra},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[],
+        ...?extra,
+      },
       contentType: 'application/json',
       validateStatus: validateStatus,
     );
@@ -116,9 +131,13 @@ class AuthApi {
 
     try {
       _bodyData = jsonEncode(loginRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -137,14 +156,9 @@ class AuthApi {
     Login200Response? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<Login200Response, Login200Response>(
-              rawData,
-              'Login200Response',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<Login200Response, Login200Response>(rawData, 'Login200Response', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -168,7 +182,7 @@ class AuthApi {
   }
 
   /// Đăng xuất (thu hồi phiên hiện tại)
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -180,7 +194,7 @@ class AuthApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> logout({
+  Future<Response<void>> logout({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -191,10 +205,16 @@ class AuthApi {
     final _path = r'/auth/logout';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -213,10 +233,10 @@ class AuthApi {
   }
 
   /// Làm mới access token (xoay vòng refresh token)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [refreshTokenRequest]
+  /// * [refreshTokenRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -226,7 +246,7 @@ class AuthApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AuthTokens] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AuthTokens>> refreshToken({
+  Future<Response<AuthTokens>> refreshToken({ 
     required RefreshTokenRequest refreshTokenRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -238,8 +258,13 @@ class AuthApi {
     final _path = r'/auth/refresh';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
-      extra: <String, dynamic>{'secure': <Map<String, String>>[], ...?extra},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[],
+        ...?extra,
+      },
       contentType: 'application/json',
       validateStatus: validateStatus,
     );
@@ -248,9 +273,13 @@ class AuthApi {
 
     try {
       _bodyData = jsonEncode(refreshTokenRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -269,14 +298,9 @@ class AuthApi {
     AuthTokens? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AuthTokens, AuthTokens>(
-              rawData,
-              'AuthTokens',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AuthTokens, AuthTokens>(rawData, 'AuthTokens', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -300,10 +324,10 @@ class AuthApi {
   }
 
   /// Đăng ký (FR-001) – không yêu cầu xác minh email
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [registerRequest]
+  /// * [registerRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -313,7 +337,7 @@ class AuthApi {
   ///
   /// Returns a [Future] containing a [Response] with a [AuthTokens] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<AuthTokens>> register({
+  Future<Response<AuthTokens>> register({ 
     required RegisterRequest registerRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -325,8 +349,13 @@ class AuthApi {
     final _path = r'/auth/register';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
-      extra: <String, dynamic>{'secure': <Map<String, String>>[], ...?extra},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[],
+        ...?extra,
+      },
       contentType: 'application/json',
       validateStatus: validateStatus,
     );
@@ -335,9 +364,13 @@ class AuthApi {
 
     try {
       _bodyData = jsonEncode(registerRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -356,14 +389,9 @@ class AuthApi {
     AuthTokens? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<AuthTokens, AuthTokens>(
-              rawData,
-              'AuthTokens',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<AuthTokens, AuthTokens>(rawData, 'AuthTokens', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -390,7 +418,7 @@ class AuthApi {
   /// Luôn trả 202 dù email có tồn tại hay không (chống dò tài khoản).
   ///
   /// Parameters:
-  /// * [requestPasswordResetRequest]
+  /// * [requestPasswordResetRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -400,7 +428,7 @@ class AuthApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> requestPasswordReset({
+  Future<Response<void>> requestPasswordReset({ 
     required RequestPasswordResetRequest requestPasswordResetRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -412,8 +440,13 @@ class AuthApi {
     final _path = r'/auth/password-reset/request';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
-      extra: <String, dynamic>{'secure': <Map<String, String>>[], ...?extra},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[],
+        ...?extra,
+      },
       contentType: 'application/json',
       validateStatus: validateStatus,
     );
@@ -422,9 +455,13 @@ class AuthApi {
 
     try {
       _bodyData = jsonEncode(requestPasswordResetRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -442,4 +479,5 @@ class AuthApi {
 
     return _response;
   }
+
 }

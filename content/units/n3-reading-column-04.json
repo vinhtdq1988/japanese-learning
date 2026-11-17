@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-column",
+  "title": {
+    "vi": "Đọc: Tầm quan trọng của bữa sáng",
+    "en": "Reading: The importance of breakfast"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "朝ごはんを食べない人は、昼や夜に食べすぎてしまうことが多いと言われる。朝食をとると、体温が上がって、頭もはっきりする。いそがしくても、バナナ一本やヨーグルトだけでも口に入れる習慣をつけたいものだ。",
+      "meaning": {
+        "vi": "Người ta nói rằng những người không ăn sáng thường ăn quá nhiều vào bữa trưa và bữa tối. Khi ăn sáng, thân nhiệt tăng lên và đầu óc cũng tỉnh táo hơn. Dù bận rộn, tôi vẫn muốn tạo thói quen cho vào miệng ít nhất một quả chuối hay chỉ một hộp sữa chua.",
+        "en": "It is said that people who do not eat breakfast often end up eating too much at lunch and dinner. When you eat breakfast, your body temperature rises and your head becomes clearer. Even when busy, I would like to make it a habit to put something in my mouth, even if it is just a banana or a yogurt."
+      },
+      "explanation": {
+        "vi": "「～てしまう」= lỡ…; 「～と言われる」= người ta nói rằng…; 「～ても」= dù…; 「～たいものだ」= thật muốn…. Từ vựng: 「体温」(たいおん) = thân nhiệt; 「習慣」(しゅうかん) = thói quen.",
+        "en": "「～てしまう」 = end up…; 「～と言われる」 = it is said that…; 「～ても」 = even if…; 「～たいものだ」 = I do wish to…. Vocabulary: 「体温」(たいおん) = body temperature; 「習慣」(しゅうかん) = habit."
+      },
+      "scopeRef": "r-n3-column-lifestyle-health"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Người không ăn sáng thường như thế nào?",
+        "en": "What are people who skip breakfast often like?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ăn quá nhiều vào bữa trưa và tối",
+            "en": "They eat too much at lunch and dinner"
+          },
+          {
+            "vi": "Ăn rất ít cả ngày",
+            "en": "They eat very little all day"
+          },
+          {
+            "vi": "Chỉ ăn đồ ngọt",
+            "en": "They only eat sweets"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「昼や夜に食べすぎてしまうことが多いと言われる」: 「食べすぎてしまう」nghĩa là lỡ ăn quá nhiều.",
+        "en": "Correct! The text has 「昼や夜に食べすぎてしまうことが多いと言われる」: 「食べすぎてしまう」 means ending up eating too much."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「昼や夜に食べすぎてしまうことが多いと言われる」: 「食べすぎてしまう」nghĩa là lỡ ăn quá nhiều.",
+        "en": "Not quite. Look again at 「昼や夜に食べすぎてしまうことが多いと言われる」: 「食べすぎてしまう」 means ending up eating too much."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Ăn sáng có lợi gì?",
+        "en": "What is the benefit of eating breakfast?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Giúp da đẹp hơn",
+            "en": "It improves the skin"
+          },
+          {
+            "vi": "Thân nhiệt tăng và đầu óc tỉnh táo",
+            "en": "Body temperature rises and the mind becomes clearer"
+          },
+          {
+            "vi": "Giúp ngủ ngon hơn",
+            "en": "It helps you sleep better"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「朝食をとると、体温が上がって、頭もはっきりする」: Khi ăn sáng, thân nhiệt tăng lên và đầu óc tỉnh táo.",
+        "en": "Correct! The text has 「朝食をとると、体温が上がって、頭もはっきりする」: Eating breakfast raises body temperature and makes the head clear."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「朝食をとると、体温が上がって、頭もはっきりする」: Khi ăn sáng, thân nhiệt tăng lên và đầu óc tỉnh táo.",
+        "en": "Not quite. Look again at 「朝食をとると、体温が上がって、頭もはっきりする」: Eating breakfast raises body temperature and makes the head clear."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Tác giả khuyên điều gì?",
+        "en": "What does the author suggest?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chỉ ăn sáng vào ngày nghỉ",
+            "en": "Only eat breakfast on days off"
+          },
+          {
+            "vi": "Tập thói quen ăn một chút gì đó, dù chỉ một quả chuối",
+            "en": "Form the habit of eating something, even just a banana"
+          },
+          {
+            "vi": "Bỏ bữa tối thay cho bữa sáng",
+            "en": "Skip dinner instead of breakfast"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「バナナ一本やヨーグルトだけでも口に入れる習慣をつけたい」: Dù bận cũng nên tập thói quen ăn chút gì, ví dụ một quả chuối hay sữa chua.",
+        "en": "Correct! The text has 「バナナ一本やヨーグルトだけでも口に入れる習慣をつけたい」: Even when busy, form the habit of eating something such as a banana or yogurt."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「バナナ一本やヨーグルトだけでも口に入れる習慣をつけたい」: Dù bận cũng nên tập thói quen ăn chút gì, ví dụ một quả chuối hay sữa chua.",
+        "en": "Not quite. Look again at 「バナナ一本やヨーグルトだけでも口に入れる習慣をつけたい」: Even when busy, form the habit of eating something such as a banana or yogurt."
+      }
+    }
+  ]
+}

@@ -16,6 +16,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'my_class.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -26,87 +27,177 @@ part 'my_class.g.dart';
 class MyClass {
   /// Returns a new [MyClass] instance.
   MyClass({
-    required this.class_,
 
-    required this.joinedAt,
+    required  this.class_,
 
-    required this.path,
+    required  this.joinedAt,
 
-    required this.assignments,
+    required  this.path,
 
-    this.teacherAdjustments,
+    required  this.assignments,
 
-    this.pausedToday,
+     this.teacherAdjustments,
 
-    this.movedNotice,
+     this.pausedToday,
 
-    required this.disclosure,
+     this.movedNotice,
 
-    required this.progress,
+    required  this.disclosure,
 
-    this.placementRequest,
+    required  this.progress,
+
+     this.placementRequest,
   });
 
-  @JsonKey(name: r'class', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'class',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassBrief class_;
 
-  @JsonKey(name: r'joinedAt', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'joinedAt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime joinedAt;
 
-  @JsonKey(name: r'path', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'path',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassPathTemplate path;
 
-  @JsonKey(name: r'assignments', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'assignments',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<MyClassAssignmentsInner> assignments;
 
-  @JsonKey(name: r'teacherAdjustments', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'teacherAdjustments',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final LearnerOverride? teacherAdjustments;
 
-  @JsonKey(name: r'pausedToday', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'pausedToday',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final bool? pausedToday;
 
-  @JsonKey(name: r'movedNotice', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'movedNotice',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MyClassMovedNotice? movedNotice;
 
-  @JsonKey(name: r'disclosure', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'disclosure',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final SharedDataDisclosure disclosure;
 
-  @JsonKey(name: r'progress', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'progress',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final MyClassProgress progress;
 
-  @JsonKey(name: r'placementRequest', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'placementRequest',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final MyClassPlacementRequest? placementRequest;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MyClass &&
-          other.class_ == class_ &&
-          other.joinedAt == joinedAt &&
-          other.path == path &&
-          other.assignments == assignments &&
-          other.teacherAdjustments == teacherAdjustments &&
-          other.pausedToday == pausedToday &&
-          other.movedNotice == movedNotice &&
-          other.disclosure == disclosure &&
-          other.progress == progress &&
-          other.placementRequest == placementRequest;
 
-  @override
-  int get hashCode =>
-      class_.hashCode +
-      joinedAt.hashCode +
-      path.hashCode +
-      assignments.hashCode +
-      teacherAdjustments.hashCode +
-      pausedToday.hashCode +
-      (movedNotice == null ? 0 : movedNotice.hashCode) +
-      disclosure.hashCode +
-      progress.hashCode +
-      (placementRequest == null ? 0 : placementRequest.hashCode);
 
-  factory MyClass.fromJson(Map<String, dynamic> json) =>
-      _$MyClassFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is MyClass &&
+      other.class_ == class_ &&
+      other.joinedAt == joinedAt &&
+      other.path == path &&
+      other.assignments == assignments &&
+      other.teacherAdjustments == teacherAdjustments &&
+      other.pausedToday == pausedToday &&
+      other.movedNotice == movedNotice &&
+      other.disclosure == disclosure &&
+      other.progress == progress &&
+      other.placementRequest == placementRequest;
+
+    @override
+    int get hashCode =>
+        class_.hashCode +
+        joinedAt.hashCode +
+        path.hashCode +
+        assignments.hashCode +
+        teacherAdjustments.hashCode +
+        pausedToday.hashCode +
+        (movedNotice == null ? 0 : movedNotice.hashCode) +
+        disclosure.hashCode +
+        progress.hashCode +
+        (placementRequest == null ? 0 : placementRequest.hashCode);
+
+  factory MyClass.fromJson(Map<String, dynamic> json) => _$MyClassFromJson(json);
 
   Map<String, dynamic> toJson() => _$MyClassToJson(this);
 
@@ -114,4 +205,6 @@ class MyClass {
   String toString() {
     return toJson().toString();
   }
+
 }
+

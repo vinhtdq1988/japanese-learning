@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-work-life",
+  "title": {
+    "vi": "Đọc: Email xin dời ngày giao hàng",
+    "en": "Reading: Email asking to postpone a delivery"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2910,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：納品日についてのお願い\n中山様\nいつもお世話になっております。山下です。\n先日お約束した納品日（11月12日）について、ご相談があります。\n実は、工場の機械が故障してしまい、予定していた数を作ることができなくなりました。修理には3日ほどかかる見込みです。そのため、納品日を11月15日にずらしていただくことはできないでしょうか。\nご迷惑をおかけして申し訳ございません。もし15日では都合が悪い場合は、一部だけ先に12日に納品し、残りを15日にお渡しする方法も考えております。\nご検討のうえ、今週中にお知らせいただければ幸いです。どうぞよろしくお願いいたします。",
+      "meaning": {
+        "vi": "Tiêu đề: Nhờ về ngày giao hàng. Kính gửi anh/chị Nakayama. Cảm ơn anh/chị đã luôn giúp đỡ. Tôi là Yamashita. Tôi muốn bàn với anh/chị về ngày giao hàng (12 tháng 11) mà chúng ta đã hẹn hôm trước. Thật ra máy móc ở nhà máy bị hỏng nên chúng tôi không thể sản xuất đủ số lượng đã dự định. Dự kiến việc sửa chữa mất khoảng 3 ngày. Vì vậy, liệu có thể dời ngày giao hàng sang ngày 15 tháng 11 được không? Chúng tôi xin lỗi vì đã làm phiền. Nếu ngày 15 không thuận tiện, chúng tôi cũng đang cân nhắc phương án giao trước một phần vào ngày 12 và giao phần còn lại vào ngày 15. Rất mong anh/chị xem xét và cho biết trong tuần này. Xin cảm ơn.",
+        "en": "Subject: A request about the delivery date. Dear Mr./Ms. Nakayama, Thank you for your continued support. This is Yamashita. I would like to consult you about the delivery date (November 12) we agreed on the other day. The truth is that a machine at our factory has broken down, and we can no longer produce the quantity we had planned. The repair is expected to take about three days. Therefore, would it be possible to move the delivery date to November 15? We apologize for the trouble. If the 15th is not convenient, we are also considering delivering part of the order first on the 12th and handing over the rest on the 15th. We would appreciate it if you could consider this and let us know within this week. Thank you very much."
+      },
+      "explanation": {
+        "vi": "「～てしまい」= lỡ… (hỏng); 「～ことができなくなりました」= đã trở nên không thể…; 「～ていただけないでしょうか」= xin hỏi có thể… được không (rất lịch sự); 「～ば幸いです」= nếu… thì thật may mắn. Từ vựng: 「機械」(きかい) = máy móc; 「故障」(こしょう) = hỏng hóc; 「修理」(しゅうり) = sửa chữa; 「見込み」(みこみ) = dự kiến; 「迷惑」(めいわく) = phiền phức; 「申し訳ございません」(もうしわけ) = xin lỗi; 「検討」(けんとう) = xem xét; 「お約束」(おやくそく) = lời hẹn; 「お願い」(おねがい) = lời nhờ.",
+        "en": "「～てしまい」 = ended up (breaking); 「～ことができなくなりました」 = became unable to…; 「～ていただけないでしょうか」 = would it be possible to… (very polite); 「～ば幸いです」 = I would be grateful if…. Vocabulary: 「機械」(きかい) = machine; 「故障」(こしょう) = breakdown; 「修理」(しゅうり) = repair; 「見込み」(みこみ) = expectation; 「迷惑」(めいわく) = trouble; 「申し訳ございません」(もうしわけ) = I am very sorry; 「検討」(けんとう) = consideration; 「お約束」(おやくそく) = promise; 「お願い」(おねがい) = request."
+      },
+      "scopeRef": "r-n3-email-schedule-arrangement"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao người viết muốn thay đổi ngày giao hàng?",
+        "en": "Why does the writer want to change the delivery date?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khách hàng đổi đơn đặt hàng",
+            "en": "The customer changed the order"
+          },
+          {
+            "vi": "Máy móc ở nhà máy bị hỏng",
+            "en": "A machine at the factory broke down"
+          },
+          {
+            "vi": "Thiếu nguyên liệu",
+            "en": "There is a shortage of materials"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「工場の機械が故障してしまい」: 「故障」nghĩa là hỏng hóc; máy ở nhà máy bị hỏng nên không sản xuất đủ.",
+        "en": "Correct! The text has 「工場の機械が故障してしまい」: 「故障」 means breakdown; a factory machine broke, so they cannot produce enough."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「工場の機械が故障してしまい」: 「故障」nghĩa là hỏng hóc; máy ở nhà máy bị hỏng nên không sản xuất đủ.",
+        "en": "Not quite. Look again at 「工場の機械が故障してしまい」: 「故障」 means breakdown; a factory machine broke, so they cannot produce enough."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Việc sửa chữa dự kiến mất bao lâu?",
+        "en": "How long is the repair expected to take?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khoảng 3 ngày",
+            "en": "About three days"
+          },
+          {
+            "vi": "Khoảng 1 tuần",
+            "en": "About one week"
+          },
+          {
+            "vi": "Khoảng 1 tháng",
+            "en": "About one month"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「修理には3日ほどかかる見込みです」: 「見込み」nghĩa là dự kiến; mất khoảng 3 ngày.",
+        "en": "Correct! The text has 「修理には3日ほどかかる見込みです」: 「見込み」 means expectation; it will take about three days."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「修理には3日ほどかかる見込みです」: 「見込み」nghĩa là dự kiến; mất khoảng 3 ngày.",
+        "en": "Not quite. Look again at 「修理には3日ほどかかる見込みです」: 「見込み」 means expectation; it will take about three days."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Đề nghị đầu tiên của người viết là gì?",
+        "en": "What is the writer’s first request?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hủy đơn hàng",
+            "en": "Cancel the order"
+          },
+          {
+            "vi": "Dời ngày giao hàng sang ngày 15 tháng 11",
+            "en": "Move the delivery date to November 15"
+          },
+          {
+            "vi": "Giảm số lượng đặt hàng",
+            "en": "Reduce the quantity ordered"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「納品日を11月15日にずらしていただくことはできないでしょうか」: 「ずらす」nghĩa là dời; họ xin dời ngày giao sang 15 tháng 11.",
+        "en": "Correct! The text has 「納品日を11月15日にずらしていただくことはできないでしょうか」: 「ずらす」 means to shift; they ask to move delivery to November 15."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「納品日を11月15日にずらしていただくことはできないでしょうか」: 「ずらす」nghĩa là dời; họ xin dời ngày giao sang 15 tháng 11.",
+        "en": "Not quite. Look again at 「納品日を11月15日にずらしていただくことはできないでしょうか」: 「ずらす」 means to shift; they ask to move delivery to November 15."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nếu ngày 15 không thuận tiện thì có phương án nào?",
+        "en": "If the 15th is not convenient, what is the alternative?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Giao trước một phần vào ngày 12, phần còn lại vào ngày 15",
+            "en": "Deliver part on the 12th and the rest on the 15th"
+          },
+          {
+            "vi": "Giao toàn bộ vào ngày 20",
+            "en": "Deliver everything on the 20th"
+          },
+          {
+            "vi": "Hủy hợp đồng",
+            "en": "Cancel the contract"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「一部だけ先に12日に納品し、残りを15日にお渡しする方法」: Phương án thay thế là giao trước một phần vào ngày 12 rồi giao phần còn lại vào ngày 15.",
+        "en": "Correct! The text has 「一部だけ先に12日に納品し、残りを15日にお渡しする方法」: The alternative is to deliver part on the 12th and the remainder on the 15th."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「一部だけ先に12日に納品し、残りを15日にお渡しする方法」: Phương án thay thế là giao trước một phần vào ngày 12 rồi giao phần còn lại vào ngày 15.",
+        "en": "Not quite. Look again at 「一部だけ先に12日に納品し、残りを15日にお渡しする方法」: The alternative is to deliver part on the 12th and the remainder on the 15th."
+      }
+    }
+  ]
+}

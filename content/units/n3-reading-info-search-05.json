@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-info-search",
+  "title": {
+    "vi": "Đọc: Bảng giá thuê xe ô tô",
+    "en": "Reading: Car rental price table"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2810,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【サンライズ・レンタカー　料金表】\n車のタイプ　6時間まで　12時間まで　24時間まで\nコンパクト　4,500円　6,000円　8,000円\nセダン　6,000円　8,000円　10,000円\nワゴン　8,000円　10,000円　13,000円\n【ご利用条件】\n・運転免許を取って1年以上の方に限ります。\n・24時間を超えた場合は、1時間ごとに1,000円が追加されます。\n・ガソリン代は、お客様がはらいます。\n・乗り捨て（借りた店と違う店にもどすこと）は、5,000円の追加料金でできます。\n・お金のしはらいは、クレジットカードのみです。\n・ご予約は、利用日の前日までにしてください。",
+      "meaning": {
+        "vi": "[Bảng giá thuê xe Sunrise] Loại xe – đến 6 giờ – đến 12 giờ – đến 24 giờ. Compact: 4.500 / 6.000 / 8.000 yên. Sedan: 6.000 / 8.000 / 10.000 yên. Wagon: 8.000 / 10.000 / 13.000 yên. [Điều kiện sử dụng] Chỉ dành cho người đã có bằng lái từ 1 năm trở lên. Nếu vượt quá 24 giờ, mỗi giờ sẽ bị tính thêm 1.000 yên. Tiền xăng do khách hàng tự trả. Trả xe ở cửa hàng khác với nơi thuê (gọi là “nori-sute”) được, với phụ phí 5.000 yên. Thanh toán chỉ bằng thẻ tín dụng. Xin đặt trước chậm nhất vào ngày hôm trước ngày sử dụng.",
+        "en": "[Sunrise Rent-a-Car price table] Car type – up to 6 hours – up to 12 hours – up to 24 hours. Compact: 4,500 / 6,000 / 8,000 yen. Sedan: 6,000 / 8,000 / 10,000 yen. Wagon: 8,000 / 10,000 / 13,000 yen. [Terms of use] Limited to people who have held a driver’s license for one year or more. If you exceed 24 hours, 1,000 yen is added for every hour. The customer pays for gasoline. One-way rental (returning the car to a different shop from the one you rented from) is possible for an additional fee of 5,000 yen. Payment is by credit card only. Please reserve by the day before the day of use."
+      },
+      "explanation": {
+        "vi": "「～に限ります」= chỉ giới hạn…; 「～を超えた場合は」= nếu vượt quá…; 「～ごとに」= mỗi…; 「～まで」= đến…. Từ vựng: 「免許」(めんきょ) = bằng lái; 「乗り捨て」(のりすて) = thuê một nơi trả một nơi khác; 「追加」(ついか) = thêm vào.",
+        "en": "「～に限ります」 = limited to…; 「～を超えた場合は」 = if it exceeds…; 「～ごとに」 = every…; 「～まで」 = up to…. Vocabulary: 「免許」(めんきょ) = license; 「乗り捨て」(のりすて) = one-way rental; 「追加」(ついか) = addition."
+      },
+      "scopeRef": "r-n3-info-price-ad"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Thuê xe Sedan trong 10 tiếng thì giá bao nhiêu?",
+        "en": "How much is a sedan for 10 hours?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "6.000 yên",
+            "en": "6,000 yen"
+          },
+          {
+            "vi": "8.000 yên",
+            "en": "8,000 yen"
+          },
+          {
+            "vi": "10.000 yên",
+            "en": "10,000 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「セダン　6,000円　8,000円　10,000円」: 10 tiếng nằm trong cột “đến 12 giờ”, giá Sedan là 8.000 yên.",
+        "en": "Correct! The text has 「セダン　6,000円　8,000円　10,000円」: 10 hours falls in the “up to 12 hours” column; the sedan costs 8,000 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「セダン　6,000円　8,000円　10,000円」: 10 tiếng nằm trong cột “đến 12 giờ”, giá Sedan là 8.000 yên.",
+        "en": "Not quite. Look again at 「セダン　6,000円　8,000円　10,000円」: 10 hours falls in the “up to 12 hours” column; the sedan costs 8,000 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Thuê xe Wagon trong 26 tiếng thì tổng cộng bao nhiêu?",
+        "en": "What is the total for a wagon rented for 26 hours?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "13.000 yên",
+            "en": "13,000 yen"
+          },
+          {
+            "vi": "14.000 yên",
+            "en": "14,000 yen"
+          },
+          {
+            "vi": "15.000 yên",
+            "en": "15,000 yen"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「24時間を超えた場合は、1時間ごとに1,000円が追加されます」: 13.000 yên cho 24 giờ, thêm 2 giờ × 1.000 yên = 15.000 yên.",
+        "en": "Correct! The text has 「24時間を超えた場合は、1時間ごとに1,000円が追加されます」: 13,000 yen for 24 hours plus 2 hours × 1,000 yen = 15,000 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「24時間を超えた場合は、1時間ごとに1,000円が追加されます」: 13.000 yên cho 24 giờ, thêm 2 giờ × 1.000 yên = 15.000 yên.",
+        "en": "Not quite. Look again at 「24時間を超えた場合は、1時間ごとに1,000円が追加されます」: 13,000 yen for 24 hours plus 2 hours × 1,000 yen = 15,000 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Thuê xe Compact 6 tiếng và trả ở cửa hàng khác thì tổng bao nhiêu?",
+        "en": "How much is a compact for 6 hours returned at a different shop?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "4.500 yên",
+            "en": "4,500 yen"
+          },
+          {
+            "vi": "9.500 yên",
+            "en": "9,500 yen"
+          },
+          {
+            "vi": "5.000 yên",
+            "en": "5,000 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「5,000円の追加料金でできます」: 4.500 yên cộng phụ phí trả khác cửa hàng 5.000 yên = 9.500 yên.",
+        "en": "Correct! The text has 「5,000円の追加料金でできます」: 4,500 yen plus the 5,000-yen one-way fee = 9,500 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「5,000円の追加料金でできます」: 4.500 yên cộng phụ phí trả khác cửa hàng 5.000 yên = 9.500 yên.",
+        "en": "Not quite. Look again at 「5,000円の追加料金でできます」: 4,500 yen plus the 5,000-yen one-way fee = 9,500 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Điều nào đúng về điều kiện sử dụng?",
+        "en": "Which statement about the terms of use is correct?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Có thể trả bằng tiền mặt",
+            "en": "You can pay in cash"
+          },
+          {
+            "vi": "Chỉ thanh toán bằng thẻ tín dụng",
+            "en": "Payment is by credit card only"
+          },
+          {
+            "vi": "Tiền xăng do cửa hàng trả",
+            "en": "The shop pays for gasoline"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「お金のしはらいは、クレジットカードのみです」: 「～のみ」nghĩa là chỉ; chỉ chấp nhận thẻ tín dụng.",
+        "en": "Correct! The text has 「お金のしはらいは、クレジットカードのみです」: 「～のみ」 means only; only credit cards are accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「お金のしはらいは、クレジットカードのみです」: 「～のみ」nghĩa là chỉ; chỉ chấp nhận thẻ tín dụng.",
+        "en": "Not quite. Look again at 「お金のしはらいは、クレジットカードのみです」: 「～のみ」 means only; only credit cards are accepted."
+      }
+    }
+  ]
+}

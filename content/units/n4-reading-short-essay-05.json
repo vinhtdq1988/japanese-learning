@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-travel",
+  "title": {
+    "vi": "Đọc: Chuyến đi suối nước nóng",
+    "en": "Reading: A trip to a hot spring"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "先週の土曜日と日曜日に、家族とおんせんに行きました。朝七時に家を出て、電車とバスで三時間ぐらいかかりました。山の中の小さなやどで、まわりに店も少なくて、とてもしずかでした。おんせんのおゆは少しあつかったですが、だんだんなれて、気持ちがよくなりました。夜はおいしい魚料理を食べました。つぎの日の朝、山を歩いたとき、空気がきれいで、鳥のこえもたくさん聞こえました。また来年も行きたいです。",
+      "meaning": {
+        "vi": "Thứ Bảy và Chủ nhật tuần trước, tôi đã đi suối nước nóng cùng gia đình. Chúng tôi rời nhà lúc 7 giờ sáng, đi bằng tàu điện và xe buýt mất khoảng 3 tiếng. Đó là một nhà trọ nhỏ trong núi, xung quanh ít cửa hàng nên rất yên tĩnh. Nước suối nóng hơi nóng một chút nhưng dần dần tôi quen và thấy dễ chịu. Buổi tối chúng tôi ăn món cá rất ngon. Sáng hôm sau, khi đi bộ trên núi, không khí trong lành và nghe thấy nhiều tiếng chim hót. Năm sau tôi cũng muốn đi nữa.",
+        "en": "Last Saturday and Sunday, I went to a hot spring with my family. We left home at seven in the morning, and it took about three hours by train and bus. It was a small inn in the mountains with few shops around, and it was very quiet. The hot spring water was a little hot, but I gradually got used to it and it felt good. In the evening we ate delicious fish dishes. The next morning, when I walked in the mountains, the air was clean and I could hear many birds singing. I want to go again next year."
+      },
+      "reading": "せんしゅうのどようびとにちようびに、かぞくとおんせんにいきました。あさしちじにいえをでて、でんしゃとバスでさんじかんぐらいかかりました。やまのなかのちいさなやどで、まわりにみせもすくなくて、とてもしずかでした。おんせんのおゆはすこしあつかったですが、だんだんなれて、きもちがよくなりました。よるはおいしいさかなりょうりをたべました。つぎのひのあさ、やまをあるいたとき、くうきがきれいで、とりのこえもたくさんきこえました。またらいねんもいきたいです。",
+      "explanation": {
+        "vi": "「おんせん」= suối nước nóng (温泉); 「やど」= nhà trọ (宿); 「～ぐらい」= khoảng; 「だんだん」= dần dần; 「～くなりました」= trở nên…",
+        "en": "「おんせん」 = hot spring (温泉); 「やど」 = inn (宿); 「～ぐらい」 = about; 「だんだん」 = gradually; 「～くなりました」 = became…."
+      },
+      "scopeRef": "r-n4-essay-hobby-travel"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Họ đến nơi bằng cách nào và mất bao lâu?",
+        "en": "How did they get there, and how long did it take?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Bằng ô tô, khoảng 1 tiếng",
+            "en": "By car, about one hour"
+          },
+          {
+            "vi": "Bằng tàu điện và xe buýt, khoảng 3 tiếng",
+            "en": "By train and bus, about three hours"
+          },
+          {
+            "vi": "Bằng máy bay, khoảng 3 tiếng",
+            "en": "By plane, about three hours"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電車とバスで三時間ぐらいかかりました」: 「電車とバスで」là bằng tàu điện và xe buýt; 「三時間ぐらい」là khoảng 3 tiếng.",
+        "en": "Correct! The text has 「電車とバスで三時間ぐらいかかりました」: 「電車とバスで」 means by train and bus; 「三時間ぐらい」 is about three hours."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電車とバスで三時間ぐらいかかりました」: 「電車とバスで」là bằng tàu điện và xe buýt; 「三時間ぐらい」là khoảng 3 tiếng.",
+        "en": "Not quite. Look again at 「電車とバスで三時間ぐらいかかりました」: 「電車とバスで」 means by train and bus; 「三時間ぐらい」 is about three hours."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nhà trọ có đặc điểm gì?",
+        "en": "What was the inn like?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nhỏ, nằm trong núi và rất yên tĩnh",
+            "en": "Small, in the mountains and very quiet"
+          },
+          {
+            "vi": "Lớn và nằm gần nhiều cửa hàng",
+            "en": "Large and near many shops"
+          },
+          {
+            "vi": "Nằm cạnh bờ biển",
+            "en": "Right beside the sea"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「山の中の小さなやどで、まわりに店も少なくて、とてもしずかでした」: Nhà trọ nhỏ ở trong núi, xung quanh ít cửa hàng nên rất yên tĩnh.",
+        "en": "Correct! The text has 「山の中の小さなやどで、まわりに店も少なくて、とてもしずかでした」: The inn was small, in the mountains, with few shops around, so it was very quiet."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「山の中の小さなやどで、まわりに店も少なくて、とてもしずかでした」: Nhà trọ nhỏ ở trong núi, xung quanh ít cửa hàng nên rất yên tĩnh.",
+        "en": "Not quite. Look again at 「山の中の小さなやどで、まわりに店も少なくて、とてもしずかでした」: The inn was small, in the mountains, with few shops around, so it was very quiet."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nước suối nóng như thế nào?",
+        "en": "How was the hot spring water?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Quá nóng, không vào được",
+            "en": "Too hot to enter"
+          },
+          {
+            "vi": "Hơi nóng nhưng dần quen",
+            "en": "A little hot but they got used to it"
+          },
+          {
+            "vi": "Hơi lạnh",
+            "en": "A little cold"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「おゆは少しあつかったですが、だんだんなれて」: 「～が」nối hai ý trái nhau: hơi nóng nhưng dần quen.",
+        "en": "Correct! The text has 「おゆは少しあつかったですが、だんだんなれて」: 「～が」 contrasts two ideas: a bit hot, but they gradually got used to it."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「おゆは少しあつかったですが、だんだんなれて」: 「～が」nối hai ý trái nhau: hơi nóng nhưng dần quen.",
+        "en": "Not quite. Look again at 「おゆは少しあつかったですが、だんだんなれて」: 「～が」 contrasts two ideas: a bit hot, but they gradually got used to it."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Sáng hôm sau họ nhận thấy điều gì khi đi bộ trên núi?",
+        "en": "What did they notice while walking in the mountains the next morning?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trời mưa to",
+            "en": "It was raining heavily"
+          },
+          {
+            "vi": "Không khí trong lành và có nhiều tiếng chim",
+            "en": "The air was clean and there were many bird songs"
+          },
+          {
+            "vi": "Núi rất đông người",
+            "en": "The mountain was crowded"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「空気がきれいで、鳥のこえもたくさん聞こえました」: Không khí trong lành và nghe thấy nhiều tiếng chim.",
+        "en": "Correct! The text has 「空気がきれいで、鳥のこえもたくさん聞こえました」: The air was clean and many birds could be heard."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「空気がきれいで、鳥のこえもたくさん聞こえました」: Không khí trong lành và nghe thấy nhiều tiếng chim.",
+        "en": "Not quite. Look again at 「空気がきれいで、鳥のこえもたくさん聞こえました」: The air was clean and many birds could be heard."
+      }
+    }
+  ]
+}

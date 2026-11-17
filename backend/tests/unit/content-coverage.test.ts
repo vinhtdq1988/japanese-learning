@@ -100,10 +100,19 @@ describe('CLI content:coverage', () => {
   });
 
   it('--final thoát 1 khi thư viện chưa đạt ngưỡng (không nghiệm thu khống)', async () => {
-    const lines: string[] = [];
-    const code = await runCoverageCli(['--final'], (l) => lines.push(l));
-    expect(code).toBe(1);
-    expect(lines.join('\n')).toMatch(/Chưa đạt nghiệm thu|danh mục rỗng/);
+    // Bản sao chỉ có đợt cơ sở: danh mục còn rất nhiều dòng chưa phủ nên `--final` không được nghiệm thu khống.
+    const dir = await copyContentDir(tempDirs);
+    const previous = process.env.CONTENT_DIR;
+    process.env.CONTENT_DIR = dir;
+    try {
+      const lines: string[] = [];
+      const code = await runCoverageCli(['--final'], (l) => lines.push(l));
+      expect(code).toBe(1);
+      expect(lines.join('\n')).toMatch(/Chưa đạt nghiệm thu|danh mục rỗng/);
+    } finally {
+      if (previous === undefined) delete process.env.CONTENT_DIR;
+      else process.env.CONTENT_DIR = previous;
+    }
   });
 
   it('--kind/--level lọc bảng; --list-uncovered liệt kê dòng chưa phủ', async () => {
@@ -180,9 +189,24 @@ describe('CLI content:lint', () => {
   });
 
   it('--final báo AU18 (thiếu đơn vị đọc/viết) và thoát 1', async () => {
+    // Bản sao chỉ có đợt cơ sở: mỗi trình độ chỉ còn 2 bài đọc và 2 bài viết (< 30 / < 20) nên AU18 phải báo.
+    const dir = await copyContentDir(tempDirs);
+    const previous = process.env.CONTENT_DIR;
+    process.env.CONTENT_DIR = dir;
+    try {
+      const lines: string[] = [];
+      expect(await runLintCli(['--final'], (l) => lines.push(l))).toBe(1);
+      expect(lines.join('\n')).toContain('AU18');
+    } finally {
+      if (previous === undefined) delete process.env.CONTENT_DIR;
+      else process.env.CONTENT_DIR = previous;
+    }
+  });
+
+  it('--final trên thư viện thật: đủ đơn vị đọc/viết nên không còn lỗi AU18', async () => {
     const lines: string[] = [];
-    expect(await runLintCli(['--final'], (l) => lines.push(l))).toBe(1);
-    expect(lines.join('\n')).toContain('AU18');
+    await runLintCli(['--final'], (l) => lines.push(l));
+    expect(lines.filter((l) => l.startsWith('LỖI') && l.includes('AU18'))).toEqual([]);
   });
 
   it('tham số lạ bị từ chối', async () => {

@@ -8,6 +8,7 @@ export 'package:japanese_api/src/auth/basic_auth.dart';
 export 'package:japanese_api/src/auth/bearer_auth.dart';
 export 'package:japanese_api/src/auth/oauth.dart';
 
+
 export 'package:japanese_api/src/api/account_api.dart';
 export 'package:japanese_api/src/api/admin_api.dart';
 export 'package:japanese_api/src/api/auth_api.dart';
@@ -169,6 +170,7 @@ export 'package:japanese_api/src/model/request_password_reset_request.dart';
 export 'package:japanese_api/src/model/review_facet.dart';
 export 'package:japanese_api/src/model/roster_row.dart';
 export 'package:japanese_api/src/model/scope_notice.dart';
+export 'package:japanese_api/src/model/scope_notice_code.dart';
 export 'package:japanese_api/src/model/seat_summary.dart';
 export 'package:japanese_api/src/model/session_summary.dart';
 export 'package:japanese_api/src/model/session_summary_attention_items_inner.dart';
@@ -188,3 +190,4 @@ export 'package:japanese_api/src/model/trial_content_units_inner.dart';
 export 'package:japanese_api/src/model/trial_content_units_inner_exercises_inner.dart';
 export 'package:japanese_api/src/model/trial_content_units_inner_exercises_inner_all_of_answer_key.dart';
 export 'package:japanese_api/src/model/update_class_request.dart';
+

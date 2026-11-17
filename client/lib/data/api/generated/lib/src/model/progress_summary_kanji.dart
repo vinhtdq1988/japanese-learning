@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'progress_summary_kanji.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,49 +19,85 @@ part 'progress_summary_kanji.g.dart';
 class ProgressSummaryKanji {
   /// Returns a new [ProgressSummaryKanji] instance.
   ProgressSummaryKanji({
-    required this.charactersLearned,
 
-    required this.lessonsCompleted,
+    required  this.charactersLearned,
 
-    required this.minutes,
+    required  this.lessonsCompleted,
 
-    this.reviewAccuracy,
+    required  this.minutes,
+
+     this.reviewAccuracy,
   });
 
-  /// Số chữ có ít nhất một khía cạnh đã lên lịch ôn
-  @JsonKey(name: r'charactersLearned', required: true, includeIfNull: false)
+      /// Số chữ có ít nhất một khía cạnh đã lên lịch ôn
+  @JsonKey(
+    
+    name: r'charactersLearned',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int charactersLearned;
 
-  @JsonKey(name: r'lessonsCompleted', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'lessonsCompleted',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int lessonsCompleted;
 
-  /// Thời gian học Kanji (phút); phiên ôn hỗn hợp được phân bổ theo tỷ lệ câu trả lời Kanji
-  @JsonKey(name: r'minutes', required: true, includeIfNull: false)
+
+
+      /// Thời gian học Kanji (phút); phiên ôn hỗn hợp được phân bổ theo tỷ lệ câu trả lời Kanji
+  @JsonKey(
+    
+    name: r'minutes',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final num minutes;
 
-  // minimum: 0
-  // maximum: 1
-  @JsonKey(name: r'reviewAccuracy', required: false, includeIfNull: false)
+
+
+          // minimum: 0
+          // maximum: 1
+  @JsonKey(
+    
+    name: r'reviewAccuracy',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final num? reviewAccuracy;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ProgressSummaryKanji &&
-          other.charactersLearned == charactersLearned &&
-          other.lessonsCompleted == lessonsCompleted &&
-          other.minutes == minutes &&
-          other.reviewAccuracy == reviewAccuracy;
 
-  @override
-  int get hashCode =>
-      charactersLearned.hashCode +
-      lessonsCompleted.hashCode +
-      minutes.hashCode +
-      (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode);
 
-  factory ProgressSummaryKanji.fromJson(Map<String, dynamic> json) =>
-      _$ProgressSummaryKanjiFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ProgressSummaryKanji &&
+      other.charactersLearned == charactersLearned &&
+      other.lessonsCompleted == lessonsCompleted &&
+      other.minutes == minutes &&
+      other.reviewAccuracy == reviewAccuracy;
+
+    @override
+    int get hashCode =>
+        charactersLearned.hashCode +
+        lessonsCompleted.hashCode +
+        minutes.hashCode +
+        (reviewAccuracy == null ? 0 : reviewAccuracy.hashCode);
+
+  factory ProgressSummaryKanji.fromJson(Map<String, dynamic> json) => _$ProgressSummaryKanjiFromJson(json);
 
   Map<String, dynamic> toJson() => _$ProgressSummaryKanjiToJson(this);
 
@@ -68,4 +105,6 @@ class ProgressSummaryKanji {
   String toString() {
     return toJson().toString();
   }
+
 }
+

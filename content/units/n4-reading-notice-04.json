@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-notice",
+  "title": {
+    "vi": "Đọc: Quy định của công viên",
+    "en": "Reading: Park rules"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "このこうえんのきまり。犬は、ひもをつけてつれてきてください。ごみは、持って帰ってください。夜九時から朝六時までは、大きいこえを出さないでください。花をとってはいけません。ここでは、火を使うことができません。",
+      "meaning": {
+        "vi": "Quy định của công viên này. Khi dắt chó đến, hãy buộc dây. Rác xin hãy mang về. Từ 9 giờ tối đến 6 giờ sáng, xin đừng nói to. Không được hái hoa. Ở đây cũng không thể dùng lửa.",
+        "en": "Rules of this park. Please bring dogs on a leash. Please take your trash home with you. From 9 p.m. to 6 a.m., please do not make loud noises. You must not pick the flowers. You cannot use fire here."
+      },
+      "reading": "このこうえんのきまり。いぬは、ひもをつけてつれてきてください。ごみは、もってかえってください。よるくじからあさろくじまでは、おおきいこえをださないでください。はなをとってはいけません。ここでは、ひをつかうことができません。",
+      "explanation": {
+        "vi": "「～てはいけません」= không được làm; 「～ことができません」= không thể làm; 「ひもをつけて」= buộc dây.",
+        "en": "「～てはいけません」 = must not; 「～ことができません」 = cannot; 「ひもをつけて」 = with a leash attached."
+      },
+      "scopeRef": "r-n4-notice-events-rules"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Khi dắt chó đến công viên thì phải làm gì?",
+        "en": "What must you do when bringing a dog to the park?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cho chó vào lồng",
+            "en": "Put the dog in a cage"
+          },
+          {
+            "vi": "Buộc dây cho chó",
+            "en": "Keep the dog on a leash"
+          },
+          {
+            "vi": "Không được dắt chó đến",
+            "en": "Do not bring dogs"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ひもをつけてつれてきてください」: 「ひもをつけて」nghĩa là có buộc dây; chó được phép đến nhưng phải buộc dây.",
+        "en": "Correct! The text has 「ひもをつけてつれてきてください」: 「ひもをつけて」 means with a leash attached; dogs are allowed but must be leashed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ひもをつけてつれてきてください」: 「ひもをつけて」nghĩa là có buộc dây; chó được phép đến nhưng phải buộc dây.",
+        "en": "Not quite. Look again at 「ひもをつけてつれてきてください」: 「ひもをつけて」 means with a leash attached; dogs are allowed but must be leashed."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Khi nào không được nói to?",
+        "en": "When should you not make loud noises?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Từ 6 giờ tối đến 9 giờ sáng",
+            "en": "From 6 p.m. to 9 a.m."
+          },
+          {
+            "vi": "Cả ngày",
+            "en": "All day"
+          },
+          {
+            "vi": "Từ 9 giờ tối đến 6 giờ sáng",
+            "en": "From 9 p.m. to 6 a.m."
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「夜九時から朝六時までは」: Giờ cấm là ban đêm: từ 9 giờ tối đến 6 giờ sáng.",
+        "en": "Correct! The text has 「夜九時から朝六時までは」: The restricted hours are at night: from 9 p.m. to 6 a.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「夜九時から朝六時までは」: Giờ cấm là ban đêm: từ 9 giờ tối đến 6 giờ sáng.",
+        "en": "Not quite. Look again at 「夜九時から朝六時までは」: The restricted hours are at night: from 9 p.m. to 6 a.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Theo quy định, điều nào đúng?",
+        "en": "According to the rules, which is correct?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Có thể hái vài bông hoa",
+            "en": "You may pick a few flowers"
+          },
+          {
+            "vi": "Rác phải mang về nhà",
+            "en": "You must take your trash home"
+          },
+          {
+            "vi": "Có thể nướng thịt ở đây",
+            "en": "You may grill meat here"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ごみは、持って帰ってください」: 「持って帰る」nghĩa là mang về, nên không được bỏ rác lại công viên.",
+        "en": "Correct! The text has 「ごみは、持って帰ってください」: 「持って帰る」 means to take home, so trash must not be left in the park."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ごみは、持って帰ってください」: 「持って帰る」nghĩa là mang về, nên không được bỏ rác lại công viên.",
+        "en": "Not quite. Look again at 「ごみは、持って帰ってください」: 「持って帰る」 means to take home, so trash must not be left in the park."
+      }
+    }
+  ]
+}

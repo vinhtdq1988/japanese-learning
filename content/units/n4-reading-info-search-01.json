@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-travel",
+  "title": {
+    "vi": "Đọc: Giờ xe buýt đi Yamakawa",
+    "en": "Reading: Bus times to Yamakawa"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【山川行きバス】\n駅から出る時間　9:10　10:10　11:10　13:10\n山川に着く時間　9:50　10:50　11:50　13:50\n※日曜日は、13:10のバスはありません。\n料金：大人五百円、子ども二百五十円",
+      "meaning": {
+        "vi": "[Xe buýt đi Yamakawa] Giờ rời ga: 9:10, 10:10, 11:10, 13:10. Giờ đến Yamakawa: 9:50, 10:50, 11:50, 13:50. * Chủ nhật không có chuyến 13:10. Giá vé: người lớn 500 yên, trẻ em 250 yên.",
+        "en": "[Bus to Yamakawa] Departure from the station: 9:10, 10:10, 11:10, 13:10. Arrival at Yamakawa: 9:50, 10:50, 11:50, 13:50. * There is no 13:10 bus on Sundays. Fare: adults 500 yen, children 250 yen."
+      },
+      "reading": "やまかわゆきバス\nえきからでるじかん　9:10　10:10　11:10　13:10\nやまかわにつくじかん　9:50　10:50　11:50　13:50\nにちようびは、13:10のバスはありません。\nりょうきん：おとなごひゃくえん、こどもにひゃくごじゅうえん",
+      "explanation": {
+        "vi": "「行き」= đi tới (山川行き); 「着く」= đến nơi; 「※」là ký hiệu ghi chú; 「大人」= người lớn, 「子ども」= trẻ em.",
+        "en": "「行き」 = bound for (山川行き); 「着く」 = to arrive; 「※」 marks a note; 「大人」 = adult, 「子ども」 = child."
+      },
+      "scopeRef": "r-n4-info-schedule"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Muốn đến Yamakawa trước 12 giờ trưa thì chuyến muộn nhất là chuyến rời ga lúc mấy giờ?",
+        "en": "To reach Yamakawa before 12 noon, what is the latest bus you can take from the station?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "9:10",
+            "en": "9:10"
+          },
+          {
+            "vi": "11:10",
+            "en": "11:10"
+          },
+          {
+            "vi": "13:10",
+            "en": "13:10"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「11:50」: Chuyến rời ga lúc 11:10 đến Yamakawa lúc 11:50, tức là trước 12 giờ; chuyến 13:10 đến lúc 13:50.",
+        "en": "Correct! The text has 「11:50」: The 11:10 bus arrives at 11:50, before noon; the 13:10 bus arrives at 13:50."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「11:50」: Chuyến rời ga lúc 11:10 đến Yamakawa lúc 11:50, tức là trước 12 giờ; chuyến 13:10 đến lúc 13:50.",
+        "en": "Not quite. Look again at 「11:50」: The 11:10 bus arrives at 11:50, before noon; the 13:10 bus arrives at 13:50."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Chuyến nào không chạy vào Chủ nhật?",
+        "en": "Which bus does not run on Sundays?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chuyến 9:10",
+            "en": "The 9:10 bus"
+          },
+          {
+            "vi": "Chuyến 10:10",
+            "en": "The 10:10 bus"
+          },
+          {
+            "vi": "Chuyến 13:10",
+            "en": "The 13:10 bus"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「日曜日は、13:10のバスはありません」: Ghi chú ※ nói rõ Chủ nhật không có chuyến 13:10.",
+        "en": "Correct! The text has 「日曜日は、13:10のバスはありません」: The ※ note says there is no 13:10 bus on Sundays."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「日曜日は、13:10のバスはありません」: Ghi chú ※ nói rõ Chủ nhật không có chuyến 13:10.",
+        "en": "Not quite. Look again at 「日曜日は、13:10のバスはありません」: The ※ note says there is no 13:10 bus on Sundays."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Hai người lớn và một trẻ em đi thì tổng tiền vé là bao nhiêu?",
+        "en": "How much is the fare for two adults and one child?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.000 yên",
+            "en": "1,000 yen"
+          },
+          {
+            "vi": "1.250 yên",
+            "en": "1,250 yen"
+          },
+          {
+            "vi": "1.500 yên",
+            "en": "1,500 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「大人五百円、子ども二百五十円」: Người lớn 500 yên × 2 + trẻ em 250 yên = 1.250 yên.",
+        "en": "Correct! The text has 「大人五百円、子ども二百五十円」: Adults 500 yen × 2 + child 250 yen = 1,250 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「大人五百円、子ども二百五十円」: Người lớn 500 yên × 2 + trẻ em 250 yên = 1.250 yên.",
+        "en": "Not quite. Look again at 「大人五百円、子ども二百五十円」: Adults 500 yen × 2 + child 250 yen = 1,250 yen."
+      }
+    }
+  ]
+}

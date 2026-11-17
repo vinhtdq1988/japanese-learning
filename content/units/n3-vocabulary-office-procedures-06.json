@@ -1,0 +1,366 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-office-procedures",
+  "title": {
+    "vi": "Con dấu, bản sao, giấy tờ và giờ làm",
+    "en": "Seals, copies, documents and work hours"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 580,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "判子",
+      "reading": "はんこ",
+      "meaning": {
+        "vi": "Con dấu",
+        "en": "Seal; stamp"
+      },
+      "examples": [
+        {
+          "ja": "書類に、判子を押すのを忘れてしまいました。",
+          "reading": "しょるいに、はんこをおすのをわすれてしまいました。",
+          "translation": {
+            "vi": "Tôi lỡ quên đóng dấu vào giấy tờ.",
+            "en": "I forgot to put my seal on the document."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "写し",
+      "reading": "うつし",
+      "meaning": {
+        "vi": "Bản sao",
+        "en": "Copy; duplicate"
+      },
+      "examples": [
+        {
+          "ja": "契約書の写しを、二部ください。",
+          "reading": "けいやくしょのうつしを、にぶください。",
+          "translation": {
+            "vi": "Xin cho tôi hai bản sao của hợp đồng.",
+            "en": "Please give me two copies of the contract."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "原本",
+      "reading": "げんぽん",
+      "meaning": {
+        "vi": "Bản gốc",
+        "en": "Original document"
+      },
+      "examples": [
+        {
+          "ja": "原本は返しますので、写しだけ出してください。",
+          "reading": "げんぽんはかえしますので、うつしだけだしてください。",
+          "translation": {
+            "vi": "Bản gốc sẽ được trả lại nên chỉ cần nộp bản sao.",
+            "en": "The original will be returned, so please submit only a copy."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "届出",
+      "reading": "とどけで",
+      "meaning": {
+        "vi": "Đơn khai báo; việc đăng ký báo cáo",
+        "en": "Notification; report filed"
+      },
+      "examples": [
+        {
+          "ja": "引っ越したときは、市役所に届出をします。",
+          "reading": "ひっこしたときは、しやくしょにとどけでをします。",
+          "translation": {
+            "vi": "Khi chuyển nhà, tôi làm thủ tục khai báo ở tòa thị chính.",
+            "en": "When you move, you file a notification at the city hall."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "出社",
+      "reading": "しゅっしゃ",
+      "meaning": {
+        "vi": "Đi làm; có mặt ở công ty",
+        "en": "Going to the office"
+      },
+      "examples": [
+        {
+          "ja": "明日は、九時までに出社してください。",
+          "reading": "あしたは、くじまでにしゅっしゃしてください。",
+          "translation": {
+            "vi": "Ngày mai xin hãy đến công ty trước 9 giờ.",
+            "en": "Please be at the office by nine tomorrow."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "退社",
+      "reading": "たいしゃ",
+      "meaning": {
+        "vi": "Tan làm; rời công ty",
+        "en": "Leaving the office; resigning"
+      },
+      "examples": [
+        {
+          "ja": "今日は、会議が長引いて、七時過ぎに退社しました。",
+          "reading": "きょうは、かいぎがながびいて、しちじすぎにたいしゃしました。",
+          "translation": {
+            "vi": "Hôm nay cuộc họp kéo dài nên tôi tan làm sau 7 giờ.",
+            "en": "The meeting ran long today, so I left the office after seven."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "判子",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 書類に、（　）を押すのを忘れてしまいました。 — Nghĩa của câu: “Tôi lỡ quên đóng dấu vào giấy tờ.”",
+        "en": "Choose the word that fits the blank: 書類に、（　）を押すのを忘れてしまいました。 — Meaning of the sentence: “I forgot to put my seal on the document.”"
+      },
+      "payload": {
+        "choices": [
+          "原本",
+          "出社",
+          "退社",
+          "判子"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「判子」(Con dấu) hợp nghĩa câu này: “Tôi lỡ quên đóng dấu vào giấy tờ.”",
+        "en": "Correct! 「判子」(Seal; stamp) fits this sentence: “I forgot to put my seal on the document.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi lỡ quên đóng dấu vào giấy tờ.”, nên cần 「判子」(Con dấu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I forgot to put my seal on the document.”, so it needs 「判子」(Seal; stamp); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "写し",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 契約書の（　）を、二部ください。 — Nghĩa của câu: “Xin cho tôi hai bản sao của hợp đồng.”",
+        "en": "Choose the word that fits the blank: 契約書の（　）を、二部ください。 — Meaning of the sentence: “Please give me two copies of the contract.”"
+      },
+      "payload": {
+        "choices": [
+          "写し",
+          "退社",
+          "原本",
+          "判子"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「写し」(Bản sao) hợp nghĩa câu này: “Xin cho tôi hai bản sao của hợp đồng.”",
+        "en": "Correct! 「写し」(Copy; duplicate) fits this sentence: “Please give me two copies of the contract.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin cho tôi hai bản sao của hợp đồng.”, nên cần 「写し」(Bản sao); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please give me two copies of the contract.”, so it needs 「写し」(Copy; duplicate); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "原本",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）は返しますので、写しだけ出してください。 — Nghĩa của câu: “Bản gốc sẽ được trả lại nên chỉ cần nộp bản sao.”",
+        "en": "Choose the word that fits the blank: （　）は返しますので、写しだけ出してください。 — Meaning of the sentence: “The original will be returned, so please submit only a copy.”"
+      },
+      "payload": {
+        "choices": [
+          "出社",
+          "原本",
+          "届出",
+          "写し"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「原本」(Bản gốc) hợp nghĩa câu này: “Bản gốc sẽ được trả lại nên chỉ cần nộp bản sao.”",
+        "en": "Correct! 「原本」(Original document) fits this sentence: “The original will be returned, so please submit only a copy.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bản gốc sẽ được trả lại nên chỉ cần nộp bản sao.”, nên cần 「原本」(Bản gốc); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The original will be returned, so please submit only a copy.”, so it needs 「原本」(Original document); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "届出",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 引っ越したときは、市役所に（　）をします。 — Nghĩa của câu: “Khi chuyển nhà, tôi làm thủ tục khai báo ở tòa thị chính.”",
+        "en": "Choose the word that fits the blank: 引っ越したときは、市役所に（　）をします。 — Meaning of the sentence: “When you move, you file a notification at the city hall.”"
+      },
+      "payload": {
+        "choices": [
+          "判子",
+          "出社",
+          "届出",
+          "原本"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「届出」(Đơn khai báo; việc đăng ký báo cáo) hợp nghĩa câu này: “Khi chuyển nhà, tôi làm thủ tục khai báo ở tòa thị chính.”",
+        "en": "Correct! 「届出」(Notification; report filed) fits this sentence: “When you move, you file a notification at the city hall.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi chuyển nhà, tôi làm thủ tục khai báo ở tòa thị chính.”, nên cần 「届出」(Đơn khai báo; việc đăng ký báo cáo); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When you move, you file a notification at the city hall.”, so it needs 「届出」(Notification; report filed); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "出社",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 明日は、九時までに（　）してください。 — Nghĩa của câu: “Ngày mai xin hãy đến công ty trước 9 giờ.”",
+        "en": "Choose the word that fits the blank: 明日は、九時までに（　）してください。 — Meaning of the sentence: “Please be at the office by nine tomorrow.”"
+      },
+      "payload": {
+        "choices": [
+          "届出",
+          "原本",
+          "退社",
+          "出社"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「出社」(Đi làm; có mặt ở công ty) hợp nghĩa câu này: “Ngày mai xin hãy đến công ty trước 9 giờ.”",
+        "en": "Correct! 「出社」(Going to the office) fits this sentence: “Please be at the office by nine tomorrow.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ngày mai xin hãy đến công ty trước 9 giờ.”, nên cần 「出社」(Đi làm; có mặt ở công ty); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please be at the office by nine tomorrow.”, so it needs 「出社」(Going to the office); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "退社",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 今日は、会議が長引いて、七時過ぎに（　）しました。 — Nghĩa của câu: “Hôm nay cuộc họp kéo dài nên tôi tan làm sau 7 giờ.”",
+        "en": "Choose the word that fits the blank: 今日は、会議が長引いて、七時過ぎに（　）しました。 — Meaning of the sentence: “The meeting ran long today, so I left the office after seven.”"
+      },
+      "payload": {
+        "choices": [
+          "退社",
+          "写し",
+          "出社",
+          "原本"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「退社」(Tan làm; rời công ty) hợp nghĩa câu này: “Hôm nay cuộc họp kéo dài nên tôi tan làm sau 7 giờ.”",
+        "en": "Correct! 「退社」(Leaving the office; resigning) fits this sentence: “The meeting ran long today, so I left the office after seven.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hôm nay cuộc họp kéo dài nên tôi tan làm sau 7 giờ.”, nên cần 「退社」(Tan làm; rời công ty); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The meeting ran long today, so I left the office after seven.”, so it needs 「退社」(Leaving the office; resigning); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "判子",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 書類に、「判子」を押すのを忘れてしまいました。",
+        "en": "Choose the correct reading of the word in 「」: 書類に、「判子」を押すのを忘れてしまいました。"
+      },
+      "payload": {
+        "choices": [
+          "はんこ",
+          "げんぽん",
+          "うつし",
+          "しゅっしゃ"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「判子」 đọc là 「はんこ」, nghĩa là Con dấu.",
+        "en": "Correct! 「判子」 is read 「はんこ」 and means Seal; stamp."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「判子」 đọc là 「はんこ」 (Con dấu); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「判子」 is read 「はんこ」 (Seal; stamp); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "届出",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 引っ越したときは、市役所に「届出」をします。",
+        "en": "Choose the correct reading of the word in 「」: 引っ越したときは、市役所に「届出」をします。"
+      },
+      "payload": {
+        "choices": [
+          "げんぽん",
+          "とどけで",
+          "うつし",
+          "しゅっしゃ"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「届出」 đọc là 「とどけで」, nghĩa là Đơn khai báo; việc đăng ký báo cáo.",
+        "en": "Correct! 「届出」 is read 「とどけで」 and means Notification; report filed."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「届出」 đọc là 「とどけで」 (Đơn khai báo; việc đăng ký báo cáo); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「届出」 is read 「とどけで」 (Notification; report filed); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "退社",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 今日は、会議が長引いて、七時過ぎに「たいしゃ」しました。",
+        "en": "Choose the correct way to write the word in 「」: 今日は、会議が長引いて、七時過ぎに「たいしゃ」しました。"
+      },
+      "payload": {
+        "choices": [
+          "写し",
+          "退社",
+          "届出",
+          "原本"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「たいしゃ」 viết là 「退社」, nghĩa là Tan làm; rời công ty.",
+        "en": "Correct! 「たいしゃ」 is written 「退社」 and means Leaving the office; resigning."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「たいしゃ」 viết là 「退社」 (Tan làm; rời công ty); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「たいしゃ」 is written 「退社」 (Leaving the office; resigning); the other words are read differently."
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-info-search",
+  "title": {
+    "vi": "Đọc: Chương trình lễ hội giao lưu quốc tế",
+    "en": "Reading: International exchange festival program"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 1310,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【国際交流フェスティバル　プログラム】\n日時：10月20日（日）10:00～16:00\n場所：中央公園（雨の場合は、市民体育館）\n10:00　開会式（ステージ）\n10:30～12:00　世界の料理コーナー（1品につきチケット2枚）\n11:00　子ども向けダンス教室（先着30名、ステージ横）\n13:00　民族衣装ショー（ステージ）\n14:00　日本語スピーチ大会（出る人は10名）\n15:30　大抽選会（チケット1枚につき1回）\n16:00　おわりの式\n【お知らせ】\n・ちゅうしゃじょうはありません。電車またはバスでお越しください。\n・料理のチケットは、入口で、5枚つづり1,000円で売っています。\n・日本語スピーチ大会を見るのは、ただです。",
+      "meaning": {
+        "vi": "[Chương trình Lễ hội giao lưu quốc tế] Thời gian: Chủ nhật ngày 20 tháng 10, 10:00–16:00. Địa điểm: Công viên Trung tâm (nếu mưa thì tại Nhà thi đấu thành phố). 10:00 Lễ khai mạc (sân khấu). 10:30–12:00 Khu ẩm thực thế giới (mỗi món cần 2 vé). 11:00 Lớp học nhảy cho trẻ em (30 người đến trước, cạnh sân khấu). 13:00 Trình diễn trang phục dân tộc (sân khấu). 14:00 Cuộc thi diễn thuyết tiếng Nhật (10 người tham gia). 15:30 Rút thăm trúng thưởng lớn (mỗi vé được 1 lượt). 16:00 Lễ bế mạc. [Thông báo] Không có bãi đỗ xe. Xin hãy đến bằng tàu điện hoặc xe buýt. Vé ẩm thực được bán ở lối vào, 1.000 yên cho một xấp 5 vé. Xem cuộc thi diễn thuyết tiếng Nhật là miễn phí.",
+        "en": "[International Exchange Festival program] Date and time: Sunday, October 20, 10:00–16:00. Place: Central Park (City Gymnasium if it rains). 10:00 Opening ceremony (stage). 10:30–12:00 World food corner (2 tickets per dish). 11:00 Dance class for children (first 30 people, beside the stage). 13:00 Ethnic costume show (stage). 14:00 Japanese speech contest (10 speakers). 15:30 Grand lottery (one draw per ticket). 16:00 Closing ceremony. [Notices] There is no parking lot. Please come by train or bus. Food tickets are sold at the entrance for 1,000 yen per set of five. Watching the Japanese speech contest is free."
+      },
+      "explanation": {
+        "vi": "「～の場合は」= trong trường hợp…; 「～につき」= cho mỗi…; 「先着」(せんちゃく) = người đến trước; 「～向け」= dành cho…. Từ vựng: 「衣装」(いしょう) = trang phục; 「抽選会」(ちゅうせんかい) = rút thăm; 「お越しください」(おこしください) = xin hãy đến; 「ただ」= miễn phí; 「中央」(ちゅうおう) = trung tâm; 「枚」(まい) = (đơn vị đếm vé, tờ).",
+        "en": "「～の場合は」 = in the case of…; 「～につき」 = per…; 「先着」(せんちゃく) = first come; 「～向け」 = aimed at…. Vocabulary: 「衣装」(いしょう) = costume; 「抽選会」(ちゅうせんかい) = lottery draw; 「お越しください」(おこしください) = please come; 「ただ」 = free; 「中央」(ちゅうおう) = central; 「枚」(まい) = counter for tickets and flat things."
+      },
+      "scopeRef": "r-n3-info-schedule-event"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Nếu hôm đó trời mưa thì lễ hội diễn ra ở đâu?",
+        "en": "Where is the festival held if it rains?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Công viên Trung tâm",
+            "en": "Central Park"
+          },
+          {
+            "vi": "Nhà thi đấu thành phố",
+            "en": "The City Gymnasium"
+          },
+          {
+            "vi": "Hoãn sang tuần sau",
+            "en": "It is postponed to the following week"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「雨の場合は、市民体育館」: 「雨の場合は」là trường hợp trời mưa; khi đó tổ chức ở nhà thi đấu thành phố.",
+        "en": "Correct! The text has 「雨の場合は、市民体育館」: 「雨の場合は」 means in case of rain; it is then held at the City Gymnasium."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「雨の場合は、市民体育館」: 「雨の場合は」là trường hợp trời mưa; khi đó tổ chức ở nhà thi đấu thành phố.",
+        "en": "Not quite. Look again at 「雨の場合は、市民体育館」: 「雨の場合は」 means in case of rain; it is then held at the City Gymnasium."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Lớp học nhảy cho trẻ em có điều kiện gì?",
+        "en": "What is the condition for the children’s dance class?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Phải đặt trước một tuần",
+            "en": "Reserve one week in advance"
+          },
+          {
+            "vi": "30 người đến trước, bắt đầu 11:00",
+            "en": "First 30 people, starting at 11:00"
+          },
+          {
+            "vi": "Chỉ dành cho người trên 18 tuổi",
+            "en": "Only for those over 18"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「11:00　子ども向けダンス教室（先着30名、ステージ横）」: 「先着30名」nghĩa là 30 người đến trước; lớp bắt đầu lúc 11:00.",
+        "en": "Correct! The text has 「11:00　子ども向けダンス教室（先着30名、ステージ横）」: 「先着30名」 means the first 30 people; the class starts at 11:00."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「11:00　子ども向けダンス教室（先着30名、ステージ横）」: 「先着30名」nghĩa là 30 người đến trước; lớp bắt đầu lúc 11:00.",
+        "en": "Not quite. Look again at 「11:00　子ども向けダンス教室（先着30名、ステージ横）」: 「先着30名」 means the first 30 people; the class starts at 11:00."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Muốn ăn 3 món ở khu ẩm thực thì cần mua tối thiểu bao nhiêu tiền vé?",
+        "en": "How much do you need to spend on tickets to eat 3 dishes?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.000 yên",
+            "en": "1,000 yen"
+          },
+          {
+            "vi": "2.000 yên",
+            "en": "2,000 yen"
+          },
+          {
+            "vi": "3.000 yên",
+            "en": "3,000 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「5枚つづり1,000円で売っています」: 3 món cần 6 vé; mỗi xấp 5 vé giá 1.000 yên nên phải mua 2 xấp = 2.000 yên.",
+        "en": "Correct! The text has 「5枚つづり1,000円で売っています」: Three dishes need 6 tickets; sets of 5 cost 1,000 yen, so you must buy two sets = 2,000 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「5枚つづり1,000円で売っています」: 3 món cần 6 vé; mỗi xấp 5 vé giá 1.000 yên nên phải mua 2 xấp = 2.000 yên.",
+        "en": "Not quite. Look again at 「5枚つづり1,000円で売っています」: Three dishes need 6 tickets; sets of 5 cost 1,000 yen, so you must buy two sets = 2,000 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Nên đến lễ hội bằng cách nào?",
+        "en": "How should you get to the festival?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Bằng ô tô riêng",
+            "en": "By private car"
+          },
+          {
+            "vi": "Bằng tàu điện hoặc xe buýt",
+            "en": "By train or bus"
+          },
+          {
+            "vi": "Chỉ đi bộ",
+            "en": "Only on foot"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電車またはバスでお越しください」: Không có bãi đỗ xe nên được đề nghị đến bằng tàu điện hoặc xe buýt.",
+        "en": "Correct! The text has 「電車またはバスでお越しください」: There is no parking, so visitors are asked to come by train or bus."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電車またはバスでお越しください」: Không có bãi đỗ xe nên được đề nghị đến bằng tàu điện hoặc xe buýt.",
+        "en": "Not quite. Look again at 「電車またはバスでお越しください」: There is no parking, so visitors are asked to come by train or bus."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N4",
+  "tier": "core",
+  "topic": "vocab-n4-city-facilities",
+  "title": {
+    "vi": "Thành phố, địa điểm và phương tiện",
+    "en": "Cities, venues and vehicles"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 1450,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "市",
+      "reading": "し",
+      "meaning": {
+        "vi": "Thành phố (đơn vị hành chính)",
+        "en": "City (municipality)"
+      },
+      "examples": [
+        {
+          "ja": "私の住んでいる市には、大きな図書館があります。",
+          "reading": "わたしのすんでいるしには、おおきなとしょかんがあります。",
+          "translation": {
+            "vi": "Thành phố nơi tôi sống có một thư viện lớn.",
+            "en": "The city where I live has a large library."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "広場",
+      "reading": "ひろば",
+      "meaning": {
+        "vi": "Quảng trường; bãi đất rộng",
+        "en": "Square; open plaza"
+      },
+      "examples": [
+        {
+          "ja": "駅の前の広場で、友達と待ち合わせをしました。",
+          "reading": "えきのまえのひろばで、ともだちとまちあわせをしました。",
+          "translation": {
+            "vi": "Tôi đã hẹn gặp bạn ở quảng trường trước ga.",
+            "en": "I met my friend at the square in front of the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "会場",
+      "reading": "かいじょう",
+      "meaning": {
+        "vi": "Hội trường; địa điểm tổ chức",
+        "en": "Venue; hall"
+      },
+      "examples": [
+        {
+          "ja": "コンサートの会場は、駅から歩いて五分です。",
+          "reading": "コンサートのかいじょうは、えきからあるいてごふんです。",
+          "translation": {
+            "vi": "Địa điểm tổ chức buổi hòa nhạc cách ga năm phút đi bộ.",
+            "en": "The concert venue is a five-minute walk from the station."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "運転",
+      "reading": "うんてん",
+      "meaning": {
+        "vi": "Lái (xe)",
+        "en": "Driving; operating a vehicle"
+      },
+      "examples": [
+        {
+          "ja": "父は、毎朝車を運転して会社へ行きます。",
+          "reading": "ちちは、まいあさくるまをうんてんしてかいしゃへいきます。",
+          "translation": {
+            "vi": "Bố tôi mỗi sáng lái xe đến công ty.",
+            "en": "My father drives to work every morning."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "船",
+      "reading": "ふね",
+      "meaning": {
+        "vi": "Tàu thuyền",
+        "en": "Ship; boat"
+      },
+      "examples": [
+        {
+          "ja": "島へ行くには、船に乗らなければなりません。",
+          "reading": "しまへいくには、ふねにのらなければなりません。",
+          "translation": {
+            "vi": "Muốn đến hòn đảo thì phải đi tàu thuyền.",
+            "en": "To get to the island, you have to take a boat."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "式",
+      "reading": "しき",
+      "meaning": {
+        "vi": "Buổi lễ; nghi thức",
+        "en": "Ceremony"
+      },
+      "examples": [
+        {
+          "ja": "学校の式は、十時に始まって、十一時に終わりました。",
+          "reading": "がっこうのしきは、じゅうじにはじまって、じゅういちじにおわりました。",
+          "translation": {
+            "vi": "Buổi lễ ở trường bắt đầu lúc 10 giờ và kết thúc lúc 11 giờ.",
+            "en": "The school ceremony began at ten and ended at eleven."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "市",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の住んでいる（　）には、大きな図書館があります。 — Nghĩa của câu: “Thành phố nơi tôi sống có một thư viện lớn.”",
+        "en": "Choose the word that fits the blank: 私の住んでいる（　）には、大きな図書館があります。 — Meaning of the sentence: “The city where I live has a large library.”"
+      },
+      "payload": {
+        "choices": [
+          "船",
+          "会場",
+          "式",
+          "市"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「市」(Thành phố (đơn vị hành chính)) hợp nghĩa câu này: “Thành phố nơi tôi sống có một thư viện lớn.”",
+        "en": "Correct! 「市」(City (municipality)) fits this sentence: “The city where I live has a large library.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thành phố nơi tôi sống có một thư viện lớn.”, nên cần 「市」(Thành phố (đơn vị hành chính)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The city where I live has a large library.”, so it needs 「市」(City (municipality)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "広場",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 駅の前の（　）で、友達と待ち合わせをしました。 — Nghĩa của câu: “Tôi đã hẹn gặp bạn ở quảng trường trước ga.”",
+        "en": "Choose the word that fits the blank: 駅の前の（　）で、友達と待ち合わせをしました。 — Meaning of the sentence: “I met my friend at the square in front of the station.”"
+      },
+      "payload": {
+        "choices": [
+          "広場",
+          "運転",
+          "船",
+          "市"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「広場」(Quảng trường; bãi đất rộng) hợp nghĩa câu này: “Tôi đã hẹn gặp bạn ở quảng trường trước ga.”",
+        "en": "Correct! 「広場」(Square; open plaza) fits this sentence: “I met my friend at the square in front of the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã hẹn gặp bạn ở quảng trường trước ga.”, nên cần 「広場」(Quảng trường; bãi đất rộng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I met my friend at the square in front of the station.”, so it needs 「広場」(Square; open plaza); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "会場",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: コンサートの（　）は、駅から歩いて五分です。 — Nghĩa của câu: “Địa điểm tổ chức buổi hòa nhạc cách ga năm phút đi bộ.”",
+        "en": "Choose the word that fits the blank: コンサートの（　）は、駅から歩いて五分です。 — Meaning of the sentence: “The concert venue is a five-minute walk from the station.”"
+      },
+      "payload": {
+        "choices": [
+          "広場",
+          "会場",
+          "運転",
+          "市"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「会場」(Hội trường; địa điểm tổ chức) hợp nghĩa câu này: “Địa điểm tổ chức buổi hòa nhạc cách ga năm phút đi bộ.”",
+        "en": "Correct! 「会場」(Venue; hall) fits this sentence: “The concert venue is a five-minute walk from the station.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Địa điểm tổ chức buổi hòa nhạc cách ga năm phút đi bộ.”, nên cần 「会場」(Hội trường; địa điểm tổ chức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The concert venue is a five-minute walk from the station.”, so it needs 「会場」(Venue; hall); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "運転",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 父は、毎朝車を（　）して会社へ行きます。 — Nghĩa của câu: “Bố tôi mỗi sáng lái xe đến công ty.”",
+        "en": "Choose the word that fits the blank: 父は、毎朝車を（　）して会社へ行きます。 — Meaning of the sentence: “My father drives to work every morning.”"
+      },
+      "payload": {
+        "choices": [
+          "式",
+          "会場",
+          "運転",
+          "広場"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「運転」(Lái (xe)) hợp nghĩa câu này: “Bố tôi mỗi sáng lái xe đến công ty.”",
+        "en": "Correct! 「運転」(Driving; operating a vehicle) fits this sentence: “My father drives to work every morning.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bố tôi mỗi sáng lái xe đến công ty.”, nên cần 「運転」(Lái (xe)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “My father drives to work every morning.”, so it needs 「運転」(Driving; operating a vehicle); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "船",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 島へ行くには、（　）に乗らなければなりません。 — Nghĩa của câu: “Muốn đến hòn đảo thì phải đi tàu thuyền.”",
+        "en": "Choose the word that fits the blank: 島へ行くには、（　）に乗らなければなりません。 — Meaning of the sentence: “To get to the island, you have to take a boat.”"
+      },
+      "payload": {
+        "choices": [
+          "市",
+          "運転",
+          "会場",
+          "船"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「船」(Tàu thuyền) hợp nghĩa câu này: “Muốn đến hòn đảo thì phải đi tàu thuyền.”",
+        "en": "Correct! 「船」(Ship; boat) fits this sentence: “To get to the island, you have to take a boat.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Muốn đến hòn đảo thì phải đi tàu thuyền.”, nên cần 「船」(Tàu thuyền); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “To get to the island, you have to take a boat.”, so it needs 「船」(Ship; boat); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "式",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 学校の（　）は、十時に始まって、十一時に終わりました。 — Nghĩa của câu: “Buổi lễ ở trường bắt đầu lúc 10 giờ và kết thúc lúc 11 giờ.”",
+        "en": "Choose the word that fits the blank: 学校の（　）は、十時に始まって、十一時に終わりました。 — Meaning of the sentence: “The school ceremony began at ten and ended at eleven.”"
+      },
+      "payload": {
+        "choices": [
+          "式",
+          "広場",
+          "運転",
+          "市"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「式」(Buổi lễ; nghi thức) hợp nghĩa câu này: “Buổi lễ ở trường bắt đầu lúc 10 giờ và kết thúc lúc 11 giờ.”",
+        "en": "Correct! 「式」(Ceremony) fits this sentence: “The school ceremony began at ten and ended at eleven.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Buổi lễ ở trường bắt đầu lúc 10 giờ và kết thúc lúc 11 giờ.”, nên cần 「式」(Buổi lễ; nghi thức); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The school ceremony began at ten and ended at eleven.”, so it needs 「式」(Ceremony); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "市",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 私の住んでいる「市」には、大きな図書館があります。",
+        "en": "Choose the correct reading of the word in 「」: 私の住んでいる「市」には、大きな図書館があります。"
+      },
+      "payload": {
+        "choices": [
+          "し",
+          "かいじょう",
+          "ひろば",
+          "しき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「市」 đọc là 「し」, nghĩa là Thành phố (đơn vị hành chính).",
+        "en": "Correct! 「市」 is read 「し」 and means City (municipality)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「市」 đọc là 「し」 (Thành phố (đơn vị hành chính)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「市」 is read 「し」 (City (municipality)); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "運転",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 父は、毎朝車を「運転」して会社へ行きます。",
+        "en": "Choose the correct reading of the word in 「」: 父は、毎朝車を「運転」して会社へ行きます。"
+      },
+      "payload": {
+        "choices": [
+          "しき",
+          "うんてん",
+          "ふね",
+          "かいじょう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「運転」 đọc là 「うんてん」, nghĩa là Lái (xe).",
+        "en": "Correct! 「運転」 is read 「うんてん」 and means Driving; operating a vehicle."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「運転」 đọc là 「うんてん」 (Lái (xe)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「運転」 is read 「うんてん」 (Driving; operating a vehicle); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "式",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 学校の「しき」は、十時に始まって、十一時に終わりました。",
+        "en": "Choose the correct way to write the word in 「」: 学校の「しき」は、十時に始まって、十一時に終わりました。"
+      },
+      "payload": {
+        "choices": [
+          "会場",
+          "式",
+          "船",
+          "運転"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「しき」 viết là 「式」, nghĩa là Buổi lễ; nghi thức.",
+        "en": "Correct! 「しき」 is written 「式」 and means Ceremony."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「しき」 viết là 「式」 (Buổi lễ; nghi thức); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「しき」 is written 「式」 (Ceremony); the other words are read differently."
+      }
+    }
+  ]
+}

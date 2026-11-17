@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-daily-life",
+  "title": {
+    "vi": "Viết: Sinh hoạt hằng ngày (1)",
+    "en": "Writing: Daily life (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "動く",
+      "reading": "うごく",
+      "meaning": {
+        "vi": "Chuyển động; hoạt động; chạy",
+        "en": "To move; to run; to work"
+      }
+    },
+    {
+      "japanese": "カーテン",
+      "reading": "カーテン",
+      "meaning": {
+        "vi": "Rèm cửa",
+        "en": "Curtain"
+      }
+    },
+    {
+      "japanese": "夕方",
+      "reading": "ゆうがた",
+      "meaning": {
+        "vi": "Chiều tối; lúc hoàng hôn",
+        "en": "Early evening; dusk"
+      }
+    },
+    {
+      "japanese": "運転手",
+      "reading": "うんてんしゅ",
+      "meaning": {
+        "vi": "Tài xế",
+        "en": "Driver"
+      }
+    },
+    {
+      "japanese": "開く",
+      "reading": "あく",
+      "meaning": {
+        "vi": "Mở ra; (cửa hàng) mở cửa",
+        "en": "To open; to be open"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chuyển động; hoạt động; chạy”",
+        "en": "Type in Japanese: “To move; to run; to work”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "動く",
+          "うごく"
+        ],
+        "hint": "よみ: うごく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Chuyển động; hoạt động; chạy” viết là 動く (đọc là うごく).",
+        "en": "Correct! “To move; to run; to work” is written 動く (read as うごく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Chuyển động; hoạt động; chạy” viết là 動く (đọc là うごく); hãy so lại từng ký tự.",
+        "en": "Not quite. “To move; to run; to work” is written 動く (read as うごく); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Rèm cửa”",
+        "en": "Type in Japanese: “Curtain”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "カーテン"
+        ],
+        "hint": "Viết bằng katakana (4 ký tự)"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Rèm cửa” viết là カーテン.",
+        "en": "Correct! “Curtain” is written カーテン."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Rèm cửa” viết là カーテン; hãy so lại từng ký tự.",
+        "en": "Not quite. “Curtain” is written カーテン; compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chiều tối; lúc hoàng hôn”",
+        "en": "Type in Japanese: “Early evening; dusk”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "夕方",
+          "ゆうがた"
+        ],
+        "hint": "よみ: ゆうがた"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Chiều tối; lúc hoàng hôn” viết là 夕方 (đọc là ゆうがた).",
+        "en": "Correct! “Early evening; dusk” is written 夕方 (read as ゆうがた)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Chiều tối; lúc hoàng hôn” viết là 夕方 (đọc là ゆうがた); hãy so lại từng ký tự.",
+        "en": "Not quite. “Early evening; dusk” is written 夕方 (read as ゆうがた); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Tài xế”",
+        "en": "Type in Japanese: “Driver”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "運転手",
+          "うんてんしゅ"
+        ],
+        "hint": "よみ: うんてんしゅ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Tài xế” viết là 運転手 (đọc là うんてんしゅ).",
+        "en": "Correct! “Driver” is written 運転手 (read as うんてんしゅ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Tài xế” viết là 運転手 (đọc là うんてんしゅ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Driver” is written 運転手 (read as うんてんしゅ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Mở ra; (cửa hàng) mở cửa”",
+        "en": "Type in Japanese: “To open; to be open”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "開く",
+          "あく"
+        ],
+        "hint": "よみ: あく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Mở ra; (cửa hàng) mở cửa” viết là 開く (đọc là あく).",
+        "en": "Correct! “To open; to be open” is written 開く (read as あく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Mở ra; (cửa hàng) mở cửa” viết là 開く (đọc là あく); hãy so lại từng ký tự.",
+        "en": "Not quite. “To open; to be open” is written 開く (read as あく); compare it character by character."
+      }
+    }
+  ]
+}

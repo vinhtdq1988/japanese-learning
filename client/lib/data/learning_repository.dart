@@ -14,9 +14,22 @@ class LearningRepository {
     return guardApi(() async => (await _api.getDailyApi().getToday()).data!);
   }
 
-  /// Lộ trình hiện tại; thứ tự đơn vị do server tính động.
-  Future<PathDetail> path() {
-    return guardApi(() async => (await _api.getPathApi().getPath()).data!);
+  /// Lộ trình hiện tại; thứ tự đơn vị do server tính động. Thư viện N4–N3 có ≈ 600 đơn vị nên màn Lộ trình lấy
+  /// từng trang bằng `limit`/`offset` và lọc theo `kind`/`level` (OpenAPI 1.15.0); không tham số = toàn bộ như cũ.
+  Future<PathDetail> path({
+    Skill? kind,
+    ContentLevel? level,
+    int? limit,
+    int offset = 0,
+  }) {
+    return guardApi(
+      () async => (await _api.getPathApi().getPath(
+        kind: kind,
+        level: level,
+        limit: limit,
+        offset: offset,
+      )).data!,
+    );
   }
 
   /// Đánh dấu / bỏ đánh dấu một chữ Kanji đã thành thạo (dừng / tiếp tục ôn mọi khía cạnh của chữ).
@@ -53,7 +66,25 @@ final todayProvider = FutureProvider.autoDispose<DailyPlan>((ref) {
   return ref.watch(learningRepositoryProvider).today();
 });
 
-/// Lộ trình hiện tại.
+/// Số đơn vị mỗi trang của danh sách lộ trình (≤ 500 theo hợp đồng).
+const int pathPageSize = 50;
+
+/// Bộ lọc danh sách lộ trình (null = tất cả).
+typedef PathFilter = ({Skill? kind, ContentLevel? level});
+
+/// Không lọc.
+const PathFilter noPathFilter = (kind: null, level: null);
+
+/// Lộ trình hiện tại (trang đầu, không lọc): dùng cho thông báo phạm vi, tiến độ tổng quát… — không cần toàn bộ
+/// ≈ 600 đơn vị nên chỉ lấy một trang.
 final pathProvider = FutureProvider.autoDispose<PathDetail>((ref) {
-  return ref.watch(learningRepositoryProvider).path();
+  return ref.watch(learningRepositoryProvider).path(limit: pathPageSize);
 });
+
+/// Trang đầu của danh sách lộ trình theo bộ lọc (màn Lộ trình); các trang sau lấy bằng `offset`.
+final pathListProvider = FutureProvider.autoDispose
+    .family<PathDetail, PathFilter>((ref, filter) {
+      return ref
+          .watch(learningRepositoryProvider)
+          .path(kind: filter.kind, level: filter.level, limit: pathPageSize);
+    });

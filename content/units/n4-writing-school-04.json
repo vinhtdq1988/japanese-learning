@@ -1,0 +1,203 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-school",
+  "title": {
+    "vi": "Viết: Trường học (4)",
+    "en": "Writing: School (4)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 2110,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "習う",
+      "reading": "ならう",
+      "meaning": {
+        "vi": "Học (từ ai đó); học nghề",
+        "en": "To learn (from someone)"
+      }
+    },
+    {
+      "japanese": "意見",
+      "reading": "いけん",
+      "meaning": {
+        "vi": "Ý kiến",
+        "en": "Opinion"
+      }
+    },
+    {
+      "japanese": "大会",
+      "reading": "たいかい",
+      "meaning": {
+        "vi": "Đại hội; cuộc thi (quy mô lớn)",
+        "en": "Tournament; competition"
+      }
+    },
+    {
+      "japanese": "入学",
+      "reading": "にゅうがく",
+      "meaning": {
+        "vi": "Nhập học",
+        "en": "Entering a school"
+      }
+    },
+    {
+      "japanese": "会話",
+      "reading": "かいわ",
+      "meaning": {
+        "vi": "Hội thoại; trò chuyện",
+        "en": "Conversation"
+      }
+    },
+    {
+      "japanese": "運動",
+      "reading": "うんどう",
+      "meaning": {
+        "vi": "Vận động; tập thể dục",
+        "en": "Exercise; physical activity"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Học (từ ai đó); học nghề”",
+        "en": "Type in Japanese: “To learn (from someone)”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "習う",
+          "ならう"
+        ],
+        "hint": "よみ: ならう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Học (từ ai đó); học nghề” viết là 習う (đọc là ならう).",
+        "en": "Correct! “To learn (from someone)” is written 習う (read as ならう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Học (từ ai đó); học nghề” viết là 習う (đọc là ならう); hãy so lại từng ký tự.",
+        "en": "Not quite. “To learn (from someone)” is written 習う (read as ならう); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Ý kiến”",
+        "en": "Type in Japanese: “Opinion”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "意見",
+          "いけん"
+        ],
+        "hint": "よみ: いけん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Ý kiến” viết là 意見 (đọc là いけん).",
+        "en": "Correct! “Opinion” is written 意見 (read as いけん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Ý kiến” viết là 意見 (đọc là いけん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Opinion” is written 意見 (read as いけん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Đại hội; cuộc thi (quy mô lớn)”",
+        "en": "Type in Japanese: “Tournament; competition”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "大会",
+          "たいかい"
+        ],
+        "hint": "よみ: たいかい"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Đại hội; cuộc thi (quy mô lớn)” viết là 大会 (đọc là たいかい).",
+        "en": "Correct! “Tournament; competition” is written 大会 (read as たいかい)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Đại hội; cuộc thi (quy mô lớn)” viết là 大会 (đọc là たいかい); hãy so lại từng ký tự.",
+        "en": "Not quite. “Tournament; competition” is written 大会 (read as たいかい); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nhập học”",
+        "en": "Type in Japanese: “Entering a school”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "入学",
+          "にゅうがく"
+        ],
+        "hint": "よみ: にゅうがく"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nhập học” viết là 入学 (đọc là にゅうがく).",
+        "en": "Correct! “Entering a school” is written 入学 (read as にゅうがく)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Nhập học” viết là 入学 (đọc là にゅうがく); hãy so lại từng ký tự.",
+        "en": "Not quite. “Entering a school” is written 入学 (read as にゅうがく); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Hội thoại; trò chuyện”",
+        "en": "Type in Japanese: “Conversation”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "会話",
+          "かいわ"
+        ],
+        "hint": "よみ: かいわ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Hội thoại; trò chuyện” viết là 会話 (đọc là かいわ).",
+        "en": "Correct! “Conversation” is written 会話 (read as かいわ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Hội thoại; trò chuyện” viết là 会話 (đọc là かいわ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Conversation” is written 会話 (read as かいわ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Vận động; tập thể dục”",
+        "en": "Type in Japanese: “Exercise; physical activity”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "運動",
+          "うんどう"
+        ],
+        "hint": "よみ: うんどう"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Vận động; tập thể dục” viết là 運動 (đọc là うんどう).",
+        "en": "Correct! “Exercise; physical activity” is written 運動 (read as うんどう)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Vận động; tập thể dục” viết là 運動 (đọc là うんどう); hãy so lại từng ký tự.",
+        "en": "Not quite. “Exercise; physical activity” is written 運動 (read as うんどう); compare it character by character."
+      }
+    }
+  ]
+}

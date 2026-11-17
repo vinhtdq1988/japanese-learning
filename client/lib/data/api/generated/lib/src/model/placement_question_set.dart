@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'placement_question_set.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,26 +19,50 @@ part 'placement_question_set.g.dart';
 )
 class PlacementQuestionSet {
   /// Returns a new [PlacementQuestionSet] instance.
-  PlacementQuestionSet({this.timeLimitSeconds, this.questions});
+  PlacementQuestionSet({
 
-  @JsonKey(name: r'timeLimitSeconds', required: false, includeIfNull: false)
+     this.timeLimitSeconds,
+
+     this.questions,
+  });
+
+  @JsonKey(
+    
+    name: r'timeLimitSeconds',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? timeLimitSeconds;
 
-  @JsonKey(name: r'questions', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'questions',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<PlacementQuestionSetQuestionsInner>? questions;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is PlacementQuestionSet &&
-          other.timeLimitSeconds == timeLimitSeconds &&
-          other.questions == questions;
 
-  @override
-  int get hashCode => timeLimitSeconds.hashCode + questions.hashCode;
 
-  factory PlacementQuestionSet.fromJson(Map<String, dynamic> json) =>
-      _$PlacementQuestionSetFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is PlacementQuestionSet &&
+      other.timeLimitSeconds == timeLimitSeconds &&
+      other.questions == questions;
+
+    @override
+    int get hashCode =>
+        timeLimitSeconds.hashCode +
+        questions.hashCode;
+
+  factory PlacementQuestionSet.fromJson(Map<String, dynamic> json) => _$PlacementQuestionSetFromJson(json);
 
   Map<String, dynamic> toJson() => _$PlacementQuestionSetToJson(this);
 
@@ -45,4 +70,6 @@ class PlacementQuestionSet {
   String toString() {
     return toJson().toString();
   }
+
 }
+

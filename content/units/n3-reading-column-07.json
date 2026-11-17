@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-culture",
+  "title": {
+    "vi": "Đọc: Giá trị của phương ngữ",
+    "en": "Reading: The value of dialects"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3210,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "地方に行くと、その土地ならではの言葉、つまり方言を耳にすることがある。テレビやインターネットの普及により、全国で標準語に近い話し方が広がり、方言を使う若者は少なくなってきた。\n方言は、単なる「なまり」ではない。その地域の歴史や人々のくらし、考え方が表れた文化の一部である。たとえば、ある地方では「ありがとう」を意味する言葉が、感謝だけでなく、相手への優しさもふくんでいるという。\nもちろん、仕事や公共の場では、だれにでも通じる標準語が必要だ。しかし、家庭や友人との会話では、自分の方言を大切にしてもいいのではないだろうか。言葉の多様さは、その国のゆたかさを示していると思う。",
+      "meaning": {
+        "vi": "Khi đến các vùng miền, đôi khi ta nghe thấy từ ngữ đặc trưng của vùng đất đó, tức là phương ngữ. Nhờ sự phổ biến của truyền hình và internet, cách nói gần với tiếng chuẩn lan rộng khắp cả nước, và số người trẻ dùng phương ngữ ngày càng ít đi. Phương ngữ không chỉ đơn thuần là “giọng địa phương”. Nó là một phần của văn hóa, phản ánh lịch sử của vùng, cuộc sống và cách suy nghĩ của con người nơi đó. Chẳng hạn, ở một vùng nọ, từ mang nghĩa “cảm ơn” được cho là không chỉ chứa lòng biết ơn mà còn cả sự dịu dàng với đối phương. Tất nhiên, trong công việc hay nơi công cộng, cần có tiếng chuẩn mà ai cũng hiểu. Tuy nhiên, trong gia đình và khi trò chuyện với bạn bè, chẳng phải ta cũng có thể trân trọng phương ngữ của mình sao? Tôi nghĩ sự đa dạng của ngôn ngữ cho thấy sự phong phú của một quốc gia.",
+        "en": "When you go to the countryside, you sometimes hear words unique to that place, that is, dialect. With the spread of television and the internet, speech close to standard Japanese has spread across the country, and fewer young people use dialects. A dialect is not just an “accent.” It is a part of culture in which the history of the region and the lives and ways of thinking of its people are expressed. For example, in one region the word meaning “thank you” is said to contain not only gratitude but also kindness toward the other person. Of course, at work and in public places, standard Japanese that anyone can understand is necessary. But in conversations with family and friends, isn’t it fine to value one’s own dialect? I think the diversity of language shows the richness of a country."
+      },
+      "explanation": {
+        "vi": "「～ならでは」= đặc trưng chỉ có ở…; 「～により」= nhờ/do…; 「～てきた」= đã dần trở nên…; 「～ではないだろうか」= chẳng phải là… sao. Từ vựng: 「普及」(ふきゅう) = phổ biến; 「標準語」(ひょうじゅんご) = tiếng chuẩn; 「地域」(ちいき) = khu vực; 「歴史」(れきし) = lịch sử; 「くらし」= cuộc sống (暮らし); 「感謝」(かんしゃ) = biết ơn; 「家庭」(かてい) = gia đình; 「耳にする」(みみにする) = nghe thấy.",
+        "en": "「～ならでは」 = unique to…; 「～により」 = due to/thanks to…; 「～てきた」 = has gradually become…; 「～ではないだろうか」 = isn’t it…? Vocabulary: 「普及」(ふきゅう) = spread; 「標準語」(ひょうじゅんご) = standard language; 「地域」(ちいき) = region; 「歴史」(れきし) = history; 「くらし」 = life (暮らし); 「感謝」(かんしゃ) = gratitude; 「家庭」(かてい) = family/home; 「耳にする」(みみにする) = to hear."
+      },
+      "scopeRef": "r-n3-column-opinion-culture"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều gì đã xảy ra với việc dùng phương ngữ?",
+        "en": "What has happened to the use of dialects?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ngày càng ít người trẻ dùng phương ngữ",
+            "en": "Fewer young people use dialects"
+          },
+          {
+            "vi": "Phương ngữ được dạy ở trường",
+            "en": "Dialects are taught in schools"
+          },
+          {
+            "vi": "Phương ngữ trở thành tiếng chuẩn",
+            "en": "Dialects have become the standard language"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「方言を使う若者は少なくなってきた」: 「～てきた」nghĩa là đã dần dần; số người trẻ dùng phương ngữ ít dần.",
+        "en": "Correct! The text has 「方言を使う若者は少なくなってきた」: 「～てきた」 means gradually; fewer young people use dialects."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「方言を使う若者は少なくなってきた」: 「～てきた」nghĩa là đã dần dần; số người trẻ dùng phương ngữ ít dần.",
+        "en": "Not quite. Look again at 「方言を使う若者は少なくなってきた」: 「～てきた」 means gradually; fewer young people use dialects."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Theo tác giả, phương ngữ là gì?",
+        "en": "According to the author, what is a dialect?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cách nói sai của người ít học",
+            "en": "The wrong speech of uneducated people"
+          },
+          {
+            "vi": "Một phần văn hóa phản ánh lịch sử và cuộc sống của vùng đó",
+            "en": "A part of culture reflecting the region’s history and life"
+          },
+          {
+            "vi": "Ngôn ngữ chỉ dùng trong nghi lễ",
+            "en": "A language used only in ceremonies"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「その地域の歴史や人々のくらし、考え方が表れた文化の一部である」: Tác giả coi phương ngữ là một phần văn hóa thể hiện lịch sử và đời sống của vùng.",
+        "en": "Correct! The text has 「その地域の歴史や人々のくらし、考え方が表れた文化の一部である」: The author regards dialect as a part of culture expressing the region’s history and life."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「その地域の歴史や人々のくらし、考え方が表れた文化の一部である」: Tác giả coi phương ngữ là một phần văn hóa thể hiện lịch sử và đời sống của vùng.",
+        "en": "Not quite. Look again at 「その地域の歴史や人々のくらし、考え方が表れた文化の一部である」: The author regards dialect as a part of culture expressing the region’s history and life."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả có quan điểm gì về việc dùng phương ngữ?",
+        "en": "What is the author’s view on using dialects?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Nên dùng phương ngữ ở mọi nơi",
+            "en": "Dialects should be used everywhere"
+          },
+          {
+            "vi": "Nên trân trọng phương ngữ khi nói chuyện với gia đình, bạn bè",
+            "en": "One may value one’s dialect in conversation with family and friends"
+          },
+          {
+            "vi": "Nên cấm dùng phương ngữ",
+            "en": "Dialects should be banned"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「家庭や友人との会話では、自分の方言を大切にしてもいいのではないだろうか」: Tác giả cho rằng ở nhà và với bạn bè thì có thể trân trọng phương ngữ, còn công việc cần tiếng chuẩn.",
+        "en": "Correct! The text has 「家庭や友人との会話では、自分の方言を大切にしてもいいのではないだろうか」: The author says dialects can be valued at home and with friends, while standard Japanese is needed at work."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「家庭や友人との会話では、自分の方言を大切にしてもいいのではないだろうか」: Tác giả cho rằng ở nhà và với bạn bè thì có thể trân trọng phương ngữ, còn công việc cần tiếng chuẩn.",
+        "en": "Not quite. Look again at 「家庭や友人との会話では、自分の方言を大切にしてもいいのではないだろうか」: The author says dialects can be valued at home and with friends, while standard Japanese is needed at work."
+      }
+    }
+  ]
+}

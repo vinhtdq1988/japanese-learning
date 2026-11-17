@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-society",
+  "title": {
+    "vi": "Đọc: Cửa hàng tiện lợi rút ngắn giờ ban đêm",
+    "en": "Reading: Convenience stores shortening night hours"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 5,
+  "sequence": 610,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "最近、深夜に営業時間をみじかくするコンビニが増えている。人手不足で、夜に働く人を見つけるのが難しいからだ。便利さは減るかもしれないが、働く人の健康を守るためには、必要な変化だと思う。私たち利用者も、「いつでも開いている」ことを当たり前だと考えないようにしたい。",
+      "meaning": {
+        "vi": "Gần đây, ngày càng nhiều cửa hàng tiện lợi rút ngắn giờ mở cửa ban đêm. Đó là vì thiếu nhân lực nên khó tìm người làm ca đêm. Sự tiện lợi có thể giảm đi, nhưng để bảo vệ sức khỏe người lao động, tôi nghĩ đây là thay đổi cần thiết. Chúng ta, những người sử dụng, cũng nên cố gắng đừng coi việc “lúc nào cũng mở cửa” là điều đương nhiên.",
+        "en": "Recently, more and more convenience stores are shortening their late-night hours. This is because of a labor shortage and it is hard to find people to work at night. Convenience may decrease, but I think it is a necessary change to protect the health of the people who work there. We users, too, should try not to take it for granted that stores are “always open.”"
+      },
+      "explanation": {
+        "vi": "「～かもしれない」= có thể…; 「～ためには」= để… thì; 「～ないようにしたい」= muốn cố gắng không…. Từ vựng: 「便利」(べんり) = tiện lợi; 「健康」(けんこう) = sức khỏe; 「人手不足」(ひとでぶそく) = thiếu nhân lực; 「当たり前」(あたりまえ) = lẽ đương nhiên.",
+        "en": "「～かもしれない」 = may…; 「～ためには」 = in order to…; 「～ないようにしたい」 = want to try not to…. Vocabulary: 「便利」(べんり) = convenient; 「健康」(けんこう) = health; 「人手不足」(ひとでぶそく) = labor shortage; 「当たり前」(あたりまえ) = taken for granted."
+      },
+      "scopeRef": "r-n3-column-society"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Hiện tượng gì đang tăng lên?",
+        "en": "What is increasing?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Cửa hàng tiện lợi mở cửa 24 giờ",
+            "en": "Convenience stores open 24 hours"
+          },
+          {
+            "vi": "Cửa hàng tiện lợi rút ngắn giờ mở cửa ban đêm",
+            "en": "Convenience stores shortening their night hours"
+          },
+          {
+            "vi": "Cửa hàng tiện lợi đóng cửa hẳn",
+            "en": "Convenience stores closing for good"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「深夜に営業時間をみじかくするコンビニが増えている」: Văn bản mở đầu bằng việc cửa hàng tiện lợi rút ngắn giờ ban đêm đang tăng.",
+        "en": "Correct! The text has 「深夜に営業時間をみじかくするコンビニが増えている」: The text opens by saying convenience stores that shorten night hours are increasing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「深夜に営業時間をみじかくするコンビニが増えている」: Văn bản mở đầu bằng việc cửa hàng tiện lợi rút ngắn giờ ban đêm đang tăng.",
+        "en": "Not quite. Look again at 「深夜に営業時間をみじかくするコンビニが増えている」: The text opens by saying convenience stores that shorten night hours are increasing."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Lý do của hiện tượng này là gì?",
+        "en": "What is the reason for this?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Khách hàng ban đêm ít đi",
+            "en": "There are fewer customers at night"
+          },
+          {
+            "vi": "Tiền điện tăng",
+            "en": "Electricity costs have risen"
+          },
+          {
+            "vi": "Thiếu nhân lực, khó tìm người làm ca đêm",
+            "en": "A labor shortage makes it hard to find night workers"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「人手不足で、夜に働く人を見つけるのが難しいからだ」: 「人手不足」là thiếu nhân lực; vì khó tìm người làm đêm.",
+        "en": "Correct! The text has 「人手不足で、夜に働く人を見つけるのが難しいからだ」: 「人手不足」 means a labor shortage; it is hard to find night workers."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「人手不足で、夜に働く人を見つけるのが難しいからだ」: 「人手不足」là thiếu nhân lực; vì khó tìm người làm đêm.",
+        "en": "Not quite. Look again at 「人手不足で、夜に働く人を見つけるのが難しいからだ」: 「人手不足」 means a labor shortage; it is hard to find night workers."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Tác giả nghĩ gì về sự thay đổi này?",
+        "en": "What does the author think about this change?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Là thay đổi cần thiết để bảo vệ sức khỏe người lao động",
+            "en": "It is a necessary change to protect workers’ health"
+          },
+          {
+            "vi": "Là thay đổi đáng tiếc cần phản đối",
+            "en": "It is a regrettable change that should be opposed"
+          },
+          {
+            "vi": "Không có ý kiến gì",
+            "en": "The author has no opinion"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「働く人の健康を守るためには、必要な変化だと思う」: 「必要な変化だと思う」thể hiện ý kiến của tác giả: đây là thay đổi cần thiết.",
+        "en": "Correct! The text has 「働く人の健康を守るためには、必要な変化だと思う」: 「必要な変化だと思う」 shows the author’s opinion: it is a necessary change."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「働く人の健康を守るためには、必要な変化だと思う」: 「必要な変化だと思う」thể hiện ý kiến của tác giả: đây là thay đổi cần thiết.",
+        "en": "Not quite. Look again at 「働く人の健康を守るためには、必要な変化だと思う」: 「必要な変化だと思う」 shows the author’s opinion: it is a necessary change."
+      }
+    }
+  ]
+}

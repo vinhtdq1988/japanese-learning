@@ -1,0 +1,134 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-culture",
+  "title": {
+    "vi": "Đọc: Kính ngữ có cần thiết không?",
+    "en": "Reading: Is honorific language necessary?"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 3010,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "日本語には、相手や場面によって言葉を使い分ける「敬語」がある。外国人にとって、敬語は日本語学習の中で最も難しい部分の一つだろう。日本人にとっても、正しく使うのは簡単ではない。\nそのため、「敬語はなくしたほうがいい」という意見を聞くことがある。確かに、使い方を間違えると、かえって相手に失礼な印象を与えてしまう。\nしかし、私は敬語には大切な役割があると考える。敬語は、相手への尊敬や感謝の気持ちを、言葉の形で表すものだからだ。たとえば、初めて会う人にていねいな言葉で話しかけると、安心して話を始められる。\n大切なのは、完全に使うことではなく、相手を思う気持ちを持つことだ。その気持ちがあれば、多少の間違いは許してもらえるはずである。",
+      "meaning": {
+        "vi": "Tiếng Nhật có “kính ngữ”, tức là cách dùng từ khác nhau tùy theo đối tượng và tình huống. Với người nước ngoài, kính ngữ có lẽ là một trong những phần khó nhất khi học tiếng Nhật. Ngay cả với người Nhật, dùng đúng cũng không hề dễ. Vì vậy, đôi khi người ta nghe thấy ý kiến “nên bỏ kính ngữ đi”. Quả thật, nếu dùng sai thì ngược lại sẽ tạo ấn tượng thiếu lịch sự cho đối phương. Tuy nhiên, tôi cho rằng kính ngữ có vai trò quan trọng. Bởi kính ngữ là thứ thể hiện lòng tôn trọng và biết ơn đối với người khác bằng hình thức ngôn từ. Chẳng hạn, khi bắt chuyện với người lần đầu gặp bằng lời lẽ lịch sự, ta có thể yên tâm bắt đầu câu chuyện. Điều quan trọng không phải là dùng cho hoàn hảo mà là có tấm lòng nghĩ đến người khác. Nếu có tấm lòng ấy thì những sai sót nhỏ chắc sẽ được bỏ qua.",
+        "en": "Japanese has “keigo,” honorific language, in which words are used differently depending on the other person and the situation. For foreigners, keigo is probably one of the hardest parts of learning Japanese. Even for Japanese people, using it correctly is not easy. For that reason, one sometimes hears the opinion that “keigo should be abolished.” It is true that if you use it incorrectly, you can end up giving the other person an impolite impression. However, I think keigo has an important role. This is because keigo expresses respect and gratitude toward the other person in the form of words. For example, if you speak to someone you are meeting for the first time in polite language, you can start the conversation with peace of mind. What matters is not using it perfectly but having a heart that cares about the other person. If you have that feeling, small mistakes should be forgiven."
+      },
+      "explanation": {
+        "vi": "「～によって」= tùy theo…; 「かえって」= ngược lại; 「～てしまう」= lỡ…; 「～はずである」= chắc chắn sẽ…; 「～てもらえる」= được (ai đó) làm cho. Từ vựng: 「簡単」(かんたん) = đơn giản; 「失礼」(しつれい) = thất lễ; 「尊敬」(そんけい) = tôn trọng; 「感謝」(かんしゃ) = biết ơn; 「許す」(ゆるす) = tha thứ.",
+        "en": "「～によって」 = depending on…; 「かえって」 = on the contrary; 「～てしまう」 = end up…; 「～はずである」 = should/surely; 「～てもらえる」 = be able to receive (a favor). Vocabulary: 「簡単」(かんたん) = simple; 「失礼」(しつれい) = rude; 「尊敬」(そんけい) = respect; 「感謝」(かんしゃ) = gratitude; 「許す」(ゆるす) = to forgive."
+      },
+      "scopeRef": "r-n3-column-opinion-culture"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Theo tác giả, vì sao kính ngữ khó?",
+        "en": "According to the author, why is keigo difficult?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì có quá ít từ vựng",
+            "en": "Because there are too few words"
+          },
+          {
+            "vi": "Vì ngay cả người Nhật cũng khó dùng đúng",
+            "en": "Because even Japanese people find it hard to use correctly"
+          },
+          {
+            "vi": "Vì chỉ dùng trong văn viết",
+            "en": "Because it is used only in writing"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「日本人にとっても、正しく使うのは簡単ではない」: 「簡単ではない」nghĩa là không dễ; người Nhật cũng khó dùng đúng.",
+        "en": "Correct! The text has 「日本人にとっても、正しく使うのは簡単ではない」: 「簡単ではない」 means it is not easy; even Japanese people find correct use hard."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「日本人にとっても、正しく使うのは簡単ではない」: 「簡単ではない」nghĩa là không dễ; người Nhật cũng khó dùng đúng.",
+        "en": "Not quite. Look again at 「日本人にとっても、正しく使うのは簡単ではない」: 「簡単ではない」 means it is not easy; even Japanese people find correct use hard."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao có người cho rằng nên bỏ kính ngữ?",
+        "en": "Why do some people say keigo should be abolished?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Vì dùng sai có thể gây ấn tượng thiếu lịch sự",
+            "en": "Because using it wrongly can give an impolite impression"
+          },
+          {
+            "vi": "Vì tốn thời gian",
+            "en": "Because it takes too much time"
+          },
+          {
+            "vi": "Vì không ai dùng nữa",
+            "en": "Because nobody uses it any more"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「使い方を間違えると、かえって相手に失礼な印象を与えてしまう」: 「かえって」nghĩa là ngược lại: dùng sai lại tạo ấn tượng thất lễ.",
+        "en": "Correct! The text has 「使い方を間違えると、かえって相手に失礼な印象を与えてしまう」: 「かえって」 means on the contrary: misuse creates an impolite impression."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「使い方を間違えると、かえって相手に失礼な印象を与えてしまう」: 「かえって」nghĩa là ngược lại: dùng sai lại tạo ấn tượng thất lễ.",
+        "en": "Not quite. Look again at 「使い方を間違えると、かえって相手に失礼な印象を与えてしまう」: 「かえって」 means on the contrary: misuse creates an impolite impression."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Điều tác giả cho là quan trọng nhất là gì?",
+        "en": "What does the author consider most important?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Dùng kính ngữ thật hoàn hảo",
+            "en": "Using keigo perfectly"
+          },
+          {
+            "vi": "Có tấm lòng nghĩ đến người khác",
+            "en": "Having a heart that cares about the other person"
+          },
+          {
+            "vi": "Không dùng kính ngữ với bạn bè",
+            "en": "Not using keigo with friends"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「相手を思う気持ちを持つことだ」: Tác giả nói quan trọng là có tấm lòng nghĩ đến đối phương, không cần hoàn hảo.",
+        "en": "Correct! The text has 「相手を思う気持ちを持つことだ」: The author says what matters is caring about the other person, not perfection."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「相手を思う気持ちを持つことだ」: Tác giả nói quan trọng là có tấm lòng nghĩ đến đối phương, không cần hoàn hảo.",
+        "en": "Not quite. Look again at 「相手を思う気持ちを持つことだ」: The author says what matters is caring about the other person, not perfection."
+      }
+    }
+  ]
+}

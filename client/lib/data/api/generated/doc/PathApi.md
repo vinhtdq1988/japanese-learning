@@ -18,18 +18,25 @@ Method | HTTP request | Description
 
 
 # **getPath**
-> PathDetail getPath()
+> PathDetail getPath(kind, level, status, limit, offset)
 
 Lộ trình hiện tại
+
+Không có tham số thì trả toàn bộ đơn vị như cũ. Có thể lọc để client dựng danh sách lười khi thư viện lớn (khoảng 600 đơn vị). Lọc theo `kind`/`level`/`status` trước rồi mới cắt `limit`/`offset`; thứ tự các phần tử giữ nguyên thứ tự xếp hạng động. `totalUnits`/`completedUnits` luôn là số của TOÀN BỘ lộ trình (không đổi theo bộ lọc). `offset` vượt `itemsTotal` → `items: []`; `kind` nằm ngoài kỹ năng hiệu lực của người học → `items: []` (không lỗi). Áp dụng cả cho lộ trình lớp (`source = class`). 
 
 ### Example
 ```dart
 import 'package:japanese_api/api.dart';
 
 final api = JapaneseApi().getPathApi();
+final Skill kind = ; // Skill | 
+final ContentLevel level = ; // ContentLevel | 
+final String status = status_example; // String | 
+final int limit = 56; // int | 
+final int offset = 56; // int | 
 
 try {
-    final response = api.getPath();
+    final response = api.getPath(kind, level, status, limit, offset);
     print(response);
 } on DioException catch (e) {
     print('Exception when calling PathApi->getPath: $e\n');
@@ -37,7 +44,14 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **kind** | [**Skill**](.md)|  | [optional] 
+ **level** | [**ContentLevel**](.md)|  | [optional] 
+ **status** | **String**|  | [optional] 
+ **limit** | **int**|  | [optional] 
+ **offset** | **int**|  | [optional] [default to 0]
 
 ### Return type
 

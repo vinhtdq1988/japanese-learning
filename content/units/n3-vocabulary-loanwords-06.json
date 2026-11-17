@@ -1,0 +1,383 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-loanwords",
+  "title": {
+    "vi": "Mục, lĩnh vực, chữ ký, không gian và truyền thông",
+    "en": "Items, fields, signatures, space and media"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 3370,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "事項",
+      "reading": "じこう",
+      "meaning": {
+        "vi": "Mục; hạng mục",
+        "en": "Item; matter"
+      },
+      "examples": [
+        {
+          "ja": "次の事項に注意して、書類を書いてください。",
+          "reading": "つぎのじこうにちゅういして、しょるいをかいてください。",
+          "translation": {
+            "vi": "Hãy lưu ý các mục sau khi viết hồ sơ.",
+            "en": "Please write the document paying attention to the following items."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "領域",
+      "reading": "りょういき",
+      "meaning": {
+        "vi": "Lĩnh vực; phạm vi",
+        "en": "Field; domain"
+      },
+      "examples": [
+        {
+          "ja": "彼は、科学の領域で、多くの研究をしました。",
+          "reading": "かれは、かがくのりょういきで、おおくのけんきゅうをしました。",
+          "translation": {
+            "vi": "Ông ấy đã thực hiện nhiều nghiên cứu trong lĩnh vực khoa học.",
+            "en": "He carried out a great deal of research in the field of science."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "サイン",
+      "reading": "サイン",
+      "meaning": {
+        "vi": "Chữ ký; dấu hiệu",
+        "en": "Signature; sign"
+      },
+      "examples": [
+        {
+          "ja": "ここに、サインをお願いします。",
+          "reading": "ここに、サインをおねがいします。",
+          "translation": {
+            "vi": "Xin vui lòng ký tên vào đây.",
+            "en": "Please sign here."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "スペース",
+      "reading": "スペース",
+      "meaning": {
+        "vi": "Khoảng trống; không gian",
+        "en": "Space"
+      },
+      "examples": [
+        {
+          "ja": "部屋には、机を置くスペースがありません。",
+          "reading": "へやには、つくえをおくスペースがありません。",
+          "translation": {
+            "vi": "Trong phòng không còn chỗ để đặt bàn.",
+            "en": "There is no space in the room to put a desk."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "マスコミ",
+      "reading": "マスコミ",
+      "meaning": {
+        "vi": "Truyền thông đại chúng",
+        "en": "The mass media"
+      },
+      "examples": [
+        {
+          "ja": "事件は、マスコミで大きく取り上げられました。",
+          "reading": "じけんは、マスコミでおおきくとりあげられました。",
+          "translation": {
+            "vi": "Vụ việc đã được truyền thông đưa tin rất lớn.",
+            "en": "The incident was covered extensively in the mass media."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "ルート",
+      "reading": "ルート",
+      "meaning": {
+        "vi": "Tuyến đường; lộ trình",
+        "en": "Route"
+      },
+      "examples": [
+        {
+          "ja": "山へ行く、いちばん安全なルートを調べました。",
+          "reading": "やまへいく、いちばんあんぜんなルートをしらべました。",
+          "translation": {
+            "vi": "Tôi đã tìm hiểu tuyến đường an toàn nhất để lên núi.",
+            "en": "I looked into the safest route to the mountain."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "フォーム",
+      "reading": "フォーム",
+      "meaning": {
+        "vi": "Biểu mẫu (trực tuyến); dáng điệu",
+        "en": "Form (online); form (posture)"
+      },
+      "examples": [
+        {
+          "ja": "ホームページの申し込みフォームに、名前を入力します。",
+          "reading": "ホームページのもうしこみフォームに、なまえをにゅうりょくします。",
+          "translation": {
+            "vi": "Tôi nhập tên vào biểu mẫu đăng ký trên trang web.",
+            "en": "I enter my name in the application form on the website."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "事項",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 次の（　）に注意して、書類を書いてください。 — Nghĩa của câu: “Hãy lưu ý các mục sau khi viết hồ sơ.”",
+        "en": "Choose the word that fits the blank: 次の（　）に注意して、書類を書いてください。 — Meaning of the sentence: “Please write the document paying attention to the following items.”"
+      },
+      "payload": {
+        "choices": [
+          "ルート",
+          "スペース",
+          "フォーム",
+          "事項"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事項」(Mục; hạng mục) hợp nghĩa câu này: “Hãy lưu ý các mục sau khi viết hồ sơ.”",
+        "en": "Correct! 「事項」(Item; matter) fits this sentence: “Please write the document paying attention to the following items.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy lưu ý các mục sau khi viết hồ sơ.”, nên cần 「事項」(Mục; hạng mục); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please write the document paying attention to the following items.”, so it needs 「事項」(Item; matter); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "領域",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、科学の（　）で、多くの研究をしました。 — Nghĩa của câu: “Ông ấy đã thực hiện nhiều nghiên cứu trong lĩnh vực khoa học.”",
+        "en": "Choose the word that fits the blank: 彼は、科学の（　）で、多くの研究をしました。 — Meaning of the sentence: “He carried out a great deal of research in the field of science.”"
+      },
+      "payload": {
+        "choices": [
+          "領域",
+          "スペース",
+          "事項",
+          "ルート"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「領域」(Lĩnh vực; phạm vi) hợp nghĩa câu này: “Ông ấy đã thực hiện nhiều nghiên cứu trong lĩnh vực khoa học.”",
+        "en": "Correct! 「領域」(Field; domain) fits this sentence: “He carried out a great deal of research in the field of science.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ông ấy đã thực hiện nhiều nghiên cứu trong lĩnh vực khoa học.”, nên cần 「領域」(Lĩnh vực; phạm vi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He carried out a great deal of research in the field of science.”, so it needs 「領域」(Field; domain); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "サイン",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ここに、（　）をお願いします。 — Nghĩa của câu: “Xin vui lòng ký tên vào đây.”",
+        "en": "Choose the word that fits the blank: ここに、（　）をお願いします。 — Meaning of the sentence: “Please sign here.”"
+      },
+      "payload": {
+        "choices": [
+          "マスコミ",
+          "サイン",
+          "領域",
+          "ルート"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「サイン」(Chữ ký; dấu hiệu) hợp nghĩa câu này: “Xin vui lòng ký tên vào đây.”",
+        "en": "Correct! 「サイン」(Signature; sign) fits this sentence: “Please sign here.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Xin vui lòng ký tên vào đây.”, nên cần 「サイン」(Chữ ký; dấu hiệu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please sign here.”, so it needs 「サイン」(Signature; sign); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "スペース",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 部屋には、机を置く（　）がありません。 — Nghĩa của câu: “Trong phòng không còn chỗ để đặt bàn.”",
+        "en": "Choose the word that fits the blank: 部屋には、机を置く（　）がありません。 — Meaning of the sentence: “There is no space in the room to put a desk.”"
+      },
+      "payload": {
+        "choices": [
+          "ルート",
+          "領域",
+          "スペース",
+          "マスコミ"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「スペース」(Khoảng trống; không gian) hợp nghĩa câu này: “Trong phòng không còn chỗ để đặt bàn.”",
+        "en": "Correct! 「スペース」(Space) fits this sentence: “There is no space in the room to put a desk.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Trong phòng không còn chỗ để đặt bàn.”, nên cần 「スペース」(Khoảng trống; không gian); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There is no space in the room to put a desk.”, so it needs 「スペース」(Space); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "マスコミ",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 事件は、（　）で大きく取り上げられました。 — Nghĩa của câu: “Vụ việc đã được truyền thông đưa tin rất lớn.”",
+        "en": "Choose the word that fits the blank: 事件は、（　）で大きく取り上げられました。 — Meaning of the sentence: “The incident was covered extensively in the mass media.”"
+      },
+      "payload": {
+        "choices": [
+          "サイン",
+          "スペース",
+          "ルート",
+          "マスコミ"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「マスコミ」(Truyền thông đại chúng) hợp nghĩa câu này: “Vụ việc đã được truyền thông đưa tin rất lớn.”",
+        "en": "Correct! 「マスコミ」(The mass media) fits this sentence: “The incident was covered extensively in the mass media.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Vụ việc đã được truyền thông đưa tin rất lớn.”, nên cần 「マスコミ」(Truyền thông đại chúng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The incident was covered extensively in the mass media.”, so it needs 「マスコミ」(The mass media); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "ルート",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 山へ行く、いちばん安全な（　）を調べました。 — Nghĩa của câu: “Tôi đã tìm hiểu tuyến đường an toàn nhất để lên núi.”",
+        "en": "Choose the word that fits the blank: 山へ行く、いちばん安全な（　）を調べました。 — Meaning of the sentence: “I looked into the safest route to the mountain.”"
+      },
+      "payload": {
+        "choices": [
+          "ルート",
+          "マスコミ",
+          "サイン",
+          "フォーム"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「ルート」(Tuyến đường; lộ trình) hợp nghĩa câu này: “Tôi đã tìm hiểu tuyến đường an toàn nhất để lên núi.”",
+        "en": "Correct! 「ルート」(Route) fits this sentence: “I looked into the safest route to the mountain.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi đã tìm hiểu tuyến đường an toàn nhất để lên núi.”, nên cần 「ルート」(Tuyến đường; lộ trình); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I looked into the safest route to the mountain.”, so it needs 「ルート」(Route); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "フォーム",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: ホームページの申し込み（　）に、名前を入力します。 — Nghĩa của câu: “Tôi nhập tên vào biểu mẫu đăng ký trên trang web.”",
+        "en": "Choose the word that fits the blank: ホームページの申し込み（　）に、名前を入力します。 — Meaning of the sentence: “I enter my name in the application form on the website.”"
+      },
+      "payload": {
+        "choices": [
+          "領域",
+          "フォーム",
+          "サイン",
+          "ルート"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「フォーム」(Biểu mẫu (trực tuyến); dáng điệu) hợp nghĩa câu này: “Tôi nhập tên vào biểu mẫu đăng ký trên trang web.”",
+        "en": "Correct! 「フォーム」(Form (online); form (posture)) fits this sentence: “I enter my name in the application form on the website.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tôi nhập tên vào biểu mẫu đăng ký trên trang web.”, nên cần 「フォーム」(Biểu mẫu (trực tuyến); dáng điệu); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I enter my name in the application form on the website.”, so it needs 「フォーム」(Form (online); form (posture)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "事項",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 次の「事項」に注意して、書類を書いてください。",
+        "en": "Choose the correct reading of the word in 「」: 次の「事項」に注意して、書類を書いてください。"
+      },
+      "payload": {
+        "choices": [
+          "じこう",
+          "サイン",
+          "スペース",
+          "りょういき"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「事項」 đọc là 「じこう」, nghĩa là Mục; hạng mục.",
+        "en": "Correct! 「事項」 is read 「じこう」 and means Item; matter."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「事項」 đọc là 「じこう」 (Mục; hạng mục); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「事項」 is read 「じこう」 (Item; matter); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "領域",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、科学の「領域」で、多くの研究をしました。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、科学の「領域」で、多くの研究をしました。"
+      },
+      "payload": {
+        "choices": [
+          "ルート",
+          "りょういき",
+          "フォーム",
+          "スペース"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「領域」 đọc là 「りょういき」, nghĩa là Lĩnh vực; phạm vi.",
+        "en": "Correct! 「領域」 is read 「りょういき」 and means Field; domain."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「領域」 đọc là 「りょういき」 (Lĩnh vực; phạm vi); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「領域」 is read 「りょういき」 (Field; domain); the other readings belong to different words in this lesson."
+      }
+    }
+  ]
+}

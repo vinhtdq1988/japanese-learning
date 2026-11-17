@@ -25,6 +25,7 @@ import { resolveLearningContext } from './learning-context.js';
 import { loadOrgContext } from './org-access.js';
 import { licenseView, type LicenseViewDto } from './org-dto.js';
 import { createPath, paramsFor, paramsOfPath, type PathReason } from './path.js';
+import { clearPendingTodayPlan } from './plan-reset.js';
 
 // Dịch vụ hồ sơ (T047, T093): đọc `GET /me` và sửa hồ sơ qua `PATCH /me`, kể cả hệ quả lên lộ trình
 // (đổi mục tiêu/trình độ sinh lộ trình mới) và đổi email (T111, cần mật khẩu hiện tại).
@@ -206,9 +207,12 @@ function resolvePathFields(
  * - `dailyMinutes`, `prioritizedSkill`: lưu và áp dụng trực tiếp cho kế hoạch được sinh kế tiếp, KHÔNG
  *   sinh lộ trình mới (`rankUnits` đọc `prioritized_skill` từ hồ sơ).
  * - `skills` (spec 003, FR-007, FR-010): như `dailyMinutes`, KHÔNG sinh lộ trình mới và không đụng
- *   `unit_progress`/`study_records`/`review_schedules`/`topic_stats`; có hiệu lực ở kế hoạch sinh kế tiếp
- *   (kế hoạch đã sinh hôm nay không đổi). `prioritizedSkill` hiện tại không còn thuộc `skills` mới thì được
- *   đặt `null` trong cùng giao dịch; `kanji_selected_at` đặt `now()` khi Kanji được thêm, giữ khi bỏ chọn.
+ *   `unit_progress`/`study_records`/`review_schedules`/`topic_stats`. `prioritizedSkill` hiện tại không còn
+ *   thuộc `skills` mới thì được đặt `null` trong cùng giao dịch; `kanji_selected_at` đặt `now()` khi Kanji
+ *   được thêm, giữ khi bỏ chọn.
+ * - Kế hoạch hôm nay: đổi `dailyMinutes`/`skills`/`prioritizedSkill` hoặc sinh lộ trình mới thì kế hoạch hôm nay
+ *   bị xóa trong cùng giao dịch NẾU mọi mục còn `pending` (`GET /today` kế tiếp sinh lại theo thiết lập mới);
+ *   đã có mục `in_progress`/`completed` thì giữ nguyên và thiết lập mới có hiệu lực từ ngày sau.
  * - `goalType`/`targetLevel`/`targetDate` đổi giá trị → lộ trình mới `reason='goal_change'`;
  *   `currentLevel` đổi giá trị → lộ trình mới `reason='level_change'` (kết quả placement cũ không còn
  *   quyết định điểm xuất phát vì người học đã tự khai báo lại trình độ). Cả hai đổi → `goal_change`.
@@ -287,18 +291,29 @@ export async function updateMe(
       ? 'level_change'
       : null;
 
+  // Thay đổi làm kế hoạch hôm nay lỗi thời: phút/ngày, kỹ năng, kỹ năng ưu tiên hoặc lộ trình mới.
+  const affectsTodayPlan =
+    reason !== null ||
+    input.dailyMinutes !== undefined ||
+    input.skills !== undefined ||
+    input.prioritizedSkill !== undefined ||
+    clearPriority;
+
   await deps.db.transaction(async (tx) => {
     if (emailChange) await applyEmailChange(tx, userId, emailChange, now);
     const updated = await updateProfile(tx, userId, patch, now);
-    if (!reason) return;
-    // Đổi mục tiêu giữ kết quả placement lộ trình cũ đang dùng; đổi trình độ tự khai báo thì bỏ nó.
-    let placement: PlacementResultRow | null = null;
-    if (reason === 'goal_change') {
-      const previous = await getActivePath(tx, userId);
-      const previousId = previous ? paramsOfPath(previous).placementResultId : null;
-      placement = previousId ? ((await getPlacementById(tx, userId, previousId)) ?? null) : null;
+    if (reason) {
+      // Đổi mục tiêu giữ kết quả placement lộ trình cũ đang dùng; đổi trình độ tự khai báo thì bỏ nó.
+      let placement: PlacementResultRow | null = null;
+      if (reason === 'goal_change') {
+        const previous = await getActivePath(tx, userId);
+        const previousId = previous ? paramsOfPath(previous).placementResultId : null;
+        placement = previousId ? ((await getPlacementById(tx, userId, previousId)) ?? null) : null;
+      }
+      await createPath(tx, userId, reason, paramsFor(updated, placement));
     }
-    await createPath(tx, userId, reason, paramsFor(updated, placement));
+    // Chỉ xóa khi mọi mục còn `pending`; đã học dở thì giữ nguyên, thiết lập mới có hiệu lực từ ngày sau.
+    if (affectsTodayPlan) await clearPendingTodayPlan(tx, deps, userId);
   });
   return getMe(deps, userId);
 }

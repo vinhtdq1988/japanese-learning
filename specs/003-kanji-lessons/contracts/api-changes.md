@@ -61,7 +61,7 @@ ProfileUpdate:
       minItems: 1
       uniqueItems: true
       items: { $ref: '#/components/schemas/Skill' }
-      description: 'Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ở kế hoạch sinh kế tiếp (kế hoạch đã sinh hôm nay không đổi). Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.'
+      description: 'Kỹ năng muốn cải thiện. Đổi giá trị KHÔNG sinh lộ trình mới; có hiệu lực ngay: kế hoạch hôm nay bị xóa và sinh lại nếu mọi mục còn chưa học; đã học dở thì giữ nguyên và có hiệu lực từ ngày sau. Tiến độ và lịch ôn giữ nguyên. Nếu `prioritizedSkill` hiện tại (hoặc gửi kèm) không thuộc `skills` mới thì được đặt null.'
 ```
 
 - 422 `VALIDATION_FAILED` (`fields.skills`): rỗng hoặc chứa giá trị ngoài `Skill` (ví dụ `listening`, `reading` – "chưa có trong phiên bản này").

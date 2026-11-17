@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'path_warning.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,45 +19,81 @@ part 'path_warning.g.dart';
 class PathWarning {
   /// Returns a new [PathWarning] instance.
   PathWarning({
-    required this.code,
 
-    required this.requiredMinutes,
+    required  this.code,
 
-    required this.capacityMinutes,
+    required  this.requiredMinutes,
 
-    this.assignmentId,
+    required  this.capacityMinutes,
+
+     this.assignmentId,
   });
 
-  @JsonKey(name: r'code', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'code',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final PathWarningCodeEnum code;
 
-  @JsonKey(name: r'requiredMinutes', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'requiredMinutes',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int requiredMinutes;
 
-  @JsonKey(name: r'capacityMinutes', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'capacityMinutes',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final int capacityMinutes;
 
-  @JsonKey(name: r'assignmentId', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'assignmentId',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? assignmentId;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is PathWarning &&
-          other.code == code &&
-          other.requiredMinutes == requiredMinutes &&
-          other.capacityMinutes == capacityMinutes &&
-          other.assignmentId == assignmentId;
 
-  @override
-  int get hashCode =>
-      code.hashCode +
-      requiredMinutes.hashCode +
-      capacityMinutes.hashCode +
-      (assignmentId == null ? 0 : assignmentId.hashCode);
 
-  factory PathWarning.fromJson(Map<String, dynamic> json) =>
-      _$PathWarningFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is PathWarning &&
+      other.code == code &&
+      other.requiredMinutes == requiredMinutes &&
+      other.capacityMinutes == capacityMinutes &&
+      other.assignmentId == assignmentId;
+
+    @override
+    int get hashCode =>
+        code.hashCode +
+        requiredMinutes.hashCode +
+        capacityMinutes.hashCode +
+        (assignmentId == null ? 0 : assignmentId.hashCode);
+
+  factory PathWarning.fromJson(Map<String, dynamic> json) => _$PathWarningFromJson(json);
 
   Map<String, dynamic> toJson() => _$PathWarningToJson(this);
 
@@ -64,16 +101,19 @@ class PathWarning {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum PathWarningCodeEnum {
-  @JsonValue(r'over_capacity')
-  overCapacity(r'over_capacity');
+@JsonValue(r'over_capacity')
+overCapacity(r'over_capacity');
 
-  const PathWarningCodeEnum(this.value);
+const PathWarningCodeEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

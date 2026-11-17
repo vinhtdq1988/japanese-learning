@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_brief_teachers_inner.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,21 +18,34 @@ part 'class_brief_teachers_inner.g.dart';
 )
 class ClassBriefTeachersInner {
   /// Returns a new [ClassBriefTeachersInner] instance.
-  ClassBriefTeachersInner({required this.displayName});
+  ClassBriefTeachersInner({
 
-  @JsonKey(name: r'displayName', required: true, includeIfNull: false)
+    required  this.displayName,
+  });
+
+  @JsonKey(
+    
+    name: r'displayName',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String displayName;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassBriefTeachersInner && other.displayName == displayName;
 
-  @override
-  int get hashCode => displayName.hashCode;
 
-  factory ClassBriefTeachersInner.fromJson(Map<String, dynamic> json) =>
-      _$ClassBriefTeachersInnerFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassBriefTeachersInner &&
+      other.displayName == displayName;
+
+    @override
+    int get hashCode =>
+        displayName.hashCode;
+
+  factory ClassBriefTeachersInner.fromJson(Map<String, dynamic> json) => _$ClassBriefTeachersInnerFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassBriefTeachersInnerToJson(this);
 
@@ -39,4 +53,6 @@ class ClassBriefTeachersInner {
   String toString() {
     return toJson().toString();
   }
+
 }
+

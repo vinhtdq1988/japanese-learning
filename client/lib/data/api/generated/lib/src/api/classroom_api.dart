@@ -19,6 +19,7 @@ import 'package:japanese_api/src/model/leave_my_class_request.dart';
 import 'package:japanese_api/src/model/my_class.dart';
 
 class ClassroomApi {
+
   final Dio _dio;
 
   const ClassroomApi(this._dio);
@@ -37,7 +38,7 @@ class ClassroomApi {
   ///
   /// Returns a [Future] containing a [Response] with a [InvitationPreview] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<InvitationPreview>> getInvitation({
+  Future<Response<InvitationPreview>> getInvitation({ 
     required String token,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -46,18 +47,19 @@ class ClassroomApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/invitations/{token}'.replaceAll(
-      '{'
-      r'token'
-      '}',
-      token.toString(),
-    );
+    final _path = r'/invitations/{token}'.replaceAll('{' r'token' '}', token.toString());
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -75,14 +77,9 @@ class ClassroomApi {
     InvitationPreview? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<InvitationPreview, InvitationPreview>(
-              rawData,
-              'InvitationPreview',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<InvitationPreview, InvitationPreview>(rawData, 'InvitationPreview', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -106,7 +103,7 @@ class ClassroomApi {
   }
 
   /// Lớp của tôi (lộ trình lớp, bài giao, tiến độ trong lớp, dữ liệu chia sẻ)
-  ///
+  /// 
   ///
   /// Parameters:
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -118,7 +115,7 @@ class ClassroomApi {
   ///
   /// Returns a [Future] containing a [Response] with a [MyClass] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<MyClass>> getMyClass({
+  Future<Response<MyClass>> getMyClass({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -129,10 +126,16 @@ class ClassroomApi {
     final _path = r'/me/class';
     final _options = Options(
       method: r'GET',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -150,10 +153,9 @@ class ClassroomApi {
     MyClass? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<MyClass, MyClass>(rawData, 'MyClass', growable: true);
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<MyClass, MyClass>(rawData, 'MyClass', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -180,7 +182,7 @@ class ClassroomApi {
   /// Không &#x60;decision&#x60; → 200 xem trước &#x60;{class, disclosure}&#x60;. &#x60;decision&#x3D;join_class&#x60; + &#x60;confirmed:true&#x60; → tham gia. &#x60;decision&#x3D;stay_personal&#x60; → 204, không đổi gì. Sai mã/đã tắt/hết hạn/lớp lưu trữ/lớp chưa lộ trình → cùng một 404 chung; sai liên tiếp → 429 (khóa theo tài khoản).
   ///
   /// Parameters:
-  /// * [joinByCode]
+  /// * [joinByCode] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -190,7 +192,7 @@ class ClassroomApi {
   ///
   /// Returns a [Future] containing a [Response] with a [JoinByCodeResult] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<JoinByCodeResult>> joinClassByCode({
+  Future<Response<JoinByCodeResult>> joinClassByCode({ 
     required JoinByCode joinByCode,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -202,10 +204,16 @@ class ClassroomApi {
     final _path = r'/me/class/join';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -217,9 +225,13 @@ class ClassroomApi {
 
     try {
       _bodyData = jsonEncode(joinByCode);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -238,14 +250,9 @@ class ClassroomApi {
     JoinByCodeResult? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<JoinByCodeResult, JoinByCodeResult>(
-              rawData,
-              'JoinByCodeResult',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<JoinByCodeResult, JoinByCodeResult>(rawData, 'JoinByCodeResult', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -269,10 +276,10 @@ class ClassroomApi {
   }
 
   /// Chuyển sang lộ trình cá nhân (rời lớp bất cứ lúc nào)
-  ///
+  /// 
   ///
   /// Parameters:
-  /// * [leaveMyClassRequest]
+  /// * [leaveMyClassRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -282,7 +289,7 @@ class ClassroomApi {
   ///
   /// Returns a [Future]
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> leaveMyClass({
+  Future<Response<void>> leaveMyClass({ 
     required LeaveMyClassRequest leaveMyClassRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -294,10 +301,16 @@ class ClassroomApi {
     final _path = r'/me/class/leave';
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -309,9 +322,13 @@ class ClassroomApi {
 
     try {
       _bodyData = jsonEncode(leaveMyClassRequest);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -334,8 +351,8 @@ class ClassroomApi {
   /// Học viên &#x60;join_class&#x60; PHẢI kèm &#x60;confirmed:true&#x60;; &#x60;stay_personal&#x60; đóng lời mời, không tốn seat, không đổi hồ sơ. Mất seat khi chấp nhận: 409 &#x60;SEAT_UNAVAILABLE&#x60;/422 &#x60;SEAT_REASSIGN_LIMIT&#x60;, lời mời giữ &#x60;pending&#x60;.
   ///
   /// Parameters:
-  /// * [token]
-  /// * [invitationRespond]
+  /// * [token] 
+  /// * [invitationRespond] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -345,7 +362,7 @@ class ClassroomApi {
   ///
   /// Returns a [Future] containing a [Response] with a [InvitationRespondResult] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<InvitationRespondResult>> respondInvitation({
+  Future<Response<InvitationRespondResult>> respondInvitation({ 
     required String token,
     required InvitationRespond invitationRespond,
     CancelToken? cancelToken,
@@ -355,18 +372,19 @@ class ClassroomApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/invitations/{token}/respond'.replaceAll(
-      '{'
-      r'token'
-      '}',
-      token.toString(),
-    );
+    final _path = r'/invitations/{token}/respond'.replaceAll('{' r'token' '}', token.toString());
     final _options = Options(
       method: r'POST',
-      headers: <String, dynamic>{...?headers},
+      headers: <String, dynamic>{
+        ...?headers,
+      },
       extra: <String, dynamic>{
         'secure': <Map<String, String>>[
-          {'type': 'http', 'scheme': 'bearer', 'name': 'bearerAuth'},
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
         ],
         ...?extra,
       },
@@ -378,9 +396,13 @@ class ClassroomApi {
 
     try {
       _bodyData = jsonEncode(invitationRespond);
-    } catch (error, stackTrace) {
+
+    } catch(error, stackTrace) {
       throw DioException(
-        requestOptions: _options.compose(_dio.options, _path),
+         requestOptions: _options.compose(
+          _dio.options,
+          _path,
+        ),
         type: DioExceptionType.unknown,
         error: error,
         stackTrace: stackTrace,
@@ -399,14 +421,9 @@ class ClassroomApi {
     InvitationRespondResult? _responseData;
 
     try {
-      final rawData = _response.data;
-      _responseData = rawData == null
-          ? null
-          : deserialize<InvitationRespondResult, InvitationRespondResult>(
-              rawData,
-              'InvitationRespondResult',
-              growable: true,
-            );
+final rawData = _response.data;
+_responseData = rawData == null ? null : deserialize<InvitationRespondResult, InvitationRespondResult>(rawData, 'InvitationRespondResult', growable: true);
+
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -428,4 +445,5 @@ class ClassroomApi {
       extra: _response.extra,
     );
   }
+
 }

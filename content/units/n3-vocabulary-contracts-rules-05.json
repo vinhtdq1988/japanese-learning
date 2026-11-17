@@ -1,0 +1,410 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-contracts-rules",
+  "title": {
+    "vi": "Miễn trừ, tuân thủ và hợp đồng",
+    "en": "Exemption, compliance and contracts"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 1180,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "対象外",
+      "reading": "たいしょうがい",
+      "meaning": {
+        "vi": "Ngoài đối tượng áp dụng",
+        "en": "Not covered; out of scope"
+      },
+      "examples": [
+        {
+          "ja": "十八歳未満の方は、このサービスの対象外です。",
+          "reading": "じゅうはっさいみまんのかたは、このサービスのたいしょうがいです。",
+          "translation": {
+            "vi": "Người dưới 18 tuổi không thuộc đối tượng của dịch vụ này.",
+            "en": "People under eighteen are not covered by this service."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "免除",
+      "reading": "めんじょ",
+      "meaning": {
+        "vi": "Miễn (phí, nghĩa vụ)",
+        "en": "Exemption"
+      },
+      "examples": [
+        {
+          "ja": "収入が少ない人は、料金が免除されることがあります。",
+          "reading": "しゅうにゅうがすくないひとは、りょうきんがめんじょされることがあります。",
+          "translation": {
+            "vi": "Người có thu nhập thấp đôi khi được miễn phí.",
+            "en": "People with low income may be exempted from the fee."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "遵守",
+      "reading": "じゅんしゅ",
+      "meaning": {
+        "vi": "Tuân thủ",
+        "en": "Compliance; observance"
+      },
+      "examples": [
+        {
+          "ja": "会社の規則の遵守は、社員全員の義務です。",
+          "reading": "かいしゃのきそくのじゅんしゅは、しゃいんぜんいんのぎむです。",
+          "translation": {
+            "vi": "Tuân thủ nội quy công ty là nghĩa vụ của toàn thể nhân viên.",
+            "en": "Observing company rules is the duty of every employee."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "違約",
+      "reading": "いやく",
+      "meaning": {
+        "vi": "Vi phạm hợp đồng",
+        "en": "Breach of contract"
+      },
+      "examples": [
+        {
+          "ja": "違約した場合は、お金を払わなければなりません。",
+          "reading": "いやくしたばあいは、おかねをはらわなければなりません。",
+          "translation": {
+            "vi": "Nếu vi phạm hợp đồng thì phải trả tiền.",
+            "en": "If you breach the contract, you have to pay money."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "撤回",
+      "reading": "てっかい",
+      "meaning": {
+        "vi": "Rút lại; thu hồi",
+        "en": "Withdrawal; retraction"
+      },
+      "examples": [
+        {
+          "ja": "大臣は、先日の発言を撤回しました。",
+          "reading": "だいじんは、せんじつのはつげんをてっかいしました。",
+          "translation": {
+            "vi": "Bộ trưởng đã rút lại phát ngôn hôm trước.",
+            "en": "The minister retracted his remarks from the other day."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "履行",
+      "reading": "りこう",
+      "meaning": {
+        "vi": "Thực hiện (nghĩa vụ, hợp đồng)",
+        "en": "Performance; fulfilment"
+      },
+      "examples": [
+        {
+          "ja": "契約の履行が遅れて、相手に迷惑をかけました。",
+          "reading": "けいやくのりこうがおくれて、あいてにめいわくをかけました。",
+          "translation": {
+            "vi": "Việc thực hiện hợp đồng bị chậm làm phiền đối tác.",
+            "en": "The performance of the contract was delayed and caused trouble for the other party."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "約款",
+      "reading": "やっかん",
+      "meaning": {
+        "vi": "Điều khoản (hợp đồng)",
+        "en": "Terms and conditions"
+      },
+      "examples": [
+        {
+          "ja": "サービスを使う前に、約款をよく読んでください。",
+          "reading": "サービスをつかうまえに、やっかんをよくよんでください。",
+          "translation": {
+            "vi": "Hãy đọc kỹ điều khoản trước khi sử dụng dịch vụ.",
+            "en": "Please read the terms and conditions carefully before using the service."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "対象外",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 十八歳未満の方は、このサービスの（　）です。 — Nghĩa của câu: “Người dưới 18 tuổi không thuộc đối tượng của dịch vụ này.”",
+        "en": "Choose the word that fits the blank: 十八歳未満の方は、このサービスの（　）です。 — Meaning of the sentence: “People under eighteen are not covered by this service.”"
+      },
+      "payload": {
+        "choices": [
+          "履行",
+          "撤回",
+          "対象外",
+          "遵守"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「対象外」(Ngoài đối tượng áp dụng) hợp nghĩa câu này: “Người dưới 18 tuổi không thuộc đối tượng của dịch vụ này.”",
+        "en": "Correct! 「対象外」(Not covered; out of scope) fits this sentence: “People under eighteen are not covered by this service.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người dưới 18 tuổi không thuộc đối tượng của dịch vụ này.”, nên cần 「対象外」(Ngoài đối tượng áp dụng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “People under eighteen are not covered by this service.”, so it needs 「対象外」(Not covered; out of scope); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "免除",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 収入が少ない人は、料金が（　）されることがあります。 — Nghĩa của câu: “Người có thu nhập thấp đôi khi được miễn phí.”",
+        "en": "Choose the word that fits the blank: 収入が少ない人は、料金が（　）されることがあります。 — Meaning of the sentence: “People with low income may be exempted from the fee.”"
+      },
+      "payload": {
+        "choices": [
+          "違約",
+          "履行",
+          "遵守",
+          "免除"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「免除」(Miễn (phí, nghĩa vụ)) hợp nghĩa câu này: “Người có thu nhập thấp đôi khi được miễn phí.”",
+        "en": "Correct! 「免除」(Exemption) fits this sentence: “People with low income may be exempted from the fee.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Người có thu nhập thấp đôi khi được miễn phí.”, nên cần 「免除」(Miễn (phí, nghĩa vụ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “People with low income may be exempted from the fee.”, so it needs 「免除」(Exemption); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "遵守",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 会社の規則の（　）は、社員全員の義務です。 — Nghĩa của câu: “Tuân thủ nội quy công ty là nghĩa vụ của toàn thể nhân viên.”",
+        "en": "Choose the word that fits the blank: 会社の規則の（　）は、社員全員の義務です。 — Meaning of the sentence: “Observing company rules is the duty of every employee.”"
+      },
+      "payload": {
+        "choices": [
+          "遵守",
+          "撤回",
+          "違約",
+          "免除"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「遵守」(Tuân thủ) hợp nghĩa câu này: “Tuân thủ nội quy công ty là nghĩa vụ của toàn thể nhân viên.”",
+        "en": "Correct! 「遵守」(Compliance; observance) fits this sentence: “Observing company rules is the duty of every employee.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Tuân thủ nội quy công ty là nghĩa vụ của toàn thể nhân viên.”, nên cần 「遵守」(Tuân thủ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Observing company rules is the duty of every employee.”, so it needs 「遵守」(Compliance; observance); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "違約",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: （　）した場合は、お金を払わなければなりません。 — Nghĩa của câu: “Nếu vi phạm hợp đồng thì phải trả tiền.”",
+        "en": "Choose the word that fits the blank: （　）した場合は、お金を払わなければなりません。 — Meaning of the sentence: “If you breach the contract, you have to pay money.”"
+      },
+      "payload": {
+        "choices": [
+          "約款",
+          "違約",
+          "遵守",
+          "免除"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「違約」(Vi phạm hợp đồng) hợp nghĩa câu này: “Nếu vi phạm hợp đồng thì phải trả tiền.”",
+        "en": "Correct! 「違約」(Breach of contract) fits this sentence: “If you breach the contract, you have to pay money.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Nếu vi phạm hợp đồng thì phải trả tiền.”, nên cần 「違約」(Vi phạm hợp đồng); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “If you breach the contract, you have to pay money.”, so it needs 「違約」(Breach of contract); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "撤回",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 大臣は、先日の発言を（　）しました。 — Nghĩa của câu: “Bộ trưởng đã rút lại phát ngôn hôm trước.”",
+        "en": "Choose the word that fits the blank: 大臣は、先日の発言を（　）しました。 — Meaning of the sentence: “The minister retracted his remarks from the other day.”"
+      },
+      "payload": {
+        "choices": [
+          "約款",
+          "免除",
+          "撤回",
+          "違約"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「撤回」(Rút lại; thu hồi) hợp nghĩa câu này: “Bộ trưởng đã rút lại phát ngôn hôm trước.”",
+        "en": "Correct! 「撤回」(Withdrawal; retraction) fits this sentence: “The minister retracted his remarks from the other day.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Bộ trưởng đã rút lại phát ngôn hôm trước.”, nên cần 「撤回」(Rút lại; thu hồi); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The minister retracted his remarks from the other day.”, so it needs 「撤回」(Withdrawal; retraction); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "履行",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 契約の（　）が遅れて、相手に迷惑をかけました。 — Nghĩa của câu: “Việc thực hiện hợp đồng bị chậm làm phiền đối tác.”",
+        "en": "Choose the word that fits the blank: 契約の（　）が遅れて、相手に迷惑をかけました。 — Meaning of the sentence: “The performance of the contract was delayed and caused trouble for the other party.”"
+      },
+      "payload": {
+        "choices": [
+          "撤回",
+          "違約",
+          "約款",
+          "履行"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「履行」(Thực hiện (nghĩa vụ, hợp đồng)) hợp nghĩa câu này: “Việc thực hiện hợp đồng bị chậm làm phiền đối tác.”",
+        "en": "Correct! 「履行」(Performance; fulfilment) fits this sentence: “The performance of the contract was delayed and caused trouble for the other party.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Việc thực hiện hợp đồng bị chậm làm phiền đối tác.”, nên cần 「履行」(Thực hiện (nghĩa vụ, hợp đồng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The performance of the contract was delayed and caused trouble for the other party.”, so it needs 「履行」(Performance; fulfilment); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "約款",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: サービスを使う前に、（　）をよく読んでください。 — Nghĩa của câu: “Hãy đọc kỹ điều khoản trước khi sử dụng dịch vụ.”",
+        "en": "Choose the word that fits the blank: サービスを使う前に、（　）をよく読んでください。 — Meaning of the sentence: “Please read the terms and conditions carefully before using the service.”"
+      },
+      "payload": {
+        "choices": [
+          "約款",
+          "撤回",
+          "遵守",
+          "違約"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「約款」(Điều khoản (hợp đồng)) hợp nghĩa câu này: “Hãy đọc kỹ điều khoản trước khi sử dụng dịch vụ.”",
+        "en": "Correct! 「約款」(Terms and conditions) fits this sentence: “Please read the terms and conditions carefully before using the service.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Hãy đọc kỹ điều khoản trước khi sử dụng dịch vụ.”, nên cần 「約款」(Điều khoản (hợp đồng)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Please read the terms and conditions carefully before using the service.”, so it needs 「約款」(Terms and conditions); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "対象外",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 十八歳未満の方は、このサービスの「対象外」です。",
+        "en": "Choose the correct reading of the word in 「」: 十八歳未満の方は、このサービスの「対象外」です。"
+      },
+      "payload": {
+        "choices": [
+          "てっかい",
+          "めんじょ",
+          "いやく",
+          "たいしょうがい"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「対象外」 đọc là 「たいしょうがい」, nghĩa là Ngoài đối tượng áp dụng.",
+        "en": "Correct! 「対象外」 is read 「たいしょうがい」 and means Not covered; out of scope."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「対象外」 đọc là 「たいしょうがい」 (Ngoài đối tượng áp dụng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「対象外」 is read 「たいしょうがい」 (Not covered; out of scope); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "違約",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 「違約」した場合は、お金を払わなければなりません。",
+        "en": "Choose the correct reading of the word in 「」: 「違約」した場合は、お金を払わなければなりません。"
+      },
+      "payload": {
+        "choices": [
+          "いやく",
+          "めんじょ",
+          "てっかい",
+          "やっかん"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「違約」 đọc là 「いやく」, nghĩa là Vi phạm hợp đồng.",
+        "en": "Correct! 「違約」 is read 「いやく」 and means Breach of contract."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「違約」 đọc là 「いやく」 (Vi phạm hợp đồng); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「違約」 is read 「いやく」 (Breach of contract); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "約款",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: サービスを使う前に、「やっかん」をよく読んでください。",
+        "en": "Choose the correct way to write the word in 「」: サービスを使う前に、「やっかん」をよく読んでください。"
+      },
+      "payload": {
+        "choices": [
+          "約款",
+          "免除",
+          "対象外",
+          "履行"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「やっかん」 viết là 「約款」, nghĩa là Điều khoản (hợp đồng).",
+        "en": "Correct! 「やっかん」 is written 「約款」 and means Terms and conditions."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「やっかん」 viết là 「約款」 (Điều khoản (hợp đồng)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「やっかん」 is written 「約款」 (Terms and conditions); the other words are read differently."
+      }
+    }
+  ]
+}

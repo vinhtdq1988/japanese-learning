@@ -89,6 +89,25 @@ export const COMPETENCY_PREFIX = 'competency-';
  */
 export const ENCOURAGEMENT_PREFIX = 'encouragement-';
 
+/**
+ * Hồ sơ đường băng/lộ trình lớn (spec 008): tên file không có tiền tố chung nên khai báo tường minh theo `id`.
+ * Nhóm này có loader riêng (`loadRunwayProfiles`) và KHÔNG lẫn vào `loadLearnerProfiles()` để các golden hồi quy
+ * (`plans-pre-008.json`, …) và kiểm thử "đủ mọi hồ sơ bắt buộc" không lệch.
+ */
+export const RUNWAY_PROFILE_IDS = [
+  'n4-15min-jlpt-n3',
+  'n4-5min-runway',
+  'n4-10min-jlpt-n3',
+  'n3-30min-all-skills',
+  'n3-skip-n4-weak',
+  'mastered-some-units',
+  'completed-all-n3',
+  'n2-goal',
+  'n4-10min-work-goal',
+] as const;
+
+const RUNWAY_FILES: ReadonlySet<string> = new Set(RUNWAY_PROFILE_IDS.map((id) => `${id}.json`));
+
 function readProfiles(accept: (file: string) => boolean): LearnerProfileFixture[] {
   return readdirSync(DIR)
     .filter((f) => f.endsWith('.json') && accept(f))
@@ -105,7 +124,8 @@ export function loadLearnerProfiles(): LearnerProfileFixture[] {
       !f.startsWith(REWARD_PREFIX) &&
       !f.startsWith(PRACTICE_PREFIX) &&
       !f.startsWith(COMPETENCY_PREFIX) &&
-      !f.startsWith(ENCOURAGEMENT_PREFIX),
+      !f.startsWith(ENCOURAGEMENT_PREFIX) &&
+      !RUNWAY_FILES.has(f),
   );
 }
 
@@ -163,6 +183,18 @@ export function loadPracticeProfiles(): LearnerProfileFixture[] {
   return readProfilesWithPrefix(PRACTICE_PREFIX);
 }
 
+/** Đọc nhóm hồ sơ đường băng/lộ trình lớn (spec 008), sắp theo `id`. */
+export function loadRunwayProfiles(): LearnerProfileFixture[] {
+  return readProfiles((f) => RUNWAY_FILES.has(f));
+}
+
+/** Đọc một hồ sơ đường băng theo `id`. */
+export function loadRunwayProfile(id: string): LearnerProfileFixture {
+  const found = loadRunwayProfiles().find((p) => p.id === id);
+  if (!found) throw new Error(`Không có hồ sơ đường băng "${id}"`);
+  return found;
+}
+
 /** Đọc nhóm hồ sơ màu năng lực (spec 007), sắp theo `id`. */
 export function loadCompetencyProfiles(): LearnerProfileFixture[] {
   return readProfilesWithPrefix(COMPETENCY_PREFIX);
@@ -180,6 +212,7 @@ export function loadLearnerProfile(id: string): LearnerProfileFixture {
     ...loadPracticeProfiles(),
     ...loadCompetencyProfiles(),
     ...loadEncouragementProfiles(),
+    ...loadRunwayProfiles(),
   ].find((p) => p.id === id);
   if (!found) throw new Error(`Không có hồ sơ đại diện "${id}"`);
   return found;

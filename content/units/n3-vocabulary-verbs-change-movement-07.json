@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-verbs-change-movement",
+  "title": {
+    "vi": "Động từ văn viết: thành, hiện, đoán, thiếu, gánh, giao",
+    "en": "Formal verbs: consist, appear, tell, lack, bear, impose"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2770,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "成る",
+      "reading": "なる",
+      "meaning": {
+        "vi": "Gồm có; hình thành từ (văn viết)",
+        "en": "To consist of; to be made up of"
+      },
+      "examples": [
+        {
+          "ja": "十人から成る委員会が、新しい規則を決めました。",
+          "reading": "じゅうにんからなるいいんかいが、あたらしいきそくをきめました。",
+          "translation": {
+            "vi": "Ủy ban gồm mười người đã quyết định quy tắc mới.",
+            "en": "A committee made up of ten people decided on the new rules."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "現す",
+      "reading": "あらわす",
+      "meaning": {
+        "vi": "Để lộ ra; xuất hiện",
+        "en": "To show; to make appear"
+      },
+      "examples": [
+        {
+          "ja": "霧が晴れると、山がゆっくり姿を現す。",
+          "reading": "きりがはれると、やまがゆっくりすがたをあらわす。",
+          "translation": {
+            "vi": "Khi sương tan, ngọn núi từ từ hiện ra.",
+            "en": "When the fog clears, the mountain slowly shows its shape."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "占う",
+      "reading": "うらなう",
+      "meaning": {
+        "vi": "Bói toán",
+        "en": "To tell fortunes"
+      },
+      "examples": [
+        {
+          "ja": "新年に、一年の運を占うために神社へ行きました。",
+          "reading": "しんねんに、いちねんのうんをうらなうためにじんじゃへいきました。",
+          "translation": {
+            "vi": "Dịp năm mới, tôi đã đến đền để bói vận may cả năm.",
+            "en": "At New Year, I went to a shrine to have my fortune for the year told."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "欠く",
+      "reading": "かく",
+      "meaning": {
+        "vi": "Thiếu; làm hỏng (lễ nghi)",
+        "en": "To lack; to be missing"
+      },
+      "examples": [
+        {
+          "ja": "この文章は、説明を欠くので、分かりにくいです。",
+          "reading": "このぶんしょうは、せつめいをかくので、わかりにくいです。",
+          "translation": {
+            "vi": "Văn bản này thiếu phần giải thích nên khó hiểu.",
+            "en": "This text lacks explanation, so it is hard to understand."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "担う",
+      "reading": "になう",
+      "meaning": {
+        "vi": "Gánh vác; đảm nhận",
+        "en": "To bear; to shoulder (a duty)"
+      },
+      "examples": [
+        {
+          "ja": "これからの社会を担うのは、今の子どもたちです。",
+          "reading": "これからのしゃかいをになうのは、いまのこどもたちです。",
+          "translation": {
+            "vi": "Những người sẽ gánh vác xã hội tương lai chính là trẻ em hôm nay.",
+            "en": "It is today’s children who will shoulder the society of the future."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "課す",
+      "reading": "かす",
+      "meaning": {
+        "vi": "Giao (bài tập, nghĩa vụ)",
+        "en": "To impose; to assign"
+      },
+      "examples": [
+        {
+          "ja": "先生は、学生に毎週レポートを課すことにしました。",
+          "reading": "せんせいは、がくせいにまいしゅうレポートをかすことにしました。",
+          "translation": {
+            "vi": "Thầy giáo quyết định giao bài báo cáo cho sinh viên mỗi tuần.",
+            "en": "The teacher decided to assign a report to the students every week."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "成る",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 十人から（　）委員会が、新しい規則を決めました。 — Nghĩa của câu: “Ủy ban gồm mười người đã quyết định quy tắc mới.”",
+        "en": "Choose the word that fits the blank: 十人から（　）委員会が、新しい規則を決めました。 — Meaning of the sentence: “A committee made up of ten people decided on the new rules.”"
+      },
+      "payload": {
+        "choices": [
+          "成る",
+          "占う",
+          "現す",
+          "欠く"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「成る」(Gồm có; hình thành từ (văn viết)) hợp nghĩa câu này: “Ủy ban gồm mười người đã quyết định quy tắc mới.”",
+        "en": "Correct! 「成る」(To consist of; to be made up of) fits this sentence: “A committee made up of ten people decided on the new rules.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ủy ban gồm mười người đã quyết định quy tắc mới.”, nên cần 「成る」(Gồm có; hình thành từ (văn viết)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “A committee made up of ten people decided on the new rules.”, so it needs 「成る」(To consist of; to be made up of); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "現す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 霧が晴れると、山がゆっくり姿を（　）。 — Nghĩa của câu: “Khi sương tan, ngọn núi từ từ hiện ra.”",
+        "en": "Choose the word that fits the blank: 霧が晴れると、山がゆっくり姿を（　）。 — Meaning of the sentence: “When the fog clears, the mountain slowly shows its shape.”"
+      },
+      "payload": {
+        "choices": [
+          "担う",
+          "現す",
+          "欠く",
+          "課す"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「現す」(Để lộ ra; xuất hiện) hợp nghĩa câu này: “Khi sương tan, ngọn núi từ từ hiện ra.”",
+        "en": "Correct! 「現す」(To show; to make appear) fits this sentence: “When the fog clears, the mountain slowly shows its shape.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Khi sương tan, ngọn núi từ từ hiện ra.”, nên cần 「現す」(Để lộ ra; xuất hiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “When the fog clears, the mountain slowly shows its shape.”, so it needs 「現す」(To show; to make appear); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "占う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新年に、一年の運を（　）ために神社へ行きました。 — Nghĩa của câu: “Dịp năm mới, tôi đã đến đền để bói vận may cả năm.”",
+        "en": "Choose the word that fits the blank: 新年に、一年の運を（　）ために神社へ行きました。 — Meaning of the sentence: “At New Year, I went to a shrine to have my fortune for the year told.”"
+      },
+      "payload": {
+        "choices": [
+          "欠く",
+          "成る",
+          "占う",
+          "担う"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「占う」(Bói toán) hợp nghĩa câu này: “Dịp năm mới, tôi đã đến đền để bói vận may cả năm.”",
+        "en": "Correct! 「占う」(To tell fortunes) fits this sentence: “At New Year, I went to a shrine to have my fortune for the year told.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dịp năm mới, tôi đã đến đền để bói vận may cả năm.”, nên cần 「占う」(Bói toán); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At New Year, I went to a shrine to have my fortune for the year told.”, so it needs 「占う」(To tell fortunes); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "欠く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: この文章は、説明を（　）ので、分かりにくいです。 — Nghĩa của câu: “Văn bản này thiếu phần giải thích nên khó hiểu.”",
+        "en": "Choose the word that fits the blank: この文章は、説明を（　）ので、分かりにくいです。 — Meaning of the sentence: “This text lacks explanation, so it is hard to understand.”"
+      },
+      "payload": {
+        "choices": [
+          "成る",
+          "占う",
+          "課す",
+          "欠く"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「欠く」(Thiếu; làm hỏng (lễ nghi)) hợp nghĩa câu này: “Văn bản này thiếu phần giải thích nên khó hiểu.”",
+        "en": "Correct! 「欠く」(To lack; to be missing) fits this sentence: “This text lacks explanation, so it is hard to understand.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Văn bản này thiếu phần giải thích nên khó hiểu.”, nên cần 「欠く」(Thiếu; làm hỏng (lễ nghi)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “This text lacks explanation, so it is hard to understand.”, so it needs 「欠く」(To lack; to be missing); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "担う",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: これからの社会を（　）のは、今の子どもたちです。 — Nghĩa của câu: “Những người sẽ gánh vác xã hội tương lai chính là trẻ em hôm nay.”",
+        "en": "Choose the word that fits the blank: これからの社会を（　）のは、今の子どもたちです。 — Meaning of the sentence: “It is today’s children who will shoulder the society of the future.”"
+      },
+      "payload": {
+        "choices": [
+          "担う",
+          "欠く",
+          "占う",
+          "成る"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「担う」(Gánh vác; đảm nhận) hợp nghĩa câu này: “Những người sẽ gánh vác xã hội tương lai chính là trẻ em hôm nay.”",
+        "en": "Correct! 「担う」(To bear; to shoulder (a duty)) fits this sentence: “It is today’s children who will shoulder the society of the future.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Những người sẽ gánh vác xã hội tương lai chính là trẻ em hôm nay.”, nên cần 「担う」(Gánh vác; đảm nhận); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “It is today’s children who will shoulder the society of the future.”, so it needs 「担う」(To bear; to shoulder (a duty)); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "課す",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 先生は、学生に毎週レポートを（　）ことにしました。 — Nghĩa của câu: “Thầy giáo quyết định giao bài báo cáo cho sinh viên mỗi tuần.”",
+        "en": "Choose the word that fits the blank: 先生は、学生に毎週レポートを（　）ことにしました。 — Meaning of the sentence: “The teacher decided to assign a report to the students every week.”"
+      },
+      "payload": {
+        "choices": [
+          "現す",
+          "課す",
+          "欠く",
+          "担う"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「課す」(Giao (bài tập, nghĩa vụ)) hợp nghĩa câu này: “Thầy giáo quyết định giao bài báo cáo cho sinh viên mỗi tuần.”",
+        "en": "Correct! 「課す」(To impose; to assign) fits this sentence: “The teacher decided to assign a report to the students every week.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Thầy giáo quyết định giao bài báo cáo cho sinh viên mỗi tuần.”, nên cần 「課す」(Giao (bài tập, nghĩa vụ)); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “The teacher decided to assign a report to the students every week.”, so it needs 「課す」(To impose; to assign); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "成る",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 十人から「成る」委員会が、新しい規則を決めました。",
+        "en": "Choose the correct reading of the word in 「」: 十人から「成る」委員会が、新しい規則を決めました。"
+      },
+      "payload": {
+        "choices": [
+          "あらわす",
+          "なる",
+          "になう",
+          "うらなう"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「成る」 đọc là 「なる」, nghĩa là Gồm có; hình thành từ (văn viết).",
+        "en": "Correct! 「成る」 is read 「なる」 and means To consist of; to be made up of."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「成る」 đọc là 「なる」 (Gồm có; hình thành từ (văn viết)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「成る」 is read 「なる」 (To consist of; to be made up of); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "欠く",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: この文章は、説明を「欠く」ので、分かりにくいです。",
+        "en": "Choose the correct reading of the word in 「」: この文章は、説明を「欠く」ので、分かりにくいです。"
+      },
+      "payload": {
+        "choices": [
+          "うらなう",
+          "あらわす",
+          "かく",
+          "かす"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「欠く」 đọc là 「かく」, nghĩa là Thiếu; làm hỏng (lễ nghi).",
+        "en": "Correct! 「欠く」 is read 「かく」 and means To lack; to be missing."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「欠く」 đọc là 「かく」 (Thiếu; làm hỏng (lễ nghi)); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「欠く」 is read 「かく」 (To lack; to be missing); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "課す",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 先生は、学生に毎週レポートを「かす」ことにしました。",
+        "en": "Choose the correct way to write the word in 「」: 先生は、学生に毎週レポートを「かす」ことにしました。"
+      },
+      "payload": {
+        "choices": [
+          "欠く",
+          "占う",
+          "課す",
+          "成る"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かす」 viết là 「課す」, nghĩa là Giao (bài tập, nghĩa vụ).",
+        "en": "Correct! 「かす」 is written 「課す」 and means To impose; to assign."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かす」 viết là 「課す」 (Giao (bài tập, nghĩa vụ)); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かす」 is written 「課す」 (To impose; to assign); the other words are read differently."
+      }
+    }
+  ]
+}

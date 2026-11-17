@@ -1,0 +1,173 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "writing",
+  "level": "N4",
+  "tier": "core",
+  "topic": "writing-n4-health-travel",
+  "title": {
+    "vi": "Viết: Sức khỏe – du lịch (1)",
+    "en": "Writing: Health and travel (1)"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "入院",
+      "reading": "にゅういん",
+      "meaning": {
+        "vi": "Nhập viện",
+        "en": "Hospitalization"
+      }
+    },
+    {
+      "japanese": "地図",
+      "reading": "ちず",
+      "meaning": {
+        "vi": "Bản đồ",
+        "en": "Map"
+      }
+    },
+    {
+      "japanese": "工事",
+      "reading": "こうじ",
+      "meaning": {
+        "vi": "Công trình; việc thi công",
+        "en": "Construction work"
+      }
+    },
+    {
+      "japanese": "空",
+      "reading": "そら",
+      "meaning": {
+        "vi": "Bầu trời",
+        "en": "Sky"
+      }
+    },
+    {
+      "japanese": "真ん中",
+      "reading": "まんなか",
+      "meaning": {
+        "vi": "Chính giữa",
+        "en": "Middle; center"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Nhập viện”",
+        "en": "Type in Japanese: “Hospitalization”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "入院",
+          "にゅういん"
+        ],
+        "hint": "よみ: にゅういん"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Nhập viện” viết là 入院 (đọc là にゅういん).",
+        "en": "Correct! “Hospitalization” is written 入院 (read as にゅういん)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Nhập viện” viết là 入院 (đọc là にゅういん); hãy so lại từng ký tự.",
+        "en": "Not quite. “Hospitalization” is written 入院 (read as にゅういん); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bản đồ”",
+        "en": "Type in Japanese: “Map”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "地図",
+          "ちず"
+        ],
+        "hint": "よみ: ちず"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bản đồ” viết là 地図 (đọc là ちず).",
+        "en": "Correct! “Map” is written 地図 (read as ちず)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bản đồ” viết là 地図 (đọc là ちず); hãy so lại từng ký tự.",
+        "en": "Not quite. “Map” is written 地図 (read as ちず); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Công trình; việc thi công”",
+        "en": "Type in Japanese: “Construction work”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "工事",
+          "こうじ"
+        ],
+        "hint": "よみ: こうじ"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Công trình; việc thi công” viết là 工事 (đọc là こうじ).",
+        "en": "Correct! “Construction work” is written 工事 (read as こうじ)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Công trình; việc thi công” viết là 工事 (đọc là こうじ); hãy so lại từng ký tự.",
+        "en": "Not quite. “Construction work” is written 工事 (read as こうじ); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Bầu trời”",
+        "en": "Type in Japanese: “Sky”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "空",
+          "そら"
+        ],
+        "hint": "よみ: そら"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Bầu trời” viết là 空 (đọc là そら).",
+        "en": "Correct! “Sky” is written 空 (read as そら)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Bầu trời” viết là 空 (đọc là そら); hãy so lại từng ký tự.",
+        "en": "Not quite. “Sky” is written 空 (read as そら); compare it character by character."
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "vi": "Gõ bằng tiếng Nhật: “Chính giữa”",
+        "en": "Type in Japanese: “Middle; center”"
+      },
+      "payload": {
+        "accepted_answers": [
+          "真ん中",
+          "まんなか"
+        ],
+        "hint": "よみ: まんなか"
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! “Chính giữa” viết là 真ん中 (đọc là まんなか).",
+        "en": "Correct! “Middle; center” is written 真ん中 (read as まんなか)."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. “Chính giữa” viết là 真ん中 (đọc là まんなか); hãy so lại từng ký tự.",
+        "en": "Not quite. “Middle; center” is written 真ん中 (read as まんなか); compare it character by character."
+      }
+    }
+  ]
+}

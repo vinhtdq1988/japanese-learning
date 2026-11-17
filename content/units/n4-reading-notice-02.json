@@ -1,0 +1,135 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Công ty nghỉ hè",
+    "en": "Reading: Company summer holiday"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 2,
+  "estMinutes": 5,
+  "sequence": 620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "社員のみなさんへ。八月十三日から十五日まで、会社は夏休みです。その間は、電話にもメールにも答えられません。大切な用事がある人は、十二日までにわたしにれんらくしてください。十六日の朝から、また仕事を始めます。",
+      "meaning": {
+        "vi": "Gửi các nhân viên. Từ ngày 13 đến ngày 15 tháng 8, công ty nghỉ hè. Trong thời gian đó, chúng tôi không thể trả lời điện thoại cũng như email. Ai có việc quan trọng xin liên lạc với tôi trước ngày 12. Từ sáng ngày 16, chúng ta lại bắt đầu làm việc.",
+        "en": "To all employees: The company will be on summer vacation from August 13 to 15. During that time we cannot answer phone calls or emails. If you have something important, please contact me by the 12th. We will start work again on the morning of the 16th."
+      },
+      "reading": "しゃいんのみなさんへ。はちがつじゅうさんにちからじゅうごにちまで、かいしゃはなつやすみです。そのあいだは、でんわにもメールにもこたえられません。たいせつなようじがあるひとは、じゅうににちまでにわたしにれんらくしてください。じゅうろくにちのあさから、またしごとをはじめます。",
+      "explanation": {
+        "vi": "「答えられません」là dạng phủ định của khả năng (答える → 答えられる); 「～までに」chỉ hạn chót; 「れんらく」= liên lạc.",
+        "en": "「答えられません」 is the negative potential form of 答える; 「～までに」 sets a deadline; 「れんらく」 = to contact."
+      },
+      "scopeRef": "r-n4-notice-workplace"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Công ty nghỉ hè vào những ngày nào?",
+        "en": "On which days is the company on summer vacation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Ngày 13 đến ngày 15 tháng 8",
+            "en": "August 13 to 15"
+          },
+          {
+            "vi": "Ngày 12 đến ngày 16 tháng 8",
+            "en": "August 12 to 16"
+          },
+          {
+            "vi": "Cả tháng 8",
+            "en": "All of August"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「十三日から十五日まで」: Kỳ nghỉ kéo dài từ ngày 13 đến ngày 15.",
+        "en": "Correct! The text has 「十三日から十五日まで」: The vacation runs from the 13th to the 15th."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「十三日から十五日まで」: Kỳ nghỉ kéo dài từ ngày 13 đến ngày 15.",
+        "en": "Not quite. Look again at 「十三日から十五日まで」: The vacation runs from the 13th to the 15th."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Trong kỳ nghỉ, điều gì không làm được?",
+        "en": "What cannot be done during the vacation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Xin nghỉ phép",
+            "en": "Asking for leave"
+          },
+          {
+            "vi": "Trả lời điện thoại và email",
+            "en": "Answering phone calls and emails"
+          },
+          {
+            "vi": "Đến công ty lấy đồ",
+            "en": "Going to the office to pick up things"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「電話にもメールにも答えられません」: 「答えられません」nghĩa là không thể trả lời cả điện thoại lẫn email.",
+        "en": "Correct! The text has 「電話にもメールにも答えられません」: 「答えられません」 means they cannot answer either phone calls or emails."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「電話にもメールにも答えられません」: 「答えられません」nghĩa là không thể trả lời cả điện thoại lẫn email.",
+        "en": "Not quite. Look again at 「電話にもメールにも答えられません」: 「答えられません」 means they cannot answer either phone calls or emails."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_short",
+      "prompt": {
+        "vi": "Người có việc quan trọng phải làm gì?",
+        "en": "What should people with something important do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gọi điện vào ngày 14",
+            "en": "Call on the 14th"
+          },
+          {
+            "vi": "Đến công ty vào ngày 16",
+            "en": "Come to the office on the 16th"
+          },
+          {
+            "vi": "Liên lạc với người viết trước ngày 12",
+            "en": "Contact the writer by the 12th"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「十二日までにわたしにれんらくしてください」: 「までに」chỉ hạn chót: phải liên lạc với người viết trước ngày 12.",
+        "en": "Correct! The text has 「十二日までにわたしにれんらくしてください」: 「までに」 sets the deadline: contact the writer by the 12th."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「十二日までにわたしにれんらくしてください」: 「までに」chỉ hạn chót: phải liên lạc với người viết trước ngày 12.",
+        "en": "Not quite. Look again at 「十二日までにわたしにれんらくしてください」: 「までに」 sets the deadline: contact the writer by the 12th."
+      }
+    }
+  ]
+}

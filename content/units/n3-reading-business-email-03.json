@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-business-email",
+  "title": {
+    "vi": "Đọc: Email xin lỗi giao hàng chậm",
+    "en": "Reading: Email apologizing for a late delivery"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1510,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "件名：【おわび】ご注文商品の配送について\n山本様\nいつもご利用いただき、ありがとうございます。さくら商店の木下でございます。\n10月3日にご注文いただいた商品が、お約束の日までにとどかなかったとのこと、まことに申し訳ございません。\n確認したところ、そうこでの在庫の確認がおくれたため、発送が2日おくれておりました。商品は本日発送いたしましたので、10月8日までにお手元に着く予定です。\nおわびとして、次回のご注文でお使いいただける500円のクーポンをお送りいたします。今後はこのようなことがないよう、確認のしかたを見直してまいります。\n今後ともよろしくお願いいたします。",
+      "meaning": {
+        "vi": "Tiêu đề: [Xin lỗi] Về việc giao hàng đơn đặt hàng của quý khách. Kính gửi anh/chị Yamamoto. Cảm ơn quý khách đã luôn sử dụng dịch vụ. Tôi là Kinoshita ở cửa hàng Sakura. Việc sản phẩm quý khách đặt ngày 3 tháng 10 không đến đúng ngày hẹn, chúng tôi thành thật xin lỗi. Sau khi kiểm tra, do việc xác nhận hàng tồn trong kho bị chậm nên việc gửi hàng đã trễ 2 ngày. Sản phẩm đã được gửi đi trong hôm nay, dự kiến sẽ đến tay quý khách trước ngày 8 tháng 10. Để bày tỏ lời xin lỗi, chúng tôi xin gửi kèm phiếu giảm giá 500 yên dùng cho lần đặt hàng tiếp theo. Từ nay chúng tôi sẽ xem xét lại cách kiểm tra để việc như thế này không xảy ra nữa. Mong quý khách tiếp tục ủng hộ.",
+        "en": "Subject: [Apology] Regarding the delivery of your order. Dear Mr./Ms. Yamamoto, Thank you for always using our shop. This is Kinoshita from Sakura Shop. We sincerely apologize that the product you ordered on October 3 did not arrive by the promised date. When we checked, we found that the stock check at the warehouse was delayed, so shipping was two days late. The product was shipped today and is expected to reach you by October 8. As an apology, we will send you a 500-yen coupon that you can use on your next order. We will review our checking procedure so that this does not happen again. We look forward to your continued patronage."
+      },
+      "explanation": {
+        "vi": "「～たところ、…」= sau khi… thì (phát hiện ra); 「～ため」nêu lý do; 「～ないよう(に)」= để không…; 「～いたします」, 「ございます」là kính ngữ/khiêm nhường. Từ vựng: 「申し訳ございません」(もうしわけ) = xin lỗi; 「在庫」(ざいこ) = hàng tồn kho; 「そうこ」= kho; 「おくれ」= chậm trễ; 「お約束」(おやくそく) = lời hẹn; 「お願い」(おねがい) = lời nhờ.",
+        "en": "「～たところ、…」 = when I checked, I found…; 「～ため」 gives a reason; 「～ないよう(に)」 = so that… not; 「～いたします」 and 「ございます」 are humble/polite forms. Vocabulary: 「申し訳ございません」(もうしわけ) = I am very sorry; 「在庫」(ざいこ) = stock; 「そうこ」 = warehouse; 「おくれ」 = delay; 「お約束」(おやくそく) = promise; 「お願い」(おねがい) = request."
+      },
+      "scopeRef": "r-n3-email-apology-reply"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Vì sao người viết xin lỗi?",
+        "en": "Why is the writer apologizing?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Sản phẩm bị hỏng",
+            "en": "The product was damaged"
+          },
+          {
+            "vi": "Sản phẩm không đến đúng ngày hẹn",
+            "en": "The product did not arrive by the promised date"
+          },
+          {
+            "vi": "Giá sản phẩm bị tính sai",
+            "en": "The price was calculated wrongly"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「お約束の日までにとどかなかったとのこと」: 「お約束の日までに」là đến ngày đã hẹn; sản phẩm không đến kịp.",
+        "en": "Correct! The text has 「お約束の日までにとどかなかったとのこと」: 「お約束の日までに」 means by the promised date; the product did not arrive in time."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「お約束の日までにとどかなかったとのこと」: 「お約束の日までに」là đến ngày đã hẹn; sản phẩm không đến kịp.",
+        "en": "Not quite. Look again at 「お約束の日までにとどかなかったとのこと」: 「お約束の日までに」 means by the promised date; the product did not arrive in time."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nguyên nhân chậm trễ là gì?",
+        "en": "What caused the delay?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Tuyết rơi nhiều",
+            "en": "Heavy snow"
+          },
+          {
+            "vi": "Việc xác nhận hàng tồn ở kho bị chậm",
+            "en": "The stock check at the warehouse was delayed"
+          },
+          {
+            "vi": "Khách điền sai địa chỉ",
+            "en": "The customer entered the wrong address"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「そうこでの在庫の確認がおくれたため」: 「～ため」nêu nguyên nhân: việc xác nhận tồn kho ở kho bị chậm.",
+        "en": "Correct! The text has 「そうこでの在庫の確認がおくれたため」: 「～ため」 gives the cause: the stock check at the warehouse was late."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「そうこでの在庫の確認がおくれたため」: 「～ため」nêu nguyên nhân: việc xác nhận tồn kho ở kho bị chậm.",
+        "en": "Not quite. Look again at 「そうこでの在庫の確認がおくれたため」: 「～ため」 gives the cause: the stock check at the warehouse was late."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Sản phẩm dự kiến đến khi nào?",
+        "en": "When is the product expected to arrive?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Trước ngày 3 tháng 10",
+            "en": "Before October 3"
+          },
+          {
+            "vi": "Ngày 5 tháng 10",
+            "en": "On October 5"
+          },
+          {
+            "vi": "Trước ngày 8 tháng 10",
+            "en": "By October 8"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「10月8日までにお手元に着く予定です」: 「～までに」chỉ hạn chót: dự kiến đến trước ngày 8 tháng 10.",
+        "en": "Correct! The text has 「10月8日までにお手元に着く予定です」: 「～までに」 marks a deadline: expected by October 8."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「10月8日までにお手元に着く予定です」: 「～までに」chỉ hạn chót: dự kiến đến trước ngày 8 tháng 10.",
+        "en": "Not quite. Look again at 「10月8日までにお手元に着く予定です」: 「～までに」 marks a deadline: expected by October 8."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Cửa hàng làm gì để bày tỏ lời xin lỗi?",
+        "en": "What does the shop do as an apology?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Hoàn tiền toàn bộ",
+            "en": "Refund the full amount"
+          },
+          {
+            "vi": "Tặng phiếu giảm giá 500 yên cho lần đặt sau",
+            "en": "Send a 500-yen coupon for the next order"
+          },
+          {
+            "vi": "Miễn phí vận chuyển mãi mãi",
+            "en": "Offer free shipping forever"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「おわびとして、次回のご注文でお使いいただける500円のクーポンをお送りいたします」: 「おわびとして」là như một lời xin lỗi; cửa hàng gửi phiếu giảm giá 500 yên.",
+        "en": "Correct! The text has 「おわびとして、次回のご注文でお使いいただける500円のクーポンをお送りいたします」: 「おわびとして」 means as an apology; the shop sends a 500-yen coupon."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「おわびとして、次回のご注文でお使いいただける500円のクーポンをお送りいたします」: 「おわびとして」là như một lời xin lỗi; cửa hàng gửi phiếu giảm giá 500 yên.",
+        "en": "Not quite. Look again at 「おわびとして、次回のご注文でお使いいただける500円のクーポンをお送りいたします」: 「おわびとして」 means as an apology; the shop sends a 500-yen coupon."
+      }
+    }
+  ]
+}

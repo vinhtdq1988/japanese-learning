@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'admin_user_page.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,27 +19,50 @@ part 'admin_user_page.g.dart';
 )
 class AdminUserPage {
   /// Returns a new [AdminUserPage] instance.
-  AdminUserPage({this.items, this.nextCursor});
+  AdminUserPage({
 
-  @JsonKey(name: r'items', required: false, includeIfNull: false)
+     this.items,
+
+     this.nextCursor,
+  });
+
+  @JsonKey(
+    
+    name: r'items',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final List<AdminUserPageItemsInner>? items;
 
-  @JsonKey(name: r'nextCursor', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'nextCursor',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? nextCursor;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is AdminUserPage &&
-          other.items == items &&
-          other.nextCursor == nextCursor;
 
-  @override
-  int get hashCode =>
-      items.hashCode + (nextCursor == null ? 0 : nextCursor.hashCode);
 
-  factory AdminUserPage.fromJson(Map<String, dynamic> json) =>
-      _$AdminUserPageFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is AdminUserPage &&
+      other.items == items &&
+      other.nextCursor == nextCursor;
+
+    @override
+    int get hashCode =>
+        items.hashCode +
+        (nextCursor == null ? 0 : nextCursor.hashCode);
+
+  factory AdminUserPage.fromJson(Map<String, dynamic> json) => _$AdminUserPageFromJson(json);
 
   Map<String, dynamic> toJson() => _$AdminUserPageToJson(this);
 
@@ -46,4 +70,6 @@ class AdminUserPage {
   String toString() {
     return toJson().toString();
   }
+
 }
+

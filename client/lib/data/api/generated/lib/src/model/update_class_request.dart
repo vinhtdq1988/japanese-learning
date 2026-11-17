@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'update_class_request.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -17,35 +18,68 @@ part 'update_class_request.g.dart';
 )
 class UpdateClassRequest {
   /// Returns a new [UpdateClassRequest] instance.
-  UpdateClassRequest({this.name, this.description, this.absenceThresholdDays});
+  UpdateClassRequest({
 
-  @JsonKey(name: r'name', required: false, includeIfNull: false)
+     this.name,
+
+     this.description,
+
+     this.absenceThresholdDays,
+  });
+
+  @JsonKey(
+    
+    name: r'name',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? name;
 
-  @JsonKey(name: r'description', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'description',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final String? description;
 
-  // minimum: 1
-  // maximum: 14
-  @JsonKey(name: r'absenceThresholdDays', required: false, includeIfNull: false)
+
+
+          // minimum: 1
+          // maximum: 14
+  @JsonKey(
+    
+    name: r'absenceThresholdDays',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final int? absenceThresholdDays;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is UpdateClassRequest &&
-          other.name == name &&
-          other.description == description &&
-          other.absenceThresholdDays == absenceThresholdDays;
 
-  @override
-  int get hashCode =>
-      name.hashCode +
-      (description == null ? 0 : description.hashCode) +
-      absenceThresholdDays.hashCode;
 
-  factory UpdateClassRequest.fromJson(Map<String, dynamic> json) =>
-      _$UpdateClassRequestFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is UpdateClassRequest &&
+      other.name == name &&
+      other.description == description &&
+      other.absenceThresholdDays == absenceThresholdDays;
+
+    @override
+    int get hashCode =>
+        name.hashCode +
+        (description == null ? 0 : description.hashCode) +
+        absenceThresholdDays.hashCode;
+
+  factory UpdateClassRequest.fromJson(Map<String, dynamic> json) => _$UpdateClassRequestFromJson(json);
 
   Map<String, dynamic> toJson() => _$UpdateClassRequestToJson(this);
 
@@ -53,4 +87,6 @@ class UpdateClassRequest {
   String toString() {
     return toJson().toString();
   }
+
 }
+

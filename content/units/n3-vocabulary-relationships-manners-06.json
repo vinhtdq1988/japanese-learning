@@ -1,0 +1,365 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "vocabulary",
+  "level": "N3",
+  "tier": "core",
+  "topic": "vocab-n3-relationships-manners",
+  "title": {
+    "vi": "Than thở, bi quan, quan hệ và gia thế",
+    "en": "Lamenting, pessimism, relationships and family lines"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 5,
+  "sequence": 2380,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "嘆く",
+      "reading": "なげく",
+      "meaning": {
+        "vi": "Than thở; than vãn",
+        "en": "To lament; to grieve"
+      },
+      "examples": [
+        {
+          "ja": "彼は、自分の失敗を嘆くばかりでした。",
+          "reading": "かれは、じぶんのしっぱいをなげくばかりでした。",
+          "translation": {
+            "vi": "Anh ấy chỉ biết than thở về thất bại của mình.",
+            "en": "He did nothing but lament his own failure."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "悲観",
+      "reading": "ひかん",
+      "meaning": {
+        "vi": "Bi quan",
+        "en": "Pessimism"
+      },
+      "examples": [
+        {
+          "ja": "試験に落ちたからといって、悲観する必要はありません。",
+          "reading": "しけんにおちたからといって、ひかんするひつようはありません。",
+          "translation": {
+            "vi": "Dù thi trượt cũng không cần phải bi quan.",
+            "en": "Even if you failed the exam, there is no need to be pessimistic."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "人間関係",
+      "reading": "にんげんかんけい",
+      "meaning": {
+        "vi": "Quan hệ giữa người với người",
+        "en": "Human relationships"
+      },
+      "examples": [
+        {
+          "ja": "新しい職場では、人間関係に悩むこともあります。",
+          "reading": "あたらしいしょくばでは、にんげんかんけいになやむこともあります。",
+          "translation": {
+            "vi": "Ở nơi làm việc mới, đôi khi cũng khổ tâm vì các mối quan hệ.",
+            "en": "At a new workplace, you sometimes worry about relationships with people."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "親切心",
+      "reading": "しんせつしん",
+      "meaning": {
+        "vi": "Lòng tốt; tấm lòng thân thiện",
+        "en": "Kindness; kindly feeling"
+      },
+      "examples": [
+        {
+          "ja": "それは、親切心から出た言葉でした。",
+          "reading": "それは、しんせつしんからでたことばでした。",
+          "translation": {
+            "vi": "Đó là lời nói xuất phát từ lòng tốt.",
+            "en": "Those words came out of kindness."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "来客",
+      "reading": "らいきゃく",
+      "meaning": {
+        "vi": "Khách đến thăm",
+        "en": "Visitor; guest"
+      },
+      "examples": [
+        {
+          "ja": "午後は、来客の予定があります。",
+          "reading": "ごごは、らいきゃくのよていがあります。",
+          "translation": {
+            "vi": "Buổi chiều tôi có lịch tiếp khách.",
+            "en": "I have a visitor scheduled for the afternoon."
+          }
+        }
+      ]
+    },
+    {
+      "japanese": "家系",
+      "reading": "かけい",
+      "meaning": {
+        "vi": "Dòng họ; gia hệ",
+        "en": "Family line; lineage"
+      },
+      "examples": [
+        {
+          "ja": "私の家系には、医者が多いです。",
+          "reading": "わたしのかけいには、いしゃがおおいです。",
+          "translation": {
+            "vi": "Dòng họ nhà tôi có nhiều bác sĩ.",
+            "en": "There are many doctors in my family line."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "item": "嘆く",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 彼は、自分の失敗を（　）ばかりでした。 — Nghĩa của câu: “Anh ấy chỉ biết than thở về thất bại của mình.”",
+        "en": "Choose the word that fits the blank: 彼は、自分の失敗を（　）ばかりでした。 — Meaning of the sentence: “He did nothing but lament his own failure.”"
+      },
+      "payload": {
+        "choices": [
+          "嘆く",
+          "悲観",
+          "親切心",
+          "家系"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「嘆く」(Than thở; than vãn) hợp nghĩa câu này: “Anh ấy chỉ biết than thở về thất bại của mình.”",
+        "en": "Correct! 「嘆く」(To lament; to grieve) fits this sentence: “He did nothing but lament his own failure.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Anh ấy chỉ biết than thở về thất bại của mình.”, nên cần 「嘆く」(Than thở; than vãn); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “He did nothing but lament his own failure.”, so it needs 「嘆く」(To lament; to grieve); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "悲観",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 試験に落ちたからといって、（　）する必要はありません。 — Nghĩa của câu: “Dù thi trượt cũng không cần phải bi quan.”",
+        "en": "Choose the word that fits the blank: 試験に落ちたからといって、（　）する必要はありません。 — Meaning of the sentence: “Even if you failed the exam, there is no need to be pessimistic.”"
+      },
+      "payload": {
+        "choices": [
+          "家系",
+          "悲観",
+          "嘆く",
+          "人間関係"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「悲観」(Bi quan) hợp nghĩa câu này: “Dù thi trượt cũng không cần phải bi quan.”",
+        "en": "Correct! 「悲観」(Pessimism) fits this sentence: “Even if you failed the exam, there is no need to be pessimistic.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dù thi trượt cũng không cần phải bi quan.”, nên cần 「悲観」(Bi quan); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Even if you failed the exam, there is no need to be pessimistic.”, so it needs 「悲観」(Pessimism); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "人間関係",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 新しい職場では、（　）に悩むこともあります。 — Nghĩa của câu: “Ở nơi làm việc mới, đôi khi cũng khổ tâm vì các mối quan hệ.”",
+        "en": "Choose the word that fits the blank: 新しい職場では、（　）に悩むこともあります。 — Meaning of the sentence: “At a new workplace, you sometimes worry about relationships with people.”"
+      },
+      "payload": {
+        "choices": [
+          "嘆く",
+          "来客",
+          "人間関係",
+          "家系"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「人間関係」(Quan hệ giữa người với người) hợp nghĩa câu này: “Ở nơi làm việc mới, đôi khi cũng khổ tâm vì các mối quan hệ.”",
+        "en": "Correct! 「人間関係」(Human relationships) fits this sentence: “At a new workplace, you sometimes worry about relationships with people.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Ở nơi làm việc mới, đôi khi cũng khổ tâm vì các mối quan hệ.”, nên cần 「人間関係」(Quan hệ giữa người với người); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “At a new workplace, you sometimes worry about relationships with people.”, so it needs 「人間関係」(Human relationships); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "親切心",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: それは、（　）から出た言葉でした。 — Nghĩa của câu: “Đó là lời nói xuất phát từ lòng tốt.”",
+        "en": "Choose the word that fits the blank: それは、（　）から出た言葉でした。 — Meaning of the sentence: “Those words came out of kindness.”"
+      },
+      "payload": {
+        "choices": [
+          "悲観",
+          "嘆く",
+          "人間関係",
+          "親切心"
+        ],
+        "correct_index": 3
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親切心」(Lòng tốt; tấm lòng thân thiện) hợp nghĩa câu này: “Đó là lời nói xuất phát từ lòng tốt.”",
+        "en": "Correct! 「親切心」(Kindness; kindly feeling) fits this sentence: “Those words came out of kindness.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Đó là lời nói xuất phát từ lòng tốt.”, nên cần 「親切心」(Lòng tốt; tấm lòng thân thiện); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “Those words came out of kindness.”, so it needs 「親切心」(Kindness; kindly feeling); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "来客",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 午後は、（　）の予定があります。 — Nghĩa của câu: “Buổi chiều tôi có lịch tiếp khách.”",
+        "en": "Choose the word that fits the blank: 午後は、（　）の予定があります。 — Meaning of the sentence: “I have a visitor scheduled for the afternoon.”"
+      },
+      "payload": {
+        "choices": [
+          "来客",
+          "親切心",
+          "人間関係",
+          "悲観"
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「来客」(Khách đến thăm) hợp nghĩa câu này: “Buổi chiều tôi có lịch tiếp khách.”",
+        "en": "Correct! 「来客」(Visitor; guest) fits this sentence: “I have a visitor scheduled for the afternoon.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Buổi chiều tôi có lịch tiếp khách.”, nên cần 「来客」(Khách đến thăm); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “I have a visitor scheduled for the afternoon.”, so it needs 「来客」(Visitor; guest); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "家系",
+      "format": "context_fill",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn từ thích hợp điền vào chỗ trống: 私の（　）には、医者が多いです。 — Nghĩa của câu: “Dòng họ nhà tôi có nhiều bác sĩ.”",
+        "en": "Choose the word that fits the blank: 私の（　）には、医者が多いです。 — Meaning of the sentence: “There are many doctors in my family line.”"
+      },
+      "payload": {
+        "choices": [
+          "親切心",
+          "家系",
+          "悲観",
+          "人間関係"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「家系」(Dòng họ; gia hệ) hợp nghĩa câu này: “Dòng họ nhà tôi có nhiều bác sĩ.”",
+        "en": "Correct! 「家系」(Family line; lineage) fits this sentence: “There are many doctors in my family line.”"
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Câu này nghĩa là “Dòng họ nhà tôi có nhiều bác sĩ.”, nên cần 「家系」(Dòng họ; gia hệ); các từ còn lại không hợp ngữ cảnh.",
+        "en": "Not quite. The sentence means “There are many doctors in my family line.”, so it needs 「家系」(Family line; lineage); the other words do not fit the context."
+      }
+    },
+    {
+      "item": "嘆く",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: 彼は、自分の失敗を「嘆く」ばかりでした。",
+        "en": "Choose the correct reading of the word in 「」: 彼は、自分の失敗を「嘆く」ばかりでした。"
+      },
+      "payload": {
+        "choices": [
+          "かけい",
+          "なげく",
+          "しんせつしん",
+          "にんげんかんけい"
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「嘆く」 đọc là 「なげく」, nghĩa là Than thở; than vãn.",
+        "en": "Correct! 「嘆く」 is read 「なげく」 and means To lament; to grieve."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「嘆く」 đọc là 「なげく」 (Than thở; than vãn); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「嘆く」 is read 「なげく」 (To lament; to grieve); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "親切心",
+      "format": "kanji_reading",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách đọc đúng của từ trong 「」: それは、「親切心」から出た言葉でした。",
+        "en": "Choose the correct reading of the word in 「」: それは、「親切心」から出た言葉でした。"
+      },
+      "payload": {
+        "choices": [
+          "ひかん",
+          "にんげんかんけい",
+          "しんせつしん",
+          "なげく"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「親切心」 đọc là 「しんせつしん」, nghĩa là Lòng tốt; tấm lòng thân thiện.",
+        "en": "Correct! 「親切心」 is read 「しんせつしん」 and means Kindness; kindly feeling."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「親切心」 đọc là 「しんせつしん」 (Lòng tốt; tấm lòng thân thiện); các cách đọc còn lại là của từ khác trong bài.",
+        "en": "Not quite. 「親切心」 is read 「しんせつしん」 (Kindness; kindly feeling); the other readings belong to different words in this lesson."
+      }
+    },
+    {
+      "item": "家系",
+      "format": "orthography",
+      "type": "multiple_choice",
+      "prompt": {
+        "vi": "Chọn cách viết đúng của từ trong 「」: 私の「かけい」には、医者が多いです。",
+        "en": "Choose the correct way to write the word in 「」: 私の「かけい」には、医者が多いです。"
+      },
+      "payload": {
+        "choices": [
+          "来客",
+          "親切心",
+          "家系",
+          "人間関係"
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Chính xác! 「かけい」 viết là 「家系」, nghĩa là Dòng họ; gia hệ.",
+        "en": "Correct! 「かけい」 is written 「家系」 and means Family line; lineage."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. 「かけい」 viết là 「家系」 (Dòng họ; gia hệ); các chữ còn lại đọc khác.",
+        "en": "Not quite. 「かけい」 is written 「家系」 (Family line; lineage); the other words are read differently."
+      }
+    }
+  ]
+}

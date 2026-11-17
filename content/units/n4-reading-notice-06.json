@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-work-life",
+  "title": {
+    "vi": "Đọc: Công trình điện và thang máy ngừng chạy",
+    "en": "Reading: Electrical work and the elevator"
+  },
+  "goalTags": [
+    "jlpt",
+    "work"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1710,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "社員のみなさんへ。来週の水曜日は、ビルの電気の工事があります。工事は朝八時から夕方五時までです。その間、エレベーターが使えません。三階から上で仕事をする人は、かいだんを使ってください。大きいにもつは、前の日の火曜日の夕方までに、一階に運んでおいてください。工事のあいだ、コピーもできません。コピーをする人は、火曜日までにしておいてください。",
+      "meaning": {
+        "vi": "Gửi các nhân viên. Thứ Tư tuần sau có công trình điện của tòa nhà. Công trình từ 8 giờ sáng đến 5 giờ chiều. Trong thời gian đó, thang máy không dùng được. Ai làm việc từ tầng 3 trở lên xin hãy đi cầu thang bộ. Hành lý lớn xin hãy chuyển xuống tầng 1 trước chiều thứ Ba, tức là ngày hôm trước. Trong lúc thi công, cũng không thể photocopy. Ai cần photocopy xin hãy làm xong trước thứ Ba.",
+        "en": "To all employees: Next Wednesday there will be electrical work in the building. The work runs from 8 a.m. to 5 p.m. During that time the elevator cannot be used. If you work on the third floor or above, please use the stairs. Please carry large luggage down to the first floor by the evening of Tuesday, the day before. Copying will also be unavailable during the work. If you need to make copies, please do so by Tuesday."
+      },
+      "reading": "しゃいんのみなさんへ。らいしゅうのすいようびは、ビルのでんきのこうじがあります。こうじはあさはちじからゆうがたごじまでです。そのあいだ、エレベーターがつかえません。さんがいからうえでしごとをするひとは、かいだんをつかってください。おおきいにもつは、まえのひのかようびのゆうがたまでに、いっかいにはこんでおいてください。こうじのあいだ、コピーもできません。コピーをするひとは、かようびまでにしておいてください。",
+      "explanation": {
+        "vi": "「～ておく」= làm sẵn (運んでおいてください); 「三階から上」= từ tầng 3 trở lên; 「前の日」= ngày hôm trước.",
+        "en": "「～ておく」 = do in advance (運んでおいてください); 「三階から上」 = the third floor and above; 「前の日」 = the day before."
+      },
+      "scopeRef": "r-n4-notice-workplace"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Công trình điện diễn ra vào lúc nào?",
+        "en": "When does the electrical work take place?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Thứ Ba tuần sau, từ 8 giờ sáng đến 5 giờ chiều",
+            "en": "Next Tuesday, 8 a.m. to 5 p.m."
+          },
+          {
+            "vi": "Thứ Tư tuần sau, từ 8 giờ sáng đến 5 giờ chiều",
+            "en": "Next Wednesday, 8 a.m. to 5 p.m."
+          },
+          {
+            "vi": "Thứ Tư tuần sau, từ 5 giờ chiều",
+            "en": "Next Wednesday, from 5 p.m."
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「来週の水曜日は、ビルの電気の工事があります」: 水曜日 là thứ Tư; công trình từ 朝八時 đến 夕方五時.",
+        "en": "Correct! The text has 「来週の水曜日は、ビルの電気の工事があります」: 水曜日 is Wednesday; the work runs from 朝八時 to 夕方五時."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「来週の水曜日は、ビルの電気の工事があります」: 水曜日 là thứ Tư; công trình từ 朝八時 đến 夕方五時.",
+        "en": "Not quite. Look again at 「来週の水曜日は、ビルの電気の工事があります」: 水曜日 is Wednesday; the work runs from 朝八時 to 夕方五時."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người làm việc ở tầng 4 phải lên bằng cách nào?",
+        "en": "How should someone working on the fourth floor go up?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Bằng thang máy",
+            "en": "By elevator"
+          },
+          {
+            "vi": "Bằng cầu thang bộ",
+            "en": "By the stairs"
+          },
+          {
+            "vi": "Ở nhà làm việc",
+            "en": "Work from home"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「かいだんを使ってください」: Thang máy không dùng được, nên người làm ở tầng 3 trở lên phải đi cầu thang bộ.",
+        "en": "Correct! The text has 「かいだんを使ってください」: The elevator is out of service, so people on the third floor or above must use the stairs."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「かいだんを使ってください」: Thang máy không dùng được, nên người làm ở tầng 3 trở lên phải đi cầu thang bộ.",
+        "en": "Not quite. Look again at 「かいだんを使ってください」: The elevator is out of service, so people on the third floor or above must use the stairs."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Hành lý lớn phải làm gì và khi nào?",
+        "en": "What must be done with large luggage, and by when?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Chuyển xuống tầng 1 trước chiều thứ Ba",
+            "en": "Carry it down to the first floor by Tuesday evening"
+          },
+          {
+            "vi": "Chuyển lên tầng 3 vào sáng thứ Tư",
+            "en": "Carry it up to the third floor on Wednesday morning"
+          },
+          {
+            "vi": "Để nguyên ở chỗ cũ",
+            "en": "Leave it where it is"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「火曜日の夕方までに、一階に運んでおいてください」: 「～までに」chỉ hạn chót là chiều thứ Ba; chuyển sẵn xuống tầng 1.",
+        "en": "Correct! The text has 「火曜日の夕方までに、一階に運んでおいてください」: 「～までに」 gives the deadline of Tuesday evening; carry it to the first floor in advance."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「火曜日の夕方までに、一階に運んでおいてください」: 「～までに」chỉ hạn chót là chiều thứ Ba; chuyển sẵn xuống tầng 1.",
+        "en": "Not quite. Look again at 「火曜日の夕方までに、一階に運んでおいてください」: 「～までに」 gives the deadline of Tuesday evening; carry it to the first floor in advance."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Người cần photocopy nên làm thế nào?",
+        "en": "What should people who need copies do?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Làm xong trước thứ Ba",
+            "en": "Finish copying by Tuesday"
+          },
+          {
+            "vi": "Làm vào thứ Tư buổi chiều",
+            "en": "Copy on Wednesday afternoon"
+          },
+          {
+            "vi": "Nhờ công ty khác làm",
+            "en": "Ask another company to do it"
+          }
+        ],
+        "correct_index": 0
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「コピーをする人は、火曜日までにしておいてください」: Thứ Tư không thể photocopy, nên phải làm trước thứ Ba.",
+        "en": "Correct! The text has 「コピーをする人は、火曜日までにしておいてください」: Copying is unavailable on Wednesday, so it must be done by Tuesday."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「コピーをする人は、火曜日までにしておいてください」: Thứ Tư không thể photocopy, nên phải làm trước thứ Ba.",
+        "en": "Not quite. Look again at 「コピーをする人は、火曜日までにしておいてください」: Copying is unavailable on Wednesday, so it must be done by Tuesday."
+      }
+    }
+  ]
+}

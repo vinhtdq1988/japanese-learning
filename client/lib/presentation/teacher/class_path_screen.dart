@@ -298,7 +298,9 @@ class _ClassPathScreenState extends ConsumerState<ClassPathScreen> {
     return <Widget>[
       if (saved.scopeNotice != null) ...<Widget>[
         const SizedBox(height: 12),
-        ScopeNoticeBanner(notice: saved.scopeNotice!),
+        ScopeNoticeBanner(
+          notices: scopeNoticeCodes(scopeNotice: saved.scopeNotice),
+        ),
       ],
       for (final warning in saved.warnings) ...<Widget>[
         const SizedBox(height: 12),

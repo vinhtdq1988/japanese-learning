@@ -182,7 +182,9 @@ class _TodayContentState extends ConsumerState<_TodayContent> {
           ),
           if (widget.scopeNotice != null) ...<Widget>[
             const SizedBox(height: 12),
-            ScopeNoticeBanner(notice: widget.scopeNotice!),
+            ScopeNoticeBanner(
+              notices: scopeNoticeCodes(scopeNotice: widget.scopeNotice),
+            ),
           ],
           const SizedBox(height: 16),
           if (dayCompleted) ...<Widget>[

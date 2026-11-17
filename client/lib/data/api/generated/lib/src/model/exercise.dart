@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'exercise.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -19,54 +20,99 @@ part 'exercise.g.dart';
 class Exercise {
   /// Returns a new [Exercise] instance.
   Exercise({
-    required this.id,
 
-    required this.type,
+    required  this.id,
 
-    this.facet,
+    required  this.type,
 
-    required this.prompt,
+     this.facet,
 
-    required this.payload,
+    required  this.prompt,
+
+    required  this.payload,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'type', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'type',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ExerciseTypeEnum type;
 
-  @JsonKey(name: r'facet', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'facet',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ReviewFacet? facet;
 
-  /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
-  @JsonKey(name: r'prompt', required: true, includeIfNull: false)
+
+
+      /// Văn bản đã được bản địa hóa theo ngôn ngữ yêu cầu
+  @JsonKey(
+    
+    name: r'prompt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String prompt;
 
-  /// Dạng theo `type`: `multiple_choice` → `choices[]`; `matching` → `left[]` và `right[]` (vế phải đã xáo; trả lời là danh sách cặp [vế trái, vế phải]); `fill_blank` → `hint` (tùy chọn). KHÔNG chứa đáp án trong luồng người học.
-  @JsonKey(name: r'payload', required: true, includeIfNull: false)
+
+
+      /// Dạng theo `type`: `multiple_choice` → `choices[]`; `matching` → `left[]` và `right[]` (vế phải đã xáo; trả lời là danh sách cặp [vế trái, vế phải]); `fill_blank` → `hint` (tùy chọn). KHÔNG chứa đáp án trong luồng người học.
+  @JsonKey(
+    
+    name: r'payload',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Object payload;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Exercise &&
-          other.id == id &&
-          other.type == type &&
-          other.facet == facet &&
-          other.prompt == prompt &&
-          other.payload == payload;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      type.hashCode +
-      facet.hashCode +
-      prompt.hashCode +
-      payload.hashCode;
 
-  factory Exercise.fromJson(Map<String, dynamic> json) =>
-      _$ExerciseFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is Exercise &&
+      other.id == id &&
+      other.type == type &&
+      other.facet == facet &&
+      other.prompt == prompt &&
+      other.payload == payload;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        type.hashCode +
+        facet.hashCode +
+        prompt.hashCode +
+        payload.hashCode;
+
+  factory Exercise.fromJson(Map<String, dynamic> json) => _$ExerciseFromJson(json);
 
   Map<String, dynamic> toJson() => _$ExerciseToJson(this);
 
@@ -74,20 +120,23 @@ class Exercise {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ExerciseTypeEnum {
-  @JsonValue(r'multiple_choice')
-  multipleChoice(r'multiple_choice'),
-  @JsonValue(r'matching')
-  matching(r'matching'),
-  @JsonValue(r'fill_blank')
-  fillBlank(r'fill_blank');
+@JsonValue(r'multiple_choice')
+multipleChoice(r'multiple_choice'),
+@JsonValue(r'matching')
+matching(r'matching'),
+@JsonValue(r'fill_blank')
+fillBlank(r'fill_blank');
 
-  const ExerciseTypeEnum(this.value);
+const ExerciseTypeEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+

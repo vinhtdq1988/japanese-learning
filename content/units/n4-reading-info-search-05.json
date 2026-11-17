@@ -1,0 +1,168 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N4",
+  "tier": "core",
+  "topic": "reading-n4-shopping",
+  "title": {
+    "vi": "Đọc: Thực đơn quán cà phê",
+    "en": "Reading: Café menu"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 3,
+  "estMinutes": 10,
+  "sequence": 1620,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【カフェ「さくら」メニュー】\nランチ（午前11時～午後2時）\nAセット　カレーライス　サラダつき　900円\nBセット　スパゲッティ　スープつき　850円\nCセット　サンドイッチ　飲み物つき　750円\n※ランチの飲み物（コーヒー、こうちゃ、ジュース）は、50円で大きいサイズにできます。\nデザート　ケーキ　400円　アイスクリーム　300円\nランチといっしょにデザートをたのむと、100円やすくなります。\n午後2時から5時は、ランチはありません。",
+      "meaning": {
+        "vi": "[Thực đơn quán cà phê “Sakura”] Bữa trưa (11 giờ sáng đến 2 giờ chiều). Set A: cơm cà ri kèm salad, 900 yên. Set B: mì spaghetti kèm súp, 850 yên. Set C: bánh sandwich kèm đồ uống, 750 yên. * Đồ uống của bữa trưa (cà phê, trà đen, nước ép) có thể đổi sang cỡ lớn với 50 yên. Tráng miệng: bánh ngọt 400 yên, kem 300 yên. Nếu gọi tráng miệng cùng bữa trưa sẽ được giảm 100 yên. Từ 2 giờ đến 5 giờ chiều không có bữa trưa.",
+        "en": "[Café “Sakura” menu] Lunch (11 a.m. to 2 p.m.). Set A: curry rice with salad, 900 yen. Set B: spaghetti with soup, 850 yen. Set C: sandwich with a drink, 750 yen. * The lunch drink (coffee, black tea or juice) can be upgraded to a large size for 50 yen. Desserts: cake 400 yen, ice cream 300 yen. If you order a dessert together with lunch, it is 100 yen cheaper. Lunch is not available from 2 p.m. to 5 p.m."
+      },
+      "reading": "カフェ「さくら」メニュー\nランチ（ごぜんじゅういちじ～ごごにじ）\nエーセット　カレーライス　サラダつき　きゅうひゃくえん\nビーセット　スパゲッティ　スープつき　はっぴゃくごじゅうえん\nシーセット　サンドイッチ　のみものつき　ななひゃくごじゅうえん\nランチののみもの（コーヒー、こうちゃ、ジュース）は、ごじゅうえんでおおきいサイズにできます。\nデザート　ケーキ　よんひゃくえん　アイスクリーム　さんびゃくえん\nランチといっしょにデザートをたのむと、ひゃくえんやすくなります。\nごごにじからごじは、ランチはありません。",
+      "explanation": {
+        "vi": "「～つき」= kèm theo (サラダつき); 「～と、…」= nếu… thì…; 「たのむ」= gọi (món); 「やすくなります」= trở nên rẻ hơn; 「こうちゃ」= trà đen.",
+        "en": "「～つき」 = comes with (サラダつき); 「～と、…」 = if…, then…; 「たのむ」 = to order; 「やすくなります」 = becomes cheaper; 「こうちゃ」 = black tea."
+      },
+      "scopeRef": "r-n4-info-menu-guide"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Lúc 3 giờ chiều có thể gọi bữa trưa không?",
+        "en": "Can you order lunch at 3 p.m.?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Có, nhưng chỉ Set C",
+            "en": "Yes, but only Set C"
+          },
+          {
+            "vi": "Không, vì không có bữa trưa từ 2 giờ đến 5 giờ",
+            "en": "No, there is no lunch from 2 to 5 p.m."
+          },
+          {
+            "vi": "Có, tất cả các set",
+            "en": "Yes, all sets"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「午後2時から5時は、ランチはありません」: Từ 2 giờ đến 5 giờ chiều quán không phục vụ bữa trưa.",
+        "en": "Correct! The text has 「午後2時から5時は、ランチはありません」: The café does not serve lunch from 2 to 5 p.m."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「午後2時から5時は、ランチはありません」: Từ 2 giờ đến 5 giờ chiều quán không phục vụ bữa trưa.",
+        "en": "Not quite. Look again at 「午後2時から5時は、ランチはありません」: The café does not serve lunch from 2 to 5 p.m."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Set nào có kèm đồ uống?",
+        "en": "Which set comes with a drink?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Set A",
+            "en": "Set A"
+          },
+          {
+            "vi": "Set B",
+            "en": "Set B"
+          },
+          {
+            "vi": "Set C",
+            "en": "Set C"
+          }
+        ],
+        "correct_index": 2
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「Cセット　サンドイッチ　飲み物つき　750円」: 「つき」nghĩa là kèm theo; chỉ Set C kèm đồ uống.",
+        "en": "Correct! The text has 「Cセット　サンドイッチ　飲み物つき　750円」: 「つき」 means comes with; only Set C includes a drink."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「Cセット　サンドイッチ　飲み物つき　750円」: 「つき」nghĩa là kèm theo; chỉ Set C kèm đồ uống.",
+        "en": "Not quite. Look again at 「Cセット　サンドイッチ　飲み物つき　750円」: 「つき」 means comes with; only Set C includes a drink."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Gọi Set A và một chiếc bánh ngọt thì tổng cộng bao nhiêu?",
+        "en": "How much is Set A plus a cake in total?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "1.300 yên",
+            "en": "1,300 yen"
+          },
+          {
+            "vi": "1.200 yên",
+            "en": "1,200 yen"
+          },
+          {
+            "vi": "1.100 yên",
+            "en": "1,100 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「ランチといっしょにデザートをたのむと、100円やすくなります」: 900 + 400 − 100 (giảm khi gọi cùng bữa trưa) = 1.200 yên.",
+        "en": "Correct! The text has 「ランチといっしょにデザートをたのむと、100円やすくなります」: 900 + 400 − 100 (lunch-dessert discount) = 1,200 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「ランチといっしょにデザートをたのむと、100円やすくなります」: 900 + 400 − 100 (giảm khi gọi cùng bữa trưa) = 1.200 yên.",
+        "en": "Not quite. Look again at 「ランチといっしょにデザートをたのむと、100円やすくなります」: 900 + 400 − 100 (lunch-dessert discount) = 1,200 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "info_search",
+      "prompt": {
+        "vi": "Gọi Set C và đổi đồ uống sang cỡ lớn thì bao nhiêu?",
+        "en": "How much is Set C with the drink upgraded to a large size?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "750 yên",
+            "en": "750 yen"
+          },
+          {
+            "vi": "800 yên",
+            "en": "800 yen"
+          },
+          {
+            "vi": "850 yên",
+            "en": "850 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「50円で大きいサイズにできます」: 750 + 50 = 800 yên.",
+        "en": "Correct! The text has 「50円で大きいサイズにできます」: 750 + 50 = 800 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「50円で大きいサイズにできます」: 750 + 50 = 800 yên.",
+        "en": "Not quite. Look again at 「50円で大きいサイズにできます」: 750 + 50 = 800 yen."
+      }
+    }
+  ]
+}

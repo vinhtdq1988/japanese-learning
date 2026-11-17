@@ -8,6 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_assignment.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,52 +19,97 @@ part 'class_assignment.g.dart';
 class ClassAssignment {
   /// Returns a new [ClassAssignment] instance.
   ClassAssignment({
-    required this.id,
 
-    required this.batchId,
+    required  this.id,
 
-    required this.unitId,
+    required  this.batchId,
 
-    required this.title,
+    required  this.unitId,
 
-    required this.dueOn,
+    required  this.title,
+
+    required  this.dueOn,
   });
 
-  @JsonKey(name: r'id', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'id',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String id;
 
-  @JsonKey(name: r'batchId', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'batchId',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String batchId;
 
-  @JsonKey(name: r'unitId', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'unitId',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String unitId;
 
-  @JsonKey(name: r'title', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'title',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final String title;
 
-  @JsonKey(name: r'dueOn', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'dueOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime dueOn;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassAssignment &&
-          other.id == id &&
-          other.batchId == batchId &&
-          other.unitId == unitId &&
-          other.title == title &&
-          other.dueOn == dueOn;
 
-  @override
-  int get hashCode =>
-      id.hashCode +
-      batchId.hashCode +
-      unitId.hashCode +
-      title.hashCode +
-      dueOn.hashCode;
 
-  factory ClassAssignment.fromJson(Map<String, dynamic> json) =>
-      _$ClassAssignmentFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassAssignment &&
+      other.id == id &&
+      other.batchId == batchId &&
+      other.unitId == unitId &&
+      other.title == title &&
+      other.dueOn == dueOn;
+
+    @override
+    int get hashCode =>
+        id.hashCode +
+        batchId.hashCode +
+        unitId.hashCode +
+        title.hashCode +
+        dueOn.hashCode;
+
+  factory ClassAssignment.fromJson(Map<String, dynamic> json) => _$ClassAssignmentFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassAssignmentToJson(this);
 
@@ -71,4 +117,6 @@ class ClassAssignment {
   String toString() {
     return toJson().toString();
   }
+
 }
+

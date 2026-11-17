@@ -9,6 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'import_results.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -18,27 +19,51 @@ part 'import_results.g.dart';
 )
 class ImportResults {
   /// Returns a new [ImportResults] instance.
-  ImportResults({required this.summary, required this.results});
+  ImportResults({
 
-  /// Đếm theo `outcome`, kèm `total`
-  @JsonKey(name: r'summary', required: true, includeIfNull: false)
+    required  this.summary,
+
+    required  this.results,
+  });
+
+      /// Đếm theo `outcome`, kèm `total`
+  @JsonKey(
+    
+    name: r'summary',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Map<String, int> summary;
 
-  @JsonKey(name: r'results', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'results',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ImportResultsResultsInner> results;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ImportResults &&
-          other.summary == summary &&
-          other.results == results;
 
-  @override
-  int get hashCode => summary.hashCode + results.hashCode;
 
-  factory ImportResults.fromJson(Map<String, dynamic> json) =>
-      _$ImportResultsFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ImportResults &&
+      other.summary == summary &&
+      other.results == results;
+
+    @override
+    int get hashCode =>
+        summary.hashCode +
+        results.hashCode;
+
+  factory ImportResults.fromJson(Map<String, dynamic> json) => _$ImportResultsFromJson(json);
 
   Map<String, dynamic> toJson() => _$ImportResultsToJson(this);
 
@@ -46,4 +71,6 @@ class ImportResults {
   String toString() {
     return toJson().toString();
   }
+
 }
+

@@ -1,0 +1,167 @@
+{
+  "$schema": "../schema/unit.schema.json",
+  "kind": "reading",
+  "level": "N3",
+  "tier": "core",
+  "topic": "reading-n3-notice",
+  "title": {
+    "vi": "Đọc: Quy định sử dụng phòng họp cộng đồng",
+    "en": "Reading: Community meeting room rules"
+  },
+  "goalTags": [
+    "jlpt",
+    "daily_conversation"
+  ],
+  "difficulty": 4,
+  "estMinutes": 10,
+  "sequence": 2410,
+  "isTrial": false,
+  "items": [
+    {
+      "japanese": "【市民センター　会議室のご利用について】\n会議室は、市内に住んでいる人、または市内で働いている人が利用できます。\n利用したい日の3か月前から、受付で予約ができます。電話での予約はできません。予約するときは、利用する人の名前、人数、目的を書いてください。\n利用料金は、午前（9時～12時）が500円、午後（1時～5時）が700円、夜間（6時～9時）が900円です。ただし、市民のグループが営利目的でなく使う場合は、料金が半分になります。\n使った後は、いすとテーブルを元の位置にもどし、ごみは必ず持ち帰ってください。部屋の中では、火を使うことと、飲食（水・お茶を除く）はできません。\n予約を取り消す場合は、利用日の3日前までに知らせてください。それ以降の取り消しには、料金の半分が必要です。",
+      "meaning": {
+        "vi": "[Về việc sử dụng phòng họp của Trung tâm công dân] Những người sống trong thành phố hoặc làm việc trong thành phố có thể sử dụng phòng họp. Có thể đặt chỗ tại quầy tiếp tân từ 3 tháng trước ngày muốn sử dụng. Không thể đặt qua điện thoại. Khi đặt, xin ghi tên người sử dụng, số người và mục đích. Phí sử dụng: buổi sáng (9–12 giờ) 500 yên, buổi chiều (1–5 giờ) 700 yên, buổi tối (6–9 giờ) 900 yên. Tuy nhiên, nếu nhóm công dân sử dụng không vì mục đích kinh doanh thì phí giảm một nửa. Sau khi dùng, xin đưa bàn ghế về vị trí cũ và nhất định mang rác về. Trong phòng không được dùng lửa, cũng không được ăn uống (trừ nước lọc và trà). Khi hủy đặt chỗ, xin báo cho chúng tôi trước ngày sử dụng 3 ngày. Hủy sau thời điểm đó sẽ phải trả một nửa phí.",
+        "en": "[Using the meeting rooms at the Citizens’ Center] The meeting rooms can be used by people who live in the city or work in the city. Reservations can be made at the reception desk starting three months before the day you want to use the room. Reservations cannot be made by phone. When reserving, please write the name of the user, the number of people and the purpose. Fees: morning (9–12) 500 yen, afternoon (1–5) 700 yen, evening (6–9) 900 yen. However, if a citizens’ group uses the room for non-commercial purposes, the fee is halved. After use, please return the chairs and tables to their original positions and be sure to take your trash home. Fire may not be used in the room, and eating and drinking (except water and tea) are not allowed. If you cancel a reservation, please let us know by three days before the day of use. Cancellations after that incur half the fee."
+      },
+      "explanation": {
+        "vi": "「～ことができる」/「～できます」= có thể; 「ただし」= tuy nhiên; 「～を除く」= trừ…; 「それ以降」= từ đó về sau; 「元」(もと) = ban đầu; 「もどし」= đưa trở lại.",
+        "en": "「～ことができる」/「～できます」 = can; 「ただし」 = however; 「～を除く」 = except…; 「それ以降」 = after that; 「元」(もと) = original; 「もどし」 = put back."
+      },
+      "scopeRef": "r-n3-notice-guide-manual"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Ai có thể sử dụng phòng họp?",
+        "en": "Who can use the meeting rooms?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Bất kỳ ai",
+            "en": "Anyone"
+          },
+          {
+            "vi": "Người sống hoặc làm việc trong thành phố",
+            "en": "People who live or work in the city"
+          },
+          {
+            "vi": "Chỉ công ty có đăng ký",
+            "en": "Only registered companies"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「市内に住んでいる人、または市内で働いている人が利用できます」: Điều kiện là sống hoặc làm việc ở trong thành phố.",
+        "en": "Correct! The text has 「市内に住んでいる人、または市内で働いている人が利用できます」: The condition is living or working within the city."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「市内に住んでいる人、または市内で働いている人が利用できます」: Điều kiện là sống hoặc làm việc ở trong thành phố.",
+        "en": "Not quite. Look again at 「市内に住んでいる人、または市内で働いている人が利用できます」: The condition is living or working within the city."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Cách đặt phòng như thế nào?",
+        "en": "How do you make a reservation?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Gọi điện từ 1 tháng trước",
+            "en": "Phone one month ahead"
+          },
+          {
+            "vi": "Đến quầy tiếp tân từ 3 tháng trước",
+            "en": "Go to the reception desk from three months ahead"
+          },
+          {
+            "vi": "Gửi email trước 3 ngày",
+            "en": "Email three days before"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「利用したい日の3か月前から、受付で予約ができます」: Đặt chỗ tại quầy từ 3 tháng trước; điện thoại không được chấp nhận.",
+        "en": "Correct! The text has 「利用したい日の3か月前から、受付で予約ができます」: Reservations are taken at the counter from three months ahead; phone reservations are not accepted."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「利用したい日の3か月前から、受付で予約ができます」: Đặt chỗ tại quầy từ 3 tháng trước; điện thoại không được chấp nhận.",
+        "en": "Not quite. Look again at 「利用したい日の3か月前から、受付で予約ができます」: Reservations are taken at the counter from three months ahead; phone reservations are not accepted."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Một nhóm công dân dùng phòng vào buổi chiều không vì mục đích kinh doanh thì phí là bao nhiêu?",
+        "en": "How much does a citizens’ group pay for an afternoon non-commercial use?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "700 yên",
+            "en": "700 yen"
+          },
+          {
+            "vi": "350 yên",
+            "en": "350 yen"
+          },
+          {
+            "vi": "500 yên",
+            "en": "500 yen"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「市民のグループが営利目的でなく使う場合は、料金が半分になります」: Buổi chiều 700 yên; được giảm một nửa còn 350 yên.",
+        "en": "Correct! The text has 「市民のグループが営利目的でなく使う場合は、料金が半分になります」: The afternoon fee of 700 yen is halved to 350 yen."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「市民のグループが営利目的でなく使う場合は、料金が半分になります」: Buổi chiều 700 yên; được giảm một nửa còn 350 yên.",
+        "en": "Not quite. Look again at 「市民のグループが営利目的でなく使う場合は、料金が半分になります」: The afternoon fee of 700 yen is halved to 350 yen."
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "format": "comprehension_mid",
+      "prompt": {
+        "vi": "Nếu hủy đặt chỗ vào 1 ngày trước ngày sử dụng thì sao?",
+        "en": "What if you cancel one day before the day of use?"
+      },
+      "payload": {
+        "choices": [
+          {
+            "vi": "Không mất phí",
+            "en": "There is no charge"
+          },
+          {
+            "vi": "Phải trả một nửa phí",
+            "en": "You pay half the fee"
+          },
+          {
+            "vi": "Phải trả toàn bộ phí",
+            "en": "You pay the full fee"
+          }
+        ],
+        "correct_index": 1
+      },
+      "feedbackCorrect": {
+        "vi": "Đúng! Đoạn văn có 「それ以降の取り消しには、料金の半分が必要です」: Hủy sau mốc 3 ngày trước thì cần trả một nửa phí.",
+        "en": "Correct! The text has 「それ以降の取り消しには、料金の半分が必要です」: Cancelling after the three-day deadline requires half the fee."
+      },
+      "feedbackIncorrect": {
+        "vi": "Chưa đúng. Hãy xem lại 「それ以降の取り消しには、料金の半分が必要です」: Hủy sau mốc 3 ngày trước thì cần trả một nửa phí.",
+        "en": "Not quite. Look again at 「それ以降の取り消しには、料金の半分が必要です」: Cancelling after the three-day deadline requires half the fee."
+      }
+    }
+  ]
+}

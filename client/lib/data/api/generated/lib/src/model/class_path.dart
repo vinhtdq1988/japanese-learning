@@ -16,6 +16,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'class_path.g.dart';
 
+
 @CopyWith()
 @JsonSerializable(
   checked: true,
@@ -26,110 +27,227 @@ part 'class_path.g.dart';
 class ClassPath {
   /// Returns a new [ClassPath] instance.
   ClassPath({
-    required this.startLevel,
 
-    required this.targetLevel,
+    required  this.startLevel,
 
-    required this.skills,
+    required  this.targetLevel,
 
-    required this.startsOn,
+    required  this.skills,
 
-    required this.endsOn,
+    required  this.startsOn,
 
-    required this.dailyMinutes,
+    required  this.endsOn,
 
-    required this.mode,
+    required  this.dailyMinutes,
 
-    this.scopeNotice,
+    required  this.mode,
 
-    required this.units,
+     this.scopeNotice,
 
-    required this.assignments,
+    required  this.units,
 
-    required this.warnings,
+    required  this.assignments,
 
-    required this.contentNotices,
+    required  this.warnings,
 
-    required this.updatedAt,
+    required  this.contentNotices,
+
+    required  this.updatedAt,
   });
 
-  @JsonKey(name: r'startLevel', required: true, includeIfNull: false)
+  @JsonKey(
+    
+    name: r'startLevel',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Level startLevel;
 
-  @JsonKey(name: r'targetLevel', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'targetLevel',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final TargetLevel targetLevel;
 
-  @JsonKey(name: r'skills', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'skills',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final Set<Skill> skills;
 
-  @JsonKey(name: r'startsOn', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'startsOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime startsOn;
 
-  /// > startsOn
-  @JsonKey(name: r'endsOn', required: true, includeIfNull: false)
+
+
+      /// > startsOn
+  @JsonKey(
+    
+    name: r'endsOn',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime endsOn;
 
-  @JsonKey(name: r'dailyMinutes', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'dailyMinutes',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassPathDailyMinutesEnum dailyMinutes;
 
-  @JsonKey(name: r'mode', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'mode',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final ClassPathModeEnum mode;
 
-  @JsonKey(name: r'scopeNotice', required: false, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'scopeNotice',
+    required: false,
+    includeIfNull: false,
+  )
+
+
   final ScopeNotice? scopeNotice;
 
-  /// explicit - đúng danh sách và thứ tự giáo viên chọn; template - thứ tự tham khảo tính động
-  @JsonKey(name: r'units', required: true, includeIfNull: false)
+
+
+      /// explicit - đúng danh sách và thứ tự giáo viên chọn; template - thứ tự tham khảo tính động
+  @JsonKey(
+    
+    name: r'units',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassPathUnit> units;
 
-  @JsonKey(name: r'assignments', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'assignments',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ClassAssignment> assignments;
 
-  @JsonKey(name: r'warnings', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'warnings',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<PathWarning> warnings;
 
-  @JsonKey(name: r'contentNotices', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'contentNotices',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final List<ContentNotice> contentNotices;
 
-  @JsonKey(name: r'updatedAt', required: true, includeIfNull: false)
+
+
+  @JsonKey(
+    
+    name: r'updatedAt',
+    required: true,
+    includeIfNull: false,
+  )
+
+
   final DateTime updatedAt;
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is ClassPath &&
-          other.startLevel == startLevel &&
-          other.targetLevel == targetLevel &&
-          other.skills == skills &&
-          other.startsOn == startsOn &&
-          other.endsOn == endsOn &&
-          other.dailyMinutes == dailyMinutes &&
-          other.mode == mode &&
-          other.scopeNotice == scopeNotice &&
-          other.units == units &&
-          other.assignments == assignments &&
-          other.warnings == warnings &&
-          other.contentNotices == contentNotices &&
-          other.updatedAt == updatedAt;
 
-  @override
-  int get hashCode =>
-      startLevel.hashCode +
-      targetLevel.hashCode +
-      skills.hashCode +
-      startsOn.hashCode +
-      endsOn.hashCode +
-      dailyMinutes.hashCode +
-      mode.hashCode +
-      (scopeNotice == null ? 0 : scopeNotice.hashCode) +
-      units.hashCode +
-      assignments.hashCode +
-      warnings.hashCode +
-      contentNotices.hashCode +
-      updatedAt.hashCode;
 
-  factory ClassPath.fromJson(Map<String, dynamic> json) =>
-      _$ClassPathFromJson(json);
+
+
+    @override
+    bool operator ==(Object other) => identical(this, other) || other is ClassPath &&
+      other.startLevel == startLevel &&
+      other.targetLevel == targetLevel &&
+      other.skills == skills &&
+      other.startsOn == startsOn &&
+      other.endsOn == endsOn &&
+      other.dailyMinutes == dailyMinutes &&
+      other.mode == mode &&
+      other.scopeNotice == scopeNotice &&
+      other.units == units &&
+      other.assignments == assignments &&
+      other.warnings == warnings &&
+      other.contentNotices == contentNotices &&
+      other.updatedAt == updatedAt;
+
+    @override
+    int get hashCode =>
+        startLevel.hashCode +
+        targetLevel.hashCode +
+        skills.hashCode +
+        startsOn.hashCode +
+        endsOn.hashCode +
+        dailyMinutes.hashCode +
+        mode.hashCode +
+        (scopeNotice == null ? 0 : scopeNotice.hashCode) +
+        units.hashCode +
+        assignments.hashCode +
+        warnings.hashCode +
+        contentNotices.hashCode +
+        updatedAt.hashCode;
+
+  factory ClassPath.fromJson(Map<String, dynamic> json) => _$ClassPathFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClassPathToJson(this);
 
@@ -137,36 +255,40 @@ class ClassPath {
   String toString() {
     return toJson().toString();
   }
+
 }
 
 enum ClassPathDailyMinutesEnum {
-  @JsonValue(5)
-  number5('5'),
-  @JsonValue(10)
-  number10('10'),
-  @JsonValue(15)
-  number15('15'),
-  @JsonValue(30)
-  number30('30');
+@JsonValue(5)
+number5('5'),
+@JsonValue(10)
+number10('10'),
+@JsonValue(15)
+number15('15'),
+@JsonValue(30)
+number30('30');
 
-  const ClassPathDailyMinutesEnum(this.value);
+const ClassPathDailyMinutesEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
 
 enum ClassPathModeEnum {
-  @JsonValue(r'template')
-  template(r'template'),
-  @JsonValue(r'explicit')
-  explicit(r'explicit');
+@JsonValue(r'template')
+template(r'template'),
+@JsonValue(r'explicit')
+explicit(r'explicit');
 
-  const ClassPathModeEnum(this.value);
+const ClassPathModeEnum(this.value);
 
-  final String value;
+final String value;
 
-  @override
-  String toString() => value;
+@override
+String toString() => value;
 }
+
+
