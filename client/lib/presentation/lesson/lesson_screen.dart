@@ -6,6 +6,7 @@ import 'package:japanese_api/japanese_api.dart';
 
 import '../../data/api/api_error.dart';
 import '../../data/learning_repository.dart';
+import '../../data/lookup_repository.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 import '../effects/answer_effect.dart';
@@ -15,6 +16,7 @@ import '../shared/page_frame.dart';
 import '../review/review_view.dart';
 import '../shared/state_views.dart';
 import 'exercises/exercise_view.dart';
+import 'furigana_text.dart';
 import 'kanji/kanji_card.dart';
 import 'kanji/kanji_master_toggle.dart';
 import 'lesson_controller.dart';
@@ -173,9 +175,25 @@ class LessonItemCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(item.japanese ?? '', style: theme.textTheme.headlineMedium),
-            if (item.reading != null && item.reading!.isNotEmpty)
-              Text(l10n.lessonReading(item.reading!)),
+            if (item.kind == Skill.reading) ...<Widget>[
+              // Đoạn luyện đọc: cách đọc hiện qua popup furigana khi bấm vào cụm Hán tự, không in cả
+              // chuỗi hiragana dưới đoạn văn.
+              Consumer(
+                builder: (context, ref, _) => FuriganaText(
+                  key: const Key('reading-passage'),
+                  japanese: item.japanese ?? '',
+                  reading: item.reading,
+                  style: theme.textTheme.titleLarge,
+                  lookup: ref.read(lookupRepositoryProvider).lookup,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(l10n.lessonFuriganaHint, style: theme.textTheme.bodySmall),
+            ] else ...<Widget>[
+              Text(item.japanese ?? '', style: theme.textTheme.headlineMedium),
+              if (item.reading != null && item.reading!.isNotEmpty)
+                Text(l10n.lessonReading(item.reading!)),
+            ],
             const SizedBox(height: 4),
             Text(item.meaning ?? '', style: theme.textTheme.titleMedium),
             if (item.explanation != null) ...<Widget>[
@@ -267,7 +285,9 @@ class LessonPractice extends ConsumerWidget {
             if (_passageOf(state) case final passage?)
               PassagePanel(
                 japanese: passage.japanese ?? '',
+                reading: passage.reading,
                 translation: passage.meaning ?? '',
+                lookup: ref.read(lookupRepositoryProvider).lookup,
               ),
             ExerciseView(
               exercise: exercise,

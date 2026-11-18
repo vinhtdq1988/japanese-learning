@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Tác giả đã mua gì?",
-        "en": "What did the writer buy?"
+        "vi": "筆者は何を買いましたか。",
+        "en": "筆者は何を買いましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Một đôi giày đen",
-            "en": "A pair of black shoes"
-          },
-          {
-            "vi": "Một chiếc áo đen",
-            "en": "A black shirt"
-          },
-          {
-            "vi": "Một chiếc túi nhỏ",
-            "en": "A small bag"
-          }
+          "黒いくつ",
+          "黒いシャツ",
+          "小さいかばん"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Vì sao tác giả vui?",
-        "en": "Why was the writer happy?"
+        "vi": "筆者がうれしかったのは、なぜですか。",
+        "en": "筆者がうれしかったのは、なぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì được tặng thêm một đôi",
-            "en": "Because they got a second pair free"
-          },
-          {
-            "vi": "Vì giày được bán nửa giá",
-            "en": "Because the shoes were half price"
-          },
-          {
-            "vi": "Vì đi thử rất vừa",
-            "en": "Because they fit perfectly"
-          }
+          "もう一足もらえたから",
+          "くつが半分のねだんで売っていたから",
+          "はいてみたらぴったりだったから"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Vấn đề của đôi giày là gì?",
-        "en": "What is the problem with the shoes?"
+        "vi": "くつの問題は何ですか。",
+        "en": "くつの問題は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Màu không đẹp",
-            "en": "The color is not nice"
-          },
-          {
-            "vi": "Hơi nhỏ",
-            "en": "They are a little small"
-          },
-          {
-            "vi": "Quá đắt",
-            "en": "They are too expensive"
-          }
+          "色があまりきれいではないこと",
+          "少し小さいこと",
+          "ねだんが高すぎること"
         ],
         "correct_index": 1
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Ngày mai tác giả định làm gì?",
-        "en": "What does the writer plan to do tomorrow?"
+        "vi": "筆者は、あした何をしようと思っていますか。",
+        "en": "筆者は、あした何をしようと思っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đổi sang cỡ lớn hơn ở cửa hàng",
-            "en": "Exchange them for a larger size at the store"
-          },
-          {
-            "vi": "Bán lại đôi giày",
-            "en": "Sell the shoes"
-          },
-          {
-            "vi": "Mua thêm một đôi màu khác",
-            "en": "Buy another pair in a different color"
-          }
+          "店で大きいサイズにかえてもらう",
+          "くつを売る",
+          "ちがう色のくつをもう一足買う"
         ],
         "correct_index": 0
       },

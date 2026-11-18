@@ -21,6 +21,14 @@
 
 .PARAMETER Seed
   prod: nạp nội dung từ content/ (lần triển khai đầu). Không tạo admin dev; tạo admin bằng `pnpm admin:create`.
+
+.PARAMETER ServerHost
+  IP hoặc tên miền mà client truy cập (bí danh -Ip, -Domain), vd. 192.168.1.11 hoặc app.example.com. Ghi đè trong tiến trình
+  (không sửa file .env) APP_BASE_URL để liên kết đặt lại mật khẩu trỏ đúng địa chỉ; riêng local còn đặt CORS_ALLOWED_ORIGINS
+  cho origin của client (cổng WEB_PORT trong client/.env.local) để thiết bị khác gọi được API.
+
+.PARAMETER Scheme
+  `http` hoặc `https` của địa chỉ client khi dùng -ServerHost. Mặc định: local = http, prod = https.
 #>
 [CmdletBinding()]
 param(
@@ -28,7 +36,11 @@ param(
     [ValidateSet('local', 'prod')]
     [string]$Environment = 'local',
     [switch]$SkipSeed,
-    [switch]$Seed
+    [switch]$Seed,
+    [Alias('Ip', 'Domain')]
+    [string]$ServerHost,
+    [ValidateSet('http', 'https')]
+    [string]$Scheme
 )
 
 $ErrorActionPreference = 'Stop'
@@ -36,6 +48,14 @@ $ErrorActionPreference = 'Stop'
 
 $backend = Join-Path $RepoRoot 'backend'
 $envFile = Initialize-EnvFile $backend $Environment
+if ($ServerHost) {
+    Assert-ServerHost $ServerHost
+    $urls = Get-ServerUrls $ServerHost $Scheme $Environment
+    # Đặt trước Import-EnvFile/Assert-NoPlaceholders: biến đã có trong shell được ưu tiên hơn file .env.
+    $env:APP_BASE_URL = $urls.WebOrigin
+    if ($urls.CorsOrigins.Count -gt 0) { $env:CORS_ALLOWED_ORIGINS = $urls.CorsOrigins -join ',' }
+    Write-Step "Địa chỉ client: $($urls.WebOrigin)$(if ($env:CORS_ALLOWED_ORIGINS) { " (CORS: $env:CORS_ALLOWED_ORIGINS)" })"
+}
 if ($Environment -eq 'prod') { Assert-NoPlaceholders $envFile }
 $null = Import-EnvFile $envFile
 if (-not $env:NODE_ENV) { $env:NODE_ENV = if ($Environment -eq 'prod') { 'production' } else { 'development' } }

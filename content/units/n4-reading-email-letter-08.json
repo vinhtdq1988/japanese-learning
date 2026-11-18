@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Điều gì đã thay đổi?",
-        "en": "What has changed?"
+        "vi": "何がかわりましたか。",
+        "en": "何がかわりましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Địa điểm",
-            "en": "The place"
-          },
-          {
-            "vi": "Giờ họp",
-            "en": "The time"
-          },
-          {
-            "vi": "Người tham dự",
-            "en": "The attendees"
-          }
+          "ばしょ",
+          "時間",
+          "来る人"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Buổi trao đổi diễn ra ở đâu?",
-        "en": "Where will the meeting be held?"
+        "vi": "うちあわせは、どこでしますか。",
+        "en": "うちあわせは、どこでしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Phòng họp tầng 2",
-            "en": "A meeting room on the second floor"
-          },
-          {
-            "vi": "Sảnh tầng 1 của công ty",
-            "en": "The first-floor lobby of the company"
-          },
-          {
-            "vi": "Quán cà phê gần ga",
-            "en": "A café near the station"
-          }
+          "二階の会議室",
+          "会社の一階のロビー",
+          "駅の近くのきっさてん"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Anh Brown phải đến trước mấy giờ?",
-        "en": "By what time must Mr. Brown arrive?"
+        "vi": "ブラウンさんは、何時までに来なければなりませんか。",
+        "en": "ブラウンさんは、何時までに来なければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1 giờ 50",
-            "en": "1:50"
-          },
-          {
-            "vi": "2 giờ 10",
-            "en": "2:10"
-          },
-          {
-            "vi": "1 giờ 15",
-            "en": "1:15"
-          }
+          "一時五十分",
+          "二時十分",
+          "一時十五分"
         ],
         "correct_index": 0
       },

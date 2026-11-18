@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Theo tác giả, vì sao kính ngữ khó?",
-        "en": "According to the author, why is keigo difficult?"
+        "vi": "筆者によると、敬語が難しいのはなぜですか。",
+        "en": "筆者によると、敬語が難しいのはなぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì có quá ít từ vựng",
-            "en": "Because there are too few words"
-          },
-          {
-            "vi": "Vì ngay cả người Nhật cũng khó dùng đúng",
-            "en": "Because even Japanese people find it hard to use correctly"
-          },
-          {
-            "vi": "Vì chỉ dùng trong văn viết",
-            "en": "Because it is used only in writing"
-          }
+          "単語が少なすぎるから",
+          "日本人にとっても、正しく使うのは簡単ではないから",
+          "書き言葉でしか使わないから"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao có người cho rằng nên bỏ kính ngữ?",
-        "en": "Why do some people say keigo should be abolished?"
+        "vi": "「敬語はなくしたほうがいい」と言う人がいるのはなぜですか。",
+        "en": "「敬語はなくしたほうがいい」と言う人がいるのはなぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì dùng sai có thể gây ấn tượng thiếu lịch sự",
-            "en": "Because using it wrongly can give an impolite impression"
-          },
-          {
-            "vi": "Vì tốn thời gian",
-            "en": "Because it takes too much time"
-          },
-          {
-            "vi": "Vì không ai dùng nữa",
-            "en": "Because nobody uses it any more"
-          }
+          "使い方を間違えると、失礼な印象を与えてしまうから",
+          "時間がかかるから",
+          "もうだれも使わないから"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điều tác giả cho là quan trọng nhất là gì?",
-        "en": "What does the author consider most important?"
+        "vi": "筆者が一番大切だと考えていることは何ですか。",
+        "en": "筆者が一番大切だと考えていることは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Dùng kính ngữ thật hoàn hảo",
-            "en": "Using keigo perfectly"
-          },
-          {
-            "vi": "Có tấm lòng nghĩ đến người khác",
-            "en": "Having a heart that cares about the other person"
-          },
-          {
-            "vi": "Không dùng kính ngữ với bạn bè",
-            "en": "Not using keigo with friends"
-          }
+          "敬語を完全に使うこと",
+          "相手を思う気持ちを持つこと",
+          "友だちには敬語を使わないこと"
         ],
         "correct_index": 1
       },

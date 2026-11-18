@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Thư viện đóng cửa khi nào?",
-        "en": "When is the library closed?"
+        "vi": "図書館は、いつ休みになりますか。",
+        "en": "図書館は、いつ休みになりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tuần này, từ thứ Hai đến thứ Sáu",
-            "en": "This week, Monday to Friday"
-          },
-          {
-            "vi": "Tuần sau, từ thứ Hai đến thứ Sáu",
-            "en": "Next week, Monday to Friday"
-          },
-          {
-            "vi": "Từ tuần sau cho đến hết tháng",
-            "en": "From next week until the end of the month"
-          }
+          "今週の月曜日から金曜日まで",
+          "来週の月曜日から金曜日まで",
+          "来週から月の終わりまで"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Ai muốn mượn sách thì phải làm gì?",
-        "en": "What should people who want to borrow books do?"
+        "vi": "本を借りたい人は、どうしなければなりませんか。",
+        "en": "本を借りたい人は、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mượn trước thứ Bảy tuần này",
-            "en": "Borrow them by this Saturday"
-          },
-          {
-            "vi": "Mượn vào thứ Hai tuần sau",
-            "en": "Borrow them next Monday"
-          },
-          {
-            "vi": "Hỏi lại sau khi sửa xong",
-            "en": "Ask again after the repairs"
-          }
+          "今週の土曜日までに借りる",
+          "来週の月曜日に借りる",
+          "工事が終わってからたずねる"
         ],
         "correct_index": 0
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Muốn trả sách trong lúc thư viện đóng cửa thì làm thế nào?",
-        "en": "How can you return books while the library is closed?"
+        "vi": "図書館が休みの間に本をかえすときは、どうすればいいですか。",
+        "en": "図書館が休みの間に本をかえすときは、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gửi qua bưu điện",
-            "en": "Send them by post"
-          },
-          {
-            "vi": "Đưa cho thầy cô",
-            "en": "Give them to a teacher"
-          },
-          {
-            "vi": "Bỏ vào thùng trước thư viện",
-            "en": "Put them in the box in front of the library"
-          }
+          "郵便で送る",
+          "先生にわたす",
+          "図書館の前のはこに入れる"
         ],
         "correct_index": 2
       },

@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Theo khảo sát, điều gì xảy ra với thế hệ trẻ?",
-        "en": "According to the survey, what is true of the younger generation?"
+        "vi": "調査によると、若い世代はどうなっていますか。",
+        "en": "調査によると、若い世代はどうなっていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khoảng một nửa không đọc cuốn sách nào trong một tháng",
-            "en": "About half do not read even one book a month"
-          },
-          {
-            "vi": "Hầu hết đọc hơn mười cuốn một tháng",
-            "en": "Most read more than ten books a month"
-          },
-          {
-            "vi": "Không ai đọc sách giấy",
-            "en": "No one reads paper books"
-          }
+          "約半数が、一か月に一冊も本を読まない",
+          "ほとんどの人が、一か月に十冊以上読む",
+          "だれも紙の本を読まない"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả chỉ ra điều gì ngược với suy nghĩ thông thường?",
-        "en": "What does the author point out that goes against common belief?"
+        "vi": "筆者が、一般的な考えと反対のこととして挙げているのは何ですか。",
+        "en": "筆者が、一般的な考えと反対のこととして挙げているのは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Số người đọc sách giấy tăng mạnh",
-            "en": "Readers of paper books are increasing sharply"
-          },
-          {
-            "vi": "Số người đọc tiểu thuyết và tin tức trên điện thoại đang tăng",
-            "en": "More people are reading novels and news on smartphones"
-          },
-          {
-            "vi": "Thanh niên ghét đọc chữ",
-            "en": "Young people hate reading text"
-          }
+          "紙の本を読む人が大きく増えたこと",
+          "スマートフォンで小説やニュースを読む人が増えていること",
+          "若者が文字を読むのをきらっていること"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điều tác giả cho là quan trọng nhất là gì?",
-        "en": "What does the author consider most important?"
+        "vi": "筆者が一番大切だと考えていることは何ですか。",
+        "en": "筆者が一番大切だと考えていることは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đọc bằng sách giấy",
-            "en": "Reading on paper"
-          },
-          {
-            "vi": "Đọc thật nhiều sách mỗi tháng",
-            "en": "Reading many books every month"
-          },
-          {
-            "vi": "Tự mình suy nghĩ về nội dung đã đọc",
-            "en": "Thinking for yourself about what you have read"
-          }
+          "紙の本で読むこと",
+          "毎月たくさんの本を読むこと",
+          "読んだ内容について自分で考えること"
         ],
         "correct_index": 2
       },

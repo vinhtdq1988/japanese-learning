@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao người viết muốn thay đổi ngày giao hàng?",
-        "en": "Why does the writer want to change the delivery date?"
+        "vi": "書いた人はどうして納品日を変えたいのですか。",
+        "en": "書いた人はどうして納品日を変えたいのですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khách hàng đổi đơn đặt hàng",
-            "en": "The customer changed the order"
-          },
-          {
-            "vi": "Máy móc ở nhà máy bị hỏng",
-            "en": "A machine at the factory broke down"
-          },
-          {
-            "vi": "Thiếu nguyên liệu",
-            "en": "There is a shortage of materials"
-          }
+          "お客様が注文を変えたから",
+          "工場の機械がこわれたから",
+          "材料が足りないから"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Việc sửa chữa dự kiến mất bao lâu?",
-        "en": "How long is the repair expected to take?"
+        "vi": "修理にはどのくらいかかる見込みですか。",
+        "en": "修理にはどのくらいかかる見込みですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khoảng 3 ngày",
-            "en": "About three days"
-          },
-          {
-            "vi": "Khoảng 1 tuần",
-            "en": "About one week"
-          },
-          {
-            "vi": "Khoảng 1 tháng",
-            "en": "About one month"
-          }
+          "3日ぐらい",
+          "1週間ぐらい",
+          "1か月ぐらい"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Đề nghị đầu tiên của người viết là gì?",
-        "en": "What is the writer’s first request?"
+        "vi": "書いた人が最初にお願いしていることは何ですか。",
+        "en": "書いた人が最初にお願いしていることは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hủy đơn hàng",
-            "en": "Cancel the order"
-          },
-          {
-            "vi": "Dời ngày giao hàng sang ngày 15 tháng 11",
-            "en": "Move the delivery date to November 15"
-          },
-          {
-            "vi": "Giảm số lượng đặt hàng",
-            "en": "Reduce the quantity ordered"
-          }
+          "注文をキャンセルすること",
+          "納品日を11月15日にずらすこと",
+          "注文の数を減らすこと"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Nếu ngày 15 không thuận tiện thì có phương án nào?",
-        "en": "If the 15th is not convenient, what is the alternative?"
+        "vi": "15日が都合が悪い場合は、どんな方法がありますか。",
+        "en": "15日が都合が悪い場合は、どんな方法がありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Giao trước một phần vào ngày 12, phần còn lại vào ngày 15",
-            "en": "Deliver part on the 12th and the rest on the 15th"
-          },
-          {
-            "vi": "Giao toàn bộ vào ngày 20",
-            "en": "Deliver everything on the 20th"
-          },
-          {
-            "vi": "Hủy hợp đồng",
-            "en": "Cancel the contract"
-          }
+          "一部を12日に、残りを15日に納品する",
+          "全部を20日に納品する",
+          "契約をやめる"
         ],
         "correct_index": 0
       },

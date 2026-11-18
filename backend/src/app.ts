@@ -3,6 +3,7 @@ import type { Config } from './config.js';
 import type { Database } from './db/client.js';
 import { registerErrorHandlers } from './api/errors.js';
 import { createAuthenticate } from './api/middleware/auth.js';
+import { registerCors } from './api/middleware/cors.js';
 import { registerRateLimit } from './api/middleware/rate-limit.js';
 import { registerSecurityHeaders } from './api/middleware/security-headers.js';
 import { systemClock, type Clock } from './engine/clock.js';
@@ -88,6 +89,7 @@ export async function buildApp(
   });
 
   registerErrorHandlers(app);
+  registerCors(app, { allowedOrigins: config.CORS_ALLOWED_ORIGINS });
   registerSecurityHeaders(app, { hsts: config.NODE_ENV === 'production' });
   await registerRateLimit(app, config);
 

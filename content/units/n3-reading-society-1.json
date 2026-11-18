@@ -33,23 +33,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Thị trấn kêu gọi người dân làm gì?",
-        "en": "What is the town asking residents to do?"
+        "vi": "町は、住民に何を呼びかけていますか。",
+        "en": "町は、住民に何を呼びかけていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mang rác đến trung tâm thị trấn",
-            "en": "Bring their waste to the town center"
-          },
-          {
-            "vi": "Tách chai nhựa và lon khi đem bỏ",
-            "en": "Separate PET bottles and cans when putting them out"
-          },
-          {
-            "vi": "Mua ít chai nhựa hơn",
-            "en": "Buy fewer PET bottles"
-          }
+          "ごみを町の中心まで持ってくること",
+          "ペットボトルと缶を分けて出すこと",
+          "ペットボトルをあまり買わないこと"
         ],
         "correct_index": 1
       },
@@ -65,23 +56,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Nếu phân loại đúng cách thì điều gì xảy ra?",
-        "en": "What happens if the waste is sorted properly?"
+        "vi": "きちんと分けると、どうなりますか。",
+        "en": "きちんと分けると、どうなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thị trấn thu được nhiều thuế hơn",
-            "en": "The town collects more taxes"
-          },
-          {
-            "vi": "Rác được đốt nhanh hơn",
-            "en": "The waste is burned faster"
-          },
-          {
-            "vi": "Có thể tái sử dụng như tài nguyên",
-            "en": "It can be reused as a resource"
-          }
+          "町の税金が増える",
+          "ごみが早くもえる",
+          "資源として再び利用できる"
         ],
         "correct_index": 2
       },
@@ -97,23 +79,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Người phụ trách của thị trấn nhấn mạnh điều gì?",
-        "en": "What does the town official emphasise?"
+        "vi": "町の担当者は、何が大切だと言っていますか。",
+        "en": "町の担当者は、何が大切だと言っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Sự hợp tác của từng người",
-            "en": "The cooperation of each person"
-          },
-          {
-            "vi": "Nghĩa vụ nộp phạt",
-            "en": "The obligation to pay fines"
-          },
-          {
-            "vi": "Công nghệ xử lý rác mới",
-            "en": "New waste-processing technology"
-          }
+          "一人一人の協力",
+          "罰金を払う義務",
+          "新しいごみ処理の技術"
         ],
         "correct_index": 0
       },

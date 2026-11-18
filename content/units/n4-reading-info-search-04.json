@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Đợt giảm giá diễn ra vào những ngày nào?",
-        "en": "On which days is the sale?"
+        "vi": "セールは、いつありますか。",
+        "en": "セールは、いつありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cả tuần",
-            "en": "All week"
-          },
-          {
-            "vi": "Chỉ thứ Bảy và Chủ nhật",
-            "en": "Only Saturday and Sunday"
-          },
-          {
-            "vi": "Chỉ ngày thường",
-            "en": "Only weekdays"
-          }
+          "一週間ずっと",
+          "土曜日と日曜日だけ",
+          "平日だけ"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Khi nào bánh mì được bán nửa giá?",
-        "en": "When is bread sold at half price?"
+        "vi": "パンが半分のねだんになるのは、いつですか。",
+        "en": "パンが半分のねだんになるのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Sau 6 giờ chiều",
-            "en": "After 6 p.m."
-          },
-          {
-            "vi": "Trước 10 giờ sáng",
-            "en": "Before 10 a.m."
-          },
-          {
-            "vi": "Cả ngày",
-            "en": "All day"
-          }
+          "午後6時すぎ",
+          "午前10時より前",
+          "一日じゅう"
         ],
         "correct_index": 0
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Cần làm gì để được túi nilon miễn phí?",
-        "en": "What must you do to get a free plastic bag?"
+        "vi": "ビニールぶくろをただでもらうには、どうすればいいですか。",
+        "en": "ビニールぶくろをただでもらうには、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mua từ 5.000 yên trở lên",
-            "en": "Buy 5,000 yen or more"
-          },
-          {
-            "vi": "Mua 5 quả trứng",
-            "en": "Buy five eggs"
-          },
-          {
-            "vi": "Đến trước 6 giờ chiều",
-            "en": "Come before 6 p.m."
-          }
+          "5,000円以上買う",
+          "たまごを5つ買う",
+          "午後6時前に行く"
         ],
         "correct_index": 0
       },

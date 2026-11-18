@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Japanese Learning API
-  version: 1.15.0
+  version: 1.16.0
   description: |
     Hợp đồng REST API cho Giai đoạn 1 – MVP (nhánh `001-phase1-mvp`).
     - Tiền tố: `/api/v1`. Xác thực: `Authorization: Bearer <accessToken>` trừ các endpoint đánh dấu công khai.
@@ -23,6 +23,7 @@ info:
       1.13.0 (2026-11-08, spec 005-reward-feedback-effects) – bổ sung hiệu ứng thưởng: (1) `SessionSummary.celebrations` (tùy chọn) trả MỘT LẦN, trong phản hồi của lần `POST /sessions/{id}/complete` thực sự hoàn thành phiên: lời chúc mừng hoàn thành ngày (`dayCompleted`) và danh sách thành tựu vừa đạt (`achievements`, đã bản địa hóa theo ngôn ngữ hồ sơ); gọi lại trên phiên đã hoàn thành KHÔNG trả trường này và không ghi thêm gì; (2) `Profile` và `ProfileUpdate` thêm `soundEnabled`, `visualEffectsEnabled` (mặc định true; KHÔNG thuộc nhóm trường bị khóa khi người học thuộc lớp). Thành tựu không có endpoint đọc lại và không xuất hiện trong các DTO của giáo viên/tổ chức. Thay đổi bổ sung; client 1.12.0 bỏ qua các trường mới.
       1.14.0 (spec 007-fix-comments) – hoàn thiện trải nghiệm học: (1) enum `Skill` thêm `reading` (luyện đọc) và `writing` (luyện viết, gõ bàn phím); hai kỹ năng này chỉ có hiệu lực với học viên có quỹ thời gian đang áp dụng ≥ 30 phút/ngày (kiểm ở máy chủ); thêm mã lỗi `PRACTICE_LOCKED` (403); thêm `GET /study-defaults` (bảng gợi ý kỹ năng theo quỹ thời gian); (2) `DailyPlan.encouragement` (lời khích lệ theo tiến độ, đã bản địa hóa) và `PlanItem.competency`; `ProgressSummary.competency`; mục `items` của `PathDetail` thêm `competency` (mức năng lực: good | needs_improvement | insufficient); (3) `Profile.skills` vẫn trả giá trị ĐÃ LƯU (kể cả `reading/writing` đang bị khóa do quỹ thời gian < 30 phút); `PATCH /me` và `PUT /onboarding*` từ chối THÊM `reading/writing` khi quỹ thời gian sau cập nhật < 30 phút (422). Thay đổi bổ sung; client PHẢI phát hành cùng backend (enum `Skill` mở rộng).
       1.15.0 (spec 008-n4-n3-jlpt-content) – mở rộng nội dung N4/N3: (1) `GET /path` nhận tham số lọc tùy chọn `kind`, `level`, `status`, `limit`, `offset` và trả thêm `itemsTotal` (số đơn vị khớp bộ lọc trước `limit`/`offset`); không có tham số thì hành vi cũ (toàn bộ đơn vị); `totalUnits`/`completedUnits` luôn của toàn bộ lộ trình; (2) `PathSummary.notices` và `ProgressSummary.goal.notices` (mảng `ScopeNoticeCode`, tính khi đọc, không lưu vào lộ trình): `content_ceiling_n3` như `scopeNotice` cũ và `listening_not_available` khi mục tiêu là JLPT (ứng dụng chưa có phần nghe hiểu); `scopeNotice` giữ nguyên; (3) `ProgressSummary.goal.completionRatio` nay tính theo TỔNG PHÚT (Σ estMinutes đã xong / Σ estMinutes trong phạm vi) thay vì số đơn vị; (4) Admin: kích hoạt đơn vị kiểm tra "mục chính duy nhất" cho từ vựng và ngữ pháp (trước chỉ Kanji) nên `PUT /admin/units/{unitId}` và `PUT /admin/units/{unitId}/status` có thể trả `422 VALIDATION_FAILED`. Thay đổi bổ sung/làm rõ, không thêm route; client PHẢI sinh lại từ OpenAPI 1.15.0.
+      1.16.0 (2026-11-18) – bổ sung `GET /lookup` (`lookupTerms`, schema `LookupResult`): tra nghĩa/âm đọc của cụm Hán tự cho popup furigana ở bài luyện đọc (thay cho dòng cách đọc hiển thị dưới đoạn văn). Chỉ đọc, cần đăng nhập, không đổi route cũ. Thay đổi bổ sung; client cũ bỏ qua.
 servers:
   - url: /api/v1
 tags:
@@ -399,6 +400,24 @@ paths:
             application/json:
               schema: { $ref: '#/components/schemas/StudyDefaults' }
         '401': { $ref: '#/components/responses/Unauthorized' }
+  /lookup:
+    get:
+      operationId: lookupTerms
+      tags: [path]
+      summary: Tra nghĩa và âm đọc của cụm Hán tự cho popup furigana bài luyện đọc
+      description: >-
+        Chỉ đọc, nội dung dùng chung đã bản địa hóa theo ngôn ngữ hồ sơ. `terms` là danh sách cụm Hán tự (hoặc cụm kèm okurigana) ngăn bởi dấu phẩy, tối đa 60 cụm, mỗi cụm 1–20 ký tự.
+        `words` chứa từ vựng trong thư viện có `japanese` trùng khít một cụm; `kanji` chứa từng chữ Kanji (trong thư viện) xuất hiện trong các cụm. Cụm/chữ không có trong thư viện thì vắng mặt (không lỗi).
+      parameters:
+        - { name: terms, in: query, required: true, schema: { type: string, minLength: 1 } }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/LookupResult' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '422': { $ref: '#/components/responses/ValidationError' }
   /placement/submit:
     post:
       operationId: submitPlacement
@@ -1869,6 +1888,29 @@ components:
         state: { type: string, enum: [not_started, in_progress, completed] }
         draft: { $ref: '#/components/schemas/OnboardingDraft' }
         carriedPlacement: { type: object, allOf: [{ $ref: '#/components/schemas/PlacementResult' }], nullable: true }
+    LookupResult:
+      type: object
+      required: [words, kanji]
+      properties:
+        words:
+          type: array
+          items:
+            type: object
+            required: [term, reading, meaning]
+            properties:
+              term: { type: string }
+              reading: { type: string, nullable: true, description: Cách đọc kana của từ }
+              meaning: { type: string, description: Nghĩa đã bản địa hóa }
+        kanji:
+          type: array
+          items:
+            type: object
+            required: [char, meaning, onReadings, kunReadings]
+            properties:
+              char: { type: string }
+              meaning: { type: string, description: Nghĩa đã bản địa hóa }
+              onReadings: { type: array, items: { type: string }, description: Âm On (katakana) }
+              kunReadings: { type: array, items: { type: string }, description: 'Âm Kun (hiragana, `.` phân cách okurigana)' }
     StudyDefaults:
       type: object
       required: [items, practiceMinDailyMinutes]

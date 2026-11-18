@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Số máy bán hàng tự động ở Nhật khoảng bao nhiêu?",
-        "en": "About how many vending machines are there in Japan?"
+        "vi": "日本の自動販売機は、約何台ありますか。",
+        "en": "日本の自動販売機は、約何台ありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khoảng 40.000 máy",
-            "en": "About 40,000"
-          },
-          {
-            "vi": "Khoảng 400.000 máy",
-            "en": "About 400,000"
-          },
-          {
-            "vi": "Khoảng 4 triệu máy",
-            "en": "About 4 million"
-          }
+          "約4万台",
+          "約40万台",
+          "約400万台"
         ],
         "correct_index": 2
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Một lý do khiến máy bán hàng tự động nhiều là gì?",
-        "en": "What is one reason there are so many vending machines?"
+        "vi": "自動販売機が多い理由の一つは何ですか。",
+        "en": "自動販売機が多い理由の一つは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "An ninh tốt nên ít lo máy bị phá hỏng",
-            "en": "Public safety is good, so there is little worry about damage"
-          },
-          {
-            "vi": "Chính phủ trả tiền đặt máy",
-            "en": "The government pays for installation"
-          },
-          {
-            "vi": "Người Nhật không thích vào cửa hàng",
-            "en": "Japanese people dislike entering shops"
-          }
+          "治安が良く、機械がこわされる心配が少ないから",
+          "国がお金を出して置いているから",
+          "日本人は店に入るのがきらいだから"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao đặt máy thường rẻ hơn mở cửa hàng?",
-        "en": "Why is placing a machine often cheaper than opening a shop?"
+        "vi": "機械を置くほうが、店を開くより費用が安くすむ場合が多いのはなぜですか。",
+        "en": "機械を置くほうが、店を開くより費用が安くすむ場合が多いのはなぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Máy không cần điện",
-            "en": "Machines need no electricity"
-          },
-          {
-            "vi": "Không phải thuê người, nên tiết kiệm chi phí nhân công",
-            "en": "No staff need to be hired, so labor costs are saved"
-          },
-          {
-            "vi": "Thuế được miễn",
-            "en": "They are tax-exempt"
-          }
+          "機械は電気を使わないから",
+          "人をやとわなくてすみ、人件費をおさえられるから",
+          "税金がかからないから"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Ví dụ nào cho thấy máy tự động “hữu ích cho xã hội”?",
-        "en": "Which example shows vending machines “helping society”?"
+        "vi": "自動販売機が「社会の役に立つ」例として挙げられているのはどれですか。",
+        "en": "自動販売機が「社会の役に立つ」例として挙げられているのはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Máy bán được nhiều loại bánh",
-            "en": "Machines that sell many kinds of snacks"
-          },
-          {
-            "vi": "Máy phát đồ uống miễn phí khi có thiên tai",
-            "en": "Machines that give out drinks for free during disasters"
-          },
-          {
-            "vi": "Máy chơi nhạc to",
-            "en": "Machines that play loud music"
-          }
+          "いろいろなパンが買える機械",
+          "災害のときにただで飲み物を出す機械",
+          "大きな音で音楽を流す機械"
         ],
         "correct_index": 1
       },

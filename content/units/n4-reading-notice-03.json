@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Khi nào nước không chảy?",
-        "en": "When will the water not come out?"
+        "vi": "水が出ないのは、いつですか。",
+        "en": "水が出ないのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Từ 9 giờ đến 12 giờ sáng mai",
-            "en": "Tomorrow from 9 a.m. to 12 noon"
-          },
-          {
-            "vi": "Từ 9 giờ đến 12 giờ tối nay",
-            "en": "Tonight from 9 p.m. to 12 midnight"
-          },
-          {
-            "vi": "Cả ngày mai",
-            "en": "All day tomorrow"
-          }
+          "あしたの午前九時から十二時まで",
+          "今夜九時から十二時まで",
+          "あした一日じゅう"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Cư dân nên làm gì trước 9 giờ?",
-        "en": "What should residents do before 9 o’clock?"
+        "vi": "住んでいる人は、九時までに何をしておけばいいですか。",
+        "en": "住んでいる人は、九時までに何をしておけばいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gọi cho công ty nước",
-            "en": "Call the water company"
-          },
-          {
-            "vi": "Đi ra khỏi chung cư",
-            "en": "Leave the apartment building"
-          },
-          {
-            "vi": "Trữ nước vào xô hoặc bồn tắm",
-            "en": "Store water in buckets or the bathtub"
-          }
+          "水道会社に電話する",
+          "アパートの外に出る",
+          "バケツやおふろに水を入れておく"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Muốn đi vệ sinh trong lúc cúp nước thì làm thế nào?",
-        "en": "What should you do if you need a toilet during the shutoff?"
+        "vi": "水が出ない間、トイレはどうすればいいですか。",
+        "en": "水が出ない間、トイレはどうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Dùng nhà vệ sinh ở công viên gần đó",
-            "en": "Use the toilet in the nearby park"
-          },
-          {
-            "vi": "Dùng nhà vệ sinh của hàng xóm",
-            "en": "Use a neighbor’s toilet"
-          },
-          {
-            "vi": "Chờ đến 12 giờ",
-            "en": "Wait until 12 o’clock"
-          }
+          "近くのこうえんのトイレを使う",
+          "となりの人のトイレを使う",
+          "十二時まで待つ"
         ],
         "correct_index": 0
       },

@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Ngày nắng, người không phải sinh viên thuê 3 tiếng thì phải trả bao nhiêu?",
-        "en": "On a sunny day, how much does a non-student pay to rent a bike for 3 hours?"
+        "vi": "晴れの日に、学生ではない人が3時間借りると、いくらですか。",
+        "en": "晴れの日に、学生ではない人が3時間借りると、いくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "500 yên",
-            "en": "500 yen"
-          },
-          {
-            "vi": "800 yên",
-            "en": "800 yen"
-          },
-          {
-            "vi": "1.200 yên",
-            "en": "1,200 yen"
-          }
+          "500円",
+          "800円",
+          "1,200円"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Sinh viên thuê 1 ngày vào ngày mưa thì phải trả bao nhiêu?",
-        "en": "How much does a student pay for one day on a rainy day?"
+        "vi": "学生が雨の日に1日借りると、いくらですか。",
+        "en": "学生が雨の日に1日借りると、いくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1.000 yên",
-            "en": "1,000 yen"
-          },
-          {
-            "vi": "900 yên",
-            "en": "900 yen"
-          },
-          {
-            "vi": "700 yên",
-            "en": "700 yen"
-          }
+          "1,000円",
+          "900円",
+          "700円"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Thuê 2 ngày liên tiếp vào những ngày nắng (không phải sinh viên) thì tổng bao nhiêu?",
-        "en": "How much is it to rent for two days in a row on sunny days (non-student)?"
+        "vi": "学生ではない人が、晴れの日に2日つづけて借りると、ぜんぶでいくらですか。",
+        "en": "学生ではない人が、晴れの日に2日つづけて借りると、ぜんぶでいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1.200 yên",
-            "en": "1,200 yen"
-          },
-          {
-            "vi": "2.000 yên",
-            "en": "2,000 yen"
-          },
-          {
-            "vi": "2.400 yên",
-            "en": "2,400 yen"
-          }
+          "1,200円",
+          "2,000円",
+          "2,400円"
         ],
         "correct_index": 1
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Nếu trả xe lúc 7 giờ tối thì phải trả thêm bao nhiêu?",
-        "en": "How much extra is charged if the bike is returned at 7 p.m.?"
+        "vi": "夜7時に自転車をかえすと、いくらよけいにかかりますか。",
+        "en": "夜7時に自転車をかえすと、いくらよけいにかかりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Không mất thêm",
-            "en": "Nothing extra"
-          },
-          {
-            "vi": "300 yên",
-            "en": "300 yen"
-          },
-          {
-            "vi": "600 yên",
-            "en": "600 yen"
-          }
+          "かからない",
+          "300円",
+          "600円"
         ],
         "correct_index": 1
       },

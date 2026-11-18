@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Mục đích của email là gì?",
-        "en": "What is the purpose of the email?"
+        "vi": "このメールの目的は何ですか。",
+        "en": "このメールの目的は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hủy buổi trao đổi tuần sau",
-            "en": "To cancel next week’s meeting"
-          },
-          {
-            "vi": "Sắp xếp ngày giờ cho buổi trao đổi tuần sau",
-            "en": "To arrange the date and time of next week’s meeting"
-          },
-          {
-            "vi": "Báo cáo kết quả buổi trao đổi",
-            "en": "To report the results of the meeting"
-          }
+          "来週の打ち合わせを中止すること",
+          "来週の打ち合わせの日時を決めること",
+          "打ち合わせの結果を報告すること"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Người viết đưa ra mấy lựa chọn ngày giờ?",
-        "en": "How many date-and-time options does the writer give?"
+        "vi": "書いた人は、日時をいくつ出していますか。",
+        "en": "書いた人は、日時をいくつ出していますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "2",
-            "en": "Two"
-          },
-          {
-            "vi": "3",
-            "en": "Three"
-          },
-          {
-            "vi": "5",
-            "en": "Five"
-          }
+          "2つ",
+          "3つ",
+          "5つ"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Nếu không lựa chọn nào phù hợp thì người nhận nên làm gì?",
-        "en": "What should the recipient do if none of the options works?"
+        "vi": "どの日時も都合が悪いとき、受け取った人はどうすればいいですか。",
+        "en": "どの日時も都合が悪いとき、受け取った人はどうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chờ liên lạc tiếp theo",
-            "en": "Wait for further contact"
-          },
-          {
-            "vi": "Đề xuất một phương án khác",
-            "en": "Suggest another option"
-          },
-          {
-            "vi": "Đến thẳng văn phòng",
-            "en": "Come straight to the office"
-          }
+          "次の連絡を待つ",
+          "別の候補を提案する",
+          "直接事務所に行く"
         ],
         "correct_index": 1
       },

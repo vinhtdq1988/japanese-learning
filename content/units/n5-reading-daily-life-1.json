@@ -34,14 +34,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Anh Tanaka đi làm lúc mấy giờ?",
-        "en": "What time does Mr. Tanaka go to work?"
+        "vi": "田中さんは、何時に会社へ行きますか。",
+        "en": "田中さんは、何時に会社へ行きますか。"
       },
       "payload": {
         "choices": [
-          "7:00",
-          "8:00",
-          "9:00"
+          "七時",
+          "八時",
+          "九時"
         ],
         "correct_index": 1
       },
@@ -57,23 +57,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Anh Tanaka ăn trưa ở đâu?",
-        "en": "Where does Mr. Tanaka eat lunch?"
+        "vi": "田中さんは、昼ごはんをどこで食べますか。",
+        "en": "田中さんは、昼ごはんをどこで食べますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ở nhà",
-            "en": "At home"
-          },
-          {
-            "vi": "Ở nhà hàng gần ga",
-            "en": "At a restaurant near the station"
-          },
-          {
-            "vi": "Ở nhà ăn của công ty",
-            "en": "At the company canteen"
-          }
+          "家",
+          "駅の近くのレストラン",
+          "会社の食堂"
         ],
         "correct_index": 2
       },
@@ -89,23 +80,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Buổi tối anh Tanaka làm gì?",
-        "en": "What does Mr. Tanaka do in the evening?"
+        "vi": "田中さんは、夜、何をしますか。",
+        "en": "田中さんは、夜、何をしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đọc sách ở nhà",
-            "en": "Reads a book at home"
-          },
-          {
-            "vi": "Xem phim ở rạp",
-            "en": "Watches a movie at the cinema"
-          },
-          {
-            "vi": "Đi mua sắm",
-            "en": "Goes shopping"
-          }
+          "家で本を読みます",
+          "映画館で映画を見ます",
+          "買い物に行きます"
         ],
         "correct_index": 0
       },

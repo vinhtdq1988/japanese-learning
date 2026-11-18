@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Vào lúc nào có thể đi khám?",
-        "en": "At which of these times can you be seen?"
+        "vi": "診察をうけられるのは、いつですか。",
+        "en": "診察をうけられるのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Tư, 4 giờ chiều",
-            "en": "Wednesday, 4 p.m."
-          },
-          {
-            "vi": "Thứ Năm, 4 giờ chiều",
-            "en": "Thursday, 4 p.m."
-          },
-          {
-            "vi": "Thứ Bảy, 4 giờ chiều",
-            "en": "Saturday, 4 p.m."
-          }
+          "水曜日の午後4時",
+          "木曜日の午後4時",
+          "土曜日の午後4時"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Người đến lần đầu phải mang theo gì?",
-        "en": "What must first-time patients bring?"
+        "vi": "はじめての人は、何を持っていかなければなりませんか。",
+        "en": "はじめての人は、何を持っていかなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thẻ bảo hiểm",
-            "en": "An insurance card"
-          },
-          {
-            "vi": "Tiền mặt 5.000 yên",
-            "en": "5,000 yen in cash"
-          },
-          {
-            "vi": "Thư giới thiệu",
-            "en": "A letter of introduction"
-          }
+          "ほけんしょう",
+          "現金5,000円",
+          "しょうかいじょう"
         ],
         "correct_index": 0
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Làm thế nào để thời gian chờ ngắn hơn?",
-        "en": "How can you shorten the waiting time?"
+        "vi": "待つ時間をみじかくするには、どうすればいいですか。",
+        "en": "待つ時間をみじかくするには、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đến sớm 1 tiếng",
-            "en": "Arrive an hour early"
-          },
-          {
-            "vi": "Đặt lịch bằng điện thoại",
-            "en": "Reserve by phone"
-          },
-          {
-            "vi": "Đến vào Chủ nhật",
-            "en": "Come on Sunday"
-          }
+          "1時間早く行く",
+          "電話でよやくする",
+          "日曜日に行く"
         ],
         "correct_index": 1
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Người bị sốt nên làm gì?",
-        "en": "What should someone with a fever do?"
+        "vi": "ねつがある人は、どうすればいいですか。",
+        "en": "ねつがある人は、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chờ ngoài cửa đến khi được gọi",
-            "en": "Wait outside until called"
-          },
-          {
-            "vi": "Đeo khẩu trang ở cửa và báo với quầy tiếp tân",
-            "en": "Put on a mask at the entrance and tell reception"
-          },
-          {
-            "vi": "Gọi xe cấp cứu",
-            "en": "Call an ambulance"
-          }
+          "入口の外で、呼ばれるまで待つ",
+          "入口でマスクをつけて、うけつけで言う",
+          "救急車を呼ぶ"
         ],
         "correct_index": 1
       },

@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả bắt đầu học nấu ăn từ khi nào?",
-        "en": "Since when has the writer been learning to cook?"
+        "vi": "筆者は、いつから料理を習っていますか。",
+        "en": "筆者は、いつから料理を習っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Một tháng trước",
-            "en": "One month ago"
-          },
-          {
-            "vi": "Ba tháng trước",
-            "en": "Three months ago"
-          },
-          {
-            "vi": "Từ năm ngoái",
-            "en": "Since last year"
-          }
+          "一か月前から",
+          "三か月前から",
+          "去年から"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao trước đây tác giả lo cho sức khỏe?",
-        "en": "Why was the writer worried about their health before?"
+        "vi": "筆者は、前はどうして体のことがしんぱいでしたか。",
+        "en": "筆者は、前はどうして体のことがしんぱいでしたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì ít ngủ",
-            "en": "Because they slept little"
-          },
-          {
-            "vi": "Vì hay ăn ngoài",
-            "en": "Because they often ate out"
-          },
-          {
-            "vi": "Vì hay bỏ bữa sáng",
-            "en": "Because they often skipped breakfast"
-          }
+          "あまりねていなかったから",
+          "外で食べることが多かったから",
+          "朝ごはんを食べないことが多かったから"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Món tác giả thích nhất là gì?",
-        "en": "What does the writer like most?"
+        "vi": "筆者がいちばんすきな料理は何ですか。",
+        "en": "筆者がいちばんすきな料理は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cà ri",
-            "en": "Curry"
-          },
-          {
-            "vi": "Mì ramen",
-            "en": "Ramen"
-          },
-          {
-            "vi": "Cá nướng",
-            "en": "Grilled fish"
-          }
+          "カレー",
+          "ラーメン",
+          "やきざかな"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Bạn bè đã nói gì về món ăn tác giả nấu?",
-        "en": "What did friends say about the dish the writer cooked?"
+        "vi": "友だちは、筆者が作った料理について、何と言いましたか。",
+        "en": "友だちは、筆者が作った料理について、何と言いましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hơi mặn",
-            "en": "It was a little salty"
-          },
-          {
-            "vi": "Giống vị của nhà hàng",
-            "en": "It tasted like a restaurant"
-          },
-          {
-            "vi": "Nên nấu lâu hơn",
-            "en": "It should be cooked longer"
-          }
+          "少ししょっぱい",
+          "お店の味みたいだ",
+          "もっと長くにたほうがいい"
         ],
         "correct_index": 1
       },

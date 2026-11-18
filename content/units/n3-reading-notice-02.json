@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điều gì sẽ thay đổi từ tháng sau?",
-        "en": "What will change from next month?"
+        "vi": "来月から何が変わりますか。",
+        "en": "来月から何が変わりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Giờ làm việc",
-            "en": "Working hours"
-          },
-          {
-            "vi": "Cách đăng ký làm thêm giờ",
-            "en": "How to apply for overtime"
-          },
-          {
-            "vi": "Tiền lương làm thêm giờ",
-            "en": "Overtime pay"
-          }
+          "勤務時間",
+          "残業の申請方法",
+          "残業代"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trước đây nhân viên đăng ký làm thêm giờ như thế nào?",
-        "en": "How did employees apply for overtime before?"
+        "vi": "これまで、社員はどうやって残業を申請していましたか。",
+        "en": "これまで、社員はどうやって残業を申請していましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nói miệng với cấp trên",
-            "en": "They told their supervisor verbally"
-          },
-          {
-            "vi": "Điền vào giấy",
-            "en": "They filled in a paper form"
-          },
-          {
-            "vi": "Gửi email cho phòng nhân sự",
-            "en": "They emailed the Personnel Department"
-          }
+          "上司に口で伝えていた",
+          "紙に書いて出していた",
+          "人事課にメールを送っていた"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Khi cần làm thêm giờ đột xuất thì phải làm gì?",
-        "en": "What must you do if sudden overtime is needed?"
+        "vi": "急に残業が必要になったときは、どうすればいいですか。",
+        "en": "急に残業が必要になったときは、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đăng ký trước 3 giờ chiều cùng ngày",
-            "en": "Apply by 3 p.m. on the same day"
-          },
-          {
-            "vi": "Đăng ký trước một ngày",
-            "en": "Apply the day before"
-          },
-          {
-            "vi": "Không cần đăng ký",
-            "en": "No application is needed"
-          }
+          "当日の午後3時までに申請する",
+          "前の日までに申請する",
+          "申請しなくてもいい"
         ],
         "correct_index": 0
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Giờ làm thêm không được đăng ký thì sao?",
-        "en": "What happens to overtime that has not been applied for?"
+        "vi": "申請がない残業は、どうなりますか。",
+        "en": "申請がない残業は、どうなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vẫn được trả lương",
-            "en": "It is still paid"
-          },
-          {
-            "vi": "Không được công nhận",
-            "en": "It is not recognized"
-          },
-          {
-            "vi": "Phải nộp báo cáo sau",
-            "en": "A report must be submitted later"
-          }
+          "今までどおり給料が出る",
+          "認められない",
+          "あとで報告書を出さなければならない"
         ],
         "correct_index": 1
       },

@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Công ty nghỉ hè vào những ngày nào?",
-        "en": "On which days is the company on summer vacation?"
+        "vi": "会社の夏休みは、いつですか。",
+        "en": "会社の夏休みは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ngày 13 đến ngày 15 tháng 8",
-            "en": "August 13 to 15"
-          },
-          {
-            "vi": "Ngày 12 đến ngày 16 tháng 8",
-            "en": "August 12 to 16"
-          },
-          {
-            "vi": "Cả tháng 8",
-            "en": "All of August"
-          }
+          "八月十三日から十五日まで",
+          "八月十二日から十六日まで",
+          "八月じゅうずっと"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Trong kỳ nghỉ, điều gì không làm được?",
-        "en": "What cannot be done during the vacation?"
+        "vi": "夏休みの間にできないことは何ですか。",
+        "en": "夏休みの間にできないことは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Xin nghỉ phép",
-            "en": "Asking for leave"
-          },
-          {
-            "vi": "Trả lời điện thoại và email",
-            "en": "Answering phone calls and emails"
-          },
-          {
-            "vi": "Đến công ty lấy đồ",
-            "en": "Going to the office to pick up things"
-          }
+          "休みをとること",
+          "電話やメールに答えること",
+          "会社に荷物を取りに来ること"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Người có việc quan trọng phải làm gì?",
-        "en": "What should people with something important do?"
+        "vi": "大切な用事がある人は、どうしなければなりませんか。",
+        "en": "大切な用事がある人は、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gọi điện vào ngày 14",
-            "en": "Call on the 14th"
-          },
-          {
-            "vi": "Đến công ty vào ngày 16",
-            "en": "Come to the office on the 16th"
-          },
-          {
-            "vi": "Liên lạc với người viết trước ngày 12",
-            "en": "Contact the writer by the 12th"
-          }
+          "十四日に電話する",
+          "十六日に会社に来る",
+          "十二日までに書いた人にれんらくする"
         ],
         "correct_index": 2
       },

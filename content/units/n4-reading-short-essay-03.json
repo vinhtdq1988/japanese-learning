@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao dạo này tác giả khó dậy buổi sáng?",
-        "en": "Why has it been hard for the writer to get up recently?"
+        "vi": "筆者は、最近どうして朝起きるのがつらいのですか。",
+        "en": "筆者は、最近どうして朝起きるのがつらいのですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì phải đi làm sớm",
-            "en": "Because work starts early"
-          },
-          {
-            "vi": "Vì đi ngủ muộn do xem điện thoại",
-            "en": "Because they go to bed late looking at their phone"
-          },
-          {
-            "vi": "Vì tiếng ồn ban đêm",
-            "en": "Because of noise at night"
-          }
+          "会社に早く行かなければならないから",
+          "夜おそくまでスマホを見ていて、ねるのがおそいから",
+          "夜、うるさいから"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Anh Tanaka đã nói gì với tác giả?",
-        "en": "What did Mr. Tanaka say to the writer?"
+        "vi": "田中さんは、筆者に何と言いましたか。",
+        "en": "田中さんは、筆者に何と言いましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "“Sắc mặt cậu không tốt đâu”",
-            "en": "“You don’t look well”"
-          },
-          {
-            "vi": "“Cậu làm việc rất chăm chỉ”",
-            "en": "“You work very hard”"
-          },
-          {
-            "vi": "“Cậu nên đi khám bệnh ngay”",
-            "en": "“You should see a doctor right away”"
-          }
+          "「顔色がよくないよ」",
+          "「よくがんばっているね」",
+          "「すぐ病院に行ったほうがいいよ」"
         ],
         "correct_index": 0
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả đã quyết định điều gì?",
-        "en": "What did the writer decide to do?"
+        "vi": "筆者は、何をすることにしましたか。",
+        "en": "筆者は、何をすることにしましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nghỉ làm vài ngày",
-            "en": "Take a few days off"
-          },
-          {
-            "vi": "Đi ngủ sớm từ hôm nay",
-            "en": "Go to bed early starting today"
-          },
-          {
-            "vi": "Bỏ điện thoại",
-            "en": "Give up the phone completely"
-          }
+          "会社を何日か休む",
+          "今日から早くねる",
+          "スマホをすてる"
         ],
         "correct_index": 1
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trước khi ngủ, tác giả định làm gì?",
-        "en": "What does the writer plan to do before sleeping?"
+        "vi": "筆者は、ねる前に何をしようと思っていますか。",
+        "en": "筆者は、ねる前に何をしようと思っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tắm và vừa đọc sách vừa thư giãn",
-            "en": "Take a bath and relax while reading a book"
-          },
-          {
-            "vi": "Xem phim trên điện thoại",
-            "en": "Watch a movie on the phone"
-          },
-          {
-            "vi": "Uống một cốc trà nóng rồi học bài",
-            "en": "Drink hot tea and study"
-          }
+          "おふろに入って、本を読みながらゆっくりする",
+          "スマホで映画を見る",
+          "あついお茶を飲んで勉強する"
         ],
         "correct_index": 0
       },

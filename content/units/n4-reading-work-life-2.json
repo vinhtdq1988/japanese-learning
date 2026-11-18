@@ -35,23 +35,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Từ nhà đến ga mất bao lâu?",
-        "en": "How long does it take to get from home to the station?"
+        "vi": "家から駅まで、どのくらいかかりますか。",
+        "en": "家から駅まで、どのくらいかかりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "10 phút đi bộ",
-            "en": "10 minutes on foot"
-          },
-          {
-            "vi": "30 phút đi bộ",
-            "en": "30 minutes on foot"
-          },
-          {
-            "vi": "40 phút đi tàu",
-            "en": "40 minutes by train"
-          }
+          "歩いて十分",
+          "歩いて三十分",
+          "電車で四十分"
         ],
         "correct_index": 0
       },
@@ -67,23 +58,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Vì sao người viết không ngồi được trên tàu?",
-        "en": "Why can the writer not get a seat on the train?"
+        "vi": "筆者が電車で座れないのは、なぜですか。",
+        "en": "筆者が電車で座れないのは、なぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì tàu rất ngắn",
-            "en": "Because the train is very short"
-          },
-          {
-            "vi": "Vì người viết thích đứng",
-            "en": "Because the writer prefers to stand"
-          },
-          {
-            "vi": "Vì buổi sáng có nhiều người",
-            "en": "Because the train is crowded in the morning"
-          }
+          "電車がとてもみじかいから",
+          "立っているのがすきだから",
+          "朝は人が多いから"
         ],
         "correct_index": 2
       },
@@ -99,23 +81,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Người viết làm gì trên tàu?",
-        "en": "What does the writer do on the train?"
+        "vi": "筆者は、電車の中で何をしていますか。",
+        "en": "筆者は、電車の中で何をしていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Học tiếng Anh",
-            "en": "Studies English"
-          },
-          {
-            "vi": "Đọc báo",
-            "en": "Reads the newspaper"
-          },
-          {
-            "vi": "Ngủ",
-            "en": "Sleeps"
-          }
+          "英語の勉強",
+          "新聞を読むこと",
+          "ねること"
         ],
         "correct_index": 0
       },
@@ -131,23 +104,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Tuần trước vì sao người viết đến công ty trễ?",
-        "en": "Why was the writer late to work last week?"
+        "vi": "先週、筆者はどうして会社に遅れましたか。",
+        "en": "先週、筆者はどうして会社に遅れましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Người viết ngủ quên",
-            "en": "The writer overslept"
-          },
-          {
-            "vi": "Tàu dừng vì có tai nạn",
-            "en": "The train stopped because of an accident"
-          },
-          {
-            "vi": "Công ty dời giờ làm",
-            "en": "The company changed the working hours"
-          }
+          "ねぼうしたから",
+          "電車が事故で止まったから",
+          "会社の始まる時間がかわったから"
         ],
         "correct_index": 1
       },

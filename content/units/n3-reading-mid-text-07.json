@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tiền điện tử là cơ chế như thế nào?",
-        "en": "What is electronic money as described here?"
+        "vi": "電子マネーとは、どのようなしくみですか。",
+        "en": "電子マネーとは、どのようなしくみですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nạp sẵn tiền vào thẻ hoặc điện thoại rồi chạm vào máy để thanh toán",
-            "en": "Money loaded in advance onto a card or phone and paid by touching the store’s machine"
-          },
-          {
-            "vi": "Gửi tiền mặt qua bưu điện",
-            "en": "Sending cash by post"
-          },
-          {
-            "vi": "Thanh toán bằng séc",
-            "en": "Paying by check"
-          }
+          "カードやスマートフォンにお金を入れておき、機械にかざして支払う",
+          "現金を郵便で送る",
+          "小切手で支払う"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điểm tiện lợi nào của tiền điện tử được nêu?",
-        "en": "Which convenience of electronic money is mentioned?"
+        "vi": "電子マネーの便利な点として挙げられているのはどれですか。",
+        "en": "電子マネーの便利な点として挙げられているのはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tính tiền nhanh và không cần tìm tiền xu",
-            "en": "Checkout is quick and you do not need to look for coins"
-          },
-          {
-            "vi": "Luôn được giảm giá một nửa",
-            "en": "You always get half off"
-          },
-          {
-            "vi": "Không bao giờ mất thẻ",
-            "en": "The card can never be lost"
-          }
+          "会計が早く、小銭をさがす必要がない",
+          "いつも半額になる",
+          "カードを絶対になくさない"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điểm cần chú ý nào được nêu?",
-        "en": "Which point of caution is mentioned?"
+        "vi": "注意すべき点として挙げられているのはどれですか。",
+        "en": "注意すべき点として挙げられているのはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cảm giác tiêu tiền mờ đi nên dễ tiêu quá tay",
-            "en": "The sense of spending fades, making overspending easy"
-          },
-          {
-            "vi": "Phải trả phí hằng tháng cao",
-            "en": "A high monthly fee must be paid"
-          },
-          {
-            "vi": "Chỉ dùng được ở nước ngoài",
-            "en": "It can only be used abroad"
-          }
+          "お金を使っている感覚がうすくなり、使いすぎやすい",
+          "月々の手数料が高い",
+          "外国でしか使えない"
         ],
         "correct_index": 0
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả khuyên điều gì khi dùng tiền điện tử?",
-        "en": "What does the author advise when using electronic money?"
+        "vi": "筆者は、電子マネーを使うときに何をすすめていますか。",
+        "en": "筆者は、電子マネーを使うときに何をすすめていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Dùng càng nhiều càng tốt",
-            "en": "Use it as much as possible"
-          },
-          {
-            "vi": "Tạo thói quen kiểm tra số tiền sử dụng mỗi tháng",
-            "en": "Form the habit of checking the monthly amount used"
-          },
-          {
-            "vi": "Tránh dùng khi đi mua sắm",
-            "en": "Avoid using it when shopping"
-          }
+          "できるだけたくさん使うこと",
+          "月ごとの使用金額を確認する習慣をつけること",
+          "買い物のときは使わないこと"
         ],
         "correct_index": 1
       },

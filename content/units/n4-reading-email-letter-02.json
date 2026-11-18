@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Smith định đi đâu và đi bằng gì?",
-        "en": "Where does Smith plan to go and how?"
+        "vi": "スミスさんは、どこへ何で行きますか。",
+        "en": "スミスさんは、どこへ何で行きますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đi Kyoto bằng máy bay",
-            "en": "To Kyoto by plane"
-          },
-          {
-            "vi": "Đi Kyoto bằng tàu điện",
-            "en": "To Kyoto by train"
-          },
-          {
-            "vi": "Đi Tokyo bằng tàu điện",
-            "en": "To Tokyo by train"
-          }
+          "京都へ飛行機で行く",
+          "京都へ電車で行く",
+          "東京へ電車で行く"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Chuyến đi kéo dài bao lâu?",
-        "en": "How long will the trip last?"
+        "vi": "旅行は何日間ですか。",
+        "en": "旅行は何日間ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hai ngày",
-            "en": "Two days"
-          },
-          {
-            "vi": "Một tuần",
-            "en": "One week"
-          },
-          {
-            "vi": "Cả tháng 3",
-            "en": "All of March"
-          }
+          "二日間",
+          "一週間",
+          "三月じゅう"
         ],
         "correct_index": 0
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Người muốn đi cùng phải làm gì?",
-        "en": "What should someone who wants to join do?"
+        "vi": "いっしょに行きたい人は、何をしなければなりませんか。",
+        "en": "いっしょに行きたい人は、何をしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đặt khách sạn",
-            "en": "Book the hotel"
-          },
-          {
-            "vi": "Mua vé tàu trước",
-            "en": "Buy train tickets in advance"
-          },
-          {
-            "vi": "Trả lời trong tuần này",
-            "en": "Reply within this week"
-          }
+          "ホテルをよやくする",
+          "電車のきっぷを先に買う",
+          "今週中にへんじをする"
         ],
         "correct_index": 2
       },

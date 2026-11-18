@@ -7,6 +7,7 @@ import { registerClassReportRoutes } from './class-reports.js';
 import { registerClassRoutes } from './classes.js';
 import { registerDailyRoutes } from './daily.js';
 import { registerInvitationRoutes } from './invitations.js';
+import { registerLookupRoutes } from './lookup.js';
 import { registerMyClassRoutes } from './my-class.js';
 import { registerOnboardingRoutes } from './onboarding.js';
 import { registerOrgRoutes } from './org.js';
@@ -26,6 +27,7 @@ export async function registerApiRoutes(api: FastifyInstance): Promise<void> {
   registerStudyDefaultsRoutes(api);
   registerPlacementRoutes(api);
   registerPathRoutes(api);
+  registerLookupRoutes(api);
   registerDailyRoutes(api);
   registerSessionRoutes(api);
   registerProgressRoutes(api);

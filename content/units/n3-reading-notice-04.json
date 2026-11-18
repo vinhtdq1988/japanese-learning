@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Chọn chương trình giặt vào lúc nào?",
-        "en": "When do you choose the course?"
+        "vi": "コースを選ぶのは、いつですか。",
+        "en": "コースを選ぶのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Trước khi cho đồ vào",
-            "en": "Before putting in the laundry"
-          },
-          {
-            "vi": "Sau khi cho bột giặt và tiền vào",
-            "en": "After putting in the detergent and money"
-          },
-          {
-            "vi": "Sau khi máy chạy xong",
-            "en": "After the machine has finished"
-          }
+          "せんたくものを入れる前",
+          "せんざいとお金を入れたあと",
+          "機械が止まったあと"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Cần lưu ý gì khi dùng máy sấy?",
-        "en": "What should you be careful about with the dryer?"
+        "vi": "かんそうきを使うとき、気をつけることは何ですか。",
+        "en": "かんそうきを使うとき、気をつけることは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Không cho quá nhiều đồ vào",
-            "en": "Do not put in too much"
-          },
-          {
-            "vi": "Phải cho thêm bột giặt",
-            "en": "You must add detergent"
-          },
-          {
-            "vi": "Phải mở cửa khi đang chạy",
-            "en": "You must keep the door open while it runs"
-          }
+          "せんたくものを入れすぎないこと",
+          "せんざいを入れること",
+          "動いている間にドアを開けること"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Khi máy chạy xong thì phải làm gì?",
-        "en": "What should you do when the machine finishes?"
+        "vi": "機械が止まったら、どうしなければなりませんか。",
+        "en": "機械が止まったら、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Để đồ lại đến hôm sau",
-            "en": "Leave the clothes until the next day"
-          },
-          {
-            "vi": "Lấy đồ ra trong vòng 10 phút",
-            "en": "Take them out within 10 minutes"
-          },
-          {
-            "vi": "Báo cho nhân viên",
-            "en": "Tell a staff member"
-          }
+          "次の日までそのままにしておく",
+          "10分以内に取り出す",
+          "店の人に知らせる"
         ],
         "correct_index": 1
       },

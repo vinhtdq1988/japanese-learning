@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Hôm nay là ngày thế nào đối với tác giả?",
-        "en": "What kind of day was today for the writer?"
+        "vi": "筆者にとって、今日はどんな日でしたか。",
+        "en": "筆者にとって、今日はどんな日でしたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ngày đầu tiên ở trường tiếng Nhật",
-            "en": "The first day at Japanese school"
-          },
-          {
-            "vi": "Ngày thi cuối kỳ",
-            "en": "The day of the final exam"
-          },
-          {
-            "vi": "Ngày cuối cùng ở trường",
-            "en": "The last day at school"
-          }
+          "日本語学校のはじめの日",
+          "学期末のテストの日",
+          "学校の最後の日"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Khi nào tác giả cảm thấy hồi hộp?",
-        "en": "When did the writer feel nervous?"
+        "vi": "筆者は、いつどきどきしましたか。",
+        "en": "筆者は、いつどきどきしましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khi làm bài kiểm tra",
-            "en": "When taking a test"
-          },
-          {
-            "vi": "Khi tự giới thiệu",
-            "en": "When introducing herself/himself"
-          },
-          {
-            "vi": "Khi gặp giáo viên",
-            "en": "When meeting the teacher"
-          }
+          "テストをうけたとき",
+          "じこしょうかいをしたとき",
+          "先生に会ったとき"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Vì sao tác giả nhanh chóng có bạn?",
-        "en": "Why did the writer quickly make a friend?"
+        "vi": "筆者がすぐ友だちになれたのは、なぜですか。",
+        "en": "筆者がすぐ友だちになれたのは、なぜですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì ai cũng nói tiếng mẹ đẻ của tác giả",
-            "en": "Because everyone spoke the writer’s language"
-          },
-          {
-            "vi": "Vì giáo viên giới thiệu",
-            "en": "Because the teacher introduced them"
-          },
-          {
-            "vi": "Vì người ngồi cạnh nói chuyện dịu dàng",
-            "en": "Because the person next to them spoke kindly"
-          }
+          "みんな筆者の国のことばを話せるから",
+          "先生がしょうかいしてくれたから",
+          "となりの人がやさしく話してくれたから"
         ],
         "correct_index": 2
       },

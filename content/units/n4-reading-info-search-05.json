@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Lúc 3 giờ chiều có thể gọi bữa trưa không?",
-        "en": "Can you order lunch at 3 p.m.?"
+        "vi": "午後3時に、ランチをたのむことができますか。",
+        "en": "午後3時に、ランチをたのむことができますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Có, nhưng chỉ Set C",
-            "en": "Yes, but only Set C"
-          },
-          {
-            "vi": "Không, vì không có bữa trưa từ 2 giờ đến 5 giờ",
-            "en": "No, there is no lunch from 2 to 5 p.m."
-          },
-          {
-            "vi": "Có, tất cả các set",
-            "en": "Yes, all sets"
-          }
+          "はい、でもCセットだけです",
+          "いいえ、午後2時から5時はランチがありません",
+          "はい、どのセットもたのめます"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Set nào có kèm đồ uống?",
-        "en": "Which set comes with a drink?"
+        "vi": "飲み物がついているのは、どのセットですか。",
+        "en": "飲み物がついているのは、どのセットですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Set A",
-            "en": "Set A"
-          },
-          {
-            "vi": "Set B",
-            "en": "Set B"
-          },
-          {
-            "vi": "Set C",
-            "en": "Set C"
-          }
+          "Aセット",
+          "Bセット",
+          "Cセット"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Gọi Set A và một chiếc bánh ngọt thì tổng cộng bao nhiêu?",
-        "en": "How much is Set A plus a cake in total?"
+        "vi": "Aセットとケーキをたのむと、ぜんぶでいくらですか。",
+        "en": "Aセットとケーキをたのむと、ぜんぶでいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1.300 yên",
-            "en": "1,300 yen"
-          },
-          {
-            "vi": "1.200 yên",
-            "en": "1,200 yen"
-          },
-          {
-            "vi": "1.100 yên",
-            "en": "1,100 yen"
-          }
+          "1,300円",
+          "1,200円",
+          "1,100円"
         ],
         "correct_index": 1
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Gọi Set C và đổi đồ uống sang cỡ lớn thì bao nhiêu?",
-        "en": "How much is Set C with the drink upgraded to a large size?"
+        "vi": "Cセットの飲み物を大きいサイズにすると、いくらですか。",
+        "en": "Cセットの飲み物を大きいサイズにすると、いくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "750 yên",
-            "en": "750 yen"
-          },
-          {
-            "vi": "800 yên",
-            "en": "800 yen"
-          },
-          {
-            "vi": "850 yên",
-            "en": "850 yen"
-          }
+          "750円",
+          "800円",
+          "850円"
         ],
         "correct_index": 1
       },

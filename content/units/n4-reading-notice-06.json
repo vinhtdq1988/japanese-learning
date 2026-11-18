@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Công trình điện diễn ra vào lúc nào?",
-        "en": "When does the electrical work take place?"
+        "vi": "電気の工事は、いつありますか。",
+        "en": "電気の工事は、いつありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Ba tuần sau, từ 8 giờ sáng đến 5 giờ chiều",
-            "en": "Next Tuesday, 8 a.m. to 5 p.m."
-          },
-          {
-            "vi": "Thứ Tư tuần sau, từ 8 giờ sáng đến 5 giờ chiều",
-            "en": "Next Wednesday, 8 a.m. to 5 p.m."
-          },
-          {
-            "vi": "Thứ Tư tuần sau, từ 5 giờ chiều",
-            "en": "Next Wednesday, from 5 p.m."
-          }
+          "来週の火曜日の朝八時から夕方五時まで",
+          "来週の水曜日の朝八時から夕方五時まで",
+          "来週の水曜日の夕方五時から"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người làm việc ở tầng 4 phải lên bằng cách nào?",
-        "en": "How should someone working on the fourth floor go up?"
+        "vi": "四階で仕事をする人は、どうやって上がりますか。",
+        "en": "四階で仕事をする人は、どうやって上がりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Bằng thang máy",
-            "en": "By elevator"
-          },
-          {
-            "vi": "Bằng cầu thang bộ",
-            "en": "By the stairs"
-          },
-          {
-            "vi": "Ở nhà làm việc",
-            "en": "Work from home"
-          }
+          "エレベーターで",
+          "かいだんで",
+          "うちで仕事をする"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Hành lý lớn phải làm gì và khi nào?",
-        "en": "What must be done with large luggage, and by when?"
+        "vi": "大きいにもつは、いつまでに、どうしなければなりませんか。",
+        "en": "大きいにもつは、いつまでに、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chuyển xuống tầng 1 trước chiều thứ Ba",
-            "en": "Carry it down to the first floor by Tuesday evening"
-          },
-          {
-            "vi": "Chuyển lên tầng 3 vào sáng thứ Tư",
-            "en": "Carry it up to the third floor on Wednesday morning"
-          },
-          {
-            "vi": "Để nguyên ở chỗ cũ",
-            "en": "Leave it where it is"
-          }
+          "火曜日の夕方までに、一階に運んでおく",
+          "水曜日の朝に、三階に運ぶ",
+          "そのままにしておく"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người cần photocopy nên làm thế nào?",
-        "en": "What should people who need copies do?"
+        "vi": "コピーをしたい人は、どうすればいいですか。",
+        "en": "コピーをしたい人は、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Làm xong trước thứ Ba",
-            "en": "Finish copying by Tuesday"
-          },
-          {
-            "vi": "Làm vào thứ Tư buổi chiều",
-            "en": "Copy on Wednesday afternoon"
-          },
-          {
-            "vi": "Nhờ công ty khác làm",
-            "en": "Ask another company to do it"
-          }
+          "火曜日までにしておく",
+          "水曜日の午後にする",
+          "ほかの会社にたのむ"
         ],
         "correct_index": 0
       },

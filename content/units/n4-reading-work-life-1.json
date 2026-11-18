@@ -34,23 +34,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Cuộc họp diễn ra khi nào?",
-        "en": "When is the meeting?"
+        "vi": "会議は、いつありますか。",
+        "en": "会議は、いつありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Hai tuần sau, 2 giờ chiều",
-            "en": "Next Monday at 2 p.m."
-          },
-          {
-            "vi": "Thứ Ba tuần sau, 3 giờ chiều",
-            "en": "Next Tuesday at 3 p.m."
-          },
-          {
-            "vi": "Thứ Ba tuần sau, 2 giờ chiều",
-            "en": "Next Tuesday at 2 p.m."
-          }
+          "来週の月曜日の午後二時",
+          "来週の火曜日の午後三時",
+          "来週の火曜日の午後二時"
         ],
         "correct_index": 2
       },
@@ -66,23 +57,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Tài liệu được gửi bằng cách nào?",
-        "en": "How will the materials be sent?"
+        "vi": "資料は、どうやって送られますか。",
+        "en": "資料は、どうやって送られますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gửi qua email trước một ngày",
-            "en": "By email the day before"
-          },
-          {
-            "vi": "Phát tại phòng họp",
-            "en": "Handed out in the meeting room"
-          },
-          {
-            "vi": "Gửi qua đường bưu điện",
-            "en": "By post"
-          }
+          "前の日までにメールで送られる",
+          "会議室でくばられる",
+          "郵便で送られる"
         ],
         "correct_index": 0
       },
@@ -98,23 +80,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Người không tham dự được phải làm gì?",
-        "en": "What should people who cannot attend do?"
+        "vi": "会議に出られない人は、どうしなければなりませんか。",
+        "en": "会議に出られない人は、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gửi email cho trưởng nhóm sau cuộc họp",
-            "en": "Email the team leader after the meeting"
-          },
-          {
-            "vi": "Liên lạc với Yamada trước thứ Hai",
-            "en": "Contact Yamada by Monday"
-          },
-          {
-            "vi": "Không cần làm gì",
-            "en": "Nothing"
-          }
+          "会議のあとでリーダーにメールを送る",
+          "月曜日までに山田さんに連絡する",
+          "何もしなくてもいい"
         ],
         "correct_index": 1
       },

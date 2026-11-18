@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Phí tham gia là bao nhiêu và trả khi nào?",
-        "en": "How much is the fee, and when is it paid?"
+        "vi": "参加費はいくらで、いつ払いますか。",
+        "en": "参加費はいくらで、いつ払いますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "2.000 yên mỗi người, trả vào ngày diễn ra tại quầy tiếp tân",
-            "en": "2,000 yen per person, paid at the reception desk on the day"
-          },
-          {
-            "vi": "2.000 yên mỗi người, chuyển khoản trước",
-            "en": "2,000 yen per person, transferred in advance"
-          },
-          {
-            "vi": "Miễn phí",
-            "en": "Free"
-          }
+          "一人2,000円で、当日、受付で払う",
+          "一人2,000円で、前もって銀行に振り込む",
+          "無料である"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Muốn đăng ký thì làm thế nào?",
-        "en": "How do you apply?"
+        "vi": "申し込むには、どうすればいいですか。",
+        "en": "申し込むには、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gọi điện thoại",
-            "en": "Phone them"
-          },
-          {
-            "vi": "Trả lời email này kèm tên, số người, số điện thoại",
-            "en": "Reply to this email with name, number of people and phone number"
-          },
-          {
-            "vi": "Đến trực tiếp quầy tiếp tân",
-            "en": "Go to the reception desk in person"
-          }
+          "電話をかける",
+          "このメールに名前、人数、電話番号を書いて返信する",
+          "受付に直接行く"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Hạn đăng ký là khi nào?",
-        "en": "When is the application deadline?"
+        "vi": "申し込みはいつまでですか。",
+        "en": "申し込みはいつまでですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cuối tháng này",
-            "en": "The end of this month"
-          },
-          {
-            "vi": "Ngày diễn ra sự kiện",
-            "en": "The day of the event"
-          },
-          {
-            "vi": "Cuối tuần này",
-            "en": "The end of this week"
-          }
+          "今月末まで",
+          "イベントの当日まで",
+          "今週末まで"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người viết khuyên điều gì?",
-        "en": "What does the writer recommend?"
+        "vi": "山田さんがすすめているのは何ですか。",
+        "en": "山田さんがすすめているのは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mang theo áo khoác",
-            "en": "Bringing a jacket"
-          },
-          {
-            "vi": "Mang theo tiền mặt thêm",
-            "en": "Bringing extra cash"
-          },
-          {
-            "vi": "Đến sớm 1 tiếng",
-            "en": "Arriving an hour early"
-          }
+          "上着を持ってくること",
+          "現金を多めに持ってくること",
+          "1時間早く来ること"
         ],
         "correct_index": 0
       },

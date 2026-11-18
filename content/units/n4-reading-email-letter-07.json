@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao Yamada muốn đổi ngày gặp?",
-        "en": "Why does Yamada want to change the day?"
+        "vi": "山田さんは、どうして会う日をかえたいのですか。",
+        "en": "山田さんは、どうして会う日をかえたいのですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì phải đi làm",
-            "en": "He has to work"
-          },
-          {
-            "vi": "Vì bị cảm",
-            "en": "Because he has a cold"
-          },
-          {
-            "vi": "Vì quên cuộc hẹn",
-            "en": "He forgot the appointment"
-          }
+          "仕事があるから",
+          "かぜをひいたから",
+          "やくそくをわすれたから"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Bác sĩ đã dặn gì?",
-        "en": "What did the doctor tell him?"
+        "vi": "病院で、山田さんは何と言われましたか。",
+        "en": "病院で、山田さんは何と言われましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nên uống nhiều nước",
-            "en": "Drink plenty of water"
-          },
-          {
-            "vi": "Hãy đến lại bệnh viện ngày mai",
-            "en": "Come back to the hospital tomorrow"
-          },
-          {
-            "vi": "Ngày mai nghỉ ngơi ở nhà",
-            "en": "Rest at home tomorrow"
-          }
+          "水をたくさん飲みなさい",
+          "あした、また病院に来なさい",
+          "あしたはうちでゆっくり休みなさい"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamada rảnh vào những ngày nào?",
-        "en": "On which days is Yamada free?"
+        "vi": "山田さんは、いつならだいじょうぶですか。",
+        "en": "山田さんは、いつならだいじょうぶですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Bảy hoặc Chủ nhật tuần sau",
-            "en": "Next Saturday or Sunday"
-          },
-          {
-            "vi": "Thứ Hai hoặc thứ Ba tuần sau",
-            "en": "Next Monday or Tuesday"
-          },
-          {
-            "vi": "Ngày mai",
-            "en": "Tomorrow"
-          }
+          "来週の土曜日か日曜日",
+          "来週の月曜日か火曜日",
+          "あした"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamada nhờ Kinoshita điều gì?",
-        "en": "What does Yamada ask Kinoshita?"
+        "vi": "山田さんは、木下さんに何をたのんでいますか。",
+        "en": "山田さんは、木下さんに何をたのんでいますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đến thăm mình ở nhà",
-            "en": "To visit him at home"
-          },
-          {
-            "vi": "Mua thuốc giúp",
-            "en": "To buy medicine for him"
-          },
-          {
-            "vi": "Cho biết ngày nào thuận tiện",
-            "en": "To tell him which day is convenient"
-          }
+          "うちに来てほしい",
+          "くすりを買ってきてほしい",
+          "つごうのいい日を教えてほしい"
         ],
         "correct_index": 2
       },

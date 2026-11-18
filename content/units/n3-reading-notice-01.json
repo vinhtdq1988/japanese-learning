@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Từ ngày 1 tháng 12, ngày thường cửa hàng đóng cửa lúc mấy giờ?",
-        "en": "From December 1, what time does the shop close on weekdays?"
+        "vi": "12月1日から、平日の閉店時間は何時になりますか。",
+        "en": "12月1日から、平日の閉店時間は何時になりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "9 giờ tối",
-            "en": "9 p.m."
-          },
-          {
-            "vi": "8 giờ tối",
-            "en": "8 p.m."
-          },
-          {
-            "vi": "10 giờ sáng",
-            "en": "10 a.m."
-          }
+          "午後9時",
+          "午後8時",
+          "午前10時"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Thứ Bảy và Chủ nhật thì thế nào?",
-        "en": "What about Saturdays and Sundays?"
+        "vi": "土曜日と日曜日はどうなりますか。",
+        "en": "土曜日と日曜日はどうなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đóng cửa sớm hơn",
-            "en": "They close earlier"
-          },
-          {
-            "vi": "Vẫn mở đến 9 giờ tối như trước",
-            "en": "Still open until 9 p.m. as before"
-          },
-          {
-            "vi": "Nghỉ cả ngày",
-            "en": "Closed all day"
-          }
+          "もっと早く閉まる",
+          "今までどおり午後9時まで営業する",
+          "一日じゅう休みになる"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Giờ mở cửa buổi sáng có thay đổi không?",
-        "en": "Does the morning opening time change?"
+        "vi": "朝の開店時間は変わりますか。",
+        "en": "朝の開店時間は変わりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Có, mở muộn hơn",
-            "en": "Yes, it opens later"
-          },
-          {
-            "vi": "Có, mở sớm hơn",
-            "en": "Yes, it opens earlier"
-          },
-          {
-            "vi": "Không, vẫn là 10 giờ sáng",
-            "en": "No, it is still 10 a.m."
-          }
+          "はい、遅くなる",
+          "はい、早くなる",
+          "いいえ、午前10時のままである"
         ],
         "correct_index": 2
       },

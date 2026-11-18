@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Đây là loại email gì?",
-        "en": "What kind of email is this?"
+        "vi": "これは何のメールですか。",
+        "en": "これは何のメールですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Báo cáo hoạt động kinh doanh trong tuần",
-            "en": "A report on the week’s sales activities"
-          },
-          {
-            "vi": "Lời mời họp",
-            "en": "A meeting invitation"
-          },
-          {
-            "vi": "Đơn xin nghỉ phép",
-            "en": "A leave request"
-          }
+          "一週間の営業活動の報告",
+          "会議への招待",
+          "休暇の申し込み"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Công ty A đã quyết định điều gì?",
-        "en": "What did Company A decide?"
+        "vi": "A社は何を決めましたか。",
+        "en": "A社は何を決めましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ký hợp đồng ngay",
-            "en": "To sign a contract immediately"
-          },
-          {
-            "vi": "Dùng thử sản phẩm từ tháng sau",
-            "en": "To try the product from next month"
-          },
-          {
-            "vi": "Từ chối sản phẩm",
-            "en": "To decline the product"
-          }
+          "すぐに契約する",
+          "来月から商品を試しに使う",
+          "商品を断る"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Công ty B phản hồi điều gì và Yamamoto sẽ làm gì?",
-        "en": "What did Company B say, and what will Yamamoto do?"
+        "vi": "B社は何と言いましたか。また、山本さんは何をしますか。",
+        "en": "B社は何と言いましたか。また、山本さんは何をしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nói giá hơi cao nên sẽ xem xét lại giá trước tuần sau",
-            "en": "Said the price was a bit high, so he will review the price by next week"
-          },
-          {
-            "vi": "Nói giao hàng chậm nên sẽ xin lỗi",
-            "en": "Said delivery was late, so he will apologize"
-          },
-          {
-            "vi": "Nói sản phẩm bị lỗi nên sẽ đổi hàng",
-            "en": "Said the product was defective, so he will replace it"
-          }
+          "金額が少し高いと言ったので、来週までに価格を見直す",
+          "配達がおそいと言ったので、おわびをする",
+          "商品に問題があると言ったので、取りかえる"
         ],
         "correct_index": 0
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Kế hoạch tuần sau của Yamamoto là gì?",
-        "en": "What is Yamamoto’s plan for next week?"
+        "vi": "山本さんの来週の予定は何ですか。",
+        "en": "山本さんの来週の予定は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đến thăm công ty A",
-            "en": "Visit Company A"
-          },
-          {
-            "vi": "Gửi bảng báo giá mới cho B và gọi điện cho người phụ trách của C",
-            "en": "Send Company B a new quotation and phone the person in charge at C"
-          },
-          {
-            "vi": "Ký hợp đồng với C",
-            "en": "Sign a contract with C"
-          }
+          "A社をたずねる",
+          "B社に新しい見積書を送り、C社の担当者に電話をする",
+          "C社と契約する"
         ],
         "correct_index": 1
       },

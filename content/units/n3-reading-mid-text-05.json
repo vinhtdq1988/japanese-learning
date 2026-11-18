@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả đã gặp sự cố gì ở nhà ga?",
-        "en": "What happened to the writer at the station?"
+        "vi": "筆者は駅でどんな失敗をしましたか。",
+        "en": "筆者は駅でどんな失敗をしましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Bị lỡ chuyến tàu",
-            "en": "Missed the train"
-          },
-          {
-            "vi": "Chiếc túi đựng ví biến mất",
-            "en": "The bag holding the wallet disappeared"
-          },
-          {
-            "vi": "Bị lạc đường",
-            "en": "Got lost"
-          }
+          "電車に乗りおくれた",
+          "財布を入れたかばんがなくなった",
+          "道に迷った"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao tác giả không thể lên tàu về nhà trọ?",
-        "en": "Why could the writer not take the train back to the inn?"
+        "vi": "筆者は、どうして宿に帰る電車に乗れなかったのですか。",
+        "en": "筆者は、どうして宿に帰る電車に乗れなかったのですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì tàu ngừng chạy",
-            "en": "The trains had stopped"
-          },
-          {
-            "vi": "Vì không có tiền cũng không có thẻ",
-            "en": "Because the writer had neither money nor a card"
-          },
-          {
-            "vi": "Vì không biết tên nhà trọ",
-            "en": "Because the writer did not know the inn’s name"
-          }
+          "電車が止まっていたから",
+          "お金もカードもなかったから",
+          "宿の名前がわからなかったから"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người phụ nữ lớn tuổi đã nói gì khi tác giả muốn trả lại tiền?",
-        "en": "What did the elderly woman say when the writer wanted to repay her?"
+        "vi": "筆者がお金をかえすと言ったとき、年配の女性は何と言いましたか。",
+        "en": "筆者がお金をかえすと言ったとき、年配の女性は何と言いましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hãy trả lại ngay",
-            "en": "Pay me back immediately"
-          },
-          {
-            "vi": "Khi nào có ai khó khăn thì hãy giúp họ",
-            "en": "Someday help someone who is in trouble"
-          },
-          {
-            "vi": "Hãy gửi tiền cho cảnh sát",
-            "en": "Send the money to the police"
-          }
+          "すぐにかえしなさい",
+          "いつかだれかがこまっているときに助けてあげて",
+          "警察にお金を送りなさい"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trải nghiệm này đã thay đổi tác giả như thế nào?",
-        "en": "How did this experience change the writer?"
+        "vi": "この経験で、筆者はどう変わりましたか。",
+        "en": "この経験で、筆者はどう変わりましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Không còn đi du lịch một mình",
-            "en": "The writer no longer travels alone"
-          },
-          {
-            "vi": "Cố gắng bắt chuyện với người đang gặp khó khăn",
-            "en": "The writer tries to speak to people in trouble"
-          },
-          {
-            "vi": "Luôn mang theo nhiều tiền mặt",
-            "en": "The writer always carries lots of cash"
-          }
+          "もう一人で旅行しなくなった",
+          "こまっている人を見かけたら、声をかけるようにしている",
+          "いつも現金をたくさん持ち歩くようになった"
         ],
         "correct_index": 1
       },

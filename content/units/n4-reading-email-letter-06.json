@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao Yamamoto đến muộn buổi họp?",
-        "en": "Why was Yamamoto late for the meeting?"
+        "vi": "山本さんは、どうしてかいぎにおくれましたか。",
+        "en": "山本さんは、どうしてかいぎにおくれましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì ngủ quên",
-            "en": "He overslept"
-          },
-          {
-            "vi": "Vì tàu điện bị dừng do tai nạn",
-            "en": "The train stopped because of an accident"
-          },
-          {
-            "vi": "Vì lạc đường",
-            "en": "He got lost"
-          }
+          "ねぼうしたから",
+          "電車がじこで止まったから",
+          "道に迷ったから"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao Yamamoto không gọi điện cho công ty?",
-        "en": "Why did Yamamoto not call the office?"
+        "vi": "山本さんは、どうして会社に電話しませんでしたか。",
+        "en": "山本さんは、どうして会社に電話しませんでしたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì hết pin điện thoại",
-            "en": "His phone battery was dead"
-          },
-          {
-            "vi": "Vì quên số điện thoại",
-            "en": "He forgot the number"
-          },
-          {
-            "vi": "Vì đang ở trong tàu điện",
-            "en": "Because he was on the train"
-          }
+          "電話のでんちがなくなったから",
+          "電話ばんごうをわすれたから",
+          "電車の中だったから"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamamoto đã theo kịp phần đầu cuộc họp bằng cách nào?",
-        "en": "How did Yamamoto catch up on the first part of the meeting?"
+        "vi": "山本さんは、かいぎのはじめの話を、どうやって知りましたか。",
+        "en": "山本さんは、かいぎのはじめの話を、どうやって知りましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Xem vở ghi của Yamada",
-            "en": "He looked at Yamada’s notes"
-          },
-          {
-            "vi": "Xem video buổi họp",
-            "en": "He watched a video of the meeting"
-          },
-          {
-            "vi": "Hỏi trưởng phòng",
-            "en": "He asked the manager"
-          }
+          "山田さんのノートを見せてもらった",
+          "かいぎのビデオを見た",
+          "ぶちょうに聞いた"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Từ nay Yamamoto sẽ làm gì?",
-        "en": "What will Yamamoto do from now on?"
+        "vi": "山本さんは、これからどうしますか。",
+        "en": "山本さんは、これからどうしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đi làm bằng xe máy",
-            "en": "Commute by motorbike"
-          },
-          {
-            "vi": "Đi chuyến tàu sớm hơn và gửi email ngay khi sắp trễ",
-            "en": "Take an earlier train and email right away when he may be late"
-          },
-          {
-            "vi": "Xin phép làm việc ở nhà",
-            "en": "Ask to work from home"
-          }
+          "オートバイで会社に来る",
+          "もっと早い電車にのり、おくれそうなときはすぐメールを送る",
+          "家で仕事をしたいとたのむ"
         ],
         "correct_index": 1
       },

@@ -84,6 +84,51 @@ function Assert-NoPlaceholders([string]$Path) {
     }
 }
 
+# Đọc cổng từ `<Dir>\.env.<EnvName>` nếu có (không tạo file mới như Initialize-EnvFile), thiếu thì dùng mặc định.
+function Get-ConfiguredPort([string]$Dir, [string]$EnvName, [string]$Key, [int]$Default) {
+    $file = Join-Path $Dir ".env.$EnvName"
+    if (Test-Path $file) {
+        $value = (Read-EnvFile $file)[$Key]
+        if ($value) { return [int]$value }
+    }
+    return $Default
+}
+
+# Kiểm tra giá trị -ServerHost: chỉ nhận IP hoặc tên miền, không kèm scheme, cổng hay đường dẫn
+# (scheme chọn bằng -Scheme; cổng lấy từ PORT/WEB_PORT trong file .env).
+function Assert-ServerHost([string]$ServerHost) {
+    if ($ServerHost -notmatch '^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?$') {
+        throw "-ServerHost '$ServerHost' không hợp lệ: chỉ nhập IP hoặc tên miền (vd. 192.168.1.11 hoặc app.example.com), không kèm http://, cổng hay đường dẫn."
+    }
+    # IPv4 không thuộc máy này thường là gõ nhầm (hoặc là IP công khai sau NAT/DNS): chỉ cảnh báo.
+    if ($ServerHost -match '^\d{1,3}(\.\d{1,3}){3}$') {
+        $mine = @(Get-NetIPAddress -AddressFamily IPv4 -ErrorAction SilentlyContinue | ForEach-Object { $_.IPAddress })
+        if ($mine.Count -gt 0 -and $ServerHost -notin $mine) {
+            Write-Warning "IP $ServerHost không phải địa chỉ của máy này (IPv4 hiện có: $($mine -join ', '))."
+        }
+    }
+}
+
+# Dựng các URL khi chạy với IP/tên miền khác localhost. Cổng đọc từ backend/.env.<env> (PORT) và
+# client/.env.<env> (WEB_PORT).
+#   local: client và API khác origin, mỗi bên một cổng -> ApiUrl trỏ thẳng cổng API, cần CORS cho WebOrigin.
+#   prod : sau nginx/TLS cùng origin, không kèm cổng -> chỉ dùng WebOrigin làm APP_BASE_URL.
+function Get-ServerUrls([string]$ServerHost, [string]$Scheme, [string]$EnvName) {
+    if (-not $Scheme) { $Scheme = if ($EnvName -eq 'prod') { 'https' } else { 'http' } }
+    if ($EnvName -eq 'prod') {
+        return [pscustomobject]@{ WebOrigin = "${Scheme}://$ServerHost"; ApiUrl = $null; CorsOrigins = @() }
+    }
+    $apiPort = Get-ConfiguredPort (Join-Path $RepoRoot 'backend') $EnvName 'PORT' 3000
+    $webPort = Get-ConfiguredPort (Join-Path $RepoRoot 'client') $EnvName 'WEB_PORT' 8080
+    $webOrigin = "${Scheme}://${ServerHost}:$webPort"
+    return [pscustomobject]@{
+        WebOrigin   = $webOrigin
+        ApiUrl      = "${Scheme}://${ServerHost}:$apiPort/api/v1"
+        # Giữ cả localhost để vẫn mở được trên chính máy chạy.
+        CorsOrigins = @($webOrigin, "http://localhost:$webPort") | Select-Object -Unique
+    }
+}
+
 # Chạy lệnh ngoài và dừng script nếu mã thoát khác 0.
 function Invoke-Checked([string]$Description, [scriptblock]$Command) {
     & $Command

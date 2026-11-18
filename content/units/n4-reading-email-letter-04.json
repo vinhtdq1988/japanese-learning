@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamamoto muốn nhờ điều gì?",
-        "en": "What is Yamamoto asking for?"
+        "vi": "山本さんは、何をお願いしていますか。",
+        "en": "山本さんは、何をお願いしていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nghỉ cả ngày thứ Năm tuần sau",
-            "en": "The whole day off next Thursday"
-          },
-          {
-            "vi": "Rời công ty lúc 3 giờ chiều thứ Năm tuần sau",
-            "en": "To leave the office at 3 p.m. next Thursday"
-          },
-          {
-            "vi": "Đổi sang làm ca đêm",
-            "en": "To switch to the night shift"
-          }
+          "来週の木曜日を一日休むこと",
+          "来週の木曜日の午後三時に会社を出ること",
+          "夜の仕事に変わること"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao Yamamoto muốn về sớm?",
-        "en": "Why does Yamamoto want to leave early?"
+        "vi": "山本さんは、どうして早く帰りたいのですか。",
+        "en": "山本さんは、どうして早く帰りたいのですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vì phải đi khám bệnh",
-            "en": "To see a doctor"
-          },
-          {
-            "vi": "Vì phải đón bạn ở sân bay",
-            "en": "To pick up a friend at the airport"
-          },
-          {
-            "vi": "Vì có buổi nói chuyện với giáo viên của con",
-            "en": "Because of a meeting with his child’s teacher"
-          }
+          "病院に行かなければならないから",
+          "空港に友だちをむかえに行くから",
+          "子どもの学校で先生と話す会があるから"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamamoto sẽ làm gì để bù lại?",
-        "en": "What will Yamamoto do to make up for it?"
+        "vi": "山本さんは、そのかわりに何をしますか。",
+        "en": "山本さんは、そのかわりに何をしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đến sớm, rút ngắn giờ ăn trưa và làm xong việc trước",
-            "en": "Come in early, shorten lunch and finish work beforehand"
-          },
-          {
-            "vi": "Làm thêm vào Chủ nhật",
-            "en": "Work on Sunday"
-          },
-          {
-            "vi": "Nhờ đồng nghiệp làm thay",
-            "en": "Ask a coworker to do his work"
-          }
+          "朝早く来て、昼ごはんの時間をみじかくして、仕事を先にすませる",
+          "日曜日に出社して仕事をする",
+          "同じ会社の人に仕事をたのむ"
         ],
         "correct_index": 0
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Yamamoto sẽ gửi tài liệu họp khi nào?",
-        "en": "When will Yamamoto send the meeting materials?"
+        "vi": "山本さんは、かいぎのしりょうをいつ送りますか。",
+        "en": "山本さんは、かいぎのしりょうをいつ送りますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Trước chiều thứ Tư",
-            "en": "By Wednesday evening"
-          },
-          {
-            "vi": "Sáng thứ Năm",
-            "en": "On Thursday morning"
-          },
-          {
-            "vi": "Sau khi về nhà",
-            "en": "After he gets home"
-          }
+          "水曜日の夕方までに",
+          "木曜日の朝",
+          "家に帰ってから"
         ],
         "correct_index": 0
       },

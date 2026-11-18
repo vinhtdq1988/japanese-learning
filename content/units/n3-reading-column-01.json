@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Hiện tượng gì đang tăng lên?",
-        "en": "What is increasing?"
+        "vi": "最近、何が増えていますか。",
+        "en": "最近、何が増えていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cửa hàng tiện lợi mở cửa 24 giờ",
-            "en": "Convenience stores open 24 hours"
-          },
-          {
-            "vi": "Cửa hàng tiện lợi rút ngắn giờ mở cửa ban đêm",
-            "en": "Convenience stores shortening their night hours"
-          },
-          {
-            "vi": "Cửa hàng tiện lợi đóng cửa hẳn",
-            "en": "Convenience stores closing for good"
-          }
+          "24時間営業のコンビニ",
+          "夜の営業時間をみじかくするコンビニ",
+          "閉店してしまうコンビニ"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Lý do của hiện tượng này là gì?",
-        "en": "What is the reason for this?"
+        "vi": "そうなっている理由は何ですか。",
+        "en": "そうなっている理由は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khách hàng ban đêm ít đi",
-            "en": "There are fewer customers at night"
-          },
-          {
-            "vi": "Tiền điện tăng",
-            "en": "Electricity costs have risen"
-          },
-          {
-            "vi": "Thiếu nhân lực, khó tìm người làm ca đêm",
-            "en": "A labor shortage makes it hard to find night workers"
-          }
+          "夜のお客さんが減ったから",
+          "電気代が上がったから",
+          "人手不足で、夜に働く人を見つけるのが難しいから"
         ],
         "correct_index": 2
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả nghĩ gì về sự thay đổi này?",
-        "en": "What does the author think about this change?"
+        "vi": "筆者はこの変化をどう思っていますか。",
+        "en": "筆者はこの変化をどう思っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Là thay đổi cần thiết để bảo vệ sức khỏe người lao động",
-            "en": "It is a necessary change to protect workers’ health"
-          },
-          {
-            "vi": "Là thay đổi đáng tiếc cần phản đối",
-            "en": "It is a regrettable change that should be opposed"
-          },
-          {
-            "vi": "Không có ý kiến gì",
-            "en": "The author has no opinion"
-          }
+          "働く人の健康を守るために必要な変化だと思っている",
+          "残念な変化なので反対している",
+          "特に意見はない"
         ],
         "correct_index": 0
       },

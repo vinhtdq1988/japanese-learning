@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Thuê xe Sedan trong 10 tiếng thì giá bao nhiêu?",
-        "en": "How much is a sedan for 10 hours?"
+        "vi": "セダンを10時間借りると、いくらですか。",
+        "en": "セダンを10時間借りると、いくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "6.000 yên",
-            "en": "6,000 yen"
-          },
-          {
-            "vi": "8.000 yên",
-            "en": "8,000 yen"
-          },
-          {
-            "vi": "10.000 yên",
-            "en": "10,000 yen"
-          }
+          "6,000円",
+          "8,000円",
+          "10,000円"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Thuê xe Wagon trong 26 tiếng thì tổng cộng bao nhiêu?",
-        "en": "What is the total for a wagon rented for 26 hours?"
+        "vi": "ワゴンを26時間借りると、全部でいくらですか。",
+        "en": "ワゴンを26時間借りると、全部でいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "13.000 yên",
-            "en": "13,000 yen"
-          },
-          {
-            "vi": "14.000 yên",
-            "en": "14,000 yen"
-          },
-          {
-            "vi": "15.000 yên",
-            "en": "15,000 yen"
-          }
+          "13,000円",
+          "14,000円",
+          "15,000円"
         ],
         "correct_index": 2
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Thuê xe Compact 6 tiếng và trả ở cửa hàng khác thì tổng bao nhiêu?",
-        "en": "How much is a compact for 6 hours returned at a different shop?"
+        "vi": "コンパクトを6時間借りて、別の店に返すと、全部でいくらですか。",
+        "en": "コンパクトを6時間借りて、別の店に返すと、全部でいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "4.500 yên",
-            "en": "4,500 yen"
-          },
-          {
-            "vi": "9.500 yên",
-            "en": "9,500 yen"
-          },
-          {
-            "vi": "5.000 yên",
-            "en": "5,000 yen"
-          }
+          "4,500円",
+          "9,500円",
+          "5,000円"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Điều nào đúng về điều kiện sử dụng?",
-        "en": "Which statement about the terms of use is correct?"
+        "vi": "利用の条件として、正しいものはどれですか。",
+        "en": "利用の条件として、正しいものはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Có thể trả bằng tiền mặt",
-            "en": "You can pay in cash"
-          },
-          {
-            "vi": "Chỉ thanh toán bằng thẻ tín dụng",
-            "en": "Payment is by credit card only"
-          },
-          {
-            "vi": "Tiền xăng do cửa hàng trả",
-            "en": "The shop pays for gasoline"
-          }
+          "現金で払うことができる",
+          "支払いはクレジットカードだけである",
+          "ガソリン代は店が払う"
         ],
         "correct_index": 1
       },

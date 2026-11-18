@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Người chỉ tập vào buổi tối các ngày thường nên chọn gói rẻ nhất nào phù hợp?",
-        "en": "Which is the cheapest suitable plan for someone who only trains in the evening on weekdays?"
+        "vi": "平日の夜だけ運動する人が選ぶのに、いちばん合っているプランはどれですか。",
+        "en": "平日の夜だけ運動する人が選ぶのに、いちばん合っているプランはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hội viên thường",
-            "en": "Regular member"
-          },
-          {
-            "vi": "Hội viên ban ngày",
-            "en": "Daytime member"
-          },
-          {
-            "vi": "Hội viên buổi tối",
-            "en": "Night member"
-          }
+          "レギュラー会員",
+          "デイタイム会員",
+          "ナイト会員"
         ],
         "correct_index": 2
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Sinh viên chọn hội viên thường và dùng hồ bơi thì trả bao nhiêu mỗi tháng?",
-        "en": "How much per month does a student pay for a regular membership with the pool?"
+        "vi": "学生がレギュラー会員になってプールも使う場合、月にいくら払いますか。",
+        "en": "学生がレギュラー会員になってプールも使う場合、月にいくら払いますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "7.200 yên",
-            "en": "7,200 yen"
-          },
-          {
-            "vi": "8.200 yên",
-            "en": "8,200 yen"
-          },
-          {
-            "vi": "9.000 yên",
-            "en": "9,000 yen"
-          }
+          "7,200円",
+          "8,200円",
+          "9,000円"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Làm thế nào để không phải trả phí gia nhập?",
-        "en": "How can you avoid paying the entrance fee?"
+        "vi": "入会金を払わなくていい方法はどれですか。",
+        "en": "入会金を払わなくていい方法はどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đăng ký trước cuối tháng",
-            "en": "Apply by the end of the month"
-          },
-          {
-            "vi": "Giới thiệu một người bạn",
-            "en": "Introduce a friend"
-          },
-          {
-            "vi": "Trả trước 6 tháng phí",
-            "en": "Pay six months in advance"
-          }
+          "月末までに申しこむ",
+          "友だちを一人紹介する",
+          "半年分の会費を先に払う"
         ],
         "correct_index": 0
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Người 65 tuổi chọn gói ban ngày, không dùng hồ bơi thì mỗi tháng trả bao nhiêu?",
-        "en": "How much per month does a 65-year-old pay for the daytime plan without the pool?"
+        "vi": "65歳の人がデイタイム会員になり、プールを使わない場合、月にいくら払いますか。",
+        "en": "65歳の人がデイタイム会員になり、プールを使わない場合、月にいくら払いますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "4.950 yên",
-            "en": "4,950 yen"
-          },
-          {
-            "vi": "5.000 yên",
-            "en": "5,000 yen"
-          },
-          {
-            "vi": "5.500 yên",
-            "en": "5,500 yen"
-          }
+          "4,950円",
+          "5,000円",
+          "5,500円"
         ],
         "correct_index": 0
       },

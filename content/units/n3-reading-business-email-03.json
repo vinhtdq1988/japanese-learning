@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao người viết xin lỗi?",
-        "en": "Why is the writer apologizing?"
+        "vi": "木下さんはどうしておわびをしていますか。",
+        "en": "木下さんはどうしておわびをしていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Sản phẩm bị hỏng",
-            "en": "The product was damaged"
-          },
-          {
-            "vi": "Sản phẩm không đến đúng ngày hẹn",
-            "en": "The product did not arrive by the promised date"
-          },
-          {
-            "vi": "Giá sản phẩm bị tính sai",
-            "en": "The price was calculated wrongly"
-          }
+          "商品がこわれていたから",
+          "商品が約束の日までにとどかなかったから",
+          "商品の値段をまちがえたから"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Nguyên nhân chậm trễ là gì?",
-        "en": "What caused the delay?"
+        "vi": "おくれた原因は何ですか。",
+        "en": "おくれた原因は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tuyết rơi nhiều",
-            "en": "Heavy snow"
-          },
-          {
-            "vi": "Việc xác nhận hàng tồn ở kho bị chậm",
-            "en": "The stock check at the warehouse was delayed"
-          },
-          {
-            "vi": "Khách điền sai địa chỉ",
-            "en": "The customer entered the wrong address"
-          }
+          "雪がたくさん降ったから",
+          "そうこで在庫を確認するのがおくれたから",
+          "お客様が住所をまちがえたから"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Sản phẩm dự kiến đến khi nào?",
-        "en": "When is the product expected to arrive?"
+        "vi": "商品はいつまでに着く予定ですか。",
+        "en": "商品はいつまでに着く予定ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Trước ngày 3 tháng 10",
-            "en": "Before October 3"
-          },
-          {
-            "vi": "Ngày 5 tháng 10",
-            "en": "On October 5"
-          },
-          {
-            "vi": "Trước ngày 8 tháng 10",
-            "en": "By October 8"
-          }
+          "10月3日より前",
+          "10月5日",
+          "10月8日まで"
         ],
         "correct_index": 2
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Cửa hàng làm gì để bày tỏ lời xin lỗi?",
-        "en": "What does the shop do as an apology?"
+        "vi": "お店はおわびとして何をしますか。",
+        "en": "お店はおわびとして何をしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Hoàn tiền toàn bộ",
-            "en": "Refund the full amount"
-          },
-          {
-            "vi": "Tặng phiếu giảm giá 500 yên cho lần đặt sau",
-            "en": "Send a 500-yen coupon for the next order"
-          },
-          {
-            "vi": "Miễn phí vận chuyển mãi mãi",
-            "en": "Offer free shipping forever"
-          }
+          "代金を全部返す",
+          "次の注文で使える500円のクーポンを送る",
+          "送料をずっと無料にする"
         ],
         "correct_index": 1
       },

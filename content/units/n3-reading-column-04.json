@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Người không ăn sáng thường như thế nào?",
-        "en": "What are people who skip breakfast often like?"
+        "vi": "朝ごはんを食べない人は、どうなることが多いと言われていますか。",
+        "en": "朝ごはんを食べない人は、どうなることが多いと言われていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ăn quá nhiều vào bữa trưa và tối",
-            "en": "They eat too much at lunch and dinner"
-          },
-          {
-            "vi": "Ăn rất ít cả ngày",
-            "en": "They eat very little all day"
-          },
-          {
-            "vi": "Chỉ ăn đồ ngọt",
-            "en": "They only eat sweets"
-          }
+          "昼や夜に食べすぎてしまう",
+          "一日じゅうほとんど食べない",
+          "甘いものだけを食べる"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Ăn sáng có lợi gì?",
-        "en": "What is the benefit of eating breakfast?"
+        "vi": "朝食をとると、どんないいことがありますか。",
+        "en": "朝食をとると、どんないいことがありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Giúp da đẹp hơn",
-            "en": "It improves the skin"
-          },
-          {
-            "vi": "Thân nhiệt tăng và đầu óc tỉnh táo",
-            "en": "Body temperature rises and the mind becomes clearer"
-          },
-          {
-            "vi": "Giúp ngủ ngon hơn",
-            "en": "It helps you sleep better"
-          }
+          "肌がきれいになる",
+          "体温が上がって、頭もはっきりする",
+          "よく眠れるようになる"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Tác giả khuyên điều gì?",
-        "en": "What does the author suggest?"
+        "vi": "筆者は何をすすめていますか。",
+        "en": "筆者は何をすすめていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chỉ ăn sáng vào ngày nghỉ",
-            "en": "Only eat breakfast on days off"
-          },
-          {
-            "vi": "Tập thói quen ăn một chút gì đó, dù chỉ một quả chuối",
-            "en": "Form the habit of eating something, even just a banana"
-          },
-          {
-            "vi": "Bỏ bữa tối thay cho bữa sáng",
-            "en": "Skip dinner instead of breakfast"
-          }
+          "休みの日だけ朝食を食べること",
+          "バナナ一本でも、何か口に入れる習慣をつけること",
+          "朝食のかわりに夕食を食べないこと"
         ],
         "correct_index": 1
       },

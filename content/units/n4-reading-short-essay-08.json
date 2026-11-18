@@ -37,23 +37,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả làm việc ở công ty được bao lâu?",
-        "en": "How long has the writer been working at the company?"
+        "vi": "筆者は、どのくらい今の会社ではたらいていますか。",
+        "en": "筆者は、どのくらい今の会社ではたらいていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khoảng một tháng",
-            "en": "About one month"
-          },
-          {
-            "vi": "Khoảng một năm",
-            "en": "About one year"
-          },
-          {
-            "vi": "Khoảng một tuần",
-            "en": "About one week"
-          }
+          "一か月ぐらい",
+          "一年ぐらい",
+          "一週間ぐらい"
         ],
         "correct_index": 0
       },
@@ -70,23 +61,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Tác giả đã mắc lỗi gì?",
-        "en": "What mistake did the writer make?"
+        "vi": "筆者は、どんなまちがいをしましたか。",
+        "en": "筆者は、どんなまちがいをしましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Làm mất tài liệu của khách",
-            "en": "Lost a customer’s documents"
-          },
-          {
-            "vi": "Đến muộn buổi họp",
-            "en": "Was late to a meeting"
-          },
-          {
-            "vi": "Nói chuyện với khách chưa đúng cách lịch sự",
-            "en": "Did not speak to a customer in proper polite language"
-          }
+          "おきゃくさんの書類をなくした",
+          "かいぎにおくれた",
+          "おきゃくさんに、ていねいなことばで話せなかった"
         ],
         "correct_index": 2
       },
@@ -103,23 +85,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Anh Kinoshita đã làm gì?",
-        "en": "What did Mr. Kinoshita do?"
+        "vi": "木下さんは、何をしてくれましたか。",
+        "en": "木下さんは、何をしてくれましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Xin lỗi thay tác giả và sau đó chỉ dạy tử tế",
-            "en": "Apologized for the writer and then taught kindly afterward"
-          },
-          {
-            "vi": "Quở trách tác giả trước mặt khách",
-            "en": "Scolded the writer in front of the customer"
-          },
-          {
-            "vi": "Báo cho giám đốc",
-            "en": "Reported it to the president"
-          }
+          "筆者のかわりにあやまり、あとでやさしく教えてくれた",
+          "おきゃくさんの前で筆者をしかった",
+          "社長に知らせた"
         ],
         "correct_index": 0
       },
@@ -136,23 +109,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trong tương lai tác giả muốn trở thành người như thế nào?",
-        "en": "What kind of person does the writer want to become?"
+        "vi": "筆者は、これからどんな人になりたいと思っていますか。",
+        "en": "筆者は、これからどんな人になりたいと思っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Người giỏi nói tiếng Anh",
-            "en": "A person good at English"
-          },
-          {
-            "vi": "Người có thể chỉ dạy cho người mới",
-            "en": "A person who can teach newcomers"
-          },
-          {
-            "vi": "Người làm việc ở công ty lớn",
-            "en": "A person working at a big company"
-          }
+          "英語が上手な人",
+          "新しい人に教えられる人",
+          "大きい会社ではたらく人"
         ],
         "correct_index": 1
       },

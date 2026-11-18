@@ -10,6 +10,27 @@ const envSchema = z.object({
   SMTP_URL: z.string().min(1, 'SMTP_URL là bắt buộc'),
   APP_BASE_URL: z.url(),
   PORT: z.coerce.number().int().min(1).max(65535).default(3000),
+  /** Origin client web được gọi API khác origin (chỉ dev), phân tách bằng dấu phẩy; rỗng = tắt CORS. */
+  CORS_ALLOWED_ORIGINS: z
+    .string()
+    .default('')
+    .transform((value) =>
+      value
+        .split(',')
+        .map((origin) => origin.trim())
+        .filter((origin) => origin !== ''),
+    )
+    .refine(
+      (origins) =>
+        origins.every((origin) => {
+          try {
+            return new URL(origin).origin === origin;
+          } catch {
+            return false;
+          }
+        }),
+      'CORS_ALLOWED_ORIGINS chỉ gồm origin dạng scheme://host[:port], không có đường dẫn hay dấu / cuối',
+    ),
 
   // Giới hạn tần suất theo IP (số yêu cầu/phút/IP, R9, FR-040)
   RATE_LIMIT_TRIAL_PER_MIN: z.coerce.number().int().positive().default(60),

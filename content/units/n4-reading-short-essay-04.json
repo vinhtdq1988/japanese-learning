@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Sở thích của tác giả là gì?",
-        "en": "What is the writer’s hobby?"
+        "vi": "筆者のしゅみは何ですか。",
+        "en": "筆者のしゅみは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Vẽ tranh",
-            "en": "Painting"
-          },
-          {
-            "vi": "Chụp ảnh",
-            "en": "Taking photographs"
-          },
-          {
-            "vi": "Đi leo núi",
-            "en": "Hiking"
-          }
+          "絵をかくこと",
+          "写真をとること",
+          "山にのぼること"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Tác giả cảm thấy vui khi nào?",
-        "en": "When does the writer feel happy?"
+        "vi": "筆者は、どんなときにうれしくなりますか。",
+        "en": "筆者は、どんなときにうれしくなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Khi mua được máy ảnh mới",
-            "en": "When buying a new camera"
-          },
-          {
-            "vi": "Khi tìm thấy hoa đẹp hay tòa nhà thú vị",
-            "en": "When finding beautiful flowers or interesting buildings"
-          },
-          {
-            "vi": "Khi bạn bè khen ảnh",
-            "en": "When friends praise the photos"
-          }
+          "新しいカメラが買えたとき",
+          "きれいな花やおもしろいかたちの建物を見つけたとき",
+          "友だちが写真をほめてくれたとき"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Tác giả làm gì với ảnh đã chụp?",
-        "en": "What does the writer do with the photos?"
+        "vi": "筆者は、とった写真をどうしていますか。",
+        "en": "筆者は、とった写真をどうしていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chỉnh bằng máy tính rồi cho bạn bè xem",
-            "en": "Touch them up on a computer and show friends"
-          },
-          {
-            "vi": "In ra và dán lên tường",
-            "en": "Print them and put them on the wall"
-          },
-          {
-            "vi": "Bán cho cửa hàng",
-            "en": "Sell them to a shop"
-          }
+          "パソコンできれいにして、友だちにも見せている",
+          "プリントして、かべにはっている",
+          "店に売っている"
         ],
         "correct_index": 0
       },

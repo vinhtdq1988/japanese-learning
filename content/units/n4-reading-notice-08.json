@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trung tâm thể thao nghỉ vào ngày nào?",
-        "en": "On which day is the sports center closed?"
+        "vi": "スポーツセンターは、何曜日が休みですか。",
+        "en": "スポーツセンターは、何曜日が休みですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Hai",
-            "en": "Monday"
-          },
-          {
-            "vi": "Chủ nhật",
-            "en": "Sunday"
-          },
-          {
-            "vi": "Thứ Bảy",
-            "en": "Saturday"
-          }
+          "月曜日",
+          "日曜日",
+          "土曜日"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người mới đến phải làm gì trước tiên?",
-        "en": "What must a visitor do first?"
+        "vi": "はじめに、何をしなければなりませんか。",
+        "en": "はじめに、何をしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tắm bằng vòi sen",
-            "en": "Wash in the shower"
-          },
-          {
-            "vi": "Ghi tên ở quầy tiếp tân và nộp 100 yên",
-            "en": "Write their name at reception and pay 100 yen"
-          },
-          {
-            "vi": "Cất đồ vào tủ khóa",
-            "en": "Put belongings in a locker"
-          }
+          "シャワーであらう",
+          "うけつけで名前を書いて、百円を出す",
+          "ロッカーに荷物を入れる"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người nào không được xuống bể bơi?",
-        "en": "Who cannot enter the pool?"
+        "vi": "プールに入れない人は、どんな人ですか。",
+        "en": "プールに入れない人は、どんな人ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Người chưa tắm bằng vòi sen",
-            "en": "People who have not showered"
-          },
-          {
-            "vi": "Người đến sau 6 giờ tối",
-            "en": "People who arrive after 6 p.m."
-          },
-          {
-            "vi": "Người không đội mũ bơi",
-            "en": "People without a swim cap"
-          }
+          "シャワーであらっていない人",
+          "夜六時より後に来た人",
+          "ぼうしをかぶらない人"
         ],
         "correct_index": 2
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Chìa khóa tủ phải xử lý thế nào khi ra về?",
-        "en": "What should you do with the locker key when you leave?"
+        "vi": "ロッカーのかぎは、帰るときにどうしますか。",
+        "en": "ロッカーのかぎは、帰るときにどうしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mang về nhà",
-            "en": "Take it home"
-          },
-          {
-            "vi": "Trả lại quầy tiếp tân",
-            "en": "Return it to the reception desk"
-          },
-          {
-            "vi": "Bỏ vào thùng rác",
-            "en": "Put it in the trash can"
-          }
+          "家に持って帰る",
+          "うけつけにかえす",
+          "ごみばこに入れる"
         ],
         "correct_index": 1
       },

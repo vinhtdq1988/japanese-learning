@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Yamada gửi kèm email thứ gì?",
-        "en": "What does Yamada attach to the email?"
+        "vi": "山田さんは、メールに何を添付しましたか。",
+        "en": "山田さんは、メールに何を添付しましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Tài liệu dùng cho cuộc họp ngày mai",
-            "en": "Materials for tomorrow’s meeting"
-          },
-          {
-            "vi": "Báo cáo doanh thu tháng này",
-            "en": "This month’s sales report"
-          },
-          {
-            "vi": "Bảng chấm công",
-            "en": "A timesheet"
-          }
+          "明日の会議で使う資料",
+          "今月の売上報告",
+          "勤務時間の表"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Người nhận cần làm gì?",
-        "en": "What does the recipient need to do?"
+        "vi": "メールを受け取った人は何をしなければなりませんか。",
+        "en": "メールを受け取った人は何をしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gửi lại tài liệu cho phòng khác",
-            "en": "Forward the materials to another department"
-          },
-          {
-            "vi": "Kiểm tra nội dung và báo nếu có chỗ cần sửa",
-            "en": "Check the contents and report anything that needs correcting"
-          },
-          {
-            "vi": "Tham dự cuộc họp thay Yamada",
-            "en": "Attend the meeting in place of Yamada"
-          }
+          "資料を別の部署に送り返す",
+          "内容を確認して、直すところがあれば知らせる",
+          "山田さんの代わりに会議に出る"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Hạn trả lời là khi nào?",
-        "en": "What is the deadline for replying?"
+        "vi": "返事の期限はいつですか。",
+        "en": "返事の期限はいつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "5 giờ chiều ngày mai",
-            "en": "5 p.m. tomorrow"
-          },
-          {
-            "vi": "5 giờ chiều hôm nay",
-            "en": "5 p.m. today"
-          },
-          {
-            "vi": "Trước cuộc họp tuần sau",
-            "en": "Before next week’s meeting"
-          }
+          "明日の午後5時",
+          "今日の午後5時",
+          "来週の会議の前"
         ],
         "correct_index": 1
       },

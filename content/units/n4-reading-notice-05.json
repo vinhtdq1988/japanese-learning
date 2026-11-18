@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Bài kiểm tra diễn ra khi nào?",
-        "en": "When is the test?"
+        "vi": "日本語のテストは、いつありますか。",
+        "en": "日本語のテストは、いつありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ngày 10 tháng sau, từ 1 giờ đến 3 giờ chiều",
-            "en": "The 10th of next month, 1 to 3 p.m."
-          },
-          {
-            "vi": "Ngày 10 tháng này, từ 1 giờ đến 3 giờ chiều",
-            "en": "The 10th of this month, 1 to 3 p.m."
-          },
-          {
-            "vi": "Ngày 10 tháng sau, từ 3 giờ đến 5 giờ chiều",
-            "en": "The 10th of next month, 3 to 5 p.m."
-          }
+          "来月の十日の午後一時から三時まで",
+          "今月の十日の午後一時から三時まで",
+          "来月の十日の午後三時から五時まで"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Bài kiểm tra diễn ra ở đâu?",
-        "en": "Where will the test be held?"
+        "vi": "テストは、どこでうけますか。",
+        "en": "テストは、どこでうけますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Phòng học thường ngày",
-            "en": "The usual classroom"
-          },
-          {
-            "vi": "Phòng học lớn trên tầng 2",
-            "en": "The large classroom on the second floor"
-          },
-          {
-            "vi": "Phòng học lớn trên tầng 1",
-            "en": "The large classroom on the first floor"
-          }
+          "いつもの教室",
+          "にかいの大きい教室",
+          "いっかいの大きい教室"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điều nào KHÔNG được phép trong bài kiểm tra?",
-        "en": "Which is NOT allowed during the test?"
+        "vi": "テストのとき、してはいけないことは何ですか。",
+        "en": "テストのとき、してはいけないことは何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Dùng bút chì",
-            "en": "Using a pencil"
-          },
-          {
-            "vi": "Dùng cục tẩy",
-            "en": "Using an eraser"
-          },
-          {
-            "vi": "Dùng từ điển",
-            "en": "Using a dictionary"
-          }
+          "えんぴつを使うこと",
+          "けしゴムを使うこと",
+          "じしょを使うこと"
         ],
         "correct_index": 2
       },
@@ -135,23 +108,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Người không thể đến vì bệnh phải làm gì?",
-        "en": "What should people who cannot come because of illness do?"
+        "vi": "病気などで来られない人は、どうしなければなりませんか。",
+        "en": "病気などで来られない人は、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gọi điện cho giáo viên trước một ngày",
-            "en": "Call the teacher the day before"
-          },
-          {
-            "vi": "Gọi điện cho giáo viên sau bài kiểm tra",
-            "en": "Call the teacher after the test"
-          },
-          {
-            "vi": "Gửi email cho bạn cùng lớp",
-            "en": "Email a classmate"
-          }
+          "前の日までに先生に電話をする",
+          "テストのあとで先生に電話をする",
+          "クラスの人にメールを送る"
         ],
         "correct_index": 0
       },

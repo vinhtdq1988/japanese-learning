@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Muốn đến Yamakawa trước 12 giờ trưa thì chuyến muộn nhất là chuyến rời ga lúc mấy giờ?",
-        "en": "To reach Yamakawa before 12 noon, what is the latest bus you can take from the station?"
+        "vi": "お昼の12時までに山川に着きたいとき、駅を出る一番おそいバスは何時ですか。",
+        "en": "お昼の12時までに山川に着きたいとき、駅を出る一番おそいバスは何時ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "9:10",
-            "en": "9:10"
-          },
-          {
-            "vi": "11:10",
-            "en": "11:10"
-          },
-          {
-            "vi": "13:10",
-            "en": "13:10"
-          }
+          "9:10",
+          "11:10",
+          "13:10"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Chuyến nào không chạy vào Chủ nhật?",
-        "en": "Which bus does not run on Sundays?"
+        "vi": "日曜日にないバスはどれですか。",
+        "en": "日曜日にないバスはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chuyến 9:10",
-            "en": "The 9:10 bus"
-          },
-          {
-            "vi": "Chuyến 10:10",
-            "en": "The 10:10 bus"
-          },
-          {
-            "vi": "Chuyến 13:10",
-            "en": "The 13:10 bus"
-          }
+          "9:10のバス",
+          "10:10のバス",
+          "13:10のバス"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Hai người lớn và một trẻ em đi thì tổng tiền vé là bao nhiêu?",
-        "en": "How much is the fare for two adults and one child?"
+        "vi": "大人二人と子ども一人が乗ると、バス代はぜんぶでいくらですか。",
+        "en": "大人二人と子ども一人が乗ると、バス代はぜんぶでいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1.000 yên",
-            "en": "1,000 yen"
-          },
-          {
-            "vi": "1.250 yên",
-            "en": "1,250 yen"
-          },
-          {
-            "vi": "1.500 yên",
-            "en": "1,500 yen"
-          }
+          "1,000円",
+          "1,250円",
+          "1,500円"
         ],
         "correct_index": 1
       },

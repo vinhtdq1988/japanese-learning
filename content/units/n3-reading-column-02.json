@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vì sao người mới đến Nhật có thể thấy khó khăn?",
-        "en": "Why might newcomers to Japan find it difficult?"
+        "vi": "初めて日本に来た人が苦労するかもしれない理由は何ですか。",
+        "en": "初めて日本に来た人が苦労するかもしれない理由は何ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Rác phải bỏ ở xa nhà",
-            "en": "The garbage must be taken far from home"
-          },
-          {
-            "vi": "Ngày bỏ rác khác nhau tùy theo loại rác",
-            "en": "The collection day differs depending on the type of garbage"
-          },
-          {
-            "vi": "Phải trả tiền để bỏ rác",
-            "en": "They must pay to throw garbage away"
-          }
+          "ごみを出す場所が家から遠いから",
+          "ごみの種類によって出す日が違うから",
+          "ごみを出すのにお金がかかるから"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Phân loại rác có ý nghĩa gì theo tác giả?",
-        "en": "What is the point of sorting garbage, according to the author?"
+        "vi": "筆者は、ごみを分ける意味は何だと言っていますか。",
+        "en": "筆者は、ごみを分ける意味は何だと言っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Giúp thị trấn tiết kiệm tiền điện",
-            "en": "It saves the town electricity"
-          },
-          {
-            "vi": "Có thể tái sử dụng làm tài nguyên và giảm lượng rác đem đốt",
-            "en": "It lets garbage be reused as resources and reduces what is burned"
-          },
-          {
-            "vi": "Giúp nhà dân sạch hơn",
-            "en": "It keeps homes cleaner"
-          }
+          "町の電気代を節約できる",
+          "資源として再び使え、もやすごみの量も減らせる",
+          "家の中がきれいになる"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Quan điểm của tác giả ở cuối bài là gì?",
-        "en": "What is the author’s view at the end?"
+        "vi": "筆者の最後の考えはどれですか。",
+        "en": "筆者の最後の考えはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Nỗ lực nhỏ của từng người góp phần bảo vệ môi trường, nên muốn bắt đầu từ nhà mình",
-            "en": "Small individual efforts help protect the environment, so the author wants to start at home"
-          },
-          {
-            "vi": "Quy định này quá phức tạp và nên bỏ",
-            "en": "The rules are too complicated and should be abolished"
-          },
-          {
-            "vi": "Chỉ chính quyền mới có thể giải quyết vấn đề rác",
-            "en": "Only the government can solve the garbage problem"
-          }
+          "一人一人の小さな努力が環境を守ることにつながるので、自分の家から始めたい",
+          "この決まりは複雑すぎるので、なくしたほうがいい",
+          "ごみの問題は役所にしか解決できない"
         ],
         "correct_index": 0
       },

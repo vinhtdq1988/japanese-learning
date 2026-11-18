@@ -18,6 +18,15 @@
 
 .PARAMETER Device
   Chỉ cho local: `chrome` (mặc định), `edge` hoặc `web-server`.
+
+.PARAMETER ServerHost
+  Chỉ cho local: IP hoặc tên miền để thiết bị khác truy cập client (bí danh -Ip, -Domain), vd. 192.168.1.11.
+  Tự dùng `web-server` nghe 0.0.0.0 (chrome/edge của `flutter run` chỉ chạy được qua localhost: mở bằng host khác
+  ra trang trắng), API_BASE_URL = <Scheme>://<ServerHost>:<PORT>/api/v1 (trừ khi truyền -ApiUrl). Backend phải chạy với
+  cùng -ServerHost để bật CORS cho origin này. Prod bỏ qua tham số này: bản build dùng API cùng origin (/api/v1).
+
+.PARAMETER Scheme
+  `http` hoặc `https` của địa chỉ API khi dùng -ServerHost (mặc định http).
 #>
 [CmdletBinding()]
 param(
@@ -27,7 +36,11 @@ param(
     [string]$ApiUrl,
     [int]$Port,
     [ValidateSet('chrome', 'edge', 'web-server')]
-    [string]$Device = 'chrome'
+    [string]$Device = 'chrome',
+    [Alias('Ip', 'Domain')]
+    [string]$ServerHost,
+    [ValidateSet('http', 'https')]
+    [string]$Scheme
 )
 
 $ErrorActionPreference = 'Stop'
@@ -36,6 +49,19 @@ $ErrorActionPreference = 'Stop'
 $clientDir = Join-Path $RepoRoot 'client'
 $envFile = Initialize-EnvFile $clientDir $Environment
 $config = Read-EnvFile $envFile
+$webHostname = $null
+if ($ServerHost -and $Environment -eq 'prod') {
+    Write-Warning '-ServerHost không áp dụng cho prod (bản build dùng API cùng origin); bỏ qua.'
+} elseif ($ServerHost) {
+    Assert-ServerHost $ServerHost
+    $urls = Get-ServerUrls $ServerHost $Scheme $Environment
+    if (-not $ApiUrl) { $ApiUrl = $urls.ApiUrl }
+    if ($Device -ne 'web-server') {
+        Write-Step "-ServerHost cần web-server (chrome/edge của flutter run chỉ chạy được qua localhost): đổi Device $Device -> web-server"
+        $Device = 'web-server'
+    }
+    $webHostname = '0.0.0.0'
+}
 if (-not $ApiUrl) { $ApiUrl = $config['API_BASE_URL'] }
 if (-not $ApiUrl) { throw "Thiếu API_BASE_URL trong $envFile (hoặc truyền -ApiUrl)." }
 if (-not $Port) { $Port = if ($config['WEB_PORT']) { [int]$config['WEB_PORT'] } else { 8080 } }
@@ -59,7 +85,17 @@ try {
         if ($Device -ne 'web-server') {
             $flutterArgs += '--web-browser-flag=--disable-web-security'
         }
-        Write-Step "Chạy client tại http://localhost:$Port -> API $ApiUrl (r: hot reload, q: thoát)"
+        if ($webHostname) { $flutterArgs += @('--web-hostname', $webHostname) }
+        $openUrl = if ($webHostname) { ($urls.WebOrigin -replace ':\d+$', '') + ":$Port" } else { "http://localhost:$Port" }
+        Write-Step "Chạy client tại $openUrl -> API $ApiUrl (r: hot reload, q: thoát)"
+        if ($webHostname) {
+            if ($openUrl -ne $urls.WebOrigin) {
+                Write-Warning "Cổng $Port khác WEB_PORT trong ${envFile}: backend chỉ bật CORS cho $($urls.WebOrigin), hãy đổi WEB_PORT thay vì dùng -Port."
+            }
+            $apiPort = ([Uri]$ApiUrl).Port
+            Write-Host "Lần đầu Flutter biên dịch vài chục giây; trang trắng thì chờ rồi tải lại." -ForegroundColor Yellow
+            Write-Host "Thiết bị khác không vào được: mở tường lửa (PowerShell quyền Admin): New-NetFirewallRule -DisplayName 'JL dev' -Direction Inbound -Protocol TCP -LocalPort $Port,$apiPort -Action Allow" -ForegroundColor Yellow
+        }
         & flutter @flutterArgs
     }
 } finally {

@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Dịch vụ trực tuyến không dùng được vào lúc nào?",
-        "en": "When will the online service be unavailable?"
+        "vi": "オンラインのサービスが使えないのは、いつですか。",
+        "en": "オンラインのサービスが使えないのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Từ 11 giờ tối thứ Bảy đến 7 giờ sáng Chủ nhật",
-            "en": "From 11 p.m. Saturday to 7 a.m. Sunday"
-          },
-          {
-            "vi": "Cả ngày thứ Bảy",
-            "en": "All day Saturday"
-          },
-          {
-            "vi": "Từ 7 giờ sáng thứ Bảy đến 11 giờ tối",
-            "en": "From 7 a.m. to 11 p.m. on Saturday"
-          }
+          "土曜日の午後11時から日曜日の午前7時まで",
+          "土曜日の一日じゅう",
+          "土曜日の午前7時から午後11時まで"
         ],
         "correct_index": 0
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Việc nào KHÔNG làm được trong thời gian bảo trì?",
-        "en": "Which of these cannot be done during the maintenance?"
+        "vi": "メンテナンス中にできないことはどれですか。",
+        "en": "メンテナンス中にできないことはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Rút tiền ở máy ATM",
-            "en": "Withdraw cash at an ATM"
-          },
-          {
-            "vi": "Chuyển khoản trên mạng",
-            "en": "Make an online transfer"
-          },
-          {
-            "vi": "Giao dịch tại quầy chi nhánh",
-            "en": "Do business at a branch counter"
-          }
+          "ATMでお金を引き出すこと",
+          "インターネットで振り込みをすること",
+          "店舗の窓口で手続きをすること"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "ATM và quầy giao dịch ở chi nhánh thì sao?",
-        "en": "What about ATMs and branch counters?"
+        "vi": "ATMと店舗の窓口は、どうなりますか。",
+        "en": "ATMと店舗の窓口は、どうなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cũng ngừng hoạt động",
-            "en": "They also stop"
-          },
-          {
-            "vi": "Chỉ ATM ngừng",
-            "en": "Only the ATMs stop"
-          },
-          {
-            "vi": "Vẫn dùng bình thường",
-            "en": "They can be used as usual"
-          }
+          "どちらも使えない",
+          "ATMだけ使えない",
+          "ふだんどおり使える"
         ],
         "correct_index": 2
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Nếu việc bảo trì kéo dài hơn dự kiến thì sao?",
-        "en": "What happens if the maintenance takes longer than planned?"
+        "vi": "メンテナンスが予定より長くなった場合は、どうしますか。",
+        "en": "メンテナンスが予定より長くなった場合は、どうしますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thông báo trên trang web",
-            "en": "It will be announced on the website"
-          },
-          {
-            "vi": "Gửi thư riêng cho từng khách",
-            "en": "A letter will be sent to each customer"
-          },
-          {
-            "vi": "Dịch vụ sẽ bị dừng vĩnh viễn",
-            "en": "The service will stop permanently"
-          }
+          "ホームページでお知らせする",
+          "お客様一人一人に手紙を送る",
+          "サービスをずっと止める"
         ],
         "correct_index": 0
       },

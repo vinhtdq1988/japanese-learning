@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Nếu hôm đó trời mưa thì lễ hội diễn ra ở đâu?",
-        "en": "Where is the festival held if it rains?"
+        "vi": "その日が雨の場合、フェスティバルはどこで行われますか。",
+        "en": "その日が雨の場合、フェスティバルはどこで行われますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Công viên Trung tâm",
-            "en": "Central Park"
-          },
-          {
-            "vi": "Nhà thi đấu thành phố",
-            "en": "The City Gymnasium"
-          },
-          {
-            "vi": "Hoãn sang tuần sau",
-            "en": "It is postponed to the following week"
-          }
+          "中央公園",
+          "市民体育館",
+          "来週に延期される"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Lớp học nhảy cho trẻ em có điều kiện gì?",
-        "en": "What is the condition for the children’s dance class?"
+        "vi": "子ども向けダンス教室には、どんな条件がありますか。",
+        "en": "子ども向けダンス教室には、どんな条件がありますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Phải đặt trước một tuần",
-            "en": "Reserve one week in advance"
-          },
-          {
-            "vi": "30 người đến trước, bắt đầu 11:00",
-            "en": "First 30 people, starting at 11:00"
-          },
-          {
-            "vi": "Chỉ dành cho người trên 18 tuổi",
-            "en": "Only for those over 18"
-          }
+          "一週間前までに予約が必要",
+          "先着30名で、11:00から始まる",
+          "18歳以上の人だけが参加できる"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Muốn ăn 3 món ở khu ẩm thực thì cần mua tối thiểu bao nhiêu tiền vé?",
-        "en": "How much do you need to spend on tickets to eat 3 dishes?"
+        "vi": "世界の料理コーナーで3品食べたいとき、チケット代は最低いくら必要ですか。",
+        "en": "世界の料理コーナーで3品食べたいとき、チケット代は最低いくら必要ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "1.000 yên",
-            "en": "1,000 yen"
-          },
-          {
-            "vi": "2.000 yên",
-            "en": "2,000 yen"
-          },
-          {
-            "vi": "3.000 yên",
-            "en": "3,000 yen"
-          }
+          "1,000円",
+          "2,000円",
+          "3,000円"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Nên đến lễ hội bằng cách nào?",
-        "en": "How should you get to the festival?"
+        "vi": "フェスティバルには、どうやって行けばいいですか。",
+        "en": "フェスティバルには、どうやって行けばいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Bằng ô tô riêng",
-            "en": "By private car"
-          },
-          {
-            "vi": "Bằng tàu điện hoặc xe buýt",
-            "en": "By train or bus"
-          },
-          {
-            "vi": "Chỉ đi bộ",
-            "en": "Only on foot"
-          }
+          "自分の車で",
+          "電車またはバスで",
+          "歩いてだけ"
         ],
         "correct_index": 1
       },

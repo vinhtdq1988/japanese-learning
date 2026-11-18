@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Muốn xem buổi chiếu phim cho trẻ em thì cần làm gì?",
-        "en": "What do you need to do to attend the children’s film screening?"
+        "vi": "子ども映画会を見るには、どうすればいいですか。",
+        "en": "子ども映画会を見るには、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đặt trước một ngày",
-            "en": "Reserve one day in advance"
-          },
-          {
-            "vi": "Trả 1.500 yên",
-            "en": "Pay 1,500 yen"
-          },
-          {
-            "vi": "Không cần đặt trước và miễn phí",
-            "en": "Nothing; it is free and needs no reservation"
-          }
+          "前日までに予約する",
+          "1,500円払う",
+          "予約はいらないし、無料である"
         ],
         "correct_index": 2
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Buổi hòa nhạc piano diễn ra khi nào và giá vé bao nhiêu?",
-        "en": "When is the piano concert and how much is it?"
+        "vi": "ピアノコンサートはいつあって、いくらですか。",
+        "en": "ピアノコンサートはいつあって、いくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Ngày 12, từ 14:00, 1.500 yên",
-            "en": "The 12th, from 14:00, 1,500 yen"
-          },
-          {
-            "vi": "Ngày 5, từ 13:00, 500 yên",
-            "en": "The 5th, from 13:00, 500 yen"
-          },
-          {
-            "vi": "Ngày 19, từ 10:00, 1.500 yên",
-            "en": "The 19th, from 10:00, 1,500 yen"
-          }
+          "12日の14:00から、1,500円",
+          "5日の13:00から、500円",
+          "19日の10:00から、1,500円"
         ],
         "correct_index": 0
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Những sự kiện nào cần đặt trước?",
-        "en": "Which events require a reservation?"
+        "vi": "予約が必要なイベントはどれですか。",
+        "en": "予約が必要なイベントはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chỉ buổi chiếu phim",
-            "en": "Only the film screening"
-          },
-          {
-            "vi": "Hòa nhạc và lớp trải nghiệm",
-            "en": "The concert and the workshop"
-          },
-          {
-            "vi": "Cả ba sự kiện",
-            "en": "All three events"
-          }
+          "子ども映画会だけ",
+          "コンサートと体験教室",
+          "三つとも"
         ],
         "correct_index": 1
       },

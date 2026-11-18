@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Vấn đề nào được nêu bên cạnh việc số người nuôi thú cưng tăng?",
-        "en": "What problem is mentioned alongside the rise in pet ownership?"
+        "vi": "ペットをかう人が増えていることの他に、どんな問題が挙げられていますか。",
+        "en": "ペットをかう人が増えていることの他に、どんな問題が挙げられていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Giá thức ăn tăng",
-            "en": "The price of pet food is rising"
-          },
-          {
-            "vi": "Nhiều chủ nuôi bỏ rơi thú cưng giữa chừng",
-            "en": "Many owners give up their pets partway through"
-          },
-          {
-            "vi": "Thú cưng gây tiếng ồn",
-            "en": "Pets cause noise"
-          }
+          "えさの値段が上がっていること",
+          "かい主がとちゅうでペットを手放してしまうこと",
+          "ペットの声がうるさいこと"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Việc chăm sóc thú cưng cần những gì?",
-        "en": "What does caring for a pet involve?"
+        "vi": "ペットの世話には、何が必要ですか。",
+        "en": "ペットの世話には、何が必要ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chỉ cần cho ăn",
-            "en": "Only feeding"
-          },
-          {
-            "vi": "Cho ăn, dắt đi dạo, chữa bệnh và tốn nhiều chi phí",
-            "en": "Feeding, walks, medical treatment and considerable cost"
-          },
-          {
-            "vi": "Chỉ cần dọn dẹp chuồng",
-            "en": "Only cleaning the cage"
-          }
+          "えさをやることだけ",
+          "えさ、さんぽ、病気のちりょうなど、毎日の世話と費用",
+          "小屋のそうじだけ"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Trước khi nuôi, tác giả cho rằng cần suy nghĩ điều gì?",
-        "en": "What does the author think should be considered before getting a pet?"
+        "vi": "筆者は、かう前に何を考えるべきだと言っていますか。",
+        "en": "筆者は、かう前に何を考えるべきだと言っていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Có thể chịu trách nhiệm đến cùng hay không",
-            "en": "Whether you can take responsibility until the end"
-          },
-          {
-            "vi": "Giống nào đắt nhất",
-            "en": "Which breed is the most expensive"
-          },
-          {
-            "vi": "Có đủ đồ chơi cho thú cưng không",
-            "en": "Whether there are enough toys"
-          }
+          "最後まで責任を持てるかどうか",
+          "どの種類がいちばん高いか",
+          "ペットのおもちゃが足りるかどうか"
         ],
         "correct_index": 0
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Điều nào đúng với kết luận của bài?",
-        "en": "Which statement matches the conclusion?"
+        "vi": "この文章の結論として、正しいものはどれですか。",
+        "en": "この文章の結論として、正しいものはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Không nên nuôi thú cưng",
-            "en": "People should not keep pets"
-          },
-          {
-            "vi": "Vì sống cùng động vật mang lại niềm vui nên cần sẵn sàng chịu trách nhiệm với sinh mạng ấy",
-            "en": "Because living with animals brings joy, one must be ready to take responsibility for their life"
-          },
-          {
-            "vi": "Chỉ nên nuôi chó",
-            "en": "Only dogs should be kept"
-          }
+          "ペットはかわないほうがいい",
+          "動物とくらすことは大きなよろこびだが、命に責任を持つかくごが必要である",
+          "犬だけをかうべきだ"
         ],
         "correct_index": 1
       },

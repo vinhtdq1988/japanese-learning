@@ -33,6 +33,11 @@ Các script ở [`../scripts/`](../scripts) làm trọn các bước trên cho t
   `node dist/src/server.js` với `NODE_ENV=production` từ bố cục tạm `.dev-data/prod`; client được build
   `flutter build web --release --no-web-resources-cdn` ra `client/build/web` (triển khai thật vẫn qua nginx/Docker như mục "Triển khai").
   `-Seed` nạp nội dung lần đầu (không tạo admin dev; dùng `pnpm admin:create`).
+- Truy cập từ thiết bị khác / đổi IP hoặc tên miền: thêm `-ServerHost <IP|tên miền>` (bí danh `-Ip`, `-Domain`; `-Scheme http|https`),
+  vd. `.\scripts\start-all.ps1 -ServerHost 192.168.1.11`. Không phải sửa file `.env`: script tự đặt `API_BASE_URL`,
+  `APP_BASE_URL` và `CORS_ALLOWED_ORIGINS` (chỉ dev; production cùng origin qua nginx nên để trống) rồi chạy client bằng
+  `web-server` nghe `0.0.0.0` (`chrome`/`edge` của `flutter run` chỉ chạy được qua `localhost`). Cần mở tường lửa cổng
+  `PORT` và `WEB_PORT`. Đổi địa chỉ thì chạy lại `stop-all.ps1` rồi `start-all.ps1` với giá trị mới.
 
 | Lệnh                                                 | Tác dụng                                                                                                                                                                                   |
 | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

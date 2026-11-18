@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Thứ Bảy thư viện mở cửa đến mấy giờ?",
-        "en": "Until what time is the library open on Saturdays?"
+        "vi": "土曜日、図書館は何時まであいていますか。",
+        "en": "土曜日、図書館は何時まであいていますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Đến 5 giờ chiều",
-            "en": "Until 5 p.m."
-          },
-          {
-            "vi": "Đến 8 giờ tối",
-            "en": "Until 8 p.m."
-          },
-          {
-            "vi": "Đến 12 giờ trưa",
-            "en": "Until 12 noon"
-          }
+          "午後5時まで",
+          "午後8時まで",
+          "お昼の12時まで"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Ngày nào thư viện nghỉ?",
-        "en": "When is the library closed?"
+        "vi": "図書館が休みなのは、いつですか。",
+        "en": "図書館が休みなのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Thứ Hai",
-            "en": "Mondays"
-          },
-          {
-            "vi": "Thứ Bảy",
-            "en": "Saturdays"
-          },
-          {
-            "vi": "Chủ nhật và ngày lễ",
-            "en": "Sundays and public holidays"
-          }
+          "月曜日",
+          "土曜日",
+          "日曜日としゅくじつ"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "info_search",
       "prompt": {
-        "vi": "Mỗi người được mượn tối đa bao nhiêu cuốn và trong bao lâu?",
-        "en": "How many books may each person borrow, and for how long?"
+        "vi": "一人で、何さつを、どのくらいの間借りることができますか。",
+        "en": "一人で、何さつを、どのくらいの間借りることができますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "3 cuốn trong 1 tuần",
-            "en": "Three books for one week"
-          },
-          {
-            "vi": "5 cuốn trong 2 tuần",
-            "en": "Five books for two weeks"
-          },
-          {
-            "vi": "10 cuốn trong 2 tuần",
-            "en": "Ten books for two weeks"
-          }
+          "3さつを1週間",
+          "5さつを2週間",
+          "10さつを2週間"
         ],
         "correct_index": 1
       },

@@ -35,23 +35,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Ai có thể sử dụng phòng họp?",
-        "en": "Who can use the meeting rooms?"
+        "vi": "会議室を利用できるのは、どんな人ですか。",
+        "en": "会議室を利用できるのは、どんな人ですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Bất kỳ ai",
-            "en": "Anyone"
-          },
-          {
-            "vi": "Người sống hoặc làm việc trong thành phố",
-            "en": "People who live or work in the city"
-          },
-          {
-            "vi": "Chỉ công ty có đăng ký",
-            "en": "Only registered companies"
-          }
+          "だれでも利用できる",
+          "市内に住んでいる人か、市内で働いている人",
+          "登録している会社だけ"
         ],
         "correct_index": 1
       },
@@ -68,23 +59,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Cách đặt phòng như thế nào?",
-        "en": "How do you make a reservation?"
+        "vi": "予約は、どうすればいいですか。",
+        "en": "予約は、どうすればいいですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gọi điện từ 1 tháng trước",
-            "en": "Phone one month ahead"
-          },
-          {
-            "vi": "Đến quầy tiếp tân từ 3 tháng trước",
-            "en": "Go to the reception desk from three months ahead"
-          },
-          {
-            "vi": "Gửi email trước 3 ngày",
-            "en": "Email three days before"
-          }
+          "1か月前から電話でする",
+          "3か月前から受付でする",
+          "3日前までにメールでする"
         ],
         "correct_index": 1
       },
@@ -101,23 +83,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Một nhóm công dân dùng phòng vào buổi chiều không vì mục đích kinh doanh thì phí là bao nhiêu?",
-        "en": "How much does a citizens’ group pay for an afternoon non-commercial use?"
+        "vi": "市民のグループが営利目的でなく、午後に使う場合、料金はいくらですか。",
+        "en": "市民のグループが営利目的でなく、午後に使う場合、料金はいくらですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "700 yên",
-            "en": "700 yen"
-          },
-          {
-            "vi": "350 yên",
-            "en": "350 yen"
-          },
-          {
-            "vi": "500 yên",
-            "en": "500 yen"
-          }
+          "700円",
+          "350円",
+          "500円"
         ],
         "correct_index": 1
       },
@@ -134,23 +107,14 @@
       "type": "multiple_choice",
       "format": "comprehension_mid",
       "prompt": {
-        "vi": "Nếu hủy đặt chỗ vào 1 ngày trước ngày sử dụng thì sao?",
-        "en": "What if you cancel one day before the day of use?"
+        "vi": "利用日の前日に予約を取り消すと、どうなりますか。",
+        "en": "利用日の前日に予約を取り消すと、どうなりますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Không mất phí",
-            "en": "There is no charge"
-          },
-          {
-            "vi": "Phải trả một nửa phí",
-            "en": "You pay half the fee"
-          },
-          {
-            "vi": "Phải trả toàn bộ phí",
-            "en": "You pay the full fee"
-          }
+          "料金はかからない",
+          "料金の半分が必要である",
+          "料金の全部が必要である"
         ],
         "correct_index": 1
       },

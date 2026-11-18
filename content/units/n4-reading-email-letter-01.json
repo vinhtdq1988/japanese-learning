@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Tiệc takoyaki diễn ra khi nào?",
-        "en": "When is the takoyaki party?"
+        "vi": "たこやきパーティーはいつですか。",
+        "en": "たこやきパーティーはいつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Chủ nhật tuần sau, từ 2 giờ chiều",
-            "en": "Next Sunday from 2 p.m."
-          },
-          {
-            "vi": "Chủ nhật tuần này, từ 2 giờ chiều",
-            "en": "This Sunday from 2 p.m."
-          },
-          {
-            "vi": "Thứ Sáu tuần sau, từ 2 giờ chiều",
-            "en": "Next Friday from 2 p.m."
-          }
+          "来週の日曜日の午後二時から",
+          "今週の日曜日の午後二時から",
+          "来週の金曜日の午後二時から"
         ],
         "correct_index": 0
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Ai chuẩn bị đồ uống?",
-        "en": "Who will prepare the drinks?"
+        "vi": "飲み物はだれが用意しますか。",
+        "en": "飲み物はだれが用意しますか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Yamada",
-            "en": "Yamada"
-          },
-          {
-            "vi": "Tanaka (người viết email)",
-            "en": "Tanaka (the writer)"
-          },
-          {
-            "vi": "Từng người bạn tự mang",
-            "en": "Each friend brings their own"
-          }
+          "山田さん",
+          "田中さん（メールを書いた人）",
+          "友だちがそれぞれ持ってくる"
         ],
         "correct_index": 1
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Yamada cần làm gì trước thứ Sáu?",
-        "en": "What does Yamada need to do by Friday?"
+        "vi": "山田さんは、金曜日までに何をしなければなりませんか。",
+        "en": "山田さんは、金曜日までに何をしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Mang đồ uống đến",
-            "en": "Bring drinks"
-          },
-          {
-            "vi": "Gọi cho năm người bạn",
-            "en": "Call the five friends"
-          },
-          {
-            "vi": "Cho biết có đến được hay không",
-            "en": "Say whether he can come"
-          }
+          "飲み物を持ってくる",
+          "友だち五人に電話する",
+          "行けるかどうかを知らせる"
         ],
         "correct_index": 2
       },

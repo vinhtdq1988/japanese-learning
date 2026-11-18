@@ -33,23 +33,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Người viết đi siêu thị cùng ai?",
-        "en": "Who did the writer go to the supermarket with?"
+        "vi": "「わたし」は、だれとスーパーへ行きましたか。",
+        "en": "「わたし」は、だれとスーパーへ行きましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Gia đình",
-            "en": "Family"
-          },
-          {
-            "vi": "Một người bạn",
-            "en": "A friend"
-          },
-          {
-            "vi": "Đồng nghiệp",
-            "en": "A coworker"
-          }
+          "家族",
+          "友だち",
+          "会社の人"
         ],
         "correct_index": 1
       },
@@ -65,23 +56,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Họ đã mua những gì?",
-        "en": "What did they buy?"
+        "vi": "二人は、何を買いましたか。",
+        "en": "二人は、何を買いましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cá, trứng và gạo",
-            "en": "Fish, eggs and rice"
-          },
-          {
-            "vi": "Rau, cá và bánh mì",
-            "en": "Vegetables, fish and bread"
-          },
-          {
-            "vi": "Rau, thịt và sữa",
-            "en": "Vegetables, meat and milk"
-          }
+          "魚とたまごと米",
+          "野菜と魚とパン",
+          "野菜と肉と牛乳"
         ],
         "correct_index": 2
       },
@@ -97,14 +79,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Một quả táo giá bao nhiêu?",
-        "en": "How much was one apple?"
+        "vi": "りんごは、一ついくらですか。",
+        "en": "りんごは、一ついくらですか。"
       },
       "payload": {
         "choices": [
-          "50円",
-          "100円",
-          "200円"
+          "五十円",
+          "百円",
+          "二百円"
         ],
         "correct_index": 1
       },
@@ -120,23 +102,14 @@
     {
       "type": "multiple_choice",
       "prompt": {
-        "vi": "Sau khi mua đồ, họ làm gì?",
-        "en": "What did they do after shopping?"
+        "vi": "買い物のあと、二人は何をしましたか。",
+        "en": "買い物のあと、二人は何をしましたか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Uống cà phê ở quán gần đó",
-            "en": "Drank coffee at a nearby café"
-          },
-          {
-            "vi": "Về nhà ngay",
-            "en": "Went straight home"
-          },
-          {
-            "vi": "Đi xem phim",
-            "en": "Went to see a movie"
-          }
+          "近くの喫茶店でコーヒーを飲みました",
+          "すぐ家へ帰りました",
+          "映画を見に行きました"
         ],
         "correct_index": 0
       },

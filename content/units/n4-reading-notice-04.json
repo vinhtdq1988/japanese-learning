@@ -36,23 +36,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Khi dắt chó đến công viên thì phải làm gì?",
-        "en": "What must you do when bringing a dog to the park?"
+        "vi": "犬をつれてこうえんに来るときは、どうしなければなりませんか。",
+        "en": "犬をつれてこうえんに来るときは、どうしなければなりませんか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Cho chó vào lồng",
-            "en": "Put the dog in a cage"
-          },
-          {
-            "vi": "Buộc dây cho chó",
-            "en": "Keep the dog on a leash"
-          },
-          {
-            "vi": "Không được dắt chó đến",
-            "en": "Do not bring dogs"
-          }
+          "かごに入れる",
+          "ひもをつける",
+          "つれてきてはいけない"
         ],
         "correct_index": 1
       },
@@ -69,23 +60,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Khi nào không được nói to?",
-        "en": "When should you not make loud noises?"
+        "vi": "大きいこえを出してはいけないのは、いつですか。",
+        "en": "大きいこえを出してはいけないのは、いつですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Từ 6 giờ tối đến 9 giờ sáng",
-            "en": "From 6 p.m. to 9 a.m."
-          },
-          {
-            "vi": "Cả ngày",
-            "en": "All day"
-          },
-          {
-            "vi": "Từ 9 giờ tối đến 6 giờ sáng",
-            "en": "From 9 p.m. to 6 a.m."
-          }
+          "夕方六時から朝九時まで",
+          "一日じゅう",
+          "夜九時から朝六時まで"
         ],
         "correct_index": 2
       },
@@ -102,23 +84,14 @@
       "type": "multiple_choice",
       "format": "comprehension_short",
       "prompt": {
-        "vi": "Theo quy định, điều nào đúng?",
-        "en": "According to the rules, which is correct?"
+        "vi": "このこうえんのきまりとして、正しいものはどれですか。",
+        "en": "このこうえんのきまりとして、正しいものはどれですか。"
       },
       "payload": {
         "choices": [
-          {
-            "vi": "Có thể hái vài bông hoa",
-            "en": "You may pick a few flowers"
-          },
-          {
-            "vi": "Rác phải mang về nhà",
-            "en": "You must take your trash home"
-          },
-          {
-            "vi": "Có thể nướng thịt ở đây",
-            "en": "You may grill meat here"
-          }
+          "花を少しとってもいい",
+          "ごみは持って帰らなければならない",
+          "ここで肉をやいてもいい"
         ],
         "correct_index": 1
       },

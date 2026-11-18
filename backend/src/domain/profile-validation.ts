@@ -256,3 +256,25 @@ export const itemIdParamsSchema = z.object({
 export const setMasteredSchema = z.object({
   mastered: z.boolean({ error: 'mastered phải là true hoặc false' }),
 });
+
+/**
+ * Tham số của `GET /lookup` (popup furigana bài luyện đọc): `terms` là danh sách cụm Hán tự/từ ngăn bởi dấu
+ * phẩy, tối đa 60 cụm, mỗi cụm 1–20 ký tự. Rỗng hoặc vượt giới hạn → 422 `VALIDATION_FAILED`.
+ */
+export const lookupQuerySchema = z.object({
+  terms: z
+    .string({ error: 'terms là bắt buộc' })
+    .transform((value) =>
+      value
+        .split(',')
+        .map((t) => t.trim())
+        .filter((t) => t !== ''),
+    )
+    .pipe(
+      z
+        .array(z.string().max(20, 'Mỗi cụm tối đa 20 ký tự'))
+        .min(1, 'Cần ít nhất một cụm')
+        .max(60, 'Tối đa 60 cụm mỗi lần tra'),
+    ),
+});
+export type LookupQuery = z.infer<typeof lookupQuerySchema>;

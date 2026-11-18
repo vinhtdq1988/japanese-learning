@@ -63,7 +63,7 @@ bool _has(String key) => find.byKey(Key(key)).evaluate().isNotEmpty;
 void main() {
   group('PassagePanel', () {
     testWidgets(
-      'mặc định mở: hiện đoạn văn và bản dịch; bấm thu gọn rồi mở lại',
+      'mặc định mở: hiện đoạn văn, ẩn bản dịch cho đến khi bấm hiện; bấm thu gọn rồi mở lại',
       (tester) async {
         await tester.pumpWidget(
           _host(
@@ -74,9 +74,19 @@ void main() {
           ),
         );
         expect(find.text(_passage), findsOneWidget);
-        expect(find.text('Anh Tanaka dậy lúc 7 giờ.'), findsOneWidget);
+        expect(find.text('Anh Tanaka dậy lúc 7 giờ.'), findsNothing);
+        expect(find.text('Hiện bản dịch'), findsOneWidget);
         expect(find.text('Đoạn văn'), findsOneWidget);
         expect(find.text('Thu gọn'), findsOneWidget);
+
+        await tester.tap(find.byKey(const Key('passage-translation-toggle')));
+        await tester.pumpAndSettle();
+        expect(find.text('Anh Tanaka dậy lúc 7 giờ.'), findsOneWidget);
+        expect(find.text('Ẩn bản dịch'), findsOneWidget);
+
+        await tester.tap(find.byKey(const Key('passage-translation-toggle')));
+        await tester.pumpAndSettle();
+        expect(find.text('Anh Tanaka dậy lúc 7 giờ.'), findsNothing);
 
         await tester.tap(find.byKey(const Key('passage-toggle')));
         await tester.pumpAndSettle();
