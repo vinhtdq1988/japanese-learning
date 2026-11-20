@@ -15,18 +15,35 @@ class AccountRepository {
     required Dio dio,
     required SessionController session,
     required TokenStore tokenStore,
+    required bool canReadProfile,
   }) : _api = api,
        _dio = dio,
        _session = session,
-       _tokenStore = tokenStore;
+       _tokenStore = tokenStore,
+       _canReadProfile = canReadProfile;
 
   final JapaneseApi _api;
   final Dio _dio;
   final SessionController _session;
   final TokenStore _tokenStore;
+  final bool _canReadProfile;
+  Future<Me>? _meInFlight;
 
   Future<Me> me() {
-    return guardApi(() async => (await _api.getAccountApi().getMe()).data!);
+    if (!_canReadProfile) {
+      return Future<Me>.error(StateError('Cần phiên đăng nhập để tải hồ sơ.'));
+    }
+    final pending = _meInFlight;
+    if (pending != null) return pending;
+    late final Future<Me> request;
+    request = guardApi(
+      () async => (await _api.getAccountApi().getMe()).data!,
+    ).whenComplete(() => _releaseMe(request));
+    return _meInFlight = request;
+  }
+
+  void _releaseMe(Future<Me> request) {
+    if (identical(_meInFlight, request)) _meInFlight = null;
   }
 
   /// Sửa phần hồ sơ không ảnh hưởng lộ trình. Gửi JSON thủ công để chỉ gửi đúng các trường được đặt
@@ -118,17 +135,26 @@ class AccountRepository {
 }
 
 final accountRepositoryProvider = Provider<AccountRepository>((ref) {
+  // Mỗi tài khoản có yêu cầu đang chạy riêng. Đổi phiên bỏ kho của tài khoản cũ.
+  final userId = ref.watch(
+    sessionProvider.select((state) => state.activeUserId),
+  );
   return AccountRepository(
     api: ref.watch(japaneseApiProvider),
     dio: ref.watch(dioProvider),
     session: ref.read(sessionProvider.notifier),
     tokenStore: ref.watch(tokenStoreProvider),
+    canReadProfile: userId != null,
   );
 });
 
 /// Tài khoản + hồ sơ hiện tại; tự hủy khi rời màn hình.
 final meProvider = FutureProvider.autoDispose<Me>((ref) {
-  return ref.watch(accountRepositoryProvider).me();
+  final repository = ref.watch(accountRepositoryProvider);
+  final request = repository.me();
+  // Làm mới hồ sơ phải bắt đầu một lần đọc mới dù yêu cầu trước chưa xong.
+  ref.onDispose(() => repository._releaseMe(request));
+  return request;
 });
 
 /// Vai trò quyết định các mục điều hướng tổ chức/lớp (spec 004): chủ tổ chức thấy "Tổ chức" và "Lớp học",
@@ -151,7 +177,10 @@ class NavRoles {
 /// vai trò: bảo vệ thực sự ở server nên ẩn nhầm chỉ làm mất lối tắt.
 final navRolesProvider = FutureProvider.autoDispose<NavRoles>((ref) async {
   try {
-    final me = await ref.watch(accountRepositoryProvider).me();
+    final repository = ref.watch(accountRepositoryProvider);
+    final request = repository.me();
+    ref.onDispose(() => repository._releaseMe(request));
+    final me = await request;
     final roles = me.organization?.roles ?? const <MeOrganizationRolesEnum>[];
     return NavRoles(
       isOwner: roles.contains(MeOrganizationRolesEnum.owner),

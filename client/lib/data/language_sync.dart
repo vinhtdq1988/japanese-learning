@@ -20,6 +20,11 @@ final languageSyncProvider = Provider<void>((ref) {
     }
     try {
       final me = await ref.read(accountRepositoryProvider).me();
+      final current = ref.read(sessionProvider).session;
+      if (current?.userId != session.userId ||
+          current?.status != session.status) {
+        return;
+      }
       final language = me.profile?.language?.value;
       if (language != null) {
         ref.read(localeProvider.notifier).setLanguage(language);

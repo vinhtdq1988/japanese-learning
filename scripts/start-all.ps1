@@ -1,6 +1,7 @@
 ﻿<#
 .SYNOPSIS
   Chạy backend và client theo môi trường (`local` mặc định, hoặc `prod`), mỗi bên một cửa sổ PowerShell riêng.
+  Client chạy ở chế độ release trong local và được build ở chế độ release trong prod.
   Client chờ backend nghe cổng (PORT trong backend/.env.<env>) rồi mới khởi động/build.
 
 .PARAMETER Environment
@@ -15,7 +16,7 @@
 .PARAMETER ServerHost
   IP hoặc tên miền để thiết bị khác truy cập (bí danh -Ip, -Domain), vd. 192.168.1.11 hoặc dev.example.com. Đổi địa chỉ chỉ cần
   chạy lại với giá trị mới, không phải sửa file .env. Chuyển cho cả backend và client:
-    local: client chạy `web-server` nghe 0.0.0.0, API_BASE_URL = <Scheme>://<ServerHost>:<PORT>/api/v1, backend bật CORS
+    local: client release chạy `web-server` nghe 0.0.0.0, API_BASE_URL = <Scheme>://<ServerHost>:<PORT>/api/v1, backend bật CORS
            cho <Scheme>://<ServerHost>:<WEB_PORT> (và localhost) và đặt APP_BASE_URL tương ứng.
     prod : chỉ đặt APP_BASE_URL = <Scheme>://<ServerHost> cho backend (client build dùng API cùng origin).
   Không truyền thì chạy như trước (localhost).
@@ -69,10 +70,11 @@ $clientArgs = @(
     '-NoExit', '-ExecutionPolicy', 'Bypass', '-File', "$PSScriptRoot\start-client.ps1", '-Env', $Environment
 ) + $hostArgs
 Start-Process powershell -ArgumentList $clientArgs | Out-Null
+$clientStatus = if ($Environment -eq 'prod') { 'build client release' } else { 'chạy client release' }
 
 if ($ServerHost) {
     $urls = Get-ServerUrls $ServerHost $Scheme $Environment
-    Write-Host "Đã mở 2 cửa sổ ($Environment): backend (cổng $backendPort) và client; truy cập qua $($urls.WebOrigin)." -ForegroundColor Green
+    Write-Host "Đã mở 2 cửa sổ ($Environment): backend (cổng $backendPort) và $clientStatus; truy cập qua $($urls.WebOrigin)." -ForegroundColor Green
 } else {
-    Write-Host "Đã mở 2 cửa sổ ($Environment): backend (http://localhost:$backendPort) và client." -ForegroundColor Green
+    Write-Host "Đã mở 2 cửa sổ ($Environment): backend (http://localhost:$backendPort) và $clientStatus." -ForegroundColor Green
 }

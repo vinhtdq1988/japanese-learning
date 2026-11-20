@@ -101,14 +101,35 @@ final routerProvider = Provider<GoRouter>((ref) {
   final refresh = _SessionRefresh();
   ref.onDispose(refresh.dispose);
   ref.listen<SessionState>(sessionProvider, (_, __) => refresh.notify());
+  // Giữ cả query của liên kết đầu vào trong bộ nhớ khi màn hình khởi động che trang đích.
+  String? pendingStartupLocation;
 
   return GoRouter(
     initialLocation: AppRoutes.splash,
     refreshListenable: refresh,
-    redirect: (BuildContext context, GoRouterState state) => resolveRedirect(
-      session: ref.read(sessionProvider),
-      location: state.uri.toString(),
-    ),
+    redirect: (BuildContext context, GoRouterState state) {
+      final session = ref.read(sessionProvider);
+      final uri = state.uri;
+      final location = uri.toString();
+      if (session.isLoading && uri.path != AppRoutes.splash) {
+        pendingStartupLocation =
+            !uri.hasScheme &&
+                !uri.hasAuthority &&
+                uri.path.startsWith('/') &&
+                uri.path != AppRoutes.landing &&
+                !location.contains(r'\')
+            ? location
+            : null;
+      }
+      if (!session.isLoading) {
+        final target = pendingStartupLocation;
+        pendingStartupLocation = null;
+        if (uri.path == AppRoutes.splash && target != null) {
+          return resolveRedirect(session: session, location: target) ?? target;
+        }
+      }
+      return resolveRedirect(session: session, location: location);
+    },
     routes: <RouteBase>[
       GoRoute(
         path: AppRoutes.splash,

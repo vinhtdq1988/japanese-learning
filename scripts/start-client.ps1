@@ -1,15 +1,15 @@
 ﻿<#
 .SYNOPSIS
-  Client Flutter web theo môi trường: `local` (mặc định) chạy dev server, `prod` build bản release.
+  Client Flutter web chạy bản release trên máy local (mặc định) hoặc build để triển khai prod.
 
 .DESCRIPTION
   Cấu hình đọc từ client/.env.<env> (tự tạo từ mẫu nếu thiếu): API_BASE_URL và WEB_PORT.
   Tham số dòng lệnh -ApiUrl / -Port ghi đè giá trị trong file.
 
-  local: `flutter run --no-web-resources-cdn` trỏ tới backend local; không có CSP (index.html không có meta) và
+  local: `flutter run --release --no-web-resources-cdn` trỏ tới backend local; không có CSP (index.html không có meta) và
          CanvasKit phục vụ cùng nguồn nên không cần Internet. Backend chưa bật CORS (bản production cùng origin
          qua nginx) nên với chrome/edge script tắt web security của trình duyệt dev (hồ sơ tạm do Flutter tạo,
-         không ảnh hưởng trình duyệt thường ngày). Với `web-server` hãy tự mở trình duyệt đã tắt web security.
+         không ảnh hưởng trình duyệt thường ngày). Với `-ServerHost`, dùng trình duyệt bình thường và bật CORS ở backend.
   prod:  `flutter build web --release --no-web-resources-cdn` ra client/build/web; CSP chặt do header nginx cấp.
          Triển khai bằng nginx (client/Dockerfile + client/nginx.conf, xem backend/README.md mục "Triển khai").
 
@@ -77,23 +77,24 @@ try {
     if ($Environment -eq 'prod') {
         Write-Step "Build web release (API_BASE_URL=$ApiUrl)"
         Invoke-Checked 'flutter build web' {
-            flutter build web --release --no-web-resources-cdn "--dart-define=API_BASE_URL=$ApiUrl"
+            flutter build web --release --wasm --no-web-resources-cdn "--dart-define=API_BASE_URL=$ApiUrl"
         }
+        Invoke-Checked 'prepare web fonts' { dart tool/prepare_web_fonts.dart build/web }
         Write-Host "Đã build ra $clientDir\build\web" -ForegroundColor Green
     } else {
-        $flutterArgs = @('run', '-d', $Device, '--web-port', "$Port", "--dart-define=API_BASE_URL=$ApiUrl", '--no-web-resources-cdn')
+        $flutterArgs = @('run', '--release', '-d', $Device, '--web-port', "$Port", "--dart-define=API_BASE_URL=$ApiUrl", '--no-web-resources-cdn')
         if ($Device -ne 'web-server') {
             $flutterArgs += '--web-browser-flag=--disable-web-security'
         }
         if ($webHostname) { $flutterArgs += @('--web-hostname', $webHostname) }
         $openUrl = if ($webHostname) { ($urls.WebOrigin -replace ':\d+$', '') + ":$Port" } else { "http://localhost:$Port" }
-        Write-Step "Chạy client tại $openUrl -> API $ApiUrl (r: hot reload, q: thoát)"
+        Write-Step "Chạy client release tại $openUrl -> API $ApiUrl (q: thoát)"
         if ($webHostname) {
             if ($openUrl -ne $urls.WebOrigin) {
                 Write-Warning "Cổng $Port khác WEB_PORT trong ${envFile}: backend chỉ bật CORS cho $($urls.WebOrigin), hãy đổi WEB_PORT thay vì dùng -Port."
             }
             $apiPort = ([Uri]$ApiUrl).Port
-            Write-Host "Lần đầu Flutter biên dịch vài chục giây; trang trắng thì chờ rồi tải lại." -ForegroundColor Yellow
+            Write-Host "Chờ Flutter biên dịch bản release và báo đã sẵn sàng trước khi mở URL." -ForegroundColor Yellow
             Write-Host "Thiết bị khác không vào được: mở tường lửa (PowerShell quyền Admin): New-NetFirewallRule -DisplayName 'JL dev' -Direction Inbound -Protocol TCP -LocalPort $Port,$apiPort -Action Allow" -ForegroundColor Yellow
         }
         & flutter @flutterArgs

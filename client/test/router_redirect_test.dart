@@ -1,7 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:go_router/go_router.dart';
 import 'package:japanese_learning_client/data/session_controller.dart';
 import 'package:japanese_learning_client/domain/auth_session.dart';
 import 'package:japanese_learning_client/router.dart';
+
+import 'support/fake_backend.dart';
 
 const SessionState _loading = SessionState.loading();
 const SessionState _signedOut = SessionState.signedOut();
@@ -27,6 +31,41 @@ String? _redirect(SessionState session, String location) =>
     resolveRedirect(session: session, location: location);
 
 void main() {
+  group('đích ban đầu khi mở ứng dụng', () {
+    testWidgets('khách mở thẳng biểu mẫu đăng nhập', (tester) async {
+      final dispatcher = tester.binding.platformDispatcher;
+      dispatcher.defaultRouteNameTestValue = AppRoutes.login;
+      addTearDown(dispatcher.clearDefaultRouteNameTestValue);
+
+      await tester.pumpWidget(TestEnv().app());
+      await tester.pumpAndSettle();
+
+      final router = GoRouter.of(tester.element(find.byType(Scaffold).first));
+      expect(
+        router.routerDelegate.currentConfiguration.uri.path,
+        AppRoutes.login,
+      );
+      expect(find.byType(TextFormField), findsWidgets);
+    });
+
+    testWidgets('khách giữ đích có query khi cần đăng nhập trước', (
+      tester,
+    ) async {
+      const target = '/lesson?item=item-1';
+      final dispatcher = tester.binding.platformDispatcher;
+      dispatcher.defaultRouteNameTestValue = target;
+      addTearDown(dispatcher.clearDefaultRouteNameTestValue);
+
+      await tester.pumpWidget(TestEnv().app());
+      await tester.pumpAndSettle();
+
+      final router = GoRouter.of(tester.element(find.byType(Scaffold).first));
+      final uri = router.routerDelegate.currentConfiguration.uri;
+      expect(uri.path, AppRoutes.login);
+      expect(uri.queryParameters['from'], target);
+    });
+  });
+
   group('guard điều hướng (resolveRedirect)', () {
     test(
       'đang đọc token → về màn hình khởi động, rồi chuyển theo trạng thái',

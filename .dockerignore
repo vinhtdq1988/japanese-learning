@@ -1,8 +1,10 @@
 # Ngữ cảnh build của backend/Dockerfile là thư mục gốc kho mã: loại bỏ những gì image không cần.
 .git
 .claude
+.agents
 .specify
 specs
+.dev-data
 # Client không vào image API, trừ phông Noto Sans JP: backend đọc bảng cmap để chặn nội dung Kanji thiếu glyph.
 client/*
 !client/assets
@@ -13,7 +15,7 @@ client/assets/fonts/*
 **/node_modules
 **/dist
 **/coverage
-**/*.log
+**/*.log*
 **/.env
 **/.env.*
 !**/.env.example

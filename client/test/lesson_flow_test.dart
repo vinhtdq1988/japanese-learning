@@ -1,10 +1,16 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:japanese_learning_client/app.dart';
+import 'package:japanese_learning_client/data/account_repository.dart';
 import 'package:japanese_learning_client/data/event_queue.dart';
+import 'package:japanese_learning_client/data/session_controller.dart';
 import 'package:japanese_learning_client/presentation/lesson/lesson_controller.dart';
+import 'package:japanese_learning_client/presentation/shared/state_views.dart';
+import 'package:japanese_learning_client/presentation/today/today_screen.dart';
 
 import 'support/fake_backend.dart';
 import 'support/lesson_scenario.dart';
@@ -83,6 +89,141 @@ Future<_Harness> _open(
 }
 
 void main() {
+  testWidgets('khởi động Hôm nay dùng chung một yêu cầu hồ sơ', (tester) async {
+    TestEnv.useDesktopSize(tester);
+    addTearDown(tester.view.reset);
+    final env = TestEnv(tokens: signedInTokens());
+    LessonScenario(env.backend);
+    final startupProfile = Completer<FakeResponse>();
+    const profile = FakeResponse(200, <String, Object?>{});
+    env.backend.on('GET /me', (_) {
+      return env.backend.sent('GET /me').length == 1
+          ? startupProfile.future
+          : profile;
+    });
+
+    await tester.pumpWidget(env.app());
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const Key('start-item-1')), findsOneWidget);
+    expect(env.backend.sent('GET /me'), hasLength(1));
+
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(JapaneseLearningApp)),
+    );
+    container.invalidate(meProvider);
+    final refreshed = container.read(meProvider.future);
+    for (var frame = 0; frame < 10; frame++) {
+      if (env.backend.sent('GET /me').length > 1) break;
+      await tester.pump(const Duration(milliseconds: 16));
+    }
+    expect(env.backend.sent('GET /me'), hasLength(2));
+    startupProfile.complete(profile);
+    await tester.pumpAndSettle();
+    await expectLater(refreshed, completes);
+  });
+
+  testWidgets('mở Hôm nay → lỗi tải → thử lại và hiện kế hoạch trống', (
+    tester,
+  ) async {
+    TestEnv.useDesktopSize(tester);
+    addTearDown(tester.view.reset);
+    final env = TestEnv(tokens: signedInTokens());
+    final scenario = LessonScenario(env.backend);
+    final firstResponse = Completer<FakeResponse>();
+    var requests = 0;
+    var pathRequests = 0;
+    env.backend.on('GET /path', (_) {
+      pathRequests++;
+      return const FakeResponse(503);
+    });
+    env.backend.on('GET /today', (_) {
+      requests++;
+      if (requests == 1) return firstResponse.future;
+      return FakeResponse(200, <String, Object?>{
+        ...scenario.todayPlan,
+        'items': <Object?>[],
+      });
+    });
+
+    await tester.pumpWidget(env.app());
+    for (var frame = 0; frame < 10 && requests == 0; frame++) {
+      await tester.pump(const Duration(milliseconds: 16));
+    }
+    await tester.pump();
+
+    expect(requests, 1);
+    expect(pathRequests, 0);
+    expect(
+      find.descendant(
+        of: find.byType(TodayScreen),
+        matching: find.byType(LoadingView),
+      ),
+      findsOneWidget,
+    );
+    expect(find.byKey(const Key('start-item-1')), findsNothing);
+
+    firstResponse.complete(const FakeResponse(503));
+    await tester.pumpAndSettle();
+    final retry = find.descendant(
+      of: find.byType(ErrorView),
+      matching: find.byType(FilledButton),
+    );
+    await tester.tap(retry);
+    await tester.pumpAndSettle();
+
+    expect(requests, 2);
+    expect(pathRequests, 1);
+    expect(find.byKey(const Key('today-empty')), findsOneWidget);
+    expect(find.byType(ErrorView), findsNothing);
+  });
+
+  testWidgets('đổi tài khoản khi đang tải Hôm nay → bỏ kết quả cũ', (
+    tester,
+  ) async {
+    TestEnv.useDesktopSize(tester);
+    addTearDown(tester.view.reset);
+    final env = TestEnv(tokens: signedInTokens());
+    final scenario = LessonScenario(env.backend);
+    final firstResponse = Completer<FakeResponse>();
+    var requests = 0;
+    env.backend.on('GET /today', (_) {
+      requests++;
+      if (requests == 1) return firstResponse.future;
+      return FakeResponse(200, <String, Object?>{
+        ...scenario.todayPlan,
+        'items': <Object?>[],
+      });
+    });
+
+    await tester.pumpWidget(env.app());
+    for (var frame = 0; frame < 10 && requests == 0; frame++) {
+      await tester.pump(const Duration(milliseconds: 16));
+    }
+    expect(requests, 1);
+
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(JapaneseLearningApp)),
+    );
+    await container
+        .read(sessionProvider.notifier)
+        .signIn(
+          accessToken: fakeJwt(sub: 'user-2'),
+          refreshToken: 'refresh-2',
+        );
+    for (var frame = 0; frame < 10 && requests == 1; frame++) {
+      await tester.pump(const Duration(milliseconds: 16));
+    }
+    expect(requests, 2);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('today-empty')), findsOneWidget);
+
+    firstResponse.complete(FakeResponse(200, scenario.todayPlan));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('start-item-1')), findsNothing);
+    expect(find.byKey(const Key('today-empty')), findsOneWidget);
+  });
+
   testWidgets(
     '"Hôm nay": mục bài mới Kanji có nhãn Kanji, bắt đầu bằng một lần nhấp',
     (tester) async {

@@ -22,6 +22,11 @@ class SessionState {
   final AuthSession? session;
 
   bool get isSignedIn => session != null;
+
+  String? get activeUserId {
+    final current = session;
+    return current == null || current.isPendingDeletion ? null : current.userId;
+  }
 }
 
 /// Nắm giữ phiên đăng nhập: khôi phục từ [TokenStore] khi khởi động, cập nhật khi đăng nhập/đăng xuất

@@ -30,8 +30,6 @@ class TodayScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final plan = ref.watch(todayProvider);
-    // Thông báo giới hạn nội dung lấy từ lộ trình; lỗi ở đây không làm hỏng màn hình chính.
-    final scopeNotice = ref.watch(pathProvider).valueOrNull?.scopeNotice;
 
     return PageFrame(
       title: l10n.navToday,
@@ -46,8 +44,11 @@ class TodayScreen extends ConsumerWidget {
               loading: () => const LoadingView(),
               error: (Object error, StackTrace _) =>
                   _buildError(context, ref, error),
-              data: (DailyPlan data) =>
-                  _TodayContent(plan: data, scopeNotice: scopeNotice),
+              // Chỉ yêu cầu thông báo lộ trình sau khi đã nhận kế hoạch chính.
+              data: (DailyPlan data) => _TodayContent(
+                plan: data,
+                scopeNotice: ref.watch(pathProvider).asData?.value.scopeNotice,
+              ),
             ),
           ),
         ],

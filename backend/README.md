@@ -27,7 +27,7 @@ Các script ở [`../scripts/`](../scripts) làm trọn các bước trên cho t
 | `prod`     | `backend/.env.prod` (mẫu `.env.prod.example`), `client/.env.prod` | `.\scripts\start-all.ps1 -Env prod [-Seed]`                      |
 
 - `local`: tự dựng CSDL (đã chạy sẵn → Docker → PostgreSQL nhúng), migrate, seed, `pnpm dev` và
-  `flutter run --no-web-resources-cdn` (không có CSP, CanvasKit phục vụ cùng nguồn nên không cần Internet).
+  `flutter run --release --no-web-resources-cdn` (không có CSP, CanvasKit phục vụ cùng nguồn nên không cần Internet).
 - `prod`: KHÔNG dựng CSDL; từ chối chạy khi còn giá trị mẫu `CHANGE_ME` (`JWT_SECRET` được sinh ngẫu nhiên khi tạo
   file lần đầu, cần tự điền `DATABASE_URL`, `SMTP_URL`, `APP_BASE_URL`). Backend được build (`tsc`), migrate rồi chạy
   `node dist/src/server.js` với `NODE_ENV=production` từ bố cục tạm `.dev-data/prod`; client được build
@@ -84,7 +84,7 @@ Client web chạy ở hai chế độ có chính sách bảo mật (CSP) khác n
 
 | Chế độ  | Cách chạy                                                                                       | Nguồn phục vụ trang                                      | CanvasKit                                     | CSP áp dụng                                              |
 | ------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------- |
-| `local` | `.\scripts\start-client.ps1` (`flutter run --no-web-resources-cdn`; Chrome, Edge hoặc `web-server`) | Dev server của Flutter (chèn script nội tuyến cho hot reload/debug) | Cùng nguồn (`localhost`), không cần Internet | Không có (`index.html` không có meta, dev server không gửi header) |
+| `local` | `.\scripts\start-client.ps1` (`flutter run --release --no-web-resources-cdn`; Chrome, Edge hoặc `web-server`) | Máy chủ Flutter phục vụ bản release | Cùng nguồn, không cần Internet | Không có (`index.html` không có meta, máy chủ Flutter không gửi header) |
 | `prod`  | `flutter build web --release --no-web-resources-cdn` rồi nginx (`client/Dockerfile`, `client/nginx.conf`) | nginx, cùng origin với `/api`                            | Đóng gói sẵn trong `build/web`                | Header của nginx (chặt), nguồn duy nhất                  |
 
 **Vì sao khác nhau.** Dev server của Flutter chèn script nội tuyến có nội dung thay đổi theo phiên nên không thể băm

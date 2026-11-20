@@ -69,19 +69,17 @@ class EffectsController extends Notifier<EffectsSettings> {
   EffectsSettings build() {
     ref.onDispose(_events.close);
     ref.onDispose(_celebrations.close);
-    ref.listen<bool>(sessionProvider.select((s) => s.isSignedIn), (
+    ref.listen<String?>(sessionProvider.select((s) => s.activeUserId), (
       _,
-      signedIn,
+      userId,
     ) {
-      if (signedIn) {
-        unawaited(_loadProfile());
-      } else {
-        state = const EffectsSettings();
-      }
+      state = const EffectsSettings();
+      if (userId != null) unawaited(_loadProfile(userId));
     });
     // Đã đăng nhập sẵn khi controller được tạo: tải hồ sơ sau khi `build` xong (không đặt state trong build).
-    if (ref.read(sessionProvider).isSignedIn) {
-      scheduleMicrotask(_loadProfile);
+    final userId = ref.read(sessionProvider).activeUserId;
+    if (userId != null) {
+      scheduleMicrotask(() => _loadProfile(userId));
     }
     return const EffectsSettings();
   }
@@ -95,9 +93,10 @@ class EffectsController extends Notifier<EffectsSettings> {
   /// KHÔNG lưu để chúc mừng bù ở lần sau (spec 005, Q1).
   Stream<List<CelebrationEntry>> get celebrationBatches => _celebrations.stream;
 
-  Future<void> _loadProfile() async {
+  Future<void> _loadProfile(String userId) async {
     try {
       final me = await ref.read(accountRepositoryProvider).me();
+      if (ref.read(sessionProvider).activeUserId != userId) return;
       final profile = me.profile;
       if (profile == null) return;
       state = EffectsSettings(

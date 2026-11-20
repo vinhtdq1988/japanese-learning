@@ -1,6 +1,7 @@
 # Node.js / TypeScript (backend)
 node_modules/
 dist/
+build/
 coverage/
 *.log
 .env
@@ -13,7 +14,6 @@ coverage/
 .packages
 .flutter-plugins
 .flutter-plugins-dependencies
-client/build/
 client/pubspec.lock
 # Mã l10n sinh tự động từ ARB
 client/lib/l10n/app_localizations*.dart
@@ -37,3 +37,4 @@ Thumbs.db
 
 # Chứng chỉ TLS/khóa riêng cho nginx (không bao giờ commit)
 certs/
+/.specify/integrations

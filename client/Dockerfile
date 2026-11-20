@@ -14,7 +14,8 @@ RUN dart pub get && dart run build_runner build --delete-conflicting-outputs
 WORKDIR /app/client
 RUN flutter pub get
 # --no-web-resources-cdn: CanvasKit và phông phục vụ từ chính origin để CSP `default-src 'self'` có hiệu lực.
-RUN flutter build web --release --no-web-resources-cdn --base-href /
+RUN flutter build web --release --wasm --no-web-resources-cdn --base-href /
+RUN dart tool/prepare_web_fonts.dart build/web
 
 FROM nginx:1.27-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf

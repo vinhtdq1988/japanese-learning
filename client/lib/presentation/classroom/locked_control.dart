@@ -6,6 +6,7 @@ import 'package:japanese_api/japanese_api.dart';
 import '../../data/account_repository.dart';
 import '../../data/api/api_error.dart';
 import '../../data/api_providers.dart';
+import '../../data/session_controller.dart';
 import '../../l10n/app_localizations.dart';
 import '../../router_paths.dart';
 
@@ -89,7 +90,10 @@ class LockedControl extends StatelessWidget {
 /// sự kiện, nên đây là thông báo trong phiên; học viên tự chuyển sang cá nhân thì xóa giá trị trước khi rời.
 class LastClassNameNotifier extends Notifier<String?> {
   @override
-  String? build() => null;
+  String? build() {
+    ref.watch(sessionProvider.select((state) => state.activeUserId));
+    return null;
+  }
 
   void set(String? name) => state = name;
 }
@@ -105,14 +109,15 @@ class ClassSourceBanner extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final me = ref.watch(meProvider).valueOrNull;
+    final me = ref.watch(meProvider).asData?.value;
     final summary = me?.classSummary;
     if (me?.learningSource != MeLearningSourceEnum.class_ || summary == null) {
       return const SizedBox.shrink();
     }
+    final userId = ref.read(sessionProvider).activeUserId;
     // Ghi nhớ lớp đang thuộc để nhận ra việc bị gỡ khỏi lớp sau này (không đổi trạng thái trong lúc build).
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (context.mounted) {
+      if (context.mounted && ref.read(sessionProvider).activeUserId == userId) {
         ref.read(lastClassNameProvider.notifier).set(summary.className);
       }
     });
@@ -151,7 +156,7 @@ class ClassEndedBanner extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lastClass = ref.watch(lastClassNameProvider);
-    final me = ref.watch(meProvider).valueOrNull;
+    final me = ref.watch(meProvider).asData?.value;
     if (lastClass == null ||
         me == null ||
         me.learningSource == MeLearningSourceEnum.class_) {

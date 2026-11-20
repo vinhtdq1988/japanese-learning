@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:japanese_api/japanese_api.dart';
 
 import 'api_providers.dart';
+import 'session_controller.dart';
 
 /// Truy cập lộ trình và kế hoạch hôm nay (T055).
 class LearningRepository {
@@ -61,8 +62,14 @@ final learningRepositoryProvider = Provider<LearningRepository>((ref) {
   return LearningRepository(ref.watch(japaneseApiProvider));
 });
 
-/// Kế hoạch hôm nay; tự hủy khi rời màn hình để lần mở sau luôn lấy bản mới.
+/// Kế hoạch của tài khoản hiện tại. Khi đổi tài khoản, bỏ kết quả yêu cầu của người cũ.
 final todayProvider = FutureProvider.autoDispose<DailyPlan>((ref) {
+  final userId = ref.watch(
+    sessionProvider.select((state) => state.activeUserId),
+  );
+  if (userId == null) {
+    throw StateError('Cần phiên đăng nhập để tải kế hoạch hôm nay.');
+  }
   return ref.watch(learningRepositoryProvider).today();
 });
 
@@ -78,6 +85,12 @@ const PathFilter noPathFilter = (kind: null, level: null);
 /// Lộ trình hiện tại (trang đầu, không lọc): dùng cho thông báo phạm vi, tiến độ tổng quát… — không cần toàn bộ
 /// ≈ 600 đơn vị nên chỉ lấy một trang.
 final pathProvider = FutureProvider.autoDispose<PathDetail>((ref) {
+  final userId = ref.watch(
+    sessionProvider.select((state) => state.activeUserId),
+  );
+  if (userId == null) {
+    throw StateError('Cần phiên đăng nhập để tải lộ trình.');
+  }
   return ref.watch(learningRepositoryProvider).path(limit: pathPageSize);
 });
 

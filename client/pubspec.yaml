@@ -30,6 +30,8 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  # Định danh nội dung mã JavaScript và WebAssembly khi đóng gói bản phát hành Web.
+  crypto: ^3.0.6
   # Chạy `dart run build_runner build` để sinh mã json_serializable cho API client
   build_runner: ^2.4.0
 

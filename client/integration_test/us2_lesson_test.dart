@@ -66,8 +66,6 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    GoRouter.of(tester.element(find.byType(Scaffold).first)).go('/today');
-    await tester.pumpAndSettle();
 
     // Đơn vị 1: sai câu đầu → được hỏi lại một lần ở cuối phiên.
     await _tap(tester, 'start-item-1');
